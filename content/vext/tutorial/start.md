@@ -5,10 +5,6 @@ title: Getting Started
 Download and install Venice Unleashed from the [downloads](https://veniceunleashed.net/downloads) page.
 The installation directory defaults to `%localappdata%\VeniceUnleashed\client`
 
-
-### Example
-You can download an example server configuration from [here](#). Extract it into the server instance root directory. 
-
 ## Setting up a server
 __You will need a server key. Grab one from the [Venice Unleashed Keys](https://veniceunleashed.net) page.__
 
@@ -86,3 +82,17 @@ Here's an example of ModList.txt:
     MapEditor
     SuperSoldier
     
+## Port Forwarding / Connecting to your server
+Before you can connect to your server, you will need to port-forward these ports:
+
+    mHarmony Default: 7948 | Type: UDP
+    Game Default: 25200 | Type: UDP
+
+If you want to use RCON from outside the local network, you'll need to port-forward that as well.
+
+    RCON Default: 47200 | Type: TCP
+    
+How you port-forward differentiates from router to router, so google how to do it for your router model.
+
+### Example
+You can download an example server configuration from [here](#). Extract it into the server instance root directory. 
