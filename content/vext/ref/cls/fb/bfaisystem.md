@@ -1,0 +1,39 @@
+---
+title: BFAISystem (Frostbite Container)
+---
+### Base Classes
+
+[AISystemAsset](AISystemAsset)
+
+## Description
+
+A container type representing a Frostbite instance entry.
+
+## Constructors
+
+| Constructor                                                           | Description                                                                                                 |
+| --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| BFAISystem()                                                          | Create a new instance of this container type.                                                               |
+| BFAISystem(BFAISystem other)                                          | Create a reference copy of an instance of the same type.                                                    |
+| BFAISystem([AISystemAsset](AISystemAsset) other)                      | Upcast an instance of type [AISystemAsset](AISystemAsset) to [BFAISystem](BFAISystem).                      |
+| BFAISystem([GameAISystem](GameAISystem) other)                        | Upcast an instance of type [GameAISystem](GameAISystem) to [BFAISystem](BFAISystem).                        |
+| BFAISystem([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [BFAISystem](BFAISystem).                                      |
+| BFAISystem([DataContainer](/vext/ref/cls/shr/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/cls/shr/datacontainer) to [BFAISystem](BFAISystem). |
+
+## Methods
+
+| Type                     | Name            | Parameters                                     |
+| ------------------------ | --------------- | ---------------------------------------------- |
+| [BFAISystem](BFAISystem) | [Clone](#clone) | \[[Guid](/vext/ref/cls/shr/guid) **guid**\] |
+
+### Clone
+
+> [BFAISystem](BFAISystem) **Clone**(\[[Guid](/vext/ref/cls/shr/guid) **guid**\])
+
+Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/cls/shr/datacontainer#clone) for more details.
+
+#### Parameters
+
+| Name | Type         | Description                                 |
+| ---- | ------------ | ------------------------------------------- |
+| guid | [Guid](Guid) | An optional GUID to assign to the instance. |

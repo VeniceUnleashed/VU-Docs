@@ -1,0 +1,47 @@
+---
+title: FlagComponentData (Frostbite Container)
+---
+### Base Classes
+
+[ComponentData](ComponentData)
+
+## Description
+
+A container type representing a Frostbite instance entry.
+
+## Constructors
+
+| Constructor                                                                  | Description                                                                                                               |
+| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| FlagComponentData()                                                          | Create a new instance of this container type.                                                                             |
+| FlagComponentData(FlagComponentData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
+| FlagComponentData([ComponentData](ComponentData) other)                      | Upcast an instance of type [ComponentData](ComponentData) to [FlagComponentData](FlagComponentData).                      |
+| FlagComponentData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [FlagComponentData](FlagComponentData).                    |
+| FlagComponentData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [FlagComponentData](FlagComponentData).              |
+| FlagComponentData([DataContainer](/vext/ref/cls/shr/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/cls/shr/datacontainer) to [FlagComponentData](FlagComponentData). |
+
+## Properties
+
+| Name        | Type                               | Description |
+| ----------- | ---------------------------------- | ----------- |
+| realm       | [Realm](Realm)                     |             |
+| flag\_Team1 | [ObjectBlueprint](ObjectBlueprint) |             |
+| flag\_Team2 | [ObjectBlueprint](ObjectBlueprint) |             |
+
+## Methods
+
+| Type                                   | Name            | Parameters                                     |
+| -------------------------------------- | --------------- | ---------------------------------------------- |
+| [FlagComponentData](FlagComponentData) | [Clone](#clone) | \[[Guid](/vext/ref/cls/shr/guid) **guid**\] |
+
+### Clone
+
+> [FlagComponentData](FlagComponentData) **Clone**(\[[Guid](/vext/ref/cls/shr/guid) **guid**\])
+
+Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/cls/shr/datacontainer#clone) for more details.
+
+#### Parameters
+
+| Name | Type         | Description                                 |
+| ---- | ------------ | ------------------------------------------- |
+| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
