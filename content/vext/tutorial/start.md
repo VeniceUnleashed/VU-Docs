@@ -17,13 +17,12 @@ Place the server.key file you downloaded into this directory.
 Create and add these 2 folders to the directory: `Admin` and `Logs` (Case-sensitive).
 
 Navigate inside the Admin folder and create 4 empty files, BanList.txt, MapList.txt, Startup.txt and ModList.txt
-Now create a folder named: Mods
+Now create a folder named `Mods`
 
 The final folder structure should look like this
 
     / Admin /
         / Mods /
-            / ExampleMod
         / BanList.txt
         / MapList.txt
         / ModList.txt
@@ -31,7 +30,7 @@ The final folder structure should look like this
     / Logs /
     / server.key
 
-- Open Startup.txt for with your favorite text editor (ex. notepad) and add the name and password configuration variables: 
+Open Startup.txt for with your favorite text editor (ex. notepad) and add the name and password configuration variables: 
 
     admin.password "ChangeThisPassword"
     vars.serverName "My Example Server"
