@@ -20,3 +20,16 @@ copyright = "Venice Unleashed"
 github_repo = "https://github.com/EmulatorNexus/VU-Docs"
 algolia_docsearch = false
 offlineSearch = true
+
+[params.ui.feedback]
+enable = false
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "igor"

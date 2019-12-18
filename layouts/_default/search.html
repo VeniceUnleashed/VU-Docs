@@ -1,0 +1,17 @@
+{{ define "main" }}
+<section class="row td-search-result">
+  <div class="col-12 col-md-8 offset-md-2">
+    <h2 class="ml-4">{{ .Title }}</h2>
+    <div id="search-results">
+      Searching. Please wait...
+    </div>
+    <script>
+      {{ $offlineSearchIndex := resources.Get "json/offline-search-index.json" | resources.ExecuteAsTemplate "/offline-search-index.json" . }}
+      {{ $offlineSearchIndexFingerprint := $offlineSearchIndex | resources.Fingerprint "sha512" }}
+      $(document).ready(function() {
+        window.renderSearch("{{ $offlineSearchIndexFingerprint.Permalink }}");
+      });
+    </script>
+  </div>
+</section>
+{{ end }}
