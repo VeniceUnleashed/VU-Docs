@@ -1,22 +1,30 @@
 ---
 title: Getting Started
 ---
+## Install
+Download and install Venice Unleashed from the [Downloads page](https://veniceunleashed.net/downloads)
+The installation directory defaults to `%localappdata%\VeniceUnleashed\client`
 
-You will need to have downloaded a server key from the [Venice Unleashed Keys](https://veniceunleashed.net) website.
 
-For starters, we will call the Instance Root, the location of wherever your server instance is. If you are doing this on a non-headless setup, the location will default to
+### Example
+You can download an example server instance from [here](#). Extract it into the server instance root directory. 
+
+## Setting up a server
+__You will a server key. Grab one from the [Venice Unleashed Keys](https://veniceunleashed.net) page.__
+
+Start by creating your Server Instance Root Directory".
+On Windows, this will default to:
 
 > \<DriveLetter\>:\\Users\\\<UserName\>\\Documents\\Battlefield 3\\Server
 
-You will need to take the server.key that you received from the Venice Unleashed keys site and put it in this directory.
+Place the server.key file you downloaded into this directory.
 
-You will now need to create 2 folders: Admin and Logs, casing is important.
+Create and add these 2 folders to the directory: `Admin` and `Logs` (Case-sensitive).
 
-Navigate inside to the Admin folder and create 3 files, BanList.txt, MapList.txt, Startup.txt and ModList.txt
-
+Navigate inside the Admin folder and create 4 empty files, BanList.txt, MapList.txt, Startup.txt and ModList.txt
 Now create a folder named: Mods
 
-When you're done the folder structure should look like this
+The final folder structure should look like this
 
     / Admin /
         / Mods /
@@ -27,18 +35,32 @@ When you're done the folder structure should look like this
     / Logs /
     / server.key
 
-Open Startup.txt for editing with your favorite editor (ex. notepad, notepad++) and add the below to the contents. See Battlefield 3 Server Administration guide for more information.
+Open Startup.txt for with your favorite text editor (ex. notepad) and add the name and password configuration variables: 
 
-You will need to change the server name and admin password before RCON will work
-
-    admin.password supersecret
+    admin.password "ChangeThisPassword"
     vars.serverName "My Example Server"
 
-Save and close the file
+See the [Server Administration guide](#) for additional configuration variables.
 
-Start the server server using the -server -dedicated parameters
+## Running a server
+If no level is specified in MapList.txt, the server will load `MP_Subway ConquestLarge0` by default
+
+### With GUI
+You can start a server using these launch parameters:
 
     vu.exe -server -dedicated
+
+This will launch a server console showing the server log and additional information. 
+
+### Headless
+You cannot copy (ctrl+c) from the server console GUI, so you might want to launch it in headless mode instead.
+You can do this by launching `vu.com` instead of `vu.exe`, or by using the `-headless` launch option.
+
+    vu.com -server -dedicated -headless
+
+This will launch a command prompt showing the server console output.
+__If you mark text in the command prompt, the server will freeze. This is standard Windows behaviour.__
+It will resume operation once you deselect.
 
 ## Mod Layout
 
@@ -50,4 +72,5 @@ Start the server server using the -server -dedicated parameters
                 / Server /
                     / __init__.lua
                 / Shared /
+                    / __init__.lua (optional)
             / mod.json
