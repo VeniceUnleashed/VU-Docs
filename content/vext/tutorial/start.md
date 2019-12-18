@@ -2,23 +2,22 @@
 title: Getting Started
 ---
 ## Install
-Download and install Venice Unleashed from the [Downloads page](https://veniceunleashed.net/downloads)
+Download and install Venice Unleashed from the [downloads](https://veniceunleashed.net/downloads) page.
 The installation directory defaults to `%localappdata%\VeniceUnleashed\client`
 
 
 ### Example
-You can download an example server instance from [here](#). Extract it into the server instance root directory. 
+You can download an example server configuration from [here](#). Extract it into the server instance root directory. 
 
 ## Setting up a server
-__You will a server key. Grab one from the [Venice Unleashed Keys](https://veniceunleashed.net) page.__
+__You will need a server key. Grab one from the [Venice Unleashed Keys](https://veniceunleashed.net) page.__
 
-Start by creating your Server Instance Root Directory".
-On Windows, this will default to:
+Start by creating your server configuration directory. We refer to this as the `Server Instance Root Directory`.
+On Windows, this defaults to:
 
 > \<DriveLetter\>:\\Users\\\<UserName\>\\Documents\\Battlefield 3\\Server
 
 Place the server.key file you downloaded into this directory.
-
 Create and add these 2 folders to the directory: `Admin` and `Logs` (Case-sensitive).
 
 Navigate inside the Admin folder and create 4 empty files, BanList.txt, MapList.txt, Startup.txt and ModList.txt
@@ -28,6 +27,7 @@ The final folder structure should look like this
 
     / Admin /
         / Mods /
+            / ExampleMod
         / BanList.txt
         / MapList.txt
         / ModList.txt
@@ -35,7 +35,7 @@ The final folder structure should look like this
     / Logs /
     / server.key
 
-Open Startup.txt for with your favorite text editor (ex. notepad) and add the name and password configuration variables: 
+- Open Startup.txt for with your favorite text editor (ex. notepad) and add the name and password configuration variables: 
 
     admin.password "ChangeThisPassword"
     vars.serverName "My Example Server"
@@ -62,7 +62,12 @@ This will launch a command prompt showing the server console output.
 __If you mark text in the command prompt, the server will freeze. This is standard Windows behaviour.__
 It will resume operation once you deselect.
 
-## Mod Layout
+## Using mods
+You can download some example mods from the [VU-Mods repo on github](https://github.com/EmulatorNexus/VU-Mods/)
+
+Extract the mod into the `Mods` directory, located at `Server/Admin/Mods`.
+If you grab it from github, the directory name could be something like `ExampleMod-Master`, so rename it to just `ExampleMod`  
+The mods directory should look something like this now.
 
     / Mods /
         / ExampleMod /
@@ -74,3 +79,10 @@ It will resume operation once you deselect.
                 / Shared /
                     / __init__.lua (optional)
             / mod.json
+Finally, add the mod to ModList.txt. The name should be the same as the folder name.
+Here's an example of ModList.txt:
+
+    ExampleMod
+    MapEditor
+    SuperSoldier
+    
