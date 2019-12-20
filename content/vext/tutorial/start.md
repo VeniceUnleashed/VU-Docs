@@ -77,13 +77,15 @@ The mods directory should look something like this now.
                 / Shared /
                     / __init__.lua (optional)
             / mod.json
-Finally, add the mod to ModList.txt. The name should be the same as the folder name.
+Finally, add the mod to ModList.txt. (case-insensitive)
 Here's an example of ModList.txt:
 
     ExampleMod
-    MapEditor
-    SuperSoldier
+    SomeMod
+    SomeOtherMod
     
+You can run multiple mod simultaniously, but there's no guarantee they are compatible. If two mods modify the same data, you might end up with unwanted results or crashes. The only way to find out is to try.
+
 ## Port Forwarding / Connecting to your server
 Before you can connect to your server, you will need to port-forward these ports:
 
