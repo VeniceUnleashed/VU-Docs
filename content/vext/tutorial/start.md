@@ -1,7 +1,8 @@
 ---
 title: Getting Started
 ---
-## Prerequisites
+## Introduction
+Hosting a Venice Unleashed server is easy. In this tutorial you'll learn how to start and configure a VU server from scratch. 
 Venice Unleashed features hybrid client/server hosting, which means that all you need to host a server is to have Battlefield 3 and Venice Unleashed installed.
 
 ## Install
@@ -42,6 +43,7 @@ See the [Server Administration guide](#) for additional configuration variables.
 
 ## Running a server
 If no level is specified in MapList.txt, the server will load `MP_Subway ConquestLarge0` by default
+The executable files are located inside your Venice Unleashed install directory.
 
 ### With GUI
 You can start a server using these launch parameters:
@@ -98,5 +100,11 @@ If you want to use RCON from outside the local network, you'll need to port-forw
     
 How you port-forward differentiates from router to router, so google how to do it for your router model.
 
-### Example
+You should now be able to connect to your server from the ingame server-browser.
+
+## Example
 You can download an example server configuration from [here](#). Extract it into the server instance root directory. 
+
+## Going further
+You should now have an Operation Metro server up and running.
+Learn how to configure and use RCON it in the [Server Administration Guide](#)
