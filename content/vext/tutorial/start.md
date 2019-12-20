@@ -1,6 +1,9 @@
 ---
 title: Getting Started
 ---
+## Prerequisites
+Venice Unleashed features hybrid client/server hosting, which means that all you need to host a server is to have Battlefield 3 and Venice Unleashed installed.
+
 ## Install
 Download and install Venice Unleashed from the [downloads](https://veniceunleashed.net/downloads) page.
 The installation directory defaults to `%localappdata%\VeniceUnleashed\client`
