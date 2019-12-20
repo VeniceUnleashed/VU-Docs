@@ -65,17 +65,56 @@ vars.serverDescription "Some Server Description"
 punkBuster.activate false #VU does not use Punkbuster regardless of this setting
 vars.premiumStatus false #There is no VU premium (yet)
 
-## VU Settings
-#vu.ColorCorrectionEnabled false #Disable "the blue filter". You might want to leave this off if your mod fixes/tweaks it
-#vu.SunFlareEnabled false #Disable sunglare & flashlight glare
-#vu.SuppressionMultiplier 0 #Disable suppression
-#vu.DesertingAllowed true #Allow you to go out-of-bounds.
+vu.ColorCorrectionEnabled true #Blue filter enabled
+vu.DesertingAllowed false #Can go out of bounds
+vu.DestructionEnabled true
+vu.FrequencyMode high120 #Tickrate (high60, high120)
+vu.HighPerformanceReplication false #See note
+vu.SpawnProtectionEnabled true
+vu.SpectatorCount 4
+vu.SquadSize 6
+vu.SunFlareEnabled true #Sunglare and flashlight glare enabled
+vu.SuppressionMultiplier 1
+vu.TimeScale 1
+vu.VehicleDisablingEnabled true
+
 ```
-Note: When using vu.DesertingAllowed true, you will encounter buggy terrain when going far outside of bounds.
+Notes:
+- **vu.ColorCorrectionEnabled** false will cause mods that rely on color correction look worse. 
+- **vu.HighPerformanceReplication**: Normally the game sends less updates for ghosts the further away from your local player they are, setting this to true makes it so they all send updates at the same rate regardless of distance
+- **vu.DesertingAllowed** true disables out-of-bounds restriction, but you will encounter buggy terrain when going far outside of bounds.
 To resolve this, use the `-highresterrain` launch option on the server. 
 This makes the server use more memory, but it fixes the glitching terrain.
 
 ## Using RCON
 You can also configure your server while it is running. Keep in mind that some changes requires a restart or a mapchange to work.
 I recommend that you use [Procon](https://myrcon.net/topic/2-procon-1x/).
-This tutorial will only cover VU-spesifics. If you need more information I suggest you google procon guides.
+This guide will only cover VU-spesifics. If you need more information I suggest you google procon guides.
+
+### Rcon commands and variables
+```
+bool vu.ColorCorrectionEnabled
+bool vu.DesertingAllowed
+bool vu.DestructionEnabled
+void vu.FadeInAll
+void vu.FadeOutAll
+[regular|high60|high120] vu.FrequencyMode
+bool vu.HighPerformanceReplication
+int vu.SetTeamTicketCount
+bool vu.SpawnProtectionEnabled
+int vu.SpectatorCount
+int vu.SquadSize
+bool vu.SunFlareEnabled
+float vu.SuppressionMultiplier
+float vu.TimeScale
+bool vu.VehicleDisablingEnabled
+string modlist.Add
+void modlist.AvailableMods
+void modlist.Clear
+bool modlist.Debug
+void modlist.List
+void modlist.ReloadExtensions
+string modlist.Remove
+void modlist.Save
+void modlist.UnloadExtensions
+```
