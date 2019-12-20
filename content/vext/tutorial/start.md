@@ -17,7 +17,7 @@ On Windows, this defaults to:
 > \<DriveLetter\>:\\Users\\\<UserName\>\\Documents\\Battlefield 3\\Server
 
 Place the server.key file you downloaded into this directory.
-Create and add these 2 folders to the directory: `Admin` and `Logs` (Case-sensitive).
+Create these 2 folders to the directory: `Admin` and `Logs` (Case-sensitive).
 
 Navigate inside the Admin folder and create 4 empty files, BanList.txt, MapList.txt, Startup.txt and ModList.txt
 Now create a folder named `Mods`
