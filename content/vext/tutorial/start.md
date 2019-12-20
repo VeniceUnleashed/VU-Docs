@@ -86,7 +86,7 @@ Here's an example of ModList.txt:
     
 You can run multiple mod simultaniously, but there's no guarantee they are compatible. If two mods modify the same data, you might end up with unwanted results or crashes. The only way to find out is to try.
 
-## Port Forwarding / Connecting to your server
+## Connecting to your server
 Before you can connect to your server, you will need to port-forward these ports:
 
     mHarmony Default: 7948 | Type: UDP
