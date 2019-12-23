@@ -62,13 +62,11 @@ vars.roundWarmupTimeout 600
 #Unused variables (But mods can use them)
 vars.serverMessage "Some Server Message" 
 vars.serverDescription "Some Server Description"
-punkBuster.activate false #VU does not use Punkbuster regardless of this setting
-vars.premiumStatus false #There is no VU premium (yet)
+vars.premiumStatus false
 
 vu.ColorCorrectionEnabled true #Blue filter enabled
 vu.DesertingAllowed false #Can go out of bounds
 vu.DestructionEnabled true
-vu.FrequencyMode high120 #Tickrate (high60, high120)
 vu.HighPerformanceReplication false #See note
 vu.SpawnProtectionEnabled true
 vu.SpectatorCount 4
@@ -77,12 +75,11 @@ vu.SunFlareEnabled true #Sunglare and flashlight glare enabled
 vu.SuppressionMultiplier 1
 vu.TimeScale 1
 vu.VehicleDisablingEnabled true
-
 ```
 Notes:
-- **vu.ColorCorrectionEnabled** false will cause mods that rely on color correction look worse. 
+- **vu.ColorCorrectionEnabled**: false will cause mods that rely on color correction look worse. 
 - **vu.HighPerformanceReplication**: Normally the game sends less updates for ghosts the further away from your local player they are, setting this to true makes it so they all send updates at the same rate regardless of distance
-- **vu.DesertingAllowed** true disables out-of-bounds restriction, but you will encounter buggy terrain when going far outside of bounds.
+- **vu.DesertingAllowed**: true disables out-of-bounds restriction, but you will encounter buggy terrain when going far outside of bounds.
 To resolve this, use the `-highresterrain` launch option on the server. 
 This makes the server use more memory, but it fixes the glitching terrain.
 
@@ -98,11 +95,9 @@ bool vu.DesertingAllowed
 bool vu.DestructionEnabled
 void vu.FadeInAll
 void vu.FadeOutAll
-[regular|high60|high120] vu.FrequencyMode
 bool vu.HighPerformanceReplication
 int vu.SetTeamTicketCount
 bool vu.SpawnProtectionEnabled
-int vu.SpectatorCount
 int vu.SquadSize
 bool vu.SunFlareEnabled
 float vu.SuppressionMultiplier
@@ -117,4 +112,8 @@ void modlist.ReloadExtensions
 string modlist.Remove
 void modlist.Save
 void modlist.UnloadExtensions
+
+
+int vu.SpectatorCount (read-only)
+[regular|high60|high120] vu.FrequencyMode (read-only)
 ```
