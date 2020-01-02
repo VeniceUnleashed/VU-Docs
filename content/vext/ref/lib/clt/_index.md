@@ -1,4 +1,0 @@
----
-title: Client
-hideChildren: true
----
