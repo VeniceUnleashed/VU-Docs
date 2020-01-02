@@ -1,17 +1,67 @@
-// Adapted from code by Matt Walters https://www.mattwalters.net/posts/hugo-and-lunr/
-
 (function ($) {
   'use strict';
 
   window.renderSearch = function (indexURL) {
     const $searchResults = $('#search-results');
+    const $apiResults = $('#api-results');
 
     const params = new URLSearchParams(window.location.search);
     const searchQuery = params.get('q');
+    const searchQueryLower = searchQuery.toLowerCase();
 
     // Download the index and search it.
     let idx = null; // Lunr index
     const resultDetails = new Map();
+
+    $.ajax('/json/vext-api.json').then((apiData) => {
+      var options = {
+        shouldSort: true,
+        matchAllTokens: true,
+        includeMatches: true,
+        threshold: 0.1,
+        location: 0,
+        distance: 100,
+        maxPatternLength: 32,
+        minMatchCharLength: 2,
+        keys: [
+          "fields",
+          "methods"
+        ]
+      };
+
+      var fuse = new Fuse(apiData, options);
+      var results = fuse.search(searchQuery, { limit: 15 });
+
+      for (const result of results) {
+        let matches = [];
+
+        for (const match of result.matches) {
+          if (match.value.toLowerCase().indexOf(searchQueryLower) === -1) {
+            continue;
+          }
+
+          let matchText = result.item.name;
+
+          if (match.key === 'fields') {
+            matchText += '.';
+          } else {
+            matchText += ':';
+          }
+
+          matchText += match.value;
+
+          matches.push(matchText);
+        }
+
+        if (matches.length === 0) {
+          continue;
+        }
+
+        console.log('<div>' + matches.join('<br/>') + '</div>');
+
+        $apiResults.append($('<div>' + matches.join('<br/>') + '</div>'));
+      }
+    });
 
     $.ajax(indexURL).then((data) => {
       const idx = lunr(function () {
@@ -100,31 +150,4 @@
       }
     });
   };
-
-  $(document).ready(function () {
-    const $searchInput = $('.td-search-input');
-
-    //
-    // Options for popover
-    //
-
-    $searchInput.data('html', true);
-    $searchInput.data('placement', 'bottom');
-
-    // Redirect to full results page when someone presses enter.
-    $searchInput.keypress(e => {
-      if (e.which !== 13) {
-        return true;
-      }
-
-      document.location.href = '/search?q=' + encodeURIComponent($searchInput.val());
-
-      return false;
-    });
-
-    // Prevent reloading page by enter key on sidebar search.
-    $searchInput.closest('form').on('submit', () => {
-      return false;
-    });
-  });
 })(jQuery);

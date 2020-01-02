@@ -1,16 +1,12 @@
 {{- $currentNode := . }}
 <div id="td-sidebar-menu" class="td-sidebar__inner">
   {{ if not .Site.Params.ui.sidebar_search_disable }}
-  <form class="td-sidebar__search d-flex align-items-center">
     {{ partial "search-input.html" . }}
-    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
-    </button>
-  </form>
   {{ end }}
   <nav class="collapse td-sidebar-nav pt-2 pl-4" id="td-section-nav">
-    <ul class="td-sidebar-nav__section pr-md-3">
+    <ul class="td-sidebar-nav__section">
       <li class="td-sidebar-nav__section-title">
-        <a  href="{{ .Site.Home.RelPermalink }}" class="align-left pl-0 pr-2{{ if .IsHome}} active{{ end }} td-sidebar-link td-sidebar-link__section">{{ .Site.Home.LinkTitle }}</a>
+        <a href="{{ .Site.Home.RelPermalink }}" class="align-left pl-0 pr-2{{ if .IsHome}} active{{ end }} td-sidebar-link td-sidebar-link__section">{{ .Site.Home.LinkTitle }}</a>
       </li>
       <ul>
         {{- if eq .Site.Params.ordersectionsby "title"}}
@@ -35,7 +31,7 @@
   {{- if .IsSection }}
     {{- $active := eq . $currentNode.CurrentSection }}
     {{- $numberOfPages := (add (len .Pages) (len .Sections)) }}
-    <ul class="td-sidebar-nav__section pr-md-3">
+    <ul class="td-sidebar-nav__section">
       <li class="td-sidebar-nav__section-title">
         <a href="{{ .RelPermalink }}" class="align-left pl-0 pr-2{{ if $active }} active{{end}}">{{ .LinkTitle }}</a>
       </li>
