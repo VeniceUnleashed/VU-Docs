@@ -27,10 +27,10 @@ title: ScreenEffectData
 
 | Type                                 | Name            | Parameters |
 | ------------------------------------ | --------------- | ---------- |
-| [ScreenEffectData](ScreenEffectData) | [Clone](#clone) |            |
+| [ScreenEffectData](/vext/ref/client/class/screeneffectdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [ScreenEffectData](ScreenEffectData) **Clone**()
+> [ScreenEffectData](/vext/ref/client/class/screeneffectdata/) **Clone**()
 
 Creates a shallow-copy clone of the instance.
