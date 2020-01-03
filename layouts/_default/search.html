@@ -1,16 +1,17 @@
 {{ define "main" }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.6/fuse.min.js" type="application/javascript"></script>
-<section class="row td-search-result">
+<section class="td-search-result">
   <h2>{{ .Title }}</h2>
+  <div id="search-status">Searching. Please wait...</div>
   <div id="api-results"></div>
-  <div id="search-results">
-    Searching. Please wait...
-  </div>
+  <div id="search-results"></div>
   <script>
     {{ $offlineSearchIndex := resources.Get "json/offline-search-index.json" | resources.ExecuteAsTemplate "/offline-search-index.json" . }}
-    {{ $offlineSearchIndexFingerprint := $offlineSearchIndex | resources.Fingerprint "sha512" }}
+    {{ $offlineSearchIndexFingerprint := $offlineSearchIndex | resources.Fingerprint "sha256" }}
+    {{ $apiSearchIndex := resources.Get "json/vext-api.json" | resources.ExecuteAsTemplate "/vext-api.json" . }}
+    {{ $apiSearchIndexFingerprint := $apiSearchIndex | resources.Fingerprint "sha256" }}
     $(document).ready(function() {
-      window.renderSearch("{{ $offlineSearchIndexFingerprint.Permalink }}");
+      window.renderSearch("{{ $offlineSearchIndexFingerprint.Permalink }}", "{{ $apiSearchIndexFingerprint.Permalink }}");
     });
   </script>
 </section>

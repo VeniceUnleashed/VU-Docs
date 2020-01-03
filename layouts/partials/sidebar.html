@@ -49,7 +49,7 @@
       {{- end}}
     </ul>
   {{- else}}
-    {{- $active := eq .URL $currentNode.URL }}
+    {{- $active := eq .Permalink $currentNode.Permalink }}
     <li>
         <a class="td-sidebar-link td-sidebar-link__page{{ if $active }} active{{end}}" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
     </li>
