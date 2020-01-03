@@ -16,9 +16,9 @@ A structure type representing a Frostbite data type.
 
 | Name       | Type                              | Description |
 | ---------- | --------------------------------- | ----------- |
-| contrast   | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| brightness | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| saturation | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| contrast   | [Vec3](/vext/ref/shared/class/vec3) |             |
+| brightness | [Vec3](/vext/ref/shared/class/vec3) |             |
+| saturation | [Vec3](/vext/ref/shared/class/vec3) |             |
 | hue        | number                            |             |
 
 ## Methods

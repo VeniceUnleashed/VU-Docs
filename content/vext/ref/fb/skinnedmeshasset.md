@@ -23,8 +23,8 @@ A container type representing a Frostbite instance entry.
 
 | Name                      | Type                              | Description |
 | ------------------------- | --------------------------------- | ----------- |
-| boundingBoxPositionOffset | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| boundingBoxSizeOffset     | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| boundingBoxPositionOffset | [Vec3](/vext/ref/shared/class/vec3) |             |
+| boundingBoxSizeOffset     | [Vec3](/vext/ref/shared/class/vec3) |             |
 
 ## Methods
 

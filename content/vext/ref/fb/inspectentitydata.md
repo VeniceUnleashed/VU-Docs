@@ -26,7 +26,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                   | Type                                             | Description |
 | ---------------------- | ------------------------------------------------ | ----------- |
-| centerOffset           | [Vec3](/vext/ref/shared/class/Vec3)                |             |
+| centerOffset           | [Vec3](/vext/ref/shared/class/vec3)                |             |
 | uiName                 | string                                           |             |
 | maxLookAtHeight        | number                                           |             |
 | viewPoints             | [InspectViewPointData](InspectViewPointData)\[\] |             |

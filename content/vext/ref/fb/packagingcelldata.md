@@ -26,7 +26,7 @@ A container type representing a Frostbite instance entry.
 | ------- | ------------------------------------------ | ----------- |
 | rules   | [PackagingRule](PackagingRule)\[\]         |             |
 | targets | [PackagingCellData](PackagingCellData)\[\] |             |
-| shape   | [Vec2](/vext/ref/shared/class/Vec2)\[\]      |             |
+| shape   | [Vec2](/vext/ref/shared/class/vec2)\[\]      |             |
 
 ## Methods
 

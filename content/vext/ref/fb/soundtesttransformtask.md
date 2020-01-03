@@ -22,7 +22,7 @@ A container type representing a Frostbite instance entry.
 
 | Name             | Type                                                     | Description |
 | ---------------- | -------------------------------------------------------- | ----------- |
-| initialPosition  | [Vec3](/vext/ref/shared/class/Vec3)                        |             |
+| initialPosition  | [Vec3](/vext/ref/shared/class/vec3)                        |             |
 | behavior         | [SoundTestTransformBehavior](SoundTestTransformBehavior) |             |
 | relativeListener | bool                                                     |             |
 

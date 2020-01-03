@@ -21,9 +21,9 @@ A container type representing a Frostbite instance entry.
 
 | Name                | Type                                                  | Description |
 | ------------------- | ----------------------------------------------------- | ----------- |
-| boundingBox         | [AxisAlignedBox](/vext/ref/shared/class/AxisAlignedBox) |             |
+| boundingBox         | [AxisAlignedBox](/vext/ref/shared/class/axisalignedbox) |             |
 | asset               | [DestructionVolumeAsset](DestructionVolumeAsset)      |             |
-| impacts             | [Vec4](/vext/ref/shared/class/Vec4)\[\]                 |             |
+| impacts             | [Vec4](/vext/ref/shared/class/vec4)\[\]                 |             |
 | partToImpactIndices | number\[\]                                            |             |
 
 ## Methods

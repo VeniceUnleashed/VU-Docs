@@ -16,10 +16,10 @@ A structure type representing a Frostbite data type.
 
 | Name                | Type                              | Description |
 | ------------------- | --------------------------------- | ----------- |
-| position            | [Vec2](/vext/ref/shared/class/Vec2) |             |
-| cameraPosition      | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| size                | [Vec2](/vext/ref/shared/class/Vec2) |             |
-| overlayColor        | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| position            | [Vec2](/vext/ref/shared/class/vec2) |             |
+| cameraPosition      | [Vec3](/vext/ref/shared/class/vec3) |             |
+| size                | [Vec2](/vext/ref/shared/class/vec2) |             |
+| overlayColor        | [Vec3](/vext/ref/shared/class/vec3) |             |
 | anchorPosVertical   | number                            |             |
 | anchorPosHorizontal | number                            |             |
 | cameraLookDistance  | number                            |             |

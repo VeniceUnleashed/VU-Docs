@@ -25,7 +25,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                   | Type                                                    | Description |
 | ---------------------- | ------------------------------------------------------- | ----------- |
-| alignTransform         | [LinearTransform](/vext/ref/shared/class/LinearTransform) |             |
+| alignTransform         | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
 | movingBody             | [MovingBodyData](MovingBodyData)                        |             |
 | healthZone             | [VehicleHealthZoneData](VehicleHealthZoneData)          |             |
 | soundEffectStartRpm    | number                                                  |             |

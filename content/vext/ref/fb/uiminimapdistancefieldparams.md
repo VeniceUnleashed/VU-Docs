@@ -16,8 +16,8 @@ A structure type representing a Frostbite data type.
 
 | Name           | Type                                         | Description |
 | -------------- | -------------------------------------------- | ----------- |
-| colorTint      | [Vec4](/vext/ref/shared/class/Vec4)            |             |
-| outlineColor   | [Vec4](/vext/ref/shared/class/Vec4)            |             |
+| colorTint      | [Vec4](/vext/ref/shared/class/vec4)            |             |
+| outlineColor   | [Vec4](/vext/ref/shared/class/vec4)            |             |
 | distanceScale  | number                                       |             |
 | alphaThreshold | number                                       |             |
 | outlineInner   | number                                       |             |

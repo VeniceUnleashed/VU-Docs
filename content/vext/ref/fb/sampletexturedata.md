@@ -23,10 +23,10 @@ A container type representing a Frostbite instance entry.
 
 | Name              | Type                                  | Description |
 | ----------------- | ------------------------------------- | ----------- |
-| textureDimensions | [Vec2](/vext/ref/shared/class/Vec2)     |             |
-| colorIntensityMax | [Vec3](/vext/ref/shared/class/Vec3)     |             |
-| colorIntensityMin | [Vec3](/vext/ref/shared/class/Vec3)     |             |
-| gradientData      | [Vec4](/vext/ref/shared/class/Vec4)\[\] |             |
+| textureDimensions | [Vec2](/vext/ref/shared/class/vec2)     |             |
+| colorIntensityMax | [Vec3](/vext/ref/shared/class/vec3)     |             |
+| colorIntensityMin | [Vec3](/vext/ref/shared/class/vec3)     |             |
+| gradientData      | [Vec4](/vext/ref/shared/class/vec4)\[\] |             |
 | textureOriginU    | number                                |             |
 | textureOriginV    | number                                |             |
 

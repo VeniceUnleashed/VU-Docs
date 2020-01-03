@@ -16,7 +16,7 @@ A structure type representing a Frostbite data type.
 
 | Name       | Type                              | Description |
 | ---------- | --------------------------------- | ----------- |
-| heightSpan | [Vec2](/vext/ref/shared/class/Vec2) |             |
+| heightSpan | [Vec2](/vext/ref/shared/class/vec2) |             |
 | worldSize  | number                            |             |
 | data       | number\[\]                        |             |
 

@@ -22,8 +22,8 @@ A container type representing a Frostbite instance entry.
 
 | Name           | Type                              | Description |
 | -------------- | --------------------------------- | ----------- |
-| position       | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| killerPosition | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| position       | [Vec3](/vext/ref/shared/class/vec3) |             |
+| killerPosition | [Vec3](/vext/ref/shared/class/vec3) |             |
 | killerId       | number                            |             |
 | time           | number                            |             |
 | weapon         | string                            |             |

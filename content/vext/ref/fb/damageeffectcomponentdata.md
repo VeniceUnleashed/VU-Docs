@@ -24,10 +24,10 @@ A container type representing a Frostbite instance entry.
 
 | Name                               | Type                                             | Description |
 | ---------------------------------- | ------------------------------------------------ | ----------- |
-| rightDamage                        | [Vec4](/vext/ref/shared/class/Vec4)                |             |
-| topDamage                          | [Vec4](/vext/ref/shared/class/Vec4)                |             |
-| leftDamage                         | [Vec4](/vext/ref/shared/class/Vec4)                |             |
-| bottomDamage                       | [Vec4](/vext/ref/shared/class/Vec4)                |             |
+| rightDamage                        | [Vec4](/vext/ref/shared/class/vec4)                |             |
+| topDamage                          | [Vec4](/vext/ref/shared/class/vec4)                |             |
+| leftDamage                         | [Vec4](/vext/ref/shared/class/vec4)                |             |
+| bottomDamage                       | [Vec4](/vext/ref/shared/class/vec4)                |             |
 | outerFrameOpacity                  | number                                           |             |
 | innerFrameOpacity                  | number                                           |             |
 | frameWidth                         | number                                           |             |

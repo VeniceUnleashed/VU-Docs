@@ -22,12 +22,12 @@ A container type representing a Frostbite instance entry.
 
 | Name                 | Type                                                 | Description |
 | -------------------- | ---------------------------------------------------- | ----------- |
-| asset1pGuid          | [Guid](/vext/ref/shared/class/Guid)                    |             |
-| variation1pGuids     | [Guid](/vext/ref/shared/class/Guid)\[\]                |             |
-| asset1pZoomGuid      | [Guid](/vext/ref/shared/class/Guid)                    |             |
-| variation1pZoomGuids | [Guid](/vext/ref/shared/class/Guid)\[\]                |             |
-| asset3pGuid          | [Guid](/vext/ref/shared/class/Guid)                    |             |
-| variation3pGuids     | [Guid](/vext/ref/shared/class/Guid)\[\]                |             |
+| asset1pGuid          | [Guid](/vext/ref/shared/class/guid)                    |             |
+| variation1pGuids     | [Guid](/vext/ref/shared/class/guid)\[\]                |             |
+| asset1pZoomGuid      | [Guid](/vext/ref/shared/class/guid)                    |             |
+| variation1pZoomGuids | [Guid](/vext/ref/shared/class/guid)\[\]                |             |
+| asset3pGuid          | [Guid](/vext/ref/shared/class/guid)                    |             |
+| variation3pGuids     | [Guid](/vext/ref/shared/class/guid)\[\]                |             |
 | customizedMaterials  | [CustomizedMaterialData](CustomizedMaterialData)\[\] |             |
 
 ## Methods

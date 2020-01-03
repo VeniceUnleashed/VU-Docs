@@ -23,7 +23,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                | Type                                  | Description |
 | ------------------- | ------------------------------------- | ----------- |
-| objectInstanceGuids | [Guid](/vext/ref/shared/class/Guid)\[\] |             |
+| objectInstanceGuids | [Guid](/vext/ref/shared/class/guid)\[\] |             |
 
 ## Methods
 

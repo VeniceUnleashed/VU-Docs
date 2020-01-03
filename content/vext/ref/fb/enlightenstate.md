@@ -21,10 +21,10 @@ A container type representing a Frostbite instance entry.
 
 | Name                     | Type                              | Description |
 | ------------------------ | --------------------------------- | ----------- |
-| skyBoxGroundColor        | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| skyBoxSunLightColor      | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| skyBoxBackLightColor     | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| skyBoxSkyColor           | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| skyBoxGroundColor        | [Vec3](/vext/ref/shared/class/vec3) |             |
+| skyBoxSunLightColor      | [Vec3](/vext/ref/shared/class/vec3) |             |
+| skyBoxBackLightColor     | [Vec3](/vext/ref/shared/class/vec3) |             |
+| skyBoxSkyColor           | [Vec3](/vext/ref/shared/class/vec3) |             |
 | sunScale                 | number                            |             |
 | outputScale              | number                            |             |
 | bounceScale              | number                            |             |

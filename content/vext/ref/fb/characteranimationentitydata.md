@@ -24,7 +24,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                      | Type                                                    | Description |
 | ------------------------- | ------------------------------------------------------- | ----------- |
-| entitySpaceTransform      | [LinearTransform](/vext/ref/shared/class/LinearTransform) |             |
+| entitySpaceTransform      | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
 | controller                | [AntRef](AntRef)                                        |             |
 | trackLength               | number                                                  |             |
 | externalTime              | number                                                  |             |

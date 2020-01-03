@@ -22,9 +22,9 @@ A container type representing a Frostbite instance entry.
 
 | Name                    | Type                              | Description |
 | ----------------------- | --------------------------------- | ----------- |
-| chunkGuid               | [Guid](/vext/ref/shared/class/Guid) |             |
+| chunkGuid               | [Guid](/vext/ref/shared/class/guid) |             |
 | chunkSize               | number                            |             |
-| subtitleChunkGuid       | [Guid](/vext/ref/shared/class/Guid) |             |
+| subtitleChunkGuid       | [Guid](/vext/ref/shared/class/guid) |             |
 | subtitleChunkSize       | number                            |             |
 | hasLocalizedAudioTracks | bool                              |             |
 | overrideBackgroundMusic | bool                              |             |

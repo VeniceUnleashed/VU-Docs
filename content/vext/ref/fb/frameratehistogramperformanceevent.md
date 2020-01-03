@@ -31,7 +31,7 @@ A container type representing a Frostbite instance entry.
 | below30         | number                            |             |
 | below60         | number                            |             |
 | above60         | number                            |             |
-| performanceLink | [Guid](/vext/ref/shared/class/Guid) |             |
+| performanceLink | [Guid](/vext/ref/shared/class/guid) |             |
 
 ## Methods
 

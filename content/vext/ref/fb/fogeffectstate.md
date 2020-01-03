@@ -21,9 +21,9 @@ A container type representing a Frostbite instance entry.
 
 | Name                     | Type                              | Description |
 | ------------------------ | --------------------------------- | ----------- |
-| fogColorCurve            | [Vec4](/vext/ref/shared/class/Vec4) |             |
-| curve                    | [Vec4](/vext/ref/shared/class/Vec4) |             |
-| fogColor                 | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| fogColorCurve            | [Vec4](/vext/ref/shared/class/vec4) |             |
+| curve                    | [Vec4](/vext/ref/shared/class/vec4) |             |
+| fogColor                 | [Vec3](/vext/ref/shared/class/vec3) |             |
 | start                    | number                            |             |
 | endValue                 | number                            |             |
 | fogColorStart            | number                            |             |

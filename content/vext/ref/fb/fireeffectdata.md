@@ -16,10 +16,10 @@ A structure type representing a Frostbite data type.
 
 | Name               | Type                               | Description |
 | ------------------ | ---------------------------------- | ----------- |
-| rotation           | [Vec3](/vext/ref/shared/class/Vec3)  |             |
-| offset             | [Vec3](/vext/ref/shared/class/Vec3)  |             |
-| zoomRotation       | [Vec3](/vext/ref/shared/class/Vec3)  |             |
-| zoomOffset         | [Vec3](/vext/ref/shared/class/Vec3)  |             |
+| rotation           | [Vec3](/vext/ref/shared/class/vec3)  |             |
+| offset             | [Vec3](/vext/ref/shared/class/vec3)  |             |
+| zoomRotation       | [Vec3](/vext/ref/shared/class/vec3)  |             |
+| zoomOffset         | [Vec3](/vext/ref/shared/class/vec3)  |             |
 | effect             | [EffectBlueprint](EffectBlueprint) |             |
 | useZoomOffset      | bool                               |             |
 | useZoomRotation    | bool                               |             |

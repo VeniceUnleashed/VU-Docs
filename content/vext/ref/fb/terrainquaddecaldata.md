@@ -26,7 +26,7 @@ A container type representing a Frostbite instance entry.
 
 | Name              | Type                                                                           | Description |
 | ----------------- | ------------------------------------------------------------------------------ | ----------- |
-| userMasks         | [Vec4](/vext/ref/shared/class/Vec4)                                              |             |
+| userMasks         | [Vec4](/vext/ref/shared/class/vec4)                                              |             |
 | shader3dZOnly     | [SurfaceShaderBaseAsset](SurfaceShaderBaseAsset)                               |             |
 | shader2d          | [SurfaceShaderBaseAsset](SurfaceShaderBaseAsset)                               |             |
 | atlasTileTemplate | [TerrainQuadDecalAtlasTileTemplateData](TerrainQuadDecalAtlasTileTemplateData) |             |

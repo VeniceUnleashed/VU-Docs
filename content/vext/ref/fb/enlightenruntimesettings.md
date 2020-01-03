@@ -22,7 +22,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                              | Type                              | Description |
 | --------------------------------- | --------------------------------- | ----------- |
-| albedoDefaultColor                | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| albedoDefaultColor                | [Vec3](/vext/ref/shared/class/vec3) |             |
 | localLightForceRadius             | number                            |             |
 | drawDebugSystemDependenciesEnable | number                            |             |
 | temporalCoherenceThreshold        | number                            |             |

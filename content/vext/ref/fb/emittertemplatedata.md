@@ -21,9 +21,9 @@ A container type representing a Frostbite instance entry.
 
 | Name                                | Type                              | Description |
 | ----------------------------------- | --------------------------------- | ----------- |
-| pointLightIntensity                 | [Vec4](/vext/ref/shared/class/Vec4) |             |
-| pointLightPivot                     | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| pointLightColor                     | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| pointLightIntensity                 | [Vec4](/vext/ref/shared/class/vec4) |             |
+| pointLightPivot                     | [Vec3](/vext/ref/shared/class/vec3) |             |
+| pointLightColor                     | [Vec3](/vext/ref/shared/class/vec3) |             |
 | maxCount                            | number                            |             |
 | name                                | string                            |             |
 | timeScale                           | number                            |             |

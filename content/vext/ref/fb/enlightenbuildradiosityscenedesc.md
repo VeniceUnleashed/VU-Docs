@@ -23,7 +23,7 @@ A container type representing a Frostbite instance entry.
 | --------------------- | ---------------------------------------------------- | ----------- |
 | lightProbeSets        | [EnlightenLightProbeSet](EnlightenLightProbeSet)\[\] |             |
 | instances             | [EnlightenInputInstance](EnlightenInputInstance)\[\] |             |
-| staticLightProbes     | [Vec3](/vext/ref/shared/class/Vec3)\[\]                |             |
+| staticLightProbes     | [Vec3](/vext/ref/shared/class/vec3)\[\]                |             |
 | terrain               | string                                               |             |
 | samplesPerCluster     | number                                               |             |
 | systemInfluenceRadius | number                                               |             |

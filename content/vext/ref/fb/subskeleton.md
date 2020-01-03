@@ -18,7 +18,7 @@ A structure type representing a Frostbite data type.
 | ------------ | ----------------------------------------------------------- | ----------- |
 | skeleton     | [SkeletonAsset](SkeletonAsset)                              |             |
 | boneMap      | number\[\]                                                  |             |
-| transformMap | [LinearTransform](/vext/ref/shared/class/LinearTransform)\[\] |             |
+| transformMap | [LinearTransform](/vext/ref/shared/class/lineartransform)\[\] |             |
 
 ## Methods
 

@@ -16,8 +16,8 @@ A structure type representing a Frostbite data type.
 
 | Name               | Type                              | Description |
 | ------------------ | --------------------------------- | ----------- |
-| meshRenderOffset   | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| meshRenderRotation | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| meshRenderOffset   | [Vec3](/vext/ref/shared/class/vec3) |             |
+| meshRenderRotation | [Vec3](/vext/ref/shared/class/vec3) |             |
 
 ## Methods
 

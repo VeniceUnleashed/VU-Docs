@@ -21,7 +21,7 @@ A container type representing a Frostbite instance entry.
 
 | Name        | Type                                  | Description |
 | ----------- | ------------------------------------- | ----------- |
-| lightMapUvs | [Vec4](/vext/ref/shared/class/Vec4)\[\] |             |
+| lightMapUvs | [Vec4](/vext/ref/shared/class/vec4)\[\] |             |
 
 ## Methods
 

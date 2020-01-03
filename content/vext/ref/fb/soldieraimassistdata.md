@@ -22,12 +22,12 @@ A container type representing a Frostbite instance entry.
 
 | Name                                        | Type                              | Description |
 | ------------------------------------------- | --------------------------------- | ----------- |
-| eyePosOffset                                | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| stickyBoxScale                              | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| snapDistanceScale                           | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| snapBoxScale                                | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| stickyDistanceScale                         | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| maxAcceleration                             | [Vec2](/vext/ref/shared/class/Vec2) |             |
+| eyePosOffset                                | [Vec3](/vext/ref/shared/class/vec3) |             |
+| stickyBoxScale                              | [Vec3](/vext/ref/shared/class/vec3) |             |
+| snapDistanceScale                           | [Vec3](/vext/ref/shared/class/vec3) |             |
+| snapBoxScale                                | [Vec3](/vext/ref/shared/class/vec3) |             |
+| stickyDistanceScale                         | [Vec3](/vext/ref/shared/class/vec3) |             |
+| maxAcceleration                             | [Vec2](/vext/ref/shared/class/vec2) |             |
 | accelerationDamping                         | number                            |             |
 | accelerationInputThreshold                  | number                            |             |
 | accelerationMultiplier                      | number                            |             |

@@ -24,14 +24,14 @@ A container type representing a Frostbite instance entry.
 
 | Name  | Type                                                    | Description |
 | ----- | ------------------------------------------------------- | ----------- |
-| in4   | [LinearTransform](/vext/ref/shared/class/LinearTransform) |             |
-| in1   | [LinearTransform](/vext/ref/shared/class/LinearTransform) |             |
-| in2   | [LinearTransform](/vext/ref/shared/class/LinearTransform) |             |
-| in3   | [LinearTransform](/vext/ref/shared/class/LinearTransform) |             |
-| in8   | [LinearTransform](/vext/ref/shared/class/LinearTransform) |             |
-| in5   | [LinearTransform](/vext/ref/shared/class/LinearTransform) |             |
-| in6   | [LinearTransform](/vext/ref/shared/class/LinearTransform) |             |
-| in7   | [LinearTransform](/vext/ref/shared/class/LinearTransform) |             |
+| in4   | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
+| in1   | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
+| in2   | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
+| in3   | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
+| in8   | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
+| in5   | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
+| in6   | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
+| in7   | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
 | realm | [Realm](Realm)                                          |             |
 
 ## Methods

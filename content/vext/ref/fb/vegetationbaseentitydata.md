@@ -26,8 +26,8 @@ A container type representing a Frostbite instance entry.
 
 | Name                 | Type                                                        | Description |
 | -------------------- | ----------------------------------------------------------- | ----------- |
-| basePoseTransforms   | [LinearTransform](/vext/ref/shared/class/LinearTransform)\[\] |             |
-| basePoseTranslations | [Vec3](/vext/ref/shared/class/Vec3)\[\]                       |             |
+| basePoseTransforms   | [LinearTransform](/vext/ref/shared/class/lineartransform)\[\] |             |
+| basePoseTranslations | [Vec3](/vext/ref/shared/class/vec3)\[\]                       |             |
 | hierarchy            | number\[\]                                                  |             |
 | mesh                 | [SkinnedMeshAsset](SkinnedMeshAsset)                        |             |
 | shadowMesh           | [SkinnedMeshAsset](SkinnedMeshAsset)                        |             |

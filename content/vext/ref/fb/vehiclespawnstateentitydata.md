@@ -24,7 +24,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                 | Type                              | Description |
 | -------------------- | --------------------------------- | ----------- |
-| initialVelocity      | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| initialVelocity      | [Vec3](/vext/ref/shared/class/vec3) |             |
 | startupDelayModifier | number                            |             |
 | initialThrottle      | number                            |             |
 | engineIndex          | number                            |             |

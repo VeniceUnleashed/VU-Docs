@@ -21,10 +21,10 @@ A container type representing a Frostbite instance entry.
 
 | Name                      | Type                                                   | Description |
 | ------------------------- | ------------------------------------------------------ | ----------- |
-| offset                    | [Vec3](/vext/ref/shared/class/Vec3)                      |             |
-| weaponBaseOffset          | [Vec3](/vext/ref/shared/class/Vec3)                      |             |
-| weaponLagRotationOffset   | [Vec3](/vext/ref/shared/class/Vec3)                      |             |
-| rotation                  | [Vec3](/vext/ref/shared/class/Vec3)                      |             |
+| offset                    | [Vec3](/vext/ref/shared/class/vec3)                      |             |
+| weaponBaseOffset          | [Vec3](/vext/ref/shared/class/vec3)                      |             |
+| weaponLagRotationOffset   | [Vec3](/vext/ref/shared/class/vec3)                      |             |
+| rotation                  | [Vec3](/vext/ref/shared/class/vec3)                      |             |
 | weaponSpringEffect        | [WeaponLagSpringEffectData](WeaponLagSpringEffectData) |             |
 | cameraSpringEffect        | [WeaponLagSpringEffectData](WeaponLagSpringEffectData) |             |
 | moveStrafeModifier        | number                                                 |             |

@@ -24,9 +24,9 @@ A container type representing a Frostbite instance entry.
 
 | Name        | Type                                                    | Description |
 | ----------- | ------------------------------------------------------- | ----------- |
-| transformIn | [LinearTransform](/vext/ref/shared/class/LinearTransform) |             |
-| vec4In      | [Vec4](/vext/ref/shared/class/Vec4)                       |             |
-| vec3In      | [Vec3](/vext/ref/shared/class/Vec3)                       |             |
+| transformIn | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
+| vec4In      | [Vec4](/vext/ref/shared/class/vec4)                       |             |
+| vec3In      | [Vec3](/vext/ref/shared/class/vec3)                       |             |
 | realm       | [Realm](Realm)                                          |             |
 | floatIn     | number                                                  |             |
 | intIn       | number                                                  |             |

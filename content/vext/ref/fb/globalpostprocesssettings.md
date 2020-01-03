@@ -21,14 +21,14 @@ A container type representing a Frostbite instance entry.
 
 | Name                             | Type                                         | Description |
 | -------------------------------- | -------------------------------------------- | ----------- |
-| brightness                       | [Vec3](/vext/ref/shared/class/Vec3)            |             |
-| forceBloomScale                  | [Vec3](/vext/ref/shared/class/Vec3)            |             |
-| forceVignetteColor               | [Vec4](/vext/ref/shared/class/Vec4)            |             |
-| contrast                         | [Vec3](/vext/ref/shared/class/Vec3)            |             |
-| saturation                       | [Vec3](/vext/ref/shared/class/Vec3)            |             |
-| filmGrainTextureScale            | [Vec2](/vext/ref/shared/class/Vec2)            |             |
-| forceVignetteScale               | [Vec2](/vext/ref/shared/class/Vec2)            |             |
-| filmGrainColorScale              | [Vec3](/vext/ref/shared/class/Vec3)            |             |
+| brightness                       | [Vec3](/vext/ref/shared/class/vec3)            |             |
+| forceBloomScale                  | [Vec3](/vext/ref/shared/class/vec3)            |             |
+| forceVignetteColor               | [Vec4](/vext/ref/shared/class/vec4)            |             |
+| contrast                         | [Vec3](/vext/ref/shared/class/vec3)            |             |
+| saturation                       | [Vec3](/vext/ref/shared/class/vec3)            |             |
+| filmGrainTextureScale            | [Vec2](/vext/ref/shared/class/vec2)            |             |
+| forceVignetteScale               | [Vec2](/vext/ref/shared/class/vec2)            |             |
+| filmGrainColorScale              | [Vec3](/vext/ref/shared/class/vec3)            |             |
 | ps3EdgeMlaaJobPriority           | number                                       |             |
 | bloomBlurIterationCount          | number                                       |             |
 | debugModeStep                    | number                                       |             |

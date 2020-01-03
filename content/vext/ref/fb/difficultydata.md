@@ -21,8 +21,8 @@ A container type representing a Frostbite instance entry.
 
 | Name                                | Type                                         | Description |
 | ----------------------------------- | -------------------------------------------- | ----------- |
-| stickyBoxModifier                   | [Vec3](/vext/ref/shared/class/Vec3)            |             |
-| snapBoxModifier                     | [Vec3](/vext/ref/shared/class/Vec3)            |             |
+| stickyBoxModifier                   | [Vec3](/vext/ref/shared/class/vec3)            |             |
+| snapBoxModifier                     | [Vec3](/vext/ref/shared/class/vec3)            |             |
 | humanHealthModifier                 | number                                       |             |
 | gameType                            | [PersistenceGameType](PersistenceGameType)   |             |
 | friendsHealthModifier               | number                                       |             |

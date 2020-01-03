@@ -23,7 +23,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                | Type                                                    | Description |
 | ------------------- | ------------------------------------------------------- | ----------- |
-| blueprintTransform  | [LinearTransform](/vext/ref/shared/class/LinearTransform) |             |
+| blueprintTransform  | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
 | blueprint           | [Blueprint](Blueprint)                                  |             |
 | objectVariation     | [ObjectVariation](ObjectVariation)                      |             |
 | streamRealm         | [StreamRealm](StreamRealm)                              |             |

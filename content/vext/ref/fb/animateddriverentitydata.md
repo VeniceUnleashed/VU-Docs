@@ -26,7 +26,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                         | Type                                                    | Description |
 | ---------------------------- | ------------------------------------------------------- | ----------- |
-| inputTransform               | [LinearTransform](/vext/ref/shared/class/LinearTransform) |             |
+| inputTransform               | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
 | vehicleBoost                 | [AntRef](AntRef)                                        |             |
 | vehicleSpeed                 | [AntRef](AntRef)                                        |             |
 | vehicleMovementState         | [AntRef](AntRef)                                        |             |

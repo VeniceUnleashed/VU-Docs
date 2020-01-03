@@ -14,7 +14,7 @@ title: TonemapData
 
 | Name                   | Type                                               | Description |
 | ---------------------- | -------------------------------------------------- | ----------- |
-| bloomScale             | [Vec3](/vext/ref/shared/class/Vec3)                  |             |
+| bloomScale             | [Vec3](/vext/ref/shared/class/vec3)                  |             |
 | realm                  | [Realm](/vext/ref/fb/realm)                 |             |
 | tonemapMethod          | [TonemapMethod](/vext/ref/fb/tonemapmethod) |             |
 | minExposure            | number                                             |             |

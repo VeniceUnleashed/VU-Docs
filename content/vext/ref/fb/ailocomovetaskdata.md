@@ -16,7 +16,7 @@ A structure type representing a Frostbite data type.
 
 | Name              | Type                              | Description |
 | ----------------- | --------------------------------- | ----------- |
-| wantedPos         | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| wantedPos         | [Vec3](/vext/ref/shared/class/vec3) |             |
 | worldAngle        | number                            |             |
 | waitTime          | number                            |             |
 | enterPose         | [AntPoseEnum](AntPoseEnum)        |             |

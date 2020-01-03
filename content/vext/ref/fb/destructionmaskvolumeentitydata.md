@@ -26,8 +26,8 @@ A container type representing a Frostbite instance entry.
 
 | Name                     | Type                                                               | Description |
 | ------------------------ | ------------------------------------------------------------------ | ----------- |
-| dustAccumulationCurve    | [Vec4](/vext/ref/shared/class/Vec4)                                  |             |
-| shaderUserMasks          | [Vec4](/vext/ref/shared/class/Vec4)                                  |             |
+| dustAccumulationCurve    | [Vec4](/vext/ref/shared/class/vec4)                                  |             |
+| shaderUserMasks          | [Vec4](/vext/ref/shared/class/vec4)                                  |             |
 | dustAccumulationLifeTime | number                                                             |             |
 | shader                   | [SurfaceShaderInstanceDataStruct](SurfaceShaderInstanceDataStruct) |             |
 | radius                   | number                                                             |             |

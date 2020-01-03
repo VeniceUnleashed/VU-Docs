@@ -16,7 +16,7 @@ A structure type representing a Frostbite data type.
 
 | Name       | Type                                  | Description |
 | ---------- | ------------------------------------- | ----------- |
-| shape      | [Vec2](/vext/ref/shared/class/Vec2)\[\] |             |
+| shape      | [Vec2](/vext/ref/shared/class/vec2)\[\] |             |
 | bundleName | string                                |             |
 
 ## Methods

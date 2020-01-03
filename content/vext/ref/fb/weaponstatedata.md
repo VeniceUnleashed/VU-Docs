@@ -31,7 +31,7 @@ A structure type representing a Frostbite data type.
 | animationConfiguration                | [AnimationConfigurationData](AnimationConfigurationData)    |             |
 | animatedFireType                      | [AnimatedFireEnum](AnimatedFireEnum)                        |             |
 | animatedAimingType                    | [AnimatedAimingEnum](AnimatedAimingEnum)                    |             |
-| mesh3pTransforms                      | [LinearTransform](/vext/ref/shared/class/LinearTransform)\[\] |             |
+| mesh3pTransforms                      | [LinearTransform](/vext/ref/shared/class/lineartransform)\[\] |             |
 | mesh3pRigidMeshSocketObjectTransforms | [RigidMeshSocketTransform](RigidMeshSocketTransform)\[\]    |             |
 | hideProjectileAfterFireTime           | number                                                      |             |
 | projectileBoneName                    | string                                                      |             |

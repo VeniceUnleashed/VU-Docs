@@ -27,7 +27,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                               | Type                                                               | Description |
 | ---------------------------------- | ------------------------------------------------------------------ | ----------- |
-| interactionOffset                  | [Vec3](/vext/ref/shared/class/Vec3)                                  |             |
+| interactionOffset                  | [Vec3](/vext/ref/shared/class/vec3)                                  |             |
 | weaponModifierData                 | [WeaponModifierData](WeaponModifierData)\[\]                       |             |
 | aimingController                   | [SoldierAimingSimulationData](SoldierAimingSimulationData)         |             |
 | firstPersonCamera                  | [FirstPersonCameraData](FirstPersonCameraData)                     |             |

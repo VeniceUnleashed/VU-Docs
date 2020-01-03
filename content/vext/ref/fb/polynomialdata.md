@@ -23,7 +23,7 @@ A container type representing a Frostbite instance entry.
 
 | Name         | Type                              | Description |
 | ------------ | --------------------------------- | ----------- |
-| coefficients | [Vec4](/vext/ref/shared/class/Vec4) |             |
+| coefficients | [Vec4](/vext/ref/shared/class/vec4) |             |
 | scaleValue   | number                            |             |
 | minClamp     | number                            |             |
 | maxClamp     | number                            |             |

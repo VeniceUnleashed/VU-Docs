@@ -16,9 +16,9 @@ A structure type representing a Frostbite data type.
 
 | Name               | Type                                                  | Description |
 | ------------------ | ----------------------------------------------------- | ----------- |
-| uvTranslation      | [Vec2](/vext/ref/shared/class/Vec2)                     |             |
-| boundingBox        | [AxisAlignedBox](/vext/ref/shared/class/AxisAlignedBox) |             |
-| uvTransform        | [Vec4](/vext/ref/shared/class/Vec4)                     |             |
+| uvTranslation      | [Vec2](/vext/ref/shared/class/vec2)                     |             |
+| boundingBox        | [AxisAlignedBox](/vext/ref/shared/class/axisalignedbox) |             |
+| uvTransform        | [Vec4](/vext/ref/shared/class/vec4)                     |             |
 | lightMapResolution | number                                                |             |
 | terrainMeshName    | string                                                |             |
 

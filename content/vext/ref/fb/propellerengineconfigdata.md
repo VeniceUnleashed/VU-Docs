@@ -22,7 +22,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                         | Type                                               | Description |
 | ---------------------------- | -------------------------------------------------- | ----------- |
-| horisontalForceOffset        | [Vec3](/vext/ref/shared/class/Vec3)                  |             |
+| horisontalForceOffset        | [Vec3](/vext/ref/shared/class/vec3)                  |             |
 | propellerType                | [PropellerType](PropellerType)                     |             |
 | rotorConfig                  | [RotorParameters](RotorParameters)                 |             |
 | forceMagnitudeInputType      | [ForceMagnitudeInputType](ForceMagnitudeInputType) |             |

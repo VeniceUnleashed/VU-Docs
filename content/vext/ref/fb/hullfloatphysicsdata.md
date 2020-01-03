@@ -22,9 +22,9 @@ A container type representing a Frostbite instance entry.
 
 | Name                     | Type                              | Description |
 | ------------------------ | --------------------------------- | ----------- |
-| waterResistanceAxisMod   | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| waterFrictionAxisMod     | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| offset                   | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| waterResistanceAxisMod   | [Vec3](/vext/ref/shared/class/vec3) |             |
+| waterFrictionAxisMod     | [Vec3](/vext/ref/shared/class/vec3) |             |
+| offset                   | [Vec3](/vext/ref/shared/class/vec3) |             |
 | subSurfaceSplits         | number                            |             |
 | depth                    | number                            |             |
 | width                    | number                            |             |

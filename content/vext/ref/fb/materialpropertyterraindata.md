@@ -23,7 +23,7 @@ A container type representing a Frostbite instance entry.
 
 | Name              | Type                               | Description |
 | ----------------- | ---------------------------------- | ----------- |
-| dirtTriggerColor  | [Vec3](/vext/ref/shared/class/Vec3)  |             |
+| dirtTriggerColor  | [Vec3](/vext/ref/shared/class/vec3)  |             |
 | destructionEffect | [EffectBlueprint](EffectBlueprint) |             |
 | dirtTriggerFactor | number                             |             |
 

@@ -26,9 +26,9 @@ A container type representing a Frostbite instance entry.
 
 | Name                            | Type                                                       | Description |
 | ------------------------------- | ---------------------------------------------------------- | ----------- |
-| pushVelocityMul                 | [Vec3](/vext/ref/shared/class/Vec3)                          |             |
-| pushVelocityRndMul              | [Vec3](/vext/ref/shared/class/Vec3)                          |             |
-| initRotationRndMul              | [Vec3](/vext/ref/shared/class/Vec3)                          |             |
+| pushVelocityMul                 | [Vec3](/vext/ref/shared/class/vec3)                          |             |
+| pushVelocityRndMul              | [Vec3](/vext/ref/shared/class/vec3)                          |             |
+| initRotationRndMul              | [Vec3](/vext/ref/shared/class/vec3)                          |             |
 | clusterLifetime                 | number                                                     |             |
 | mesh                            | [MeshAsset](MeshAsset)                                     |             |
 | compositePartCount              | number                                                     |             |

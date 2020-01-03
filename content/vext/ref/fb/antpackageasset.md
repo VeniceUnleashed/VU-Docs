@@ -25,7 +25,7 @@ A container type representing a Frostbite instance entry.
 | win32FileName | string                               |             |
 | xePs3FileName | string                               |             |
 | packagingType | [AntPackagingType](AntPackagingType) |             |
-| streamingGuid | [Guid](/vext/ref/shared/class/Guid)    |             |
+| streamingGuid | [Guid](/vext/ref/shared/class/guid)    |             |
 | chunkSize     | number                               |             |
 
 ## Methods

@@ -28,10 +28,10 @@ A container type representing a Frostbite instance entry.
 
 | Name                               | Type                                               | Description |
 | ---------------------------------- | -------------------------------------------------- | ----------- |
-| criticallyDamagedEffectPosition    | [Vec3](/vext/ref/shared/class/Vec3)                  |             |
-| flirKeyColor                       | [Vec3](/vext/ref/shared/class/Vec3)                  |             |
-| preExplosionEffectPosition         | [Vec3](/vext/ref/shared/class/Vec3)                  |             |
-| interactionOffset                  | [Vec3](/vext/ref/shared/class/Vec3)                  |             |
+| criticallyDamagedEffectPosition    | [Vec3](/vext/ref/shared/class/vec3)                  |             |
+| flirKeyColor                       | [Vec3](/vext/ref/shared/class/vec3)                  |             |
+| preExplosionEffectPosition         | [Vec3](/vext/ref/shared/class/vec3)                  |             |
+| interactionOffset                  | [Vec3](/vext/ref/shared/class/vec3)                  |             |
 | disabledDamageThreshold            | number                                             |             |
 | controllableType                   | string                                             |             |
 | preDestructionDamageThreshold      | number                                             |             |

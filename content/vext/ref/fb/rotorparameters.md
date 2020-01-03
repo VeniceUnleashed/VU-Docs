@@ -27,7 +27,7 @@ A container type representing a Frostbite instance entry.
 | collectiveBrakeInputScale    | number                                |             |
 | collectiveInputIdle          | number                                |             |
 | horizontalForceModifier      | number                                |             |
-| angleOfAttack                | [Vec2](/vext/ref/shared/class/Vec2)\[\] |             |
+| angleOfAttack                | [Vec2](/vext/ref/shared/class/vec2)\[\] |             |
 | cyclicFadeOutOffset          | number                                |             |
 | additionalGravityModifier    | number                                |             |
 | horisontalMinEffectMod       | number                                |             |

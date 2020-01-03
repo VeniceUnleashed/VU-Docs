@@ -21,7 +21,7 @@ A container type representing a Frostbite instance entry.
 
 | Name           | Type                              | Description |
 | -------------- | --------------------------------- | ----------- |
-| linearModifier | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| linearModifier | [Vec3](/vext/ref/shared/class/vec3) |             |
 | pitch          | number                            |             |
 | yaw            | number                            |             |
 | roll           | number                            |             |

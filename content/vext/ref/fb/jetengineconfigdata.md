@@ -22,7 +22,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                      | Type                              | Description |
 | ------------------------- | --------------------------------- | ----------- |
-| powerFadeOutRange         | [Vec2](/vext/ref/shared/class/Vec2) |             |
+| powerFadeOutRange         | [Vec2](/vext/ref/shared/class/vec2) |             |
 | forceMagnitudeMultiplier  | number                            |             |
 | angleInputYMultiplier     | number                            |             |
 | angleInputPitchMultiplier | number                            |             |

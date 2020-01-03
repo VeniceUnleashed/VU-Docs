@@ -23,7 +23,7 @@ A container type representing a Frostbite instance entry.
 | Name             | Type                              | Description |
 | ---------------- | --------------------------------- | ----------- |
 | playerName       | string                            |             |
-| surveyMetricLink | [Guid](/vext/ref/shared/class/Guid) |             |
+| surveyMetricLink | [Guid](/vext/ref/shared/class/guid) |             |
 
 ## Methods
 

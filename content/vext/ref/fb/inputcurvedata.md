@@ -22,7 +22,7 @@ A container type representing a Frostbite instance entry.
 | Name                         | Type                                             | Description |
 | ---------------------------- | ------------------------------------------------ | ----------- |
 | affectedInputs               | [EntryInputActionEnum](EntryInputActionEnum)\[\] |             |
-| inputModifierCurve           | [Vec2](/vext/ref/shared/class/Vec2)\[\]            |             |
+| inputModifierCurve           | [Vec2](/vext/ref/shared/class/vec2)\[\]            |             |
 | handleMultipleInputsAsSquare | bool                                             |             |
 
 ## Methods

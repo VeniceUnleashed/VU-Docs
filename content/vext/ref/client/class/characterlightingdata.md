@@ -14,8 +14,8 @@ title: CharacterLightingData
 
 | Name                  | Type                                                               | Description |
 | --------------------- | ------------------------------------------------------------------ | ----------- |
-| bottomLight           | [Vec3](/vext/ref/shared/class/Vec3)                                  |             |
-| topLight              | [Vec3](/vext/ref/shared/class/Vec3)                                  |             |
+| bottomLight           | [Vec3](/vext/ref/shared/class/vec3)                                  |             |
+| topLight              | [Vec3](/vext/ref/shared/class/vec3)                                  |             |
 | characterLightingMode | [CharacterLightingMode](/vext/ref/fb/characterlightingmode) |             |
 | cameraUpRotation      | number                                                             |             |
 | topLightDirY          | number                                                             |             |

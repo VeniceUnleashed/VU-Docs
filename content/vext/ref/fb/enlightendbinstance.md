@@ -16,10 +16,10 @@ A structure type representing a Frostbite data type.
 
 | Name              | Type                                                    | Description |
 | ----------------- | ------------------------------------------------------- | ----------- |
-| worldBoundingbox  | [AxisAlignedBox](/vext/ref/shared/class/AxisAlignedBox)   |             |
-| worldTransform    | [LinearTransform](/vext/ref/shared/class/LinearTransform) |             |
-| uvTranslation     | [Vec2](/vext/ref/shared/class/Vec2)                       |             |
-| uvTransform       | [Vec4](/vext/ref/shared/class/Vec4)                       |             |
+| worldBoundingbox  | [AxisAlignedBox](/vext/ref/shared/class/axisalignedbox)   |             |
+| worldTransform    | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
+| uvTranslation     | [Vec2](/vext/ref/shared/class/vec2)                       |             |
+| uvTransform       | [Vec4](/vext/ref/shared/class/vec4)                       |             |
 | geometryId        | number                                                  |             |
 | objectVariation   | string                                                  |             |
 | guidString        | string                                                  |             |
@@ -29,7 +29,7 @@ A structure type representing a Frostbite data type.
 | enlightenMeshName | string                                                  |             |
 | meshAsset         | string                                                  |             |
 | instanceAlbedos   | number\[\]                                              |             |
-| cacheKey          | [Guid](/vext/ref/shared/class/Guid)                       |             |
+| cacheKey          | [Guid](/vext/ref/shared/class/guid)                       |             |
 
 ## Methods
 

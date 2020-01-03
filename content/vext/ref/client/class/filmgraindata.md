@@ -14,8 +14,8 @@ title: FilmGrainData
 
 | Name                  | Type                                             | Description |
 | --------------------- | ------------------------------------------------ | ----------- |
-| colorScale            | [Vec3](/vext/ref/shared/class/Vec3)                |             |
-| textureScale          | [Vec2](/vext/ref/shared/class/Vec2)                |             |
+| colorScale            | [Vec3](/vext/ref/shared/class/vec3)                |             |
+| textureScale          | [Vec2](/vext/ref/shared/class/vec2)                |             |
 | realm                 | [Realm](/vext/ref/fb/realm)               |             |
 | texture               | [TextureAsset](/vext/ref/fb/textureasset) |             |
 | linearFilteringEnable | bool                                             |             |

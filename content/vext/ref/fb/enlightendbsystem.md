@@ -16,7 +16,7 @@ A structure type representing a Frostbite data type.
 
 | Name                | Type                                                  | Description |
 | ------------------- | ----------------------------------------------------- | ----------- |
-| boundingBox         | [AxisAlignedBox](/vext/ref/shared/class/AxisAlignedBox) |             |
+| boundingBox         | [AxisAlignedBox](/vext/ref/shared/class/axisalignedbox) |             |
 | atlasStartX         | number                                                |             |
 | atlasStartY         | number                                                |             |
 | outputWidth         | number                                                |             |

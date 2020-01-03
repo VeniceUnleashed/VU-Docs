@@ -16,7 +16,7 @@ A structure type representing a Frostbite data type.
 
 | Name       | Type                              | Description |
 | ---------- | --------------------------------- | ----------- |
-| offset     | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| offset     | [Vec3](/vext/ref/shared/class/vec3) |             |
 | pitchVal   | number                            |             |
 | pitchAngle | number                            |             |
 

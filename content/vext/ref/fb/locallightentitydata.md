@@ -25,9 +25,9 @@ A container type representing a Frostbite instance entry.
 
 | Name                | Type                                     | Description |
 | ------------------- | ---------------------------------------- | ----------- |
-| color               | [Vec3](/vext/ref/shared/class/Vec3)        |             |
-| particleColorScale  | [Vec3](/vext/ref/shared/class/Vec3)        |             |
-| enlightenColorScale | [Vec3](/vext/ref/shared/class/Vec3)        |             |
+| color               | [Vec3](/vext/ref/shared/class/vec3)        |             |
+| particleColorScale  | [Vec3](/vext/ref/shared/class/vec3)        |             |
+| enlightenColorScale | [Vec3](/vext/ref/shared/class/vec3)        |             |
 | radius              | number                                   |             |
 | intensity           | number                                   |             |
 | attenuationOffset   | number                                   |             |

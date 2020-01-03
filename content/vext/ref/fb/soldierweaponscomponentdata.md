@@ -24,7 +24,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                        | Type                                                       | Description |
 | --------------------------- | ---------------------------------------------------------- | ----------- |
-| aimDir                      | [LinearTransform](/vext/ref/shared/class/LinearTransform)    |             |
+| aimDir                      | [LinearTransform](/vext/ref/shared/class/lineartransform)    |             |
 | weaponSkeleton              | [SkeletonAsset](SkeletonAsset)                             |             |
 | primaryWeaponId             | number                                                     |             |
 | animatedWeaponBinding       | [AnimatedWeaponBinding](AnimatedWeaponBinding)             |             |

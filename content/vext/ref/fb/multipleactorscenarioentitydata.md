@@ -25,7 +25,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                         | Type                                                    | Description |
 | ---------------------------- | ------------------------------------------------------- | ----------- |
-| worldSpaceConnectTransform   | [LinearTransform](/vext/ref/shared/class/LinearTransform) |             |
+| worldSpaceConnectTransform   | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
 | actor5Part                   | number                                                  |             |
 | scenarioAntRef               | [AntRef](AntRef)                                        |             |
 | levelChoice                  | number                                                  |             |

@@ -16,7 +16,7 @@ A structure type representing a Frostbite data type.
 
 | Name        | Type                                                    | Description |
 | ----------- | ------------------------------------------------------- | ----------- |
-| transform   | [LinearTransform](/vext/ref/shared/class/LinearTransform) |             |
+| transform   | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
 | time        | number                                                  |             |
 | fovModifier | number                                                  |             |
 

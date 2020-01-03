@@ -24,7 +24,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                   | Type                              | Description |
 | ---------------------- | --------------------------------- | ----------- |
-| bloomScale             | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| bloomScale             | [Vec3](/vext/ref/shared/class/vec3) |             |
 | realm                  | [Realm](Realm)                    |             |
 | tonemapMethod          | [TonemapMethod](TonemapMethod)    |             |
 | minExposure            | number                            |             |

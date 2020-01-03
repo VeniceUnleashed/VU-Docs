@@ -16,7 +16,7 @@ A structure type representing a Frostbite data type.
 
 | Name             | Type                              | Description |
 | ---------------- | --------------------------------- | ----------- |
-| guid             | [Guid](/vext/ref/shared/class/Guid) |             |
+| guid             | [Guid](/vext/ref/shared/class/guid) |             |
 | key              | string                            |             |
 | cachedDataEnable | bool                              |             |
 

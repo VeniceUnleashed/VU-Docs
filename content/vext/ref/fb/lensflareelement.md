@@ -16,15 +16,15 @@ A structure type representing a Frostbite data type.
 
 | Name                | Type                                             | Description |
 | ------------------- | ------------------------------------------------ | ----------- |
-| sizeCamDistCurve    | [Vec4](/vext/ref/shared/class/Vec4)                |             |
-| sizeAngleCurve      | [Vec4](/vext/ref/shared/class/Vec4)                |             |
-| size                | [Vec2](/vext/ref/shared/class/Vec2)                |             |
-| sizeOccluderCurve   | [Vec4](/vext/ref/shared/class/Vec4)                |             |
-| sizeScreenPosCurve  | [Vec4](/vext/ref/shared/class/Vec4)                |             |
-| alphaCamDistCurve   | [Vec4](/vext/ref/shared/class/Vec4)                |             |
-| alphaOccluderCurve  | [Vec4](/vext/ref/shared/class/Vec4)                |             |
-| alphaAngleCurve     | [Vec4](/vext/ref/shared/class/Vec4)                |             |
-| alphaScreenPosCurve | [Vec4](/vext/ref/shared/class/Vec4)                |             |
+| sizeCamDistCurve    | [Vec4](/vext/ref/shared/class/vec4)                |             |
+| sizeAngleCurve      | [Vec4](/vext/ref/shared/class/vec4)                |             |
+| size                | [Vec2](/vext/ref/shared/class/vec2)                |             |
+| sizeOccluderCurve   | [Vec4](/vext/ref/shared/class/vec4)                |             |
+| sizeScreenPosCurve  | [Vec4](/vext/ref/shared/class/vec4)                |             |
+| alphaCamDistCurve   | [Vec4](/vext/ref/shared/class/vec4)                |             |
+| alphaOccluderCurve  | [Vec4](/vext/ref/shared/class/vec4)                |             |
+| alphaAngleCurve     | [Vec4](/vext/ref/shared/class/vec4)                |             |
+| alphaScreenPosCurve | [Vec4](/vext/ref/shared/class/vec4)                |             |
 | sizeCamDistMax      | number                                           |             |
 | rayDistance         | number                                           |             |
 | shader              | [SurfaceShaderBaseAsset](SurfaceShaderBaseAsset) |             |

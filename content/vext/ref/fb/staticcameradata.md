@@ -25,10 +25,10 @@ A container type representing a Frostbite instance entry.
 
 | Name                              | Type                                                         | Description |
 | --------------------------------- | ------------------------------------------------------------ | ----------- |
-| leftCurve                         | [Vec3](/vext/ref/shared/class/Vec3)\[\]                        |             |
-| rightCurve                        | [Vec3](/vext/ref/shared/class/Vec3)\[\]                        |             |
-| upCurve                           | [Vec3](/vext/ref/shared/class/Vec3)\[\]                        |             |
-| downCurve                         | [Vec3](/vext/ref/shared/class/Vec3)\[\]                        |             |
+| leftCurve                         | [Vec3](/vext/ref/shared/class/vec3)\[\]                        |             |
+| rightCurve                        | [Vec3](/vext/ref/shared/class/vec3)\[\]                        |             |
+| upCurve                           | [Vec3](/vext/ref/shared/class/vec3)\[\]                        |             |
+| downCurve                         | [Vec3](/vext/ref/shared/class/vec3)\[\]                        |             |
 | upPitchAngle                      | number                                                       |             |
 | yawInputAction                    | [EntryInputActionEnum](EntryInputActionEnum)                 |             |
 | loosePartPhysics                  | [CameraLoosePartPhysicsData](CameraLoosePartPhysicsData)\[\] |             |

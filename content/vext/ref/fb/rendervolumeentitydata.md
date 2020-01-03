@@ -25,7 +25,7 @@ A container type representing a Frostbite instance entry.
 
 | Name          | Type                                                               | Description |
 | ------------- | ------------------------------------------------------------------ | ----------- |
-| userMasks     | [Vec4](/vext/ref/shared/class/Vec4)                                  |             |
+| userMasks     | [Vec4](/vext/ref/shared/class/vec4)                                  |             |
 | shader        | [SurfaceShaderInstanceDataStruct](SurfaceShaderInstanceDataStruct) |             |
 | transformType | [RenderVolumeTransformType](RenderVolumeTransformType)             |             |
 | enabled       | bool                                                               |             |

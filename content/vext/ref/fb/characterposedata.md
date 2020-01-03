@@ -21,12 +21,12 @@ A container type representing a Frostbite instance entry.
 
 | Name                  | Type                                                     | Description |
 | --------------------- | -------------------------------------------------------- | ----------- |
-| eyePosition           | [Vec3](/vext/ref/shared/class/Vec3)                        |             |
-| collisionBoxMaxExpand | [Vec3](/vext/ref/shared/class/Vec3)                        |             |
-| collisionBoxMinExpand | [Vec3](/vext/ref/shared/class/Vec3)                        |             |
+| eyePosition           | [Vec3](/vext/ref/shared/class/vec3)                        |             |
+| collisionBoxMaxExpand | [Vec3](/vext/ref/shared/class/vec3)                        |             |
+| collisionBoxMinExpand | [Vec3](/vext/ref/shared/class/vec3)                        |             |
 | height                | number                                                   |             |
 | stepHeight            | number                                                   |             |
-| throttleModifierCurve | [Vec2](/vext/ref/shared/class/Vec2)\[\]                    |             |
+| throttleModifierCurve | [Vec2](/vext/ref/shared/class/vec2)\[\]                    |             |
 | poseType              | [CharacterPoseType](CharacterPoseType)                   |             |
 | collisionType         | [CharacterPoseCollisionType](CharacterPoseCollisionType) |             |
 | lookConstraints       | [LookConstraintsData](LookConstraintsData)               |             |

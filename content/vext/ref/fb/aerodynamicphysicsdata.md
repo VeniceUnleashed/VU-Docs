@@ -21,10 +21,10 @@ A container type representing a Frostbite instance entry.
 
 | Name             | Type                              | Description |
 | ---------------- | --------------------------------- | ----------- |
-| bodyDrag         | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| bodyDragOffsetYZ | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| bodyDragOffsetXZ | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| bodyDragOffsetXY | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| bodyDrag         | [Vec3](/vext/ref/shared/class/vec3) |             |
+| bodyDragOffsetYZ | [Vec3](/vext/ref/shared/class/vec3) |             |
+| bodyDragOffsetXZ | [Vec3](/vext/ref/shared/class/vec3) |             |
+| bodyDragOffsetXY | [Vec3](/vext/ref/shared/class/vec3) |             |
 
 ## Methods
 

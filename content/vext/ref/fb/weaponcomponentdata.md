@@ -25,7 +25,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                             | Type                                         | Description |
 | -------------------------------- | -------------------------------------------- | ----------- |
-| projectileSpawnOffset            | [Vec3](/vext/ref/shared/class/Vec3)            |             |
+| projectileSpawnOffset            | [Vec3](/vext/ref/shared/class/vec3)            |             |
 | impulseStrength                  | number                                       |             |
 | weaponMesh                       | [MeshAsset](MeshAsset)                       |             |
 | weaponFiring                     | [WeaponFiringData](WeaponFiringData)         |             |

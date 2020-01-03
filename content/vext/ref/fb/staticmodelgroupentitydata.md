@@ -28,7 +28,7 @@ A container type representing a Frostbite instance entry.
 | Name                             | Type                                                         | Description |
 | -------------------------------- | ------------------------------------------------------------ | ----------- |
 | memberDatas                      | [StaticModelGroupMemberData](StaticModelGroupMemberData)\[\] |             |
-| hackToSolveRealTimeTweakingIssue | [Guid](/vext/ref/shared/class/Guid)                            |             |
+| hackToSolveRealTimeTweakingIssue | [Guid](/vext/ref/shared/class/guid)                            |             |
 | networkIdCount                   | number                                                       |             |
 
 ## Methods

@@ -23,7 +23,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                       | Type                              | Description |
 | -------------------------- | --------------------------------- | ----------- |
-| pixelOffset                | [Vec2](/vext/ref/shared/class/Vec2) |             |
+| pixelOffset                | [Vec2](/vext/ref/shared/class/vec2) |             |
 | iconSize                   | number                            |             |
 | maxFarFade                 | number                            |             |
 | maxCloseFade               | number                            |             |

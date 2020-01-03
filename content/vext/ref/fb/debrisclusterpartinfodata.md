@@ -16,8 +16,8 @@ A structure type representing a Frostbite data type.
 
 | Name                | Type                              | Description |
 | ------------------- | --------------------------------- | ----------- |
-| angularVelocity     | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| linearVelocity      | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| angularVelocity     | [Vec3](/vext/ref/shared/class/vec3) |             |
+| linearVelocity      | [Vec3](/vext/ref/shared/class/vec3) |             |
 | numberOfChildren    | number                            |             |
 | partIndex           | number                            |             |
 | splitSpeedThreshold | number                            |             |

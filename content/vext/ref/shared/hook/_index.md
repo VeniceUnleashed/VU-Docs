@@ -4,4 +4,4 @@ hideChildren: true
 ---
 | ResourceManager                                                              |
 | ---------------------------------------------------------------------------- |
-| [ResourceManager:LoadBundle](/vext/ref/shared/hook/ResourceManagerLoadBundle) |
+| [ResourceManager:LoadBundle](/vext/ref/shared/hook/resourcemanagerloadbundle) |

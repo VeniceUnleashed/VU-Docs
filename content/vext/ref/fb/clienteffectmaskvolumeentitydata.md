@@ -26,7 +26,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                  | Type                              | Description |
 | --------------------- | --------------------------------- | ----------- |
-| applyEffectCurve      | [Vec4](/vext/ref/shared/class/Vec4) |             |
+| applyEffectCurve      | [Vec4](/vext/ref/shared/class/vec4) |             |
 | lifeTimeInSeconds     | number                            |             |
 | updatePeriodInSeconds | number                            |             |
 | radius                | number                            |             |

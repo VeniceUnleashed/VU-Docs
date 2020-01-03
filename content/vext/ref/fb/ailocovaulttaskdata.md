@@ -16,7 +16,7 @@ A structure type representing a Frostbite data type.
 
 | Name                    | Type                                   | Description |
 | ----------------------- | -------------------------------------- | ----------- |
-| startPoint              | [Vec3](/vext/ref/shared/class/Vec3)      |             |
+| startPoint              | [Vec3](/vext/ref/shared/class/vec3)      |             |
 | distanceBeforeVault     | number                                 |             |
 | heightBeforeVault       | number                                 |             |
 | heightAfterVault        | number                                 |             |

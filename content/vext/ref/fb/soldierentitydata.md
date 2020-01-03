@@ -29,7 +29,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                      | Type                                                             | Description |
 | ------------------------- | ---------------------------------------------------------------- | ----------- |
-| flirKeyColor              | [Vec3](/vext/ref/shared/class/Vec3)                                |             |
+| flirKeyColor              | [Vec3](/vext/ref/shared/class/vec3)                                |             |
 | headMaterialPair          | [MaterialContainerPair](MaterialContainerPair)                   |             |
 | boneFakePhysics           | [BoneFakePhysicsData](BoneFakePhysicsData)\[\]                   |             |
 | autoAim                   | [SoldierAutoAimData](SoldierAutoAimData)                         |             |

@@ -25,8 +25,8 @@ A container type representing a Frostbite instance entry.
 | -------------- | ----------------------------------------------------------- | ----------- |
 | boneNames      | string\[\]                                                  |             |
 | hierarchy      | number\[\]                                                  |             |
-| localPose      | [LinearTransform](/vext/ref/shared/class/LinearTransform)\[\] |             |
-| modelPose      | [LinearTransform](/vext/ref/shared/class/LinearTransform)\[\] |             |
+| localPose      | [LinearTransform](/vext/ref/shared/class/lineartransform)\[\] |             |
+| modelPose      | [LinearTransform](/vext/ref/shared/class/lineartransform)\[\] |             |
 | weaponBoneName | string                                                      |             |
 | headBoneName   | string                                                      |             |
 | hipBoneName    | string                                                      |             |

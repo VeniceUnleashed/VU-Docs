@@ -14,7 +14,7 @@ title: ScreenEffectData
 
 | Name               | Type                                                                 | Description |
 | ------------------ | -------------------------------------------------------------------- | ----------- |
-| screenEffectParams | [Vec4](/vext/ref/shared/class/Vec4)                                    |             |
+| screenEffectParams | [Vec4](/vext/ref/shared/class/vec4)                                    |             |
 | frameType          | [ScreenEffectFrameType](/vext/ref/fb/screeneffectframetype)   |             |
 | shader             | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset) |             |
 | frameWidth         | number                                                               |             |

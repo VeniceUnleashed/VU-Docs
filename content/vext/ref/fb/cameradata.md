@@ -23,7 +23,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                    | Type                              | Description |
 | ----------------------- | --------------------------------- | ----------- |
-| occlusionRayOffset      | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| occlusionRayOffset      | [Vec3](/vext/ref/shared/class/vec3) |             |
 | shakeFactor             | number                            |             |
 | preFadeTime             | number                            |             |
 | fadeTime                | number                            |             |

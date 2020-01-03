@@ -24,9 +24,9 @@ A container type representing a Frostbite instance entry.
 
 | Name            | Type                              | Description |
 | --------------- | --------------------------------- | ----------- |
-| squadTint       | [Vec4](/vext/ref/shared/class/Vec4) |             |
-| enemyTint       | [Vec4](/vext/ref/shared/class/Vec4) |             |
-| friendlyTint    | [Vec4](/vext/ref/shared/class/Vec4) |             |
+| squadTint       | [Vec4](/vext/ref/shared/class/vec4) |             |
+| enemyTint       | [Vec4](/vext/ref/shared/class/vec4) |             |
+| friendlyTint    | [Vec4](/vext/ref/shared/class/vec4) |             |
 | orderCooldown   | number                            |             |
 | tooltipCooldown | number                            |             |
 | healthBarSize   | number                            |             |

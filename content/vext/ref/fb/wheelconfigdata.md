@@ -21,8 +21,8 @@ A container type representing a Frostbite instance entry.
 
 | Name                                | Type                                                   | Description |
 | ----------------------------------- | ------------------------------------------------------ | ----------- |
-| offset                              | [Vec3](/vext/ref/shared/class/Vec3)                      |             |
-| inertia                             | [Vec3](/vext/ref/shared/class/Vec3)                      |             |
+| offset                              | [Vec3](/vext/ref/shared/class/vec3)                      |             |
+| inertia                             | [Vec3](/vext/ref/shared/class/vec3)                      |             |
 | rotationBody                        | [RotationBodyData](RotationBodyData)                   |             |
 | sphereCollision                     | [SphereCollisionData](SphereCollisionData)             |             |
 | spring                              | [SpringData](SpringData)                               |             |
@@ -35,7 +35,7 @@ A container type representing a Frostbite instance entry.
 | engineBrakeVelocityFactor           | number                                                 |             |
 | engineBrakeMinFactor                | number                                                 |             |
 | engineBrakeMaxFactor                | number                                                 |             |
-| transmissionLoss                    | [Vec2](/vext/ref/shared/class/Vec2)\[\]                  |             |
+| transmissionLoss                    | [Vec2](/vext/ref/shared/class/vec2)\[\]                  |             |
 | diffGearRatio                       | number                                                 |             |
 | lowSpeedSteeringSensitivity         | number                                                 |             |
 | midSpeedSteeringSensitivity         | number                                                 |             |

@@ -16,7 +16,7 @@ A structure type representing a Frostbite data type.
 
 | Name           | Type                                         | Description |
 | -------------- | -------------------------------------------- | ----------- |
-| initialSpeed   | [Vec3](/vext/ref/shared/class/Vec3)            |             |
+| initialSpeed   | [Vec3](/vext/ref/shared/class/vec3)            |             |
 | projectileData | [ProjectileEntityData](ProjectileEntityData) |             |
 | projectile     | [ProjectileBlueprint](ProjectileBlueprint)   |             |
 | unlock         | [UnlockAssetBase](UnlockAssetBase)           |             |

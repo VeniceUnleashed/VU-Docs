@@ -23,9 +23,9 @@ A container type representing a Frostbite instance entry.
 | Name               | Type                              | Description |
 | ------------------ | --------------------------------- | ----------- |
 | language           | [LanguageFormat](LanguageFormat)  |             |
-| binaryChunk        | [Guid](/vext/ref/shared/class/Guid) |             |
+| binaryChunk        | [Guid](/vext/ref/shared/class/guid) |             |
 | binaryChunkSize    | number                            |             |
-| histogramChunk     | [Guid](/vext/ref/shared/class/Guid) |             |
+| histogramChunk     | [Guid](/vext/ref/shared/class/guid) |             |
 | histogramChunkSize | number                            |             |
 
 ## Methods

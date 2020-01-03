@@ -21,7 +21,7 @@ A container type representing a Frostbite instance entry.
 
 | Name  | Type                                  | Description |
 | ----- | ------------------------------------- | ----------- |
-| curve | [Vec2](/vext/ref/shared/class/Vec2)\[\] |             |
+| curve | [Vec2](/vext/ref/shared/class/vec2)\[\] |             |
 
 ## Methods
 

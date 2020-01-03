@@ -21,7 +21,7 @@ A container type representing a Frostbite instance entry.
 
 | Name       | Type                                               | Description |
 | ---------- | -------------------------------------------------- | ----------- |
-| entityGuid | [Guid](/vext/ref/shared/class/Guid)                  |             |
+| entityGuid | [Guid](/vext/ref/shared/class/guid)                  |             |
 | data       | [PropertyRecordingData](PropertyRecordingData)\[\] |             |
 
 ## Methods

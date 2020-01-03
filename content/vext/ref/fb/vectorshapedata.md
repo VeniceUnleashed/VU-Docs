@@ -24,8 +24,8 @@ A container type representing a Frostbite instance entry.
 
 | Name      | Type                                  | Description |
 | --------- | ------------------------------------- | ----------- |
-| points    | [Vec3](/vext/ref/shared/class/Vec3)\[\] |             |
-| normals   | [Vec3](/vext/ref/shared/class/Vec3)\[\] |             |
+| points    | [Vec3](/vext/ref/shared/class/vec3)\[\] |             |
+| normals   | [Vec3](/vext/ref/shared/class/vec3)\[\] |             |
 | tension   | number                                |             |
 | isClosed  | bool                                  |             |
 | allowRoll | bool                                  |             |

@@ -26,7 +26,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                            | Type                              | Description |
 | ------------------------------- | --------------------------------- | ----------- |
-| baseTransform                   | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| baseTransform                   | [Vec3](/vext/ref/shared/class/vec3) |             |
 | progressMinTime                 | number                            |             |
 | sid                             | string                            |             |
 | nrOfPassengers                  | number                            |             |

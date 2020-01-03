@@ -18,7 +18,7 @@ A structure type representing a Frostbite data type.
 | ------------- | ------------------------------------------ | ----------- |
 | parameterName | string                                     |             |
 | parameterType | [ShaderParameterType](ShaderParameterType) |             |
-| values        | [Vec4](/vext/ref/shared/class/Vec4)\[\]      |             |
+| values        | [Vec4](/vext/ref/shared/class/vec4)\[\]      |             |
 
 ## Methods
 

@@ -16,7 +16,7 @@ A structure type representing a Frostbite data type.
 
 | Name                        | Type                                                        | Description |
 | --------------------------- | ----------------------------------------------------------- | ----------- |
-| instanceTransforms          | [LinearTransform](/vext/ref/shared/class/LinearTransform)\[\] |             |
+| instanceTransforms          | [LinearTransform](/vext/ref/shared/class/lineartransform)\[\] |             |
 | instanceScale               | number\[\]                                                  |             |
 | instanceObjectVariation     | number\[\]                                                  |             |
 | instanceCastSunShadow       | bool\[\]                                                    |             |

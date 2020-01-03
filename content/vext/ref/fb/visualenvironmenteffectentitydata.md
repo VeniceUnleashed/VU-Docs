@@ -26,9 +26,9 @@ A container type representing a Frostbite instance entry.
 
 | Name              | Type                                                     | Description |
 | ----------------- | -------------------------------------------------------- | ----------- |
-| lifetimeCurve     | [Vec4](/vext/ref/shared/class/Vec4)                        |             |
-| cullDistanceCurve | [Vec4](/vext/ref/shared/class/Vec4)                        |             |
-| cullAngleCurve    | [Vec4](/vext/ref/shared/class/Vec4)                        |             |
+| lifetimeCurve     | [Vec4](/vext/ref/shared/class/vec4)                        |             |
+| cullDistanceCurve | [Vec4](/vext/ref/shared/class/vec4)                        |             |
+| cullAngleCurve    | [Vec4](/vext/ref/shared/class/vec4)                        |             |
 | lifetime          | number                                                   |             |
 | visualEnvironment | [VisualEnvironmentBlueprint](VisualEnvironmentBlueprint) |             |
 | sampleOnStartOnly | bool                                                     |             |

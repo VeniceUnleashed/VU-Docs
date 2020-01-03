@@ -16,11 +16,11 @@ title: SoldierWeaponsComponent
 
 | Type                                                | Name                    | Parameters    |
 | --------------------------------------------------- | ----------------------- | ------------- |
-| [SoldierWeapon](/vext/ref/cls/clt/soldierWeapon) | [GetWeapon](#getweapon) | int **index** |
+| [SoldierWeapon](/vext/ref/cls/clt/soldierweapon) | [GetWeapon](#getweapon) | int **index** |
 
 ### GetWeapon
 
-> [SoldierWeapon](/vext/ref/cls/clt/soldierWeapon) **GetWeapon**(int **index**)
+> [SoldierWeapon](/vext/ref/cls/clt/soldierweapon) **GetWeapon**(int **index**)
 
 #### Parameters
 

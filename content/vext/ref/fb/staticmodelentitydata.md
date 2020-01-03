@@ -30,7 +30,7 @@ A container type representing a Frostbite instance entry.
 | partLinks                          | [PartLinkData](PartLinkData)\[\]                            |             |
 | mesh                               | [MeshAsset](MeshAsset)                                      |             |
 | boneCount                          | number                                                      |             |
-| basePoseTransforms                 | [LinearTransform](/vext/ref/shared/class/LinearTransform)\[\] |             |
+| basePoseTransforms                 | [LinearTransform](/vext/ref/shared/class/lineartransform)\[\] |             |
 | networkInfo                        | [StaticModelNetworkInfo](StaticModelNetworkInfo)            |             |
 | physicsPartInfos                   | [PhysicsPartInfo](PhysicsPartInfo)\[\]                      |             |
 | excludeFromNearbyObjectDestruction | bool                                                        |             |

@@ -21,9 +21,9 @@ A container type representing a Frostbite instance entry.
 
 | Name                            | Type                                             | Description |
 | ------------------------------- | ------------------------------------------------ | ----------- |
-| centerOfMass                    | [Vec3](/vext/ref/shared/class/Vec3)                |             |
-| centerOfMassHandlingOffset      | [Vec3](/vext/ref/shared/class/Vec3)                |             |
-| inertiaModifier                 | [Vec3](/vext/ref/shared/class/Vec3)                |             |
+| centerOfMass                    | [Vec3](/vext/ref/shared/class/vec3)                |             |
+| centerOfMassHandlingOffset      | [Vec3](/vext/ref/shared/class/vec3)                |             |
+| inertiaModifier                 | [Vec3](/vext/ref/shared/class/vec3)                |             |
 | aeroDynamicPhysics              | [AeroDynamicPhysicsData](AeroDynamicPhysicsData) |             |
 | parachutePhysics                | [VehicleParachuteData](VehicleParachuteData)     |             |
 | motorbikePhysics                | [MotorbikeData](MotorbikeData)                   |             |

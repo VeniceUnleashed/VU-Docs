@@ -22,9 +22,9 @@ A container type representing a Frostbite instance entry.
 
 | Name                 | Type                              | Description |
 | -------------------- | --------------------------------- | ----------- |
-| pivot                | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| rotationAxis         | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| extensionAxis        | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| pivot                | [Vec3](/vext/ref/shared/class/vec3) |             |
+| rotationAxis         | [Vec3](/vext/ref/shared/class/vec3) |             |
+| extensionAxis        | [Vec3](/vext/ref/shared/class/vec3) |             |
 | minAngle             | number                            |             |
 | maxAngle             | number                            |             |
 | angularDampening     | number                            |             |

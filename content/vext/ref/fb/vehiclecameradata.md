@@ -25,11 +25,11 @@ A container type representing a Frostbite instance entry.
 
 | Name                      | Type                              | Description |
 | ------------------------- | --------------------------------- | ----------- |
-| moveToPosition            | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| moveToPositionSlopeFactor | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| targetOffset              | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| targetOffsetSlopeFactor   | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| rotationFactor            | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| moveToPosition            | [Vec3](/vext/ref/shared/class/vec3) |             |
+| moveToPositionSlopeFactor | [Vec3](/vext/ref/shared/class/vec3) |             |
+| targetOffset              | [Vec3](/vext/ref/shared/class/vec3) |             |
+| targetOffsetSlopeFactor   | [Vec3](/vext/ref/shared/class/vec3) |             |
+| rotationFactor            | [Vec3](/vext/ref/shared/class/vec3) |             |
 | positionFactor            | number                            |             |
 | resetDistance             | number                            |             |
 | fixedPosition             | bool                              |             |

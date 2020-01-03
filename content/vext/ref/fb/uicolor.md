@@ -21,7 +21,7 @@ A container type representing a Frostbite instance entry.
 
 | Name      | Type                              | Description |
 | --------- | --------------------------------- | ----------- |
-| color     | [Vec4](/vext/ref/shared/class/Vec4) |             |
+| color     | [Vec4](/vext/ref/shared/class/vec4) |             |
 | colorType | [UIColorType](UIColorType)        |             |
 
 ## Methods

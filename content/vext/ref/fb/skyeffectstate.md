@@ -21,7 +21,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                  | Type                              | Description |
 | --------------------- | --------------------------------- | ----------- |
-| cloudLayerSunColor    | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| cloudLayerSunColor    | [Vec3](/vext/ref/shared/class/vec3) |             |
 | panoramicTileFactor   | number                            |             |
 | sunSize               | number                            |             |
 | skyGradientScale      | number                            |             |

@@ -27,8 +27,8 @@ A container type representing a Frostbite instance entry.
 | Name        | Type                                  | Description |
 | ----------- | ------------------------------------- | ----------- |
 | splineType  | [GameSplineType](GameSplineType)      |             |
-| localPoints | [Vec3](/vext/ref/shared/class/Vec3)\[\] |             |
-| normals     | [Vec3](/vext/ref/shared/class/Vec3)\[\] |             |
+| localPoints | [Vec3](/vext/ref/shared/class/vec3)\[\] |             |
+| normals     | [Vec3](/vext/ref/shared/class/vec3)\[\] |             |
 
 ## Methods
 

@@ -24,7 +24,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                            | Type                                                       | Description |
 | ------------------------------- | ---------------------------------------------------------- | ----------- |
-| animationEntitySpace            | [LinearTransform](/vext/ref/shared/class/LinearTransform)    |             |
+| animationEntitySpace            | [LinearTransform](/vext/ref/shared/class/lineartransform)    |             |
 | boneToPlace                     | [GameplayBones](GameplayBones)                             |             |
 | realm                           | [Realm](Realm)                                             |             |
 | modelAnimationTransformType     | [ModelAnimationTransformType](ModelAnimationTransformType) |             |

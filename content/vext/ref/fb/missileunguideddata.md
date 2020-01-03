@@ -16,8 +16,8 @@ A structure type representing a Frostbite data type.
 
 | Name                 | Type                              | Description |
 | -------------------- | --------------------------------- | ----------- |
-| staticPosition       | [Vec2](/vext/ref/shared/class/Vec2) |             |
-| targetPositionOffset | [Vec2](/vext/ref/shared/class/Vec2) |             |
+| staticPosition       | [Vec2](/vext/ref/shared/class/vec2) |             |
+| targetPositionOffset | [Vec2](/vext/ref/shared/class/vec2) |             |
 | useTargetPosition    | bool                              |             |
 | useStaticPosition    | bool                              |             |
 

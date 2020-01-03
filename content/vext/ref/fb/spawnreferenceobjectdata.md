@@ -24,9 +24,9 @@ A container type representing a Frostbite instance entry.
 
 | Name                               | Type                                                    | Description |
 | ---------------------------------- | ------------------------------------------------------- | ----------- |
-| airdropTransform                   | [LinearTransform](/vext/ref/shared/class/LinearTransform) |             |
-| controllableInput                  | [LinearTransform](/vext/ref/shared/class/LinearTransform) |             |
-| controllableTransform              | [LinearTransform](/vext/ref/shared/class/LinearTransform) |             |
+| airdropTransform                   | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
+| controllableInput                  | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
+| controllableTransform              | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
 | locationNameSid                    | string                                                  |             |
 | locationTextSid                    | string                                                  |             |
 | team                               | [TeamId](TeamId)                                        |             |

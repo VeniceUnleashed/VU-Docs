@@ -14,10 +14,10 @@ title: OutdoorLightData
 
 | Name                   | Type                                             | Description |
 | ---------------------- | ------------------------------------------------ | ----------- |
-| sunColor               | [Vec3](/vext/ref/shared/class/Vec3)                |             |
-| cloudShadowSpeed       | [Vec2](/vext/ref/shared/class/Vec2)                |             |
-| skyColor               | [Vec3](/vext/ref/shared/class/Vec3)                |             |
-| groundColor            | [Vec3](/vext/ref/shared/class/Vec3)                |             |
+| sunColor               | [Vec3](/vext/ref/shared/class/vec3)                |             |
+| cloudShadowSpeed       | [Vec2](/vext/ref/shared/class/vec2)                |             |
+| skyColor               | [Vec3](/vext/ref/shared/class/vec3)                |             |
+| groundColor            | [Vec3](/vext/ref/shared/class/vec3)                |             |
 | sunRotationY           | number                                           |             |
 | sunRotationX           | number                                           |             |
 | realm                  | [Realm](/vext/ref/fb/realm)               |             |

@@ -24,7 +24,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                   | Type                              | Description |
 | ---------------------- | --------------------------------- | ----------- |
-| impulse                | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| impulse                | [Vec3](/vext/ref/shared/class/vec3) |             |
 | terrainHeight          | number                            |             |
 | ordinal                | number                            |             |
 | velocity               | number                            |             |

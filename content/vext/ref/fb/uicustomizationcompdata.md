@@ -23,9 +23,9 @@ A container type representing a Frostbite instance entry.
 
 | Name                 | Type                              | Description |
 | -------------------- | --------------------------------- | ----------- |
-| soldierOffset        | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| soldierRotation      | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| vehicleRotation      | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| soldierOffset        | [Vec3](/vext/ref/shared/class/vec3) |             |
+| soldierRotation      | [Vec3](/vext/ref/shared/class/vec3) |             |
+| vehicleRotation      | [Vec3](/vext/ref/shared/class/vec3) |             |
 | networkThrottleTimer | number                            |             |
 
 ## Methods

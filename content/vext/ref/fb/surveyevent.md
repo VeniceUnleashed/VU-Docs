@@ -29,7 +29,7 @@ A container type representing a Frostbite instance entry.
 | answerQuestion4  | number                            |             |
 | answerQuestion5  | number                            |             |
 | freeTextField    | string                            |             |
-| surveyMetricLink | [Guid](/vext/ref/shared/class/Guid) |             |
+| surveyMetricLink | [Guid](/vext/ref/shared/class/guid) |             |
 
 ## Methods
 

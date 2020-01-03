@@ -22,7 +22,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                    | Type                              | Description |
 | ----------------------- | --------------------------------- | ----------- |
-| initialSpeed            | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| initialSpeed            | [Vec3](/vext/ref/shared/class/vec3) |             |
 | numberOfBulletsPerShell | number                            |             |
 
 ## Methods

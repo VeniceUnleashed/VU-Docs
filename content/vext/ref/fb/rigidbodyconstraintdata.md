@@ -23,8 +23,8 @@ A container type representing a Frostbite instance entry.
 
 | Name           | Type                                                    | Description |
 | -------------- | ------------------------------------------------------- | ----------- |
-| transform      | [LinearTransform](/vext/ref/shared/class/LinearTransform) |             |
-| parentBody     | [DataContainer](/vext/ref/shared/class/DataContainer)     |             |
+| transform      | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
+| parentBody     | [DataContainer](/vext/ref/shared/class/datacontainer)     |             |
 | breakThreshold | number                                                  |             |
 | isBreakable    | bool                                                    |             |
 

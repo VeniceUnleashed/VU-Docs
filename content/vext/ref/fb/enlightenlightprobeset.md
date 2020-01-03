@@ -16,15 +16,15 @@ A structure type representing a Frostbite data type.
 
 | Name           | Type                                                    | Description |
 | -------------- | ------------------------------------------------------- | ----------- |
-| transform      | [LinearTransform](/vext/ref/shared/class/LinearTransform) |             |
-| boundingBox    | [AxisAlignedBox](/vext/ref/shared/class/AxisAlignedBox)   |             |
+| transform      | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
+| boundingBox    | [AxisAlignedBox](/vext/ref/shared/class/axisalignedbox)   |             |
 | sizeX          | number                                                  |             |
 | sizeZ          | number                                                  |             |
 | sizeY          | number                                                  |             |
 | systemId       | number                                                  |             |
 | blendDistance  | number                                                  |             |
 | priority       | number                                                  |             |
-| positions      | [Vec3](/vext/ref/shared/class/Vec3)\[\]                   |             |
+| positions      | [Vec3](/vext/ref/shared/class/vec3)\[\]                   |             |
 | validIndices   | number\[\]                                              |             |
 | inputSystems   | number\[\]                                              |             |
 | cache          | [PrecomputeCache](PrecomputeCache)                      |             |

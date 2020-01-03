@@ -23,8 +23,8 @@ A container type representing a Frostbite instance entry.
 
 | Name                  | Type                              | Description |
 | --------------------- | --------------------------------- | ----------- |
-| landResistanceAxisMod | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| landFrictionAxisMod   | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| landResistanceAxisMod | [Vec3](/vext/ref/shared/class/vec3) |             |
+| landFrictionAxisMod   | [Vec3](/vext/ref/shared/class/vec3) |             |
 | frontLength           | number                            |             |
 | sideLength            | number                            |             |
 

@@ -21,7 +21,7 @@ A container type representing a Frostbite instance entry.
 
 | Name             | Type                                                        | Description |
 | ---------------- | ----------------------------------------------------------- | ----------- |
-| entityTransforms | [LinearTransform](/vext/ref/shared/class/LinearTransform)\[\] |             |
+| entityTransforms | [LinearTransform](/vext/ref/shared/class/lineartransform)\[\] |             |
 
 ## Methods
 

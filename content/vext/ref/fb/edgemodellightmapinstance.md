@@ -16,8 +16,8 @@ A structure type representing a Frostbite data type.
 
 | Name       | Type                              | Description |
 | ---------- | --------------------------------- | ----------- |
-| lightMapUv | [Vec4](/vext/ref/shared/class/Vec4) |             |
-| position   | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| lightMapUv | [Vec4](/vext/ref/shared/class/vec4) |             |
+| position   | [Vec3](/vext/ref/shared/class/vec3) |             |
 
 ## Methods
 

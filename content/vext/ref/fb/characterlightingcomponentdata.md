@@ -24,8 +24,8 @@ A container type representing a Frostbite instance entry.
 
 | Name                  | Type                                           | Description |
 | --------------------- | ---------------------------------------------- | ----------- |
-| bottomLight           | [Vec3](/vext/ref/shared/class/Vec3)              |             |
-| topLight              | [Vec3](/vext/ref/shared/class/Vec3)              |             |
+| bottomLight           | [Vec3](/vext/ref/shared/class/vec3)              |             |
+| topLight              | [Vec3](/vext/ref/shared/class/vec3)              |             |
 | characterLightingMode | [CharacterLightingMode](CharacterLightingMode) |             |
 | cameraUpRotation      | number                                         |             |
 | topLightDirY          | number                                         |             |

@@ -21,8 +21,8 @@ A container type representing a Frostbite instance entry.
 
 | Name                                        | Type                                       | Description |
 | ------------------------------------------- | ------------------------------------------ | ----------- |
-| dynamicEnvmapDefaultPosition                | [Vec3](/vext/ref/shared/class/Vec3)          |             |
-| subSurfaceColor                             | [Vec3](/vext/ref/shared/class/Vec3)          |             |
+| dynamicEnvmapDefaultPosition                | [Vec3](/vext/ref/shared/class/vec3)          |             |
+| subSurfaceColor                             | [Vec3](/vext/ref/shared/class/vec3)          |             |
 | viewportScale                               | number                                     |             |
 | shadowMinScreenArea                         | number                                     |             |
 | shadowViewportScale                         | number                                     |             |

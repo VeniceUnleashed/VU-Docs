@@ -24,7 +24,7 @@ A container type representing a Frostbite instance entry.
 
 | Name               | Type                                             | Description |
 | ------------------ | ------------------------------------------------ | ----------- |
-| screenEffectParams | [Vec4](/vext/ref/shared/class/Vec4)                |             |
+| screenEffectParams | [Vec4](/vext/ref/shared/class/vec4)                |             |
 | frameType          | [ScreenEffectFrameType](ScreenEffectFrameType)   |             |
 | shader             | [SurfaceShaderBaseAsset](SurfaceShaderBaseAsset) |             |
 | frameWidth         | number                                           |             |

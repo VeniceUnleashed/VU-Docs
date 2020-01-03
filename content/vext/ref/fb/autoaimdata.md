@@ -16,10 +16,10 @@ A structure type representing a Frostbite data type.
 
 | Name                   | Type                                   | Description |
 | ---------------------- | -------------------------------------- | ----------- |
-| autoAimOuterBoxOffset  | [Vec3](/vext/ref/shared/class/Vec3)      |             |
-| autoAimOuterBoxExtends | [Vec3](/vext/ref/shared/class/Vec3)      |             |
-| autoAimInnerBoxOffset  | [Vec3](/vext/ref/shared/class/Vec3)      |             |
-| autoAimInnerBoxExtends | [Vec3](/vext/ref/shared/class/Vec3)      |             |
+| autoAimOuterBoxOffset  | [Vec3](/vext/ref/shared/class/vec3)      |             |
+| autoAimOuterBoxExtends | [Vec3](/vext/ref/shared/class/vec3)      |             |
+| autoAimInnerBoxOffset  | [Vec3](/vext/ref/shared/class/vec3)      |             |
+| autoAimInnerBoxExtends | [Vec3](/vext/ref/shared/class/vec3)      |             |
 | poseType               | [CharacterPoseType](CharacterPoseType) |             |
 
 ## Methods

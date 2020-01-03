@@ -24,7 +24,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                    | Type                                                   | Description |
 | ----------------------- | ------------------------------------------------------ | ----------- |
-| inertiaModifier         | [Vec3](/vext/ref/shared/class/Vec3)                      |             |
+| inertiaModifier         | [Vec3](/vext/ref/shared/class/vec3)                      |             |
 | scaledAssets            | [HavokAsset](HavokAsset)\[\]                           |             |
 | rigidBodies             | [RigidBodyData](RigidBodyData)\[\]                     |             |
 | asset                   | [HavokAsset](HavokAsset)                               |             |

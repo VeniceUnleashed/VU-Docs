@@ -16,9 +16,9 @@ A structure type representing a Frostbite data type.
 
 | Name                     | Type                                             | Description |
 | ------------------------ | ------------------------------------------------ | ----------- |
-| initialPosition          | [Vec3](/vext/ref/shared/class/Vec3)                |             |
-| initialDirection         | [Vec3](/vext/ref/shared/class/Vec3)                |             |
-| initialSpeed             | [Vec3](/vext/ref/shared/class/Vec3)                |             |
+| initialPosition          | [Vec3](/vext/ref/shared/class/vec3)                |             |
+| initialDirection         | [Vec3](/vext/ref/shared/class/vec3)                |             |
+| initialSpeed             | [Vec3](/vext/ref/shared/class/vec3)                |             |
 | inheritWeaponSpeedAmount | number                                           |             |
 | muzzleExplosion          | [ExplosionEntityData](ExplosionEntityData)       |             |
 | projectileData           | [ProjectileEntityData](ProjectileEntityData)     |             |

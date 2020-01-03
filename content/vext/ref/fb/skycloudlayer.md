@@ -16,7 +16,7 @@ A structure type representing a Frostbite data type.
 
 | Name                  | Type                              | Description |
 | --------------------- | --------------------------------- | ----------- |
-| color                 | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| color                 | [Vec3](/vext/ref/shared/class/vec3) |             |
 | tileFactor            | number                            |             |
 | rotation              | number                            |             |
 | altitude              | number                            |             |

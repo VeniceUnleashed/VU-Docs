@@ -26,7 +26,7 @@ A container type representing a Frostbite instance entry.
 | sent            | number                            |             |
 | receivedAverage | number                            |             |
 | sentAverage     | number                            |             |
-| performanceLink | [Guid](/vext/ref/shared/class/Guid) |             |
+| performanceLink | [Guid](/vext/ref/shared/class/guid) |             |
 
 ## Methods
 

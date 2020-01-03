@@ -14,9 +14,9 @@ title: FogData
 
 | Name                     | Type                               | Description |
 | ------------------------ | ---------------------------------- | ----------- |
-| curve                    | [Vec4](/vext/ref/shared/class/Vec4)  |             |
-| fogColorCurve            | [Vec4](/vext/ref/shared/class/Vec4)  |             |
-| fogColor                 | [Vec3](/vext/ref/shared/class/Vec3)  |             |
+| curve                    | [Vec4](/vext/ref/shared/class/vec4)  |             |
+| fogColorCurve            | [Vec4](/vext/ref/shared/class/vec4)  |             |
+| fogColor                 | [Vec3](/vext/ref/shared/class/vec3)  |             |
 | fogColorStart            | number                             |             |
 | fogDistanceMultiplier    | number                             |             |
 | realm                    | [Realm](/vext/ref/fb/realm) |             |

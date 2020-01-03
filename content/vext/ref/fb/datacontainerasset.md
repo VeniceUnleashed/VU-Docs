@@ -22,7 +22,7 @@ A container type representing a Frostbite instance entry.
 
 | Name | Type                                                | Description |
 | ---- | --------------------------------------------------- | ----------- |
-| data | [DataContainer](/vext/ref/shared/class/DataContainer) |             |
+| data | [DataContainer](/vext/ref/shared/class/datacontainer) |             |
 
 ## Methods
 

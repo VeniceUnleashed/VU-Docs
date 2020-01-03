@@ -24,7 +24,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                              | Type                                                 | Description |
 | --------------------------------- | ---------------------------------------------------- | ----------- |
-| soldierOffset                     | [Vec3](/vext/ref/shared/class/Vec3)                    |             |
+| soldierOffset                     | [Vec3](/vext/ref/shared/class/vec3)                    |             |
 | aiData                            | [GameAIEntryData](GameAIEntryData)                   |             |
 | entryClass                        | [EntryClass](EntryClass)                             |             |
 | inputConceptDefinition            | [EntryInputActionMapsData](EntryInputActionMapsData) |             |

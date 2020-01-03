@@ -16,8 +16,8 @@ A structure type representing a Frostbite data type.
 
 | Name          | Type                              | Description |
 | ------------- | --------------------------------- | ----------- |
-| offsetForce   | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| rotationForce | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| offsetForce   | [Vec3](/vext/ref/shared/class/vec3) |             |
+| rotationForce | [Vec3](/vext/ref/shared/class/vec3) |             |
 
 ## Methods
 

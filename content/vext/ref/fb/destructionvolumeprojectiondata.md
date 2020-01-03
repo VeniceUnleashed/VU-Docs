@@ -16,7 +16,7 @@ A structure type representing a Frostbite data type.
 
 | Name         | Type                              | Description |
 | ------------ | --------------------------------- | ----------- |
-| normal       | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| normal       | [Vec3](/vext/ref/shared/class/vec3) |             |
 | tangentAngle | number                            |             |
 
 ## Methods

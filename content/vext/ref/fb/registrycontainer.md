@@ -21,10 +21,10 @@ A container type representing a Frostbite instance entry.
 
 | Name                    | Type                                                    | Description |
 | ----------------------- | ------------------------------------------------------- | ----------- |
-| entityRegistry          | [DataContainer](/vext/ref/shared/class/DataContainer)\[\] |             |
-| assetRegistry           | [DataContainer](/vext/ref/shared/class/DataContainer)\[\] |             |
-| blueprintRegistry       | [DataContainer](/vext/ref/shared/class/DataContainer)\[\] |             |
-| referenceObjectRegistry | [DataContainer](/vext/ref/shared/class/DataContainer)\[\] |             |
+| entityRegistry          | [DataContainer](/vext/ref/shared/class/datacontainer)\[\] |             |
+| assetRegistry           | [DataContainer](/vext/ref/shared/class/datacontainer)\[\] |             |
+| blueprintRegistry       | [DataContainer](/vext/ref/shared/class/datacontainer)\[\] |             |
+| referenceObjectRegistry | [DataContainer](/vext/ref/shared/class/datacontainer)\[\] |             |
 
 ## Methods
 

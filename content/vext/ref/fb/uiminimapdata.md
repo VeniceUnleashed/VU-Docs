@@ -16,10 +16,10 @@ A structure type representing a Frostbite data type.
 
 | Name                            | Type                                                         | Description |
 | ------------------------------- | ------------------------------------------------------------ | ----------- |
-| worldCenter                     | [Vec2](/vext/ref/shared/class/Vec2)                            |             |
-| combatAreaColor                 | [Vec4](/vext/ref/shared/class/Vec4)                            |             |
-| detailTextureTint               | [Vec4](/vext/ref/shared/class/Vec4)                            |             |
-| combatAreaMultiplyWrapAmount    | [Vec2](/vext/ref/shared/class/Vec2)                            |             |
+| worldCenter                     | [Vec2](/vext/ref/shared/class/vec2)                            |             |
+| combatAreaColor                 | [Vec4](/vext/ref/shared/class/vec4)                            |             |
+| detailTextureTint               | [Vec4](/vext/ref/shared/class/vec4)                            |             |
+| combatAreaMultiplyWrapAmount    | [Vec2](/vext/ref/shared/class/vec2)                            |             |
 | vegetation                      | [UIMinimapDistanceFieldParams](UIMinimapDistanceFieldParams) |             |
 | fadeTexture                     | [TextureAsset](TextureAsset)                                 |             |
 | streamingMinimapDelay           | number                                                       |             |

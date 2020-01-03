@@ -22,7 +22,7 @@ A container type representing a Frostbite instance entry.
 
 | Name           | Type                                         | Description |
 | -------------- | -------------------------------------------- | ----------- |
-| defaultValues  | [Vec4](/vext/ref/shared/class/Vec4)            |             |
+| defaultValues  | [Vec4](/vext/ref/shared/class/vec4)            |             |
 | nextProcessor  | [ProcessorData](ProcessorData)               |             |
 | pre            | [EmitterComponentData](EmitterComponentData) |             |
 | evaluatorInput | [EmittableField](EmittableField)             |             |

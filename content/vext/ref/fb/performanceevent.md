@@ -22,7 +22,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                | Type                              | Description |
 | ------------------- | --------------------------------- | ----------- |
-| position            | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| position            | [Vec3](/vext/ref/shared/class/vec3) |             |
 | freeCPUMemory       | number                            |             |
 | cpuAverage          | number                            |             |
 | allocCPUMemory      | number                            |             |
@@ -32,7 +32,7 @@ A container type representing a Frostbite instance entry.
 | primitiveCount      | number                            |             |
 | allocGPUMemory      | number                            |             |
 | performanceLocation | string                            |             |
-| performanceLink     | [Guid](/vext/ref/shared/class/Guid) |             |
+| performanceLink     | [Guid](/vext/ref/shared/class/guid) |             |
 
 ## Methods
 

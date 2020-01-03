@@ -14,9 +14,9 @@ title: SkyData
 
 | Name                             | Type                                             | Description |
 | -------------------------------- | ------------------------------------------------ | ----------- |
-| cloudLayerSunColor               | [Vec3](/vext/ref/shared/class/Vec3)                |             |
-| cloudLayer2Color                 | [Vec3](/vext/ref/shared/class/Vec3)                |             |
-| cloudLayer1Color                 | [Vec3](/vext/ref/shared/class/Vec3)                |             |
+| cloudLayerSunColor               | [Vec3](/vext/ref/shared/class/vec3)                |             |
+| cloudLayer2Color                 | [Vec3](/vext/ref/shared/class/vec3)                |             |
+| cloudLayer1Color                 | [Vec3](/vext/ref/shared/class/vec3)                |             |
 | skyGradientTexture               | [TextureAsset](/vext/ref/fb/textureasset) |             |
 | sunSize                          | number                                           |             |
 | brightnessScale                  | number                                           |             |

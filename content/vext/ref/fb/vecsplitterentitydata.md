@@ -24,8 +24,8 @@ A container type representing a Frostbite instance entry.
 
 | Name  | Type                              | Description |
 | ----- | --------------------------------- | ----------- |
-| vec3  | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| vec4  | [Vec4](/vext/ref/shared/class/Vec4) |             |
+| vec3  | [Vec3](/vext/ref/shared/class/vec3) |             |
+| vec4  | [Vec4](/vext/ref/shared/class/vec4) |             |
 | realm | [Realm](Realm)                    |             |
 
 ## Methods

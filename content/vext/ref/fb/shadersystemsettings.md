@@ -21,7 +21,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                                   | Type                              | Description |
 | -------------------------------------- | --------------------------------- | ----------- |
-| debugNonFiniteColor                    | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| debugNonFiniteColor                    | [Vec3](/vext/ref/shared/class/vec3) |             |
 | dxInstancingBufferHandlingMethod       | number                            |             |
 | frameMemoryBufferSize                  | number                            |             |
 | xenonDispatchCmdBufferSize             | number                            |             |

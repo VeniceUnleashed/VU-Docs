@@ -24,7 +24,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                         | Type                                                   | Description |
 | ---------------------------- | ------------------------------------------------------ | ----------- |
-| cameraTransitionPos          | [Vec3](/vext/ref/shared/class/Vec3)                      |             |
+| cameraTransitionPos          | [Vec3](/vext/ref/shared/class/vec3)                      |             |
 | fieldOfView                  | number                                                 |             |
 | forceFieldOfView             | number                                                 |             |
 | camera                       | [TargetCameraData](TargetCameraData)                   |             |

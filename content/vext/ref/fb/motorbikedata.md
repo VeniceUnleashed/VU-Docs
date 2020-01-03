@@ -21,10 +21,10 @@ A container type representing a Frostbite instance entry.
 
 | Name                             | Type                              | Description |
 | -------------------------------- | --------------------------------- | ----------- |
-| wheelieForceBodyOffset           | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| wheelieForce                     | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| dampBigJumpImpactCounterForce    | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| proximityExtScale                | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| wheelieForceBodyOffset           | [Vec3](/vext/ref/shared/class/vec3) |             |
+| wheelieForce                     | [Vec3](/vext/ref/shared/class/vec3) |             |
+| dampBigJumpImpactCounterForce    | [Vec3](/vext/ref/shared/class/vec3) |             |
+| proximityExtScale                | [Vec3](/vext/ref/shared/class/vec3) |             |
 | jumpForwardLeanMinAngle          | number                            |             |
 | jumpForwardLeanMomentum          | number                            |             |
 | kickstandRoll                    | number                            |             |

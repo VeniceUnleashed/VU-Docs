@@ -16,8 +16,8 @@ A structure type representing a Frostbite data type.
 
 | Name        | Type                                                  | Description |
 | ----------- | ----------------------------------------------------- | ----------- |
-| aabb        | [AxisAlignedBox](/vext/ref/shared/class/AxisAlignedBox) |             |
-| translation | [Vec3](/vext/ref/shared/class/Vec3)                     |             |
+| aabb        | [AxisAlignedBox](/vext/ref/shared/class/axisalignedbox) |             |
+| translation | [Vec3](/vext/ref/shared/class/vec3)                     |             |
 
 ## Methods
 

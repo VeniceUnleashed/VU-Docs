@@ -16,7 +16,7 @@ A structure type representing a Frostbite data type.
 
 | Name             | Type                              | Description |
 | ---------------- | --------------------------------- | ----------- |
-| poissonDiscScale | [Vec2](/vext/ref/shared/class/Vec2) |             |
+| poissonDiscScale | [Vec2](/vext/ref/shared/class/vec2) |             |
 | blendFactor      | number                            |             |
 | radialScale      | number                            |             |
 | radialExponent   | number                            |             |

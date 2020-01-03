@@ -16,7 +16,7 @@ A structure type representing a Frostbite data type.
 
 | Name      | Type                              | Description |
 | --------- | --------------------------------- | ----------- |
-| chunkId   | [Guid](/vext/ref/shared/class/Guid) |             |
+| chunkId   | [Guid](/vext/ref/shared/class/guid) |             |
 | chunkSize | number                            |             |
 
 ## Methods

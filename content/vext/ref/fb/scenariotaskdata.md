@@ -16,14 +16,14 @@ A structure type representing a Frostbite data type.
 
 | Name                 | Type                                                        | Description |
 | -------------------- | ----------------------------------------------------------- | ----------- |
-| endPointWorldOffset  | [Vec3](/vext/ref/shared/class/Vec3)                           |             |
-| startPoint           | [Vec3](/vext/ref/shared/class/Vec3)                           |             |
+| endPointWorldOffset  | [Vec3](/vext/ref/shared/class/vec3)                           |             |
+| startPoint           | [Vec3](/vext/ref/shared/class/vec3)                           |             |
 | scenarioId           | number                                                      |             |
 | actorId              | number                                                      |             |
 | partId               | number                                                      |             |
 | levelId              | number                                                      |             |
 | worldAngle           | number                                                      |             |
-| connectTransforms    | [LinearTransform](/vext/ref/shared/class/LinearTransform)\[\] |             |
+| connectTransforms    | [LinearTransform](/vext/ref/shared/class/lineartransform)\[\] |             |
 | startTurnDistance    | number                                                      |             |
 | startTimerDistance   | number                                                      |             |
 | triggerScenarioDelay | number                                                      |             |

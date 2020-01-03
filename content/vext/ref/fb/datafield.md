@@ -17,7 +17,7 @@ A structure type representing a Frostbite data type.
 | Name       | Type                                                | Description |
 | ---------- | --------------------------------------------------- | ----------- |
 | value      | string                                              |             |
-| valueRef   | [DataContainer](/vext/ref/shared/class/DataContainer) |             |
+| valueRef   | [DataContainer](/vext/ref/shared/class/datacontainer) |             |
 | id         | number                                              |             |
 | accessType | [FieldAccessType](FieldAccessType)                  |             |
 

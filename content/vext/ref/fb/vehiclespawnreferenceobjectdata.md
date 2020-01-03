@@ -25,7 +25,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                           | Type                                                    | Description |
 | ------------------------------ | ------------------------------------------------------- | ----------- |
-| airDropCarrierTransform        | [LinearTransform](/vext/ref/shared/class/LinearTransform) |             |
+| airDropCarrierTransform        | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
 | timeUntilAbandoned             | number                                                  |             |
 | timeUntilAbandonedIsDestroyed  | number                                                  |             |
 | enterRestriction               | [EntryEnterRestriction](EntryEnterRestriction)          |             |

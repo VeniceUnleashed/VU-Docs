@@ -27,7 +27,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                         | Type                                                    | Description |
 | ---------------------------- | ------------------------------------------------------- | ----------- |
-| geometryTransform            | [LinearTransform](/vext/ref/shared/class/LinearTransform) |             |
+| geometryTransform            | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
 | include                      | [AreaTriggerInclude](AreaTriggerInclude)                |             |
 | insideAreaEventRepeatTime    | number                                                  |             |
 | radius                       | number                                                  |             |

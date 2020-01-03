@@ -24,9 +24,9 @@ A container type representing a Frostbite instance entry.
 
 | Name              | Type                              | Description |
 | ----------------- | --------------------------------- | ----------- |
-| keyColorEnvmap    | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| groundColorEnvmap | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| skyColorEnvmap    | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| keyColorEnvmap    | [Vec3](/vext/ref/shared/class/vec3) |             |
+| groundColorEnvmap | [Vec3](/vext/ref/shared/class/vec3) |             |
+| skyColorEnvmap    | [Vec3](/vext/ref/shared/class/vec3) |             |
 | enable            | bool                              |             |
 
 ## Methods

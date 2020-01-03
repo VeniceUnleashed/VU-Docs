@@ -22,7 +22,7 @@ A container type representing a Frostbite instance entry.
 
 | Name     | Type                              | Description |
 | -------- | --------------------------------- | ----------- |
-| axis     | [Vec3](/vext/ref/shared/class/Vec3) |             |
+| axis     | [Vec3](/vext/ref/shared/class/vec3) |             |
 | start    | [EndPointData](EndPointData)      |             |
 | endValue | [EndPointData](EndPointData)      |             |
 

@@ -16,8 +16,8 @@ A structure type representing a Frostbite data type.
 
 | Name        | Type                                                   | Description |
 | ----------- | ------------------------------------------------------ | ----------- |
-| source      | [DataContainer](/vext/ref/shared/class/DataContainer)    |             |
-| target      | [DataContainer](/vext/ref/shared/class/DataContainer)    |             |
+| source      | [DataContainer](/vext/ref/shared/class/datacontainer)    |             |
+| target      | [DataContainer](/vext/ref/shared/class/datacontainer)    |             |
 | sourceEvent | [EventSpec](EventSpec)                                 |             |
 | targetEvent | [EventSpec](EventSpec)                                 |             |
 | targetType  | [EventConnectionTargetType](EventConnectionTargetType) |             |

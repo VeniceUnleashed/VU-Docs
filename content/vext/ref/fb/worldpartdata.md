@@ -27,7 +27,7 @@ A container type representing a Frostbite instance entry.
 
 | Name                             | Type                              | Description |
 | -------------------------------- | --------------------------------- | ----------- |
-| hackToSolveRealTimeTweakingIssue | [Guid](/vext/ref/shared/class/Guid) |             |
+| hackToSolveRealTimeTweakingIssue | [Guid](/vext/ref/shared/class/guid) |             |
 | useDeferredEntityCreation        | bool                              |             |
 | enabled                          | bool                              |             |
 

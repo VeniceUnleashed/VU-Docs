@@ -16,8 +16,8 @@ A structure type representing a Frostbite data type.
 
 | Name              | Type                                                 | Description |
 | ----------------- | ---------------------------------------------------- | ----------- |
-| direction         | [Vec3](/vext/ref/shared/class/Vec3)                    |             |
-| spawnPosition     | [Vec3](/vext/ref/shared/class/Vec3)                    |             |
+| direction         | [Vec3](/vext/ref/shared/class/vec3)                    |             |
+| spawnPosition     | [Vec3](/vext/ref/shared/class/vec3)                    |             |
 | weaponUnlockAsset | [SoldierWeaponUnlockAsset](SoldierWeaponUnlockAsset) |             |
 | weaponType        | [AntHitReactionWeaponType](AntHitReactionWeaponType) |             |
 | boneType          | number                                               |             |

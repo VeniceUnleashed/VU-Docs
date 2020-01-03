@@ -24,13 +24,13 @@ A container type representing a Frostbite instance entry.
 
 | Name                             | Type                              | Description |
 | -------------------------------- | --------------------------------- | ----------- |
-| chromaticAberrationColor1        | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| radialBlendDistanceCoefficients  | [Vec2](/vext/ref/shared/class/Vec2) |             |
-| chromaticAberrationColor2        | [Vec3](/vext/ref/shared/class/Vec3) |             |
-| blurCenter                       | [Vec2](/vext/ref/shared/class/Vec2) |             |
-| chromaticAberrationDisplacement2 | [Vec2](/vext/ref/shared/class/Vec2) |             |
-| chromaticAberrationDisplacement1 | [Vec2](/vext/ref/shared/class/Vec2) |             |
-| chromaticAberrationStrengths     | [Vec2](/vext/ref/shared/class/Vec2) |             |
+| chromaticAberrationColor1        | [Vec3](/vext/ref/shared/class/vec3) |             |
+| radialBlendDistanceCoefficients  | [Vec2](/vext/ref/shared/class/vec2) |             |
+| chromaticAberrationColor2        | [Vec3](/vext/ref/shared/class/vec3) |             |
+| blurCenter                       | [Vec2](/vext/ref/shared/class/vec2) |             |
+| chromaticAberrationDisplacement2 | [Vec2](/vext/ref/shared/class/vec2) |             |
+| chromaticAberrationDisplacement1 | [Vec2](/vext/ref/shared/class/vec2) |             |
+| chromaticAberrationStrengths     | [Vec2](/vext/ref/shared/class/vec2) |             |
 | blurScale                        | number                            |             |
 | realm                            | [Realm](Realm)                    |             |
 | enable                           | bool                              |             |

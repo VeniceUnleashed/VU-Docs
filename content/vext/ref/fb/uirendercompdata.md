@@ -23,8 +23,8 @@ A container type representing a Frostbite instance entry.
 
 | Name                | Type                              | Description |
 | ------------------- | --------------------------------- | ----------- |
-| backgroundRect1     | [Vec4](/vext/ref/shared/class/Vec4) |             |
-| backgroundRect0     | [Vec4](/vext/ref/shared/class/Vec4) |             |
+| backgroundRect1     | [Vec4](/vext/ref/shared/class/vec4) |             |
+| backgroundRect0     | [Vec4](/vext/ref/shared/class/vec4) |             |
 | bgTexture2          | [TextureAsset](TextureAsset)      |             |
 | bgTexture1          | [TextureAsset](TextureAsset)      |             |
 | alphaMin            | number                            |             |

@@ -23,7 +23,7 @@ A container type representing a Frostbite instance entry.
 
 | Name   | Type                                  | Description |
 | ------ | ------------------------------------- | ----------- |
-| values | [Vec3](/vext/ref/shared/class/Vec3)\[\] |             |
+| values | [Vec3](/vext/ref/shared/class/vec3)\[\] |             |
 
 ## Methods
 

@@ -16,8 +16,8 @@ A structure type representing a Frostbite data type.
 
 | Name          | Type                              | Description |
 | ------------- | --------------------------------- | ----------- |
-| userMaskRight | [Vec4](/vext/ref/shared/class/Vec4) |             |
-| userMaskLeft  | [Vec4](/vext/ref/shared/class/Vec4) |             |
+| userMaskRight | [Vec4](/vext/ref/shared/class/vec4) |             |
+| userMaskLeft  | [Vec4](/vext/ref/shared/class/vec4) |             |
 | right         | number                            |             |
 | left          | number                            |             |
 
