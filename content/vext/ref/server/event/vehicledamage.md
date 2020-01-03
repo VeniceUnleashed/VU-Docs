@@ -1,0 +1,21 @@
+---
+title: Vehicle:Damage
+---
+## Description
+
+## Parameters
+
+| Type                                  | Name    | Description |
+| ------------------------------------- | ------- | ----------- |
+| [Entity](/vext/ref/shared/class/entity) | vehicle |             |
+| float                                 | damage  |             |
+
+## Usage Example
+
+``` lua
+local function OnVehicleDamage(vehicle, damage)
+    -- Add your logic here
+end
+
+Events:Subscribe('Vehicle:Damage', OnVehicleDamage)
+```
