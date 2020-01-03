@@ -29,10 +29,10 @@ title: TonemapData
 
 | Type                                            | Name            | Parameters |
 | ----------------------------------------------- | --------------- | ---------- |
-| [TonemapData](/vext/ref/cls/clt/tonemapdata) | [Clone](#clone) |            |
+| [TonemapData](/vext/ref/client/class/tonemapdata) | [Clone](#clone) |            |
 
 ### Clone
 
-> [TonemapData](/vext/ref/cls/clt/tonemapdata) **Clone**()
+> [TonemapData](/vext/ref/client/class/tonemapdata) **Clone**()
 
 Creates a shallow-copy clone of the instance.

@@ -22,10 +22,10 @@ title: WindData
 
 | Type                                      | Name            | Parameters |
 | ----------------------------------------- | --------------- | ---------- |
-| [WindData](/vext/ref/cls/clt/winddata) | [Clone](#clone) |            |
+| [WindData](/vext/ref/client/class/winddata) | [Clone](#clone) |            |
 
 ### Clone
 
-> [WindData](/vext/ref/cls/clt/winddata) **Clone**()
+> [WindData](/vext/ref/client/class/winddata) **Clone**()
 
 Creates a shallow-copy clone of the instance.

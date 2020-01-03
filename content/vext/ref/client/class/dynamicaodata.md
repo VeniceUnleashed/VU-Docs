@@ -31,10 +31,10 @@ title: DynamicAOData
 
 | Type                                                | Name            | Parameters |
 | --------------------------------------------------- | --------------- | ---------- |
-| [DynamicAOData](/vext/ref/cls/clt/dynamicaodata) | [Clone](#clone) |            |
+| [DynamicAOData](/vext/ref/client/class/dynamicaodata) | [Clone](#clone) |            |
 
 ### Clone
 
-> [DynamicAOData](/vext/ref/cls/clt/dynamicaodata) **Clone**()
+> [DynamicAOData](/vext/ref/client/class/dynamicaodata) **Clone**()
 
 Creates a shallow-copy clone of the instance.

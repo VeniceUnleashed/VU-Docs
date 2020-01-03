@@ -26,10 +26,10 @@ title: PlanarReflectionData (Client Container)
 
 | Type                                                              | Name            | Parameters |
 | ----------------------------------------------------------------- | --------------- | ---------- |
-| [PlanarReflectionData](/vext/ref/cls/clt/planarreflectiondata) | [Clone](#clone) |            |
+| [PlanarReflectionData](/vext/ref/client/class/planarreflectiondata) | [Clone](#clone) |            |
 
 ### Clone
 
-> [PlanarReflectionData](/vext/ref/cls/clt/planarreflectiondata) **Clone**()
+> [PlanarReflectionData](/vext/ref/client/class/planarreflectiondata) **Clone**()
 
 Creates a shallow-copy clone of the instance.

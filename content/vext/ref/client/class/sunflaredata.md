@@ -63,10 +63,10 @@ title: SunFlareData
 
 | Type                                              | Name            | Parameters |
 | ------------------------------------------------- | --------------- | ---------- |
-| [SunFlareData](/vext/ref/cls/clt/sunflaredata) | [Clone](#clone) |            |
+| [SunFlareData](/vext/ref/client/class/sunflaredata) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SunFlareData](/vext/ref/cls/clt/sunflaredata) **Clone**()
+> [SunFlareData](/vext/ref/client/class/sunflaredata) **Clone**()
 
 Creates a shallow-copy clone of the instance.

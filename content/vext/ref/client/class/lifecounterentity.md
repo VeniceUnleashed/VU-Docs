@@ -11,7 +11,7 @@ title: LifeCounterEntity
 
 | Constructor                                                                                                | Description |
 | ---------------------------------------------------------------------------------------------------------- | ----------- |
-| [LifeCounterEntity](/vext/ref/cls/clt/lifecounterentity)([Entity](/vext/ref/shared/class/entity) **ref**) |             |
+| [LifeCounterEntity](/vext/ref/client/class/lifecounterentity)([Entity](/vext/ref/shared/class/entity) **ref**) |             |
 
 ## Static Members
 

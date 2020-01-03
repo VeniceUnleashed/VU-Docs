@@ -17,9 +17,9 @@ title: VisualEnvironmentManager
 | float                                                                       | [GetSunRotationOffsetX](#getsunrotationoffsetx) |                                                                                 |
 | void                                                                        | [SetSunRotationOffsetY](#setsunrotationoffsety) | float **value**                                                                 |
 | float                                                                       | [GetSunRotationOffsetY](#getsunrotationoffsety) |                                                                                 |
-| [VisualEnvironmentState\[](/vext/ref/cls/clt/visualenvironmentstate[])\] | [GetStates](#getstates)                         |                                                                                 |
-| void                                                                        | [AddState](#addstate)                           | [VisualEnvironmentState](/vext/ref/cls/clt/visualenvironmentstate) **state** |
-| void                                                                        | [RemoveState](#removestate)                     | [VisualEnvironmentState](/vext/ref/cls/clt/visualenvironmentstate) **state** |
+| [VisualEnvironmentState](/vext/ref/client/class/visualenvironmentstate)\[\] | [GetStates](#getstates)                         |                                                                                 |
+| void                                                                        | [AddState](#addstate)                           | [VisualEnvironmentState](/vext/ref/client/class/visualenvironmentstate) **state** |
+| void                                                                        | [RemoveState](#removestate)                     | [VisualEnvironmentState](/vext/ref/client/class/visualenvironmentstate) **state** |
 
 ### SetDirty
 
@@ -93,24 +93,24 @@ title: VisualEnvironmentManager
 
 ### GetStates
 
-> [VisualEnvironmentState\[](/vext/ref/cls/clt/visualenvironmentstate[])\] **GetStates**()
+> [VisualEnvironmentState](/vext/ref/client/class/visualenvironmentstate)\[\] **GetStates**()
 
 ### AddState
 
-> void **AddState**([VisualEnvironmentState](/vext/ref/cls/clt/visualenvironmentstate) **state**)
+> void **AddState**([VisualEnvironmentState](/vext/ref/client/class/visualenvironmentstate) **state**)
 
 #### Parameters
 
 | Name  | Type                                                                  | Description |
 | ----- | --------------------------------------------------------------------- | ----------- |
-| state | [VisualEnvironmentState](/vext/ref/cls/clt/visualenvironmentstate) |             |
+| state | [VisualEnvironmentState](/vext/ref/client/class/visualenvironmentstate) |             |
 
 ### RemoveState
 
-> void **RemoveState**([VisualEnvironmentState](/vext/ref/cls/clt/visualenvironmentstate) **state**)
+> void **RemoveState**([VisualEnvironmentState](/vext/ref/client/class/visualenvironmentstate) **state**)
 
 #### Parameters
 
 | Name  | Type                                                                  | Description |
 | ----- | --------------------------------------------------------------------- | ----------- |
-| state | [VisualEnvironmentState](/vext/ref/cls/clt/visualenvironmentstate) |             |
+| state | [VisualEnvironmentState](/vext/ref/client/class/visualenvironmentstate) |             |

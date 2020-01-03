@@ -7,8 +7,8 @@ title: SpectatorManager
 
 | Type                                                            | Name                                              | Parameters                                                               |
 | --------------------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------------------------------ |
-| void                                                            | [SpectatePlayer](#spectateplayer)                 | [Player](/vext/ref/cls/clt/player) **player**, bool **firstPerson**   |
-| [Player](/vext/ref/cls/clt/player)                           | [GetSpectatedPlayer](#getspectatedplayer)         |                                                                          |
+| void                                                            | [SpectatePlayer](#spectateplayer)                 | [Player](/vext/ref/client/class/player) **player**, bool **firstPerson**   |
+| [Player](/vext/ref/client/class/player)                           | [GetSpectatedPlayer](#getspectatedplayer)         |                                                                          |
 | [SpectatorCameraMode](/vext/ref/shared/class/spectatorcameramode) | [GetCameraMode](#getcameramode)                   |                                                                          |
 | void                                                            | [SetCameraMode](#setcameramode)                   | [SpectatorCameraMode](/vext/ref/shared/class/spectatorcameramode) **mode** |
 | [LinearTransform](/vext/ref/shared/class/lineartransform)         | [GetFreecameraTransform](#getfreecameratransform) |                                                                          |
@@ -16,18 +16,18 @@ title: SpectatorManager
 
 ### SpectatePlayer
 
-> void **SpectatePlayer**([Player](/vext/ref/cls/clt/player) **player**, bool **firstPerson**)
+> void **SpectatePlayer**([Player](/vext/ref/client/class/player) **player**, bool **firstPerson**)
 
 #### Parameters
 
 | Name        | Type                                  | Description |
 | ----------- | ------------------------------------- | ----------- |
-| player      | [Player](/vext/ref/cls/clt/player) |             |
+| player      | [Player](/vext/ref/client/class/player) |             |
 | firstPerson | bool                                  |             |
 
 ### GetSpectatedPlayer
 
-> [Player](/vext/ref/cls/clt/player) **GetSpectatedPlayer**()
+> [Player](/vext/ref/client/class/player) **GetSpectatedPlayer**()
 
 ### GetCameraMode
 

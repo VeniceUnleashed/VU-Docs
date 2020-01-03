@@ -12,8 +12,8 @@ title: Player
 | teamId                 | [TeamId](/vext/ref/fb/teamid)                |          |             |
 | squadId                | [SquadId](/vext/ref/fb/squadid)              |          |             |
 | inVehicle              | bool                                                |          |             |
-| soldier                | [SoldierEntity](/vext/ref/cls/clt/soldierentity) |          |             |
-| corpse                 | [SoldierEntity](/vext/ref/cls/clt/soldierentity) |          |             |
+| soldier                | [SoldierEntity](/vext/ref/client/class/soldierentity) |          |             |
+| corpse                 | [SoldierEntity](/vext/ref/client/class/soldierentity) |          |             |
 | attachedControllable   | [Entity](/vext/ref/shared/class/entity)               |          |             |
 | controlledControllable | [Entity](/vext/ref/shared/class/entity)               |          |             |
 | isSquadLeader          | bool                                                |          |             |
@@ -23,7 +23,7 @@ title: Player
 
 | Operator | Parameters                                      |
 | -------- | ----------------------------------------------- |
-| \==      | [Player](/vext/ref/cls/clt/player) **other** |
+| \==      | [Player](/vext/ref/client/class/player) **other** |
 
 ## Methods
 

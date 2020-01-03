@@ -7,8 +7,8 @@ title: NetEvents
 
 | Type                                      | Name                        | Parameters                                                |
 | ----------------------------------------- | --------------------------- | --------------------------------------------------------- |
-| [NetEvent](/vext/ref/cls/clt/netevent) | [Subscribe](#subscribe)     | string **message**, function **callback**                 |
-| [NetEvent](/vext/ref/cls/clt/netevent) | [Subscribe](#subscribe)     | string **message**, object **obj**, function **callback** |
+| [NetEvent](/vext/ref/client/class/netevent) | [Subscribe](#subscribe)     | string **message**, function **callback**                 |
+| [NetEvent](/vext/ref/client/class/netevent) | [Subscribe](#subscribe)     | string **message**, object **obj**, function **callback** |
 | void                                      | [Send](#send)               | string **message**, ...args                               |
 | void                                      | [SendLocal](#sendlocal)     | string **message**, ...args                               |
 | void                                      | [Unsubscribe](#unsubscribe) |                                                           |
@@ -16,7 +16,7 @@ title: NetEvents
 
 ### Subscribe
 
-> [NetEvent](/vext/ref/cls/clt/netevent) **Subscribe**(string **message**, function **callback**)
+> [NetEvent](/vext/ref/client/class/netevent) **Subscribe**(string **message**, function **callback**)
 
 #### Parameters
 
@@ -27,7 +27,7 @@ title: NetEvents
 
 ### Subscribe
 
-> [NetEvent](/vext/ref/cls/clt/netevent) **Subscribe**(string **message**, object **obj**, function **callback**)
+> [NetEvent](/vext/ref/client/class/netevent) **Subscribe**(string **message**, object **obj**, function **callback**)
 
 #### Parameters
 

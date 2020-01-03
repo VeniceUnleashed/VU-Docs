@@ -7,7 +7,7 @@ title: Player:TeamChange
 
 | Type                                   | Name   | Description |
 | -------------------------------------- | ------ | ----------- |
-| [Player](/vext/ref/cls/clt/player)  | player |             |
+| [Player](/vext/ref/client/class/player)  | player |             |
 | [TeamId](/vext/ref/fb/teamid)   | team   |             |
 | [SquadId](/vext/ref/fb/squadid) | squad  |             |
 

@@ -11,7 +11,7 @@ title: TicketCounterEntity
 
 | Constructor                                                                                                    | Description |
 | -------------------------------------------------------------------------------------------------------------- | ----------- |
-| [TicketCounterEntity](/vext/ref/cls/clt/ticketcounterentity)([Entity](/vext/ref/shared/class/entity) **ref**) |             |
+| [TicketCounterEntity](/vext/ref/client/class/ticketcounterentity)([Entity](/vext/ref/shared/class/entity) **ref**) |             |
 
 ## Static Members
 

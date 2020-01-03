@@ -11,7 +11,7 @@ title: ExplosionEntity
 
 | Constructor                                                                                            | Description |
 | ------------------------------------------------------------------------------------------------------ | ----------- |
-| [ExplosionEntity](/vext/ref/cls/clt/explosionentity)([Entity](/vext/ref/shared/class/entity) **ref**) |             |
+| [ExplosionEntity](/vext/ref/client/class/explosionentity)([Entity](/vext/ref/shared/class/entity) **ref**) |             |
 
 ## Static Members
 
@@ -23,11 +23,11 @@ title: ExplosionEntity
 
 | Type | Name                  | Parameters                                                                                                                                                                                                     |
 | ---- | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| void | [Detonate](#detonate) | [LinearTransform](/vext/ref/shared/class/lineartransform) **transform**, [Vec3](/vext/ref/shared/class/vec3) **impactNormal**, float **damageMultiplier**, [Player](/vext/ref/cls/clt/player) **shooterPlayer** |
+| void | [Detonate](#detonate) | [LinearTransform](/vext/ref/shared/class/lineartransform) **transform**, [Vec3](/vext/ref/shared/class/vec3) **impactNormal**, float **damageMultiplier**, [Player](/vext/ref/client/class/player) **shooterPlayer** |
 
 ### Detonate
 
-> void **Detonate**([LinearTransform](/vext/ref/shared/class/lineartransform) **transform**, [Vec3](/vext/ref/shared/class/vec3) **impactNormal**, float **damageMultiplier**, [Player](/vext/ref/cls/clt/player) **shooterPlayer**)
+> void **Detonate**([LinearTransform](/vext/ref/shared/class/lineartransform) **transform**, [Vec3](/vext/ref/shared/class/vec3) **impactNormal**, float **damageMultiplier**, [Player](/vext/ref/client/class/player) **shooterPlayer**)
 
 #### Parameters
 
@@ -36,4 +36,4 @@ title: ExplosionEntity
 | transform        | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
 | impactNormal     | [Vec3](/vext/ref/shared/class/vec3)                       |             |
 | damageMultiplier | float                                                   |             |
-| shooterPlayer    | [Player](/vext/ref/cls/clt/player)                   |             |
+| shooterPlayer    | [Player](/vext/ref/client/class/player)                   |             |

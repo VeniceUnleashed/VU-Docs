@@ -7,7 +7,7 @@ title: EffectManager
 
 | Type | Name                                                | Parameters                                                                                                                                                                                                                     |
 | ---- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| int  | [PlayEffect](#playeffect)                           | [DataContainer](/vext/ref/shared/class/datacontainer) **asset**, [LinearTransform](/vext/ref/shared/class/lineartransform) **transform**, [EffectParams](/vext/ref/cls/clt/effectparams) **params**, bool **firstPersonEffect** |
+| int  | [PlayEffect](#playeffect)                           | [DataContainer](/vext/ref/shared/class/datacontainer) **asset**, [LinearTransform](/vext/ref/shared/class/lineartransform) **transform**, [EffectParams](/vext/ref/client/class/effectparams) **params**, bool **firstPersonEffect** |
 | void | [StopEffect](#stopeffect)                           | int **handle**                                                                                                                                                                                                                 |
 | void | [ResetEffect](#reseteffect)                         | int **handle**                                                                                                                                                                                                                 |
 | void | [SetEffectParameterBool](#seteffectparameterbool)   | int **handle**, string **name**, bool **value**                                                                                                                                                                                |
@@ -21,7 +21,7 @@ title: EffectManager
 
 ### PlayEffect
 
-> int **PlayEffect**([DataContainer](/vext/ref/shared/class/datacontainer) **asset**, [LinearTransform](/vext/ref/shared/class/lineartransform) **transform**, [EffectParams](/vext/ref/cls/clt/effectparams) **params**, bool **firstPersonEffect**)
+> int **PlayEffect**([DataContainer](/vext/ref/shared/class/datacontainer) **asset**, [LinearTransform](/vext/ref/shared/class/lineartransform) **transform**, [EffectParams](/vext/ref/client/class/effectparams) **params**, bool **firstPersonEffect**)
 
 #### Parameters
 
@@ -29,7 +29,7 @@ title: EffectManager
 | ----------------- | ------------------------------------------------------- | ----------- |
 | asset             | [DataContainer](/vext/ref/shared/class/datacontainer)     |             |
 | transform         | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
-| params            | [EffectParams](/vext/ref/cls/clt/effectparams)       |             |
+| params            | [EffectParams](/vext/ref/client/class/effectparams)       |             |
 | firstPersonEffect | bool                                                    |             |
 
 ### StopEffect

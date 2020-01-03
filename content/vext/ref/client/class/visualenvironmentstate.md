@@ -7,8 +7,8 @@ title: VisualEnvironmentState
 
 | Constructor                                                                                                                                          | Description                                              |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| [VisualEnvironmentState](/vext/ref/cls/clt/visualenvironmentstate)(string **entityName** = "")                                                    |                                                          |
-| [VisualEnvironmentState](/vext/ref/cls/clt/visualenvironmentstate)([VisualEnvironmentState](/vext/ref/cls/clt/visualenvironmentstate) **ref**) | Create a reference copy of an instance of the same type. |
+| [VisualEnvironmentState](/vext/ref/client/class/visualenvironmentstate)(string **entityName** = "")                                                    |                                                          |
+| [VisualEnvironmentState](/vext/ref/client/class/visualenvironmentstate)([VisualEnvironmentState](/vext/ref/client/class/visualenvironmentstate) **ref**) | Create a reference copy of an instance of the same type. |
 
 ## Properties
 
@@ -22,23 +22,23 @@ title: VisualEnvironmentState
 | stateId              | int                                                                 |          |             |
 | activeEffectPosition | [Vec3](/vext/ref/shared/class/vec3)                                   |          |             |
 | sharedParamsCount    | int                                                                 |          |             |
-| outdoorLight         | [OutdoorLightData](/vext/ref/cls/clt/outdoorlightdata)           |          |             |
-| enlighten            | [EnlightenData](/vext/ref/cls/clt/enlightendata)                 |          |             |
-| tonemap              | [TonemapData](/vext/ref/cls/clt/tonemapdata)                     |          |             |
-| colorCorrection      | [ColorCorrectionData](/vext/ref/cls/clt/colorcorrectiondata)     |          |             |
-| sky                  | [SkyData](/vext/ref/cls/clt/skydata)                             |          |             |
-| fog                  | [FogData](/vext/ref/cls/clt/fogdata)                             |          |             |
-| wind                 | [WindData](/vext/ref/cls/clt/winddata)                           |          |             |
-| sunFlare             | [SunFlareData](/vext/ref/cls/clt/sunflaredata)                   |          |             |
-| dynamicAO            | [DynamicAOData](/vext/ref/cls/clt/dynamicaodata)                 |          |             |
-| dof                  | [DofData](/vext/ref/cls/clt/dofdata)                             |          |             |
-| vignette             | [VignetteData](/vext/ref/cls/clt/vignettedata)                   |          |             |
-| filmGrain            | [FilmGrainData](/vext/ref/cls/clt/filmgraindata)                 |          |             |
-| lensScope            | [LensScopeData](/vext/ref/cls/clt/lensscopedata)                 |          |             |
-| cameraParams         | [CameraParamsData](/vext/ref/cls/clt/cameraparamsdata)           |          |             |
-| screenEffect         | [ScreenEffectData](/vext/ref/cls/clt/screeneffectdata)           |          |             |
-| damageEffect         | [DamageEffectData](/vext/ref/cls/clt/damageeffectdata)           |          |             |
-| planarReflection     | [PlanarReflectionData](/vext/ref/cls/clt/planarreflectiondata)   |          |             |
-| dynamicEnvmap        | [DynamicEnvmapData](/vext/ref/cls/clt/dynamicenvmapdata)         |          |             |
-| characterLighting    | [CharacterLightingData](/vext/ref/cls/clt/characterlightingdata) |          |             |
-| motionBlur           | [MotionBlurData](/vext/ref/cls/clt/motionblurdata)               |          |             |
+| outdoorLight         | [OutdoorLightData](/vext/ref/client/class/outdoorlightdata)           |          |             |
+| enlighten            | [EnlightenData](/vext/ref/client/class/enlightendata)                 |          |             |
+| tonemap              | [TonemapData](/vext/ref/client/class/tonemapdata)                     |          |             |
+| colorCorrection      | [ColorCorrectionData](/vext/ref/client/class/colorcorrectiondata)     |          |             |
+| sky                  | [SkyData](/vext/ref/client/class/skydata)                             |          |             |
+| fog                  | [FogData](/vext/ref/client/class/fogdata)                             |          |             |
+| wind                 | [WindData](/vext/ref/client/class/winddata)                           |          |             |
+| sunFlare             | [SunFlareData](/vext/ref/client/class/sunflaredata)                   |          |             |
+| dynamicAO            | [DynamicAOData](/vext/ref/client/class/dynamicaodata)                 |          |             |
+| dof                  | [DofData](/vext/ref/client/class/dofdata)                             |          |             |
+| vignette             | [VignetteData](/vext/ref/client/class/vignettedata)                   |          |             |
+| filmGrain            | [FilmGrainData](/vext/ref/client/class/filmgraindata)                 |          |             |
+| lensScope            | [LensScopeData](/vext/ref/client/class/lensscopedata)                 |          |             |
+| cameraParams         | [CameraParamsData](/vext/ref/client/class/cameraparamsdata)           |          |             |
+| screenEffect         | [ScreenEffectData](/vext/ref/client/class/screeneffectdata)           |          |             |
+| damageEffect         | [DamageEffectData](/vext/ref/client/class/damageeffectdata)           |          |             |
+| planarReflection     | [PlanarReflectionData](/vext/ref/client/class/planarreflectiondata)   |          |             |
+| dynamicEnvmap        | [DynamicEnvmapData](/vext/ref/client/class/dynamicenvmapdata)         |          |             |
+| characterLighting    | [CharacterLightingData](/vext/ref/client/class/characterlightingdata) |          |             |
+| motionBlur           | [MotionBlurData](/vext/ref/client/class/motionblurdata)               |          |             |

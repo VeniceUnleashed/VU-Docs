@@ -7,7 +7,7 @@ title: AimingSimulation
 
 | Constructor                                                                                                                  | Description |
 | ---------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| [AimingSimulation](/vext/ref/cls/clt/aimingsimulation)([AimingSimulation](/vext/ref/cls/clt/aimingsimulation) **ref**) |             |
+| [AimingSimulation](/vext/ref/client/class/aimingsimulation)([AimingSimulation](/vext/ref/client/class/aimingsimulation) **ref**) |             |
 
 ## Properties
 

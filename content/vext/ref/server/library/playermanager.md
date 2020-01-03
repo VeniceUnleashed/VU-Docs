@@ -7,12 +7,12 @@ title: PlayerManager
 
 | Type                                        | Name                                        | Parameters            |
 | ------------------------------------------- | ------------------------------------------- | --------------------- |
-| [Player\[](/vext/ref/server/class/player[])\] | [GetPlayers](#getplayers)                   |                       |
+| [Player](/vext/ref/server/class/player)\[\] | [GetPlayers](#getplayers)                   |                       |
 | [Player](/vext/ref/server/class/player)       | [GetPlayerByID](#getplayerbyid)             | int **id**            |
 | [Player](/vext/ref/server/class/player)       | [GetPlayerByOnlineID](#getplayerbyonlineid) | int **onlineId**      |
 | [Player](/vext/ref/server/class/player)       | [GetPlayerByGUID](#getplayerbyguid)         | string **guid**       |
 | [Player](/vext/ref/server/class/player)       | [GetPlayerByName](#getplayerbyname)         | string **name**       |
-| [Player\[](/vext/ref/server/class/player[])\] | [GetPlayersByName](#getplayersbyname)       | string **match**      |
+| [Player](/vext/ref/server/class/player)\[\] | [GetPlayersByName](#getplayersbyname)       | string **match**      |
 | int                                         | [GetPlayerCount](#getplayercount)           |                       |
 | void                                        | [SetSpectatorEnabled](#setspectatorenabled) | bool **enabled**      |
 | bool                                        | [IsSpectatorEnabled](#isspectatorenabled)   |                       |
@@ -21,7 +21,7 @@ title: PlayerManager
 
 ### GetPlayers
 
-> [Player\[](/vext/ref/server/class/player[])\] **GetPlayers**()
+> [Player](/vext/ref/server/class/player)\[\] **GetPlayers**()
 
 ### GetPlayerByID
 
@@ -65,7 +65,7 @@ title: PlayerManager
 
 ### GetPlayersByName
 
-> [Player\[](/vext/ref/server/class/player[])\] **GetPlayersByName**(string **match**)
+> [Player](/vext/ref/server/class/player)\[\] **GetPlayersByName**(string **match**)
 
 #### Parameters
 

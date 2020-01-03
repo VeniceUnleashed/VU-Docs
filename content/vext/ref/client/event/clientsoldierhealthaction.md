@@ -7,7 +7,7 @@ title: ClientSoldier:HealthAction
 
 | Type                                                        | Name    | Description |
 | ----------------------------------------------------------- | ------- | ----------- |
-| [SoldierEntity](/vext/ref/cls/clt/soldierentity)         | soldier |             |
+| [SoldierEntity](/vext/ref/client/class/soldierentity)         | soldier |             |
 | [HealthStateAction](/vext/ref/shared/class/healthstateaction) | action  |             |
 
 ## Usage Example

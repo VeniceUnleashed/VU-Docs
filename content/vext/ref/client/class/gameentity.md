@@ -11,8 +11,8 @@ title: GameEntity
 
 | Constructor                                                                                                | Description |
 | ---------------------------------------------------------------------------------------------------------- | ----------- |
-| [GameEntity](/vext/ref/cls/clt/gameentity)([Entity](/vext/ref/shared/class/entity) **ref**)               |             |
-| [GameEntity](/vext/ref/cls/clt/gameentity)([SpatialEntity](/vext/ref/shared/class/spatialentity) **ref**) |             |
+| [GameEntity](/vext/ref/client/class/gameentity)([Entity](/vext/ref/shared/class/entity) **ref**)               |             |
+| [GameEntity](/vext/ref/client/class/gameentity)([SpatialEntity](/vext/ref/shared/class/spatialentity) **ref**) |             |
 
 ## Static Members
 

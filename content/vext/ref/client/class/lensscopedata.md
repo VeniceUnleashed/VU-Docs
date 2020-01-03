@@ -29,10 +29,10 @@ title: LensScopeData
 
 | Type                                                | Name            | Parameters |
 | --------------------------------------------------- | --------------- | ---------- |
-| [LensScopeData](/vext/ref/cls/clt/lensscopedata) | [Clone](#clone) |            |
+| [LensScopeData](/vext/ref/client/class/lensscopedata) | [Clone](#clone) |            |
 
 ### Clone
 
-> [LensScopeData](/vext/ref/cls/clt/lensscopedata) **Clone**()
+> [LensScopeData](/vext/ref/client/class/lensscopedata) **Clone**()
 
 Creates a shallow-copy clone of the instance.

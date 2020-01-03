@@ -34,10 +34,10 @@ title: EnlightenData
 
 | Type                                                | Name            | Parameters |
 | --------------------------------------------------- | --------------- | ---------- |
-| [EnlightenData](/vext/ref/cls/clt/enlightendata) | [Clone](#clone) |            |
+| [EnlightenData](/vext/ref/client/class/enlightendata) | [Clone](#clone) |            |
 
 ### Clone
 
-> [EnlightenData](/vext/ref/cls/clt/enlightendata) **Clone**()
+> [EnlightenData](/vext/ref/client/class/enlightendata) **Clone**()
 
 Creates a shallow-copy clone of the instance.

@@ -25,10 +25,10 @@ title: VignetteData
 
 | Type                                              | Name            | Parameters |
 | ------------------------------------------------- | --------------- | ---------- |
-| [VignetteData](/vext/ref/cls/clt/vignettedata) | [Clone](#clone) |            |
+| [VignetteData](/vext/ref/client/class/vignettedata) | [Clone](#clone) |            |
 
 ### Clone
 
-> [VignetteData](/vext/ref/cls/clt/vignettedata) **Clone**()
+> [VignetteData](/vext/ref/client/class/vignettedata) **Clone**()
 
 Creates a shallow-copy clone of the instance.

@@ -7,7 +7,7 @@ title: VE:StateAdded
 
 | Type                                                                  | Name  | Description |
 | --------------------------------------------------------------------- | ----- | ----------- |
-| [VisualEnvironmentState](/vext/ref/cls/clt/visualenvironmentstate) | state |             |
+| [VisualEnvironmentState](/vext/ref/client/class/visualenvironmentstate) | state |             |
 
 ## Usage Example
 

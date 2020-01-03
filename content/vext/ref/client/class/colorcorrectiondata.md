@@ -27,10 +27,10 @@ title: ColorCorrectionData
 
 | Type                                                            | Name            | Parameters |
 | --------------------------------------------------------------- | --------------- | ---------- |
-| [ColorCorrectionData](/vext/ref/cls/clt/colorcorrectiondata) | [Clone](#clone) |            |
+| [ColorCorrectionData](/vext/ref/client/class/colorcorrectiondata) | [Clone](#clone) |            |
 
 ### Clone
 
-> [ColorCorrectionData](/vext/ref/cls/clt/colorcorrectiondata) **Clone**()
+> [ColorCorrectionData](/vext/ref/client/class/colorcorrectiondata) **Clone**()
 
 Creates a shallow-copy clone of the instance.

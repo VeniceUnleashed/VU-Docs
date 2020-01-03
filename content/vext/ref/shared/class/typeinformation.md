@@ -10,7 +10,7 @@ title: TypeInformation
 | name        | string                                                          |          |             |
 | super       | [TypeInformation](/vext/ref/shared/class/typeinformation)         |          |             |
 | elementType | [TypeInformation](/vext/ref/shared/class/typeinformation)         |          |             |
-| fields      | [FieldInformation\[](/vext/ref/shared/class/fieldinformation[])\] |          |             |
+| fields      | [FieldInformation](/vext/ref/shared/class/fieldinformation)\[\] |          |             |
 | array       | bool                                                            |          |             |
 | enum        | bool                                                            |          |             |
 

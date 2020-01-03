@@ -7,8 +7,8 @@ title: DamageInfo
 
 | Constructor                                                                                          | Description                                              |
 | ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| [DamageInfo](/vext/ref/cls/clt/damageinfo)()                                                      |                                                          |
-| [DamageInfo](/vext/ref/cls/clt/damageinfo)([DamageInfo](/vext/ref/cls/clt/damageinfo) **ref**) | Create a reference copy of an instance of the same type. |
+| [DamageInfo](/vext/ref/client/class/damageinfo)()                                                      |                                                          |
+| [DamageInfo](/vext/ref/client/class/damageinfo)([DamageInfo](/vext/ref/client/class/damageinfo) **ref**) | Create a reference copy of an instance of the same type. |
 
 ## Properties
 

@@ -62,10 +62,10 @@ title: SkyData
 
 | Type                                    | Name            | Parameters |
 | --------------------------------------- | --------------- | ---------- |
-| [SkyData](/vext/ref/cls/clt/skydata) | [Clone](#clone) |            |
+| [SkyData](/vext/ref/client/class/skydata) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SkyData](/vext/ref/cls/clt/skydata) **Clone**()
+> [SkyData](/vext/ref/client/class/skydata) **Clone**()
 
 Creates a shallow-copy clone of the instance.

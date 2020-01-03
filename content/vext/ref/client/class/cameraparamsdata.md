@@ -22,10 +22,10 @@ title: CameraParamsData
 
 | Type                                                      | Name            | Parameters |
 | --------------------------------------------------------- | --------------- | ---------- |
-| [CameraParamsData](/vext/ref/cls/clt/cameraparamsdata) | [Clone](#clone) |            |
+| [CameraParamsData](/vext/ref/client/class/cameraparamsdata) | [Clone](#clone) |            |
 
 ### Clone
 
-> [CameraParamsData](/vext/ref/cls/clt/cameraparamsdata) **Clone**()
+> [CameraParamsData](/vext/ref/client/class/cameraparamsdata) **Clone**()
 
 Creates a shallow-copy clone of the instance.

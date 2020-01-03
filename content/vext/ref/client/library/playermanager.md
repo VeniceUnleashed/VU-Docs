@@ -7,20 +7,20 @@ title: PlayerManager (Client Manager)
 
 | Type                                        | Name                                  | Parameters       |
 | ------------------------------------------- | ------------------------------------- | ---------------- |
-| [Player\[](/vext/ref/cls/clt/player[])\] | [GetPlayers](#getplayers)             |                  |
-| [Player](/vext/ref/cls/clt/player)       | [GetPlayerByID](#getplayerbyid)       | int **id**       |
-| [Player](/vext/ref/cls/clt/player)       | [GetPlayerByName](#getplayerbyname)   | string **name**  |
-| [Player\[](/vext/ref/cls/clt/player[])\] | [GetPlayersByName](#getplayersbyname) | string **match** |
+| [Player](/vext/ref/client/class/player)\[\] | [GetPlayers](#getplayers)             |                  |
+| [Player](/vext/ref/client/class/player)       | [GetPlayerByID](#getplayerbyid)       | int **id**       |
+| [Player](/vext/ref/client/class/player)       | [GetPlayerByName](#getplayerbyname)   | string **name**  |
+| [Player](/vext/ref/client/class/player)\[\] | [GetPlayersByName](#getplayersbyname) | string **match** |
 | int                                         | [GetPlayerCount](#getplayercount)     |                  |
-| [Player](/vext/ref/cls/clt/player)       | [GetLocalPlayer](#getlocalplayer)     |                  |
+| [Player](/vext/ref/client/class/player)       | [GetLocalPlayer](#getlocalplayer)     |                  |
 
 ### GetPlayers
 
-> [Player\[](/vext/ref/cls/clt/player[])\] **GetPlayers**()
+> [Player](/vext/ref/client/class/player)\[\] **GetPlayers**()
 
 ### GetPlayerByID
 
-> [Player](/vext/ref/cls/clt/player) **GetPlayerByID**(int **id**)
+> [Player](/vext/ref/client/class/player) **GetPlayerByID**(int **id**)
 
 #### Parameters
 
@@ -30,7 +30,7 @@ title: PlayerManager (Client Manager)
 
 ### GetPlayerByName
 
-> [Player](/vext/ref/cls/clt/player) **GetPlayerByName**(string **name**)
+> [Player](/vext/ref/client/class/player) **GetPlayerByName**(string **name**)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ title: PlayerManager (Client Manager)
 
 ### GetPlayersByName
 
-> [Player\[](/vext/ref/cls/clt/player[])\] **GetPlayersByName**(string **match**)
+> [Player](/vext/ref/client/class/player)\[\] **GetPlayersByName**(string **match**)
 
 #### Parameters
 
@@ -54,4 +54,4 @@ title: PlayerManager (Client Manager)
 
 ### GetLocalPlayer
 
-> [Player](/vext/ref/cls/clt/player) **GetLocalPlayer**()
+> [Player](/vext/ref/client/class/player) **GetLocalPlayer**()

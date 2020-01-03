@@ -31,10 +31,10 @@ title: DofData
 
 | Type                                    | Name            | Parameters |
 | --------------------------------------- | --------------- | ---------- |
-| [DofData](/vext/ref/cls/clt/dofdata) | [Clone](#clone) |            |
+| [DofData](/vext/ref/client/class/dofdata) | [Clone](#clone) |            |
 
 ### Clone
 
-> [DofData](/vext/ref/cls/clt/dofdata) **Clone**()
+> [DofData](/vext/ref/client/class/dofdata) **Clone**()
 
 Creates a shallow-copy clone of the instance.

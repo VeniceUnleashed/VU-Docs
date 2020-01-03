@@ -29,10 +29,10 @@ title: CharacterLightingData
 
 | Type                                                                | Name            | Parameters |
 | ------------------------------------------------------------------- | --------------- | ---------- |
-| [CharacterLightingData](/vext/ref/cls/clt/characterlightingdata) | [Clone](#clone) |            |
+| [CharacterLightingData](/vext/ref/client/class/characterlightingdata) | [Clone](#clone) |            |
 
 ### Clone
 
-> [CharacterLightingData](/vext/ref/cls/clt/characterlightingdata) **Clone**()
+> [CharacterLightingData](/vext/ref/client/class/characterlightingdata) **Clone**()
 
 Creates a shallow-copy clone of the instance.

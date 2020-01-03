@@ -7,8 +7,8 @@ title: ConceptCache
 
 | Constructor                                                                                                  | Description                                              |
 | ------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------- |
-| [ConceptCache](/vext/ref/cls/clt/conceptcache)()                                                          |                                                          |
-| [ConceptCache](/vext/ref/cls/clt/conceptcache)([ConceptCache](/vext/ref/cls/clt/conceptcache) **ref**) | Create a reference copy of an instance of the same type. |
+| [ConceptCache](/vext/ref/client/class/conceptcache)()                                                          |                                                          |
+| [ConceptCache](/vext/ref/client/class/conceptcache)([ConceptCache](/vext/ref/client/class/conceptcache) **ref**) | Create a reference copy of an instance of the same type. |
 
 ## Operators
 

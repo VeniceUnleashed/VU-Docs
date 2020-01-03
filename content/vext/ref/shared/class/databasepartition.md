@@ -15,7 +15,7 @@ A Frostbite Database Partition. Partitions represent game-data bound structures 
 
 | Name            | Type                                                      | Writable | Description                                                                                     |
 | --------------- | --------------------------------------------------------- | -------- | ----------------------------------------------------------------------------------------------- |
-| instances       | [DataContainer\[](/vext/ref/shared/class/datacontainer[])\] | N        | A read-only array holding the instances of this partition.                                      |
+| instances       | [DataContainer](/vext/ref/shared/class/datacontainer)\[\] | N        | A read-only array holding the instances of this partition.                                      |
 | guid            | [Guid](/vext/ref/shared/class/guid)                         | N        | The GUID of this partition.                                                                     |
 | primaryInstance | [DataContainer](/vext/ref/shared/class/datacontainer)       | N        | The primary instance of this partition.                                                         |
 | name            | string                                                    | N        | The name of this partition. Ususally corresponds to the relative filename of the original file. |

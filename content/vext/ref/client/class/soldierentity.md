@@ -3,7 +3,7 @@ title: SoldierEntity
 ---
 ### Base Classes
 
-[PhysicsEntity](/vext/ref/cls/clt/physicsentity)
+[PhysicsEntity](/vext/ref/client/class/physicsentity)
 
 ## Description
 
@@ -11,7 +11,7 @@ title: SoldierEntity
 
 | Constructor                                                                                        | Description |
 | -------------------------------------------------------------------------------------------------- | ----------- |
-| [SoldierEntity](/vext/ref/cls/clt/soldierentity)([Entity](/vext/ref/shared/class/entity) **ref**) |             |
+| [SoldierEntity](/vext/ref/client/class/soldierentity)([Entity](/vext/ref/shared/class/entity) **ref**) |             |
 
 ## Static Members
 
@@ -26,7 +26,7 @@ title: SoldierEntity
 | worldTransform       | [LinearTransform](/vext/ref/shared/class/lineartransform)                 |          |             |
 | alive                | bool                                                                    |          |             |
 | deathTimer           | float                                                                   |          |             |
-| player               | [Player](/vext/ref/cls/clt/player)                                   |          |             |
+| player               | [Player](/vext/ref/client/class/player)                                   |          |             |
 | health               | float                                                                   |          |             |
 | authorativeYaw       | float                                                                   |          |             |
 | authorativePitch     | float                                                                   |          |             |
@@ -34,8 +34,8 @@ title: SoldierEntity
 | forceInvisible       | bool                                                                    |          |             |
 | sprintRecoveryTimer  | float                                                                   |          |             |
 | wasSprinting         | bool                                                                    |          |             |
-| weaponsComponent     | [SoldierWeaponsComponent](/vext/ref/cls/clt/soldierweaponscomponent) |          |             |
-| ragdollComponent     | [RagdollComponent](/vext/ref/cls/clt/ragdollcomponent)               |          |             |
+| weaponsComponent     | [SoldierWeaponsComponent](/vext/ref/client/class/soldierweaponscomponent) |          |             |
+| ragdollComponent     | [RagdollComponent](/vext/ref/client/class/ragdollcomponent)               |          |             |
 | isManDown            | bool                                                                    |          |             |
 | isAlive              | bool                                                                    |          |             |
 | isDead               | bool                                                                    |          |             |
@@ -48,7 +48,7 @@ title: SoldierEntity
 
 | Operator | Parameters                                                    |
 | -------- | ------------------------------------------------------------- |
-| \==      | [SoldierEntity](/vext/ref/cls/clt/soldierentity) **other** |
+| \==      | [SoldierEntity](/vext/ref/client/class/soldierentity) **other** |
 
 ## Methods
 

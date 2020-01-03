@@ -7,7 +7,7 @@ title: EffectParams
 
 | Constructor                                         | Description |
 | --------------------------------------------------- | ----------- |
-| [EffectParams](/vext/ref/cls/clt/effectparams)() |             |
+| [EffectParams](/vext/ref/client/class/effectparams)() |             |
 
 ## Properties
 

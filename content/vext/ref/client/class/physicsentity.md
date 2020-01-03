@@ -3,7 +3,7 @@ title: PhysicsEntity
 ---
 ### Base Classes
 
-[GameEntity](/vext/ref/cls/clt/gameentity)
+[GameEntity](/vext/ref/client/class/gameentity)
 
 ## Description
 
@@ -11,9 +11,9 @@ title: PhysicsEntity
 
 | Constructor                                                                                                      | Description |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
-| [PhysicsEntity](/vext/ref/cls/clt/physicsentity)([Entity](/vext/ref/shared/class/entity) **ref**)               |             |
-| [PhysicsEntity](/vext/ref/cls/clt/physicsentity)([SpatialEntity](/vext/ref/shared/class/spatialentity) **ref**) |             |
-| [PhysicsEntity](/vext/ref/cls/clt/physicsentity)([GameEntity](/vext/ref/cls/clt/gameentity) **ref**)       |             |
+| [PhysicsEntity](/vext/ref/client/class/physicsentity)([Entity](/vext/ref/shared/class/entity) **ref**)               |             |
+| [PhysicsEntity](/vext/ref/client/class/physicsentity)([SpatialEntity](/vext/ref/shared/class/spatialentity) **ref**) |             |
+| [PhysicsEntity](/vext/ref/client/class/physicsentity)([GameEntity](/vext/ref/client/class/gameentity) **ref**)       |             |
 
 ## Static Members
 

@@ -7,15 +7,15 @@ title: Console
 
 | Type                                                  | Name                         | Parameters                                                                     |
 | ----------------------------------------------------- | ---------------------------- | ------------------------------------------------------------------------------ |
-| [ConsoleCommand](/vext/ref/cls/clt/consolecommand) | [Register](#register)        | string **name**, string **description**, function **callback**                 |
-| [ConsoleCommand](/vext/ref/cls/clt/consolecommand) | [Register](#register)        | string **name**, string **description**, object **obj**, function **callback** |
-| bool                                                  | [Deregister](#deregister)    | [ConsoleCommand](/vext/ref/cls/clt/consolecommand) **command**              |
+| [ConsoleCommand](/vext/ref/client/class/consolecommand) | [Register](#register)        | string **name**, string **description**, function **callback**                 |
+| [ConsoleCommand](/vext/ref/client/class/consolecommand) | [Register](#register)        | string **name**, string **description**, object **obj**, function **callback** |
+| bool                                                  | [Deregister](#deregister)    | [ConsoleCommand](/vext/ref/client/class/consolecommand) **command**              |
 | bool                                                  | [Deregister](#deregister)    | string **name**                                                                |
 | void                                                  | [DeregisterAll](#deregister) |                                                                                |
 
 ### Register
 
-> [ConsoleCommand](/vext/ref/cls/clt/consolecommand) **Register**(string **name**, string **description**, function **callback**)
+> [ConsoleCommand](/vext/ref/client/class/consolecommand) **Register**(string **name**, string **description**, function **callback**)
 
 The `callback` function has a single table argument, containing all the arguments passed to the console command by the user when executing it and can optionally return a string, which will be printed to the console output.
 
@@ -43,7 +43,7 @@ Then, the command will be executable via the in-game console as `modname.SomeCom
 
 ### Register
 
-> [ConsoleCommand](/vext/ref/cls/clt/consolecommand) **Register**(string **name**, string **description**, object **obj**, function **callback**)
+> [ConsoleCommand](/vext/ref/client/class/consolecommand) **Register**(string **name**, string **description**, object **obj**, function **callback**)
 
 The `callback` function has a single table argument, containing all the arguments passed to the console command by the user when executing it and can optionally return a string, which will be printed to the console output.
 
@@ -60,13 +60,13 @@ All commands will be automatically deregistered when the player leaves the serve
 
 ### Deregister
 
-> bool **Deregister**([ConsoleCommand](/vext/ref/cls/clt/consolecommand) **command**)
+> bool **Deregister**([ConsoleCommand](/vext/ref/client/class/consolecommand) **command**)
 
 #### Parameters
 
 | Name    | Type                                                  | Description |
 | ------- | ----------------------------------------------------- | ----------- |
-| command | [ConsoleCommand](/vext/ref/cls/clt/consolecommand) |             |
+| command | [ConsoleCommand](/vext/ref/client/class/consolecommand) |             |
 
 ### Deregister
 

@@ -23,10 +23,10 @@ title: MotionBlurData
 
 | Type                                                  | Name            | Parameters |
 | ----------------------------------------------------- | --------------- | ---------- |
-| [MotionBlurData](/vext/ref/cls/clt/motionblurdata) | [Clone](#clone) |            |
+| [MotionBlurData](/vext/ref/client/class/motionblurdata) | [Clone](#clone) |            |
 
 ### Clone
 
-> [MotionBlurData](/vext/ref/cls/clt/motionblurdata) **Clone**()
+> [MotionBlurData](/vext/ref/client/class/motionblurdata) **Clone**()
 
 Creates a shallow-copy clone of the instance.

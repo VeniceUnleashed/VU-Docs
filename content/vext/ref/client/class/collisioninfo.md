@@ -7,8 +7,8 @@ title: CollisionInfo
 
 | Constructor                                                                                                      | Description                                              |
 | ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| [CollisionInfo](/vext/ref/cls/clt/collisioninfo)()                                                            |                                                          |
-| [CollisionInfo](/vext/ref/cls/clt/collisioninfo)([CollisionInfo](/vext/ref/cls/clt/collisioninfo) **ref**) | Create a reference copy of an instance of the same type. |
+| [CollisionInfo](/vext/ref/client/class/collisioninfo)()                                                            |                                                          |
+| [CollisionInfo](/vext/ref/client/class/collisioninfo)([CollisionInfo](/vext/ref/client/class/collisioninfo) **ref**) | Create a reference copy of an instance of the same type. |
 
 ## Properties
 

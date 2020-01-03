@@ -39,10 +39,10 @@ title: FogData
 
 | Type                                    | Name            | Parameters |
 | --------------------------------------- | --------------- | ---------- |
-| [FogData](/vext/ref/cls/clt/fogdata) | [Clone](#clone) |            |
+| [FogData](/vext/ref/client/class/fogdata) | [Clone](#clone) |            |
 
 ### Clone
 
-> [FogData](/vext/ref/cls/clt/fogdata) **Clone**()
+> [FogData](/vext/ref/client/class/fogdata) **Clone**()
 
 Creates a shallow-copy clone of the instance.

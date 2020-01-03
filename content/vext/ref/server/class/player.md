@@ -40,8 +40,8 @@ title: Player
 | void                                                | [Kick](#kick)                             | string **reason** = ""                                                                                                                                                                                       |
 | void                                                | [Ban](#ban)                               |                                                                                                                                                                                                              |
 | bool                                                | [Spawn](#spawn)                           | [Entity](/vext/ref/shared/class/entity) **spawnPoint**, bool **checkSpawnArea**                                                                                                                                |
-| void                                                | [SelectWeapon](#selectweapon)             | [WeaponSlot](/vext/ref/fb/weaponslot) **slot**, [DataContainer](/vext/ref/shared/class/datacontainer) **weaponUnlockAsset**, [DataContainer\[](/vext/ref/shared/class/datacontainer[])\] **unlockAssets** |
-| void                                                | [SelectUnlockAssets](#selectunlockassets) | [DataContainer](/vext/ref/shared/class/datacontainer) **characterCustomizationAsset**, [DataContainer\[](/vext/ref/shared/class/datacontainer[])\] **visualUnlockAssets**                                        |
+| void                                                | [SelectWeapon](#selectweapon)             | [WeaponSlot](/vext/ref/fb/weaponslot) **slot**, [DataContainer](/vext/ref/shared/class/datacontainer) **weaponUnlockAsset**, [DataContainer](/vext/ref/shared/class/datacontainer)\[\] **unlockAssets** |
+| void                                                | [SelectUnlockAssets](#selectunlockassets) | [DataContainer](/vext/ref/shared/class/datacontainer) **characterCustomizationAsset**, [DataContainer](/vext/ref/shared/class/datacontainer)\[\] **visualUnlockAssets**                                        |
 | [SoldierEntity](/vext/ref/server/class/soldierentity) | [CreateSoldier](#createsoldier)           | [DataContainer](/vext/ref/shared/class/datacontainer) **blueprint**, [LinearTransform](/vext/ref/shared/class/lineartransform) **transform**                                                                     |
 | void                                                | [SpawnSoldierAt](#spawnsoldierat)         | [SoldierEntity](/vext/ref/server/class/soldierentity) **entity**, [LinearTransform](/vext/ref/shared/class/lineartransform) **transform**, [CharacterPoseType](/vext/ref/fb/characterposetype) **pose**   |
 | void                                                | [SetSquadLeader](#setsquadleader)         | bool **leader**, bool **squadPrivate**                                                                                                                                                                       |
@@ -75,7 +75,7 @@ title: Player
 
 ### SelectWeapon
 
-> void **SelectWeapon**([WeaponSlot](/vext/ref/fb/weaponslot) **slot**, [DataContainer](/vext/ref/shared/class/datacontainer) **weaponUnlockAsset**, [DataContainer\[](/vext/ref/shared/class/datacontainer[])\] **unlockAssets**)
+> void **SelectWeapon**([WeaponSlot](/vext/ref/fb/weaponslot) **slot**, [DataContainer](/vext/ref/shared/class/datacontainer) **weaponUnlockAsset**, [DataContainer](/vext/ref/shared/class/datacontainer)\[\] **unlockAssets**)
 
 #### Parameters
 
@@ -83,18 +83,18 @@ title: Player
 | ----------------- | --------------------------------------------------------- | ----------- |
 | slot              | [WeaponSlot](/vext/ref/fb/weaponslot)              |             |
 | weaponUnlockAsset | [DataContainer](/vext/ref/shared/class/datacontainer)       |             |
-| unlockAssets      | [DataContainer\[](/vext/ref/shared/class/datacontainer[])\] |             |
+| unlockAssets      | [DataContainer](/vext/ref/shared/class/datacontainer)\[\] |             |
 
 ### SelectUnlockAssets
 
-> void **SelectUnlockAssets**([DataContainer](/vext/ref/shared/class/datacontainer) **characterCustomizationAsset**, [DataContainer\[](/vext/ref/shared/class/datacontainer[])\] **visualUnlockAssets**)
+> void **SelectUnlockAssets**([DataContainer](/vext/ref/shared/class/datacontainer) **characterCustomizationAsset**, [DataContainer](/vext/ref/shared/class/datacontainer)\[\] **visualUnlockAssets**)
 
 #### Parameters
 
 | Name                        | Type                                                      | Description |
 | --------------------------- | --------------------------------------------------------- | ----------- |
 | characterCustomizationAsset | [DataContainer](/vext/ref/shared/class/datacontainer)       |             |
-| visualUnlockAssets          | [DataContainer\[](/vext/ref/shared/class/datacontainer[])\] |             |
+| visualUnlockAssets          | [DataContainer](/vext/ref/shared/class/datacontainer)\[\] |             |
 
 ### CreateSoldier
 

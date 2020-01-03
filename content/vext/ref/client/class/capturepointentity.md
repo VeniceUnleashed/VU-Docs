@@ -11,7 +11,7 @@ title: CapturePointEntity
 
 | Constructor                                                                                                  | Description |
 | ------------------------------------------------------------------------------------------------------------ | ----------- |
-| [CapturePointEntity](/vext/ref/cls/clt/capturepointentity)([Entity](/vext/ref/shared/class/entity) **ref**) |             |
+| [CapturePointEntity](/vext/ref/client/class/capturepointentity)([Entity](/vext/ref/shared/class/entity) **ref**) |             |
 
 ## Properties
 

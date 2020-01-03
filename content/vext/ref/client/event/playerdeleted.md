@@ -7,7 +7,7 @@ title: Player:Deleted
 
 | Type                                  | Name   | Description |
 | ------------------------------------- | ------ | ----------- |
-| [Player](/vext/ref/cls/clt/player) | player |             |
+| [Player](/vext/ref/client/class/player) | player |             |
 
 ## Usage Example
 

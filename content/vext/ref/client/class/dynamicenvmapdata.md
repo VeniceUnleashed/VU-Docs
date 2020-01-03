@@ -23,10 +23,10 @@ title: DynamicEnvmapData
 
 | Type                                                        | Name            | Parameters |
 | ----------------------------------------------------------- | --------------- | ---------- |
-| [DynamicEnvmapData](/vext/ref/cls/clt/dynamicenvmapdata) | [Clone](#clone) |            |
+| [DynamicEnvmapData](/vext/ref/client/class/dynamicenvmapdata) | [Clone](#clone) |            |
 
 ### Clone
 
-> [DynamicEnvmapData](/vext/ref/cls/clt/dynamicenvmapdata) **Clone**()
+> [DynamicEnvmapData](/vext/ref/client/class/dynamicenvmapdata) **Clone**()
 
 Creates a shallow-copy clone of the instance.

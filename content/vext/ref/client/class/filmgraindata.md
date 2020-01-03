@@ -26,10 +26,10 @@ title: FilmGrainData
 
 | Type                                                | Name            | Parameters |
 | --------------------------------------------------- | --------------- | ---------- |
-| [FilmGrainData](/vext/ref/cls/clt/filmgraindata) | [Clone](#clone) |            |
+| [FilmGrainData](/vext/ref/client/class/filmgraindata) | [Clone](#clone) |            |
 
 ### Clone
 
-> [FilmGrainData](/vext/ref/cls/clt/filmgraindata) **Clone**()
+> [FilmGrainData](/vext/ref/client/class/filmgraindata) **Clone**()
 
 Creates a shallow-copy clone of the instance.

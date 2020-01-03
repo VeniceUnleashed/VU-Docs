@@ -40,10 +40,10 @@ title: OutdoorLightData
 
 | Type                                                      | Name            | Parameters |
 | --------------------------------------------------------- | --------------- | ---------- |
-| [OutdoorLightData](/vext/ref/cls/clt/outdoorlightdata) | [Clone](#clone) |            |
+| [OutdoorLightData](/vext/ref/client/class/outdoorlightdata) | [Clone](#clone) |            |
 
 ### Clone
 
-> [OutdoorLightData](/vext/ref/cls/clt/outdoorlightdata) **Clone**()
+> [OutdoorLightData](/vext/ref/client/class/outdoorlightdata) **Clone**()
 
 Creates a shallow-copy clone of the instance.

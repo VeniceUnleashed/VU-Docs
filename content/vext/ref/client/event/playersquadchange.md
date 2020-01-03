@@ -7,7 +7,7 @@ title: Player:SquadChange
 
 | Type                                   | Name   | Description |
 | -------------------------------------- | ------ | ----------- |
-| [Player](/vext/ref/cls/clt/player)  | player |             |
+| [Player](/vext/ref/client/class/player)  | player |             |
 | [SquadId](/vext/ref/fb/squadid) | squad  |             |
 
 ## Usage Example

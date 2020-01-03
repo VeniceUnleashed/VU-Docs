@@ -34,10 +34,10 @@ title: DamageEffectData
 
 | Type                                                      | Name            | Parameters |
 | --------------------------------------------------------- | --------------- | ---------- |
-| [DamageEffectData](/vext/ref/cls/clt/damageeffectdata) | [Clone](#clone) |            |
+| [DamageEffectData](/vext/ref/client/class/damageeffectdata) | [Clone](#clone) |            |
 
 ### Clone
 
-> [DamageEffectData](/vext/ref/cls/clt/damageeffectdata) **Clone**()
+> [DamageEffectData](/vext/ref/client/class/damageeffectdata) **Clone**()
 
 Creates a shallow-copy clone of the instance.
