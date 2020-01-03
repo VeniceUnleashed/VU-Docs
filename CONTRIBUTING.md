@@ -8,9 +8,9 @@ Thank you for your interest in contributing to the VU documentation. Even though
 
 The easiest way to contribute is by reporting issues with the current documentation. Those reports can then be picked up by other contributors and can be used to improve the overall quality of the documentation. Keep in mind that this repository is only for tracking issues with the documentation, and not for anything else like VU itself.
 
-Before reporting an issue, please make sure that it has not already been reported by another contributor by searching through the [open issues](/issues) list and that it is relevant to the latest version of the documentation that's currently available at [https://docs.veniceunleashed.net](https://docs.veniceunleashed.net).
+Before reporting an issue, please make sure that it has not already been reported by another contributor by searching through the [open issues]([/issues](https://github.com/EmulatorNexus/VU-Docs/issues)) list and that it is relevant to the latest version of the documentation that's currently available at [https://docs.veniceunleashed.net](https://docs.veniceunleashed.net).
 
-Once you are certain that your issue is unique and relevant you can report it by [creating a new issue](/issues/new) and describing it in detail. In order for other contributors to be able to efficiently process your issue please make sure to use a **clear and descriptive title**, mention the **exact page (or pages) where the issue is found**, and describe **where in that page the issue is** and **what you were expecting the correct content to be**.
+Once you are certain that your issue is unique and relevant you can report it by [creating a new issue](https://github.com/EmulatorNexus/VU-Docs/issues/new) and describing it in detail. In order for other contributors to be able to efficiently process your issue please make sure to use a **clear and descriptive title**, mention the **exact page (or pages) where the issue is found**, and describe **where in that page the issue is** and **what you were expecting the correct content to be**.
 
 After you've submitted your issue, be patient. A contributor will look at it when their time allows it and process it accordingly. Make sure to keep an eye on it, as they might have further questions for you or require clarification.
 
