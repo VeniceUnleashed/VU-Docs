@@ -1,5 +1,5 @@
 ---
-title: Player:Joining (Server Event)
+title: Player:Joining
 ---
 ## Description
 

@@ -1,5 +1,5 @@
 ---
-title: VE:StateRemoved (Client Event)
+title: VE:StateRemoved
 ---
 ## Description
 

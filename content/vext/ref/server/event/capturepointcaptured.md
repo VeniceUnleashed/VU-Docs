@@ -1,5 +1,5 @@
 ---
-title: CapturePoint:Captured (Server Event)
+title: CapturePoint:Captured
 ---
 ## Description
 

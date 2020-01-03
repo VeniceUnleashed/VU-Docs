@@ -1,5 +1,5 @@
 ---
-title: UpdateManager:Update (Shared Event)
+title: UpdateManager:Update
 ---
 ## Description
 

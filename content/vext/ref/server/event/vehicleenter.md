@@ -1,5 +1,5 @@
 ---
-title: Vehicle:Enter (Server Event)
+title: Vehicle:Enter
 ---
 ## Description
 

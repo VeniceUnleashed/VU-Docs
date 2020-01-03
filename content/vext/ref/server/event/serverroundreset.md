@@ -1,5 +1,5 @@
 ---
-title: Server:RoundReset (Server Event)
+title: Server:RoundReset
 ---
 ## Description
 

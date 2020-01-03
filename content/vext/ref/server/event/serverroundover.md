@@ -1,5 +1,5 @@
 ---
-title: Server:RoundOver (Server Event)
+title: Server:RoundOver
 ---
 ## Description
 

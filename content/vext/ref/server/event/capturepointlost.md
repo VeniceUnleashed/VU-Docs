@@ -1,5 +1,5 @@
 ---
-title: CapturePoint:Lost (Server Event)
+title: CapturePoint:Lost
 ---
 ## Description
 

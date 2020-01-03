@@ -1,5 +1,5 @@
 ---
-title: Player:ManDownRevived (Server Event)
+title: Player:ManDownRevived
 ---
 ## Description
 

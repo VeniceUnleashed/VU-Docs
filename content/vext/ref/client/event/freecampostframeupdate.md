@@ -1,5 +1,5 @@
 ---
-title: FreeCam:PostFrameUpdate (Client Event)
+title: FreeCam:PostFrameUpdate
 ---
 ## Description
 

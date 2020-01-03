@@ -1,5 +1,5 @@
 ---
-title: Player:Left (Server Event)
+title: Player:Left
 ---
 ## Description
 

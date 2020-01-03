@@ -1,5 +1,5 @@
 ---
-title: Player:SpawnAtVehicle (Server Event)
+title: Player:SpawnAtVehicle
 ---
 ## Description
 

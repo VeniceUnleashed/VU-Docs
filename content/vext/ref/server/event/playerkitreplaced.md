@@ -1,5 +1,5 @@
 ---
-title: Player:KitReplaced (Server Event)
+title: Player:KitReplaced
 ---
 ## Description
 

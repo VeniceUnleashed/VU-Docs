@@ -1,5 +1,5 @@
 ---
-title: Player:ChangingWeapon (Server Event)
+title: Player:ChangingWeapon
 ---
 ## Description
 

@@ -1,5 +1,5 @@
 ---
-title: Player:Destroyed (Server Event)
+title: Player:Destroyed
 ---
 ## Description
 

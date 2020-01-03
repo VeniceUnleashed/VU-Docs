@@ -1,5 +1,5 @@
 ---
-title: Level:LoadResources (Shared Event)
+title: Level:LoadResources
 ---
 ## Description
 

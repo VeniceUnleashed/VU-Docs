@@ -1,5 +1,5 @@
 ---
-title: Client:UpdateInput (Client Event)
+title: Client:UpdateInput
 ---
 ## Description
 

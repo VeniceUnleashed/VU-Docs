@@ -1,5 +1,5 @@
 ---
-title: Vehicle:SpawnDone (Server Event)
+title: Vehicle:SpawnDone
 ---
 ## Description
 

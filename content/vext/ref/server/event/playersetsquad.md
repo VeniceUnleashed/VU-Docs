@@ -1,5 +1,5 @@
 ---
-title: Player:SetSquad (Server Event)
+title: Player:SetSquad
 ---
 ## Description
 

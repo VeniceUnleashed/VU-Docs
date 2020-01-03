@@ -1,5 +1,5 @@
 ---
-title: Player:SetSquadLeader (Client Event)
+title: Player:SetSquadLeader
 ---
 ## Description
 

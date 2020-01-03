@@ -1,5 +1,5 @@
 ---
-title: HealthStateAction (Shared Enum)
+title: HealthStateAction
 ---
 ## Description
 

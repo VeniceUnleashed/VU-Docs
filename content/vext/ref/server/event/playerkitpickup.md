@@ -1,5 +1,5 @@
 ---
-title: Player:KitPickup (Server Event)
+title: Player:KitPickup
 ---
 ## Description
 

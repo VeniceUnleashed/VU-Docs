@@ -1,5 +1,5 @@
 ---
-title: Partition:Loaded (Shared Event)
+title: Partition:Loaded
 ---
 ## Description
 

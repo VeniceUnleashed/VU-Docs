@@ -1,5 +1,5 @@
 ---
-title: Client:PostFrameUpdate (Client Event)
+title: Client:PostFrameUpdate
 ---
 ## Description
 

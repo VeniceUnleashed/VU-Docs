@@ -1,5 +1,5 @@
 ---
-title: Vehicle:Destroyed (Server Event)
+title: Vehicle:Destroyed
 ---
 ## Description
 

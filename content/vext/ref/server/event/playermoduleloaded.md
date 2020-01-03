@@ -1,5 +1,5 @@
 ---
-title: Player:ModuleLoaded (Server Event)
+title: Player:ModuleLoaded
 ---
 ## Description
 

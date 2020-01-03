@@ -1,5 +1,5 @@
 ---
-title: Client:LevelFinalized (Client Event)
+title: Client:LevelFinalized
 ---
 ## Description
 

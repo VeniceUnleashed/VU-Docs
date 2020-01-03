@@ -1,5 +1,5 @@
 ---
-title: Server:LevelLoaded (Server Event)
+title: Server:LevelLoaded
 ---
 ## Description
 

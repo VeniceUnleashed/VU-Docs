@@ -1,5 +1,5 @@
 ---
-title: Client:LevelLoaded (Client Event)
+title: Client:LevelLoaded
 ---
 ## Description
 

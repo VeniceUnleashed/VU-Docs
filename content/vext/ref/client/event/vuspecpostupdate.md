@@ -1,5 +1,5 @@
 ---
-title: VU:Spec:PostUpdate (Client Event)
+title: VU:Spec:PostUpdate
 ---
 ## Description
 

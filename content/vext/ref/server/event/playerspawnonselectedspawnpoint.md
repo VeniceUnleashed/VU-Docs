@@ -1,5 +1,5 @@
 ---
-title: Player:SpawnOnSelectedSpawnPoint (Server Event)
+title: Player:SpawnOnSelectedSpawnPoint
 ---
 ## Description
 

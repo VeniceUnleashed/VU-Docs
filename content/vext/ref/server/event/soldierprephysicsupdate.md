@@ -1,5 +1,5 @@
 ---
-title: Soldier:PrePhysicsUpdate (Server Event)
+title: Soldier:PrePhysicsUpdate
 ---
 ## Description
 

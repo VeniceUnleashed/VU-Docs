@@ -1,5 +1,5 @@
 ---
-title: Player:TeamChange (Server Event)
+title: Player:TeamChange
 ---
 ## Description
 

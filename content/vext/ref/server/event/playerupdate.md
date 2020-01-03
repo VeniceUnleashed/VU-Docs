@@ -1,5 +1,5 @@
 ---
-title: Player:Update (Server Event)
+title: Player:Update
 ---
 ## Description
 

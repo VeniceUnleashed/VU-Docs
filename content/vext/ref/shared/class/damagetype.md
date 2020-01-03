@@ -1,5 +1,5 @@
 ---
-title: DamageType (Shared Enum)
+title: DamageType
 ---
 ## Description
 

@@ -1,5 +1,5 @@
 ---
-title: NetSocketFamily (Shared Enum)
+title: NetSocketFamily
 ---
 ## Description
 

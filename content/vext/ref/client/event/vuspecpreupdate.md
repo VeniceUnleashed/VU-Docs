@@ -1,5 +1,5 @@
 ---
-title: VU:Spec:PreUpdate (Client Event)
+title: VU:Spec:PreUpdate
 ---
 ## Description
 

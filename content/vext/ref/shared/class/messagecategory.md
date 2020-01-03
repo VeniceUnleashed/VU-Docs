@@ -1,5 +1,5 @@
 ---
-title: MessageCategory (Shared Enum)
+title: MessageCategory
 ---
 ## Description
 

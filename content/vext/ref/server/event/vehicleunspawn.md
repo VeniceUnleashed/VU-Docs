@@ -1,5 +1,5 @@
 ---
-title: Vehicle:Unspawn (Server Event)
+title: Vehicle:Unspawn
 ---
 ## Description
 

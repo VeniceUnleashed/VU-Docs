@@ -1,5 +1,5 @@
 ---
-title: Player:Killed (Server Event)
+title: Player:Killed
 ---
 ## Description
 

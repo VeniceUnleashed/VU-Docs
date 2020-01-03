@@ -1,5 +1,5 @@
 ---
-title: VE:StateAdded (Client Event)
+title: VE:StateAdded
 ---
 ## Description
 

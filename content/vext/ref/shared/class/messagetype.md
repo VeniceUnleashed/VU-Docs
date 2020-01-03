@@ -1,5 +1,5 @@
 ---
-title: MessageType (Shared Enum)
+title: MessageType
 ---
 ## Description
 

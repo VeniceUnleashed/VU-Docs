@@ -1,5 +1,5 @@
 ---
-title: ServerSoldier:HealthAction (Server Event)
+title: ServerSoldier:HealthAction
 ---
 ## Description
 

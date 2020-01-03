@@ -1,5 +1,5 @@
 ---
-title: Player:EnteredCapturePoint (Server Event)
+title: Player:EnteredCapturePoint
 ---
 ## Description
 

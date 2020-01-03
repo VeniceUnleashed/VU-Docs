@@ -1,5 +1,5 @@
 ---
-title: Vehicle:Exit (Server Event)
+title: Vehicle:Exit
 ---
 ## Description
 

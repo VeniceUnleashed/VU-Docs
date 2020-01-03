@@ -1,5 +1,5 @@
 ---
-title: Level:Destroy (Server Event)
+title: Level:Destroy
 ---
 ## Description
 

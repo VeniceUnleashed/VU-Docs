@@ -1,5 +1,5 @@
 ---
-title: Player:SetSquadLeader (Server Event)
+title: Player:SetSquadLeader
 ---
 ## Description
 

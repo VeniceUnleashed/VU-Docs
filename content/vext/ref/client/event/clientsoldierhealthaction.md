@@ -1,5 +1,5 @@
 ---
-title: ClientSoldier:HealthAction (Client Event)
+title: ClientSoldier:HealthAction
 ---
 ## Description
 

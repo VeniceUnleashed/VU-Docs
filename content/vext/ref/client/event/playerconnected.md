@@ -1,5 +1,5 @@
 ---
-title: Player:Connected (Client Event)
+title: Player:Connected
 ---
 ## Description
 

@@ -1,5 +1,5 @@
 ---
-title: Player:ReviveAccepted (Server Event)
+title: Player:ReviveAccepted
 ---
 ## Description
 

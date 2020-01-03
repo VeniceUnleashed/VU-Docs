@@ -1,5 +1,5 @@
 ---
-title: Player:KickedFromSquad (Server Event)
+title: Player:KickedFromSquad
 ---
 ## Description
 

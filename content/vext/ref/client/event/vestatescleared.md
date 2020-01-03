@@ -1,5 +1,5 @@
 ---
-title: VE:StatesCleared (Client Event)
+title: VE:StatesCleared
 ---
 ## Description
 

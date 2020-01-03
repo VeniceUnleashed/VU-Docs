@@ -1,5 +1,5 @@
 ---
-title: Level:LoadingInfo (Shared Event)
+title: Level:LoadingInfo
 ---
 ## Description
 

@@ -1,5 +1,5 @@
 ---
-title: Player:Respawn (Server Event)
+title: Player:Respawn
 ---
 ## Description
 

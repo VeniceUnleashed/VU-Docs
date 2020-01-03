@@ -1,5 +1,5 @@
 ---
-title: Player:TeamChange (Client Event)
+title: Player:TeamChange
 ---
 ## Description
 

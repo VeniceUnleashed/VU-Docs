@@ -1,5 +1,5 @@
 ---
-title: Player:Reload (Server Event)
+title: Player:Reload
 ---
 ## Description
 

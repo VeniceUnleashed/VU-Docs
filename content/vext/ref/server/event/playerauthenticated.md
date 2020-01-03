@@ -1,5 +1,5 @@
 ---
-title: Player:Authenticated (Server Event)
+title: Player:Authenticated
 ---
 ## Description
 

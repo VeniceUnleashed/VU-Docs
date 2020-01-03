@@ -1,5 +1,5 @@
 ---
-title: Player:Deleted (Client Event)
+title: Player:Deleted
 ---
 ## Description
 

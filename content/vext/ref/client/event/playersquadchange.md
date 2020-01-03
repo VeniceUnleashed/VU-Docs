@@ -1,5 +1,5 @@
 ---
-title: Player:SquadChange (Client Event)
+title: Player:SquadChange
 ---
 ## Description
 

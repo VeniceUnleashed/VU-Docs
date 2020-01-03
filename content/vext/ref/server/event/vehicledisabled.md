@@ -1,5 +1,5 @@
 ---
-title: Vehicle:Disabled (Server Event)
+title: Vehicle:Disabled
 ---
 ## Description
 

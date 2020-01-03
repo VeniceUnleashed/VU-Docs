@@ -1,5 +1,5 @@
 ---
-title: NetSocketType (Shared Enum)
+title: NetSocketType
 ---
 ## Description
 

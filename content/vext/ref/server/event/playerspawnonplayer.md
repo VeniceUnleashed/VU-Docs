@@ -1,5 +1,5 @@
 ---
-title: Player:SpawnOnPlayer (Server Event)
+title: Player:SpawnOnPlayer
 ---
 ## Description
 

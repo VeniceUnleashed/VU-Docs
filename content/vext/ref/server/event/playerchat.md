@@ -1,5 +1,5 @@
 ---
-title: Player:Chat (Server Event)
+title: Player:Chat
 ---
 ## Description
 

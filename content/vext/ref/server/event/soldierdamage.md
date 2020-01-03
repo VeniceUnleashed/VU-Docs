@@ -1,5 +1,5 @@
 ---
-title: Soldier:Damage (Server Event)
+title: Soldier:Damage
 ---
 ## Description
 
