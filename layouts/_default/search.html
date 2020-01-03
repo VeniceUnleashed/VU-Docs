@@ -1,17 +1,18 @@
 {{ define "main" }}
-<section class="row td-search-result">
-  <div class="col-12 col-md-8 offset-md-2">
-    <h2 class="ml-4">{{ .Title }}</h2>
-    <div id="search-results">
-      Searching. Please wait...
-    </div>
-    <script>
-      {{ $offlineSearchIndex := resources.Get "json/offline-search-index.json" | resources.ExecuteAsTemplate "/offline-search-index.json" . }}
-      {{ $offlineSearchIndexFingerprint := $offlineSearchIndex | resources.Fingerprint "sha512" }}
-      $(document).ready(function() {
-        window.renderSearch("{{ $offlineSearchIndexFingerprint.Permalink }}");
-      });
-    </script>
-  </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.6/fuse.min.js" type="application/javascript"></script>
+<section class="td-search-result">
+  <h2>{{ .Title }}</h2>
+  <div id="search-status">Searching. Please wait...</div>
+  <div id="api-results"></div>
+  <div id="search-results"></div>
+  <script>
+    {{ $offlineSearchIndex := resources.Get "json/offline-search-index.json" | resources.ExecuteAsTemplate "/offline-search-index.json" . }}
+    {{ $offlineSearchIndexFingerprint := $offlineSearchIndex | resources.Fingerprint "sha256" }}
+    {{ $apiSearchIndex := resources.Get "json/vext-api.json" | resources.ExecuteAsTemplate "/vext-api.json" . }}
+    {{ $apiSearchIndexFingerprint := $apiSearchIndex | resources.Fingerprint "sha256" }}
+    $(document).ready(function() {
+      window.renderSearch("{{ $offlineSearchIndexFingerprint.Permalink }}", "{{ $apiSearchIndexFingerprint.Permalink }}");
+    });
+  </script>
 </section>
 {{ end }}

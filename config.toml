@@ -9,6 +9,8 @@ contentDir = "content"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 
+publishdir = "dist"
+
 [languages]
 [languages.en]
 title = "VU Documentation"
