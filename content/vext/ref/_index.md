@@ -1,5 +1,6 @@
 ---
 title: API Reference
+weight: 2
 ---
 The VeniceEXT API is split into four logical sections and contains a variety of classes, libraries, events, and hooks.
 
