@@ -3,7 +3,7 @@ title: MaterialPropertySoundData
 ---
 ### Base Classes
 
-[PhysicsMaterialRelationPropertyData](PhysicsMaterialRelationPropertyData)
+[PhysicsMaterialRelationPropertyData](/vext/ref/fb/physicsmaterialrelationpropertydata/)
 
 ## Description
 
@@ -15,18 +15,18 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | MaterialPropertySoundData()                                                                                 | Create a new instance of this container type.                                                                                                                    |
 | MaterialPropertySoundData(MaterialPropertySoundData other)                                                  | Create a reference copy of an instance of the same type.                                                                                                         |
-| MaterialPropertySoundData([PhysicsMaterialRelationPropertyData](PhysicsMaterialRelationPropertyData) other) | Upcast an instance of type [PhysicsMaterialRelationPropertyData](PhysicsMaterialRelationPropertyData) to [MaterialPropertySoundData](MaterialPropertySoundData). |
-| MaterialPropertySoundData([MaterialRelationPropertyData](MaterialRelationPropertyData) other)               | Upcast an instance of type [MaterialRelationPropertyData](MaterialRelationPropertyData) to [MaterialPropertySoundData](MaterialPropertySoundData).               |
-| MaterialPropertySoundData([DataContainer](/vext/ref/shared/class/datacontainer) other)                        | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MaterialPropertySoundData](MaterialPropertySoundData).                        |
+| MaterialPropertySoundData([PhysicsMaterialRelationPropertyData](/vext/ref/fb/physicsmaterialrelationpropertydata/) other) | Upcast an instance of type [PhysicsMaterialRelationPropertyData](/vext/ref/fb/physicsmaterialrelationpropertydata/) to [MaterialPropertySoundData](/vext/ref/fb/materialpropertysounddata/). |
+| MaterialPropertySoundData([MaterialRelationPropertyData](/vext/ref/fb/materialrelationpropertydata/) other)               | Upcast an instance of type [MaterialRelationPropertyData](/vext/ref/fb/materialrelationpropertydata/) to [MaterialPropertySoundData](/vext/ref/fb/materialpropertysounddata/).               |
+| MaterialPropertySoundData([DataContainer](/vext/ref/shared/class/datacontainer) other)                        | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MaterialPropertySoundData](/vext/ref/fb/materialpropertysounddata/).                        |
 
 ## Properties
 
 | Name            | Type                                                         | Description |
 | --------------- | ------------------------------------------------------------ | ----------- |
-| impactSound     | [SoundAsset](SoundAsset)                                     |             |
-| scrapeSound     | [SoundAsset](SoundAsset)                                     |             |
+| impactSound     | [SoundAsset](/vext/ref/fb/soundasset/)                                     |             |
+| scrapeSound     | [SoundAsset](/vext/ref/fb/soundasset/)                                     |             |
 | scrapeLength    | number                                                       |             |
-| soldierSettings | [MaterialSoldierSoundSettings](MaterialSoldierSoundSettings) |             |
+| soldierSettings | [MaterialSoldierSoundSettings](/vext/ref/fb/materialsoldiersoundsettings/) |             |
 | softness        | number                                                       |             |
 | materialSoundId | number                                                       |             |
 
@@ -34,11 +34,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                   | Name            | Parameters                                     |
 | ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [MaterialPropertySoundData](MaterialPropertySoundData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [MaterialPropertySoundData](/vext/ref/fb/materialpropertysounddata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [MaterialPropertySoundData](MaterialPropertySoundData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [MaterialPropertySoundData](/vext/ref/fb/materialpropertysounddata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -46,4 +46,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

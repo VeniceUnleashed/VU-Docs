@@ -16,20 +16,20 @@ A structure type representing a Frostbite data type.
 
 | Name            | Type             | Description |
 | --------------- | ---------------- | ----------- |
-| enabled         | [AntRef](AntRef) |             |
-| steerLeftRight  | [AntRef](AntRef) |             |
-| accelerateBrake | [AntRef](AntRef) |             |
-| pitch           | [AntRef](AntRef) |             |
-| roll            | [AntRef](AntRef) |             |
+| enabled         | [AntRef](/vext/ref/fb/antref/) |             |
+| steerLeftRight  | [AntRef](/vext/ref/fb/antref/) |             |
+| accelerateBrake | [AntRef](/vext/ref/fb/antref/) |             |
+| pitch           | [AntRef](/vext/ref/fb/antref/) |             |
+| roll            | [AntRef](/vext/ref/fb/antref/) |             |
 
 ## Methods
 
 | Type                                               | Name            | Parameters |
 | -------------------------------------------------- | --------------- | ---------- |
-| [SoldierParachuteBinding](SoldierParachuteBinding) | [Clone](#clone) |            |
+| [SoldierParachuteBinding](/vext/ref/fb/soldierparachutebinding/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SoldierParachuteBinding](SoldierParachuteBinding) **Clone**()
+> [SoldierParachuteBinding](/vext/ref/fb/soldierparachutebinding/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

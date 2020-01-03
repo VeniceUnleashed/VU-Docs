@@ -22,10 +22,10 @@ A structure type representing a Frostbite data type.
 
 | Type                     | Name            | Parameters |
 | ------------------------ | --------------- | ---------- |
-| [AssetAabbs](AssetAabbs) | [Clone](#clone) |            |
+| [AssetAabbs](/vext/ref/fb/assetaabbs/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [AssetAabbs](AssetAabbs) **Clone**()
+> [AssetAabbs](/vext/ref/fb/assetaabbs/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

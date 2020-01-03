@@ -25,10 +25,10 @@ A structure type representing a Frostbite data type.
 
 | Type                         | Name            | Parameters |
 | ---------------------------- | --------------- | ---------- |
-| [Ps3AgeLevels](Ps3AgeLevels) | [Clone](#clone) |            |
+| [Ps3AgeLevels](/vext/ref/fb/ps3agelevels/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [Ps3AgeLevels](Ps3AgeLevels) **Clone**()
+> [Ps3AgeLevels](/vext/ref/fb/ps3agelevels/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

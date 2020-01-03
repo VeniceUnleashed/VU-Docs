@@ -15,7 +15,7 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | SubWorldInclusionCriterion()                                                          | Create a new instance of this container type.                                                                                               |
 | SubWorldInclusionCriterion(SubWorldInclusionCriterion other)                          | Create a reference copy of an instance of the same type.                                                                                    |
-| SubWorldInclusionCriterion([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SubWorldInclusionCriterion](SubWorldInclusionCriterion). |
+| SubWorldInclusionCriterion([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SubWorldInclusionCriterion](/vext/ref/fb/subworldinclusioncriterion/). |
 
 ## Properties
 
@@ -28,11 +28,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                     | Name            | Parameters                                     |
 | -------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [SubWorldInclusionCriterion](SubWorldInclusionCriterion) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [SubWorldInclusionCriterion](/vext/ref/fb/subworldinclusioncriterion/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [SubWorldInclusionCriterion](SubWorldInclusionCriterion) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [SubWorldInclusionCriterion](/vext/ref/fb/subworldinclusioncriterion/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -40,4 +40,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

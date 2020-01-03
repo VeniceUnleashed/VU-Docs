@@ -16,7 +16,7 @@ A structure type representing a Frostbite data type.
 
 | Name                 | Type                                           | Description |
 | -------------------- | ---------------------------------------------- | ----------- |
-| material             | [MaterialContainerPair](MaterialContainerPair) |             |
+| material             | [MaterialContainerPair](/vext/ref/fb/materialcontainerpair/) |             |
 | obstructionFrequency | number                                         |             |
 | gainReduction        | number                                         |             |
 
@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                         | Name            | Parameters |
 | ------------------------------------------------------------ | --------------- | ---------- |
-| [AudioObstructionMaterialInfo](AudioObstructionMaterialInfo) | [Clone](#clone) |            |
+| [AudioObstructionMaterialInfo](/vext/ref/fb/audioobstructionmaterialinfo/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [AudioObstructionMaterialInfo](AudioObstructionMaterialInfo) **Clone**()
+> [AudioObstructionMaterialInfo](/vext/ref/fb/audioobstructionmaterialinfo/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

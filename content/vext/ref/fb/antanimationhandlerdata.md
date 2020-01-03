@@ -16,11 +16,11 @@ A structure type representing a Frostbite data type.
 
 | Name                  | Type                                   | Description |
 | --------------------- | -------------------------------------- | ----------- |
-| animatable            | [AntAnimatableData](AntAnimatableData) |             |
-| rootController        | [AntRef](AntRef)                       |             |
-| lodBinding            | [LodBinding](LodBinding)               |             |
-| antPackageData        | [AntPackageAsset](AntPackageAsset)\[\] |             |
-| bonesToMirror         | [GameplayBone](GameplayBone)\[\]       |             |
+| animatable            | [AntAnimatableData](/vext/ref/fb/antanimatabledata/) |             |
+| rootController        | [AntRef](/vext/ref/fb/antref/)                       |             |
+| lodBinding            | [LodBinding](/vext/ref/fb/lodbinding/)               |             |
+| antPackageData        | [AntPackageAsset](/vext/ref/fb/antpackageasset/)\[\] |             |
+| bonesToMirror         | [GameplayBone](/vext/ref/fb/gameplaybone/)\[\]       |             |
 | reportBackFromAnt     | bool                                   |             |
 | enableMasterSlaveCopy | bool                                   |             |
 | isProp                | bool                                   |             |
@@ -29,10 +29,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                               | Name            | Parameters |
 | -------------------------------------------------- | --------------- | ---------- |
-| [AntAnimationHandlerData](AntAnimationHandlerData) | [Clone](#clone) |            |
+| [AntAnimationHandlerData](/vext/ref/fb/antanimationhandlerdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [AntAnimationHandlerData](AntAnimationHandlerData) **Clone**()
+> [AntAnimationHandlerData](/vext/ref/fb/antanimationhandlerdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

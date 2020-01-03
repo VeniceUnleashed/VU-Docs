@@ -17,8 +17,8 @@ A structure type representing a Frostbite data type.
 | Name                      | Type                                                           | Description |
 | ------------------------- | -------------------------------------------------------------- | ----------- |
 | viewPointID               | string                                                         |             |
-| animationTriggers         | [InspectAnimationTriggerData](InspectAnimationTriggerData)\[\] |             |
-| continuousAnimationSignal | [AntRef](AntRef)\[\]                                           |             |
+| animationTriggers         | [InspectAnimationTriggerData](/vext/ref/fb/inspectanimationtriggerdata/)\[\] |             |
+| continuousAnimationSignal | [AntRef](/vext/ref/fb/antref/)\[\]                                           |             |
 | lookAtHeight              | number                                                         |             |
 | yaw                       | number                                                         |             |
 | pitch                     | number                                                         |             |
@@ -31,10 +31,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                         | Name            | Parameters |
 | -------------------------------------------- | --------------- | ---------- |
-| [InspectViewPointData](InspectViewPointData) | [Clone](#clone) |            |
+| [InspectViewPointData](/vext/ref/fb/inspectviewpointdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [InspectViewPointData](InspectViewPointData) **Clone**()
+> [InspectViewPointData](/vext/ref/fb/inspectviewpointdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -16,22 +16,22 @@ A structure type representing a Frostbite data type.
 
 | Name                    | Type             | Description |
 | ----------------------- | ---------------- | ----------- |
-| vault                   | [AntRef](AntRef) |             |
-| distanceBeforeVault     | [AntRef](AntRef) |             |
-| heightBeforeVault       | [AntRef](AntRef) |             |
-| lengthOfVaultableObject | [AntRef](AntRef) |             |
-| heightAfterVault        | [AntRef](AntRef) |             |
-| distanceAfterVault      | [AntRef](AntRef) |             |
-| vaultType               | [AntRef](AntRef) |             |
+| vault                   | [AntRef](/vext/ref/fb/antref/) |             |
+| distanceBeforeVault     | [AntRef](/vext/ref/fb/antref/) |             |
+| heightBeforeVault       | [AntRef](/vext/ref/fb/antref/) |             |
+| lengthOfVaultableObject | [AntRef](/vext/ref/fb/antref/) |             |
+| heightAfterVault        | [AntRef](/vext/ref/fb/antref/) |             |
+| distanceAfterVault      | [AntRef](/vext/ref/fb/antref/) |             |
+| vaultType               | [AntRef](/vext/ref/fb/antref/) |             |
 
 ## Methods
 
 | Type                                     | Name            | Parameters |
 | ---------------------------------------- | --------------- | ---------- |
-| [AILocoVaultBinding](AILocoVaultBinding) | [Clone](#clone) |            |
+| [AILocoVaultBinding](/vext/ref/fb/ailocovaultbinding/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [AILocoVaultBinding](AILocoVaultBinding) **Clone**()
+> [AILocoVaultBinding](/vext/ref/fb/ailocovaultbinding/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -3,7 +3,7 @@ title: RandomDelayEntityData
 ---
 ### Base Classes
 
-[EntityData](EntityData)
+[EntityData](/vext/ref/fb/entitydata/)
 
 ## Description
 
@@ -15,10 +15,10 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | RandomDelayEntityData()                                                          | Create a new instance of this container type.                                                                                     |
 | RandomDelayEntityData(RandomDelayEntityData other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| RandomDelayEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [RandomDelayEntityData](RandomDelayEntityData).                            |
-| RandomDelayEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [RandomDelayEntityData](RandomDelayEntityData).                    |
-| RandomDelayEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [RandomDelayEntityData](RandomDelayEntityData).              |
-| RandomDelayEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RandomDelayEntityData](RandomDelayEntityData). |
+| RandomDelayEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [RandomDelayEntityData](/vext/ref/fb/randomdelayentitydata/).                            |
+| RandomDelayEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [RandomDelayEntityData](/vext/ref/fb/randomdelayentitydata/).                    |
+| RandomDelayEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [RandomDelayEntityData](/vext/ref/fb/randomdelayentitydata/).              |
+| RandomDelayEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RandomDelayEntityData](/vext/ref/fb/randomdelayentitydata/). |
 
 ## Properties
 
@@ -26,7 +26,7 @@ A container type representing a Frostbite instance entry.
 | --------- | -------------- | ----------- |
 | minDelay  | number         |             |
 | maxDelay  | number         |             |
-| realm     | [Realm](Realm) |             |
+| realm     | [Realm](/vext/ref/fb/realm/) |             |
 | autoStart | bool           |             |
 | runOnce   | bool           |             |
 
@@ -34,11 +34,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                           | Name            | Parameters                                     |
 | ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [RandomDelayEntityData](RandomDelayEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [RandomDelayEntityData](/vext/ref/fb/randomdelayentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [RandomDelayEntityData](RandomDelayEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [RandomDelayEntityData](/vext/ref/fb/randomdelayentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -46,4 +46,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

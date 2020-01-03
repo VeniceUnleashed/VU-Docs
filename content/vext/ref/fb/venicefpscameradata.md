@@ -3,7 +3,7 @@ title: VeniceFPSCameraData
 ---
 ### Base Classes
 
-[FPSCameraData](FPSCameraData)
+[FPSCameraData](/vext/ref/fb/fpscameradata/)
 
 ## Description
 
@@ -15,12 +15,12 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
 | VeniceFPSCameraData()                                                          | Create a new instance of this container type.                                                                                 |
 | VeniceFPSCameraData(VeniceFPSCameraData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| VeniceFPSCameraData([FPSCameraData](FPSCameraData) other)                      | Upcast an instance of type [FPSCameraData](FPSCameraData) to [VeniceFPSCameraData](VeniceFPSCameraData).                      |
-| VeniceFPSCameraData([TargetCameraData](TargetCameraData) other)                | Upcast an instance of type [TargetCameraData](TargetCameraData) to [VeniceFPSCameraData](VeniceFPSCameraData).                |
-| VeniceFPSCameraData([CameraData](CameraData) other)                            | Upcast an instance of type [CameraData](CameraData) to [VeniceFPSCameraData](VeniceFPSCameraData).                            |
-| VeniceFPSCameraData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [VeniceFPSCameraData](VeniceFPSCameraData).                    |
-| VeniceFPSCameraData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [VeniceFPSCameraData](VeniceFPSCameraData).              |
-| VeniceFPSCameraData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VeniceFPSCameraData](VeniceFPSCameraData). |
+| VeniceFPSCameraData([FPSCameraData](/vext/ref/fb/fpscameradata/) other)                      | Upcast an instance of type [FPSCameraData](/vext/ref/fb/fpscameradata/) to [VeniceFPSCameraData](/vext/ref/fb/venicefpscameradata/).                      |
+| VeniceFPSCameraData([TargetCameraData](/vext/ref/fb/targetcameradata/) other)                | Upcast an instance of type [TargetCameraData](/vext/ref/fb/targetcameradata/) to [VeniceFPSCameraData](/vext/ref/fb/venicefpscameradata/).                |
+| VeniceFPSCameraData([CameraData](/vext/ref/fb/cameradata/) other)                            | Upcast an instance of type [CameraData](/vext/ref/fb/cameradata/) to [VeniceFPSCameraData](/vext/ref/fb/venicefpscameradata/).                            |
+| VeniceFPSCameraData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [VeniceFPSCameraData](/vext/ref/fb/venicefpscameradata/).                    |
+| VeniceFPSCameraData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [VeniceFPSCameraData](/vext/ref/fb/venicefpscameradata/).              |
+| VeniceFPSCameraData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VeniceFPSCameraData](/vext/ref/fb/venicefpscameradata/). |
 
 ## Properties
 
@@ -33,11 +33,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                       | Name            | Parameters                                     |
 | ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [VeniceFPSCameraData](VeniceFPSCameraData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [VeniceFPSCameraData](/vext/ref/fb/venicefpscameradata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [VeniceFPSCameraData](VeniceFPSCameraData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [VeniceFPSCameraData](/vext/ref/fb/venicefpscameradata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -45,4 +45,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

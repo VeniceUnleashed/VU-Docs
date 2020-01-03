@@ -3,7 +3,7 @@ title: MouseInputActionData
 ---
 ### Base Classes
 
-[AxesInputActionData](AxesInputActionData)
+[AxesInputActionData](/vext/ref/fb/axesinputactiondata/)
 
 ## Description
 
@@ -15,15 +15,15 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | MouseInputActionData()                                                          | Create a new instance of this container type.                                                                                   |
 | MouseInputActionData(MouseInputActionData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| MouseInputActionData([AxesInputActionData](AxesInputActionData) other)          | Upcast an instance of type [AxesInputActionData](AxesInputActionData) to [MouseInputActionData](MouseInputActionData).          |
-| MouseInputActionData([InputActionData](InputActionData) other)                  | Upcast an instance of type [InputActionData](InputActionData) to [MouseInputActionData](MouseInputActionData).                  |
-| MouseInputActionData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MouseInputActionData](MouseInputActionData). |
+| MouseInputActionData([AxesInputActionData](/vext/ref/fb/axesinputactiondata/) other)          | Upcast an instance of type [AxesInputActionData](/vext/ref/fb/axesinputactiondata/) to [MouseInputActionData](/vext/ref/fb/mouseinputactiondata/).          |
+| MouseInputActionData([InputActionData](/vext/ref/fb/inputactiondata/) other)                  | Upcast an instance of type [InputActionData](/vext/ref/fb/inputactiondata/) to [MouseInputActionData](/vext/ref/fb/mouseinputactiondata/).                  |
+| MouseInputActionData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MouseInputActionData](/vext/ref/fb/mouseinputactiondata/). |
 
 ## Properties
 
 | Name                      | Type                                               | Description |
 | ------------------------- | -------------------------------------------------- | ----------- |
-| button                    | [InputDeviceMouseButtons](InputDeviceMouseButtons) |             |
+| button                    | [InputDeviceMouseButtons](/vext/ref/fb/inputdevicemousebuttons/) |             |
 | simulateJoystickAxis      | bool                                               |             |
 | rememberExcessInput       | bool                                               |             |
 | scaleScrollWheelAxisInput | bool                                               |             |
@@ -32,11 +32,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                         | Name            | Parameters                                     |
 | -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [MouseInputActionData](MouseInputActionData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [MouseInputActionData](/vext/ref/fb/mouseinputactiondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [MouseInputActionData](MouseInputActionData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [MouseInputActionData](/vext/ref/fb/mouseinputactiondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -44,4 +44,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

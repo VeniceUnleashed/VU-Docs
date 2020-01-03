@@ -3,7 +3,7 @@ title: VehicleCameraData
 ---
 ### Base Classes
 
-[TargetCameraData](TargetCameraData)
+[TargetCameraData](/vext/ref/fb/targetcameradata/)
 
 ## Description
 
@@ -15,11 +15,11 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | VehicleCameraData()                                                          | Create a new instance of this container type.                                                                             |
 | VehicleCameraData(VehicleCameraData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| VehicleCameraData([TargetCameraData](TargetCameraData) other)                | Upcast an instance of type [TargetCameraData](TargetCameraData) to [VehicleCameraData](VehicleCameraData).                |
-| VehicleCameraData([CameraData](CameraData) other)                            | Upcast an instance of type [CameraData](CameraData) to [VehicleCameraData](VehicleCameraData).                            |
-| VehicleCameraData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [VehicleCameraData](VehicleCameraData).                    |
-| VehicleCameraData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [VehicleCameraData](VehicleCameraData).              |
-| VehicleCameraData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VehicleCameraData](VehicleCameraData). |
+| VehicleCameraData([TargetCameraData](/vext/ref/fb/targetcameradata/) other)                | Upcast an instance of type [TargetCameraData](/vext/ref/fb/targetcameradata/) to [VehicleCameraData](/vext/ref/fb/vehiclecameradata/).                |
+| VehicleCameraData([CameraData](/vext/ref/fb/cameradata/) other)                            | Upcast an instance of type [CameraData](/vext/ref/fb/cameradata/) to [VehicleCameraData](/vext/ref/fb/vehiclecameradata/).                            |
+| VehicleCameraData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [VehicleCameraData](/vext/ref/fb/vehiclecameradata/).                    |
+| VehicleCameraData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [VehicleCameraData](/vext/ref/fb/vehiclecameradata/).              |
+| VehicleCameraData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VehicleCameraData](/vext/ref/fb/vehiclecameradata/). |
 
 ## Properties
 
@@ -40,11 +40,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                   | Name            | Parameters                                     |
 | -------------------------------------- | --------------- | ---------------------------------------------- |
-| [VehicleCameraData](VehicleCameraData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [VehicleCameraData](/vext/ref/fb/vehiclecameradata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [VehicleCameraData](VehicleCameraData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [VehicleCameraData](/vext/ref/fb/vehiclecameradata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -52,4 +52,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

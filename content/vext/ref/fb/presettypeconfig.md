@@ -20,17 +20,17 @@ A structure type representing a Frostbite data type.
 | key            | string                                         |             |
 | nameSid        | string                                         |             |
 | descSid        | string                                         |             |
-| lockedSettings | [LockedSettingConfig](LockedSettingConfig)\[\] |             |
+| lockedSettings | [LockedSettingConfig](/vext/ref/fb/lockedsettingconfig/)\[\] |             |
 | predefined     | bool                                           |             |
 
 ## Methods
 
 | Type                                 | Name            | Parameters |
 | ------------------------------------ | --------------- | ---------- |
-| [PresetTypeConfig](PresetTypeConfig) | [Clone](#clone) |            |
+| [PresetTypeConfig](/vext/ref/fb/presettypeconfig/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [PresetTypeConfig](PresetTypeConfig) **Clone**()
+> [PresetTypeConfig](/vext/ref/fb/presettypeconfig/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

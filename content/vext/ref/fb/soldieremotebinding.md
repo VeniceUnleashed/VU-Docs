@@ -16,31 +16,31 @@ A structure type representing a Frostbite data type.
 
 | Name                    | Type             | Description |
 | ----------------------- | ---------------- | ----------- |
-| speak                   | [AntRef](AntRef) |             |
-| isSquadLeader           | [AntRef](AntRef) |             |
-| emoteSpot               | [AntRef](AntRef) |             |
-| emoteOk                 | [AntRef](AntRef) |             |
-| emoteNeedARide          | [AntRef](AntRef) |             |
-| emoteGoGoGo             | [AntRef](AntRef) |             |
-| emoteNeedBackup         | [AntRef](AntRef) |             |
-| emoteThanks             | [AntRef](AntRef) |             |
-| emoteNeedMedic          | [AntRef](AntRef) |             |
-| emoteFollowMe           | [AntRef](AntRef) |             |
-| emoteNeedAmmo           | [AntRef](AntRef) |             |
-| emoteSorry              | [AntRef](AntRef) |             |
-| emoteNo                 | [AntRef](AntRef) |             |
-| emoteDefendCapturePoint | [AntRef](AntRef) |             |
-| emoteAttackCapturePoint | [AntRef](AntRef) |             |
-| emoteMoveToPosition     | [AntRef](AntRef) |             |
+| speak                   | [AntRef](/vext/ref/fb/antref/) |             |
+| isSquadLeader           | [AntRef](/vext/ref/fb/antref/) |             |
+| emoteSpot               | [AntRef](/vext/ref/fb/antref/) |             |
+| emoteOk                 | [AntRef](/vext/ref/fb/antref/) |             |
+| emoteNeedARide          | [AntRef](/vext/ref/fb/antref/) |             |
+| emoteGoGoGo             | [AntRef](/vext/ref/fb/antref/) |             |
+| emoteNeedBackup         | [AntRef](/vext/ref/fb/antref/) |             |
+| emoteThanks             | [AntRef](/vext/ref/fb/antref/) |             |
+| emoteNeedMedic          | [AntRef](/vext/ref/fb/antref/) |             |
+| emoteFollowMe           | [AntRef](/vext/ref/fb/antref/) |             |
+| emoteNeedAmmo           | [AntRef](/vext/ref/fb/antref/) |             |
+| emoteSorry              | [AntRef](/vext/ref/fb/antref/) |             |
+| emoteNo                 | [AntRef](/vext/ref/fb/antref/) |             |
+| emoteDefendCapturePoint | [AntRef](/vext/ref/fb/antref/) |             |
+| emoteAttackCapturePoint | [AntRef](/vext/ref/fb/antref/) |             |
+| emoteMoveToPosition     | [AntRef](/vext/ref/fb/antref/) |             |
 
 ## Methods
 
 | Type                                       | Name            | Parameters |
 | ------------------------------------------ | --------------- | ---------- |
-| [SoldierEmoteBinding](SoldierEmoteBinding) | [Clone](#clone) |            |
+| [SoldierEmoteBinding](/vext/ref/fb/soldieremotebinding/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SoldierEmoteBinding](SoldierEmoteBinding) **Clone**()
+> [SoldierEmoteBinding](/vext/ref/fb/soldieremotebinding/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

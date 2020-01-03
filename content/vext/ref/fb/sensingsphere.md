@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                           | Name            | Parameters |
 | ------------------------------ | --------------- | ---------- |
-| [SensingSphere](SensingSphere) | [Clone](#clone) |            |
+| [SensingSphere](/vext/ref/fb/sensingsphere/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SensingSphere](SensingSphere) **Clone**()
+> [SensingSphere](/vext/ref/fb/sensingsphere/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

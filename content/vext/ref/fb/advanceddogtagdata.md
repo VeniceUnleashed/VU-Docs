@@ -3,7 +3,7 @@ title: AdvancedDogTagData
 ---
 ### Base Classes
 
-[DogTagData](DogTagData)
+[DogTagData](/vext/ref/fb/dogtagdata/)
 
 ## Description
 
@@ -15,10 +15,10 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | AdvancedDogTagData()                                                          | Create a new instance of this container type.                                                                               |
 | AdvancedDogTagData(AdvancedDogTagData other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| AdvancedDogTagData([DogTagData](DogTagData) other)                            | Upcast an instance of type [DogTagData](DogTagData) to [AdvancedDogTagData](AdvancedDogTagData).                            |
-| AdvancedDogTagData([UnlockAssetBase](UnlockAssetBase) other)                  | Upcast an instance of type [UnlockAssetBase](UnlockAssetBase) to [AdvancedDogTagData](AdvancedDogTagData).                  |
-| AdvancedDogTagData([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [AdvancedDogTagData](AdvancedDogTagData).                                      |
-| AdvancedDogTagData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AdvancedDogTagData](AdvancedDogTagData). |
+| AdvancedDogTagData([DogTagData](/vext/ref/fb/dogtagdata/) other)                            | Upcast an instance of type [DogTagData](/vext/ref/fb/dogtagdata/) to [AdvancedDogTagData](/vext/ref/fb/advanceddogtagdata/).                            |
+| AdvancedDogTagData([UnlockAssetBase](/vext/ref/fb/unlockassetbase/) other)                  | Upcast an instance of type [UnlockAssetBase](/vext/ref/fb/unlockassetbase/) to [AdvancedDogTagData](/vext/ref/fb/advanceddogtagdata/).                  |
+| AdvancedDogTagData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [AdvancedDogTagData](/vext/ref/fb/advanceddogtagdata/).                                      |
+| AdvancedDogTagData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AdvancedDogTagData](/vext/ref/fb/advanceddogtagdata/). |
 
 ## Properties
 
@@ -32,11 +32,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                     | Name            | Parameters                                     |
 | ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [AdvancedDogTagData](AdvancedDogTagData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [AdvancedDogTagData](/vext/ref/fb/advanceddogtagdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [AdvancedDogTagData](AdvancedDogTagData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [AdvancedDogTagData](/vext/ref/fb/advanceddogtagdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -44,4 +44,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

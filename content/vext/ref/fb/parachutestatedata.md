@@ -3,7 +3,7 @@ title: ParachuteStateData
 ---
 ### Base Classes
 
-[CharacterStateData](CharacterStateData)
+[CharacterStateData](/vext/ref/fb/characterstatedata/)
 
 ## Description
 
@@ -15,8 +15,8 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | ParachuteStateData()                                                          | Create a new instance of this container type.                                                                               |
 | ParachuteStateData(ParachuteStateData other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| ParachuteStateData([CharacterStateData](CharacterStateData) other)            | Upcast an instance of type [CharacterStateData](CharacterStateData) to [ParachuteStateData](ParachuteStateData).            |
-| ParachuteStateData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ParachuteStateData](ParachuteStateData). |
+| ParachuteStateData([CharacterStateData](/vext/ref/fb/characterstatedata/) other)            | Upcast an instance of type [CharacterStateData](/vext/ref/fb/characterstatedata/) to [ParachuteStateData](/vext/ref/fb/parachutestatedata/).            |
+| ParachuteStateData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ParachuteStateData](/vext/ref/fb/parachutestatedata/). |
 
 ## Properties
 
@@ -37,11 +37,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                     | Name            | Parameters                                     |
 | ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [ParachuteStateData](ParachuteStateData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [ParachuteStateData](/vext/ref/fb/parachutestatedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [ParachuteStateData](ParachuteStateData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [ParachuteStateData](/vext/ref/fb/parachutestatedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -49,4 +49,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

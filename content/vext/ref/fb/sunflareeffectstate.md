@@ -15,7 +15,7 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
 | SunFlareEffectState()                                                          | Create a new instance of this container type.                                                                                 |
 | SunFlareEffectState(SunFlareEffectState other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| SunFlareEffectState([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SunFlareEffectState](SunFlareEffectState). |
+| SunFlareEffectState([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SunFlareEffectState](/vext/ref/fb/sunflareeffectstate/). |
 
 ## Properties
 
@@ -46,17 +46,17 @@ A container type representing a Frostbite instance entry.
 | element4SizeOccluderCurve   | [Vec4](/vext/ref/shared/class/vec4)                |             |
 | element3AlphaScreenPosCurve | [Vec4](/vext/ref/shared/class/vec4)                |             |
 | element4AlphaOccluderCurve  | [Vec4](/vext/ref/shared/class/vec4)                |             |
-| element3Shader              | [SurfaceShaderBaseAsset](SurfaceShaderBaseAsset) |             |
-| element2Shader              | [SurfaceShaderBaseAsset](SurfaceShaderBaseAsset) |             |
+| element3Shader              | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset/) |             |
+| element2Shader              | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset/) |             |
 | occluderSize                | number                                           |             |
-| element4Shader              | [SurfaceShaderBaseAsset](SurfaceShaderBaseAsset) |             |
+| element4Shader              | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset/) |             |
 | element4RayDistance         | number                                           |             |
-| element1Shader              | [SurfaceShaderBaseAsset](SurfaceShaderBaseAsset) |             |
+| element1Shader              | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset/) |             |
 | element2RayDistance         | number                                           |             |
 | element1RayDistance         | number                                           |             |
 | element5RayDistance         | number                                           |             |
 | element3RayDistance         | number                                           |             |
-| element5Shader              | [SurfaceShaderBaseAsset](SurfaceShaderBaseAsset) |             |
+| element5Shader              | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset/) |             |
 | element5Enable              | bool                                             |             |
 | element4Enable              | bool                                             |             |
 | element3Enable              | bool                                             |             |
@@ -69,11 +69,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                       | Name            | Parameters                                     |
 | ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [SunFlareEffectState](SunFlareEffectState) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [SunFlareEffectState](/vext/ref/fb/sunflareeffectstate/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [SunFlareEffectState](SunFlareEffectState) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [SunFlareEffectState](/vext/ref/fb/sunflareeffectstate/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -81,4 +81,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

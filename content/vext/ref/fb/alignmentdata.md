@@ -15,13 +15,13 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
 | AlignmentData()                                                          | Create a new instance of this container type.                                                                     |
 | AlignmentData(AlignmentData other)                                       | Create a reference copy of an instance of the same type.                                                          |
-| AlignmentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AlignmentData](AlignmentData). |
+| AlignmentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AlignmentData](/vext/ref/fb/alignmentdata/). |
 
 ## Properties
 
 | Name          | Type                                         | Description |
 | ------------- | -------------------------------------------- | ----------- |
-| alignAction   | [EntryInputActionEnum](EntryInputActionEnum) |             |
+| alignAction   | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum/) |             |
 | stopTolerance | number                                       |             |
 | speed         | number                                       |             |
 
@@ -29,11 +29,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                           | Name            | Parameters                                     |
 | ------------------------------ | --------------- | ---------------------------------------------- |
-| [AlignmentData](AlignmentData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [AlignmentData](/vext/ref/fb/alignmentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [AlignmentData](AlignmentData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [AlignmentData](/vext/ref/fb/alignmentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -41,4 +41,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

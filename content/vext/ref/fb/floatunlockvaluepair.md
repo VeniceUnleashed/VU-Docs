@@ -3,7 +3,7 @@ title: FloatUnlockValuePair
 ---
 ### Base Classes
 
-[UnlockValuePair](UnlockValuePair)
+[UnlockValuePair](/vext/ref/fb/unlockvaluepair/)
 
 ## Description
 
@@ -15,8 +15,8 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | FloatUnlockValuePair()                                                          | Create a new instance of this container type.                                                                                   |
 | FloatUnlockValuePair(FloatUnlockValuePair other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| FloatUnlockValuePair([UnlockValuePair](UnlockValuePair) other)                  | Upcast an instance of type [UnlockValuePair](UnlockValuePair) to [FloatUnlockValuePair](FloatUnlockValuePair).                  |
-| FloatUnlockValuePair([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [FloatUnlockValuePair](FloatUnlockValuePair). |
+| FloatUnlockValuePair([UnlockValuePair](/vext/ref/fb/unlockvaluepair/) other)                  | Upcast an instance of type [UnlockValuePair](/vext/ref/fb/unlockvaluepair/) to [FloatUnlockValuePair](/vext/ref/fb/floatunlockvaluepair/).                  |
+| FloatUnlockValuePair([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [FloatUnlockValuePair](/vext/ref/fb/floatunlockvaluepair/). |
 
 ## Properties
 
@@ -29,11 +29,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                         | Name            | Parameters                                     |
 | -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [FloatUnlockValuePair](FloatUnlockValuePair) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [FloatUnlockValuePair](/vext/ref/fb/floatunlockvaluepair/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [FloatUnlockValuePair](FloatUnlockValuePair) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [FloatUnlockValuePair](/vext/ref/fb/floatunlockvaluepair/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -41,4 +41,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

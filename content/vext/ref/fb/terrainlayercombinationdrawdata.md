@@ -16,10 +16,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                               | Name            | Parameters |
 | ------------------------------------------------------------------ | --------------- | ---------- |
-| [TerrainLayerCombinationDrawData](TerrainLayerCombinationDrawData) | [Clone](#clone) |            |
+| [TerrainLayerCombinationDrawData](/vext/ref/fb/terrainlayercombinationdrawdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [TerrainLayerCombinationDrawData](TerrainLayerCombinationDrawData) **Clone**()
+> [TerrainLayerCombinationDrawData](/vext/ref/fb/terrainlayercombinationdrawdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

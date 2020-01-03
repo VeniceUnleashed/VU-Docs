@@ -3,7 +3,7 @@ title: NotEntityData
 ---
 ### Base Classes
 
-[EntityData](EntityData)
+[EntityData](/vext/ref/fb/entitydata/)
 
 ## Description
 
@@ -15,27 +15,27 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
 | NotEntityData()                                                          | Create a new instance of this container type.                                                                     |
 | NotEntityData(NotEntityData other)                                       | Create a reference copy of an instance of the same type.                                                          |
-| NotEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [NotEntityData](NotEntityData).                            |
-| NotEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [NotEntityData](NotEntityData).                    |
-| NotEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [NotEntityData](NotEntityData).              |
-| NotEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [NotEntityData](NotEntityData). |
+| NotEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [NotEntityData](/vext/ref/fb/notentitydata/).                            |
+| NotEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [NotEntityData](/vext/ref/fb/notentitydata/).                    |
+| NotEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [NotEntityData](/vext/ref/fb/notentitydata/).              |
+| NotEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [NotEntityData](/vext/ref/fb/notentitydata/). |
 
 ## Properties
 
 | Name    | Type           | Description |
 | ------- | -------------- | ----------- |
-| realm   | [Realm](Realm) |             |
+| realm   | [Realm](/vext/ref/fb/realm/) |             |
 | inValue | bool           |             |
 
 ## Methods
 
 | Type                           | Name            | Parameters                                     |
 | ------------------------------ | --------------- | ---------------------------------------------- |
-| [NotEntityData](NotEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [NotEntityData](/vext/ref/fb/notentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [NotEntityData](NotEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [NotEntityData](/vext/ref/fb/notentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -43,4 +43,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

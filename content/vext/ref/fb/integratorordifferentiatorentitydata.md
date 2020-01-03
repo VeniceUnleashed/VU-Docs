@@ -3,7 +3,7 @@ title: IntegratorOrDifferentiatorEntityData
 ---
 ### Base Classes
 
-[EntityData](EntityData)
+[EntityData](/vext/ref/fb/entitydata/)
 
 ## Description
 
@@ -15,17 +15,17 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | IntegratorOrDifferentiatorEntityData()                                                          | Create a new instance of this container type.                                                                                                                   |
 | IntegratorOrDifferentiatorEntityData(IntegratorOrDifferentiatorEntityData other)                | Create a reference copy of an instance of the same type.                                                                                                        |
-| IntegratorOrDifferentiatorEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [IntegratorOrDifferentiatorEntityData](IntegratorOrDifferentiatorEntityData).                            |
-| IntegratorOrDifferentiatorEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [IntegratorOrDifferentiatorEntityData](IntegratorOrDifferentiatorEntityData).                    |
-| IntegratorOrDifferentiatorEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [IntegratorOrDifferentiatorEntityData](IntegratorOrDifferentiatorEntityData).              |
-| IntegratorOrDifferentiatorEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [IntegratorOrDifferentiatorEntityData](IntegratorOrDifferentiatorEntityData). |
+| IntegratorOrDifferentiatorEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [IntegratorOrDifferentiatorEntityData](/vext/ref/fb/integratorordifferentiatorentitydata/).                            |
+| IntegratorOrDifferentiatorEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [IntegratorOrDifferentiatorEntityData](/vext/ref/fb/integratorordifferentiatorentitydata/).                    |
+| IntegratorOrDifferentiatorEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [IntegratorOrDifferentiatorEntityData](/vext/ref/fb/integratorordifferentiatorentitydata/).              |
+| IntegratorOrDifferentiatorEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [IntegratorOrDifferentiatorEntityData](/vext/ref/fb/integratorordifferentiatorentitydata/). |
 
 ## Properties
 
 | Name       | Type                                   | Description |
 | ---------- | -------------------------------------- | ----------- |
-| realm      | [Realm](Realm)                         |             |
-| updatePass | [EntityUpdateOrder](EntityUpdateOrder) |             |
+| realm      | [Realm](/vext/ref/fb/realm/)                         |             |
+| updatePass | [EntityUpdateOrder](/vext/ref/fb/entityupdateorder/) |             |
 | startValue | number                                 |             |
 | input      | number                                 |             |
 | maxValue   | number                                 |             |
@@ -36,11 +36,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                                         | Name            | Parameters                                     |
 | ---------------------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [IntegratorOrDifferentiatorEntityData](IntegratorOrDifferentiatorEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [IntegratorOrDifferentiatorEntityData](/vext/ref/fb/integratorordifferentiatorentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [IntegratorOrDifferentiatorEntityData](IntegratorOrDifferentiatorEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [IntegratorOrDifferentiatorEntityData](/vext/ref/fb/integratorordifferentiatorentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -48,4 +48,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

@@ -25,10 +25,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                               | Name            | Parameters |
 | ------------------------------------------------------------------ | --------------- | ---------- |
-| [ZoomLevelSpecificTransitionTime](ZoomLevelSpecificTransitionTime) | [Clone](#clone) |            |
+| [ZoomLevelSpecificTransitionTime](/vext/ref/fb/zoomlevelspecifictransitiontime/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [ZoomLevelSpecificTransitionTime](ZoomLevelSpecificTransitionTime) **Clone**()
+> [ZoomLevelSpecificTransitionTime](/vext/ref/fb/zoomlevelspecifictransitiontime/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -16,20 +16,20 @@ A structure type representing a Frostbite data type.
 
 | Name           | Type                                           | Description |
 | -------------- | ---------------------------------------------- | ----------- |
-| platform       | [GamePlatform](GamePlatform)                   |             |
-| services       | [OnlineServicesAsset](OnlineServicesAsset)     |             |
-| clientBackends | [PresenceBackendData](PresenceBackendData)\[\] |             |
-| serverBackends | [ServerBackendData](ServerBackendData)\[\]     |             |
+| platform       | [GamePlatform](/vext/ref/fb/gameplatform/)                   |             |
+| services       | [OnlineServicesAsset](/vext/ref/fb/onlineservicesasset/)     |             |
+| clientBackends | [PresenceBackendData](/vext/ref/fb/presencebackenddata/)\[\] |             |
+| serverBackends | [ServerBackendData](/vext/ref/fb/serverbackenddata/)\[\]     |             |
 | isFallback     | bool                                           |             |
 
 ## Methods
 
 | Type                                                       | Name            | Parameters |
 | ---------------------------------------------------------- | --------------- | ---------- |
-| [OnlinePlatformConfiguration](OnlinePlatformConfiguration) | [Clone](#clone) |            |
+| [OnlinePlatformConfiguration](/vext/ref/fb/onlineplatformconfiguration/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [OnlinePlatformConfiguration](OnlinePlatformConfiguration) **Clone**()
+> [OnlinePlatformConfiguration](/vext/ref/fb/onlineplatformconfiguration/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

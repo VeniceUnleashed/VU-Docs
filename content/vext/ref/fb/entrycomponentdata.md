@@ -3,7 +3,7 @@ title: EntryComponentData
 ---
 ### Base Classes
 
-[ComponentData](ComponentData)
+[ComponentData](/vext/ref/fb/componentdata/)
 
 ## Description
 
@@ -15,31 +15,31 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | EntryComponentData()                                                          | Create a new instance of this container type.                                                                               |
 | EntryComponentData(EntryComponentData other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| EntryComponentData([ComponentData](ComponentData) other)                      | Upcast an instance of type [ComponentData](ComponentData) to [EntryComponentData](EntryComponentData).                      |
-| EntryComponentData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [EntryComponentData](EntryComponentData).                    |
-| EntryComponentData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [EntryComponentData](EntryComponentData).              |
-| EntryComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EntryComponentData](EntryComponentData). |
+| EntryComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [EntryComponentData](/vext/ref/fb/entrycomponentdata/).                      |
+| EntryComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [EntryComponentData](/vext/ref/fb/entrycomponentdata/).                    |
+| EntryComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [EntryComponentData](/vext/ref/fb/entrycomponentdata/).              |
+| EntryComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EntryComponentData](/vext/ref/fb/entrycomponentdata/). |
 
 ## Properties
 
 | Name                              | Type                                                 | Description |
 | --------------------------------- | ---------------------------------------------------- | ----------- |
 | soldierOffset                     | [Vec3](/vext/ref/shared/class/vec3)                    |             |
-| aiData                            | [GameAIEntryData](GameAIEntryData)                   |             |
-| entryClass                        | [EntryClass](EntryClass)                             |             |
-| inputConceptDefinition            | [EntryInputActionMapsData](EntryInputActionMapsData) |             |
-| inputMapping                      | [InputActionMappingsData](InputActionMappingsData)   |             |
-| inputCurves                       | [InputCurveData](InputCurveData)\[\]                 |             |
-| hudData                           | [EntryComponentHudData](EntryComponentHudData)       |             |
+| aiData                            | [GameAIEntryData](/vext/ref/fb/gameaientrydata/)                   |             |
+| entryClass                        | [EntryClass](/vext/ref/fb/entryclass/)                             |             |
+| inputConceptDefinition            | [EntryInputActionMapsData](/vext/ref/fb/entryinputactionmapsdata/) |             |
+| inputMapping                      | [InputActionMappingsData](/vext/ref/fb/inputactionmappingsdata/)   |             |
+| inputCurves                       | [InputCurveData](/vext/ref/fb/inputcurvedata/)\[\]                 |             |
+| hudData                           | [EntryComponentHudData](/vext/ref/fb/entrycomponenthuddata/)       |             |
 | entryOrderNumber                  | number                                               |             |
 | enterImpulse                      | number                                               |             |
 | entryRadius                       | number                                               |             |
-| triggerEventOnKey                 | [EntryInputActionEnum](EntryInputActionEnum)         |             |
-| entrySpottingSettings             | [EntrySpottingSettings](EntrySpottingSettings)       |             |
-| poseConstraints                   | [PoseConstraintsData](PoseConstraintsData)           |             |
+| triggerEventOnKey                 | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum/)         |             |
+| entrySpottingSettings             | [EntrySpottingSettings](/vext/ref/fb/entryspottingsettings/)       |             |
+| poseConstraints                   | [PoseConstraintsData](/vext/ref/fb/poseconstraintsdata/)           |             |
 | soldierTransitionInvisbleTime     | number                                               |             |
 | numberOfStances                   | number                                               |             |
-| entryComponentSound               | [EntryComponentSoundData](EntryComponentSoundData)   |             |
+| entryComponentSound               | [EntryComponentSoundData](/vext/ref/fb/entrycomponentsounddata/)   |             |
 | lockSoldierAimingToEntry          | bool                                                 |             |
 | isAllowedToExitInAir              | bool                                                 |             |
 | show1pSoldierInEntry              | bool                                                 |             |
@@ -57,11 +57,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                     | Name            | Parameters                                     |
 | ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [EntryComponentData](EntryComponentData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [EntryComponentData](/vext/ref/fb/entrycomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [EntryComponentData](EntryComponentData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [EntryComponentData](/vext/ref/fb/entrycomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -69,4 +69,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

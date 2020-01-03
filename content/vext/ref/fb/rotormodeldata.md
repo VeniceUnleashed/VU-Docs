@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                             | Name            | Parameters |
 | -------------------------------- | --------------- | ---------- |
-| [RotorModelData](RotorModelData) | [Clone](#clone) |            |
+| [RotorModelData](/vext/ref/fb/rotormodeldata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [RotorModelData](RotorModelData) **Clone**()
+> [RotorModelData](/vext/ref/fb/rotormodeldata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

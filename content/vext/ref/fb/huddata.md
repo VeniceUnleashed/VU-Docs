@@ -28,7 +28,7 @@ A structure type representing a Frostbite data type.
 | lowAmmoWarning               | number                                   |             |
 | reloadPrompt                 | number                                   |             |
 | renderTargetIndex            | number                                   |             |
-| hudPropertyList              | [UIPartPropertyList](UIPartPropertyList) |             |
+| hudPropertyList              | [UIPartPropertyList](/vext/ref/fb/uipartpropertylist/) |             |
 | showMinimap                  | bool                                     |             |
 | infiniteAmmo                 | bool                                     |             |
 | hideCrosshairWhenAimOnFriend | bool                                     |             |
@@ -49,10 +49,10 @@ A structure type representing a Frostbite data type.
 
 | Type               | Name            | Parameters |
 | ------------------ | --------------- | ---------- |
-| [HudData](HudData) | [Clone](#clone) |            |
+| [HudData](/vext/ref/fb/huddata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [HudData](HudData) **Clone**()
+> [HudData](/vext/ref/fb/huddata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

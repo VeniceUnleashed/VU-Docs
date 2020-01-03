@@ -3,7 +3,7 @@ title: MultipleActorScenarioEntityData
 ---
 ### Base Classes
 
-[SpatialEntityData](SpatialEntityData)
+[SpatialEntityData](/vext/ref/fb/spatialentitydata/)
 
 ## Description
 
@@ -15,11 +15,11 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | MultipleActorScenarioEntityData()                                                          | Create a new instance of this container type.                                                                                                         |
 | MultipleActorScenarioEntityData(MultipleActorScenarioEntityData other)                     | Create a reference copy of an instance of the same type.                                                                                              |
-| MultipleActorScenarioEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [MultipleActorScenarioEntityData](MultipleActorScenarioEntityData).              |
-| MultipleActorScenarioEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [MultipleActorScenarioEntityData](MultipleActorScenarioEntityData).                            |
-| MultipleActorScenarioEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [MultipleActorScenarioEntityData](MultipleActorScenarioEntityData).                    |
-| MultipleActorScenarioEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [MultipleActorScenarioEntityData](MultipleActorScenarioEntityData).              |
-| MultipleActorScenarioEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MultipleActorScenarioEntityData](MultipleActorScenarioEntityData). |
+| MultipleActorScenarioEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [MultipleActorScenarioEntityData](/vext/ref/fb/multipleactorscenarioentitydata/).              |
+| MultipleActorScenarioEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [MultipleActorScenarioEntityData](/vext/ref/fb/multipleactorscenarioentitydata/).                            |
+| MultipleActorScenarioEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [MultipleActorScenarioEntityData](/vext/ref/fb/multipleactorscenarioentitydata/).                    |
+| MultipleActorScenarioEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [MultipleActorScenarioEntityData](/vext/ref/fb/multipleactorscenarioentitydata/).              |
+| MultipleActorScenarioEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MultipleActorScenarioEntityData](/vext/ref/fb/multipleactorscenarioentitydata/). |
 
 ## Properties
 
@@ -27,10 +27,10 @@ A container type representing a Frostbite instance entry.
 | ---------------------------- | ------------------------------------------------------- | ----------- |
 | worldSpaceConnectTransform   | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
 | actor5Part                   | number                                                  |             |
-| scenarioAntRef               | [AntRef](AntRef)                                        |             |
+| scenarioAntRef               | [AntRef](/vext/ref/fb/antref/)                                        |             |
 | levelChoice                  | number                                                  |             |
 | scenarioChoice               | number                                                  |             |
-| realm                        | [Realm](Realm)                                          |             |
+| realm                        | [Realm](/vext/ref/fb/realm/)                                          |             |
 | actor6Part                   | number                                                  |             |
 | actor1                       | number                                                  |             |
 | actor1Part                   | number                                                  |             |
@@ -71,11 +71,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                               | Name            | Parameters                                     |
 | ------------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [MultipleActorScenarioEntityData](MultipleActorScenarioEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [MultipleActorScenarioEntityData](/vext/ref/fb/multipleactorscenarioentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [MultipleActorScenarioEntityData](MultipleActorScenarioEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [MultipleActorScenarioEntityData](/vext/ref/fb/multipleactorscenarioentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -83,4 +83,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                               | Name            | Parameters |
 | ---------------------------------- | --------------- | ---------- |
-| [UIMinimapIconUv](UIMinimapIconUv) | [Clone](#clone) |            |
+| [UIMinimapIconUv](/vext/ref/fb/uiminimapiconuv/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [UIMinimapIconUv](UIMinimapIconUv) **Clone**()
+> [UIMinimapIconUv](/vext/ref/fb/uiminimapiconuv/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -3,7 +3,7 @@ title: DestroyLevelCommandEntityData
 ---
 ### Base Classes
 
-[GameEntityData](GameEntityData)
+[GameEntityData](/vext/ref/fb/gameentitydata/)
 
 ## Description
 
@@ -15,12 +15,12 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DestroyLevelCommandEntityData()                                                          | Create a new instance of this container type.                                                                                                     |
 | DestroyLevelCommandEntityData(DestroyLevelCommandEntityData other)                       | Create a reference copy of an instance of the same type.                                                                                          |
-| DestroyLevelCommandEntityData([GameEntityData](GameEntityData) other)                    | Upcast an instance of type [GameEntityData](GameEntityData) to [DestroyLevelCommandEntityData](DestroyLevelCommandEntityData).                    |
-| DestroyLevelCommandEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [DestroyLevelCommandEntityData](DestroyLevelCommandEntityData).              |
-| DestroyLevelCommandEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [DestroyLevelCommandEntityData](DestroyLevelCommandEntityData).                            |
-| DestroyLevelCommandEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [DestroyLevelCommandEntityData](DestroyLevelCommandEntityData).                    |
-| DestroyLevelCommandEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [DestroyLevelCommandEntityData](DestroyLevelCommandEntityData).              |
-| DestroyLevelCommandEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DestroyLevelCommandEntityData](DestroyLevelCommandEntityData). |
+| DestroyLevelCommandEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [DestroyLevelCommandEntityData](/vext/ref/fb/destroylevelcommandentitydata/).                    |
+| DestroyLevelCommandEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [DestroyLevelCommandEntityData](/vext/ref/fb/destroylevelcommandentitydata/).              |
+| DestroyLevelCommandEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [DestroyLevelCommandEntityData](/vext/ref/fb/destroylevelcommandentitydata/).                            |
+| DestroyLevelCommandEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [DestroyLevelCommandEntityData](/vext/ref/fb/destroylevelcommandentitydata/).                    |
+| DestroyLevelCommandEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [DestroyLevelCommandEntityData](/vext/ref/fb/destroylevelcommandentitydata/).              |
+| DestroyLevelCommandEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DestroyLevelCommandEntityData](/vext/ref/fb/destroylevelcommandentitydata/). |
 
 ## Properties
 
@@ -33,11 +33,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                           | Name            | Parameters                                     |
 | -------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [DestroyLevelCommandEntityData](DestroyLevelCommandEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [DestroyLevelCommandEntityData](/vext/ref/fb/destroylevelcommandentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [DestroyLevelCommandEntityData](DestroyLevelCommandEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [DestroyLevelCommandEntityData](/vext/ref/fb/destroylevelcommandentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -45,4 +45,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

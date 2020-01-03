@@ -16,18 +16,18 @@ A structure type representing a Frostbite data type.
 
 | Name               | Type                                                               | Description |
 | ------------------ | ------------------------------------------------------------------ | ----------- |
-| usage              | [PointCloudAttributeUsage](PointCloudAttributeUsage)               |             |
-| iFrameQuantization | [PointCloudAttributeQuantization](PointCloudAttributeQuantization) |             |
-| dFrameQuantization | [PointCloudAttributeQuantization](PointCloudAttributeQuantization) |             |
+| usage              | [PointCloudAttributeUsage](/vext/ref/fb/pointcloudattributeusage/)               |             |
+| iFrameQuantization | [PointCloudAttributeQuantization](/vext/ref/fb/pointcloudattributequantization/) |             |
+| dFrameQuantization | [PointCloudAttributeQuantization](/vext/ref/fb/pointcloudattributequantization/) |             |
 
 ## Methods
 
 | Type                                                               | Name            | Parameters |
 | ------------------------------------------------------------------ | --------------- | ---------- |
-| [AnimatedPointCloudAttributeDesc](AnimatedPointCloudAttributeDesc) | [Clone](#clone) |            |
+| [AnimatedPointCloudAttributeDesc](/vext/ref/fb/animatedpointcloudattributedesc/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [AnimatedPointCloudAttributeDesc](AnimatedPointCloudAttributeDesc) **Clone**()
+> [AnimatedPointCloudAttributeDesc](/vext/ref/fb/animatedpointcloudattributedesc/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

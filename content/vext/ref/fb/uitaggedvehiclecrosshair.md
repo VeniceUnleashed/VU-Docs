@@ -25,10 +25,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                 | Name            | Parameters |
 | ---------------------------------------------------- | --------------- | ---------- |
-| [UITaggedVehicleCrosshair](UITaggedVehicleCrosshair) | [Clone](#clone) |            |
+| [UITaggedVehicleCrosshair](/vext/ref/fb/uitaggedvehiclecrosshair/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [UITaggedVehicleCrosshair](UITaggedVehicleCrosshair) **Clone**()
+> [UITaggedVehicleCrosshair](/vext/ref/fb/uitaggedvehiclecrosshair/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

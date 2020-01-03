@@ -3,7 +3,7 @@ title: PackagingRule
 ---
 ### Base Classes
 
-[Asset](Asset)
+[Asset](/vext/ref/fb/asset/)
 
 ## Description
 
@@ -15,8 +15,8 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
 | PackagingRule()                                                          | Create a new instance of this container type.                                                                     |
 | PackagingRule(PackagingRule other)                                       | Create a reference copy of an instance of the same type.                                                          |
-| PackagingRule([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [PackagingRule](PackagingRule).                                      |
-| PackagingRule([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PackagingRule](PackagingRule). |
+| PackagingRule([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [PackagingRule](/vext/ref/fb/packagingrule/).                                      |
+| PackagingRule([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PackagingRule](/vext/ref/fb/packagingrule/). |
 
 ## Properties
 
@@ -29,11 +29,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                           | Name            | Parameters                                     |
 | ------------------------------ | --------------- | ---------------------------------------------- |
-| [PackagingRule](PackagingRule) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [PackagingRule](/vext/ref/fb/packagingrule/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [PackagingRule](PackagingRule) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [PackagingRule](/vext/ref/fb/packagingrule/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -41,4 +41,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

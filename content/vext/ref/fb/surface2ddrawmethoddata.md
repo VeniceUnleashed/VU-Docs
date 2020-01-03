@@ -16,10 +16,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                               | Name            | Parameters |
 | -------------------------------------------------- | --------------- | ---------- |
-| [Surface2dDrawMethodData](Surface2dDrawMethodData) | [Clone](#clone) |            |
+| [Surface2dDrawMethodData](/vext/ref/fb/surface2ddrawmethoddata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [Surface2dDrawMethodData](Surface2dDrawMethodData) **Clone**()
+> [Surface2dDrawMethodData](/vext/ref/fb/surface2ddrawmethoddata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

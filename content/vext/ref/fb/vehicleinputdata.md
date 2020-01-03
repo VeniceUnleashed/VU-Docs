@@ -41,10 +41,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                 | Name            | Parameters |
 | ------------------------------------ | --------------- | ---------- |
-| [VehicleInputData](VehicleInputData) | [Clone](#clone) |            |
+| [VehicleInputData](/vext/ref/fb/vehicleinputdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [VehicleInputData](VehicleInputData) **Clone**()
+> [VehicleInputData](/vext/ref/fb/vehicleinputdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

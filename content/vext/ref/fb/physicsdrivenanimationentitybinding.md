@@ -16,44 +16,44 @@ A structure type representing a Frostbite data type.
 
 | Name                   | Type             | Description |
 | ---------------------- | ---------------- | ----------- |
-| aimLeftRight           | [AntRef](AntRef) |             |
-| aimUpDown              | [AntRef](AntRef) |             |
-| crouch                 | [AntRef](AntRef) |             |
-| forceSetTrajectory     | [AntRef](AntRef) |             |
-| inAir                  | [AntRef](AntRef) |             |
-| skydive                | [AntRef](AntRef) |             |
-| parachute              | [AntRef](AntRef) |             |
-| swim                   | [AntRef](AntRef) |             |
-| inputBackward          | [AntRef](AntRef) |             |
-| inputForward           | [AntRef](AntRef) |             |
-| inputLeft              | [AntRef](AntRef) |             |
-| inputRight             | [AntRef](AntRef) |             |
-| isEnemy                | [AntRef](AntRef) |             |
-| jump                   | [AntRef](AntRef) |             |
-| leanLeftRight          | [AntRef](AntRef) |             |
-| prone                  | [AntRef](AntRef) |             |
-| sprint                 | [AntRef](AntRef) |             |
-| groundSupported        | [AntRef](AntRef) |             |
-| groundNormal           | [AntRef](AntRef) |             |
-| groundDistance         | [AntRef](AntRef) |             |
-| groundAngleZ           | [AntRef](AntRef) |             |
-| groundAngleX           | [AntRef](AntRef) |             |
-| groundAngleFromNormal  | [AntRef](AntRef) |             |
-| isClientAnimatable     | [AntRef](AntRef) |             |
-| customizationScreen    | [AntRef](AntRef) |             |
-| minimal3pServer        | [AntRef](AntRef) |             |
-| verticalImpact         | [AntRef](AntRef) |             |
-| falseSignal            | [AntRef](AntRef) |             |
-| lockArmsToCameraWeight | [AntRef](AntRef) |             |
+| aimLeftRight           | [AntRef](/vext/ref/fb/antref/) |             |
+| aimUpDown              | [AntRef](/vext/ref/fb/antref/) |             |
+| crouch                 | [AntRef](/vext/ref/fb/antref/) |             |
+| forceSetTrajectory     | [AntRef](/vext/ref/fb/antref/) |             |
+| inAir                  | [AntRef](/vext/ref/fb/antref/) |             |
+| skydive                | [AntRef](/vext/ref/fb/antref/) |             |
+| parachute              | [AntRef](/vext/ref/fb/antref/) |             |
+| swim                   | [AntRef](/vext/ref/fb/antref/) |             |
+| inputBackward          | [AntRef](/vext/ref/fb/antref/) |             |
+| inputForward           | [AntRef](/vext/ref/fb/antref/) |             |
+| inputLeft              | [AntRef](/vext/ref/fb/antref/) |             |
+| inputRight             | [AntRef](/vext/ref/fb/antref/) |             |
+| isEnemy                | [AntRef](/vext/ref/fb/antref/) |             |
+| jump                   | [AntRef](/vext/ref/fb/antref/) |             |
+| leanLeftRight          | [AntRef](/vext/ref/fb/antref/) |             |
+| prone                  | [AntRef](/vext/ref/fb/antref/) |             |
+| sprint                 | [AntRef](/vext/ref/fb/antref/) |             |
+| groundSupported        | [AntRef](/vext/ref/fb/antref/) |             |
+| groundNormal           | [AntRef](/vext/ref/fb/antref/) |             |
+| groundDistance         | [AntRef](/vext/ref/fb/antref/) |             |
+| groundAngleZ           | [AntRef](/vext/ref/fb/antref/) |             |
+| groundAngleX           | [AntRef](/vext/ref/fb/antref/) |             |
+| groundAngleFromNormal  | [AntRef](/vext/ref/fb/antref/) |             |
+| isClientAnimatable     | [AntRef](/vext/ref/fb/antref/) |             |
+| customizationScreen    | [AntRef](/vext/ref/fb/antref/) |             |
+| minimal3pServer        | [AntRef](/vext/ref/fb/antref/) |             |
+| verticalImpact         | [AntRef](/vext/ref/fb/antref/) |             |
+| falseSignal            | [AntRef](/vext/ref/fb/antref/) |             |
+| lockArmsToCameraWeight | [AntRef](/vext/ref/fb/antref/) |             |
 
 ## Methods
 
 | Type                                                                       | Name            | Parameters |
 | -------------------------------------------------------------------------- | --------------- | ---------- |
-| [PhysicsDrivenAnimationEntityBinding](PhysicsDrivenAnimationEntityBinding) | [Clone](#clone) |            |
+| [PhysicsDrivenAnimationEntityBinding](/vext/ref/fb/physicsdrivenanimationentitybinding/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [PhysicsDrivenAnimationEntityBinding](PhysicsDrivenAnimationEntityBinding) **Clone**()
+> [PhysicsDrivenAnimationEntityBinding](/vext/ref/fb/physicsdrivenanimationentitybinding/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

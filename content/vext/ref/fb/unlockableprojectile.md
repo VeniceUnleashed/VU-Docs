@@ -17,18 +17,18 @@ A structure type representing a Frostbite data type.
 | Name           | Type                                         | Description |
 | -------------- | -------------------------------------------- | ----------- |
 | initialSpeed   | [Vec3](/vext/ref/shared/class/vec3)            |             |
-| projectileData | [ProjectileEntityData](ProjectileEntityData) |             |
-| projectile     | [ProjectileBlueprint](ProjectileBlueprint)   |             |
-| unlock         | [UnlockAssetBase](UnlockAssetBase)           |             |
+| projectileData | [ProjectileEntityData](/vext/ref/fb/projectileentitydata/) |             |
+| projectile     | [ProjectileBlueprint](/vext/ref/fb/projectileblueprint/)   |             |
+| unlock         | [UnlockAssetBase](/vext/ref/fb/unlockassetbase/)           |             |
 
 ## Methods
 
 | Type                                         | Name            | Parameters |
 | -------------------------------------------- | --------------- | ---------- |
-| [UnlockableProjectile](UnlockableProjectile) | [Clone](#clone) |            |
+| [UnlockableProjectile](/vext/ref/fb/unlockableprojectile/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [UnlockableProjectile](UnlockableProjectile) **Clone**()
+> [UnlockableProjectile](/vext/ref/fb/unlockableprojectile/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

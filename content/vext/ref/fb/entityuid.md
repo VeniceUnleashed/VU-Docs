@@ -22,10 +22,10 @@ A structure type representing a Frostbite data type.
 
 | Type                   | Name            | Parameters |
 | ---------------------- | --------------- | ---------- |
-| [EntityUid](EntityUid) | [Clone](#clone) |            |
+| [EntityUid](/vext/ref/fb/entityuid/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [EntityUid](EntityUid) **Clone**()
+> [EntityUid](/vext/ref/fb/entityuid/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

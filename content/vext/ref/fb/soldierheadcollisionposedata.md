@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                         | Name            | Parameters |
 | ------------------------------------------------------------ | --------------- | ---------- |
-| [SoldierHeadCollisionPoseData](SoldierHeadCollisionPoseData) | [Clone](#clone) |            |
+| [SoldierHeadCollisionPoseData](/vext/ref/fb/soldierheadcollisionposedata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SoldierHeadCollisionPoseData](SoldierHeadCollisionPoseData) **Clone**()
+> [SoldierHeadCollisionPoseData](/vext/ref/fb/soldierheadcollisionposedata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -17,16 +17,16 @@ A structure type representing a Frostbite data type.
 | Name             | Type                                         | Description |
 | ---------------- | -------------------------------------------- | ----------- |
 | messageSid       | string                                       |             |
-| entryInputAction | [EntryInputActionEnum](EntryInputActionEnum) |             |
+| entryInputAction | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum/) |             |
 
 ## Methods
 
 | Type                               | Name            | Parameters |
 | ---------------------------------- | --------------- | ---------- |
-| [MessageLineData](MessageLineData) | [Clone](#clone) |            |
+| [MessageLineData](/vext/ref/fb/messagelinedata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [MessageLineData](MessageLineData) **Clone**()
+> [MessageLineData](/vext/ref/fb/messagelinedata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

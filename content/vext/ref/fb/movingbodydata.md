@@ -15,7 +15,7 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | MovingBodyData()                                                          | Create a new instance of this container type.                                                                       |
 | MovingBodyData(MovingBodyData other)                                      | Create a reference copy of an instance of the same type.                                                            |
-| MovingBodyData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MovingBodyData](MovingBodyData). |
+| MovingBodyData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MovingBodyData](/vext/ref/fb/movingbodydata/). |
 
 ## Properties
 
@@ -28,11 +28,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                             | Name            | Parameters                                     |
 | -------------------------------- | --------------- | ---------------------------------------------- |
-| [MovingBodyData](MovingBodyData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [MovingBodyData](/vext/ref/fb/movingbodydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [MovingBodyData](MovingBodyData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [MovingBodyData](/vext/ref/fb/movingbodydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -40,4 +40,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

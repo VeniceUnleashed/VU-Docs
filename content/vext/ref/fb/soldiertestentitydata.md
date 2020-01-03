@@ -3,7 +3,7 @@ title: SoldierTestEntityData
 ---
 ### Base Classes
 
-[GameEntityData](GameEntityData)
+[GameEntityData](/vext/ref/fb/gameentitydata/)
 
 ## Description
 
@@ -15,29 +15,29 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | SoldierTestEntityData()                                                          | Create a new instance of this container type.                                                                                     |
 | SoldierTestEntityData(SoldierTestEntityData other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| SoldierTestEntityData([GameEntityData](GameEntityData) other)                    | Upcast an instance of type [GameEntityData](GameEntityData) to [SoldierTestEntityData](SoldierTestEntityData).                    |
-| SoldierTestEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [SoldierTestEntityData](SoldierTestEntityData).              |
-| SoldierTestEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [SoldierTestEntityData](SoldierTestEntityData).                            |
-| SoldierTestEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [SoldierTestEntityData](SoldierTestEntityData).                    |
-| SoldierTestEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [SoldierTestEntityData](SoldierTestEntityData).              |
-| SoldierTestEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoldierTestEntityData](SoldierTestEntityData). |
+| SoldierTestEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [SoldierTestEntityData](/vext/ref/fb/soldiertestentitydata/).                    |
+| SoldierTestEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [SoldierTestEntityData](/vext/ref/fb/soldiertestentitydata/).              |
+| SoldierTestEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [SoldierTestEntityData](/vext/ref/fb/soldiertestentitydata/).                            |
+| SoldierTestEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [SoldierTestEntityData](/vext/ref/fb/soldiertestentitydata/).                    |
+| SoldierTestEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [SoldierTestEntityData](/vext/ref/fb/soldiertestentitydata/).              |
+| SoldierTestEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoldierTestEntityData](/vext/ref/fb/soldiertestentitydata/). |
 
 ## Properties
 
 | Name                      | Type                                                 | Description |
 | ------------------------- | ---------------------------------------------------- | ----------- |
-| testSoldier               | [SoldierBlueprint](SoldierBlueprint)                 |             |
-| template                  | [SoldierSpawnTemplateData](SoldierSpawnTemplateData) |             |
-| testVehicle               | [VehicleBlueprint](VehicleBlueprint)                 |             |
+| testSoldier               | [SoldierBlueprint](/vext/ref/fb/soldierblueprint/)                 |             |
+| template                  | [SoldierSpawnTemplateData](/vext/ref/fb/soldierspawntemplatedata/) |             |
+| testVehicle               | [VehicleBlueprint](/vext/ref/fb/vehicleblueprint/)                 |             |
 | specialAnimationIndex     | number                                               |             |
-| unlocksProfile            | [RawFileAsset](RawFileAsset)                         |             |
-| team                      | [TeamId](TeamId)                                     |             |
+| unlocksProfile            | [RawFileAsset](/vext/ref/fb/rawfileasset/)                         |             |
+| team                      | [TeamId](/vext/ref/fb/teamid/)                                     |             |
 | randomSeed                | number                                               |             |
-| startSequence             | [MovementActionData](MovementActionData)             |             |
-| startSequenceRoot         | [MovementActionRoot](MovementActionRoot)             |             |
+| startSequence             | [MovementActionData](/vext/ref/fb/movementactiondata/)             |             |
+| startSequenceRoot         | [MovementActionRoot](/vext/ref/fb/movementactionroot/)             |             |
 | yawInputVal               | number                                               |             |
 | cameraMovementsFilename   | string                                               |             |
-| inputRecorder             | [InputRecorderData](InputRecorderData)               |             |
+| inputRecorder             | [InputRecorderData](/vext/ref/fb/inputrecorderdata/)               |             |
 | throttleInputVal          | number                                               |             |
 | fireInputVal              | number                                               |             |
 | strafeInputVal            | number                                               |             |
@@ -59,11 +59,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                           | Name            | Parameters                                     |
 | ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [SoldierTestEntityData](SoldierTestEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [SoldierTestEntityData](/vext/ref/fb/soldiertestentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [SoldierTestEntityData](SoldierTestEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [SoldierTestEntityData](/vext/ref/fb/soldiertestentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -71,4 +71,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

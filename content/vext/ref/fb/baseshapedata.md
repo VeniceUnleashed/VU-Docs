@@ -3,7 +3,7 @@ title: BaseShapeData
 ---
 ### Base Classes
 
-[GameObjectData](GameObjectData)
+[GameObjectData](/vext/ref/fb/gameobjectdata/)
 
 ## Description
 
@@ -15,19 +15,19 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
 | BaseShapeData()                                                          | Create a new instance of this container type.                                                                     |
 | BaseShapeData(BaseShapeData other)                                       | Create a reference copy of an instance of the same type.                                                          |
-| BaseShapeData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [BaseShapeData](BaseShapeData).                    |
-| BaseShapeData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [BaseShapeData](BaseShapeData).              |
-| BaseShapeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BaseShapeData](BaseShapeData). |
+| BaseShapeData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [BaseShapeData](/vext/ref/fb/baseshapedata/).                    |
+| BaseShapeData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [BaseShapeData](/vext/ref/fb/baseshapedata/).              |
+| BaseShapeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BaseShapeData](/vext/ref/fb/baseshapedata/). |
 
 ## Methods
 
 | Type                           | Name            | Parameters                                     |
 | ------------------------------ | --------------- | ---------------------------------------------- |
-| [BaseShapeData](BaseShapeData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [BaseShapeData](/vext/ref/fb/baseshapedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [BaseShapeData](BaseShapeData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [BaseShapeData](/vext/ref/fb/baseshapedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -35,4 +35,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

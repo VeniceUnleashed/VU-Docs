@@ -25,10 +25,10 @@ A structure type representing a Frostbite data type.
 
 | Type                   | Name            | Parameters |
 | ---------------------- | --------------- | ---------- |
-| [Strengths](Strengths) | [Clone](#clone) |            |
+| [Strengths](/vext/ref/fb/strengths/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [Strengths](Strengths) **Clone**()
+> [Strengths](/vext/ref/fb/strengths/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

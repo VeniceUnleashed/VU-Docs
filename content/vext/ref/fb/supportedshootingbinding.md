@@ -16,24 +16,24 @@ A structure type representing a Frostbite data type.
 
 | Name           | Type             | Description |
 | -------------- | ---------------- | ----------- |
-| supported      | [AntRef](AntRef) |             |
-| supportedPos   | [AntRef](AntRef) |             |
-| forwardVector  | [AntRef](AntRef) |             |
-| yaw            | [AntRef](AntRef) |             |
-| pitch          | [AntRef](AntRef) |             |
-| distToObject   | [AntRef](AntRef) |             |
-| heightOfObject | [AntRef](AntRef) |             |
-| undeploying    | [AntRef](AntRef) |             |
-| animatedCamera | [AntRef](AntRef) |             |
+| supported      | [AntRef](/vext/ref/fb/antref/) |             |
+| supportedPos   | [AntRef](/vext/ref/fb/antref/) |             |
+| forwardVector  | [AntRef](/vext/ref/fb/antref/) |             |
+| yaw            | [AntRef](/vext/ref/fb/antref/) |             |
+| pitch          | [AntRef](/vext/ref/fb/antref/) |             |
+| distToObject   | [AntRef](/vext/ref/fb/antref/) |             |
+| heightOfObject | [AntRef](/vext/ref/fb/antref/) |             |
+| undeploying    | [AntRef](/vext/ref/fb/antref/) |             |
+| animatedCamera | [AntRef](/vext/ref/fb/antref/) |             |
 
 ## Methods
 
 | Type                                                 | Name            | Parameters |
 | ---------------------------------------------------- | --------------- | ---------- |
-| [SupportedShootingBinding](SupportedShootingBinding) | [Clone](#clone) |            |
+| [SupportedShootingBinding](/vext/ref/fb/supportedshootingbinding/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SupportedShootingBinding](SupportedShootingBinding) **Clone**()
+> [SupportedShootingBinding](/vext/ref/fb/supportedshootingbinding/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -3,7 +3,7 @@ title: CoverEntityData
 ---
 ### Base Classes
 
-[SpatialEntityData](SpatialEntityData)
+[SpatialEntityData](/vext/ref/fb/spatialentitydata/)
 
 ## Description
 
@@ -15,19 +15,19 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | CoverEntityData()                                                          | Create a new instance of this container type.                                                                         |
 | CoverEntityData(CoverEntityData other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| CoverEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [CoverEntityData](CoverEntityData).              |
-| CoverEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [CoverEntityData](CoverEntityData).                            |
-| CoverEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [CoverEntityData](CoverEntityData).                    |
-| CoverEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [CoverEntityData](CoverEntityData).              |
-| CoverEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CoverEntityData](CoverEntityData). |
+| CoverEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [CoverEntityData](/vext/ref/fb/coverentitydata/).              |
+| CoverEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [CoverEntityData](/vext/ref/fb/coverentitydata/).                            |
+| CoverEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [CoverEntityData](/vext/ref/fb/coverentitydata/).                    |
+| CoverEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [CoverEntityData](/vext/ref/fb/coverentitydata/).              |
+| CoverEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CoverEntityData](/vext/ref/fb/coverentitydata/). |
 
 ## Properties
 
 | Name             | Type                       | Description |
 | ---------------- | -------------------------- | ----------- |
 | width            | number                     |             |
-| coverType        | [CoverType](CoverType)     |             |
-| slots            | [CoverSlot](CoverSlot)\[\] |             |
+| coverType        | [CoverType](/vext/ref/fb/covertype/)     |             |
+| slots            | [CoverSlot](/vext/ref/fb/coverslot/)\[\] |             |
 | rightEdgeBlocked | bool                       |             |
 | topBlocked       | bool                       |             |
 | leftEdgeBlocked  | bool                       |             |
@@ -36,11 +36,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                               | Name            | Parameters                                     |
 | ---------------------------------- | --------------- | ---------------------------------------------- |
-| [CoverEntityData](CoverEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [CoverEntityData](/vext/ref/fb/coverentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [CoverEntityData](CoverEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [CoverEntityData](/vext/ref/fb/coverentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -48,4 +48,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

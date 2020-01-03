@@ -16,20 +16,20 @@ A structure type representing a Frostbite data type.
 
 | Name                      | Type             | Description |
 | ------------------------- | ---------------- | ----------- |
-| connectJointGroup         | [AntRef](AntRef) |             |
-| connectJointWeight        | [AntRef](AntRef) |             |
-| enableAlign               | [AntRef](AntRef) |             |
-| disableCulling            | [AntRef](AntRef) |             |
-| translationYWarpTolerance | [AntRef](AntRef) |             |
+| connectJointGroup         | [AntRef](/vext/ref/fb/antref/) |             |
+| connectJointWeight        | [AntRef](/vext/ref/fb/antref/) |             |
+| enableAlign               | [AntRef](/vext/ref/fb/antref/) |             |
+| disableCulling            | [AntRef](/vext/ref/fb/antref/) |             |
+| translationYWarpTolerance | [AntRef](/vext/ref/fb/antref/) |             |
 
 ## Methods
 
 | Type                                         | Name            | Parameters |
 | -------------------------------------------- | --------------- | ---------- |
-| [WarpAnimationBinding](WarpAnimationBinding) | [Clone](#clone) |            |
+| [WarpAnimationBinding](/vext/ref/fb/warpanimationbinding/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [WarpAnimationBinding](WarpAnimationBinding) **Clone**()
+> [WarpAnimationBinding](/vext/ref/fb/warpanimationbinding/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

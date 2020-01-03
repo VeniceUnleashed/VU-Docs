@@ -3,7 +3,7 @@ title: PackagingCellData
 ---
 ### Base Classes
 
-[EntityData](EntityData)
+[EntityData](/vext/ref/fb/entitydata/)
 
 ## Description
 
@@ -15,28 +15,28 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | PackagingCellData()                                                          | Create a new instance of this container type.                                                                             |
 | PackagingCellData(PackagingCellData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| PackagingCellData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [PackagingCellData](PackagingCellData).                            |
-| PackagingCellData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [PackagingCellData](PackagingCellData).                    |
-| PackagingCellData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [PackagingCellData](PackagingCellData).              |
-| PackagingCellData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PackagingCellData](PackagingCellData). |
+| PackagingCellData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [PackagingCellData](/vext/ref/fb/packagingcelldata/).                            |
+| PackagingCellData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [PackagingCellData](/vext/ref/fb/packagingcelldata/).                    |
+| PackagingCellData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [PackagingCellData](/vext/ref/fb/packagingcelldata/).              |
+| PackagingCellData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PackagingCellData](/vext/ref/fb/packagingcelldata/). |
 
 ## Properties
 
 | Name    | Type                                       | Description |
 | ------- | ------------------------------------------ | ----------- |
-| rules   | [PackagingRule](PackagingRule)\[\]         |             |
-| targets | [PackagingCellData](PackagingCellData)\[\] |             |
+| rules   | [PackagingRule](/vext/ref/fb/packagingrule/)\[\]         |             |
+| targets | [PackagingCellData](/vext/ref/fb/packagingcelldata/)\[\] |             |
 | shape   | [Vec2](/vext/ref/shared/class/vec2)\[\]      |             |
 
 ## Methods
 
 | Type                                   | Name            | Parameters                                     |
 | -------------------------------------- | --------------- | ---------------------------------------------- |
-| [PackagingCellData](PackagingCellData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [PackagingCellData](/vext/ref/fb/packagingcelldata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [PackagingCellData](PackagingCellData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [PackagingCellData](/vext/ref/fb/packagingcelldata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -44,4 +44,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

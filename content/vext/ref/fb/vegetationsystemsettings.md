@@ -15,7 +15,7 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | VegetationSystemSettings()                                                          | Create a new instance of this container type.                                                                                           |
 | VegetationSystemSettings(VegetationSystemSettings other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| VegetationSystemSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VegetationSystemSettings](VegetationSystemSettings). |
+| VegetationSystemSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VegetationSystemSettings](/vext/ref/fb/vegetationsystemsettings/). |
 
 ## Properties
 
@@ -50,11 +50,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                 | Name            | Parameters                                     |
 | ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [VegetationSystemSettings](VegetationSystemSettings) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [VegetationSystemSettings](/vext/ref/fb/vegetationsystemsettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [VegetationSystemSettings](VegetationSystemSettings) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [VegetationSystemSettings](/vext/ref/fb/vegetationsystemsettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -62,4 +62,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

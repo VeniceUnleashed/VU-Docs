@@ -16,17 +16,17 @@ A structure type representing a Frostbite data type.
 
 | Name         | Type                           | Description |
 | ------------ | ------------------------------ | ----------- |
-| inputConcept | [UIInputAction](UIInputAction) |             |
+| inputConcept | [UIInputAction](/vext/ref/fb/uiinputaction/) |             |
 | label        | string                         |             |
 
 ## Methods
 
 | Type                           | Name            | Parameters |
 | ------------------------------ | --------------- | ---------- |
-| [UIPopupButton](UIPopupButton) | [Clone](#clone) |            |
+| [UIPopupButton](/vext/ref/fb/uipopupbutton/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [UIPopupButton](UIPopupButton) **Clone**()
+> [UIPopupButton](/vext/ref/fb/uipopupbutton/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

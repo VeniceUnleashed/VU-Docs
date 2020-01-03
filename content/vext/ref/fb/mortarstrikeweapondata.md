@@ -3,7 +3,7 @@ title: MortarStrikeWeaponData
 ---
 ### Base Classes
 
-[WeaponData](WeaponData)
+[WeaponData](/vext/ref/fb/weapondata/)
 
 ## Description
 
@@ -15,9 +15,9 @@ A container type representing a Frostbite instance entry.
 | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | MortarStrikeWeaponData()                                                          | Create a new instance of this container type.                                                                                       |
 | MortarStrikeWeaponData(MortarStrikeWeaponData other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| MortarStrikeWeaponData([WeaponData](WeaponData) other)                            | Upcast an instance of type [WeaponData](WeaponData) to [MortarStrikeWeaponData](MortarStrikeWeaponData).                            |
-| MortarStrikeWeaponData([ToolData](ToolData) other)                                | Upcast an instance of type [ToolData](ToolData) to [MortarStrikeWeaponData](MortarStrikeWeaponData).                                |
-| MortarStrikeWeaponData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MortarStrikeWeaponData](MortarStrikeWeaponData). |
+| MortarStrikeWeaponData([WeaponData](/vext/ref/fb/weapondata/) other)                            | Upcast an instance of type [WeaponData](/vext/ref/fb/weapondata/) to [MortarStrikeWeaponData](/vext/ref/fb/mortarstrikeweapondata/).                            |
+| MortarStrikeWeaponData([ToolData](/vext/ref/fb/tooldata/) other)                                | Upcast an instance of type [ToolData](/vext/ref/fb/tooldata/) to [MortarStrikeWeaponData](/vext/ref/fb/mortarstrikeweapondata/).                                |
+| MortarStrikeWeaponData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MortarStrikeWeaponData](/vext/ref/fb/mortarstrikeweapondata/). |
 
 ## Properties
 
@@ -32,11 +32,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                             | Name            | Parameters                                     |
 | ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [MortarStrikeWeaponData](MortarStrikeWeaponData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [MortarStrikeWeaponData](/vext/ref/fb/mortarstrikeweapondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [MortarStrikeWeaponData](MortarStrikeWeaponData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [MortarStrikeWeaponData](/vext/ref/fb/mortarstrikeweapondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -44,4 +44,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

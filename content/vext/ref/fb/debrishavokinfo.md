@@ -16,17 +16,17 @@ A structure type representing a Frostbite data type.
 
 | Name         | Type                     | Description |
 | ------------ | ------------------------ | ----------- |
-| havokAsset   | [HavokAsset](HavokAsset) |             |
+| havokAsset   | [HavokAsset](/vext/ref/fb/havokasset/) |             |
 | reserveCount | number                   |             |
 
 ## Methods
 
 | Type                               | Name            | Parameters |
 | ---------------------------------- | --------------- | ---------- |
-| [DebrisHavokInfo](DebrisHavokInfo) | [Clone](#clone) |            |
+| [DebrisHavokInfo](/vext/ref/fb/debrishavokinfo/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [DebrisHavokInfo](DebrisHavokInfo) **Clone**()
+> [DebrisHavokInfo](/vext/ref/fb/debrishavokinfo/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

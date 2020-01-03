@@ -3,7 +3,7 @@ title: SoldierEntityData
 ---
 ### Base Classes
 
-[CharacterEntityData](CharacterEntityData)
+[CharacterEntityData](/vext/ref/fb/characterentitydata/)
 
 ## Description
 
@@ -15,43 +15,43 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | SoldierEntityData()                                                          | Create a new instance of this container type.                                                                             |
 | SoldierEntityData(SoldierEntityData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| SoldierEntityData([CharacterEntityData](CharacterEntityData) other)          | Upcast an instance of type [CharacterEntityData](CharacterEntityData) to [SoldierEntityData](SoldierEntityData).          |
-| SoldierEntityData([ControllableEntityData](ControllableEntityData) other)    | Upcast an instance of type [ControllableEntityData](ControllableEntityData) to [SoldierEntityData](SoldierEntityData).    |
-| SoldierEntityData([GamePhysicsEntityData](GamePhysicsEntityData) other)      | Upcast an instance of type [GamePhysicsEntityData](GamePhysicsEntityData) to [SoldierEntityData](SoldierEntityData).      |
-| SoldierEntityData([GameEntityData](GameEntityData) other)                    | Upcast an instance of type [GameEntityData](GameEntityData) to [SoldierEntityData](SoldierEntityData).                    |
-| SoldierEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [SoldierEntityData](SoldierEntityData).              |
-| SoldierEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [SoldierEntityData](SoldierEntityData).                            |
-| SoldierEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [SoldierEntityData](SoldierEntityData).                    |
-| SoldierEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [SoldierEntityData](SoldierEntityData).              |
-| SoldierEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoldierEntityData](SoldierEntityData). |
+| SoldierEntityData([CharacterEntityData](/vext/ref/fb/characterentitydata/) other)          | Upcast an instance of type [CharacterEntityData](/vext/ref/fb/characterentitydata/) to [SoldierEntityData](/vext/ref/fb/soldierentitydata/).          |
+| SoldierEntityData([ControllableEntityData](/vext/ref/fb/controllableentitydata/) other)    | Upcast an instance of type [ControllableEntityData](/vext/ref/fb/controllableentitydata/) to [SoldierEntityData](/vext/ref/fb/soldierentitydata/).    |
+| SoldierEntityData([GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata/) other)      | Upcast an instance of type [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata/) to [SoldierEntityData](/vext/ref/fb/soldierentitydata/).      |
+| SoldierEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [SoldierEntityData](/vext/ref/fb/soldierentitydata/).                    |
+| SoldierEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [SoldierEntityData](/vext/ref/fb/soldierentitydata/).              |
+| SoldierEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [SoldierEntityData](/vext/ref/fb/soldierentitydata/).                            |
+| SoldierEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [SoldierEntityData](/vext/ref/fb/soldierentitydata/).                    |
+| SoldierEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [SoldierEntityData](/vext/ref/fb/soldierentitydata/).              |
+| SoldierEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoldierEntityData](/vext/ref/fb/soldierentitydata/). |
 
 ## Properties
 
 | Name                      | Type                                                             | Description |
 | ------------------------- | ---------------------------------------------------------------- | ----------- |
 | flirKeyColor              | [Vec3](/vext/ref/shared/class/vec3)                                |             |
-| headMaterialPair          | [MaterialContainerPair](MaterialContainerPair)                   |             |
-| boneFakePhysics           | [BoneFakePhysicsData](BoneFakePhysicsData)\[\]                   |             |
-| autoAim                   | [SoldierAutoAimData](SoldierAutoAimData)                         |             |
-| aimingConstraints         | [SoldierAimingConstraintsData](SoldierAimingConstraintsData)     |             |
-| headCollision             | [SoldierHeadCollisionData](SoldierHeadCollisionData)             |             |
-| characterPhysics          | [CharacterPhysicsData](CharacterPhysicsData)                     |             |
-| footMaterialPair          | [MaterialContainerPair](MaterialContainerPair)                   |             |
-| sprintSettings            | [SoldierSprintSettingsData](SoldierSprintSettingsData)           |             |
-| meshes1p                  | [SoldierMeshData](SoldierMeshData)\[\]                           |             |
-| meshes3p                  | [SoldierMeshData](SoldierMeshData)\[\]                           |             |
-| hidableMeshParts          | [HidableSoldierMeshWeaponPart](HidableSoldierMeshWeaponPart)\[\] |             |
-| sound                     | [SoldierSoundData](SoldierSoundData)                             |             |
-| streamGroup1p             | [StreamGroupData](StreamGroupData)                               |             |
+| headMaterialPair          | [MaterialContainerPair](/vext/ref/fb/materialcontainerpair/)                   |             |
+| boneFakePhysics           | [BoneFakePhysicsData](/vext/ref/fb/bonefakephysicsdata/)\[\]                   |             |
+| autoAim                   | [SoldierAutoAimData](/vext/ref/fb/soldierautoaimdata/)                         |             |
+| aimingConstraints         | [SoldierAimingConstraintsData](/vext/ref/fb/soldieraimingconstraintsdata/)     |             |
+| headCollision             | [SoldierHeadCollisionData](/vext/ref/fb/soldierheadcollisiondata/)             |             |
+| characterPhysics          | [CharacterPhysicsData](/vext/ref/fb/characterphysicsdata/)                     |             |
+| footMaterialPair          | [MaterialContainerPair](/vext/ref/fb/materialcontainerpair/)                   |             |
+| sprintSettings            | [SoldierSprintSettingsData](/vext/ref/fb/soldiersprintsettingsdata/)           |             |
+| meshes1p                  | [SoldierMeshData](/vext/ref/fb/soldiermeshdata/)\[\]                           |             |
+| meshes3p                  | [SoldierMeshData](/vext/ref/fb/soldiermeshdata/)\[\]                           |             |
+| hidableMeshParts          | [HidableSoldierMeshWeaponPart](/vext/ref/fb/hidablesoldiermeshweaponpart/)\[\] |             |
+| sound                     | [SoldierSoundData](/vext/ref/fb/soldiersounddata/)                             |             |
+| streamGroup1p             | [StreamGroupData](/vext/ref/fb/streamgroupdata/)                               |             |
 | impulseReactionTime       | number                                                           |             |
-| healthModule              | [SoldierHealthModuleData](SoldierHealthModuleData)               |             |
+| healthModule              | [SoldierHealthModuleData](/vext/ref/fb/soldierhealthmoduledata/)               |             |
 | maxHealth                 | number                                                           |             |
-| collisionInfo             | [CollisionData](CollisionData)                                   |             |
-| voiceOverInfo             | [EntityVoiceOverInfo](EntityVoiceOverInfo)                       |             |
+| collisionInfo             | [CollisionData](/vext/ref/fb/collisiondata/)                                   |             |
+| voiceOverInfo             | [EntityVoiceOverInfo](/vext/ref/fb/entityvoiceoverinfo/)                       |             |
 | flirValue                 | number                                                           |             |
-| breathControl             | [BreathControlData](BreathControlData)\[\]                       |             |
+| breathControl             | [BreathControlData](/vext/ref/fb/breathcontroldata/)\[\]                       |             |
 | explosionDamageModifier   | number                                                           |             |
-| uiParts                   | [UIPartData](UIPartData)\[\]                                     |             |
+| uiParts                   | [UIPartData](/vext/ref/fb/uipartdata/)\[\]                                     |             |
 | regenerationDelayModifier | number                                                           |             |
 | freeSpaceCheck            | bool                                                             |             |
 | proximityCheck            | bool                                                             |             |
@@ -70,11 +70,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                   | Name            | Parameters                                     |
 | -------------------------------------- | --------------- | ---------------------------------------------- |
-| [SoldierEntityData](SoldierEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [SoldierEntityData](/vext/ref/fb/soldierentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [SoldierEntityData](SoldierEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [SoldierEntityData](/vext/ref/fb/soldierentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -82,4 +82,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

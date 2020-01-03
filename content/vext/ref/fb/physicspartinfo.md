@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                               | Name            | Parameters |
 | ---------------------------------- | --------------- | ---------- |
-| [PhysicsPartInfo](PhysicsPartInfo) | [Clone](#clone) |            |
+| [PhysicsPartInfo](/vext/ref/fb/physicspartinfo/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [PhysicsPartInfo](PhysicsPartInfo) **Clone**()
+> [PhysicsPartInfo](/vext/ref/fb/physicspartinfo/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

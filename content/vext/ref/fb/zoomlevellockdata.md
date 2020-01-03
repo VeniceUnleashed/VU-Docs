@@ -17,16 +17,16 @@ A structure type representing a Frostbite data type.
 | Name                  | Type                 | Description |
 | --------------------- | -------------------- | ----------- |
 | outlineTaggedDistance | number               |             |
-| lockType              | [LockType](LockType) |             |
+| lockType              | [LockType](/vext/ref/fb/locktype/) |             |
 
 ## Methods
 
 | Type                                   | Name            | Parameters |
 | -------------------------------------- | --------------- | ---------- |
-| [ZoomLevelLockData](ZoomLevelLockData) | [Clone](#clone) |            |
+| [ZoomLevelLockData](/vext/ref/fb/zoomlevellockdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [ZoomLevelLockData](ZoomLevelLockData) **Clone**()
+> [ZoomLevelLockData](/vext/ref/fb/zoomlevellockdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

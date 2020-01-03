@@ -16,17 +16,17 @@ A structure type representing a Frostbite data type.
 
 | Name          | Type                           | Description |
 | ------------- | ------------------------------ | ----------- |
-| interruptEnum | [UIInterruptID](UIInterruptID) |             |
-| interruptFlow | [UIGraphAsset](UIGraphAsset)   |             |
+| interruptEnum | [UIInterruptID](/vext/ref/fb/uiinterruptid/) |             |
+| interruptFlow | [UIGraphAsset](/vext/ref/fb/uigraphasset/)   |             |
 
 ## Methods
 
 | Type                           | Name            | Parameters |
 | ------------------------------ | --------------- | ---------- |
-| [InterruptFlow](InterruptFlow) | [Clone](#clone) |            |
+| [InterruptFlow](/vext/ref/fb/interruptflow/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [InterruptFlow](InterruptFlow) **Clone**()
+> [InterruptFlow](/vext/ref/fb/interruptflow/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

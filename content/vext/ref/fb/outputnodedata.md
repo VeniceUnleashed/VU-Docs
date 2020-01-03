@@ -3,7 +3,7 @@ title: OutputNodeData
 ---
 ### Base Classes
 
-[AudioGraphNodeData](AudioGraphNodeData)
+[AudioGraphNodeData](/vext/ref/fb/audiographnodedata/)
 
 ## Description
 
@@ -15,28 +15,28 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | OutputNodeData()                                                          | Create a new instance of this container type.                                                                       |
 | OutputNodeData(OutputNodeData other)                                      | Create a reference copy of an instance of the same type.                                                            |
-| OutputNodeData([AudioGraphNodeData](AudioGraphNodeData) other)            | Upcast an instance of type [AudioGraphNodeData](AudioGraphNodeData) to [OutputNodeData](OutputNodeData).            |
-| OutputNodeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [OutputNodeData](OutputNodeData). |
+| OutputNodeData([AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) other)            | Upcast an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) to [OutputNodeData](/vext/ref/fb/outputnodedata/).            |
+| OutputNodeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [OutputNodeData](/vext/ref/fb/outputnodedata/). |
 
 ## Properties
 
 | Name                 | Type                                           | Description |
 | -------------------- | ---------------------------------------------- | ----------- |
-| inValue              | [AudioGraphNodePort](AudioGraphNodePort)       |             |
-| bypassHeadroom       | [AudioGraphNodePort](AudioGraphNodePort)       |             |
+| inValue              | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/)       |             |
+| bypassHeadroom       | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/)       |             |
 | minDistance          | number                                         |             |
-| attenuationCurve     | [AudioCurve](AudioCurve)                       |             |
+| attenuationCurve     | [AudioCurve](/vext/ref/fb/audiocurve/)                       |             |
 | gain                 | number                                         |             |
 | hfDampingDistance    | number                                         |             |
 | hfDampingObstruction | number                                         |             |
 | hfDampingOcclusion   | number                                         |             |
-| mainSendPlugin       | [SoundGraphPluginRef](SoundGraphPluginRef)     |             |
-| mainSend             | [SoundBusData](SoundBusData)                   |             |
+| mainSendPlugin       | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref/)     |             |
+| mainSend             | [SoundBusData](/vext/ref/fb/soundbusdata/)                   |             |
 | outputName           | string                                         |             |
-| transformSource      | [OutputTransformSource](OutputTransformSource) |             |
+| transformSource      | [OutputTransformSource](/vext/ref/fb/outputtransformsource/) |             |
 | outputNameHash       | number                                         |             |
-| lowPassPlugin        | [SoundGraphPluginRef](SoundGraphPluginRef)     |             |
-| vuPlugin             | [SoundGraphPluginRef](SoundGraphPluginRef)     |             |
+| lowPassPlugin        | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref/)     |             |
+| vuPlugin             | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref/)     |             |
 | solo                 | bool                                           |             |
 | enableHdr            | bool                                           |             |
 
@@ -44,11 +44,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                             | Name            | Parameters                                     |
 | -------------------------------- | --------------- | ---------------------------------------------- |
-| [OutputNodeData](OutputNodeData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [OutputNodeData](/vext/ref/fb/outputnodedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [OutputNodeData](OutputNodeData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [OutputNodeData](/vext/ref/fb/outputnodedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -56,4 +56,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

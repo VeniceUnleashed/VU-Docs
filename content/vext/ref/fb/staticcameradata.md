@@ -3,7 +3,7 @@ title: StaticCameraData
 ---
 ### Base Classes
 
-[TargetCameraData](TargetCameraData)
+[TargetCameraData](/vext/ref/fb/targetcameradata/)
 
 ## Description
 
@@ -15,11 +15,11 @@ A container type representing a Frostbite instance entry.
 | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | StaticCameraData()                                                          | Create a new instance of this container type.                                                                           |
 | StaticCameraData(StaticCameraData other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| StaticCameraData([TargetCameraData](TargetCameraData) other)                | Upcast an instance of type [TargetCameraData](TargetCameraData) to [StaticCameraData](StaticCameraData).                |
-| StaticCameraData([CameraData](CameraData) other)                            | Upcast an instance of type [CameraData](CameraData) to [StaticCameraData](StaticCameraData).                            |
-| StaticCameraData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [StaticCameraData](StaticCameraData).                    |
-| StaticCameraData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [StaticCameraData](StaticCameraData).              |
-| StaticCameraData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StaticCameraData](StaticCameraData). |
+| StaticCameraData([TargetCameraData](/vext/ref/fb/targetcameradata/) other)                | Upcast an instance of type [TargetCameraData](/vext/ref/fb/targetcameradata/) to [StaticCameraData](/vext/ref/fb/staticcameradata/).                |
+| StaticCameraData([CameraData](/vext/ref/fb/cameradata/) other)                            | Upcast an instance of type [CameraData](/vext/ref/fb/cameradata/) to [StaticCameraData](/vext/ref/fb/staticcameradata/).                            |
+| StaticCameraData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [StaticCameraData](/vext/ref/fb/staticcameradata/).                    |
+| StaticCameraData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [StaticCameraData](/vext/ref/fb/staticcameradata/).              |
+| StaticCameraData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StaticCameraData](/vext/ref/fb/staticcameradata/). |
 
 ## Properties
 
@@ -30,14 +30,14 @@ A container type representing a Frostbite instance entry.
 | upCurve                           | [Vec3](/vext/ref/shared/class/vec3)\[\]                        |             |
 | downCurve                         | [Vec3](/vext/ref/shared/class/vec3)\[\]                        |             |
 | upPitchAngle                      | number                                                       |             |
-| yawInputAction                    | [EntryInputActionEnum](EntryInputActionEnum)                 |             |
-| loosePartPhysics                  | [CameraLoosePartPhysicsData](CameraLoosePartPhysicsData)\[\] |             |
+| yawInputAction                    | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum/)                 |             |
+| loosePartPhysics                  | [CameraLoosePartPhysicsData](/vext/ref/fb/cameraloosepartphysicsdata/)\[\] |             |
 | leftYawAngle                      | number                                                       |             |
 | rightYawAngle                     | number                                                       |             |
 | pitchSensitivityZoomed            | number                                                       |             |
 | downPitchAngle                    | number                                                       |             |
 | averageFilterFrames               | number                                                       |             |
-| pitchInputAction                  | [EntryInputActionEnum](EntryInputActionEnum)                 |             |
+| pitchInputAction                  | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum/)                 |             |
 | yawSensitivityZoomed              | number                                                       |             |
 | pitchSensitivityNonZoomed         | number                                                       |             |
 | yawSensitivityNonZoomed           | number                                                       |             |
@@ -50,11 +50,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                 | Name            | Parameters                                     |
 | ------------------------------------ | --------------- | ---------------------------------------------- |
-| [StaticCameraData](StaticCameraData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [StaticCameraData](/vext/ref/fb/staticcameradata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [StaticCameraData](StaticCameraData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [StaticCameraData](/vext/ref/fb/staticcameradata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -62,4 +62,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

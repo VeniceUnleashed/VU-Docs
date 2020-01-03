@@ -23,16 +23,16 @@ A structure type representing a Frostbite data type.
 | serverSideSecondsBlockedTolerance | number                           |             |
 | notificationSid                   | string                           |             |
 | stillBlockedSid                   | string                           |             |
-| warningSound                      | [SoundWaveAsset](SoundWaveAsset) |             |
+| warningSound                      | [SoundWaveAsset](/vext/ref/fb/soundwaveasset/) |             |
 
 ## Methods
 
 | Type                             | Name            | Parameters |
 | -------------------------------- | --------------- | ---------- |
-| [AntiSpamConfig](AntiSpamConfig) | [Clone](#clone) |            |
+| [AntiSpamConfig](/vext/ref/fb/antispamconfig/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [AntiSpamConfig](AntiSpamConfig) **Clone**()
+> [AntiSpamConfig](/vext/ref/fb/antispamconfig/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

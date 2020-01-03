@@ -3,7 +3,7 @@ title: ArtilleryStrikeWeaponData
 ---
 ### Base Classes
 
-[WeaponData](WeaponData)
+[WeaponData](/vext/ref/fb/weapondata/)
 
 ## Description
 
@@ -15,9 +15,9 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | ArtilleryStrikeWeaponData()                                                          | Create a new instance of this container type.                                                                                             |
 | ArtilleryStrikeWeaponData(ArtilleryStrikeWeaponData other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| ArtilleryStrikeWeaponData([WeaponData](WeaponData) other)                            | Upcast an instance of type [WeaponData](WeaponData) to [ArtilleryStrikeWeaponData](ArtilleryStrikeWeaponData).                            |
-| ArtilleryStrikeWeaponData([ToolData](ToolData) other)                                | Upcast an instance of type [ToolData](ToolData) to [ArtilleryStrikeWeaponData](ArtilleryStrikeWeaponData).                                |
-| ArtilleryStrikeWeaponData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ArtilleryStrikeWeaponData](ArtilleryStrikeWeaponData). |
+| ArtilleryStrikeWeaponData([WeaponData](/vext/ref/fb/weapondata/) other)                            | Upcast an instance of type [WeaponData](/vext/ref/fb/weapondata/) to [ArtilleryStrikeWeaponData](/vext/ref/fb/artillerystrikeweapondata/).                            |
+| ArtilleryStrikeWeaponData([ToolData](/vext/ref/fb/tooldata/) other)                                | Upcast an instance of type [ToolData](/vext/ref/fb/tooldata/) to [ArtilleryStrikeWeaponData](/vext/ref/fb/artillerystrikeweapondata/).                                |
+| ArtilleryStrikeWeaponData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ArtilleryStrikeWeaponData](/vext/ref/fb/artillerystrikeweapondata/). |
 
 ## Properties
 
@@ -29,7 +29,7 @@ A container type representing a Frostbite instance entry.
 | maxRandomSpawnHeight            | number                               |             |
 | strikeCameraOffset              | number                               |             |
 | spawnHeightMultiplier           | number                               |             |
-| camera                          | [TargetCameraData](TargetCameraData) |             |
+| camera                          | [TargetCameraData](/vext/ref/fb/targetcameradata/) |             |
 | aimingCameraHeight              | number                               |             |
 | strikeCameraHeight              | number                               |             |
 | aimingCameraOffset              | number                               |             |
@@ -50,11 +50,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                   | Name            | Parameters                                     |
 | ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [ArtilleryStrikeWeaponData](ArtilleryStrikeWeaponData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [ArtilleryStrikeWeaponData](/vext/ref/fb/artillerystrikeweapondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [ArtilleryStrikeWeaponData](ArtilleryStrikeWeaponData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [ArtilleryStrikeWeaponData](/vext/ref/fb/artillerystrikeweapondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -62,4 +62,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

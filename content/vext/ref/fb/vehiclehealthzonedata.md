@@ -26,10 +26,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                           | Name            | Parameters |
 | ---------------------------------------------- | --------------- | ---------- |
-| [VehicleHealthZoneData](VehicleHealthZoneData) | [Clone](#clone) |            |
+| [VehicleHealthZoneData](/vext/ref/fb/vehiclehealthzonedata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [VehicleHealthZoneData](VehicleHealthZoneData) **Clone**()
+> [VehicleHealthZoneData](/vext/ref/fb/vehiclehealthzonedata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

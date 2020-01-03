@@ -17,7 +17,7 @@ A structure type representing a Frostbite data type.
 | Name           | Type                                       | Description |
 | -------------- | ------------------------------------------ | ----------- |
 | value          | string                                     |             |
-| platform       | [MatchmakingPlatform](MatchmakingPlatform) |             |
+| platform       | [MatchmakingPlatform](/vext/ref/fb/matchmakingplatform/) |             |
 | licenses       | string\[\]                                 |             |
 | useOnlyIfEmpty | bool                                       |             |
 
@@ -25,10 +25,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                           | Name            | Parameters |
 | ---------------------------------------------- | --------------- | ---------- |
-| [MatchmakingRuleString](MatchmakingRuleString) | [Clone](#clone) |            |
+| [MatchmakingRuleString](/vext/ref/fb/matchmakingrulestring/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [MatchmakingRuleString](MatchmakingRuleString) **Clone**()
+> [MatchmakingRuleString](/vext/ref/fb/matchmakingrulestring/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

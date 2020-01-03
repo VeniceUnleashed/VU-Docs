@@ -3,7 +3,7 @@ title: WeaponFiringDataModifier
 ---
 ### Base Classes
 
-[WeaponModifierBase](WeaponModifierBase)
+[WeaponModifierBase](/vext/ref/fb/weaponmodifierbase/)
 
 ## Description
 
@@ -15,24 +15,24 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | WeaponFiringDataModifier()                                                          | Create a new instance of this container type.                                                                                           |
 | WeaponFiringDataModifier(WeaponFiringDataModifier other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| WeaponFiringDataModifier([WeaponModifierBase](WeaponModifierBase) other)            | Upcast an instance of type [WeaponModifierBase](WeaponModifierBase) to [WeaponFiringDataModifier](WeaponFiringDataModifier).            |
-| WeaponFiringDataModifier([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponFiringDataModifier](WeaponFiringDataModifier). |
+| WeaponFiringDataModifier([WeaponModifierBase](/vext/ref/fb/weaponmodifierbase/) other)            | Upcast an instance of type [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase/) to [WeaponFiringDataModifier](/vext/ref/fb/weaponfiringdatamodifier/).            |
+| WeaponFiringDataModifier([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponFiringDataModifier](/vext/ref/fb/weaponfiringdatamodifier/). |
 
 ## Properties
 
 | Name         | Type                                 | Description |
 | ------------ | ------------------------------------ | ----------- |
-| weaponFiring | [WeaponFiringData](WeaponFiringData) |             |
+| weaponFiring | [WeaponFiringData](/vext/ref/fb/weaponfiringdata/) |             |
 
 ## Methods
 
 | Type                                                 | Name            | Parameters                                     |
 | ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [WeaponFiringDataModifier](WeaponFiringDataModifier) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [WeaponFiringDataModifier](/vext/ref/fb/weaponfiringdatamodifier/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [WeaponFiringDataModifier](WeaponFiringDataModifier) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [WeaponFiringDataModifier](/vext/ref/fb/weaponfiringdatamodifier/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -40,4 +40,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

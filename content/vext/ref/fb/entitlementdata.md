@@ -21,17 +21,17 @@ A structure type representing a Frostbite data type.
 | groupName       | string                             |             |
 | productId       | string                             |             |
 | projectId       | string                             |             |
-| usageType       | [EntitlementType](EntitlementType) |             |
+| usageType       | [EntitlementType](/vext/ref/fb/entitlementtype/) |             |
 | verifyOwnership | bool                               |             |
 
 ## Methods
 
 | Type                               | Name            | Parameters |
 | ---------------------------------- | --------------- | ---------- |
-| [EntitlementData](EntitlementData) | [Clone](#clone) |            |
+| [EntitlementData](/vext/ref/fb/entitlementdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [EntitlementData](EntitlementData) **Clone**()
+> [EntitlementData](/vext/ref/fb/entitlementdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -3,7 +3,7 @@ title: SniperLensScopeFilterData
 ---
 ### Base Classes
 
-[ScopeFilterData](ScopeFilterData)
+[ScopeFilterData](/vext/ref/fb/scopefilterdata/)
 
 ## Description
 
@@ -15,9 +15,9 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | SniperLensScopeFilterData()                                                          | Create a new instance of this container type.                                                                                             |
 | SniperLensScopeFilterData(SniperLensScopeFilterData other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| SniperLensScopeFilterData([ScopeFilterData](ScopeFilterData) other)                  | Upcast an instance of type [ScopeFilterData](ScopeFilterData) to [SniperLensScopeFilterData](SniperLensScopeFilterData).                  |
-| SniperLensScopeFilterData([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [SniperLensScopeFilterData](SniperLensScopeFilterData).                                      |
-| SniperLensScopeFilterData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SniperLensScopeFilterData](SniperLensScopeFilterData). |
+| SniperLensScopeFilterData([ScopeFilterData](/vext/ref/fb/scopefilterdata/) other)                  | Upcast an instance of type [ScopeFilterData](/vext/ref/fb/scopefilterdata/) to [SniperLensScopeFilterData](/vext/ref/fb/sniperlensscopefilterdata/).                  |
+| SniperLensScopeFilterData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [SniperLensScopeFilterData](/vext/ref/fb/sniperlensscopefilterdata/).                                      |
+| SniperLensScopeFilterData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SniperLensScopeFilterData](/vext/ref/fb/sniperlensscopefilterdata/). |
 
 ## Properties
 
@@ -31,17 +31,17 @@ A container type representing a Frostbite instance entry.
 | chromaticAberrationDisplacement1 | [Vec2](/vext/ref/shared/class/vec2) |             |
 | chromaticAberrationDisplacement2 | [Vec2](/vext/ref/shared/class/vec2) |             |
 | blurScale                        | number                            |             |
-| colorTintData                    | [ColorTintData](ColorTintData)    |             |
+| colorTintData                    | [ColorTintData](/vext/ref/fb/colortintdata/)    |             |
 
 ## Methods
 
 | Type                                                   | Name            | Parameters                                     |
 | ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [SniperLensScopeFilterData](SniperLensScopeFilterData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [SniperLensScopeFilterData](/vext/ref/fb/sniperlensscopefilterdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [SniperLensScopeFilterData](SniperLensScopeFilterData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [SniperLensScopeFilterData](/vext/ref/fb/sniperlensscopefilterdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -49,4 +49,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

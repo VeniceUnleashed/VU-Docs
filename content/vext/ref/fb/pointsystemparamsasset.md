@@ -3,7 +3,7 @@ title: PointSystemParamsAsset
 ---
 ### Base Classes
 
-[Asset](Asset)
+[Asset](/vext/ref/fb/asset/)
 
 ## Description
 
@@ -15,8 +15,8 @@ A container type representing a Frostbite instance entry.
 | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | PointSystemParamsAsset()                                                          | Create a new instance of this container type.                                                                                       |
 | PointSystemParamsAsset(PointSystemParamsAsset other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| PointSystemParamsAsset([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [PointSystemParamsAsset](PointSystemParamsAsset).                                      |
-| PointSystemParamsAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PointSystemParamsAsset](PointSystemParamsAsset). |
+| PointSystemParamsAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [PointSystemParamsAsset](/vext/ref/fb/pointsystemparamsasset/).                                      |
+| PointSystemParamsAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PointSystemParamsAsset](/vext/ref/fb/pointsystemparamsasset/). |
 
 ## Properties
 
@@ -32,11 +32,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                             | Name            | Parameters                                     |
 | ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [PointSystemParamsAsset](PointSystemParamsAsset) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [PointSystemParamsAsset](/vext/ref/fb/pointsystemparamsasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [PointSystemParamsAsset](PointSystemParamsAsset) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [PointSystemParamsAsset](/vext/ref/fb/pointsystemparamsasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -44,4 +44,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

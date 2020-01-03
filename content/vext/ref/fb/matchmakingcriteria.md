@@ -16,21 +16,21 @@ A structure type representing a Frostbite data type.
 
 | Name            | Type                                                                   | Description |
 | --------------- | ---------------------------------------------------------------------- | ----------- |
-| sizeRule        | [MatchmakingSizeRule](MatchmakingSizeRule)                             |             |
-| pingSiteRule    | [MatchmakingPingSiteRule](MatchmakingPingSiteRule)                     |             |
-| rankedRule      | [MatchmakingRankedRule](MatchmakingRankedRule)                         |             |
-| genericRules    | [MatchmakingGenericRule](MatchmakingGenericRule)\[\]                   |             |
-| virtualizedRule | [MatchmakingVirtualizedRule](MatchmakingVirtualizedRule)               |             |
-| uedRules        | [MatchmakingUserExtendedDataRule](MatchmakingUserExtendedDataRule)\[\] |             |
+| sizeRule        | [MatchmakingSizeRule](/vext/ref/fb/matchmakingsizerule/)                             |             |
+| pingSiteRule    | [MatchmakingPingSiteRule](/vext/ref/fb/matchmakingpingsiterule/)                     |             |
+| rankedRule      | [MatchmakingRankedRule](/vext/ref/fb/matchmakingrankedrule/)                         |             |
+| genericRules    | [MatchmakingGenericRule](/vext/ref/fb/matchmakinggenericrule/)\[\]                   |             |
+| virtualizedRule | [MatchmakingVirtualizedRule](/vext/ref/fb/matchmakingvirtualizedrule/)               |             |
+| uedRules        | [MatchmakingUserExtendedDataRule](/vext/ref/fb/matchmakinguserextendeddatarule/)\[\] |             |
 
 ## Methods
 
 | Type                                       | Name            | Parameters |
 | ------------------------------------------ | --------------- | ---------- |
-| [MatchmakingCriteria](MatchmakingCriteria) | [Clone](#clone) |            |
+| [MatchmakingCriteria](/vext/ref/fb/matchmakingcriteria/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [MatchmakingCriteria](MatchmakingCriteria) **Clone**()
+> [MatchmakingCriteria](/vext/ref/fb/matchmakingcriteria/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

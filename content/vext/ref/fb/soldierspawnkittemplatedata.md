@@ -3,7 +3,7 @@ title: SoldierSpawnKitTemplateData
 ---
 ### Base Classes
 
-[Asset](Asset)
+[Asset](/vext/ref/fb/asset/)
 
 ## Description
 
@@ -15,8 +15,8 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | SoldierSpawnKitTemplateData()                                                          | Create a new instance of this container type.                                                                                                 |
 | SoldierSpawnKitTemplateData(SoldierSpawnKitTemplateData other)                         | Create a reference copy of an instance of the same type.                                                                                      |
-| SoldierSpawnKitTemplateData([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [SoldierSpawnKitTemplateData](SoldierSpawnKitTemplateData).                                      |
-| SoldierSpawnKitTemplateData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoldierSpawnKitTemplateData](SoldierSpawnKitTemplateData). |
+| SoldierSpawnKitTemplateData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [SoldierSpawnKitTemplateData](/vext/ref/fb/soldierspawnkittemplatedata/).                                      |
+| SoldierSpawnKitTemplateData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoldierSpawnKitTemplateData](/vext/ref/fb/soldierspawnkittemplatedata/). |
 
 ## Properties
 
@@ -29,11 +29,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                       | Name            | Parameters                                     |
 | ---------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [SoldierSpawnKitTemplateData](SoldierSpawnKitTemplateData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [SoldierSpawnKitTemplateData](/vext/ref/fb/soldierspawnkittemplatedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [SoldierSpawnKitTemplateData](SoldierSpawnKitTemplateData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [SoldierSpawnKitTemplateData](/vext/ref/fb/soldierspawnkittemplatedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -41,4 +41,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

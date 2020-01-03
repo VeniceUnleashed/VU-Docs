@@ -3,7 +3,7 @@ title: EulerTransformSplitterEntityData
 ---
 ### Base Classes
 
-[EntityData](EntityData)
+[EntityData](/vext/ref/fb/entitydata/)
 
 ## Description
 
@@ -15,27 +15,27 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | EulerTransformSplitterEntityData()                                                          | Create a new instance of this container type.                                                                                                           |
 | EulerTransformSplitterEntityData(EulerTransformSplitterEntityData other)                    | Create a reference copy of an instance of the same type.                                                                                                |
-| EulerTransformSplitterEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [EulerTransformSplitterEntityData](EulerTransformSplitterEntityData).                            |
-| EulerTransformSplitterEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [EulerTransformSplitterEntityData](EulerTransformSplitterEntityData).                    |
-| EulerTransformSplitterEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [EulerTransformSplitterEntityData](EulerTransformSplitterEntityData).              |
-| EulerTransformSplitterEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EulerTransformSplitterEntityData](EulerTransformSplitterEntityData). |
+| EulerTransformSplitterEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [EulerTransformSplitterEntityData](/vext/ref/fb/eulertransformsplitterentitydata/).                            |
+| EulerTransformSplitterEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [EulerTransformSplitterEntityData](/vext/ref/fb/eulertransformsplitterentitydata/).                    |
+| EulerTransformSplitterEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [EulerTransformSplitterEntityData](/vext/ref/fb/eulertransformsplitterentitydata/).              |
+| EulerTransformSplitterEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EulerTransformSplitterEntityData](/vext/ref/fb/eulertransformsplitterentitydata/). |
 
 ## Properties
 
 | Name      | Type                                                    | Description |
 | --------- | ------------------------------------------------------- | ----------- |
 | transform | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
-| realm     | [Realm](Realm)                                          |             |
+| realm     | [Realm](/vext/ref/fb/realm/)                                          |             |
 
 ## Methods
 
 | Type                                                                 | Name            | Parameters                                     |
 | -------------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [EulerTransformSplitterEntityData](EulerTransformSplitterEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [EulerTransformSplitterEntityData](/vext/ref/fb/eulertransformsplitterentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [EulerTransformSplitterEntityData](EulerTransformSplitterEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [EulerTransformSplitterEntityData](/vext/ref/fb/eulertransformsplitterentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -43,4 +43,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

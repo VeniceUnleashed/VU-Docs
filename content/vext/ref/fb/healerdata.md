@@ -25,10 +25,10 @@ A structure type representing a Frostbite data type.
 
 | Type                     | Name            | Parameters |
 | ------------------------ | --------------- | ---------- |
-| [HealerData](HealerData) | [Clone](#clone) |            |
+| [HealerData](/vext/ref/fb/healerdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [HealerData](HealerData) **Clone**()
+> [HealerData](/vext/ref/fb/healerdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

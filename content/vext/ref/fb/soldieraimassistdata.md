@@ -3,7 +3,7 @@ title: SoldierAimAssistData
 ---
 ### Base Classes
 
-[GameDataContainer](GameDataContainer)
+[GameDataContainer](/vext/ref/fb/gamedatacontainer/)
 
 ## Description
 
@@ -15,8 +15,8 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | SoldierAimAssistData()                                                          | Create a new instance of this container type.                                                                                   |
 | SoldierAimAssistData(SoldierAimAssistData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| SoldierAimAssistData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [SoldierAimAssistData](SoldierAimAssistData).              |
-| SoldierAimAssistData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoldierAimAssistData](SoldierAimAssistData). |
+| SoldierAimAssistData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [SoldierAimAssistData](/vext/ref/fb/soldieraimassistdata/).              |
+| SoldierAimAssistData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoldierAimAssistData](/vext/ref/fb/soldieraimassistdata/). |
 
 ## Properties
 
@@ -55,11 +55,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                         | Name            | Parameters                                     |
 | -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [SoldierAimAssistData](SoldierAimAssistData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [SoldierAimAssistData](/vext/ref/fb/soldieraimassistdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [SoldierAimAssistData](SoldierAimAssistData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [SoldierAimAssistData](/vext/ref/fb/soldieraimassistdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -67,4 +67,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                       | Name            | Parameters |
 | ------------------------------------------ | --------------- | ---------- |
-| [DataCopValueSetting](DataCopValueSetting) | [Clone](#clone) |            |
+| [DataCopValueSetting](/vext/ref/fb/datacopvaluesetting/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [DataCopValueSetting](DataCopValueSetting) **Clone**()
+> [DataCopValueSetting](/vext/ref/fb/datacopvaluesetting/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

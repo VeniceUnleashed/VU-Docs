@@ -28,10 +28,10 @@ A structure type representing a Frostbite data type.
 
 | Type                           | Name            | Parameters |
 | ------------------------------ | --------------- | ---------- |
-| [SettingConfig](SettingConfig) | [Clone](#clone) |            |
+| [SettingConfig](/vext/ref/fb/settingconfig/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SettingConfig](SettingConfig) **Clone**()
+> [SettingConfig](/vext/ref/fb/settingconfig/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

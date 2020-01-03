@@ -16,10 +16,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                               | Name            | Parameters |
 | -------------------------------------------------- | --------------- | ---------- |
-| [RectangularCoverageData](RectangularCoverageData) | [Clone](#clone) |            |
+| [RectangularCoverageData](/vext/ref/fb/rectangularcoveragedata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [RectangularCoverageData](RectangularCoverageData) **Clone**()
+> [RectangularCoverageData](/vext/ref/fb/rectangularcoveragedata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

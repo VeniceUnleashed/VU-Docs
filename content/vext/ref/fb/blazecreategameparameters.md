@@ -16,16 +16,16 @@ A structure type representing a Frostbite data type.
 
 | Name | Type                                                               | Description |
 | ---- | ------------------------------------------------------------------ | ----------- |
-| base | [MatchmakingCreateGameParameters](MatchmakingCreateGameParameters) |             |
+| base | [MatchmakingCreateGameParameters](/vext/ref/fb/matchmakingcreategameparameters/) |             |
 
 ## Methods
 
 | Type                                                   | Name            | Parameters |
 | ------------------------------------------------------ | --------------- | ---------- |
-| [BlazeCreateGameParameters](BlazeCreateGameParameters) | [Clone](#clone) |            |
+| [BlazeCreateGameParameters](/vext/ref/fb/blazecreategameparameters/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [BlazeCreateGameParameters](BlazeCreateGameParameters) **Clone**()
+> [BlazeCreateGameParameters](/vext/ref/fb/blazecreategameparameters/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

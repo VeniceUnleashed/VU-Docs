@@ -3,7 +3,7 @@ title: SkinnedMeshAsset
 ---
 ### Base Classes
 
-[MeshAsset](MeshAsset)
+[MeshAsset](/vext/ref/fb/meshasset/)
 
 ## Description
 
@@ -15,9 +15,9 @@ A container type representing a Frostbite instance entry.
 | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | SkinnedMeshAsset()                                                          | Create a new instance of this container type.                                                                           |
 | SkinnedMeshAsset(SkinnedMeshAsset other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| SkinnedMeshAsset([MeshAsset](MeshAsset) other)                              | Upcast an instance of type [MeshAsset](MeshAsset) to [SkinnedMeshAsset](SkinnedMeshAsset).                              |
-| SkinnedMeshAsset([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [SkinnedMeshAsset](SkinnedMeshAsset).                                      |
-| SkinnedMeshAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SkinnedMeshAsset](SkinnedMeshAsset). |
+| SkinnedMeshAsset([MeshAsset](/vext/ref/fb/meshasset/) other)                              | Upcast an instance of type [MeshAsset](/vext/ref/fb/meshasset/) to [SkinnedMeshAsset](/vext/ref/fb/skinnedmeshasset/).                              |
+| SkinnedMeshAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [SkinnedMeshAsset](/vext/ref/fb/skinnedmeshasset/).                                      |
+| SkinnedMeshAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SkinnedMeshAsset](/vext/ref/fb/skinnedmeshasset/). |
 
 ## Properties
 
@@ -30,11 +30,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                 | Name            | Parameters                                     |
 | ------------------------------------ | --------------- | ---------------------------------------------- |
-| [SkinnedMeshAsset](SkinnedMeshAsset) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [SkinnedMeshAsset](/vext/ref/fb/skinnedmeshasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [SkinnedMeshAsset](SkinnedMeshAsset) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [SkinnedMeshAsset](/vext/ref/fb/skinnedmeshasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -42,4 +42,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

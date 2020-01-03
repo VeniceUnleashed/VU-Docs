@@ -17,22 +17,22 @@ A structure type representing a Frostbite data type.
 | Name                                  | Type                                                        | Description |
 | ------------------------------------- | ----------------------------------------------------------- | ----------- |
 | referencedAssetHashes                 | number\[\]                                                  |             |
-| boneFakePhysics                       | [BoneFakePhysicsData](BoneFakePhysicsData)\[\]              |             |
-| mesh1p                                | [SkinnedMeshAsset](SkinnedMeshAsset)                        |             |
-| meshZoom1p                            | [SkinnedMeshAsset](SkinnedMeshAsset)                        |             |
-| mesh3p                                | [SkinnedMeshAsset](SkinnedMeshAsset)                        |             |
-| weapon                                | [AntRef](AntRef)                                            |             |
+| boneFakePhysics                       | [BoneFakePhysicsData](/vext/ref/fb/bonefakephysicsdata/)\[\]              |             |
+| mesh1p                                | [SkinnedMeshAsset](/vext/ref/fb/skinnedmeshasset/)                        |             |
+| meshZoom1p                            | [SkinnedMeshAsset](/vext/ref/fb/skinnedmeshasset/)                        |             |
+| mesh3p                                | [SkinnedMeshAsset](/vext/ref/fb/skinnedmeshasset/)                        |             |
+| weapon                                | [AntRef](/vext/ref/fb/antref/)                                            |             |
 | zoomMeshTransitionFactor              | number                                                      |             |
 | zoomScaleFactor                       | number                                                      |             |
 | zoomInOutMeshTransitionFactors        | number\[\]                                                  |             |
-| zoomedScopeFilter                     | [ScopeFilterData](ScopeFilterData)                          |             |
-| nonZoomedScopeFilter                  | [ScopeFilterData](ScopeFilterData)                          |             |
+| zoomedScopeFilter                     | [ScopeFilterData](/vext/ref/fb/scopefilterdata/)                          |             |
+| nonZoomedScopeFilter                  | [ScopeFilterData](/vext/ref/fb/scopefilterdata/)                          |             |
 | keepAimingTime                        | number                                                      |             |
-| animationConfiguration                | [AnimationConfigurationData](AnimationConfigurationData)    |             |
-| animatedFireType                      | [AnimatedFireEnum](AnimatedFireEnum)                        |             |
-| animatedAimingType                    | [AnimatedAimingEnum](AnimatedAimingEnum)                    |             |
+| animationConfiguration                | [AnimationConfigurationData](/vext/ref/fb/animationconfigurationdata/)    |             |
+| animatedFireType                      | [AnimatedFireEnum](/vext/ref/fb/animatedfireenum/)                        |             |
+| animatedAimingType                    | [AnimatedAimingEnum](/vext/ref/fb/animatedaimingenum/)                    |             |
 | mesh3pTransforms                      | [LinearTransform](/vext/ref/shared/class/lineartransform)\[\] |             |
-| mesh3pRigidMeshSocketObjectTransforms | [RigidMeshSocketTransform](RigidMeshSocketTransform)\[\]    |             |
+| mesh3pRigidMeshSocketObjectTransforms | [RigidMeshSocketTransform](/vext/ref/fb/rigidmeshsockettransform/)\[\]    |             |
 | hideProjectileAfterFireTime           | number                                                      |             |
 | projectileBoneName                    | string                                                      |             |
 | isOneHanded                           | bool                                                        |             |
@@ -46,10 +46,10 @@ A structure type representing a Frostbite data type.
 
 | Type                               | Name            | Parameters |
 | ---------------------------------- | --------------- | ---------- |
-| [WeaponStateData](WeaponStateData) | [Clone](#clone) |            |
+| [WeaponStateData](/vext/ref/fb/weaponstatedata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [WeaponStateData](WeaponStateData) **Clone**()
+> [WeaponStateData](/vext/ref/fb/weaponstatedata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

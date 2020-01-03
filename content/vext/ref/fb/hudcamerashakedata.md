@@ -3,7 +3,7 @@ title: HudCameraShakeData
 ---
 ### Base Classes
 
-[UIComponentData](UIComponentData)
+[UIComponentData](/vext/ref/fb/uicomponentdata/)
 
 ## Description
 
@@ -15,9 +15,9 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | HudCameraShakeData()                                                          | Create a new instance of this container type.                                                                               |
 | HudCameraShakeData(HudCameraShakeData other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| HudCameraShakeData([UIComponentData](UIComponentData) other)                  | Upcast an instance of type [UIComponentData](UIComponentData) to [HudCameraShakeData](HudCameraShakeData).                  |
-| HudCameraShakeData([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [HudCameraShakeData](HudCameraShakeData).                                      |
-| HudCameraShakeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [HudCameraShakeData](HudCameraShakeData). |
+| HudCameraShakeData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [HudCameraShakeData](/vext/ref/fb/hudcamerashakedata/).                  |
+| HudCameraShakeData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [HudCameraShakeData](/vext/ref/fb/hudcamerashakedata/).                                      |
+| HudCameraShakeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [HudCameraShakeData](/vext/ref/fb/hudcamerashakedata/). |
 
 ## Properties
 
@@ -46,11 +46,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                     | Name            | Parameters                                     |
 | ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [HudCameraShakeData](HudCameraShakeData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [HudCameraShakeData](/vext/ref/fb/hudcamerashakedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [HudCameraShakeData](HudCameraShakeData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [HudCameraShakeData](/vext/ref/fb/hudcamerashakedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -58,4 +58,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

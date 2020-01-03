@@ -26,10 +26,10 @@ A structure type representing a Frostbite data type.
 
 | Type                           | Name            | Parameters |
 | ------------------------------ | --------------- | ---------- |
-| [HudImpactData](HudImpactData) | [Clone](#clone) |            |
+| [HudImpactData](/vext/ref/fb/hudimpactdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [HudImpactData](HudImpactData) **Clone**()
+> [HudImpactData](/vext/ref/fb/hudimpactdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

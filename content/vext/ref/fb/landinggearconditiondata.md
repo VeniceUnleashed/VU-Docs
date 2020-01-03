@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                 | Name            | Parameters |
 | ---------------------------------------------------- | --------------- | ---------- |
-| [LandingGearConditionData](LandingGearConditionData) | [Clone](#clone) |            |
+| [LandingGearConditionData](/vext/ref/fb/landinggearconditiondata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [LandingGearConditionData](LandingGearConditionData) **Clone**()
+> [LandingGearConditionData](/vext/ref/fb/landinggearconditiondata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -20,16 +20,16 @@ A structure type representing a Frostbite data type.
 | heatDropPerSecond   | number                           |             |
 | overHeatPenaltyTime | number                           |             |
 | overHeatThreshold   | number                           |             |
-| overHeatEffect      | [FireEffectData](FireEffectData) |             |
+| overHeatEffect      | [FireEffectData](/vext/ref/fb/fireeffectdata/) |             |
 
 ## Methods
 
 | Type                         | Name            | Parameters |
 | ---------------------------- | --------------- | ---------- |
-| [OverHeatData](OverHeatData) | [Clone](#clone) |            |
+| [OverHeatData](/vext/ref/fb/overheatdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [OverHeatData](OverHeatData) **Clone**()
+> [OverHeatData](/vext/ref/fb/overheatdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

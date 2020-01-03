@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                               | Name            | Parameters |
 | ------------------------------------------------------------------ | --------------- | ---------- |
-| [SoundGraphPluginConnectionParam](SoundGraphPluginConnectionParam) | [Clone](#clone) |            |
+| [SoundGraphPluginConnectionParam](/vext/ref/fb/soundgraphpluginconnectionparam/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SoundGraphPluginConnectionParam](SoundGraphPluginConnectionParam) **Clone**()
+> [SoundGraphPluginConnectionParam](/vext/ref/fb/soundgraphpluginconnectionparam/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

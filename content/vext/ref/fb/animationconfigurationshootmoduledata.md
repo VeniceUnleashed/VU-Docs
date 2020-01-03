@@ -22,10 +22,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                                           | Name            | Parameters |
 | ------------------------------------------------------------------------------ | --------------- | ---------- |
-| [AnimationConfigurationShootModuleData](AnimationConfigurationShootModuleData) | [Clone](#clone) |            |
+| [AnimationConfigurationShootModuleData](/vext/ref/fb/animationconfigurationshootmoduledata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [AnimationConfigurationShootModuleData](AnimationConfigurationShootModuleData) **Clone**()
+> [AnimationConfigurationShootModuleData](/vext/ref/fb/animationconfigurationshootmoduledata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

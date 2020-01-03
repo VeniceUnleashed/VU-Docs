@@ -19,8 +19,8 @@ A structure type representing a Frostbite data type.
 | wantedPos         | [Vec3](/vext/ref/shared/class/vec3) |             |
 | worldAngle        | number                            |             |
 | waitTime          | number                            |             |
-| enterPose         | [AntPoseEnum](AntPoseEnum)        |             |
-| exitPose          | [AntPoseEnum](AntPoseEnum)        |             |
+| enterPose         | [AntPoseEnum](/vext/ref/fb/antposeenum/)        |             |
+| exitPose          | [AntPoseEnum](/vext/ref/fb/antposeenum/)        |             |
 | overrideAngle     | bool                              |             |
 | useClientPosition | bool                              |             |
 
@@ -28,10 +28,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                     | Name            | Parameters |
 | ---------------------------------------- | --------------- | ---------- |
-| [AILocoMoveTaskData](AILocoMoveTaskData) | [Clone](#clone) |            |
+| [AILocoMoveTaskData](/vext/ref/fb/ailocomovetaskdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [AILocoMoveTaskData](AILocoMoveTaskData) **Clone**()
+> [AILocoMoveTaskData](/vext/ref/fb/ailocomovetaskdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

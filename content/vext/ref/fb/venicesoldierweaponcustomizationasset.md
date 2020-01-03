@@ -3,7 +3,7 @@ title: VeniceSoldierWeaponCustomizationAsset
 ---
 ### Base Classes
 
-[SoldierWeaponCustomizationAsset](SoldierWeaponCustomizationAsset)
+[SoldierWeaponCustomizationAsset](/vext/ref/fb/soldierweaponcustomizationasset/)
 
 ## Description
 
@@ -15,19 +15,19 @@ A container type representing a Frostbite instance entry.
 | --------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | VeniceSoldierWeaponCustomizationAsset()                                                                         | Create a new instance of this container type.                                                                                                                                    |
 | VeniceSoldierWeaponCustomizationAsset(VeniceSoldierWeaponCustomizationAsset other)                              | Create a reference copy of an instance of the same type.                                                                                                                         |
-| VeniceSoldierWeaponCustomizationAsset([SoldierWeaponCustomizationAsset](SoldierWeaponCustomizationAsset) other) | Upcast an instance of type [SoldierWeaponCustomizationAsset](SoldierWeaponCustomizationAsset) to [VeniceSoldierWeaponCustomizationAsset](VeniceSoldierWeaponCustomizationAsset). |
-| VeniceSoldierWeaponCustomizationAsset([Asset](Asset) other)                                                     | Upcast an instance of type [Asset](Asset) to [VeniceSoldierWeaponCustomizationAsset](VeniceSoldierWeaponCustomizationAsset).                                                     |
-| VeniceSoldierWeaponCustomizationAsset([DataContainer](/vext/ref/shared/class/datacontainer) other)                | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VeniceSoldierWeaponCustomizationAsset](VeniceSoldierWeaponCustomizationAsset).                |
+| VeniceSoldierWeaponCustomizationAsset([SoldierWeaponCustomizationAsset](/vext/ref/fb/soldierweaponcustomizationasset/) other) | Upcast an instance of type [SoldierWeaponCustomizationAsset](/vext/ref/fb/soldierweaponcustomizationasset/) to [VeniceSoldierWeaponCustomizationAsset](/vext/ref/fb/venicesoldierweaponcustomizationasset/). |
+| VeniceSoldierWeaponCustomizationAsset([Asset](/vext/ref/fb/asset/) other)                                                     | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [VeniceSoldierWeaponCustomizationAsset](/vext/ref/fb/venicesoldierweaponcustomizationasset/).                                                     |
+| VeniceSoldierWeaponCustomizationAsset([DataContainer](/vext/ref/shared/class/datacontainer) other)                | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VeniceSoldierWeaponCustomizationAsset](/vext/ref/fb/venicesoldierweaponcustomizationasset/).                |
 
 ## Methods
 
 | Type                                                                           | Name            | Parameters                                     |
 | ------------------------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [VeniceSoldierWeaponCustomizationAsset](VeniceSoldierWeaponCustomizationAsset) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [VeniceSoldierWeaponCustomizationAsset](/vext/ref/fb/venicesoldierweaponcustomizationasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [VeniceSoldierWeaponCustomizationAsset](VeniceSoldierWeaponCustomizationAsset) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [VeniceSoldierWeaponCustomizationAsset](/vext/ref/fb/venicesoldierweaponcustomizationasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -35,4 +35,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

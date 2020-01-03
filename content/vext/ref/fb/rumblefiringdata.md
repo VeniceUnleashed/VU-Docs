@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                 | Name            | Parameters |
 | ------------------------------------ | --------------- | ---------- |
-| [RumbleFiringData](RumbleFiringData) | [Clone](#clone) |            |
+| [RumbleFiringData](/vext/ref/fb/rumblefiringdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [RumbleFiringData](RumbleFiringData) **Clone**()
+> [RumbleFiringData](/vext/ref/fb/rumblefiringdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

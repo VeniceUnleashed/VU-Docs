@@ -22,10 +22,10 @@ A structure type representing a Frostbite data type.
 
 | Type                   | Name            | Parameters |
 | ---------------------- | --------------- | ---------- |
-| [EventSpec](EventSpec) | [Clone](#clone) |            |
+| [EventSpec](/vext/ref/fb/eventspec/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [EventSpec](EventSpec) **Clone**()
+> [EventSpec](/vext/ref/fb/eventspec/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

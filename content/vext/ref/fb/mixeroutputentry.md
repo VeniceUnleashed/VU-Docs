@@ -3,7 +3,7 @@ title: MixerOutputEntry
 ---
 ### Base Classes
 
-[AudioGraphNodePortGroup](AudioGraphNodePortGroup)
+[AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/)
 
 ## Description
 
@@ -15,25 +15,25 @@ A container type representing a Frostbite instance entry.
 | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | MixerOutputEntry()                                                          | Create a new instance of this container type.                                                                           |
 | MixerOutputEntry(MixerOutputEntry other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| MixerOutputEntry([AudioGraphNodePortGroup](AudioGraphNodePortGroup) other)  | Upcast an instance of type [AudioGraphNodePortGroup](AudioGraphNodePortGroup) to [MixerOutputEntry](MixerOutputEntry).  |
-| MixerOutputEntry([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MixerOutputEntry](MixerOutputEntry). |
+| MixerOutputEntry([AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/) other)  | Upcast an instance of type [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/) to [MixerOutputEntry](/vext/ref/fb/mixeroutputentry/).  |
+| MixerOutputEntry([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MixerOutputEntry](/vext/ref/fb/mixeroutputentry/). |
 
 ## Properties
 
 | Name    | Type                                       | Description |
 | ------- | ------------------------------------------ | ----------- |
-| inValue | [AudioGraphNodePort](AudioGraphNodePort)   |             |
-| target  | [AudioGraphParameter](AudioGraphParameter) |             |
+| inValue | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/)   |             |
+| target  | [AudioGraphParameter](/vext/ref/fb/audiographparameter/) |             |
 
 ## Methods
 
 | Type                                 | Name            | Parameters                                     |
 | ------------------------------------ | --------------- | ---------------------------------------------- |
-| [MixerOutputEntry](MixerOutputEntry) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [MixerOutputEntry](/vext/ref/fb/mixeroutputentry/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [MixerOutputEntry](MixerOutputEntry) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [MixerOutputEntry](/vext/ref/fb/mixeroutputentry/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -41,4 +41,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

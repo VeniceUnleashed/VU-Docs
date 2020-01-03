@@ -18,8 +18,8 @@ A structure type representing a Frostbite data type.
 | ----------------- | ---------------------------------------------------- | ----------- |
 | direction         | [Vec3](/vext/ref/shared/class/vec3)                    |             |
 | spawnPosition     | [Vec3](/vext/ref/shared/class/vec3)                    |             |
-| weaponUnlockAsset | [SoldierWeaponUnlockAsset](SoldierWeaponUnlockAsset) |             |
-| weaponType        | [AntHitReactionWeaponType](AntHitReactionWeaponType) |             |
+| weaponUnlockAsset | [SoldierWeaponUnlockAsset](/vext/ref/fb/soldierweaponunlockasset/) |             |
+| weaponType        | [AntHitReactionWeaponType](/vext/ref/fb/anthitreactionweapontype/) |             |
 | boneType          | number                                               |             |
 | shooterPlayerId   | number                                               |             |
 
@@ -27,10 +27,10 @@ A structure type representing a Frostbite data type.
 
 | Type                           | Name            | Parameters |
 | ------------------------------ | --------------- | ---------- |
-| [BulletHitInfo](BulletHitInfo) | [Clone](#clone) |            |
+| [BulletHitInfo](/vext/ref/fb/bullethitinfo/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [BulletHitInfo](BulletHitInfo) **Clone**()
+> [BulletHitInfo](/vext/ref/fb/bullethitinfo/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

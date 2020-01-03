@@ -16,16 +16,16 @@ A structure type representing a Frostbite data type.
 
 | Name    | Type                                 | Description |
 | ------- | ------------------------------------ | ----------- |
-| actions | [EditableAction](EditableAction)\[\] |             |
+| actions | [EditableAction](/vext/ref/fb/editableaction/)\[\] |             |
 
 ## Methods
 
 | Type                               | Name            | Parameters |
 | ---------------------------------- | --------------- | ---------- |
-| [EditableActions](EditableActions) | [Clone](#clone) |            |
+| [EditableActions](/vext/ref/fb/editableactions/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [EditableActions](EditableActions) **Clone**()
+> [EditableActions](/vext/ref/fb/editableactions/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

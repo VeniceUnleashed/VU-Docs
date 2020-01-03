@@ -16,17 +16,17 @@ A structure type representing a Frostbite data type.
 
 | Name      | Type                                   | Description |
 | --------- | -------------------------------------- | ----------- |
-| points    | [AudioCurvePoint](AudioCurvePoint)\[\] |             |
-| curveType | [AudioCurveType](AudioCurveType)       |             |
+| points    | [AudioCurvePoint](/vext/ref/fb/audiocurvepoint/)\[\] |             |
+| curveType | [AudioCurveType](/vext/ref/fb/audiocurvetype/)       |             |
 
 ## Methods
 
 | Type                     | Name            | Parameters |
 | ------------------------ | --------------- | ---------- |
-| [AudioCurve](AudioCurve) | [Clone](#clone) |            |
+| [AudioCurve](/vext/ref/fb/audiocurve/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [AudioCurve](AudioCurve) **Clone**()
+> [AudioCurve](/vext/ref/fb/audiocurve/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

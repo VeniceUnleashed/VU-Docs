@@ -3,7 +3,7 @@ title: WeaponDeployTimeModifier
 ---
 ### Base Classes
 
-[WeaponModifierBase](WeaponModifierBase)
+[WeaponModifierBase](/vext/ref/fb/weaponmodifierbase/)
 
 ## Description
 
@@ -15,8 +15,8 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | WeaponDeployTimeModifier()                                                          | Create a new instance of this container type.                                                                                           |
 | WeaponDeployTimeModifier(WeaponDeployTimeModifier other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| WeaponDeployTimeModifier([WeaponModifierBase](WeaponModifierBase) other)            | Upcast an instance of type [WeaponModifierBase](WeaponModifierBase) to [WeaponDeployTimeModifier](WeaponDeployTimeModifier).            |
-| WeaponDeployTimeModifier([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponDeployTimeModifier](WeaponDeployTimeModifier). |
+| WeaponDeployTimeModifier([WeaponModifierBase](/vext/ref/fb/weaponmodifierbase/) other)            | Upcast an instance of type [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase/) to [WeaponDeployTimeModifier](/vext/ref/fb/weapondeploytimemodifier/).            |
+| WeaponDeployTimeModifier([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponDeployTimeModifier](/vext/ref/fb/weapondeploytimemodifier/). |
 
 ## Properties
 
@@ -31,11 +31,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                 | Name            | Parameters                                     |
 | ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [WeaponDeployTimeModifier](WeaponDeployTimeModifier) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [WeaponDeployTimeModifier](/vext/ref/fb/weapondeploytimemodifier/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [WeaponDeployTimeModifier](WeaponDeployTimeModifier) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [WeaponDeployTimeModifier](/vext/ref/fb/weapondeploytimemodifier/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -43,4 +43,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

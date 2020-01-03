@@ -3,7 +3,7 @@ title: InputRestrictionEntityData
 ---
 ### Base Classes
 
-[GameEntityData](GameEntityData)
+[GameEntityData](/vext/ref/fb/gameentitydata/)
 
 ## Description
 
@@ -15,12 +15,12 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | InputRestrictionEntityData()                                                          | Create a new instance of this container type.                                                                                               |
 | InputRestrictionEntityData(InputRestrictionEntityData other)                          | Create a reference copy of an instance of the same type.                                                                                    |
-| InputRestrictionEntityData([GameEntityData](GameEntityData) other)                    | Upcast an instance of type [GameEntityData](GameEntityData) to [InputRestrictionEntityData](InputRestrictionEntityData).                    |
-| InputRestrictionEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [InputRestrictionEntityData](InputRestrictionEntityData).              |
-| InputRestrictionEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [InputRestrictionEntityData](InputRestrictionEntityData).                            |
-| InputRestrictionEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [InputRestrictionEntityData](InputRestrictionEntityData).                    |
-| InputRestrictionEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [InputRestrictionEntityData](InputRestrictionEntityData).              |
-| InputRestrictionEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [InputRestrictionEntityData](InputRestrictionEntityData). |
+| InputRestrictionEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [InputRestrictionEntityData](/vext/ref/fb/inputrestrictionentitydata/).                    |
+| InputRestrictionEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [InputRestrictionEntityData](/vext/ref/fb/inputrestrictionentitydata/).              |
+| InputRestrictionEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [InputRestrictionEntityData](/vext/ref/fb/inputrestrictionentitydata/).                            |
+| InputRestrictionEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [InputRestrictionEntityData](/vext/ref/fb/inputrestrictionentitydata/).                    |
+| InputRestrictionEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [InputRestrictionEntityData](/vext/ref/fb/inputrestrictionentitydata/).              |
+| InputRestrictionEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [InputRestrictionEntityData](/vext/ref/fb/inputrestrictionentitydata/). |
 
 ## Properties
 
@@ -80,11 +80,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                     | Name            | Parameters                                     |
 | -------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [InputRestrictionEntityData](InputRestrictionEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [InputRestrictionEntityData](/vext/ref/fb/inputrestrictionentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [InputRestrictionEntityData](InputRestrictionEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [InputRestrictionEntityData](/vext/ref/fb/inputrestrictionentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -92,4 +92,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

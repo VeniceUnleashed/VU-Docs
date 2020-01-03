@@ -24,23 +24,23 @@ A structure type representing a Frostbite data type.
 | pixelCount          | number                                                |             |
 | pixelSize           | number                                                |             |
 | systemId            | number                                                |             |
-| instances           | [EnlightenDbInstance](EnlightenDbInstance)\[\]        |             |
+| instances           | [EnlightenDbInstance](/vext/ref/fb/enlightendbinstance/)\[\]        |             |
 | inputSystems        | number\[\]                                            |             |
-| systemCache         | [PrecomputeCache](PrecomputeCache)                    |             |
-| clusteringCache     | [PrecomputeCache](PrecomputeCache)                    |             |
-| preClusteringCache  | [PrecomputeCache](PrecomputeCache)                    |             |
-| lightTransportCache | [PrecomputeCache](PrecomputeCache)                    |             |
-| visibilityCache     | [PrecomputeCache](PrecomputeCache)                    |             |
+| systemCache         | [PrecomputeCache](/vext/ref/fb/precomputecache/)                    |             |
+| clusteringCache     | [PrecomputeCache](/vext/ref/fb/precomputecache/)                    |             |
+| preClusteringCache  | [PrecomputeCache](/vext/ref/fb/precomputecache/)                    |             |
+| lightTransportCache | [PrecomputeCache](/vext/ref/fb/precomputecache/)                    |             |
+| visibilityCache     | [PrecomputeCache](/vext/ref/fb/precomputecache/)                    |             |
 | terrainSystem       | bool                                                  |             |
 
 ## Methods
 
 | Type                                   | Name            | Parameters |
 | -------------------------------------- | --------------- | ---------- |
-| [EnlightenDbSystem](EnlightenDbSystem) | [Clone](#clone) |            |
+| [EnlightenDbSystem](/vext/ref/fb/enlightendbsystem/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [EnlightenDbSystem](EnlightenDbSystem) **Clone**()
+> [EnlightenDbSystem](/vext/ref/fb/enlightendbsystem/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

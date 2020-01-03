@@ -17,16 +17,16 @@ A structure type representing a Frostbite data type.
 | Name         | Type                                                           | Description |
 | ------------ | -------------------------------------------------------------- | ----------- |
 | transform    | [LinearTransform](/vext/ref/shared/class/lineartransform)        |             |
-| socketObject | [WeaponRegularSocketObjectData](WeaponRegularSocketObjectData) |             |
+| socketObject | [WeaponRegularSocketObjectData](/vext/ref/fb/weaponregularsocketobjectdata/) |             |
 
 ## Methods
 
 | Type                                                 | Name            | Parameters |
 | ---------------------------------------------------- | --------------- | ---------- |
-| [RigidMeshSocketTransform](RigidMeshSocketTransform) | [Clone](#clone) |            |
+| [RigidMeshSocketTransform](/vext/ref/fb/rigidmeshsockettransform/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [RigidMeshSocketTransform](RigidMeshSocketTransform) **Clone**()
+> [RigidMeshSocketTransform](/vext/ref/fb/rigidmeshsockettransform/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -3,7 +3,7 @@ title: EmitterEntityData
 ---
 ### Base Classes
 
-[EffectEntityData](EffectEntityData)
+[EffectEntityData](/vext/ref/fb/effectentitydata/)
 
 ## Description
 
@@ -15,29 +15,29 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | EmitterEntityData()                                                          | Create a new instance of this container type.                                                                             |
 | EmitterEntityData(EmitterEntityData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| EmitterEntityData([EffectEntityData](EffectEntityData) other)                | Upcast an instance of type [EffectEntityData](EffectEntityData) to [EmitterEntityData](EmitterEntityData).                |
-| EmitterEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [EmitterEntityData](EmitterEntityData).              |
-| EmitterEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [EmitterEntityData](EmitterEntityData).                            |
-| EmitterEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [EmitterEntityData](EmitterEntityData).                    |
-| EmitterEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [EmitterEntityData](EmitterEntityData).              |
-| EmitterEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EmitterEntityData](EmitterEntityData). |
+| EmitterEntityData([EffectEntityData](/vext/ref/fb/effectentitydata/) other)                | Upcast an instance of type [EffectEntityData](/vext/ref/fb/effectentitydata/) to [EmitterEntityData](/vext/ref/fb/emitterentitydata/).                |
+| EmitterEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [EmitterEntityData](/vext/ref/fb/emitterentitydata/).              |
+| EmitterEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [EmitterEntityData](/vext/ref/fb/emitterentitydata/).                            |
+| EmitterEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [EmitterEntityData](/vext/ref/fb/emitterentitydata/).                    |
+| EmitterEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [EmitterEntityData](/vext/ref/fb/emitterentitydata/).              |
+| EmitterEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EmitterEntityData](/vext/ref/fb/emitterentitydata/). |
 
 ## Properties
 
 | Name             | Type                         | Description |
 | ---------------- | ---------------------------- | ----------- |
-| emitter          | [EmitterAsset](EmitterAsset) |             |
+| emitter          | [EmitterAsset](/vext/ref/fb/emitterasset/) |             |
 | spawnProbability | number                       |             |
 
 ## Methods
 
 | Type                                   | Name            | Parameters                                     |
 | -------------------------------------- | --------------- | ---------------------------------------------- |
-| [EmitterEntityData](EmitterEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [EmitterEntityData](/vext/ref/fb/emitterentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [EmitterEntityData](EmitterEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [EmitterEntityData](/vext/ref/fb/emitterentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -45,4 +45,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

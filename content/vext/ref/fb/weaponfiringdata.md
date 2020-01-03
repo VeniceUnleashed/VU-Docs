@@ -3,7 +3,7 @@ title: WeaponFiringData
 ---
 ### Base Classes
 
-[GameDataContainer](GameDataContainer)
+[GameDataContainer](/vext/ref/fb/gamedatacontainer/)
 
 ## Description
 
@@ -15,23 +15,23 @@ A container type representing a Frostbite instance entry.
 | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | WeaponFiringData()                                                          | Create a new instance of this container type.                                                                           |
 | WeaponFiringData(WeaponFiringData other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| WeaponFiringData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [WeaponFiringData](WeaponFiringData).              |
-| WeaponFiringData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponFiringData](WeaponFiringData). |
+| WeaponFiringData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [WeaponFiringData](/vext/ref/fb/weaponfiringdata/).              |
+| WeaponFiringData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponFiringData](/vext/ref/fb/weaponfiringdata/). |
 
 ## Properties
 
 | Name                        | Type                                     | Description |
 | --------------------------- | ---------------------------------------- | ----------- |
-| primaryFire                 | [FiringFunctionData](FiringFunctionData) |             |
+| primaryFire                 | [FiringFunctionData](/vext/ref/fb/firingfunctiondata/) |             |
 | deployTime                  | number                                   |             |
 | reactivateCooldownTime      | number                                   |             |
 | disableZoomOnDeployTime     | number                                   |             |
 | altDeployTime               | number                                   |             |
 | altDeployId                 | number                                   |             |
-| weaponSway                  | [WeaponSwayData](WeaponSwayData)         |             |
+| weaponSway                  | [WeaponSwayData](/vext/ref/fb/weaponswaydata/)         |             |
 | supportDelayProne           | number                                   |             |
 | supportDelayStand           | number                                   |             |
-| rumble                      | [RumbleFiringData](RumbleFiringData)     |             |
+| rumble                      | [RumbleFiringData](/vext/ref/fb/rumblefiringdata/)     |             |
 | inflictSelfDamage           | bool                                     |             |
 | useAutoAiming               | bool                                     |             |
 | showEnemyNametagOnAim       | bool                                     |             |
@@ -43,11 +43,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                 | Name            | Parameters                                     |
 | ------------------------------------ | --------------- | ---------------------------------------------- |
-| [WeaponFiringData](WeaponFiringData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [WeaponFiringData](/vext/ref/fb/weaponfiringdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [WeaponFiringData](WeaponFiringData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [WeaponFiringData](/vext/ref/fb/weaponfiringdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -55,4 +55,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

@@ -18,17 +18,17 @@ A structure type representing a Frostbite data type.
 | ------------------- | ---------------------------------------------------- | ----------- |
 | id                  | string                                               |             |
 | nameId              | string                                               |             |
-| actionMap           | [EntryInputActionMapsData](EntryInputActionMapsData) |             |
-| configurationLayout | [EditableActions](EditableActions)                   |             |
+| actionMap           | [EntryInputActionMapsData](/vext/ref/fb/entryinputactionmapsdata/) |             |
+| configurationLayout | [EditableActions](/vext/ref/fb/editableactions/)                   |             |
 
 ## Methods
 
 | Type                                   | Name            | Parameters |
 | -------------------------------------- | --------------- | ---------- |
-| [EditableActionMap](EditableActionMap) | [Clone](#clone) |            |
+| [EditableActionMap](/vext/ref/fb/editableactionmap/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [EditableActionMap](EditableActionMap) **Clone**()
+> [EditableActionMap](/vext/ref/fb/editableactionmap/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

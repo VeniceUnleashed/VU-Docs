@@ -20,23 +20,23 @@ A structure type representing a Frostbite data type.
 | instanceScale               | number\[\]                                                  |             |
 | instanceObjectVariation     | number\[\]                                                  |             |
 | instanceCastSunShadow       | bool\[\]                                                    |             |
-| memberType                  | [GamePhysicsEntityData](GamePhysicsEntityData)              |             |
-| meshEntityType              | [EntityData](EntityData)                                    |             |
+| memberType                  | [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata/)              |             |
+| meshEntityType              | [EntityData](/vext/ref/fb/entitydata/)                                    |             |
 | instanceCount               | number                                                      |             |
 | healthStateEntityManagerId  | number                                                      |             |
-| physicsPartRange            | [IndexRange](IndexRange)                                    |             |
+| physicsPartRange            | [IndexRange](/vext/ref/fb/indexrange/)                                    |             |
 | physicsPartCountPerInstance | number                                                      |             |
-| networkIdRange              | [IndexRange](IndexRange)                                    |             |
+| networkIdRange              | [IndexRange](/vext/ref/fb/indexrange/)                                    |             |
 | networkIdCountPerInstance   | number                                                      |             |
 
 ## Methods
 
 | Type                                                     | Name            | Parameters |
 | -------------------------------------------------------- | --------------- | ---------- |
-| [StaticModelGroupMemberData](StaticModelGroupMemberData) | [Clone](#clone) |            |
+| [StaticModelGroupMemberData](/vext/ref/fb/staticmodelgroupmemberdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [StaticModelGroupMemberData](StaticModelGroupMemberData) **Clone**()
+> [StaticModelGroupMemberData](/vext/ref/fb/staticmodelgroupmemberdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

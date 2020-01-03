@@ -3,7 +3,7 @@ title: LinearMovingBodyData
 ---
 ### Base Classes
 
-[MovingBodyData](MovingBodyData)
+[MovingBodyData](/vext/ref/fb/movingbodydata/)
 
 ## Description
 
@@ -15,26 +15,26 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | LinearMovingBodyData()                                                          | Create a new instance of this container type.                                                                                   |
 | LinearMovingBodyData(LinearMovingBodyData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| LinearMovingBodyData([MovingBodyData](MovingBodyData) other)                    | Upcast an instance of type [MovingBodyData](MovingBodyData) to [LinearMovingBodyData](LinearMovingBodyData).                    |
-| LinearMovingBodyData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LinearMovingBodyData](LinearMovingBodyData). |
+| LinearMovingBodyData([MovingBodyData](/vext/ref/fb/movingbodydata/) other)                    | Upcast an instance of type [MovingBodyData](/vext/ref/fb/movingbodydata/) to [LinearMovingBodyData](/vext/ref/fb/linearmovingbodydata/).                    |
+| LinearMovingBodyData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LinearMovingBodyData](/vext/ref/fb/linearmovingbodydata/). |
 
 ## Properties
 
 | Name     | Type                              | Description |
 | -------- | --------------------------------- | ----------- |
 | axis     | [Vec3](/vext/ref/shared/class/vec3) |             |
-| start    | [EndPointData](EndPointData)      |             |
-| endValue | [EndPointData](EndPointData)      |             |
+| start    | [EndPointData](/vext/ref/fb/endpointdata/)      |             |
+| endValue | [EndPointData](/vext/ref/fb/endpointdata/)      |             |
 
 ## Methods
 
 | Type                                         | Name            | Parameters                                     |
 | -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [LinearMovingBodyData](LinearMovingBodyData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [LinearMovingBodyData](/vext/ref/fb/linearmovingbodydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [LinearMovingBodyData](LinearMovingBodyData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [LinearMovingBodyData](/vext/ref/fb/linearmovingbodydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -42,4 +42,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

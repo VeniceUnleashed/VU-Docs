@@ -3,7 +3,7 @@ title: VeniceUICombatAreaAsset
 ---
 ### Base Classes
 
-[UICombatAreaAsset](UICombatAreaAsset)
+[UICombatAreaAsset](/vext/ref/fb/uicombatareaasset/)
 
 ## Description
 
@@ -15,26 +15,26 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | VeniceUICombatAreaAsset()                                                          | Create a new instance of this container type.                                                                                         |
 | VeniceUICombatAreaAsset(VeniceUICombatAreaAsset other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| VeniceUICombatAreaAsset([UICombatAreaAsset](UICombatAreaAsset) other)              | Upcast an instance of type [UICombatAreaAsset](UICombatAreaAsset) to [VeniceUICombatAreaAsset](VeniceUICombatAreaAsset).              |
-| VeniceUICombatAreaAsset([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [VeniceUICombatAreaAsset](VeniceUICombatAreaAsset).                                      |
-| VeniceUICombatAreaAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VeniceUICombatAreaAsset](VeniceUICombatAreaAsset). |
+| VeniceUICombatAreaAsset([UICombatAreaAsset](/vext/ref/fb/uicombatareaasset/) other)              | Upcast an instance of type [UICombatAreaAsset](/vext/ref/fb/uicombatareaasset/) to [VeniceUICombatAreaAsset](/vext/ref/fb/veniceuicombatareaasset/).              |
+| VeniceUICombatAreaAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [VeniceUICombatAreaAsset](/vext/ref/fb/veniceuicombatareaasset/).                                      |
+| VeniceUICombatAreaAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VeniceUICombatAreaAsset](/vext/ref/fb/veniceuicombatareaasset/). |
 
 ## Properties
 
 | Name                     | Type                                         | Description |
 | ------------------------ | -------------------------------------------- | ----------- |
-| distanceField            | [UIDistanceFieldAsset](UIDistanceFieldAsset) |             |
-| surroundingDistanceField | [UIDistanceFieldAsset](UIDistanceFieldAsset) |             |
+| distanceField            | [UIDistanceFieldAsset](/vext/ref/fb/uidistancefieldasset/) |             |
+| surroundingDistanceField | [UIDistanceFieldAsset](/vext/ref/fb/uidistancefieldasset/) |             |
 
 ## Methods
 
 | Type                                               | Name            | Parameters                                     |
 | -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [VeniceUICombatAreaAsset](VeniceUICombatAreaAsset) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [VeniceUICombatAreaAsset](/vext/ref/fb/veniceuicombatareaasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [VeniceUICombatAreaAsset](VeniceUICombatAreaAsset) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [VeniceUICombatAreaAsset](/vext/ref/fb/veniceuicombatareaasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -42,4 +42,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

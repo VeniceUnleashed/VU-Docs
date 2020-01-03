@@ -16,7 +16,7 @@ A structure type representing a Frostbite data type.
 
 | Name                | Type                           | Description |
 | ------------------- | ------------------------------ | ----------- |
-| language            | [AudioLanguage](AudioLanguage) |             |
+| language            | [AudioLanguage](/vext/ref/fb/audiolanguage/) |             |
 | firstVariationIndex | number                         |             |
 | variationCount      | number                         |             |
 
@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                   | Name            | Parameters |
 | ------------------------------------------------------ | --------------- | ---------- |
-| [SoundWaveLocalizationInfo](SoundWaveLocalizationInfo) | [Clone](#clone) |            |
+| [SoundWaveLocalizationInfo](/vext/ref/fb/soundwavelocalizationinfo/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SoundWaveLocalizationInfo](SoundWaveLocalizationInfo) **Clone**()
+> [SoundWaveLocalizationInfo](/vext/ref/fb/soundwavelocalizationinfo/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

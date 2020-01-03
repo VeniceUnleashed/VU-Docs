@@ -22,10 +22,10 @@ A structure type representing a Frostbite data type.
 
 | Type                       | Name            | Parameters |
 | -------------------------- | --------------- | ---------- |
-| [GameTipData](GameTipData) | [Clone](#clone) |            |
+| [GameTipData](/vext/ref/fb/gametipdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [GameTipData](GameTipData) **Clone**()
+> [GameTipData](/vext/ref/fb/gametipdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

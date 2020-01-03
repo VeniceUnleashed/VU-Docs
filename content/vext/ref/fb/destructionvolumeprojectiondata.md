@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                               | Name            | Parameters |
 | ------------------------------------------------------------------ | --------------- | ---------- |
-| [DestructionVolumeProjectionData](DestructionVolumeProjectionData) | [Clone](#clone) |            |
+| [DestructionVolumeProjectionData](/vext/ref/fb/destructionvolumeprojectiondata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [DestructionVolumeProjectionData](DestructionVolumeProjectionData) **Clone**()
+> [DestructionVolumeProjectionData](/vext/ref/fb/destructionvolumeprojectiondata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

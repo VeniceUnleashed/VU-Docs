@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                           | Name            | Parameters |
 | ---------------------------------------------- | --------------- | ---------- |
-| [MixGroupPropertyValue](MixGroupPropertyValue) | [Clone](#clone) |            |
+| [MixGroupPropertyValue](/vext/ref/fb/mixgrouppropertyvalue/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [MixGroupPropertyValue](MixGroupPropertyValue) **Clone**()
+> [MixGroupPropertyValue](/vext/ref/fb/mixgrouppropertyvalue/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -3,7 +3,7 @@ title: UIWeaponAccessoryDescription
 ---
 ### Base Classes
 
-[UIItemDescription](UIItemDescription)
+[UIItemDescription](/vext/ref/fb/uiitemdescription/)
 
 ## Description
 
@@ -15,8 +15,8 @@ A container type representing a Frostbite instance entry.
 | --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | UIWeaponAccessoryDescription()                                                          | Create a new instance of this container type.                                                                                                   |
 | UIWeaponAccessoryDescription(UIWeaponAccessoryDescription other)                        | Create a reference copy of an instance of the same type.                                                                                        |
-| UIWeaponAccessoryDescription([UIItemDescription](UIItemDescription) other)              | Upcast an instance of type [UIItemDescription](UIItemDescription) to [UIWeaponAccessoryDescription](UIWeaponAccessoryDescription).              |
-| UIWeaponAccessoryDescription([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIWeaponAccessoryDescription](UIWeaponAccessoryDescription). |
+| UIWeaponAccessoryDescription([UIItemDescription](/vext/ref/fb/uiitemdescription/) other)              | Upcast an instance of type [UIItemDescription](/vext/ref/fb/uiitemdescription/) to [UIWeaponAccessoryDescription](/vext/ref/fb/uiweaponaccessorydescription/).              |
+| UIWeaponAccessoryDescription([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIWeaponAccessoryDescription](/vext/ref/fb/uiweaponaccessorydescription/). |
 
 ## Properties
 
@@ -36,11 +36,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                         | Name            | Parameters                                     |
 | ------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [UIWeaponAccessoryDescription](UIWeaponAccessoryDescription) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [UIWeaponAccessoryDescription](/vext/ref/fb/uiweaponaccessorydescription/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [UIWeaponAccessoryDescription](UIWeaponAccessoryDescription) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [UIWeaponAccessoryDescription](/vext/ref/fb/uiweaponaccessorydescription/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -48,4 +48,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

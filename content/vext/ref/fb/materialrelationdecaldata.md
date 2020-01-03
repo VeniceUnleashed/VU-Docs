@@ -3,7 +3,7 @@ title: MaterialRelationDecalData
 ---
 ### Base Classes
 
-[PhysicsMaterialRelationPropertyData](PhysicsMaterialRelationPropertyData)
+[PhysicsMaterialRelationPropertyData](/vext/ref/fb/physicsmaterialrelationpropertydata/)
 
 ## Description
 
@@ -15,25 +15,25 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | MaterialRelationDecalData()                                                                                 | Create a new instance of this container type.                                                                                                                    |
 | MaterialRelationDecalData(MaterialRelationDecalData other)                                                  | Create a reference copy of an instance of the same type.                                                                                                         |
-| MaterialRelationDecalData([PhysicsMaterialRelationPropertyData](PhysicsMaterialRelationPropertyData) other) | Upcast an instance of type [PhysicsMaterialRelationPropertyData](PhysicsMaterialRelationPropertyData) to [MaterialRelationDecalData](MaterialRelationDecalData). |
-| MaterialRelationDecalData([MaterialRelationPropertyData](MaterialRelationPropertyData) other)               | Upcast an instance of type [MaterialRelationPropertyData](MaterialRelationPropertyData) to [MaterialRelationDecalData](MaterialRelationDecalData).               |
-| MaterialRelationDecalData([DataContainer](/vext/ref/shared/class/datacontainer) other)                        | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MaterialRelationDecalData](MaterialRelationDecalData).                        |
+| MaterialRelationDecalData([PhysicsMaterialRelationPropertyData](/vext/ref/fb/physicsmaterialrelationpropertydata/) other) | Upcast an instance of type [PhysicsMaterialRelationPropertyData](/vext/ref/fb/physicsmaterialrelationpropertydata/) to [MaterialRelationDecalData](/vext/ref/fb/materialrelationdecaldata/). |
+| MaterialRelationDecalData([MaterialRelationPropertyData](/vext/ref/fb/materialrelationpropertydata/) other)               | Upcast an instance of type [MaterialRelationPropertyData](/vext/ref/fb/materialrelationpropertydata/) to [MaterialRelationDecalData](/vext/ref/fb/materialrelationdecaldata/).               |
+| MaterialRelationDecalData([DataContainer](/vext/ref/shared/class/datacontainer) other)                        | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MaterialRelationDecalData](/vext/ref/fb/materialrelationdecaldata/).                        |
 
 ## Properties
 
 | Name  | Type                                   | Description |
 | ----- | -------------------------------------- | ----------- |
-| decal | [DecalTemplateData](DecalTemplateData) |             |
+| decal | [DecalTemplateData](/vext/ref/fb/decaltemplatedata/) |             |
 
 ## Methods
 
 | Type                                                   | Name            | Parameters                                     |
 | ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [MaterialRelationDecalData](MaterialRelationDecalData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [MaterialRelationDecalData](/vext/ref/fb/materialrelationdecaldata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [MaterialRelationDecalData](MaterialRelationDecalData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [MaterialRelationDecalData](/vext/ref/fb/materialrelationdecaldata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -41,4 +41,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

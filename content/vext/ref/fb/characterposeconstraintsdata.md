@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                         | Name            | Parameters |
 | ------------------------------------------------------------ | --------------- | ---------- |
-| [CharacterPoseConstraintsData](CharacterPoseConstraintsData) | [Clone](#clone) |            |
+| [CharacterPoseConstraintsData](/vext/ref/fb/characterposeconstraintsdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [CharacterPoseConstraintsData](CharacterPoseConstraintsData) **Clone**()
+> [CharacterPoseConstraintsData](/vext/ref/fb/characterposeconstraintsdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -16,17 +16,17 @@ A structure type representing a Frostbite data type.
 
 | Name    | Type                                                 | Description |
 | ------- | ---------------------------------------------------- | ----------- |
-| context | [RichPresenceContext](RichPresenceContext)           |             |
-| value   | [RichPresenceContextValue](RichPresenceContextValue) |             |
+| context | [RichPresenceContext](/vext/ref/fb/richpresencecontext/)           |             |
+| value   | [RichPresenceContextValue](/vext/ref/fb/richpresencecontextvalue/) |             |
 
 ## Methods
 
 | Type                                                     | Name            | Parameters |
 | -------------------------------------------------------- | --------------- | ---------- |
-| [RichPresenceContextSetting](RichPresenceContextSetting) | [Clone](#clone) |            |
+| [RichPresenceContextSetting](/vext/ref/fb/richpresencecontextsetting/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [RichPresenceContextSetting](RichPresenceContextSetting) **Clone**()
+> [RichPresenceContextSetting](/vext/ref/fb/richpresencecontextsetting/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

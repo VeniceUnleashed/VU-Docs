@@ -16,7 +16,7 @@ A structure type representing a Frostbite data type.
 
 | Name                 | Type                           | Description |
 | -------------------- | ------------------------------ | ----------- |
-| language             | [AudioLanguage](AudioLanguage) |             |
+| language             | [AudioLanguage](/vext/ref/fb/audiolanguage/) |             |
 | textColumn           | string                         |             |
 | subtitleOffsetColumn | string                         |             |
 
@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                                     | Name            | Parameters |
 | ------------------------------------------------------------------------ | --------------- | ---------- |
-| [VoiceOverManuscriptLanguageColumns](VoiceOverManuscriptLanguageColumns) | [Clone](#clone) |            |
+| [VoiceOverManuscriptLanguageColumns](/vext/ref/fb/voiceovermanuscriptlanguagecolumns/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [VoiceOverManuscriptLanguageColumns](VoiceOverManuscriptLanguageColumns) **Clone**()
+> [VoiceOverManuscriptLanguageColumns](/vext/ref/fb/voiceovermanuscriptlanguagecolumns/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -25,16 +25,16 @@ A structure type representing a Frostbite data type.
 | ambientLightIntensity | number                            |             |
 | sunLightIntensity     | number                            |             |
 | alphaMul              | number                            |             |
-| texture               | [TextureAsset](TextureAsset)      |             |
+| texture               | [TextureAsset](/vext/ref/fb/textureasset/)      |             |
 
 ## Methods
 
 | Type                           | Name            | Parameters |
 | ------------------------------ | --------------- | ---------- |
-| [SkyCloudLayer](SkyCloudLayer) | [Clone](#clone) |            |
+| [SkyCloudLayer](/vext/ref/fb/skycloudlayer/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SkyCloudLayer](SkyCloudLayer) **Clone**()
+> [SkyCloudLayer](/vext/ref/fb/skycloudlayer/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

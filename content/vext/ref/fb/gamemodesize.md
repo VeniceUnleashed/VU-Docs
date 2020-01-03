@@ -20,7 +20,7 @@ A structure type representing a Frostbite data type.
 | shortName      | string                                   |             |
 | metaIdentifier | string                                   |             |
 | playerCount    | number                                   |             |
-| teams          | [GameModeTeamSize](GameModeTeamSize)\[\] |             |
+| teams          | [GameModeTeamSize](/vext/ref/fb/gamemodeteamsize/)\[\] |             |
 | roundsPerMap   | number                                   |             |
 | forceSquad     | bool                                     |             |
 
@@ -28,10 +28,10 @@ A structure type representing a Frostbite data type.
 
 | Type                         | Name            | Parameters |
 | ---------------------------- | --------------- | ---------- |
-| [GameModeSize](GameModeSize) | [Clone](#clone) |            |
+| [GameModeSize](/vext/ref/fb/gamemodesize/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [GameModeSize](GameModeSize) **Clone**()
+> [GameModeSize](/vext/ref/fb/gamemodesize/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

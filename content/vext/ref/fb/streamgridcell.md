@@ -16,7 +16,7 @@ A structure type representing a Frostbite data type.
 
 | Name          | Type                                       | Description |
 | ------------- | ------------------------------------------ | ----------- |
-| referenceData | [ReferenceObjectData](ReferenceObjectData) |             |
+| referenceData | [ReferenceObjectData](/vext/ref/fb/referenceobjectdata/) |             |
 | x             | number                                     |             |
 | z             | number                                     |             |
 
@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                             | Name            | Parameters |
 | -------------------------------- | --------------- | ---------- |
-| [StreamGridCell](StreamGridCell) | [Clone](#clone) |            |
+| [StreamGridCell](/vext/ref/fb/streamgridcell/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [StreamGridCell](StreamGridCell) **Clone**()
+> [StreamGridCell](/vext/ref/fb/streamgridcell/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

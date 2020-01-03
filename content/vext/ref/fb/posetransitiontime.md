@@ -16,17 +16,17 @@ A structure type representing a Frostbite data type.
 
 | Name           | Type                                   | Description |
 | -------------- | -------------------------------------- | ----------- |
-| toPose         | [CharacterPoseType](CharacterPoseType) |             |
+| toPose         | [CharacterPoseType](/vext/ref/fb/characterposetype/) |             |
 | transitionTime | number                                 |             |
 
 ## Methods
 
 | Type                                     | Name            | Parameters |
 | ---------------------------------------- | --------------- | ---------- |
-| [PoseTransitionTime](PoseTransitionTime) | [Clone](#clone) |            |
+| [PoseTransitionTime](/vext/ref/fb/posetransitiontime/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [PoseTransitionTime](PoseTransitionTime) **Clone**()
+> [PoseTransitionTime](/vext/ref/fb/posetransitiontime/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

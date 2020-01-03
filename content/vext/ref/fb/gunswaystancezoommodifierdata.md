@@ -16,7 +16,7 @@ A structure type representing a Frostbite data type.
 
 | Name               | Type                                                 | Description |
 | ------------------ | ---------------------------------------------------- | ----------- |
-| dispersionMod      | [GunSwayDispersionModData](GunSwayDispersionModData) |             |
+| dispersionMod      | [GunSwayDispersionModData](/vext/ref/fb/gunswaydispersionmoddata/) |             |
 | recoilMagnitudeMod | number                                               |             |
 | recoilAngleMod     | number                                               |             |
 | lagYawMod          | number                                               |             |
@@ -26,10 +26,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                           | Name            | Parameters |
 | -------------------------------------------------------------- | --------------- | ---------- |
-| [GunSwayStanceZoomModifierData](GunSwayStanceZoomModifierData) | [Clone](#clone) |            |
+| [GunSwayStanceZoomModifierData](/vext/ref/fb/gunswaystancezoommodifierdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [GunSwayStanceZoomModifierData](GunSwayStanceZoomModifierData) **Clone**()
+> [GunSwayStanceZoomModifierData](/vext/ref/fb/gunswaystancezoommodifierdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

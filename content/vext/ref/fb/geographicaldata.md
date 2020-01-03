@@ -15,25 +15,25 @@ A container type representing a Frostbite instance entry.
 | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | GeographicalData()                                                          | Create a new instance of this container type.                                                                           |
 | GeographicalData(GeographicalData other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| GeographicalData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GeographicalData](GeographicalData). |
+| GeographicalData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GeographicalData](/vext/ref/fb/geographicaldata/). |
 
 ## Properties
 
 | Name           | Type                             | Description |
 | -------------- | -------------------------------- | ----------- |
-| latitude       | [UIGeoLatitude](UIGeoLatitude)   |             |
-| longitude      | [UIGeoLongitude](UIGeoLongitude) |             |
+| latitude       | [UIGeoLatitude](/vext/ref/fb/uigeolatitude/)   |             |
+| longitude      | [UIGeoLongitude](/vext/ref/fb/uigeolongitude/) |             |
 | seaLevelOffset | number                           |             |
 
 ## Methods
 
 | Type                                 | Name            | Parameters                                     |
 | ------------------------------------ | --------------- | ---------------------------------------------- |
-| [GeographicalData](GeographicalData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [GeographicalData](/vext/ref/fb/geographicaldata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [GeographicalData](GeographicalData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [GeographicalData](/vext/ref/fb/geographicaldata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -41,4 +41,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

@@ -16,16 +16,16 @@ A structure type representing a Frostbite data type.
 
 | Name | Type                                                     | Description |
 | ---- | -------------------------------------------------------- | ----------- |
-| urls | [OnlineEnvironmentUrlData](OnlineEnvironmentUrlData)\[\] |             |
+| urls | [OnlineEnvironmentUrlData](/vext/ref/fb/onlineenvironmenturldata/)\[\] |             |
 
 ## Methods
 
 | Type                                         | Name            | Parameters |
 | -------------------------------------------- | --------------- | ---------- |
-| [OnlineEnvironmentUrl](OnlineEnvironmentUrl) | [Clone](#clone) |            |
+| [OnlineEnvironmentUrl](/vext/ref/fb/onlineenvironmenturl/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [OnlineEnvironmentUrl](OnlineEnvironmentUrl) **Clone**()
+> [OnlineEnvironmentUrl](/vext/ref/fb/onlineenvironmenturl/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

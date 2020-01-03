@@ -25,10 +25,10 @@ A structure type representing a Frostbite data type.
 
 | Type               | Name            | Parameters |
 | ------------------ | --------------- | ---------- |
-| [HIKData](HIKData) | [Clone](#clone) |            |
+| [HIKData](/vext/ref/fb/hikdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [HIKData](HIKData) **Clone**()
+> [HIKData](/vext/ref/fb/hikdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

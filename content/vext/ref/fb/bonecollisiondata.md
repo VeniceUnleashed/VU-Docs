@@ -19,13 +19,13 @@ A structure type representing a Frostbite data type.
 | debugDrawColor           | [Vec4](/vext/ref/shared/class/vec4)              |             |
 | capsuleOffset            | [Vec3](/vext/ref/shared/class/vec3)              |             |
 | boneName                 | string                                         |             |
-| animationHitReactionType | [HitReactionType](HitReactionType)             |             |
-| materialPair             | [MaterialContainerPair](MaterialContainerPair) |             |
+| animationHitReactionType | [HitReactionType](/vext/ref/fb/hitreactiontype/)             |             |
+| materialPair             | [MaterialContainerPair](/vext/ref/fb/materialcontainerpair/) |             |
 | boneAxis                 | number                                         |             |
 | capsuleLength            | number                                         |             |
 | capsuleRadius            | number                                         |             |
-| minPitch                 | [PitchModifier](PitchModifier)                 |             |
-| maxPitch                 | [PitchModifier](PitchModifier)                 |             |
+| minPitch                 | [PitchModifier](/vext/ref/fb/pitchmodifier/)                 |             |
+| maxPitch                 | [PitchModifier](/vext/ref/fb/pitchmodifier/)                 |             |
 | validInHiLod             | bool                                           |             |
 | validInLowLod            | bool                                           |             |
 | usePhysicsRotation       | bool                                           |             |
@@ -35,10 +35,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                   | Name            | Parameters |
 | -------------------------------------- | --------------- | ---------- |
-| [BoneCollisionData](BoneCollisionData) | [Clone](#clone) |            |
+| [BoneCollisionData](/vext/ref/fb/bonecollisiondata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [BoneCollisionData](BoneCollisionData) **Clone**()
+> [BoneCollisionData](/vext/ref/fb/bonecollisiondata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

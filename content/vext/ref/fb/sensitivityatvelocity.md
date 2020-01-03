@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                           | Name            | Parameters |
 | ---------------------------------------------- | --------------- | ---------- |
-| [SensitivityAtVelocity](SensitivityAtVelocity) | [Clone](#clone) |            |
+| [SensitivityAtVelocity](/vext/ref/fb/sensitivityatvelocity/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SensitivityAtVelocity](SensitivityAtVelocity) **Clone**()
+> [SensitivityAtVelocity](/vext/ref/fb/sensitivityatvelocity/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

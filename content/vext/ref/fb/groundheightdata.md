@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                 | Name            | Parameters |
 | ------------------------------------ | --------------- | ---------- |
-| [GroundHeightData](GroundHeightData) | [Clone](#clone) |            |
+| [GroundHeightData](/vext/ref/fb/groundheightdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [GroundHeightData](GroundHeightData) **Clone**()
+> [GroundHeightData](/vext/ref/fb/groundheightdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

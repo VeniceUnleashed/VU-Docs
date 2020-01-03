@@ -15,7 +15,7 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
 | UINametag()                                                          | Create a new instance of this container type.                                                             |
 | UINametag(UINametag other)                                           | Create a reference copy of an instance of the same type.                                                  |
-| UINametag([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UINametag](UINametag). |
+| UINametag([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UINametag](/vext/ref/fb/uinametag/). |
 
 ## Properties
 
@@ -24,7 +24,7 @@ A container type representing a Frostbite instance entry.
 | textColor          | [Vec3](/vext/ref/shared/class/vec3) |             |
 | iconFadeDistance   | number                            |             |
 | iconMaxDistance    | number                            |             |
-| icon               | [UIHudIcon](UIHudIcon)            |             |
+| icon               | [UIHudIcon](/vext/ref/fb/uihudicon/)            |             |
 | textFadeDistance   | number                            |             |
 | healthFadeDistance | number                            |             |
 | healthMaxDistance  | number                            |             |
@@ -36,11 +36,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                   | Name            | Parameters                                     |
 | ---------------------- | --------------- | ---------------------------------------------- |
-| [UINametag](UINametag) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [UINametag](/vext/ref/fb/uinametag/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [UINametag](UINametag) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [UINametag](/vext/ref/fb/uinametag/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -48,4 +48,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

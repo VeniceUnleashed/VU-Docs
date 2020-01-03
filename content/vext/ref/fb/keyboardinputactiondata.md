@@ -3,7 +3,7 @@ title: KeyboardInputActionData
 ---
 ### Base Classes
 
-[InputActionData](InputActionData)
+[InputActionData](/vext/ref/fb/inputactiondata/)
 
 ## Description
 
@@ -15,24 +15,24 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | KeyboardInputActionData()                                                          | Create a new instance of this container type.                                                                                         |
 | KeyboardInputActionData(KeyboardInputActionData other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| KeyboardInputActionData([InputActionData](InputActionData) other)                  | Upcast an instance of type [InputActionData](InputActionData) to [KeyboardInputActionData](KeyboardInputActionData).                  |
-| KeyboardInputActionData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [KeyboardInputActionData](KeyboardInputActionData). |
+| KeyboardInputActionData([InputActionData](/vext/ref/fb/inputactiondata/) other)                  | Upcast an instance of type [InputActionData](/vext/ref/fb/inputactiondata/) to [KeyboardInputActionData](/vext/ref/fb/keyboardinputactiondata/).                  |
+| KeyboardInputActionData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [KeyboardInputActionData](/vext/ref/fb/keyboardinputactiondata/). |
 
 ## Properties
 
 | Name | Type                               | Description |
 | ---- | ---------------------------------- | ----------- |
-| key  | [InputDeviceKeys](InputDeviceKeys) |             |
+| key  | [InputDeviceKeys](/vext/ref/fb/inputdevicekeys/) |             |
 
 ## Methods
 
 | Type                                               | Name            | Parameters                                     |
 | -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [KeyboardInputActionData](KeyboardInputActionData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [KeyboardInputActionData](/vext/ref/fb/keyboardinputactiondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [KeyboardInputActionData](KeyboardInputActionData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [KeyboardInputActionData](/vext/ref/fb/keyboardinputactiondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -40,4 +40,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

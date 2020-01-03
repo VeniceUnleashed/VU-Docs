@@ -16,7 +16,7 @@ A structure type representing a Frostbite data type.
 
 | Name  | Type                                   | Description |
 | ----- | -------------------------------------- | ----------- |
-| award | [AbstractAwardData](AbstractAwardData) |             |
+| award | [AbstractAwardData](/vext/ref/fb/abstractawarddata/) |             |
 | count | number                                 |             |
 | sid   | string                                 |             |
 
@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                           | Name            | Parameters |
 | ------------------------------ | --------------- | ---------- |
-| [CriteriaAward](CriteriaAward) | [Clone](#clone) |            |
+| [CriteriaAward](/vext/ref/fb/criteriaaward/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [CriteriaAward](CriteriaAward) **Clone**()
+> [CriteriaAward](/vext/ref/fb/criteriaaward/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

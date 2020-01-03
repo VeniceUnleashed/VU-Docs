@@ -3,7 +3,7 @@ title: DuplicateSpawnScopeStrategyData
 ---
 ### Base Classes
 
-[SoundScopeStrategyData](SoundScopeStrategyData)
+[SoundScopeStrategyData](/vext/ref/fb/soundscopestrategydata/)
 
 ## Description
 
@@ -15,8 +15,8 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DuplicateSpawnScopeStrategyData()                                                          | Create a new instance of this container type.                                                                                                         |
 | DuplicateSpawnScopeStrategyData(DuplicateSpawnScopeStrategyData other)                     | Create a reference copy of an instance of the same type.                                                                                              |
-| DuplicateSpawnScopeStrategyData([SoundScopeStrategyData](SoundScopeStrategyData) other)    | Upcast an instance of type [SoundScopeStrategyData](SoundScopeStrategyData) to [DuplicateSpawnScopeStrategyData](DuplicateSpawnScopeStrategyData).    |
-| DuplicateSpawnScopeStrategyData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DuplicateSpawnScopeStrategyData](DuplicateSpawnScopeStrategyData). |
+| DuplicateSpawnScopeStrategyData([SoundScopeStrategyData](/vext/ref/fb/soundscopestrategydata/) other)    | Upcast an instance of type [SoundScopeStrategyData](/vext/ref/fb/soundscopestrategydata/) to [DuplicateSpawnScopeStrategyData](/vext/ref/fb/duplicatespawnscopestrategydata/).    |
+| DuplicateSpawnScopeStrategyData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DuplicateSpawnScopeStrategyData](/vext/ref/fb/duplicatespawnscopestrategydata/). |
 
 ## Properties
 
@@ -31,11 +31,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                               | Name            | Parameters                                     |
 | ------------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [DuplicateSpawnScopeStrategyData](DuplicateSpawnScopeStrategyData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [DuplicateSpawnScopeStrategyData](/vext/ref/fb/duplicatespawnscopestrategydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [DuplicateSpawnScopeStrategyData](DuplicateSpawnScopeStrategyData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [DuplicateSpawnScopeStrategyData](/vext/ref/fb/duplicatespawnscopestrategydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -43,4 +43,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

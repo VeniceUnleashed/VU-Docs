@@ -3,7 +3,7 @@ title: DestroyAllInSquadScoringHandlerData
 ---
 ### Base Classes
 
-[ScoringHandlerData](ScoringHandlerData)
+[ScoringHandlerData](/vext/ref/fb/scoringhandlerdata/)
 
 ## Description
 
@@ -15,18 +15,18 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DestroyAllInSquadScoringHandlerData()                                                          | Create a new instance of this container type.                                                                                                                 |
 | DestroyAllInSquadScoringHandlerData(DestroyAllInSquadScoringHandlerData other)                 | Create a reference copy of an instance of the same type.                                                                                                      |
-| DestroyAllInSquadScoringHandlerData([ScoringHandlerData](ScoringHandlerData) other)            | Upcast an instance of type [ScoringHandlerData](ScoringHandlerData) to [DestroyAllInSquadScoringHandlerData](DestroyAllInSquadScoringHandlerData).            |
-| DestroyAllInSquadScoringHandlerData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DestroyAllInSquadScoringHandlerData](DestroyAllInSquadScoringHandlerData). |
+| DestroyAllInSquadScoringHandlerData([ScoringHandlerData](/vext/ref/fb/scoringhandlerdata/) other)            | Upcast an instance of type [ScoringHandlerData](/vext/ref/fb/scoringhandlerdata/) to [DestroyAllInSquadScoringHandlerData](/vext/ref/fb/destroyallinsquadscoringhandlerdata/).            |
+| DestroyAllInSquadScoringHandlerData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DestroyAllInSquadScoringHandlerData](/vext/ref/fb/destroyallinsquadscoringhandlerdata/). |
 
 ## Methods
 
 | Type                                                                       | Name            | Parameters                                     |
 | -------------------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [DestroyAllInSquadScoringHandlerData](DestroyAllInSquadScoringHandlerData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [DestroyAllInSquadScoringHandlerData](/vext/ref/fb/destroyallinsquadscoringhandlerdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [DestroyAllInSquadScoringHandlerData](DestroyAllInSquadScoringHandlerData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [DestroyAllInSquadScoringHandlerData](/vext/ref/fb/destroyallinsquadscoringhandlerdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -34,4 +34,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                       | Name            | Parameters |
 | ------------------------------------------ | --------------- | ---------- |
-| [CameraSineCurveData](CameraSineCurveData) | [Clone](#clone) |            |
+| [CameraSineCurveData](/vext/ref/fb/camerasinecurvedata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [CameraSineCurveData](CameraSineCurveData) **Clone**()
+> [CameraSineCurveData](/vext/ref/fb/camerasinecurvedata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

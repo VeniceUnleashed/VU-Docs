@@ -16,16 +16,16 @@ A structure type representing a Frostbite data type.
 
 | Name              | Type             | Description |
 | ----------------- | ---------------- | ----------- |
-| otherAnimatableID | [AntRef](AntRef) |             |
+| otherAnimatableID | [AntRef](/vext/ref/fb/antref/) |             |
 
 ## Methods
 
 | Type                                           | Name            | Parameters |
 | ---------------------------------------------- | --------------- | ---------- |
-| [AntInteractionBinding](AntInteractionBinding) | [Clone](#clone) |            |
+| [AntInteractionBinding](/vext/ref/fb/antinteractionbinding/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [AntInteractionBinding](AntInteractionBinding) **Clone**()
+> [AntInteractionBinding](/vext/ref/fb/antinteractionbinding/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

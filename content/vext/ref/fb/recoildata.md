@@ -30,10 +30,10 @@ A structure type representing a Frostbite data type.
 
 | Type                     | Name            | Parameters |
 | ------------------------ | --------------- | ---------- |
-| [RecoilData](RecoilData) | [Clone](#clone) |            |
+| [RecoilData](/vext/ref/fb/recoildata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [RecoilData](RecoilData) **Clone**()
+> [RecoilData](/vext/ref/fb/recoildata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

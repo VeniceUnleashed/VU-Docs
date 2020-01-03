@@ -16,17 +16,17 @@ A structure type representing a Frostbite data type.
 
 | Name        | Type                                         | Description |
 | ----------- | -------------------------------------------- | ----------- |
-| unlockAsset | [UnlockAssetBase](UnlockAssetBase)           |             |
-| modifiers   | [WeaponModifierBase](WeaponModifierBase)\[\] |             |
+| unlockAsset | [UnlockAssetBase](/vext/ref/fb/unlockassetbase/)           |             |
+| modifiers   | [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase/)\[\] |             |
 
 ## Methods
 
 | Type                                     | Name            | Parameters |
 | ---------------------------------------- | --------------- | ---------- |
-| [WeaponModifierData](WeaponModifierData) | [Clone](#clone) |            |
+| [WeaponModifierData](/vext/ref/fb/weaponmodifierdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [WeaponModifierData](WeaponModifierData) **Clone**()
+> [WeaponModifierData](/vext/ref/fb/weaponmodifierdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -3,7 +3,7 @@ title: VeniceUnlockUserData
 ---
 ### Base Classes
 
-[UnlockUserDataBase](UnlockUserDataBase)
+[UnlockUserDataBase](/vext/ref/fb/unlockuserdatabase/)
 
 ## Description
 
@@ -15,9 +15,9 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | VeniceUnlockUserData()                                                          | Create a new instance of this container type.                                                                                   |
 | VeniceUnlockUserData(VeniceUnlockUserData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| VeniceUnlockUserData([UnlockUserDataBase](UnlockUserDataBase) other)            | Upcast an instance of type [UnlockUserDataBase](UnlockUserDataBase) to [VeniceUnlockUserData](VeniceUnlockUserData).            |
-| VeniceUnlockUserData([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [VeniceUnlockUserData](VeniceUnlockUserData).                                      |
-| VeniceUnlockUserData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VeniceUnlockUserData](VeniceUnlockUserData). |
+| VeniceUnlockUserData([UnlockUserDataBase](/vext/ref/fb/unlockuserdatabase/) other)            | Upcast an instance of type [UnlockUserDataBase](/vext/ref/fb/unlockuserdatabase/) to [VeniceUnlockUserData](/vext/ref/fb/veniceunlockuserdata/).            |
+| VeniceUnlockUserData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [VeniceUnlockUserData](/vext/ref/fb/veniceunlockuserdata/).                                      |
+| VeniceUnlockUserData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VeniceUnlockUserData](/vext/ref/fb/veniceunlockuserdata/). |
 
 ## Properties
 
@@ -29,11 +29,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                         | Name            | Parameters                                     |
 | -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [VeniceUnlockUserData](VeniceUnlockUserData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [VeniceUnlockUserData](/vext/ref/fb/veniceunlockuserdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [VeniceUnlockUserData](VeniceUnlockUserData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [VeniceUnlockUserData](/vext/ref/fb/veniceunlockuserdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -41,4 +41,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

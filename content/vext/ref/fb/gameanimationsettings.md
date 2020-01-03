@@ -3,7 +3,7 @@ title: GameAnimationSettings
 ---
 ### Base Classes
 
-[SystemSettings](SystemSettings)
+[SystemSettings](/vext/ref/fb/systemsettings/)
 
 ## Description
 
@@ -15,8 +15,8 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | GameAnimationSettings()                                                          | Create a new instance of this container type.                                                                                     |
 | GameAnimationSettings(GameAnimationSettings other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| GameAnimationSettings([SystemSettings](SystemSettings) other)                    | Upcast an instance of type [SystemSettings](SystemSettings) to [GameAnimationSettings](GameAnimationSettings).                    |
-| GameAnimationSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GameAnimationSettings](GameAnimationSettings). |
+| GameAnimationSettings([SystemSettings](/vext/ref/fb/systemsettings/) other)                    | Upcast an instance of type [SystemSettings](/vext/ref/fb/systemsettings/) to [GameAnimationSettings](/vext/ref/fb/gameanimationsettings/).                    |
+| GameAnimationSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GameAnimationSettings](/vext/ref/fb/gameanimationsettings/). |
 
 ## Properties
 
@@ -45,11 +45,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                           | Name            | Parameters                                     |
 | ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [GameAnimationSettings](GameAnimationSettings) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [GameAnimationSettings](/vext/ref/fb/gameanimationsettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [GameAnimationSettings](GameAnimationSettings) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [GameAnimationSettings](/vext/ref/fb/gameanimationsettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -57,4 +57,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

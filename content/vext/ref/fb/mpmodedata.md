@@ -22,10 +22,10 @@ A structure type representing a Frostbite data type.
 
 | Type                     | Name            | Parameters |
 | ------------------------ | --------------- | ---------- |
-| [MPModeData](MPModeData) | [Clone](#clone) |            |
+| [MPModeData](/vext/ref/fb/mpmodedata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [MPModeData](MPModeData) **Clone**()
+> [MPModeData](/vext/ref/fb/mpmodedata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -3,7 +3,7 @@ title: IntPropertyTrackData
 ---
 ### Base Classes
 
-[SimplePropertyTrackData](SimplePropertyTrackData)
+[SimplePropertyTrackData](/vext/ref/fb/simplepropertytrackdata/)
 
 ## Description
 
@@ -15,9 +15,9 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | IntPropertyTrackData()                                                          | Create a new instance of this container type.                                                                                   |
 | IntPropertyTrackData(IntPropertyTrackData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| IntPropertyTrackData([SimplePropertyTrackData](SimplePropertyTrackData) other)  | Upcast an instance of type [SimplePropertyTrackData](SimplePropertyTrackData) to [IntPropertyTrackData](IntPropertyTrackData).  |
-| IntPropertyTrackData([PropertyTrackData](PropertyTrackData) other)              | Upcast an instance of type [PropertyTrackData](PropertyTrackData) to [IntPropertyTrackData](IntPropertyTrackData).              |
-| IntPropertyTrackData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [IntPropertyTrackData](IntPropertyTrackData). |
+| IntPropertyTrackData([SimplePropertyTrackData](/vext/ref/fb/simplepropertytrackdata/) other)  | Upcast an instance of type [SimplePropertyTrackData](/vext/ref/fb/simplepropertytrackdata/) to [IntPropertyTrackData](/vext/ref/fb/intpropertytrackdata/).  |
+| IntPropertyTrackData([PropertyTrackData](/vext/ref/fb/propertytrackdata/) other)              | Upcast an instance of type [PropertyTrackData](/vext/ref/fb/propertytrackdata/) to [IntPropertyTrackData](/vext/ref/fb/intpropertytrackdata/).              |
+| IntPropertyTrackData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [IntPropertyTrackData](/vext/ref/fb/intpropertytrackdata/). |
 
 ## Properties
 
@@ -29,11 +29,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                         | Name            | Parameters                                     |
 | -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [IntPropertyTrackData](IntPropertyTrackData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [IntPropertyTrackData](/vext/ref/fb/intpropertytrackdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [IntPropertyTrackData](IntPropertyTrackData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [IntPropertyTrackData](/vext/ref/fb/intpropertytrackdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -41,4 +41,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

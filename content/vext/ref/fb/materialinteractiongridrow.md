@@ -16,16 +16,16 @@ A structure type representing a Frostbite data type.
 
 | Name  | Type                                                             | Description |
 | ----- | ---------------------------------------------------------------- | ----------- |
-| items | [MaterialRelationPropertyPair](MaterialRelationPropertyPair)\[\] |             |
+| items | [MaterialRelationPropertyPair](/vext/ref/fb/materialrelationpropertypair/)\[\] |             |
 
 ## Methods
 
 | Type                                                     | Name            | Parameters |
 | -------------------------------------------------------- | --------------- | ---------- |
-| [MaterialInteractionGridRow](MaterialInteractionGridRow) | [Clone](#clone) |            |
+| [MaterialInteractionGridRow](/vext/ref/fb/materialinteractiongridrow/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [MaterialInteractionGridRow](MaterialInteractionGridRow) **Clone**()
+> [MaterialInteractionGridRow](/vext/ref/fb/materialinteractiongridrow/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

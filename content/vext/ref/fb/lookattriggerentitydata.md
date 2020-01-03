@@ -3,7 +3,7 @@ title: LookAtTriggerEntityData
 ---
 ### Base Classes
 
-[TriggerEventEntityData](TriggerEventEntityData)
+[TriggerEventEntityData](/vext/ref/fb/triggerevententitydata/)
 
 ## Description
 
@@ -15,21 +15,21 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | LookAtTriggerEntityData()                                                          | Create a new instance of this container type.                                                                                         |
 | LookAtTriggerEntityData(LookAtTriggerEntityData other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| LookAtTriggerEntityData([TriggerEventEntityData](TriggerEventEntityData) other)    | Upcast an instance of type [TriggerEventEntityData](TriggerEventEntityData) to [LookAtTriggerEntityData](LookAtTriggerEntityData).    |
-| LookAtTriggerEntityData([TriggerEntityData](TriggerEntityData) other)              | Upcast an instance of type [TriggerEntityData](TriggerEntityData) to [LookAtTriggerEntityData](LookAtTriggerEntityData).              |
-| LookAtTriggerEntityData([GameEntityData](GameEntityData) other)                    | Upcast an instance of type [GameEntityData](GameEntityData) to [LookAtTriggerEntityData](LookAtTriggerEntityData).                    |
-| LookAtTriggerEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [LookAtTriggerEntityData](LookAtTriggerEntityData).              |
-| LookAtTriggerEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [LookAtTriggerEntityData](LookAtTriggerEntityData).                            |
-| LookAtTriggerEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [LookAtTriggerEntityData](LookAtTriggerEntityData).                    |
-| LookAtTriggerEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [LookAtTriggerEntityData](LookAtTriggerEntityData).              |
-| LookAtTriggerEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LookAtTriggerEntityData](LookAtTriggerEntityData). |
+| LookAtTriggerEntityData([TriggerEventEntityData](/vext/ref/fb/triggerevententitydata/) other)    | Upcast an instance of type [TriggerEventEntityData](/vext/ref/fb/triggerevententitydata/) to [LookAtTriggerEntityData](/vext/ref/fb/lookattriggerentitydata/).    |
+| LookAtTriggerEntityData([TriggerEntityData](/vext/ref/fb/triggerentitydata/) other)              | Upcast an instance of type [TriggerEntityData](/vext/ref/fb/triggerentitydata/) to [LookAtTriggerEntityData](/vext/ref/fb/lookattriggerentitydata/).              |
+| LookAtTriggerEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [LookAtTriggerEntityData](/vext/ref/fb/lookattriggerentitydata/).                    |
+| LookAtTriggerEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [LookAtTriggerEntityData](/vext/ref/fb/lookattriggerentitydata/).              |
+| LookAtTriggerEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [LookAtTriggerEntityData](/vext/ref/fb/lookattriggerentitydata/).                            |
+| LookAtTriggerEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [LookAtTriggerEntityData](/vext/ref/fb/lookattriggerentitydata/).                    |
+| LookAtTriggerEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [LookAtTriggerEntityData](/vext/ref/fb/lookattriggerentitydata/).              |
+| LookAtTriggerEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LookAtTriggerEntityData](/vext/ref/fb/lookattriggerentitydata/). |
 
 ## Properties
 
 | Name                  | Type                                             | Description |
 | --------------------- | ------------------------------------------------ | ----------- |
 | fov                   | number                                           |             |
-| weapon                | [SoldierWeaponBlueprint](SoldierWeaponBlueprint) |             |
+| weapon                | [SoldierWeaponBlueprint](/vext/ref/fb/soldierweaponblueprint/) |             |
 | zoomLevel             | number                                           |             |
 | minDistanceToObject   | number                                           |             |
 | maxDistanceToObject   | number                                           |             |
@@ -40,11 +40,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                               | Name            | Parameters                                     |
 | -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [LookAtTriggerEntityData](LookAtTriggerEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [LookAtTriggerEntityData](/vext/ref/fb/lookattriggerentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [LookAtTriggerEntityData](LookAtTriggerEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [LookAtTriggerEntityData](/vext/ref/fb/lookattriggerentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -52,4 +52,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

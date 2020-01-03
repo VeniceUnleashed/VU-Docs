@@ -22,16 +22,16 @@ A structure type representing a Frostbite data type.
 | alphaThreshold | number                                       |             |
 | outlineInner   | number                                       |             |
 | outlineOuter   | number                                       |             |
-| distanceField  | [UIDistanceFieldAsset](UIDistanceFieldAsset) |             |
+| distanceField  | [UIDistanceFieldAsset](/vext/ref/fb/uidistancefieldasset/) |             |
 
 ## Methods
 
 | Type                                                         | Name            | Parameters |
 | ------------------------------------------------------------ | --------------- | ---------- |
-| [UIMinimapDistanceFieldParams](UIMinimapDistanceFieldParams) | [Clone](#clone) |            |
+| [UIMinimapDistanceFieldParams](/vext/ref/fb/uiminimapdistancefieldparams/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [UIMinimapDistanceFieldParams](UIMinimapDistanceFieldParams) **Clone**()
+> [UIMinimapDistanceFieldParams](/vext/ref/fb/uiminimapdistancefieldparams/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

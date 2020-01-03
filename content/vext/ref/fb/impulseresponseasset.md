@@ -3,7 +3,7 @@ title: ImpulseResponseAsset
 ---
 ### Base Classes
 
-[SoundDataAsset](SoundDataAsset)
+[SoundDataAsset](/vext/ref/fb/sounddataasset/)
 
 ## Description
 
@@ -15,19 +15,19 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | ImpulseResponseAsset()                                                          | Create a new instance of this container type.                                                                                   |
 | ImpulseResponseAsset(ImpulseResponseAsset other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| ImpulseResponseAsset([SoundDataAsset](SoundDataAsset) other)                    | Upcast an instance of type [SoundDataAsset](SoundDataAsset) to [ImpulseResponseAsset](ImpulseResponseAsset).                    |
-| ImpulseResponseAsset([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [ImpulseResponseAsset](ImpulseResponseAsset).                                      |
-| ImpulseResponseAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ImpulseResponseAsset](ImpulseResponseAsset). |
+| ImpulseResponseAsset([SoundDataAsset](/vext/ref/fb/sounddataasset/) other)                    | Upcast an instance of type [SoundDataAsset](/vext/ref/fb/sounddataasset/) to [ImpulseResponseAsset](/vext/ref/fb/impulseresponseasset/).                    |
+| ImpulseResponseAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [ImpulseResponseAsset](/vext/ref/fb/impulseresponseasset/).                                      |
+| ImpulseResponseAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ImpulseResponseAsset](/vext/ref/fb/impulseresponseasset/). |
 
 ## Methods
 
 | Type                                         | Name            | Parameters                                     |
 | -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [ImpulseResponseAsset](ImpulseResponseAsset) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [ImpulseResponseAsset](/vext/ref/fb/impulseresponseasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [ImpulseResponseAsset](ImpulseResponseAsset) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [ImpulseResponseAsset](/vext/ref/fb/impulseresponseasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -35,4 +35,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

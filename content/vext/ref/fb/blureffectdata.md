@@ -27,10 +27,10 @@ A structure type representing a Frostbite data type.
 
 | Type                             | Name            | Parameters |
 | -------------------------------- | --------------- | ---------- |
-| [BlurEffectData](BlurEffectData) | [Clone](#clone) |            |
+| [BlurEffectData](/vext/ref/fb/blureffectdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [BlurEffectData](BlurEffectData) **Clone**()
+> [BlurEffectData](/vext/ref/fb/blureffectdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

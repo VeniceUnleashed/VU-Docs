@@ -15,7 +15,7 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | LandingFlapData()                                                          | Create a new instance of this container type.                                                                         |
 | LandingFlapData(LandingFlapData other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| LandingFlapData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LandingFlapData](LandingFlapData). |
+| LandingFlapData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LandingFlapData](/vext/ref/fb/landingflapdata/). |
 
 ## Properties
 
@@ -30,11 +30,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                               | Name            | Parameters                                     |
 | ---------------------------------- | --------------- | ---------------------------------------------- |
-| [LandingFlapData](LandingFlapData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [LandingFlapData](/vext/ref/fb/landingflapdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [LandingFlapData](LandingFlapData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [LandingFlapData](/vext/ref/fb/landingflapdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -42,4 +42,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

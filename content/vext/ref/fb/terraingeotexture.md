@@ -16,10 +16,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                   | Name            | Parameters |
 | -------------------------------------- | --------------- | ---------- |
-| [TerrainGeoTexture](TerrainGeoTexture) | [Clone](#clone) |            |
+| [TerrainGeoTexture](/vext/ref/fb/terraingeotexture/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [TerrainGeoTexture](TerrainGeoTexture) **Clone**()
+> [TerrainGeoTexture](/vext/ref/fb/terraingeotexture/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

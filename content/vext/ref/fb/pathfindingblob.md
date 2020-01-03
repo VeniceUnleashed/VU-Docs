@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                               | Name            | Parameters |
 | ---------------------------------- | --------------- | ---------- |
-| [PathfindingBlob](PathfindingBlob) | [Clone](#clone) |            |
+| [PathfindingBlob](/vext/ref/fb/pathfindingblob/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [PathfindingBlob](PathfindingBlob) **Clone**()
+> [PathfindingBlob](/vext/ref/fb/pathfindingblob/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

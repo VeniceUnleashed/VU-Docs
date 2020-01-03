@@ -3,7 +3,7 @@ title: AnimatedDriverEntityData
 ---
 ### Base Classes
 
-[GameEntityData](GameEntityData)
+[GameEntityData](/vext/ref/fb/gameentitydata/)
 
 ## Description
 
@@ -15,38 +15,38 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | AnimatedDriverEntityData()                                                          | Create a new instance of this container type.                                                                                           |
 | AnimatedDriverEntityData(AnimatedDriverEntityData other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| AnimatedDriverEntityData([GameEntityData](GameEntityData) other)                    | Upcast an instance of type [GameEntityData](GameEntityData) to [AnimatedDriverEntityData](AnimatedDriverEntityData).                    |
-| AnimatedDriverEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [AnimatedDriverEntityData](AnimatedDriverEntityData).              |
-| AnimatedDriverEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [AnimatedDriverEntityData](AnimatedDriverEntityData).                            |
-| AnimatedDriverEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [AnimatedDriverEntityData](AnimatedDriverEntityData).                    |
-| AnimatedDriverEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [AnimatedDriverEntityData](AnimatedDriverEntityData).              |
-| AnimatedDriverEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AnimatedDriverEntityData](AnimatedDriverEntityData). |
+| AnimatedDriverEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [AnimatedDriverEntityData](/vext/ref/fb/animateddriverentitydata/).                    |
+| AnimatedDriverEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [AnimatedDriverEntityData](/vext/ref/fb/animateddriverentitydata/).              |
+| AnimatedDriverEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [AnimatedDriverEntityData](/vext/ref/fb/animateddriverentitydata/).                            |
+| AnimatedDriverEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [AnimatedDriverEntityData](/vext/ref/fb/animateddriverentitydata/).                    |
+| AnimatedDriverEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [AnimatedDriverEntityData](/vext/ref/fb/animateddriverentitydata/).              |
+| AnimatedDriverEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AnimatedDriverEntityData](/vext/ref/fb/animateddriverentitydata/). |
 
 ## Properties
 
 | Name                         | Type                                                    | Description |
 | ---------------------------- | ------------------------------------------------------- | ----------- |
 | inputTransform               | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
-| vehicleBoost                 | [AntRef](AntRef)                                        |             |
-| vehicleSpeed                 | [AntRef](AntRef)                                        |             |
-| vehicleMovementState         | [AntRef](AntRef)                                        |             |
-| vehicleClutch                | [AntRef](AntRef)                                        |             |
-| vehicleBrake                 | [AntRef](AntRef)                                        |             |
+| vehicleBoost                 | [AntRef](/vext/ref/fb/antref/)                                        |             |
+| vehicleSpeed                 | [AntRef](/vext/ref/fb/antref/)                                        |             |
+| vehicleMovementState         | [AntRef](/vext/ref/fb/antref/)                                        |             |
+| vehicleClutch                | [AntRef](/vext/ref/fb/antref/)                                        |             |
+| vehicleBrake                 | [AntRef](/vext/ref/fb/antref/)                                        |             |
 | movementStateStandThreshold  | number                                                  |             |
-| yaw                          | [NormalizeSettings](NormalizeSettings)                  |             |
-| roll                         | [NormalizeSettings](NormalizeSettings)                  |             |
-| pitch                        | [NormalizeSettings](NormalizeSettings)                  |             |
+| yaw                          | [NormalizeSettings](/vext/ref/fb/normalizesettings/)                  |             |
+| roll                         | [NormalizeSettings](/vext/ref/fb/normalizesettings/)                  |             |
+| pitch                        | [NormalizeSettings](/vext/ref/fb/normalizesettings/)                  |             |
 | delayAnimationWheelTransform | bool                                                    |             |
 
 ## Methods
 
 | Type                                                 | Name            | Parameters                                     |
 | ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [AnimatedDriverEntityData](AnimatedDriverEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [AnimatedDriverEntityData](/vext/ref/fb/animateddriverentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [AnimatedDriverEntityData](AnimatedDriverEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [AnimatedDriverEntityData](/vext/ref/fb/animateddriverentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -54,4 +54,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

@@ -3,7 +3,7 @@ title: MeleeEntityCommonData
 ---
 ### Base Classes
 
-[Asset](Asset)
+[Asset](/vext/ref/fb/asset/)
 
 ## Description
 
@@ -15,15 +15,15 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | MeleeEntityCommonData()                                                          | Create a new instance of this container type.                                                                                     |
 | MeleeEntityCommonData(MeleeEntityCommonData other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| MeleeEntityCommonData([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [MeleeEntityCommonData](MeleeEntityCommonData).                                      |
-| MeleeEntityCommonData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MeleeEntityCommonData](MeleeEntityCommonData). |
+| MeleeEntityCommonData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [MeleeEntityCommonData](/vext/ref/fb/meleeentitycommondata/).                                      |
+| MeleeEntityCommonData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MeleeEntityCommonData](/vext/ref/fb/meleeentitycommondata/). |
 
 ## Properties
 
 | Name                      | Type                                                       | Description |
 | ------------------------- | ---------------------------------------------------------- | ----------- |
-| meleeBinding              | [CharacterMeleeBinding](CharacterMeleeBinding)             |             |
-| meleeCommonBinding        | [CharacterMeleeCommonBinding](CharacterMeleeCommonBinding) |             |
+| meleeBinding              | [CharacterMeleeBinding](/vext/ref/fb/charactermeleebinding/)             |             |
+| meleeCommonBinding        | [CharacterMeleeCommonBinding](/vext/ref/fb/charactermeleecommonbinding/) |             |
 | triggerDelay              | number                                                     |             |
 | defendWindow              | number                                                     |             |
 | killDelay                 | number                                                     |             |
@@ -32,19 +32,19 @@ A container type representing a Frostbite instance entry.
 | meleeAttackDistance       | number                                                     |             |
 | maxAttackHeightDifference | number                                                     |             |
 | killDamage                | number                                                     |             |
-| proneAttackType           | [AntEnumeration](AntEnumeration)                           |             |
-| crouchAttackType          | [AntEnumeration](AntEnumeration)                           |             |
+| proneAttackType           | [AntEnumeration](/vext/ref/fb/antenumeration/)                           |             |
+| crouchAttackType          | [AntEnumeration](/vext/ref/fb/antenumeration/)                           |             |
 | enableAbortPossibility    | bool                                                       |             |
 
 ## Methods
 
 | Type                                           | Name            | Parameters                                     |
 | ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [MeleeEntityCommonData](MeleeEntityCommonData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [MeleeEntityCommonData](/vext/ref/fb/meleeentitycommondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [MeleeEntityCommonData](MeleeEntityCommonData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [MeleeEntityCommonData](/vext/ref/fb/meleeentitycommondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -52,4 +52,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

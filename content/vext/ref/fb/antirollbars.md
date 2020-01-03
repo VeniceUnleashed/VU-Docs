@@ -16,17 +16,17 @@ A structure type representing a Frostbite data type.
 
 | Name  | Type                       | Description |
 | ----- | -------------------------- | ----------- |
-| front | [AntiRollBar](AntiRollBar) |             |
-| rear  | [AntiRollBar](AntiRollBar) |             |
+| front | [AntiRollBar](/vext/ref/fb/antirollbar/) |             |
+| rear  | [AntiRollBar](/vext/ref/fb/antirollbar/) |             |
 
 ## Methods
 
 | Type                         | Name            | Parameters |
 | ---------------------------- | --------------- | ---------- |
-| [AntiRollBars](AntiRollBars) | [Clone](#clone) |            |
+| [AntiRollBars](/vext/ref/fb/antirollbars/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [AntiRollBars](AntiRollBars) **Clone**()
+> [AntiRollBars](/vext/ref/fb/antirollbars/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

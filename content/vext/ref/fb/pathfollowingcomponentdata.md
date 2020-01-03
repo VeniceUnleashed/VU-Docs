@@ -3,7 +3,7 @@ title: PathFollowingComponentData
 ---
 ### Base Classes
 
-[ComponentData](ComponentData)
+[ComponentData](/vext/ref/fb/componentdata/)
 
 ## Description
 
@@ -15,10 +15,10 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | PathFollowingComponentData()                                                          | Create a new instance of this container type.                                                                                               |
 | PathFollowingComponentData(PathFollowingComponentData other)                          | Create a reference copy of an instance of the same type.                                                                                    |
-| PathFollowingComponentData([ComponentData](ComponentData) other)                      | Upcast an instance of type [ComponentData](ComponentData) to [PathFollowingComponentData](PathFollowingComponentData).                      |
-| PathFollowingComponentData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [PathFollowingComponentData](PathFollowingComponentData).                    |
-| PathFollowingComponentData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [PathFollowingComponentData](PathFollowingComponentData).              |
-| PathFollowingComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PathFollowingComponentData](PathFollowingComponentData). |
+| PathFollowingComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [PathFollowingComponentData](/vext/ref/fb/pathfollowingcomponentdata/).                      |
+| PathFollowingComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [PathFollowingComponentData](/vext/ref/fb/pathfollowingcomponentdata/).                    |
+| PathFollowingComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [PathFollowingComponentData](/vext/ref/fb/pathfollowingcomponentdata/).              |
+| PathFollowingComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PathFollowingComponentData](/vext/ref/fb/pathfollowingcomponentdata/). |
 
 ## Properties
 
@@ -33,11 +33,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                     | Name            | Parameters                                     |
 | -------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [PathFollowingComponentData](PathFollowingComponentData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [PathFollowingComponentData](/vext/ref/fb/pathfollowingcomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [PathFollowingComponentData](PathFollowingComponentData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [PathFollowingComponentData](/vext/ref/fb/pathfollowingcomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -45,4 +45,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

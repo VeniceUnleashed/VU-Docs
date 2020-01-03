@@ -3,7 +3,7 @@ title: BoatFloatPhysicsData
 ---
 ### Base Classes
 
-[HullFloatPhysicsData](HullFloatPhysicsData)
+[HullFloatPhysicsData](/vext/ref/fb/hullfloatphysicsdata/)
 
 ## Description
 
@@ -15,9 +15,9 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | BoatFloatPhysicsData()                                                          | Create a new instance of this container type.                                                                                   |
 | BoatFloatPhysicsData(BoatFloatPhysicsData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| BoatFloatPhysicsData([HullFloatPhysicsData](HullFloatPhysicsData) other)        | Upcast an instance of type [HullFloatPhysicsData](HullFloatPhysicsData) to [BoatFloatPhysicsData](BoatFloatPhysicsData).        |
-| BoatFloatPhysicsData([FloatPhysicsData](FloatPhysicsData) other)                | Upcast an instance of type [FloatPhysicsData](FloatPhysicsData) to [BoatFloatPhysicsData](BoatFloatPhysicsData).                |
-| BoatFloatPhysicsData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BoatFloatPhysicsData](BoatFloatPhysicsData). |
+| BoatFloatPhysicsData([HullFloatPhysicsData](/vext/ref/fb/hullfloatphysicsdata/) other)        | Upcast an instance of type [HullFloatPhysicsData](/vext/ref/fb/hullfloatphysicsdata/) to [BoatFloatPhysicsData](/vext/ref/fb/boatfloatphysicsdata/).        |
+| BoatFloatPhysicsData([FloatPhysicsData](/vext/ref/fb/floatphysicsdata/) other)                | Upcast an instance of type [FloatPhysicsData](/vext/ref/fb/floatphysicsdata/) to [BoatFloatPhysicsData](/vext/ref/fb/boatfloatphysicsdata/).                |
+| BoatFloatPhysicsData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BoatFloatPhysicsData](/vext/ref/fb/boatfloatphysicsdata/). |
 
 ## Properties
 
@@ -29,11 +29,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                         | Name            | Parameters                                     |
 | -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [BoatFloatPhysicsData](BoatFloatPhysicsData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [BoatFloatPhysicsData](/vext/ref/fb/boatfloatphysicsdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [BoatFloatPhysicsData](BoatFloatPhysicsData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [BoatFloatPhysicsData](/vext/ref/fb/boatfloatphysicsdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -41,4 +41,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

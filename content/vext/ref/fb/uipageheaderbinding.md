@@ -3,7 +3,7 @@ title: UIPageHeaderBinding
 ---
 ### Base Classes
 
-[UIDataBinding](UIDataBinding)
+[UIDataBinding](/vext/ref/fb/uidatabinding/)
 
 ## Description
 
@@ -15,30 +15,30 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
 | UIPageHeaderBinding()                                                          | Create a new instance of this container type.                                                                                 |
 | UIPageHeaderBinding(UIPageHeaderBinding other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| UIPageHeaderBinding([UIDataBinding](UIDataBinding) other)                      | Upcast an instance of type [UIDataBinding](UIDataBinding) to [UIPageHeaderBinding](UIPageHeaderBinding).                      |
-| UIPageHeaderBinding([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIPageHeaderBinding](UIPageHeaderBinding). |
+| UIPageHeaderBinding([UIDataBinding](/vext/ref/fb/uidatabinding/) other)                      | Upcast an instance of type [UIDataBinding](/vext/ref/fb/uidatabinding/) to [UIPageHeaderBinding](/vext/ref/fb/uipageheaderbinding/).                      |
+| UIPageHeaderBinding([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIPageHeaderBinding](/vext/ref/fb/uipageheaderbinding/). |
 
 ## Properties
 
 | Name                 | Type                                                       | Description |
 | -------------------- | ---------------------------------------------------------- | ----------- |
-| header               | [UIDataSourceInfo](UIDataSourceInfo)                       |             |
-| subHeader            | [UIDataSourceInfo](UIDataSourceInfo)                       |             |
-| icon                 | [UIDataSourceInfo](UIDataSourceInfo)                       |             |
+| header               | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/)                       |             |
+| subHeader            | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/)                       |             |
+| icon                 | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/)                       |             |
 | staticHeader         | string                                                     |             |
 | staticSubHeader      | string                                                     |             |
 | staticIcon           | string                                                     |             |
-| levelSpecificHeaders | [UILevelSpecificPageHeader](UILevelSpecificPageHeader)\[\] |             |
+| levelSpecificHeaders | [UILevelSpecificPageHeader](/vext/ref/fb/uilevelspecificpageheader/)\[\] |             |
 
 ## Methods
 
 | Type                                       | Name            | Parameters                                     |
 | ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [UIPageHeaderBinding](UIPageHeaderBinding) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [UIPageHeaderBinding](/vext/ref/fb/uipageheaderbinding/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [UIPageHeaderBinding](UIPageHeaderBinding) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [UIPageHeaderBinding](/vext/ref/fb/uipageheaderbinding/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -46,4 +46,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

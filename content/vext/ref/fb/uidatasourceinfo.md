@@ -17,7 +17,7 @@ A structure type representing a Frostbite data type.
 | Name               | Type                               | Description |
 | ------------------ | ---------------------------------- | ----------- |
 | dataName           | string                             |             |
-| dataCategory       | [UIComponentData](UIComponentData) |             |
+| dataCategory       | [UIComponentData](/vext/ref/fb/uicomponentdata/) |             |
 | dataKey            | number                             |             |
 | useDirectAccess    | bool                               |             |
 | updateOnInitialize | bool                               |             |
@@ -26,10 +26,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                 | Name            | Parameters |
 | ------------------------------------ | --------------- | ---------- |
-| [UIDataSourceInfo](UIDataSourceInfo) | [Clone](#clone) |            |
+| [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [UIDataSourceInfo](UIDataSourceInfo) **Clone**()
+> [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

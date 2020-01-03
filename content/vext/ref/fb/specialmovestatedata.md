@@ -23,13 +23,13 @@ A structure type representing a Frostbite data type.
 | maxDistanceScale                 | number                                                           |             |
 | minDistanceScale                 | number                                                           |             |
 | maxHeightScale                   | number                                                           |             |
-| motionPoints                     | [SpecialMoveInterpolatedPoint](SpecialMoveInterpolatedPoint)\[\] |             |
+| motionPoints                     | [SpecialMoveInterpolatedPoint](/vext/ref/fb/specialmoveinterpolatedpoint/)\[\] |             |
 | maxObjectLengthScale             | number                                                           |             |
 | minObjectLengthScale             | number                                                           |             |
 | exitAnimationDrivenStateVelocity | number                                                           |             |
-| resetPose                        | [SpecialMovesPoseType](SpecialMovesPoseType)                     |             |
-| overridePose                     | [SpecialMovesPoseType](SpecialMovesPoseType)                     |             |
-| gravityPoints                    | [SpecialMoveInterpolatedPoint](SpecialMoveInterpolatedPoint)\[\] |             |
+| resetPose                        | [SpecialMovesPoseType](/vext/ref/fb/specialmovesposetype/)                     |             |
+| overridePose                     | [SpecialMovesPoseType](/vext/ref/fb/specialmovesposetype/)                     |             |
+| gravityPoints                    | [SpecialMoveInterpolatedPoint](/vext/ref/fb/specialmoveinterpolatedpoint/)\[\] |             |
 | keepInitialSoldierDirection      | bool                                                             |             |
 | scaleWithDistanceToObject        | bool                                                             |             |
 
@@ -37,10 +37,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                         | Name            | Parameters |
 | -------------------------------------------- | --------------- | ---------- |
-| [SpecialMoveStateData](SpecialMoveStateData) | [Clone](#clone) |            |
+| [SpecialMoveStateData](/vext/ref/fb/specialmovestatedata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SpecialMoveStateData](SpecialMoveStateData) **Clone**()
+> [SpecialMoveStateData](/vext/ref/fb/specialmovestatedata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

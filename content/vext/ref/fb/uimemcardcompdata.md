@@ -3,7 +3,7 @@ title: UIMemCardCompData
 ---
 ### Base Classes
 
-[UIComponentData](UIComponentData)
+[UIComponentData](/vext/ref/fb/uicomponentdata/)
 
 ## Description
 
@@ -15,19 +15,19 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | UIMemCardCompData()                                                          | Create a new instance of this container type.                                                                             |
 | UIMemCardCompData(UIMemCardCompData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| UIMemCardCompData([UIComponentData](UIComponentData) other)                  | Upcast an instance of type [UIComponentData](UIComponentData) to [UIMemCardCompData](UIMemCardCompData).                  |
-| UIMemCardCompData([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [UIMemCardCompData](UIMemCardCompData).                                      |
-| UIMemCardCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIMemCardCompData](UIMemCardCompData). |
+| UIMemCardCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UIMemCardCompData](/vext/ref/fb/uimemcardcompdata/).                  |
+| UIMemCardCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UIMemCardCompData](/vext/ref/fb/uimemcardcompdata/).                                      |
+| UIMemCardCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIMemCardCompData](/vext/ref/fb/uimemcardcompdata/). |
 
 ## Methods
 
 | Type                                   | Name            | Parameters                                     |
 | -------------------------------------- | --------------- | ---------------------------------------------- |
-| [UIMemCardCompData](UIMemCardCompData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [UIMemCardCompData](/vext/ref/fb/uimemcardcompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [UIMemCardCompData](UIMemCardCompData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [UIMemCardCompData](/vext/ref/fb/uimemcardcompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -35,4 +35,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

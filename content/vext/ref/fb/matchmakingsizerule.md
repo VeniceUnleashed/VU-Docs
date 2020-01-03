@@ -17,16 +17,16 @@ A structure type representing a Frostbite data type.
 | Name           | Type                                                             | Description |
 | -------------- | ---------------------------------------------------------------- | ----------- |
 | setting        | string                                                           |             |
-| configurations | [MatchmakingSizeConfiguration](MatchmakingSizeConfiguration)\[\] |             |
+| configurations | [MatchmakingSizeConfiguration](/vext/ref/fb/matchmakingsizeconfiguration/)\[\] |             |
 
 ## Methods
 
 | Type                                       | Name            | Parameters |
 | ------------------------------------------ | --------------- | ---------- |
-| [MatchmakingSizeRule](MatchmakingSizeRule) | [Clone](#clone) |            |
+| [MatchmakingSizeRule](/vext/ref/fb/matchmakingsizerule/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [MatchmakingSizeRule](MatchmakingSizeRule) **Clone**()
+> [MatchmakingSizeRule](/vext/ref/fb/matchmakingsizerule/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

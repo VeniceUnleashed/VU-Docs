@@ -15,13 +15,13 @@ A container type representing a Frostbite instance entry.
 | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | AntTrackItemData()                                                          | Create a new instance of this container type.                                                                           |
 | AntTrackItemData(AntTrackItemData other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| AntTrackItemData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AntTrackItemData](AntTrackItemData). |
+| AntTrackItemData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AntTrackItemData](/vext/ref/fb/anttrackitemdata/). |
 
 ## Properties
 
 | Name               | Type             | Description |
 | ------------------ | ---------------- | ----------- |
-| controller         | [AntRef](AntRef) |             |
+| controller         | [AntRef](/vext/ref/fb/antref/) |             |
 | sequenceTrackIndex | number           |             |
 | startTime          | number           |             |
 | numTicks           | number           |             |
@@ -31,11 +31,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                 | Name            | Parameters                                     |
 | ------------------------------------ | --------------- | ---------------------------------------------- |
-| [AntTrackItemData](AntTrackItemData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [AntTrackItemData](/vext/ref/fb/anttrackitemdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [AntTrackItemData](AntTrackItemData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [AntTrackItemData](/vext/ref/fb/anttrackitemdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -43,4 +43,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

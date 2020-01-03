@@ -3,7 +3,7 @@ title: PersistentCriteriaStatRef
 ---
 ### Base Classes
 
-[AbstractPersistentStatRef](AbstractPersistentStatRef)
+[AbstractPersistentStatRef](/vext/ref/fb/abstractpersistentstatref/)
 
 ## Description
 
@@ -15,27 +15,27 @@ A container type representing a Frostbite instance entry.
 | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | PersistentCriteriaStatRef()                                                             | Create a new instance of this container type.                                                                                                |
 | PersistentCriteriaStatRef(PersistentCriteriaStatRef other)                              | Create a reference copy of an instance of the same type.                                                                                     |
-| PersistentCriteriaStatRef([AbstractPersistentStatRef](AbstractPersistentStatRef) other) | Upcast an instance of type [AbstractPersistentStatRef](AbstractPersistentStatRef) to [PersistentCriteriaStatRef](PersistentCriteriaStatRef). |
-| PersistentCriteriaStatRef([DataContainer](/vext/ref/shared/class/datacontainer) other)    | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PersistentCriteriaStatRef](PersistentCriteriaStatRef).    |
+| PersistentCriteriaStatRef([AbstractPersistentStatRef](/vext/ref/fb/abstractpersistentstatref/) other) | Upcast an instance of type [AbstractPersistentStatRef](/vext/ref/fb/abstractpersistentstatref/) to [PersistentCriteriaStatRef](/vext/ref/fb/persistentcriteriastatref/). |
+| PersistentCriteriaStatRef([DataContainer](/vext/ref/shared/class/datacontainer) other)    | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PersistentCriteriaStatRef](/vext/ref/fb/persistentcriteriastatref/).    |
 
 ## Properties
 
 | Name          | Type                                           | Description |
 | ------------- | ---------------------------------------------- | ----------- |
-| criteria      | [CriteriaData](CriteriaData)                   |             |
-| paramX        | [StatsCategoryBaseData](StatsCategoryBaseData) |             |
-| paramY        | [StatsCategoryBaseData](StatsCategoryBaseData) |             |
-| criteriaOwner | [AwardData](AwardData)                         |             |
+| criteria      | [CriteriaData](/vext/ref/fb/criteriadata/)                   |             |
+| paramX        | [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/) |             |
+| paramY        | [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/) |             |
+| criteriaOwner | [AwardData](/vext/ref/fb/awarddata/)                         |             |
 
 ## Methods
 
 | Type                                                   | Name            | Parameters                                     |
 | ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [PersistentCriteriaStatRef](PersistentCriteriaStatRef) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [PersistentCriteriaStatRef](/vext/ref/fb/persistentcriteriastatref/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [PersistentCriteriaStatRef](PersistentCriteriaStatRef) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [PersistentCriteriaStatRef](/vext/ref/fb/persistentcriteriastatref/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -43,4 +43,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                     | Name            | Parameters |
 | ------------------------ | --------------- | ---------- |
-| [BurstLimit](BurstLimit) | [Clone](#clone) |            |
+| [BurstLimit](/vext/ref/fb/burstlimit/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [BurstLimit](BurstLimit) **Clone**()
+> [BurstLimit](/vext/ref/fb/burstlimit/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

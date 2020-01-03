@@ -3,7 +3,7 @@ title: UavCameraData
 ---
 ### Base Classes
 
-[TargetCameraData](TargetCameraData)
+[TargetCameraData](/vext/ref/fb/targetcameradata/)
 
 ## Description
 
@@ -15,39 +15,39 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
 | UavCameraData()                                                          | Create a new instance of this container type.                                                                     |
 | UavCameraData(UavCameraData other)                                       | Create a reference copy of an instance of the same type.                                                          |
-| UavCameraData([TargetCameraData](TargetCameraData) other)                | Upcast an instance of type [TargetCameraData](TargetCameraData) to [UavCameraData](UavCameraData).                |
-| UavCameraData([CameraData](CameraData) other)                            | Upcast an instance of type [CameraData](CameraData) to [UavCameraData](UavCameraData).                            |
-| UavCameraData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [UavCameraData](UavCameraData).                    |
-| UavCameraData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [UavCameraData](UavCameraData).              |
-| UavCameraData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UavCameraData](UavCameraData). |
+| UavCameraData([TargetCameraData](/vext/ref/fb/targetcameradata/) other)                | Upcast an instance of type [TargetCameraData](/vext/ref/fb/targetcameradata/) to [UavCameraData](/vext/ref/fb/uavcameradata/).                |
+| UavCameraData([CameraData](/vext/ref/fb/cameradata/) other)                            | Upcast an instance of type [CameraData](/vext/ref/fb/cameradata/) to [UavCameraData](/vext/ref/fb/uavcameradata/).                            |
+| UavCameraData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [UavCameraData](/vext/ref/fb/uavcameradata/).                    |
+| UavCameraData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [UavCameraData](/vext/ref/fb/uavcameradata/).              |
+| UavCameraData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UavCameraData](/vext/ref/fb/uavcameradata/). |
 
 ## Properties
 
 | Name               | Type                                           | Description |
 | ------------------ | ---------------------------------------------- | ----------- |
 | viewDistance       | number                                         |             |
-| viewDistanceCurve  | [CameraSineCurveData](CameraSineCurveData)\[\] |             |
+| viewDistanceCurve  | [CameraSineCurveData](/vext/ref/fb/camerasinecurvedata/)\[\] |             |
 | viewAngle          | number                                         |             |
-| viewAngleCurve     | [CameraSineCurveData](CameraSineCurveData)\[\] |             |
+| viewAngleCurve     | [CameraSineCurveData](/vext/ref/fb/camerasinecurvedata/)\[\] |             |
 | rotationSpeed      | number                                         |             |
-| rotationSpeedCurve | [CameraSineCurveData](CameraSineCurveData)\[\] |             |
+| rotationSpeedCurve | [CameraSineCurveData](/vext/ref/fb/camerasinecurvedata/)\[\] |             |
 | zoomFov            | number                                         |             |
 | zoomDelay          | number                                         |             |
 | zoomTransitionTime | number                                         |             |
 | fov                | number                                         |             |
-| focusPoint         | [UavCameraPointData](UavCameraPointData)       |             |
-| centerPoint        | [UavCameraPointData](UavCameraPointData)       |             |
+| focusPoint         | [UavCameraPointData](/vext/ref/fb/uavcamerapointdata/)       |             |
+| centerPoint        | [UavCameraPointData](/vext/ref/fb/uavcamerapointdata/)       |             |
 | upWeightDistance   | number                                         |             |
 
 ## Methods
 
 | Type                           | Name            | Parameters                                     |
 | ------------------------------ | --------------- | ---------------------------------------------- |
-| [UavCameraData](UavCameraData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [UavCameraData](/vext/ref/fb/uavcameradata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [UavCameraData](UavCameraData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [UavCameraData](/vext/ref/fb/uavcameradata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -55,4 +55,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

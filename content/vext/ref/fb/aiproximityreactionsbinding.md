@@ -16,29 +16,29 @@ A structure type representing a Frostbite data type.
 
 | Name                       | Type             | Description |
 | -------------------------- | ---------------- | ----------- |
-| aiReaction                 | [AntRef](AntRef) |             |
-| aiExplosionReaction        | [AntRef](AntRef) |             |
-| aiExplosionForce           | [AntRef](AntRef) |             |
-| aiStunReaction             | [AntRef](AntRef) |             |
-| aiStunReactionRandomFactor | [AntRef](AntRef) |             |
-| aiReactionDirection        | [AntRef](AntRef) |             |
-| fireNearby                 | [AntRef](AntRef) |             |
-| aimUpAndDown               | [AntRef](AntRef) |             |
-| focusAimScale              | [AntRef](AntRef) |             |
-| focusAiming                | [AntRef](AntRef) |             |
-| enableProceduralHeadAim    | [AntRef](AntRef) |             |
-| killFromAnimation          | [AntRef](AntRef) |             |
-| playerAnimationKill        | [AntRef](AntRef) |             |
-| playerInitiatedRagdoll     | [AntRef](AntRef) |             |
+| aiReaction                 | [AntRef](/vext/ref/fb/antref/) |             |
+| aiExplosionReaction        | [AntRef](/vext/ref/fb/antref/) |             |
+| aiExplosionForce           | [AntRef](/vext/ref/fb/antref/) |             |
+| aiStunReaction             | [AntRef](/vext/ref/fb/antref/) |             |
+| aiStunReactionRandomFactor | [AntRef](/vext/ref/fb/antref/) |             |
+| aiReactionDirection        | [AntRef](/vext/ref/fb/antref/) |             |
+| fireNearby                 | [AntRef](/vext/ref/fb/antref/) |             |
+| aimUpAndDown               | [AntRef](/vext/ref/fb/antref/) |             |
+| focusAimScale              | [AntRef](/vext/ref/fb/antref/) |             |
+| focusAiming                | [AntRef](/vext/ref/fb/antref/) |             |
+| enableProceduralHeadAim    | [AntRef](/vext/ref/fb/antref/) |             |
+| killFromAnimation          | [AntRef](/vext/ref/fb/antref/) |             |
+| playerAnimationKill        | [AntRef](/vext/ref/fb/antref/) |             |
+| playerInitiatedRagdoll     | [AntRef](/vext/ref/fb/antref/) |             |
 
 ## Methods
 
 | Type                                                       | Name            | Parameters |
 | ---------------------------------------------------------- | --------------- | ---------- |
-| [AIProximityReactionsBinding](AIProximityReactionsBinding) | [Clone](#clone) |            |
+| [AIProximityReactionsBinding](/vext/ref/fb/aiproximityreactionsbinding/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [AIProximityReactionsBinding](AIProximityReactionsBinding) **Clone**()
+> [AIProximityReactionsBinding](/vext/ref/fb/aiproximityreactionsbinding/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

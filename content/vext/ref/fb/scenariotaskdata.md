@@ -34,10 +34,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                 | Name            | Parameters |
 | ------------------------------------ | --------------- | ---------- |
-| [ScenarioTaskData](ScenarioTaskData) | [Clone](#clone) |            |
+| [ScenarioTaskData](/vext/ref/fb/scenariotaskdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [ScenarioTaskData](ScenarioTaskData) **Clone**()
+> [ScenarioTaskData](/vext/ref/fb/scenariotaskdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -20,12 +20,12 @@ A structure type representing a Frostbite data type.
 | initialDirection         | [Vec3](/vext/ref/shared/class/vec3)                |             |
 | initialSpeed             | [Vec3](/vext/ref/shared/class/vec3)                |             |
 | inheritWeaponSpeedAmount | number                                           |             |
-| muzzleExplosion          | [ExplosionEntityData](ExplosionEntityData)       |             |
-| projectileData           | [ProjectileEntityData](ProjectileEntityData)     |             |
-| secondaryProjectileData  | [ProjectileEntityData](ProjectileEntityData)     |             |
-| projectile               | [ProjectileBlueprint](ProjectileBlueprint)       |             |
-| secondaryProjectile      | [ProjectileBlueprint](ProjectileBlueprint)       |             |
-| alternateProjectiles     | [UnlockableProjectile](UnlockableProjectile)\[\] |             |
+| muzzleExplosion          | [ExplosionEntityData](/vext/ref/fb/explosionentitydata/)       |             |
+| projectileData           | [ProjectileEntityData](/vext/ref/fb/projectileentitydata/)     |             |
+| secondaryProjectileData  | [ProjectileEntityData](/vext/ref/fb/projectileentitydata/)     |             |
+| projectile               | [ProjectileBlueprint](/vext/ref/fb/projectileblueprint/)       |             |
+| secondaryProjectile      | [ProjectileBlueprint](/vext/ref/fb/projectileblueprint/)       |             |
+| alternateProjectiles     | [UnlockableProjectile](/vext/ref/fb/unlockableprojectile/)\[\] |             |
 | spawnDelay               | number                                           |             |
 | numberOfBulletsPerShell  | number                                           |             |
 | numberOfBulletsPerShot   | number                                           |             |
@@ -39,10 +39,10 @@ A structure type representing a Frostbite data type.
 
 | Type                             | Name            | Parameters |
 | -------------------------------- | --------------- | ---------- |
-| [ShotConfigData](ShotConfigData) | [Clone](#clone) |            |
+| [ShotConfigData](/vext/ref/fb/shotconfigdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [ShotConfigData](ShotConfigData) **Clone**()
+> [ShotConfigData](/vext/ref/fb/shotconfigdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

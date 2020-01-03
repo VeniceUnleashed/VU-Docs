@@ -3,7 +3,7 @@ title: DofComponentData
 ---
 ### Base Classes
 
-[ComponentData](ComponentData)
+[ComponentData](/vext/ref/fb/componentdata/)
 
 ## Description
 
@@ -15,19 +15,19 @@ A container type representing a Frostbite instance entry.
 | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | DofComponentData()                                                          | Create a new instance of this container type.                                                                           |
 | DofComponentData(DofComponentData other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| DofComponentData([ComponentData](ComponentData) other)                      | Upcast an instance of type [ComponentData](ComponentData) to [DofComponentData](DofComponentData).                      |
-| DofComponentData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [DofComponentData](DofComponentData).                    |
-| DofComponentData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [DofComponentData](DofComponentData).              |
-| DofComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DofComponentData](DofComponentData). |
+| DofComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [DofComponentData](/vext/ref/fb/dofcomponentdata/).                      |
+| DofComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [DofComponentData](/vext/ref/fb/dofcomponentdata/).                    |
+| DofComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [DofComponentData](/vext/ref/fb/dofcomponentdata/).              |
+| DofComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DofComponentData](/vext/ref/fb/dofcomponentdata/). |
 
 ## Properties
 
 | Name                    | Type                     | Description |
 | ----------------------- | ------------------------ | ----------- |
-| realm                   | [Realm](Realm)           |             |
+| realm                   | [Realm](/vext/ref/fb/realm/)           |             |
 | nearDistanceScale       | number                   |             |
 | focusDistance           | number                   |             |
-| blurFilter              | [BlurFilter](BlurFilter) |             |
+| blurFilter              | [BlurFilter](/vext/ref/fb/blurfilter/) |             |
 | blurFilterDeviation     | number                   |             |
 | farDistanceScale        | number                   |             |
 | blurAdd                 | number                   |             |
@@ -41,11 +41,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                 | Name            | Parameters                                     |
 | ------------------------------------ | --------------- | ---------------------------------------------- |
-| [DofComponentData](DofComponentData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [DofComponentData](/vext/ref/fb/dofcomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [DofComponentData](DofComponentData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [DofComponentData](/vext/ref/fb/dofcomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -53,4 +53,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

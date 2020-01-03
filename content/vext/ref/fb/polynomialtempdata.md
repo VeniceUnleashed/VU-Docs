@@ -25,10 +25,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                     | Name            | Parameters |
 | ---------------------------------------- | --------------- | ---------- |
-| [PolynomialTempData](PolynomialTempData) | [Clone](#clone) |            |
+| [PolynomialTempData](/vext/ref/fb/polynomialtempdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [PolynomialTempData](PolynomialTempData) **Clone**()
+> [PolynomialTempData](/vext/ref/fb/polynomialtempdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -25,10 +25,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                             | Name            | Parameters |
 | ------------------------------------------------ | --------------- | ---------- |
-| [EnlightenInputInstance](EnlightenInputInstance) | [Clone](#clone) |            |
+| [EnlightenInputInstance](/vext/ref/fb/enlighteninputinstance/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [EnlightenInputInstance](EnlightenInputInstance) **Clone**()
+> [EnlightenInputInstance](/vext/ref/fb/enlighteninputinstance/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

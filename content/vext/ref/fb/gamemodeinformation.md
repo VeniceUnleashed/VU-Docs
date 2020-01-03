@@ -16,19 +16,19 @@ A structure type representing a Frostbite data type.
 
 | Name                   | Type                             | Description |
 | ---------------------- | -------------------------------- | ----------- |
-| platform               | [GamePlatform](GamePlatform)     |             |
-| sizes                  | [GameModeSize](GameModeSize)\[\] |             |
-| defaultSize            | [GameModeSize](GameModeSize)     |             |
+| platform               | [GamePlatform](/vext/ref/fb/gameplatform/)     |             |
+| sizes                  | [GameModeSize](/vext/ref/fb/gamemodesize/)\[\] |             |
+| defaultSize            | [GameModeSize](/vext/ref/fb/gamemodesize/)     |             |
 | allowFallbackToDefault | bool                             |             |
 
 ## Methods
 
 | Type                                       | Name            | Parameters |
 | ------------------------------------------ | --------------- | ---------- |
-| [GameModeInformation](GameModeInformation) | [Clone](#clone) |            |
+| [GameModeInformation](/vext/ref/fb/gamemodeinformation/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [GameModeInformation](GameModeInformation) **Clone**()
+> [GameModeInformation](/vext/ref/fb/gamemodeinformation/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -17,29 +17,29 @@ A structure type representing a Frostbite data type.
 | Name                                 | Type                                                                         | Description |
 | ------------------------------------ | ---------------------------------------------------------------------------- | ----------- |
 | dummyToMakeFrostEDcompile            | number                                                                       |             |
-| weaponMiscModifierSettings           | [WeaponMiscModifierSettings](WeaponMiscModifierSettings)                     |             |
-| weaponFiringDataModifier             | [WeaponFiringDataModifier](WeaponFiringDataModifier)                         |             |
-| weaponFiringEffectsModifier          | [WeaponFiringEffectsModifier](WeaponFiringEffectsModifier)                   |             |
-| weaponSoundModifier                  | [WeaponSoundModifier](WeaponSoundModifier)                                   |             |
-| weaponShotModifier                   | [WeaponShotModifier](WeaponShotModifier)                                     |             |
-| weaponProjectileModifier             | [WeaponProjectileModifier](WeaponProjectileModifier)                         |             |
-| weaponAimingSimulationModifier       | [WeaponAimingSimulationModifier](WeaponAimingSimulationModifier)             |             |
-| weaponAnimationConfigurationModifier | [WeaponAnimationConfigurationModifier](WeaponAnimationConfigurationModifier) |             |
-| weaponAnimTypeModifier               | [WeaponAnimTypeModifier](WeaponAnimTypeModifier)                             |             |
-| weaponMagazineModifier               | [WeaponMagazineModifier](WeaponMagazineModifier)                             |             |
-| weaponZoomModifier                   | [WeaponZoomModifier](WeaponZoomModifier)                                     |             |
+| weaponMiscModifierSettings           | [WeaponMiscModifierSettings](/vext/ref/fb/weaponmiscmodifiersettings/)                     |             |
+| weaponFiringDataModifier             | [WeaponFiringDataModifier](/vext/ref/fb/weaponfiringdatamodifier/)                         |             |
+| weaponFiringEffectsModifier          | [WeaponFiringEffectsModifier](/vext/ref/fb/weaponfiringeffectsmodifier/)                   |             |
+| weaponSoundModifier                  | [WeaponSoundModifier](/vext/ref/fb/weaponsoundmodifier/)                                   |             |
+| weaponShotModifier                   | [WeaponShotModifier](/vext/ref/fb/weaponshotmodifier/)                                     |             |
+| weaponProjectileModifier             | [WeaponProjectileModifier](/vext/ref/fb/weaponprojectilemodifier/)                         |             |
+| weaponAimingSimulationModifier       | [WeaponAimingSimulationModifier](/vext/ref/fb/weaponaimingsimulationmodifier/)             |             |
+| weaponAnimationConfigurationModifier | [WeaponAnimationConfigurationModifier](/vext/ref/fb/weaponanimationconfigurationmodifier/) |             |
+| weaponAnimTypeModifier               | [WeaponAnimTypeModifier](/vext/ref/fb/weaponanimtypemodifier/)                             |             |
+| weaponMagazineModifier               | [WeaponMagazineModifier](/vext/ref/fb/weaponmagazinemodifier/)                             |             |
+| weaponZoomModifier                   | [WeaponZoomModifier](/vext/ref/fb/weaponzoommodifier/)                                     |             |
 
 ## Methods
 
 | Type                               | Name                                  | Parameters    |
 | ---------------------------------- | ------------------------------------- | ------------- |
-| [WeaponModifier](WeaponModifier)   | [Clone](#clone)                       |               |
+| [WeaponModifier](/vext/ref/fb/weaponmodifier/)   | [Clone](#clone)                       |               |
 | int                                | [GetUnlockCount](#getunlockcount)     |               |
-| [UnlockAssetBase](UnlockAssetBase) | [GetUnlockAtIndex](#getunlockatindex) | int **index** |
+| [UnlockAssetBase](/vext/ref/fb/unlockassetbase/) | [GetUnlockAtIndex](#getunlockatindex) | int **index** |
 
 ### Clone
 
-> [WeaponModifier](WeaponModifier) **Clone**()
+> [WeaponModifier](/vext/ref/fb/weaponmodifier/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
 
@@ -49,7 +49,7 @@ Creates a shallow-copy clone of the structure. Works similarly to [DataContainer
 
 ### GetUnlockAtIndex
 
-> [UnlockAssetBase](UnlockAssetBase) **GetUnlockAtIndex**(int **index**)
+> [UnlockAssetBase](/vext/ref/fb/unlockassetbase/) **GetUnlockAtIndex**(int **index**)
 
 #### Parameters
 

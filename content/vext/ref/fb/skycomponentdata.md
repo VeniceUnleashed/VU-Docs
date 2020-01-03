@@ -3,7 +3,7 @@ title: SkyComponentData
 ---
 ### Base Classes
 
-[ComponentData](ComponentData)
+[ComponentData](/vext/ref/fb/componentdata/)
 
 ## Description
 
@@ -15,10 +15,10 @@ A container type representing a Frostbite instance entry.
 | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | SkyComponentData()                                                          | Create a new instance of this container type.                                                                           |
 | SkyComponentData(SkyComponentData other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| SkyComponentData([ComponentData](ComponentData) other)                      | Upcast an instance of type [ComponentData](ComponentData) to [SkyComponentData](SkyComponentData).                      |
-| SkyComponentData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [SkyComponentData](SkyComponentData).                    |
-| SkyComponentData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [SkyComponentData](SkyComponentData).              |
-| SkyComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SkyComponentData](SkyComponentData). |
+| SkyComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [SkyComponentData](/vext/ref/fb/skycomponentdata/).                      |
+| SkyComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [SkyComponentData](/vext/ref/fb/skycomponentdata/).                    |
+| SkyComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [SkyComponentData](/vext/ref/fb/skycomponentdata/).              |
+| SkyComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SkyComponentData](/vext/ref/fb/skycomponentdata/). |
 
 ## Properties
 
@@ -27,19 +27,19 @@ A container type representing a Frostbite instance entry.
 | cloudLayerSunColor               | [Vec3](/vext/ref/shared/class/vec3) |             |
 | cloudLayer2Color                 | [Vec3](/vext/ref/shared/class/vec3) |             |
 | cloudLayer1Color                 | [Vec3](/vext/ref/shared/class/vec3) |             |
-| skyGradientTexture               | [TextureAsset](TextureAsset)      |             |
+| skyGradientTexture               | [TextureAsset](/vext/ref/fb/textureasset/)      |             |
 | sunSize                          | number                            |             |
 | brightnessScale                  | number                            |             |
 | sunScale                         | number                            |             |
 | panoramicUVMaxX                  | number                            |             |
 | panoramicUVMinY                  | number                            |             |
 | panoramicUVMaxY                  | number                            |             |
-| realm                            | [Realm](Realm)                    |             |
+| realm                            | [Realm](/vext/ref/fb/realm/)                    |             |
 | panoramicUVMinX                  | number                            |             |
-| panoramicTexture                 | [TextureAsset](TextureAsset)      |             |
-| panoramicAlphaTexture            | [TextureAsset](TextureAsset)      |             |
+| panoramicTexture                 | [TextureAsset](/vext/ref/fb/textureasset/)      |             |
+| panoramicAlphaTexture            | [TextureAsset](/vext/ref/fb/textureasset/)      |             |
 | panoramicTileFactor              | number                            |             |
-| cloudLayerMaskTexture            | [TextureAsset](TextureAsset)      |             |
+| cloudLayerMaskTexture            | [TextureAsset](/vext/ref/fb/textureasset/)      |             |
 | cloudLayer1Altitude              | number                            |             |
 | cloudLayer1TileFactor            | number                            |             |
 | cloudLayer1Rotation              | number                            |             |
@@ -49,7 +49,7 @@ A container type representing a Frostbite instance entry.
 | cloudLayer1AmbientLightIntensity | number                            |             |
 | cloudLayer1SunLightPower         | number                            |             |
 | cloudLayer1AlphaMul              | number                            |             |
-| cloudLayer1Texture               | [TextureAsset](TextureAsset)      |             |
+| cloudLayer1Texture               | [TextureAsset](/vext/ref/fb/textureasset/)      |             |
 | cloudLayer2Altitude              | number                            |             |
 | cloudLayer2TileFactor            | number                            |             |
 | cloudLayer2Rotation              | number                            |             |
@@ -59,11 +59,11 @@ A container type representing a Frostbite instance entry.
 | cloudLayer2AmbientLightIntensity | number                            |             |
 | staticEnvmapScale                | number                            |             |
 | cloudLayer2AlphaMul              | number                            |             |
-| cloudLayer2Texture               | [TextureAsset](TextureAsset)      |             |
-| staticEnvmapTexture              | [TextureAsset](TextureAsset)      |             |
+| cloudLayer2Texture               | [TextureAsset](/vext/ref/fb/textureasset/)      |             |
+| staticEnvmapTexture              | [TextureAsset](/vext/ref/fb/textureasset/)      |             |
 | skyVisibilityExponent            | number                            |             |
 | skyEnvmap8BitTexScale            | number                            |             |
-| customEnvmapTexture              | [TextureAsset](TextureAsset)      |             |
+| customEnvmapTexture              | [TextureAsset](/vext/ref/fb/textureasset/)      |             |
 | customEnvmapScale                | number                            |             |
 | customEnvmapAmbient              | number                            |             |
 | enable                           | bool                              |             |
@@ -72,11 +72,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                 | Name            | Parameters                                     |
 | ------------------------------------ | --------------- | ---------------------------------------------- |
-| [SkyComponentData](SkyComponentData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [SkyComponentData](/vext/ref/fb/skycomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [SkyComponentData](SkyComponentData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [SkyComponentData](/vext/ref/fb/skycomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -84,4 +84,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

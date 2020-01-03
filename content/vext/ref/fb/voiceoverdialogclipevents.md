@@ -15,7 +15,7 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | VoiceOverDialogClipEvents()                                                          | Create a new instance of this container type.                                                                                             |
 | VoiceOverDialogClipEvents(VoiceOverDialogClipEvents other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| VoiceOverDialogClipEvents([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverDialogClipEvents](VoiceOverDialogClipEvents). |
+| VoiceOverDialogClipEvents([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverDialogClipEvents](/vext/ref/fb/voiceoverdialogclipevents/). |
 
 ## Properties
 
@@ -28,11 +28,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                   | Name            | Parameters                                     |
 | ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [VoiceOverDialogClipEvents](VoiceOverDialogClipEvents) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [VoiceOverDialogClipEvents](/vext/ref/fb/voiceoverdialogclipevents/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [VoiceOverDialogClipEvents](VoiceOverDialogClipEvents) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [VoiceOverDialogClipEvents](/vext/ref/fb/voiceoverdialogclipevents/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -40,4 +40,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

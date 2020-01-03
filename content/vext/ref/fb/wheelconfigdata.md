@@ -15,7 +15,7 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | WheelConfigData()                                                          | Create a new instance of this container type.                                                                         |
 | WheelConfigData(WheelConfigData other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| WheelConfigData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WheelConfigData](WheelConfigData). |
+| WheelConfigData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WheelConfigData](/vext/ref/fb/wheelconfigdata/). |
 
 ## Properties
 
@@ -23,9 +23,9 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------- | ------------------------------------------------------ | ----------- |
 | offset                              | [Vec3](/vext/ref/shared/class/vec3)                      |             |
 | inertia                             | [Vec3](/vext/ref/shared/class/vec3)                      |             |
-| rotationBody                        | [RotationBodyData](RotationBodyData)                   |             |
-| sphereCollision                     | [SphereCollisionData](SphereCollisionData)             |             |
-| spring                              | [SpringData](SpringData)                               |             |
+| rotationBody                        | [RotationBodyData](/vext/ref/fb/rotationbodydata/)                   |             |
+| sphereCollision                     | [SphereCollisionData](/vext/ref/fb/spherecollisiondata/)             |             |
+| spring                              | [SpringData](/vext/ref/fb/springdata/)                               |             |
 | mass                                | number                                                 |             |
 | radius                              | number                                                 |             |
 | width                               | number                                                 |             |
@@ -46,8 +46,8 @@ A container type representing a Frostbite instance entry.
 | highSpeedSteeringSensitivityLimit   | number                                                 |             |
 | trackedTurnSpeedLimit               | number                                                 |             |
 | trackedForwardSpeedLimit            | number                                                 |             |
-| steerInertia                        | [Curve2D](Curve2D)                                     |             |
-| steeringSensitivity                 | [SensitivityAtVelocity](SensitivityAtVelocity)\[\]     |             |
+| steerInertia                        | [Curve2D](/vext/ref/fb/curve2d/)                                     |             |
+| steeringSensitivity                 | [SensitivityAtVelocity](/vext/ref/fb/sensitivityatvelocity/)\[\]     |             |
 | slopeGripMinAngle                   | number                                                 |             |
 | slopeGripMaxAngle                   | number                                                 |             |
 | slopeGripExponent                   | number                                                 |             |
@@ -58,8 +58,8 @@ A container type representing a Frostbite instance entry.
 | wheelSlipRatioMaxSlipCondition      | number                                                 |             |
 | longitudinalFrictionForceMaxFactor  | number                                                 |             |
 | lateralFrictionForceMaxFactor       | number                                                 |             |
-| longitudeFrictionScale              | [FrictionScaleAtVelocity](FrictionScaleAtVelocity)\[\] |             |
-| lattitudeFrictionScale              | [FrictionScaleAtVelocity](FrictionScaleAtVelocity)\[\] |             |
+| longitudeFrictionScale              | [FrictionScaleAtVelocity](/vext/ref/fb/frictionscaleatvelocity/)\[\] |             |
+| lattitudeFrictionScale              | [FrictionScaleAtVelocity](/vext/ref/fb/frictionscaleatvelocity/)\[\] |             |
 | wheelFrictionLattitudeBrakeScale    | number                                                 |             |
 | maxSlipRatio                        | number                                                 |             |
 | resistance                          | number                                                 |             |
@@ -90,7 +90,7 @@ A container type representing a Frostbite instance entry.
 | steeringAngleIndex                  | number                                                 |             |
 | pacejkaConfigIndex                  | number                                                 |             |
 | engineIndex                         | number                                                 |             |
-| collisionMaterialPair               | [MaterialContainerPair](MaterialContainerPair)         |             |
+| collisionMaterialPair               | [MaterialContainerPair](/vext/ref/fb/materialcontainerpair/)         |             |
 | alwaysGrip                          | bool                                                   |             |
 | useRollingResistanceBaseFactor      | bool                                                   |             |
 | useEngineBrake                      | bool                                                   |             |
@@ -105,11 +105,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                               | Name            | Parameters                                     |
 | ---------------------------------- | --------------- | ---------------------------------------------- |
-| [WheelConfigData](WheelConfigData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [WheelConfigData](/vext/ref/fb/wheelconfigdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [WheelConfigData](WheelConfigData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [WheelConfigData](/vext/ref/fb/wheelconfigdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -117,4 +117,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

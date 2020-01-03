@@ -3,7 +3,7 @@ title: CameraParamsComponentData
 ---
 ### Base Classes
 
-[ComponentData](ComponentData)
+[ComponentData](/vext/ref/fb/componentdata/)
 
 ## Description
 
@@ -15,10 +15,10 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | CameraParamsComponentData()                                                          | Create a new instance of this container type.                                                                                             |
 | CameraParamsComponentData(CameraParamsComponentData other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| CameraParamsComponentData([ComponentData](ComponentData) other)                      | Upcast an instance of type [ComponentData](ComponentData) to [CameraParamsComponentData](CameraParamsComponentData).                      |
-| CameraParamsComponentData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [CameraParamsComponentData](CameraParamsComponentData).                    |
-| CameraParamsComponentData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [CameraParamsComponentData](CameraParamsComponentData).              |
-| CameraParamsComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CameraParamsComponentData](CameraParamsComponentData). |
+| CameraParamsComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [CameraParamsComponentData](/vext/ref/fb/cameraparamscomponentdata/).                      |
+| CameraParamsComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [CameraParamsComponentData](/vext/ref/fb/cameraparamscomponentdata/).                    |
+| CameraParamsComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [CameraParamsComponentData](/vext/ref/fb/cameraparamscomponentdata/).              |
+| CameraParamsComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CameraParamsComponentData](/vext/ref/fb/cameraparamscomponentdata/). |
 
 ## Properties
 
@@ -32,11 +32,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                   | Name            | Parameters                                     |
 | ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [CameraParamsComponentData](CameraParamsComponentData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [CameraParamsComponentData](/vext/ref/fb/cameraparamscomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [CameraParamsComponentData](CameraParamsComponentData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [CameraParamsComponentData](/vext/ref/fb/cameraparamscomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -44,4 +44,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

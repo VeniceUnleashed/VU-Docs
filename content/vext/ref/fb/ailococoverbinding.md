@@ -16,33 +16,33 @@ A structure type representing a Frostbite data type.
 
 | Name                   | Type             | Description |
 | ---------------------- | ---------------- | ----------- |
-| prepareFire            | [AntRef](AntRef) |             |
-| throwGrenade           | [AntRef](AntRef) |             |
-| peekOut                | [AntRef](AntRef) |             |
-| idleBehindCover        | [AntRef](AntRef) |             |
-| peekType               | [AntRef](AntRef) |             |
-| coverTypeEnum          | [AntRef](AntRef) |             |
-| coverFireStyle         | [AntRef](AntRef) |             |
-| enterCover             | [AntRef](AntRef) |             |
-| exitCover              | [AntRef](AntRef) |             |
-| isCloseCover           | [AntRef](AntRef) |             |
-| distanceScale          | [AntRef](AntRef) |             |
-| absoluteDistance       | [AntRef](AntRef) |             |
-| angleToNormal          | [AntRef](AntRef) |             |
-| outAngle               | [AntRef](AntRef) |             |
-| threatAngle            | [AntRef](AntRef) |             |
-| stopExitCoverOutAround | [AntRef](AntRef) |             |
-| enterStrategy          | [AntRef](AntRef) |             |
-| exitStyle              | [AntRef](AntRef) |             |
+| prepareFire            | [AntRef](/vext/ref/fb/antref/) |             |
+| throwGrenade           | [AntRef](/vext/ref/fb/antref/) |             |
+| peekOut                | [AntRef](/vext/ref/fb/antref/) |             |
+| idleBehindCover        | [AntRef](/vext/ref/fb/antref/) |             |
+| peekType               | [AntRef](/vext/ref/fb/antref/) |             |
+| coverTypeEnum          | [AntRef](/vext/ref/fb/antref/) |             |
+| coverFireStyle         | [AntRef](/vext/ref/fb/antref/) |             |
+| enterCover             | [AntRef](/vext/ref/fb/antref/) |             |
+| exitCover              | [AntRef](/vext/ref/fb/antref/) |             |
+| isCloseCover           | [AntRef](/vext/ref/fb/antref/) |             |
+| distanceScale          | [AntRef](/vext/ref/fb/antref/) |             |
+| absoluteDistance       | [AntRef](/vext/ref/fb/antref/) |             |
+| angleToNormal          | [AntRef](/vext/ref/fb/antref/) |             |
+| outAngle               | [AntRef](/vext/ref/fb/antref/) |             |
+| threatAngle            | [AntRef](/vext/ref/fb/antref/) |             |
+| stopExitCoverOutAround | [AntRef](/vext/ref/fb/antref/) |             |
+| enterStrategy          | [AntRef](/vext/ref/fb/antref/) |             |
+| exitStyle              | [AntRef](/vext/ref/fb/antref/) |             |
 
 ## Methods
 
 | Type                                     | Name            | Parameters |
 | ---------------------------------------- | --------------- | ---------- |
-| [AILocoCoverBinding](AILocoCoverBinding) | [Clone](#clone) |            |
+| [AILocoCoverBinding](/vext/ref/fb/ailococoverbinding/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [AILocoCoverBinding](AILocoCoverBinding) **Clone**()
+> [AILocoCoverBinding](/vext/ref/fb/ailococoverbinding/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

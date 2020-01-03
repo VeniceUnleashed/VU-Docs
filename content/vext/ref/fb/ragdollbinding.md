@@ -16,20 +16,20 @@ A structure type representing a Frostbite data type.
 
 | Name                      | Type             | Description |
 | ------------------------- | ---------------- | ----------- |
-| ragdollOnBack             | [AntRef](AntRef) |             |
-| ragdollBlend              | [AntRef](AntRef) |             |
-| ragdollForceBlendDisabled | [AntRef](AntRef) |             |
-| ragdollActiveTime         | [AntRef](AntRef) |             |
-| ragdollFullyBlendedIn     | [AntRef](AntRef) |             |
+| ragdollOnBack             | [AntRef](/vext/ref/fb/antref/) |             |
+| ragdollBlend              | [AntRef](/vext/ref/fb/antref/) |             |
+| ragdollForceBlendDisabled | [AntRef](/vext/ref/fb/antref/) |             |
+| ragdollActiveTime         | [AntRef](/vext/ref/fb/antref/) |             |
+| ragdollFullyBlendedIn     | [AntRef](/vext/ref/fb/antref/) |             |
 
 ## Methods
 
 | Type                             | Name            | Parameters |
 | -------------------------------- | --------------- | ---------- |
-| [RagdollBinding](RagdollBinding) | [Clone](#clone) |            |
+| [RagdollBinding](/vext/ref/fb/ragdollbinding/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [RagdollBinding](RagdollBinding) **Clone**()
+> [RagdollBinding](/vext/ref/fb/ragdollbinding/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

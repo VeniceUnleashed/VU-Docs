@@ -26,10 +26,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                         | Name            | Parameters |
 | -------------------------------------------- | --------------- | ---------- |
-| [SupplyUnitSphereData](SupplyUnitSphereData) | [Clone](#clone) |            |
+| [SupplyUnitSphereData](/vext/ref/fb/supplyunitspheredata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SupplyUnitSphereData](SupplyUnitSphereData) **Clone**()
+> [SupplyUnitSphereData](/vext/ref/fb/supplyunitspheredata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -3,7 +3,7 @@ title: SkinnedSocketObjectData
 ---
 ### Base Classes
 
-[SocketObjectData](SocketObjectData)
+[SocketObjectData](/vext/ref/fb/socketobjectdata/)
 
 ## Description
 
@@ -15,9 +15,9 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | SkinnedSocketObjectData()                                                          | Create a new instance of this container type.                                                                                         |
 | SkinnedSocketObjectData(SkinnedSocketObjectData other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| SkinnedSocketObjectData([SocketObjectData](SocketObjectData) other)                | Upcast an instance of type [SocketObjectData](SocketObjectData) to [SkinnedSocketObjectData](SkinnedSocketObjectData).                |
-| SkinnedSocketObjectData([SocketObjectDataBase](SocketObjectDataBase) other)        | Upcast an instance of type [SocketObjectDataBase](SocketObjectDataBase) to [SkinnedSocketObjectData](SkinnedSocketObjectData).        |
-| SkinnedSocketObjectData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SkinnedSocketObjectData](SkinnedSocketObjectData). |
+| SkinnedSocketObjectData([SocketObjectData](/vext/ref/fb/socketobjectdata/) other)                | Upcast an instance of type [SocketObjectData](/vext/ref/fb/socketobjectdata/) to [SkinnedSocketObjectData](/vext/ref/fb/skinnedsocketobjectdata/).                |
+| SkinnedSocketObjectData([SocketObjectDataBase](/vext/ref/fb/socketobjectdatabase/) other)        | Upcast an instance of type [SocketObjectDataBase](/vext/ref/fb/socketobjectdatabase/) to [SkinnedSocketObjectData](/vext/ref/fb/skinnedsocketobjectdata/).        |
+| SkinnedSocketObjectData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SkinnedSocketObjectData](/vext/ref/fb/skinnedsocketobjectdata/). |
 
 ## Properties
 
@@ -29,11 +29,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                               | Name            | Parameters                                     |
 | -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [SkinnedSocketObjectData](SkinnedSocketObjectData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [SkinnedSocketObjectData](/vext/ref/fb/skinnedsocketobjectdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [SkinnedSocketObjectData](SkinnedSocketObjectData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [SkinnedSocketObjectData](/vext/ref/fb/skinnedsocketobjectdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -41,4 +41,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

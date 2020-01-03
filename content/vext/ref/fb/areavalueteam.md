@@ -17,16 +17,16 @@ A structure type representing a Frostbite data type.
 | Name      | Type             | Description |
 | --------- | ---------------- | ----------- |
 | areaValue | number           |             |
-| team      | [TeamId](TeamId) |             |
+| team      | [TeamId](/vext/ref/fb/teamid/) |             |
 
 ## Methods
 
 | Type                           | Name            | Parameters |
 | ------------------------------ | --------------- | ---------- |
-| [AreaValueTeam](AreaValueTeam) | [Clone](#clone) |            |
+| [AreaValueTeam](/vext/ref/fb/areavalueteam/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [AreaValueTeam](AreaValueTeam) **Clone**()
+> [AreaValueTeam](/vext/ref/fb/areavalueteam/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

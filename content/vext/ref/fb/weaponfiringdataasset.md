@@ -3,7 +3,7 @@ title: WeaponFiringDataAsset
 ---
 ### Base Classes
 
-[GameDataContainerAsset](GameDataContainerAsset)
+[GameDataContainerAsset](/vext/ref/fb/gamedatacontainerasset/)
 
 ## Description
 
@@ -15,19 +15,19 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | WeaponFiringDataAsset()                                                          | Create a new instance of this container type.                                                                                     |
 | WeaponFiringDataAsset(WeaponFiringDataAsset other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| WeaponFiringDataAsset([GameDataContainerAsset](GameDataContainerAsset) other)    | Upcast an instance of type [GameDataContainerAsset](GameDataContainerAsset) to [WeaponFiringDataAsset](WeaponFiringDataAsset).    |
-| WeaponFiringDataAsset([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [WeaponFiringDataAsset](WeaponFiringDataAsset).                                      |
-| WeaponFiringDataAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponFiringDataAsset](WeaponFiringDataAsset). |
+| WeaponFiringDataAsset([GameDataContainerAsset](/vext/ref/fb/gamedatacontainerasset/) other)    | Upcast an instance of type [GameDataContainerAsset](/vext/ref/fb/gamedatacontainerasset/) to [WeaponFiringDataAsset](/vext/ref/fb/weaponfiringdataasset/).    |
+| WeaponFiringDataAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [WeaponFiringDataAsset](/vext/ref/fb/weaponfiringdataasset/).                                      |
+| WeaponFiringDataAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponFiringDataAsset](/vext/ref/fb/weaponfiringdataasset/). |
 
 ## Methods
 
 | Type                                           | Name            | Parameters                                     |
 | ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [WeaponFiringDataAsset](WeaponFiringDataAsset) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [WeaponFiringDataAsset](/vext/ref/fb/weaponfiringdataasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [WeaponFiringDataAsset](WeaponFiringDataAsset) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [WeaponFiringDataAsset](/vext/ref/fb/weaponfiringdataasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -35,4 +35,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

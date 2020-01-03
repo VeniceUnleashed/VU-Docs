@@ -3,7 +3,7 @@ title: MultipleTargetPainterWeaponData
 ---
 ### Base Classes
 
-[WeaponData](WeaponData)
+[WeaponData](/vext/ref/fb/weapondata/)
 
 ## Description
 
@@ -15,15 +15,15 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | MultipleTargetPainterWeaponData()                                                          | Create a new instance of this container type.                                                                                                         |
 | MultipleTargetPainterWeaponData(MultipleTargetPainterWeaponData other)                     | Create a reference copy of an instance of the same type.                                                                                              |
-| MultipleTargetPainterWeaponData([WeaponData](WeaponData) other)                            | Upcast an instance of type [WeaponData](WeaponData) to [MultipleTargetPainterWeaponData](MultipleTargetPainterWeaponData).                            |
-| MultipleTargetPainterWeaponData([ToolData](ToolData) other)                                | Upcast an instance of type [ToolData](ToolData) to [MultipleTargetPainterWeaponData](MultipleTargetPainterWeaponData).                                |
-| MultipleTargetPainterWeaponData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MultipleTargetPainterWeaponData](MultipleTargetPainterWeaponData). |
+| MultipleTargetPainterWeaponData([WeaponData](/vext/ref/fb/weapondata/) other)                            | Upcast an instance of type [WeaponData](/vext/ref/fb/weapondata/) to [MultipleTargetPainterWeaponData](/vext/ref/fb/multipletargetpainterweapondata/).                            |
+| MultipleTargetPainterWeaponData([ToolData](/vext/ref/fb/tooldata/) other)                                | Upcast an instance of type [ToolData](/vext/ref/fb/tooldata/) to [MultipleTargetPainterWeaponData](/vext/ref/fb/multipletargetpainterweapondata/).                                |
+| MultipleTargetPainterWeaponData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MultipleTargetPainterWeaponData](/vext/ref/fb/multipletargetpainterweapondata/). |
 
 ## Properties
 
 | Name                | Type                         | Description |
 | ------------------- | ---------------------------- | ----------- |
-| spottingBehavior    | [SpottingType](SpottingType) |             |
+| spottingBehavior    | [SpottingType](/vext/ref/fb/spottingtype/) |             |
 | timeObjectIsPainted | number                       |             |
 | angle               | number                       |             |
 | timeObjectIsSpotted | number                       |             |
@@ -35,11 +35,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                               | Name            | Parameters                                     |
 | ------------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [MultipleTargetPainterWeaponData](MultipleTargetPainterWeaponData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [MultipleTargetPainterWeaponData](/vext/ref/fb/multipletargetpainterweapondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [MultipleTargetPainterWeaponData](MultipleTargetPainterWeaponData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [MultipleTargetPainterWeaponData](/vext/ref/fb/multipletargetpainterweapondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -47,4 +47,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

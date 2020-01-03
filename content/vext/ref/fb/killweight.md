@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                     | Name            | Parameters |
 | ------------------------ | --------------- | ---------- |
-| [KillWeight](KillWeight) | [Clone](#clone) |            |
+| [KillWeight](/vext/ref/fb/killweight/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [KillWeight](KillWeight) **Clone**()
+> [KillWeight](/vext/ref/fb/killweight/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

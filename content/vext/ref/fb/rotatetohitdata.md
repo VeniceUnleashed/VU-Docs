@@ -22,10 +22,10 @@ A structure type representing a Frostbite data type.
 
 | Type                               | Name            | Parameters |
 | ---------------------------------- | --------------- | ---------- |
-| [RotateToHitData](RotateToHitData) | [Clone](#clone) |            |
+| [RotateToHitData](/vext/ref/fb/rotatetohitdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [RotateToHitData](RotateToHitData) **Clone**()
+> [RotateToHitData](/vext/ref/fb/rotatetohitdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

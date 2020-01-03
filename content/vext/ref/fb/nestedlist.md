@@ -18,11 +18,11 @@ A structure type representing a Frostbite data type.
 | ------------------- | -------------------------------------------- | ----------- |
 | label               | string                                       |             |
 | index               | string                                       |             |
-| listDataSource      | [UIDataSourceInfo](UIDataSourceInfo)         |             |
-| dynamicShowList     | [UIDataSourceInfo](UIDataSourceInfo)         |             |
+| listDataSource      | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/)         |             |
+| dynamicShowList     | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/)         |             |
 | staticItems         | string\[\]                                   |             |
-| defaultHighlighted  | [DefaultSelectionItem](DefaultSelectionItem) |             |
-| rowType             | [UIListRowType](UIListRowType)               |             |
+| defaultHighlighted  | [DefaultSelectionItem](/vext/ref/fb/defaultselectionitem/) |             |
+| rowType             | [UIListRowType](/vext/ref/fb/uilistrowtype/)               |             |
 | useAsNormalListRows | bool                                         |             |
 | hiddenOnPC          | bool                                         |             |
 | hiddenOnXenon       | bool                                         |             |
@@ -32,10 +32,10 @@ A structure type representing a Frostbite data type.
 
 | Type                     | Name            | Parameters |
 | ------------------------ | --------------- | ---------- |
-| [NestedList](NestedList) | [Clone](#clone) |            |
+| [NestedList](/vext/ref/fb/nestedlist/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [NestedList](NestedList) **Clone**()
+> [NestedList](/vext/ref/fb/nestedlist/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

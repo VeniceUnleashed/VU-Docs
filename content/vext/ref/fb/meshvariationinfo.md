@@ -16,18 +16,18 @@ A structure type representing a Frostbite data type.
 
 | Name           | Type                               | Description |
 | -------------- | ---------------------------------- | ----------- |
-| meshAsset      | [MeshAsset](MeshAsset)             |             |
-| origMeshAsset  | [MeshAsset](MeshAsset)             |             |
-| variationAsset | [ObjectVariation](ObjectVariation) |             |
+| meshAsset      | [MeshAsset](/vext/ref/fb/meshasset/)             |             |
+| origMeshAsset  | [MeshAsset](/vext/ref/fb/meshasset/)             |             |
+| variationAsset | [ObjectVariation](/vext/ref/fb/objectvariation/) |             |
 
 ## Methods
 
 | Type                                   | Name            | Parameters |
 | -------------------------------------- | --------------- | ---------- |
-| [MeshVariationInfo](MeshVariationInfo) | [Clone](#clone) |            |
+| [MeshVariationInfo](/vext/ref/fb/meshvariationinfo/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [MeshVariationInfo](MeshVariationInfo) **Clone**()
+> [MeshVariationInfo](/vext/ref/fb/meshvariationinfo/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

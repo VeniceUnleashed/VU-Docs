@@ -26,10 +26,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                         | Name            | Parameters |
 | ------------------------------------------------------------ | --------------- | ---------- |
-| [EnlightenPipelineTerrainMesh](EnlightenPipelineTerrainMesh) | [Clone](#clone) |            |
+| [EnlightenPipelineTerrainMesh](/vext/ref/fb/enlightenpipelineterrainmesh/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [EnlightenPipelineTerrainMesh](EnlightenPipelineTerrainMesh) **Clone**()
+> [EnlightenPipelineTerrainMesh](/vext/ref/fb/enlightenpipelineterrainmesh/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

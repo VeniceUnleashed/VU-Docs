@@ -17,16 +17,16 @@ A structure type representing a Frostbite data type.
 | Name | Type                           | Description |
 | ---- | ------------------------------ | ----------- |
 | name | string                         |             |
-| bone | [GameplayBones](GameplayBones) |             |
+| bone | [GameplayBones](/vext/ref/fb/gameplaybones/) |             |
 
 ## Methods
 
 | Type                         | Name            | Parameters |
 | ---------------------------- | --------------- | ---------- |
-| [GameplayBone](GameplayBone) | [Clone](#clone) |            |
+| [GameplayBone](/vext/ref/fb/gameplaybone/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [GameplayBone](GameplayBone) **Clone**()
+> [GameplayBone](/vext/ref/fb/gameplaybone/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

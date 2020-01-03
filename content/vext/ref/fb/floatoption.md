@@ -26,10 +26,10 @@ A structure type representing a Frostbite data type.
 
 | Type                       | Name            | Parameters |
 | -------------------------- | --------------- | ---------- |
-| [FloatOption](FloatOption) | [Clone](#clone) |            |
+| [FloatOption](/vext/ref/fb/floatoption/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [FloatOption](FloatOption) **Clone**()
+> [FloatOption](/vext/ref/fb/floatoption/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

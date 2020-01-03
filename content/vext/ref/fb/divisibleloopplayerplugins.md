@@ -16,19 +16,19 @@ A structure type representing a Frostbite data type.
 
 | Name      | Type                                       | Description |
 | --------- | ------------------------------------------ | ----------- |
-| sndPlayer | [SoundGraphPluginRef](SoundGraphPluginRef) |             |
-| pause     | [SoundGraphPluginRef](SoundGraphPluginRef) |             |
-| gain      | [SoundGraphPluginRef](SoundGraphPluginRef) |             |
-| gainFader | [SoundGraphPluginRef](SoundGraphPluginRef) |             |
+| sndPlayer | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref/) |             |
+| pause     | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref/) |             |
+| gain      | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref/) |             |
+| gainFader | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref/) |             |
 
 ## Methods
 
 | Type                                                     | Name            | Parameters |
 | -------------------------------------------------------- | --------------- | ---------- |
-| [DivisibleLoopPlayerPlugins](DivisibleLoopPlayerPlugins) | [Clone](#clone) |            |
+| [DivisibleLoopPlayerPlugins](/vext/ref/fb/divisibleloopplayerplugins/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [DivisibleLoopPlayerPlugins](DivisibleLoopPlayerPlugins) **Clone**()
+> [DivisibleLoopPlayerPlugins](/vext/ref/fb/divisibleloopplayerplugins/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

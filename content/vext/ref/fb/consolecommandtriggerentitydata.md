@@ -3,7 +3,7 @@ title: ConsoleCommandTriggerEntityData
 ---
 ### Base Classes
 
-[EntityData](EntityData)
+[EntityData](/vext/ref/fb/entitydata/)
 
 ## Description
 
@@ -15,27 +15,27 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ConsoleCommandTriggerEntityData()                                                          | Create a new instance of this container type.                                                                                                         |
 | ConsoleCommandTriggerEntityData(ConsoleCommandTriggerEntityData other)                     | Create a reference copy of an instance of the same type.                                                                                              |
-| ConsoleCommandTriggerEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [ConsoleCommandTriggerEntityData](ConsoleCommandTriggerEntityData).                            |
-| ConsoleCommandTriggerEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [ConsoleCommandTriggerEntityData](ConsoleCommandTriggerEntityData).                    |
-| ConsoleCommandTriggerEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [ConsoleCommandTriggerEntityData](ConsoleCommandTriggerEntityData).              |
-| ConsoleCommandTriggerEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ConsoleCommandTriggerEntityData](ConsoleCommandTriggerEntityData). |
+| ConsoleCommandTriggerEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [ConsoleCommandTriggerEntityData](/vext/ref/fb/consolecommandtriggerentitydata/).                            |
+| ConsoleCommandTriggerEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [ConsoleCommandTriggerEntityData](/vext/ref/fb/consolecommandtriggerentitydata/).                    |
+| ConsoleCommandTriggerEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [ConsoleCommandTriggerEntityData](/vext/ref/fb/consolecommandtriggerentitydata/).              |
+| ConsoleCommandTriggerEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ConsoleCommandTriggerEntityData](/vext/ref/fb/consolecommandtriggerentitydata/). |
 
 ## Properties
 
 | Name        | Type           | Description |
 | ----------- | -------------- | ----------- |
 | commandName | string         |             |
-| realm       | [Realm](Realm) |             |
+| realm       | [Realm](/vext/ref/fb/realm/) |             |
 
 ## Methods
 
 | Type                                                               | Name            | Parameters                                     |
 | ------------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [ConsoleCommandTriggerEntityData](ConsoleCommandTriggerEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [ConsoleCommandTriggerEntityData](/vext/ref/fb/consolecommandtriggerentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [ConsoleCommandTriggerEntityData](ConsoleCommandTriggerEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [ConsoleCommandTriggerEntityData](/vext/ref/fb/consolecommandtriggerentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -43,4 +43,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

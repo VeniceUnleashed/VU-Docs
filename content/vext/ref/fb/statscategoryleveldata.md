@@ -3,7 +3,7 @@ title: StatsCategoryLevelData
 ---
 ### Base Classes
 
-[StatsCategoryGuidData](StatsCategoryGuidData)
+[StatsCategoryGuidData](/vext/ref/fb/statscategoryguiddata/)
 
 ## Description
 
@@ -15,20 +15,20 @@ A container type representing a Frostbite instance entry.
 | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | StatsCategoryLevelData()                                                          | Create a new instance of this container type.                                                                                       |
 | StatsCategoryLevelData(StatsCategoryLevelData other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| StatsCategoryLevelData([StatsCategoryGuidData](StatsCategoryGuidData) other)      | Upcast an instance of type [StatsCategoryGuidData](StatsCategoryGuidData) to [StatsCategoryLevelData](StatsCategoryLevelData).      |
-| StatsCategoryLevelData([StatsCategoryBaseData](StatsCategoryBaseData) other)      | Upcast an instance of type [StatsCategoryBaseData](StatsCategoryBaseData) to [StatsCategoryLevelData](StatsCategoryLevelData).      |
-| StatsCategoryLevelData([TreeNodeBase](TreeNodeBase) other)                        | Upcast an instance of type [TreeNodeBase](TreeNodeBase) to [StatsCategoryLevelData](StatsCategoryLevelData).                        |
-| StatsCategoryLevelData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StatsCategoryLevelData](StatsCategoryLevelData). |
+| StatsCategoryLevelData([StatsCategoryGuidData](/vext/ref/fb/statscategoryguiddata/) other)      | Upcast an instance of type [StatsCategoryGuidData](/vext/ref/fb/statscategoryguiddata/) to [StatsCategoryLevelData](/vext/ref/fb/statscategoryleveldata/).      |
+| StatsCategoryLevelData([StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/) other)      | Upcast an instance of type [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/) to [StatsCategoryLevelData](/vext/ref/fb/statscategoryleveldata/).      |
+| StatsCategoryLevelData([TreeNodeBase](/vext/ref/fb/treenodebase/) other)                        | Upcast an instance of type [TreeNodeBase](/vext/ref/fb/treenodebase/) to [StatsCategoryLevelData](/vext/ref/fb/statscategoryleveldata/).                        |
+| StatsCategoryLevelData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StatsCategoryLevelData](/vext/ref/fb/statscategoryleveldata/). |
 
 ## Methods
 
 | Type                                             | Name            | Parameters                                     |
 | ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [StatsCategoryLevelData](StatsCategoryLevelData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [StatsCategoryLevelData](/vext/ref/fb/statscategoryleveldata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [StatsCategoryLevelData](StatsCategoryLevelData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [StatsCategoryLevelData](/vext/ref/fb/statscategoryleveldata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -36,4 +36,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

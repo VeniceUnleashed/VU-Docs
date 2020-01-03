@@ -3,7 +3,7 @@ title: UIButtonDataBinding
 ---
 ### Base Classes
 
-[UIDataBinding](UIDataBinding)
+[UIDataBinding](/vext/ref/fb/uidatabinding/)
 
 ## Description
 
@@ -15,16 +15,16 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
 | UIButtonDataBinding()                                                          | Create a new instance of this container type.                                                                                 |
 | UIButtonDataBinding(UIButtonDataBinding other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| UIButtonDataBinding([UIDataBinding](UIDataBinding) other)                      | Upcast an instance of type [UIDataBinding](UIDataBinding) to [UIButtonDataBinding](UIButtonDataBinding).                      |
-| UIButtonDataBinding([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIButtonDataBinding](UIButtonDataBinding). |
+| UIButtonDataBinding([UIDataBinding](/vext/ref/fb/uidatabinding/) other)                      | Upcast an instance of type [UIDataBinding](/vext/ref/fb/uidatabinding/) to [UIButtonDataBinding](/vext/ref/fb/uibuttondatabinding/).                      |
+| UIButtonDataBinding([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIButtonDataBinding](/vext/ref/fb/uibuttondatabinding/). |
 
 ## Properties
 
 | Name              | Type                                 | Description |
 | ----------------- | ------------------------------------ | ----------- |
-| buttonsDatasource | [UIDataSourceInfo](UIDataSourceInfo) |             |
-| defaultButtonSet  | [UIButtonSet](UIButtonSet)           |             |
-| visibility        | [UIDataSourceInfo](UIDataSourceInfo) |             |
+| buttonsDatasource | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/) |             |
+| defaultButtonSet  | [UIButtonSet](/vext/ref/fb/uibuttonset/)           |             |
+| visibility        | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/) |             |
 | invertVisible     | bool                                 |             |
 | visible           | bool                                 |             |
 | inputOnRelease    | bool                                 |             |
@@ -33,11 +33,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                       | Name            | Parameters                                     |
 | ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [UIButtonDataBinding](UIButtonDataBinding) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [UIButtonDataBinding](/vext/ref/fb/uibuttondatabinding/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [UIButtonDataBinding](UIButtonDataBinding) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [UIButtonDataBinding](/vext/ref/fb/uibuttondatabinding/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -45,4 +45,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

@@ -3,7 +3,7 @@ title: SpeedEventGateEntityData
 ---
 ### Base Classes
 
-[GameEntityData](GameEntityData)
+[GameEntityData](/vext/ref/fb/gameentitydata/)
 
 ## Description
 
@@ -15,12 +15,12 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | SpeedEventGateEntityData()                                                          | Create a new instance of this container type.                                                                                           |
 | SpeedEventGateEntityData(SpeedEventGateEntityData other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| SpeedEventGateEntityData([GameEntityData](GameEntityData) other)                    | Upcast an instance of type [GameEntityData](GameEntityData) to [SpeedEventGateEntityData](SpeedEventGateEntityData).                    |
-| SpeedEventGateEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [SpeedEventGateEntityData](SpeedEventGateEntityData).              |
-| SpeedEventGateEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [SpeedEventGateEntityData](SpeedEventGateEntityData).                            |
-| SpeedEventGateEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [SpeedEventGateEntityData](SpeedEventGateEntityData).                    |
-| SpeedEventGateEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [SpeedEventGateEntityData](SpeedEventGateEntityData).              |
-| SpeedEventGateEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SpeedEventGateEntityData](SpeedEventGateEntityData). |
+| SpeedEventGateEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [SpeedEventGateEntityData](/vext/ref/fb/speedeventgateentitydata/).                    |
+| SpeedEventGateEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [SpeedEventGateEntityData](/vext/ref/fb/speedeventgateentitydata/).              |
+| SpeedEventGateEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [SpeedEventGateEntityData](/vext/ref/fb/speedeventgateentitydata/).                            |
+| SpeedEventGateEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [SpeedEventGateEntityData](/vext/ref/fb/speedeventgateentitydata/).                    |
+| SpeedEventGateEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [SpeedEventGateEntityData](/vext/ref/fb/speedeventgateentitydata/).              |
+| SpeedEventGateEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SpeedEventGateEntityData](/vext/ref/fb/speedeventgateentitydata/). |
 
 ## Properties
 
@@ -33,11 +33,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                 | Name            | Parameters                                     |
 | ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [SpeedEventGateEntityData](SpeedEventGateEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [SpeedEventGateEntityData](/vext/ref/fb/speedeventgateentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [SpeedEventGateEntityData](SpeedEventGateEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [SpeedEventGateEntityData](/vext/ref/fb/speedeventgateentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -45,4 +45,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

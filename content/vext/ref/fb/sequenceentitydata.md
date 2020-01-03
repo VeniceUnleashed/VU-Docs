@@ -3,7 +3,7 @@ title: SequenceEntityData
 ---
 ### Base Classes
 
-[EntityData](EntityData)
+[EntityData](/vext/ref/fb/entitydata/)
 
 ## Description
 
@@ -15,24 +15,24 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | SequenceEntityData()                                                          | Create a new instance of this container type.                                                                               |
 | SequenceEntityData(SequenceEntityData other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| SequenceEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [SequenceEntityData](SequenceEntityData).                            |
-| SequenceEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [SequenceEntityData](SequenceEntityData).                    |
-| SequenceEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [SequenceEntityData](SequenceEntityData).              |
-| SequenceEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SequenceEntityData](SequenceEntityData). |
+| SequenceEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [SequenceEntityData](/vext/ref/fb/sequenceentitydata/).                            |
+| SequenceEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [SequenceEntityData](/vext/ref/fb/sequenceentitydata/).                    |
+| SequenceEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [SequenceEntityData](/vext/ref/fb/sequenceentitydata/).              |
+| SequenceEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SequenceEntityData](/vext/ref/fb/sequenceentitydata/). |
 
 ## Properties
 
 | Name                 | Type                                                   | Description |
 | -------------------- | ------------------------------------------------------ | ----------- |
-| events               | [SequenceEventData](SequenceEventData)\[\]             |             |
+| events               | [SequenceEventData](/vext/ref/fb/sequenceeventdata/)\[\]             |             |
 | sequenceStartTime    | number                                                 |             |
 | sequenceLength       | number                                                 |             |
 | externalTime         | number                                                 |             |
-| propertyTracks       | [PropertyTrackData](PropertyTrackData)\[\]             |             |
-| realm                | [Realm](Realm)                                         |             |
-| serverUpdatePass     | [UpdatePass](UpdatePass)                               |             |
-| clientUpdatePass     | [UpdatePass](UpdatePass)                               |             |
-| customSequenceTracks | [CustomSequenceTrackData](CustomSequenceTrackData)\[\] |             |
+| propertyTracks       | [PropertyTrackData](/vext/ref/fb/propertytrackdata/)\[\]             |             |
+| realm                | [Realm](/vext/ref/fb/realm/)                                         |             |
+| serverUpdatePass     | [UpdatePass](/vext/ref/fb/updatepass/)                               |             |
+| clientUpdatePass     | [UpdatePass](/vext/ref/fb/updatepass/)                               |             |
+| customSequenceTracks | [CustomSequenceTrackData](/vext/ref/fb/customsequencetrackdata/)\[\] |             |
 | autoPlayFirstFrame   | bool                                                   |             |
 | looping              | bool                                                   |             |
 | autoStart            | bool                                                   |             |
@@ -42,11 +42,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                     | Name            | Parameters                                     |
 | ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [SequenceEntityData](SequenceEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [SequenceEntityData](/vext/ref/fb/sequenceentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [SequenceEntityData](SequenceEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [SequenceEntityData](/vext/ref/fb/sequenceentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -54,4 +54,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

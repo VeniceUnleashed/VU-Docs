@@ -16,22 +16,22 @@ A structure type representing a Frostbite data type.
 
 | Name              | Type             | Description |
 | ----------------- | ---------------- | ----------- |
-| meleeDistance     | [AntRef](AntRef) |             |
-| meleeAngle        | [AntRef](AntRef) |             |
-| meleeDefenceTime  | [AntRef](AntRef) |             |
-| meleeSequenceTime | [AntRef](AntRef) |             |
-| meleeAborted      | [AntRef](AntRef) |             |
-| closeToTarget     | [AntRef](AntRef) |             |
-| meleeType         | [AntRef](AntRef) |             |
+| meleeDistance     | [AntRef](/vext/ref/fb/antref/) |             |
+| meleeAngle        | [AntRef](/vext/ref/fb/antref/) |             |
+| meleeDefenceTime  | [AntRef](/vext/ref/fb/antref/) |             |
+| meleeSequenceTime | [AntRef](/vext/ref/fb/antref/) |             |
+| meleeAborted      | [AntRef](/vext/ref/fb/antref/) |             |
+| closeToTarget     | [AntRef](/vext/ref/fb/antref/) |             |
+| meleeType         | [AntRef](/vext/ref/fb/antref/) |             |
 
 ## Methods
 
 | Type                                                       | Name            | Parameters |
 | ---------------------------------------------------------- | --------------- | ---------- |
-| [CharacterMeleeCommonBinding](CharacterMeleeCommonBinding) | [Clone](#clone) |            |
+| [CharacterMeleeCommonBinding](/vext/ref/fb/charactermeleecommonbinding/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [CharacterMeleeCommonBinding](CharacterMeleeCommonBinding) **Clone**()
+> [CharacterMeleeCommonBinding](/vext/ref/fb/charactermeleecommonbinding/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

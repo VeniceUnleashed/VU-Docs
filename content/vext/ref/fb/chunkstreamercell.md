@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                   | Name            | Parameters |
 | -------------------------------------- | --------------- | ---------- |
-| [ChunkStreamerCell](ChunkStreamerCell) | [Clone](#clone) |            |
+| [ChunkStreamerCell](/vext/ref/fb/chunkstreamercell/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [ChunkStreamerCell](ChunkStreamerCell) **Clone**()
+> [ChunkStreamerCell](/vext/ref/fb/chunkstreamercell/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

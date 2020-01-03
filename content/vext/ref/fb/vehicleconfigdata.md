@@ -15,7 +15,7 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | VehicleConfigData()                                                          | Create a new instance of this container type.                                                                             |
 | VehicleConfigData(VehicleConfigData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| VehicleConfigData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VehicleConfigData](VehicleConfigData). |
+| VehicleConfigData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VehicleConfigData](/vext/ref/fb/vehicleconfigdata/). |
 
 ## Properties
 
@@ -24,16 +24,16 @@ A container type representing a Frostbite instance entry.
 | centerOfMass                    | [Vec3](/vext/ref/shared/class/vec3)                |             |
 | centerOfMassHandlingOffset      | [Vec3](/vext/ref/shared/class/vec3)                |             |
 | inertiaModifier                 | [Vec3](/vext/ref/shared/class/vec3)                |             |
-| aeroDynamicPhysics              | [AeroDynamicPhysicsData](AeroDynamicPhysicsData) |             |
-| parachutePhysics                | [VehicleParachuteData](VehicleParachuteData)     |             |
-| motorbikePhysics                | [MotorbikeData](MotorbikeData)                   |             |
-| motionDamping                   | [MotionDampingData](MotionDampingData)           |             |
-| input                           | [VehicleInputData](VehicleInputData)             |             |
-| floatPhysics                    | [FloatPhysicsData](FloatPhysicsData)             |             |
-| stabilizer                      | [StabilizerData](StabilizerData)                 |             |
-| stabilizers                     | [StabilizerSettings](StabilizerSettings)\[\]     |             |
-| constantForce                   | [ConstantForceData](ConstantForceData)\[\]       |             |
-| vehicleModeAtReset              | [VehicleMode](VehicleMode)                       |             |
+| aeroDynamicPhysics              | [AeroDynamicPhysicsData](/vext/ref/fb/aerodynamicphysicsdata/) |             |
+| parachutePhysics                | [VehicleParachuteData](/vext/ref/fb/vehicleparachutedata/)     |             |
+| motorbikePhysics                | [MotorbikeData](/vext/ref/fb/motorbikedata/)                   |             |
+| motionDamping                   | [MotionDampingData](/vext/ref/fb/motiondampingdata/)           |             |
+| input                           | [VehicleInputData](/vext/ref/fb/vehicleinputdata/)             |             |
+| floatPhysics                    | [FloatPhysicsData](/vext/ref/fb/floatphysicsdata/)             |             |
+| stabilizer                      | [StabilizerData](/vext/ref/fb/stabilizerdata/)                 |             |
+| stabilizers                     | [StabilizerSettings](/vext/ref/fb/stabilizersettings/)\[\]     |             |
+| constantForce                   | [ConstantForceData](/vext/ref/fb/constantforcedata/)\[\]       |             |
+| vehicleModeAtReset              | [VehicleMode](/vext/ref/fb/vehiclemode/)                       |             |
 | bodyMass                        | number                                           |             |
 | gravityModifier                 | number                                           |             |
 | yawMin                          | number                                           |             |
@@ -54,7 +54,7 @@ A container type representing a Frostbite instance entry.
 | windResistanceVelocityFactor    | number                                           |             |
 | windResistanceVelocityFactorMin | number                                           |             |
 | windResistanceVelocityFactorMax | number                                           |             |
-| antiRollBars                    | [AntiRollBars](AntiRollBars)                     |             |
+| antiRollBars                    | [AntiRollBars](/vext/ref/fb/antirollbars/)                     |             |
 | useDownForceWheelFactor         | bool                                             |             |
 | useGearbox                      | bool                                             |             |
 | useStandStillBrake              | bool                                             |             |
@@ -69,11 +69,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                   | Name            | Parameters                                     |
 | -------------------------------------- | --------------- | ---------------------------------------------- |
-| [VehicleConfigData](VehicleConfigData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [VehicleConfigData](/vext/ref/fb/vehicleconfigdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [VehicleConfigData](VehicleConfigData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [VehicleConfigData](/vext/ref/fb/vehicleconfigdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -81,4 +81,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

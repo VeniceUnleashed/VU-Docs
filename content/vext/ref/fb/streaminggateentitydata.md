@@ -3,7 +3,7 @@ title: StreamingGateEntityData
 ---
 ### Base Classes
 
-[EntityData](EntityData)
+[EntityData](/vext/ref/fb/entitydata/)
 
 ## Description
 
@@ -15,10 +15,10 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | StreamingGateEntityData()                                                          | Create a new instance of this container type.                                                                                         |
 | StreamingGateEntityData(StreamingGateEntityData other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| StreamingGateEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [StreamingGateEntityData](StreamingGateEntityData).                            |
-| StreamingGateEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [StreamingGateEntityData](StreamingGateEntityData).                    |
-| StreamingGateEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [StreamingGateEntityData](StreamingGateEntityData).              |
-| StreamingGateEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StreamingGateEntityData](StreamingGateEntityData). |
+| StreamingGateEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [StreamingGateEntityData](/vext/ref/fb/streaminggateentitydata/).                            |
+| StreamingGateEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [StreamingGateEntityData](/vext/ref/fb/streaminggateentitydata/).                    |
+| StreamingGateEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [StreamingGateEntityData](/vext/ref/fb/streaminggateentitydata/).              |
+| StreamingGateEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StreamingGateEntityData](/vext/ref/fb/streaminggateentitydata/). |
 
 ## Properties
 
@@ -30,11 +30,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                               | Name            | Parameters                                     |
 | -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [StreamingGateEntityData](StreamingGateEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [StreamingGateEntityData](/vext/ref/fb/streaminggateentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [StreamingGateEntityData](StreamingGateEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [StreamingGateEntityData](/vext/ref/fb/streaminggateentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -42,4 +42,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

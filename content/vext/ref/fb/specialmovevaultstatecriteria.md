@@ -22,16 +22,16 @@ A structure type representing a Frostbite data type.
 | heightOfObjectTolerance | number                                       |             |
 | lengthOfObject          | number                                       |             |
 | lengthOfObjectTolerance | number                                       |             |
-| specialMoveState        | [SpecialMoveStateData](SpecialMoveStateData) |             |
+| specialMoveState        | [SpecialMoveStateData](/vext/ref/fb/specialmovestatedata/) |             |
 
 ## Methods
 
 | Type                                                           | Name            | Parameters |
 | -------------------------------------------------------------- | --------------- | ---------- |
-| [SpecialMoveVaultStateCriteria](SpecialMoveVaultStateCriteria) | [Clone](#clone) |            |
+| [SpecialMoveVaultStateCriteria](/vext/ref/fb/specialmovevaultstatecriteria/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SpecialMoveVaultStateCriteria](SpecialMoveVaultStateCriteria) **Clone**()
+> [SpecialMoveVaultStateCriteria](/vext/ref/fb/specialmovevaultstatecriteria/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

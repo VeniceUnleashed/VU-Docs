@@ -17,8 +17,8 @@ A structure type representing a Frostbite data type.
 | Name                | Type                                 | Description |
 | ------------------- | ------------------------------------ | ----------- |
 | itemName            | string                               |             |
-| dynamicDisable      | [UIDataSourceInfo](UIDataSourceInfo) |             |
-| dynamicNewContent   | [UIDataSourceInfo](UIDataSourceInfo) |             |
+| dynamicDisable      | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/) |             |
+| dynamicNewContent   | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/) |             |
 | appendPlatformToSID | bool                                 |             |
 | excludeInRetail     | bool                                 |             |
 
@@ -26,10 +26,10 @@ A structure type representing a Frostbite data type.
 
 | Type                             | Name            | Parameters |
 | -------------------------------- | --------------- | ---------- |
-| [StaticListItem](StaticListItem) | [Clone](#clone) |            |
+| [StaticListItem](/vext/ref/fb/staticlistitem/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [StaticListItem](StaticListItem) **Clone**()
+> [StaticListItem](/vext/ref/fb/staticlistitem/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

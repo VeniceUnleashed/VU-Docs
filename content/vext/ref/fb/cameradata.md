@@ -3,7 +3,7 @@ title: CameraData
 ---
 ### Base Classes
 
-[GameObjectData](GameObjectData)
+[GameObjectData](/vext/ref/fb/gameobjectdata/)
 
 ## Description
 
@@ -15,9 +15,9 @@ A container type representing a Frostbite instance entry.
 | --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | CameraData()                                                          | Create a new instance of this container type.                                                               |
 | CameraData(CameraData other)                                          | Create a reference copy of an instance of the same type.                                                    |
-| CameraData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [CameraData](CameraData).                    |
-| CameraData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [CameraData](CameraData).              |
-| CameraData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CameraData](CameraData). |
+| CameraData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [CameraData](/vext/ref/fb/cameradata/).                    |
+| CameraData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [CameraData](/vext/ref/fb/cameradata/).              |
+| CameraData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CameraData](/vext/ref/fb/cameradata/). |
 
 ## Properties
 
@@ -29,7 +29,7 @@ A container type representing a Frostbite instance entry.
 | fadeTime                | number                            |             |
 | fadeWaitTime            | number                            |             |
 | soundListenerRadius     | number                            |             |
-| viewFx                  | [ViewFxData](ViewFxData)          |             |
+| viewFx                  | [ViewFxData](/vext/ref/fb/viewfxdata/)          |             |
 | nearPlane               | number                            |             |
 | shadowViewDistanceScale | number                            |             |
 | soundOcclusion          | number                            |             |
@@ -39,11 +39,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                     | Name            | Parameters                                     |
 | ------------------------ | --------------- | ---------------------------------------------- |
-| [CameraData](CameraData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [CameraData](/vext/ref/fb/cameradata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [CameraData](CameraData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [CameraData](/vext/ref/fb/cameradata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -51,4 +51,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

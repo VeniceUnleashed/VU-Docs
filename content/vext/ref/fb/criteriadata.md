@@ -15,19 +15,19 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
 | CriteriaData()                                                          | Create a new instance of this container type.                                                                   |
 | CriteriaData(CriteriaData other)                                        | Create a reference copy of an instance of the same type.                                                        |
-| CriteriaData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CriteriaData](CriteriaData). |
+| CriteriaData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CriteriaData](/vext/ref/fb/criteriadata/). |
 
 ## Properties
 
 | Name            | Type                                               | Description |
 | --------------- | -------------------------------------------------- | ----------- |
 | completionValue | number                                             |             |
-| gateList        | [CriteriaGateList](CriteriaGateList)               |             |
-| measuring       | [StatEvent](StatEvent)                             |             |
-| paramX          | [StatsCategoryBaseData](StatsCategoryBaseData)     |             |
-| paramY          | [StatsCategoryBaseData](StatsCategoryBaseData)     |             |
-| orParamsX       | [StatsCategoryBaseData](StatsCategoryBaseData)\[\] |             |
-| criteriaType    | [CriteriaType](CriteriaType)                       |             |
+| gateList        | [CriteriaGateList](/vext/ref/fb/criteriagatelist/)               |             |
+| measuring       | [StatEvent](/vext/ref/fb/statevent/)                             |             |
+| paramX          | [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/)     |             |
+| paramY          | [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/)     |             |
+| orParamsX       | [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/)\[\] |             |
+| criteriaType    | [CriteriaType](/vext/ref/fb/criteriatype/)                       |             |
 | descriptionSid  | string                                             |             |
 | scaleFactor     | number                                             |             |
 | scale           | number                                             |             |
@@ -39,11 +39,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                         | Name            | Parameters                                     |
 | ---------------------------- | --------------- | ---------------------------------------------- |
-| [CriteriaData](CriteriaData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [CriteriaData](/vext/ref/fb/criteriadata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [CriteriaData](CriteriaData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [CriteriaData](/vext/ref/fb/criteriadata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -51,4 +51,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

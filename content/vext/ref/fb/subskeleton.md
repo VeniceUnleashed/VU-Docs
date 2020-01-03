@@ -16,7 +16,7 @@ A structure type representing a Frostbite data type.
 
 | Name         | Type                                                        | Description |
 | ------------ | ----------------------------------------------------------- | ----------- |
-| skeleton     | [SkeletonAsset](SkeletonAsset)                              |             |
+| skeleton     | [SkeletonAsset](/vext/ref/fb/skeletonasset/)                              |             |
 | boneMap      | number\[\]                                                  |             |
 | transformMap | [LinearTransform](/vext/ref/shared/class/lineartransform)\[\] |             |
 
@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                       | Name            | Parameters |
 | -------------------------- | --------------- | ---------- |
-| [SubSkeleton](SubSkeleton) | [Clone](#clone) |            |
+| [SubSkeleton](/vext/ref/fb/subskeleton/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SubSkeleton](SubSkeleton) **Clone**()
+> [SubSkeleton](/vext/ref/fb/subskeleton/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -16,18 +16,18 @@ A structure type representing a Frostbite data type.
 
 | Name          | Type                                 | Description |
 | ------------- | ------------------------------------ | ----------- |
-| mesh          | [SkinnedMeshAsset](SkinnedMeshAsset) |             |
-| meshBlueprint | [ObjectBlueprint](ObjectBlueprint)   |             |
+| mesh          | [SkinnedMeshAsset](/vext/ref/fb/skinnedmeshasset/) |             |
+| meshBlueprint | [ObjectBlueprint](/vext/ref/fb/objectblueprint/)   |             |
 | randomGroup   | number                               |             |
 
 ## Methods
 
 | Type                               | Name            | Parameters |
 | ---------------------------------- | --------------- | ---------- |
-| [SoldierMeshData](SoldierMeshData) | [Clone](#clone) |            |
+| [SoldierMeshData](/vext/ref/fb/soldiermeshdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SoldierMeshData](SoldierMeshData) **Clone**()
+> [SoldierMeshData](/vext/ref/fb/soldiermeshdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

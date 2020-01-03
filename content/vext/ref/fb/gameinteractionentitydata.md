@@ -3,7 +3,7 @@ title: GameInteractionEntityData
 ---
 ### Base Classes
 
-[InteractionEntityData](InteractionEntityData)
+[InteractionEntityData](/vext/ref/fb/interactionentitydata/)
 
 ## Description
 
@@ -15,25 +15,25 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | GameInteractionEntityData()                                                          | Create a new instance of this container type.                                                                                             |
 | GameInteractionEntityData(GameInteractionEntityData other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| GameInteractionEntityData([InteractionEntityData](InteractionEntityData) other)      | Upcast an instance of type [InteractionEntityData](InteractionEntityData) to [GameInteractionEntityData](GameInteractionEntityData).      |
-| GameInteractionEntityData([GameEntityData](GameEntityData) other)                    | Upcast an instance of type [GameEntityData](GameEntityData) to [GameInteractionEntityData](GameInteractionEntityData).                    |
-| GameInteractionEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [GameInteractionEntityData](GameInteractionEntityData).              |
-| GameInteractionEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [GameInteractionEntityData](GameInteractionEntityData).                            |
-| GameInteractionEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [GameInteractionEntityData](GameInteractionEntityData).                    |
-| GameInteractionEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [GameInteractionEntityData](GameInteractionEntityData).              |
-| GameInteractionEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GameInteractionEntityData](GameInteractionEntityData). |
+| GameInteractionEntityData([InteractionEntityData](/vext/ref/fb/interactionentitydata/) other)      | Upcast an instance of type [InteractionEntityData](/vext/ref/fb/interactionentitydata/) to [GameInteractionEntityData](/vext/ref/fb/gameinteractionentitydata/).      |
+| GameInteractionEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [GameInteractionEntityData](/vext/ref/fb/gameinteractionentitydata/).                    |
+| GameInteractionEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [GameInteractionEntityData](/vext/ref/fb/gameinteractionentitydata/).              |
+| GameInteractionEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [GameInteractionEntityData](/vext/ref/fb/gameinteractionentitydata/).                            |
+| GameInteractionEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [GameInteractionEntityData](/vext/ref/fb/gameinteractionentitydata/).                    |
+| GameInteractionEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [GameInteractionEntityData](/vext/ref/fb/gameinteractionentitydata/).              |
+| GameInteractionEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GameInteractionEntityData](/vext/ref/fb/gameinteractionentitydata/). |
 
 ## Properties
 
 | Name                       | Type                                           | Description |
 | -------------------------- | ---------------------------------------------- | ----------- |
-| blink                      | [BlinkType](BlinkType)                         |             |
+| blink                      | [BlinkType](/vext/ref/fb/blinktype/)                         |             |
 | capturepointVerticalOffset | number                                         |             |
 | delayBetweenUses           | number                                         |             |
-| teamId                     | [TeamId](TeamId)                               |             |
-| inputAction                | [EntryInputActionEnum](EntryInputActionEnum)   |             |
+| teamId                     | [TeamId](/vext/ref/fb/teamid/)                               |             |
+| inputAction                | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum/)   |             |
 | holdToInteractTime         | number                                         |             |
-| interactionEntityType      | [InteractionEntityType](InteractionEntityType) |             |
+| interactionEntityType      | [InteractionEntityType](/vext/ref/fb/interactionentitytype/) |             |
 | interactionSid             | string                                         |             |
 | interactingSid             | string                                         |             |
 | friendlyTextSid            | string                                         |             |
@@ -47,11 +47,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                   | Name            | Parameters                                     |
 | ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [GameInteractionEntityData](GameInteractionEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [GameInteractionEntityData](/vext/ref/fb/gameinteractionentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [GameInteractionEntityData](GameInteractionEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [GameInteractionEntityData](/vext/ref/fb/gameinteractionentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -59,4 +59,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

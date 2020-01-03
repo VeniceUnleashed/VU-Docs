@@ -16,21 +16,21 @@ A structure type representing a Frostbite data type.
 
 | Name        | Type                                               | Description |
 | ----------- | -------------------------------------------------- | ----------- |
-| group       | [MixGroup](MixGroup)                               |             |
-| state       | [MixGroupState](MixGroupState)                     |             |
+| group       | [MixGroup](/vext/ref/fb/mixgroup/)                               |             |
+| state       | [MixGroupState](/vext/ref/fb/mixgroupstate/)                     |             |
 | attackTime  | number                                             |             |
 | releaseTime | number                                             |             |
-| properties  | [MixGroupPropertyValue](MixGroupPropertyValue)\[\] |             |
+| properties  | [MixGroupPropertyValue](/vext/ref/fb/mixgrouppropertyvalue/)\[\] |             |
 | isDominant  | bool                                               |             |
 
 ## Methods
 
 | Type                                         | Name            | Parameters |
 | -------------------------------------------- | --------------- | ---------- |
-| [MixerPresetGroupData](MixerPresetGroupData) | [Clone](#clone) |            |
+| [MixerPresetGroupData](/vext/ref/fb/mixerpresetgroupdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [MixerPresetGroupData](MixerPresetGroupData) **Clone**()
+> [MixerPresetGroupData](/vext/ref/fb/mixerpresetgroupdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

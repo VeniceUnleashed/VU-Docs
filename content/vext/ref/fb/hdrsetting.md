@@ -15,7 +15,7 @@ A container type representing a Frostbite instance entry.
 | --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | HdrSetting()                                                          | Create a new instance of this container type.                                                               |
 | HdrSetting(HdrSetting other)                                          | Create a reference copy of an instance of the same type.                                                    |
-| HdrSetting([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [HdrSetting](HdrSetting). |
+| HdrSetting([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [HdrSetting](/vext/ref/fb/hdrsetting/). |
 
 ## Properties
 
@@ -27,7 +27,7 @@ A container type representing a Frostbite instance entry.
 | windowTopMaxReleaseTime   | number                   |             |
 | windowTopAttackTime       | number                   |             |
 | windowBottomReleaseTime   | number                   |             |
-| windowTopReleaseTimeCurve | [AudioCurve](AudioCurve) |             |
+| windowTopReleaseTimeCurve | [AudioCurve](/vext/ref/fb/audiocurve/) |             |
 | dischargeFactor           | number                   |             |
 | maxAllowedEnergy          | number                   |             |
 | windowBottomAttackTime    | number                   |             |
@@ -40,11 +40,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                     | Name            | Parameters                                     |
 | ------------------------ | --------------- | ---------------------------------------------- |
-| [HdrSetting](HdrSetting) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [HdrSetting](/vext/ref/fb/hdrsetting/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [HdrSetting](HdrSetting) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [HdrSetting](/vext/ref/fb/hdrsetting/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -52,4 +52,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

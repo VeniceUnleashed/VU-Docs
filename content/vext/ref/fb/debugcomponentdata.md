@@ -3,7 +3,7 @@ title: DebugComponentData
 ---
 ### Base Classes
 
-[ComponentData](ComponentData)
+[ComponentData](/vext/ref/fb/componentdata/)
 
 ## Description
 
@@ -15,17 +15,17 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | DebugComponentData()                                                          | Create a new instance of this container type.                                                                               |
 | DebugComponentData(DebugComponentData other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| DebugComponentData([ComponentData](ComponentData) other)                      | Upcast an instance of type [ComponentData](ComponentData) to [DebugComponentData](DebugComponentData).                      |
-| DebugComponentData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [DebugComponentData](DebugComponentData).                    |
-| DebugComponentData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [DebugComponentData](DebugComponentData).              |
-| DebugComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DebugComponentData](DebugComponentData). |
+| DebugComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [DebugComponentData](/vext/ref/fb/debugcomponentdata/).                      |
+| DebugComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [DebugComponentData](/vext/ref/fb/debugcomponentdata/).                    |
+| DebugComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [DebugComponentData](/vext/ref/fb/debugcomponentdata/).              |
+| DebugComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DebugComponentData](/vext/ref/fb/debugcomponentdata/). |
 
 ## Properties
 
 | Name         | Type                         | Description |
 | ------------ | ---------------------------- | ----------- |
-| realm        | [Realm](Realm)               |             |
-| debugTexture | [TextureAsset](TextureAsset) |             |
+| realm        | [Realm](/vext/ref/fb/realm/)               |             |
+| debugTexture | [TextureAsset](/vext/ref/fb/textureasset/) |             |
 | fullscreen   | bool                         |             |
 | enable       | bool                         |             |
 
@@ -33,11 +33,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                     | Name            | Parameters                                     |
 | ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [DebugComponentData](DebugComponentData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [DebugComponentData](/vext/ref/fb/debugcomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [DebugComponentData](DebugComponentData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [DebugComponentData](/vext/ref/fb/debugcomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -45,4 +45,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                   | Name            | Parameters |
 | -------------------------------------- | --------------- | ---------- |
-| [ServerInfoSetting](ServerInfoSetting) | [Clone](#clone) |            |
+| [ServerInfoSetting](/vext/ref/fb/serverinfosetting/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [ServerInfoSetting](ServerInfoSetting) **Clone**()
+> [ServerInfoSetting](/vext/ref/fb/serverinfosetting/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

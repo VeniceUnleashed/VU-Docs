@@ -22,10 +22,10 @@ A structure type representing a Frostbite data type.
 
 | Type                               | Name            | Parameters |
 | ---------------------------------- | --------------- | ---------- |
-| [FootStepTrigger](FootStepTrigger) | [Clone](#clone) |            |
+| [FootStepTrigger](/vext/ref/fb/footsteptrigger/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [FootStepTrigger](FootStepTrigger) **Clone**()
+> [FootStepTrigger](/vext/ref/fb/footsteptrigger/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

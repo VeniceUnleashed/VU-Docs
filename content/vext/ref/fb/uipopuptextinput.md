@@ -25,10 +25,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                 | Name            | Parameters |
 | ------------------------------------ | --------------- | ---------- |
-| [UIPopupTextInput](UIPopupTextInput) | [Clone](#clone) |            |
+| [UIPopupTextInput](/vext/ref/fb/uipopuptextinput/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [UIPopupTextInput](UIPopupTextInput) **Clone**()
+> [UIPopupTextInput](/vext/ref/fb/uipopuptextinput/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

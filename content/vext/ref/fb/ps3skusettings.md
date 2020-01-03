@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                             | Name            | Parameters |
 | -------------------------------- | --------------- | ---------- |
-| [Ps3SkuSettings](Ps3SkuSettings) | [Clone](#clone) |            |
+| [Ps3SkuSettings](/vext/ref/fb/ps3skusettings/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [Ps3SkuSettings](Ps3SkuSettings) **Clone**()
+> [Ps3SkuSettings](/vext/ref/fb/ps3skusettings/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -3,7 +3,7 @@ title: DecalTemplateData
 ---
 ### Base Classes
 
-[Asset](Asset)
+[Asset](/vext/ref/fb/asset/)
 
 ## Description
 
@@ -15,8 +15,8 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | DecalTemplateData()                                                          | Create a new instance of this container type.                                                                             |
 | DecalTemplateData(DecalTemplateData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| DecalTemplateData([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [DecalTemplateData](DecalTemplateData).                                      |
-| DecalTemplateData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DecalTemplateData](DecalTemplateData). |
+| DecalTemplateData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [DecalTemplateData](/vext/ref/fb/decaltemplatedata/).                                      |
+| DecalTemplateData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DecalTemplateData](/vext/ref/fb/decaltemplatedata/). |
 
 ## Properties
 
@@ -29,9 +29,9 @@ A container type representing a Frostbite instance entry.
 | clipAngle             | number                                           |             |
 | proximityRadiusFactor | number                                           |             |
 | normalOffset          | number                                           |             |
-| shader                | [SurfaceShaderBaseAsset](SurfaceShaderBaseAsset) |             |
+| shader                | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset/) |             |
 | meshUVIndex           | number                                           |             |
-| atlasTile             | [DecalAtlasTile](DecalAtlasTile)                 |             |
+| atlasTile             | [DecalAtlasTile](/vext/ref/fb/decalatlastile/)                 |             |
 | sortingPriority       | number                                           |             |
 | projected             | bool                                             |             |
 | projectMultiple       | bool                                             |             |
@@ -41,11 +41,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                   | Name            | Parameters                                     |
 | -------------------------------------- | --------------- | ---------------------------------------------- |
-| [DecalTemplateData](DecalTemplateData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [DecalTemplateData](/vext/ref/fb/decaltemplatedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [DecalTemplateData](DecalTemplateData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [DecalTemplateData](/vext/ref/fb/decaltemplatedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -53,4 +53,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

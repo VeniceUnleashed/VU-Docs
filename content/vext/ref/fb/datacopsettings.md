@@ -16,16 +16,16 @@ A structure type representing a Frostbite data type.
 
 | Name   | Type                                           | Description |
 | ------ | ---------------------------------------------- | ----------- |
-| values | [DataCopValueSetting](DataCopValueSetting)\[\] |             |
+| values | [DataCopValueSetting](/vext/ref/fb/datacopvaluesetting/)\[\] |             |
 
 ## Methods
 
 | Type                               | Name            | Parameters |
 | ---------------------------------- | --------------- | ---------- |
-| [DataCopSettings](DataCopSettings) | [Clone](#clone) |            |
+| [DataCopSettings](/vext/ref/fb/datacopsettings/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [DataCopSettings](DataCopSettings) **Clone**()
+> [DataCopSettings](/vext/ref/fb/datacopsettings/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

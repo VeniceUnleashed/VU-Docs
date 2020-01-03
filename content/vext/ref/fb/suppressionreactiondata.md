@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                               | Name            | Parameters |
 | -------------------------------------------------- | --------------- | ---------- |
-| [SuppressionReactionData](SuppressionReactionData) | [Clone](#clone) |            |
+| [SuppressionReactionData](/vext/ref/fb/suppressionreactiondata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SuppressionReactionData](SuppressionReactionData) **Clone**()
+> [SuppressionReactionData](/vext/ref/fb/suppressionreactiondata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

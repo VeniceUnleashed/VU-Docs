@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                               | Name            | Parameters |
 | -------------------------------------------------- | --------------- | ---------- |
-| [MinimapCameraOffsetData](MinimapCameraOffsetData) | [Clone](#clone) |            |
+| [MinimapCameraOffsetData](/vext/ref/fb/minimapcameraoffsetdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [MinimapCameraOffsetData](MinimapCameraOffsetData) **Clone**()
+> [MinimapCameraOffsetData](/vext/ref/fb/minimapcameraoffsetdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -15,26 +15,26 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
 | RichPresenceContext()                                                          | Create a new instance of this container type.                                                                                 |
 | RichPresenceContext(RichPresenceContext other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| RichPresenceContext([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RichPresenceContext](RichPresenceContext). |
+| RichPresenceContext([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RichPresenceContext](/vext/ref/fb/richpresencecontext/). |
 
 ## Properties
 
 | Name         | Type                                                     | Description |
 | ------------ | -------------------------------------------------------- | ----------- |
 | name         | string                                                   |             |
-| values       | [RichPresenceContextValue](RichPresenceContextValue)\[\] |             |
-| defaultValue | [RichPresenceContextValue](RichPresenceContextValue)     |             |
+| values       | [RichPresenceContextValue](/vext/ref/fb/richpresencecontextvalue/)\[\] |             |
+| defaultValue | [RichPresenceContextValue](/vext/ref/fb/richpresencecontextvalue/)     |             |
 | index        | number                                                   |             |
 
 ## Methods
 
 | Type                                       | Name            | Parameters                                     |
 | ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [RichPresenceContext](RichPresenceContext) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [RichPresenceContext](/vext/ref/fb/richpresencecontext/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [RichPresenceContext](RichPresenceContext) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [RichPresenceContext](/vext/ref/fb/richpresencecontext/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -42,4 +42,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

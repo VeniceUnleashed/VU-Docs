@@ -16,17 +16,17 @@ A structure type representing a Frostbite data type.
 
 | Name     | Type                                   | Description |
 | -------- | -------------------------------------- | ----------- |
-| textType | [UICreditsTextType](UICreditsTextType) |             |
+| textType | [UICreditsTextType](/vext/ref/fb/uicreditstexttype/) |             |
 | text     | string                                 |             |
 
 ## Methods
 
 | Type                           | Name            | Parameters |
 | ------------------------------ | --------------- | ---------- |
-| [UICreditsLine](UICreditsLine) | [Clone](#clone) |            |
+| [UICreditsLine](/vext/ref/fb/uicreditsline/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [UICreditsLine](UICreditsLine) **Clone**()
+> [UICreditsLine](/vext/ref/fb/uicreditsline/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

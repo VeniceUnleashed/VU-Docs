@@ -3,7 +3,7 @@ title: GameTimeSettings
 ---
 ### Base Classes
 
-[SystemSettings](SystemSettings)
+[SystemSettings](/vext/ref/fb/systemsettings/)
 
 ## Description
 
@@ -15,8 +15,8 @@ A container type representing a Frostbite instance entry.
 | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | GameTimeSettings()                                                          | Create a new instance of this container type.                                                                           |
 | GameTimeSettings(GameTimeSettings other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| GameTimeSettings([SystemSettings](SystemSettings) other)                    | Upcast an instance of type [SystemSettings](SystemSettings) to [GameTimeSettings](GameTimeSettings).                    |
-| GameTimeSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GameTimeSettings](GameTimeSettings). |
+| GameTimeSettings([SystemSettings](/vext/ref/fb/systemsettings/) other)                    | Upcast an instance of type [SystemSettings](/vext/ref/fb/systemsettings/) to [GameTimeSettings](/vext/ref/fb/gametimesettings/).                    |
+| GameTimeSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GameTimeSettings](/vext/ref/fb/gametimesettings/). |
 
 ## Properties
 
@@ -43,11 +43,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                 | Name            | Parameters                                     |
 | ------------------------------------ | --------------- | ---------------------------------------------- |
-| [GameTimeSettings](GameTimeSettings) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [GameTimeSettings](/vext/ref/fb/gametimesettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [GameTimeSettings](GameTimeSettings) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [GameTimeSettings](/vext/ref/fb/gametimesettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -55,4 +55,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

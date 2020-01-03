@@ -22,10 +22,10 @@ A structure type representing a Frostbite data type.
 
 | Type                           | Name            | Parameters |
 | ------------------------------ | --------------- | ---------- |
-| [NetworkDataId](NetworkDataId) | [Clone](#clone) |            |
+| [NetworkDataId](/vext/ref/fb/networkdataid/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [NetworkDataId](NetworkDataId) **Clone**()
+> [NetworkDataId](/vext/ref/fb/networkdataid/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

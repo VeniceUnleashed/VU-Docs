@@ -3,7 +3,7 @@ title: VoiceOverSystemAsset
 ---
 ### Base Classes
 
-[Asset](Asset)
+[Asset](/vext/ref/fb/asset/)
 
 ## Description
 
@@ -15,34 +15,34 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | VoiceOverSystemAsset()                                                          | Create a new instance of this container type.                                                                                   |
 | VoiceOverSystemAsset(VoiceOverSystemAsset other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| VoiceOverSystemAsset([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [VoiceOverSystemAsset](VoiceOverSystemAsset).                                      |
-| VoiceOverSystemAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverSystemAsset](VoiceOverSystemAsset). |
+| VoiceOverSystemAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [VoiceOverSystemAsset](/vext/ref/fb/voiceoversystemasset/).                                      |
+| VoiceOverSystemAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverSystemAsset](/vext/ref/fb/voiceoversystemasset/). |
 
 ## Properties
 
 | Name                          | Type                                                                   | Description |
 | ----------------------------- | ---------------------------------------------------------------------- | ----------- |
-| intervals                     | [VoiceOverInterval](VoiceOverInterval)\[\]                             |             |
-| labels                        | [VoiceOverLabel](VoiceOverLabel)\[\]                                   |             |
-| types                         | [VoiceOverObject](VoiceOverObject)\[\]                                 |             |
-| objects                       | [VoiceOverObject](VoiceOverObject)\[\]                                 |             |
-| constants                     | [VoiceOverGlobalConstantValue](VoiceOverGlobalConstantValue)\[\]       |             |
-| masterLanguage                | [AudioLanguage](AudioLanguage)                                         |             |
-| defaultPronunciation          | [VoiceOverPronunciation](VoiceOverPronunciation)                       |             |
-| pronunciations                | [VoiceOverPronunciation](VoiceOverPronunciation)\[\]                   |             |
-| queueGroups                   | [VoiceOverConversationQueueGroup](VoiceOverConversationQueueGroup)\[\] |             |
-| defaultPositionedQueueGroup   | [VoiceOverConversationQueueGroup](VoiceOverConversationQueueGroup)     |             |
-| defaultUnpositionedQueueGroup | [VoiceOverConversationQueueGroup](VoiceOverConversationQueueGroup)     |             |
+| intervals                     | [VoiceOverInterval](/vext/ref/fb/voiceoverinterval/)\[\]                             |             |
+| labels                        | [VoiceOverLabel](/vext/ref/fb/voiceoverlabel/)\[\]                                   |             |
+| types                         | [VoiceOverObject](/vext/ref/fb/voiceoverobject/)\[\]                                 |             |
+| objects                       | [VoiceOverObject](/vext/ref/fb/voiceoverobject/)\[\]                                 |             |
+| constants                     | [VoiceOverGlobalConstantValue](/vext/ref/fb/voiceoverglobalconstantvalue/)\[\]       |             |
+| masterLanguage                | [AudioLanguage](/vext/ref/fb/audiolanguage/)                                         |             |
+| defaultPronunciation          | [VoiceOverPronunciation](/vext/ref/fb/voiceoverpronunciation/)                       |             |
+| pronunciations                | [VoiceOverPronunciation](/vext/ref/fb/voiceoverpronunciation/)\[\]                   |             |
+| queueGroups                   | [VoiceOverConversationQueueGroup](/vext/ref/fb/voiceoverconversationqueuegroup/)\[\] |             |
+| defaultPositionedQueueGroup   | [VoiceOverConversationQueueGroup](/vext/ref/fb/voiceoverconversationqueuegroup/)     |             |
+| defaultUnpositionedQueueGroup | [VoiceOverConversationQueueGroup](/vext/ref/fb/voiceoverconversationqueuegroup/)     |             |
 
 ## Methods
 
 | Type                                         | Name            | Parameters                                     |
 | -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [VoiceOverSystemAsset](VoiceOverSystemAsset) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [VoiceOverSystemAsset](/vext/ref/fb/voiceoversystemasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [VoiceOverSystemAsset](VoiceOverSystemAsset) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [VoiceOverSystemAsset](/vext/ref/fb/voiceoversystemasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -50,4 +50,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

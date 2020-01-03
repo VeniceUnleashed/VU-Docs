@@ -3,7 +3,7 @@ title: ArmDisarmAwardEntityData
 ---
 ### Base Classes
 
-[GameEntityData](GameEntityData)
+[GameEntityData](/vext/ref/fb/gameentitydata/)
 
 ## Description
 
@@ -15,22 +15,22 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | ArmDisarmAwardEntityData()                                                          | Create a new instance of this container type.                                                                                           |
 | ArmDisarmAwardEntityData(ArmDisarmAwardEntityData other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| ArmDisarmAwardEntityData([GameEntityData](GameEntityData) other)                    | Upcast an instance of type [GameEntityData](GameEntityData) to [ArmDisarmAwardEntityData](ArmDisarmAwardEntityData).                    |
-| ArmDisarmAwardEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [ArmDisarmAwardEntityData](ArmDisarmAwardEntityData).              |
-| ArmDisarmAwardEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [ArmDisarmAwardEntityData](ArmDisarmAwardEntityData).                            |
-| ArmDisarmAwardEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [ArmDisarmAwardEntityData](ArmDisarmAwardEntityData).                    |
-| ArmDisarmAwardEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [ArmDisarmAwardEntityData](ArmDisarmAwardEntityData).              |
-| ArmDisarmAwardEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ArmDisarmAwardEntityData](ArmDisarmAwardEntityData). |
+| ArmDisarmAwardEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [ArmDisarmAwardEntityData](/vext/ref/fb/armdisarmawardentitydata/).                    |
+| ArmDisarmAwardEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [ArmDisarmAwardEntityData](/vext/ref/fb/armdisarmawardentitydata/).              |
+| ArmDisarmAwardEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [ArmDisarmAwardEntityData](/vext/ref/fb/armdisarmawardentitydata/).                            |
+| ArmDisarmAwardEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [ArmDisarmAwardEntityData](/vext/ref/fb/armdisarmawardentitydata/).                    |
+| ArmDisarmAwardEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [ArmDisarmAwardEntityData](/vext/ref/fb/armdisarmawardentitydata/).              |
+| ArmDisarmAwardEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ArmDisarmAwardEntityData](/vext/ref/fb/armdisarmawardentitydata/). |
 
 ## Methods
 
 | Type                                                 | Name            | Parameters                                     |
 | ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [ArmDisarmAwardEntityData](ArmDisarmAwardEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [ArmDisarmAwardEntityData](/vext/ref/fb/armdisarmawardentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [ArmDisarmAwardEntityData](ArmDisarmAwardEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [ArmDisarmAwardEntityData](/vext/ref/fb/armdisarmawardentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -38,4 +38,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

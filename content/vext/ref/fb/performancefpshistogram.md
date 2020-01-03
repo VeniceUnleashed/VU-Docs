@@ -29,10 +29,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                               | Name            | Parameters |
 | -------------------------------------------------- | --------------- | ---------- |
-| [PerformanceFpsHistogram](PerformanceFpsHistogram) | [Clone](#clone) |            |
+| [PerformanceFpsHistogram](/vext/ref/fb/performancefpshistogram/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [PerformanceFpsHistogram](PerformanceFpsHistogram) **Clone**()
+> [PerformanceFpsHistogram](/vext/ref/fb/performancefpshistogram/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

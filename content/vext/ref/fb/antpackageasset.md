@@ -3,7 +3,7 @@ title: AntPackageAsset
 ---
 ### Base Classes
 
-[Asset](Asset)
+[Asset](/vext/ref/fb/asset/)
 
 ## Description
 
@@ -15,8 +15,8 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | AntPackageAsset()                                                          | Create a new instance of this container type.                                                                         |
 | AntPackageAsset(AntPackageAsset other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| AntPackageAsset([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [AntPackageAsset](AntPackageAsset).                                      |
-| AntPackageAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AntPackageAsset](AntPackageAsset). |
+| AntPackageAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [AntPackageAsset](/vext/ref/fb/antpackageasset/).                                      |
+| AntPackageAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AntPackageAsset](/vext/ref/fb/antpackageasset/). |
 
 ## Properties
 
@@ -24,7 +24,7 @@ A container type representing a Frostbite instance entry.
 | ------------- | ------------------------------------ | ----------- |
 | win32FileName | string                               |             |
 | xePs3FileName | string                               |             |
-| packagingType | [AntPackagingType](AntPackagingType) |             |
+| packagingType | [AntPackagingType](/vext/ref/fb/antpackagingtype/) |             |
 | streamingGuid | [Guid](/vext/ref/shared/class/guid)    |             |
 | chunkSize     | number                               |             |
 
@@ -32,11 +32,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                               | Name            | Parameters                                     |
 | ---------------------------------- | --------------- | ---------------------------------------------- |
-| [AntPackageAsset](AntPackageAsset) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [AntPackageAsset](/vext/ref/fb/antpackageasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [AntPackageAsset](AntPackageAsset) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [AntPackageAsset](/vext/ref/fb/antpackageasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -44,4 +44,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

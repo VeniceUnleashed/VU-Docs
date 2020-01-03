@@ -25,10 +25,10 @@ A structure type representing a Frostbite data type.
 
 | Type                               | Name            | Parameters |
 | ---------------------------------- | --------------- | ---------- |
-| [EdgePointerData](EdgePointerData) | [Clone](#clone) |            |
+| [EdgePointerData](/vext/ref/fb/edgepointerdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [EdgePointerData](EdgePointerData) **Clone**()
+> [EdgePointerData](/vext/ref/fb/edgepointerdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

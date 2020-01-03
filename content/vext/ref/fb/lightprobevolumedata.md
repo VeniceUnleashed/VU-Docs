@@ -3,7 +3,7 @@ title: LightProbeVolumeData
 ---
 ### Base Classes
 
-[SpatialEntityData](SpatialEntityData)
+[SpatialEntityData](/vext/ref/fb/spatialentitydata/)
 
 ## Description
 
@@ -15,11 +15,11 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | LightProbeVolumeData()                                                          | Create a new instance of this container type.                                                                                   |
 | LightProbeVolumeData(LightProbeVolumeData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| LightProbeVolumeData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [LightProbeVolumeData](LightProbeVolumeData).              |
-| LightProbeVolumeData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [LightProbeVolumeData](LightProbeVolumeData).                            |
-| LightProbeVolumeData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [LightProbeVolumeData](LightProbeVolumeData).                    |
-| LightProbeVolumeData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [LightProbeVolumeData](LightProbeVolumeData).              |
-| LightProbeVolumeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LightProbeVolumeData](LightProbeVolumeData). |
+| LightProbeVolumeData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [LightProbeVolumeData](/vext/ref/fb/lightprobevolumedata/).              |
+| LightProbeVolumeData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [LightProbeVolumeData](/vext/ref/fb/lightprobevolumedata/).                            |
+| LightProbeVolumeData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [LightProbeVolumeData](/vext/ref/fb/lightprobevolumedata/).                    |
+| LightProbeVolumeData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [LightProbeVolumeData](/vext/ref/fb/lightprobevolumedata/).              |
+| LightProbeVolumeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LightProbeVolumeData](/vext/ref/fb/lightprobevolumedata/). |
 
 ## Properties
 
@@ -35,11 +35,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                         | Name            | Parameters                                     |
 | -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [LightProbeVolumeData](LightProbeVolumeData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [LightProbeVolumeData](/vext/ref/fb/lightprobevolumedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [LightProbeVolumeData](LightProbeVolumeData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [LightProbeVolumeData](/vext/ref/fb/lightprobevolumedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -47,4 +47,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

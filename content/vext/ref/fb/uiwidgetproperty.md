@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                 | Name            | Parameters |
 | ------------------------------------ | --------------- | ---------- |
-| [UIWidgetProperty](UIWidgetProperty) | [Clone](#clone) |            |
+| [UIWidgetProperty](/vext/ref/fb/uiwidgetproperty/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [UIWidgetProperty](UIWidgetProperty) **Clone**()
+> [UIWidgetProperty](/vext/ref/fb/uiwidgetproperty/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

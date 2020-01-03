@@ -33,10 +33,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                               | Name            | Parameters |
 | -------------------------------------------------- | --------------- | ---------- |
-| [MatchmakingGameSettings](MatchmakingGameSettings) | [Clone](#clone) |            |
+| [MatchmakingGameSettings](/vext/ref/fb/matchmakinggamesettings/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [MatchmakingGameSettings](MatchmakingGameSettings) **Clone**()
+> [MatchmakingGameSettings](/vext/ref/fb/matchmakinggamesettings/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

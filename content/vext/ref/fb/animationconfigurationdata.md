@@ -16,18 +16,18 @@ A structure type representing a Frostbite data type.
 
 | Name                   | Type                                                                           | Description |
 | ---------------------- | ------------------------------------------------------------------------------ | ----------- |
-| shootModuleData        | [AnimationConfigurationShootModuleData](AnimationConfigurationShootModuleData) |             |
-| weaponOffsetModuleData | [WeaponOffsetData](WeaponOffsetData)                                           |             |
-| weaponSpeedModuleData  | [WeaponSpeedData](WeaponSpeedData)                                             |             |
+| shootModuleData        | [AnimationConfigurationShootModuleData](/vext/ref/fb/animationconfigurationshootmoduledata/) |             |
+| weaponOffsetModuleData | [WeaponOffsetData](/vext/ref/fb/weaponoffsetdata/)                                           |             |
+| weaponSpeedModuleData  | [WeaponSpeedData](/vext/ref/fb/weaponspeeddata/)                                             |             |
 
 ## Methods
 
 | Type                                                     | Name            | Parameters |
 | -------------------------------------------------------- | --------------- | ---------- |
-| [AnimationConfigurationData](AnimationConfigurationData) | [Clone](#clone) |            |
+| [AnimationConfigurationData](/vext/ref/fb/animationconfigurationdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [AnimationConfigurationData](AnimationConfigurationData) **Clone**()
+> [AnimationConfigurationData](/vext/ref/fb/animationconfigurationdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

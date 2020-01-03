@@ -15,25 +15,25 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
 | MixerPreset()                                                          | Create a new instance of this container type.                                                                 |
 | MixerPreset(MixerPreset other)                                         | Create a reference copy of an instance of the same type.                                                      |
-| MixerPreset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MixerPreset](MixerPreset). |
+| MixerPreset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MixerPreset](/vext/ref/fb/mixerpreset/). |
 
 ## Properties
 
 | Name     | Type                                             | Description |
 | -------- | ------------------------------------------------ | ----------- |
 | nameHash | number                                           |             |
-| groups   | [MixerPresetGroupData](MixerPresetGroupData)\[\] |             |
-| nodes    | [MixerPresetNodeData](MixerPresetNodeData)\[\]   |             |
+| groups   | [MixerPresetGroupData](/vext/ref/fb/mixerpresetgroupdata/)\[\] |             |
+| nodes    | [MixerPresetNodeData](/vext/ref/fb/mixerpresetnodedata/)\[\]   |             |
 
 ## Methods
 
 | Type                       | Name            | Parameters                                     |
 | -------------------------- | --------------- | ---------------------------------------------- |
-| [MixerPreset](MixerPreset) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [MixerPreset](/vext/ref/fb/mixerpreset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [MixerPreset](MixerPreset) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [MixerPreset](/vext/ref/fb/mixerpreset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -41,4 +41,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

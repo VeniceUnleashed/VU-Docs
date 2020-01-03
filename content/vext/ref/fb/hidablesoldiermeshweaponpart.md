@@ -16,8 +16,8 @@ A structure type representing a Frostbite data type.
 
 | Name                 | Type                                 | Description |
 | -------------------- | ------------------------------------ | ----------- |
-| weaponMesh           | [SkinnedMeshAsset](SkinnedMeshAsset) |             |
-| weaponMeshBlueprint  | [ObjectBlueprint](ObjectBlueprint)   |             |
+| weaponMesh           | [SkinnedMeshAsset](/vext/ref/fb/skinnedmeshasset/) |             |
+| weaponMeshBlueprint  | [ObjectBlueprint](/vext/ref/fb/objectblueprint/)   |             |
 | boneName             | string                               |             |
 | hideAlways           | bool                                 |             |
 | hideInVehicleEntries | bool                                 |             |
@@ -26,10 +26,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                         | Name            | Parameters |
 | ------------------------------------------------------------ | --------------- | ---------- |
-| [HidableSoldierMeshWeaponPart](HidableSoldierMeshWeaponPart) | [Clone](#clone) |            |
+| [HidableSoldierMeshWeaponPart](/vext/ref/fb/hidablesoldiermeshweaponpart/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [HidableSoldierMeshWeaponPart](HidableSoldierMeshWeaponPart) **Clone**()
+> [HidableSoldierMeshWeaponPart](/vext/ref/fb/hidablesoldiermeshweaponpart/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                       | Name            | Parameters |
 | ------------------------------------------ | --------------- | ---------- |
-| [BoolShaderParameter](BoolShaderParameter) | [Clone](#clone) |            |
+| [BoolShaderParameter](/vext/ref/fb/boolshaderparameter/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [BoolShaderParameter](BoolShaderParameter) **Clone**()
+> [BoolShaderParameter](/vext/ref/fb/boolshaderparameter/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

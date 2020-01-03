@@ -16,17 +16,17 @@ A structure type representing a Frostbite data type.
 
 | Name                      | Type                                                                           | Description |
 | ------------------------- | ------------------------------------------------------------------------------ | ----------- |
-| physicsMaterialProperties | [PhysicsMaterialRelationPropertyData](PhysicsMaterialRelationPropertyData)\[\] |             |
-| physicsPropertyProperties | [PhysicsPropertyRelationPropertyData](PhysicsPropertyRelationPropertyData)\[\] |             |
+| physicsMaterialProperties | [PhysicsMaterialRelationPropertyData](/vext/ref/fb/physicsmaterialrelationpropertydata/)\[\] |             |
+| physicsPropertyProperties | [PhysicsPropertyRelationPropertyData](/vext/ref/fb/physicspropertyrelationpropertydata/)\[\] |             |
 
 ## Methods
 
 | Type                                                         | Name            | Parameters |
 | ------------------------------------------------------------ | --------------- | ---------- |
-| [MaterialRelationPropertyPair](MaterialRelationPropertyPair) | [Clone](#clone) |            |
+| [MaterialRelationPropertyPair](/vext/ref/fb/materialrelationpropertypair/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [MaterialRelationPropertyPair](MaterialRelationPropertyPair) **Clone**()
+> [MaterialRelationPropertyPair](/vext/ref/fb/materialrelationpropertypair/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

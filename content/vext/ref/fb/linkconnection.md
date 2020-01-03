@@ -25,10 +25,10 @@ A structure type representing a Frostbite data type.
 
 | Type                             | Name            | Parameters |
 | -------------------------------- | --------------- | ---------- |
-| [LinkConnection](LinkConnection) | [Clone](#clone) |            |
+| [LinkConnection](/vext/ref/fb/linkconnection/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [LinkConnection](LinkConnection) **Clone**()
+> [LinkConnection](/vext/ref/fb/linkconnection/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

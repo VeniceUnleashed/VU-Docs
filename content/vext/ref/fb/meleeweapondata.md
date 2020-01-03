@@ -3,7 +3,7 @@ title: MeleeWeaponData
 ---
 ### Base Classes
 
-[WeaponData](WeaponData)
+[WeaponData](/vext/ref/fb/weapondata/)
 
 ## Description
 
@@ -15,9 +15,9 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | MeleeWeaponData()                                                          | Create a new instance of this container type.                                                                         |
 | MeleeWeaponData(MeleeWeaponData other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| MeleeWeaponData([WeaponData](WeaponData) other)                            | Upcast an instance of type [WeaponData](WeaponData) to [MeleeWeaponData](MeleeWeaponData).                            |
-| MeleeWeaponData([ToolData](ToolData) other)                                | Upcast an instance of type [ToolData](ToolData) to [MeleeWeaponData](MeleeWeaponData).                                |
-| MeleeWeaponData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MeleeWeaponData](MeleeWeaponData). |
+| MeleeWeaponData([WeaponData](/vext/ref/fb/weapondata/) other)                            | Upcast an instance of type [WeaponData](/vext/ref/fb/weapondata/) to [MeleeWeaponData](/vext/ref/fb/meleeweapondata/).                            |
+| MeleeWeaponData([ToolData](/vext/ref/fb/tooldata/) other)                                | Upcast an instance of type [ToolData](/vext/ref/fb/tooldata/) to [MeleeWeaponData](/vext/ref/fb/meleeweapondata/).                                |
+| MeleeWeaponData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MeleeWeaponData](/vext/ref/fb/meleeweapondata/). |
 
 ## Properties
 
@@ -30,11 +30,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                               | Name            | Parameters                                     |
 | ---------------------------------- | --------------- | ---------------------------------------------- |
-| [MeleeWeaponData](MeleeWeaponData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [MeleeWeaponData](/vext/ref/fb/meleeweapondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [MeleeWeaponData](MeleeWeaponData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [MeleeWeaponData](/vext/ref/fb/meleeweapondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -42,4 +42,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

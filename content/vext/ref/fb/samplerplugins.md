@@ -16,19 +16,19 @@ A structure type representing a Frostbite data type.
 
 | Name      | Type                                       | Description |
 | --------- | ------------------------------------------ | ----------- |
-| sndPlayer | [SoundGraphPluginRef](SoundGraphPluginRef) |             |
-| resample  | [SoundGraphPluginRef](SoundGraphPluginRef) |             |
-| pause     | [SoundGraphPluginRef](SoundGraphPluginRef) |             |
-| gain      | [SoundGraphPluginRef](SoundGraphPluginRef) |             |
+| sndPlayer | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref/) |             |
+| resample  | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref/) |             |
+| pause     | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref/) |             |
+| gain      | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref/) |             |
 
 ## Methods
 
 | Type                             | Name            | Parameters |
 | -------------------------------- | --------------- | ---------- |
-| [SamplerPlugins](SamplerPlugins) | [Clone](#clone) |            |
+| [SamplerPlugins](/vext/ref/fb/samplerplugins/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SamplerPlugins](SamplerPlugins) **Clone**()
+> [SamplerPlugins](/vext/ref/fb/samplerplugins/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

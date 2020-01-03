@@ -27,10 +27,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                   | Name            | Parameters |
 | -------------------------------------- | --------------- | ---------- |
-| [AngleOfImpactData](AngleOfImpactData) | [Clone](#clone) |            |
+| [AngleOfImpactData](/vext/ref/fb/angleofimpactdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [AngleOfImpactData](AngleOfImpactData) **Clone**()
+> [AngleOfImpactData](/vext/ref/fb/angleofimpactdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

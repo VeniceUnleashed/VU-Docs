@@ -3,7 +3,7 @@ title: SoldierEntryComponentData
 ---
 ### Base Classes
 
-[EntryComponentData](EntryComponentData)
+[EntryComponentData](/vext/ref/fb/entrycomponentdata/)
 
 ## Description
 
@@ -15,29 +15,29 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | SoldierEntryComponentData()                                                          | Create a new instance of this container type.                                                                                             |
 | SoldierEntryComponentData(SoldierEntryComponentData other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| SoldierEntryComponentData([EntryComponentData](EntryComponentData) other)            | Upcast an instance of type [EntryComponentData](EntryComponentData) to [SoldierEntryComponentData](SoldierEntryComponentData).            |
-| SoldierEntryComponentData([ComponentData](ComponentData) other)                      | Upcast an instance of type [ComponentData](ComponentData) to [SoldierEntryComponentData](SoldierEntryComponentData).                      |
-| SoldierEntryComponentData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [SoldierEntryComponentData](SoldierEntryComponentData).                    |
-| SoldierEntryComponentData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [SoldierEntryComponentData](SoldierEntryComponentData).              |
-| SoldierEntryComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoldierEntryComponentData](SoldierEntryComponentData). |
+| SoldierEntryComponentData([EntryComponentData](/vext/ref/fb/entrycomponentdata/) other)            | Upcast an instance of type [EntryComponentData](/vext/ref/fb/entrycomponentdata/) to [SoldierEntryComponentData](/vext/ref/fb/soldierentrycomponentdata/).            |
+| SoldierEntryComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [SoldierEntryComponentData](/vext/ref/fb/soldierentrycomponentdata/).                      |
+| SoldierEntryComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [SoldierEntryComponentData](/vext/ref/fb/soldierentrycomponentdata/).                    |
+| SoldierEntryComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [SoldierEntryComponentData](/vext/ref/fb/soldierentrycomponentdata/).              |
+| SoldierEntryComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoldierEntryComponentData](/vext/ref/fb/soldierentrycomponentdata/). |
 
 ## Properties
 
 | Name                     | Type                                           | Description |
 | ------------------------ | ---------------------------------------------- | ----------- |
-| aimingConstraints        | [AimingConstraintsData](AimingConstraintsData) |             |
-| antEntryEnumeration      | [AntEnumeration](AntEnumeration)               |             |
+| aimingConstraints        | [AimingConstraintsData](/vext/ref/fb/aimingconstraintsdata/) |             |
+| antEntryEnumeration      | [AntEnumeration](/vext/ref/fb/antenumeration/)               |             |
 | alignConstraintsToEntity | bool                                           |             |
 
 ## Methods
 
 | Type                                                   | Name            | Parameters                                     |
 | ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [SoldierEntryComponentData](SoldierEntryComponentData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [SoldierEntryComponentData](/vext/ref/fb/soldierentrycomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [SoldierEntryComponentData](SoldierEntryComponentData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [SoldierEntryComponentData](/vext/ref/fb/soldierentrycomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -45,4 +45,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

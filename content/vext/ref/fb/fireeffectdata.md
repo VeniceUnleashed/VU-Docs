@@ -20,7 +20,7 @@ A structure type representing a Frostbite data type.
 | offset             | [Vec3](/vext/ref/shared/class/vec3)  |             |
 | zoomRotation       | [Vec3](/vext/ref/shared/class/vec3)  |             |
 | zoomOffset         | [Vec3](/vext/ref/shared/class/vec3)  |             |
-| effect             | [EffectBlueprint](EffectBlueprint) |             |
+| effect             | [EffectBlueprint](/vext/ref/fb/effectblueprint/) |             |
 | useZoomOffset      | bool                               |             |
 | useZoomRotation    | bool                               |             |
 | disableDuringZoom  | bool                               |             |
@@ -31,10 +31,10 @@ A structure type representing a Frostbite data type.
 
 | Type                             | Name            | Parameters |
 | -------------------------------- | --------------- | ---------- |
-| [FireEffectData](FireEffectData) | [Clone](#clone) |            |
+| [FireEffectData](/vext/ref/fb/fireeffectdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [FireEffectData](FireEffectData) **Clone**()
+> [FireEffectData](/vext/ref/fb/fireeffectdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

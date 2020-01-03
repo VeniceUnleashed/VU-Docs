@@ -17,17 +17,17 @@ A structure type representing a Frostbite data type.
 | Name             | Type                                                                       | Description |
 | ---------------- | -------------------------------------------------------------------------- | ----------- |
 | region           | string                                                                     |             |
-| ageLevels        | [Ps3AgeLevels](Ps3AgeLevels)                                               |             |
-| countryOverrides | [Ps3ParentalLockAgeSettingsOverrides](Ps3ParentalLockAgeSettingsOverrides) |             |
+| ageLevels        | [Ps3AgeLevels](/vext/ref/fb/ps3agelevels/)                                               |             |
+| countryOverrides | [Ps3ParentalLockAgeSettingsOverrides](/vext/ref/fb/ps3parentallockagesettingsoverrides/) |             |
 
 ## Methods
 
 | Type                                                     | Name            | Parameters |
 | -------------------------------------------------------- | --------------- | ---------- |
-| [Ps3ParentalLockAgeSettings](Ps3ParentalLockAgeSettings) | [Clone](#clone) |            |
+| [Ps3ParentalLockAgeSettings](/vext/ref/fb/ps3parentallockagesettings/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [Ps3ParentalLockAgeSettings](Ps3ParentalLockAgeSettings) **Clone**()
+> [Ps3ParentalLockAgeSettings](/vext/ref/fb/ps3parentallockagesettings/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

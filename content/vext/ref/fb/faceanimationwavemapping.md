@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                 | Name            | Parameters |
 | ---------------------------------------------------- | --------------- | ---------- |
-| [FaceAnimationWaveMapping](FaceAnimationWaveMapping) | [Clone](#clone) |            |
+| [FaceAnimationWaveMapping](/vext/ref/fb/faceanimationwavemapping/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [FaceAnimationWaveMapping](FaceAnimationWaveMapping) **Clone**()
+> [FaceAnimationWaveMapping](/vext/ref/fb/faceanimationwavemapping/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

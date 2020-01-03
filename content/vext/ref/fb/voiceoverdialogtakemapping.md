@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                     | Name            | Parameters |
 | -------------------------------------------------------- | --------------- | ---------- |
-| [VoiceOverDialogTakeMapping](VoiceOverDialogTakeMapping) | [Clone](#clone) |            |
+| [VoiceOverDialogTakeMapping](/vext/ref/fb/voiceoverdialogtakemapping/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [VoiceOverDialogTakeMapping](VoiceOverDialogTakeMapping) **Clone**()
+> [VoiceOverDialogTakeMapping](/vext/ref/fb/voiceoverdialogtakemapping/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

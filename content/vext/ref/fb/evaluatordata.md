@@ -3,7 +3,7 @@ title: EvaluatorData
 ---
 ### Base Classes
 
-[EmitterComponentData](EmitterComponentData)
+[EmitterComponentData](/vext/ref/fb/emittercomponentdata/)
 
 ## Description
 
@@ -15,24 +15,24 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
 | EvaluatorData()                                                          | Create a new instance of this container type.                                                                     |
 | EvaluatorData(EvaluatorData other)                                       | Create a reference copy of an instance of the same type.                                                          |
-| EvaluatorData([EmitterComponentData](EmitterComponentData) other)        | Upcast an instance of type [EmitterComponentData](EmitterComponentData) to [EvaluatorData](EvaluatorData).        |
-| EvaluatorData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EvaluatorData](EvaluatorData). |
+| EvaluatorData([EmitterComponentData](/vext/ref/fb/emittercomponentdata/) other)        | Upcast an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata/) to [EvaluatorData](/vext/ref/fb/evaluatordata/).        |
+| EvaluatorData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EvaluatorData](/vext/ref/fb/evaluatordata/). |
 
 ## Properties
 
 | Name             | Type                                 | Description |
 | ---------------- | ------------------------------------ | ----------- |
-| emitterParameter | [EmitterParameter](EmitterParameter) |             |
+| emitterParameter | [EmitterParameter](/vext/ref/fb/emitterparameter/) |             |
 
 ## Methods
 
 | Type                           | Name            | Parameters                                     |
 | ------------------------------ | --------------- | ---------------------------------------------- |
-| [EvaluatorData](EvaluatorData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [EvaluatorData](/vext/ref/fb/evaluatordata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [EvaluatorData](EvaluatorData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [EvaluatorData](/vext/ref/fb/evaluatordata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -40,4 +40,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

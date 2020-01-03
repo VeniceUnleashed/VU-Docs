@@ -3,7 +3,7 @@ title: StatsCategoryDifficultyData
 ---
 ### Base Classes
 
-[StatsCategoryGuidData](StatsCategoryGuidData)
+[StatsCategoryGuidData](/vext/ref/fb/statscategoryguiddata/)
 
 ## Description
 
@@ -15,20 +15,20 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | StatsCategoryDifficultyData()                                                          | Create a new instance of this container type.                                                                                                 |
 | StatsCategoryDifficultyData(StatsCategoryDifficultyData other)                         | Create a reference copy of an instance of the same type.                                                                                      |
-| StatsCategoryDifficultyData([StatsCategoryGuidData](StatsCategoryGuidData) other)      | Upcast an instance of type [StatsCategoryGuidData](StatsCategoryGuidData) to [StatsCategoryDifficultyData](StatsCategoryDifficultyData).      |
-| StatsCategoryDifficultyData([StatsCategoryBaseData](StatsCategoryBaseData) other)      | Upcast an instance of type [StatsCategoryBaseData](StatsCategoryBaseData) to [StatsCategoryDifficultyData](StatsCategoryDifficultyData).      |
-| StatsCategoryDifficultyData([TreeNodeBase](TreeNodeBase) other)                        | Upcast an instance of type [TreeNodeBase](TreeNodeBase) to [StatsCategoryDifficultyData](StatsCategoryDifficultyData).                        |
-| StatsCategoryDifficultyData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StatsCategoryDifficultyData](StatsCategoryDifficultyData). |
+| StatsCategoryDifficultyData([StatsCategoryGuidData](/vext/ref/fb/statscategoryguiddata/) other)      | Upcast an instance of type [StatsCategoryGuidData](/vext/ref/fb/statscategoryguiddata/) to [StatsCategoryDifficultyData](/vext/ref/fb/statscategorydifficultydata/).      |
+| StatsCategoryDifficultyData([StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/) other)      | Upcast an instance of type [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/) to [StatsCategoryDifficultyData](/vext/ref/fb/statscategorydifficultydata/).      |
+| StatsCategoryDifficultyData([TreeNodeBase](/vext/ref/fb/treenodebase/) other)                        | Upcast an instance of type [TreeNodeBase](/vext/ref/fb/treenodebase/) to [StatsCategoryDifficultyData](/vext/ref/fb/statscategorydifficultydata/).                        |
+| StatsCategoryDifficultyData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StatsCategoryDifficultyData](/vext/ref/fb/statscategorydifficultydata/). |
 
 ## Methods
 
 | Type                                                       | Name            | Parameters                                     |
 | ---------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [StatsCategoryDifficultyData](StatsCategoryDifficultyData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [StatsCategoryDifficultyData](/vext/ref/fb/statscategorydifficultydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [StatsCategoryDifficultyData](StatsCategoryDifficultyData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [StatsCategoryDifficultyData](/vext/ref/fb/statscategorydifficultydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -36,4 +36,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

@@ -3,7 +3,7 @@ title: StartEntityData
 ---
 ### Base Classes
 
-[EntityData](EntityData)
+[EntityData](/vext/ref/fb/entitydata/)
 
 ## Description
 
@@ -15,10 +15,10 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | StartEntityData()                                                          | Create a new instance of this container type.                                                                         |
 | StartEntityData(StartEntityData other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| StartEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [StartEntityData](StartEntityData).                            |
-| StartEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [StartEntityData](StartEntityData).                    |
-| StartEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [StartEntityData](StartEntityData).              |
-| StartEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StartEntityData](StartEntityData). |
+| StartEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [StartEntityData](/vext/ref/fb/startentitydata/).                            |
+| StartEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [StartEntityData](/vext/ref/fb/startentitydata/).                    |
+| StartEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [StartEntityData](/vext/ref/fb/startentitydata/).              |
+| StartEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StartEntityData](/vext/ref/fb/startentitydata/). |
 
 ## Properties
 
@@ -32,11 +32,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                               | Name            | Parameters                                     |
 | ---------------------------------- | --------------- | ---------------------------------------------- |
-| [StartEntityData](StartEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [StartEntityData](/vext/ref/fb/startentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [StartEntityData](StartEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [StartEntityData](/vext/ref/fb/startentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -44,4 +44,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

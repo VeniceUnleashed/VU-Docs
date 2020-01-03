@@ -3,7 +3,7 @@ title: UIKitCompData
 ---
 ### Base Classes
 
-[UIComponentData](UIComponentData)
+[UIComponentData](/vext/ref/fb/uicomponentdata/)
 
 ## Description
 
@@ -15,19 +15,19 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
 | UIKitCompData()                                                          | Create a new instance of this container type.                                                                     |
 | UIKitCompData(UIKitCompData other)                                       | Create a reference copy of an instance of the same type.                                                          |
-| UIKitCompData([UIComponentData](UIComponentData) other)                  | Upcast an instance of type [UIComponentData](UIComponentData) to [UIKitCompData](UIKitCompData).                  |
-| UIKitCompData([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [UIKitCompData](UIKitCompData).                                      |
-| UIKitCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIKitCompData](UIKitCompData). |
+| UIKitCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UIKitCompData](/vext/ref/fb/uikitcompdata/).                  |
+| UIKitCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UIKitCompData](/vext/ref/fb/uikitcompdata/).                                      |
+| UIKitCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIKitCompData](/vext/ref/fb/uikitcompdata/). |
 
 ## Methods
 
 | Type                           | Name            | Parameters                                     |
 | ------------------------------ | --------------- | ---------------------------------------------- |
-| [UIKitCompData](UIKitCompData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [UIKitCompData](/vext/ref/fb/uikitcompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [UIKitCompData](UIKitCompData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [UIKitCompData](/vext/ref/fb/uikitcompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -35,4 +35,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

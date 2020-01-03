@@ -16,17 +16,17 @@ A structure type representing a Frostbite data type.
 
 | Name  | Type                   | Description |
 | ----- | ---------------------- | ----------- |
-| event | [StatEvent](StatEvent) |             |
+| event | [StatEvent](/vext/ref/fb/statevent/) |             |
 | scale | number                 |             |
 
 ## Methods
 
 | Type                             | Name            | Parameters |
 | -------------------------------- | --------------- | ---------- |
-| [EventScaleData](EventScaleData) | [Clone](#clone) |            |
+| [EventScaleData](/vext/ref/fb/eventscaledata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [EventScaleData](EventScaleData) **Clone**()
+> [EventScaleData](/vext/ref/fb/eventscaledata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

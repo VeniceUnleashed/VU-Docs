@@ -3,7 +3,7 @@ title: LockingWeaponData
 ---
 ### Base Classes
 
-[WeaponData](WeaponData)
+[WeaponData](/vext/ref/fb/weapondata/)
 
 ## Description
 
@@ -15,17 +15,17 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | LockingWeaponData()                                                          | Create a new instance of this container type.                                                                             |
 | LockingWeaponData(LockingWeaponData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| LockingWeaponData([WeaponData](WeaponData) other)                            | Upcast an instance of type [WeaponData](WeaponData) to [LockingWeaponData](LockingWeaponData).                            |
-| LockingWeaponData([ToolData](ToolData) other)                                | Upcast an instance of type [ToolData](ToolData) to [LockingWeaponData](LockingWeaponData).                                |
-| LockingWeaponData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LockingWeaponData](LockingWeaponData). |
+| LockingWeaponData([WeaponData](/vext/ref/fb/weapondata/) other)                            | Upcast an instance of type [WeaponData](/vext/ref/fb/weapondata/) to [LockingWeaponData](/vext/ref/fb/lockingweapondata/).                            |
+| LockingWeaponData([ToolData](/vext/ref/fb/tooldata/) other)                                | Upcast an instance of type [ToolData](/vext/ref/fb/tooldata/) to [LockingWeaponData](/vext/ref/fb/lockingweapondata/).                                |
+| LockingWeaponData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LockingWeaponData](/vext/ref/fb/lockingweapondata/). |
 
 ## Properties
 
 | Name                       | Type                                           | Description |
 | -------------------------- | ---------------------------------------------- | ----------- |
-| lockingController          | [LockingControllerData](LockingControllerData) |             |
-| secondaryLockingController | [LockingControllerData](LockingControllerData) |             |
-| warnLock                   | [WarnTarget](WarnTarget)                       |             |
+| lockingController          | [LockingControllerData](/vext/ref/fb/lockingcontrollerdata/) |             |
+| secondaryLockingController | [LockingControllerData](/vext/ref/fb/lockingcontrollerdata/) |             |
+| warnLock                   | [WarnTarget](/vext/ref/fb/warntarget/)                       |             |
 | isHoming                   | bool                                           |             |
 | isGuidedWhenZoomed         | bool                                           |             |
 | fireOnlyWhenLockedOn       | bool                                           |             |
@@ -35,11 +35,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                   | Name            | Parameters                                     |
 | -------------------------------------- | --------------- | ---------------------------------------------- |
-| [LockingWeaponData](LockingWeaponData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [LockingWeaponData](/vext/ref/fb/lockingweapondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [LockingWeaponData](LockingWeaponData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [LockingWeaponData](/vext/ref/fb/lockingweapondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -47,4 +47,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

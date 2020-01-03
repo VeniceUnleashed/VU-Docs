@@ -3,7 +3,7 @@ title: UIScreenEventCompData
 ---
 ### Base Classes
 
-[UIComponentData](UIComponentData)
+[UIComponentData](/vext/ref/fb/uicomponentdata/)
 
 ## Description
 
@@ -15,19 +15,19 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | UIScreenEventCompData()                                                          | Create a new instance of this container type.                                                                                     |
 | UIScreenEventCompData(UIScreenEventCompData other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| UIScreenEventCompData([UIComponentData](UIComponentData) other)                  | Upcast an instance of type [UIComponentData](UIComponentData) to [UIScreenEventCompData](UIScreenEventCompData).                  |
-| UIScreenEventCompData([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [UIScreenEventCompData](UIScreenEventCompData).                                      |
-| UIScreenEventCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIScreenEventCompData](UIScreenEventCompData). |
+| UIScreenEventCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UIScreenEventCompData](/vext/ref/fb/uiscreeneventcompdata/).                  |
+| UIScreenEventCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UIScreenEventCompData](/vext/ref/fb/uiscreeneventcompdata/).                                      |
+| UIScreenEventCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIScreenEventCompData](/vext/ref/fb/uiscreeneventcompdata/). |
 
 ## Methods
 
 | Type                                           | Name            | Parameters                                     |
 | ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [UIScreenEventCompData](UIScreenEventCompData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [UIScreenEventCompData](/vext/ref/fb/uiscreeneventcompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [UIScreenEventCompData](UIScreenEventCompData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [UIScreenEventCompData](/vext/ref/fb/uiscreeneventcompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -35,4 +35,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

@@ -25,10 +25,10 @@ A structure type representing a Frostbite data type.
 
 | Type                               | Name            | Parameters |
 | ---------------------------------- | --------------- | ---------- |
-| [UILevelStatData](UILevelStatData) | [Clone](#clone) |            |
+| [UILevelStatData](/vext/ref/fb/uilevelstatdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [UILevelStatData](UILevelStatData) **Clone**()
+> [UILevelStatData](/vext/ref/fb/uilevelstatdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -3,7 +3,7 @@ title: CapturePointEntityData
 ---
 ### Base Classes
 
-[GameEntityData](GameEntityData)
+[GameEntityData](/vext/ref/fb/gameentitydata/)
 
 ## Description
 
@@ -15,12 +15,12 @@ A container type representing a Frostbite instance entry.
 | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | CapturePointEntityData()                                                          | Create a new instance of this container type.                                                                                       |
 | CapturePointEntityData(CapturePointEntityData other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| CapturePointEntityData([GameEntityData](GameEntityData) other)                    | Upcast an instance of type [GameEntityData](GameEntityData) to [CapturePointEntityData](CapturePointEntityData).                    |
-| CapturePointEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [CapturePointEntityData](CapturePointEntityData).              |
-| CapturePointEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [CapturePointEntityData](CapturePointEntityData).                            |
-| CapturePointEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [CapturePointEntityData](CapturePointEntityData).                    |
-| CapturePointEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [CapturePointEntityData](CapturePointEntityData).              |
-| CapturePointEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CapturePointEntityData](CapturePointEntityData). |
+| CapturePointEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [CapturePointEntityData](/vext/ref/fb/capturepointentitydata/).                    |
+| CapturePointEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [CapturePointEntityData](/vext/ref/fb/capturepointentitydata/).              |
+| CapturePointEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [CapturePointEntityData](/vext/ref/fb/capturepointentitydata/).                            |
+| CapturePointEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [CapturePointEntityData](/vext/ref/fb/capturepointentitydata/).                    |
+| CapturePointEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [CapturePointEntityData](/vext/ref/fb/capturepointentitydata/).              |
+| CapturePointEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CapturePointEntityData](/vext/ref/fb/capturepointentitydata/). |
 
 ## Properties
 
@@ -28,14 +28,14 @@ A container type representing a Frostbite instance entry.
 | --------------------------- | -------------------------------------- | ----------- |
 | enemyTicketLossWhenCaptured | number                                 |             |
 | minNrToTakeControl          | number                                 |             |
-| flagTemplates               | [ObjectBlueprint](ObjectBlueprint)\[\] |             |
-| capturePoint                | [ObjectBlueprint](ObjectBlueprint)     |             |
-| initialOwnerTeam            | [TeamId](TeamId)                       |             |
+| flagTemplates               | [ObjectBlueprint](/vext/ref/fb/objectblueprint/)\[\] |             |
+| capturePoint                | [ObjectBlueprint](/vext/ref/fb/objectblueprint/)     |             |
+| initialOwnerTeam            | [TeamId](/vext/ref/fb/teamid/)                       |             |
 | captureRadius               | number                                 |             |
 | maxCaptureMultiplier        | number                                 |             |
 | areaValue                   | number                                 |             |
 | spawnMenuListOrdinal        | number                                 |             |
-| areaValues                  | [AreaValueTeam](AreaValueTeam)\[\]     |             |
+| areaValues                  | [AreaValueTeam](/vext/ref/fb/areavalueteam/)\[\]     |             |
 | timeToGetControl            | number                                 |             |
 | timeToLoseControl           | number                                 |             |
 | returnMultiplier            | number                                 |             |
@@ -44,7 +44,7 @@ A container type representing a Frostbite instance entry.
 | hideRadius                  | number                                 |             |
 | addedMultiplierPerPlayer    | number                                 |             |
 | modify3DIconVerticalOffset  | number                                 |             |
-| capturableType              | [CapturableType](CapturableType)       |             |
+| capturableType              | [CapturableType](/vext/ref/fb/capturabletype/)       |             |
 | intruderWarningSID          | string                                 |             |
 | isCapturedInUpperSphere     | bool                                   |             |
 | disableWhenLosingControl    | bool                                   |             |
@@ -64,11 +64,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                             | Name            | Parameters                                     |
 | ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [CapturePointEntityData](CapturePointEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [CapturePointEntityData](/vext/ref/fb/capturepointentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [CapturePointEntityData](CapturePointEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [CapturePointEntityData](/vext/ref/fb/capturepointentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -76,4 +76,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

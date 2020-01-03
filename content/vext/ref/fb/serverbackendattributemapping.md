@@ -16,7 +16,7 @@ A structure type representing a Frostbite data type.
 
 | Name         | Type                                             | Description |
 | ------------ | ------------------------------------------------ | ----------- |
-| attribute    | [ServerBackendAttribute](ServerBackendAttribute) |             |
+| attribute    | [ServerBackendAttribute](/vext/ref/fb/serverbackendattribute/) |             |
 | setting      | string                                           |             |
 | defaultValue | string                                           |             |
 
@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                           | Name            | Parameters |
 | -------------------------------------------------------------- | --------------- | ---------- |
-| [ServerBackendAttributeMapping](ServerBackendAttributeMapping) | [Clone](#clone) |            |
+| [ServerBackendAttributeMapping](/vext/ref/fb/serverbackendattributemapping/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [ServerBackendAttributeMapping](ServerBackendAttributeMapping) **Clone**()
+> [ServerBackendAttributeMapping](/vext/ref/fb/serverbackendattributemapping/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

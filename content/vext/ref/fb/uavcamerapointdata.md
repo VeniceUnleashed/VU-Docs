@@ -25,10 +25,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                     | Name            | Parameters |
 | ---------------------------------------- | --------------- | ---------- |
-| [UavCameraPointData](UavCameraPointData) | [Clone](#clone) |            |
+| [UavCameraPointData](/vext/ref/fb/uavcamerapointdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [UavCameraPointData](UavCameraPointData) **Clone**()
+> [UavCameraPointData](/vext/ref/fb/uavcamerapointdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

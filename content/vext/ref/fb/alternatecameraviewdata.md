@@ -15,22 +15,22 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | AlternateCameraViewData()                                                          | Create a new instance of this container type.                                                                                         |
 | AlternateCameraViewData(AlternateCameraViewData other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| AlternateCameraViewData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AlternateCameraViewData](AlternateCameraViewData). |
+| AlternateCameraViewData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AlternateCameraViewData](/vext/ref/fb/alternatecameraviewdata/). |
 
 ## Properties
 
 | Name                                | Type                                         | Description |
 | ----------------------------------- | -------------------------------------------- | ----------- |
 | meshOffset                          | [Vec3](/vext/ref/shared/class/vec3)            |             |
-| hud                                 | [HudData](HudData)                           |             |
+| hud                                 | [HudData](/vext/ref/fb/huddata/)                           |             |
 | fieldOfView                         | number                                       |             |
 | worldSpaceLockEfficiency            | number                                       |             |
-| mesh                                | [RigidMeshAsset](RigidMeshAsset)             |             |
-| maskMeshBlueprint                   | [ObjectBlueprint](ObjectBlueprint)           |             |
+| mesh                                | [RigidMeshAsset](/vext/ref/fb/rigidmeshasset/)             |             |
+| maskMeshBlueprint                   | [ObjectBlueprint](/vext/ref/fb/objectblueprint/)           |             |
 | fadeInDuration                      | number                                       |             |
 | fovTransitionTime                   | number                                       |             |
 | blackDuration                       | number                                       |             |
-| inputSuppression                    | [InputSuppressionData](InputSuppressionData) |             |
+| inputSuppression                    | [InputSuppressionData](/vext/ref/fb/inputsuppressiondata/) |             |
 | screenExposureAreaScale             | number                                       |             |
 | fadeOutDuration                     | number                                       |             |
 | allowFieldOfViewScaling             | bool                                         |             |
@@ -44,11 +44,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                               | Name            | Parameters                                     |
 | -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [AlternateCameraViewData](AlternateCameraViewData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [AlternateCameraViewData](/vext/ref/fb/alternatecameraviewdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [AlternateCameraViewData](AlternateCameraViewData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [AlternateCameraViewData](/vext/ref/fb/alternatecameraviewdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -56,4 +56,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

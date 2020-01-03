@@ -31,10 +31,10 @@ A structure type representing a Frostbite data type.
 
 | Type                           | Name            | Parameters |
 | ------------------------------ | --------------- | ---------- |
-| [SubScreenData](SubScreenData) | [Clone](#clone) |            |
+| [SubScreenData](/vext/ref/fb/subscreendata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SubScreenData](SubScreenData) **Clone**()
+> [SubScreenData](/vext/ref/fb/subscreendata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

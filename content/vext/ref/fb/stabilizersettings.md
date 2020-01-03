@@ -16,7 +16,7 @@ A structure type representing a Frostbite data type.
 
 | Name     | Type                                     | Description |
 | -------- | ---------------------------------------- | ----------- |
-| property | [StabilizerProperty](StabilizerProperty) |             |
+| property | [StabilizerProperty](/vext/ref/fb/stabilizerproperty/) |             |
 | strength | number                                   |             |
 | advanced | bool                                     |             |
 
@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                     | Name            | Parameters |
 | ---------------------------------------- | --------------- | ---------- |
-| [StabilizerSettings](StabilizerSettings) | [Clone](#clone) |            |
+| [StabilizerSettings](/vext/ref/fb/stabilizersettings/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [StabilizerSettings](StabilizerSettings) **Clone**()
+> [StabilizerSettings](/vext/ref/fb/stabilizersettings/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

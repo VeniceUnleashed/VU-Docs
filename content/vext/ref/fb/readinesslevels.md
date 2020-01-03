@@ -16,18 +16,18 @@ A structure type representing a Frostbite data type.
 
 | Name   | Type                                                           | Description |
 | ------ | -------------------------------------------------------------- | ----------- |
-| patrol | [ReadinessLevelCharacteristics](ReadinessLevelCharacteristics) |             |
-| ready  | [ReadinessLevelCharacteristics](ReadinessLevelCharacteristics) |             |
-| combat | [ReadinessLevelCharacteristics](ReadinessLevelCharacteristics) |             |
+| patrol | [ReadinessLevelCharacteristics](/vext/ref/fb/readinesslevelcharacteristics/) |             |
+| ready  | [ReadinessLevelCharacteristics](/vext/ref/fb/readinesslevelcharacteristics/) |             |
+| combat | [ReadinessLevelCharacteristics](/vext/ref/fb/readinesslevelcharacteristics/) |             |
 
 ## Methods
 
 | Type                               | Name            | Parameters |
 | ---------------------------------- | --------------- | ---------- |
-| [ReadinessLevels](ReadinessLevels) | [Clone](#clone) |            |
+| [ReadinessLevels](/vext/ref/fb/readinesslevels/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [ReadinessLevels](ReadinessLevels) **Clone**()
+> [ReadinessLevels](/vext/ref/fb/readinesslevels/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

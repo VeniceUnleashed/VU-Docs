@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                             | Name            | Parameters |
 | ------------------------------------------------ | --------------- | ---------- |
-| [ContinueWeaponAmmoData](ContinueWeaponAmmoData) | [Clone](#clone) |            |
+| [ContinueWeaponAmmoData](/vext/ref/fb/continueweaponammodata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [ContinueWeaponAmmoData](ContinueWeaponAmmoData) **Clone**()
+> [ContinueWeaponAmmoData](/vext/ref/fb/continueweaponammodata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

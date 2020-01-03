@@ -20,16 +20,16 @@ A structure type representing a Frostbite data type.
 | autoAimOuterBoxExtends | [Vec3](/vext/ref/shared/class/vec3)      |             |
 | autoAimInnerBoxOffset  | [Vec3](/vext/ref/shared/class/vec3)      |             |
 | autoAimInnerBoxExtends | [Vec3](/vext/ref/shared/class/vec3)      |             |
-| poseType               | [CharacterPoseType](CharacterPoseType) |             |
+| poseType               | [CharacterPoseType](/vext/ref/fb/characterposetype/) |             |
 
 ## Methods
 
 | Type                       | Name            | Parameters |
 | -------------------------- | --------------- | ---------- |
-| [AutoAimData](AutoAimData) | [Clone](#clone) |            |
+| [AutoAimData](/vext/ref/fb/autoaimdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [AutoAimData](AutoAimData) **Clone**()
+> [AutoAimData](/vext/ref/fb/autoaimdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                       | Name            | Parameters |
 | ------------------------------------------ | --------------- | ---------- |
-| [DebrisSystemMetrics](DebrisSystemMetrics) | [Clone](#clone) |            |
+| [DebrisSystemMetrics](/vext/ref/fb/debrissystemmetrics/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [DebrisSystemMetrics](DebrisSystemMetrics) **Clone**()
+> [DebrisSystemMetrics](/vext/ref/fb/debrissystemmetrics/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

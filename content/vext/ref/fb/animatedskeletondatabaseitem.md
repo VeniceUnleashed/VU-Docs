@@ -16,11 +16,11 @@ A structure type representing a Frostbite data type.
 
 | Name             | Type                                           | Description |
 | ---------------- | ---------------------------------------------- | ----------- |
-| asset            | [SkeletonAsset](SkeletonAsset)                 |             |
+| asset            | [SkeletonAsset](/vext/ref/fb/skeletonasset/)                 |             |
 | names            | number\[\]                                     |             |
-| soldierCollision | [SkeletonCollisionData](SkeletonCollisionData) |             |
-| ragdollCollision | [SkeletonCollisionData](SkeletonCollisionData) |             |
-| ragdoll          | [RagdollAsset](RagdollAsset)                   |             |
+| soldierCollision | [SkeletonCollisionData](/vext/ref/fb/skeletoncollisiondata/) |             |
+| ragdollCollision | [SkeletonCollisionData](/vext/ref/fb/skeletoncollisiondata/) |             |
+| ragdoll          | [RagdollAsset](/vext/ref/fb/ragdollasset/)                   |             |
 | specialBones     | string\[\]                                     |             |
 | hipBone          | string                                         |             |
 | headBone         | string                                         |             |
@@ -29,10 +29,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                         | Name            | Parameters |
 | ------------------------------------------------------------ | --------------- | ---------- |
-| [AnimatedSkeletonDatabaseItem](AnimatedSkeletonDatabaseItem) | [Clone](#clone) |            |
+| [AnimatedSkeletonDatabaseItem](/vext/ref/fb/animatedskeletondatabaseitem/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [AnimatedSkeletonDatabaseItem](AnimatedSkeletonDatabaseItem) **Clone**()
+> [AnimatedSkeletonDatabaseItem](/vext/ref/fb/animatedskeletondatabaseitem/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

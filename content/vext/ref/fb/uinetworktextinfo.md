@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                   | Name            | Parameters |
 | -------------------------------------- | --------------- | ---------- |
-| [UINetworkTextInfo](UINetworkTextInfo) | [Clone](#clone) |            |
+| [UINetworkTextInfo](/vext/ref/fb/uinetworktextinfo/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [UINetworkTextInfo](UINetworkTextInfo) **Clone**()
+> [UINetworkTextInfo](/vext/ref/fb/uinetworktextinfo/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

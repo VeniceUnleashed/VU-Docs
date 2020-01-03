@@ -3,7 +3,7 @@ title: MultiCrossfaderGroup
 ---
 ### Base Classes
 
-[AudioGraphNodePortGroup](AudioGraphNodePortGroup)
+[AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/)
 
 ## Description
 
@@ -15,30 +15,30 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | MultiCrossfaderGroup()                                                          | Create a new instance of this container type.                                                                                   |
 | MultiCrossfaderGroup(MultiCrossfaderGroup other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| MultiCrossfaderGroup([AudioGraphNodePortGroup](AudioGraphNodePortGroup) other)  | Upcast an instance of type [AudioGraphNodePortGroup](AudioGraphNodePortGroup) to [MultiCrossfaderGroup](MultiCrossfaderGroup).  |
-| MultiCrossfaderGroup([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MultiCrossfaderGroup](MultiCrossfaderGroup). |
+| MultiCrossfaderGroup([AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/) other)  | Upcast an instance of type [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/) to [MultiCrossfaderGroup](/vext/ref/fb/multicrossfadergroup/).  |
+| MultiCrossfaderGroup([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MultiCrossfaderGroup](/vext/ref/fb/multicrossfadergroup/). |
 
 ## Properties
 
 | Name          | Type                                     | Description |
 | ------------- | ---------------------------------------- | ----------- |
-| amplitude     | [AudioGraphNodePort](AudioGraphNodePort) |             |
-| start         | [AudioGraphNodePort](AudioGraphNodePort) |             |
-| stop          | [AudioGraphNodePort](AudioGraphNodePort) |             |
+| amplitude     | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
+| start         | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
+| stop          | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
 | fadeAmplitude | number                                   |             |
 | fadeBegin     | number                                   |             |
 | fadeEnd       | number                                   |             |
-| fadeType      | [FaderType](FaderType)                   |             |
+| fadeType      | [FaderType](/vext/ref/fb/fadertype/)                   |             |
 
 ## Methods
 
 | Type                                         | Name            | Parameters                                     |
 | -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [MultiCrossfaderGroup](MultiCrossfaderGroup) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [MultiCrossfaderGroup](/vext/ref/fb/multicrossfadergroup/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [MultiCrossfaderGroup](MultiCrossfaderGroup) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [MultiCrossfaderGroup](/vext/ref/fb/multicrossfadergroup/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -46,4 +46,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

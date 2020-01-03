@@ -3,7 +3,7 @@ title: ChaseCameraData
 ---
 ### Base Classes
 
-[TargetCameraData](TargetCameraData)
+[TargetCameraData](/vext/ref/fb/targetcameradata/)
 
 ## Description
 
@@ -15,11 +15,11 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | ChaseCameraData()                                                          | Create a new instance of this container type.                                                                         |
 | ChaseCameraData(ChaseCameraData other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| ChaseCameraData([TargetCameraData](TargetCameraData) other)                | Upcast an instance of type [TargetCameraData](TargetCameraData) to [ChaseCameraData](ChaseCameraData).                |
-| ChaseCameraData([CameraData](CameraData) other)                            | Upcast an instance of type [CameraData](CameraData) to [ChaseCameraData](ChaseCameraData).                            |
-| ChaseCameraData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [ChaseCameraData](ChaseCameraData).                    |
-| ChaseCameraData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [ChaseCameraData](ChaseCameraData).              |
-| ChaseCameraData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ChaseCameraData](ChaseCameraData). |
+| ChaseCameraData([TargetCameraData](/vext/ref/fb/targetcameradata/) other)                | Upcast an instance of type [TargetCameraData](/vext/ref/fb/targetcameradata/) to [ChaseCameraData](/vext/ref/fb/chasecameradata/).                |
+| ChaseCameraData([CameraData](/vext/ref/fb/cameradata/) other)                            | Upcast an instance of type [CameraData](/vext/ref/fb/cameradata/) to [ChaseCameraData](/vext/ref/fb/chasecameradata/).                            |
+| ChaseCameraData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [ChaseCameraData](/vext/ref/fb/chasecameradata/).                    |
+| ChaseCameraData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [ChaseCameraData](/vext/ref/fb/chasecameradata/).              |
+| ChaseCameraData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ChaseCameraData](/vext/ref/fb/chasecameradata/). |
 
 ## Properties
 
@@ -55,11 +55,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                               | Name            | Parameters                                     |
 | ---------------------------------- | --------------- | ---------------------------------------------- |
-| [ChaseCameraData](ChaseCameraData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [ChaseCameraData](/vext/ref/fb/chasecameradata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [ChaseCameraData](ChaseCameraData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [ChaseCameraData](/vext/ref/fb/chasecameradata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -67,4 +67,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

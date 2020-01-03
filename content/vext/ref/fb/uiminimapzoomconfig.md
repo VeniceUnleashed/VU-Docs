@@ -16,17 +16,17 @@ A structure type representing a Frostbite data type.
 
 | Name  | Type                                     | Description |
 | ----- | ---------------------------------------- | ----------- |
-| state | [UIMinimapZoomState](UIMinimapZoomState) |             |
-| data  | [MinimapData](MinimapData)               |             |
+| state | [UIMinimapZoomState](/vext/ref/fb/uiminimapzoomstate/) |             |
+| data  | [MinimapData](/vext/ref/fb/minimapdata/)               |             |
 
 ## Methods
 
 | Type                                       | Name            | Parameters |
 | ------------------------------------------ | --------------- | ---------- |
-| [UIMinimapZoomConfig](UIMinimapZoomConfig) | [Clone](#clone) |            |
+| [UIMinimapZoomConfig](/vext/ref/fb/uiminimapzoomconfig/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [UIMinimapZoomConfig](UIMinimapZoomConfig) **Clone**()
+> [UIMinimapZoomConfig](/vext/ref/fb/uiminimapzoomconfig/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

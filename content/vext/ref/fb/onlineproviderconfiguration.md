@@ -16,7 +16,7 @@ A structure type representing a Frostbite data type.
 
 | Name                   | Type                         | Description |
 | ---------------------- | ---------------------------- | ----------- |
-| platform               | [GamePlatform](GamePlatform) |             |
+| platform               | [GamePlatform](/vext/ref/fb/gameplatform/) |             |
 | client                 | string                       |             |
 | serviceName            | string                       |             |
 | sku                    | string                       |             |
@@ -28,10 +28,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                       | Name            | Parameters |
 | ---------------------------------------------------------- | --------------- | ---------- |
-| [OnlineProviderConfiguration](OnlineProviderConfiguration) | [Clone](#clone) |            |
+| [OnlineProviderConfiguration](/vext/ref/fb/onlineproviderconfiguration/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [OnlineProviderConfiguration](OnlineProviderConfiguration) **Clone**()
+> [OnlineProviderConfiguration](/vext/ref/fb/onlineproviderconfiguration/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -16,7 +16,7 @@ A structure type representing a Frostbite data type.
 
 | Name                     | Type                     | Description |
 | ------------------------ | ------------------------ | ----------- |
-| networkRange             | [IndexRange](IndexRange) |             |
+| networkRange             | [IndexRange](/vext/ref/fb/indexrange/) |             |
 | parentPartComponentIndex | number                   |             |
 | parentHealthStateIndex   | number                   |             |
 | instanceIndex            | number                   |             |
@@ -25,10 +25,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                       | Name            | Parameters |
 | ---------------------------------------------------------- | --------------- | ---------- |
-| [ChildStaticModelNetworkInfo](ChildStaticModelNetworkInfo) | [Clone](#clone) |            |
+| [ChildStaticModelNetworkInfo](/vext/ref/fb/childstaticmodelnetworkinfo/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [ChildStaticModelNetworkInfo](ChildStaticModelNetworkInfo) **Clone**()
+> [ChildStaticModelNetworkInfo](/vext/ref/fb/childstaticmodelnetworkinfo/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

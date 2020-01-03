@@ -26,10 +26,10 @@ A structure type representing a Frostbite data type.
 
 | Type                             | Name            | Parameters |
 | -------------------------------- | --------------- | ---------- |
-| [GunSwayLagData](GunSwayLagData) | [Clone](#clone) |            |
+| [GunSwayLagData](/vext/ref/fb/gunswaylagdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [GunSwayLagData](GunSwayLagData) **Clone**()
+> [GunSwayLagData](/vext/ref/fb/gunswaylagdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

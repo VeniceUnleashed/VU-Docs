@@ -3,7 +3,7 @@ title: WeaponEntityData
 ---
 ### Base Classes
 
-[GameEntityData](GameEntityData)
+[GameEntityData](/vext/ref/fb/gameentitydata/)
 
 ## Description
 
@@ -15,32 +15,32 @@ A container type representing a Frostbite instance entry.
 | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | WeaponEntityData()                                                          | Create a new instance of this container type.                                                                           |
 | WeaponEntityData(WeaponEntityData other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| WeaponEntityData([GameEntityData](GameEntityData) other)                    | Upcast an instance of type [GameEntityData](GameEntityData) to [WeaponEntityData](WeaponEntityData).                    |
-| WeaponEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [WeaponEntityData](WeaponEntityData).              |
-| WeaponEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [WeaponEntityData](WeaponEntityData).                            |
-| WeaponEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [WeaponEntityData](WeaponEntityData).                    |
-| WeaponEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [WeaponEntityData](WeaponEntityData).              |
-| WeaponEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponEntityData](WeaponEntityData). |
+| WeaponEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [WeaponEntityData](/vext/ref/fb/weaponentitydata/).                    |
+| WeaponEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [WeaponEntityData](/vext/ref/fb/weaponentitydata/).              |
+| WeaponEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [WeaponEntityData](/vext/ref/fb/weaponentitydata/).                            |
+| WeaponEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [WeaponEntityData](/vext/ref/fb/weaponentitydata/).                    |
+| WeaponEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [WeaponEntityData](/vext/ref/fb/weaponentitydata/).              |
+| WeaponEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponEntityData](/vext/ref/fb/weaponentitydata/). |
 
 ## Properties
 
 | Name             | Type                                   | Description |
 | ---------------- | -------------------------------------- | ----------- |
-| weaponStates     | [WeaponStateData](WeaponStateData)\[\] |             |
-| weaponClass      | [WeaponClassEnum](WeaponClassEnum)     |             |
-| aiData           | [GameAIWeaponData](GameAIWeaponData)   |             |
-| weaponFiring     | [WeaponFiringData](WeaponFiringData)   |             |
-| customWeaponType | [WeaponData](WeaponData)               |             |
+| weaponStates     | [WeaponStateData](/vext/ref/fb/weaponstatedata/)\[\] |             |
+| weaponClass      | [WeaponClassEnum](/vext/ref/fb/weaponclassenum/)     |             |
+| aiData           | [GameAIWeaponData](/vext/ref/fb/gameaiweapondata/)   |             |
+| weaponFiring     | [WeaponFiringData](/vext/ref/fb/weaponfiringdata/)   |             |
+| customWeaponType | [WeaponData](/vext/ref/fb/weapondata/)               |             |
 
 ## Methods
 
 | Type                                 | Name            | Parameters                                     |
 | ------------------------------------ | --------------- | ---------------------------------------------- |
-| [WeaponEntityData](WeaponEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [WeaponEntityData](/vext/ref/fb/weaponentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [WeaponEntityData](WeaponEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [WeaponEntityData](/vext/ref/fb/weaponentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -48,4 +48,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

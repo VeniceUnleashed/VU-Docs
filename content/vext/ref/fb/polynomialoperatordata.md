@@ -3,7 +3,7 @@ title: PolynomialOperatorData
 ---
 ### Base Classes
 
-[EvaluatorData](EvaluatorData)
+[EvaluatorData](/vext/ref/fb/evaluatordata/)
 
 ## Description
 
@@ -15,17 +15,17 @@ A container type representing a Frostbite instance entry.
 | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | PolynomialOperatorData()                                                          | Create a new instance of this container type.                                                                                       |
 | PolynomialOperatorData(PolynomialOperatorData other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| PolynomialOperatorData([EvaluatorData](EvaluatorData) other)                      | Upcast an instance of type [EvaluatorData](EvaluatorData) to [PolynomialOperatorData](PolynomialOperatorData).                      |
-| PolynomialOperatorData([EmitterComponentData](EmitterComponentData) other)        | Upcast an instance of type [EmitterComponentData](EmitterComponentData) to [PolynomialOperatorData](PolynomialOperatorData).        |
-| PolynomialOperatorData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PolynomialOperatorData](PolynomialOperatorData). |
+| PolynomialOperatorData([EvaluatorData](/vext/ref/fb/evaluatordata/) other)                      | Upcast an instance of type [EvaluatorData](/vext/ref/fb/evaluatordata/) to [PolynomialOperatorData](/vext/ref/fb/polynomialoperatordata/).                      |
+| PolynomialOperatorData([EmitterComponentData](/vext/ref/fb/emittercomponentdata/) other)        | Upcast an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata/) to [PolynomialOperatorData](/vext/ref/fb/polynomialoperatordata/).        |
+| PolynomialOperatorData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PolynomialOperatorData](/vext/ref/fb/polynomialoperatordata/). |
 
 ## Properties
 
 | Name           | Type                                       | Description |
 | -------------- | ------------------------------------------ | ----------- |
-| firstOperand   | [PolynomialTempData](PolynomialTempData)   |             |
-| secondOperand  | [PolynomialTempData](PolynomialTempData)   |             |
-| operation      | [PolynomialOperation](PolynomialOperation) |             |
+| firstOperand   | [PolynomialTempData](/vext/ref/fb/polynomialtempdata/)   |             |
+| secondOperand  | [PolynomialTempData](/vext/ref/fb/polynomialtempdata/)   |             |
+| operation      | [PolynomialOperation](/vext/ref/fb/polynomialoperation/) |             |
 | minClampResult | number                                     |             |
 | maxClampResult | number                                     |             |
 
@@ -33,11 +33,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                             | Name            | Parameters                                     |
 | ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [PolynomialOperatorData](PolynomialOperatorData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [PolynomialOperatorData](/vext/ref/fb/polynomialoperatordata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [PolynomialOperatorData](PolynomialOperatorData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [PolynomialOperatorData](/vext/ref/fb/polynomialoperatordata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -45,4 +45,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

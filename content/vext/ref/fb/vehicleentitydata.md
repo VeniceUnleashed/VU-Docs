@@ -3,7 +3,7 @@ title: VehicleEntityData
 ---
 ### Base Classes
 
-[ControllableEntityData](ControllableEntityData)
+[ControllableEntityData](/vext/ref/fb/controllableentitydata/)
 
 ## Description
 
@@ -15,14 +15,14 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | VehicleEntityData()                                                          | Create a new instance of this container type.                                                                             |
 | VehicleEntityData(VehicleEntityData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| VehicleEntityData([ControllableEntityData](ControllableEntityData) other)    | Upcast an instance of type [ControllableEntityData](ControllableEntityData) to [VehicleEntityData](VehicleEntityData).    |
-| VehicleEntityData([GamePhysicsEntityData](GamePhysicsEntityData) other)      | Upcast an instance of type [GamePhysicsEntityData](GamePhysicsEntityData) to [VehicleEntityData](VehicleEntityData).      |
-| VehicleEntityData([GameEntityData](GameEntityData) other)                    | Upcast an instance of type [GameEntityData](GameEntityData) to [VehicleEntityData](VehicleEntityData).                    |
-| VehicleEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [VehicleEntityData](VehicleEntityData).              |
-| VehicleEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [VehicleEntityData](VehicleEntityData).                            |
-| VehicleEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [VehicleEntityData](VehicleEntityData).                    |
-| VehicleEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [VehicleEntityData](VehicleEntityData).              |
-| VehicleEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VehicleEntityData](VehicleEntityData). |
+| VehicleEntityData([ControllableEntityData](/vext/ref/fb/controllableentitydata/) other)    | Upcast an instance of type [ControllableEntityData](/vext/ref/fb/controllableentitydata/) to [VehicleEntityData](/vext/ref/fb/vehicleentitydata/).    |
+| VehicleEntityData([GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata/) other)      | Upcast an instance of type [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata/) to [VehicleEntityData](/vext/ref/fb/vehicleentitydata/).      |
+| VehicleEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [VehicleEntityData](/vext/ref/fb/vehicleentitydata/).                    |
+| VehicleEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [VehicleEntityData](/vext/ref/fb/vehicleentitydata/).              |
+| VehicleEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [VehicleEntityData](/vext/ref/fb/vehicleentitydata/).                            |
+| VehicleEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [VehicleEntityData](/vext/ref/fb/vehicleentitydata/).                    |
+| VehicleEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [VehicleEntityData](/vext/ref/fb/vehicleentitydata/).              |
+| VehicleEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VehicleEntityData](/vext/ref/fb/vehicleentitydata/). |
 
 ## Properties
 
@@ -35,11 +35,11 @@ A container type representing a Frostbite instance entry.
 | disabledDamageThreshold            | number                                             |             |
 | controllableType                   | string                                             |             |
 | preDestructionDamageThreshold      | number                                             |             |
-| rearHealthZone                     | [VehicleHealthZoneData](VehicleHealthZoneData)     |             |
-| leftHealthZone                     | [VehicleHealthZoneData](VehicleHealthZoneData)     |             |
-| rightHealthZone                    | [VehicleHealthZoneData](VehicleHealthZoneData)     |             |
+| rearHealthZone                     | [VehicleHealthZoneData](/vext/ref/fb/vehiclehealthzonedata/)     |             |
+| leftHealthZone                     | [VehicleHealthZoneData](/vext/ref/fb/vehiclehealthzonedata/)     |             |
+| rightHealthZone                    | [VehicleHealthZoneData](/vext/ref/fb/vehiclehealthzonedata/)     |             |
 | minSpeedForMineActivation          | number                                             |             |
-| frontHealthZone                    | [VehicleHealthZoneData](VehicleHealthZoneData)     |             |
+| frontHealthZone                    | [VehicleHealthZoneData](/vext/ref/fb/vehiclehealthzonedata/)     |             |
 | upsideDownDamage                   | number                                             |             |
 | waterDamageOffset                  | number                                             |             |
 | armorMultiplier                    | number                                             |             |
@@ -49,22 +49,22 @@ A container type representing a Frostbite instance entry.
 | decayDelay                         | number                                             |             |
 | decayRate                          | number                                             |             |
 | belowWaterDamageDelay              | number                                             |             |
-| criticallyDamagedEffect            | [EffectBlueprint](EffectBlueprint)                 |             |
+| criticallyDamagedEffect            | [EffectBlueprint](/vext/ref/fb/effectblueprint/)                 |             |
 | regenerationRate                   | number                                             |             |
 | criticalDamageTime                 | number                                             |             |
-| preExplosionEffect                 | [EffectBlueprint](EffectBlueprint)                 |             |
+| preExplosionEffect                 | [EffectBlueprint](/vext/ref/fb/effectblueprint/)                 |             |
 | regenerationDelay                  | number                                             |             |
 | preExplosionTime                   | number                                             |             |
-| explosion                          | [ExplosionEntityData](ExplosionEntityData)         |             |
-| mesh                               | [CompositeMeshAsset](CompositeMeshAsset)           |             |
-| cockpitMesh                        | [ObjectBlueprint](ObjectBlueprint)                 |             |
+| explosion                          | [ExplosionEntityData](/vext/ref/fb/explosionentitydata/)         |             |
+| mesh                               | [CompositeMeshAsset](/vext/ref/fb/compositemeshasset/)           |             |
+| cockpitMesh                        | [ObjectBlueprint](/vext/ref/fb/objectblueprint/)                 |             |
 | velocityDamageMagnifier            | number                                             |             |
 | exitSpeedThreshold                 | number                                             |             |
-| hudData                            | [VehicleHudData](VehicleHudData)                   |             |
+| hudData                            | [VehicleHudData](/vext/ref/fb/vehiclehuddata/)                   |             |
 | nameSid                            | string                                             |             |
 | maxPlayersInVehicle                | number                                             |             |
 | nametagHeightScale                 | number                                             |             |
-| sound                              | [VehicleSoundData](VehicleSoundData)               |             |
+| sound                              | [VehicleSoundData](/vext/ref/fb/vehiclesounddata/)               |             |
 | upsideDownDamageDelay              | number                                             |             |
 | upsideDownAngle                    | number                                             |             |
 | waterDamage                        | number                                             |             |
@@ -72,14 +72,14 @@ A container type representing a Frostbite instance entry.
 | nametagHeightOffset                | number                                             |             |
 | highAltitudeLockHeight             | number                                             |             |
 | velocityDamageThreshold            | number                                             |             |
-| voiceOverInfo                      | [EntityVoiceOverInfo](EntityVoiceOverInfo)         |             |
+| voiceOverInfo                      | [EntityVoiceOverInfo](/vext/ref/fb/entityvoiceoverinfo/)         |             |
 | exitCameraSwitchDelay              | number                                             |             |
 | killSoldierCollisionSpeedThreshold | number                                             |             |
 | exitDirectionSpeedThreshold        | number                                             |             |
-| angleOfImpact                      | [AngleOfImpactData](AngleOfImpactData)             |             |
-| vehicleLockableInfo                | [VehicleLockableInfoData](VehicleLockableInfoData) |             |
+| angleOfImpact                      | [AngleOfImpactData](/vext/ref/fb/angleofimpactdata/)             |             |
+| vehicleLockableInfo                | [VehicleLockableInfoData](/vext/ref/fb/vehiclelockableinfodata/) |             |
 | flirValue                          | number                                             |             |
-| mpMode                             | [MPModeData](MPModeData)                           |             |
+| mpMode                             | [MPModeData](/vext/ref/fb/mpmodedata/)                           |             |
 | ignoreSoldierCollisionNormal       | bool                                               |             |
 | showPlayerHealth                   | bool                                               |             |
 | foregroundRenderCockpitMesh        | bool                                               |             |
@@ -105,11 +105,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                   | Name            | Parameters                                     |
 | -------------------------------------- | --------------- | ---------------------------------------------- |
-| [VehicleEntityData](VehicleEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [VehicleEntityData](/vext/ref/fb/vehicleentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [VehicleEntityData](VehicleEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [VehicleEntityData](/vext/ref/fb/vehicleentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -117,4 +117,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

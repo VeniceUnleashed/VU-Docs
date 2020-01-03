@@ -16,20 +16,20 @@ A structure type representing a Frostbite data type.
 
 | Name        | Type             | Description |
 | ----------- | ---------------- | ----------- |
-| entityPitch | [AntRef](AntRef) |             |
-| entityYaw   | [AntRef](AntRef) |             |
-| pitchResult | [AntRef](AntRef) |             |
-| yawResult   | [AntRef](AntRef) |             |
-| rollResult  | [AntRef](AntRef) |             |
+| entityPitch | [AntRef](/vext/ref/fb/antref/) |             |
+| entityYaw   | [AntRef](/vext/ref/fb/antref/) |             |
+| pitchResult | [AntRef](/vext/ref/fb/antref/) |             |
+| yawResult   | [AntRef](/vext/ref/fb/antref/) |             |
+| rollResult  | [AntRef](/vext/ref/fb/antref/) |             |
 
 ## Methods
 
 | Type                                 | Name            | Parameters |
 | ------------------------------------ | --------------- | ---------- |
-| [WeaponLagBinding](WeaponLagBinding) | [Clone](#clone) |            |
+| [WeaponLagBinding](/vext/ref/fb/weaponlagbinding/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [WeaponLagBinding](WeaponLagBinding) **Clone**()
+> [WeaponLagBinding](/vext/ref/fb/weaponlagbinding/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

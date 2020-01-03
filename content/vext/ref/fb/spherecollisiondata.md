@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                       | Name            | Parameters |
 | ------------------------------------------ | --------------- | ---------- |
-| [SphereCollisionData](SphereCollisionData) | [Clone](#clone) |            |
+| [SphereCollisionData](/vext/ref/fb/spherecollisiondata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SphereCollisionData](SphereCollisionData) **Clone**()
+> [SphereCollisionData](/vext/ref/fb/spherecollisiondata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -3,7 +3,7 @@ title: MemoryLevelDescriptionComponent
 ---
 ### Base Classes
 
-[LevelDescriptionComponent](LevelDescriptionComponent)
+[LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent/)
 
 ## Description
 
@@ -15,8 +15,8 @@ A container type representing a Frostbite instance entry.
 | --------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | MemoryLevelDescriptionComponent()                                                             | Create a new instance of this container type.                                                                                                            |
 | MemoryLevelDescriptionComponent(MemoryLevelDescriptionComponent other)                        | Create a reference copy of an instance of the same type.                                                                                                 |
-| MemoryLevelDescriptionComponent([LevelDescriptionComponent](LevelDescriptionComponent) other) | Upcast an instance of type [LevelDescriptionComponent](LevelDescriptionComponent) to [MemoryLevelDescriptionComponent](MemoryLevelDescriptionComponent). |
-| MemoryLevelDescriptionComponent([DataContainer](/vext/ref/shared/class/datacontainer) other)    | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MemoryLevelDescriptionComponent](MemoryLevelDescriptionComponent).    |
+| MemoryLevelDescriptionComponent([LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent/) other) | Upcast an instance of type [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent/) to [MemoryLevelDescriptionComponent](/vext/ref/fb/memoryleveldescriptioncomponent/). |
+| MemoryLevelDescriptionComponent([DataContainer](/vext/ref/shared/class/datacontainer) other)    | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MemoryLevelDescriptionComponent](/vext/ref/fb/memoryleveldescriptioncomponent/).    |
 
 ## Properties
 
@@ -33,11 +33,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                               | Name            | Parameters                                     |
 | ------------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [MemoryLevelDescriptionComponent](MemoryLevelDescriptionComponent) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [MemoryLevelDescriptionComponent](/vext/ref/fb/memoryleveldescriptioncomponent/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [MemoryLevelDescriptionComponent](MemoryLevelDescriptionComponent) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [MemoryLevelDescriptionComponent](/vext/ref/fb/memoryleveldescriptioncomponent/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -45,4 +45,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

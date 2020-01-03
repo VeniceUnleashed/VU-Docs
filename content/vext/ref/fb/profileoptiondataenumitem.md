@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                   | Name            | Parameters |
 | ------------------------------------------------------ | --------------- | ---------- |
-| [ProfileOptionDataEnumItem](ProfileOptionDataEnumItem) | [Clone](#clone) |            |
+| [ProfileOptionDataEnumItem](/vext/ref/fb/profileoptiondataenumitem/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [ProfileOptionDataEnumItem](ProfileOptionDataEnumItem) **Clone**()
+> [ProfileOptionDataEnumItem](/vext/ref/fb/profileoptiondataenumitem/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

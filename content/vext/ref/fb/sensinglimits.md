@@ -28,10 +28,10 @@ A structure type representing a Frostbite data type.
 
 | Type                           | Name            | Parameters |
 | ------------------------------ | --------------- | ---------- |
-| [SensingLimits](SensingLimits) | [Clone](#clone) |            |
+| [SensingLimits](/vext/ref/fb/sensinglimits/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SensingLimits](SensingLimits) **Clone**()
+> [SensingLimits](/vext/ref/fb/sensinglimits/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

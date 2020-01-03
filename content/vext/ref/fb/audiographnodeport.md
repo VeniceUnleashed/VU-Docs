@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                     | Name            | Parameters |
 | ---------------------------------------- | --------------- | ---------- |
-| [AudioGraphNodePort](AudioGraphNodePort) | [Clone](#clone) |            |
+| [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [AudioGraphNodePort](AudioGraphNodePort) **Clone**()
+> [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

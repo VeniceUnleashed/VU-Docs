@@ -27,10 +27,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                   | Name            | Parameters |
 | -------------------------------------- | --------------- | ---------- |
-| [MapRotationConfig](MapRotationConfig) | [Clone](#clone) |            |
+| [MapRotationConfig](/vext/ref/fb/maprotationconfig/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [MapRotationConfig](MapRotationConfig) **Clone**()
+> [MapRotationConfig](/vext/ref/fb/maprotationconfig/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

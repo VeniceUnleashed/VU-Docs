@@ -15,7 +15,7 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
 | ZoomLevelData()                                                          | Create a new instance of this container type.                                                                     |
 | ZoomLevelData(ZoomLevelData other)                                       | Create a reference copy of an instance of the same type.                                                          |
-| ZoomLevelData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ZoomLevelData](ZoomLevelData). |
+| ZoomLevelData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ZoomLevelData](/vext/ref/fb/zoomleveldata/). |
 
 ## Properties
 
@@ -36,7 +36,7 @@ A container type representing a Frostbite instance entry.
 | fadeToBlackDuration          | number                                                   |             |
 | recoilFovMultiplier          | number                                                   |             |
 | cameraImpulseMultiplier      | number                                                   |             |
-| onActivateEventType          | [ZoomLevelActivateEventType](ZoomLevelActivateEventType) |             |
+| onActivateEventType          | [ZoomLevelActivateEventType](/vext/ref/fb/zoomlevelactivateeventtype/) |             |
 | startFadeToBlackAtTime       | number                                                   |             |
 | fadeFromBlackDuration        | number                                                   |             |
 | startFadeFromBlackAtTime     | number                                                   |             |
@@ -49,11 +49,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                           | Name            | Parameters                                     |
 | ------------------------------ | --------------- | ---------------------------------------------- |
-| [ZoomLevelData](ZoomLevelData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [ZoomLevelData](/vext/ref/fb/zoomleveldata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [ZoomLevelData](ZoomLevelData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [ZoomLevelData](/vext/ref/fb/zoomleveldata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -61,4 +61,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

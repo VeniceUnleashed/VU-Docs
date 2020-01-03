@@ -16,16 +16,16 @@ A structure type representing a Frostbite data type.
 
 | Name    | Type                     | Description |
 | ------- | ------------------------ | ----------- |
-| buttons | [UIButton](UIButton)\[\] |             |
+| buttons | [UIButton](/vext/ref/fb/uibutton/)\[\] |             |
 
 ## Methods
 
 | Type                       | Name            | Parameters |
 | -------------------------- | --------------- | ---------- |
-| [UIButtonSet](UIButtonSet) | [Clone](#clone) |            |
+| [UIButtonSet](/vext/ref/fb/uibuttonset/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [UIButtonSet](UIButtonSet) **Clone**()
+> [UIButtonSet](/vext/ref/fb/uibuttonset/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

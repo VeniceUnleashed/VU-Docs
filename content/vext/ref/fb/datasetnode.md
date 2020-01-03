@@ -3,7 +3,7 @@ title: DataSetNode
 ---
 ### Base Classes
 
-[UINodeData](UINodeData)
+[UINodeData](/vext/ref/fb/uinodedata/)
 
 ## Description
 
@@ -15,17 +15,17 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
 | DataSetNode()                                                          | Create a new instance of this container type.                                                                 |
 | DataSetNode(DataSetNode other)                                         | Create a reference copy of an instance of the same type.                                                      |
-| DataSetNode([UINodeData](UINodeData) other)                            | Upcast an instance of type [UINodeData](UINodeData) to [DataSetNode](DataSetNode).                            |
-| DataSetNode([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DataSetNode](DataSetNode). |
+| DataSetNode([UINodeData](/vext/ref/fb/uinodedata/) other)                            | Upcast an instance of type [UINodeData](/vext/ref/fb/uinodedata/) to [DataSetNode](/vext/ref/fb/datasetnode/).                            |
+| DataSetNode([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DataSetNode](/vext/ref/fb/datasetnode/). |
 
 ## Properties
 
 | Name             | Type                                 | Description |
 | ---------------- | ------------------------------------ | ----------- |
-| inValue          | [UINodePort](UINodePort)             |             |
-| out              | [UINodePort](UINodePort)             |             |
+| inValue          | [UINodePort](/vext/ref/fb/uinodeport/)             |             |
+| out              | [UINodePort](/vext/ref/fb/uinodeport/)             |             |
 | param            | string                               |             |
-| dataSource       | [UIDataSourceInfo](UIDataSourceInfo) |             |
+| dataSource       | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/) |             |
 | setToEmptyString | bool                                 |             |
 | forceUpdate      | bool                                 |             |
 
@@ -33,11 +33,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                       | Name            | Parameters                                     |
 | -------------------------- | --------------- | ---------------------------------------------- |
-| [DataSetNode](DataSetNode) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [DataSetNode](/vext/ref/fb/datasetnode/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [DataSetNode](DataSetNode) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [DataSetNode](/vext/ref/fb/datasetnode/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -45,4 +45,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

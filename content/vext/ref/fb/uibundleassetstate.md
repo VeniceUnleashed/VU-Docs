@@ -17,17 +17,17 @@ A structure type representing a Frostbite data type.
 | Name               | Type               | Description |
 | ------------------ | ------------------ | ----------- |
 | stateName          | string             |             |
-| uiState            | [UIState](UIState) |             |
+| uiState            | [UIState](/vext/ref/fb/uistate/) |             |
 | resourceBundleName | string             |             |
 
 ## Methods
 
 | Type                                     | Name            | Parameters |
 | ---------------------------------------- | --------------- | ---------- |
-| [UIBundleAssetState](UIBundleAssetState) | [Clone](#clone) |            |
+| [UIBundleAssetState](/vext/ref/fb/uibundleassetstate/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [UIBundleAssetState](UIBundleAssetState) **Clone**()
+> [UIBundleAssetState](/vext/ref/fb/uibundleassetstate/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                         | Name            | Parameters |
 | ------------------------------------------------------------ | --------------- | ---------- |
-| [SpecialMoveInterpolatedPoint](SpecialMoveInterpolatedPoint) | [Clone](#clone) |            |
+| [SpecialMoveInterpolatedPoint](/vext/ref/fb/specialmoveinterpolatedpoint/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SpecialMoveInterpolatedPoint](SpecialMoveInterpolatedPoint) **Clone**()
+> [SpecialMoveInterpolatedPoint](/vext/ref/fb/specialmoveinterpolatedpoint/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

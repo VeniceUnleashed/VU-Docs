@@ -3,7 +3,7 @@ title: PointLightEntityData
 ---
 ### Base Classes
 
-[LocalLightEntityData](LocalLightEntityData)
+[LocalLightEntityData](/vext/ref/fb/locallightentitydata/)
 
 ## Description
 
@@ -15,12 +15,12 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | PointLightEntityData()                                                          | Create a new instance of this container type.                                                                                   |
 | PointLightEntityData(PointLightEntityData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| PointLightEntityData([LocalLightEntityData](LocalLightEntityData) other)        | Upcast an instance of type [LocalLightEntityData](LocalLightEntityData) to [PointLightEntityData](PointLightEntityData).        |
-| PointLightEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [PointLightEntityData](PointLightEntityData).              |
-| PointLightEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [PointLightEntityData](PointLightEntityData).                            |
-| PointLightEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [PointLightEntityData](PointLightEntityData).                    |
-| PointLightEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [PointLightEntityData](PointLightEntityData).              |
-| PointLightEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PointLightEntityData](PointLightEntityData). |
+| PointLightEntityData([LocalLightEntityData](/vext/ref/fb/locallightentitydata/) other)        | Upcast an instance of type [LocalLightEntityData](/vext/ref/fb/locallightentitydata/) to [PointLightEntityData](/vext/ref/fb/pointlightentitydata/).        |
+| PointLightEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [PointLightEntityData](/vext/ref/fb/pointlightentitydata/).              |
+| PointLightEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [PointLightEntityData](/vext/ref/fb/pointlightentitydata/).                            |
+| PointLightEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [PointLightEntityData](/vext/ref/fb/pointlightentitydata/).                    |
+| PointLightEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [PointLightEntityData](/vext/ref/fb/pointlightentitydata/).              |
+| PointLightEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PointLightEntityData](/vext/ref/fb/pointlightentitydata/). |
 
 ## Properties
 
@@ -36,11 +36,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                         | Name            | Parameters                                     |
 | -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [PointLightEntityData](PointLightEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [PointLightEntityData](/vext/ref/fb/pointlightentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [PointLightEntityData](PointLightEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [PointLightEntityData](/vext/ref/fb/pointlightentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -48,4 +48,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

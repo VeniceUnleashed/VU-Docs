@@ -3,7 +3,7 @@ title: CannedScenarioEntityData
 ---
 ### Base Classes
 
-[EntityData](EntityData)
+[EntityData](/vext/ref/fb/entitydata/)
 
 ## Description
 
@@ -15,16 +15,16 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | CannedScenarioEntityData()                                                          | Create a new instance of this container type.                                                                                           |
 | CannedScenarioEntityData(CannedScenarioEntityData other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| CannedScenarioEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [CannedScenarioEntityData](CannedScenarioEntityData).                            |
-| CannedScenarioEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [CannedScenarioEntityData](CannedScenarioEntityData).                    |
-| CannedScenarioEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [CannedScenarioEntityData](CannedScenarioEntityData).              |
-| CannedScenarioEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CannedScenarioEntityData](CannedScenarioEntityData). |
+| CannedScenarioEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [CannedScenarioEntityData](/vext/ref/fb/cannedscenarioentitydata/).                            |
+| CannedScenarioEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [CannedScenarioEntityData](/vext/ref/fb/cannedscenarioentitydata/).                    |
+| CannedScenarioEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [CannedScenarioEntityData](/vext/ref/fb/cannedscenarioentitydata/).              |
+| CannedScenarioEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CannedScenarioEntityData](/vext/ref/fb/cannedscenarioentitydata/). |
 
 ## Properties
 
 | Name                                 | Type                                             | Description |
 | ------------------------------------ | ------------------------------------------------ | ----------- |
-| cannedAnimBinding                    | [CannedAnimationBinding](CannedAnimationBinding) |             |
+| cannedAnimBinding                    | [CannedAnimationBinding](/vext/ref/fb/cannedanimationbinding/) |             |
 | animationEntitySpacePriority         | number                                           |             |
 | alwaysClearEntitySpaceWhenInScenario | bool                                             |             |
 
@@ -32,11 +32,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                 | Name            | Parameters                                     |
 | ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [CannedScenarioEntityData](CannedScenarioEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [CannedScenarioEntityData](/vext/ref/fb/cannedscenarioentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [CannedScenarioEntityData](CannedScenarioEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [CannedScenarioEntityData](/vext/ref/fb/cannedscenarioentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -44,4 +44,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

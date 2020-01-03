@@ -16,17 +16,17 @@ A structure type representing a Frostbite data type.
 
 | Name     | Type                               | Description |
 | -------- | ---------------------------------- | ----------- |
-| category | [UIComponentData](UIComponentData) |             |
+| category | [UIComponentData](/vext/ref/fb/uicomponentdata/) |             |
 | value    | number                             |             |
 
 ## Methods
 
 | Type                     | Name            | Parameters |
 | ------------------------ | --------------- | ---------- |
-| [DataSource](DataSource) | [Clone](#clone) |            |
+| [DataSource](/vext/ref/fb/datasource/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [DataSource](DataSource) **Clone**()
+> [DataSource](/vext/ref/fb/datasource/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

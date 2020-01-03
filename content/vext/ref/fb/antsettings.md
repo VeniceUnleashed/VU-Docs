@@ -15,7 +15,7 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
 | AntSettings()                                                          | Create a new instance of this container type.                                                                 |
 | AntSettings(AntSettings other)                                         | Create a reference copy of an instance of the same type.                                                      |
-| AntSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AntSettings](AntSettings). |
+| AntSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AntSettings](/vext/ref/fb/antsettings/). |
 
 ## Properties
 
@@ -56,11 +56,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                       | Name            | Parameters                                     |
 | -------------------------- | --------------- | ---------------------------------------------- |
-| [AntSettings](AntSettings) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [AntSettings](/vext/ref/fb/antsettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [AntSettings](AntSettings) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [AntSettings](/vext/ref/fb/antsettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -68,4 +68,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

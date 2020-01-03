@@ -3,7 +3,7 @@ title: CombatConstantData
 ---
 ### Base Classes
 
-[Asset](Asset)
+[Asset](/vext/ref/fb/asset/)
 
 ## Description
 
@@ -15,8 +15,8 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | CombatConstantData()                                                          | Create a new instance of this container type.                                                                               |
 | CombatConstantData(CombatConstantData other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| CombatConstantData([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [CombatConstantData](CombatConstantData).                                      |
-| CombatConstantData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CombatConstantData](CombatConstantData). |
+| CombatConstantData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [CombatConstantData](/vext/ref/fb/combatconstantdata/).                                      |
+| CombatConstantData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CombatConstantData](/vext/ref/fb/combatconstantdata/). |
 
 ## Properties
 
@@ -54,11 +54,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                     | Name            | Parameters                                     |
 | ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [CombatConstantData](CombatConstantData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [CombatConstantData](/vext/ref/fb/combatconstantdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [CombatConstantData](CombatConstantData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [CombatConstantData](/vext/ref/fb/combatconstantdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -66,4 +66,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

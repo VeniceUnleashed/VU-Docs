@@ -38,10 +38,10 @@ A structure type representing a Frostbite data type.
 
 | Type                       | Name            | Parameters |
 | -------------------------- | --------------- | ---------- |
-| [MinimapData](MinimapData) | [Clone](#clone) |            |
+| [MinimapData](/vext/ref/fb/minimapdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [MinimapData](MinimapData) **Clone**()
+> [MinimapData](/vext/ref/fb/minimapdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

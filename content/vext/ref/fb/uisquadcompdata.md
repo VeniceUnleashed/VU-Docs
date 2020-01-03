@@ -3,7 +3,7 @@ title: UISquadCompData
 ---
 ### Base Classes
 
-[UIComponentData](UIComponentData)
+[UIComponentData](/vext/ref/fb/uicomponentdata/)
 
 ## Description
 
@@ -15,9 +15,9 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | UISquadCompData()                                                          | Create a new instance of this container type.                                                                         |
 | UISquadCompData(UISquadCompData other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| UISquadCompData([UIComponentData](UIComponentData) other)                  | Upcast an instance of type [UIComponentData](UIComponentData) to [UISquadCompData](UISquadCompData).                  |
-| UISquadCompData([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [UISquadCompData](UISquadCompData).                                      |
-| UISquadCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UISquadCompData](UISquadCompData). |
+| UISquadCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UISquadCompData](/vext/ref/fb/uisquadcompdata/).                  |
+| UISquadCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UISquadCompData](/vext/ref/fb/uisquadcompdata/).                                      |
+| UISquadCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UISquadCompData](/vext/ref/fb/uisquadcompdata/). |
 
 ## Properties
 
@@ -61,11 +61,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                               | Name            | Parameters                                     |
 | ---------------------------------- | --------------- | ---------------------------------------------- |
-| [UISquadCompData](UISquadCompData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [UISquadCompData](/vext/ref/fb/uisquadcompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [UISquadCompData](UISquadCompData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [UISquadCompData](/vext/ref/fb/uisquadcompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -73,4 +73,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

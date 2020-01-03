@@ -3,7 +3,7 @@ title: ChassisComponentData
 ---
 ### Base Classes
 
-[PartComponentData](PartComponentData)
+[PartComponentData](/vext/ref/fb/partcomponentdata/)
 
 ## Description
 
@@ -15,22 +15,22 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | ChassisComponentData()                                                          | Create a new instance of this container type.                                                                                   |
 | ChassisComponentData(ChassisComponentData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| ChassisComponentData([PartComponentData](PartComponentData) other)              | Upcast an instance of type [PartComponentData](PartComponentData) to [ChassisComponentData](ChassisComponentData).              |
-| ChassisComponentData([ComponentData](ComponentData) other)                      | Upcast an instance of type [ComponentData](ComponentData) to [ChassisComponentData](ChassisComponentData).                      |
-| ChassisComponentData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [ChassisComponentData](ChassisComponentData).                    |
-| ChassisComponentData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [ChassisComponentData](ChassisComponentData).              |
-| ChassisComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ChassisComponentData](ChassisComponentData). |
+| ChassisComponentData([PartComponentData](/vext/ref/fb/partcomponentdata/) other)              | Upcast an instance of type [PartComponentData](/vext/ref/fb/partcomponentdata/) to [ChassisComponentData](/vext/ref/fb/chassiscomponentdata/).              |
+| ChassisComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [ChassisComponentData](/vext/ref/fb/chassiscomponentdata/).                      |
+| ChassisComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [ChassisComponentData](/vext/ref/fb/chassiscomponentdata/).                    |
+| ChassisComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [ChassisComponentData](/vext/ref/fb/chassiscomponentdata/).              |
+| ChassisComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ChassisComponentData](/vext/ref/fb/chassiscomponentdata/). |
 
 ## Properties
 
 | Name                       | Type                                                 | Description |
 | -------------------------- | ---------------------------------------------------- | ----------- |
-| vehicleConfig              | [VehicleConfigData](VehicleConfigData)               |             |
-| gearboxConfig              | [GearboxConfigData](GearboxConfigData)               |             |
-| waterStreakEffects         | [VehicleWaterEffectData](VehicleWaterEffectData)\[\] |             |
-| waterEffects               | [VehicleWaterEffectData](VehicleWaterEffectData)\[\] |             |
+| vehicleConfig              | [VehicleConfigData](/vext/ref/fb/vehicleconfigdata/)               |             |
+| gearboxConfig              | [GearboxConfigData](/vext/ref/fb/gearboxconfigdata/)               |             |
+| waterStreakEffects         | [VehicleWaterEffectData](/vext/ref/fb/vehiclewatereffectdata/)\[\] |             |
+| waterEffects               | [VehicleWaterEffectData](/vext/ref/fb/vehiclewatereffectdata/)\[\] |             |
 | triggerGroundEffectImpulse | number                                               |             |
-| landingGearLogic           | [LandingGearLogicData](LandingGearLogicData)         |             |
+| landingGearLogic           | [LandingGearLogicData](/vext/ref/fb/landinggearlogicdata/)         |             |
 | alwaysFullThrottle         | bool                                                 |             |
 | forceLandingGearsRetract   | bool                                                 |             |
 | allowNegativeThrottle      | bool                                                 |             |
@@ -39,11 +39,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                         | Name            | Parameters                                     |
 | -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [ChassisComponentData](ChassisComponentData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [ChassisComponentData](/vext/ref/fb/chassiscomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [ChassisComponentData](ChassisComponentData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [ChassisComponentData](/vext/ref/fb/chassiscomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -51,4 +51,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

@@ -16,8 +16,8 @@ A structure type representing a Frostbite data type.
 
 | Name              | Type                               | Description |
 | ----------------- | ---------------------------------- | ----------- |
-| rotationAxis      | [RotationAxis](RotationAxis)       |             |
-| channel           | [RotationChannel](RotationChannel) |             |
+| rotationAxis      | [RotationAxis](/vext/ref/fb/rotationaxis/)       |             |
+| channel           | [RotationChannel](/vext/ref/fb/rotationchannel/) |             |
 | maxRotation       | number                             |             |
 | minRotation       | number                             |             |
 | phaseOffset       | number                             |             |
@@ -28,10 +28,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                     | Name            | Parameters |
 | ---------------------------------------- | --------------- | ---------- |
-| [TurretRotationInfo](TurretRotationInfo) | [Clone](#clone) |            |
+| [TurretRotationInfo](/vext/ref/fb/turretrotationinfo/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [TurretRotationInfo](TurretRotationInfo) **Clone**()
+> [TurretRotationInfo](/vext/ref/fb/turretrotationinfo/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

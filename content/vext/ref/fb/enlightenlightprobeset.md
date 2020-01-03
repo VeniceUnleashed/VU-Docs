@@ -27,17 +27,17 @@ A structure type representing a Frostbite data type.
 | positions      | [Vec3](/vext/ref/shared/class/vec3)\[\]                   |             |
 | validIndices   | number\[\]                                              |             |
 | inputSystems   | number\[\]                                              |             |
-| cache          | [PrecomputeCache](PrecomputeCache)                      |             |
+| cache          | [PrecomputeCache](/vext/ref/fb/precomputecache/)                      |             |
 | staticProbeSet | bool                                                    |             |
 
 ## Methods
 
 | Type                                             | Name            | Parameters |
 | ------------------------------------------------ | --------------- | ---------- |
-| [EnlightenLightProbeSet](EnlightenLightProbeSet) | [Clone](#clone) |            |
+| [EnlightenLightProbeSet](/vext/ref/fb/enlightenlightprobeset/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [EnlightenLightProbeSet](EnlightenLightProbeSet) **Clone**()
+> [EnlightenLightProbeSet](/vext/ref/fb/enlightenlightprobeset/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

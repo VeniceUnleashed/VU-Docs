@@ -3,7 +3,7 @@ title: UIRenderCompData
 ---
 ### Base Classes
 
-[UIComponentData](UIComponentData)
+[UIComponentData](/vext/ref/fb/uicomponentdata/)
 
 ## Description
 
@@ -15,9 +15,9 @@ A container type representing a Frostbite instance entry.
 | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | UIRenderCompData()                                                          | Create a new instance of this container type.                                                                           |
 | UIRenderCompData(UIRenderCompData other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| UIRenderCompData([UIComponentData](UIComponentData) other)                  | Upcast an instance of type [UIComponentData](UIComponentData) to [UIRenderCompData](UIRenderCompData).                  |
-| UIRenderCompData([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [UIRenderCompData](UIRenderCompData).                                      |
-| UIRenderCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIRenderCompData](UIRenderCompData). |
+| UIRenderCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UIRenderCompData](/vext/ref/fb/uirendercompdata/).                  |
+| UIRenderCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UIRenderCompData](/vext/ref/fb/uirendercompdata/).                                      |
+| UIRenderCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIRenderCompData](/vext/ref/fb/uirendercompdata/). |
 
 ## Properties
 
@@ -25,8 +25,8 @@ A container type representing a Frostbite instance entry.
 | ------------------- | --------------------------------- | ----------- |
 | backgroundRect1     | [Vec4](/vext/ref/shared/class/vec4) |             |
 | backgroundRect0     | [Vec4](/vext/ref/shared/class/vec4) |             |
-| bgTexture2          | [TextureAsset](TextureAsset)      |             |
-| bgTexture1          | [TextureAsset](TextureAsset)      |             |
+| bgTexture2          | [TextureAsset](/vext/ref/fb/textureasset/)      |             |
+| bgTexture1          | [TextureAsset](/vext/ref/fb/textureasset/)      |             |
 | alphaMin            | number                            |             |
 | alphaAnimationSpeed | number                            |             |
 | alphaOffset         | number                            |             |
@@ -36,11 +36,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                 | Name            | Parameters                                     |
 | ------------------------------------ | --------------- | ---------------------------------------------- |
-| [UIRenderCompData](UIRenderCompData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [UIRenderCompData](/vext/ref/fb/uirendercompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [UIRenderCompData](UIRenderCompData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [UIRenderCompData](/vext/ref/fb/uirendercompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -48,4 +48,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

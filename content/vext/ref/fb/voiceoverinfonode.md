@@ -3,7 +3,7 @@ title: VoiceOverInfoNode
 ---
 ### Base Classes
 
-[VoiceOverExpressionNode](VoiceOverExpressionNode)
+[VoiceOverExpressionNode](/vext/ref/fb/voiceoverexpressionnode/)
 
 ## Description
 
@@ -15,28 +15,28 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | VoiceOverInfoNode()                                                          | Create a new instance of this container type.                                                                             |
 | VoiceOverInfoNode(VoiceOverInfoNode other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| VoiceOverInfoNode([VoiceOverExpressionNode](VoiceOverExpressionNode) other)  | Upcast an instance of type [VoiceOverExpressionNode](VoiceOverExpressionNode) to [VoiceOverInfoNode](VoiceOverInfoNode).  |
-| VoiceOverInfoNode([VoiceOverNode](VoiceOverNode) other)                      | Upcast an instance of type [VoiceOverNode](VoiceOverNode) to [VoiceOverInfoNode](VoiceOverInfoNode).                      |
-| VoiceOverInfoNode([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverInfoNode](VoiceOverInfoNode). |
+| VoiceOverInfoNode([VoiceOverExpressionNode](/vext/ref/fb/voiceoverexpressionnode/) other)  | Upcast an instance of type [VoiceOverExpressionNode](/vext/ref/fb/voiceoverexpressionnode/) to [VoiceOverInfoNode](/vext/ref/fb/voiceoverinfonode/).  |
+| VoiceOverInfoNode([VoiceOverNode](/vext/ref/fb/voiceovernode/) other)                      | Upcast an instance of type [VoiceOverNode](/vext/ref/fb/voiceovernode/) to [VoiceOverInfoNode](/vext/ref/fb/voiceoverinfonode/).                      |
+| VoiceOverInfoNode([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverInfoNode](/vext/ref/fb/voiceoverinfonode/). |
 
 ## Properties
 
 | Name         | Type                                                 | Description |
 | ------------ | ---------------------------------------------------- | ----------- |
-| object       | [VoiceOverValueConnection](VoiceOverValueConnection) |             |
-| value        | [VoiceOverValue](VoiceOverValue)                     |             |
-| field        | [VoiceOverNamedValue](VoiceOverNamedValue)           |             |
-| expectedType | [VoiceOverObject](VoiceOverObject)                   |             |
+| object       | [VoiceOverValueConnection](/vext/ref/fb/voiceovervalueconnection/) |             |
+| value        | [VoiceOverValue](/vext/ref/fb/voiceovervalue/)                     |             |
+| field        | [VoiceOverNamedValue](/vext/ref/fb/voiceovernamedvalue/)           |             |
+| expectedType | [VoiceOverObject](/vext/ref/fb/voiceoverobject/)                   |             |
 
 ## Methods
 
 | Type                                   | Name            | Parameters                                     |
 | -------------------------------------- | --------------- | ---------------------------------------------- |
-| [VoiceOverInfoNode](VoiceOverInfoNode) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [VoiceOverInfoNode](/vext/ref/fb/voiceoverinfonode/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [VoiceOverInfoNode](VoiceOverInfoNode) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [VoiceOverInfoNode](/vext/ref/fb/voiceoverinfonode/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -44,4 +44,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

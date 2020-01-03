@@ -3,7 +3,7 @@ title: PropertyDebugEntityData
 ---
 ### Base Classes
 
-[EntityData](EntityData)
+[EntityData](/vext/ref/fb/entitydata/)
 
 ## Description
 
@@ -15,10 +15,10 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | PropertyDebugEntityData()                                                          | Create a new instance of this container type.                                                                                         |
 | PropertyDebugEntityData(PropertyDebugEntityData other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| PropertyDebugEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [PropertyDebugEntityData](PropertyDebugEntityData).                            |
-| PropertyDebugEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [PropertyDebugEntityData](PropertyDebugEntityData).                    |
-| PropertyDebugEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [PropertyDebugEntityData](PropertyDebugEntityData).              |
-| PropertyDebugEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PropertyDebugEntityData](PropertyDebugEntityData). |
+| PropertyDebugEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [PropertyDebugEntityData](/vext/ref/fb/propertydebugentitydata/).                            |
+| PropertyDebugEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [PropertyDebugEntityData](/vext/ref/fb/propertydebugentitydata/).                    |
+| PropertyDebugEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [PropertyDebugEntityData](/vext/ref/fb/propertydebugentitydata/).              |
+| PropertyDebugEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PropertyDebugEntityData](/vext/ref/fb/propertydebugentitydata/). |
 
 ## Properties
 
@@ -30,7 +30,7 @@ A container type representing a Frostbite instance entry.
 | transformValue | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
 | vec2Value      | [Vec2](/vext/ref/shared/class/vec2)                       |             |
 | valuePrefix    | string                                                  |             |
-| realm          | [Realm](Realm)                                          |             |
+| realm          | [Realm](/vext/ref/fb/realm/)                                          |             |
 | floatValue     | number                                                  |             |
 | intValue       | number                                                  |             |
 | textScale      | number                                                  |             |
@@ -43,11 +43,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                               | Name            | Parameters                                     |
 | -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [PropertyDebugEntityData](PropertyDebugEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [PropertyDebugEntityData](/vext/ref/fb/propertydebugentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [PropertyDebugEntityData](PropertyDebugEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [PropertyDebugEntityData](/vext/ref/fb/propertydebugentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -55,4 +55,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

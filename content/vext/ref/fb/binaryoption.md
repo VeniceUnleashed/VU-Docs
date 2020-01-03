@@ -22,10 +22,10 @@ A structure type representing a Frostbite data type.
 
 | Type                         | Name            | Parameters |
 | ---------------------------- | --------------- | ---------- |
-| [BinaryOption](BinaryOption) | [Clone](#clone) |            |
+| [BinaryOption](/vext/ref/fb/binaryoption/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [BinaryOption](BinaryOption) **Clone**()
+> [BinaryOption](/vext/ref/fb/binaryoption/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

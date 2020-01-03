@@ -3,7 +3,7 @@ title: SoundStateSettingsAsset
 ---
 ### Base Classes
 
-[Asset](Asset)
+[Asset](/vext/ref/fb/asset/)
 
 ## Description
 
@@ -15,14 +15,14 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | SoundStateSettingsAsset()                                                          | Create a new instance of this container type.                                                                                         |
 | SoundStateSettingsAsset(SoundStateSettingsAsset other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| SoundStateSettingsAsset([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [SoundStateSettingsAsset](SoundStateSettingsAsset).                                      |
-| SoundStateSettingsAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoundStateSettingsAsset](SoundStateSettingsAsset). |
+| SoundStateSettingsAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [SoundStateSettingsAsset](/vext/ref/fb/soundstatesettingsasset/).                                      |
+| SoundStateSettingsAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoundStateSettingsAsset](/vext/ref/fb/soundstatesettingsasset/). |
 
 ## Properties
 
 | Name                            | Type                         | Description |
 | ------------------------------- | ---------------------------- | ----------- |
-| soundStates                     | [SoundState](SoundState)\[\] |             |
+| soundStates                     | [SoundState](/vext/ref/fb/soundstate/)\[\] |             |
 | impairedHearingImpulseThreshold | number                       |             |
 | screamThreshold                 | number                       |             |
 | supressionThreshold             | number                       |             |
@@ -31,11 +31,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                               | Name            | Parameters                                     |
 | -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [SoundStateSettingsAsset](SoundStateSettingsAsset) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [SoundStateSettingsAsset](/vext/ref/fb/soundstatesettingsasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [SoundStateSettingsAsset](SoundStateSettingsAsset) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [SoundStateSettingsAsset](/vext/ref/fb/soundstatesettingsasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -43,4 +43,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

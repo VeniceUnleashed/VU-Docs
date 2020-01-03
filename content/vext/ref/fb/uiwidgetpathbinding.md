@@ -3,7 +3,7 @@ title: UIWidgetPathBinding
 ---
 ### Base Classes
 
-[UIDataBinding](UIDataBinding)
+[UIDataBinding](/vext/ref/fb/uidatabinding/)
 
 ## Description
 
@@ -15,25 +15,25 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
 | UIWidgetPathBinding()                                                          | Create a new instance of this container type.                                                                                 |
 | UIWidgetPathBinding(UIWidgetPathBinding other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| UIWidgetPathBinding([UIDataBinding](UIDataBinding) other)                      | Upcast an instance of type [UIDataBinding](UIDataBinding) to [UIWidgetPathBinding](UIWidgetPathBinding).                      |
-| UIWidgetPathBinding([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIWidgetPathBinding](UIWidgetPathBinding). |
+| UIWidgetPathBinding([UIDataBinding](/vext/ref/fb/uidatabinding/) other)                      | Upcast an instance of type [UIDataBinding](/vext/ref/fb/uidatabinding/) to [UIWidgetPathBinding](/vext/ref/fb/uiwidgetpathbinding/).                      |
+| UIWidgetPathBinding([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIWidgetPathBinding](/vext/ref/fb/uiwidgetpathbinding/). |
 
 ## Properties
 
 | Name            | Type                                 | Description |
 | --------------- | ------------------------------------ | ----------- |
-| widgetPathQuery | [UIDataSourceInfo](UIDataSourceInfo) |             |
-| visibility      | [UIDataSourceInfo](UIDataSourceInfo) |             |
+| widgetPathQuery | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/) |             |
+| visibility      | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/) |             |
 
 ## Methods
 
 | Type                                       | Name            | Parameters                                     |
 | ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [UIWidgetPathBinding](UIWidgetPathBinding) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [UIWidgetPathBinding](/vext/ref/fb/uiwidgetpathbinding/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [UIWidgetPathBinding](UIWidgetPathBinding) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [UIWidgetPathBinding](/vext/ref/fb/uiwidgetpathbinding/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -41,4 +41,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

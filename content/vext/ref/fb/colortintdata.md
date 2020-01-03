@@ -25,10 +25,10 @@ A structure type representing a Frostbite data type.
 
 | Type                           | Name            | Parameters |
 | ------------------------------ | --------------- | ---------- |
-| [ColorTintData](ColorTintData) | [Clone](#clone) |            |
+| [ColorTintData](/vext/ref/fb/colortintdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [ColorTintData](ColorTintData) **Clone**()
+> [ColorTintData](/vext/ref/fb/colortintdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

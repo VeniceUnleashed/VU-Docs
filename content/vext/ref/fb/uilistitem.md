@@ -17,10 +17,10 @@ A structure type representing a Frostbite data type.
 | Name             | Type                                 | Description |
 | ---------------- | ------------------------------------ | ----------- |
 | label            | string                               |             |
-| isEnabled        | [UIDataSourceInfo](UIDataSourceInfo) |             |
-| isVisible        | [UIDataSourceInfo](UIDataSourceInfo) |             |
-| toggleItems      | [UIDataSourceInfo](UIDataSourceInfo) |             |
-| dataUpdate       | [UIDataSourceInfo](UIDataSourceInfo) |             |
+| isEnabled        | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/) |             |
+| isVisible        | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/) |             |
+| toggleItems      | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/) |             |
+| dataUpdate       | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/) |             |
 | defaultIsVisible | bool                                 |             |
 | defaultIsEnabled | bool                                 |             |
 
@@ -28,10 +28,10 @@ A structure type representing a Frostbite data type.
 
 | Type                     | Name            | Parameters |
 | ------------------------ | --------------- | ---------- |
-| [UIListItem](UIListItem) | [Clone](#clone) |            |
+| [UIListItem](/vext/ref/fb/uilistitem/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [UIListItem](UIListItem) **Clone**()
+> [UIListItem](/vext/ref/fb/uilistitem/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

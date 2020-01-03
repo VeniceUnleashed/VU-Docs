@@ -15,26 +15,26 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | SoundTestSuite()                                                          | Create a new instance of this container type.                                                                       |
 | SoundTestSuite(SoundTestSuite other)                                      | Create a reference copy of an instance of the same type.                                                            |
-| SoundTestSuite([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoundTestSuite](SoundTestSuite). |
+| SoundTestSuite([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoundTestSuite](/vext/ref/fb/soundtestsuite/). |
 
 ## Properties
 
 | Name         | Type                               | Description |
 | ------------ | ---------------------------------- | ----------- |
 | name         | string                             |             |
-| assets       | [SoundAsset](SoundAsset)\[\]       |             |
-| tests        | [SoundTestSpec](SoundTestSpec)\[\] |             |
+| assets       | [SoundAsset](/vext/ref/fb/soundasset/)\[\]       |             |
+| tests        | [SoundTestSpec](/vext/ref/fb/soundtestspec/)\[\] |             |
 | profileTests | bool                               |             |
 
 ## Methods
 
 | Type                             | Name            | Parameters                                     |
 | -------------------------------- | --------------- | ---------------------------------------------- |
-| [SoundTestSuite](SoundTestSuite) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [SoundTestSuite](/vext/ref/fb/soundtestsuite/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [SoundTestSuite](SoundTestSuite) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [SoundTestSuite](/vext/ref/fb/soundtestsuite/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -42,4 +42,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

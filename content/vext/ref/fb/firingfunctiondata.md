@@ -3,7 +3,7 @@ title: FiringFunctionData
 ---
 ### Base Classes
 
-[GameDataContainer](GameDataContainer)
+[GameDataContainer](/vext/ref/fb/gamedatacontainer/)
 
 ## Description
 
@@ -15,22 +15,22 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | FiringFunctionData()                                                          | Create a new instance of this container type.                                                                               |
 | FiringFunctionData(FiringFunctionData other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| FiringFunctionData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [FiringFunctionData](FiringFunctionData).              |
-| FiringFunctionData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [FiringFunctionData](FiringFunctionData). |
+| FiringFunctionData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [FiringFunctionData](/vext/ref/fb/firingfunctiondata/).              |
+| FiringFunctionData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [FiringFunctionData](/vext/ref/fb/firingfunctiondata/). |
 
 ## Properties
 
 | Name                     | Type                                               | Description |
 | ------------------------ | -------------------------------------------------- | ----------- |
-| dispersion               | [FiringDispersionData](FiringDispersionData)\[\]   |             |
-| weaponDispersion         | [SoldierWeaponDispersion](SoldierWeaponDispersion) |             |
-| fireEffects1p            | [FireEffectData](FireEffectData)\[\]               |             |
-| fireEffects3p            | [FireEffectData](FireEffectData)\[\]               |             |
-| sound                    | [SoundAsset](SoundAsset)                           |             |
-| shot                     | [ShotConfigData](ShotConfigData)                   |             |
-| fireLogic                | [FireLogicData](FireLogicData)                     |             |
-| ammo                     | [AmmoConfigData](AmmoConfigData)                   |             |
-| overHeat                 | [OverHeatData](OverHeatData)                       |             |
+| dispersion               | [FiringDispersionData](/vext/ref/fb/firingdispersiondata/)\[\]   |             |
+| weaponDispersion         | [SoldierWeaponDispersion](/vext/ref/fb/soldierweapondispersion/) |             |
+| fireEffects1p            | [FireEffectData](/vext/ref/fb/fireeffectdata/)\[\]               |             |
+| fireEffects3p            | [FireEffectData](/vext/ref/fb/fireeffectdata/)\[\]               |             |
+| sound                    | [SoundAsset](/vext/ref/fb/soundasset/)                           |             |
+| shot                     | [ShotConfigData](/vext/ref/fb/shotconfigdata/)                   |             |
+| fireLogic                | [FireLogicData](/vext/ref/fb/firelogicdata/)                     |             |
+| ammo                     | [AmmoConfigData](/vext/ref/fb/ammoconfigdata/)                   |             |
+| overHeat                 | [OverHeatData](/vext/ref/fb/overheatdata/)                       |             |
 | selfHealTimeWhenDeployed | number                                             |             |
 | ammoCrateReloadDelay     | number                                             |             |
 | unlimitedAmmoForAI       | bool                                               |             |
@@ -40,11 +40,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                     | Name            | Parameters                                     |
 | ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [FiringFunctionData](FiringFunctionData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [FiringFunctionData](/vext/ref/fb/firingfunctiondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [FiringFunctionData](FiringFunctionData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [FiringFunctionData](/vext/ref/fb/firingfunctiondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -52,4 +52,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

@@ -28,10 +28,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                 | Name            | Parameters |
 | ------------------------------------ | --------------- | ---------- |
-| [SmokeJammingData](SmokeJammingData) | [Clone](#clone) |            |
+| [SmokeJammingData](/vext/ref/fb/smokejammingdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SmokeJammingData](SmokeJammingData) **Clone**()
+> [SmokeJammingData](/vext/ref/fb/smokejammingdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

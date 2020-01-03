@@ -3,7 +3,7 @@ title: AutoTeamEntityData
 ---
 ### Base Classes
 
-[GameEntityData](GameEntityData)
+[GameEntityData](/vext/ref/fb/gameentitydata/)
 
 ## Description
 
@@ -15,19 +15,19 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | AutoTeamEntityData()                                                          | Create a new instance of this container type.                                                                               |
 | AutoTeamEntityData(AutoTeamEntityData other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| AutoTeamEntityData([GameEntityData](GameEntityData) other)                    | Upcast an instance of type [GameEntityData](GameEntityData) to [AutoTeamEntityData](AutoTeamEntityData).                    |
-| AutoTeamEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [AutoTeamEntityData](AutoTeamEntityData).              |
-| AutoTeamEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [AutoTeamEntityData](AutoTeamEntityData).                            |
-| AutoTeamEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [AutoTeamEntityData](AutoTeamEntityData).                    |
-| AutoTeamEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [AutoTeamEntityData](AutoTeamEntityData).              |
-| AutoTeamEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AutoTeamEntityData](AutoTeamEntityData). |
+| AutoTeamEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [AutoTeamEntityData](/vext/ref/fb/autoteamentitydata/).                    |
+| AutoTeamEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [AutoTeamEntityData](/vext/ref/fb/autoteamentitydata/).              |
+| AutoTeamEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [AutoTeamEntityData](/vext/ref/fb/autoteamentitydata/).                            |
+| AutoTeamEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [AutoTeamEntityData](/vext/ref/fb/autoteamentitydata/).                    |
+| AutoTeamEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [AutoTeamEntityData](/vext/ref/fb/autoteamentitydata/).              |
+| AutoTeamEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AutoTeamEntityData](/vext/ref/fb/autoteamentitydata/). |
 
 ## Properties
 
 | Name                           | Type                             | Description |
 | ------------------------------ | -------------------------------- | ----------- |
 | teamDifferenceToAutoBalance    | number                           |             |
-| teamAssignMode                 | [TeamAssignMode](TeamAssignMode) |             |
+| teamAssignMode                 | [TeamAssignMode](/vext/ref/fb/teamassignmode/) |             |
 | playerCountNeededToAutoBalance | number                           |             |
 | forceIntoSquad                 | bool                             |             |
 | rotateTeamOnNewRound           | bool                             |             |
@@ -37,11 +37,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                     | Name            | Parameters                                     |
 | ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [AutoTeamEntityData](AutoTeamEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [AutoTeamEntityData](/vext/ref/fb/autoteamentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [AutoTeamEntityData](AutoTeamEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [AutoTeamEntityData](/vext/ref/fb/autoteamentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -49,4 +49,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

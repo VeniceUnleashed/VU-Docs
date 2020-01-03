@@ -3,7 +3,7 @@ title: UIHUDMessageBinding
 ---
 ### Base Classes
 
-[UIDataBinding](UIDataBinding)
+[UIDataBinding](/vext/ref/fb/uidatabinding/)
 
 ## Description
 
@@ -15,26 +15,26 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
 | UIHUDMessageBinding()                                                          | Create a new instance of this container type.                                                                                 |
 | UIHUDMessageBinding(UIHUDMessageBinding other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| UIHUDMessageBinding([UIDataBinding](UIDataBinding) other)                      | Upcast an instance of type [UIDataBinding](UIDataBinding) to [UIHUDMessageBinding](UIHUDMessageBinding).                      |
-| UIHUDMessageBinding([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIHUDMessageBinding](UIHUDMessageBinding). |
+| UIHUDMessageBinding([UIDataBinding](/vext/ref/fb/uidatabinding/) other)                      | Upcast an instance of type [UIDataBinding](/vext/ref/fb/uidatabinding/) to [UIHUDMessageBinding](/vext/ref/fb/uihudmessagebinding/).                      |
+| UIHUDMessageBinding([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIHUDMessageBinding](/vext/ref/fb/uihudmessagebinding/). |
 
 ## Properties
 
 | Name            | Type                                 | Description |
 | --------------- | ------------------------------------ | ----------- |
-| messageQuery    | [UIDataSourceInfo](UIDataSourceInfo) |             |
-| visibilityQuery | [UIDataSourceInfo](UIDataSourceInfo) |             |
+| messageQuery    | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/) |             |
+| visibilityQuery | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/) |             |
 | numberOfRows    | number                               |             |
 
 ## Methods
 
 | Type                                       | Name            | Parameters                                     |
 | ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [UIHUDMessageBinding](UIHUDMessageBinding) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [UIHUDMessageBinding](/vext/ref/fb/uihudmessagebinding/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [UIHUDMessageBinding](UIHUDMessageBinding) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [UIHUDMessageBinding](/vext/ref/fb/uihudmessagebinding/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -42,4 +42,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

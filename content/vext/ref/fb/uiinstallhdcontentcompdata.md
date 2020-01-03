@@ -3,7 +3,7 @@ title: UIInstallHDContentCompData
 ---
 ### Base Classes
 
-[UIComponentData](UIComponentData)
+[UIComponentData](/vext/ref/fb/uicomponentdata/)
 
 ## Description
 
@@ -15,19 +15,19 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | UIInstallHDContentCompData()                                                          | Create a new instance of this container type.                                                                                               |
 | UIInstallHDContentCompData(UIInstallHDContentCompData other)                          | Create a reference copy of an instance of the same type.                                                                                    |
-| UIInstallHDContentCompData([UIComponentData](UIComponentData) other)                  | Upcast an instance of type [UIComponentData](UIComponentData) to [UIInstallHDContentCompData](UIInstallHDContentCompData).                  |
-| UIInstallHDContentCompData([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [UIInstallHDContentCompData](UIInstallHDContentCompData).                                      |
-| UIInstallHDContentCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIInstallHDContentCompData](UIInstallHDContentCompData). |
+| UIInstallHDContentCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UIInstallHDContentCompData](/vext/ref/fb/uiinstallhdcontentcompdata/).                  |
+| UIInstallHDContentCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UIInstallHDContentCompData](/vext/ref/fb/uiinstallhdcontentcompdata/).                                      |
+| UIInstallHDContentCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIInstallHDContentCompData](/vext/ref/fb/uiinstallhdcontentcompdata/). |
 
 ## Methods
 
 | Type                                                     | Name            | Parameters                                     |
 | -------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [UIInstallHDContentCompData](UIInstallHDContentCompData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [UIInstallHDContentCompData](/vext/ref/fb/uiinstallhdcontentcompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [UIInstallHDContentCompData](UIInstallHDContentCompData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [UIInstallHDContentCompData](/vext/ref/fb/uiinstallhdcontentcompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -35,4 +35,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

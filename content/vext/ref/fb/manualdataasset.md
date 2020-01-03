@@ -3,7 +3,7 @@ title: ManualDataAsset
 ---
 ### Base Classes
 
-[Asset](Asset)
+[Asset](/vext/ref/fb/asset/)
 
 ## Description
 
@@ -15,24 +15,24 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | ManualDataAsset()                                                          | Create a new instance of this container type.                                                                         |
 | ManualDataAsset(ManualDataAsset other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| ManualDataAsset([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [ManualDataAsset](ManualDataAsset).                                      |
-| ManualDataAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ManualDataAsset](ManualDataAsset). |
+| ManualDataAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [ManualDataAsset](/vext/ref/fb/manualdataasset/).                                      |
+| ManualDataAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ManualDataAsset](/vext/ref/fb/manualdataasset/). |
 
 ## Properties
 
 | Name    | Type                                   | Description |
 | ------- | -------------------------------------- | ----------- |
-| entries | [ManualDataEntry](ManualDataEntry)\[\] |             |
+| entries | [ManualDataEntry](/vext/ref/fb/manualdataentry/)\[\] |             |
 
 ## Methods
 
 | Type                               | Name            | Parameters                                     |
 | ---------------------------------- | --------------- | ---------------------------------------------- |
-| [ManualDataAsset](ManualDataAsset) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [ManualDataAsset](/vext/ref/fb/manualdataasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [ManualDataAsset](ManualDataAsset) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [ManualDataAsset](/vext/ref/fb/manualdataasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -40,4 +40,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

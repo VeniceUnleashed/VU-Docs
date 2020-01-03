@@ -15,24 +15,24 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
 | SoundScopeSetupData()                                                          | Create a new instance of this container type.                                                                                 |
 | SoundScopeSetupData(SoundScopeSetupData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| SoundScopeSetupData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoundScopeSetupData](SoundScopeSetupData). |
+| SoundScopeSetupData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoundScopeSetupData](/vext/ref/fb/soundscopesetupdata/). |
 
 ## Properties
 
 | Name     | Type                                                       | Description |
 | -------- | ---------------------------------------------------------- | ----------- |
 | name     | string                                                     |             |
-| mappings | [SoundScopeStrategyMapping](SoundScopeStrategyMapping)\[\] |             |
+| mappings | [SoundScopeStrategyMapping](/vext/ref/fb/soundscopestrategymapping/)\[\] |             |
 
 ## Methods
 
 | Type                                       | Name            | Parameters                                     |
 | ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [SoundScopeSetupData](SoundScopeSetupData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [SoundScopeSetupData](/vext/ref/fb/soundscopesetupdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [SoundScopeSetupData](SoundScopeSetupData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [SoundScopeSetupData](/vext/ref/fb/soundscopesetupdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -40,4 +40,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

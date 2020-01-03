@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                               | Name            | Parameters |
 | ---------------------------------- | --------------- | ---------- |
-| [AudioCurvePoint](AudioCurvePoint) | [Clone](#clone) |            |
+| [AudioCurvePoint](/vext/ref/fb/audiocurvepoint/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [AudioCurvePoint](AudioCurvePoint) **Clone**()
+> [AudioCurvePoint](/vext/ref/fb/audiocurvepoint/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

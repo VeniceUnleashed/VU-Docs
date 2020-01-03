@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                     | Name            | Parameters |
 | ---------------------------------------- | --------------- | ---------- |
-| [UITextureAtlasInfo](UITextureAtlasInfo) | [Clone](#clone) |            |
+| [UITextureAtlasInfo](/vext/ref/fb/uitextureatlasinfo/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [UITextureAtlasInfo](UITextureAtlasInfo) **Clone**()
+> [UITextureAtlasInfo](/vext/ref/fb/uitextureatlasinfo/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

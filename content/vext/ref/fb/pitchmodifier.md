@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                           | Name            | Parameters |
 | ------------------------------ | --------------- | ---------- |
-| [PitchModifier](PitchModifier) | [Clone](#clone) |            |
+| [PitchModifier](/vext/ref/fb/pitchmodifier/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [PitchModifier](PitchModifier) **Clone**()
+> [PitchModifier](/vext/ref/fb/pitchmodifier/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

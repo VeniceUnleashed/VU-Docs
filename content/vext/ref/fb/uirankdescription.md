@@ -3,7 +3,7 @@ title: UIRankDescription
 ---
 ### Base Classes
 
-[UIItemDescription](UIItemDescription)
+[UIItemDescription](/vext/ref/fb/uiitemdescription/)
 
 ## Description
 
@@ -15,8 +15,8 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | UIRankDescription()                                                          | Create a new instance of this container type.                                                                             |
 | UIRankDescription(UIRankDescription other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| UIRankDescription([UIItemDescription](UIItemDescription) other)              | Upcast an instance of type [UIItemDescription](UIItemDescription) to [UIRankDescription](UIRankDescription).              |
-| UIRankDescription([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIRankDescription](UIRankDescription). |
+| UIRankDescription([UIItemDescription](/vext/ref/fb/uiitemdescription/) other)              | Upcast an instance of type [UIItemDescription](/vext/ref/fb/uiitemdescription/) to [UIRankDescription](/vext/ref/fb/uirankdescription/).              |
+| UIRankDescription([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIRankDescription](/vext/ref/fb/uirankdescription/). |
 
 ## Properties
 
@@ -28,11 +28,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                   | Name            | Parameters                                     |
 | -------------------------------------- | --------------- | ---------------------------------------------- |
-| [UIRankDescription](UIRankDescription) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [UIRankDescription](/vext/ref/fb/uirankdescription/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [UIRankDescription](UIRankDescription) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [UIRankDescription](/vext/ref/fb/uirankdescription/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -40,4 +40,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

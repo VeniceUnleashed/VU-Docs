@@ -3,7 +3,7 @@ title: SoundSettings
 ---
 ### Base Classes
 
-[SystemSettings](SystemSettings)
+[SystemSettings](/vext/ref/fb/systemsettings/)
 
 ## Description
 
@@ -15,8 +15,8 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
 | SoundSettings()                                                          | Create a new instance of this container type.                                                                     |
 | SoundSettings(SoundSettings other)                                       | Create a reference copy of an instance of the same type.                                                          |
-| SoundSettings([SystemSettings](SystemSettings) other)                    | Upcast an instance of type [SystemSettings](SystemSettings) to [SoundSettings](SoundSettings).                    |
-| SoundSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoundSettings](SoundSettings). |
+| SoundSettings([SystemSettings](/vext/ref/fb/systemsettings/) other)                    | Upcast an instance of type [SystemSettings](/vext/ref/fb/systemsettings/) to [SoundSettings](/vext/ref/fb/soundsettings/).                    |
+| SoundSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoundSettings](/vext/ref/fb/soundsettings/). |
 
 ## Properties
 
@@ -35,11 +35,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                           | Name            | Parameters                                     |
 | ------------------------------ | --------------- | ---------------------------------------------- |
-| [SoundSettings](SoundSettings) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [SoundSettings](/vext/ref/fb/soundsettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [SoundSettings](SoundSettings) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [SoundSettings](/vext/ref/fb/soundsettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -47,4 +47,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

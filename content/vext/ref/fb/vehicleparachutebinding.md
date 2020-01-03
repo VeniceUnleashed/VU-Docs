@@ -16,17 +16,17 @@ A structure type representing a Frostbite data type.
 
 | Name        | Type             | Description |
 | ----------- | ---------------- | ----------- |
-| enabled     | [AntRef](AntRef) |             |
-| vehicleType | [AntRef](AntRef) |             |
+| enabled     | [AntRef](/vext/ref/fb/antref/) |             |
+| vehicleType | [AntRef](/vext/ref/fb/antref/) |             |
 
 ## Methods
 
 | Type                                               | Name            | Parameters |
 | -------------------------------------------------- | --------------- | ---------- |
-| [VehicleParachuteBinding](VehicleParachuteBinding) | [Clone](#clone) |            |
+| [VehicleParachuteBinding](/vext/ref/fb/vehicleparachutebinding/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [VehicleParachuteBinding](VehicleParachuteBinding) **Clone**()
+> [VehicleParachuteBinding](/vext/ref/fb/vehicleparachutebinding/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                   | Name            | Parameters |
 | ------------------------------------------------------ | --------------- | ---------- |
-| [WeaponLagEffectSpringData](WeaponLagEffectSpringData) | [Clone](#clone) |            |
+| [WeaponLagEffectSpringData](/vext/ref/fb/weaponlageffectspringdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [WeaponLagEffectSpringData](WeaponLagEffectSpringData) **Clone**()
+> [WeaponLagEffectSpringData](/vext/ref/fb/weaponlageffectspringdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

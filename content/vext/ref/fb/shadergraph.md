@@ -3,7 +3,7 @@ title: ShaderGraph
 ---
 ### Base Classes
 
-[SurfaceShaderBaseAsset](SurfaceShaderBaseAsset)
+[SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset/)
 
 ## Description
 
@@ -15,9 +15,9 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
 | ShaderGraph()                                                          | Create a new instance of this container type.                                                                 |
 | ShaderGraph(ShaderGraph other)                                         | Create a reference copy of an instance of the same type.                                                      |
-| ShaderGraph([SurfaceShaderBaseAsset](SurfaceShaderBaseAsset) other)    | Upcast an instance of type [SurfaceShaderBaseAsset](SurfaceShaderBaseAsset) to [ShaderGraph](ShaderGraph).    |
-| ShaderGraph([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [ShaderGraph](ShaderGraph).                                      |
-| ShaderGraph([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ShaderGraph](ShaderGraph). |
+| ShaderGraph([SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset/) other)    | Upcast an instance of type [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset/) to [ShaderGraph](/vext/ref/fb/shadergraph/).    |
+| ShaderGraph([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [ShaderGraph](/vext/ref/fb/shadergraph/).                                      |
+| ShaderGraph([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ShaderGraph](/vext/ref/fb/shadergraph/). |
 
 ## Properties
 
@@ -30,11 +30,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                       | Name            | Parameters                                     |
 | -------------------------- | --------------- | ---------------------------------------------- |
-| [ShaderGraph](ShaderGraph) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [ShaderGraph](/vext/ref/fb/shadergraph/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [ShaderGraph](ShaderGraph) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [ShaderGraph](/vext/ref/fb/shadergraph/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -42,4 +42,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

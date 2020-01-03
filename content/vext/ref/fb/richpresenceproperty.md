@@ -17,16 +17,16 @@ A structure type representing a Frostbite data type.
 | Name         | Type                                                 | Description |
 | ------------ | ---------------------------------------------------- | ----------- |
 | name         | string                                               |             |
-| propertyType | [RichPresencePropertyType](RichPresencePropertyType) |             |
+| propertyType | [RichPresencePropertyType](/vext/ref/fb/richpresencepropertytype/) |             |
 
 ## Methods
 
 | Type                                         | Name            | Parameters |
 | -------------------------------------------- | --------------- | ---------- |
-| [RichPresenceProperty](RichPresenceProperty) | [Clone](#clone) |            |
+| [RichPresenceProperty](/vext/ref/fb/richpresenceproperty/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [RichPresenceProperty](RichPresenceProperty) **Clone**()
+> [RichPresenceProperty](/vext/ref/fb/richpresenceproperty/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

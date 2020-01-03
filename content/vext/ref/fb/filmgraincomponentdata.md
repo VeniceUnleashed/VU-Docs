@@ -3,7 +3,7 @@ title: FilmGrainComponentData
 ---
 ### Base Classes
 
-[ComponentData](ComponentData)
+[ComponentData](/vext/ref/fb/componentdata/)
 
 ## Description
 
@@ -15,10 +15,10 @@ A container type representing a Frostbite instance entry.
 | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | FilmGrainComponentData()                                                          | Create a new instance of this container type.                                                                                       |
 | FilmGrainComponentData(FilmGrainComponentData other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| FilmGrainComponentData([ComponentData](ComponentData) other)                      | Upcast an instance of type [ComponentData](ComponentData) to [FilmGrainComponentData](FilmGrainComponentData).                      |
-| FilmGrainComponentData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [FilmGrainComponentData](FilmGrainComponentData).                    |
-| FilmGrainComponentData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [FilmGrainComponentData](FilmGrainComponentData).              |
-| FilmGrainComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [FilmGrainComponentData](FilmGrainComponentData). |
+| FilmGrainComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [FilmGrainComponentData](/vext/ref/fb/filmgraincomponentdata/).                      |
+| FilmGrainComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [FilmGrainComponentData](/vext/ref/fb/filmgraincomponentdata/).                    |
+| FilmGrainComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [FilmGrainComponentData](/vext/ref/fb/filmgraincomponentdata/).              |
+| FilmGrainComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [FilmGrainComponentData](/vext/ref/fb/filmgraincomponentdata/). |
 
 ## Properties
 
@@ -26,8 +26,8 @@ A container type representing a Frostbite instance entry.
 | --------------------- | --------------------------------- | ----------- |
 | colorScale            | [Vec3](/vext/ref/shared/class/vec3) |             |
 | textureScale          | [Vec2](/vext/ref/shared/class/vec2) |             |
-| realm                 | [Realm](Realm)                    |             |
-| texture               | [TextureAsset](TextureAsset)      |             |
+| realm                 | [Realm](/vext/ref/fb/realm/)                    |             |
+| texture               | [TextureAsset](/vext/ref/fb/textureasset/)      |             |
 | linearFilteringEnable | bool                              |             |
 | randomEnable          | bool                              |             |
 | enable                | bool                              |             |
@@ -36,11 +36,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                             | Name            | Parameters                                     |
 | ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [FilmGrainComponentData](FilmGrainComponentData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [FilmGrainComponentData](/vext/ref/fb/filmgraincomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [FilmGrainComponentData](FilmGrainComponentData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [FilmGrainComponentData](/vext/ref/fb/filmgraincomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -48,4 +48,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

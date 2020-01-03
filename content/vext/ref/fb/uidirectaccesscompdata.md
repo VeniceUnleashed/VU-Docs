@@ -3,7 +3,7 @@ title: UIDirectAccessCompData
 ---
 ### Base Classes
 
-[UIComponentData](UIComponentData)
+[UIComponentData](/vext/ref/fb/uicomponentdata/)
 
 ## Description
 
@@ -15,19 +15,19 @@ A container type representing a Frostbite instance entry.
 | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | UIDirectAccessCompData()                                                          | Create a new instance of this container type.                                                                                       |
 | UIDirectAccessCompData(UIDirectAccessCompData other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| UIDirectAccessCompData([UIComponentData](UIComponentData) other)                  | Upcast an instance of type [UIComponentData](UIComponentData) to [UIDirectAccessCompData](UIDirectAccessCompData).                  |
-| UIDirectAccessCompData([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [UIDirectAccessCompData](UIDirectAccessCompData).                                      |
-| UIDirectAccessCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIDirectAccessCompData](UIDirectAccessCompData). |
+| UIDirectAccessCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UIDirectAccessCompData](/vext/ref/fb/uidirectaccesscompdata/).                  |
+| UIDirectAccessCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UIDirectAccessCompData](/vext/ref/fb/uidirectaccesscompdata/).                                      |
+| UIDirectAccessCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIDirectAccessCompData](/vext/ref/fb/uidirectaccesscompdata/). |
 
 ## Methods
 
 | Type                                             | Name            | Parameters                                     |
 | ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [UIDirectAccessCompData](UIDirectAccessCompData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [UIDirectAccessCompData](/vext/ref/fb/uidirectaccesscompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [UIDirectAccessCompData](UIDirectAccessCompData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [UIDirectAccessCompData](/vext/ref/fb/uidirectaccesscompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -35,4 +35,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

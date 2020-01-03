@@ -29,10 +29,10 @@ A structure type representing a Frostbite data type.
 
 | Type                             | Name            | Parameters |
 | -------------------------------- | --------------- | ---------- |
-| [TurnEffectData](TurnEffectData) | [Clone](#clone) |            |
+| [TurnEffectData](/vext/ref/fb/turneffectdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [TurnEffectData](TurnEffectData) **Clone**()
+> [TurnEffectData](/vext/ref/fb/turneffectdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

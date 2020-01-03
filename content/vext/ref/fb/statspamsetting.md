@@ -16,7 +16,7 @@ A structure type representing a Frostbite data type.
 
 | Name           | Type                   | Description |
 | -------------- | ---------------------- | ----------- |
-| event          | [StatEvent](StatEvent) |             |
+| event          | [StatEvent](/vext/ref/fb/statevent/) |             |
 | amountLimit    | number                 |             |
 | timeLimit      | number                 |             |
 | playerToPlayer | bool                   |             |
@@ -25,10 +25,10 @@ A structure type representing a Frostbite data type.
 
 | Type                               | Name            | Parameters |
 | ---------------------------------- | --------------- | ---------- |
-| [StatSpamSetting](StatSpamSetting) | [Clone](#clone) |            |
+| [StatSpamSetting](/vext/ref/fb/statspamsetting/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [StatSpamSetting](StatSpamSetting) **Clone**()
+> [StatSpamSetting](/vext/ref/fb/statspamsetting/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

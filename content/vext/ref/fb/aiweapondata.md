@@ -3,7 +3,7 @@ title: AIWeaponData
 ---
 ### Base Classes
 
-[GameAIWeaponData](GameAIWeaponData)
+[GameAIWeaponData](/vext/ref/fb/gameaiweapondata/)
 
 ## Description
 
@@ -15,15 +15,15 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
 | AIWeaponData()                                                          | Create a new instance of this container type.                                                                   |
 | AIWeaponData(AIWeaponData other)                                        | Create a reference copy of an instance of the same type.                                                        |
-| AIWeaponData([GameAIWeaponData](GameAIWeaponData) other)                | Upcast an instance of type [GameAIWeaponData](GameAIWeaponData) to [AIWeaponData](AIWeaponData).                |
-| AIWeaponData([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [AIWeaponData](AIWeaponData).                                      |
-| AIWeaponData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AIWeaponData](AIWeaponData). |
+| AIWeaponData([GameAIWeaponData](/vext/ref/fb/gameaiweapondata/) other)                | Upcast an instance of type [GameAIWeaponData](/vext/ref/fb/gameaiweapondata/) to [AIWeaponData](/vext/ref/fb/aiweapondata/).                |
+| AIWeaponData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [AIWeaponData](/vext/ref/fb/aiweapondata/).                                      |
+| AIWeaponData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AIWeaponData](/vext/ref/fb/aiweapondata/). |
 
 ## Properties
 
 | Name                                | Type                                     | Description |
 | ----------------------------------- | ---------------------------------------- | ----------- |
-| strengths                           | [Strengths](Strengths)                   |             |
+| strengths                           | [Strengths](/vext/ref/fb/strengths/)                   |             |
 | maxBurstCoolDownTime                | number                                   |             |
 | lostTargetBurstCoolDownModifier     | number                                   |             |
 | finalAccuracyPercentage             | number                                   |             |
@@ -31,7 +31,7 @@ A container type representing a Frostbite instance entry.
 | minRange                            | number                                   |             |
 | maxRange                            | number                                   |             |
 | optimalRangePercentage              | number                                   |             |
-| reloadBehavior                      | [ReloadBehavior](ReloadBehavior)         |             |
+| reloadBehavior                      | [ReloadBehavior](/vext/ref/fb/reloadbehavior/)         |             |
 | minExtraReloadTime                  | number                                   |             |
 | maxExtraReloadTime                  | number                                   |             |
 | minBurstCoolDownTime                | number                                   |             |
@@ -41,15 +41,15 @@ A container type representing a Frostbite instance entry.
 | sweepDistance                       | number                                   |             |
 | sweepTime                           | number                                   |             |
 | waitTimeBeforeFire                  | number                                   |             |
-| burstLimitNear                      | [BurstLimit](BurstLimit)                 |             |
-| burstLimitFar                       | [BurstLimit](BurstLimit)                 |             |
+| burstLimitNear                      | [BurstLimit](/vext/ref/fb/burstlimit/)                 |             |
+| burstLimitFar                       | [BurstLimit](/vext/ref/fb/burstlimit/)                 |             |
 | startAccuracyPercentage             | number                                   |             |
 | minimumAccuracyBeforeFiring         | number                                   |             |
 | outerInaccurateDistance             | number                                   |             |
 | additionalMinimumAccuracyAtMinRange | number                                   |             |
 | gravityModifier                     | number                                   |             |
-| sweepType                           | [SweepSelectionType](SweepSelectionType) |             |
-| aimOrigin                           | [AimOrigin](AimOrigin)                   |             |
+| sweepType                           | [SweepSelectionType](/vext/ref/fb/sweepselectiontype/) |             |
+| aimOrigin                           | [AimOrigin](/vext/ref/fb/aimorigin/)                   |             |
 | useZoom                             | bool                                     |             |
 | allowedAgainstImmortals             | bool                                     |             |
 | aimWhileReloading                   | bool                                     |             |
@@ -71,11 +71,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                         | Name            | Parameters                                     |
 | ---------------------------- | --------------- | ---------------------------------------------- |
-| [AIWeaponData](AIWeaponData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [AIWeaponData](/vext/ref/fb/aiweapondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [AIWeaponData](AIWeaponData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [AIWeaponData](/vext/ref/fb/aiweapondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -83,4 +83,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

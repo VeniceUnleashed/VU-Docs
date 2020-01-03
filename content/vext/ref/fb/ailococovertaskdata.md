@@ -18,18 +18,18 @@ A structure type representing a Frostbite data type.
 | ---------------------- | ---------------------------------------- | ----------- |
 | wantedPos              | [Vec3](/vext/ref/shared/class/vec3)        |             |
 | threatPosition         | [Vec3](/vext/ref/shared/class/vec3)        |             |
-| coverPose              | [AntPoseEnum](AntPoseEnum)               |             |
+| coverPose              | [AntPoseEnum](/vext/ref/fb/antposeenum/)               |             |
 | waitTime               | number                                   |             |
-| peekOut                | [CoverPeekType](CoverPeekType)           |             |
+| peekOut                | [CoverPeekType](/vext/ref/fb/coverpeektype/)           |             |
 | worldAngle             | number                                   |             |
 | offsetLength           | number                                   |             |
-| exitPose               | [AntPoseEnum](AntPoseEnum)               |             |
+| exitPose               | [AntPoseEnum](/vext/ref/fb/antposeenum/)               |             |
 | exitAngle              | number                                   |             |
 | distanceToNextWaypoint | number                                   |             |
-| coverType              | [AntCoverEnum](AntCoverEnum)             |             |
-| enterStrategy          | [CoverEnterStrategy](CoverEnterStrategy) |             |
-| exitStyle              | [CoverExitStyle](CoverExitStyle)         |             |
-| prepareFireType        | [CoverFireType](CoverFireType)           |             |
+| coverType              | [AntCoverEnum](/vext/ref/fb/antcoverenum/)             |             |
+| enterStrategy          | [CoverEnterStrategy](/vext/ref/fb/coverenterstrategy/) |             |
+| exitStyle              | [CoverExitStyle](/vext/ref/fb/coverexitstyle/)         |             |
+| prepareFireType        | [CoverFireType](/vext/ref/fb/coverfiretype/)           |             |
 | forceExitCover         | bool                                     |             |
 | useClientPosition      | bool                                     |             |
 
@@ -37,10 +37,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                       | Name            | Parameters |
 | ------------------------------------------ | --------------- | ---------- |
-| [AILocoCoverTaskData](AILocoCoverTaskData) | [Clone](#clone) |            |
+| [AILocoCoverTaskData](/vext/ref/fb/ailococovertaskdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [AILocoCoverTaskData](AILocoCoverTaskData) **Clone**()
+> [AILocoCoverTaskData](/vext/ref/fb/ailococovertaskdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

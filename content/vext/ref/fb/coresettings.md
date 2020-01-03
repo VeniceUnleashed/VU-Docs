@@ -21,14 +21,14 @@ A structure type representing a Frostbite data type.
 | randomSessionId       | number                             |             |
 | randomTimeSeed        | number                             |             |
 | hardwareGpuBias       | number                             |             |
-| hardwareProfile       | [HardwareProfile](HardwareProfile) |             |
+| hardwareProfile       | [HardwareProfile](/vext/ref/fb/hardwareprofile/) |             |
 | jobProcessorCount     | number                             |             |
 | maxJobThreadCount     | number                             |             |
 | host                  | string                             |             |
 | hostUser              | string                             |             |
 | hostUserDomain        | string                             |             |
 | initSeed              | string                             |             |
-| logLevel              | [CoreLogLevel](CoreLogLevel)       |             |
+| logLevel              | [CoreLogLevel](/vext/ref/fb/coreloglevel/)       |             |
 | hardwareCpuBias       | number                             |             |
 | gameConfigurationName | string                             |             |
 | profileDirectoryName  | string                             |             |
@@ -42,10 +42,10 @@ A structure type representing a Frostbite data type.
 
 | Type                         | Name            | Parameters |
 | ---------------------------- | --------------- | ---------- |
-| [CoreSettings](CoreSettings) | [Clone](#clone) |            |
+| [CoreSettings](/vext/ref/fb/coresettings/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [CoreSettings](CoreSettings) **Clone**()
+> [CoreSettings](/vext/ref/fb/coresettings/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

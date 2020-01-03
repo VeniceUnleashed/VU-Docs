@@ -3,7 +3,7 @@ title: LocalLightEntityData
 ---
 ### Base Classes
 
-[SpatialEntityData](SpatialEntityData)
+[SpatialEntityData](/vext/ref/fb/spatialentitydata/)
 
 ## Description
 
@@ -15,11 +15,11 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | LocalLightEntityData()                                                          | Create a new instance of this container type.                                                                                   |
 | LocalLightEntityData(LocalLightEntityData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| LocalLightEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [LocalLightEntityData](LocalLightEntityData).              |
-| LocalLightEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [LocalLightEntityData](LocalLightEntityData).                            |
-| LocalLightEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [LocalLightEntityData](LocalLightEntityData).                    |
-| LocalLightEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [LocalLightEntityData](LocalLightEntityData).              |
-| LocalLightEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LocalLightEntityData](LocalLightEntityData). |
+| LocalLightEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [LocalLightEntityData](/vext/ref/fb/locallightentitydata/).              |
+| LocalLightEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [LocalLightEntityData](/vext/ref/fb/locallightentitydata/).                            |
+| LocalLightEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [LocalLightEntityData](/vext/ref/fb/locallightentitydata/).                    |
+| LocalLightEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [LocalLightEntityData](/vext/ref/fb/locallightentitydata/).              |
+| LocalLightEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LocalLightEntityData](/vext/ref/fb/locallightentitydata/). |
 
 ## Properties
 
@@ -31,7 +31,7 @@ A container type representing a Frostbite instance entry.
 | radius              | number                                   |             |
 | intensity           | number                                   |             |
 | attenuationOffset   | number                                   |             |
-| enlightenColorMode  | [EnlightenColorMode](EnlightenColorMode) |             |
+| enlightenColorMode  | [EnlightenColorMode](/vext/ref/fb/enlightencolormode/) |             |
 | enlightenEnable     | bool                                     |             |
 | visible             | bool                                     |             |
 | specularEnable      | bool                                     |             |
@@ -40,11 +40,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                         | Name            | Parameters                                     |
 | -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [LocalLightEntityData](LocalLightEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [LocalLightEntityData](/vext/ref/fb/locallightentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [LocalLightEntityData](LocalLightEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [LocalLightEntityData](/vext/ref/fb/locallightentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -52,4 +52,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

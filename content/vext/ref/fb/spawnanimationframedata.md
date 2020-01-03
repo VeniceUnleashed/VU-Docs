@@ -3,7 +3,7 @@ title: SpawnAnimationFrameData
 ---
 ### Base Classes
 
-[ProcessorData](ProcessorData)
+[ProcessorData](/vext/ref/fb/processordata/)
 
 ## Description
 
@@ -15,9 +15,9 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | SpawnAnimationFrameData()                                                          | Create a new instance of this container type.                                                                                         |
 | SpawnAnimationFrameData(SpawnAnimationFrameData other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| SpawnAnimationFrameData([ProcessorData](ProcessorData) other)                      | Upcast an instance of type [ProcessorData](ProcessorData) to [SpawnAnimationFrameData](SpawnAnimationFrameData).                      |
-| SpawnAnimationFrameData([EmitterComponentData](EmitterComponentData) other)        | Upcast an instance of type [EmitterComponentData](EmitterComponentData) to [SpawnAnimationFrameData](SpawnAnimationFrameData).        |
-| SpawnAnimationFrameData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SpawnAnimationFrameData](SpawnAnimationFrameData). |
+| SpawnAnimationFrameData([ProcessorData](/vext/ref/fb/processordata/) other)                      | Upcast an instance of type [ProcessorData](/vext/ref/fb/processordata/) to [SpawnAnimationFrameData](/vext/ref/fb/spawnanimationframedata/).                      |
+| SpawnAnimationFrameData([EmitterComponentData](/vext/ref/fb/emittercomponentdata/) other)        | Upcast an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata/) to [SpawnAnimationFrameData](/vext/ref/fb/spawnanimationframedata/).        |
+| SpawnAnimationFrameData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SpawnAnimationFrameData](/vext/ref/fb/spawnanimationframedata/). |
 
 ## Properties
 
@@ -29,11 +29,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                               | Name            | Parameters                                     |
 | -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [SpawnAnimationFrameData](SpawnAnimationFrameData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [SpawnAnimationFrameData](/vext/ref/fb/spawnanimationframedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [SpawnAnimationFrameData](SpawnAnimationFrameData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [SpawnAnimationFrameData](/vext/ref/fb/spawnanimationframedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -41,4 +41,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

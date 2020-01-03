@@ -3,7 +3,7 @@ title: SearchAndDestroyConstantData
 ---
 ### Base Classes
 
-[Asset](Asset)
+[Asset](/vext/ref/fb/asset/)
 
 ## Description
 
@@ -15,8 +15,8 @@ A container type representing a Frostbite instance entry.
 | --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | SearchAndDestroyConstantData()                                                          | Create a new instance of this container type.                                                                                                   |
 | SearchAndDestroyConstantData(SearchAndDestroyConstantData other)                        | Create a reference copy of an instance of the same type.                                                                                        |
-| SearchAndDestroyConstantData([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [SearchAndDestroyConstantData](SearchAndDestroyConstantData).                                      |
-| SearchAndDestroyConstantData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SearchAndDestroyConstantData](SearchAndDestroyConstantData). |
+| SearchAndDestroyConstantData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [SearchAndDestroyConstantData](/vext/ref/fb/searchanddestroyconstantdata/).                                      |
+| SearchAndDestroyConstantData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SearchAndDestroyConstantData](/vext/ref/fb/searchanddestroyconstantdata/). |
 
 ## Properties
 
@@ -30,11 +30,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                         | Name            | Parameters                                     |
 | ------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [SearchAndDestroyConstantData](SearchAndDestroyConstantData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [SearchAndDestroyConstantData](/vext/ref/fb/searchanddestroyconstantdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [SearchAndDestroyConstantData](SearchAndDestroyConstantData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [SearchAndDestroyConstantData](/vext/ref/fb/searchanddestroyconstantdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -42,4 +42,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

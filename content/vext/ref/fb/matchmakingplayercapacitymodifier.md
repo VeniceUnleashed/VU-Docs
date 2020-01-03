@@ -3,7 +3,7 @@ title: MatchmakingPlayerCapacityModifier
 ---
 ### Base Classes
 
-[MatchmakingModifier](MatchmakingModifier)
+[MatchmakingModifier](/vext/ref/fb/matchmakingmodifier/)
 
 ## Description
 
@@ -15,8 +15,8 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | MatchmakingPlayerCapacityModifier()                                                          | Create a new instance of this container type.                                                                                                             |
 | MatchmakingPlayerCapacityModifier(MatchmakingPlayerCapacityModifier other)                   | Create a reference copy of an instance of the same type.                                                                                                  |
-| MatchmakingPlayerCapacityModifier([MatchmakingModifier](MatchmakingModifier) other)          | Upcast an instance of type [MatchmakingModifier](MatchmakingModifier) to [MatchmakingPlayerCapacityModifier](MatchmakingPlayerCapacityModifier).          |
-| MatchmakingPlayerCapacityModifier([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MatchmakingPlayerCapacityModifier](MatchmakingPlayerCapacityModifier). |
+| MatchmakingPlayerCapacityModifier([MatchmakingModifier](/vext/ref/fb/matchmakingmodifier/) other)          | Upcast an instance of type [MatchmakingModifier](/vext/ref/fb/matchmakingmodifier/) to [MatchmakingPlayerCapacityModifier](/vext/ref/fb/matchmakingplayercapacitymodifier/).          |
+| MatchmakingPlayerCapacityModifier([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MatchmakingPlayerCapacityModifier](/vext/ref/fb/matchmakingplayercapacitymodifier/). |
 
 ## Properties
 
@@ -28,11 +28,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                                   | Name            | Parameters                                     |
 | ---------------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [MatchmakingPlayerCapacityModifier](MatchmakingPlayerCapacityModifier) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [MatchmakingPlayerCapacityModifier](/vext/ref/fb/matchmakingplayercapacitymodifier/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [MatchmakingPlayerCapacityModifier](MatchmakingPlayerCapacityModifier) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [MatchmakingPlayerCapacityModifier](/vext/ref/fb/matchmakingplayercapacitymodifier/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -40,4 +40,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

@@ -16,17 +16,17 @@ A structure type representing a Frostbite data type.
 
 | Name             | Type                                         | Description |
 | ---------------- | -------------------------------------------- | ----------- |
-| actionToSuppress | [EntryInputActionEnum](EntryInputActionEnum) |             |
+| actionToSuppress | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum/) |             |
 | suppressingValue | number                                       |             |
 
 ## Methods
 
 | Type                                 | Name            | Parameters |
 | ------------------------------------ | --------------- | ---------- |
-| [ActionSuppressor](ActionSuppressor) | [Clone](#clone) |            |
+| [ActionSuppressor](/vext/ref/fb/actionsuppressor/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [ActionSuppressor](ActionSuppressor) **Clone**()
+> [ActionSuppressor](/vext/ref/fb/actionsuppressor/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

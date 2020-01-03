@@ -16,8 +16,8 @@ A structure type representing a Frostbite data type.
 
 | Name           | Type                                         | Description |
 | -------------- | -------------------------------------------- | ----------- |
-| healing        | [SupplyUnitSphereData](SupplyUnitSphereData) |             |
-| ammo           | [SupplyUnitSphereData](SupplyUnitSphereData) |             |
+| healing        | [SupplyUnitSphereData](/vext/ref/fb/supplyunitspheredata/) |             |
+| ammo           | [SupplyUnitSphereData](/vext/ref/fb/supplyunitspheredata/) |             |
 | supplyVehicles | bool                                         |             |
 | supplySoldiers | bool                                         |             |
 | teamSpecific   | bool                                         |             |
@@ -27,10 +27,10 @@ A structure type representing a Frostbite data type.
 
 | Type                     | Name            | Parameters |
 | ------------------------ | --------------- | ---------- |
-| [SupplyData](SupplyData) | [Clone](#clone) |            |
+| [SupplyData](/vext/ref/fb/supplydata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SupplyData](SupplyData) **Clone**()
+> [SupplyData](/vext/ref/fb/supplydata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

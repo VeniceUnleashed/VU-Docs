@@ -3,7 +3,7 @@ title: VisualEnvironmentEffectEntityData
 ---
 ### Base Classes
 
-[EffectEntityData](EffectEntityData)
+[EffectEntityData](/vext/ref/fb/effectentitydata/)
 
 ## Description
 
@@ -15,12 +15,12 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | VisualEnvironmentEffectEntityData()                                                          | Create a new instance of this container type.                                                                                                             |
 | VisualEnvironmentEffectEntityData(VisualEnvironmentEffectEntityData other)                   | Create a reference copy of an instance of the same type.                                                                                                  |
-| VisualEnvironmentEffectEntityData([EffectEntityData](EffectEntityData) other)                | Upcast an instance of type [EffectEntityData](EffectEntityData) to [VisualEnvironmentEffectEntityData](VisualEnvironmentEffectEntityData).                |
-| VisualEnvironmentEffectEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [VisualEnvironmentEffectEntityData](VisualEnvironmentEffectEntityData).              |
-| VisualEnvironmentEffectEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [VisualEnvironmentEffectEntityData](VisualEnvironmentEffectEntityData).                            |
-| VisualEnvironmentEffectEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [VisualEnvironmentEffectEntityData](VisualEnvironmentEffectEntityData).                    |
-| VisualEnvironmentEffectEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [VisualEnvironmentEffectEntityData](VisualEnvironmentEffectEntityData).              |
-| VisualEnvironmentEffectEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VisualEnvironmentEffectEntityData](VisualEnvironmentEffectEntityData). |
+| VisualEnvironmentEffectEntityData([EffectEntityData](/vext/ref/fb/effectentitydata/) other)                | Upcast an instance of type [EffectEntityData](/vext/ref/fb/effectentitydata/) to [VisualEnvironmentEffectEntityData](/vext/ref/fb/visualenvironmenteffectentitydata/).                |
+| VisualEnvironmentEffectEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [VisualEnvironmentEffectEntityData](/vext/ref/fb/visualenvironmenteffectentitydata/).              |
+| VisualEnvironmentEffectEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [VisualEnvironmentEffectEntityData](/vext/ref/fb/visualenvironmenteffectentitydata/).                            |
+| VisualEnvironmentEffectEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [VisualEnvironmentEffectEntityData](/vext/ref/fb/visualenvironmenteffectentitydata/).                    |
+| VisualEnvironmentEffectEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [VisualEnvironmentEffectEntityData](/vext/ref/fb/visualenvironmenteffectentitydata/).              |
+| VisualEnvironmentEffectEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VisualEnvironmentEffectEntityData](/vext/ref/fb/visualenvironmenteffectentitydata/). |
 
 ## Properties
 
@@ -30,18 +30,18 @@ A container type representing a Frostbite instance entry.
 | cullDistanceCurve | [Vec4](/vext/ref/shared/class/vec4)                        |             |
 | cullAngleCurve    | [Vec4](/vext/ref/shared/class/vec4)                        |             |
 | lifetime          | number                                                   |             |
-| visualEnvironment | [VisualEnvironmentBlueprint](VisualEnvironmentBlueprint) |             |
+| visualEnvironment | [VisualEnvironmentBlueprint](/vext/ref/fb/visualenvironmentblueprint/) |             |
 | sampleOnStartOnly | bool                                                     |             |
 
 ## Methods
 
 | Type                                                                   | Name            | Parameters                                     |
 | ---------------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [VisualEnvironmentEffectEntityData](VisualEnvironmentEffectEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [VisualEnvironmentEffectEntityData](/vext/ref/fb/visualenvironmenteffectentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [VisualEnvironmentEffectEntityData](VisualEnvironmentEffectEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [VisualEnvironmentEffectEntityData](/vext/ref/fb/visualenvironmenteffectentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -49,4 +49,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

@@ -17,7 +17,7 @@ A structure type representing a Frostbite data type.
 | Name         | Type                               | Description |
 | ------------ | ---------------------------------- | ----------- |
 | name         | string                             |             |
-| query        | [UIWidgetEventID](UIWidgetEventID) |             |
+| query        | [UIWidgetEventID](/vext/ref/fb/uiwidgeteventid/) |             |
 | instanceName | string                             |             |
 | isOutput     | bool                               |             |
 
@@ -25,10 +25,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                         | Name            | Parameters |
 | -------------------------------------------- | --------------- | ---------- |
-| [WidgetEventQueryPair](WidgetEventQueryPair) | [Clone](#clone) |            |
+| [WidgetEventQueryPair](/vext/ref/fb/widgeteventquerypair/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [WidgetEventQueryPair](WidgetEventQueryPair) **Clone**()
+> [WidgetEventQueryPair](/vext/ref/fb/widgeteventquerypair/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

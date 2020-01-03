@@ -25,10 +25,10 @@ A structure type representing a Frostbite data type.
 
 | Type                       | Name            | Parameters |
 | -------------------------- | --------------- | ---------- |
-| [MessageInfo](MessageInfo) | [Clone](#clone) |            |
+| [MessageInfo](/vext/ref/fb/messageinfo/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [MessageInfo](MessageInfo) **Clone**()
+> [MessageInfo](/vext/ref/fb/messageinfo/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

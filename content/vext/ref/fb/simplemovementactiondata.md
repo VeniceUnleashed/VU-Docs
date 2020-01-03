@@ -3,7 +3,7 @@ title: SimpleMovementActionData
 ---
 ### Base Classes
 
-[SimpleMovementActionBaseData](SimpleMovementActionBaseData)
+[SimpleMovementActionBaseData](/vext/ref/fb/simplemovementactionbasedata/)
 
 ## Description
 
@@ -15,16 +15,16 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
 | SimpleMovementActionData()                                                                   | Create a new instance of this container type.                                                                                                    |
 | SimpleMovementActionData(SimpleMovementActionData other)                                     | Create a reference copy of an instance of the same type.                                                                                         |
-| SimpleMovementActionData([SimpleMovementActionBaseData](SimpleMovementActionBaseData) other) | Upcast an instance of type [SimpleMovementActionBaseData](SimpleMovementActionBaseData) to [SimpleMovementActionData](SimpleMovementActionData). |
-| SimpleMovementActionData([MovementActionData](MovementActionData) other)                     | Upcast an instance of type [MovementActionData](MovementActionData) to [SimpleMovementActionData](SimpleMovementActionData).                     |
-| SimpleMovementActionData([DataContainer](/vext/ref/shared/class/datacontainer) other)          | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SimpleMovementActionData](SimpleMovementActionData).          |
+| SimpleMovementActionData([SimpleMovementActionBaseData](/vext/ref/fb/simplemovementactionbasedata/) other) | Upcast an instance of type [SimpleMovementActionBaseData](/vext/ref/fb/simplemovementactionbasedata/) to [SimpleMovementActionData](/vext/ref/fb/simplemovementactiondata/). |
+| SimpleMovementActionData([MovementActionData](/vext/ref/fb/movementactiondata/) other)                     | Upcast an instance of type [MovementActionData](/vext/ref/fb/movementactiondata/) to [SimpleMovementActionData](/vext/ref/fb/simplemovementactiondata/).                     |
+| SimpleMovementActionData([DataContainer](/vext/ref/shared/class/datacontainer) other)          | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SimpleMovementActionData](/vext/ref/fb/simplemovementactiondata/).          |
 
 ## Properties
 
 | Name                  | Type                                         | Description |
 | --------------------- | -------------------------------------------- | ----------- |
 | level                 | number                                       |             |
-| action                | [EntryInputActionEnum](EntryInputActionEnum) |             |
+| action                | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum/) |             |
 | specialAnimationIndex | number                                       |             |
 | respawn               | bool                                         |             |
 | teleport              | bool                                         |             |
@@ -33,11 +33,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                 | Name            | Parameters                                     |
 | ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [SimpleMovementActionData](SimpleMovementActionData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [SimpleMovementActionData](/vext/ref/fb/simplemovementactiondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [SimpleMovementActionData](SimpleMovementActionData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [SimpleMovementActionData](/vext/ref/fb/simplemovementactiondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -45,4 +45,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

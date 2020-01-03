@@ -3,7 +3,7 @@ title: DeathAreaTriggerEntityData
 ---
 ### Base Classes
 
-[GameEntityData](GameEntityData)
+[GameEntityData](/vext/ref/fb/gameentitydata/)
 
 ## Description
 
@@ -15,12 +15,12 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | DeathAreaTriggerEntityData()                                                          | Create a new instance of this container type.                                                                                               |
 | DeathAreaTriggerEntityData(DeathAreaTriggerEntityData other)                          | Create a reference copy of an instance of the same type.                                                                                    |
-| DeathAreaTriggerEntityData([GameEntityData](GameEntityData) other)                    | Upcast an instance of type [GameEntityData](GameEntityData) to [DeathAreaTriggerEntityData](DeathAreaTriggerEntityData).                    |
-| DeathAreaTriggerEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [DeathAreaTriggerEntityData](DeathAreaTriggerEntityData).              |
-| DeathAreaTriggerEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [DeathAreaTriggerEntityData](DeathAreaTriggerEntityData).                            |
-| DeathAreaTriggerEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [DeathAreaTriggerEntityData](DeathAreaTriggerEntityData).                    |
-| DeathAreaTriggerEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [DeathAreaTriggerEntityData](DeathAreaTriggerEntityData).              |
-| DeathAreaTriggerEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DeathAreaTriggerEntityData](DeathAreaTriggerEntityData). |
+| DeathAreaTriggerEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [DeathAreaTriggerEntityData](/vext/ref/fb/deathareatriggerentitydata/).                    |
+| DeathAreaTriggerEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [DeathAreaTriggerEntityData](/vext/ref/fb/deathareatriggerentitydata/).              |
+| DeathAreaTriggerEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [DeathAreaTriggerEntityData](/vext/ref/fb/deathareatriggerentitydata/).                            |
+| DeathAreaTriggerEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [DeathAreaTriggerEntityData](/vext/ref/fb/deathareatriggerentitydata/).                    |
+| DeathAreaTriggerEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [DeathAreaTriggerEntityData](/vext/ref/fb/deathareatriggerentitydata/).              |
+| DeathAreaTriggerEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DeathAreaTriggerEntityData](/vext/ref/fb/deathareatriggerentitydata/). |
 
 ## Properties
 
@@ -33,11 +33,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                     | Name            | Parameters                                     |
 | -------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [DeathAreaTriggerEntityData](DeathAreaTriggerEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [DeathAreaTriggerEntityData](/vext/ref/fb/deathareatriggerentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [DeathAreaTriggerEntityData](DeathAreaTriggerEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [DeathAreaTriggerEntityData](/vext/ref/fb/deathareatriggerentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -45,4 +45,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

@@ -16,7 +16,7 @@ A structure type representing a Frostbite data type.
 
 | Name               | Type                                       | Description |
 | ------------------ | ------------------------------------------ | ----------- |
-| platform           | [MatchmakingPlatform](MatchmakingPlatform) |             |
+| platform           | [MatchmakingPlatform](/vext/ref/fb/matchmakingplatform/) |             |
 | settings           | string\[\]                                 |             |
 | desiredPlayerCount | number                                     |             |
 | minPlayerCount     | number                                     |             |
@@ -27,10 +27,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                         | Name            | Parameters |
 | ------------------------------------------------------------ | --------------- | ---------- |
-| [MatchmakingSizeConfiguration](MatchmakingSizeConfiguration) | [Clone](#clone) |            |
+| [MatchmakingSizeConfiguration](/vext/ref/fb/matchmakingsizeconfiguration/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [MatchmakingSizeConfiguration](MatchmakingSizeConfiguration) **Clone**()
+> [MatchmakingSizeConfiguration](/vext/ref/fb/matchmakingsizeconfiguration/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

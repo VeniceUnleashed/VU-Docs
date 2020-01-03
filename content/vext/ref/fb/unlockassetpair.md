@@ -16,17 +16,17 @@ A structure type representing a Frostbite data type.
 
 | Name   | Type                               | Description |
 | ------ | ---------------------------------- | ----------- |
-| second | [UnlockAssetBase](UnlockAssetBase) |             |
-| result | [UnlockAssetBase](UnlockAssetBase) |             |
+| second | [UnlockAssetBase](/vext/ref/fb/unlockassetbase/) |             |
+| result | [UnlockAssetBase](/vext/ref/fb/unlockassetbase/) |             |
 
 ## Methods
 
 | Type                               | Name            | Parameters |
 | ---------------------------------- | --------------- | ---------- |
-| [UnlockAssetPair](UnlockAssetPair) | [Clone](#clone) |            |
+| [UnlockAssetPair](/vext/ref/fb/unlockassetpair/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [UnlockAssetPair](UnlockAssetPair) **Clone**()
+> [UnlockAssetPair](/vext/ref/fb/unlockassetpair/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

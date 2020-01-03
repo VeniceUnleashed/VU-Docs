@@ -20,10 +20,10 @@ A structure type representing a Frostbite data type.
 | defaultValue      | string                                                   |             |
 | defaultFloatValue | number                                                   |             |
 | defaultIntValue   | number                                                   |             |
-| valueType         | [PersistentValueType](PersistentValueType)               |             |
-| dataType          | [PersistentValueDataType](PersistentValueDataType)       |             |
-| historyType       | [PersistentValueHistoryType](PersistentValueHistoryType) |             |
-| group             | [AwardGroup](AwardGroup)                                 |             |
+| valueType         | [PersistentValueType](/vext/ref/fb/persistentvaluetype/)               |             |
+| dataType          | [PersistentValueDataType](/vext/ref/fb/persistentvaluedatatype/)       |             |
+| historyType       | [PersistentValueHistoryType](/vext/ref/fb/persistentvaluehistorytype/) |             |
+| group             | [AwardGroup](/vext/ref/fb/awardgroup/)                                 |             |
 | clubStat          | bool                                                     |             |
 | forceIntoTemplate | bool                                                     |             |
 
@@ -31,10 +31,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                       | Name            | Parameters |
 | ---------------------------------------------------------- | --------------- | ---------- |
-| [PersistentValueTemplateData](PersistentValueTemplateData) | [Clone](#clone) |            |
+| [PersistentValueTemplateData](/vext/ref/fb/persistentvaluetemplatedata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [PersistentValueTemplateData](PersistentValueTemplateData) **Clone**()
+> [PersistentValueTemplateData](/vext/ref/fb/persistentvaluetemplatedata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

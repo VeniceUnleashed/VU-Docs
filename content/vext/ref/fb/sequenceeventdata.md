@@ -16,17 +16,17 @@ A structure type representing a Frostbite data type.
 
 | Name  | Type                   | Description |
 | ----- | ---------------------- | ----------- |
-| event | [EventSpec](EventSpec) |             |
+| event | [EventSpec](/vext/ref/fb/eventspec/) |             |
 | time  | number                 |             |
 
 ## Methods
 
 | Type                                   | Name            | Parameters |
 | -------------------------------------- | --------------- | ---------- |
-| [SequenceEventData](SequenceEventData) | [Clone](#clone) |            |
+| [SequenceEventData](/vext/ref/fb/sequenceeventdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SequenceEventData](SequenceEventData) **Clone**()
+> [SequenceEventData](/vext/ref/fb/sequenceeventdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

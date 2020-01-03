@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                           | Name            | Parameters |
 | -------------------------------------------------------------- | --------------- | ---------- |
-| [ReadinessLevelCharacteristics](ReadinessLevelCharacteristics) | [Clone](#clone) |            |
+| [ReadinessLevelCharacteristics](/vext/ref/fb/readinesslevelcharacteristics/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [ReadinessLevelCharacteristics](ReadinessLevelCharacteristics) **Clone**()
+> [ReadinessLevelCharacteristics](/vext/ref/fb/readinesslevelcharacteristics/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

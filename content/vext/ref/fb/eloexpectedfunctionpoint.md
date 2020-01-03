@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                 | Name            | Parameters |
 | ---------------------------------------------------- | --------------- | ---------- |
-| [EloExpectedFunctionPoint](EloExpectedFunctionPoint) | [Clone](#clone) |            |
+| [EloExpectedFunctionPoint](/vext/ref/fb/eloexpectedfunctionpoint/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [EloExpectedFunctionPoint](EloExpectedFunctionPoint) **Clone**()
+> [EloExpectedFunctionPoint](/vext/ref/fb/eloexpectedfunctionpoint/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

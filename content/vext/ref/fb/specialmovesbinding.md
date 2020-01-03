@@ -16,27 +16,27 @@ A structure type representing a Frostbite data type.
 
 | Name                     | Type             | Description |
 | ------------------------ | ---------------- | ----------- |
-| triggerHighVault         | [AntRef](AntRef) |             |
-| triggerUpVault           | [AntRef](AntRef) |             |
-| triggerLowVault          | [AntRef](AntRef) |             |
-| triggerSlideIntoProne    | [AntRef](AntRef) |             |
-| triggerSpecialAnimation  | [AntRef](AntRef) |             |
-| specialAnimationIndex    | [AntRef](AntRef) |             |
-| objectHeight             | [AntRef](AntRef) |             |
-| objectDistance           | [AntRef](AntRef) |             |
-| startObjectDistanceTimer | [AntRef](AntRef) |             |
-| vaultObjectPositionX     | [AntRef](AntRef) |             |
-| vaultObjectPositionZ     | [AntRef](AntRef) |             |
-| cancelAnimation          | [AntRef](AntRef) |             |
+| triggerHighVault         | [AntRef](/vext/ref/fb/antref/) |             |
+| triggerUpVault           | [AntRef](/vext/ref/fb/antref/) |             |
+| triggerLowVault          | [AntRef](/vext/ref/fb/antref/) |             |
+| triggerSlideIntoProne    | [AntRef](/vext/ref/fb/antref/) |             |
+| triggerSpecialAnimation  | [AntRef](/vext/ref/fb/antref/) |             |
+| specialAnimationIndex    | [AntRef](/vext/ref/fb/antref/) |             |
+| objectHeight             | [AntRef](/vext/ref/fb/antref/) |             |
+| objectDistance           | [AntRef](/vext/ref/fb/antref/) |             |
+| startObjectDistanceTimer | [AntRef](/vext/ref/fb/antref/) |             |
+| vaultObjectPositionX     | [AntRef](/vext/ref/fb/antref/) |             |
+| vaultObjectPositionZ     | [AntRef](/vext/ref/fb/antref/) |             |
+| cancelAnimation          | [AntRef](/vext/ref/fb/antref/) |             |
 
 ## Methods
 
 | Type                                       | Name            | Parameters |
 | ------------------------------------------ | --------------- | ---------- |
-| [SpecialMovesBinding](SpecialMovesBinding) | [Clone](#clone) |            |
+| [SpecialMovesBinding](/vext/ref/fb/specialmovesbinding/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SpecialMovesBinding](SpecialMovesBinding) **Clone**()
+> [SpecialMovesBinding](/vext/ref/fb/specialmovesbinding/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

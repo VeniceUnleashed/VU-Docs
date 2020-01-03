@@ -25,10 +25,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                                     | Name            | Parameters |
 | ------------------------------------------------------------------------ | --------------- | ---------- |
-| [SupportedShootingProximityChecking](SupportedShootingProximityChecking) | [Clone](#clone) |            |
+| [SupportedShootingProximityChecking](/vext/ref/fb/supportedshootingproximitychecking/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SupportedShootingProximityChecking](SupportedShootingProximityChecking) **Clone**()
+> [SupportedShootingProximityChecking](/vext/ref/fb/supportedshootingproximitychecking/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

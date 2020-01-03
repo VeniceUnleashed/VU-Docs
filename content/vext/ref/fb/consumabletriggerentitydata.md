@@ -3,7 +3,7 @@ title: ConsumableTriggerEntityData
 ---
 ### Base Classes
 
-[TriggerEntityData](TriggerEntityData)
+[TriggerEntityData](/vext/ref/fb/triggerentitydata/)
 
 ## Description
 
@@ -15,30 +15,30 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | ConsumableTriggerEntityData()                                                          | Create a new instance of this container type.                                                                                                 |
 | ConsumableTriggerEntityData(ConsumableTriggerEntityData other)                         | Create a reference copy of an instance of the same type.                                                                                      |
-| ConsumableTriggerEntityData([TriggerEntityData](TriggerEntityData) other)              | Upcast an instance of type [TriggerEntityData](TriggerEntityData) to [ConsumableTriggerEntityData](ConsumableTriggerEntityData).              |
-| ConsumableTriggerEntityData([GameEntityData](GameEntityData) other)                    | Upcast an instance of type [GameEntityData](GameEntityData) to [ConsumableTriggerEntityData](ConsumableTriggerEntityData).                    |
-| ConsumableTriggerEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [ConsumableTriggerEntityData](ConsumableTriggerEntityData).              |
-| ConsumableTriggerEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [ConsumableTriggerEntityData](ConsumableTriggerEntityData).                            |
-| ConsumableTriggerEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [ConsumableTriggerEntityData](ConsumableTriggerEntityData).                    |
-| ConsumableTriggerEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [ConsumableTriggerEntityData](ConsumableTriggerEntityData).              |
-| ConsumableTriggerEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ConsumableTriggerEntityData](ConsumableTriggerEntityData). |
+| ConsumableTriggerEntityData([TriggerEntityData](/vext/ref/fb/triggerentitydata/) other)              | Upcast an instance of type [TriggerEntityData](/vext/ref/fb/triggerentitydata/) to [ConsumableTriggerEntityData](/vext/ref/fb/consumabletriggerentitydata/).              |
+| ConsumableTriggerEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [ConsumableTriggerEntityData](/vext/ref/fb/consumabletriggerentitydata/).                    |
+| ConsumableTriggerEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [ConsumableTriggerEntityData](/vext/ref/fb/consumabletriggerentitydata/).              |
+| ConsumableTriggerEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [ConsumableTriggerEntityData](/vext/ref/fb/consumabletriggerentitydata/).                            |
+| ConsumableTriggerEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [ConsumableTriggerEntityData](/vext/ref/fb/consumabletriggerentitydata/).                    |
+| ConsumableTriggerEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [ConsumableTriggerEntityData](/vext/ref/fb/consumabletriggerentitydata/).              |
+| ConsumableTriggerEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ConsumableTriggerEntityData](/vext/ref/fb/consumabletriggerentitydata/). |
 
 ## Properties
 
 | Name            | Type                               | Description |
 | --------------- | ---------------------------------- | ----------- |
-| consumableGroup | [ConsumableGroup](ConsumableGroup) |             |
+| consumableGroup | [ConsumableGroup](/vext/ref/fb/consumablegroup/) |             |
 | persistent      | bool                               |             |
 
 ## Methods
 
 | Type                                                       | Name            | Parameters                                     |
 | ---------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [ConsumableTriggerEntityData](ConsumableTriggerEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [ConsumableTriggerEntityData](/vext/ref/fb/consumabletriggerentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [ConsumableTriggerEntityData](ConsumableTriggerEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [ConsumableTriggerEntityData](/vext/ref/fb/consumabletriggerentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -46,4 +46,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

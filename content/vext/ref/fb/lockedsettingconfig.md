@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                       | Name            | Parameters |
 | ------------------------------------------ | --------------- | ---------- |
-| [LockedSettingConfig](LockedSettingConfig) | [Clone](#clone) |            |
+| [LockedSettingConfig](/vext/ref/fb/lockedsettingconfig/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [LockedSettingConfig](LockedSettingConfig) **Clone**()
+> [LockedSettingConfig](/vext/ref/fb/lockedsettingconfig/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

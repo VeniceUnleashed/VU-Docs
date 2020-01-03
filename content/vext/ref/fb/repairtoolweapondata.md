@@ -3,7 +3,7 @@ title: RepairToolWeaponData
 ---
 ### Base Classes
 
-[PowerToolWeaponData](PowerToolWeaponData)
+[PowerToolWeaponData](/vext/ref/fb/powertoolweapondata/)
 
 ## Description
 
@@ -15,10 +15,10 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | RepairToolWeaponData()                                                          | Create a new instance of this container type.                                                                                   |
 | RepairToolWeaponData(RepairToolWeaponData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| RepairToolWeaponData([PowerToolWeaponData](PowerToolWeaponData) other)          | Upcast an instance of type [PowerToolWeaponData](PowerToolWeaponData) to [RepairToolWeaponData](RepairToolWeaponData).          |
-| RepairToolWeaponData([WeaponData](WeaponData) other)                            | Upcast an instance of type [WeaponData](WeaponData) to [RepairToolWeaponData](RepairToolWeaponData).                            |
-| RepairToolWeaponData([ToolData](ToolData) other)                                | Upcast an instance of type [ToolData](ToolData) to [RepairToolWeaponData](RepairToolWeaponData).                                |
-| RepairToolWeaponData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RepairToolWeaponData](RepairToolWeaponData). |
+| RepairToolWeaponData([PowerToolWeaponData](/vext/ref/fb/powertoolweapondata/) other)          | Upcast an instance of type [PowerToolWeaponData](/vext/ref/fb/powertoolweapondata/) to [RepairToolWeaponData](/vext/ref/fb/repairtoolweapondata/).          |
+| RepairToolWeaponData([WeaponData](/vext/ref/fb/weapondata/) other)                            | Upcast an instance of type [WeaponData](/vext/ref/fb/weapondata/) to [RepairToolWeaponData](/vext/ref/fb/repairtoolweapondata/).                            |
+| RepairToolWeaponData([ToolData](/vext/ref/fb/tooldata/) other)                                | Upcast an instance of type [ToolData](/vext/ref/fb/tooldata/) to [RepairToolWeaponData](/vext/ref/fb/repairtoolweapondata/).                                |
+| RepairToolWeaponData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RepairToolWeaponData](/vext/ref/fb/repairtoolweapondata/). |
 
 ## Properties
 
@@ -30,11 +30,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                         | Name            | Parameters                                     |
 | -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [RepairToolWeaponData](RepairToolWeaponData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [RepairToolWeaponData](/vext/ref/fb/repairtoolweapondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [RepairToolWeaponData](RepairToolWeaponData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [RepairToolWeaponData](/vext/ref/fb/repairtoolweapondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -42,4 +42,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

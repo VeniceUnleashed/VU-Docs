@@ -16,16 +16,16 @@ A structure type representing a Frostbite data type.
 
 | Name  | Type                               | Description |
 | ----- | ---------------------------------- | ----------- |
-| group | [ConsumableGroup](ConsumableGroup) |             |
+| group | [ConsumableGroup](/vext/ref/fb/consumablegroup/) |             |
 
 ## Methods
 
 | Type                                                         | Name            | Parameters |
 | ------------------------------------------------------------ | --------------- | ---------- |
-| [PersistenceConsumableMapping](PersistenceConsumableMapping) | [Clone](#clone) |            |
+| [PersistenceConsumableMapping](/vext/ref/fb/persistenceconsumablemapping/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [PersistenceConsumableMapping](PersistenceConsumableMapping) **Clone**()
+> [PersistenceConsumableMapping](/vext/ref/fb/persistenceconsumablemapping/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

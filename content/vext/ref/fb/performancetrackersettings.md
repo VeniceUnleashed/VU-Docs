@@ -3,7 +3,7 @@ title: PerformanceTrackerSettings
 ---
 ### Base Classes
 
-[SystemSettings](SystemSettings)
+[SystemSettings](/vext/ref/fb/systemsettings/)
 
 ## Description
 
@@ -15,8 +15,8 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | PerformanceTrackerSettings()                                                          | Create a new instance of this container type.                                                                                               |
 | PerformanceTrackerSettings(PerformanceTrackerSettings other)                          | Create a reference copy of an instance of the same type.                                                                                    |
-| PerformanceTrackerSettings([SystemSettings](SystemSettings) other)                    | Upcast an instance of type [SystemSettings](SystemSettings) to [PerformanceTrackerSettings](PerformanceTrackerSettings).                    |
-| PerformanceTrackerSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PerformanceTrackerSettings](PerformanceTrackerSettings). |
+| PerformanceTrackerSettings([SystemSettings](/vext/ref/fb/systemsettings/) other)                    | Upcast an instance of type [SystemSettings](/vext/ref/fb/systemsettings/) to [PerformanceTrackerSettings](/vext/ref/fb/performancetrackersettings/).                    |
+| PerformanceTrackerSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PerformanceTrackerSettings](/vext/ref/fb/performancetrackersettings/). |
 
 ## Properties
 
@@ -32,11 +32,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                     | Name            | Parameters                                     |
 | -------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [PerformanceTrackerSettings](PerformanceTrackerSettings) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [PerformanceTrackerSettings](/vext/ref/fb/performancetrackersettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [PerformanceTrackerSettings](PerformanceTrackerSettings) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [PerformanceTrackerSettings](/vext/ref/fb/performancetrackersettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -44,4 +44,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

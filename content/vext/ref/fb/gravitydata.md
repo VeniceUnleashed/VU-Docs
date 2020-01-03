@@ -3,7 +3,7 @@ title: GravityData
 ---
 ### Base Classes
 
-[ProcessorData](ProcessorData)
+[ProcessorData](/vext/ref/fb/processordata/)
 
 ## Description
 
@@ -15,9 +15,9 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
 | GravityData()                                                          | Create a new instance of this container type.                                                                 |
 | GravityData(GravityData other)                                         | Create a reference copy of an instance of the same type.                                                      |
-| GravityData([ProcessorData](ProcessorData) other)                      | Upcast an instance of type [ProcessorData](ProcessorData) to [GravityData](GravityData).                      |
-| GravityData([EmitterComponentData](EmitterComponentData) other)        | Upcast an instance of type [EmitterComponentData](EmitterComponentData) to [GravityData](GravityData).        |
-| GravityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GravityData](GravityData). |
+| GravityData([ProcessorData](/vext/ref/fb/processordata/) other)                      | Upcast an instance of type [ProcessorData](/vext/ref/fb/processordata/) to [GravityData](/vext/ref/fb/gravitydata/).                      |
+| GravityData([EmitterComponentData](/vext/ref/fb/emittercomponentdata/) other)        | Upcast an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata/) to [GravityData](/vext/ref/fb/gravitydata/).        |
+| GravityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GravityData](/vext/ref/fb/gravitydata/). |
 
 ## Properties
 
@@ -29,11 +29,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                       | Name            | Parameters                                     |
 | -------------------------- | --------------- | ---------------------------------------------- |
-| [GravityData](GravityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [GravityData](/vext/ref/fb/gravitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [GravityData](GravityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [GravityData](/vext/ref/fb/gravitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -41,4 +41,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

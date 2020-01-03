@@ -3,7 +3,7 @@ title: LoggingEntityData
 ---
 ### Base Classes
 
-[EntityData](EntityData)
+[EntityData](/vext/ref/fb/entitydata/)
 
 ## Description
 
@@ -15,10 +15,10 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | LoggingEntityData()                                                          | Create a new instance of this container type.                                                                             |
 | LoggingEntityData(LoggingEntityData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| LoggingEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [LoggingEntityData](LoggingEntityData).                            |
-| LoggingEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [LoggingEntityData](LoggingEntityData).                    |
-| LoggingEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [LoggingEntityData](LoggingEntityData).              |
-| LoggingEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LoggingEntityData](LoggingEntityData). |
+| LoggingEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [LoggingEntityData](/vext/ref/fb/loggingentitydata/).                            |
+| LoggingEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [LoggingEntityData](/vext/ref/fb/loggingentitydata/).                    |
+| LoggingEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [LoggingEntityData](/vext/ref/fb/loggingentitydata/).              |
+| LoggingEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LoggingEntityData](/vext/ref/fb/loggingentitydata/). |
 
 ## Properties
 
@@ -27,7 +27,7 @@ A container type representing a Frostbite instance entry.
 | vec2Value      | [Vec2](/vext/ref/shared/class/vec2)                       |             |
 | vec3Value      | [Vec3](/vext/ref/shared/class/vec3)                       |             |
 | transformValue | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
-| realm          | [Realm](Realm)                                          |             |
+| realm          | [Realm](/vext/ref/fb/realm/)                                          |             |
 | floatValue     | number                                                  |             |
 | strings        | string\[\]                                              |             |
 | intValue       | number                                                  |             |
@@ -37,11 +37,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                   | Name            | Parameters                                     |
 | -------------------------------------- | --------------- | ---------------------------------------------- |
-| [LoggingEntityData](LoggingEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [LoggingEntityData](/vext/ref/fb/loggingentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [LoggingEntityData](LoggingEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [LoggingEntityData](/vext/ref/fb/loggingentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -49,4 +49,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

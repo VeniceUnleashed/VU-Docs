@@ -3,7 +3,7 @@ title: MaterialRelationDamageData
 ---
 ### Base Classes
 
-[PhysicsPropertyRelationPropertyData](PhysicsPropertyRelationPropertyData)
+[PhysicsPropertyRelationPropertyData](/vext/ref/fb/physicspropertyrelationpropertydata/)
 
 ## Description
 
@@ -15,9 +15,9 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | MaterialRelationDamageData()                                                                                 | Create a new instance of this container type.                                                                                                                      |
 | MaterialRelationDamageData(MaterialRelationDamageData other)                                                 | Create a reference copy of an instance of the same type.                                                                                                           |
-| MaterialRelationDamageData([PhysicsPropertyRelationPropertyData](PhysicsPropertyRelationPropertyData) other) | Upcast an instance of type [PhysicsPropertyRelationPropertyData](PhysicsPropertyRelationPropertyData) to [MaterialRelationDamageData](MaterialRelationDamageData). |
-| MaterialRelationDamageData([MaterialRelationPropertyData](MaterialRelationPropertyData) other)               | Upcast an instance of type [MaterialRelationPropertyData](MaterialRelationPropertyData) to [MaterialRelationDamageData](MaterialRelationDamageData).               |
-| MaterialRelationDamageData([DataContainer](/vext/ref/shared/class/datacontainer) other)                        | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MaterialRelationDamageData](MaterialRelationDamageData).                        |
+| MaterialRelationDamageData([PhysicsPropertyRelationPropertyData](/vext/ref/fb/physicspropertyrelationpropertydata/) other) | Upcast an instance of type [PhysicsPropertyRelationPropertyData](/vext/ref/fb/physicspropertyrelationpropertydata/) to [MaterialRelationDamageData](/vext/ref/fb/materialrelationdamagedata/). |
+| MaterialRelationDamageData([MaterialRelationPropertyData](/vext/ref/fb/materialrelationpropertydata/) other)               | Upcast an instance of type [MaterialRelationPropertyData](/vext/ref/fb/materialrelationpropertydata/) to [MaterialRelationDamageData](/vext/ref/fb/materialrelationdamagedata/).               |
+| MaterialRelationDamageData([DataContainer](/vext/ref/shared/class/datacontainer) other)                        | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MaterialRelationDamageData](/vext/ref/fb/materialrelationdamagedata/).                        |
 
 ## Properties
 
@@ -35,11 +35,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                     | Name            | Parameters                                     |
 | -------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [MaterialRelationDamageData](MaterialRelationDamageData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [MaterialRelationDamageData](/vext/ref/fb/materialrelationdamagedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [MaterialRelationDamageData](MaterialRelationDamageData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [MaterialRelationDamageData](/vext/ref/fb/materialrelationdamagedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -47,4 +47,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

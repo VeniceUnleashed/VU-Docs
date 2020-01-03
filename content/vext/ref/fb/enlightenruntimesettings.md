@@ -3,7 +3,7 @@ title: EnlightenRuntimeSettings
 ---
 ### Base Classes
 
-[SystemSettings](SystemSettings)
+[SystemSettings](/vext/ref/fb/systemsettings/)
 
 ## Description
 
@@ -15,8 +15,8 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | EnlightenRuntimeSettings()                                                          | Create a new instance of this container type.                                                                                           |
 | EnlightenRuntimeSettings(EnlightenRuntimeSettings other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| EnlightenRuntimeSettings([SystemSettings](SystemSettings) other)                    | Upcast an instance of type [SystemSettings](SystemSettings) to [EnlightenRuntimeSettings](EnlightenRuntimeSettings).                    |
-| EnlightenRuntimeSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EnlightenRuntimeSettings](EnlightenRuntimeSettings). |
+| EnlightenRuntimeSettings([SystemSettings](/vext/ref/fb/systemsettings/) other)                    | Upcast an instance of type [SystemSettings](/vext/ref/fb/systemsettings/) to [EnlightenRuntimeSettings](/vext/ref/fb/enlightenruntimesettings/).                    |
+| EnlightenRuntimeSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EnlightenRuntimeSettings](/vext/ref/fb/enlightenruntimesettings/). |
 
 ## Properties
 
@@ -65,11 +65,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                 | Name            | Parameters                                     |
 | ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [EnlightenRuntimeSettings](EnlightenRuntimeSettings) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [EnlightenRuntimeSettings](/vext/ref/fb/enlightenruntimesettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [EnlightenRuntimeSettings](EnlightenRuntimeSettings) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [EnlightenRuntimeSettings](/vext/ref/fb/enlightenruntimesettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -77,4 +77,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

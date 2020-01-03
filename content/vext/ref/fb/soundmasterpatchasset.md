@@ -3,7 +3,7 @@ title: SoundMasterPatchAsset
 ---
 ### Base Classes
 
-[SoundGraphAsset](SoundGraphAsset)
+[SoundGraphAsset](/vext/ref/fb/soundgraphasset/)
 
 ## Description
 
@@ -15,27 +15,27 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | SoundMasterPatchAsset()                                                          | Create a new instance of this container type.                                                                                     |
 | SoundMasterPatchAsset(SoundMasterPatchAsset other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| SoundMasterPatchAsset([SoundGraphAsset](SoundGraphAsset) other)                  | Upcast an instance of type [SoundGraphAsset](SoundGraphAsset) to [SoundMasterPatchAsset](SoundMasterPatchAsset).                  |
-| SoundMasterPatchAsset([SoundAsset](SoundAsset) other)                            | Upcast an instance of type [SoundAsset](SoundAsset) to [SoundMasterPatchAsset](SoundMasterPatchAsset).                            |
-| SoundMasterPatchAsset([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [SoundMasterPatchAsset](SoundMasterPatchAsset).                                      |
-| SoundMasterPatchAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoundMasterPatchAsset](SoundMasterPatchAsset). |
+| SoundMasterPatchAsset([SoundGraphAsset](/vext/ref/fb/soundgraphasset/) other)                  | Upcast an instance of type [SoundGraphAsset](/vext/ref/fb/soundgraphasset/) to [SoundMasterPatchAsset](/vext/ref/fb/soundmasterpatchasset/).                  |
+| SoundMasterPatchAsset([SoundAsset](/vext/ref/fb/soundasset/) other)                            | Upcast an instance of type [SoundAsset](/vext/ref/fb/soundasset/) to [SoundMasterPatchAsset](/vext/ref/fb/soundmasterpatchasset/).                            |
+| SoundMasterPatchAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [SoundMasterPatchAsset](/vext/ref/fb/soundmasterpatchasset/).                                      |
+| SoundMasterPatchAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoundMasterPatchAsset](/vext/ref/fb/soundmasterpatchasset/). |
 
 ## Properties
 
 | Name       | Type                             | Description |
 | ---------- | -------------------------------- | ----------- |
-| busses     | [SoundBusData](SoundBusData)\[\] |             |
-| rwMovieBus | [SoundBusData](SoundBusData)     |             |
+| busses     | [SoundBusData](/vext/ref/fb/soundbusdata/)\[\] |             |
+| rwMovieBus | [SoundBusData](/vext/ref/fb/soundbusdata/)     |             |
 
 ## Methods
 
 | Type                                           | Name            | Parameters                                     |
 | ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [SoundMasterPatchAsset](SoundMasterPatchAsset) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [SoundMasterPatchAsset](/vext/ref/fb/soundmasterpatchasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [SoundMasterPatchAsset](SoundMasterPatchAsset) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [SoundMasterPatchAsset](/vext/ref/fb/soundmasterpatchasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -43,4 +43,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

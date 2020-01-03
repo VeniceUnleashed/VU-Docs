@@ -15,7 +15,7 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
 | EmitterTemplateData()                                                          | Create a new instance of this container type.                                                                                 |
 | EmitterTemplateData(EmitterTemplateData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| EmitterTemplateData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EmitterTemplateData](EmitterTemplateData). |
+| EmitterTemplateData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EmitterTemplateData](/vext/ref/fb/emittertemplatedata/). |
 
 ## Properties
 
@@ -29,11 +29,11 @@ A container type representing a Frostbite instance entry.
 | timeScale                           | number                            |             |
 | lifetimeFrameCount                  | number                            |             |
 | lifetime                            | number                            |             |
-| rootProcessor                       | [ProcessorData](ProcessorData)    |             |
+| rootProcessor                       | [ProcessorData](/vext/ref/fb/processordata/)    |             |
 | visibleAfterDistance                | number                            |             |
 | zOcclusionLookup                    | number\[\]                        |             |
-| emittableType                       | [EmittableType](EmittableType)    |             |
-| mesh                                | [MeshAsset](MeshAsset)            |             |
+| emittableType                       | [EmittableType](/vext/ref/fb/emittabletype/)    |             |
+| mesh                                | [MeshAsset](/vext/ref/fb/meshasset/)            |             |
 | distanceScaleNearValue              | number                            |             |
 | pointLightRadius                    | number                            |             |
 | vertexPixelLightingBlendFactor      | number                            |             |
@@ -67,11 +67,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                       | Name            | Parameters                                     |
 | ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [EmitterTemplateData](EmitterTemplateData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [EmitterTemplateData](/vext/ref/fb/emittertemplatedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [EmitterTemplateData](EmitterTemplateData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [EmitterTemplateData](/vext/ref/fb/emittertemplatedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -79,4 +79,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

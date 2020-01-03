@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                     | Name            | Parameters |
 | ---------------------------------------- | --------------- | ---------- |
-| [NetworkVoteDetails](NetworkVoteDetails) | [Clone](#clone) |            |
+| [NetworkVoteDetails](/vext/ref/fb/networkvotedetails/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [NetworkVoteDetails](NetworkVoteDetails) **Clone**()
+> [NetworkVoteDetails](/vext/ref/fb/networkvotedetails/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

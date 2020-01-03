@@ -16,16 +16,16 @@ A structure type representing a Frostbite data type.
 
 | Name   | Type                           | Description |
 | ------ | ------------------------------ | ----------- |
-| visual | [UnlockAsset](UnlockAsset)\[\] |             |
+| visual | [UnlockAsset](/vext/ref/fb/unlockasset/)\[\] |             |
 
 ## Methods
 
 | Type                               | Name            | Parameters |
 | ---------------------------------- | --------------- | ---------- |
-| [CustomizeVisual](CustomizeVisual) | [Clone](#clone) |            |
+| [CustomizeVisual](/vext/ref/fb/customizevisual/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [CustomizeVisual](CustomizeVisual) **Clone**()
+> [CustomizeVisual](/vext/ref/fb/customizevisual/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

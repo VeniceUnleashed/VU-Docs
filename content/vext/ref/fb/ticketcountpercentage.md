@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                           | Name            | Parameters |
 | ---------------------------------------------- | --------------- | ---------- |
-| [TicketCountPercentage](TicketCountPercentage) | [Clone](#clone) |            |
+| [TicketCountPercentage](/vext/ref/fb/ticketcountpercentage/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [TicketCountPercentage](TicketCountPercentage) **Clone**()
+> [TicketCountPercentage](/vext/ref/fb/ticketcountpercentage/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

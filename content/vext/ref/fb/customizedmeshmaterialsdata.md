@@ -16,17 +16,17 @@ A structure type representing a Frostbite data type.
 
 | Name          | Type                               | Description |
 | ------------- | ---------------------------------- | ----------- |
-| meshBlueprint | [ObjectBlueprint](ObjectBlueprint) |             |
+| meshBlueprint | [ObjectBlueprint](/vext/ref/fb/objectblueprint/) |             |
 | materialNames | string\[\]                         |             |
 
 ## Methods
 
 | Type                                                       | Name            | Parameters |
 | ---------------------------------------------------------- | --------------- | ---------- |
-| [CustomizedMeshMaterialsData](CustomizedMeshMaterialsData) | [Clone](#clone) |            |
+| [CustomizedMeshMaterialsData](/vext/ref/fb/customizedmeshmaterialsdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [CustomizedMeshMaterialsData](CustomizedMeshMaterialsData) **Clone**()
+> [CustomizedMeshMaterialsData](/vext/ref/fb/customizedmeshmaterialsdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

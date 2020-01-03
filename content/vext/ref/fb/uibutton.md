@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                 | Name            | Parameters |
 | -------------------- | --------------- | ---------- |
-| [UIButton](UIButton) | [Clone](#clone) |            |
+| [UIButton](/vext/ref/fb/uibutton/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [UIButton](UIButton) **Clone**()
+> [UIButton](/vext/ref/fb/uibutton/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

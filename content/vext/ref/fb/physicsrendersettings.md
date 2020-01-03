@@ -15,7 +15,7 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | PhysicsRenderSettings()                                                          | Create a new instance of this container type.                                                                                     |
 | PhysicsRenderSettings(PhysicsRenderSettings other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| PhysicsRenderSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PhysicsRenderSettings](PhysicsRenderSettings). |
+| PhysicsRenderSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PhysicsRenderSettings](/vext/ref/fb/physicsrendersettings/). |
 
 ## Properties
 
@@ -63,11 +63,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                           | Name            | Parameters                                     |
 | ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [PhysicsRenderSettings](PhysicsRenderSettings) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [PhysicsRenderSettings](/vext/ref/fb/physicsrendersettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [PhysicsRenderSettings](PhysicsRenderSettings) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [PhysicsRenderSettings](/vext/ref/fb/physicsrendersettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -75,4 +75,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

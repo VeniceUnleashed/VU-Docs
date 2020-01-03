@@ -26,10 +26,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                     | Name            | Parameters |
 | -------------------------------------------------------- | --------------- | ---------- |
-| [WeaponMiscModifierSettings](WeaponMiscModifierSettings) | [Clone](#clone) |            |
+| [WeaponMiscModifierSettings](/vext/ref/fb/weaponmiscmodifiersettings/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [WeaponMiscModifierSettings](WeaponMiscModifierSettings) **Clone**()
+> [WeaponMiscModifierSettings](/vext/ref/fb/weaponmiscmodifiersettings/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

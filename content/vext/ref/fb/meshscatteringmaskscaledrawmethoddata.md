@@ -16,10 +16,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                                           | Name            | Parameters |
 | ------------------------------------------------------------------------------ | --------------- | ---------- |
-| [MeshScatteringMaskScaleDrawMethodData](MeshScatteringMaskScaleDrawMethodData) | [Clone](#clone) |            |
+| [MeshScatteringMaskScaleDrawMethodData](/vext/ref/fb/meshscatteringmaskscaledrawmethoddata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [MeshScatteringMaskScaleDrawMethodData](MeshScatteringMaskScaleDrawMethodData) **Clone**()
+> [MeshScatteringMaskScaleDrawMethodData](/vext/ref/fb/meshscatteringmaskscaledrawmethoddata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

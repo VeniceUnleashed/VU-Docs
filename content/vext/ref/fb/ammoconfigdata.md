@@ -30,10 +30,10 @@ A structure type representing a Frostbite data type.
 
 | Type                             | Name            | Parameters |
 | -------------------------------- | --------------- | ---------- |
-| [AmmoConfigData](AmmoConfigData) | [Clone](#clone) |            |
+| [AmmoConfigData](/vext/ref/fb/ammoconfigdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [AmmoConfigData](AmmoConfigData) **Clone**()
+> [AmmoConfigData](/vext/ref/fb/ammoconfigdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

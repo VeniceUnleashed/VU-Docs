@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                       | Name            | Parameters |
 | ---------------------------------------------------------- | --------------- | ---------- |
-| [DynamicWeaponPickupSlotData](DynamicWeaponPickupSlotData) | [Clone](#clone) |            |
+| [DynamicWeaponPickupSlotData](/vext/ref/fb/dynamicweaponpickupslotdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [DynamicWeaponPickupSlotData](DynamicWeaponPickupSlotData) **Clone**()
+> [DynamicWeaponPickupSlotData](/vext/ref/fb/dynamicweaponpickupslotdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

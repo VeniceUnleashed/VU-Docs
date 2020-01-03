@@ -15,7 +15,7 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
 | WorldRenderSettings()                                                          | Create a new instance of this container type.                                                                                 |
 | WorldRenderSettings(WorldRenderSettings other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| WorldRenderSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WorldRenderSettings](WorldRenderSettings). |
+| WorldRenderSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WorldRenderSettings](/vext/ref/fb/worldrendersettings/). |
 
 ## Properties
 
@@ -60,7 +60,7 @@ A container type representing a Frostbite instance entry.
 | motionBlurNoiseScale                        | number                                     |             |
 | motionBlurQuality                           | number                                     |             |
 | maxSpotLightShadowCount                     | number                                     |             |
-| dynamicEnvmapFilterMode                     | [MipmapFilterMode](MipmapFilterMode)       |             |
+| dynamicEnvmapFilterMode                     | [MipmapFilterMode](/vext/ref/fb/mipmapfiltermode/)       |             |
 | motionBlurMaxSampleCount                    | number                                     |             |
 | motionBlurFrameAverageCount                 | number                                     |             |
 | motionBlurMaxFrameTime                      | number                                     |             |
@@ -73,9 +73,9 @@ A container type representing a Frostbite instance entry.
 | spotLightNearPlane                          | number                                     |             |
 | spotLightShadowmapPoissonFilterScale        | number                                     |             |
 | onlyShadowmapSlice                          | number                                     |             |
-| viewMode                                    | [WorldViewMode](WorldViewMode)             |             |
+| viewMode                                    | [WorldViewMode](/vext/ref/fb/worldviewmode/)             |             |
 | spotLightShadowmapResolution                | number                                     |             |
-| spotLightShadomapLevel                      | [QualityLevel](QualityLevel)               |             |
+| spotLightShadomapLevel                      | [QualityLevel](/vext/ref/fb/qualitylevel/)               |             |
 | spotLightShadowmapQuality                   | number                                     |             |
 | onlyLightTileY                              | number                                     |             |
 | onlyLightTileX                              | number                                     |             |
@@ -93,7 +93,7 @@ A container type representing a Frostbite instance entry.
 | dynamicEnvmapFilterWidth                    | number                                     |             |
 | lightTileMinArea                            | number                                     |             |
 | dynamicEnvmapResolution                     | number                                     |             |
-| gBufferLayout                               | [ShaderGBufferLayout](ShaderGBufferLayout) |             |
+| gBufferLayout                               | [ShaderGBufferLayout](/vext/ref/fb/shadergbufferlayout/) |             |
 | drawDebugSkyEnvmapMipLevel                  | number                                     |             |
 | decalVolumeScale                            | number                                     |             |
 | lightOverdrawMaxLayerCount                  | number                                     |             |
@@ -105,7 +105,7 @@ A container type representing a Frostbite instance entry.
 | xenonDrawDebugLightTileGridMode             | number                                     |             |
 | lightStencilMinArea                         | number                                     |             |
 | maxSpotLightCount                           | number                                     |             |
-| skyEnvmapFilterMode                         | [MipmapFilterMode](MipmapFilterMode)       |             |
+| skyEnvmapFilterMode                         | [MipmapFilterMode](/vext/ref/fb/mipmapfiltermode/)       |             |
 | skyEnvmapFilterWidth                        | number                                     |             |
 | gBufferTestCount                            | number                                     |             |
 | skyEnvmapResolution                         | number                                     |             |
@@ -280,11 +280,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                       | Name            | Parameters                                     |
 | ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [WorldRenderSettings](WorldRenderSettings) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [WorldRenderSettings](/vext/ref/fb/worldrendersettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [WorldRenderSettings](WorldRenderSettings) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [WorldRenderSettings](/vext/ref/fb/worldrendersettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -292,4 +292,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

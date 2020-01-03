@@ -3,7 +3,7 @@ title: AirRadarData
 ---
 ### Base Classes
 
-[UIPartData](UIPartData)
+[UIPartData](/vext/ref/fb/uipartdata/)
 
 ## Description
 
@@ -15,8 +15,8 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
 | AirRadarData()                                                          | Create a new instance of this container type.                                                                   |
 | AirRadarData(AirRadarData other)                                        | Create a reference copy of an instance of the same type.                                                        |
-| AirRadarData([UIPartData](UIPartData) other)                            | Upcast an instance of type [UIPartData](UIPartData) to [AirRadarData](AirRadarData).                            |
-| AirRadarData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AirRadarData](AirRadarData). |
+| AirRadarData([UIPartData](/vext/ref/fb/uipartdata/) other)                            | Upcast an instance of type [UIPartData](/vext/ref/fb/uipartdata/) to [AirRadarData](/vext/ref/fb/airradardata/).                            |
+| AirRadarData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AirRadarData](/vext/ref/fb/airradardata/). |
 
 ## Properties
 
@@ -25,16 +25,16 @@ A container type representing a Frostbite instance entry.
 | radarRange                  | number                         |             |
 | radarSensitivity            | number                         |             |
 | heatSensitivity             | number                         |             |
-| missileIcon                 | [UIHudIcon](UIHudIcon)         |             |
-| centerIcon                  | [UIHudIcon](UIHudIcon)         |             |
-| friendlyIcon                | [UIHudIcon](UIHudIcon)         |             |
-| enemyIcon                   | [UIHudIcon](UIHudIcon)         |             |
-| laserPaintedIcon            | [UIHudIcon](UIHudIcon)         |             |
-| northIcon                   | [UIHudIcon](UIHudIcon)         |             |
-| subScreen                   | [SubScreenData](SubScreenData) |             |
-| westIcon                    | [UIHudIcon](UIHudIcon)         |             |
-| southIcon                   | [UIHudIcon](UIHudIcon)         |             |
-| eastIcon                    | [UIHudIcon](UIHudIcon)         |             |
+| missileIcon                 | [UIHudIcon](/vext/ref/fb/uihudicon/)         |             |
+| centerIcon                  | [UIHudIcon](/vext/ref/fb/uihudicon/)         |             |
+| friendlyIcon                | [UIHudIcon](/vext/ref/fb/uihudicon/)         |             |
+| enemyIcon                   | [UIHudIcon](/vext/ref/fb/uihudicon/)         |             |
+| laserPaintedIcon            | [UIHudIcon](/vext/ref/fb/uihudicon/)         |             |
+| northIcon                   | [UIHudIcon](/vext/ref/fb/uihudicon/)         |             |
+| subScreen                   | [SubScreenData](/vext/ref/fb/subscreendata/) |             |
+| westIcon                    | [UIHudIcon](/vext/ref/fb/uihudicon/)         |             |
+| southIcon                   | [UIHudIcon](/vext/ref/fb/uihudicon/)         |             |
+| eastIcon                    | [UIHudIcon](/vext/ref/fb/uihudicon/)         |             |
 | trackLaserPaintedObjects    | bool                           |             |
 | trackOnlyUsedVehicles       | bool                           |             |
 | useCameraComponentTransform | bool                           |             |
@@ -43,11 +43,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                         | Name            | Parameters                                     |
 | ---------------------------- | --------------- | ---------------------------------------------- |
-| [AirRadarData](AirRadarData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [AirRadarData](/vext/ref/fb/airradardata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [AirRadarData](AirRadarData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [AirRadarData](/vext/ref/fb/airradardata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -55,4 +55,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

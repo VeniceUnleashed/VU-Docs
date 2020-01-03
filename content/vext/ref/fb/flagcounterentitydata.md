@@ -3,7 +3,7 @@ title: FlagCounterEntityData
 ---
 ### Base Classes
 
-[GameEntityData](GameEntityData)
+[GameEntityData](/vext/ref/fb/gameentitydata/)
 
 ## Description
 
@@ -15,18 +15,18 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | FlagCounterEntityData()                                                          | Create a new instance of this container type.                                                                                     |
 | FlagCounterEntityData(FlagCounterEntityData other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| FlagCounterEntityData([GameEntityData](GameEntityData) other)                    | Upcast an instance of type [GameEntityData](GameEntityData) to [FlagCounterEntityData](FlagCounterEntityData).                    |
-| FlagCounterEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [FlagCounterEntityData](FlagCounterEntityData).              |
-| FlagCounterEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [FlagCounterEntityData](FlagCounterEntityData).                            |
-| FlagCounterEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [FlagCounterEntityData](FlagCounterEntityData).                    |
-| FlagCounterEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [FlagCounterEntityData](FlagCounterEntityData).              |
-| FlagCounterEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [FlagCounterEntityData](FlagCounterEntityData). |
+| FlagCounterEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [FlagCounterEntityData](/vext/ref/fb/flagcounterentitydata/).                    |
+| FlagCounterEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [FlagCounterEntityData](/vext/ref/fb/flagcounterentitydata/).              |
+| FlagCounterEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [FlagCounterEntityData](/vext/ref/fb/flagcounterentitydata/).                            |
+| FlagCounterEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [FlagCounterEntityData](/vext/ref/fb/flagcounterentitydata/).                    |
+| FlagCounterEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [FlagCounterEntityData](/vext/ref/fb/flagcounterentitydata/).              |
+| FlagCounterEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [FlagCounterEntityData](/vext/ref/fb/flagcounterentitydata/). |
 
 ## Properties
 
 | Name               | Type             | Description |
 | ------------------ | ---------------- | ----------- |
-| teamId             | [TeamId](TeamId) |             |
+| teamId             | [TeamId](/vext/ref/fb/teamid/) |             |
 | enemyFlagProgress  | number           |             |
 | roundTime          | number           |             |
 | objectiveFlagCount | number           |             |
@@ -36,11 +36,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                           | Name            | Parameters                                     |
 | ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [FlagCounterEntityData](FlagCounterEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [FlagCounterEntityData](/vext/ref/fb/flagcounterentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [FlagCounterEntityData](FlagCounterEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [FlagCounterEntityData](/vext/ref/fb/flagcounterentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -48,4 +48,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

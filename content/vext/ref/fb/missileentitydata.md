@@ -3,7 +3,7 @@ title: MissileEntityData
 ---
 ### Base Classes
 
-[MeshProjectileEntityData](MeshProjectileEntityData)
+[MeshProjectileEntityData](/vext/ref/fb/meshprojectileentitydata/)
 
 ## Description
 
@@ -15,24 +15,24 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | MissileEntityData()                                                           | Create a new instance of this container type.                                                                              |
 | MissileEntityData(MissileEntityData other)                                    | Create a reference copy of an instance of the same type.                                                                   |
-| MissileEntityData([MeshProjectileEntityData](MeshProjectileEntityData) other) | Upcast an instance of type [MeshProjectileEntityData](MeshProjectileEntityData) to [MissileEntityData](MissileEntityData). |
-| MissileEntityData([ProjectileEntityData](ProjectileEntityData) other)         | Upcast an instance of type [ProjectileEntityData](ProjectileEntityData) to [MissileEntityData](MissileEntityData).         |
-| MissileEntityData([GamePhysicsEntityData](GamePhysicsEntityData) other)       | Upcast an instance of type [GamePhysicsEntityData](GamePhysicsEntityData) to [MissileEntityData](MissileEntityData).       |
-| MissileEntityData([GameEntityData](GameEntityData) other)                     | Upcast an instance of type [GameEntityData](GameEntityData) to [MissileEntityData](MissileEntityData).                     |
-| MissileEntityData([SpatialEntityData](SpatialEntityData) other)               | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [MissileEntityData](MissileEntityData).               |
-| MissileEntityData([EntityData](EntityData) other)                             | Upcast an instance of type [EntityData](EntityData) to [MissileEntityData](MissileEntityData).                             |
-| MissileEntityData([GameObjectData](GameObjectData) other)                     | Upcast an instance of type [GameObjectData](GameObjectData) to [MissileEntityData](MissileEntityData).                     |
-| MissileEntityData([GameDataContainer](GameDataContainer) other)               | Upcast an instance of type [GameDataContainer](GameDataContainer) to [MissileEntityData](MissileEntityData).               |
-| MissileEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other)  | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MissileEntityData](MissileEntityData).  |
+| MissileEntityData([MeshProjectileEntityData](/vext/ref/fb/meshprojectileentitydata/) other) | Upcast an instance of type [MeshProjectileEntityData](/vext/ref/fb/meshprojectileentitydata/) to [MissileEntityData](/vext/ref/fb/missileentitydata/). |
+| MissileEntityData([ProjectileEntityData](/vext/ref/fb/projectileentitydata/) other)         | Upcast an instance of type [ProjectileEntityData](/vext/ref/fb/projectileentitydata/) to [MissileEntityData](/vext/ref/fb/missileentitydata/).         |
+| MissileEntityData([GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata/) other)       | Upcast an instance of type [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata/) to [MissileEntityData](/vext/ref/fb/missileentitydata/).       |
+| MissileEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                     | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [MissileEntityData](/vext/ref/fb/missileentitydata/).                     |
+| MissileEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)               | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [MissileEntityData](/vext/ref/fb/missileentitydata/).               |
+| MissileEntityData([EntityData](/vext/ref/fb/entitydata/) other)                             | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [MissileEntityData](/vext/ref/fb/missileentitydata/).                             |
+| MissileEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                     | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [MissileEntityData](/vext/ref/fb/missileentitydata/).                     |
+| MissileEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)               | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [MissileEntityData](/vext/ref/fb/missileentitydata/).               |
+| MissileEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other)  | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MissileEntityData](/vext/ref/fb/missileentitydata/).  |
 
 ## Properties
 
 | Name                        | Type                                                 | Description |
 | --------------------------- | ---------------------------------------------------- | ----------- |
 | gravity                     | number                                               |             |
-| engineEffect                | [EffectBlueprint](EffectBlueprint)                   |             |
-| dudExplosion                | [ExplosionEntityData](ExplosionEntityData)           |             |
-| flyBySound                  | [SoundAsset](SoundAsset)                             |             |
+| engineEffect                | [EffectBlueprint](/vext/ref/fb/effectblueprint/)                   |             |
+| dudExplosion                | [ExplosionEntityData](/vext/ref/fb/explosionentitydata/)           |             |
+| flyBySound                  | [SoundAsset](/vext/ref/fb/soundasset/)                             |             |
 | engineStrength              | number                                               |             |
 | maxSpeed                    | number                                               |             |
 | engineTimeToIgnition        | number                                               |             |
@@ -41,16 +41,16 @@ A container type representing a Frostbite instance entry.
 | timeToArm                   | number                                               |             |
 | maxTurnAngle                | number                                               |             |
 | drag                        | number                                               |             |
-| nearTargetDetonation        | [NearTargetDetonationData](NearTargetDetonationData) |             |
-| defaultTeam                 | [TeamId](TeamId)                                     |             |
+| nearTargetDetonation        | [NearTargetDetonationData](/vext/ref/fb/neartargetdetonationdata/) |             |
+| defaultTeam                 | [TeamId](/vext/ref/fb/teamid/)                                     |             |
 | flyBySoundRadius            | number                                               |             |
 | flyBySoundSpeed             | number                                               |             |
 | impactImpulse               | number                                               |             |
 | damage                      | number                                               |             |
-| unguidedData                | [MissileUnguidedData](MissileUnguidedData)           |             |
-| warnTarget                  | [WarnTarget](WarnTarget)                             |             |
-| lockableInfo                | [MissileLockableInfoData](MissileLockableInfoData)   |             |
-| lockingController           | [LockingControllerData](LockingControllerData)       |             |
+| unguidedData                | [MissileUnguidedData](/vext/ref/fb/missileunguideddata/)           |             |
+| warnTarget                  | [WarnTarget](/vext/ref/fb/warntarget/)                             |             |
+| lockableInfo                | [MissileLockableInfoData](/vext/ref/fb/missilelockableinfodata/)   |             |
+| lockingController           | [LockingControllerData](/vext/ref/fb/lockingcontrollerdata/)       |             |
 | warnOnPointingMissile       | bool                                                 |             |
 | applyGravityWhenGuided      | bool                                                 |             |
 
@@ -58,11 +58,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                   | Name            | Parameters                                     |
 | -------------------------------------- | --------------- | ---------------------------------------------- |
-| [MissileEntityData](MissileEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [MissileEntityData](/vext/ref/fb/missileentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [MissileEntityData](MissileEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [MissileEntityData](/vext/ref/fb/missileentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -70,4 +70,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

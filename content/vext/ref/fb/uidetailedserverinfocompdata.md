@@ -3,7 +3,7 @@ title: UIDetailedServerInfoCompData
 ---
 ### Base Classes
 
-[UIComponentData](UIComponentData)
+[UIComponentData](/vext/ref/fb/uicomponentdata/)
 
 ## Description
 
@@ -15,25 +15,25 @@ A container type representing a Frostbite instance entry.
 | --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | UIDetailedServerInfoCompData()                                                          | Create a new instance of this container type.                                                                                                   |
 | UIDetailedServerInfoCompData(UIDetailedServerInfoCompData other)                        | Create a reference copy of an instance of the same type.                                                                                        |
-| UIDetailedServerInfoCompData([UIComponentData](UIComponentData) other)                  | Upcast an instance of type [UIComponentData](UIComponentData) to [UIDetailedServerInfoCompData](UIDetailedServerInfoCompData).                  |
-| UIDetailedServerInfoCompData([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [UIDetailedServerInfoCompData](UIDetailedServerInfoCompData).                                      |
-| UIDetailedServerInfoCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIDetailedServerInfoCompData](UIDetailedServerInfoCompData). |
+| UIDetailedServerInfoCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UIDetailedServerInfoCompData](/vext/ref/fb/uidetailedserverinfocompdata/).                  |
+| UIDetailedServerInfoCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UIDetailedServerInfoCompData](/vext/ref/fb/uidetailedserverinfocompdata/).                                      |
+| UIDetailedServerInfoCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIDetailedServerInfoCompData](/vext/ref/fb/uidetailedserverinfocompdata/). |
 
 ## Properties
 
 | Name     | Type                                       | Description |
 | -------- | ------------------------------------------ | ----------- |
-| settings | [ServerInfoSetting](ServerInfoSetting)\[\] |             |
+| settings | [ServerInfoSetting](/vext/ref/fb/serverinfosetting/)\[\] |             |
 
 ## Methods
 
 | Type                                                         | Name            | Parameters                                     |
 | ------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [UIDetailedServerInfoCompData](UIDetailedServerInfoCompData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [UIDetailedServerInfoCompData](/vext/ref/fb/uidetailedserverinfocompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [UIDetailedServerInfoCompData](UIDetailedServerInfoCompData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [UIDetailedServerInfoCompData](/vext/ref/fb/uidetailedserverinfocompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -41,4 +41,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

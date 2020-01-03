@@ -15,7 +15,7 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- |
 | Curve2D()                                                          | Create a new instance of this container type.                                                         |
 | Curve2D(Curve2D other)                                             | Create a reference copy of an instance of the same type.                                              |
-| Curve2D([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [Curve2D](Curve2D). |
+| Curve2D([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [Curve2D](/vext/ref/fb/curve2d/). |
 
 ## Properties
 
@@ -27,11 +27,11 @@ A container type representing a Frostbite instance entry.
 
 | Type               | Name            | Parameters                                     |
 | ------------------ | --------------- | ---------------------------------------------- |
-| [Curve2D](Curve2D) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [Curve2D](/vext/ref/fb/curve2d/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [Curve2D](Curve2D) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [Curve2D](/vext/ref/fb/curve2d/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -39,4 +39,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

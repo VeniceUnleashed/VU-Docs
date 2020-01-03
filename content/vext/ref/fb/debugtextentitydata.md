@@ -3,7 +3,7 @@ title: DebugTextEntityData
 ---
 ### Base Classes
 
-[SpatialEntityData](SpatialEntityData)
+[SpatialEntityData](/vext/ref/fb/spatialentitydata/)
 
 ## Description
 
@@ -15,11 +15,11 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
 | DebugTextEntityData()                                                          | Create a new instance of this container type.                                                                                 |
 | DebugTextEntityData(DebugTextEntityData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| DebugTextEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [DebugTextEntityData](DebugTextEntityData).              |
-| DebugTextEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [DebugTextEntityData](DebugTextEntityData).                            |
-| DebugTextEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [DebugTextEntityData](DebugTextEntityData).                    |
-| DebugTextEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [DebugTextEntityData](DebugTextEntityData).              |
-| DebugTextEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DebugTextEntityData](DebugTextEntityData). |
+| DebugTextEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [DebugTextEntityData](/vext/ref/fb/debugtextentitydata/).              |
+| DebugTextEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [DebugTextEntityData](/vext/ref/fb/debugtextentitydata/).                            |
+| DebugTextEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [DebugTextEntityData](/vext/ref/fb/debugtextentitydata/).                    |
+| DebugTextEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [DebugTextEntityData](/vext/ref/fb/debugtextentitydata/).              |
+| DebugTextEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DebugTextEntityData](/vext/ref/fb/debugtextentitydata/). |
 
 ## Properties
 
@@ -27,7 +27,7 @@ A container type representing a Frostbite instance entry.
 | ----------------- | --------------------------------- | ----------- |
 | textColor         | [Vec3](/vext/ref/shared/class/vec3) |             |
 | debugText         | string                            |             |
-| realm             | [Realm](Realm)                    |             |
+| realm             | [Realm](/vext/ref/fb/realm/)                    |             |
 | scale             | number                            |             |
 | visible           | bool                              |             |
 | centered          | bool                              |             |
@@ -38,11 +38,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                       | Name            | Parameters                                     |
 | ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [DebugTextEntityData](DebugTextEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [DebugTextEntityData](/vext/ref/fb/debugtextentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [DebugTextEntityData](DebugTextEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [DebugTextEntityData](/vext/ref/fb/debugtextentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -50,4 +50,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

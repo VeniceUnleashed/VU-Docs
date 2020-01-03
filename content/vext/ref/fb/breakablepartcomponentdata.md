@@ -3,7 +3,7 @@ title: BreakablePartComponentData
 ---
 ### Base Classes
 
-[DestructionPartComponentData](DestructionPartComponentData)
+[DestructionPartComponentData](/vext/ref/fb/destructionpartcomponentdata/)
 
 ## Description
 
@@ -15,11 +15,11 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | BreakablePartComponentData()                                                                   | Create a new instance of this container type.                                                                                                        |
 | BreakablePartComponentData(BreakablePartComponentData other)                                   | Create a reference copy of an instance of the same type.                                                                                             |
-| BreakablePartComponentData([DestructionPartComponentData](DestructionPartComponentData) other) | Upcast an instance of type [DestructionPartComponentData](DestructionPartComponentData) to [BreakablePartComponentData](BreakablePartComponentData). |
-| BreakablePartComponentData([ComponentData](ComponentData) other)                               | Upcast an instance of type [ComponentData](ComponentData) to [BreakablePartComponentData](BreakablePartComponentData).                               |
-| BreakablePartComponentData([GameObjectData](GameObjectData) other)                             | Upcast an instance of type [GameObjectData](GameObjectData) to [BreakablePartComponentData](BreakablePartComponentData).                             |
-| BreakablePartComponentData([GameDataContainer](GameDataContainer) other)                       | Upcast an instance of type [GameDataContainer](GameDataContainer) to [BreakablePartComponentData](BreakablePartComponentData).                       |
-| BreakablePartComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other)          | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BreakablePartComponentData](BreakablePartComponentData).          |
+| BreakablePartComponentData([DestructionPartComponentData](/vext/ref/fb/destructionpartcomponentdata/) other) | Upcast an instance of type [DestructionPartComponentData](/vext/ref/fb/destructionpartcomponentdata/) to [BreakablePartComponentData](/vext/ref/fb/breakablepartcomponentdata/). |
+| BreakablePartComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                               | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [BreakablePartComponentData](/vext/ref/fb/breakablepartcomponentdata/).                               |
+| BreakablePartComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                             | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [BreakablePartComponentData](/vext/ref/fb/breakablepartcomponentdata/).                             |
+| BreakablePartComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)                       | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [BreakablePartComponentData](/vext/ref/fb/breakablepartcomponentdata/).                       |
+| BreakablePartComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other)          | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BreakablePartComponentData](/vext/ref/fb/breakablepartcomponentdata/).          |
 
 ## Properties
 
@@ -33,11 +33,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                     | Name            | Parameters                                     |
 | -------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [BreakablePartComponentData](BreakablePartComponentData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [BreakablePartComponentData](/vext/ref/fb/breakablepartcomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [BreakablePartComponentData](BreakablePartComponentData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [BreakablePartComponentData](/vext/ref/fb/breakablepartcomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -45,4 +45,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

@@ -3,7 +3,7 @@ title: VegetationBaseEntityData
 ---
 ### Base Classes
 
-[GameEntityData](GameEntityData)
+[GameEntityData](/vext/ref/fb/gameentitydata/)
 
 ## Description
 
@@ -15,12 +15,12 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | VegetationBaseEntityData()                                                          | Create a new instance of this container type.                                                                                           |
 | VegetationBaseEntityData(VegetationBaseEntityData other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| VegetationBaseEntityData([GameEntityData](GameEntityData) other)                    | Upcast an instance of type [GameEntityData](GameEntityData) to [VegetationBaseEntityData](VegetationBaseEntityData).                    |
-| VegetationBaseEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [VegetationBaseEntityData](VegetationBaseEntityData).              |
-| VegetationBaseEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [VegetationBaseEntityData](VegetationBaseEntityData).                            |
-| VegetationBaseEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [VegetationBaseEntityData](VegetationBaseEntityData).                    |
-| VegetationBaseEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [VegetationBaseEntityData](VegetationBaseEntityData).              |
-| VegetationBaseEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VegetationBaseEntityData](VegetationBaseEntityData). |
+| VegetationBaseEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [VegetationBaseEntityData](/vext/ref/fb/vegetationbaseentitydata/).                    |
+| VegetationBaseEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [VegetationBaseEntityData](/vext/ref/fb/vegetationbaseentitydata/).              |
+| VegetationBaseEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [VegetationBaseEntityData](/vext/ref/fb/vegetationbaseentitydata/).                            |
+| VegetationBaseEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [VegetationBaseEntityData](/vext/ref/fb/vegetationbaseentitydata/).                    |
+| VegetationBaseEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [VegetationBaseEntityData](/vext/ref/fb/vegetationbaseentitydata/).              |
+| VegetationBaseEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VegetationBaseEntityData](/vext/ref/fb/vegetationbaseentitydata/). |
 
 ## Properties
 
@@ -29,19 +29,19 @@ A container type representing a Frostbite instance entry.
 | basePoseTransforms   | [LinearTransform](/vext/ref/shared/class/lineartransform)\[\] |             |
 | basePoseTranslations | [Vec3](/vext/ref/shared/class/vec3)\[\]                       |             |
 | hierarchy            | number\[\]                                                  |             |
-| mesh                 | [SkinnedMeshAsset](SkinnedMeshAsset)                        |             |
-| shadowMesh           | [SkinnedMeshAsset](SkinnedMeshAsset)                        |             |
-| physicsData          | [PhysicsEntityData](PhysicsEntityData)                      |             |
+| mesh                 | [SkinnedMeshAsset](/vext/ref/fb/skinnedmeshasset/)                        |             |
+| shadowMesh           | [SkinnedMeshAsset](/vext/ref/fb/skinnedmeshasset/)                        |             |
+| physicsData          | [PhysicsEntityData](/vext/ref/fb/physicsentitydata/)                      |             |
 
 ## Methods
 
 | Type                                                 | Name            | Parameters                                     |
 | ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [VegetationBaseEntityData](VegetationBaseEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [VegetationBaseEntityData](/vext/ref/fb/vegetationbaseentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [VegetationBaseEntityData](VegetationBaseEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [VegetationBaseEntityData](/vext/ref/fb/vegetationbaseentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -49,4 +49,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

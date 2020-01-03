@@ -3,7 +3,7 @@ title: SwimmingStateData
 ---
 ### Base Classes
 
-[CharacterStateData](CharacterStateData)
+[CharacterStateData](/vext/ref/fb/characterstatedata/)
 
 ## Description
 
@@ -15,8 +15,8 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | SwimmingStateData()                                                          | Create a new instance of this container type.                                                                             |
 | SwimmingStateData(SwimmingStateData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| SwimmingStateData([CharacterStateData](CharacterStateData) other)            | Upcast an instance of type [CharacterStateData](CharacterStateData) to [SwimmingStateData](SwimmingStateData).            |
-| SwimmingStateData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SwimmingStateData](SwimmingStateData). |
+| SwimmingStateData([CharacterStateData](/vext/ref/fb/characterstatedata/) other)            | Upcast an instance of type [CharacterStateData](/vext/ref/fb/characterstatedata/) to [SwimmingStateData](/vext/ref/fb/swimmingstatedata/).            |
+| SwimmingStateData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SwimmingStateData](/vext/ref/fb/swimmingstatedata/). |
 
 ## Properties
 
@@ -28,11 +28,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                   | Name            | Parameters                                     |
 | -------------------------------------- | --------------- | ---------------------------------------------- |
-| [SwimmingStateData](SwimmingStateData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [SwimmingStateData](/vext/ref/fb/swimmingstatedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [SwimmingStateData](SwimmingStateData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [SwimmingStateData](/vext/ref/fb/swimmingstatedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -40,4 +40,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

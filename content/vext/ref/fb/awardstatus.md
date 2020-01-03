@@ -19,17 +19,17 @@ A structure type representing a Frostbite data type.
 | code          | string                             |             |
 | currentValue  | number                             |             |
 | originalValue | number                             |             |
-| counters      | [CounterStatus](CounterStatus)\[\] |             |
+| counters      | [CounterStatus](/vext/ref/fb/counterstatus/)\[\] |             |
 | isCounting    | bool                               |             |
 
 ## Methods
 
 | Type                       | Name            | Parameters |
 | -------------------------- | --------------- | ---------- |
-| [AwardStatus](AwardStatus) | [Clone](#clone) |            |
+| [AwardStatus](/vext/ref/fb/awardstatus/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [AwardStatus](AwardStatus) **Clone**()
+> [AwardStatus](/vext/ref/fb/awardstatus/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                           | Name            | Parameters |
 | ---------------------------------------------- | --------------- | ---------- |
-| [FloatRangeDefaultZero](FloatRangeDefaultZero) | [Clone](#clone) |            |
+| [FloatRangeDefaultZero](/vext/ref/fb/floatrangedefaultzero/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [FloatRangeDefaultZero](FloatRangeDefaultZero) **Clone**()
+> [FloatRangeDefaultZero](/vext/ref/fb/floatrangedefaultzero/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

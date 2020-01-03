@@ -16,17 +16,17 @@ A structure type representing a Frostbite data type.
 
 | Name              | Type                     | Description |
 | ----------------- | ------------------------ | ----------- |
-| stanceSwitchSound | [SoundAsset](SoundAsset) |             |
+| stanceSwitchSound | [SoundAsset](/vext/ref/fb/soundasset/) |             |
 | validStances      | number\[\]               |             |
 
 ## Methods
 
 | Type                                           | Name            | Parameters |
 | ---------------------------------------------- | --------------- | ---------- |
-| [StanceSwitchSoundData](StanceSwitchSoundData) | [Clone](#clone) |            |
+| [StanceSwitchSoundData](/vext/ref/fb/stanceswitchsounddata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [StanceSwitchSoundData](StanceSwitchSoundData) **Clone**()
+> [StanceSwitchSoundData](/vext/ref/fb/stanceswitchsounddata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

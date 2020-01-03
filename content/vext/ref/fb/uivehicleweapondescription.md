@@ -3,7 +3,7 @@ title: UIVehicleWeaponDescription
 ---
 ### Base Classes
 
-[UIItemDescription](UIItemDescription)
+[UIItemDescription](/vext/ref/fb/uiitemdescription/)
 
 ## Description
 
@@ -15,8 +15,8 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | UIVehicleWeaponDescription()                                                          | Create a new instance of this container type.                                                                                               |
 | UIVehicleWeaponDescription(UIVehicleWeaponDescription other)                          | Create a reference copy of an instance of the same type.                                                                                    |
-| UIVehicleWeaponDescription([UIItemDescription](UIItemDescription) other)              | Upcast an instance of type [UIItemDescription](UIItemDescription) to [UIVehicleWeaponDescription](UIVehicleWeaponDescription).              |
-| UIVehicleWeaponDescription([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIVehicleWeaponDescription](UIVehicleWeaponDescription). |
+| UIVehicleWeaponDescription([UIItemDescription](/vext/ref/fb/uiitemdescription/) other)              | Upcast an instance of type [UIItemDescription](/vext/ref/fb/uiitemdescription/) to [UIVehicleWeaponDescription](/vext/ref/fb/uivehicleweapondescription/).              |
+| UIVehicleWeaponDescription([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIVehicleWeaponDescription](/vext/ref/fb/uivehicleweapondescription/). |
 
 ## Properties
 
@@ -28,11 +28,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                     | Name            | Parameters                                     |
 | -------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [UIVehicleWeaponDescription](UIVehicleWeaponDescription) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [UIVehicleWeaponDescription](/vext/ref/fb/uivehicleweapondescription/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [UIVehicleWeaponDescription](UIVehicleWeaponDescription) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [UIVehicleWeaponDescription](/vext/ref/fb/uivehicleweapondescription/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -40,4 +40,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

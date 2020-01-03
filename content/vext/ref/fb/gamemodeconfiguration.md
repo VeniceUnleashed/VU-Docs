@@ -3,7 +3,7 @@ title: GameModeConfiguration
 ---
 ### Base Classes
 
-[Asset](Asset)
+[Asset](/vext/ref/fb/asset/)
 
 ## Description
 
@@ -15,24 +15,24 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | GameModeConfiguration()                                                          | Create a new instance of this container type.                                                                                     |
 | GameModeConfiguration(GameModeConfiguration other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| GameModeConfiguration([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [GameModeConfiguration](GameModeConfiguration).                                      |
-| GameModeConfiguration([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GameModeConfiguration](GameModeConfiguration). |
+| GameModeConfiguration([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [GameModeConfiguration](/vext/ref/fb/gamemodeconfiguration/).                                      |
+| GameModeConfiguration([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GameModeConfiguration](/vext/ref/fb/gamemodeconfiguration/). |
 
 ## Properties
 
 | Name        | Type                                           | Description |
 | ----------- | ---------------------------------------------- | ----------- |
-| information | [GameModeInformation](GameModeInformation)\[\] |             |
+| information | [GameModeInformation](/vext/ref/fb/gamemodeinformation/)\[\] |             |
 
 ## Methods
 
 | Type                                           | Name            | Parameters                                     |
 | ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [GameModeConfiguration](GameModeConfiguration) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [GameModeConfiguration](/vext/ref/fb/gamemodeconfiguration/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [GameModeConfiguration](GameModeConfiguration) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [GameModeConfiguration](/vext/ref/fb/gamemodeconfiguration/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -40,4 +40,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

@@ -27,10 +27,10 @@ A structure type representing a Frostbite data type.
 
 | Type                             | Name            | Parameters |
 | -------------------------------- | --------------- | ---------- |
-| [AimingPoseData](AimingPoseData) | [Clone](#clone) |            |
+| [AimingPoseData](/vext/ref/fb/aimingposedata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [AimingPoseData](AimingPoseData) **Clone**()
+> [AimingPoseData](/vext/ref/fb/aimingposedata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

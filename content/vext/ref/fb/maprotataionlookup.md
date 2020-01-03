@@ -22,10 +22,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                     | Name            | Parameters |
 | ---------------------------------------- | --------------- | ---------- |
-| [MapRotataionLookup](MapRotataionLookup) | [Clone](#clone) |            |
+| [MapRotataionLookup](/vext/ref/fb/maprotataionlookup/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [MapRotataionLookup](MapRotataionLookup) **Clone**()
+> [MapRotataionLookup](/vext/ref/fb/maprotataionlookup/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

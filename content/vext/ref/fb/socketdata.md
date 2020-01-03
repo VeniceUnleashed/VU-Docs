@@ -15,7 +15,7 @@ A container type representing a Frostbite instance entry.
 | --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | SocketData()                                                          | Create a new instance of this container type.                                                               |
 | SocketData(SocketData other)                                          | Create a reference copy of an instance of the same type.                                                    |
-| SocketData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SocketData](SocketData). |
+| SocketData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SocketData](/vext/ref/fb/socketdata/). |
 
 ## Properties
 
@@ -23,12 +23,12 @@ A container type representing a Frostbite instance entry.
 | --------------------------- | ------------------------------------------------------- | ----------- |
 | boneRigidTransform          | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
 | transform                   | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
-| unlockAsset                 | [UnlockAssetBase](UnlockAssetBase)                      |             |
+| unlockAsset                 | [UnlockAssetBase](/vext/ref/fb/unlockassetbase/)                      |             |
 | boneId                      | number                                                  |             |
 | boneName                    | string                                                  |             |
-| availableObjects            | [SocketObjectDataBase](SocketObjectDataBase)\[\]        |             |
-| gearSlot                    | [GearSlot](GearSlot)                                    |             |
-| socketType                  | [SocketType](SocketType)                                |             |
+| availableObjects            | [SocketObjectDataBase](/vext/ref/fb/socketobjectdatabase/)\[\]        |             |
+| gearSlot                    | [GearSlot](/vext/ref/fb/gearslot/)                                    |             |
+| socketType                  | [SocketType](/vext/ref/fb/sockettype/)                                |             |
 | usesDefaultObject           | bool                                                    |             |
 | excluded                    | bool                                                    |             |
 | defaultEnableSocketEntities | bool                                                    |             |
@@ -40,11 +40,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                     | Name            | Parameters                                     |
 | ------------------------ | --------------- | ---------------------------------------------- |
-| [SocketData](SocketData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [SocketData](/vext/ref/fb/socketdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [SocketData](SocketData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [SocketData](/vext/ref/fb/socketdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -52,4 +52,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

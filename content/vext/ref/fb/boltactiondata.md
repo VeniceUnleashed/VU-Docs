@@ -28,10 +28,10 @@ A structure type representing a Frostbite data type.
 
 | Type                             | Name            | Parameters |
 | -------------------------------- | --------------- | ---------- |
-| [BoltActionData](BoltActionData) | [Clone](#clone) |            |
+| [BoltActionData](/vext/ref/fb/boltactiondata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [BoltActionData](BoltActionData) **Clone**()
+> [BoltActionData](/vext/ref/fb/boltactiondata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

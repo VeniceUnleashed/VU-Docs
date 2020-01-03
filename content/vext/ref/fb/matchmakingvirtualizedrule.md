@@ -17,16 +17,16 @@ A structure type representing a Frostbite data type.
 | Name               | Type                                                           | Description |
 | ------------------ | -------------------------------------------------------------- | ----------- |
 | minFitThreshold    | string                                                         |             |
-| virtualizationMode | [MatchmakingVirtualizationMode](MatchmakingVirtualizationMode) |             |
+| virtualizationMode | [MatchmakingVirtualizationMode](/vext/ref/fb/matchmakingvirtualizationmode/) |             |
 
 ## Methods
 
 | Type                                                     | Name            | Parameters |
 | -------------------------------------------------------- | --------------- | ---------- |
-| [MatchmakingVirtualizedRule](MatchmakingVirtualizedRule) | [Clone](#clone) |            |
+| [MatchmakingVirtualizedRule](/vext/ref/fb/matchmakingvirtualizedrule/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [MatchmakingVirtualizedRule](MatchmakingVirtualizedRule) **Clone**()
+> [MatchmakingVirtualizedRule](/vext/ref/fb/matchmakingvirtualizedrule/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

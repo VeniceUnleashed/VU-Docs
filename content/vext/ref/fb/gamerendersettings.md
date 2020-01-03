@@ -15,7 +15,7 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | GameRenderSettings()                                                          | Create a new instance of this container type.                                                                               |
 | GameRenderSettings(GameRenderSettings other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| GameRenderSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GameRenderSettings](GameRenderSettings). |
+| GameRenderSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GameRenderSettings](/vext/ref/fb/gamerendersettings/). |
 
 ## Properties
 
@@ -111,11 +111,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                     | Name            | Parameters                                     |
 | ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [GameRenderSettings](GameRenderSettings) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [GameRenderSettings](/vext/ref/fb/gamerendersettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [GameRenderSettings](GameRenderSettings) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [GameRenderSettings](/vext/ref/fb/gamerendersettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -123,4 +123,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

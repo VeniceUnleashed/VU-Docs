@@ -17,16 +17,16 @@ A structure type representing a Frostbite data type.
 | Name       | Type                     | Description |
 | ---------- | ------------------------ | ----------- |
 | eventName  | string                   |             |
-| soundAsset | [SoundAsset](SoundAsset) |             |
+| soundAsset | [SoundAsset](/vext/ref/fb/soundasset/) |             |
 
 ## Methods
 
 | Type                                       | Name            | Parameters |
 | ------------------------------------------ | --------------- | ---------- |
-| [UIAudioEventMapping](UIAudioEventMapping) | [Clone](#clone) |            |
+| [UIAudioEventMapping](/vext/ref/fb/uiaudioeventmapping/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [UIAudioEventMapping](UIAudioEventMapping) **Clone**()
+> [UIAudioEventMapping](/vext/ref/fb/uiaudioeventmapping/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

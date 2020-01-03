@@ -3,7 +3,7 @@ title: OrEntityData
 ---
 ### Base Classes
 
-[EntityData](EntityData)
+[EntityData](/vext/ref/fb/entitydata/)
 
 ## Description
 
@@ -15,16 +15,16 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
 | OrEntityData()                                                          | Create a new instance of this container type.                                                                   |
 | OrEntityData(OrEntityData other)                                        | Create a reference copy of an instance of the same type.                                                        |
-| OrEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [OrEntityData](OrEntityData).                            |
-| OrEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [OrEntityData](OrEntityData).                    |
-| OrEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [OrEntityData](OrEntityData).              |
-| OrEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [OrEntityData](OrEntityData). |
+| OrEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [OrEntityData](/vext/ref/fb/orentitydata/).                            |
+| OrEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [OrEntityData](/vext/ref/fb/orentitydata/).                    |
+| OrEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [OrEntityData](/vext/ref/fb/orentitydata/).              |
+| OrEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [OrEntityData](/vext/ref/fb/orentitydata/). |
 
 ## Properties
 
 | Name  | Type           | Description |
 | ----- | -------------- | ----------- |
-| realm | [Realm](Realm) |             |
+| realm | [Realm](/vext/ref/fb/realm/) |             |
 | in1   | bool           |             |
 | in2   | bool           |             |
 
@@ -32,11 +32,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                         | Name            | Parameters                                     |
 | ---------------------------- | --------------- | ---------------------------------------------- |
-| [OrEntityData](OrEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [OrEntityData](/vext/ref/fb/orentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [OrEntityData](OrEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [OrEntityData](/vext/ref/fb/orentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -44,4 +44,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

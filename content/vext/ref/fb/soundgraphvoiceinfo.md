@@ -16,17 +16,17 @@ A structure type representing a Frostbite data type.
 
 | Name            | Type                                             | Description |
 | --------------- | ------------------------------------------------ | ----------- |
-| plugins         | [SoundGraphPluginInfo](SoundGraphPluginInfo)\[\] |             |
+| plugins         | [SoundGraphPluginInfo](/vext/ref/fb/soundgraphplugininfo/)\[\] |             |
 | processingStage | number                                           |             |
 
 ## Methods
 
 | Type                                       | Name            | Parameters |
 | ------------------------------------------ | --------------- | ---------- |
-| [SoundGraphVoiceInfo](SoundGraphVoiceInfo) | [Clone](#clone) |            |
+| [SoundGraphVoiceInfo](/vext/ref/fb/soundgraphvoiceinfo/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SoundGraphVoiceInfo](SoundGraphVoiceInfo) **Clone**()
+> [SoundGraphVoiceInfo](/vext/ref/fb/soundgraphvoiceinfo/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

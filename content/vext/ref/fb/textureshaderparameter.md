@@ -17,16 +17,16 @@ A structure type representing a Frostbite data type.
 | Name          | Type                                 | Description |
 | ------------- | ------------------------------------ | ----------- |
 | parameterName | string                               |             |
-| value         | [TextureBaseAsset](TextureBaseAsset) |             |
+| value         | [TextureBaseAsset](/vext/ref/fb/texturebaseasset/) |             |
 
 ## Methods
 
 | Type                                             | Name            | Parameters |
 | ------------------------------------------------ | --------------- | ---------- |
-| [TextureShaderParameter](TextureShaderParameter) | [Clone](#clone) |            |
+| [TextureShaderParameter](/vext/ref/fb/textureshaderparameter/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [TextureShaderParameter](TextureShaderParameter) **Clone**()
+> [TextureShaderParameter](/vext/ref/fb/textureshaderparameter/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

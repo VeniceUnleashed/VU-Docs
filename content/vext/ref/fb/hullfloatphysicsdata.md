@@ -3,7 +3,7 @@ title: HullFloatPhysicsData
 ---
 ### Base Classes
 
-[FloatPhysicsData](FloatPhysicsData)
+[FloatPhysicsData](/vext/ref/fb/floatphysicsdata/)
 
 ## Description
 
@@ -15,8 +15,8 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | HullFloatPhysicsData()                                                          | Create a new instance of this container type.                                                                                   |
 | HullFloatPhysicsData(HullFloatPhysicsData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| HullFloatPhysicsData([FloatPhysicsData](FloatPhysicsData) other)                | Upcast an instance of type [FloatPhysicsData](FloatPhysicsData) to [HullFloatPhysicsData](HullFloatPhysicsData).                |
-| HullFloatPhysicsData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [HullFloatPhysicsData](HullFloatPhysicsData). |
+| HullFloatPhysicsData([FloatPhysicsData](/vext/ref/fb/floatphysicsdata/) other)                | Upcast an instance of type [FloatPhysicsData](/vext/ref/fb/floatphysicsdata/) to [HullFloatPhysicsData](/vext/ref/fb/hullfloatphysicsdata/).                |
+| HullFloatPhysicsData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [HullFloatPhysicsData](/vext/ref/fb/hullfloatphysicsdata/). |
 
 ## Properties
 
@@ -44,11 +44,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                         | Name            | Parameters                                     |
 | -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [HullFloatPhysicsData](HullFloatPhysicsData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [HullFloatPhysicsData](/vext/ref/fb/hullfloatphysicsdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [HullFloatPhysicsData](HullFloatPhysicsData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [HullFloatPhysicsData](/vext/ref/fb/hullfloatphysicsdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -56,4 +56,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

@@ -16,19 +16,19 @@ A structure type representing a Frostbite data type.
 
 | Name         | Type                                   | Description |
 | ------------ | -------------------------------------- | ----------- |
-| state        | [UIIconState](UIIconState)             |             |
+| state        | [UIIconState](/vext/ref/fb/uiiconstate/)             |             |
 | frameRate    | number                                 |             |
-| textureInfos | [UIMinimapIconUv](UIMinimapIconUv)\[\] |             |
+| textureInfos | [UIMinimapIconUv](/vext/ref/fb/uiminimapiconuv/)\[\] |             |
 | shouldRotate | bool                                   |             |
 
 ## Methods
 
 | Type                                                   | Name            | Parameters |
 | ------------------------------------------------------ | --------------- | ---------- |
-| [UIMinimapIconTextureState](UIMinimapIconTextureState) | [Clone](#clone) |            |
+| [UIMinimapIconTextureState](/vext/ref/fb/uiminimapicontexturestate/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [UIMinimapIconTextureState](UIMinimapIconTextureState) **Clone**()
+> [UIMinimapIconTextureState](/vext/ref/fb/uiminimapicontexturestate/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

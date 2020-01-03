@@ -16,18 +16,18 @@ A structure type representing a Frostbite data type.
 
 | Name     | Type                             | Description |
 | -------- | -------------------------------- | ----------- |
-| platform | [GamePlatform](GamePlatform)     |             |
-| language | [LanguageFormat](LanguageFormat) |             |
-| textures | [TextureAsset](TextureAsset)\[\] |             |
+| platform | [GamePlatform](/vext/ref/fb/gameplatform/)     |             |
+| language | [LanguageFormat](/vext/ref/fb/languageformat/) |             |
+| textures | [TextureAsset](/vext/ref/fb/textureasset/)\[\] |             |
 
 ## Methods
 
 | Type                               | Name            | Parameters |
 | ---------------------------------- | --------------- | ---------- |
-| [ManualDataEntry](ManualDataEntry) | [Clone](#clone) |            |
+| [ManualDataEntry](/vext/ref/fb/manualdataentry/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [ManualDataEntry](ManualDataEntry) **Clone**()
+> [ManualDataEntry](/vext/ref/fb/manualdataentry/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

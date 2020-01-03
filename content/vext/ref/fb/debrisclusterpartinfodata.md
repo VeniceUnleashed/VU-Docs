@@ -29,10 +29,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                   | Name            | Parameters |
 | ------------------------------------------------------ | --------------- | ---------- |
-| [DebrisClusterPartInfoData](DebrisClusterPartInfoData) | [Clone](#clone) |            |
+| [DebrisClusterPartInfoData](/vext/ref/fb/debrisclusterpartinfodata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [DebrisClusterPartInfoData](DebrisClusterPartInfoData) **Clone**()
+> [DebrisClusterPartInfoData](/vext/ref/fb/debrisclusterpartinfodata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

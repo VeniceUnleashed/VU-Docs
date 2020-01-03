@@ -3,7 +3,7 @@ title: ArtilleryStrikeEntityData
 ---
 ### Base Classes
 
-[GameEntityData](GameEntityData)
+[GameEntityData](/vext/ref/fb/gameentitydata/)
 
 ## Description
 
@@ -15,18 +15,18 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | ArtilleryStrikeEntityData()                                                          | Create a new instance of this container type.                                                                                             |
 | ArtilleryStrikeEntityData(ArtilleryStrikeEntityData other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| ArtilleryStrikeEntityData([GameEntityData](GameEntityData) other)                    | Upcast an instance of type [GameEntityData](GameEntityData) to [ArtilleryStrikeEntityData](ArtilleryStrikeEntityData).                    |
-| ArtilleryStrikeEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [ArtilleryStrikeEntityData](ArtilleryStrikeEntityData).              |
-| ArtilleryStrikeEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [ArtilleryStrikeEntityData](ArtilleryStrikeEntityData).                            |
-| ArtilleryStrikeEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [ArtilleryStrikeEntityData](ArtilleryStrikeEntityData).                    |
-| ArtilleryStrikeEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [ArtilleryStrikeEntityData](ArtilleryStrikeEntityData).              |
-| ArtilleryStrikeEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ArtilleryStrikeEntityData](ArtilleryStrikeEntityData). |
+| ArtilleryStrikeEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [ArtilleryStrikeEntityData](/vext/ref/fb/artillerystrikeentitydata/).                    |
+| ArtilleryStrikeEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [ArtilleryStrikeEntityData](/vext/ref/fb/artillerystrikeentitydata/).              |
+| ArtilleryStrikeEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [ArtilleryStrikeEntityData](/vext/ref/fb/artillerystrikeentitydata/).                            |
+| ArtilleryStrikeEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [ArtilleryStrikeEntityData](/vext/ref/fb/artillerystrikeentitydata/).                    |
+| ArtilleryStrikeEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [ArtilleryStrikeEntityData](/vext/ref/fb/artillerystrikeentitydata/).              |
+| ArtilleryStrikeEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ArtilleryStrikeEntityData](/vext/ref/fb/artillerystrikeentitydata/). |
 
 ## Properties
 
 | Name                             | Type                                   | Description |
 | -------------------------------- | -------------------------------------- | ----------- |
-| missileData                      | [MissileEntityData](MissileEntityData) |             |
+| missileData                      | [MissileEntityData](/vext/ref/fb/missileentitydata/) |             |
 | missileSpawnRadius               | number                                 |             |
 | durationOfArtilleryStrike        | number                                 |             |
 | maxDelayBetweenProjectiles       | number                                 |             |
@@ -45,11 +45,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                   | Name            | Parameters                                     |
 | ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [ArtilleryStrikeEntityData](ArtilleryStrikeEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [ArtilleryStrikeEntityData](/vext/ref/fb/artillerystrikeentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [ArtilleryStrikeEntityData](ArtilleryStrikeEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [ArtilleryStrikeEntityData](/vext/ref/fb/artillerystrikeentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -57,4 +57,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

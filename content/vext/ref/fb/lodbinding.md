@@ -16,18 +16,18 @@ A structure type representing a Frostbite data type.
 
 | Name                    | Type             | Description |
 | ----------------------- | ---------------- | ----------- |
-| disableControllerUpdate | [AntRef](AntRef) |             |
-| disablePoseUpdate       | [AntRef](AntRef) |             |
-| distanceFromCamera      | [AntRef](AntRef) |             |
+| disableControllerUpdate | [AntRef](/vext/ref/fb/antref/) |             |
+| disablePoseUpdate       | [AntRef](/vext/ref/fb/antref/) |             |
+| distanceFromCamera      | [AntRef](/vext/ref/fb/antref/) |             |
 
 ## Methods
 
 | Type                     | Name            | Parameters |
 | ------------------------ | --------------- | ---------- |
-| [LodBinding](LodBinding) | [Clone](#clone) |            |
+| [LodBinding](/vext/ref/fb/lodbinding/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [LodBinding](LodBinding) **Clone**()
+> [LodBinding](/vext/ref/fb/lodbinding/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

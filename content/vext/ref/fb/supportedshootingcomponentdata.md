@@ -3,7 +3,7 @@ title: SupportedShootingComponentData
 ---
 ### Base Classes
 
-[ComponentData](ComponentData)
+[ComponentData](/vext/ref/fb/componentdata/)
 
 ## Description
 
@@ -15,26 +15,26 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
 | SupportedShootingComponentData()                                                          | Create a new instance of this container type.                                                                                                       |
 | SupportedShootingComponentData(SupportedShootingComponentData other)                      | Create a reference copy of an instance of the same type.                                                                                            |
-| SupportedShootingComponentData([ComponentData](ComponentData) other)                      | Upcast an instance of type [ComponentData](ComponentData) to [SupportedShootingComponentData](SupportedShootingComponentData).                      |
-| SupportedShootingComponentData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [SupportedShootingComponentData](SupportedShootingComponentData).                    |
-| SupportedShootingComponentData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [SupportedShootingComponentData](SupportedShootingComponentData).              |
-| SupportedShootingComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SupportedShootingComponentData](SupportedShootingComponentData). |
+| SupportedShootingComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [SupportedShootingComponentData](/vext/ref/fb/supportedshootingcomponentdata/).                      |
+| SupportedShootingComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [SupportedShootingComponentData](/vext/ref/fb/supportedshootingcomponentdata/).                    |
+| SupportedShootingComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [SupportedShootingComponentData](/vext/ref/fb/supportedshootingcomponentdata/).              |
+| SupportedShootingComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SupportedShootingComponentData](/vext/ref/fb/supportedshootingcomponentdata/). |
 
 ## Properties
 
 | Name       | Type                                                       | Description |
 | ---------- | ---------------------------------------------------------- | ----------- |
-| commonData | [SupportedShootingCommonData](SupportedShootingCommonData) |             |
+| commonData | [SupportedShootingCommonData](/vext/ref/fb/supportedshootingcommondata/) |             |
 
 ## Methods
 
 | Type                                                             | Name            | Parameters                                     |
 | ---------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [SupportedShootingComponentData](SupportedShootingComponentData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [SupportedShootingComponentData](/vext/ref/fb/supportedshootingcomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [SupportedShootingComponentData](SupportedShootingComponentData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [SupportedShootingComponentData](/vext/ref/fb/supportedshootingcomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -42,4 +42,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

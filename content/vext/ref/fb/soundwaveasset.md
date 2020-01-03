@@ -3,7 +3,7 @@ title: SoundWaveAsset
 ---
 ### Base Classes
 
-[SoundDataAsset](SoundDataAsset)
+[SoundDataAsset](/vext/ref/fb/sounddataasset/)
 
 ## Description
 
@@ -15,19 +15,19 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | SoundWaveAsset()                                                          | Create a new instance of this container type.                                                                       |
 | SoundWaveAsset(SoundWaveAsset other)                                      | Create a reference copy of an instance of the same type.                                                            |
-| SoundWaveAsset([SoundDataAsset](SoundDataAsset) other)                    | Upcast an instance of type [SoundDataAsset](SoundDataAsset) to [SoundWaveAsset](SoundWaveAsset).                    |
-| SoundWaveAsset([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [SoundWaveAsset](SoundWaveAsset).                                      |
-| SoundWaveAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoundWaveAsset](SoundWaveAsset). |
+| SoundWaveAsset([SoundDataAsset](/vext/ref/fb/sounddataasset/) other)                    | Upcast an instance of type [SoundDataAsset](/vext/ref/fb/sounddataasset/) to [SoundWaveAsset](/vext/ref/fb/soundwaveasset/).                    |
+| SoundWaveAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [SoundWaveAsset](/vext/ref/fb/soundwaveasset/).                                      |
+| SoundWaveAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoundWaveAsset](/vext/ref/fb/soundwaveasset/). |
 
 ## Properties
 
 | Name                      | Type                                                       | Description |
 | ------------------------- | ---------------------------------------------------------- | ----------- |
-| variations                | [SoundWaveVariation](SoundWaveVariation)\[\]               |             |
-| localization              | [SoundWaveLocalizationInfo](SoundWaveLocalizationInfo)\[\] |             |
+| variations                | [SoundWaveVariation](/vext/ref/fb/soundwavevariation/)\[\]               |             |
+| localization              | [SoundWaveLocalizationInfo](/vext/ref/fb/soundwavelocalizationinfo/)\[\] |             |
 | subtitleStringIds         | string\[\]                                                 |             |
-| selection                 | [SoundWaveVariationSelection](SoundWaveVariationSelection) |             |
-| streamPool                | [StreamPoolAsset](StreamPoolAsset)                         |             |
+| selection                 | [SoundWaveVariationSelection](/vext/ref/fb/soundwavevariationselection/) |             |
+| streamPool                | [StreamPoolAsset](/vext/ref/fb/streampoolasset/)                         |             |
 | seekable                  | bool                                                       |             |
 | preferAvailableVariations | bool                                                       |             |
 | persistentVariationCount  | number                                                     |             |
@@ -40,11 +40,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                             | Name            | Parameters                                     |
 | -------------------------------- | --------------- | ---------------------------------------------- |
-| [SoundWaveAsset](SoundWaveAsset) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [SoundWaveAsset](/vext/ref/fb/soundwaveasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [SoundWaveAsset](SoundWaveAsset) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [SoundWaveAsset](/vext/ref/fb/soundwaveasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -52,4 +52,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

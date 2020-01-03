@@ -23,17 +23,17 @@ A structure type representing a Frostbite data type.
 | lengthOfVaultableObject | number                                 |             |
 | worldAngle              | number                                 |             |
 | distanceAfterVault      | number                                 |             |
-| vaultType               | [WaypointVaultType](WaypointVaultType) |             |
+| vaultType               | [WaypointVaultType](/vext/ref/fb/waypointvaulttype/) |             |
 | useClientPosition       | bool                                   |             |
 
 ## Methods
 
 | Type                                       | Name            | Parameters |
 | ------------------------------------------ | --------------- | ---------- |
-| [AILocoVaultTaskData](AILocoVaultTaskData) | [Clone](#clone) |            |
+| [AILocoVaultTaskData](/vext/ref/fb/ailocovaulttaskdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [AILocoVaultTaskData](AILocoVaultTaskData) **Clone**()
+> [AILocoVaultTaskData](/vext/ref/fb/ailocovaulttaskdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

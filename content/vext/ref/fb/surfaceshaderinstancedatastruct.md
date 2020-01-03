@@ -16,20 +16,20 @@ A structure type representing a Frostbite data type.
 
 | Name                  | Type                                                         | Description |
 | --------------------- | ------------------------------------------------------------ | ----------- |
-| shader                | [SurfaceShaderBaseAsset](SurfaceShaderBaseAsset)             |             |
-| boolParameters        | [BoolShaderParameter](BoolShaderParameter)\[\]               |             |
-| vectorParameters      | [VectorShaderParameter](VectorShaderParameter)\[\]           |             |
-| vectorArrayParameters | [VectorArrayShaderParameter](VectorArrayShaderParameter)\[\] |             |
-| textureParameters     | [TextureShaderParameter](TextureShaderParameter)\[\]         |             |
+| shader                | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset/)             |             |
+| boolParameters        | [BoolShaderParameter](/vext/ref/fb/boolshaderparameter/)\[\]               |             |
+| vectorParameters      | [VectorShaderParameter](/vext/ref/fb/vectorshaderparameter/)\[\]           |             |
+| vectorArrayParameters | [VectorArrayShaderParameter](/vext/ref/fb/vectorarrayshaderparameter/)\[\] |             |
+| textureParameters     | [TextureShaderParameter](/vext/ref/fb/textureshaderparameter/)\[\]         |             |
 
 ## Methods
 
 | Type                                                               | Name            | Parameters |
 | ------------------------------------------------------------------ | --------------- | ---------- |
-| [SurfaceShaderInstanceDataStruct](SurfaceShaderInstanceDataStruct) | [Clone](#clone) |            |
+| [SurfaceShaderInstanceDataStruct](/vext/ref/fb/surfaceshaderinstancedatastruct/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SurfaceShaderInstanceDataStruct](SurfaceShaderInstanceDataStruct) **Clone**()
+> [SurfaceShaderInstanceDataStruct](/vext/ref/fb/surfaceshaderinstancedatastruct/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

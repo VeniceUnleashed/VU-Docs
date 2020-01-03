@@ -27,10 +27,10 @@ A structure type representing a Frostbite data type.
 
 | Type                             | Name            | Parameters |
 | -------------------------------- | --------------- | ---------- |
-| [DecalAtlasTile](DecalAtlasTile) | [Clone](#clone) |            |
+| [DecalAtlasTile](/vext/ref/fb/decalatlastile/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [DecalAtlasTile](DecalAtlasTile) **Clone**()
+> [DecalAtlasTile](/vext/ref/fb/decalatlastile/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -18,7 +18,7 @@ A structure type representing a Frostbite data type.
 | ------------- | ---------------------------------------------------------- | ----------- |
 | name          | string                                                     |             |
 | description   | string                                                     |             |
-| components    | [LevelDescriptionComponent](LevelDescriptionComponent)\[\] |             |
+| components    | [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent/)\[\] |             |
 | isCoop        | bool                                                       |             |
 | isMenu        | bool                                                       |             |
 | isMultiplayer | bool                                                       |             |
@@ -27,10 +27,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                 | Name            | Parameters |
 | ------------------------------------ | --------------- | ---------- |
-| [LevelDescription](LevelDescription) | [Clone](#clone) |            |
+| [LevelDescription](/vext/ref/fb/leveldescription/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [LevelDescription](LevelDescription) **Clone**()
+> [LevelDescription](/vext/ref/fb/leveldescription/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

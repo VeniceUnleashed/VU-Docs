@@ -16,19 +16,19 @@ A structure type representing a Frostbite data type.
 
 | Name                | Type                                                           | Description |
 | ------------------- | -------------------------------------------------------------- | ----------- |
-| partNetworkIdRanges | [IndexRange](IndexRange)\[\]                                   |             |
+| partNetworkIdRanges | [IndexRange](/vext/ref/fb/indexrange/)\[\]                                   |             |
 | networkIdCount      | number                                                         |             |
-| childNetworkInfos   | [ChildStaticModelNetworkInfo](ChildStaticModelNetworkInfo)\[\] |             |
+| childNetworkInfos   | [ChildStaticModelNetworkInfo](/vext/ref/fb/childstaticmodelnetworkinfo/)\[\] |             |
 | childNetworkIdCount | number                                                         |             |
 
 ## Methods
 
 | Type                                             | Name            | Parameters |
 | ------------------------------------------------ | --------------- | ---------- |
-| [StaticModelNetworkInfo](StaticModelNetworkInfo) | [Clone](#clone) |            |
+| [StaticModelNetworkInfo](/vext/ref/fb/staticmodelnetworkinfo/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [StaticModelNetworkInfo](StaticModelNetworkInfo) **Clone**()
+> [StaticModelNetworkInfo](/vext/ref/fb/staticmodelnetworkinfo/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

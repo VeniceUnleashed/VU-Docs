@@ -30,10 +30,10 @@ A structure type representing a Frostbite data type.
 
 | Type                             | Name            | Parameters |
 | -------------------------------- | --------------- | ---------- |
-| [ScreenshotInfo](ScreenshotInfo) | [Clone](#clone) |            |
+| [ScreenshotInfo](/vext/ref/fb/screenshotinfo/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [ScreenshotInfo](ScreenshotInfo) **Clone**()
+> [ScreenshotInfo](/vext/ref/fb/screenshotinfo/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

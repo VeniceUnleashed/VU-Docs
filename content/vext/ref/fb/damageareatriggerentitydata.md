@@ -3,7 +3,7 @@ title: DamageAreaTriggerEntityData
 ---
 ### Base Classes
 
-[TriggerEntityData](TriggerEntityData)
+[TriggerEntityData](/vext/ref/fb/triggerentitydata/)
 
 ## Description
 
@@ -15,20 +15,20 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | DamageAreaTriggerEntityData()                                                          | Create a new instance of this container type.                                                                                                 |
 | DamageAreaTriggerEntityData(DamageAreaTriggerEntityData other)                         | Create a reference copy of an instance of the same type.                                                                                      |
-| DamageAreaTriggerEntityData([TriggerEntityData](TriggerEntityData) other)              | Upcast an instance of type [TriggerEntityData](TriggerEntityData) to [DamageAreaTriggerEntityData](DamageAreaTriggerEntityData).              |
-| DamageAreaTriggerEntityData([GameEntityData](GameEntityData) other)                    | Upcast an instance of type [GameEntityData](GameEntityData) to [DamageAreaTriggerEntityData](DamageAreaTriggerEntityData).                    |
-| DamageAreaTriggerEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [DamageAreaTriggerEntityData](DamageAreaTriggerEntityData).              |
-| DamageAreaTriggerEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [DamageAreaTriggerEntityData](DamageAreaTriggerEntityData).                            |
-| DamageAreaTriggerEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [DamageAreaTriggerEntityData](DamageAreaTriggerEntityData).                    |
-| DamageAreaTriggerEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [DamageAreaTriggerEntityData](DamageAreaTriggerEntityData).              |
-| DamageAreaTriggerEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DamageAreaTriggerEntityData](DamageAreaTriggerEntityData). |
+| DamageAreaTriggerEntityData([TriggerEntityData](/vext/ref/fb/triggerentitydata/) other)              | Upcast an instance of type [TriggerEntityData](/vext/ref/fb/triggerentitydata/) to [DamageAreaTriggerEntityData](/vext/ref/fb/damageareatriggerentitydata/).              |
+| DamageAreaTriggerEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [DamageAreaTriggerEntityData](/vext/ref/fb/damageareatriggerentitydata/).                    |
+| DamageAreaTriggerEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [DamageAreaTriggerEntityData](/vext/ref/fb/damageareatriggerentitydata/).              |
+| DamageAreaTriggerEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [DamageAreaTriggerEntityData](/vext/ref/fb/damageareatriggerentitydata/).                            |
+| DamageAreaTriggerEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [DamageAreaTriggerEntityData](/vext/ref/fb/damageareatriggerentitydata/).                    |
+| DamageAreaTriggerEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [DamageAreaTriggerEntityData](/vext/ref/fb/damageareatriggerentitydata/).              |
+| DamageAreaTriggerEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DamageAreaTriggerEntityData](/vext/ref/fb/damageareatriggerentitydata/). |
 
 ## Properties
 
 | Name                            | Type             | Description |
 | ------------------------------- | ---------------- | ----------- |
 | damagePerSecond                 | number           |             |
-| teamOfImmortalCharacters        | [TeamId](TeamId) |             |
+| teamOfImmortalCharacters        | [TeamId](/vext/ref/fb/teamid/) |             |
 | damageTime                      | number           |             |
 | damageVehicles                  | bool             |             |
 | damageBangers                   | bool             |             |
@@ -40,11 +40,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                       | Name            | Parameters                                     |
 | ---------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [DamageAreaTriggerEntityData](DamageAreaTriggerEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [DamageAreaTriggerEntityData](/vext/ref/fb/damageareatriggerentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [DamageAreaTriggerEntityData](DamageAreaTriggerEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [DamageAreaTriggerEntityData](/vext/ref/fb/damageareatriggerentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -52,4 +52,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

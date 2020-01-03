@@ -3,7 +3,7 @@ title: CoopLobbyEntityData
 ---
 ### Base Classes
 
-[GameEntityData](GameEntityData)
+[GameEntityData](/vext/ref/fb/gameentitydata/)
 
 ## Description
 
@@ -15,12 +15,12 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
 | CoopLobbyEntityData()                                                          | Create a new instance of this container type.                                                                                 |
 | CoopLobbyEntityData(CoopLobbyEntityData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| CoopLobbyEntityData([GameEntityData](GameEntityData) other)                    | Upcast an instance of type [GameEntityData](GameEntityData) to [CoopLobbyEntityData](CoopLobbyEntityData).                    |
-| CoopLobbyEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [CoopLobbyEntityData](CoopLobbyEntityData).              |
-| CoopLobbyEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [CoopLobbyEntityData](CoopLobbyEntityData).                            |
-| CoopLobbyEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [CoopLobbyEntityData](CoopLobbyEntityData).                    |
-| CoopLobbyEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [CoopLobbyEntityData](CoopLobbyEntityData).              |
-| CoopLobbyEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CoopLobbyEntityData](CoopLobbyEntityData). |
+| CoopLobbyEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [CoopLobbyEntityData](/vext/ref/fb/cooplobbyentitydata/).                    |
+| CoopLobbyEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [CoopLobbyEntityData](/vext/ref/fb/cooplobbyentitydata/).              |
+| CoopLobbyEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [CoopLobbyEntityData](/vext/ref/fb/cooplobbyentitydata/).                            |
+| CoopLobbyEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [CoopLobbyEntityData](/vext/ref/fb/cooplobbyentitydata/).                    |
+| CoopLobbyEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [CoopLobbyEntityData](/vext/ref/fb/cooplobbyentitydata/).              |
+| CoopLobbyEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CoopLobbyEntityData](/vext/ref/fb/cooplobbyentitydata/). |
 
 ## Properties
 
@@ -33,11 +33,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                       | Name            | Parameters                                     |
 | ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [CoopLobbyEntityData](CoopLobbyEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [CoopLobbyEntityData](/vext/ref/fb/cooplobbyentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [CoopLobbyEntityData](CoopLobbyEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [CoopLobbyEntityData](/vext/ref/fb/cooplobbyentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -45,4 +45,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

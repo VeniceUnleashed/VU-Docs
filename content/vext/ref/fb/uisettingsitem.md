@@ -17,17 +17,17 @@ A structure type representing a Frostbite data type.
 | Name            | Type                                   | Description |
 | --------------- | -------------------------------------- | ----------- |
 | nameSid         | string                                 |             |
-| startEndSymbols | [UISettingSymbols](UISettingSymbols)   |             |
-| setting         | [ProfileOptionData](ProfileOptionData) |             |
+| startEndSymbols | [UISettingSymbols](/vext/ref/fb/uisettingsymbols/)   |             |
+| setting         | [ProfileOptionData](/vext/ref/fb/profileoptiondata/) |             |
 
 ## Methods
 
 | Type                             | Name            | Parameters |
 | -------------------------------- | --------------- | ---------- |
-| [UISettingsItem](UISettingsItem) | [Clone](#clone) |            |
+| [UISettingsItem](/vext/ref/fb/uisettingsitem/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [UISettingsItem](UISettingsItem) **Clone**()
+> [UISettingsItem](/vext/ref/fb/uisettingsitem/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

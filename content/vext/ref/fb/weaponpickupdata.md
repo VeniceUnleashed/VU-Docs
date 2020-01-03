@@ -16,7 +16,7 @@ A structure type representing a Frostbite data type.
 
 | Name               | Type                                             | Description |
 | ------------------ | ------------------------------------------------ | ----------- |
-| weapon             | [SoldierWeaponBlueprint](SoldierWeaponBlueprint) |             |
+| weapon             | [SoldierWeaponBlueprint](/vext/ref/fb/soldierweaponblueprint/) |             |
 | weaponSlot         | number                                           |             |
 | altWeaponSlot      | number                                           |             |
 | linkedToWeaponSlot | number                                           |             |
@@ -27,10 +27,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                 | Name            | Parameters |
 | ------------------------------------ | --------------- | ---------- |
-| [WeaponPickupData](WeaponPickupData) | [Clone](#clone) |            |
+| [WeaponPickupData](/vext/ref/fb/weaponpickupdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [WeaponPickupData](WeaponPickupData) **Clone**()
+> [WeaponPickupData](/vext/ref/fb/weaponpickupdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

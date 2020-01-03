@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                   | Name            | Parameters |
 | -------------------------------------- | --------------- | ---------- |
-| [UILeaderboardData](UILeaderboardData) | [Clone](#clone) |            |
+| [UILeaderboardData](/vext/ref/fb/uileaderboarddata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [UILeaderboardData](UILeaderboardData) **Clone**()
+> [UILeaderboardData](/vext/ref/fb/uileaderboarddata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

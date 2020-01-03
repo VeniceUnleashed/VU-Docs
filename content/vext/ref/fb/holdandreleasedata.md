@@ -28,10 +28,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                     | Name            | Parameters |
 | ---------------------------------------- | --------------- | ---------- |
-| [HoldAndReleaseData](HoldAndReleaseData) | [Clone](#clone) |            |
+| [HoldAndReleaseData](/vext/ref/fb/holdandreleasedata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [HoldAndReleaseData](HoldAndReleaseData) **Clone**()
+> [HoldAndReleaseData](/vext/ref/fb/holdandreleasedata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

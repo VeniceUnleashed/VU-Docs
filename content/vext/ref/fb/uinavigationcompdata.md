@@ -3,7 +3,7 @@ title: UINavigationCompData
 ---
 ### Base Classes
 
-[UIComponentData](UIComponentData)
+[UIComponentData](/vext/ref/fb/uicomponentdata/)
 
 ## Description
 
@@ -15,19 +15,19 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | UINavigationCompData()                                                          | Create a new instance of this container type.                                                                                   |
 | UINavigationCompData(UINavigationCompData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| UINavigationCompData([UIComponentData](UIComponentData) other)                  | Upcast an instance of type [UIComponentData](UIComponentData) to [UINavigationCompData](UINavigationCompData).                  |
-| UINavigationCompData([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [UINavigationCompData](UINavigationCompData).                                      |
-| UINavigationCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UINavigationCompData](UINavigationCompData). |
+| UINavigationCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UINavigationCompData](/vext/ref/fb/uinavigationcompdata/).                  |
+| UINavigationCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UINavigationCompData](/vext/ref/fb/uinavigationcompdata/).                                      |
+| UINavigationCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UINavigationCompData](/vext/ref/fb/uinavigationcompdata/). |
 
 ## Methods
 
 | Type                                         | Name            | Parameters                                     |
 | -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [UINavigationCompData](UINavigationCompData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [UINavigationCompData](/vext/ref/fb/uinavigationcompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [UINavigationCompData](UINavigationCompData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [UINavigationCompData](/vext/ref/fb/uinavigationcompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -35,4 +35,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

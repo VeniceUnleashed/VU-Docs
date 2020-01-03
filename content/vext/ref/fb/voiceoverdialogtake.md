@@ -16,16 +16,16 @@ A structure type representing a Frostbite data type.
 
 | Name | Type                             | Description |
 | ---- | -------------------------------- | ----------- |
-| wave | [SoundWaveAsset](SoundWaveAsset) |             |
+| wave | [SoundWaveAsset](/vext/ref/fb/soundwaveasset/) |             |
 
 ## Methods
 
 | Type                                       | Name            | Parameters |
 | ------------------------------------------ | --------------- | ---------- |
-| [VoiceOverDialogTake](VoiceOverDialogTake) | [Clone](#clone) |            |
+| [VoiceOverDialogTake](/vext/ref/fb/voiceoverdialogtake/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [VoiceOverDialogTake](VoiceOverDialogTake) **Clone**()
+> [VoiceOverDialogTake](/vext/ref/fb/voiceoverdialogtake/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

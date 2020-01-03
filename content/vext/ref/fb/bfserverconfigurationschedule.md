@@ -18,16 +18,16 @@ A structure type representing a Frostbite data type.
 | -------- | ------------------------------------------------------ | ----------- |
 | licenses | string\[\]                                             |             |
 | levels   | string\[\]                                             |             |
-| data     | [BFServerConfigurationData](BFServerConfigurationData) |             |
+| data     | [BFServerConfigurationData](/vext/ref/fb/bfserverconfigurationdata/) |             |
 
 ## Methods
 
 | Type                                                           | Name            | Parameters |
 | -------------------------------------------------------------- | --------------- | ---------- |
-| [BFServerConfigurationSchedule](BFServerConfigurationSchedule) | [Clone](#clone) |            |
+| [BFServerConfigurationSchedule](/vext/ref/fb/bfserverconfigurationschedule/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [BFServerConfigurationSchedule](BFServerConfigurationSchedule) **Clone**()
+> [BFServerConfigurationSchedule](/vext/ref/fb/bfserverconfigurationschedule/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

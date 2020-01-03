@@ -33,10 +33,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                           | Name            | Parameters |
 | ---------------------------------------------- | --------------- | ---------- |
-| [AirMissileJammingData](AirMissileJammingData) | [Clone](#clone) |            |
+| [AirMissileJammingData](/vext/ref/fb/airmissilejammingdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [AirMissileJammingData](AirMissileJammingData) **Clone**()
+> [AirMissileJammingData](/vext/ref/fb/airmissilejammingdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

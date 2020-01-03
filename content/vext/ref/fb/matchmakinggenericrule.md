@@ -19,7 +19,7 @@ A structure type representing a Frostbite data type.
 | rule            | string                                             |             |
 | minFitThresHold | string                                             |             |
 | setting         | string                                             |             |
-| desiredValues   | [MatchmakingRuleString](MatchmakingRuleString)\[\] |             |
+| desiredValues   | [MatchmakingRuleString](/vext/ref/fb/matchmakingrulestring/)\[\] |             |
 | ignoreIfDefault | bool                                               |             |
 | mergeValues     | bool                                               |             |
 | sortValues      | bool                                               |             |
@@ -28,10 +28,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                             | Name            | Parameters |
 | ------------------------------------------------ | --------------- | ---------- |
-| [MatchmakingGenericRule](MatchmakingGenericRule) | [Clone](#clone) |            |
+| [MatchmakingGenericRule](/vext/ref/fb/matchmakinggenericrule/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [MatchmakingGenericRule](MatchmakingGenericRule) **Clone**()
+> [MatchmakingGenericRule](/vext/ref/fb/matchmakinggenericrule/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

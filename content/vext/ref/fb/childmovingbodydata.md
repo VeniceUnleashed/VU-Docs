@@ -3,7 +3,7 @@ title: ChildMovingBodyData
 ---
 ### Base Classes
 
-[LinearMovingBodyData](LinearMovingBodyData)
+[LinearMovingBodyData](/vext/ref/fb/linearmovingbodydata/)
 
 ## Description
 
@@ -15,9 +15,9 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
 | ChildMovingBodyData()                                                          | Create a new instance of this container type.                                                                                 |
 | ChildMovingBodyData(ChildMovingBodyData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| ChildMovingBodyData([LinearMovingBodyData](LinearMovingBodyData) other)        | Upcast an instance of type [LinearMovingBodyData](LinearMovingBodyData) to [ChildMovingBodyData](ChildMovingBodyData).        |
-| ChildMovingBodyData([MovingBodyData](MovingBodyData) other)                    | Upcast an instance of type [MovingBodyData](MovingBodyData) to [ChildMovingBodyData](ChildMovingBodyData).                    |
-| ChildMovingBodyData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ChildMovingBodyData](ChildMovingBodyData). |
+| ChildMovingBodyData([LinearMovingBodyData](/vext/ref/fb/linearmovingbodydata/) other)        | Upcast an instance of type [LinearMovingBodyData](/vext/ref/fb/linearmovingbodydata/) to [ChildMovingBodyData](/vext/ref/fb/childmovingbodydata/).        |
+| ChildMovingBodyData([MovingBodyData](/vext/ref/fb/movingbodydata/) other)                    | Upcast an instance of type [MovingBodyData](/vext/ref/fb/movingbodydata/) to [ChildMovingBodyData](/vext/ref/fb/childmovingbodydata/).                    |
+| ChildMovingBodyData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ChildMovingBodyData](/vext/ref/fb/childmovingbodydata/). |
 
 ## Properties
 
@@ -25,7 +25,7 @@ A container type representing a Frostbite instance entry.
 | -------------- | -------------------------------------------- | ----------- |
 | inputDelay     | number                                       |             |
 | speed          | number                                       |             |
-| inputAction    | [EntryInputActionEnum](EntryInputActionEnum) |             |
+| inputAction    | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum/) |             |
 | triggerImpulse | number                                       |             |
 | isOneShotInput | bool                                         |             |
 
@@ -33,11 +33,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                       | Name            | Parameters                                     |
 | ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [ChildMovingBodyData](ChildMovingBodyData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [ChildMovingBodyData](/vext/ref/fb/childmovingbodydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [ChildMovingBodyData](ChildMovingBodyData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [ChildMovingBodyData](/vext/ref/fb/childmovingbodydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -45,4 +45,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

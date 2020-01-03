@@ -3,7 +3,7 @@ title: InterfaceDescriptorData
 ---
 ### Base Classes
 
-[DynamicDataContainer](DynamicDataContainer)
+[DynamicDataContainer](/vext/ref/fb/dynamicdatacontainer/)
 
 ## Description
 
@@ -15,27 +15,27 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | InterfaceDescriptorData()                                                          | Create a new instance of this container type.                                                                                         |
 | InterfaceDescriptorData(InterfaceDescriptorData other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| InterfaceDescriptorData([DynamicDataContainer](DynamicDataContainer) other)        | Upcast an instance of type [DynamicDataContainer](DynamicDataContainer) to [InterfaceDescriptorData](InterfaceDescriptorData).        |
-| InterfaceDescriptorData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [InterfaceDescriptorData](InterfaceDescriptorData). |
+| InterfaceDescriptorData([DynamicDataContainer](/vext/ref/fb/dynamicdatacontainer/) other)        | Upcast an instance of type [DynamicDataContainer](/vext/ref/fb/dynamicdatacontainer/) to [InterfaceDescriptorData](/vext/ref/fb/interfacedescriptordata/).        |
+| InterfaceDescriptorData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [InterfaceDescriptorData](/vext/ref/fb/interfacedescriptordata/). |
 
 ## Properties
 
 | Name         | Type                             | Description |
 | ------------ | -------------------------------- | ----------- |
-| inputEvents  | [DynamicEvent](DynamicEvent)\[\] |             |
-| outputEvents | [DynamicEvent](DynamicEvent)\[\] |             |
-| inputLinks   | [DynamicLink](DynamicLink)\[\]   |             |
-| outputLinks  | [DynamicLink](DynamicLink)\[\]   |             |
+| inputEvents  | [DynamicEvent](/vext/ref/fb/dynamicevent/)\[\] |             |
+| outputEvents | [DynamicEvent](/vext/ref/fb/dynamicevent/)\[\] |             |
+| inputLinks   | [DynamicLink](/vext/ref/fb/dynamiclink/)\[\]   |             |
+| outputLinks  | [DynamicLink](/vext/ref/fb/dynamiclink/)\[\]   |             |
 
 ## Methods
 
 | Type                                               | Name            | Parameters                                     |
 | -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [InterfaceDescriptorData](InterfaceDescriptorData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [InterfaceDescriptorData](/vext/ref/fb/interfacedescriptordata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [InterfaceDescriptorData](InterfaceDescriptorData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [InterfaceDescriptorData](/vext/ref/fb/interfacedescriptordata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -43,4 +43,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

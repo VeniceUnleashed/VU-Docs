@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                         | Name            | Parameters |
 | ------------------------------------------------------------ | --------------- | ---------- |
-| [SimpleMovementActionTimeData](SimpleMovementActionTimeData) | [Clone](#clone) |            |
+| [SimpleMovementActionTimeData](/vext/ref/fb/simplemovementactiontimedata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SimpleMovementActionTimeData](SimpleMovementActionTimeData) **Clone**()
+> [SimpleMovementActionTimeData](/vext/ref/fb/simplemovementactiontimedata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

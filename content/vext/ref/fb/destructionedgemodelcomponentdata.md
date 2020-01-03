@@ -3,7 +3,7 @@ title: DestructionEdgeModelComponentData
 ---
 ### Base Classes
 
-[ComponentData](ComponentData)
+[ComponentData](/vext/ref/fb/componentdata/)
 
 ## Description
 
@@ -15,20 +15,20 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DestructionEdgeModelComponentData()                                                          | Create a new instance of this container type.                                                                                                             |
 | DestructionEdgeModelComponentData(DestructionEdgeModelComponentData other)                   | Create a reference copy of an instance of the same type.                                                                                                  |
-| DestructionEdgeModelComponentData([ComponentData](ComponentData) other)                      | Upcast an instance of type [ComponentData](ComponentData) to [DestructionEdgeModelComponentData](DestructionEdgeModelComponentData).                      |
-| DestructionEdgeModelComponentData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [DestructionEdgeModelComponentData](DestructionEdgeModelComponentData).                    |
-| DestructionEdgeModelComponentData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [DestructionEdgeModelComponentData](DestructionEdgeModelComponentData).              |
-| DestructionEdgeModelComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DestructionEdgeModelComponentData](DestructionEdgeModelComponentData). |
+| DestructionEdgeModelComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [DestructionEdgeModelComponentData](/vext/ref/fb/destructionedgemodelcomponentdata/).                      |
+| DestructionEdgeModelComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [DestructionEdgeModelComponentData](/vext/ref/fb/destructionedgemodelcomponentdata/).                    |
+| DestructionEdgeModelComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [DestructionEdgeModelComponentData](/vext/ref/fb/destructionedgemodelcomponentdata/).              |
+| DestructionEdgeModelComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DestructionEdgeModelComponentData](/vext/ref/fb/destructionedgemodelcomponentdata/). |
 
 ## Methods
 
 | Type                                                                   | Name            | Parameters                                     |
 | ---------------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [DestructionEdgeModelComponentData](DestructionEdgeModelComponentData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [DestructionEdgeModelComponentData](/vext/ref/fb/destructionedgemodelcomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [DestructionEdgeModelComponentData](DestructionEdgeModelComponentData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [DestructionEdgeModelComponentData](/vext/ref/fb/destructionedgemodelcomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -36,4 +36,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

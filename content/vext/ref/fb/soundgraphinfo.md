@@ -16,10 +16,10 @@ A structure type representing a Frostbite data type.
 
 | Name                   | Type                                                                   | Description |
 | ---------------------- | ---------------------------------------------------------------------- | ----------- |
-| voices                 | [SoundGraphVoiceInfo](SoundGraphVoiceInfo)\[\]                         |             |
-| linkedPluginAttributes | [SoundGraphLinkedPluginAttribute](SoundGraphLinkedPluginAttribute)\[\] |             |
-| connections            | [SoundGraphPluginConnection](SoundGraphPluginConnection)\[\]           |             |
-| constructParams        | [SoundGraphPluginConstructParam](SoundGraphPluginConstructParam)\[\]   |             |
+| voices                 | [SoundGraphVoiceInfo](/vext/ref/fb/soundgraphvoiceinfo/)\[\]                         |             |
+| linkedPluginAttributes | [SoundGraphLinkedPluginAttribute](/vext/ref/fb/soundgraphlinkedpluginattribute/)\[\] |             |
+| connections            | [SoundGraphPluginConnection](/vext/ref/fb/soundgraphpluginconnection/)\[\]           |             |
+| constructParams        | [SoundGraphPluginConstructParam](/vext/ref/fb/soundgraphpluginconstructparam/)\[\]   |             |
 | pluginsParamCount      | number                                                                 |             |
 | pluginCount            | number                                                                 |             |
 
@@ -27,10 +27,10 @@ A structure type representing a Frostbite data type.
 
 | Type                             | Name            | Parameters |
 | -------------------------------- | --------------- | ---------- |
-| [SoundGraphInfo](SoundGraphInfo) | [Clone](#clone) |            |
+| [SoundGraphInfo](/vext/ref/fb/soundgraphinfo/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SoundGraphInfo](SoundGraphInfo) **Clone**()
+> [SoundGraphInfo](/vext/ref/fb/soundgraphinfo/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

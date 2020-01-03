@@ -3,7 +3,7 @@ title: LensFlareEntityData
 ---
 ### Base Classes
 
-[SpatialEntityData](SpatialEntityData)
+[SpatialEntityData](/vext/ref/fb/spatialentitydata/)
 
 ## Description
 
@@ -15,17 +15,17 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
 | LensFlareEntityData()                                                          | Create a new instance of this container type.                                                                                 |
 | LensFlareEntityData(LensFlareEntityData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| LensFlareEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [LensFlareEntityData](LensFlareEntityData).              |
-| LensFlareEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [LensFlareEntityData](LensFlareEntityData).                            |
-| LensFlareEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [LensFlareEntityData](LensFlareEntityData).                    |
-| LensFlareEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [LensFlareEntityData](LensFlareEntityData).              |
-| LensFlareEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LensFlareEntityData](LensFlareEntityData). |
+| LensFlareEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [LensFlareEntityData](/vext/ref/fb/lensflareentitydata/).              |
+| LensFlareEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [LensFlareEntityData](/vext/ref/fb/lensflareentitydata/).                            |
+| LensFlareEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [LensFlareEntityData](/vext/ref/fb/lensflareentitydata/).                    |
+| LensFlareEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [LensFlareEntityData](/vext/ref/fb/lensflareentitydata/).              |
+| LensFlareEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LensFlareEntityData](/vext/ref/fb/lensflareentitydata/). |
 
 ## Properties
 
 | Name              | Type                                     | Description |
 | ----------------- | ---------------------------------------- | ----------- |
-| elements          | [LensFlareElement](LensFlareElement)\[\] |             |
+| elements          | [LensFlareElement](/vext/ref/fb/lensflareelement/)\[\] |             |
 | occluderSize      | number                                   |             |
 | visible           | bool                                     |             |
 | halfRes           | bool                                     |             |
@@ -35,11 +35,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                       | Name            | Parameters                                     |
 | ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [LensFlareEntityData](LensFlareEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [LensFlareEntityData](/vext/ref/fb/lensflareentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [LensFlareEntityData](LensFlareEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [LensFlareEntityData](/vext/ref/fb/lensflareentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -47,4 +47,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

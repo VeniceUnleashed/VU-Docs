@@ -16,17 +16,17 @@ A structure type representing a Frostbite data type.
 
 | Name  | Type                                     | Description |
 | ----- | ---------------------------------------- | ----------- |
-| node  | [AudioGraphNodeData](AudioGraphNodeData) |             |
+| node  | [AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) |             |
 | value | number                                   |             |
 
 ## Methods
 
 | Type                                       | Name            | Parameters |
 | ------------------------------------------ | --------------- | ---------- |
-| [MixerPresetNodeData](MixerPresetNodeData) | [Clone](#clone) |            |
+| [MixerPresetNodeData](/vext/ref/fb/mixerpresetnodedata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [MixerPresetNodeData](MixerPresetNodeData) **Clone**()
+> [MixerPresetNodeData](/vext/ref/fb/mixerpresetnodedata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -22,10 +22,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                           | Name            | Parameters |
 | ---------------------------------------------- | --------------- | ---------- |
-| [MatchmakingRankedRule](MatchmakingRankedRule) | [Clone](#clone) |            |
+| [MatchmakingRankedRule](/vext/ref/fb/matchmakingrankedrule/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [MatchmakingRankedRule](MatchmakingRankedRule) **Clone**()
+> [MatchmakingRankedRule](/vext/ref/fb/matchmakingrankedrule/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

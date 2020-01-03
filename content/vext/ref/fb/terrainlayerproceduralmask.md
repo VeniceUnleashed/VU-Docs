@@ -22,10 +22,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                     | Name            | Parameters |
 | -------------------------------------------------------- | --------------- | ---------- |
-| [TerrainLayerProceduralMask](TerrainLayerProceduralMask) | [Clone](#clone) |            |
+| [TerrainLayerProceduralMask](/vext/ref/fb/terrainlayerproceduralmask/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [TerrainLayerProceduralMask](TerrainLayerProceduralMask) **Clone**()
+> [TerrainLayerProceduralMask](/vext/ref/fb/terrainlayerproceduralmask/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

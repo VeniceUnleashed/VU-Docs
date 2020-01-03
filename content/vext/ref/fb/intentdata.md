@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                     | Name            | Parameters |
 | ------------------------ | --------------- | ---------- |
-| [IntentData](IntentData) | [Clone](#clone) |            |
+| [IntentData](/vext/ref/fb/intentdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [IntentData](IntentData) **Clone**()
+> [IntentData](/vext/ref/fb/intentdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

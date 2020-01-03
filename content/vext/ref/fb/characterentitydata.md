@@ -3,7 +3,7 @@ title: CharacterEntityData
 ---
 ### Base Classes
 
-[ControllableEntityData](ControllableEntityData)
+[ControllableEntityData](/vext/ref/fb/controllableentitydata/)
 
 ## Description
 
@@ -15,32 +15,32 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
 | CharacterEntityData()                                                          | Create a new instance of this container type.                                                                                 |
 | CharacterEntityData(CharacterEntityData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| CharacterEntityData([ControllableEntityData](ControllableEntityData) other)    | Upcast an instance of type [ControllableEntityData](ControllableEntityData) to [CharacterEntityData](CharacterEntityData).    |
-| CharacterEntityData([GamePhysicsEntityData](GamePhysicsEntityData) other)      | Upcast an instance of type [GamePhysicsEntityData](GamePhysicsEntityData) to [CharacterEntityData](CharacterEntityData).      |
-| CharacterEntityData([GameEntityData](GameEntityData) other)                    | Upcast an instance of type [GameEntityData](GameEntityData) to [CharacterEntityData](CharacterEntityData).                    |
-| CharacterEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [CharacterEntityData](CharacterEntityData).              |
-| CharacterEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [CharacterEntityData](CharacterEntityData).                            |
-| CharacterEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [CharacterEntityData](CharacterEntityData).                    |
-| CharacterEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [CharacterEntityData](CharacterEntityData).              |
-| CharacterEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CharacterEntityData](CharacterEntityData). |
+| CharacterEntityData([ControllableEntityData](/vext/ref/fb/controllableentitydata/) other)    | Upcast an instance of type [ControllableEntityData](/vext/ref/fb/controllableentitydata/) to [CharacterEntityData](/vext/ref/fb/characterentitydata/).    |
+| CharacterEntityData([GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata/) other)      | Upcast an instance of type [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata/) to [CharacterEntityData](/vext/ref/fb/characterentitydata/).      |
+| CharacterEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [CharacterEntityData](/vext/ref/fb/characterentitydata/).                    |
+| CharacterEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [CharacterEntityData](/vext/ref/fb/characterentitydata/).              |
+| CharacterEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [CharacterEntityData](/vext/ref/fb/characterentitydata/).                            |
+| CharacterEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [CharacterEntityData](/vext/ref/fb/characterentitydata/).                    |
+| CharacterEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [CharacterEntityData](/vext/ref/fb/characterentitydata/).              |
+| CharacterEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CharacterEntityData](/vext/ref/fb/characterentitydata/). |
 
 ## Properties
 
 | Name                    | Type                               | Description |
 | ----------------------- | ---------------------------------- | ----------- |
-| defaultViewMode         | [PersonViewMode](PersonViewMode)   |             |
-| playerSpawnType         | [PlayerSpawnType](PlayerSpawnType) |             |
+| defaultViewMode         | [PersonViewMode](/vext/ref/fb/personviewmode/)   |             |
+| playerSpawnType         | [PlayerSpawnType](/vext/ref/fb/playerspawntype/) |             |
 | characterLightingEnable | bool                               |             |
 
 ## Methods
 
 | Type                                       | Name            | Parameters                                     |
 | ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [CharacterEntityData](CharacterEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [CharacterEntityData](/vext/ref/fb/characterentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [CharacterEntityData](CharacterEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [CharacterEntityData](/vext/ref/fb/characterentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -48,4 +48,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

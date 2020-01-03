@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                   | Name            | Parameters |
 | ------------------------------------------------------ | --------------- | ---------- |
-| [SoundWaveVariationSegment](SoundWaveVariationSegment) | [Clone](#clone) |            |
+| [SoundWaveVariationSegment](/vext/ref/fb/soundwavevariationsegment/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SoundWaveVariationSegment](SoundWaveVariationSegment) **Clone**()
+> [SoundWaveVariationSegment](/vext/ref/fb/soundwavevariationsegment/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

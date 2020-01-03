@@ -3,7 +3,7 @@ title: UIKitItemDescription
 ---
 ### Base Classes
 
-[UIItemDescription](UIItemDescription)
+[UIItemDescription](/vext/ref/fb/uiitemdescription/)
 
 ## Description
 
@@ -15,8 +15,8 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | UIKitItemDescription()                                                          | Create a new instance of this container type.                                                                                   |
 | UIKitItemDescription(UIKitItemDescription other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| UIKitItemDescription([UIItemDescription](UIItemDescription) other)              | Upcast an instance of type [UIItemDescription](UIItemDescription) to [UIKitItemDescription](UIKitItemDescription).              |
-| UIKitItemDescription([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIKitItemDescription](UIKitItemDescription). |
+| UIKitItemDescription([UIItemDescription](/vext/ref/fb/uiitemdescription/) other)              | Upcast an instance of type [UIItemDescription](/vext/ref/fb/uiitemdescription/) to [UIKitItemDescription](/vext/ref/fb/uikititemdescription/).              |
+| UIKitItemDescription([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIKitItemDescription](/vext/ref/fb/uikititemdescription/). |
 
 ## Properties
 
@@ -29,7 +29,7 @@ A container type representing a Frostbite instance entry.
 | texturePath              | string                 |             |
 | iconTexturePath          | string                 |             |
 | unlockTexturePath        | string                 |             |
-| hudIcon                  | [UIHudIcon](UIHudIcon) |             |
+| hudIcon                  | [UIHudIcon](/vext/ref/fb/uihudicon/) |             |
 | notExplicitelySelectable | bool                   |             |
 | hiddenInProgression      | bool                   |             |
 
@@ -37,11 +37,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                         | Name            | Parameters                                     |
 | -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [UIKitItemDescription](UIKitItemDescription) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [UIKitItemDescription](/vext/ref/fb/uikititemdescription/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [UIKitItemDescription](UIKitItemDescription) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [UIKitItemDescription](/vext/ref/fb/uikititemdescription/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -49,4 +49,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

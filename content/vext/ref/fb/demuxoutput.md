@@ -3,7 +3,7 @@ title: DeMuxOutput
 ---
 ### Base Classes
 
-[AudioGraphNodePortGroup](AudioGraphNodePortGroup)
+[AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/)
 
 ## Description
 
@@ -15,24 +15,24 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
 | DeMuxOutput()                                                          | Create a new instance of this container type.                                                                 |
 | DeMuxOutput(DeMuxOutput other)                                         | Create a reference copy of an instance of the same type.                                                      |
-| DeMuxOutput([AudioGraphNodePortGroup](AudioGraphNodePortGroup) other)  | Upcast an instance of type [AudioGraphNodePortGroup](AudioGraphNodePortGroup) to [DeMuxOutput](DeMuxOutput).  |
-| DeMuxOutput([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DeMuxOutput](DeMuxOutput). |
+| DeMuxOutput([AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/) other)  | Upcast an instance of type [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/) to [DeMuxOutput](/vext/ref/fb/demuxoutput/).  |
+| DeMuxOutput([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DeMuxOutput](/vext/ref/fb/demuxoutput/). |
 
 ## Properties
 
 | Name    | Type                                     | Description |
 | ------- | ---------------------------------------- | ----------- |
-| trigger | [AudioGraphNodePort](AudioGraphNodePort) |             |
+| trigger | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
 
 ## Methods
 
 | Type                       | Name            | Parameters                                     |
 | -------------------------- | --------------- | ---------------------------------------------- |
-| [DeMuxOutput](DeMuxOutput) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [DeMuxOutput](/vext/ref/fb/demuxoutput/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [DeMuxOutput](DeMuxOutput) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [DeMuxOutput](/vext/ref/fb/demuxoutput/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -40,4 +40,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

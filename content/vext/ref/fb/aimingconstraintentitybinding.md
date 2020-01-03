@@ -16,17 +16,17 @@ A structure type representing a Frostbite data type.
 
 | Name             | Type             | Description |
 | ---------------- | ---------------- | ----------- |
-| proneAimLimit    | [AntRef](AntRef) |             |
-| proneAimDistance | [AntRef](AntRef) |             |
+| proneAimLimit    | [AntRef](/vext/ref/fb/antref/) |             |
+| proneAimDistance | [AntRef](/vext/ref/fb/antref/) |             |
 
 ## Methods
 
 | Type                                                           | Name            | Parameters |
 | -------------------------------------------------------------- | --------------- | ---------- |
-| [AimingConstraintEntityBinding](AimingConstraintEntityBinding) | [Clone](#clone) |            |
+| [AimingConstraintEntityBinding](/vext/ref/fb/aimingconstraintentitybinding/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [AimingConstraintEntityBinding](AimingConstraintEntityBinding) **Clone**()
+> [AimingConstraintEntityBinding](/vext/ref/fb/aimingconstraintentitybinding/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

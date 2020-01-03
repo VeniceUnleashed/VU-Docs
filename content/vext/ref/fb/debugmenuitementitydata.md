@@ -3,7 +3,7 @@ title: DebugMenuItemEntityData
 ---
 ### Base Classes
 
-[GameEntityData](GameEntityData)
+[GameEntityData](/vext/ref/fb/gameentitydata/)
 
 ## Description
 
@@ -15,29 +15,29 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | DebugMenuItemEntityData()                                                          | Create a new instance of this container type.                                                                                         |
 | DebugMenuItemEntityData(DebugMenuItemEntityData other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| DebugMenuItemEntityData([GameEntityData](GameEntityData) other)                    | Upcast an instance of type [GameEntityData](GameEntityData) to [DebugMenuItemEntityData](DebugMenuItemEntityData).                    |
-| DebugMenuItemEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [DebugMenuItemEntityData](DebugMenuItemEntityData).              |
-| DebugMenuItemEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [DebugMenuItemEntityData](DebugMenuItemEntityData).                            |
-| DebugMenuItemEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [DebugMenuItemEntityData](DebugMenuItemEntityData).                    |
-| DebugMenuItemEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [DebugMenuItemEntityData](DebugMenuItemEntityData).              |
-| DebugMenuItemEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DebugMenuItemEntityData](DebugMenuItemEntityData). |
+| DebugMenuItemEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [DebugMenuItemEntityData](/vext/ref/fb/debugmenuitementitydata/).                    |
+| DebugMenuItemEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [DebugMenuItemEntityData](/vext/ref/fb/debugmenuitementitydata/).              |
+| DebugMenuItemEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [DebugMenuItemEntityData](/vext/ref/fb/debugmenuitementitydata/).                            |
+| DebugMenuItemEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [DebugMenuItemEntityData](/vext/ref/fb/debugmenuitementitydata/).                    |
+| DebugMenuItemEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [DebugMenuItemEntityData](/vext/ref/fb/debugmenuitementitydata/).              |
+| DebugMenuItemEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DebugMenuItemEntityData](/vext/ref/fb/debugmenuitementitydata/). |
 
 ## Properties
 
 | Name     | Type                                   | Description |
 | -------- | -------------------------------------- | ----------- |
-| itemType | [DebugMenuItemType](DebugMenuItemType) |             |
+| itemType | [DebugMenuItemType](/vext/ref/fb/debugmenuitemtype/) |             |
 | text     | string                                 |             |
 
 ## Methods
 
 | Type                                               | Name            | Parameters                                     |
 | -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [DebugMenuItemEntityData](DebugMenuItemEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [DebugMenuItemEntityData](/vext/ref/fb/debugmenuitementitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [DebugMenuItemEntityData](DebugMenuItemEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [DebugMenuItemEntityData](/vext/ref/fb/debugmenuitementitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -45,4 +45,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

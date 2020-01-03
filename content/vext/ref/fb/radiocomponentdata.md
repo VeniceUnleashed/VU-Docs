@@ -3,7 +3,7 @@ title: RadioComponentData
 ---
 ### Base Classes
 
-[ComponentData](ComponentData)
+[ComponentData](/vext/ref/fb/componentdata/)
 
 ## Description
 
@@ -15,26 +15,26 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | RadioComponentData()                                                          | Create a new instance of this container type.                                                                               |
 | RadioComponentData(RadioComponentData other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| RadioComponentData([ComponentData](ComponentData) other)                      | Upcast an instance of type [ComponentData](ComponentData) to [RadioComponentData](RadioComponentData).                      |
-| RadioComponentData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [RadioComponentData](RadioComponentData).                    |
-| RadioComponentData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [RadioComponentData](RadioComponentData).              |
-| RadioComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RadioComponentData](RadioComponentData). |
+| RadioComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [RadioComponentData](/vext/ref/fb/radiocomponentdata/).                      |
+| RadioComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [RadioComponentData](/vext/ref/fb/radiocomponentdata/).                    |
+| RadioComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [RadioComponentData](/vext/ref/fb/radiocomponentdata/).              |
+| RadioComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RadioComponentData](/vext/ref/fb/radiocomponentdata/). |
 
 ## Properties
 
 | Name        | Type                     | Description |
 | ----------- | ------------------------ | ----------- |
-| soundEffect | [SoundAsset](SoundAsset) |             |
+| soundEffect | [SoundAsset](/vext/ref/fb/soundasset/) |             |
 
 ## Methods
 
 | Type                                     | Name            | Parameters                                     |
 | ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [RadioComponentData](RadioComponentData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [RadioComponentData](/vext/ref/fb/radiocomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [RadioComponentData](RadioComponentData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [RadioComponentData](/vext/ref/fb/radiocomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -42,4 +42,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

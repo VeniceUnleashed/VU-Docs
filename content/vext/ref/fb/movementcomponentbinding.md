@@ -16,16 +16,16 @@ A structure type representing a Frostbite data type.
 
 | Name                | Type             | Description |
 | ------------------- | ---------------- | ----------- |
-| animationControlled | [AntRef](AntRef) |             |
+| animationControlled | [AntRef](/vext/ref/fb/antref/) |             |
 
 ## Methods
 
 | Type                                                 | Name            | Parameters |
 | ---------------------------------------------------- | --------------- | ---------- |
-| [MovementComponentBinding](MovementComponentBinding) | [Clone](#clone) |            |
+| [MovementComponentBinding](/vext/ref/fb/movementcomponentbinding/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [MovementComponentBinding](MovementComponentBinding) **Clone**()
+> [MovementComponentBinding](/vext/ref/fb/movementcomponentbinding/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

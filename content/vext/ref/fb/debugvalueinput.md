@@ -3,7 +3,7 @@ title: DebugValueInput
 ---
 ### Base Classes
 
-[AudioGraphNodePortGroup](AudioGraphNodePortGroup)
+[AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/)
 
 ## Description
 
@@ -15,16 +15,16 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | DebugValueInput()                                                          | Create a new instance of this container type.                                                                         |
 | DebugValueInput(DebugValueInput other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| DebugValueInput([AudioGraphNodePortGroup](AudioGraphNodePortGroup) other)  | Upcast an instance of type [AudioGraphNodePortGroup](AudioGraphNodePortGroup) to [DebugValueInput](DebugValueInput).  |
-| DebugValueInput([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DebugValueInput](DebugValueInput). |
+| DebugValueInput([AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/) other)  | Upcast an instance of type [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/) to [DebugValueInput](/vext/ref/fb/debugvalueinput/).  |
+| DebugValueInput([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DebugValueInput](/vext/ref/fb/debugvalueinput/). |
 
 ## Properties
 
 | Name       | Type                                     | Description |
 | ---------- | ---------------------------------------- | ----------- |
-| v          | [AudioGraphNodePort](AudioGraphNodePort) |             |
+| v          | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
 | name       | string                                   |             |
-| renderType | [DebugRenderType](DebugRenderType)       |             |
+| renderType | [DebugRenderType](/vext/ref/fb/debugrendertype/)       |             |
 | min        | number                                   |             |
 | max        | number                                   |             |
 
@@ -32,11 +32,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                               | Name            | Parameters                                     |
 | ---------------------------------- | --------------- | ---------------------------------------------- |
-| [DebugValueInput](DebugValueInput) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [DebugValueInput](/vext/ref/fb/debugvalueinput/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [DebugValueInput](DebugValueInput) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [DebugValueInput](/vext/ref/fb/debugvalueinput/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -44,4 +44,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

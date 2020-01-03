@@ -3,7 +3,7 @@ title: PhysicsEntry
 ---
 ### Base Classes
 
-[AudioGraphNodePortGroup](AudioGraphNodePortGroup)
+[AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/)
 
 ## Description
 
@@ -15,27 +15,27 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
 | PhysicsEntry()                                                          | Create a new instance of this container type.                                                                   |
 | PhysicsEntry(PhysicsEntry other)                                        | Create a reference copy of an instance of the same type.                                                        |
-| PhysicsEntry([AudioGraphNodePortGroup](AudioGraphNodePortGroup) other)  | Upcast an instance of type [AudioGraphNodePortGroup](AudioGraphNodePortGroup) to [PhysicsEntry](PhysicsEntry).  |
-| PhysicsEntry([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PhysicsEntry](PhysicsEntry). |
+| PhysicsEntry([AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/) other)  | Upcast an instance of type [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/) to [PhysicsEntry](/vext/ref/fb/physicsentry/).  |
+| PhysicsEntry([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PhysicsEntry](/vext/ref/fb/physicsentry/). |
 
 ## Properties
 
 | Name           | Type                                     | Description |
 | -------------- | ---------------------------------------- | ----------- |
-| distance       | [AudioGraphNodePort](AudioGraphNodePort) |             |
-| azimuth        | [AudioGraphNodePort](AudioGraphNodePort) |             |
-| elevationAngle | [AudioGraphNodePort](AudioGraphNodePort) |             |
-| output         | [OutputNodeData](OutputNodeData)         |             |
+| distance       | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
+| azimuth        | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
+| elevationAngle | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
+| output         | [OutputNodeData](/vext/ref/fb/outputnodedata/)         |             |
 
 ## Methods
 
 | Type                         | Name            | Parameters                                     |
 | ---------------------------- | --------------- | ---------------------------------------------- |
-| [PhysicsEntry](PhysicsEntry) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [PhysicsEntry](/vext/ref/fb/physicsentry/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [PhysicsEntry](PhysicsEntry) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [PhysicsEntry](/vext/ref/fb/physicsentry/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -43,4 +43,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

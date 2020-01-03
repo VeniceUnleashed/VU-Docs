@@ -3,7 +3,7 @@ title: StatsCategoryScoreboardPositionData
 ---
 ### Base Classes
 
-[StatsCategoryBaseData](StatsCategoryBaseData)
+[StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/)
 
 ## Description
 
@@ -15,25 +15,25 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | StatsCategoryScoreboardPositionData()                                                          | Create a new instance of this container type.                                                                                                                 |
 | StatsCategoryScoreboardPositionData(StatsCategoryScoreboardPositionData other)                 | Create a reference copy of an instance of the same type.                                                                                                      |
-| StatsCategoryScoreboardPositionData([StatsCategoryBaseData](StatsCategoryBaseData) other)      | Upcast an instance of type [StatsCategoryBaseData](StatsCategoryBaseData) to [StatsCategoryScoreboardPositionData](StatsCategoryScoreboardPositionData).      |
-| StatsCategoryScoreboardPositionData([TreeNodeBase](TreeNodeBase) other)                        | Upcast an instance of type [TreeNodeBase](TreeNodeBase) to [StatsCategoryScoreboardPositionData](StatsCategoryScoreboardPositionData).                        |
-| StatsCategoryScoreboardPositionData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StatsCategoryScoreboardPositionData](StatsCategoryScoreboardPositionData). |
+| StatsCategoryScoreboardPositionData([StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/) other)      | Upcast an instance of type [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/) to [StatsCategoryScoreboardPositionData](/vext/ref/fb/statscategoryscoreboardpositiondata/).      |
+| StatsCategoryScoreboardPositionData([TreeNodeBase](/vext/ref/fb/treenodebase/) other)                        | Upcast an instance of type [TreeNodeBase](/vext/ref/fb/treenodebase/) to [StatsCategoryScoreboardPositionData](/vext/ref/fb/statscategoryscoreboardpositiondata/).                        |
+| StatsCategoryScoreboardPositionData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StatsCategoryScoreboardPositionData](/vext/ref/fb/statscategoryscoreboardpositiondata/). |
 
 ## Properties
 
 | Name      | Type                                         | Description |
 | --------- | -------------------------------------------- | ----------- |
-| positions | [ScoreboardPosition](ScoreboardPosition)\[\] |             |
+| positions | [ScoreboardPosition](/vext/ref/fb/scoreboardposition/)\[\] |             |
 
 ## Methods
 
 | Type                                                                       | Name            | Parameters                                     |
 | -------------------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [StatsCategoryScoreboardPositionData](StatsCategoryScoreboardPositionData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [StatsCategoryScoreboardPositionData](/vext/ref/fb/statscategoryscoreboardpositiondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [StatsCategoryScoreboardPositionData](StatsCategoryScoreboardPositionData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [StatsCategoryScoreboardPositionData](/vext/ref/fb/statscategoryscoreboardpositiondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -41,4 +41,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

@@ -3,7 +3,7 @@ title: VisualVectorShapeData
 ---
 ### Base Classes
 
-[VectorShapeData](VectorShapeData)
+[VectorShapeData](/vext/ref/fb/vectorshapedata/)
 
 ## Description
 
@@ -15,18 +15,18 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | VisualVectorShapeData()                                                          | Create a new instance of this container type.                                                                                     |
 | VisualVectorShapeData(VisualVectorShapeData other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| VisualVectorShapeData([VectorShapeData](VectorShapeData) other)                  | Upcast an instance of type [VectorShapeData](VectorShapeData) to [VisualVectorShapeData](VisualVectorShapeData).                  |
-| VisualVectorShapeData([BaseShapeData](BaseShapeData) other)                      | Upcast an instance of type [BaseShapeData](BaseShapeData) to [VisualVectorShapeData](VisualVectorShapeData).                      |
-| VisualVectorShapeData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [VisualVectorShapeData](VisualVectorShapeData).                    |
-| VisualVectorShapeData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [VisualVectorShapeData](VisualVectorShapeData).              |
-| VisualVectorShapeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VisualVectorShapeData](VisualVectorShapeData). |
+| VisualVectorShapeData([VectorShapeData](/vext/ref/fb/vectorshapedata/) other)                  | Upcast an instance of type [VectorShapeData](/vext/ref/fb/vectorshapedata/) to [VisualVectorShapeData](/vext/ref/fb/visualvectorshapedata/).                  |
+| VisualVectorShapeData([BaseShapeData](/vext/ref/fb/baseshapedata/) other)                      | Upcast an instance of type [BaseShapeData](/vext/ref/fb/baseshapedata/) to [VisualVectorShapeData](/vext/ref/fb/visualvectorshapedata/).                      |
+| VisualVectorShapeData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [VisualVectorShapeData](/vext/ref/fb/visualvectorshapedata/).                    |
+| VisualVectorShapeData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [VisualVectorShapeData](/vext/ref/fb/visualvectorshapedata/).              |
+| VisualVectorShapeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VisualVectorShapeData](/vext/ref/fb/visualvectorshapedata/). |
 
 ## Properties
 
 | Name                     | Type                                             | Description |
 | ------------------------ | ------------------------------------------------ | ----------- |
 | errorTolerance           | number                                           |             |
-| shader3d                 | [SurfaceShaderBaseAsset](SurfaceShaderBaseAsset) |             |
+| shader3d                 | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset/) |             |
 | drawOrderIndex           | number                                           |             |
 | tessellationTriangleSize | number                                           |             |
 
@@ -34,11 +34,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                           | Name            | Parameters                                     |
 | ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [VisualVectorShapeData](VisualVectorShapeData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [VisualVectorShapeData](/vext/ref/fb/visualvectorshapedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [VisualVectorShapeData](VisualVectorShapeData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [VisualVectorShapeData](/vext/ref/fb/visualvectorshapedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -46,4 +46,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

@@ -3,7 +3,7 @@ title: PlayVideoEntityData
 ---
 ### Base Classes
 
-[EntityData](EntityData)
+[EntityData](/vext/ref/fb/entitydata/)
 
 ## Description
 
@@ -15,16 +15,16 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
 | PlayVideoEntityData()                                                          | Create a new instance of this container type.                                                                                 |
 | PlayVideoEntityData(PlayVideoEntityData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| PlayVideoEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [PlayVideoEntityData](PlayVideoEntityData).                            |
-| PlayVideoEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [PlayVideoEntityData](PlayVideoEntityData).                    |
-| PlayVideoEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [PlayVideoEntityData](PlayVideoEntityData).              |
-| PlayVideoEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PlayVideoEntityData](PlayVideoEntityData). |
+| PlayVideoEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [PlayVideoEntityData](/vext/ref/fb/playvideoentitydata/).                            |
+| PlayVideoEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [PlayVideoEntityData](/vext/ref/fb/playvideoentitydata/).                    |
+| PlayVideoEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [PlayVideoEntityData](/vext/ref/fb/playvideoentitydata/).              |
+| PlayVideoEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PlayVideoEntityData](/vext/ref/fb/playvideoentitydata/). |
 
 ## Properties
 
 | Name            | Type                                   | Description |
 | --------------- | -------------------------------------- | ----------- |
-| movie           | [MovieTextureAsset](MovieTextureAsset) |             |
+| movie           | [MovieTextureAsset](/vext/ref/fb/movietextureasset/) |             |
 | keepBlackScreen | bool                                   |             |
 | allowSkip       | bool                                   |             |
 
@@ -32,11 +32,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                       | Name            | Parameters                                     |
 | ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [PlayVideoEntityData](PlayVideoEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [PlayVideoEntityData](/vext/ref/fb/playvideoentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [PlayVideoEntityData](PlayVideoEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [PlayVideoEntityData](/vext/ref/fb/playvideoentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -44,4 +44,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

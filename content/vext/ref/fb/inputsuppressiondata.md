@@ -16,16 +16,16 @@ A structure type representing a Frostbite data type.
 
 | Name                 | Type                                     | Description |
 | -------------------- | ---------------------------------------- | ----------- |
-| suppressVehicleInput | [ActionSuppressor](ActionSuppressor)\[\] |             |
+| suppressVehicleInput | [ActionSuppressor](/vext/ref/fb/actionsuppressor/)\[\] |             |
 
 ## Methods
 
 | Type                                         | Name            | Parameters |
 | -------------------------------------------- | --------------- | ---------- |
-| [InputSuppressionData](InputSuppressionData) | [Clone](#clone) |            |
+| [InputSuppressionData](/vext/ref/fb/inputsuppressiondata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [InputSuppressionData](InputSuppressionData) **Clone**()
+> [InputSuppressionData](/vext/ref/fb/inputsuppressiondata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

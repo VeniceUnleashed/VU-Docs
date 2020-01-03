@@ -3,7 +3,7 @@ title: ReceiveNodeData
 ---
 ### Base Classes
 
-[AudioGraphNodeData](AudioGraphNodeData)
+[AudioGraphNodeData](/vext/ref/fb/audiographnodedata/)
 
 ## Description
 
@@ -15,24 +15,24 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | ReceiveNodeData()                                                          | Create a new instance of this container type.                                                                         |
 | ReceiveNodeData(ReceiveNodeData other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| ReceiveNodeData([AudioGraphNodeData](AudioGraphNodeData) other)            | Upcast an instance of type [AudioGraphNodeData](AudioGraphNodeData) to [ReceiveNodeData](ReceiveNodeData).            |
-| ReceiveNodeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ReceiveNodeData](ReceiveNodeData). |
+| ReceiveNodeData([AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) other)            | Upcast an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) to [ReceiveNodeData](/vext/ref/fb/receivenodedata/).            |
+| ReceiveNodeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ReceiveNodeData](/vext/ref/fb/receivenodedata/). |
 
 ## Properties
 
 | Name    | Type                             | Description |
 | ------- | -------------------------------- | ----------- |
-| entries | [ReceiveEntry](ReceiveEntry)\[\] |             |
+| entries | [ReceiveEntry](/vext/ref/fb/receiveentry/)\[\] |             |
 
 ## Methods
 
 | Type                               | Name            | Parameters                                     |
 | ---------------------------------- | --------------- | ---------------------------------------------- |
-| [ReceiveNodeData](ReceiveNodeData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [ReceiveNodeData](/vext/ref/fb/receivenodedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [ReceiveNodeData](ReceiveNodeData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [ReceiveNodeData](/vext/ref/fb/receivenodedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -40,4 +40,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

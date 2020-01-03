@@ -3,7 +3,7 @@ title: CharacterPhysicsData
 ---
 ### Base Classes
 
-[Asset](Asset)
+[Asset](/vext/ref/fb/asset/)
 
 ## Description
 
@@ -15,18 +15,18 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | CharacterPhysicsData()                                                          | Create a new instance of this container type.                                                                                   |
 | CharacterPhysicsData(CharacterPhysicsData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| CharacterPhysicsData([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [CharacterPhysicsData](CharacterPhysicsData).                                      |
-| CharacterPhysicsData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CharacterPhysicsData](CharacterPhysicsData). |
+| CharacterPhysicsData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [CharacterPhysicsData](/vext/ref/fb/characterphysicsdata/).                                      |
+| CharacterPhysicsData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CharacterPhysicsData](/vext/ref/fb/characterphysicsdata/). |
 
 ## Properties
 
 | Name                                 | Type                                           | Description |
 | ------------------------------------ | ---------------------------------------------- | ----------- |
-| poses                                | [CharacterPoseData](CharacterPoseData)\[\]     |             |
-| states                               | [CharacterStateData](CharacterStateData)\[\]   |             |
-| defaultState                         | [CharacterStateType](CharacterStateType)       |             |
-| sprint                               | [CharacterSprintData](CharacterSprintData)     |             |
-| materialPair                         | [MaterialContainerPair](MaterialContainerPair) |             |
+| poses                                | [CharacterPoseData](/vext/ref/fb/characterposedata/)\[\]     |             |
+| states                               | [CharacterStateData](/vext/ref/fb/characterstatedata/)\[\]   |             |
+| defaultState                         | [CharacterStateType](/vext/ref/fb/characterstatetype/)       |             |
+| sprint                               | [CharacterSprintData](/vext/ref/fb/charactersprintdata/)     |             |
+| materialPair                         | [MaterialContainerPair](/vext/ref/fb/materialcontainerpair/) |             |
 | pushableObjectWeight                 | number                                         |             |
 | mass                                 | number                                         |             |
 | maxAscendAngle                       | number                                         |             |
@@ -44,11 +44,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                         | Name            | Parameters                                     |
 | -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [CharacterPhysicsData](CharacterPhysicsData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [CharacterPhysicsData](/vext/ref/fb/characterphysicsdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [CharacterPhysicsData](CharacterPhysicsData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [CharacterPhysicsData](/vext/ref/fb/characterphysicsdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -56,4 +56,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

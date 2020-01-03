@@ -3,7 +3,7 @@ title: SoldierSpawnAppearanceTemplateData
 ---
 ### Base Classes
 
-[Asset](Asset)
+[Asset](/vext/ref/fb/asset/)
 
 ## Description
 
@@ -15,8 +15,8 @@ A container type representing a Frostbite instance entry.
 | --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | SoldierSpawnAppearanceTemplateData()                                                          | Create a new instance of this container type.                                                                                                               |
 | SoldierSpawnAppearanceTemplateData(SoldierSpawnAppearanceTemplateData other)                  | Create a reference copy of an instance of the same type.                                                                                                    |
-| SoldierSpawnAppearanceTemplateData([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [SoldierSpawnAppearanceTemplateData](SoldierSpawnAppearanceTemplateData).                                      |
-| SoldierSpawnAppearanceTemplateData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoldierSpawnAppearanceTemplateData](SoldierSpawnAppearanceTemplateData). |
+| SoldierSpawnAppearanceTemplateData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [SoldierSpawnAppearanceTemplateData](/vext/ref/fb/soldierspawnappearancetemplatedata/).                                      |
+| SoldierSpawnAppearanceTemplateData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoldierSpawnAppearanceTemplateData](/vext/ref/fb/soldierspawnappearancetemplatedata/). |
 
 ## Properties
 
@@ -28,11 +28,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                                     | Name            | Parameters                                     |
 | ------------------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [SoldierSpawnAppearanceTemplateData](SoldierSpawnAppearanceTemplateData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [SoldierSpawnAppearanceTemplateData](/vext/ref/fb/soldierspawnappearancetemplatedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [SoldierSpawnAppearanceTemplateData](SoldierSpawnAppearanceTemplateData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [SoldierSpawnAppearanceTemplateData](/vext/ref/fb/soldierspawnappearancetemplatedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -40,4 +40,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

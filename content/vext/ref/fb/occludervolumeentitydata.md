@@ -3,7 +3,7 @@ title: OccluderVolumeEntityData
 ---
 ### Base Classes
 
-[SpatialEntityData](SpatialEntityData)
+[SpatialEntityData](/vext/ref/fb/spatialentitydata/)
 
 ## Description
 
@@ -15,11 +15,11 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | OccluderVolumeEntityData()                                                          | Create a new instance of this container type.                                                                                           |
 | OccluderVolumeEntityData(OccluderVolumeEntityData other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| OccluderVolumeEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [OccluderVolumeEntityData](OccluderVolumeEntityData).              |
-| OccluderVolumeEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [OccluderVolumeEntityData](OccluderVolumeEntityData).                            |
-| OccluderVolumeEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [OccluderVolumeEntityData](OccluderVolumeEntityData).                    |
-| OccluderVolumeEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [OccluderVolumeEntityData](OccluderVolumeEntityData).              |
-| OccluderVolumeEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [OccluderVolumeEntityData](OccluderVolumeEntityData). |
+| OccluderVolumeEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [OccluderVolumeEntityData](/vext/ref/fb/occludervolumeentitydata/).              |
+| OccluderVolumeEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [OccluderVolumeEntityData](/vext/ref/fb/occludervolumeentitydata/).                            |
+| OccluderVolumeEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [OccluderVolumeEntityData](/vext/ref/fb/occludervolumeentitydata/).                    |
+| OccluderVolumeEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [OccluderVolumeEntityData](/vext/ref/fb/occludervolumeentitydata/).              |
+| OccluderVolumeEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [OccluderVolumeEntityData](/vext/ref/fb/occludervolumeentitydata/). |
 
 ## Properties
 
@@ -31,11 +31,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                 | Name            | Parameters                                     |
 | ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [OccluderVolumeEntityData](OccluderVolumeEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [OccluderVolumeEntityData](/vext/ref/fb/occludervolumeentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [OccluderVolumeEntityData](OccluderVolumeEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [OccluderVolumeEntityData](/vext/ref/fb/occludervolumeentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -43,4 +43,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

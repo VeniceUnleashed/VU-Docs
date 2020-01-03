@@ -3,7 +3,7 @@ title: UINametagCompData
 ---
 ### Base Classes
 
-[UI3dIconCompData](UI3dIconCompData)
+[UI3dIconCompData](/vext/ref/fb/ui3diconcompdata/)
 
 ## Description
 
@@ -15,10 +15,10 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | UINametagCompData()                                                          | Create a new instance of this container type.                                                                             |
 | UINametagCompData(UINametagCompData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| UINametagCompData([UI3dIconCompData](UI3dIconCompData) other)                | Upcast an instance of type [UI3dIconCompData](UI3dIconCompData) to [UINametagCompData](UINametagCompData).                |
-| UINametagCompData([UIComponentData](UIComponentData) other)                  | Upcast an instance of type [UIComponentData](UIComponentData) to [UINametagCompData](UINametagCompData).                  |
-| UINametagCompData([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [UINametagCompData](UINametagCompData).                                      |
-| UINametagCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UINametagCompData](UINametagCompData). |
+| UINametagCompData([UI3dIconCompData](/vext/ref/fb/ui3diconcompdata/) other)                | Upcast an instance of type [UI3dIconCompData](/vext/ref/fb/ui3diconcompdata/) to [UINametagCompData](/vext/ref/fb/uinametagcompdata/).                |
+| UINametagCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UINametagCompData](/vext/ref/fb/uinametagcompdata/).                  |
+| UINametagCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UINametagCompData](/vext/ref/fb/uinametagcompdata/).                                      |
+| UINametagCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UINametagCompData](/vext/ref/fb/uinametagcompdata/). |
 
 ## Properties
 
@@ -37,11 +37,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                   | Name            | Parameters                                     |
 | -------------------------------------- | --------------- | ---------------------------------------------- |
-| [UINametagCompData](UINametagCompData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [UINametagCompData](/vext/ref/fb/uinametagcompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [UINametagCompData](UINametagCompData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [UINametagCompData](/vext/ref/fb/uinametagcompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -49,4 +49,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

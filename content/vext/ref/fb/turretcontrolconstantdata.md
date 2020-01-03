@@ -3,7 +3,7 @@ title: TurretControlConstantData
 ---
 ### Base Classes
 
-[Asset](Asset)
+[Asset](/vext/ref/fb/asset/)
 
 ## Description
 
@@ -15,8 +15,8 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | TurretControlConstantData()                                                          | Create a new instance of this container type.                                                                                             |
 | TurretControlConstantData(TurretControlConstantData other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| TurretControlConstantData([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [TurretControlConstantData](TurretControlConstantData).                                      |
-| TurretControlConstantData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TurretControlConstantData](TurretControlConstantData). |
+| TurretControlConstantData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [TurretControlConstantData](/vext/ref/fb/turretcontrolconstantdata/).                                      |
+| TurretControlConstantData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TurretControlConstantData](/vext/ref/fb/turretcontrolconstantdata/). |
 
 ## Properties
 
@@ -31,11 +31,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                   | Name            | Parameters                                     |
 | ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [TurretControlConstantData](TurretControlConstantData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [TurretControlConstantData](/vext/ref/fb/turretcontrolconstantdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [TurretControlConstantData](TurretControlConstantData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [TurretControlConstantData](/vext/ref/fb/turretcontrolconstantdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -43,4 +43,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

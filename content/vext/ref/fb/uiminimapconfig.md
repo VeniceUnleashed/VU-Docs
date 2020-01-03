@@ -19,7 +19,7 @@ A structure type representing a Frostbite data type.
 | combatAreaCameraDelay   | number                                         |             |
 | cameraInterpolationTime | number                                         |             |
 | combatAreaFadeSpeed     | number                                         |             |
-| zoomStates              | [UIMinimapZoomConfig](UIMinimapZoomConfig)\[\] |             |
+| zoomStates              | [UIMinimapZoomConfig](/vext/ref/fb/uiminimapzoomconfig/)\[\] |             |
 | cameraPanSensitivity    | number                                         |             |
 | minVelocity             | number                                         |             |
 | maxVelocity             | number                                         |             |
@@ -30,10 +30,10 @@ A structure type representing a Frostbite data type.
 
 | Type                               | Name            | Parameters |
 | ---------------------------------- | --------------- | ---------- |
-| [UIMinimapConfig](UIMinimapConfig) | [Clone](#clone) |            |
+| [UIMinimapConfig](/vext/ref/fb/uiminimapconfig/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [UIMinimapConfig](UIMinimapConfig) **Clone**()
+> [UIMinimapConfig](/vext/ref/fb/uiminimapconfig/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

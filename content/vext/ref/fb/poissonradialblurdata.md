@@ -25,10 +25,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                           | Name            | Parameters |
 | ---------------------------------------------- | --------------- | ---------- |
-| [PoissonRadialBlurData](PoissonRadialBlurData) | [Clone](#clone) |            |
+| [PoissonRadialBlurData](/vext/ref/fb/poissonradialblurdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [PoissonRadialBlurData](PoissonRadialBlurData) **Clone**()
+> [PoissonRadialBlurData](/vext/ref/fb/poissonradialblurdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -3,7 +3,7 @@ title: SunFlareComponentData
 ---
 ### Base Classes
 
-[ComponentData](ComponentData)
+[ComponentData](/vext/ref/fb/componentdata/)
 
 ## Description
 
@@ -15,10 +15,10 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | SunFlareComponentData()                                                          | Create a new instance of this container type.                                                                                     |
 | SunFlareComponentData(SunFlareComponentData other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| SunFlareComponentData([ComponentData](ComponentData) other)                      | Upcast an instance of type [ComponentData](ComponentData) to [SunFlareComponentData](SunFlareComponentData).                      |
-| SunFlareComponentData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [SunFlareComponentData](SunFlareComponentData).                    |
-| SunFlareComponentData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [SunFlareComponentData](SunFlareComponentData).              |
-| SunFlareComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SunFlareComponentData](SunFlareComponentData). |
+| SunFlareComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [SunFlareComponentData](/vext/ref/fb/sunflarecomponentdata/).                      |
+| SunFlareComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [SunFlareComponentData](/vext/ref/fb/sunflarecomponentdata/).                    |
+| SunFlareComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [SunFlareComponentData](/vext/ref/fb/sunflarecomponentdata/).              |
+| SunFlareComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SunFlareComponentData](/vext/ref/fb/sunflarecomponentdata/). |
 
 ## Properties
 
@@ -49,18 +49,18 @@ A container type representing a Frostbite instance entry.
 | element3SizeOccluderCurve   | [Vec4](/vext/ref/shared/class/vec4)                |             |
 | element3SizeScreenPosCurve  | [Vec4](/vext/ref/shared/class/vec4)                |             |
 | element3AlphaOccluderCurve  | [Vec4](/vext/ref/shared/class/vec4)                |             |
-| element1Shader              | [SurfaceShaderBaseAsset](SurfaceShaderBaseAsset) |             |
+| element1Shader              | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset/) |             |
 | occluderSize                | number                                           |             |
-| element2Shader              | [SurfaceShaderBaseAsset](SurfaceShaderBaseAsset) |             |
+| element2Shader              | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset/) |             |
 | element3RayDistance         | number                                           |             |
-| element4Shader              | [SurfaceShaderBaseAsset](SurfaceShaderBaseAsset) |             |
+| element4Shader              | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset/) |             |
 | element4RayDistance         | number                                           |             |
 | element2RayDistance         | number                                           |             |
 | element1RayDistance         | number                                           |             |
 | element5RayDistance         | number                                           |             |
-| element3Shader              | [SurfaceShaderBaseAsset](SurfaceShaderBaseAsset) |             |
-| realm                       | [Realm](Realm)                                   |             |
-| element5Shader              | [SurfaceShaderBaseAsset](SurfaceShaderBaseAsset) |             |
+| element3Shader              | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset/) |             |
+| realm                       | [Realm](/vext/ref/fb/realm/)                                   |             |
+| element5Shader              | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset/) |             |
 | element5Enable              | bool                                             |             |
 | element3Enable              | bool                                             |             |
 | element2Enable              | bool                                             |             |
@@ -73,11 +73,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                           | Name            | Parameters                                     |
 | ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [SunFlareComponentData](SunFlareComponentData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [SunFlareComponentData](/vext/ref/fb/sunflarecomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [SunFlareComponentData](SunFlareComponentData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [SunFlareComponentData](/vext/ref/fb/sunflarecomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -85,4 +85,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

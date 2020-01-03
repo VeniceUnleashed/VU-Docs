@@ -16,8 +16,8 @@ A structure type representing a Frostbite data type.
 
 | Name                           | Type                                         | Description |
 | ------------------------------ | -------------------------------------------- | ----------- |
-| action                         | [EntryInputActionEnum](EntryInputActionEnum) |             |
-| toWeapon                       | [WeaponSwitchingEnum](WeaponSwitchingEnum)   |             |
+| action                         | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum/) |             |
+| toWeapon                       | [WeaponSwitchingEnum](/vext/ref/fb/weaponswitchingenum/)   |             |
 | preventMeleeRepeatTime         | number                                       |             |
 | switchBackToPrevMaxTimePressed | number                                       |             |
 | useQuickSwitch                 | bool                                         |             |
@@ -27,10 +27,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                         | Name            | Parameters |
 | ------------------------------------------------------------ | --------------- | ---------- |
-| [DirectWeaponSwitchingMapData](DirectWeaponSwitchingMapData) | [Clone](#clone) |            |
+| [DirectWeaponSwitchingMapData](/vext/ref/fb/directweaponswitchingmapdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [DirectWeaponSwitchingMapData](DirectWeaponSwitchingMapData) **Clone**()
+> [DirectWeaponSwitchingMapData](/vext/ref/fb/directweaponswitchingmapdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

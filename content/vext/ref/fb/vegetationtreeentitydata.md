@@ -3,7 +3,7 @@ title: VegetationTreeEntityData
 ---
 ### Base Classes
 
-[VegetationBaseEntityData](VegetationBaseEntityData)
+[VegetationBaseEntityData](/vext/ref/fb/vegetationbaseentitydata/)
 
 ## Description
 
@@ -15,20 +15,20 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | VegetationTreeEntityData()                                                           | Create a new instance of this container type.                                                                                            |
 | VegetationTreeEntityData(VegetationTreeEntityData other)                             | Create a reference copy of an instance of the same type.                                                                                 |
-| VegetationTreeEntityData([VegetationBaseEntityData](VegetationBaseEntityData) other) | Upcast an instance of type [VegetationBaseEntityData](VegetationBaseEntityData) to [VegetationTreeEntityData](VegetationTreeEntityData). |
-| VegetationTreeEntityData([GameEntityData](GameEntityData) other)                     | Upcast an instance of type [GameEntityData](GameEntityData) to [VegetationTreeEntityData](VegetationTreeEntityData).                     |
-| VegetationTreeEntityData([SpatialEntityData](SpatialEntityData) other)               | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [VegetationTreeEntityData](VegetationTreeEntityData).               |
-| VegetationTreeEntityData([EntityData](EntityData) other)                             | Upcast an instance of type [EntityData](EntityData) to [VegetationTreeEntityData](VegetationTreeEntityData).                             |
-| VegetationTreeEntityData([GameObjectData](GameObjectData) other)                     | Upcast an instance of type [GameObjectData](GameObjectData) to [VegetationTreeEntityData](VegetationTreeEntityData).                     |
-| VegetationTreeEntityData([GameDataContainer](GameDataContainer) other)               | Upcast an instance of type [GameDataContainer](GameDataContainer) to [VegetationTreeEntityData](VegetationTreeEntityData).               |
-| VegetationTreeEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other)  | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VegetationTreeEntityData](VegetationTreeEntityData).  |
+| VegetationTreeEntityData([VegetationBaseEntityData](/vext/ref/fb/vegetationbaseentitydata/) other) | Upcast an instance of type [VegetationBaseEntityData](/vext/ref/fb/vegetationbaseentitydata/) to [VegetationTreeEntityData](/vext/ref/fb/vegetationtreeentitydata/). |
+| VegetationTreeEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                     | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [VegetationTreeEntityData](/vext/ref/fb/vegetationtreeentitydata/).                     |
+| VegetationTreeEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)               | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [VegetationTreeEntityData](/vext/ref/fb/vegetationtreeentitydata/).               |
+| VegetationTreeEntityData([EntityData](/vext/ref/fb/entitydata/) other)                             | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [VegetationTreeEntityData](/vext/ref/fb/vegetationtreeentitydata/).                             |
+| VegetationTreeEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                     | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [VegetationTreeEntityData](/vext/ref/fb/vegetationtreeentitydata/).                     |
+| VegetationTreeEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)               | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [VegetationTreeEntityData](/vext/ref/fb/vegetationtreeentitydata/).               |
+| VegetationTreeEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other)  | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VegetationTreeEntityData](/vext/ref/fb/vegetationtreeentitydata/).  |
 
 ## Properties
 
 | Name                      | Type                               | Description |
 | ------------------------- | ---------------------------------- | ----------- |
-| groundImpactEffect        | [EffectBlueprint](EffectBlueprint) |             |
-| stemRipEffect             | [EffectBlueprint](EffectBlueprint) |             |
+| groundImpactEffect        | [EffectBlueprint](/vext/ref/fb/effectblueprint/) |             |
+| stemRipEffect             | [EffectBlueprint](/vext/ref/fb/effectblueprint/) |             |
 | stemPhysicsWidth          | number                             |             |
 | coliPlaneDepth            | number                             |             |
 | stemHitpoints             | number                             |             |
@@ -42,19 +42,19 @@ A container type representing a Frostbite instance entry.
 | windStem                  | number                             |             |
 | windBranch                | number                             |             |
 | windBranchL2              | number                             |             |
-| treeFallEffect            | [EffectBlueprint](EffectBlueprint) |             |
+| treeFallEffect            | [EffectBlueprint](/vext/ref/fb/effectblueprint/) |             |
 | breakableJointThreshold   | number                             |             |
 | fallDirectionEnd          | number                             |             |
-| localWindEffect           | [EffectBlueprint](EffectBlueprint) |             |
+| localWindEffect           | [EffectBlueprint](/vext/ref/fb/effectblueprint/) |             |
 | impactThreshold           | number                             |             |
 | collisionImpactMultiplier | number                             |             |
 | fallDirectionStart        | number                             |             |
-| splashDistantEffect       | [EffectBlueprint](EffectBlueprint) |             |
-| bulletImpactEffect        | [EffectBlueprint](EffectBlueprint) |             |
+| splashDistantEffect       | [EffectBlueprint](/vext/ref/fb/effectblueprint/) |             |
+| bulletImpactEffect        | [EffectBlueprint](/vext/ref/fb/effectblueprint/) |             |
 | partsTimeToLive           | number                             |             |
 | shadowLODOffset           | number                             |             |
-| splashNearEffect          | [EffectBlueprint](EffectBlueprint) |             |
-| collisionEffect           | [EffectBlueprint](EffectBlueprint) |             |
+| splashNearEffect          | [EffectBlueprint](/vext/ref/fb/effectblueprint/) |             |
+| collisionEffect           | [EffectBlueprint](/vext/ref/fb/effectblueprint/) |             |
 | forceFullSim              | bool                               |             |
 | useImpactThreshold        | bool                               |             |
 | usePhysicsShapes          | bool                               |             |
@@ -66,11 +66,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                 | Name            | Parameters                                     |
 | ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [VegetationTreeEntityData](VegetationTreeEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [VegetationTreeEntityData](/vext/ref/fb/vegetationtreeentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [VegetationTreeEntityData](VegetationTreeEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [VegetationTreeEntityData](/vext/ref/fb/vegetationtreeentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -78,4 +78,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

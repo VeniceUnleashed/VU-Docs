@@ -26,10 +26,10 @@ A structure type representing a Frostbite data type.
 
 | Type                         | Name            | Parameters |
 | ---------------------------- | --------------- | ---------- |
-| [EndPointData](EndPointData) | [Clone](#clone) |            |
+| [EndPointData](/vext/ref/fb/endpointdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [EndPointData](EndPointData) **Clone**()
+> [EndPointData](/vext/ref/fb/endpointdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

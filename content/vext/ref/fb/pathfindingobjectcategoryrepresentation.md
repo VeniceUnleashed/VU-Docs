@@ -16,17 +16,17 @@ A structure type representing a Frostbite data type.
 
 | Name           | Type                                                             | Description |
 | -------------- | ---------------------------------------------------------------- | ----------- |
-| category       | [PathfindingObjectCategoryAsset](PathfindingObjectCategoryAsset) |             |
-| representation | [PathfindingRepresentation](PathfindingRepresentation)           |             |
+| category       | [PathfindingObjectCategoryAsset](/vext/ref/fb/pathfindingobjectcategoryasset/) |             |
+| representation | [PathfindingRepresentation](/vext/ref/fb/pathfindingrepresentation/)           |             |
 
 ## Methods
 
 | Type                                                                               | Name            | Parameters |
 | ---------------------------------------------------------------------------------- | --------------- | ---------- |
-| [PathfindingObjectCategoryRepresentation](PathfindingObjectCategoryRepresentation) | [Clone](#clone) |            |
+| [PathfindingObjectCategoryRepresentation](/vext/ref/fb/pathfindingobjectcategoryrepresentation/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [PathfindingObjectCategoryRepresentation](PathfindingObjectCategoryRepresentation) **Clone**()
+> [PathfindingObjectCategoryRepresentation](/vext/ref/fb/pathfindingobjectcategoryrepresentation/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

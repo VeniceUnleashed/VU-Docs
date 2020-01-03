@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                     | Name            | Parameters |
 | ---------------------------------------- | --------------- | ---------- |
-| [PickupSettingsData](PickupSettingsData) | [Clone](#clone) |            |
+| [PickupSettingsData](/vext/ref/fb/pickupsettingsdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [PickupSettingsData](PickupSettingsData) **Clone**()
+> [PickupSettingsData](/vext/ref/fb/pickupsettingsdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

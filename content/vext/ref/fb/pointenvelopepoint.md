@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                     | Name            | Parameters |
 | ---------------------------------------- | --------------- | ---------- |
-| [PointEnvelopePoint](PointEnvelopePoint) | [Clone](#clone) |            |
+| [PointEnvelopePoint](/vext/ref/fb/pointenvelopepoint/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [PointEnvelopePoint](PointEnvelopePoint) **Clone**()
+> [PointEnvelopePoint](/vext/ref/fb/pointenvelopepoint/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

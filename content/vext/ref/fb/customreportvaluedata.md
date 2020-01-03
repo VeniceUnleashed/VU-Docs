@@ -17,17 +17,17 @@ A structure type representing a Frostbite data type.
 | Name     | Type                                               | Description |
 | -------- | -------------------------------------------------- | ----------- |
 | name     | string                                             |             |
-| kind     | [CustomReportValueKind](CustomReportValueKind)     |             |
-| dataType | [PersistentValueDataType](PersistentValueDataType) |             |
+| kind     | [CustomReportValueKind](/vext/ref/fb/customreportvaluekind/)     |             |
+| dataType | [PersistentValueDataType](/vext/ref/fb/persistentvaluedatatype/) |             |
 
 ## Methods
 
 | Type                                           | Name            | Parameters |
 | ---------------------------------------------- | --------------- | ---------- |
-| [CustomReportValueData](CustomReportValueData) | [Clone](#clone) |            |
+| [CustomReportValueData](/vext/ref/fb/customreportvaluedata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [CustomReportValueData](CustomReportValueData) **Clone**()
+> [CustomReportValueData](/vext/ref/fb/customreportvaluedata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

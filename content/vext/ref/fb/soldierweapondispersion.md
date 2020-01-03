@@ -16,9 +16,9 @@ A structure type representing a Frostbite data type.
 
 | Name                           | Type                                         | Description |
 | ------------------------------ | -------------------------------------------- | ----------- |
-| standDispersion                | [FiringDispersionData](FiringDispersionData) |             |
-| crouchDispersion               | [FiringDispersionData](FiringDispersionData) |             |
-| proneDispersion                | [FiringDispersionData](FiringDispersionData) |             |
+| standDispersion                | [FiringDispersionData](/vext/ref/fb/firingdispersiondata/) |             |
+| crouchDispersion               | [FiringDispersionData](/vext/ref/fb/firingdispersiondata/) |             |
+| proneDispersion                | [FiringDispersionData](/vext/ref/fb/firingdispersiondata/) |             |
 | jumpDispersionAngle            | number                                       |             |
 | proneTransitionDispersionAngle | number                                       |             |
 | moveDispersionAngle            | number                                       |             |
@@ -29,10 +29,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                               | Name            | Parameters |
 | -------------------------------------------------- | --------------- | ---------- |
-| [SoldierWeaponDispersion](SoldierWeaponDispersion) | [Clone](#clone) |            |
+| [SoldierWeaponDispersion](/vext/ref/fb/soldierweapondispersion/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SoldierWeaponDispersion](SoldierWeaponDispersion) **Clone**()
+> [SoldierWeaponDispersion](/vext/ref/fb/soldierweapondispersion/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

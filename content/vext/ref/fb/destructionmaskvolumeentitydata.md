@@ -3,7 +3,7 @@ title: DestructionMaskVolumeEntityData
 ---
 ### Base Classes
 
-[GameEntityData](GameEntityData)
+[GameEntityData](/vext/ref/fb/gameentitydata/)
 
 ## Description
 
@@ -15,12 +15,12 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DestructionMaskVolumeEntityData()                                                          | Create a new instance of this container type.                                                                                                         |
 | DestructionMaskVolumeEntityData(DestructionMaskVolumeEntityData other)                     | Create a reference copy of an instance of the same type.                                                                                              |
-| DestructionMaskVolumeEntityData([GameEntityData](GameEntityData) other)                    | Upcast an instance of type [GameEntityData](GameEntityData) to [DestructionMaskVolumeEntityData](DestructionMaskVolumeEntityData).                    |
-| DestructionMaskVolumeEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [DestructionMaskVolumeEntityData](DestructionMaskVolumeEntityData).              |
-| DestructionMaskVolumeEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [DestructionMaskVolumeEntityData](DestructionMaskVolumeEntityData).                            |
-| DestructionMaskVolumeEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [DestructionMaskVolumeEntityData](DestructionMaskVolumeEntityData).                    |
-| DestructionMaskVolumeEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [DestructionMaskVolumeEntityData](DestructionMaskVolumeEntityData).              |
-| DestructionMaskVolumeEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DestructionMaskVolumeEntityData](DestructionMaskVolumeEntityData). |
+| DestructionMaskVolumeEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [DestructionMaskVolumeEntityData](/vext/ref/fb/destructionmaskvolumeentitydata/).                    |
+| DestructionMaskVolumeEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [DestructionMaskVolumeEntityData](/vext/ref/fb/destructionmaskvolumeentitydata/).              |
+| DestructionMaskVolumeEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [DestructionMaskVolumeEntityData](/vext/ref/fb/destructionmaskvolumeentitydata/).                            |
+| DestructionMaskVolumeEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [DestructionMaskVolumeEntityData](/vext/ref/fb/destructionmaskvolumeentitydata/).                    |
+| DestructionMaskVolumeEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [DestructionMaskVolumeEntityData](/vext/ref/fb/destructionmaskvolumeentitydata/).              |
+| DestructionMaskVolumeEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DestructionMaskVolumeEntityData](/vext/ref/fb/destructionmaskvolumeentitydata/). |
 
 ## Properties
 
@@ -29,18 +29,18 @@ A container type representing a Frostbite instance entry.
 | dustAccumulationCurve    | [Vec4](/vext/ref/shared/class/vec4)                                  |             |
 | shaderUserMasks          | [Vec4](/vext/ref/shared/class/vec4)                                  |             |
 | dustAccumulationLifeTime | number                                                             |             |
-| shader                   | [SurfaceShaderInstanceDataStruct](SurfaceShaderInstanceDataStruct) |             |
+| shader                   | [SurfaceShaderInstanceDataStruct](/vext/ref/fb/surfaceshaderinstancedatastruct/) |             |
 | radius                   | number                                                             |             |
 
 ## Methods
 
 | Type                                                               | Name            | Parameters                                     |
 | ------------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [DestructionMaskVolumeEntityData](DestructionMaskVolumeEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [DestructionMaskVolumeEntityData](/vext/ref/fb/destructionmaskvolumeentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [DestructionMaskVolumeEntityData](DestructionMaskVolumeEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [DestructionMaskVolumeEntityData](/vext/ref/fb/destructionmaskvolumeentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -48,4 +48,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

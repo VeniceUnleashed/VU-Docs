@@ -22,10 +22,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                       | Name            | Parameters |
 | ------------------------------------------ | --------------- | ---------- |
-| [DataVisualizerValue](DataVisualizerValue) | [Clone](#clone) |            |
+| [DataVisualizerValue](/vext/ref/fb/datavisualizervalue/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [DataVisualizerValue](DataVisualizerValue) **Clone**()
+> [DataVisualizerValue](/vext/ref/fb/datavisualizervalue/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

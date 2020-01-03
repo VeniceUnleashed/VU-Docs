@@ -25,10 +25,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                   | Name            | Parameters |
 | -------------------------------------- | --------------- | ---------- |
-| [VisionBoxSettings](VisionBoxSettings) | [Clone](#clone) |            |
+| [VisionBoxSettings](/vext/ref/fb/visionboxsettings/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [VisionBoxSettings](VisionBoxSettings) **Clone**()
+> [VisionBoxSettings](/vext/ref/fb/visionboxsettings/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

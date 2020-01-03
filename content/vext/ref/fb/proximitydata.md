@@ -15,23 +15,23 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
 | ProximityData()                                                          | Create a new instance of this container type.                                                                     |
 | ProximityData(ProximityData other)                                       | Create a reference copy of an instance of the same type.                                                          |
-| ProximityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ProximityData](ProximityData). |
+| ProximityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ProximityData](/vext/ref/fb/proximitydata/). |
 
 ## Properties
 
 | Name          | Type                                       | Description |
 | ------------- | ------------------------------------------ | ----------- |
-| proximityType | [ProximityObjectType](ProximityObjectType) |             |
+| proximityType | [ProximityObjectType](/vext/ref/fb/proximityobjecttype/) |             |
 
 ## Methods
 
 | Type                           | Name            | Parameters                                     |
 | ------------------------------ | --------------- | ---------------------------------------------- |
-| [ProximityData](ProximityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [ProximityData](/vext/ref/fb/proximitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [ProximityData](ProximityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [ProximityData](/vext/ref/fb/proximitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -39,4 +39,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

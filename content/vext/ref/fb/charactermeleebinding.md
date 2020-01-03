@@ -16,19 +16,19 @@ A structure type representing a Frostbite data type.
 
 | Name         | Type             | Description |
 | ------------ | ---------------- | ----------- |
-| triggerMelee | [AntRef](AntRef) |             |
-| selfActor    | [AntRef](AntRef) |             |
-| otherActor   | [AntRef](AntRef) |             |
-| meleeActive  | [AntRef](AntRef) |             |
+| triggerMelee | [AntRef](/vext/ref/fb/antref/) |             |
+| selfActor    | [AntRef](/vext/ref/fb/antref/) |             |
+| otherActor   | [AntRef](/vext/ref/fb/antref/) |             |
+| meleeActive  | [AntRef](/vext/ref/fb/antref/) |             |
 
 ## Methods
 
 | Type                                           | Name            | Parameters |
 | ---------------------------------------------- | --------------- | ---------- |
-| [CharacterMeleeBinding](CharacterMeleeBinding) | [Clone](#clone) |            |
+| [CharacterMeleeBinding](/vext/ref/fb/charactermeleebinding/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [CharacterMeleeBinding](CharacterMeleeBinding) **Clone**()
+> [CharacterMeleeBinding](/vext/ref/fb/charactermeleebinding/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

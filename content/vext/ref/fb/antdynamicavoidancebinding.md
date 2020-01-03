@@ -16,19 +16,19 @@ A structure type representing a Frostbite data type.
 
 | Name                   | Type             | Description |
 | ---------------------- | ---------------- | ----------- |
-| timeUntilCollision     | [AntRef](AntRef) |             |
-| distanceUntilCollision | [AntRef](AntRef) |             |
-| normalizedVelocity     | [AntRef](AntRef) |             |
-| speed                  | [AntRef](AntRef) |             |
+| timeUntilCollision     | [AntRef](/vext/ref/fb/antref/) |             |
+| distanceUntilCollision | [AntRef](/vext/ref/fb/antref/) |             |
+| normalizedVelocity     | [AntRef](/vext/ref/fb/antref/) |             |
+| speed                  | [AntRef](/vext/ref/fb/antref/) |             |
 
 ## Methods
 
 | Type                                                     | Name            | Parameters |
 | -------------------------------------------------------- | --------------- | ---------- |
-| [AntDynamicAvoidanceBinding](AntDynamicAvoidanceBinding) | [Clone](#clone) |            |
+| [AntDynamicAvoidanceBinding](/vext/ref/fb/antdynamicavoidancebinding/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [AntDynamicAvoidanceBinding](AntDynamicAvoidanceBinding) **Clone**()
+> [AntDynamicAvoidanceBinding](/vext/ref/fb/antdynamicavoidancebinding/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -16,17 +16,17 @@ A structure type representing a Frostbite data type.
 
 | Name   | Type                                       | Description |
 | ------ | ------------------------------------------ | ----------- |
-| noZoom | [GunSwayBaseMoveData](GunSwayBaseMoveData) |             |
-| zoom   | [GunSwayBaseMoveData](GunSwayBaseMoveData) |             |
+| noZoom | [GunSwayBaseMoveData](/vext/ref/fb/gunswaybasemovedata/) |             |
+| zoom   | [GunSwayBaseMoveData](/vext/ref/fb/gunswaybasemovedata/) |             |
 
 ## Methods
 
 | Type                                             | Name            | Parameters |
 | ------------------------------------------------ | --------------- | ---------- |
-| [GunSwayCrouchProneData](GunSwayCrouchProneData) | [Clone](#clone) |            |
+| [GunSwayCrouchProneData](/vext/ref/fb/gunswaycrouchpronedata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [GunSwayCrouchProneData](GunSwayCrouchProneData) **Clone**()
+> [GunSwayCrouchProneData](/vext/ref/fb/gunswaycrouchpronedata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

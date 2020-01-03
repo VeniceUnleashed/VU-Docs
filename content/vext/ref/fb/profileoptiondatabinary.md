@@ -3,7 +3,7 @@ title: ProfileOptionDataBinary
 ---
 ### Base Classes
 
-[ProfileOptionData](ProfileOptionData)
+[ProfileOptionData](/vext/ref/fb/profileoptiondata/)
 
 ## Description
 
@@ -15,9 +15,9 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | ProfileOptionDataBinary()                                                          | Create a new instance of this container type.                                                                                         |
 | ProfileOptionDataBinary(ProfileOptionDataBinary other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| ProfileOptionDataBinary([ProfileOptionData](ProfileOptionData) other)              | Upcast an instance of type [ProfileOptionData](ProfileOptionData) to [ProfileOptionDataBinary](ProfileOptionDataBinary).              |
-| ProfileOptionDataBinary([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [ProfileOptionDataBinary](ProfileOptionDataBinary).                                      |
-| ProfileOptionDataBinary([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ProfileOptionDataBinary](ProfileOptionDataBinary). |
+| ProfileOptionDataBinary([ProfileOptionData](/vext/ref/fb/profileoptiondata/) other)              | Upcast an instance of type [ProfileOptionData](/vext/ref/fb/profileoptiondata/) to [ProfileOptionDataBinary](/vext/ref/fb/profileoptiondatabinary/).              |
+| ProfileOptionDataBinary([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [ProfileOptionDataBinary](/vext/ref/fb/profileoptiondatabinary/).                                      |
+| ProfileOptionDataBinary([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ProfileOptionDataBinary](/vext/ref/fb/profileoptiondatabinary/). |
 
 ## Properties
 
@@ -29,11 +29,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                               | Name            | Parameters                                     |
 | -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [ProfileOptionDataBinary](ProfileOptionDataBinary) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [ProfileOptionDataBinary](/vext/ref/fb/profileoptiondatabinary/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [ProfileOptionDataBinary](ProfileOptionDataBinary) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [ProfileOptionDataBinary](/vext/ref/fb/profileoptiondatabinary/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -41,4 +41,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

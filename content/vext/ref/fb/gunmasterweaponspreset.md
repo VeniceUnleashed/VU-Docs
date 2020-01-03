@@ -16,17 +16,17 @@ A structure type representing a Frostbite data type.
 
 | Name                | Type                                             | Description |
 | ------------------- | ------------------------------------------------ | ----------- |
-| gunMasterLevelInfos | [GunMasterLevelInfo](GunMasterLevelInfo)\[\]     |             |
-| levelOverrides      | [CustomizeSoldierData](CustomizeSoldierData)\[\] |             |
+| gunMasterLevelInfos | [GunMasterLevelInfo](/vext/ref/fb/gunmasterlevelinfo/)\[\]     |             |
+| levelOverrides      | [CustomizeSoldierData](/vext/ref/fb/customizesoldierdata/)\[\] |             |
 
 ## Methods
 
 | Type                                             | Name            | Parameters |
 | ------------------------------------------------ | --------------- | ---------- |
-| [GunMasterWeaponsPreset](GunMasterWeaponsPreset) | [Clone](#clone) |            |
+| [GunMasterWeaponsPreset](/vext/ref/fb/gunmasterweaponspreset/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [GunMasterWeaponsPreset](GunMasterWeaponsPreset) **Clone**()
+> [GunMasterWeaponsPreset](/vext/ref/fb/gunmasterweaponspreset/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

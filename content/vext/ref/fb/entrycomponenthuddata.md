@@ -17,7 +17,7 @@ A structure type representing a Frostbite data type.
 | Name                   | Type                           | Description |
 | ---------------------- | ------------------------------ | ----------- |
 | index                  | number                         |             |
-| seatType               | [EntrySeatType](EntrySeatType) |             |
+| seatType               | [EntrySeatType](/vext/ref/fb/entryseattype/) |             |
 | frustum                | bool                           |             |
 | visible                | bool                           |             |
 | maximizeMiniMapOnEntry | bool                           |             |
@@ -26,10 +26,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                           | Name            | Parameters |
 | ---------------------------------------------- | --------------- | ---------- |
-| [EntryComponentHudData](EntryComponentHudData) | [Clone](#clone) |            |
+| [EntryComponentHudData](/vext/ref/fb/entrycomponenthuddata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [EntryComponentHudData](EntryComponentHudData) **Clone**()
+> [EntryComponentHudData](/vext/ref/fb/entrycomponenthuddata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

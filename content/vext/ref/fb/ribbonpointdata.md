@@ -25,10 +25,10 @@ A structure type representing a Frostbite data type.
 
 | Type                               | Name            | Parameters |
 | ---------------------------------- | --------------- | ---------- |
-| [RibbonPointData](RibbonPointData) | [Clone](#clone) |            |
+| [RibbonPointData](/vext/ref/fb/ribbonpointdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [RibbonPointData](RibbonPointData) **Clone**()
+> [RibbonPointData](/vext/ref/fb/ribbonpointdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

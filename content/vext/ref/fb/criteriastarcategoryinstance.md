@@ -17,17 +17,17 @@ A structure type representing a Frostbite data type.
 | Name   | Type                                           | Description |
 | ------ | ---------------------------------------------- | ----------- |
 | name   | string                                         |             |
-| paramX | [StatsCategoryBaseData](StatsCategoryBaseData) |             |
-| paramY | [StatsCategoryBaseData](StatsCategoryBaseData) |             |
+| paramX | [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/) |             |
+| paramY | [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/) |             |
 
 ## Methods
 
 | Type                                                         | Name            | Parameters |
 | ------------------------------------------------------------ | --------------- | ---------- |
-| [CriteriaStarCategoryInstance](CriteriaStarCategoryInstance) | [Clone](#clone) |            |
+| [CriteriaStarCategoryInstance](/vext/ref/fb/criteriastarcategoryinstance/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [CriteriaStarCategoryInstance](CriteriaStarCategoryInstance) **Clone**()
+> [CriteriaStarCategoryInstance](/vext/ref/fb/criteriastarcategoryinstance/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

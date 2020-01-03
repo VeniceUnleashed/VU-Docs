@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                           | Name            | Parameters |
 | ------------------------------ | --------------- | ---------- |
-| [UIGeoLatitude](UIGeoLatitude) | [Clone](#clone) |            |
+| [UIGeoLatitude](/vext/ref/fb/uigeolatitude/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [UIGeoLatitude](UIGeoLatitude) **Clone**()
+> [UIGeoLatitude](/vext/ref/fb/uigeolatitude/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -15,7 +15,7 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | OutdoorLightEffectState()                                                          | Create a new instance of this container type.                                                                                         |
 | OutdoorLightEffectState(OutdoorLightEffectState other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| OutdoorLightEffectState([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [OutdoorLightEffectState](OutdoorLightEffectState). |
+| OutdoorLightEffectState([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [OutdoorLightEffectState](/vext/ref/fb/outdoorlighteffectstate/). |
 
 ## Properties
 
@@ -29,7 +29,7 @@ A container type representing a Frostbite instance entry.
 | sunRotationY         | number                            |             |
 | skyLightAngleFactor  | number                            |             |
 | sunShadowHeightScale | number                            |             |
-| cloudShadowTexture   | [TextureAsset](TextureAsset)      |             |
+| cloudShadowTexture   | [TextureAsset](/vext/ref/fb/textureasset/)      |             |
 | cloudShadowSize      | number                            |             |
 | cloudShadowExponent  | number                            |             |
 | cloudShadowCoverage  | number                            |             |
@@ -40,11 +40,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                               | Name            | Parameters                                     |
 | -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [OutdoorLightEffectState](OutdoorLightEffectState) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [OutdoorLightEffectState](/vext/ref/fb/outdoorlighteffectstate/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [OutdoorLightEffectState](OutdoorLightEffectState) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [OutdoorLightEffectState](/vext/ref/fb/outdoorlighteffectstate/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -52,4 +52,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

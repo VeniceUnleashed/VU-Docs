@@ -3,7 +3,7 @@ title: SamplerNodeData
 ---
 ### Base Classes
 
-[AudioGraphNodeData](AudioGraphNodeData)
+[AudioGraphNodeData](/vext/ref/fb/audiographnodedata/)
 
 ## Description
 
@@ -15,43 +15,43 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | SamplerNodeData()                                                          | Create a new instance of this container type.                                                                         |
 | SamplerNodeData(SamplerNodeData other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| SamplerNodeData([AudioGraphNodeData](AudioGraphNodeData) other)            | Upcast an instance of type [AudioGraphNodeData](AudioGraphNodeData) to [SamplerNodeData](SamplerNodeData).            |
-| SamplerNodeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SamplerNodeData](SamplerNodeData). |
+| SamplerNodeData([AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) other)            | Upcast an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) to [SamplerNodeData](/vext/ref/fb/samplernodedata/).            |
+| SamplerNodeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SamplerNodeData](/vext/ref/fb/samplernodedata/). |
 
 ## Properties
 
 | Name            | Type                                     | Description |
 | --------------- | ---------------------------------------- | ----------- |
-| externalWave    | [AudioGraphNodePort](AudioGraphNodePort) |             |
-| variation       | [AudioGraphNodePort](AudioGraphNodePort) |             |
-| offset          | [AudioGraphNodePort](AudioGraphNodePort) |             |
-| delay           | [AudioGraphNodePort](AudioGraphNodePort) |             |
-| pitch           | [AudioGraphNodePort](AudioGraphNodePort) |             |
-| amplitude       | [AudioGraphNodePort](AudioGraphNodePort) |             |
-| enableStep      | [AudioGraphNodePort](AudioGraphNodePort) |             |
-| buffer          | [AudioGraphNodePort](AudioGraphNodePort) |             |
-| trigger         | [AudioGraphNodePort](AudioGraphNodePort) |             |
-| release         | [AudioGraphNodePort](AudioGraphNodePort) |             |
-| step            | [AudioGraphNodePort](AudioGraphNodePort) |             |
-| output          | [AudioGraphNodePort](AudioGraphNodePort) |             |
-| finished        | [AudioGraphNodePort](AudioGraphNodePort) |             |
-| buffered        | [AudioGraphNodePort](AudioGraphNodePort) |             |
-| position        | [AudioGraphNodePort](AudioGraphNodePort) |             |
-| wave            | [SoundWaveAsset](SoundWaveAsset)         |             |
+| externalWave    | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
+| variation       | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
+| offset          | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
+| delay           | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
+| pitch           | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
+| amplitude       | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
+| enableStep      | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
+| buffer          | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
+| trigger         | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
+| release         | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
+| step            | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
+| output          | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
+| finished        | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
+| buffered        | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
+| position        | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
+| wave            | [SoundWaveAsset](/vext/ref/fb/soundwaveasset/)         |             |
 | basePitch       | number                                   |             |
-| loop            | [LoopType](LoopType)                     |             |
-| plugins         | [SamplerPlugins](SamplerPlugins)\[\]     |             |
+| loop            | [LoopType](/vext/ref/fb/looptype/)                     |             |
+| plugins         | [SamplerPlugins](/vext/ref/fb/samplerplugins/)\[\]     |             |
 | shuffleSegments | bool                                     |             |
 
 ## Methods
 
 | Type                               | Name            | Parameters                                     |
 | ---------------------------------- | --------------- | ---------------------------------------------- |
-| [SamplerNodeData](SamplerNodeData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [SamplerNodeData](/vext/ref/fb/samplernodedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [SamplerNodeData](SamplerNodeData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [SamplerNodeData](/vext/ref/fb/samplernodedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -59,4 +59,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                   | Name            | Parameters |
 | ------------------------------------------------------ | --------------- | ---------- |
-| [UILevelSpecificPageHeader](UILevelSpecificPageHeader) | [Clone](#clone) |            |
+| [UILevelSpecificPageHeader](/vext/ref/fb/uilevelspecificpageheader/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [UILevelSpecificPageHeader](UILevelSpecificPageHeader) **Clone**()
+> [UILevelSpecificPageHeader](/vext/ref/fb/uilevelspecificpageheader/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

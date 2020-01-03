@@ -17,17 +17,17 @@ A structure type representing a Frostbite data type.
 | Name          | Type                                       | Description |
 | ------------- | ------------------------------------------ | ----------- |
 | value         | [Vec4](/vext/ref/shared/class/vec4)          |             |
-| parameterType | [ShaderParameterType](ShaderParameterType) |             |
+| parameterType | [ShaderParameterType](/vext/ref/fb/shaderparametertype/) |             |
 | parameterName | string                                     |             |
 
 ## Methods
 
 | Type                                           | Name            | Parameters |
 | ---------------------------------------------- | --------------- | ---------- |
-| [VectorShaderParameter](VectorShaderParameter) | [Clone](#clone) |            |
+| [VectorShaderParameter](/vext/ref/fb/vectorshaderparameter/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [VectorShaderParameter](VectorShaderParameter) **Clone**()
+> [VectorShaderParameter](/vext/ref/fb/vectorshaderparameter/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

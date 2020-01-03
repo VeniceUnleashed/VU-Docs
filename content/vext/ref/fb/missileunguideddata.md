@@ -25,10 +25,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                       | Name            | Parameters |
 | ------------------------------------------ | --------------- | ---------- |
-| [MissileUnguidedData](MissileUnguidedData) | [Clone](#clone) |            |
+| [MissileUnguidedData](/vext/ref/fb/missileunguideddata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [MissileUnguidedData](MissileUnguidedData) **Clone**()
+> [MissileUnguidedData](/vext/ref/fb/missileunguideddata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

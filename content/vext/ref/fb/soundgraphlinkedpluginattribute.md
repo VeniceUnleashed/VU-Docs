@@ -16,9 +16,9 @@ A structure type representing a Frostbite data type.
 
 | Name               | Type                                       | Description |
 | ------------------ | ------------------------------------------ | ----------- |
-| plugin             | [SoundGraphPluginRef](SoundGraphPluginRef) |             |
-| node               | [AudioGraphNodeData](AudioGraphNodeData)   |             |
-| port               | [AudioGraphNodePort](AudioGraphNodePort)   |             |
+| plugin             | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref/) |             |
+| node               | [AudioGraphNodeData](/vext/ref/fb/audiographnodedata/)   |             |
+| port               | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/)   |             |
 | attributeIndex     | number                                     |             |
 | allowExtremeValues | bool                                       |             |
 
@@ -26,10 +26,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                               | Name            | Parameters |
 | ------------------------------------------------------------------ | --------------- | ---------- |
-| [SoundGraphLinkedPluginAttribute](SoundGraphLinkedPluginAttribute) | [Clone](#clone) |            |
+| [SoundGraphLinkedPluginAttribute](/vext/ref/fb/soundgraphlinkedpluginattribute/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SoundGraphLinkedPluginAttribute](SoundGraphLinkedPluginAttribute) **Clone**()
+> [SoundGraphLinkedPluginAttribute](/vext/ref/fb/soundgraphlinkedpluginattribute/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

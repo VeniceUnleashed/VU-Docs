@@ -20,19 +20,19 @@ A structure type representing a Frostbite data type.
 | combatAreaColor                 | [Vec4](/vext/ref/shared/class/vec4)                            |             |
 | detailTextureTint               | [Vec4](/vext/ref/shared/class/vec4)                            |             |
 | combatAreaMultiplyWrapAmount    | [Vec2](/vext/ref/shared/class/vec2)                            |             |
-| vegetation                      | [UIMinimapDistanceFieldParams](UIMinimapDistanceFieldParams) |             |
-| fadeTexture                     | [TextureAsset](TextureAsset)                                 |             |
+| vegetation                      | [UIMinimapDistanceFieldParams](/vext/ref/fb/uiminimapdistancefieldparams/) |             |
+| fadeTexture                     | [TextureAsset](/vext/ref/fb/textureasset/)                                 |             |
 | streamingMinimapDelay           | number                                                       |             |
-| airRadarFadeTexture             | [TextureAsset](TextureAsset)                                 |             |
-| detailTexture                   | [TextureAsset](TextureAsset)                                 |             |
-| detail                          | [UIMinimapDistanceFieldParams](UIMinimapDistanceFieldParams) |             |
+| airRadarFadeTexture             | [TextureAsset](/vext/ref/fb/textureasset/)                                 |             |
+| detailTexture                   | [TextureAsset](/vext/ref/fb/textureasset/)                                 |             |
+| detail                          | [UIMinimapDistanceFieldParams](/vext/ref/fb/uiminimapdistancefieldparams/) |             |
 | streamingMinimapTransitionSpeed | number                                                       |             |
 | worldRotation                   | number                                                       |             |
 | worldRange                      | number                                                       |             |
 | combatAreaDistanceScale         | number                                                       |             |
 | combatAreaFadeSpeed             | number                                                       |             |
 | combatAreaAlphaThreshold        | number                                                       |             |
-| combatAreaMultiplyTexture       | [TextureAsset](TextureAsset)                                 |             |
+| combatAreaMultiplyTexture       | [TextureAsset](/vext/ref/fb/textureasset/)                                 |             |
 | worldSize                       | number                                                       |             |
 | airRadarRange                   | number                                                       |             |
 | combatAreaScale                 | number                                                       |             |
@@ -43,10 +43,10 @@ A structure type representing a Frostbite data type.
 
 | Type                           | Name            | Parameters |
 | ------------------------------ | --------------- | ---------- |
-| [UIMinimapData](UIMinimapData) | [Clone](#clone) |            |
+| [UIMinimapData](/vext/ref/fb/uiminimapdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [UIMinimapData](UIMinimapData) **Clone**()
+> [UIMinimapData](/vext/ref/fb/uiminimapdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                               | Name            | Parameters |
 | -------------------------------------------------- | --------------- | ---------- |
-| [FrictionScaleAtVelocity](FrictionScaleAtVelocity) | [Clone](#clone) |            |
+| [FrictionScaleAtVelocity](/vext/ref/fb/frictionscaleatvelocity/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [FrictionScaleAtVelocity](FrictionScaleAtVelocity) **Clone**()
+> [FrictionScaleAtVelocity](/vext/ref/fb/frictionscaleatvelocity/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

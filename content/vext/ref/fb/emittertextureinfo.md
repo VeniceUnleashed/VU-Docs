@@ -26,10 +26,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                     | Name            | Parameters |
 | ---------------------------------------- | --------------- | ---------- |
-| [EmitterTextureInfo](EmitterTextureInfo) | [Clone](#clone) |            |
+| [EmitterTextureInfo](/vext/ref/fb/emittertextureinfo/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [EmitterTextureInfo](EmitterTextureInfo) **Clone**()
+> [EmitterTextureInfo](/vext/ref/fb/emittertextureinfo/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

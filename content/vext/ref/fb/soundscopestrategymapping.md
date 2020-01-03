@@ -16,17 +16,17 @@ A structure type representing a Frostbite data type.
 
 | Name     | Type                                             | Description |
 | -------- | ------------------------------------------------ | ----------- |
-| scope    | [SoundScopeData](SoundScopeData)                 |             |
-| strategy | [SoundScopeStrategyData](SoundScopeStrategyData) |             |
+| scope    | [SoundScopeData](/vext/ref/fb/soundscopedata/)                 |             |
+| strategy | [SoundScopeStrategyData](/vext/ref/fb/soundscopestrategydata/) |             |
 
 ## Methods
 
 | Type                                                   | Name            | Parameters |
 | ------------------------------------------------------ | --------------- | ---------- |
-| [SoundScopeStrategyMapping](SoundScopeStrategyMapping) | [Clone](#clone) |            |
+| [SoundScopeStrategyMapping](/vext/ref/fb/soundscopestrategymapping/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SoundScopeStrategyMapping](SoundScopeStrategyMapping) **Clone**()
+> [SoundScopeStrategyMapping](/vext/ref/fb/soundscopestrategymapping/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

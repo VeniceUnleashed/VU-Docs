@@ -15,7 +15,7 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | GlobalPostProcessSettings()                                                          | Create a new instance of this container type.                                                                                             |
 | GlobalPostProcessSettings(GlobalPostProcessSettings other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| GlobalPostProcessSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GlobalPostProcessSettings](GlobalPostProcessSettings). |
+| GlobalPostProcessSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GlobalPostProcessSettings](/vext/ref/fb/globalpostprocesssettings/). |
 
 ## Properties
 
@@ -32,9 +32,9 @@ A container type representing a Frostbite instance entry.
 | ps3EdgeMlaaJobPriority           | number                                       |             |
 | bloomBlurIterationCount          | number                                       |             |
 | debugModeStep                    | number                                       |             |
-| bloomBlurFilter                  | [BlurFilter](BlurFilter)                     |             |
+| bloomBlurFilter                  | [BlurFilter](/vext/ref/fb/blurfilter/)                     |             |
 | ldrBloomRange                    | number                                       |             |
-| debugMode                        | [PostProcessDebugMode](PostProcessDebugMode) |             |
+| debugMode                        | [PostProcessDebugMode](/vext/ref/fb/postprocessdebugmode/) |             |
 | userBrightnessMin                | number                                       |             |
 | uiBrightnessNorm                 | number                                       |             |
 | ps3EdgeMlaaJobCount              | number                                       |             |
@@ -50,7 +50,7 @@ A container type representing a Frostbite instance entry.
 | ps3TiledLdrMipmapCount           | number                                       |             |
 | ps3TiledFloatMipmapCount         | number                                       |             |
 | ps3TiledBloomMipmapCount         | number                                       |             |
-| hbaoGaussianBlurSize             | [BlurFilter](BlurFilter)                     |             |
+| hbaoGaussianBlurSize             | [BlurFilter](/vext/ref/fb/blurfilter/)                     |             |
 | forceExposure                    | number                                       |             |
 | forceBlurAdd                     | number                                       |             |
 | forceDofEnable                   | number                                       |             |
@@ -88,7 +88,7 @@ A container type representing a Frostbite instance entry.
 | hbaoTemporalFilterDebugMode      | number                                       |             |
 | forceDiffusionDofAperture        | number                                       |             |
 | forceDiffusionDofFocalLength     | number                                       |             |
-| dynamicAOMethod                  | [DynamicAOMethod](DynamicAOMethod)           |             |
+| dynamicAOMethod                  | [DynamicAOMethod](/vext/ref/fb/dynamicaomethod/)           |             |
 | drawDebugInfo                    | bool                                         |             |
 | colorGradingForceUpdateAlways    | bool                                         |             |
 | bloomBlurEnable                  | bool                                         |             |
@@ -136,11 +136,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                   | Name            | Parameters                                     |
 | ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [GlobalPostProcessSettings](GlobalPostProcessSettings) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [GlobalPostProcessSettings](/vext/ref/fb/globalpostprocesssettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [GlobalPostProcessSettings](GlobalPostProcessSettings) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [GlobalPostProcessSettings](/vext/ref/fb/globalpostprocesssettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -148,4 +148,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

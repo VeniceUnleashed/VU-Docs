@@ -17,16 +17,16 @@ A structure type representing a Frostbite data type.
 | Name         | Type                               | Description |
 | ------------ | ---------------------------------- | ----------- |
 | pointsNeeded | number                             |             |
-| unlockInfo   | [BasicUnlockInfo](BasicUnlockInfo) |             |
+| unlockInfo   | [BasicUnlockInfo](/vext/ref/fb/basicunlockinfo/) |             |
 
 ## Methods
 
 | Type                                               | Name            | Parameters |
 | -------------------------------------------------- | --------------- | ---------- |
-| [ScoringBucketUnlockData](ScoringBucketUnlockData) | [Clone](#clone) |            |
+| [ScoringBucketUnlockData](/vext/ref/fb/scoringbucketunlockdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [ScoringBucketUnlockData](ScoringBucketUnlockData) **Clone**()
+> [ScoringBucketUnlockData](/vext/ref/fb/scoringbucketunlockdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

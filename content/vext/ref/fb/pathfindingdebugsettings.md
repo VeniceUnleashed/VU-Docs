@@ -15,7 +15,7 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | PathfindingDebugSettings()                                                          | Create a new instance of this container type.                                                                                           |
 | PathfindingDebugSettings(PathfindingDebugSettings other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| PathfindingDebugSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PathfindingDebugSettings](PathfindingDebugSettings). |
+| PathfindingDebugSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PathfindingDebugSettings](/vext/ref/fb/pathfindingdebugsettings/). |
 
 ## Properties
 
@@ -25,7 +25,7 @@ A container type representing a Frostbite instance entry.
 | textOffsetY        | number                                         |             |
 | textStartX         | number                                         |             |
 | textStartY         | number                                         |             |
-| replayMode         | [PathfindingReplayMode](PathfindingReplayMode) |             |
+| replayMode         | [PathfindingReplayMode](/vext/ref/fb/pathfindingreplaymode/) |             |
 | drawConnections    | bool                                           |             |
 | drawObstacles      | bool                                           |             |
 | drawPolygonOutline | bool                                           |             |
@@ -41,11 +41,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                 | Name            | Parameters                                     |
 | ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [PathfindingDebugSettings](PathfindingDebugSettings) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [PathfindingDebugSettings](/vext/ref/fb/pathfindingdebugsettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [PathfindingDebugSettings](PathfindingDebugSettings) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [PathfindingDebugSettings](/vext/ref/fb/pathfindingdebugsettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -53,4 +53,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

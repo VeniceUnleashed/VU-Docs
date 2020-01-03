@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                             | Name            | Parameters |
 | -------------------------------- | --------------- | ---------- |
-| [SoundDataChunk](SoundDataChunk) | [Clone](#clone) |            |
+| [SoundDataChunk](/vext/ref/fb/sounddatachunk/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [SoundDataChunk](SoundDataChunk) **Clone**()
+> [SoundDataChunk](/vext/ref/fb/sounddatachunk/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

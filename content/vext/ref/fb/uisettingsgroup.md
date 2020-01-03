@@ -18,16 +18,16 @@ A structure type representing a Frostbite data type.
 | ------------- | ------------------------------------ | ----------- |
 | nameSid       | string                               |             |
 | screenColumn  | number                               |             |
-| settingsItems | [UISettingsItem](UISettingsItem)\[\] |             |
+| settingsItems | [UISettingsItem](/vext/ref/fb/uisettingsitem/)\[\] |             |
 
 ## Methods
 
 | Type                               | Name            | Parameters |
 | ---------------------------------- | --------------- | ---------- |
-| [UISettingsGroup](UISettingsGroup) | [Clone](#clone) |            |
+| [UISettingsGroup](/vext/ref/fb/uisettingsgroup/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [UISettingsGroup](UISettingsGroup) **Clone**()
+> [UISettingsGroup](/vext/ref/fb/uisettingsgroup/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

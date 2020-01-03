@@ -23,10 +23,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                                                   | Name            | Parameters |
 | ---------------------------------------------------------------------- | --------------- | ---------- |
-| [LevelDescriptionInclusionCategory](LevelDescriptionInclusionCategory) | [Clone](#clone) |            |
+| [LevelDescriptionInclusionCategory](/vext/ref/fb/leveldescriptioninclusioncategory/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [LevelDescriptionInclusionCategory](LevelDescriptionInclusionCategory) **Clone**()
+> [LevelDescriptionInclusionCategory](/vext/ref/fb/leveldescriptioninclusioncategory/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

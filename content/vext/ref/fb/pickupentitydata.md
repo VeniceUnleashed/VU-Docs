@@ -3,7 +3,7 @@ title: PickupEntityData
 ---
 ### Base Classes
 
-[GamePhysicsEntityData](GamePhysicsEntityData)
+[GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata/)
 
 ## Description
 
@@ -15,22 +15,22 @@ A container type representing a Frostbite instance entry.
 | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | PickupEntityData()                                                          | Create a new instance of this container type.                                                                           |
 | PickupEntityData(PickupEntityData other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| PickupEntityData([GamePhysicsEntityData](GamePhysicsEntityData) other)      | Upcast an instance of type [GamePhysicsEntityData](GamePhysicsEntityData) to [PickupEntityData](PickupEntityData).      |
-| PickupEntityData([GameEntityData](GameEntityData) other)                    | Upcast an instance of type [GameEntityData](GameEntityData) to [PickupEntityData](PickupEntityData).                    |
-| PickupEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [PickupEntityData](PickupEntityData).              |
-| PickupEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [PickupEntityData](PickupEntityData).                            |
-| PickupEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [PickupEntityData](PickupEntityData).                    |
-| PickupEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [PickupEntityData](PickupEntityData).              |
-| PickupEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PickupEntityData](PickupEntityData). |
+| PickupEntityData([GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata/) other)      | Upcast an instance of type [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata/) to [PickupEntityData](/vext/ref/fb/pickupentitydata/).      |
+| PickupEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [PickupEntityData](/vext/ref/fb/pickupentitydata/).                    |
+| PickupEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [PickupEntityData](/vext/ref/fb/pickupentitydata/).              |
+| PickupEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [PickupEntityData](/vext/ref/fb/pickupentitydata/).                            |
+| PickupEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [PickupEntityData](/vext/ref/fb/pickupentitydata/).                    |
+| PickupEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [PickupEntityData](/vext/ref/fb/pickupentitydata/).              |
+| PickupEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PickupEntityData](/vext/ref/fb/pickupentitydata/). |
 
 ## Properties
 
 | Name                         | Type                                 | Description |
 | ---------------------------- | ------------------------------------ | ----------- |
-| randomizeAmmoOnDropForPlayer | [PickupPlayerEnum](PickupPlayerEnum) |             |
+| randomizeAmmoOnDropForPlayer | [PickupPlayerEnum](/vext/ref/fb/pickupplayerenum/) |             |
 | minRandomClipAmmoPercent     | number                               |             |
-| physicsBlueprint             | [ObjectBlueprint](ObjectBlueprint)   |             |
-| mesh                         | [MeshAsset](MeshAsset)               |             |
+| physicsBlueprint             | [ObjectBlueprint](/vext/ref/fb/objectblueprint/)   |             |
+| mesh                         | [MeshAsset](/vext/ref/fb/meshasset/)               |             |
 | maxRandomClipAmmoPercent     | number                               |             |
 | preferredWeaponSlot          | number                               |             |
 | timeToLive                   | number                               |             |
@@ -55,11 +55,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                 | Name            | Parameters                                     |
 | ------------------------------------ | --------------- | ---------------------------------------------- |
-| [PickupEntityData](PickupEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [PickupEntityData](/vext/ref/fb/pickupentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [PickupEntityData](PickupEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [PickupEntityData](/vext/ref/fb/pickupentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -67,4 +67,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

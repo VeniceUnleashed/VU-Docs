@@ -27,10 +27,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                       | Name            | Parameters |
 | ------------------------------------------ | --------------- | ---------- |
-| [PackagingDetailInfo](PackagingDetailInfo) | [Clone](#clone) |            |
+| [PackagingDetailInfo](/vext/ref/fb/packagingdetailinfo/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [PackagingDetailInfo](PackagingDetailInfo) **Clone**()
+> [PackagingDetailInfo](/vext/ref/fb/packagingdetailinfo/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

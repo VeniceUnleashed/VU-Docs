@@ -15,23 +15,23 @@ A container type representing a Frostbite instance entry.
 | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | SceneRecordingData()                                                          | Create a new instance of this container type.                                                                               |
 | SceneRecordingData(SceneRecordingData other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| SceneRecordingData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SceneRecordingData](SceneRecordingData). |
+| SceneRecordingData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SceneRecordingData](/vext/ref/fb/scenerecordingdata/). |
 
 ## Properties
 
 | Name | Type                                           | Description |
 | ---- | ---------------------------------------------- | ----------- |
-| data | [EntityRecordingData](EntityRecordingData)\[\] |             |
+| data | [EntityRecordingData](/vext/ref/fb/entityrecordingdata/)\[\] |             |
 
 ## Methods
 
 | Type                                     | Name            | Parameters                                     |
 | ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [SceneRecordingData](SceneRecordingData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [SceneRecordingData](/vext/ref/fb/scenerecordingdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [SceneRecordingData](SceneRecordingData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [SceneRecordingData](/vext/ref/fb/scenerecordingdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -39,4 +39,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

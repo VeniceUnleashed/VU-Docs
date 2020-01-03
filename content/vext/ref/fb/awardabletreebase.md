@@ -3,7 +3,7 @@ title: AwardableTreeBase
 ---
 ### Base Classes
 
-[TreeBase](TreeBase)
+[TreeBase](/vext/ref/fb/treebase/)
 
 ## Description
 
@@ -15,27 +15,27 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | AwardableTreeBase()                                                          | Create a new instance of this container type.                                                                             |
 | AwardableTreeBase(AwardableTreeBase other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| AwardableTreeBase([TreeBase](TreeBase) other)                                | Upcast an instance of type [TreeBase](TreeBase) to [AwardableTreeBase](AwardableTreeBase).                                |
-| AwardableTreeBase([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [AwardableTreeBase](AwardableTreeBase).                                      |
-| AwardableTreeBase([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AwardableTreeBase](AwardableTreeBase). |
+| AwardableTreeBase([TreeBase](/vext/ref/fb/treebase/) other)                                | Upcast an instance of type [TreeBase](/vext/ref/fb/treebase/) to [AwardableTreeBase](/vext/ref/fb/awardabletreebase/).                                |
+| AwardableTreeBase([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [AwardableTreeBase](/vext/ref/fb/awardabletreebase/).                                      |
+| AwardableTreeBase([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AwardableTreeBase](/vext/ref/fb/awardabletreebase/). |
 
 ## Properties
 
 | Name                       | Type                                                     | Description |
 | -------------------------- | -------------------------------------------------------- | ----------- |
-| statCategoryTreeCollection | [StatCategoryTreeCollection](StatCategoryTreeCollection) |             |
-| generalCriteria            | [CriteriaData](CriteriaData)\[\]                         |             |
+| statCategoryTreeCollection | [StatCategoryTreeCollection](/vext/ref/fb/statcategorytreecollection/) |             |
+| generalCriteria            | [CriteriaData](/vext/ref/fb/criteriadata/)\[\]                         |             |
 | generalStatistics          | bool                                                     |             |
 
 ## Methods
 
 | Type                                   | Name            | Parameters                                     |
 | -------------------------------------- | --------------- | ---------------------------------------------- |
-| [AwardableTreeBase](AwardableTreeBase) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [AwardableTreeBase](/vext/ref/fb/awardabletreebase/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [AwardableTreeBase](AwardableTreeBase) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [AwardableTreeBase](/vext/ref/fb/awardabletreebase/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -43,4 +43,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

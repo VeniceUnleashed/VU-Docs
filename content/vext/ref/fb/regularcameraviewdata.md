@@ -17,11 +17,11 @@ A structure type representing a Frostbite data type.
 | Name                    | Type                                         | Description |
 | ----------------------- | -------------------------------------------- | ----------- |
 | meshOffset              | [Vec3](/vext/ref/shared/class/vec3)            |             |
-| inputSuppression        | [InputSuppressionData](InputSuppressionData) |             |
+| inputSuppression        | [InputSuppressionData](/vext/ref/fb/inputsuppressiondata/) |             |
 | fieldOfView             | number                                       |             |
-| mesh                    | [RigidMeshAsset](RigidMeshAsset)             |             |
+| mesh                    | [RigidMeshAsset](/vext/ref/fb/rigidmeshasset/)             |             |
 | screenExposureAreaScale | number                                       |             |
-| maskMeshBlueprint       | [ObjectBlueprint](ObjectBlueprint)           |             |
+| maskMeshBlueprint       | [ObjectBlueprint](/vext/ref/fb/objectblueprint/)           |             |
 | lockMeshToRenderView    | bool                                         |             |
 | allowFieldOfViewScaling | bool                                         |             |
 | flirEnabled             | bool                                         |             |
@@ -30,10 +30,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                           | Name            | Parameters |
 | ---------------------------------------------- | --------------- | ---------- |
-| [RegularCameraViewData](RegularCameraViewData) | [Clone](#clone) |            |
+| [RegularCameraViewData](/vext/ref/fb/regularcameraviewdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [RegularCameraViewData](RegularCameraViewData) **Clone**()
+> [RegularCameraViewData](/vext/ref/fb/regularcameraviewdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

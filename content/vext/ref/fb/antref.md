@@ -22,10 +22,10 @@ A structure type representing a Frostbite data type.
 
 | Type             | Name            | Parameters |
 | ---------------- | --------------- | ---------- |
-| [AntRef](AntRef) | [Clone](#clone) |            |
+| [AntRef](/vext/ref/fb/antref/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [AntRef](AntRef) **Clone**()
+> [AntRef](/vext/ref/fb/antref/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

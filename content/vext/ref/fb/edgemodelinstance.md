@@ -22,10 +22,10 @@ A structure type representing a Frostbite data type.
 
 | Type                                   | Name            | Parameters |
 | -------------------------------------- | --------------- | ---------- |
-| [EdgeModelInstance](EdgeModelInstance) | [Clone](#clone) |            |
+| [EdgeModelInstance](/vext/ref/fb/edgemodelinstance/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [EdgeModelInstance](EdgeModelInstance) **Clone**()
+> [EdgeModelInstance](/vext/ref/fb/edgemodelinstance/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

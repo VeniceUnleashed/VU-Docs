@@ -3,7 +3,7 @@ title: UIGameModeDescription
 ---
 ### Base Classes
 
-[UIItemDescription](UIItemDescription)
+[UIItemDescription](/vext/ref/fb/uiitemdescription/)
 
 ## Description
 
@@ -15,8 +15,8 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | UIGameModeDescription()                                                          | Create a new instance of this container type.                                                                                     |
 | UIGameModeDescription(UIGameModeDescription other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| UIGameModeDescription([UIItemDescription](UIItemDescription) other)              | Upcast an instance of type [UIItemDescription](UIItemDescription) to [UIGameModeDescription](UIGameModeDescription).              |
-| UIGameModeDescription([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIGameModeDescription](UIGameModeDescription). |
+| UIGameModeDescription([UIItemDescription](/vext/ref/fb/uiitemdescription/) other)              | Upcast an instance of type [UIItemDescription](/vext/ref/fb/uiitemdescription/) to [UIGameModeDescription](/vext/ref/fb/uigamemodedescription/).              |
+| UIGameModeDescription([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIGameModeDescription](/vext/ref/fb/uigamemodedescription/). |
 
 ## Properties
 
@@ -28,17 +28,17 @@ A container type representing a Frostbite instance entry.
 | desc         | string                                     |             |
 | battlelogId  | number                                     |             |
 | texturePath  | string                                     |             |
-| variations   | [GameModeVariation](GameModeVariation)\[\] |             |
+| variations   | [GameModeVariation](/vext/ref/fb/gamemodevariation/)\[\] |             |
 
 ## Methods
 
 | Type                                           | Name            | Parameters                                     |
 | ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [UIGameModeDescription](UIGameModeDescription) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [UIGameModeDescription](/vext/ref/fb/uigamemodedescription/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [UIGameModeDescription](UIGameModeDescription) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [UIGameModeDescription](/vext/ref/fb/uigamemodedescription/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -46,4 +46,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

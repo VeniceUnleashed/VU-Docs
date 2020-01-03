@@ -24,10 +24,10 @@ A structure type representing a Frostbite data type.
 
 | Type                               | Name            | Parameters |
 | ---------------------------------- | --------------- | ---------- |
-| [PrecomputeCache](PrecomputeCache) | [Clone](#clone) |            |
+| [PrecomputeCache](/vext/ref/fb/precomputecache/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [PrecomputeCache](PrecomputeCache) **Clone**()
+> [PrecomputeCache](/vext/ref/fb/precomputecache/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

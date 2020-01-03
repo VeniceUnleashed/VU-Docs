@@ -16,20 +16,20 @@ A structure type representing a Frostbite data type.
 
 | Name        | Type                                                     | Description |
 | ----------- | -------------------------------------------------------- | ----------- |
-| kWinner     | [EloFunctionPoint](EloFunctionPoint)\[\]                 |             |
-| kLoser      | [EloFunctionPoint](EloFunctionPoint)\[\]                 |             |
-| kNewbie     | [EloFunctionPoint](EloFunctionPoint)\[\]                 |             |
-| kCompetitor | [EloFunctionPoint](EloFunctionPoint)\[\]                 |             |
-| expected    | [EloExpectedFunctionPoint](EloExpectedFunctionPoint)\[\] |             |
+| kWinner     | [EloFunctionPoint](/vext/ref/fb/elofunctionpoint/)\[\]                 |             |
+| kLoser      | [EloFunctionPoint](/vext/ref/fb/elofunctionpoint/)\[\]                 |             |
+| kNewbie     | [EloFunctionPoint](/vext/ref/fb/elofunctionpoint/)\[\]                 |             |
+| kCompetitor | [EloFunctionPoint](/vext/ref/fb/elofunctionpoint/)\[\]                 |             |
+| expected    | [EloExpectedFunctionPoint](/vext/ref/fb/eloexpectedfunctionpoint/)\[\] |             |
 
 ## Methods
 
 | Type                           | Name            | Parameters |
 | ------------------------------ | --------------- | ---------- |
-| [EloParameters](EloParameters) | [Clone](#clone) |            |
+| [EloParameters](/vext/ref/fb/eloparameters/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [EloParameters](EloParameters) **Clone**()
+> [EloParameters](/vext/ref/fb/eloparameters/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

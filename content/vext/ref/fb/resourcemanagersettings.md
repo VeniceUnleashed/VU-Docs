@@ -3,7 +3,7 @@ title: ResourceManagerSettings
 ---
 ### Base Classes
 
-[SystemSettings](SystemSettings)
+[SystemSettings](/vext/ref/fb/systemsettings/)
 
 ## Description
 
@@ -15,8 +15,8 @@ A container type representing a Frostbite instance entry.
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | ResourceManagerSettings()                                                          | Create a new instance of this container type.                                                                                         |
 | ResourceManagerSettings(ResourceManagerSettings other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| ResourceManagerSettings([SystemSettings](SystemSettings) other)                    | Upcast an instance of type [SystemSettings](SystemSettings) to [ResourceManagerSettings](ResourceManagerSettings).                    |
-| ResourceManagerSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ResourceManagerSettings](ResourceManagerSettings). |
+| ResourceManagerSettings([SystemSettings](/vext/ref/fb/systemsettings/) other)                    | Upcast an instance of type [SystemSettings](/vext/ref/fb/systemsettings/) to [ResourceManagerSettings](/vext/ref/fb/resourcemanagersettings/).                    |
+| ResourceManagerSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ResourceManagerSettings](/vext/ref/fb/resourcemanagersettings/). |
 
 ## Properties
 
@@ -32,11 +32,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                               | Name            | Parameters                                     |
 | -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [ResourceManagerSettings](ResourceManagerSettings) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [ResourceManagerSettings](/vext/ref/fb/resourcemanagersettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [ResourceManagerSettings](ResourceManagerSettings) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [ResourceManagerSettings](/vext/ref/fb/resourcemanagersettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -44,4 +44,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

@@ -16,17 +16,17 @@ A structure type representing a Frostbite data type.
 
 | Name   | Type                           | Description |
 | ------ | ------------------------------ | ----------- |
-| source | [AudioLanguage](AudioLanguage) |             |
-| target | [AudioLanguage](AudioLanguage) |             |
+| source | [AudioLanguage](/vext/ref/fb/audiolanguage/) |             |
+| target | [AudioLanguage](/vext/ref/fb/audiolanguage/) |             |
 
 ## Methods
 
 | Type                                         | Name            | Parameters |
 | -------------------------------------------- | --------------- | ---------- |
-| [AudioLanguageMapping](AudioLanguageMapping) | [Clone](#clone) |            |
+| [AudioLanguageMapping](/vext/ref/fb/audiolanguagemapping/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [AudioLanguageMapping](AudioLanguageMapping) **Clone**()
+> [AudioLanguageMapping](/vext/ref/fb/audiolanguagemapping/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

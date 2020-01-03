@@ -16,18 +16,18 @@ A structure type representing a Frostbite data type.
 
 | Name    | Type                                                   | Description |
 | ------- | ------------------------------------------------------ | ----------- |
-| springX | [WeaponLagEffectSpringData](WeaponLagEffectSpringData) |             |
-| springY | [WeaponLagEffectSpringData](WeaponLagEffectSpringData) |             |
-| springZ | [WeaponLagEffectSpringData](WeaponLagEffectSpringData) |             |
+| springX | [WeaponLagEffectSpringData](/vext/ref/fb/weaponlageffectspringdata/) |             |
+| springY | [WeaponLagEffectSpringData](/vext/ref/fb/weaponlageffectspringdata/) |             |
+| springZ | [WeaponLagEffectSpringData](/vext/ref/fb/weaponlageffectspringdata/) |             |
 
 ## Methods
 
 | Type                                                       | Name            | Parameters |
 | ---------------------------------------------------------- | --------------- | ---------- |
-| [WeaponLagEffectSpringVector](WeaponLagEffectSpringVector) | [Clone](#clone) |            |
+| [WeaponLagEffectSpringVector](/vext/ref/fb/weaponlageffectspringvector/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [WeaponLagEffectSpringVector](WeaponLagEffectSpringVector) **Clone**()
+> [WeaponLagEffectSpringVector](/vext/ref/fb/weaponlageffectspringvector/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

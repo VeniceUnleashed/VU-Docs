@@ -27,17 +27,17 @@ A structure type representing a Frostbite data type.
 | alphaScreenPosCurve | [Vec4](/vext/ref/shared/class/vec4)                |             |
 | sizeCamDistMax      | number                                           |             |
 | rayDistance         | number                                           |             |
-| shader              | [SurfaceShaderBaseAsset](SurfaceShaderBaseAsset) |             |
+| shader              | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset/) |             |
 | alphaCamDistMax     | number                                           |             |
 
 ## Methods
 
 | Type                                 | Name            | Parameters |
 | ------------------------------------ | --------------- | ---------- |
-| [LensFlareElement](LensFlareElement) | [Clone](#clone) |            |
+| [LensFlareElement](/vext/ref/fb/lensflareelement/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [LensFlareElement](LensFlareElement) **Clone**()
+> [LensFlareElement](/vext/ref/fb/lensflareelement/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

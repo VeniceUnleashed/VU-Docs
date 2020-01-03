@@ -15,17 +15,17 @@ A container type representing a Frostbite instance entry.
 | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | InputActionMappingData()                                                          | Create a new instance of this container type.                                                                                       |
 | InputActionMappingData(InputActionMappingData other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| InputActionMappingData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [InputActionMappingData](InputActionMappingData). |
+| InputActionMappingData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [InputActionMappingData](/vext/ref/fb/inputactionmappingdata/). |
 
 ## Methods
 
 | Type                                             | Name            | Parameters                                     |
 | ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [InputActionMappingData](InputActionMappingData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [InputActionMappingData](/vext/ref/fb/inputactionmappingdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [InputActionMappingData](InputActionMappingData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [InputActionMappingData](/vext/ref/fb/inputactionmappingdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -33,4 +33,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

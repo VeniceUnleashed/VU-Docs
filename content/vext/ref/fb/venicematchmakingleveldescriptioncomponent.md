@@ -3,7 +3,7 @@ title: VeniceMatchmakingLevelDescriptionComponent
 ---
 ### Base Classes
 
-[LevelDescriptionComponent](LevelDescriptionComponent)
+[LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent/)
 
 ## Description
 
@@ -15,8 +15,8 @@ A container type representing a Frostbite instance entry.
 | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | VeniceMatchmakingLevelDescriptionComponent()                                                             | Create a new instance of this container type.                                                                                                                                  |
 | VeniceMatchmakingLevelDescriptionComponent(VeniceMatchmakingLevelDescriptionComponent other)             | Create a reference copy of an instance of the same type.                                                                                                                       |
-| VeniceMatchmakingLevelDescriptionComponent([LevelDescriptionComponent](LevelDescriptionComponent) other) | Upcast an instance of type [LevelDescriptionComponent](LevelDescriptionComponent) to [VeniceMatchmakingLevelDescriptionComponent](VeniceMatchmakingLevelDescriptionComponent). |
-| VeniceMatchmakingLevelDescriptionComponent([DataContainer](/vext/ref/shared/class/datacontainer) other)    | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VeniceMatchmakingLevelDescriptionComponent](VeniceMatchmakingLevelDescriptionComponent).    |
+| VeniceMatchmakingLevelDescriptionComponent([LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent/) other) | Upcast an instance of type [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent/) to [VeniceMatchmakingLevelDescriptionComponent](/vext/ref/fb/venicematchmakingleveldescriptioncomponent/). |
+| VeniceMatchmakingLevelDescriptionComponent([DataContainer](/vext/ref/shared/class/datacontainer) other)    | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VeniceMatchmakingLevelDescriptionComponent](/vext/ref/fb/venicematchmakingleveldescriptioncomponent/).    |
 
 ## Properties
 
@@ -29,11 +29,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                                                     | Name            | Parameters                                     |
 | ---------------------------------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [VeniceMatchmakingLevelDescriptionComponent](VeniceMatchmakingLevelDescriptionComponent) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [VeniceMatchmakingLevelDescriptionComponent](/vext/ref/fb/venicematchmakingleveldescriptioncomponent/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [VeniceMatchmakingLevelDescriptionComponent](VeniceMatchmakingLevelDescriptionComponent) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [VeniceMatchmakingLevelDescriptionComponent](/vext/ref/fb/venicematchmakingleveldescriptioncomponent/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -41,4 +41,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

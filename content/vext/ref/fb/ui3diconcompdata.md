@@ -3,7 +3,7 @@ title: UI3dIconCompData
 ---
 ### Base Classes
 
-[UIComponentData](UIComponentData)
+[UIComponentData](/vext/ref/fb/uicomponentdata/)
 
 ## Description
 
@@ -15,9 +15,9 @@ A container type representing a Frostbite instance entry.
 | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | UI3dIconCompData()                                                          | Create a new instance of this container type.                                                                           |
 | UI3dIconCompData(UI3dIconCompData other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| UI3dIconCompData([UIComponentData](UIComponentData) other)                  | Upcast an instance of type [UIComponentData](UIComponentData) to [UI3dIconCompData](UI3dIconCompData).                  |
-| UI3dIconCompData([Asset](Asset) other)                                      | Upcast an instance of type [Asset](Asset) to [UI3dIconCompData](UI3dIconCompData).                                      |
-| UI3dIconCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UI3dIconCompData](UI3dIconCompData). |
+| UI3dIconCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UI3dIconCompData](/vext/ref/fb/ui3diconcompdata/).                  |
+| UI3dIconCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UI3dIconCompData](/vext/ref/fb/ui3diconcompdata/).                                      |
+| UI3dIconCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UI3dIconCompData](/vext/ref/fb/ui3diconcompdata/). |
 
 ## Properties
 
@@ -62,11 +62,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                 | Name            | Parameters                                     |
 | ------------------------------------ | --------------- | ---------------------------------------------- |
-| [UI3dIconCompData](UI3dIconCompData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [UI3dIconCompData](/vext/ref/fb/ui3diconcompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [UI3dIconCompData](UI3dIconCompData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [UI3dIconCompData](/vext/ref/fb/ui3diconcompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -74,4 +74,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

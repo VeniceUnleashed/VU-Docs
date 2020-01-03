@@ -16,26 +16,26 @@ A structure type representing a Frostbite data type.
 
 | Name                           | Type                                         | Description |
 | ------------------------------ | -------------------------------------------- | ----------- |
-| holdAndRelease                 | [HoldAndReleaseData](HoldAndReleaseData)     |             |
-| boltAction                     | [BoltActionData](BoltActionData)             |             |
-| recoil                         | [RecoilData](RecoilData)                     |             |
-| fireInputAction                | [EntryInputActionEnum](EntryInputActionEnum) |             |
-| reloadInputAction              | [EntryInputActionEnum](EntryInputActionEnum) |             |
-| cycleFireModeInputAction       | [EntryInputActionEnum](EntryInputActionEnum) |             |
+| holdAndRelease                 | [HoldAndReleaseData](/vext/ref/fb/holdandreleasedata/)     |             |
+| boltAction                     | [BoltActionData](/vext/ref/fb/boltactiondata/)             |             |
+| recoil                         | [RecoilData](/vext/ref/fb/recoildata/)                     |             |
+| fireInputAction                | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum/) |             |
+| reloadInputAction              | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum/) |             |
+| cycleFireModeInputAction       | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum/) |             |
 | triggerPullWeight              | number                                       |             |
 | rateOfFire                     | number                                       |             |
 | rateOfFireForBurst             | number                                       |             |
 | clientFireRateMultiplier       | number                                       |             |
 | reloadDelay                    | number                                       |             |
-| fireLogicTypeArray             | [FireLogicType](FireLogicType)\[\]           |             |
+| fireLogicTypeArray             | [FireLogicType](/vext/ref/fb/firelogictype/)\[\]           |             |
 | reloadThreshold                | number                                       |             |
 | preFireDelay                   | number                                       |             |
 | reloadTime                     | number                                       |             |
 | reloadTimeBulletsLeft          | number                                       |             |
-| fireLogicType                  | [FireLogicType](FireLogicType)               |             |
-| reloadLogic                    | [ReloadLogic](ReloadLogic)                   |             |
+| fireLogicType                  | [FireLogicType](/vext/ref/fb/firelogictype/)               |             |
+| reloadLogic                    | [ReloadLogic](/vext/ref/fb/reloadlogic/)                   |             |
 | automaticDelay                 | number                                       |             |
-| reloadType                     | [ReloadType](ReloadType)                     |             |
+| reloadType                     | [ReloadType](/vext/ref/fb/reloadtype/)                     |             |
 | holdOffReloadUntilZoomRelease  | bool                                         |             |
 | forceReloadActionOnFireTrigger | bool                                         |             |
 | holdOffReloadUntilFireRelease  | bool                                         |             |
@@ -45,10 +45,10 @@ A structure type representing a Frostbite data type.
 
 | Type                           | Name            | Parameters |
 | ------------------------------ | --------------- | ---------- |
-| [FireLogicData](FireLogicData) | [Clone](#clone) |            |
+| [FireLogicData](/vext/ref/fb/firelogicdata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [FireLogicData](FireLogicData) **Clone**()
+> [FireLogicData](/vext/ref/fb/firelogicdata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).

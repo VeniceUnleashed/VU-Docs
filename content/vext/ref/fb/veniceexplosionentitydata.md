@@ -3,7 +3,7 @@ title: VeniceExplosionEntityData
 ---
 ### Base Classes
 
-[ExplosionEntityData](ExplosionEntityData)
+[ExplosionEntityData](/vext/ref/fb/explosionentitydata/)
 
 ## Description
 
@@ -15,13 +15,13 @@ A container type representing a Frostbite instance entry.
 | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | VeniceExplosionEntityData()                                                          | Create a new instance of this container type.                                                                                             |
 | VeniceExplosionEntityData(VeniceExplosionEntityData other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| VeniceExplosionEntityData([ExplosionEntityData](ExplosionEntityData) other)          | Upcast an instance of type [ExplosionEntityData](ExplosionEntityData) to [VeniceExplosionEntityData](VeniceExplosionEntityData).          |
-| VeniceExplosionEntityData([GameEntityData](GameEntityData) other)                    | Upcast an instance of type [GameEntityData](GameEntityData) to [VeniceExplosionEntityData](VeniceExplosionEntityData).                    |
-| VeniceExplosionEntityData([SpatialEntityData](SpatialEntityData) other)              | Upcast an instance of type [SpatialEntityData](SpatialEntityData) to [VeniceExplosionEntityData](VeniceExplosionEntityData).              |
-| VeniceExplosionEntityData([EntityData](EntityData) other)                            | Upcast an instance of type [EntityData](EntityData) to [VeniceExplosionEntityData](VeniceExplosionEntityData).                            |
-| VeniceExplosionEntityData([GameObjectData](GameObjectData) other)                    | Upcast an instance of type [GameObjectData](GameObjectData) to [VeniceExplosionEntityData](VeniceExplosionEntityData).                    |
-| VeniceExplosionEntityData([GameDataContainer](GameDataContainer) other)              | Upcast an instance of type [GameDataContainer](GameDataContainer) to [VeniceExplosionEntityData](VeniceExplosionEntityData).              |
-| VeniceExplosionEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VeniceExplosionEntityData](VeniceExplosionEntityData). |
+| VeniceExplosionEntityData([ExplosionEntityData](/vext/ref/fb/explosionentitydata/) other)          | Upcast an instance of type [ExplosionEntityData](/vext/ref/fb/explosionentitydata/) to [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata/).          |
+| VeniceExplosionEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata/).                    |
+| VeniceExplosionEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata/).              |
+| VeniceExplosionEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata/).                            |
+| VeniceExplosionEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata/).                    |
+| VeniceExplosionEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata/).              |
+| VeniceExplosionEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata/). |
 
 ## Properties
 
@@ -36,11 +36,11 @@ A container type representing a Frostbite instance entry.
 
 | Type                                                   | Name            | Parameters                                     |
 | ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [VeniceExplosionEntityData](VeniceExplosionEntityData) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
+| [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
 
 ### Clone
 
-> [VeniceExplosionEntityData](VeniceExplosionEntityData) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
+> [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
 
 Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
 
@@ -48,4 +48,4 @@ Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/ve
 
 | Name | Type         | Description                                 |
 | ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](Guid) | An optional GUID to assign to the instance. |
+| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |

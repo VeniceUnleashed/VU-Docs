@@ -17,19 +17,19 @@ A structure type representing a Frostbite data type.
 | Name                | Type                                                   | Description |
 | ------------------- | ------------------------------------------------------ | ----------- |
 | customizationOffset | [Vec3](/vext/ref/shared/class/vec3)                      |             |
-| customization       | [VehicleCustomizationAsset](VehicleCustomizationAsset) |             |
-| minimapIcon         | [UIHudIcon](UIHudIcon)                                 |             |
-| texture             | [TextureAsset](TextureAsset)                           |             |
+| customization       | [VehicleCustomizationAsset](/vext/ref/fb/vehiclecustomizationasset/) |             |
+| minimapIcon         | [UIHudIcon](/vext/ref/fb/uihudicon/)                                 |             |
+| texture             | [TextureAsset](/vext/ref/fb/textureasset/)                           |             |
 | vehicleItemHash     | number                                                 |             |
 
 ## Methods
 
 | Type                             | Name            | Parameters |
 | -------------------------------- | --------------- | ---------- |
-| [VehicleHudData](VehicleHudData) | [Clone](#clone) |            |
+| [VehicleHudData](/vext/ref/fb/vehiclehuddata/) | [Clone](#clone) |            |
 
 ### Clone
 
-> [VehicleHudData](VehicleHudData) **Clone**()
+> [VehicleHudData](/vext/ref/fb/vehiclehuddata/) **Clone**()
 
 Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
