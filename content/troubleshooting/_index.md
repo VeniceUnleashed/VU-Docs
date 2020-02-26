@@ -9,6 +9,7 @@ weight: 3
 - [Nothing happens when I launch VU](#nothing-happens-when-i-launch-vu)
 - [I get an EA activation prompt when launching VU](#i-get-an-ea-activation-prompt-when-launching-vu)
 - [I get returned to the main menu after joining a server](#i-get-returned-to-the-main-menu-after-joining-a-server)
+- [I get an "Could not locate your Battlefield 3 installation directory" error when launching VU](#i-get-an-%22could-not-locate-your-battlefield-3-installation-directory%22-error-when-launching-vu)
 - [Players cannot connect to my VU server](#players-cannot-connect-to-my-vu-server)
 - [My server crashes soon after startup](#my-server-crashes-soon-after-startup)
 - [Can I run multiple instances of the VU client?](#can-i-run-multiple-instances-of-the-vu-client)
@@ -28,6 +29,14 @@ vu.exe -activate -o_mail <email> -o_pass <password>
 ### I get returned to the main menu after joining a server
 
 If you get returned to the main menu after joining a server it could mean that there's a discrepency between your local files and the server files, so the first thing you should try is validating your game files. If that doesn't help, it probably means that the server is running a mod that causes this issue, so the only thing you can do is contacting the server admin for support.
+
+### I get an "Could not locate your Battlefield 3 installation directory" error when launching VU
+
+This means that VU cannot find where Battlefield 3 is installed on your system. To fix this, simply validate your game files via Origin and launch the vanilla game via Battlelog at least once. If you have transferred your game files over another computer or you're running this on a machine that can't run Origin, you can manually specify the game's installation directory by using the `-gamepath` launch argument, as seen below, where `<path>` is the path to the BF3 directory:
+
+```
+vu.exe -gamepath <path>
+```
 
 ### Players cannot connect to my VU server
 
