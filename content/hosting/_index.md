@@ -1,6 +1,6 @@
 ---
 title: Server Hosting
-weight: 1
+weight: 2
 ---
 
 In this section you can find information on how to setup and maintain a VU server.
