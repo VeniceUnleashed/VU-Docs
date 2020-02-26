@@ -25,3 +25,111 @@
 #api-results {
   margin-bottom: 20px;
 }
+
+body {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #121212;
+}
+
+.td-sidebar-nav__section-title a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.td-sidebar-nav .td-sidebar-link__page {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.td-sidebar-nav a.active {
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .td-sidebar {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding-top: 0;
+    margin-top: 4rem;
+    border-right: 1px solid rgba(222, 226, 230, 0.15);
+  }
+}
+
+.td-content .highlight {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.td-content .highlight pre, .td-content .highlight div {
+  background-color: transparent !important;
+}
+
+.td-toc {
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.td-content p code, .td-content li > code, .td-content table code {
+  background-color: rgba(255, 255, 255, 0.07);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+a {
+  color: #e14d43;
+}
+
+a:hover {
+  color: #e14d43;
+  text-decoration: underline;
+}
+
+i.fa, i.fas, i.fab {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.td-toc #TableOfContents a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.td-toc #TableOfContents a:hover {
+  color: #fff;
+}
+
+.td-sidebar-nav a:hover {
+  color: #fff;
+}
+
+.td-navbar {
+  background: #1e1e1e;
+  border-bottom: 2px solid #e14d43;
+}
+
+.table {
+  th,
+  td {
+    border-top: $table-border-width solid rgba(255, 255, 255, 0.3);
+  }
+
+  thead th {
+    border-bottom: (2 * $table-border-width) solid rgba(255, 255, 255, 0.3);
+  }
+
+  tbody + tbody {
+    border-top: (2 * $table-border-width) solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+#td-sidebar-menu form {
+  margin-top: 25px;
+}
+
+.pt-2, .py-2 {
+  padding-top: 1rem !important;
+}
+
+.td-sidebar-nav__section > ul {
+  //margin-top: 5px;
+}
+
+.td-sidebar-nav__section ul {
+  margin: 5px 0;
+}
+
+.form-control, .td-navbar .td-search-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}

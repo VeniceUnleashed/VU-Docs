@@ -34,4 +34,4 @@ enable = false
     lineNos = false
     lineNumbersInTable = true
     noClasses = true
-    style = "igor"
+    style = "dracula"
