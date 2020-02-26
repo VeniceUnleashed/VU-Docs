@@ -6,7 +6,10 @@ weight: 3
 <!-- omit in toc -->
 ## Frequenty Asked Questions (FAQ)
 
+- [Do I need to own Battlefield 3 to use this?](#do-i-need-to-own-battlefield-3-to-use-this)
+- [Will I get banned for using this?](#will-i-get-banned-for-using-this)
 - [Nothing happens when I launch VU](#nothing-happens-when-i-launch-vu)
+- [Are my Battlelog stats transferred over?](#are-my-battlelog-stats-transferred-over)
 - [I get an EA activation prompt when launching VU](#i-get-an-ea-activation-prompt-when-launching-vu)
 - [I get returned to the main menu after joining a server](#i-get-returned-to-the-main-menu-after-joining-a-server)
 - [I get an "Could not locate your Battlefield 3 installation directory" error when launching VU](#i-get-an-%22could-not-locate-your-battlefield-3-installation-directory%22-error-when-launching-vu)
@@ -14,9 +17,21 @@ weight: 3
 - [My server crashes soon after startup](#my-server-crashes-soon-after-startup)
 - [Can I run multiple instances of the VU client?](#can-i-run-multiple-instances-of-the-vu-client)
 
+### Do I need to own Battlefield 3 to use this?
+
+You need a legit, licensed, and up-to-date version of BF3 installed in order to use VU and you will also be required to link your Origin account with your VU account the first time you launch it, so we can verify your ownership of the game. VU does not and never will work with cracked or pirated copies.
+
+### Will I get banned for using this?
+
+No. VU functions separately from vanilla BF3 and does not modify any game files. That means that you can just launch BF3 like you normally would through Battlelog and it's like VU was never there. Any changes to your game data are performed at your discretion with the use of third party mod tools. 
+
 ### Nothing happens when I launch VU
 
 If nothing happens when you launch VU, try validating your game files via Origin and launching the vanilla game via Battlelog at least once (you can launch either singleplayer or multiplayer). You can also try downloading the latest version of VU and re-installing it.
+
+### Are my Battlelog stats transferred over?
+
+Your VU profile is independent from your Battlelog profile. There's no progression and everything is unlocked for everyone by default.
 
 ### I get an EA activation prompt when launching VU
 
