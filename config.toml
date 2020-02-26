@@ -9,12 +9,14 @@ enableGitInfo = true
 contentDir = "content"
 publishdir = "dist"
 
-
 [params]
 copyright = "Venice Unleashed"
 github_repo = "https://github.com/EmulatorNexus/VU-Docs"
 algolia_docsearch = false
 offlineSearch = true
+
+[params.ui]
+navbar_logo = true
 
 [params.ui.feedback]
 enable = false

@@ -47,7 +47,7 @@ body {
   .td-sidebar {
     background-color: rgba(255, 255, 255, 0.05);
     padding-top: 0;
-    margin-top: 4rem;
+    margin-top: 4.5rem;
     border-right: 1px solid rgba(222, 226, 230, 0.15);
   }
 }
@@ -122,10 +122,6 @@ i.fa, i.fas, i.fab {
   padding-top: 1rem !important;
 }
 
-.td-sidebar-nav__section > ul {
-  //margin-top: 5px;
-}
-
 .td-sidebar-nav__section ul {
   margin: 5px 0;
 }
@@ -136,4 +132,20 @@ i.fa, i.fas, i.fab {
 
 .border-top {
   border-top: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.navbar-logo {
+  margin-right: 10px;
+}
+
+.navbar-logo, .navbar-logo + span {
+  vertical-align: middle;
+}
+
+.navbar {
+  padding: 1rem 1rem;
+}
+
+.td-toc {
+  top: 4.5rem;
 }
