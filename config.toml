@@ -1,21 +1,14 @@
 baseURL = "/"
-title = "VU Documentation"
+title = "VU Docs"
+description = "Venice Unleashed wiki and online documentation"
 
 theme = ["docsy"]
 
 enableGitInfo = true
 
 contentDir = "content"
-defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = false
-
 publishdir = "dist"
 
-[languages]
-[languages.en]
-title = "VU Documentation"
-description = "Venice Unleashed documentation"
-languageName ="English"
 
 [params]
 copyright = "Venice Unleashed"
