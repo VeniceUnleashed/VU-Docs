@@ -23,29 +23,21 @@ If you didn't use the installer package or want more control on how to run your 
 
 GUI mode is the default operating mode for the VU server, and will create a new window with server output and other useful information. To start the server in GUI mode you need to run the VU executable (`vu.exe`, present in the VU installation directory) with some specific launch arguments:
 
-```
-vu.exe -server -dedicated
-```
+> `vu.exe -server -dedicated`
 
 ### Headless mode
 
 In headless mode, the server essentially runs without GUI and instead uses a standard console window (or attaches to an existing one). There are two ways to run the VU server in headless mode, either by passing the `-headless` launch argument or using the `vu.com` executable:
 
-```
-vu.exe -server -dedicated -headless
-```
+> `vu.exe -server -dedicated -headless`
 
-```
-vu.com -server -dedicated
-```
+> `vu.com -server -dedicated`
 
 ## Activating the game
 
 If when running the VU server you get an EA activation prompt or if nothing happens, then you need to activate your game. If you get the EA prompt, simply fill out your Origin credentials and follow the prompts. If activation using the EA prompt fails or if nothing shows up, you can alternatively activate your game by launching the VU executable with some specific launch arguments:
 
-```
-vu.exe -activate -o_mail <email> -o_pass <password>
-```
+> `vu.exe -activate -o_mail <email> -o_pass <password>`
 
 Where `<email>` is your Origin account e-mail address and `<password>` is your password.
 
@@ -57,9 +49,9 @@ Before users can join your server you'll need to make sure that specific ports a
 
 | Port | Protocol | Description |
 | ---- | -------- | ----------- |
-| 7948 | UDP | Monitored Harmony, the VU networking layer. |
-| 25200 | UDP | Frostbite networking layer. |
-| 47200 | TCP | Remote administration protocol (RCON). |
+| `7948` | UDP | Monitored Harmony, the VU networking layer. |
+| `25200` | UDP | Frostbite networking layer. |
+| `47200` | TCP | Remote administration protocol (RCON). |
 
 ---
 

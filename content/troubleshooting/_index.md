@@ -37,9 +37,7 @@ Your VU profile is independent from your Battlelog profile. There's no progressi
 
 This prompt may appear after major Windows Updates or hardware changes on your computer, and is part of Battlefield 3's DRM system. Simply fill out your Origin account credentials and follow the prompts to activate your game. Alternatively, you can launch the vanilla game via Battlelog or run the VU executable with the following launch arguments (where `<email>` is your Origin account e-mail and `<password>` is your password):
 
-```
-vu.exe -activate -o_mail <email> -o_pass <password>
-```
+> `vu.exe -activate -o_mail <email> -o_pass <password>`
 
 ### I get returned to the main menu after joining a server
 
@@ -49,9 +47,7 @@ If you get returned to the main menu after joining a server it could mean that t
 
 This means that VU cannot find where Battlefield 3 is installed on your system. To fix this, simply validate your game files via Origin and launch the vanilla game via Battlelog at least once. If you have transferred your game files over another computer or you're running this on a machine that can't run Origin, you can manually specify the game's installation directory by using the `-gamepath` launch argument, as seen below, where `<path>` is the path to the BF3 directory:
 
-```
-vu.exe -gamepath <path>
-```
+> `vu.exe -gamepath <path>`
 
 ### Players cannot connect to my VU server
 
@@ -60,9 +56,9 @@ Make sure that connections to the VU server are not being blocked by your firewa
 
 | Port | Protocol | Description |
 | ---- | -------- | ----------- |
-| 7948 | UDP | Monitored Harmony, the VU networking layer. |
-| 25200 | UDP | Frostbite networking layer. |
-| 47200 | TCP | Remote administration protocol (RCON). |
+| `7948` | UDP | Monitored Harmony, the VU networking layer. |
+| `25200` | UDP | Frostbite networking layer. |
+| `47200` | TCP | Remote administration protocol (RCON). |
 
 ### My server crashes soon after startup
 
@@ -72,6 +68,4 @@ The first thing you should try is validating your game files via Origin, as corr
 
 Yes, but keep in mind that you'll need a separate account (with an Origin account linked) for each instance. To be able to launch multiple instances, simply run VU with the `-multi` launch argument, as seen below:
 
-```
-vu.exe -multi
-```
+> `vu.exe -multi`
