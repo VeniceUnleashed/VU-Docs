@@ -153,3 +153,8 @@ i.fa, i.fas, i.fab {
 .td-content > blockquote {
   border-left: 6px solid #e14d43;
 }
+
+.td-content pre {
+  background-color: rgba(255,255,255,.05);
+  color: rgba(255, 255, 255, 0.8);
+}
