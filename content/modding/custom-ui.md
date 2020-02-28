@@ -1,5 +1,6 @@
 ---
 title: Creating custom UI using WebUI
+weight: 3
 ---
 
 Custom UI in VU (aka WebUI) is based on modern web technologies such as HTML, CSS, and JavaScript. WebUI is essentially a website overlayed on top of the game view, and integrated with the various different subsystems. WebUI is using the Chromium web engine internally, so as long as what you're creating works on Chrome, it should also work in-game.
@@ -21,7 +22,7 @@ First of all, create a new folder somewhere in your computer. Inside this folder
 
 Before the UI can be used by a VU client, it must be compiled using the WebUI compiler (`vuicc.exe`). Download the latest version of the compiler from [here](https://veniceunleashed.net/vuicc.exe) and place it somewhere in your computer. Then, open a command prompt (like PowerShell or cmd) and compile the WebUI package using the following command:
 
-> vuicc.exe "C:\path\to\your\ui"
+> `vuicc.exe "C:\path\to\your\ui"`
 
 Where `C:\path\to\your\ui` points to the folder where you previously created the `index.html` file. After the package has been successfully compiled a new file will be created in the currently directory named `ui.vuic`. This is the WebUI package and you will need this file in the next step to integrate it with your mod.
 
@@ -92,7 +93,7 @@ Restores mouse and keyboard input to its expected in-game state.
 
 ## Communicating with VeniceEXT
 
-Since WebUI frames by themselves cannot directly interact with the game, VU provides a way to communicate with the VeniceEXT scripting engine in both ways. WebUI frames have the ability to raise VeniceEXT events, which can be subscribed to and handled from a client-side script (for more information about events see the [events guide](/veniceext/guides/events)). This is possible via the global `WebUI.Call(...)` function as seen below:
+Since WebUI frames by themselves cannot directly interact with the game, VU provides a way to communicate with the VeniceEXT scripting engine in both ways. WebUI frames have the ability to raise VeniceEXT events, which can be subscribed to and handled from a client-side script (for more information about events see the [events guide](/vext/guides/events)). This is possible via the global `WebUI.Call(...)` function as seen below:
 
 ```js
 WebUI.Call('DispatchEvent', 'EventName', 123)
@@ -106,13 +107,13 @@ From the VeniceEXT side, scripts can execute JavaScript code on the WebUI frame 
 WebUI:ExecuteJS('console.log("hello world");')
 ```
 
-For more information on the available interactions between VeniceEXT and the WebUIU refer to the [WebUI integration guide](/veniceext/guides/webui).
+For more information on the available interactions between VeniceEXT and the WebUIU refer to the [WebUI integration guide](/vext/guides/webui).
 
 ## Debugging your UI
 
 You can debug your WebUI on the fly by using the Chromium Dev Tools. To enable the tools, launch the VU client with the `-dwebui` launch argment:
 
-> vu.exe -dwebui
+> `vu.exe -dwebui`
 
 This will make the dev tools available locally on your computer at [http://localhost:8444](http://localhost:8444). Simply navigate to that webpage using the Chrome web browser after having joined your server, and you'll be able to see a live view of your UI. Keep in mind that the view will include the main menu UI. Your WebUI frame will be in an `iframe` inside the `frame-hell` container. You can also switch to the console context of your frame by using the dropdown at the top left of the console and selecting the context with the name of your mod.
 

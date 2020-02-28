@@ -1,6 +1,7 @@
 ---
 title: API Reference
-weight: 2
+weight: 3
+hideChildren: true
 ---
 The VeniceEXT API is split into four logical sections and contains a variety of classes, libraries, events, and hooks.
 
@@ -11,7 +12,7 @@ Here's a short description of each of those concepts:
 - **Events**: Events are sent by the game engine to the modding interface under specific circumstances and can be used to perform specific actions at specific times. For example, one could listen for an event of when a level is loaded and perform their game logic there.
 - **Hooks**: Hooks are similar to events, in that they are triggered by the game engine, but the main difference is that a mod can decide to modify how the hook acts, by modifiying its parameters or by cancelling it completely. For example, a hook can be used to prevent a specific player from joining a server.
 
-For more in-depth information about these concepts make sure to go through the VeniceEXT tutorials, which present use-cases for all of these.
+For more in-depth information about these concepts make sure to go through the VeniceEXT guides, which present use-cases for all of these.
 
 The four logical sections that these concepts are split into are the following:
 - **[Client](/vext/ref/client/)**: This includes classes, libraries, events, and hooks that are only accessible by client-side scripts.

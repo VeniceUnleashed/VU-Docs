@@ -1,5 +1,5 @@
 ---
-title: Console Commands
+title: Console commands
 ---
 
 VU introduces a few new commands to the in-game console. You can find their details below.

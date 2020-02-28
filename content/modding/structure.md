@@ -1,5 +1,6 @@
 ---
 title: Mod structure
+weight: 1
 ---
 
 All VU mods are hosted on the server-side and automatically downloaded by joining clients. As such, all mods must follow a specific structure.
@@ -14,7 +15,7 @@ The most important file of a mod is the mod descriptor file: `mod.json`. This fi
 
 ## Scripts
 
-VeniceEXT Lua scripts are placed inside an `ext` folder which is present inside the mod folder. Inside this folder there are three more folders, which logically separate the execution environment of the scripts: `Client`, `Server`, and `Shared`. As their name implies, scripts inside the `Client` folder will only be executed on joining clients, scripts inside the `Server` folder will only be executed on the server, and scripts inside the `Shared` folder will be executed on both. However, VeniceEXT will not simple execute any Lua script present in these folders. Instead, it will look for a script with the `__init__.lua` filename, and that's the script that will be executed first. Then, that script can load other scripts from within its logical folder or the shared scripts.
+VeniceEXT Lua scripts are placed inside an `ext` folder which is present inside the mod folder. Inside this folder there are three more folders, which logically separate the execution environment of the scripts: `client`, `server`, and `shared`. As their name implies, scripts inside the `client` folder will only be executed on joining clients, scripts inside the `server` folder will only be executed on the server, and scripts inside the `shared` folder will be executed on both. However, VeniceEXT will not simple execute any Lua script present in these folders. Instead, it will look for a script with the `__init__.lua` filename, and that's the script that will be executed first. Then, that script can load other scripts from within its logical folder or the shared scripts.
 
 ## WebUI
 

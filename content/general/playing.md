@@ -1,5 +1,6 @@
 ---
 title: Start playing VU
+weight: 1
 ---
 
 Playing VU is as simple as it gets. Below are the steps you need to follow to get started.

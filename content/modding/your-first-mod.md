@@ -1,5 +1,6 @@
 ---
 title: Your first mod
+weight: 2
 ---
 
 Before you get started on your first mod make sure you've read the [modding overview](/modding/overview) and understand how [mods are structured](/modding/structure). You will also need to set up a VU dedicated server locally by following the server hosting tutorial.
@@ -75,17 +76,17 @@ A key => value mapping of other mods this mod depends on. The key is the name of
 - Greater than: `">1.2.3"`: This matches mods with any version greater than `1.2.3`, so `1.2.4` or greater.
 - Greater or equal: `">=1.2.3`. This matches mods with a version greater or equal to what's specified.
 
-There's a built-in dependency named `veniceext`, which refers to the VeniceEXT engine itself. The engine is versioned, and mods can define a dependency to it to specify compatibility. For a list of VeniceEXT versions and their associated changes refer to the [VeniceEXT changelog](/veniceext/changelog).
+There's a built-in dependency named `veniceext`, which refers to the VeniceEXT engine itself. The engine is versioned, and mods can define a dependency to it to specify compatibility. For a list of VeniceEXT versions and their associated changes refer to the [VeniceEXT changelog](/vext/changelog).
 
 ## Creating your first script
 
-It's now time to create your first script. Inside your mod folder create a new folder named `ext` (this folder should be inside the same folder your `mod.json` file is). Inside that folder, create another folder named `Server` and in that folder create a new file named `__init__.lua`. Open this file with your text editor and type in the following:
+It's now time to create your first script. Inside your mod folder create a new folder named `ext` (this folder should be inside the same folder your `mod.json` file is). Inside that folder, create another folder named `server` and in that folder create a new file named `__init__.lua`. Open this file with your text editor and type in the following:
 
 ```lua
 print('Hello world!')
 ```
 
-Save the file and close it. The reason we placed this inside the `Server` folder is because we only want this script to be executed on the server. In the next step we'll create something more complicated that works across the server and the client.
+Save the file and close it. The reason we placed this inside the `server` folder is because we only want this script to be executed on the server. In the next step we'll create something more complicated that works across the server and the client.
 
 ## Running your mod
 
@@ -101,21 +102,21 @@ If you don't see these in your server window, make sure that you've correctly wr
 
 ## Creating client and shared scripts
 
-Now it's time to see how client and shared scripts work. As explained previously, `Client` scripts will only be executed on joining clients, while `Shared` scripts will be executed on both joining clients and the server. Let's create two new folders next to the `Server` folder named `Client` and `Shared`. As before, create a new file in each of these folders named `__init__.lua`. Let's also create another file in the shared folder called `common.lua`. Put the following content inside the files:
+Now it's time to see how client and shared scripts work. As explained previously, `client` scripts will only be executed on joining clients, while `shared` scripts will be executed on both joining clients and the server. Let's create two new folders next to the `server` folder named `client` and `shared`. As before, create a new file in each of these folders named `__init__.lua`. Let's also create another file in the shared folder called `common.lua`. Put the following content inside the files:
 
-### `Shared/__init__.lua`
+### `shared/__init__.lua`
 
 ```lua
 print('Hello from the shared world!')
 ```
 
-### `Shared/common.lua`
+### `shared/common.lua`
 
 ```lua
 MyModVersion = '1.0.0'
 ```
 
-### `Client/__init__.lua`
+### `client/__init__.lua`
 
 ```lua
 require('__shared/common')
@@ -124,7 +125,7 @@ print('Hello dear client!')
 print(MyModVersion)
 ```
 
-### `Server/__init__.lua`
+### `server/__init__.lua`
 
 ```lua
 require('__shared/common')
@@ -133,7 +134,7 @@ print('Hello world!')
 print(MyModVersion)
 ```
 
-This might seem a bit confusing at first, so let's explain what we're doing here. In the `Shared/common.lua` file we're declaring a new global variable called `MyModVersion`. Then, from the client and server `__init__.lua` scripts, we're loading the `common.lua` script (using the `require()` directive), which makes it so its code gets executed and that variable gets declared. We then print this variable to the console. Also note that we're prefixing the required file path with `__shared`. This tells the VeniceEXT engine to look for that file inside the `Shared` folder (you can find more information about how requiring scripts works [here](/veniceext/guides/requiring-scripts)). You should now restart your server and also launch your VU client and join it. 
+This might seem a bit confusing at first, so let's explain what we're doing here. In the `shared/common.lua` file we're declaring a new global variable called `MyModVersion`. Then, from the client and server `__init__.lua` scripts, we're loading the `common.lua` script (using the `require()` directive), which makes it so its code gets executed and that variable gets declared. We then print this variable to the console. Also note that we're prefixing the required file path with `__shared`. This tells the VeniceEXT engine to look for that file inside the `Shared` folder (you can find more information about how requiring scripts works [here](/vext/guides/requiring-scripts)). You should now restart your server and also launch your VU client and join it. 
 
 In the server console you should see something like this:
 
@@ -157,4 +158,4 @@ After joining the server, open the in-game console using the tilde key (`~`) and
 
 ---
 
-This concludes the creation of your first mod. You should now be ready to create more complex mods. See the various different [VeniceEXT modding guides here](/veniceext/guides). You should also read up a bit on the Lua programming language and experiment, as these guides assume some basic knowledge.
+This concludes the creation of your first mod. You should now be ready to create more complex mods. See the various different [VeniceEXT modding guides here](/vext/guides). You should also read up a bit on the Lua programming language and experiment, as these guides assume some basic knowledge.
