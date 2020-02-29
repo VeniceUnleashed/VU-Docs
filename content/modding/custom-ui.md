@@ -73,23 +73,35 @@ Sends this WebUI frame to the back, placing it behind all other frames.
 
 ### `WebUI.Call('EnableKeyboard')`
 
-Enables keyboard input for this frame. This means that any key inputs will be sent to the WebUI.
+Enables keyboard input for this frame. This means that any key inputs will be sent to the WebUI. This also brings the frame to the front and shows it if it's hidden.
 
 ### `WebUI.Call('DisableKeyboard')`
 
 Disables keyboard input and returns control to the game.
 
+### `WebUI.Call('ResetKeyboard')`
+
+Resets the keyboard input to its expected in-game state.
+
 ### `WebUI.Call('EnableMouse')`
 
-Enables mouse input for this frame. This will show a cursor in-game and any mouse input will be passed to the WebUI.
+Enables mouse input for this frame. This will show a cursor in-game and any mouse input will be passed to the WebUI. This also brings the frame to the front and shows it if it's hidden.
 
 ### `WebUI.Call('DisableMouse')`
 
 Disables mouse input and returns control to the game.
 
-### `WebUI.Call('RestoreInput')`
+### `WebUI.Call('ResetMouse')`
 
-Restores mouse and keyboard input to its expected in-game state.
+Resets the mouse input to its expected in-game state.
+
+### `WebUI.Call('Hide')`
+
+Hides the WebUI frame.
+
+### `WebUI.Call('Show')`
+
+Shows the WebUI frame.
 
 ## Communicating with VeniceEXT
 
@@ -99,7 +111,7 @@ Since WebUI frames by themselves cannot directly interact with the game, VU prov
 WebUI.Call('DispatchEvent', 'EventName', 123)
 ```
 
-The first parameter after `DispatchEvent` is the name of the event to dispatch, and the parameter after that is the value to pass to it. Dispatched events only support one parameter, so a common pattern is to create a JS object, `JSON.stringify` it, and then `json.decode` it from the VeniceEXT side.
+The first parameter after `DispatchEvent` is the name of the event to dispatch, and the parameter after that is the value to pass to it. Dispatched events only support one parameter, so a common pattern is to create a JS object, `JSON.stringify` it, and then `json.decode` it from the VeniceEXT side. There is also the `DispatchEventLocal` variation of this call which will only dispatch the event to the current mod instead of all of them.
 
 From the VeniceEXT side, scripts can execute JavaScript code on the WebUI frame as seen below:
 
