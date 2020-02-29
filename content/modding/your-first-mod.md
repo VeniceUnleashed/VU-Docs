@@ -3,7 +3,7 @@ title: Your first mod
 weight: 2
 ---
 
-Before you get started on your first mod make sure you've read the [modding overview](/modding/overview) and understand how [mods are structured](/modding/structure). You will also need to set up a VU dedicated server locally by following the server hosting tutorial.
+Before you get started on your first mod make sure you've read the [modding overview](/modding) and understand how [mods are structured](/modding/structure). You will also need to set up a VU dedicated server locally by following the server hosting tutorial.
 
 ## Creating your mod folders
 
