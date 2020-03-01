@@ -1,27 +1,22 @@
 baseURL = "/"
-title = "VU Documentation"
+title = "VU Docs"
+description = "Venice Unleashed wiki and online documentation"
 
 theme = ["docsy"]
 
 enableGitInfo = true
 
 contentDir = "content"
-defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = false
-
 publishdir = "dist"
-
-[languages]
-[languages.en]
-title = "VU Documentation"
-description = "Venice Unleashed documentation"
-languageName ="English"
 
 [params]
 copyright = "Venice Unleashed"
 github_repo = "https://github.com/EmulatorNexus/VU-Docs"
 algolia_docsearch = false
 offlineSearch = true
+
+[params.ui]
+navbar_logo = true
 
 [params.ui.feedback]
 enable = false
@@ -34,4 +29,4 @@ enable = false
     lineNos = false
     lineNumbersInTable = true
     noClasses = true
-    style = "igor"
+    style = "dracula"
