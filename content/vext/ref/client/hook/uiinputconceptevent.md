@@ -9,8 +9,8 @@ title: UI:InputConceptEvent
 
 | Type                                                      | Name      | Description                    |
 | ----------------------------------------------------------------------- | --------- | ------------------------------ |
-| [UIInputActionEventType](/vext/ref/fb/class/uiinputactioneventtype)     | eventType |                                |
-| [UIInputAction](/vext/ref/fb/class/uiinputaction)                       | action    |                                |
+| [UIInputActionEventType](/vext/ref/fb/uiinputactioneventtype)     | eventType |                                |
+| [UIInputAction](/vext/ref/fb/uiinputaction)                       | action    |                                |
 
 ## Usage Example
 
