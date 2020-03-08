@@ -34,3 +34,13 @@ Information on how to manage your VU dedicated server remotely.
 
 [Setting up and using mods](/hosting/mods)  
 How to set up and use mods on your VU dedicated server.
+
+---
+
+[Server commands](/hosting/commands)  
+The various configuration commands one can use to configure and manage a VU server.
+
+---
+
+[Maps and gamemodes](/hosting/maps)  
+A full listing of maps and their supported gamemodes.
