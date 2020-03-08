@@ -162,3 +162,11 @@ i.fa, i.fas, i.fab {
 hr {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
+
+.td-content > h2:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+.td-content > h3, .td-content > h4, .td-content > h5, .td-content > h6 {
+  margin-top: 1rem;
+}
