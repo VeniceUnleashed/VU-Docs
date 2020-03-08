@@ -1,5 +1,7 @@
 ---
 title: Console commands
+description: A listing of all supported client-side console commands.
+weight: 2
 ---
 
 VU introduces a few new commands to the in-game console. You can find their details below.

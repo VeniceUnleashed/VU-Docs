@@ -1,5 +1,6 @@
 ---
 title: Server commands
+description: Various configuration commands one can use to configure and manage a VU server.
 weight: 7
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Prerequisites
+description: Prerequisites for running a VU dedicated server.
 weight: 1
 ---
 
@@ -19,7 +20,7 @@ The VU dedicated server requires a full and up-to-date installation of Battlefie
 
 The hardware and network requirements vary greatly based on the amount of connected players, vehicles, and mods being used. However, the bare minimum requirements should be close to what is listed below.
 
-- **Operating System**: Windows 7 or newer, Linux with Wine 5.0 or newer
+- **Operating System**: Windows 7 or newer, Wine 5.0 or newer
 - **CPU**: Dual Core x86 @ 3GHz or better
 - **RAM**: 1GB or more
 - **HDD**: 50GB or more

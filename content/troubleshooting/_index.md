@@ -1,5 +1,6 @@
 ---
 title: Troubleshooting & FAQ
+description: VU troubleshooting and Frequently Asked Questions.
 weight: 3
 ---
 

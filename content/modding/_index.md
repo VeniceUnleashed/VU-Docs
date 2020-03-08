@@ -1,5 +1,6 @@
 ---
 title: Modding overview
+description: Overview of how modding works in VU and the systems it is comprised of.
 weight: 4
 ---
 

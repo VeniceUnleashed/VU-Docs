@@ -1,5 +1,6 @@
 ---
 title: Start playing VU
+description: Instructions on how to set up VU on your computer and start playing online.
 weight: 1
 ---
 

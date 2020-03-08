@@ -1,5 +1,6 @@
 ---
 title: Remotely managing a server
+description: Information on how to manage your VU dedicated server remotely.
 weight: 5
 ---
 

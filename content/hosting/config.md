@@ -1,5 +1,6 @@
 ---
 title: Configuring your server
+description: Details on how to configure and tweak your VU server.
 weight: 4
 ---
 

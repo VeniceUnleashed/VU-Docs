@@ -1,5 +1,6 @@
 ---
 title: Maps and gamemodes
+description: A full listing of maps and their supported gamemodes.
 weight: 8
 ---
 

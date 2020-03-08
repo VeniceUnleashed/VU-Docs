@@ -1,5 +1,6 @@
 ---
 title: Setting up a server on Windows
+description: Instructions on how to set up a VU dedicated server on a Windows machine.
 weight: 2
 ---
 

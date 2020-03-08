@@ -1,9 +1,10 @@
 ---
 title: Server Hosting
+description: Information on how to setup and manage a VU server.
 weight: 2
 ---
 
-In this section you can find information on how to setup and maintain a VU server.
+In this section you can find information on how to setup and manage a VU server.
 
 ---
 
@@ -23,7 +24,7 @@ Instructions on how to set up a VU dedicated server on a Linux machine using Win
 ---
 
 [Configuring your server](/hosting/config)  
-Details on how to configure and tweak your server.
+Details on how to configure and tweak your VU server.
 
 ---
 
