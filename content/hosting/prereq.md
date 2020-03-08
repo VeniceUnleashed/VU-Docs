@@ -6,7 +6,7 @@ weight: 1
 
 ## Preparing your account
 
-Before you can run a VU dedicated server you must first make sure that you have registered an account on the [VU website](https://veniceunleashed.net) and [linked your Origin account](/client/origin-linking) through the VU client. 
+Before you can run a VU dedicated server you must first make sure that you have registered an account on the [VU website](https://veniceunleashed.net) and [linked your Origin account](/general/playing/#creating-an-account-and-linking-your-origin-account) through the VU client. 
 
 
 ## Generating server keys 
