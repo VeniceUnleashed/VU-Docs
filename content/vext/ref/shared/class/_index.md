@@ -18,9 +18,10 @@ hideChildren: true
 
 ## Enumerations
 
-|                                                             |
-| ----------------------------------------------------------- |
-| [DamageType](/vext/ref/shared/class/damagetype)               |
-| [HealthStateAction](/vext/ref/shared/class/healthstateaction) |
-| [MessageCategory](/vext/ref/shared/class/messagecategory)     |
-| [MessageType](/vext/ref/shared/class/messagetype)             |
+|                                                                   |
+| ----------------------------------------------------------------- |
+| [DamageType](/vext/ref/shared/class/damagetype)                   |
+| [HealthStateAction](/vext/ref/shared/class/healthstateaction)     |
+| [MessageCategory](/vext/ref/shared/class/messagecategory)         |
+| [MessageType](/vext/ref/shared/class/messagetype)                 |
+| [ResourceCompartment](/vext/ref/shared/class/resourcecompartment) |

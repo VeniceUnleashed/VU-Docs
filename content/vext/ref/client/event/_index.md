@@ -17,13 +17,19 @@ hideChildren: true
 | ---------------------------------------------------------------------- |
 | [FreeCam:PostFrameUpdate](/vext/ref/client/event/freecampostframeupdate) |
 
-| Player                                                             |
-| ------------------------------------------------------------------ |
+| Player                                                               |
+| -------------------------------------------------------------------- |
 | [Player:Connected](/vext/ref/client/event/playerconnected)           |
 | [Player:Deleted](/vext/ref/client/event/playerdeleted)               |
+| [Player:Killed](/vext/ref/client/event/playerkilled)                 |
+| [Player:Respawn](/vext/ref/client/event/playerrespawn)               |
 | [Player:SetSquadLeader](/vext/ref/client/event/playersetsquadleader) |
 | [Player:SquadChange](/vext/ref/client/event/playersquadchange)       |
 | [Player:TeamChange](/vext/ref/client/event/playerteamchange)         |
+
+| Soldier                                              |
+| ---------------------------------------------------- |
+| [Soldier:Spawn](/vext/ref/client/event/soldierspawn) |
 
 | VE                                                       |
 | -------------------------------------------------------- |
