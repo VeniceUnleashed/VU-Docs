@@ -1,5 +1,6 @@
 ---
 title: Setting up a server on Windows
+description: Instructions on how to set up a VU dedicated server on a Windows machine.
 weight: 2
 ---
 
@@ -15,7 +16,7 @@ If this folder doesn't exist, you will need to create it. Remember the server ke
 
 ## Running a VU server
 
-If you installed VU using the installer package then some shortcuts should have been added to your start menu from which you can start the VU server. Just search for `VU Server` in your start menu and pick one of the `30`, `60`, and `120Hz` variants. For more information on the difference of these variants check the [server configuration guide](/hosting/config).
+If you installed VU using the installer package then some shortcuts should have been added to your start menu from which you can start the VU server. Just search for `VU Server` in your start menu and pick one of the `30`, `60`, and `120Hz` variants. For more information on the difference of these variants check the [server configuration guide](/hosting/config). It is recommended to restart your server every now and then so you can receive updates and fixes.
 
 If you didn't use the installer package or want more control on how to run your server, you can launch it manually in one of two different modes:
 
@@ -23,21 +24,29 @@ If you didn't use the installer package or want more control on how to run your 
 
 GUI mode is the default operating mode for the VU server, and will create a new window with server output and other useful information. To start the server in GUI mode you need to run the VU executable (`vu.exe`, present in the VU installation directory) with some specific launch arguments:
 
-> `vu.exe -server -dedicated`
+```
+vu.exe -server -dedicated
+```
 
 ### Headless mode
 
 In headless mode, the server essentially runs without GUI and instead uses a standard console window (or attaches to an existing one). There are two ways to run the VU server in headless mode, either by passing the `-headless` launch argument or using the `vu.com` executable:
 
-> `vu.exe -server -dedicated -headless`
+```
+vu.exe -server -dedicated -headless
+```
 
-> `vu.com -server -dedicated`
+```
+vu.com -server -dedicated
+```
 
 ## Activating the game
 
 If when running the VU server you get an EA activation prompt or if nothing happens, then you need to activate your game. If you get the EA prompt, simply fill out your Origin credentials and follow the prompts. If activation using the EA prompt fails or if nothing shows up, you can alternatively activate your game by launching the VU executable with some specific launch arguments:
 
-> `vu.exe -activate -o_mail <email> -o_pass <password>`
+```
+vu.exe -activate -o_mail <email> -o_pass <password>
+```
 
 Where `<email>` is your Origin account e-mail address and `<password>` is your password.
 

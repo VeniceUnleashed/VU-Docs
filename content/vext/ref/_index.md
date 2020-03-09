@@ -1,5 +1,6 @@
 ---
 title: API Reference
+description: The full VU VeniceEXT API reference.
 weight: 3
 hideChildren: true
 ---

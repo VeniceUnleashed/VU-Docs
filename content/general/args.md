@@ -1,5 +1,7 @@
 ---
 title: Launch arguments
+description: A full listing of all supported launch arguments for VU clients and servers.
+weight: 3
 ---
 
 There are several launch arguments you can pass to the VU executable to enable different features and modify the client / server behavior. See below for a full listing of all available arguments.

@@ -1,5 +1,6 @@
 ---
 title: Mod structure
+description: The structure of VU mods and their components.
 weight: 1
 ---
 
