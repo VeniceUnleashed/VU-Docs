@@ -9,9 +9,10 @@ weight: 3
 
 - [Do I need to own Battlefield 3 to use this?](#do-i-need-to-own-battlefield-3-to-use-this)
 - [Will I get banned for using this?](#will-i-get-banned-for-using-this)
-- [Nothing happens when I launch VU](#nothing-happens-when-i-launch-vu)
 - [Are my Battlelog stats transferred over?](#are-my-battlelog-stats-transferred-over)
+- [Nothing happens when I launch VU](#nothing-happens-when-i-launch-vu)
 - [I get an EA activation prompt when launching VU](#i-get-an-ea-activation-prompt-when-launching-vu)
+- [I get a black screen / loading screen when launching VU](#i-get-a-black-screen--loading-screen-when-launching-vu)
 - [I get returned to the main menu after joining a server](#i-get-returned-to-the-main-menu-after-joining-a-server)
 - [I get an "Could not locate your Battlefield 3 installation directory" error when launching VU](#i-get-an-%22could-not-locate-your-battlefield-3-installation-directory%22-error-when-launching-vu)
 - [Players cannot connect to my VU server](#players-cannot-connect-to-my-vu-server)
@@ -26,19 +27,23 @@ You need a legit, licensed, and up-to-date version of BF3 installed in order to 
 
 No. VU functions separately from vanilla BF3 and does not modify any game files. That means that you can just launch BF3 like you normally would through Battlelog and it's like VU was never there. Any changes to your game data are performed at your discretion with the use of third party mod tools. 
 
-### Nothing happens when I launch VU
-
-If nothing happens when you launch VU, try validating your game files via Origin and launching the vanilla game via Battlelog at least once (you can launch either singleplayer or multiplayer). You can also try downloading the latest version of VU and re-installing it.
-
 ### Are my Battlelog stats transferred over?
 
 Your VU profile is independent from your Battlelog profile. There's no progression and everything is unlocked for everyone by default.
+
+### Nothing happens when I launch VU
+
+If nothing happens when you launch VU, try validating your game files via Origin and launching the vanilla game via Battlelog at least once (you can launch either singleplayer or multiplayer). You can also try downloading the latest version of VU and re-installing it.
 
 ### I get an EA activation prompt when launching VU
 
 This prompt may appear after major Windows Updates or hardware changes on your computer, and is part of Battlefield 3's DRM system. Simply fill out your Origin account credentials and follow the prompts to activate your game. Alternatively, you can launch the vanilla game via Battlelog or run the VU executable with the following launch arguments (where `<email>` is your Origin account e-mail and `<password>` is your password):
 
 > `vu.exe -activate -o_mail <email> -o_pass <password>`
+
+### I get a black screen / loading screen when launching VU
+
+If you're on Windows 7 and you're getting a black screen or a black screen with a loading indicator, you need to install the [KB2670838 update package](https://support.microsoft.com/en-gb/help/2670838/platform-update-for-windows-7-sp1-and-windows-server-2008-r2-sp1). After installing this update VU should work as intended.
 
 ### I get returned to the main menu after joining a server
 

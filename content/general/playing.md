@@ -8,7 +8,7 @@ Playing VU is as simple as it gets. Below are the steps you need to follow to ge
 
 ## Installing VU & BF3
 
-Download the latest installer from the [downloads page](https://veniceunleashed.net/downloads) and install it on your computer. Make sure that you have downloaded the latest version of Battlefield 3 from Origin (alongside any DLCs you would like to play) and that you have launched the game at least once via Battlelog (either singleplayer or multiplayer). Then, look for the `VU Client` entry on your start menu or your desktop to launch VU.
+You can use VU on any computer running Windows 7 SP1 or newer. To begin, download the latest installer from the [downloads page](https://veniceunleashed.net/downloads) and install it on your computer. Make sure that you have downloaded the latest version of Battlefield 3 from Origin (alongside any DLCs you would like to play) and that you have launched the game at least once via Battlelog (either singleplayer or multiplayer). Then, look for the `VU Client` entry on your start menu or your desktop to launch VU.
 
 ## Creating an account and linking your Origin account
 
@@ -25,3 +25,7 @@ You should now be in the main menu. There should be several options at the top, 
 ## Disconnecting from a server
 
 Disconnecting from a server is as simple as using the `Quit` option from the pause menu (which you can bring up by pressing `Esc`). Alternatively, you can open the in-game console using the tilde key (`~`), type `disconnect` or `dc`, and hit `Enter` (you can refer to [this document](/general/commands) for a listing of all available console commands). After you've disconnected from a server, you'll be returned to the main menu.
+
+## Troubleshooting
+
+If you are experiencing issues while running VU make sure to check out the [Troubleshooting & FAQ](/troubleshooting) section.
