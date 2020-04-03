@@ -37,13 +37,13 @@ title: RaycastManager
 
 | Name               | Description |
 | ------------------ | ----------- |
-| CheckDetailMesh    |             |
-| DontCheckWater     |             |
-| DontCheckTerrain   |             |
-| DontCheckRagdoll   |             |
-| DontCheckCharacter |             |
-| DontCheckGroup     |             |
-| DontCheckPhantoms  |             |
+| RayCastFlags.CheckDetailMesh    |             |
+| RayCastFlags.DontCheckWater     |             |
+| RayCastFlags.DontCheckTerrain   |             |
+| RayCastFlags.DontCheckRagdoll   |             |
+| RayCastFlags.DontCheckCharacter |             |
+| RayCastFlags.DontCheckGroup     |             |
+| RayCastFlags.DontCheckPhantoms  |             |
 
 ### SpatialRaycast
 
