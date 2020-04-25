@@ -184,4 +184,11 @@ hr {
   user-select: none;
   vertical-align: middle;
 }
+
+.td-content > table tr th:empty {
+  display: none;
+}
+
+.td-content > table tr:last-child td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
