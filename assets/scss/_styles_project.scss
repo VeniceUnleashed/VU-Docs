@@ -168,5 +168,20 @@ hr {
 }
 
 .td-content > h3, .td-content > h4, .td-content > h5, .td-content > h6 {
-  margin-top: 1rem;
+  margin-top: 2rem;
+}
+
+.prop-ro::after {
+  content: 'RO';
+  background: #e14d43;
+  padding: 0 4px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #000;
+  margin-left: 5px;
+  margin-right: 5px;
+  user-select: none;
+  vertical-align: middle;
+}
 }

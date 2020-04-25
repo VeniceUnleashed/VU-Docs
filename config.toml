@@ -30,3 +30,5 @@ enable = false
     lineNumbersInTable = true
     noClasses = true
     style = "dracula"
+  [markup.goldmark.renderer]
+    unsafe = true
