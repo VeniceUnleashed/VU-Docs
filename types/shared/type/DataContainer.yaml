@@ -71,7 +71,7 @@ methods:
       description: The newly created instance.
   -
     name: Clone
-    description: Creates a shallow clone of this instance, which is essentially the equivalent of creating a new instance of the same type and assigning the values of this instance to all of its properties. Any properties that contain structure types (eg. Vec3) will be cloned when assigning, while properties that contain instance types (eg. DataContainer) will be referencing the same instance. It also assigns it the provided Guid and registers it with the engine so it can be later looked-up using that Guid.
+    description: Creates a shallow clone of this instance and assigns it the provided Guid, which is essentially the equivalent of creating a new instance of the same type with the provided Guid and assigning the values of this instance to all of its properties. Any properties that contain structure types (eg. Vec3) will be cloned when assigning, while properties that contain instance types (eg. DataContainer) will be referencing the same instance.
     params:
       guid:
         type: Guid
