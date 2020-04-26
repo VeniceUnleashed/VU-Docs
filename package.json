@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "hugo server",
-    "build": "hugo -e production"
+    "build": "hugo -e production",
+    "build:types": "node types/generate-docs.js"
   },
   "repository": {
     "type": "git",
@@ -16,7 +17,8 @@
   },
   "homepage": "https://github.com/EmulatorNexus/VU-Docs#readme",
   "devDependencies": {
-    "autoprefixer": "^9.7.3",
-    "postcss-cli": "^6.1.3"
+    "autoprefixer": "^9.7.6",
+    "js-yaml": "^3.13.1",
+    "postcss-cli": "^7.1.0"
   }
 }
