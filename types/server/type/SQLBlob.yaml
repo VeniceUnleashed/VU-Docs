@@ -1,0 +1,7 @@
+name: SQLBlob
+type: class
+
+properties:
+  data:
+    type: string
+    readOnly: true

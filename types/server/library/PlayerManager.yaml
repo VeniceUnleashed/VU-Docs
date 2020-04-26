@@ -1,0 +1,117 @@
+name: PlayerManager
+type: library
+
+methods:
+  -
+    name: GetPlayers
+    returns:
+      type: Player
+      array: true
+  -
+    name: GetPlayerById
+    params:
+      id:
+        type: int
+    returns:
+      type: Player
+      nullable: true
+  -
+    name: GetPlayerByOnlineId
+    params:
+      onlineId:
+        type: int
+    returns:
+      type: Player
+      nullable: true
+  -
+    name: GetPlayerByGUID
+    params:
+      guid:
+        type: Guid
+    returns:
+      type: Player
+      nullable: true
+  -
+    name: GetPlayerByName
+    params:
+      name:
+        type: string
+    returns:
+      type: Player
+      nullable: true
+  -
+    name: GetPlayersByName
+    params:
+      name:
+        type: string
+    returns:
+      type: Player
+      array: true
+  -
+    name: GetPlayerCount
+    returns:
+      type: int
+  -
+    name: GetPlayersByTeam
+    params:
+      team:
+        type: TeamId
+    returns:
+      type: Player
+      array: true
+  -
+    name: GetPlayersBySquad
+    params:
+      team:
+        type: TeamId
+      squad:
+        type: SquadId
+    returns:
+      type: Player
+      array: true
+  -
+    name: GetSquadLeader
+    params:
+      team:
+        type: TeamId
+      squad:
+        type: SquadId
+    returns:
+      type: Player
+      nullable: true
+  -
+    name: CreatePlayer
+    params:
+      name:
+        type: string
+      team:
+        type: TeamId
+      squad:
+        type: SquadId
+    returns:
+      type: Player
+      nullable: true
+  -
+    name: DeletePlayer
+    params:
+      player:
+        type: Player
+  -
+    name: SetSpectatorEnabled
+    params:
+      enabled:
+        type: bool
+  -
+    name: IsSpectatorEnabled
+    returns:
+      type: bool
+  -
+    name: FadeInAll
+    params:
+      fadeTime:
+        type: float
+  -
+    name: FadeOutAll
+    params:
+      fadeTime:
+        type: float

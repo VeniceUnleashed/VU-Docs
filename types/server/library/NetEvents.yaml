@@ -1,0 +1,67 @@
+name: NetEvents
+type: library
+
+methods:
+  -
+    name: Subscribe
+    params:
+      eventName:
+        type: string
+      callback:
+        type: callable
+    returns:
+      type: NetEvent
+  -
+    name: Subscribe
+    params:
+      eventName:
+        type: string
+      context:
+        type: any
+      callback:
+        type: callable
+    returns:
+      type: NetEvent
+  -
+    name: SendTo
+    params:
+      eventName:
+        type: string
+      player:
+        type: Player
+      args:
+        type: any
+        variadic: true
+  -
+    name: SendToLocal
+    params:
+      eventName:
+        type: string
+      player:
+        type: Player
+      args:
+        type: any
+        variadic: true
+  -
+    name: Broadcast
+    params:
+      eventName:
+        type: string
+      args:
+        type: any
+        variadic: true
+  -
+    name: BroadcastLocal
+    params:
+      eventName:
+        type: string
+      args:
+        type: any
+        variadic: true
+  -
+    name: Unsubscribe
+  -
+    name: Unsubscribe
+    params:
+      eventName:
+        type: string

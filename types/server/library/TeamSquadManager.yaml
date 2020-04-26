@@ -1,0 +1,20 @@
+name: TeamSquadManager
+type: library
+
+methods:
+  -
+    name: GetSquadPlayerCount
+    params:
+      team:
+        type: TeamId
+      squad:
+        type: SquadId
+    returns:
+      type: int
+  -
+    name: GetTeamPlayerCount
+    params:
+      team:
+        type: TeamId
+    returns:
+      type: int

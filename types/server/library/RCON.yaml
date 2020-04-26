@@ -1,0 +1,57 @@
+name: RCON
+type: library
+
+methods:
+  -
+    name: SendCommand
+    params:
+      command:
+        type: string
+    returns:
+      type: string
+      table: true
+  -
+    name: SendCommand
+    params:
+      command:
+        type: string
+      args:
+        type: string
+        table: true
+    returns:
+      type: string
+      table: true
+  -
+    name: RegisterCommand
+    params:
+      command:
+        type: string
+      flags:
+        type: RemoteCommandFlag
+      callback:
+        type: callable
+    returns:
+      type: int
+  -
+    name: RegisterCommand
+    params:
+      command:
+        type: string
+      flags:
+        type: RemoteCommandFlag
+      context:
+        type: any
+      callback:
+        type: callable
+    returns:
+      type: int
+  -
+    name: DeregisterCommand
+    params:
+      handle:
+        type: int
+  -
+    name: GetServerGUID
+    returns:
+      type: Guid
+      nullable: true

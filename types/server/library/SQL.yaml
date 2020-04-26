@@ -1,0 +1,47 @@
+name: SQL
+type: library
+
+methods:
+  -
+    name: Open
+    returns:
+      type: bool
+  -
+    name: Close
+  -
+    name: Query
+    params:
+      query:
+        type: string
+      args:
+        type: any
+        variadic: true
+    returns:
+      type: table
+      nullable: true
+  -
+    name: Escape
+    params:
+      text:
+        type: string
+    returns:
+      type: string
+  -
+    name: Blob
+    params:
+      data:
+        type: string
+    returns:
+      type: SQLBlob
+  -
+    name: Error
+    returns:
+      type: string
+  -
+    name: AffectedRows
+    returns:
+      type: int
+  -
+    name: LastInsertId
+    returns:
+      type: int

@@ -1,0 +1,28 @@
+name: TicketManager
+type: library
+
+methods:
+  -
+    name: SetTicketCount
+    params:
+      team:
+        type: TeamId
+      ticketCount:
+        type: int
+    returns:
+      type: bool
+  -
+    name: GetTicketCount
+    params:
+      team:
+        type: TeamId
+    returns:
+      type: float
+  -
+    name: GetCurrentRound
+    returns:
+      type: int
+  -
+    name: GetRoundCount
+    returns:
+      type: int
