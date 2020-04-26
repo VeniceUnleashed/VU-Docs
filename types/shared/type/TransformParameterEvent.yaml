@@ -1,0 +1,21 @@
+name: TransformParameterEvent
+type: class
+inherits: EntityEvent
+
+constructors:
+  -
+    params:
+      eventId:
+        type: int
+      transform:
+        type: LinearTransform
+  -
+    params:
+      eventName:
+        type: string
+      transform:
+        type: LinearTransform
+
+properties:
+  transform:
+    type: LinearTransform

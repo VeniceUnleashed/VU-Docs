@@ -1,0 +1,110 @@
+name: Quat
+type: class
+
+constructors:
+  -
+  -
+    params:
+      x:
+        type: float
+      y:
+        type: float
+      z:
+        type: float
+      w:
+        type: float
+  -
+    params:
+      eulerAngles:
+        type: Vec3
+  -
+    params:
+      forward:
+        type: Vec3
+      up:
+        type: Vec3
+  -
+    params:
+      data:
+        type: table
+
+properties:
+  x:
+    type: float
+  y:
+    type: float
+  z:
+    type: float
+  w:
+    type: float
+  length:
+    type: float
+    readOnly: true
+  lengthSquared:
+    type: float
+    readOnly: true
+
+methods:
+  -
+    name: ToEuler
+    returns:
+      type: Vec3
+  -
+    name: Normalize
+    returns:
+      type: Quat
+  -
+    name: Dot
+    params:
+      other:
+        type: Quat
+    returns:
+      type: float
+  -
+    name: Angle
+    params:
+      other:
+        type: Quat
+    returns:
+      type: float
+  -
+    name: RotateTowards
+    params:
+      to:
+        type: Quat
+      maxDegreesDelta:
+        type: float
+    returns:
+      type: Quat
+  -
+    name: Slerp
+    params:
+      to:
+        type: Quat
+      t:
+        type: float
+    returns:
+      type: Quat
+  -
+    name: SlerpUnclamped
+    params:
+      to:
+        type: Quat
+      t:
+        type: float
+    returns:
+      type: Quat
+  -
+    name: Clone
+    returns:
+      type: Quat
+
+operators:
+  -
+    type: mult
+    rhs: Quat
+    returns: Quat
+  -
+    type: eq
+    rhs: Quat
+    returns: bool

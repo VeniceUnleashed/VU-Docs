@@ -1,0 +1,96 @@
+name: LinearTransform
+type: class
+
+constructors:
+  -
+  -
+    params:
+      scale:
+        type: float
+  -
+    params:
+      left:
+        type: Vec3
+      up:
+        type: Vec3
+      forward:
+        type: Vec3
+      trans:
+        type: Vec3
+  -
+    params:
+      data:
+        type: table
+
+properties:
+  left:
+    type: Vec3
+  up:
+    type: Vec3
+  forward:
+    type: Vec3
+  trans:
+    type: Vec3
+
+methods:
+  -
+    name: LookAtTransform
+    params:
+      camera:
+        type: Vec3
+      world:
+        type: Vec3
+  -
+    name: ToQuatTransform
+    params:
+      hasScale:
+        type: bool
+    returns:
+      type: QuatTransform
+  -
+    name: Translate
+    params:
+      trans:
+        type: Vec3
+  -
+    name: Inverse
+    returns:
+      type: LinearTransform
+  -
+    name: Clone
+    returns:
+      type: LinearTransform
+
+operators:
+  -
+    type: add
+    rhs: LinearTransform
+    returns: LinearTransform
+  -
+    type: sub
+    rhs: LinearTransform
+    returns: LinearTransform
+  -
+    type: mult
+    rhs: LinearTransform
+    returns: LinearTransform
+  -
+    type: mult
+    rhs: float
+    returns: LinearTransform
+  -
+    type: mult
+    rhs: Vec3
+    returns: Vec3
+  -
+    type: mult
+    rhs: Vec4
+    returns: Vec3
+  -
+    type: eq
+    rhs: LinearTransform
+    returns: bool
+
+static:
+  typeInfo:
+    type: TypeInformation

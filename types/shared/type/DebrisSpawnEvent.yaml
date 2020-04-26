@@ -1,0 +1,33 @@
+name: DebrisSpawnEvent
+type: class
+inherits: EntityEvent
+
+constructors:
+  -
+    params:
+      eventId:
+        type: int
+      min:
+        type: float
+      max:
+        type: float
+      current:
+        type: float
+  -
+    params:
+      eventName:
+        type: string
+      min:
+        type: float
+      max:
+        type: float
+      current:
+        type: float
+
+properties:
+  min:
+    type: float
+  max:
+    type: float
+  current:
+    type: float

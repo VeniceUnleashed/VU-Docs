@@ -1,0 +1,107 @@
+name: EntityBus
+type: class
+
+properties:
+  entities:
+    type: Entity
+    table: true
+    readOnly: true
+  parent:
+    type: EntityBus
+    nullable: true
+    readOnly: true
+  parentRepresentative:
+    type: DataContainer
+    nullable: true
+    readOnly: true
+  data:
+    type: DataContainer
+    nullable: true
+    readOnly: true
+  dataId:
+    type: NetworkDataId
+    readOnly: true
+  instanceId:
+    type: int
+    readOnly: true
+
+methods:
+  -
+    name: FireEvent
+    params:
+      targetData:
+        type: DataContainer
+      eventId:
+        type: int
+  -
+    name: FireEvent
+    params:
+      targetData:
+        type: DataContainer
+      eventName:
+        type: string
+  -
+    name: FireEvent
+    params:
+      targetData:
+        type: DataContainer
+      event:
+        type: EntityEvent
+  -
+    name: GetEntity
+    params:
+      forData:
+        type: DataContainer
+    returns:
+      type: Entity
+      nullable: true
+  -
+    name: PropertyChanged
+    params:
+      propertyId:
+        type: int
+  -
+    name: PropertyChanged
+    params:
+      propertyId:
+        type: int
+      value:
+        type: any
+  -
+    name: PropertyChanged
+    params:
+      propertyName:
+        type: string
+  -
+    name: PropertyChanged
+    params:
+      propertyName:
+        type: string
+      value:
+        type: any
+  -
+    name: GetLinks
+    params:
+      toData:
+        type: DataContainer
+      fieldId:
+        type: int
+    returns:
+      type: Entity
+      table: true
+  -
+    name: GetLinks
+    params:
+      toData:
+        type: DataContainer
+      fieldName:
+        type: string
+    returns:
+      type: Entity
+      table: true
+
+operators:
+  -
+    type: eq
+    rhs: EntityBus
+    returns: bool

@@ -1,0 +1,10 @@
+name: Message
+type: class
+
+properties:
+  category:
+    type: MessageCategory
+    readOnly: true
+  type:
+    type: MessageType
+    readOnly: true

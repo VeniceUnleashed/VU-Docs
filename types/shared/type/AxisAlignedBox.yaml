@@ -1,0 +1,37 @@
+name: AxisAlignedBox
+type: class
+
+constructors:
+  -
+  -
+    params:
+      min:
+        type: Vec3
+      max:
+        type: Vec3
+  -
+    params:
+      data:
+        type: table
+
+properties:
+  min:
+    type: Vec3
+  max:
+    type: Vec3
+
+methods:
+  -
+    name: Clone
+    returns:
+      type: AxisAlignedBox
+
+operators:
+  -
+    type: eq
+    rhs: AxisAlignedBox
+    returns: bool
+
+static:
+  typeInfo:
+    type: TypeInformation

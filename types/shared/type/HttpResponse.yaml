@@ -1,0 +1,29 @@
+name: HttpResponse
+type: class
+
+properties:
+  status:
+    type: int
+    readOnly: true
+  body:
+    type: string
+    readOnly: true
+  headers:
+    type: table
+    readonly: true
+
+methods:
+  -
+    name: GetHeader
+    params:
+      header:
+        type: string
+    returns:
+      type: string
+  -
+    name: HasHeader
+    params:
+      header:
+        type: string
+    returns:
+      type: bool

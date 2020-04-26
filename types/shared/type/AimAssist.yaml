@@ -1,0 +1,32 @@
+name: AimAssist
+type: class
+
+properties:
+  data:
+    type: DataContainer
+  speed:
+    type: Vec2
+  lastZoomLevel:
+    type: int
+  yaw:
+    type: float
+  pitch:
+    type: float
+  acceleration:
+    type: float
+  accelerationTimer:
+    type: float
+  attractZoomPostTimer:
+    type: float
+  targetDistance:
+    type: float
+  softZoneLambda:
+    type: float
+  useAimAssist:
+    type: bool
+  useInputPolynomials:
+    type: bool
+  hasChangedZoomed:
+    type: bool
+  isSnapZoom:
+    type: bool

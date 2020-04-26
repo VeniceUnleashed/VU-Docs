@@ -1,0 +1,154 @@
+name: PhysicsEntityBase
+type: class
+inherits: SpatialEntity
+
+constructors:
+  -
+    params:
+      other:
+        type: Entity
+  -
+    params:
+      other:
+        type: SpatialEntity
+
+properties:
+  mass:
+    type: float
+    readOnly: true
+  invMass:
+    type: float
+    readOnly: true
+  linearVelocity:
+    type: Vec3
+    nullable: true
+  angularVelocity:
+    type: Vec3
+    nullable: true
+  position:
+    type: Vec3
+    readOnly: true
+    nullable: true
+  sleeping:
+    type: bool
+  addedToWorld:
+    type: bool
+    readOnly: true
+  partCount:
+    type: int
+    readOnly: true
+  gravityFactor:
+    type: float
+  friction:
+    type: float
+  restitution:
+    type: float
+  linearDamping:
+    type: float
+  angularDamping:
+    type: float
+  userData:
+    type: Entity
+    nullable: true
+
+methods:
+  -
+    name: AddToWorld
+  -
+    name: RemoveFromWorld
+  -
+    name: GetPart
+    params:
+      partId:
+        type: int
+    returns:
+      type: Entity
+      nullable: true
+  -
+    name: GetPartTransform
+    params:
+      partId:
+        type: int
+    returns:
+      type: QuatTransform
+      nullable: true
+  -
+    name: GetPartMaterial
+    params:
+      partId:
+        type: int
+    returns:
+      type: DataContainer
+      nullable: true
+  -
+    name: GetPartMaterial
+    params:
+      partId:
+        type: int
+      atPos:
+        type: Vec3
+    returns:
+      type: DataContainer
+      nullable: true
+  -
+    name: GetPartMaterialFlags
+    params:
+      partId:
+        type: int
+    returns:
+      type: int
+  -
+    name: GetProperty
+    params:
+      propertyId:
+        type: int
+    returns:
+      type: int
+  -
+    name: SetProperty
+    params:
+      propertyId:
+        type: int
+      value:
+        type: int
+  -
+    name: RemoveProperty
+    params:
+      propertyId:
+        type: int
+    returns:
+      type: int
+  -
+    name: SetMass
+    params:
+      mass:
+        type: float
+      updateInertia:
+        type: bool
+  -
+    name: ApplyForce
+    params:
+      deltaTime:
+        type: float
+      force:
+        type: Vec3
+  -
+    name: ApplyForce
+    params:
+      deltaTime:
+        type: float
+      force:
+        type: Vec3
+      position:
+        type: Vec3
+  -
+    name: ApplyTorque
+    params:
+      deltaTime:
+        type: float
+      torque:
+        type: Vec3
+
+static:
+  typeInfo:
+    type: TypeInformation

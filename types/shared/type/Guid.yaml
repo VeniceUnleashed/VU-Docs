@@ -1,0 +1,62 @@
+name: Guid
+type: class
+
+constructor:
+  -
+    params:
+      guid:
+        type: string
+      format:
+        type: string
+        default: D
+
+properties:
+  a:
+    type: int
+    readOnly: true
+  b:
+    type: int
+    readOnly: true
+  c:
+    type: int
+    readOnly: true
+  d:
+    type: int
+    readOnly: true
+  e:
+    type: int
+    readOnly: true
+  f:
+    type: int
+    readOnly: true
+  g:
+    type: int
+    readOnly: true
+  h:
+    type: int
+    readOnly: true
+  i:
+    type: int
+    readOnly: true
+  j:
+    type: int
+    readOnly: true
+  k:
+    type: int
+    readOnly: true
+
+methods:
+  -
+    name: ToString
+    returns:
+      type: string
+  -
+    name: Clone
+    returns:
+      type: Guid
+
+operators:
+  -
+    type: eq
+    rhs: Guid
+    returns: bool

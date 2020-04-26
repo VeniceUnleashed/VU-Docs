@@ -1,0 +1,50 @@
+name: WeaponFiring
+type: class
+
+properties:
+  data:
+    type: DataContainer
+    readOnly: true
+    nullable: true
+  firingHolderData:
+    type: DataContainer
+    nullable: true
+  gunSway:
+    type: GunSway
+    readOnly: true
+    nullable: true
+  weaponState:
+    type: WeaponState
+  lastWeaponState:
+    type: WeaponState
+  nextWeaponState:
+    type: WeaponState
+  switchCooldownTimer:
+    type: float
+  autoReplenishTime:
+    type: float
+  timeToWait:
+    type: float
+  holdReleaseMinDelay:
+    type: float
+  recoilTimer:
+    type: float
+  recoilAngleX:
+    type: float
+  recoilAngleY:
+    type: float
+  recoilAngleZ:
+    type: float
+  recoilFovAngle:
+    type: float
+  primaryAmmoReplenishDelay:
+    type: float
+  reloadTimeMultiplier:
+    type: float
+  overheatDropMultiplier:
+    type: float
+  primaryAmmoToFill:
+    type: int
+  instanceId:
+    type: int
+    readOnly: true

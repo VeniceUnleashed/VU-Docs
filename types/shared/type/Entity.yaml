@@ -1,0 +1,208 @@
+name: Entity
+type: class
+
+properties:
+  typeInfo:
+    type: TypeInformation
+    readOnly: true
+  data:
+    type: DataContainer
+    readOnly: true
+    nullable: true
+  uniqueId:
+    type: int
+    readOnly: true
+  instanceId:
+    type: int
+    readOnly: true
+  bus:
+    type: EntityBus
+    readOnly: true
+    nullable: true
+
+methods:
+  -
+    name: Init
+    params:
+      realm:
+        type: Realm
+      enableAllowed:
+        type: bool
+      isGhost:
+        type: bool
+        default: false
+  -
+    name: Destroy
+  -
+    name: Is
+    params:
+      typeName:
+        type: string
+    returns:
+      type: bool
+  -
+    name: FireEvent
+    params:
+      eventId:
+        type: int
+  -
+    name: FireEvent
+    params:
+      eventName:
+        type: string
+  -
+    name: FireEvent
+    params:
+      event:
+        type: EntityEvent
+  -
+    name: PropertyChanged
+    params:
+      propertyId:
+        type: int
+  -
+    name: PropertyChanged
+    params:
+      propertyId:
+        type: int
+      value:
+        type: any
+  -
+    name: PropertyChanged
+    params:
+      propertyName:
+        type: string
+  -
+    name: PropertyChanged
+    params:
+      propertyName:
+        type: string
+      value:
+        type: any
+  -
+    name: RegisterEventCallback
+    params:
+      callback:
+        type: callable
+        description: "A callback in the form `function(entity: Entity, event: EntityEvent): bool`."
+    returns:
+      type: int
+  -
+    name: RegisterEventCallback
+    params:
+      context:
+        type: any
+        description: A context value to pass to the callback.
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, entity: Entity, event: EntityEvent): bool`."
+    returns:
+      type: int
+  -
+    name: UnregisterEventCallback
+    params:
+      handle:
+        type: int
+  -
+    name: RegisterCreateCallback
+    params:
+      callback:
+        type: callable
+        description: "A callback in the form `function(entity: Entity, transform: LinearTransform): bool`."
+    returns:
+      type: int
+  -
+    name: RegisterCreateCallback
+    params:
+      context:
+        type: any
+        description: A context value to pass to the callback.
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, entity: Entity, transform: LinearTransform): bool`."
+    returns:
+      type: int
+  -
+    name: UnregisterCreateCallback
+    params:
+      handle:
+        type: int
+  -
+    name: RegisterDestroyCallback
+    params:
+      callback:
+        type: callable
+        description: "A callback in the form `function(entity: Entity): bool`."
+    returns:
+      type: int
+  -
+    name: RegisterDestroyCallback
+    params:
+      context:
+        type: any
+        description: A context value to pass to the callback.
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, entity: Entity): bool`."
+    returns:
+      type: int
+  -
+    name: UnregisterDestroyCallback
+    params:
+      handle:
+        type: int
+  -
+    name: RegisterInitCallback
+    params:
+      callback:
+        type: callable
+        description: "A callback in the form `function(entity: Entity): bool`."
+    returns:
+      type: int
+  -
+    name: RegisterInitCallback
+    params:
+      context:
+        type: any
+        description: A context value to pass to the callback.
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, entity: Entity): bool`."
+    returns:
+      type: int
+  -
+    name: UnregisterInitCallback
+    params:
+      handle:
+        type: int
+  -
+    name: RegisterDeinitCallback
+    params:
+      callback:
+        type: callable
+        description: "A callback in the form `function(entity: Entity): bool`."
+    returns:
+      type: int
+  -
+    name: RegisterDeinitCallback
+    params:
+      context:
+        type: any
+        description: A context value to pass to the callback.
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, entity: Entity): bool`."
+    returns:
+      type: int
+  -
+    name: UnregisterDeinitCallback
+    params:
+      handle:
+        type: int
+
+operators:
+  -
+    type: eq
+    rhs: Entity
+    returns: bool
+

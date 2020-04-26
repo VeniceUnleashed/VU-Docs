@@ -1,0 +1,6 @@
+name: Event
+type: class
+
+methods:
+  -
+    name: Unsubscribe

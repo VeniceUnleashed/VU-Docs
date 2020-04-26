@@ -1,0 +1,91 @@
+name: Vec4
+type: class
+
+constructors:
+  -
+  -
+    params:
+      x:
+        type: float
+      y:
+        type: float
+      z:
+        type: float
+      w:
+        type: float
+  -
+    params:
+      data:
+        type: table
+
+properties:
+  x:
+    type: float
+  y:
+    type: float
+  z:
+    type: float
+  w:
+    type: float
+  magnitude:
+    type: float
+    readOnly: true
+
+methods:
+  -
+    name: Distance
+    params:
+      to:
+        type: Vec4
+    returns:
+      type: float
+  -
+    name: Clone
+    returns:
+      type: Vec4
+
+operators:
+  -
+    type: add
+    rhs: Vec4
+    returns: Vec4
+  -
+    type: sub
+    rhs: Vec4
+    returns: Vec4
+  -
+    type: mult
+    rhs: Vec4
+    returns: Vec4
+  -
+    type: mult
+    rhs: float
+    returns: Vec4
+  -
+    type: div
+    rhs: Vec4
+    returns: Vec4
+  -
+    type: div
+    rhs: float
+    returns: Vec4
+  -
+    type: eq
+    rhs: Vec4
+    returns: bool
+  -
+    type: lt
+    rhs: Vec4
+    returns: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+  negativeInfinity:
+    type: Vec4
+  one:
+    type: Vec4
+  positiveInfinity:
+    type: Vec4
+  zero:
+    type: Vec4

@@ -1,0 +1,93 @@
+name: Vec2
+type: class
+
+constructors:
+  -
+  -
+    params:
+      x:
+        type: float
+      y:
+        type: float
+  -
+    params:
+      data:
+        type: table
+
+properties:
+  x:
+    type: float
+  y:
+    type: float
+  z:
+    type: float
+  magnitude:
+    type: float
+    readOnly: true
+
+methods:
+  -
+    name: Distance
+    params:
+      to:
+        type: Vec2
+    returns:
+      type: float
+  -
+    name: Clone
+    returns:
+      type: Vec2
+
+operators:
+  -
+    type: add
+    rhs: Vec2
+    returns: Vec2
+  -
+    type: sub
+    rhs: Vec2
+    returns: Vec2
+  -
+    type: mult
+    rhs: Vec2
+    returns: Vec2
+  -
+    type: mult
+    rhs: float
+    returns: Vec2
+  -
+    type: div
+    rhs: Vec2
+    returns: Vec2
+  -
+    type: div
+    rhs: float
+    returns: Vec2
+  -
+    type: eq
+    rhs: Vec2
+    returns: bool
+  -
+    type: lt
+    rhs: Vec2
+    returns: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+  down:
+    type: Vec2
+  left:
+    type: Vec2
+  negativeInfinity:
+    type: Vec2
+  one:
+    type: Vec2
+  positiveInfinity:
+    type: Vec2
+  right:
+    type: Vec2
+  up:
+    type: Vec2
+  zero:
+    type: Vec2

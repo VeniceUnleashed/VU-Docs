@@ -1,0 +1,47 @@
+name: DatabasePartition
+type: class
+
+properties:
+  instances:
+    type: DataContainer
+    table: true
+    readOnly: true
+  guid:
+    type: Guid
+    readOnly: true
+  primaryInstance:
+    type: DataContainer
+    readOnly: true
+  name:
+    type: string
+    readOnly: true
+
+methods:
+  -
+    name: FindInstance
+    params:
+      guid:
+        type: Guid
+    returns:
+      type: DataContainer
+      nullable: true
+  -
+    name: ReplaceInstance
+    params:
+      instance:
+        type: DataContainer
+      replacement:
+        type: DataContainer
+      replaceReferences:
+        type: bool
+        default: true
+  -
+    name: AddInstance
+    params:
+      instance:
+        type: DataContainer
+  -
+    name: RemoveInstance
+    params:
+      instance:
+        type: DataContainer

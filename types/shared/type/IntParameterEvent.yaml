@@ -1,0 +1,21 @@
+name: IntParameterEvent
+type: class
+inherits: EntityEvent
+
+constructors:
+  -
+    params:
+      eventId:
+        type: int
+      parameter:
+        type: int
+  -
+    params:
+      eventName:
+        type: string
+      parameter:
+        type: int
+
+properties:
+  parameter:
+    type: int

@@ -1,0 +1,6 @@
+name: ContainerCallback
+type: class
+
+methods:
+  -
+    name: Deregister

@@ -1,0 +1,39 @@
+name: EntryInput
+type: class
+
+constructors:
+  -
+
+properties:
+  deltaTime:
+    type: float
+  authoritativeAimingYaw:
+    type: float
+  authoritativeAimingPitch:
+    type: float
+  authoritativeMovementPenalty:
+    type: float
+  authoritativeCameraPosition:
+    type: Vec3
+  authoritativeMovementPosition:
+    type: Vec3
+  authoritativeMovementVelocity:
+    type: Vec3
+  flags:
+    type: int
+
+methods:
+  -
+    name: GetLevel
+    params:
+      action:
+        type: EntryInputActionEnum
+    returns:
+      type: float
+  -
+    name: SetLevel
+    params:
+      action:
+        type: EntryInputActionEnum
+      level:
+        type: float

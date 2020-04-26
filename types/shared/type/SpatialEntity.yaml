@@ -1,0 +1,23 @@
+name: SpatialEntity
+type: class
+inherits: Entity
+
+constructors:
+  -
+    params:
+      other:
+        type: Entity
+
+properties:
+  transform:
+    type: LinearTransform
+  aabb:
+    type: AxisAlignedBox
+    readOnly: true
+  aabbTransform:
+    type: LinearTransform
+    readOnly: true
+
+static:
+  typeInfo:
+    type: TypeInformation

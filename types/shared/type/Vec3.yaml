@@ -64,6 +64,8 @@ methods:
       type: Vec3
   -
     name: Clone
+    returns:
+      type: Vec3
 
 operators:
   -

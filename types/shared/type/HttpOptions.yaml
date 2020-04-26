@@ -1,0 +1,49 @@
+name: HttpOptions
+type: class
+
+constructors:
+  -
+    params:
+      headers:
+        type: table
+        default: "{}"
+      timeout:
+        type: int
+        default: 30
+
+properties:
+  timeout:
+    type: int
+  verifyCertificate:
+    type: bool
+  headers:
+    type: table
+    readOnly: true
+
+methods:
+  -
+    name: SetHeader
+    params:
+      header:
+        type: string
+      value:
+        type: string
+  -
+    name: RemoveHeader
+    params:
+      header:
+        type: string
+  -
+    name: GetHeader
+    params:
+      header:
+        type: string
+    returns:
+      type: string
+  -
+    name: HasHeader
+    params:
+      header:
+        type: string
+    returns:
+      type: bool

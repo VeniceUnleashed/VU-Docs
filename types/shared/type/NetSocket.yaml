@@ -1,0 +1,69 @@
+name: NetSocket
+type: class
+
+methods:
+  -
+    name: Connect
+    params:
+      target:
+        type: string
+      port:
+        type: int
+    returns:
+      type: int
+  -
+    name: Read
+    params:
+      length:
+        type: int
+    returns:
+      -
+        type: string
+      -
+        type: int
+  -
+    name: Write
+    params:
+      data:
+        type: string
+    returns:
+      -
+        type: int
+      -
+        type: int
+  -
+    name: Destroy
+    returns:
+      type: int
+  -
+    name: ReadFrom
+    params:
+      length:
+        type: int
+      host:
+        type: string
+      port:
+        type: int
+    returns:
+      -
+        type: string
+      -
+        type: string
+      -
+        type: int
+      -
+        type: int
+  -
+    name: WriteTo
+    params:
+      data:
+        type: string
+      host:
+        type: string
+      port:
+        type: int
+    returns:
+      -
+        type: int
+      -
+        type: int

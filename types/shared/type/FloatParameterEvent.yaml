@@ -1,0 +1,21 @@
+name: FloatParameterEvent
+type: class
+inherits: EntityEvent
+
+constructors:
+  -
+    params:
+      eventId:
+        type: int
+      parameter:
+        type: float
+  -
+    params:
+      eventName:
+        type: string
+      parameter:
+        type: float
+
+properties:
+  parameter:
+    type: float

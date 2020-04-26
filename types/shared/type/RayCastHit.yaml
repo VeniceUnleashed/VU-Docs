@@ -1,0 +1,24 @@
+name: RayCastHit
+type: class
+
+properties:
+  position:
+    type: Vec3
+    readOnly: true
+  rigidBody:
+    type: Entity
+    readOnly: true
+    nullable: true
+  normal:
+    type: Vec3
+    readOnly: true
+  material:
+    type: DataContainer
+    readOnly: true
+    nullable: true
+  part:
+    type: int
+    readOnly: true
+  bone:
+    type: int
+    readOnly: true

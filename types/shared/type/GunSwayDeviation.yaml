@@ -1,0 +1,15 @@
+name: GunSwayDeviation
+type: class
+
+constructors:
+  -
+
+properties:
+  pitch:
+    type: float
+  yaw:
+    type: float
+  roll:
+    type: float
+  transY:
+    type: float

@@ -1,0 +1,31 @@
+class: TypeInformation
+type: class
+
+properties:
+  name:
+    type: string
+    readOnly: true
+  super:
+    type: TypeInformation
+    readOnly: true
+    nullable: true
+  elementType:
+    type: TypeInformation
+    readOnly: true
+    nullable: true
+  fields:
+    type: FieldInformation
+    array: true
+    readOnly: true
+  array:
+    type: bool
+    readOnly: true
+  enum:
+    type: bool
+    readOnly: true
+
+operators:
+  -
+    type: eq
+    rhs: TypeInformation
+    returns: bool

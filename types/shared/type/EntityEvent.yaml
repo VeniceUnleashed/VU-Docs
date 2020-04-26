@@ -1,0 +1,19 @@
+name: EntityEvent
+type: class
+
+constructors:
+  -
+    params:
+      eventId:
+        type: int
+  -
+    params:
+      eventName:
+        type: string
+
+properties:
+  type:
+    type: string
+    readOnly: true
+  eventId:
+    type: int

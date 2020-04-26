@@ -1,0 +1,14 @@
+name: FieldInformation
+type: class
+
+properties:
+  name:
+    type: string
+    readOnly: true
+  value:
+    type: int
+    readOnly: true
+  typeInfo:
+    type: TypeInformation
+    readOnly: true
+    nullable: true

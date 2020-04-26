@@ -1,0 +1,9 @@
+name: EntityIterator
+type: class
+
+methods:
+  -
+    name: Next
+    returns:
+      type: Entity
+      nullable: true

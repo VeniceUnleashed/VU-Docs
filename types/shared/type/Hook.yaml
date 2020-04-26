@@ -1,0 +1,21 @@
+name: Hook
+type: class
+
+methods:
+  -
+    name: Call
+    returns:
+      type: any
+  -
+    name: Pass
+    params:
+      args:
+        type: any
+        variadic: true
+  -
+    name: Return
+  -
+    name: Return
+    params:
+      returnValue:
+        type: any

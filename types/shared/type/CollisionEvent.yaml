@@ -1,0 +1,33 @@
+name: CollisionEvent
+type: class
+inherits: EntityEvent
+
+constructors:
+  -
+    params:
+      eventId:
+        type: int
+      position:
+        type: Vec3
+      normal:
+        type: Vec3
+      speed:
+        type: float
+  -
+    params:
+      eventName:
+        type: string
+      position:
+        type: Vec3
+      normal:
+        type: Vec3
+      speed:
+        type: float
+
+properties:
+  position:
+    type: Vec3
+  normal:
+    type: Vec3
+  speed:
+    type: float

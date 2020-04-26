@@ -1,0 +1,47 @@
+name: GunSway
+type: class
+
+properties:
+  data:
+    type: DataContainer
+    nullable: true
+  cameraRecoilTransform:
+    type: LinearTransform
+  currentRecoilDeviation:
+    type: GunSwayDeviation
+  currentLagDeviation:
+    type: GunSwayDeviation
+  currentDispersionDeviation:
+    type: GunSwayDeviation
+  timeSinceLastShot:
+    type: float
+  dispersionAngle:
+    type: float
+  minDispersionAngle:
+    type: float
+  crossHairDispersionFactor:
+    type: float
+  currentGameplayDeviationScaleFactor:
+    type: float
+  currentVisualDeviationScaleFactor:
+    type: float
+  suppressionMinDispersionAngleFactor:
+    type: float
+  randomAngle:
+    type: float
+  randomRadius:
+    type: float
+  jumpingTimer:
+    type: float
+  seed:
+    type: int
+  initialFireShot:
+    type: int
+  fireShot:
+    type: bool
+  isFiring:
+    type: bool
+  isJumping:
+    type: bool
+  isMoving:
+    type: bool

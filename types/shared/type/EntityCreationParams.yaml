@@ -1,0 +1,13 @@
+name: EntityCreationParams
+type: class
+
+constructors:
+  -
+
+properties:
+  transform:
+    type: LinearTransform
+  variationNameHash:
+    type: int
+  networked:
+    type: bool

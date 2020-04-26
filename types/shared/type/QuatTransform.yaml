@@ -1,0 +1,37 @@
+name: QuatTransform
+type: class
+
+constructors:
+  -
+  -
+    params:
+      rotation:
+        type: Quat
+      transAndScale:
+        type: Vec4
+  -
+    params:
+      data:
+        type: table
+
+properties:
+  rotation:
+    type: Quat
+  transAndScale:
+    type: Vec4
+
+methods:
+  -
+    name: ToLinearTransform
+    returns:
+      type: LinearTransform
+  -
+    name: Clone
+    returns:
+      type: QuatTransform
+
+operators:
+  -
+    type: eq
+    rhs: QuatTransform
+    returns: bool
