@@ -1,0 +1,124 @@
+name: Vec3
+type: class
+
+constructors:
+  -
+  -
+    params:
+      x:
+        type: float
+      y:
+        type: float
+      z:
+        type: float
+  -
+    params:
+      data:
+        type: table
+
+properties:
+  x:
+    type: float
+  y:
+    type: float
+  z:
+    type: float
+  magnitude:
+    type: float
+    readOnly: true
+
+methods:
+  -
+    name: Dot
+    params:
+      with:
+        type: Vec3
+    returns:
+      type: float
+  -
+    name: Cross
+    params:
+      with:
+        type: Vec3
+    returns:
+      type: Vec3
+  -
+    name: Normalize
+    returns:
+      type: Vec3
+  -
+    name: Distance
+    params:
+      to:
+        type: Vec3
+    returns:
+      type: float
+  -
+    name: MoveTowards
+    params:
+      to:
+        type: Vec3
+      maxDistance:
+        type: float
+    returns:
+      type: Vec3
+  -
+    name: Clone
+
+operators:
+  -
+    type: add
+    rhs: Vec3
+    returns: Vec3
+  -
+    type: sub
+    rhs: Vec3
+    returns: Vec3
+  -
+    type: mult
+    rhs: Vec3
+    returns: Vec3
+  -
+    type: mult
+    rhs: float
+    returns: Vec3
+  -
+    type: div
+    rhs: Vec3
+    returns: Vec3
+  -
+    type: div
+    rhs: float
+    returns: Vec3
+  -
+    type: eq
+    rhs: Vec3
+    returns: bool
+  -
+    type: lt
+    rhs: Vec3
+    returns: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+  back:
+    type: Vec3
+  down:
+    type: Vec3
+  forward:
+    type: Vec3
+  left:
+    type: Vec3
+  negativeInfinity:
+    type: Vec3
+  one:
+    type: Vec3
+  positiveInfinity:
+    type: Vec3
+  right:
+    type: Vec3
+  up:
+    type: Vec3
+  zero:
+    type: Vec3
