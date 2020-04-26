@@ -699,7 +699,7 @@ const generateIndexForTypes = (types, typesPath, title) => {
     for (const chunk of chunks) {
       doc += `| [${chunk[0]}](/vext/ref/${typesPath}/${chunk[0].toLowerCase()}) | `;
 
-      if (chunks.length === 1) {
+      if (chunk.length === 1) {
         doc += `|\n`;
       } else {
         doc += `[${chunk[1]}](/vext/ref/${typesPath}/${chunk[1].toLowerCase()}) |\n`;
@@ -718,7 +718,7 @@ const generateIndexForTypes = (types, typesPath, title) => {
     for (const chunk of chunks) {
       doc += `| [${chunk[0]}](/vext/ref/${typesPath}/${chunk[0].toLowerCase()}) | `;
 
-      if (chunks.length === 1) {
+      if (chunk.length === 1) {
         doc += `|\n`;
       } else {
         doc += `[${chunk[1]}](/vext/ref/${typesPath}/${chunk[1].toLowerCase()}) |\n`;
@@ -739,7 +739,7 @@ const generateIndexForTypes = (types, typesPath, title) => {
     for (const chunk of chunks) {
       doc += `| [${chunk[0]}](/vext/ref/${typesPath}/${chunk[0].toLowerCase()}) | `;
 
-      if (chunks.length === 1) {
+      if (chunk.length === 1) {
         doc += `|\n`;
       } else {
         doc += `[${chunk[1]}](/vext/ref/${typesPath}/${chunk[1].toLowerCase()}) |\n`;
