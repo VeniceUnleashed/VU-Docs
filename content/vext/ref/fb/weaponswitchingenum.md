@@ -3,6 +3,7 @@ title: WeaponSwitchingEnum
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **wsSlot0** | Value: **0** |

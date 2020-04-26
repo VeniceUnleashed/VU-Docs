@@ -3,8 +3,9 @@ title: FaderType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **FaderType_Linear** | Value: **0** |
-| **FaderType_Cosine** | Value: **1** |
+| **FaderType\_Linear** | Value: **0** |
+| **FaderType\_Cosine** | Value: **1** |
 

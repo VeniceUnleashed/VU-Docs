@@ -3,11 +3,12 @@ title: UIPartIdentifier
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **HCI_None** | Value: **0** |
-| **HCI_RangeMeter** | Value: **1** |
-| **HCI_PredictedSight** | Value: **2** |
-| **HCI_VelocityVector** | Value: **3** |
-| **HCI_RadioAltitude** | Value: **4** |
+| **HCI\_None** | Value: **0** |
+| **HCI\_RangeMeter** | Value: **1** |
+| **HCI\_PredictedSight** | Value: **2** |
+| **HCI\_VelocityVector** | Value: **3** |
+| **HCI\_RadioAltitude** | Value: **4** |
 

@@ -3,6 +3,7 @@ title: TicketDecreaseType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **TDTOnKilled** | Value: **0** |

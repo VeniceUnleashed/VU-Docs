@@ -3,9 +3,10 @@ title: XenonTessellationMode
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **XenonTessellationMode_Discrete** | Value: **0** |
-| **XenonTessellationMode_Continuous** | Value: **1** |
-| **XenonTessellationMode_PerEdge** | Value: **2** |
+| **XenonTessellationMode\_Discrete** | Value: **0** |
+| **XenonTessellationMode\_Continuous** | Value: **1** |
+| **XenonTessellationMode\_PerEdge** | Value: **2** |
 

@@ -3,9 +3,10 @@ title: MixerValueAccumulateMode
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **MixerValueAccumulateMode_None** | Value: **0** |
-| **MixerValueAccumulateMode_Min** | Value: **1** |
-| **MixerValueAccumulateMode_Max** | Value: **2** |
+| **MixerValueAccumulateMode\_None** | Value: **0** |
+| **MixerValueAccumulateMode\_Min** | Value: **1** |
+| **MixerValueAccumulateMode\_Max** | Value: **2** |
 

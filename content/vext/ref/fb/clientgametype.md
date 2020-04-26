@@ -3,9 +3,10 @@ title: ClientGameType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **ClientGameType_SinglePlayer** | Value: **0** |
-| **ClientGameType_Hosted** | Value: **1** |
-| **ClientGameType_Joined** | Value: **2** |
+| **ClientGameType\_SinglePlayer** | Value: **0** |
+| **ClientGameType\_Hosted** | Value: **1** |
+| **ClientGameType\_Joined** | Value: **2** |
 

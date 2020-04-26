@@ -3,10 +3,11 @@ title: InterpolationType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **InterpolationType_None** | Value: **0** |
-| **InterpolationType_Linear** | Value: **1** |
-| **InterpolationType_CatmullRom** | Value: **2** |
-| **InterpolationType_Curves** | Value: **3** |
+| **InterpolationType\_None** | Value: **0** |
+| **InterpolationType\_Linear** | Value: **1** |
+| **InterpolationType\_CatmullRom** | Value: **2** |
+| **InterpolationType\_Curves** | Value: **3** |
 

@@ -3,6 +3,7 @@ title: UICreditsTextType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **SingleLine** | Value: **0** |

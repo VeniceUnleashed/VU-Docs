@@ -3,9 +3,10 @@ title: SpotLightShape
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **SpotLightShape_Cone** | Value: **0** |
-| **SpotLightShape_Frustum** | Value: **1** |
-| **SpotLightShape_OrthoFrustum** | Value: **2** |
+| **SpotLightShape\_Cone** | Value: **0** |
+| **SpotLightShape\_Frustum** | Value: **1** |
+| **SpotLightShape\_OrthoFrustum** | Value: **2** |
 

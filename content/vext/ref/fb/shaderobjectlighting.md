@@ -3,9 +3,10 @@ title: ShaderObjectLighting
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **ShaderObjectLighting_None** | Value: **0** |
-| **ShaderObjectLighting_LightProbe** | Value: **1** |
-| **ShaderObjectLighting_LightMap** | Value: **2** |
+| **ShaderObjectLighting\_None** | Value: **0** |
+| **ShaderObjectLighting\_LightProbe** | Value: **1** |
+| **ShaderObjectLighting\_LightMap** | Value: **2** |
 

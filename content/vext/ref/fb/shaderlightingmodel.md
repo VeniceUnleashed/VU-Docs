@@ -3,11 +3,12 @@ title: ShaderLightingModel
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **ShaderLightingModel_Standard** | Value: **0** |
-| **ShaderLightingModel_Metallic** | Value: **1** |
-| **ShaderLightingModel_Skin** | Value: **2** |
-| **ShaderLightingModel_DynamicEnvmap** | Value: **3** |
-| **ShaderLightingModel_Translucent** | Value: **4** |
+| **ShaderLightingModel\_Standard** | Value: **0** |
+| **ShaderLightingModel\_Metallic** | Value: **1** |
+| **ShaderLightingModel\_Skin** | Value: **2** |
+| **ShaderLightingModel\_DynamicEnvmap** | Value: **3** |
+| **ShaderLightingModel\_Translucent** | Value: **4** |
 

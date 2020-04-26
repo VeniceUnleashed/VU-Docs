@@ -3,9 +3,10 @@ title: FadeCurveType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **FadeCurveType_LinearAmplitude** | Value: **0** |
-| **FadeCurveType_SineAmplitude** | Value: **1** |
-| **FadeCurveType_LinearDecibel** | Value: **2** |
+| **FadeCurveType\_LinearAmplitude** | Value: **0** |
+| **FadeCurveType\_SineAmplitude** | Value: **1** |
+| **FadeCurveType\_LinearDecibel** | Value: **2** |
 

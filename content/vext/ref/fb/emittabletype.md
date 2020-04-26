@@ -3,6 +3,7 @@ title: EmittableType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **Point** | Value: **0** |

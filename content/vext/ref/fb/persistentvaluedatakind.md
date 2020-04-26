@@ -3,11 +3,12 @@ title: PersistentValueDataKind
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **PersistentValueDataKind_Raw** | Value: **0** |
-| **PersistentValueDataKind_Seconds** | Value: **1** |
-| **PersistentValueDataKind_Minutes** | Value: **2** |
-| **PersistentValueDataKind_Hours** | Value: **3** |
-| **PersistentValueDataKind_Percent** | Value: **4** |
+| **PersistentValueDataKind\_Raw** | Value: **0** |
+| **PersistentValueDataKind\_Seconds** | Value: **1** |
+| **PersistentValueDataKind\_Minutes** | Value: **2** |
+| **PersistentValueDataKind\_Hours** | Value: **3** |
+| **PersistentValueDataKind\_Percent** | Value: **4** |
 

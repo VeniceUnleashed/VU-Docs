@@ -3,10 +3,11 @@ title: LogicalExpressionOperator
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **LogicalExpressionOperator_And** | Value: **0** |
-| **LogicalExpressionOperator_Or** | Value: **1** |
-| **LogicalExpressionOperator_Nand** | Value: **2** |
-| **LogicalExpressionOperator_Nor** | Value: **3** |
+| **LogicalExpressionOperator\_And** | Value: **0** |
+| **LogicalExpressionOperator\_Or** | Value: **1** |
+| **LogicalExpressionOperator\_Nand** | Value: **2** |
+| **LogicalExpressionOperator\_Nor** | Value: **3** |
 

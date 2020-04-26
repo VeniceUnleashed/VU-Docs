@@ -3,6 +3,7 @@ title: ProximityObjectType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **PotProximityDisabled** | Value: **0** |

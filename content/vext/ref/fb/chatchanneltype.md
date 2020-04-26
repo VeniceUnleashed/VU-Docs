@@ -3,6 +3,7 @@ title: ChatChannelType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **CctSayAll** | Value: **0** |

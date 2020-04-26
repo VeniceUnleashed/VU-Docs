@@ -3,6 +3,7 @@ title: DebugMenuItemType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **DmitItem** | Value: **0** |

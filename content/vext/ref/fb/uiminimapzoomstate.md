@@ -3,14 +3,15 @@ title: UIMinimapZoomState
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **UIMinimapZoomState_Default** | Value: **0** |
-| **UIMinimapZoomState_Overview** | Value: **1** |
-| **UIMinimapZoomState_CombatArea** | Value: **2** |
-| **UIMinimapZoomState_Mission** | Value: **3** |
-| **UIMinimapZoomState_Artillery** | Value: **4** |
-| **UIMinimapZoomState_Spawn** | Value: **5** |
-| **UIMinimapZoomState_ManDown** | Value: **6** |
-| **UIMinimapZoomState_Count** | Value: **7** |
+| **UIMinimapZoomState\_Default** | Value: **0** |
+| **UIMinimapZoomState\_Overview** | Value: **1** |
+| **UIMinimapZoomState\_CombatArea** | Value: **2** |
+| **UIMinimapZoomState\_Mission** | Value: **3** |
+| **UIMinimapZoomState\_Artillery** | Value: **4** |
+| **UIMinimapZoomState\_Spawn** | Value: **5** |
+| **UIMinimapZoomState\_ManDown** | Value: **6** |
+| **UIMinimapZoomState\_Count** | Value: **7** |
 

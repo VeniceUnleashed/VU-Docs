@@ -3,6 +3,7 @@ title: QuickThrowTypeEnum
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **QttHand** | Value: **0** |

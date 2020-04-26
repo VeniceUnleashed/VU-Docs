@@ -3,8 +3,9 @@ title: ShaderPositionSpace
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **ShaderPositionSpace_Object** | Value: **0** |
-| **ShaderPositionSpace_World** | Value: **1** |
+| **ShaderPositionSpace\_Object** | Value: **0** |
+| **ShaderPositionSpace\_World** | Value: **1** |
 

@@ -3,8 +3,9 @@ title: EnlightenColorMode
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **EnlightenColorMode_Multiply** | Value: **0** |
-| **EnlightenColorMode_Override** | Value: **1** |
+| **EnlightenColorMode\_Multiply** | Value: **0** |
+| **EnlightenColorMode\_Override** | Value: **1** |
 

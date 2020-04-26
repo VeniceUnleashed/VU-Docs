@@ -3,6 +3,7 @@ title: SoundWaveVariationSelection
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **SwvsSequential** | Value: **0** |

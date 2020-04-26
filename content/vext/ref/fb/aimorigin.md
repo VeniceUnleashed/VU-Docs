@@ -3,6 +3,7 @@ title: AimOrigin
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **AoDefault** | Value: **0** |

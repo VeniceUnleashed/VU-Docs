@@ -3,6 +3,7 @@ title: MapMarkerType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **MMTMissionObjective** | Value: **0** |

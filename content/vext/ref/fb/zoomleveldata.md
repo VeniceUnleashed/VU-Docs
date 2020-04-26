@@ -2,18 +2,20 @@
 title: ZoomLevelData
 ---
 
-Inherits from 
-[DataContainer](/vext/ref/shared/class/datacontainer)
+Inherits from [DataContainer](/vext/ref/shared/type/datacontainer)
 
 ## Summary
+
 ### Constructors
-| |
-| ----------- |
+
+|  |
+| --- |
 | **[ZoomLevelData](#constructor-0)**() |
-| **[ZoomLevelData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
-| **[ZoomLevelData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
+| **[ZoomLevelData](#constructor-1)**(guid: [Guid](/vext/ref/shared/type/guid)) |
+| **[ZoomLevelData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/type/datacontainer)) |
 
 ### Properties
+
 | Name | Type |
 | ---- | ---- |
 | {{< prop "fieldOfView" >}} | float |
@@ -41,109 +43,142 @@ Inherits from
 | {{< prop "allowFieldOfViewScaling" >}} | bool |
 
 ### Static members
+
 | Name | Type |
 | ---- | ---- |
-| {{< static "ZoomLevelData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
+| {{< static "ZoomLevelData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/type/typeinformation) |
 
 ## Constructors
+
 ### ZoomLevelData {#constructor-0}
+
 > **ZoomLevelData**()
 
 Creates a new [ZoomLevelData](/vext/ref/fb/zoomleveldata) frostbite instance.
 
 ### ZoomLevelData {#constructor-1}
-> **ZoomLevelData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-Creates a new [ZoomLevelData](/vext/ref/fb/zoomleveldata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
+> **ZoomLevelData**(guid: [Guid](/vext/ref/shared/type/guid))
+
+Creates a new [ZoomLevelData](/vext/ref/fb/zoomleveldata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/type/guid).
 
 #### Parameters
+
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
+| **guid** | [Guid](/vext/ref/shared/type/guid) | The [Guid](/vext/ref/shared/type/guid) to assign to the newly created instance. |
 
 ### ZoomLevelData {#constructor-2}
-> **ZoomLevelData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
 
-Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ZoomLevelData](/vext/ref/fb/zoomleveldata). Will throw an error when trying to cast from an invalid type.
+> **ZoomLevelData**(other: [DataContainer](/vext/ref/shared/type/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/type/datacontainer) to [ZoomLevelData](/vext/ref/fb/zoomleveldata). Will throw an error when trying to cast from an unsupported type.
 
 #### Parameters
+
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ZoomLevelData](/vext/ref/fb/zoomleveldata). |
+| **other** | [DataContainer](/vext/ref/shared/type/datacontainer) | The instance to cast to [ZoomLevelData](/vext/ref/fb/zoomleveldata). |
 
 ## Properties
+
 ### {{% prop-heading "fieldOfView" %}}
+
 > **float**
 
 ### {{% prop-heading "dispersionMultiplier" %}}
+
 > **float**
 
 ### {{% prop-heading "lookSpeedMultiplier" %}}
+
 > **float**
 
 ### {{% prop-heading "sprintLookSpeedMultiplier" %}}
+
 > **float**
 
 ### {{% prop-heading "moveSpeedMultiplier" %}}
+
 > **float**
 
 ### {{% prop-heading "swayPitchMultiplier" %}}
+
 > **float**
 
 ### {{% prop-heading "swayYawMultiplier" %}}
+
 > **float**
 
 ### {{% prop-heading "supportedSwayPitchMultiplier" %}}
+
 > **float**
 
 ### {{% prop-heading "supportedSwayYawMultiplier" %}}
+
 > **float**
 
 ### {{% prop-heading "timePitchMultiplier" %}}
+
 > **float**
 
 ### {{% prop-heading "timeYawMultiplier" %}}
+
 > **float**
 
 ### {{% prop-heading "recoilMultiplier" %}}
+
 > **float**
 
 ### {{% prop-heading "fadeToBlackDuration" %}}
+
 > **float**
 
 ### {{% prop-heading "recoilFovMultiplier" %}}
+
 > **float**
 
 ### {{% prop-heading "cameraImpulseMultiplier" %}}
+
 > **float**
 
 ### {{% prop-heading "onActivateEventType" %}}
+
 > **[ZoomLevelActivateEventType](/vext/ref/fb/zoomlevelactivateeventtype)**
 
 ### {{% prop-heading "startFadeToBlackAtTime" %}}
+
 > **float**
 
 ### {{% prop-heading "fadeFromBlackDuration" %}}
+
 > **float**
 
 ### {{% prop-heading "startFadeFromBlackAtTime" %}}
+
 > **float**
 
 ### {{% prop-heading "screenExposureAreaScale" %}}
+
 > **float**
 
 ### {{% prop-heading "fadeToBlackInZoomTransition" %}}
+
 > **bool**
 
 ### {{% prop-heading "useFovSpecialisation" %}}
+
 > **bool**
 
 ### {{% prop-heading "allowFieldOfViewScaling" %}}
+
 > **bool**
 
 ## Static members
+
 ### {{% static-heading "typeInfo" %}}
-> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+> **[TypeInformation](/vext/ref/shared/type/typeinformation)**
 
 The type information for the [ZoomLevelData](/vext/ref/fb/zoomleveldata) type.
 

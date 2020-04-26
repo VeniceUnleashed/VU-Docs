@@ -3,13 +3,14 @@ title: PrimitiveType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **PrimitiveType_PointList** | Value: **0** |
-| **PrimitiveType_LineList** | Value: **1** |
-| **PrimitiveType_LineStrip** | Value: **2** |
-| **PrimitiveType_TriangleList** | Value: **3** |
-| **PrimitiveType_TriangleStrip** | Value: **5** |
-| **PrimitiveType_QuadList** | Value: **7** |
-| **PrimitiveType_XenonRectList** | Value: **8** |
+| **PrimitiveType\_PointList** | Value: **0** |
+| **PrimitiveType\_LineList** | Value: **1** |
+| **PrimitiveType\_LineStrip** | Value: **2** |
+| **PrimitiveType\_TriangleList** | Value: **3** |
+| **PrimitiveType\_TriangleStrip** | Value: **5** |
+| **PrimitiveType\_QuadList** | Value: **7** |
+| **PrimitiveType\_XenonRectList** | Value: **8** |
 

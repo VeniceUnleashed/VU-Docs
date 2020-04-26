@@ -3,6 +3,7 @@ title: FireLogicType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **fltSingleFire** | Value: **0** |

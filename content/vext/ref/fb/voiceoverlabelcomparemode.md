@@ -3,9 +3,10 @@ title: VoiceOverLabelCompareMode
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **VoiceOverLabelCompareMode_Any** | Value: **0** |
-| **VoiceOverLabelCompareMode_All** | Value: **1** |
-| **VoiceOverLabelCompareMode_One** | Value: **2** |
+| **VoiceOverLabelCompareMode\_Any** | Value: **0** |
+| **VoiceOverLabelCompareMode\_All** | Value: **1** |
+| **VoiceOverLabelCompareMode\_One** | Value: **2** |
 

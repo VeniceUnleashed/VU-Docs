@@ -3,8 +3,9 @@ title: SampleCenter
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **SampleCenter_Center** | Value: **0** |
-| **SampleCenter_TopLeft** | Value: **1** |
+| **SampleCenter\_Center** | Value: **0** |
+| **SampleCenter\_TopLeft** | Value: **1** |
 

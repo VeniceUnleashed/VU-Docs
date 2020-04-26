@@ -3,10 +3,11 @@ title: MipmapFilterMode
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **MipmapFilterMode_Box** | Value: **0** |
-| **MipmapFilterMode_Renormalize** | Value: **1** |
-| **MipmapFilterMode_Poisson13** | Value: **2** |
-| **MipmapFilterMode_Poisson13Clamped** | Value: **3** |
+| **MipmapFilterMode\_Box** | Value: **0** |
+| **MipmapFilterMode\_Renormalize** | Value: **1** |
+| **MipmapFilterMode\_Poisson13** | Value: **2** |
+| **MipmapFilterMode\_Poisson13Clamped** | Value: **3** |
 

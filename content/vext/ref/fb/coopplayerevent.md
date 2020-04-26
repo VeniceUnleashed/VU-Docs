@@ -3,11 +3,12 @@ title: CoopPlayerEvent
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **CoopPlayerEvent_Connecting** | Value: **0** |
-| **CoopPlayerEvent_Connected** | Value: **1** |
-| **CoopPlayerEvent_Disconnected** | Value: **2** |
-| **CoopPlayerEvent_Stats** | Value: **3** |
-| **CoopPlayerEvent_StatsFailed** | Value: **4** |
+| **CoopPlayerEvent\_Connecting** | Value: **0** |
+| **CoopPlayerEvent\_Connected** | Value: **1** |
+| **CoopPlayerEvent\_Disconnected** | Value: **2** |
+| **CoopPlayerEvent\_Stats** | Value: **3** |
+| **CoopPlayerEvent\_StatsFailed** | Value: **4** |
 

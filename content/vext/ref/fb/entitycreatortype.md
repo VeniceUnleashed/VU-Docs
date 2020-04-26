@@ -3,11 +3,12 @@ title: EntityCreatorType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **EntityCreatorType_Unknown** | Value: **0** |
-| **EntityCreatorType_Level** | Value: **1** |
-| **EntityCreatorType_Spawner** | Value: **2** |
-| **EntityCreatorType_Owner** | Value: **3** |
-| **EntityCreatorType_Ghost** | Value: **4** |
+| **EntityCreatorType\_Unknown** | Value: **0** |
+| **EntityCreatorType\_Level** | Value: **1** |
+| **EntityCreatorType\_Spawner** | Value: **2** |
+| **EntityCreatorType\_Owner** | Value: **3** |
+| **EntityCreatorType\_Ghost** | Value: **4** |
 

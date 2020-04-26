@@ -3,9 +3,10 @@ title: AIAltFireFromAntState
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **AltFireFromAntState_NoForcedFire** | Value: **0** |
-| **AltFireFromAntState_Prepare** | Value: **1** |
-| **AltFireFromAntState_ForceFire** | Value: **2** |
+| **AltFireFromAntState\_NoForcedFire** | Value: **0** |
+| **AltFireFromAntState\_Prepare** | Value: **1** |
+| **AltFireFromAntState\_ForceFire** | Value: **2** |
 

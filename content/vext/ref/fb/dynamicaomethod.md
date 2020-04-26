@@ -3,8 +3,9 @@ title: DynamicAOMethod
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **DynamicAOMethod_SSAO** | Value: **0** |
-| **DynamicAOMethod_HBAO** | Value: **1** |
+| **DynamicAOMethod\_SSAO** | Value: **0** |
+| **DynamicAOMethod\_HBAO** | Value: **1** |
 

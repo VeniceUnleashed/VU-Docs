@@ -3,6 +3,7 @@ title: AnimatedFireEnum
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **AnimatedFireAutomatic** | Value: **0** |

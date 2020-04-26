@@ -3,6 +3,7 @@ title: SyncAnimationsState
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **Idle** | Value: **0** |

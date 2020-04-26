@@ -3,6 +3,7 @@ title: RigidBodyType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **RBTypeCollision** | Value: **0** |

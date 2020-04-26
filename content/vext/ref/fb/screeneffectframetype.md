@@ -3,9 +3,10 @@ title: ScreenEffectFrameType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **ScreenEffectFrameType_FullFrame** | Value: **0** |
-| **ScreenEffectFrameType_SingleFramePart** | Value: **1** |
-| **ScreenEffectFrameType_SingleSquareFramePart** | Value: **2** |
+| **ScreenEffectFrameType\_FullFrame** | Value: **0** |
+| **ScreenEffectFrameType\_SingleFramePart** | Value: **1** |
+| **ScreenEffectFrameType\_SingleSquareFramePart** | Value: **2** |
 

@@ -3,6 +3,7 @@ title: WarningPlayerType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **WPTInflictor** | Value: **0** |

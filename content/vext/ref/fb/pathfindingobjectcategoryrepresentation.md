@@ -2,56 +2,83 @@
 title: PathfindingObjectCategoryRepresentation
 ---
 
-
 ## Summary
+
 ### Constructors
-| |
-| ----------- |
+
+|  |
+| --- |
 | **[PathfindingObjectCategoryRepresentation](#constructor-0)**() |
+| **[PathfindingObjectCategoryRepresentation](#constructor-1)**(guid: [Guid](/vext/ref/shared/type/guid)) |
 
 ### Properties
+
 | Name | Type |
 | ---- | ---- |
 | {{< prop "category" >}} | [PathfindingObjectCategoryAsset](/vext/ref/fb/pathfindingobjectcategoryasset) \| nil |
 | {{< prop "representation" >}} | [PathfindingRepresentation](/vext/ref/fb/pathfindingrepresentation) |
 
 ### Methods
+
 | Method | Returns |
-| ------ | ---- |
+| ------ | ------- |
 | **[Clone](#clone)**() | [PathfindingObjectCategoryRepresentation](/vext/ref/fb/pathfindingobjectcategoryrepresentation) |
 
 ### Static members
+
 | Name | Type |
 | ---- | ---- |
-| {{< static "PathfindingObjectCategoryRepresentation" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
+| {{< static "PathfindingObjectCategoryRepresentation" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/type/typeinformation) |
 
 ## Constructors
+
 ### PathfindingObjectCategoryRepresentation {#constructor-0}
+
 > **PathfindingObjectCategoryRepresentation**()
 
-Creates a new [PathfindingObjectCategoryRepresentation](/vext/ref/fb/pathfindingobjectcategoryrepresentation) frostbite structure.
+Creates a new [PathfindingObjectCategoryRepresentation](/vext/ref/fb/pathfindingobjectcategoryrepresentation) frostbite instance.
+
+### PathfindingObjectCategoryRepresentation {#constructor-1}
+
+> **PathfindingObjectCategoryRepresentation**(guid: [Guid](/vext/ref/shared/type/guid))
+
+Creates a new [PathfindingObjectCategoryRepresentation](/vext/ref/fb/pathfindingobjectcategoryrepresentation) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/type/guid).
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/type/guid) | The [Guid](/vext/ref/shared/type/guid) to assign to the newly created instance. |
 
 ## Properties
+
 ### {{% prop-heading "category" %}}
-> **[PathfindingObjectCategoryAsset](/vext/ref/fb/pathfindingobjectcategoryasset)** | **nil**
+
+> **[PathfindingObjectCategoryAsset](/vext/ref/fb/pathfindingobjectcategoryasset)** \| **nil**
 
 ### {{% prop-heading "representation" %}}
+
 > **[PathfindingRepresentation](/vext/ref/fb/pathfindingrepresentation)**
 
 ## Methods
-### Clone
+
+### Clone {#clone}
+
 > **Clone**(): [PathfindingObjectCategoryRepresentation](/vext/ref/fb/pathfindingobjectcategoryrepresentation)
 
-Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
+Creates a shallow-copy clone of this structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of this structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/type/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/type/datacontainer)) will be referencing the same instance.
 
 #### Returns
+
 | Type | Description |
 | ---- | ----------- |
 | **[PathfindingObjectCategoryRepresentation](/vext/ref/fb/pathfindingobjectcategoryrepresentation)** | The newly created structure. |
 
 ## Static members
+
 ### {{% static-heading "typeInfo" %}}
-> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+> **[TypeInformation](/vext/ref/shared/type/typeinformation)**
 
 The type information for the [PathfindingObjectCategoryRepresentation](/vext/ref/fb/pathfindingobjectcategoryrepresentation) type.
 

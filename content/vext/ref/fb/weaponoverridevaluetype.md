@@ -3,11 +3,12 @@ title: WeaponOverrideValueType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **OverrideValue_BulletEntity_DistributeDamageOverTime** | Value: **0** |
-| **OverrideValue_BulletEntity_StartDamage** | Value: **1** |
-| **OverrideValue_BulletEntity_EndDamage** | Value: **2** |
-| **OverrideValue_BulletEntity_DamageFalloffStartDistance** | Value: **3** |
-| **OverrideValue_BulletEntity_DamageFalloffEndDistance** | Value: **4** |
+| **OverrideValue\_BulletEntity\_DistributeDamageOverTime** | Value: **0** |
+| **OverrideValue\_BulletEntity\_StartDamage** | Value: **1** |
+| **OverrideValue\_BulletEntity\_EndDamage** | Value: **2** |
+| **OverrideValue\_BulletEntity\_DamageFalloffStartDistance** | Value: **3** |
+| **OverrideValue\_BulletEntity\_DamageFalloffEndDistance** | Value: **4** |
 

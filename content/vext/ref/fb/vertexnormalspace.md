@@ -3,6 +3,7 @@ title: VertexNormalSpace
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **VnsObject** | Value: **0** |

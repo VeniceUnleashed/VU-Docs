@@ -3,8 +3,9 @@ title: ShaderGBufferLayout
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **ShaderGBufferLayout_Default** | Value: **0** |
-| **ShaderGBufferLayout_Test** | Value: **1** |
+| **ShaderGBufferLayout\_Default** | Value: **0** |
+| **ShaderGBufferLayout\_Test** | Value: **1** |
 

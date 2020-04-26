@@ -3,6 +3,7 @@ title: DisableTeamType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **DttDisable** | Value: **0** |

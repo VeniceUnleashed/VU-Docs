@@ -3,6 +3,7 @@ title: WavePriority
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **WpNone** | Value: **0** |

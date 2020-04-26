@@ -3,9 +3,10 @@ title: RotationChannel
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **RotationChannel_Pitch** | Value: **0** |
-| **RotationChannel_Yaw** | Value: **1** |
-| **RotationChannel_Roll** | Value: **2** |
+| **RotationChannel\_Pitch** | Value: **0** |
+| **RotationChannel\_Yaw** | Value: **1** |
+| **RotationChannel\_Roll** | Value: **2** |
 

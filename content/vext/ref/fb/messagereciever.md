@@ -3,6 +3,7 @@ title: MessageReciever
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **MrAll** | Value: **0** |

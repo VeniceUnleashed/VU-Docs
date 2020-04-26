@@ -3,6 +3,7 @@ title: TextureAddress
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **TaWrap** | Value: **0** |

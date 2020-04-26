@@ -2,18 +2,20 @@
 title: WingPhysicsData
 ---
 
-Inherits from 
-[DataContainer](/vext/ref/shared/class/datacontainer)
+Inherits from [DataContainer](/vext/ref/shared/type/datacontainer)
 
 ## Summary
+
 ### Constructors
-| |
-| ----------- |
+
+|  |
+| --- |
 | **[WingPhysicsData](#constructor-0)**() |
-| **[WingPhysicsData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
-| **[WingPhysicsData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
+| **[WingPhysicsData](#constructor-1)**(guid: [Guid](/vext/ref/shared/type/guid)) |
+| **[WingPhysicsData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/type/datacontainer)) |
 
 ### Properties
+
 | Name | Type |
 | ---- | ---- |
 | {{< prop "lift" >}} | float |
@@ -34,88 +36,114 @@ Inherits from
 | {{< prop "landingFlapLogic" >}} | [LandingFlapData](/vext/ref/fb/landingflapdata) \| nil |
 
 ### Static members
+
 | Name | Type |
 | ---- | ---- |
-| {{< static "WingPhysicsData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
+| {{< static "WingPhysicsData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/type/typeinformation) |
 
 ## Constructors
+
 ### WingPhysicsData {#constructor-0}
+
 > **WingPhysicsData**()
 
 Creates a new [WingPhysicsData](/vext/ref/fb/wingphysicsdata) frostbite instance.
 
 ### WingPhysicsData {#constructor-1}
-> **WingPhysicsData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-Creates a new [WingPhysicsData](/vext/ref/fb/wingphysicsdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
+> **WingPhysicsData**(guid: [Guid](/vext/ref/shared/type/guid))
+
+Creates a new [WingPhysicsData](/vext/ref/fb/wingphysicsdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/type/guid).
 
 #### Parameters
+
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
+| **guid** | [Guid](/vext/ref/shared/type/guid) | The [Guid](/vext/ref/shared/type/guid) to assign to the newly created instance. |
 
 ### WingPhysicsData {#constructor-2}
-> **WingPhysicsData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
 
-Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WingPhysicsData](/vext/ref/fb/wingphysicsdata). Will throw an error when trying to cast from an invalid type.
+> **WingPhysicsData**(other: [DataContainer](/vext/ref/shared/type/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/type/datacontainer) to [WingPhysicsData](/vext/ref/fb/wingphysicsdata). Will throw an error when trying to cast from an unsupported type.
 
 #### Parameters
+
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [WingPhysicsData](/vext/ref/fb/wingphysicsdata). |
+| **other** | [DataContainer](/vext/ref/shared/type/datacontainer) | The instance to cast to [WingPhysicsData](/vext/ref/fb/wingphysicsdata). |
 
 ## Properties
+
 ### {{% prop-heading "lift" %}}
+
 > **float**
 
 ### {{% prop-heading "flapLift" %}}
+
 > **float**
 
 ### {{% prop-heading "liftCoefficient" %}}
-> **[Curve2D](/vext/ref/fb/curve2d)** | **nil**
+
+> **[Curve2D](/vext/ref/fb/curve2d)** \| **nil**
 
 ### {{% prop-heading "drag" %}}
+
 > **float**
 
 ### {{% prop-heading "flapDrag" %}}
+
 > **float**
 
 ### {{% prop-heading "dragCoefficient" %}}
-> **[Curve2D](/vext/ref/fb/curve2d)** | **nil**
+
+> **[Curve2D](/vext/ref/fb/curve2d)** \| **nil**
 
 ### {{% prop-heading "angularVelocityLiftModifier" %}}
+
 > **float**
 
 ### {{% prop-heading "dragRotationModifier" %}}
+
 > **float**
 
 ### {{% prop-heading "baseAngleOfAttack" %}}
+
 > **float**
 
 ### {{% prop-heading "inputForFlap" %}}
+
 > **int**
 
 ### {{% prop-heading "flapTurnSpeed" %}}
+
 > **float**
 
 ### {{% prop-heading "visualFlapTurnSpeed" %}}
+
 > **float**
 
 ### {{% prop-heading "visualFlapAngleLimit" %}}
+
 > **float**
 
 ### {{% prop-heading "maxFlapAngleScaleFactor" %}}
-> **[Curve2D](/vext/ref/fb/curve2d)** | **nil**
+
+> **[Curve2D](/vext/ref/fb/curve2d)** \| **nil**
 
 ### {{% prop-heading "landingFlapLift" %}}
+
 > **float**
 
 ### {{% prop-heading "landingFlapLogic" %}}
-> **[LandingFlapData](/vext/ref/fb/landingflapdata)** | **nil**
+
+> **[LandingFlapData](/vext/ref/fb/landingflapdata)** \| **nil**
 
 ## Static members
+
 ### {{% static-heading "typeInfo" %}}
-> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+> **[TypeInformation](/vext/ref/shared/type/typeinformation)**
 
 The type information for the [WingPhysicsData](/vext/ref/fb/wingphysicsdata) type.
 

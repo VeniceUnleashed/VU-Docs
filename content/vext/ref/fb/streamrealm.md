@@ -3,9 +3,10 @@ title: StreamRealm
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **StreamRealm_None** | Value: **0** |
-| **StreamRealm_Client** | Value: **1** |
-| **StreamRealm_Both** | Value: **2** |
+| **StreamRealm\_None** | Value: **0** |
+| **StreamRealm\_Client** | Value: **1** |
+| **StreamRealm\_Both** | Value: **2** |
 

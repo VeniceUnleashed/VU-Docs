@@ -2,14 +2,17 @@
 title: VisionBoxSettings
 ---
 
-
 ## Summary
+
 ### Constructors
-| |
-| ----------- |
+
+|  |
+| --- |
 | **[VisionBoxSettings](#constructor-0)**() |
+| **[VisionBoxSettings](#constructor-1)**(guid: [Guid](/vext/ref/shared/type/guid)) |
 
 ### Properties
+
 | Name | Type |
 | ---- | ---- |
 | {{< prop "decreaseXz" >}} | float |
@@ -18,48 +21,74 @@ title: VisionBoxSettings
 | {{< prop "raiseBottomHuman" >}} | float |
 
 ### Methods
+
 | Method | Returns |
-| ------ | ---- |
+| ------ | ------- |
 | **[Clone](#clone)**() | [VisionBoxSettings](/vext/ref/fb/visionboxsettings) |
 
 ### Static members
+
 | Name | Type |
 | ---- | ---- |
-| {{< static "VisionBoxSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
+| {{< static "VisionBoxSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/type/typeinformation) |
 
 ## Constructors
+
 ### VisionBoxSettings {#constructor-0}
+
 > **VisionBoxSettings**()
 
-Creates a new [VisionBoxSettings](/vext/ref/fb/visionboxsettings) frostbite structure.
+Creates a new [VisionBoxSettings](/vext/ref/fb/visionboxsettings) frostbite instance.
+
+### VisionBoxSettings {#constructor-1}
+
+> **VisionBoxSettings**(guid: [Guid](/vext/ref/shared/type/guid))
+
+Creates a new [VisionBoxSettings](/vext/ref/fb/visionboxsettings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/type/guid).
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/type/guid) | The [Guid](/vext/ref/shared/type/guid) to assign to the newly created instance. |
 
 ## Properties
+
 ### {{% prop-heading "decreaseXz" %}}
+
 > **float**
 
 ### {{% prop-heading "lowerTop" %}}
+
 > **float**
 
 ### {{% prop-heading "raiseBottom" %}}
+
 > **float**
 
 ### {{% prop-heading "raiseBottomHuman" %}}
+
 > **float**
 
 ## Methods
-### Clone
+
+### Clone {#clone}
+
 > **Clone**(): [VisionBoxSettings](/vext/ref/fb/visionboxsettings)
 
-Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
+Creates a shallow-copy clone of this structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of this structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/type/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/type/datacontainer)) will be referencing the same instance.
 
 #### Returns
+
 | Type | Description |
 | ---- | ----------- |
 | **[VisionBoxSettings](/vext/ref/fb/visionboxsettings)** | The newly created structure. |
 
 ## Static members
+
 ### {{% static-heading "typeInfo" %}}
-> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+> **[TypeInformation](/vext/ref/shared/type/typeinformation)**
 
 The type information for the [VisionBoxSettings](/vext/ref/fb/visionboxsettings) type.
 

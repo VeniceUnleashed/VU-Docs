@@ -3,15 +3,16 @@ title: ConsumableGroup
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **ConsumableGroup_0** | Value: **0** |
-| **ConsumableGroup_1** | Value: **1** |
-| **ConsumableGroup_2** | Value: **2** |
-| **ConsumableGroup_3** | Value: **3** |
-| **ConsumableGroup_4** | Value: **4** |
-| **ConsumableGroup_5** | Value: **5** |
-| **ConsumableGroup_6** | Value: **6** |
-| **ConsumableGroup_7** | Value: **7** |
-| **ConsumableGroup_Count** | Value: **8** |
+| **ConsumableGroup\_0** | Value: **0** |
+| **ConsumableGroup\_1** | Value: **1** |
+| **ConsumableGroup\_2** | Value: **2** |
+| **ConsumableGroup\_3** | Value: **3** |
+| **ConsumableGroup\_4** | Value: **4** |
+| **ConsumableGroup\_5** | Value: **5** |
+| **ConsumableGroup\_6** | Value: **6** |
+| **ConsumableGroup\_7** | Value: **7** |
+| **ConsumableGroup\_Count** | Value: **8** |
 

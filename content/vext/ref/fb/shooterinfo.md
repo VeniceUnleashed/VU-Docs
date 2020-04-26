@@ -3,6 +3,7 @@ title: ShooterInfo
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **ShooterInfoInVehicle** | Value: **1** |

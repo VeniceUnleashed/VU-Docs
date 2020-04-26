@@ -3,6 +3,7 @@ title: CapturableType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **CTDefault** | Value: **0** |

@@ -3,6 +3,7 @@ title: ChangeGameSettingType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **CGSNone** | Value: **0** |

@@ -3,8 +3,9 @@ title: UISystemType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **UISystem_None** | Value: **0** |
-| **UISystem_Standard** | Value: **1** |
+| **UISystem\_None** | Value: **0** |
+| **UISystem\_Standard** | Value: **1** |
 

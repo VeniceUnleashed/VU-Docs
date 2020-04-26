@@ -3,6 +3,7 @@ title: BlurFilter
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **BfNone** | Value: **0** |

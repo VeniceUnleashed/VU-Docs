@@ -3,7 +3,8 @@ title: WeaponUnlocks
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **WeaponUnlocks_MaxAmount** | Value: **7** |
+| **WeaponUnlocks\_MaxAmount** | Value: **7** |
 

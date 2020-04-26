@@ -3,6 +3,7 @@ title: ShaderBranchMethod
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **SbmStatic** | Value: **0** |

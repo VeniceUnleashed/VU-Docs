@@ -3,6 +3,7 @@ title: NotifyType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **NotifyPersonal** | Value: **0** |

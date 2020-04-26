@@ -3,8 +3,9 @@ title: MixerValueUIScale
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **MixerValueUIScale_Linear** | Value: **0** |
-| **MixerValueUIScale_Logarithmic** | Value: **1** |
+| **MixerValueUIScale\_Linear** | Value: **0** |
+| **MixerValueUIScale\_Logarithmic** | Value: **1** |
 

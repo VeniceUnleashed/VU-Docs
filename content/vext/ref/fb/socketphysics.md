@@ -3,9 +3,10 @@ title: SocketPhysics
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **SocketPhysics_Default** | Value: **0** |
-| **SocketPhysics_FakePhysics** | Value: **1** |
-| **SocketPhysics_Droppable** | Value: **2** |
+| **SocketPhysics\_Default** | Value: **0** |
+| **SocketPhysics\_FakePhysics** | Value: **1** |
+| **SocketPhysics\_Droppable** | Value: **2** |
 

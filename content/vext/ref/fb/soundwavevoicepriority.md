@@ -3,11 +3,12 @@ title: SoundWaveVoicePriority
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **SoundWaveVoicePriority_Unspecified** | Value: **0** |
-| **SoundWaveVoicePriority_Low** | Value: **1** |
-| **SoundWaveVoicePriority_Normal** | Value: **2** |
-| **SoundWaveVoicePriority_High** | Value: **3** |
-| **SoundWaveVoicePriority_Permanent** | Value: **4** |
+| **SoundWaveVoicePriority\_Unspecified** | Value: **0** |
+| **SoundWaveVoicePriority\_Low** | Value: **1** |
+| **SoundWaveVoicePriority\_Normal** | Value: **2** |
+| **SoundWaveVoicePriority\_High** | Value: **3** |
+| **SoundWaveVoicePriority\_Permanent** | Value: **4** |
 

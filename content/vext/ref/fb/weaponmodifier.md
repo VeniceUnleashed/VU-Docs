@@ -2,14 +2,17 @@
 title: WeaponModifier
 ---
 
-
 ## Summary
+
 ### Constructors
-| |
-| ----------- |
+
+|  |
+| --- |
 | **[WeaponModifier](#constructor-0)**() |
+| **[WeaponModifier](#constructor-1)**(guid: [Guid](/vext/ref/shared/type/guid)) |
 
 ### Properties
+
 | Name | Type |
 | ---- | ---- |
 | {{< prop "dummyToMakeFrostEDcompile" >}} | int |
@@ -24,78 +27,113 @@ title: WeaponModifier
 | {{< prop "weaponAnimTypeModifier" >}} | [WeaponAnimTypeModifier](/vext/ref/fb/weaponanimtypemodifier) \| nil |
 | {{< prop "weaponMagazineModifier" >}} | [WeaponMagazineModifier](/vext/ref/fb/weaponmagazinemodifier) \| nil |
 | {{< prop "weaponZoomModifier" >}} | [WeaponZoomModifier](/vext/ref/fb/weaponzoommodifier) \| nil |
-| {{< prop "unlocks" true >}} | [UnlockAsset](/vext/ref/fb/unlockasset)[] |
+| {{< prop "unlocks" true >}} | [UnlockAssetBase](/vext/ref/fb/unlockassetbase)[] |
 
 ### Methods
+
 | Method | Returns |
-| ------ | ---- |
+| ------ | ------- |
 | **[Clone](#clone)**() | [WeaponModifier](/vext/ref/fb/weaponmodifier) |
 
 ### Static members
+
 | Name | Type |
 | ---- | ---- |
-| {{< static "WeaponModifier" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
+| {{< static "WeaponModifier" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/type/typeinformation) |
 
 ## Constructors
+
 ### WeaponModifier {#constructor-0}
+
 > **WeaponModifier**()
 
-Creates a new [WeaponModifier](/vext/ref/fb/weaponmodifier) frostbite structure.
+Creates a new [WeaponModifier](/vext/ref/fb/weaponmodifier) frostbite instance.
+
+### WeaponModifier {#constructor-1}
+
+> **WeaponModifier**(guid: [Guid](/vext/ref/shared/type/guid))
+
+Creates a new [WeaponModifier](/vext/ref/fb/weaponmodifier) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/type/guid).
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/type/guid) | The [Guid](/vext/ref/shared/type/guid) to assign to the newly created instance. |
 
 ## Properties
+
 ### {{% prop-heading "dummyToMakeFrostEDcompile" %}}
+
 > **int**
 
 ### {{% prop-heading "weaponMiscModifierSettings" %}}
-> **[WeaponMiscModifierSettings](/vext/ref/fb/weaponmiscmodifiersettings)** | **nil**
+
+> **[WeaponMiscModifierSettings](/vext/ref/fb/weaponmiscmodifiersettings)** \| **nil**
 
 ### {{% prop-heading "weaponFiringDataModifier" %}}
-> **[WeaponFiringDataModifier](/vext/ref/fb/weaponfiringdatamodifier)** | **nil**
+
+> **[WeaponFiringDataModifier](/vext/ref/fb/weaponfiringdatamodifier)** \| **nil**
 
 ### {{% prop-heading "weaponFiringEffectsModifier" %}}
-> **[WeaponFiringEffectsModifier](/vext/ref/fb/weaponfiringeffectsmodifier)** | **nil**
+
+> **[WeaponFiringEffectsModifier](/vext/ref/fb/weaponfiringeffectsmodifier)** \| **nil**
 
 ### {{% prop-heading "weaponSoundModifier" %}}
-> **[WeaponSoundModifier](/vext/ref/fb/weaponsoundmodifier)** | **nil**
+
+> **[WeaponSoundModifier](/vext/ref/fb/weaponsoundmodifier)** \| **nil**
 
 ### {{% prop-heading "weaponShotModifier" %}}
-> **[WeaponShotModifier](/vext/ref/fb/weaponshotmodifier)** | **nil**
+
+> **[WeaponShotModifier](/vext/ref/fb/weaponshotmodifier)** \| **nil**
 
 ### {{% prop-heading "weaponProjectileModifier" %}}
-> **[WeaponProjectileModifier](/vext/ref/fb/weaponprojectilemodifier)** | **nil**
+
+> **[WeaponProjectileModifier](/vext/ref/fb/weaponprojectilemodifier)** \| **nil**
 
 ### {{% prop-heading "weaponAimingSimulationModifier" %}}
-> **[WeaponAimingSimulationModifier](/vext/ref/fb/weaponaimingsimulationmodifier)** | **nil**
+
+> **[WeaponAimingSimulationModifier](/vext/ref/fb/weaponaimingsimulationmodifier)** \| **nil**
 
 ### {{% prop-heading "weaponAnimationConfigurationModifier" %}}
-> **[WeaponAnimationConfigurationModifier](/vext/ref/fb/weaponanimationconfigurationmodifier)** | **nil**
+
+> **[WeaponAnimationConfigurationModifier](/vext/ref/fb/weaponanimationconfigurationmodifier)** \| **nil**
 
 ### {{% prop-heading "weaponAnimTypeModifier" %}}
-> **[WeaponAnimTypeModifier](/vext/ref/fb/weaponanimtypemodifier)** | **nil**
+
+> **[WeaponAnimTypeModifier](/vext/ref/fb/weaponanimtypemodifier)** \| **nil**
 
 ### {{% prop-heading "weaponMagazineModifier" %}}
-> **[WeaponMagazineModifier](/vext/ref/fb/weaponmagazinemodifier)** | **nil**
+
+> **[WeaponMagazineModifier](/vext/ref/fb/weaponmagazinemodifier)** \| **nil**
 
 ### {{% prop-heading "weaponZoomModifier" %}}
-> **[WeaponZoomModifier](/vext/ref/fb/weaponzoommodifier)** | **nil**
+
+> **[WeaponZoomModifier](/vext/ref/fb/weaponzoommodifier)** \| **nil**
 
 ### {{% prop-heading "unlocks" true %}}
-> **[UnlockAsset](/vext/ref/fb/unlockasset)**[]
+
+> **[UnlockAssetBase](/vext/ref/fb/unlockassetbase)**[]
 
 ## Methods
-### Clone
+
+### Clone {#clone}
+
 > **Clone**(): [WeaponModifier](/vext/ref/fb/weaponmodifier)
 
-Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
+Creates a shallow-copy clone of this structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of this structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/type/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/type/datacontainer)) will be referencing the same instance.
 
 #### Returns
+
 | Type | Description |
 | ---- | ----------- |
 | **[WeaponModifier](/vext/ref/fb/weaponmodifier)** | The newly created structure. |
 
 ## Static members
+
 ### {{% static-heading "typeInfo" %}}
-> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+> **[TypeInformation](/vext/ref/shared/type/typeinformation)**
 
 The type information for the [WeaponModifier](/vext/ref/fb/weaponmodifier) type.
 

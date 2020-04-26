@@ -2,22 +2,24 @@
 title: DifficultyData
 ---
 
-Inherits from 
-[DataContainer](/vext/ref/shared/class/datacontainer)
+Inherits from [DataContainer](/vext/ref/shared/type/datacontainer)
 
 ## Summary
+
 ### Constructors
-| |
-| ----------- |
+
+|  |
+| --- |
 | **[DifficultyData](#constructor-0)**() |
-| **[DifficultyData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
-| **[DifficultyData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
+| **[DifficultyData](#constructor-1)**(guid: [Guid](/vext/ref/shared/type/guid)) |
+| **[DifficultyData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/type/datacontainer)) |
 
 ### Properties
+
 | Name | Type |
 | ---- | ---- |
-| {{< prop "stickyBoxModifier" >}} | [Vec3](/vext/ref/shared/class/vec3) |
-| {{< prop "snapBoxModifier" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "stickyBoxModifier" >}} | [Vec3](/vext/ref/shared/type/vec3) |
+| {{< prop "snapBoxModifier" >}} | [Vec3](/vext/ref/shared/type/vec3) |
 | {{< prop "humanHealthModifier" >}} | float |
 | {{< prop "gameType" >}} | [PersistenceGameType](/vext/ref/fb/persistencegametype) |
 | {{< prop "friendsHealthModifier" >}} | float |
@@ -40,106 +42,138 @@ Inherits from
 | {{< prop "usePitchZoomSnap" >}} | bool |
 
 ### Static members
+
 | Name | Type |
 | ---- | ---- |
-| {{< static "DifficultyData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
+| {{< static "DifficultyData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/type/typeinformation) |
 
 ## Constructors
+
 ### DifficultyData {#constructor-0}
+
 > **DifficultyData**()
 
 Creates a new [DifficultyData](/vext/ref/fb/difficultydata) frostbite instance.
 
 ### DifficultyData {#constructor-1}
-> **DifficultyData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-Creates a new [DifficultyData](/vext/ref/fb/difficultydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
+> **DifficultyData**(guid: [Guid](/vext/ref/shared/type/guid))
+
+Creates a new [DifficultyData](/vext/ref/fb/difficultydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/type/guid).
 
 #### Parameters
+
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
+| **guid** | [Guid](/vext/ref/shared/type/guid) | The [Guid](/vext/ref/shared/type/guid) to assign to the newly created instance. |
 
 ### DifficultyData {#constructor-2}
-> **DifficultyData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
 
-Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DifficultyData](/vext/ref/fb/difficultydata). Will throw an error when trying to cast from an invalid type.
+> **DifficultyData**(other: [DataContainer](/vext/ref/shared/type/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/type/datacontainer) to [DifficultyData](/vext/ref/fb/difficultydata). Will throw an error when trying to cast from an unsupported type.
 
 #### Parameters
+
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DifficultyData](/vext/ref/fb/difficultydata). |
+| **other** | [DataContainer](/vext/ref/shared/type/datacontainer) | The instance to cast to [DifficultyData](/vext/ref/fb/difficultydata). |
 
 ## Properties
+
 ### {{% prop-heading "stickyBoxModifier" %}}
-> **[Vec3](/vext/ref/shared/class/vec3)**
+
+> **[Vec3](/vext/ref/shared/type/vec3)**
 
 ### {{% prop-heading "snapBoxModifier" %}}
-> **[Vec3](/vext/ref/shared/class/vec3)**
+
+> **[Vec3](/vext/ref/shared/type/vec3)**
 
 ### {{% prop-heading "humanHealthModifier" %}}
+
 > **float**
 
 ### {{% prop-heading "gameType" %}}
+
 > **[PersistenceGameType](/vext/ref/fb/persistencegametype)**
 
 ### {{% prop-heading "friendsHealthModifier" %}}
+
 > **float**
 
 ### {{% prop-heading "friendlyDamageModifier" %}}
+
 > **float**
 
 ### {{% prop-heading "vehicleDamageModifier" %}}
+
 > **float**
 
 ### {{% prop-heading "humanInCriticalHealth" %}}
+
 > **float**
 
 ### {{% prop-heading "enemiesHealthModifier" %}}
+
 > **float**
 
 ### {{% prop-heading "humanRegenerationRateModifier" %}}
+
 > **float**
 
 ### {{% prop-heading "humanInCriticalHealthDamageModifier" %}}
+
 > **float**
 
 ### {{% prop-heading "interactiveManDownDamageModifier" %}}
+
 > **float**
 
 ### {{% prop-heading "interactiveManDownTimeMultiplier" %}}
+
 > **float**
 
 ### {{% prop-heading "interactiveManDownReviveTime" %}}
+
 > **float**
 
 ### {{% prop-heading "adrenalineKillLimit" %}}
+
 > **int**
 
 ### {{% prop-heading "criticalHealthJesusModeTimeModifier" %}}
+
 > **float**
 
 ### {{% prop-heading "difficulty" %}}
+
 > **[Difficulty](/vext/ref/fb/difficulty)**
 
 ### {{% prop-heading "criticalFakeImmortalModifier" %}}
+
 > **float**
 
 ### {{% prop-heading "suckZoomModifier" %}}
+
 > **float**
 
 ### {{% prop-heading "aiData" %}}
-> **[GameAIDifficultyData](/vext/ref/fb/gameaidifficultydata)** | **nil**
+
+> **[GameAIDifficultyData](/vext/ref/fb/gameaidifficultydata)** \| **nil**
 
 ### {{% prop-heading "aiBulletDamageHumanCooldown" %}}
+
 > **float**
 
 ### {{% prop-heading "usePitchZoomSnap" %}}
+
 > **bool**
 
 ## Static members
+
 ### {{% static-heading "typeInfo" %}}
-> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+> **[TypeInformation](/vext/ref/shared/type/typeinformation)**
 
 The type information for the [DifficultyData](/vext/ref/fb/difficultydata) type.
 

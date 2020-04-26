@@ -3,6 +3,7 @@ title: RouteType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **RouteStop** | Value: **0** |

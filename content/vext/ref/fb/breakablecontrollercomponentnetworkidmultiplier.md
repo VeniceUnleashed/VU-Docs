@@ -3,9 +3,10 @@ title: BreakableControllerComponentNetworkIdMultiplier
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **BreakableControllerComponentNetworkIdMultiplier_HidePartObjects** | Value: **0** |
-| **BreakableControllerComponentNetworkIdMultiplier_DisablePart** | Value: **1** |
-| **BreakableControllerComponentNetworkIdMultiplier_PartCount** | Value: **2** |
+| **BreakableControllerComponentNetworkIdMultiplier\_HidePartObjects** | Value: **0** |
+| **BreakableControllerComponentNetworkIdMultiplier\_DisablePart** | Value: **1** |
+| **BreakableControllerComponentNetworkIdMultiplier\_PartCount** | Value: **2** |
 

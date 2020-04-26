@@ -3,18 +3,19 @@ title: ServerMapSequencerEventType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **ServerMapSequencerEventType_Add** | Value: **0** |
-| **ServerMapSequencerEventType_Remove** | Value: **1** |
-| **ServerMapSequencerEventType_Clear** | Value: **2** |
-| **ServerMapSequencerEventType_List** | Value: **3** |
-| **ServerMapSequencerEventType_Load** | Value: **4** |
-| **ServerMapSequencerEventType_Save** | Value: **5** |
-| **ServerMapSequencerEventType_SetNextMapIndex** | Value: **6** |
-| **ServerMapSequencerEventType_GetMapIndices** | Value: **7** |
-| **ServerMapSequencerEventType_GetRounds** | Value: **8** |
-| **ServerMapSequencerEventType_RunNextRound** | Value: **9** |
-| **ServerMapSequencerEventType_RestartRound** | Value: **10** |
-| **ServerMapSequencerEventType_AvailableMaps** | Value: **11** |
+| **ServerMapSequencerEventType\_Add** | Value: **0** |
+| **ServerMapSequencerEventType\_Remove** | Value: **1** |
+| **ServerMapSequencerEventType\_Clear** | Value: **2** |
+| **ServerMapSequencerEventType\_List** | Value: **3** |
+| **ServerMapSequencerEventType\_Load** | Value: **4** |
+| **ServerMapSequencerEventType\_Save** | Value: **5** |
+| **ServerMapSequencerEventType\_SetNextMapIndex** | Value: **6** |
+| **ServerMapSequencerEventType\_GetMapIndices** | Value: **7** |
+| **ServerMapSequencerEventType\_GetRounds** | Value: **8** |
+| **ServerMapSequencerEventType\_RunNextRound** | Value: **9** |
+| **ServerMapSequencerEventType\_RestartRound** | Value: **10** |
+| **ServerMapSequencerEventType\_AvailableMaps** | Value: **11** |
 

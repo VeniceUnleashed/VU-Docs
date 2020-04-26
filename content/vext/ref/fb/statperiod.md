@@ -3,12 +3,13 @@ title: StatPeriod
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **StatPeriod_AllTime** | Value: **0** |
-| **StatPeriod_Monthly** | Value: **1** |
-| **StatPeriod_Weekly** | Value: **2** |
-| **StatPeriod_Daily** | Value: **3** |
-| **StatPeriod_Size** | Value: **4** |
-| **StatPeriod_Error** | Value: **5** |
+| **StatPeriod\_AllTime** | Value: **0** |
+| **StatPeriod\_Monthly** | Value: **1** |
+| **StatPeriod\_Weekly** | Value: **2** |
+| **StatPeriod\_Daily** | Value: **3** |
+| **StatPeriod\_Size** | Value: **4** |
+| **StatPeriod\_Error** | Value: **5** |
 

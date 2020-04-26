@@ -3,12 +3,13 @@ title: UILogicOperator
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **UILogicOperator_None** | Value: **0** |
-| **UILogicOperator_Equal** | Value: **1** |
-| **UILogicOperator_GreaterThan** | Value: **2** |
-| **UILogicOperator_GreaterThanOrEqual** | Value: **3** |
-| **UILogicOperator_LessThan** | Value: **4** |
-| **UILogicOperator_LessThanOrEqual** | Value: **5** |
+| **UILogicOperator\_None** | Value: **0** |
+| **UILogicOperator\_Equal** | Value: **1** |
+| **UILogicOperator\_GreaterThan** | Value: **2** |
+| **UILogicOperator\_GreaterThanOrEqual** | Value: **3** |
+| **UILogicOperator\_LessThan** | Value: **4** |
+| **UILogicOperator\_LessThanOrEqual** | Value: **5** |
 

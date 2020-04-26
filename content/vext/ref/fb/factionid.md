@@ -3,6 +3,7 @@ title: FactionId
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **FactionNeutral** | Value: **0** |

@@ -3,8 +3,9 @@ title: AngleUnit
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **AngleUnit_Radians** | Value: **0** |
-| **AngleUnit_Degrees** | Value: **1** |
+| **AngleUnit\_Radians** | Value: **0** |
+| **AngleUnit\_Degrees** | Value: **1** |
 

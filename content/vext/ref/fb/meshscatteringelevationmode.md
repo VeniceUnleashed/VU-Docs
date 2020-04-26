@@ -3,8 +3,9 @@ title: MeshScatteringElevationMode
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **MeshScatteringElevationMode_SnapBoundingBox** | Value: **0** |
-| **MeshScatteringElevationMode_SnapPivotPoint** | Value: **1** |
+| **MeshScatteringElevationMode\_SnapBoundingBox** | Value: **0** |
+| **MeshScatteringElevationMode\_SnapPivotPoint** | Value: **1** |
 

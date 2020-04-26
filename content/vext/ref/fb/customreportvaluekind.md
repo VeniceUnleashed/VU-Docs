@@ -3,8 +3,9 @@ title: CustomReportValueKind
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **CustomReportValueKind_ScoreMultiplier** | Value: **0** |
-| **CustomReportValueKind_GunMasterLevel** | Value: **1** |
+| **CustomReportValueKind\_ScoreMultiplier** | Value: **0** |
+| **CustomReportValueKind\_GunMasterLevel** | Value: **1** |
 

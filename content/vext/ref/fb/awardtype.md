@@ -3,11 +3,12 @@ title: AwardType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **AwardType_OnceGlobally** | Value: **0** |
-| **AwardType_OncePerRound** | Value: **1** |
-| **AwardType_Unlimited** | Value: **2** |
-| **AwardType_Limited** | Value: **3** |
-| **AwardType_GateList** | Value: **4** |
+| **AwardType\_OnceGlobally** | Value: **0** |
+| **AwardType\_OncePerRound** | Value: **1** |
+| **AwardType\_Unlimited** | Value: **2** |
+| **AwardType\_Limited** | Value: **3** |
+| **AwardType\_GateList** | Value: **4** |
 

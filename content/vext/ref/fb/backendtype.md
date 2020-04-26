@@ -3,11 +3,12 @@ title: BackendType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **Backend_Lan** | Value: **0** |
-| **Backend_Blaze** | Value: **1** |
-| **Backend_Peer** | Value: **2** |
-| **Backend_Local** | Value: **3** |
-| **Backend_Count_** | Value: **4** |
+| **Backend\_Lan** | Value: **0** |
+| **Backend\_Blaze** | Value: **1** |
+| **Backend\_Peer** | Value: **2** |
+| **Backend\_Local** | Value: **3** |
+| **Backend\_Count\_** | Value: **4** |
 

@@ -3,9 +3,10 @@ title: VoiceOverConversationQueueMode
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **VoiceOverConversationQueueMode_Always** | Value: **0** |
-| **VoiceOverConversationQueueMode_Never** | Value: **1** |
-| **VoiceOverConversationQueueMode_SamePriority** | Value: **2** |
+| **VoiceOverConversationQueueMode\_Always** | Value: **0** |
+| **VoiceOverConversationQueueMode\_Never** | Value: **1** |
+| **VoiceOverConversationQueueMode\_SamePriority** | Value: **2** |
 

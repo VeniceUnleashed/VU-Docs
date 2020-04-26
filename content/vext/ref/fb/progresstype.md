@@ -3,7 +3,8 @@ title: ProgressType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **PT_CapturePointCooldown** | Value: **0** |
+| **PT\_CapturePointCooldown** | Value: **0** |
 

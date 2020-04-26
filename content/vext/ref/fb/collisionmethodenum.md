@@ -3,6 +3,7 @@ title: CollisionMethodEnum
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **CMESimple** | Value: **0** |

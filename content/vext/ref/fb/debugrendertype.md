@@ -3,9 +3,10 @@ title: DebugRenderType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **DebugRenderType_Text** | Value: **0** |
-| **DebugRenderType_Plot** | Value: **1** |
-| **DebugRenderType_Bar** | Value: **2** |
+| **DebugRenderType\_Text** | Value: **0** |
+| **DebugRenderType\_Plot** | Value: **1** |
+| **DebugRenderType\_Bar** | Value: **2** |
 

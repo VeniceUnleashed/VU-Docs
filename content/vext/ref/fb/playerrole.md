@@ -3,6 +3,7 @@ title: PlayerRole
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **PRSquadLeader** | Value: **0** |

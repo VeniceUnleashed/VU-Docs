@@ -3,6 +3,7 @@ title: SpottingType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **STGunner** | Value: **0** |

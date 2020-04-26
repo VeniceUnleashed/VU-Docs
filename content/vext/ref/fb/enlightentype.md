@@ -3,9 +3,10 @@ title: EnlightenType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **EnlightenType_Dynamic** | Value: **0** |
-| **EnlightenType_LightProbe** | Value: **1** |
-| **EnlightenType_Static** | Value: **2** |
+| **EnlightenType\_Dynamic** | Value: **0** |
+| **EnlightenType\_LightProbe** | Value: **1** |
+| **EnlightenType\_Static** | Value: **2** |
 

@@ -3,7 +3,8 @@ title: UIWidgetEventQuery
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **UIWidgetEventQuery_FireEvent** | Value: **0** |
+| **UIWidgetEventQuery\_FireEvent** | Value: **0** |
 

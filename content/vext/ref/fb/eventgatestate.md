@@ -3,6 +3,7 @@ title: EventGateState
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **EGSInvalid** | Value: **0** |

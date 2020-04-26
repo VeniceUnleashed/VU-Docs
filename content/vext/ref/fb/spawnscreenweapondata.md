@@ -2,56 +2,83 @@
 title: SpawnScreenWeaponData
 ---
 
-
 ## Summary
+
 ### Constructors
-| |
-| ----------- |
+
+|  |
+| --- |
 | **[SpawnScreenWeaponData](#constructor-0)**() |
+| **[SpawnScreenWeaponData](#constructor-1)**(guid: [Guid](/vext/ref/shared/type/guid)) |
 
 ### Properties
+
 | Name | Type |
 | ---- | ---- |
 | {{< prop "weaponName" >}} | string |
 | {{< prop "texture" >}} | [TextureAsset](/vext/ref/fb/textureasset) \| nil |
 
 ### Methods
+
 | Method | Returns |
-| ------ | ---- |
+| ------ | ------- |
 | **[Clone](#clone)**() | [SpawnScreenWeaponData](/vext/ref/fb/spawnscreenweapondata) |
 
 ### Static members
+
 | Name | Type |
 | ---- | ---- |
-| {{< static "SpawnScreenWeaponData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
+| {{< static "SpawnScreenWeaponData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/type/typeinformation) |
 
 ## Constructors
+
 ### SpawnScreenWeaponData {#constructor-0}
+
 > **SpawnScreenWeaponData**()
 
-Creates a new [SpawnScreenWeaponData](/vext/ref/fb/spawnscreenweapondata) frostbite structure.
+Creates a new [SpawnScreenWeaponData](/vext/ref/fb/spawnscreenweapondata) frostbite instance.
+
+### SpawnScreenWeaponData {#constructor-1}
+
+> **SpawnScreenWeaponData**(guid: [Guid](/vext/ref/shared/type/guid))
+
+Creates a new [SpawnScreenWeaponData](/vext/ref/fb/spawnscreenweapondata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/type/guid).
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/type/guid) | The [Guid](/vext/ref/shared/type/guid) to assign to the newly created instance. |
 
 ## Properties
+
 ### {{% prop-heading "weaponName" %}}
+
 > **string**
 
 ### {{% prop-heading "texture" %}}
-> **[TextureAsset](/vext/ref/fb/textureasset)** | **nil**
+
+> **[TextureAsset](/vext/ref/fb/textureasset)** \| **nil**
 
 ## Methods
-### Clone
+
+### Clone {#clone}
+
 > **Clone**(): [SpawnScreenWeaponData](/vext/ref/fb/spawnscreenweapondata)
 
-Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
+Creates a shallow-copy clone of this structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of this structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/type/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/type/datacontainer)) will be referencing the same instance.
 
 #### Returns
+
 | Type | Description |
 | ---- | ----------- |
 | **[SpawnScreenWeaponData](/vext/ref/fb/spawnscreenweapondata)** | The newly created structure. |
 
 ## Static members
+
 ### {{% static-heading "typeInfo" %}}
-> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+> **[TypeInformation](/vext/ref/shared/type/typeinformation)**
 
 The type information for the [SpawnScreenWeaponData](/vext/ref/fb/spawnscreenweapondata) type.
 

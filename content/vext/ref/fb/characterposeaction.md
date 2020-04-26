@@ -3,6 +3,7 @@ title: CharacterPoseAction
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **CPTNoAction** | Value: **0** |

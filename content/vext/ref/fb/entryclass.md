@@ -3,6 +3,7 @@ title: EntryClass
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **ecPrimary** | Value: **0** |

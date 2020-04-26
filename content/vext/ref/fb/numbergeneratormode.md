@@ -3,7 +3,8 @@ title: NumberGeneratorMode
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **NumberGeneratorMode_RandomUniform** | Value: **0** |
+| **NumberGeneratorMode\_RandomUniform** | Value: **0** |
 

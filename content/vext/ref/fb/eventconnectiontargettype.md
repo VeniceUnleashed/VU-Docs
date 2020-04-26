@@ -3,12 +3,13 @@ title: EventConnectionTargetType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **EventConnectionTargetType_Invalid** | Value: **0** |
-| **EventConnectionTargetType_ClientAndServer** | Value: **1** |
-| **EventConnectionTargetType_Client** | Value: **2** |
-| **EventConnectionTargetType_Server** | Value: **3** |
-| **EventConnectionTargetType_NetworkedClient** | Value: **4** |
-| **EventConnectionTargetType_NetworkedClientAndServer** | Value: **5** |
+| **EventConnectionTargetType\_Invalid** | Value: **0** |
+| **EventConnectionTargetType\_ClientAndServer** | Value: **1** |
+| **EventConnectionTargetType\_Client** | Value: **2** |
+| **EventConnectionTargetType\_Server** | Value: **3** |
+| **EventConnectionTargetType\_NetworkedClient** | Value: **4** |
+| **EventConnectionTargetType\_NetworkedClientAndServer** | Value: **5** |
 

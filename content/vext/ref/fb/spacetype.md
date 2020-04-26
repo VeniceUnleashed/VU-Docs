@@ -3,6 +3,7 @@ title: SpaceType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **STBody** | Value: **0** |

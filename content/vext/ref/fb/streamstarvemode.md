@@ -3,9 +3,10 @@ title: StreamStarveMode
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **StreamStarveMode_Off** | Value: **0** |
-| **StreamStarveMode_On** | Value: **1** |
-| **StreamStarveMode_Dynamic** | Value: **2** |
+| **StreamStarveMode\_Off** | Value: **0** |
+| **StreamStarveMode\_On** | Value: **1** |
+| **StreamStarveMode\_Dynamic** | Value: **2** |
 

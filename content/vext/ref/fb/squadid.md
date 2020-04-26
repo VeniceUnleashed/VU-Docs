@@ -3,6 +3,7 @@ title: SquadId
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **SquadNone** | Value: **0** |

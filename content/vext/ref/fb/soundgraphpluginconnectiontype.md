@@ -3,9 +3,10 @@ title: SoundGraphPluginConnectionType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **SoundGraphPluginConnectionType_Unconnected** | Value: **0** |
-| **SoundGraphPluginConnectionType_Voice** | Value: **1** |
-| **SoundGraphPluginConnectionType_Bus** | Value: **2** |
+| **SoundGraphPluginConnectionType\_Unconnected** | Value: **0** |
+| **SoundGraphPluginConnectionType\_Voice** | Value: **1** |
+| **SoundGraphPluginConnectionType\_Bus** | Value: **2** |
 

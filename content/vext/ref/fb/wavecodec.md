@@ -3,12 +3,13 @@ title: WaveCodec
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **WaveCodec_EaLayer3** | Value: **0** |
-| **WaveCodec_EaXma** | Value: **1** |
-| **WaveCodec_Xas** | Value: **2** |
-| **WaveCodec_EaSpeex** | Value: **3** |
-| **WaveCodec_Pcm** | Value: **4** |
-| **WaveCodec_Count** | Value: **5** |
+| **WaveCodec\_EaLayer3** | Value: **0** |
+| **WaveCodec\_EaXma** | Value: **1** |
+| **WaveCodec\_Xas** | Value: **2** |
+| **WaveCodec\_EaSpeex** | Value: **3** |
+| **WaveCodec\_Pcm** | Value: **4** |
+| **WaveCodec\_Count** | Value: **5** |
 

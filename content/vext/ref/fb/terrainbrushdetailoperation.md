@@ -3,6 +3,7 @@ title: TerrainBrushDetailOperation
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **Lerp** | Value: **0** |

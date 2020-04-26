@@ -3,8 +3,9 @@ title: TimerMode
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **TimerMode_Repeating** | Value: **0** |
-| **TimerMode_SingleShot** | Value: **1** |
+| **TimerMode\_Repeating** | Value: **0** |
+| **TimerMode\_SingleShot** | Value: **1** |
 

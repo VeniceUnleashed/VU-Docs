@@ -3,6 +3,7 @@ title: PolynomialOperation
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **Multiplication** | Value: **0** |

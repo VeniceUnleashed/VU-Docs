@@ -3,9 +3,10 @@ title: CombatPatrolMode
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **CombatPatrolMode_MustStayOnPath** | Value: **0** |
-| **CombatPatrolMode_FreeToFight** | Value: **1** |
-| **CombatPatrolMode_FreeToFightAtDestination** | Value: **2** |
+| **CombatPatrolMode\_MustStayOnPath** | Value: **0** |
+| **CombatPatrolMode\_FreeToFight** | Value: **1** |
+| **CombatPatrolMode\_FreeToFightAtDestination** | Value: **2** |
 

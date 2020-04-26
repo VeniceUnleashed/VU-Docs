@@ -3,7 +3,8 @@ title: AudioCurveType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **AudioCurveType_Spline** | Value: **0** |
+| **AudioCurveType\_Spline** | Value: **0** |
 

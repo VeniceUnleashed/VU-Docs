@@ -3,10 +3,11 @@ title: PlayerKilledWeaponType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **PlayerKilledWeaponType_Unknown** | Value: **0** |
-| **PlayerKilledWeaponType_HandheldWeapon** | Value: **1** |
-| **PlayerKilledWeaponType_Vehicle** | Value: **2** |
-| **PlayerKilledWeaponType_Count** | Value: **3** |
+| **PlayerKilledWeaponType\_Unknown** | Value: **0** |
+| **PlayerKilledWeaponType\_HandheldWeapon** | Value: **1** |
+| **PlayerKilledWeaponType\_Vehicle** | Value: **2** |
+| **PlayerKilledWeaponType\_Count** | Value: **3** |
 

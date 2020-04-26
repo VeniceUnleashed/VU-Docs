@@ -3,11 +3,12 @@ title: InvitePlatform
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **InvitePlatform_Invalid** | Value: **0** |
-| **InvitePlatform_X360** | Value: **1** |
-| **InvitePlatform_PS3** | Value: **2** |
-| **InvitePlatform_PC** | Value: **3** |
-| **InvitePlatform_Count** | Value: **4** |
+| **InvitePlatform\_Invalid** | Value: **0** |
+| **InvitePlatform\_X360** | Value: **1** |
+| **InvitePlatform\_PS3** | Value: **2** |
+| **InvitePlatform\_PC** | Value: **3** |
+| **InvitePlatform\_Count** | Value: **4** |
 

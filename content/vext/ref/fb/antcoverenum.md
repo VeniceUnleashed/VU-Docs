@@ -3,13 +3,14 @@ title: AntCoverEnum
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **AntCoverEnum_RightCover** | Value: **0** |
-| **AntCoverEnum_LeftCover** | Value: **1** |
-| **AntCoverEnum_MiddleCover** | Value: **2** |
-| **AntCoverEnum_MediumLeftCover** | Value: **3** |
-| **AntCoverEnum_MediumRightCover** | Value: **4** |
-| **AntCoverEnum_Prone** | Value: **5** |
-| **AntCoverEnum_Count** | Value: **6** |
+| **AntCoverEnum\_RightCover** | Value: **0** |
+| **AntCoverEnum\_LeftCover** | Value: **1** |
+| **AntCoverEnum\_MiddleCover** | Value: **2** |
+| **AntCoverEnum\_MediumLeftCover** | Value: **3** |
+| **AntCoverEnum\_MediumRightCover** | Value: **4** |
+| **AntCoverEnum\_Prone** | Value: **5** |
+| **AntCoverEnum\_Count** | Value: **6** |
 

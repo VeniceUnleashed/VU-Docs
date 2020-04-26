@@ -3,11 +3,12 @@ title: PackagingDetailLevel
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **PackagingDetailLevel_Low** | Value: **0** |
-| **PackagingDetailLevel_Medium** | Value: **1** |
-| **PackagingDetailLevel_High** | Value: **2** |
-| **PackagingDetailLevel_Base** | Value: **3** |
-| **PackagingDetailLevel_Count** | Value: **4** |
+| **PackagingDetailLevel\_Low** | Value: **0** |
+| **PackagingDetailLevel\_Medium** | Value: **1** |
+| **PackagingDetailLevel\_High** | Value: **2** |
+| **PackagingDetailLevel\_Base** | Value: **3** |
+| **PackagingDetailLevel\_Count** | Value: **4** |
 

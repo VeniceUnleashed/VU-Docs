@@ -3,15 +3,16 @@ title: WeaponAnimType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **WeaponAnimType_NoAddon** | Value: **0** |
-| **WeaponAnimType_Bipod** | Value: **1** |
-| **WeaponAnimType_Foregrip** | Value: **2** |
-| **WeaponAnimType_40mm_GL** | Value: **3** |
-| **WeaponAnimType_40mm_GL_Fire** | Value: **4** |
-| **WeaponAnimType_Underslung_Shotgun** | Value: **5** |
-| **WeaponAnimType_Underslung_Shotgun_Fire** | Value: **6** |
-| **WeaponAnimType_Straight_Pull_Bolt** | Value: **7** |
-| **WeaponAnimType_Extended_Mag** | Value: **8** |
+| **WeaponAnimType\_NoAddon** | Value: **0** |
+| **WeaponAnimType\_Bipod** | Value: **1** |
+| **WeaponAnimType\_Foregrip** | Value: **2** |
+| **WeaponAnimType\_40mm\_GL** | Value: **3** |
+| **WeaponAnimType\_40mm\_GL\_Fire** | Value: **4** |
+| **WeaponAnimType\_Underslung\_Shotgun** | Value: **5** |
+| **WeaponAnimType\_Underslung\_Shotgun\_Fire** | Value: **6** |
+| **WeaponAnimType\_Straight\_Pull\_Bolt** | Value: **7** |
+| **WeaponAnimType\_Extended\_Mag** | Value: **8** |
 

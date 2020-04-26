@@ -3,12 +3,13 @@ title: UIMessageEntityType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **UIMessageEntityType_Message** | Value: **0** |
-| **UIMessageEntityType_Tooltip** | Value: **1** |
-| **UIMessageEntityType_LogLines** | Value: **2** |
-| **UIMessageEntityType_Subtitle** | Value: **3** |
-| **UIMessageEntityType_FailState** | Value: **4** |
-| **UIMessageEntityType_OutOfBounds** | Value: **5** |
+| **UIMessageEntityType\_Message** | Value: **0** |
+| **UIMessageEntityType\_Tooltip** | Value: **1** |
+| **UIMessageEntityType\_LogLines** | Value: **2** |
+| **UIMessageEntityType\_Subtitle** | Value: **3** |
+| **UIMessageEntityType\_FailState** | Value: **4** |
+| **UIMessageEntityType\_OutOfBounds** | Value: **5** |
 

@@ -2,19 +2,21 @@
 title: MasterUnitNodeData
 ---
 
-Inherits from 
-[AudioGraphNodeData](/vext/ref/fb/audiographnodedata)
+Inherits from [AudioGraphNodeData](/vext/ref/fb/audiographnodedata)
 
 ## Summary
+
 ### Constructors
-| |
-| ----------- |
+
+|  |
+| --- |
 | **[MasterUnitNodeData](#constructor-0)**() |
-| **[MasterUnitNodeData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MasterUnitNodeData](#constructor-1)**(guid: [Guid](/vext/ref/shared/type/guid)) |
 | **[MasterUnitNodeData](#constructor-2)**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata)) |
-| **[MasterUnitNodeData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
+| **[MasterUnitNodeData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/type/datacontainer)) |
 
 ### Properties
+
 | Name | Type |
 | ---- | ---- |
 | {{< prop "settingsIndex" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
@@ -40,113 +42,146 @@ Inherits from
 | {{< prop "settings" >}} | [MasterUnitSettings](/vext/ref/fb/masterunitsettings)[] |
 
 ### Static members
+
 | Name | Type |
 | ---- | ---- |
-| {{< static "MasterUnitNodeData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
+| {{< static "MasterUnitNodeData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/type/typeinformation) |
 
 ## Constructors
+
 ### MasterUnitNodeData {#constructor-0}
+
 > **MasterUnitNodeData**()
 
 Creates a new [MasterUnitNodeData](/vext/ref/fb/masterunitnodedata) frostbite instance.
 
 ### MasterUnitNodeData {#constructor-1}
-> **MasterUnitNodeData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-Creates a new [MasterUnitNodeData](/vext/ref/fb/masterunitnodedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
+> **MasterUnitNodeData**(guid: [Guid](/vext/ref/shared/type/guid))
+
+Creates a new [MasterUnitNodeData](/vext/ref/fb/masterunitnodedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/type/guid).
 
 #### Parameters
+
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
+| **guid** | [Guid](/vext/ref/shared/type/guid) | The [Guid](/vext/ref/shared/type/guid) to assign to the newly created instance. |
 
 ### MasterUnitNodeData {#constructor-2}
+
 > **MasterUnitNodeData**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata))
 
-Casts an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) to [MasterUnitNodeData](/vext/ref/fb/masterunitnodedata). Will throw an error when trying to cast from an invalid type.
+Casts an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) to [MasterUnitNodeData](/vext/ref/fb/masterunitnodedata). Will throw an error when trying to cast from an unsupported type.
 
 #### Parameters
+
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | **other** | [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) | The instance to cast to [MasterUnitNodeData](/vext/ref/fb/masterunitnodedata). |
 
 ### MasterUnitNodeData {#constructor-3}
-> **MasterUnitNodeData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
 
-Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MasterUnitNodeData](/vext/ref/fb/masterunitnodedata). Will throw an error when trying to cast from an invalid type.
+> **MasterUnitNodeData**(other: [DataContainer](/vext/ref/shared/type/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/type/datacontainer) to [MasterUnitNodeData](/vext/ref/fb/masterunitnodedata). Will throw an error when trying to cast from an unsupported type.
 
 #### Parameters
+
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MasterUnitNodeData](/vext/ref/fb/masterunitnodedata). |
+| **other** | [DataContainer](/vext/ref/shared/type/datacontainer) | The instance to cast to [MasterUnitNodeData](/vext/ref/fb/masterunitnodedata). |
 
 ## Properties
+
 ### {{% prop-heading "settingsIndex" %}}
+
 > **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
 
 ### {{% prop-heading "amplitude" %}}
+
 > **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
 
 ### {{% prop-heading "masterGain" %}}
+
 > **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
 
 ### {{% prop-heading "masterLfeGain" %}}
+
 > **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
 
 ### {{% prop-heading "masterDialogGain" %}}
+
 > **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
 
 ### {{% prop-heading "mainMixGain" %}}
+
 > **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
 
 ### {{% prop-heading "postEffectsGain" %}}
+
 > **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
 
 ### {{% prop-heading "reverbGain" %}}
+
 > **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
 
 ### {{% prop-heading "fadeTime" %}}
+
 > **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
 
 ### {{% prop-heading "highPassFreq" %}}
+
 > **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
 
 ### {{% prop-heading "lowShelfFreq" %}}
+
 > **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
 
 ### {{% prop-heading "lowShelfGain" %}}
+
 > **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
 
 ### {{% prop-heading "highShelfFreq" %}}
+
 > **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
 
 ### {{% prop-heading "highShelfGain" %}}
+
 > **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
 
 ### {{% prop-heading "compThreshold" %}}
+
 > **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
 
 ### {{% prop-heading "compRatio" %}}
+
 > **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
 
 ### {{% prop-heading "compAttack" %}}
+
 > **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
 
 ### {{% prop-heading "compRelease" %}}
+
 > **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
 
 ### {{% prop-heading "distClipLevel" %}}
+
 > **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
 
 ### {{% prop-heading "parallelDistortionGain" %}}
+
 > **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
 
 ### {{% prop-heading "settings" %}}
+
 > **[MasterUnitSettings](/vext/ref/fb/masterunitsettings)**[]
 
 ## Static members
+
 ### {{% static-heading "typeInfo" %}}
-> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+> **[TypeInformation](/vext/ref/shared/type/typeinformation)**
 
 The type information for the [MasterUnitNodeData](/vext/ref/fb/masterunitnodedata) type.
 

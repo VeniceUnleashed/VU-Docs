@@ -3,6 +3,7 @@ title: WaypointsSnappingSettings
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **UseShapeSettings** | Value: **0** |

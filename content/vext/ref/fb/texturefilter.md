@@ -3,6 +3,7 @@ title: TextureFilter
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **TfNone** | Value: **0** |

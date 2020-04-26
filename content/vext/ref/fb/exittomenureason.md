@@ -3,28 +3,29 @@ title: ExitToMenuReason
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **ExitToMenuReason_None** | Value: **0** |
-| **ExitToMenuReason_UserDisconnected** | Value: **1** |
-| **ExitToMenuReason_DisconnectedFromServer** | Value: **2** |
-| **ExitToMenuReason_UnableToConnectToServer** | Value: **3** |
-| **ExitToMenuReason_ClientDisconnected** | Value: **4** |
-| **ExitToMenuReason_FirstPartyConnectionFailed** | Value: **5** |
-| **ExitToMenuReason_MissingContent** | Value: **6** |
-| **ExitToMenuReason_TeamKills** | Value: **7** |
-| **ExitToMenuReason_KickedByAdmin** | Value: **8** |
-| **ExitToMenuReason_Banned** | Value: **9** |
-| **ExitToMenuReason_InteractivityTimeout** | Value: **10** |
-| **ExitToMenuReason_KickedOutServerFull** | Value: **11** |
-| **ExitToMenuReason_ESportsMatchStarting** | Value: **12** |
-| **ExitToMenuReason_NotInESportsRosters** | Value: **13** |
-| **ExitToMenuReason_ESportsMatchEnding** | Value: **14** |
-| **ExitToMenuReason_VirtualServerExpired** | Value: **15** |
-| **ExitToMenuReason_VirtualServerRecreate** | Value: **16** |
-| **ExitToMenuReason_ESportsTeamFull** | Value: **17** |
-| **ExitToMenuReason_ESportsMatchAborted** | Value: **18** |
-| **ExitToMenuReason_ESportsMatchWalkover** | Value: **19** |
-| **ExitToMenuReason_ESportsMatchWarmupTimedOut** | Value: **20** |
-| **ExitToMenuReason_PremiumStatusMismatch** | Value: **21** |
+| **ExitToMenuReason\_None** | Value: **0** |
+| **ExitToMenuReason\_UserDisconnected** | Value: **1** |
+| **ExitToMenuReason\_DisconnectedFromServer** | Value: **2** |
+| **ExitToMenuReason\_UnableToConnectToServer** | Value: **3** |
+| **ExitToMenuReason\_ClientDisconnected** | Value: **4** |
+| **ExitToMenuReason\_FirstPartyConnectionFailed** | Value: **5** |
+| **ExitToMenuReason\_MissingContent** | Value: **6** |
+| **ExitToMenuReason\_TeamKills** | Value: **7** |
+| **ExitToMenuReason\_KickedByAdmin** | Value: **8** |
+| **ExitToMenuReason\_Banned** | Value: **9** |
+| **ExitToMenuReason\_InteractivityTimeout** | Value: **10** |
+| **ExitToMenuReason\_KickedOutServerFull** | Value: **11** |
+| **ExitToMenuReason\_ESportsMatchStarting** | Value: **12** |
+| **ExitToMenuReason\_NotInESportsRosters** | Value: **13** |
+| **ExitToMenuReason\_ESportsMatchEnding** | Value: **14** |
+| **ExitToMenuReason\_VirtualServerExpired** | Value: **15** |
+| **ExitToMenuReason\_VirtualServerRecreate** | Value: **16** |
+| **ExitToMenuReason\_ESportsTeamFull** | Value: **17** |
+| **ExitToMenuReason\_ESportsMatchAborted** | Value: **18** |
+| **ExitToMenuReason\_ESportsMatchWalkover** | Value: **19** |
+| **ExitToMenuReason\_ESportsMatchWarmupTimedOut** | Value: **20** |
+| **ExitToMenuReason\_PremiumStatusMismatch** | Value: **21** |
 

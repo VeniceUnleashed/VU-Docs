@@ -3,10 +3,11 @@ title: StatsMultiplicity
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **StatsMultiplicity_Invalid** | Value: **0** |
-| **StatsMultiplicity_Solo** | Value: **1** |
-| **StatsMultiplicity_Club** | Value: **2** |
-| **StatsMultiplicity_LAST_ITEM** | Value: **3** |
+| **StatsMultiplicity\_Invalid** | Value: **0** |
+| **StatsMultiplicity\_Solo** | Value: **1** |
+| **StatsMultiplicity\_Club** | Value: **2** |
+| **StatsMultiplicity\_LAST\_ITEM** | Value: **3** |
 

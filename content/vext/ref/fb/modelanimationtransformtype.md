@@ -3,9 +3,10 @@ title: ModelAnimationTransformType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **ModelAnimationTransformType_World** | Value: **0** |
-| **ModelAnimationTransformType_Model** | Value: **1** |
-| **ModelAnimationTransformType_Local** | Value: **2** |
+| **ModelAnimationTransformType\_World** | Value: **0** |
+| **ModelAnimationTransformType\_Model** | Value: **1** |
+| **ModelAnimationTransformType\_Local** | Value: **2** |
 

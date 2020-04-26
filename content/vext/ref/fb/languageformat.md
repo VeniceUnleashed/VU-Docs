@@ -3,21 +3,22 @@ title: LanguageFormat
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **LanguageFormat_English** | Value: **0** |
-| **LanguageFormat_French** | Value: **1** |
-| **LanguageFormat_German** | Value: **2** |
-| **LanguageFormat_Spanish** | Value: **3** |
-| **LanguageFormat_Italian** | Value: **4** |
-| **LanguageFormat_Japanese** | Value: **5** |
-| **LanguageFormat_Russian** | Value: **6** |
-| **LanguageFormat_Polish** | Value: **7** |
-| **LanguageFormat_Dutch** | Value: **8** |
-| **LanguageFormat_Portuguese** | Value: **9** |
-| **LanguageFormat_TraditionalChinese** | Value: **10** |
-| **LanguageFormat_Korean** | Value: **11** |
-| **LanguageFormat_Czech** | Value: **12** |
-| **LanguageFormat_Count** | Value: **13** |
-| **LanguageFormat_Undefined** | Value: **14** |
+| **LanguageFormat\_English** | Value: **0** |
+| **LanguageFormat\_French** | Value: **1** |
+| **LanguageFormat\_German** | Value: **2** |
+| **LanguageFormat\_Spanish** | Value: **3** |
+| **LanguageFormat\_Italian** | Value: **4** |
+| **LanguageFormat\_Japanese** | Value: **5** |
+| **LanguageFormat\_Russian** | Value: **6** |
+| **LanguageFormat\_Polish** | Value: **7** |
+| **LanguageFormat\_Dutch** | Value: **8** |
+| **LanguageFormat\_Portuguese** | Value: **9** |
+| **LanguageFormat\_TraditionalChinese** | Value: **10** |
+| **LanguageFormat\_Korean** | Value: **11** |
+| **LanguageFormat\_Czech** | Value: **12** |
+| **LanguageFormat\_Count** | Value: **13** |
+| **LanguageFormat\_Undefined** | Value: **14** |
 

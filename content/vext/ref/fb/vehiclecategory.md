@@ -3,8 +3,9 @@ title: VehicleCategory
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **VehicleCategory_Land** | Value: **0** |
-| **VehicleCategory_Air** | Value: **1** |
+| **VehicleCategory\_Land** | Value: **0** |
+| **VehicleCategory\_Air** | Value: **1** |
 

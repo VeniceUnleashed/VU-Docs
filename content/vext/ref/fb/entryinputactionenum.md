@@ -3,6 +3,7 @@ title: EntryInputActionEnum
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **EIAThrottle** | Value: **0** |

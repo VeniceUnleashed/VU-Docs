@@ -3,6 +3,7 @@ title: WeaponClassification
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **WCNone** | Value: **0** |

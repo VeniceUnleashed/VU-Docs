@@ -3,9 +3,10 @@ title: EntrySeatType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **EST_Driver** | Value: **0** |
-| **EST_Gunner** | Value: **1** |
-| **EST_Passenger** | Value: **2** |
+| **EST\_Driver** | Value: **0** |
+| **EST\_Gunner** | Value: **1** |
+| **EST\_Passenger** | Value: **2** |
 

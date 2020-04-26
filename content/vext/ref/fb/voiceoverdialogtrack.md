@@ -2,18 +2,20 @@
 title: VoiceOverDialogTrack
 ---
 
-Inherits from 
-[DataContainer](/vext/ref/shared/class/datacontainer)
+Inherits from [DataContainer](/vext/ref/shared/type/datacontainer)
 
 ## Summary
+
 ### Constructors
-| |
-| ----------- |
+
+|  |
+| --- |
 | **[VoiceOverDialogTrack](#constructor-0)**() |
-| **[VoiceOverDialogTrack](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
-| **[VoiceOverDialogTrack](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
+| **[VoiceOverDialogTrack](#constructor-1)**(guid: [Guid](/vext/ref/shared/type/guid)) |
+| **[VoiceOverDialogTrack](#constructor-2)**(other: [DataContainer](/vext/ref/shared/type/datacontainer)) |
 
 ### Properties
+
 | Name | Type |
 | ---- | ---- |
 | {{< prop "source" >}} | [VoiceOverValueConnection](/vext/ref/fb/voiceovervalueconnection) \| nil |
@@ -28,70 +30,90 @@ Inherits from
 | {{< prop "takeSwitchingOnResume" >}} | bool |
 
 ### Static members
+
 | Name | Type |
 | ---- | ---- |
-| {{< static "VoiceOverDialogTrack" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
+| {{< static "VoiceOverDialogTrack" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/type/typeinformation) |
 
 ## Constructors
+
 ### VoiceOverDialogTrack {#constructor-0}
+
 > **VoiceOverDialogTrack**()
 
 Creates a new [VoiceOverDialogTrack](/vext/ref/fb/voiceoverdialogtrack) frostbite instance.
 
 ### VoiceOverDialogTrack {#constructor-1}
-> **VoiceOverDialogTrack**(guid: [Guid](/vext/ref/shared/class/guid))
 
-Creates a new [VoiceOverDialogTrack](/vext/ref/fb/voiceoverdialogtrack) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
+> **VoiceOverDialogTrack**(guid: [Guid](/vext/ref/shared/type/guid))
+
+Creates a new [VoiceOverDialogTrack](/vext/ref/fb/voiceoverdialogtrack) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/type/guid).
 
 #### Parameters
+
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
+| **guid** | [Guid](/vext/ref/shared/type/guid) | The [Guid](/vext/ref/shared/type/guid) to assign to the newly created instance. |
 
 ### VoiceOverDialogTrack {#constructor-2}
-> **VoiceOverDialogTrack**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
 
-Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverDialogTrack](/vext/ref/fb/voiceoverdialogtrack). Will throw an error when trying to cast from an invalid type.
+> **VoiceOverDialogTrack**(other: [DataContainer](/vext/ref/shared/type/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/type/datacontainer) to [VoiceOverDialogTrack](/vext/ref/fb/voiceoverdialogtrack). Will throw an error when trying to cast from an unsupported type.
 
 #### Parameters
+
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VoiceOverDialogTrack](/vext/ref/fb/voiceoverdialogtrack). |
+| **other** | [DataContainer](/vext/ref/shared/type/datacontainer) | The instance to cast to [VoiceOverDialogTrack](/vext/ref/fb/voiceoverdialogtrack). |
 
 ## Properties
+
 ### {{% prop-heading "source" %}}
-> **[VoiceOverValueConnection](/vext/ref/fb/voiceovervalueconnection)** | **nil**
+
+> **[VoiceOverValueConnection](/vext/ref/fb/voiceovervalueconnection)** \| **nil**
 
 ### {{% prop-heading "takeControl" %}}
-> **[VoiceOverValueConnection](/vext/ref/fb/voiceovervalueconnection)** | **nil**
+
+> **[VoiceOverValueConnection](/vext/ref/fb/voiceovervalueconnection)** \| **nil**
 
 ### {{% prop-heading "takeIndexMapping" %}}
+
 > **[VoiceOverDialogTakeMapping](/vext/ref/fb/voiceoverdialogtakemapping)**[]
 
 ### {{% prop-heading "takeSwitching" %}}
+
 > **[VoiceOverDialogTakeBehavior](/vext/ref/fb/voiceoverdialogtakebehavior)**
 
 ### {{% prop-heading "clips" %}}
+
 > **[VoiceOverDialogClip](/vext/ref/fb/voiceoverdialogclip)**[]
 
 ### {{% prop-heading "samplerNode" %}}
-> **[AudioGraphNodeData](/vext/ref/fb/audiographnodedata)** | **nil**
+
+> **[AudioGraphNodeData](/vext/ref/fb/audiographnodedata)** \| **nil**
 
 ### {{% prop-heading "output" %}}
-> **[AudioGraphNodeData](/vext/ref/fb/audiographnodedata)** | **nil**
+
+> **[AudioGraphNodeData](/vext/ref/fb/audiographnodedata)** \| **nil**
 
 ### {{% prop-heading "queueGroup" %}}
-> **[VoiceOverConversationQueueGroup](/vext/ref/fb/voiceoverconversationqueuegroup)** | **nil**
+
+> **[VoiceOverConversationQueueGroup](/vext/ref/fb/voiceoverconversationqueuegroup)** \| **nil**
 
 ### {{% prop-heading "parentTrackIndex" %}}
+
 > **int**
 
 ### {{% prop-heading "takeSwitchingOnResume" %}}
+
 > **bool**
 
 ## Static members
+
 ### {{% static-heading "typeInfo" %}}
-> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+> **[TypeInformation](/vext/ref/shared/type/typeinformation)**
 
 The type information for the [VoiceOverDialogTrack](/vext/ref/fb/voiceoverdialogtrack) type.
 

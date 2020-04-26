@@ -2,19 +2,21 @@
 title: BFServerSettings
 ---
 
-Inherits from 
-[SystemSettings](/vext/ref/fb/systemsettings)
+Inherits from [SystemSettings](/vext/ref/fb/systemsettings)
 
 ## Summary
+
 ### Constructors
-| |
-| ----------- |
+
+|  |
+| --- |
 | **[BFServerSettings](#constructor-0)**() |
-| **[BFServerSettings](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[BFServerSettings](#constructor-1)**(guid: [Guid](/vext/ref/shared/type/guid)) |
 | **[BFServerSettings](#constructor-2)**(other: [SystemSettings](/vext/ref/fb/systemsettings)) |
-| **[BFServerSettings](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
+| **[BFServerSettings](#constructor-3)**(other: [DataContainer](/vext/ref/shared/type/datacontainer)) |
 
 ### Properties
+
 | Name | Type |
 | ---- | ---- |
 | {{< prop "serverMessage" >}} | string |
@@ -61,176 +63,230 @@ Inherits from
 | {{< prop "autoBalance" >}} | bool |
 
 ### Static members
+
 | Name | Type |
 | ---- | ---- |
-| {{< static "BFServerSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
+| {{< static "BFServerSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/type/typeinformation) |
 
 ## Constructors
+
 ### BFServerSettings {#constructor-0}
+
 > **BFServerSettings**()
 
 Creates a new [BFServerSettings](/vext/ref/fb/bfserversettings) frostbite instance.
 
 ### BFServerSettings {#constructor-1}
-> **BFServerSettings**(guid: [Guid](/vext/ref/shared/class/guid))
 
-Creates a new [BFServerSettings](/vext/ref/fb/bfserversettings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
+> **BFServerSettings**(guid: [Guid](/vext/ref/shared/type/guid))
+
+Creates a new [BFServerSettings](/vext/ref/fb/bfserversettings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/type/guid).
 
 #### Parameters
+
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
+| **guid** | [Guid](/vext/ref/shared/type/guid) | The [Guid](/vext/ref/shared/type/guid) to assign to the newly created instance. |
 
 ### BFServerSettings {#constructor-2}
+
 > **BFServerSettings**(other: [SystemSettings](/vext/ref/fb/systemsettings))
 
-Casts an instance of type [SystemSettings](/vext/ref/fb/systemsettings) to [BFServerSettings](/vext/ref/fb/bfserversettings). Will throw an error when trying to cast from an invalid type.
+Casts an instance of type [SystemSettings](/vext/ref/fb/systemsettings) to [BFServerSettings](/vext/ref/fb/bfserversettings). Will throw an error when trying to cast from an unsupported type.
 
 #### Parameters
+
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | **other** | [SystemSettings](/vext/ref/fb/systemsettings) | The instance to cast to [BFServerSettings](/vext/ref/fb/bfserversettings). |
 
 ### BFServerSettings {#constructor-3}
-> **BFServerSettings**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
 
-Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BFServerSettings](/vext/ref/fb/bfserversettings). Will throw an error when trying to cast from an invalid type.
+> **BFServerSettings**(other: [DataContainer](/vext/ref/shared/type/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/type/datacontainer) to [BFServerSettings](/vext/ref/fb/bfserversettings). Will throw an error when trying to cast from an unsupported type.
 
 #### Parameters
+
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [BFServerSettings](/vext/ref/fb/bfserversettings). |
+| **other** | [DataContainer](/vext/ref/shared/type/datacontainer) | The instance to cast to [BFServerSettings](/vext/ref/fb/bfserversettings). |
 
 ## Properties
+
 ### {{% prop-heading "serverMessage" %}}
+
 > **string**
 
 ### {{% prop-heading "ctfRoundTimeModifier" %}}
+
 > **float**
 
 ### {{% prop-heading "forceTeamForPlayerTag" %}}
+
 > **string**
 
 ### {{% prop-heading "forceTeamForPlayerTagTeam" %}}
+
 > **int**
 
 ### {{% prop-heading "noInteractivityTimeoutTime" %}}
+
 > **float**
 
 ### {{% prop-heading "noInteractivityThresholdLimit" %}}
+
 > **float**
 
 ### {{% prop-heading "noInteractivityBanRoundCount" %}}
+
 > **int**
 
 ### {{% prop-heading "teamKillCountForKick" %}}
+
 > **int**
 
 ### {{% prop-heading "teamKillValueForKick" %}}
+
 > **float**
 
 ### {{% prop-heading "teamKillValueIncrease" %}}
+
 > **float**
 
 ### {{% prop-heading "teamKillValueDecreasePerSecond" %}}
+
 > **float**
 
 ### {{% prop-heading "teamKillKickForBan" %}}
+
 > **int**
 
 ### {{% prop-heading "roundMaxPlayerCount" %}}
+
 > **int**
 
 ### {{% prop-heading "roundMinPlayerCount" %}}
+
 > **int**
 
 ### {{% prop-heading "roundLockdownCountdown" %}}
+
 > **int**
 
 ### {{% prop-heading "roundRestartCountdown" %}}
+
 > **int**
 
 ### {{% prop-heading "roundWarmupTimeout" %}}
+
 > **int**
 
 ### {{% prop-heading "bannerUrl" %}}
+
 > **string**
 
 ### {{% prop-heading "serverPreset" %}}
+
 > **string**
 
 ### {{% prop-heading "serverDescription" %}}
+
 > **string**
 
 ### {{% prop-heading "serverAdministrationSettings" %}}
+
 > **string**
 
 ### {{% prop-heading "gameSize" %}}
+
 > **int**
 
 ### {{% prop-heading "serverAdministrationMapRotation" %}}
+
 > **string**
 
 ### {{% prop-heading "serverAdministrationMapRotationInformation" %}}
+
 > **string**
 
 ### {{% prop-heading "serverAdministrationRoundsPerMap" %}}
+
 > **int**
 
 ### {{% prop-heading "spectators" %}}
+
 > **string**
 
 ### {{% prop-heading "punkBusterVersion" %}}
+
 > **string**
 
 ### {{% prop-heading "teamSwitchImbalanceLimit" %}}
+
 > **int**
 
 ### {{% prop-heading "gameMod" %}}
+
 > **string**
 
 ### {{% prop-heading "pingSite" %}}
+
 > **string**
 
 ### {{% prop-heading "overrideServerConfigurationStartTime" %}}
+
 > **string**
 
 ### {{% prop-heading "gunMasterWeaponsPresetIndex" %}}
+
 > **int**
 
 ### {{% prop-heading "serverConfigurationRefreshInterval" %}}
+
 > **int**
 
 ### {{% prop-heading "deathmatchFriendZoneFallbackCount" %}}
+
 > **int**
 
 ### {{% prop-heading "defaultVoiceChannel" %}}
+
 > **[VoiceChannel](/vext/ref/fb/voicechannel)**
 
 ### {{% prop-heading "mapSequencerEnabled" %}}
+
 > **bool**
 
 ### {{% prop-heading "kickAPlayerOnVIPJoin" %}}
+
 > **bool**
 
 ### {{% prop-heading "isManDownRotationEnabled" %}}
+
 > **bool**
 
 ### {{% prop-heading "isKillerCameraEnabled" %}}
+
 > **bool**
 
 ### {{% prop-heading "premiumStatus" %}}
+
 > **bool**
 
 ### {{% prop-heading "overrideAutoBalance" %}}
+
 > **bool**
 
 ### {{% prop-heading "autoBalance" %}}
+
 > **bool**
 
 ## Static members
+
 ### {{% static-heading "typeInfo" %}}
-> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+> **[TypeInformation](/vext/ref/shared/type/typeinformation)**
 
 The type information for the [BFServerSettings](/vext/ref/fb/bfserversettings) type.
 

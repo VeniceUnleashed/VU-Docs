@@ -3,12 +3,13 @@ title: VoiceOverCompareExpressionType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **VoiceOverCompareExpressionType_Equals** | Value: **0** |
-| **VoiceOverCompareExpressionType_Differs** | Value: **1** |
-| **VoiceOverCompareExpressionType_Greater** | Value: **2** |
-| **VoiceOverCompareExpressionType_Less** | Value: **3** |
-| **VoiceOverCompareExpressionType_GreaterOrEquals** | Value: **4** |
-| **VoiceOverCompareExpressionType_LessOrEquals** | Value: **5** |
+| **VoiceOverCompareExpressionType\_Equals** | Value: **0** |
+| **VoiceOverCompareExpressionType\_Differs** | Value: **1** |
+| **VoiceOverCompareExpressionType\_Greater** | Value: **2** |
+| **VoiceOverCompareExpressionType\_Less** | Value: **3** |
+| **VoiceOverCompareExpressionType\_GreaterOrEquals** | Value: **4** |
+| **VoiceOverCompareExpressionType\_LessOrEquals** | Value: **5** |
 

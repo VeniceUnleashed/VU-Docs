@@ -3,6 +3,7 @@ title: WheelPhysicsType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **wptNormal** | Value: **0** |

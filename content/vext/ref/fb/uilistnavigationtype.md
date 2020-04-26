@@ -3,6 +3,7 @@ title: UIListNavigationType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **loop** | Value: **0** |

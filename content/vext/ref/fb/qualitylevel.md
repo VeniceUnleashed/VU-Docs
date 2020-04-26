@@ -3,10 +3,11 @@ title: QualityLevel
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **QualityLevel_Low** | Value: **0** |
-| **QualityLevel_Medium** | Value: **1** |
-| **QualityLevel_High** | Value: **2** |
-| **QualityLevel_Ultra** | Value: **3** |
+| **QualityLevel\_Low** | Value: **0** |
+| **QualityLevel\_Medium** | Value: **1** |
+| **QualityLevel\_High** | Value: **2** |
+| **QualityLevel\_Ultra** | Value: **3** |
 

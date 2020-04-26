@@ -3,8 +3,9 @@ title: VoiceOverLabelSourceMode
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **VoiceOverLabelSourceMode_Combined** | Value: **0** |
-| **VoiceOverLabelSourceMode_Shared** | Value: **1** |
+| **VoiceOverLabelSourceMode\_Combined** | Value: **0** |
+| **VoiceOverLabelSourceMode\_Shared** | Value: **1** |
 

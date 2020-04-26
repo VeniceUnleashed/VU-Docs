@@ -3,6 +3,7 @@ title: WeaponClassEnum
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **wc12gauge** | Value: **0** |

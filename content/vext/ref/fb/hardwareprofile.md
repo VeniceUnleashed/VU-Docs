@@ -3,11 +3,12 @@ title: HardwareProfile
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **Hardware_Autodetect** | Value: **0** |
-| **Hardware_LowEnd** | Value: **1** |
-| **Hardware_Medium** | Value: **2** |
-| **Hardware_HighEnd** | Value: **3** |
-| **Hardware_Maximum** | Value: **4** |
+| **Hardware\_Autodetect** | Value: **0** |
+| **Hardware\_LowEnd** | Value: **1** |
+| **Hardware\_Medium** | Value: **2** |
+| **Hardware\_HighEnd** | Value: **3** |
+| **Hardware\_Maximum** | Value: **4** |
 

@@ -3,9 +3,10 @@ title: UIMouseButton
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **UIMouseButton_Left** | Value: **0** |
-| **UIMouseButton_Right** | Value: **1** |
-| **UIMouseButton_Middle** | Value: **2** |
+| **UIMouseButton\_Left** | Value: **0** |
+| **UIMouseButton\_Right** | Value: **1** |
+| **UIMouseButton\_Middle** | Value: **2** |
 

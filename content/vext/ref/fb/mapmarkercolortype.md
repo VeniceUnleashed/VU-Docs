@@ -3,6 +3,7 @@ title: MapMarkerColorType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **MMCTRed** | Value: **0** |

@@ -3,6 +3,7 @@ title: MenuResponse
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **ResponseOk** | Value: **0** |

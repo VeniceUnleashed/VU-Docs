@@ -3,6 +3,7 @@ title: LoopType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **LtNone** | Value: **0** |

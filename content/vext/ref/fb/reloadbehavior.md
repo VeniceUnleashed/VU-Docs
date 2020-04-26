@@ -3,6 +3,7 @@ title: ReloadBehavior
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **RbInCover** | Value: **0** |

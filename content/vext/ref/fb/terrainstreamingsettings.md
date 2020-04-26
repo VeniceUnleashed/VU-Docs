@@ -2,18 +2,20 @@
 title: TerrainStreamingSettings
 ---
 
-Inherits from 
-[DataContainer](/vext/ref/shared/class/datacontainer)
+Inherits from [DataContainer](/vext/ref/shared/type/datacontainer)
 
 ## Summary
+
 ### Constructors
-| |
-| ----------- |
+
+|  |
+| --- |
 | **[TerrainStreamingSettings](#constructor-0)**() |
-| **[TerrainStreamingSettings](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
-| **[TerrainStreamingSettings](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
+| **[TerrainStreamingSettings](#constructor-1)**(guid: [Guid](/vext/ref/shared/type/guid)) |
+| **[TerrainStreamingSettings](#constructor-2)**(other: [DataContainer](/vext/ref/shared/type/datacontainer)) |
 
 ### Properties
+
 | Name | Type |
 | ---- | ---- |
 | {{< prop "dataLoadJobCount" >}} | int |
@@ -33,85 +35,110 @@ Inherits from
 | {{< prop "loadOccluderDataEnable" >}} | bool |
 
 ### Static members
+
 | Name | Type |
 | ---- | ---- |
-| {{< static "TerrainStreamingSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
+| {{< static "TerrainStreamingSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/type/typeinformation) |
 
 ## Constructors
+
 ### TerrainStreamingSettings {#constructor-0}
+
 > **TerrainStreamingSettings**()
 
 Creates a new [TerrainStreamingSettings](/vext/ref/fb/terrainstreamingsettings) frostbite instance.
 
 ### TerrainStreamingSettings {#constructor-1}
-> **TerrainStreamingSettings**(guid: [Guid](/vext/ref/shared/class/guid))
 
-Creates a new [TerrainStreamingSettings](/vext/ref/fb/terrainstreamingsettings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
+> **TerrainStreamingSettings**(guid: [Guid](/vext/ref/shared/type/guid))
+
+Creates a new [TerrainStreamingSettings](/vext/ref/fb/terrainstreamingsettings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/type/guid).
 
 #### Parameters
+
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
+| **guid** | [Guid](/vext/ref/shared/type/guid) | The [Guid](/vext/ref/shared/type/guid) to assign to the newly created instance. |
 
 ### TerrainStreamingSettings {#constructor-2}
-> **TerrainStreamingSettings**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
 
-Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TerrainStreamingSettings](/vext/ref/fb/terrainstreamingsettings). Will throw an error when trying to cast from an invalid type.
+> **TerrainStreamingSettings**(other: [DataContainer](/vext/ref/shared/type/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/type/datacontainer) to [TerrainStreamingSettings](/vext/ref/fb/terrainstreamingsettings). Will throw an error when trying to cast from an unsupported type.
 
 #### Parameters
+
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [TerrainStreamingSettings](/vext/ref/fb/terrainstreamingsettings). |
+| **other** | [DataContainer](/vext/ref/shared/type/datacontainer) | The instance to cast to [TerrainStreamingSettings](/vext/ref/fb/terrainstreamingsettings). |
 
 ## Properties
+
 ### {{% prop-heading "dataLoadJobCount" %}}
+
 > **int**
 
 ### {{% prop-heading "activeFreeStreamingDataLoadJobCount" %}}
+
 > **int**
 
 ### {{% prop-heading "heightfieldAtlasSampleCountXFactor" %}}
+
 > **int**
 
 ### {{% prop-heading "additionalBlurriness" %}}
+
 > **int**
 
 ### {{% prop-heading "invisibleDetailReductionFactor" %}}
+
 > **float**
 
 ### {{% prop-heading "occludedDetailReductionFactor" %}}
+
 > **float**
 
 ### {{% prop-heading "heightfieldAtlasSampleCountYFactor" %}}
+
 > **int**
 
 ### {{% prop-heading "maskAtlasSampleCountYFactor" %}}
+
 > **int**
 
 ### {{% prop-heading "colorAdditionalBlurriness" %}}
+
 > **int**
 
 ### {{% prop-heading "maskAtlasSampleCountXFactor" %}}
+
 > **int**
 
 ### {{% prop-heading "maskAdditionalBlurriness" %}}
+
 > **int**
 
 ### {{% prop-heading "colorAtlasSampleCountXFactor" %}}
+
 > **int**
 
 ### {{% prop-heading "colorAtlasSampleCountYFactor" %}}
+
 > **int**
 
 ### {{% prop-heading "keepPoolFullEnable" %}}
+
 > **bool**
 
 ### {{% prop-heading "loadOccluderDataEnable" %}}
+
 > **bool**
 
 ## Static members
+
 ### {{% static-heading "typeInfo" %}}
-> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+> **[TypeInformation](/vext/ref/shared/type/typeinformation)**
 
 The type information for the [TerrainStreamingSettings](/vext/ref/fb/terrainstreamingsettings) type.
 

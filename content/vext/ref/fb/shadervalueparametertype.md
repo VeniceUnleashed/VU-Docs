@@ -3,6 +3,7 @@ title: ShaderValueParameterType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **SvptLiteral** | Value: **0** |

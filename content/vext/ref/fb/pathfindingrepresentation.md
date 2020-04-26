@@ -3,11 +3,12 @@ title: PathfindingRepresentation
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **PathfindingRepresentation_Ignore** | Value: **0** |
-| **PathfindingRepresentation_WalkableMesh** | Value: **1** |
-| **PathfindingRepresentation_ObstacleMesh** | Value: **2** |
-| **PathfindingRepresentation_ObstacleMeshAndThinSideLink** | Value: **3** |
-| **PathfindingRepresentation_BoundingBoxExclusion** | Value: **4** |
+| **PathfindingRepresentation\_Ignore** | Value: **0** |
+| **PathfindingRepresentation\_WalkableMesh** | Value: **1** |
+| **PathfindingRepresentation\_ObstacleMesh** | Value: **2** |
+| **PathfindingRepresentation\_ObstacleMeshAndThinSideLink** | Value: **3** |
+| **PathfindingRepresentation\_BoundingBoxExclusion** | Value: **4** |
 

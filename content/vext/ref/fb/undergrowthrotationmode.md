@@ -3,9 +3,10 @@ title: UndergrowthRotationMode
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **UndergrowthRotationMode_Random** | Value: **0** |
-| **UndergrowthRotationMode_TowardsSlope** | Value: **1** |
-| **UndergrowthRotationMode_Fixed** | Value: **2** |
+| **UndergrowthRotationMode\_Random** | Value: **0** |
+| **UndergrowthRotationMode\_TowardsSlope** | Value: **1** |
+| **UndergrowthRotationMode\_Fixed** | Value: **2** |
 

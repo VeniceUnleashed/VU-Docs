@@ -3,9 +3,10 @@ title: SubRealm
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **SubRealm_All** | Value: **0** |
-| **SubRealm_LocalPlayer** | Value: **1** |
-| **SubRealm_RemotePlayer** | Value: **2** |
+| **SubRealm\_All** | Value: **0** |
+| **SubRealm\_LocalPlayer** | Value: **1** |
+| **SubRealm\_RemotePlayer** | Value: **2** |
 

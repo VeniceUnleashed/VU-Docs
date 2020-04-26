@@ -3,9 +3,10 @@ title: MeshScatteringRotationMode
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **MeshScatteringRotationMode_Random** | Value: **0** |
-| **MeshScatteringRotationMode_TowardsSlope** | Value: **1** |
-| **MeshScatteringRotationMode_Fixed** | Value: **2** |
+| **MeshScatteringRotationMode\_Random** | Value: **0** |
+| **MeshScatteringRotationMode\_TowardsSlope** | Value: **1** |
+| **MeshScatteringRotationMode\_Fixed** | Value: **2** |
 

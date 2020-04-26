@@ -3,9 +3,10 @@ title: SocketType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **SocketType_Undefined** | Value: **0** |
-| **SocketType_Gameplay** | Value: **1** |
-| **SocketType_Visual** | Value: **2** |
+| **SocketType\_Undefined** | Value: **0** |
+| **SocketType\_Gameplay** | Value: **1** |
+| **SocketType\_Visual** | Value: **2** |
 

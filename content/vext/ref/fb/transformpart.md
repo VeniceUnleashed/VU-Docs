@@ -3,12 +3,13 @@ title: TransformPart
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **TransformPart_TranslationX** | Value: **0** |
-| **TransformPart_TranslationY** | Value: **1** |
-| **TransformPart_TranslationZ** | Value: **2** |
-| **TransformPart_RotationX** | Value: **3** |
-| **TransformPart_RotationY** | Value: **4** |
-| **TransformPart_RotationZ** | Value: **5** |
+| **TransformPart\_TranslationX** | Value: **0** |
+| **TransformPart\_TranslationY** | Value: **1** |
+| **TransformPart\_TranslationZ** | Value: **2** |
+| **TransformPart\_RotationX** | Value: **3** |
+| **TransformPart\_RotationY** | Value: **4** |
+| **TransformPart\_RotationZ** | Value: **5** |
 

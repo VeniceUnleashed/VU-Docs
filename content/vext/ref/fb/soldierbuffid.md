@@ -3,6 +3,7 @@ title: SoldierBuffId
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **SBImprovedBodyArmor** | Value: **0** |

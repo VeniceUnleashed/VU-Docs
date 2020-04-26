@@ -3,6 +3,7 @@ title: WeaponAnimBaseSetEnum
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **wabsRif** | Value: **0** |

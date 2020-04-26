@@ -3,12 +3,13 @@ title: ShaderInterpolationType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **ShaderInterpolationType_Linear** | Value: **0** |
-| **ShaderInterpolationType_Centroid** | Value: **1** |
-| **ShaderInterpolationType_NoInterpolation** | Value: **2** |
-| **ShaderInterpolationType_NoPerspective** | Value: **3** |
-| **ShaderInterpolationType_Sample** | Value: **4** |
-| **ShaderInterpolationType_Count** | Value: **5** |
+| **ShaderInterpolationType\_Linear** | Value: **0** |
+| **ShaderInterpolationType\_Centroid** | Value: **1** |
+| **ShaderInterpolationType\_NoInterpolation** | Value: **2** |
+| **ShaderInterpolationType\_NoPerspective** | Value: **3** |
+| **ShaderInterpolationType\_Sample** | Value: **4** |
+| **ShaderInterpolationType\_Count** | Value: **5** |
 

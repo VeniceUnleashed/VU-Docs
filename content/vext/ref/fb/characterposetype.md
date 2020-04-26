@@ -3,10 +3,11 @@ title: CharacterPoseType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **CharacterPoseType_Stand** | Value: **0** |
-| **CharacterPoseType_Crouch** | Value: **1** |
-| **CharacterPoseType_Prone** | Value: **2** |
+| **CharacterPoseType\_Stand** | Value: **0** |
+| **CharacterPoseType\_Crouch** | Value: **1** |
+| **CharacterPoseType\_Prone** | Value: **2** |
 | **CharacterPoseTypeCount** | Value: **3** |
 

@@ -3,6 +3,7 @@ title: ObjectiveType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **OTPrimary** | Value: **0** |

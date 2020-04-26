@@ -3,8 +3,9 @@ title: LimiterChannelMode
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **LimiterChannelMode_Independent** | Value: **0** |
-| **LimiterChannelMode_Grouped** | Value: **1** |
+| **LimiterChannelMode\_Independent** | Value: **0** |
+| **LimiterChannelMode\_Grouped** | Value: **1** |
 

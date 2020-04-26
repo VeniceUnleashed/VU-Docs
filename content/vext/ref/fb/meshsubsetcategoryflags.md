@@ -3,14 +3,15 @@ title: MeshSubsetCategoryFlags
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **MeshSubsetCategoryFlags_Opaque** | Value: **1** |
-| **MeshSubsetCategoryFlags_Transparent** | Value: **2** |
-| **MeshSubsetCategoryFlags_TransparentDecal** | Value: **4** |
-| **MeshSubsetCategoryFlags_Normal** | Value: **7** |
-| **MeshSubsetCategoryFlags_ZOnly** | Value: **8** |
-| **MeshSubsetCategoryFlags_DynamicEnvmap** | Value: **16** |
-| **MeshSubsetCategoryFlags_PlanarReflection** | Value: **32** |
-| **MeshSubsetCategoryFlags_All** | Value: **63** |
+| **MeshSubsetCategoryFlags\_Opaque** | Value: **1** |
+| **MeshSubsetCategoryFlags\_Transparent** | Value: **2** |
+| **MeshSubsetCategoryFlags\_TransparentDecal** | Value: **4** |
+| **MeshSubsetCategoryFlags\_Normal** | Value: **7** |
+| **MeshSubsetCategoryFlags\_ZOnly** | Value: **8** |
+| **MeshSubsetCategoryFlags\_DynamicEnvmap** | Value: **16** |
+| **MeshSubsetCategoryFlags\_PlanarReflection** | Value: **32** |
+| **MeshSubsetCategoryFlags\_All** | Value: **63** |
 

@@ -3,6 +3,7 @@ title: ReadinessState
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **RSPatrol** | Value: **0** |

@@ -3,6 +3,7 @@ title: InputActionMapPlatform
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **IAMPWin32** | Value: **0** |

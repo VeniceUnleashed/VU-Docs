@@ -3,8 +3,9 @@ title: UIInterruptID
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **UIInterruptID_None** | Value: **0** |
-| **UIInterruptID_ControllerPull** | Value: **1** |
+| **UIInterruptID\_None** | Value: **0** |
+| **UIInterruptID\_ControllerPull** | Value: **1** |
 

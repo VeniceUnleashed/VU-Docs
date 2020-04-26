@@ -3,10 +3,11 @@ title: DestructionConnectivityType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **DestructionConnectivityType_Full** | Value: **0** |
-| **DestructionConnectivityType_Partial** | Value: **1** |
-| **DestructionConnectivityType_None** | Value: **2** |
-| **DestructionConnectivityType_Inherited** | Value: **3** |
+| **DestructionConnectivityType\_Full** | Value: **0** |
+| **DestructionConnectivityType\_Partial** | Value: **1** |
+| **DestructionConnectivityType\_None** | Value: **2** |
+| **DestructionConnectivityType\_Inherited** | Value: **3** |
 

@@ -3,10 +3,11 @@ title: InteractionEntityType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **IET_None** | Value: **0** |
-| **IET_RushCrateArm** | Value: **1** |
-| **IET_RushCrateDisarm** | Value: **2** |
-| **IET_CTFFlag** | Value: **3** |
+| **IET\_None** | Value: **0** |
+| **IET\_RushCrateArm** | Value: **1** |
+| **IET\_RushCrateDisarm** | Value: **2** |
+| **IET\_CTFFlag** | Value: **3** |
 

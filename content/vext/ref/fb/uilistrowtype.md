@@ -3,18 +3,19 @@ title: UIListRowType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **MixedRows** | Value: **0** |
 | **basicRow** | Value: **1** |
 | **baseSpawn** | Value: **2** |
 | **squadSpawn** | Value: **3** |
-| **MenuRow_34px** | Value: **4** |
-| **MenuRow_64px** | Value: **5** |
+| **MenuRow\_34px** | Value: **4** |
+| **MenuRow\_64px** | Value: **5** |
 | **ScoreboardRow** | Value: **6** |
 | **ScoreboardRow64Players** | Value: **7** |
 | **TextSelectorRow** | Value: **8** |
-| **TextSelectorRow_28px** | Value: **9** |
+| **TextSelectorRow\_28px** | Value: **9** |
 | **BarSelectorRow** | Value: **10** |
 | **SquadRow** | Value: **11** |
 | **ServerListRow** | Value: **12** |
@@ -38,8 +39,8 @@ title: UIListRowType
 | **ServerInfoSettingsRow** | Value: **30** |
 | **ServerInfoPlayersRow** | Value: **31** |
 | **CheckBoxRow** | Value: **32** |
-| **BarSelectorRow_28px** | Value: **33** |
-| **BasicRow_34px** | Value: **34** |
+| **BarSelectorRow\_28px** | Value: **33** |
+| **BasicRow\_34px** | Value: **34** |
 | **KeyBindingRow** | Value: **35** |
 | **SquadListRow** | Value: **36** |
 | **teamSpawn** | Value: **37** |
@@ -49,6 +50,6 @@ title: UIListRowType
 | **ServerSettingsRow** | Value: **41** |
 | **ServerPlayersRow** | Value: **42** |
 | **TopPlayersRow** | Value: **43** |
-| **MenuRowPremium_34px** | Value: **44** |
-| **MenuRowPremium_64px** | Value: **45** |
+| **MenuRowPremium\_34px** | Value: **44** |
+| **MenuRowPremium\_64px** | Value: **45** |
 

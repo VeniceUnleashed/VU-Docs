@@ -3,8 +3,9 @@ title: PersonViewMode
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **PersonViewMode_FirstPerson** | Value: **0** |
-| **PersonViewMode_ThirdPerson** | Value: **1** |
+| **PersonViewMode\_FirstPerson** | Value: **0** |
+| **PersonViewMode\_ThirdPerson** | Value: **1** |
 

@@ -3,7 +3,8 @@ title: EntropyCodecType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **EntropyCodecType_Arithmetic** | Value: **0** |
+| **EntropyCodecType\_Arithmetic** | Value: **0** |
 

@@ -3,13 +3,14 @@ title: AwardKitAssociation
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **AwardKitAssociation_Undefined** | Value: **0** |
-| **AwardKitAssociation_Assault** | Value: **1** |
-| **AwardKitAssociation_Engineer** | Value: **2** |
-| **AwardKitAssociation_Recon** | Value: **3** |
-| **AwardKitAssociation_Support** | Value: **4** |
-| **AwardKitAssociation_All** | Value: **5** |
-| **AwardKitAssociation_LAST_ITEM** | Value: **6** |
+| **AwardKitAssociation\_Undefined** | Value: **0** |
+| **AwardKitAssociation\_Assault** | Value: **1** |
+| **AwardKitAssociation\_Engineer** | Value: **2** |
+| **AwardKitAssociation\_Recon** | Value: **3** |
+| **AwardKitAssociation\_Support** | Value: **4** |
+| **AwardKitAssociation\_All** | Value: **5** |
+| **AwardKitAssociation\_LAST\_ITEM** | Value: **6** |
 

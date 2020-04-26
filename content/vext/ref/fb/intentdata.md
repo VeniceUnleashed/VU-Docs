@@ -2,56 +2,83 @@
 title: IntentData
 ---
 
-
 ## Summary
+
 ### Constructors
-| |
-| ----------- |
+
+|  |
+| --- |
 | **[IntentData](#constructor-0)**() |
+| **[IntentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/type/guid)) |
 
 ### Properties
+
 | Name | Type |
 | ---- | ---- |
 | {{< prop "name" >}} | string |
 | {{< prop "defaultModifier" >}} | float |
 
 ### Methods
+
 | Method | Returns |
-| ------ | ---- |
+| ------ | ------- |
 | **[Clone](#clone)**() | [IntentData](/vext/ref/fb/intentdata) |
 
 ### Static members
+
 | Name | Type |
 | ---- | ---- |
-| {{< static "IntentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
+| {{< static "IntentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/type/typeinformation) |
 
 ## Constructors
+
 ### IntentData {#constructor-0}
+
 > **IntentData**()
 
-Creates a new [IntentData](/vext/ref/fb/intentdata) frostbite structure.
+Creates a new [IntentData](/vext/ref/fb/intentdata) frostbite instance.
+
+### IntentData {#constructor-1}
+
+> **IntentData**(guid: [Guid](/vext/ref/shared/type/guid))
+
+Creates a new [IntentData](/vext/ref/fb/intentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/type/guid).
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/type/guid) | The [Guid](/vext/ref/shared/type/guid) to assign to the newly created instance. |
 
 ## Properties
+
 ### {{% prop-heading "name" %}}
+
 > **string**
 
 ### {{% prop-heading "defaultModifier" %}}
+
 > **float**
 
 ## Methods
-### Clone
+
+### Clone {#clone}
+
 > **Clone**(): [IntentData](/vext/ref/fb/intentdata)
 
-Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
+Creates a shallow-copy clone of this structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of this structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/type/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/type/datacontainer)) will be referencing the same instance.
 
 #### Returns
+
 | Type | Description |
 | ---- | ----------- |
 | **[IntentData](/vext/ref/fb/intentdata)** | The newly created structure. |
 
 ## Static members
+
 ### {{% static-heading "typeInfo" %}}
-> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+> **[TypeInformation](/vext/ref/shared/type/typeinformation)**
 
 The type information for the [IntentData](/vext/ref/fb/intentdata) type.
 

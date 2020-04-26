@@ -3,6 +3,7 @@ title: WarnTarget
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **wtWarnSoldierAndVehicle** | Value: **0** |

@@ -3,6 +3,7 @@ title: StrengthType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **Infantry** | Value: **0** |

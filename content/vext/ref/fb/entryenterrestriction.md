@@ -3,8 +3,9 @@ title: EntryEnterRestriction
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **EntryEnterRestriction_NoRestriction** | Value: **0** |
-| **EntryEnterRestriction_OnlyPrimaryEntry** | Value: **1** |
+| **EntryEnterRestriction\_NoRestriction** | Value: **0** |
+| **EntryEnterRestriction\_OnlyPrimaryEntry** | Value: **1** |
 

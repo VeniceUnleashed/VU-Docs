@@ -3,12 +3,13 @@ title: TextureType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **TextureType_2d** | Value: **0** |
-| **TextureType_Cube** | Value: **1** |
-| **TextureType_3d** | Value: **2** |
-| **TextureType_2dArray** | Value: **3** |
-| **TextureType_1dArray** | Value: **4** |
-| **TextureType_1d** | Value: **5** |
+| **TextureType\_2d** | Value: **0** |
+| **TextureType\_Cube** | Value: **1** |
+| **TextureType\_3d** | Value: **2** |
+| **TextureType\_2dArray** | Value: **3** |
+| **TextureType\_1dArray** | Value: **4** |
+| **TextureType\_1d** | Value: **5** |
 

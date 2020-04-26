@@ -3,6 +3,7 @@ title: CoverSelectionMethod
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **CSMAgainstThreatPosition** | Value: **0** |

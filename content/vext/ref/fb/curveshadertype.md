@@ -3,6 +3,7 @@ title: CurveShaderType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **CstSine** | Value: **0** |

@@ -3,6 +3,7 @@ title: CustomizationConstants
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **MaxAttachedSockets** | Value: **4** |

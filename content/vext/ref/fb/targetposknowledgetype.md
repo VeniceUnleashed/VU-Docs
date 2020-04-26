@@ -3,6 +3,7 @@ title: TargetPosKnowledgeType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **TargetPosKnown** | Value: **0** |

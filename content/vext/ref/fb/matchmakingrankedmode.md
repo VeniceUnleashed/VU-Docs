@@ -3,9 +3,10 @@ title: MatchmakingRankedMode
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **MatchmakingRankedMode_Ranked** | Value: **0** |
-| **MatchmakingRankedMode_Unranked** | Value: **1** |
-| **MatchmakingRankedMode_Any** | Value: **2** |
+| **MatchmakingRankedMode\_Ranked** | Value: **0** |
+| **MatchmakingRankedMode\_Unranked** | Value: **1** |
+| **MatchmakingRankedMode\_Any** | Value: **2** |
 

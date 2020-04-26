@@ -3,14 +3,15 @@ title: VehicleHudType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **VehicleHudType_Car** | Value: **0** |
-| **VehicleHudType_Tank** | Value: **1** |
-| **VehicleHudType_Boat** | Value: **2** |
-| **VehicleHudType_Helicopter** | Value: **3** |
-| **VehicleHudType_Stationary** | Value: **4** |
-| **VehicleHudType_Strategic** | Value: **5** |
-| **VehicleHudType_Dummy** | Value: **6** |
-| **VehicleHudType_Count** | Value: **7** |
+| **VehicleHudType\_Car** | Value: **0** |
+| **VehicleHudType\_Tank** | Value: **1** |
+| **VehicleHudType\_Boat** | Value: **2** |
+| **VehicleHudType\_Helicopter** | Value: **3** |
+| **VehicleHudType\_Stationary** | Value: **4** |
+| **VehicleHudType\_Strategic** | Value: **5** |
+| **VehicleHudType\_Dummy** | Value: **6** |
+| **VehicleHudType\_Count** | Value: **7** |
 

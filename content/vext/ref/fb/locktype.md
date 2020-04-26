@@ -3,6 +3,7 @@ title: LockType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **LockAlways** | Value: **0** |

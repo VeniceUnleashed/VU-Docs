@@ -3,10 +3,11 @@ title: DynamicAvoidanceMode
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **DynamicAvoidanceMode_Never** | Value: **0** |
-| **DynamicAvoidanceMode_WhenScripted** | Value: **1** |
-| **DynamicAvoidanceMode_WhenNotScripted** | Value: **2** |
-| **DynamicAvoidanceMode_Always** | Value: **3** |
+| **DynamicAvoidanceMode\_Never** | Value: **0** |
+| **DynamicAvoidanceMode\_WhenScripted** | Value: **1** |
+| **DynamicAvoidanceMode\_WhenNotScripted** | Value: **2** |
+| **DynamicAvoidanceMode\_Always** | Value: **3** |
 

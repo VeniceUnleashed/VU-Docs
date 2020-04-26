@@ -3,6 +3,7 @@ title: AudioSystemSpeakerSetup
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **FiveDotOne** | Value: **6** |

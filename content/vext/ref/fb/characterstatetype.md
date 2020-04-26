@@ -3,22 +3,23 @@ title: CharacterStateType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **CharacterStateType_OnGround** | Value: **0** |
-| **CharacterStateType_Jumping** | Value: **1** |
-| **CharacterStateType_InAir** | Value: **2** |
-| **CharacterStateType_Climbing** | Value: **3** |
-| **CharacterStateType_Falling** | Value: **4** |
-| **CharacterStateType_User_0** | Value: **5** |
-| **CharacterStateType_Parachute** | Value: **5** |
-| **CharacterStateType_User_1** | Value: **6** |
-| **CharacterStateType_Swimming** | Value: **6** |
-| **CharacterStateType_User_2** | Value: **7** |
-| **CharacterStateType_AnimationControlled** | Value: **7** |
-| **CharacterStateType_User_3** | Value: **8** |
-| **CharacterStateType_Sliding** | Value: **8** |
-| **CharacterStateType_User_4** | Value: **9** |
-| **CharacterStateType_User_5** | Value: **10** |
-| **CharacterStateType_StateCount** | Value: **11** |
+| **CharacterStateType\_OnGround** | Value: **0** |
+| **CharacterStateType\_Jumping** | Value: **1** |
+| **CharacterStateType\_InAir** | Value: **2** |
+| **CharacterStateType\_Climbing** | Value: **3** |
+| **CharacterStateType\_Falling** | Value: **4** |
+| **CharacterStateType\_User\_0** | Value: **5** |
+| **CharacterStateType\_Parachute** | Value: **5** |
+| **CharacterStateType\_User\_1** | Value: **6** |
+| **CharacterStateType\_Swimming** | Value: **6** |
+| **CharacterStateType\_User\_2** | Value: **7** |
+| **CharacterStateType\_AnimationControlled** | Value: **7** |
+| **CharacterStateType\_User\_3** | Value: **8** |
+| **CharacterStateType\_Sliding** | Value: **8** |
+| **CharacterStateType\_User\_4** | Value: **9** |
+| **CharacterStateType\_User\_5** | Value: **10** |
+| **CharacterStateType\_StateCount** | Value: **11** |
 

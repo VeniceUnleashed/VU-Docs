@@ -3,12 +3,13 @@ title: CompareOp
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **CompareOp_Equal** | Value: **0** |
-| **CompareOp_NotEqual** | Value: **1** |
-| **CompareOp_Greater** | Value: **2** |
-| **CompareOp_Less** | Value: **3** |
-| **CompareOp_GreaterOrEqual** | Value: **4** |
-| **CompareOp_LessOrEqual** | Value: **5** |
+| **CompareOp\_Equal** | Value: **0** |
+| **CompareOp\_NotEqual** | Value: **1** |
+| **CompareOp\_Greater** | Value: **2** |
+| **CompareOp\_Less** | Value: **3** |
+| **CompareOp\_GreaterOrEqual** | Value: **4** |
+| **CompareOp\_LessOrEqual** | Value: **5** |
 

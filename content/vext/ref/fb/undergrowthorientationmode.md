@@ -3,9 +3,10 @@ title: UndergrowthOrientationMode
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **UndergrowthOrientationMode_Horizontal** | Value: **0** |
-| **UndergrowthOrientationMode_LeanToTerrain** | Value: **1** |
-| **UndergrowthOrientationMode_SkewToTerrain** | Value: **2** |
+| **UndergrowthOrientationMode\_Horizontal** | Value: **0** |
+| **UndergrowthOrientationMode\_LeanToTerrain** | Value: **1** |
+| **UndergrowthOrientationMode\_SkewToTerrain** | Value: **2** |
 

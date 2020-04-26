@@ -3,6 +3,7 @@ title: CompareOperation
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **Equal** | Value: **0** |

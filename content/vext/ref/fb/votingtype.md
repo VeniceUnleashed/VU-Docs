@@ -3,6 +3,7 @@ title: VotingType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **VotingMap** | Value: **0** |

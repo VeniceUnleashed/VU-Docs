@@ -3,8 +3,9 @@ title: MixerValueUIOrientation
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **MixerValueUIOrientation_Horizontal** | Value: **0** |
-| **MixerValueUIOrientation_Vertical** | Value: **1** |
+| **MixerValueUIOrientation\_Horizontal** | Value: **0** |
+| **MixerValueUIOrientation\_Vertical** | Value: **1** |
 

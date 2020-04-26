@@ -3,6 +3,7 @@ title: ReloadType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **rtSingleBullet** | Value: **0** |

@@ -3,6 +3,7 @@ title: ProfileOptionsType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **GstAudio** | Value: **0** |

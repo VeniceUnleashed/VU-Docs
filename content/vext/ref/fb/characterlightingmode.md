@@ -3,8 +3,9 @@ title: CharacterLightingMode
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **CharacterLightingMode_Add** | Value: **0** |
-| **CharacterLightingMode_Blend** | Value: **1** |
+| **CharacterLightingMode\_Add** | Value: **0** |
+| **CharacterLightingMode\_Blend** | Value: **1** |
 

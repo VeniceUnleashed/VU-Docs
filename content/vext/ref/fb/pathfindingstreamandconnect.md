@@ -3,8 +3,9 @@ title: PathfindingStreamAndConnect
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **PathfindingStreamAndConnect_Grid** | Value: **0** |
-| **PathfindingStreamAndConnect_Manual** | Value: **1** |
+| **PathfindingStreamAndConnect\_Grid** | Value: **0** |
+| **PathfindingStreamAndConnect\_Manual** | Value: **1** |
 

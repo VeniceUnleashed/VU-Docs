@@ -3,13 +3,14 @@ title: RigidBodyQualityType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **RigidBodyQualityType_Invalid** | Value: **0** |
-| **RigidBodyQualityType_Fixed** | Value: **1** |
-| **RigidBodyQualityType_Debris** | Value: **2** |
-| **RigidBodyQualityType_DebrisSimpleToi** | Value: **3** |
-| **RigidBodyQualityType_Moving** | Value: **4** |
-| **RigidBodyQualityType_Critical** | Value: **5** |
-| **RigidBodyQualityType_Size** | Value: **6** |
+| **RigidBodyQualityType\_Invalid** | Value: **0** |
+| **RigidBodyQualityType\_Fixed** | Value: **1** |
+| **RigidBodyQualityType\_Debris** | Value: **2** |
+| **RigidBodyQualityType\_DebrisSimpleToi** | Value: **3** |
+| **RigidBodyQualityType\_Moving** | Value: **4** |
+| **RigidBodyQualityType\_Critical** | Value: **5** |
+| **RigidBodyQualityType\_Size** | Value: **6** |
 

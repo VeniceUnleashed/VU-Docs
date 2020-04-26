@@ -3,11 +3,12 @@ title: MatchmakingSessionMode
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **MatchmakingSessionMode_FindDedicatedServer** | Value: **0** |
-| **MatchmakingSessionMode_ResetDedicatedServer** | Value: **1** |
-| **MatchmakingSessionMode_FindPeerGame** | Value: **2** |
-| **MatchmakingSessionMode_CreatePeerGame** | Value: **3** |
-| **MatchmakingSessionMode_Invalid** | Value: **4** |
+| **MatchmakingSessionMode\_FindDedicatedServer** | Value: **0** |
+| **MatchmakingSessionMode\_ResetDedicatedServer** | Value: **1** |
+| **MatchmakingSessionMode\_FindPeerGame** | Value: **2** |
+| **MatchmakingSessionMode\_CreatePeerGame** | Value: **3** |
+| **MatchmakingSessionMode\_Invalid** | Value: **4** |
 

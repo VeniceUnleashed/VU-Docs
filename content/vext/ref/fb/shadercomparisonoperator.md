@@ -3,6 +3,7 @@ title: ShaderComparisonOperator
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **ScoEquals** | Value: **0** |

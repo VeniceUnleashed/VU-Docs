@@ -3,22 +3,23 @@ title: ClientState
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **ClientState_WaitingForStaticBundleLoad** | Value: **0** |
-| **ClientState_LoadProfileOptions** | Value: **1** |
-| **ClientState_LostConnection** | Value: **2** |
-| **ClientState_Startup** | Value: **3** |
-| **ClientState_StartServer** | Value: **4** |
-| **ClientState_WaitingForLevel** | Value: **5** |
-| **ClientState_StartLoadingLevel** | Value: **6** |
-| **ClientState_WaitingForLevelLoaded** | Value: **7** |
-| **ClientState_WaitingForLevelLink** | Value: **8** |
-| **ClientState_LevelLinked** | Value: **9** |
-| **ClientState_WaitingUIIngame** | Value: **10** |
-| **ClientState_Ingame** | Value: **11** |
-| **ClientState_ConnectToServer** | Value: **12** |
-| **ClientState_WaitingUILoading** | Value: **13** |
-| **ClientState_WaitingUIUnload** | Value: **14** |
-| **ClientState_None** | Value: **15** |
+| **ClientState\_WaitingForStaticBundleLoad** | Value: **0** |
+| **ClientState\_LoadProfileOptions** | Value: **1** |
+| **ClientState\_LostConnection** | Value: **2** |
+| **ClientState\_Startup** | Value: **3** |
+| **ClientState\_StartServer** | Value: **4** |
+| **ClientState\_WaitingForLevel** | Value: **5** |
+| **ClientState\_StartLoadingLevel** | Value: **6** |
+| **ClientState\_WaitingForLevelLoaded** | Value: **7** |
+| **ClientState\_WaitingForLevelLink** | Value: **8** |
+| **ClientState\_LevelLinked** | Value: **9** |
+| **ClientState\_WaitingUIIngame** | Value: **10** |
+| **ClientState\_Ingame** | Value: **11** |
+| **ClientState\_ConnectToServer** | Value: **12** |
+| **ClientState\_WaitingUILoading** | Value: **13** |
+| **ClientState\_WaitingUIUnload** | Value: **14** |
+| **ClientState\_None** | Value: **15** |
 

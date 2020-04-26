@@ -3,6 +3,7 @@ title: ForceMagnitudeInputType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **FMITYaw** | Value: **0** |

@@ -3,6 +3,7 @@ title: BlinkType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
 | **BTHold** | Value: **0** |

@@ -3,11 +3,12 @@ title: SurfaceShaderType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **SurfaceShaderType_Opaque** | Value: **0** |
-| **SurfaceShaderType_OpaqueAlphaTest** | Value: **1** |
-| **SurfaceShaderType_OpaqueAlphaTestSimple** | Value: **2** |
-| **SurfaceShaderType_Transparent** | Value: **3** |
-| **SurfaceShaderType_TransparentDecal** | Value: **4** |
+| **SurfaceShaderType\_Opaque** | Value: **0** |
+| **SurfaceShaderType\_OpaqueAlphaTest** | Value: **1** |
+| **SurfaceShaderType\_OpaqueAlphaTestSimple** | Value: **2** |
+| **SurfaceShaderType\_Transparent** | Value: **3** |
+| **SurfaceShaderType\_TransparentDecal** | Value: **4** |
 

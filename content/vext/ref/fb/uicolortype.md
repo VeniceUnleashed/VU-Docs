@@ -3,25 +3,26 @@ title: UIColorType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **UIColorType_Unselected** | Value: **0** |
-| **UIColorType_Selected** | Value: **1** |
-| **UIColorType_SelectInside** | Value: **2** |
-| **UIColorType_UnselectedInside** | Value: **3** |
-| **UIColorType_Locked** | Value: **4** |
-| **UIColorType_IconBg** | Value: **5** |
-| **UIColorType_FrameSoft** | Value: **6** |
-| **UIColorType_FrameHard** | Value: **7** |
-| **UIColorType_HudYellow** | Value: **8** |
-| **UIColorType_CriticalColor** | Value: **9** |
-| **UIColorType_Friendly** | Value: **10** |
-| **UIColorType_Enemy** | Value: **11** |
-| **UIColorType_SquadColor** | Value: **12** |
-| **UIColorType_NormalTextColor** | Value: **13** |
-| **UIColorType_HeaderTextColor** | Value: **14** |
-| **UIColorType_StaticHUDColor** | Value: **15** |
-| **UIColorType_DynamicHUDColor** | Value: **16** |
-| **UIColorType_MouseOver** | Value: **17** |
-| **UIColorType_MouseOut** | Value: **18** |
+| **UIColorType\_Unselected** | Value: **0** |
+| **UIColorType\_Selected** | Value: **1** |
+| **UIColorType\_SelectInside** | Value: **2** |
+| **UIColorType\_UnselectedInside** | Value: **3** |
+| **UIColorType\_Locked** | Value: **4** |
+| **UIColorType\_IconBg** | Value: **5** |
+| **UIColorType\_FrameSoft** | Value: **6** |
+| **UIColorType\_FrameHard** | Value: **7** |
+| **UIColorType\_HudYellow** | Value: **8** |
+| **UIColorType\_CriticalColor** | Value: **9** |
+| **UIColorType\_Friendly** | Value: **10** |
+| **UIColorType\_Enemy** | Value: **11** |
+| **UIColorType\_SquadColor** | Value: **12** |
+| **UIColorType\_NormalTextColor** | Value: **13** |
+| **UIColorType\_HeaderTextColor** | Value: **14** |
+| **UIColorType\_StaticHUDColor** | Value: **15** |
+| **UIColorType\_DynamicHUDColor** | Value: **16** |
+| **UIColorType\_MouseOver** | Value: **17** |
+| **UIColorType\_MouseOut** | Value: **18** |
 

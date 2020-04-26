@@ -3,15 +3,16 @@ title: ShapeType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **ShapeType_Hull** | Value: **0** |
-| **ShapeType_Box** | Value: **1** |
-| **ShapeType_OBB** | Value: **2** |
-| **ShapeType_Sphere** | Value: **3** |
-| **ShapeType_Cylinder** | Value: **4** |
-| **ShapeType_Capsule** | Value: **5** |
-| **ShapeType_Mesh** | Value: **6** |
-| **ShapeType_Decompose** | Value: **7** |
-| **ShapeType_Unknown** | Value: **8** |
+| **ShapeType\_Hull** | Value: **0** |
+| **ShapeType\_Box** | Value: **1** |
+| **ShapeType\_OBB** | Value: **2** |
+| **ShapeType\_Sphere** | Value: **3** |
+| **ShapeType\_Cylinder** | Value: **4** |
+| **ShapeType\_Capsule** | Value: **5** |
+| **ShapeType\_Mesh** | Value: **6** |
+| **ShapeType\_Decompose** | Value: **7** |
+| **ShapeType\_Unknown** | Value: **8** |
 

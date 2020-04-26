@@ -3,12 +3,13 @@ title: EventCompareGateType
 ---
 
 ## Values
+
 | Name | Description |
 | ---- | ----------- |
-| **EventCompareGate_Equals** | Value: **0** |
-| **EventCompareGate_NotEquals** | Value: **1** |
-| **EventCompareGate_Less** | Value: **2** |
-| **EventCompareGate_LessEquals** | Value: **3** |
-| **EventCompareGate_Greater** | Value: **4** |
-| **EventCompareGate_GreaterEquals** | Value: **5** |
+| **EventCompareGate\_Equals** | Value: **0** |
+| **EventCompareGate\_NotEquals** | Value: **1** |
+| **EventCompareGate\_Less** | Value: **2** |
+| **EventCompareGate\_LessEquals** | Value: **3** |
+| **EventCompareGate\_Greater** | Value: **4** |
+| **EventCompareGate\_GreaterEquals** | Value: **5** |
 
