@@ -164,10 +164,14 @@ hr {
 }
 
 .td-content > h2:not(:first-child) {
-  margin-top: 1.5rem;
+  margin-top: 2.25rem;
 }
 
-.td-content > h3, .td-content > h4, .td-content > h5, .td-content > h6 {
+.td-content > h3 {
+  margin-top: 2.25rem;
+}
+
+.td-content > h4, .td-content > h5, .td-content > h6 {
   margin-top: 2rem;
 }
 
