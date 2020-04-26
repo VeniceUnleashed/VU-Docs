@@ -1,0 +1,70 @@
+name: GameEntity
+type: class
+inherits: SpatialEntity
+
+constructors:
+  -
+    params:
+      other:
+        type: Entity
+  -
+    params:
+      other:
+        type: SpatialEntity
+
+methods:
+  -
+    name: Spawn
+    params:
+      transform:
+        type: LinearTransform
+      fireEnableEvent:
+        type: bool
+  -
+    name: RegisterSpawnCallback
+    params:
+      callback:
+        type: callable
+        description: "A callback in the form `function(entity: Entity): bool`."
+    returns:
+      type: int
+  -
+    name: RegisterSpawnCallback
+    params:
+      context:
+        type: any
+        description: A context value to pass to the callback.
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, entity: Entity): bool`."
+    returns:
+      type: int
+  -
+    name: UnregisterSpawnCallback
+    params:
+      handle:
+        type: int
+  -
+    name: RegisterUnspawnCallback
+    params:
+      callback:
+        type: callable
+        description: "A callback in the form `function(entity: Entity): bool`."
+    returns:
+      type: int
+  -
+    name: RegisterUnspawnCallback
+    params:
+      context:
+        type: any
+        description: A context value to pass to the callback.
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, entity: Entity): bool`."
+    returns:
+      type: int
+  -
+    name: UnregisterUnspawnCallback
+    params:
+      handle:
+        type: int

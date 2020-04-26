@@ -1,0 +1,17 @@
+name: ConsoleCommand
+type: class
+
+properties:
+  name:
+    type: string
+    readOnly: true
+  description:
+    type: string
+    readOnly: true
+  groupName:
+    type: string
+    readOnly: true
+
+methods:
+  -
+    name: Deregister

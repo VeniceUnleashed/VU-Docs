@@ -1,0 +1,17 @@
+name: DebugVertex
+type: class
+
+constructors:
+  -
+  -
+    params:
+      pos:
+        type: Vec3
+      color:
+        type: Vec4
+
+properties:
+  pos:
+    type: Vec3
+  color:
+    type: Vec4

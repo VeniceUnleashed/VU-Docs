@@ -1,0 +1,47 @@
+name: AimingSimulation
+type: class
+
+properties:
+  aimAssist:
+    type: AimAssist
+    readOnly: true
+    nullable: true
+  data:
+    type: DataContainer
+    nullable: true
+  sway:
+    type: Vec2
+  yaw:
+    type: float
+  pitch:
+    type: float
+  aimYawTimer:
+    type: float
+  aimPitchTimer:
+    type: float
+  zoomTransitionTime:
+    type: float
+  fovMultiplier:
+    type: float
+  fovTransitionTimer:
+    type: float
+  fadeTimer:
+    type: float
+  currentZoomTransitionTime:
+    type: float
+  currentFovTransitionTime:
+    type: float
+  zoomLevel:
+    type: int
+  oldZoomLevel:
+    type: int
+  switchToZoomLevel:
+    type: int
+  zoomLevelLocked:
+    type: bool
+  zoomDisabled:
+    type: bool
+  trySwitchOnNextUpdate:
+    type: bool
+  forceZoom:
+    type: bool

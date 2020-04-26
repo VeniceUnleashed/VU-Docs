@@ -1,0 +1,21 @@
+name: ConceptCache
+type: class
+
+constructors:
+  -
+
+methods:
+  -
+    name: GetLevel
+    params:
+      concept:
+        type: InputConceptIdentifiers
+    returns:
+      type: float
+  -
+    name: SetLevel
+    params:
+      concept:
+        type: InputConceptIdentifiers
+      level:
+        type: float

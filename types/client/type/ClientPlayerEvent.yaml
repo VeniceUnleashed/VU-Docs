@@ -1,0 +1,21 @@
+name: ClientPlayerEvent
+type: class
+inherits: EntityEvent
+
+constructors:
+  -
+    params:
+      eventId:
+        type: int
+      player:
+        type: Player
+  -
+    params:
+      eventName:
+        type: string
+      player:
+        type: Player
+
+properties:
+  player:
+    type: Player

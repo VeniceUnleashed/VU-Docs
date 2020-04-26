@@ -1,0 +1,48 @@
+name: ControllableEntity
+type: class
+inherits: PhysicsEntity
+
+constructors:
+  -
+    params:
+      other:
+        type: Entity
+  -
+    params:
+      other:
+        type: SpatialEntity
+  -
+    params:
+      other:
+        type: GameEntity
+  -
+    params:
+      other:
+        type: PhysicsEntity
+
+properties:
+  entryCount:
+    type: int
+    readOnly: true
+
+methods:
+  -
+    name: GetPlayerInEntry
+    params:
+      entryId:
+        type: int
+    returns:
+      type: Player
+      nullable: true
+  -
+    name: GetDataForEntry
+    params:
+      entryId:
+        type: int
+    returns:
+      type: DataContainer
+      nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation

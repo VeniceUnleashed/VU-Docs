@@ -1,0 +1,75 @@
+name: Player
+type: class
+
+properties:
+  name:
+    type: string
+    readOnly: true
+  id:
+    type: int
+    readOnly: true
+  teamId:
+    type: TeamId
+    readOnly: true
+  squadId:
+    type: SquadId
+    readOnly: true
+  inVehicle:
+    type: bool
+    readOnly: true
+  soldier:
+    type: SoldierEntity
+    readOnly: true
+    nullable: true
+  corpse:
+    type: SoldierEntity
+    readOnly: true
+    nullable: true
+  attachedControllable:
+    type: ControllableEntity
+    readOnly: true
+    nullable: true
+  controlledControllable:
+    type: ControllableEntity
+    readOnly: true
+    nullable: true
+  isSquadLeader:
+    type: bool
+    readOnly: true
+  alive:
+    type: bool
+    readOnly: true
+  kills:
+    type: int
+    readOnly: true
+  deaths:
+    type: int
+    readOnly: true
+  time:
+    type: float
+    readOnly: true
+  score:
+    type: int
+    readOnly: true
+  input:
+    type: EntryInput
+    readOnly: true
+    nullable: true
+  controlledEntryId:
+    type: int
+    readOnly: true
+
+methods:
+  -
+    name: EnableInput
+    params:
+      action:
+        type: EntryInputActionEnum
+      enable:
+        type: bool
+
+operators:
+  -
+    type: eq
+    rhs: Player
+    returns: bool

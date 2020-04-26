@@ -1,0 +1,96 @@
+name: EffectParams
+type: class
+
+constructors:
+  -
+
+properties:
+  size:
+    type: int
+    readOnly: true
+
+methods:
+  -
+    name: SetBool
+    params:
+      name:
+        type: string
+      value:
+        type: bool
+  -
+    name: SetInt
+    params:
+      name:
+        type: string
+      value:
+        type: int
+  -
+    name: SetFloat
+    params:
+      name:
+        type: string
+      value:
+        type: float
+  -
+    name: SetVec4
+    params:
+      name:
+        type: string
+      value:
+        type: Vec4
+  -
+    name: GetBool
+    params:
+      name:
+        type: string
+    returns:
+      type: bool
+  -
+    name: GetInt
+    params:
+      name:
+        type: string
+    returns:
+      type: int
+  -
+    name: GetFloat
+    params:
+      name:
+        type: string
+    returns:
+      type: float
+  -
+    name: GetVec4
+    params:
+      name:
+        type: string
+    returns:
+      type: Vec4
+  -
+    name: HasBool
+    params:
+      name:
+        type: string
+    returns:
+      type: bool
+  -
+    name: HasInt
+    params:
+      name:
+        type: string
+    returns:
+      type: bool
+  -
+    name: HasFloat
+    params:
+      name:
+        type: string
+    returns:
+      type: bool
+  -
+    name: HasVec4
+    params:
+      name:
+        type: string
+    returns:
+      type: bool

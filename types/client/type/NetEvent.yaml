@@ -1,0 +1,6 @@
+name: NetEvent
+type: class
+
+methods:
+  -
+    name: Unsubscribe

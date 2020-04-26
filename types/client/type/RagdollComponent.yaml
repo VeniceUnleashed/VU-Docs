@@ -1,0 +1,145 @@
+name: RagdollComponent
+type: class
+
+properties:
+  data:
+    type: DataContainer
+    readOnly: true
+    nullable: true
+
+methods:
+  -
+    name: GetLocalTransform
+    params:
+      boneId:
+        type: int
+    returns:
+      type: QuatTransform
+      nullable: true
+  -
+    name: SetLocalTransform
+    params:
+      boneId:
+        type: int
+      transform:
+        type: QuatTransform
+  -
+    name: GetWorldTransform
+    params:
+      boneId:
+        type: int
+    returns:
+      type: QuatTransform
+      nullable: true
+  -
+    name: SetWorldTransform
+    params:
+      boneId:
+        type: int
+      transform:
+        type: QuatTransform
+  -
+    name: GetRenderTransform
+    params:
+      boneId:
+        type: int
+    returns:
+      type: QuatTransform
+      nullable: true
+  -
+    name: SetRenderTransform
+    params:
+      boneId:
+        type: int
+      transform:
+        type: QuatTransform
+  -
+    name: GetInterpolatedLocalTransform
+    params:
+      boneId:
+        type: int
+    returns:
+      type: QuatTransform
+      nullable: true
+  -
+    name: SetInterpolatedLocalTransform
+    params:
+      boneId:
+        type: int
+      transform:
+        type: QuatTransform
+  -
+    name: GetInterpolatedWorldTransform
+    params:
+      boneId:
+        type: int
+    returns:
+      type: QuatTransform
+      nullable: true
+  -
+    name: SetInterpolatedWorldTransform
+    params:
+      boneId:
+        type: int
+      transform:
+        type: QuatTransform
+  -
+    name: GetActiveWorldTransform
+    params:
+      boneId:
+        type: int
+    returns:
+      type: QuatTransform
+      nullable: true
+  -
+    name: SetActiveWorldTransform
+    params:
+      boneId:
+        type: int
+      transform:
+        type: QuatTransform
+  -
+    name: GetActiveLocalTransform
+    params:
+      boneId:
+        type: int
+    returns:
+      type: QuatTransform
+      nullable: true
+  -
+    name: SetActiveLocalTransform
+    params:
+      boneId:
+        type: int
+      transform:
+        type: QuatTransform
+  -
+    name: GetLocalTransform
+    params:
+      boneId:
+        type: int
+    returns:
+      type: QuatTransform
+      nullable: true
+  -
+    name: SetLocalTransform
+    params:
+      boneId:
+        type: int
+      transform:
+        type: QuatTransform
+  -
+    name: GetBoneVelocity
+    params:
+      boneId:
+        type: int
+    returns:
+      type: QuatTransform
+      nullable: true
+  -
+    name: SetBoneVelocity
+    params:
+      boneId:
+        type: int
+      transform:
+        type: QuatTransform

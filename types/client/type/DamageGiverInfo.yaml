@@ -1,0 +1,13 @@
+name: DamageGiverInfo
+type: class
+
+constructors:
+  -
+
+properties:
+  giver:
+    type: Player
+    nullable: true
+  weaponUnlock:
+    type: DataContainer
+    nullable: true

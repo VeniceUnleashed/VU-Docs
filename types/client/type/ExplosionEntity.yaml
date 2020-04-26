@@ -1,0 +1,35 @@
+name: ExplosionEntity
+type: class
+inherits: GameEntity
+
+constructors:
+  -
+    params:
+      other:
+        type: Entity
+  -
+    params:
+      other:
+        type: SpatialEntity
+  -
+    params:
+      other:
+        type: GameEntity
+
+methods:
+  -
+    name: Detonate
+    params:
+      transform:
+        type: LinearTransform
+      impactNormal:
+        type: Vec3
+      damageMultiplier:
+        type: float
+      shooterPlayer:
+        type: Player
+        nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation

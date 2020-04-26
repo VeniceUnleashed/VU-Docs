@@ -1,0 +1,106 @@
+name: VisualEnvironmentState
+type: class
+
+constructors:
+  -
+  -
+    params:
+      name:
+        type: string
+
+properties:
+  entityName:
+    type: string
+    readOnly: true
+  visibility:
+    type: float
+  priority:
+    type: int
+  overrideVisibility:
+    type: bool
+  excluded:
+    type: bool
+  activeEffectPosition:
+    type: Vec3
+  stateId:
+    type: int
+    readOnly: true
+  outdoorLight:
+    type: OutdoorLightData
+    nullable: true
+  enlighten:
+    type: EnlightenData
+    nullable: true
+  tonemap:
+    type: TonemapData
+    nullable: true
+  colorCorrection:
+    type: ColorCorrectionData
+    nullable: true
+  sky:
+    type: SkyData
+    nullable: true
+  fog:
+    type: FogData
+    nullable: true
+  wind:
+    type: WindData
+    nullable: true
+  sunFlare:
+    type: SunFlareData
+    nullable: true
+  dynamicAO:
+    type: DynamicAOData
+    nullable: true
+  dof:
+    type: DofData
+    nullable: true
+  vignette:
+    type: VignetteData
+    nullable: true
+  filmGrain:
+    type: FilmGrainData
+    nullable: true
+  lensScope:
+    type: LensScopeData
+    nullable: true
+  cameraParams:
+    type: CameraParamsData
+    nullable: true
+  screenEffect:
+    type: ScreenEffectData
+    nullable: true
+  damageEffect:
+    type: DamageEffectData
+    nullable: true
+  planarReflection:
+    type: PlanarReflectionData
+    nullable: true
+  dynamicEnvmap:
+    type: DynamicEnvmapData
+    nullable: true
+  characterLighting:
+    type: CharacterLightingData
+    nullable: true
+  motionBlur:
+    type: MotionBlurData
+    nullable: true
+  debug:
+    type: DebugData
+    nullable: true
+  shaderParams:
+    type: ShaderParamsData
+    table: true
+    readOnly: true
+
+methods:
+  -
+    name: AddShaderParams
+    params:
+      params:
+        type: ShaderParamsData
+  -
+    name: RemoveShaderParamsAt
+    params:
+      index:
+        type: int

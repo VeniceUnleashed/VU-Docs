@@ -1,0 +1,23 @@
+name: DamageInfo
+type: class
+
+constructors:
+  -
+
+properties:
+  position:
+    type: Vec3
+  direction:
+    type: Vec3
+  origin:
+    type: Vec3
+  damage:
+    type: float
+  distributeDamageOverTime:
+    type: float
+  boneIndex:
+    type: int
+  hitDirection:
+    type: int
+  isBulletDamage:
+    type: bool

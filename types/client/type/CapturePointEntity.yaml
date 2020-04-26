@@ -1,0 +1,47 @@
+name: CapturePointEntity
+type: class
+inherits: GameEntity
+
+constructors:
+  -
+    params:
+      other:
+        type: Entity
+  -
+    params:
+      other:
+        type: SpatialEntity
+  -
+    params:
+      other:
+        type: GameEntity
+
+properties:
+  contested:
+    type: bool
+    readOnly: true
+  team:
+    type: TeamId
+    readOnly: true
+  attackingTeam:
+    type: TeamId
+    readOnly: true
+  location:
+    type: float
+    readOnly: true
+  name:
+    type: string
+    readOnly: true
+  captureEnabled:
+    type: bool
+    readOnly: true
+  attacked:
+    type: bool
+    readOnly: true
+  controlled:
+    type: bool
+    readOnly: true
+
+static:
+  typeInfo:
+    type: TypeInformation

@@ -1,0 +1,99 @@
+name: SoldierEntity
+type: class
+inherits: ControllableEntity
+
+constructors:
+  -
+    params:
+      other:
+        type: Entity
+  -
+    params:
+      other:
+        type: SpatialEntity
+  -
+    params:
+      other:
+        type: GameEntity
+  -
+    params:
+      other:
+        type: PhysicsEntity
+  -
+    params:
+      other:
+        type: ControllableEntity
+
+properties:
+  worldTransform:
+    type: LinearTransform
+    readOnly: true
+  alive:
+    type: bool
+    readOnly: true
+  deathTimer:
+    type: float
+    readOnly: true
+  player:
+    type: Player
+    readOnly: true
+    nullable: true
+  health:
+    type: float
+    readOnly: true
+  authoritativeYaw:
+    type: float
+  authoritativePitch:
+    type: float
+  aimingEnable:
+    type: bool
+  forceInvisible:
+    type: bool
+  sprintRecoveryTimer:
+    type: float
+  wasSprinting:
+    type: bool
+  weaponsComponent:
+    type: SoldierWeaponsComponent
+    readOnly: true
+  ragdollComponent:
+    type: RagdollComponent
+    readOnly: true
+  isManDown:
+    type: bool
+    readOnly: true
+  isAlive:
+    type: bool
+    readOnly: true
+  isDead:
+    type: bool
+    readOnly: true
+  isDying:
+    type: bool
+    readOnly: true
+  isInteractiveManDown:
+    type: bool
+    readOnly: true
+  isFiring:
+    type: bool
+    readOnly: true
+  isReloading:
+    type: bool
+    readOnly: true
+
+methods:
+  -
+    name: SetPosition
+    params:
+      position:
+        type: Vec3
+
+operators:
+  -
+    type: eq
+    rhs: SoldierEntity
+    returns: bool
+
+static:
+  typeInfo:
+    type: TypeInformation

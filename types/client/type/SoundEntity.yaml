@@ -1,0 +1,19 @@
+name: SoundEntity
+type: class
+inherits: Entity
+
+constructors:
+  -
+    params:
+      other:
+        type: Entity
+
+methods:
+  -
+    name: Play
+  -
+    name: Pause
+
+static:
+  typeInfo:
+    type: TypeInformation

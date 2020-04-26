@@ -1,0 +1,25 @@
+name: ClientDoublePlayerEvent
+type: class
+inherits: ClientPlayerEvent
+
+constructors:
+  -
+    params:
+      eventId:
+        type: int
+      player:
+        type: Player
+      extraPlayer:
+        type: Player
+  -
+    params:
+      eventName:
+        type: string
+      player:
+        type: Player
+      extraPlayer:
+        type: Player
+
+properties:
+  extraPlayer:
+    type: Player
