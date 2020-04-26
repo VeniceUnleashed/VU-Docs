@@ -1,0 +1,35 @@
+name: AbstractLocoWaypointData
+type: class
+inherits: WaypointData
+
+constructors:
+  -
+    description: Creates a new AbstractLocoWaypointData frostbite instance.
+  -
+    description: Creates a new AbstractLocoWaypointData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type WaypointData to AbstractLocoWaypointData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: WaypointData
+        description: The instance to cast to AbstractLocoWaypointData.
+  -
+    description: Casts an instance of type DataContainer to AbstractLocoWaypointData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to AbstractLocoWaypointData.
+
+properties:
+  baseTask:
+    type: AILocoBaseTaskData
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the AbstractLocoWaypointData type.
+

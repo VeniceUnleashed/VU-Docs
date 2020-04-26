@@ -1,0 +1,15 @@
+name: UIPartIdentifier
+type: enum
+
+values:
+  HCI_None:
+    value: 0
+  HCI_RangeMeter:
+    value: 1
+  HCI_PredictedSight:
+    value: 2
+  HCI_VelocityVector:
+    value: 3
+  HCI_RadioAltitude:
+    value: 4
+

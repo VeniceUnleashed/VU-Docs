@@ -1,0 +1,47 @@
+name: EffectReferenceObjectData
+type: class
+inherits: ReferenceObjectData
+
+constructors:
+  -
+    description: Creates a new EffectReferenceObjectData frostbite instance.
+  -
+    description: Creates a new EffectReferenceObjectData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ReferenceObjectData to EffectReferenceObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ReferenceObjectData
+        description: The instance to cast to EffectReferenceObjectData.
+  -
+    description: Casts an instance of type GameObjectData to EffectReferenceObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to EffectReferenceObjectData.
+  -
+    description: Casts an instance of type GameDataContainer to EffectReferenceObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to EffectReferenceObjectData.
+  -
+    description: Casts an instance of type DataContainer to EffectReferenceObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to EffectReferenceObjectData.
+
+properties:
+  autoStart:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the EffectReferenceObjectData type.
+

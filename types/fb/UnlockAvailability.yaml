@@ -1,0 +1,11 @@
+name: UnlockAvailability
+type: enum
+
+values:
+  UnlockAvailability_All:
+    value: 0
+  UnlockAvailability_HumanPlayerOnly:
+    value: 1
+  UnlockAvailability_AIOnly:
+    value: 2
+

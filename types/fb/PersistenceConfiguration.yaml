@@ -1,0 +1,51 @@
+name: PersistenceConfiguration
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new PersistenceConfiguration frostbite instance.
+  -
+    description: Creates a new PersistenceConfiguration frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to PersistenceConfiguration. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to PersistenceConfiguration.
+  -
+    description: Casts an instance of type DataContainer to PersistenceConfiguration. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PersistenceConfiguration.
+
+properties:
+  statCategoryTreeCollection:
+    type: StatCategoryTreeCollection
+    nullable: true
+  mpProfile:
+    type: PlayerTypeProfile
+    nullable: true
+  spProfile:
+    type: PlayerTypeProfile
+    nullable: true
+  coopProfile:
+    type: PlayerTypeProfile
+    nullable: true
+  pointSystemParams:
+    type: PointSystemParamsAsset
+    nullable: true
+  licenseConfig:
+    type: LicenseConfiguration
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PersistenceConfiguration type.
+

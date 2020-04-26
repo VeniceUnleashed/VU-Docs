@@ -1,0 +1,36 @@
+name: DeltaNodeData
+type: class
+inherits: AudioGraphNodeData
+
+constructors:
+  -
+    description: Creates a new DeltaNodeData frostbite instance.
+  -
+    description: Creates a new DeltaNodeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphNodeData to DeltaNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphNodeData
+        description: The instance to cast to DeltaNodeData.
+  -
+    description: Casts an instance of type DataContainer to DeltaNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to DeltaNodeData.
+
+properties:
+  deltas:
+    type: DeltaGroup
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the DeltaNodeData type.
+

@@ -1,0 +1,76 @@
+name: UIMinimapData
+type: class
+
+constructors:
+  -
+    description: Creates a new UIMinimapData frostbite instance.
+  -
+    description: Creates a new UIMinimapData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+
+properties:
+  worldCenter:
+    type: Vec2
+  combatAreaColor:
+    type: Vec4
+  detailTextureTint:
+    type: Vec4
+  combatAreaMultiplyWrapAmount:
+    type: Vec2
+  vegetation:
+    type: UIMinimapDistanceFieldParams
+  fadeTexture:
+    type: TextureAsset
+    nullable: true
+  streamingMinimapDelay:
+    type: float
+  airRadarFadeTexture:
+    type: TextureAsset
+    nullable: true
+  detailTexture:
+    type: TextureAsset
+    nullable: true
+  detail:
+    type: UIMinimapDistanceFieldParams
+  streamingMinimapTransitionSpeed:
+    type: float
+  worldRotation:
+    type: float
+  worldRange:
+    type: float
+  combatAreaDistanceScale:
+    type: float
+  combatAreaFadeSpeed:
+    type: float
+  combatAreaAlphaThreshold:
+    type: float
+  combatAreaMultiplyTexture:
+    type: TextureAsset
+    nullable: true
+  worldSize:
+    type: float
+  airRadarRange:
+    type: float
+  combatAreaScale:
+    type: float
+  useStreamingMinimap:
+    type: bool
+  useCombatAreaTexture:
+    type: bool
+
+methods:
+  -
+    name: Clone
+    description: Creates a shallow-copy clone of this structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of this structure to all of its properties. Any properties that contain structure types (eg. Vec3) will be cloned when assigning, while properties that contain instance types (eg. DataContainer) will be referencing the same instance.
+    returns:
+      type: UIMinimapData
+      description: The newly created structure.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UIMinimapData type.
+

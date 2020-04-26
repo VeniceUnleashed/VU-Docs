@@ -1,0 +1,15 @@
+name: InvitePlatform
+type: enum
+
+values:
+  InvitePlatform_Invalid:
+    value: 0
+  InvitePlatform_X360:
+    value: 1
+  InvitePlatform_PS3:
+    value: 2
+  InvitePlatform_PC:
+    value: 3
+  InvitePlatform_Count:
+    value: 4
+

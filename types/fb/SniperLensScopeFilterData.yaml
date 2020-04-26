@@ -1,0 +1,57 @@
+name: SniperLensScopeFilterData
+type: class
+inherits: ScopeFilterData
+
+constructors:
+  -
+    description: Creates a new SniperLensScopeFilterData frostbite instance.
+  -
+    description: Creates a new SniperLensScopeFilterData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ScopeFilterData to SniperLensScopeFilterData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ScopeFilterData
+        description: The instance to cast to SniperLensScopeFilterData.
+  -
+    description: Casts an instance of type Asset to SniperLensScopeFilterData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to SniperLensScopeFilterData.
+  -
+    description: Casts an instance of type DataContainer to SniperLensScopeFilterData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SniperLensScopeFilterData.
+
+properties:
+  chromaticAberrationStrengths:
+    type: Vec2
+  blurCenter:
+    type: Vec2
+  chromaticAberrationColor1:
+    type: Vec3
+  chromaticAberrationColor2:
+    type: Vec3
+  radialBlendDistanceCoefficients:
+    type: Vec2
+  chromaticAberrationDisplacement1:
+    type: Vec2
+  chromaticAberrationDisplacement2:
+    type: Vec2
+  blurScale:
+    type: float
+  colorTintData:
+    type: ColorTintData
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SniperLensScopeFilterData type.
+

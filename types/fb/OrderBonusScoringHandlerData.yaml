@@ -1,0 +1,31 @@
+name: OrderBonusScoringHandlerData
+type: class
+inherits: ScoringHandlerData
+
+constructors:
+  -
+    description: Creates a new OrderBonusScoringHandlerData frostbite instance.
+  -
+    description: Creates a new OrderBonusScoringHandlerData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ScoringHandlerData to OrderBonusScoringHandlerData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ScoringHandlerData
+        description: The instance to cast to OrderBonusScoringHandlerData.
+  -
+    description: Casts an instance of type DataContainer to OrderBonusScoringHandlerData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to OrderBonusScoringHandlerData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the OrderBonusScoringHandlerData type.
+

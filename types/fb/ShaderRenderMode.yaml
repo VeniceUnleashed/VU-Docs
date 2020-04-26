@@ -1,0 +1,35 @@
+name: ShaderRenderMode
+type: enum
+
+values:
+  ShaderRenderMode_Default:
+    value: 0
+  ShaderRenderMode_DynamicEnvmap:
+    value: 1
+  ShaderRenderMode_ZOnly:
+    value: 2
+  ShaderRenderMode_DeferredShadingGBufferLayout0:
+    value: 3
+  ShaderRenderMode_DeferredShadingGBufferLayout1:
+    value: 4
+  ShaderRenderMode_DeferredShadingEmissive:
+    value: 5
+  ShaderRenderMode_DeferredShadingUnlit:
+    value: 6
+  ShaderRenderMode_VelocityVector:
+    value: 7
+  ShaderRenderMode_DistortionVector:
+    value: 8
+  ShaderRenderMode_AmbientOcclusionVolume:
+    value: 9
+  ShaderRenderMode_DebugSimple:
+    value: 10
+  ShaderRenderMode_DebugMulti:
+    value: 11
+  ShaderRenderMode_DebugOverdraw:
+    value: 12
+  ShaderRenderMode_DebugShaderCost:
+    value: 13
+  ShaderRenderModeCount:
+    value: 14
+

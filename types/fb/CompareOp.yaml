@@ -1,0 +1,17 @@
+name: CompareOp
+type: enum
+
+values:
+  CompareOp_Equal:
+    value: 0
+  CompareOp_NotEqual:
+    value: 1
+  CompareOp_Greater:
+    value: 2
+  CompareOp_Less:
+    value: 3
+  CompareOp_GreaterOrEqual:
+    value: 4
+  CompareOp_LessOrEqual:
+    value: 5
+

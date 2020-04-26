@@ -1,0 +1,65 @@
+name: SearchAndDestroyOrderEntityData
+type: class
+inherits: BFOrderEntityData
+
+constructors:
+  -
+    description: Creates a new SearchAndDestroyOrderEntityData frostbite instance.
+  -
+    description: Creates a new SearchAndDestroyOrderEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type BFOrderEntityData to SearchAndDestroyOrderEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: BFOrderEntityData
+        description: The instance to cast to SearchAndDestroyOrderEntityData.
+  -
+    description: Casts an instance of type OrderEntityData to SearchAndDestroyOrderEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: OrderEntityData
+        description: The instance to cast to SearchAndDestroyOrderEntityData.
+  -
+    description: Casts an instance of type EntityData to SearchAndDestroyOrderEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to SearchAndDestroyOrderEntityData.
+  -
+    description: Casts an instance of type GameObjectData to SearchAndDestroyOrderEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to SearchAndDestroyOrderEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to SearchAndDestroyOrderEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to SearchAndDestroyOrderEntityData.
+  -
+    description: Casts an instance of type DataContainer to SearchAndDestroyOrderEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SearchAndDestroyOrderEntityData.
+
+properties:
+  targetPosKnowledge:
+    type: TargetPosKnowledgeType
+  findTargetTime:
+    type: float
+  targetAreaFollowsTarget:
+    type: bool
+  aggressive:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SearchAndDestroyOrderEntityData type.
+

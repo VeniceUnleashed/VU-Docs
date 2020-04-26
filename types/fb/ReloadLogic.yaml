@@ -1,0 +1,9 @@
+name: ReloadLogic
+type: enum
+
+values:
+  rlWeaponSwitchCancelsUnfinishedReload:
+    value: 0
+  rlReloadUnaffectedByWeaponSwitch:
+    value: 1
+

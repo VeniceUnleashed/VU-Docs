@@ -1,0 +1,70 @@
+name: SkyEffectState
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new SkyEffectState frostbite instance.
+  -
+    description: Creates a new SkyEffectState frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to SkyEffectState. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SkyEffectState.
+
+properties:
+  cloudLayerSunColor:
+    type: Vec3
+  panoramicTileFactor:
+    type: float
+  sunSize:
+    type: float
+  skyGradientScale:
+    type: float
+  sunScale:
+    type: float
+  panoramicUVMinX:
+    type: float
+  skyGradientTexture:
+    type: TextureAsset
+    nullable: true
+  panoramicUVMinY:
+    type: float
+  panoramicUVMaxY:
+    type: float
+  panoramicUVMaxX:
+    type: float
+  panoramicRotation:
+    type: float
+  panoramicTexture:
+    type: TextureAsset
+    nullable: true
+  panoramicAlphaTexture:
+    type: TextureAsset
+    nullable: true
+  windDirection:
+    type: float
+  cloudLayerMaskTexture:
+    type: TextureAsset
+    nullable: true
+  cloudLayer1:
+    type: SkyCloudLayer
+  cloudLayer2:
+    type: SkyCloudLayer
+  staticEnvmapTexture:
+    type: TextureAsset
+    nullable: true
+  enable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SkyEffectState type.
+

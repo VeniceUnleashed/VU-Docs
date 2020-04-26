@@ -1,0 +1,44 @@
+name: SoldierWeaponDispersion
+type: class
+
+constructors:
+  -
+    description: Creates a new SoldierWeaponDispersion frostbite instance.
+  -
+    description: Creates a new SoldierWeaponDispersion frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+
+properties:
+  standDispersion:
+    type: FiringDispersionData
+  crouchDispersion:
+    type: FiringDispersionData
+  proneDispersion:
+    type: FiringDispersionData
+  jumpDispersionAngle:
+    type: float
+  proneTransitionDispersionAngle:
+    type: float
+  moveDispersionAngle:
+    type: float
+  moveZoomedDispersionAngle:
+    type: float
+  decreasePerSecond:
+    type: float
+
+methods:
+  -
+    name: Clone
+    description: Creates a shallow-copy clone of this structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of this structure to all of its properties. Any properties that contain structure types (eg. Vec3) will be cloned when assigning, while properties that contain instance types (eg. DataContainer) will be referencing the same instance.
+    returns:
+      type: SoldierWeaponDispersion
+      description: The newly created structure.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SoldierWeaponDispersion type.
+

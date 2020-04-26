@@ -1,0 +1,46 @@
+name: PhysicsNodeData
+type: class
+inherits: AudioGraphNodeData
+
+constructors:
+  -
+    description: Creates a new PhysicsNodeData frostbite instance.
+  -
+    description: Creates a new PhysicsNodeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphNodeData to PhysicsNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphNodeData
+        description: The instance to cast to PhysicsNodeData.
+  -
+    description: Casts an instance of type DataContainer to PhysicsNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PhysicsNodeData.
+
+properties:
+  distance:
+    type: AudioGraphNodePort
+  velocity:
+    type: AudioGraphNodePort
+  relativeVelocity:
+    type: AudioGraphNodePort
+  azimuth:
+    type: AudioGraphNodePort
+  elevationAngle:
+    type: AudioGraphNodePort
+  entries:
+    type: PhysicsEntry
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PhysicsNodeData type.
+

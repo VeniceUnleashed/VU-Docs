@@ -1,0 +1,19 @@
+name: SKU
+type: enum
+
+values:
+  WW:
+    value: 0
+  EU:
+    value: 1
+  US:
+    value: 2
+  JPN:
+    value: 3
+  ROA:
+    value: 4
+  RU:
+    value: 5
+  EN:
+    value: 6
+

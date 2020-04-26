@@ -1,0 +1,45 @@
+name: UIWeaponCompData
+type: class
+inherits: UIComponentData
+
+constructors:
+  -
+    description: Creates a new UIWeaponCompData frostbite instance.
+  -
+    description: Creates a new UIWeaponCompData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UIComponentData to UIWeaponCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIComponentData
+        description: The instance to cast to UIWeaponCompData.
+  -
+    description: Casts an instance of type Asset to UIWeaponCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to UIWeaponCompData.
+  -
+    description: Casts an instance of type DataContainer to UIWeaponCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UIWeaponCompData.
+
+properties:
+  minHitIndicatorLimit:
+    type: float
+  maxHitIndicatorLimit:
+    type: float
+  normalHitIndicatorLimit:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UIWeaponCompData type.
+

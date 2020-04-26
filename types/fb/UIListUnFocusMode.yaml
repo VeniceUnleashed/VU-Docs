@@ -1,0 +1,11 @@
+name: UIListUnFocusMode
+type: enum
+
+values:
+  DeSelect:
+    value: 0
+  ChangeState:
+    value: 1
+  None:
+    value: 2
+

@@ -1,0 +1,37 @@
+name: DeltaGroup
+type: class
+inherits: AudioGraphNodePortGroup
+
+constructors:
+  -
+    description: Creates a new DeltaGroup frostbite instance.
+  -
+    description: Creates a new DeltaGroup frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphNodePortGroup to DeltaGroup. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphNodePortGroup
+        description: The instance to cast to DeltaGroup.
+  -
+    description: Casts an instance of type DataContainer to DeltaGroup. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to DeltaGroup.
+
+properties:
+  inValue:
+    type: AudioGraphNodePort
+  delta:
+    type: AudioGraphNodePort
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the DeltaGroup type.
+

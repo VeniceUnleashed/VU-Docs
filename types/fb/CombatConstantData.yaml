@@ -1,0 +1,87 @@
+name: CombatConstantData
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new CombatConstantData frostbite instance.
+  -
+    description: Creates a new CombatConstantData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to CombatConstantData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to CombatConstantData.
+  -
+    description: Casts an instance of type DataContainer to CombatConstantData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to CombatConstantData.
+
+properties:
+  poseTransitionFireDelay:
+    type: float
+  changePoseStopDelay:
+    type: float
+  allowCrouchFiringWaterLevel:
+    type: float
+  poseChangeLockoutTime:
+    type: float
+  explosionInterestRange:
+    type: float
+  explosiveObjectSearchRadius:
+    type: float
+  explosiveBlastMultiplier:
+    type: float
+  maxSuppressDistance:
+    type: float
+  maxSuppressorsRatio:
+    type: float
+  suppressOffsetXz:
+    type: float
+  suppressOffsetY:
+    type: float
+  suppressMinLOFDistance:
+    type: float
+  suppressMinLOFOffsetDistance:
+    type: float
+  investigateCoverSearchWidth:
+    type: float
+  investigateAroundTargetRadius:
+    type: float
+  investigateFreeLookRadius:
+    type: float
+  investigatePauseTimeMin:
+    type: float
+  investigatePauseTimeMax:
+    type: float
+  avoidC4Time:
+    type: float
+  standStillMinTime:
+    type: float
+  stationaryBailDistance:
+    type: float
+  precisionTimeout:
+    type: float
+  closeRangeAccuracyDistance:
+    type: float
+  fightFromPathRadius:
+    type: float
+  smokeRadius:
+    type: float
+  smokeLifeTime:
+    type: float
+  meleeCooldown:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the CombatConstantData type.
+

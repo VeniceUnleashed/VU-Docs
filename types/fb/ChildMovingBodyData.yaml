@@ -1,0 +1,49 @@
+name: ChildMovingBodyData
+type: class
+inherits: LinearMovingBodyData
+
+constructors:
+  -
+    description: Creates a new ChildMovingBodyData frostbite instance.
+  -
+    description: Creates a new ChildMovingBodyData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type LinearMovingBodyData to ChildMovingBodyData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: LinearMovingBodyData
+        description: The instance to cast to ChildMovingBodyData.
+  -
+    description: Casts an instance of type MovingBodyData to ChildMovingBodyData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MovingBodyData
+        description: The instance to cast to ChildMovingBodyData.
+  -
+    description: Casts an instance of type DataContainer to ChildMovingBodyData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ChildMovingBodyData.
+
+properties:
+  inputDelay:
+    type: float
+  speed:
+    type: float
+  inputAction:
+    type: EntryInputActionEnum
+  triggerImpulse:
+    type: float
+  isOneShotInput:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ChildMovingBodyData type.
+

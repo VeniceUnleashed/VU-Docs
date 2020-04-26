@@ -1,0 +1,9 @@
+name: UIInputActionEventType
+type: enum
+
+values:
+  UIInputActionEventType_Pressed:
+    value: 1
+  UIInputActionEventType_Released:
+    value: 2
+

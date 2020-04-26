@@ -1,0 +1,31 @@
+name: EvaluatorType
+type: enum
+
+values:
+  EtDefault:
+    value: 0
+  EtBox:
+    value: 1
+  EtPolynomial:
+    value: 2
+  EtPolynomialOperator:
+    value: 3
+  EtRandom:
+    value: 4
+  EtRandomXYZ:
+    value: 5
+  EtRotateVector:
+    value: 6
+  EtSampleTexture:
+    value: 7
+  EtSphere:
+    value: 8
+  EtConstant:
+    value: 9
+  EtPolynomialColorInterp:
+    value: 10
+  EtCamProx:
+    value: 11
+  EvaluatorTypeCount:
+    value: 12
+

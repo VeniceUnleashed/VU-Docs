@@ -1,0 +1,37 @@
+name: SimpleMovementActionBaseData
+type: class
+inherits: MovementActionData
+
+constructors:
+  -
+    description: Creates a new SimpleMovementActionBaseData frostbite instance.
+  -
+    description: Creates a new SimpleMovementActionBaseData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type MovementActionData to SimpleMovementActionBaseData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MovementActionData
+        description: The instance to cast to SimpleMovementActionBaseData.
+  -
+    description: Casts an instance of type DataContainer to SimpleMovementActionBaseData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SimpleMovementActionBaseData.
+
+properties:
+  startTimeInfo:
+    type: SimpleMovementActionTimeData
+  runTimeInfo:
+    type: SimpleMovementActionTimeData
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SimpleMovementActionBaseData type.
+

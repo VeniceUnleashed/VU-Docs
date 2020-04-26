@@ -1,0 +1,29 @@
+name: ServerMapSequencerEventType
+type: enum
+
+values:
+  ServerMapSequencerEventType_Add:
+    value: 0
+  ServerMapSequencerEventType_Remove:
+    value: 1
+  ServerMapSequencerEventType_Clear:
+    value: 2
+  ServerMapSequencerEventType_List:
+    value: 3
+  ServerMapSequencerEventType_Load:
+    value: 4
+  ServerMapSequencerEventType_Save:
+    value: 5
+  ServerMapSequencerEventType_SetNextMapIndex:
+    value: 6
+  ServerMapSequencerEventType_GetMapIndices:
+    value: 7
+  ServerMapSequencerEventType_GetRounds:
+    value: 8
+  ServerMapSequencerEventType_RunNextRound:
+    value: 9
+  ServerMapSequencerEventType_RestartRound:
+    value: 10
+  ServerMapSequencerEventType_AvailableMaps:
+    value: 11
+

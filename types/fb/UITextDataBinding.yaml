@@ -1,0 +1,43 @@
+name: UITextDataBinding
+type: class
+inherits: UIDataBinding
+
+constructors:
+  -
+    description: Creates a new UITextDataBinding frostbite instance.
+  -
+    description: Creates a new UITextDataBinding frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UIDataBinding to UITextDataBinding. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIDataBinding
+        description: The instance to cast to UITextDataBinding.
+  -
+    description: Casts an instance of type DataContainer to UITextDataBinding. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UITextDataBinding.
+
+properties:
+  staticText:
+    type: string
+  textData:
+    type: UIDataSourceInfo
+  visibility:
+    type: UIDataSourceInfo
+  refresh:
+    type: bool
+  overrideDirectAccess:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UITextDataBinding type.
+

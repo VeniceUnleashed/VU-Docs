@@ -1,0 +1,50 @@
+name: OperandLogicNode
+type: class
+inherits: UINodeData
+
+constructors:
+  -
+    description: Creates a new OperandLogicNode frostbite instance.
+  -
+    description: Creates a new OperandLogicNode frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UINodeData to OperandLogicNode. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UINodeData
+        description: The instance to cast to OperandLogicNode.
+  -
+    description: Casts an instance of type DataContainer to OperandLogicNode. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to OperandLogicNode.
+
+properties:
+  leftDataSourceInfo:
+    type: UIDataSourceInfo
+  operator:
+    type: UILogicOperator
+  rightDataSourceInfo:
+    type: UIDataSourceInfo
+  rightLiteralOperand:
+    type: float
+  inValue:
+    type: UINodePort
+    nullable: true
+  trueValue:
+    type: UINodePort
+    nullable: true
+  falseValue:
+    type: UINodePort
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the OperandLogicNode type.
+

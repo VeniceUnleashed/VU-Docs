@@ -1,0 +1,97 @@
+name: CoverConstantData
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new CoverConstantData frostbite instance.
+  -
+    description: Creates a new CoverConstantData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to CoverConstantData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to CoverConstantData.
+  -
+    description: Casts an instance of type DataContainer to CoverConstantData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to CoverConstantData.
+
+properties:
+  slotSize:
+    type: float
+  slotSpacing:
+    type: float
+  slotEdgeDistance:
+    type: float
+  slotBlockedEdgeDistance:
+    type: float
+  minimumOpenCoverWidth:
+    type: float
+  proneHeight:
+    type: float
+  crouchHeight:
+    type: float
+  mediumHeight:
+    type: float
+  standHeight:
+    type: float
+  maxCoversInMemory:
+    type: int
+  searchRadius:
+    type: float
+  proneCoverModifier:
+    type: float
+  crouchCoverModifier:
+    type: float
+  mediumCoverModifier:
+    type: float
+  standCoverModifier:
+    type: float
+  intermediateCoverSlotModifier:
+    type: float
+  distanceEvaluationWeight:
+    type: float
+  enemiesEvaluationWeight:
+    type: float
+  attackPositionEvaluationWeight:
+    type: float
+  optimalWeaponDistanceEvaluationWeight:
+    type: float
+  dislikePreviousCoverWeight:
+    type: float
+  maxHeightDifference:
+    type: float
+  switchCoverUrgencyThreshold:
+    type: float
+  extraCoverSize:
+    type: float
+  reevaluationTime:
+    type: float
+  coverSelectionMethod:
+    type: CoverSelectionMethod
+  threatRadius:
+    type: float
+  inCoverDistance:
+    type: float
+  minAttackableEnemyDistance:
+    type: float
+  coverFailIgnoreTime:
+    type: float
+  startMeleeFromCoverDistance:
+    type: float
+  continueMeleeFromCoverDistance:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the CoverConstantData type.
+

@@ -1,0 +1,11 @@
+name: StreamRealm
+type: enum
+
+values:
+  StreamRealm_None:
+    value: 0
+  StreamRealm_Client:
+    value: 1
+  StreamRealm_Both:
+    value: 2
+

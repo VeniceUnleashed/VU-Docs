@@ -1,0 +1,71 @@
+name: PersistenceData
+type: class
+inherits: AbstractPersistenceData
+
+constructors:
+  -
+    description: Creates a new PersistenceData frostbite instance.
+  -
+    description: Creates a new PersistenceData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AbstractPersistenceData to PersistenceData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AbstractPersistenceData
+        description: The instance to cast to PersistenceData.
+  -
+    description: Casts an instance of type Asset to PersistenceData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to PersistenceData.
+  -
+    description: Casts an instance of type DataContainer to PersistenceData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PersistenceData.
+
+properties:
+  persistenceName:
+    type: string
+  clubPersistenceName:
+    type: string
+  clientDefaultGroup:
+    type: PersistenceStatGroup
+    nullable: true
+  values:
+    type: PersistentValueTemplateData
+    array: true
+  customReportValues:
+    type: CustomReportValueData
+    array: true
+  serverDefaultGroup:
+    type: PersistenceStatGroup
+    nullable: true
+  retentionPolicy:
+    type: PersistenceRetentionPolicy
+    nullable: true
+  consumableMappings:
+    type: PersistenceConsumableMapping
+    array: true
+  historyDaily:
+    type: bool
+  historyWeekly:
+    type: bool
+  historyMonthly:
+    type: bool
+  outputProperties:
+    type: bool
+  deltaGameReports:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PersistenceData type.
+

@@ -1,0 +1,43 @@
+name: UICompassDataBinding
+type: class
+inherits: UIDataBinding
+
+constructors:
+  -
+    description: Creates a new UICompassDataBinding frostbite instance.
+  -
+    description: Creates a new UICompassDataBinding frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UIDataBinding to UICompassDataBinding. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIDataBinding
+        description: The instance to cast to UICompassDataBinding.
+  -
+    description: Casts an instance of type DataContainer to UICompassDataBinding. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UICompassDataBinding.
+
+properties:
+  heading:
+    type: UIDataSourceInfo
+  objectives:
+    type: UIDataSourceInfo
+  visibility:
+    type: UIDataSourceInfo
+  showAirRadar:
+    type: UIDataSourceInfo
+  radarSweepDegree:
+    type: UIDataSourceInfo
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UICompassDataBinding type.
+

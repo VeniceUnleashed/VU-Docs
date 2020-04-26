@@ -1,0 +1,21 @@
+name: AntAttentionStateEnum
+type: enum
+
+values:
+  AntAttentionStateEnum_Relaxed:
+    value: 0
+  AntAttentionStateEnum_Ready:
+    value: 1
+  AntAttentionStateEnum_Combat:
+    value: 2
+  AntAttentionStateEnum_Evasive:
+    value: 3
+  AntAttentionStateEnum_AntEnumCount:
+    value: 4
+  AntAttentionStateEnum_NoChange:
+    value: 5
+  AntAttentionStateEnum_Count:
+    value: 6
+  AntAttentionStateEnum_Dummy1:
+    value: 7
+

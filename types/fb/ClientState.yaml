@@ -1,0 +1,37 @@
+name: ClientState
+type: enum
+
+values:
+  ClientState_WaitingForStaticBundleLoad:
+    value: 0
+  ClientState_LoadProfileOptions:
+    value: 1
+  ClientState_LostConnection:
+    value: 2
+  ClientState_Startup:
+    value: 3
+  ClientState_StartServer:
+    value: 4
+  ClientState_WaitingForLevel:
+    value: 5
+  ClientState_StartLoadingLevel:
+    value: 6
+  ClientState_WaitingForLevelLoaded:
+    value: 7
+  ClientState_WaitingForLevelLink:
+    value: 8
+  ClientState_LevelLinked:
+    value: 9
+  ClientState_WaitingUIIngame:
+    value: 10
+  ClientState_Ingame:
+    value: 11
+  ClientState_ConnectToServer:
+    value: 12
+  ClientState_WaitingUILoading:
+    value: 13
+  ClientState_WaitingUIUnload:
+    value: 14
+  ClientState_None:
+    value: 15
+

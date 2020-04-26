@@ -1,0 +1,75 @@
+name: SpottingComponentData
+type: class
+inherits: ComponentData
+
+constructors:
+  -
+    description: Creates a new SpottingComponentData frostbite instance.
+  -
+    description: Creates a new SpottingComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ComponentData to SpottingComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to SpottingComponentData.
+  -
+    description: Casts an instance of type GameObjectData to SpottingComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to SpottingComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to SpottingComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to SpottingComponentData.
+  -
+    description: Casts an instance of type DataContainer to SpottingComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SpottingComponentData.
+
+properties:
+  spottingFov:
+    type: float
+  teamOrderFov:
+    type: float
+  spottingDistance:
+    type: float
+  passiveSpottingTimeInterval:
+    type: float
+  timeRequiredToPassiveSpot:
+    type: float
+  orderNeedAmmoPercentage:
+    type: float
+  orderHealPercentage:
+    type: float
+  orderRepairPercentage:
+    type: float
+  pickupOrderDistance:
+    type: float
+  healOrderDistance:
+    type: float
+  ammoOrderDistance:
+    type: float
+  repairOrderDistance:
+    type: float
+  coolDownHistoryTime:
+    type: float
+  coolDownAllowedSpotsWithinHistory:
+    type: int
+  onlyAllowedToHaveOneSpottedPlayer:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SpottingComponentData type.
+

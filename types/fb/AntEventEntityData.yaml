@@ -1,0 +1,70 @@
+name: AntEventEntityData
+type: class
+inherits: GameEntityData
+
+constructors:
+  -
+    description: Creates a new AntEventEntityData frostbite instance.
+  -
+    description: Creates a new AntEventEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameEntityData to AntEventEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to AntEventEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to AntEventEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to AntEventEntityData.
+  -
+    description: Casts an instance of type EntityData to AntEventEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to AntEventEntityData.
+  -
+    description: Casts an instance of type GameObjectData to AntEventEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to AntEventEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to AntEventEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to AntEventEntityData.
+  -
+    description: Casts an instance of type DataContainer to AntEventEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to AntEventEntityData.
+
+properties:
+  onEnterEvents:
+    type: AntEventData
+    array: true
+  onUpdateEvents:
+    type: AntEventData
+    array: true
+  onLeaveEvents:
+    type: AntEventData
+    array: true
+  sendAsPlayerEvent:
+    type: bool
+  autoActivate:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the AntEventEntityData type.
+

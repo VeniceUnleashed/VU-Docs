@@ -1,0 +1,47 @@
+name: AwardableTreeBase
+type: class
+inherits: TreeBase
+
+constructors:
+  -
+    description: Creates a new AwardableTreeBase frostbite instance.
+  -
+    description: Creates a new AwardableTreeBase frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type TreeBase to AwardableTreeBase. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: TreeBase
+        description: The instance to cast to AwardableTreeBase.
+  -
+    description: Casts an instance of type Asset to AwardableTreeBase. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to AwardableTreeBase.
+  -
+    description: Casts an instance of type DataContainer to AwardableTreeBase. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to AwardableTreeBase.
+
+properties:
+  statCategoryTreeCollection:
+    type: StatCategoryTreeCollection
+    nullable: true
+  generalCriteria:
+    type: CriteriaData
+    array: true
+  generalStatistics:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the AwardableTreeBase type.
+

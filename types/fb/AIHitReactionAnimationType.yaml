@@ -1,0 +1,17 @@
+name: AIHitReactionAnimationType
+type: enum
+
+values:
+  AIHitReactionAnimationType_1:
+    value: 0
+  AIHitReactionAnimationType_2:
+    value: 1
+  AIHitReactionAnimationType_3:
+    value: 2
+  AIHitReactionAnimationType_4:
+    value: 3
+  AIHitReactionAnimationType_5:
+    value: 4
+  AIHitReactionAnimationType_Count:
+    value: 5
+

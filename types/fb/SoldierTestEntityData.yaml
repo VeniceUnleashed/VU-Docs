@@ -1,0 +1,120 @@
+name: SoldierTestEntityData
+type: class
+inherits: GameEntityData
+
+constructors:
+  -
+    description: Creates a new SoldierTestEntityData frostbite instance.
+  -
+    description: Creates a new SoldierTestEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameEntityData to SoldierTestEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to SoldierTestEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to SoldierTestEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to SoldierTestEntityData.
+  -
+    description: Casts an instance of type EntityData to SoldierTestEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to SoldierTestEntityData.
+  -
+    description: Casts an instance of type GameObjectData to SoldierTestEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to SoldierTestEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to SoldierTestEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to SoldierTestEntityData.
+  -
+    description: Casts an instance of type DataContainer to SoldierTestEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SoldierTestEntityData.
+
+properties:
+  testSoldier:
+    type: SoldierBlueprint
+    nullable: true
+  template:
+    type: SoldierSpawnTemplateData
+    nullable: true
+  testVehicle:
+    type: VehicleBlueprint
+    nullable: true
+  specialAnimationIndex:
+    type: float
+  unlocksProfile:
+    type: RawFileAsset
+    nullable: true
+  team:
+    type: TeamId
+  randomSeed:
+    type: int
+  startSequence:
+    type: MovementActionData
+    nullable: true
+  startSequenceRoot:
+    type: MovementActionRoot
+    nullable: true
+  yawInputVal:
+    type: float
+  cameraMovementsFilename:
+    type: string
+  inputRecorder:
+    type: InputRecorderData
+    nullable: true
+  throttleInputVal:
+    type: float
+  fireInputVal:
+    type: float
+  strafeInputVal:
+    type: float
+  proneInputVal:
+    type: float
+  pitchInputVal:
+    type: float
+  rollInputVal:
+    type: float
+  zoomInputVal:
+    type: float
+  jumpInputVal:
+    type: float
+  activeInputRecording:
+    type: float
+  authoritativeAimingActive:
+    type: float
+  fireCounterMeasure:
+    type: float
+  authoritativeYaw:
+    type: float
+  authoritativePitch:
+    type: float
+  runAutomatically:
+    type: bool
+  useUnlocksProfile:
+    type: bool
+  sprintInputVal:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SoldierTestEntityData type.
+

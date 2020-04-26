@@ -1,0 +1,62 @@
+name: LockingControllerData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new LockingControllerData frostbite instance.
+  -
+    description: Creates a new LockingControllerData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to LockingControllerData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to LockingControllerData.
+
+properties:
+  zoomLevelLock:
+    type: ZoomLevelLockData
+    array: true
+  lockTime:
+    type: float
+  releaseTime:
+    type: float
+  releaseOnNewTargetTime:
+    type: float
+  sampleRate:
+    type: float
+  holdStillThreshold:
+    type: float
+  rayLength:
+    type: float
+  acceptanceAngle:
+    type: float
+  minimumLockTime:
+    type: float
+  sensitivity:
+    type: float
+  angleConstant:
+    type: float
+  distanceConstant:
+    type: float
+  lockOnWorldSpacePos:
+    type: bool
+  lockOnVisibleTargetsOnly:
+    type: bool
+  positionOnly:
+    type: bool
+  lockOnEmptyVehicles:
+    type: bool
+  ignoreHeigthLockDistance:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the LockingControllerData type.
+

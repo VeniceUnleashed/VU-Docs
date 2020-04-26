@@ -1,0 +1,37 @@
+name: UpdateRotationData
+type: class
+inherits: ProcessorData
+
+constructors:
+  -
+    description: Creates a new UpdateRotationData frostbite instance.
+  -
+    description: Creates a new UpdateRotationData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ProcessorData to UpdateRotationData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ProcessorData
+        description: The instance to cast to UpdateRotationData.
+  -
+    description: Casts an instance of type EmitterComponentData to UpdateRotationData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EmitterComponentData
+        description: The instance to cast to UpdateRotationData.
+  -
+    description: Casts an instance of type DataContainer to UpdateRotationData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UpdateRotationData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UpdateRotationData type.
+

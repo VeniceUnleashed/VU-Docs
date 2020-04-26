@@ -1,0 +1,35 @@
+name: ShaderCustomizationUnlockPartCollection
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new ShaderCustomizationUnlockPartCollection frostbite instance.
+  -
+    description: Creates a new ShaderCustomizationUnlockPartCollection frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to ShaderCustomizationUnlockPartCollection. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ShaderCustomizationUnlockPartCollection.
+
+properties:
+  meshBlueprints:
+    type: ObjectBlueprint
+    array: true
+  shaderNodeName:
+    type: string
+  meshMaterials:
+    type: CustomizedMeshMaterialsData
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ShaderCustomizationUnlockPartCollection type.
+

@@ -1,0 +1,37 @@
+name: PresenceRspServiceData
+type: class
+inherits: PresenceServiceData
+
+constructors:
+  -
+    description: Creates a new PresenceRspServiceData frostbite instance.
+  -
+    description: Creates a new PresenceRspServiceData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type PresenceServiceData to PresenceRspServiceData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: PresenceServiceData
+        description: The instance to cast to PresenceRspServiceData.
+  -
+    description: Casts an instance of type Asset to PresenceRspServiceData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to PresenceRspServiceData.
+  -
+    description: Casts an instance of type DataContainer to PresenceRspServiceData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PresenceRspServiceData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PresenceRspServiceData type.
+

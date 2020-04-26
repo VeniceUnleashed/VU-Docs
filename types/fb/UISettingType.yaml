@@ -1,0 +1,17 @@
+name: UISettingType
+type: enum
+
+values:
+  UISettingType_Slider:
+    value: 0
+  UISettingType_TickerUpDown:
+    value: 1
+  UISettingType_Droplist:
+    value: 2
+  UISettingType_Checkbox:
+    value: 3
+  UISettingType_Text:
+    value: 4
+  UISettingType_NotSet:
+    value: 5
+

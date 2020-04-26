@@ -1,0 +1,15 @@
+name: MatchmakingPlatform
+type: enum
+
+values:
+  MatchmakingPlatform_PC:
+    value: 0
+  MatchmakingPlatform_Console:
+    value: 1
+  MatchmakingPlatform_360:
+    value: 2
+  MatchmakingPlatform_PS3:
+    value: 3
+  MatchmakingPlatform_Any:
+    value: 4
+

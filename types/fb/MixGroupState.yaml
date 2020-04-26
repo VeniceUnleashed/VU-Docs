@@ -1,0 +1,11 @@
+name: MixGroupState
+type: enum
+
+values:
+  MixGroupState_Normal:
+    value: 0
+  MixGroupState_Mute:
+    value: 1
+  MixGroupState_Solo:
+    value: 2
+

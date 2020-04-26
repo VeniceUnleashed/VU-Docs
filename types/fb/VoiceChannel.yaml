@@ -1,0 +1,15 @@
+name: VoiceChannel
+type: enum
+
+values:
+  VoiceChannel_Off:
+    value: 0
+  VoiceChannel_Team:
+    value: 1
+  VoiceChannel_Squad:
+    value: 2
+  VoiceChannel_Loopback:
+    value: 3
+  VoiceChannel_Count:
+    value: 4
+

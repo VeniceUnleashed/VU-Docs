@@ -1,0 +1,57 @@
+name: VehicleExitPointComponentData
+type: class
+inherits: ComponentData
+
+constructors:
+  -
+    description: Creates a new VehicleExitPointComponentData frostbite instance.
+  -
+    description: Creates a new VehicleExitPointComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ComponentData to VehicleExitPointComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to VehicleExitPointComponentData.
+  -
+    description: Casts an instance of type GameObjectData to VehicleExitPointComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to VehicleExitPointComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to VehicleExitPointComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to VehicleExitPointComponentData.
+  -
+    description: Casts an instance of type DataContainer to VehicleExitPointComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VehicleExitPointComponentData.
+
+properties:
+  impulse:
+    type: Vec3
+  terrainHeight:
+    type: float
+  ordinal:
+    type: int
+  velocity:
+    type: float
+  inheritCameraDirection:
+    type: bool
+  checkForVehicleOverrun:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VehicleExitPointComponentData type.
+

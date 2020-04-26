@@ -1,0 +1,55 @@
+name: VoiceOverContainerNode
+type: class
+inherits: VoiceOverStructureNode
+
+constructors:
+  -
+    description: Creates a new VoiceOverContainerNode frostbite instance.
+  -
+    description: Creates a new VoiceOverContainerNode frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type VoiceOverStructureNode to VoiceOverContainerNode. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: VoiceOverStructureNode
+        description: The instance to cast to VoiceOverContainerNode.
+  -
+    description: Casts an instance of type VoiceOverNode to VoiceOverContainerNode. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: VoiceOverNode
+        description: The instance to cast to VoiceOverContainerNode.
+  -
+    description: Casts an instance of type DataContainer to VoiceOverContainerNode. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VoiceOverContainerNode.
+
+properties:
+  condition:
+    type: VoiceOverValueConnection
+    array: true
+  interval:
+    type: VoiceOverIntervalNode
+    nullable: true
+  trueRelationship:
+    type: VoiceOverStructureNode
+    array: true
+  falseRelationship:
+    type: VoiceOverStructureNode
+    array: true
+  conditionMode:
+    type: VoiceOverContainerConditionMode
+  probability:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VoiceOverContainerNode type.
+

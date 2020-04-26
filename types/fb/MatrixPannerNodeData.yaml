@@ -1,0 +1,53 @@
+name: MatrixPannerNodeData
+type: class
+inherits: AudioGraphNodeData
+
+constructors:
+  -
+    description: Creates a new MatrixPannerNodeData frostbite instance.
+  -
+    description: Creates a new MatrixPannerNodeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphNodeData to MatrixPannerNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphNodeData
+        description: The instance to cast to MatrixPannerNodeData.
+  -
+    description: Casts an instance of type DataContainer to MatrixPannerNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MatrixPannerNodeData.
+
+properties:
+  inValue:
+    type: AudioGraphNodePort
+  frontLeft:
+    type: AudioGraphNodePort
+  center:
+    type: AudioGraphNodePort
+  frontRight:
+    type: AudioGraphNodePort
+  rearLeft:
+    type: AudioGraphNodePort
+  lfe:
+    type: AudioGraphNodePort
+  rearRight:
+    type: AudioGraphNodePort
+  farRearLeft:
+    type: AudioGraphNodePort
+  farRearRight:
+    type: AudioGraphNodePort
+  out:
+    type: AudioGraphNodePort
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MatrixPannerNodeData type.
+

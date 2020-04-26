@@ -1,0 +1,15 @@
+name: PathfindingRepresentation
+type: enum
+
+values:
+  PathfindingRepresentation_Ignore:
+    value: 0
+  PathfindingRepresentation_WalkableMesh:
+    value: 1
+  PathfindingRepresentation_ObstacleMesh:
+    value: 2
+  PathfindingRepresentation_ObstacleMeshAndThinSideLink:
+    value: 3
+  PathfindingRepresentation_BoundingBoxExclusion:
+    value: 4
+

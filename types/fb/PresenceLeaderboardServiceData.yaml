@@ -1,0 +1,37 @@
+name: PresenceLeaderboardServiceData
+type: class
+inherits: PresenceServiceData
+
+constructors:
+  -
+    description: Creates a new PresenceLeaderboardServiceData frostbite instance.
+  -
+    description: Creates a new PresenceLeaderboardServiceData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type PresenceServiceData to PresenceLeaderboardServiceData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: PresenceServiceData
+        description: The instance to cast to PresenceLeaderboardServiceData.
+  -
+    description: Casts an instance of type Asset to PresenceLeaderboardServiceData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to PresenceLeaderboardServiceData.
+  -
+    description: Casts an instance of type DataContainer to PresenceLeaderboardServiceData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PresenceLeaderboardServiceData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PresenceLeaderboardServiceData type.
+

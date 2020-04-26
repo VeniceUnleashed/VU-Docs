@@ -1,0 +1,13 @@
+name: SoundDataState
+type: enum
+
+values:
+  SoundDataState_Pending:
+    value: 0
+  SoundDataState_Cancelled:
+    value: 1
+  SoundDataState_Lost:
+    value: 2
+  SoundDataState_Valid:
+    value: 3
+

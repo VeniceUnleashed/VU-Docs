@@ -1,0 +1,17 @@
+name: UILogicOperator
+type: enum
+
+values:
+  UILogicOperator_None:
+    value: 0
+  UILogicOperator_Equal:
+    value: 1
+  UILogicOperator_GreaterThan:
+    value: 2
+  UILogicOperator_GreaterThanOrEqual:
+    value: 3
+  UILogicOperator_LessThan:
+    value: 4
+  UILogicOperator_LessThanOrEqual:
+    value: 5
+

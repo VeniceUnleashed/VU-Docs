@@ -1,0 +1,97 @@
+name: UIListRowType
+type: enum
+
+values:
+  MixedRows:
+    value: 0
+  basicRow:
+    value: 1
+  baseSpawn:
+    value: 2
+  squadSpawn:
+    value: 3
+  MenuRow_34px:
+    value: 4
+  MenuRow_64px:
+    value: 5
+  ScoreboardRow:
+    value: 6
+  ScoreboardRow64Players:
+    value: 7
+  TextSelectorRow:
+    value: 8
+  TextSelectorRow_28px:
+    value: 9
+  BarSelectorRow:
+    value: 10
+  SquadRow:
+    value: 11
+  ServerListRow:
+    value: 12
+  StoreRow:
+    value: 13
+  ComCenterStandardDelimiter:
+    value: 14
+  ComCenterSquadDelimiter:
+    value: 15
+  ComCenterStandardFriendRow:
+    value: 16
+  ComCenterSquadFriendRow:
+    value: 17
+  ComCenterSquadButtonRow:
+    value: 18
+  ComCenterLivePartyDelimiter:
+    value: 19
+  ComCenterLivePartyFriendRow:
+    value: 20
+  SquadDetailedRow:
+    value: 21
+  ComCenterLivePartyButtonRow:
+    value: 22
+  CoopMissionTeamRow:
+    value: 23
+  LeaderBoardRow:
+    value: 24
+  CoopLeaderBoardRow:
+    value: 25
+  BattleLogStandardRow:
+    value: 26
+  BattleLogNewsRow:
+    value: 27
+  ServerLocationsRow:
+    value: 28
+  ServerExtendRow:
+    value: 29
+  ServerInfoSettingsRow:
+    value: 30
+  ServerInfoPlayersRow:
+    value: 31
+  CheckBoxRow:
+    value: 32
+  BarSelectorRow_28px:
+    value: 33
+  BasicRow_34px:
+    value: 34
+  KeyBindingRow:
+    value: 35
+  SquadListRow:
+    value: 36
+  teamSpawn:
+    value: 37
+  MatchListRow:
+    value: 38
+  MatchPlayerListRow:
+    value: 39
+  ManageServerPlayerRow:
+    value: 40
+  ServerSettingsRow:
+    value: 41
+  ServerPlayersRow:
+    value: 42
+  TopPlayersRow:
+    value: 43
+  MenuRowPremium_34px:
+    value: 44
+  MenuRowPremium_64px:
+    value: 45
+

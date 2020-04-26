@@ -1,0 +1,76 @@
+name: BreakableModelEntityData
+type: class
+inherits: GamePhysicsEntityData
+
+constructors:
+  -
+    description: Creates a new BreakableModelEntityData frostbite instance.
+  -
+    description: Creates a new BreakableModelEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GamePhysicsEntityData to BreakableModelEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GamePhysicsEntityData
+        description: The instance to cast to BreakableModelEntityData.
+  -
+    description: Casts an instance of type GameEntityData to BreakableModelEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to BreakableModelEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to BreakableModelEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to BreakableModelEntityData.
+  -
+    description: Casts an instance of type EntityData to BreakableModelEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to BreakableModelEntityData.
+  -
+    description: Casts an instance of type GameObjectData to BreakableModelEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to BreakableModelEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to BreakableModelEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to BreakableModelEntityData.
+  -
+    description: Casts an instance of type DataContainer to BreakableModelEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to BreakableModelEntityData.
+
+properties:
+  decalVolumeShader:
+    type: SurfaceShaderBaseAsset
+    nullable: true
+  decalVolumeScaleFactor:
+    type: float
+  mesh:
+    type: MeshAsset
+    nullable: true
+  boneCount:
+    type: int
+  edgeModelLightMapData:
+    type: EdgeModelLightMapData
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the BreakableModelEntityData type.
+

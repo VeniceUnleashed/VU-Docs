@@ -1,0 +1,35 @@
+name: InputCurveData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new InputCurveData frostbite instance.
+  -
+    description: Creates a new InputCurveData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to InputCurveData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to InputCurveData.
+
+properties:
+  affectedInputs:
+    type: EntryInputActionEnum
+    array: true
+  inputModifierCurve:
+    type: Vec2
+    array: true
+  handleMultipleInputsAsSquare:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the InputCurveData type.
+

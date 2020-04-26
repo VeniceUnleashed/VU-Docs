@@ -1,0 +1,17 @@
+name: TerrainRenderMode
+type: enum
+
+values:
+  TerrainRenderMode_Default:
+    value: 0
+  TerrainRenderMode_DrawPassCount2d:
+    value: 1
+  TerrainRenderMode_LayerCount2d:
+    value: 2
+  TerrainRenderMode_LayerCount3d:
+    value: 3
+  TerrainRenderMode_MaskedLayerCount2d:
+    value: 4
+  TerrainRenderMode_MaskedLayerCount3d:
+    value: 5
+

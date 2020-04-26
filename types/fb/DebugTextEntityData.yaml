@@ -1,0 +1,67 @@
+name: DebugTextEntityData
+type: class
+inherits: SpatialEntityData
+
+constructors:
+  -
+    description: Creates a new DebugTextEntityData frostbite instance.
+  -
+    description: Creates a new DebugTextEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SpatialEntityData to DebugTextEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to DebugTextEntityData.
+  -
+    description: Casts an instance of type EntityData to DebugTextEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to DebugTextEntityData.
+  -
+    description: Casts an instance of type GameObjectData to DebugTextEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to DebugTextEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to DebugTextEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to DebugTextEntityData.
+  -
+    description: Casts an instance of type DataContainer to DebugTextEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to DebugTextEntityData.
+
+properties:
+  textColor:
+    type: Vec3
+  debugText:
+    type: string
+  realm:
+    type: Realm
+  scale:
+    type: float
+  visible:
+    type: bool
+  centered:
+    type: bool
+  depthTest:
+    type: bool
+  scaleWithDistance:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the DebugTextEntityData type.
+

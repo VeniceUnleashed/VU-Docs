@@ -1,0 +1,88 @@
+name: WeaponStateData
+type: class
+
+constructors:
+  -
+    description: Creates a new WeaponStateData frostbite instance.
+  -
+    description: Creates a new WeaponStateData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+
+properties:
+  referencedAssetHashes:
+    type: int
+    array: true
+  boneFakePhysics:
+    type: BoneFakePhysicsData
+    array: true
+  mesh1p:
+    type: SkinnedMeshAsset
+    nullable: true
+  meshZoom1p:
+    type: SkinnedMeshAsset
+    nullable: true
+  mesh3p:
+    type: SkinnedMeshAsset
+    nullable: true
+  weapon:
+    type: AntRef
+  zoomMeshTransitionFactor:
+    type: float
+  zoomScaleFactor:
+    type: float
+  zoomInOutMeshTransitionFactors:
+    type: float
+    array: true
+  zoomedScopeFilter:
+    type: ScopeFilterData
+    nullable: true
+  nonZoomedScopeFilter:
+    type: ScopeFilterData
+    nullable: true
+  keepAimingTime:
+    type: float
+  animationConfiguration:
+    type: AnimationConfigurationData
+  animatedFireType:
+    type: AnimatedFireEnum
+  animatedAimingType:
+    type: AnimatedAimingEnum
+  mesh3pTransforms:
+    type: LinearTransform
+    array: true
+  mesh3pRigidMeshSocketObjectTransforms:
+    type: RigidMeshSocketTransform
+    array: true
+  hideProjectileAfterFireTime:
+    type: float
+  projectileBoneName:
+    type: string
+  isOneHanded:
+    type: bool
+  playDeployAfterFire:
+    type: bool
+  skipFireAnimation:
+    type: bool
+  skipDeployAnimation:
+    type: bool
+  skipReloadAnimation:
+    type: bool
+  alwaysAimHead:
+    type: bool
+
+methods:
+  -
+    name: Clone
+    description: Creates a shallow-copy clone of this structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of this structure to all of its properties. Any properties that contain structure types (eg. Vec3) will be cloned when assigning, while properties that contain instance types (eg. DataContainer) will be referencing the same instance.
+    returns:
+      type: WeaponStateData
+      description: The newly created structure.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the WeaponStateData type.
+

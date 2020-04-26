@@ -1,0 +1,11 @@
+name: PoseType
+type: enum
+
+values:
+  PoseType_Current:
+    value: 0
+  PoseType_Stand:
+    value: 1
+  PoseType_Crouch:
+    value: 2
+

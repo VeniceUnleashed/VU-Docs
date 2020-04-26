@@ -1,0 +1,11 @@
+name: MixerValueAccumulateMode
+type: enum
+
+values:
+  MixerValueAccumulateMode_None:
+    value: 0
+  MixerValueAccumulateMode_Min:
+    value: 1
+  MixerValueAccumulateMode_Max:
+    value: 2
+

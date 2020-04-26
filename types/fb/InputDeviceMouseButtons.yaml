@@ -1,0 +1,23 @@
+name: InputDeviceMouseButtons
+type: enum
+
+values:
+  IDB_Button_0:
+    value: 0
+  IDB_Button_1:
+    value: 1
+  IDB_Button_2:
+    value: 2
+  IDB_Button_3:
+    value: 3
+  IDB_Button_4:
+    value: 4
+  IDB_Button_5:
+    value: 5
+  IDB_Button_6:
+    value: 6
+  IDB_Button_7:
+    value: 7
+  IDB_Button_Undefined:
+    value: 8
+

@@ -1,0 +1,37 @@
+name: UISpawnPointCompData
+type: class
+inherits: UIComponentData
+
+constructors:
+  -
+    description: Creates a new UISpawnPointCompData frostbite instance.
+  -
+    description: Creates a new UISpawnPointCompData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UIComponentData to UISpawnPointCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIComponentData
+        description: The instance to cast to UISpawnPointCompData.
+  -
+    description: Casts an instance of type Asset to UISpawnPointCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to UISpawnPointCompData.
+  -
+    description: Casts an instance of type DataContainer to UISpawnPointCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UISpawnPointCompData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UISpawnPointCompData type.
+

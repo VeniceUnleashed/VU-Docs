@@ -1,0 +1,11 @@
+name: MeshType
+type: enum
+
+values:
+  MeshType_Rigid:
+    value: 0
+  MeshType_Skinned:
+    value: 1
+  MeshType_Composite:
+    value: 2
+

@@ -1,0 +1,48 @@
+name: LensFlareComponentData
+type: class
+inherits: ComponentData
+
+constructors:
+  -
+    description: Creates a new LensFlareComponentData frostbite instance.
+  -
+    description: Creates a new LensFlareComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ComponentData to LensFlareComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to LensFlareComponentData.
+  -
+    description: Casts an instance of type GameObjectData to LensFlareComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to LensFlareComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to LensFlareComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to LensFlareComponentData.
+  -
+    description: Casts an instance of type DataContainer to LensFlareComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to LensFlareComponentData.
+
+properties:
+  lensFlare:
+    type: LensFlareEntityData
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the LensFlareComponentData type.
+

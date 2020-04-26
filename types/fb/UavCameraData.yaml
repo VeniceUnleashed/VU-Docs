@@ -1,0 +1,80 @@
+name: UavCameraData
+type: class
+inherits: TargetCameraData
+
+constructors:
+  -
+    description: Creates a new UavCameraData frostbite instance.
+  -
+    description: Creates a new UavCameraData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type TargetCameraData to UavCameraData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: TargetCameraData
+        description: The instance to cast to UavCameraData.
+  -
+    description: Casts an instance of type CameraData to UavCameraData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: CameraData
+        description: The instance to cast to UavCameraData.
+  -
+    description: Casts an instance of type GameObjectData to UavCameraData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to UavCameraData.
+  -
+    description: Casts an instance of type GameDataContainer to UavCameraData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to UavCameraData.
+  -
+    description: Casts an instance of type DataContainer to UavCameraData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UavCameraData.
+
+properties:
+  viewDistance:
+    type: float
+  viewDistanceCurve:
+    type: CameraSineCurveData
+    array: true
+  viewAngle:
+    type: float
+  viewAngleCurve:
+    type: CameraSineCurveData
+    array: true
+  rotationSpeed:
+    type: float
+  rotationSpeedCurve:
+    type: CameraSineCurveData
+    array: true
+  zoomFov:
+    type: float
+  zoomDelay:
+    type: float
+  zoomTransitionTime:
+    type: float
+  fov:
+    type: float
+  focusPoint:
+    type: UavCameraPointData
+  centerPoint:
+    type: UavCameraPointData
+  upWeightDistance:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UavCameraData type.
+

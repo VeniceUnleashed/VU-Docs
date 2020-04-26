@@ -1,0 +1,11 @@
+name: DebugRenderType
+type: enum
+
+values:
+  DebugRenderType_Text:
+    value: 0
+  DebugRenderType_Plot:
+    value: 1
+  DebugRenderType_Bar:
+    value: 2
+

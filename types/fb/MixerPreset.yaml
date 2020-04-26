@@ -1,0 +1,35 @@
+name: MixerPreset
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new MixerPreset frostbite instance.
+  -
+    description: Creates a new MixerPreset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to MixerPreset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MixerPreset.
+
+properties:
+  nameHash:
+    type: int
+  groups:
+    type: MixerPresetGroupData
+    array: true
+  nodes:
+    type: MixerPresetNodeData
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MixerPreset type.
+

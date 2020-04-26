@@ -1,0 +1,13 @@
+name: MenuResponse
+type: enum
+
+values:
+  ResponseOk:
+    value: 0
+  ResponseCancel:
+    value: 1
+  ResponseSquare:
+    value: 2
+  ResponseCount:
+    value: 3
+

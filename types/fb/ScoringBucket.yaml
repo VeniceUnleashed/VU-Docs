@@ -1,0 +1,53 @@
+name: ScoringBucket
+type: enum
+
+values:
+  ScoringBucket_General:
+    value: 0
+  ScoringBucket_Teamwork:
+    value: 1
+  ScoringBucket_Bonus:
+    value: 2
+  ScoringBucket_Squad:
+    value: 3
+  ScoringBucket_Objective:
+    value: 4
+  ScoringBucket_Award:
+    value: 5
+  ScoringBucket_VehicleMBT:
+    value: 6
+  ScoringBucket_VehicleIFV:
+    value: 7
+  ScoringBucket_VehicleAA:
+    value: 8
+  ScoringBucket_VehicleAttackHeli:
+    value: 9
+  ScoringBucket_VehicleScoutHeli:
+    value: 10
+  ScoringBucket_VehicleJet:
+    value: 11
+  ScoringBucket_KitAssault:
+    value: 12
+  ScoringBucket_KitEngineer:
+    value: 13
+  ScoringBucket_KitRecon:
+    value: 14
+  ScoringBucket_KitSupport:
+    value: 15
+  ScoringBucket_SinglePlayer:
+    value: 16
+  ScoringBucket_Cooperation:
+    value: 17
+  ScoringBucket_CoopIndivid:
+    value: 18
+  ScoringBucket_Unlock:
+    value: 19
+  ScoringBucket_SpecialKit:
+    value: 20
+  ScoringBucket_VehicleLBT:
+    value: 21
+  ScoringBucket_VehicleArtillery:
+    value: 22
+  ScoringBucket_LastScoringBucketItem:
+    value: 23
+

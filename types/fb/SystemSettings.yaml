@@ -1,0 +1,29 @@
+name: SystemSettings
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new SystemSettings frostbite instance.
+  -
+    description: Creates a new SystemSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to SystemSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SystemSettings.
+
+properties:
+  name:
+    type: string
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SystemSettings type.
+

@@ -1,0 +1,57 @@
+name: DebrisSystemSettings
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new DebrisSystemSettings frostbite instance.
+  -
+    description: Creates a new DebrisSystemSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to DebrisSystemSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to DebrisSystemSettings.
+
+properties:
+  meshDrawCountLimit:
+    type: int
+  timeScale:
+    type: float
+  meshCullingDistance:
+    type: float
+  drawStats:
+    type: int
+  meshBatchCountLimit:
+    type: int
+  meshStreamingPriorityMultiplier:
+    type: float
+  meshRenderingEnable:
+    type: bool
+  enableJobs:
+    type: bool
+  meshShadowEnable:
+    type: bool
+  meshViewCullingEnable:
+    type: bool
+  meshHavokRenderingEnable:
+    type: bool
+  meshDrawTransforms:
+    type: bool
+  enable:
+    type: bool
+  meshDrawBoundingBoxes:
+    type: bool
+  meshDrawCullStats:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the DebrisSystemSettings type.
+

@@ -1,0 +1,112 @@
+name: PropellerEngineConfigData
+type: class
+inherits: EngineConfigData
+
+constructors:
+  -
+    description: Creates a new PropellerEngineConfigData frostbite instance.
+  -
+    description: Creates a new PropellerEngineConfigData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EngineConfigData to PropellerEngineConfigData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EngineConfigData
+        description: The instance to cast to PropellerEngineConfigData.
+  -
+    description: Casts an instance of type DataContainer to PropellerEngineConfigData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PropellerEngineConfigData.
+
+properties:
+  horisontalForceOffset:
+    type: Vec3
+  propellerType:
+    type: PropellerType
+  rotorConfig:
+    type: RotorParameters
+    nullable: true
+  forceMagnitudeInputType:
+    type: ForceMagnitudeInputType
+  directionVectorIndex:
+    type: int
+  forceMagnitudeMultiplier:
+    type: float
+  liftForceSpringConstant:
+    type: float
+  liftForceDampingConstant:
+    type: float
+  cyclicInputScaleRoll:
+    type: float
+  cyclicRollLiftMod:
+    type: float
+  cyclicRollStrafeMod:
+    type: float
+  cyclicInputScalePitch:
+    type: float
+  cyclicPitchLiftMod:
+    type: float
+  cyclicPitchStrafeMod:
+    type: float
+  cyclicPitchStrafeBrakeMod:
+    type: float
+  collectiveInputIdle:
+    type: float
+  collectiveThrottleInputScale:
+    type: float
+  collectiveBrakeInputScale:
+    type: float
+  defaultAngleOfAttack:
+    type: float
+  attackAngleMod:
+    type: float
+  stabilizerMod:
+    type: float
+  horisontalMinEffectVelocity:
+    type: float
+  horisontalMinEffectMod:
+    type: float
+  pitchStrength:
+    type: float
+  pitchFromVel:
+    type: float
+  gravityMod:
+    type: float
+  spForwardStrength:
+    type: float
+  spSidewaysStrength:
+    type: float
+  spVerticalStrength:
+    type: float
+  velocityFromPitch:
+    type: float
+  pitchLimit:
+    type: float
+  bankingStrength:
+    type: float
+  bankingLimit:
+    type: float
+  rollStrength:
+    type: float
+  pitchUpWhenBankStrength:
+    type: float
+  pitchUpWhenBankLimit:
+    type: float
+  spDefault:
+    type: bool
+  enableNewHelicopter:
+    type: bool
+  spAllowed:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PropellerEngineConfigData type.
+

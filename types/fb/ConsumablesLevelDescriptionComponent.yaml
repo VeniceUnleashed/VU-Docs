@@ -1,0 +1,36 @@
+name: ConsumablesLevelDescriptionComponent
+type: class
+inherits: LevelDescriptionComponent
+
+constructors:
+  -
+    description: Creates a new ConsumablesLevelDescriptionComponent frostbite instance.
+  -
+    description: Creates a new ConsumablesLevelDescriptionComponent frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type LevelDescriptionComponent to ConsumablesLevelDescriptionComponent. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: LevelDescriptionComponent
+        description: The instance to cast to ConsumablesLevelDescriptionComponent.
+  -
+    description: Casts an instance of type DataContainer to ConsumablesLevelDescriptionComponent. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ConsumablesLevelDescriptionComponent.
+
+properties:
+  consumables:
+    type: Consumable
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ConsumablesLevelDescriptionComponent type.
+

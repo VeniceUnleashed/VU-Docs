@@ -1,0 +1,49 @@
+name: SyncedGameSettings
+type: class
+inherits: SystemSettings
+
+constructors:
+  -
+    description: Creates a new SyncedGameSettings frostbite instance.
+  -
+    description: Creates a new SyncedGameSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SystemSettings to SyncedGameSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SystemSettings
+        description: The instance to cast to SyncedGameSettings.
+  -
+    description: Casts an instance of type DataContainer to SyncedGameSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SyncedGameSettings.
+
+properties:
+  maxAllowedLatency:
+    type: float
+  manDownTimeModifier:
+    type: float
+  bulletDamageModifier:
+    type: float
+  difficultyIndex:
+    type: int
+  disableRegenerateHealth:
+    type: bool
+  enableFriendlyFire:
+    type: bool
+  allowClientSideDamageArbitration:
+    type: bool
+  disableToggleEntryCamera:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SyncedGameSettings type.
+

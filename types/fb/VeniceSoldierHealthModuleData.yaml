@@ -1,0 +1,68 @@
+name: VeniceSoldierHealthModuleData
+type: class
+inherits: SoldierHealthModuleData
+
+constructors:
+  -
+    description: Creates a new VeniceSoldierHealthModuleData frostbite instance.
+  -
+    description: Creates a new VeniceSoldierHealthModuleData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SoldierHealthModuleData to VeniceSoldierHealthModuleData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SoldierHealthModuleData
+        description: The instance to cast to VeniceSoldierHealthModuleData.
+  -
+    description: Casts an instance of type DataContainer to VeniceSoldierHealthModuleData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VeniceSoldierHealthModuleData.
+
+properties:
+  timeForCorpse:
+    type: float
+  postReviveResponseTime:
+    type: float
+  interactiveManDownThreshold:
+    type: float
+  interactiveManDownPoseConstraints:
+    type: PoseConstraintsData
+  manDownStateTime:
+    type: float
+  manDownStateHealthPoints:
+    type: float
+  immortalTimeAfterSpawn:
+    type: float
+  abortSpawnImmortalityInputs:
+    type: EntryInputActionEnum
+    array: true
+  postReviveHealth:
+    type: float
+  criticalFakeImmortalTime:
+    type: float
+  regenerationDelay:
+    type: float
+  regenerationRate:
+    type: float
+  binding:
+    type: SoldierHealthModuleBinding
+  sprintDisabledWhenDamagedTime:
+    type: float
+  sprintDisabledDamageThreshold:
+    type: float
+  manDownRotate:
+    type: RotateToHitData
+  interactiveManDown:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VeniceSoldierHealthModuleData type.
+

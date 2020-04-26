@@ -1,0 +1,13 @@
+name: CharacterPoseAction
+type: enum
+
+values:
+  CPTNoAction:
+    value: 0
+  CPTForceToStand:
+    value: 1
+  CPTForceToCroch:
+    value: 2
+  CPTForceToProne:
+    value: 3
+

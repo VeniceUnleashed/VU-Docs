@@ -1,0 +1,13 @@
+name: ShaderValueParameterType
+type: enum
+
+values:
+  SvptLiteral:
+    value: 0
+  SvptExternalPermutation:
+    value: 1
+  SvptExternalConstant:
+    value: 2
+  SvptExternalSubMaterial:
+    value: 3
+

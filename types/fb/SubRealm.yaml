@@ -1,0 +1,11 @@
+name: SubRealm
+type: enum
+
+values:
+  SubRealm_All:
+    value: 0
+  SubRealm_LocalPlayer:
+    value: 1
+  SubRealm_RemotePlayer:
+    value: 2
+

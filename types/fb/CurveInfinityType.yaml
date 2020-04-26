@@ -1,0 +1,15 @@
+name: CurveInfinityType
+type: enum
+
+values:
+  CurveInfinityType_Constant:
+    value: 0
+  CurveInfinityType_Linear:
+    value: 1
+  CurveInfinityType_Cycle:
+    value: 2
+  CurveInfinityType_CycleWithOffset:
+    value: 3
+  CurveInfinityType_Oscillate:
+    value: 4
+

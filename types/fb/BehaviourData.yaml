@@ -1,0 +1,35 @@
+name: BehaviourData
+type: class
+inherits: UrgencyUserData
+
+constructors:
+  -
+    description: Creates a new BehaviourData frostbite instance.
+  -
+    description: Creates a new BehaviourData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UrgencyUserData to BehaviourData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UrgencyUserData
+        description: The instance to cast to BehaviourData.
+  -
+    description: Casts an instance of type DataContainer to BehaviourData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to BehaviourData.
+
+properties:
+  name:
+    type: string
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the BehaviourData type.
+

@@ -1,0 +1,17 @@
+name: LockType
+type: enum
+
+values:
+  LockAlways:
+    value: 0
+  LockOnRadar:
+    value: 1
+  LockOnHeat:
+    value: 2
+  LockOnLaserPainted:
+    value: 3
+  LockNever:
+    value: 4
+  LockTypeCount:
+    value: 5
+

@@ -1,0 +1,15 @@
+name: PersistentValueDataKind
+type: enum
+
+values:
+  PersistentValueDataKind_Raw:
+    value: 0
+  PersistentValueDataKind_Seconds:
+    value: 1
+  PersistentValueDataKind_Minutes:
+    value: 2
+  PersistentValueDataKind_Hours:
+    value: 3
+  PersistentValueDataKind_Percent:
+    value: 4
+

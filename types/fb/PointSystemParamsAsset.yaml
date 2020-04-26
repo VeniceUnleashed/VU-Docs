@@ -1,0 +1,43 @@
+name: PointSystemParamsAsset
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new PointSystemParamsAsset frostbite instance.
+  -
+    description: Creates a new PointSystemParamsAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to PointSystemParamsAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to PointSystemParamsAsset.
+  -
+    description: Casts an instance of type DataContainer to PointSystemParamsAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PointSystemParamsAsset.
+
+properties:
+  multiKillTimeLimit:
+    type: float
+  dnfTimeout:
+    type: float
+  killStreakX:
+    type: int
+  nemesisKillX:
+    type: int
+  freefallHeight:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PointSystemParamsAsset type.
+

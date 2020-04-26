@@ -1,0 +1,43 @@
+name: UIMinimapDistanceFieldParams
+type: class
+
+constructors:
+  -
+    description: Creates a new UIMinimapDistanceFieldParams frostbite instance.
+  -
+    description: Creates a new UIMinimapDistanceFieldParams frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+
+properties:
+  colorTint:
+    type: Vec4
+  outlineColor:
+    type: Vec4
+  distanceScale:
+    type: float
+  alphaThreshold:
+    type: float
+  outlineInner:
+    type: float
+  outlineOuter:
+    type: float
+  distanceField:
+    type: UIDistanceFieldAsset
+    nullable: true
+
+methods:
+  -
+    name: Clone
+    description: Creates a shallow-copy clone of this structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of this structure to all of its properties. Any properties that contain structure types (eg. Vec3) will be cloned when assigning, while properties that contain instance types (eg. DataContainer) will be referencing the same instance.
+    returns:
+      type: UIMinimapDistanceFieldParams
+      description: The newly created structure.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UIMinimapDistanceFieldParams type.
+

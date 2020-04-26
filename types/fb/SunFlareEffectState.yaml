@@ -1,0 +1,118 @@
+name: SunFlareEffectState
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new SunFlareEffectState frostbite instance.
+  -
+    description: Creates a new SunFlareEffectState frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to SunFlareEffectState. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SunFlareEffectState.
+
+properties:
+  element5AlphaScreenPosCurve:
+    type: Vec4
+  element5AlphaOccluderCurve:
+    type: Vec4
+  element2SizeScreenPosCurve:
+    type: Vec4
+  element5SizeScreenPosCurve:
+    type: Vec4
+  element2AlphaOccluderCurve:
+    type: Vec4
+  element2AlphaScreenPosCurve:
+    type: Vec4
+  element1Size:
+    type: Vec2
+  element1SizeOccluderCurve:
+    type: Vec4
+  element1SizeScreenPosCurve:
+    type: Vec4
+  element1AlphaOccluderCurve:
+    type: Vec4
+  element1AlphaScreenPosCurve:
+    type: Vec4
+  element5SizeOccluderCurve:
+    type: Vec4
+  element4SizeScreenPosCurve:
+    type: Vec4
+  element3Size:
+    type: Vec2
+  element2Size:
+    type: Vec2
+  element2SizeOccluderCurve:
+    type: Vec4
+  element4AlphaScreenPosCurve:
+    type: Vec4
+  element3SizeOccluderCurve:
+    type: Vec4
+  element4Size:
+    type: Vec2
+  element5Size:
+    type: Vec2
+  element3SizeScreenPosCurve:
+    type: Vec4
+  element3AlphaOccluderCurve:
+    type: Vec4
+  element4SizeOccluderCurve:
+    type: Vec4
+  element3AlphaScreenPosCurve:
+    type: Vec4
+  element4AlphaOccluderCurve:
+    type: Vec4
+  element3Shader:
+    type: SurfaceShaderBaseAsset
+    nullable: true
+  element2Shader:
+    type: SurfaceShaderBaseAsset
+    nullable: true
+  occluderSize:
+    type: float
+  element4Shader:
+    type: SurfaceShaderBaseAsset
+    nullable: true
+  element4RayDistance:
+    type: float
+  element1Shader:
+    type: SurfaceShaderBaseAsset
+    nullable: true
+  element2RayDistance:
+    type: float
+  element1RayDistance:
+    type: float
+  element5RayDistance:
+    type: float
+  element3RayDistance:
+    type: float
+  element5Shader:
+    type: SurfaceShaderBaseAsset
+    nullable: true
+  element5Enable:
+    type: bool
+  element4Enable:
+    type: bool
+  element3Enable:
+    type: bool
+  element2Enable:
+    type: bool
+  element1Enable:
+    type: bool
+  debugDrawOccluder:
+    type: bool
+  enable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SunFlareEffectState type.
+

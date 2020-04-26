@@ -1,0 +1,43 @@
+name: ComparisonLogicNode
+type: class
+inherits: UINodeData
+
+constructors:
+  -
+    description: Creates a new ComparisonLogicNode frostbite instance.
+  -
+    description: Creates a new ComparisonLogicNode frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UINodeData to ComparisonLogicNode. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UINodeData
+        description: The instance to cast to ComparisonLogicNode.
+  -
+    description: Casts an instance of type DataContainer to ComparisonLogicNode. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ComparisonLogicNode.
+
+properties:
+  inValue:
+    type: UINodePort
+    nullable: true
+  outputs:
+    type: UINodePort
+    array: true
+  dataSourceInfo:
+    type: UIDataSourceInfo
+  skipFractionals:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ComparisonLogicNode type.
+

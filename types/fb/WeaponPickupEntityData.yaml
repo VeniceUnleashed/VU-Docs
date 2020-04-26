@@ -1,0 +1,74 @@
+name: WeaponPickupEntityData
+type: class
+inherits: PickupEntityData
+
+constructors:
+  -
+    description: Creates a new WeaponPickupEntityData frostbite instance.
+  -
+    description: Creates a new WeaponPickupEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type PickupEntityData to WeaponPickupEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: PickupEntityData
+        description: The instance to cast to WeaponPickupEntityData.
+  -
+    description: Casts an instance of type GamePhysicsEntityData to WeaponPickupEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GamePhysicsEntityData
+        description: The instance to cast to WeaponPickupEntityData.
+  -
+    description: Casts an instance of type GameEntityData to WeaponPickupEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to WeaponPickupEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to WeaponPickupEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to WeaponPickupEntityData.
+  -
+    description: Casts an instance of type EntityData to WeaponPickupEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to WeaponPickupEntityData.
+  -
+    description: Casts an instance of type GameObjectData to WeaponPickupEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to WeaponPickupEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to WeaponPickupEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to WeaponPickupEntityData.
+  -
+    description: Casts an instance of type DataContainer to WeaponPickupEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to WeaponPickupEntityData.
+
+properties:
+  weapons:
+    type: WeaponPickupData
+    array: true
+  useForPersistence:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the WeaponPickupEntityData type.
+

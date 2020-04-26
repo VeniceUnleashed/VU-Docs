@@ -1,0 +1,54 @@
+name: VoiceOverIntervalNode
+type: class
+inherits: VoiceOverExpressionNode
+
+constructors:
+  -
+    description: Creates a new VoiceOverIntervalNode frostbite instance.
+  -
+    description: Creates a new VoiceOverIntervalNode frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type VoiceOverExpressionNode to VoiceOverIntervalNode. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: VoiceOverExpressionNode
+        description: The instance to cast to VoiceOverIntervalNode.
+  -
+    description: Casts an instance of type VoiceOverNode to VoiceOverIntervalNode. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: VoiceOverNode
+        description: The instance to cast to VoiceOverIntervalNode.
+  -
+    description: Casts an instance of type DataContainer to VoiceOverIntervalNode. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VoiceOverIntervalNode.
+
+properties:
+  threshold:
+    type: VoiceOverValueConnection
+    nullable: true
+  time:
+    type: VoiceOverValue
+    nullable: true
+  falseValue:
+    type: VoiceOverValue
+    nullable: true
+  trueValue:
+    type: VoiceOverValue
+    nullable: true
+  interval:
+    type: VoiceOverInterval
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VoiceOverIntervalNode type.
+

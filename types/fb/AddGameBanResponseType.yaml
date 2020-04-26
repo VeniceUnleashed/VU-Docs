@@ -1,0 +1,13 @@
+name: AddGameBanResponseType
+type: enum
+
+values:
+  AddGameBanResponseType_Success:
+    value: 0
+  AddGameBanResponseType_Failure:
+    value: 1
+  AddGameBanResponseType_UserNotFound:
+    value: 2
+  AddGameBanResponseType_UserCannotBeBanned:
+    value: 3
+

@@ -1,0 +1,47 @@
+name: UICustomizationCompData
+type: class
+inherits: UIComponentData
+
+constructors:
+  -
+    description: Creates a new UICustomizationCompData frostbite instance.
+  -
+    description: Creates a new UICustomizationCompData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UIComponentData to UICustomizationCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIComponentData
+        description: The instance to cast to UICustomizationCompData.
+  -
+    description: Casts an instance of type Asset to UICustomizationCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to UICustomizationCompData.
+  -
+    description: Casts an instance of type DataContainer to UICustomizationCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UICustomizationCompData.
+
+properties:
+  soldierOffset:
+    type: Vec3
+  soldierRotation:
+    type: Vec3
+  vehicleRotation:
+    type: Vec3
+  networkThrottleTimer:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UICustomizationCompData type.
+

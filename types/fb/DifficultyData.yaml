@@ -1,0 +1,72 @@
+name: DifficultyData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new DifficultyData frostbite instance.
+  -
+    description: Creates a new DifficultyData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to DifficultyData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to DifficultyData.
+
+properties:
+  stickyBoxModifier:
+    type: Vec3
+  snapBoxModifier:
+    type: Vec3
+  humanHealthModifier:
+    type: float
+  gameType:
+    type: PersistenceGameType
+  friendsHealthModifier:
+    type: float
+  friendlyDamageModifier:
+    type: float
+  vehicleDamageModifier:
+    type: float
+  humanInCriticalHealth:
+    type: float
+  enemiesHealthModifier:
+    type: float
+  humanRegenerationRateModifier:
+    type: float
+  humanInCriticalHealthDamageModifier:
+    type: float
+  interactiveManDownDamageModifier:
+    type: float
+  interactiveManDownTimeMultiplier:
+    type: float
+  interactiveManDownReviveTime:
+    type: float
+  adrenalineKillLimit:
+    type: int
+  criticalHealthJesusModeTimeModifier:
+    type: float
+  difficulty:
+    type: Difficulty
+  criticalFakeImmortalModifier:
+    type: float
+  suckZoomModifier:
+    type: float
+  aiData:
+    type: GameAIDifficultyData
+    nullable: true
+  aiBulletDamageHumanCooldown:
+    type: float
+  usePitchZoomSnap:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the DifficultyData type.
+

@@ -1,0 +1,64 @@
+name: UIPostProcessComponentData
+type: class
+inherits: UIComponentData
+
+constructors:
+  -
+    description: Creates a new UIPostProcessComponentData frostbite instance.
+  -
+    description: Creates a new UIPostProcessComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UIComponentData to UIPostProcessComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIComponentData
+        description: The instance to cast to UIPostProcessComponentData.
+  -
+    description: Casts an instance of type Asset to UIPostProcessComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to UIPostProcessComponentData.
+  -
+    description: Casts an instance of type DataContainer to UIPostProcessComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UIPostProcessComponentData.
+
+properties:
+  highlightThreshold:
+    type: float
+  xPower:
+    type: float
+  yPower:
+    type: float
+  distort:
+    type: float
+  timeScale:
+    type: float
+  noiseTexture:
+    type: TextureAsset
+    nullable: true
+  highlight:
+    type: float
+  rShift:
+    type: float
+  gShift:
+    type: float
+  bShift:
+    type: float
+  tweakMode:
+    type: bool
+  enabled:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UIPostProcessComponentData type.
+

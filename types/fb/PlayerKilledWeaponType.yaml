@@ -1,0 +1,13 @@
+name: PlayerKilledWeaponType
+type: enum
+
+values:
+  PlayerKilledWeaponType_Unknown:
+    value: 0
+  PlayerKilledWeaponType_HandheldWeapon:
+    value: 1
+  PlayerKilledWeaponType_Vehicle:
+    value: 2
+  PlayerKilledWeaponType_Count:
+    value: 3
+

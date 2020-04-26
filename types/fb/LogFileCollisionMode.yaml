@@ -1,0 +1,11 @@
+name: LogFileCollisionMode
+type: enum
+
+values:
+  LFCM_Overwrite:
+    value: 0
+  LFCM_Rotate:
+    value: 1
+  LFCM_TimeStamp:
+    value: 2
+

@@ -1,0 +1,60 @@
+name: VoiceOverLabelNode
+type: class
+inherits: VoiceOverExpressionNode
+
+constructors:
+  -
+    description: Creates a new VoiceOverLabelNode frostbite instance.
+  -
+    description: Creates a new VoiceOverLabelNode frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type VoiceOverExpressionNode to VoiceOverLabelNode. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: VoiceOverExpressionNode
+        description: The instance to cast to VoiceOverLabelNode.
+  -
+    description: Casts an instance of type VoiceOverNode to VoiceOverLabelNode. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: VoiceOverNode
+        description: The instance to cast to VoiceOverLabelNode.
+  -
+    description: Casts an instance of type DataContainer to VoiceOverLabelNode. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VoiceOverLabelNode.
+
+properties:
+  sources:
+    type: VoiceOverLabelSource
+    array: true
+  falseValue:
+    type: VoiceOverValue
+    nullable: true
+  trueValue:
+    type: VoiceOverValue
+    nullable: true
+  wantedLabels:
+    type: VoiceOverLabel
+    array: true
+  unwantedLabels:
+    type: VoiceOverLabel
+    array: true
+  sourceMode:
+    type: VoiceOverLabelSourceMode
+  wantedCompareMode:
+    type: VoiceOverLabelCompareMode
+  unwantedCompareMode:
+    type: VoiceOverLabelCompareMode
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VoiceOverLabelNode type.
+

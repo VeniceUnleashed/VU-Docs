@@ -1,0 +1,63 @@
+name: EntityInteractionComponentData
+type: class
+inherits: ComponentData
+
+constructors:
+  -
+    description: Creates a new EntityInteractionComponentData frostbite instance.
+  -
+    description: Creates a new EntityInteractionComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ComponentData to EntityInteractionComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to EntityInteractionComponentData.
+  -
+    description: Casts an instance of type GameObjectData to EntityInteractionComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to EntityInteractionComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to EntityInteractionComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to EntityInteractionComponentData.
+  -
+    description: Casts an instance of type DataContainer to EntityInteractionComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to EntityInteractionComponentData.
+
+properties:
+  pickupRadius:
+    type: float
+  maxAmmoPickupTimer:
+    type: float
+  maxAmmoCrateTimer:
+    type: float
+  interactWithTypes:
+    type: InteractionTypesData
+  maxLookAtAngle:
+    type: float
+  soldierInteractRadius:
+    type: float
+  soldierInteractInputAction:
+    type: EntryInputActionEnum
+  allowInteractionWithSoldiers:
+    type: bool
+  onlyAllowInteractionWithManDownSoldiers:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the EntityInteractionComponentData type.
+

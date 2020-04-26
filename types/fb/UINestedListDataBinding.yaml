@@ -1,0 +1,72 @@
+name: UINestedListDataBinding
+type: class
+inherits: UIDataBinding
+
+constructors:
+  -
+    description: Creates a new UINestedListDataBinding frostbite instance.
+  -
+    description: Creates a new UINestedListDataBinding frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UIDataBinding to UINestedListDataBinding. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIDataBinding
+        description: The instance to cast to UINestedListDataBinding.
+  -
+    description: Casts an instance of type DataContainer to UINestedListDataBinding. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UINestedListDataBinding.
+
+properties:
+  listIndex:
+    type: int
+  nestedLists:
+    type: NestedList
+    array: true
+  rowSpacing:
+    type: int
+  defaultHighlightedRow:
+    type: DefaultSelectionItem
+  navigationType:
+    type: UIListNavigationType
+  rowType:
+    type: UIListRowType
+  emptyRowType:
+    type: UIListEmptyRowType
+  selectorWidth:
+    type: int
+  visibility:
+    type: UIDataSourceInfo
+  sendIndexWithEvent:
+    type: bool
+  useScrollBar:
+    type: bool
+  dataIncludesButtonLayout:
+    type: bool
+  clearListAtNavigationEvent:
+    type: bool
+  use3DSelection:
+    type: bool
+  invertVisible:
+    type: bool
+  visible:
+    type: bool
+  screenRotationEnabled:
+    type: bool
+  highLightOnUpdate:
+    type: bool
+  keepScrollOffset:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UINestedListDataBinding type.
+

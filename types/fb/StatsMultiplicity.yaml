@@ -1,0 +1,13 @@
+name: StatsMultiplicity
+type: enum
+
+values:
+  StatsMultiplicity_Invalid:
+    value: 0
+  StatsMultiplicity_Solo:
+    value: 1
+  StatsMultiplicity_Club:
+    value: 2
+  StatsMultiplicity_LAST_ITEM:
+    value: 3
+

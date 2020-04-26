@@ -1,0 +1,156 @@
+name: AnimatedWeaponBinding
+type: class
+
+constructors:
+  -
+    description: Creates a new AnimatedWeaponBinding frostbite instance.
+  -
+    description: Creates a new AnimatedWeaponBinding frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+
+properties:
+  deploy:
+    type: AntRef
+  altDeploy:
+    type: AntRef
+  undeploy:
+    type: AntRef
+  quickSwitch:
+    type: AntRef
+  reload:
+    type: AntRef
+  reloadShotgun:
+    type: AntRef
+  fire:
+    type: AntRef
+  fireSingle:
+    type: AntRef
+  fireHoldAndRelease:
+    type: AntRef
+  fireSimple:
+    type: AntRef
+  firstShotSpawned:
+    type: AntRef
+  boltAction:
+    type: AntRef
+  pumpAction:
+    type: AntRef
+  meleeAttack:
+    type: AntRef
+  quickThrow:
+    type: AntRef
+  quickThrowType:
+    type: AntRef
+  aimBody:
+    type: AntRef
+  alwaysAimHead:
+    type: AntRef
+  oneHanded:
+    type: AntRef
+  oneHandedAiming:
+    type: AntRef
+  aimingEnabled:
+    type: AntRef
+  lowerGun:
+    type: AntRef
+  breathControl:
+    type: AntRef
+  rflType:
+    type: AntRef
+  pstlType:
+    type: AntRef
+  hgrType:
+    type: AntRef
+  atType:
+    type: AntRef
+  shgType:
+    type: AntRef
+  lmgType:
+    type: AntRef
+  bagType:
+    type: AntRef
+  snpType:
+    type: AntRef
+  zoom:
+    type: AntRef
+  aimBodyWeight:
+    type: AntRef
+  disableZoomToggleWeight:
+    type: AntRef
+  zoomParameter:
+    type: AntRef
+  zoomScaleFactor:
+    type: AntRef
+  dispersion:
+    type: AntRef
+  aimTargetPosBody:
+    type: AntRef
+  zoomOutSpeed:
+    type: AntRef
+  zoomInSpeed:
+    type: AntRef
+  unDeploySpeed:
+    type: AntRef
+  deploySpeed:
+    type: AntRef
+  lightEnabled:
+    type: AntRef
+  fireModeChanged:
+    type: AntRef
+  animType:
+    type: AntRef
+  gunDown:
+    type: AntRef
+  numberOfBulletsLeftInGun:
+    type: AntRef
+  bulletsLeftInGun:
+    type: AntRef
+  abortVehicleDeploy:
+    type: AntRef
+  currentProjectileIndex:
+    type: AntRef
+  weaponActionESIG:
+    type: AntRef
+  isSprinting:
+    type: AntRef
+  preparingToBash:
+    type: AntRef
+  justStartedSprinting:
+    type: AntRef
+  kickBackInIronSight:
+    type: AntRef
+  zoomingTime:
+    type: AntRef
+  triggerZoomGunTwitch:
+    type: AntRef
+  weaponChooserSignal:
+    type: AntRef
+  weaponClassSignal:
+    type: AntRef
+  offsetX:
+    type: AntRef
+  offsetY:
+    type: AntRef
+  offsetZ:
+    type: AntRef
+  aiAllowFire:
+    type: AntRef
+  aiAltFireFromAnt:
+    type: AntRef
+
+methods:
+  -
+    name: Clone
+    description: Creates a shallow-copy clone of this structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of this structure to all of its properties. Any properties that contain structure types (eg. Vec3) will be cloned when assigning, while properties that contain instance types (eg. DataContainer) will be referencing the same instance.
+    returns:
+      type: AnimatedWeaponBinding
+      description: The newly created structure.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the AnimatedWeaponBinding type.
+

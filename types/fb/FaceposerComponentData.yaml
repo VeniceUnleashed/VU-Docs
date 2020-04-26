@@ -1,0 +1,61 @@
+name: FaceposerComponentData
+type: class
+inherits: ComponentData
+
+constructors:
+  -
+    description: Creates a new FaceposerComponentData frostbite instance.
+  -
+    description: Creates a new FaceposerComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ComponentData to FaceposerComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to FaceposerComponentData.
+  -
+    description: Casts an instance of type GameObjectData to FaceposerComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to FaceposerComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to FaceposerComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to FaceposerComponentData.
+  -
+    description: Casts an instance of type DataContainer to FaceposerComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to FaceposerComponentData.
+
+properties:
+  facePoserEnabled:
+    type: AntRef
+  lodDistance:
+    type: float
+  facePoseLibraryReference:
+    type: AntRef
+  facePoseLibrary:
+    type: AntRef
+    array: true
+  facePoserDofSetName:
+    type: string
+  shaderExposedValues:
+    type: string
+    array: true
+  facePoseLibraryIndex:
+    type: int
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the FaceposerComponentData type.
+

@@ -1,0 +1,9 @@
+name: ShaderPositionSpace
+type: enum
+
+values:
+  ShaderPositionSpace_Object:
+    value: 0
+  ShaderPositionSpace_World:
+    value: 1
+

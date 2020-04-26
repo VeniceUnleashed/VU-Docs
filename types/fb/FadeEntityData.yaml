@@ -1,0 +1,61 @@
+name: FadeEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new FadeEntityData frostbite instance.
+  -
+    description: Creates a new FadeEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to FadeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to FadeEntityData.
+  -
+    description: Casts an instance of type GameObjectData to FadeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to FadeEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to FadeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to FadeEntityData.
+  -
+    description: Casts an instance of type DataContainer to FadeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to FadeEntityData.
+
+properties:
+  fadeTime:
+    type: float
+  maxWaitFadedWhileStreamingTime:
+    type: float
+  fadeScreen:
+    type: bool
+  fadeUI:
+    type: bool
+  fadeRumble:
+    type: bool
+  fadeAudio:
+    type: bool
+  fadeMovie:
+    type: bool
+  startFaded:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the FadeEntityData type.
+

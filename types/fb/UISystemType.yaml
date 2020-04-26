@@ -1,0 +1,9 @@
+name: UISystemType
+type: enum
+
+values:
+  UISystem_None:
+    value: 0
+  UISystem_Standard:
+    value: 1
+

@@ -1,0 +1,9 @@
+name: DynamicAOMethod
+type: enum
+
+values:
+  DynamicAOMethod_SSAO:
+    value: 0
+  DynamicAOMethod_HBAO:
+    value: 1
+

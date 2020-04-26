@@ -1,0 +1,17 @@
+name: GamePlatform
+type: enum
+
+values:
+  GamePlatform_Ps3:
+    value: 0
+  GamePlatform_Win32:
+    value: 1
+  GamePlatform_Xenon:
+    value: 2
+  GamePlatform_Any:
+    value: 3
+  GamePlatform_Invalid:
+    value: 4
+  GamePlatform_Count:
+    value: 5
+

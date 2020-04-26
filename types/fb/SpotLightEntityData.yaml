@@ -1,0 +1,78 @@
+name: SpotLightEntityData
+type: class
+inherits: LocalLightEntityData
+
+constructors:
+  -
+    description: Creates a new SpotLightEntityData frostbite instance.
+  -
+    description: Creates a new SpotLightEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type LocalLightEntityData to SpotLightEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: LocalLightEntityData
+        description: The instance to cast to SpotLightEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to SpotLightEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to SpotLightEntityData.
+  -
+    description: Casts an instance of type EntityData to SpotLightEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to SpotLightEntityData.
+  -
+    description: Casts an instance of type GameObjectData to SpotLightEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to SpotLightEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to SpotLightEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to SpotLightEntityData.
+  -
+    description: Casts an instance of type DataContainer to SpotLightEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SpotLightEntityData.
+
+properties:
+  shape:
+    type: SpotLightShape
+  coneInnerAngle:
+    type: float
+  coneOuterAngle:
+    type: float
+  frustumFov:
+    type: float
+  frustumAspect:
+    type: float
+  orthoWidth:
+    type: float
+  orthoHeight:
+    type: float
+  texture:
+    type: TextureAsset
+    nullable: true
+  castShadowsMinLevel:
+    type: QualityLevel
+  castShadowsEnable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SpotLightEntityData type.
+

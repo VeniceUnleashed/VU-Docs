@@ -1,0 +1,74 @@
+name: SequenceEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new SequenceEntityData frostbite instance.
+  -
+    description: Creates a new SequenceEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to SequenceEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to SequenceEntityData.
+  -
+    description: Casts an instance of type GameObjectData to SequenceEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to SequenceEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to SequenceEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to SequenceEntityData.
+  -
+    description: Casts an instance of type DataContainer to SequenceEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SequenceEntityData.
+
+properties:
+  events:
+    type: SequenceEventData
+    array: true
+  sequenceStartTime:
+    type: int
+  sequenceLength:
+    type: int
+  externalTime:
+    type: float
+  propertyTracks:
+    type: PropertyTrackData
+    array: true
+  realm:
+    type: Realm
+  serverUpdatePass:
+    type: UpdatePass
+  clientUpdatePass:
+    type: UpdatePass
+  customSequenceTracks:
+    type: CustomSequenceTrackData
+    array: true
+  autoPlayFirstFrame:
+    type: bool
+  looping:
+    type: bool
+  autoStart:
+    type: bool
+  playInReverse:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SequenceEntityData type.
+

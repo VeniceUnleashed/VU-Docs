@@ -1,0 +1,35 @@
+name: MenuIdAsset
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new MenuIdAsset frostbite instance.
+  -
+    description: Creates a new MenuIdAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to MenuIdAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to MenuIdAsset.
+  -
+    description: Casts an instance of type DataContainer to MenuIdAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MenuIdAsset.
+
+properties:
+  shortName:
+    type: string
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MenuIdAsset type.
+

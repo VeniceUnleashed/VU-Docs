@@ -1,0 +1,74 @@
+name: SpecialMovesComponentData
+type: class
+inherits: ComponentData
+
+constructors:
+  -
+    description: Creates a new SpecialMovesComponentData frostbite instance.
+  -
+    description: Creates a new SpecialMovesComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ComponentData to SpecialMovesComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to SpecialMovesComponentData.
+  -
+    description: Casts an instance of type GameObjectData to SpecialMovesComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to SpecialMovesComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to SpecialMovesComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to SpecialMovesComponentData.
+  -
+    description: Casts an instance of type DataContainer to SpecialMovesComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SpecialMovesComponentData.
+
+properties:
+  vaultOverHighState:
+    type: SpecialMoveStateData
+  vaultUpHighState:
+    type: SpecialMoveStateData
+  vaultOverLowState:
+    type: SpecialMoveStateData
+  sprintToProneState:
+    type: SpecialMoveStateData
+  deathState:
+    type: SpecialMoveStateData
+  specialAnimationState:
+    type: SpecialMoveStateData
+  indexedDeathStates:
+    type: SpecialMoveStateData
+    array: true
+  indexedSpecialAnimationStates:
+    type: SpecialMoveStateData
+    array: true
+  indexedVaultOverHighStates:
+    type: SpecialMoveVaultStateCriteria
+    array: true
+  indexedVaultUpStates:
+    type: SpecialMoveVaultStateCriteria
+    array: true
+  indexedVaultOverLowStates:
+    type: SpecialMoveVaultStateCriteria
+    array: true
+  binding:
+    type: SpecialMovesBinding
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SpecialMovesComponentData type.
+

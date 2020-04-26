@@ -1,0 +1,13 @@
+name: GameSplineType
+type: enum
+
+values:
+  GameSplineType_Generic:
+    value: 0
+  GameSplineType_Pipe:
+    value: 1
+  GameSplineType_Zipline:
+    value: 2
+  GameSplineType_Swing:
+    value: 3
+

@@ -1,0 +1,50 @@
+name: MixerEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new MixerEntityData frostbite instance.
+  -
+    description: Creates a new MixerEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to MixerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to MixerEntityData.
+  -
+    description: Casts an instance of type GameObjectData to MixerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to MixerEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to MixerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to MixerEntityData.
+  -
+    description: Casts an instance of type DataContainer to MixerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MixerEntityData.
+
+properties:
+  mixer:
+    type: MixerAsset
+    nullable: true
+  activateOnCreation:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MixerEntityData type.
+

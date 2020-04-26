@@ -1,0 +1,49 @@
+name: JetEngineConfigData
+type: class
+inherits: EngineConfigData
+
+constructors:
+  -
+    description: Creates a new JetEngineConfigData frostbite instance.
+  -
+    description: Creates a new JetEngineConfigData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EngineConfigData to JetEngineConfigData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EngineConfigData
+        description: The instance to cast to JetEngineConfigData.
+  -
+    description: Casts an instance of type DataContainer to JetEngineConfigData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to JetEngineConfigData.
+
+properties:
+  powerFadeOutRange:
+    type: Vec2
+  forceMagnitudeMultiplier:
+    type: float
+  angleInputYMultiplier:
+    type: float
+  angleInputPitchMultiplier:
+    type: float
+  maxVelocity:
+    type: float
+  directionVectorIndex:
+    type: int
+  isWaterJetEngine:
+    type: bool
+  isTurnable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the JetEngineConfigData type.
+

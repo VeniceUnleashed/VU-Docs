@@ -1,0 +1,43 @@
+name: GunnerSpottingTrackerData
+type: class
+inherits: HudTrackerData
+
+constructors:
+  -
+    description: Creates a new GunnerSpottingTrackerData frostbite instance.
+  -
+    description: Creates a new GunnerSpottingTrackerData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type HudTrackerData to GunnerSpottingTrackerData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: HudTrackerData
+        description: The instance to cast to GunnerSpottingTrackerData.
+  -
+    description: Casts an instance of type UIPartData to GunnerSpottingTrackerData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIPartData
+        description: The instance to cast to GunnerSpottingTrackerData.
+  -
+    description: Casts an instance of type DataContainer to GunnerSpottingTrackerData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to GunnerSpottingTrackerData.
+
+properties:
+  spottedInfantryIcon:
+    type: UIHudIcon
+  spottedVehicleIcon:
+    type: UIHudIcon
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the GunnerSpottingTrackerData type.
+

@@ -1,0 +1,13 @@
+name: RichPresencePropertyType
+type: enum
+
+values:
+  RichPresencePropertyType_Float:
+    value: 0
+  RichPresencePropertyType_Integer:
+    value: 1
+  RichPresencePropertyType_LongFloat:
+    value: 2
+  RichPresencePropertyType_LongInteger:
+    value: 3
+

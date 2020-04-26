@@ -1,0 +1,13 @@
+name: UIUpdateType
+type: enum
+
+values:
+  UIUpdateType_Always:
+    value: 0
+  UIUpdateType_Odd:
+    value: 1
+  UIUpdateType_Even:
+    value: 2
+  UIUpdateType_Never:
+    value: 3
+

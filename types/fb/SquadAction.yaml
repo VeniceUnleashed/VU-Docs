@@ -1,0 +1,11 @@
+name: SquadAction
+type: enum
+
+values:
+  SquadAction_PlayerJoined:
+    value: 0
+  SquadAction_PlayerLeft:
+    value: 1
+  SquadAction_PlayerWasKicked:
+    value: 2
+

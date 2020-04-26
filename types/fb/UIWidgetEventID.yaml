@@ -1,0 +1,105 @@
+name: UIWidgetEventID
+type: enum
+
+values:
+  UIWidgetEventID_None:
+    value: 0
+  UIWidgetEventID_OnItemSelected:
+    value: 1
+  UIWidgetEventID_OnItemHighlighted:
+    value: 2
+  UIWidgetEventID_OnItemReleased:
+    value: 3
+  UIWidgetEventID_OnItemUnhighlighted:
+    value: 4
+  UIWidgetEventID_OnItemPressed:
+    value: 5
+  UIWidgetEventID_OnItemOver:
+    value: 6
+  UIWidgetEventID_OnItemOut:
+    value: 7
+  UIWidgetEventID_OnToggle:
+    value: 8
+  UIWidgetEventID_OnChanged:
+    value: 9
+  UIWidgetEventID_OnButtonBarChanged:
+    value: 10
+  UIWidgetEventID_EnterTop:
+    value: 11
+  UIWidgetEventID_EnterBottom:
+    value: 12
+  UIWidgetEventID_EnterAny:
+    value: 13
+  UIWidgetEventID_SetIndex:
+    value: 14
+  UIWidgetEventID_SetPercentage:
+    value: 15
+  UIWidgetEventID_OnReachedTop:
+    value: 16
+  UIWidgetEventID_OnReachedBottom:
+    value: 17
+  UIWidgetEventID_OnNavigateLeft:
+    value: 18
+  UIWidgetEventID_OnNavigateRight:
+    value: 19
+  UIWidgetEventID_Show:
+    value: 20
+  UIWidgetEventID_Hide:
+    value: 21
+  UIWidgetEventID_OnShow:
+    value: 22
+  UIWidgetEventID_OnHide:
+    value: 23
+  UIWidgetEventID_Toggle:
+    value: 24
+  UIWidgetEventID_ToggleOn:
+    value: 25
+  UIWidgetEventID_ToggleOff:
+    value: 26
+  UIWidgetEventID_ToggledOn:
+    value: 27
+  UIWidgetEventID_ToggledOff:
+    value: 28
+  UIWidgetEventID_Update:
+    value: 29
+  UIWidgetEventID_OnComplete:
+    value: 30
+  UIWidgetEventID_Focus:
+    value: 31
+  UIWidgetEventID_OnHeaderChanged:
+    value: 32
+  UIWidgetEventID_OnDescriptionChanged:
+    value: 33
+  UIWidgetEventID_OnMapChanged:
+    value: 34
+  UIWidgetEventID_Clear:
+    value: 35
+  UIWidgetEventID_Delete:
+    value: 36
+  UIWidgetEventID_LThumb:
+    value: 37
+  UIWidgetEventID_RThumb:
+    value: 38
+  UIWidgetEventID_LTAB:
+    value: 39
+  UIWidgetEventID_RTAB:
+    value: 40
+  UIWidgetEventID_OnLarge:
+    value: 41
+  UIWidgetEventID_OnSmall:
+    value: 42
+  UIWidgetEventID_TextEntered:
+    value: 43
+  UIWidgetEventID_PlaySoundNavigate:
+    value: 44
+  UIWidgetEventID_PlaySoundSelect:
+    value: 45
+  UIWidgetEventID_PlaySoundPageSwap:
+    value: 46
+  UIWidgetEventID_OnComPressed:
+    value: 47
+  UIWidgetEventID_OnComReleased:
+    value: 48
+  UIWidgetEventID_NumItems:
+    value: 49
+

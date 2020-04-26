@@ -1,0 +1,49 @@
+name: SurveyEvent
+type: class
+inherits: MetricEvent
+
+constructors:
+  -
+    description: Creates a new SurveyEvent frostbite instance.
+  -
+    description: Creates a new SurveyEvent frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type MetricEvent to SurveyEvent. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MetricEvent
+        description: The instance to cast to SurveyEvent.
+  -
+    description: Casts an instance of type DataContainer to SurveyEvent. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SurveyEvent.
+
+properties:
+  surveyName:
+    type: string
+  answerQuestion1:
+    type: int
+  answerQuestion2:
+    type: int
+  answerQuestion3:
+    type: int
+  answerQuestion4:
+    type: int
+  answerQuestion5:
+    type: int
+  freeTextField:
+    type: string
+  surveyMetricLink:
+    type: Guid
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SurveyEvent type.
+

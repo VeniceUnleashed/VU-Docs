@@ -1,0 +1,43 @@
+name: UIColorType
+type: enum
+
+values:
+  UIColorType_Unselected:
+    value: 0
+  UIColorType_Selected:
+    value: 1
+  UIColorType_SelectInside:
+    value: 2
+  UIColorType_UnselectedInside:
+    value: 3
+  UIColorType_Locked:
+    value: 4
+  UIColorType_IconBg:
+    value: 5
+  UIColorType_FrameSoft:
+    value: 6
+  UIColorType_FrameHard:
+    value: 7
+  UIColorType_HudYellow:
+    value: 8
+  UIColorType_CriticalColor:
+    value: 9
+  UIColorType_Friendly:
+    value: 10
+  UIColorType_Enemy:
+    value: 11
+  UIColorType_SquadColor:
+    value: 12
+  UIColorType_NormalTextColor:
+    value: 13
+  UIColorType_HeaderTextColor:
+    value: 14
+  UIColorType_StaticHUDColor:
+    value: 15
+  UIColorType_DynamicHUDColor:
+    value: 16
+  UIColorType_MouseOver:
+    value: 17
+  UIColorType_MouseOut:
+    value: 18
+

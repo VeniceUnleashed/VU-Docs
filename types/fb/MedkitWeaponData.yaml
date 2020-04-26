@@ -1,0 +1,37 @@
+name: MedkitWeaponData
+type: class
+inherits: WeaponData
+
+constructors:
+  -
+    description: Creates a new MedkitWeaponData frostbite instance.
+  -
+    description: Creates a new MedkitWeaponData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type WeaponData to MedkitWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: WeaponData
+        description: The instance to cast to MedkitWeaponData.
+  -
+    description: Casts an instance of type ToolData to MedkitWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ToolData
+        description: The instance to cast to MedkitWeaponData.
+  -
+    description: Casts an instance of type DataContainer to MedkitWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MedkitWeaponData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MedkitWeaponData type.
+

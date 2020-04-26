@@ -1,0 +1,101 @@
+name: PhysicsRenderSettings
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new PhysicsRenderSettings frostbite instance.
+  -
+    description: Creates a new PhysicsRenderSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to PhysicsRenderSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PhysicsRenderSettings.
+
+properties:
+  renderSpecificPart:
+    type: int
+  viewDistance:
+    type: float
+  renderClient:
+    type: bool
+  renderEffectWorld:
+    type: bool
+  renderDetail:
+    type: bool
+  renderStatic:
+    type: bool
+  renderUngrouped:
+    type: bool
+  renderRagdoll:
+    type: bool
+  renderGroup:
+    type: bool
+  renderPhantoms:
+    type: bool
+  renderCharacterCollision:
+    type: bool
+  renderWater:
+    type: bool
+  renderSolidGeometry:
+    type: bool
+  useShapeCache:
+    type: bool
+  renderConstraints:
+    type: bool
+  renderOnlyContactConstraints:
+    type: bool
+  renderConstraintCount:
+    type: bool
+  renderActiveConstraintCount:
+    type: bool
+  renderSimulationIslands:
+    type: bool
+  renderBroadphaseHandles:
+    type: bool
+  renderDestructionConnections:
+    type: bool
+  renderPartBoundingBoxes:
+    type: bool
+  renderOnlyBoundingBoxes:
+    type: bool
+  renderInertia:
+    type: bool
+  renderCenterOfMass:
+    type: bool
+  renderLinearVelocity:
+    type: bool
+  renderCollidesWithTerrain:
+    type: bool
+  renderCollisionSpheres:
+    type: bool
+  renderEntityStats:
+    type: bool
+  renderWorldStats:
+    type: bool
+  showContactsInWorldStats:
+    type: bool
+  showInactiveContactsInWorldStats:
+    type: bool
+  showPhantomsInWorldStats:
+    type: bool
+  showFixedObjectsInWorldStats:
+    type: bool
+  renderMemoryUsed:
+    type: bool
+  collisionSpawnDebug:
+    type: bool
+  renderServer:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PhysicsRenderSettings type.
+

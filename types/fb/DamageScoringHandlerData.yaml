@@ -1,0 +1,53 @@
+name: DamageScoringHandlerData
+type: class
+inherits: ScoringHandlerData
+
+constructors:
+  -
+    description: Creates a new DamageScoringHandlerData frostbite instance.
+  -
+    description: Creates a new DamageScoringHandlerData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ScoringHandlerData to DamageScoringHandlerData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ScoringHandlerData
+        description: The instance to cast to DamageScoringHandlerData.
+  -
+    description: Casts an instance of type DataContainer to DamageScoringHandlerData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to DamageScoringHandlerData.
+
+properties:
+  repairVehicleLimit:
+    type: float
+  damageTeamVehicleLimit:
+    type: float
+  teamHealingLimit:
+    type: float
+  teamDamageLimit:
+    type: float
+  killAssistLimit:
+    type: float
+  killAssistTimeout:
+    type: float
+  vehicleDestroyAssistLimit:
+    type: float
+  saviorKillTimeout:
+    type: float
+  saviorDamageLimit:
+    type: float
+  hotVehicleTimeout:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the DamageScoringHandlerData type.
+

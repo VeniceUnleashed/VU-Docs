@@ -1,0 +1,133 @@
+name: PresenceRequest
+type: enum
+
+values:
+  PresenceRequest_Invalid:
+    value: 0
+  PresenceRequest_DownloadBlob:
+    value: 1
+  PresenceRequest_UploadBlob:
+    value: 2
+  PresenceRequest_DownloadUserSettings:
+    value: 3
+  PresenceRequest_UploadUserSettings:
+    value: 4
+  PresenceRequest_InitializeCommerceService:
+    value: 5
+  PresenceRequest_ShutDownCommerceService:
+    value: 6
+  PresenceRequest_EnumerateCommerceContent:
+    value: 7
+  PresenceRequest_PurchaseCommerceContent:
+    value: 8
+  PresenceRequest_PurchaseConsumableCommerceContent:
+    value: 9
+  PresenceRequest_ConsumeCommerceContent:
+    value: 10
+  PresenceRequest_GetCommerceContentImage:
+    value: 11
+  PresenceRequest_CheckOnlinePass:
+    value: 12
+  PresenceRequest_PurchaseOnlinePass:
+    value: 13
+  PresenceRequest_RedeemOnlinePassCode:
+    value: 14
+  PresenceRequest_SetOverlayUrl:
+    value: 15
+  PresenceRequest_ListEntitlements:
+    value: 16
+  PresenceRequest_GrantEntitlement:
+    value: 17
+  PresenceRequest_GetFriends:
+    value: 18
+  PresenceRequest_InviteFriend:
+    value: 19
+  PresenceRequest_RemoveFriend:
+    value: 20
+  PresenceRequest_HttpGet:
+    value: 21
+  PresenceRequest_JoinGameByOnlineNativeData:
+    value: 22
+  PresenceRequest_DownloadUpdate:
+    value: 23
+  PresenceRequest_SendMessage:
+    value: 24
+  PresenceRequest_CreatePlaygroup:
+    value: 25
+  PresenceRequest_JoinPlaygroup:
+    value: 26
+  PresenceRequest_JoinPlaygroupByUsername:
+    value: 27
+  PresenceRequest_JoinPlaygroupByOnlineNativeData:
+    value: 28
+  PresenceRequest_JoinPlaygroupByInviteToken:
+    value: 29
+  PresenceRequest_SetPlaygroupAttribute:
+    value: 30
+  PresenceRequest_LeavePlaygroup:
+    value: 31
+  PresenceRequest_DownloadStatistics:
+    value: 32
+  PresenceRequest_GetLeaderboard:
+    value: 33
+  PresenceRequest_UploadProgression:
+    value: 34
+  PresenceRequest_SendInvite:
+    value: 35
+  PresenceRequest_KickFromPlaygroup:
+    value: 36
+  PresenceRequest_ViewInvite:
+    value: 37
+  PresenceRequest_SendInviteToLiveParty:
+    value: 38
+  PresenceRequest_SetUserInfoAttribute:
+    value: 39
+  PresenceRequest_GetServerBrowserSnapshot:
+    value: 40
+  PresenceRequest_GetGamesWithFriends:
+    value: 41
+  PresenceRequest_GetGamesByServerId:
+    value: 42
+  PresenceRequest_GetDetailedServerInfo:
+    value: 43
+  PresenceRequest_UnlockAchievements:
+    value: 44
+  PresenceRequest_RspGetServers:
+    value: 45
+  PresenceRequest_RspGetServerDetails:
+    value: 46
+  PresenceRequest_RspUpdateServerSettings:
+    value: 47
+  PresenceRequest_RspGetConfig:
+    value: 48
+  PresenceRequest_RspRestartServer:
+    value: 49
+  PresenceRequest_RspUpdatePreset:
+    value: 50
+  PresenceRequest_RspUpdateMapRotation:
+    value: 51
+  PresenceRequest_RspUpdateAdminUser:
+    value: 52
+  PresenceRequest_RspUpdateBannedUser:
+    value: 53
+  PresenceRequest_RspUpdateVipUser:
+    value: 54
+  PresenceRequest_RspUpdateServerBanner:
+    value: 55
+  PresenceRequest_ReportServerBanner:
+    value: 56
+  PresenceRequest_GetUserId:
+    value: 57
+  PresenceRequest_VerifyGrantEntitlement:
+    value: 58
+  PresenceRequest_ResetStatistics:
+    value: 59
+  PresenceRequest_GetXPromoInformation:
+    value: 60
+  PresenceRequest_GetContentInformation:
+    value: 61
+  PresenceRequest_DownloadPromoItem:
+    value: 62
+  PresenceRequest_Count:
+    value: 63
+

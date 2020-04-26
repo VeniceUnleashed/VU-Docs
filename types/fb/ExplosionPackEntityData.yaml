@@ -1,0 +1,99 @@
+name: ExplosionPackEntityData
+type: class
+inherits: MeshProjectileEntityData
+
+constructors:
+  -
+    description: Creates a new ExplosionPackEntityData frostbite instance.
+  -
+    description: Creates a new ExplosionPackEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type MeshProjectileEntityData to ExplosionPackEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MeshProjectileEntityData
+        description: The instance to cast to ExplosionPackEntityData.
+  -
+    description: Casts an instance of type ProjectileEntityData to ExplosionPackEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ProjectileEntityData
+        description: The instance to cast to ExplosionPackEntityData.
+  -
+    description: Casts an instance of type GamePhysicsEntityData to ExplosionPackEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GamePhysicsEntityData
+        description: The instance to cast to ExplosionPackEntityData.
+  -
+    description: Casts an instance of type GameEntityData to ExplosionPackEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to ExplosionPackEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to ExplosionPackEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to ExplosionPackEntityData.
+  -
+    description: Casts an instance of type EntityData to ExplosionPackEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to ExplosionPackEntityData.
+  -
+    description: Casts an instance of type GameObjectData to ExplosionPackEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to ExplosionPackEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to ExplosionPackEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to ExplosionPackEntityData.
+  -
+    description: Casts an instance of type DataContainer to ExplosionPackEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ExplosionPackEntityData.
+
+properties:
+  timeToLiveOnPlayerDeath:
+    type: float
+  soldierDetonationData:
+    type: SoldierDetonationData
+  vehicleDetonationActivationDelay:
+    type: float
+  vehicleDetonationRadius:
+    type: float
+  icon:
+    type: UIHudIcon
+  spottedTime:
+    type: float
+  defuseRadius:
+    type: float
+  health:
+    type: float
+  hasRemoteDetonator:
+    type: bool
+  isDestructible:
+    type: bool
+  hasVehicleDetonation:
+    type: bool
+  receivesExplosionDamage:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ExplosionPackEntityData type.
+

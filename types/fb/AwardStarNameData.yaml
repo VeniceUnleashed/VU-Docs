@@ -1,0 +1,30 @@
+name: AwardStarNameData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new AwardStarNameData frostbite instance.
+  -
+    description: Creates a new AwardStarNameData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to AwardStarNameData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to AwardStarNameData.
+
+properties:
+  nameInstances:
+    type: AwardStarNameInstance
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the AwardStarNameData type.
+

@@ -1,0 +1,55 @@
+name: WorldViewMode
+type: enum
+
+values:
+  WorldViewMode_Default:
+    value: 0
+  WorldViewMode_RawLinear:
+    value: 1
+  WorldViewMode_RawLinearAlpha:
+    value: 2
+  WorldViewMode_Diffuse:
+    value: 3
+  WorldViewMode_Specular:
+    value: 4
+  WorldViewMode_Emissive:
+    value: 5
+  WorldViewMode_Normal:
+    value: 6
+  WorldViewMode_Smoothness:
+    value: 7
+  WorldViewMode_Material:
+    value: 8
+  WorldViewMode_Light:
+    value: 9
+  WorldViewMode_LightDiffuse:
+    value: 10
+  WorldViewMode_LightSpecular:
+    value: 11
+  WorldViewMode_LightIndirect:
+    value: 12
+  WorldViewMode_LightTranslucency:
+    value: 13
+  WorldViewMode_LightOverdraw:
+    value: 14
+  WorldViewMode_SkyVisibility:
+    value: 15
+  WorldViewMode_SkyVisibilityRaw:
+    value: 16
+  WorldViewMode_Overdraw:
+    value: 17
+  WorldViewMode_DynamicAO:
+    value: 18
+  WorldViewMode_Occluders:
+    value: 19
+  WorldViewMode_RadiosityLightMaps:
+    value: 20
+  WorldViewMode_RadiosityDiffuseColor:
+    value: 21
+  WorldViewMode_RadiosityTargetUV:
+    value: 22
+  WorldViewMode_VelocityVector:
+    value: 23
+  WorldViewMode_DistortionVector:
+    value: 24
+

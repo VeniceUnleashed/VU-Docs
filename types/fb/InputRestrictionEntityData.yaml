@@ -1,0 +1,155 @@
+name: InputRestrictionEntityData
+type: class
+inherits: GameEntityData
+
+constructors:
+  -
+    description: Creates a new InputRestrictionEntityData frostbite instance.
+  -
+    description: Creates a new InputRestrictionEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameEntityData to InputRestrictionEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to InputRestrictionEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to InputRestrictionEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to InputRestrictionEntityData.
+  -
+    description: Casts an instance of type EntityData to InputRestrictionEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to InputRestrictionEntityData.
+  -
+    description: Casts an instance of type GameObjectData to InputRestrictionEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to InputRestrictionEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to InputRestrictionEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to InputRestrictionEntityData.
+  -
+    description: Casts an instance of type DataContainer to InputRestrictionEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to InputRestrictionEntityData.
+
+properties:
+  applyRestrictionsToSpecificPlayer:
+    type: bool
+  throttle:
+    type: bool
+  strafe:
+    type: bool
+  brake:
+    type: bool
+  handBrake:
+    type: bool
+  clutch:
+    type: bool
+  yaw:
+    type: bool
+  pitch:
+    type: bool
+  roll:
+    type: bool
+  fire:
+    type: bool
+  fireCountermeasure:
+    type: bool
+  altFire:
+    type: bool
+  cycleRadioChannel:
+    type: bool
+  selectMeleeWeapon:
+    type: bool
+  zoom:
+    type: bool
+  jump:
+    type: bool
+  changeVehicle:
+    type: bool
+  changeEntry:
+    type: bool
+  changePose:
+    type: bool
+  toggleParachute:
+    type: bool
+  changeWeapon:
+    type: bool
+  reload:
+    type: bool
+  toggleCamera:
+    type: bool
+  sprint:
+    type: bool
+  scoreboardMenu:
+    type: bool
+  mapZoom:
+    type: bool
+  gearUp:
+    type: bool
+  gearDown:
+    type: bool
+  threeDimensionalMap:
+    type: bool
+  giveOrder:
+    type: bool
+  prone:
+    type: bool
+  switchPrimaryInventory:
+    type: bool
+  switchPrimaryWeapon:
+    type: bool
+  grenadeLauncher:
+    type: bool
+  staticGadget:
+    type: bool
+  dynamicGadget1:
+    type: bool
+  dynamicGadget2:
+    type: bool
+  meleeAttack:
+    type: bool
+  throwGrenade:
+    type: bool
+  selectWeapon1:
+    type: bool
+  selectWeapon2:
+    type: bool
+  selectWeapon3:
+    type: bool
+  selectWeapon4:
+    type: bool
+  selectWeapon5:
+    type: bool
+  selectWeapon6:
+    type: bool
+  selectWeapon7:
+    type: bool
+  selectWeapon8:
+    type: bool
+  selectWeapon9:
+    type: bool
+  overridePreviousInputRestriction:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the InputRestrictionEntityData type.
+

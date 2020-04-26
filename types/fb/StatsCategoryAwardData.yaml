@@ -1,0 +1,43 @@
+name: StatsCategoryAwardData
+type: class
+inherits: StatsCategoryGuidData
+
+constructors:
+  -
+    description: Creates a new StatsCategoryAwardData frostbite instance.
+  -
+    description: Creates a new StatsCategoryAwardData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type StatsCategoryGuidData to StatsCategoryAwardData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: StatsCategoryGuidData
+        description: The instance to cast to StatsCategoryAwardData.
+  -
+    description: Casts an instance of type StatsCategoryBaseData to StatsCategoryAwardData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: StatsCategoryBaseData
+        description: The instance to cast to StatsCategoryAwardData.
+  -
+    description: Casts an instance of type TreeNodeBase to StatsCategoryAwardData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: TreeNodeBase
+        description: The instance to cast to StatsCategoryAwardData.
+  -
+    description: Casts an instance of type DataContainer to StatsCategoryAwardData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to StatsCategoryAwardData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the StatsCategoryAwardData type.
+

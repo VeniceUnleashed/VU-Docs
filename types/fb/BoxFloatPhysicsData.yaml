@@ -1,0 +1,31 @@
+name: BoxFloatPhysicsData
+type: class
+inherits: FloatPhysicsData
+
+constructors:
+  -
+    description: Creates a new BoxFloatPhysicsData frostbite instance.
+  -
+    description: Creates a new BoxFloatPhysicsData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type FloatPhysicsData to BoxFloatPhysicsData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: FloatPhysicsData
+        description: The instance to cast to BoxFloatPhysicsData.
+  -
+    description: Casts an instance of type DataContainer to BoxFloatPhysicsData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to BoxFloatPhysicsData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the BoxFloatPhysicsData type.
+

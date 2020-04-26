@@ -1,0 +1,41 @@
+name: UpdateAgeData
+type: class
+inherits: ProcessorData
+
+constructors:
+  -
+    description: Creates a new UpdateAgeData frostbite instance.
+  -
+    description: Creates a new UpdateAgeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ProcessorData to UpdateAgeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ProcessorData
+        description: The instance to cast to UpdateAgeData.
+  -
+    description: Casts an instance of type EmitterComponentData to UpdateAgeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EmitterComponentData
+        description: The instance to cast to UpdateAgeData.
+  -
+    description: Casts an instance of type DataContainer to UpdateAgeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UpdateAgeData.
+
+properties:
+  lifetime:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UpdateAgeData type.
+

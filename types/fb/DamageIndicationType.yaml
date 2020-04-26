@@ -1,0 +1,9 @@
+name: DamageIndicationType
+type: enum
+
+values:
+  DamageIndicationType_GiverPlayer:
+    value: 0
+  DamageIndicationType_ExplosionCenter:
+    value: 1
+

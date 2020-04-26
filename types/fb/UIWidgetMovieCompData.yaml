@@ -1,0 +1,37 @@
+name: UIWidgetMovieCompData
+type: class
+inherits: UIComponentData
+
+constructors:
+  -
+    description: Creates a new UIWidgetMovieCompData frostbite instance.
+  -
+    description: Creates a new UIWidgetMovieCompData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UIComponentData to UIWidgetMovieCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIComponentData
+        description: The instance to cast to UIWidgetMovieCompData.
+  -
+    description: Casts an instance of type Asset to UIWidgetMovieCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to UIWidgetMovieCompData.
+  -
+    description: Casts an instance of type DataContainer to UIWidgetMovieCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UIWidgetMovieCompData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UIWidgetMovieCompData type.
+

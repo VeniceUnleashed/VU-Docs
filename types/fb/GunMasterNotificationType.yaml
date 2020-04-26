@@ -1,0 +1,15 @@
+name: GunMasterNotificationType
+type: enum
+
+values:
+  GunMasterNotificationType_LevelUp:
+    value: 0
+  GunMasterNotificationType_Demoted:
+    value: 1
+  GunMasterNotificationType_ReachedLevel:
+    value: 2
+  GunMasterNotificationType_TookLead:
+    value: 3
+  GunMasterNotificationType_LostLead:
+    value: 4
+

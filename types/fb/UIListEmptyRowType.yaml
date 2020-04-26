@@ -1,0 +1,11 @@
+name: UIListEmptyRowType
+type: enum
+
+values:
+  emptyRow_28px:
+    value: 0
+  emptyRow_20px:
+    value: 1
+  emptyRowNone:
+    value: 2
+

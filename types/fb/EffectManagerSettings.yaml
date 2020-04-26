@@ -1,0 +1,39 @@
+name: EffectManagerSettings
+type: class
+inherits: SystemSettings
+
+constructors:
+  -
+    description: Creates a new EffectManagerSettings frostbite instance.
+  -
+    description: Creates a new EffectManagerSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SystemSettings to EffectManagerSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SystemSettings
+        description: The instance to cast to EffectManagerSettings.
+  -
+    description: Casts an instance of type DataContainer to EffectManagerSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to EffectManagerSettings.
+
+properties:
+  maxNewEffectsPerFrameCount:
+    type: int
+  sizeToGrowNewEffectsContainer:
+    type: int
+  effectQuality:
+    type: int
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the EffectManagerSettings type.
+

@@ -1,0 +1,43 @@
+name: PerformanceTrackerSettings
+type: class
+inherits: SystemSettings
+
+constructors:
+  -
+    description: Creates a new PerformanceTrackerSettings frostbite instance.
+  -
+    description: Creates a new PerformanceTrackerSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SystemSettings to PerformanceTrackerSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SystemSettings
+        description: The instance to cast to PerformanceTrackerSettings.
+  -
+    description: Casts an instance of type DataContainer to PerformanceTrackerSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PerformanceTrackerSettings.
+
+properties:
+  interval:
+    type: float
+  enabled:
+    type: bool
+  supressPerformanceStatsOnIdle:
+    type: bool
+  supressPerformanceStatsUntilSpawned:
+    type: bool
+  juiceLogPerformance:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PerformanceTrackerSettings type.
+

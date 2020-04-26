@@ -1,0 +1,9 @@
+name: IKEffectorEnum
+type: enum
+
+values:
+  IKLeftHand:
+    value: 0
+  IKRightHand:
+    value: 1
+

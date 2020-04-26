@@ -1,0 +1,45 @@
+name: TimerNodeData
+type: class
+inherits: AudioGraphNodeData
+
+constructors:
+  -
+    description: Creates a new TimerNodeData frostbite instance.
+  -
+    description: Creates a new TimerNodeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphNodeData to TimerNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphNodeData
+        description: The instance to cast to TimerNodeData.
+  -
+    description: Casts an instance of type DataContainer to TimerNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to TimerNodeData.
+
+properties:
+  start:
+    type: AudioGraphNodePort
+  stop:
+    type: AudioGraphNodePort
+  period:
+    type: AudioGraphNodePort
+  tick:
+    type: AudioGraphNodePort
+  progress:
+    type: AudioGraphNodePort
+  mode:
+    type: TimerMode
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the TimerNodeData type.
+

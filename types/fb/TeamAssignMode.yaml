@@ -1,0 +1,11 @@
+name: TeamAssignMode
+type: enum
+
+values:
+  TamEqualTeams:
+    value: 0
+  TamFullTeams:
+    value: 1
+  TamOneTeam:
+    value: 2
+

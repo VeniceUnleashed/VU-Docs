@@ -1,0 +1,53 @@
+name: TrackComponentData
+type: class
+inherits: MeshComponentData
+
+constructors:
+  -
+    description: Creates a new TrackComponentData frostbite instance.
+  -
+    description: Creates a new TrackComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type MeshComponentData to TrackComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MeshComponentData
+        description: The instance to cast to TrackComponentData.
+  -
+    description: Casts an instance of type ComponentData to TrackComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to TrackComponentData.
+  -
+    description: Casts an instance of type GameObjectData to TrackComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to TrackComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to TrackComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to TrackComponentData.
+  -
+    description: Casts an instance of type DataContainer to TrackComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to TrackComponentData.
+
+properties:
+  scrollFactor:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the TrackComponentData type.
+

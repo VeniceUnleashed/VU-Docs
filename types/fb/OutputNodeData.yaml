@@ -1,0 +1,68 @@
+name: OutputNodeData
+type: class
+inherits: AudioGraphNodeData
+
+constructors:
+  -
+    description: Creates a new OutputNodeData frostbite instance.
+  -
+    description: Creates a new OutputNodeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphNodeData to OutputNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphNodeData
+        description: The instance to cast to OutputNodeData.
+  -
+    description: Casts an instance of type DataContainer to OutputNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to OutputNodeData.
+
+properties:
+  inValue:
+    type: AudioGraphNodePort
+  bypassHeadroom:
+    type: AudioGraphNodePort
+  minDistance:
+    type: float
+  attenuationCurve:
+    type: AudioCurve
+  gain:
+    type: float
+  hfDampingDistance:
+    type: float
+  hfDampingObstruction:
+    type: float
+  hfDampingOcclusion:
+    type: float
+  mainSendPlugin:
+    type: SoundGraphPluginRef
+  mainSend:
+    type: SoundBusData
+    nullable: true
+  outputName:
+    type: string
+  transformSource:
+    type: OutputTransformSource
+  outputNameHash:
+    type: int
+  lowPassPlugin:
+    type: SoundGraphPluginRef
+  vuPlugin:
+    type: SoundGraphPluginRef
+  solo:
+    type: bool
+  enableHdr:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the OutputNodeData type.
+

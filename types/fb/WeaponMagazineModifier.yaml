@@ -1,0 +1,37 @@
+name: WeaponMagazineModifier
+type: class
+inherits: WeaponModifierBase
+
+constructors:
+  -
+    description: Creates a new WeaponMagazineModifier frostbite instance.
+  -
+    description: Creates a new WeaponMagazineModifier frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type WeaponModifierBase to WeaponMagazineModifier. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: WeaponModifierBase
+        description: The instance to cast to WeaponMagazineModifier.
+  -
+    description: Casts an instance of type DataContainer to WeaponMagazineModifier. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to WeaponMagazineModifier.
+
+properties:
+  magazineCapacity:
+    type: int
+  numberOfMagazines:
+    type: int
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the WeaponMagazineModifier type.
+

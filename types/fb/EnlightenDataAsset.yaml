@@ -1,0 +1,52 @@
+name: EnlightenDataAsset
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new EnlightenDataAsset frostbite instance.
+  -
+    description: Creates a new EnlightenDataAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to EnlightenDataAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to EnlightenDataAsset.
+  -
+    description: Casts an instance of type DataContainer to EnlightenDataAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to EnlightenDataAsset.
+
+properties:
+  debugBackFaceTexture:
+    type: TextureAsset
+    nullable: true
+  maxResolutionY:
+    type: int
+  debugChartTexture:
+    type: TextureAsset
+    nullable: true
+  skyVisibilityTexture:
+    type: TextureAsset
+    nullable: true
+  visibilityThreshold:
+    type: float
+  maxResolutionX:
+    type: int
+  loadDebugData:
+    type: bool
+  dynamicEnable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the EnlightenDataAsset type.
+

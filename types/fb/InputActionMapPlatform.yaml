@@ -1,0 +1,13 @@
+name: InputActionMapPlatform
+type: enum
+
+values:
+  IAMPWin32:
+    value: 0
+  IAMPXenon:
+    value: 1
+  IAMPPs3:
+    value: 2
+  IAMPAllPlatforms:
+    value: 3
+

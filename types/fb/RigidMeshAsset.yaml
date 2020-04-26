@@ -1,0 +1,37 @@
+name: RigidMeshAsset
+type: class
+inherits: MeshAsset
+
+constructors:
+  -
+    description: Creates a new RigidMeshAsset frostbite instance.
+  -
+    description: Creates a new RigidMeshAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type MeshAsset to RigidMeshAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MeshAsset
+        description: The instance to cast to RigidMeshAsset.
+  -
+    description: Casts an instance of type Asset to RigidMeshAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to RigidMeshAsset.
+  -
+    description: Casts an instance of type DataContainer to RigidMeshAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to RigidMeshAsset.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the RigidMeshAsset type.
+

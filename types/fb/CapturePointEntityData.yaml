@@ -1,0 +1,126 @@
+name: CapturePointEntityData
+type: class
+inherits: GameEntityData
+
+constructors:
+  -
+    description: Creates a new CapturePointEntityData frostbite instance.
+  -
+    description: Creates a new CapturePointEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameEntityData to CapturePointEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to CapturePointEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to CapturePointEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to CapturePointEntityData.
+  -
+    description: Casts an instance of type EntityData to CapturePointEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to CapturePointEntityData.
+  -
+    description: Casts an instance of type GameObjectData to CapturePointEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to CapturePointEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to CapturePointEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to CapturePointEntityData.
+  -
+    description: Casts an instance of type DataContainer to CapturePointEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to CapturePointEntityData.
+
+properties:
+  enemyTicketLossWhenCaptured:
+    type: int
+  minNrToTakeControl:
+    type: int
+  flagTemplates:
+    type: ObjectBlueprint
+    array: true
+  capturePoint:
+    type: ObjectBlueprint
+    nullable: true
+  initialOwnerTeam:
+    type: TeamId
+  captureRadius:
+    type: float
+  maxCaptureMultiplier:
+    type: int
+  areaValue:
+    type: int
+  spawnMenuListOrdinal:
+    type: int
+  areaValues:
+    type: AreaValueTeam
+    array: true
+  timeToGetControl:
+    type: int
+  timeToLoseControl:
+    type: int
+  returnMultiplier:
+    type: float
+  onlyTakeableByTeam:
+    type: int
+  showRadius:
+    type: float
+  hideRadius:
+    type: float
+  addedMultiplierPerPlayer:
+    type: float
+  modify3DIconVerticalOffset:
+    type: float
+  capturableType:
+    type: CapturableType
+  intruderWarningSID:
+    type: string
+  isCapturedInUpperSphere:
+    type: bool
+  disableWhenLosingControl:
+    type: bool
+  loseControlWhenNotClose:
+    type: bool
+  disableIfEnemyInside:
+    type: bool
+  isVisible:
+    type: bool
+  forceSnap:
+    type: bool
+  useAreaValuesPerTeam:
+    type: bool
+  intruderWarning:
+    type: bool
+  showOnMinimap:
+    type: bool
+  hoistFlag:
+    type: bool
+  startAtBottom:
+    type: bool
+  removeWhenCaptured:
+    type: bool
+  seesawCapturing:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the CapturePointEntityData type.
+

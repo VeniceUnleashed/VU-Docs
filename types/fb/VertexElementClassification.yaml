@@ -1,0 +1,11 @@
+name: VertexElementClassification
+type: enum
+
+values:
+  VertexElementClassification_PerVertex:
+    value: 0
+  VertexElementClassification_PerInstance:
+    value: 1
+  VertexElementClassification_Index:
+    value: 2
+

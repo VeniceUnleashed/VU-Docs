@@ -1,0 +1,15 @@
+name: EntityCreatorType
+type: enum
+
+values:
+  EntityCreatorType_Unknown:
+    value: 0
+  EntityCreatorType_Level:
+    value: 1
+  EntityCreatorType_Spawner:
+    value: 2
+  EntityCreatorType_Owner:
+    value: 3
+  EntityCreatorType_Ghost:
+    value: 4
+

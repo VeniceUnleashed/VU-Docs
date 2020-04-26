@@ -1,0 +1,37 @@
+name: DebugSurveyEvent
+type: class
+inherits: MetricEvent
+
+constructors:
+  -
+    description: Creates a new DebugSurveyEvent frostbite instance.
+  -
+    description: Creates a new DebugSurveyEvent frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type MetricEvent to DebugSurveyEvent. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MetricEvent
+        description: The instance to cast to DebugSurveyEvent.
+  -
+    description: Casts an instance of type DataContainer to DebugSurveyEvent. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to DebugSurveyEvent.
+
+properties:
+  playerName:
+    type: string
+  surveyMetricLink:
+    type: Guid
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the DebugSurveyEvent type.
+

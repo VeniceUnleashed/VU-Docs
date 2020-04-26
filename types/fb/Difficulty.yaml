@@ -1,0 +1,15 @@
+name: Difficulty
+type: enum
+
+values:
+  Difficulty_Easy:
+    value: 0
+  Difficulty_Medium:
+    value: 1
+  Difficulty_Hard:
+    value: 2
+  Difficulty_Hardcore:
+    value: 3
+  Difficulty_None:
+    value: 4
+

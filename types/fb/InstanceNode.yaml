@@ -1,0 +1,42 @@
+name: InstanceNode
+type: class
+inherits: UINodeData
+
+constructors:
+  -
+    description: Creates a new InstanceNode frostbite instance.
+  -
+    description: Creates a new InstanceNode frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UINodeData to InstanceNode. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UINodeData
+        description: The instance to cast to InstanceNode.
+  -
+    description: Casts an instance of type DataContainer to InstanceNode. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to InstanceNode.
+
+properties:
+  uiGraph:
+    type: UIGraphAsset
+    nullable: true
+  inputs:
+    type: UINodePort
+    array: true
+  outputs:
+    type: UINodePort
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the InstanceNode type.
+

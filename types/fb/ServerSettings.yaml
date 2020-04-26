@@ -1,0 +1,183 @@
+name: ServerSettings
+type: class
+inherits: SystemSettings
+
+constructors:
+  -
+    description: Creates a new ServerSettings frostbite instance.
+  -
+    description: Creates a new ServerSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SystemSettings to ServerSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SystemSettings
+        description: The instance to cast to ServerSettings.
+  -
+    description: Casts an instance of type DataContainer to ServerSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ServerSettings.
+
+properties:
+  instancePath:
+    type: string
+  remoteControlPort:
+    type: int
+  duplicationChance:
+    type: float
+  maxQueriesPerSecond:
+    type: int
+  corruptionChance:
+    type: float
+  remoteAdministrationPort:
+    type: string
+  maxDropDuration:
+    type: float
+  reorderingChance:
+    type: float
+  humanHealthMultiplier:
+    type: float
+  serverName:
+    type: string
+  minDropDuration:
+    type: float
+  saveGameVersion:
+    type: int
+  packetDrops:
+    type: float
+  dropSpikeChance:
+    type: float
+  maxLatency:
+    type: float
+  outgoingRate:
+    type: int
+  incomingRate:
+    type: int
+  playlist:
+    type: string
+  savePoint:
+    type: string
+  ingameTimeout:
+    type: float
+  outgoingFrequency:
+    type: float
+  respawnTimeModifier:
+    type: float
+  minLatency:
+    type: float
+  serverPassword:
+    type: string
+  timeoutTime:
+    type: float
+  playerCountNeededForMultiplayer:
+    type: int
+  vehicleSpawnDelayModifier:
+    type: float
+  debugMenuClick:
+    type: string
+  administrationPassword:
+    type: string
+  loadingTimeout:
+    type: float
+  dedicatedServerCpu:
+    type: int
+  deathmatchDebugInfo:
+    type: bool
+  timeoutGame:
+    type: bool
+  aiLooksIntoCamera:
+    type: bool
+  isStatsEnabled:
+    type: bool
+  isTreeDestructionEnabled:
+    type: bool
+  havokCaptureToFile:
+    type: bool
+  showTriggerDebugText:
+    type: bool
+  isInternetSimulationEnabled:
+    type: bool
+  disableCutscenes:
+    type: bool
+  jobEnable:
+    type: bool
+  threadingEnable:
+    type: bool
+  drawActivePhysicsObjects:
+    type: bool
+  isRanked:
+    type: bool
+  unlockResolver:
+    type: bool
+  scoringLogEnabled:
+    type: bool
+  havokVisualDebugger:
+    type: bool
+  isSoldierDetailedCollisionEnabled:
+    type: bool
+  loadSavePoint:
+    type: bool
+  isSoldierAnimationEnabled:
+    type: bool
+  isAiEnabled:
+    type: bool
+  isReconfigurable:
+    type: bool
+  isDestructionEnabled:
+    type: bool
+  forcePlaylist:
+    type: bool
+  isNetworkStatsEnabled:
+    type: bool
+  autoUnspawnBangers:
+    type: bool
+  regulatedAIThrottle:
+    type: bool
+  enableAnimationCulling:
+    type: bool
+  fallBackToSquadSpawn:
+    type: bool
+  allowIndestructibleParts:
+    type: bool
+  isPresenceEnabled:
+    type: bool
+  waterPhysicsEnabled:
+    type: bool
+  respawnOnDeathPosition:
+    type: bool
+  isRenderDamageEvents:
+    type: bool
+  vehicleSpawnAllowed:
+    type: bool
+  queryProviderEnabled:
+    type: bool
+  isDesertingAllowed:
+    type: bool
+  debrisClusterEnabled:
+    type: bool
+  administrationEnabled:
+    type: bool
+  administrationLogEnabled:
+    type: bool
+  administrationTimeStampLogNames:
+    type: bool
+  administrationEventsEnabled:
+    type: bool
+  administrationServerNameRestricted:
+    type: bool
+  threadedLoadingEnable:
+    type: bool
+  vegetationEnabled:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ServerSettings type.
+

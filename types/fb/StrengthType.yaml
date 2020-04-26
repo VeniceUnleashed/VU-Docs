@@ -1,0 +1,15 @@
+name: StrengthType
+type: enum
+
+values:
+  Infantry:
+    value: 0
+  LightArmour:
+    value: 1
+  HeavyArmour:
+    value: 2
+  Helicopter:
+    value: 3
+  NumberOfStrengthTypes:
+    value: 4
+

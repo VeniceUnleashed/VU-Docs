@@ -1,0 +1,257 @@
+name: InputConceptIdentifiers
+type: enum
+
+values:
+  ConceptMoveFB:
+    value: 0
+  ConceptMoveLR:
+    value: 1
+  ConceptMoveForward:
+    value: 2
+  ConceptMoveBackward:
+    value: 3
+  ConceptMoveLeft:
+    value: 4
+  ConceptMoveRight:
+    value: 5
+  ConceptYaw:
+    value: 6
+  ConceptPitch:
+    value: 7
+  ConceptRoll:
+    value: 8
+  ConceptRecenterCamera:
+    value: 9
+  ConceptFire:
+    value: 10
+  ConceptAltFire:
+    value: 11
+  ConceptFireCountermeasure:
+    value: 12
+  ConceptReload:
+    value: 13
+  ConceptZoom:
+    value: 14
+  ConceptToggleCamera:
+    value: 15
+  ConceptSprint:
+    value: 16
+  ConceptCrawl:
+    value: 17
+  ConceptToggleWeaponLight:
+    value: 18
+  ConceptJump:
+    value: 19
+  ConceptCrouch:
+    value: 20
+  ConceptCrouchOnHold:
+    value: 21
+  ConceptProne:
+    value: 22
+  ConceptInteract:
+    value: 23
+  ConceptPickUp:
+    value: 24
+  ConceptDrop:
+    value: 25
+  ConceptBreathControl:
+    value: 26
+  ConceptParachute:
+    value: 27
+  ConceptSwitchInventoryItem:
+    value: 28
+  ConceptSelectInventoryItem1:
+    value: 29
+  ConceptSelectInventoryItem2:
+    value: 30
+  ConceptSelectInventoryItem3:
+    value: 31
+  ConceptSelectInventoryItem4:
+    value: 32
+  ConceptSelectInventoryItem5:
+    value: 33
+  ConceptSelectInventoryItem6:
+    value: 34
+  ConceptSelectInventoryItem7:
+    value: 35
+  ConceptSelectInventoryItem8:
+    value: 36
+  ConceptSelectInventoryItem9:
+    value: 37
+  ConceptSwitchToPrimaryWeapon:
+    value: 38
+  ConceptSwitchToGrenadeLauncher:
+    value: 39
+  ConceptSwitchToStaticGadget:
+    value: 40
+  ConceptSwitchToDynamicGadget1:
+    value: 41
+  ConceptSwitchToDynamicGadget2:
+    value: 42
+  ConceptMeleeAttack:
+    value: 43
+  ConceptThrowGrenade:
+    value: 44
+  ConceptCycleFireMode:
+    value: 45
+  ConceptChangeVehicle:
+    value: 46
+  ConceptBrake:
+    value: 47
+  ConceptHandBrake:
+    value: 48
+  ConceptClutch:
+    value: 49
+  ConceptGearUp:
+    value: 50
+  ConceptGearDown:
+    value: 51
+  ConceptGearSwitch:
+    value: 52
+  ConceptNextPosition:
+    value: 53
+  ConceptSelectPosition1:
+    value: 54
+  ConceptSelectPosition2:
+    value: 55
+  ConceptSelectPosition3:
+    value: 56
+  ConceptSelectPosition4:
+    value: 57
+  ConceptSelectPosition5:
+    value: 58
+  ConceptSelectPosition6:
+    value: 59
+  ConceptSelectPosition7:
+    value: 60
+  ConceptSelectPosition8:
+    value: 61
+  ConceptCameraPitch:
+    value: 62
+  ConceptCameraYaw:
+    value: 63
+  ConceptMapZoom:
+    value: 64
+  ConceptMapInnerZoom:
+    value: 65
+  ConceptMapSize:
+    value: 66
+  ConceptMapThreeDimensional:
+    value: 67
+  ConceptScoreboard:
+    value: 68
+  ConceptMenu:
+    value: 69
+  ConceptSpawnMenu:
+    value: 70
+  ConceptCancel:
+    value: 71
+  ConceptCommMenu1:
+    value: 72
+  ConceptCommMenu2:
+    value: 73
+  ConceptCommMenu3:
+    value: 74
+  ConceptAccept:
+    value: 75
+  ConceptDecline:
+    value: 76
+  ConceptSelect:
+    value: 77
+  ConceptBack:
+    value: 78
+  ConceptActivate:
+    value: 79
+  ConceptDeactivate:
+    value: 80
+  ConceptEdit:
+    value: 81
+  ConceptView:
+    value: 82
+  ConceptParentNavigateLeft:
+    value: 83
+  ConceptParentNavigateRight:
+    value: 84
+  ConceptMenuZoomIn:
+    value: 85
+  ConceptMenuZoomOut:
+    value: 86
+  ConceptPanX:
+    value: 87
+  ConceptPanY:
+    value: 88
+  ConceptVoiceFunction1:
+    value: 89
+  ConceptSayAllChat:
+    value: 90
+  ConceptTeamChat:
+    value: 91
+  ConceptSquadChat:
+    value: 92
+  ConceptSquadLeaderChat:
+    value: 93
+  ConceptToggleChat:
+    value: 94
+  ConceptQuicktimeInteractDrag:
+    value: 95
+  ConceptQuicktimeFire:
+    value: 96
+  ConceptQuicktimeBlock:
+    value: 97
+  ConceptQuicktimeFastMelee:
+    value: 98
+  ConceptQuicktimeJumpClimb:
+    value: 99
+  ConceptQuicktimeCrouchDuck:
+    value: 100
+  ConceptFreeCameraMoveUp:
+    value: 101
+  ConceptFreeCameraMoveDown:
+    value: 102
+  ConceptFreeCameraMoveLR:
+    value: 103
+  ConceptFreeCameraMoveFB:
+    value: 104
+  ConceptFreeCameraRotateX:
+    value: 105
+  ConceptFreeCameraRotateY:
+    value: 106
+  ConceptFreeCameraIncreaseSpeed:
+    value: 107
+  ConceptFreeCameraDecreaseSpeed:
+    value: 108
+  ConceptFreeCameraFOVModifier:
+    value: 109
+  ConceptFreeCameraChangeFOV:
+    value: 110
+  ConceptFreeCameraSwitchSpeed:
+    value: 111
+  ConceptFreeCameraTurboSpeed:
+    value: 112
+  ConceptFreeCameraActivator1:
+    value: 113
+  ConceptFreeCameraActivator2:
+    value: 114
+  ConceptFreeCameraActivator3:
+    value: 115
+  ConceptFreeCameraMayaInputActivator:
+    value: 116
+  ConceptTargetedCameraDistance:
+    value: 117
+  ConceptTargetedCameraRotateX:
+    value: 118
+  ConceptTargetedCameraRotateY:
+    value: 119
+  ConceptTargetedCameraChangeSpeed:
+    value: 120
+  ConceptLThumb:
+    value: 121
+  ConceptRThumb:
+    value: 122
+  ConceptToggleMinimapType:
+    value: 123
+  ConceptUndefined:
+    value: 124
+  ConceptSize:
+    value: 125
+

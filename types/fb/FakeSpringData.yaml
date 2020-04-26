@@ -1,0 +1,43 @@
+name: FakeSpringData
+type: class
+inherits: FakePhysicsData
+
+constructors:
+  -
+    description: Creates a new FakeSpringData frostbite instance.
+  -
+    description: Creates a new FakeSpringData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type FakePhysicsData to FakeSpringData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: FakePhysicsData
+        description: The instance to cast to FakeSpringData.
+  -
+    description: Casts an instance of type DataContainer to FakeSpringData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to FakeSpringData.
+
+properties:
+  direction:
+    type: Vec3
+  length:
+    type: float
+  acceleration:
+    type: float
+  progressiveExponent:
+    type: float
+  damping:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the FakeSpringData type.
+

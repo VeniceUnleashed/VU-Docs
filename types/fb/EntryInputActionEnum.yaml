@@ -1,0 +1,145 @@
+name: EntryInputActionEnum
+type: enum
+
+values:
+  EIAThrottle:
+    value: 0
+  EIAStrafe:
+    value: 1
+  EIABrake:
+    value: 2
+  EIASwitchPrimaryInventory:
+    value: 3
+  EIAYaw:
+    value: 4
+  EIAPitch:
+    value: 5
+  EIARoll:
+    value: 6
+  EIAFire:
+    value: 7
+  EIACameraPitch:
+    value: 8
+  EIACameraYaw:
+    value: 9
+  EIAFireCountermeasure:
+    value: 10
+  EIAZoom:
+    value: 11
+  EIAJump:
+    value: 12
+  EIAChangePose:
+    value: 13
+  EIAProne:
+    value: 14
+  EIAReload:
+    value: 15
+  EIASelectWeapon1:
+    value: 16
+  EIASelectWeapon2:
+    value: 17
+  EIASelectWeapon3:
+    value: 18
+  EIASelectWeapon4:
+    value: 19
+  EIASelectWeapon5:
+    value: 20
+  EIASelectWeapon6:
+    value: 21
+  EIASelectWeapon7:
+    value: 22
+  EIASelectWeapon8:
+    value: 23
+  EIASelectWeapon9:
+    value: 24
+  EIASwitchPrimaryWeapon:
+    value: 25
+  EIAGrenadeLauncher:
+    value: 26
+  EIAStaticGadget:
+    value: 27
+  EIADynamicGadget1:
+    value: 28
+  EIADynamicGadget2:
+    value: 29
+  EIAMeleeAttack:
+    value: 30
+  EIAThrowGrenade:
+    value: 31
+  EIASprint:
+    value: 32
+  EIACrawlSpeed:
+    value: 33
+  EIACycleFireMode:
+    value: 34
+  EIAInteract:
+    value: 35
+  EIAToggleParachute:
+    value: 36
+  EIACycleRadioChannel:
+    value: 37
+  EIAToggleCamera:
+    value: 38
+  EIAScoreboardMenu:
+    value: 39
+  EIAGearUp:
+    value: 40
+  EIAGearUpOrToggleWeaponLight:
+    value: 40
+  EIAGearDown:
+    value: 41
+  EIAGearDownOrExitSupportedShooting:
+    value: 41
+  EIAClutch:
+    value: 42
+  EIAHandBrake:
+    value: 43
+  EIAGiveOrder:
+    value: 44
+  EIABreathControl:
+    value: 45
+  EIAMapZoom:
+    value: 46
+  EIAChangeVehicle:
+    value: 47
+  EIAChangeEntry:
+    value: 48
+  EIAChangeEntry1:
+    value: 49
+  EIAChangeEntry2:
+    value: 50
+  EIAChangeEntry3:
+    value: 51
+  EIAChangeEntry4:
+    value: 52
+  EIAChangeEntry5:
+    value: 53
+  EIAChangeEntry6:
+    value: 54
+  EIAChangeEntry7:
+    value: 55
+  EIAChangeEntry8:
+    value: 56
+  EIAThreeDimensionalMap:
+    value: 57
+  EIAShowCommoRose:
+    value: 58
+  EIAShowLeaderCommoRose:
+    value: 59
+  EIAQuicktimeInteractDrag:
+    value: 60
+  EIAQuicktimeFire:
+    value: 61
+  EIAQuicktimeBlock:
+    value: 62
+  EIAQuicktimeFastMelee:
+    value: 63
+  EIAQuicktimeJumpClimb:
+    value: 64
+  EIAQuicktimeCrouchDuck:
+    value: 65
+  EIAUndefined:
+    value: 128
+  EIANoInput:
+    value: 128
+

@@ -1,0 +1,535 @@
+name: WorldRenderSettings
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new WorldRenderSettings frostbite instance.
+  -
+    description: Creates a new WorldRenderSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to WorldRenderSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to WorldRenderSettings.
+
+properties:
+  dynamicEnvmapDefaultPosition:
+    type: Vec3
+  subSurfaceColor:
+    type: Vec3
+  viewportScale:
+    type: float
+  shadowMinScreenArea:
+    type: float
+  shadowViewportScale:
+    type: float
+  fxaaQuality:
+    type: int
+  cullScreenAreaScale:
+    type: float
+  planarReflectionCullFOV:
+    type: float
+  genericEntityMaxVisibleEntityCount:
+    type: int
+  shadowmapSizeZScale:
+    type: float
+  shadowmapResolution:
+    type: int
+  shadowmapQuality:
+    type: int
+  shadowmapPoissonFilterScale:
+    type: float
+  shadowmapSliceCount:
+    type: int
+  shadowmapSliceSchemeWeight:
+    type: float
+  shadowmapFirstSliceScale:
+    type: float
+  shadowmapViewDistance:
+    type: float
+  planarReflectionWidth:
+    type: int
+  shadowmapExtrusionLength:
+    type: float
+  shadowmapMinScreenArea:
+    type: float
+  tempPlanarReflectionY:
+    type: float
+  subSurfaceRolloffKeyLight:
+    type: float
+  fxaaForceVendor:
+    type: int
+  planarReflectionHeight:
+    type: int
+  lightIntensityScale:
+    type: float
+  lightLodSpecularFadeAreaEnd:
+    type: float
+  shadowmapMinFov:
+    type: float
+  lightLodSpecularFadeAreaStart:
+    type: float
+  lightLodRadiusFactor:
+    type: float
+  lightForceIntensity:
+    type: float
+  lightLodFadeArea:
+    type: float
+  lightLodMinArea:
+    type: float
+  drawDebugDynamicEnvmapMipLevel:
+    type: int
+  maxDecalVolumeCount:
+    type: int
+  motionBlurScale:
+    type: float
+  motionBlurMax:
+    type: float
+  motionBlurNoiseScale:
+    type: float
+  motionBlurQuality:
+    type: int
+  maxSpotLightShadowCount:
+    type: int
+  dynamicEnvmapFilterMode:
+    type: MipmapFilterMode
+  motionBlurMaxSampleCount:
+    type: int
+  motionBlurFrameAverageCount:
+    type: int
+  motionBlurMaxFrameTime:
+    type: float
+  forceMotionBlurDepthCutoff:
+    type: float
+  forceMotionBlurCutoffGradientScale:
+    type: float
+  multisampleCount:
+    type: int
+  multisampleThreshold:
+    type: float
+  maxPointLightCount:
+    type: int
+  reflectionEnvmapSize:
+    type: int
+  spotLightNearPlane:
+    type: float
+  spotLightShadowmapPoissonFilterScale:
+    type: float
+  onlyShadowmapSlice:
+    type: int
+  viewMode:
+    type: WorldViewMode
+  spotLightShadowmapResolution:
+    type: int
+  spotLightShadomapLevel:
+    type: QualityLevel
+  spotLightShadowmapQuality:
+    type: int
+  onlyLightTileY:
+    type: int
+  onlyLightTileX:
+    type: int
+  xenonHdrColorScale:
+    type: float
+  xenonHdrColorScaleFactor:
+    type: float
+  ps3LightTileJobMaxFbTileCount:
+    type: int
+  onlyLightTileIndex:
+    type: int
+  ps3LightTileJobCount:
+    type: int
+  ps3LightTileJobPriority:
+    type: int
+  xenonLightTileMaxLineLightCount:
+    type: int
+  xenonLightTileMaxSpotLightCount:
+    type: int
+  xenonLightTileConstantBufferSize:
+    type: int
+  xenonLightTileMaxPointLightCount:
+    type: int
+  maxDestructionVolumeCount:
+    type: int
+  dynamicEnvmapFilterWidth:
+    type: float
+  lightTileMinArea:
+    type: float
+  dynamicEnvmapResolution:
+    type: int
+  gBufferLayout:
+    type: ShaderGBufferLayout
+  drawDebugSkyEnvmapMipLevel:
+    type: int
+  decalVolumeScale:
+    type: float
+  lightOverdrawMaxLayerCount:
+    type: int
+  lightRadiusScale:
+    type: float
+  lightAttenuationThreshold:
+    type: float
+  ps3LightTileMethod:
+    type: int
+  ps3LightTileJobYieldGranularity:
+    type: float
+  outdoorLightTileBatchCount:
+    type: int
+  xenonDrawDebugLightTileGridMode:
+    type: int
+  lightStencilMinArea:
+    type: float
+  maxSpotLightCount:
+    type: int
+  skyEnvmapFilterMode:
+    type: MipmapFilterMode
+  skyEnvmapFilterWidth:
+    type: float
+  gBufferTestCount:
+    type: int
+  skyEnvmapResolution:
+    type: int
+  skyEnvmapSidesPerFrameCount:
+    type: int
+  subSurfaceRolloffLocalLight:
+    type: float
+  onlyTileIndex:
+    type: int
+  occluderMeshZPrepassEnable:
+    type: bool
+  occluderMeshZPrepassDebugEnable:
+    type: bool
+  wireframeEnable:
+    type: bool
+  halfResEnable:
+    type: bool
+  halfResLensFlaresEnable:
+    type: bool
+  zPassEnable:
+    type: bool
+  foregroundEnable:
+    type: bool
+  tiledHalfResCompositeEnable:
+    type: bool
+  foregroundZPassEnable:
+    type: bool
+  drawDebugVelocityBuffer:
+    type: bool
+  foregroundDepthClearEnable:
+    type: bool
+  foregroundAsMainEnable:
+    type: bool
+  customEnvmapEnable:
+    type: bool
+  skyEnvmapEnable:
+    type: bool
+  drawDebugVisibleEntityTypes:
+    type: bool
+  drawDebugHalfResEnvironment:
+    type: bool
+  drawSolidBoundingBoxes:
+    type: bool
+  bilateralHalfResCompositeEnable:
+    type: bool
+  foregroundTransparentEnable:
+    type: bool
+  tiledHalfResStencilOccludersEnable:
+    type: bool
+  skyEnvmapUpdateEnable:
+    type: bool
+  skyEnvmapForceUpdateEnable:
+    type: bool
+  skyEnvmapUse8BitTexture:
+    type: bool
+  dynamicEnvmapEnable:
+    type: bool
+  screenEffectEnable:
+    type: bool
+  drawDebugZBufferEnable:
+    type: bool
+  motionBlurStencilPassEnable:
+    type: bool
+  finalPostEnable:
+    type: bool
+  drawDebugQuarterShadowmaps:
+    type: bool
+  drawDebugSkyEnvmap:
+    type: bool
+  dxShadowmap16BitEnable:
+    type: bool
+  drawDebugTransShadowmap:
+    type: bool
+  drawDebugSpotLightShadowmaps:
+    type: bool
+  drawShadowFrustums:
+    type: bool
+  drawDebugShadowmaps:
+    type: bool
+  skyEnable:
+    type: bool
+  drawBoundingSpheres:
+    type: bool
+  drawFrustums:
+    type: bool
+  staticEnvmapEnable:
+    type: bool
+  skyFogEnable:
+    type: bool
+  drawLineBoundingBoxes:
+    type: bool
+  drawDebugDestructionVolumes:
+    type: bool
+  lensFlaresEnable:
+    type: bool
+  drawDebugLensFlareOccluders:
+    type: bool
+  drawDebugLensFlares:
+    type: bool
+  lensFlareOcclusionEnable:
+    type: bool
+  drawDebugWorldOcclusions:
+    type: bool
+  cloudShadowEnable:
+    type: bool
+  overrideDynamicAO:
+    type: bool
+  drawDebugDynamicAO:
+    type: bool
+  emissiveEnable:
+    type: bool
+  unlitEnable:
+    type: bool
+  skyEnvmapMipmapGenEnable:
+    type: bool
+  drawLightSources:
+    type: bool
+  gBufferClearEnable:
+    type: bool
+  dxGBufferLight16BitEnable:
+    type: bool
+  dxGBufferNormal16BitEnable:
+    type: bool
+  gBufferAlphaTestSimpleEnable:
+    type: bool
+  specularLightingEnable:
+    type: bool
+  skinLightingEnable:
+    type: bool
+  translucencyLightingEnable:
+    type: bool
+  dynamicEnvmapLightingEnable:
+    type: bool
+  outdoorLightEnable:
+    type: bool
+  pointLightsEnable:
+    type: bool
+  lineLightsEnable:
+    type: bool
+  coneLightsEnable:
+    type: bool
+  spotLightsEnable:
+    type: bool
+  lightProbesEnable:
+    type: bool
+  lightStencilMethodEnable:
+    type: bool
+  lightVolumeMethodEnable:
+    type: bool
+  lightVolumeDepthTestEnable:
+    type: bool
+  outputGammaCorrectionEnable:
+    type: bool
+  drawDebugMultisampleClassify:
+    type: bool
+  outdoorKeyLightEnable:
+    type: bool
+  outdoorSkyLightEnable:
+    type: bool
+  outdoorLightSpecularEnable:
+    type: bool
+  outdoorLightTilingEnable:
+    type: bool
+  outdoorLightTileRenderEnable:
+    type: bool
+  outdoorLightTileBlendEnable:
+    type: bool
+  outdoorLightTileSimpleShaderEnable:
+    type: bool
+  ps3TiledHalfTargetEnable:
+    type: bool
+  xenonOutdoorLightTilingEnable:
+    type: bool
+  xenonPointLightsTilingEnable:
+    type: bool
+  xenonSpotLightsTilingEnable:
+    type: bool
+  xenonLineLightsTilingEnable:
+    type: bool
+  xenonAsyncLightJobsEnable:
+    type: bool
+  xenonLightTileDownsampleSpecularCheckEnable:
+    type: bool
+  xenonLightTileCpuPointLightCullingEnable:
+    type: bool
+  ps3TiledSSAOTargetsEnable:
+    type: bool
+  ps3SCullEnable:
+    type: bool
+  ps3ColorCompressionEnable:
+    type: bool
+  enable:
+    type: bool
+  ps3TilingEnable:
+    type: bool
+  ps3DepthBoundsLightCullingEnable:
+    type: bool
+  ps3ZCullEnable:
+    type: bool
+  consoleRenderTargetPoolSharingEnable:
+    type: bool
+  xenonFloatDepthBufferEnable:
+    type: bool
+  ps3LightTileJobYieldEnable:
+    type: bool
+  ps3HdrClearEnable:
+    type: bool
+  xenonFastHdrEnable:
+    type: bool
+  shadowmapViewDistanceScaleEnable:
+    type: bool
+  ps3RenderTargetPoolGBufferOffsetEnable:
+    type: bool
+  hdrEnable:
+    type: bool
+  spotLightShadowmapEnable:
+    type: bool
+  simpleShadowmapsEnable:
+    type: bool
+  drawTransparent:
+    type: bool
+  drawTransparentDecal:
+    type: bool
+  shadowmapFixedDepthEnable:
+    type: bool
+  drawDebugDynamicEnvmap:
+    type: bool
+  motionBlurGeometryPassEnable:
+    type: bool
+  dxLinearDepth32BitFormatEnable:
+    type: bool
+  dynamicEnvmapMipmapGenEnable:
+    type: bool
+  motionBlurEnable:
+    type: bool
+  coloredShadowmapSlicesEnable:
+    type: bool
+  dxDeferredCsPathEnable:
+    type: bool
+  drawDebugGBuffer:
+    type: bool
+  drawDebugLightSources:
+    type: bool
+  drawDebugLightShadowSources:
+    type: bool
+  drawDebugLightStats:
+    type: bool
+  drawDebugLightTiles:
+    type: bool
+  drawDebugLightTileVolumes:
+    type: bool
+  drawDebugLightTileFbGrid:
+    type: bool
+  drawDebugLightTileGrid:
+    type: bool
+  drawDebugLightTileSources:
+    type: bool
+  applyShadowmapsEnable:
+    type: bool
+  generateShadowmapsEnable:
+    type: bool
+  dxSpotLightShadowmap16BitEnable:
+    type: bool
+  ps3Shadowmap16BitEnable:
+    type: bool
+  ps3SpotLightShadowmap16BitEnable:
+    type: bool
+  genericEntityRendererEnable:
+    type: bool
+  setupJobEnable:
+    type: bool
+  shadowmapAccumBilinearEnable:
+    type: bool
+  lightWidthEnable:
+    type: bool
+  lightIntensityNormalizationEnable:
+    type: bool
+  lightCullEnable:
+    type: bool
+  lightDepthCullEnable:
+    type: bool
+  lightNormalCullEnable:
+    type: bool
+  lightConeCullEnable:
+    type: bool
+  lightTileOverlayEnable:
+    type: bool
+  ps3ShadowmapTilingEnable:
+    type: bool
+  lightAttenuationThresholdEnable:
+    type: bool
+  skyVisibilityEnvmapScalingEnable:
+    type: bool
+  zBufferShadowTestEnable:
+    type: bool
+  shadowmapsEnable:
+    type: bool
+  shadowmapAccumEnable:
+    type: bool
+  shadowmapCullVolumeEnable:
+    type: bool
+  opaqueSortBySolutionEnable:
+    type: bool
+  mainOpaqueZPassEnable:
+    type: bool
+  drawDebugDecalVolumes:
+    type: bool
+  planarReflectionEnable:
+    type: bool
+  transparencyShadowmapsEnable:
+    type: bool
+  dynamicCullDrawOccludedBoxesEnable:
+    type: bool
+  planarReflectionBlur:
+    type: bool
+  drawDebugPlanarReflectionCullFrustum:
+    type: bool
+  freezePlanarReflectionCullFrustum:
+    type: bool
+  planarReflectionDebugCullMode:
+    type: bool
+  shadowmapFixedMovementEnable:
+    type: bool
+  decalVolumeEnable:
+    type: bool
+  drawDebugPlanarReflection:
+    type: bool
+  fxaaEnable:
+    type: bool
+  dynamicCullSpuJobEnable:
+    type: bool
+  dynamicCullZBufferTestEnable:
+    type: bool
+  viewFxEnable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the WorldRenderSettings type.
+

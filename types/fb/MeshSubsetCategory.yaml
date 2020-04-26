@@ -1,0 +1,15 @@
+name: MeshSubsetCategory
+type: enum
+
+values:
+  MeshSubsetCategory_Opaque:
+    value: 0
+  MeshSubsetCategory_Transparent:
+    value: 1
+  MeshSubsetCategory_TransparentDecal:
+    value: 2
+  MeshSubsetCategory_ZOnly:
+    value: 3
+  MeshSubsetCategoryCount:
+    value: 4
+

@@ -1,0 +1,45 @@
+name: FlashlightWeaponData
+type: class
+inherits: WeaponData
+
+constructors:
+  -
+    description: Creates a new FlashlightWeaponData frostbite instance.
+  -
+    description: Creates a new FlashlightWeaponData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type WeaponData to FlashlightWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: WeaponData
+        description: The instance to cast to FlashlightWeaponData.
+  -
+    description: Casts an instance of type ToolData to FlashlightWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ToolData
+        description: The instance to cast to FlashlightWeaponData.
+  -
+    description: Casts an instance of type DataContainer to FlashlightWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to FlashlightWeaponData.
+
+properties:
+  updateFrequency:
+    type: float
+  range:
+    type: float
+  angle:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the FlashlightWeaponData type.
+

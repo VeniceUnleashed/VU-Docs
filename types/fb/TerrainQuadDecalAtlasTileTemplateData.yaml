@@ -1,0 +1,35 @@
+name: TerrainQuadDecalAtlasTileTemplateData
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new TerrainQuadDecalAtlasTileTemplateData frostbite instance.
+  -
+    description: Creates a new TerrainQuadDecalAtlasTileTemplateData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to TerrainQuadDecalAtlasTileTemplateData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to TerrainQuadDecalAtlasTileTemplateData.
+  -
+    description: Casts an instance of type DataContainer to TerrainQuadDecalAtlasTileTemplateData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to TerrainQuadDecalAtlasTileTemplateData.
+
+properties:
+  atlasTile:
+    type: TerrainQuadDecalAtlasTile
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the TerrainQuadDecalAtlasTileTemplateData type.
+

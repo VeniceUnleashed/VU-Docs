@@ -1,0 +1,33 @@
+name: CollisionData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new CollisionData frostbite instance.
+  -
+    description: Creates a new CollisionData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to CollisionData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to CollisionData.
+
+properties:
+  damageAtVerticalVelocity:
+    type: ValueAtX
+    array: true
+  damageAtHorizVelocity:
+    type: ValueAtX
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the CollisionData type.
+

@@ -1,0 +1,11 @@
+name: MeshScatteringRotationMode
+type: enum
+
+values:
+  MeshScatteringRotationMode_Random:
+    value: 0
+  MeshScatteringRotationMode_TowardsSlope:
+    value: 1
+  MeshScatteringRotationMode_Fixed:
+    value: 2
+

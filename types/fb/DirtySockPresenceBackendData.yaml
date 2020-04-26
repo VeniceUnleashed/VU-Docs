@@ -1,0 +1,37 @@
+name: DirtySockPresenceBackendData
+type: class
+inherits: PresenceBackendData
+
+constructors:
+  -
+    description: Creates a new DirtySockPresenceBackendData frostbite instance.
+  -
+    description: Creates a new DirtySockPresenceBackendData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type PresenceBackendData to DirtySockPresenceBackendData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: PresenceBackendData
+        description: The instance to cast to DirtySockPresenceBackendData.
+  -
+    description: Casts an instance of type Asset to DirtySockPresenceBackendData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to DirtySockPresenceBackendData.
+  -
+    description: Casts an instance of type DataContainer to DirtySockPresenceBackendData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to DirtySockPresenceBackendData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the DirtySockPresenceBackendData type.
+

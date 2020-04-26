@@ -1,0 +1,93 @@
+name: TimingViewSettings
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new TimingViewSettings frostbite instance.
+  -
+    description: Creates a new TimingViewSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to TimingViewSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to TimingViewSettings.
+
+properties:
+  maxFrameEventCount:
+    type: int
+  frameCount:
+    type: int
+  frameDelayCount:
+    type: int
+  timeRange:
+    type: float
+  timeOffset:
+    type: float
+  autolockThreshold:
+    type: float
+  autolockNameFilter:
+    type: string
+  legendScreenOffset:
+    type: int
+  legendColumnWidth:
+    type: int
+  legendDisplayMode:
+    type: int
+  averageFrameCount:
+    type: int
+  maxGpuLegendColumnCount:
+    type: int
+  snoopEventName:
+    type: string
+  gpuBarFrameOffset:
+    type: int
+  maxCpuLegendColumnCount:
+    type: int
+  barPad:
+    type: int
+  maxSpuLegendColumnCount:
+    type: int
+  barSyncProcessor:
+    type: int
+  barMinTime:
+    type: float
+  barHeight:
+    type: int
+  filterEventName:
+    type: string
+  snoopOnly:
+    type: bool
+  drawEnable:
+    type: bool
+  drawSpuLegendEnable:
+    type: bool
+  snoopEnable:
+    type: bool
+  filterEnable:
+    type: bool
+  drawBarsEnable:
+    type: bool
+  drawLegendEnable:
+    type: bool
+  drawOnlySummaryEnable:
+    type: bool
+  sortByTime:
+    type: bool
+  drawCpuLegendEnable:
+    type: bool
+  drawGpuLegendEnable:
+    type: bool
+  enable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the TimingViewSettings type.
+

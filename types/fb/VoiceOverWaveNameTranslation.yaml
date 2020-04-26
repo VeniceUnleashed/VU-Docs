@@ -1,0 +1,11 @@
+name: VoiceOverWaveNameTranslation
+type: enum
+
+values:
+  VoiceOverWaveNameTranslation_FullName:
+    value: 0
+  VoiceOverWaveNameTranslation_PathOnly:
+    value: 1
+  VoiceOverWaveNameTranslation_NameOnly:
+    value: 2
+

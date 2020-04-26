@@ -1,0 +1,51 @@
+name: FollowWaypointsEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new FollowWaypointsEntityData frostbite instance.
+  -
+    description: Creates a new FollowWaypointsEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to FollowWaypointsEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to FollowWaypointsEntityData.
+  -
+    description: Casts an instance of type GameObjectData to FollowWaypointsEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to FollowWaypointsEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to FollowWaypointsEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to FollowWaypointsEntityData.
+  -
+    description: Casts an instance of type DataContainer to FollowWaypointsEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to FollowWaypointsEntityData.
+
+properties:
+  typeOfRoute:
+    type: RouteType
+  usePathFinding:
+    type: bool
+  startAtGeometricallyClosestWaypoint:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the FollowWaypointsEntityData type.
+

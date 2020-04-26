@@ -1,0 +1,15 @@
+name: MatchmakingSessionMode
+type: enum
+
+values:
+  MatchmakingSessionMode_FindDedicatedServer:
+    value: 0
+  MatchmakingSessionMode_ResetDedicatedServer:
+    value: 1
+  MatchmakingSessionMode_FindPeerGame:
+    value: 2
+  MatchmakingSessionMode_CreatePeerGame:
+    value: 3
+  MatchmakingSessionMode_Invalid:
+    value: 4
+

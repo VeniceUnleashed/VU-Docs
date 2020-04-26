@@ -1,0 +1,51 @@
+name: UnlockAssetBase
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new UnlockAssetBase frostbite instance.
+  -
+    description: Creates a new UnlockAssetBase frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to UnlockAssetBase. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to UnlockAssetBase.
+  -
+    description: Casts an instance of type DataContainer to UnlockAssetBase. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UnlockAssetBase.
+
+properties:
+  unlockScore:
+    type: int
+  unlockUserData:
+    type: UnlockUserDataBase
+    nullable: true
+  debugUnlockId:
+    type: string
+  identifier:
+    type: int
+  availableForPlayer:
+    type: UnlockAvailability
+  nextLevelUnlockAsset:
+    type: UnlockAssetBase
+    nullable: true
+  autoAvailable:
+    type: bool
+  hiddenInProgression:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UnlockAssetBase type.
+

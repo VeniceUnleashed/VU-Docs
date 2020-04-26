@@ -1,0 +1,71 @@
+name: TerrainEntityData
+type: class
+inherits: GamePhysicsEntityData
+
+constructors:
+  -
+    description: Creates a new TerrainEntityData frostbite instance.
+  -
+    description: Creates a new TerrainEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GamePhysicsEntityData to TerrainEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GamePhysicsEntityData
+        description: The instance to cast to TerrainEntityData.
+  -
+    description: Casts an instance of type GameEntityData to TerrainEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to TerrainEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to TerrainEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to TerrainEntityData.
+  -
+    description: Casts an instance of type EntityData to TerrainEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to TerrainEntityData.
+  -
+    description: Casts an instance of type GameObjectData to TerrainEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to TerrainEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to TerrainEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to TerrainEntityData.
+  -
+    description: Casts an instance of type DataContainer to TerrainEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to TerrainEntityData.
+
+properties:
+  terrainAsset:
+    type: TerrainData
+    nullable: true
+  waterMaterial:
+    type: MaterialContainerPair
+    nullable: true
+  visible:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the TerrainEntityData type.
+

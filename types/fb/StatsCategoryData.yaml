@@ -1,0 +1,45 @@
+name: StatsCategoryData
+type: class
+inherits: StatsCategoryBaseData
+
+constructors:
+  -
+    description: Creates a new StatsCategoryData frostbite instance.
+  -
+    description: Creates a new StatsCategoryData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type StatsCategoryBaseData to StatsCategoryData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: StatsCategoryBaseData
+        description: The instance to cast to StatsCategoryData.
+  -
+    description: Casts an instance of type TreeNodeBase to StatsCategoryData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: TreeNodeBase
+        description: The instance to cast to StatsCategoryData.
+  -
+    description: Casts an instance of type DataContainer to StatsCategoryData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to StatsCategoryData.
+
+properties:
+  categories:
+    type: StatsCategoryData
+    array: true
+  members:
+    type: string
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the StatsCategoryData type.
+

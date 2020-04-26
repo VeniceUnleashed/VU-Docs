@@ -1,0 +1,31 @@
+name: AudioGraphAssetParameter
+type: class
+inherits: AudioGraphParameter
+
+constructors:
+  -
+    description: Creates a new AudioGraphAssetParameter frostbite instance.
+  -
+    description: Creates a new AudioGraphAssetParameter frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphParameter to AudioGraphAssetParameter. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphParameter
+        description: The instance to cast to AudioGraphAssetParameter.
+  -
+    description: Casts an instance of type DataContainer to AudioGraphAssetParameter. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to AudioGraphAssetParameter.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the AudioGraphAssetParameter type.
+

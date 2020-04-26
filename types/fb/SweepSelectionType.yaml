@@ -1,0 +1,9 @@
+name: SweepSelectionType
+type: enum
+
+values:
+  SstTargetLost:
+    value: 0
+  SstFirstTime:
+    value: 1
+

@@ -1,0 +1,11 @@
+name: FieldAccessType
+type: enum
+
+values:
+  FieldAccessType_Source:
+    value: 0
+  FieldAccessType_Target:
+    value: 1
+  FieldAccessType_SourceAndTarget:
+    value: 2
+

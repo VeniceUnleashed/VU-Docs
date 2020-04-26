@@ -1,0 +1,46 @@
+name: DialogNode
+type: class
+inherits: StateNode
+
+constructors:
+  -
+    description: Creates a new DialogNode frostbite instance.
+  -
+    description: Creates a new DialogNode frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type StateNode to DialogNode. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: StateNode
+        description: The instance to cast to DialogNode.
+  -
+    description: Casts an instance of type UINodeData to DialogNode. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UINodeData
+        description: The instance to cast to DialogNode.
+  -
+    description: Casts an instance of type DataContainer to DialogNode. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to DialogNode.
+
+properties:
+  dialogTitle:
+    type: string
+  dialogText:
+    type: string
+  buttons:
+    type: UIPopupButton
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the DialogNode type.
+

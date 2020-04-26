@@ -1,0 +1,46 @@
+name: MaterialPropertyTerrainData
+type: class
+inherits: PhysicsMaterialRelationPropertyData
+
+constructors:
+  -
+    description: Creates a new MaterialPropertyTerrainData frostbite instance.
+  -
+    description: Creates a new MaterialPropertyTerrainData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type PhysicsMaterialRelationPropertyData to MaterialPropertyTerrainData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: PhysicsMaterialRelationPropertyData
+        description: The instance to cast to MaterialPropertyTerrainData.
+  -
+    description: Casts an instance of type MaterialRelationPropertyData to MaterialPropertyTerrainData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MaterialRelationPropertyData
+        description: The instance to cast to MaterialPropertyTerrainData.
+  -
+    description: Casts an instance of type DataContainer to MaterialPropertyTerrainData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MaterialPropertyTerrainData.
+
+properties:
+  dirtTriggerColor:
+    type: Vec3
+  destructionEffect:
+    type: EffectBlueprint
+    nullable: true
+  dirtTriggerFactor:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MaterialPropertyTerrainData type.
+

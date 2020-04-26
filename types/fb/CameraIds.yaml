@@ -1,0 +1,13 @@
+name: CameraIds
+type: enum
+
+values:
+  NoCameraId:
+    value: 0
+  FreeCameraId:
+    value: 1
+  EntryCameraId:
+    value: 2
+  CameraIdCount:
+    value: 3
+

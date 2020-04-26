@@ -1,0 +1,9 @@
+name: SoundWaveVariationSelection
+type: enum
+
+values:
+  SwvsSequential:
+    value: 0
+  SwvsRandom:
+    value: 1
+

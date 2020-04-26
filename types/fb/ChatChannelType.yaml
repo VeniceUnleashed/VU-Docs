@@ -1,0 +1,17 @@
+name: ChatChannelType
+type: enum
+
+values:
+  CctSayAll:
+    value: 0
+  CctTeam:
+    value: 1
+  CctSquad:
+    value: 2
+  CctSquadLeader:
+    value: 3
+  CctAdmin:
+    value: 4
+  CctSize:
+    value: 5
+

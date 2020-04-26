@@ -1,0 +1,37 @@
+name: ReceivedAwardSurveyEvent
+type: class
+inherits: MetricEvent
+
+constructors:
+  -
+    description: Creates a new ReceivedAwardSurveyEvent frostbite instance.
+  -
+    description: Creates a new ReceivedAwardSurveyEvent frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type MetricEvent to ReceivedAwardSurveyEvent. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MetricEvent
+        description: The instance to cast to ReceivedAwardSurveyEvent.
+  -
+    description: Casts an instance of type DataContainer to ReceivedAwardSurveyEvent. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ReceivedAwardSurveyEvent.
+
+properties:
+  awardName:
+    type: string
+  surveyMetricLink:
+    type: Guid
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ReceivedAwardSurveyEvent type.
+

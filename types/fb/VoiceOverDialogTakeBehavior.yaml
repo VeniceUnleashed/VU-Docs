@@ -1,0 +1,11 @@
+name: VoiceOverDialogTakeBehavior
+type: enum
+
+values:
+  VoiceOverDialogTakeBehavior_Start:
+    value: 0
+  VoiceOverDialogTakeBehavior_Clip:
+    value: 1
+  VoiceOverDialogTakeBehavior_Continuous:
+    value: 2
+

@@ -1,0 +1,17 @@
+name: RigidBodyType
+type: enum
+
+values:
+  RBTypeCollision:
+    value: 0
+  RBTypeDetail:
+    value: 1
+  RBTypeCharacter:
+    value: 2
+  RBTypeRaycast:
+    value: 3
+  RBTypeGroup:
+    value: 4
+  RBTypeSize:
+    value: 5
+

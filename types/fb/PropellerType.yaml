@@ -1,0 +1,9 @@
+name: PropellerType
+type: enum
+
+values:
+  PropellerType_Regular:
+    value: 0
+  PropellerType_Rotor:
+    value: 1
+

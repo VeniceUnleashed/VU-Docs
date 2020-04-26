@@ -1,0 +1,43 @@
+name: ResourceManagerSettings
+type: class
+inherits: SystemSettings
+
+constructors:
+  -
+    description: Creates a new ResourceManagerSettings frostbite instance.
+  -
+    description: Creates a new ResourceManagerSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SystemSettings to ResourceManagerSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SystemSettings
+        description: The instance to cast to ResourceManagerSettings.
+  -
+    description: Casts an instance of type DataContainer to ResourceManagerSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ResourceManagerSettings.
+
+properties:
+  casBundleReadBufferSizeKb:
+    type: int
+  casBundleDecompressBufferSizeKb:
+    type: int
+  casBundleDecompressBufferCount:
+    type: int
+  bundleProfilingEnable:
+    type: bool
+  spuDecompressEnable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ResourceManagerSettings type.
+

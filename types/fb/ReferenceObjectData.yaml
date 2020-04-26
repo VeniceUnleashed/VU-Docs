@@ -1,0 +1,53 @@
+name: ReferenceObjectData
+type: class
+inherits: GameObjectData
+
+constructors:
+  -
+    description: Creates a new ReferenceObjectData frostbite instance.
+  -
+    description: Creates a new ReferenceObjectData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameObjectData to ReferenceObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to ReferenceObjectData.
+  -
+    description: Casts an instance of type GameDataContainer to ReferenceObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to ReferenceObjectData.
+  -
+    description: Casts an instance of type DataContainer to ReferenceObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ReferenceObjectData.
+
+properties:
+  blueprintTransform:
+    type: LinearTransform
+  blueprint:
+    type: Blueprint
+    nullable: true
+  objectVariation:
+    type: ObjectVariation
+    nullable: true
+  streamRealm:
+    type: StreamRealm
+  castSunShadowEnable:
+    type: bool
+  excluded:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ReferenceObjectData type.
+

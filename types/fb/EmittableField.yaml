@@ -1,0 +1,33 @@
+name: EmittableField
+type: enum
+
+values:
+  EfZero:
+    value: 0
+  EfOne:
+    value: 1
+  EfNormTime:
+    value: 2
+  EfEmitterNormTime:
+    value: 3
+  EfSpawnAnimationSpeed:
+    value: 4
+  EfSpawnAnimationFrameIndex:
+    value: 5
+  EfVelocity:
+    value: 6
+  EfParameters:
+    value: 7
+  EfRotation:
+    value: 8
+  EfSpeed:
+    value: 9
+  EfUserDefined:
+    value: 10
+  EfConstantFloat:
+    value: 11
+  EfConstantVec:
+    value: 12
+  EfNone:
+    value: 13
+

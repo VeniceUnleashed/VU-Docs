@@ -1,0 +1,47 @@
+name: CustomizeCharacterData
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new CustomizeCharacterData frostbite instance.
+  -
+    description: Creates a new CustomizeCharacterData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to CustomizeCharacterData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to CustomizeCharacterData.
+  -
+    description: Casts an instance of type DataContainer to CustomizeCharacterData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to CustomizeCharacterData.
+
+properties:
+  visualGroups:
+    type: CustomizeVisual
+    array: true
+  overrideCriticalHealthThreshold:
+    type: float
+  unlocks:
+    type: UnlockAssetBase
+    array: true
+  overrideMaxHealth:
+    type: float
+  clearVisualState:
+    type: bool
+  restoreToOriginalVisualState:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the CustomizeCharacterData type.
+

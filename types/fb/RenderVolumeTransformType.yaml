@@ -1,0 +1,9 @@
+name: RenderVolumeTransformType
+type: enum
+
+values:
+  RenderVolumeTransformType_WorldSpaceInv:
+    value: 0
+  RenderVolumeTransformType_WorldSpaceNoScale:
+    value: 1
+

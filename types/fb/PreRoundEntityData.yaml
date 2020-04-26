@@ -1,0 +1,63 @@
+name: PreRoundEntityData
+type: class
+inherits: GameEntityData
+
+constructors:
+  -
+    description: Creates a new PreRoundEntityData frostbite instance.
+  -
+    description: Creates a new PreRoundEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameEntityData to PreRoundEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to PreRoundEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to PreRoundEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to PreRoundEntityData.
+  -
+    description: Casts an instance of type EntityData to PreRoundEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to PreRoundEntityData.
+  -
+    description: Casts an instance of type GameObjectData to PreRoundEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to PreRoundEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to PreRoundEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to PreRoundEntityData.
+  -
+    description: Casts an instance of type DataContainer to PreRoundEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PreRoundEntityData.
+
+properties:
+  roundMaxPlayerCount:
+    type: int
+  roundRestartCountdown:
+    type: int
+  roundMinPlayerCount:
+    type: int
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PreRoundEntityData type.
+

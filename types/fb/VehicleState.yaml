@@ -1,0 +1,41 @@
+name: VehicleState
+type: class
+inherits: MetricState
+
+constructors:
+  -
+    description: Creates a new VehicleState frostbite instance.
+  -
+    description: Creates a new VehicleState frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type MetricState to VehicleState. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MetricState
+        description: The instance to cast to VehicleState.
+  -
+    description: Casts an instance of type MetricEvent to VehicleState. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MetricEvent
+        description: The instance to cast to VehicleState.
+  -
+    description: Casts an instance of type DataContainer to VehicleState. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VehicleState.
+
+properties:
+  vehicleName:
+    type: string
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VehicleState type.
+

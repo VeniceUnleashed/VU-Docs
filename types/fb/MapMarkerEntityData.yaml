@@ -1,0 +1,115 @@
+name: MapMarkerEntityData
+type: class
+inherits: GameEntityData
+
+constructors:
+  -
+    description: Creates a new MapMarkerEntityData frostbite instance.
+  -
+    description: Creates a new MapMarkerEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameEntityData to MapMarkerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to MapMarkerEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to MapMarkerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to MapMarkerEntityData.
+  -
+    description: Casts an instance of type EntityData to MapMarkerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to MapMarkerEntityData.
+  -
+    description: Casts an instance of type GameObjectData to MapMarkerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to MapMarkerEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to MapMarkerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to MapMarkerEntityData.
+  -
+    description: Casts an instance of type DataContainer to MapMarkerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MapMarkerEntityData.
+
+properties:
+  baseTransform:
+    type: Vec3
+  progressMinTime:
+    type: float
+  sid:
+    type: string
+  nrOfPassengers:
+    type: int
+  nrOfEntries:
+    type: int
+  progressTime1Player:
+    type: float
+  showRadius:
+    type: float
+  hideRadius:
+    type: float
+  blinkTime:
+    type: float
+  markerType:
+    type: MapMarkerType
+  visibleForTeam:
+    type: TeamId
+  ownerTeam:
+    type: TeamId
+  hudIcon:
+    type: UIHudIcon
+  verticalOffset:
+    type: float
+  focusPointRadius:
+    type: float
+  instantFlagReturnRadius:
+    type: float
+  progress:
+    type: float
+  progressPlayerSpeedUpPercentage:
+    type: float
+  trackedPlayersInRange:
+    type: int
+  trackingPlayerRange:
+    type: float
+  progressTime:
+    type: float
+  onlyShowSnapped:
+    type: bool
+  flagControlMarker:
+    type: bool
+  showProgress:
+    type: bool
+  useMarkerTransform:
+    type: bool
+  isVisible:
+    type: bool
+  snap:
+    type: bool
+  showAirTargetBox:
+    type: bool
+  isFocusPoint:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MapMarkerEntityData type.
+

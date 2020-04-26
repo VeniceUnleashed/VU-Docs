@@ -1,0 +1,47 @@
+name: DataSetNode
+type: class
+inherits: UINodeData
+
+constructors:
+  -
+    description: Creates a new DataSetNode frostbite instance.
+  -
+    description: Creates a new DataSetNode frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UINodeData to DataSetNode. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UINodeData
+        description: The instance to cast to DataSetNode.
+  -
+    description: Casts an instance of type DataContainer to DataSetNode. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to DataSetNode.
+
+properties:
+  inValue:
+    type: UINodePort
+    nullable: true
+  out:
+    type: UINodePort
+    nullable: true
+  param:
+    type: string
+  dataSource:
+    type: UIDataSourceInfo
+  setToEmptyString:
+    type: bool
+  forceUpdate:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the DataSetNode type.
+

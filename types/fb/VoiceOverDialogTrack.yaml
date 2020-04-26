@@ -1,0 +1,54 @@
+name: VoiceOverDialogTrack
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new VoiceOverDialogTrack frostbite instance.
+  -
+    description: Creates a new VoiceOverDialogTrack frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to VoiceOverDialogTrack. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VoiceOverDialogTrack.
+
+properties:
+  source:
+    type: VoiceOverValueConnection
+    nullable: true
+  takeControl:
+    type: VoiceOverValueConnection
+    nullable: true
+  takeIndexMapping:
+    type: VoiceOverDialogTakeMapping
+    array: true
+  takeSwitching:
+    type: VoiceOverDialogTakeBehavior
+  clips:
+    type: VoiceOverDialogClip
+    array: true
+  samplerNode:
+    type: AudioGraphNodeData
+    nullable: true
+  output:
+    type: AudioGraphNodeData
+    nullable: true
+  queueGroup:
+    type: VoiceOverConversationQueueGroup
+    nullable: true
+  parentTrackIndex:
+    type: int
+  takeSwitchingOnResume:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VoiceOverDialogTrack type.
+

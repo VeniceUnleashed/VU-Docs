@@ -1,0 +1,11 @@
+name: BlinkType
+type: enum
+
+values:
+  BTHold:
+    value: 0
+  BTBlink:
+    value: 1
+  BTCount:
+    value: 2
+

@@ -1,0 +1,39 @@
+name: VeniceRichPresenceLevelDescriptionComponent
+type: class
+inherits: LevelDescriptionComponent
+
+constructors:
+  -
+    description: Creates a new VeniceRichPresenceLevelDescriptionComponent frostbite instance.
+  -
+    description: Creates a new VeniceRichPresenceLevelDescriptionComponent frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type LevelDescriptionComponent to VeniceRichPresenceLevelDescriptionComponent. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: LevelDescriptionComponent
+        description: The instance to cast to VeniceRichPresenceLevelDescriptionComponent.
+  -
+    description: Casts an instance of type DataContainer to VeniceRichPresenceLevelDescriptionComponent. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VeniceRichPresenceLevelDescriptionComponent.
+
+properties:
+  presenceMode:
+    type: RichPresencePresenceString
+    nullable: true
+  contextValues:
+    type: RichPresenceContextSetting
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VeniceRichPresenceLevelDescriptionComponent type.
+

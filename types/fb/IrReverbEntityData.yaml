@@ -1,0 +1,54 @@
+name: IrReverbEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new IrReverbEntityData frostbite instance.
+  -
+    description: Creates a new IrReverbEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to IrReverbEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to IrReverbEntityData.
+  -
+    description: Casts an instance of type GameObjectData to IrReverbEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to IrReverbEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to IrReverbEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to IrReverbEntityData.
+  -
+    description: Casts an instance of type DataContainer to IrReverbEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to IrReverbEntityData.
+
+properties:
+  impulseResponse:
+    type: ImpulseResponseAsset
+    nullable: true
+  gain:
+    type: float
+  volume:
+    type: float
+  fadeCurve:
+    type: FadeCurveType
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the IrReverbEntityData type.
+

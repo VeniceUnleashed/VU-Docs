@@ -1,0 +1,46 @@
+name: ComponentData
+type: class
+inherits: GameObjectData
+
+constructors:
+  -
+    description: Creates a new ComponentData frostbite instance.
+  -
+    description: Creates a new ComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameObjectData to ComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to ComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to ComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to ComponentData.
+  -
+    description: Casts an instance of type DataContainer to ComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ComponentData.
+
+properties:
+  transform:
+    type: LinearTransform
+  components:
+    type: GameObjectData
+    array: true
+  excluded:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ComponentData type.
+

@@ -1,0 +1,70 @@
+name: ConeOutputNodeData
+type: class
+inherits: OutputNodeData
+
+constructors:
+  -
+    description: Creates a new ConeOutputNodeData frostbite instance.
+  -
+    description: Creates a new ConeOutputNodeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type OutputNodeData to ConeOutputNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: OutputNodeData
+        description: The instance to cast to ConeOutputNodeData.
+  -
+    description: Casts an instance of type AudioGraphNodeData to ConeOutputNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphNodeData
+        description: The instance to cast to ConeOutputNodeData.
+  -
+    description: Casts an instance of type DataContainer to ConeOutputNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ConeOutputNodeData.
+
+properties:
+  direction:
+    type: Vec3
+  positionY:
+    type: AudioGraphNodePort
+  positionX:
+    type: AudioGraphNodePort
+  positionZ:
+    type: AudioGraphNodePort
+  outerAngle:
+    type: AudioGraphNodePort
+  innerAngle:
+    type: AudioGraphNodePort
+  outsideGain:
+    type: float
+  panSize:
+    type: float
+  centerLevel:
+    type: AudioGraphNodePort
+  lfeLevel:
+    type: AudioGraphNodePort
+  hfDampingAngle:
+    type: float
+  reverbGain:
+    type: float
+  reverbSend:
+    type: SoundBusData
+    nullable: true
+  panPlugin:
+    type: SoundGraphPluginRef
+  reverbSendPlugin:
+    type: SoundGraphPluginRef
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ConeOutputNodeData type.
+

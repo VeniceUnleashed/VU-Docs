@@ -1,0 +1,61 @@
+name: RiverData
+type: class
+inherits: RibbonData
+
+constructors:
+  -
+    description: Creates a new RiverData frostbite instance.
+  -
+    description: Creates a new RiverData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type RibbonData to RiverData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: RibbonData
+        description: The instance to cast to RiverData.
+  -
+    description: Casts an instance of type VisualVectorShapeData to RiverData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: VisualVectorShapeData
+        description: The instance to cast to RiverData.
+  -
+    description: Casts an instance of type VectorShapeData to RiverData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: VectorShapeData
+        description: The instance to cast to RiverData.
+  -
+    description: Casts an instance of type BaseShapeData to RiverData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: BaseShapeData
+        description: The instance to cast to RiverData.
+  -
+    description: Casts an instance of type GameObjectData to RiverData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to RiverData.
+  -
+    description: Casts an instance of type GameDataContainer to RiverData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to RiverData.
+  -
+    description: Casts an instance of type DataContainer to RiverData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to RiverData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the RiverData type.
+

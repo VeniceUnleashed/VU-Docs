@@ -1,0 +1,171 @@
+name: ClientSettings
+type: class
+inherits: SystemSettings
+
+constructors:
+  -
+    description: Creates a new ClientSettings frostbite instance.
+  -
+    description: Creates a new ClientSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SystemSettings to ClientSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SystemSettings
+        description: The instance to cast to ClientSettings.
+  -
+    description: Casts an instance of type DataContainer to ClientSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ClientSettings.
+
+properties:
+  loadedTimeout:
+    type: float
+  outgoingRate:
+    type: int
+  loadingTimeout:
+    type: float
+  incomingFrequency:
+    type: float
+  incomingRate:
+    type: int
+  duplicationChance:
+    type: float
+  team:
+    type: int
+  maxDropDuration:
+    type: float
+  reorderingChance:
+    type: float
+  dropSpikeChance:
+    type: float
+  minDropDuration:
+    type: float
+  maxIncomingLatency:
+    type: float
+  packetDrops:
+    type: float
+  maxLatency:
+    type: float
+  minIncomingLatency:
+    type: float
+  corruptionChance:
+    type: float
+  serverIp:
+    type: string
+  screenshotSuffix:
+    type: string
+  spawnPointIndex:
+    type: int
+  minLatency:
+    type: float
+  screenshotFilename:
+    type: string
+  ingameTimeout:
+    type: float
+  aimScale:
+    type: float
+  secondaryServerIp:
+    type: string
+  skipFastLevelLoad:
+    type: bool
+  screenshotToFile:
+    type: bool
+  ignoreClientFireRateMultiplier:
+    type: bool
+  inputEnable:
+    type: bool
+  loadMenu:
+    type: bool
+  pauseGameOnStartUp:
+    type: bool
+  debugMenuOnLThumb:
+    type: bool
+  invertPitch:
+    type: bool
+  occludersEnabled:
+    type: bool
+  isPresenceEnabled:
+    type: bool
+  invertFreeCamera:
+    type: bool
+  scheme2FlipY:
+    type: bool
+  invertYaw:
+    type: bool
+  lipSyncEnabled:
+    type: bool
+  isInternetSimulationEnabled:
+    type: bool
+  onDamageSpottingEnabled:
+    type: bool
+  emittersEnabled:
+    type: bool
+  padRumbleEnabled:
+    type: bool
+  overgrowthEnabled:
+    type: bool
+  effectsEnabled:
+    type: bool
+  terrainEnabled:
+    type: bool
+  waterPhysicsEnabled:
+    type: bool
+  vegetationEnabled:
+    type: bool
+  worldRenderEnabled:
+    type: bool
+  renderTags:
+    type: bool
+  debrisClusterEnabled:
+    type: bool
+  havokVisualDebugger:
+    type: bool
+  havokVDBShowsEffectsWorld:
+    type: bool
+  havokCaptureToFile:
+    type: bool
+  useMouseAndKeyboardSystem:
+    type: bool
+  useGlobalGamePadInput:
+    type: bool
+  threadedLoadingEnable:
+    type: bool
+  showBuildId:
+    type: bool
+  extractPersistenceInformation:
+    type: bool
+  enableRestTool:
+    type: bool
+  localVehicleSimulationEnabled:
+    type: bool
+  asyncClientBulletEntity:
+    type: bool
+  autoUnspawnDynamicObjects:
+    type: bool
+  vsyncEnable:
+    type: bool
+  visualFrameInterpolation:
+    type: bool
+  invertPadPcRightStick:
+    type: bool
+  scheme0FlipY:
+    type: bool
+  isSpectator:
+    type: bool
+  scheme1FlipY:
+    type: bool
+  quitGameOnServerDisconnect:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ClientSettings type.
+

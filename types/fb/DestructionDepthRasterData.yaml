@@ -1,0 +1,37 @@
+name: DestructionDepthRasterData
+type: class
+inherits: RasterQuadtreeData
+
+constructors:
+  -
+    description: Creates a new DestructionDepthRasterData frostbite instance.
+  -
+    description: Creates a new DestructionDepthRasterData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type RasterQuadtreeData to DestructionDepthRasterData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: RasterQuadtreeData
+        description: The instance to cast to DestructionDepthRasterData.
+  -
+    description: Casts an instance of type Asset to DestructionDepthRasterData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to DestructionDepthRasterData.
+  -
+    description: Casts an instance of type DataContainer to DestructionDepthRasterData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to DestructionDepthRasterData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the DestructionDepthRasterData type.
+

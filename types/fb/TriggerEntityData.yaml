@@ -1,0 +1,61 @@
+name: TriggerEntityData
+type: class
+inherits: GameEntityData
+
+constructors:
+  -
+    description: Creates a new TriggerEntityData frostbite instance.
+  -
+    description: Creates a new TriggerEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameEntityData to TriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to TriggerEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to TriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to TriggerEntityData.
+  -
+    description: Casts an instance of type EntityData to TriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to TriggerEntityData.
+  -
+    description: Casts an instance of type GameObjectData to TriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to TriggerEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to TriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to TriggerEntityData.
+  -
+    description: Casts an instance of type DataContainer to TriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to TriggerEntityData.
+
+properties:
+  delay:
+    type: float
+  runOnce:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the TriggerEntityData type.
+

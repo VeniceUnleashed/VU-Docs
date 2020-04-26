@@ -1,0 +1,30 @@
+name: Ps3ParentalLockAgeSettingsOverrides
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new Ps3ParentalLockAgeSettingsOverrides frostbite instance.
+  -
+    description: Creates a new Ps3ParentalLockAgeSettingsOverrides frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to Ps3ParentalLockAgeSettingsOverrides. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to Ps3ParentalLockAgeSettingsOverrides.
+
+properties:
+  overrides:
+    type: Ps3ParentalLockAgeSettingsForCountry
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the Ps3ParentalLockAgeSettingsOverrides type.
+

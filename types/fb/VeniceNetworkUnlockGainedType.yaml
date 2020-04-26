@@ -1,0 +1,13 @@
+name: VeniceNetworkUnlockGainedType
+type: enum
+
+values:
+  VeniceNetworkUnlockGainedType_Bucket:
+    value: 0
+  VeniceNetworkUnlockGainedType_Rank:
+    value: 1
+  VeniceNetworkUnlockGainedType_Weapon:
+    value: 2
+  VeniceNetworkUnlockGainedType_Award:
+    value: 3
+

@@ -1,0 +1,9 @@
+name: CollisionMethodEnum
+type: enum
+
+values:
+  CMESimple:
+    value: 0
+  CMEDetailed:
+    value: 1
+

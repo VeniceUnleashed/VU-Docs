@@ -1,0 +1,21 @@
+name: DogTagCategory
+type: enum
+
+values:
+  DTC_Invalid:
+    value: 0
+  DTC_Ribbons:
+    value: 1
+  DTC_Medals:
+    value: 2
+  DTC_Ranks:
+    value: 3
+  DTC_ServiceStars:
+    value: 4
+  DTC_Weapons:
+    value: 5
+  DTC_Misc:
+    value: 6
+  DTC_Assassin:
+    value: 7
+

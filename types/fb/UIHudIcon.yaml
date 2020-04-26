@@ -1,0 +1,347 @@
+name: UIHudIcon
+type: enum
+
+values:
+  UIHudIcon_Unused:
+    value: 0
+  UIHudIcon_LocalPlayer:
+    value: 1
+  UIHudIcon_LocalDirection:
+    value: 2
+  UIHudIcon_FriendlyPlayer:
+    value: 3
+  UIHudIcon_EnemyPlayer:
+    value: 4
+  UIHudIcon_NeutralPlayer:
+    value: 5
+  UIHudIcon_SquadMember:
+    value: 6
+  UIHudIcon_SquadLeader:
+    value: 7
+  UIHudIcon_SquadLeaderTargeted:
+    value: 8
+  UIHudIcon_Vehicle:
+    value: 9
+  UIHudIcon_PrimaryObjective:
+    value: 10
+  UIHudIcon_PrimaryObjectiveBlink:
+    value: 11
+  UIHudIcon_SecondaryObjective:
+    value: 12
+  UIHudIcon_AreaMapMarker:
+    value: 13
+  UIHudIcon_ObjectiveDestroy:
+    value: 14
+  UIHudIcon_ObjectiveScout:
+    value: 15
+  UIHudIcon_ObjectiveDefend:
+    value: 16
+  UIHudIcon_ObjectiveMoveTo:
+    value: 17
+  UIHudIcon_ObjectiveAttack:
+    value: 18
+  UIHudIcon_ObjectiveFollow:
+    value: 19
+  UIHudIcon_ObjectiveGeneral:
+    value: 20
+  UIHudICon_UAV:
+    value: 21
+  UIHudIcon_AmmoCrate:
+    value: 22
+  UIHudIcon_MedicBag:
+    value: 23
+  UIHudIcon_C4:
+    value: 24
+  UIHudIcon_ATMine:
+    value: 25
+  UIHudIcon_StationaryWeapon:
+    value: 26
+  UIHudIcon_North:
+    value: 27
+  UIHudIcon_South:
+    value: 28
+  UIHudIcon_West:
+    value: 29
+  UIHudIcon_East:
+    value: 30
+  UIHudIcon_NeutralFlag:
+    value: 31
+  UIHudIcon_FriendlyFlag:
+    value: 32
+  UIHudIcon_EnemyFlag:
+    value: 33
+  UIHudIcon_FriendlyBase:
+    value: 34
+  UIHudIcon_EnemyBase:
+    value: 35
+  UIHudIcon_Team1Flag:
+    value: 36
+  UIHudIcon_Team2Flag:
+    value: 37
+  UIHudIcon_NeutralFlagLit:
+    value: 38
+  UIHudIcon_FriendlyFlagLit:
+    value: 39
+  UIHudIcon_EnemyFlagLit:
+    value: 40
+  UIHudIcon_SelectableSpawnPoint:
+    value: 41
+  UIHudIcon_SelectedSpawnPoint:
+    value: 42
+  UIHudIcon_NonSelectableSpawnPoint:
+    value: 43
+  UIHudIcon_FriendlyFlagUnderAttack:
+    value: 44
+  UIHudIcon_EnemyFlagUnderAttack:
+    value: 45
+  UIHudIcon_OrderAttack:
+    value: 46
+  UIHudIcon_OrderDefend:
+    value: 47
+  UIHudIcon_OrderAttackObserved:
+    value: 48
+  UIHudIcon_OrderDefendObserved:
+    value: 49
+  UIHudIcon_Boat:
+    value: 50
+  UIHudIcon_Car:
+    value: 51
+  UIHudIcon_Jeep:
+    value: 52
+  UIHudIcon_HeliAttack:
+    value: 53
+  UIHudIcon_HeliScout:
+    value: 54
+  UIHudIcon_Tank:
+    value: 55
+  UIHudIcon_TankIFV:
+    value: 56
+  UIHudIcon_TankArty:
+    value: 57
+  UIHudIcon_TankAA:
+    value: 58
+  UIHudIcon_TankAT:
+    value: 59
+  UIHudIcon_Jet:
+    value: 60
+  UIHudIcon_JetBomber:
+    value: 61
+  UIHudIcon_Stationary:
+    value: 62
+  UIHudIcon_Strategic:
+    value: 63
+  UIHudIcon_MotionRadarSweep:
+    value: 64
+  UIHudIcon_NeedBackup:
+    value: 65
+  UIHudIcon_NeedAmmo:
+    value: 66
+  UIHudIcon_NeedMedic:
+    value: 67
+  UIHudIcon_NeedPickup:
+    value: 68
+  UIHudIcon_NeedRepair:
+    value: 69
+  UIHudIcon_KitAssault:
+    value: 70
+  UIHudIcon_KitDemolition:
+    value: 71
+  UIHudIcon_KitRecon:
+    value: 72
+  UIHudIcon_KitSpecialist:
+    value: 73
+  UIHudIcon_KitSupport:
+    value: 74
+  UIHudIcon_KitMedic:
+    value: 75
+  UIHudIcon_KitEngineer:
+    value: 76
+  UIHudIcon_KitPickupAssault:
+    value: 77
+  UIHudIcon_KitPickupDemolition:
+    value: 78
+  UIHudIcon_KitPickupRecon:
+    value: 79
+  UIHudIcon_KitPickupSpecialist:
+    value: 80
+  UIHudIcon_KitPickupSupport:
+    value: 81
+  UIHudIcon_KitPickupMedic:
+    value: 82
+  UIHudIcon_KitPickupEngineer:
+    value: 83
+  UIHudIcon_Pickup:
+    value: 84
+  UIHudIcon_TaggedVehicle:
+    value: 85
+  UIHudIcon_LaserPaintedVehicle:
+    value: 86
+  UIHudIcon_HeliTargetEnemy:
+    value: 87
+  UIHudIcon_HeliTargetFriendly:
+    value: 88
+  UIHudIcon_ArtilleryTarget:
+    value: 89
+  UIHudIcon_NeutralFlagAttacker:
+    value: 90
+  UIHudIcon_FriendlyFlagAttacker:
+    value: 91
+  UIHudIcon_EnemyFlagAttacker:
+    value: 92
+  UIHudIcon_LaserTarget:
+    value: 93
+  UIHudIcon_ObjectiveAttacker:
+    value: 94
+  UIHudIcon_ObjectiveDefender:
+    value: 95
+  UIHudIcon_HealthbarBackground:
+    value: 96
+  UIHudIcon_Healthbar:
+    value: 97
+  UIHudIcon_RadarSweepComponent:
+    value: 98
+  UIHudIcon_Blank:
+    value: 99
+  UIHudIcon_LocalPlayerBigIcon:
+    value: 100
+  UIHudIcon_LocalPlayerOutOfMap:
+    value: 101
+  UIHudIcon_PrimaryObjectiveLarge:
+    value: 102
+  UIHudIcon_TargetUnlocked:
+    value: 103
+  UIHudIcon_TargetLocked:
+    value: 104
+  UIHudIcon_TargetLocking:
+    value: 105
+  UIHudIcon_ArtilleryStrikeNametag:
+    value: 106
+  UIHudIcon_ArtilleryStrikeMinimap:
+    value: 107
+  UIHudIcon_CapturePointContested:
+    value: 108
+  UIHudIcon_CapturePointDefended:
+    value: 109
+  UIHudIcon_RoundBar:
+    value: 110
+  UIHudIcon_RoundBarBg:
+    value: 111
+  UIHudIcon_RoundBarBgPlate:
+    value: 112
+  UIHudIcon_SnapOvalArrow:
+    value: 113
+  UIHudIcon_SquadleaderBg:
+    value: 114
+  UIHudIcon_VehicleBg:
+    value: 115
+  UIHudIcon_NonTakeableControlPoint:
+    value: 116
+  UIHudIcon_SpottedPosition:
+    value: 117
+  UIHudIcon_Grenade:
+    value: 118
+  UIHudIcon_Revive:
+    value: 119
+  UIHudIcon_Repair:
+    value: 120
+  UIHudIcon_Interact:
+    value: 121
+  UIHudIcon_Voip:
+    value: 122
+  UIHudIcon_Claymore:
+    value: 123
+  UIHudIcon_EodBot:
+    value: 124
+  UIHudIcon_Explosive:
+    value: 125
+  UIHudIcon_LaserDesignator:
+    value: 126
+  UIHudIcon_Mav:
+    value: 127
+  UIHudIcon_Mortar:
+    value: 128
+  UIHudIcon_RadioBeacon:
+    value: 129
+  UIHudIcon_Ugs:
+    value: 130
+  UIHudIcon_PercetageBarMiddle:
+    value: 131
+  UIHudIcon_PercetageBarEdge:
+    value: 132
+  UIHudIcon_PercentageBarBackground:
+    value: 133
+  UIHudIcon_TankLC:
+    value: 134
+  UIHudIcon_HeliTrans:
+    value: 135
+  UIHudIcon_StaticAT:
+    value: 136
+  UIHudIcon_StaticAA:
+    value: 137
+  UIHudIcon_SprintBoost:
+    value: 138
+  UIHudIcon_AmmoBoost:
+    value: 139
+  UIHudIcon_ExplosiveBoost:
+    value: 140
+  UIHudIcon_ExplosiveResistBoost:
+    value: 141
+  UIHudIcon_SuppressionBoost:
+    value: 142
+  UIHudIcon_SuppressionResistBoost:
+    value: 143
+  UIHudIcon_GrenadeBoost:
+    value: 144
+  UIHudIcon_HealSpeedBoost:
+    value: 145
+  UIHudIcon_NeedAmmoHighlight:
+    value: 146
+  UIHudIcon_NeedMedicHighlight:
+    value: 147
+  UIHudIcon_NeedRepairHighlight:
+    value: 148
+  UIHudIcon_NeedPickupHighlight:
+    value: 149
+  UIHudIcon_PlayerDead:
+    value: 150
+  UIHudIcon_Player:
+    value: 151
+  UIHudIcon_Flag:
+    value: 152
+  UIHudIcon_Base:
+    value: 153
+  UIHudIcon_TankDestroyer:
+    value: 154
+  UIHudIcon_Gunship:
+    value: 155
+  UIHudIcon_ATV:
+    value: 156
+  UIHudIcon_WeaponPickupTier1:
+    value: 157
+  UIHudIcon_WeaponPickupTier2:
+    value: 158
+  UIHudIcon_WeaponPickupTier3:
+    value: 159
+  UIHudIcon_VehicleParachuted:
+    value: 160
+  UIHudIcon_CTFFlagFriendlyHome:
+    value: 161
+  UIHudIcon_CTFFlagFriendlyPicked:
+    value: 162
+  UIHudIcon_CTFFlagFriendlyDropped:
+    value: 163
+  UIHudIcon_CTFFlagEnemyHome:
+    value: 164
+  UIHudIcon_CTFFlagEnemyPicked:
+    value: 165
+  UIHudIcon_CTFFlagEnemyDropped:
+    value: 166
+  UIHudIcon_FriendlyRedFlag:
+    value: 167
+  UIHudIcon_EnemyGreenFlag:
+    value: 168
+  UIHudIcon_DirtBike:
+    value: 169
+  UIHudIcon_Count:
+    value: 170
+

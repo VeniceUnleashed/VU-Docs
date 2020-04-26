@@ -1,0 +1,43 @@
+name: RadiosityEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new RadiosityEntityData frostbite instance.
+  -
+    description: Creates a new RadiosityEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to RadiosityEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to RadiosityEntityData.
+  -
+    description: Casts an instance of type GameObjectData to RadiosityEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to RadiosityEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to RadiosityEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to RadiosityEntityData.
+  -
+    description: Casts an instance of type DataContainer to RadiosityEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to RadiosityEntityData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the RadiosityEntityData type.
+

@@ -1,0 +1,55 @@
+name: TransformBlendEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new TransformBlendEntityData frostbite instance.
+  -
+    description: Creates a new TransformBlendEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to TransformBlendEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to TransformBlendEntityData.
+  -
+    description: Casts an instance of type GameObjectData to TransformBlendEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to TransformBlendEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to TransformBlendEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to TransformBlendEntityData.
+  -
+    description: Casts an instance of type DataContainer to TransformBlendEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to TransformBlendEntityData.
+
+properties:
+  in2:
+    type: LinearTransform
+  in1:
+    type: LinearTransform
+  blendValue:
+    type: float
+  blendValue2:
+    type: float
+  realm:
+    type: Realm
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the TransformBlendEntityData type.
+

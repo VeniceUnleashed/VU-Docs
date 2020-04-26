@@ -1,0 +1,63 @@
+name: NetworkSettings
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new NetworkSettings frostbite instance.
+  -
+    description: Creates a new NetworkSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to NetworkSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to NetworkSettings.
+
+properties:
+  protocolVersion:
+    type: int
+  titleId:
+    type: string
+  clientPort:
+    type: int
+  serverPort:
+    type: int
+  maxGhostCount:
+    type: int
+  maxClientCount:
+    type: int
+  maxClientFrameSize:
+    type: int
+  maxServerFrameSize:
+    type: int
+  xlspAddress:
+    type: string
+  serverAddress:
+    type: string
+  clientConnectionDebugFilePrefix:
+    type: string
+  serverConnectionDebugFilePrefix:
+    type: string
+  timeNudgeGhostFrequencyFactor:
+    type: float
+  timeNudgeBias:
+    type: float
+  connectTimeout:
+    type: float
+  useFrameManager:
+    type: bool
+  timeSyncEnabled:
+    type: bool
+  incrementServerPortOnFail:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the NetworkSettings type.
+

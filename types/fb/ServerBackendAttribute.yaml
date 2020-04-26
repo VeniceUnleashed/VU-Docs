@@ -1,0 +1,103 @@
+name: ServerBackendAttribute
+type: enum
+
+values:
+  ServerBackendAttribute_Level:
+    value: 0
+  ServerBackendAttribute_GameMode:
+    value: 1
+  ServerBackendAttribute_LevelLocation:
+    value: 2
+  ServerBackendAttribute_Mod:
+    value: 3
+  ServerBackendAttribute_Public:
+    value: 4
+  ServerBackendAttribute_Vip:
+    value: 5
+  ServerBackendAttribute_Preset:
+    value: 6
+  ServerBackendAttribute_Settings1:
+    value: 7
+  ServerBackendAttribute_Settings2:
+    value: 8
+  ServerBackendAttribute_MapSettings:
+    value: 9
+  ServerBackendAttribute_Maps1:
+    value: 10
+  ServerBackendAttribute_Maps2:
+    value: 11
+  ServerBackendAttribute_Description1:
+    value: 12
+  ServerBackendAttribute_Description2:
+    value: 13
+  ServerBackendAttribute_Admins1:
+    value: 14
+  ServerBackendAttribute_Admins2:
+    value: 15
+  ServerBackendAttribute_ReservedSlots1:
+    value: 16
+  ServerBackendAttribute_ReservedSlots2:
+    value: 17
+  ServerBackendAttribute_Message:
+    value: 18
+  ServerBackendAttribute_BannerUrl:
+    value: 19
+  ServerBackendAttribute_Mission:
+    value: 20
+  ServerBackendAttribute_Difficulty:
+    value: 21
+  ServerBackendAttribute_PingSite:
+    value: 22
+  ServerBackendAttribute_MapsInfo:
+    value: 23
+  ServerBackendAttribute_Owner:
+    value: 24
+  ServerBackendAttribute_MatchId:
+    value: 25
+  ServerBackendAttribute_RosterA1:
+    value: 26
+  ServerBackendAttribute_RosterA2:
+    value: 27
+  ServerBackendAttribute_RosterA3:
+    value: 28
+  ServerBackendAttribute_RosterA4:
+    value: 29
+  ServerBackendAttribute_RosterA5:
+    value: 30
+  ServerBackendAttribute_RosterA6:
+    value: 31
+  ServerBackendAttribute_RosterA7:
+    value: 32
+  ServerBackendAttribute_RosterA8:
+    value: 33
+  ServerBackendAttribute_RosterA9:
+    value: 34
+  ServerBackendAttribute_RosterB1:
+    value: 35
+  ServerBackendAttribute_RosterB2:
+    value: 36
+  ServerBackendAttribute_RosterB3:
+    value: 37
+  ServerBackendAttribute_RosterB4:
+    value: 38
+  ServerBackendAttribute_RosterB5:
+    value: 39
+  ServerBackendAttribute_RosterB6:
+    value: 40
+  ServerBackendAttribute_RosterB7:
+    value: 41
+  ServerBackendAttribute_RosterB8:
+    value: 42
+  ServerBackendAttribute_RosterB9:
+    value: 43
+  ServerBackendAttribute_Spectators:
+    value: 44
+  ServerBackendAttribute_ExpirationDate:
+    value: 45
+  ServerBackendAttribute_MatchState:
+    value: 46
+  ServerBackendAttribute_PremiumStatus:
+    value: 47
+  ServerBackendAttribute_Count:
+    value: 48
+

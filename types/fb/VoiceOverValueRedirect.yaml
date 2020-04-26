@@ -1,0 +1,33 @@
+name: VoiceOverValueRedirect
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new VoiceOverValueRedirect frostbite instance.
+  -
+    description: Creates a new VoiceOverValueRedirect frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to VoiceOverValueRedirect. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VoiceOverValueRedirect.
+
+properties:
+  source:
+    type: VoiceOverValue
+    nullable: true
+  target:
+    type: VoiceOverValue
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VoiceOverValueRedirect type.
+

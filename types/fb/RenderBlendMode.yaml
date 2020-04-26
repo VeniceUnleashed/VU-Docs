@@ -1,0 +1,27 @@
+name: RenderBlendMode
+type: enum
+
+values:
+  RenderBlendMode_Zero:
+    value: 0
+  RenderBlendMode_One:
+    value: 1
+  RenderBlendMode_SourceColor:
+    value: 2
+  RenderBlendMode_InvSourceColor:
+    value: 3
+  RenderBlendMode_SourceAlpha:
+    value: 4
+  RenderBlendMode_InvSourceAlpha:
+    value: 5
+  RenderBlendMode_DestColor:
+    value: 6
+  RenderBlendMode_InvDestColor:
+    value: 7
+  RenderBlendMode_DestAlpha:
+    value: 8
+  RenderBlendMode_InvDestAlpha:
+    value: 9
+  RenderBlendMode_SourceAlphaSaturate:
+    value: 10
+

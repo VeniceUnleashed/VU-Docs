@@ -1,0 +1,11 @@
+name: SoundGraphPluginConnectionType
+type: enum
+
+values:
+  SoundGraphPluginConnectionType_Unconnected:
+    value: 0
+  SoundGraphPluginConnectionType_Voice:
+    value: 1
+  SoundGraphPluginConnectionType_Bus:
+    value: 2
+

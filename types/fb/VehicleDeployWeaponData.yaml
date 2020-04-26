@@ -1,0 +1,54 @@
+name: VehicleDeployWeaponData
+type: class
+inherits: WeaponData
+
+constructors:
+  -
+    description: Creates a new VehicleDeployWeaponData frostbite instance.
+  -
+    description: Creates a new VehicleDeployWeaponData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type WeaponData to VehicleDeployWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: WeaponData
+        description: The instance to cast to VehicleDeployWeaponData.
+  -
+    description: Casts an instance of type ToolData to VehicleDeployWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ToolData
+        description: The instance to cast to VehicleDeployWeaponData.
+  -
+    description: Casts an instance of type DataContainer to VehicleDeployWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VehicleDeployWeaponData.
+
+properties:
+  deployAreaRadius:
+    type: float
+  previewObject:
+    type: ObjectBlueprint
+    nullable: true
+  deployAreaGroundRayLength:
+    type: float
+  deployAreaGroundFlatness:
+    type: float
+  usePreview:
+    type: bool
+  checkClearSky:
+    type: bool
+  canRemoteEnterVehicle:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VehicleDeployWeaponData type.
+

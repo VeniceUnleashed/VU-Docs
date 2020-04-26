@@ -1,0 +1,41 @@
+name: UIBarDataBinding
+type: class
+inherits: UIDataBinding
+
+constructors:
+  -
+    description: Creates a new UIBarDataBinding frostbite instance.
+  -
+    description: Creates a new UIBarDataBinding frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UIDataBinding to UIBarDataBinding. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIDataBinding
+        description: The instance to cast to UIBarDataBinding.
+  -
+    description: Casts an instance of type DataContainer to UIBarDataBinding. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UIBarDataBinding.
+
+properties:
+  visibility:
+    type: UIDataSourceInfo
+  value:
+    type: UIDataSourceInfo
+  color:
+    type: UIDataSourceInfo
+  refresh:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UIBarDataBinding type.
+

@@ -1,0 +1,54 @@
+name: ObjectBlueprint
+type: class
+inherits: Blueprint
+
+constructors:
+  -
+    description: Creates a new ObjectBlueprint frostbite instance.
+  -
+    description: Creates a new ObjectBlueprint frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Blueprint to ObjectBlueprint. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Blueprint
+        description: The instance to cast to ObjectBlueprint.
+  -
+    description: Casts an instance of type EntityBusData to ObjectBlueprint. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityBusData
+        description: The instance to cast to ObjectBlueprint.
+  -
+    description: Casts an instance of type DataBusData to ObjectBlueprint. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataBusData
+        description: The instance to cast to ObjectBlueprint.
+  -
+    description: Casts an instance of type Asset to ObjectBlueprint. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to ObjectBlueprint.
+  -
+    description: Casts an instance of type DataContainer to ObjectBlueprint. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ObjectBlueprint.
+
+properties:
+  object:
+    type: GameObjectData
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ObjectBlueprint type.
+

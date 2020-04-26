@@ -1,0 +1,11 @@
+name: TerrainBrushDetailOperation
+type: enum
+
+values:
+  Lerp:
+    value: 0
+  Add:
+    value: 1
+  Multiply:
+    value: 2
+

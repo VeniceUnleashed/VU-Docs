@@ -1,0 +1,72 @@
+name: AudioSystemAsset
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new AudioSystemAsset frostbite instance.
+  -
+    description: Creates a new AudioSystemAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to AudioSystemAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to AudioSystemAsset.
+  -
+    description: Casts an instance of type DataContainer to AudioSystemAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to AudioSystemAsset.
+
+properties:
+  masterPatch:
+    type: SoundMasterPatchAsset
+    nullable: true
+  defaultWave:
+    type: SoundWaveAsset
+    nullable: true
+  streamPools:
+    type: StreamPoolAsset
+    array: true
+  sampleRate:
+    type: int
+  soundSpeed:
+    type: float
+  dopplerFactor:
+    type: float
+  tests:
+    type: SoundTestAsset
+    nullable: true
+  mixerSystem:
+    type: MixerSystemAsset
+    nullable: true
+  languages:
+    type: AudioLanguage
+    array: true
+  languageSettings:
+    type: AudioLanguageSetting
+    array: true
+  defaultLanguage:
+    type: AudioLanguage
+    nullable: true
+  scopes:
+    type: SoundScopeData
+    array: true
+  scopeStrategies:
+    type: SoundScopeStrategyData
+    array: true
+  scopeSetups:
+    type: SoundScopeSetupData
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the AudioSystemAsset type.
+

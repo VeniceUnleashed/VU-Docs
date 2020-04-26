@@ -1,0 +1,11 @@
+name: WeaponClassification
+type: enum
+
+values:
+  WCNone:
+    value: 0
+  WCPrimary:
+    value: 1
+  WCSecondary:
+    value: 2
+

@@ -1,0 +1,51 @@
+name: EnlightenState
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new EnlightenState frostbite instance.
+  -
+    description: Creates a new EnlightenState frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to EnlightenState. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to EnlightenState.
+
+properties:
+  skyBoxGroundColor:
+    type: Vec3
+  skyBoxSunLightColor:
+    type: Vec3
+  skyBoxBackLightColor:
+    type: Vec3
+  skyBoxSkyColor:
+    type: Vec3
+  sunScale:
+    type: float
+  outputScale:
+    type: float
+  bounceScale:
+    type: float
+  skyBoxSunLightColorSize:
+    type: float
+  skyBoxBackLightRotationY:
+    type: float
+  skyBoxBackLightColorSize:
+    type: float
+  skyBoxBackLightRotationX:
+    type: float
+  skyBoxEnable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the EnlightenState type.
+

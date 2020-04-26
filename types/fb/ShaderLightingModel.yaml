@@ -1,0 +1,15 @@
+name: ShaderLightingModel
+type: enum
+
+values:
+  ShaderLightingModel_Standard:
+    value: 0
+  ShaderLightingModel_Metallic:
+    value: 1
+  ShaderLightingModel_Skin:
+    value: 2
+  ShaderLightingModel_DynamicEnvmap:
+    value: 3
+  ShaderLightingModel_Translucent:
+    value: 4
+

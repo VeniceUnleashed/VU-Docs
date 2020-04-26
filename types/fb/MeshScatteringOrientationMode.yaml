@@ -1,0 +1,11 @@
+name: MeshScatteringOrientationMode
+type: enum
+
+values:
+  MeshScatteringOrientationMode_Horizontal:
+    value: 0
+  MeshScatteringOrientationMode_LeanToTerrain:
+    value: 1
+  MeshScatteringOrientationMode_SkewToTerrain:
+    value: 2
+

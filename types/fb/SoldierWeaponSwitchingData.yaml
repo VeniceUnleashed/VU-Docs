@@ -1,0 +1,41 @@
+name: SoldierWeaponSwitchingData
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new SoldierWeaponSwitchingData frostbite instance.
+  -
+    description: Creates a new SoldierWeaponSwitchingData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to SoldierWeaponSwitchingData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to SoldierWeaponSwitchingData.
+  -
+    description: Casts an instance of type DataContainer to SoldierWeaponSwitchingData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SoldierWeaponSwitchingData.
+
+properties:
+  switchMap:
+    type: WeaponSwitchingMapData
+    array: true
+  directSwitchMap:
+    type: DirectWeaponSwitchingMapData
+    array: true
+  switchToGadgetCooldownTime:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SoldierWeaponSwitchingData type.
+

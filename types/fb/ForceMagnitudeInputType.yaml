@@ -1,0 +1,13 @@
+name: ForceMagnitudeInputType
+type: enum
+
+values:
+  FMITYaw:
+    value: 0
+  FMITPitch:
+    value: 1
+  FMITRoll:
+    value: 2
+  FMITThrottle:
+    value: 3
+

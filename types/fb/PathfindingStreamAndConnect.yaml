@@ -1,0 +1,9 @@
+name: PathfindingStreamAndConnect
+type: enum
+
+values:
+  PathfindingStreamAndConnect_Grid:
+    value: 0
+  PathfindingStreamAndConnect_Manual:
+    value: 1
+

@@ -1,0 +1,11 @@
+name: AimOrigin
+type: enum
+
+values:
+  AoDefault:
+    value: 0
+  AoCamera:
+    value: 1
+  AoWeapon:
+    value: 2
+

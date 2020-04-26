@@ -1,0 +1,51 @@
+name: SocketObjectData
+type: class
+inherits: SocketObjectDataBase
+
+constructors:
+  -
+    description: Creates a new SocketObjectData frostbite instance.
+  -
+    description: Creates a new SocketObjectData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SocketObjectDataBase to SocketObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SocketObjectDataBase
+        description: The instance to cast to SocketObjectData.
+  -
+    description: Casts an instance of type DataContainer to SocketObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SocketObjectData.
+
+properties:
+  asset1pGuid:
+    type: Guid
+  variation1pGuids:
+    type: Guid
+    array: true
+  asset1pZoomGuid:
+    type: Guid
+  variation1pZoomGuids:
+    type: Guid
+    array: true
+  asset3pGuid:
+    type: Guid
+  variation3pGuids:
+    type: Guid
+    array: true
+  customizedMaterials:
+    type: CustomizedMaterialData
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SocketObjectData type.
+

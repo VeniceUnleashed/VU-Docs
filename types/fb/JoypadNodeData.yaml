@@ -1,0 +1,45 @@
+name: JoypadNodeData
+type: class
+inherits: AudioGraphNodeData
+
+constructors:
+  -
+    description: Creates a new JoypadNodeData frostbite instance.
+  -
+    description: Creates a new JoypadNodeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphNodeData to JoypadNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphNodeData
+        description: The instance to cast to JoypadNodeData.
+  -
+    description: Casts an instance of type DataContainer to JoypadNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to JoypadNodeData.
+
+properties:
+  leftAnalogX:
+    type: AudioGraphNodePort
+  leftAnalogY:
+    type: AudioGraphNodePort
+  rightAnalogX:
+    type: AudioGraphNodePort
+  rightAnalogY:
+    type: AudioGraphNodePort
+  aButton:
+    type: AudioGraphNodePort
+  bButton:
+    type: AudioGraphNodePort
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the JoypadNodeData type.
+

@@ -1,0 +1,19 @@
+name: GameOverResult
+type: enum
+
+values:
+  GameOver_MajorDefeat:
+    value: 1
+  GameOver_Defeat:
+    value: 2
+  GameOver_MinorDefeat:
+    value: 3
+  GameOver_MajorVictory:
+    value: 4
+  GameOver_Victory:
+    value: 5
+  GameOver_MinorVictory:
+    value: 6
+  GameOver_Draw:
+    value: 7
+

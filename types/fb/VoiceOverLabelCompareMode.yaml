@@ -1,0 +1,11 @@
+name: VoiceOverLabelCompareMode
+type: enum
+
+values:
+  VoiceOverLabelCompareMode_Any:
+    value: 0
+  VoiceOverLabelCompareMode_All:
+    value: 1
+  VoiceOverLabelCompareMode_One:
+    value: 2
+

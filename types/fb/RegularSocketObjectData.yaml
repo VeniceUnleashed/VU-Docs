@@ -1,0 +1,44 @@
+name: RegularSocketObjectData
+type: class
+inherits: SocketObjectData
+
+constructors:
+  -
+    description: Creates a new RegularSocketObjectData frostbite instance.
+  -
+    description: Creates a new RegularSocketObjectData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SocketObjectData to RegularSocketObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SocketObjectData
+        description: The instance to cast to RegularSocketObjectData.
+  -
+    description: Casts an instance of type SocketObjectDataBase to RegularSocketObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SocketObjectDataBase
+        description: The instance to cast to RegularSocketObjectData.
+  -
+    description: Casts an instance of type DataContainer to RegularSocketObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to RegularSocketObjectData.
+
+properties:
+  transform:
+    type: LinearTransform
+  mesh3pTransforms:
+    type: LinearTransform
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the RegularSocketObjectData type.
+

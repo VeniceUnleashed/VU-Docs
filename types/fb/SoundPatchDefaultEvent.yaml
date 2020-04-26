@@ -1,0 +1,13 @@
+name: SoundPatchDefaultEvent
+type: enum
+
+values:
+  SoundPatchDefaultEvent_Start:
+    value: 0
+  SoundPatchDefaultEvent_Stop:
+    value: 1
+  SoundPatchDefaultEvent_EnterScope:
+    value: 2
+  SoundPatchDefaultEvent_ForceInit:
+    value: 3
+

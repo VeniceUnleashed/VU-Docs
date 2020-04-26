@@ -1,0 +1,45 @@
+name: GroupHavokAsset
+type: class
+inherits: HavokAsset
+
+constructors:
+  -
+    description: Creates a new GroupHavokAsset frostbite instance.
+  -
+    description: Creates a new GroupHavokAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type HavokAsset to GroupHavokAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: HavokAsset
+        description: The instance to cast to GroupHavokAsset.
+  -
+    description: Casts an instance of type Asset to GroupHavokAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to GroupHavokAsset.
+  -
+    description: Casts an instance of type DataContainer to GroupHavokAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to GroupHavokAsset.
+
+properties:
+  aabb:
+    type: AssetAabbs
+    array: true
+  externalAssetScaleIndex:
+    type: int
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the GroupHavokAsset type.
+

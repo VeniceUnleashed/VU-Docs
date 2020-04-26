@@ -1,0 +1,11 @@
+name: SoundTestParamBehavior
+type: enum
+
+values:
+  SoundTestParamBehavior_Constant:
+    value: 0
+  SoundTestParamBehavior_LinearRamp:
+    value: 1
+  SoundTestParamBehavior_Random:
+    value: 2
+

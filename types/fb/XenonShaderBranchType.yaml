@@ -1,0 +1,13 @@
+name: XenonShaderBranchType
+type: enum
+
+values:
+  XsbtDefault:
+    value: 0
+  XsbtPredicate:
+    value: 1
+  XsbtPredicateBlock:
+    value: 2
+  XsbtBranch:
+    value: 3
+

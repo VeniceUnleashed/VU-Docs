@@ -1,0 +1,9 @@
+name: DebugMenuItemType
+type: enum
+
+values:
+  DmitItem:
+    value: 0
+  DmitToggle:
+    value: 1
+

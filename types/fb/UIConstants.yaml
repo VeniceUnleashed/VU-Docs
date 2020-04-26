@@ -1,0 +1,7 @@
+name: UIConstants
+type: enum
+
+values:
+  UIConstants_MaxCaptureAreas:
+    value: 16
+

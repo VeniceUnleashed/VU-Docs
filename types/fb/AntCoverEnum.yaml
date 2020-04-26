@@ -1,0 +1,19 @@
+name: AntCoverEnum
+type: enum
+
+values:
+  AntCoverEnum_RightCover:
+    value: 0
+  AntCoverEnum_LeftCover:
+    value: 1
+  AntCoverEnum_MiddleCover:
+    value: 2
+  AntCoverEnum_MediumLeftCover:
+    value: 3
+  AntCoverEnum_MediumRightCover:
+    value: 4
+  AntCoverEnum_Prone:
+    value: 5
+  AntCoverEnum_Count:
+    value: 6
+

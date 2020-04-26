@@ -1,0 +1,51 @@
+name: IntHubEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new IntHubEntityData frostbite instance.
+  -
+    description: Creates a new IntHubEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to IntHubEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to IntHubEntityData.
+  -
+    description: Casts an instance of type GameObjectData to IntHubEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to IntHubEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to IntHubEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to IntHubEntityData.
+  -
+    description: Casts an instance of type DataContainer to IntHubEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to IntHubEntityData.
+
+properties:
+  realm:
+    type: Realm
+  inputCount:
+    type: int
+  inputSelect:
+    type: int
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the IntHubEntityData type.
+

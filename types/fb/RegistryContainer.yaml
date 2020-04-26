@@ -1,0 +1,39 @@
+name: RegistryContainer
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new RegistryContainer frostbite instance.
+  -
+    description: Creates a new RegistryContainer frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to RegistryContainer. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to RegistryContainer.
+
+properties:
+  entityRegistry:
+    type: DataContainer
+    array: true
+  assetRegistry:
+    type: DataContainer
+    array: true
+  blueprintRegistry:
+    type: DataContainer
+    array: true
+  referenceObjectRegistry:
+    type: DataContainer
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the RegistryContainer type.
+

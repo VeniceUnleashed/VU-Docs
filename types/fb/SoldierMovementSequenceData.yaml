@@ -1,0 +1,42 @@
+name: SoldierMovementSequenceData
+type: class
+inherits: MovementActionData
+
+constructors:
+  -
+    description: Creates a new SoldierMovementSequenceData frostbite instance.
+  -
+    description: Creates a new SoldierMovementSequenceData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type MovementActionData to SoldierMovementSequenceData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MovementActionData
+        description: The instance to cast to SoldierMovementSequenceData.
+  -
+    description: Casts an instance of type DataContainer to SoldierMovementSequenceData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SoldierMovementSequenceData.
+
+properties:
+  recordedInput:
+    type: RecordedInputData
+    nullable: true
+  inputRecordingIndex:
+    type: int
+  ignoreRecordingIndexFilter:
+    type: bool
+  reportWhenFinished:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SoldierMovementSequenceData type.
+

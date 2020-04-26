@@ -1,0 +1,192 @@
+name: WheelConfigData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new WheelConfigData frostbite instance.
+  -
+    description: Creates a new WheelConfigData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to WheelConfigData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to WheelConfigData.
+
+properties:
+  offset:
+    type: Vec3
+  inertia:
+    type: Vec3
+  rotationBody:
+    type: RotationBodyData
+    nullable: true
+  sphereCollision:
+    type: SphereCollisionData
+  spring:
+    type: SpringData
+  mass:
+    type: float
+  radius:
+    type: float
+  width:
+    type: float
+  rollingResistanceInternalBaseFactor:
+    type: float
+  rollingResistanceBaseFactor:
+    type: float
+  rollingResistanceVelocityFactor:
+    type: float
+  engineBrakeVelocityFactor:
+    type: float
+  engineBrakeMinFactor:
+    type: float
+  engineBrakeMaxFactor:
+    type: float
+  transmissionLoss:
+    type: Vec2
+    array: true
+  diffGearRatio:
+    type: float
+  lowSpeedSteeringSensitivity:
+    type: float
+  midSpeedSteeringSensitivity:
+    type: float
+  highSpeedSteeringSensitivity:
+    type: float
+  sensitivityRangeScale:
+    type: float
+  lowSpeedSteeringSensitivityLimit:
+    type: float
+  midSpeedSteeringSensitivityLimit:
+    type: float
+  highSpeedSteeringSensitivityLimit:
+    type: float
+  trackedTurnSpeedLimit:
+    type: float
+  trackedForwardSpeedLimit:
+    type: float
+  steerInertia:
+    type: Curve2D
+    nullable: true
+  steeringSensitivity:
+    type: SensitivityAtVelocity
+    array: true
+  slopeGripMinAngle:
+    type: float
+  slopeGripMaxAngle:
+    type: float
+  slopeGripExponent:
+    type: int
+  offGroundGravityModifier:
+    type: float
+  sideSlipAngleMaxSlipCondition:
+    type: float
+  angularVelocityMinSlipCondition:
+    type: float
+  wheelVelocityXMinSlipCondition:
+    type: float
+  wheelSlipRatioMaxSlipCondition:
+    type: float
+  longitudinalFrictionForceMaxFactor:
+    type: float
+  lateralFrictionForceMaxFactor:
+    type: float
+  longitudeFrictionScale:
+    type: FrictionScaleAtVelocity
+    array: true
+  lattitudeFrictionScale:
+    type: FrictionScaleAtVelocity
+    array: true
+  wheelFrictionLattitudeBrakeScale:
+    type: float
+  maxSlipRatio:
+    type: float
+  resistance:
+    type: float
+  fxTorqueRadiusMultiplier:
+    type: float
+  frictionMomentVelocityMin:
+    type: float
+  frictionMomentVelocityMax:
+    type: float
+  frictionMomentMultiplier:
+    type: float
+  frictionMomentMaxFactor:
+    type: float
+  brakeFactor:
+    type: float
+  brakeForce:
+    type: float
+  handBrakeFactor:
+    type: float
+  handBrakeForce:
+    type: float
+  lateralPosK:
+    type: float
+  lateralNegK:
+    type: float
+  longitudinalPosK:
+    type: float
+  longitudinalNegK:
+    type: float
+  alignMomScale:
+    type: float
+  wheelBaseLateral:
+    type: float
+  wheelBaseLongitudinal:
+    type: float
+  drivingType:
+    type: int
+  steeringType:
+    type: int
+  frictionMethod:
+    type: int
+  ackermanDeviceType:
+    type: int
+  collisionYawDampeningDuration:
+    type: float
+  collisionYawDampening:
+    type: float
+  constantSpringForceFrictionScale:
+    type: float
+  rotationDirectionIndex:
+    type: int
+  steeringAngleIndex:
+    type: int
+  pacejkaConfigIndex:
+    type: int
+  engineIndex:
+    type: int
+  collisionMaterialPair:
+    type: MaterialContainerPair
+    nullable: true
+  alwaysGrip:
+    type: bool
+  useRollingResistanceBaseFactor:
+    type: bool
+  useEngineBrake:
+    type: bool
+  isAllowedToSpin:
+    type: bool
+  hasSteeringInverted:
+    type: bool
+  useFrictionMoment:
+    type: bool
+  useLowSpeedAutoBrake:
+    type: bool
+  adjustWheelRotation:
+    type: bool
+  useRollingResistanceVelocityFactor:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the WheelConfigData type.
+

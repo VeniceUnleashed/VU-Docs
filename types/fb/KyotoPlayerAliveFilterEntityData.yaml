@@ -1,0 +1,43 @@
+name: KyotoPlayerAliveFilterEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new KyotoPlayerAliveFilterEntityData frostbite instance.
+  -
+    description: Creates a new KyotoPlayerAliveFilterEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to KyotoPlayerAliveFilterEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to KyotoPlayerAliveFilterEntityData.
+  -
+    description: Casts an instance of type GameObjectData to KyotoPlayerAliveFilterEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to KyotoPlayerAliveFilterEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to KyotoPlayerAliveFilterEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to KyotoPlayerAliveFilterEntityData.
+  -
+    description: Casts an instance of type DataContainer to KyotoPlayerAliveFilterEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to KyotoPlayerAliveFilterEntityData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the KyotoPlayerAliveFilterEntityData type.
+

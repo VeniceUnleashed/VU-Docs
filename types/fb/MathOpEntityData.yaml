@@ -1,0 +1,50 @@
+name: MathOpEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new MathOpEntityData frostbite instance.
+  -
+    description: Creates a new MathOpEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to MathOpEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to MathOpEntityData.
+  -
+    description: Casts an instance of type GameObjectData to MathOpEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to MathOpEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to MathOpEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to MathOpEntityData.
+  -
+    description: Casts an instance of type DataContainer to MathOpEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MathOpEntityData.
+
+properties:
+  realm:
+    type: Realm
+  operators:
+    type: MathOp
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MathOpEntityData type.
+

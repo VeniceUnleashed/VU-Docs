@@ -1,0 +1,66 @@
+name: VoiceOverSystemAsset
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new VoiceOverSystemAsset frostbite instance.
+  -
+    description: Creates a new VoiceOverSystemAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to VoiceOverSystemAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to VoiceOverSystemAsset.
+  -
+    description: Casts an instance of type DataContainer to VoiceOverSystemAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VoiceOverSystemAsset.
+
+properties:
+  intervals:
+    type: VoiceOverInterval
+    array: true
+  labels:
+    type: VoiceOverLabel
+    array: true
+  types:
+    type: VoiceOverObject
+    array: true
+  objects:
+    type: VoiceOverObject
+    array: true
+  constants:
+    type: VoiceOverGlobalConstantValue
+    array: true
+  masterLanguage:
+    type: AudioLanguage
+    nullable: true
+  defaultPronunciation:
+    type: VoiceOverPronunciation
+    nullable: true
+  pronunciations:
+    type: VoiceOverPronunciation
+    array: true
+  queueGroups:
+    type: VoiceOverConversationQueueGroup
+    array: true
+  defaultPositionedQueueGroup:
+    type: VoiceOverConversationQueueGroup
+    nullable: true
+  defaultUnpositionedQueueGroup:
+    type: VoiceOverConversationQueueGroup
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VoiceOverSystemAsset type.
+

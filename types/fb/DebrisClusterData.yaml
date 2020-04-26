@@ -1,0 +1,111 @@
+name: DebrisClusterData
+type: class
+inherits: GameEntityData
+
+constructors:
+  -
+    description: Creates a new DebrisClusterData frostbite instance.
+  -
+    description: Creates a new DebrisClusterData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameEntityData to DebrisClusterData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to DebrisClusterData.
+  -
+    description: Casts an instance of type SpatialEntityData to DebrisClusterData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to DebrisClusterData.
+  -
+    description: Casts an instance of type EntityData to DebrisClusterData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to DebrisClusterData.
+  -
+    description: Casts an instance of type GameObjectData to DebrisClusterData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to DebrisClusterData.
+  -
+    description: Casts an instance of type GameDataContainer to DebrisClusterData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to DebrisClusterData.
+  -
+    description: Casts an instance of type DataContainer to DebrisClusterData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to DebrisClusterData.
+
+properties:
+  pushVelocityMul:
+    type: Vec3
+  pushVelocityRndMul:
+    type: Vec3
+  initRotationRndMul:
+    type: Vec3
+  clusterLifetime:
+    type: float
+  mesh:
+    type: MeshAsset
+    nullable: true
+  compositePartCount:
+    type: int
+  maxActivePartsCount:
+    type: int
+  partHierarchy:
+    type: DebrisClusterPartInfoData
+    array: true
+  activationPushForceMul:
+    type: float
+  projectileForceTransferMul:
+    type: float
+  physicsData:
+    type: PhysicsEntityData
+    nullable: true
+  explosion:
+    type: GameEntityData
+    nullable: true
+  activationEffect:
+    type: EffectBlueprint
+    nullable: true
+  effect:
+    type: EffectBlueprint
+    nullable: true
+  onPartCollisionSpeedThreshold:
+    type: float
+  partialDestruction:
+    type: bool
+  clientSideOnly:
+    type: bool
+  onPartCollisionEnable:
+    type: bool
+  noCollision:
+    type: bool
+  killPartsOnCollision:
+    type: bool
+  deactivatePartsOnSleep:
+    type: bool
+  activateOnSpawn:
+    type: bool
+  inEffectWorldOnly:
+    type: bool
+  spawnExplosionOnFirstImpactOnly:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the DebrisClusterData type.
+

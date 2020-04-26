@@ -1,0 +1,11 @@
+name: EnlightenType
+type: enum
+
+values:
+  EnlightenType_Dynamic:
+    value: 0
+  EnlightenType_LightProbe:
+    value: 1
+  EnlightenType_Static:
+    value: 2
+

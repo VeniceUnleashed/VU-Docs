@@ -1,0 +1,64 @@
+name: MovieEntityData
+type: class
+inherits: GameEntityData
+
+constructors:
+  -
+    description: Creates a new MovieEntityData frostbite instance.
+  -
+    description: Creates a new MovieEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameEntityData to MovieEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to MovieEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to MovieEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to MovieEntityData.
+  -
+    description: Casts an instance of type EntityData to MovieEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to MovieEntityData.
+  -
+    description: Casts an instance of type GameObjectData to MovieEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to MovieEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to MovieEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to MovieEntityData.
+  -
+    description: Casts an instance of type DataContainer to MovieEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MovieEntityData.
+
+properties:
+  movie:
+    type: MovieTextureAsset
+    nullable: true
+  externalTime:
+    type: float
+  isNormalMap:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MovieEntityData type.
+

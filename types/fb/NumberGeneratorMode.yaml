@@ -1,0 +1,7 @@
+name: NumberGeneratorMode
+type: enum
+
+values:
+  NumberGeneratorMode_RandomUniform:
+    value: 0
+

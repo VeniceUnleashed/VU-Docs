@@ -1,0 +1,11 @@
+name: ModelAnimationUpdateOrder
+type: enum
+
+values:
+  ModelAnimationUpdateOrder_PostAnimation:
+    value: 0
+  ModelAnimationUpdateOrder_PreInput:
+    value: 1
+  ModelAnimationUpdateOrder_PreFrame:
+    value: 1
+

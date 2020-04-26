@@ -1,0 +1,9 @@
+name: FrequencyShiftSsbFilter
+type: enum
+
+values:
+  FrequencyShiftSsbFilter_None:
+    value: 0
+  FrequencyShiftSsbFilter_Fir64:
+    value: 1
+

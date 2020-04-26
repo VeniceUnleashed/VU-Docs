@@ -1,0 +1,71 @@
+name: LocalLightEntityData
+type: class
+inherits: SpatialEntityData
+
+constructors:
+  -
+    description: Creates a new LocalLightEntityData frostbite instance.
+  -
+    description: Creates a new LocalLightEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SpatialEntityData to LocalLightEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to LocalLightEntityData.
+  -
+    description: Casts an instance of type EntityData to LocalLightEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to LocalLightEntityData.
+  -
+    description: Casts an instance of type GameObjectData to LocalLightEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to LocalLightEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to LocalLightEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to LocalLightEntityData.
+  -
+    description: Casts an instance of type DataContainer to LocalLightEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to LocalLightEntityData.
+
+properties:
+  color:
+    type: Vec3
+  particleColorScale:
+    type: Vec3
+  enlightenColorScale:
+    type: Vec3
+  radius:
+    type: float
+  intensity:
+    type: float
+  attenuationOffset:
+    type: float
+  enlightenColorMode:
+    type: EnlightenColorMode
+  enlightenEnable:
+    type: bool
+  visible:
+    type: bool
+  specularEnable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the LocalLightEntityData type.
+

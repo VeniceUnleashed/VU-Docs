@@ -1,0 +1,15 @@
+name: OnlineEnvironment
+type: enum
+
+values:
+  OnlineEnvironment_Development:
+    value: 0
+  OnlineEnvironment_Test:
+    value: 1
+  OnlineEnvironment_Certification:
+    value: 2
+  OnlineEnvironment_Production:
+    value: 3
+  OnlineEnvironment_Count:
+    value: 4
+

@@ -1,0 +1,36 @@
+name: GameModeSettings
+type: class
+inherits: SystemSettings
+
+constructors:
+  -
+    description: Creates a new GameModeSettings frostbite instance.
+  -
+    description: Creates a new GameModeSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SystemSettings to GameModeSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SystemSettings
+        description: The instance to cast to GameModeSettings.
+  -
+    description: Casts an instance of type DataContainer to GameModeSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to GameModeSettings.
+
+properties:
+  information:
+    type: GameModeInformation
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the GameModeSettings type.
+

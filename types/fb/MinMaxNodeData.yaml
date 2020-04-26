@@ -1,0 +1,41 @@
+name: MinMaxNodeData
+type: class
+inherits: AudioGraphNodeData
+
+constructors:
+  -
+    description: Creates a new MinMaxNodeData frostbite instance.
+  -
+    description: Creates a new MinMaxNodeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphNodeData to MinMaxNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphNodeData
+        description: The instance to cast to MinMaxNodeData.
+  -
+    description: Casts an instance of type DataContainer to MinMaxNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MinMaxNodeData.
+
+properties:
+  x:
+    type: AudioGraphNodePort
+  y:
+    type: AudioGraphNodePort
+  max:
+    type: AudioGraphNodePort
+  min:
+    type: AudioGraphNodePort
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MinMaxNodeData type.
+

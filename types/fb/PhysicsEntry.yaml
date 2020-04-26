@@ -1,0 +1,42 @@
+name: PhysicsEntry
+type: class
+inherits: AudioGraphNodePortGroup
+
+constructors:
+  -
+    description: Creates a new PhysicsEntry frostbite instance.
+  -
+    description: Creates a new PhysicsEntry frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphNodePortGroup to PhysicsEntry. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphNodePortGroup
+        description: The instance to cast to PhysicsEntry.
+  -
+    description: Casts an instance of type DataContainer to PhysicsEntry. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PhysicsEntry.
+
+properties:
+  distance:
+    type: AudioGraphNodePort
+  azimuth:
+    type: AudioGraphNodePort
+  elevationAngle:
+    type: AudioGraphNodePort
+  output:
+    type: OutputNodeData
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PhysicsEntry type.
+

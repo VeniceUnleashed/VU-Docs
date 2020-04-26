@@ -1,0 +1,11 @@
+name: BreakableControllerComponentNetworkIdMultiplier
+type: enum
+
+values:
+  BreakableControllerComponentNetworkIdMultiplier_HidePartObjects:
+    value: 0
+  BreakableControllerComponentNetworkIdMultiplier_DisablePart:
+    value: 1
+  BreakableControllerComponentNetworkIdMultiplier_PartCount:
+    value: 2
+

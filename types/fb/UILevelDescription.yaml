@@ -1,0 +1,39 @@
+name: UILevelDescription
+type: class
+inherits: UIItemDescription
+
+constructors:
+  -
+    description: Creates a new UILevelDescription frostbite instance.
+  -
+    description: Creates a new UILevelDescription frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UIItemDescription to UILevelDescription. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIItemDescription
+        description: The instance to cast to UILevelDescription.
+  -
+    description: Casts an instance of type DataContainer to UILevelDescription. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UILevelDescription.
+
+properties:
+  levelName:
+    type: string
+  texturePath:
+    type: string
+  thumbnailTexturePath:
+    type: string
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UILevelDescription type.
+

@@ -1,0 +1,11 @@
+name: MatchmakingVirtualizationMode
+type: enum
+
+values:
+  MatchmakingVirtualizationMode_Virtualized:
+    value: 0
+  MatchmakingVirtualizationMode_Standard:
+    value: 1
+  MatchmakingVirtualizationMode_Any:
+    value: 2
+

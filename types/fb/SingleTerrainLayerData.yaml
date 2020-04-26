@@ -1,0 +1,31 @@
+name: SingleTerrainLayerData
+type: class
+inherits: TerrainLayerData
+
+constructors:
+  -
+    description: Creates a new SingleTerrainLayerData frostbite instance.
+  -
+    description: Creates a new SingleTerrainLayerData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type TerrainLayerData to SingleTerrainLayerData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: TerrainLayerData
+        description: The instance to cast to SingleTerrainLayerData.
+  -
+    description: Casts an instance of type DataContainer to SingleTerrainLayerData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SingleTerrainLayerData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SingleTerrainLayerData type.
+

@@ -1,0 +1,35 @@
+name: VoiceOverNamedValue
+type: class
+inherits: VoiceOverValue
+
+constructors:
+  -
+    description: Creates a new VoiceOverNamedValue frostbite instance.
+  -
+    description: Creates a new VoiceOverNamedValue frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type VoiceOverValue to VoiceOverNamedValue. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: VoiceOverValue
+        description: The instance to cast to VoiceOverNamedValue.
+  -
+    description: Casts an instance of type DataContainer to VoiceOverNamedValue. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VoiceOverNamedValue.
+
+properties:
+  name:
+    type: string
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VoiceOverNamedValue type.
+

@@ -1,0 +1,139 @@
+name: VegetationTreeEntityData
+type: class
+inherits: VegetationBaseEntityData
+
+constructors:
+  -
+    description: Creates a new VegetationTreeEntityData frostbite instance.
+  -
+    description: Creates a new VegetationTreeEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type VegetationBaseEntityData to VegetationTreeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: VegetationBaseEntityData
+        description: The instance to cast to VegetationTreeEntityData.
+  -
+    description: Casts an instance of type GameEntityData to VegetationTreeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to VegetationTreeEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to VegetationTreeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to VegetationTreeEntityData.
+  -
+    description: Casts an instance of type EntityData to VegetationTreeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to VegetationTreeEntityData.
+  -
+    description: Casts an instance of type GameObjectData to VegetationTreeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to VegetationTreeEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to VegetationTreeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to VegetationTreeEntityData.
+  -
+    description: Casts an instance of type DataContainer to VegetationTreeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VegetationTreeEntityData.
+
+properties:
+  groundImpactEffect:
+    type: EffectBlueprint
+    nullable: true
+  stemRipEffect:
+    type: EffectBlueprint
+    nullable: true
+  stemPhysicsWidth:
+    type: float
+  coliPlaneDepth:
+    type: float
+  stemHitpoints:
+    type: float
+  branchHitpoints:
+    type: float
+  branchL2Hitpoints:
+    type: float
+  stemStiffness:
+    type: float
+  stemStiffnessSpread:
+    type: float
+  branchStiffness:
+    type: float
+  branchStiffnessL2:
+    type: float
+  stemBoneCount:
+    type: int
+  windStem:
+    type: float
+  windBranch:
+    type: float
+  windBranchL2:
+    type: float
+  treeFallEffect:
+    type: EffectBlueprint
+    nullable: true
+  breakableJointThreshold:
+    type: float
+  fallDirectionEnd:
+    type: float
+  localWindEffect:
+    type: EffectBlueprint
+    nullable: true
+  impactThreshold:
+    type: float
+  collisionImpactMultiplier:
+    type: float
+  fallDirectionStart:
+    type: float
+  splashDistantEffect:
+    type: EffectBlueprint
+    nullable: true
+  bulletImpactEffect:
+    type: EffectBlueprint
+    nullable: true
+  partsTimeToLive:
+    type: float
+  shadowLODOffset:
+    type: int
+  splashNearEffect:
+    type: EffectBlueprint
+    nullable: true
+  collisionEffect:
+    type: EffectBlueprint
+    nullable: true
+  forceFullSim:
+    type: bool
+  useImpactThreshold:
+    type: bool
+  usePhysicsShapes:
+    type: bool
+  constraintStemB1:
+    type: bool
+  constraintStemB2:
+    type: bool
+  clientSideOnly:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VegetationTreeEntityData type.
+

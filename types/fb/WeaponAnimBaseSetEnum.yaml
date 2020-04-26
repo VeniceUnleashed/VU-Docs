@@ -1,0 +1,25 @@
+name: WeaponAnimBaseSetEnum
+type: enum
+
+values:
+  wabsRif:
+    value: 0
+  wabsPstl:
+    value: 1
+  wabsHgr:
+    value: 2
+  wabsAT:
+    value: 3
+  wabsShg:
+    value: 4
+  wabsLMG:
+    value: 5
+  wabsBag:
+    value: 6
+  wabsSnp:
+    value: 7
+  wabsCount:
+    value: 8
+  wabsNone:
+    value: 9
+

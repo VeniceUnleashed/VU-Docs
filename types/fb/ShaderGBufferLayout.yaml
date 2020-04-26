@@ -1,0 +1,9 @@
+name: ShaderGBufferLayout
+type: enum
+
+values:
+  ShaderGBufferLayout_Default:
+    value: 0
+  ShaderGBufferLayout_Test:
+    value: 1
+

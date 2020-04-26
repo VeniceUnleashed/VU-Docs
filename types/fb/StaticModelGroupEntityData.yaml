@@ -1,0 +1,70 @@
+name: StaticModelGroupEntityData
+type: class
+inherits: GamePhysicsEntityData
+
+constructors:
+  -
+    description: Creates a new StaticModelGroupEntityData frostbite instance.
+  -
+    description: Creates a new StaticModelGroupEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GamePhysicsEntityData to StaticModelGroupEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GamePhysicsEntityData
+        description: The instance to cast to StaticModelGroupEntityData.
+  -
+    description: Casts an instance of type GameEntityData to StaticModelGroupEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to StaticModelGroupEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to StaticModelGroupEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to StaticModelGroupEntityData.
+  -
+    description: Casts an instance of type EntityData to StaticModelGroupEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to StaticModelGroupEntityData.
+  -
+    description: Casts an instance of type GameObjectData to StaticModelGroupEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to StaticModelGroupEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to StaticModelGroupEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to StaticModelGroupEntityData.
+  -
+    description: Casts an instance of type DataContainer to StaticModelGroupEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to StaticModelGroupEntityData.
+
+properties:
+  memberDatas:
+    type: StaticModelGroupMemberData
+    array: true
+  hackToSolveRealTimeTweakingIssue:
+    type: Guid
+  networkIdCount:
+    type: int
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the StaticModelGroupEntityData type.
+

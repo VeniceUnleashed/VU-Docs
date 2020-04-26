@@ -1,0 +1,43 @@
+name: StatsCategoryLevelData
+type: class
+inherits: StatsCategoryGuidData
+
+constructors:
+  -
+    description: Creates a new StatsCategoryLevelData frostbite instance.
+  -
+    description: Creates a new StatsCategoryLevelData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type StatsCategoryGuidData to StatsCategoryLevelData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: StatsCategoryGuidData
+        description: The instance to cast to StatsCategoryLevelData.
+  -
+    description: Casts an instance of type StatsCategoryBaseData to StatsCategoryLevelData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: StatsCategoryBaseData
+        description: The instance to cast to StatsCategoryLevelData.
+  -
+    description: Casts an instance of type TreeNodeBase to StatsCategoryLevelData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: TreeNodeBase
+        description: The instance to cast to StatsCategoryLevelData.
+  -
+    description: Casts an instance of type DataContainer to StatsCategoryLevelData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to StatsCategoryLevelData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the StatsCategoryLevelData type.
+

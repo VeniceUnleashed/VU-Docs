@@ -1,0 +1,13 @@
+name: HudTextReceiver
+type: enum
+
+values:
+  HudTextReceiver_Team:
+    value: 0
+  HudTextReceiver_Squad:
+    value: 1
+  HudTextReceiver_All:
+    value: 2
+  HudTextReceiver_Count:
+    value: 3
+

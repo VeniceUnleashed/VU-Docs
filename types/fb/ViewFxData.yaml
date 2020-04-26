@@ -1,0 +1,37 @@
+name: ViewFxData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new ViewFxData frostbite instance.
+  -
+    description: Creates a new ViewFxData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to ViewFxData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ViewFxData.
+
+properties:
+  poissonRadialBlur:
+    type: PoissonRadialBlurData
+  colorTint:
+    type: ColorTintData
+  blurAdd:
+    type: float
+  colorTintEnable:
+    type: bool
+  poissonRadialBlurEnable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ViewFxData type.
+

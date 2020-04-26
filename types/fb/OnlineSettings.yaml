@@ -1,0 +1,66 @@
+name: OnlineSettings
+type: class
+inherits: SystemSettings
+
+constructors:
+  -
+    description: Creates a new OnlineSettings frostbite instance.
+  -
+    description: Creates a new OnlineSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SystemSettings to OnlineSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SystemSettings
+        description: The instance to cast to OnlineSettings.
+  -
+    description: Casts an instance of type DataContainer to OnlineSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to OnlineSettings.
+
+properties:
+  backend:
+    type: BackendType
+  peerBackend:
+    type: BackendType
+  environment:
+    type: OnlineEnvironment
+  matchmakingToken:
+    type: string
+  provider:
+    type: OnlineProviderAsset
+    nullable: true
+  richPresence:
+    type: RichPresenceData
+    nullable: true
+  chatSettings:
+    type: ChatSettings
+    nullable: true
+  matchmakingOptions:
+    type: string
+  region:
+    type: string
+  negativeUserCacheRefreshPeriod:
+    type: int
+  matchmakingMode:
+    type: string
+  country:
+    type: string
+  isSecure:
+    type: bool
+  supportHostMigration:
+    type: bool
+  matchmakeImmediately:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the OnlineSettings type.
+

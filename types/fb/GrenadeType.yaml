@@ -1,0 +1,13 @@
+name: GrenadeType
+type: enum
+
+values:
+  GrenadeType_NotSet:
+    value: 0
+  GrenadeType_Frag:
+    value: 1
+  GrenadeType_Smoke:
+    value: 2
+  GrenadeType_Flash:
+    value: 3
+

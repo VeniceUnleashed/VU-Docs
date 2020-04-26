@@ -1,0 +1,50 @@
+name: MaterialGridData
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new MaterialGridData frostbite instance.
+  -
+    description: Creates a new MaterialGridData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to MaterialGridData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to MaterialGridData.
+  -
+    description: Casts an instance of type DataContainer to MaterialGridData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MaterialGridData.
+
+properties:
+  defaultMaterial:
+    type: MaterialContainerPair
+    nullable: true
+  materialPairs:
+    type: MaterialContainerPair
+    array: true
+  materialIndexMap:
+    type: int
+    array: true
+  defaultMaterialIndex:
+    type: int
+  materialProperties:
+    type: MaterialRelationPropertyPair
+    array: true
+  interactionGrid:
+    type: MaterialInteractionGridRow
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MaterialGridData type.
+

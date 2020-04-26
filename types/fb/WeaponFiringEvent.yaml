@@ -1,0 +1,37 @@
+name: WeaponFiringEvent
+type: enum
+
+values:
+  WeaponFiringEvent_Push:
+    value: 0
+  WeaponFiringEvent_Pop:
+    value: 1
+  WeaponFiringEvent_PrimaryStartedFiringCallback:
+    value: 2
+  WeaponFiringEvent_PrimaryFireCallback:
+    value: 3
+  WeaponFiringEvent_PrimaryFireReleaseCallback:
+    value: 4
+  WeaponFiringEvent_PrimaryFireShotSpawnedCallback:
+    value: 5
+  WeaponFiringEvent_PrimaryFireAutomaticBeginCallback:
+    value: 6
+  WeaponFiringEvent_PrimaryFireAutomaticEndCallback:
+    value: 7
+  WeaponFiringEvent_PrimaryStoppedFiringCallback:
+    value: 8
+  WeaponFiringEvent_ReloadPrimaryCallback:
+    value: 9
+  WeaponFiringEvent_ReloadPrimaryEndCallback:
+    value: 10
+  WeaponFiringEvent_BoltActionCallback:
+    value: 11
+  WeaponFiringEvent_BoltActionEndCallback:
+    value: 12
+  WeaponFiringEvent_DetonationSwitchCallback:
+    value: 13
+  WeaponFiringEvent_HoldAndReleaseReleaseCallback:
+    value: 14
+  WeaponFiringEvent_UpdateRequired:
+    value: 15
+

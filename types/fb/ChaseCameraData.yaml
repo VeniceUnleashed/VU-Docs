@@ -1,0 +1,101 @@
+name: ChaseCameraData
+type: class
+inherits: TargetCameraData
+
+constructors:
+  -
+    description: Creates a new ChaseCameraData frostbite instance.
+  -
+    description: Creates a new ChaseCameraData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type TargetCameraData to ChaseCameraData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: TargetCameraData
+        description: The instance to cast to ChaseCameraData.
+  -
+    description: Casts an instance of type CameraData to ChaseCameraData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: CameraData
+        description: The instance to cast to ChaseCameraData.
+  -
+    description: Casts an instance of type GameObjectData to ChaseCameraData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to ChaseCameraData.
+  -
+    description: Casts an instance of type GameDataContainer to ChaseCameraData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to ChaseCameraData.
+  -
+    description: Casts an instance of type DataContainer to ChaseCameraData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ChaseCameraData.
+
+properties:
+  targetOffset:
+    type: Vec3
+  toWantedPositionScale:
+    type: Vec3
+  awayFromTargetForceScale:
+    type: float
+  targetRotationOffset:
+    type: float
+  maxViewRotationAngleDeg:
+    type: float
+  wantedAngleDeg:
+    type: float
+  wantedDistance:
+    type: float
+  maxDistance:
+    type: float
+  snapDistance:
+    type: float
+  forceFieldRadius:
+    type: float
+  collisionRadius:
+    type: float
+  forceFieldForceScale:
+    type: float
+  maxVelocity:
+    type: float
+  velocityDrag:
+    type: float
+  pillExpandSizeSpeedAcceleration:
+    type: float
+  pillMinimumCollisionRadius:
+    type: float
+  pillMaximumCollisionRadius:
+    type: float
+  pillMinimumCollisionLength:
+    type: float
+  lookDistanceScale:
+    type: float
+  lookDistanceInFrontOfTarget:
+    type: float
+  updateRate:
+    type: int
+  keepTargetPitch:
+    type: bool
+  inheritTargetVelocity:
+    type: bool
+  shouldRollWithTarget:
+    type: bool
+  hasCollision:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ChaseCameraData type.
+

@@ -1,0 +1,21 @@
+name: StencilOperation
+type: enum
+
+values:
+  StencilOperation_Keep:
+    value: 0
+  StencilOperation_Zero:
+    value: 1
+  StencilOperation_Replace:
+    value: 2
+  StencilOperation_IncrementSaturate:
+    value: 3
+  StencilOperation_DecrementSaturate:
+    value: 4
+  StencilOperation_Invert:
+    value: 5
+  StencilOperation_IncrementWrap:
+    value: 6
+  StencilOperation_DecrementWrap:
+    value: 7
+

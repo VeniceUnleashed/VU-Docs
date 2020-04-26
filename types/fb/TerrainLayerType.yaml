@@ -1,0 +1,11 @@
+name: TerrainLayerType
+type: enum
+
+values:
+  TerrainLayerType_IgnoreMask:
+    value: 0
+  TerrainLayerType_Masked:
+    value: 1
+  TerrainLayerType_BinaryMasked:
+    value: 2
+

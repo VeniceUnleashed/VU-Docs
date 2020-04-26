@@ -1,0 +1,13 @@
+name: ReadinessLevel
+type: enum
+
+values:
+  RLPatrol:
+    value: 0
+  RLReady:
+    value: 1
+  RLCombat:
+    value: 2
+  RLNone:
+    value: 3
+

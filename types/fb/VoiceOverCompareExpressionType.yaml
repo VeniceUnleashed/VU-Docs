@@ -1,0 +1,17 @@
+name: VoiceOverCompareExpressionType
+type: enum
+
+values:
+  VoiceOverCompareExpressionType_Equals:
+    value: 0
+  VoiceOverCompareExpressionType_Differs:
+    value: 1
+  VoiceOverCompareExpressionType_Greater:
+    value: 2
+  VoiceOverCompareExpressionType_Less:
+    value: 3
+  VoiceOverCompareExpressionType_GreaterOrEquals:
+    value: 4
+  VoiceOverCompareExpressionType_LessOrEquals:
+    value: 5
+

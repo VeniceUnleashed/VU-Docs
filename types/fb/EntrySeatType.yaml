@@ -1,0 +1,11 @@
+name: EntrySeatType
+type: enum
+
+values:
+  EST_Driver:
+    value: 0
+  EST_Gunner:
+    value: 1
+  EST_Passenger:
+    value: 2
+

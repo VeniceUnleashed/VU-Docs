@@ -1,0 +1,42 @@
+name: CharacterSocketListAsset
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new CharacterSocketListAsset frostbite instance.
+  -
+    description: Creates a new CharacterSocketListAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to CharacterSocketListAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to CharacterSocketListAsset.
+  -
+    description: Casts an instance of type DataContainer to CharacterSocketListAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to CharacterSocketListAsset.
+
+properties:
+  gameplaySockets:
+    type: SocketData
+    array: true
+  rigidVisualSockets:
+    type: SocketData
+    array: true
+  skinnedVisualSockets:
+    type: SocketData
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the CharacterSocketListAsset type.
+

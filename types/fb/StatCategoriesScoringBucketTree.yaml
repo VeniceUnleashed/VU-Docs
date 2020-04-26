@@ -1,0 +1,49 @@
+name: StatCategoriesScoringBucketTree
+type: class
+inherits: StatCategoriesGuidTree
+
+constructors:
+  -
+    description: Creates a new StatCategoriesScoringBucketTree frostbite instance.
+  -
+    description: Creates a new StatCategoriesScoringBucketTree frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type StatCategoriesGuidTree to StatCategoriesScoringBucketTree. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: StatCategoriesGuidTree
+        description: The instance to cast to StatCategoriesScoringBucketTree.
+  -
+    description: Casts an instance of type StatCategoriesBaseTree to StatCategoriesScoringBucketTree. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: StatCategoriesBaseTree
+        description: The instance to cast to StatCategoriesScoringBucketTree.
+  -
+    description: Casts an instance of type TreeBase to StatCategoriesScoringBucketTree. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: TreeBase
+        description: The instance to cast to StatCategoriesScoringBucketTree.
+  -
+    description: Casts an instance of type Asset to StatCategoriesScoringBucketTree. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to StatCategoriesScoringBucketTree.
+  -
+    description: Casts an instance of type DataContainer to StatCategoriesScoringBucketTree. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to StatCategoriesScoringBucketTree.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the StatCategoriesScoringBucketTree type.
+

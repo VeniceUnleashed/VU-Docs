@@ -1,0 +1,17 @@
+name: ShaderComparisonOperator
+type: enum
+
+values:
+  ScoEquals:
+    value: 0
+  ScoNotEquals:
+    value: 1
+  ScoLess:
+    value: 2
+  ScoLessEquals:
+    value: 3
+  ScoGreater:
+    value: 4
+  ScoGreaterEquals:
+    value: 5
+

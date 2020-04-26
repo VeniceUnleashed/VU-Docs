@@ -1,0 +1,43 @@
+name: AwardHeaderData
+type: class
+inherits: AbstractAwardData
+
+constructors:
+  -
+    description: Creates a new AwardHeaderData frostbite instance.
+  -
+    description: Creates a new AwardHeaderData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AbstractAwardData to AwardHeaderData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AbstractAwardData
+        description: The instance to cast to AwardHeaderData.
+  -
+    description: Casts an instance of type TreeNodeBase to AwardHeaderData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: TreeNodeBase
+        description: The instance to cast to AwardHeaderData.
+  -
+    description: Casts an instance of type DataContainer to AwardHeaderData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to AwardHeaderData.
+
+properties:
+  group:
+    type: AwardGroup
+  multiplicity:
+    type: StatsMultiplicity
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the AwardHeaderData type.
+

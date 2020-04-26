@@ -1,0 +1,76 @@
+name: MasterUnitNodeData
+type: class
+inherits: AudioGraphNodeData
+
+constructors:
+  -
+    description: Creates a new MasterUnitNodeData frostbite instance.
+  -
+    description: Creates a new MasterUnitNodeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphNodeData to MasterUnitNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphNodeData
+        description: The instance to cast to MasterUnitNodeData.
+  -
+    description: Casts an instance of type DataContainer to MasterUnitNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MasterUnitNodeData.
+
+properties:
+  settingsIndex:
+    type: AudioGraphNodePort
+  amplitude:
+    type: AudioGraphNodePort
+  masterGain:
+    type: AudioGraphNodePort
+  masterLfeGain:
+    type: AudioGraphNodePort
+  masterDialogGain:
+    type: AudioGraphNodePort
+  mainMixGain:
+    type: AudioGraphNodePort
+  postEffectsGain:
+    type: AudioGraphNodePort
+  reverbGain:
+    type: AudioGraphNodePort
+  fadeTime:
+    type: AudioGraphNodePort
+  highPassFreq:
+    type: AudioGraphNodePort
+  lowShelfFreq:
+    type: AudioGraphNodePort
+  lowShelfGain:
+    type: AudioGraphNodePort
+  highShelfFreq:
+    type: AudioGraphNodePort
+  highShelfGain:
+    type: AudioGraphNodePort
+  compThreshold:
+    type: AudioGraphNodePort
+  compRatio:
+    type: AudioGraphNodePort
+  compAttack:
+    type: AudioGraphNodePort
+  compRelease:
+    type: AudioGraphNodePort
+  distClipLevel:
+    type: AudioGraphNodePort
+  parallelDistortionGain:
+    type: AudioGraphNodePort
+  settings:
+    type: MasterUnitSettings
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MasterUnitNodeData type.
+

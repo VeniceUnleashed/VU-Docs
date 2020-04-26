@@ -1,0 +1,9 @@
+name: EntryClass
+type: enum
+
+values:
+  ecPrimary:
+    value: 0
+  ecSecondary:
+    value: 1
+

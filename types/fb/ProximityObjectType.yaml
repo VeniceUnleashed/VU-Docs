@@ -1,0 +1,17 @@
+name: ProximityObjectType
+type: enum
+
+values:
+  PotProximityDisabled:
+    value: 0
+  PotVaultableLow:
+    value: 1
+  PotVaultableHigh:
+    value: 2
+  PotSupportedShooting:
+    value: 3
+  PotInteractWith:
+    value: 4
+  PotBashable:
+    value: 5
+

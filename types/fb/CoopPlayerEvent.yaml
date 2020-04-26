@@ -1,0 +1,15 @@
+name: CoopPlayerEvent
+type: enum
+
+values:
+  CoopPlayerEvent_Connecting:
+    value: 0
+  CoopPlayerEvent_Connected:
+    value: 1
+  CoopPlayerEvent_Disconnected:
+    value: 2
+  CoopPlayerEvent_Stats:
+    value: 3
+  CoopPlayerEvent_StatsFailed:
+    value: 4
+

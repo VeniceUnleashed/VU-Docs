@@ -1,0 +1,9 @@
+name: VoiceOverLogicFlowMode
+type: enum
+
+values:
+  VoiceOverLogicFlowMode_All:
+    value: 0
+  VoiceOverLogicFlowMode_One:
+    value: 1
+

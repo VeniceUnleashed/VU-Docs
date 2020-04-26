@@ -1,0 +1,56 @@
+name: OutdoorLightEffectState
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new OutdoorLightEffectState frostbite instance.
+  -
+    description: Creates a new OutdoorLightEffectState frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to OutdoorLightEffectState. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to OutdoorLightEffectState.
+
+properties:
+  skyColor:
+    type: Vec3
+  groundColor:
+    type: Vec3
+  sunColor:
+    type: Vec3
+  cloudShadowSpeed:
+    type: Vec2
+  sunRotationX:
+    type: float
+  sunRotationY:
+    type: float
+  skyLightAngleFactor:
+    type: float
+  sunShadowHeightScale:
+    type: float
+  cloudShadowTexture:
+    type: TextureAsset
+    nullable: true
+  cloudShadowSize:
+    type: float
+  cloudShadowExponent:
+    type: float
+  cloudShadowCoverage:
+    type: float
+  cloudShadowEnable:
+    type: bool
+  enable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the OutdoorLightEffectState type.
+

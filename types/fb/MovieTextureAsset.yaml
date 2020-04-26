@@ -1,0 +1,45 @@
+name: MovieTextureAsset
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new MovieTextureAsset frostbite instance.
+  -
+    description: Creates a new MovieTextureAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to MovieTextureAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to MovieTextureAsset.
+  -
+    description: Casts an instance of type DataContainer to MovieTextureAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MovieTextureAsset.
+
+properties:
+  chunkGuid:
+    type: Guid
+  chunkSize:
+    type: int
+  subtitleChunkGuid:
+    type: Guid
+  subtitleChunkSize:
+    type: int
+  hasLocalizedAudioTracks:
+    type: bool
+  overrideBackgroundMusic:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MovieTextureAsset type.
+

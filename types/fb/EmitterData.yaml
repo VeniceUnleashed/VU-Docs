@@ -1,0 +1,42 @@
+name: EmitterData
+type: class
+inherits: ProcessorData
+
+constructors:
+  -
+    description: Creates a new EmitterData frostbite instance.
+  -
+    description: Creates a new EmitterData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ProcessorData to EmitterData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ProcessorData
+        description: The instance to cast to EmitterData.
+  -
+    description: Casts an instance of type EmitterComponentData to EmitterData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EmitterComponentData
+        description: The instance to cast to EmitterData.
+  -
+    description: Casts an instance of type DataContainer to EmitterData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to EmitterData.
+
+properties:
+  emitterAssets:
+    type: EmitterDocument
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the EmitterData type.
+

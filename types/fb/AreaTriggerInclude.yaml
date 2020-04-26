@@ -1,0 +1,19 @@
+name: AreaTriggerInclude
+type: enum
+
+values:
+  ATNone:
+    value: 0
+  ATAll:
+    value: 1
+  ATPlayers:
+    value: 2
+  ATAI:
+    value: 3
+  ATAI_Allies:
+    value: 4
+  ATAI_Enemies:
+    value: 5
+  ATPlayersNotInVehicle:
+    value: 6
+

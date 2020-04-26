@@ -1,0 +1,77 @@
+name: SoundPatchAsset
+type: class
+inherits: SoundGraphAsset
+
+constructors:
+  -
+    description: Creates a new SoundPatchAsset frostbite instance.
+  -
+    description: Creates a new SoundPatchAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SoundGraphAsset to SoundPatchAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SoundGraphAsset
+        description: The instance to cast to SoundPatchAsset.
+  -
+    description: Casts an instance of type SoundAsset to SoundPatchAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SoundAsset
+        description: The instance to cast to SoundPatchAsset.
+  -
+    description: Casts an instance of type Asset to SoundPatchAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to SoundPatchAsset.
+  -
+    description: Casts an instance of type DataContainer to SoundPatchAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SoundPatchAsset.
+
+properties:
+  outputNodes:
+    type: AudioGraphNodeData
+    array: true
+  loudness:
+    type: float
+  aiLoudness:
+    type: float
+  radius:
+    type: float
+  dopplerFactor:
+    type: float
+  masterPitch:
+    type: float
+  mixGroup:
+    type: MixGroup
+    nullable: true
+  defaultStopEvent:
+    type: AudioGraphEvent
+    nullable: true
+  defaultStartEvent:
+    type: AudioGraphEvent
+    nullable: true
+  defaultForceInitEvent:
+    type: AudioGraphEvent
+    nullable: true
+  defaultEnterScopeEvent:
+    type: AudioGraphEvent
+    nullable: true
+  isPersistent:
+    type: bool
+  isLooping:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SoundPatchAsset type.
+

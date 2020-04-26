@@ -1,0 +1,13 @@
+name: WarnTarget
+type: enum
+
+values:
+  wtWarnSoldierAndVehicle:
+    value: 0
+  wtWarnSoldier:
+    value: 1
+  wtWarnVehicle:
+    value: 2
+  wtWarnNone:
+    value: 3
+

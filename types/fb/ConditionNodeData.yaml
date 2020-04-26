@@ -1,0 +1,36 @@
+name: ConditionNodeData
+type: class
+inherits: AudioGraphNodeData
+
+constructors:
+  -
+    description: Creates a new ConditionNodeData frostbite instance.
+  -
+    description: Creates a new ConditionNodeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphNodeData to ConditionNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphNodeData
+        description: The instance to cast to ConditionNodeData.
+  -
+    description: Casts an instance of type DataContainer to ConditionNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ConditionNodeData.
+
+properties:
+  conditions:
+    type: ConditionGroup
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ConditionNodeData type.
+

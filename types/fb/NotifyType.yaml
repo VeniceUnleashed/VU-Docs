@@ -1,0 +1,15 @@
+name: NotifyType
+type: enum
+
+values:
+  NotifyPersonal:
+    value: 0
+  NotifyGeneral:
+    value: 1
+  NotifyConsole:
+    value: 2
+  NotityTooltip:
+    value: 3
+  NotifyCount:
+    value: 4
+

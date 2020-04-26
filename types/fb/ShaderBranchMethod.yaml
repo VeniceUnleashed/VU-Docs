@@ -1,0 +1,15 @@
+name: ShaderBranchMethod
+type: enum
+
+values:
+  SbmStatic:
+    value: 0
+  SbmFlat:
+    value: 1
+  SbmDynamicIfElse:
+    value: 2
+  SbmDynamicIfTrue:
+    value: 3
+  SbmDynamicIfFalse:
+    value: 4
+

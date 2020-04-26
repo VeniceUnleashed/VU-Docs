@@ -1,0 +1,45 @@
+name: AntEntryIdEnum
+type: enum
+
+values:
+  AntEntryIdEnum_Humvee_Driver:
+    value: 0
+  AntEntryIdEnum_Humvee_Gunner:
+    value: 1
+  AntEntryIdEnum_Humvee_PassengerRearLeft:
+    value: 2
+  AntEntryIdEnum_Humvee_PassengerRearRight:
+    value: 3
+  AntEntryIdEnum_F16_Pilot:
+    value: 4
+  AntEntryIdEnum_SU37_Pilot:
+    value: 5
+  AntEntryIdEnum_AH6_Pilot:
+    value: 6
+  AntEntryIdEnum_AH64_Pilot:
+    value: 7
+  AntEntryIdEnum_AH64_Gunner:
+    value: 8
+  AntEntryIdEnum_Vodnik_Driver:
+    value: 9
+  AntEntryIdEnum_Vodnik_Gunner:
+    value: 10
+  AntEntryIdEnum_Humvee_PassengerFrontRight:
+    value: 11
+  AntEntryIdEnum_Vodnik_PassengerFrontRight:
+    value: 12
+  AntEntryIdEnum_Vodnik_PassengerRearRight:
+    value: 13
+  AntEntryIdEnum_Vodnik_PassengerRearLeft:
+    value: 14
+  AntEntryIdEnum_VadsGunner:
+    value: 15
+  AntEntryIdEnum_F18F_Pilot:
+    value: 16
+  AntEntryIdEnum_F18F_Navigator:
+    value: 17
+  AntEntryIdEnum_M1A2_Gunner:
+    value: 18
+  AntEntryIdEnum_M1A2_Driver:
+    value: 19
+

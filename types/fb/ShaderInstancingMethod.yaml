@@ -1,0 +1,27 @@
+name: ShaderInstancingMethod
+type: enum
+
+values:
+  ShaderInstancingMethod_None:
+    value: 0
+  ShaderInstancingMethod_ObjectTransform4x3Half:
+    value: 1
+  ShaderInstancingMethod_ObjectTransform4x3InstanceData4x1Half:
+    value: 2
+  ShaderInstancingMethod_ObjectTransform4x3InstanceData4x2Half:
+    value: 3
+  ShaderInstancingMethod_WorldTransform4x3Float:
+    value: 4
+  ShaderInstancingMethod_ObjectTranslationScaleHalf:
+    value: 5
+  ShaderInstancingMethod_ObjectTranslationScaleHalfInstanceData4x1Half:
+    value: 6
+  ShaderInstancingMethod_ObjectTranslationScaleHalfInstanceData4x2Half:
+    value: 7
+  ShaderInstancingMethod_VertexAnimation:
+    value: 8
+  ShaderInstancingMethod_DxBuffer:
+    value: 9
+  ShaderInstancingMethodCount:
+    value: 10
+

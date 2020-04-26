@@ -1,0 +1,32 @@
+name: UnlockableTextureSliceCollection
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new UnlockableTextureSliceCollection frostbite instance.
+  -
+    description: Creates a new UnlockableTextureSliceCollection frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to UnlockableTextureSliceCollection. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UnlockableTextureSliceCollection.
+
+properties:
+  defaultValue:
+    type: int
+  possibleValues:
+    type: TextureSliceUnlockPartData
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UnlockableTextureSliceCollection type.
+

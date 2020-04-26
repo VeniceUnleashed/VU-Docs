@@ -1,0 +1,15 @@
+name: SoundWaveReadPriority
+type: enum
+
+values:
+  SoundWaveReadPriority_Unspecified:
+    value: 0
+  SoundWaveReadPriority_Low:
+    value: 1
+  SoundWaveReadPriority_Medium:
+    value: 2
+  SoundWaveReadPriority_Normal:
+    value: 3
+  SoundWaveReadPriority_High:
+    value: 4
+

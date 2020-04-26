@@ -1,0 +1,11 @@
+name: TextureCompressQualityMode
+type: enum
+
+values:
+  TextureCompressQualityMode_Default:
+    value: 0
+  TextureCompressQualityMode_Simple:
+    value: 1
+  TextureCompressQualityMode_HighQuality:
+    value: 2
+

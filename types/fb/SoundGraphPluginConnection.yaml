@@ -1,0 +1,38 @@
+name: SoundGraphPluginConnection
+type: class
+
+constructors:
+  -
+    description: Creates a new SoundGraphPluginConnection frostbite instance.
+  -
+    description: Creates a new SoundGraphPluginConnection frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+
+properties:
+  connectionType:
+    type: SoundGraphPluginConnectionType
+  parameters:
+    type: SoundGraphPluginConnectionParam
+    array: true
+  bus:
+    type: SoundBusData
+    nullable: true
+  voiceIndex:
+    type: int
+
+methods:
+  -
+    name: Clone
+    description: Creates a shallow-copy clone of this structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of this structure to all of its properties. Any properties that contain structure types (eg. Vec3) will be cloned when assigning, while properties that contain instance types (eg. DataContainer) will be referencing the same instance.
+    returns:
+      type: SoundGraphPluginConnection
+      description: The newly created structure.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SoundGraphPluginConnection type.
+

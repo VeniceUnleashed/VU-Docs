@@ -1,0 +1,19 @@
+name: RigidBodyQualityType
+type: enum
+
+values:
+  RigidBodyQualityType_Invalid:
+    value: 0
+  RigidBodyQualityType_Fixed:
+    value: 1
+  RigidBodyQualityType_Debris:
+    value: 2
+  RigidBodyQualityType_DebrisSimpleToi:
+    value: 3
+  RigidBodyQualityType_Moving:
+    value: 4
+  RigidBodyQualityType_Critical:
+    value: 5
+  RigidBodyQualityType_Size:
+    value: 6
+

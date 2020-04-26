@@ -1,0 +1,11 @@
+name: MapMarkerColorType
+type: enum
+
+values:
+  MMCTRed:
+    value: 0
+  MMCTBlue:
+    value: 1
+  MMCTGreen:
+    value: 2
+

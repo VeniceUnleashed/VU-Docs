@@ -1,0 +1,11 @@
+name: MatchmakingRankedMode
+type: enum
+
+values:
+  MatchmakingRankedMode_Ranked:
+    value: 0
+  MatchmakingRankedMode_Unranked:
+    value: 1
+  MatchmakingRankedMode_Any:
+    value: 2
+

@@ -1,0 +1,71 @@
+name: MultipleTriggerEntityData
+type: class
+inherits: TriggerEventEntityData
+
+constructors:
+  -
+    description: Creates a new MultipleTriggerEntityData frostbite instance.
+  -
+    description: Creates a new MultipleTriggerEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type TriggerEventEntityData to MultipleTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: TriggerEventEntityData
+        description: The instance to cast to MultipleTriggerEntityData.
+  -
+    description: Casts an instance of type TriggerEntityData to MultipleTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: TriggerEntityData
+        description: The instance to cast to MultipleTriggerEntityData.
+  -
+    description: Casts an instance of type GameEntityData to MultipleTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to MultipleTriggerEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to MultipleTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to MultipleTriggerEntityData.
+  -
+    description: Casts an instance of type EntityData to MultipleTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to MultipleTriggerEntityData.
+  -
+    description: Casts an instance of type GameObjectData to MultipleTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to MultipleTriggerEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to MultipleTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to MultipleTriggerEntityData.
+  -
+    description: Casts an instance of type DataContainer to MultipleTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MultipleTriggerEntityData.
+
+properties:
+  triggerAmount:
+    type: int
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MultipleTriggerEntityData type.
+

@@ -1,0 +1,29 @@
+name: PersistenceStatGroup
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new PersistenceStatGroup frostbite instance.
+  -
+    description: Creates a new PersistenceStatGroup frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to PersistenceStatGroup. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PersistenceStatGroup.
+
+properties:
+  groupName:
+    type: string
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PersistenceStatGroup type.
+

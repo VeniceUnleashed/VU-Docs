@@ -1,0 +1,42 @@
+name: IntPropertyTrackData
+type: class
+inherits: SimplePropertyTrackData
+
+constructors:
+  -
+    description: Creates a new IntPropertyTrackData frostbite instance.
+  -
+    description: Creates a new IntPropertyTrackData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SimplePropertyTrackData to IntPropertyTrackData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SimplePropertyTrackData
+        description: The instance to cast to IntPropertyTrackData.
+  -
+    description: Casts an instance of type PropertyTrackData to IntPropertyTrackData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: PropertyTrackData
+        description: The instance to cast to IntPropertyTrackData.
+  -
+    description: Casts an instance of type DataContainer to IntPropertyTrackData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to IntPropertyTrackData.
+
+properties:
+  values:
+    type: int
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the IntPropertyTrackData type.
+

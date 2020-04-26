@@ -1,0 +1,31 @@
+name: UIInputEvent
+type: enum
+
+values:
+  UIInputEvent_None:
+    value: 0
+  UIInputEvent_OnButtonA:
+    value: 1
+  UIInputEvent_OnButtonB:
+    value: 2
+  UIInputEvent_OnButtonBack:
+    value: 3
+  UIInputEvent_OnButtonDPad_Down:
+    value: 4
+  UIInputEvent_OnButtonDPad_Left:
+    value: 5
+  UIInputEvent_OnButtonDPad_Right:
+    value: 6
+  UIInputEvent_OnButtonDPad_Up:
+    value: 7
+  UIInputEvent_OnButtonLB:
+    value: 8
+  UIInputEvent_OnButtonRB:
+    value: 9
+  UIInputEvent_OnButtonStart:
+    value: 10
+  UIInputEvent_OnButtonX:
+    value: 11
+  UIInputEvent_OnButtonY:
+    value: 12
+

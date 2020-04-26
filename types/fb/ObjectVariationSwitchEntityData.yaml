@@ -1,0 +1,51 @@
+name: ObjectVariationSwitchEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new ObjectVariationSwitchEntityData frostbite instance.
+  -
+    description: Creates a new ObjectVariationSwitchEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to ObjectVariationSwitchEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to ObjectVariationSwitchEntityData.
+  -
+    description: Casts an instance of type GameObjectData to ObjectVariationSwitchEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to ObjectVariationSwitchEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to ObjectVariationSwitchEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to ObjectVariationSwitchEntityData.
+  -
+    description: Casts an instance of type DataContainer to ObjectVariationSwitchEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ObjectVariationSwitchEntityData.
+
+properties:
+  variation1:
+    type: ObjectVariation
+    nullable: true
+  variation2:
+    type: ObjectVariation
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ObjectVariationSwitchEntityData type.
+

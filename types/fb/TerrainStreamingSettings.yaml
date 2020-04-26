@@ -1,0 +1,57 @@
+name: TerrainStreamingSettings
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new TerrainStreamingSettings frostbite instance.
+  -
+    description: Creates a new TerrainStreamingSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to TerrainStreamingSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to TerrainStreamingSettings.
+
+properties:
+  dataLoadJobCount:
+    type: int
+  activeFreeStreamingDataLoadJobCount:
+    type: int
+  heightfieldAtlasSampleCountXFactor:
+    type: int
+  additionalBlurriness:
+    type: int
+  invisibleDetailReductionFactor:
+    type: float
+  occludedDetailReductionFactor:
+    type: float
+  heightfieldAtlasSampleCountYFactor:
+    type: int
+  maskAtlasSampleCountYFactor:
+    type: int
+  colorAdditionalBlurriness:
+    type: int
+  maskAtlasSampleCountXFactor:
+    type: int
+  maskAdditionalBlurriness:
+    type: int
+  colorAtlasSampleCountXFactor:
+    type: int
+  colorAtlasSampleCountYFactor:
+    type: int
+  keepPoolFullEnable:
+    type: bool
+  loadOccluderDataEnable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the TerrainStreamingSettings type.
+

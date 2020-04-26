@@ -1,0 +1,49 @@
+name: ClientPlayerInputPlaybackEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new ClientPlayerInputPlaybackEntityData frostbite instance.
+  -
+    description: Creates a new ClientPlayerInputPlaybackEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to ClientPlayerInputPlaybackEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to ClientPlayerInputPlaybackEntityData.
+  -
+    description: Casts an instance of type GameObjectData to ClientPlayerInputPlaybackEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to ClientPlayerInputPlaybackEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to ClientPlayerInputPlaybackEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to ClientPlayerInputPlaybackEntityData.
+  -
+    description: Casts an instance of type DataContainer to ClientPlayerInputPlaybackEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ClientPlayerInputPlaybackEntityData.
+
+properties:
+  realm:
+    type: Realm
+  fileName:
+    type: string
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ClientPlayerInputPlaybackEntityData type.
+

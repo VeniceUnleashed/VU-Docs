@@ -1,0 +1,46 @@
+name: UIStateAsset
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new UIStateAsset frostbite instance.
+  -
+    description: Creates a new UIStateAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to UIStateAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to UIStateAsset.
+  -
+    description: Casts an instance of type DataContainer to UIStateAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UIStateAsset.
+
+properties:
+  uiComponents:
+    type: UIComponentData
+    array: true
+  actionscriptLibraries:
+    type: UIAsset
+    array: true
+  actionscriptNames:
+    type: string
+    array: true
+  stateName:
+    type: string
+  statePath:
+    type: string
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UIStateAsset type.
+

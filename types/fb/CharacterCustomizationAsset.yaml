@@ -1,0 +1,46 @@
+name: CharacterCustomizationAsset
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new CharacterCustomizationAsset frostbite instance.
+  -
+    description: Creates a new CharacterCustomizationAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to CharacterCustomizationAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to CharacterCustomizationAsset.
+  -
+    description: Casts an instance of type DataContainer to CharacterCustomizationAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to CharacterCustomizationAsset.
+
+properties:
+  labelSid:
+    type: string
+  uiHudIcon:
+    type: UIHudIcon
+  voiceOverLabels:
+    type: VoiceOverLabel
+    array: true
+  visualTable:
+    type: CustomizationTable
+    nullable: true
+  specializationTable:
+    type: CustomizationTable
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the CharacterCustomizationAsset type.
+

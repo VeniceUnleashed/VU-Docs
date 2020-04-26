@@ -1,0 +1,17 @@
+name: ShaderInterpolationType
+type: enum
+
+values:
+  ShaderInterpolationType_Linear:
+    value: 0
+  ShaderInterpolationType_Centroid:
+    value: 1
+  ShaderInterpolationType_NoInterpolation:
+    value: 2
+  ShaderInterpolationType_NoPerspective:
+    value: 3
+  ShaderInterpolationType_Sample:
+    value: 4
+  ShaderInterpolationType_Count:
+    value: 5
+

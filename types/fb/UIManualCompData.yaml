@@ -1,0 +1,37 @@
+name: UIManualCompData
+type: class
+inherits: UIComponentData
+
+constructors:
+  -
+    description: Creates a new UIManualCompData frostbite instance.
+  -
+    description: Creates a new UIManualCompData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UIComponentData to UIManualCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIComponentData
+        description: The instance to cast to UIManualCompData.
+  -
+    description: Casts an instance of type Asset to UIManualCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to UIManualCompData.
+  -
+    description: Casts an instance of type DataContainer to UIManualCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UIManualCompData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UIManualCompData type.
+

@@ -1,0 +1,41 @@
+name: CameraActionData
+type: class
+inherits: SimpleMovementActionBaseData
+
+constructors:
+  -
+    description: Creates a new CameraActionData frostbite instance.
+  -
+    description: Creates a new CameraActionData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SimpleMovementActionBaseData to CameraActionData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SimpleMovementActionBaseData
+        description: The instance to cast to CameraActionData.
+  -
+    description: Casts an instance of type MovementActionData to CameraActionData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MovementActionData
+        description: The instance to cast to CameraActionData.
+  -
+    description: Casts an instance of type DataContainer to CameraActionData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to CameraActionData.
+
+properties:
+  actionMode:
+    type: CameraMovementActionMode
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the CameraActionData type.
+

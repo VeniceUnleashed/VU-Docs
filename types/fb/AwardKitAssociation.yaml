@@ -1,0 +1,19 @@
+name: AwardKitAssociation
+type: enum
+
+values:
+  AwardKitAssociation_Undefined:
+    value: 0
+  AwardKitAssociation_Assault:
+    value: 1
+  AwardKitAssociation_Engineer:
+    value: 2
+  AwardKitAssociation_Recon:
+    value: 3
+  AwardKitAssociation_Support:
+    value: 4
+  AwardKitAssociation_All:
+    value: 5
+  AwardKitAssociation_LAST_ITEM:
+    value: 6
+

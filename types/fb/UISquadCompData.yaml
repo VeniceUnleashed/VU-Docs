@@ -1,0 +1,105 @@
+name: UISquadCompData
+type: class
+inherits: UIComponentData
+
+constructors:
+  -
+    description: Creates a new UISquadCompData frostbite instance.
+  -
+    description: Creates a new UISquadCompData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UIComponentData to UISquadCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIComponentData
+        description: The instance to cast to UISquadCompData.
+  -
+    description: Casts an instance of type Asset to UISquadCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to UISquadCompData.
+  -
+    description: Casts an instance of type DataContainer to UISquadCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UISquadCompData.
+
+properties:
+  squad15:
+    type: string
+  squad32:
+    type: string
+  squad1:
+    type: string
+  squad2:
+    type: string
+  squad3:
+    type: string
+  squad4:
+    type: string
+  squad5:
+    type: string
+  squad6:
+    type: string
+  squad7:
+    type: string
+  squad8:
+    type: string
+  squad9:
+    type: string
+  squad10:
+    type: string
+  squad11:
+    type: string
+  squad12:
+    type: string
+  squad13:
+    type: string
+  squad14:
+    type: string
+  squad16:
+    type: string
+  squad24:
+    type: string
+  squad17:
+    type: string
+  squad18:
+    type: string
+  squad19:
+    type: string
+  squad20:
+    type: string
+  squad21:
+    type: string
+  squad22:
+    type: string
+  squad23:
+    type: string
+  squad31:
+    type: string
+  squad25:
+    type: string
+  squad26:
+    type: string
+  squad27:
+    type: string
+  squad28:
+    type: string
+  squad29:
+    type: string
+  squad30:
+    type: string
+  hideLocalSquadBoostData:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UISquadCompData type.
+

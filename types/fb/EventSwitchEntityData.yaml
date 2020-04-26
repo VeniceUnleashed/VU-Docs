@@ -1,0 +1,51 @@
+name: EventSwitchEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new EventSwitchEntityData frostbite instance.
+  -
+    description: Creates a new EventSwitchEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to EventSwitchEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to EventSwitchEntityData.
+  -
+    description: Casts an instance of type GameObjectData to EventSwitchEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to EventSwitchEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to EventSwitchEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to EventSwitchEntityData.
+  -
+    description: Casts an instance of type DataContainer to EventSwitchEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to EventSwitchEntityData.
+
+properties:
+  realm:
+    type: Realm
+  outEvents:
+    type: int
+  autoIncrement:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the EventSwitchEntityData type.
+

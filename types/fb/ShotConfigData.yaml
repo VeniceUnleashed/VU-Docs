@@ -1,0 +1,70 @@
+name: ShotConfigData
+type: class
+
+constructors:
+  -
+    description: Creates a new ShotConfigData frostbite instance.
+  -
+    description: Creates a new ShotConfigData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+
+properties:
+  initialPosition:
+    type: Vec3
+  initialDirection:
+    type: Vec3
+  initialSpeed:
+    type: Vec3
+  inheritWeaponSpeedAmount:
+    type: float
+  muzzleExplosion:
+    type: ExplosionEntityData
+    nullable: true
+  projectileData:
+    type: ProjectileEntityData
+    nullable: true
+  secondaryProjectileData:
+    type: ProjectileEntityData
+    nullable: true
+  projectile:
+    type: ProjectileBlueprint
+    nullable: true
+  secondaryProjectile:
+    type: ProjectileBlueprint
+    nullable: true
+  alternateProjectiles:
+    type: UnlockableProjectile
+    array: true
+  spawnDelay:
+    type: float
+  numberOfBulletsPerShell:
+    type: int
+  numberOfBulletsPerShot:
+    type: int
+  numberOfBulletsPerBurst:
+    type: int
+  relativeTargetAiming:
+    type: bool
+  forceSpawnToCamera:
+    type: bool
+  spawnVisualAtWeaponBone:
+    type: bool
+  activeForceSpawnToCamera:
+    type: bool
+
+methods:
+  -
+    name: Clone
+    description: Creates a shallow-copy clone of this structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of this structure to all of its properties. Any properties that contain structure types (eg. Vec3) will be cloned when assigning, while properties that contain instance types (eg. DataContainer) will be referencing the same instance.
+    returns:
+      type: ShotConfigData
+      description: The newly created structure.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ShotConfigData type.
+

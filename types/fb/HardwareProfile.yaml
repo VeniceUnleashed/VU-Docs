@@ -1,0 +1,15 @@
+name: HardwareProfile
+type: enum
+
+values:
+  Hardware_Autodetect:
+    value: 0
+  Hardware_LowEnd:
+    value: 1
+  Hardware_Medium:
+    value: 2
+  Hardware_HighEnd:
+    value: 3
+  Hardware_Maximum:
+    value: 4
+

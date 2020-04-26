@@ -1,0 +1,37 @@
+name: HudCapturePointTrackerData
+type: class
+inherits: HudTrackerData
+
+constructors:
+  -
+    description: Creates a new HudCapturePointTrackerData frostbite instance.
+  -
+    description: Creates a new HudCapturePointTrackerData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type HudTrackerData to HudCapturePointTrackerData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: HudTrackerData
+        description: The instance to cast to HudCapturePointTrackerData.
+  -
+    description: Casts an instance of type UIPartData to HudCapturePointTrackerData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIPartData
+        description: The instance to cast to HudCapturePointTrackerData.
+  -
+    description: Casts an instance of type DataContainer to HudCapturePointTrackerData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to HudCapturePointTrackerData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the HudCapturePointTrackerData type.
+

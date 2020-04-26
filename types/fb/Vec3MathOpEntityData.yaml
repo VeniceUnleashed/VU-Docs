@@ -1,0 +1,50 @@
+name: Vec3MathOpEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new Vec3MathOpEntityData frostbite instance.
+  -
+    description: Creates a new Vec3MathOpEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to Vec3MathOpEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to Vec3MathOpEntityData.
+  -
+    description: Casts an instance of type GameObjectData to Vec3MathOpEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to Vec3MathOpEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to Vec3MathOpEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to Vec3MathOpEntityData.
+  -
+    description: Casts an instance of type DataContainer to Vec3MathOpEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to Vec3MathOpEntityData.
+
+properties:
+  realm:
+    type: Realm
+  operators:
+    type: Vec3MathOp
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the Vec3MathOpEntityData type.
+

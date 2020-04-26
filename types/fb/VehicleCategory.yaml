@@ -1,0 +1,9 @@
+name: VehicleCategory
+type: enum
+
+values:
+  VehicleCategory_Land:
+    value: 0
+  VehicleCategory_Air:
+    value: 1
+

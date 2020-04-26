@@ -1,0 +1,49 @@
+name: IrReverbNodeData
+type: class
+inherits: AudioGraphNodeData
+
+constructors:
+  -
+    description: Creates a new IrReverbNodeData frostbite instance.
+  -
+    description: Creates a new IrReverbNodeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphNodeData to IrReverbNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphNodeData
+        description: The instance to cast to IrReverbNodeData.
+  -
+    description: Casts an instance of type DataContainer to IrReverbNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to IrReverbNodeData.
+
+properties:
+  inValue:
+    type: AudioGraphNodePort
+  out:
+    type: AudioGraphNodePort
+  reverb0:
+    type: AudioGraphNodePort
+  amplitude0:
+    type: AudioGraphNodePort
+  reverb1:
+    type: AudioGraphNodePort
+  amplitude1:
+    type: AudioGraphNodePort
+  maxReverbLength:
+    type: float
+  reverbPlugin:
+    type: SoundGraphPluginRef
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the IrReverbNodeData type.
+

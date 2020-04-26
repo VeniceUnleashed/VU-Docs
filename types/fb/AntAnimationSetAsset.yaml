@@ -1,0 +1,50 @@
+name: AntAnimationSetAsset
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new AntAnimationSetAsset frostbite instance.
+  -
+    description: Creates a new AntAnimationSetAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to AntAnimationSetAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to AntAnimationSetAsset.
+  -
+    description: Casts an instance of type DataContainer to AntAnimationSetAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to AntAnimationSetAsset.
+
+properties:
+  skeletonAsset:
+    type: SkeletonAsset
+    nullable: true
+  actorAssetIndex:
+    type: int
+  clipAssetIndices:
+    type: int
+    array: true
+  loopingClipAssetIndices:
+    type: int
+    array: true
+  sceneOpMatrixAssetIndex:
+    type: int
+  useTraj2Ref:
+    type: bool
+  allowAnimationCulling:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the AntAnimationSetAsset type.
+

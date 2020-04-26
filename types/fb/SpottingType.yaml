@@ -1,0 +1,19 @@
+name: SpottingType
+type: enum
+
+values:
+  STGunner:
+    value: 0
+  STSquadLeader:
+    value: 1
+  STDefault:
+    value: 2
+  STPersonal:
+    value: 3
+  STSnapshot:
+    value: 4
+  STSquadUav:
+    value: 5
+  STTypesCount:
+    value: 6
+

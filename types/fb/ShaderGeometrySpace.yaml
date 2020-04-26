@@ -1,0 +1,13 @@
+name: ShaderGeometrySpace
+type: enum
+
+values:
+  ShaderGeometrySpace_Object:
+    value: 0
+  ShaderGeometrySpace_ObjectScaled:
+    value: 1
+  ShaderGeometrySpace_World:
+    value: 2
+  ShaderGeometrySpace_Screen:
+    value: 3
+

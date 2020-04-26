@@ -1,0 +1,11 @@
+name: OutputTransformSource
+type: enum
+
+values:
+  OutputTransformSource_Sound:
+    value: 0
+  OutputTransformSource_Listener:
+    value: 1
+  OutputTransformSource_Output:
+    value: 2
+

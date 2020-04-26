@@ -1,0 +1,35 @@
+name: LanguageFormat
+type: enum
+
+values:
+  LanguageFormat_English:
+    value: 0
+  LanguageFormat_French:
+    value: 1
+  LanguageFormat_German:
+    value: 2
+  LanguageFormat_Spanish:
+    value: 3
+  LanguageFormat_Italian:
+    value: 4
+  LanguageFormat_Japanese:
+    value: 5
+  LanguageFormat_Russian:
+    value: 6
+  LanguageFormat_Polish:
+    value: 7
+  LanguageFormat_Dutch:
+    value: 8
+  LanguageFormat_Portuguese:
+    value: 9
+  LanguageFormat_TraditionalChinese:
+    value: 10
+  LanguageFormat_Korean:
+    value: 11
+  LanguageFormat_Czech:
+    value: 12
+  LanguageFormat_Count:
+    value: 13
+  LanguageFormat_Undefined:
+    value: 14
+

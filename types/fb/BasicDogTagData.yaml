@@ -1,0 +1,43 @@
+name: BasicDogTagData
+type: class
+inherits: DogTagData
+
+constructors:
+  -
+    description: Creates a new BasicDogTagData frostbite instance.
+  -
+    description: Creates a new BasicDogTagData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DogTagData to BasicDogTagData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DogTagData
+        description: The instance to cast to BasicDogTagData.
+  -
+    description: Casts an instance of type UnlockAssetBase to BasicDogTagData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UnlockAssetBase
+        description: The instance to cast to BasicDogTagData.
+  -
+    description: Casts an instance of type Asset to BasicDogTagData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to BasicDogTagData.
+  -
+    description: Casts an instance of type DataContainer to BasicDogTagData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to BasicDogTagData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the BasicDogTagData type.
+

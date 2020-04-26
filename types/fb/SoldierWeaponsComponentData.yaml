@@ -1,0 +1,74 @@
+name: SoldierWeaponsComponentData
+type: class
+inherits: ComponentData
+
+constructors:
+  -
+    description: Creates a new SoldierWeaponsComponentData frostbite instance.
+  -
+    description: Creates a new SoldierWeaponsComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ComponentData to SoldierWeaponsComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to SoldierWeaponsComponentData.
+  -
+    description: Casts an instance of type GameObjectData to SoldierWeaponsComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to SoldierWeaponsComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to SoldierWeaponsComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to SoldierWeaponsComponentData.
+  -
+    description: Casts an instance of type DataContainer to SoldierWeaponsComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SoldierWeaponsComponentData.
+
+properties:
+  aimDir:
+    type: LinearTransform
+  weaponSkeleton:
+    type: SkeletonAsset
+    nullable: true
+  primaryWeaponId:
+    type: int
+  animatedWeaponBinding:
+    type: AnimatedWeaponBinding
+  animated1pOnlyWeaponBinding:
+    type: Animated1pOnlyWeaponBinding
+  animated3pOnlyWeaponBinding:
+    type: Animated3pOnlyWeaponBinding
+  lockTimeMultiplier:
+    type: float
+  grenadeIncrease:
+    type: int
+  ammoClipIncreaseMultiplier:
+    type: float
+  explosiveIncreaseMultiplier:
+    type: float
+  underslungGrenadeIncrease:
+    type: int
+  useExternalAimDir:
+    type: bool
+  unlimitedAmmo:
+    type: bool
+  unlimitedMags:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SoldierWeaponsComponentData type.
+

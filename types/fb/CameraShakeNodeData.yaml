@@ -1,0 +1,39 @@
+name: CameraShakeNodeData
+type: class
+inherits: AudioGraphNodeData
+
+constructors:
+  -
+    description: Creates a new CameraShakeNodeData frostbite instance.
+  -
+    description: Creates a new CameraShakeNodeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphNodeData to CameraShakeNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphNodeData
+        description: The instance to cast to CameraShakeNodeData.
+  -
+    description: Casts an instance of type DataContainer to CameraShakeNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to CameraShakeNodeData.
+
+properties:
+  pitch:
+    type: AudioGraphNodePort
+  yaw:
+    type: AudioGraphNodePort
+  roll:
+    type: AudioGraphNodePort
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the CameraShakeNodeData type.
+

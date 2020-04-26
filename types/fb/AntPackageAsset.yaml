@@ -1,0 +1,43 @@
+name: AntPackageAsset
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new AntPackageAsset frostbite instance.
+  -
+    description: Creates a new AntPackageAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to AntPackageAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to AntPackageAsset.
+  -
+    description: Casts an instance of type DataContainer to AntPackageAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to AntPackageAsset.
+
+properties:
+  win32FileName:
+    type: string
+  xePs3FileName:
+    type: string
+  packagingType:
+    type: AntPackagingType
+  streamingGuid:
+    type: Guid
+  chunkSize:
+    type: int
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the AntPackageAsset type.
+

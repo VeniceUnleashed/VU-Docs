@@ -1,0 +1,63 @@
+name: WingPhysicsData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new WingPhysicsData frostbite instance.
+  -
+    description: Creates a new WingPhysicsData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to WingPhysicsData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to WingPhysicsData.
+
+properties:
+  lift:
+    type: float
+  flapLift:
+    type: float
+  liftCoefficient:
+    type: Curve2D
+    nullable: true
+  drag:
+    type: float
+  flapDrag:
+    type: float
+  dragCoefficient:
+    type: Curve2D
+    nullable: true
+  angularVelocityLiftModifier:
+    type: float
+  dragRotationModifier:
+    type: float
+  baseAngleOfAttack:
+    type: float
+  inputForFlap:
+    type: int
+  flapTurnSpeed:
+    type: float
+  visualFlapTurnSpeed:
+    type: float
+  visualFlapAngleLimit:
+    type: float
+  maxFlapAngleScaleFactor:
+    type: Curve2D
+    nullable: true
+  landingFlapLift:
+    type: float
+  landingFlapLogic:
+    type: LandingFlapData
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the WingPhysicsData type.
+

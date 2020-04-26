@@ -1,0 +1,71 @@
+name: HudVehicleTrackerData
+type: class
+inherits: UIPartData
+
+constructors:
+  -
+    description: Creates a new HudVehicleTrackerData frostbite instance.
+  -
+    description: Creates a new HudVehicleTrackerData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UIPartData to HudVehicleTrackerData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIPartData
+        description: The instance to cast to HudVehicleTrackerData.
+  -
+    description: Casts an instance of type DataContainer to HudVehicleTrackerData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to HudVehicleTrackerData.
+
+properties:
+  edgePointer:
+    type: EdgePointerData
+  enemyTrackerIcon:
+    type: UIHudIcon
+  outsideScreenTrackerIcon:
+    type: UIHudIcon
+  renderTargetData:
+    type: VehicleTrackerRenderTargetData
+  missileTrackerIcon:
+    type: UIHudIcon
+  iconSize:
+    type: float
+  radarSensitivity:
+    type: float
+  heatSensitivity:
+    type: float
+  friendlyTrackerIcon:
+    type: UIHudIcon
+  laserPaintedVehicleTrackerIcon:
+    type: UIHudIcon
+  maxDistance:
+    type: float
+  distanceIconShrinkFactor:
+    type: float
+  missileLockTrackerIcon:
+    type: UIHudIcon
+  trackOnlyUsedVehicles:
+    type: bool
+  useTrackerSignatures:
+    type: bool
+  enableEdgePointers:
+    type: bool
+  trackLaserPaintedObjects:
+    type: bool
+  useCameraComponentTransform:
+    type: bool
+  showTracker:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the HudVehicleTrackerData type.
+

@@ -1,0 +1,33 @@
+name: GeographicalData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new GeographicalData frostbite instance.
+  -
+    description: Creates a new GeographicalData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to GeographicalData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to GeographicalData.
+
+properties:
+  latitude:
+    type: UIGeoLatitude
+  longitude:
+    type: UIGeoLongitude
+  seaLevelOffset:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the GeographicalData type.
+

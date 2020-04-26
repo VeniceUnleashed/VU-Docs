@@ -1,0 +1,67 @@
+name: TacticalObjectiveEntityData
+type: class
+inherits: GameEntityData
+
+constructors:
+  -
+    description: Creates a new TacticalObjectiveEntityData frostbite instance.
+  -
+    description: Creates a new TacticalObjectiveEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameEntityData to TacticalObjectiveEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to TacticalObjectiveEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to TacticalObjectiveEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to TacticalObjectiveEntityData.
+  -
+    description: Casts an instance of type EntityData to TacticalObjectiveEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to TacticalObjectiveEntityData.
+  -
+    description: Casts an instance of type GameObjectData to TacticalObjectiveEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to TacticalObjectiveEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to TacticalObjectiveEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to TacticalObjectiveEntityData.
+  -
+    description: Casts an instance of type DataContainer to TacticalObjectiveEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to TacticalObjectiveEntityData.
+
+properties:
+  missionSid:
+    type: string
+  briefingSidTeam1:
+    type: string
+  briefingSidTeam2:
+    type: string
+  team1Timer:
+    type: float
+  team2Timer:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the TacticalObjectiveEntityData type.
+

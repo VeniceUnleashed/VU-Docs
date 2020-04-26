@@ -1,0 +1,11 @@
+name: BreakableControllerComponentNetworkId
+type: enum
+
+values:
+  BreakableControllerComponentNetworkId_Collapsed:
+    value: 0
+  BreakableControllerComponentNetworkId_SpawnPartObjectsOnCollapse:
+    value: 1
+  BreakableControllerComponentNetworkId_ExtraPartCount:
+    value: 2
+

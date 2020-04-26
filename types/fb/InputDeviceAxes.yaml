@@ -1,0 +1,55 @@
+name: InputDeviceAxes
+type: enum
+
+values:
+  IDA_Axis0X:
+    value: 0
+  IDA_Axis0Y:
+    value: 1
+  IDA_Axis0XPos:
+    value: 2
+  IDA_Axis0YPos:
+    value: 3
+  IDA_Axis0XNeg:
+    value: 4
+  IDA_Axis0YNeg:
+    value: 5
+  IDA_Axis1X:
+    value: 6
+  IDA_Axis1Y:
+    value: 7
+  IDA_Axis1XPos:
+    value: 8
+  IDA_Axis1YPos:
+    value: 9
+  IDA_Axis1XNeg:
+    value: 10
+  IDA_Axis1YNeg:
+    value: 11
+  IDA_Axis2X:
+    value: 12
+  IDA_Axis2Y:
+    value: 13
+  IDA_Axis3X:
+    value: 14
+  IDA_Axis3Y:
+    value: 15
+  IDA_Axis4X:
+    value: 16
+  IDA_Axis4Y:
+    value: 17
+  IDA_Axis5X:
+    value: 18
+  IDA_Axis5Y:
+    value: 19
+  IDA_Axis6X:
+    value: 20
+  IDA_Axis6Y:
+    value: 21
+  IDA_Axis7X:
+    value: 22
+  IDA_Axis7Y:
+    value: 23
+  IDA_Undefined:
+    value: 24
+

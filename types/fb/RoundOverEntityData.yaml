@@ -1,0 +1,47 @@
+name: RoundOverEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new RoundOverEntityData frostbite instance.
+  -
+    description: Creates a new RoundOverEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to RoundOverEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to RoundOverEntityData.
+  -
+    description: Casts an instance of type GameObjectData to RoundOverEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to RoundOverEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to RoundOverEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to RoundOverEntityData.
+  -
+    description: Casts an instance of type DataContainer to RoundOverEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to RoundOverEntityData.
+
+properties:
+  team:
+    type: TeamId
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the RoundOverEntityData type.
+

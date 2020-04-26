@@ -1,0 +1,90 @@
+name: SensingSettings
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new SensingSettings frostbite instance.
+  -
+    description: Creates a new SensingSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to SensingSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to SensingSettings.
+  -
+    description: Casts an instance of type DataContainer to SensingSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SensingSettings.
+
+properties:
+  sensingTimeSpan:
+    type: float
+  attackerTrackTime:
+    type: float
+  lineOfSightTestTime:
+    type: float
+  maxRays:
+    type: int
+  characterVisionBoxSettings:
+    type: VisionBoxSettings
+  vehicleVisionBoxSettings:
+    type: VisionBoxSettings
+  closeFireImpactDistance:
+    type: float
+  closeExplosiveImpactDistance:
+    type: float
+  closeTrajectoryDistance:
+    type: float
+  impactSenseDistance:
+    type: float
+  maxVolume:
+    type: float
+  maxSize:
+    type: float
+  maxSpeed:
+    type: float
+  volumeModifier:
+    type: float
+  movementModifier:
+    type: float
+  luckModifier:
+    type: float
+  backgroundLoudnessFactor:
+    type: float
+  motionSizeFactor:
+    type: float
+  motionSpeedFactor:
+    type: float
+  motionPeripheralityFactor:
+    type: float
+  motionDistanceFactor:
+    type: float
+  smokeSphereRadius:
+    type: float
+  smokeSphereDuration:
+    type: float
+  spawnOutOfLOSRaycastHeight:
+    type: float
+  spawnOutOfLOSTraceDistance:
+    type: float
+  spawnOutOfLOSRaycastDistance:
+    type: float
+  spawnOutOfLOSRadius:
+    type: float
+  defaultTemplate:
+    type: SensingTemplateData
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SensingSettings type.
+

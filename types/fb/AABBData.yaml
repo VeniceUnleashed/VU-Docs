@@ -1,0 +1,49 @@
+name: AABBData
+type: class
+inherits: BaseShapeData
+
+constructors:
+  -
+    description: Creates a new AABBData frostbite instance.
+  -
+    description: Creates a new AABBData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type BaseShapeData to AABBData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: BaseShapeData
+        description: The instance to cast to AABBData.
+  -
+    description: Casts an instance of type GameObjectData to AABBData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to AABBData.
+  -
+    description: Casts an instance of type GameDataContainer to AABBData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to AABBData.
+  -
+    description: Casts an instance of type DataContainer to AABBData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to AABBData.
+
+properties:
+  position:
+    type: Vec3
+  halfExtents:
+    type: Vec3
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the AABBData type.
+

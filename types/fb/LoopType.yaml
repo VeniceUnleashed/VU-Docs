@@ -1,0 +1,13 @@
+name: LoopType
+type: enum
+
+values:
+  LtNone:
+    value: 0
+  LtForward:
+    value: 1
+  LtRelease:
+    value: 2
+  LtInstantRelease:
+    value: 3
+

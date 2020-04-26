@@ -1,0 +1,65 @@
+name: CharacterLightingComponentData
+type: class
+inherits: ComponentData
+
+constructors:
+  -
+    description: Creates a new CharacterLightingComponentData frostbite instance.
+  -
+    description: Creates a new CharacterLightingComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ComponentData to CharacterLightingComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to CharacterLightingComponentData.
+  -
+    description: Casts an instance of type GameObjectData to CharacterLightingComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to CharacterLightingComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to CharacterLightingComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to CharacterLightingComponentData.
+  -
+    description: Casts an instance of type DataContainer to CharacterLightingComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to CharacterLightingComponentData.
+
+properties:
+  bottomLight:
+    type: Vec3
+  topLight:
+    type: Vec3
+  characterLightingMode:
+    type: CharacterLightingMode
+  cameraUpRotation:
+    type: float
+  topLightDirY:
+    type: float
+  blendFactor:
+    type: float
+  topLightDirX:
+    type: float
+  lockToCameraDirection:
+    type: bool
+  firstPersonEnable:
+    type: bool
+  characterLightEnable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the CharacterLightingComponentData type.
+

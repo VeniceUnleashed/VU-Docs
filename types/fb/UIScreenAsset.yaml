@@ -1,0 +1,37 @@
+name: UIScreenAsset
+type: class
+inherits: UIGraphAsset
+
+constructors:
+  -
+    description: Creates a new UIScreenAsset frostbite instance.
+  -
+    description: Creates a new UIScreenAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UIGraphAsset to UIScreenAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIGraphAsset
+        description: The instance to cast to UIScreenAsset.
+  -
+    description: Casts an instance of type Asset to UIScreenAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to UIScreenAsset.
+  -
+    description: Casts an instance of type DataContainer to UIScreenAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UIScreenAsset.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UIScreenAsset type.
+

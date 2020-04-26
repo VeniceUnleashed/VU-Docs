@@ -1,0 +1,92 @@
+name: AwardData
+type: class
+inherits: AbstractAwardData
+
+constructors:
+  -
+    description: Creates a new AwardData frostbite instance.
+  -
+    description: Creates a new AwardData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AbstractAwardData to AwardData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AbstractAwardData
+        description: The instance to cast to AwardData.
+  -
+    description: Casts an instance of type TreeNodeBase to AwardData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: TreeNodeBase
+        description: The instance to cast to AwardData.
+  -
+    description: Casts an instance of type DataContainer to AwardData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to AwardData.
+
+properties:
+  filteredChildAwards:
+    type: AwardData
+    array: true
+  criteria:
+    type: CriteriaData
+    array: true
+  code:
+    type: string
+  description:
+    type: string
+  nameSid:
+    type: string
+  kitAssociation:
+    type: AwardKitAssociation
+  imageName:
+    type: string
+  imageSmallName:
+    type: string
+  imageFancyName:
+    type: string
+  soundName:
+    type: string
+  repeatValue:
+    type: AwardType
+  licenses:
+    type: string
+    array: true
+  maxRepetitions:
+    type: int
+  dependencies:
+    type: CriteriaAward
+    array: true
+  group:
+    type: AwardGroup
+  multiplicity:
+    type: StatsMultiplicity
+  unlockGates:
+    type: CriteriaGateList
+    nullable: true
+  parentAward:
+    type: AwardData
+    nullable: true
+  score:
+    type: float
+  bucket:
+    type: ScoringBucket
+  unlockInfos:
+    type: BasicUnlockInfo
+    array: true
+  activeOnCreation:
+    type: bool
+  visible:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the AwardData type.
+

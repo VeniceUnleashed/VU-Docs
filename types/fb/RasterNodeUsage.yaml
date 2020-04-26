@@ -1,0 +1,15 @@
+name: RasterNodeUsage
+type: enum
+
+values:
+  RasterNodeUsage_Default:
+    value: 0
+  RasterNodeUsage_Disabled:
+    value: 1
+  RasterNodeUsage_Persistent:
+    value: 2
+  RasterNodeUsage_PersistentDedicatedServer:
+    value: 3
+  RasterNodeUsage_Pruned:
+    value: 4
+

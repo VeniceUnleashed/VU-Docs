@@ -1,0 +1,11 @@
+name: VertexNormalSpace
+type: enum
+
+values:
+  VnsObject:
+    value: 0
+  VnsInstance:
+    value: 1
+  VnsWorld:
+    value: 2
+

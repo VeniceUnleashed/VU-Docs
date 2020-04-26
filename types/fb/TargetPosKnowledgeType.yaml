@@ -1,0 +1,11 @@
+name: TargetPosKnowledgeType
+type: enum
+
+values:
+  TargetPosKnown:
+    value: 0
+  TargetPosUnknown:
+    value: 1
+  TargetPosFind:
+    value: 2
+

@@ -1,0 +1,43 @@
+name: BusNodeData
+type: class
+inherits: SoundBusData
+
+constructors:
+  -
+    description: Creates a new BusNodeData frostbite instance.
+  -
+    description: Creates a new BusNodeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SoundBusData to BusNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SoundBusData
+        description: The instance to cast to BusNodeData.
+  -
+    description: Casts an instance of type AudioGraphNodeData to BusNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphNodeData
+        description: The instance to cast to BusNodeData.
+  -
+    description: Casts an instance of type DataContainer to BusNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to BusNodeData.
+
+properties:
+  out:
+    type: AudioGraphNodePort
+  vuPlugin:
+    type: SoundGraphPluginRef
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the BusNodeData type.
+

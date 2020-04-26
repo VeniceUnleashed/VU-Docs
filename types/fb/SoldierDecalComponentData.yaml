@@ -1,0 +1,57 @@
+name: SoldierDecalComponentData
+type: class
+inherits: ComponentData
+
+constructors:
+  -
+    description: Creates a new SoldierDecalComponentData frostbite instance.
+  -
+    description: Creates a new SoldierDecalComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ComponentData to SoldierDecalComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to SoldierDecalComponentData.
+  -
+    description: Casts an instance of type GameObjectData to SoldierDecalComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to SoldierDecalComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to SoldierDecalComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to SoldierDecalComponentData.
+  -
+    description: Casts an instance of type DataContainer to SoldierDecalComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SoldierDecalComponentData.
+
+properties:
+  splashDecal:
+    type: DecalTemplateData
+    nullable: true
+  splashRayLength:
+    type: float
+  poolDecal:
+    type: DecalTemplateData
+    nullable: true
+  poolRayYOffset:
+    type: float
+  poolRayLength:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SoldierDecalComponentData type.
+

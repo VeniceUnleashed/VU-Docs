@@ -1,0 +1,55 @@
+name: MeshAsset
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new MeshAsset frostbite instance.
+  -
+    description: Creates a new MeshAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to MeshAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to MeshAsset.
+  -
+    description: Casts an instance of type DataContainer to MeshAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MeshAsset.
+
+properties:
+  lodGroup:
+    type: MeshLodGroup
+    nullable: true
+  lodScale:
+    type: float
+  cullScale:
+    type: float
+  nameHash:
+    type: int
+  enlightenType:
+    type: EnlightenType
+  materials:
+    type: MeshMaterial
+    array: true
+  occluderHighPriority:
+    type: bool
+  streamingEnable:
+    type: bool
+  destructionMaterialEnable:
+    type: bool
+  occluderMeshEnable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MeshAsset type.
+

@@ -1,0 +1,64 @@
+name: UILevelDescriptionComponent
+type: class
+inherits: LevelDescriptionComponent
+
+constructors:
+  -
+    description: Creates a new UILevelDescriptionComponent frostbite instance.
+  -
+    description: Creates a new UILevelDescriptionComponent frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type LevelDescriptionComponent to UILevelDescriptionComponent. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: LevelDescriptionComponent
+        description: The instance to cast to UILevelDescriptionComponent.
+  -
+    description: Casts an instance of type DataContainer to UILevelDescriptionComponent. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UILevelDescriptionComponent.
+
+properties:
+  mpLoadingAssetPath:
+    type: string
+  loadingMusic:
+    type: SoundAsset
+    nullable: true
+  loadingMusicPath:
+    type: string
+  levelImagePath:
+    type: string
+  loadingImagePath:
+    type: string
+  spLoadingAssetPath:
+    type: string
+  gpsPosition:
+    type: UIGPSPosition
+  hintAsset:
+    type: GameTipAsset
+    nullable: true
+  creditsAssets:
+    type: UICreditsAsset
+    array: true
+  minimapData:
+    type: UIMinimapData
+  levelCompledStatData:
+    type: UILevelStatData
+  levelScoreStatData:
+    type: UILevelStatData
+  sortIndex:
+    type: int
+  isMenuLevel:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UILevelDescriptionComponent type.
+

@@ -1,0 +1,57 @@
+name: SpottingTargetComponentData
+type: class
+inherits: ComponentData
+
+constructors:
+  -
+    description: Creates a new SpottingTargetComponentData frostbite instance.
+  -
+    description: Creates a new SpottingTargetComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ComponentData to SpottingTargetComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to SpottingTargetComponentData.
+  -
+    description: Casts an instance of type GameObjectData to SpottingTargetComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to SpottingTargetComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to SpottingTargetComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to SpottingTargetComponentData.
+  -
+    description: Casts an instance of type DataContainer to SpottingTargetComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SpottingTargetComponentData.
+
+properties:
+  activeSpottedTime:
+    type: float
+  passiveSpottedTime:
+    type: float
+  activeSpottedTimeMultiplier:
+    type: float
+  passiveSpottedTimeMultiplier:
+    type: float
+  spotOnFireMultiplier:
+    type: float
+  targetBoundingBoxCenter:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SpottingTargetComponentData type.
+

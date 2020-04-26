@@ -1,0 +1,55 @@
+name: Or4EntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new Or4EntityData frostbite instance.
+  -
+    description: Creates a new Or4EntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to Or4EntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to Or4EntityData.
+  -
+    description: Casts an instance of type GameObjectData to Or4EntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to Or4EntityData.
+  -
+    description: Casts an instance of type GameDataContainer to Or4EntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to Or4EntityData.
+  -
+    description: Casts an instance of type DataContainer to Or4EntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to Or4EntityData.
+
+properties:
+  realm:
+    type: Realm
+  in1:
+    type: bool
+  in2:
+    type: bool
+  in3:
+    type: bool
+  in4:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the Or4EntityData type.
+

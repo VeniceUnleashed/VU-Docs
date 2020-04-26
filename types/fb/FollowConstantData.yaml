@@ -1,0 +1,49 @@
+name: FollowConstantData
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new FollowConstantData frostbite instance.
+  -
+    description: Creates a new FollowConstantData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to FollowConstantData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to FollowConstantData.
+  -
+    description: Casts an instance of type DataContainer to FollowConstantData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to FollowConstantData.
+
+properties:
+  distanceFromPlayerBeforeTeleport:
+    type: float
+  followHumanMaxDistance:
+    type: float
+  followHumanInCombatMaxDistance:
+    type: float
+  followAiMaxDistance:
+    type: float
+  followAiInCombatMaxDistance:
+    type: float
+  followMimicPoseDistance:
+    type: float
+  followInertia:
+    type: float
+  lookAwayAngle:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the FollowConstantData type.
+

@@ -1,0 +1,21 @@
+name: UIMinimapZoomState
+type: enum
+
+values:
+  UIMinimapZoomState_Default:
+    value: 0
+  UIMinimapZoomState_Overview:
+    value: 1
+  UIMinimapZoomState_CombatArea:
+    value: 2
+  UIMinimapZoomState_Mission:
+    value: 3
+  UIMinimapZoomState_Artillery:
+    value: 4
+  UIMinimapZoomState_Spawn:
+    value: 5
+  UIMinimapZoomState_ManDown:
+    value: 6
+  UIMinimapZoomState_Count:
+    value: 7
+

@@ -1,0 +1,75 @@
+name: VegetationSystemSettings
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new VegetationSystemSettings frostbite instance.
+  -
+    description: Creates a new VegetationSystemSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to VegetationSystemSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VegetationSystemSettings.
+
+properties:
+  windVariation:
+    type: float
+  windVariationRate:
+    type: float
+  windStrength:
+    type: float
+  jointTensionLimit:
+    type: float
+  forceShadowLod:
+    type: int
+  maxPreSimsPerJob:
+    type: int
+  simulationMemKbClient:
+    type: int
+  maxActiveDistance:
+    type: float
+  simulationMemKbServer:
+    type: int
+  jobCount:
+    type: int
+  jointTensionLimitIndex:
+    type: int
+  timeScale:
+    type: float
+  localInfluencesEnabled:
+    type: bool
+  subDestructionEnabled:
+    type: bool
+  dissolveEnable:
+    type: bool
+  enable:
+    type: bool
+  simulateServerSide:
+    type: bool
+  enableJobs:
+    type: bool
+  shadowMeshEnable:
+    type: bool
+  drawNodes:
+    type: bool
+  drawEnable:
+    type: bool
+  batchDrawEnable:
+    type: bool
+  destructionEnabled:
+    type: bool
+  useShadowLodOffset:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VegetationSystemSettings type.
+

@@ -1,0 +1,13 @@
+name: MipmapFilterMode
+type: enum
+
+values:
+  MipmapFilterMode_Box:
+    value: 0
+  MipmapFilterMode_Renormalize:
+    value: 1
+  MipmapFilterMode_Poisson13:
+    value: 2
+  MipmapFilterMode_Poisson13Clamped:
+    value: 3
+

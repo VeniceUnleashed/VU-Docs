@@ -1,0 +1,43 @@
+name: UIPopupType
+type: enum
+
+values:
+  PopupType_MemCard:
+    value: 0
+  PopupType_ControllerDisconnected:
+    value: 1
+  PopupType_Login:
+    value: 2
+  PopupType_TermsOfService:
+    value: 3
+  PopupType_PrivacyPolicy:
+    value: 4
+  PopupType_RevivePrompt:
+    value: 5
+  PopupType_Generic:
+    value: 6
+  PopupType_ServerReminder:
+    value: 7
+  PopupType_Error:
+    value: 8
+  PopupType_ManagePlayer:
+    value: 9
+  PopupType_Invalid:
+    value: 10
+  PopupType_IngamePlayer:
+    value: 11
+  PopupType_OnlinePass:
+    value: 12
+  PopupType_Origin:
+    value: 13
+  PopupType_UpdateAvailable:
+    value: 14
+  PopupType_Dynamic:
+    value: 15
+  PopupType_GameQueue:
+    value: 16
+  PopupType_COOPMatchmaking:
+    value: 17
+  PopupType_PromoInfo:
+    value: 18
+

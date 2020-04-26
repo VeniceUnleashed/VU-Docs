@@ -1,0 +1,73 @@
+name: GunSwayData
+type: class
+inherits: WeaponSwayData
+
+constructors:
+  -
+    description: Creates a new GunSwayData frostbite instance.
+  -
+    description: Creates a new GunSwayData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type WeaponSwayData to GunSwayData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: WeaponSwayData
+        description: The instance to cast to GunSwayData.
+  -
+    description: Casts an instance of type DataContainer to GunSwayData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to GunSwayData.
+
+properties:
+  stand:
+    type: GunSwayStandData
+  crouch:
+    type: GunSwayCrouchProneData
+  prone:
+    type: GunSwayCrouchProneData
+  proneToCrouch:
+    type: GunSwayStanceTransition
+  proneToStand:
+    type: GunSwayStanceTransition
+  crouchToProne:
+    type: GunSwayStanceTransition
+  crouchToStand:
+    type: GunSwayStanceTransition
+  standToProne:
+    type: GunSwayStanceTransition
+  standToCrouch:
+    type: GunSwayStanceTransition
+  suppressionModifierUnzoomed:
+    type: GunSwayStanceZoomModifierData
+  suppressionModifierZoomed:
+    type: GunSwayStanceZoomModifierData
+  modifiers:
+    type: GunSwayModifierData
+    array: true
+  deviationScaleFactorZoom:
+    type: float
+  gameplayDeviationScaleFactorZoom:
+    type: float
+  deviationScaleFactorNoZoom:
+    type: float
+  gameplayDeviationScaleFactorNoZoom:
+    type: float
+  shootingRecoilDecreaseScale:
+    type: float
+  firstShotRecoilMultiplier:
+    type: float
+  cameraRecoil:
+    type: CameraRecoilData
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the GunSwayData type.
+

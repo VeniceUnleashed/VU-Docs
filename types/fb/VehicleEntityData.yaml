@@ -1,0 +1,220 @@
+name: VehicleEntityData
+type: class
+inherits: ControllableEntityData
+
+constructors:
+  -
+    description: Creates a new VehicleEntityData frostbite instance.
+  -
+    description: Creates a new VehicleEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ControllableEntityData to VehicleEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ControllableEntityData
+        description: The instance to cast to VehicleEntityData.
+  -
+    description: Casts an instance of type GamePhysicsEntityData to VehicleEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GamePhysicsEntityData
+        description: The instance to cast to VehicleEntityData.
+  -
+    description: Casts an instance of type GameEntityData to VehicleEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to VehicleEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to VehicleEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to VehicleEntityData.
+  -
+    description: Casts an instance of type EntityData to VehicleEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to VehicleEntityData.
+  -
+    description: Casts an instance of type GameObjectData to VehicleEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to VehicleEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to VehicleEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to VehicleEntityData.
+  -
+    description: Casts an instance of type DataContainer to VehicleEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VehicleEntityData.
+
+properties:
+  criticallyDamagedEffectPosition:
+    type: Vec3
+  flirKeyColor:
+    type: Vec3
+  preExplosionEffectPosition:
+    type: Vec3
+  interactionOffset:
+    type: Vec3
+  disabledDamageThreshold:
+    type: float
+  controllableType:
+    type: string
+  preDestructionDamageThreshold:
+    type: float
+  rearHealthZone:
+    type: VehicleHealthZoneData
+  leftHealthZone:
+    type: VehicleHealthZoneData
+  rightHealthZone:
+    type: VehicleHealthZoneData
+  minSpeedForMineActivation:
+    type: float
+  frontHealthZone:
+    type: VehicleHealthZoneData
+  upsideDownDamage:
+    type: float
+  waterDamageOffset:
+    type: float
+  armorMultiplier:
+    type: float
+  regenerationDelayMultiplier:
+    type: float
+  regenerationRateMultiplier:
+    type: float
+  emergencyRepairHealth:
+    type: float
+  decayDelay:
+    type: float
+  decayRate:
+    type: float
+  belowWaterDamageDelay:
+    type: float
+  criticallyDamagedEffect:
+    type: EffectBlueprint
+    nullable: true
+  regenerationRate:
+    type: float
+  criticalDamageTime:
+    type: float
+  preExplosionEffect:
+    type: EffectBlueprint
+    nullable: true
+  regenerationDelay:
+    type: float
+  preExplosionTime:
+    type: float
+  explosion:
+    type: ExplosionEntityData
+    nullable: true
+  mesh:
+    type: CompositeMeshAsset
+    nullable: true
+  cockpitMesh:
+    type: ObjectBlueprint
+    nullable: true
+  velocityDamageMagnifier:
+    type: float
+  exitSpeedThreshold:
+    type: float
+  hudData:
+    type: VehicleHudData
+  nameSid:
+    type: string
+  maxPlayersInVehicle:
+    type: int
+  nametagHeightScale:
+    type: float
+  sound:
+    type: VehicleSoundData
+    nullable: true
+  upsideDownDamageDelay:
+    type: float
+  upsideDownAngle:
+    type: float
+  waterDamage:
+    type: float
+  lockingTimeMultiplier:
+    type: float
+  nametagHeightOffset:
+    type: float
+  highAltitudeLockHeight:
+    type: float
+  velocityDamageThreshold:
+    type: float
+  voiceOverInfo:
+    type: EntityVoiceOverInfo
+    nullable: true
+  exitCameraSwitchDelay:
+    type: float
+  killSoldierCollisionSpeedThreshold:
+    type: float
+  exitDirectionSpeedThreshold:
+    type: float
+  angleOfImpact:
+    type: AngleOfImpactData
+  vehicleLockableInfo:
+    type: VehicleLockableInfoData
+  flirValue:
+    type: float
+  mpMode:
+    type: MPModeData
+  ignoreSoldierCollisionNormal:
+    type: bool
+  showPlayerHealth:
+    type: bool
+  foregroundRenderCockpitMesh:
+    type: bool
+  renderVehicleMesh:
+    type: bool
+  isAffectedByEMP:
+    type: bool
+  throwOutSoldierInsideOnWaterDamage:
+    type: bool
+  useAsTeamSpawner:
+    type: bool
+  isLockable:
+    type: bool
+  choseExitPointByDirection:
+    type: bool
+  healthZonesShareDamage:
+    type: bool
+  neverReportVehicleAsEmpty:
+    type: bool
+  exitAllowed:
+    type: bool
+  useLowAltitudeHeatSignature:
+    type: bool
+  allowVehicleOutsideCombatAreas:
+    type: bool
+  enableGroundmapLighting:
+    type: bool
+  motionBlurMask:
+    type: bool
+  useProtectedShields:
+    type: bool
+  useDriverEyePosForNametagPos:
+    type: bool
+  equipmentFakeVehicle:
+    type: bool
+  explosionPacksAttachable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VehicleEntityData type.
+

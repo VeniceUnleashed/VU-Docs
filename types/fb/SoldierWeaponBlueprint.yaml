@@ -1,0 +1,55 @@
+name: SoldierWeaponBlueprint
+type: class
+inherits: ObjectBlueprint
+
+constructors:
+  -
+    description: Creates a new SoldierWeaponBlueprint frostbite instance.
+  -
+    description: Creates a new SoldierWeaponBlueprint frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ObjectBlueprint to SoldierWeaponBlueprint. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ObjectBlueprint
+        description: The instance to cast to SoldierWeaponBlueprint.
+  -
+    description: Casts an instance of type Blueprint to SoldierWeaponBlueprint. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Blueprint
+        description: The instance to cast to SoldierWeaponBlueprint.
+  -
+    description: Casts an instance of type EntityBusData to SoldierWeaponBlueprint. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityBusData
+        description: The instance to cast to SoldierWeaponBlueprint.
+  -
+    description: Casts an instance of type DataBusData to SoldierWeaponBlueprint. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataBusData
+        description: The instance to cast to SoldierWeaponBlueprint.
+  -
+    description: Casts an instance of type Asset to SoldierWeaponBlueprint. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to SoldierWeaponBlueprint.
+  -
+    description: Casts an instance of type DataContainer to SoldierWeaponBlueprint. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SoldierWeaponBlueprint.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SoldierWeaponBlueprint type.
+

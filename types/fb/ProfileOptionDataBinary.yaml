@@ -1,0 +1,41 @@
+name: ProfileOptionDataBinary
+type: class
+inherits: ProfileOptionData
+
+constructors:
+  -
+    description: Creates a new ProfileOptionDataBinary frostbite instance.
+  -
+    description: Creates a new ProfileOptionDataBinary frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ProfileOptionData to ProfileOptionDataBinary. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ProfileOptionData
+        description: The instance to cast to ProfileOptionDataBinary.
+  -
+    description: Casts an instance of type Asset to ProfileOptionDataBinary. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to ProfileOptionDataBinary.
+  -
+    description: Casts an instance of type DataContainer to ProfileOptionDataBinary. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ProfileOptionDataBinary.
+
+properties:
+  maxLength:
+    type: int
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ProfileOptionDataBinary type.
+

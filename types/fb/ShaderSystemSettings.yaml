@@ -1,0 +1,307 @@
+name: ShaderSystemSettings
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new ShaderSystemSettings frostbite instance.
+  -
+    description: Creates a new ShaderSystemSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to ShaderSystemSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ShaderSystemSettings.
+
+properties:
+  debugNonFiniteColor:
+    type: Vec3
+  dxInstancingBufferHandlingMethod:
+    type: int
+  frameMemoryBufferSize:
+    type: int
+  xenonDispatchCmdBufferSize:
+    type: int
+  xenonDispatchCmdBufferSegmentSize:
+    type: int
+  dxDispatchJobBlocksPerCommandList:
+    type: int
+  dxDispatchJobMinBlockCount:
+    type: int
+  dxFrameVertexBufferPoolSize:
+    type: int
+  xenonDispatchOnlyJob:
+    type: int
+  dxVsExternalConstantBufferSize:
+    type: int
+  dxVsFunctionConstantBufferSize:
+    type: int
+  dxPsFunctionConstantBufferSize:
+    type: int
+  ps3GeometryYieldGranularity:
+    type: float
+  xenonDispatchJobCount:
+    type: int
+  dispatchPrepareJobCount:
+    type: int
+  ps3MinMipmap:
+    type: int
+  ps3ZCullInFrontLimit:
+    type: int
+  ps3ZCullBehindLimit:
+    type: int
+  ps3DispatchOnlyJob:
+    type: int
+  ps3DispatchJobSpuCount:
+    type: int
+  dxMaxInstructionCount:
+    type: int
+  overdrawMaxLayerCount:
+    type: int
+  ps3GeometryJobCount:
+    type: int
+  dxMaxInstanceCount:
+    type: int
+  ps3DispatchYieldGranularity:
+    type: float
+  dxPsExternalConstantBufferSize:
+    type: int
+  xenonDispatchBlocksPerJob:
+    type: int
+  ps3DispatchJobCount:
+    type: int
+  dxDispatchJobCount:
+    type: int
+  drawCallMultiplier:
+    type: int
+  ps3MaxMipmap:
+    type: int
+  mipmapBias:
+    type: float
+  maxAnisotropy:
+    type: int
+  zOnlyMaxAnisotropy:
+    type: int
+  xenonTrilinearThreshold:
+    type: int
+  ps3DispatchJobPriority:
+    type: int
+  xenonDispatchMinJobBlockCount:
+    type: int
+  ps3GeometryJobSpuCount:
+    type: int
+  ps3DispatchBlocksPerJob:
+    type: int
+  ps3GeometryJobPriority:
+    type: int
+  singlePrimitiveEnable:
+    type: bool
+  sortBlocksEnable:
+    type: bool
+  drawCallEnable:
+    type: bool
+  gcmReplayMarkersEnable:
+    type: bool
+  clipPlanesEnable:
+    type: bool
+  depthTestEnable:
+    type: bool
+  stencilEnable:
+    type: bool
+  shaderPixScopeEnable:
+    type: bool
+  singleFrameBlockLogEnable:
+    type: bool
+  alphaBlendEnable:
+    type: bool
+  pixBlockEventsEnable:
+    type: bool
+  simpleTexturesEnable:
+    type: bool
+  simpleVertexShaderEnable:
+    type: bool
+  pseudoInstancingEnable:
+    type: bool
+  statesEnable:
+    type: bool
+  pixelConstantsEnable:
+    type: bool
+  vertexConstantsEnable:
+    type: bool
+  pixelConstantRedundancyCheckingEnable:
+    type: bool
+  vertexConstantRedundancyCheckingEnable:
+    type: bool
+  simpleTextureFilteringEnable:
+    type: bool
+  depthWriteEnable:
+    type: bool
+  dispatchDirectEnable:
+    type: bool
+  drawTileClassifiedBlocks:
+    type: bool
+  depthEnable:
+    type: bool
+  drawStreamedTextureBlocks:
+    type: bool
+  forcePointFiltering:
+    type: bool
+  logEnable:
+    type: bool
+  zeroViewportEnable:
+    type: bool
+  drawTransparentDecal:
+    type: bool
+  singleFrameLogEnable:
+    type: bool
+  singleFrameLogOverwrite:
+    type: bool
+  forceDoubleSided:
+    type: bool
+  onDemandMonitoringEnable:
+    type: bool
+  ps3PixelShaderRedundancyCheckingEnable:
+    type: bool
+  ps3PixelShaderHashStoreEnable:
+    type: bool
+  ps3DispatchPrepareSpuJobEnable:
+    type: bool
+  ps3DispatchSetupSpuJobEnable:
+    type: bool
+  ps3GeometryJobEnable:
+    type: bool
+  databaseLoadingEnable:
+    type: bool
+  simplePixelShaderEnable:
+    type: bool
+  ps3GeometryJobWithoutDispatchJobEnable:
+    type: bool
+  ps3GeometryDebugRenderEnable:
+    type: bool
+  boneConstantOptimizationEnable:
+    type: bool
+  ps3DrawEdgeGeometryEnable:
+    type: bool
+  ps3DrawNonEdgeGeometryEnable:
+    type: bool
+  ps3TriangleCullEnable:
+    type: bool
+  ps3TriangleFrustumCullEnable:
+    type: bool
+  ps3TriangleBackfaceCullEnable:
+    type: bool
+  ps3TriangleCullZPassEnable:
+    type: bool
+  ps3TriangleCullDoubleSidedEnable:
+    type: bool
+  ps3TriangleCull1BoneSkinningEnable:
+    type: bool
+  ps3TriangleCull4BoneSkinningEnable:
+    type: bool
+  ps3TrianglePartCullEnable:
+    type: bool
+  ps3DrawBlockCullEnable:
+    type: bool
+  ps3PartitionFrustumCullEnable:
+    type: bool
+  ps3PartitionClipPlaneCullEnable:
+    type: bool
+  ps3PartitionVolumeCullEnable:
+    type: bool
+  ps3SpuInstancingEnable:
+    type: bool
+  ps3SpuClipPlaneRejectEnable:
+    type: bool
+  ps3SpuCullVolumesEnable:
+    type: bool
+  ps3DispatchJobEnable:
+    type: bool
+  onDemandBuildingEnable:
+    type: bool
+  onDemandPrimingEnable:
+    type: bool
+  dispatchExecuteEnable:
+    type: bool
+  textureGammaCorrectionEnable:
+    type: bool
+  tileClassificationEnable:
+    type: bool
+  ps3DispatchSpuBufferLinkingEnable:
+    type: bool
+  ps3DispatchFrameBlockEnable:
+    type: bool
+  ps3SCullEnable:
+    type: bool
+  ps3ZCullEnable:
+    type: bool
+  drawInstancedBlocks:
+    type: bool
+  dispatchPrepareBlockEnable:
+    type: bool
+  drawNonInstancedBlocks:
+    type: bool
+  drawNonStreamedTextureBlocks:
+    type: bool
+  ps3TxpDemotionEnable:
+    type: bool
+  ps3CmdBufVertexShaderInlineEnable:
+    type: bool
+  ps3CmdBufClearEnable:
+    type: bool
+  ps3SpuYieldingEnable:
+    type: bool
+  xenonDispatchJobEnable:
+    type: bool
+  drawInlineBlocks:
+    type: bool
+  ps3FlushEnable:
+    type: bool
+  ps3FinishEnable:
+    type: bool
+  dxMultisampleEnable:
+    type: bool
+  dxTransparencySupersamplingEnable:
+    type: bool
+  dxSamplerStatesEnable:
+    type: bool
+  dxBatchedSamplerStatesEnable:
+    type: bool
+  dxBatchedTexturesEnable:
+    type: bool
+  dxStatesEnable:
+    type: bool
+  drawOpaqueAlphaTestSimple:
+    type: bool
+  flushEnable:
+    type: bool
+  drawTransparent:
+    type: bool
+  drawAdvancedStats:
+    type: bool
+  dxParallelShaderLoadingEnable:
+    type: bool
+  dxDelayedShaderLoadingEnable:
+    type: bool
+  drawOpaque:
+    type: bool
+  drawOpaqueAlphaTest:
+    type: bool
+  xenonHiZEnable:
+    type: bool
+  drawZOnly:
+    type: bool
+  drawStats:
+    type: bool
+  xenonDispatchBlockOnCmdBufEnable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ShaderSystemSettings type.
+

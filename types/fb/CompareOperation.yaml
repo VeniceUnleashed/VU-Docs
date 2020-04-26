@@ -1,0 +1,17 @@
+name: CompareOperation
+type: enum
+
+values:
+  Equal:
+    value: 0
+  NotEqual:
+    value: 1
+  LesserEqual:
+    value: 2
+  GreaterEqual:
+    value: 3
+  Lesser:
+    value: 4
+  Greater:
+    value: 5
+

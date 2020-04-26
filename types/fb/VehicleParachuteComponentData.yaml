@@ -1,0 +1,55 @@
+name: VehicleParachuteComponentData
+type: class
+inherits: ComponentData
+
+constructors:
+  -
+    description: Creates a new VehicleParachuteComponentData frostbite instance.
+  -
+    description: Creates a new VehicleParachuteComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ComponentData to VehicleParachuteComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to VehicleParachuteComponentData.
+  -
+    description: Casts an instance of type GameObjectData to VehicleParachuteComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to VehicleParachuteComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to VehicleParachuteComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to VehicleParachuteComponentData.
+  -
+    description: Casts an instance of type DataContainer to VehicleParachuteComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VehicleParachuteComponentData.
+
+properties:
+  binding:
+    type: VehicleParachuteBinding
+  undeployTime:
+    type: float
+  timeInvisibleAfterSpawn:
+    type: float
+  vehicleType:
+    type: int
+  dropParachuteOnUndeploy:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VehicleParachuteComponentData type.
+

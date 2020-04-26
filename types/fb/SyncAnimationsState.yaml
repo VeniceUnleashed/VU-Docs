@@ -1,0 +1,13 @@
+name: SyncAnimationsState
+type: enum
+
+values:
+  Idle:
+    value: 0
+  Play:
+    value: 1
+  Skip:
+    value: 2
+  Stop:
+    value: 3
+

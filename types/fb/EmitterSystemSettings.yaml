@@ -1,0 +1,117 @@
+name: EmitterSystemSettings
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new EmitterSystemSettings frostbite instance.
+  -
+    description: Creates a new EmitterSystemSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to EmitterSystemSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to EmitterSystemSettings.
+
+properties:
+  meshDrawCountLimit:
+    type: int
+  timeScale:
+    type: float
+  globalResetStartTimeInterval:
+    type: float
+  quadHalfResSlice2ThresholdLow:
+    type: float
+  quadHalfResSlice2ThresholdHigh:
+    type: float
+  quadHalfResSlice1ThresholdLow:
+    type: float
+  quadHalfResSlice1ThresholdHigh:
+    type: float
+  debugOverdrawCount:
+    type: int
+  drawStats:
+    type: int
+  meshStreamingPriorityMultiplier:
+    type: float
+  quadZOcclusionBias:
+    type: float
+  drawBoundingBoxes:
+    type: int
+  minScreenArea:
+    type: float
+  quadNearFadeDistance:
+    type: float
+  quadTechnique:
+    type: int
+  meshCullingDistance:
+    type: float
+  enableFixedTimeStep:
+    type: bool
+  zBufferCullEnable:
+    type: bool
+  quadEnableOverdrawRendering:
+    type: bool
+  quadColorShaderCostsEnable:
+    type: bool
+  drawProjectedBoxes:
+    type: bool
+  quadSimpleRenderingEnable:
+    type: bool
+  enableJobs:
+    type: bool
+  enableRendering:
+    type: bool
+  quadHalfResEnable:
+    type: bool
+  quadEnableRendering:
+    type: bool
+  enableFixedDelta:
+    type: bool
+  quadClipScaleEnable:
+    type: bool
+  quadNiceRenderingEnable:
+    type: bool
+  quadGroupsJoinAll:
+    type: bool
+  quadGroupsJoinNone:
+    type: bool
+  quadGroupsJoinNiceAndSimple:
+    type: bool
+  quadEnableOpaque:
+    type: bool
+  quadVertexShadowsEnable:
+    type: bool
+  quadPointLightsEnable:
+    type: bool
+  quadSpotLightsEnable:
+    type: bool
+  quadEnableSorting:
+    type: bool
+  meshRenderingEnable:
+    type: bool
+  meshDrawTransforms:
+    type: bool
+  meshDrawBoundingBoxes:
+    type: bool
+  meshShadowEnable:
+    type: bool
+  quadEnableWireframe:
+    type: bool
+  enable:
+    type: bool
+  quadEnableZOcclusion:
+    type: bool
+  meshDrawCullStats:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the EmitterSystemSettings type.
+

@@ -1,0 +1,62 @@
+name: WarningSystemComponentData
+type: class
+inherits: ComponentData
+
+constructors:
+  -
+    description: Creates a new WarningSystemComponentData frostbite instance.
+  -
+    description: Creates a new WarningSystemComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ComponentData to WarningSystemComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to WarningSystemComponentData.
+  -
+    description: Casts an instance of type GameObjectData to WarningSystemComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to WarningSystemComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to WarningSystemComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to WarningSystemComponentData.
+  -
+    description: Casts an instance of type DataContainer to WarningSystemComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to WarningSystemComponentData.
+
+properties:
+  aimWarnSoundEffect:
+    type: SoundAsset
+    nullable: true
+  missileWarnSoundEffect:
+    type: SoundAsset
+    nullable: true
+  lowHealthWarnSoundEffect:
+    type: SoundAsset
+    nullable: true
+  lockingWarnSoundEffect:
+    type: SoundAsset
+    nullable: true
+  lockedWarnSoundEffect:
+    type: SoundAsset
+    nullable: true
+  playerType:
+    type: WarningPlayerType
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the WarningSystemComponentData type.
+

@@ -1,0 +1,11 @@
+name: VoiceOverConversationQueueMode
+type: enum
+
+values:
+  VoiceOverConversationQueueMode_Always:
+    value: 0
+  VoiceOverConversationQueueMode_Never:
+    value: 1
+  VoiceOverConversationQueueMode_SamePriority:
+    value: 2
+

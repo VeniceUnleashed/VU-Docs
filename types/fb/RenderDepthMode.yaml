@@ -1,0 +1,13 @@
+name: RenderDepthMode
+type: enum
+
+values:
+  RenderDepthMode_Disabled:
+    value: 0
+  RenderDepthMode_ReadOnly:
+    value: 1
+  RenderDepthMode_ReadAndWrite:
+    value: 2
+  RenderDepthMode_WriteOnly:
+    value: 3
+

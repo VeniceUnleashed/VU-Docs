@@ -1,0 +1,9 @@
+name: DTagUploadPolicy
+type: enum
+
+values:
+  DTUP_FirstTimeSeenAndEndOfRound:
+    value: 0
+  DTUP_Always:
+    value: 1
+

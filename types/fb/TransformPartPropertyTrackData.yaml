@@ -1,0 +1,49 @@
+name: TransformPartPropertyTrackData
+type: class
+inherits: PropertyTrackData
+
+constructors:
+  -
+    description: Creates a new TransformPartPropertyTrackData frostbite instance.
+  -
+    description: Creates a new TransformPartPropertyTrackData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type PropertyTrackData to TransformPartPropertyTrackData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: PropertyTrackData
+        description: The instance to cast to TransformPartPropertyTrackData.
+  -
+    description: Casts an instance of type DataContainer to TransformPartPropertyTrackData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to TransformPartPropertyTrackData.
+
+properties:
+  transformPart:
+    type: TransformPart
+  preInfinity:
+    type: CurveInfinityType
+  postInfinity:
+    type: CurveInfinityType
+  keyStartIndex:
+    type: int
+  resourceName:
+    type: string
+  keyCount:
+    type: int
+  weighted:
+    type: bool
+  isStatic:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the TransformPartPropertyTrackData type.
+

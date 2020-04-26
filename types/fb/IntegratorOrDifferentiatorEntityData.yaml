@@ -1,0 +1,59 @@
+name: IntegratorOrDifferentiatorEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new IntegratorOrDifferentiatorEntityData frostbite instance.
+  -
+    description: Creates a new IntegratorOrDifferentiatorEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to IntegratorOrDifferentiatorEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to IntegratorOrDifferentiatorEntityData.
+  -
+    description: Casts an instance of type GameObjectData to IntegratorOrDifferentiatorEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to IntegratorOrDifferentiatorEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to IntegratorOrDifferentiatorEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to IntegratorOrDifferentiatorEntityData.
+  -
+    description: Casts an instance of type DataContainer to IntegratorOrDifferentiatorEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to IntegratorOrDifferentiatorEntityData.
+
+properties:
+  realm:
+    type: Realm
+  updatePass:
+    type: EntityUpdateOrder
+  startValue:
+    type: float
+  input:
+    type: float
+  maxValue:
+    type: float
+  minValue:
+    type: float
+  bounded:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the IntegratorOrDifferentiatorEntityData type.
+

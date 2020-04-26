@@ -1,0 +1,58 @@
+name: SoldierEntryComponentData
+type: class
+inherits: EntryComponentData
+
+constructors:
+  -
+    description: Creates a new SoldierEntryComponentData frostbite instance.
+  -
+    description: Creates a new SoldierEntryComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntryComponentData to SoldierEntryComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntryComponentData
+        description: The instance to cast to SoldierEntryComponentData.
+  -
+    description: Casts an instance of type ComponentData to SoldierEntryComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to SoldierEntryComponentData.
+  -
+    description: Casts an instance of type GameObjectData to SoldierEntryComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to SoldierEntryComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to SoldierEntryComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to SoldierEntryComponentData.
+  -
+    description: Casts an instance of type DataContainer to SoldierEntryComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SoldierEntryComponentData.
+
+properties:
+  aimingConstraints:
+    type: AimingConstraintsData
+  antEntryEnumeration:
+    type: AntEnumeration
+    nullable: true
+  alignConstraintsToEntity:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SoldierEntryComponentData type.
+

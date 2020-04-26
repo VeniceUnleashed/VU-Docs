@@ -1,0 +1,63 @@
+name: ChangeReadinessOrderEntityData
+type: class
+inherits: BFOrderEntityData
+
+constructors:
+  -
+    description: Creates a new ChangeReadinessOrderEntityData frostbite instance.
+  -
+    description: Creates a new ChangeReadinessOrderEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type BFOrderEntityData to ChangeReadinessOrderEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: BFOrderEntityData
+        description: The instance to cast to ChangeReadinessOrderEntityData.
+  -
+    description: Casts an instance of type OrderEntityData to ChangeReadinessOrderEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: OrderEntityData
+        description: The instance to cast to ChangeReadinessOrderEntityData.
+  -
+    description: Casts an instance of type EntityData to ChangeReadinessOrderEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to ChangeReadinessOrderEntityData.
+  -
+    description: Casts an instance of type GameObjectData to ChangeReadinessOrderEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to ChangeReadinessOrderEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to ChangeReadinessOrderEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to ChangeReadinessOrderEntityData.
+  -
+    description: Casts an instance of type DataContainer to ChangeReadinessOrderEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ChangeReadinessOrderEntityData.
+
+properties:
+  pulse:
+    type: ReadinessLevel
+  minimum:
+    type: ReadinessLevel
+  allowDecrease:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ChangeReadinessOrderEntityData type.
+

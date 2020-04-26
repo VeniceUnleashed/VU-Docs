@@ -1,0 +1,51 @@
+name: PersistenceSettings
+type: class
+inherits: SystemSettings
+
+constructors:
+  -
+    description: Creates a new PersistenceSettings frostbite instance.
+  -
+    description: Creates a new PersistenceSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SystemSettings to PersistenceSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SystemSettings
+        description: The instance to cast to PersistenceSettings.
+  -
+    description: Casts an instance of type DataContainer to PersistenceSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PersistenceSettings.
+
+properties:
+  statCategoryTreeCollection:
+    type: StatCategoryTreeCollection
+    nullable: true
+  mpProfile:
+    type: PlayerTypeProfile
+    nullable: true
+  spProfile:
+    type: PlayerTypeProfile
+    nullable: true
+  coopProfile:
+    type: PlayerTypeProfile
+    nullable: true
+  pointSystemParams:
+    type: PointSystemParamsAsset
+    nullable: true
+  licenseConfig:
+    type: LicenseConfiguration
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PersistenceSettings type.
+

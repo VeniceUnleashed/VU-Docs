@@ -1,0 +1,59 @@
+name: VoiceOverDistanceNode
+type: class
+inherits: VoiceOverExpressionNode
+
+constructors:
+  -
+    description: Creates a new VoiceOverDistanceNode frostbite instance.
+  -
+    description: Creates a new VoiceOverDistanceNode frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type VoiceOverExpressionNode to VoiceOverDistanceNode. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: VoiceOverExpressionNode
+        description: The instance to cast to VoiceOverDistanceNode.
+  -
+    description: Casts an instance of type VoiceOverNode to VoiceOverDistanceNode. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: VoiceOverNode
+        description: The instance to cast to VoiceOverDistanceNode.
+  -
+    description: Casts an instance of type DataContainer to VoiceOverDistanceNode. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VoiceOverDistanceNode.
+
+properties:
+  a:
+    type: VoiceOverValueConnection
+    nullable: true
+  b:
+    type: VoiceOverValueConnection
+    nullable: true
+  threshold:
+    type: VoiceOverValueConnection
+    nullable: true
+  distance:
+    type: VoiceOverValue
+    nullable: true
+  falseValue:
+    type: VoiceOverValue
+    nullable: true
+  trueValue:
+    type: VoiceOverValue
+    nullable: true
+  operation:
+    type: VoiceOverCompareExpressionType
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VoiceOverDistanceNode type.
+

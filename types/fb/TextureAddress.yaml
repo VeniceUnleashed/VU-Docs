@@ -1,0 +1,15 @@
+name: TextureAddress
+type: enum
+
+values:
+  TaWrap:
+    value: 0
+  TaMirror:
+    value: 1
+  TaClamp:
+    value: 2
+  TaBorder:
+    value: 4
+  TaMirrorOnce:
+    value: 5
+

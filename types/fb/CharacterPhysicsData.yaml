@@ -1,0 +1,71 @@
+name: CharacterPhysicsData
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new CharacterPhysicsData frostbite instance.
+  -
+    description: Creates a new CharacterPhysicsData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to CharacterPhysicsData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to CharacterPhysicsData.
+  -
+    description: Casts an instance of type DataContainer to CharacterPhysicsData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to CharacterPhysicsData.
+
+properties:
+  poses:
+    type: CharacterPoseData
+    array: true
+  states:
+    type: CharacterStateData
+    array: true
+  defaultState:
+    type: CharacterStateType
+  sprint:
+    type: CharacterSprintData
+    nullable: true
+  materialPair:
+    type: MaterialContainerPair
+    nullable: true
+  pushableObjectWeight:
+    type: int
+  mass:
+    type: float
+  maxAscendAngle:
+    type: float
+  physicalRadius:
+    type: float
+  waterDepthLimit:
+    type: float
+  inputAcceleration:
+    type: float
+  ladderAcceptAngle:
+    type: float
+  ladderAcceptAnglePitch:
+    type: float
+  jumpPenaltyTime:
+    type: float
+  jumpPenaltyFactor:
+    type: float
+  radiusToPredictCollisionOnCharacters:
+    type: float
+  allowPoseChangeDuringTransition:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the CharacterPhysicsData type.
+

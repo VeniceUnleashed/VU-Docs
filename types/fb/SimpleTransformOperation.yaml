@@ -1,0 +1,45 @@
+name: SimpleTransformOperation
+type: enum
+
+values:
+  SimpleTransformOperation_Add:
+    value: 0
+  SimpleTransformOperation_Subtract:
+    value: 1
+  SimpleTransformOperation_Multiply:
+    value: 2
+  SimpleTransformOperation_Divide:
+    value: 3
+  SimpleTransformOperation_Sine:
+    value: 4
+  SimpleTransformOperation_Cosine:
+    value: 5
+  SimpleTransformOperation_ArcSine:
+    value: 6
+  SimpleTransformOperation_ArcCosine:
+    value: 7
+  SimpleTransformOperation_Modulus:
+    value: 8
+  SimpleTransformOperation_Round:
+    value: 9
+  SimpleTransformOperation_Floor:
+    value: 10
+  SimpleTransformOperation_Ceiling:
+    value: 11
+  SimpleTransformOperation_Power:
+    value: 12
+  SimpleTransformOperation_SquareRoot:
+    value: 13
+  SimpleTransformOperation_Absolute:
+    value: 14
+  SimpleTransformOperation_Exp:
+    value: 15
+  SimpleTransformOperation_Log:
+    value: 16
+  SimpleTransformOperation_Log10:
+    value: 17
+  SimpleTransformOperation_Tangent:
+    value: 18
+  SimpleTransformOperation_ArcTangent:
+    value: 19
+

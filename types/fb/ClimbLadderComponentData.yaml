@@ -1,0 +1,53 @@
+name: ClimbLadderComponentData
+type: class
+inherits: ComponentData
+
+constructors:
+  -
+    description: Creates a new ClimbLadderComponentData frostbite instance.
+  -
+    description: Creates a new ClimbLadderComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ComponentData to ClimbLadderComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to ClimbLadderComponentData.
+  -
+    description: Casts an instance of type GameObjectData to ClimbLadderComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to ClimbLadderComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to ClimbLadderComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to ClimbLadderComponentData.
+  -
+    description: Casts an instance of type DataContainer to ClimbLadderComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ClimbLadderComponentData.
+
+properties:
+  climbPhase:
+    type: int
+  connectPhase:
+    type: int
+  connectJointDisplacement:
+    type: float
+  binding:
+    type: ClimbLadderBinding
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ClimbLadderComponentData type.
+

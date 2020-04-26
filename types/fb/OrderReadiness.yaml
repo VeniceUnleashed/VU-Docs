@@ -1,0 +1,37 @@
+name: OrderReadiness
+type: class
+inherits: UrgencyUserData
+
+constructors:
+  -
+    description: Creates a new OrderReadiness frostbite instance.
+  -
+    description: Creates a new OrderReadiness frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UrgencyUserData to OrderReadiness. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UrgencyUserData
+        description: The instance to cast to OrderReadiness.
+  -
+    description: Casts an instance of type DataContainer to OrderReadiness. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to OrderReadiness.
+
+properties:
+  orderType:
+    type: string
+  minimumReadiness:
+    type: ReadinessState
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the OrderReadiness type.
+

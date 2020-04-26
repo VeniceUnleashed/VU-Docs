@@ -1,0 +1,27 @@
+name: ShaderDepthBiasGroup
+type: enum
+
+values:
+  ShaderDepthBiasGroup_Default:
+    value: 0
+  ShaderDepthBiasGroup_Decal:
+    value: 1
+  ShaderDepthBiasGroup_EmitterOcclusion:
+    value: 2
+  ShaderDepthBiasGroup_EdgeModel:
+    value: 3
+  ShaderDepthBiasGroup_TerrainDecal:
+    value: 4
+  ShaderDepthBiasGroup_TerrainDecalZPass:
+    value: 5
+  ShaderDepthBiasGroup_Shadow16Bit:
+    value: 6
+  ShaderDepthBiasGroup_Shadow24Bit:
+    value: 7
+  ShaderDepthBiasGroup_ZPass:
+    value: 8
+  ShaderDepthBiasGroup_Emissive:
+    value: 9
+  ShaderDepthBiasGroupCount:
+    value: 10
+

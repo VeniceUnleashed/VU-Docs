@@ -1,0 +1,65 @@
+name: GearboxConfigData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new GearboxConfigData frostbite instance.
+  -
+    description: Creates a new GearboxConfigData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to GearboxConfigData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to GearboxConfigData.
+
+properties:
+  forwardGearRatios:
+    type: float
+    array: true
+  forwardGearSpeeds:
+    type: float
+    array: true
+  reverseGearRatios:
+    type: float
+    array: true
+  reverseGearSpeeds:
+    type: float
+    array: true
+  gearboxType:
+    type: int
+  gearboxMode:
+    type: int
+  gearChangeTime:
+    type: float
+  gearDownSpeedFactor:
+    type: float
+  oppositeDirGearChangeMaxSpeed:
+    type: float
+  oppositeDirGearChangeTime:
+    type: float
+  clutchSpeedFactor:
+    type: float
+  transmissionEfficiency:
+    type: float
+  backwardThrottleLimit:
+    type: float
+  useClassicGearBoxAutoClutch:
+    type: bool
+  useNeutralGear:
+    type: bool
+  limitBackwardThrottle:
+    type: bool
+  useAutoClutch:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the GearboxConfigData type.
+

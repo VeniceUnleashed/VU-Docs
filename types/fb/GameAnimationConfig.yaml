@@ -1,0 +1,39 @@
+name: GameAnimationConfig
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new GameAnimationConfig frostbite instance.
+  -
+    description: Creates a new GameAnimationConfig frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to GameAnimationConfig. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to GameAnimationConfig.
+  -
+    description: Casts an instance of type DataContainer to GameAnimationConfig. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to GameAnimationConfig.
+
+properties:
+  serverEnable:
+    type: bool
+  clientEnable:
+    type: bool
+  useRawGamepadInput:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the GameAnimationConfig type.
+

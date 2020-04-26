@@ -1,0 +1,41 @@
+name: VaultWaypointData
+type: class
+inherits: AbstractLocoWaypointData
+
+constructors:
+  -
+    description: Creates a new VaultWaypointData frostbite instance.
+  -
+    description: Creates a new VaultWaypointData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AbstractLocoWaypointData to VaultWaypointData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AbstractLocoWaypointData
+        description: The instance to cast to VaultWaypointData.
+  -
+    description: Casts an instance of type WaypointData to VaultWaypointData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: WaypointData
+        description: The instance to cast to VaultWaypointData.
+  -
+    description: Casts an instance of type DataContainer to VaultWaypointData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VaultWaypointData.
+
+properties:
+  vaultTask:
+    type: AILocoVaultTaskData
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VaultWaypointData type.
+

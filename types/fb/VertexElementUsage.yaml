@@ -1,0 +1,177 @@
+name: VertexElementUsage
+type: enum
+
+values:
+  VertexElementUsage_Unknown:
+    value: 0
+  VertexElementUsage_Pos:
+    value: 1
+  VertexElementUsage_BoneIndices:
+    value: 2
+  VertexElementUsage_BoneIndices2:
+    value: 3
+  VertexElementUsage_BoneWeights:
+    value: 4
+  VertexElementUsage_BoneWeights2:
+    value: 5
+  VertexElementUsage_Normal:
+    value: 6
+  VertexElementUsage_Tangent:
+    value: 7
+  VertexElementUsage_Binormal:
+    value: 8
+  VertexElementUsage_BinormalSign:
+    value: 9
+  VertexElementUsage_WorldTrans1:
+    value: 10
+  VertexElementUsage_WorldTrans2:
+    value: 11
+  VertexElementUsage_WorldTrans3:
+    value: 12
+  VertexElementUsage_InstanceId:
+    value: 13
+  VertexElementUsage_InstanceUserData0:
+    value: 14
+  VertexElementUsage_InstanceUserData1:
+    value: 15
+  VertexElementUsage_XenonIndex:
+    value: 16
+  VertexElementUsage_XenonBarycentric:
+    value: 17
+  VertexElementUsage_XenonQuadID:
+    value: 18
+  VertexElementUsage_Index:
+    value: 19
+  VertexElementUsage_ViewIndex:
+    value: 20
+  VertexElementUsage_Color0:
+    value: 30
+  VertexElementUsage_Color1:
+    value: 31
+  VertexElementUsage_TexCoord0:
+    value: 33
+  VertexElementUsage_TexCoord1:
+    value: 34
+  VertexElementUsage_TexCoord2:
+    value: 35
+  VertexElementUsage_TexCoord3:
+    value: 36
+  VertexElementUsage_TexCoord4:
+    value: 37
+  VertexElementUsage_TexCoord5:
+    value: 38
+  VertexElementUsage_TexCoord6:
+    value: 39
+  VertexElementUsage_TexCoord7:
+    value: 40
+  VertexElementUsage_RadiosityTexCoord:
+    value: 41
+  VertexElementUsage_VisInfo:
+    value: 42
+  VertexElementUsage_SpriteSize:
+    value: 43
+  VertexElementUsage_PackedTexCoord0:
+    value: 44
+  VertexElementUsage_PackedTexCoord1:
+    value: 45
+  VertexElementUsage_PackedTexCoord2:
+    value: 46
+  VertexElementUsage_PackedTexCoord3:
+    value: 47
+  VertexElementUsage_ClipDistance0:
+    value: 48
+  VertexElementUsage_ClipDistance1:
+    value: 49
+  VertexElementUsage_SubMaterialIndex:
+    value: 50
+  VertexElementUsage_BranchInfo:
+    value: 60
+  VertexElementUsage_PosAndScale:
+    value: 61
+  VertexElementUsage_Rotation:
+    value: 62
+  VertexElementUsage_SpriteSizeAndUv:
+    value: 63
+  VertexElementUsage_FadePos:
+    value: 90
+  VertexElementUsage_SpawnTime:
+    value: 91
+  VertexElementUsage_PosAndSoftMul:
+    value: 150
+  VertexElementUsage_Alpha:
+    value: 151
+  VertexElementUsage_Misc0:
+    value: 152
+  VertexElementUsage_Misc1:
+    value: 153
+  VertexElementUsage_LeftAndRotation:
+    value: 154
+  VertexElementUsage_UpAndNormalBlend:
+    value: 155
+  VertexElementUsage_SH_R:
+    value: 156
+  VertexElementUsage_SH_G:
+    value: 157
+  VertexElementUsage_SH_B:
+    value: 158
+  VertexElementUsage_PosAndRejectCulling:
+    value: 159
+  VertexElementUsage_Shadow:
+    value: 160
+  VertexElementUsage_PatchUv:
+    value: 180
+  VertexElementUsage_Height:
+    value: 181
+  VertexElementUsage_MaskUVs0:
+    value: 182
+  VertexElementUsage_MaskUVs1:
+    value: 183
+  VertexElementUsage_MaskUVs2:
+    value: 184
+  VertexElementUsage_MaskUVs3:
+    value: 185
+  VertexElementUsage_UserMasks:
+    value: 186
+  VertexElementUsage_HeightfieldUv:
+    value: 187
+  VertexElementUsage_MaskUv:
+    value: 188
+  VertexElementUsage_GlobalColorUv:
+    value: 189
+  VertexElementUsage_HeightfieldPixelSizeAndAspect:
+    value: 190
+  VertexElementUsage_WorldPositionXz:
+    value: 191
+  VertexElementUsage_TerrainTextureNodeUv:
+    value: 192
+  VertexElementUsage_ParentTerrainTextureNodeUv:
+    value: 193
+  VertexElementUsage_Uv01:
+    value: 210
+  VertexElementUsage_WorldPos:
+    value: 211
+  VertexElementUsage_EyeVector:
+    value: 212
+  VertexElementUsage_LightParams1:
+    value: 220
+  VertexElementUsage_LightParams2:
+    value: 221
+  VertexElementUsage_LightSubParams:
+    value: 222
+  VertexElementUsage_LightSideVector:
+    value: 223
+  VertexElementUsage_LightInnerAndOuterAngle:
+    value: 224
+  VertexElementUsage_LightDir:
+    value: 225
+  VertexElementUsage_LightMatrix1:
+    value: 226
+  VertexElementUsage_LightMatrix2:
+    value: 227
+  VertexElementUsage_LightMatrix3:
+    value: 228
+  VertexElementUsage_LightMatrix4:
+    value: 229
+  VertexElementUsage_Custom:
+    value: 230
+

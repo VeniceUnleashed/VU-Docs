@@ -1,0 +1,23 @@
+name: ShapeType
+type: enum
+
+values:
+  ShapeType_Hull:
+    value: 0
+  ShapeType_Box:
+    value: 1
+  ShapeType_OBB:
+    value: 2
+  ShapeType_Sphere:
+    value: 3
+  ShapeType_Cylinder:
+    value: 4
+  ShapeType_Capsule:
+    value: 5
+  ShapeType_Mesh:
+    value: 6
+  ShapeType_Decompose:
+    value: 7
+  ShapeType_Unknown:
+    value: 8
+

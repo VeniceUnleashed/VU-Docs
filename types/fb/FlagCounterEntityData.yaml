@@ -1,0 +1,67 @@
+name: FlagCounterEntityData
+type: class
+inherits: GameEntityData
+
+constructors:
+  -
+    description: Creates a new FlagCounterEntityData frostbite instance.
+  -
+    description: Creates a new FlagCounterEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameEntityData to FlagCounterEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to FlagCounterEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to FlagCounterEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to FlagCounterEntityData.
+  -
+    description: Casts an instance of type EntityData to FlagCounterEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to FlagCounterEntityData.
+  -
+    description: Casts an instance of type GameObjectData to FlagCounterEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to FlagCounterEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to FlagCounterEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to FlagCounterEntityData.
+  -
+    description: Casts an instance of type DataContainer to FlagCounterEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to FlagCounterEntityData.
+
+properties:
+  teamId:
+    type: TeamId
+  enemyFlagProgress:
+    type: float
+  roundTime:
+    type: float
+  objectiveFlagCount:
+    type: int
+  visibleInMinimap:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the FlagCounterEntityData type.
+

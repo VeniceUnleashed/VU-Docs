@@ -1,0 +1,21 @@
+name: EmittableType
+type: enum
+
+values:
+  Point:
+    value: 0
+  Quad:
+    value: 1
+  ScreenAlignedQuad:
+    value: 2
+  DirectionAlignedQuad:
+    value: 3
+  WorldAlignedQuad:
+    value: 4
+  Trail:
+    value: 5
+  ParticleMesh:
+    value: 6
+  EmittableTypeCount:
+    value: 7
+

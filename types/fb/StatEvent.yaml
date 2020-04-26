@@ -1,0 +1,295 @@
+name: StatEvent
+type: enum
+
+values:
+  StatEvent_Kill:
+    value: 0
+  StatEvent_Kill_In_X:
+    value: 1
+  StatEvent_Kill_As_X:
+    value: 2
+  StatEvent_KillWith_X_As_Y:
+    value: 3
+  StatEvent_KillDistance:
+    value: 4
+  StatEvent_KillOf_X_As_Y:
+    value: 5
+  StatEvent_KillOf_X_In_Y:
+    value: 6
+  StatEvent_TeamKill:
+    value: 7
+  StatEvent_AvengerKill:
+    value: 8
+  StatEvent_SaviorKill:
+    value: 9
+  StatEvent_DriverAssist:
+    value: 10
+  StatEvent_TeamDriverAssist:
+    value: 11
+  StatEvent_SquadDriverAssist:
+    value: 12
+  StatEvent_PassengerAssist:
+    value: 13
+  StatEvent_TeamPassengerAssist:
+    value: 14
+  StatEvent_SquadPassengerAssist:
+    value: 15
+  StatEvent_RoadKill:
+    value: 16
+  StatEvent_Death:
+    value: 17
+  StatEvent_DoubleKill:
+    value: 18
+  StatEvent_TripleKill:
+    value: 19
+  StatEvent_MultiKill:
+    value: 20
+  StatEvent_PostMortemKill:
+    value: 21
+  StatEvent_KillStreak:
+    value: 22
+  StatEvent_KillStreakX:
+    value: 23
+  StatEvent_CancelKillStreak:
+    value: 24
+  StatEvent_Comeback:
+    value: 25
+  StatEvent_SquadWipe:
+    value: 26
+  StatEvent_NemesisKill:
+    value: 27
+  StatEvent_NemesisKillX:
+    value: 28
+  StatEvent_CancelNemesisKill:
+    value: 29
+  StatEvent_SecondsAs_X:
+    value: 30
+  StatEvent_SecondsWith_X:
+    value: 31
+  StatEvent_SecondsIn_X:
+    value: 32
+  StatEvent_SecondsOn_X:
+    value: 33
+  StatEvent_Destroy_X:
+    value: 34
+  StatEvent_Destroy_X_As_Y:
+    value: 35
+  StatEvent_Destroy_X_In_Y:
+    value: 36
+  StatEvent_DestroyWith_X_As_Y:
+    value: 37
+  StatEvent_Destroy_X_With_Y:
+    value: 38
+  StatEvent_DestroyExplosives:
+    value: 39
+  StatEvent_Disabled_X:
+    value: 40
+  StatEvent_KillOfWith_X_As_Y:
+    value: 41
+  StatEvent_TaggedDamageAssist_X:
+    value: 42
+  StatEvent_Tagged_X:
+    value: 43
+  StatEvent_SuppressWith_X_As_Y:
+    value: 44
+  StatEvent_Level_X_Completed_Y_Difficulty:
+    value: 45
+  StatEvent_Level_X_Completed_Y_Difficulty_WithTimeValue:
+    value: 46
+  StatEvent_CleanLevel_X_Completed:
+    value: 47
+  StatEvent_RoundOverOutcome_X_On_Y:
+    value: 48
+  StatEvent_Rounds:
+    value: 49
+  StatEvent_Headshot_X_With_Y:
+    value: 50
+  StatEvent_HeadshotAs_X_With_Y:
+    value: 51
+  StatEvent_HeadshotDistance_With_X:
+    value: 52
+  StatEvent_SelfHeal:
+    value: 53
+  StatEvent_BestSquad:
+    value: 54
+  StatEvent_ShotsFired_With_X:
+    value: 55
+  StatEvent_ShotsHit_With_X:
+    value: 56
+  StatEvent_SpotAssist:
+    value: 57
+  StatEvent_SpotAssistFrom_X:
+    value: 58
+  StatEvent_SuppressionAssist:
+    value: 59
+  StatEvent_Heal:
+    value: 60
+  StatEvent_TeamHeal:
+    value: 61
+  StatEvent_SquadHeal:
+    value: 62
+  StatEvent_Revive:
+    value: 63
+  StatEvent_TeamRevive:
+    value: 64
+  StatEvent_SquadRevive:
+    value: 65
+  StatEvent_ReviveAccepted:
+    value: 66
+  StatEvent_TeamReviveAccepted:
+    value: 67
+  StatEvent_SquadReviveAccepted:
+    value: 68
+  StatEvent_ManDownRevive:
+    value: 69
+  StatEvent_Resupply:
+    value: 70
+  StatEvent_TeamResupply:
+    value: 71
+  StatEvent_SquadResupply:
+    value: 72
+  StatEvent_KillAssist:
+    value: 73
+  StatEvent_Repair:
+    value: 74
+  StatEvent_TeamRepair:
+    value: 75
+  StatEvent_SquadRepair:
+    value: 76
+  StatEvent_VehicleDestroyAssist:
+    value: 77
+  StatEvent_TreeDestroyed:
+    value: 78
+  StatEvent_WallDestroyed:
+    value: 79
+  StatEvent_CaptureCapturePoint:
+    value: 80
+  StatEvent_CaptureCapturePointAssist:
+    value: 81
+  StatEvent_NeutralizeCapturePoint:
+    value: 82
+  StatEvent_NeutralizeCapturePointAssist:
+    value: 83
+  StatEvent_CapturePointDefense:
+    value: 84
+  StatEvent_CapturePointAttack:
+    value: 85
+  StatEvent_CrateArmed:
+    value: 86
+  StatEvent_CrateDisarmed:
+    value: 87
+  StatEvent_CrateDestroyed:
+    value: 88
+  StatEvent_CrateDefendKill:
+    value: 89
+  StatEvent_CrateAttackKill:
+    value: 90
+  StatEvent_SquadDefendOrder:
+    value: 91
+  StatEvent_SquadAttackOrder:
+    value: 92
+  StatEvent_SquadLeaderDefendOrder:
+    value: 93
+  StatEvent_SquadLeaderAttackOrder:
+    value: 94
+  StatEvent_RankUp:
+    value: 95
+  StatEvent_UniqueAward:
+    value: 96
+  StatEvent_DogTag:
+    value: 97
+  StatEvent_DogTagSavior:
+    value: 98
+  StatEvent_SquadSpawn:
+    value: 99
+  StatEvent_SquadSpawnOnRemoteVehicle_X:
+    value: 100
+  StatEvent_Suicide:
+    value: 101
+  StatEvent_GainAward_X:
+    value: 102
+  StatEvent_PlayerScoreboardPosition_X:
+    value: 103
+  StatEvent_GainedHighestRank:
+    value: 104
+  StatEvent_GainedHighestUnlockInBucket_X:
+    value: 105
+  StatEvent_Misc_X_and_Y:
+    value: 106
+  StatEvent_TotalScoreOn_X_Difficulty_Y:
+    value: 107
+  StatEvent_Invalid:
+    value: 108
+  StatEvent_Damage:
+    value: 109
+  StatEvent_PlayerScoreboardPosition_X_On_Y:
+    value: 110
+  StatEvent_CaptureCapturePointDOM:
+    value: 111
+  StatEvent_CaptureCapturePointAssistDOM:
+    value: 112
+  StatEvent_NeutralizeCapturePointDOM:
+    value: 113
+  StatEvent_NeutralizeCapturePointAssistDOM:
+    value: 114
+  StatEvent_Kill_With_X_In_Y:
+    value: 115
+  StatEvent_DoubleKill_With_X_In_Y:
+    value: 116
+  StatEvent_ShotFired_With_X:
+    value: 117
+  StatEvent_SpotAssistFor_X:
+    value: 118
+  StatEvent_Misc_X_In_Y:
+    value: 119
+  StatEvent_CTF_Capture:
+    value: 120
+  StatEvent_CTF_CaptureStreak:
+    value: 121
+  StatEvent_CTF_CaptureAssist:
+    value: 122
+  StatEvent_CTF_PickUp:
+    value: 123
+  StatEvent_CTF_PickUpAssist:
+    value: 124
+  StatEvent_CTF_Return:
+    value: 125
+  StatEvent_CTF_CarrierAssist:
+    value: 126
+  StatEvent_CTF_CarrierAssistStreak:
+    value: 127
+  StatEvent_CTF_FlagTransporter_In_X:
+    value: 128
+  StatEvent_CTF_CarrierSavior:
+    value: 129
+  StatEvent_CTF_CarrierSuppression:
+    value: 130
+  StatEvent_CTF_CarrierKiller:
+    value: 131
+  StatEvent_CTF_CarrierKillAssist:
+    value: 132
+  StatEvent_CTF_CarrierHeal:
+    value: 133
+  StatEvent_BadLuck:
+    value: 134
+  StatEvent_Jump_In_X:
+    value: 135
+  StatEvent_Kill_From_X:
+    value: 136
+  StatEvent_ParadropDestroy_X:
+    value: 137
+  StatEvent_ParadropKill:
+    value: 138
+  StatEvent_FreefallDeath:
+    value: 139
+  StatEvent_PassengerKill_In_X:
+    value: 140
+  StatEvent_TakeDogTagAssassin:
+    value: 141
+  StatEvent_Spawn_In_X:
+    value: 142
+  StatEvent_RoadKill_With_X:
+    value: 143
+  StatEvent_LAST_ITEM:
+    value: 144
+

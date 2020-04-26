@@ -1,0 +1,9 @@
+name: VoiceOverContainerConditionMode
+type: enum
+
+values:
+  VoiceOverContainerConditionMode_All:
+    value: 0
+  VoiceOverContainerConditionMode_Any:
+    value: 1
+

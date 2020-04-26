@@ -1,0 +1,81 @@
+name: ClearAreaTriggerEntityData
+type: class
+inherits: TriggerEntityData
+
+constructors:
+  -
+    description: Creates a new ClearAreaTriggerEntityData frostbite instance.
+  -
+    description: Creates a new ClearAreaTriggerEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type TriggerEntityData to ClearAreaTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: TriggerEntityData
+        description: The instance to cast to ClearAreaTriggerEntityData.
+  -
+    description: Casts an instance of type GameEntityData to ClearAreaTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to ClearAreaTriggerEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to ClearAreaTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to ClearAreaTriggerEntityData.
+  -
+    description: Casts an instance of type EntityData to ClearAreaTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to ClearAreaTriggerEntityData.
+  -
+    description: Casts an instance of type GameObjectData to ClearAreaTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to ClearAreaTriggerEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to ClearAreaTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to ClearAreaTriggerEntityData.
+  -
+    description: Casts an instance of type DataContainer to ClearAreaTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ClearAreaTriggerEntityData.
+
+properties:
+  teamOfImmortalSoldiers:
+    type: TeamId
+  removeBangers:
+    type: bool
+  removeVehicles:
+    type: bool
+  removeEffects:
+    type: bool
+  removeStaticModels:
+    type: bool
+  removeDebrisClusters:
+    type: bool
+  excludeImmortalSoldiersInTeam:
+    type: bool
+  removeMeshProxies:
+    type: bool
+  removeSoldiers:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ClearAreaTriggerEntityData type.
+

@@ -1,0 +1,11 @@
+name: EntityInitPass
+type: enum
+
+values:
+  EntityInitPass_Early:
+    value: 0
+  EntityInitPass_Normal:
+    value: 1
+  EntityInitPass_Count:
+    value: 2
+

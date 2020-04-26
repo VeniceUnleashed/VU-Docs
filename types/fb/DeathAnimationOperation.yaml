@@ -1,0 +1,11 @@
+name: DeathAnimationOperation
+type: enum
+
+values:
+  DALessThan:
+    value: 0
+  DAGreaterThan:
+    value: 1
+  DAEqualTo:
+    value: 2
+

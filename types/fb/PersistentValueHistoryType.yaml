@@ -1,0 +1,13 @@
+name: PersistentValueHistoryType
+type: enum
+
+values:
+  PersistentValueHistoryType_None:
+    value: 0
+  PersistentValueHistoryType_Delta:
+    value: 1
+  PersistentValueHistoryType_DeltaAndAbsolute:
+    value: 2
+  PersistentValueHistoryType_HistoryOnly:
+    value: 3
+

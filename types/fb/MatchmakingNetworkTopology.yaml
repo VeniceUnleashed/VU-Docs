@@ -1,0 +1,13 @@
+name: MatchmakingNetworkTopology
+type: enum
+
+values:
+  MatchmakingNetworkTopology_Disabled:
+    value: 0
+  MatchmakingNetworkTopology_Peer2Peer:
+    value: 1
+  MatchmakingNetworkTopology_PeerHosted:
+    value: 2
+  MatchmakingNetworkTopology_DedicatedServer:
+    value: 3
+

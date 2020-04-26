@@ -1,0 +1,70 @@
+name: VisualEnvironmentEffectEntityData
+type: class
+inherits: EffectEntityData
+
+constructors:
+  -
+    description: Creates a new VisualEnvironmentEffectEntityData frostbite instance.
+  -
+    description: Creates a new VisualEnvironmentEffectEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EffectEntityData to VisualEnvironmentEffectEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EffectEntityData
+        description: The instance to cast to VisualEnvironmentEffectEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to VisualEnvironmentEffectEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to VisualEnvironmentEffectEntityData.
+  -
+    description: Casts an instance of type EntityData to VisualEnvironmentEffectEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to VisualEnvironmentEffectEntityData.
+  -
+    description: Casts an instance of type GameObjectData to VisualEnvironmentEffectEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to VisualEnvironmentEffectEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to VisualEnvironmentEffectEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to VisualEnvironmentEffectEntityData.
+  -
+    description: Casts an instance of type DataContainer to VisualEnvironmentEffectEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VisualEnvironmentEffectEntityData.
+
+properties:
+  lifetimeCurve:
+    type: Vec4
+  cullDistanceCurve:
+    type: Vec4
+  cullAngleCurve:
+    type: Vec4
+  lifetime:
+    type: float
+  visualEnvironment:
+    type: VisualEnvironmentBlueprint
+    nullable: true
+  sampleOnStartOnly:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VisualEnvironmentEffectEntityData type.
+

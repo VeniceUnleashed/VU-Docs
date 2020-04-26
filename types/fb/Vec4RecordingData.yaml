@@ -1,0 +1,36 @@
+name: Vec4RecordingData
+type: class
+inherits: PropertyRecordingData
+
+constructors:
+  -
+    description: Creates a new Vec4RecordingData frostbite instance.
+  -
+    description: Creates a new Vec4RecordingData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type PropertyRecordingData to Vec4RecordingData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: PropertyRecordingData
+        description: The instance to cast to Vec4RecordingData.
+  -
+    description: Casts an instance of type DataContainer to Vec4RecordingData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to Vec4RecordingData.
+
+properties:
+  values:
+    type: Vec4
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the Vec4RecordingData type.
+

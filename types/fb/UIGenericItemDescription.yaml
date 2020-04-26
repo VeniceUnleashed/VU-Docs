@@ -1,0 +1,37 @@
+name: UIGenericItemDescription
+type: class
+inherits: UIItemDescription
+
+constructors:
+  -
+    description: Creates a new UIGenericItemDescription frostbite instance.
+  -
+    description: Creates a new UIGenericItemDescription frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UIItemDescription to UIGenericItemDescription. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIItemDescription
+        description: The instance to cast to UIGenericItemDescription.
+  -
+    description: Casts an instance of type DataContainer to UIGenericItemDescription. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UIGenericItemDescription.
+
+properties:
+  identifier:
+    type: string
+  imagePath:
+    type: string
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UIGenericItemDescription type.
+

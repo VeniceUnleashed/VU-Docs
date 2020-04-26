@@ -1,0 +1,15 @@
+name: PointCloudAttributeUsage
+type: enum
+
+values:
+  PointCloudAttributeUsage_Position:
+    value: 0
+  PointCloudAttributeUsage_Normal:
+    value: 1
+  PointCloudAttributeUsage_Tangent:
+    value: 2
+  PointCloudAttributeUsage_Binormal:
+    value: 3
+  PointCloudAttributeUsage_Count:
+    value: 4
+

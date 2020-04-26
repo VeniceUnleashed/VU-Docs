@@ -1,0 +1,36 @@
+name: DataContainerAsset
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new DataContainerAsset frostbite instance.
+  -
+    description: Creates a new DataContainerAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to DataContainerAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to DataContainerAsset.
+  -
+    description: Casts an instance of type DataContainer to DataContainerAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to DataContainerAsset.
+
+properties:
+  data:
+    type: DataContainer
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the DataContainerAsset type.
+

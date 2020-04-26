@@ -1,0 +1,84 @@
+name: ArtilleryStrikeWeaponData
+type: class
+inherits: WeaponData
+
+constructors:
+  -
+    description: Creates a new ArtilleryStrikeWeaponData frostbite instance.
+  -
+    description: Creates a new ArtilleryStrikeWeaponData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type WeaponData to ArtilleryStrikeWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: WeaponData
+        description: The instance to cast to ArtilleryStrikeWeaponData.
+  -
+    description: Casts an instance of type ToolData to ArtilleryStrikeWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ToolData
+        description: The instance to cast to ArtilleryStrikeWeaponData.
+  -
+    description: Casts an instance of type DataContainer to ArtilleryStrikeWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ArtilleryStrikeWeaponData.
+
+properties:
+  maxStrikeDistance:
+    type: float
+  strikeRadius:
+    type: float
+  spawnHeight:
+    type: float
+  maxRandomSpawnHeight:
+    type: float
+  strikeCameraOffset:
+    type: float
+  spawnHeightMultiplier:
+    type: float
+  camera:
+    type: TargetCameraData
+    nullable: true
+  aimingCameraHeight:
+    type: float
+  strikeCameraHeight:
+    type: float
+  aimingCameraOffset:
+    type: float
+  strikeCameraFov:
+    type: float
+  aimingCameraFov:
+    type: float
+  delayBeforeAimingCamera:
+    type: float
+  validMinDistance:
+    type: float
+  fireCameraTime:
+    type: float
+  strikeCameraTime:
+    type: float
+  validMaxDistance:
+    type: float
+  validMaxAngle:
+    type: float
+  increaseSpawnHeightWithDistance:
+    type: bool
+  enableProjectileTrails:
+    type: bool
+  enableCameraRotation:
+    type: bool
+  fireProjectileFromWeapon:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ArtilleryStrikeWeaponData type.
+

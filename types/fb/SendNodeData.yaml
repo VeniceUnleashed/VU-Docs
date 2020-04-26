@@ -1,0 +1,36 @@
+name: SendNodeData
+type: class
+inherits: AudioGraphNodeData
+
+constructors:
+  -
+    description: Creates a new SendNodeData frostbite instance.
+  -
+    description: Creates a new SendNodeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphNodeData to SendNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphNodeData
+        description: The instance to cast to SendNodeData.
+  -
+    description: Casts an instance of type DataContainer to SendNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SendNodeData.
+
+properties:
+  entries:
+    type: SendEntry
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SendNodeData type.
+

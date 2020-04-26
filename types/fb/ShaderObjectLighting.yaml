@@ -1,0 +1,11 @@
+name: ShaderObjectLighting
+type: enum
+
+values:
+  ShaderObjectLighting_None:
+    value: 0
+  ShaderObjectLighting_LightProbe:
+    value: 1
+  ShaderObjectLighting_LightMap:
+    value: 2
+

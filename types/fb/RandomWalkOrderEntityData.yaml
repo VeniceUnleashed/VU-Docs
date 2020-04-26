@@ -1,0 +1,59 @@
+name: RandomWalkOrderEntityData
+type: class
+inherits: BFOrderEntityData
+
+constructors:
+  -
+    description: Creates a new RandomWalkOrderEntityData frostbite instance.
+  -
+    description: Creates a new RandomWalkOrderEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type BFOrderEntityData to RandomWalkOrderEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: BFOrderEntityData
+        description: The instance to cast to RandomWalkOrderEntityData.
+  -
+    description: Casts an instance of type OrderEntityData to RandomWalkOrderEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: OrderEntityData
+        description: The instance to cast to RandomWalkOrderEntityData.
+  -
+    description: Casts an instance of type EntityData to RandomWalkOrderEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to RandomWalkOrderEntityData.
+  -
+    description: Casts an instance of type GameObjectData to RandomWalkOrderEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to RandomWalkOrderEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to RandomWalkOrderEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to RandomWalkOrderEntityData.
+  -
+    description: Casts an instance of type DataContainer to RandomWalkOrderEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to RandomWalkOrderEntityData.
+
+properties:
+  combatForbidden:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the RandomWalkOrderEntityData type.
+

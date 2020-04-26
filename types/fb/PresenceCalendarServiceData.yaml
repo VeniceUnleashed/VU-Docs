@@ -1,0 +1,37 @@
+name: PresenceCalendarServiceData
+type: class
+inherits: PresenceServiceData
+
+constructors:
+  -
+    description: Creates a new PresenceCalendarServiceData frostbite instance.
+  -
+    description: Creates a new PresenceCalendarServiceData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type PresenceServiceData to PresenceCalendarServiceData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: PresenceServiceData
+        description: The instance to cast to PresenceCalendarServiceData.
+  -
+    description: Casts an instance of type Asset to PresenceCalendarServiceData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to PresenceCalendarServiceData.
+  -
+    description: Casts an instance of type DataContainer to PresenceCalendarServiceData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PresenceCalendarServiceData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PresenceCalendarServiceData type.
+

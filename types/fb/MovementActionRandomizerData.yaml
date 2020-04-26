@@ -1,0 +1,38 @@
+name: MovementActionRandomizerData
+type: class
+inherits: MovementActionData
+
+constructors:
+  -
+    description: Creates a new MovementActionRandomizerData frostbite instance.
+  -
+    description: Creates a new MovementActionRandomizerData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type MovementActionData to MovementActionRandomizerData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MovementActionData
+        description: The instance to cast to MovementActionRandomizerData.
+  -
+    description: Casts an instance of type DataContainer to MovementActionRandomizerData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MovementActionRandomizerData.
+
+properties:
+  actions:
+    type: MovementActionData
+    array: true
+  reinsertIntoRandomizedListAfterUse:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MovementActionRandomizerData type.
+

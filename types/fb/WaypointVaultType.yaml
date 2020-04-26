@@ -1,0 +1,21 @@
+name: WaypointVaultType
+type: enum
+
+values:
+  WaypointVaultType_VaultOverHigh:
+    value: 0
+  WaypointVaultType_VaultOntoLow:
+    value: 1
+  WaypointVaultType_VaultDownLow:
+    value: 2
+  WaypointVaultType_VaultDownHigh:
+    value: 3
+  WaypointVaultType_ClimbUpHigh:
+    value: 4
+  WaypointVaultType_ClimbOverHigh:
+    value: 5
+  WaypointVaultType_JumpAcross:
+    value: 6
+  WaypointVaultType_Count:
+    value: 7
+

@@ -1,0 +1,48 @@
+name: SoundPrimeEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new SoundPrimeEntityData frostbite instance.
+  -
+    description: Creates a new SoundPrimeEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to SoundPrimeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to SoundPrimeEntityData.
+  -
+    description: Casts an instance of type GameObjectData to SoundPrimeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to SoundPrimeEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to SoundPrimeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to SoundPrimeEntityData.
+  -
+    description: Casts an instance of type DataContainer to SoundPrimeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SoundPrimeEntityData.
+
+properties:
+  dataAssets:
+    type: SoundDataAsset
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SoundPrimeEntityData type.
+

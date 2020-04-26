@@ -1,0 +1,109 @@
+name: VertexElementFormat
+type: enum
+
+values:
+  VertexElementFormat_None:
+    value: 0
+  VertexElementFormat_Float:
+    value: 1
+  VertexElementFormat_Float2:
+    value: 2
+  VertexElementFormat_Float3:
+    value: 3
+  VertexElementFormat_Float4:
+    value: 4
+  VertexElementFormat_Half:
+    value: 5
+  VertexElementFormat_Half2:
+    value: 6
+  VertexElementFormat_Half3:
+    value: 7
+  VertexElementFormat_Half4:
+    value: 8
+  VertexElementFormat_Byte4:
+    value: 10
+  VertexElementFormat_Byte4N:
+    value: 11
+  VertexElementFormat_UByte4:
+    value: 12
+  VertexElementFormat_UByte4N:
+    value: 13
+  VertexElementFormat_Short:
+    value: 14
+  VertexElementFormat_Short2:
+    value: 15
+  VertexElementFormat_Short3:
+    value: 16
+  VertexElementFormat_Short4:
+    value: 17
+  VertexElementFormat_ShortN:
+    value: 18
+  VertexElementFormat_Short2N:
+    value: 19
+  VertexElementFormat_Short3N:
+    value: 20
+  VertexElementFormat_Short4N:
+    value: 21
+  VertexElementFormat_UShort2:
+    value: 22
+  VertexElementFormat_UShort4:
+    value: 23
+  VertexElementFormat_UShort2N:
+    value: 24
+  VertexElementFormat_UShort4N:
+    value: 25
+  VertexElementFormat_Int:
+    value: 26
+  VertexElementFormat_Int2:
+    value: 27
+  VertexElementFormat_Int4:
+    value: 28
+  VertexElementFormat_IntN:
+    value: 29
+  VertexElementFormat_Int2N:
+    value: 30
+  VertexElementFormat_Int4N:
+    value: 31
+  VertexElementFormat_UInt:
+    value: 32
+  VertexElementFormat_UInt2:
+    value: 33
+  VertexElementFormat_UInt4:
+    value: 34
+  VertexElementFormat_UIntN:
+    value: 35
+  VertexElementFormat_UInt2N:
+    value: 36
+  VertexElementFormat_UInt4N:
+    value: 37
+  VertexElementFormat_Comp3_10_10_10:
+    value: 38
+  VertexElementFormat_Comp3N_10_10_10:
+    value: 39
+  VertexElementFormat_UComp3_10_10_10:
+    value: 40
+  VertexElementFormat_UComp3N_10_10_10:
+    value: 41
+  VertexElementFormat_Comp3_11_11_10:
+    value: 42
+  VertexElementFormat_Comp3N_11_11_10:
+    value: 43
+  VertexElementFormat_UComp3_11_11_10:
+    value: 44
+  VertexElementFormat_UComp3N_11_11_10:
+    value: 45
+  VertexElementFormat_Comp4_10_10_10_2:
+    value: 46
+  VertexElementFormat_Comp4N_10_10_10_2:
+    value: 47
+  VertexElementFormat_UComp4_10_10_10_2:
+    value: 48
+  VertexElementFormat_UComp4N_10_10_10_2:
+    value: 49
+  VertexElementFormat_UByteN:
+    value: 50
+  VertexElementFormat_Int3:
+    value: 51
+  VertexElementFormat_UInt3:
+    value: 52
+

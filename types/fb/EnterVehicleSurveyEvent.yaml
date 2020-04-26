@@ -1,0 +1,37 @@
+name: EnterVehicleSurveyEvent
+type: class
+inherits: MetricEvent
+
+constructors:
+  -
+    description: Creates a new EnterVehicleSurveyEvent frostbite instance.
+  -
+    description: Creates a new EnterVehicleSurveyEvent frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type MetricEvent to EnterVehicleSurveyEvent. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MetricEvent
+        description: The instance to cast to EnterVehicleSurveyEvent.
+  -
+    description: Casts an instance of type DataContainer to EnterVehicleSurveyEvent. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to EnterVehicleSurveyEvent.
+
+properties:
+  vehicleName:
+    type: string
+  surveyMetricLink:
+    type: Guid
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the EnterVehicleSurveyEvent type.
+

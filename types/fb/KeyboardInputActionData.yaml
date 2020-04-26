@@ -1,0 +1,35 @@
+name: KeyboardInputActionData
+type: class
+inherits: InputActionData
+
+constructors:
+  -
+    description: Creates a new KeyboardInputActionData frostbite instance.
+  -
+    description: Creates a new KeyboardInputActionData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type InputActionData to KeyboardInputActionData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: InputActionData
+        description: The instance to cast to KeyboardInputActionData.
+  -
+    description: Casts an instance of type DataContainer to KeyboardInputActionData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to KeyboardInputActionData.
+
+properties:
+  key:
+    type: InputDeviceKeys
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the KeyboardInputActionData type.
+

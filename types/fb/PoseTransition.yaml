@@ -1,0 +1,17 @@
+name: PoseTransition
+type: enum
+
+values:
+  PTStandToProne:
+    value: 0
+  PTStandToCrouch:
+    value: 1
+  PTCrouchToStand:
+    value: 2
+  PTCrouchToProne:
+    value: 3
+  PTProneToStand:
+    value: 4
+  PTProneToCrouch:
+    value: 5
+

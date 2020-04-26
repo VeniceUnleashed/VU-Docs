@@ -1,0 +1,15 @@
+name: AdministrationRestrictionLevel
+type: enum
+
+values:
+  AdministrationRestrictionLevel_Zero:
+    value: 0
+  AdministrationRestrictionLevel_One:
+    value: 1
+  AdministrationRestrictionLevel_Two:
+    value: 2
+  AdministrationRestrictionLevel_Three:
+    value: 3
+  AdministrationRestrictionLevel_Count:
+    value: 4
+

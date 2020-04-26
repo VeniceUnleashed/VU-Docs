@@ -1,0 +1,49 @@
+name: EngineConfigData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new EngineConfigData frostbite instance.
+  -
+    description: Creates a new EngineConfigData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to EngineConfigData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to EngineConfigData.
+
+properties:
+  position:
+    type: Vec3
+  rpmCurvePoints:
+    type: float
+    array: true
+  torqueCurvePoints:
+    type: float
+    array: true
+  rpmMin:
+    type: float
+  rpmMax:
+    type: float
+  rpmCut:
+    type: float
+  enginePowerMultiplier:
+    type: float
+  internalAccelerationFactor:
+    type: float
+  internalDeaccelerationFactor:
+    type: float
+  boost:
+    type: Boost
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the EngineConfigData type.
+

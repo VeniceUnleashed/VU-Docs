@@ -1,0 +1,35 @@
+name: MetricState
+type: class
+inherits: MetricEvent
+
+constructors:
+  -
+    description: Creates a new MetricState frostbite instance.
+  -
+    description: Creates a new MetricState frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type MetricEvent to MetricState. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MetricEvent
+        description: The instance to cast to MetricState.
+  -
+    description: Casts an instance of type DataContainer to MetricState. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MetricState.
+
+properties:
+  isSet:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MetricState type.
+

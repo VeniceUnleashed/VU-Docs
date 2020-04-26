@@ -1,0 +1,39 @@
+name: StabilizerData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new StabilizerData frostbite instance.
+  -
+    description: Creates a new StabilizerData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to StabilizerData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to StabilizerData.
+
+properties:
+  pitchStrength:
+    type: float
+  rollStrength:
+    type: float
+  verticalVelocityStrength:
+    type: float
+  yawStrength:
+    type: float
+  advancedYaw:
+    type: bool
+  advanced:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the StabilizerData type.
+

@@ -1,0 +1,13 @@
+name: MinimapIconInteractionConcept
+type: enum
+
+values:
+  MinimapIconInteractionConcept_None:
+    value: 0
+  MinimapIconInteractionConcept_SelectSpawnPoint:
+    value: 1
+  MinimapIconInteractionConcept_RemoveOrder:
+    value: 2
+  MinimapIconInteractionConcept_AttackDefendCapturePoint:
+    value: 3
+

@@ -1,0 +1,61 @@
+name: UIWeaponDescription
+type: class
+inherits: UIItemDescription
+
+constructors:
+  -
+    description: Creates a new UIWeaponDescription frostbite instance.
+  -
+    description: Creates a new UIWeaponDescription frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UIItemDescription to UIWeaponDescription. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIItemDescription
+        description: The instance to cast to UIWeaponDescription.
+  -
+    description: Casts an instance of type DataContainer to UIWeaponDescription. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UIWeaponDescription.
+
+properties:
+  name:
+    type: string
+  unlockName:
+    type: string
+  description:
+    type: string
+  category:
+    type: string
+  texturePath:
+    type: string
+  iconTexturePath:
+    type: string
+  unlockTexturePath:
+    type: string
+  ammo:
+    type: string
+  rateOfFire:
+    type: string
+  range:
+    type: string
+  fireModeSingle:
+    type: bool
+  fireModeBurst:
+    type: bool
+  fireModeAuto:
+    type: bool
+  hiddenInProgression:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UIWeaponDescription type.
+

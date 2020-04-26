@@ -1,0 +1,13 @@
+name: VehicleInputTweakType
+type: enum
+
+values:
+  CombinedTimedSpeedTweakType:
+    value: 0
+  CombinedSpeedTweakType:
+    value: 1
+  SpeedTweakType:
+    value: 2
+  ScaledSpeedTweakType:
+    value: 3
+

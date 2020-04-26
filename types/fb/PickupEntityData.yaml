@@ -1,0 +1,111 @@
+name: PickupEntityData
+type: class
+inherits: GamePhysicsEntityData
+
+constructors:
+  -
+    description: Creates a new PickupEntityData frostbite instance.
+  -
+    description: Creates a new PickupEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GamePhysicsEntityData to PickupEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GamePhysicsEntityData
+        description: The instance to cast to PickupEntityData.
+  -
+    description: Casts an instance of type GameEntityData to PickupEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to PickupEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to PickupEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to PickupEntityData.
+  -
+    description: Casts an instance of type EntityData to PickupEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to PickupEntityData.
+  -
+    description: Casts an instance of type GameObjectData to PickupEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to PickupEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to PickupEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to PickupEntityData.
+  -
+    description: Casts an instance of type DataContainer to PickupEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PickupEntityData.
+
+properties:
+  randomizeAmmoOnDropForPlayer:
+    type: PickupPlayerEnum
+  minRandomClipAmmoPercent:
+    type: int
+  physicsBlueprint:
+    type: ObjectBlueprint
+    nullable: true
+  mesh:
+    type: MeshAsset
+    nullable: true
+  maxRandomClipAmmoPercent:
+    type: int
+  preferredWeaponSlot:
+    type: int
+  timeToLive:
+    type: float
+  minRandomSpareAmmoPercent:
+    type: int
+  interactionRadius:
+    type: float
+  maxRandomSpareAmmoPercent:
+    type: int
+  unspawnOnPickup:
+    type: bool
+  unspawnOnAmmoPickup:
+    type: bool
+  forceWeaponSlotSelection:
+    type: bool
+  displayInMiniMap:
+    type: bool
+  hasAutomaticAmmoPickup:
+    type: bool
+  useWeaponMesh:
+    type: bool
+  allowPickup:
+    type: bool
+  contentIsStatic:
+    type: bool
+  positionIsStatic:
+    type: bool
+  ignoreNullWeaponSlots:
+    type: bool
+  replaceAllContent:
+    type: bool
+  removeWeaponOnDrop:
+    type: bool
+  sendPlayerInEventOnPickup:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PickupEntityData type.
+

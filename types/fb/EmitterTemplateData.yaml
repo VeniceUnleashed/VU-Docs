@@ -1,0 +1,112 @@
+name: EmitterTemplateData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new EmitterTemplateData frostbite instance.
+  -
+    description: Creates a new EmitterTemplateData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to EmitterTemplateData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to EmitterTemplateData.
+
+properties:
+  pointLightIntensity:
+    type: Vec4
+  pointLightPivot:
+    type: Vec3
+  pointLightColor:
+    type: Vec3
+  maxCount:
+    type: int
+  name:
+    type: string
+  timeScale:
+    type: float
+  lifetimeFrameCount:
+    type: int
+  lifetime:
+    type: float
+  rootProcessor:
+    type: ProcessorData
+    nullable: true
+  visibleAfterDistance:
+    type: float
+  zOcclusionLookup:
+    type: float
+    array: true
+  emittableType:
+    type: EmittableType
+  mesh:
+    type: MeshAsset
+    nullable: true
+  distanceScaleNearValue:
+    type: float
+  pointLightRadius:
+    type: float
+  vertexPixelLightingBlendFactor:
+    type: float
+  globalLocalNormalBlendFactor:
+    type: float
+  softParticlesFadeDistanceMultiplier:
+    type: float
+  lightWrapAroundFactor:
+    type: float
+  lightMultiplier:
+    type: float
+  distanceScaleFarValue:
+    type: float
+  pointLightRandomIntensityMin:
+    type: float
+  meshCullingDistance:
+    type: float
+  pointLightRandomIntensityMax:
+    type: float
+  maxSpawnDistance:
+    type: float
+  minScreenArea:
+    type: float
+  distanceScaleLength:
+    type: float
+  pointLightMaxClamp:
+    type: float
+  particleCullingFactor:
+    type: float
+  pointLightMinClamp:
+    type: float
+  followSpawnSource:
+    type: bool
+  repeatParticleSpawning:
+    type: bool
+  emissive:
+    type: bool
+  exclusionVolumeCullEnable:
+    type: bool
+  transparencySunShadowEnable:
+    type: bool
+  forceFullRes:
+    type: bool
+  localSpace:
+    type: bool
+  opaque:
+    type: bool
+  actAsPointLight:
+    type: bool
+  killParticlesWithEmitter:
+    type: bool
+  forceNiceSorting:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the EmitterTemplateData type.
+

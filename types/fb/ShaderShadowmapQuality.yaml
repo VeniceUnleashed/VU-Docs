@@ -1,0 +1,11 @@
+name: ShaderShadowmapQuality
+type: enum
+
+values:
+  ShaderShadowmapQuality_Pcf2x2:
+    value: 0
+  ShaderShadowmapQuality_Pcf4x4:
+    value: 1
+  ShaderShadowmapQuality_Gaussian:
+    value: 2
+

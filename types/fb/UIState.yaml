@@ -1,0 +1,31 @@
+name: UIState
+type: enum
+
+values:
+  UIState_Menu:
+    value: 0
+  UIState_LoadingSP:
+    value: 1
+  UIState_LoadingMP:
+    value: 2
+  UIState_Playing:
+    value: 3
+  UIState_Unload:
+    value: 4
+  UIState_Embedded:
+    value: 5
+  UIState_Static:
+    value: 6
+  UIState_StaticGenerated:
+    value: 7
+  UIState_PreEndOfRound:
+    value: 8
+  UIState_EndOfRound:
+    value: 9
+  UIState_PlayingSP:
+    value: 10
+  UIState_PlayingMP:
+    value: 11
+  UIState_None:
+    value: 12
+

@@ -1,0 +1,37 @@
+name: SoldierSpawnKitTemplateData
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new SoldierSpawnKitTemplateData frostbite instance.
+  -
+    description: Creates a new SoldierSpawnKitTemplateData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to SoldierSpawnKitTemplateData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to SoldierSpawnKitTemplateData.
+  -
+    description: Casts an instance of type DataContainer to SoldierSpawnKitTemplateData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SoldierSpawnKitTemplateData.
+
+properties:
+  kit:
+    type: int
+  mainGun:
+    type: int
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SoldierSpawnKitTemplateData type.
+

@@ -1,0 +1,79 @@
+name: UIMessageCompData
+type: class
+inherits: UIComponentData
+
+constructors:
+  -
+    description: Creates a new UIMessageCompData frostbite instance.
+  -
+    description: Creates a new UIMessageCompData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UIComponentData to UIMessageCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIComponentData
+        description: The instance to cast to UIMessageCompData.
+  -
+    description: Casts an instance of type Asset to UIMessageCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to UIMessageCompData.
+  -
+    description: Casts an instance of type DataContainer to UIMessageCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UIMessageCompData.
+
+properties:
+  scoreAggregateTime:
+    type: float
+  chatMessageInfo:
+    type: MessageInfo
+  killMessageInfo:
+    type: MessageInfo
+  scoreMessageInfo:
+    type: MessageInfo
+  scoreMinorMessageInfo:
+    type: MessageInfo
+  scoreMajorMessageInfo:
+    type: MessageInfo
+  gameMessageInfo:
+    type: MessageInfo
+  staticMessageInfo:
+    type: MessageInfo
+  outOfBoundsMessageInfo:
+    type: MessageInfo
+  killScoreMessageInfo:
+    type: MessageInfo
+  logLinesMessageInfo:
+    type: MessageInfo
+  tooltipMessageInfo:
+    type: MessageInfo
+  subtitleMessageInfo:
+    type: MessageInfo
+  rewardMessageInfo:
+    type: MessageInfo
+  localKillMessageInfo:
+    type: MessageInfo
+  serverAdminYellMessageInfo:
+    type: MessageInfo
+  gunMasterMessageInfo:
+    type: MessageInfo
+  forceSubtitlesForTheseLevels:
+    type: string
+    array: true
+  forceSubtitlesOffForTheseLevels:
+    type: string
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UIMessageCompData type.
+

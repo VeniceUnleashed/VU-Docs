@@ -1,0 +1,11 @@
+name: PlayerRole
+type: enum
+
+values:
+  PRSquadLeader:
+    value: 0
+  PRSquadMember:
+    value: 1
+  PRUnknown:
+    value: 2
+

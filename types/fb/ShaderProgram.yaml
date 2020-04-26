@@ -1,0 +1,451 @@
+name: ShaderProgram
+type: enum
+
+values:
+  ShaderProgram_DebugRender_Font2d:
+    value: 0
+  ShaderProgram_DebugRender_FontShadow2d:
+    value: 1
+  ShaderProgram_DebugRender_Color2d:
+    value: 2
+  ShaderProgram_DebugRender_Color3d:
+    value: 3
+  ShaderProgram_DebugRender_Lit3d:
+    value: 4
+  ShaderProgram_DebugRender_LitGrid3d:
+    value: 5
+  ShaderProgram_SimpleWhite:
+    value: 6
+  ShaderProgram_MaterialID:
+    value: 7
+  ShaderProgram_DownsampleQuarter:
+    value: 8
+  ShaderProgram_DownsampleQuarterZ:
+    value: 9
+  ShaderProgram_DownsampleHalf:
+    value: 10
+  ShaderProgram_DownsampleDepthHalfSingleSample:
+    value: 11
+  ShaderProgram_DownsampleHalfGrayscaleLog:
+    value: 12
+  ShaderProgram_DownsampleCubeHalfPoisson13:
+    value: 13
+  ShaderProgram_DownsampleCubeHalfPoisson13Clamped:
+    value: 14
+  ShaderProgram_SeperableFilter:
+    value: 15
+  ShaderProgram_GaussianBlurRgb15HCube:
+    value: 16
+  ShaderProgram_GaussianBlurRgb15VCube:
+    value: 17
+  ShaderProgram_FastGaussian9H:
+    value: 18
+  ShaderProgram_FastGaussian9V:
+    value: 19
+  ShaderProgram_GreyscaleGaussian9H:
+    value: 20
+  ShaderProgram_GreyscaleGaussian9V:
+    value: 21
+  ShaderProgram_CosineBlurRgbHCube:
+    value: 22
+  ShaderProgram_CosineBlurRgbVCube:
+    value: 23
+  ShaderProgram_GaussianBlurRgba15HCube:
+    value: 24
+  ShaderProgram_GaussianBlurRgba15VCube:
+    value: 25
+  ShaderProgram_CosineBlurRgbaHCube:
+    value: 26
+  ShaderProgram_CosineBlurRgbaVCube:
+    value: 27
+  ShaderProgram_Tex2d:
+    value: 28
+  ShaderProgram_Tex2dConstantAlpha:
+    value: 29
+  ShaderProgram_Tex2dSaturateAlpha:
+    value: 30
+  ShaderProgram_Tex2dAlpha:
+    value: 31
+  ShaderProgram_Tex2dAlphaOverlayAdd:
+    value: 32
+  ShaderProgram_Tex2dAlphaOverlayLerp:
+    value: 33
+  ShaderProgram_Tex2dPow:
+    value: 34
+  ShaderProgram_Tex2dPowAlpha:
+    value: 35
+  ShaderProgram_Tex2dMrt2:
+    value: 36
+  ShaderProgram_Tex2dMrt3:
+    value: 37
+  ShaderProgram_Tex2dMrt4:
+    value: 38
+  ShaderProgram_Tex2dGrayscaleLog:
+    value: 39
+  ShaderProgram_Tex3d:
+    value: 40
+  ShaderProgram_TexCube:
+    value: 41
+  ShaderProgram_TexCubeAlpha:
+    value: 42
+  ShaderProgram_TexCubeAlphaOverlayAdd:
+    value: 43
+  ShaderProgram_TexCubeAlphaOverlayLerp:
+    value: 44
+  ShaderProgram_Color:
+    value: 45
+  ShaderProgram_Tonemap:
+    value: 46
+  ShaderProgram_ColorGrade:
+    value: 47
+  ShaderProgram_Dof:
+    value: 48
+  ShaderProgram_UnprojectDepthBuffer:
+    value: 49
+  ShaderProgram_UnprojectDepthBufferHalf:
+    value: 50
+  ShaderProgram_UnprojectDepthBufferMsaa:
+    value: 51
+  ShaderProgram_SingleDepthSampleMsaa:
+    value: 52
+  ShaderProgram_MaxDepthSampleMsaa:
+    value: 53
+  ShaderProgram_TexYCrCb:
+    value: 54
+  ShaderProgram_CombineTextures2:
+    value: 55
+  ShaderProgram_CombineTextures3:
+    value: 56
+  ShaderProgram_CombineTextures4:
+    value: 57
+  ShaderProgram_CombineTextures5:
+    value: 58
+  ShaderProgram_CombineTextures6:
+    value: 59
+  ShaderProgram_CombineTextures2Bilinear:
+    value: 60
+  ShaderProgram_CombineTextures3Bilinear:
+    value: 61
+  ShaderProgram_CombineTextures4Bilinear:
+    value: 62
+  ShaderProgram_CombineTextures5Bilinear:
+    value: 63
+  ShaderProgram_CombineTextures6Bilinear:
+    value: 64
+  ShaderProgram_CombineOpaqueAndTrans2d:
+    value: 65
+  ShaderProgram_CombineOpaqueAndTransCube:
+    value: 66
+  ShaderProgram_CombineOpaqueAndTrans2dSpecial:
+    value: 67
+  ShaderProgram_CombineOpaqueAndTransCubeSpecial:
+    value: 68
+  ShaderProgram_CrtHudFx:
+    value: 69
+  ShaderProgram_CrtAnalogLinkHudFx:
+    value: 70
+  ShaderProgram_RadialBlur:
+    value: 71
+  ShaderProgram_PoissonRadialBlur:
+    value: 72
+  ShaderProgram_ChromaticAberrationWithRadialBlend:
+    value: 73
+  ShaderProgram_FLIR:
+    value: 74
+  ShaderProgram_ColorTint:
+    value: 75
+  ShaderProgram_WriteZ:
+    value: 76
+  ShaderProgram_WriteHalfResZ:
+    value: 77
+  ShaderProgram_WriteHalfResZFat:
+    value: 78
+  ShaderProgram_WriteHalfResZAverage:
+    value: 79
+  ShaderProgram_LinearZ:
+    value: 80
+  ShaderProgram_ParticleVertexShadows:
+    value: 81
+  ShaderProgram_ParticleVertexShadowsAccum:
+    value: 82
+  ShaderProgram_ParticleVertexShadowsAccumBlend:
+    value: 83
+  ShaderProgram_HalfResUpsampleBilateral:
+    value: 84
+  ShaderProgram_HalfResUpsampleBilateralTiled:
+    value: 85
+  ShaderProgram_HalfResUpsampleBilinearTiled:
+    value: 86
+  ShaderProgram_HalfResCategorize:
+    value: 87
+  ShaderProgram_HalfResCategorizeDownsample:
+    value: 88
+  ShaderProgram_DigitalDistortion:
+    value: 89
+  ShaderProgram_MotionBlur:
+    value: 90
+  ShaderProgram_CalcVelocityFromZBuffer:
+    value: 91
+  ShaderProgram_FXAA:
+    value: 92
+  ShaderProgram_HorizonBasedAO:
+    value: 93
+  ShaderProgram_HorizonBasedAO_BlurPS:
+    value: 94
+  ShaderProgram_HorizonBasedAO_BlurCS:
+    value: 95
+  ShaderProgram_HorizonBasedAO_PackAODepth:
+    value: 96
+  ShaderProgram_HorizonBasedAO_CompositeTemporal:
+    value: 97
+  ShaderProgram_HorizonBasedAO_NoiseDetection:
+    value: 98
+  ShaderProgram_SSAO:
+    value: 99
+  ShaderProgram_SSAO_DilateDraw:
+    value: 100
+  ShaderProgram_LightTileDownsampleHalf:
+    value: 101
+  ShaderProgram_LightTileDownsampleHalfStage2:
+    value: 102
+  ShaderProgram_LightTileDownsampleHalfStage3:
+    value: 103
+  ShaderProgram_TiledLightVisibility_Point:
+    value: 104
+  ShaderProgram_TiledLightVisibility_Spot:
+    value: 105
+  ShaderProgram_TiledLightVisibility_Line:
+    value: 106
+  ShaderProgram_TiledLightVisibility_CalcTileFrustaData:
+    value: 107
+  ShaderProgram_DeferredGBufferSimpleFixup:
+    value: 108
+  ShaderProgram_MsaaClassify:
+    value: 109
+  ShaderProgram_DeferredPointLight:
+    value: 110
+  ShaderProgram_DeferredPointLightCS:
+    value: 111
+  ShaderProgram_DeferredPointLightTile:
+    value: 112
+  ShaderProgram_DeferredPointLightZ:
+    value: 113
+  ShaderProgram_DeferredLineLight:
+    value: 114
+  ShaderProgram_DeferredLineLightTile:
+    value: 115
+  ShaderProgram_DeferredSpotLight:
+    value: 116
+  ShaderProgram_DeferredSpotLightZ:
+    value: 117
+  ShaderProgram_DeferredConeLight:
+    value: 118
+  ShaderProgram_DeferredConeLightTile:
+    value: 119
+  ShaderProgram_DeferredOutdoorLight:
+    value: 120
+  ShaderProgram_DeferredOutdoorLightTile:
+    value: 121
+  ShaderProgram_DeferredShadow:
+    value: 122
+  ShaderProgram_Sky:
+    value: 123
+  ShaderProgram_HeightfieldTessellation:
+    value: 124
+  ShaderProgram_XenonMemCopy:
+    value: 125
+  ShaderProgram_XenonFastUntile:
+    value: 126
+  ShaderProgram_XenonFastDepthStencilFill:
+    value: 127
+  ShaderProgram_XenonFastDepthStencilFill_ZOnly:
+    value: 128
+  ShaderProgram_XenonJobEnable:
+    value: 129
+  ShaderProgram_Ui_Textured:
+    value: 130
+  ShaderProgram_Ui_Textured2:
+    value: 131
+  ShaderProgram_Ui_Textured3:
+    value: 132
+  ShaderProgram_Ui_Textured2GlobalColor:
+    value: 133
+  ShaderProgram_Ui_Scaleform_StripSolidColor:
+    value: 134
+  ShaderProgram_Ui_Scaleform_StripCxformTextureMultiply:
+    value: 135
+  ShaderProgram_Ui_Scaleform_StripCxformTexture:
+    value: 136
+  ShaderProgram_Ui_Scaleform_StripCxformGauraudNoAddAlpha:
+    value: 137
+  ShaderProgram_Ui_Scaleform_StripCxformGauraud:
+    value: 138
+  ShaderProgram_Ui_Scaleform_StripCxformGauraudTexture:
+    value: 139
+  ShaderProgram_Ui_Scaleform_StripCxform2Texture:
+    value: 140
+  ShaderProgram_Ui_Scaleform_StripCxformGauraudMultiply:
+    value: 141
+  ShaderProgram_Ui_Scaleform_StripCxformGauraudMultiplyNoAddAlpha:
+    value: 142
+  ShaderProgram_Ui_Scaleform_StripCxformGauraudMultiplyTexture:
+    value: 143
+  ShaderProgram_Ui_Scaleform_StripCxformMultiply2Texture:
+    value: 144
+  ShaderProgram_Ui_Scaleform_XY16iC32SolidColor:
+    value: 145
+  ShaderProgram_Ui_Scaleform_XY16iC32CxformTextureMultiply:
+    value: 146
+  ShaderProgram_Ui_Scaleform_XY16iC32CxformTexture:
+    value: 147
+  ShaderProgram_Ui_Scaleform_XY16iC32CxformGauraudNoAddAlpha:
+    value: 148
+  ShaderProgram_Ui_Scaleform_XY16iC32CxformGauraud:
+    value: 149
+  ShaderProgram_Ui_Scaleform_XY16iC32CxformGauraudTexture:
+    value: 150
+  ShaderProgram_Ui_Scaleform_XY16iC32Cxform2Texture:
+    value: 151
+  ShaderProgram_Ui_Scaleform_XY16iC32CxformGauraudMultiply:
+    value: 152
+  ShaderProgram_Ui_Scaleform_XY16iC32CxformGauraudMultiplyNoAddAlpha:
+    value: 153
+  ShaderProgram_Ui_Scaleform_XY16iC32CxformGauraudMultiplyTexture:
+    value: 154
+  ShaderProgram_Ui_Scaleform_XY16iC32CxformMultiply2Texture:
+    value: 155
+  ShaderProgram_Ui_Scaleform_XY16iCF32SolidColor:
+    value: 156
+  ShaderProgram_Ui_Scaleform_XY16iCF32CxformTextureMultiply:
+    value: 157
+  ShaderProgram_Ui_Scaleform_XY16iCF32CxformTexture:
+    value: 158
+  ShaderProgram_Ui_Scaleform_XY16iCF32CxformGauraudNoAddAlpha:
+    value: 159
+  ShaderProgram_Ui_Scaleform_XY16iCF32CxformGauraud:
+    value: 160
+  ShaderProgram_Ui_Scaleform_XY16iCF32CxformGauraudTexture:
+    value: 161
+  ShaderProgram_Ui_Scaleform_XY16iCF32Cxform2Texture:
+    value: 162
+  ShaderProgram_Ui_Scaleform_XY16iCF32CxformGauraudMultiply:
+    value: 163
+  ShaderProgram_Ui_Scaleform_XY16iCF32CxformGauraudMultiplyNoAddAlpha:
+    value: 164
+  ShaderProgram_Ui_Scaleform_XY16iCF32CxformGauraudMultiplyTexture:
+    value: 165
+  ShaderProgram_Ui_Scaleform_XY16iCF32CxformMultiply2Texture:
+    value: 166
+  ShaderProgram_Ui_Scaleform_XY16iCF32_T2SolidColor:
+    value: 167
+  ShaderProgram_Ui_Scaleform_XY16iCF32_T2CxformTextureMultiply:
+    value: 168
+  ShaderProgram_Ui_Scaleform_XY16iCF32_T2CxformTexture:
+    value: 169
+  ShaderProgram_Ui_Scaleform_XY16iCF32_T2CxformGauraudNoAddAlpha:
+    value: 170
+  ShaderProgram_Ui_Scaleform_XY16iCF32_T2CxformGauraud:
+    value: 171
+  ShaderProgram_Ui_Scaleform_XY16iCF32_T2CxformGauraudTexture:
+    value: 172
+  ShaderProgram_Ui_Scaleform_XY16iCF32_T2Cxform2Texture:
+    value: 173
+  ShaderProgram_Ui_Scaleform_XY16iCF32_T2CxformGauraudMultiply:
+    value: 174
+  ShaderProgram_Ui_Scaleform_XY16iCF32_T2CxformGauraudMultiplyNoAddAlpha:
+    value: 175
+  ShaderProgram_Ui_Scaleform_XY16iCF32_T2CxformGauraudMultiplyTexture:
+    value: 176
+  ShaderProgram_Ui_Scaleform_XY16iCF32_T2CxformMultiply2Texture:
+    value: 177
+  ShaderProgram_Ui_Scaleform_GlyphTextTextureAlpha:
+    value: 178
+  ShaderProgram_Ui_Scaleform_GlyphTextTextureColorMultiply:
+    value: 179
+  ShaderProgram_Ui_Scaleform_GlyphTextTextureColor:
+    value: 180
+  ShaderProgram_Ui_Scaleform_StripFilterBlur:
+    value: 181
+  ShaderProgram_Ui_Scaleform_StripFilterShadow:
+    value: 182
+  ShaderProgram_Ui_Scaleform_XY16iC32FilterBlur:
+    value: 183
+  ShaderProgram_Ui_Scaleform_XY16iC32FilterShadow:
+    value: 184
+  ShaderProgram_Ui_Scaleform_XY16iCF32FilterBlur:
+    value: 185
+  ShaderProgram_Ui_Scaleform_XY16iCF32FilterShadow:
+    value: 186
+  ShaderProgram_Ui_Scaleform_XY16iCF32_T2FilterBlur:
+    value: 187
+  ShaderProgram_Ui_Scaleform_XY16iCF32_T2FilterShadow:
+    value: 188
+  ShaderProgram_Ui_Scaleform_GlyphFilterBlur:
+    value: 189
+  ShaderProgram_Ui_Scaleform_GlyphFilterShadow:
+    value: 190
+  ShaderProgram_Ui_Minimap:
+    value: 191
+  ShaderProgram_Ui_MinimapIcon:
+    value: 192
+  ShaderProgram_Ui_CombatArea:
+    value: 193
+  ShaderProgram_ExperimentShader_A:
+    value: 194
+  ShaderProgram_ExperimentShader_B:
+    value: 195
+  ShaderProgram_TextureCompress_A:
+    value: 196
+  ShaderProgram_TextureCompress_DXT1:
+    value: 197
+  ShaderProgram_TextureCompress_DXT5:
+    value: 198
+  ShaderProgram_ErrorDifferenceSurface_RGB:
+    value: 199
+  ShaderProgram_ErrorDifferenceSurface_Alpha:
+    value: 200
+  ShaderProgram_XenonEncodeDXT5MemExport:
+    value: 201
+  ShaderProgram_TerrainEncodeSurface_A:
+    value: 202
+  ShaderProgram_TerrainEncodeSurface_B:
+    value: 203
+  ShaderProgram_TerrainPatchVertexYFetch:
+    value: 204
+  ShaderProgram_TerrainMeshScatteringYFetch:
+    value: 205
+  ShaderProgram_TexYCrCbA:
+    value: 206
+  ShaderProgram_RgbSeparation:
+    value: 207
+  ShaderProgram_Distort:
+    value: 208
+  ShaderProgram_DiffusionDofComputeRadius:
+    value: 209
+  ShaderProgram_DiffusionDofTridiagonalFill:
+    value: 210
+  ShaderProgram_DiffusionDofForwardCR:
+    value: 211
+  ShaderProgram_DiffusionDofBackwardCR:
+    value: 212
+  ShaderProgram_DiffusionDofSolveFinal:
+    value: 213
+  ShaderProgram_DiffusionDofOutputPS:
+    value: 214
+  ShaderProgram_DiffusionDofLinearRadiusPS:
+    value: 215
+  ShaderProgram_DiffusionDofNonLinearRadiusPS:
+    value: 216
+  ShaderProgram_DiffusionDofDetectForegroundPS:
+    value: 217
+  ShaderProgram_DiffusionDofCombineForegroundPS:
+    value: 218
+  ShaderProgram_DiffusionDofBlurXForegroundPS:
+    value: 219
+  ShaderProgram_DiffusionDofBlurYForegroundPS:
+    value: 220
+  ShaderProgram_Ui_DetailTexturedMinimap:
+    value: 221
+  ShaderProgramCount:
+    value: 222
+

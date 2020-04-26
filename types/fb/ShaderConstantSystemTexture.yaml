@@ -1,0 +1,9 @@
+name: ShaderConstantSystemTexture
+type: enum
+
+values:
+  ShaderConstantSystemTexture_DepthBufferTexture:
+    value: 0
+  ShaderConstantSystemTextureCount:
+    value: 1
+

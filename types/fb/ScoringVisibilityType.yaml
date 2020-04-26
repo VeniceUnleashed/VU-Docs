@@ -1,0 +1,11 @@
+name: ScoringVisibilityType
+type: enum
+
+values:
+  ScoringVisibilityType_Major:
+    value: 0
+  ScoringVisibilityType_Minor:
+    value: 1
+  ScoringVisibilityType_Hidden:
+    value: 2
+

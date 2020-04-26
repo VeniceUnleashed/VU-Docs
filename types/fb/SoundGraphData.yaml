@@ -1,0 +1,47 @@
+name: SoundGraphData
+type: class
+inherits: AudioGraphData
+
+constructors:
+  -
+    description: Creates a new SoundGraphData frostbite instance.
+  -
+    description: Creates a new SoundGraphData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphData to SoundGraphData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphData
+        description: The instance to cast to SoundGraphData.
+  -
+    description: Casts an instance of type DataContainer to SoundGraphData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SoundGraphData.
+
+properties:
+  info:
+    type: SoundGraphInfo
+  inputParameters:
+    type: AudioGraphParameter
+    array: true
+  outputParameters:
+    type: AudioGraphParameter
+    array: true
+  inputEvents:
+    type: AudioGraphEvent
+    array: true
+  outputEvents:
+    type: AudioGraphEvent
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SoundGraphData type.
+

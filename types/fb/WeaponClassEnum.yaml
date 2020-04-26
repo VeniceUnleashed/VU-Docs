@@ -1,0 +1,85 @@
+name: WeaponClassEnum
+type: enum
+
+values:
+  wc12gauge:
+    value: 0
+  wc338Magnum:
+    value: 1
+  wc357Magnum:
+    value: 2
+  wc44Magnum:
+    value: 3
+  wc45cal:
+    value: 4
+  wc46x30mm:
+    value: 5
+  wc50cal:
+    value: 6
+  wc545x45mmWP:
+    value: 7
+  wc556x45mmNATO:
+    value: 8
+  wc57x28mm:
+    value: 9
+  wc58x42mm:
+    value: 10
+  wc762x39mmWP:
+    value: 11
+  wc762x51mmNATO:
+    value: 12
+  wc762x54mmR:
+    value: 13
+  wc9x19mm:
+    value: 14
+  wc9x39mm:
+    value: 15
+  wcAssault:
+    value: 16
+  wcShotgun:
+    value: 17
+  wcSmg:
+    value: 18
+  wcLmg:
+    value: 19
+  wcSniper:
+    value: 20
+  wcUgl:
+    value: 21
+  wcHgr:
+    value: 22
+  wcAt:
+    value: 23
+  wcATMine:
+    value: 24
+  wcC4:
+    value: 25
+  wcAutoInjector:
+    value: 26
+  wcKnife:
+    value: 27
+  wcLaserDesignator:
+    value: 28
+  wcLaserPainter:
+    value: 29
+  wcMedKit:
+    value: 30
+  wcMortarStrike:
+    value: 31
+  wcPowerTool:
+    value: 32
+  wcTracerDart:
+    value: 33
+  wcRadioBeacon:
+    value: 34
+  wcEodBot:
+    value: 35
+  wcReconMav:
+    value: 36
+  wcUGS:
+    value: 37
+  wcCount:
+    value: 38
+  wcNone:
+    value: 39
+

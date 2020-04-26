@@ -1,0 +1,38 @@
+name: ChatSettings
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new ChatSettings frostbite instance.
+  -
+    description: Creates a new ChatSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to ChatSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to ChatSettings.
+  -
+    description: Casts an instance of type DataContainer to ChatSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ChatSettings.
+
+properties:
+  channels:
+    type: ChatChannelType
+    array: true
+  antiSpam:
+    type: AntiSpamConfig
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ChatSettings type.
+

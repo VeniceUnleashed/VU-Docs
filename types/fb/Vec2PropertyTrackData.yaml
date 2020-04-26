@@ -1,0 +1,42 @@
+name: Vec2PropertyTrackData
+type: class
+inherits: SimplePropertyTrackData
+
+constructors:
+  -
+    description: Creates a new Vec2PropertyTrackData frostbite instance.
+  -
+    description: Creates a new Vec2PropertyTrackData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SimplePropertyTrackData to Vec2PropertyTrackData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SimplePropertyTrackData
+        description: The instance to cast to Vec2PropertyTrackData.
+  -
+    description: Casts an instance of type PropertyTrackData to Vec2PropertyTrackData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: PropertyTrackData
+        description: The instance to cast to Vec2PropertyTrackData.
+  -
+    description: Casts an instance of type DataContainer to Vec2PropertyTrackData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to Vec2PropertyTrackData.
+
+properties:
+  values:
+    type: Vec2
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the Vec2PropertyTrackData type.
+

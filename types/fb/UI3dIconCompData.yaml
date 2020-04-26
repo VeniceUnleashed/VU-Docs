@@ -1,0 +1,107 @@
+name: UI3dIconCompData
+type: class
+inherits: UIComponentData
+
+constructors:
+  -
+    description: Creates a new UI3dIconCompData frostbite instance.
+  -
+    description: Creates a new UI3dIconCompData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UIComponentData to UI3dIconCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIComponentData
+        description: The instance to cast to UI3dIconCompData.
+  -
+    description: Casts an instance of type Asset to UI3dIconCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to UI3dIconCompData.
+  -
+    description: Casts an instance of type DataContainer to UI3dIconCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UI3dIconCompData.
+
+properties:
+  pixelOffset:
+    type: Vec2
+  iconSize:
+    type: float
+  maxFarFade:
+    type: float
+  maxCloseFade:
+    type: float
+  snapSafeZone:
+    type: float
+  snapCenterYOffset:
+    type: float
+  shrinkSnapAnimationTime:
+    type: float
+  trackerHudRadiusX:
+    type: float
+  trackerHudRadiusY:
+    type: float
+  maxLookAtThreshold:
+    type: float
+  minLookAtThreshold:
+    type: float
+  minLookAtThresholdDistance:
+    type: float
+  drawDistance:
+    type: float
+  fadeDistance:
+    type: float
+  fadeEndDistance:
+    type: float
+  minimumDrawDistance:
+    type: float
+  minimumFadeDistance:
+    type: float
+  maxTagUpdatesPerFrame:
+    type: int
+  verticalOffset:
+    type: float
+  showLabelRange:
+    type: float
+  teamRadioDistance:
+    type: float
+  scaleDistance:
+    type: float
+  maxScaleMod:
+    type: float
+  maxXRotation:
+    type: float
+  maxYRotation:
+    type: float
+  horisontalOffset:
+    type: float
+  showSupportAmmoThreshold:
+    type: float
+  verticalOffsetMaxOffset:
+    type: float
+  verticalOffsetScaleFactor:
+    type: float
+  showEngineerArmorThreshold:
+    type: float
+  showMedicHealthThreshold:
+    type: float
+  snapIcons:
+    type: bool
+  circularSnap:
+    type: bool
+  onlyShowSnapped:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UI3dIconCompData type.
+

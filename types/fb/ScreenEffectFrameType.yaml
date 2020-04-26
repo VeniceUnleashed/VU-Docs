@@ -1,0 +1,11 @@
+name: ScreenEffectFrameType
+type: enum
+
+values:
+  ScreenEffectFrameType_FullFrame:
+    value: 0
+  ScreenEffectFrameType_SingleFramePart:
+    value: 1
+  ScreenEffectFrameType_SingleSquareFramePart:
+    value: 2
+

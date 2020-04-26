@@ -1,0 +1,15 @@
+name: RenderBlendOp
+type: enum
+
+values:
+  RenderBlendOp_Add:
+    value: 0
+  RenderBlendOp_Subtract:
+    value: 1
+  RenderBlendOp_RevSubtract:
+    value: 2
+  RenderBlendOp_Min:
+    value: 3
+  RenderBlendOp_Max:
+    value: 4
+

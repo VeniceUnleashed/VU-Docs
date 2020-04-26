@@ -1,0 +1,11 @@
+name: RenderCullMode
+type: enum
+
+values:
+  RenderCullMode_None:
+    value: 0
+  RenderCullMode_Front:
+    value: 1
+  RenderCullMode_Back:
+    value: 2
+

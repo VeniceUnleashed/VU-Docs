@@ -1,0 +1,104 @@
+name: DxDisplaySettings
+type: class
+inherits: SystemSettings
+
+constructors:
+  -
+    description: Creates a new DxDisplaySettings frostbite instance.
+  -
+    description: Creates a new DxDisplaySettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SystemSettings to DxDisplaySettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SystemSettings
+        description: The instance to cast to DxDisplaySettings.
+  -
+    description: Casts an instance of type DataContainer to DxDisplaySettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to DxDisplaySettings.
+
+properties:
+  fullscreenWidth:
+    type: int
+  fullscreenHeight:
+    type: int
+  amdMinDriverVersion:
+    type: string
+  nvidiaMinDriverVersion:
+    type: int
+  fullscreenRefreshRate:
+    type: float
+  stereoSeparationScale:
+    type: float
+  stereoDepth:
+    type: float
+  fullscreenOutputIndex:
+    type: int
+  debugBreakIgnoredIDs:
+    type: int
+    array: true
+  stereoConvergenceScale:
+    type: float
+  stereoSoldierZoomConvergenceScale:
+    type: float
+  forceRenderAheadLimit:
+    type: int
+  presentInterval:
+    type: int
+  debugBreakOnWarningEnable:
+    type: bool
+  debugInfoEnable:
+    type: bool
+  fullscreen:
+    type: bool
+  debugBreakOnErrorEnable:
+    type: bool
+  createMinimalWindow:
+    type: bool
+  driverInternalThreadingEnable:
+    type: bool
+  debugBreakOnInfoEnable:
+    type: bool
+  fullscreenModeEnable:
+    type: bool
+  vSyncEnable:
+    type: bool
+  tripleBufferingEnable:
+    type: bool
+  dx10PlusEnable:
+    type: bool
+  nvApiEnable:
+    type: bool
+  nvPerfHudEnable:
+    type: bool
+  stereoEnable:
+    type: bool
+  dx11Enable:
+    type: bool
+  dx10Dot0Enable:
+    type: bool
+  refDriverEnable:
+    type: bool
+  dx10Dot1Enable:
+    type: bool
+  minDriverRequired:
+    type: bool
+  warpDriverEnable:
+    type: bool
+  nullDriverEnable:
+    type: bool
+  multiGpuValidationEnable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the DxDisplaySettings type.
+

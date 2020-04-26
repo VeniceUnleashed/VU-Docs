@@ -1,0 +1,15 @@
+name: VirtualGameState
+type: enum
+
+values:
+  VirtualGameState_Inactive:
+    value: 0
+  VirtualGameState_Active:
+    value: 1
+  VirtualGameState_Expired:
+    value: 2
+  VirtualGameState_Recreate:
+    value: 3
+  VirtualGameState_Updated:
+    value: 4
+

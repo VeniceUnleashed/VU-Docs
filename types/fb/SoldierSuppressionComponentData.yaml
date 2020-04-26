@@ -1,0 +1,63 @@
+name: SoldierSuppressionComponentData
+type: class
+inherits: ComponentData
+
+constructors:
+  -
+    description: Creates a new SoldierSuppressionComponentData frostbite instance.
+  -
+    description: Creates a new SoldierSuppressionComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ComponentData to SoldierSuppressionComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to SoldierSuppressionComponentData.
+  -
+    description: Casts an instance of type GameObjectData to SoldierSuppressionComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to SoldierSuppressionComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to SoldierSuppressionComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to SoldierSuppressionComponentData.
+  -
+    description: Casts an instance of type DataContainer to SoldierSuppressionComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SoldierSuppressionComponentData.
+
+properties:
+  reactionToSuppression:
+    type: SuppressionReactionData
+  suppressionResistModifier:
+    type: float
+  suppressionBoostModifier:
+    type: float
+  suppressionDecay:
+    type: float
+  suppressionSphereRadius:
+    type: float
+  fallOffDelay:
+    type: float
+  fallOffMultiplier:
+    type: float
+  suppressionAbortsHealthRegeneration:
+    type: bool
+  checkLineOfSight:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SoldierSuppressionComponentData type.
+

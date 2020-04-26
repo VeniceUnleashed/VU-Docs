@@ -1,0 +1,48 @@
+name: SoundState
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new SoundState frostbite instance.
+  -
+    description: Creates a new SoundState frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to SoundState. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SoundState.
+
+properties:
+  name:
+    type: string
+  lpCutoffFrequency:
+    type: float
+  duration:
+    type: float
+  fadeInTime:
+    type: float
+  fadeOutTime:
+    type: float
+  bypassSound:
+    type: SoundAsset
+    nullable: true
+  hdrSetting:
+    type: HdrSetting
+    nullable: true
+  mixer:
+    type: MixerAsset
+    nullable: true
+  fadeSound:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SoundState type.
+

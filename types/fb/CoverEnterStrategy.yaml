@@ -1,0 +1,11 @@
+name: CoverEnterStrategy
+type: enum
+
+values:
+  CoverEnterStrategy_EnterNormally:
+    value: 0
+  CoverEnterStrategy_SkipEnterButAlign:
+    value: 1
+  CoverEnterStrategy_SkipEnterDontAlign:
+    value: 2
+

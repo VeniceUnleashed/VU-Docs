@@ -1,0 +1,9 @@
+name: VoiceOverConversationQueueGroupPolyphony
+type: enum
+
+values:
+  VoiceOverConversationQueueGroupPolyphony_Sources:
+    value: 0
+  VoiceOverConversationQueueGroupPolyphony_Conversations:
+    value: 1
+

@@ -1,0 +1,33 @@
+name: CriteriaType
+type: enum
+
+values:
+  CriteriaType_IAR_InARound:
+    value: 0
+  CriteriaType_IAR_InARoundResetIfValueNotChanged:
+    value: 1
+  CriteriaType_IAS_InASpawn:
+    value: 2
+  CriteriaType_IAS_InASpawnNotResetable:
+    value: 3
+  CriteriaType_IAS_InASpawnWithoutTakingDamage:
+    value: 4
+  CriteriaType_GLOBAL_AllTimeTotal:
+    value: 5
+  CriteriaType_GLOBAL_HighestValue:
+    value: 6
+  CriteriaType_GLOBAL_HighestValueAlways:
+    value: 7
+  CriteriaType_GLOBAL_HighestValueInASpawn:
+    value: 8
+  CriteriaType_GLOBAL_LowestValueAlways:
+    value: 9
+  CriteriaType_IfNotTrue:
+    value: 10
+  CriteriaType_IAD_InADeathStreak:
+    value: 11
+  CriteriaType_GLOBAL_HighestValuePersistent:
+    value: 12
+  CriteriaType_LAST_ITEM:
+    value: 13
+

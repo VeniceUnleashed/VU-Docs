@@ -1,0 +1,9 @@
+name: ShaderTimeType
+type: enum
+
+values:
+  ShaderTimeType_Game:
+    value: 0
+  ShaderTimeType_Real:
+    value: 1
+

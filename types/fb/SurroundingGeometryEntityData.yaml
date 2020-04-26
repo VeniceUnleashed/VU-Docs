@@ -1,0 +1,65 @@
+name: SurroundingGeometryEntityData
+type: class
+inherits: GameEntityData
+
+constructors:
+  -
+    description: Creates a new SurroundingGeometryEntityData frostbite instance.
+  -
+    description: Creates a new SurroundingGeometryEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameEntityData to SurroundingGeometryEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to SurroundingGeometryEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to SurroundingGeometryEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to SurroundingGeometryEntityData.
+  -
+    description: Casts an instance of type EntityData to SurroundingGeometryEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to SurroundingGeometryEntityData.
+  -
+    description: Casts an instance of type GameObjectData to SurroundingGeometryEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to SurroundingGeometryEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to SurroundingGeometryEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to SurroundingGeometryEntityData.
+  -
+    description: Casts an instance of type DataContainer to SurroundingGeometryEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SurroundingGeometryEntityData.
+
+properties:
+  allowedVehicleList:
+    type: AllowedVehiclesData
+    nullable: true
+  combatArea:
+    type: CombatAreaTriggerEntityData
+    nullable: true
+  combatAreaIndex:
+    type: int
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SurroundingGeometryEntityData type.
+

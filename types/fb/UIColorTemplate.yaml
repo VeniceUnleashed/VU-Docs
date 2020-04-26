@@ -1,0 +1,38 @@
+name: UIColorTemplate
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new UIColorTemplate frostbite instance.
+  -
+    description: Creates a new UIColorTemplate frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to UIColorTemplate. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to UIColorTemplate.
+  -
+    description: Casts an instance of type DataContainer to UIColorTemplate. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UIColorTemplate.
+
+properties:
+  colors:
+    type: UIColor
+    array: true
+  active:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UIColorTemplate type.
+

@@ -1,0 +1,45 @@
+name: WeaponSocketObjectData
+type: class
+inherits: SocketObjectDataBase
+
+constructors:
+  -
+    description: Creates a new WeaponSocketObjectData frostbite instance.
+  -
+    description: Creates a new WeaponSocketObjectData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SocketObjectDataBase to WeaponSocketObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SocketObjectDataBase
+        description: The instance to cast to WeaponSocketObjectData.
+  -
+    description: Casts an instance of type DataContainer to WeaponSocketObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to WeaponSocketObjectData.
+
+properties:
+  referencedAssetHashes:
+    type: int
+    array: true
+  asset1p:
+    type: Asset
+    nullable: true
+  asset1pzoom:
+    type: Asset
+    nullable: true
+  asset3p:
+    type: Asset
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the WeaponSocketObjectData type.
+

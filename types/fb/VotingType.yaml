@@ -1,0 +1,11 @@
+name: VotingType
+type: enum
+
+values:
+  VotingMap:
+    value: 0
+  VotingGameMode:
+    value: 1
+  VotingFriendlyFire:
+    value: 2
+

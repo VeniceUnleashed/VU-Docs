@@ -1,0 +1,13 @@
+name: LogicalExpressionOperator
+type: enum
+
+values:
+  LogicalExpressionOperator_And:
+    value: 0
+  LogicalExpressionOperator_Or:
+    value: 1
+  LogicalExpressionOperator_Nand:
+    value: 2
+  LogicalExpressionOperator_Nor:
+    value: 3
+

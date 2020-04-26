@@ -1,0 +1,21 @@
+name: DepthStencilCompareFunc
+type: enum
+
+values:
+  DepthStencilCompareFunc_Never:
+    value: 0
+  DepthStencilCompareFunc_Less:
+    value: 1
+  DepthStencilCompareFunc_Equal:
+    value: 2
+  DepthStencilCompareFunc_LessEqual:
+    value: 3
+  DepthStencilCompareFunc_Greater:
+    value: 4
+  DepthStencilCompareFunc_NotEqual:
+    value: 5
+  DepthStencilCompareFunc_GreaterEqual:
+    value: 6
+  DepthStencilCompareFunc_Always:
+    value: 7
+

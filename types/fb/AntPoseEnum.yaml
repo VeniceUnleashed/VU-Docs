@@ -1,0 +1,15 @@
+name: AntPoseEnum
+type: enum
+
+values:
+  AntPoseEnum_Stand:
+    value: 0
+  AntPoseEnum_Crouch:
+    value: 1
+  AntPoseEnum_AntEnumCount:
+    value: 2
+  AntPoseEnum_NoChange:
+    value: 3
+  AntPoseEnum_Count:
+    value: 4
+

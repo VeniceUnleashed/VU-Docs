@@ -1,0 +1,83 @@
+name: GrenadeEntityData
+type: class
+inherits: MeshProjectileEntityData
+
+constructors:
+  -
+    description: Creates a new GrenadeEntityData frostbite instance.
+  -
+    description: Creates a new GrenadeEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type MeshProjectileEntityData to GrenadeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MeshProjectileEntityData
+        description: The instance to cast to GrenadeEntityData.
+  -
+    description: Casts an instance of type ProjectileEntityData to GrenadeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ProjectileEntityData
+        description: The instance to cast to GrenadeEntityData.
+  -
+    description: Casts an instance of type GamePhysicsEntityData to GrenadeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GamePhysicsEntityData
+        description: The instance to cast to GrenadeEntityData.
+  -
+    description: Casts an instance of type GameEntityData to GrenadeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to GrenadeEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to GrenadeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to GrenadeEntityData.
+  -
+    description: Casts an instance of type EntityData to GrenadeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to GrenadeEntityData.
+  -
+    description: Casts an instance of type GameObjectData to GrenadeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to GrenadeEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to GrenadeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to GrenadeEntityData.
+  -
+    description: Casts an instance of type DataContainer to GrenadeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to GrenadeEntityData.
+
+properties:
+  collisionSpeedMultiplier:
+    type: float
+  gravity:
+    type: float
+  grenadeType:
+    type: GrenadeType
+  minBounceSpeed:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the GrenadeEntityData type.
+

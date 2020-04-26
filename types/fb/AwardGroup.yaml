@@ -1,0 +1,23 @@
+name: AwardGroup
+type: enum
+
+values:
+  AwardGroup_Undefined:
+    value: 0
+  AwardGroup_Ribbons:
+    value: 1
+  AwardGroup_DogTags:
+    value: 2
+  AwardGroup_Medals:
+    value: 3
+  AwardGroup_Star:
+    value: 4
+  AwardGroup_Mission:
+    value: 5
+  AwardGroup_LevelComplete:
+    value: 6
+  AwardGroup_Achievements:
+    value: 7
+  AwardGroup_LastAwardGroup:
+    value: 8
+

@@ -1,0 +1,11 @@
+name: ZoomLevelActivateEventType
+type: enum
+
+values:
+  ZoomLevelActivateEventType_Disable:
+    value: 0
+  ZoomLevelActivateEventType_Enable:
+    value: 1
+  ZoomLevelActivateEventType_ToggleOnLightSwitch:
+    value: 2
+

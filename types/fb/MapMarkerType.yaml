@@ -1,0 +1,19 @@
+name: MapMarkerType
+type: enum
+
+values:
+  MMTMissionObjective:
+    value: 0
+  MMTSecondaryMissionObjective:
+    value: 1
+  MMTSoldier:
+    value: 2
+  MMTVehicle:
+    value: 3
+  MMTAmmoCrate:
+    value: 4
+  MMTGeneric:
+    value: 5
+  MMTFlag:
+    value: 6
+

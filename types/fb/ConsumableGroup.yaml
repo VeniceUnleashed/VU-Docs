@@ -1,0 +1,23 @@
+name: ConsumableGroup
+type: enum
+
+values:
+  ConsumableGroup_0:
+    value: 0
+  ConsumableGroup_1:
+    value: 1
+  ConsumableGroup_2:
+    value: 2
+  ConsumableGroup_3:
+    value: 3
+  ConsumableGroup_4:
+    value: 4
+  ConsumableGroup_5:
+    value: 5
+  ConsumableGroup_6:
+    value: 6
+  ConsumableGroup_7:
+    value: 7
+  ConsumableGroup_Count:
+    value: 8
+

@@ -1,0 +1,47 @@
+name: LaserPainterData
+type: class
+inherits: LockingWeaponData
+
+constructors:
+  -
+    description: Creates a new LaserPainterData frostbite instance.
+  -
+    description: Creates a new LaserPainterData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type LockingWeaponData to LaserPainterData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: LockingWeaponData
+        description: The instance to cast to LaserPainterData.
+  -
+    description: Casts an instance of type WeaponData to LaserPainterData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: WeaponData
+        description: The instance to cast to LaserPainterData.
+  -
+    description: Casts an instance of type ToolData to LaserPainterData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ToolData
+        description: The instance to cast to LaserPainterData.
+  -
+    description: Casts an instance of type DataContainer to LaserPainterData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to LaserPainterData.
+
+properties:
+  timeObjectIsPainted:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the LaserPainterData type.
+

@@ -1,0 +1,39 @@
+name: GameObjectData
+type: class
+inherits: GameDataContainer
+
+constructors:
+  -
+    description: Creates a new GameObjectData frostbite instance.
+  -
+    description: Creates a new GameObjectData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameDataContainer to GameObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to GameObjectData.
+  -
+    description: Casts an instance of type DataContainer to GameObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to GameObjectData.
+
+properties:
+  indexInBlueprint:
+    type: int
+  isEventConnectionTarget:
+    type: int
+  isPropertyConnectionTarget:
+    type: int
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the GameObjectData type.
+

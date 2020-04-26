@@ -1,0 +1,11 @@
+name: AIAltFireFromAntState
+type: enum
+
+values:
+  AltFireFromAntState_NoForcedFire:
+    value: 0
+  AltFireFromAntState_Prepare:
+    value: 1
+  AltFireFromAntState_ForceFire:
+    value: 2
+

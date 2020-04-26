@@ -1,0 +1,35 @@
+name: SpawnSurveyEvent
+type: class
+inherits: MetricEvent
+
+constructors:
+  -
+    description: Creates a new SpawnSurveyEvent frostbite instance.
+  -
+    description: Creates a new SpawnSurveyEvent frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type MetricEvent to SpawnSurveyEvent. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MetricEvent
+        description: The instance to cast to SpawnSurveyEvent.
+  -
+    description: Casts an instance of type DataContainer to SpawnSurveyEvent. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SpawnSurveyEvent.
+
+properties:
+  surveyMetricLink:
+    type: Guid
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SpawnSurveyEvent type.
+

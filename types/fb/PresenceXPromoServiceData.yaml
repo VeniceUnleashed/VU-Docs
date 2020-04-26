@@ -1,0 +1,37 @@
+name: PresenceXPromoServiceData
+type: class
+inherits: PresenceServiceData
+
+constructors:
+  -
+    description: Creates a new PresenceXPromoServiceData frostbite instance.
+  -
+    description: Creates a new PresenceXPromoServiceData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type PresenceServiceData to PresenceXPromoServiceData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: PresenceServiceData
+        description: The instance to cast to PresenceXPromoServiceData.
+  -
+    description: Casts an instance of type Asset to PresenceXPromoServiceData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to PresenceXPromoServiceData.
+  -
+    description: Casts an instance of type DataContainer to PresenceXPromoServiceData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PresenceXPromoServiceData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PresenceXPromoServiceData type.
+

@@ -1,0 +1,53 @@
+name: LocatorEntityData
+type: class
+inherits: SpatialEntityData
+
+constructors:
+  -
+    description: Creates a new LocatorEntityData frostbite instance.
+  -
+    description: Creates a new LocatorEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SpatialEntityData to LocatorEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to LocatorEntityData.
+  -
+    description: Casts an instance of type EntityData to LocatorEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to LocatorEntityData.
+  -
+    description: Casts an instance of type GameObjectData to LocatorEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to LocatorEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to LocatorEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to LocatorEntityData.
+  -
+    description: Casts an instance of type DataContainer to LocatorEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to LocatorEntityData.
+
+properties:
+  realm:
+    type: Realm
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the LocatorEntityData type.
+

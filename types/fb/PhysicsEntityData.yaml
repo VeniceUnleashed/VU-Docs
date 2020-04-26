@@ -1,0 +1,79 @@
+name: PhysicsEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new PhysicsEntityData frostbite instance.
+  -
+    description: Creates a new PhysicsEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to PhysicsEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to PhysicsEntityData.
+  -
+    description: Casts an instance of type GameObjectData to PhysicsEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to PhysicsEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to PhysicsEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to PhysicsEntityData.
+  -
+    description: Casts an instance of type DataContainer to PhysicsEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PhysicsEntityData.
+
+properties:
+  inertiaModifier:
+    type: Vec3
+  scaledAssets:
+    type: HavokAsset
+    array: true
+  rigidBodies:
+    type: RigidBodyData
+    array: true
+  asset:
+    type: HavokAsset
+    nullable: true
+  floatPhysics:
+    type: FloatPhysicsData
+    nullable: true
+  mass:
+    type: float
+  restitution:
+    type: float
+  friction:
+    type: float
+  linearVelocityDamping:
+    type: float
+  angularVelocityDamping:
+    type: float
+  proximity:
+    type: ProximityData
+    nullable: true
+  constraints:
+    type: RigidBodyConstraintData
+    array: true
+  encapsulatePartsInLists:
+    type: bool
+  movableParts:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PhysicsEntityData type.
+

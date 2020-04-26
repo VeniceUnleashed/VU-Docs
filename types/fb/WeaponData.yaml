@@ -1,0 +1,35 @@
+name: WeaponData
+type: class
+inherits: ToolData
+
+constructors:
+  -
+    description: Creates a new WeaponData frostbite instance.
+  -
+    description: Creates a new WeaponData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ToolData to WeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ToolData
+        description: The instance to cast to WeaponData.
+  -
+    description: Casts an instance of type DataContainer to WeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to WeaponData.
+
+properties:
+  showLaserPaintedVehicles:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the WeaponData type.
+

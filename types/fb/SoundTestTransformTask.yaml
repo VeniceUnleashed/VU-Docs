@@ -1,0 +1,39 @@
+name: SoundTestTransformTask
+type: class
+inherits: SoundTestTaskSpec
+
+constructors:
+  -
+    description: Creates a new SoundTestTransformTask frostbite instance.
+  -
+    description: Creates a new SoundTestTransformTask frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SoundTestTaskSpec to SoundTestTransformTask. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SoundTestTaskSpec
+        description: The instance to cast to SoundTestTransformTask.
+  -
+    description: Casts an instance of type DataContainer to SoundTestTransformTask. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SoundTestTransformTask.
+
+properties:
+  initialPosition:
+    type: Vec3
+  behavior:
+    type: SoundTestTransformBehavior
+  relativeListener:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SoundTestTransformTask type.
+

@@ -1,0 +1,106 @@
+name: EntryComponentData
+type: class
+inherits: ComponentData
+
+constructors:
+  -
+    description: Creates a new EntryComponentData frostbite instance.
+  -
+    description: Creates a new EntryComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ComponentData to EntryComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to EntryComponentData.
+  -
+    description: Casts an instance of type GameObjectData to EntryComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to EntryComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to EntryComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to EntryComponentData.
+  -
+    description: Casts an instance of type DataContainer to EntryComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to EntryComponentData.
+
+properties:
+  soldierOffset:
+    type: Vec3
+  aiData:
+    type: GameAIEntryData
+    nullable: true
+  entryClass:
+    type: EntryClass
+  inputConceptDefinition:
+    type: EntryInputActionMapsData
+    nullable: true
+  inputMapping:
+    type: InputActionMappingsData
+    nullable: true
+  inputCurves:
+    type: InputCurveData
+    array: true
+  hudData:
+    type: EntryComponentHudData
+  entryOrderNumber:
+    type: int
+  enterImpulse:
+    type: float
+  entryRadius:
+    type: float
+  triggerEventOnKey:
+    type: EntryInputActionEnum
+  entrySpottingSettings:
+    type: EntrySpottingSettings
+  poseConstraints:
+    type: PoseConstraintsData
+  soldierTransitionInvisbleTime:
+    type: float
+  numberOfStances:
+    type: int
+  entryComponentSound:
+    type: EntryComponentSoundData
+    nullable: true
+  lockSoldierAimingToEntry:
+    type: bool
+  isAllowedToExitInAir:
+    type: bool
+  show1pSoldierInEntry:
+    type: bool
+  stancesEnabled:
+    type: bool
+  show1pSoldierInEntryForPlayerOnly:
+    type: bool
+  hideSoldierForPassengers:
+    type: bool
+  show3pSoldierWeaponInEntry:
+    type: bool
+  showSoldierGearInEntry:
+    type: bool
+  isShielded:
+    type: bool
+  forbiddenForHuman:
+    type: bool
+  showSoldierWeaponInEntry:
+    type: bool
+  showSoldierInEntry:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the EntryComponentData type.
+

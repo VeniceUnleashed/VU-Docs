@@ -1,0 +1,96 @@
+name: StaticCameraData
+type: class
+inherits: TargetCameraData
+
+constructors:
+  -
+    description: Creates a new StaticCameraData frostbite instance.
+  -
+    description: Creates a new StaticCameraData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type TargetCameraData to StaticCameraData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: TargetCameraData
+        description: The instance to cast to StaticCameraData.
+  -
+    description: Casts an instance of type CameraData to StaticCameraData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: CameraData
+        description: The instance to cast to StaticCameraData.
+  -
+    description: Casts an instance of type GameObjectData to StaticCameraData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to StaticCameraData.
+  -
+    description: Casts an instance of type GameDataContainer to StaticCameraData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to StaticCameraData.
+  -
+    description: Casts an instance of type DataContainer to StaticCameraData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to StaticCameraData.
+
+properties:
+  leftCurve:
+    type: Vec3
+    array: true
+  rightCurve:
+    type: Vec3
+    array: true
+  upCurve:
+    type: Vec3
+    array: true
+  downCurve:
+    type: Vec3
+    array: true
+  upPitchAngle:
+    type: float
+  yawInputAction:
+    type: EntryInputActionEnum
+  loosePartPhysics:
+    type: CameraLoosePartPhysicsData
+    array: true
+  leftYawAngle:
+    type: float
+  rightYawAngle:
+    type: float
+  pitchSensitivityZoomed:
+    type: float
+  downPitchAngle:
+    type: float
+  averageFilterFrames:
+    type: int
+  pitchInputAction:
+    type: EntryInputActionEnum
+  yawSensitivityZoomed:
+    type: float
+  pitchSensitivityNonZoomed:
+    type: float
+  yawSensitivityNonZoomed:
+    type: float
+  resetAccumulatedInputOnViewChange:
+    type: bool
+  mirrorHorizontalCurves:
+    type: bool
+  accumulateInput:
+    type: bool
+  mirrorVerticalCurves:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the StaticCameraData type.
+

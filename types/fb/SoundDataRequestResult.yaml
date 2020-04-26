@@ -1,0 +1,11 @@
+name: SoundDataRequestResult
+type: enum
+
+values:
+  SoundDataRequestResult_NotRequested:
+    value: 0
+  SoundDataRequestResult_Requested:
+    value: 1
+  SoundDataRequestResult_Available:
+    value: 2
+

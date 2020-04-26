@@ -1,0 +1,11 @@
+name: WaypointsSnappingSettings
+type: enum
+
+values:
+  UseShapeSettings:
+    value: 0
+  SnapToTerrain:
+    value: 1
+  NoSnap:
+    value: 2
+

@@ -1,0 +1,86 @@
+name: VehicleProjectileEntityData
+type: class
+inherits: ProjectileEntityData
+
+constructors:
+  -
+    description: Creates a new VehicleProjectileEntityData frostbite instance.
+  -
+    description: Creates a new VehicleProjectileEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ProjectileEntityData to VehicleProjectileEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ProjectileEntityData
+        description: The instance to cast to VehicleProjectileEntityData.
+  -
+    description: Casts an instance of type GamePhysicsEntityData to VehicleProjectileEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GamePhysicsEntityData
+        description: The instance to cast to VehicleProjectileEntityData.
+  -
+    description: Casts an instance of type GameEntityData to VehicleProjectileEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to VehicleProjectileEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to VehicleProjectileEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to VehicleProjectileEntityData.
+  -
+    description: Casts an instance of type EntityData to VehicleProjectileEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to VehicleProjectileEntityData.
+  -
+    description: Casts an instance of type GameObjectData to VehicleProjectileEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to VehicleProjectileEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to VehicleProjectileEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to VehicleProjectileEntityData.
+  -
+    description: Casts an instance of type DataContainer to VehicleProjectileEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VehicleProjectileEntityData.
+
+properties:
+  vehicle:
+    type: VehicleBlueprint
+    nullable: true
+  enterDelay:
+    type: float
+  noVehicleCollisionTime:
+    type: float
+  alignWithGroundRayLength:
+    type: float
+  autoEnter:
+    type: bool
+  alignWithGround:
+    type: bool
+  checkGroundWhenSpawned:
+    type: bool
+  deployInsideNeutralCombatAreaOnly:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VehicleProjectileEntityData type.
+

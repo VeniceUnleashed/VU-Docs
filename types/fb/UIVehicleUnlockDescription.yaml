@@ -1,0 +1,49 @@
+name: UIVehicleUnlockDescription
+type: class
+inherits: UIItemDescription
+
+constructors:
+  -
+    description: Creates a new UIVehicleUnlockDescription frostbite instance.
+  -
+    description: Creates a new UIVehicleUnlockDescription frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UIItemDescription to UIVehicleUnlockDescription. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIItemDescription
+        description: The instance to cast to UIVehicleUnlockDescription.
+  -
+    description: Casts an instance of type DataContainer to UIVehicleUnlockDescription. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UIVehicleUnlockDescription.
+
+properties:
+  name:
+    type: string
+  description:
+    type: string
+  category:
+    type: string
+  texturePath:
+    type: string
+  iconTexturePath:
+    type: string
+  unlockTexturePath:
+    type: string
+  hiddenInProgression:
+    type: bool
+  notExplicitelySelectable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UIVehicleUnlockDescription type.
+

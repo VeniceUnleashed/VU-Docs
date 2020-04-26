@@ -1,0 +1,9 @@
+name: EntryEnterRestriction
+type: enum
+
+values:
+  EntryEnterRestriction_NoRestriction:
+    value: 0
+  EntryEnterRestriction_OnlyPrimaryEntry:
+    value: 1
+

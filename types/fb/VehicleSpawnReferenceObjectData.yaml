@@ -1,0 +1,85 @@
+name: VehicleSpawnReferenceObjectData
+type: class
+inherits: SpawnReferenceObjectData
+
+constructors:
+  -
+    description: Creates a new VehicleSpawnReferenceObjectData frostbite instance.
+  -
+    description: Creates a new VehicleSpawnReferenceObjectData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SpawnReferenceObjectData to VehicleSpawnReferenceObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpawnReferenceObjectData
+        description: The instance to cast to VehicleSpawnReferenceObjectData.
+  -
+    description: Casts an instance of type ReferenceObjectData to VehicleSpawnReferenceObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ReferenceObjectData
+        description: The instance to cast to VehicleSpawnReferenceObjectData.
+  -
+    description: Casts an instance of type GameObjectData to VehicleSpawnReferenceObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to VehicleSpawnReferenceObjectData.
+  -
+    description: Casts an instance of type GameDataContainer to VehicleSpawnReferenceObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to VehicleSpawnReferenceObjectData.
+  -
+    description: Casts an instance of type DataContainer to VehicleSpawnReferenceObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VehicleSpawnReferenceObjectData.
+
+properties:
+  airDropCarrierTransform:
+    type: LinearTransform
+  timeUntilAbandoned:
+    type: float
+  timeUntilAbandonedIsDestroyed:
+    type: float
+  enterRestriction:
+    type: EntryEnterRestriction
+  botBailWhenHealthBelow:
+    type: float
+  botBailOutDelay:
+    type: float
+  wreckDuration:
+    type: float
+  respawnRange:
+    type: float
+  activeStanceEntryIndex:
+    type: int
+  activeStance:
+    type: int
+  keepAliveRadius:
+    type: float
+  vehicleIsNearDistance:
+    type: float
+  setTeamOnSpawn:
+    type: bool
+  applyDamageToAbandonedVehicles:
+    type: bool
+  enableAvailableSeatOutput:
+    type: bool
+  disregardSpawnAllowedSetting:
+    type: bool
+  affectedByImpulse:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VehicleSpawnReferenceObjectData type.
+

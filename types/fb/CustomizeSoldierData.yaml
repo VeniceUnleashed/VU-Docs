@@ -1,0 +1,51 @@
+name: CustomizeSoldierData
+type: class
+inherits: CustomizeCharacterData
+
+constructors:
+  -
+    description: Creates a new CustomizeSoldierData frostbite instance.
+  -
+    description: Creates a new CustomizeSoldierData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type CustomizeCharacterData to CustomizeSoldierData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: CustomizeCharacterData
+        description: The instance to cast to CustomizeSoldierData.
+  -
+    description: Casts an instance of type Asset to CustomizeSoldierData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to CustomizeSoldierData.
+  -
+    description: Casts an instance of type DataContainer to CustomizeSoldierData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to CustomizeSoldierData.
+
+properties:
+  weapons:
+    type: UnlockWeaponAndSlot
+    array: true
+  activeSlot:
+    type: WeaponSlot
+  deathPickup:
+    type: PickupEntityAsset
+    nullable: true
+  removeAllExistingWeapons:
+    type: bool
+  disableDeathPickup:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the CustomizeSoldierData type.
+

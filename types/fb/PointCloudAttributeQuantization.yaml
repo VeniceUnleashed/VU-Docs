@@ -1,0 +1,17 @@
+name: PointCloudAttributeQuantization
+type: enum
+
+values:
+  PointCloudAttributeQuantization_s5e5:
+    value: 0
+  PointCloudAttributeQuantization_s7e5:
+    value: 1
+  PointCloudAttributeQuantization_s10e5:
+    value: 2
+  PointCloudAttributeQuantization_s16e7:
+    value: 3
+  PointCloudAttributeQuantization_None:
+    value: 4
+  PointCloudAttributeQuantization_Count:
+    value: 5
+

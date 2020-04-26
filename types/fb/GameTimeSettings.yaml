@@ -1,0 +1,65 @@
+name: GameTimeSettings
+type: class
+inherits: SystemSettings
+
+constructors:
+  -
+    description: Creates a new GameTimeSettings frostbite instance.
+  -
+    description: Creates a new GameTimeSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SystemSettings to GameTimeSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SystemSettings
+        description: The instance to cast to GameTimeSettings.
+  -
+    description: Casts an instance of type DataContainer to GameTimeSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to GameTimeSettings.
+
+properties:
+  vSyncSubtractTime:
+    type: float
+  joinJobsTimeLimit:
+    type: float
+  yieldTimeLimit:
+    type: float
+  yieldTime:
+    type: int
+  maxInactiveVariableFps:
+    type: float
+  maxSimFps:
+    type: float
+  maxVariableFps:
+    type: float
+  clampTicks:
+    type: int
+  forceDeltaTime:
+    type: float
+  forceDeltaTickCount:
+    type: int
+  timeScale:
+    type: float
+  useWaitableTimers:
+    type: bool
+  forceUseSleepTimer:
+    type: bool
+  forceSinglePlayerFixedTick:
+    type: bool
+  forceMultiplayerOneTickMin:
+    type: bool
+  variableSimTickTimeEnable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the GameTimeSettings type.
+

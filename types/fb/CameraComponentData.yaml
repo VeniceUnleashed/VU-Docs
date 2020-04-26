@@ -1,0 +1,84 @@
+name: CameraComponentData
+type: class
+inherits: ComponentData
+
+constructors:
+  -
+    description: Creates a new CameraComponentData frostbite instance.
+  -
+    description: Creates a new CameraComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ComponentData to CameraComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to CameraComponentData.
+  -
+    description: Casts an instance of type GameObjectData to CameraComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to CameraComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to CameraComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to CameraComponentData.
+  -
+    description: Casts an instance of type DataContainer to CameraComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to CameraComponentData.
+
+properties:
+  cameraTransitionPos:
+    type: Vec3
+  fieldOfView:
+    type: float
+  forceFieldOfView:
+    type: float
+  camera:
+    type: TargetCameraData
+    nullable: true
+  alternateView:
+    type: AlternateCameraViewData
+    nullable: true
+  regularView:
+    type: RegularCameraViewData
+  freezeHeight:
+    type: float
+  stanceData:
+    type: StanceCameraData
+  cameraSoundData:
+    type: CameraComponentSoundData
+    nullable: true
+  soldierAnimatedCamera:
+    type: SoldierAnimatedCameraData
+  cameraTransitionTime:
+    type: float
+  meshParentComponentNumber:
+    type: int
+  enableCameraMesh:
+    type: bool
+  receiveImpulsesAsThirdPerson:
+    type: bool
+  useCameraTransition:
+    type: bool
+  alternateViewEnabled:
+    type: bool
+  isFirstPerson:
+    type: bool
+  ignoreOwnerOrientation:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the CameraComponentData type.
+

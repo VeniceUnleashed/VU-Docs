@@ -1,0 +1,11 @@
+name: XenonTessellationMode
+type: enum
+
+values:
+  XenonTessellationMode_Discrete:
+    value: 0
+  XenonTessellationMode_Continuous:
+    value: 1
+  XenonTessellationMode_PerEdge:
+    value: 2
+

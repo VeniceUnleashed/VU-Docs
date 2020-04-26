@@ -1,0 +1,43 @@
+name: NetworkPerformanceEvent
+type: class
+inherits: MetricEvent
+
+constructors:
+  -
+    description: Creates a new NetworkPerformanceEvent frostbite instance.
+  -
+    description: Creates a new NetworkPerformanceEvent frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type MetricEvent to NetworkPerformanceEvent. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MetricEvent
+        description: The instance to cast to NetworkPerformanceEvent.
+  -
+    description: Casts an instance of type DataContainer to NetworkPerformanceEvent. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to NetworkPerformanceEvent.
+
+properties:
+  received:
+    type: int
+  sent:
+    type: int
+  receivedAverage:
+    type: float
+  sentAverage:
+    type: float
+  performanceLink:
+    type: Guid
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the NetworkPerformanceEvent type.
+

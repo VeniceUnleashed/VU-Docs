@@ -1,0 +1,61 @@
+name: AudioSettings
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new AudioSettings frostbite instance.
+  -
+    description: Creates a new AudioSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to AudioSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to AudioSettings.
+
+properties:
+  waveCacheSize:
+    type: int
+  waveCacheHeadroom:
+    type: int
+  waveCachePruneTimeLimit:
+    type: float
+  waveCacheRsxSize:
+    type: int
+  waveCacheRsxPruneTimeLimit:
+    type: float
+  waveCacheMaxReadIssueCount:
+    type: int
+  waveCacheMaxReadActiveCount:
+    type: int
+  audioCoreCpuLoadLimit:
+    type: float
+  audioCoreCpuLoadRecovery:
+    type: float
+  audioCoreThread:
+    type: int
+  audioCoreMixJobThreadCount:
+    type: int
+  audioCoreMaxMixJobThreadCount:
+    type: int
+  maxAudibleSoundCount:
+    type: int
+  audioCoreMinProcStageVoicesToGoWide:
+    type: int
+  delayLineAllocSize:
+    type: int
+  reverbAllocSize:
+    type: int
+  audioCoreMultipleMixJobsEnabled:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the AudioSettings type.
+

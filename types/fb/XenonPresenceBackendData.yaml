@@ -1,0 +1,41 @@
+name: XenonPresenceBackendData
+type: class
+inherits: PresenceBackendData
+
+constructors:
+  -
+    description: Creates a new XenonPresenceBackendData frostbite instance.
+  -
+    description: Creates a new XenonPresenceBackendData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type PresenceBackendData to XenonPresenceBackendData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: PresenceBackendData
+        description: The instance to cast to XenonPresenceBackendData.
+  -
+    description: Casts an instance of type Asset to XenonPresenceBackendData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to XenonPresenceBackendData.
+  -
+    description: Casts an instance of type DataContainer to XenonPresenceBackendData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to XenonPresenceBackendData.
+
+properties:
+  titleId:
+    type: int
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the XenonPresenceBackendData type.
+

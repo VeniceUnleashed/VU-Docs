@@ -1,0 +1,57 @@
+name: SensingComponentData
+type: class
+inherits: ComponentData
+
+constructors:
+  -
+    description: Creates a new SensingComponentData frostbite instance.
+  -
+    description: Creates a new SensingComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ComponentData to SensingComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to SensingComponentData.
+  -
+    description: Casts an instance of type GameObjectData to SensingComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to SensingComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to SensingComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to SensingComponentData.
+  -
+    description: Casts an instance of type DataContainer to SensingComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SensingComponentData.
+
+properties:
+  template:
+    type: SensingTemplateData
+    nullable: true
+  settings:
+    type: SensingSettings
+    nullable: true
+  enabled:
+    type: bool
+  sharedPlayerMemory:
+    type: bool
+  useWeaponTransform:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SensingComponentData type.
+

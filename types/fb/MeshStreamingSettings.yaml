@@ -1,0 +1,109 @@
+name: MeshStreamingSettings
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new MeshStreamingSettings frostbite instance.
+  -
+    description: Creates a new MeshStreamingSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to MeshStreamingSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MeshStreamingSettings.
+
+properties:
+  defragTransferLimit:
+    type: int
+  listViewPageIndex:
+    type: int
+  poolSize:
+    type: int
+  forceLod:
+    type: int
+  poolHeadroomSize:
+    type: int
+  listViewSortOrder:
+    type: int
+  ps3CellDefragTransferLimit:
+    type: int
+  xenonFinalPoolSizeAdjustment:
+    type: int
+  maxUnloadCountPerFrame:
+    type: int
+  xenonRetailPoolSizeAdjustment:
+    type: int
+  maxPendingLoadCount:
+    type: int
+  ps3CellPoolSize:
+    type: int
+  ps3CellPoolHeadroomSize:
+    type: int
+  instantUnloadingEnable:
+    type: bool
+  asyncCreatesEnable:
+    type: bool
+  dxImmutableUsageEnable:
+    type: bool
+  overridePoolSizes:
+    type: bool
+  useSlowTexturePrio:
+    type: bool
+  updateEnable:
+    type: bool
+  dynamicLoadingEnable:
+    type: bool
+  priorityJobEnable:
+    type: bool
+  prioritySpuJobEnable:
+    type: bool
+  updateJobEnable:
+    type: bool
+  defragTransfersEnable:
+    type: bool
+  prioritizeVisibleMeshesFirstEnable:
+    type: bool
+  prioritizeVisibleLodsFirstEnable:
+    type: bool
+  prioritizeVisibleLoadsEnable:
+    type: bool
+  prioritizeTexturesEnable:
+    type: bool
+  highestPriorityEnable:
+    type: bool
+  prioritizeNearestPointEnable:
+    type: bool
+  drawInstanceBoxesEnable:
+    type: bool
+  drawStatsEnable:
+    type: bool
+  drawMissingListEnable:
+    type: bool
+  drawPriorityListEnable:
+    type: bool
+  drawLoadingListEnable:
+    type: bool
+  drawMeshListEnable:
+    type: bool
+  drawNonStreamedListEnable:
+    type: bool
+  defragEnable:
+    type: bool
+  enable:
+    type: bool
+  dumpLoadedList:
+    type: bool
+  useConditionalStreaming:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MeshStreamingSettings type.
+

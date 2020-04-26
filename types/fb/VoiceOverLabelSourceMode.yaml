@@ -1,0 +1,9 @@
+name: VoiceOverLabelSourceMode
+type: enum
+
+values:
+  VoiceOverLabelSourceMode_Combined:
+    value: 0
+  VoiceOverLabelSourceMode_Shared:
+    value: 1
+

@@ -1,0 +1,36 @@
+name: UIBundlesAsset
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new UIBundlesAsset frostbite instance.
+  -
+    description: Creates a new UIBundlesAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to UIBundlesAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to UIBundlesAsset.
+  -
+    description: Casts an instance of type DataContainer to UIBundlesAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UIBundlesAsset.
+
+properties:
+  uiBundleAssetStateList:
+    type: UIBundleAssetState
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UIBundlesAsset type.
+

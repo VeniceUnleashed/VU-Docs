@@ -1,0 +1,25 @@
+name: ProfileOptionsType
+type: enum
+
+values:
+  GstAudio:
+    value: 0
+  GstRender:
+    value: 1
+  GstInput:
+    value: 2
+  GstAI:
+    value: 3
+  GstGameplay:
+    value: 4
+  GstPlayerProfile:
+    value: 5
+  GstPersistence:
+    value: 6
+  GstBinary:
+    value: 7
+  GstKeyBinding:
+    value: 8
+  GstCount:
+    value: 9
+

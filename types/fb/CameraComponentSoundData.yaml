@@ -1,0 +1,33 @@
+name: CameraComponentSoundData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new CameraComponentSoundData frostbite instance.
+  -
+    description: Creates a new CameraComponentSoundData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to CameraComponentSoundData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to CameraComponentSoundData.
+
+properties:
+  switchToAlternateViewSound:
+    type: SoundAsset
+    nullable: true
+  switchToNormalViewSound:
+    type: SoundAsset
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the CameraComponentSoundData type.
+

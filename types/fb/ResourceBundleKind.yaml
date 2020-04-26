@@ -1,0 +1,15 @@
+name: ResourceBundleKind
+type: enum
+
+values:
+  ResourceBundleKind_AlwaysLoaded:
+    value: 0
+  ResourceBundleKind_GlobalPackage:
+    value: 1
+  ResourceBundleKind_AssetPackage:
+    value: 2
+  ResourceBundleKind_SubLevelPackage:
+    value: 3
+  ResourceBundleKind_BlueprintBundle:
+    value: 4
+

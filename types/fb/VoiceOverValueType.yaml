@@ -1,0 +1,17 @@
+name: VoiceOverValueType
+type: enum
+
+values:
+  VoiceOverValueType_Boolean:
+    value: 0
+  VoiceOverValueType_Integer:
+    value: 1
+  VoiceOverValueType_Float:
+    value: 2
+  VoiceOverValueType_Vector:
+    value: 3
+  VoiceOverValueType_Object:
+    value: 4
+  VoiceOverValueTypeCount:
+    value: 5
+

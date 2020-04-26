@@ -1,0 +1,13 @@
+name: CharacterPoseType
+type: enum
+
+values:
+  CharacterPoseType_Stand:
+    value: 0
+  CharacterPoseType_Crouch:
+    value: 1
+  CharacterPoseType_Prone:
+    value: 2
+  CharacterPoseTypeCount:
+    value: 3
+

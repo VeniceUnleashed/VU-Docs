@@ -1,0 +1,13 @@
+name: PersistenceGameType
+type: enum
+
+values:
+  PersistenceGameType_Singleplayer:
+    value: 0
+  PersistenceGameType_Cooperative:
+    value: 1
+  PersistenceGameType_Multiplayer:
+    value: 2
+  PersistenceGameType_Count:
+    value: 3
+

@@ -1,0 +1,9 @@
+name: FaderType
+type: enum
+
+values:
+  FaderType_Linear:
+    value: 0
+  FaderType_Cosine:
+    value: 1
+

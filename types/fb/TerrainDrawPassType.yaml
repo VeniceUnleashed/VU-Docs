@@ -1,0 +1,11 @@
+name: TerrainDrawPassType
+type: enum
+
+values:
+  TerrainDrawPassType_SinglePass:
+    value: 0
+  TerrainDrawPassType_MultipassFirst:
+    value: 1
+  TerrainDrawPassType_MultipassConsecutive:
+    value: 2
+

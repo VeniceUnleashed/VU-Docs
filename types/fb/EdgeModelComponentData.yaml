@@ -1,0 +1,56 @@
+name: EdgeModelComponentData
+type: class
+inherits: DestructionEdgeModelComponentData
+
+constructors:
+  -
+    description: Creates a new EdgeModelComponentData frostbite instance.
+  -
+    description: Creates a new EdgeModelComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DestructionEdgeModelComponentData to EdgeModelComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DestructionEdgeModelComponentData
+        description: The instance to cast to EdgeModelComponentData.
+  -
+    description: Casts an instance of type ComponentData to EdgeModelComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to EdgeModelComponentData.
+  -
+    description: Casts an instance of type GameObjectData to EdgeModelComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to EdgeModelComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to EdgeModelComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to EdgeModelComponentData.
+  -
+    description: Casts an instance of type DataContainer to EdgeModelComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to EdgeModelComponentData.
+
+properties:
+  rigidMeshes:
+    type: RigidMeshAsset
+    array: true
+  maxInstanceCount:
+    type: int
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the EdgeModelComponentData type.
+

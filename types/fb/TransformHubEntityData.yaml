@@ -1,0 +1,63 @@
+name: TransformHubEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new TransformHubEntityData frostbite instance.
+  -
+    description: Creates a new TransformHubEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to TransformHubEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to TransformHubEntityData.
+  -
+    description: Casts an instance of type GameObjectData to TransformHubEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to TransformHubEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to TransformHubEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to TransformHubEntityData.
+  -
+    description: Casts an instance of type DataContainer to TransformHubEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to TransformHubEntityData.
+
+properties:
+  in4:
+    type: LinearTransform
+  in1:
+    type: LinearTransform
+  in2:
+    type: LinearTransform
+  in3:
+    type: LinearTransform
+  in8:
+    type: LinearTransform
+  in5:
+    type: LinearTransform
+  in6:
+    type: LinearTransform
+  in7:
+    type: LinearTransform
+  realm:
+    type: Realm
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the TransformHubEntityData type.
+

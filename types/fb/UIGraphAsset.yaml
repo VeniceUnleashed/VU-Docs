@@ -1,0 +1,60 @@
+name: UIGraphAsset
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new UIGraphAsset frostbite instance.
+  -
+    description: Creates a new UIGraphAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to UIGraphAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to UIGraphAsset.
+  -
+    description: Casts an instance of type DataContainer to UIGraphAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UIGraphAsset.
+
+properties:
+  nodes:
+    type: UINodeData
+    array: true
+  globalNode:
+    type: GlobalNode
+    nullable: true
+  connections:
+    type: UINodeConnection
+    array: true
+  audioEventMappings:
+    type: UIAudioEventAsset
+    nullable: true
+  bundleAssetName:
+    type: string
+  eventList:
+    type: UIEventAsset
+    array: true
+  modal:
+    type: bool
+  protectScreens:
+    type: bool
+  isWin32UIGraphAsset:
+    type: bool
+  isXenonUIGraphAsset:
+    type: bool
+  isPs3UIGraphAsset:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UIGraphAsset type.
+

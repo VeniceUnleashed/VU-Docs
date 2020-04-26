@@ -1,0 +1,42 @@
+name: MaterialRelationDecalData
+type: class
+inherits: PhysicsMaterialRelationPropertyData
+
+constructors:
+  -
+    description: Creates a new MaterialRelationDecalData frostbite instance.
+  -
+    description: Creates a new MaterialRelationDecalData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type PhysicsMaterialRelationPropertyData to MaterialRelationDecalData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: PhysicsMaterialRelationPropertyData
+        description: The instance to cast to MaterialRelationDecalData.
+  -
+    description: Casts an instance of type MaterialRelationPropertyData to MaterialRelationDecalData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MaterialRelationPropertyData
+        description: The instance to cast to MaterialRelationDecalData.
+  -
+    description: Casts an instance of type DataContainer to MaterialRelationDecalData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MaterialRelationDecalData.
+
+properties:
+  decal:
+    type: DecalTemplateData
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MaterialRelationDecalData type.
+

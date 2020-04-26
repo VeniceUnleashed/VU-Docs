@@ -1,0 +1,9 @@
+name: MeshScatteringElevationMode
+type: enum
+
+values:
+  MeshScatteringElevationMode_SnapBoundingBox:
+    value: 0
+  MeshScatteringElevationMode_SnapPivotPoint:
+    value: 1
+

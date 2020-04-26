@@ -1,0 +1,11 @@
+name: EntitlementType
+type: enum
+
+values:
+  EntitlementType_Ignored:
+    value: 0
+  EntitlementType_Write:
+    value: 1
+  EntitlementType_Read:
+    value: 2
+

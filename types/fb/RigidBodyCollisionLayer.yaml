@@ -1,0 +1,13 @@
+name: RigidBodyCollisionLayer
+type: enum
+
+values:
+  RigidBodyCollisionLayer_Invalid:
+    value: 0
+  RigidBodyCollisionLayer_VehicleLayer:
+    value: 1
+  RigidBodyCollisionLayer_VehicleAndCharacterCollisionLayer:
+    value: 2
+  RigidBodyCollisionLayer_Size:
+    value: 3
+

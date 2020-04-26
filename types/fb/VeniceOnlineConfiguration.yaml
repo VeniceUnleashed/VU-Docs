@@ -1,0 +1,47 @@
+name: VeniceOnlineConfiguration
+type: class
+inherits: OnlineConfiguration
+
+constructors:
+  -
+    description: Creates a new VeniceOnlineConfiguration frostbite instance.
+  -
+    description: Creates a new VeniceOnlineConfiguration frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type OnlineConfiguration to VeniceOnlineConfiguration. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: OnlineConfiguration
+        description: The instance to cast to VeniceOnlineConfiguration.
+  -
+    description: Casts an instance of type Asset to VeniceOnlineConfiguration. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to VeniceOnlineConfiguration.
+  -
+    description: Casts an instance of type DataContainer to VeniceOnlineConfiguration. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VeniceOnlineConfiguration.
+
+properties:
+  platforms:
+    type: OnlinePlatformConfiguration
+    array: true
+  entitlementQueries:
+    type: EntitlementQuery
+    array: true
+  useFallback:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VeniceOnlineConfiguration type.
+

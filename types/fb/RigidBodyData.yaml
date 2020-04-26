@@ -1,0 +1,55 @@
+name: RigidBodyData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new RigidBodyData frostbite instance.
+  -
+    description: Creates a new RigidBodyData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to RigidBodyData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to RigidBodyData.
+
+properties:
+  inertiaModifier:
+    type: Vec3
+  rigidBodyType:
+    type: RigidBodyType
+  mass:
+    type: float
+  restitution:
+    type: float
+  friction:
+    type: float
+  angularVelocityDamping:
+    type: float
+  linearVelocityDamping:
+    type: float
+  interactionToolkitCollisionVolumeId:
+    type: int
+  motionType:
+    type: RigidBodyMotionType
+  qualityType:
+    type: RigidBodyQualityType
+  collisionLayer:
+    type: RigidBodyCollisionLayer
+  floatPhysics:
+    type: FloatPhysicsData
+    nullable: true
+  constraints:
+    type: RigidBodyConstraintData
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the RigidBodyData type.
+

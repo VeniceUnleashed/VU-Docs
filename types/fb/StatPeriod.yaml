@@ -1,0 +1,17 @@
+name: StatPeriod
+type: enum
+
+values:
+  StatPeriod_AllTime:
+    value: 0
+  StatPeriod_Monthly:
+    value: 1
+  StatPeriod_Weekly:
+    value: 2
+  StatPeriod_Daily:
+    value: 3
+  StatPeriod_Size:
+    value: 4
+  StatPeriod_Error:
+    value: 5
+

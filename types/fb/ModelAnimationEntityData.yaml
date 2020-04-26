@@ -1,0 +1,95 @@
+name: ModelAnimationEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new ModelAnimationEntityData frostbite instance.
+  -
+    description: Creates a new ModelAnimationEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to ModelAnimationEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to ModelAnimationEntityData.
+  -
+    description: Casts an instance of type GameObjectData to ModelAnimationEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to ModelAnimationEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to ModelAnimationEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to ModelAnimationEntityData.
+  -
+    description: Casts an instance of type DataContainer to ModelAnimationEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ModelAnimationEntityData.
+
+properties:
+  animationEntitySpace:
+    type: LinearTransform
+  boneToPlace:
+    type: GameplayBones
+  realm:
+    type: Realm
+  modelAnimationTransformType:
+    type: ModelAnimationTransformType
+  instanceSeed:
+    type: int
+  defaultAnimation:
+    type: string
+  animationIndex:
+    type: int
+  animationSet:
+    type: AntAnimationSetAsset
+    nullable: true
+  externalTime:
+    type: float
+  rootMeshBoneName:
+    type: string
+  jointWorldTransformUpdateOrder:
+    type: ModelAnimationUpdateOrder
+  connectBoneName:
+    type: string
+  jointOutputPropertyIds:
+    type: int
+    array: true
+  trajectoryBoneName:
+    type: string
+  animationEntitySpaceActive:
+    type: bool
+  playFirstFrame:
+    type: bool
+  looping:
+    type: bool
+  enableJointWorldTransformOutput:
+    type: bool
+  resetAfterStop:
+    type: bool
+  autoStart:
+    type: bool
+  showDebugTransforms:
+    type: bool
+  applyRotationCompensation:
+    type: bool
+  applyPreTransformation:
+    type: bool
+  disableCulling:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ModelAnimationEntityData type.
+

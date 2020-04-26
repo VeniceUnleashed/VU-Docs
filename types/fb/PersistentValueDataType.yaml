@@ -1,0 +1,13 @@
+name: PersistentValueDataType
+type: enum
+
+values:
+  PersistentValueDataType_Decimal:
+    value: 0
+  PersistentValueDataType_Integer:
+    value: 1
+  PersistentValueDataType_String:
+    value: 2
+  PersistentValueDataType_HighPrecisionDecimal:
+    value: 3
+

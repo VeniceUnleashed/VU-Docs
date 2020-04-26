@@ -1,0 +1,11 @@
+name: UIMouseButton
+type: enum
+
+values:
+  UIMouseButton_Left:
+    value: 0
+  UIMouseButton_Right:
+    value: 1
+  UIMouseButton_Middle:
+    value: 2
+

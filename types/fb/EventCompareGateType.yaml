@@ -1,0 +1,17 @@
+name: EventCompareGateType
+type: enum
+
+values:
+  EventCompareGate_Equals:
+    value: 0
+  EventCompareGate_NotEquals:
+    value: 1
+  EventCompareGate_Less:
+    value: 2
+  EventCompareGate_LessEquals:
+    value: 3
+  EventCompareGate_Greater:
+    value: 4
+  EventCompareGate_GreaterEquals:
+    value: 5
+

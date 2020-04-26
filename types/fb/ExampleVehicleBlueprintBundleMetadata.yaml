@@ -1,0 +1,35 @@
+name: ExampleVehicleBlueprintBundleMetadata
+type: class
+inherits: BlueprintBundleMetadata
+
+constructors:
+  -
+    description: Creates a new ExampleVehicleBlueprintBundleMetadata frostbite instance.
+  -
+    description: Creates a new ExampleVehicleBlueprintBundleMetadata frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type BlueprintBundleMetadata to ExampleVehicleBlueprintBundleMetadata. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: BlueprintBundleMetadata
+        description: The instance to cast to ExampleVehicleBlueprintBundleMetadata.
+  -
+    description: Casts an instance of type DataContainer to ExampleVehicleBlueprintBundleMetadata. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ExampleVehicleBlueprintBundleMetadata.
+
+properties:
+  exampleVehicleType:
+    type: ExampleVehicleType
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ExampleVehicleBlueprintBundleMetadata type.
+

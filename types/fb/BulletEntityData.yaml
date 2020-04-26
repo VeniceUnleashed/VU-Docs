@@ -1,0 +1,117 @@
+name: BulletEntityData
+type: class
+inherits: MeshProjectileEntityData
+
+constructors:
+  -
+    description: Creates a new BulletEntityData frostbite instance.
+  -
+    description: Creates a new BulletEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type MeshProjectileEntityData to BulletEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MeshProjectileEntityData
+        description: The instance to cast to BulletEntityData.
+  -
+    description: Casts an instance of type ProjectileEntityData to BulletEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ProjectileEntityData
+        description: The instance to cast to BulletEntityData.
+  -
+    description: Casts an instance of type GamePhysicsEntityData to BulletEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GamePhysicsEntityData
+        description: The instance to cast to BulletEntityData.
+  -
+    description: Casts an instance of type GameEntityData to BulletEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to BulletEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to BulletEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to BulletEntityData.
+  -
+    description: Casts an instance of type EntityData to BulletEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to BulletEntityData.
+  -
+    description: Casts an instance of type GameObjectData to BulletEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to BulletEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to BulletEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to BulletEntityData.
+  -
+    description: Casts an instance of type DataContainer to BulletEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to BulletEntityData.
+
+properties:
+  stamina:
+    type: float
+  flyBySound:
+    type: SoundAsset
+    nullable: true
+  dudExplosion:
+    type: ExplosionEntityData
+    nullable: true
+  gravity:
+    type: float
+  impactImpulse:
+    type: float
+  detonationTimeVariation:
+    type: float
+  vehicleDetonationRadius:
+    type: float
+  vehicleDetonationActivationDelay:
+    type: float
+  flyBySoundRadius:
+    type: float
+  flyBySoundSpeed:
+    type: float
+  firstFrameTravelDistance:
+    type: float
+  distributeDamageOverTime:
+    type: float
+  startDamage:
+    type: float
+  endDamage:
+    type: float
+  damageFalloffStartDistance:
+    type: float
+  damageFalloffEndDistance:
+    type: float
+  timeToArmExplosion:
+    type: float
+  hasVehicleDetonation:
+    type: bool
+  instantHit:
+    type: bool
+  stopTrailEffectOnUnspawn:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the BulletEntityData type.
+

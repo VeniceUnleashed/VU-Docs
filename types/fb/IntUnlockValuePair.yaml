@@ -1,0 +1,37 @@
+name: IntUnlockValuePair
+type: class
+inherits: UnlockValuePair
+
+constructors:
+  -
+    description: Creates a new IntUnlockValuePair frostbite instance.
+  -
+    description: Creates a new IntUnlockValuePair frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UnlockValuePair to IntUnlockValuePair. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UnlockValuePair
+        description: The instance to cast to IntUnlockValuePair.
+  -
+    description: Casts an instance of type DataContainer to IntUnlockValuePair. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to IntUnlockValuePair.
+
+properties:
+  defaultValue:
+    type: int
+  unlockedValue:
+    type: int
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the IntUnlockValuePair type.
+

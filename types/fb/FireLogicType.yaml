@@ -1,0 +1,19 @@
+name: FireLogicType
+type: enum
+
+values:
+  fltSingleFire:
+    value: 0
+  fltSingleFireWithBoltAction:
+    value: 1
+  fltAutomaticFire:
+    value: 2
+  fltBurstFire:
+    value: 3
+  fltHoldAndRelease:
+    value: 4
+  fltDetonatedFiring:
+    value: 5
+  fltCount:
+    value: 6
+

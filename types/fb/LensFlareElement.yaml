@@ -1,0 +1,55 @@
+name: LensFlareElement
+type: class
+
+constructors:
+  -
+    description: Creates a new LensFlareElement frostbite instance.
+  -
+    description: Creates a new LensFlareElement frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+
+properties:
+  sizeCamDistCurve:
+    type: Vec4
+  sizeAngleCurve:
+    type: Vec4
+  size:
+    type: Vec2
+  sizeOccluderCurve:
+    type: Vec4
+  sizeScreenPosCurve:
+    type: Vec4
+  alphaCamDistCurve:
+    type: Vec4
+  alphaOccluderCurve:
+    type: Vec4
+  alphaAngleCurve:
+    type: Vec4
+  alphaScreenPosCurve:
+    type: Vec4
+  sizeCamDistMax:
+    type: float
+  rayDistance:
+    type: float
+  shader:
+    type: SurfaceShaderBaseAsset
+    nullable: true
+  alphaCamDistMax:
+    type: float
+
+methods:
+  -
+    name: Clone
+    description: Creates a shallow-copy clone of this structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of this structure to all of its properties. Any properties that contain structure types (eg. Vec3) will be cloned when assigning, while properties that contain instance types (eg. DataContainer) will be referencing the same instance.
+    returns:
+      type: LensFlareElement
+      description: The newly created structure.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the LensFlareElement type.
+

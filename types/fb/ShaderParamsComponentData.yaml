@@ -1,0 +1,49 @@
+name: ShaderParamsComponentData
+type: class
+inherits: ComponentData
+
+constructors:
+  -
+    description: Creates a new ShaderParamsComponentData frostbite instance.
+  -
+    description: Creates a new ShaderParamsComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ComponentData to ShaderParamsComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to ShaderParamsComponentData.
+  -
+    description: Casts an instance of type GameObjectData to ShaderParamsComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to ShaderParamsComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to ShaderParamsComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to ShaderParamsComponentData.
+  -
+    description: Casts an instance of type DataContainer to ShaderParamsComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ShaderParamsComponentData.
+
+properties:
+  value:
+    type: Vec4
+  parameterName:
+    type: string
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ShaderParamsComponentData type.
+

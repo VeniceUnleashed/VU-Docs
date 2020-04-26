@@ -1,0 +1,35 @@
+name: ShooterInfo
+type: enum
+
+values:
+  ShooterInfoInVehicle:
+    value: 1
+  ShooterInfoInLandVehicle:
+    value: 2
+  ShooterInfoInAerialVehicle:
+    value: 4
+  ShooterInfoDrivingVehicle:
+    value: 8
+  ShooterInfoInStationaryWeapon:
+    value: 16
+  ShooterInfoInLightArmoredVehicle:
+    value: 32
+  ShooterInfoInMediumArmoredVehicle:
+    value: 64
+  ShooterInfoInHeavyArmoredVehicle:
+    value: 128
+  ShooterInfoInBoat:
+    value: 256
+  ShooterInfoUsedGrenade:
+    value: 512
+  ShooterInfoUsedArtilleryStrike:
+    value: 1024
+  ShooterInfoUsedLaserDesignator:
+    value: 2048
+  ShooterInfoUsedMortarStrike:
+    value: 4096
+  ShooterInfoUsedStingerMissile:
+    value: 8192
+  ShooterInfoNoTeamKillPenalty:
+    value: 16384
+

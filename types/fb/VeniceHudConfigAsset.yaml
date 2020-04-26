@@ -1,0 +1,97 @@
+name: VeniceHudConfigAsset
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new VeniceHudConfigAsset frostbite instance.
+  -
+    description: Creates a new VeniceHudConfigAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to VeniceHudConfigAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VeniceHudConfigAsset.
+
+properties:
+  ammoPickupSound:
+    type: SoundWaveAsset
+    nullable: true
+  weaponPickupSound:
+    type: SoundWaveAsset
+    nullable: true
+  newObjectiveSound:
+    type: SoundWaveAsset
+    nullable: true
+  objectiveCompletedSound:
+    type: SoundWaveAsset
+    nullable: true
+  objectiveUpdatedSound:
+    type: SoundWaveAsset
+    nullable: true
+  mpVictorySoundMec:
+    type: SoundWaveAsset
+    nullable: true
+  mpVictorySoundUs:
+    type: SoundWaveAsset
+    nullable: true
+  mpVictorySoundRu:
+    type: SoundWaveAsset
+    nullable: true
+  mpDefeatSoundMec:
+    type: SoundWaveAsset
+    nullable: true
+  mpDefeatSoundUs:
+    type: SoundWaveAsset
+    nullable: true
+  mpDefeatSoundRu:
+    type: SoundWaveAsset
+    nullable: true
+  artilleryAiming:
+    type: SoundWaveAsset
+    nullable: true
+  artilleryAimingOOA:
+    type: SoundWaveAsset
+    nullable: true
+  mortarStrikeLocking:
+    type: SoundWaveAsset
+    nullable: true
+  laserDesignatorLocked:
+    type: SoundWaveAsset
+    nullable: true
+  laserDesignatorLocking:
+    type: SoundWaveAsset
+    nullable: true
+  nametags:
+    type: UINametag
+    array: true
+  spawnScreenWeapons:
+    type: SpawnScreenWeaponData
+    array: true
+  maxOrderIconDistance:
+    type: float
+  innerNametagRadius:
+    type: float
+  outerNametagRadius:
+    type: float
+  criticalHealthThreshold:
+    type: float
+  taggedVehicleCrosshair:
+    type: UITaggedVehicleCrosshair
+  minimap:
+    type: UIMinimapConfig
+  showSpawnPointsOnMinimap:
+    type: bool
+  nametagHealthVisibleForAll:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VeniceHudConfigAsset type.
+

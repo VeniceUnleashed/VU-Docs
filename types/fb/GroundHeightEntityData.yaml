@@ -1,0 +1,53 @@
+name: GroundHeightEntityData
+type: class
+inherits: SpatialEntityData
+
+constructors:
+  -
+    description: Creates a new GroundHeightEntityData frostbite instance.
+  -
+    description: Creates a new GroundHeightEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SpatialEntityData to GroundHeightEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to GroundHeightEntityData.
+  -
+    description: Casts an instance of type EntityData to GroundHeightEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to GroundHeightEntityData.
+  -
+    description: Casts an instance of type GameObjectData to GroundHeightEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to GroundHeightEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to GroundHeightEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to GroundHeightEntityData.
+  -
+    description: Casts an instance of type DataContainer to GroundHeightEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to GroundHeightEntityData.
+
+properties:
+  data:
+    type: GroundHeightData
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the GroundHeightEntityData type.
+

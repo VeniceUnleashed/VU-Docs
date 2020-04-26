@@ -1,0 +1,77 @@
+name: DynamicModelEntityData
+type: class
+inherits: DynamicGamePhysicsEntityData
+
+constructors:
+  -
+    description: Creates a new DynamicModelEntityData frostbite instance.
+  -
+    description: Creates a new DynamicModelEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DynamicGamePhysicsEntityData to DynamicModelEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DynamicGamePhysicsEntityData
+        description: The instance to cast to DynamicModelEntityData.
+  -
+    description: Casts an instance of type GamePhysicsEntityData to DynamicModelEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GamePhysicsEntityData
+        description: The instance to cast to DynamicModelEntityData.
+  -
+    description: Casts an instance of type GameEntityData to DynamicModelEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to DynamicModelEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to DynamicModelEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to DynamicModelEntityData.
+  -
+    description: Casts an instance of type EntityData to DynamicModelEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to DynamicModelEntityData.
+  -
+    description: Casts an instance of type GameObjectData to DynamicModelEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to DynamicModelEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to DynamicModelEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to DynamicModelEntityData.
+  -
+    description: Casts an instance of type DataContainer to DynamicModelEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to DynamicModelEntityData.
+
+properties:
+  part:
+    type: PartComponentData
+    nullable: true
+  mesh:
+    type: MeshAsset
+    nullable: true
+  noCollision:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the DynamicModelEntityData type.
+

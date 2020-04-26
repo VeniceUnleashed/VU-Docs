@@ -1,0 +1,9 @@
+name: ShootType
+type: enum
+
+values:
+  ShootType_OneBurstPerTarget:
+    value: 0
+  ShootType_Continuous:
+    value: 1
+

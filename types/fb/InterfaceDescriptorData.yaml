@@ -1,0 +1,45 @@
+name: InterfaceDescriptorData
+type: class
+inherits: DynamicDataContainer
+
+constructors:
+  -
+    description: Creates a new InterfaceDescriptorData frostbite instance.
+  -
+    description: Creates a new InterfaceDescriptorData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DynamicDataContainer to InterfaceDescriptorData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DynamicDataContainer
+        description: The instance to cast to InterfaceDescriptorData.
+  -
+    description: Casts an instance of type DataContainer to InterfaceDescriptorData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to InterfaceDescriptorData.
+
+properties:
+  inputEvents:
+    type: DynamicEvent
+    array: true
+  outputEvents:
+    type: DynamicEvent
+    array: true
+  inputLinks:
+    type: DynamicLink
+    array: true
+  outputLinks:
+    type: DynamicLink
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the InterfaceDescriptorData type.
+

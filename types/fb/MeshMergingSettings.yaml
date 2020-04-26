@@ -1,0 +1,45 @@
+name: MeshMergingSettings
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new MeshMergingSettings frostbite instance.
+  -
+    description: Creates a new MeshMergingSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to MeshMergingSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MeshMergingSettings.
+
+properties:
+  statsSeedIndex:
+    type: int
+  statsLodIndex:
+    type: int
+  textureAtlasWidth:
+    type: int
+  drawStatsEnable:
+    type: bool
+  drawDebugTexturesEnable:
+    type: bool
+  virtualTextureArrayStreamingEnable:
+    type: bool
+  enable:
+    type: bool
+  textureAtlasMergeEnable:
+    type: bool
+  clearMergeReport:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MeshMergingSettings type.
+

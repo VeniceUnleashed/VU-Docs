@@ -1,0 +1,142 @@
+name: LevelData
+type: class
+inherits: WorldData
+
+constructors:
+  -
+    description: Creates a new LevelData frostbite instance.
+  -
+    description: Creates a new LevelData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type WorldData to LevelData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: WorldData
+        description: The instance to cast to LevelData.
+  -
+    description: Casts an instance of type SubWorldData to LevelData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SubWorldData
+        description: The instance to cast to LevelData.
+  -
+    description: Casts an instance of type SpatialPrefabBlueprint to LevelData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialPrefabBlueprint
+        description: The instance to cast to LevelData.
+  -
+    description: Casts an instance of type PrefabBlueprint to LevelData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: PrefabBlueprint
+        description: The instance to cast to LevelData.
+  -
+    description: Casts an instance of type Blueprint to LevelData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Blueprint
+        description: The instance to cast to LevelData.
+  -
+    description: Casts an instance of type EntityBusData to LevelData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityBusData
+        description: The instance to cast to LevelData.
+  -
+    description: Casts an instance of type DataBusData to LevelData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataBusData
+        description: The instance to cast to LevelData.
+  -
+    description: Casts an instance of type Asset to LevelData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to LevelData.
+  -
+    description: Casts an instance of type DataContainer to LevelData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to LevelData.
+
+properties:
+  levelReference:
+    type: ReferenceObjectData
+    nullable: true
+  pathfindingBlobInfo:
+    type: PathfindingBlob
+  aiSystem:
+    type: GameAISystem
+    nullable: true
+  worldSizeXZ:
+    type: float
+  levelDescription:
+    type: LevelDescription
+  gameConfigurationName:
+    type: string
+  emitterSystemAsset:
+    type: EmitterSystemAsset
+    nullable: true
+  emitterExclusionVolumes:
+    type: EmitterExclusionVolumeData
+    array: true
+  defaultFOV:
+    type: float
+  infantryFOVMultiplier:
+    type: float
+  maxEntityBusNetworkCount:
+    type: int
+  soundStates:
+    type: SoundStateSettingsAsset
+    nullable: true
+  voiceOverSystem:
+    type: VoiceOverSystemAsset
+    nullable: true
+  voiceOverLogic:
+    type: VoiceOverLogicAsset
+    array: true
+  maxVehicleHeight:
+    type: float
+  animatedSkeletonDatabase:
+    type: AnimatedSkeletonDatabase
+    nullable: true
+  enlightenShaderDatabase:
+    type: EnlightenShaderDatabaseAsset
+    nullable: true
+  antProjectAssets:
+    type: AntProjectAsset
+    array: true
+  aerialHeightmapData:
+    type: string
+  audioObstructionInfo:
+    type: LevelAudioObstructionAsset
+    nullable: true
+  cameraTransitions:
+    type: CameraTransition
+    array: true
+  cameraModes:
+    type: CameraModeAsset
+    array: true
+  faceAnimationsWaveMappings:
+    type: FaceAnimationWaveMappings
+    nullable: true
+  hackForceBuild:
+    type: Asset
+    nullable: true
+  hugeBroadPhase:
+    type: bool
+  freeStreamingEnable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the LevelData type.
+

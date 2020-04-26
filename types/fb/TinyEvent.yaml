@@ -1,0 +1,27 @@
+name: TinyEvent
+type: enum
+
+values:
+  TinyEvent_AckTimeSyncDone:
+    value: 1
+  TinyEvent_AckLevelLinked:
+    value: 2
+  TinyEvent_AckLevelRestarted:
+    value: 3
+  TinyEvent_AckEnterPatchRecvState:
+    value: 4
+  TinyEvent_AckAuthentication:
+    value: 5
+  TinyEvent_NackAuthentication:
+    value: 6
+  TinyEvent_AckExitLevel:
+    value: 7
+  TinyEvent_CmdLinkLevel:
+    value: 8
+  TinyEvent_CmdEnterPatchRecvState:
+    value: 9
+  TinyEvent_CmdExitLevel:
+    value: 10
+  TinyEvent_CmdContinueLevel:
+    value: 11
+

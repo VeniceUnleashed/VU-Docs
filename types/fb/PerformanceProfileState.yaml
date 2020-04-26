@@ -1,0 +1,53 @@
+name: PerformanceProfileState
+type: class
+inherits: MetricState
+
+constructors:
+  -
+    description: Creates a new PerformanceProfileState frostbite instance.
+  -
+    description: Creates a new PerformanceProfileState frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type MetricState to PerformanceProfileState. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MetricState
+        description: The instance to cast to PerformanceProfileState.
+  -
+    description: Casts an instance of type MetricEvent to PerformanceProfileState. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MetricEvent
+        description: The instance to cast to PerformanceProfileState.
+  -
+    description: Casts an instance of type DataContainer to PerformanceProfileState. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PerformanceProfileState.
+
+properties:
+  processorCount:
+    type: int
+  processorCoreCount:
+    type: int
+  processorClock:
+    type: int
+  totalMemMB:
+    type: int
+  gpuMemMB:
+    type: int
+  graphicAdapterName:
+    type: string
+  platform:
+    type: string
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PerformanceProfileState type.
+

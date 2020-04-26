@@ -1,0 +1,29 @@
+name: RawFileImportActionParams
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new RawFileImportActionParams frostbite instance.
+  -
+    description: Creates a new RawFileImportActionParams frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to RawFileImportActionParams. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to RawFileImportActionParams.
+
+properties:
+  sourceFile:
+    type: string
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the RawFileImportActionParams type.
+

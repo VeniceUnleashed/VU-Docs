@@ -1,0 +1,11 @@
+name: ShaderTextureCoordType
+type: enum
+
+values:
+  ShaderTextureCoordType_Unknown:
+    value: 0
+  ShaderTextureCoordType_VertexElement:
+    value: 1
+  ShaderTextureCoordType_WorldPos:
+    value: 2
+

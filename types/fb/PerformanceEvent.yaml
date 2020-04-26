@@ -1,0 +1,55 @@
+name: PerformanceEvent
+type: class
+inherits: MetricEvent
+
+constructors:
+  -
+    description: Creates a new PerformanceEvent frostbite instance.
+  -
+    description: Creates a new PerformanceEvent frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type MetricEvent to PerformanceEvent. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MetricEvent
+        description: The instance to cast to PerformanceEvent.
+  -
+    description: Casts an instance of type DataContainer to PerformanceEvent. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PerformanceEvent.
+
+properties:
+  position:
+    type: Vec3
+  freeCPUMemory:
+    type: float
+  cpuAverage:
+    type: float
+  allocCPUMemory:
+    type: float
+  freeGPUMemory:
+    type: float
+  gpuAverage:
+    type: float
+  drawCallCount:
+    type: int
+  primitiveCount:
+    type: int
+  allocGPUMemory:
+    type: float
+  performanceLocation:
+    type: string
+  performanceLink:
+    type: Guid
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PerformanceEvent type.
+

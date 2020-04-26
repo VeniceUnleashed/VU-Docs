@@ -1,0 +1,51 @@
+name: SimpleAnimationControlComponentData
+type: class
+inherits: ComponentData
+
+constructors:
+  -
+    description: Creates a new SimpleAnimationControlComponentData frostbite instance.
+  -
+    description: Creates a new SimpleAnimationControlComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ComponentData to SimpleAnimationControlComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to SimpleAnimationControlComponentData.
+  -
+    description: Casts an instance of type GameObjectData to SimpleAnimationControlComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to SimpleAnimationControlComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to SimpleAnimationControlComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to SimpleAnimationControlComponentData.
+  -
+    description: Casts an instance of type DataContainer to SimpleAnimationControlComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SimpleAnimationControlComponentData.
+
+properties:
+  binding:
+    type: SimpleAnimationControlBinding
+  animationEntitySpacePriority:
+    type: int
+  run:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SimpleAnimationControlComponentData type.
+

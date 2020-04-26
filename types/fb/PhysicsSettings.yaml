@@ -1,0 +1,65 @@
+name: PhysicsSettings
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new PhysicsSettings frostbite instance.
+  -
+    description: Creates a new PhysicsSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to PhysicsSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PhysicsSettings.
+
+properties:
+  integrateJobCount:
+    type: int
+  clientEffectWorldThreadCount:
+    type: int
+  clientWorldThreadCount:
+    type: int
+  serverWorldThreadCount:
+    type: int
+  collideJobCount:
+    type: int
+  enable:
+    type: bool
+  enableAIRigidBody:
+    type: bool
+  forestEnable:
+    type: bool
+  enableJobs:
+    type: bool
+  removeRagdollWhenWoken:
+    type: bool
+  removeFromWorldOnCollisionOverflow:
+    type: bool
+  singleStepCharacter:
+    type: bool
+  forceSingleStepCharacterInSP:
+    type: bool
+  enableFollowWheelRaycasts:
+    type: bool
+  enableClientWheelRaycasts:
+    type: bool
+  enableASyncWheelRaycasts:
+    type: bool
+  useDelayedWakeUpClient:
+    type: bool
+  useDelayedWakeUpServer:
+    type: bool
+  suppressDebrisSpawnUntilReady:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PhysicsSettings type.
+

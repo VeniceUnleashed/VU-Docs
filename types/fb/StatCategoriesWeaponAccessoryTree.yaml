@@ -1,0 +1,49 @@
+name: StatCategoriesWeaponAccessoryTree
+type: class
+inherits: StatCategoriesGuidTree
+
+constructors:
+  -
+    description: Creates a new StatCategoriesWeaponAccessoryTree frostbite instance.
+  -
+    description: Creates a new StatCategoriesWeaponAccessoryTree frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type StatCategoriesGuidTree to StatCategoriesWeaponAccessoryTree. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: StatCategoriesGuidTree
+        description: The instance to cast to StatCategoriesWeaponAccessoryTree.
+  -
+    description: Casts an instance of type StatCategoriesBaseTree to StatCategoriesWeaponAccessoryTree. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: StatCategoriesBaseTree
+        description: The instance to cast to StatCategoriesWeaponAccessoryTree.
+  -
+    description: Casts an instance of type TreeBase to StatCategoriesWeaponAccessoryTree. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: TreeBase
+        description: The instance to cast to StatCategoriesWeaponAccessoryTree.
+  -
+    description: Casts an instance of type Asset to StatCategoriesWeaponAccessoryTree. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to StatCategoriesWeaponAccessoryTree.
+  -
+    description: Casts an instance of type DataContainer to StatCategoriesWeaponAccessoryTree. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to StatCategoriesWeaponAccessoryTree.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the StatCategoriesWeaponAccessoryTree type.
+

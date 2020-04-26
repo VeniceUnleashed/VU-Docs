@@ -1,0 +1,32 @@
+name: PersistenceStatTable
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new PersistenceStatTable frostbite instance.
+  -
+    description: Creates a new PersistenceStatTable frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to PersistenceStatTable. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PersistenceStatTable.
+
+properties:
+  tableName:
+    type: string
+  ownerPersistenceData:
+    type: AbstractPersistenceData
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PersistenceStatTable type.
+

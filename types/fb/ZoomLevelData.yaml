@@ -1,0 +1,73 @@
+name: ZoomLevelData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new ZoomLevelData frostbite instance.
+  -
+    description: Creates a new ZoomLevelData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to ZoomLevelData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ZoomLevelData.
+
+properties:
+  fieldOfView:
+    type: float
+  dispersionMultiplier:
+    type: float
+  lookSpeedMultiplier:
+    type: float
+  sprintLookSpeedMultiplier:
+    type: float
+  moveSpeedMultiplier:
+    type: float
+  swayPitchMultiplier:
+    type: float
+  swayYawMultiplier:
+    type: float
+  supportedSwayPitchMultiplier:
+    type: float
+  supportedSwayYawMultiplier:
+    type: float
+  timePitchMultiplier:
+    type: float
+  timeYawMultiplier:
+    type: float
+  recoilMultiplier:
+    type: float
+  fadeToBlackDuration:
+    type: float
+  recoilFovMultiplier:
+    type: float
+  cameraImpulseMultiplier:
+    type: float
+  onActivateEventType:
+    type: ZoomLevelActivateEventType
+  startFadeToBlackAtTime:
+    type: float
+  fadeFromBlackDuration:
+    type: float
+  startFadeFromBlackAtTime:
+    type: float
+  screenExposureAreaScale:
+    type: float
+  fadeToBlackInZoomTransition:
+    type: bool
+  useFovSpecialisation:
+    type: bool
+  allowFieldOfViewScaling:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ZoomLevelData type.
+

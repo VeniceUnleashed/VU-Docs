@@ -1,0 +1,11 @@
+name: ExampleVehicleType
+type: enum
+
+values:
+  ExampleVehicleType_Small:
+    value: 0
+  ExampleVehicleType_Medium:
+    value: 1
+  ExampleVehicleType_Large:
+    value: 2
+

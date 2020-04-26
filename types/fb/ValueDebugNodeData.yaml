@@ -1,0 +1,36 @@
+name: ValueDebugNodeData
+type: class
+inherits: AudioGraphNodeData
+
+constructors:
+  -
+    description: Creates a new ValueDebugNodeData frostbite instance.
+  -
+    description: Creates a new ValueDebugNodeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphNodeData to ValueDebugNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphNodeData
+        description: The instance to cast to ValueDebugNodeData.
+  -
+    description: Casts an instance of type DataContainer to ValueDebugNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ValueDebugNodeData.
+
+properties:
+  values:
+    type: DebugValueInput
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ValueDebugNodeData type.
+

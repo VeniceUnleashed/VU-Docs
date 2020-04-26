@@ -1,0 +1,179 @@
+name: ShaderValueType
+type: enum
+
+values:
+  ShaderValueType_None:
+    value: 0
+  ShaderValueType_Half1:
+    value: 1
+  ShaderValueType_Half1x2:
+    value: 2
+  ShaderValueType_Half1x3:
+    value: 3
+  ShaderValueType_Half1x4:
+    value: 4
+  ShaderValueType_Half2:
+    value: 5
+  ShaderValueType_Half2x2:
+    value: 6
+  ShaderValueType_Half2x3:
+    value: 7
+  ShaderValueType_Half2x4:
+    value: 8
+  ShaderValueType_Half3:
+    value: 9
+  ShaderValueType_Half3x2:
+    value: 10
+  ShaderValueType_Half3x3:
+    value: 11
+  ShaderValueType_Half3x4:
+    value: 12
+  ShaderValueType_Half4:
+    value: 13
+  ShaderValueType_Half4x2:
+    value: 14
+  ShaderValueType_Half4x3:
+    value: 15
+  ShaderValueType_Half4x4:
+    value: 16
+  ShaderValueType_Float1:
+    value: 17
+  ShaderValueType_Float1x2:
+    value: 18
+  ShaderValueType_Float1x3:
+    value: 19
+  ShaderValueType_Float1x4:
+    value: 20
+  ShaderValueType_Float2:
+    value: 21
+  ShaderValueType_Float2x2:
+    value: 22
+  ShaderValueType_Float2x3:
+    value: 23
+  ShaderValueType_Float2x4:
+    value: 24
+  ShaderValueType_Float3:
+    value: 25
+  ShaderValueType_Float3x2:
+    value: 26
+  ShaderValueType_Float3x3:
+    value: 27
+  ShaderValueType_Float3x4:
+    value: 28
+  ShaderValueType_Float4:
+    value: 29
+  ShaderValueType_Float4x2:
+    value: 30
+  ShaderValueType_Float4x3:
+    value: 31
+  ShaderValueType_Float4x4:
+    value: 32
+  ShaderValueType_Int1:
+    value: 33
+  ShaderValueType_Int1x2:
+    value: 34
+  ShaderValueType_Int1x3:
+    value: 35
+  ShaderValueType_Int1x4:
+    value: 36
+  ShaderValueType_Int2:
+    value: 37
+  ShaderValueType_Int2x2:
+    value: 38
+  ShaderValueType_Int2x3:
+    value: 39
+  ShaderValueType_Int2x4:
+    value: 40
+  ShaderValueType_Int3:
+    value: 41
+  ShaderValueType_Int3x2:
+    value: 42
+  ShaderValueType_Int3x3:
+    value: 43
+  ShaderValueType_Int3x4:
+    value: 44
+  ShaderValueType_Int4:
+    value: 45
+  ShaderValueType_Int4x2:
+    value: 46
+  ShaderValueType_Int4x3:
+    value: 47
+  ShaderValueType_Int4x4:
+    value: 48
+  ShaderValueType_UInt1:
+    value: 49
+  ShaderValueType_UInt1x2:
+    value: 50
+  ShaderValueType_UInt1x3:
+    value: 51
+  ShaderValueType_UInt1x4:
+    value: 52
+  ShaderValueType_UInt2:
+    value: 53
+  ShaderValueType_UInt2x2:
+    value: 54
+  ShaderValueType_UInt2x3:
+    value: 55
+  ShaderValueType_UInt2x4:
+    value: 56
+  ShaderValueType_UInt3:
+    value: 57
+  ShaderValueType_UInt3x2:
+    value: 58
+  ShaderValueType_UInt3x3:
+    value: 59
+  ShaderValueType_UInt3x4:
+    value: 60
+  ShaderValueType_UInt4:
+    value: 61
+  ShaderValueType_UInt4x2:
+    value: 62
+  ShaderValueType_UInt4x3:
+    value: 63
+  ShaderValueType_UInt4x4:
+    value: 64
+  ShaderValueType_Bool1:
+    value: 65
+  ShaderValueType_Bool1x2:
+    value: 66
+  ShaderValueType_Bool1x3:
+    value: 67
+  ShaderValueType_Bool1x4:
+    value: 68
+  ShaderValueType_Bool2:
+    value: 69
+  ShaderValueType_Bool2x2:
+    value: 70
+  ShaderValueType_Bool2x3:
+    value: 71
+  ShaderValueType_Bool2x4:
+    value: 72
+  ShaderValueType_Bool3:
+    value: 73
+  ShaderValueType_Bool3x2:
+    value: 74
+  ShaderValueType_Bool3x3:
+    value: 75
+  ShaderValueType_Bool3x4:
+    value: 76
+  ShaderValueType_Bool4:
+    value: 77
+  ShaderValueType_Bool4x2:
+    value: 78
+  ShaderValueType_Bool4x3:
+    value: 79
+  ShaderValueType_Bool4x4:
+    value: 80
+  ShaderValueType_Sampler1d:
+    value: 81
+  ShaderValueType_Sampler1dArray:
+    value: 82
+  ShaderValueType_Sampler2d:
+    value: 83
+  ShaderValueType_Sampler2dArray:
+    value: 84
+  ShaderValueType_Sampler3d:
+    value: 85
+  ShaderValueType_SamplerCube:
+    value: 86
+

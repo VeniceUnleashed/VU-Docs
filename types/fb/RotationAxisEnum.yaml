@@ -1,0 +1,11 @@
+name: RotationAxisEnum
+type: enum
+
+values:
+  RALeft:
+    value: 0
+  RAUp:
+    value: 1
+  RADof:
+    value: 2
+

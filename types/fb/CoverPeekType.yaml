@@ -1,0 +1,11 @@
+name: CoverPeekType
+type: enum
+
+values:
+  CoverPeekType_Out:
+    value: 0
+  CoverPeekType_Over:
+    value: 1
+  CoverPeekType_None:
+    value: 2
+

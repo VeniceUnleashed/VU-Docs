@@ -1,0 +1,53 @@
+name: PhysicsConeConstraintData
+type: class
+inherits: PhysicsConstraintData
+
+constructors:
+  -
+    description: Creates a new PhysicsConeConstraintData frostbite instance.
+  -
+    description: Creates a new PhysicsConeConstraintData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type PhysicsConstraintData to PhysicsConeConstraintData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: PhysicsConstraintData
+        description: The instance to cast to PhysicsConeConstraintData.
+  -
+    description: Casts an instance of type GameObjectData to PhysicsConeConstraintData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to PhysicsConeConstraintData.
+  -
+    description: Casts an instance of type GameDataContainer to PhysicsConeConstraintData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to PhysicsConeConstraintData.
+  -
+    description: Casts an instance of type DataContainer to PhysicsConeConstraintData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PhysicsConeConstraintData.
+
+properties:
+  minAngle:
+    type: float
+  angularFriction:
+    type: float
+  maxAngle:
+    type: float
+  hasLimits:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PhysicsConeConstraintData type.
+

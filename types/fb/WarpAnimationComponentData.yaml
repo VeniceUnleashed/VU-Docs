@@ -1,0 +1,61 @@
+name: WarpAnimationComponentData
+type: class
+inherits: ComponentData
+
+constructors:
+  -
+    description: Creates a new WarpAnimationComponentData frostbite instance.
+  -
+    description: Creates a new WarpAnimationComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ComponentData to WarpAnimationComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to WarpAnimationComponentData.
+  -
+    description: Casts an instance of type GameObjectData to WarpAnimationComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to WarpAnimationComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to WarpAnimationComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to WarpAnimationComponentData.
+  -
+    description: Casts an instance of type DataContainer to WarpAnimationComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to WarpAnimationComponentData.
+
+properties:
+  connectTransform:
+    type: LinearTransform
+  cannedAnimBinding:
+    type: CannedAnimationBinding
+  animationEntitySpacePriority:
+    type: int
+  warpBinding:
+    type: WarpAnimationBinding
+  boneToAlign:
+    type: GameplayBones
+  requireAnimationWeight:
+    type: bool
+  forceAnimationTransform:
+    type: bool
+  externalConnectTransform:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the WarpAnimationComponentData type.
+

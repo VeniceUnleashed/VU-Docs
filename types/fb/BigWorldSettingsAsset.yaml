@@ -1,0 +1,36 @@
+name: BigWorldSettingsAsset
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new BigWorldSettingsAsset frostbite instance.
+  -
+    description: Creates a new BigWorldSettingsAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to BigWorldSettingsAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to BigWorldSettingsAsset.
+  -
+    description: Casts an instance of type DataContainer to BigWorldSettingsAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to BigWorldSettingsAsset.
+
+properties:
+  settings:
+    type: BigWorldSetting
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the BigWorldSettingsAsset type.
+

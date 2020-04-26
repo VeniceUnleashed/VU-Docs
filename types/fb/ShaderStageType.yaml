@@ -1,0 +1,19 @@
+name: ShaderStageType
+type: enum
+
+values:
+  ShaderStageType_Vertex:
+    value: 0
+  ShaderStageType_Pixel:
+    value: 1
+  ShaderStageType_Hull:
+    value: 2
+  ShaderStageType_Domain:
+    value: 3
+  ShaderStageType_Geometry:
+    value: 4
+  ShaderStageType_Compute:
+    value: 5
+  ShaderStageTypeCount:
+    value: 6
+

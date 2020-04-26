@@ -1,0 +1,11 @@
+name: SpotLightShape
+type: enum
+
+values:
+  SpotLightShape_Cone:
+    value: 0
+  SpotLightShape_Frustum:
+    value: 1
+  SpotLightShape_OrthoFrustum:
+    value: 2
+

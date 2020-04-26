@@ -1,0 +1,11 @@
+name: TicketDecreaseType
+type: enum
+
+values:
+  TDTOnKilled:
+    value: 0
+  TDTOnRespawned:
+    value: 1
+  TDTNoDecreaseOnSoldierDeath:
+    value: 2
+

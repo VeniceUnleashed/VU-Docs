@@ -1,0 +1,75 @@
+name: ProcessorType
+type: enum
+
+values:
+  PtBaseEmitter:
+    value: 0
+  PtSpawnRate:
+    value: 1
+  PtSpawnSpeed:
+    value: 2
+  PtSpawnPosition:
+    value: 3
+  PtSpawnDirection:
+    value: 4
+  PtSpawnSize:
+    value: 5
+  PtSpawnAnimation:
+    value: 6
+  PtSpawnAnimationFrame:
+    value: 7
+  PtSpawnRotation:
+    value: 8
+  PtSpawnOrientation:
+    value: 9
+  PtSpawnRotationSpeed:
+    value: 10
+  PtUpdatePosition:
+    value: 11
+  PtUpdateAge:
+    value: 12
+  PtTurbulance:
+    value: 13
+  PtGravity:
+    value: 14
+  PtLocalForce:
+    value: 15
+  PtAirResistance:
+    value: 16
+  PtUpdateLinearVelocity:
+    value: 17
+  PtUpdateOrientation:
+    value: 18
+  PtEmitter:
+    value: 19
+  PtUpdateColor:
+    value: 20
+  PtUpdateColorLeaf:
+    value: 21
+  PtUpdateTransparency:
+    value: 22
+  PtUpdateTextureCoords:
+    value: 23
+  PtUpdateRotation:
+    value: 24
+  PtUpdateSizeX:
+    value: 25
+  PtUpdateSizeY:
+    value: 26
+  PtUpdateSizeZ:
+    value: 27
+  PtUpdateSize:
+    value: 28
+  PtUpdateAlphaLevelMin:
+    value: 29
+  PtUpdateAlphaLevelMax:
+    value: 30
+  PtUpdateAlphaLevelScale:
+    value: 31
+  PtUpdateClipScale:
+    value: 32
+  PtUpdateCameraProximity:
+    value: 33
+  ProcessorTypeCount:
+    value: 34
+

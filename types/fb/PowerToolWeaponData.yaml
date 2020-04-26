@@ -1,0 +1,53 @@
+name: PowerToolWeaponData
+type: class
+inherits: WeaponData
+
+constructors:
+  -
+    description: Creates a new PowerToolWeaponData frostbite instance.
+  -
+    description: Creates a new PowerToolWeaponData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type WeaponData to PowerToolWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: WeaponData
+        description: The instance to cast to PowerToolWeaponData.
+  -
+    description: Casts an instance of type ToolData to PowerToolWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ToolData
+        description: The instance to cast to PowerToolWeaponData.
+  -
+    description: Casts an instance of type DataContainer to PowerToolWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PowerToolWeaponData.
+
+properties:
+  repairSound:
+    type: SoundAsset
+    nullable: true
+  repairCompletedSound:
+    type: SoundAsset
+    nullable: true
+  damageSound:
+    type: SoundAsset
+    nullable: true
+  repairMaterialPair:
+    type: MaterialContainerPair
+    nullable: true
+  playFireEffectOnRepairOnly:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PowerToolWeaponData type.
+

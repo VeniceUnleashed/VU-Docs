@@ -1,0 +1,38 @@
+name: SubtitleMainDataNode
+type: class
+inherits: TreeNodeBase
+
+constructors:
+  -
+    description: Creates a new SubtitleMainDataNode frostbite instance.
+  -
+    description: Creates a new SubtitleMainDataNode frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type TreeNodeBase to SubtitleMainDataNode. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: TreeNodeBase
+        description: The instance to cast to SubtitleMainDataNode.
+  -
+    description: Casts an instance of type DataContainer to SubtitleMainDataNode. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SubtitleMainDataNode.
+
+properties:
+  language:
+    type: LanguageFormat
+  subtitles:
+    type: SubtitleDataNode
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SubtitleMainDataNode type.
+

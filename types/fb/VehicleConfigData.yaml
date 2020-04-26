@@ -1,0 +1,121 @@
+name: VehicleConfigData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new VehicleConfigData frostbite instance.
+  -
+    description: Creates a new VehicleConfigData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to VehicleConfigData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VehicleConfigData.
+
+properties:
+  centerOfMass:
+    type: Vec3
+  centerOfMassHandlingOffset:
+    type: Vec3
+  inertiaModifier:
+    type: Vec3
+  aeroDynamicPhysics:
+    type: AeroDynamicPhysicsData
+    nullable: true
+  parachutePhysics:
+    type: VehicleParachuteData
+    nullable: true
+  motorbikePhysics:
+    type: MotorbikeData
+    nullable: true
+  motionDamping:
+    type: MotionDampingData
+    nullable: true
+  input:
+    type: VehicleInputData
+  floatPhysics:
+    type: FloatPhysicsData
+    nullable: true
+  stabilizer:
+    type: StabilizerData
+    nullable: true
+  stabilizers:
+    type: StabilizerSettings
+    array: true
+  constantForce:
+    type: ConstantForceData
+    array: true
+  vehicleModeAtReset:
+    type: VehicleMode
+  bodyMass:
+    type: float
+  gravityModifier:
+    type: float
+  yawMin:
+    type: float
+  yawMax:
+    type: float
+  downForceBaseFactor:
+    type: float
+  downForceWheelFactor:
+    type: float
+  vehicleModeChangeEnteringTime:
+    type: float
+  vehicleModeChangeStartingTime:
+    type: float
+  vehicleModeChangeStoppingTime:
+    type: float
+  vehicleModeChangeLeavingTime:
+    type: float
+  standStillLowSpeedTimeLimit:
+    type: float
+  staticFrictionBreakCollisionMod:
+    type: float
+  staticFrictionBreakVelocityMod:
+    type: float
+  coefficientOfAirFriction:
+    type: float
+  airDensity:
+    type: float
+  airDragArea:
+    type: float
+  windResistanceBaseFactor:
+    type: float
+  windResistanceVelocityFactor:
+    type: float
+  windResistanceVelocityFactorMin:
+    type: float
+  windResistanceVelocityFactorMax:
+    type: float
+  antiRollBars:
+    type: AntiRollBars
+  useDownForceWheelFactor:
+    type: bool
+  useGearbox:
+    type: bool
+  useStandStillBrake:
+    type: bool
+  useStandStillSleep:
+    type: bool
+  useTurnAroundForce:
+    type: bool
+  useMotorcycleControl:
+    type: bool
+  invertPitchAllowed:
+    type: bool
+  useWindResistance:
+    type: bool
+  useDownForce:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VehicleConfigData type.
+

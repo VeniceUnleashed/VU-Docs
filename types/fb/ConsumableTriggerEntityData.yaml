@@ -1,0 +1,67 @@
+name: ConsumableTriggerEntityData
+type: class
+inherits: TriggerEntityData
+
+constructors:
+  -
+    description: Creates a new ConsumableTriggerEntityData frostbite instance.
+  -
+    description: Creates a new ConsumableTriggerEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type TriggerEntityData to ConsumableTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: TriggerEntityData
+        description: The instance to cast to ConsumableTriggerEntityData.
+  -
+    description: Casts an instance of type GameEntityData to ConsumableTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to ConsumableTriggerEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to ConsumableTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to ConsumableTriggerEntityData.
+  -
+    description: Casts an instance of type EntityData to ConsumableTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to ConsumableTriggerEntityData.
+  -
+    description: Casts an instance of type GameObjectData to ConsumableTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to ConsumableTriggerEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to ConsumableTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to ConsumableTriggerEntityData.
+  -
+    description: Casts an instance of type DataContainer to ConsumableTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ConsumableTriggerEntityData.
+
+properties:
+  consumableGroup:
+    type: ConsumableGroup
+  persistent:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ConsumableTriggerEntityData type.
+

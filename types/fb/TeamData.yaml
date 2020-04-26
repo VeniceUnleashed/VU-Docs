@@ -1,0 +1,50 @@
+name: TeamData
+type: class
+inherits: TeamAsset
+
+constructors:
+  -
+    description: Creates a new TeamData frostbite instance.
+  -
+    description: Creates a new TeamData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type TeamAsset to TeamData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: TeamAsset
+        description: The instance to cast to TeamData.
+  -
+    description: Casts an instance of type Asset to TeamData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to TeamData.
+  -
+    description: Casts an instance of type DataContainer to TeamData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to TeamData.
+
+properties:
+  soldier:
+    type: SoldierBlueprint
+    nullable: true
+  faction:
+    type: FactionId
+  soldierCustomization:
+    type: SoldierCustomizationAsset
+    array: true
+  vehicleCustomization:
+    type: VehicleCustomizationAsset
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the TeamData type.
+

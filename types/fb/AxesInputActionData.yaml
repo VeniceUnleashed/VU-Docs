@@ -1,0 +1,37 @@
+name: AxesInputActionData
+type: class
+inherits: InputActionData
+
+constructors:
+  -
+    description: Creates a new AxesInputActionData frostbite instance.
+  -
+    description: Creates a new AxesInputActionData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type InputActionData to AxesInputActionData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: InputActionData
+        description: The instance to cast to AxesInputActionData.
+  -
+    description: Casts an instance of type DataContainer to AxesInputActionData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to AxesInputActionData.
+
+properties:
+  axis:
+    type: InputDeviceAxes
+  normalizeInput:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the AxesInputActionData type.
+

@@ -1,0 +1,62 @@
+name: DecalTemplateData
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new DecalTemplateData frostbite instance.
+  -
+    description: Creates a new DecalTemplateData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to DecalTemplateData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to DecalTemplateData.
+  -
+    description: Casts an instance of type DataContainer to DecalTemplateData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to DecalTemplateData.
+
+properties:
+  size:
+    type: float
+  randomSize:
+    type: float
+  rotation:
+    type: float
+  randomRotation:
+    type: float
+  clipAngle:
+    type: float
+  proximityRadiusFactor:
+    type: float
+  normalOffset:
+    type: float
+  shader:
+    type: SurfaceShaderBaseAsset
+    nullable: true
+  meshUVIndex:
+    type: int
+  atlasTile:
+    type: DecalAtlasTile
+  sortingPriority:
+    type: int
+  projected:
+    type: bool
+  projectMultiple:
+    type: bool
+  materialIndex:
+    type: int
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the DecalTemplateData type.
+

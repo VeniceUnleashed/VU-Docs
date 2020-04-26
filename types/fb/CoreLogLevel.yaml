@@ -1,0 +1,27 @@
+name: CoreLogLevel
+type: enum
+
+values:
+  CllNone:
+    value: 0
+  CllEventRecord:
+    value: 1
+  CllCrash:
+    value: 2
+  CllError:
+    value: 3
+  CllAssert:
+    value: 4
+  CllFatalAssert:
+    value: 5
+  CllValidate:
+    value: 6
+  CllWarning:
+    value: 7
+  CllInfo:
+    value: 8
+  CllOutput:
+    value: 9
+  CllDebug:
+    value: 10
+

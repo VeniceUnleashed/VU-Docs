@@ -1,0 +1,39 @@
+name: VehicleVisualCustomizationAsset
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new VehicleVisualCustomizationAsset frostbite instance.
+  -
+    description: Creates a new VehicleVisualCustomizationAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to VehicleVisualCustomizationAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to VehicleVisualCustomizationAsset.
+  -
+    description: Casts an instance of type DataContainer to VehicleVisualCustomizationAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VehicleVisualCustomizationAsset.
+
+properties:
+  textureUnlockPartCollections:
+    type: ShaderTextureUnlockPartCollection
+    array: true
+  textUnlockParts:
+    type: TextUnlockPartData
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VehicleVisualCustomizationAsset type.
+

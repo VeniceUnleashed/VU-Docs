@@ -1,0 +1,51 @@
+name: FakeHingeData
+type: class
+inherits: FakePhysicsData
+
+constructors:
+  -
+    description: Creates a new FakeHingeData frostbite instance.
+  -
+    description: Creates a new FakeHingeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type FakePhysicsData to FakeHingeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: FakePhysicsData
+        description: The instance to cast to FakeHingeData.
+  -
+    description: Casts an instance of type DataContainer to FakeHingeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to FakeHingeData.
+
+properties:
+  pivot:
+    type: Vec3
+  rotationAxis:
+    type: Vec3
+  extensionAxis:
+    type: Vec3
+  minAngle:
+    type: float
+  maxAngle:
+    type: float
+  angularDampening:
+    type: float
+  pullbackAcceleration:
+    type: float
+  progressiveExponent:
+    type: float
+  inertiaModifier:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the FakeHingeData type.
+

@@ -1,0 +1,31 @@
+name: KillFromVehicleScoringHandlerData
+type: class
+inherits: ScoringHandlerData
+
+constructors:
+  -
+    description: Creates a new KillFromVehicleScoringHandlerData frostbite instance.
+  -
+    description: Creates a new KillFromVehicleScoringHandlerData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ScoringHandlerData to KillFromVehicleScoringHandlerData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ScoringHandlerData
+        description: The instance to cast to KillFromVehicleScoringHandlerData.
+  -
+    description: Casts an instance of type DataContainer to KillFromVehicleScoringHandlerData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to KillFromVehicleScoringHandlerData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the KillFromVehicleScoringHandlerData type.
+

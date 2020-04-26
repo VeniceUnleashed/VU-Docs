@@ -1,0 +1,13 @@
+name: SpecialMovesPoseType
+type: enum
+
+values:
+  SpecialMovesPoseType_None:
+    value: -1
+  SpecialMovesPoseType_Stand:
+    value: 0
+  SpecialMovesPoseType_Crouch:
+    value: 1
+  SpecialMovesPoseType_Prone:
+    value: 2
+

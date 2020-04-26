@@ -1,0 +1,59 @@
+name: DynamicAvoidanceEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new DynamicAvoidanceEntityData frostbite instance.
+  -
+    description: Creates a new DynamicAvoidanceEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to DynamicAvoidanceEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to DynamicAvoidanceEntityData.
+  -
+    description: Casts an instance of type GameObjectData to DynamicAvoidanceEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to DynamicAvoidanceEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to DynamicAvoidanceEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to DynamicAvoidanceEntityData.
+  -
+    description: Casts an instance of type DataContainer to DynamicAvoidanceEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to DynamicAvoidanceEntityData.
+
+properties:
+  repelOthers:
+    type: DynamicAvoidanceMode
+  reportPredictedCollision:
+    type: DynamicAvoidanceMode
+  collisionRadius:
+    type: float
+  realm:
+    type: Realm
+  antBinding:
+    type: AntDynamicAvoidanceBinding
+  affectedByRepellingForce:
+    type: bool
+  predictedByOthers:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the DynamicAvoidanceEntityData type.
+

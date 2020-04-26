@@ -1,0 +1,62 @@
+name: TeamEntityData
+type: class
+inherits: GameEntityData
+
+constructors:
+  -
+    description: Creates a new TeamEntityData frostbite instance.
+  -
+    description: Creates a new TeamEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameEntityData to TeamEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to TeamEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to TeamEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to TeamEntityData.
+  -
+    description: Casts an instance of type EntityData to TeamEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to TeamEntityData.
+  -
+    description: Casts an instance of type GameObjectData to TeamEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to TeamEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to TeamEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to TeamEntityData.
+  -
+    description: Casts an instance of type DataContainer to TeamEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to TeamEntityData.
+
+properties:
+  team:
+    type: TeamData
+    nullable: true
+  id:
+    type: TeamId
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the TeamEntityData type.
+

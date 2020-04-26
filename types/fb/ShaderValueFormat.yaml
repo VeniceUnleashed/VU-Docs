@@ -1,0 +1,15 @@
+name: ShaderValueFormat
+type: enum
+
+values:
+  ShaderValueFormat_Half:
+    value: 0
+  ShaderValueFormat_Float:
+    value: 1
+  ShaderValueFormat_Int:
+    value: 2
+  ShaderValueFormat_UInt:
+    value: 3
+  ShaderValueFormat_Bool:
+    value: 4
+

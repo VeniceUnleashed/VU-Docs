@@ -1,0 +1,13 @@
+name: InteractionEntityType
+type: enum
+
+values:
+  IET_None:
+    value: 0
+  IET_RushCrateArm:
+    value: 1
+  IET_RushCrateDisarm:
+    value: 2
+  IET_CTFFlag:
+    value: 3
+

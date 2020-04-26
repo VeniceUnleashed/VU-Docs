@@ -1,0 +1,11 @@
+name: UIKeyboardEventType
+type: enum
+
+values:
+  UIKeyboardEventType_KeyDown:
+    value: 0
+  UIKeyboardEventType_KeyUp:
+    value: 1
+  UIKeyboardEventType_Char:
+    value: 2
+

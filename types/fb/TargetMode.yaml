@@ -1,0 +1,11 @@
+name: TargetMode
+type: enum
+
+values:
+  TargetMode_FirstPerson:
+    value: 0
+  TargetMode_ThirdPerson:
+    value: 1
+  TargetMode_Index:
+    value: 2
+

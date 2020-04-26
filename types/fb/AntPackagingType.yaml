@@ -1,0 +1,13 @@
+name: AntPackagingType
+type: enum
+
+values:
+  AntPackagingType_Static:
+    value: 0
+  AntPackagingType_Chunk:
+    value: 1
+  AntPackagingType_Bundle:
+    value: 2
+  AntPackagingType_AnimationSet:
+    value: 3
+

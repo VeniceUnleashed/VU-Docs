@@ -1,0 +1,49 @@
+name: EmitterExclusionVolumeData
+type: class
+inherits: OBBData
+
+constructors:
+  -
+    description: Creates a new EmitterExclusionVolumeData frostbite instance.
+  -
+    description: Creates a new EmitterExclusionVolumeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type OBBData to EmitterExclusionVolumeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: OBBData
+        description: The instance to cast to EmitterExclusionVolumeData.
+  -
+    description: Casts an instance of type BaseShapeData to EmitterExclusionVolumeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: BaseShapeData
+        description: The instance to cast to EmitterExclusionVolumeData.
+  -
+    description: Casts an instance of type GameObjectData to EmitterExclusionVolumeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to EmitterExclusionVolumeData.
+  -
+    description: Casts an instance of type GameDataContainer to EmitterExclusionVolumeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to EmitterExclusionVolumeData.
+  -
+    description: Casts an instance of type DataContainer to EmitterExclusionVolumeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to EmitterExclusionVolumeData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the EmitterExclusionVolumeData type.
+

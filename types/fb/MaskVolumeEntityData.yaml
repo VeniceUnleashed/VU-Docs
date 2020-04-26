@@ -1,0 +1,55 @@
+name: MaskVolumeEntityData
+type: class
+inherits: RenderVolumeEntityData
+
+constructors:
+  -
+    description: Creates a new MaskVolumeEntityData frostbite instance.
+  -
+    description: Creates a new MaskVolumeEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type RenderVolumeEntityData to MaskVolumeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: RenderVolumeEntityData
+        description: The instance to cast to MaskVolumeEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to MaskVolumeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to MaskVolumeEntityData.
+  -
+    description: Casts an instance of type EntityData to MaskVolumeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to MaskVolumeEntityData.
+  -
+    description: Casts an instance of type GameObjectData to MaskVolumeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to MaskVolumeEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to MaskVolumeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to MaskVolumeEntityData.
+  -
+    description: Casts an instance of type DataContainer to MaskVolumeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MaskVolumeEntityData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MaskVolumeEntityData type.
+

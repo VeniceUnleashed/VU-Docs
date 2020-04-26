@@ -1,0 +1,55 @@
+name: VisualEnvironmentBlueprint
+type: class
+inherits: ObjectBlueprint
+
+constructors:
+  -
+    description: Creates a new VisualEnvironmentBlueprint frostbite instance.
+  -
+    description: Creates a new VisualEnvironmentBlueprint frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ObjectBlueprint to VisualEnvironmentBlueprint. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ObjectBlueprint
+        description: The instance to cast to VisualEnvironmentBlueprint.
+  -
+    description: Casts an instance of type Blueprint to VisualEnvironmentBlueprint. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Blueprint
+        description: The instance to cast to VisualEnvironmentBlueprint.
+  -
+    description: Casts an instance of type EntityBusData to VisualEnvironmentBlueprint. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityBusData
+        description: The instance to cast to VisualEnvironmentBlueprint.
+  -
+    description: Casts an instance of type DataBusData to VisualEnvironmentBlueprint. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataBusData
+        description: The instance to cast to VisualEnvironmentBlueprint.
+  -
+    description: Casts an instance of type Asset to VisualEnvironmentBlueprint. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to VisualEnvironmentBlueprint.
+  -
+    description: Casts an instance of type DataContainer to VisualEnvironmentBlueprint. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VisualEnvironmentBlueprint.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VisualEnvironmentBlueprint type.
+

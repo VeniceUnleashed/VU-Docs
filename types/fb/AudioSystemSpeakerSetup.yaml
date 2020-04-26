@@ -1,0 +1,9 @@
+name: AudioSystemSpeakerSetup
+type: enum
+
+values:
+  FiveDotOne:
+    value: 6
+  SevenDotOne:
+    value: 8
+

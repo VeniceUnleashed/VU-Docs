@@ -1,0 +1,17 @@
+name: AdministrationEventType
+type: enum
+
+values:
+  AdministrationEventType_Add:
+    value: 0
+  AdministrationEventType_Remove:
+    value: 1
+  AdministrationEventType_Clear:
+    value: 2
+  AdministrationEventType_List:
+    value: 3
+  AdministrationEventType_Load:
+    value: 4
+  AdministrationEventType_Save:
+    value: 5
+

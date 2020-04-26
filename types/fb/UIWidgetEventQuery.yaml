@@ -1,0 +1,7 @@
+name: UIWidgetEventQuery
+type: enum
+
+values:
+  UIWidgetEventQuery_FireEvent:
+    value: 0
+

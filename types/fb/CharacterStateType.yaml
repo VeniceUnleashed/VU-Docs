@@ -1,0 +1,37 @@
+name: CharacterStateType
+type: enum
+
+values:
+  CharacterStateType_OnGround:
+    value: 0
+  CharacterStateType_Jumping:
+    value: 1
+  CharacterStateType_InAir:
+    value: 2
+  CharacterStateType_Climbing:
+    value: 3
+  CharacterStateType_Falling:
+    value: 4
+  CharacterStateType_User_0:
+    value: 5
+  CharacterStateType_Parachute:
+    value: 5
+  CharacterStateType_User_1:
+    value: 6
+  CharacterStateType_Swimming:
+    value: 6
+  CharacterStateType_User_2:
+    value: 7
+  CharacterStateType_AnimationControlled:
+    value: 7
+  CharacterStateType_User_3:
+    value: 8
+  CharacterStateType_Sliding:
+    value: 8
+  CharacterStateType_User_4:
+    value: 9
+  CharacterStateType_User_5:
+    value: 10
+  CharacterStateType_StateCount:
+    value: 11
+

@@ -1,0 +1,111 @@
+name: ShaderConstantFunction
+type: enum
+
+values:
+  ShaderConstantFunction_ViewMatrix:
+    value: 0
+  ShaderConstantFunction_ViewProjMatrix:
+    value: 1
+  ShaderConstantFunction_WorldViewMatrix:
+    value: 2
+  ShaderConstantFunction_WorldViewProjMatrix:
+    value: 3
+  ShaderConstantFunction_CrViewProjMatrix:
+    value: 4
+  ShaderConstantFunction_CrWorldViewProjMatrix:
+    value: 5
+  ShaderConstantFunction_CameraPos:
+    value: 6
+  ShaderConstantFunction_PrevViewProjMatrix:
+    value: 7
+  ShaderConstantFunction_PrevWorldViewProjMatrix:
+    value: 8
+  ShaderConstantFunction_WorldMatrix:
+    value: 9
+  ShaderConstantFunction_PrevWorldMatrix:
+    value: 10
+  ShaderConstantFunction_BoneVectors:
+    value: 11
+  ShaderConstantFunction_PrevBoneVectors:
+    value: 12
+  ShaderConstantFunction_LightProbeShR:
+    value: 13
+  ShaderConstantFunction_LightProbeShG:
+    value: 14
+  ShaderConstantFunction_LightProbeShB:
+    value: 15
+  ShaderConstantFunction_LightProbeShO:
+    value: 16
+  ShaderConstantFunction_LightMapUvTransform:
+    value: 17
+  ShaderConstantFunction_LightMapUvTranslation:
+    value: 18
+  ShaderConstantFunction_LightMapIrradianceTexture:
+    value: 19
+  ShaderConstantFunction_LightMapIrradianceChromaTexture:
+    value: 20
+  ShaderConstantFunction_LightMapIrradianceLumaTexture:
+    value: 21
+  ShaderConstantFunction_LightMapDirectionTexture:
+    value: 22
+  ShaderConstantFunction_LightMapSkyVisibilityTexture:
+    value: 23
+  ShaderConstantFunction_DepthBufferTexture:
+    value: 24
+  ShaderConstantFunction_ViewportZMinMaxKzKw:
+    value: 25
+  ShaderConstantFunction_Time:
+    value: 26
+  ShaderConstantFunction_ScreenSize:
+    value: 27
+  ShaderConstantFunction_OutdoorLightDir:
+    value: 28
+  ShaderConstantFunction_OutdoorLightHemisphereDir:
+    value: 29
+  ShaderConstantFunction_OutdoorLightKeyColor:
+    value: 30
+  ShaderConstantFunction_OutdoorLightKeySpecularColorAndHemisphereVisibility:
+    value: 31
+  ShaderConstantFunction_OutdoorLightTopColor:
+    value: 32
+  ShaderConstantFunction_OutdoorLightBottomColor:
+    value: 33
+  ShaderConstantFunction_OutdoorLightShadowTransform:
+    value: 34
+  ShaderConstantFunction_OutdoorLightShadowmapSizeAndInvSize:
+    value: 35
+  ShaderConstantFunction_OutdoorLightShadowmapTexture:
+    value: 36
+  ShaderConstantFunction_OutdoorLightTransparencyShadowmapTexture:
+    value: 37
+  ShaderConstantFunction_OutdoorLightSkyEnvmap:
+    value: 38
+  ShaderConstantFunction_OutdoorLightDynamicEnvmap:
+    value: 39
+  ShaderConstantFunction_OutdoorLightTopColorEnvmap:
+    value: 40
+  ShaderConstantFunction_OutdoorLightBottomColorEnvmap:
+    value: 41
+  ShaderConstantFunction_OutdoorLightKeyColorEnvmap:
+    value: 42
+  ShaderConstantFunction_OutdoorLightSkyEnvmap8BitTexInvScale:
+    value: 43
+  ShaderConstantFunction_TransparentStartAndEndAndClamp:
+    value: 44
+  ShaderConstantFunction_BestFitNormalScaleTexture:
+    value: 45
+  ShaderConstantFunction_SceneTexture:
+    value: 46
+  ShaderConstantFunction_ColorScale:
+    value: 47
+  ShaderConstantFunction_DebugNonFiniteColor:
+    value: 48
+  ShaderConstantFunction_XenonInstancingIndexCount:
+    value: 49
+  ShaderConstantFunction_Ps3ClipPlane:
+    value: 50
+  ShaderConstantFunction_DxVectorBufferOffsets:
+    value: 51
+  ShaderConstantFunctionCount:
+    value: 52
+

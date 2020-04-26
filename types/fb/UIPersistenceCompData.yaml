@@ -1,0 +1,37 @@
+name: UIPersistenceCompData
+type: class
+inherits: UIComponentData
+
+constructors:
+  -
+    description: Creates a new UIPersistenceCompData frostbite instance.
+  -
+    description: Creates a new UIPersistenceCompData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UIComponentData to UIPersistenceCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIComponentData
+        description: The instance to cast to UIPersistenceCompData.
+  -
+    description: Casts an instance of type Asset to UIPersistenceCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to UIPersistenceCompData.
+  -
+    description: Casts an instance of type DataContainer to UIPersistenceCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UIPersistenceCompData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UIPersistenceCompData type.
+

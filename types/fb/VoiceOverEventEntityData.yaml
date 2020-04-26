@@ -1,0 +1,60 @@
+name: VoiceOverEventEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new VoiceOverEventEntityData frostbite instance.
+  -
+    description: Creates a new VoiceOverEventEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to VoiceOverEventEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to VoiceOverEventEntityData.
+  -
+    description: Casts an instance of type GameObjectData to VoiceOverEventEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to VoiceOverEventEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to VoiceOverEventEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to VoiceOverEventEntityData.
+  -
+    description: Casts an instance of type DataContainer to VoiceOverEventEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VoiceOverEventEntityData.
+
+properties:
+  eventPlayer:
+    type: VoiceOverNamedValue
+    nullable: true
+  voEvent:
+    type: VoiceOverEvent
+    nullable: true
+  finishedDelay:
+    type: float
+  extraEventPlayer:
+    type: VoiceOverNamedValue
+    nullable: true
+  triggerDelay:
+    type: float
+  runOnce:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VoiceOverEventEntityData type.
+

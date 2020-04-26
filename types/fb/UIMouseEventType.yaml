@@ -1,0 +1,13 @@
+name: UIMouseEventType
+type: enum
+
+values:
+  UIMouseEventType_MouseMove:
+    value: 0
+  UIMouseEventType_MouseWheel:
+    value: 1
+  UIMouseEventType_ButtonDown:
+    value: 2
+  UIMouseEventType_ButtonUp:
+    value: 3
+

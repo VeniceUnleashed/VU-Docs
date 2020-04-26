@@ -1,0 +1,15 @@
+name: PackagingDetailLevel
+type: enum
+
+values:
+  PackagingDetailLevel_Low:
+    value: 0
+  PackagingDetailLevel_Medium:
+    value: 1
+  PackagingDetailLevel_High:
+    value: 2
+  PackagingDetailLevel_Base:
+    value: 3
+  PackagingDetailLevel_Count:
+    value: 4
+

@@ -1,0 +1,55 @@
+name: DivisibleLoopPlayerNodeData
+type: class
+inherits: AudioGraphNodeData
+
+constructors:
+  -
+    description: Creates a new DivisibleLoopPlayerNodeData frostbite instance.
+  -
+    description: Creates a new DivisibleLoopPlayerNodeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphNodeData to DivisibleLoopPlayerNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphNodeData
+        description: The instance to cast to DivisibleLoopPlayerNodeData.
+  -
+    description: Casts an instance of type DataContainer to DivisibleLoopPlayerNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to DivisibleLoopPlayerNodeData.
+
+properties:
+  start:
+    type: AudioGraphNodePort
+  stop:
+    type: AudioGraphNodePort
+  amplitude:
+    type: AudioGraphNodePort
+  freezeSegment:
+    type: AudioGraphNodePort
+  output:
+    type: AudioGraphNodePort
+  wave:
+    type: SoundWaveAsset
+    nullable: true
+  externalWave:
+    type: AudioGraphNodePort
+  plugins:
+    type: DivisibleLoopPlayerPlugins
+    array: true
+  crossFadeLength:
+    type: float
+  startAtRandomPosition:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the DivisibleLoopPlayerNodeData type.
+

@@ -1,0 +1,73 @@
+name: VoiceOverManuscriptAsset
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new VoiceOverManuscriptAsset frostbite instance.
+  -
+    description: Creates a new VoiceOverManuscriptAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to VoiceOverManuscriptAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to VoiceOverManuscriptAsset.
+  -
+    description: Casts an instance of type DataContainer to VoiceOverManuscriptAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VoiceOverManuscriptAsset.
+
+properties:
+  masterLanguage:
+    type: AudioLanguage
+    nullable: true
+  languages:
+    type: VoiceOverLanguageRoot
+    array: true
+  nameTranslation:
+    type: VoiceOverWaveNameTranslation
+  sheetName:
+    type: string
+  stringIdColumn:
+    type: string
+  fileNameColumn:
+    type: string
+  pathColumn:
+    type: string
+  waveAssetStatusColumn:
+    type: string
+  characterColumn:
+    type: string
+  voiceColumn:
+    type: string
+  stringIdPrefix:
+    type: string
+  languageColumns:
+    type: VoiceOverManuscriptLanguageColumns
+    array: true
+  firstContentRow:
+    type: int
+  outputPath:
+    type: string
+  streamPool:
+    type: StreamPoolAsset
+    nullable: true
+  keepPath:
+    type: bool
+  stringIdUpperCase:
+    type: bool
+  allowDelete:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VoiceOverManuscriptAsset type.
+

@@ -1,0 +1,9 @@
+name: RenderFillMode
+type: enum
+
+values:
+  RenderFillMode_Solid:
+    value: 0
+  RenderFillMode_Wireframe:
+    value: 1
+

@@ -1,0 +1,42 @@
+name: StatsCategoryPlayerRoleData
+type: class
+inherits: StatsCategoryBaseData
+
+constructors:
+  -
+    description: Creates a new StatsCategoryPlayerRoleData frostbite instance.
+  -
+    description: Creates a new StatsCategoryPlayerRoleData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type StatsCategoryBaseData to StatsCategoryPlayerRoleData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: StatsCategoryBaseData
+        description: The instance to cast to StatsCategoryPlayerRoleData.
+  -
+    description: Casts an instance of type TreeNodeBase to StatsCategoryPlayerRoleData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: TreeNodeBase
+        description: The instance to cast to StatsCategoryPlayerRoleData.
+  -
+    description: Casts an instance of type DataContainer to StatsCategoryPlayerRoleData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to StatsCategoryPlayerRoleData.
+
+properties:
+  roles:
+    type: PlayerRole
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the StatsCategoryPlayerRoleData type.
+

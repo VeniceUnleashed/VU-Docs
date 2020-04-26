@@ -1,0 +1,11 @@
+name: ModifierAxis
+type: enum
+
+values:
+  maLeft:
+    value: 0
+  maUp:
+    value: 1
+  maForward:
+    value: 2
+

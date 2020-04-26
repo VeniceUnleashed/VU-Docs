@@ -1,0 +1,11 @@
+name: ChangeGameSettingType
+type: enum
+
+values:
+  CGSNone:
+    value: 0
+  CGSInvertVerticalLookAxis:
+    value: 1
+  CGSCount:
+    value: 2
+

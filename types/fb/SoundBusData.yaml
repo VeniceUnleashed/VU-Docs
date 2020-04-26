@@ -1,0 +1,39 @@
+name: SoundBusData
+type: class
+inherits: AudioGraphNodeData
+
+constructors:
+  -
+    description: Creates a new SoundBusData frostbite instance.
+  -
+    description: Creates a new SoundBusData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphNodeData to SoundBusData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphNodeData
+        description: The instance to cast to SoundBusData.
+  -
+    description: Casts an instance of type DataContainer to SoundBusData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SoundBusData.
+
+properties:
+  busName:
+    type: string
+  submixPlugin:
+    type: SoundGraphPluginRef
+  channelCount:
+    type: int
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SoundBusData type.
+

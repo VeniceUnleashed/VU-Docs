@@ -1,0 +1,43 @@
+name: SoundTestParamTask
+type: class
+inherits: SoundTestTaskSpec
+
+constructors:
+  -
+    description: Creates a new SoundTestParamTask frostbite instance.
+  -
+    description: Creates a new SoundTestParamTask frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SoundTestTaskSpec to SoundTestParamTask. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SoundTestTaskSpec
+        description: The instance to cast to SoundTestParamTask.
+  -
+    description: Casts an instance of type DataContainer to SoundTestParamTask. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SoundTestParamTask.
+
+properties:
+  paramName:
+    type: string
+  behavior:
+    type: SoundTestParamBehavior
+  rangeMin:
+    type: float
+  rangeMax:
+    type: float
+  initialValue:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SoundTestParamTask type.
+

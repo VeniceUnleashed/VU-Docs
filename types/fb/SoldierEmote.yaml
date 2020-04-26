@@ -1,0 +1,35 @@
+name: SoldierEmote
+type: enum
+
+values:
+  SoldierEmote_Spot:
+    value: 0
+  SoldierEmote_Ok:
+    value: 1
+  SoldierEmote_NeedARide:
+    value: 2
+  SoldierEmote_GoGoGo:
+    value: 3
+  SoldierEmote_NeedBackup:
+    value: 4
+  SoldierEmote_Thanks:
+    value: 5
+  SoldierEmote_NeedMedic:
+    value: 6
+  SoldierEmote_FollowMe:
+    value: 7
+  SoldierEmote_NeedAmmo:
+    value: 8
+  SoldierEmote_Sorry:
+    value: 9
+  SoldierEmote_No:
+    value: 10
+  SoldierEmote_DefendCapturePoint:
+    value: 11
+  SoldierEmote_AttackCapturePoint:
+    value: 12
+  SoldierEmote_MoveToPosition:
+    value: 13
+  SoldierEmote_Count:
+    value: 14
+

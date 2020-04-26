@@ -1,0 +1,15 @@
+name: PersistentValueType
+type: enum
+
+values:
+  PersistentValueType_Set:
+    value: 0
+  PersistentValueType_High:
+    value: 1
+  PersistentValueType_Low:
+    value: 2
+  PersistentValueType_Increment:
+    value: 3
+  PersistentValueType_Decrement:
+    value: 4
+

@@ -1,0 +1,54 @@
+name: PackagingCellData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new PackagingCellData frostbite instance.
+  -
+    description: Creates a new PackagingCellData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to PackagingCellData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to PackagingCellData.
+  -
+    description: Casts an instance of type GameObjectData to PackagingCellData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to PackagingCellData.
+  -
+    description: Casts an instance of type GameDataContainer to PackagingCellData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to PackagingCellData.
+  -
+    description: Casts an instance of type DataContainer to PackagingCellData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PackagingCellData.
+
+properties:
+  rules:
+    type: PackagingRule
+    array: true
+  targets:
+    type: PackagingCellData
+    array: true
+  shape:
+    type: Vec2
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PackagingCellData type.
+

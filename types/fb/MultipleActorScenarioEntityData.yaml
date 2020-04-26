@@ -1,0 +1,133 @@
+name: MultipleActorScenarioEntityData
+type: class
+inherits: SpatialEntityData
+
+constructors:
+  -
+    description: Creates a new MultipleActorScenarioEntityData frostbite instance.
+  -
+    description: Creates a new MultipleActorScenarioEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SpatialEntityData to MultipleActorScenarioEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to MultipleActorScenarioEntityData.
+  -
+    description: Casts an instance of type EntityData to MultipleActorScenarioEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to MultipleActorScenarioEntityData.
+  -
+    description: Casts an instance of type GameObjectData to MultipleActorScenarioEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to MultipleActorScenarioEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to MultipleActorScenarioEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to MultipleActorScenarioEntityData.
+  -
+    description: Casts an instance of type DataContainer to MultipleActorScenarioEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MultipleActorScenarioEntityData.
+
+properties:
+  worldSpaceConnectTransform:
+    type: LinearTransform
+  actor5Part:
+    type: int
+  scenarioAntRef:
+    type: AntRef
+  levelChoice:
+    type: int
+  scenarioChoice:
+    type: int
+  realm:
+    type: Realm
+  actor6Part:
+    type: int
+  actor1:
+    type: int
+  actor1Part:
+    type: int
+  actor1SecondPart:
+    type: int
+  actor2:
+    type: int
+  actor2Part:
+    type: int
+  actor2SecondPart:
+    type: int
+  actor3:
+    type: int
+  actor3Part:
+    type: int
+  actor3SecondPart:
+    type: int
+  actor4:
+    type: int
+  actor4Part:
+    type: int
+  actor4SecondPart:
+    type: int
+  actor5:
+    type: int
+  actor5SecondPart:
+    type: int
+  actor6SecondPart:
+    type: int
+  actor6:
+    type: int
+  externalTime:
+    type: float
+  aligningEnabled:
+    type: bool
+  scenarioActive:
+    type: bool
+  actor1Prepared:
+    type: bool
+  actor2Prepared:
+    type: bool
+  actor3Prepared:
+    type: bool
+  actor4Prepared:
+    type: bool
+  actor5Prepared:
+    type: bool
+  actor6Prepared:
+    type: bool
+  checkActor1Finished:
+    type: bool
+  checkActor2Finished:
+    type: bool
+  checkActor3Finished:
+    type: bool
+  checkActor4Finished:
+    type: bool
+  checkActor5Finished:
+    type: bool
+  checkActor6Finished:
+    type: bool
+  useInputEventPlayerAsPlayer1:
+    type: bool
+  useExternalTime:
+    type: bool
+  worldSpace:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MultipleActorScenarioEntityData type.
+

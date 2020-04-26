@@ -1,0 +1,13 @@
+name: ModifierEuler
+type: enum
+
+values:
+  Roll:
+    value: 0
+  Pitch:
+    value: 1
+  Yaw:
+    value: 2
+  Trans:
+    value: 3
+

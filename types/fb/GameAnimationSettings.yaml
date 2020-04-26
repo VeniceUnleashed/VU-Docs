@@ -1,0 +1,70 @@
+name: GameAnimationSettings
+type: class
+inherits: SystemSettings
+
+constructors:
+  -
+    description: Creates a new GameAnimationSettings frostbite instance.
+  -
+    description: Creates a new GameAnimationSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SystemSettings to GameAnimationSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SystemSettings
+        description: The instance to cast to GameAnimationSettings.
+  -
+    description: Casts an instance of type DataContainer to GameAnimationSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to GameAnimationSettings.
+
+properties:
+  temporalLoddingFourthDeltaTime:
+    type: float
+  antOnClientOnlyGamemodes:
+    type: string
+    array: true
+  temporalLoddingFarDistance:
+    type: float
+  temporalLoddingSixthDeltaTime:
+    type: float
+  temporalLoddingFifthDeltaTime:
+    type: float
+  temporalLoddingFirstDeltaTime:
+    type: float
+  temporalLoddingSecondDeltaTime:
+    type: float
+  temporalLoddingThirdDeltaTime:
+    type: float
+  temporalLoddingSixthDistance:
+    type: float
+  temporalLoddingSecondDistance:
+    type: float
+  temporalLoddingFifthDistance:
+    type: float
+  temporalLoddingFirstDistance:
+    type: float
+  temporalLoddingThirdDistance:
+    type: float
+  temporalLoddingFourthDistance:
+    type: float
+  serverEnable:
+    type: bool
+  useRawGamepadInput:
+    type: bool
+  clientEnable:
+    type: bool
+  useAnimationDrivenCharacter:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the GameAnimationSettings type.
+

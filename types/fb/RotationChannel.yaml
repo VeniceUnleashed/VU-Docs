@@ -1,0 +1,11 @@
+name: RotationChannel
+type: enum
+
+values:
+  RotationChannel_Pitch:
+    value: 0
+  RotationChannel_Yaw:
+    value: 1
+  RotationChannel_Roll:
+    value: 2
+

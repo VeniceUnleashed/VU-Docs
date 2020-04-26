@@ -1,0 +1,51 @@
+name: SoundMasterPatchAsset
+type: class
+inherits: SoundGraphAsset
+
+constructors:
+  -
+    description: Creates a new SoundMasterPatchAsset frostbite instance.
+  -
+    description: Creates a new SoundMasterPatchAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SoundGraphAsset to SoundMasterPatchAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SoundGraphAsset
+        description: The instance to cast to SoundMasterPatchAsset.
+  -
+    description: Casts an instance of type SoundAsset to SoundMasterPatchAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SoundAsset
+        description: The instance to cast to SoundMasterPatchAsset.
+  -
+    description: Casts an instance of type Asset to SoundMasterPatchAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to SoundMasterPatchAsset.
+  -
+    description: Casts an instance of type DataContainer to SoundMasterPatchAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SoundMasterPatchAsset.
+
+properties:
+  busses:
+    type: SoundBusData
+    array: true
+  rwMovieBus:
+    type: SoundBusData
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SoundMasterPatchAsset type.
+

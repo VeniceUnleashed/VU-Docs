@@ -1,0 +1,42 @@
+name: Vec3PropertyTrackData
+type: class
+inherits: SimplePropertyTrackData
+
+constructors:
+  -
+    description: Creates a new Vec3PropertyTrackData frostbite instance.
+  -
+    description: Creates a new Vec3PropertyTrackData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SimplePropertyTrackData to Vec3PropertyTrackData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SimplePropertyTrackData
+        description: The instance to cast to Vec3PropertyTrackData.
+  -
+    description: Casts an instance of type PropertyTrackData to Vec3PropertyTrackData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: PropertyTrackData
+        description: The instance to cast to Vec3PropertyTrackData.
+  -
+    description: Casts an instance of type DataContainer to Vec3PropertyTrackData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to Vec3PropertyTrackData.
+
+properties:
+  values:
+    type: Vec3
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the Vec3PropertyTrackData type.
+

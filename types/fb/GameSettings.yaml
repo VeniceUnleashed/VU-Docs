@@ -1,0 +1,122 @@
+name: GameSettings
+type: class
+inherits: SystemSettings
+
+constructors:
+  -
+    description: Creates a new GameSettings frostbite instance.
+  -
+    description: Creates a new GameSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SystemSettings to GameSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SystemSettings
+        description: The instance to cast to GameSettings.
+  -
+    description: Casts an instance of type DataContainer to GameSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to GameSettings.
+
+properties:
+  maxPlayerCount:
+    type: int
+  maxSpectatorCount:
+    type: int
+  layerInclusionTable:
+    type: SubWorldInclusion
+    nullable: true
+  logFileCollisionMode:
+    type: LogFileCollisionMode
+  logFileRotationHistoryLength:
+    type: int
+  level:
+    type: string
+  defaultLayerInclusion:
+    type: string
+  inputConfiguration:
+    type: InputConfigurationAsset
+    array: true
+  defaultTeamId:
+    type: TeamId
+  levelWarmUpTime:
+    type: float
+  timeToWaitForQuitTaskCompletion:
+    type: float
+  platform:
+    type: GamePlatform
+  version:
+    type: VersionData
+    nullable: true
+  pS3ContentRatingAge:
+    type: int
+  difficultyIndex:
+    type: int
+  timeBeforeSpawnIsAllowed:
+    type: float
+  soldierWeaponSwitching:
+    type: SoldierWeaponSwitchingData
+    nullable: true
+  logHistory:
+    type: int
+  difficultySettings:
+    type: DifficultyDatas
+    nullable: true
+  metadataContainers:
+    type: BlueprintBundleMetadataContainer
+    array: true
+  currentSKU:
+    type: SKU
+  player:
+    type: PlayerData
+    nullable: true
+  logFileEnable:
+    type: bool
+  rotateLogs:
+    type: bool
+  enableLoadingProfile:
+    type: bool
+  adjustVehicleCenterOfMass:
+    type: bool
+  autoAimEnabled:
+    type: bool
+  hasUnlimitedAmmo:
+    type: bool
+  hasUnlimitedMags:
+    type: bool
+  resourceRefreshAlwaysAllowed:
+    type: bool
+  useSpeedBasedDetailedCollision:
+    type: bool
+  aimAssistEnabled:
+    type: bool
+  aimAssistUsePolynomials:
+    type: bool
+  forceFreeStreaming:
+    type: bool
+  forceDisableFreeStreaming:
+    type: bool
+  isGodMode:
+    type: bool
+  isJesusMode:
+    type: bool
+  isJesusModeAi:
+    type: bool
+  useSingleWeaponSelector:
+    type: bool
+  gameAdministrationEnabled:
+    type: bool
+  allowDestructionOutsideCombatArea:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the GameSettings type.
+

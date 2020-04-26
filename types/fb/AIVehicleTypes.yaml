@@ -1,0 +1,42 @@
+name: AIVehicleTypes
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new AIVehicleTypes frostbite instance.
+  -
+    description: Creates a new AIVehicleTypes frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to AIVehicleTypes. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to AIVehicleTypes.
+  -
+    description: Casts an instance of type DataContainer to AIVehicleTypes. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to AIVehicleTypes.
+
+properties:
+  vehicleTypes:
+    type: AIVehicleBehaviourData
+    array: true
+  goals:
+    type: BehaviourData
+    array: true
+  intents:
+    type: BehaviourData
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the AIVehicleTypes type.
+

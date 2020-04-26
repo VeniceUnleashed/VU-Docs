@@ -1,0 +1,49 @@
+name: CharacterPoseData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new CharacterPoseData frostbite instance.
+  -
+    description: Creates a new CharacterPoseData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to CharacterPoseData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to CharacterPoseData.
+
+properties:
+  eyePosition:
+    type: Vec3
+  collisionBoxMaxExpand:
+    type: Vec3
+  collisionBoxMinExpand:
+    type: Vec3
+  height:
+    type: float
+  stepHeight:
+    type: float
+  throttleModifierCurve:
+    type: Vec2
+    array: true
+  poseType:
+    type: CharacterPoseType
+  collisionType:
+    type: CharacterPoseCollisionType
+  lookConstraints:
+    type: LookConstraintsData
+  transitionTimes:
+    type: PoseTransitionTime
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the CharacterPoseData type.
+

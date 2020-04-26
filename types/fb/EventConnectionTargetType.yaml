@@ -1,0 +1,17 @@
+name: EventConnectionTargetType
+type: enum
+
+values:
+  EventConnectionTargetType_Invalid:
+    value: 0
+  EventConnectionTargetType_ClientAndServer:
+    value: 1
+  EventConnectionTargetType_Client:
+    value: 2
+  EventConnectionTargetType_Server:
+    value: 3
+  EventConnectionTargetType_NetworkedClient:
+    value: 4
+  EventConnectionTargetType_NetworkedClientAndServer:
+    value: 5
+

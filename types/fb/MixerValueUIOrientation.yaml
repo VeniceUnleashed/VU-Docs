@@ -1,0 +1,9 @@
+name: MixerValueUIOrientation
+type: enum
+
+values:
+  MixerValueUIOrientation_Horizontal:
+    value: 0
+  MixerValueUIOrientation_Vertical:
+    value: 1
+

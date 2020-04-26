@@ -1,0 +1,59 @@
+name: PlayerTypeProfile
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new PlayerTypeProfile frostbite instance.
+  -
+    description: Creates a new PlayerTypeProfile frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to PlayerTypeProfile. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to PlayerTypeProfile.
+  -
+    description: Casts an instance of type DataContainer to PlayerTypeProfile. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PlayerTypeProfile.
+
+properties:
+  values:
+    type: PersistenceData
+    nullable: true
+  awards:
+    type: AwardDataTree
+    nullable: true
+  rankParams:
+    type: RankParamsAsset
+    nullable: true
+  scoring:
+    type: ScoringData
+    nullable: true
+  dogTags:
+    type: DogTagsAsset
+    nullable: true
+  eloParams:
+    type: EloParameters
+  staticUnlocks:
+    type: StaticUnlockList
+    nullable: true
+  spamSettings:
+    type: StatSpamSettings
+    nullable: true
+  orderedUnlockNames:
+    type: string
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PlayerTypeProfile type.
+

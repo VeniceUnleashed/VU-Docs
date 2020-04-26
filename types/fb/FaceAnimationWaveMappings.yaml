@@ -1,0 +1,34 @@
+name: FaceAnimationWaveMappings
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new FaceAnimationWaveMappings frostbite instance.
+  -
+    description: Creates a new FaceAnimationWaveMappings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to FaceAnimationWaveMappings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to FaceAnimationWaveMappings.
+
+properties:
+  antAsset:
+    type: AntRef
+  onStartedTalking:
+    type: AntRef
+  mappings:
+    type: FaceAnimationWaveMapping
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the FaceAnimationWaveMappings type.
+

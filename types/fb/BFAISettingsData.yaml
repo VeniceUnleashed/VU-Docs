@@ -1,0 +1,54 @@
+name: BFAISettingsData
+type: class
+inherits: AISettingsData
+
+constructors:
+  -
+    description: Creates a new BFAISettingsData frostbite instance.
+  -
+    description: Creates a new BFAISettingsData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AISettingsData to BFAISettingsData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AISettingsData
+        description: The instance to cast to BFAISettingsData.
+  -
+    description: Casts an instance of type Asset to BFAISettingsData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to BFAISettingsData.
+  -
+    description: Casts an instance of type DataContainer to BFAISettingsData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to BFAISettingsData.
+
+properties:
+  movementConstants:
+    type: MovementConstantData
+    nullable: true
+  turretControlConstants:
+    type: TurretControlConstantData
+    nullable: true
+  searchAndDestroyConstants:
+    type: SearchAndDestroyConstantData
+    nullable: true
+  followConstants:
+    type: FollowConstantData
+    nullable: true
+  combatConstants:
+    type: CombatConstantData
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the BFAISettingsData type.
+

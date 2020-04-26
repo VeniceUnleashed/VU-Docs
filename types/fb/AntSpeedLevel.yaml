@@ -1,0 +1,35 @@
+name: AntSpeedLevel
+type: enum
+
+values:
+  AntSpeedLevel_Still:
+    value: 0
+  AntSpeedLevel_Walk:
+    value: 1
+  AntSpeedLevel_Jog_DEPRECATED_DO_NOT_USE:
+    value: 2
+  AntSpeedLevel_Sneak:
+    value: 3
+  AntSpeedLevel_Run:
+    value: 4
+  AntSpeedLevel_Sprint:
+    value: 5
+  AntSpeedLevel_Stairs_Walk_Up:
+    value: 6
+  AntSpeedLevel_Stairs_Walk_Down:
+    value: 7
+  AntSpeedLevel_Stairs_Run_Up:
+    value: 8
+  AntSpeedLevel_Stairs_Run_Down:
+    value: 9
+  AntSpeedLevel_Stairs_Sprint_Up:
+    value: 10
+  AntSpeedLevel_Stairs_Sprint_Down:
+    value: 11
+  AntSpeedLevel_AntEnumCount:
+    value: 12
+  AntSpeedLevel_NoChange:
+    value: 13
+  AntSpeedLevel_Count:
+    value: 14
+

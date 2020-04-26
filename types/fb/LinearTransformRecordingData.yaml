@@ -1,0 +1,36 @@
+name: LinearTransformRecordingData
+type: class
+inherits: PropertyRecordingData
+
+constructors:
+  -
+    description: Creates a new LinearTransformRecordingData frostbite instance.
+  -
+    description: Creates a new LinearTransformRecordingData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type PropertyRecordingData to LinearTransformRecordingData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: PropertyRecordingData
+        description: The instance to cast to LinearTransformRecordingData.
+  -
+    description: Casts an instance of type DataContainer to LinearTransformRecordingData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to LinearTransformRecordingData.
+
+properties:
+  values:
+    type: LinearTransform
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the LinearTransformRecordingData type.
+

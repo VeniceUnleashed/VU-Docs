@@ -1,0 +1,11 @@
+name: AnimatedAimingEnum
+type: enum
+
+values:
+  AnimatedAimingTwoHanded:
+    value: 0
+  AnimatedAimingRightHanded:
+    value: 1
+  AnimatedAimingDisabled:
+    value: 2
+

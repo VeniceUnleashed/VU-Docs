@@ -1,0 +1,73 @@
+name: RoadData
+type: class
+inherits: RibbonData
+
+constructors:
+  -
+    description: Creates a new RoadData frostbite instance.
+  -
+    description: Creates a new RoadData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type RibbonData to RoadData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: RibbonData
+        description: The instance to cast to RoadData.
+  -
+    description: Casts an instance of type VisualVectorShapeData to RoadData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: VisualVectorShapeData
+        description: The instance to cast to RoadData.
+  -
+    description: Casts an instance of type VectorShapeData to RoadData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: VectorShapeData
+        description: The instance to cast to RoadData.
+  -
+    description: Casts an instance of type BaseShapeData to RoadData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: BaseShapeData
+        description: The instance to cast to RoadData.
+  -
+    description: Casts an instance of type GameObjectData to RoadData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to RoadData.
+  -
+    description: Casts an instance of type GameDataContainer to RoadData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to RoadData.
+  -
+    description: Casts an instance of type DataContainer to RoadData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to RoadData.
+
+properties:
+  shader2d:
+    type: SurfaceShaderBaseAsset
+    nullable: true
+  shader3dZOnly:
+    type: SurfaceShaderBaseAsset
+    nullable: true
+  uvTileFactor:
+    type: float
+  stickToTerrain:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the RoadData type.
+

@@ -1,0 +1,23 @@
+name: ServerUnlockListEventType
+type: enum
+
+values:
+  ServerUnlockListEventType_Add:
+    value: 0
+  ServerUnlockListEventType_Remove:
+    value: 1
+  ServerUnlockListEventType_Clear:
+    value: 2
+  ServerUnlockListEventType_List:
+    value: 3
+  ServerUnlockListEventType_Load:
+    value: 4
+  ServerUnlockListEventType_Save:
+    value: 5
+  ServerUnlockListEventType_GetMode:
+    value: 6
+  ServerUnlockListEventType_SetMode:
+    value: 7
+  ServerUnlockListEventType_SetFromBitmap:
+    value: 8
+

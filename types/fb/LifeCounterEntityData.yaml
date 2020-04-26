@@ -1,0 +1,93 @@
+name: LifeCounterEntityData
+type: class
+inherits: GameEntityData
+
+constructors:
+  -
+    description: Creates a new LifeCounterEntityData frostbite instance.
+  -
+    description: Creates a new LifeCounterEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameEntityData to LifeCounterEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to LifeCounterEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to LifeCounterEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to LifeCounterEntityData.
+  -
+    description: Casts an instance of type EntityData to LifeCounterEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to LifeCounterEntityData.
+  -
+    description: Casts an instance of type GameObjectData to LifeCounterEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to LifeCounterEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to LifeCounterEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to LifeCounterEntityData.
+  -
+    description: Casts an instance of type DataContainer to LifeCounterEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to LifeCounterEntityData.
+
+properties:
+  startingLifeCount:
+    type: int
+  displayTime:
+    type: float
+  teamId:
+    type: TeamId
+  lifeTresholdValues:
+    type: int
+    array: true
+  uiShowCountLowerThreshold:
+    type: int
+  uiShowCountUpperThreshold:
+    type: int
+  baseCount:
+    type: int
+  reinforceTable:
+    type: float
+    array: true
+  reinforceThreshold:
+    type: int
+  reinforceMessageSid:
+    type: string
+  fightHarderTreshold:
+    type: float
+  defensiveKillRadius:
+    type: float
+  fallbackTime:
+    type: float
+  fightHarderMessageSid:
+    type: string
+  attacker:
+    type: bool
+  setBestSquadSpawner:
+    type: bool
+  simpleReinforce:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the LifeCounterEntityData type.
+

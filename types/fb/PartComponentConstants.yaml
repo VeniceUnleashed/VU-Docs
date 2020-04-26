@@ -1,0 +1,7 @@
+name: PartComponentConstants
+type: enum
+
+values:
+  MaxHealthStateCount:
+    value: 256
+

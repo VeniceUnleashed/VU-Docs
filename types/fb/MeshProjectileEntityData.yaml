@@ -1,0 +1,83 @@
+name: MeshProjectileEntityData
+type: class
+inherits: ProjectileEntityData
+
+constructors:
+  -
+    description: Creates a new MeshProjectileEntityData frostbite instance.
+  -
+    description: Creates a new MeshProjectileEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ProjectileEntityData to MeshProjectileEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ProjectileEntityData
+        description: The instance to cast to MeshProjectileEntityData.
+  -
+    description: Casts an instance of type GamePhysicsEntityData to MeshProjectileEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GamePhysicsEntityData
+        description: The instance to cast to MeshProjectileEntityData.
+  -
+    description: Casts an instance of type GameEntityData to MeshProjectileEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to MeshProjectileEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to MeshProjectileEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to MeshProjectileEntityData.
+  -
+    description: Casts an instance of type EntityData to MeshProjectileEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to MeshProjectileEntityData.
+  -
+    description: Casts an instance of type GameObjectData to MeshProjectileEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to MeshProjectileEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to MeshProjectileEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to MeshProjectileEntityData.
+  -
+    description: Casts an instance of type DataContainer to MeshProjectileEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MeshProjectileEntityData.
+
+properties:
+  initialAngularVelocity:
+    type: Vec3
+  trailEffect:
+    type: EffectBlueprint
+    nullable: true
+  mesh:
+    type: MeshAsset
+    nullable: true
+  maxAttachableInclination:
+    type: float
+  extraDamping:
+    type: bool
+  isAttachable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MeshProjectileEntityData type.
+

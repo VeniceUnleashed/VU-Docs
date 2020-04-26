@@ -1,0 +1,59 @@
+name: VehicleParachuteData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new VehicleParachuteData frostbite instance.
+  -
+    description: Creates a new VehicleParachuteData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to VehicleParachuteData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VehicleParachuteData.
+
+properties:
+  terminalVelocity:
+    type: float
+  freefallGravityMultiplier:
+    type: float
+  dragCoefficient:
+    type: float
+  maxRollVelocity:
+    type: float
+  maxPitchVelocity:
+    type: float
+  maxYawVelocity:
+    type: float
+  deployTime:
+    type: float
+  undeployGroundHeight:
+    type: float
+  angularDescentDamping:
+    type: float
+  angularDeployDamping:
+    type: float
+  deployPhysicsStart:
+    type: float
+  deployInitialDragStart:
+    type: float
+  initialDragStartVelocityScale:
+    type: float
+  initialDragAngularVelocityPitch:
+    type: float
+  initialDragRandomAngularVelocityRollMax:
+    type: float
+  rampLength:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VehicleParachuteData type.
+

@@ -1,0 +1,17 @@
+name: MathOp
+type: enum
+
+values:
+  MathOp_Add:
+    value: 0
+  MathOp_Subtract:
+    value: 1
+  MathOp_Multiply:
+    value: 2
+  MathOp_Divide:
+    value: 3
+  MathOp_Min:
+    value: 4
+  MathOp_Max:
+    value: 5
+

@@ -1,0 +1,7 @@
+name: UI3dIconQuery
+type: enum
+
+values:
+  UI3dIconQuery_Active3dIconsData:
+    value: 0
+

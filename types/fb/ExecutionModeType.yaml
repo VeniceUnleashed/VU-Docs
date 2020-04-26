@@ -1,0 +1,11 @@
+name: ExecutionModeType
+type: enum
+
+values:
+  ExecutionMode_Play:
+    value: 0
+  ExecutionMode_GameView:
+    value: 1
+  ExecutionMode_PlayFromHere:
+    value: 2
+

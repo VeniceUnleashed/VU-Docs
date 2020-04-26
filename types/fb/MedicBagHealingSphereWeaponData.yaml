@@ -1,0 +1,45 @@
+name: MedicBagHealingSphereWeaponData
+type: class
+inherits: WeaponData
+
+constructors:
+  -
+    description: Creates a new MedicBagHealingSphereWeaponData frostbite instance.
+  -
+    description: Creates a new MedicBagHealingSphereWeaponData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type WeaponData to MedicBagHealingSphereWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: WeaponData
+        description: The instance to cast to MedicBagHealingSphereWeaponData.
+  -
+    description: Casts an instance of type ToolData to MedicBagHealingSphereWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ToolData
+        description: The instance to cast to MedicBagHealingSphereWeaponData.
+  -
+    description: Casts an instance of type DataContainer to MedicBagHealingSphereWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MedicBagHealingSphereWeaponData.
+
+properties:
+  healer:
+    type: HealingSphereData
+  healthPointsRefillSpeed:
+    type: float
+  healthPointsPerBag:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MedicBagHealingSphereWeaponData type.
+

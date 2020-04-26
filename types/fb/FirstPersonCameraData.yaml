@@ -1,0 +1,81 @@
+name: FirstPersonCameraData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new FirstPersonCameraData frostbite instance.
+  -
+    description: Creates a new FirstPersonCameraData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to FirstPersonCameraData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to FirstPersonCameraData.
+
+properties:
+  offset:
+    type: Vec3
+  weaponBaseOffset:
+    type: Vec3
+  weaponLagRotationOffset:
+    type: Vec3
+  rotation:
+    type: Vec3
+  weaponSpringEffect:
+    type: WeaponLagSpringEffectData
+    nullable: true
+  cameraSpringEffect:
+    type: WeaponLagSpringEffectData
+    nullable: true
+  moveStrafeModifier:
+    type: float
+  moveForwardModifier:
+    type: float
+  rotateYawModifier:
+    type: float
+  rotatePitchModifier:
+    type: float
+  rotateRollModifier:
+    type: float
+  zoomMoveStrafeModifier:
+    type: float
+  zoomMoveForwardModifier:
+    type: float
+  zoomRotateYawModifier:
+    type: float
+  zoomRotatePitchModifier:
+    type: float
+  zoomRotateRollModifier:
+    type: float
+  releaseModifier:
+    type: float
+  releaseModifierPitch:
+    type: float
+  releaseModifierYaw:
+    type: float
+  releaseModifierRoll:
+    type: float
+  offsetReleaseModifier:
+    type: float
+  zoomReleaseModifierPitch:
+    type: float
+  zoomReleaseModifierYaw:
+    type: float
+  zoomReleaseModifierRoll:
+    type: float
+  zoomOffsetReleaseModifier:
+    type: float
+  rotationAdditionToOffset:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the FirstPersonCameraData type.
+

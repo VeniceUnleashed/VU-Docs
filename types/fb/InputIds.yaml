@@ -1,0 +1,13 @@
+name: InputIds
+type: enum
+
+values:
+  NoInputId:
+    value: 0
+  SpectatorInputId:
+    value: 1
+  FreeCameraInputId:
+    value: 2
+  EntryInputId:
+    value: 3
+

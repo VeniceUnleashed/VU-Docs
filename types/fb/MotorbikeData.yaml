@@ -1,0 +1,105 @@
+name: MotorbikeData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new MotorbikeData frostbite instance.
+  -
+    description: Creates a new MotorbikeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to MotorbikeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MotorbikeData.
+
+properties:
+  wheelieForceBodyOffset:
+    type: Vec3
+  wheelieForce:
+    type: Vec3
+  dampBigJumpImpactCounterForce:
+    type: Vec3
+  proximityExtScale:
+    type: Vec3
+  jumpForwardLeanMinAngle:
+    type: float
+  jumpForwardLeanMomentum:
+    type: float
+  kickstandRoll:
+    type: float
+  kickstandLinearDamping:
+    type: float
+  leanForceMaxVel:
+    type: float
+  counterLeanForce:
+    type: float
+  standStillRoll:
+    type: float
+  dampBigJumpImpactVelocity:
+    type: float
+  yawBrakeDampingLerpStartScale:
+    type: float
+  yawBrakeDampingLerpEndScale:
+    type: float
+  stoppieActivationVelocity:
+    type: float
+  stoppieStartVelocity:
+    type: float
+  leanForce:
+    type: float
+  stoppieMomentum:
+    type: float
+  shortOffgroundGravityMultiplier:
+    type: float
+  maxLeaningRoll:
+    type: float
+  stoppieStopVelocity:
+    type: float
+  proximityHeightTranslation:
+    type: float
+  wheelieMaxNoDownForceContactTime:
+    type: float
+  wheelieMaxNoContactTime:
+    type: float
+  wheelieSteeringFactor:
+    type: float
+  wheelieInertia:
+    type: float
+  wheelieStartVelocity:
+    type: float
+  wheelieMaxVelocityUndamped:
+    type: float
+  wheelieMaxVelocityDampRange:
+    type: float
+  wheelieOutAngularMomentum:
+    type: float
+  wheelieSpringDamping:
+    type: float
+  wheelieAngularDamping:
+    type: float
+  wheelieAngularDampingSpeed:
+    type: float
+  shortOffgroundPeriod:
+    type: float
+  wheelieMaxAngle:
+    type: float
+  wheelieAngularStartMomentum:
+    type: float
+  wheelieMaxVelocity:
+    type: float
+  wheelieVelocityForceScale:
+    type: float
+  dampBigJumpImpact:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MotorbikeData type.
+

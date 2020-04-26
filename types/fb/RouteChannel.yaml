@@ -1,0 +1,131 @@
+name: RouteChannel
+type: enum
+
+values:
+  RouteChannel_0:
+    value: 0
+  RouteChannel_1:
+    value: 1
+  RouteChannel_2:
+    value: 2
+  RouteChannel_3:
+    value: 3
+  RouteChannel_4:
+    value: 4
+  RouteChannel_5:
+    value: 5
+  RouteChannel_6:
+    value: 6
+  RouteChannel_7:
+    value: 7
+  RouteChannel_8:
+    value: 8
+  RouteChannel_9:
+    value: 9
+  RouteChannel_10:
+    value: 10
+  RouteChannel_11:
+    value: 11
+  RouteChannel_12:
+    value: 12
+  RouteChannel_13:
+    value: 13
+  RouteChannel_14:
+    value: 14
+  RouteChannel_15:
+    value: 15
+  RouteChannel_16:
+    value: 16
+  RouteChannel_17:
+    value: 17
+  RouteChannel_18:
+    value: 18
+  RouteChannel_19:
+    value: 19
+  RouteChannel_21:
+    value: 20
+  RouteChannel_22:
+    value: 21
+  RouteChannel_23:
+    value: 22
+  RouteChannel_24:
+    value: 23
+  RouteChannel_25:
+    value: 24
+  RouteChannel_26:
+    value: 25
+  RouteChannel_27:
+    value: 26
+  RouteChannel_28:
+    value: 27
+  RouteChannel_29:
+    value: 28
+  RouteChannel_30:
+    value: 29
+  RouteChannel_31:
+    value: 30
+  RouteChannel_32:
+    value: 31
+  RouteChannel_33:
+    value: 32
+  RouteChannel_34:
+    value: 33
+  RouteChannel_35:
+    value: 34
+  RouteChannel_36:
+    value: 35
+  RouteChannel_37:
+    value: 36
+  RouteChannel_38:
+    value: 37
+  RouteChannel_39:
+    value: 38
+  RouteChannel_40:
+    value: 39
+  RouteChannel_41:
+    value: 40
+  RouteChannel_42:
+    value: 41
+  RouteChannel_43:
+    value: 42
+  RouteChannel_44:
+    value: 43
+  RouteChannel_45:
+    value: 44
+  RouteChannel_46:
+    value: 45
+  RouteChannel_47:
+    value: 46
+  RouteChannel_48:
+    value: 47
+  RouteChannel_49:
+    value: 48
+  RouteChannel_50:
+    value: 49
+  RouteChannel_51:
+    value: 50
+  RouteChannel_52:
+    value: 51
+  RouteChannel_53:
+    value: 52
+  RouteChannel_54:
+    value: 53
+  RouteChannel_55:
+    value: 54
+  RouteChannel_56:
+    value: 55
+  RouteChannel_57:
+    value: 56
+  RouteChannel_58:
+    value: 57
+  RouteChannel_59:
+    value: 58
+  RouteChannel_60:
+    value: 59
+  RouteChannel_61:
+    value: 60
+  RouteChannel_62:
+    value: 61
+  RouteChannel_63:
+    value: 62
+

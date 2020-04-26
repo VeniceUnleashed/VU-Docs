@@ -1,0 +1,47 @@
+name: StatsCategoryVehicleData
+type: class
+inherits: StatsCategoryGuidData
+
+constructors:
+  -
+    description: Creates a new StatsCategoryVehicleData frostbite instance.
+  -
+    description: Creates a new StatsCategoryVehicleData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type StatsCategoryGuidData to StatsCategoryVehicleData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: StatsCategoryGuidData
+        description: The instance to cast to StatsCategoryVehicleData.
+  -
+    description: Casts an instance of type StatsCategoryBaseData to StatsCategoryVehicleData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: StatsCategoryBaseData
+        description: The instance to cast to StatsCategoryVehicleData.
+  -
+    description: Casts an instance of type TreeNodeBase to StatsCategoryVehicleData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: TreeNodeBase
+        description: The instance to cast to StatsCategoryVehicleData.
+  -
+    description: Casts an instance of type DataContainer to StatsCategoryVehicleData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to StatsCategoryVehicleData.
+
+properties:
+  firstVehicleId:
+    type: int
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the StatsCategoryVehicleData type.
+

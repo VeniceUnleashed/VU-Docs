@@ -1,0 +1,13 @@
+name: CoverType
+type: enum
+
+values:
+  CoverType_Stand:
+    value: 0
+  CoverType_Medium:
+    value: 1
+  CoverType_Crouch:
+    value: 2
+  CoverType_Prone:
+    value: 3
+

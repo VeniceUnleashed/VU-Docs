@@ -1,0 +1,39 @@
+name: DataBusData
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new DataBusData frostbite instance.
+  -
+    description: Creates a new DataBusData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to DataBusData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to DataBusData.
+  -
+    description: Casts an instance of type DataContainer to DataBusData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to DataBusData.
+
+properties:
+  propertyConnections:
+    type: PropertyConnection
+    array: true
+  linkConnections:
+    type: LinkConnection
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the DataBusData type.
+

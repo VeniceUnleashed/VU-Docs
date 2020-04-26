@@ -1,0 +1,13 @@
+name: InterpolationType
+type: enum
+
+values:
+  InterpolationType_None:
+    value: 0
+  InterpolationType_Linear:
+    value: 1
+  InterpolationType_CatmullRom:
+    value: 2
+  InterpolationType_Curves:
+    value: 3
+

@@ -1,0 +1,21 @@
+name: ShaderRenderPath
+type: enum
+
+values:
+  ShaderRenderPath_Dx10:
+    value: 0
+  ShaderRenderPath_Dx10Plus:
+    value: 1
+  ShaderRenderPath_Dx10_1:
+    value: 2
+  ShaderRenderPath_Dx11:
+    value: 3
+  ShaderRenderPath_Xenon:
+    value: 4
+  ShaderRenderPath_Ps3:
+    value: 5
+  ShaderRenderPath_Gl:
+    value: 6
+  ShaderRenderPathCount:
+    value: 7
+

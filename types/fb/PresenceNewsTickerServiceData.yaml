@@ -1,0 +1,37 @@
+name: PresenceNewsTickerServiceData
+type: class
+inherits: PresenceServiceData
+
+constructors:
+  -
+    description: Creates a new PresenceNewsTickerServiceData frostbite instance.
+  -
+    description: Creates a new PresenceNewsTickerServiceData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type PresenceServiceData to PresenceNewsTickerServiceData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: PresenceServiceData
+        description: The instance to cast to PresenceNewsTickerServiceData.
+  -
+    description: Casts an instance of type Asset to PresenceNewsTickerServiceData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to PresenceNewsTickerServiceData.
+  -
+    description: Casts an instance of type DataContainer to PresenceNewsTickerServiceData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PresenceNewsTickerServiceData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PresenceNewsTickerServiceData type.
+

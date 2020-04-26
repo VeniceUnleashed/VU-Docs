@@ -1,0 +1,32 @@
+name: UrgencySetData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new UrgencySetData frostbite instance.
+  -
+    description: Creates a new UrgencySetData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to UrgencySetData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UrgencySetData.
+
+properties:
+  name:
+    type: string
+  urgencyModifiers:
+    type: UrgencyModifierData
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UrgencySetData type.
+

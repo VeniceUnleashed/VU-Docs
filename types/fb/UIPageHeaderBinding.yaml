@@ -1,0 +1,48 @@
+name: UIPageHeaderBinding
+type: class
+inherits: UIDataBinding
+
+constructors:
+  -
+    description: Creates a new UIPageHeaderBinding frostbite instance.
+  -
+    description: Creates a new UIPageHeaderBinding frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UIDataBinding to UIPageHeaderBinding. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIDataBinding
+        description: The instance to cast to UIPageHeaderBinding.
+  -
+    description: Casts an instance of type DataContainer to UIPageHeaderBinding. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UIPageHeaderBinding.
+
+properties:
+  header:
+    type: UIDataSourceInfo
+  subHeader:
+    type: UIDataSourceInfo
+  icon:
+    type: UIDataSourceInfo
+  staticHeader:
+    type: string
+  staticSubHeader:
+    type: string
+  staticIcon:
+    type: string
+  levelSpecificHeaders:
+    type: UILevelSpecificPageHeader
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UIPageHeaderBinding type.
+

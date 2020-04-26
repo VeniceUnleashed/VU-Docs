@@ -1,0 +1,45 @@
+name: UIButtonDataBinding
+type: class
+inherits: UIDataBinding
+
+constructors:
+  -
+    description: Creates a new UIButtonDataBinding frostbite instance.
+  -
+    description: Creates a new UIButtonDataBinding frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UIDataBinding to UIButtonDataBinding. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIDataBinding
+        description: The instance to cast to UIButtonDataBinding.
+  -
+    description: Casts an instance of type DataContainer to UIButtonDataBinding. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UIButtonDataBinding.
+
+properties:
+  buttonsDatasource:
+    type: UIDataSourceInfo
+  defaultButtonSet:
+    type: UIButtonSet
+  visibility:
+    type: UIDataSourceInfo
+  invertVisible:
+    type: bool
+  visible:
+    type: bool
+  inputOnRelease:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UIButtonDataBinding type.
+

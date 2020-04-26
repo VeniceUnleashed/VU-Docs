@@ -1,0 +1,83 @@
+name: InputConfigurationAsset
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new InputConfigurationAsset frostbite instance.
+  -
+    description: Creates a new InputConfigurationAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to InputConfigurationAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to InputConfigurationAsset.
+  -
+    description: Casts an instance of type DataContainer to InputConfigurationAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to InputConfigurationAsset.
+
+properties:
+  defaultInputConceptDefinition:
+    type: EntryInputActionMapsData
+    nullable: true
+  defaultExclusiveInputConcepts:
+    type: InputConceptIdentifiers
+    array: true
+  userConfigurableActionMaps:
+    type: EditableActionMap
+    array: true
+  togglePoseAction:
+    type: EntryInputActionEnum
+  crouchAction:
+    type: EntryInputActionEnum
+  crouchAndHoldAction:
+    type: EntryInputActionEnum
+  pickupInteractionAction:
+    type: EntryInputActionEnum
+  firingDisablingTransitions:
+    type: PoseTransition
+    array: true
+  sprintReleaseTime:
+    type: float
+  throttleInputRequiredForSprint:
+    type: float
+  standAutomaticallyIfSprinting:
+    type: bool
+  proneToStandOnJump:
+    type: bool
+  disableCrawlingWhileReloading:
+    type: bool
+  disableFiringWhileDeployingBipod:
+    type: bool
+  disableFiringWhileJumping:
+    type: bool
+  disableSprintingWhileReloading:
+    type: bool
+  enableSprintToCrouchTransition:
+    type: bool
+  stopSprintingWhenReleasingThrottle:
+    type: bool
+  stopSprintingWhenReleasingSprint:
+    type: bool
+  waitForSprintReleaseBeforeSprintAgain:
+    type: bool
+  vehicleBoostIsToggle:
+    type: bool
+  inputCurvesEnabled:
+    type: bool
+  disableCrawlingWhileFiring:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the InputConfigurationAsset type.
+

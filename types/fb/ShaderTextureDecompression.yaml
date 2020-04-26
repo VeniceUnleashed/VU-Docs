@@ -1,0 +1,19 @@
+name: ShaderTextureDecompression
+type: enum
+
+values:
+  ShaderTextureDecompression_None:
+    value: 0
+  ShaderTextureDecompression_NormalAG:
+    value: 1
+  ShaderTextureDecompression_NormalRG:
+    value: 2
+  ShaderTextureDecompression_NormalRGA:
+    value: 3
+  ShaderTextureDecompression_RGBE:
+    value: 4
+  ShaderTextureDecompression_SrgbToLinear:
+    value: 5
+  ShaderTextureDecompression_NormalRGorAG:
+    value: 6
+

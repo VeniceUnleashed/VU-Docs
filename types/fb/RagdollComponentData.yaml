@@ -1,0 +1,60 @@
+name: RagdollComponentData
+type: class
+inherits: ComponentData
+
+constructors:
+  -
+    description: Creates a new RagdollComponentData frostbite instance.
+  -
+    description: Creates a new RagdollComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ComponentData to RagdollComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to RagdollComponentData.
+  -
+    description: Casts an instance of type GameObjectData to RagdollComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to RagdollComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to RagdollComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to RagdollComponentData.
+  -
+    description: Casts an instance of type DataContainer to RagdollComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to RagdollComponentData.
+
+properties:
+  skeletonAsset:
+    type: SkeletonAsset
+    nullable: true
+  ragdollAsset:
+    type: RagdollAsset
+    nullable: true
+  skeletonCollisionData:
+    type: SkeletonCollisionData
+    nullable: true
+  binding:
+    type: RagdollBinding
+  leftLegBoneName:
+    type: string
+  rightLegBoneName:
+    type: string
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the RagdollComponentData type.
+

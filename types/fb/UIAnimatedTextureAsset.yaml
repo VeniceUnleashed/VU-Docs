@@ -1,0 +1,41 @@
+name: UIAnimatedTextureAsset
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new UIAnimatedTextureAsset frostbite instance.
+  -
+    description: Creates a new UIAnimatedTextureAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to UIAnimatedTextureAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to UIAnimatedTextureAsset.
+  -
+    description: Casts an instance of type DataContainer to UIAnimatedTextureAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UIAnimatedTextureAsset.
+
+properties:
+  frameRate:
+    type: float
+  textureAtlas:
+    type: TextureAsset
+    nullable: true
+  textureInfos:
+    type: UITextureAtlasInfo
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UIAnimatedTextureAsset type.
+

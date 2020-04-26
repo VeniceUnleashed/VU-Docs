@@ -1,0 +1,13 @@
+name: PhysicsWorldType
+type: enum
+
+values:
+  PhysicsWorldType_Client:
+    value: 0
+  PhysicsWorldType_ClientEffect:
+    value: 1
+  PhysicsWorldType_Server:
+    value: 2
+  PhysicsWorldType_Unknown:
+    value: 100
+

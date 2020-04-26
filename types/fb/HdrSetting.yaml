@@ -1,0 +1,55 @@
+name: HdrSetting
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new HdrSetting frostbite instance.
+  -
+    description: Creates a new HdrSetting frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to HdrSetting. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to HdrSetting.
+
+properties:
+  windowMinTop:
+    type: float
+  windowMinBottom:
+    type: float
+  windowTopMinReleaseTime:
+    type: float
+  windowTopMaxReleaseTime:
+    type: float
+  windowTopAttackTime:
+    type: float
+  windowBottomReleaseTime:
+    type: float
+  windowTopReleaseTimeCurve:
+    type: AudioCurve
+  dischargeFactor:
+    type: float
+  maxAllowedEnergy:
+    type: float
+  windowBottomAttackTime:
+    type: float
+  windowSize:
+    type: float
+  compressFactor:
+    type: float
+  headroom:
+    type: float
+  allowedOvershoot:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the HdrSetting type.
+

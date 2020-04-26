@@ -1,0 +1,45 @@
+name: SequenceGeneratorNodeData
+type: class
+inherits: AudioGraphNodeData
+
+constructors:
+  -
+    description: Creates a new SequenceGeneratorNodeData frostbite instance.
+  -
+    description: Creates a new SequenceGeneratorNodeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphNodeData to SequenceGeneratorNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphNodeData
+        description: The instance to cast to SequenceGeneratorNodeData.
+  -
+    description: Casts an instance of type DataContainer to SequenceGeneratorNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SequenceGeneratorNodeData.
+
+properties:
+  trigger:
+    type: AudioGraphNodePort
+  reset:
+    type: AudioGraphNodePort
+  min:
+    type: AudioGraphNodePort
+  max:
+    type: AudioGraphNodePort
+  step:
+    type: AudioGraphNodePort
+  value:
+    type: AudioGraphNodePort
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SequenceGeneratorNodeData type.
+

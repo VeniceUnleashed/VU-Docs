@@ -1,0 +1,15 @@
+name: WeaponOverrideValueType
+type: enum
+
+values:
+  OverrideValue_BulletEntity_DistributeDamageOverTime:
+    value: 0
+  OverrideValue_BulletEntity_StartDamage:
+    value: 1
+  OverrideValue_BulletEntity_EndDamage:
+    value: 2
+  OverrideValue_BulletEntity_DamageFalloffStartDistance:
+    value: 3
+  OverrideValue_BulletEntity_DamageFalloffEndDistance:
+    value: 4
+

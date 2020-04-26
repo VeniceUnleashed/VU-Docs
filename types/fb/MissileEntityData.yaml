@@ -1,0 +1,127 @@
+name: MissileEntityData
+type: class
+inherits: MeshProjectileEntityData
+
+constructors:
+  -
+    description: Creates a new MissileEntityData frostbite instance.
+  -
+    description: Creates a new MissileEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type MeshProjectileEntityData to MissileEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MeshProjectileEntityData
+        description: The instance to cast to MissileEntityData.
+  -
+    description: Casts an instance of type ProjectileEntityData to MissileEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ProjectileEntityData
+        description: The instance to cast to MissileEntityData.
+  -
+    description: Casts an instance of type GamePhysicsEntityData to MissileEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GamePhysicsEntityData
+        description: The instance to cast to MissileEntityData.
+  -
+    description: Casts an instance of type GameEntityData to MissileEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to MissileEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to MissileEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to MissileEntityData.
+  -
+    description: Casts an instance of type EntityData to MissileEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to MissileEntityData.
+  -
+    description: Casts an instance of type GameObjectData to MissileEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to MissileEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to MissileEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to MissileEntityData.
+  -
+    description: Casts an instance of type DataContainer to MissileEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MissileEntityData.
+
+properties:
+  gravity:
+    type: float
+  engineEffect:
+    type: EffectBlueprint
+    nullable: true
+  dudExplosion:
+    type: ExplosionEntityData
+    nullable: true
+  flyBySound:
+    type: SoundAsset
+    nullable: true
+  engineStrength:
+    type: float
+  maxSpeed:
+    type: float
+  engineTimeToIgnition:
+    type: float
+  engineTimeToLive:
+    type: float
+  timeToActivateGuidingSystem:
+    type: float
+  timeToArm:
+    type: float
+  maxTurnAngle:
+    type: float
+  drag:
+    type: float
+  nearTargetDetonation:
+    type: NearTargetDetonationData
+  defaultTeam:
+    type: TeamId
+  flyBySoundRadius:
+    type: float
+  flyBySoundSpeed:
+    type: float
+  impactImpulse:
+    type: float
+  damage:
+    type: float
+  unguidedData:
+    type: MissileUnguidedData
+  warnTarget:
+    type: WarnTarget
+  lockableInfo:
+    type: MissileLockableInfoData
+  lockingController:
+    type: LockingControllerData
+    nullable: true
+  warnOnPointingMissile:
+    type: bool
+  applyGravityWhenGuided:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MissileEntityData type.
+

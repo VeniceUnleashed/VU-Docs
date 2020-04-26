@@ -1,0 +1,9 @@
+name: AngleUnit
+type: enum
+
+values:
+  AngleUnit_Radians:
+    value: 0
+  AngleUnit_Degrees:
+    value: 1
+

@@ -1,0 +1,25 @@
+name: BlendShaderMode
+type: enum
+
+values:
+  BsmLerp:
+    value: 0
+  BsmAdd:
+    value: 1
+  BsmSubtract:
+    value: 2
+  BsmMultiply:
+    value: 3
+  BsmMultiply2x:
+    value: 4
+  BsmScreen:
+    value: 5
+  BsmDifference:
+    value: 6
+  BsmLighten:
+    value: 7
+  BsmDarken:
+    value: 8
+  BsmOverlay:
+    value: 9
+

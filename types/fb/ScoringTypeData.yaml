@@ -1,0 +1,49 @@
+name: ScoringTypeData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new ScoringTypeData frostbite instance.
+  -
+    description: Creates a new ScoringTypeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to ScoringTypeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ScoringTypeData.
+
+properties:
+  measuring:
+    type: StatEvent
+  paramX:
+    type: StatsCategoryBaseData
+    nullable: true
+  paramY:
+    type: StatsCategoryBaseData
+    nullable: true
+  limit:
+    type: float
+  descriptionSid:
+    type: string
+  visibilityType:
+    type: ScoringVisibilityType
+  bucket:
+    type: ScoringBucket
+  score:
+    type: float
+  additionalValueMultiplier:
+    type: float
+  showForTeam:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ScoringTypeData type.
+

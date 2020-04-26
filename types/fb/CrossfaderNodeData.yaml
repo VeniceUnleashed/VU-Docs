@@ -1,0 +1,45 @@
+name: CrossfaderNodeData
+type: class
+inherits: AudioGraphNodeData
+
+constructors:
+  -
+    description: Creates a new CrossfaderNodeData frostbite instance.
+  -
+    description: Creates a new CrossfaderNodeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphNodeData to CrossfaderNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphNodeData
+        description: The instance to cast to CrossfaderNodeData.
+  -
+    description: Casts an instance of type DataContainer to CrossfaderNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to CrossfaderNodeData.
+
+properties:
+  in1:
+    type: AudioGraphNodePort
+  in2:
+    type: AudioGraphNodePort
+  ctrl:
+    type: AudioGraphNodePort
+  out:
+    type: AudioGraphNodePort
+  plugin1:
+    type: SoundGraphPluginRef
+  plugin2:
+    type: SoundGraphPluginRef
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the CrossfaderNodeData type.
+

@@ -1,0 +1,84 @@
+name: ObjectiveEntityData
+type: class
+inherits: GameEntityData
+
+constructors:
+  -
+    description: Creates a new ObjectiveEntityData frostbite instance.
+  -
+    description: Creates a new ObjectiveEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameEntityData to ObjectiveEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to ObjectiveEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to ObjectiveEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to ObjectiveEntityData.
+  -
+    description: Casts an instance of type EntityData to ObjectiveEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to ObjectiveEntityData.
+  -
+    description: Casts an instance of type GameObjectData to ObjectiveEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to ObjectiveEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to ObjectiveEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to ObjectiveEntityData.
+  -
+    description: Casts an instance of type DataContainer to ObjectiveEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ObjectiveEntityData.
+
+properties:
+  objectiveBriefSid:
+    type: string
+  objectiveSid:
+    type: string
+  hudData:
+    type: MissionObjectiveHudData
+    nullable: true
+  objectiveType:
+    type: ObjectiveType
+  displayTime:
+    type: float
+  delayTime:
+    type: float
+  squadId:
+    type: SquadId
+  teamId:
+    type: TeamId
+  successSid:
+    type: string
+  reciever:
+    type: MessageReciever
+  retriggerSuccessOnShowObjective:
+    type: bool
+  tutorial:
+    type: bool
+  displaySuccess:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ObjectiveEntityData type.
+

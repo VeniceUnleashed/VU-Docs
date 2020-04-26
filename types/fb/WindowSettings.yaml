@@ -1,0 +1,59 @@
+name: WindowSettings
+type: class
+inherits: SystemSettings
+
+constructors:
+  -
+    description: Creates a new WindowSettings frostbite instance.
+  -
+    description: Creates a new WindowSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SystemSettings to WindowSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SystemSettings
+        description: The instance to cast to WindowSettings.
+  -
+    description: Casts an instance of type DataContainer to WindowSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to WindowSettings.
+
+properties:
+  posX:
+    type: int
+  posY:
+    type: int
+  width:
+    type: int
+  height:
+    type: int
+  bordersEnable:
+    type: bool
+  autoSize:
+    type: bool
+  fullscreenAutoSize:
+    type: bool
+  fullscreenWhenJoiningServer:
+    type: bool
+  enableEscape:
+    type: bool
+  enableInputOnActivate:
+    type: bool
+  hibernateOnClose:
+    type: bool
+  hidden:
+    type: bool
+  minimized:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the WindowSettings type.
+

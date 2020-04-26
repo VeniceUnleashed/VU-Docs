@@ -1,0 +1,11 @@
+name: ClientGameType
+type: enum
+
+values:
+  ClientGameType_SinglePlayer:
+    value: 0
+  ClientGameType_Hosted:
+    value: 1
+  ClientGameType_Joined:
+    value: 2
+

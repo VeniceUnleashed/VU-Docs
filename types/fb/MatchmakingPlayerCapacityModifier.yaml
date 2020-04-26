@@ -1,0 +1,35 @@
+name: MatchmakingPlayerCapacityModifier
+type: class
+inherits: MatchmakingModifier
+
+constructors:
+  -
+    description: Creates a new MatchmakingPlayerCapacityModifier frostbite instance.
+  -
+    description: Creates a new MatchmakingPlayerCapacityModifier frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type MatchmakingModifier to MatchmakingPlayerCapacityModifier. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MatchmakingModifier
+        description: The instance to cast to MatchmakingPlayerCapacityModifier.
+  -
+    description: Casts an instance of type DataContainer to MatchmakingPlayerCapacityModifier. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MatchmakingPlayerCapacityModifier.
+
+properties:
+  attribute:
+    type: string
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MatchmakingPlayerCapacityModifier type.
+

@@ -1,0 +1,49 @@
+name: PointTargetData
+type: class
+inherits: SpatialEntityData
+
+constructors:
+  -
+    description: Creates a new PointTargetData frostbite instance.
+  -
+    description: Creates a new PointTargetData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SpatialEntityData to PointTargetData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to PointTargetData.
+  -
+    description: Casts an instance of type EntityData to PointTargetData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to PointTargetData.
+  -
+    description: Casts an instance of type GameObjectData to PointTargetData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to PointTargetData.
+  -
+    description: Casts an instance of type GameDataContainer to PointTargetData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to PointTargetData.
+  -
+    description: Casts an instance of type DataContainer to PointTargetData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PointTargetData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PointTargetData type.
+

@@ -1,0 +1,53 @@
+name: StatsCategoryWeaponData
+type: class
+inherits: StatsCategoryGuidData
+
+constructors:
+  -
+    description: Creates a new StatsCategoryWeaponData frostbite instance.
+  -
+    description: Creates a new StatsCategoryWeaponData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type StatsCategoryGuidData to StatsCategoryWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: StatsCategoryGuidData
+        description: The instance to cast to StatsCategoryWeaponData.
+  -
+    description: Casts an instance of type StatsCategoryBaseData to StatsCategoryWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: StatsCategoryBaseData
+        description: The instance to cast to StatsCategoryWeaponData.
+  -
+    description: Casts an instance of type TreeNodeBase to StatsCategoryWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: TreeNodeBase
+        description: The instance to cast to StatsCategoryWeaponData.
+  -
+    description: Casts an instance of type DataContainer to StatsCategoryWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to StatsCategoryWeaponData.
+
+properties:
+  soldierWeaponId:
+    type: int
+  accessoryUnlockGates:
+    type: CriteriaGateList
+    nullable: true
+  unlocksInfo:
+    type: BasicUnlockInfo
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the StatsCategoryWeaponData type.
+

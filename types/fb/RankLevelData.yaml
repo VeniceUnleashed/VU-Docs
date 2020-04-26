@@ -1,0 +1,42 @@
+name: RankLevelData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new RankLevelData frostbite instance.
+  -
+    description: Creates a new RankLevelData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to RankLevelData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to RankLevelData.
+
+properties:
+  rankName:
+    type: string
+  pointsNeeded:
+    type: int
+  imageName:
+    type: string
+  iconName:
+    type: string
+  soundName:
+    type: string
+  unlockInfos:
+    type: BasicUnlockInfo
+    array: true
+  rankNumber:
+    type: int
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the RankLevelData type.
+

@@ -1,0 +1,44 @@
+name: FakePhysicsData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new FakePhysicsData frostbite instance.
+  -
+    description: Creates a new FakePhysicsData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to FakePhysicsData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to FakePhysicsData.
+
+properties:
+  childFakePhysics:
+    type: FakePhysicsData
+    nullable: true
+  startSpeed:
+    type: float
+  gravityModifier:
+    type: float
+  startDampening:
+    type: float
+  endDampening:
+    type: float
+  minSpeed:
+    type: float
+  maxSpeed:
+    type: float
+  mass:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the FakePhysicsData type.
+

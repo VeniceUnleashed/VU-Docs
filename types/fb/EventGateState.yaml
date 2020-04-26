@@ -1,0 +1,17 @@
+name: EventGateState
+type: enum
+
+values:
+  EGSInvalid:
+    value: 0
+  EGSUpright:
+    value: 1
+  EGSCrouched:
+    value: 2
+  EGSProne:
+    value: 3
+  EGSZoomed:
+    value: 4
+  EGSCount:
+    value: 5
+

@@ -1,0 +1,35 @@
+name: VeniceGameplayLevelDescriptionComponent
+type: class
+inherits: LevelDescriptionComponent
+
+constructors:
+  -
+    description: Creates a new VeniceGameplayLevelDescriptionComponent frostbite instance.
+  -
+    description: Creates a new VeniceGameplayLevelDescriptionComponent frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type LevelDescriptionComponent to VeniceGameplayLevelDescriptionComponent. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: LevelDescriptionComponent
+        description: The instance to cast to VeniceGameplayLevelDescriptionComponent.
+  -
+    description: Casts an instance of type DataContainer to VeniceGameplayLevelDescriptionComponent. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VeniceGameplayLevelDescriptionComponent.
+
+properties:
+  allowParachuteFromMobileSpawnpoint:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VeniceGameplayLevelDescriptionComponent type.
+

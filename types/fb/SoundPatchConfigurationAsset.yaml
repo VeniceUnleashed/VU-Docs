@@ -1,0 +1,47 @@
+name: SoundPatchConfigurationAsset
+type: class
+inherits: SoundAsset
+
+constructors:
+  -
+    description: Creates a new SoundPatchConfigurationAsset frostbite instance.
+  -
+    description: Creates a new SoundPatchConfigurationAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SoundAsset to SoundPatchConfigurationAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SoundAsset
+        description: The instance to cast to SoundPatchConfigurationAsset.
+  -
+    description: Casts an instance of type Asset to SoundPatchConfigurationAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to SoundPatchConfigurationAsset.
+  -
+    description: Casts an instance of type DataContainer to SoundPatchConfigurationAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SoundPatchConfigurationAsset.
+
+properties:
+  sound:
+    type: SoundPatchAsset
+    nullable: true
+  entries:
+    type: SoundPatchConfigurationEntry
+    array: true
+  loudness:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SoundPatchConfigurationAsset type.
+

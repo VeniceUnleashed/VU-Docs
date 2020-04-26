@@ -1,0 +1,15 @@
+name: TextureFilter
+type: enum
+
+values:
+  TfNone:
+    value: 0
+  TfPoint:
+    value: 1
+  TfLinear:
+    value: 2
+  TfAnisotropic:
+    value: 3
+  TfDefault:
+    value: 4
+

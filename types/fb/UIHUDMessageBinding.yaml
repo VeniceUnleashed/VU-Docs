@@ -1,0 +1,39 @@
+name: UIHUDMessageBinding
+type: class
+inherits: UIDataBinding
+
+constructors:
+  -
+    description: Creates a new UIHUDMessageBinding frostbite instance.
+  -
+    description: Creates a new UIHUDMessageBinding frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UIDataBinding to UIHUDMessageBinding. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIDataBinding
+        description: The instance to cast to UIHUDMessageBinding.
+  -
+    description: Casts an instance of type DataContainer to UIHUDMessageBinding. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UIHUDMessageBinding.
+
+properties:
+  messageQuery:
+    type: UIDataSourceInfo
+  visibilityQuery:
+    type: UIDataSourceInfo
+  numberOfRows:
+    type: int
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UIHUDMessageBinding type.
+

@@ -1,0 +1,47 @@
+name: MultiCrossfaderGroup
+type: class
+inherits: AudioGraphNodePortGroup
+
+constructors:
+  -
+    description: Creates a new MultiCrossfaderGroup frostbite instance.
+  -
+    description: Creates a new MultiCrossfaderGroup frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphNodePortGroup to MultiCrossfaderGroup. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphNodePortGroup
+        description: The instance to cast to MultiCrossfaderGroup.
+  -
+    description: Casts an instance of type DataContainer to MultiCrossfaderGroup. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MultiCrossfaderGroup.
+
+properties:
+  amplitude:
+    type: AudioGraphNodePort
+  start:
+    type: AudioGraphNodePort
+  stop:
+    type: AudioGraphNodePort
+  fadeAmplitude:
+    type: float
+  fadeBegin:
+    type: float
+  fadeEnd:
+    type: float
+  fadeType:
+    type: FaderType
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MultiCrossfaderGroup type.
+

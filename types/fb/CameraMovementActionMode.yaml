@@ -1,0 +1,11 @@
+name: CameraMovementActionMode
+type: enum
+
+values:
+  CameraMovementActionMode_Start:
+    value: 0
+  CameraMovementActionMode_Stop:
+    value: 1
+  CameraMovementActionMode_StartAndStop:
+    value: 2
+

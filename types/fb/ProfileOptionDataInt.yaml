@@ -1,0 +1,47 @@
+name: ProfileOptionDataInt
+type: class
+inherits: ProfileOptionData
+
+constructors:
+  -
+    description: Creates a new ProfileOptionDataInt frostbite instance.
+  -
+    description: Creates a new ProfileOptionDataInt frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ProfileOptionData to ProfileOptionDataInt. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ProfileOptionData
+        description: The instance to cast to ProfileOptionDataInt.
+  -
+    description: Casts an instance of type Asset to ProfileOptionDataInt. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to ProfileOptionDataInt.
+  -
+    description: Casts an instance of type DataContainer to ProfileOptionDataInt. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ProfileOptionDataInt.
+
+properties:
+  min:
+    type: int
+  max:
+    type: int
+  value:
+    type: int
+  step:
+    type: int
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ProfileOptionDataInt type.
+

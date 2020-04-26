@@ -1,0 +1,40 @@
+name: MixerInputEntry
+type: class
+inherits: AudioGraphNodePortGroup
+
+constructors:
+  -
+    description: Creates a new MixerInputEntry frostbite instance.
+  -
+    description: Creates a new MixerInputEntry frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphNodePortGroup to MixerInputEntry. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphNodePortGroup
+        description: The instance to cast to MixerInputEntry.
+  -
+    description: Casts an instance of type DataContainer to MixerInputEntry. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MixerInputEntry.
+
+properties:
+  out:
+    type: AudioGraphNodePort
+  source:
+    type: AudioGraphParameter
+    nullable: true
+  accumulateMode:
+    type: MixerValueAccumulateMode
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MixerInputEntry type.
+

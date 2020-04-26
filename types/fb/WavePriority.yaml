@@ -1,0 +1,15 @@
+name: WavePriority
+type: enum
+
+values:
+  WpNone:
+    value: 0
+  WpLow:
+    value: 1
+  WpNormal:
+    value: 2
+  WpHigh:
+    value: 3
+  WpPermanent:
+    value: 4
+

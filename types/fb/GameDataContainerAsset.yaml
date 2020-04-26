@@ -1,0 +1,36 @@
+name: GameDataContainerAsset
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new GameDataContainerAsset frostbite instance.
+  -
+    description: Creates a new GameDataContainerAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to GameDataContainerAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to GameDataContainerAsset.
+  -
+    description: Casts an instance of type DataContainer to GameDataContainerAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to GameDataContainerAsset.
+
+properties:
+  data:
+    type: GameDataContainer
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the GameDataContainerAsset type.
+

@@ -1,0 +1,9 @@
+name: CustomReportValueKind
+type: enum
+
+values:
+  CustomReportValueKind_ScoreMultiplier:
+    value: 0
+  CustomReportValueKind_GunMasterLevel:
+    value: 1
+

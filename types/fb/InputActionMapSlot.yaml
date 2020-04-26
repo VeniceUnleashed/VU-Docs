@@ -1,0 +1,89 @@
+name: InputActionMapSlot
+type: enum
+
+values:
+  InputActionMapSlot_Undefined:
+    value: 0
+  InputActionMapSlot_Root1:
+    value: 1
+  InputActionMapSlot_Root2:
+    value: 2
+  InputActionMapSlot_Root3:
+    value: 3
+  InputActionMapSlot_Root4:
+    value: 4
+  InputActionMapSlot_Root5:
+    value: 5
+  InputActionMapSlot_Root6:
+    value: 6
+  InputActionMapSlot_Root7:
+    value: 7
+  InputActionMapSlot_Root8:
+    value: 8
+  InputActionMapSlot_Root9:
+    value: 9
+  InputActionMapSlot_Root10:
+    value: 10
+  InputActionMapSlot_Root11:
+    value: 11
+  InputActionMapSlot_Root12:
+    value: 12
+  InputActionMapSlot_Root13:
+    value: 13
+  InputActionMapSlot_Root14:
+    value: 14
+  InputActionMapSlot_Root15:
+    value: 15
+  InputActionMapSlot_Root16:
+    value: 16
+  InputActionMapSlot_Sticks1:
+    value: 17
+  InputActionMapSlot_Sticks2:
+    value: 18
+  InputActionMapSlot_Sticks3:
+    value: 19
+  InputActionMapSlot_Sticks4:
+    value: 20
+  InputActionMapSlot_Buttons1:
+    value: 21
+  InputActionMapSlot_Buttons2:
+    value: 22
+  InputActionMapSlot_Buttons3:
+    value: 23
+  InputActionMapSlot_Buttons4:
+    value: 24
+  InputActionMapSlot_Sticks1Buttons1:
+    value: 25
+  InputActionMapSlot_Sticks1Buttons2:
+    value: 26
+  InputActionMapSlot_Sticks1Buttons3:
+    value: 27
+  InputActionMapSlot_Sticks1Buttons4:
+    value: 28
+  InputActionMapSlot_Sticks2Buttons1:
+    value: 29
+  InputActionMapSlot_Sticks2Buttons2:
+    value: 30
+  InputActionMapSlot_Sticks2Buttons3:
+    value: 31
+  InputActionMapSlot_Sticks2Buttons4:
+    value: 32
+  InputActionMapSlot_Sticks3Buttons1:
+    value: 33
+  InputActionMapSlot_Sticks3Buttons2:
+    value: 34
+  InputActionMapSlot_Sticks3Buttons3:
+    value: 35
+  InputActionMapSlot_Sticks3Buttons4:
+    value: 36
+  InputActionMapSlot_Sticks4Buttons1:
+    value: 37
+  InputActionMapSlot_Sticks4Buttons2:
+    value: 38
+  InputActionMapSlot_Sticks4Buttons3:
+    value: 39
+  InputActionMapSlot_Sticks4Buttons4:
+    value: 40
+  InputActionMapSlot_Count:
+    value: 41
+

@@ -1,0 +1,45 @@
+name: SoldierWeaponMultiUnlock
+type: class
+inherits: UnlockUserDataBase
+
+constructors:
+  -
+    description: Creates a new SoldierWeaponMultiUnlock frostbite instance.
+  -
+    description: Creates a new SoldierWeaponMultiUnlock frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UnlockUserDataBase to SoldierWeaponMultiUnlock. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UnlockUserDataBase
+        description: The instance to cast to SoldierWeaponMultiUnlock.
+  -
+    description: Casts an instance of type Asset to SoldierWeaponMultiUnlock. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to SoldierWeaponMultiUnlock.
+  -
+    description: Casts an instance of type DataContainer to SoldierWeaponMultiUnlock. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SoldierWeaponMultiUnlock.
+
+properties:
+  first:
+    type: UnlockAssetBase
+    nullable: true
+  unlockAssetPairs:
+    type: UnlockAssetPair
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SoldierWeaponMultiUnlock type.
+

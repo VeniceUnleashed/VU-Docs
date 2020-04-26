@@ -1,0 +1,40 @@
+name: SimpleValueSelectorNodeData
+type: class
+inherits: AudioGraphNodeData
+
+constructors:
+  -
+    description: Creates a new SimpleValueSelectorNodeData frostbite instance.
+  -
+    description: Creates a new SimpleValueSelectorNodeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphNodeData to SimpleValueSelectorNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphNodeData
+        description: The instance to cast to SimpleValueSelectorNodeData.
+  -
+    description: Casts an instance of type DataContainer to SimpleValueSelectorNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SimpleValueSelectorNodeData.
+
+properties:
+  outValues:
+    type: float
+    array: true
+  index:
+    type: AudioGraphNodePort
+  out:
+    type: AudioGraphNodePort
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SimpleValueSelectorNodeData type.
+

@@ -1,0 +1,19 @@
+name: SwitchTeamsResult
+type: enum
+
+values:
+  SwitchTeamsResult_Success:
+    value: -1
+  SwitchTeamsResult_FailedUnbalanced:
+    value: 0
+  SwitchTeamsResult_FailedTooSoon:
+    value: 1
+  SwitchTeamsResult_FailedTooFewTickets:
+    value: 2
+  SwitchTeamsResult_FailedMustBeDead:
+    value: 3
+  SwitchTeamsResult_FailedTeamFull:
+    value: 4
+  SwitchTeamsResult_FailedDisabled:
+    value: 5
+

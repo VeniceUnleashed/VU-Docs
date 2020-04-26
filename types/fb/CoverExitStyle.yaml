@@ -1,0 +1,15 @@
+name: CoverExitStyle
+type: enum
+
+values:
+  CoverExitStyle_ExitCover:
+    value: 0
+  CoverExitStyle_VaultFromCrouchCover:
+    value: 1
+  CoverExitStyle_StrafeFire:
+    value: 2
+  CoverExitStyle_Surprised:
+    value: 3
+  CoverExitStyle_Sprint:
+    value: 4
+

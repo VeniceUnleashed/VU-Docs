@@ -1,0 +1,44 @@
+name: WeaponRegularSocketObjectData
+type: class
+inherits: WeaponSocketObjectData
+
+constructors:
+  -
+    description: Creates a new WeaponRegularSocketObjectData frostbite instance.
+  -
+    description: Creates a new WeaponRegularSocketObjectData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type WeaponSocketObjectData to WeaponRegularSocketObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: WeaponSocketObjectData
+        description: The instance to cast to WeaponRegularSocketObjectData.
+  -
+    description: Casts an instance of type SocketObjectDataBase to WeaponRegularSocketObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SocketObjectDataBase
+        description: The instance to cast to WeaponRegularSocketObjectData.
+  -
+    description: Casts an instance of type DataContainer to WeaponRegularSocketObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to WeaponRegularSocketObjectData.
+
+properties:
+  transform:
+    type: LinearTransform
+  mesh3pTransforms:
+    type: LinearTransform
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the WeaponRegularSocketObjectData type.
+

@@ -1,0 +1,86 @@
+name: PhysicsDrivenAnimationEntityBinding
+type: class
+
+constructors:
+  -
+    description: Creates a new PhysicsDrivenAnimationEntityBinding frostbite instance.
+  -
+    description: Creates a new PhysicsDrivenAnimationEntityBinding frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+
+properties:
+  aimLeftRight:
+    type: AntRef
+  aimUpDown:
+    type: AntRef
+  crouch:
+    type: AntRef
+  forceSetTrajectory:
+    type: AntRef
+  inAir:
+    type: AntRef
+  skydive:
+    type: AntRef
+  parachute:
+    type: AntRef
+  swim:
+    type: AntRef
+  inputBackward:
+    type: AntRef
+  inputForward:
+    type: AntRef
+  inputLeft:
+    type: AntRef
+  inputRight:
+    type: AntRef
+  isEnemy:
+    type: AntRef
+  jump:
+    type: AntRef
+  leanLeftRight:
+    type: AntRef
+  prone:
+    type: AntRef
+  sprint:
+    type: AntRef
+  groundSupported:
+    type: AntRef
+  groundNormal:
+    type: AntRef
+  groundDistance:
+    type: AntRef
+  groundAngleZ:
+    type: AntRef
+  groundAngleX:
+    type: AntRef
+  groundAngleFromNormal:
+    type: AntRef
+  isClientAnimatable:
+    type: AntRef
+  customizationScreen:
+    type: AntRef
+  minimal3pServer:
+    type: AntRef
+  verticalImpact:
+    type: AntRef
+  falseSignal:
+    type: AntRef
+  lockArmsToCameraWeight:
+    type: AntRef
+
+methods:
+  -
+    name: Clone
+    description: Creates a shallow-copy clone of this structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of this structure to all of its properties. Any properties that contain structure types (eg. Vec3) will be cloned when assigning, while properties that contain instance types (eg. DataContainer) will be referencing the same instance.
+    returns:
+      type: PhysicsDrivenAnimationEntityBinding
+      description: The newly created structure.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PhysicsDrivenAnimationEntityBinding type.
+

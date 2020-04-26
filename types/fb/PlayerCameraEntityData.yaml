@@ -1,0 +1,73 @@
+name: PlayerCameraEntityData
+type: class
+inherits: CameraEntityBaseData
+
+constructors:
+  -
+    description: Creates a new PlayerCameraEntityData frostbite instance.
+  -
+    description: Creates a new PlayerCameraEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type CameraEntityBaseData to PlayerCameraEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: CameraEntityBaseData
+        description: The instance to cast to PlayerCameraEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to PlayerCameraEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to PlayerCameraEntityData.
+  -
+    description: Casts an instance of type EntityData to PlayerCameraEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to PlayerCameraEntityData.
+  -
+    description: Casts an instance of type GameObjectData to PlayerCameraEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to PlayerCameraEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to PlayerCameraEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to PlayerCameraEntityData.
+  -
+    description: Casts an instance of type DataContainer to PlayerCameraEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PlayerCameraEntityData.
+
+properties:
+  soldierTargetMode:
+    type: TargetMode
+  soldierCameraIndex:
+    type: int
+  vehicleTargetMode:
+    type: TargetMode
+  vehicleCameraIndex:
+    type: int
+  releaseControlIfTargetLost:
+    type: bool
+  shouldTargetControllable:
+    type: bool
+  shouldTargetVehicleDriverEntry:
+    type: bool
+  shouldTargetExtraPlayerInDoublePlayerEvent:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PlayerCameraEntityData type.
+

@@ -1,0 +1,58 @@
+name: GameEntityData
+type: class
+inherits: SpatialEntityData
+
+constructors:
+  -
+    description: Creates a new GameEntityData frostbite instance.
+  -
+    description: Creates a new GameEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SpatialEntityData to GameEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to GameEntityData.
+  -
+    description: Casts an instance of type EntityData to GameEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to GameEntityData.
+  -
+    description: Casts an instance of type GameObjectData to GameEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to GameEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to GameEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to GameEntityData.
+  -
+    description: Casts an instance of type DataContainer to GameEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to GameEntityData.
+
+properties:
+  components:
+    type: GameObjectData
+    array: true
+  enabled:
+    type: bool
+  runtimeComponentCount:
+    type: int
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the GameEntityData type.
+

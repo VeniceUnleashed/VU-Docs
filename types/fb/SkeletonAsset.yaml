@@ -1,0 +1,59 @@
+name: SkeletonAsset
+type: class
+inherits: BaseSkeletonAsset
+
+constructors:
+  -
+    description: Creates a new SkeletonAsset frostbite instance.
+  -
+    description: Creates a new SkeletonAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type BaseSkeletonAsset to SkeletonAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: BaseSkeletonAsset
+        description: The instance to cast to SkeletonAsset.
+  -
+    description: Casts an instance of type Asset to SkeletonAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to SkeletonAsset.
+  -
+    description: Casts an instance of type DataContainer to SkeletonAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SkeletonAsset.
+
+properties:
+  boneNames:
+    type: string
+    array: true
+  hierarchy:
+    type: int
+    array: true
+  localPose:
+    type: LinearTransform
+    array: true
+  modelPose:
+    type: LinearTransform
+    array: true
+  weaponBoneName:
+    type: string
+  headBoneName:
+    type: string
+  hipBoneName:
+    type: string
+  cameraBoneName:
+    type: string
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SkeletonAsset type.
+

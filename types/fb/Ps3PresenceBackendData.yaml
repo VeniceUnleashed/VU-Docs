@@ -1,0 +1,49 @@
+name: Ps3PresenceBackendData
+type: class
+inherits: PresenceBackendData
+
+constructors:
+  -
+    description: Creates a new Ps3PresenceBackendData frostbite instance.
+  -
+    description: Creates a new Ps3PresenceBackendData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type PresenceBackendData to Ps3PresenceBackendData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: PresenceBackendData
+        description: The instance to cast to Ps3PresenceBackendData.
+  -
+    description: Casts an instance of type Asset to Ps3PresenceBackendData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to Ps3PresenceBackendData.
+  -
+    description: Casts an instance of type DataContainer to Ps3PresenceBackendData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to Ps3PresenceBackendData.
+
+properties:
+  communicationId:
+    type: string
+  communicationSignature:
+    type: string
+  skuSettings:
+    type: Ps3SkuSettings
+    array: true
+  parentalLockAgeSettings:
+    type: Ps3ParentalLockAgeSettings
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the Ps3PresenceBackendData type.
+

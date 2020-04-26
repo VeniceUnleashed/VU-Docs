@@ -1,0 +1,61 @@
+name: MeleeEntityCommonData
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new MeleeEntityCommonData frostbite instance.
+  -
+    description: Creates a new MeleeEntityCommonData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to MeleeEntityCommonData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to MeleeEntityCommonData.
+  -
+    description: Casts an instance of type DataContainer to MeleeEntityCommonData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MeleeEntityCommonData.
+
+properties:
+  meleeBinding:
+    type: CharacterMeleeBinding
+  meleeCommonBinding:
+    type: CharacterMeleeCommonBinding
+  triggerDelay:
+    type: float
+  defendWindow:
+    type: float
+  killDelay:
+    type: float
+  meleeEndDelay:
+    type: float
+  invalidMeleeAttackZone:
+    type: float
+  meleeAttackDistance:
+    type: float
+  maxAttackHeightDifference:
+    type: float
+  killDamage:
+    type: float
+  proneAttackType:
+    type: AntEnumeration
+    nullable: true
+  crouchAttackType:
+    type: AntEnumeration
+    nullable: true
+  enableAbortPossibility:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MeleeEntityCommonData type.
+

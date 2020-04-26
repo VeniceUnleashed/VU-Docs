@@ -1,0 +1,35 @@
+name: UICombatAreaAsset
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new UICombatAreaAsset frostbite instance.
+  -
+    description: Creates a new UICombatAreaAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to UICombatAreaAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to UICombatAreaAsset.
+  -
+    description: Casts an instance of type DataContainer to UICombatAreaAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UICombatAreaAsset.
+
+properties:
+  prefix:
+    type: string
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UICombatAreaAsset type.
+

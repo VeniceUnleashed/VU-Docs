@@ -1,0 +1,115 @@
+name: SpawnReferenceObjectData
+type: class
+inherits: ReferenceObjectData
+
+constructors:
+  -
+    description: Creates a new SpawnReferenceObjectData frostbite instance.
+  -
+    description: Creates a new SpawnReferenceObjectData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ReferenceObjectData to SpawnReferenceObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ReferenceObjectData
+        description: The instance to cast to SpawnReferenceObjectData.
+  -
+    description: Casts an instance of type GameObjectData to SpawnReferenceObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to SpawnReferenceObjectData.
+  -
+    description: Casts an instance of type GameDataContainer to SpawnReferenceObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to SpawnReferenceObjectData.
+  -
+    description: Casts an instance of type DataContainer to SpawnReferenceObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SpawnReferenceObjectData.
+
+properties:
+  airdropTransform:
+    type: LinearTransform
+  controllableInput:
+    type: LinearTransform
+  controllableTransform:
+    type: LinearTransform
+  locationNameSid:
+    type: string
+  locationTextSid:
+    type: string
+  team:
+    type: TeamId
+  spawnProtectionFriendlyKilledCount:
+    type: int
+  spawnProtectionFriendlyKilledTime:
+    type: float
+  rotationRoll:
+    type: float
+  throttle:
+    type: float
+  initialSpawnDelay:
+    type: float
+  spawnDelay:
+    type: float
+  maxCount:
+    type: int
+  maxCountSimultaneously:
+    type: int
+  totalCountSimultaneouslyOfType:
+    type: int
+  spawnAreaRadius:
+    type: float
+  spawnProtectionRadius:
+    type: float
+  rotationYaw:
+    type: float
+  rotationPitch:
+    type: float
+  initialVelocity:
+    type: float
+  takeControlEntryIndex:
+    type: int
+  spawnProtectionCheckAllTeams:
+    type: bool
+  clearBangersOnSpawn:
+    type: bool
+  tryToSpawnOutOfSight:
+    type: bool
+  sendWeaponEvents:
+    type: bool
+  takeControlOnTransformChange:
+    type: bool
+  returnControlOnIdle:
+    type: bool
+  autoSpawn:
+    type: bool
+  useAsSpawnPoint:
+    type: bool
+  lockedTeam:
+    type: bool
+  initialAutoSpawn:
+    type: bool
+  overwriteThrottle:
+    type: bool
+  onlySendEventForHumanPlayers:
+    type: bool
+  enabled:
+    type: bool
+  isDynamicSpawn:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SpawnReferenceObjectData type.
+

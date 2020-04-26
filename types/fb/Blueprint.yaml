@@ -1,0 +1,43 @@
+name: Blueprint
+type: class
+inherits: EntityBusData
+
+constructors:
+  -
+    description: Creates a new Blueprint frostbite instance.
+  -
+    description: Creates a new Blueprint frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityBusData to Blueprint. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityBusData
+        description: The instance to cast to Blueprint.
+  -
+    description: Casts an instance of type DataBusData to Blueprint. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataBusData
+        description: The instance to cast to Blueprint.
+  -
+    description: Casts an instance of type Asset to Blueprint. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to Blueprint.
+  -
+    description: Casts an instance of type DataContainer to Blueprint. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to Blueprint.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the Blueprint type.
+

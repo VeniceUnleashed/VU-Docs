@@ -1,0 +1,11 @@
+name: WidgetHorisontalAlignment
+type: enum
+
+values:
+  WHA_Left:
+    value: 0
+  WHA_Center:
+    value: 1
+  WHA_Right:
+    value: 2
+

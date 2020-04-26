@@ -1,0 +1,37 @@
+name: PS3StoreImageSD
+type: class
+inherits: UIItemDescription
+
+constructors:
+  -
+    description: Creates a new PS3StoreImageSD frostbite instance.
+  -
+    description: Creates a new PS3StoreImageSD frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UIItemDescription to PS3StoreImageSD. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIItemDescription
+        description: The instance to cast to PS3StoreImageSD.
+  -
+    description: Casts an instance of type DataContainer to PS3StoreImageSD. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PS3StoreImageSD.
+
+properties:
+  identifier:
+    type: string
+  imagePath:
+    type: string
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PS3StoreImageSD type.
+

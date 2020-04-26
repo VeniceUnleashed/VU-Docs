@@ -1,0 +1,37 @@
+name: PresenceUserIdServiceData
+type: class
+inherits: PresenceServiceData
+
+constructors:
+  -
+    description: Creates a new PresenceUserIdServiceData frostbite instance.
+  -
+    description: Creates a new PresenceUserIdServiceData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type PresenceServiceData to PresenceUserIdServiceData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: PresenceServiceData
+        description: The instance to cast to PresenceUserIdServiceData.
+  -
+    description: Casts an instance of type Asset to PresenceUserIdServiceData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to PresenceUserIdServiceData.
+  -
+    description: Casts an instance of type DataContainer to PresenceUserIdServiceData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PresenceUserIdServiceData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PresenceUserIdServiceData type.
+

@@ -1,0 +1,61 @@
+name: PropertyGateEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new PropertyGateEntityData frostbite instance.
+  -
+    description: Creates a new PropertyGateEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to PropertyGateEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to PropertyGateEntityData.
+  -
+    description: Casts an instance of type GameObjectData to PropertyGateEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to PropertyGateEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to PropertyGateEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to PropertyGateEntityData.
+  -
+    description: Casts an instance of type DataContainer to PropertyGateEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PropertyGateEntityData.
+
+properties:
+  transformIn:
+    type: LinearTransform
+  vec4In:
+    type: Vec4
+  vec3In:
+    type: Vec3
+  realm:
+    type: Realm
+  floatIn:
+    type: float
+  intIn:
+    type: int
+  boolIn:
+    type: bool
+  default:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PropertyGateEntityData type.
+

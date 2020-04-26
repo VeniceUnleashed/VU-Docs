@@ -1,0 +1,36 @@
+name: MixerSystemAsset
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new MixerSystemAsset frostbite instance.
+  -
+    description: Creates a new MixerSystemAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to MixerSystemAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to MixerSystemAsset.
+  -
+    description: Casts an instance of type DataContainer to MixerSystemAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MixerSystemAsset.
+
+properties:
+  groups:
+    type: MixGroup
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MixerSystemAsset type.
+

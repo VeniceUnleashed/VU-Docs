@@ -1,0 +1,189 @@
+name: BehaviourTemplateData
+type: class
+inherits: GameBehaviourTemplateData
+
+constructors:
+  -
+    description: Creates a new BehaviourTemplateData frostbite instance.
+  -
+    description: Creates a new BehaviourTemplateData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameBehaviourTemplateData to BehaviourTemplateData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameBehaviourTemplateData
+        description: The instance to cast to BehaviourTemplateData.
+  -
+    description: Casts an instance of type Asset to BehaviourTemplateData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to BehaviourTemplateData.
+  -
+    description: Casts an instance of type DataContainer to BehaviourTemplateData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to BehaviourTemplateData.
+
+properties:
+  standProbability:
+    type: float
+  crouchProbability:
+    type: float
+  turnAgainstTargetDistance:
+    type: float
+  investigateStopDelay:
+    type: float
+  explosiveObjectChance:
+    type: float
+  minAttackBursts:
+    type: int
+  maxAttackBursts:
+    type: int
+  attackUrgencyModifier:
+    type: float
+  altAttackProbability:
+    type: float
+  readinessReactionTimeMultiplier:
+    type: float
+  fireBlindOverBurstCount:
+    type: UIntRange
+  closeRangeAccuracyDistanceOverride:
+    type: float
+  meleeRange:
+    type: float
+  meleeMaxTime:
+    type: float
+  meleeProbability:
+    type: float
+  coverSwitchTime:
+    type: FloatRangeDefaultZero
+  fireStyleTimeout:
+    type: float
+  fireLeanChance:
+    type: float
+  fireLeanBurstCount:
+    type: UIntRange
+  fireStepOutChance:
+    type: float
+  fireStepOutBurstCount:
+    type: UIntRange
+  fireStepOutSlowChance:
+    type: float
+  fireStepOutSlowBurstCount:
+    type: UIntRange
+  fireStepOutUrgentChance:
+    type: float
+  fireStepOutUrgentBurstCount:
+    type: UIntRange
+  fireStepOutFireFromHipChance:
+    type: float
+  fireStepOutFireFromHipBurstCount:
+    type: UIntRange
+  fireStepOutStandToCrouchChance:
+    type: float
+  fireStepOutStandToCrouchBurstCount:
+    type: UIntRange
+  alwaysInFirePose:
+    type: CoverFireType
+  fireGrenadeStepOutChance:
+    type: float
+  fireGrenadeStepOutBurstCount:
+    type: UIntRange
+  fireOverChance:
+    type: float
+  fireOverBurstCount:
+    type: UIntRange
+  fireBlindOutChance:
+    type: float
+  fireBlindOutBurstCount:
+    type: UIntRange
+  fireBlindOverChance:
+    type: float
+  suppressingBurstCount:
+    type: int
+  fireGrenadeBlindOverChance:
+    type: float
+  fireGrenadeBlindOverBurstCount:
+    type: UIntRange
+  fireLmgChance:
+    type: float
+  fireLmgBurstCount:
+    type: UIntRange
+  shotAtFireGrenadeBlindOverChance:
+    type: float
+  suppressingBurstCountMin:
+    type: int
+  suppressingBurstCountMax:
+    type: int
+  coverWaitTime:
+    type: FloatRange
+  maxAngleDiffForBlindFire:
+    type: float
+  strafeToCoverProbablity:
+    type: float
+  maxSuppressTime:
+    type: float
+  investigateVisualTestDist:
+    type: float
+  alwaysStrafeToCoversWithinDistance:
+    type: float
+  chargeSurpriseVelocity:
+    type: float
+  chargeSurpriseNearDistance:
+    type: float
+  chargeSurpriseFlankedDistance:
+    type: float
+  shotAtFireBlindOutChance:
+    type: float
+  shotAtFireBlindOverChance:
+    type: float
+  accuracyIncreaseTime:
+    type: float
+  targetStrengthFactor:
+    type: float
+  reloadBelowPercent:
+    type: float
+  targetDistanceFactor:
+    type: float
+  suppressIndirectProbability:
+    type: float
+  targetDangerFactor:
+    type: float
+  targetIsAttackingFactor:
+    type: float
+  accuracyModifierVsNonHumans:
+    type: float
+  accuracyModifier:
+    type: float
+  soldierMovementVolumeOverride:
+    type: float
+  alwaysUpdate:
+    type: bool
+  leaveVehicleOnSearchAndDestroyOrder:
+    type: bool
+  shouldFireThroughSmoke:
+    type: bool
+  alwaysStrafeToFirstCover:
+    type: bool
+  canMeleeFromScriptedCover:
+    type: bool
+  alwaysStrafeToCoversBehindMe:
+    type: bool
+  useShotAtSettings:
+    type: bool
+  stepBackIfBeingShot:
+    type: bool
+  disableMissileGravity:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the BehaviourTemplateData type.
+

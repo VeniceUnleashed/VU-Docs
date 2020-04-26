@@ -1,0 +1,37 @@
+name: VeniceSoldierWeaponCustomizationAsset
+type: class
+inherits: SoldierWeaponCustomizationAsset
+
+constructors:
+  -
+    description: Creates a new VeniceSoldierWeaponCustomizationAsset frostbite instance.
+  -
+    description: Creates a new VeniceSoldierWeaponCustomizationAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SoldierWeaponCustomizationAsset to VeniceSoldierWeaponCustomizationAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SoldierWeaponCustomizationAsset
+        description: The instance to cast to VeniceSoldierWeaponCustomizationAsset.
+  -
+    description: Casts an instance of type Asset to VeniceSoldierWeaponCustomizationAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to VeniceSoldierWeaponCustomizationAsset.
+  -
+    description: Casts an instance of type DataContainer to VeniceSoldierWeaponCustomizationAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VeniceSoldierWeaponCustomizationAsset.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VeniceSoldierWeaponCustomizationAsset type.
+

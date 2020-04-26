@@ -1,0 +1,43 @@
+name: UIQueuedEventsCompData
+type: class
+inherits: UIComponentData
+
+constructors:
+  -
+    description: Creates a new UIQueuedEventsCompData frostbite instance.
+  -
+    description: Creates a new UIQueuedEventsCompData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UIComponentData to UIQueuedEventsCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIComponentData
+        description: The instance to cast to UIQueuedEventsCompData.
+  -
+    description: Casts an instance of type Asset to UIQueuedEventsCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to UIQueuedEventsCompData.
+  -
+    description: Casts an instance of type DataContainer to UIQueuedEventsCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UIQueuedEventsCompData.
+
+properties:
+  initialQueueDelay:
+    type: float
+  showUnlocksBecomingAvailable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UIQueuedEventsCompData type.
+

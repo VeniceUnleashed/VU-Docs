@@ -1,0 +1,53 @@
+name: DynamicEnvmapComponentData
+type: class
+inherits: ComponentData
+
+constructors:
+  -
+    description: Creates a new DynamicEnvmapComponentData frostbite instance.
+  -
+    description: Creates a new DynamicEnvmapComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ComponentData to DynamicEnvmapComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to DynamicEnvmapComponentData.
+  -
+    description: Casts an instance of type GameObjectData to DynamicEnvmapComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to DynamicEnvmapComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to DynamicEnvmapComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to DynamicEnvmapComponentData.
+  -
+    description: Casts an instance of type DataContainer to DynamicEnvmapComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to DynamicEnvmapComponentData.
+
+properties:
+  keyColorEnvmap:
+    type: Vec3
+  groundColorEnvmap:
+    type: Vec3
+  skyColorEnvmap:
+    type: Vec3
+  enable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the DynamicEnvmapComponentData type.
+

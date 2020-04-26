@@ -1,0 +1,15 @@
+name: ShaderShadowmapMethod
+type: enum
+
+values:
+  ShaderShadowmapMethod_None:
+    value: 0
+  ShaderShadowmapMethod_Single:
+    value: 1
+  ShaderShadowmapMethod_SingleDiscard:
+    value: 2
+  ShaderShadowmapMethod_CascadedBox3:
+    value: 3
+  ShaderShadowmapMethod_CascadedBox4:
+    value: 4
+

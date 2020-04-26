@@ -1,0 +1,31 @@
+name: GameAIEntryData
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new GameAIEntryData frostbite instance.
+  -
+    description: Creates a new GameAIEntryData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to GameAIEntryData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to GameAIEntryData.
+  -
+    description: Casts an instance of type DataContainer to GameAIEntryData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to GameAIEntryData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the GameAIEntryData type.
+

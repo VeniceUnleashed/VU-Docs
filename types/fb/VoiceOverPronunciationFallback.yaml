@@ -1,0 +1,9 @@
+name: VoiceOverPronunciationFallback
+type: enum
+
+values:
+  VoiceOverPronunciationFallback_None:
+    value: 0
+  VoiceOverPronunciationFallback_Master:
+    value: 1
+

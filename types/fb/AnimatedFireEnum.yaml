@@ -1,0 +1,15 @@
+name: AnimatedFireEnum
+type: enum
+
+values:
+  AnimatedFireAutomatic:
+    value: 0
+  AnimatedFireSingle:
+    value: 1
+  AnimatedFireHoldAndRelease:
+    value: 2
+  AnimatedFireDelayedSingleShot:
+    value: 3
+  AnimatedFireSimple:
+    value: 4
+

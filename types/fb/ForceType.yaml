@@ -1,0 +1,9 @@
+name: ForceType
+type: enum
+
+values:
+  FTForce:
+    value: 0
+  FTTorque:
+    value: 1
+

@@ -1,0 +1,21 @@
+name: MeshSubsetCategoryFlags
+type: enum
+
+values:
+  MeshSubsetCategoryFlags_Opaque:
+    value: 1
+  MeshSubsetCategoryFlags_Transparent:
+    value: 2
+  MeshSubsetCategoryFlags_TransparentDecal:
+    value: 4
+  MeshSubsetCategoryFlags_Normal:
+    value: 7
+  MeshSubsetCategoryFlags_ZOnly:
+    value: 8
+  MeshSubsetCategoryFlags_DynamicEnvmap:
+    value: 16
+  MeshSubsetCategoryFlags_PlanarReflection:
+    value: 32
+  MeshSubsetCategoryFlags_All:
+    value: 63
+

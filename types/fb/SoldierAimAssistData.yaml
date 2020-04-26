@@ -1,0 +1,92 @@
+name: SoldierAimAssistData
+type: class
+inherits: GameDataContainer
+
+constructors:
+  -
+    description: Creates a new SoldierAimAssistData frostbite instance.
+  -
+    description: Creates a new SoldierAimAssistData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameDataContainer to SoldierAimAssistData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to SoldierAimAssistData.
+  -
+    description: Casts an instance of type DataContainer to SoldierAimAssistData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SoldierAimAssistData.
+
+properties:
+  eyePosOffset:
+    type: Vec3
+  stickyBoxScale:
+    type: Vec3
+  snapDistanceScale:
+    type: Vec3
+  snapBoxScale:
+    type: Vec3
+  stickyDistanceScale:
+    type: Vec3
+  maxAcceleration:
+    type: Vec2
+  accelerationDamping:
+    type: float
+  accelerationInputThreshold:
+    type: float
+  accelerationMultiplier:
+    type: float
+  squaredAcceleration:
+    type: float
+  yawSpeedStrength:
+    type: float
+  zoomedInputPolynomial:
+    type: float
+    array: true
+  accelerationTimeThreshold:
+    type: float
+  attractDistanceFallOff:
+    type: float
+    array: true
+  attractUserInputMultiplier:
+    type: float
+  attractOwnSpeedInfluence:
+    type: float
+  attractTargetSpeedInfluence:
+    type: float
+  attractOwnRequiredMovementForMaximumAttract:
+    type: float
+  attractStartInputThreshold:
+    type: float
+  attractZoomingMultiplier:
+    type: float
+  attractZoomingPostTime:
+    type: float
+  attractYawStrength:
+    type: float
+  attractPitchStrength:
+    type: float
+  pitchSpeedStrength:
+    type: float
+  attractSoftZone:
+    type: float
+  inputPolynomial:
+    type: float
+    array: true
+  useYawAcceleration:
+    type: bool
+  usePitchAcceleration:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SoldierAimAssistData type.
+

@@ -1,0 +1,35 @@
+name: WeaponSwitchingEnum
+type: enum
+
+values:
+  wsSlot0:
+    value: 0
+  wsSlot1:
+    value: 1
+  wsSlot2:
+    value: 2
+  wsSlot3:
+    value: 3
+  wsSlot4:
+    value: 4
+  wsSlot5:
+    value: 5
+  wsSlot6:
+    value: 6
+  wsSlot7:
+    value: 7
+  wsMeleeWeapon:
+    value: 7
+  wsSlot8:
+    value: 8
+  wsSlot9:
+    value: 9
+  wsMaxSlots:
+    value: 10
+  wsLastPrimary:
+    value: 11
+  wsOtherPrimary:
+    value: 12
+  wsNotUsed:
+    value: 13
+

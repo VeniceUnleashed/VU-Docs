@@ -1,0 +1,40 @@
+name: LogicalExpressionNodeData
+type: class
+inherits: AudioGraphNodeData
+
+constructors:
+  -
+    description: Creates a new LogicalExpressionNodeData frostbite instance.
+  -
+    description: Creates a new LogicalExpressionNodeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphNodeData to LogicalExpressionNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphNodeData
+        description: The instance to cast to LogicalExpressionNodeData.
+  -
+    description: Casts an instance of type DataContainer to LogicalExpressionNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to LogicalExpressionNodeData.
+
+properties:
+  inputs:
+    type: LogicalExpressionEntry
+    array: true
+  trigger:
+    type: AudioGraphNodePort
+  operator:
+    type: LogicalExpressionOperator
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the LogicalExpressionNodeData type.
+

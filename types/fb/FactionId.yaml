@@ -1,0 +1,17 @@
+name: FactionId
+type: enum
+
+values:
+  FactionNeutral:
+    value: 0
+  FactionUS:
+    value: 1
+  FactionRUS:
+    value: 2
+  FactionMEC:
+    value: 3
+  FactionIdCount:
+    value: 4
+  FactionInvalid:
+    value: 5
+

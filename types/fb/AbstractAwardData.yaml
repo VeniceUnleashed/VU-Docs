@@ -1,0 +1,31 @@
+name: AbstractAwardData
+type: class
+inherits: TreeNodeBase
+
+constructors:
+  -
+    description: Creates a new AbstractAwardData frostbite instance.
+  -
+    description: Creates a new AbstractAwardData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type TreeNodeBase to AbstractAwardData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: TreeNodeBase
+        description: The instance to cast to AbstractAwardData.
+  -
+    description: Casts an instance of type DataContainer to AbstractAwardData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to AbstractAwardData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the AbstractAwardData type.
+

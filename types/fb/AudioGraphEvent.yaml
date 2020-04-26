@@ -1,0 +1,31 @@
+name: AudioGraphEvent
+type: class
+inherits: AudioGraphParameter
+
+constructors:
+  -
+    description: Creates a new AudioGraphEvent frostbite instance.
+  -
+    description: Creates a new AudioGraphEvent frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphParameter to AudioGraphEvent. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphParameter
+        description: The instance to cast to AudioGraphEvent.
+  -
+    description: Casts an instance of type DataContainer to AudioGraphEvent. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to AudioGraphEvent.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the AudioGraphEvent type.
+

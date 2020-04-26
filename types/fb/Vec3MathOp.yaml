@@ -1,0 +1,27 @@
+name: Vec3MathOp
+type: enum
+
+values:
+  Vec3MathOp_Add:
+    value: 0
+  Vec3MathOp_Subtract:
+    value: 1
+  Vec3MathOp_Multiply:
+    value: 2
+  Vec3MathOp_Divide:
+    value: 3
+  Vec3MathOp_Min:
+    value: 4
+  Vec3MathOp_Max:
+    value: 5
+  Vec3MathOp_Dot:
+    value: 6
+  Vec3MathOp_Len:
+    value: 7
+  Vec3MathOp_LenSq:
+    value: 8
+  Vec3MathOp_Cross:
+    value: 9
+  Vec3MathOp_Norm:
+    value: 10
+

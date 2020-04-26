@@ -1,0 +1,21 @@
+name: VehicleHudType
+type: enum
+
+values:
+  VehicleHudType_Car:
+    value: 0
+  VehicleHudType_Tank:
+    value: 1
+  VehicleHudType_Boat:
+    value: 2
+  VehicleHudType_Helicopter:
+    value: 3
+  VehicleHudType_Stationary:
+    value: 4
+  VehicleHudType_Strategic:
+    value: 5
+  VehicleHudType_Dummy:
+    value: 6
+  VehicleHudType_Count:
+    value: 7
+

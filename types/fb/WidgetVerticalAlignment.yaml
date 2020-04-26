@@ -1,0 +1,11 @@
+name: WidgetVerticalAlignment
+type: enum
+
+values:
+  WVA_Top:
+    value: 0
+  WVA_Center:
+    value: 1
+  WVA_Bottom:
+    value: 2
+

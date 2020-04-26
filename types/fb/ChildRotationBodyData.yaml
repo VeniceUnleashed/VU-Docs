@@ -1,0 +1,51 @@
+name: ChildRotationBodyData
+type: class
+inherits: RotationBodyData
+
+constructors:
+  -
+    description: Creates a new ChildRotationBodyData frostbite instance.
+  -
+    description: Creates a new ChildRotationBodyData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type RotationBodyData to ChildRotationBodyData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: RotationBodyData
+        description: The instance to cast to ChildRotationBodyData.
+  -
+    description: Casts an instance of type MovingBodyData to ChildRotationBodyData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MovingBodyData
+        description: The instance to cast to ChildRotationBodyData.
+  -
+    description: Casts an instance of type DataContainer to ChildRotationBodyData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ChildRotationBodyData.
+
+properties:
+  forceModifier:
+    type: float
+  resetForceModifier:
+    type: float
+  resetForceInputThreshold:
+    type: float
+  rotationInput:
+    type: EntryInputActionEnum
+  worldSpaceLockEfficiency:
+    type: float
+  useLinearInput:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ChildRotationBodyData type.
+

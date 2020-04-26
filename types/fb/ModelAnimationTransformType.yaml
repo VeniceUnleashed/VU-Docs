@@ -1,0 +1,11 @@
+name: ModelAnimationTransformType
+type: enum
+
+values:
+  ModelAnimationTransformType_World:
+    value: 0
+  ModelAnimationTransformType_Model:
+    value: 1
+  ModelAnimationTransformType_Local:
+    value: 2
+

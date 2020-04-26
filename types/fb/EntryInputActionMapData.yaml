@@ -1,0 +1,31 @@
+name: EntryInputActionMapData
+type: class
+inherits: InputActionMapData
+
+constructors:
+  -
+    description: Creates a new EntryInputActionMapData frostbite instance.
+  -
+    description: Creates a new EntryInputActionMapData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type InputActionMapData to EntryInputActionMapData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: InputActionMapData
+        description: The instance to cast to EntryInputActionMapData.
+  -
+    description: Casts an instance of type DataContainer to EntryInputActionMapData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to EntryInputActionMapData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the EntryInputActionMapData type.
+

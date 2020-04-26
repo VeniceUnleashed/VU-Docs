@@ -1,0 +1,99 @@
+name: VeniceOnlineSettings
+type: class
+inherits: SystemSettings
+
+constructors:
+  -
+    description: Creates a new VeniceOnlineSettings frostbite instance.
+  -
+    description: Creates a new VeniceOnlineSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SystemSettings to VeniceOnlineSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SystemSettings
+        description: The instance to cast to VeniceOnlineSettings.
+  -
+    description: Casts an instance of type DataContainer to VeniceOnlineSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VeniceOnlineSettings.
+
+properties:
+  webFeedMaxFetchAttempts:
+    type: int
+  platforms:
+    type: OnlinePlatformConfiguration
+    array: true
+  serviceNameOverride:
+    type: string
+  clientGameConfigurationOverride:
+    type: string
+  blazeLogLevel:
+    type: int
+  dirtySockLogLevel:
+    type: int
+  battlelogReportURL:
+    type: string
+  entitlementQueries:
+    type: EntitlementQuery
+    array: true
+  webFeedUrlPrefix:
+    type: string
+  snowrollerOrphanTimeout:
+    type: float
+  queueCapacityOverride:
+    type: int
+  webFeedCountUrlPrefix:
+    type: string
+  matchFeedMaxFetchAttempts:
+    type: int
+  dogTagUploadPolicy:
+    type: DTagUploadPolicy
+  webFeedUnreadCountFetchPeriod:
+    type: int
+  matchImagesUrlPrefix:
+    type: string
+  webFeedMaxItems:
+    type: int
+  webFeedMinimumMillisecondsBetweenRequests:
+    type: int
+  webFeedMillisecondsBetweenNewRequestAttempt:
+    type: int
+  matchFeedMinimumMillisecondsBetweenRequests:
+    type: int
+  matchFeedMinimumMillisecondsBetweenMatchRequests:
+    type: int
+  pingPeriod:
+    type: int
+  matchFeedMinimumMillisecondsBetweenNewRequestAttempt:
+    type: int
+  matchFeedDetailsUrlPrefix:
+    type: string
+  matchFeedListUrlPrefix:
+    type: string
+  matchFeedMinimumMillisecondsBetweenMatchReloads:
+    type: int
+  enableSnowroller:
+    type: bool
+  enableQoS:
+    type: bool
+  punkBusterActivateClient:
+    type: bool
+  punkBusterActivateServer:
+    type: bool
+  battlelogReport:
+    type: bool
+  useFallback:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VeniceOnlineSettings type.
+

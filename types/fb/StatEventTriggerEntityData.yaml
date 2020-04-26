@@ -1,0 +1,65 @@
+name: StatEventTriggerEntityData
+type: class
+inherits: GameEntityData
+
+constructors:
+  -
+    description: Creates a new StatEventTriggerEntityData frostbite instance.
+  -
+    description: Creates a new StatEventTriggerEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameEntityData to StatEventTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to StatEventTriggerEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to StatEventTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to StatEventTriggerEntityData.
+  -
+    description: Casts an instance of type EntityData to StatEventTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to StatEventTriggerEntityData.
+  -
+    description: Casts an instance of type GameObjectData to StatEventTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to StatEventTriggerEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to StatEventTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to StatEventTriggerEntityData.
+  -
+    description: Casts an instance of type DataContainer to StatEventTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to StatEventTriggerEntityData.
+
+properties:
+  statEvent:
+    type: StatEvent
+  miscParamX:
+    type: string
+  miscParamY:
+    type: string
+  sendToAll:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the StatEventTriggerEntityData type.
+

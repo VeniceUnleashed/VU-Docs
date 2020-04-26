@@ -1,0 +1,72 @@
+name: WorldData
+type: class
+inherits: SubWorldData
+
+constructors:
+  -
+    description: Creates a new WorldData frostbite instance.
+  -
+    description: Creates a new WorldData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SubWorldData to WorldData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SubWorldData
+        description: The instance to cast to WorldData.
+  -
+    description: Casts an instance of type SpatialPrefabBlueprint to WorldData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialPrefabBlueprint
+        description: The instance to cast to WorldData.
+  -
+    description: Casts an instance of type PrefabBlueprint to WorldData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: PrefabBlueprint
+        description: The instance to cast to WorldData.
+  -
+    description: Casts an instance of type Blueprint to WorldData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Blueprint
+        description: The instance to cast to WorldData.
+  -
+    description: Casts an instance of type EntityBusData to WorldData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityBusData
+        description: The instance to cast to WorldData.
+  -
+    description: Casts an instance of type DataBusData to WorldData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataBusData
+        description: The instance to cast to WorldData.
+  -
+    description: Casts an instance of type Asset to WorldData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to WorldData.
+  -
+    description: Casts an instance of type DataContainer to WorldData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to WorldData.
+
+properties:
+  runtimeMaterialGrid:
+    type: MaterialGridData
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the WorldData type.
+

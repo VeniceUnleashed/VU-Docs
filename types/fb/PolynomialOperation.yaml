@@ -1,0 +1,11 @@
+name: PolynomialOperation
+type: enum
+
+values:
+  Multiplication:
+    value: 0
+  Addition:
+    value: 1
+  Subtraction:
+    value: 2
+

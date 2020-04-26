@@ -1,0 +1,19 @@
+name: BlurFilter
+type: enum
+
+values:
+  BfNone:
+    value: 0
+  BfGaussian3Pixels:
+    value: 1
+  BfGaussian5Pixels:
+    value: 2
+  BfGaussian7Pixels:
+    value: 3
+  BfGaussian9Pixels:
+    value: 4
+  BfGaussian15Pixels:
+    value: 5
+  BfGaussian31Pixels:
+    value: 6
+

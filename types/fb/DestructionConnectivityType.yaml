@@ -1,0 +1,13 @@
+name: DestructionConnectivityType
+type: enum
+
+values:
+  DestructionConnectivityType_Full:
+    value: 0
+  DestructionConnectivityType_Partial:
+    value: 1
+  DestructionConnectivityType_None:
+    value: 2
+  DestructionConnectivityType_Inherited:
+    value: 3
+

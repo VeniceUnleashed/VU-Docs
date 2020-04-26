@@ -1,0 +1,15 @@
+name: TonemapMethod
+type: enum
+
+values:
+  TonemapMethod_Linear:
+    value: 0
+  TonemapMethod_Filmic:
+    value: 1
+  TonemapMethod_FilmicNeutral:
+    value: 2
+  TonemapMethod_None:
+    value: 3
+  TonemapMethodCount:
+    value: 3
+

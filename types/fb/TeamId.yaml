@@ -1,0 +1,41 @@
+name: TeamId
+type: enum
+
+values:
+  TeamNeutral:
+    value: 0
+  Team1:
+    value: 1
+  Team2:
+    value: 2
+  Team3:
+    value: 3
+  Team4:
+    value: 4
+  Team5:
+    value: 5
+  Team6:
+    value: 6
+  Team7:
+    value: 7
+  Team8:
+    value: 8
+  Team9:
+    value: 9
+  Team10:
+    value: 10
+  Team11:
+    value: 11
+  Team12:
+    value: 12
+  Team13:
+    value: 13
+  Team14:
+    value: 14
+  Team15:
+    value: 15
+  Team16:
+    value: 16
+  TeamIdCount:
+    value: 17
+

@@ -1,0 +1,23 @@
+name: ShaderParameterType
+type: enum
+
+values:
+  ShaderParameterType_Bool:
+    value: 0
+  ShaderParameterType_Int:
+    value: 1
+  ShaderParameterType_Scalar:
+    value: 2
+  ShaderParameterType_Vec2:
+    value: 3
+  ShaderParameterType_Vec3:
+    value: 4
+  ShaderParameterType_Vec4:
+    value: 5
+  ShaderParameterType_Color:
+    value: 6
+  ShaderParameterType_TextureSlice:
+    value: 7
+  ShaderParameterTypeCount:
+    value: 8
+

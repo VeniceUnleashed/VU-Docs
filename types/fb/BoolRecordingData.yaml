@@ -1,0 +1,36 @@
+name: BoolRecordingData
+type: class
+inherits: PropertyRecordingData
+
+constructors:
+  -
+    description: Creates a new BoolRecordingData frostbite instance.
+  -
+    description: Creates a new BoolRecordingData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type PropertyRecordingData to BoolRecordingData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: PropertyRecordingData
+        description: The instance to cast to BoolRecordingData.
+  -
+    description: Casts an instance of type DataContainer to BoolRecordingData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to BoolRecordingData.
+
+properties:
+  values:
+    type: bool
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the BoolRecordingData type.
+

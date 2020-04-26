@@ -1,0 +1,49 @@
+name: ExitToMenuReason
+type: enum
+
+values:
+  ExitToMenuReason_None:
+    value: 0
+  ExitToMenuReason_UserDisconnected:
+    value: 1
+  ExitToMenuReason_DisconnectedFromServer:
+    value: 2
+  ExitToMenuReason_UnableToConnectToServer:
+    value: 3
+  ExitToMenuReason_ClientDisconnected:
+    value: 4
+  ExitToMenuReason_FirstPartyConnectionFailed:
+    value: 5
+  ExitToMenuReason_MissingContent:
+    value: 6
+  ExitToMenuReason_TeamKills:
+    value: 7
+  ExitToMenuReason_KickedByAdmin:
+    value: 8
+  ExitToMenuReason_Banned:
+    value: 9
+  ExitToMenuReason_InteractivityTimeout:
+    value: 10
+  ExitToMenuReason_KickedOutServerFull:
+    value: 11
+  ExitToMenuReason_ESportsMatchStarting:
+    value: 12
+  ExitToMenuReason_NotInESportsRosters:
+    value: 13
+  ExitToMenuReason_ESportsMatchEnding:
+    value: 14
+  ExitToMenuReason_VirtualServerExpired:
+    value: 15
+  ExitToMenuReason_VirtualServerRecreate:
+    value: 16
+  ExitToMenuReason_ESportsTeamFull:
+    value: 17
+  ExitToMenuReason_ESportsMatchAborted:
+    value: 18
+  ExitToMenuReason_ESportsMatchWalkover:
+    value: 19
+  ExitToMenuReason_ESportsMatchWarmupTimedOut:
+    value: 20
+  ExitToMenuReason_PremiumStatusMismatch:
+    value: 21
+

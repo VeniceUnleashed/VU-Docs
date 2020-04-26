@@ -1,0 +1,9 @@
+name: CharacterLightingMode
+type: enum
+
+values:
+  CharacterLightingMode_Add:
+    value: 0
+  CharacterLightingMode_Blend:
+    value: 1
+

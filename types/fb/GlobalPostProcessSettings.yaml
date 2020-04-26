@@ -1,0 +1,247 @@
+name: GlobalPostProcessSettings
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new GlobalPostProcessSettings frostbite instance.
+  -
+    description: Creates a new GlobalPostProcessSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to GlobalPostProcessSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to GlobalPostProcessSettings.
+
+properties:
+  brightness:
+    type: Vec3
+  forceBloomScale:
+    type: Vec3
+  forceVignetteColor:
+    type: Vec4
+  contrast:
+    type: Vec3
+  saturation:
+    type: Vec3
+  filmGrainTextureScale:
+    type: Vec2
+  forceVignetteScale:
+    type: Vec2
+  filmGrainColorScale:
+    type: Vec3
+  ps3EdgeMlaaJobPriority:
+    type: int
+  bloomBlurIterationCount:
+    type: int
+  debugModeStep:
+    type: int
+  bloomBlurFilter:
+    type: BlurFilter
+  ldrBloomRange:
+    type: float
+  debugMode:
+    type: PostProcessDebugMode
+  userBrightnessMin:
+    type: float
+  uiBrightnessNorm:
+    type: float
+  ps3EdgeMlaaJobCount:
+    type: int
+  ps3EdgeMlaaAbsoluteThreshold:
+    type: int
+  bloomPyramidLevelCount:
+    type: int
+  bloomPyramidFinalLevel:
+    type: int
+  userBrightnessMax:
+    type: float
+  userBrightnessMulScale:
+    type: float
+  userBrightnessAddScale:
+    type: float
+  downsampleAverageStartMipmap:
+    type: int
+  ps3EdgeMlaaThresholdFactor:
+    type: int
+  ps3EdgeMlaaThresholdBase:
+    type: int
+  ps3TiledLdrMipmapCount:
+    type: int
+  ps3TiledFloatMipmapCount:
+    type: int
+  ps3TiledBloomMipmapCount:
+    type: int
+  hbaoGaussianBlurSize:
+    type: BlurFilter
+  forceExposure:
+    type: float
+  forceBlurAdd:
+    type: float
+  forceDofEnable:
+    type: int
+  forceDofFocusDistance:
+    type: float
+  forceDofNearDistanceScale:
+    type: float
+  forceDofFarDistanceScale:
+    type: float
+  forceDofScale:
+    type: float
+  forceDofBlurFilterDeviation:
+    type: float
+  hbaoTemporalFilterMaxNumFrames:
+    type: int
+  hbaoForceVendor:
+    type: int
+  forceVignetteExponent:
+    type: float
+  hbaoTemporalFilterThreshold:
+    type: float
+  forceTonemapMethod:
+    type: int
+  lutGammaR:
+    type: float
+  lutGammaG:
+    type: float
+  hbaoTemporalFilterThreshold2:
+    type: float
+  forceChromostereopsisEnable:
+    type: int
+  forceChromostereopsisOffset:
+    type: int
+  forceChromostereopsisScale:
+    type: float
+  hbaoBilateralBlurRadius:
+    type: int
+  forceMiddleGray:
+    type: float
+  lutGammaB:
+    type: float
+  lutGammaCurbOffset:
+    type: float
+  hbaoBilateralBlurSharpness:
+    type: float
+  hbaoRandomTextureWidth:
+    type: int
+  lensScopeFilterColorScale:
+    type: float
+  hbaoStepCount:
+    type: float
+  hbaoMaxFootprintRadius:
+    type: float
+  hbaoDirCount:
+    type: float
+  hue:
+    type: float
+  hbaoQuality:
+    type: int
+  hbaoRandomDirVariationCount:
+    type: int
+  forceDiffusionDofPlaneInFocus:
+    type: float
+  diffusionDofLuminance:
+    type: float
+  hbaoTemporalFilterDebugMode:
+    type: int
+  forceDiffusionDofAperture:
+    type: float
+  forceDiffusionDofFocalLength:
+    type: float
+  dynamicAOMethod:
+    type: DynamicAOMethod
+  drawDebugInfo:
+    type: bool
+  colorGradingForceUpdateAlways:
+    type: bool
+  bloomBlurEnable:
+    type: bool
+  hdrBlurEnable:
+    type: bool
+  blurBlendEnable:
+    type: bool
+  downsampleAverageFromBloomEnable:
+    type: bool
+  filmGrainEnable:
+    type: bool
+  ldr16BitBloomEnable:
+    type: bool
+  dynamicAOEnable:
+    type: bool
+  diffusionDofEnable:
+    type: bool
+  hbaoHalfResEnable:
+    type: bool
+  hbaoHalfResDepthEnable:
+    type: bool
+  hbaoVectorizedEnable:
+    type: bool
+  ps3CompressedRenderTargetsEnable:
+    type: bool
+  hdrBloomEnable:
+    type: bool
+  filmGrainRandomEnable:
+    type: bool
+  directExposureEnable:
+    type: bool
+  exposureClampEnable:
+    type: bool
+  filmGrainLinearFilteringEnable:
+    type: bool
+  hbaoBilateralBlurEnable:
+    type: bool
+  colorGradingEnable:
+    type: bool
+  colorTransformEnable:
+    type: bool
+  hbaoBilateralBlurCsEnable:
+    type: bool
+  hbaoTemporalFilterEnable:
+    type: bool
+  quarterDownsamplingEnable:
+    type: bool
+  drawDebugUserBrightnessLUT:
+    type: bool
+  bloomPyramidAttenuateEnable:
+    type: bool
+  downsampleBeforeBlurEnable:
+    type: bool
+  hbaoGaussianBlurEnable:
+    type: bool
+  hbaoGaussianBlurHalfResEnable:
+    type: bool
+  bloomPyramidEnable:
+    type: bool
+  userBrightnessLUTEnable:
+    type: bool
+  ps3EdgeMlaaEnable:
+    type: bool
+  ps3EdgeMlaaCopyOnly:
+    type: bool
+  ps3EdgeMlaaShowEdges:
+    type: bool
+  ps3EdgeMlaaRelativeEdgeDetection:
+    type: bool
+  ps3EdgeMlaaGpuBlockEnable:
+    type: bool
+  ps3BackBufferAsLdrTargetEnable:
+    type: bool
+  downsampleLogAverageEnable:
+    type: bool
+  bloomQuarterResEnable:
+    type: bool
+  bloomEnable:
+    type: bool
+  lensScopeFilterEnable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the GlobalPostProcessSettings type.
+

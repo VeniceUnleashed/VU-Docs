@@ -1,0 +1,52 @@
+name: MeleeTriggerEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new MeleeTriggerEntityData frostbite instance.
+  -
+    description: Creates a new MeleeTriggerEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to MeleeTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to MeleeTriggerEntityData.
+  -
+    description: Casts an instance of type GameObjectData to MeleeTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to MeleeTriggerEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to MeleeTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to MeleeTriggerEntityData.
+  -
+    description: Casts an instance of type DataContainer to MeleeTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MeleeTriggerEntityData.
+
+properties:
+  connectTransform:
+    type: LinearTransform
+  meleeType:
+    type: AntEnumeration
+    nullable: true
+  meleeEnabled:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MeleeTriggerEntityData type.
+

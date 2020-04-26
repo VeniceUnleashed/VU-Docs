@@ -1,0 +1,57 @@
+name: SoundAreaEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new SoundAreaEntityData frostbite instance.
+  -
+    description: Creates a new SoundAreaEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to SoundAreaEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to SoundAreaEntityData.
+  -
+    description: Casts an instance of type GameObjectData to SoundAreaEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to SoundAreaEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to SoundAreaEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to SoundAreaEntityData.
+  -
+    description: Casts an instance of type DataContainer to SoundAreaEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SoundAreaEntityData.
+
+properties:
+  sound:
+    type: SoundAsset
+    nullable: true
+  bigWorld:
+    type: BigWorldSettingsAsset
+    nullable: true
+  fadeWidth:
+    type: float
+  proximityMultiplier:
+    type: float
+  fadeCurve:
+    type: FadeCurveType
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SoundAreaEntityData type.
+

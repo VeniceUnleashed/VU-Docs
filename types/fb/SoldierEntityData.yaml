@@ -1,0 +1,165 @@
+name: SoldierEntityData
+type: class
+inherits: CharacterEntityData
+
+constructors:
+  -
+    description: Creates a new SoldierEntityData frostbite instance.
+  -
+    description: Creates a new SoldierEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type CharacterEntityData to SoldierEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: CharacterEntityData
+        description: The instance to cast to SoldierEntityData.
+  -
+    description: Casts an instance of type ControllableEntityData to SoldierEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ControllableEntityData
+        description: The instance to cast to SoldierEntityData.
+  -
+    description: Casts an instance of type GamePhysicsEntityData to SoldierEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GamePhysicsEntityData
+        description: The instance to cast to SoldierEntityData.
+  -
+    description: Casts an instance of type GameEntityData to SoldierEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to SoldierEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to SoldierEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to SoldierEntityData.
+  -
+    description: Casts an instance of type EntityData to SoldierEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to SoldierEntityData.
+  -
+    description: Casts an instance of type GameObjectData to SoldierEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to SoldierEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to SoldierEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to SoldierEntityData.
+  -
+    description: Casts an instance of type DataContainer to SoldierEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SoldierEntityData.
+
+properties:
+  flirKeyColor:
+    type: Vec3
+  headMaterialPair:
+    type: MaterialContainerPair
+    nullable: true
+  boneFakePhysics:
+    type: BoneFakePhysicsData
+    array: true
+  autoAim:
+    type: SoldierAutoAimData
+    nullable: true
+  aimingConstraints:
+    type: SoldierAimingConstraintsData
+    nullable: true
+  headCollision:
+    type: SoldierHeadCollisionData
+    nullable: true
+  characterPhysics:
+    type: CharacterPhysicsData
+    nullable: true
+  footMaterialPair:
+    type: MaterialContainerPair
+    nullable: true
+  sprintSettings:
+    type: SoldierSprintSettingsData
+    nullable: true
+  meshes1p:
+    type: SoldierMeshData
+    array: true
+  meshes3p:
+    type: SoldierMeshData
+    array: true
+  hidableMeshParts:
+    type: HidableSoldierMeshWeaponPart
+    array: true
+  sound:
+    type: SoldierSoundData
+    nullable: true
+  streamGroup1p:
+    type: StreamGroupData
+    nullable: true
+  impulseReactionTime:
+    type: float
+  healthModule:
+    type: SoldierHealthModuleData
+    nullable: true
+  maxHealth:
+    type: float
+  collisionInfo:
+    type: CollisionData
+    nullable: true
+  voiceOverInfo:
+    type: EntityVoiceOverInfo
+    nullable: true
+  flirValue:
+    type: float
+  breathControl:
+    type: BreathControlData
+    array: true
+  explosionDamageModifier:
+    type: float
+  uiParts:
+    type: UIPartData
+    array: true
+  regenerationDelayModifier:
+    type: float
+  freeSpaceCheck:
+    type: bool
+  proximityCheck:
+    type: bool
+  enableGroundmapLighting:
+    type: bool
+  showWeaponWhenDead:
+    type: bool
+  lowerGunOnOwnTeam:
+    type: bool
+  useSpineXRotation:
+    type: bool
+  collisionEnabled:
+    type: bool
+  physicsControlled:
+    type: bool
+  isPushable:
+    type: bool
+  humanPlayerControlled:
+    type: bool
+  interactiveManDownAllowed:
+    type: bool
+  showNametag:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SoldierEntityData type.
+

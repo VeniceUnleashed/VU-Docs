@@ -1,0 +1,75 @@
+name: SamplerNodeData
+type: class
+inherits: AudioGraphNodeData
+
+constructors:
+  -
+    description: Creates a new SamplerNodeData frostbite instance.
+  -
+    description: Creates a new SamplerNodeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphNodeData to SamplerNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphNodeData
+        description: The instance to cast to SamplerNodeData.
+  -
+    description: Casts an instance of type DataContainer to SamplerNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SamplerNodeData.
+
+properties:
+  externalWave:
+    type: AudioGraphNodePort
+  variation:
+    type: AudioGraphNodePort
+  offset:
+    type: AudioGraphNodePort
+  delay:
+    type: AudioGraphNodePort
+  pitch:
+    type: AudioGraphNodePort
+  amplitude:
+    type: AudioGraphNodePort
+  enableStep:
+    type: AudioGraphNodePort
+  buffer:
+    type: AudioGraphNodePort
+  trigger:
+    type: AudioGraphNodePort
+  release:
+    type: AudioGraphNodePort
+  step:
+    type: AudioGraphNodePort
+  output:
+    type: AudioGraphNodePort
+  finished:
+    type: AudioGraphNodePort
+  buffered:
+    type: AudioGraphNodePort
+  position:
+    type: AudioGraphNodePort
+  wave:
+    type: SoundWaveAsset
+    nullable: true
+  basePitch:
+    type: float
+  loop:
+    type: LoopType
+  plugins:
+    type: SamplerPlugins
+    array: true
+  shuffleSegments:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SamplerNodeData type.
+

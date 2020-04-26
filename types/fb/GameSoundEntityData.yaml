@@ -1,0 +1,62 @@
+name: GameSoundEntityData
+type: class
+inherits: GameEntityData
+
+constructors:
+  -
+    description: Creates a new GameSoundEntityData frostbite instance.
+  -
+    description: Creates a new GameSoundEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameEntityData to GameSoundEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to GameSoundEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to GameSoundEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to GameSoundEntityData.
+  -
+    description: Casts an instance of type EntityData to GameSoundEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to GameSoundEntityData.
+  -
+    description: Casts an instance of type GameObjectData to GameSoundEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to GameSoundEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to GameSoundEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to GameSoundEntityData.
+  -
+    description: Casts an instance of type DataContainer to GameSoundEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to GameSoundEntityData.
+
+properties:
+  sound:
+    type: SoundAsset
+    nullable: true
+  playOnCreation:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the GameSoundEntityData type.
+

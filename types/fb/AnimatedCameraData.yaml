@@ -1,0 +1,52 @@
+name: AnimatedCameraData
+type: class
+inherits: CameraData
+
+constructors:
+  -
+    description: Creates a new AnimatedCameraData frostbite instance.
+  -
+    description: Creates a new AnimatedCameraData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type CameraData to AnimatedCameraData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: CameraData
+        description: The instance to cast to AnimatedCameraData.
+  -
+    description: Casts an instance of type GameObjectData to AnimatedCameraData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to AnimatedCameraData.
+  -
+    description: Casts an instance of type GameDataContainer to AnimatedCameraData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to AnimatedCameraData.
+  -
+    description: Casts an instance of type DataContainer to AnimatedCameraData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to AnimatedCameraData.
+
+properties:
+  skeleton:
+    type: SkeletonAsset
+    nullable: true
+  cameraBone:
+    type: string
+  fovBone:
+    type: string
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the AnimatedCameraData type.
+

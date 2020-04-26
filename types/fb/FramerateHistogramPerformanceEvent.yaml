@@ -1,0 +1,53 @@
+name: FramerateHistogramPerformanceEvent
+type: class
+inherits: MetricEvent
+
+constructors:
+  -
+    description: Creates a new FramerateHistogramPerformanceEvent frostbite instance.
+  -
+    description: Creates a new FramerateHistogramPerformanceEvent frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type MetricEvent to FramerateHistogramPerformanceEvent. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MetricEvent
+        description: The instance to cast to FramerateHistogramPerformanceEvent.
+  -
+    description: Casts an instance of type DataContainer to FramerateHistogramPerformanceEvent. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to FramerateHistogramPerformanceEvent.
+
+properties:
+  spikeAverage:
+    type: float
+  below5:
+    type: float
+  below10:
+    type: float
+  below15:
+    type: float
+  below20:
+    type: float
+  below25:
+    type: float
+  below30:
+    type: float
+  below60:
+    type: float
+  above60:
+    type: float
+  performanceLink:
+    type: Guid
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the FramerateHistogramPerformanceEvent type.
+

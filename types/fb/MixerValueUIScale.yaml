@@ -1,0 +1,9 @@
+name: MixerValueUIScale
+type: enum
+
+values:
+  MixerValueUIScale_Linear:
+    value: 0
+  MixerValueUIScale_Logarithmic:
+    value: 1
+

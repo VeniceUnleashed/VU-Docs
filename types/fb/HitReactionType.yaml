@@ -1,0 +1,19 @@
+name: HitReactionType
+type: enum
+
+values:
+  HRT_Body:
+    value: 0
+  HRT_Head:
+    value: 1
+  HRT_RightArm:
+    value: 2
+  HRT_LeftArm:
+    value: 3
+  HRT_RightLeg:
+    value: 4
+  HRT_LeftLeg:
+    value: 5
+  HRT_Count:
+    value: 6
+

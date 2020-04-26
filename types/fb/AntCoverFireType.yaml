@@ -1,0 +1,27 @@
+name: AntCoverFireType
+type: enum
+
+values:
+  AntCoverFireType_PeekFire:
+    value: 0
+  AntCoverFireType_FireStepOut:
+    value: 1
+  AntCoverFireType_FireOver:
+    value: 2
+  AntCoverFireType_BlindFireAround:
+    value: 3
+  AntCoverFireType_BlindFireOver:
+    value: 4
+  AntCoverFireType_FlankedWhileFiring:
+    value: 8
+  AntCoverFireType_FireStepOutSlow:
+    value: 10
+  AntCoverFireType_FireStepOutUrgent:
+    value: 11
+  AntCoverFireType_FireStepOut_Crouched:
+    value: 12
+  AntCoverFireType_FireLmg:
+    value: 13
+  AntCoverFireType_FireFromHipStepOut:
+    value: 14
+

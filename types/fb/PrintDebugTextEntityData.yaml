@@ -1,0 +1,53 @@
+name: PrintDebugTextEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new PrintDebugTextEntityData frostbite instance.
+  -
+    description: Creates a new PrintDebugTextEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to PrintDebugTextEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to PrintDebugTextEntityData.
+  -
+    description: Casts an instance of type GameObjectData to PrintDebugTextEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to PrintDebugTextEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to PrintDebugTextEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to PrintDebugTextEntityData.
+  -
+    description: Casts an instance of type DataContainer to PrintDebugTextEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PrintDebugTextEntityData.
+
+properties:
+  textColor:
+    type: Vec3
+  realm:
+    type: Realm
+  text:
+    type: string
+  enabled:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PrintDebugTextEntityData type.
+

@@ -1,0 +1,13 @@
+name: EntrySpottingSettings
+type: enum
+
+values:
+  ESSDefault:
+    value: 0
+  ESSSendAndReceive:
+    value: 1
+  ESSReceive:
+    value: 2
+  ESSCount:
+    value: 3
+

@@ -1,0 +1,65 @@
+name: CustomSequenceTrackData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new CustomSequenceTrackData frostbite instance.
+  -
+    description: Creates a new CustomSequenceTrackData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to CustomSequenceTrackData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to CustomSequenceTrackData.
+  -
+    description: Casts an instance of type GameObjectData to CustomSequenceTrackData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to CustomSequenceTrackData.
+  -
+    description: Casts an instance of type GameDataContainer to CustomSequenceTrackData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to CustomSequenceTrackData.
+  -
+    description: Casts an instance of type DataContainer to CustomSequenceTrackData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to CustomSequenceTrackData.
+
+properties:
+  trackName:
+    type: string
+  inputLinkMap:
+    type: CustomSequenceTrackLinkMapping
+    array: true
+  outputLinkMap:
+    type: CustomSequenceTrackLinkMapping
+    array: true
+  eventMap:
+    type: CustomSequenceTrackEventMapping
+    array: true
+  sourcePropertyMap:
+    type: CustomSequenceTrackPropertyMapping
+    array: true
+  targetPropertyMap:
+    type: CustomSequenceTrackPropertyMapping
+    array: true
+  sourceAndTargetPropertyMap:
+    type: CustomSequenceTrackPropertyMapping
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the CustomSequenceTrackData type.
+

@@ -1,0 +1,33 @@
+name: InputDeviceMotionControllerButtons
+type: enum
+
+values:
+  IDMCB_Rup:
+    value: 0
+  IDMCB_Rdown:
+    value: 1
+  IDMCB_Rleft:
+    value: 2
+  IDMCB_Rright:
+    value: 3
+  IDMCB_start:
+    value: 4
+  IDMCB_alt:
+    value: 5
+  IDMCB_center:
+    value: 6
+  IDMCB_trigger:
+    value: 7
+  IDMCB_reload:
+    value: 8
+  IDMCB_pumpaction:
+    value: 9
+  IDMCB_Gstab:
+    value: 10
+  IDMCB_Grotleft:
+    value: 11
+  IDMCB_Grotright:
+    value: 12
+  IDMCB_Undefined:
+    value: 13
+

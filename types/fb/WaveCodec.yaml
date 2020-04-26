@@ -1,0 +1,17 @@
+name: WaveCodec
+type: enum
+
+values:
+  WaveCodec_EaLayer3:
+    value: 0
+  WaveCodec_EaXma:
+    value: 1
+  WaveCodec_Xas:
+    value: 2
+  WaveCodec_EaSpeex:
+    value: 3
+  WaveCodec_Pcm:
+    value: 4
+  WaveCodec_Count:
+    value: 5
+

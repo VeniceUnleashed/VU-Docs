@@ -1,0 +1,57 @@
+name: MeshProxyEntityData
+type: class
+inherits: SpatialEntityData
+
+constructors:
+  -
+    description: Creates a new MeshProxyEntityData frostbite instance.
+  -
+    description: Creates a new MeshProxyEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SpatialEntityData to MeshProxyEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to MeshProxyEntityData.
+  -
+    description: Casts an instance of type EntityData to MeshProxyEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to MeshProxyEntityData.
+  -
+    description: Casts an instance of type GameObjectData to MeshProxyEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to MeshProxyEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to MeshProxyEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to MeshProxyEntityData.
+  -
+    description: Casts an instance of type DataContainer to MeshProxyEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MeshProxyEntityData.
+
+properties:
+  mesh:
+    type: MeshAsset
+    nullable: true
+  basePoseTransforms:
+    type: LinearTransform
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MeshProxyEntityData type.
+

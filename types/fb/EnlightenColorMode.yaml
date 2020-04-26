@@ -1,0 +1,9 @@
+name: EnlightenColorMode
+type: enum
+
+values:
+  EnlightenColorMode_Multiply:
+    value: 0
+  EnlightenColorMode_Override:
+    value: 1
+

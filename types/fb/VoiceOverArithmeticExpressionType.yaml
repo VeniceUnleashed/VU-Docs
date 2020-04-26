@@ -1,0 +1,15 @@
+name: VoiceOverArithmeticExpressionType
+type: enum
+
+values:
+  VoiceOverArithmeticExpressionType_Addition:
+    value: 0
+  VoiceOverArithmeticExpressionType_Subtraction:
+    value: 1
+  VoiceOverArithmeticExpressionType_Multiplication:
+    value: 2
+  VoiceOverArithmeticExpressionType_Division:
+    value: 3
+  VoiceOverArithmeticExpressionType_Difference:
+    value: 4
+

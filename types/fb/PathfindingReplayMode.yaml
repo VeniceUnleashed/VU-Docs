@@ -1,0 +1,11 @@
+name: PathfindingReplayMode
+type: enum
+
+values:
+  PathfindingReplayMode_Disabled:
+    value: 0
+  PathfindingReplayMode_Binary:
+    value: 1
+  PathfindingReplayMode_Text:
+    value: 2
+

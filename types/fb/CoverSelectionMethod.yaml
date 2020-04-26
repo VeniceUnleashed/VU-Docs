@@ -1,0 +1,15 @@
+name: CoverSelectionMethod
+type: enum
+
+values:
+  CSMAgainstThreatPosition:
+    value: 0
+  CSMAgainstHighestThreat:
+    value: 1
+  CSMAgainstSelectedTarget:
+    value: 2
+  CSMAgainstAllEnemies:
+    value: 3
+  CSMAgainstAllEnemiesWithFallback:
+    value: 4
+

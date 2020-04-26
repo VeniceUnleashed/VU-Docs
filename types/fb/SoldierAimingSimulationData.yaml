@@ -1,0 +1,63 @@
+name: SoldierAimingSimulationData
+type: class
+inherits: GameDataContainer
+
+constructors:
+  -
+    description: Creates a new SoldierAimingSimulationData frostbite instance.
+  -
+    description: Creates a new SoldierAimingSimulationData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameDataContainer to SoldierAimingSimulationData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to SoldierAimingSimulationData.
+  -
+    description: Casts an instance of type DataContainer to SoldierAimingSimulationData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SoldierAimingSimulationData.
+
+properties:
+  zoomLevels:
+    type: ZoomLevelData
+    array: true
+  zoomTransitionTime:
+    type: float
+  aimAssist:
+    type: SoldierAimAssistData
+    nullable: true
+  standPose:
+    type: AimingPoseData
+  crouchPose:
+    type: AimingPoseData
+  pronePose:
+    type: AimingPoseData
+  zoomTransitionTimeArray:
+    type: ZoomLevelSpecificTransitionTime
+    array: true
+  fovTransitionTime:
+    type: float
+  fovDelayTime:
+    type: float
+  modifiers:
+    type: AimerModifierData
+    array: true
+  aimingRange:
+    type: float
+  lockAimToTargetSpeed:
+    type: float
+  returnToZoomAfterReload:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SoldierAimingSimulationData type.
+

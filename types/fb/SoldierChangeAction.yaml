@@ -1,0 +1,11 @@
+name: SoldierChangeAction
+type: enum
+
+values:
+  SCA_Done:
+    value: 0
+  SCA_Altered:
+    value: 1
+  SCA_None:
+    value: 2
+

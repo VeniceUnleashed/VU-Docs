@@ -1,0 +1,11 @@
+name: EntityUpdateOrder
+type: enum
+
+values:
+  EntityUpdateOrder_Async:
+    value: 1
+  EntityUpdateOrder_Sync:
+    value: 2
+  EntityUpdateOrder_Both:
+    value: 3
+

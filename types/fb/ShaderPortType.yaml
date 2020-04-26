@@ -1,0 +1,19 @@
+name: ShaderPortType
+type: enum
+
+values:
+  SptBool:
+    value: 0
+  SptInteger:
+    value: 1
+  SptScalar:
+    value: 2
+  SptVec2:
+    value: 3
+  SptVec3:
+    value: 4
+  SptVec4:
+    value: 5
+  SptColor:
+    value: 6
+

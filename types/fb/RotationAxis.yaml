@@ -1,0 +1,11 @@
+name: RotationAxis
+type: enum
+
+values:
+  raX:
+    value: 0
+  raY:
+    value: 1
+  raZ:
+    value: 2
+

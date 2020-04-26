@@ -1,0 +1,63 @@
+name: TerrainFillDecalData
+type: class
+inherits: VisualVectorShapeData
+
+constructors:
+  -
+    description: Creates a new TerrainFillDecalData frostbite instance.
+  -
+    description: Creates a new TerrainFillDecalData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type VisualVectorShapeData to TerrainFillDecalData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: VisualVectorShapeData
+        description: The instance to cast to TerrainFillDecalData.
+  -
+    description: Casts an instance of type VectorShapeData to TerrainFillDecalData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: VectorShapeData
+        description: The instance to cast to TerrainFillDecalData.
+  -
+    description: Casts an instance of type BaseShapeData to TerrainFillDecalData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: BaseShapeData
+        description: The instance to cast to TerrainFillDecalData.
+  -
+    description: Casts an instance of type GameObjectData to TerrainFillDecalData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to TerrainFillDecalData.
+  -
+    description: Casts an instance of type GameDataContainer to TerrainFillDecalData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to TerrainFillDecalData.
+  -
+    description: Casts an instance of type DataContainer to TerrainFillDecalData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to TerrainFillDecalData.
+
+properties:
+  shader2d:
+    type: SurfaceShaderBaseAsset
+    nullable: true
+  shader3dZOnly:
+    type: SurfaceShaderBaseAsset
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the TerrainFillDecalData type.
+

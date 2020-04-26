@@ -1,0 +1,63 @@
+name: HumanPlayerEntityData
+type: class
+inherits: GameEntityData
+
+constructors:
+  -
+    description: Creates a new HumanPlayerEntityData frostbite instance.
+  -
+    description: Creates a new HumanPlayerEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameEntityData to HumanPlayerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to HumanPlayerEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to HumanPlayerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to HumanPlayerEntityData.
+  -
+    description: Casts an instance of type EntityData to HumanPlayerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to HumanPlayerEntityData.
+  -
+    description: Casts an instance of type GameObjectData to HumanPlayerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to HumanPlayerEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to HumanPlayerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to HumanPlayerEntityData.
+  -
+    description: Casts an instance of type DataContainer to HumanPlayerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to HumanPlayerEntityData.
+
+properties:
+  playerKilledDelay:
+    type: float
+  lastManStandingSid:
+    type: string
+  displayTime:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the HumanPlayerEntityData type.
+

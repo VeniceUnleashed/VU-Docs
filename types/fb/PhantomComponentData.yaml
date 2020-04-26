@@ -1,0 +1,53 @@
+name: PhantomComponentData
+type: class
+inherits: ComponentData
+
+constructors:
+  -
+    description: Creates a new PhantomComponentData frostbite instance.
+  -
+    description: Creates a new PhantomComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ComponentData to PhantomComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to PhantomComponentData.
+  -
+    description: Casts an instance of type GameObjectData to PhantomComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to PhantomComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to PhantomComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to PhantomComponentData.
+  -
+    description: Casts an instance of type DataContainer to PhantomComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PhantomComponentData.
+
+properties:
+  boxSize:
+    type: Vec3
+  asyncQueryPointerAsset:
+    type: AntRef
+  enableTrajectoryOverride:
+    type: AntRef
+  trajectoryOverride:
+    type: AntRef
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PhantomComponentData type.
+

@@ -1,0 +1,43 @@
+name: HighPassButterworthNodeData
+type: class
+inherits: AudioGraphNodeData
+
+constructors:
+  -
+    description: Creates a new HighPassButterworthNodeData frostbite instance.
+  -
+    description: Creates a new HighPassButterworthNodeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphNodeData to HighPassButterworthNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphNodeData
+        description: The instance to cast to HighPassButterworthNodeData.
+  -
+    description: Casts an instance of type DataContainer to HighPassButterworthNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to HighPassButterworthNodeData.
+
+properties:
+  inValue:
+    type: AudioGraphNodePort
+  frequency:
+    type: AudioGraphNodePort
+  order:
+    type: AudioGraphNodePort
+  out:
+    type: AudioGraphNodePort
+  plugin:
+    type: SoundGraphPluginRef
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the HighPassButterworthNodeData type.
+

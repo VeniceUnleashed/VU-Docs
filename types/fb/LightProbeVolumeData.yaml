@@ -1,0 +1,61 @@
+name: LightProbeVolumeData
+type: class
+inherits: SpatialEntityData
+
+constructors:
+  -
+    description: Creates a new LightProbeVolumeData frostbite instance.
+  -
+    description: Creates a new LightProbeVolumeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SpatialEntityData to LightProbeVolumeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to LightProbeVolumeData.
+  -
+    description: Casts an instance of type EntityData to LightProbeVolumeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to LightProbeVolumeData.
+  -
+    description: Casts an instance of type GameObjectData to LightProbeVolumeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to LightProbeVolumeData.
+  -
+    description: Casts an instance of type GameDataContainer to LightProbeVolumeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to LightProbeVolumeData.
+  -
+    description: Casts an instance of type DataContainer to LightProbeVolumeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to LightProbeVolumeData.
+
+properties:
+  xres:
+    type: int
+  yres:
+    type: int
+  zres:
+    type: int
+  blendDistance:
+    type: float
+  priority:
+    type: int
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the LightProbeVolumeData type.
+

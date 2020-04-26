@@ -1,0 +1,33 @@
+name: RadiosityMaterial
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new RadiosityMaterial frostbite instance.
+  -
+    description: Creates a new RadiosityMaterial frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to RadiosityMaterial. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to RadiosityMaterial.
+
+properties:
+  color:
+    type: Vec3
+  name:
+    type: string
+  emissive:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the RadiosityMaterial type.
+

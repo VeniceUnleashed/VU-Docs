@@ -1,0 +1,55 @@
+name: VehicleBlueprint
+type: class
+inherits: ObjectBlueprint
+
+constructors:
+  -
+    description: Creates a new VehicleBlueprint frostbite instance.
+  -
+    description: Creates a new VehicleBlueprint frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ObjectBlueprint to VehicleBlueprint. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ObjectBlueprint
+        description: The instance to cast to VehicleBlueprint.
+  -
+    description: Casts an instance of type Blueprint to VehicleBlueprint. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Blueprint
+        description: The instance to cast to VehicleBlueprint.
+  -
+    description: Casts an instance of type EntityBusData to VehicleBlueprint. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityBusData
+        description: The instance to cast to VehicleBlueprint.
+  -
+    description: Casts an instance of type DataBusData to VehicleBlueprint. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataBusData
+        description: The instance to cast to VehicleBlueprint.
+  -
+    description: Casts an instance of type Asset to VehicleBlueprint. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to VehicleBlueprint.
+  -
+    description: Casts an instance of type DataContainer to VehicleBlueprint. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VehicleBlueprint.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VehicleBlueprint type.
+

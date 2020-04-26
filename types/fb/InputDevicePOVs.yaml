@@ -1,0 +1,13 @@
+name: InputDevicePOVs
+type: enum
+
+values:
+  IDP_POV_0:
+    value: 0
+  IDP_POV_1:
+    value: 1
+  IDP_POV_2:
+    value: 2
+  IDP_POV_Undefined:
+    value: 3
+

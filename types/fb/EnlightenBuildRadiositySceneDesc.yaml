@@ -1,0 +1,54 @@
+name: EnlightenBuildRadiositySceneDesc
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new EnlightenBuildRadiositySceneDesc frostbite instance.
+  -
+    description: Creates a new EnlightenBuildRadiositySceneDesc frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to EnlightenBuildRadiositySceneDesc. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to EnlightenBuildRadiositySceneDesc.
+
+properties:
+  lightProbeSets:
+    type: EnlightenLightProbeSet
+    array: true
+  instances:
+    type: EnlightenInputInstance
+    array: true
+  staticLightProbes:
+    type: Vec3
+    array: true
+  terrain:
+    type: string
+  samplesPerCluster:
+    type: int
+  systemInfluenceRadius:
+    type: float
+  systemSize:
+    type: int
+  irBudget:
+    type: int
+  clusterSize:
+    type: float
+  saveDebugData:
+    type: bool
+  distributedBuild:
+    type: bool
+  cacheEnable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the EnlightenBuildRadiositySceneDesc type.
+

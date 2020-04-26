@@ -1,0 +1,53 @@
+name: MasterUnitSettings
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new MasterUnitSettings frostbite instance.
+  -
+    description: Creates a new MasterUnitSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to MasterUnitSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MasterUnitSettings.
+
+properties:
+  name:
+    type: string
+  equalizer:
+    type: EqualizerSettings
+    nullable: true
+  compressor:
+    type: CompressorSettings
+    nullable: true
+  masterVolume:
+    type: float
+  masterLfeGain:
+    type: float
+  masterDialogGain:
+    type: float
+  reverbVolume:
+    type: float
+  mainMixVolume:
+    type: float
+  distortionClipLevel:
+    type: float
+  parallelDistortionGain:
+    type: float
+  postEffectsGain:
+    type: float
+  fadeTime:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MasterUnitSettings type.
+

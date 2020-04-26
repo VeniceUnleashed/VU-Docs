@@ -1,0 +1,60 @@
+name: AIEntryData
+type: class
+inherits: GameAIEntryData
+
+constructors:
+  -
+    description: Creates a new AIEntryData frostbite instance.
+  -
+    description: Creates a new AIEntryData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameAIEntryData to AIEntryData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameAIEntryData
+        description: The instance to cast to AIEntryData.
+  -
+    description: Casts an instance of type Asset to AIEntryData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to AIEntryData.
+  -
+    description: Casts an instance of type DataContainer to AIEntryData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to AIEntryData.
+
+properties:
+  equipmentType:
+    type: AIVehicleBehaviourData
+    nullable: true
+  armament:
+    type: ArmamentData
+    nullable: true
+  mobility:
+    type: MobilityData
+    nullable: true
+  strengthType:
+    type: StrengthType
+  reuseTime:
+    type: float
+  forbidden:
+    type: bool
+  hasExposedSoldier:
+    type: bool
+  interludeOnly:
+    type: bool
+  invalidForAI:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the AIEntryData type.
+

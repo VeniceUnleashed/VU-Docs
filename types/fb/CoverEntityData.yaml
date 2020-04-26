@@ -1,0 +1,64 @@
+name: CoverEntityData
+type: class
+inherits: SpatialEntityData
+
+constructors:
+  -
+    description: Creates a new CoverEntityData frostbite instance.
+  -
+    description: Creates a new CoverEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SpatialEntityData to CoverEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to CoverEntityData.
+  -
+    description: Casts an instance of type EntityData to CoverEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to CoverEntityData.
+  -
+    description: Casts an instance of type GameObjectData to CoverEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to CoverEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to CoverEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to CoverEntityData.
+  -
+    description: Casts an instance of type DataContainer to CoverEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to CoverEntityData.
+
+properties:
+  width:
+    type: float
+  coverType:
+    type: CoverType
+  slots:
+    type: CoverSlot
+    array: true
+  rightEdgeBlocked:
+    type: bool
+  topBlocked:
+    type: bool
+  leftEdgeBlocked:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the CoverEntityData type.
+

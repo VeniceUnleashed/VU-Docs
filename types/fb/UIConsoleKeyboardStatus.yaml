@@ -1,0 +1,17 @@
+name: UIConsoleKeyboardStatus
+type: enum
+
+values:
+  UIConsoleKeyboardStatus_Success:
+    value: 0
+  UIConsoleKeyboardStatus_Failed:
+    value: 1
+  UIConsoleKeyboardStatus_Cancelled:
+    value: 2
+  UIConsoleKeyboardStatus_Active:
+    value: 3
+  UIConsoleKeyboardStatus_Inactive:
+    value: 4
+  UIConsoleKeyboardStatus_Count:
+    value: 5
+

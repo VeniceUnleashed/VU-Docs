@@ -1,0 +1,19 @@
+name: RenderWriteMask
+type: enum
+
+values:
+  RenderWriteMask_None:
+    value: 0
+  RenderWriteMask_Red:
+    value: 1
+  RenderWriteMask_Green:
+    value: 2
+  RenderWriteMask_Blue:
+    value: 4
+  RenderWriteMask_Color:
+    value: 7
+  RenderWriteMask_Alpha:
+    value: 8
+  RenderWriteMask_All:
+    value: 15
+

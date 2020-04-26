@@ -1,0 +1,41 @@
+name: UINodeConnection
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new UINodeConnection frostbite instance.
+  -
+    description: Creates a new UINodeConnection frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to UINodeConnection. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UINodeConnection.
+
+properties:
+  sourceNode:
+    type: UINodeData
+    nullable: true
+  targetNode:
+    type: UINodeData
+    nullable: true
+  sourcePort:
+    type: UINodePort
+    nullable: true
+  targetPort:
+    type: UINodePort
+    nullable: true
+  numScreensToPop:
+    type: int
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UINodeConnection type.
+

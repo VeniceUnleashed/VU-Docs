@@ -1,0 +1,21 @@
+name: UIIconState
+type: enum
+
+values:
+  UIIconState_Default:
+    value: 0
+  UIIconState_Enemy:
+    value: 1
+  UIIconState_Friendly:
+    value: 2
+  UIIconState_Neutral:
+    value: 3
+  UIIconState_Squad:
+    value: 4
+  UIIconState_Blink:
+    value: 5
+  UIIconState_BlinkEnemy:
+    value: 6
+  UIIconState_Count:
+    value: 7
+

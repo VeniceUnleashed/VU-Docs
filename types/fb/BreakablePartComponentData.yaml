@@ -1,0 +1,57 @@
+name: BreakablePartComponentData
+type: class
+inherits: DestructionPartComponentData
+
+constructors:
+  -
+    description: Creates a new BreakablePartComponentData frostbite instance.
+  -
+    description: Creates a new BreakablePartComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DestructionPartComponentData to BreakablePartComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DestructionPartComponentData
+        description: The instance to cast to BreakablePartComponentData.
+  -
+    description: Casts an instance of type ComponentData to BreakablePartComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to BreakablePartComponentData.
+  -
+    description: Casts an instance of type GameObjectData to BreakablePartComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to BreakablePartComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to BreakablePartComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to BreakablePartComponentData.
+  -
+    description: Casts an instance of type DataContainer to BreakablePartComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to BreakablePartComponentData.
+
+properties:
+  healthPercentage:
+    type: int
+  collapsable:
+    type: bool
+  destroyNearbyStaticEntities:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the BreakablePartComponentData type.
+

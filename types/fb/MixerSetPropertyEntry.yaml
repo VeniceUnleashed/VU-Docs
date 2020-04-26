@@ -1,0 +1,44 @@
+name: MixerSetPropertyEntry
+type: class
+inherits: AudioGraphNodePortGroup
+
+constructors:
+  -
+    description: Creates a new MixerSetPropertyEntry frostbite instance.
+  -
+    description: Creates a new MixerSetPropertyEntry frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphNodePortGroup to MixerSetPropertyEntry. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphNodePortGroup
+        description: The instance to cast to MixerSetPropertyEntry.
+  -
+    description: Casts an instance of type DataContainer to MixerSetPropertyEntry. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MixerSetPropertyEntry.
+
+properties:
+  inValue:
+    type: AudioGraphNodePort
+  target:
+    type: int
+  group:
+    type: MixGroup
+    nullable: true
+  attackTime:
+    type: float
+  releaseTime:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MixerSetPropertyEntry type.
+

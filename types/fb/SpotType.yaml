@@ -1,0 +1,17 @@
+name: SpotType
+type: enum
+
+values:
+  SpotType_None:
+    value: 0
+  SpotType_Active:
+    value: 1
+  SpotType_Passive:
+    value: 2
+  SpotType_Radar:
+    value: 3
+  SpotType_Unspottable:
+    value: 4
+  SpotType_Count:
+    value: 5
+

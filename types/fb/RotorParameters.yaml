@@ -1,0 +1,54 @@
+name: RotorParameters
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new RotorParameters frostbite instance.
+  -
+    description: Creates a new RotorParameters frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to RotorParameters. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to RotorParameters.
+
+properties:
+  cyclicInputScaleRoll:
+    type: float
+  cyclicInputScalePitch:
+    type: float
+  collectiveThrottleInputScale:
+    type: float
+  collectiveBrakeInputScale:
+    type: float
+  collectiveInputIdle:
+    type: float
+  horizontalForceModifier:
+    type: float
+  angleOfAttack:
+    type: Vec2
+    array: true
+  cyclicFadeOutOffset:
+    type: float
+  additionalGravityModifier:
+    type: float
+  horisontalMinEffectMod:
+    type: float
+  horisontalMinEffectVelocity:
+    type: float
+  enableHorisontalMinEffect:
+    type: bool
+  reverseThrottle:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the RotorParameters type.
+

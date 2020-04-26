@@ -1,0 +1,129 @@
+name: InputDevicePadButtons
+type: enum
+
+values:
+  IDB_Lup:
+    value: 0
+  IDB_Ldown:
+    value: 1
+  IDB_Lleft:
+    value: 2
+  IDB_Lright:
+    value: 3
+  IDB_Rup:
+    value: 4
+  IDB_Rdown:
+    value: 5
+  IDB_Rleft:
+    value: 6
+  IDB_Rright:
+    value: 7
+  IDB_Rtopleft:
+    value: 8
+  IDB_Rtopright:
+    value: 9
+  IDB_Lthumb:
+    value: 10
+  IDB_Rthumb:
+    value: 11
+  IDB_start:
+    value: 12
+  IDB_alt:
+    value: 13
+  IDB_Ltrigger:
+    value: 14
+  IDB_Rtrigger:
+    value: 15
+  IDB_Ltrigger2:
+    value: 16
+  IDB_Rtrigger2:
+    value: 17
+  IDB_XButton1:
+    value: 18
+  IDB_XButton2:
+    value: 19
+  IDB_XButton3:
+    value: 20
+  IDB_XButton4:
+    value: 21
+  IDB_XButton5:
+    value: 22
+  IDB_XButton6:
+    value: 23
+  IDB_XButton7:
+    value: 24
+  IDB_XButton8:
+    value: 25
+  IDB_XButton9:
+    value: 26
+  IDB_XButton10:
+    value: 27
+  IDB_XButton11:
+    value: 28
+  IDB_XButton12:
+    value: 29
+  IDB_XButton13:
+    value: 30
+  IDB_XButton14:
+    value: 31
+  IDB_XButton15:
+    value: 32
+  IDB_XButton16:
+    value: 33
+  IDB_XButton17:
+    value: 34
+  IDB_XButton18:
+    value: 35
+  IDB_PosZAxis:
+    value: 36
+  IDB_NegZAxis:
+    value: 37
+  IDB_XRotationPos:
+    value: 38
+  IDB_XRotationNeg:
+    value: 39
+  IDB_YRotationPos:
+    value: 40
+  IDB_YRotationNeg:
+    value: 41
+  IDB_ZRotationPos:
+    value: 42
+  IDB_ZRotationNeg:
+    value: 43
+  IDB_Pov1North:
+    value: 44
+  IDB_Pov1South:
+    value: 45
+  IDB_Pov1West:
+    value: 46
+  IDB_Pov1East:
+    value: 47
+  IDB_Pov2North:
+    value: 48
+  IDB_Pov2South:
+    value: 49
+  IDB_Pov2West:
+    value: 50
+  IDB_Pov2East:
+    value: 51
+  IDB_Pov3North:
+    value: 52
+  IDB_Pov3South:
+    value: 53
+  IDB_Pov3West:
+    value: 54
+  IDB_Pov3East:
+    value: 55
+  IDB_Pov4North:
+    value: 56
+  IDB_Pov4South:
+    value: 57
+  IDB_Pov4West:
+    value: 58
+  IDB_Pov4East:
+    value: 59
+  IDB_Undefined:
+    value: 60
+  IDB_NumPadButtons:
+    value: 60
+

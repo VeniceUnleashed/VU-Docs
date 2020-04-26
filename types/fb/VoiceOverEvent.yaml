@@ -1,0 +1,35 @@
+name: VoiceOverEvent
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new VoiceOverEvent frostbite instance.
+  -
+    description: Creates a new VoiceOverEvent frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to VoiceOverEvent. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VoiceOverEvent.
+
+properties:
+  name:
+    type: string
+  parameters:
+    type: VoiceOverNamedValue
+    array: true
+  owner:
+    type: Asset
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VoiceOverEvent type.
+

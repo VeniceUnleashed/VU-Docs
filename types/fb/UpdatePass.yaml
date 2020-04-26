@@ -1,0 +1,19 @@
+name: UpdatePass
+type: enum
+
+values:
+  UpdatePass_PreSim:
+    value: 0
+  UpdatePass_PostSim:
+    value: 1
+  UpdatePass_PostFrame:
+    value: 2
+  UpdatePass_FrameInterpolation:
+    value: 3
+  UpdatePass_PreInput:
+    value: 4
+  UpdatePass_PreFrame:
+    value: 5
+  UpdatePass_Count:
+    value: 6
+

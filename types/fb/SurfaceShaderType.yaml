@@ -1,0 +1,15 @@
+name: SurfaceShaderType
+type: enum
+
+values:
+  SurfaceShaderType_Opaque:
+    value: 0
+  SurfaceShaderType_OpaqueAlphaTest:
+    value: 1
+  SurfaceShaderType_OpaqueAlphaTestSimple:
+    value: 2
+  SurfaceShaderType_Transparent:
+    value: 3
+  SurfaceShaderType_TransparentDecal:
+    value: 4
+

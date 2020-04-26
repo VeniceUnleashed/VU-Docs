@@ -1,0 +1,23 @@
+name: WeaponAnimType
+type: enum
+
+values:
+  WeaponAnimType_NoAddon:
+    value: 0
+  WeaponAnimType_Bipod:
+    value: 1
+  WeaponAnimType_Foregrip:
+    value: 2
+  WeaponAnimType_40mm_GL:
+    value: 3
+  WeaponAnimType_40mm_GL_Fire:
+    value: 4
+  WeaponAnimType_Underslung_Shotgun:
+    value: 5
+  WeaponAnimType_Underslung_Shotgun_Fire:
+    value: 6
+  WeaponAnimType_Straight_Pull_Bolt:
+    value: 7
+  WeaponAnimType_Extended_Mag:
+    value: 8
+

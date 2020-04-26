@@ -1,0 +1,19 @@
+name: ServerUnlockSystemType
+type: enum
+
+values:
+  ServerUnlockSystemType_All:
+    value: 0
+  ServerUnlockSystemType_Common:
+    value: 1
+  ServerUnlockSystemType_None:
+    value: 2
+  ServerUnlockSystemType_FromStats:
+    value: 3
+  ServerUnlockSystemType_FromWhiteList:
+    value: 4
+  ServerUnlockSystemType_FromBlackList:
+    value: 5
+  ServerUnlockSystemType_Count:
+    value: 6
+

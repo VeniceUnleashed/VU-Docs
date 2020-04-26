@@ -1,0 +1,83 @@
+name: SupplySphereEntityData
+type: class
+inherits: ExplosionPackEntityData
+
+constructors:
+  -
+    description: Creates a new SupplySphereEntityData frostbite instance.
+  -
+    description: Creates a new SupplySphereEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ExplosionPackEntityData to SupplySphereEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ExplosionPackEntityData
+        description: The instance to cast to SupplySphereEntityData.
+  -
+    description: Casts an instance of type MeshProjectileEntityData to SupplySphereEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MeshProjectileEntityData
+        description: The instance to cast to SupplySphereEntityData.
+  -
+    description: Casts an instance of type ProjectileEntityData to SupplySphereEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ProjectileEntityData
+        description: The instance to cast to SupplySphereEntityData.
+  -
+    description: Casts an instance of type GamePhysicsEntityData to SupplySphereEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GamePhysicsEntityData
+        description: The instance to cast to SupplySphereEntityData.
+  -
+    description: Casts an instance of type GameEntityData to SupplySphereEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to SupplySphereEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to SupplySphereEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to SupplySphereEntityData.
+  -
+    description: Casts an instance of type EntityData to SupplySphereEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to SupplySphereEntityData.
+  -
+    description: Casts an instance of type GameObjectData to SupplySphereEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to SupplySphereEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to SupplySphereEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to SupplySphereEntityData.
+  -
+    description: Casts an instance of type DataContainer to SupplySphereEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SupplySphereEntityData.
+
+properties:
+  supplyData:
+    type: SupplyData
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SupplySphereEntityData type.
+

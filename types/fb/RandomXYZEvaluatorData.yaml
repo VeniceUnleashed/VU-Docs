@@ -1,0 +1,51 @@
+name: RandomXYZEvaluatorData
+type: class
+inherits: EvaluatorData
+
+constructors:
+  -
+    description: Creates a new RandomXYZEvaluatorData frostbite instance.
+  -
+    description: Creates a new RandomXYZEvaluatorData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EvaluatorData to RandomXYZEvaluatorData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EvaluatorData
+        description: The instance to cast to RandomXYZEvaluatorData.
+  -
+    description: Casts an instance of type EmitterComponentData to RandomXYZEvaluatorData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EmitterComponentData
+        description: The instance to cast to RandomXYZEvaluatorData.
+  -
+    description: Casts an instance of type DataContainer to RandomXYZEvaluatorData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to RandomXYZEvaluatorData.
+
+properties:
+  maxX:
+    type: float
+  minX:
+    type: float
+  maxY:
+    type: float
+  minY:
+    type: float
+  maxZ:
+    type: float
+  minZ:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the RandomXYZEvaluatorData type.
+

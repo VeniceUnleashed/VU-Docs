@@ -1,0 +1,15 @@
+name: Realm
+type: enum
+
+values:
+  Realm_Client:
+    value: 0
+  Realm_Server:
+    value: 1
+  Realm_ClientAndServer:
+    value: 2
+  Realm_None:
+    value: 3
+  Realm_Pipeline:
+    value: 4
+

@@ -1,0 +1,7 @@
+name: EntropyCodecType
+type: enum
+
+values:
+  EntropyCodecType_Arithmetic:
+    value: 0
+

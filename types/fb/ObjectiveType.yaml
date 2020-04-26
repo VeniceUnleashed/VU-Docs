@@ -1,0 +1,11 @@
+name: ObjectiveType
+type: enum
+
+values:
+  OTPrimary:
+    value: 0
+  OTTactical:
+    value: 1
+  OTChildMisson:
+    value: 2
+

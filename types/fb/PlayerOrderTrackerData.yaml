@@ -1,0 +1,45 @@
+name: PlayerOrderTrackerData
+type: class
+inherits: HudTrackerData
+
+constructors:
+  -
+    description: Creates a new PlayerOrderTrackerData frostbite instance.
+  -
+    description: Creates a new PlayerOrderTrackerData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type HudTrackerData to PlayerOrderTrackerData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: HudTrackerData
+        description: The instance to cast to PlayerOrderTrackerData.
+  -
+    description: Casts an instance of type UIPartData to PlayerOrderTrackerData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIPartData
+        description: The instance to cast to PlayerOrderTrackerData.
+  -
+    description: Casts an instance of type DataContainer to PlayerOrderTrackerData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PlayerOrderTrackerData.
+
+properties:
+  attackIcon:
+    type: UIHudIcon
+  defendIcon:
+    type: UIHudIcon
+  moveToIcon:
+    type: UIHudIcon
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PlayerOrderTrackerData type.
+

@@ -1,0 +1,11 @@
+name: SocketType
+type: enum
+
+values:
+  SocketType_Undefined:
+    value: 0
+  SocketType_Gameplay:
+    value: 1
+  SocketType_Visual:
+    value: 2
+

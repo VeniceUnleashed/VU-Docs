@@ -1,0 +1,41 @@
+name: SoundWaveVariation
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new SoundWaveVariation frostbite instance.
+  -
+    description: Creates a new SoundWaveVariation frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to SoundWaveVariation. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SoundWaveVariation.
+
+properties:
+  subtitles:
+    type: SoundWaveSubtitle
+    array: true
+  seekTablesSize:
+    type: int
+  segments:
+    type: SoundWaveVariationSegment
+    array: true
+  chunkIndex:
+    type: int
+  firstLoopSegmentIndex:
+    type: int
+  lastLoopSegmentIndex:
+    type: int
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SoundWaveVariation type.
+

@@ -1,0 +1,53 @@
+name: ParachuteStateData
+type: class
+inherits: CharacterStateData
+
+constructors:
+  -
+    description: Creates a new ParachuteStateData frostbite instance.
+  -
+    description: Creates a new ParachuteStateData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type CharacterStateData to ParachuteStateData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: CharacterStateData
+        description: The instance to cast to ParachuteStateData.
+  -
+    description: Casts an instance of type DataContainer to ParachuteStateData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ParachuteStateData.
+
+properties:
+  deployTime:
+    type: float
+  terminalVelocity:
+    type: float
+  forwardDragCoefficient:
+    type: float
+  angleOfAttack:
+    type: float
+  bankOffset:
+    type: float
+  throttleOffset:
+    type: float
+  brakeOffset:
+    type: float
+  maxRollVelocity:
+    type: float
+  maxPitchVelocity:
+    type: float
+  maxYawVelocity:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ParachuteStateData type.
+

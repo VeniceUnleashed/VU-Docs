@@ -1,0 +1,84 @@
+name: BangerEntityData
+type: class
+inherits: DynamicGamePhysicsEntityData
+
+constructors:
+  -
+    description: Creates a new BangerEntityData frostbite instance.
+  -
+    description: Creates a new BangerEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DynamicGamePhysicsEntityData to BangerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DynamicGamePhysicsEntityData
+        description: The instance to cast to BangerEntityData.
+  -
+    description: Casts an instance of type GamePhysicsEntityData to BangerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GamePhysicsEntityData
+        description: The instance to cast to BangerEntityData.
+  -
+    description: Casts an instance of type GameEntityData to BangerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to BangerEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to BangerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to BangerEntityData.
+  -
+    description: Casts an instance of type EntityData to BangerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to BangerEntityData.
+  -
+    description: Casts an instance of type GameObjectData to BangerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to BangerEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to BangerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to BangerEntityData.
+  -
+    description: Casts an instance of type DataContainer to BangerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to BangerEntityData.
+
+properties:
+  scales:
+    type: float
+    array: true
+  mesh:
+    type: MeshAsset
+    nullable: true
+  explosion:
+    type: ExplosionEntityData
+    nullable: true
+  timeToLive:
+    type: float
+  destructiblePartCount:
+    type: int
+  useVariableNetworkFrequency:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the BangerEntityData type.
+

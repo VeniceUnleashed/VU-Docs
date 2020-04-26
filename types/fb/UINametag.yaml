@@ -1,0 +1,47 @@
+name: UINametag
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new UINametag frostbite instance.
+  -
+    description: Creates a new UINametag frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to UINametag. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UINametag.
+
+properties:
+  textColor:
+    type: Vec3
+  iconFadeDistance:
+    type: float
+  iconMaxDistance:
+    type: float
+  icon:
+    type: UIHudIcon
+  textFadeDistance:
+    type: float
+  healthFadeDistance:
+    type: float
+  healthMaxDistance:
+    type: float
+  textMaxDistance:
+    type: float
+  targetInTimer:
+    type: float
+  targetOutTimer:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UINametag type.
+

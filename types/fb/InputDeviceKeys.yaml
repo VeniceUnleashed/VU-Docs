@@ -1,0 +1,293 @@
+name: InputDeviceKeys
+type: enum
+
+values:
+  IDK_None:
+    value: 0
+  IDK_Escape:
+    value: 1
+  IDK_1:
+    value: 2
+  IDK_2:
+    value: 3
+  IDK_3:
+    value: 4
+  IDK_4:
+    value: 5
+  IDK_5:
+    value: 6
+  IDK_6:
+    value: 7
+  IDK_7:
+    value: 8
+  IDK_8:
+    value: 9
+  IDK_9:
+    value: 10
+  IDK_0:
+    value: 11
+  IDK_Minus:
+    value: 12
+  IDK_Equals:
+    value: 13
+  IDK_Backspace:
+    value: 14
+  IDK_Tab:
+    value: 15
+  IDK_Q:
+    value: 16
+  IDK_W:
+    value: 17
+  IDK_E:
+    value: 18
+  IDK_R:
+    value: 19
+  IDK_T:
+    value: 20
+  IDK_Y:
+    value: 21
+  IDK_U:
+    value: 22
+  IDK_I:
+    value: 23
+  IDK_O:
+    value: 24
+  IDK_P:
+    value: 25
+  IDK_LeftBracket:
+    value: 26
+  IDK_RightBracket:
+    value: 27
+  IDK_Enter:
+    value: 28
+  IDK_LeftCtrl:
+    value: 29
+  IDK_A:
+    value: 30
+  IDK_S:
+    value: 31
+  IDK_D:
+    value: 32
+  IDK_F:
+    value: 33
+  IDK_G:
+    value: 34
+  IDK_H:
+    value: 35
+  IDK_J:
+    value: 36
+  IDK_K:
+    value: 37
+  IDK_L:
+    value: 38
+  IDK_Semicolon:
+    value: 39
+  IDK_Apostrophe:
+    value: 40
+  IDK_Grave:
+    value: 41
+  IDK_LeftShift:
+    value: 42
+  IDK_Backslash:
+    value: 43
+  IDK_Z:
+    value: 44
+  IDK_X:
+    value: 45
+  IDK_C:
+    value: 46
+  IDK_V:
+    value: 47
+  IDK_B:
+    value: 48
+  IDK_N:
+    value: 49
+  IDK_M:
+    value: 50
+  IDK_Comma:
+    value: 51
+  IDK_Period:
+    value: 52
+  IDK_Slash:
+    value: 53
+  IDK_RightShift:
+    value: 54
+  IDK_Multiply:
+    value: 55
+  IDK_LeftAlt:
+    value: 56
+  IDK_Space:
+    value: 57
+  IDK_Capital:
+    value: 58
+  IDK_F1:
+    value: 59
+  IDK_F2:
+    value: 60
+  IDK_F3:
+    value: 61
+  IDK_F4:
+    value: 62
+  IDK_F5:
+    value: 63
+  IDK_F6:
+    value: 64
+  IDK_F7:
+    value: 65
+  IDK_F8:
+    value: 66
+  IDK_F9:
+    value: 67
+  IDK_F10:
+    value: 68
+  IDK_Numlock:
+    value: 69
+  IDK_ScrollLock:
+    value: 70
+  IDK_Numpad7:
+    value: 71
+  IDK_Numpad8:
+    value: 72
+  IDK_Numpad9:
+    value: 73
+  IDK_Subtract:
+    value: 74
+  IDK_Numpad4:
+    value: 75
+  IDK_Numpad5:
+    value: 76
+  IDK_Numpad6:
+    value: 77
+  IDK_Add:
+    value: 78
+  IDK_Numpad1:
+    value: 79
+  IDK_Numpad2:
+    value: 80
+  IDK_Numpad3:
+    value: 81
+  IDK_Numpad0:
+    value: 82
+  IDK_Decimal:
+    value: 83
+  IDK_OEM_102:
+    value: 86
+  IDK_F11:
+    value: 87
+  IDK_F12:
+    value: 88
+  IDK_F13:
+    value: 100
+  IDK_F14:
+    value: 101
+  IDK_F15:
+    value: 102
+  IDK_Kana:
+    value: 112
+  IDK_Convert:
+    value: 121
+  IDK_NoConvert:
+    value: 123
+  IDK_Yen:
+    value: 125
+  IDK_NumpadEquals:
+    value: 141
+  IDK_PrevTrack:
+    value: 144
+  IDK_At:
+    value: 145
+  IDK_Colon:
+    value: 146
+  IDK_Underline:
+    value: 147
+  IDK_Kanji:
+    value: 148
+  IDK_Stop:
+    value: 149
+  IDK_Ax:
+    value: 150
+  IDK_Unlabeled:
+    value: 151
+  IDK_NextTrack:
+    value: 153
+  IDK_NumpadEnter:
+    value: 156
+  IDK_RightCtrl:
+    value: 157
+  IDK_Mute:
+    value: 160
+  IDK_Calculator:
+    value: 161
+  IDK_PlayPause:
+    value: 162
+  IDK_MediaStop:
+    value: 164
+  IDK_VolumeDown:
+    value: 174
+  IDK_VolumeUp:
+    value: 176
+  IDK_WebHome:
+    value: 178
+  IDK_NumpadComma:
+    value: 179
+  IDK_Divide:
+    value: 181
+  IDK_PrintScreen:
+    value: 183
+  IDK_RightAlt:
+    value: 184
+  IDK_Pause:
+    value: 197
+  IDK_Home:
+    value: 199
+  IDK_ArrowUp:
+    value: 200
+  IDK_PageUp:
+    value: 201
+  IDK_ArrowLeft:
+    value: 203
+  IDK_ArrowRight:
+    value: 205
+  IDK_End:
+    value: 207
+  IDK_ArrowDown:
+    value: 208
+  IDK_PageDown:
+    value: 209
+  IDK_Insert:
+    value: 210
+  IDK_Delete:
+    value: 211
+  IDK_LeftWin:
+    value: 219
+  IDK_RightWin:
+    value: 220
+  IDK_AppMenu:
+    value: 221
+  IDK_Power:
+    value: 222
+  IDK_Sleep:
+    value: 223
+  IDK_Wake:
+    value: 227
+  IDK_WebSearch:
+    value: 229
+  IDK_WebFavorites:
+    value: 230
+  IDK_WebRefresh:
+    value: 231
+  IDK_WebStop:
+    value: 232
+  IDK_WebForward:
+    value: 233
+  IDK_WebBack:
+    value: 234
+  IDK_MyComputer:
+    value: 235
+  IDK_Mail:
+    value: 236
+  IDK_MediaSelect:
+    value: 237
+  IDK_Undefined:
+    value: 255
+

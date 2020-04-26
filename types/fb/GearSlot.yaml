@@ -1,0 +1,33 @@
+name: GearSlot
+type: enum
+
+values:
+  GearSlot_Melee:
+    value: 0
+  GearSlot_Sidearm:
+    value: 1
+  GearSlot_Primary:
+    value: 2
+  GearSlot_Auxiliary:
+    value: 3
+  GearSlot_Secondary:
+    value: 4
+  GearSlot_Gadget1:
+    value: 5
+  GearSlot_Gadget2:
+    value: 6
+  GearSlot_Gadget3:
+    value: 7
+  GearSlot_Gadget4:
+    value: 8
+  GearSlot_Gadget5:
+    value: 9
+  GearSlot_Gadget6:
+    value: 10
+  GearSlot_Gadget7:
+    value: 11
+  GearSlot_GearSlotCount:
+    value: 12
+  GearSlot_NotEquipped:
+    value: 13
+

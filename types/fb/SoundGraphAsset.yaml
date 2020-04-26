@@ -1,0 +1,45 @@
+name: SoundGraphAsset
+type: class
+inherits: SoundAsset
+
+constructors:
+  -
+    description: Creates a new SoundGraphAsset frostbite instance.
+  -
+    description: Creates a new SoundGraphAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SoundAsset to SoundGraphAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SoundAsset
+        description: The instance to cast to SoundGraphAsset.
+  -
+    description: Casts an instance of type Asset to SoundGraphAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to SoundGraphAsset.
+  -
+    description: Casts an instance of type DataContainer to SoundGraphAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SoundGraphAsset.
+
+properties:
+  graph:
+    type: SoundGraphData
+    nullable: true
+  mixer:
+    type: MixerAsset
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SoundGraphAsset type.
+

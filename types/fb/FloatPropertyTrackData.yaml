@@ -1,0 +1,42 @@
+name: FloatPropertyTrackData
+type: class
+inherits: SimplePropertyTrackData
+
+constructors:
+  -
+    description: Creates a new FloatPropertyTrackData frostbite instance.
+  -
+    description: Creates a new FloatPropertyTrackData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SimplePropertyTrackData to FloatPropertyTrackData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SimplePropertyTrackData
+        description: The instance to cast to FloatPropertyTrackData.
+  -
+    description: Casts an instance of type PropertyTrackData to FloatPropertyTrackData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: PropertyTrackData
+        description: The instance to cast to FloatPropertyTrackData.
+  -
+    description: Casts an instance of type DataContainer to FloatPropertyTrackData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to FloatPropertyTrackData.
+
+properties:
+  values:
+    type: float
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the FloatPropertyTrackData type.
+

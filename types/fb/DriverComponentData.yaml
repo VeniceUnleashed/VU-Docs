@@ -1,0 +1,50 @@
+name: DriverComponentData
+type: class
+inherits: ComponentData
+
+constructors:
+  -
+    description: Creates a new DriverComponentData frostbite instance.
+  -
+    description: Creates a new DriverComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ComponentData to DriverComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to DriverComponentData.
+  -
+    description: Casts an instance of type GameObjectData to DriverComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to DriverComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to DriverComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to DriverComponentData.
+  -
+    description: Casts an instance of type DataContainer to DriverComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to DriverComponentData.
+
+properties:
+  wantedSpeed:
+    type: float
+  settings:
+    type: DriverSettings
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the DriverComponentData type.
+

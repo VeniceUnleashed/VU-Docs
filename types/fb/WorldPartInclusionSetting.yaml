@@ -1,0 +1,31 @@
+name: WorldPartInclusionSetting
+type: class
+inherits: SubWorldInclusionSetting
+
+constructors:
+  -
+    description: Creates a new WorldPartInclusionSetting frostbite instance.
+  -
+    description: Creates a new WorldPartInclusionSetting frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SubWorldInclusionSetting to WorldPartInclusionSetting. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SubWorldInclusionSetting
+        description: The instance to cast to WorldPartInclusionSetting.
+  -
+    description: Casts an instance of type DataContainer to WorldPartInclusionSetting. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to WorldPartInclusionSetting.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the WorldPartInclusionSetting type.
+

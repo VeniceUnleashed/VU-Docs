@@ -1,0 +1,9 @@
+name: CharacterPoseCollisionType
+type: enum
+
+values:
+  CharacterPoseCollisionType_Capsule:
+    value: 0
+  CharacterPoseCollisionType_Pencil:
+    value: 1
+

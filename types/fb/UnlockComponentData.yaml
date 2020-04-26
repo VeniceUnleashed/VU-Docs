@@ -1,0 +1,54 @@
+name: UnlockComponentData
+type: class
+inherits: ComponentData
+
+constructors:
+  -
+    description: Creates a new UnlockComponentData frostbite instance.
+  -
+    description: Creates a new UnlockComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ComponentData to UnlockComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to UnlockComponentData.
+  -
+    description: Casts an instance of type GameObjectData to UnlockComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to UnlockComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to UnlockComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to UnlockComponentData.
+  -
+    description: Casts an instance of type DataContainer to UnlockComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UnlockComponentData.
+
+properties:
+  unlockAsset:
+    type: UnlockAssetBase
+    nullable: true
+  unlockDataKey:
+    type: int
+  unlockableFromAllEntries:
+    type: bool
+  invertUnlockTest:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UnlockComponentData type.
+

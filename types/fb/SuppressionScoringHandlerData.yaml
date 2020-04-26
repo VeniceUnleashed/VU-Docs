@@ -1,0 +1,37 @@
+name: SuppressionScoringHandlerData
+type: class
+inherits: ScoringHandlerData
+
+constructors:
+  -
+    description: Creates a new SuppressionScoringHandlerData frostbite instance.
+  -
+    description: Creates a new SuppressionScoringHandlerData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ScoringHandlerData to SuppressionScoringHandlerData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ScoringHandlerData
+        description: The instance to cast to SuppressionScoringHandlerData.
+  -
+    description: Casts an instance of type DataContainer to SuppressionScoringHandlerData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SuppressionScoringHandlerData.
+
+properties:
+  suppressionAmountLimit:
+    type: float
+  timeSinceSuppressionLimit:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SuppressionScoringHandlerData type.
+

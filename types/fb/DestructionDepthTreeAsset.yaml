@@ -1,0 +1,31 @@
+name: DestructionDepthTreeAsset
+type: class
+inherits: RasterTreeAsset
+
+constructors:
+  -
+    description: Creates a new DestructionDepthTreeAsset frostbite instance.
+  -
+    description: Creates a new DestructionDepthTreeAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type RasterTreeAsset to DestructionDepthTreeAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: RasterTreeAsset
+        description: The instance to cast to DestructionDepthTreeAsset.
+  -
+    description: Casts an instance of type DataContainer to DestructionDepthTreeAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to DestructionDepthTreeAsset.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the DestructionDepthTreeAsset type.
+

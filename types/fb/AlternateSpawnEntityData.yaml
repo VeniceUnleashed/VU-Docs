@@ -1,0 +1,57 @@
+name: AlternateSpawnEntityData
+type: class
+inherits: SpatialEntityData
+
+constructors:
+  -
+    description: Creates a new AlternateSpawnEntityData frostbite instance.
+  -
+    description: Creates a new AlternateSpawnEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SpatialEntityData to AlternateSpawnEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to AlternateSpawnEntityData.
+  -
+    description: Casts an instance of type EntityData to AlternateSpawnEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to AlternateSpawnEntityData.
+  -
+    description: Casts an instance of type GameObjectData to AlternateSpawnEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to AlternateSpawnEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to AlternateSpawnEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to AlternateSpawnEntityData.
+  -
+    description: Casts an instance of type DataContainer to AlternateSpawnEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to AlternateSpawnEntityData.
+
+properties:
+  team:
+    type: TeamId
+  priority:
+    type: float
+  enabled:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the AlternateSpawnEntityData type.
+

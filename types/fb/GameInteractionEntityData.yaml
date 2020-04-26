@@ -1,0 +1,93 @@
+name: GameInteractionEntityData
+type: class
+inherits: InteractionEntityData
+
+constructors:
+  -
+    description: Creates a new GameInteractionEntityData frostbite instance.
+  -
+    description: Creates a new GameInteractionEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type InteractionEntityData to GameInteractionEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: InteractionEntityData
+        description: The instance to cast to GameInteractionEntityData.
+  -
+    description: Casts an instance of type GameEntityData to GameInteractionEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to GameInteractionEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to GameInteractionEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to GameInteractionEntityData.
+  -
+    description: Casts an instance of type EntityData to GameInteractionEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to GameInteractionEntityData.
+  -
+    description: Casts an instance of type GameObjectData to GameInteractionEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to GameInteractionEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to GameInteractionEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to GameInteractionEntityData.
+  -
+    description: Casts an instance of type DataContainer to GameInteractionEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to GameInteractionEntityData.
+
+properties:
+  blink:
+    type: BlinkType
+  capturepointVerticalOffset:
+    type: float
+  delayBetweenUses:
+    type: float
+  teamId:
+    type: TeamId
+  inputAction:
+    type: EntryInputActionEnum
+  holdToInteractTime:
+    type: float
+  interactionEntityType:
+    type: InteractionEntityType
+  interactionSid:
+    type: string
+  interactingSid:
+    type: string
+  friendlyTextSid:
+    type: string
+  nameSid:
+    type: string
+  interactionVerticalOffset:
+    type: float
+  enemyTextSid:
+    type: string
+  shrinkSnap:
+    type: bool
+  showAsCapturePoint:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the GameInteractionEntityData type.
+

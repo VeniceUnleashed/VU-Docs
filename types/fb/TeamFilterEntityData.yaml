@@ -1,0 +1,65 @@
+name: TeamFilterEntityData
+type: class
+inherits: GameEntityData
+
+constructors:
+  -
+    description: Creates a new TeamFilterEntityData frostbite instance.
+  -
+    description: Creates a new TeamFilterEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameEntityData to TeamFilterEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to TeamFilterEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to TeamFilterEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to TeamFilterEntityData.
+  -
+    description: Casts an instance of type EntityData to TeamFilterEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to TeamFilterEntityData.
+  -
+    description: Casts an instance of type GameObjectData to TeamFilterEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to TeamFilterEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to TeamFilterEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to TeamFilterEntityData.
+  -
+    description: Casts an instance of type DataContainer to TeamFilterEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to TeamFilterEntityData.
+
+properties:
+  realm:
+    type: Realm
+  team:
+    type: TeamId
+  invertFilter:
+    type: bool
+  generateEventForEveryMatchingTeamMember:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the TeamFilterEntityData type.
+

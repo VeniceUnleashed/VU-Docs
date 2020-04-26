@@ -1,0 +1,9 @@
+name: RouteType
+type: enum
+
+values:
+  RouteStop:
+    value: 0
+  RouteCircular:
+    value: 1
+

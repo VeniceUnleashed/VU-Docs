@@ -1,0 +1,39 @@
+name: ShaderColorUnlockPartCollection
+type: class
+inherits: ShaderCustomizationUnlockPartCollection
+
+constructors:
+  -
+    description: Creates a new ShaderColorUnlockPartCollection frostbite instance.
+  -
+    description: Creates a new ShaderColorUnlockPartCollection frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ShaderCustomizationUnlockPartCollection to ShaderColorUnlockPartCollection. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ShaderCustomizationUnlockPartCollection
+        description: The instance to cast to ShaderColorUnlockPartCollection.
+  -
+    description: Casts an instance of type DataContainer to ShaderColorUnlockPartCollection. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ShaderColorUnlockPartCollection.
+
+properties:
+  defaultColorReference:
+    type: ColorReference
+    nullable: true
+  unlockParts:
+    type: ColorUnlockPartData
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ShaderColorUnlockPartCollection type.
+

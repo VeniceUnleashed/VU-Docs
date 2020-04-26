@@ -1,0 +1,17 @@
+name: UIListNavigationType
+type: enum
+
+values:
+  loop:
+    value: 0
+  noLoop:
+    value: 1
+  sendEventTopBottom:
+    value: 2
+  sendEventTop:
+    value: 3
+  sendEventBottom:
+    value: 4
+  none:
+    value: 5
+

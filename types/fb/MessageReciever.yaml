@@ -1,0 +1,13 @@
+name: MessageReciever
+type: enum
+
+values:
+  MrAll:
+    value: 0
+  MrTeam:
+    value: 1
+  MrTeamAndSquad:
+    value: 2
+  MrPlayer:
+    value: 3
+

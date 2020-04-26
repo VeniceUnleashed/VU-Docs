@@ -1,0 +1,30 @@
+name: VehicleSoundData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new VehicleSoundData frostbite instance.
+  -
+    description: Creates a new VehicleSoundData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to VehicleSoundData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VehicleSoundData.
+
+properties:
+  bulletImpact:
+    type: SoundAsset
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VehicleSoundData type.
+

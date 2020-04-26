@@ -1,0 +1,15 @@
+name: UIGraphPriority
+type: enum
+
+values:
+  UIGraphPriority_Low:
+    value: 0
+  UIGraphPriority_Normal:
+    value: 1
+  UIGraphPriority_High:
+    value: 2
+  UIGraphPriority_OverlayScreens:
+    value: 3
+  UIGraphPriority_Critical:
+    value: 4
+

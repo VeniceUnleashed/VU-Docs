@@ -1,0 +1,86 @@
+name: ArtilleryStrikeEntityData
+type: class
+inherits: GameEntityData
+
+constructors:
+  -
+    description: Creates a new ArtilleryStrikeEntityData frostbite instance.
+  -
+    description: Creates a new ArtilleryStrikeEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameEntityData to ArtilleryStrikeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to ArtilleryStrikeEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to ArtilleryStrikeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to ArtilleryStrikeEntityData.
+  -
+    description: Casts an instance of type EntityData to ArtilleryStrikeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to ArtilleryStrikeEntityData.
+  -
+    description: Casts an instance of type GameObjectData to ArtilleryStrikeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to ArtilleryStrikeEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to ArtilleryStrikeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to ArtilleryStrikeEntityData.
+  -
+    description: Casts an instance of type DataContainer to ArtilleryStrikeEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ArtilleryStrikeEntityData.
+
+properties:
+  missileData:
+    type: MissileEntityData
+    nullable: true
+  missileSpawnRadius:
+    type: float
+  durationOfArtilleryStrike:
+    type: float
+  maxDelayBetweenProjectiles:
+    type: float
+  minDelayBetweenProjectiles:
+    type: float
+  maxDelayBetweenStrikes:
+    type: float
+  minDelayBetweenStrikes:
+    type: float
+  minRadiusToSoldier:
+    type: float
+  radiusWhenFollowingSoldier:
+    type: float
+  heightOffsetWhenFollowingSoldier:
+    type: float
+  numberOfStrikes:
+    type: int
+  maxProjectilesPerStrike:
+    type: int
+  minProjectilesPerStrike:
+    type: int
+  followSoldier:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ArtilleryStrikeEntityData type.
+

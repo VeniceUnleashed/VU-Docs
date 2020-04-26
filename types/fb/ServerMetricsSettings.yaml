@@ -1,0 +1,47 @@
+name: ServerMetricsSettings
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new ServerMetricsSettings frostbite instance.
+  -
+    description: Creates a new ServerMetricsSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to ServerMetricsSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ServerMetricsSettings.
+
+properties:
+  reportName:
+    type: string
+  enabled:
+    type: bool
+  dbxReportEnabled:
+    type: bool
+  tickTelemetryEnabled:
+    type: bool
+  developmentTelemetryEnabled:
+    type: bool
+  performanceTelemetryEnabled:
+    type: bool
+  juiceTelemetryEnabled:
+    type: bool
+  performanceProfileStateEnabled:
+    type: bool
+  transactionTelemetryEnabled:
+    type: bool
+  compressTransactions:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ServerMetricsSettings type.
+

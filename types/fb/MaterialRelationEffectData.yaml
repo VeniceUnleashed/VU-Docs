@@ -1,0 +1,49 @@
+name: MaterialRelationEffectData
+type: class
+inherits: PhysicsMaterialRelationPropertyData
+
+constructors:
+  -
+    description: Creates a new MaterialRelationEffectData frostbite instance.
+  -
+    description: Creates a new MaterialRelationEffectData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type PhysicsMaterialRelationPropertyData to MaterialRelationEffectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: PhysicsMaterialRelationPropertyData
+        description: The instance to cast to MaterialRelationEffectData.
+  -
+    description: Casts an instance of type MaterialRelationPropertyData to MaterialRelationEffectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MaterialRelationPropertyData
+        description: The instance to cast to MaterialRelationEffectData.
+  -
+    description: Casts an instance of type DataContainer to MaterialRelationEffectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MaterialRelationEffectData.
+
+properties:
+  impactEffects:
+    type: EffectBlueprint
+    array: true
+  impactDebris:
+    type: ObjectBlueprint
+    array: true
+  impactEffectMaxSpreadAngle:
+    type: float
+  mirrorImpactDirection:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MaterialRelationEffectData type.
+

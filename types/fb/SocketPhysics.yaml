@@ -1,0 +1,11 @@
+name: SocketPhysics
+type: enum
+
+values:
+  SocketPhysics_Default:
+    value: 0
+  SocketPhysics_FakePhysics:
+    value: 1
+  SocketPhysics_Droppable:
+    value: 2
+

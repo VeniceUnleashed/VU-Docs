@@ -1,0 +1,13 @@
+name: DynamicAvoidanceMode
+type: enum
+
+values:
+  DynamicAvoidanceMode_Never:
+    value: 0
+  DynamicAvoidanceMode_WhenScripted:
+    value: 1
+  DynamicAvoidanceMode_WhenNotScripted:
+    value: 2
+  DynamicAvoidanceMode_Always:
+    value: 3
+

@@ -1,0 +1,42 @@
+name: BoolPropertyTrackData
+type: class
+inherits: SimplePropertyTrackData
+
+constructors:
+  -
+    description: Creates a new BoolPropertyTrackData frostbite instance.
+  -
+    description: Creates a new BoolPropertyTrackData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SimplePropertyTrackData to BoolPropertyTrackData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SimplePropertyTrackData
+        description: The instance to cast to BoolPropertyTrackData.
+  -
+    description: Casts an instance of type PropertyTrackData to BoolPropertyTrackData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: PropertyTrackData
+        description: The instance to cast to BoolPropertyTrackData.
+  -
+    description: Casts an instance of type DataContainer to BoolPropertyTrackData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to BoolPropertyTrackData.
+
+properties:
+  values:
+    type: bool
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the BoolPropertyTrackData type.
+

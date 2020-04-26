@@ -1,0 +1,15 @@
+name: CurveShaderType
+type: enum
+
+values:
+  CstSine:
+    value: 0
+  CstSineNormalized:
+    value: 1
+  CstSawtooth:
+    value: 2
+  CstTriangle:
+    value: 3
+  CstSquare:
+    value: 4
+

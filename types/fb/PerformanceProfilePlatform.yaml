@@ -1,0 +1,11 @@
+name: PerformanceProfilePlatform
+type: enum
+
+values:
+  PPP_Win32:
+    value: 0
+  PPP_Xenon:
+    value: 1
+  PPP_PS3:
+    value: 2
+

@@ -1,0 +1,63 @@
+name: SensingTemplateData
+type: class
+inherits: GameSensingTemplateData
+
+constructors:
+  -
+    description: Creates a new SensingTemplateData frostbite instance.
+  -
+    description: Creates a new SensingTemplateData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameSensingTemplateData to SensingTemplateData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameSensingTemplateData
+        description: The instance to cast to SensingTemplateData.
+  -
+    description: Casts an instance of type Asset to SensingTemplateData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to SensingTemplateData.
+  -
+    description: Casts an instance of type DataContainer to SensingTemplateData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SensingTemplateData.
+
+properties:
+  awareForgetTime:
+    type: float
+  lostForgetTime:
+    type: float
+  timeUntilUnseenIsLost:
+    type: float
+  maximumMergeDistance:
+    type: float
+  maximumAlertDistance:
+    type: float
+  maximumReadinessRaiseDistance:
+    type: float
+  readyLimits:
+    type: SensingLimits
+  relaxedLimits:
+    type: SensingLimits
+  debugText:
+    type: string
+  combatLimits:
+    type: SensingLimits
+  useSenseSharing:
+    type: bool
+  noticeBullets:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SensingTemplateData type.
+

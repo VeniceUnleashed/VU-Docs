@@ -1,0 +1,50 @@
+name: VoiceOverArithmeticNode
+type: class
+inherits: VoiceOverExpressionNode
+
+constructors:
+  -
+    description: Creates a new VoiceOverArithmeticNode frostbite instance.
+  -
+    description: Creates a new VoiceOverArithmeticNode frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type VoiceOverExpressionNode to VoiceOverArithmeticNode. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: VoiceOverExpressionNode
+        description: The instance to cast to VoiceOverArithmeticNode.
+  -
+    description: Casts an instance of type VoiceOverNode to VoiceOverArithmeticNode. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: VoiceOverNode
+        description: The instance to cast to VoiceOverArithmeticNode.
+  -
+    description: Casts an instance of type DataContainer to VoiceOverArithmeticNode. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VoiceOverArithmeticNode.
+
+properties:
+  a:
+    type: VoiceOverValueConnection
+    nullable: true
+  b:
+    type: VoiceOverValueConnection
+    nullable: true
+  result:
+    type: VoiceOverValue
+    nullable: true
+  operation:
+    type: VoiceOverArithmeticExpressionType
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VoiceOverArithmeticNode type.
+

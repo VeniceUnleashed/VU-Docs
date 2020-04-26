@@ -1,0 +1,43 @@
+name: SupportedShootingCommonData
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new SupportedShootingCommonData frostbite instance.
+  -
+    description: Creates a new SupportedShootingCommonData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to SupportedShootingCommonData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to SupportedShootingCommonData.
+  -
+    description: Casts an instance of type DataContainer to SupportedShootingCommonData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SupportedShootingCommonData.
+
+properties:
+  aimingConstraints:
+    type: AimingConstraintsData
+  enterSupportedShootingAction:
+    type: EntryInputActionEnum
+  binding:
+    type: SupportedShootingBinding
+  stand:
+    type: SupportedShootingProximityChecking
+  crouch:
+    type: SupportedShootingProximityChecking
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SupportedShootingCommonData type.
+

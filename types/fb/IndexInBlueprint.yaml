@@ -1,0 +1,9 @@
+name: IndexInBlueprint
+type: enum
+
+values:
+  IndexInBlueprint_HighestIndex:
+    value: 65534
+  IndexInBlueprint_Unknown:
+    value: 65535
+

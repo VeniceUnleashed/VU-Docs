@@ -1,0 +1,35 @@
+name: AeroDynamicPhysicsData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new AeroDynamicPhysicsData frostbite instance.
+  -
+    description: Creates a new AeroDynamicPhysicsData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to AeroDynamicPhysicsData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to AeroDynamicPhysicsData.
+
+properties:
+  bodyDrag:
+    type: Vec3
+  bodyDragOffsetYZ:
+    type: Vec3
+  bodyDragOffsetXZ:
+    type: Vec3
+  bodyDragOffsetXY:
+    type: Vec3
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the AeroDynamicPhysicsData type.
+

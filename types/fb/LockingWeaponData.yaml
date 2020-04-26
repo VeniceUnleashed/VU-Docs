@@ -1,0 +1,55 @@
+name: LockingWeaponData
+type: class
+inherits: WeaponData
+
+constructors:
+  -
+    description: Creates a new LockingWeaponData frostbite instance.
+  -
+    description: Creates a new LockingWeaponData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type WeaponData to LockingWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: WeaponData
+        description: The instance to cast to LockingWeaponData.
+  -
+    description: Casts an instance of type ToolData to LockingWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ToolData
+        description: The instance to cast to LockingWeaponData.
+  -
+    description: Casts an instance of type DataContainer to LockingWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to LockingWeaponData.
+
+properties:
+  lockingController:
+    type: LockingControllerData
+    nullable: true
+  secondaryLockingController:
+    type: LockingControllerData
+    nullable: true
+  warnLock:
+    type: WarnTarget
+  isHoming:
+    type: bool
+  isGuidedWhenZoomed:
+    type: bool
+  fireOnlyWhenLockedOn:
+    type: bool
+  isGuided:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the LockingWeaponData type.
+

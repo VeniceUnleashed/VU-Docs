@@ -1,0 +1,43 @@
+name: ShaderGraph
+type: class
+inherits: SurfaceShaderBaseAsset
+
+constructors:
+  -
+    description: Creates a new ShaderGraph frostbite instance.
+  -
+    description: Creates a new ShaderGraph frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SurfaceShaderBaseAsset to ShaderGraph. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SurfaceShaderBaseAsset
+        description: The instance to cast to ShaderGraph.
+  -
+    description: Casts an instance of type Asset to ShaderGraph. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to ShaderGraph.
+  -
+    description: Casts an instance of type DataContainer to ShaderGraph. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ShaderGraph.
+
+properties:
+  maxSubMaterialCount:
+    type: int
+  gammaCorrectionEnable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ShaderGraph type.
+

@@ -1,0 +1,57 @@
+name: UIGraphEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new UIGraphEntityData frostbite instance.
+  -
+    description: Creates a new UIGraphEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to UIGraphEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to UIGraphEntityData.
+  -
+    description: Casts an instance of type GameObjectData to UIGraphEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to UIGraphEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to UIGraphEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to UIGraphEntityData.
+  -
+    description: Casts an instance of type DataContainer to UIGraphEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UIGraphEntityData.
+
+properties:
+  events:
+    type: EventSpec
+    array: true
+  graphAsset:
+    type: UIGraphAsset
+    nullable: true
+  graphPriority:
+    type: UIGraphPriority
+  state:
+    type: UIState
+  popPreviousGraph:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UIGraphEntityData type.
+

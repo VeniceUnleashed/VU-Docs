@@ -1,0 +1,9 @@
+name: IndexBufferFormat
+type: enum
+
+values:
+  IndexBufferFormat_16Bit:
+    value: 0
+  IndexBufferFormat_32Bit:
+    value: 1
+

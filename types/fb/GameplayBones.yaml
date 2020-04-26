@@ -1,0 +1,23 @@
+name: GameplayBones
+type: enum
+
+values:
+  GameplayBones_UndefinedBone:
+    value: 0
+  GameplayBones_HeadBone:
+    value: 1
+  GameplayBones_AimBone:
+    value: 2
+  GameplayBones_RootBone:
+    value: 3
+  GameplayBones_WeaponBone:
+    value: 4
+  GameplayBones_ConnectBone:
+    value: 5
+  GameplayBones_RootMeshBone:
+    value: 6
+  GameplayBones_MagazineBone:
+    value: 7
+  GameplayBones_Count:
+    value: 8
+

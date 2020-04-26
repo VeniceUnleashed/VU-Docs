@@ -1,0 +1,45 @@
+name: ProcessorData
+type: class
+inherits: EmitterComponentData
+
+constructors:
+  -
+    description: Creates a new ProcessorData frostbite instance.
+  -
+    description: Creates a new ProcessorData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EmitterComponentData to ProcessorData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EmitterComponentData
+        description: The instance to cast to ProcessorData.
+  -
+    description: Casts an instance of type DataContainer to ProcessorData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ProcessorData.
+
+properties:
+  defaultValues:
+    type: Vec4
+  nextProcessor:
+    type: ProcessorData
+    nullable: true
+  pre:
+    type: EmitterComponentData
+    nullable: true
+  evaluatorInput:
+    type: EmittableField
+  enable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ProcessorData type.
+

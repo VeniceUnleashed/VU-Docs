@@ -1,0 +1,62 @@
+name: PlayerEntryComponentData
+type: class
+inherits: EntryComponentData
+
+constructors:
+  -
+    description: Creates a new PlayerEntryComponentData frostbite instance.
+  -
+    description: Creates a new PlayerEntryComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntryComponentData to PlayerEntryComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntryComponentData
+        description: The instance to cast to PlayerEntryComponentData.
+  -
+    description: Casts an instance of type ComponentData to PlayerEntryComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to PlayerEntryComponentData.
+  -
+    description: Casts an instance of type GameObjectData to PlayerEntryComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to PlayerEntryComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to PlayerEntryComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to PlayerEntryComponentData.
+  -
+    description: Casts an instance of type DataContainer to PlayerEntryComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PlayerEntryComponentData.
+
+properties:
+  animationAccelerationMultiplier:
+    type: Vec3
+  antEntryId:
+    type: AntEntryIdEnum
+  antEntryID:
+    type: string
+  antEntryEnumeration:
+    type: AntEnumeration
+    nullable: true
+  shieldedTransitionExitTime:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PlayerEntryComponentData type.
+

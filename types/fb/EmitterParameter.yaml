@@ -1,0 +1,21 @@
+name: EmitterParameter
+type: enum
+
+values:
+  EmitterParameterNone:
+    value: 0
+  EmitterParameter1:
+    value: 1
+  EmitterParameter2:
+    value: 2
+  EmitterParameter3:
+    value: 3
+  EmitterParameter4:
+    value: 4
+  EmitterParameterVec:
+    value: 5
+  EmitterParameterDistance:
+    value: 6
+  EmitterParameterVecAverage:
+    value: 7
+

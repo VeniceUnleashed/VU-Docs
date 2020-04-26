@@ -1,0 +1,11 @@
+name: CapturableType
+type: enum
+
+values:
+  CTDefault:
+    value: 0
+  CTUnableToChangeTeam:
+    value: 1
+  CTCaptureEnablable:
+    value: 2
+

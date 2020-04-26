@@ -1,0 +1,53 @@
+name: VoiceOverCompareNode
+type: class
+inherits: VoiceOverExpressionNode
+
+constructors:
+  -
+    description: Creates a new VoiceOverCompareNode frostbite instance.
+  -
+    description: Creates a new VoiceOverCompareNode frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type VoiceOverExpressionNode to VoiceOverCompareNode. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: VoiceOverExpressionNode
+        description: The instance to cast to VoiceOverCompareNode.
+  -
+    description: Casts an instance of type VoiceOverNode to VoiceOverCompareNode. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: VoiceOverNode
+        description: The instance to cast to VoiceOverCompareNode.
+  -
+    description: Casts an instance of type DataContainer to VoiceOverCompareNode. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VoiceOverCompareNode.
+
+properties:
+  a:
+    type: VoiceOverValueConnection
+    nullable: true
+  b:
+    type: VoiceOverValueConnection
+    nullable: true
+  falseValue:
+    type: VoiceOverValue
+    nullable: true
+  trueValue:
+    type: VoiceOverValue
+    nullable: true
+  operation:
+    type: VoiceOverCompareExpressionType
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VoiceOverCompareNode type.
+

@@ -1,0 +1,45 @@
+name: ScaleClampNodeData
+type: class
+inherits: AudioGraphNodeData
+
+constructors:
+  -
+    description: Creates a new ScaleClampNodeData frostbite instance.
+  -
+    description: Creates a new ScaleClampNodeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphNodeData to ScaleClampNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphNodeData
+        description: The instance to cast to ScaleClampNodeData.
+  -
+    description: Casts an instance of type DataContainer to ScaleClampNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ScaleClampNodeData.
+
+properties:
+  inValue:
+    type: AudioGraphNodePort
+  inMin:
+    type: AudioGraphNodePort
+  inMax:
+    type: AudioGraphNodePort
+  outMin:
+    type: AudioGraphNodePort
+  outMax:
+    type: AudioGraphNodePort
+  out:
+    type: AudioGraphNodePort
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ScaleClampNodeData type.
+

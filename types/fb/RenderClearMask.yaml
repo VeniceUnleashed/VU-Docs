@@ -1,0 +1,29 @@
+name: RenderClearMask
+type: enum
+
+values:
+  RenderClearMask_Color0:
+    value: 1
+  RenderClearMask_Color1:
+    value: 2
+  RenderClearMask_Color2:
+    value: 4
+  RenderClearMask_Color3:
+    value: 8
+  RenderClearMask_Color4:
+    value: 16
+  RenderClearMask_Color5:
+    value: 32
+  RenderClearMask_Color6:
+    value: 64
+  RenderClearMask_Color7:
+    value: 128
+  RenderClearMask_Color:
+    value: 255
+  RenderClearMask_Depth:
+    value: 256
+  RenderClearMask_Stencil:
+    value: 512
+  RenderClearMask_All:
+    value: 1023
+

@@ -1,0 +1,35 @@
+name: VoiceOverConstantIntegerValue
+type: class
+inherits: VoiceOverConstantValue
+
+constructors:
+  -
+    description: Creates a new VoiceOverConstantIntegerValue frostbite instance.
+  -
+    description: Creates a new VoiceOverConstantIntegerValue frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type VoiceOverConstantValue to VoiceOverConstantIntegerValue. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: VoiceOverConstantValue
+        description: The instance to cast to VoiceOverConstantIntegerValue.
+  -
+    description: Casts an instance of type DataContainer to VoiceOverConstantIntegerValue. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VoiceOverConstantIntegerValue.
+
+properties:
+  value:
+    type: int
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VoiceOverConstantIntegerValue type.
+

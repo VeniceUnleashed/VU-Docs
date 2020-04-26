@@ -1,0 +1,117 @@
+name: BFServerSettings
+type: class
+inherits: SystemSettings
+
+constructors:
+  -
+    description: Creates a new BFServerSettings frostbite instance.
+  -
+    description: Creates a new BFServerSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SystemSettings to BFServerSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SystemSettings
+        description: The instance to cast to BFServerSettings.
+  -
+    description: Casts an instance of type DataContainer to BFServerSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to BFServerSettings.
+
+properties:
+  serverMessage:
+    type: string
+  ctfRoundTimeModifier:
+    type: float
+  forceTeamForPlayerTag:
+    type: string
+  forceTeamForPlayerTagTeam:
+    type: int
+  noInteractivityTimeoutTime:
+    type: float
+  noInteractivityThresholdLimit:
+    type: float
+  noInteractivityBanRoundCount:
+    type: int
+  teamKillCountForKick:
+    type: int
+  teamKillValueForKick:
+    type: float
+  teamKillValueIncrease:
+    type: float
+  teamKillValueDecreasePerSecond:
+    type: float
+  teamKillKickForBan:
+    type: int
+  roundMaxPlayerCount:
+    type: int
+  roundMinPlayerCount:
+    type: int
+  roundLockdownCountdown:
+    type: int
+  roundRestartCountdown:
+    type: int
+  roundWarmupTimeout:
+    type: int
+  bannerUrl:
+    type: string
+  serverPreset:
+    type: string
+  serverDescription:
+    type: string
+  serverAdministrationSettings:
+    type: string
+  gameSize:
+    type: int
+  serverAdministrationMapRotation:
+    type: string
+  serverAdministrationMapRotationInformation:
+    type: string
+  serverAdministrationRoundsPerMap:
+    type: int
+  spectators:
+    type: string
+  punkBusterVersion:
+    type: string
+  teamSwitchImbalanceLimit:
+    type: int
+  gameMod:
+    type: string
+  pingSite:
+    type: string
+  overrideServerConfigurationStartTime:
+    type: string
+  gunMasterWeaponsPresetIndex:
+    type: int
+  serverConfigurationRefreshInterval:
+    type: int
+  deathmatchFriendZoneFallbackCount:
+    type: int
+  defaultVoiceChannel:
+    type: VoiceChannel
+  mapSequencerEnabled:
+    type: bool
+  kickAPlayerOnVIPJoin:
+    type: bool
+  isManDownRotationEnabled:
+    type: bool
+  isKillerCameraEnabled:
+    type: bool
+  premiumStatus:
+    type: bool
+  overrideAutoBalance:
+    type: bool
+  autoBalance:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the BFServerSettings type.
+

@@ -1,0 +1,38 @@
+name: DestructionVolumeData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new DestructionVolumeData frostbite instance.
+  -
+    description: Creates a new DestructionVolumeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to DestructionVolumeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to DestructionVolumeData.
+
+properties:
+  boundingBox:
+    type: AxisAlignedBox
+  asset:
+    type: DestructionVolumeAsset
+    nullable: true
+  impacts:
+    type: Vec4
+    array: true
+  partToImpactIndices:
+    type: int
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the DestructionVolumeData type.
+

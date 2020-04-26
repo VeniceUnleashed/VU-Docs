@@ -1,0 +1,15 @@
+name: InviteType
+type: enum
+
+values:
+  InviteType_Invalid:
+    value: 0
+  InviteType_Invite:
+    value: 1
+  InviteType_JoinSession:
+    value: 2
+  InviteType_JoinFriendSession:
+    value: 3
+  InviteType_Count:
+    value: 4
+

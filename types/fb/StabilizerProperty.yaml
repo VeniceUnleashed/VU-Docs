@@ -1,0 +1,15 @@
+name: StabilizerProperty
+type: enum
+
+values:
+  SPPitchAngle:
+    value: 0
+  SPYawAngle:
+    value: 1
+  SPRollAngle:
+    value: 2
+  SPVerticalPosition:
+    value: 3
+  SPVerticalVelocity:
+    value: 4
+

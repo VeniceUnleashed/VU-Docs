@@ -1,0 +1,7 @@
+name: MeshHandleFlags
+type: enum
+
+values:
+  InvalidMeshHandle:
+    value: 0
+

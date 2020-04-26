@@ -1,0 +1,17 @@
+name: ForceCondition
+type: enum
+
+values:
+  FCNever:
+    value: 0
+  FCNotCriticalDamaged:
+    value: 1
+  FCCriticalDamaged:
+    value: 2
+  FCNotOccupied:
+    value: 3
+  FCOccupied:
+    value: 4
+  FCAlways:
+    value: 5
+

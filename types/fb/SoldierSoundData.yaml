@@ -1,0 +1,57 @@
+name: SoldierSoundData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new SoldierSoundData frostbite instance.
+  -
+    description: Creates a new SoldierSoundData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to SoldierSoundData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SoldierSoundData.
+
+properties:
+  movement:
+    type: SoundAsset
+    nullable: true
+  death:
+    type: SoundAsset
+    nullable: true
+  bulletImpact:
+    type: SoundAsset
+    nullable: true
+  healing:
+    type: SoundAsset
+    nullable: true
+  breathControl:
+    type: SoundAsset
+    nullable: true
+  hitIndicator:
+    type: SoundAsset
+    nullable: true
+  pickupKit:
+    type: SoundAsset
+    nullable: true
+  pickupAmmo:
+    type: SoundAsset
+    nullable: true
+  sprintTimeForRecovery:
+    type: float
+  movementThreshold:
+    type: float
+  minHealSoundTime:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SoldierSoundData type.
+

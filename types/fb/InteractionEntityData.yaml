@@ -1,0 +1,70 @@
+name: InteractionEntityData
+type: class
+inherits: GameEntityData
+
+constructors:
+  -
+    description: Creates a new InteractionEntityData frostbite instance.
+  -
+    description: Creates a new InteractionEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameEntityData to InteractionEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to InteractionEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to InteractionEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to InteractionEntityData.
+  -
+    description: Casts an instance of type EntityData to InteractionEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to InteractionEntityData.
+  -
+    description: Casts an instance of type GameObjectData to InteractionEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to InteractionEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to InteractionEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to InteractionEntityData.
+  -
+    description: Casts an instance of type DataContainer to InteractionEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to InteractionEntityData.
+
+properties:
+  useWithinRadius:
+    type: float
+  useWithinAngle:
+    type: float
+  preInteractionSoundEffect:
+    type: SoundAsset
+    nullable: true
+  maxUses:
+    type: int
+  allowInteractionViaRemoteEntry:
+    type: bool
+  testIfOccluded:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the InteractionEntityData type.
+

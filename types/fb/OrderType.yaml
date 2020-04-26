@@ -1,0 +1,43 @@
+name: OrderType
+type: enum
+
+values:
+  OrderType_None:
+    value: 0
+  OrderType_RequestHeal:
+    value: 1
+  OrderType_LetMeHeal:
+    value: 2
+  OrderType_RequestAmmo:
+    value: 3
+  OrderType_LetMeGiveAmmo:
+    value: 4
+  OrderType_LetMeRepair:
+    value: 5
+  OrderType_RequestRepair:
+    value: 6
+  OrderType_RequestRide:
+    value: 7
+  OrderType_GoGoGo:
+    value: 8
+  OrderType_FollowMe:
+    value: 9
+  OrderType_Negative:
+    value: 10
+  OrderType_Sorry:
+    value: 11
+  OrderType_ThankYou:
+    value: 12
+  OrderType_RogerThat:
+    value: 13
+  OrderType_NeedBackup:
+    value: 14
+  OrderType_GetIn:
+    value: 15
+  OrderType_GetOut:
+    value: 16
+  OrderType_Attack:
+    value: 17
+  OrderType_Count:
+    value: 18
+

@@ -1,0 +1,42 @@
+name: MixerGraphData
+type: class
+inherits: AudioGraphData
+
+constructors:
+  -
+    description: Creates a new MixerGraphData frostbite instance.
+  -
+    description: Creates a new MixerGraphData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphData to MixerGraphData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphData
+        description: The instance to cast to MixerGraphData.
+  -
+    description: Casts an instance of type DataContainer to MixerGraphData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MixerGraphData.
+
+properties:
+  inputs:
+    type: AudioGraphParameter
+    array: true
+  accumulateModes:
+    type: MixerValueAccumulateMode
+    array: true
+  outputs:
+    type: AudioGraphParameter
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MixerGraphData type.
+

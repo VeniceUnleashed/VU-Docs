@@ -1,0 +1,29 @@
+name: WeaponSlot
+type: enum
+
+values:
+  WeaponSlot_0:
+    value: 0
+  WeaponSlot_1:
+    value: 1
+  WeaponSlot_2:
+    value: 2
+  WeaponSlot_3:
+    value: 3
+  WeaponSlot_4:
+    value: 4
+  WeaponSlot_5:
+    value: 5
+  WeaponSlot_6:
+    value: 6
+  WeaponSlot_7:
+    value: 7
+  WeaponSlot_8:
+    value: 8
+  WeaponSlot_9:
+    value: 9
+  WeaponSlot_NumSlots:
+    value: 10
+  WeaponSlot_NotDefined:
+    value: 11
+

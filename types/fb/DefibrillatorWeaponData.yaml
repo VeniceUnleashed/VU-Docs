@@ -1,0 +1,43 @@
+name: DefibrillatorWeaponData
+type: class
+inherits: WeaponData
+
+constructors:
+  -
+    description: Creates a new DefibrillatorWeaponData frostbite instance.
+  -
+    description: Creates a new DefibrillatorWeaponData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type WeaponData to DefibrillatorWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: WeaponData
+        description: The instance to cast to DefibrillatorWeaponData.
+  -
+    description: Casts an instance of type ToolData to DefibrillatorWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ToolData
+        description: The instance to cast to DefibrillatorWeaponData.
+  -
+    description: Casts an instance of type DataContainer to DefibrillatorWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to DefibrillatorWeaponData.
+
+properties:
+  reviveTime:
+    type: float
+  attackTime:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the DefibrillatorWeaponData type.
+

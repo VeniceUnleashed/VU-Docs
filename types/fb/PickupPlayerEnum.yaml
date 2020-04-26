@@ -1,0 +1,13 @@
+name: PickupPlayerEnum
+type: enum
+
+values:
+  PickupPlayerEnum_None:
+    value: 0
+  PickupPlayerEnum_Both:
+    value: 1
+  PickupPlayerEnum_HumanOnly:
+    value: 2
+  PickupPlayerEnum_AIOnly:
+    value: 3
+

@@ -1,0 +1,17 @@
+name: AIStunReactionAnimationType
+type: enum
+
+values:
+  AIStunReactionAnimationType_1:
+    value: 0
+  AIStunReactionAnimationType_2:
+    value: 1
+  AIStunReactionAnimationType_3:
+    value: 2
+  AIStunReactionAnimationType_4:
+    value: 3
+  AIStunReactionAnimationType_5:
+    value: 4
+  AIStunReactionAnimationType_Count:
+    value: 5
+

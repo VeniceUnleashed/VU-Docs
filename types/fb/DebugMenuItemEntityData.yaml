@@ -1,0 +1,61 @@
+name: DebugMenuItemEntityData
+type: class
+inherits: GameEntityData
+
+constructors:
+  -
+    description: Creates a new DebugMenuItemEntityData frostbite instance.
+  -
+    description: Creates a new DebugMenuItemEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameEntityData to DebugMenuItemEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to DebugMenuItemEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to DebugMenuItemEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to DebugMenuItemEntityData.
+  -
+    description: Casts an instance of type EntityData to DebugMenuItemEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to DebugMenuItemEntityData.
+  -
+    description: Casts an instance of type GameObjectData to DebugMenuItemEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to DebugMenuItemEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to DebugMenuItemEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to DebugMenuItemEntityData.
+  -
+    description: Casts an instance of type DataContainer to DebugMenuItemEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to DebugMenuItemEntityData.
+
+properties:
+  itemType:
+    type: DebugMenuItemType
+  text:
+    type: string
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the DebugMenuItemEntityData type.
+

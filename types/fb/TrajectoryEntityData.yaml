@@ -1,0 +1,47 @@
+name: TrajectoryEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new TrajectoryEntityData frostbite instance.
+  -
+    description: Creates a new TrajectoryEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to TrajectoryEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to TrajectoryEntityData.
+  -
+    description: Casts an instance of type GameObjectData to TrajectoryEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to TrajectoryEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to TrajectoryEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to TrajectoryEntityData.
+  -
+    description: Casts an instance of type DataContainer to TrajectoryEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to TrajectoryEntityData.
+
+properties:
+  outTransform:
+    type: LinearTransform
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the TrajectoryEntityData type.
+

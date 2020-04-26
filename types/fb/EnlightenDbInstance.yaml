@@ -1,0 +1,57 @@
+name: EnlightenDbInstance
+type: class
+
+constructors:
+  -
+    description: Creates a new EnlightenDbInstance frostbite instance.
+  -
+    description: Creates a new EnlightenDbInstance frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+
+properties:
+  worldBoundingbox:
+    type: AxisAlignedBox
+  worldTransform:
+    type: LinearTransform
+  uvTranslation:
+    type: Vec2
+  uvTransform:
+    type: Vec4
+  geometryId:
+    type: int
+  objectVariation:
+    type: string
+  guidString:
+    type: string
+  uvSizeX:
+    type: int
+  uvSizeY:
+    type: int
+  pixelSize:
+    type: float
+  enlightenMeshName:
+    type: string
+  meshAsset:
+    type: string
+  instanceAlbedos:
+    type: int
+    array: true
+  cacheKey:
+    type: Guid
+
+methods:
+  -
+    name: Clone
+    description: Creates a shallow-copy clone of this structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of this structure to all of its properties. Any properties that contain structure types (eg. Vec3) will be cloned when assigning, while properties that contain instance types (eg. DataContainer) will be referencing the same instance.
+    returns:
+      type: EnlightenDbInstance
+      description: The newly created structure.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the EnlightenDbInstance type.
+

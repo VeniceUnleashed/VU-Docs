@@ -1,0 +1,85 @@
+name: HudData
+type: class
+
+constructors:
+  -
+    description: Creates a new HudData frostbite instance.
+  -
+    description: Creates a new HudData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+
+properties:
+  crosshairScaleMin:
+    type: float
+  crosshairScaleMax:
+    type: float
+  crosshairOpacityMin:
+    type: float
+  crosshairOpacityMax:
+    type: float
+  crosshairOpacityModifier:
+    type: float
+  crosshairTypeId:
+    type: string
+  weaponClass:
+    type: string
+  cameraShakeModifier:
+    type: float
+  seaLevelAltFreq:
+    type: float
+  lowAmmoWarning:
+    type: float
+  reloadPrompt:
+    type: float
+  renderTargetIndex:
+    type: int
+  hudPropertyList:
+    type: UIPartPropertyList
+    nullable: true
+  showMinimap:
+    type: bool
+  infiniteAmmo:
+    type: bool
+  hideCrosshairWhenAimOnFriend:
+    type: bool
+  hideAmmo:
+    type: bool
+  useRangeMeter:
+    type: bool
+  usePredictedSight:
+    type: bool
+  useWeaponOrientations:
+    type: bool
+  useVelocityVectorMarker:
+    type: bool
+  useLockingController:
+    type: bool
+  useThrust:
+    type: bool
+  useGForce:
+    type: bool
+  useSkidSlip:
+    type: bool
+  useClimbRate:
+    type: bool
+  useAimWarning:
+    type: bool
+  useRenderTarget:
+    type: bool
+
+methods:
+  -
+    name: Clone
+    description: Creates a shallow-copy clone of this structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of this structure to all of its properties. Any properties that contain structure types (eg. Vec3) will be cloned when assigning, while properties that contain instance types (eg. DataContainer) will be referencing the same instance.
+    returns:
+      type: HudData
+      description: The newly created structure.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the HudData type.
+

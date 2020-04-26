@@ -1,0 +1,43 @@
+name: ScenarioWaypointData
+type: class
+inherits: AbstractLocoWaypointData
+
+constructors:
+  -
+    description: Creates a new ScenarioWaypointData frostbite instance.
+  -
+    description: Creates a new ScenarioWaypointData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AbstractLocoWaypointData to ScenarioWaypointData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AbstractLocoWaypointData
+        description: The instance to cast to ScenarioWaypointData.
+  -
+    description: Casts an instance of type WaypointData to ScenarioWaypointData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: WaypointData
+        description: The instance to cast to ScenarioWaypointData.
+  -
+    description: Casts an instance of type DataContainer to ScenarioWaypointData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ScenarioWaypointData.
+
+properties:
+  scenarioAntRef:
+    type: AntRef
+  scenarioTask:
+    type: ScenarioTaskData
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ScenarioWaypointData type.
+

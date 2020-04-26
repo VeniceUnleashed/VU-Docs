@@ -1,0 +1,52 @@
+name: GunSwayModifierData
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new GunSwayModifierData frostbite instance.
+  -
+    description: Creates a new GunSwayModifierData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to GunSwayModifierData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to GunSwayModifierData.
+  -
+    description: Casts an instance of type DataContainer to GunSwayModifierData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to GunSwayModifierData.
+
+properties:
+  unlockAsset:
+    type: UnlockAssetBase
+    nullable: true
+  standZoomModifier:
+    type: GunSwayStanceZoomModifierData
+  standNoZoomModifier:
+    type: GunSwayStanceZoomModifierData
+  crouchZoomModifier:
+    type: GunSwayStanceZoomModifierData
+  crouchNoZoomModifier:
+    type: GunSwayStanceZoomModifierData
+  proneZoomModifier:
+    type: GunSwayStanceZoomModifierData
+  proneNoZoomModifier:
+    type: GunSwayStanceZoomModifierData
+  onlyInSupportedShooting:
+    type: bool
+  onlyOnWeaponLightEnabled:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the GunSwayModifierData type.
+

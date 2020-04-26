@@ -1,0 +1,37 @@
+name: RawFileResourceAsset
+type: class
+inherits: RawFileAsset
+
+constructors:
+  -
+    description: Creates a new RawFileResourceAsset frostbite instance.
+  -
+    description: Creates a new RawFileResourceAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type RawFileAsset to RawFileResourceAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: RawFileAsset
+        description: The instance to cast to RawFileResourceAsset.
+  -
+    description: Casts an instance of type Asset to RawFileResourceAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to RawFileResourceAsset.
+  -
+    description: Casts an instance of type DataContainer to RawFileResourceAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to RawFileResourceAsset.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the RawFileResourceAsset type.
+

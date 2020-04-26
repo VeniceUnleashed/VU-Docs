@@ -1,0 +1,15 @@
+name: BackendType
+type: enum
+
+values:
+  Backend_Lan:
+    value: 0
+  Backend_Blaze:
+    value: 1
+  Backend_Peer:
+    value: 2
+  Backend_Local:
+    value: 3
+  Backend_Count_:
+    value: 4
+

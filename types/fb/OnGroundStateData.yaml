@@ -1,0 +1,43 @@
+name: OnGroundStateData
+type: class
+inherits: CharacterStateData
+
+constructors:
+  -
+    description: Creates a new OnGroundStateData frostbite instance.
+  -
+    description: Creates a new OnGroundStateData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type CharacterStateData to OnGroundStateData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: CharacterStateData
+        description: The instance to cast to OnGroundStateData.
+  -
+    description: Casts an instance of type DataContainer to OnGroundStateData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to OnGroundStateData.
+
+properties:
+  jumpDelay:
+    type: float
+  jumpStaminaPenalty:
+    type: float
+  allowedDistanceFromGround:
+    type: float
+  groundHugging:
+    type: bool
+  limitDownwardVelocity:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the OnGroundStateData type.
+

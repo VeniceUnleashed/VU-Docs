@@ -1,0 +1,39 @@
+name: WeaponFiringEffectsModifier
+type: class
+inherits: WeaponModifierBase
+
+constructors:
+  -
+    description: Creates a new WeaponFiringEffectsModifier frostbite instance.
+  -
+    description: Creates a new WeaponFiringEffectsModifier frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type WeaponModifierBase to WeaponFiringEffectsModifier. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: WeaponModifierBase
+        description: The instance to cast to WeaponFiringEffectsModifier.
+  -
+    description: Casts an instance of type DataContainer to WeaponFiringEffectsModifier. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to WeaponFiringEffectsModifier.
+
+properties:
+  fireEffects1p:
+    type: FireEffectData
+    array: true
+  fireEffects3p:
+    type: FireEffectData
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the WeaponFiringEffectsModifier type.
+

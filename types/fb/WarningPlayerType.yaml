@@ -1,0 +1,9 @@
+name: WarningPlayerType
+type: enum
+
+values:
+  WPTInflictor:
+    value: 0
+  WPTVictim:
+    value: 1
+

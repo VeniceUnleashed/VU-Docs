@@ -1,0 +1,19 @@
+name: PrimitiveType
+type: enum
+
+values:
+  PrimitiveType_PointList:
+    value: 0
+  PrimitiveType_LineList:
+    value: 1
+  PrimitiveType_LineStrip:
+    value: 2
+  PrimitiveType_TriangleList:
+    value: 3
+  PrimitiveType_TriangleStrip:
+    value: 5
+  PrimitiveType_QuadList:
+    value: 7
+  PrimitiveType_XenonRectList:
+    value: 8
+

@@ -1,0 +1,55 @@
+name: StreamPoolAsset
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new StreamPoolAsset frostbite instance.
+  -
+    description: Creates a new StreamPoolAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to StreamPoolAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to StreamPoolAsset.
+  -
+    description: Casts an instance of type DataContainer to StreamPoolAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to StreamPoolAsset.
+
+properties:
+  streamPoolId:
+    type: int
+  streamBufferSizeXenon:
+    type: int
+  streamBufferSizePs3:
+    type: int
+  streamBufferSizeWin32:
+    type: int
+  streamCountXenon:
+    type: int
+  streamCountPs3:
+    type: int
+  streamCountWin32:
+    type: int
+  streamReadBlockSizeXenon:
+    type: int
+  streamReadBlockSizePs3:
+    type: int
+  streamReadBlockSizeWin32:
+    type: int
+  streamStarveMode:
+    type: StreamStarveMode
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the StreamPoolAsset type.
+

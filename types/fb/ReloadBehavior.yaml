@@ -1,0 +1,11 @@
+name: ReloadBehavior
+type: enum
+
+values:
+  RbInCover:
+    value: 0
+  RbStationary:
+    value: 1
+  RbAnywhere:
+    value: 2
+

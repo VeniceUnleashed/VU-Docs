@@ -1,0 +1,41 @@
+name: ParameterFilterLinearNodeData
+type: class
+inherits: AudioGraphNodeData
+
+constructors:
+  -
+    description: Creates a new ParameterFilterLinearNodeData frostbite instance.
+  -
+    description: Creates a new ParameterFilterLinearNodeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphNodeData to ParameterFilterLinearNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphNodeData
+        description: The instance to cast to ParameterFilterLinearNodeData.
+  -
+    description: Casts an instance of type DataContainer to ParameterFilterLinearNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ParameterFilterLinearNodeData.
+
+properties:
+  inValue:
+    type: AudioGraphNodePort
+  out:
+    type: AudioGraphNodePort
+  attackSpeed:
+    type: AudioGraphNodePort
+  releaseSpeed:
+    type: AudioGraphNodePort
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ParameterFilterLinearNodeData type.
+

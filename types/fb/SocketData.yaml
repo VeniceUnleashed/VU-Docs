@@ -1,0 +1,57 @@
+name: SocketData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new SocketData frostbite instance.
+  -
+    description: Creates a new SocketData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to SocketData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SocketData.
+
+properties:
+  boneRigidTransform:
+    type: LinearTransform
+  transform:
+    type: LinearTransform
+  unlockAsset:
+    type: UnlockAssetBase
+    nullable: true
+  boneId:
+    type: int
+  boneName:
+    type: string
+  availableObjects:
+    type: SocketObjectDataBase
+    array: true
+  gearSlot:
+    type: GearSlot
+  socketType:
+    type: SocketType
+  usesDefaultObject:
+    type: bool
+  excluded:
+    type: bool
+  defaultEnableSocketEntities:
+    type: bool
+  forceSocketEntitiesEnabled:
+    type: bool
+  hideByZoomTransition:
+    type: bool
+  hideByLightToggle:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SocketData type.
+

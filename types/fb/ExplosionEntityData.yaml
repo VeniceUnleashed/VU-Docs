@@ -1,0 +1,109 @@
+name: ExplosionEntityData
+type: class
+inherits: GameEntityData
+
+constructors:
+  -
+    description: Creates a new ExplosionEntityData frostbite instance.
+  -
+    description: Creates a new ExplosionEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameEntityData to ExplosionEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to ExplosionEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to ExplosionEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to ExplosionEntityData.
+  -
+    description: Casts an instance of type EntityData to ExplosionEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to ExplosionEntityData.
+  -
+    description: Casts an instance of type GameObjectData to ExplosionEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to ExplosionEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to ExplosionEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to ExplosionEntityData.
+  -
+    description: Casts an instance of type DataContainer to ExplosionEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ExplosionEntityData.
+
+properties:
+  detonationEffect:
+    type: EffectBlueprint
+    nullable: true
+  blastImpulse:
+    type: float
+  maskVolume:
+    type: MaskVolumeEntityData
+    nullable: true
+  destructionMaskVolume:
+    type: DestructionMaskVolumeEntityData
+    nullable: true
+  materialPair:
+    type: MaterialContainerPair
+    nullable: true
+  damageIndicationType:
+    type: DamageIndicationType
+  empTime:
+    type: float
+  maxOcclusionRaycastRadius:
+    type: float
+  innerBlastRadius:
+    type: float
+  blastDamage:
+    type: float
+  blastRadius:
+    type: float
+  shockwaveImpulse:
+    type: float
+  spawnDelay:
+    type: float
+  shockwaveDamage:
+    type: float
+  shockwaveRadius:
+    type: float
+  cameraShockwaveRadius:
+    type: float
+  shockwaveTime:
+    type: float
+  disableOcclusion:
+    type: bool
+  disableStaticEntityOcclusion:
+    type: bool
+  useEntityTransformForDetonationEffect:
+    type: bool
+  hasStunEffect:
+    type: bool
+  triggerImpairedHearing:
+    type: bool
+  detonateOnce:
+    type: bool
+  showOnMinimap:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ExplosionEntityData type.
+

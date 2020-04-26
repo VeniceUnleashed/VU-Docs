@@ -1,0 +1,41 @@
+name: VeniceUnlockUserData
+type: class
+inherits: UnlockUserDataBase
+
+constructors:
+  -
+    description: Creates a new VeniceUnlockUserData frostbite instance.
+  -
+    description: Creates a new VeniceUnlockUserData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UnlockUserDataBase to VeniceUnlockUserData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UnlockUserDataBase
+        description: The instance to cast to VeniceUnlockUserData.
+  -
+    description: Casts an instance of type Asset to VeniceUnlockUserData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to VeniceUnlockUserData.
+  -
+    description: Casts an instance of type DataContainer to VeniceUnlockUserData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VeniceUnlockUserData.
+
+properties:
+  checkSquad:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VeniceUnlockUserData type.
+

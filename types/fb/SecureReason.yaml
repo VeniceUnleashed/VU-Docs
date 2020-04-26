@@ -1,0 +1,81 @@
+name: SecureReason
+type: enum
+
+values:
+  SecureReason_Ok:
+    value: 0
+  SecureReason_WrongProtocolVersion:
+    value: 1
+  SecureReason_WrongTitleVersion:
+    value: 2
+  SecureReason_ServerFull:
+    value: 3
+  SecureReason_KickedOut:
+    value: 4
+  SecureReason_Banned:
+    value: 5
+  SecureReason_GenericError:
+    value: 6
+  SecureReason_WrongPassword:
+    value: 7
+  SecureReason_KickedOutDemoOver:
+    value: 8
+  SecureReason_RankRestricted:
+    value: 9
+  SecureReason_ConfigurationNotAllowed:
+    value: 10
+  SecureReason_ServerReclaimed:
+    value: 11
+  SecureReason_MissingContent:
+    value: 12
+  SecureReason_NotVerified:
+    value: 13
+  SecureReason_TimedOut:
+    value: 14
+  SecureReason_ConnectFailed:
+    value: 15
+  SecureReason_NoReply:
+    value: 16
+  SecureReason_AcceptFailed:
+    value: 17
+  SecureReason_MismatchingContent:
+    value: 18
+  SecureReason_InteractivityTimeout:
+    value: 19
+  SecureReason_KickedFromQueue:
+    value: 20
+  SecureReason_TeamKills:
+    value: 21
+  SecureReason_KickedByAdmin:
+    value: 22
+  SecureReason_KickedViaPunkBuster:
+    value: 23
+  SecureReason_KickedOutServerFull:
+    value: 24
+  SecureReason_ESportsMatchStarting:
+    value: 25
+  SecureReason_NotInESportsRosters:
+    value: 26
+  SecureReason_ESportsMatchEnding:
+    value: 27
+  SecureReason_VirtualServerExpired:
+    value: 28
+  SecureReason_VirtualServerRecreate:
+    value: 29
+  SecureReason_ESportsTeamFull:
+    value: 30
+  SecureReason_ESportsMatchAborted:
+    value: 31
+  SecureReason_ESportsMatchWalkover:
+    value: 32
+  SecureReason_ESportsMatchWarmupTimedOut:
+    value: 33
+  SecureReason_NotAllowedToSpectate:
+    value: 34
+  SecureReason_NoSpectateSlotAvailable:
+    value: 35
+  SecureReason_InvalidSpectateJoin:
+    value: 36
+  SecureReason_PremiumStatusMismatch:
+    value: 37
+

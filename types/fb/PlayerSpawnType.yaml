@@ -1,0 +1,11 @@
+name: PlayerSpawnType
+type: enum
+
+values:
+  PlayerSpawnType_HumanPlayer:
+    value: 0
+  PlayerSpawnType_AiPlayer:
+    value: 1
+  PlayerSpawnType_Actor:
+    value: 2
+

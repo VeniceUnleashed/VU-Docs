@@ -1,0 +1,74 @@
+name: ChassisComponentData
+type: class
+inherits: PartComponentData
+
+constructors:
+  -
+    description: Creates a new ChassisComponentData frostbite instance.
+  -
+    description: Creates a new ChassisComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type PartComponentData to ChassisComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: PartComponentData
+        description: The instance to cast to ChassisComponentData.
+  -
+    description: Casts an instance of type ComponentData to ChassisComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to ChassisComponentData.
+  -
+    description: Casts an instance of type GameObjectData to ChassisComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to ChassisComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to ChassisComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to ChassisComponentData.
+  -
+    description: Casts an instance of type DataContainer to ChassisComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ChassisComponentData.
+
+properties:
+  vehicleConfig:
+    type: VehicleConfigData
+    nullable: true
+  gearboxConfig:
+    type: GearboxConfigData
+    nullable: true
+  waterStreakEffects:
+    type: VehicleWaterEffectData
+    array: true
+  waterEffects:
+    type: VehicleWaterEffectData
+    array: true
+  triggerGroundEffectImpulse:
+    type: float
+  landingGearLogic:
+    type: LandingGearLogicData
+    nullable: true
+  alwaysFullThrottle:
+    type: bool
+  forceLandingGearsRetract:
+    type: bool
+  allowNegativeThrottle:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ChassisComponentData type.
+

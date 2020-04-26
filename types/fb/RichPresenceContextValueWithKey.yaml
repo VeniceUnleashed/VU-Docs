@@ -1,0 +1,35 @@
+name: RichPresenceContextValueWithKey
+type: class
+inherits: RichPresenceContextValue
+
+constructors:
+  -
+    description: Creates a new RichPresenceContextValueWithKey frostbite instance.
+  -
+    description: Creates a new RichPresenceContextValueWithKey frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type RichPresenceContextValue to RichPresenceContextValueWithKey. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: RichPresenceContextValue
+        description: The instance to cast to RichPresenceContextValueWithKey.
+  -
+    description: Casts an instance of type DataContainer to RichPresenceContextValueWithKey. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to RichPresenceContextValueWithKey.
+
+properties:
+  key:
+    type: string
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the RichPresenceContextValueWithKey type.
+

@@ -1,0 +1,41 @@
+name: BoatFloatPhysicsData
+type: class
+inherits: HullFloatPhysicsData
+
+constructors:
+  -
+    description: Creates a new BoatFloatPhysicsData frostbite instance.
+  -
+    description: Creates a new BoatFloatPhysicsData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type HullFloatPhysicsData to BoatFloatPhysicsData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: HullFloatPhysicsData
+        description: The instance to cast to BoatFloatPhysicsData.
+  -
+    description: Casts an instance of type FloatPhysicsData to BoatFloatPhysicsData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: FloatPhysicsData
+        description: The instance to cast to BoatFloatPhysicsData.
+  -
+    description: Casts an instance of type DataContainer to BoatFloatPhysicsData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to BoatFloatPhysicsData.
+
+properties:
+  frontRatio:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the BoatFloatPhysicsData type.
+

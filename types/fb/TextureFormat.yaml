@@ -1,0 +1,69 @@
+name: TextureFormat
+type: enum
+
+values:
+  TextureFormat_DXT1:
+    value: 0
+  TextureFormat_DXT3:
+    value: 1
+  TextureFormat_DXT5:
+    value: 2
+  TextureFormat_DXT5A:
+    value: 3
+  TextureFormat_DXN:
+    value: 4
+  TextureFormat_RGB565:
+    value: 5
+  TextureFormat_RGB888:
+    value: 6
+  TextureFormat_ARGB1555:
+    value: 7
+  TextureFormat_ARGB4444:
+    value: 8
+  TextureFormat_ARGB8888:
+    value: 9
+  TextureFormat_L8:
+    value: 10
+  TextureFormat_L16:
+    value: 11
+  TextureFormat_ABGR16:
+    value: 12
+  TextureFormat_ABGR16F:
+    value: 13
+  TextureFormat_ABGR32F:
+    value: 14
+  TextureFormat_R16F:
+    value: 15
+  TextureFormat_R32F:
+    value: 16
+  TextureFormat_NormalDXN:
+    value: 17
+  TextureFormat_NormalDXT1:
+    value: 18
+  TextureFormat_NormalDXT5:
+    value: 19
+  TextureFormat_NormalDXT5RGA:
+    value: 20
+  TextureFormat_RG8:
+    value: 21
+  TextureFormat_GR16:
+    value: 22
+  TextureFormat_GR16F:
+    value: 23
+  TextureFormat_D16:
+    value: 24
+  TextureFormat_D24S8:
+    value: 25
+  TextureFormat_D24FS8:
+    value: 26
+  TextureFormat_D32F:
+    value: 27
+  TextureFormat_ABGR32:
+    value: 28
+  TextureFormat_GR32F:
+    value: 29
+  TextureFormat_A2R10G10B10:
+    value: 30
+  TextureFormat_Unknown:
+    value: 31
+

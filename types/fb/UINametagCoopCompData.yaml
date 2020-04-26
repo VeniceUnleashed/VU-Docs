@@ -1,0 +1,49 @@
+name: UINametagCoopCompData
+type: class
+inherits: UINametagCompData
+
+constructors:
+  -
+    description: Creates a new UINametagCoopCompData frostbite instance.
+  -
+    description: Creates a new UINametagCoopCompData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UINametagCompData to UINametagCoopCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UINametagCompData
+        description: The instance to cast to UINametagCoopCompData.
+  -
+    description: Casts an instance of type UI3dIconCompData to UINametagCoopCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UI3dIconCompData
+        description: The instance to cast to UINametagCoopCompData.
+  -
+    description: Casts an instance of type UIComponentData to UINametagCoopCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIComponentData
+        description: The instance to cast to UINametagCoopCompData.
+  -
+    description: Casts an instance of type Asset to UINametagCoopCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to UINametagCoopCompData.
+  -
+    description: Casts an instance of type DataContainer to UINametagCoopCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UINametagCoopCompData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UINametagCoopCompData type.
+

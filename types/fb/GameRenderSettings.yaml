@@ -1,0 +1,197 @@
+name: GameRenderSettings
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new GameRenderSettings frostbite instance.
+  -
+    description: Creates a new GameRenderSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to GameRenderSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to GameRenderSettings.
+
+properties:
+  stereoCrosshairDampingFactor:
+    type: float
+  inactiveSkipFrameCount:
+    type: int
+  forceOrthoViewSize:
+    type: float
+  stereoCrosshairRadius:
+    type: float
+  stereoCrosshairMaxHitDepth:
+    type: float
+  forceBlurAmount:
+    type: float
+  drawFpsMethod:
+    type: int
+  forceFov:
+    type: float
+  fovMultiplier:
+    type: float
+  staticModelPartOcclusionMaxScreenArea:
+    type: float
+  staticModelCullJobCount:
+    type: int
+  edgeModelLodScale:
+    type: float
+  edgeModelScreenAreaScale:
+    type: float
+  xenonRingBufferSize:
+    type: int
+  splitScreenTestViewCount:
+    type: int
+  xenonPresentImmediateThreshold:
+    type: int
+  xenonGammaRampType:
+    type: int
+  ps3VSyncMethod:
+    type: int
+  ps3VideoGamma:
+    type: float
+  ps3FrameMainBufferSize:
+    type: int
+  ps3FrameLocalBufferSize:
+    type: int
+  viewDistance:
+    type: float
+  cameraCutMaxFrameTranslation:
+    type: float
+  nearPlane:
+    type: float
+  forceWorldFadeAmount:
+    type: float
+  edgeModelMaxVisibleInstanceCount:
+    type: int
+  edgeModelForceLod:
+    type: int
+  edgeModelViewDistance:
+    type: float
+  ps3LinearFrameCmdBufEnable:
+    type: bool
+  xenonRes1280x704Enable:
+    type: bool
+  perfOverlayEnable:
+    type: bool
+  gcmHudEnable:
+    type: bool
+  movieVSyncEnable:
+    type: bool
+  ps3Res1280x704Enable:
+    type: bool
+  initialClearEnable:
+    type: bool
+  gpuProfilerEnable:
+    type: bool
+  ps3CellMemoryTexturesEnable:
+    type: bool
+  xenonBufferTwoFramesEnable:
+    type: bool
+  drawFpsHistogram:
+    type: bool
+  fullscreen:
+    type: bool
+  perfOverlayLatestFrameTimeEnable:
+    type: bool
+  jobEnable:
+    type: bool
+  perfOverlayVisible:
+    type: bool
+  emittersEnable:
+    type: bool
+  edgeModelsEnable:
+    type: bool
+  edgeModelCastShadowsEnable:
+    type: bool
+  edgeModelDepthBiasEnable:
+    type: bool
+  edgeModelShadowDepthBiasEnable:
+    type: bool
+  vSyncFlashTestEnable:
+    type: bool
+  entityRenderEnable:
+    type: bool
+  edgeModelSpuInstancingEnable:
+    type: bool
+  edgeModelUseMainLodEnable:
+    type: bool
+  debugRenderServiceEnable:
+    type: bool
+  edgeModelUseLodBox:
+    type: bool
+  debugRendererEnable:
+    type: bool
+  forceVSyncEnable:
+    type: bool
+  edgeModelCullEnable:
+    type: bool
+  edgeModelFrustumCullEnable:
+    type: bool
+  edgeModelOcclusionCullEnable:
+    type: bool
+  edgeModelAdditionalCullEnable:
+    type: bool
+  edgeModelDrawBoxes:
+    type: bool
+  edgeModelDrawStats:
+    type: bool
+  staticModelEnable:
+    type: bool
+  staticModelMeshesEnable:
+    type: bool
+  staticModelZPassEnable:
+    type: bool
+  staticModelPartCullEnable:
+    type: bool
+  staticModelPartFrustumCullEnable:
+    type: bool
+  staticModelPartOcclusionCullEnable:
+    type: bool
+  staticModelPartShadowCullEnable:
+    type: bool
+  staticModelDrawBoxes:
+    type: bool
+  staticModelDrawStats:
+    type: bool
+  drawScreenInfo:
+    type: bool
+  forceOrthoViewEnable:
+    type: bool
+  staticModelCullSpuJobEnable:
+    type: bool
+  lockView:
+    type: bool
+  resetLockedView:
+    type: bool
+  drawInfo:
+    type: bool
+  fadeEnable:
+    type: bool
+  fadeWaitingEnable:
+    type: bool
+  drawFps:
+    type: bool
+  destructionVolumeDrawEnable:
+    type: bool
+  blurEnable:
+    type: bool
+  buildJobSyncEnable:
+    type: bool
+  forceSquareOrthoView:
+    type: bool
+  enable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the GameRenderSettings type.
+

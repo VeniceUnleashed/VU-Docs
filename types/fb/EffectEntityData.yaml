@@ -1,0 +1,68 @@
+name: EffectEntityData
+type: class
+inherits: SpatialEntityData
+
+constructors:
+  -
+    description: Creates a new EffectEntityData frostbite instance.
+  -
+    description: Creates a new EffectEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SpatialEntityData to EffectEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to EffectEntityData.
+  -
+    description: Casts an instance of type EntityData to EffectEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to EffectEntityData.
+  -
+    description: Casts an instance of type GameObjectData to EffectEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to EffectEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to EffectEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to EffectEntityData.
+  -
+    description: Casts an instance of type DataContainer to EffectEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to EffectEntityData.
+
+properties:
+  components:
+    type: GameObjectData
+    array: true
+  maxInstanceCount:
+    type: int
+  cullDistance:
+    type: float
+  startDelay:
+    type: float
+  highEndPc:
+    type: bool
+  mediumPc:
+    type: bool
+  lowEndPc:
+    type: bool
+  resetInstanceWhenStarted:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the EffectEntityData type.
+

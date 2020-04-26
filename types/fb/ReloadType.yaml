@@ -1,0 +1,11 @@
+name: ReloadType
+type: enum
+
+values:
+  rtSingleBullet:
+    value: 0
+  rtMagazine:
+    value: 1
+  rtMagazineWithPossibleShorterReload:
+    value: 2
+

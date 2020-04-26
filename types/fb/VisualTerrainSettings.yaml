@@ -1,0 +1,331 @@
+name: VisualTerrainSettings
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new VisualTerrainSettings frostbite instance.
+  -
+    description: Creates a new VisualTerrainSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to VisualTerrainSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VisualTerrainSettings.
+
+properties:
+  debugOverlayBrushCoverageMin:
+    type: Vec2
+  renderMode:
+    type: TerrainRenderMode
+  meshScatteringInstanceCullJobCount:
+    type: int
+  patchErrorFov:
+    type: float
+  triangleSizeMin:
+    type: float
+  lodScale:
+    type: float
+  lodCenterExtrapolationDistanceMax:
+    type: float
+  lodCenterExtrapolationTime:
+    type: float
+  meshScatteringDensityScaleFactor:
+    type: float
+  dxTessellatedTriWidth:
+    type: float
+  dxTessellationPatchShrink:
+    type: float
+  dxTessellationPatchFacesPerSide:
+    type: int
+  zPassDistance:
+    type: float
+  debugOverlayGridSize:
+    type: float
+  textureAtlasSampleCountXFactor:
+    type: int
+  textureAtlasSampleCountYFactor:
+    type: int
+  textureSamplesPerMeterMax:
+    type: float
+  textureDetailFalloffFactor:
+    type: float
+  textureDetailFalloffDistance:
+    type: float
+  textureDetailFalloffCurve:
+    type: float
+  textureInvisibleDetailReductionFactor:
+    type: float
+  textureOccludedDetailReductionFactor:
+    type: float
+  textureRenderJobCount:
+    type: int
+  meshScatteringDistanceScaleFactor:
+    type: float
+  debugOverlayIsolineSpacing:
+    type: float
+  textureRenderJobsLaunchedPerFrameCountMax:
+    type: int
+  textureTileSamplesPerSide:
+    type: int
+  textureTileBorderWidth:
+    type: int
+  textureLevelOffset:
+    type: int
+  textureClodFrameCount:
+    type: int
+  meshScatteringDensityMarginFactor:
+    type: float
+  textureClodCutoffPriority:
+    type: float
+  meshScatteringWindSpeed:
+    type: float
+  textureCompressJobCount:
+    type: int
+  meshScatteringInstancesPerCellMax:
+    type: int
+  textureCompressionQuality:
+    type: int
+  textureDetailSlopeBoost:
+    type: float
+  textureGenerationMipBias:
+    type: float
+  debugOverlayBrushSize:
+    type: float
+  meshScatteringBuildChannelCount:
+    type: int
+  meshScatteringTreeNodePoolCapacity:
+    type: int
+  meshScatteringInvisibleCellFovFactor:
+    type: float
+  meshScatteringInstanceCullListCount:
+    type: int
+  meshScatteringPregenerationDistanceRatio:
+    type: float
+  tessellationFacesPerSideMin:
+    type: int
+  maxNonVisibleTextureUpdateCount:
+    type: int
+  textureQuadsPerTileLevel:
+    type: int
+  waterDepthMetersPerSample:
+    type: float
+  dynamicMaskDecalWidthScale:
+    type: float
+  drawQuadtreeZoomIndex:
+    type: int
+  meshScatteringClodFrameCount:
+    type: int
+  meshScatteringBuildChannelsLaunchedPerFrameCountMax:
+    type: int
+  slotReuseWaitCount:
+    type: int
+  meshScatteringCellPoolCapacity:
+    type: int
+  meshScatteringCullRecordCount:
+    type: int
+  patchSlotCount:
+    type: int
+  buildJobCount:
+    type: int
+  occluderLodBoostLevelCount:
+    type: int
+  decalZPassDrawDistance:
+    type: float
+  decalOffsetY:
+    type: float
+  decal3dFarDrawDistanceScaleFactor:
+    type: float
+  occludedMinDistance:
+    type: float
+  patchFacesPerSide:
+    type: int
+  drawOnlyDecalZPassEnable:
+    type: bool
+  drawDecal3dEnable:
+    type: bool
+  drawTextureTileBoxesEnable:
+    type: bool
+  drawEnable:
+    type: bool
+  drawPatchBoxesEnable:
+    type: bool
+  drawDebugTextEnable:
+    type: bool
+  drawWaterEnable:
+    type: bool
+  prioritizationSpuJobEnable:
+    type: bool
+  drawDecalZPassEnable:
+    type: bool
+  drawQuadtreesEnable:
+    type: bool
+  textureVtIndirectionJobEnable:
+    type: bool
+  vertexBufferHeightsEnable:
+    type: bool
+  drawDebugTexturesEnable:
+    type: bool
+  forceDecalReducedQuality:
+    type: bool
+  debugOverlayIsolinesEnable:
+    type: bool
+  textureClodEnable:
+    type: bool
+  debugOverlayWireframeEnable:
+    type: bool
+  debugOverlaySketchTextureEnable:
+    type: bool
+  drawDecal2dEnable:
+    type: bool
+  detailOverlayEnable:
+    type: bool
+  decalEnable:
+    type: bool
+  drawPatchesEnable:
+    type: bool
+  drawQuadtreeStatsEnable:
+    type: bool
+  destroyAll:
+    type: bool
+  drawQuadtreeAtlasTexturesEnable:
+    type: bool
+  slotDebugOutputEnable:
+    type: bool
+  updateJobsEnable:
+    type: bool
+  prioritizationOcclusionEnable:
+    type: bool
+  cullSpuJobEnable:
+    type: bool
+  prepareBuildSpuJobEnable:
+    type: bool
+  buildSpuJobEnable:
+    type: bool
+  regenerateTexturesEnable:
+    type: bool
+  dynamicMaskEnable:
+    type: bool
+  gpuTextureCompressionEnable:
+    type: bool
+  textureBlockOnStreamingEnable:
+    type: bool
+  patchErrorFovEnable:
+    type: bool
+  dxDisplacementMappingEnable:
+    type: bool
+  textureKeepPoolFullEnable:
+    type: bool
+  patchLodTransitionsEnable:
+    type: bool
+  patchMaterialSortingEnable:
+    type: bool
+  cullSampleBoundingBoxHeightEnable:
+    type: bool
+  castShadowsEnable:
+    type: bool
+  globalColormapEnable:
+    type: bool
+  occluderEnable:
+    type: bool
+  occluderJobEnable:
+    type: bool
+  occluderSpuJobEnable:
+    type: bool
+  textureLayerCullingEnable:
+    type: bool
+  occludedEnable:
+    type: bool
+  drawTextureDebugDepthComplexity:
+    type: bool
+  meshScatteringEnable:
+    type: bool
+  meshScatteringJobsEnable:
+    type: bool
+  meshScatteringCastShadowsEnable:
+    type: bool
+  drawMeshScatteringEnable:
+    type: bool
+  drawMeshScatteringCellBoxesEnable:
+    type: bool
+  drawMeshScatteringNodeBoxesEnable:
+    type: bool
+  drawMeshScatteringCulledCellBoxesEnable:
+    type: bool
+  drawMeshScatteringDebugMaskScaleTexturesEnable:
+    type: bool
+  drawMeshScatteringStatsEnable:
+    type: bool
+  drawMeshScatteringQuadtreeEnable:
+    type: bool
+  textureDrawTerrainLayersEnable:
+    type: bool
+  textureForceUpdateEnable:
+    type: bool
+  textureCompressFastAlgorithmEnable:
+    type: bool
+  meshScatteringForceUpdateEnable:
+    type: bool
+  textureCompressSpuJobsEnable:
+    type: bool
+  drawTextureDebugColors:
+    type: bool
+  forceGraphicsDriverCrash:
+    type: bool
+  meshScatteringBuildVisibleFirst:
+    type: bool
+  forcePatchRebuildEnable:
+    type: bool
+  debugOverlayBrushEnable:
+    type: bool
+  wireframeEnable:
+    type: bool
+  textureVtIndirectionSpuJobEnable:
+    type: bool
+  drawVertexYTextureEnable:
+    type: bool
+  meshScatteringInstanceCountLodEnable:
+    type: bool
+  meshScatteringCullSpuJobEnable:
+    type: bool
+  meshScatteringInstanceCullSpuJobEnable:
+    type: bool
+  meshScatteringPrioritizationSpuJobEnable:
+    type: bool
+  meshScatteringSpuJobEnable:
+    type: bool
+  enable:
+    type: bool
+  editServiceEnable:
+    type: bool
+  meshScatteringInstanceCullEnable:
+    type: bool
+  zeroViewportEnable:
+    type: bool
+  debugOverlayGridEnable:
+    type: bool
+  meshScatteringInstanceCullBoxTestEnable:
+    type: bool
+  meshScatteringInstanceFrustumCullEnable:
+    type: bool
+  meshScatteringInstanceOcclusionCullEnable:
+    type: bool
+  meshScatteringInstanceAdditionalCullEnable:
+    type: bool
+  drawMeshScatteringInstanceBoxesEnable:
+    type: bool
+  meshScatteringInstanceCullDynamicAllocEnable:
+    type: bool
+  ps3MeshScatteringInstanceCellMemoryEnable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VisualTerrainSettings type.
+

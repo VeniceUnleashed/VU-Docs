@@ -1,0 +1,11 @@
+name: RasterTreeBuildMode
+type: enum
+
+values:
+  RasterTreeBuildMode_InlinePersistentStreamRest:
+    value: 0
+  RasterTreeBuildMode_InlinePersistentRemoveRest:
+    value: 1
+  RasterTreeBuildMode_InlineAll:
+    value: 2
+

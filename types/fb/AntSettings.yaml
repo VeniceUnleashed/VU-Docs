@@ -1,0 +1,87 @@
+name: AntSettings
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new AntSettings frostbite instance.
+  -
+    description: Creates a new AntSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to AntSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to AntSettings.
+
+properties:
+  detailedCollisionSpeedLimit:
+    type: float
+  leanSignalScale:
+    type: float
+  leanSignalClamp:
+    type: float
+  maxInterpolationSlots:
+    type: int
+  maxSingleBoneInterpolationSlots:
+    type: int
+  reducedInterpolationDistance:
+    type: float
+  trajectoryInterpolationDistance:
+    type: float
+  forceLodDistance:
+    type: float
+  maxAnimatablesPerPoseJob:
+    type: int
+  checkGiantSoldiers:
+    type: float
+  clientEmulatesServer:
+    type: bool
+  useCameraFov:
+    type: bool
+  updateEnable:
+    type: bool
+  enablePA:
+    type: bool
+  useWeaponFov:
+    type: bool
+  disableAnimManagerSceneOps:
+    type: bool
+  disableAILodFeature:
+    type: bool
+  disableModelAnimationCulling:
+    type: bool
+  enableJobs:
+    type: bool
+  forcePoseUpdate:
+    type: bool
+  runAsHighPriority:
+    type: bool
+  interpolatePoses:
+    type: bool
+  allowVariableTickLength:
+    type: bool
+  enablePackageCache:
+    type: bool
+  useHIK:
+    type: bool
+  updateLoddingEnable:
+    type: bool
+  blockOnJobs:
+    type: bool
+  enableDebugLogFile:
+    type: bool
+  enablePoseJobs:
+    type: bool
+  usePA:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the AntSettings type.
+

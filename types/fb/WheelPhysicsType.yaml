@@ -1,0 +1,11 @@
+name: WheelPhysicsType
+type: enum
+
+values:
+  wptNormal:
+    value: 0
+  wptFollow:
+    value: 1
+  wptStatic:
+    value: 2
+

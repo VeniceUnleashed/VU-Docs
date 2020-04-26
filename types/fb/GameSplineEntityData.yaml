@@ -1,0 +1,65 @@
+name: GameSplineEntityData
+type: class
+inherits: GameEntityData
+
+constructors:
+  -
+    description: Creates a new GameSplineEntityData frostbite instance.
+  -
+    description: Creates a new GameSplineEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameEntityData to GameSplineEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to GameSplineEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to GameSplineEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to GameSplineEntityData.
+  -
+    description: Casts an instance of type EntityData to GameSplineEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to GameSplineEntityData.
+  -
+    description: Casts an instance of type GameObjectData to GameSplineEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to GameSplineEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to GameSplineEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to GameSplineEntityData.
+  -
+    description: Casts an instance of type DataContainer to GameSplineEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to GameSplineEntityData.
+
+properties:
+  splineType:
+    type: GameSplineType
+  localPoints:
+    type: Vec3
+    array: true
+  normals:
+    type: Vec3
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the GameSplineEntityData type.
+

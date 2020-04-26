@@ -1,0 +1,11 @@
+name: MixGroupPropertyType
+type: enum
+
+values:
+  MixGroupPropertyType_Gain:
+    value: 0
+  MixGroupPropertyType_Pitch:
+    value: 1
+  MixGroupPropertyTypeCount:
+    value: 2
+

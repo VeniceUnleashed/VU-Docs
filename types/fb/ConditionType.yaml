@@ -1,0 +1,21 @@
+name: ConditionType
+type: enum
+
+values:
+  ConditionType_And:
+    value: 0
+  ConditionType_Or:
+    value: 1
+  ConditionType_XOr:
+    value: 2
+  ConditionType_Equal:
+    value: 3
+  ConditionType_Less:
+    value: 4
+  ConditionType_Greater:
+    value: 5
+  ConditionType_LessOrEqual:
+    value: 6
+  ConditionType_GreaterOrEqual:
+    value: 7
+

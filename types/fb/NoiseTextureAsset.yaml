@@ -1,0 +1,37 @@
+name: NoiseTextureAsset
+type: class
+inherits: TextureBaseAsset
+
+constructors:
+  -
+    description: Creates a new NoiseTextureAsset frostbite instance.
+  -
+    description: Creates a new NoiseTextureAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type TextureBaseAsset to NoiseTextureAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: TextureBaseAsset
+        description: The instance to cast to NoiseTextureAsset.
+  -
+    description: Casts an instance of type Asset to NoiseTextureAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to NoiseTextureAsset.
+  -
+    description: Casts an instance of type DataContainer to NoiseTextureAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to NoiseTextureAsset.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the NoiseTextureAsset type.
+

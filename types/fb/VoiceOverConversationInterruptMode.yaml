@@ -1,0 +1,11 @@
+name: VoiceOverConversationInterruptMode
+type: enum
+
+values:
+  VoiceOverConversationInterruptMode_Disallow:
+    value: 0
+  VoiceOverConversationInterruptMode_Allow:
+    value: 1
+  VoiceOverConversationInterruptMode_AllowSame:
+    value: 2
+

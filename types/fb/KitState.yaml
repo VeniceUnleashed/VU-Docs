@@ -1,0 +1,41 @@
+name: KitState
+type: class
+inherits: MetricState
+
+constructors:
+  -
+    description: Creates a new KitState frostbite instance.
+  -
+    description: Creates a new KitState frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type MetricState to KitState. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MetricState
+        description: The instance to cast to KitState.
+  -
+    description: Casts an instance of type MetricEvent to KitState. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MetricEvent
+        description: The instance to cast to KitState.
+  -
+    description: Casts an instance of type DataContainer to KitState. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to KitState.
+
+properties:
+  kit:
+    type: string
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the KitState type.
+

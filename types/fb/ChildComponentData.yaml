@@ -1,0 +1,72 @@
+name: ChildComponentData
+type: class
+inherits: PartComponentData
+
+constructors:
+  -
+    description: Creates a new ChildComponentData frostbite instance.
+  -
+    description: Creates a new ChildComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type PartComponentData to ChildComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: PartComponentData
+        description: The instance to cast to ChildComponentData.
+  -
+    description: Casts an instance of type ComponentData to ChildComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to ChildComponentData.
+  -
+    description: Casts an instance of type GameObjectData to ChildComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to ChildComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to ChildComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to ChildComponentData.
+  -
+    description: Casts an instance of type DataContainer to ChildComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ChildComponentData.
+
+properties:
+  alignTransform:
+    type: LinearTransform
+  movingBody:
+    type: MovingBodyData
+    nullable: true
+  healthZone:
+    type: VehicleHealthZoneData
+  soundEffectStartRpm:
+    type: float
+  soundEffectStopRpm:
+    type: float
+  alignmentSettings:
+    type: AlignmentData
+    nullable: true
+  soundEffect:
+    type: SoundAsset
+    nullable: true
+  enableAlignToCamera:
+    type: bool
+  worldSpacePositionLock:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ChildComponentData type.
+

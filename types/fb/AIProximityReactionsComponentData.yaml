@@ -1,0 +1,55 @@
+name: AIProximityReactionsComponentData
+type: class
+inherits: ComponentData
+
+constructors:
+  -
+    description: Creates a new AIProximityReactionsComponentData frostbite instance.
+  -
+    description: Creates a new AIProximityReactionsComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ComponentData to AIProximityReactionsComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to AIProximityReactionsComponentData.
+  -
+    description: Casts an instance of type GameObjectData to AIProximityReactionsComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to AIProximityReactionsComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to AIProximityReactionsComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to AIProximityReactionsComponentData.
+  -
+    description: Casts an instance of type DataContainer to AIProximityReactionsComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to AIProximityReactionsComponentData.
+
+properties:
+  binding:
+    type: AIProximityReactionsBinding
+  minExplosionImpulseForce:
+    type: float
+  maxExplosionLookDistance:
+    type: float
+  fireReactionDistance:
+    type: float
+  enabled:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the AIProximityReactionsComponentData type.
+

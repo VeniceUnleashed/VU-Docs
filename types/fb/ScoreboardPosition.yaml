@@ -1,0 +1,17 @@
+name: ScoreboardPosition
+type: enum
+
+values:
+  ScoreboardPosition_FirstPlace:
+    value: 0
+  ScoreboardPosition_SecondPlace:
+    value: 1
+  ScoreboardPosition_ThirdPlace:
+    value: 2
+  ScoreboardPosition_FourthPlace:
+    value: 3
+  ScoreboardPosition_FifthPlace:
+    value: 4
+  ScoreboardPosition_LAST_ITEM:
+    value: 5
+

@@ -1,0 +1,111 @@
+name: DriverSettings
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new DriverSettings frostbite instance.
+  -
+    description: Creates a new DriverSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to DriverSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to DriverSettings.
+  -
+    description: Casts an instance of type DataContainer to DriverSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to DriverSettings.
+
+properties:
+  minRadius:
+    type: float
+  radiusGrowthSpeed:
+    type: float
+  stoppingDeceleration:
+    type: float
+  steeringSensitivity:
+    type: float
+  maxBrakeOutput:
+    type: float
+  maxDec:
+    type: float
+  lookAheadTime:
+    type: float
+  angleDiffForNoSlowdown:
+    type: float
+  angleDiffForFullSlowdown:
+    type: float
+  velocityAtFullSlowdown:
+    type: float
+  velDiffAtMinAcc:
+    type: float
+  velDiffAtMaxAcc:
+    type: float
+  maxYawToApplySprint:
+    type: float
+  minAcc:
+    type: float
+  maxAcc:
+    type: float
+  velDiffAtMinDec:
+    type: float
+  velDiffAtMaxDec:
+    type: float
+  accDiffAtMinThrottleVelocityDecelerating:
+    type: float
+  minDec:
+    type: float
+  minThrottleVelocityDecelerating:
+    type: float
+  accDiffAtMinThrottleVelocityAccelerating:
+    type: float
+  accDiffAtMaxThrottleVelocityAccelerating:
+    type: float
+  maxThrottleVelocityDecelerating:
+    type: float
+  minThrottleVelocityAccelerating:
+    type: float
+  maxThrottleVelocityAccelerating:
+    type: float
+  maxPTerm:
+    type: float
+  accDiffAtMaxThrottleVelocityDecelerating:
+    type: float
+  p:
+    type: float
+  i:
+    type: float
+  maxError:
+    type: float
+  maxITerm:
+    type: float
+  maxSumError:
+    type: float
+  d:
+    type: float
+  useSquareVelDiffCurveDec:
+    type: bool
+  useSquareAccDiffCurveDec:
+    type: bool
+  squareBrakeOutput:
+    type: bool
+  useSquareVelDiffCurveAcc:
+    type: bool
+  usePIDRegulator:
+    type: bool
+  useSquareAccDiffCurveAcc:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the DriverSettings type.
+

@@ -1,0 +1,11 @@
+name: GainFaderFadeType
+type: enum
+
+values:
+  GainFaderFadeType_LinearAmplitude:
+    value: 0
+  GainFaderFadeType_LinearPower:
+    value: 1
+  GainFaderFadeType_SineAmplitude:
+    value: 2
+

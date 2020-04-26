@@ -1,0 +1,23 @@
+name: AntHitReactionWeaponType
+type: enum
+
+values:
+  AntHitReactionWeaponType_Pistol:
+    value: 0
+  AntHitReactionWeaponType_SMG:
+    value: 1
+  AntHitReactionWeaponType_AssaultRifle:
+    value: 2
+  AntHitReactionWeaponType_LMG:
+    value: 3
+  AntHitReactionWeaponType_Shotgun:
+    value: 4
+  AntHitReactionWeaponType_SniperRifle:
+    value: 5
+  AntHitReactionWeaponType_Explosion:
+    value: 6
+  AntHitReactionWeaponType_Flashbang:
+    value: 7
+  AntHitReactionWeaponType_Melee:
+    value: 8
+

@@ -1,0 +1,38 @@
+name: BigWorldSetting
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new BigWorldSetting frostbite instance.
+  -
+    description: Creates a new BigWorldSetting frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to BigWorldSetting. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to BigWorldSetting.
+
+properties:
+  sound:
+    type: SoundAsset
+    nullable: true
+  minDistance:
+    type: int
+  maxDistance:
+    type: int
+  minDelayTimeInMinutes:
+    type: float
+  maxDelayTimeInMinutes:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the BigWorldSetting type.
+

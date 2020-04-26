@@ -1,0 +1,51 @@
+name: MaterialRelationVehicleData
+type: class
+inherits: PhysicsMaterialRelationPropertyData
+
+constructors:
+  -
+    description: Creates a new MaterialRelationVehicleData frostbite instance.
+  -
+    description: Creates a new MaterialRelationVehicleData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type PhysicsMaterialRelationPropertyData to MaterialRelationVehicleData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: PhysicsMaterialRelationPropertyData
+        description: The instance to cast to MaterialRelationVehicleData.
+  -
+    description: Casts an instance of type MaterialRelationPropertyData to MaterialRelationVehicleData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MaterialRelationPropertyData
+        description: The instance to cast to MaterialRelationVehicleData.
+  -
+    description: Casts an instance of type DataContainer to MaterialRelationVehicleData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MaterialRelationVehicleData.
+
+properties:
+  chassiEffect:
+    type: EffectBlueprint
+    nullable: true
+  trackEffect:
+    type: EffectBlueprint
+    nullable: true
+  wheelEffect:
+    type: EffectBlueprint
+    nullable: true
+  groundEffect:
+    type: EffectBlueprint
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MaterialRelationVehicleData type.
+

@@ -1,0 +1,62 @@
+name: EmitterEntityData
+type: class
+inherits: EffectEntityData
+
+constructors:
+  -
+    description: Creates a new EmitterEntityData frostbite instance.
+  -
+    description: Creates a new EmitterEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EffectEntityData to EmitterEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EffectEntityData
+        description: The instance to cast to EmitterEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to EmitterEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to EmitterEntityData.
+  -
+    description: Casts an instance of type EntityData to EmitterEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to EmitterEntityData.
+  -
+    description: Casts an instance of type GameObjectData to EmitterEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to EmitterEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to EmitterEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to EmitterEntityData.
+  -
+    description: Casts an instance of type DataContainer to EmitterEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to EmitterEntityData.
+
+properties:
+  emitter:
+    type: EmitterAsset
+    nullable: true
+  spawnProbability:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the EmitterEntityData type.
+

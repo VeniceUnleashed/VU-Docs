@@ -1,0 +1,73 @@
+name: SquadId
+type: enum
+
+values:
+  SquadNone:
+    value: 0
+  Squad1:
+    value: 1
+  Squad2:
+    value: 2
+  Squad3:
+    value: 3
+  Squad4:
+    value: 4
+  Squad5:
+    value: 5
+  Squad6:
+    value: 6
+  Squad7:
+    value: 7
+  Squad8:
+    value: 8
+  Squad9:
+    value: 9
+  Squad10:
+    value: 10
+  Squad11:
+    value: 11
+  Squad12:
+    value: 12
+  Squad13:
+    value: 13
+  Squad14:
+    value: 14
+  Squad15:
+    value: 15
+  Squad16:
+    value: 16
+  Squad17:
+    value: 17
+  Squad18:
+    value: 18
+  Squad19:
+    value: 19
+  Squad20:
+    value: 20
+  Squad21:
+    value: 21
+  Squad22:
+    value: 22
+  Squad23:
+    value: 23
+  Squad24:
+    value: 24
+  Squad25:
+    value: 25
+  Squad26:
+    value: 26
+  Squad27:
+    value: 27
+  Squad28:
+    value: 28
+  Squad29:
+    value: 29
+  Squad30:
+    value: 30
+  Squad31:
+    value: 31
+  Squad32:
+    value: 32
+  SquadIdCount:
+    value: 33
+

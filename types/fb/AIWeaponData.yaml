@@ -1,0 +1,125 @@
+name: AIWeaponData
+type: class
+inherits: GameAIWeaponData
+
+constructors:
+  -
+    description: Creates a new AIWeaponData frostbite instance.
+  -
+    description: Creates a new AIWeaponData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameAIWeaponData to AIWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameAIWeaponData
+        description: The instance to cast to AIWeaponData.
+  -
+    description: Casts an instance of type Asset to AIWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to AIWeaponData.
+  -
+    description: Casts an instance of type DataContainer to AIWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to AIWeaponData.
+
+properties:
+  strengths:
+    type: Strengths
+  maxBurstCoolDownTime:
+    type: float
+  lostTargetBurstCoolDownModifier:
+    type: float
+  finalAccuracyPercentage:
+    type: float
+  aimTransitionFireDelay:
+    type: float
+  minRange:
+    type: float
+  maxRange:
+    type: float
+  optimalRangePercentage:
+    type: float
+  reloadBehavior:
+    type: ReloadBehavior
+  minExtraReloadTime:
+    type: float
+  maxExtraReloadTime:
+    type: float
+  minBurstCoolDownTime:
+    type: float
+  aimAngularVelocity:
+    type: float
+  innerInaccurateDistance:
+    type: float
+  angleToTargetSnap:
+    type: float
+  sweepDistance:
+    type: float
+  sweepTime:
+    type: float
+  waitTimeBeforeFire:
+    type: float
+  burstLimitNear:
+    type: BurstLimit
+  burstLimitFar:
+    type: BurstLimit
+  startAccuracyPercentage:
+    type: float
+  minimumAccuracyBeforeFiring:
+    type: float
+  outerInaccurateDistance:
+    type: float
+  additionalMinimumAccuracyAtMinRange:
+    type: float
+  gravityModifier:
+    type: float
+  sweepType:
+    type: SweepSelectionType
+  aimOrigin:
+    type: AimOrigin
+  useZoom:
+    type: bool
+  allowedAgainstImmortals:
+    type: bool
+  aimWhileReloading:
+    type: bool
+  aimHighIndirectPath:
+    type: bool
+  indirect:
+    type: bool
+  isMelee:
+    type: bool
+  sweepFirstAttack:
+    type: bool
+  isBlindFireAllowed:
+    type: bool
+  canAltAttack:
+    type: bool
+  isStandStill:
+    type: bool
+  canSuppress:
+    type: bool
+  useFromCover:
+    type: bool
+  inaccuracyFollowsTarget:
+    type: bool
+  useInaccuracyAtCloseRange:
+    type: bool
+  disableWeaponSway:
+    type: bool
+  isAiAllowed:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the AIWeaponData type.
+

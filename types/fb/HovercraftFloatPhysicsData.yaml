@@ -1,0 +1,47 @@
+name: HovercraftFloatPhysicsData
+type: class
+inherits: HullFloatPhysicsData
+
+constructors:
+  -
+    description: Creates a new HovercraftFloatPhysicsData frostbite instance.
+  -
+    description: Creates a new HovercraftFloatPhysicsData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type HullFloatPhysicsData to HovercraftFloatPhysicsData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: HullFloatPhysicsData
+        description: The instance to cast to HovercraftFloatPhysicsData.
+  -
+    description: Casts an instance of type FloatPhysicsData to HovercraftFloatPhysicsData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: FloatPhysicsData
+        description: The instance to cast to HovercraftFloatPhysicsData.
+  -
+    description: Casts an instance of type DataContainer to HovercraftFloatPhysicsData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to HovercraftFloatPhysicsData.
+
+properties:
+  landResistanceAxisMod:
+    type: Vec3
+  landFrictionAxisMod:
+    type: Vec3
+  frontLength:
+    type: float
+  sideLength:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the HovercraftFloatPhysicsData type.
+

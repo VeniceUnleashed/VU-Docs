@@ -1,0 +1,43 @@
+name: UICapturepointtagCompData
+type: class
+inherits: UI3dIconCompData
+
+constructors:
+  -
+    description: Creates a new UICapturepointtagCompData frostbite instance.
+  -
+    description: Creates a new UICapturepointtagCompData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UI3dIconCompData to UICapturepointtagCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UI3dIconCompData
+        description: The instance to cast to UICapturepointtagCompData.
+  -
+    description: Casts an instance of type UIComponentData to UICapturepointtagCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIComponentData
+        description: The instance to cast to UICapturepointtagCompData.
+  -
+    description: Casts an instance of type Asset to UICapturepointtagCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to UICapturepointtagCompData.
+  -
+    description: Casts an instance of type DataContainer to UICapturepointtagCompData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UICapturepointtagCompData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UICapturepointtagCompData type.
+

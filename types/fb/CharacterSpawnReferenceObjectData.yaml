@@ -1,0 +1,72 @@
+name: CharacterSpawnReferenceObjectData
+type: class
+inherits: SpawnReferenceObjectData
+
+constructors:
+  -
+    description: Creates a new CharacterSpawnReferenceObjectData frostbite instance.
+  -
+    description: Creates a new CharacterSpawnReferenceObjectData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SpawnReferenceObjectData to CharacterSpawnReferenceObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpawnReferenceObjectData
+        description: The instance to cast to CharacterSpawnReferenceObjectData.
+  -
+    description: Casts an instance of type ReferenceObjectData to CharacterSpawnReferenceObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ReferenceObjectData
+        description: The instance to cast to CharacterSpawnReferenceObjectData.
+  -
+    description: Casts an instance of type GameObjectData to CharacterSpawnReferenceObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to CharacterSpawnReferenceObjectData.
+  -
+    description: Casts an instance of type GameDataContainer to CharacterSpawnReferenceObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to CharacterSpawnReferenceObjectData.
+  -
+    description: Casts an instance of type DataContainer to CharacterSpawnReferenceObjectData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to CharacterSpawnReferenceObjectData.
+
+properties:
+  playerType:
+    type: PlayerSpawnType
+  vehicleEntryIndex:
+    type: int
+  template:
+    type: SoldierSpawnTemplateData
+    nullable: true
+  humanTargetPreference:
+    type: float
+  minimapIcon:
+    type: UIHudIcon
+  allowFallbackOnNextAvailabeVehicleEntry:
+    type: bool
+  checkMaxPlayersInVehicle:
+    type: bool
+  affectMinimapPosition:
+    type: bool
+  isTarget:
+    type: bool
+  ignoreVehicleIcon:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the CharacterSpawnReferenceObjectData type.
+

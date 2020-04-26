@@ -1,0 +1,49 @@
+name: StatCategoriesLevelTree
+type: class
+inherits: StatCategoriesGuidTree
+
+constructors:
+  -
+    description: Creates a new StatCategoriesLevelTree frostbite instance.
+  -
+    description: Creates a new StatCategoriesLevelTree frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type StatCategoriesGuidTree to StatCategoriesLevelTree. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: StatCategoriesGuidTree
+        description: The instance to cast to StatCategoriesLevelTree.
+  -
+    description: Casts an instance of type StatCategoriesBaseTree to StatCategoriesLevelTree. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: StatCategoriesBaseTree
+        description: The instance to cast to StatCategoriesLevelTree.
+  -
+    description: Casts an instance of type TreeBase to StatCategoriesLevelTree. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: TreeBase
+        description: The instance to cast to StatCategoriesLevelTree.
+  -
+    description: Casts an instance of type Asset to StatCategoriesLevelTree. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to StatCategoriesLevelTree.
+  -
+    description: Casts an instance of type DataContainer to StatCategoriesLevelTree. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to StatCategoriesLevelTree.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the StatCategoriesLevelTree type.
+

@@ -1,0 +1,109 @@
+name: EnlightenRuntimeSettings
+type: class
+inherits: SystemSettings
+
+constructors:
+  -
+    description: Creates a new EnlightenRuntimeSettings frostbite instance.
+  -
+    description: Creates a new EnlightenRuntimeSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SystemSettings to EnlightenRuntimeSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SystemSettings
+        description: The instance to cast to EnlightenRuntimeSettings.
+  -
+    description: Casts an instance of type DataContainer to EnlightenRuntimeSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to EnlightenRuntimeSettings.
+
+properties:
+  albedoDefaultColor:
+    type: Vec3
+  localLightForceRadius:
+    type: float
+  drawDebugSystemDependenciesEnable:
+    type: int
+  temporalCoherenceThreshold:
+    type: float
+  skyBoxScale:
+    type: float
+  minSystemUpdateCount:
+    type: int
+  jobCount:
+    type: int
+  drawDebugSystemBoundingBoxEnable:
+    type: int
+  lightProbeMaxUpdateSolveCount:
+    type: int
+  drawDebugLightProbeSize:
+    type: float
+  compensateSunShadowHeightScale:
+    type: bool
+  saveRadiosityTexturesEnable:
+    type: bool
+  shadowsEnable:
+    type: bool
+  lightMapsEnable:
+    type: bool
+  localLightsEnable:
+    type: bool
+  localLightCullingEnable:
+    type: bool
+  localLightCustumFalloff:
+    type: bool
+  lightProbeForceUpdate:
+    type: bool
+  forceDynamic:
+    type: bool
+  drawDebugSystemsEnable:
+    type: bool
+  lightProbeEnable:
+    type: bool
+  lightProbeJobsEnable:
+    type: bool
+  drawDebugLightProbes:
+    type: bool
+  drawDebugLightProbeOcclusion:
+    type: bool
+  drawDebugLightProbeStats:
+    type: bool
+  drawDebugLightProbeBoundingBoxes:
+    type: bool
+  enable:
+    type: bool
+  drawSolveTaskPerformance:
+    type: bool
+  drawDebugColoringEnable:
+    type: bool
+  drawDebugTextures:
+    type: bool
+  drawDebugBackFaces:
+    type: bool
+  drawDebugTargetMeshes:
+    type: bool
+  drawWarningsEnable:
+    type: bool
+  albedoForceUpdateEnable:
+    type: bool
+  albedoForceColorEnable:
+    type: bool
+  drawDebugEntities:
+    type: bool
+  terrainMapEnable:
+    type: bool
+  emissiveEnable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the EnlightenRuntimeSettings type.
+

@@ -1,0 +1,19 @@
+name: VehicleMode
+type: enum
+
+values:
+  VmIdle:
+    value: 0
+  VmEntering:
+    value: 1
+  VmEntered:
+    value: 2
+  VmStarting:
+    value: 3
+  VmStarted:
+    value: 4
+  VmStopping:
+    value: 5
+  VmLeaving:
+    value: 6
+

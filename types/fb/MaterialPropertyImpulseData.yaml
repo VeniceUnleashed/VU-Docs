@@ -1,0 +1,41 @@
+name: MaterialPropertyImpulseData
+type: class
+inherits: PhysicsPropertyRelationPropertyData
+
+constructors:
+  -
+    description: Creates a new MaterialPropertyImpulseData frostbite instance.
+  -
+    description: Creates a new MaterialPropertyImpulseData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type PhysicsPropertyRelationPropertyData to MaterialPropertyImpulseData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: PhysicsPropertyRelationPropertyData
+        description: The instance to cast to MaterialPropertyImpulseData.
+  -
+    description: Casts an instance of type MaterialRelationPropertyData to MaterialPropertyImpulseData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MaterialRelationPropertyData
+        description: The instance to cast to MaterialPropertyImpulseData.
+  -
+    description: Casts an instance of type DataContainer to MaterialPropertyImpulseData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MaterialPropertyImpulseData.
+
+properties:
+  impulseAbsorptionMultiplier:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MaterialPropertyImpulseData type.
+

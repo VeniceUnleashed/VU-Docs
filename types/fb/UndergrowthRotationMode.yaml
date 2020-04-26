@@ -1,0 +1,11 @@
+name: UndergrowthRotationMode
+type: enum
+
+values:
+  UndergrowthRotationMode_Random:
+    value: 0
+  UndergrowthRotationMode_TowardsSlope:
+    value: 1
+  UndergrowthRotationMode_Fixed:
+    value: 2
+

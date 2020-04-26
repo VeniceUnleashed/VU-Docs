@@ -1,0 +1,40 @@
+name: VoiceOverDialogClip
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new VoiceOverDialogClip frostbite instance.
+  -
+    description: Creates a new VoiceOverDialogClip frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to VoiceOverDialogClip. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VoiceOverDialogClip.
+
+properties:
+  offset:
+    type: float
+  takes:
+    type: VoiceOverDialogTake
+    array: true
+  offsetReferences:
+    type: VoiceOverDialogClip
+    array: true
+  events:
+    type: VoiceOverDialogClipEvents
+    nullable: true
+  sequenceIndex:
+    type: int
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VoiceOverDialogClip type.
+

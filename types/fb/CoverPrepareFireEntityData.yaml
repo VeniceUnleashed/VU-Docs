@@ -1,0 +1,43 @@
+name: CoverPrepareFireEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new CoverPrepareFireEntityData frostbite instance.
+  -
+    description: Creates a new CoverPrepareFireEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to CoverPrepareFireEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to CoverPrepareFireEntityData.
+  -
+    description: Casts an instance of type GameObjectData to CoverPrepareFireEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to CoverPrepareFireEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to CoverPrepareFireEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to CoverPrepareFireEntityData.
+  -
+    description: Casts an instance of type DataContainer to CoverPrepareFireEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to CoverPrepareFireEntityData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the CoverPrepareFireEntityData type.
+

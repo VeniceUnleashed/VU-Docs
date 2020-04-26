@@ -1,0 +1,35 @@
+name: NetworkableLoosePartPhysicsData
+type: class
+inherits: LoosePartPhysicsData
+
+constructors:
+  -
+    description: Creates a new NetworkableLoosePartPhysicsData frostbite instance.
+  -
+    description: Creates a new NetworkableLoosePartPhysicsData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type LoosePartPhysicsData to NetworkableLoosePartPhysicsData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: LoosePartPhysicsData
+        description: The instance to cast to NetworkableLoosePartPhysicsData.
+  -
+    description: Casts an instance of type DataContainer to NetworkableLoosePartPhysicsData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to NetworkableLoosePartPhysicsData.
+
+properties:
+  networked:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the NetworkableLoosePartPhysicsData type.
+

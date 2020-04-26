@@ -1,0 +1,15 @@
+name: AwardType
+type: enum
+
+values:
+  AwardType_OnceGlobally:
+    value: 0
+  AwardType_OncePerRound:
+    value: 1
+  AwardType_Unlimited:
+    value: 2
+  AwardType_Limited:
+    value: 3
+  AwardType_GateList:
+    value: 4
+

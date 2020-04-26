@@ -1,0 +1,13 @@
+name: QualityLevel
+type: enum
+
+values:
+  QualityLevel_Low:
+    value: 0
+  QualityLevel_Medium:
+    value: 1
+  QualityLevel_High:
+    value: 2
+  QualityLevel_Ultra:
+    value: 3
+

@@ -1,0 +1,49 @@
+name: UISettings
+type: class
+inherits: SystemSettings
+
+constructors:
+  -
+    description: Creates a new UISettings frostbite instance.
+  -
+    description: Creates a new UISettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SystemSettings to UISettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SystemSettings
+        description: The instance to cast to UISettings.
+  -
+    description: Casts an instance of type DataContainer to UISettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UISettings.
+
+properties:
+  system:
+    type: UISystemType
+  bundles:
+    type: UIBundlesAsset
+    nullable: true
+  profileOptions:
+    type: ProfileOptionsAsset
+    nullable: true
+  language:
+    type: LanguageFormat
+  dataCop:
+    type: DataCopSettings
+  oneBundlePerGraph:
+    type: bool
+  drawEnable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UISettings type.
+

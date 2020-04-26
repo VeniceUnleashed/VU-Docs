@@ -1,0 +1,19 @@
+name: PostProcessDebugMode
+type: enum
+
+values:
+  PpdmDefault:
+    value: 0
+  PpdmBloom:
+    value: 1
+  PpdmBloomStep:
+    value: 2
+  PpdmDofBlur:
+    value: 3
+  PpdmBlur:
+    value: 4
+  PpdmBlurStep:
+    value: 5
+  PpdmDepth:
+    value: 6
+

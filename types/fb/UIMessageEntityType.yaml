@@ -1,0 +1,17 @@
+name: UIMessageEntityType
+type: enum
+
+values:
+  UIMessageEntityType_Message:
+    value: 0
+  UIMessageEntityType_Tooltip:
+    value: 1
+  UIMessageEntityType_LogLines:
+    value: 2
+  UIMessageEntityType_Subtitle:
+    value: 3
+  UIMessageEntityType_FailState:
+    value: 4
+  UIMessageEntityType_OutOfBounds:
+    value: 5
+

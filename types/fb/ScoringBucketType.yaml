@@ -1,0 +1,15 @@
+name: ScoringBucketType
+type: enum
+
+values:
+  ScoringBucketType_Disabled:
+    value: 0
+  ScoringBucketType_Normal:
+    value: 1
+  ScoringBucketType_Vehicle:
+    value: 2
+  ScoringBucketType_Kit:
+    value: 3
+  ScoringBucketType_Count:
+    value: 4
+

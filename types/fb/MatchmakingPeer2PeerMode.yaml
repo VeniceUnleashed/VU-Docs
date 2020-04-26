@@ -1,0 +1,11 @@
+name: MatchmakingPeer2PeerMode
+type: enum
+
+values:
+  MatchmakingPeer2PeerMode_FullMesh:
+    value: 0
+  MatchmakingPeer2PeerMode_PartialMesh:
+    value: 1
+  MatchmakingPeer2PeerMode_DirtyCastFailover:
+    value: 2
+

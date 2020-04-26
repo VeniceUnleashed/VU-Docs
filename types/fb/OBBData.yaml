@@ -1,0 +1,49 @@
+name: OBBData
+type: class
+inherits: BaseShapeData
+
+constructors:
+  -
+    description: Creates a new OBBData frostbite instance.
+  -
+    description: Creates a new OBBData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type BaseShapeData to OBBData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: BaseShapeData
+        description: The instance to cast to OBBData.
+  -
+    description: Casts an instance of type GameObjectData to OBBData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to OBBData.
+  -
+    description: Casts an instance of type GameDataContainer to OBBData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to OBBData.
+  -
+    description: Casts an instance of type DataContainer to OBBData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to OBBData.
+
+properties:
+  transform:
+    type: LinearTransform
+  halfExtents:
+    type: Vec3
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the OBBData type.
+

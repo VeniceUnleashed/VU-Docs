@@ -1,0 +1,54 @@
+name: BFTargetEvaluatorComponentData
+type: class
+inherits: TargetEvaluatorComponentData
+
+constructors:
+  -
+    description: Creates a new BFTargetEvaluatorComponentData frostbite instance.
+  -
+    description: Creates a new BFTargetEvaluatorComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type TargetEvaluatorComponentData to BFTargetEvaluatorComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: TargetEvaluatorComponentData
+        description: The instance to cast to BFTargetEvaluatorComponentData.
+  -
+    description: Casts an instance of type ComponentData to BFTargetEvaluatorComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to BFTargetEvaluatorComponentData.
+  -
+    description: Casts an instance of type GameObjectData to BFTargetEvaluatorComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to BFTargetEvaluatorComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to BFTargetEvaluatorComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to BFTargetEvaluatorComponentData.
+  -
+    description: Casts an instance of type DataContainer to BFTargetEvaluatorComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to BFTargetEvaluatorComponentData.
+
+properties:
+  settings:
+    type: TargetEvaluationConstantData
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the BFTargetEvaluatorComponentData type.
+

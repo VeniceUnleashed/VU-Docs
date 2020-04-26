@@ -1,0 +1,37 @@
+name: CompositeMeshAsset
+type: class
+inherits: MeshAsset
+
+constructors:
+  -
+    description: Creates a new CompositeMeshAsset frostbite instance.
+  -
+    description: Creates a new CompositeMeshAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type MeshAsset to CompositeMeshAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: MeshAsset
+        description: The instance to cast to CompositeMeshAsset.
+  -
+    description: Casts an instance of type Asset to CompositeMeshAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to CompositeMeshAsset.
+  -
+    description: Casts an instance of type DataContainer to CompositeMeshAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to CompositeMeshAsset.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the CompositeMeshAsset type.
+

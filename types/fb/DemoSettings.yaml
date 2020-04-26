@@ -1,0 +1,59 @@
+name: DemoSettings
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new DemoSettings frostbite instance.
+  -
+    description: Creates a new DemoSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to DemoSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to DemoSettings.
+
+properties:
+  recordDemoFileName:
+    type: string
+  playbackDemoFileName:
+    type: string
+  timeDemo:
+    type: string
+  lockToPlayerName:
+    type: string
+  changePlayerInterval:
+    type: int
+  forcedDeltaTickCount:
+    type: int
+  startProfilingOnFrame:
+    type: int
+  stopProfilingOnFrame:
+    type: int
+  takeScreenshotOnFrame:
+    type: int
+  allowOverwrite:
+    type: bool
+  logPerformance:
+    type: bool
+  suppressDebugLog:
+    type: bool
+  shutdownOnDemoComplete:
+    type: bool
+  loopingDemo:
+    type: bool
+  lockToRandomPlayer:
+    type: bool
+  pauseOnStartup:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the DemoSettings type.
+

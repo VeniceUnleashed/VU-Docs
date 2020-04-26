@@ -1,0 +1,11 @@
+name: FadeCurveType
+type: enum
+
+values:
+  FadeCurveType_LinearAmplitude:
+    value: 0
+  FadeCurveType_SineAmplitude:
+    value: 1
+  FadeCurveType_LinearDecibel:
+    value: 2
+

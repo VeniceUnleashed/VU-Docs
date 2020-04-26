@@ -1,0 +1,57 @@
+name: VectorShapeData
+type: class
+inherits: BaseShapeData
+
+constructors:
+  -
+    description: Creates a new VectorShapeData frostbite instance.
+  -
+    description: Creates a new VectorShapeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type BaseShapeData to VectorShapeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: BaseShapeData
+        description: The instance to cast to VectorShapeData.
+  -
+    description: Casts an instance of type GameObjectData to VectorShapeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to VectorShapeData.
+  -
+    description: Casts an instance of type GameDataContainer to VectorShapeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to VectorShapeData.
+  -
+    description: Casts an instance of type DataContainer to VectorShapeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VectorShapeData.
+
+properties:
+  points:
+    type: Vec3
+    array: true
+  normals:
+    type: Vec3
+    array: true
+  tension:
+    type: float
+  isClosed:
+    type: bool
+  allowRoll:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VectorShapeData type.
+

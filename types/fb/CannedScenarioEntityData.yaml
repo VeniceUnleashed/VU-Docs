@@ -1,0 +1,51 @@
+name: CannedScenarioEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new CannedScenarioEntityData frostbite instance.
+  -
+    description: Creates a new CannedScenarioEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to CannedScenarioEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to CannedScenarioEntityData.
+  -
+    description: Casts an instance of type GameObjectData to CannedScenarioEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to CannedScenarioEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to CannedScenarioEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to CannedScenarioEntityData.
+  -
+    description: Casts an instance of type DataContainer to CannedScenarioEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to CannedScenarioEntityData.
+
+properties:
+  cannedAnimBinding:
+    type: CannedAnimationBinding
+  animationEntitySpacePriority:
+    type: int
+  alwaysClearEntitySpaceWhenInScenario:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the CannedScenarioEntityData type.
+

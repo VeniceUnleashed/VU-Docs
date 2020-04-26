@@ -1,0 +1,19 @@
+name: ShaderSkinningMethod
+type: enum
+
+values:
+  ShaderSkinningMethod_None:
+    value: 0
+  ShaderSkinningMethod_Linear1Bone:
+    value: 1
+  ShaderSkinningMethod_Linear2Bone:
+    value: 2
+  ShaderSkinningMethod_Linear4Bone:
+    value: 4
+  ShaderSkinningMethod_Linear8Bone:
+    value: 8
+  ShaderSkinningMethod_Null:
+    value: 9
+  ShaderSkinningMethod_DualQuaternion4Bone:
+    value: 10
+

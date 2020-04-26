@@ -1,0 +1,35 @@
+name: UINodePort
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new UINodePort frostbite instance.
+  -
+    description: Creates a new UINodePort frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to UINodePort. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UINodePort.
+
+properties:
+  name:
+    type: string
+  instanceName:
+    type: string
+  query:
+    type: UIWidgetEventID
+  allowManualRemove:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UINodePort type.
+

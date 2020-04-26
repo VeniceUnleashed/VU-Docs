@@ -1,0 +1,37 @@
+name: MaxInstancesScopeStrategyData
+type: class
+inherits: SoundScopeStrategyData
+
+constructors:
+  -
+    description: Creates a new MaxInstancesScopeStrategyData frostbite instance.
+  -
+    description: Creates a new MaxInstancesScopeStrategyData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SoundScopeStrategyData to MaxInstancesScopeStrategyData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SoundScopeStrategyData
+        description: The instance to cast to MaxInstancesScopeStrategyData.
+  -
+    description: Casts an instance of type DataContainer to MaxInstancesScopeStrategyData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to MaxInstancesScopeStrategyData.
+
+properties:
+  count:
+    type: int
+  keepOldest:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the MaxInstancesScopeStrategyData type.
+

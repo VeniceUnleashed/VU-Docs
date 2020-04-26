@@ -1,0 +1,35 @@
+name: CoverFireType
+type: enum
+
+values:
+  CoverFireType_Peek:
+    value: 0
+  CoverFireType_Out:
+    value: 1
+  CoverFireType_Over:
+    value: 2
+  CoverFireType_BlindOut:
+    value: 3
+  CoverFireType_BlindOver:
+    value: 4
+  CoverFireType_GrenadeOut:
+    value: 5
+  CoverFireType_GrenadeBlindOver:
+    value: 6
+  CoverFireType_NoFire:
+    value: 7
+  CoverFireType_Flanked:
+    value: 8
+  CoverFireType_OutSlow:
+    value: 10
+  CoverFireType_OutUrgent:
+    value: 11
+  CoverFireType_OutStandToCrouch:
+    value: 12
+  CoverFireType_Lmg:
+    value: 13
+  CoverFireType_OutFireFromHip:
+    value: 14
+  CoverFireType_FlankedSurprised:
+    value: 15
+

@@ -1,0 +1,11 @@
+name: CombatPatrolMode
+type: enum
+
+values:
+  CombatPatrolMode_MustStayOnPath:
+    value: 0
+  CombatPatrolMode_FreeToFight:
+    value: 1
+  CombatPatrolMode_FreeToFightAtDestination:
+    value: 2
+

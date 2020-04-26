@@ -1,0 +1,51 @@
+name: DebugRenderSettings
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new DebugRenderSettings frostbite instance.
+  -
+    description: Creates a new DebugRenderSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to DebugRenderSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to DebugRenderSettings.
+
+properties:
+  textQueueTimeVisible:
+    type: float
+  ps3SpuFrameBufferSize:
+    type: int
+  textViewDistance:
+    type: float
+  textQueueMaxLineCount:
+    type: int
+  dxMaxVertexCount:
+    type: int
+  processJobCount:
+    type: int
+  drawStatsEnable:
+    type: bool
+  ps3SpuEnable:
+    type: bool
+  enable:
+    type: bool
+  textQueueLocationTop:
+    type: bool
+  dxLine2dAntialiasingEnable:
+    type: bool
+  dxLine3dAntialiasingEnable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the DebugRenderSettings type.
+

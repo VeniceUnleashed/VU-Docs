@@ -1,0 +1,67 @@
+name: SoundWaveAsset
+type: class
+inherits: SoundDataAsset
+
+constructors:
+  -
+    description: Creates a new SoundWaveAsset frostbite instance.
+  -
+    description: Creates a new SoundWaveAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SoundDataAsset to SoundWaveAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SoundDataAsset
+        description: The instance to cast to SoundWaveAsset.
+  -
+    description: Casts an instance of type Asset to SoundWaveAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to SoundWaveAsset.
+  -
+    description: Casts an instance of type DataContainer to SoundWaveAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SoundWaveAsset.
+
+properties:
+  variations:
+    type: SoundWaveVariation
+    array: true
+  localization:
+    type: SoundWaveLocalizationInfo
+    array: true
+  subtitleStringIds:
+    type: string
+    array: true
+  selection:
+    type: SoundWaveVariationSelection
+  streamPool:
+    type: StreamPoolAsset
+    nullable: true
+  seekable:
+    type: bool
+  preferAvailableVariations:
+    type: bool
+  persistentVariationCount:
+    type: int
+  channelCount:
+    type: int
+  voicePriority:
+    type: int
+  primePriority:
+    type: int
+  requestPriority:
+    type: int
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SoundWaveAsset type.
+

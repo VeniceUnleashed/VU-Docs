@@ -1,0 +1,77 @@
+name: UIMessageType
+type: enum
+
+values:
+  UIMessageType_Text:
+    value: 0
+  UIMessageType_EnemyTank:
+    value: 1
+  UIMessageType_EnemyCar:
+    value: 2
+  UIMessageType_EnemyBoat:
+    value: 3
+  UIMessageType_EnemyHelicopter:
+    value: 4
+  UIMessageType_EnemyInfantry:
+    value: 5
+  UIMessageType_EnemyActivity:
+    value: 6
+  UIMessageType_EnemyC4:
+    value: 7
+  UIMessageType_EnemyATMine:
+    value: 8
+  UIMessageType_ChatGo:
+    value: 9
+  UIMessageType_ChatFollowMe:
+    value: 10
+  UIMessageType_ChatNeedBackup:
+    value: 11
+  UIMessageType_ChatNeedPickup:
+    value: 12
+  UIMessageType_ChatNeedAmmo:
+    value: 13
+  UIMessageType_ChatNeedMedic:
+    value: 14
+  UIMessageType_ChatYes:
+    value: 15
+  UIMessageType_ChatNo:
+    value: 16
+  UIMessageType_ChatThanks:
+    value: 17
+  UIMessageType_ChatSorry:
+    value: 18
+  UIMessageType_ChatNeedRepair:
+    value: 19
+  UIMessageType_ChatGetIn:
+    value: 20
+  UIMessageType_ChatGetOut:
+    value: 21
+  UIMessageType_ChatDropMeOff:
+    value: 22
+  UIMessageType_OrderDefendBase:
+    value: 23
+  UIMessageType_OrderAttackBase:
+    value: 24
+  UIMessageType_OrderMoveToPos:
+    value: 25
+  UIMessageType_JoinedSquad:
+    value: 26
+  UIMessageType_LeftSquad:
+    value: 27
+  UIMessageType_RequestSquad:
+    value: 28
+  UIMessageType_InviteSquad:
+    value: 29
+  UIMessageType_KickSquad:
+    value: 30
+  UIMessageType_LeaderPromoted:
+    value: 31
+  UIMessageType_Connected:
+    value: 32
+  UIMessageType_Disconnected:
+    value: 33
+  UIMessageType_Killed:
+    value: 34
+  UIMessageType_Died:
+    value: 35
+

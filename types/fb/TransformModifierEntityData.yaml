@@ -1,0 +1,61 @@
+name: TransformModifierEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new TransformModifierEntityData frostbite instance.
+  -
+    description: Creates a new TransformModifierEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to TransformModifierEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to TransformModifierEntityData.
+  -
+    description: Casts an instance of type GameObjectData to TransformModifierEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to TransformModifierEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to TransformModifierEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to TransformModifierEntityData.
+  -
+    description: Casts an instance of type DataContainer to TransformModifierEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to TransformModifierEntityData.
+
+properties:
+  inValue:
+    type: LinearTransform
+  realm:
+    type: Realm
+  left:
+    type: ModifierAxis
+  up:
+    type: ModifierAxis
+  forward:
+    type: ModifierAxis
+  invertLeft:
+    type: bool
+  invertUp:
+    type: bool
+  invertForward:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the TransformModifierEntityData type.
+

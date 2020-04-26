@@ -1,0 +1,76 @@
+name: CombatAreaTriggerEntityData
+type: class
+inherits: GameEntityData
+
+constructors:
+  -
+    description: Creates a new CombatAreaTriggerEntityData frostbite instance.
+  -
+    description: Creates a new CombatAreaTriggerEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameEntityData to CombatAreaTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to CombatAreaTriggerEntityData.
+  -
+    description: Casts an instance of type SpatialEntityData to CombatAreaTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to CombatAreaTriggerEntityData.
+  -
+    description: Casts an instance of type EntityData to CombatAreaTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to CombatAreaTriggerEntityData.
+  -
+    description: Casts an instance of type GameObjectData to CombatAreaTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to CombatAreaTriggerEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to CombatAreaTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to CombatAreaTriggerEntityData.
+  -
+    description: Casts an instance of type DataContainer to CombatAreaTriggerEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to CombatAreaTriggerEntityData.
+
+properties:
+  maxRandomSpawnHeight:
+    type: float
+  spawnHeight:
+    type: float
+  timeToReturn:
+    type: int
+  deserterProjectile:
+    type: BulletEntityData
+    nullable: true
+  team:
+    type: TeamId
+  strikeRadius:
+    type: float
+  initalSpeed:
+    type: float
+  isAiAllowedOutside:
+    type: bool
+  isTeamSpecific:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the CombatAreaTriggerEntityData type.
+

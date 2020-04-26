@@ -1,0 +1,37 @@
+name: UIWidgetPathBinding
+type: class
+inherits: UIDataBinding
+
+constructors:
+  -
+    description: Creates a new UIWidgetPathBinding frostbite instance.
+  -
+    description: Creates a new UIWidgetPathBinding frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UIDataBinding to UIWidgetPathBinding. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIDataBinding
+        description: The instance to cast to UIWidgetPathBinding.
+  -
+    description: Casts an instance of type DataContainer to UIWidgetPathBinding. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UIWidgetPathBinding.
+
+properties:
+  widgetPathQuery:
+    type: UIDataSourceInfo
+  visibility:
+    type: UIDataSourceInfo
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UIWidgetPathBinding type.
+

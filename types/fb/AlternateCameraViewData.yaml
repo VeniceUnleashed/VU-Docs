@@ -1,0 +1,65 @@
+name: AlternateCameraViewData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new AlternateCameraViewData frostbite instance.
+  -
+    description: Creates a new AlternateCameraViewData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to AlternateCameraViewData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to AlternateCameraViewData.
+
+properties:
+  meshOffset:
+    type: Vec3
+  hud:
+    type: HudData
+  fieldOfView:
+    type: float
+  worldSpaceLockEfficiency:
+    type: float
+  mesh:
+    type: RigidMeshAsset
+    nullable: true
+  maskMeshBlueprint:
+    type: ObjectBlueprint
+    nullable: true
+  fadeInDuration:
+    type: float
+  fovTransitionTime:
+    type: float
+  blackDuration:
+    type: float
+  inputSuppression:
+    type: InputSuppressionData
+  screenExposureAreaScale:
+    type: float
+  fadeOutDuration:
+    type: float
+  allowFieldOfViewScaling:
+    type: bool
+  lockMeshToRenderView:
+    type: bool
+  toggleViewChange:
+    type: bool
+  useProfileOptionForToggleViewChange:
+    type: bool
+  flirEnabled:
+    type: bool
+  fadeToBlack:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the AlternateCameraViewData type.
+

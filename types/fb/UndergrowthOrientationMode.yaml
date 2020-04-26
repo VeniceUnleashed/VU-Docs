@@ -1,0 +1,11 @@
+name: UndergrowthOrientationMode
+type: enum
+
+values:
+  UndergrowthOrientationMode_Horizontal:
+    value: 0
+  UndergrowthOrientationMode_LeanToTerrain:
+    value: 1
+  UndergrowthOrientationMode_SkewToTerrain:
+    value: 2
+

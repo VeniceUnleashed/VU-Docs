@@ -1,0 +1,57 @@
+name: PathfindingDebugSettings
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new PathfindingDebugSettings frostbite instance.
+  -
+    description: Creates a new PathfindingDebugSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to PathfindingDebugSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PathfindingDebugSettings.
+
+properties:
+  typesToDrawMask:
+    type: int
+  textOffsetY:
+    type: int
+  textStartX:
+    type: int
+  textStartY:
+    type: int
+  replayMode:
+    type: PathfindingReplayMode
+  drawConnections:
+    type: bool
+  drawObstacles:
+    type: bool
+  drawPolygonOutline:
+    type: bool
+  drawFilledPolygons:
+    type: bool
+  drawMemory:
+    type: bool
+  drawStats:
+    type: bool
+  drawTimings:
+    type: bool
+  originalPaths:
+    type: bool
+  randomPositions:
+    type: bool
+  potentialObstacles:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PathfindingDebugSettings type.
+

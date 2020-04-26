@@ -1,0 +1,9 @@
+name: SoldierBuffId
+type: enum
+
+values:
+  SBImprovedBodyArmor:
+    value: 0
+  SBCount:
+    value: 1
+

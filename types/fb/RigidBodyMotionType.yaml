@@ -1,0 +1,15 @@
+name: RigidBodyMotionType
+type: enum
+
+values:
+  RigidBodyMotionType_Invalid:
+    value: 0
+  RigidBodyMotionType_Fixed:
+    value: 1
+  RigidBodyMotionType_Keyframed:
+    value: 2
+  RigidBodyMotionType_Dynamic:
+    value: 3
+  RigidBodyMotionType_Size:
+    value: 4
+

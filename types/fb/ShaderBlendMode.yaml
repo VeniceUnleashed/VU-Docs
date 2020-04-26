@@ -1,0 +1,23 @@
+name: ShaderBlendMode
+type: enum
+
+values:
+  ShaderBlendMode_Lerp:
+    value: 0
+  ShaderBlendMode_Additive:
+    value: 1
+  ShaderBlendMode_Multiply:
+    value: 2
+  ShaderBlendMode_LerpPremultiplied:
+    value: 3
+  ShaderBlendMode_DecalLerpNoSpec:
+    value: 4
+  ShaderBlendMode_DecalLerpNormal:
+    value: 5
+  ShaderBlendMode_DecalLerpNormalMultiplyDiffuse:
+    value: 6
+  ShaderBlendMode_DecalLerpDiffuse:
+    value: 7
+  ShaderBlendMode_DecalLerpDiffuseNoSpec:
+    value: 8
+

@@ -1,0 +1,30 @@
+name: SoldierAutoAimData
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new SoldierAutoAimData frostbite instance.
+  -
+    description: Creates a new SoldierAutoAimData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to SoldierAutoAimData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SoldierAutoAimData.
+
+properties:
+  poses:
+    type: AutoAimData
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SoldierAutoAimData type.
+

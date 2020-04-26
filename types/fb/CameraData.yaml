@@ -1,0 +1,62 @@
+name: CameraData
+type: class
+inherits: GameObjectData
+
+constructors:
+  -
+    description: Creates a new CameraData frostbite instance.
+  -
+    description: Creates a new CameraData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type GameObjectData to CameraData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to CameraData.
+  -
+    description: Casts an instance of type GameDataContainer to CameraData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to CameraData.
+  -
+    description: Casts an instance of type DataContainer to CameraData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to CameraData.
+
+properties:
+  occlusionRayOffset:
+    type: Vec3
+  shakeFactor:
+    type: float
+  preFadeTime:
+    type: float
+  fadeTime:
+    type: float
+  fadeWaitTime:
+    type: float
+  soundListenerRadius:
+    type: float
+  viewFx:
+    type: ViewFxData
+    nullable: true
+  nearPlane:
+    type: float
+  shadowViewDistanceScale:
+    type: float
+  soundOcclusion:
+    type: float
+  stayFadedWhileStreaming:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the CameraData type.
+

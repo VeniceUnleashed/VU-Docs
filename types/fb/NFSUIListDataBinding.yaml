@@ -1,0 +1,38 @@
+name: NFSUIListDataBinding
+type: class
+inherits: UIDataBinding
+
+constructors:
+  -
+    description: Creates a new NFSUIListDataBinding frostbite instance.
+  -
+    description: Creates a new NFSUIListDataBinding frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UIDataBinding to NFSUIListDataBinding. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIDataBinding
+        description: The instance to cast to NFSUIListDataBinding.
+  -
+    description: Casts an instance of type DataContainer to NFSUIListDataBinding. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to NFSUIListDataBinding.
+
+properties:
+  refresh:
+    type: UIDataSourceInfo
+  items:
+    type: UIListItem
+    array: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the NFSUIListDataBinding type.
+

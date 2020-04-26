@@ -1,0 +1,45 @@
+name: VeniceUICombatAreaAsset
+type: class
+inherits: UICombatAreaAsset
+
+constructors:
+  -
+    description: Creates a new VeniceUICombatAreaAsset frostbite instance.
+  -
+    description: Creates a new VeniceUICombatAreaAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UICombatAreaAsset to VeniceUICombatAreaAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UICombatAreaAsset
+        description: The instance to cast to VeniceUICombatAreaAsset.
+  -
+    description: Casts an instance of type Asset to VeniceUICombatAreaAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to VeniceUICombatAreaAsset.
+  -
+    description: Casts an instance of type DataContainer to VeniceUICombatAreaAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to VeniceUICombatAreaAsset.
+
+properties:
+  distanceField:
+    type: UIDistanceFieldAsset
+    nullable: true
+  surroundingDistanceField:
+    type: UIDistanceFieldAsset
+    nullable: true
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the VeniceUICombatAreaAsset type.
+

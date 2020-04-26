@@ -1,0 +1,39 @@
+name: TerrainSettings
+type: class
+inherits: DataContainer
+
+constructors:
+  -
+    description: Creates a new TerrainSettings frostbite instance.
+  -
+    description: Creates a new TerrainSettings frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type DataContainer to TerrainSettings. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to TerrainSettings.
+
+properties:
+  heightQueryCacheSize:
+    type: int
+  modifiersCapacity:
+    type: int
+  intersectingModifiersMax:
+    type: int
+  modifierDepthFactor:
+    type: float
+  modifierSlopeMax:
+    type: float
+  modifiersEnable:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the TerrainSettings type.
+

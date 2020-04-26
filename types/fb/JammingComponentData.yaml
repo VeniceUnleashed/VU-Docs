@@ -1,0 +1,49 @@
+name: JammingComponentData
+type: class
+inherits: ComponentData
+
+constructors:
+  -
+    description: Creates a new JammingComponentData frostbite instance.
+  -
+    description: Creates a new JammingComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type ComponentData to JammingComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to JammingComponentData.
+  -
+    description: Casts an instance of type GameObjectData to JammingComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to JammingComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to JammingComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to JammingComponentData.
+  -
+    description: Casts an instance of type DataContainer to JammingComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to JammingComponentData.
+
+properties:
+  smokeJamming:
+    type: SmokeJammingData
+  airMissileJamming:
+    type: AirMissileJammingData
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the JammingComponentData type.
+

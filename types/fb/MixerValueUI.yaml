@@ -1,0 +1,13 @@
+name: MixerValueUI
+type: enum
+
+values:
+  MixerValueUI_None:
+    value: 0
+  MixerValueUI_Fader:
+    value: 1
+  MixerValueUI_Knob:
+    value: 2
+  MixerValueUI_EditBox:
+    value: 3
+

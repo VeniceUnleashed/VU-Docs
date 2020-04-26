@@ -1,0 +1,87 @@
+name: WeaponComponentData
+type: class
+inherits: PartComponentData
+
+constructors:
+  -
+    description: Creates a new WeaponComponentData frostbite instance.
+  -
+    description: Creates a new WeaponComponentData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type PartComponentData to WeaponComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: PartComponentData
+        description: The instance to cast to WeaponComponentData.
+  -
+    description: Casts an instance of type ComponentData to WeaponComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: ComponentData
+        description: The instance to cast to WeaponComponentData.
+  -
+    description: Casts an instance of type GameObjectData to WeaponComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to WeaponComponentData.
+  -
+    description: Casts an instance of type GameDataContainer to WeaponComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to WeaponComponentData.
+  -
+    description: Casts an instance of type DataContainer to WeaponComponentData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to WeaponComponentData.
+
+properties:
+  projectileSpawnOffset:
+    type: Vec3
+  impulseStrength:
+    type: float
+  weaponMesh:
+    type: MeshAsset
+    nullable: true
+  weaponFiring:
+    type: WeaponFiringData
+    nullable: true
+  damageGiverName:
+    type: string
+  aiData:
+    type: GameAIWeaponData
+    nullable: true
+  customWeaponType:
+    type: WeaponData
+    nullable: true
+  classification:
+    type: WeaponClassification
+  explosionDamageMultiplier:
+    type: float
+  reloadTimeMultiplier:
+    type: float
+  damageMultiplier:
+    type: float
+  weaponItemHash:
+    type: int
+  overheatDropPerSecondMultiplier:
+    type: float
+  lockTimeMultiplier:
+    type: float
+  lockingAcceptanceAngleMultiplier:
+    type: float
+  sequentialFiring:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the WeaponComponentData type.
+

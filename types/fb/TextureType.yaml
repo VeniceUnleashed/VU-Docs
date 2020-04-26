@@ -1,0 +1,17 @@
+name: TextureType
+type: enum
+
+values:
+  TextureType_2d:
+    value: 0
+  TextureType_Cube:
+    value: 1
+  TextureType_3d:
+    value: 2
+  TextureType_2dArray:
+    value: 3
+  TextureType_1dArray:
+    value: 4
+  TextureType_1d:
+    value: 5
+

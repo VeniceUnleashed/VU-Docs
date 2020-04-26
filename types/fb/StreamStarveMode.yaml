@@ -1,0 +1,11 @@
+name: StreamStarveMode
+type: enum
+
+values:
+  StreamStarveMode_Off:
+    value: 0
+  StreamStarveMode_On:
+    value: 1
+  StreamStarveMode_Dynamic:
+    value: 2
+

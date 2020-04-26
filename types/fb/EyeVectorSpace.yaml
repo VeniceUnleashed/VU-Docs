@@ -1,0 +1,11 @@
+name: EyeVectorSpace
+type: enum
+
+values:
+  EyeVectorSpace_World:
+    value: 0
+  EyeVectorSpace_Object:
+    value: 1
+  EyeVectorSpace_Tangent:
+    value: 2
+

@@ -1,0 +1,59 @@
+name: UIInputAction
+type: enum
+
+values:
+  UIInputAction_NavigateUp:
+    value: 0
+  UIInputAction_NavigateDown:
+    value: 1
+  UIInputAction_NavigateLeft:
+    value: 2
+  UIInputAction_NavigateRight:
+    value: 3
+  UIInputAction_TabLeft:
+    value: 4
+  UIInputAction_TabRight:
+    value: 5
+  UIInputAction_Activate:
+    value: 6
+  UIInputAction_Deactivate:
+    value: 7
+  UIInputAction_Menu:
+    value: 8
+  UIInputAction_Cancel:
+    value: 9
+  UIInputAction_OK:
+    value: 10
+  UIInputAction_Back:
+    value: 11
+  UIInputAction_Tab:
+    value: 12
+  UIInputAction_Edit:
+    value: 13
+  UIInputAction_View:
+    value: 14
+  UIInputAction_LThumb:
+    value: 15
+  UIInputAction_RThumb:
+    value: 16
+  UIInputAction_MapZoom:
+    value: 17
+  UIInputAction_MapSize:
+    value: 18
+  UIInputAction_SayAllChat:
+    value: 19
+  UIInputAction_TeamChat:
+    value: 20
+  UIInputAction_SquadChat:
+    value: 21
+  UIInputAction_CommoRose:
+    value: 22
+  UIInputAction_ToggleChat:
+    value: 23
+  UIInputAction_ToggleMinimapType:
+    value: 24
+  UIInputAction_Size:
+    value: 25
+  UIInputAction_None:
+    value: 26
+

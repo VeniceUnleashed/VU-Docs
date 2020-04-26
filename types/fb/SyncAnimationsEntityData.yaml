@@ -1,0 +1,51 @@
+name: SyncAnimationsEntityData
+type: class
+inherits: EntityData
+
+constructors:
+  -
+    description: Creates a new SyncAnimationsEntityData frostbite instance.
+  -
+    description: Creates a new SyncAnimationsEntityData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type EntityData to SyncAnimationsEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to SyncAnimationsEntityData.
+  -
+    description: Casts an instance of type GameObjectData to SyncAnimationsEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to SyncAnimationsEntityData.
+  -
+    description: Casts an instance of type GameDataContainer to SyncAnimationsEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to SyncAnimationsEntityData.
+  -
+    description: Casts an instance of type DataContainer to SyncAnimationsEntityData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SyncAnimationsEntityData.
+
+properties:
+  externalTime:
+    type: float
+  nearEndEventTime:
+    type: float
+  startServerPaused:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SyncAnimationsEntityData type.
+

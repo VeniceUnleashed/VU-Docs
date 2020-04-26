@@ -1,0 +1,50 @@
+name: WaveSwitcherNodeData
+type: class
+inherits: AudioGraphNodeData
+
+constructors:
+  -
+    description: Creates a new WaveSwitcherNodeData frostbite instance.
+  -
+    description: Creates a new WaveSwitcherNodeData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type AudioGraphNodeData to WaveSwitcherNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: AudioGraphNodeData
+        description: The instance to cast to WaveSwitcherNodeData.
+  -
+    description: Casts an instance of type DataContainer to WaveSwitcherNodeData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to WaveSwitcherNodeData.
+
+properties:
+  index:
+    type: AudioGraphNodePort
+  advance:
+    type: AudioGraphNodePort
+  wave:
+    type: AudioGraphNodePort
+  indexChanged:
+    type: AudioGraphNodePort
+  waves:
+    type: SoundWaveAsset
+    array: true
+  defaultIndex:
+    type: float
+  isRandom:
+    type: bool
+  randomStartIndex:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the WaveSwitcherNodeData type.
+

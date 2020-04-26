@@ -1,0 +1,78 @@
+name: UIListDataBinding
+type: class
+inherits: UIDataBinding
+
+constructors:
+  -
+    description: Creates a new UIListDataBinding frostbite instance.
+  -
+    description: Creates a new UIListDataBinding frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UIDataBinding to UIListDataBinding. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIDataBinding
+        description: The instance to cast to UIListDataBinding.
+  -
+    description: Casts an instance of type DataContainer to UIListDataBinding. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UIListDataBinding.
+
+properties:
+  listIndex:
+    type: int
+  listQuery:
+    type: UIDataSourceInfo
+  staticItems:
+    type: StaticListItem
+    array: true
+  emptyRowType:
+    type: UIListEmptyRowType
+  defaultHighlightedRow:
+    type: DefaultSelectionItem
+  rowType:
+    type: UIListRowType
+  navigationType:
+    type: UIListNavigationType
+  navigationTypeSource:
+    type: UIDataSourceInfo
+  rowSpacing:
+    type: int
+  unFocusMode:
+    type: UIListUnFocusMode
+  disabledRows:
+    type: string
+  clearListAtNavigationEvent:
+    type: bool
+  sendIndexWithEvent:
+    type: bool
+  screenRotationEnabled:
+    type: bool
+  use3DSelection:
+    type: bool
+  fireHighlightOnMouseOut:
+    type: bool
+  dataIncludesButtonLayout:
+    type: bool
+  visible:
+    type: bool
+  spinnerEnabled:
+    type: bool
+  useScrollBar:
+    type: bool
+  highLightOnUpdate:
+    type: bool
+  keepScrollOffset:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UIListDataBinding type.
+

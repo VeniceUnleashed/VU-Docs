@@ -1,0 +1,11 @@
+name: ReadinessState
+type: enum
+
+values:
+  RSPatrol:
+    value: 0
+  RSReady:
+    value: 1
+  RSCombat:
+    value: 2
+

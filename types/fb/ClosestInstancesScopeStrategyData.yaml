@@ -1,0 +1,35 @@
+name: ClosestInstancesScopeStrategyData
+type: class
+inherits: SoundScopeStrategyData
+
+constructors:
+  -
+    description: Creates a new ClosestInstancesScopeStrategyData frostbite instance.
+  -
+    description: Creates a new ClosestInstancesScopeStrategyData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type SoundScopeStrategyData to ClosestInstancesScopeStrategyData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SoundScopeStrategyData
+        description: The instance to cast to ClosestInstancesScopeStrategyData.
+  -
+    description: Casts an instance of type DataContainer to ClosestInstancesScopeStrategyData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to ClosestInstancesScopeStrategyData.
+
+properties:
+  count:
+    type: int
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the ClosestInstancesScopeStrategyData type.
+

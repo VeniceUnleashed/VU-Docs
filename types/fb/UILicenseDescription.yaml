@@ -1,0 +1,37 @@
+name: UILicenseDescription
+type: class
+inherits: UIItemDescription
+
+constructors:
+  -
+    description: Creates a new UILicenseDescription frostbite instance.
+  -
+    description: Creates a new UILicenseDescription frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type UIItemDescription to UILicenseDescription. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: UIItemDescription
+        description: The instance to cast to UILicenseDescription.
+  -
+    description: Casts an instance of type DataContainer to UILicenseDescription. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to UILicenseDescription.
+
+properties:
+  licenseId:
+    type: string
+  popupText:
+    type: string
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the UILicenseDescription type.
+

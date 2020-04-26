@@ -1,0 +1,13 @@
+name: VehicleStateType
+type: enum
+
+values:
+  VehicleStateType_Normal:
+    value: 0
+  VehicleStateType_LowHealth:
+    value: 1
+  VehicleStateType_CriticalState:
+    value: 2
+  VehicleStateType_LAST_ITEM:
+    value: 3
+

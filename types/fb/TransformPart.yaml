@@ -1,0 +1,17 @@
+name: TransformPart
+type: enum
+
+values:
+  TransformPart_TranslationX:
+    value: 0
+  TransformPart_TranslationY:
+    value: 1
+  TransformPart_TranslationZ:
+    value: 2
+  TransformPart_RotationX:
+    value: 3
+  TransformPart_RotationY:
+    value: 4
+  TransformPart_RotationZ:
+    value: 5
+

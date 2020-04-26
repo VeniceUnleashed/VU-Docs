@@ -1,0 +1,17 @@
+name: AIDeathReactionAnimationType
+type: enum
+
+values:
+  AIDeathReactionAnimationType_1:
+    value: 0
+  AIDeathReactionAnimationType_2:
+    value: 1
+  AIDeathReactionAnimationType_3:
+    value: 2
+  AIDeathReactionAnimationType_4:
+    value: 3
+  AIDeathReactionAnimationType_5:
+    value: 4
+  AIDeathReactionAnimationType_Count:
+    value: 5
+

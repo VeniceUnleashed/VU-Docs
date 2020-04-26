@@ -1,0 +1,59 @@
+name: PathfindingBuildSettingsAsset
+type: class
+inherits: Asset
+
+constructors:
+  -
+    description: Creates a new PathfindingBuildSettingsAsset frostbite instance.
+  -
+    description: Creates a new PathfindingBuildSettingsAsset frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type Asset to PathfindingBuildSettingsAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: Asset
+        description: The instance to cast to PathfindingBuildSettingsAsset.
+  -
+    description: Casts an instance of type DataContainer to PathfindingBuildSettingsAsset. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to PathfindingBuildSettingsAsset.
+
+properties:
+  entityRadius:
+    type: float
+  entityHeight:
+    type: float
+  maxWalkableSlope:
+    type: float
+  maxStep:
+    type: float
+  minIslandSurfaceArea:
+    type: float
+  voxSize:
+    type: float
+  gridSideLength:
+    type: float
+  additionalInwardsSmoothingDist:
+    type: float
+  terrainSamplingStep:
+    type: int
+  tesselateForPathingAccuracy:
+    type: bool
+  useEnhancedTerrainTracking:
+    type: bool
+  optimizeForAxisAligned:
+    type: bool
+  leaveSmallIslandsTouchingPortals:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the PathfindingBuildSettingsAsset type.
+

@@ -1,0 +1,37 @@
+name: AssemblyDescriptorData
+type: class
+inherits: InterfaceDescriptorData
+
+constructors:
+  -
+    description: Creates a new AssemblyDescriptorData frostbite instance.
+  -
+    description: Creates a new AssemblyDescriptorData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type InterfaceDescriptorData to AssemblyDescriptorData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: InterfaceDescriptorData
+        description: The instance to cast to AssemblyDescriptorData.
+  -
+    description: Casts an instance of type DynamicDataContainer to AssemblyDescriptorData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DynamicDataContainer
+        description: The instance to cast to AssemblyDescriptorData.
+  -
+    description: Casts an instance of type DataContainer to AssemblyDescriptorData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to AssemblyDescriptorData.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the AssemblyDescriptorData type.
+

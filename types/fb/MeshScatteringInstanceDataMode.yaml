@@ -1,0 +1,11 @@
+name: MeshScatteringInstanceDataMode
+type: enum
+
+values:
+  MeshScatteringInstanceDataMode_None:
+    value: 0
+  MeshScatteringInstanceDataMode_Normal:
+    value: 1
+  MeshScatteringInstanceDataMode_NormalAndColor:
+    value: 2
+

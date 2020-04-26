@@ -1,0 +1,134 @@
+name: SoldierWeaponData
+type: class
+inherits: WeaponEntityData
+
+constructors:
+  -
+    description: Creates a new SoldierWeaponData frostbite instance.
+  -
+    description: Creates a new SoldierWeaponData frostbite instance and assigns it the provided Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the newly created instance.
+  -
+    description: Casts an instance of type WeaponEntityData to SoldierWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: WeaponEntityData
+        description: The instance to cast to SoldierWeaponData.
+  -
+    description: Casts an instance of type GameEntityData to SoldierWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameEntityData
+        description: The instance to cast to SoldierWeaponData.
+  -
+    description: Casts an instance of type SpatialEntityData to SoldierWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: SpatialEntityData
+        description: The instance to cast to SoldierWeaponData.
+  -
+    description: Casts an instance of type EntityData to SoldierWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: EntityData
+        description: The instance to cast to SoldierWeaponData.
+  -
+    description: Casts an instance of type GameObjectData to SoldierWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameObjectData
+        description: The instance to cast to SoldierWeaponData.
+  -
+    description: Casts an instance of type GameDataContainer to SoldierWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: GameDataContainer
+        description: The instance to cast to SoldierWeaponData.
+  -
+    description: Casts an instance of type DataContainer to SoldierWeaponData. Will throw an error when trying to cast from an unsupported type.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to cast to SoldierWeaponData.
+
+properties:
+  interactionOffset:
+    type: Vec3
+  weaponModifierData:
+    type: WeaponModifierData
+    array: true
+  aimingController:
+    type: SoldierAimingSimulationData
+    nullable: true
+  firstPersonCamera:
+    type: FirstPersonCameraData
+    nullable: true
+  hud:
+    type: HudData
+  damageGiverName:
+    type: string
+  pickupSettings:
+    type: PickupSettingsData
+  animBaseSet:
+    type: WeaponAnimBaseSetEnum
+  animationData:
+    type: AntPackageAsset
+    nullable: true
+  renderFov:
+    type: float
+  zoomRenderFov:
+    type: float
+  streamGroup1p:
+    type: StreamGroupData
+    nullable: true
+  voiceOverInfo:
+    type: EntityVoiceOverInfo
+    nullable: true
+  quickThrowType:
+    type: QuickThrowTypeEnum
+  customization:
+    type: SoldierWeaponCustomizationAsset
+    nullable: true
+  weaponFloatParam:
+    type: float
+  sockets:
+    type: SocketData
+    array: true
+  switchWeaponStateInputAction:
+    type: EntryInputActionEnum
+  soldierWeaponBlueprint:
+    type: SoldierWeaponBlueprint
+    nullable: true
+  persistenceId:
+    type: string
+  allowSwitchingToWeaponOutOfAmmo:
+    type: bool
+  hideWhenOutOfAmmo:
+    type: bool
+  lowerOnOwnTeam:
+    type: bool
+  redeployWhenSwitchingWeaponStates:
+    type: bool
+  useQuickThrowOnAutomaticSwitchback:
+    type: bool
+  enableBreathControl:
+    type: bool
+  canBeInSupportedShooting:
+    type: bool
+  allowSwitchingToWeaponReloading:
+    type: bool
+  switchToPrimaryWhenOutOfAmmo:
+    type: bool
+  allowSwitchingToWeaponInVehicles:
+    type: bool
+  isSilenced:
+    type: bool
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the SoldierWeaponData type.
+

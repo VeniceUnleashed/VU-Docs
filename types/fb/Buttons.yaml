@@ -1,0 +1,15 @@
+name: Buttons
+type: enum
+
+values:
+  NoneButton:
+    value: 0
+  XButton:
+    value: 1
+  SquareButton:
+    value: 2
+  CircleButton:
+    value: 3
+  TriangleButton:
+    value: 4
+
