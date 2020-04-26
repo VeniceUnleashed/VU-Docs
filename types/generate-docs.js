@@ -325,6 +325,32 @@ const generateClassDoc = (type, context) => {
         doc += `${linkifyText(constructor.description, context)}\n`;
         doc += `\n`;
       }
+
+      if (constructor.params && Object.keys(constructor.params).length > 0) {
+        doc += `#### Parameters\n`;
+        doc += `\n`;
+        doc += `| Name | Type | Description |\n`;
+        doc += `| ---- | ---- | ----------- |\n`;
+
+        for (const paramName in constructor.params) {
+          const param = constructor.params[paramName];
+
+          if (param.variadic) {
+            doc += `| ...**${escapeText(paramName)}** | ${stringifyType(param, context)} | `;
+          } else {
+            doc += `| **${escapeText(paramName)}** | ${stringifyType(param, context)} | `;
+          }
+
+          if (param.description && param.description.length > 0) {
+            doc += linkifyText(param.description, context);
+          }
+
+          doc += ` |\n`;
+        }
+
+        doc += `\n`;
+      }
+
     }
   }
 
