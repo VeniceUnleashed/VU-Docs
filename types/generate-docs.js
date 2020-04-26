@@ -14,11 +14,6 @@ const escapeText = (text) => {
   return text.replace(/\_/g, '\\_').replace(/\*/g, '\\*');
 };
 
-const linkifyText = (text, context) => {
-  // TODO
-  return escapeText(text);
-};
-
 const linkifyType = (typeName, context) => {
   if (context === 'client' && typeName in clientTypes) {
     return `[${typeName}](/vext/ref/client/type/${typeName.toLowerCase()})`;
@@ -37,6 +32,36 @@ const linkifyType = (typeName, context) => {
   }
 
   return escapeText(typeName);
+};
+
+const linkifyText = (text, context) => {
+  let lastWord = '';
+  let finalText = '';
+  let inQuote = false;
+
+  for (let i = 0; i < text.length; ++i) {
+    if (text[i] == '`') {
+      inQuote = !inQuote;
+      finalText += text[i]
+    } else if (!inQuote && text[i].match(/[a-zA-Z0-9_]/)) {
+      lastWord += text[i];
+    } else {
+      if (lastWord.length > 0) {
+        finalText += linkifyType(lastWord, context);
+        lastWord = '';
+      }
+
+      if (text[i] === '_') {
+        finalText += '\\_';
+      } else if (text[i] === '*') {
+        finalText += '\\*';
+      } else {
+        finalText += text[i];
+      }
+    }
+  }
+
+  return finalText;
 };
 
 const getMethodAnchor = (method, allMethods) => {
