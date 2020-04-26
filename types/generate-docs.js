@@ -186,6 +186,10 @@ const stringifyParams = (params, context) => {
       paramString += `${paramName}: `;
       paramString += stringifyType(param, context);
 
+      if (param.default) {
+        paramString += ` = ${param.default}`;
+      }
+
       paramStrings.push(paramString);
     }
   }
@@ -202,7 +206,7 @@ const generateClassDoc = (type, context) => {
   doc += `\n`;
 
   if (type.inherits) {
-    doc += `Inherits from ${linkifyType(type.inherits, context)}.\n`
+    doc += `Inherits from ${linkifyType(type.inherits, context)}\n`
     doc += `\n`;
   }
 
@@ -261,7 +265,9 @@ const generateClassDoc = (type, context) => {
     for (const method of type.methods) {
       doc += `| ${linkifyMethod(method, type.methods)}(${stringifyParams(method.params, context)}) | `;
 
-      if (method.returns) {
+      if (Array.isArray(method.returns)) {
+        doc += `(${method.returns.map((t) => stringifyType(t, context)).join(', ')})`;
+      } else if (method.returns) {
         doc += stringifyType(method.returns, context);
       } else {
         doc += `void`;
@@ -355,7 +361,9 @@ const generateClassDoc = (type, context) => {
       doc += `\n`;
       doc += `> **${escapeText(method.name)}**(${stringifyParams(method.params, context)})`;
 
-      if (method.returns) {
+      if (Array.isArray(method.returns)) {
+        doc += `: (${method.returns.map((t) => stringifyType(t, context)).join(', ')})`;
+      } else if (method.returns) {
         doc += `: ${stringifyType(method.returns, context)}`;
       }
 
@@ -398,13 +406,26 @@ const generateClassDoc = (type, context) => {
         doc += `| Type | Description |\n`;
         doc += `| ---- | ----------- |\n`;
 
-        doc += `| ${stringifyType(method.returns, context, true)} | `;
+        if (Array.isArray(method.returns)) {
+          for (const tupleValue of method.returns) {
+            doc += `| ${stringifyType(tupleValue, context, true)} | `;
 
-        if (method.returns.description && method.returns.description.length > 0) {
-          doc += linkifyText(method.returns.description, context);
+            if (tupleValue.description && tupleValue.description.length > 0) {
+              doc += linkifyText(tupleValue.description, context);
+            }
+
+            doc += ` |\n`;
+          }
+        } else {
+          doc += `| ${stringifyType(method.returns, context, true)} | `;
+
+          if (method.returns.description && method.returns.description.length > 0) {
+            doc += linkifyText(method.returns.description, context);
+          }
+
+          doc += ` |\n`;
         }
 
-        doc += ` |\n`;
         doc += `\n`;
       }
     }
@@ -501,7 +522,9 @@ const generateLibraryDoc = (type, context) => {
     for (const method of type.methods) {
       doc += `| ${linkifyMethod(method, type.methods)}(${stringifyParams(method.params, context)}) | `;
 
-      if (method.returns) {
+      if (Array.isArray(method.returns)) {
+        doc += `(${method.returns.map((t) => stringifyType(t, context)).join(', ')})`;
+      } else if (method.returns) {
         doc += stringifyType(method.returns, context);
       } else {
         doc += `void`;
@@ -522,7 +545,9 @@ const generateLibraryDoc = (type, context) => {
       doc += `\n`;
       doc += `> **${escapeText(method.name)}**(${stringifyParams(method.params, context)})`;
 
-      if (method.returns) {
+      if (Array.isArray(method.returns)) {
+        doc += `: (${method.returns.map((t) => stringifyType(t, context)).join(', ')})`;
+      } else if (method.returns) {
         doc += `: ${stringifyType(method.returns, context)}`;
       }
 
@@ -565,13 +590,26 @@ const generateLibraryDoc = (type, context) => {
         doc += `| Type | Description |\n`;
         doc += `| ---- | ----------- |\n`;
 
-        doc += `| ${stringifyType(method.returns, context, true)} | `;
+        if (Array.isArray(method.returns)) {
+          for (const tupleValue of method.returns) {
+            doc += `| ${stringifyType(tupleValue, context, true)} | `;
 
-        if (method.returns.description && method.returns.description.length > 0) {
-          doc += linkifyText(method.returns.description, context);
+            if (tupleValue.description && tupleValue.description.length > 0) {
+              doc += linkifyText(tupleValue.description, context);
+            }
+
+            doc += ` |\n`;
+          }
+        } else {
+          doc += `| ${stringifyType(method.returns, context, true)} | `;
+
+          if (method.returns.description && method.returns.description.length > 0) {
+            doc += linkifyText(method.returns.description, context);
+          }
+
+          doc += ` |\n`;
         }
 
-        doc += ` |\n`;
         doc += `\n`;
       }
     }
