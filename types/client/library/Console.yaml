@@ -1,0 +1,44 @@
+name: Console
+type: library
+
+methods:
+  -
+    name: Register
+    params:
+      name:
+        type: string
+      description:
+        type: string
+      callback:
+        type: callable
+    returns:
+      type: ConsoleCommand
+  -
+    name: Register
+    params:
+      name:
+        type: string
+      description:
+        type: string
+      context:
+        type: any
+      callback:
+        type: callable
+    returns:
+      type: ConsoleCommand
+  -
+    name: Deregister
+    params:
+      name:
+        type: string
+    returns:
+      type: bool
+  -
+    name: Deregister
+    params:
+      command:
+        type: ConsoleCommand
+    returns:
+      type: bool
+  -
+    name: DeregisterAll

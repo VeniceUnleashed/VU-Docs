@@ -1,0 +1,54 @@
+name: RaycastManager
+type: library
+
+methods:
+  -
+    name: GetEntityInRaycast
+    params:
+      distance:
+        type: float
+    returns:
+      type: Entity
+      nullable: true
+  -
+    name: Raycast
+    params:
+      from:
+        type: Vec3
+      to:
+        type: Vec3
+      flags:
+        type: RayCastFlags
+    returns:
+      type: RayCastHit
+      nullable: true
+  -
+    name: SpatialRaycast
+    params:
+      from:
+        type: Vec3
+      to:
+        type: Vec3
+      flags:
+        type: SpatialQueryFlags
+    returns:
+      type: Entity
+      table: true
+  -
+    name: DetailedRaycast
+    params:
+      from:
+        type: Vec3
+      to:
+        type: Vec3
+      maxHits:
+        type: int
+      materialFlags:
+        type: MaterialFlags
+      flags:
+        type: RayCastFlags
+    returns:
+      type: RayCastHit
+      table: true
+
+

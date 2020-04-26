@@ -1,0 +1,64 @@
+name: VisualEnvironmentManager
+type: library
+
+methods:
+  -
+    name: GetStates
+    returns:
+      type: VisualEnvironmentState
+      array: true
+  -
+    name: GetDirty
+    returns:
+      type: bool
+  -
+    name: SetDirty
+    params:
+      dirty:
+        type: bool
+  -
+    name: GetSunRotationX
+    returns:
+      type: float
+  -
+    name: SetSunRotationX
+    params:
+      rotation:
+        type: float
+  -
+    name: GetSunRotationY
+    returns:
+      type: float
+  -
+    name: SetSunRotationY
+    params:
+      rotation:
+        type: float
+  -
+    name: GetSunRotationOffsetX
+    returns:
+      type: float
+  -
+    name: SetSunRotationOffsetX
+    params:
+      rotation:
+        type: float
+  -
+    name: GetSunRotationOffsetY
+    returns:
+      type: float
+  -
+    name: SetSunRotationOffsetY
+    params:
+      rotation:
+        type: float
+  -
+    name: AddState
+    params:
+      state:
+        type: VisualEnvironmentState
+  -
+    name: RemoveState
+    params:
+      state:
+        type: VisualEnvironmentState

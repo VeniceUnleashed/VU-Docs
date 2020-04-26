@@ -1,0 +1,105 @@
+name: InputManager
+type: library
+
+methods:
+  -
+    name: GetLevel
+    params:
+      concept:
+        type: InputConceptIdentifiers
+    returns:
+      type: float
+  -
+    name: IsDown
+    params:
+      concept:
+        type: InputConceptIdentifiers
+    returns:
+      type: bool
+  -
+    name: WentDown
+    params:
+      concept:
+        type: InputConceptIdentifiers
+    returns:
+      type: bool
+  -
+    name: WentUp
+    params:
+      concept:
+        type: InputConceptIdentifiers
+    returns:
+      type: bool
+  -
+    name: IsKeyDown
+    params:
+      key:
+        type: InputDeviceKeys
+    returns:
+      type: bool
+  -
+    name: WentKeyDown
+    params:
+      key:
+        type: InputDeviceKeys
+    returns:
+      type: bool
+  -
+    name: WentKeyUp
+    params:
+      key:
+        type: InputDeviceKeys
+    returns:
+      type: bool
+  -
+    name: IsMouseButtonDown
+    params:
+      button:
+        type: InputDeviceMouseButtons
+    returns:
+      type: bool
+  -
+    name: WentMouseButtonDown
+    params:
+      button:
+        type: InputDeviceMouseButtons
+    returns:
+      type: bool
+  -
+    name: WentMouseButtonUp
+    params:
+      button:
+        type: InputDeviceMouseButtons
+    returns:
+      type: bool
+  -
+    name: GetMouseLevel
+    params:
+      axes:
+        type: InputDeviceAxes
+    returns:
+      type: float
+  -
+    name: GetCursorPosition
+    returns:
+      type: Vec2
+  -
+    name: SetCursorPosition
+    params:
+      x:
+        type: int
+      y:
+        type: int
+  -
+    name: IsMouseActive
+    returns:
+      type: bool
+  -
+    name: GetMouseSensitivity
+    returns:
+      type: float
+  -
+    name: SetMouseSensitivity
+    params:
+      sensitivity:
+        type: float

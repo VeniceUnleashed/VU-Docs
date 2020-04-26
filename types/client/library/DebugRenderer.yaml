@@ -1,0 +1,82 @@
+name: DebugRenderer
+type: library
+
+methods:
+  -
+    name: DrawLine
+    params:
+      from:
+        type: Vec3
+      to:
+        type: Vec3
+      colorFrom:
+        type: Vec4
+      colorTo:
+        type: Vec4
+  -
+    name: DrawTriangle
+    params:
+      pos1:
+        type: Vec3
+      pos2:
+        type: Vec3
+      pos3:
+        type: Vec3
+      color1:
+        type: Vec4
+      color2:
+        type: Vec4
+      color3:
+        type: Vec4
+  -
+    name: DrawSphere
+    params:
+      pos:
+        type: Vec3
+      radius:
+        type: float
+      color:
+        type: Vec4
+      renderLines:
+        type: bool
+      smallSizeSegmentDecrease:
+        type: bool
+  -
+    name: DrawLine2D
+    params:
+      from:
+        type: Vec2
+      to:
+        type: Vec2
+      color:
+        type: Vec4
+  -
+    name: DrawText2D
+    params:
+      x:
+        type: int
+      y:
+        type: y
+      text:
+        type: string
+      color:
+        type: Vec4
+      scale:
+        type: float
+  -
+    name: DrawVertices
+    params:
+      type:
+        type: DebugGeometryType
+      vertices:
+        type: DebugVertex
+        table: true
+  -
+    name: DrawOBB
+    params:
+      aabb:
+        type: AxisAlignedBox
+      transform:
+        type: LinearTransform
+      color:
+        type: Vec4

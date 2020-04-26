@@ -1,0 +1,44 @@
+name: SpectatorManager
+type: library
+
+methods:
+  -
+    name: GetSpectating
+    returns:
+      type: bool
+  -
+    name: SetSpectating
+    params:
+      spectating:
+        type: bool
+  -
+    name: SpectatePlayer
+    params:
+      player:
+        type: Player
+      firstPerson:
+        type: bool
+  -
+    name: GetSpectatedPlayer
+    returns:
+      type: Player
+      nullable: true
+  -
+    name: GetCameraMode
+    returns:
+      type: SpectatorCameraMode
+  -
+    name: SetCameraMode
+    params:
+      mode:
+        type: SpectatorCameraMode
+  -
+    name: GetFreecameraTransform
+    returns:
+      type: LinearTransform
+      nullable: true
+  -
+    name: SetFreecameraTransform
+    params:
+      transform:
+        type: LinearTransform

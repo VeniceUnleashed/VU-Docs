@@ -1,0 +1,83 @@
+name: EffectManager
+type: library
+
+method:
+  -
+    name: PlayEffect
+    params:
+      asset:
+        type: DataContainer
+      transform:
+        type: LinearTransform
+      params:
+        type: EffectParams
+      firstPersonEffect:
+        type: bool
+    returns:
+      type: int
+  -
+    name: StopEffect
+    params:
+      handle:
+        type: int
+  -
+    name: ResetEffect
+    params:
+      handle:
+        type: int
+  -
+    name: SetEffectParameterBool
+    params:
+      handle:
+        type: int
+      name:
+        type: string
+      value:
+        type: bool
+  -
+    name: SetEffectParameterInt
+    params:
+      handle:
+        type: int
+      name:
+        type: string
+      value:
+        type: int
+  -
+    name: SetEffectParameterFloat
+    params:
+      handle:
+        type: int
+      name:
+        type: string
+      value:
+        type: float
+  -
+    name: SetEffectTransform
+    params:
+      handle:
+        type: int
+      transform:
+        type: LinearTransform
+  -
+    name: IsEffectPlaying
+    params:
+      handle:
+        type: int
+    returns:
+      type: bool
+  -
+    name: IsEffectDead
+    params:
+      handle:
+        type: int
+    returns:
+      type: bool
+  -
+    name: DisableEffects
+    params:
+      disableTimer:
+        type: float
+  -
+    name: Clear
+

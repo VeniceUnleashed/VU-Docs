@@ -1,0 +1,60 @@
+name: PlayerManager
+type: library
+
+methods:
+  -
+    name: GetPlayers
+    returns:
+      type: Player
+      array: true
+  -
+    name: GetPlayersByTeam
+    params:
+      team:
+        type: TeamId
+    returns:
+      type: Player
+      array: true
+  -
+    name: GetPlayersBySquad
+    params:
+      team:
+        type: TeamId
+      squad:
+        type: SquadId
+    returns:
+      type: Player
+      array: true
+  -
+    name: GetPlayerById
+    params:
+      id:
+        type: int
+    returns:
+      type: Player
+      nullable: true
+  -
+    name: GetPlayerByName
+    params:
+      name:
+        type: string
+    returns:
+      type: Player
+      nullable: true
+  -
+    name: GetPlayersByName
+    params:
+      name:
+        type: string
+    returns:
+      type: Player
+      array: true
+  -
+    name: GetPlayerCount
+    returns:
+      type: int
+  -
+    name: GetLocalPlayer
+    returns:
+      type: Player
+      nullable: true

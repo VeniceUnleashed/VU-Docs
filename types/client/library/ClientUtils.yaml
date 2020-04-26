@@ -1,0 +1,26 @@
+name: ClientUtils
+type: library
+
+methods:
+  -
+    name: GetCameraTransform
+    returns:
+      type: LinearTransform
+  -
+    name: WorldToScreen
+    params:
+      worldPos:
+        type: Vec3
+    returns:
+      type: Vec2
+  -
+    name: ScreenToWorld
+    params:
+      mousePos:
+        type: Vec2
+    returns:
+      type: Vec3
+  -
+    name: GetWindowSize
+    returns:
+      type: Vec2

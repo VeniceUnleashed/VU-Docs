@@ -1,0 +1,46 @@
+name: WebUI
+type: library
+
+methods:
+  -
+    name: Init
+  -
+    name: Show
+  -
+    name: Hide
+  -
+    name: BringToFront
+  -
+    name: SendToBack
+  -
+    name: EnableKeyboard
+  -
+    name: EnableMouse
+  -
+    name: DisableKeyboard
+  -
+    name: DisableMouse
+  -
+    name: ResetKeyboard
+  -
+    name: ResetMouse
+  -
+    name: ExecuteJS
+    params:
+      script:
+        type: string
+  -
+    name: QuoteString
+    params:
+      string:
+        type: string
+    returns:
+      type: string
+  -
+    name: GetScreenWidth
+    returns:
+      type: int
+  -
+    name: GetScreenHeight
+    returns:
+      type: int
