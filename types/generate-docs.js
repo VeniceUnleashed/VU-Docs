@@ -51,10 +51,8 @@ const linkifyText = (text, context) => {
         lastWord = '';
       }
 
-      if (text[i] === '_') {
-        finalText += '\\_';
-      } else if (text[i] === '*') {
-        finalText += '\\*';
+      if (text[i] === '|') {
+        finalText += '\\|';
       } else {
         finalText += text[i];
       }
@@ -454,6 +452,15 @@ const generateClassDoc = (type, context) => {
 
         doc += `\n`;
       }
+
+      if (method.example && method.example.length > 0) {
+        doc += `#### Example\n`;
+        doc += `\n`;
+        doc += '```lua\n';
+        doc += method.example;
+        doc += '```\n';
+        doc += `\n`;
+      }
     }
   }
 
@@ -636,6 +643,15 @@ const generateLibraryDoc = (type, context) => {
           doc += ` |\n`;
         }
 
+        doc += `\n`;
+      }
+
+      if (method.example && method.example.length > 0) {
+        doc += `#### Example\n`;
+        doc += `\n`;
+        doc += '```lua\n';
+        doc += method.example;
+        doc += '```\n';
         doc += `\n`;
       }
     }
