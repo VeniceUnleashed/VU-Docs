@@ -1,36 +1,52 @@
 ---
 title: SoundPatchConfigurationEntry
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SoundPatchConfigurationEntry](#constructor-0)**() |
+| **[SoundPatchConfigurationEntry](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SoundPatchConfigurationEntry](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SoundPatchConfigurationEntry" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SoundPatchConfigurationEntry {#constructor-0}
+> **SoundPatchConfigurationEntry**()
 
-| Constructor                                                                             | Description                                                                                                                                     |
-| --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| SoundPatchConfigurationEntry()                                                          | Create a new instance of this container type.                                                                                                   |
-| SoundPatchConfigurationEntry(SoundPatchConfigurationEntry other)                        | Create a reference copy of an instance of the same type.                                                                                        |
-| SoundPatchConfigurationEntry([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoundPatchConfigurationEntry](/vext/ref/fb/soundpatchconfigurationentry/). |
+Creates a new [SoundPatchConfigurationEntry](/vext/ref/fb/soundpatchconfigurationentry) frostbite instance.
 
-## Methods
+### SoundPatchConfigurationEntry {#constructor-1}
+> **SoundPatchConfigurationEntry**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                                         | Name            | Parameters                                     |
-| ------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [SoundPatchConfigurationEntry](/vext/ref/fb/soundpatchconfigurationentry/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SoundPatchConfigurationEntry](/vext/ref/fb/soundpatchconfigurationentry/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SoundPatchConfigurationEntry](/vext/ref/fb/soundpatchconfigurationentry) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SoundPatchConfigurationEntry {#constructor-2}
+> **SoundPatchConfigurationEntry**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoundPatchConfigurationEntry](/vext/ref/fb/soundpatchconfigurationentry). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SoundPatchConfigurationEntry](/vext/ref/fb/soundpatchconfigurationentry). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SoundPatchConfigurationEntry](/vext/ref/fb/soundpatchconfigurationentry) type.
+

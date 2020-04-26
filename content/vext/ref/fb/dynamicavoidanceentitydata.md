@@ -1,51 +1,118 @@
 ---
 title: DynamicAvoidanceEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[DynamicAvoidanceEntityData](#constructor-0)**() |
+| **[DynamicAvoidanceEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[DynamicAvoidanceEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[DynamicAvoidanceEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[DynamicAvoidanceEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[DynamicAvoidanceEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "repelOthers" >}} | [DynamicAvoidanceMode](/vext/ref/fb/dynamicavoidancemode) |
+| {{< prop "reportPredictedCollision" >}} | [DynamicAvoidanceMode](/vext/ref/fb/dynamicavoidancemode) |
+| {{< prop "collisionRadius" >}} | float |
+| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
+| {{< prop "antBinding" >}} | [AntDynamicAvoidanceBinding](/vext/ref/fb/antdynamicavoidancebinding) |
+| {{< prop "affectedByRepellingForce" >}} | bool |
+| {{< prop "predictedByOthers" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "DynamicAvoidanceEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### DynamicAvoidanceEntityData {#constructor-0}
+> **DynamicAvoidanceEntityData**()
 
-| Constructor                                                                           | Description                                                                                                                                 |
-| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| DynamicAvoidanceEntityData()                                                          | Create a new instance of this container type.                                                                                               |
-| DynamicAvoidanceEntityData(DynamicAvoidanceEntityData other)                          | Create a reference copy of an instance of the same type.                                                                                    |
-| DynamicAvoidanceEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [DynamicAvoidanceEntityData](/vext/ref/fb/dynamicavoidanceentitydata/).                            |
-| DynamicAvoidanceEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [DynamicAvoidanceEntityData](/vext/ref/fb/dynamicavoidanceentitydata/).                    |
-| DynamicAvoidanceEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [DynamicAvoidanceEntityData](/vext/ref/fb/dynamicavoidanceentitydata/).              |
-| DynamicAvoidanceEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DynamicAvoidanceEntityData](/vext/ref/fb/dynamicavoidanceentitydata/). |
+Creates a new [DynamicAvoidanceEntityData](/vext/ref/fb/dynamicavoidanceentitydata) frostbite instance.
 
-## Properties
+### DynamicAvoidanceEntityData {#constructor-1}
+> **DynamicAvoidanceEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                     | Type                                                     | Description |
-| ------------------------ | -------------------------------------------------------- | ----------- |
-| repelOthers              | [DynamicAvoidanceMode](/vext/ref/fb/dynamicavoidancemode/)             |             |
-| reportPredictedCollision | [DynamicAvoidanceMode](/vext/ref/fb/dynamicavoidancemode/)             |             |
-| collisionRadius          | number                                                   |             |
-| realm                    | [Realm](/vext/ref/fb/realm/)                                           |             |
-| antBinding               | [AntDynamicAvoidanceBinding](/vext/ref/fb/antdynamicavoidancebinding/) |             |
-| affectedByRepellingForce | bool                                                     |             |
-| predictedByOthers        | bool                                                     |             |
-
-## Methods
-
-| Type                                                     | Name            | Parameters                                     |
-| -------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [DynamicAvoidanceEntityData](/vext/ref/fb/dynamicavoidanceentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [DynamicAvoidanceEntityData](/vext/ref/fb/dynamicavoidanceentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [DynamicAvoidanceEntityData](/vext/ref/fb/dynamicavoidanceentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### DynamicAvoidanceEntityData {#constructor-2}
+> **DynamicAvoidanceEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [DynamicAvoidanceEntityData](/vext/ref/fb/dynamicavoidanceentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [DynamicAvoidanceEntityData](/vext/ref/fb/dynamicavoidanceentitydata). |
+
+### DynamicAvoidanceEntityData {#constructor-3}
+> **DynamicAvoidanceEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [DynamicAvoidanceEntityData](/vext/ref/fb/dynamicavoidanceentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [DynamicAvoidanceEntityData](/vext/ref/fb/dynamicavoidanceentitydata). |
+
+### DynamicAvoidanceEntityData {#constructor-4}
+> **DynamicAvoidanceEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [DynamicAvoidanceEntityData](/vext/ref/fb/dynamicavoidanceentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [DynamicAvoidanceEntityData](/vext/ref/fb/dynamicavoidanceentitydata). |
+
+### DynamicAvoidanceEntityData {#constructor-5}
+> **DynamicAvoidanceEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DynamicAvoidanceEntityData](/vext/ref/fb/dynamicavoidanceentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DynamicAvoidanceEntityData](/vext/ref/fb/dynamicavoidanceentitydata). |
+
+## Properties
+### {{% prop-heading "repelOthers" %}}
+> **[DynamicAvoidanceMode](/vext/ref/fb/dynamicavoidancemode)**
+
+### {{% prop-heading "reportPredictedCollision" %}}
+> **[DynamicAvoidanceMode](/vext/ref/fb/dynamicavoidancemode)**
+
+### {{% prop-heading "collisionRadius" %}}
+> **float**
+
+### {{% prop-heading "realm" %}}
+> **[Realm](/vext/ref/fb/realm)**
+
+### {{% prop-heading "antBinding" %}}
+> **[AntDynamicAvoidanceBinding](/vext/ref/fb/antdynamicavoidancebinding)**
+
+### {{% prop-heading "affectedByRepellingForce" %}}
+> **bool**
+
+### {{% prop-heading "predictedByOthers" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [DynamicAvoidanceEntityData](/vext/ref/fb/dynamicavoidanceentitydata) type.
+

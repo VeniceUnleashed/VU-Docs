@@ -1,45 +1,94 @@
 ---
 title: BreakableRuinComponentData
 ---
-### Base Classes
 
-[ComponentData](/vext/ref/fb/componentdata/)
+Inherits from 
+[ComponentData](/vext/ref/fb/componentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[BreakableRuinComponentData](#constructor-0)**() |
+| **[BreakableRuinComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[BreakableRuinComponentData](#constructor-2)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[BreakableRuinComponentData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[BreakableRuinComponentData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[BreakableRuinComponentData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "ruinModel" >}} | [ObjectBlueprint](/vext/ref/fb/objectblueprint) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "BreakableRuinComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### BreakableRuinComponentData {#constructor-0}
+> **BreakableRuinComponentData**()
 
-| Constructor                                                                           | Description                                                                                                                                 |
-| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| BreakableRuinComponentData()                                                          | Create a new instance of this container type.                                                                                               |
-| BreakableRuinComponentData(BreakableRuinComponentData other)                          | Create a reference copy of an instance of the same type.                                                                                    |
-| BreakableRuinComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [BreakableRuinComponentData](/vext/ref/fb/breakableruincomponentdata/).                      |
-| BreakableRuinComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [BreakableRuinComponentData](/vext/ref/fb/breakableruincomponentdata/).                    |
-| BreakableRuinComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [BreakableRuinComponentData](/vext/ref/fb/breakableruincomponentdata/).              |
-| BreakableRuinComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BreakableRuinComponentData](/vext/ref/fb/breakableruincomponentdata/). |
+Creates a new [BreakableRuinComponentData](/vext/ref/fb/breakableruincomponentdata) frostbite instance.
 
-## Properties
+### BreakableRuinComponentData {#constructor-1}
+> **BreakableRuinComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name      | Type                               | Description |
-| --------- | ---------------------------------- | ----------- |
-| ruinModel | [ObjectBlueprint](/vext/ref/fb/objectblueprint/) |             |
-
-## Methods
-
-| Type                                                     | Name            | Parameters                                     |
-| -------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [BreakableRuinComponentData](/vext/ref/fb/breakableruincomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [BreakableRuinComponentData](/vext/ref/fb/breakableruincomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [BreakableRuinComponentData](/vext/ref/fb/breakableruincomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### BreakableRuinComponentData {#constructor-2}
+> **BreakableRuinComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [BreakableRuinComponentData](/vext/ref/fb/breakableruincomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [BreakableRuinComponentData](/vext/ref/fb/breakableruincomponentdata). |
+
+### BreakableRuinComponentData {#constructor-3}
+> **BreakableRuinComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [BreakableRuinComponentData](/vext/ref/fb/breakableruincomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [BreakableRuinComponentData](/vext/ref/fb/breakableruincomponentdata). |
+
+### BreakableRuinComponentData {#constructor-4}
+> **BreakableRuinComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [BreakableRuinComponentData](/vext/ref/fb/breakableruincomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [BreakableRuinComponentData](/vext/ref/fb/breakableruincomponentdata). |
+
+### BreakableRuinComponentData {#constructor-5}
+> **BreakableRuinComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BreakableRuinComponentData](/vext/ref/fb/breakableruincomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [BreakableRuinComponentData](/vext/ref/fb/breakableruincomponentdata). |
+
+## Properties
+### {{% prop-heading "ruinModel" %}}
+> **[ObjectBlueprint](/vext/ref/fb/objectblueprint)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [BreakableRuinComponentData](/vext/ref/fb/breakableruincomponentdata) type.
+

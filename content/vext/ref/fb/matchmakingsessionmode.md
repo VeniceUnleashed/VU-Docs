@@ -1,16 +1,13 @@
 ---
 title: MatchmakingSessionMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **MatchmakingSessionMode_FindDedicatedServer** | Value: **0** |
+| **MatchmakingSessionMode_ResetDedicatedServer** | Value: **1** |
+| **MatchmakingSessionMode_FindPeerGame** | Value: **2** |
+| **MatchmakingSessionMode_CreatePeerGame** | Value: **3** |
+| **MatchmakingSessionMode_Invalid** | Value: **4** |
 
-| Name                                         | Value | Description |
-| -------------------------------------------- | ----- | ----------- |
-| MatchmakingSessionMode\_FindDedicatedServer  | 0     |             |
-| MatchmakingSessionMode\_ResetDedicatedServer | 1     |             |
-| MatchmakingSessionMode\_FindPeerGame         | 2     |             |
-| MatchmakingSessionMode\_CreatePeerGame       | 3     |             |
-| MatchmakingSessionMode\_Invalid              | 4     |             |

@@ -1,35 +1,69 @@
 ---
 title: AntAnimatableData
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AntAnimatableData](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "actor" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "proceduralAwareness" >}} | [ProceduralAwarenessAntRefs](/vext/ref/fb/proceduralawarenessantrefs) \| nil |
+| {{< prop "rightHandEffectorDisableOverride" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "leftHandEffectorDisableOverride" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "masterSkeletonAsset" >}} | [MasterSkeletonAsset](/vext/ref/fb/masterskeletonasset) \| nil |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [AntAnimatableData](/vext/ref/fb/antanimatabledata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AntAnimatableData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AntAnimatableData {#constructor-0}
+> **AntAnimatableData**()
 
-| Constructor                                | Description                                              |
-| ------------------------------------------ | -------------------------------------------------------- |
-| AntAnimatableData()                        | Create a new instance of this structure type.            |
-| AntAnimatableData(AntAnimatableData other) | Create a reference copy of a structure of the same type. |
+Creates a new [AntAnimatableData](/vext/ref/fb/antanimatabledata) frostbite structure.
 
 ## Properties
+### {{% prop-heading "actor" %}}
+> **[AntRef](/vext/ref/fb/antref)**
 
-| Name                             | Type                                                     | Description |
-| -------------------------------- | -------------------------------------------------------- | ----------- |
-| actor                            | [AntRef](/vext/ref/fb/antref/)                                         |             |
-| proceduralAwareness              | [ProceduralAwarenessAntRefs](/vext/ref/fb/proceduralawarenessantrefs/) |             |
-| rightHandEffectorDisableOverride | [AntRef](/vext/ref/fb/antref/)                                         |             |
-| leftHandEffectorDisableOverride  | [AntRef](/vext/ref/fb/antref/)                                         |             |
-| masterSkeletonAsset              | [MasterSkeletonAsset](/vext/ref/fb/masterskeletonasset/)               |             |
+### {{% prop-heading "proceduralAwareness" %}}
+> **[ProceduralAwarenessAntRefs](/vext/ref/fb/proceduralawarenessantrefs)** | **nil**
+
+### {{% prop-heading "rightHandEffectorDisableOverride" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "leftHandEffectorDisableOverride" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "masterSkeletonAsset" %}}
+> **[MasterSkeletonAsset](/vext/ref/fb/masterskeletonasset)** | **nil**
 
 ## Methods
-
-| Type                                   | Name            | Parameters |
-| -------------------------------------- | --------------- | ---------- |
-| [AntAnimatableData](/vext/ref/fb/antanimatabledata/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [AntAnimatableData](/vext/ref/fb/antanimatabledata)
 
-> [AntAnimatableData](/vext/ref/fb/antanimatabledata/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[AntAnimatableData](/vext/ref/fb/antanimatabledata)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AntAnimatableData](/vext/ref/fb/antanimatabledata) type.
+

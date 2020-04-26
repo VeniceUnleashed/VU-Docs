@@ -1,13 +1,10 @@
 ---
 title: SoldierBuffId
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **SBImprovedBodyArmor** | Value: **0** |
+| **SBCount** | Value: **1** |
 
-| Name                | Value | Description |
-| ------------------- | ----- | ----------- |
-| SBImprovedBodyArmor | 0     |             |
-| SBCount             | 1     |             |

@@ -1,14 +1,11 @@
 ---
 title: MeshScatteringRotationMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **MeshScatteringRotationMode_Random** | Value: **0** |
+| **MeshScatteringRotationMode_TowardsSlope** | Value: **1** |
+| **MeshScatteringRotationMode_Fixed** | Value: **2** |
 
-| Name                                     | Value | Description |
-| ---------------------------------------- | ----- | ----------- |
-| MeshScatteringRotationMode\_Random       | 0     |             |
-| MeshScatteringRotationMode\_TowardsSlope | 1     |             |
-| MeshScatteringRotationMode\_Fixed        | 2     |             |

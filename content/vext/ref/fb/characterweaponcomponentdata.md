@@ -1,47 +1,102 @@
 ---
 title: CharacterWeaponComponentData
 ---
-### Base Classes
 
-[ComponentData](/vext/ref/fb/componentdata/)
+Inherits from 
+[ComponentData](/vext/ref/fb/componentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[CharacterWeaponComponentData](#constructor-0)**() |
+| **[CharacterWeaponComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[CharacterWeaponComponentData](#constructor-2)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[CharacterWeaponComponentData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[CharacterWeaponComponentData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[CharacterWeaponComponentData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "defaultWeaponBlueprint" >}} | [SoldierWeaponBlueprint](/vext/ref/fb/soldierweaponblueprint) \| nil |
+| {{< prop "aimBoneName" >}} | string |
+| {{< prop "weaponSkeleton" >}} | [SkeletonAsset](/vext/ref/fb/skeletonasset) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "CharacterWeaponComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### CharacterWeaponComponentData {#constructor-0}
+> **CharacterWeaponComponentData**()
 
-| Constructor                                                                             | Description                                                                                                                                     |
-| --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| CharacterWeaponComponentData()                                                          | Create a new instance of this container type.                                                                                                   |
-| CharacterWeaponComponentData(CharacterWeaponComponentData other)                        | Create a reference copy of an instance of the same type.                                                                                        |
-| CharacterWeaponComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [CharacterWeaponComponentData](/vext/ref/fb/characterweaponcomponentdata/).                      |
-| CharacterWeaponComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [CharacterWeaponComponentData](/vext/ref/fb/characterweaponcomponentdata/).                    |
-| CharacterWeaponComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [CharacterWeaponComponentData](/vext/ref/fb/characterweaponcomponentdata/).              |
-| CharacterWeaponComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CharacterWeaponComponentData](/vext/ref/fb/characterweaponcomponentdata/). |
+Creates a new [CharacterWeaponComponentData](/vext/ref/fb/characterweaponcomponentdata) frostbite instance.
 
-## Properties
+### CharacterWeaponComponentData {#constructor-1}
+> **CharacterWeaponComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                   | Type                                             | Description |
-| ---------------------- | ------------------------------------------------ | ----------- |
-| defaultWeaponBlueprint | [SoldierWeaponBlueprint](/vext/ref/fb/soldierweaponblueprint/) |             |
-| aimBoneName            | string                                           |             |
-| weaponSkeleton         | [SkeletonAsset](/vext/ref/fb/skeletonasset/)                   |             |
-
-## Methods
-
-| Type                                                         | Name            | Parameters                                     |
-| ------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [CharacterWeaponComponentData](/vext/ref/fb/characterweaponcomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [CharacterWeaponComponentData](/vext/ref/fb/characterweaponcomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [CharacterWeaponComponentData](/vext/ref/fb/characterweaponcomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### CharacterWeaponComponentData {#constructor-2}
+> **CharacterWeaponComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [CharacterWeaponComponentData](/vext/ref/fb/characterweaponcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [CharacterWeaponComponentData](/vext/ref/fb/characterweaponcomponentdata). |
+
+### CharacterWeaponComponentData {#constructor-3}
+> **CharacterWeaponComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [CharacterWeaponComponentData](/vext/ref/fb/characterweaponcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [CharacterWeaponComponentData](/vext/ref/fb/characterweaponcomponentdata). |
+
+### CharacterWeaponComponentData {#constructor-4}
+> **CharacterWeaponComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [CharacterWeaponComponentData](/vext/ref/fb/characterweaponcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [CharacterWeaponComponentData](/vext/ref/fb/characterweaponcomponentdata). |
+
+### CharacterWeaponComponentData {#constructor-5}
+> **CharacterWeaponComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CharacterWeaponComponentData](/vext/ref/fb/characterweaponcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [CharacterWeaponComponentData](/vext/ref/fb/characterweaponcomponentdata). |
+
+## Properties
+### {{% prop-heading "defaultWeaponBlueprint" %}}
+> **[SoldierWeaponBlueprint](/vext/ref/fb/soldierweaponblueprint)** | **nil**
+
+### {{% prop-heading "aimBoneName" %}}
+> **string**
+
+### {{% prop-heading "weaponSkeleton" %}}
+> **[SkeletonAsset](/vext/ref/fb/skeletonasset)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [CharacterWeaponComponentData](/vext/ref/fb/characterweaponcomponentdata) type.
+

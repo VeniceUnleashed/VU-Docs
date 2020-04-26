@@ -1,14 +1,11 @@
 ---
 title: ExampleVehicleType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ExampleVehicleType_Small** | Value: **0** |
+| **ExampleVehicleType_Medium** | Value: **1** |
+| **ExampleVehicleType_Large** | Value: **2** |
 
-| Name                       | Value | Description |
-| -------------------------- | ----- | ----------- |
-| ExampleVehicleType\_Small  | 0     |             |
-| ExampleVehicleType\_Medium | 1     |             |
-| ExampleVehicleType\_Large  | 2     |             |

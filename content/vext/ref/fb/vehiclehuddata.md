@@ -1,35 +1,69 @@
 ---
 title: VehicleHudData
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VehicleHudData](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "customizationOffset" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "customization" >}} | [VehicleCustomizationAsset](/vext/ref/fb/vehiclecustomizationasset) \| nil |
+| {{< prop "minimapIcon" >}} | [UIHudIcon](/vext/ref/fb/uihudicon) |
+| {{< prop "texture" >}} | [TextureAsset](/vext/ref/fb/textureasset) \| nil |
+| {{< prop "vehicleItemHash" >}} | int |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [VehicleHudData](/vext/ref/fb/vehiclehuddata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VehicleHudData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VehicleHudData {#constructor-0}
+> **VehicleHudData**()
 
-| Constructor                          | Description                                              |
-| ------------------------------------ | -------------------------------------------------------- |
-| VehicleHudData()                     | Create a new instance of this structure type.            |
-| VehicleHudData(VehicleHudData other) | Create a reference copy of a structure of the same type. |
+Creates a new [VehicleHudData](/vext/ref/fb/vehiclehuddata) frostbite structure.
 
 ## Properties
+### {{% prop-heading "customizationOffset" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
 
-| Name                | Type                                                   | Description |
-| ------------------- | ------------------------------------------------------ | ----------- |
-| customizationOffset | [Vec3](/vext/ref/shared/class/vec3)                      |             |
-| customization       | [VehicleCustomizationAsset](/vext/ref/fb/vehiclecustomizationasset/) |             |
-| minimapIcon         | [UIHudIcon](/vext/ref/fb/uihudicon/)                                 |             |
-| texture             | [TextureAsset](/vext/ref/fb/textureasset/)                           |             |
-| vehicleItemHash     | number                                                 |             |
+### {{% prop-heading "customization" %}}
+> **[VehicleCustomizationAsset](/vext/ref/fb/vehiclecustomizationasset)** | **nil**
+
+### {{% prop-heading "minimapIcon" %}}
+> **[UIHudIcon](/vext/ref/fb/uihudicon)**
+
+### {{% prop-heading "texture" %}}
+> **[TextureAsset](/vext/ref/fb/textureasset)** | **nil**
+
+### {{% prop-heading "vehicleItemHash" %}}
+> **int**
 
 ## Methods
-
-| Type                             | Name            | Parameters |
-| -------------------------------- | --------------- | ---------- |
-| [VehicleHudData](/vext/ref/fb/vehiclehuddata/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [VehicleHudData](/vext/ref/fb/vehiclehuddata)
 
-> [VehicleHudData](/vext/ref/fb/vehiclehuddata/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[VehicleHudData](/vext/ref/fb/vehiclehuddata)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VehicleHudData](/vext/ref/fb/vehiclehuddata) type.
+

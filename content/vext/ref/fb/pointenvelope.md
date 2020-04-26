@@ -1,42 +1,61 @@
 ---
 title: PointEnvelope
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PointEnvelope](#constructor-0)**() |
+| **[PointEnvelope](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PointEnvelope](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "points" >}} | [PointEnvelopePoint](/vext/ref/fb/pointenvelopepoint)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PointEnvelope" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PointEnvelope {#constructor-0}
+> **PointEnvelope**()
 
-| Constructor                                                              | Description                                                                                                       |
-| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| PointEnvelope()                                                          | Create a new instance of this container type.                                                                     |
-| PointEnvelope(PointEnvelope other)                                       | Create a reference copy of an instance of the same type.                                                          |
-| PointEnvelope([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PointEnvelope](/vext/ref/fb/pointenvelope/). |
+Creates a new [PointEnvelope](/vext/ref/fb/pointenvelope) frostbite instance.
 
-## Properties
+### PointEnvelope {#constructor-1}
+> **PointEnvelope**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name   | Type                                         | Description |
-| ------ | -------------------------------------------- | ----------- |
-| points | [PointEnvelopePoint](/vext/ref/fb/pointenvelopepoint/)\[\] |             |
-
-## Methods
-
-| Type                           | Name            | Parameters                                     |
-| ------------------------------ | --------------- | ---------------------------------------------- |
-| [PointEnvelope](/vext/ref/fb/pointenvelope/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PointEnvelope](/vext/ref/fb/pointenvelope/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PointEnvelope](/vext/ref/fb/pointenvelope) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PointEnvelope {#constructor-2}
+> **PointEnvelope**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PointEnvelope](/vext/ref/fb/pointenvelope). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PointEnvelope](/vext/ref/fb/pointenvelope). |
+
+## Properties
+### {{% prop-heading "points" %}}
+> **[PointEnvelopePoint](/vext/ref/fb/pointenvelopepoint)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PointEnvelope](/vext/ref/fb/pointenvelope) type.
+

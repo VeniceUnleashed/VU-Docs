@@ -1,55 +1,120 @@
 ---
 title: PathfindingBuildSettingsAsset
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PathfindingBuildSettingsAsset](#constructor-0)**() |
+| **[PathfindingBuildSettingsAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PathfindingBuildSettingsAsset](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[PathfindingBuildSettingsAsset](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "entityRadius" >}} | float |
+| {{< prop "entityHeight" >}} | float |
+| {{< prop "maxWalkableSlope" >}} | float |
+| {{< prop "maxStep" >}} | float |
+| {{< prop "minIslandSurfaceArea" >}} | float |
+| {{< prop "voxSize" >}} | float |
+| {{< prop "gridSideLength" >}} | float |
+| {{< prop "additionalInwardsSmoothingDist" >}} | float |
+| {{< prop "terrainSamplingStep" >}} | int |
+| {{< prop "tesselateForPathingAccuracy" >}} | bool |
+| {{< prop "useEnhancedTerrainTracking" >}} | bool |
+| {{< prop "optimizeForAxisAligned" >}} | bool |
+| {{< prop "leaveSmallIslandsTouchingPortals" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PathfindingBuildSettingsAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PathfindingBuildSettingsAsset {#constructor-0}
+> **PathfindingBuildSettingsAsset**()
 
-| Constructor                                                                              | Description                                                                                                                                       |
-| ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| PathfindingBuildSettingsAsset()                                                          | Create a new instance of this container type.                                                                                                     |
-| PathfindingBuildSettingsAsset(PathfindingBuildSettingsAsset other)                       | Create a reference copy of an instance of the same type.                                                                                          |
-| PathfindingBuildSettingsAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [PathfindingBuildSettingsAsset](/vext/ref/fb/pathfindingbuildsettingsasset/).                                      |
-| PathfindingBuildSettingsAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PathfindingBuildSettingsAsset](/vext/ref/fb/pathfindingbuildsettingsasset/). |
+Creates a new [PathfindingBuildSettingsAsset](/vext/ref/fb/pathfindingbuildsettingsasset) frostbite instance.
 
-## Properties
+### PathfindingBuildSettingsAsset {#constructor-1}
+> **PathfindingBuildSettingsAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                             | Type   | Description |
-| -------------------------------- | ------ | ----------- |
-| entityRadius                     | number |             |
-| entityHeight                     | number |             |
-| maxWalkableSlope                 | number |             |
-| maxStep                          | number |             |
-| minIslandSurfaceArea             | number |             |
-| voxSize                          | number |             |
-| gridSideLength                   | number |             |
-| additionalInwardsSmoothingDist   | number |             |
-| terrainSamplingStep              | number |             |
-| tesselateForPathingAccuracy      | bool   |             |
-| useEnhancedTerrainTracking       | bool   |             |
-| optimizeForAxisAligned           | bool   |             |
-| leaveSmallIslandsTouchingPortals | bool   |             |
-
-## Methods
-
-| Type                                                           | Name            | Parameters                                     |
-| -------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [PathfindingBuildSettingsAsset](/vext/ref/fb/pathfindingbuildsettingsasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PathfindingBuildSettingsAsset](/vext/ref/fb/pathfindingbuildsettingsasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PathfindingBuildSettingsAsset](/vext/ref/fb/pathfindingbuildsettingsasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PathfindingBuildSettingsAsset {#constructor-2}
+> **PathfindingBuildSettingsAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [PathfindingBuildSettingsAsset](/vext/ref/fb/pathfindingbuildsettingsasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [PathfindingBuildSettingsAsset](/vext/ref/fb/pathfindingbuildsettingsasset). |
+
+### PathfindingBuildSettingsAsset {#constructor-3}
+> **PathfindingBuildSettingsAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PathfindingBuildSettingsAsset](/vext/ref/fb/pathfindingbuildsettingsasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PathfindingBuildSettingsAsset](/vext/ref/fb/pathfindingbuildsettingsasset). |
+
+## Properties
+### {{% prop-heading "entityRadius" %}}
+> **float**
+
+### {{% prop-heading "entityHeight" %}}
+> **float**
+
+### {{% prop-heading "maxWalkableSlope" %}}
+> **float**
+
+### {{% prop-heading "maxStep" %}}
+> **float**
+
+### {{% prop-heading "minIslandSurfaceArea" %}}
+> **float**
+
+### {{% prop-heading "voxSize" %}}
+> **float**
+
+### {{% prop-heading "gridSideLength" %}}
+> **float**
+
+### {{% prop-heading "additionalInwardsSmoothingDist" %}}
+> **float**
+
+### {{% prop-heading "terrainSamplingStep" %}}
+> **int**
+
+### {{% prop-heading "tesselateForPathingAccuracy" %}}
+> **bool**
+
+### {{% prop-heading "useEnhancedTerrainTracking" %}}
+> **bool**
+
+### {{% prop-heading "optimizeForAxisAligned" %}}
+> **bool**
+
+### {{% prop-heading "leaveSmallIslandsTouchingPortals" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PathfindingBuildSettingsAsset](/vext/ref/fb/pathfindingbuildsettingsasset) type.
+

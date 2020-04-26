@@ -1,42 +1,61 @@
 ---
 title: TextureSliceUnlockPartData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[TextureSliceUnlockPartData](#constructor-0)**() |
+| **[TextureSliceUnlockPartData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[TextureSliceUnlockPartData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "sliceIndex" >}} | int |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "TextureSliceUnlockPartData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### TextureSliceUnlockPartData {#constructor-0}
+> **TextureSliceUnlockPartData**()
 
-| Constructor                                                                           | Description                                                                                                                                 |
-| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| TextureSliceUnlockPartData()                                                          | Create a new instance of this container type.                                                                                               |
-| TextureSliceUnlockPartData(TextureSliceUnlockPartData other)                          | Create a reference copy of an instance of the same type.                                                                                    |
-| TextureSliceUnlockPartData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TextureSliceUnlockPartData](/vext/ref/fb/texturesliceunlockpartdata/). |
+Creates a new [TextureSliceUnlockPartData](/vext/ref/fb/texturesliceunlockpartdata) frostbite instance.
 
-## Properties
+### TextureSliceUnlockPartData {#constructor-1}
+> **TextureSliceUnlockPartData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name       | Type   | Description |
-| ---------- | ------ | ----------- |
-| sliceIndex | number |             |
-
-## Methods
-
-| Type                                                     | Name            | Parameters                                     |
-| -------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [TextureSliceUnlockPartData](/vext/ref/fb/texturesliceunlockpartdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [TextureSliceUnlockPartData](/vext/ref/fb/texturesliceunlockpartdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [TextureSliceUnlockPartData](/vext/ref/fb/texturesliceunlockpartdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### TextureSliceUnlockPartData {#constructor-2}
+> **TextureSliceUnlockPartData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TextureSliceUnlockPartData](/vext/ref/fb/texturesliceunlockpartdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [TextureSliceUnlockPartData](/vext/ref/fb/texturesliceunlockpartdata). |
+
+## Properties
+### {{% prop-heading "sliceIndex" %}}
+> **int**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [TextureSliceUnlockPartData](/vext/ref/fb/texturesliceunlockpartdata) type.
+

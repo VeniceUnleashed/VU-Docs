@@ -1,23 +1,20 @@
 ---
 title: WeaponSlot
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **WeaponSlot_0** | Value: **0** |
+| **WeaponSlot_1** | Value: **1** |
+| **WeaponSlot_2** | Value: **2** |
+| **WeaponSlot_3** | Value: **3** |
+| **WeaponSlot_4** | Value: **4** |
+| **WeaponSlot_5** | Value: **5** |
+| **WeaponSlot_6** | Value: **6** |
+| **WeaponSlot_7** | Value: **7** |
+| **WeaponSlot_8** | Value: **8** |
+| **WeaponSlot_9** | Value: **9** |
+| **WeaponSlot_NumSlots** | Value: **10** |
+| **WeaponSlot_NotDefined** | Value: **11** |
 
-| Name                   | Value | Description |
-| ---------------------- | ----- | ----------- |
-| WeaponSlot\_0          | 0     |             |
-| WeaponSlot\_1          | 1     |             |
-| WeaponSlot\_2          | 2     |             |
-| WeaponSlot\_3          | 3     |             |
-| WeaponSlot\_4          | 4     |             |
-| WeaponSlot\_5          | 5     |             |
-| WeaponSlot\_6          | 6     |             |
-| WeaponSlot\_7          | 7     |             |
-| WeaponSlot\_8          | 8     |             |
-| WeaponSlot\_9          | 9     |             |
-| WeaponSlot\_NumSlots   | 10    |             |
-| WeaponSlot\_NotDefined | 11    |             |

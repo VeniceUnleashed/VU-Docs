@@ -1,33 +1,61 @@
 ---
 title: AnimationConfigurationData
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AnimationConfigurationData](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "shootModuleData" >}} | [AnimationConfigurationShootModuleData](/vext/ref/fb/animationconfigurationshootmoduledata) |
+| {{< prop "weaponOffsetModuleData" >}} | [WeaponOffsetData](/vext/ref/fb/weaponoffsetdata) \| nil |
+| {{< prop "weaponSpeedModuleData" >}} | [WeaponSpeedData](/vext/ref/fb/weaponspeeddata) \| nil |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [AnimationConfigurationData](/vext/ref/fb/animationconfigurationdata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AnimationConfigurationData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AnimationConfigurationData {#constructor-0}
+> **AnimationConfigurationData**()
 
-| Constructor                                                  | Description                                              |
-| ------------------------------------------------------------ | -------------------------------------------------------- |
-| AnimationConfigurationData()                                 | Create a new instance of this structure type.            |
-| AnimationConfigurationData(AnimationConfigurationData other) | Create a reference copy of a structure of the same type. |
+Creates a new [AnimationConfigurationData](/vext/ref/fb/animationconfigurationdata) frostbite structure.
 
 ## Properties
+### {{% prop-heading "shootModuleData" %}}
+> **[AnimationConfigurationShootModuleData](/vext/ref/fb/animationconfigurationshootmoduledata)**
 
-| Name                   | Type                                                                           | Description |
-| ---------------------- | ------------------------------------------------------------------------------ | ----------- |
-| shootModuleData        | [AnimationConfigurationShootModuleData](/vext/ref/fb/animationconfigurationshootmoduledata/) |             |
-| weaponOffsetModuleData | [WeaponOffsetData](/vext/ref/fb/weaponoffsetdata/)                                           |             |
-| weaponSpeedModuleData  | [WeaponSpeedData](/vext/ref/fb/weaponspeeddata/)                                             |             |
+### {{% prop-heading "weaponOffsetModuleData" %}}
+> **[WeaponOffsetData](/vext/ref/fb/weaponoffsetdata)** | **nil**
+
+### {{% prop-heading "weaponSpeedModuleData" %}}
+> **[WeaponSpeedData](/vext/ref/fb/weaponspeeddata)** | **nil**
 
 ## Methods
-
-| Type                                                     | Name            | Parameters |
-| -------------------------------------------------------- | --------------- | ---------- |
-| [AnimationConfigurationData](/vext/ref/fb/animationconfigurationdata/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [AnimationConfigurationData](/vext/ref/fb/animationconfigurationdata)
 
-> [AnimationConfigurationData](/vext/ref/fb/animationconfigurationdata/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[AnimationConfigurationData](/vext/ref/fb/animationconfigurationdata)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AnimationConfigurationData](/vext/ref/fb/animationconfigurationdata) type.
+

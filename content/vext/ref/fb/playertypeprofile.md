@@ -1,51 +1,104 @@
 ---
 title: PlayerTypeProfile
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PlayerTypeProfile](#constructor-0)**() |
+| **[PlayerTypeProfile](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PlayerTypeProfile](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[PlayerTypeProfile](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "values" >}} | [PersistenceData](/vext/ref/fb/persistencedata) \| nil |
+| {{< prop "awards" >}} | [AwardDataTree](/vext/ref/fb/awarddatatree) \| nil |
+| {{< prop "rankParams" >}} | [RankParamsAsset](/vext/ref/fb/rankparamsasset) \| nil |
+| {{< prop "scoring" >}} | [ScoringData](/vext/ref/fb/scoringdata) \| nil |
+| {{< prop "dogTags" >}} | [DogTagsAsset](/vext/ref/fb/dogtagsasset) \| nil |
+| {{< prop "eloParams" >}} | [EloParameters](/vext/ref/fb/eloparameters) |
+| {{< prop "staticUnlocks" >}} | [StaticUnlockList](/vext/ref/fb/staticunlocklist) \| nil |
+| {{< prop "spamSettings" >}} | [StatSpamSettings](/vext/ref/fb/statspamsettings) \| nil |
+| {{< prop "orderedUnlockNames" >}} | string[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PlayerTypeProfile" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PlayerTypeProfile {#constructor-0}
+> **PlayerTypeProfile**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| PlayerTypeProfile()                                                          | Create a new instance of this container type.                                                                             |
-| PlayerTypeProfile(PlayerTypeProfile other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| PlayerTypeProfile([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [PlayerTypeProfile](/vext/ref/fb/playertypeprofile/).                                      |
-| PlayerTypeProfile([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PlayerTypeProfile](/vext/ref/fb/playertypeprofile/). |
+Creates a new [PlayerTypeProfile](/vext/ref/fb/playertypeprofile) frostbite instance.
 
-## Properties
+### PlayerTypeProfile {#constructor-1}
+> **PlayerTypeProfile**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name               | Type                                 | Description |
-| ------------------ | ------------------------------------ | ----------- |
-| values             | [PersistenceData](/vext/ref/fb/persistencedata/)   |             |
-| awards             | [AwardDataTree](/vext/ref/fb/awarddatatree/)       |             |
-| rankParams         | [RankParamsAsset](/vext/ref/fb/rankparamsasset/)   |             |
-| scoring            | [ScoringData](/vext/ref/fb/scoringdata/)           |             |
-| dogTags            | [DogTagsAsset](/vext/ref/fb/dogtagsasset/)         |             |
-| eloParams          | [EloParameters](/vext/ref/fb/eloparameters/)       |             |
-| staticUnlocks      | [StaticUnlockList](/vext/ref/fb/staticunlocklist/) |             |
-| spamSettings       | [StatSpamSettings](/vext/ref/fb/statspamsettings/) |             |
-| orderedUnlockNames | string\[\]                           |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [PlayerTypeProfile](/vext/ref/fb/playertypeprofile/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PlayerTypeProfile](/vext/ref/fb/playertypeprofile/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PlayerTypeProfile](/vext/ref/fb/playertypeprofile) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PlayerTypeProfile {#constructor-2}
+> **PlayerTypeProfile**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [PlayerTypeProfile](/vext/ref/fb/playertypeprofile). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [PlayerTypeProfile](/vext/ref/fb/playertypeprofile). |
+
+### PlayerTypeProfile {#constructor-3}
+> **PlayerTypeProfile**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PlayerTypeProfile](/vext/ref/fb/playertypeprofile). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PlayerTypeProfile](/vext/ref/fb/playertypeprofile). |
+
+## Properties
+### {{% prop-heading "values" %}}
+> **[PersistenceData](/vext/ref/fb/persistencedata)** | **nil**
+
+### {{% prop-heading "awards" %}}
+> **[AwardDataTree](/vext/ref/fb/awarddatatree)** | **nil**
+
+### {{% prop-heading "rankParams" %}}
+> **[RankParamsAsset](/vext/ref/fb/rankparamsasset)** | **nil**
+
+### {{% prop-heading "scoring" %}}
+> **[ScoringData](/vext/ref/fb/scoringdata)** | **nil**
+
+### {{% prop-heading "dogTags" %}}
+> **[DogTagsAsset](/vext/ref/fb/dogtagsasset)** | **nil**
+
+### {{% prop-heading "eloParams" %}}
+> **[EloParameters](/vext/ref/fb/eloparameters)**
+
+### {{% prop-heading "staticUnlocks" %}}
+> **[StaticUnlockList](/vext/ref/fb/staticunlocklist)** | **nil**
+
+### {{% prop-heading "spamSettings" %}}
+> **[StatSpamSettings](/vext/ref/fb/statspamsettings)** | **nil**
+
+### {{% prop-heading "orderedUnlockNames" %}}
+> **string**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PlayerTypeProfile](/vext/ref/fb/playertypeprofile) type.
+

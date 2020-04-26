@@ -1,46 +1,105 @@
 ---
 title: GroundHeightEntityData
 ---
-### Base Classes
 
-[SpatialEntityData](/vext/ref/fb/spatialentitydata/)
+Inherits from 
+[SpatialEntityData](/vext/ref/fb/spatialentitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[GroundHeightEntityData](#constructor-0)**() |
+| **[GroundHeightEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[GroundHeightEntityData](#constructor-2)**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata)) |
+| **[GroundHeightEntityData](#constructor-3)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[GroundHeightEntityData](#constructor-4)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[GroundHeightEntityData](#constructor-5)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[GroundHeightEntityData](#constructor-6)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "data" >}} | [GroundHeightData](/vext/ref/fb/groundheightdata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "GroundHeightEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### GroundHeightEntityData {#constructor-0}
+> **GroundHeightEntityData**()
 
-| Constructor                                                                       | Description                                                                                                                         |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| GroundHeightEntityData()                                                          | Create a new instance of this container type.                                                                                       |
-| GroundHeightEntityData(GroundHeightEntityData other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| GroundHeightEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [GroundHeightEntityData](/vext/ref/fb/groundheightentitydata/).              |
-| GroundHeightEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [GroundHeightEntityData](/vext/ref/fb/groundheightentitydata/).                            |
-| GroundHeightEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [GroundHeightEntityData](/vext/ref/fb/groundheightentitydata/).                    |
-| GroundHeightEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [GroundHeightEntityData](/vext/ref/fb/groundheightentitydata/).              |
-| GroundHeightEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GroundHeightEntityData](/vext/ref/fb/groundheightentitydata/). |
+Creates a new [GroundHeightEntityData](/vext/ref/fb/groundheightentitydata) frostbite instance.
 
-## Properties
+### GroundHeightEntityData {#constructor-1}
+> **GroundHeightEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name | Type                                 | Description |
-| ---- | ------------------------------------ | ----------- |
-| data | [GroundHeightData](/vext/ref/fb/groundheightdata/) |             |
-
-## Methods
-
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [GroundHeightEntityData](/vext/ref/fb/groundheightentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [GroundHeightEntityData](/vext/ref/fb/groundheightentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [GroundHeightEntityData](/vext/ref/fb/groundheightentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### GroundHeightEntityData {#constructor-2}
+> **GroundHeightEntityData**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata))
+
+Casts an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata) to [GroundHeightEntityData](/vext/ref/fb/groundheightentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SpatialEntityData](/vext/ref/fb/spatialentitydata) | The instance to cast to [GroundHeightEntityData](/vext/ref/fb/groundheightentitydata). |
+
+### GroundHeightEntityData {#constructor-3}
+> **GroundHeightEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [GroundHeightEntityData](/vext/ref/fb/groundheightentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [GroundHeightEntityData](/vext/ref/fb/groundheightentitydata). |
+
+### GroundHeightEntityData {#constructor-4}
+> **GroundHeightEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [GroundHeightEntityData](/vext/ref/fb/groundheightentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [GroundHeightEntityData](/vext/ref/fb/groundheightentitydata). |
+
+### GroundHeightEntityData {#constructor-5}
+> **GroundHeightEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [GroundHeightEntityData](/vext/ref/fb/groundheightentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [GroundHeightEntityData](/vext/ref/fb/groundheightentitydata). |
+
+### GroundHeightEntityData {#constructor-6}
+> **GroundHeightEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GroundHeightEntityData](/vext/ref/fb/groundheightentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [GroundHeightEntityData](/vext/ref/fb/groundheightentitydata). |
+
+## Properties
+### {{% prop-heading "data" %}}
+> **[GroundHeightData](/vext/ref/fb/groundheightdata)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [GroundHeightEntityData](/vext/ref/fb/groundheightentitydata) type.
+

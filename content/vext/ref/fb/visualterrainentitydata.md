@@ -1,46 +1,98 @@
 ---
 title: VisualTerrainEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VisualTerrainEntityData](#constructor-0)**() |
+| **[VisualTerrainEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VisualTerrainEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[VisualTerrainEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[VisualTerrainEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[VisualTerrainEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "terrain" >}} | [TerrainData](/vext/ref/fb/terraindata) \| nil |
+| {{< prop "settings" >}} | [VisualTerrainSettings](/vext/ref/fb/visualterrainsettings) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VisualTerrainEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VisualTerrainEntityData {#constructor-0}
+> **VisualTerrainEntityData**()
 
-| Constructor                                                                        | Description                                                                                                                           |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| VisualTerrainEntityData()                                                          | Create a new instance of this container type.                                                                                         |
-| VisualTerrainEntityData(VisualTerrainEntityData other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| VisualTerrainEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [VisualTerrainEntityData](/vext/ref/fb/visualterrainentitydata/).                            |
-| VisualTerrainEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [VisualTerrainEntityData](/vext/ref/fb/visualterrainentitydata/).                    |
-| VisualTerrainEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [VisualTerrainEntityData](/vext/ref/fb/visualterrainentitydata/).              |
-| VisualTerrainEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VisualTerrainEntityData](/vext/ref/fb/visualterrainentitydata/). |
+Creates a new [VisualTerrainEntityData](/vext/ref/fb/visualterrainentitydata) frostbite instance.
 
-## Properties
+### VisualTerrainEntityData {#constructor-1}
+> **VisualTerrainEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name     | Type                                           | Description |
-| -------- | ---------------------------------------------- | ----------- |
-| terrain  | [TerrainData](/vext/ref/fb/terraindata/)                     |             |
-| settings | [VisualTerrainSettings](/vext/ref/fb/visualterrainsettings/) |             |
-
-## Methods
-
-| Type                                               | Name            | Parameters                                     |
-| -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [VisualTerrainEntityData](/vext/ref/fb/visualterrainentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VisualTerrainEntityData](/vext/ref/fb/visualterrainentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VisualTerrainEntityData](/vext/ref/fb/visualterrainentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VisualTerrainEntityData {#constructor-2}
+> **VisualTerrainEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [VisualTerrainEntityData](/vext/ref/fb/visualterrainentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [VisualTerrainEntityData](/vext/ref/fb/visualterrainentitydata). |
+
+### VisualTerrainEntityData {#constructor-3}
+> **VisualTerrainEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [VisualTerrainEntityData](/vext/ref/fb/visualterrainentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [VisualTerrainEntityData](/vext/ref/fb/visualterrainentitydata). |
+
+### VisualTerrainEntityData {#constructor-4}
+> **VisualTerrainEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [VisualTerrainEntityData](/vext/ref/fb/visualterrainentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [VisualTerrainEntityData](/vext/ref/fb/visualterrainentitydata). |
+
+### VisualTerrainEntityData {#constructor-5}
+> **VisualTerrainEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VisualTerrainEntityData](/vext/ref/fb/visualterrainentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VisualTerrainEntityData](/vext/ref/fb/visualterrainentitydata). |
+
+## Properties
+### {{% prop-heading "terrain" %}}
+> **[TerrainData](/vext/ref/fb/terraindata)** | **nil**
+
+### {{% prop-heading "settings" %}}
+> **[VisualTerrainSettings](/vext/ref/fb/visualterrainsettings)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VisualTerrainEntityData](/vext/ref/fb/visualterrainentitydata) type.
+

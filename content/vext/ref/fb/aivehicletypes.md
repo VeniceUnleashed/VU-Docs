@@ -1,45 +1,80 @@
 ---
 title: AIVehicleTypes
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AIVehicleTypes](#constructor-0)**() |
+| **[AIVehicleTypes](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[AIVehicleTypes](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[AIVehicleTypes](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "vehicleTypes" >}} | [AIVehicleBehaviourData](/vext/ref/fb/aivehiclebehaviourdata)[] |
+| {{< prop "goals" >}} | [BehaviourData](/vext/ref/fb/behaviourdata)[] |
+| {{< prop "intents" >}} | [BehaviourData](/vext/ref/fb/behaviourdata)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AIVehicleTypes" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AIVehicleTypes {#constructor-0}
+> **AIVehicleTypes**()
 
-| Constructor                                                               | Description                                                                                                         |
-| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| AIVehicleTypes()                                                          | Create a new instance of this container type.                                                                       |
-| AIVehicleTypes(AIVehicleTypes other)                                      | Create a reference copy of an instance of the same type.                                                            |
-| AIVehicleTypes([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [AIVehicleTypes](/vext/ref/fb/aivehicletypes/).                                      |
-| AIVehicleTypes([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AIVehicleTypes](/vext/ref/fb/aivehicletypes/). |
+Creates a new [AIVehicleTypes](/vext/ref/fb/aivehicletypes) frostbite instance.
 
-## Properties
+### AIVehicleTypes {#constructor-1}
+> **AIVehicleTypes**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name         | Type                                                 | Description |
-| ------------ | ---------------------------------------------------- | ----------- |
-| vehicleTypes | [AIVehicleBehaviourData](/vext/ref/fb/aivehiclebehaviourdata/)\[\] |             |
-| goals        | [BehaviourData](/vext/ref/fb/behaviourdata/)\[\]                   |             |
-| intents      | [BehaviourData](/vext/ref/fb/behaviourdata/)\[\]                   |             |
-
-## Methods
-
-| Type                             | Name            | Parameters                                     |
-| -------------------------------- | --------------- | ---------------------------------------------- |
-| [AIVehicleTypes](/vext/ref/fb/aivehicletypes/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [AIVehicleTypes](/vext/ref/fb/aivehicletypes/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [AIVehicleTypes](/vext/ref/fb/aivehicletypes) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### AIVehicleTypes {#constructor-2}
+> **AIVehicleTypes**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [AIVehicleTypes](/vext/ref/fb/aivehicletypes). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [AIVehicleTypes](/vext/ref/fb/aivehicletypes). |
+
+### AIVehicleTypes {#constructor-3}
+> **AIVehicleTypes**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AIVehicleTypes](/vext/ref/fb/aivehicletypes). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [AIVehicleTypes](/vext/ref/fb/aivehicletypes). |
+
+## Properties
+### {{% prop-heading "vehicleTypes" %}}
+> **[AIVehicleBehaviourData](/vext/ref/fb/aivehiclebehaviourdata)**[]
+
+### {{% prop-heading "goals" %}}
+> **[BehaviourData](/vext/ref/fb/behaviourdata)**[]
+
+### {{% prop-heading "intents" %}}
+> **[BehaviourData](/vext/ref/fb/behaviourdata)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AIVehicleTypes](/vext/ref/fb/aivehicletypes) type.
+

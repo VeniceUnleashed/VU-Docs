@@ -1,15 +1,12 @@
 ---
 title: UIMouseEventType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **UIMouseEventType_MouseMove** | Value: **0** |
+| **UIMouseEventType_MouseWheel** | Value: **1** |
+| **UIMouseEventType_ButtonDown** | Value: **2** |
+| **UIMouseEventType_ButtonUp** | Value: **3** |
 
-| Name                         | Value | Description |
-| ---------------------------- | ----- | ----------- |
-| UIMouseEventType\_MouseMove  | 0     |             |
-| UIMouseEventType\_MouseWheel | 1     |             |
-| UIMouseEventType\_ButtonDown | 2     |             |
-| UIMouseEventType\_ButtonUp   | 3     |             |

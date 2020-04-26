@@ -1,15 +1,12 @@
 ---
 title: RigidBodyCollisionLayer
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **RigidBodyCollisionLayer_Invalid** | Value: **0** |
+| **RigidBodyCollisionLayer_VehicleLayer** | Value: **1** |
+| **RigidBodyCollisionLayer_VehicleAndCharacterCollisionLayer** | Value: **2** |
+| **RigidBodyCollisionLayer_Size** | Value: **3** |
 
-| Name                                                       | Value | Description |
-| ---------------------------------------------------------- | ----- | ----------- |
-| RigidBodyCollisionLayer\_Invalid                           | 0     |             |
-| RigidBodyCollisionLayer\_VehicleLayer                      | 1     |             |
-| RigidBodyCollisionLayer\_VehicleAndCharacterCollisionLayer | 2     |             |
-| RigidBodyCollisionLayer\_Size                              | 3     |             |

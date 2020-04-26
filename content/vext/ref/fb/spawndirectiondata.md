@@ -1,45 +1,87 @@
 ---
 title: SpawnDirectionData
 ---
-### Base Classes
 
-[ProcessorData](/vext/ref/fb/processordata/)
+Inherits from 
+[ProcessorData](/vext/ref/fb/processordata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SpawnDirectionData](#constructor-0)**() |
+| **[SpawnDirectionData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SpawnDirectionData](#constructor-2)**(other: [ProcessorData](/vext/ref/fb/processordata)) |
+| **[SpawnDirectionData](#constructor-3)**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata)) |
+| **[SpawnDirectionData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "directionFromEmitterOrigin" >}} | float |
+| {{< prop "inheritSpeedAndDirectionFromEmitter" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SpawnDirectionData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SpawnDirectionData {#constructor-0}
+> **SpawnDirectionData**()
 
-| Constructor                                                                   | Description                                                                                                                 |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| SpawnDirectionData()                                                          | Create a new instance of this container type.                                                                               |
-| SpawnDirectionData(SpawnDirectionData other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| SpawnDirectionData([ProcessorData](/vext/ref/fb/processordata/) other)                      | Upcast an instance of type [ProcessorData](/vext/ref/fb/processordata/) to [SpawnDirectionData](/vext/ref/fb/spawndirectiondata/).                      |
-| SpawnDirectionData([EmitterComponentData](/vext/ref/fb/emittercomponentdata/) other)        | Upcast an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata/) to [SpawnDirectionData](/vext/ref/fb/spawndirectiondata/).        |
-| SpawnDirectionData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SpawnDirectionData](/vext/ref/fb/spawndirectiondata/). |
+Creates a new [SpawnDirectionData](/vext/ref/fb/spawndirectiondata) frostbite instance.
 
-## Properties
+### SpawnDirectionData {#constructor-1}
+> **SpawnDirectionData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                                | Type   | Description |
-| ----------------------------------- | ------ | ----------- |
-| directionFromEmitterOrigin          | number |             |
-| inheritSpeedAndDirectionFromEmitter | bool   |             |
-
-## Methods
-
-| Type                                     | Name            | Parameters                                     |
-| ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [SpawnDirectionData](/vext/ref/fb/spawndirectiondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SpawnDirectionData](/vext/ref/fb/spawndirectiondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SpawnDirectionData](/vext/ref/fb/spawndirectiondata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SpawnDirectionData {#constructor-2}
+> **SpawnDirectionData**(other: [ProcessorData](/vext/ref/fb/processordata))
+
+Casts an instance of type [ProcessorData](/vext/ref/fb/processordata) to [SpawnDirectionData](/vext/ref/fb/spawndirectiondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ProcessorData](/vext/ref/fb/processordata) | The instance to cast to [SpawnDirectionData](/vext/ref/fb/spawndirectiondata). |
+
+### SpawnDirectionData {#constructor-3}
+> **SpawnDirectionData**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata))
+
+Casts an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata) to [SpawnDirectionData](/vext/ref/fb/spawndirectiondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EmitterComponentData](/vext/ref/fb/emittercomponentdata) | The instance to cast to [SpawnDirectionData](/vext/ref/fb/spawndirectiondata). |
+
+### SpawnDirectionData {#constructor-4}
+> **SpawnDirectionData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SpawnDirectionData](/vext/ref/fb/spawndirectiondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SpawnDirectionData](/vext/ref/fb/spawndirectiondata). |
+
+## Properties
+### {{% prop-heading "directionFromEmitterOrigin" %}}
+> **float**
+
+### {{% prop-heading "inheritSpeedAndDirectionFromEmitter" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SpawnDirectionData](/vext/ref/fb/spawndirectiondata) type.
+

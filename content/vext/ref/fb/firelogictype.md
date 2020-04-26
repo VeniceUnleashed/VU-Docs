@@ -1,18 +1,15 @@
 ---
 title: FireLogicType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **fltSingleFire** | Value: **0** |
+| **fltSingleFireWithBoltAction** | Value: **1** |
+| **fltAutomaticFire** | Value: **2** |
+| **fltBurstFire** | Value: **3** |
+| **fltHoldAndRelease** | Value: **4** |
+| **fltDetonatedFiring** | Value: **5** |
+| **fltCount** | Value: **6** |
 
-| Name                        | Value | Description |
-| --------------------------- | ----- | ----------- |
-| fltSingleFire               | 0     |             |
-| fltSingleFireWithBoltAction | 1     |             |
-| fltAutomaticFire            | 2     |             |
-| fltBurstFire                | 3     |             |
-| fltHoldAndRelease           | 4     |             |
-| fltDetonatedFiring          | 5     |             |
-| fltCount                    | 6     |             |

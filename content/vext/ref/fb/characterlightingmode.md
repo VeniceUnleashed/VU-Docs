@@ -1,13 +1,10 @@
 ---
 title: CharacterLightingMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **CharacterLightingMode_Add** | Value: **0** |
+| **CharacterLightingMode_Blend** | Value: **1** |
 
-| Name                         | Value | Description |
-| ---------------------------- | ----- | ----------- |
-| CharacterLightingMode\_Add   | 0     |             |
-| CharacterLightingMode\_Blend | 1     |             |

@@ -1,16 +1,13 @@
 ---
 title: StabilizerProperty
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **SPPitchAngle** | Value: **0** |
+| **SPYawAngle** | Value: **1** |
+| **SPRollAngle** | Value: **2** |
+| **SPVerticalPosition** | Value: **3** |
+| **SPVerticalVelocity** | Value: **4** |
 
-| Name               | Value | Description |
-| ------------------ | ----- | ----------- |
-| SPPitchAngle       | 0     |             |
-| SPYawAngle         | 1     |             |
-| SPRollAngle        | 2     |             |
-| SPVerticalPosition | 3     |             |
-| SPVerticalVelocity | 4     |             |

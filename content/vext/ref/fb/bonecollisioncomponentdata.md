@@ -1,45 +1,94 @@
 ---
 title: BoneCollisionComponentData
 ---
-### Base Classes
 
-[ComponentData](/vext/ref/fb/componentdata/)
+Inherits from 
+[ComponentData](/vext/ref/fb/componentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[BoneCollisionComponentData](#constructor-0)**() |
+| **[BoneCollisionComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[BoneCollisionComponentData](#constructor-2)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[BoneCollisionComponentData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[BoneCollisionComponentData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[BoneCollisionComponentData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "skeletonCollisionData" >}} | [SkeletonCollisionData](/vext/ref/fb/skeletoncollisiondata) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "BoneCollisionComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### BoneCollisionComponentData {#constructor-0}
+> **BoneCollisionComponentData**()
 
-| Constructor                                                                           | Description                                                                                                                                 |
-| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| BoneCollisionComponentData()                                                          | Create a new instance of this container type.                                                                                               |
-| BoneCollisionComponentData(BoneCollisionComponentData other)                          | Create a reference copy of an instance of the same type.                                                                                    |
-| BoneCollisionComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [BoneCollisionComponentData](/vext/ref/fb/bonecollisioncomponentdata/).                      |
-| BoneCollisionComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [BoneCollisionComponentData](/vext/ref/fb/bonecollisioncomponentdata/).                    |
-| BoneCollisionComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [BoneCollisionComponentData](/vext/ref/fb/bonecollisioncomponentdata/).              |
-| BoneCollisionComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BoneCollisionComponentData](/vext/ref/fb/bonecollisioncomponentdata/). |
+Creates a new [BoneCollisionComponentData](/vext/ref/fb/bonecollisioncomponentdata) frostbite instance.
 
-## Properties
+### BoneCollisionComponentData {#constructor-1}
+> **BoneCollisionComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                  | Type                                           | Description |
-| --------------------- | ---------------------------------------------- | ----------- |
-| skeletonCollisionData | [SkeletonCollisionData](/vext/ref/fb/skeletoncollisiondata/) |             |
-
-## Methods
-
-| Type                                                     | Name            | Parameters                                     |
-| -------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [BoneCollisionComponentData](/vext/ref/fb/bonecollisioncomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [BoneCollisionComponentData](/vext/ref/fb/bonecollisioncomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [BoneCollisionComponentData](/vext/ref/fb/bonecollisioncomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### BoneCollisionComponentData {#constructor-2}
+> **BoneCollisionComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [BoneCollisionComponentData](/vext/ref/fb/bonecollisioncomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [BoneCollisionComponentData](/vext/ref/fb/bonecollisioncomponentdata). |
+
+### BoneCollisionComponentData {#constructor-3}
+> **BoneCollisionComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [BoneCollisionComponentData](/vext/ref/fb/bonecollisioncomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [BoneCollisionComponentData](/vext/ref/fb/bonecollisioncomponentdata). |
+
+### BoneCollisionComponentData {#constructor-4}
+> **BoneCollisionComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [BoneCollisionComponentData](/vext/ref/fb/bonecollisioncomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [BoneCollisionComponentData](/vext/ref/fb/bonecollisioncomponentdata). |
+
+### BoneCollisionComponentData {#constructor-5}
+> **BoneCollisionComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BoneCollisionComponentData](/vext/ref/fb/bonecollisioncomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [BoneCollisionComponentData](/vext/ref/fb/bonecollisioncomponentdata). |
+
+## Properties
+### {{% prop-heading "skeletonCollisionData" %}}
+> **[SkeletonCollisionData](/vext/ref/fb/skeletoncollisiondata)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [BoneCollisionComponentData](/vext/ref/fb/bonecollisioncomponentdata) type.
+

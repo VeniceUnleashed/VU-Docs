@@ -1,20 +1,17 @@
 ---
 title: GameplayBones
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **GameplayBones_UndefinedBone** | Value: **0** |
+| **GameplayBones_HeadBone** | Value: **1** |
+| **GameplayBones_AimBone** | Value: **2** |
+| **GameplayBones_RootBone** | Value: **3** |
+| **GameplayBones_WeaponBone** | Value: **4** |
+| **GameplayBones_ConnectBone** | Value: **5** |
+| **GameplayBones_RootMeshBone** | Value: **6** |
+| **GameplayBones_MagazineBone** | Value: **7** |
+| **GameplayBones_Count** | Value: **8** |
 
-| Name                         | Value | Description |
-| ---------------------------- | ----- | ----------- |
-| GameplayBones\_UndefinedBone | 0     |             |
-| GameplayBones\_HeadBone      | 1     |             |
-| GameplayBones\_AimBone       | 2     |             |
-| GameplayBones\_RootBone      | 3     |             |
-| GameplayBones\_WeaponBone    | 4     |             |
-| GameplayBones\_ConnectBone   | 5     |             |
-| GameplayBones\_RootMeshBone  | 6     |             |
-| GameplayBones\_MagazineBone  | 7     |             |
-| GameplayBones\_Count         | 8     |             |

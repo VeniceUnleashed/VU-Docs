@@ -1,15 +1,12 @@
 ---
 title: WarnTarget
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **wtWarnSoldierAndVehicle** | Value: **0** |
+| **wtWarnSoldier** | Value: **1** |
+| **wtWarnVehicle** | Value: **2** |
+| **wtWarnNone** | Value: **3** |
 
-| Name                    | Value | Description |
-| ----------------------- | ----- | ----------- |
-| wtWarnSoldierAndVehicle | 0     |             |
-| wtWarnSoldier           | 1     |             |
-| wtWarnVehicle           | 2     |             |
-| wtWarnNone              | 3     |             |

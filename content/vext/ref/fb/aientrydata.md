@@ -1,52 +1,115 @@
 ---
 title: AIEntryData
 ---
-### Base Classes
 
-[GameAIEntryData](/vext/ref/fb/gameaientrydata/)
+Inherits from 
+[GameAIEntryData](/vext/ref/fb/gameaientrydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AIEntryData](#constructor-0)**() |
+| **[AIEntryData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[AIEntryData](#constructor-2)**(other: [GameAIEntryData](/vext/ref/fb/gameaientrydata)) |
+| **[AIEntryData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[AIEntryData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "equipmentType" >}} | [AIVehicleBehaviourData](/vext/ref/fb/aivehiclebehaviourdata) \| nil |
+| {{< prop "armament" >}} | [ArmamentData](/vext/ref/fb/armamentdata) \| nil |
+| {{< prop "mobility" >}} | [MobilityData](/vext/ref/fb/mobilitydata) \| nil |
+| {{< prop "strengthType" >}} | [StrengthType](/vext/ref/fb/strengthtype) |
+| {{< prop "reuseTime" >}} | float |
+| {{< prop "forbidden" >}} | bool |
+| {{< prop "hasExposedSoldier" >}} | bool |
+| {{< prop "interludeOnly" >}} | bool |
+| {{< prop "invalidForAI" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AIEntryData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AIEntryData {#constructor-0}
+> **AIEntryData**()
 
-| Constructor                                                            | Description                                                                                                   |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| AIEntryData()                                                          | Create a new instance of this container type.                                                                 |
-| AIEntryData(AIEntryData other)                                         | Create a reference copy of an instance of the same type.                                                      |
-| AIEntryData([GameAIEntryData](/vext/ref/fb/gameaientrydata/) other)                  | Upcast an instance of type [GameAIEntryData](/vext/ref/fb/gameaientrydata/) to [AIEntryData](/vext/ref/fb/aientrydata/).                  |
-| AIEntryData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [AIEntryData](/vext/ref/fb/aientrydata/).                                      |
-| AIEntryData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AIEntryData](/vext/ref/fb/aientrydata/). |
+Creates a new [AIEntryData](/vext/ref/fb/aientrydata) frostbite instance.
 
-## Properties
+### AIEntryData {#constructor-1}
+> **AIEntryData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name              | Type                                             | Description |
-| ----------------- | ------------------------------------------------ | ----------- |
-| equipmentType     | [AIVehicleBehaviourData](/vext/ref/fb/aivehiclebehaviourdata/) |             |
-| armament          | [ArmamentData](/vext/ref/fb/armamentdata/)                     |             |
-| mobility          | [MobilityData](/vext/ref/fb/mobilitydata/)                     |             |
-| strengthType      | [StrengthType](/vext/ref/fb/strengthtype/)                     |             |
-| reuseTime         | number                                           |             |
-| forbidden         | bool                                             |             |
-| hasExposedSoldier | bool                                             |             |
-| interludeOnly     | bool                                             |             |
-| invalidForAI      | bool                                             |             |
-
-## Methods
-
-| Type                       | Name            | Parameters                                     |
-| -------------------------- | --------------- | ---------------------------------------------- |
-| [AIEntryData](/vext/ref/fb/aientrydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [AIEntryData](/vext/ref/fb/aientrydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [AIEntryData](/vext/ref/fb/aientrydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### AIEntryData {#constructor-2}
+> **AIEntryData**(other: [GameAIEntryData](/vext/ref/fb/gameaientrydata))
+
+Casts an instance of type [GameAIEntryData](/vext/ref/fb/gameaientrydata) to [AIEntryData](/vext/ref/fb/aientrydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameAIEntryData](/vext/ref/fb/gameaientrydata) | The instance to cast to [AIEntryData](/vext/ref/fb/aientrydata). |
+
+### AIEntryData {#constructor-3}
+> **AIEntryData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [AIEntryData](/vext/ref/fb/aientrydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [AIEntryData](/vext/ref/fb/aientrydata). |
+
+### AIEntryData {#constructor-4}
+> **AIEntryData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AIEntryData](/vext/ref/fb/aientrydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [AIEntryData](/vext/ref/fb/aientrydata). |
+
+## Properties
+### {{% prop-heading "equipmentType" %}}
+> **[AIVehicleBehaviourData](/vext/ref/fb/aivehiclebehaviourdata)** | **nil**
+
+### {{% prop-heading "armament" %}}
+> **[ArmamentData](/vext/ref/fb/armamentdata)** | **nil**
+
+### {{% prop-heading "mobility" %}}
+> **[MobilityData](/vext/ref/fb/mobilitydata)** | **nil**
+
+### {{% prop-heading "strengthType" %}}
+> **[StrengthType](/vext/ref/fb/strengthtype)**
+
+### {{% prop-heading "reuseTime" %}}
+> **float**
+
+### {{% prop-heading "forbidden" %}}
+> **bool**
+
+### {{% prop-heading "hasExposedSoldier" %}}
+> **bool**
+
+### {{% prop-heading "interludeOnly" %}}
+> **bool**
+
+### {{% prop-heading "invalidForAI" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AIEntryData](/vext/ref/fb/aientrydata) type.
+

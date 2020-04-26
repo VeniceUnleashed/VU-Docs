@@ -1,47 +1,102 @@
 ---
 title: EnlightenEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[EnlightenEntityData](#constructor-0)**() |
+| **[EnlightenEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[EnlightenEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[EnlightenEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[EnlightenEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[EnlightenEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "priority" >}} | int |
+| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
+| {{< prop "enable" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "EnlightenEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### EnlightenEntityData {#constructor-0}
+> **EnlightenEntityData**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| EnlightenEntityData()                                                          | Create a new instance of this container type.                                                                                 |
-| EnlightenEntityData(EnlightenEntityData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| EnlightenEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [EnlightenEntityData](/vext/ref/fb/enlightenentitydata/).                            |
-| EnlightenEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [EnlightenEntityData](/vext/ref/fb/enlightenentitydata/).                    |
-| EnlightenEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [EnlightenEntityData](/vext/ref/fb/enlightenentitydata/).              |
-| EnlightenEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EnlightenEntityData](/vext/ref/fb/enlightenentitydata/). |
+Creates a new [EnlightenEntityData](/vext/ref/fb/enlightenentitydata) frostbite instance.
 
-## Properties
+### EnlightenEntityData {#constructor-1}
+> **EnlightenEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name     | Type           | Description |
-| -------- | -------------- | ----------- |
-| priority | number         |             |
-| realm    | [Realm](/vext/ref/fb/realm/) |             |
-| enable   | bool           |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [EnlightenEntityData](/vext/ref/fb/enlightenentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [EnlightenEntityData](/vext/ref/fb/enlightenentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [EnlightenEntityData](/vext/ref/fb/enlightenentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### EnlightenEntityData {#constructor-2}
+> **EnlightenEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [EnlightenEntityData](/vext/ref/fb/enlightenentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [EnlightenEntityData](/vext/ref/fb/enlightenentitydata). |
+
+### EnlightenEntityData {#constructor-3}
+> **EnlightenEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [EnlightenEntityData](/vext/ref/fb/enlightenentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [EnlightenEntityData](/vext/ref/fb/enlightenentitydata). |
+
+### EnlightenEntityData {#constructor-4}
+> **EnlightenEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [EnlightenEntityData](/vext/ref/fb/enlightenentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [EnlightenEntityData](/vext/ref/fb/enlightenentitydata). |
+
+### EnlightenEntityData {#constructor-5}
+> **EnlightenEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EnlightenEntityData](/vext/ref/fb/enlightenentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [EnlightenEntityData](/vext/ref/fb/enlightenentitydata). |
+
+## Properties
+### {{% prop-heading "priority" %}}
+> **int**
+
+### {{% prop-heading "realm" %}}
+> **[Realm](/vext/ref/fb/realm)**
+
+### {{% prop-heading "enable" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [EnlightenEntityData](/vext/ref/fb/enlightenentitydata) type.
+

@@ -1,44 +1,69 @@
 ---
 title: OcclusionSettings
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[OcclusionSettings](#constructor-0)**() |
+| **[OcclusionSettings](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[OcclusionSettings](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "enable" >}} | bool |
+| {{< prop "drawZbuffer" >}} | bool |
+| {{< prop "drawBinaryBuffer" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "OcclusionSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### OcclusionSettings {#constructor-0}
+> **OcclusionSettings**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| OcclusionSettings()                                                          | Create a new instance of this container type.                                                                             |
-| OcclusionSettings(OcclusionSettings other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| OcclusionSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [OcclusionSettings](/vext/ref/fb/occlusionsettings/). |
+Creates a new [OcclusionSettings](/vext/ref/fb/occlusionsettings) frostbite instance.
 
-## Properties
+### OcclusionSettings {#constructor-1}
+> **OcclusionSettings**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name             | Type | Description |
-| ---------------- | ---- | ----------- |
-| enable           | bool |             |
-| drawZbuffer      | bool |             |
-| drawBinaryBuffer | bool |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [OcclusionSettings](/vext/ref/fb/occlusionsettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [OcclusionSettings](/vext/ref/fb/occlusionsettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [OcclusionSettings](/vext/ref/fb/occlusionsettings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### OcclusionSettings {#constructor-2}
+> **OcclusionSettings**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [OcclusionSettings](/vext/ref/fb/occlusionsettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [OcclusionSettings](/vext/ref/fb/occlusionsettings). |
+
+## Properties
+### {{% prop-heading "enable" %}}
+> **bool**
+
+### {{% prop-heading "drawZbuffer" %}}
+> **bool**
+
+### {{% prop-heading "drawBinaryBuffer" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [OcclusionSettings](/vext/ref/fb/occlusionsettings) type.
+

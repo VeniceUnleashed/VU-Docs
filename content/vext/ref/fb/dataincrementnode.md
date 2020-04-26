@@ -1,48 +1,92 @@
 ---
 title: DataIncrementNode
 ---
-### Base Classes
 
-[UINodeData](/vext/ref/fb/uinodedata/)
+Inherits from 
+[UINodeData](/vext/ref/fb/uinodedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[DataIncrementNode](#constructor-0)**() |
+| **[DataIncrementNode](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[DataIncrementNode](#constructor-2)**(other: [UINodeData](/vext/ref/fb/uinodedata)) |
+| **[DataIncrementNode](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "inValue" >}} | [UINodePort](/vext/ref/fb/uinodeport) \| nil |
+| {{< prop "out" >}} | [UINodePort](/vext/ref/fb/uinodeport) \| nil |
+| {{< prop "max" >}} | float |
+| {{< prop "min" >}} | float |
+| {{< prop "incrementSize" >}} | float |
+| {{< prop "dataSource" >}} | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "DataIncrementNode" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### DataIncrementNode {#constructor-0}
+> **DataIncrementNode**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| DataIncrementNode()                                                          | Create a new instance of this container type.                                                                             |
-| DataIncrementNode(DataIncrementNode other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| DataIncrementNode([UINodeData](/vext/ref/fb/uinodedata/) other)                            | Upcast an instance of type [UINodeData](/vext/ref/fb/uinodedata/) to [DataIncrementNode](/vext/ref/fb/dataincrementnode/).                            |
-| DataIncrementNode([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DataIncrementNode](/vext/ref/fb/dataincrementnode/). |
+Creates a new [DataIncrementNode](/vext/ref/fb/dataincrementnode) frostbite instance.
 
-## Properties
+### DataIncrementNode {#constructor-1}
+> **DataIncrementNode**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name          | Type                                 | Description |
-| ------------- | ------------------------------------ | ----------- |
-| inValue       | [UINodePort](/vext/ref/fb/uinodeport/)             |             |
-| out           | [UINodePort](/vext/ref/fb/uinodeport/)             |             |
-| max           | number                               |             |
-| min           | number                               |             |
-| incrementSize | number                               |             |
-| dataSource    | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/) |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [DataIncrementNode](/vext/ref/fb/dataincrementnode/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [DataIncrementNode](/vext/ref/fb/dataincrementnode/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [DataIncrementNode](/vext/ref/fb/dataincrementnode) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### DataIncrementNode {#constructor-2}
+> **DataIncrementNode**(other: [UINodeData](/vext/ref/fb/uinodedata))
+
+Casts an instance of type [UINodeData](/vext/ref/fb/uinodedata) to [DataIncrementNode](/vext/ref/fb/dataincrementnode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UINodeData](/vext/ref/fb/uinodedata) | The instance to cast to [DataIncrementNode](/vext/ref/fb/dataincrementnode). |
+
+### DataIncrementNode {#constructor-3}
+> **DataIncrementNode**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DataIncrementNode](/vext/ref/fb/dataincrementnode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DataIncrementNode](/vext/ref/fb/dataincrementnode). |
+
+## Properties
+### {{% prop-heading "inValue" %}}
+> **[UINodePort](/vext/ref/fb/uinodeport)** | **nil**
+
+### {{% prop-heading "out" %}}
+> **[UINodePort](/vext/ref/fb/uinodeport)** | **nil**
+
+### {{% prop-heading "max" %}}
+> **float**
+
+### {{% prop-heading "min" %}}
+> **float**
+
+### {{% prop-heading "incrementSize" %}}
+> **float**
+
+### {{% prop-heading "dataSource" %}}
+> **[UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [DataIncrementNode](/vext/ref/fb/dataincrementnode) type.
+

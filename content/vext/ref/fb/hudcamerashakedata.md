@@ -1,61 +1,151 @@
 ---
 title: HudCameraShakeData
 ---
-### Base Classes
 
-[UIComponentData](/vext/ref/fb/uicomponentdata/)
+Inherits from 
+[UIComponentData](/vext/ref/fb/uicomponentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[HudCameraShakeData](#constructor-0)**() |
+| **[HudCameraShakeData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[HudCameraShakeData](#constructor-2)**(other: [UIComponentData](/vext/ref/fb/uicomponentdata)) |
+| **[HudCameraShakeData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[HudCameraShakeData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "weaponDispersionMin" >}} | float |
+| {{< prop "weaponDispersionMax" >}} | float |
+| {{< prop "weaponDispersionOffsetScale" >}} | float |
+| {{< prop "jumpEffectDurationMin" >}} | float |
+| {{< prop "jumpEffectDurationMax" >}} | float |
+| {{< prop "jumpEffectMin" >}} | float |
+| {{< prop "jumpEffectMax" >}} | float |
+| {{< prop "landEffectDurationMin" >}} | float |
+| {{< prop "landEffectDurationMax" >}} | float |
+| {{< prop "landEffectMin" >}} | float |
+| {{< prop "landEffectMax" >}} | float |
+| {{< prop "cameraShakeMinAngle" >}} | float |
+| {{< prop "cameraShakeMaxAngle" >}} | float |
+| {{< prop "cameraShakeScale" >}} | float |
+| {{< prop "weaponLagXScale" >}} | float |
+| {{< prop "weaponLagYScale" >}} | float |
+| {{< prop "filterSize" >}} | int |
+| {{< prop "maxDisplacement" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "HudCameraShakeData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### HudCameraShakeData {#constructor-0}
+> **HudCameraShakeData**()
 
-| Constructor                                                                   | Description                                                                                                                 |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| HudCameraShakeData()                                                          | Create a new instance of this container type.                                                                               |
-| HudCameraShakeData(HudCameraShakeData other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| HudCameraShakeData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [HudCameraShakeData](/vext/ref/fb/hudcamerashakedata/).                  |
-| HudCameraShakeData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [HudCameraShakeData](/vext/ref/fb/hudcamerashakedata/).                                      |
-| HudCameraShakeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [HudCameraShakeData](/vext/ref/fb/hudcamerashakedata/). |
+Creates a new [HudCameraShakeData](/vext/ref/fb/hudcamerashakedata) frostbite instance.
 
-## Properties
+### HudCameraShakeData {#constructor-1}
+> **HudCameraShakeData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                        | Type   | Description |
-| --------------------------- | ------ | ----------- |
-| weaponDispersionMin         | number |             |
-| weaponDispersionMax         | number |             |
-| weaponDispersionOffsetScale | number |             |
-| jumpEffectDurationMin       | number |             |
-| jumpEffectDurationMax       | number |             |
-| jumpEffectMin               | number |             |
-| jumpEffectMax               | number |             |
-| landEffectDurationMin       | number |             |
-| landEffectDurationMax       | number |             |
-| landEffectMin               | number |             |
-| landEffectMax               | number |             |
-| cameraShakeMinAngle         | number |             |
-| cameraShakeMaxAngle         | number |             |
-| cameraShakeScale            | number |             |
-| weaponLagXScale             | number |             |
-| weaponLagYScale             | number |             |
-| filterSize                  | number |             |
-| maxDisplacement             | number |             |
-
-## Methods
-
-| Type                                     | Name            | Parameters                                     |
-| ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [HudCameraShakeData](/vext/ref/fb/hudcamerashakedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [HudCameraShakeData](/vext/ref/fb/hudcamerashakedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [HudCameraShakeData](/vext/ref/fb/hudcamerashakedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### HudCameraShakeData {#constructor-2}
+> **HudCameraShakeData**(other: [UIComponentData](/vext/ref/fb/uicomponentdata))
+
+Casts an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata) to [HudCameraShakeData](/vext/ref/fb/hudcamerashakedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIComponentData](/vext/ref/fb/uicomponentdata) | The instance to cast to [HudCameraShakeData](/vext/ref/fb/hudcamerashakedata). |
+
+### HudCameraShakeData {#constructor-3}
+> **HudCameraShakeData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [HudCameraShakeData](/vext/ref/fb/hudcamerashakedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [HudCameraShakeData](/vext/ref/fb/hudcamerashakedata). |
+
+### HudCameraShakeData {#constructor-4}
+> **HudCameraShakeData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [HudCameraShakeData](/vext/ref/fb/hudcamerashakedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [HudCameraShakeData](/vext/ref/fb/hudcamerashakedata). |
+
+## Properties
+### {{% prop-heading "weaponDispersionMin" %}}
+> **float**
+
+### {{% prop-heading "weaponDispersionMax" %}}
+> **float**
+
+### {{% prop-heading "weaponDispersionOffsetScale" %}}
+> **float**
+
+### {{% prop-heading "jumpEffectDurationMin" %}}
+> **float**
+
+### {{% prop-heading "jumpEffectDurationMax" %}}
+> **float**
+
+### {{% prop-heading "jumpEffectMin" %}}
+> **float**
+
+### {{% prop-heading "jumpEffectMax" %}}
+> **float**
+
+### {{% prop-heading "landEffectDurationMin" %}}
+> **float**
+
+### {{% prop-heading "landEffectDurationMax" %}}
+> **float**
+
+### {{% prop-heading "landEffectMin" %}}
+> **float**
+
+### {{% prop-heading "landEffectMax" %}}
+> **float**
+
+### {{% prop-heading "cameraShakeMinAngle" %}}
+> **float**
+
+### {{% prop-heading "cameraShakeMaxAngle" %}}
+> **float**
+
+### {{% prop-heading "cameraShakeScale" %}}
+> **float**
+
+### {{% prop-heading "weaponLagXScale" %}}
+> **float**
+
+### {{% prop-heading "weaponLagYScale" %}}
+> **float**
+
+### {{% prop-heading "filterSize" %}}
+> **int**
+
+### {{% prop-heading "maxDisplacement" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [HudCameraShakeData](/vext/ref/fb/hudcamerashakedata) type.
+

@@ -1,14 +1,11 @@
 ---
 title: PolynomialOperation
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **Multiplication** | Value: **0** |
+| **Addition** | Value: **1** |
+| **Subtraction** | Value: **2** |
 
-| Name           | Value | Description |
-| -------------- | ----- | ----------- |
-| Multiplication | 0     |             |
-| Addition       | 1     |             |
-| Subtraction    | 2     |             |

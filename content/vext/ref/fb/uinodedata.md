@@ -1,45 +1,73 @@
 ---
 title: UINodeData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UINodeData](#constructor-0)**() |
+| **[UINodeData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UINodeData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "name" >}} | string |
+| {{< prop "parentGraph" >}} | [Asset](/vext/ref/fb/asset) \| nil |
+| {{< prop "isRootNode" >}} | bool |
+| {{< prop "parentIsScreen" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UINodeData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UINodeData {#constructor-0}
+> **UINodeData**()
 
-| Constructor                                                           | Description                                                                                                 |
-| --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| UINodeData()                                                          | Create a new instance of this container type.                                                               |
-| UINodeData(UINodeData other)                                          | Create a reference copy of an instance of the same type.                                                    |
-| UINodeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UINodeData](/vext/ref/fb/uinodedata/). |
+Creates a new [UINodeData](/vext/ref/fb/uinodedata) frostbite instance.
 
-## Properties
+### UINodeData {#constructor-1}
+> **UINodeData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name           | Type           | Description |
-| -------------- | -------------- | ----------- |
-| name           | string         |             |
-| parentGraph    | [Asset](/vext/ref/fb/asset/) |             |
-| isRootNode     | bool           |             |
-| parentIsScreen | bool           |             |
-
-## Methods
-
-| Type                     | Name            | Parameters                                     |
-| ------------------------ | --------------- | ---------------------------------------------- |
-| [UINodeData](/vext/ref/fb/uinodedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UINodeData](/vext/ref/fb/uinodedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UINodeData](/vext/ref/fb/uinodedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UINodeData {#constructor-2}
+> **UINodeData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UINodeData](/vext/ref/fb/uinodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UINodeData](/vext/ref/fb/uinodedata). |
+
+## Properties
+### {{% prop-heading "name" %}}
+> **string**
+
+### {{% prop-heading "parentGraph" %}}
+> **[Asset](/vext/ref/fb/asset)** | **nil**
+
+### {{% prop-heading "isRootNode" %}}
+> **bool**
+
+### {{% prop-heading "parentIsScreen" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UINodeData](/vext/ref/fb/uinodedata) type.
+

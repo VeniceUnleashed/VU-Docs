@@ -1,46 +1,98 @@
 ---
 title: TargetCameraData
 ---
-### Base Classes
 
-[CameraData](/vext/ref/fb/cameradata/)
+Inherits from 
+[CameraData](/vext/ref/fb/cameradata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[TargetCameraData](#constructor-0)**() |
+| **[TargetCameraData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[TargetCameraData](#constructor-2)**(other: [CameraData](/vext/ref/fb/cameradata)) |
+| **[TargetCameraData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[TargetCameraData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[TargetCameraData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "hud" >}} | [HudData](/vext/ref/fb/huddata) |
+| {{< prop "uiParts" >}} | [UIPartData](/vext/ref/fb/uipartdata)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "TargetCameraData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### TargetCameraData {#constructor-0}
+> **TargetCameraData**()
 
-| Constructor                                                                 | Description                                                                                                             |
-| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| TargetCameraData()                                                          | Create a new instance of this container type.                                                                           |
-| TargetCameraData(TargetCameraData other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| TargetCameraData([CameraData](/vext/ref/fb/cameradata/) other)                            | Upcast an instance of type [CameraData](/vext/ref/fb/cameradata/) to [TargetCameraData](/vext/ref/fb/targetcameradata/).                            |
-| TargetCameraData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [TargetCameraData](/vext/ref/fb/targetcameradata/).                    |
-| TargetCameraData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [TargetCameraData](/vext/ref/fb/targetcameradata/).              |
-| TargetCameraData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TargetCameraData](/vext/ref/fb/targetcameradata/). |
+Creates a new [TargetCameraData](/vext/ref/fb/targetcameradata) frostbite instance.
 
-## Properties
+### TargetCameraData {#constructor-1}
+> **TargetCameraData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name    | Type                         | Description |
-| ------- | ---------------------------- | ----------- |
-| hud     | [HudData](/vext/ref/fb/huddata/)           |             |
-| uiParts | [UIPartData](/vext/ref/fb/uipartdata/)\[\] |             |
-
-## Methods
-
-| Type                                 | Name            | Parameters                                     |
-| ------------------------------------ | --------------- | ---------------------------------------------- |
-| [TargetCameraData](/vext/ref/fb/targetcameradata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [TargetCameraData](/vext/ref/fb/targetcameradata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [TargetCameraData](/vext/ref/fb/targetcameradata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### TargetCameraData {#constructor-2}
+> **TargetCameraData**(other: [CameraData](/vext/ref/fb/cameradata))
+
+Casts an instance of type [CameraData](/vext/ref/fb/cameradata) to [TargetCameraData](/vext/ref/fb/targetcameradata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [CameraData](/vext/ref/fb/cameradata) | The instance to cast to [TargetCameraData](/vext/ref/fb/targetcameradata). |
+
+### TargetCameraData {#constructor-3}
+> **TargetCameraData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [TargetCameraData](/vext/ref/fb/targetcameradata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [TargetCameraData](/vext/ref/fb/targetcameradata). |
+
+### TargetCameraData {#constructor-4}
+> **TargetCameraData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [TargetCameraData](/vext/ref/fb/targetcameradata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [TargetCameraData](/vext/ref/fb/targetcameradata). |
+
+### TargetCameraData {#constructor-5}
+> **TargetCameraData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TargetCameraData](/vext/ref/fb/targetcameradata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [TargetCameraData](/vext/ref/fb/targetcameradata). |
+
+## Properties
+### {{% prop-heading "hud" %}}
+> **[HudData](/vext/ref/fb/huddata)**
+
+### {{% prop-heading "uiParts" %}}
+> **[UIPartData](/vext/ref/fb/uipartdata)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [TargetCameraData](/vext/ref/fb/targetcameradata) type.
+

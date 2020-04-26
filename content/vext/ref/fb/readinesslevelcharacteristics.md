@@ -1,33 +1,61 @@
 ---
 title: ReadinessLevelCharacteristics
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ReadinessLevelCharacteristics](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "minReactionTime" >}} | float |
+| {{< prop "maxReactionTime" >}} | float |
+| {{< prop "reductionTime" >}} | float |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [ReadinessLevelCharacteristics](/vext/ref/fb/readinesslevelcharacteristics) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ReadinessLevelCharacteristics" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ReadinessLevelCharacteristics {#constructor-0}
+> **ReadinessLevelCharacteristics**()
 
-| Constructor                                                        | Description                                              |
-| ------------------------------------------------------------------ | -------------------------------------------------------- |
-| ReadinessLevelCharacteristics()                                    | Create a new instance of this structure type.            |
-| ReadinessLevelCharacteristics(ReadinessLevelCharacteristics other) | Create a reference copy of a structure of the same type. |
+Creates a new [ReadinessLevelCharacteristics](/vext/ref/fb/readinesslevelcharacteristics) frostbite structure.
 
 ## Properties
+### {{% prop-heading "minReactionTime" %}}
+> **float**
 
-| Name            | Type   | Description |
-| --------------- | ------ | ----------- |
-| minReactionTime | number |             |
-| maxReactionTime | number |             |
-| reductionTime   | number |             |
+### {{% prop-heading "maxReactionTime" %}}
+> **float**
+
+### {{% prop-heading "reductionTime" %}}
+> **float**
 
 ## Methods
-
-| Type                                                           | Name            | Parameters |
-| -------------------------------------------------------------- | --------------- | ---------- |
-| [ReadinessLevelCharacteristics](/vext/ref/fb/readinesslevelcharacteristics/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [ReadinessLevelCharacteristics](/vext/ref/fb/readinesslevelcharacteristics)
 
-> [ReadinessLevelCharacteristics](/vext/ref/fb/readinesslevelcharacteristics/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[ReadinessLevelCharacteristics](/vext/ref/fb/readinesslevelcharacteristics)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ReadinessLevelCharacteristics](/vext/ref/fb/readinesslevelcharacteristics) type.
+

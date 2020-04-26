@@ -1,32 +1,57 @@
 ---
 title: AwardStarNameInstance
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AwardStarNameInstance](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "name" >}} | string |
+| {{< prop "category" >}} | [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata) \| nil |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [AwardStarNameInstance](/vext/ref/fb/awardstarnameinstance) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AwardStarNameInstance" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AwardStarNameInstance {#constructor-0}
+> **AwardStarNameInstance**()
 
-| Constructor                                        | Description                                              |
-| -------------------------------------------------- | -------------------------------------------------------- |
-| AwardStarNameInstance()                            | Create a new instance of this structure type.            |
-| AwardStarNameInstance(AwardStarNameInstance other) | Create a reference copy of a structure of the same type. |
+Creates a new [AwardStarNameInstance](/vext/ref/fb/awardstarnameinstance) frostbite structure.
 
 ## Properties
+### {{% prop-heading "name" %}}
+> **string**
 
-| Name     | Type                                           | Description |
-| -------- | ---------------------------------------------- | ----------- |
-| name     | string                                         |             |
-| category | [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/) |             |
+### {{% prop-heading "category" %}}
+> **[StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata)** | **nil**
 
 ## Methods
-
-| Type                                           | Name            | Parameters |
-| ---------------------------------------------- | --------------- | ---------- |
-| [AwardStarNameInstance](/vext/ref/fb/awardstarnameinstance/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [AwardStarNameInstance](/vext/ref/fb/awardstarnameinstance)
 
-> [AwardStarNameInstance](/vext/ref/fb/awardstarnameinstance/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[AwardStarNameInstance](/vext/ref/fb/awardstarnameinstance)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AwardStarNameInstance](/vext/ref/fb/awardstarnameinstance) type.
+

@@ -1,25 +1,22 @@
 ---
 title: GearSlot
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **GearSlot_Melee** | Value: **0** |
+| **GearSlot_Sidearm** | Value: **1** |
+| **GearSlot_Primary** | Value: **2** |
+| **GearSlot_Auxiliary** | Value: **3** |
+| **GearSlot_Secondary** | Value: **4** |
+| **GearSlot_Gadget1** | Value: **5** |
+| **GearSlot_Gadget2** | Value: **6** |
+| **GearSlot_Gadget3** | Value: **7** |
+| **GearSlot_Gadget4** | Value: **8** |
+| **GearSlot_Gadget5** | Value: **9** |
+| **GearSlot_Gadget6** | Value: **10** |
+| **GearSlot_Gadget7** | Value: **11** |
+| **GearSlot_GearSlotCount** | Value: **12** |
+| **GearSlot_NotEquipped** | Value: **13** |
 
-| Name                    | Value | Description |
-| ----------------------- | ----- | ----------- |
-| GearSlot\_Melee         | 0     |             |
-| GearSlot\_Sidearm       | 1     |             |
-| GearSlot\_Primary       | 2     |             |
-| GearSlot\_Auxiliary     | 3     |             |
-| GearSlot\_Secondary     | 4     |             |
-| GearSlot\_Gadget1       | 5     |             |
-| GearSlot\_Gadget2       | 6     |             |
-| GearSlot\_Gadget3       | 7     |             |
-| GearSlot\_Gadget4       | 8     |             |
-| GearSlot\_Gadget5       | 9     |             |
-| GearSlot\_Gadget6       | 10    |             |
-| GearSlot\_Gadget7       | 11    |             |
-| GearSlot\_GearSlotCount | 12    |             |
-| GearSlot\_NotEquipped   | 13    |             |

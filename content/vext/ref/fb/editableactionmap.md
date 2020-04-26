@@ -1,34 +1,65 @@
 ---
 title: EditableActionMap
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[EditableActionMap](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "id" >}} | string |
+| {{< prop "nameId" >}} | string |
+| {{< prop "actionMap" >}} | [EntryInputActionMapsData](/vext/ref/fb/entryinputactionmapsdata) \| nil |
+| {{< prop "configurationLayout" >}} | [EditableActions](/vext/ref/fb/editableactions) |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [EditableActionMap](/vext/ref/fb/editableactionmap) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "EditableActionMap" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### EditableActionMap {#constructor-0}
+> **EditableActionMap**()
 
-| Constructor                                | Description                                              |
-| ------------------------------------------ | -------------------------------------------------------- |
-| EditableActionMap()                        | Create a new instance of this structure type.            |
-| EditableActionMap(EditableActionMap other) | Create a reference copy of a structure of the same type. |
+Creates a new [EditableActionMap](/vext/ref/fb/editableactionmap) frostbite structure.
 
 ## Properties
+### {{% prop-heading "id" %}}
+> **string**
 
-| Name                | Type                                                 | Description |
-| ------------------- | ---------------------------------------------------- | ----------- |
-| id                  | string                                               |             |
-| nameId              | string                                               |             |
-| actionMap           | [EntryInputActionMapsData](/vext/ref/fb/entryinputactionmapsdata/) |             |
-| configurationLayout | [EditableActions](/vext/ref/fb/editableactions/)                   |             |
+### {{% prop-heading "nameId" %}}
+> **string**
+
+### {{% prop-heading "actionMap" %}}
+> **[EntryInputActionMapsData](/vext/ref/fb/entryinputactionmapsdata)** | **nil**
+
+### {{% prop-heading "configurationLayout" %}}
+> **[EditableActions](/vext/ref/fb/editableactions)**
 
 ## Methods
-
-| Type                                   | Name            | Parameters |
-| -------------------------------------- | --------------- | ---------- |
-| [EditableActionMap](/vext/ref/fb/editableactionmap/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [EditableActionMap](/vext/ref/fb/editableactionmap)
 
-> [EditableActionMap](/vext/ref/fb/editableactionmap/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[EditableActionMap](/vext/ref/fb/editableactionmap)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [EditableActionMap](/vext/ref/fb/editableactionmap) type.
+

@@ -1,55 +1,141 @@
 ---
 title: VehicleCameraData
 ---
-### Base Classes
 
-[TargetCameraData](/vext/ref/fb/targetcameradata/)
+Inherits from 
+[TargetCameraData](/vext/ref/fb/targetcameradata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VehicleCameraData](#constructor-0)**() |
+| **[VehicleCameraData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VehicleCameraData](#constructor-2)**(other: [TargetCameraData](/vext/ref/fb/targetcameradata)) |
+| **[VehicleCameraData](#constructor-3)**(other: [CameraData](/vext/ref/fb/cameradata)) |
+| **[VehicleCameraData](#constructor-4)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[VehicleCameraData](#constructor-5)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[VehicleCameraData](#constructor-6)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "moveToPosition" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "moveToPositionSlopeFactor" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "targetOffset" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "targetOffsetSlopeFactor" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "rotationFactor" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "positionFactor" >}} | float |
+| {{< prop "resetDistance" >}} | float |
+| {{< prop "fixedPosition" >}} | bool |
+| {{< prop "fixedAngleZ" >}} | bool |
+| {{< prop "useTerrainAdjustment" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VehicleCameraData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VehicleCameraData {#constructor-0}
+> **VehicleCameraData**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| VehicleCameraData()                                                          | Create a new instance of this container type.                                                                             |
-| VehicleCameraData(VehicleCameraData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| VehicleCameraData([TargetCameraData](/vext/ref/fb/targetcameradata/) other)                | Upcast an instance of type [TargetCameraData](/vext/ref/fb/targetcameradata/) to [VehicleCameraData](/vext/ref/fb/vehiclecameradata/).                |
-| VehicleCameraData([CameraData](/vext/ref/fb/cameradata/) other)                            | Upcast an instance of type [CameraData](/vext/ref/fb/cameradata/) to [VehicleCameraData](/vext/ref/fb/vehiclecameradata/).                            |
-| VehicleCameraData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [VehicleCameraData](/vext/ref/fb/vehiclecameradata/).                    |
-| VehicleCameraData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [VehicleCameraData](/vext/ref/fb/vehiclecameradata/).              |
-| VehicleCameraData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VehicleCameraData](/vext/ref/fb/vehiclecameradata/). |
+Creates a new [VehicleCameraData](/vext/ref/fb/vehiclecameradata) frostbite instance.
 
-## Properties
+### VehicleCameraData {#constructor-1}
+> **VehicleCameraData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                      | Type                              | Description |
-| ------------------------- | --------------------------------- | ----------- |
-| moveToPosition            | [Vec3](/vext/ref/shared/class/vec3) |             |
-| moveToPositionSlopeFactor | [Vec3](/vext/ref/shared/class/vec3) |             |
-| targetOffset              | [Vec3](/vext/ref/shared/class/vec3) |             |
-| targetOffsetSlopeFactor   | [Vec3](/vext/ref/shared/class/vec3) |             |
-| rotationFactor            | [Vec3](/vext/ref/shared/class/vec3) |             |
-| positionFactor            | number                            |             |
-| resetDistance             | number                            |             |
-| fixedPosition             | bool                              |             |
-| fixedAngleZ               | bool                              |             |
-| useTerrainAdjustment      | bool                              |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [VehicleCameraData](/vext/ref/fb/vehiclecameradata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VehicleCameraData](/vext/ref/fb/vehiclecameradata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VehicleCameraData](/vext/ref/fb/vehiclecameradata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VehicleCameraData {#constructor-2}
+> **VehicleCameraData**(other: [TargetCameraData](/vext/ref/fb/targetcameradata))
+
+Casts an instance of type [TargetCameraData](/vext/ref/fb/targetcameradata) to [VehicleCameraData](/vext/ref/fb/vehiclecameradata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [TargetCameraData](/vext/ref/fb/targetcameradata) | The instance to cast to [VehicleCameraData](/vext/ref/fb/vehiclecameradata). |
+
+### VehicleCameraData {#constructor-3}
+> **VehicleCameraData**(other: [CameraData](/vext/ref/fb/cameradata))
+
+Casts an instance of type [CameraData](/vext/ref/fb/cameradata) to [VehicleCameraData](/vext/ref/fb/vehiclecameradata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [CameraData](/vext/ref/fb/cameradata) | The instance to cast to [VehicleCameraData](/vext/ref/fb/vehiclecameradata). |
+
+### VehicleCameraData {#constructor-4}
+> **VehicleCameraData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [VehicleCameraData](/vext/ref/fb/vehiclecameradata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [VehicleCameraData](/vext/ref/fb/vehiclecameradata). |
+
+### VehicleCameraData {#constructor-5}
+> **VehicleCameraData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [VehicleCameraData](/vext/ref/fb/vehiclecameradata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [VehicleCameraData](/vext/ref/fb/vehiclecameradata). |
+
+### VehicleCameraData {#constructor-6}
+> **VehicleCameraData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VehicleCameraData](/vext/ref/fb/vehiclecameradata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VehicleCameraData](/vext/ref/fb/vehiclecameradata). |
+
+## Properties
+### {{% prop-heading "moveToPosition" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "moveToPositionSlopeFactor" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "targetOffset" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "targetOffsetSlopeFactor" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "rotationFactor" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "positionFactor" %}}
+> **float**
+
+### {{% prop-heading "resetDistance" %}}
+> **float**
+
+### {{% prop-heading "fixedPosition" %}}
+> **bool**
+
+### {{% prop-heading "fixedAngleZ" %}}
+> **bool**
+
+### {{% prop-heading "useTerrainAdjustment" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VehicleCameraData](/vext/ref/fb/vehiclecameradata) type.
+

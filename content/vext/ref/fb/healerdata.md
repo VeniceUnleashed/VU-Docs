@@ -1,34 +1,65 @@
 ---
 title: HealerData
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[HealerData](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "radius" >}} | float |
+| {{< prop "health" >}} | float |
+| {{< prop "healingTime" >}} | float |
+| {{< prop "pickUpDelay" >}} | float |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [HealerData](/vext/ref/fb/healerdata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "HealerData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### HealerData {#constructor-0}
+> **HealerData**()
 
-| Constructor                  | Description                                              |
-| ---------------------------- | -------------------------------------------------------- |
-| HealerData()                 | Create a new instance of this structure type.            |
-| HealerData(HealerData other) | Create a reference copy of a structure of the same type. |
+Creates a new [HealerData](/vext/ref/fb/healerdata) frostbite structure.
 
 ## Properties
+### {{% prop-heading "radius" %}}
+> **float**
 
-| Name        | Type   | Description |
-| ----------- | ------ | ----------- |
-| radius      | number |             |
-| health      | number |             |
-| healingTime | number |             |
-| pickUpDelay | number |             |
+### {{% prop-heading "health" %}}
+> **float**
+
+### {{% prop-heading "healingTime" %}}
+> **float**
+
+### {{% prop-heading "pickUpDelay" %}}
+> **float**
 
 ## Methods
-
-| Type                     | Name            | Parameters |
-| ------------------------ | --------------- | ---------- |
-| [HealerData](/vext/ref/fb/healerdata/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [HealerData](/vext/ref/fb/healerdata)
 
-> [HealerData](/vext/ref/fb/healerdata/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[HealerData](/vext/ref/fb/healerdata)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [HealerData](/vext/ref/fb/healerdata) type.
+

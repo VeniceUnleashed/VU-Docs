@@ -1,14 +1,11 @@
 ---
 title: WidgetVerticalAlignment
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **WVA_Top** | Value: **0** |
+| **WVA_Center** | Value: **1** |
+| **WVA_Bottom** | Value: **2** |
 
-| Name        | Value | Description |
-| ----------- | ----- | ----------- |
-| WVA\_Top    | 0     |             |
-| WVA\_Center | 1     |             |
-| WVA\_Bottom | 2     |             |

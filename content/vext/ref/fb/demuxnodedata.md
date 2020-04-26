@@ -1,46 +1,84 @@
 ---
 title: DeMuxNodeData
 ---
-### Base Classes
 
-[AudioGraphNodeData](/vext/ref/fb/audiographnodedata/)
+Inherits from 
+[AudioGraphNodeData](/vext/ref/fb/audiographnodedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[DeMuxNodeData](#constructor-0)**() |
+| **[DeMuxNodeData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[DeMuxNodeData](#constructor-2)**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata)) |
+| **[DeMuxNodeData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "outputs" >}} | [DeMuxOutput](/vext/ref/fb/demuxoutput)[] |
+| {{< prop "trigger" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "value" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "wrapValue" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "DeMuxNodeData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### DeMuxNodeData {#constructor-0}
+> **DeMuxNodeData**()
 
-| Constructor                                                              | Description                                                                                                       |
-| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| DeMuxNodeData()                                                          | Create a new instance of this container type.                                                                     |
-| DeMuxNodeData(DeMuxNodeData other)                                       | Create a reference copy of an instance of the same type.                                                          |
-| DeMuxNodeData([AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) other)            | Upcast an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) to [DeMuxNodeData](/vext/ref/fb/demuxnodedata/).            |
-| DeMuxNodeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DeMuxNodeData](/vext/ref/fb/demuxnodedata/). |
+Creates a new [DeMuxNodeData](/vext/ref/fb/demuxnodedata) frostbite instance.
 
-## Properties
+### DeMuxNodeData {#constructor-1}
+> **DeMuxNodeData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name      | Type                                     | Description |
-| --------- | ---------------------------------------- | ----------- |
-| outputs   | [DeMuxOutput](/vext/ref/fb/demuxoutput/)\[\]           |             |
-| trigger   | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| value     | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| wrapValue | bool                                     |             |
-
-## Methods
-
-| Type                           | Name            | Parameters                                     |
-| ------------------------------ | --------------- | ---------------------------------------------- |
-| [DeMuxNodeData](/vext/ref/fb/demuxnodedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [DeMuxNodeData](/vext/ref/fb/demuxnodedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [DeMuxNodeData](/vext/ref/fb/demuxnodedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### DeMuxNodeData {#constructor-2}
+> **DeMuxNodeData**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata))
+
+Casts an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) to [DeMuxNodeData](/vext/ref/fb/demuxnodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) | The instance to cast to [DeMuxNodeData](/vext/ref/fb/demuxnodedata). |
+
+### DeMuxNodeData {#constructor-3}
+> **DeMuxNodeData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DeMuxNodeData](/vext/ref/fb/demuxnodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DeMuxNodeData](/vext/ref/fb/demuxnodedata). |
+
+## Properties
+### {{% prop-heading "outputs" %}}
+> **[DeMuxOutput](/vext/ref/fb/demuxoutput)**[]
+
+### {{% prop-heading "trigger" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "value" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "wrapValue" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [DeMuxNodeData](/vext/ref/fb/demuxnodedata) type.
+

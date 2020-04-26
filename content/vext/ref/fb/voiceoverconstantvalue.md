@@ -1,36 +1,52 @@
 ---
 title: VoiceOverConstantValue
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VoiceOverConstantValue](#constructor-0)**() |
+| **[VoiceOverConstantValue](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VoiceOverConstantValue](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VoiceOverConstantValue" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VoiceOverConstantValue {#constructor-0}
+> **VoiceOverConstantValue**()
 
-| Constructor                                                                       | Description                                                                                                                         |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| VoiceOverConstantValue()                                                          | Create a new instance of this container type.                                                                                       |
-| VoiceOverConstantValue(VoiceOverConstantValue other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| VoiceOverConstantValue([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverConstantValue](/vext/ref/fb/voiceoverconstantvalue/). |
+Creates a new [VoiceOverConstantValue](/vext/ref/fb/voiceoverconstantvalue) frostbite instance.
 
-## Methods
+### VoiceOverConstantValue {#constructor-1}
+> **VoiceOverConstantValue**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [VoiceOverConstantValue](/vext/ref/fb/voiceoverconstantvalue/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VoiceOverConstantValue](/vext/ref/fb/voiceoverconstantvalue/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VoiceOverConstantValue](/vext/ref/fb/voiceoverconstantvalue) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VoiceOverConstantValue {#constructor-2}
+> **VoiceOverConstantValue**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverConstantValue](/vext/ref/fb/voiceoverconstantvalue). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VoiceOverConstantValue](/vext/ref/fb/voiceoverconstantvalue). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VoiceOverConstantValue](/vext/ref/fb/voiceoverconstantvalue) type.
+

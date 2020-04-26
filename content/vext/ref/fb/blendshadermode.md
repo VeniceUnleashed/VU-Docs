@@ -1,21 +1,18 @@
 ---
 title: BlendShaderMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **BsmLerp** | Value: **0** |
+| **BsmAdd** | Value: **1** |
+| **BsmSubtract** | Value: **2** |
+| **BsmMultiply** | Value: **3** |
+| **BsmMultiply2x** | Value: **4** |
+| **BsmScreen** | Value: **5** |
+| **BsmDifference** | Value: **6** |
+| **BsmLighten** | Value: **7** |
+| **BsmDarken** | Value: **8** |
+| **BsmOverlay** | Value: **9** |
 
-| Name          | Value | Description |
-| ------------- | ----- | ----------- |
-| BsmLerp       | 0     |             |
-| BsmAdd        | 1     |             |
-| BsmSubtract   | 2     |             |
-| BsmMultiply   | 3     |             |
-| BsmMultiply2x | 4     |             |
-| BsmScreen     | 5     |             |
-| BsmDifference | 6     |             |
-| BsmLighten    | 7     |             |
-| BsmDarken     | 8     |             |
-| BsmOverlay    | 9     |             |

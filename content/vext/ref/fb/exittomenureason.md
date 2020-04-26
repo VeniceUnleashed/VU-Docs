@@ -1,33 +1,30 @@
 ---
 title: ExitToMenuReason
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ExitToMenuReason_None** | Value: **0** |
+| **ExitToMenuReason_UserDisconnected** | Value: **1** |
+| **ExitToMenuReason_DisconnectedFromServer** | Value: **2** |
+| **ExitToMenuReason_UnableToConnectToServer** | Value: **3** |
+| **ExitToMenuReason_ClientDisconnected** | Value: **4** |
+| **ExitToMenuReason_FirstPartyConnectionFailed** | Value: **5** |
+| **ExitToMenuReason_MissingContent** | Value: **6** |
+| **ExitToMenuReason_TeamKills** | Value: **7** |
+| **ExitToMenuReason_KickedByAdmin** | Value: **8** |
+| **ExitToMenuReason_Banned** | Value: **9** |
+| **ExitToMenuReason_InteractivityTimeout** | Value: **10** |
+| **ExitToMenuReason_KickedOutServerFull** | Value: **11** |
+| **ExitToMenuReason_ESportsMatchStarting** | Value: **12** |
+| **ExitToMenuReason_NotInESportsRosters** | Value: **13** |
+| **ExitToMenuReason_ESportsMatchEnding** | Value: **14** |
+| **ExitToMenuReason_VirtualServerExpired** | Value: **15** |
+| **ExitToMenuReason_VirtualServerRecreate** | Value: **16** |
+| **ExitToMenuReason_ESportsTeamFull** | Value: **17** |
+| **ExitToMenuReason_ESportsMatchAborted** | Value: **18** |
+| **ExitToMenuReason_ESportsMatchWalkover** | Value: **19** |
+| **ExitToMenuReason_ESportsMatchWarmupTimedOut** | Value: **20** |
+| **ExitToMenuReason_PremiumStatusMismatch** | Value: **21** |
 
-| Name                                         | Value | Description |
-| -------------------------------------------- | ----- | ----------- |
-| ExitToMenuReason\_None                       | 0     |             |
-| ExitToMenuReason\_UserDisconnected           | 1     |             |
-| ExitToMenuReason\_DisconnectedFromServer     | 2     |             |
-| ExitToMenuReason\_UnableToConnectToServer    | 3     |             |
-| ExitToMenuReason\_ClientDisconnected         | 4     |             |
-| ExitToMenuReason\_FirstPartyConnectionFailed | 5     |             |
-| ExitToMenuReason\_MissingContent             | 6     |             |
-| ExitToMenuReason\_TeamKills                  | 7     |             |
-| ExitToMenuReason\_KickedByAdmin              | 8     |             |
-| ExitToMenuReason\_Banned                     | 9     |             |
-| ExitToMenuReason\_InteractivityTimeout       | 10    |             |
-| ExitToMenuReason\_KickedOutServerFull        | 11    |             |
-| ExitToMenuReason\_ESportsMatchStarting       | 12    |             |
-| ExitToMenuReason\_NotInESportsRosters        | 13    |             |
-| ExitToMenuReason\_ESportsMatchEnding         | 14    |             |
-| ExitToMenuReason\_VirtualServerExpired       | 15    |             |
-| ExitToMenuReason\_VirtualServerRecreate      | 16    |             |
-| ExitToMenuReason\_ESportsTeamFull            | 17    |             |
-| ExitToMenuReason\_ESportsMatchAborted        | 18    |             |
-| ExitToMenuReason\_ESportsMatchWalkover       | 19    |             |
-| ExitToMenuReason\_ESportsMatchWarmupTimedOut | 20    |             |
-| ExitToMenuReason\_PremiumStatusMismatch      | 21    |             |

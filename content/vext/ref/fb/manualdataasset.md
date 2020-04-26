@@ -1,43 +1,72 @@
 ---
 title: ManualDataAsset
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ManualDataAsset](#constructor-0)**() |
+| **[ManualDataAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ManualDataAsset](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[ManualDataAsset](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "entries" >}} | [ManualDataEntry](/vext/ref/fb/manualdataentry)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ManualDataAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ManualDataAsset {#constructor-0}
+> **ManualDataAsset**()
 
-| Constructor                                                                | Description                                                                                                           |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| ManualDataAsset()                                                          | Create a new instance of this container type.                                                                         |
-| ManualDataAsset(ManualDataAsset other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| ManualDataAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [ManualDataAsset](/vext/ref/fb/manualdataasset/).                                      |
-| ManualDataAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ManualDataAsset](/vext/ref/fb/manualdataasset/). |
+Creates a new [ManualDataAsset](/vext/ref/fb/manualdataasset) frostbite instance.
 
-## Properties
+### ManualDataAsset {#constructor-1}
+> **ManualDataAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name    | Type                                   | Description |
-| ------- | -------------------------------------- | ----------- |
-| entries | [ManualDataEntry](/vext/ref/fb/manualdataentry/)\[\] |             |
-
-## Methods
-
-| Type                               | Name            | Parameters                                     |
-| ---------------------------------- | --------------- | ---------------------------------------------- |
-| [ManualDataAsset](/vext/ref/fb/manualdataasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ManualDataAsset](/vext/ref/fb/manualdataasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ManualDataAsset](/vext/ref/fb/manualdataasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ManualDataAsset {#constructor-2}
+> **ManualDataAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [ManualDataAsset](/vext/ref/fb/manualdataasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [ManualDataAsset](/vext/ref/fb/manualdataasset). |
+
+### ManualDataAsset {#constructor-3}
+> **ManualDataAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ManualDataAsset](/vext/ref/fb/manualdataasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ManualDataAsset](/vext/ref/fb/manualdataasset). |
+
+## Properties
+### {{% prop-heading "entries" %}}
+> **[ManualDataEntry](/vext/ref/fb/manualdataentry)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ManualDataAsset](/vext/ref/fb/manualdataasset) type.
+

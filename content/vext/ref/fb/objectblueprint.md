@@ -1,46 +1,105 @@
 ---
 title: ObjectBlueprint
 ---
-### Base Classes
 
-[Blueprint](/vext/ref/fb/blueprint/)
+Inherits from 
+[Blueprint](/vext/ref/fb/blueprint)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ObjectBlueprint](#constructor-0)**() |
+| **[ObjectBlueprint](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ObjectBlueprint](#constructor-2)**(other: [Blueprint](/vext/ref/fb/blueprint)) |
+| **[ObjectBlueprint](#constructor-3)**(other: [EntityBusData](/vext/ref/fb/entitybusdata)) |
+| **[ObjectBlueprint](#constructor-4)**(other: [DataBusData](/vext/ref/fb/databusdata)) |
+| **[ObjectBlueprint](#constructor-5)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[ObjectBlueprint](#constructor-6)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "object" >}} | [GameObjectData](/vext/ref/fb/gameobjectdata) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ObjectBlueprint" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ObjectBlueprint {#constructor-0}
+> **ObjectBlueprint**()
 
-| Constructor                                                                | Description                                                                                                           |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| ObjectBlueprint()                                                          | Create a new instance of this container type.                                                                         |
-| ObjectBlueprint(ObjectBlueprint other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| ObjectBlueprint([Blueprint](/vext/ref/fb/blueprint/) other)                              | Upcast an instance of type [Blueprint](/vext/ref/fb/blueprint/) to [ObjectBlueprint](/vext/ref/fb/objectblueprint/).                              |
-| ObjectBlueprint([EntityBusData](/vext/ref/fb/entitybusdata/) other)                      | Upcast an instance of type [EntityBusData](/vext/ref/fb/entitybusdata/) to [ObjectBlueprint](/vext/ref/fb/objectblueprint/).                      |
-| ObjectBlueprint([DataBusData](/vext/ref/fb/databusdata/) other)                          | Upcast an instance of type [DataBusData](/vext/ref/fb/databusdata/) to [ObjectBlueprint](/vext/ref/fb/objectblueprint/).                          |
-| ObjectBlueprint([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [ObjectBlueprint](/vext/ref/fb/objectblueprint/).                                      |
-| ObjectBlueprint([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ObjectBlueprint](/vext/ref/fb/objectblueprint/). |
+Creates a new [ObjectBlueprint](/vext/ref/fb/objectblueprint) frostbite instance.
 
-## Properties
+### ObjectBlueprint {#constructor-1}
+> **ObjectBlueprint**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name   | Type                             | Description |
-| ------ | -------------------------------- | ----------- |
-| object | [GameObjectData](/vext/ref/fb/gameobjectdata/) |             |
-
-## Methods
-
-| Type                               | Name            | Parameters                                     |
-| ---------------------------------- | --------------- | ---------------------------------------------- |
-| [ObjectBlueprint](/vext/ref/fb/objectblueprint/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ObjectBlueprint](/vext/ref/fb/objectblueprint/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ObjectBlueprint](/vext/ref/fb/objectblueprint) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ObjectBlueprint {#constructor-2}
+> **ObjectBlueprint**(other: [Blueprint](/vext/ref/fb/blueprint))
+
+Casts an instance of type [Blueprint](/vext/ref/fb/blueprint) to [ObjectBlueprint](/vext/ref/fb/objectblueprint). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Blueprint](/vext/ref/fb/blueprint) | The instance to cast to [ObjectBlueprint](/vext/ref/fb/objectblueprint). |
+
+### ObjectBlueprint {#constructor-3}
+> **ObjectBlueprint**(other: [EntityBusData](/vext/ref/fb/entitybusdata))
+
+Casts an instance of type [EntityBusData](/vext/ref/fb/entitybusdata) to [ObjectBlueprint](/vext/ref/fb/objectblueprint). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityBusData](/vext/ref/fb/entitybusdata) | The instance to cast to [ObjectBlueprint](/vext/ref/fb/objectblueprint). |
+
+### ObjectBlueprint {#constructor-4}
+> **ObjectBlueprint**(other: [DataBusData](/vext/ref/fb/databusdata))
+
+Casts an instance of type [DataBusData](/vext/ref/fb/databusdata) to [ObjectBlueprint](/vext/ref/fb/objectblueprint). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataBusData](/vext/ref/fb/databusdata) | The instance to cast to [ObjectBlueprint](/vext/ref/fb/objectblueprint). |
+
+### ObjectBlueprint {#constructor-5}
+> **ObjectBlueprint**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [ObjectBlueprint](/vext/ref/fb/objectblueprint). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [ObjectBlueprint](/vext/ref/fb/objectblueprint). |
+
+### ObjectBlueprint {#constructor-6}
+> **ObjectBlueprint**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ObjectBlueprint](/vext/ref/fb/objectblueprint). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ObjectBlueprint](/vext/ref/fb/objectblueprint). |
+
+## Properties
+### {{% prop-heading "object" %}}
+> **[GameObjectData](/vext/ref/fb/gameobjectdata)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ObjectBlueprint](/vext/ref/fb/objectblueprint) type.
+

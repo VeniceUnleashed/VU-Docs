@@ -1,64 +1,170 @@
 ---
 title: FogComponentData
 ---
-### Base Classes
 
-[ComponentData](/vext/ref/fb/componentdata/)
+Inherits from 
+[ComponentData](/vext/ref/fb/componentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[FogComponentData](#constructor-0)**() |
+| **[FogComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[FogComponentData](#constructor-2)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[FogComponentData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[FogComponentData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[FogComponentData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "curve" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "fogColorCurve" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "fogColor" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "fogColorStart" >}} | float |
+| {{< prop "fogDistanceMultiplier" >}} | float |
+| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
+| {{< prop "endValue" >}} | float |
+| {{< prop "transparencyFadeStart" >}} | float |
+| {{< prop "start" >}} | float |
+| {{< prop "transparencyFadeEnd" >}} | float |
+| {{< prop "fogColorEnd" >}} | float |
+| {{< prop "transparencyFadeClamp" >}} | float |
+| {{< prop "heightFogVisibilityRange" >}} | float |
+| {{< prop "heightFogAltitude" >}} | float |
+| {{< prop "heightFogDepth" >}} | float |
+| {{< prop "heightFogFollowCamera" >}} | float |
+| {{< prop "fogGradientEnable" >}} | bool |
+| {{< prop "enable" >}} | bool |
+| {{< prop "heightFogEnable" >}} | bool |
+| {{< prop "fogColorEnable" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "FogComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### FogComponentData {#constructor-0}
+> **FogComponentData**()
 
-| Constructor                                                                 | Description                                                                                                             |
-| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| FogComponentData()                                                          | Create a new instance of this container type.                                                                           |
-| FogComponentData(FogComponentData other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| FogComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [FogComponentData](/vext/ref/fb/fogcomponentdata/).                      |
-| FogComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [FogComponentData](/vext/ref/fb/fogcomponentdata/).                    |
-| FogComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [FogComponentData](/vext/ref/fb/fogcomponentdata/).              |
-| FogComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [FogComponentData](/vext/ref/fb/fogcomponentdata/). |
+Creates a new [FogComponentData](/vext/ref/fb/fogcomponentdata) frostbite instance.
 
-## Properties
+### FogComponentData {#constructor-1}
+> **FogComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                     | Type                              | Description |
-| ------------------------ | --------------------------------- | ----------- |
-| curve                    | [Vec4](/vext/ref/shared/class/vec4) |             |
-| fogColorCurve            | [Vec4](/vext/ref/shared/class/vec4) |             |
-| fogColor                 | [Vec3](/vext/ref/shared/class/vec3) |             |
-| fogColorStart            | number                            |             |
-| fogDistanceMultiplier    | number                            |             |
-| realm                    | [Realm](/vext/ref/fb/realm/)                    |             |
-| endValue                 | number                            |             |
-| transparencyFadeStart    | number                            |             |
-| start                    | number                            |             |
-| transparencyFadeEnd      | number                            |             |
-| fogColorEnd              | number                            |             |
-| transparencyFadeClamp    | number                            |             |
-| heightFogVisibilityRange | number                            |             |
-| heightFogAltitude        | number                            |             |
-| heightFogDepth           | number                            |             |
-| heightFogFollowCamera    | number                            |             |
-| fogGradientEnable        | bool                              |             |
-| enable                   | bool                              |             |
-| heightFogEnable          | bool                              |             |
-| fogColorEnable           | bool                              |             |
-
-## Methods
-
-| Type                                 | Name            | Parameters                                     |
-| ------------------------------------ | --------------- | ---------------------------------------------- |
-| [FogComponentData](/vext/ref/fb/fogcomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [FogComponentData](/vext/ref/fb/fogcomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [FogComponentData](/vext/ref/fb/fogcomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### FogComponentData {#constructor-2}
+> **FogComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [FogComponentData](/vext/ref/fb/fogcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [FogComponentData](/vext/ref/fb/fogcomponentdata). |
+
+### FogComponentData {#constructor-3}
+> **FogComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [FogComponentData](/vext/ref/fb/fogcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [FogComponentData](/vext/ref/fb/fogcomponentdata). |
+
+### FogComponentData {#constructor-4}
+> **FogComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [FogComponentData](/vext/ref/fb/fogcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [FogComponentData](/vext/ref/fb/fogcomponentdata). |
+
+### FogComponentData {#constructor-5}
+> **FogComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [FogComponentData](/vext/ref/fb/fogcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [FogComponentData](/vext/ref/fb/fogcomponentdata). |
+
+## Properties
+### {{% prop-heading "curve" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "fogColorCurve" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "fogColor" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "fogColorStart" %}}
+> **float**
+
+### {{% prop-heading "fogDistanceMultiplier" %}}
+> **float**
+
+### {{% prop-heading "realm" %}}
+> **[Realm](/vext/ref/fb/realm)**
+
+### {{% prop-heading "endValue" %}}
+> **float**
+
+### {{% prop-heading "transparencyFadeStart" %}}
+> **float**
+
+### {{% prop-heading "start" %}}
+> **float**
+
+### {{% prop-heading "transparencyFadeEnd" %}}
+> **float**
+
+### {{% prop-heading "fogColorEnd" %}}
+> **float**
+
+### {{% prop-heading "transparencyFadeClamp" %}}
+> **float**
+
+### {{% prop-heading "heightFogVisibilityRange" %}}
+> **float**
+
+### {{% prop-heading "heightFogAltitude" %}}
+> **float**
+
+### {{% prop-heading "heightFogDepth" %}}
+> **float**
+
+### {{% prop-heading "heightFogFollowCamera" %}}
+> **float**
+
+### {{% prop-heading "fogGradientEnable" %}}
+> **bool**
+
+### {{% prop-heading "enable" %}}
+> **bool**
+
+### {{% prop-heading "heightFogEnable" %}}
+> **bool**
+
+### {{% prop-heading "fogColorEnable" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [FogComponentData](/vext/ref/fb/fogcomponentdata) type.
+

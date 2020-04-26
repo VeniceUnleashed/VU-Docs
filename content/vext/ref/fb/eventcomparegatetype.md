@@ -1,17 +1,14 @@
 ---
 title: EventCompareGateType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **EventCompareGate_Equals** | Value: **0** |
+| **EventCompareGate_NotEquals** | Value: **1** |
+| **EventCompareGate_Less** | Value: **2** |
+| **EventCompareGate_LessEquals** | Value: **3** |
+| **EventCompareGate_Greater** | Value: **4** |
+| **EventCompareGate_GreaterEquals** | Value: **5** |
 
-| Name                            | Value | Description |
-| ------------------------------- | ----- | ----------- |
-| EventCompareGate\_Equals        | 0     |             |
-| EventCompareGate\_NotEquals     | 1     |             |
-| EventCompareGate\_Less          | 2     |             |
-| EventCompareGate\_LessEquals    | 3     |             |
-| EventCompareGate\_Greater       | 4     |             |
-| EventCompareGate\_GreaterEquals | 5     |             |

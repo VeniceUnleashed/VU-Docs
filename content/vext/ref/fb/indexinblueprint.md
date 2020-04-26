@@ -1,13 +1,10 @@
 ---
 title: IndexInBlueprint
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **IndexInBlueprint_HighestIndex** | Value: **65534** |
+| **IndexInBlueprint_Unknown** | Value: **65535** |
 
-| Name                           | Value | Description |
-| ------------------------------ | ----- | ----------- |
-| IndexInBlueprint\_HighestIndex | 65534 |             |
-| IndexInBlueprint\_Unknown      | 65535 |             |

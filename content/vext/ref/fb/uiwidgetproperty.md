@@ -1,32 +1,57 @@
 ---
 title: UIWidgetProperty
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIWidgetProperty](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "name" >}} | string |
+| {{< prop "value" >}} | string |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [UIWidgetProperty](/vext/ref/fb/uiwidgetproperty) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIWidgetProperty" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIWidgetProperty {#constructor-0}
+> **UIWidgetProperty**()
 
-| Constructor                              | Description                                              |
-| ---------------------------------------- | -------------------------------------------------------- |
-| UIWidgetProperty()                       | Create a new instance of this structure type.            |
-| UIWidgetProperty(UIWidgetProperty other) | Create a reference copy of a structure of the same type. |
+Creates a new [UIWidgetProperty](/vext/ref/fb/uiwidgetproperty) frostbite structure.
 
 ## Properties
+### {{% prop-heading "name" %}}
+> **string**
 
-| Name  | Type   | Description |
-| ----- | ------ | ----------- |
-| name  | string |             |
-| value | string |             |
+### {{% prop-heading "value" %}}
+> **string**
 
 ## Methods
-
-| Type                                 | Name            | Parameters |
-| ------------------------------------ | --------------- | ---------- |
-| [UIWidgetProperty](/vext/ref/fb/uiwidgetproperty/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [UIWidgetProperty](/vext/ref/fb/uiwidgetproperty)
 
-> [UIWidgetProperty](/vext/ref/fb/uiwidgetproperty/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[UIWidgetProperty](/vext/ref/fb/uiwidgetproperty)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIWidgetProperty](/vext/ref/fb/uiwidgetproperty) type.
+

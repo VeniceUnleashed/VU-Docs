@@ -1,14 +1,11 @@
 ---
 title: PlayerRole
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **PRSquadLeader** | Value: **0** |
+| **PRSquadMember** | Value: **1** |
+| **PRUnknown** | Value: **2** |
 
-| Name          | Value | Description |
-| ------------- | ----- | ----------- |
-| PRSquadLeader | 0     |             |
-| PRSquadMember | 1     |             |
-| PRUnknown     | 2     |             |

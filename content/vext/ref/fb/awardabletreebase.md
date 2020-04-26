@@ -1,46 +1,91 @@
 ---
 title: AwardableTreeBase
 ---
-### Base Classes
 
-[TreeBase](/vext/ref/fb/treebase/)
+Inherits from 
+[TreeBase](/vext/ref/fb/treebase)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AwardableTreeBase](#constructor-0)**() |
+| **[AwardableTreeBase](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[AwardableTreeBase](#constructor-2)**(other: [TreeBase](/vext/ref/fb/treebase)) |
+| **[AwardableTreeBase](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[AwardableTreeBase](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "statCategoryTreeCollection" >}} | [StatCategoryTreeCollection](/vext/ref/fb/statcategorytreecollection) \| nil |
+| {{< prop "generalCriteria" >}} | [CriteriaData](/vext/ref/fb/criteriadata)[] |
+| {{< prop "generalStatistics" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AwardableTreeBase" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AwardableTreeBase {#constructor-0}
+> **AwardableTreeBase**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| AwardableTreeBase()                                                          | Create a new instance of this container type.                                                                             |
-| AwardableTreeBase(AwardableTreeBase other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| AwardableTreeBase([TreeBase](/vext/ref/fb/treebase/) other)                                | Upcast an instance of type [TreeBase](/vext/ref/fb/treebase/) to [AwardableTreeBase](/vext/ref/fb/awardabletreebase/).                                |
-| AwardableTreeBase([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [AwardableTreeBase](/vext/ref/fb/awardabletreebase/).                                      |
-| AwardableTreeBase([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AwardableTreeBase](/vext/ref/fb/awardabletreebase/). |
+Creates a new [AwardableTreeBase](/vext/ref/fb/awardabletreebase) frostbite instance.
 
-## Properties
+### AwardableTreeBase {#constructor-1}
+> **AwardableTreeBase**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                       | Type                                                     | Description |
-| -------------------------- | -------------------------------------------------------- | ----------- |
-| statCategoryTreeCollection | [StatCategoryTreeCollection](/vext/ref/fb/statcategorytreecollection/) |             |
-| generalCriteria            | [CriteriaData](/vext/ref/fb/criteriadata/)\[\]                         |             |
-| generalStatistics          | bool                                                     |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [AwardableTreeBase](/vext/ref/fb/awardabletreebase/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [AwardableTreeBase](/vext/ref/fb/awardabletreebase/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [AwardableTreeBase](/vext/ref/fb/awardabletreebase) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### AwardableTreeBase {#constructor-2}
+> **AwardableTreeBase**(other: [TreeBase](/vext/ref/fb/treebase))
+
+Casts an instance of type [TreeBase](/vext/ref/fb/treebase) to [AwardableTreeBase](/vext/ref/fb/awardabletreebase). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [TreeBase](/vext/ref/fb/treebase) | The instance to cast to [AwardableTreeBase](/vext/ref/fb/awardabletreebase). |
+
+### AwardableTreeBase {#constructor-3}
+> **AwardableTreeBase**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [AwardableTreeBase](/vext/ref/fb/awardabletreebase). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [AwardableTreeBase](/vext/ref/fb/awardabletreebase). |
+
+### AwardableTreeBase {#constructor-4}
+> **AwardableTreeBase**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AwardableTreeBase](/vext/ref/fb/awardabletreebase). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [AwardableTreeBase](/vext/ref/fb/awardabletreebase). |
+
+## Properties
+### {{% prop-heading "statCategoryTreeCollection" %}}
+> **[StatCategoryTreeCollection](/vext/ref/fb/statcategorytreecollection)** | **nil**
+
+### {{% prop-heading "generalCriteria" %}}
+> **[CriteriaData](/vext/ref/fb/criteriadata)**[]
+
+### {{% prop-heading "generalStatistics" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AwardableTreeBase](/vext/ref/fb/awardabletreebase) type.
+

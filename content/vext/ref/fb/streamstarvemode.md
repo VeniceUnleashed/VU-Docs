@@ -1,14 +1,11 @@
 ---
 title: StreamStarveMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **StreamStarveMode_Off** | Value: **0** |
+| **StreamStarveMode_On** | Value: **1** |
+| **StreamStarveMode_Dynamic** | Value: **2** |
 
-| Name                      | Value | Description |
-| ------------------------- | ----- | ----------- |
-| StreamStarveMode\_Off     | 0     |             |
-| StreamStarveMode\_On      | 1     |             |
-| StreamStarveMode\_Dynamic | 2     |             |

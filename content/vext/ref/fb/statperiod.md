@@ -1,17 +1,14 @@
 ---
 title: StatPeriod
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **StatPeriod_AllTime** | Value: **0** |
+| **StatPeriod_Monthly** | Value: **1** |
+| **StatPeriod_Weekly** | Value: **2** |
+| **StatPeriod_Daily** | Value: **3** |
+| **StatPeriod_Size** | Value: **4** |
+| **StatPeriod_Error** | Value: **5** |
 
-| Name                | Value | Description |
-| ------------------- | ----- | ----------- |
-| StatPeriod\_AllTime | 0     |             |
-| StatPeriod\_Monthly | 1     |             |
-| StatPeriod\_Weekly  | 2     |             |
-| StatPeriod\_Daily   | 3     |             |
-| StatPeriod\_Size    | 4     |             |
-| StatPeriod\_Error   | 5     |             |

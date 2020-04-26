@@ -1,16 +1,13 @@
 ---
 title: AwardType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **AwardType_OnceGlobally** | Value: **0** |
+| **AwardType_OncePerRound** | Value: **1** |
+| **AwardType_Unlimited** | Value: **2** |
+| **AwardType_Limited** | Value: **3** |
+| **AwardType_GateList** | Value: **4** |
 
-| Name                    | Value | Description |
-| ----------------------- | ----- | ----------- |
-| AwardType\_OnceGlobally | 0     |             |
-| AwardType\_OncePerRound | 1     |             |
-| AwardType\_Unlimited    | 2     |             |
-| AwardType\_Limited      | 3     |             |
-| AwardType\_GateList     | 4     |             |

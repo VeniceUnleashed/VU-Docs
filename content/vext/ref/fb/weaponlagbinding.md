@@ -1,35 +1,69 @@
 ---
 title: WeaponLagBinding
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[WeaponLagBinding](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "entityPitch" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "entityYaw" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "pitchResult" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "yawResult" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "rollResult" >}} | [AntRef](/vext/ref/fb/antref) |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [WeaponLagBinding](/vext/ref/fb/weaponlagbinding) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "WeaponLagBinding" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### WeaponLagBinding {#constructor-0}
+> **WeaponLagBinding**()
 
-| Constructor                              | Description                                              |
-| ---------------------------------------- | -------------------------------------------------------- |
-| WeaponLagBinding()                       | Create a new instance of this structure type.            |
-| WeaponLagBinding(WeaponLagBinding other) | Create a reference copy of a structure of the same type. |
+Creates a new [WeaponLagBinding](/vext/ref/fb/weaponlagbinding) frostbite structure.
 
 ## Properties
+### {{% prop-heading "entityPitch" %}}
+> **[AntRef](/vext/ref/fb/antref)**
 
-| Name        | Type             | Description |
-| ----------- | ---------------- | ----------- |
-| entityPitch | [AntRef](/vext/ref/fb/antref/) |             |
-| entityYaw   | [AntRef](/vext/ref/fb/antref/) |             |
-| pitchResult | [AntRef](/vext/ref/fb/antref/) |             |
-| yawResult   | [AntRef](/vext/ref/fb/antref/) |             |
-| rollResult  | [AntRef](/vext/ref/fb/antref/) |             |
+### {{% prop-heading "entityYaw" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "pitchResult" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "yawResult" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "rollResult" %}}
+> **[AntRef](/vext/ref/fb/antref)**
 
 ## Methods
-
-| Type                                 | Name            | Parameters |
-| ------------------------------------ | --------------- | ---------- |
-| [WeaponLagBinding](/vext/ref/fb/weaponlagbinding/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [WeaponLagBinding](/vext/ref/fb/weaponlagbinding)
 
-> [WeaponLagBinding](/vext/ref/fb/weaponlagbinding/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[WeaponLagBinding](/vext/ref/fb/weaponlagbinding)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [WeaponLagBinding](/vext/ref/fb/weaponlagbinding) type.
+

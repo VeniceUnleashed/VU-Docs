@@ -1,48 +1,106 @@
 ---
 title: PhantomComponentData
 ---
-### Base Classes
 
-[ComponentData](/vext/ref/fb/componentdata/)
+Inherits from 
+[ComponentData](/vext/ref/fb/componentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PhantomComponentData](#constructor-0)**() |
+| **[PhantomComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PhantomComponentData](#constructor-2)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[PhantomComponentData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[PhantomComponentData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[PhantomComponentData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "boxSize" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "asyncQueryPointerAsset" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "enableTrajectoryOverride" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "trajectoryOverride" >}} | [AntRef](/vext/ref/fb/antref) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PhantomComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PhantomComponentData {#constructor-0}
+> **PhantomComponentData**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| PhantomComponentData()                                                          | Create a new instance of this container type.                                                                                   |
-| PhantomComponentData(PhantomComponentData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| PhantomComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [PhantomComponentData](/vext/ref/fb/phantomcomponentdata/).                      |
-| PhantomComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [PhantomComponentData](/vext/ref/fb/phantomcomponentdata/).                    |
-| PhantomComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [PhantomComponentData](/vext/ref/fb/phantomcomponentdata/).              |
-| PhantomComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PhantomComponentData](/vext/ref/fb/phantomcomponentdata/). |
+Creates a new [PhantomComponentData](/vext/ref/fb/phantomcomponentdata) frostbite instance.
 
-## Properties
+### PhantomComponentData {#constructor-1}
+> **PhantomComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                     | Type                              | Description |
-| ------------------------ | --------------------------------- | ----------- |
-| boxSize                  | [Vec3](/vext/ref/shared/class/vec3) |             |
-| asyncQueryPointerAsset   | [AntRef](/vext/ref/fb/antref/)                  |             |
-| enableTrajectoryOverride | [AntRef](/vext/ref/fb/antref/)                  |             |
-| trajectoryOverride       | [AntRef](/vext/ref/fb/antref/)                  |             |
-
-## Methods
-
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [PhantomComponentData](/vext/ref/fb/phantomcomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PhantomComponentData](/vext/ref/fb/phantomcomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PhantomComponentData](/vext/ref/fb/phantomcomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PhantomComponentData {#constructor-2}
+> **PhantomComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [PhantomComponentData](/vext/ref/fb/phantomcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [PhantomComponentData](/vext/ref/fb/phantomcomponentdata). |
+
+### PhantomComponentData {#constructor-3}
+> **PhantomComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [PhantomComponentData](/vext/ref/fb/phantomcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [PhantomComponentData](/vext/ref/fb/phantomcomponentdata). |
+
+### PhantomComponentData {#constructor-4}
+> **PhantomComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [PhantomComponentData](/vext/ref/fb/phantomcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [PhantomComponentData](/vext/ref/fb/phantomcomponentdata). |
+
+### PhantomComponentData {#constructor-5}
+> **PhantomComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PhantomComponentData](/vext/ref/fb/phantomcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PhantomComponentData](/vext/ref/fb/phantomcomponentdata). |
+
+## Properties
+### {{% prop-heading "boxSize" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "asyncQueryPointerAsset" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "enableTrajectoryOverride" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "trajectoryOverride" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PhantomComponentData](/vext/ref/fb/phantomcomponentdata) type.
+

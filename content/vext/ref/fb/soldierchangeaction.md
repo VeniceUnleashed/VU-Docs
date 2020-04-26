@@ -1,14 +1,11 @@
 ---
 title: SoldierChangeAction
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **SCA_Done** | Value: **0** |
+| **SCA_Altered** | Value: **1** |
+| **SCA_None** | Value: **2** |
 
-| Name         | Value | Description |
-| ------------ | ----- | ----------- |
-| SCA\_Done    | 0     |             |
-| SCA\_Altered | 1     |             |
-| SCA\_None    | 2     |             |

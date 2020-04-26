@@ -1,46 +1,77 @@
 ---
 title: MotionDampingData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MotionDampingData](#constructor-0)**() |
+| **[MotionDampingData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MotionDampingData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "linearModifier" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "pitch" >}} | float |
+| {{< prop "yaw" >}} | float |
+| {{< prop "roll" >}} | float |
+| {{< prop "linear" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MotionDampingData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MotionDampingData {#constructor-0}
+> **MotionDampingData**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| MotionDampingData()                                                          | Create a new instance of this container type.                                                                             |
-| MotionDampingData(MotionDampingData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| MotionDampingData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MotionDampingData](/vext/ref/fb/motiondampingdata/). |
+Creates a new [MotionDampingData](/vext/ref/fb/motiondampingdata) frostbite instance.
 
-## Properties
+### MotionDampingData {#constructor-1}
+> **MotionDampingData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name           | Type                              | Description |
-| -------------- | --------------------------------- | ----------- |
-| linearModifier | [Vec3](/vext/ref/shared/class/vec3) |             |
-| pitch          | number                            |             |
-| yaw            | number                            |             |
-| roll           | number                            |             |
-| linear         | number                            |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [MotionDampingData](/vext/ref/fb/motiondampingdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MotionDampingData](/vext/ref/fb/motiondampingdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MotionDampingData](/vext/ref/fb/motiondampingdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MotionDampingData {#constructor-2}
+> **MotionDampingData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MotionDampingData](/vext/ref/fb/motiondampingdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MotionDampingData](/vext/ref/fb/motiondampingdata). |
+
+## Properties
+### {{% prop-heading "linearModifier" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "pitch" %}}
+> **float**
+
+### {{% prop-heading "yaw" %}}
+> **float**
+
+### {{% prop-heading "roll" %}}
+> **float**
+
+### {{% prop-heading "linear" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MotionDampingData](/vext/ref/fb/motiondampingdata) type.
+

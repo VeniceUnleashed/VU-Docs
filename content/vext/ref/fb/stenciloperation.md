@@ -1,19 +1,16 @@
 ---
 title: StencilOperation
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **StencilOperation_Keep** | Value: **0** |
+| **StencilOperation_Zero** | Value: **1** |
+| **StencilOperation_Replace** | Value: **2** |
+| **StencilOperation_IncrementSaturate** | Value: **3** |
+| **StencilOperation_DecrementSaturate** | Value: **4** |
+| **StencilOperation_Invert** | Value: **5** |
+| **StencilOperation_IncrementWrap** | Value: **6** |
+| **StencilOperation_DecrementWrap** | Value: **7** |
 
-| Name                                | Value | Description |
-| ----------------------------------- | ----- | ----------- |
-| StencilOperation\_Keep              | 0     |             |
-| StencilOperation\_Zero              | 1     |             |
-| StencilOperation\_Replace           | 2     |             |
-| StencilOperation\_IncrementSaturate | 3     |             |
-| StencilOperation\_DecrementSaturate | 4     |             |
-| StencilOperation\_Invert            | 5     |             |
-| StencilOperation\_IncrementWrap     | 6     |             |
-| StencilOperation\_DecrementWrap     | 7     |             |

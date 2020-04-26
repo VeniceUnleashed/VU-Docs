@@ -1,36 +1,52 @@
 ---
 title: MatchmakingModifier
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MatchmakingModifier](#constructor-0)**() |
+| **[MatchmakingModifier](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MatchmakingModifier](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MatchmakingModifier" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MatchmakingModifier {#constructor-0}
+> **MatchmakingModifier**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| MatchmakingModifier()                                                          | Create a new instance of this container type.                                                                                 |
-| MatchmakingModifier(MatchmakingModifier other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| MatchmakingModifier([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MatchmakingModifier](/vext/ref/fb/matchmakingmodifier/). |
+Creates a new [MatchmakingModifier](/vext/ref/fb/matchmakingmodifier) frostbite instance.
 
-## Methods
+### MatchmakingModifier {#constructor-1}
+> **MatchmakingModifier**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [MatchmakingModifier](/vext/ref/fb/matchmakingmodifier/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MatchmakingModifier](/vext/ref/fb/matchmakingmodifier/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MatchmakingModifier](/vext/ref/fb/matchmakingmodifier) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MatchmakingModifier {#constructor-2}
+> **MatchmakingModifier**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MatchmakingModifier](/vext/ref/fb/matchmakingmodifier). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MatchmakingModifier](/vext/ref/fb/matchmakingmodifier). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MatchmakingModifier](/vext/ref/fb/matchmakingmodifier) type.
+

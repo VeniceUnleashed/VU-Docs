@@ -1,36 +1,52 @@
 ---
 title: SuppressionSettings
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SuppressionSettings](#constructor-0)**() |
+| **[SuppressionSettings](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SuppressionSettings](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SuppressionSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SuppressionSettings {#constructor-0}
+> **SuppressionSettings**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| SuppressionSettings()                                                          | Create a new instance of this container type.                                                                                 |
-| SuppressionSettings(SuppressionSettings other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| SuppressionSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SuppressionSettings](/vext/ref/fb/suppressionsettings/). |
+Creates a new [SuppressionSettings](/vext/ref/fb/suppressionsettings) frostbite instance.
 
-## Methods
+### SuppressionSettings {#constructor-1}
+> **SuppressionSettings**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [SuppressionSettings](/vext/ref/fb/suppressionsettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SuppressionSettings](/vext/ref/fb/suppressionsettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SuppressionSettings](/vext/ref/fb/suppressionsettings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SuppressionSettings {#constructor-2}
+> **SuppressionSettings**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SuppressionSettings](/vext/ref/fb/suppressionsettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SuppressionSettings](/vext/ref/fb/suppressionsettings). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SuppressionSettings](/vext/ref/fb/suppressionsettings) type.
+

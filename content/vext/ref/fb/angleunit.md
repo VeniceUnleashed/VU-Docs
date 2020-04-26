@@ -1,13 +1,10 @@
 ---
 title: AngleUnit
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **AngleUnit_Radians** | Value: **0** |
+| **AngleUnit_Degrees** | Value: **1** |
 
-| Name               | Value | Description |
-| ------------------ | ----- | ----------- |
-| AngleUnit\_Radians | 0     |             |
-| AngleUnit\_Degrees | 1     |             |

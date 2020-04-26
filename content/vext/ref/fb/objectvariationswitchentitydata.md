@@ -1,46 +1,98 @@
 ---
 title: ObjectVariationSwitchEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ObjectVariationSwitchEntityData](#constructor-0)**() |
+| **[ObjectVariationSwitchEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ObjectVariationSwitchEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[ObjectVariationSwitchEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[ObjectVariationSwitchEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[ObjectVariationSwitchEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "variation1" >}} | [ObjectVariation](/vext/ref/fb/objectvariation) \| nil |
+| {{< prop "variation2" >}} | [ObjectVariation](/vext/ref/fb/objectvariation) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ObjectVariationSwitchEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ObjectVariationSwitchEntityData {#constructor-0}
+> **ObjectVariationSwitchEntityData**()
 
-| Constructor                                                                                | Description                                                                                                                                           |
-| ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ObjectVariationSwitchEntityData()                                                          | Create a new instance of this container type.                                                                                                         |
-| ObjectVariationSwitchEntityData(ObjectVariationSwitchEntityData other)                     | Create a reference copy of an instance of the same type.                                                                                              |
-| ObjectVariationSwitchEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [ObjectVariationSwitchEntityData](/vext/ref/fb/objectvariationswitchentitydata/).                            |
-| ObjectVariationSwitchEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [ObjectVariationSwitchEntityData](/vext/ref/fb/objectvariationswitchentitydata/).                    |
-| ObjectVariationSwitchEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [ObjectVariationSwitchEntityData](/vext/ref/fb/objectvariationswitchentitydata/).              |
-| ObjectVariationSwitchEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ObjectVariationSwitchEntityData](/vext/ref/fb/objectvariationswitchentitydata/). |
+Creates a new [ObjectVariationSwitchEntityData](/vext/ref/fb/objectvariationswitchentitydata) frostbite instance.
 
-## Properties
+### ObjectVariationSwitchEntityData {#constructor-1}
+> **ObjectVariationSwitchEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name       | Type                               | Description |
-| ---------- | ---------------------------------- | ----------- |
-| variation1 | [ObjectVariation](/vext/ref/fb/objectvariation/) |             |
-| variation2 | [ObjectVariation](/vext/ref/fb/objectvariation/) |             |
-
-## Methods
-
-| Type                                                               | Name            | Parameters                                     |
-| ------------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [ObjectVariationSwitchEntityData](/vext/ref/fb/objectvariationswitchentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ObjectVariationSwitchEntityData](/vext/ref/fb/objectvariationswitchentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ObjectVariationSwitchEntityData](/vext/ref/fb/objectvariationswitchentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ObjectVariationSwitchEntityData {#constructor-2}
+> **ObjectVariationSwitchEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [ObjectVariationSwitchEntityData](/vext/ref/fb/objectvariationswitchentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [ObjectVariationSwitchEntityData](/vext/ref/fb/objectvariationswitchentitydata). |
+
+### ObjectVariationSwitchEntityData {#constructor-3}
+> **ObjectVariationSwitchEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [ObjectVariationSwitchEntityData](/vext/ref/fb/objectvariationswitchentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [ObjectVariationSwitchEntityData](/vext/ref/fb/objectvariationswitchentitydata). |
+
+### ObjectVariationSwitchEntityData {#constructor-4}
+> **ObjectVariationSwitchEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [ObjectVariationSwitchEntityData](/vext/ref/fb/objectvariationswitchentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [ObjectVariationSwitchEntityData](/vext/ref/fb/objectvariationswitchentitydata). |
+
+### ObjectVariationSwitchEntityData {#constructor-5}
+> **ObjectVariationSwitchEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ObjectVariationSwitchEntityData](/vext/ref/fb/objectvariationswitchentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ObjectVariationSwitchEntityData](/vext/ref/fb/objectvariationswitchentitydata). |
+
+## Properties
+### {{% prop-heading "variation1" %}}
+> **[ObjectVariation](/vext/ref/fb/objectvariation)** | **nil**
+
+### {{% prop-heading "variation2" %}}
+> **[ObjectVariation](/vext/ref/fb/objectvariation)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ObjectVariationSwitchEntityData](/vext/ref/fb/objectvariationswitchentitydata) type.
+

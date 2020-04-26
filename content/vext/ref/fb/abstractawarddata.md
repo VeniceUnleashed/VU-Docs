@@ -1,37 +1,63 @@
 ---
 title: AbstractAwardData
 ---
-### Base Classes
 
-[TreeNodeBase](/vext/ref/fb/treenodebase/)
+Inherits from 
+[TreeNodeBase](/vext/ref/fb/treenodebase)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AbstractAwardData](#constructor-0)**() |
+| **[AbstractAwardData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[AbstractAwardData](#constructor-2)**(other: [TreeNodeBase](/vext/ref/fb/treenodebase)) |
+| **[AbstractAwardData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AbstractAwardData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AbstractAwardData {#constructor-0}
+> **AbstractAwardData**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| AbstractAwardData()                                                          | Create a new instance of this container type.                                                                             |
-| AbstractAwardData(AbstractAwardData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| AbstractAwardData([TreeNodeBase](/vext/ref/fb/treenodebase/) other)                        | Upcast an instance of type [TreeNodeBase](/vext/ref/fb/treenodebase/) to [AbstractAwardData](/vext/ref/fb/abstractawarddata/).                        |
-| AbstractAwardData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AbstractAwardData](/vext/ref/fb/abstractawarddata/). |
+Creates a new [AbstractAwardData](/vext/ref/fb/abstractawarddata) frostbite instance.
 
-## Methods
+### AbstractAwardData {#constructor-1}
+> **AbstractAwardData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [AbstractAwardData](/vext/ref/fb/abstractawarddata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [AbstractAwardData](/vext/ref/fb/abstractawarddata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [AbstractAwardData](/vext/ref/fb/abstractawarddata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### AbstractAwardData {#constructor-2}
+> **AbstractAwardData**(other: [TreeNodeBase](/vext/ref/fb/treenodebase))
+
+Casts an instance of type [TreeNodeBase](/vext/ref/fb/treenodebase) to [AbstractAwardData](/vext/ref/fb/abstractawarddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [TreeNodeBase](/vext/ref/fb/treenodebase) | The instance to cast to [AbstractAwardData](/vext/ref/fb/abstractawarddata). |
+
+### AbstractAwardData {#constructor-3}
+> **AbstractAwardData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AbstractAwardData](/vext/ref/fb/abstractawarddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [AbstractAwardData](/vext/ref/fb/abstractawarddata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AbstractAwardData](/vext/ref/fb/abstractawarddata) type.
+

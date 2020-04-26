@@ -1,65 +1,174 @@
 ---
 title: OutdoorLightComponentData
 ---
-### Base Classes
 
-[ComponentData](/vext/ref/fb/componentdata/)
+Inherits from 
+[ComponentData](/vext/ref/fb/componentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[OutdoorLightComponentData](#constructor-0)**() |
+| **[OutdoorLightComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[OutdoorLightComponentData](#constructor-2)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[OutdoorLightComponentData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[OutdoorLightComponentData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[OutdoorLightComponentData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "sunColor" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "cloudShadowSpeed" >}} | [Vec2](/vext/ref/shared/class/vec2) |
+| {{< prop "skyColor" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "groundColor" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "sunRotationY" >}} | float |
+| {{< prop "sunRotationX" >}} | float |
+| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
+| {{< prop "skyLightAngleFactor" >}} | float |
+| {{< prop "sunSpecularScale" >}} | float |
+| {{< prop "skyEnvmapShadowScale" >}} | float |
+| {{< prop "sunShadowHeightScale" >}} | float |
+| {{< prop "cloudShadowCoverage" >}} | float |
+| {{< prop "cloudShadowTexture" >}} | [TextureAsset](/vext/ref/fb/textureasset) \| nil |
+| {{< prop "translucencyDistortion" >}} | float |
+| {{< prop "cloudShadowSize" >}} | float |
+| {{< prop "translucencyAmbient" >}} | float |
+| {{< prop "cloudShadowExponent" >}} | float |
+| {{< prop "translucencyScale" >}} | float |
+| {{< prop "translucencyPower" >}} | float |
+| {{< prop "enable" >}} | bool |
+| {{< prop "cloudShadowEnable" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "OutdoorLightComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### OutdoorLightComponentData {#constructor-0}
+> **OutdoorLightComponentData**()
 
-| Constructor                                                                          | Description                                                                                                                               |
-| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| OutdoorLightComponentData()                                                          | Create a new instance of this container type.                                                                                             |
-| OutdoorLightComponentData(OutdoorLightComponentData other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| OutdoorLightComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [OutdoorLightComponentData](/vext/ref/fb/outdoorlightcomponentdata/).                      |
-| OutdoorLightComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [OutdoorLightComponentData](/vext/ref/fb/outdoorlightcomponentdata/).                    |
-| OutdoorLightComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [OutdoorLightComponentData](/vext/ref/fb/outdoorlightcomponentdata/).              |
-| OutdoorLightComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [OutdoorLightComponentData](/vext/ref/fb/outdoorlightcomponentdata/). |
+Creates a new [OutdoorLightComponentData](/vext/ref/fb/outdoorlightcomponentdata) frostbite instance.
 
-## Properties
+### OutdoorLightComponentData {#constructor-1}
+> **OutdoorLightComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                   | Type                              | Description |
-| ---------------------- | --------------------------------- | ----------- |
-| sunColor               | [Vec3](/vext/ref/shared/class/vec3) |             |
-| cloudShadowSpeed       | [Vec2](/vext/ref/shared/class/vec2) |             |
-| skyColor               | [Vec3](/vext/ref/shared/class/vec3) |             |
-| groundColor            | [Vec3](/vext/ref/shared/class/vec3) |             |
-| sunRotationY           | number                            |             |
-| sunRotationX           | number                            |             |
-| realm                  | [Realm](/vext/ref/fb/realm/)                    |             |
-| skyLightAngleFactor    | number                            |             |
-| sunSpecularScale       | number                            |             |
-| skyEnvmapShadowScale   | number                            |             |
-| sunShadowHeightScale   | number                            |             |
-| cloudShadowCoverage    | number                            |             |
-| cloudShadowTexture     | [TextureAsset](/vext/ref/fb/textureasset/)      |             |
-| translucencyDistortion | number                            |             |
-| cloudShadowSize        | number                            |             |
-| translucencyAmbient    | number                            |             |
-| cloudShadowExponent    | number                            |             |
-| translucencyScale      | number                            |             |
-| translucencyPower      | number                            |             |
-| enable                 | bool                              |             |
-| cloudShadowEnable      | bool                              |             |
-
-## Methods
-
-| Type                                                   | Name            | Parameters                                     |
-| ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [OutdoorLightComponentData](/vext/ref/fb/outdoorlightcomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [OutdoorLightComponentData](/vext/ref/fb/outdoorlightcomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [OutdoorLightComponentData](/vext/ref/fb/outdoorlightcomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### OutdoorLightComponentData {#constructor-2}
+> **OutdoorLightComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [OutdoorLightComponentData](/vext/ref/fb/outdoorlightcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [OutdoorLightComponentData](/vext/ref/fb/outdoorlightcomponentdata). |
+
+### OutdoorLightComponentData {#constructor-3}
+> **OutdoorLightComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [OutdoorLightComponentData](/vext/ref/fb/outdoorlightcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [OutdoorLightComponentData](/vext/ref/fb/outdoorlightcomponentdata). |
+
+### OutdoorLightComponentData {#constructor-4}
+> **OutdoorLightComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [OutdoorLightComponentData](/vext/ref/fb/outdoorlightcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [OutdoorLightComponentData](/vext/ref/fb/outdoorlightcomponentdata). |
+
+### OutdoorLightComponentData {#constructor-5}
+> **OutdoorLightComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [OutdoorLightComponentData](/vext/ref/fb/outdoorlightcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [OutdoorLightComponentData](/vext/ref/fb/outdoorlightcomponentdata). |
+
+## Properties
+### {{% prop-heading "sunColor" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "cloudShadowSpeed" %}}
+> **[Vec2](/vext/ref/shared/class/vec2)**
+
+### {{% prop-heading "skyColor" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "groundColor" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "sunRotationY" %}}
+> **float**
+
+### {{% prop-heading "sunRotationX" %}}
+> **float**
+
+### {{% prop-heading "realm" %}}
+> **[Realm](/vext/ref/fb/realm)**
+
+### {{% prop-heading "skyLightAngleFactor" %}}
+> **float**
+
+### {{% prop-heading "sunSpecularScale" %}}
+> **float**
+
+### {{% prop-heading "skyEnvmapShadowScale" %}}
+> **float**
+
+### {{% prop-heading "sunShadowHeightScale" %}}
+> **float**
+
+### {{% prop-heading "cloudShadowCoverage" %}}
+> **float**
+
+### {{% prop-heading "cloudShadowTexture" %}}
+> **[TextureAsset](/vext/ref/fb/textureasset)** | **nil**
+
+### {{% prop-heading "translucencyDistortion" %}}
+> **float**
+
+### {{% prop-heading "cloudShadowSize" %}}
+> **float**
+
+### {{% prop-heading "translucencyAmbient" %}}
+> **float**
+
+### {{% prop-heading "cloudShadowExponent" %}}
+> **float**
+
+### {{% prop-heading "translucencyScale" %}}
+> **float**
+
+### {{% prop-heading "translucencyPower" %}}
+> **float**
+
+### {{% prop-heading "enable" %}}
+> **bool**
+
+### {{% prop-heading "cloudShadowEnable" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [OutdoorLightComponentData](/vext/ref/fb/outdoorlightcomponentdata) type.
+

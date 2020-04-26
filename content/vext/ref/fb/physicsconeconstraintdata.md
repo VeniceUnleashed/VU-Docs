@@ -1,48 +1,106 @@
 ---
 title: PhysicsConeConstraintData
 ---
-### Base Classes
 
-[PhysicsConstraintData](/vext/ref/fb/physicsconstraintdata/)
+Inherits from 
+[PhysicsConstraintData](/vext/ref/fb/physicsconstraintdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PhysicsConeConstraintData](#constructor-0)**() |
+| **[PhysicsConeConstraintData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PhysicsConeConstraintData](#constructor-2)**(other: [PhysicsConstraintData](/vext/ref/fb/physicsconstraintdata)) |
+| **[PhysicsConeConstraintData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[PhysicsConeConstraintData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[PhysicsConeConstraintData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "minAngle" >}} | float |
+| {{< prop "angularFriction" >}} | float |
+| {{< prop "maxAngle" >}} | float |
+| {{< prop "hasLimits" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PhysicsConeConstraintData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PhysicsConeConstraintData {#constructor-0}
+> **PhysicsConeConstraintData**()
 
-| Constructor                                                                          | Description                                                                                                                               |
-| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| PhysicsConeConstraintData()                                                          | Create a new instance of this container type.                                                                                             |
-| PhysicsConeConstraintData(PhysicsConeConstraintData other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| PhysicsConeConstraintData([PhysicsConstraintData](/vext/ref/fb/physicsconstraintdata/) other)      | Upcast an instance of type [PhysicsConstraintData](/vext/ref/fb/physicsconstraintdata/) to [PhysicsConeConstraintData](/vext/ref/fb/physicsconeconstraintdata/).      |
-| PhysicsConeConstraintData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [PhysicsConeConstraintData](/vext/ref/fb/physicsconeconstraintdata/).                    |
-| PhysicsConeConstraintData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [PhysicsConeConstraintData](/vext/ref/fb/physicsconeconstraintdata/).              |
-| PhysicsConeConstraintData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PhysicsConeConstraintData](/vext/ref/fb/physicsconeconstraintdata/). |
+Creates a new [PhysicsConeConstraintData](/vext/ref/fb/physicsconeconstraintdata) frostbite instance.
 
-## Properties
+### PhysicsConeConstraintData {#constructor-1}
+> **PhysicsConeConstraintData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name            | Type   | Description |
-| --------------- | ------ | ----------- |
-| minAngle        | number |             |
-| angularFriction | number |             |
-| maxAngle        | number |             |
-| hasLimits       | bool   |             |
-
-## Methods
-
-| Type                                                   | Name            | Parameters                                     |
-| ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [PhysicsConeConstraintData](/vext/ref/fb/physicsconeconstraintdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PhysicsConeConstraintData](/vext/ref/fb/physicsconeconstraintdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PhysicsConeConstraintData](/vext/ref/fb/physicsconeconstraintdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PhysicsConeConstraintData {#constructor-2}
+> **PhysicsConeConstraintData**(other: [PhysicsConstraintData](/vext/ref/fb/physicsconstraintdata))
+
+Casts an instance of type [PhysicsConstraintData](/vext/ref/fb/physicsconstraintdata) to [PhysicsConeConstraintData](/vext/ref/fb/physicsconeconstraintdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [PhysicsConstraintData](/vext/ref/fb/physicsconstraintdata) | The instance to cast to [PhysicsConeConstraintData](/vext/ref/fb/physicsconeconstraintdata). |
+
+### PhysicsConeConstraintData {#constructor-3}
+> **PhysicsConeConstraintData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [PhysicsConeConstraintData](/vext/ref/fb/physicsconeconstraintdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [PhysicsConeConstraintData](/vext/ref/fb/physicsconeconstraintdata). |
+
+### PhysicsConeConstraintData {#constructor-4}
+> **PhysicsConeConstraintData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [PhysicsConeConstraintData](/vext/ref/fb/physicsconeconstraintdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [PhysicsConeConstraintData](/vext/ref/fb/physicsconeconstraintdata). |
+
+### PhysicsConeConstraintData {#constructor-5}
+> **PhysicsConeConstraintData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PhysicsConeConstraintData](/vext/ref/fb/physicsconeconstraintdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PhysicsConeConstraintData](/vext/ref/fb/physicsconeconstraintdata). |
+
+## Properties
+### {{% prop-heading "minAngle" %}}
+> **float**
+
+### {{% prop-heading "angularFriction" %}}
+> **float**
+
+### {{% prop-heading "maxAngle" %}}
+> **float**
+
+### {{% prop-heading "hasLimits" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PhysicsConeConstraintData](/vext/ref/fb/physicsconeconstraintdata) type.
+

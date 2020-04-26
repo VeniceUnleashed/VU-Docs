@@ -1,19 +1,16 @@
 ---
 title: UIIconState
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **UIIconState_Default** | Value: **0** |
+| **UIIconState_Enemy** | Value: **1** |
+| **UIIconState_Friendly** | Value: **2** |
+| **UIIconState_Neutral** | Value: **3** |
+| **UIIconState_Squad** | Value: **4** |
+| **UIIconState_Blink** | Value: **5** |
+| **UIIconState_BlinkEnemy** | Value: **6** |
+| **UIIconState_Count** | Value: **7** |
 
-| Name                    | Value | Description |
-| ----------------------- | ----- | ----------- |
-| UIIconState\_Default    | 0     |             |
-| UIIconState\_Enemy      | 1     |             |
-| UIIconState\_Friendly   | 2     |             |
-| UIIconState\_Neutral    | 3     |             |
-| UIIconState\_Squad      | 4     |             |
-| UIIconState\_Blink      | 5     |             |
-| UIIconState\_BlinkEnemy | 6     |             |
-| UIIconState\_Count      | 7     |             |

@@ -1,17 +1,14 @@
 ---
 title: AdministrationEventType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **AdministrationEventType_Add** | Value: **0** |
+| **AdministrationEventType_Remove** | Value: **1** |
+| **AdministrationEventType_Clear** | Value: **2** |
+| **AdministrationEventType_List** | Value: **3** |
+| **AdministrationEventType_Load** | Value: **4** |
+| **AdministrationEventType_Save** | Value: **5** |
 
-| Name                            | Value | Description |
-| ------------------------------- | ----- | ----------- |
-| AdministrationEventType\_Add    | 0     |             |
-| AdministrationEventType\_Remove | 1     |             |
-| AdministrationEventType\_Clear  | 2     |             |
-| AdministrationEventType\_List   | 3     |             |
-| AdministrationEventType\_Load   | 4     |             |
-| AdministrationEventType\_Save   | 5     |             |

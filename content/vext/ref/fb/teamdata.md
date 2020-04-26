@@ -1,47 +1,95 @@
 ---
 title: TeamData
 ---
-### Base Classes
 
-[TeamAsset](/vext/ref/fb/teamasset/)
+Inherits from 
+[TeamAsset](/vext/ref/fb/teamasset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[TeamData](#constructor-0)**() |
+| **[TeamData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[TeamData](#constructor-2)**(other: [TeamAsset](/vext/ref/fb/teamasset)) |
+| **[TeamData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[TeamData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "soldier" >}} | [SoldierBlueprint](/vext/ref/fb/soldierblueprint) \| nil |
+| {{< prop "faction" >}} | [FactionId](/vext/ref/fb/factionid) |
+| {{< prop "soldierCustomization" >}} | [SoldierCustomizationAsset](/vext/ref/fb/soldiercustomizationasset)[] |
+| {{< prop "vehicleCustomization" >}} | [VehicleCustomizationAsset](/vext/ref/fb/vehiclecustomizationasset)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "TeamData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### TeamData {#constructor-0}
+> **TeamData**()
 
-| Constructor                                                         | Description                                                                                             |
-| ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| TeamData()                                                          | Create a new instance of this container type.                                                           |
-| TeamData(TeamData other)                                            | Create a reference copy of an instance of the same type.                                                |
-| TeamData([TeamAsset](/vext/ref/fb/teamasset/) other)                              | Upcast an instance of type [TeamAsset](/vext/ref/fb/teamasset/) to [TeamData](/vext/ref/fb/teamdata/).                              |
-| TeamData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [TeamData](/vext/ref/fb/teamdata/).                                      |
-| TeamData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TeamData](/vext/ref/fb/teamdata/). |
+Creates a new [TeamData](/vext/ref/fb/teamdata) frostbite instance.
 
-## Properties
+### TeamData {#constructor-1}
+> **TeamData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                 | Type                                                       | Description |
-| -------------------- | ---------------------------------------------------------- | ----------- |
-| soldier              | [SoldierBlueprint](/vext/ref/fb/soldierblueprint/)                       |             |
-| faction              | [FactionId](/vext/ref/fb/factionid/)                                     |             |
-| soldierCustomization | [SoldierCustomizationAsset](/vext/ref/fb/soldiercustomizationasset/)\[\] |             |
-| vehicleCustomization | [VehicleCustomizationAsset](/vext/ref/fb/vehiclecustomizationasset/)\[\] |             |
-
-## Methods
-
-| Type                 | Name            | Parameters                                     |
-| -------------------- | --------------- | ---------------------------------------------- |
-| [TeamData](/vext/ref/fb/teamdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [TeamData](/vext/ref/fb/teamdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [TeamData](/vext/ref/fb/teamdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### TeamData {#constructor-2}
+> **TeamData**(other: [TeamAsset](/vext/ref/fb/teamasset))
+
+Casts an instance of type [TeamAsset](/vext/ref/fb/teamasset) to [TeamData](/vext/ref/fb/teamdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [TeamAsset](/vext/ref/fb/teamasset) | The instance to cast to [TeamData](/vext/ref/fb/teamdata). |
+
+### TeamData {#constructor-3}
+> **TeamData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [TeamData](/vext/ref/fb/teamdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [TeamData](/vext/ref/fb/teamdata). |
+
+### TeamData {#constructor-4}
+> **TeamData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TeamData](/vext/ref/fb/teamdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [TeamData](/vext/ref/fb/teamdata). |
+
+## Properties
+### {{% prop-heading "soldier" %}}
+> **[SoldierBlueprint](/vext/ref/fb/soldierblueprint)** | **nil**
+
+### {{% prop-heading "faction" %}}
+> **[FactionId](/vext/ref/fb/factionid)**
+
+### {{% prop-heading "soldierCustomization" %}}
+> **[SoldierCustomizationAsset](/vext/ref/fb/soldiercustomizationasset)**[]
+
+### {{% prop-heading "vehicleCustomization" %}}
+> **[VehicleCustomizationAsset](/vext/ref/fb/vehiclecustomizationasset)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [TeamData](/vext/ref/fb/teamdata) type.
+

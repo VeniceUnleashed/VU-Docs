@@ -1,19 +1,16 @@
 ---
 title: DepthStencilCompareFunc
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **DepthStencilCompareFunc_Never** | Value: **0** |
+| **DepthStencilCompareFunc_Less** | Value: **1** |
+| **DepthStencilCompareFunc_Equal** | Value: **2** |
+| **DepthStencilCompareFunc_LessEqual** | Value: **3** |
+| **DepthStencilCompareFunc_Greater** | Value: **4** |
+| **DepthStencilCompareFunc_NotEqual** | Value: **5** |
+| **DepthStencilCompareFunc_GreaterEqual** | Value: **6** |
+| **DepthStencilCompareFunc_Always** | Value: **7** |
 
-| Name                                  | Value | Description |
-| ------------------------------------- | ----- | ----------- |
-| DepthStencilCompareFunc\_Never        | 0     |             |
-| DepthStencilCompareFunc\_Less         | 1     |             |
-| DepthStencilCompareFunc\_Equal        | 2     |             |
-| DepthStencilCompareFunc\_LessEqual    | 3     |             |
-| DepthStencilCompareFunc\_Greater      | 4     |             |
-| DepthStencilCompareFunc\_NotEqual     | 5     |             |
-| DepthStencilCompareFunc\_GreaterEqual | 6     |             |
-| DepthStencilCompareFunc\_Always       | 7     |             |

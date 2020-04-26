@@ -1,46 +1,91 @@
 ---
 title: VoiceOverProbabilityNode
 ---
-### Base Classes
 
-[VoiceOverExpressionNode](/vext/ref/fb/voiceoverexpressionnode/)
+Inherits from 
+[VoiceOverExpressionNode](/vext/ref/fb/voiceoverexpressionnode)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VoiceOverProbabilityNode](#constructor-0)**() |
+| **[VoiceOverProbabilityNode](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VoiceOverProbabilityNode](#constructor-2)**(other: [VoiceOverExpressionNode](/vext/ref/fb/voiceoverexpressionnode)) |
+| **[VoiceOverProbabilityNode](#constructor-3)**(other: [VoiceOverNode](/vext/ref/fb/voiceovernode)) |
+| **[VoiceOverProbabilityNode](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "falseValue" >}} | [VoiceOverValue](/vext/ref/fb/voiceovervalue) \| nil |
+| {{< prop "trueValue" >}} | [VoiceOverValue](/vext/ref/fb/voiceovervalue) \| nil |
+| {{< prop "probability" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VoiceOverProbabilityNode" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VoiceOverProbabilityNode {#constructor-0}
+> **VoiceOverProbabilityNode**()
 
-| Constructor                                                                         | Description                                                                                                                             |
-| ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| VoiceOverProbabilityNode()                                                          | Create a new instance of this container type.                                                                                           |
-| VoiceOverProbabilityNode(VoiceOverProbabilityNode other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| VoiceOverProbabilityNode([VoiceOverExpressionNode](/vext/ref/fb/voiceoverexpressionnode/) other)  | Upcast an instance of type [VoiceOverExpressionNode](/vext/ref/fb/voiceoverexpressionnode/) to [VoiceOverProbabilityNode](/vext/ref/fb/voiceoverprobabilitynode/).  |
-| VoiceOverProbabilityNode([VoiceOverNode](/vext/ref/fb/voiceovernode/) other)                      | Upcast an instance of type [VoiceOverNode](/vext/ref/fb/voiceovernode/) to [VoiceOverProbabilityNode](/vext/ref/fb/voiceoverprobabilitynode/).                      |
-| VoiceOverProbabilityNode([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverProbabilityNode](/vext/ref/fb/voiceoverprobabilitynode/). |
+Creates a new [VoiceOverProbabilityNode](/vext/ref/fb/voiceoverprobabilitynode) frostbite instance.
 
-## Properties
+### VoiceOverProbabilityNode {#constructor-1}
+> **VoiceOverProbabilityNode**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name        | Type                             | Description |
-| ----------- | -------------------------------- | ----------- |
-| falseValue  | [VoiceOverValue](/vext/ref/fb/voiceovervalue/) |             |
-| trueValue   | [VoiceOverValue](/vext/ref/fb/voiceovervalue/) |             |
-| probability | number                           |             |
-
-## Methods
-
-| Type                                                 | Name            | Parameters                                     |
-| ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [VoiceOverProbabilityNode](/vext/ref/fb/voiceoverprobabilitynode/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VoiceOverProbabilityNode](/vext/ref/fb/voiceoverprobabilitynode/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VoiceOverProbabilityNode](/vext/ref/fb/voiceoverprobabilitynode) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VoiceOverProbabilityNode {#constructor-2}
+> **VoiceOverProbabilityNode**(other: [VoiceOverExpressionNode](/vext/ref/fb/voiceoverexpressionnode))
+
+Casts an instance of type [VoiceOverExpressionNode](/vext/ref/fb/voiceoverexpressionnode) to [VoiceOverProbabilityNode](/vext/ref/fb/voiceoverprobabilitynode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [VoiceOverExpressionNode](/vext/ref/fb/voiceoverexpressionnode) | The instance to cast to [VoiceOverProbabilityNode](/vext/ref/fb/voiceoverprobabilitynode). |
+
+### VoiceOverProbabilityNode {#constructor-3}
+> **VoiceOverProbabilityNode**(other: [VoiceOverNode](/vext/ref/fb/voiceovernode))
+
+Casts an instance of type [VoiceOverNode](/vext/ref/fb/voiceovernode) to [VoiceOverProbabilityNode](/vext/ref/fb/voiceoverprobabilitynode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [VoiceOverNode](/vext/ref/fb/voiceovernode) | The instance to cast to [VoiceOverProbabilityNode](/vext/ref/fb/voiceoverprobabilitynode). |
+
+### VoiceOverProbabilityNode {#constructor-4}
+> **VoiceOverProbabilityNode**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverProbabilityNode](/vext/ref/fb/voiceoverprobabilitynode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VoiceOverProbabilityNode](/vext/ref/fb/voiceoverprobabilitynode). |
+
+## Properties
+### {{% prop-heading "falseValue" %}}
+> **[VoiceOverValue](/vext/ref/fb/voiceovervalue)** | **nil**
+
+### {{% prop-heading "trueValue" %}}
+> **[VoiceOverValue](/vext/ref/fb/voiceovervalue)** | **nil**
+
+### {{% prop-heading "probability" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VoiceOverProbabilityNode](/vext/ref/fb/voiceoverprobabilitynode) type.
+

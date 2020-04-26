@@ -1,59 +1,129 @@
 ---
 title: NetworkSettings
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[NetworkSettings](#constructor-0)**() |
+| **[NetworkSettings](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[NetworkSettings](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "protocolVersion" >}} | int |
+| {{< prop "titleId" >}} | string |
+| {{< prop "clientPort" >}} | int |
+| {{< prop "serverPort" >}} | int |
+| {{< prop "maxGhostCount" >}} | int |
+| {{< prop "maxClientCount" >}} | int |
+| {{< prop "maxClientFrameSize" >}} | int |
+| {{< prop "maxServerFrameSize" >}} | int |
+| {{< prop "xlspAddress" >}} | string |
+| {{< prop "serverAddress" >}} | string |
+| {{< prop "clientConnectionDebugFilePrefix" >}} | string |
+| {{< prop "serverConnectionDebugFilePrefix" >}} | string |
+| {{< prop "timeNudgeGhostFrequencyFactor" >}} | float |
+| {{< prop "timeNudgeBias" >}} | float |
+| {{< prop "connectTimeout" >}} | float |
+| {{< prop "useFrameManager" >}} | bool |
+| {{< prop "timeSyncEnabled" >}} | bool |
+| {{< prop "incrementServerPortOnFail" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "NetworkSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### NetworkSettings {#constructor-0}
+> **NetworkSettings**()
 
-| Constructor                                                                | Description                                                                                                           |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| NetworkSettings()                                                          | Create a new instance of this container type.                                                                         |
-| NetworkSettings(NetworkSettings other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| NetworkSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [NetworkSettings](/vext/ref/fb/networksettings/). |
+Creates a new [NetworkSettings](/vext/ref/fb/networksettings) frostbite instance.
 
-## Properties
+### NetworkSettings {#constructor-1}
+> **NetworkSettings**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                            | Type   | Description |
-| ------------------------------- | ------ | ----------- |
-| protocolVersion                 | number |             |
-| titleId                         | string |             |
-| clientPort                      | number |             |
-| serverPort                      | number |             |
-| maxGhostCount                   | number |             |
-| maxClientCount                  | number |             |
-| maxClientFrameSize              | number |             |
-| maxServerFrameSize              | number |             |
-| xlspAddress                     | string |             |
-| serverAddress                   | string |             |
-| clientConnectionDebugFilePrefix | string |             |
-| serverConnectionDebugFilePrefix | string |             |
-| timeNudgeGhostFrequencyFactor   | number |             |
-| timeNudgeBias                   | number |             |
-| connectTimeout                  | number |             |
-| useFrameManager                 | bool   |             |
-| timeSyncEnabled                 | bool   |             |
-| incrementServerPortOnFail       | bool   |             |
-
-## Methods
-
-| Type                               | Name            | Parameters                                     |
-| ---------------------------------- | --------------- | ---------------------------------------------- |
-| [NetworkSettings](/vext/ref/fb/networksettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [NetworkSettings](/vext/ref/fb/networksettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [NetworkSettings](/vext/ref/fb/networksettings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### NetworkSettings {#constructor-2}
+> **NetworkSettings**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [NetworkSettings](/vext/ref/fb/networksettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [NetworkSettings](/vext/ref/fb/networksettings). |
+
+## Properties
+### {{% prop-heading "protocolVersion" %}}
+> **int**
+
+### {{% prop-heading "titleId" %}}
+> **string**
+
+### {{% prop-heading "clientPort" %}}
+> **int**
+
+### {{% prop-heading "serverPort" %}}
+> **int**
+
+### {{% prop-heading "maxGhostCount" %}}
+> **int**
+
+### {{% prop-heading "maxClientCount" %}}
+> **int**
+
+### {{% prop-heading "maxClientFrameSize" %}}
+> **int**
+
+### {{% prop-heading "maxServerFrameSize" %}}
+> **int**
+
+### {{% prop-heading "xlspAddress" %}}
+> **string**
+
+### {{% prop-heading "serverAddress" %}}
+> **string**
+
+### {{% prop-heading "clientConnectionDebugFilePrefix" %}}
+> **string**
+
+### {{% prop-heading "serverConnectionDebugFilePrefix" %}}
+> **string**
+
+### {{% prop-heading "timeNudgeGhostFrequencyFactor" %}}
+> **float**
+
+### {{% prop-heading "timeNudgeBias" %}}
+> **float**
+
+### {{% prop-heading "connectTimeout" %}}
+> **float**
+
+### {{% prop-heading "useFrameManager" %}}
+> **bool**
+
+### {{% prop-heading "timeSyncEnabled" %}}
+> **bool**
+
+### {{% prop-heading "incrementServerPortOnFail" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [NetworkSettings](/vext/ref/fb/networksettings) type.
+

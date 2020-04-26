@@ -1,14 +1,11 @@
 ---
 title: VertexNormalSpace
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **VnsObject** | Value: **0** |
+| **VnsInstance** | Value: **1** |
+| **VnsWorld** | Value: **2** |
 
-| Name        | Value | Description |
-| ----------- | ----- | ----------- |
-| VnsObject   | 0     |             |
-| VnsInstance | 1     |             |
-| VnsWorld    | 2     |             |

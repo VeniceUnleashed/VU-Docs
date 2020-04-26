@@ -1,14 +1,11 @@
 ---
 title: DebugRenderType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **DebugRenderType_Text** | Value: **0** |
+| **DebugRenderType_Plot** | Value: **1** |
+| **DebugRenderType_Bar** | Value: **2** |
 
-| Name                  | Value | Description |
-| --------------------- | ----- | ----------- |
-| DebugRenderType\_Text | 0     |             |
-| DebugRenderType\_Plot | 1     |             |
-| DebugRenderType\_Bar  | 2     |             |

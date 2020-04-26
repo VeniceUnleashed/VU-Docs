@@ -1,17 +1,14 @@
 ---
 title: CompareOp
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **CompareOp_Equal** | Value: **0** |
+| **CompareOp_NotEqual** | Value: **1** |
+| **CompareOp_Greater** | Value: **2** |
+| **CompareOp_Less** | Value: **3** |
+| **CompareOp_GreaterOrEqual** | Value: **4** |
+| **CompareOp_LessOrEqual** | Value: **5** |
 
-| Name                      | Value | Description |
-| ------------------------- | ----- | ----------- |
-| CompareOp\_Equal          | 0     |             |
-| CompareOp\_NotEqual       | 1     |             |
-| CompareOp\_Greater        | 2     |             |
-| CompareOp\_Less           | 3     |             |
-| CompareOp\_GreaterOrEqual | 4     |             |
-| CompareOp\_LessOrEqual    | 5     |             |

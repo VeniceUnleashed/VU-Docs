@@ -1,18 +1,15 @@
 ---
 title: PostProcessDebugMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **PpdmDefault** | Value: **0** |
+| **PpdmBloom** | Value: **1** |
+| **PpdmBloomStep** | Value: **2** |
+| **PpdmDofBlur** | Value: **3** |
+| **PpdmBlur** | Value: **4** |
+| **PpdmBlurStep** | Value: **5** |
+| **PpdmDepth** | Value: **6** |
 
-| Name          | Value | Description |
-| ------------- | ----- | ----------- |
-| PpdmDefault   | 0     |             |
-| PpdmBloom     | 1     |             |
-| PpdmBloomStep | 2     |             |
-| PpdmDofBlur   | 3     |             |
-| PpdmBlur      | 4     |             |
-| PpdmBlurStep  | 5     |             |
-| PpdmDepth     | 6     |             |

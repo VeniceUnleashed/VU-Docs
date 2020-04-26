@@ -1,50 +1,114 @@
 ---
 title: FriendlyFireEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[FriendlyFireEntityData](#constructor-0)**() |
+| **[FriendlyFireEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[FriendlyFireEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[FriendlyFireEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[FriendlyFireEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[FriendlyFireEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "teams" >}} | [TeamId](/vext/ref/fb/teamid)[] |
+| {{< prop "enemyCommitmentAllocation" >}} | float |
+| {{< prop "friendlyCommitmentAllocation" >}} | float |
+| {{< prop "maxCommitment" >}} | float |
+| {{< prop "failureThreshold" >}} | float |
+| {{< prop "decayRate" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "FriendlyFireEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### FriendlyFireEntityData {#constructor-0}
+> **FriendlyFireEntityData**()
 
-| Constructor                                                                       | Description                                                                                                                         |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| FriendlyFireEntityData()                                                          | Create a new instance of this container type.                                                                                       |
-| FriendlyFireEntityData(FriendlyFireEntityData other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| FriendlyFireEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [FriendlyFireEntityData](/vext/ref/fb/friendlyfireentitydata/).                            |
-| FriendlyFireEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [FriendlyFireEntityData](/vext/ref/fb/friendlyfireentitydata/).                    |
-| FriendlyFireEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [FriendlyFireEntityData](/vext/ref/fb/friendlyfireentitydata/).              |
-| FriendlyFireEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [FriendlyFireEntityData](/vext/ref/fb/friendlyfireentitydata/). |
+Creates a new [FriendlyFireEntityData](/vext/ref/fb/friendlyfireentitydata) frostbite instance.
 
-## Properties
+### FriendlyFireEntityData {#constructor-1}
+> **FriendlyFireEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                         | Type                 | Description |
-| ---------------------------- | -------------------- | ----------- |
-| teams                        | [TeamId](/vext/ref/fb/teamid/)\[\] |             |
-| enemyCommitmentAllocation    | number               |             |
-| friendlyCommitmentAllocation | number               |             |
-| maxCommitment                | number               |             |
-| failureThreshold             | number               |             |
-| decayRate                    | number               |             |
-
-## Methods
-
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [FriendlyFireEntityData](/vext/ref/fb/friendlyfireentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [FriendlyFireEntityData](/vext/ref/fb/friendlyfireentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [FriendlyFireEntityData](/vext/ref/fb/friendlyfireentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### FriendlyFireEntityData {#constructor-2}
+> **FriendlyFireEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [FriendlyFireEntityData](/vext/ref/fb/friendlyfireentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [FriendlyFireEntityData](/vext/ref/fb/friendlyfireentitydata). |
+
+### FriendlyFireEntityData {#constructor-3}
+> **FriendlyFireEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [FriendlyFireEntityData](/vext/ref/fb/friendlyfireentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [FriendlyFireEntityData](/vext/ref/fb/friendlyfireentitydata). |
+
+### FriendlyFireEntityData {#constructor-4}
+> **FriendlyFireEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [FriendlyFireEntityData](/vext/ref/fb/friendlyfireentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [FriendlyFireEntityData](/vext/ref/fb/friendlyfireentitydata). |
+
+### FriendlyFireEntityData {#constructor-5}
+> **FriendlyFireEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [FriendlyFireEntityData](/vext/ref/fb/friendlyfireentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [FriendlyFireEntityData](/vext/ref/fb/friendlyfireentitydata). |
+
+## Properties
+### {{% prop-heading "teams" %}}
+> **[TeamId](/vext/ref/fb/teamid)**[]
+
+### {{% prop-heading "enemyCommitmentAllocation" %}}
+> **float**
+
+### {{% prop-heading "friendlyCommitmentAllocation" %}}
+> **float**
+
+### {{% prop-heading "maxCommitment" %}}
+> **float**
+
+### {{% prop-heading "failureThreshold" %}}
+> **float**
+
+### {{% prop-heading "decayRate" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [FriendlyFireEntityData](/vext/ref/fb/friendlyfireentitydata) type.
+

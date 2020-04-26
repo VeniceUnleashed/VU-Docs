@@ -1,58 +1,132 @@
 ---
 title: WeaponFiringData
 ---
-### Base Classes
 
-[GameDataContainer](/vext/ref/fb/gamedatacontainer/)
+Inherits from 
+[GameDataContainer](/vext/ref/fb/gamedatacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[WeaponFiringData](#constructor-0)**() |
+| **[WeaponFiringData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[WeaponFiringData](#constructor-2)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[WeaponFiringData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "primaryFire" >}} | [FiringFunctionData](/vext/ref/fb/firingfunctiondata) \| nil |
+| {{< prop "deployTime" >}} | float |
+| {{< prop "reactivateCooldownTime" >}} | float |
+| {{< prop "disableZoomOnDeployTime" >}} | float |
+| {{< prop "altDeployTime" >}} | float |
+| {{< prop "altDeployId" >}} | int |
+| {{< prop "weaponSway" >}} | [WeaponSwayData](/vext/ref/fb/weaponswaydata) \| nil |
+| {{< prop "supportDelayProne" >}} | float |
+| {{< prop "supportDelayStand" >}} | float |
+| {{< prop "rumble" >}} | [RumbleFiringData](/vext/ref/fb/rumblefiringdata) |
+| {{< prop "inflictSelfDamage" >}} | bool |
+| {{< prop "useAutoAiming" >}} | bool |
+| {{< prop "showEnemyNametagOnAim" >}} | bool |
+| {{< prop "reloadWholeMags" >}} | bool |
+| {{< prop "disableReloadWhileSprinting" >}} | bool |
+| {{< prop "abortReloadOnSprint" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "WeaponFiringData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### WeaponFiringData {#constructor-0}
+> **WeaponFiringData**()
 
-| Constructor                                                                 | Description                                                                                                             |
-| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| WeaponFiringData()                                                          | Create a new instance of this container type.                                                                           |
-| WeaponFiringData(WeaponFiringData other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| WeaponFiringData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [WeaponFiringData](/vext/ref/fb/weaponfiringdata/).              |
-| WeaponFiringData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponFiringData](/vext/ref/fb/weaponfiringdata/). |
+Creates a new [WeaponFiringData](/vext/ref/fb/weaponfiringdata) frostbite instance.
 
-## Properties
+### WeaponFiringData {#constructor-1}
+> **WeaponFiringData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                        | Type                                     | Description |
-| --------------------------- | ---------------------------------------- | ----------- |
-| primaryFire                 | [FiringFunctionData](/vext/ref/fb/firingfunctiondata/) |             |
-| deployTime                  | number                                   |             |
-| reactivateCooldownTime      | number                                   |             |
-| disableZoomOnDeployTime     | number                                   |             |
-| altDeployTime               | number                                   |             |
-| altDeployId                 | number                                   |             |
-| weaponSway                  | [WeaponSwayData](/vext/ref/fb/weaponswaydata/)         |             |
-| supportDelayProne           | number                                   |             |
-| supportDelayStand           | number                                   |             |
-| rumble                      | [RumbleFiringData](/vext/ref/fb/rumblefiringdata/)     |             |
-| inflictSelfDamage           | bool                                     |             |
-| useAutoAiming               | bool                                     |             |
-| showEnemyNametagOnAim       | bool                                     |             |
-| reloadWholeMags             | bool                                     |             |
-| disableReloadWhileSprinting | bool                                     |             |
-| abortReloadOnSprint         | bool                                     |             |
-
-## Methods
-
-| Type                                 | Name            | Parameters                                     |
-| ------------------------------------ | --------------- | ---------------------------------------------- |
-| [WeaponFiringData](/vext/ref/fb/weaponfiringdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [WeaponFiringData](/vext/ref/fb/weaponfiringdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [WeaponFiringData](/vext/ref/fb/weaponfiringdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### WeaponFiringData {#constructor-2}
+> **WeaponFiringData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [WeaponFiringData](/vext/ref/fb/weaponfiringdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [WeaponFiringData](/vext/ref/fb/weaponfiringdata). |
+
+### WeaponFiringData {#constructor-3}
+> **WeaponFiringData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponFiringData](/vext/ref/fb/weaponfiringdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [WeaponFiringData](/vext/ref/fb/weaponfiringdata). |
+
+## Properties
+### {{% prop-heading "primaryFire" %}}
+> **[FiringFunctionData](/vext/ref/fb/firingfunctiondata)** | **nil**
+
+### {{% prop-heading "deployTime" %}}
+> **float**
+
+### {{% prop-heading "reactivateCooldownTime" %}}
+> **float**
+
+### {{% prop-heading "disableZoomOnDeployTime" %}}
+> **float**
+
+### {{% prop-heading "altDeployTime" %}}
+> **float**
+
+### {{% prop-heading "altDeployId" %}}
+> **int**
+
+### {{% prop-heading "weaponSway" %}}
+> **[WeaponSwayData](/vext/ref/fb/weaponswaydata)** | **nil**
+
+### {{% prop-heading "supportDelayProne" %}}
+> **float**
+
+### {{% prop-heading "supportDelayStand" %}}
+> **float**
+
+### {{% prop-heading "rumble" %}}
+> **[RumbleFiringData](/vext/ref/fb/rumblefiringdata)**
+
+### {{% prop-heading "inflictSelfDamage" %}}
+> **bool**
+
+### {{% prop-heading "useAutoAiming" %}}
+> **bool**
+
+### {{% prop-heading "showEnemyNametagOnAim" %}}
+> **bool**
+
+### {{% prop-heading "reloadWholeMags" %}}
+> **bool**
+
+### {{% prop-heading "disableReloadWhileSprinting" %}}
+> **bool**
+
+### {{% prop-heading "abortReloadOnSprint" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [WeaponFiringData](/vext/ref/fb/weaponfiringdata) type.
+

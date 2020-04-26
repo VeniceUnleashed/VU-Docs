@@ -1,14 +1,11 @@
 ---
 title: MeshScatteringOrientationMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **MeshScatteringOrientationMode_Horizontal** | Value: **0** |
+| **MeshScatteringOrientationMode_LeanToTerrain** | Value: **1** |
+| **MeshScatteringOrientationMode_SkewToTerrain** | Value: **2** |
 
-| Name                                         | Value | Description |
-| -------------------------------------------- | ----- | ----------- |
-| MeshScatteringOrientationMode\_Horizontal    | 0     |             |
-| MeshScatteringOrientationMode\_LeanToTerrain | 1     |             |
-| MeshScatteringOrientationMode\_SkewToTerrain | 2     |             |

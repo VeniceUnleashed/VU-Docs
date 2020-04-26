@@ -1,50 +1,121 @@
 ---
 title: PlayerEntryComponentData
 ---
-### Base Classes
 
-[EntryComponentData](/vext/ref/fb/entrycomponentdata/)
+Inherits from 
+[EntryComponentData](/vext/ref/fb/entrycomponentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PlayerEntryComponentData](#constructor-0)**() |
+| **[PlayerEntryComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PlayerEntryComponentData](#constructor-2)**(other: [EntryComponentData](/vext/ref/fb/entrycomponentdata)) |
+| **[PlayerEntryComponentData](#constructor-3)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[PlayerEntryComponentData](#constructor-4)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[PlayerEntryComponentData](#constructor-5)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[PlayerEntryComponentData](#constructor-6)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "animationAccelerationMultiplier" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "antEntryId" >}} | [AntEntryIdEnum](/vext/ref/fb/antentryidenum) |
+| {{< prop "antEntryID" >}} | string |
+| {{< prop "antEntryEnumeration" >}} | [AntEnumeration](/vext/ref/fb/antenumeration) \| nil |
+| {{< prop "shieldedTransitionExitTime" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PlayerEntryComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PlayerEntryComponentData {#constructor-0}
+> **PlayerEntryComponentData**()
 
-| Constructor                                                                         | Description                                                                                                                             |
-| ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| PlayerEntryComponentData()                                                          | Create a new instance of this container type.                                                                                           |
-| PlayerEntryComponentData(PlayerEntryComponentData other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| PlayerEntryComponentData([EntryComponentData](/vext/ref/fb/entrycomponentdata/) other)            | Upcast an instance of type [EntryComponentData](/vext/ref/fb/entrycomponentdata/) to [PlayerEntryComponentData](/vext/ref/fb/playerentrycomponentdata/).            |
-| PlayerEntryComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [PlayerEntryComponentData](/vext/ref/fb/playerentrycomponentdata/).                      |
-| PlayerEntryComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [PlayerEntryComponentData](/vext/ref/fb/playerentrycomponentdata/).                    |
-| PlayerEntryComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [PlayerEntryComponentData](/vext/ref/fb/playerentrycomponentdata/).              |
-| PlayerEntryComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PlayerEntryComponentData](/vext/ref/fb/playerentrycomponentdata/). |
+Creates a new [PlayerEntryComponentData](/vext/ref/fb/playerentrycomponentdata) frostbite instance.
 
-## Properties
+### PlayerEntryComponentData {#constructor-1}
+> **PlayerEntryComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                            | Type                              | Description |
-| ------------------------------- | --------------------------------- | ----------- |
-| animationAccelerationMultiplier | [Vec3](/vext/ref/shared/class/vec3) |             |
-| antEntryId                      | [AntEntryIdEnum](/vext/ref/fb/antentryidenum/)  |             |
-| antEntryID                      | string                            |             |
-| antEntryEnumeration             | [AntEnumeration](/vext/ref/fb/antenumeration/)  |             |
-| shieldedTransitionExitTime      | number                            |             |
-
-## Methods
-
-| Type                                                 | Name            | Parameters                                     |
-| ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [PlayerEntryComponentData](/vext/ref/fb/playerentrycomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PlayerEntryComponentData](/vext/ref/fb/playerentrycomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PlayerEntryComponentData](/vext/ref/fb/playerentrycomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PlayerEntryComponentData {#constructor-2}
+> **PlayerEntryComponentData**(other: [EntryComponentData](/vext/ref/fb/entrycomponentdata))
+
+Casts an instance of type [EntryComponentData](/vext/ref/fb/entrycomponentdata) to [PlayerEntryComponentData](/vext/ref/fb/playerentrycomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntryComponentData](/vext/ref/fb/entrycomponentdata) | The instance to cast to [PlayerEntryComponentData](/vext/ref/fb/playerentrycomponentdata). |
+
+### PlayerEntryComponentData {#constructor-3}
+> **PlayerEntryComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [PlayerEntryComponentData](/vext/ref/fb/playerentrycomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [PlayerEntryComponentData](/vext/ref/fb/playerentrycomponentdata). |
+
+### PlayerEntryComponentData {#constructor-4}
+> **PlayerEntryComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [PlayerEntryComponentData](/vext/ref/fb/playerentrycomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [PlayerEntryComponentData](/vext/ref/fb/playerentrycomponentdata). |
+
+### PlayerEntryComponentData {#constructor-5}
+> **PlayerEntryComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [PlayerEntryComponentData](/vext/ref/fb/playerentrycomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [PlayerEntryComponentData](/vext/ref/fb/playerentrycomponentdata). |
+
+### PlayerEntryComponentData {#constructor-6}
+> **PlayerEntryComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PlayerEntryComponentData](/vext/ref/fb/playerentrycomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PlayerEntryComponentData](/vext/ref/fb/playerentrycomponentdata). |
+
+## Properties
+### {{% prop-heading "animationAccelerationMultiplier" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "antEntryId" %}}
+> **[AntEntryIdEnum](/vext/ref/fb/antentryidenum)**
+
+### {{% prop-heading "antEntryID" %}}
+> **string**
+
+### {{% prop-heading "antEntryEnumeration" %}}
+> **[AntEnumeration](/vext/ref/fb/antenumeration)** | **nil**
+
+### {{% prop-heading "shieldedTransitionExitTime" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PlayerEntryComponentData](/vext/ref/fb/playerentrycomponentdata) type.
+

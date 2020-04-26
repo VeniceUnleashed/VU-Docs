@@ -1,49 +1,96 @@
 ---
 title: VehicleWaypointData
 ---
-### Base Classes
 
-[WaypointData](/vext/ref/fb/waypointdata/)
+Inherits from 
+[WaypointData](/vext/ref/fb/waypointdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VehicleWaypointData](#constructor-0)**() |
+| **[VehicleWaypointData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VehicleWaypointData](#constructor-2)**(other: [WaypointData](/vext/ref/fb/waypointdata)) |
+| **[VehicleWaypointData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "speed" >}} | float |
+| {{< prop "speedOverrideMovingTowards" >}} | float |
+| {{< prop "angleoffset" >}} | float |
+| {{< prop "stopHereRadius" >}} | float |
+| {{< prop "stoppingDeceleration" >}} | float |
+| {{< prop "minSlowdownSpeed" >}} | float |
+| {{< prop "stopHere" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VehicleWaypointData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VehicleWaypointData {#constructor-0}
+> **VehicleWaypointData**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| VehicleWaypointData()                                                          | Create a new instance of this container type.                                                                                 |
-| VehicleWaypointData(VehicleWaypointData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| VehicleWaypointData([WaypointData](/vext/ref/fb/waypointdata/) other)                        | Upcast an instance of type [WaypointData](/vext/ref/fb/waypointdata/) to [VehicleWaypointData](/vext/ref/fb/vehiclewaypointdata/).                        |
-| VehicleWaypointData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VehicleWaypointData](/vext/ref/fb/vehiclewaypointdata/). |
+Creates a new [VehicleWaypointData](/vext/ref/fb/vehiclewaypointdata) frostbite instance.
 
-## Properties
+### VehicleWaypointData {#constructor-1}
+> **VehicleWaypointData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                       | Type   | Description |
-| -------------------------- | ------ | ----------- |
-| speed                      | number |             |
-| speedOverrideMovingTowards | number |             |
-| angleoffset                | number |             |
-| stopHereRadius             | number |             |
-| stoppingDeceleration       | number |             |
-| minSlowdownSpeed           | number |             |
-| stopHere                   | bool   |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [VehicleWaypointData](/vext/ref/fb/vehiclewaypointdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VehicleWaypointData](/vext/ref/fb/vehiclewaypointdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VehicleWaypointData](/vext/ref/fb/vehiclewaypointdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VehicleWaypointData {#constructor-2}
+> **VehicleWaypointData**(other: [WaypointData](/vext/ref/fb/waypointdata))
+
+Casts an instance of type [WaypointData](/vext/ref/fb/waypointdata) to [VehicleWaypointData](/vext/ref/fb/vehiclewaypointdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [WaypointData](/vext/ref/fb/waypointdata) | The instance to cast to [VehicleWaypointData](/vext/ref/fb/vehiclewaypointdata). |
+
+### VehicleWaypointData {#constructor-3}
+> **VehicleWaypointData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VehicleWaypointData](/vext/ref/fb/vehiclewaypointdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VehicleWaypointData](/vext/ref/fb/vehiclewaypointdata). |
+
+## Properties
+### {{% prop-heading "speed" %}}
+> **float**
+
+### {{% prop-heading "speedOverrideMovingTowards" %}}
+> **float**
+
+### {{% prop-heading "angleoffset" %}}
+> **float**
+
+### {{% prop-heading "stopHereRadius" %}}
+> **float**
+
+### {{% prop-heading "stoppingDeceleration" %}}
+> **float**
+
+### {{% prop-heading "minSlowdownSpeed" %}}
+> **float**
+
+### {{% prop-heading "stopHere" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VehicleWaypointData](/vext/ref/fb/vehiclewaypointdata) type.
+

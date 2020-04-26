@@ -1,38 +1,74 @@
 ---
 title: UIIngameMenuCompData
 ---
-### Base Classes
 
-[UIComponentData](/vext/ref/fb/uicomponentdata/)
+Inherits from 
+[UIComponentData](/vext/ref/fb/uicomponentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIIngameMenuCompData](#constructor-0)**() |
+| **[UIIngameMenuCompData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UIIngameMenuCompData](#constructor-2)**(other: [UIComponentData](/vext/ref/fb/uicomponentdata)) |
+| **[UIIngameMenuCompData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[UIIngameMenuCompData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIIngameMenuCompData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIIngameMenuCompData {#constructor-0}
+> **UIIngameMenuCompData**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| UIIngameMenuCompData()                                                          | Create a new instance of this container type.                                                                                   |
-| UIIngameMenuCompData(UIIngameMenuCompData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| UIIngameMenuCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UIIngameMenuCompData](/vext/ref/fb/uiingamemenucompdata/).                  |
-| UIIngameMenuCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UIIngameMenuCompData](/vext/ref/fb/uiingamemenucompdata/).                                      |
-| UIIngameMenuCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIIngameMenuCompData](/vext/ref/fb/uiingamemenucompdata/). |
+Creates a new [UIIngameMenuCompData](/vext/ref/fb/uiingamemenucompdata) frostbite instance.
 
-## Methods
+### UIIngameMenuCompData {#constructor-1}
+> **UIIngameMenuCompData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [UIIngameMenuCompData](/vext/ref/fb/uiingamemenucompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UIIngameMenuCompData](/vext/ref/fb/uiingamemenucompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UIIngameMenuCompData](/vext/ref/fb/uiingamemenucompdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UIIngameMenuCompData {#constructor-2}
+> **UIIngameMenuCompData**(other: [UIComponentData](/vext/ref/fb/uicomponentdata))
+
+Casts an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata) to [UIIngameMenuCompData](/vext/ref/fb/uiingamemenucompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIComponentData](/vext/ref/fb/uicomponentdata) | The instance to cast to [UIIngameMenuCompData](/vext/ref/fb/uiingamemenucompdata). |
+
+### UIIngameMenuCompData {#constructor-3}
+> **UIIngameMenuCompData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [UIIngameMenuCompData](/vext/ref/fb/uiingamemenucompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [UIIngameMenuCompData](/vext/ref/fb/uiingamemenucompdata). |
+
+### UIIngameMenuCompData {#constructor-4}
+> **UIIngameMenuCompData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIIngameMenuCompData](/vext/ref/fb/uiingamemenucompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UIIngameMenuCompData](/vext/ref/fb/uiingamemenucompdata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIIngameMenuCompData](/vext/ref/fb/uiingamemenucompdata) type.
+

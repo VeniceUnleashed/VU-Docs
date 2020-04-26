@@ -1,20 +1,17 @@
 ---
 title: InputDeviceMouseButtons
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **IDB_Button_0** | Value: **0** |
+| **IDB_Button_1** | Value: **1** |
+| **IDB_Button_2** | Value: **2** |
+| **IDB_Button_3** | Value: **3** |
+| **IDB_Button_4** | Value: **4** |
+| **IDB_Button_5** | Value: **5** |
+| **IDB_Button_6** | Value: **6** |
+| **IDB_Button_7** | Value: **7** |
+| **IDB_Button_Undefined** | Value: **8** |
 
-| Name                   | Value | Description |
-| ---------------------- | ----- | ----------- |
-| IDB\_Button\_0         | 0     |             |
-| IDB\_Button\_1         | 1     |             |
-| IDB\_Button\_2         | 2     |             |
-| IDB\_Button\_3         | 3     |             |
-| IDB\_Button\_4         | 4     |             |
-| IDB\_Button\_5         | 5     |             |
-| IDB\_Button\_6         | 6     |             |
-| IDB\_Button\_7         | 7     |             |
-| IDB\_Button\_Undefined | 8     |             |

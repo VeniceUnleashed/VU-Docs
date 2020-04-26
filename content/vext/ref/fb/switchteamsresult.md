@@ -1,18 +1,15 @@
 ---
 title: SwitchTeamsResult
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **SwitchTeamsResult_Success** | Value: **-1** |
+| **SwitchTeamsResult_FailedUnbalanced** | Value: **0** |
+| **SwitchTeamsResult_FailedTooSoon** | Value: **1** |
+| **SwitchTeamsResult_FailedTooFewTickets** | Value: **2** |
+| **SwitchTeamsResult_FailedMustBeDead** | Value: **3** |
+| **SwitchTeamsResult_FailedTeamFull** | Value: **4** |
+| **SwitchTeamsResult_FailedDisabled** | Value: **5** |
 
-| Name                                   | Value | Description |
-| -------------------------------------- | ----- | ----------- |
-| SwitchTeamsResult\_Success             | \-1   |             |
-| SwitchTeamsResult\_FailedUnbalanced    | 0     |             |
-| SwitchTeamsResult\_FailedTooSoon       | 1     |             |
-| SwitchTeamsResult\_FailedTooFewTickets | 2     |             |
-| SwitchTeamsResult\_FailedMustBeDead    | 3     |             |
-| SwitchTeamsResult\_FailedTeamFull      | 4     |             |
-| SwitchTeamsResult\_FailedDisabled      | 5     |             |

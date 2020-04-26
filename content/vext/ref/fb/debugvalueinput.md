@@ -1,47 +1,88 @@
 ---
 title: DebugValueInput
 ---
-### Base Classes
 
-[AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/)
+Inherits from 
+[AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[DebugValueInput](#constructor-0)**() |
+| **[DebugValueInput](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[DebugValueInput](#constructor-2)**(other: [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup)) |
+| **[DebugValueInput](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "v" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "name" >}} | string |
+| {{< prop "renderType" >}} | [DebugRenderType](/vext/ref/fb/debugrendertype) |
+| {{< prop "min" >}} | float |
+| {{< prop "max" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "DebugValueInput" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### DebugValueInput {#constructor-0}
+> **DebugValueInput**()
 
-| Constructor                                                                | Description                                                                                                           |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| DebugValueInput()                                                          | Create a new instance of this container type.                                                                         |
-| DebugValueInput(DebugValueInput other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| DebugValueInput([AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/) other)  | Upcast an instance of type [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/) to [DebugValueInput](/vext/ref/fb/debugvalueinput/).  |
-| DebugValueInput([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DebugValueInput](/vext/ref/fb/debugvalueinput/). |
+Creates a new [DebugValueInput](/vext/ref/fb/debugvalueinput) frostbite instance.
 
-## Properties
+### DebugValueInput {#constructor-1}
+> **DebugValueInput**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name       | Type                                     | Description |
-| ---------- | ---------------------------------------- | ----------- |
-| v          | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| name       | string                                   |             |
-| renderType | [DebugRenderType](/vext/ref/fb/debugrendertype/)       |             |
-| min        | number                                   |             |
-| max        | number                                   |             |
-
-## Methods
-
-| Type                               | Name            | Parameters                                     |
-| ---------------------------------- | --------------- | ---------------------------------------------- |
-| [DebugValueInput](/vext/ref/fb/debugvalueinput/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [DebugValueInput](/vext/ref/fb/debugvalueinput/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [DebugValueInput](/vext/ref/fb/debugvalueinput) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### DebugValueInput {#constructor-2}
+> **DebugValueInput**(other: [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup))
+
+Casts an instance of type [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup) to [DebugValueInput](/vext/ref/fb/debugvalueinput). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup) | The instance to cast to [DebugValueInput](/vext/ref/fb/debugvalueinput). |
+
+### DebugValueInput {#constructor-3}
+> **DebugValueInput**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DebugValueInput](/vext/ref/fb/debugvalueinput). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DebugValueInput](/vext/ref/fb/debugvalueinput). |
+
+## Properties
+### {{% prop-heading "v" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "name" %}}
+> **string**
+
+### {{% prop-heading "renderType" %}}
+> **[DebugRenderType](/vext/ref/fb/debugrendertype)**
+
+### {{% prop-heading "min" %}}
+> **float**
+
+### {{% prop-heading "max" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [DebugValueInput](/vext/ref/fb/debugvalueinput) type.
+

@@ -1,43 +1,65 @@
 ---
 title: CustomSequenceTrackLinkMapping
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[CustomSequenceTrackLinkMapping](#constructor-0)**() |
+| **[CustomSequenceTrackLinkMapping](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[CustomSequenceTrackLinkMapping](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "trackLinkID" >}} | int |
+| {{< prop "sequenceLinkID" >}} | int |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "CustomSequenceTrackLinkMapping" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### CustomSequenceTrackLinkMapping {#constructor-0}
+> **CustomSequenceTrackLinkMapping**()
 
-| Constructor                                                                               | Description                                                                                                                                         |
-| ----------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| CustomSequenceTrackLinkMapping()                                                          | Create a new instance of this container type.                                                                                                       |
-| CustomSequenceTrackLinkMapping(CustomSequenceTrackLinkMapping other)                      | Create a reference copy of an instance of the same type.                                                                                            |
-| CustomSequenceTrackLinkMapping([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CustomSequenceTrackLinkMapping](/vext/ref/fb/customsequencetracklinkmapping/). |
+Creates a new [CustomSequenceTrackLinkMapping](/vext/ref/fb/customsequencetracklinkmapping) frostbite instance.
 
-## Properties
+### CustomSequenceTrackLinkMapping {#constructor-1}
+> **CustomSequenceTrackLinkMapping**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name           | Type   | Description |
-| -------------- | ------ | ----------- |
-| trackLinkID    | number |             |
-| sequenceLinkID | number |             |
-
-## Methods
-
-| Type                                                             | Name            | Parameters                                     |
-| ---------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [CustomSequenceTrackLinkMapping](/vext/ref/fb/customsequencetracklinkmapping/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [CustomSequenceTrackLinkMapping](/vext/ref/fb/customsequencetracklinkmapping/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [CustomSequenceTrackLinkMapping](/vext/ref/fb/customsequencetracklinkmapping) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### CustomSequenceTrackLinkMapping {#constructor-2}
+> **CustomSequenceTrackLinkMapping**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CustomSequenceTrackLinkMapping](/vext/ref/fb/customsequencetracklinkmapping). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [CustomSequenceTrackLinkMapping](/vext/ref/fb/customsequencetracklinkmapping). |
+
+## Properties
+### {{% prop-heading "trackLinkID" %}}
+> **int**
+
+### {{% prop-heading "sequenceLinkID" %}}
+> **int**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [CustomSequenceTrackLinkMapping](/vext/ref/fb/customsequencetracklinkmapping) type.
+

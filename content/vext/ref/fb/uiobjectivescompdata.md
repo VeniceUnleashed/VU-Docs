@@ -1,38 +1,74 @@
 ---
 title: UIObjectivesCompData
 ---
-### Base Classes
 
-[UIComponentData](/vext/ref/fb/uicomponentdata/)
+Inherits from 
+[UIComponentData](/vext/ref/fb/uicomponentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIObjectivesCompData](#constructor-0)**() |
+| **[UIObjectivesCompData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UIObjectivesCompData](#constructor-2)**(other: [UIComponentData](/vext/ref/fb/uicomponentdata)) |
+| **[UIObjectivesCompData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[UIObjectivesCompData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIObjectivesCompData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIObjectivesCompData {#constructor-0}
+> **UIObjectivesCompData**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| UIObjectivesCompData()                                                          | Create a new instance of this container type.                                                                                   |
-| UIObjectivesCompData(UIObjectivesCompData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| UIObjectivesCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UIObjectivesCompData](/vext/ref/fb/uiobjectivescompdata/).                  |
-| UIObjectivesCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UIObjectivesCompData](/vext/ref/fb/uiobjectivescompdata/).                                      |
-| UIObjectivesCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIObjectivesCompData](/vext/ref/fb/uiobjectivescompdata/). |
+Creates a new [UIObjectivesCompData](/vext/ref/fb/uiobjectivescompdata) frostbite instance.
 
-## Methods
+### UIObjectivesCompData {#constructor-1}
+> **UIObjectivesCompData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [UIObjectivesCompData](/vext/ref/fb/uiobjectivescompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UIObjectivesCompData](/vext/ref/fb/uiobjectivescompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UIObjectivesCompData](/vext/ref/fb/uiobjectivescompdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UIObjectivesCompData {#constructor-2}
+> **UIObjectivesCompData**(other: [UIComponentData](/vext/ref/fb/uicomponentdata))
+
+Casts an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata) to [UIObjectivesCompData](/vext/ref/fb/uiobjectivescompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIComponentData](/vext/ref/fb/uicomponentdata) | The instance to cast to [UIObjectivesCompData](/vext/ref/fb/uiobjectivescompdata). |
+
+### UIObjectivesCompData {#constructor-3}
+> **UIObjectivesCompData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [UIObjectivesCompData](/vext/ref/fb/uiobjectivescompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [UIObjectivesCompData](/vext/ref/fb/uiobjectivescompdata). |
+
+### UIObjectivesCompData {#constructor-4}
+> **UIObjectivesCompData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIObjectivesCompData](/vext/ref/fb/uiobjectivescompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UIObjectivesCompData](/vext/ref/fb/uiobjectivescompdata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIObjectivesCompData](/vext/ref/fb/uiobjectivescompdata) type.
+

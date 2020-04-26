@@ -1,51 +1,132 @@
 ---
 title: DecalEntityData
 ---
-### Base Classes
 
-[GameEntityData](/vext/ref/fb/gameentitydata/)
+Inherits from 
+[GameEntityData](/vext/ref/fb/gameentitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[DecalEntityData](#constructor-0)**() |
+| **[DecalEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[DecalEntityData](#constructor-2)**(other: [GameEntityData](/vext/ref/fb/gameentitydata)) |
+| **[DecalEntityData](#constructor-3)**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata)) |
+| **[DecalEntityData](#constructor-4)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[DecalEntityData](#constructor-5)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[DecalEntityData](#constructor-6)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[DecalEntityData](#constructor-7)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "shader" >}} | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset) \| nil |
+| {{< prop "atlasTile" >}} | [DecalAtlasTile](/vext/ref/fb/decalatlastile) |
+| {{< prop "materialIndex" >}} | int |
+| {{< prop "sortingPriority" >}} | int |
+| {{< prop "projected" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "DecalEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### DecalEntityData {#constructor-0}
+> **DecalEntityData**()
 
-| Constructor                                                                | Description                                                                                                           |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| DecalEntityData()                                                          | Create a new instance of this container type.                                                                         |
-| DecalEntityData(DecalEntityData other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| DecalEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [DecalEntityData](/vext/ref/fb/decalentitydata/).                    |
-| DecalEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [DecalEntityData](/vext/ref/fb/decalentitydata/).              |
-| DecalEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [DecalEntityData](/vext/ref/fb/decalentitydata/).                            |
-| DecalEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [DecalEntityData](/vext/ref/fb/decalentitydata/).                    |
-| DecalEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [DecalEntityData](/vext/ref/fb/decalentitydata/).              |
-| DecalEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DecalEntityData](/vext/ref/fb/decalentitydata/). |
+Creates a new [DecalEntityData](/vext/ref/fb/decalentitydata) frostbite instance.
 
-## Properties
+### DecalEntityData {#constructor-1}
+> **DecalEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name            | Type                                             | Description |
-| --------------- | ------------------------------------------------ | ----------- |
-| shader          | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset/) |             |
-| atlasTile       | [DecalAtlasTile](/vext/ref/fb/decalatlastile/)                 |             |
-| materialIndex   | number                                           |             |
-| sortingPriority | number                                           |             |
-| projected       | bool                                             |             |
-
-## Methods
-
-| Type                               | Name            | Parameters                                     |
-| ---------------------------------- | --------------- | ---------------------------------------------- |
-| [DecalEntityData](/vext/ref/fb/decalentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [DecalEntityData](/vext/ref/fb/decalentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [DecalEntityData](/vext/ref/fb/decalentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### DecalEntityData {#constructor-2}
+> **DecalEntityData**(other: [GameEntityData](/vext/ref/fb/gameentitydata))
+
+Casts an instance of type [GameEntityData](/vext/ref/fb/gameentitydata) to [DecalEntityData](/vext/ref/fb/decalentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameEntityData](/vext/ref/fb/gameentitydata) | The instance to cast to [DecalEntityData](/vext/ref/fb/decalentitydata). |
+
+### DecalEntityData {#constructor-3}
+> **DecalEntityData**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata))
+
+Casts an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata) to [DecalEntityData](/vext/ref/fb/decalentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SpatialEntityData](/vext/ref/fb/spatialentitydata) | The instance to cast to [DecalEntityData](/vext/ref/fb/decalentitydata). |
+
+### DecalEntityData {#constructor-4}
+> **DecalEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [DecalEntityData](/vext/ref/fb/decalentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [DecalEntityData](/vext/ref/fb/decalentitydata). |
+
+### DecalEntityData {#constructor-5}
+> **DecalEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [DecalEntityData](/vext/ref/fb/decalentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [DecalEntityData](/vext/ref/fb/decalentitydata). |
+
+### DecalEntityData {#constructor-6}
+> **DecalEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [DecalEntityData](/vext/ref/fb/decalentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [DecalEntityData](/vext/ref/fb/decalentitydata). |
+
+### DecalEntityData {#constructor-7}
+> **DecalEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DecalEntityData](/vext/ref/fb/decalentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DecalEntityData](/vext/ref/fb/decalentitydata). |
+
+## Properties
+### {{% prop-heading "shader" %}}
+> **[SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset)** | **nil**
+
+### {{% prop-heading "atlasTile" %}}
+> **[DecalAtlasTile](/vext/ref/fb/decalatlastile)**
+
+### {{% prop-heading "materialIndex" %}}
+> **int**
+
+### {{% prop-heading "sortingPriority" %}}
+> **int**
+
+### {{% prop-heading "projected" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [DecalEntityData](/vext/ref/fb/decalentitydata) type.
+

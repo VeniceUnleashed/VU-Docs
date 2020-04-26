@@ -1,53 +1,112 @@
 ---
 title: StreamPoolAsset
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[StreamPoolAsset](#constructor-0)**() |
+| **[StreamPoolAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[StreamPoolAsset](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[StreamPoolAsset](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "streamPoolId" >}} | int |
+| {{< prop "streamBufferSizeXenon" >}} | int |
+| {{< prop "streamBufferSizePs3" >}} | int |
+| {{< prop "streamBufferSizeWin32" >}} | int |
+| {{< prop "streamCountXenon" >}} | int |
+| {{< prop "streamCountPs3" >}} | int |
+| {{< prop "streamCountWin32" >}} | int |
+| {{< prop "streamReadBlockSizeXenon" >}} | int |
+| {{< prop "streamReadBlockSizePs3" >}} | int |
+| {{< prop "streamReadBlockSizeWin32" >}} | int |
+| {{< prop "streamStarveMode" >}} | [StreamStarveMode](/vext/ref/fb/streamstarvemode) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "StreamPoolAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### StreamPoolAsset {#constructor-0}
+> **StreamPoolAsset**()
 
-| Constructor                                                                | Description                                                                                                           |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| StreamPoolAsset()                                                          | Create a new instance of this container type.                                                                         |
-| StreamPoolAsset(StreamPoolAsset other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| StreamPoolAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [StreamPoolAsset](/vext/ref/fb/streampoolasset/).                                      |
-| StreamPoolAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StreamPoolAsset](/vext/ref/fb/streampoolasset/). |
+Creates a new [StreamPoolAsset](/vext/ref/fb/streampoolasset) frostbite instance.
 
-## Properties
+### StreamPoolAsset {#constructor-1}
+> **StreamPoolAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                     | Type                                 | Description |
-| ------------------------ | ------------------------------------ | ----------- |
-| streamPoolId             | number                               |             |
-| streamBufferSizeXenon    | number                               |             |
-| streamBufferSizePs3      | number                               |             |
-| streamBufferSizeWin32    | number                               |             |
-| streamCountXenon         | number                               |             |
-| streamCountPs3           | number                               |             |
-| streamCountWin32         | number                               |             |
-| streamReadBlockSizeXenon | number                               |             |
-| streamReadBlockSizePs3   | number                               |             |
-| streamReadBlockSizeWin32 | number                               |             |
-| streamStarveMode         | [StreamStarveMode](/vext/ref/fb/streamstarvemode/) |             |
-
-## Methods
-
-| Type                               | Name            | Parameters                                     |
-| ---------------------------------- | --------------- | ---------------------------------------------- |
-| [StreamPoolAsset](/vext/ref/fb/streampoolasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [StreamPoolAsset](/vext/ref/fb/streampoolasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [StreamPoolAsset](/vext/ref/fb/streampoolasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### StreamPoolAsset {#constructor-2}
+> **StreamPoolAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [StreamPoolAsset](/vext/ref/fb/streampoolasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [StreamPoolAsset](/vext/ref/fb/streampoolasset). |
+
+### StreamPoolAsset {#constructor-3}
+> **StreamPoolAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StreamPoolAsset](/vext/ref/fb/streampoolasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [StreamPoolAsset](/vext/ref/fb/streampoolasset). |
+
+## Properties
+### {{% prop-heading "streamPoolId" %}}
+> **int**
+
+### {{% prop-heading "streamBufferSizeXenon" %}}
+> **int**
+
+### {{% prop-heading "streamBufferSizePs3" %}}
+> **int**
+
+### {{% prop-heading "streamBufferSizeWin32" %}}
+> **int**
+
+### {{% prop-heading "streamCountXenon" %}}
+> **int**
+
+### {{% prop-heading "streamCountPs3" %}}
+> **int**
+
+### {{% prop-heading "streamCountWin32" %}}
+> **int**
+
+### {{% prop-heading "streamReadBlockSizeXenon" %}}
+> **int**
+
+### {{% prop-heading "streamReadBlockSizePs3" %}}
+> **int**
+
+### {{% prop-heading "streamReadBlockSizeWin32" %}}
+> **int**
+
+### {{% prop-heading "streamStarveMode" %}}
+> **[StreamStarveMode](/vext/ref/fb/streamstarvemode)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [StreamPoolAsset](/vext/ref/fb/streampoolasset) type.
+

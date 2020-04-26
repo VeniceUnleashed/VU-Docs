@@ -1,18 +1,15 @@
 ---
 title: UpdatePass
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **UpdatePass_PreSim** | Value: **0** |
+| **UpdatePass_PostSim** | Value: **1** |
+| **UpdatePass_PostFrame** | Value: **2** |
+| **UpdatePass_FrameInterpolation** | Value: **3** |
+| **UpdatePass_PreInput** | Value: **4** |
+| **UpdatePass_PreFrame** | Value: **5** |
+| **UpdatePass_Count** | Value: **6** |
 
-| Name                           | Value | Description |
-| ------------------------------ | ----- | ----------- |
-| UpdatePass\_PreSim             | 0     |             |
-| UpdatePass\_PostSim            | 1     |             |
-| UpdatePass\_PostFrame          | 2     |             |
-| UpdatePass\_FrameInterpolation | 3     |             |
-| UpdatePass\_PreInput           | 4     |             |
-| UpdatePass\_PreFrame           | 5     |             |
-| UpdatePass\_Count              | 6     |             |

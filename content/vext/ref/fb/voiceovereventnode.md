@@ -1,47 +1,95 @@
 ---
 title: VoiceOverEventNode
 ---
-### Base Classes
 
-[VoiceOverStructureNode](/vext/ref/fb/voiceoverstructurenode/)
+Inherits from 
+[VoiceOverStructureNode](/vext/ref/fb/voiceoverstructurenode)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VoiceOverEventNode](#constructor-0)**() |
+| **[VoiceOverEventNode](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VoiceOverEventNode](#constructor-2)**(other: [VoiceOverStructureNode](/vext/ref/fb/voiceoverstructurenode)) |
+| **[VoiceOverEventNode](#constructor-3)**(other: [VoiceOverNode](/vext/ref/fb/voiceovernode)) |
+| **[VoiceOverEventNode](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "interval" >}} | [VoiceOverIntervalNode](/vext/ref/fb/voiceoverintervalnode) \| nil |
+| {{< prop "relationship" >}} | [VoiceOverStructureNode](/vext/ref/fb/voiceoverstructurenode)[] |
+| {{< prop "redirects" >}} | [VoiceOverValueRedirect](/vext/ref/fb/voiceovervalueredirect)[] |
+| {{< prop "event" >}} | [VoiceOverEvent](/vext/ref/fb/voiceoverevent) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VoiceOverEventNode" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VoiceOverEventNode {#constructor-0}
+> **VoiceOverEventNode**()
 
-| Constructor                                                                   | Description                                                                                                                 |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| VoiceOverEventNode()                                                          | Create a new instance of this container type.                                                                               |
-| VoiceOverEventNode(VoiceOverEventNode other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| VoiceOverEventNode([VoiceOverStructureNode](/vext/ref/fb/voiceoverstructurenode/) other)    | Upcast an instance of type [VoiceOverStructureNode](/vext/ref/fb/voiceoverstructurenode/) to [VoiceOverEventNode](/vext/ref/fb/voiceovereventnode/).    |
-| VoiceOverEventNode([VoiceOverNode](/vext/ref/fb/voiceovernode/) other)                      | Upcast an instance of type [VoiceOverNode](/vext/ref/fb/voiceovernode/) to [VoiceOverEventNode](/vext/ref/fb/voiceovereventnode/).                      |
-| VoiceOverEventNode([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverEventNode](/vext/ref/fb/voiceovereventnode/). |
+Creates a new [VoiceOverEventNode](/vext/ref/fb/voiceovereventnode) frostbite instance.
 
-## Properties
+### VoiceOverEventNode {#constructor-1}
+> **VoiceOverEventNode**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name         | Type                                                 | Description |
-| ------------ | ---------------------------------------------------- | ----------- |
-| interval     | [VoiceOverIntervalNode](/vext/ref/fb/voiceoverintervalnode/)       |             |
-| relationship | [VoiceOverStructureNode](/vext/ref/fb/voiceoverstructurenode/)\[\] |             |
-| redirects    | [VoiceOverValueRedirect](/vext/ref/fb/voiceovervalueredirect/)\[\] |             |
-| event        | [VoiceOverEvent](/vext/ref/fb/voiceoverevent/)                     |             |
-
-## Methods
-
-| Type                                     | Name            | Parameters                                     |
-| ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [VoiceOverEventNode](/vext/ref/fb/voiceovereventnode/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VoiceOverEventNode](/vext/ref/fb/voiceovereventnode/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VoiceOverEventNode](/vext/ref/fb/voiceovereventnode) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VoiceOverEventNode {#constructor-2}
+> **VoiceOverEventNode**(other: [VoiceOverStructureNode](/vext/ref/fb/voiceoverstructurenode))
+
+Casts an instance of type [VoiceOverStructureNode](/vext/ref/fb/voiceoverstructurenode) to [VoiceOverEventNode](/vext/ref/fb/voiceovereventnode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [VoiceOverStructureNode](/vext/ref/fb/voiceoverstructurenode) | The instance to cast to [VoiceOverEventNode](/vext/ref/fb/voiceovereventnode). |
+
+### VoiceOverEventNode {#constructor-3}
+> **VoiceOverEventNode**(other: [VoiceOverNode](/vext/ref/fb/voiceovernode))
+
+Casts an instance of type [VoiceOverNode](/vext/ref/fb/voiceovernode) to [VoiceOverEventNode](/vext/ref/fb/voiceovereventnode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [VoiceOverNode](/vext/ref/fb/voiceovernode) | The instance to cast to [VoiceOverEventNode](/vext/ref/fb/voiceovereventnode). |
+
+### VoiceOverEventNode {#constructor-4}
+> **VoiceOverEventNode**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverEventNode](/vext/ref/fb/voiceovereventnode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VoiceOverEventNode](/vext/ref/fb/voiceovereventnode). |
+
+## Properties
+### {{% prop-heading "interval" %}}
+> **[VoiceOverIntervalNode](/vext/ref/fb/voiceoverintervalnode)** | **nil**
+
+### {{% prop-heading "relationship" %}}
+> **[VoiceOverStructureNode](/vext/ref/fb/voiceoverstructurenode)**[]
+
+### {{% prop-heading "redirects" %}}
+> **[VoiceOverValueRedirect](/vext/ref/fb/voiceovervalueredirect)**[]
+
+### {{% prop-heading "event" %}}
+> **[VoiceOverEvent](/vext/ref/fb/voiceoverevent)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VoiceOverEventNode](/vext/ref/fb/voiceovereventnode) type.
+

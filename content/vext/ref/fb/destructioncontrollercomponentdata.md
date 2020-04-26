@@ -1,46 +1,98 @@
 ---
 title: DestructionControllerComponentData
 ---
-### Base Classes
 
-[ComponentData](/vext/ref/fb/componentdata/)
+Inherits from 
+[ComponentData](/vext/ref/fb/componentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[DestructionControllerComponentData](#constructor-0)**() |
+| **[DestructionControllerComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[DestructionControllerComponentData](#constructor-2)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[DestructionControllerComponentData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[DestructionControllerComponentData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[DestructionControllerComponentData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "debrisClusters" >}} | [ObjectBlueprint](/vext/ref/fb/objectblueprint)[] |
+| {{< prop "attachToNearbyObjects" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "DestructionControllerComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### DestructionControllerComponentData {#constructor-0}
+> **DestructionControllerComponentData**()
 
-| Constructor                                                                                   | Description                                                                                                                                                 |
-| --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DestructionControllerComponentData()                                                          | Create a new instance of this container type.                                                                                                               |
-| DestructionControllerComponentData(DestructionControllerComponentData other)                  | Create a reference copy of an instance of the same type.                                                                                                    |
-| DestructionControllerComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [DestructionControllerComponentData](/vext/ref/fb/destructioncontrollercomponentdata/).                      |
-| DestructionControllerComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [DestructionControllerComponentData](/vext/ref/fb/destructioncontrollercomponentdata/).                    |
-| DestructionControllerComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [DestructionControllerComponentData](/vext/ref/fb/destructioncontrollercomponentdata/).              |
-| DestructionControllerComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DestructionControllerComponentData](/vext/ref/fb/destructioncontrollercomponentdata/). |
+Creates a new [DestructionControllerComponentData](/vext/ref/fb/destructioncontrollercomponentdata) frostbite instance.
 
-## Properties
+### DestructionControllerComponentData {#constructor-1}
+> **DestructionControllerComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                  | Type                                   | Description |
-| --------------------- | -------------------------------------- | ----------- |
-| debrisClusters        | [ObjectBlueprint](/vext/ref/fb/objectblueprint/)\[\] |             |
-| attachToNearbyObjects | bool                                   |             |
-
-## Methods
-
-| Type                                                                     | Name            | Parameters                                     |
-| ------------------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [DestructionControllerComponentData](/vext/ref/fb/destructioncontrollercomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [DestructionControllerComponentData](/vext/ref/fb/destructioncontrollercomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [DestructionControllerComponentData](/vext/ref/fb/destructioncontrollercomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### DestructionControllerComponentData {#constructor-2}
+> **DestructionControllerComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [DestructionControllerComponentData](/vext/ref/fb/destructioncontrollercomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [DestructionControllerComponentData](/vext/ref/fb/destructioncontrollercomponentdata). |
+
+### DestructionControllerComponentData {#constructor-3}
+> **DestructionControllerComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [DestructionControllerComponentData](/vext/ref/fb/destructioncontrollercomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [DestructionControllerComponentData](/vext/ref/fb/destructioncontrollercomponentdata). |
+
+### DestructionControllerComponentData {#constructor-4}
+> **DestructionControllerComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [DestructionControllerComponentData](/vext/ref/fb/destructioncontrollercomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [DestructionControllerComponentData](/vext/ref/fb/destructioncontrollercomponentdata). |
+
+### DestructionControllerComponentData {#constructor-5}
+> **DestructionControllerComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DestructionControllerComponentData](/vext/ref/fb/destructioncontrollercomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DestructionControllerComponentData](/vext/ref/fb/destructioncontrollercomponentdata). |
+
+## Properties
+### {{% prop-heading "debrisClusters" %}}
+> **[ObjectBlueprint](/vext/ref/fb/objectblueprint)**[]
+
+### {{% prop-heading "attachToNearbyObjects" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [DestructionControllerComponentData](/vext/ref/fb/destructioncontrollercomponentdata) type.
+

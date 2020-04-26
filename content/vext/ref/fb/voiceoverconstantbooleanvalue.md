@@ -1,43 +1,72 @@
 ---
 title: VoiceOverConstantBooleanValue
 ---
-### Base Classes
 
-[VoiceOverConstantValue](/vext/ref/fb/voiceoverconstantvalue/)
+Inherits from 
+[VoiceOverConstantValue](/vext/ref/fb/voiceoverconstantvalue)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VoiceOverConstantBooleanValue](#constructor-0)**() |
+| **[VoiceOverConstantBooleanValue](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VoiceOverConstantBooleanValue](#constructor-2)**(other: [VoiceOverConstantValue](/vext/ref/fb/voiceoverconstantvalue)) |
+| **[VoiceOverConstantBooleanValue](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "value" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VoiceOverConstantBooleanValue" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VoiceOverConstantBooleanValue {#constructor-0}
+> **VoiceOverConstantBooleanValue**()
 
-| Constructor                                                                              | Description                                                                                                                                       |
-| ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| VoiceOverConstantBooleanValue()                                                          | Create a new instance of this container type.                                                                                                     |
-| VoiceOverConstantBooleanValue(VoiceOverConstantBooleanValue other)                       | Create a reference copy of an instance of the same type.                                                                                          |
-| VoiceOverConstantBooleanValue([VoiceOverConstantValue](/vext/ref/fb/voiceoverconstantvalue/) other)    | Upcast an instance of type [VoiceOverConstantValue](/vext/ref/fb/voiceoverconstantvalue/) to [VoiceOverConstantBooleanValue](/vext/ref/fb/voiceoverconstantbooleanvalue/).    |
-| VoiceOverConstantBooleanValue([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverConstantBooleanValue](/vext/ref/fb/voiceoverconstantbooleanvalue/). |
+Creates a new [VoiceOverConstantBooleanValue](/vext/ref/fb/voiceoverconstantbooleanvalue) frostbite instance.
 
-## Properties
+### VoiceOverConstantBooleanValue {#constructor-1}
+> **VoiceOverConstantBooleanValue**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name  | Type | Description |
-| ----- | ---- | ----------- |
-| value | bool |             |
-
-## Methods
-
-| Type                                                           | Name            | Parameters                                     |
-| -------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [VoiceOverConstantBooleanValue](/vext/ref/fb/voiceoverconstantbooleanvalue/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VoiceOverConstantBooleanValue](/vext/ref/fb/voiceoverconstantbooleanvalue/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VoiceOverConstantBooleanValue](/vext/ref/fb/voiceoverconstantbooleanvalue) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VoiceOverConstantBooleanValue {#constructor-2}
+> **VoiceOverConstantBooleanValue**(other: [VoiceOverConstantValue](/vext/ref/fb/voiceoverconstantvalue))
+
+Casts an instance of type [VoiceOverConstantValue](/vext/ref/fb/voiceoverconstantvalue) to [VoiceOverConstantBooleanValue](/vext/ref/fb/voiceoverconstantbooleanvalue). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [VoiceOverConstantValue](/vext/ref/fb/voiceoverconstantvalue) | The instance to cast to [VoiceOverConstantBooleanValue](/vext/ref/fb/voiceoverconstantbooleanvalue). |
+
+### VoiceOverConstantBooleanValue {#constructor-3}
+> **VoiceOverConstantBooleanValue**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverConstantBooleanValue](/vext/ref/fb/voiceoverconstantbooleanvalue). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VoiceOverConstantBooleanValue](/vext/ref/fb/voiceoverconstantbooleanvalue). |
+
+## Properties
+### {{% prop-heading "value" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VoiceOverConstantBooleanValue](/vext/ref/fb/voiceoverconstantbooleanvalue) type.
+

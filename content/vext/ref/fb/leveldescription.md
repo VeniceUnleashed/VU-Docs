@@ -1,36 +1,73 @@
 ---
 title: LevelDescription
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[LevelDescription](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "name" >}} | string |
+| {{< prop "description" >}} | string |
+| {{< prop "components" >}} | [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent)[] |
+| {{< prop "isCoop" >}} | bool |
+| {{< prop "isMenu" >}} | bool |
+| {{< prop "isMultiplayer" >}} | bool |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [LevelDescription](/vext/ref/fb/leveldescription) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "LevelDescription" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### LevelDescription {#constructor-0}
+> **LevelDescription**()
 
-| Constructor                              | Description                                              |
-| ---------------------------------------- | -------------------------------------------------------- |
-| LevelDescription()                       | Create a new instance of this structure type.            |
-| LevelDescription(LevelDescription other) | Create a reference copy of a structure of the same type. |
+Creates a new [LevelDescription](/vext/ref/fb/leveldescription) frostbite structure.
 
 ## Properties
+### {{% prop-heading "name" %}}
+> **string**
 
-| Name          | Type                                                       | Description |
-| ------------- | ---------------------------------------------------------- | ----------- |
-| name          | string                                                     |             |
-| description   | string                                                     |             |
-| components    | [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent/)\[\] |             |
-| isCoop        | bool                                                       |             |
-| isMenu        | bool                                                       |             |
-| isMultiplayer | bool                                                       |             |
+### {{% prop-heading "description" %}}
+> **string**
+
+### {{% prop-heading "components" %}}
+> **[LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent)**[]
+
+### {{% prop-heading "isCoop" %}}
+> **bool**
+
+### {{% prop-heading "isMenu" %}}
+> **bool**
+
+### {{% prop-heading "isMultiplayer" %}}
+> **bool**
 
 ## Methods
-
-| Type                                 | Name            | Parameters |
-| ------------------------------------ | --------------- | ---------- |
-| [LevelDescription](/vext/ref/fb/leveldescription/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [LevelDescription](/vext/ref/fb/leveldescription)
 
-> [LevelDescription](/vext/ref/fb/leveldescription/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[LevelDescription](/vext/ref/fb/leveldescription)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [LevelDescription](/vext/ref/fb/leveldescription) type.
+

@@ -1,43 +1,72 @@
 ---
 title: GlobalNode
 ---
-### Base Classes
 
-[UINodeData](/vext/ref/fb/uinodedata/)
+Inherits from 
+[UINodeData](/vext/ref/fb/uinodedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[GlobalNode](#constructor-0)**() |
+| **[GlobalNode](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[GlobalNode](#constructor-2)**(other: [UINodeData](/vext/ref/fb/uinodedata)) |
+| **[GlobalNode](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "outputs" >}} | [UINodePort](/vext/ref/fb/uinodeport)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "GlobalNode" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### GlobalNode {#constructor-0}
+> **GlobalNode**()
 
-| Constructor                                                           | Description                                                                                                 |
-| --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| GlobalNode()                                                          | Create a new instance of this container type.                                                               |
-| GlobalNode(GlobalNode other)                                          | Create a reference copy of an instance of the same type.                                                    |
-| GlobalNode([UINodeData](/vext/ref/fb/uinodedata/) other)                            | Upcast an instance of type [UINodeData](/vext/ref/fb/uinodedata/) to [GlobalNode](/vext/ref/fb/globalnode/).                            |
-| GlobalNode([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GlobalNode](/vext/ref/fb/globalnode/). |
+Creates a new [GlobalNode](/vext/ref/fb/globalnode) frostbite instance.
 
-## Properties
+### GlobalNode {#constructor-1}
+> **GlobalNode**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name    | Type                         | Description |
-| ------- | ---------------------------- | ----------- |
-| outputs | [UINodePort](/vext/ref/fb/uinodeport/)\[\] |             |
-
-## Methods
-
-| Type                     | Name            | Parameters                                     |
-| ------------------------ | --------------- | ---------------------------------------------- |
-| [GlobalNode](/vext/ref/fb/globalnode/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [GlobalNode](/vext/ref/fb/globalnode/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [GlobalNode](/vext/ref/fb/globalnode) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### GlobalNode {#constructor-2}
+> **GlobalNode**(other: [UINodeData](/vext/ref/fb/uinodedata))
+
+Casts an instance of type [UINodeData](/vext/ref/fb/uinodedata) to [GlobalNode](/vext/ref/fb/globalnode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UINodeData](/vext/ref/fb/uinodedata) | The instance to cast to [GlobalNode](/vext/ref/fb/globalnode). |
+
+### GlobalNode {#constructor-3}
+> **GlobalNode**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GlobalNode](/vext/ref/fb/globalnode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [GlobalNode](/vext/ref/fb/globalnode). |
+
+## Properties
+### {{% prop-heading "outputs" %}}
+> **[UINodePort](/vext/ref/fb/uinodeport)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [GlobalNode](/vext/ref/fb/globalnode) type.
+

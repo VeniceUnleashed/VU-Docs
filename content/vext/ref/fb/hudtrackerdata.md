@@ -1,52 +1,108 @@
 ---
 title: HudTrackerData
 ---
-### Base Classes
 
-[UIPartData](/vext/ref/fb/uipartdata/)
+Inherits from 
+[UIPartData](/vext/ref/fb/uipartdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[HudTrackerData](#constructor-0)**() |
+| **[HudTrackerData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[HudTrackerData](#constructor-2)**(other: [UIPartData](/vext/ref/fb/uipartdata)) |
+| **[HudTrackerData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "maxDistance" >}} | float |
+| {{< prop "startFadeDistance" >}} | float |
+| {{< prop "secondFadeDistance" >}} | float |
+| {{< prop "fadeMinAlpha" >}} | float |
+| {{< prop "iconSize" >}} | float |
+| {{< prop "trackerHudRadiusX" >}} | float |
+| {{< prop "trackerHudRadiusY" >}} | float |
+| {{< prop "distanceTextOffsetY" >}} | float |
+| {{< prop "showDistance" >}} | bool |
+| {{< prop "displayExtraInfo" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "HudTrackerData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### HudTrackerData {#constructor-0}
+> **HudTrackerData**()
 
-| Constructor                                                               | Description                                                                                                         |
-| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| HudTrackerData()                                                          | Create a new instance of this container type.                                                                       |
-| HudTrackerData(HudTrackerData other)                                      | Create a reference copy of an instance of the same type.                                                            |
-| HudTrackerData([UIPartData](/vext/ref/fb/uipartdata/) other)                            | Upcast an instance of type [UIPartData](/vext/ref/fb/uipartdata/) to [HudTrackerData](/vext/ref/fb/hudtrackerdata/).                            |
-| HudTrackerData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [HudTrackerData](/vext/ref/fb/hudtrackerdata/). |
+Creates a new [HudTrackerData](/vext/ref/fb/hudtrackerdata) frostbite instance.
 
-## Properties
+### HudTrackerData {#constructor-1}
+> **HudTrackerData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                | Type   | Description |
-| ------------------- | ------ | ----------- |
-| maxDistance         | number |             |
-| startFadeDistance   | number |             |
-| secondFadeDistance  | number |             |
-| fadeMinAlpha        | number |             |
-| iconSize            | number |             |
-| trackerHudRadiusX   | number |             |
-| trackerHudRadiusY   | number |             |
-| distanceTextOffsetY | number |             |
-| showDistance        | bool   |             |
-| displayExtraInfo    | bool   |             |
-
-## Methods
-
-| Type                             | Name            | Parameters                                     |
-| -------------------------------- | --------------- | ---------------------------------------------- |
-| [HudTrackerData](/vext/ref/fb/hudtrackerdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [HudTrackerData](/vext/ref/fb/hudtrackerdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [HudTrackerData](/vext/ref/fb/hudtrackerdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### HudTrackerData {#constructor-2}
+> **HudTrackerData**(other: [UIPartData](/vext/ref/fb/uipartdata))
+
+Casts an instance of type [UIPartData](/vext/ref/fb/uipartdata) to [HudTrackerData](/vext/ref/fb/hudtrackerdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIPartData](/vext/ref/fb/uipartdata) | The instance to cast to [HudTrackerData](/vext/ref/fb/hudtrackerdata). |
+
+### HudTrackerData {#constructor-3}
+> **HudTrackerData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [HudTrackerData](/vext/ref/fb/hudtrackerdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [HudTrackerData](/vext/ref/fb/hudtrackerdata). |
+
+## Properties
+### {{% prop-heading "maxDistance" %}}
+> **float**
+
+### {{% prop-heading "startFadeDistance" %}}
+> **float**
+
+### {{% prop-heading "secondFadeDistance" %}}
+> **float**
+
+### {{% prop-heading "fadeMinAlpha" %}}
+> **float**
+
+### {{% prop-heading "iconSize" %}}
+> **float**
+
+### {{% prop-heading "trackerHudRadiusX" %}}
+> **float**
+
+### {{% prop-heading "trackerHudRadiusY" %}}
+> **float**
+
+### {{% prop-heading "distanceTextOffsetY" %}}
+> **float**
+
+### {{% prop-heading "showDistance" %}}
+> **bool**
+
+### {{% prop-heading "displayExtraInfo" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [HudTrackerData](/vext/ref/fb/hudtrackerdata) type.
+

@@ -1,15 +1,12 @@
 ---
 title: DynamicAvoidanceMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **DynamicAvoidanceMode_Never** | Value: **0** |
+| **DynamicAvoidanceMode_WhenScripted** | Value: **1** |
+| **DynamicAvoidanceMode_WhenNotScripted** | Value: **2** |
+| **DynamicAvoidanceMode_Always** | Value: **3** |
 
-| Name                                  | Value | Description |
-| ------------------------------------- | ----- | ----------- |
-| DynamicAvoidanceMode\_Never           | 0     |             |
-| DynamicAvoidanceMode\_WhenScripted    | 1     |             |
-| DynamicAvoidanceMode\_WhenNotScripted | 2     |             |
-| DynamicAvoidanceMode\_Always          | 3     |             |

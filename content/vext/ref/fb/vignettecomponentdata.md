@@ -1,50 +1,114 @@
 ---
 title: VignetteComponentData
 ---
-### Base Classes
 
-[ComponentData](/vext/ref/fb/componentdata/)
+Inherits from 
+[ComponentData](/vext/ref/fb/componentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VignetteComponentData](#constructor-0)**() |
+| **[VignetteComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VignetteComponentData](#constructor-2)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[VignetteComponentData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[VignetteComponentData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[VignetteComponentData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "scale" >}} | [Vec2](/vext/ref/shared/class/vec2) |
+| {{< prop "color" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
+| {{< prop "exponent" >}} | float |
+| {{< prop "opacity" >}} | float |
+| {{< prop "enable" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VignetteComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VignetteComponentData {#constructor-0}
+> **VignetteComponentData**()
 
-| Constructor                                                                      | Description                                                                                                                       |
-| -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| VignetteComponentData()                                                          | Create a new instance of this container type.                                                                                     |
-| VignetteComponentData(VignetteComponentData other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| VignetteComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [VignetteComponentData](/vext/ref/fb/vignettecomponentdata/).                      |
-| VignetteComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [VignetteComponentData](/vext/ref/fb/vignettecomponentdata/).                    |
-| VignetteComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [VignetteComponentData](/vext/ref/fb/vignettecomponentdata/).              |
-| VignetteComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VignetteComponentData](/vext/ref/fb/vignettecomponentdata/). |
+Creates a new [VignetteComponentData](/vext/ref/fb/vignettecomponentdata) frostbite instance.
 
-## Properties
+### VignetteComponentData {#constructor-1}
+> **VignetteComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name     | Type                              | Description |
-| -------- | --------------------------------- | ----------- |
-| scale    | [Vec2](/vext/ref/shared/class/vec2) |             |
-| color    | [Vec3](/vext/ref/shared/class/vec3) |             |
-| realm    | [Realm](/vext/ref/fb/realm/)                    |             |
-| exponent | number                            |             |
-| opacity  | number                            |             |
-| enable   | bool                              |             |
-
-## Methods
-
-| Type                                           | Name            | Parameters                                     |
-| ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [VignetteComponentData](/vext/ref/fb/vignettecomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VignetteComponentData](/vext/ref/fb/vignettecomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VignetteComponentData](/vext/ref/fb/vignettecomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VignetteComponentData {#constructor-2}
+> **VignetteComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [VignetteComponentData](/vext/ref/fb/vignettecomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [VignetteComponentData](/vext/ref/fb/vignettecomponentdata). |
+
+### VignetteComponentData {#constructor-3}
+> **VignetteComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [VignetteComponentData](/vext/ref/fb/vignettecomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [VignetteComponentData](/vext/ref/fb/vignettecomponentdata). |
+
+### VignetteComponentData {#constructor-4}
+> **VignetteComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [VignetteComponentData](/vext/ref/fb/vignettecomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [VignetteComponentData](/vext/ref/fb/vignettecomponentdata). |
+
+### VignetteComponentData {#constructor-5}
+> **VignetteComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VignetteComponentData](/vext/ref/fb/vignettecomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VignetteComponentData](/vext/ref/fb/vignettecomponentdata). |
+
+## Properties
+### {{% prop-heading "scale" %}}
+> **[Vec2](/vext/ref/shared/class/vec2)**
+
+### {{% prop-heading "color" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "realm" %}}
+> **[Realm](/vext/ref/fb/realm)**
+
+### {{% prop-heading "exponent" %}}
+> **float**
+
+### {{% prop-heading "opacity" %}}
+> **float**
+
+### {{% prop-heading "enable" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VignetteComponentData](/vext/ref/fb/vignettecomponentdata) type.
+

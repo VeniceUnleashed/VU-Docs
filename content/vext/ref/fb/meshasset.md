@@ -1,52 +1,108 @@
 ---
 title: MeshAsset
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MeshAsset](#constructor-0)**() |
+| **[MeshAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MeshAsset](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[MeshAsset](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "lodGroup" >}} | [MeshLodGroup](/vext/ref/fb/meshlodgroup) \| nil |
+| {{< prop "lodScale" >}} | float |
+| {{< prop "cullScale" >}} | float |
+| {{< prop "nameHash" >}} | int |
+| {{< prop "enlightenType" >}} | [EnlightenType](/vext/ref/fb/enlightentype) |
+| {{< prop "materials" >}} | [MeshMaterial](/vext/ref/fb/meshmaterial)[] |
+| {{< prop "occluderHighPriority" >}} | bool |
+| {{< prop "streamingEnable" >}} | bool |
+| {{< prop "destructionMaterialEnable" >}} | bool |
+| {{< prop "occluderMeshEnable" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MeshAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MeshAsset {#constructor-0}
+> **MeshAsset**()
 
-| Constructor                                                          | Description                                                                                               |
-| -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| MeshAsset()                                                          | Create a new instance of this container type.                                                             |
-| MeshAsset(MeshAsset other)                                           | Create a reference copy of an instance of the same type.                                                  |
-| MeshAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [MeshAsset](/vext/ref/fb/meshasset/).                                      |
-| MeshAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MeshAsset](/vext/ref/fb/meshasset/). |
+Creates a new [MeshAsset](/vext/ref/fb/meshasset) frostbite instance.
 
-## Properties
+### MeshAsset {#constructor-1}
+> **MeshAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                      | Type                             | Description |
-| ------------------------- | -------------------------------- | ----------- |
-| lodGroup                  | [MeshLodGroup](/vext/ref/fb/meshlodgroup/)     |             |
-| lodScale                  | number                           |             |
-| cullScale                 | number                           |             |
-| nameHash                  | number                           |             |
-| enlightenType             | [EnlightenType](/vext/ref/fb/enlightentype/)   |             |
-| materials                 | [MeshMaterial](/vext/ref/fb/meshmaterial/)\[\] |             |
-| occluderHighPriority      | bool                             |             |
-| streamingEnable           | bool                             |             |
-| destructionMaterialEnable | bool                             |             |
-| occluderMeshEnable        | bool                             |             |
-
-## Methods
-
-| Type                   | Name            | Parameters                                     |
-| ---------------------- | --------------- | ---------------------------------------------- |
-| [MeshAsset](/vext/ref/fb/meshasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MeshAsset](/vext/ref/fb/meshasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MeshAsset](/vext/ref/fb/meshasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MeshAsset {#constructor-2}
+> **MeshAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [MeshAsset](/vext/ref/fb/meshasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [MeshAsset](/vext/ref/fb/meshasset). |
+
+### MeshAsset {#constructor-3}
+> **MeshAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MeshAsset](/vext/ref/fb/meshasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MeshAsset](/vext/ref/fb/meshasset). |
+
+## Properties
+### {{% prop-heading "lodGroup" %}}
+> **[MeshLodGroup](/vext/ref/fb/meshlodgroup)** | **nil**
+
+### {{% prop-heading "lodScale" %}}
+> **float**
+
+### {{% prop-heading "cullScale" %}}
+> **float**
+
+### {{% prop-heading "nameHash" %}}
+> **int**
+
+### {{% prop-heading "enlightenType" %}}
+> **[EnlightenType](/vext/ref/fb/enlightentype)**
+
+### {{% prop-heading "materials" %}}
+> **[MeshMaterial](/vext/ref/fb/meshmaterial)**[]
+
+### {{% prop-heading "occluderHighPriority" %}}
+> **bool**
+
+### {{% prop-heading "streamingEnable" %}}
+> **bool**
+
+### {{% prop-heading "destructionMaterialEnable" %}}
+> **bool**
+
+### {{% prop-heading "occluderMeshEnable" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MeshAsset](/vext/ref/fb/meshasset) type.
+

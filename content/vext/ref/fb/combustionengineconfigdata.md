@@ -1,37 +1,63 @@
 ---
 title: CombustionEngineConfigData
 ---
-### Base Classes
 
-[EngineConfigData](/vext/ref/fb/engineconfigdata/)
+Inherits from 
+[EngineConfigData](/vext/ref/fb/engineconfigdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[CombustionEngineConfigData](#constructor-0)**() |
+| **[CombustionEngineConfigData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[CombustionEngineConfigData](#constructor-2)**(other: [EngineConfigData](/vext/ref/fb/engineconfigdata)) |
+| **[CombustionEngineConfigData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "CombustionEngineConfigData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### CombustionEngineConfigData {#constructor-0}
+> **CombustionEngineConfigData**()
 
-| Constructor                                                                           | Description                                                                                                                                 |
-| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| CombustionEngineConfigData()                                                          | Create a new instance of this container type.                                                                                               |
-| CombustionEngineConfigData(CombustionEngineConfigData other)                          | Create a reference copy of an instance of the same type.                                                                                    |
-| CombustionEngineConfigData([EngineConfigData](/vext/ref/fb/engineconfigdata/) other)                | Upcast an instance of type [EngineConfigData](/vext/ref/fb/engineconfigdata/) to [CombustionEngineConfigData](/vext/ref/fb/combustionengineconfigdata/).                |
-| CombustionEngineConfigData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CombustionEngineConfigData](/vext/ref/fb/combustionengineconfigdata/). |
+Creates a new [CombustionEngineConfigData](/vext/ref/fb/combustionengineconfigdata) frostbite instance.
 
-## Methods
+### CombustionEngineConfigData {#constructor-1}
+> **CombustionEngineConfigData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                                     | Name            | Parameters                                     |
-| -------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [CombustionEngineConfigData](/vext/ref/fb/combustionengineconfigdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [CombustionEngineConfigData](/vext/ref/fb/combustionengineconfigdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [CombustionEngineConfigData](/vext/ref/fb/combustionengineconfigdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### CombustionEngineConfigData {#constructor-2}
+> **CombustionEngineConfigData**(other: [EngineConfigData](/vext/ref/fb/engineconfigdata))
+
+Casts an instance of type [EngineConfigData](/vext/ref/fb/engineconfigdata) to [CombustionEngineConfigData](/vext/ref/fb/combustionengineconfigdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EngineConfigData](/vext/ref/fb/engineconfigdata) | The instance to cast to [CombustionEngineConfigData](/vext/ref/fb/combustionengineconfigdata). |
+
+### CombustionEngineConfigData {#constructor-3}
+> **CombustionEngineConfigData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CombustionEngineConfigData](/vext/ref/fb/combustionengineconfigdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [CombustionEngineConfigData](/vext/ref/fb/combustionengineconfigdata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [CombustionEngineConfigData](/vext/ref/fb/combustionengineconfigdata) type.
+

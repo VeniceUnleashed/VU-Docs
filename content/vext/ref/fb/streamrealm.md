@@ -1,14 +1,11 @@
 ---
 title: StreamRealm
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **StreamRealm_None** | Value: **0** |
+| **StreamRealm_Client** | Value: **1** |
+| **StreamRealm_Both** | Value: **2** |
 
-| Name                | Value | Description |
-| ------------------- | ----- | ----------- |
-| StreamRealm\_None   | 0     |             |
-| StreamRealm\_Client | 1     |             |
-| StreamRealm\_Both   | 2     |             |

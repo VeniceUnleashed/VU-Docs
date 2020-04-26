@@ -1,43 +1,72 @@
 ---
 title: DeltaNodeData
 ---
-### Base Classes
 
-[AudioGraphNodeData](/vext/ref/fb/audiographnodedata/)
+Inherits from 
+[AudioGraphNodeData](/vext/ref/fb/audiographnodedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[DeltaNodeData](#constructor-0)**() |
+| **[DeltaNodeData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[DeltaNodeData](#constructor-2)**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata)) |
+| **[DeltaNodeData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "deltas" >}} | [DeltaGroup](/vext/ref/fb/deltagroup)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "DeltaNodeData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### DeltaNodeData {#constructor-0}
+> **DeltaNodeData**()
 
-| Constructor                                                              | Description                                                                                                       |
-| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| DeltaNodeData()                                                          | Create a new instance of this container type.                                                                     |
-| DeltaNodeData(DeltaNodeData other)                                       | Create a reference copy of an instance of the same type.                                                          |
-| DeltaNodeData([AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) other)            | Upcast an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) to [DeltaNodeData](/vext/ref/fb/deltanodedata/).            |
-| DeltaNodeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DeltaNodeData](/vext/ref/fb/deltanodedata/). |
+Creates a new [DeltaNodeData](/vext/ref/fb/deltanodedata) frostbite instance.
 
-## Properties
+### DeltaNodeData {#constructor-1}
+> **DeltaNodeData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name   | Type                         | Description |
-| ------ | ---------------------------- | ----------- |
-| deltas | [DeltaGroup](/vext/ref/fb/deltagroup/)\[\] |             |
-
-## Methods
-
-| Type                           | Name            | Parameters                                     |
-| ------------------------------ | --------------- | ---------------------------------------------- |
-| [DeltaNodeData](/vext/ref/fb/deltanodedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [DeltaNodeData](/vext/ref/fb/deltanodedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [DeltaNodeData](/vext/ref/fb/deltanodedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### DeltaNodeData {#constructor-2}
+> **DeltaNodeData**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata))
+
+Casts an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) to [DeltaNodeData](/vext/ref/fb/deltanodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) | The instance to cast to [DeltaNodeData](/vext/ref/fb/deltanodedata). |
+
+### DeltaNodeData {#constructor-3}
+> **DeltaNodeData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DeltaNodeData](/vext/ref/fb/deltanodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DeltaNodeData](/vext/ref/fb/deltanodedata). |
+
+## Properties
+### {{% prop-heading "deltas" %}}
+> **[DeltaGroup](/vext/ref/fb/deltagroup)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [DeltaNodeData](/vext/ref/fb/deltanodedata) type.
+

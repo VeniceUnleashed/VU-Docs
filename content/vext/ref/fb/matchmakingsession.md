@@ -1,47 +1,81 @@
 ---
 title: MatchmakingSession
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MatchmakingSession](#constructor-0)**() |
+| **[MatchmakingSession](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MatchmakingSession](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "mode" >}} | [MatchmakingSessionMode](/vext/ref/fb/matchmakingsessionmode) |
+| {{< prop "durationMs" >}} | int |
+| {{< prop "criteria" >}} | [MatchmakingCriteria](/vext/ref/fb/matchmakingcriteria) |
+| {{< prop "createGameParams" >}} | [MatchmakingCreateGameParameters](/vext/ref/fb/matchmakingcreategameparameters) |
+| {{< prop "onNotFound" >}} | [MatchmakingSession](/vext/ref/fb/matchmakingsession) \| nil |
+| {{< prop "modifiers" >}} | [MatchmakingModifier](/vext/ref/fb/matchmakingmodifier)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MatchmakingSession" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MatchmakingSession {#constructor-0}
+> **MatchmakingSession**()
 
-| Constructor                                                                   | Description                                                                                                                 |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| MatchmakingSession()                                                          | Create a new instance of this container type.                                                                               |
-| MatchmakingSession(MatchmakingSession other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| MatchmakingSession([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MatchmakingSession](/vext/ref/fb/matchmakingsession/). |
+Creates a new [MatchmakingSession](/vext/ref/fb/matchmakingsession) frostbite instance.
 
-## Properties
+### MatchmakingSession {#constructor-1}
+> **MatchmakingSession**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name             | Type                                                               | Description |
-| ---------------- | ------------------------------------------------------------------ | ----------- |
-| mode             | [MatchmakingSessionMode](/vext/ref/fb/matchmakingsessionmode/)                   |             |
-| durationMs       | number                                                             |             |
-| criteria         | [MatchmakingCriteria](/vext/ref/fb/matchmakingcriteria/)                         |             |
-| createGameParams | [MatchmakingCreateGameParameters](/vext/ref/fb/matchmakingcreategameparameters/) |             |
-| onNotFound       | [MatchmakingSession](/vext/ref/fb/matchmakingsession/)                           |             |
-| modifiers        | [MatchmakingModifier](/vext/ref/fb/matchmakingmodifier/)\[\]                     |             |
-
-## Methods
-
-| Type                                     | Name            | Parameters                                     |
-| ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [MatchmakingSession](/vext/ref/fb/matchmakingsession/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MatchmakingSession](/vext/ref/fb/matchmakingsession/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MatchmakingSession](/vext/ref/fb/matchmakingsession) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MatchmakingSession {#constructor-2}
+> **MatchmakingSession**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MatchmakingSession](/vext/ref/fb/matchmakingsession). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MatchmakingSession](/vext/ref/fb/matchmakingsession). |
+
+## Properties
+### {{% prop-heading "mode" %}}
+> **[MatchmakingSessionMode](/vext/ref/fb/matchmakingsessionmode)**
+
+### {{% prop-heading "durationMs" %}}
+> **int**
+
+### {{% prop-heading "criteria" %}}
+> **[MatchmakingCriteria](/vext/ref/fb/matchmakingcriteria)**
+
+### {{% prop-heading "createGameParams" %}}
+> **[MatchmakingCreateGameParameters](/vext/ref/fb/matchmakingcreategameparameters)**
+
+### {{% prop-heading "onNotFound" %}}
+> **[MatchmakingSession](/vext/ref/fb/matchmakingsession)** | **nil**
+
+### {{% prop-heading "modifiers" %}}
+> **[MatchmakingModifier](/vext/ref/fb/matchmakingmodifier)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MatchmakingSession](/vext/ref/fb/matchmakingsession) type.
+

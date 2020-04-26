@@ -1,48 +1,92 @@
 ---
 title: EnlightenDatabaseAsset
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[EnlightenDatabaseAsset](#constructor-0)**() |
+| **[EnlightenDatabaseAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[EnlightenDatabaseAsset](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[EnlightenDatabaseAsset](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "dataVersion" >}} | int |
+| {{< prop "debugMeshDataVersion" >}} | int |
+| {{< prop "outputSizeX" >}} | int |
+| {{< prop "outputSizeY" >}} | int |
+| {{< prop "systems" >}} | [EnlightenDbSystem](/vext/ref/fb/enlightendbsystem)[] |
+| {{< prop "lightProbeSets" >}} | [EnlightenLightProbeSet](/vext/ref/fb/enlightenlightprobeset)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "EnlightenDatabaseAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### EnlightenDatabaseAsset {#constructor-0}
+> **EnlightenDatabaseAsset**()
 
-| Constructor                                                                       | Description                                                                                                                         |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| EnlightenDatabaseAsset()                                                          | Create a new instance of this container type.                                                                                       |
-| EnlightenDatabaseAsset(EnlightenDatabaseAsset other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| EnlightenDatabaseAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [EnlightenDatabaseAsset](/vext/ref/fb/enlightendatabaseasset/).                                      |
-| EnlightenDatabaseAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EnlightenDatabaseAsset](/vext/ref/fb/enlightendatabaseasset/). |
+Creates a new [EnlightenDatabaseAsset](/vext/ref/fb/enlightendatabaseasset) frostbite instance.
 
-## Properties
+### EnlightenDatabaseAsset {#constructor-1}
+> **EnlightenDatabaseAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                 | Type                                                 | Description |
-| -------------------- | ---------------------------------------------------- | ----------- |
-| dataVersion          | number                                               |             |
-| debugMeshDataVersion | number                                               |             |
-| outputSizeX          | number                                               |             |
-| outputSizeY          | number                                               |             |
-| systems              | [EnlightenDbSystem](/vext/ref/fb/enlightendbsystem/)\[\]           |             |
-| lightProbeSets       | [EnlightenLightProbeSet](/vext/ref/fb/enlightenlightprobeset/)\[\] |             |
-
-## Methods
-
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [EnlightenDatabaseAsset](/vext/ref/fb/enlightendatabaseasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [EnlightenDatabaseAsset](/vext/ref/fb/enlightendatabaseasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [EnlightenDatabaseAsset](/vext/ref/fb/enlightendatabaseasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### EnlightenDatabaseAsset {#constructor-2}
+> **EnlightenDatabaseAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [EnlightenDatabaseAsset](/vext/ref/fb/enlightendatabaseasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [EnlightenDatabaseAsset](/vext/ref/fb/enlightendatabaseasset). |
+
+### EnlightenDatabaseAsset {#constructor-3}
+> **EnlightenDatabaseAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EnlightenDatabaseAsset](/vext/ref/fb/enlightendatabaseasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [EnlightenDatabaseAsset](/vext/ref/fb/enlightendatabaseasset). |
+
+## Properties
+### {{% prop-heading "dataVersion" %}}
+> **int**
+
+### {{% prop-heading "debugMeshDataVersion" %}}
+> **int**
+
+### {{% prop-heading "outputSizeX" %}}
+> **int**
+
+### {{% prop-heading "outputSizeY" %}}
+> **int**
+
+### {{% prop-heading "systems" %}}
+> **[EnlightenDbSystem](/vext/ref/fb/enlightendbsystem)**[]
+
+### {{% prop-heading "lightProbeSets" %}}
+> **[EnlightenLightProbeSet](/vext/ref/fb/enlightenlightprobeset)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [EnlightenDatabaseAsset](/vext/ref/fb/enlightendatabaseasset) type.
+

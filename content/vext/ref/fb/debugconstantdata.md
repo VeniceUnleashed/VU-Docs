@@ -1,47 +1,88 @@
 ---
 title: DebugConstantData
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[DebugConstantData](#constructor-0)**() |
+| **[DebugConstantData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[DebugConstantData](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[DebugConstantData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "botDebugDistance" >}} | float |
+| {{< prop "inViewModeFOV" >}} | float |
+| {{< prop "graphDataBuffer" >}} | int |
+| {{< prop "minDecisionTime" >}} | float |
+| {{< prop "inaccuracyEnabled" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "DebugConstantData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### DebugConstantData {#constructor-0}
+> **DebugConstantData**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| DebugConstantData()                                                          | Create a new instance of this container type.                                                                             |
-| DebugConstantData(DebugConstantData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| DebugConstantData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [DebugConstantData](/vext/ref/fb/debugconstantdata/).                                      |
-| DebugConstantData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DebugConstantData](/vext/ref/fb/debugconstantdata/). |
+Creates a new [DebugConstantData](/vext/ref/fb/debugconstantdata) frostbite instance.
 
-## Properties
+### DebugConstantData {#constructor-1}
+> **DebugConstantData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name              | Type   | Description |
-| ----------------- | ------ | ----------- |
-| botDebugDistance  | number |             |
-| inViewModeFOV     | number |             |
-| graphDataBuffer   | number |             |
-| minDecisionTime   | number |             |
-| inaccuracyEnabled | bool   |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [DebugConstantData](/vext/ref/fb/debugconstantdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [DebugConstantData](/vext/ref/fb/debugconstantdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [DebugConstantData](/vext/ref/fb/debugconstantdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### DebugConstantData {#constructor-2}
+> **DebugConstantData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [DebugConstantData](/vext/ref/fb/debugconstantdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [DebugConstantData](/vext/ref/fb/debugconstantdata). |
+
+### DebugConstantData {#constructor-3}
+> **DebugConstantData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DebugConstantData](/vext/ref/fb/debugconstantdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DebugConstantData](/vext/ref/fb/debugconstantdata). |
+
+## Properties
+### {{% prop-heading "botDebugDistance" %}}
+> **float**
+
+### {{% prop-heading "inViewModeFOV" %}}
+> **float**
+
+### {{% prop-heading "graphDataBuffer" %}}
+> **int**
+
+### {{% prop-heading "minDecisionTime" %}}
+> **float**
+
+### {{% prop-heading "inaccuracyEnabled" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [DebugConstantData](/vext/ref/fb/debugconstantdata) type.
+

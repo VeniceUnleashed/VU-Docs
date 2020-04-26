@@ -1,45 +1,87 @@
 ---
 title: AwardHeaderData
 ---
-### Base Classes
 
-[AbstractAwardData](/vext/ref/fb/abstractawarddata/)
+Inherits from 
+[AbstractAwardData](/vext/ref/fb/abstractawarddata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AwardHeaderData](#constructor-0)**() |
+| **[AwardHeaderData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[AwardHeaderData](#constructor-2)**(other: [AbstractAwardData](/vext/ref/fb/abstractawarddata)) |
+| **[AwardHeaderData](#constructor-3)**(other: [TreeNodeBase](/vext/ref/fb/treenodebase)) |
+| **[AwardHeaderData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "group" >}} | [AwardGroup](/vext/ref/fb/awardgroup) |
+| {{< prop "multiplicity" >}} | [StatsMultiplicity](/vext/ref/fb/statsmultiplicity) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AwardHeaderData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AwardHeaderData {#constructor-0}
+> **AwardHeaderData**()
 
-| Constructor                                                                | Description                                                                                                           |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| AwardHeaderData()                                                          | Create a new instance of this container type.                                                                         |
-| AwardHeaderData(AwardHeaderData other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| AwardHeaderData([AbstractAwardData](/vext/ref/fb/abstractawarddata/) other)              | Upcast an instance of type [AbstractAwardData](/vext/ref/fb/abstractawarddata/) to [AwardHeaderData](/vext/ref/fb/awardheaderdata/).              |
-| AwardHeaderData([TreeNodeBase](/vext/ref/fb/treenodebase/) other)                        | Upcast an instance of type [TreeNodeBase](/vext/ref/fb/treenodebase/) to [AwardHeaderData](/vext/ref/fb/awardheaderdata/).                        |
-| AwardHeaderData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AwardHeaderData](/vext/ref/fb/awardheaderdata/). |
+Creates a new [AwardHeaderData](/vext/ref/fb/awardheaderdata) frostbite instance.
 
-## Properties
+### AwardHeaderData {#constructor-1}
+> **AwardHeaderData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name         | Type                                   | Description |
-| ------------ | -------------------------------------- | ----------- |
-| group        | [AwardGroup](/vext/ref/fb/awardgroup/)               |             |
-| multiplicity | [StatsMultiplicity](/vext/ref/fb/statsmultiplicity/) |             |
-
-## Methods
-
-| Type                               | Name            | Parameters                                     |
-| ---------------------------------- | --------------- | ---------------------------------------------- |
-| [AwardHeaderData](/vext/ref/fb/awardheaderdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [AwardHeaderData](/vext/ref/fb/awardheaderdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [AwardHeaderData](/vext/ref/fb/awardheaderdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### AwardHeaderData {#constructor-2}
+> **AwardHeaderData**(other: [AbstractAwardData](/vext/ref/fb/abstractawarddata))
+
+Casts an instance of type [AbstractAwardData](/vext/ref/fb/abstractawarddata) to [AwardHeaderData](/vext/ref/fb/awardheaderdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AbstractAwardData](/vext/ref/fb/abstractawarddata) | The instance to cast to [AwardHeaderData](/vext/ref/fb/awardheaderdata). |
+
+### AwardHeaderData {#constructor-3}
+> **AwardHeaderData**(other: [TreeNodeBase](/vext/ref/fb/treenodebase))
+
+Casts an instance of type [TreeNodeBase](/vext/ref/fb/treenodebase) to [AwardHeaderData](/vext/ref/fb/awardheaderdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [TreeNodeBase](/vext/ref/fb/treenodebase) | The instance to cast to [AwardHeaderData](/vext/ref/fb/awardheaderdata). |
+
+### AwardHeaderData {#constructor-4}
+> **AwardHeaderData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AwardHeaderData](/vext/ref/fb/awardheaderdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [AwardHeaderData](/vext/ref/fb/awardheaderdata). |
+
+## Properties
+### {{% prop-heading "group" %}}
+> **[AwardGroup](/vext/ref/fb/awardgroup)**
+
+### {{% prop-heading "multiplicity" %}}
+> **[StatsMultiplicity](/vext/ref/fb/statsmultiplicity)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AwardHeaderData](/vext/ref/fb/awardheaderdata) type.
+

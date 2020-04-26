@@ -1,46 +1,84 @@
 ---
 title: WeaponDeployTimeModifier
 ---
-### Base Classes
 
-[WeaponModifierBase](/vext/ref/fb/weaponmodifierbase/)
+Inherits from 
+[WeaponModifierBase](/vext/ref/fb/weaponmodifierbase)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[WeaponDeployTimeModifier](#constructor-0)**() |
+| **[WeaponDeployTimeModifier](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[WeaponDeployTimeModifier](#constructor-2)**(other: [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase)) |
+| **[WeaponDeployTimeModifier](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "deployTime" >}} | float |
+| {{< prop "disableZoomOnDeployTime" >}} | float |
+| {{< prop "altDeployTime" >}} | float |
+| {{< prop "altDeployId" >}} | int |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "WeaponDeployTimeModifier" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### WeaponDeployTimeModifier {#constructor-0}
+> **WeaponDeployTimeModifier**()
 
-| Constructor                                                                         | Description                                                                                                                             |
-| ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| WeaponDeployTimeModifier()                                                          | Create a new instance of this container type.                                                                                           |
-| WeaponDeployTimeModifier(WeaponDeployTimeModifier other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| WeaponDeployTimeModifier([WeaponModifierBase](/vext/ref/fb/weaponmodifierbase/) other)            | Upcast an instance of type [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase/) to [WeaponDeployTimeModifier](/vext/ref/fb/weapondeploytimemodifier/).            |
-| WeaponDeployTimeModifier([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponDeployTimeModifier](/vext/ref/fb/weapondeploytimemodifier/). |
+Creates a new [WeaponDeployTimeModifier](/vext/ref/fb/weapondeploytimemodifier) frostbite instance.
 
-## Properties
+### WeaponDeployTimeModifier {#constructor-1}
+> **WeaponDeployTimeModifier**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                    | Type   | Description |
-| ----------------------- | ------ | ----------- |
-| deployTime              | number |             |
-| disableZoomOnDeployTime | number |             |
-| altDeployTime           | number |             |
-| altDeployId             | number |             |
-
-## Methods
-
-| Type                                                 | Name            | Parameters                                     |
-| ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [WeaponDeployTimeModifier](/vext/ref/fb/weapondeploytimemodifier/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [WeaponDeployTimeModifier](/vext/ref/fb/weapondeploytimemodifier/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [WeaponDeployTimeModifier](/vext/ref/fb/weapondeploytimemodifier) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### WeaponDeployTimeModifier {#constructor-2}
+> **WeaponDeployTimeModifier**(other: [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase))
+
+Casts an instance of type [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase) to [WeaponDeployTimeModifier](/vext/ref/fb/weapondeploytimemodifier). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase) | The instance to cast to [WeaponDeployTimeModifier](/vext/ref/fb/weapondeploytimemodifier). |
+
+### WeaponDeployTimeModifier {#constructor-3}
+> **WeaponDeployTimeModifier**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponDeployTimeModifier](/vext/ref/fb/weapondeploytimemodifier). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [WeaponDeployTimeModifier](/vext/ref/fb/weapondeploytimemodifier). |
+
+## Properties
+### {{% prop-heading "deployTime" %}}
+> **float**
+
+### {{% prop-heading "disableZoomOnDeployTime" %}}
+> **float**
+
+### {{% prop-heading "altDeployTime" %}}
+> **float**
+
+### {{% prop-heading "altDeployId" %}}
+> **int**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [WeaponDeployTimeModifier](/vext/ref/fb/weapondeploytimemodifier) type.
+

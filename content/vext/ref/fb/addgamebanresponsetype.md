@@ -1,15 +1,12 @@
 ---
 title: AddGameBanResponseType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **AddGameBanResponseType_Success** | Value: **0** |
+| **AddGameBanResponseType_Failure** | Value: **1** |
+| **AddGameBanResponseType_UserNotFound** | Value: **2** |
+| **AddGameBanResponseType_UserCannotBeBanned** | Value: **3** |
 
-| Name                                       | Value | Description |
-| ------------------------------------------ | ----- | ----------- |
-| AddGameBanResponseType\_Success            | 0     |             |
-| AddGameBanResponseType\_Failure            | 1     |             |
-| AddGameBanResponseType\_UserNotFound       | 2     |             |
-| AddGameBanResponseType\_UserCannotBeBanned | 3     |             |

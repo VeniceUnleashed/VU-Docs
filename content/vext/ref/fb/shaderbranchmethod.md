@@ -1,16 +1,13 @@
 ---
 title: ShaderBranchMethod
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **SbmStatic** | Value: **0** |
+| **SbmFlat** | Value: **1** |
+| **SbmDynamicIfElse** | Value: **2** |
+| **SbmDynamicIfTrue** | Value: **3** |
+| **SbmDynamicIfFalse** | Value: **4** |
 
-| Name              | Value | Description |
-| ----------------- | ----- | ----------- |
-| SbmStatic         | 0     |             |
-| SbmFlat           | 1     |             |
-| SbmDynamicIfElse  | 2     |             |
-| SbmDynamicIfTrue  | 3     |             |
-| SbmDynamicIfFalse | 4     |             |

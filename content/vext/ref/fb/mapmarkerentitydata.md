@@ -1,75 +1,228 @@
 ---
 title: MapMarkerEntityData
 ---
-### Base Classes
 
-[GameEntityData](/vext/ref/fb/gameentitydata/)
+Inherits from 
+[GameEntityData](/vext/ref/fb/gameentitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MapMarkerEntityData](#constructor-0)**() |
+| **[MapMarkerEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MapMarkerEntityData](#constructor-2)**(other: [GameEntityData](/vext/ref/fb/gameentitydata)) |
+| **[MapMarkerEntityData](#constructor-3)**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata)) |
+| **[MapMarkerEntityData](#constructor-4)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[MapMarkerEntityData](#constructor-5)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[MapMarkerEntityData](#constructor-6)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[MapMarkerEntityData](#constructor-7)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "baseTransform" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "progressMinTime" >}} | float |
+| {{< prop "sid" >}} | string |
+| {{< prop "nrOfPassengers" >}} | int |
+| {{< prop "nrOfEntries" >}} | int |
+| {{< prop "progressTime1Player" >}} | float |
+| {{< prop "showRadius" >}} | float |
+| {{< prop "hideRadius" >}} | float |
+| {{< prop "blinkTime" >}} | float |
+| {{< prop "markerType" >}} | [MapMarkerType](/vext/ref/fb/mapmarkertype) |
+| {{< prop "visibleForTeam" >}} | [TeamId](/vext/ref/fb/teamid) |
+| {{< prop "ownerTeam" >}} | [TeamId](/vext/ref/fb/teamid) |
+| {{< prop "hudIcon" >}} | [UIHudIcon](/vext/ref/fb/uihudicon) |
+| {{< prop "verticalOffset" >}} | float |
+| {{< prop "focusPointRadius" >}} | float |
+| {{< prop "instantFlagReturnRadius" >}} | float |
+| {{< prop "progress" >}} | float |
+| {{< prop "progressPlayerSpeedUpPercentage" >}} | float |
+| {{< prop "trackedPlayersInRange" >}} | int |
+| {{< prop "trackingPlayerRange" >}} | float |
+| {{< prop "progressTime" >}} | float |
+| {{< prop "onlyShowSnapped" >}} | bool |
+| {{< prop "flagControlMarker" >}} | bool |
+| {{< prop "showProgress" >}} | bool |
+| {{< prop "useMarkerTransform" >}} | bool |
+| {{< prop "isVisible" >}} | bool |
+| {{< prop "snap" >}} | bool |
+| {{< prop "showAirTargetBox" >}} | bool |
+| {{< prop "isFocusPoint" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MapMarkerEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MapMarkerEntityData {#constructor-0}
+> **MapMarkerEntityData**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| MapMarkerEntityData()                                                          | Create a new instance of this container type.                                                                                 |
-| MapMarkerEntityData(MapMarkerEntityData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| MapMarkerEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [MapMarkerEntityData](/vext/ref/fb/mapmarkerentitydata/).                    |
-| MapMarkerEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [MapMarkerEntityData](/vext/ref/fb/mapmarkerentitydata/).              |
-| MapMarkerEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [MapMarkerEntityData](/vext/ref/fb/mapmarkerentitydata/).                            |
-| MapMarkerEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [MapMarkerEntityData](/vext/ref/fb/mapmarkerentitydata/).                    |
-| MapMarkerEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [MapMarkerEntityData](/vext/ref/fb/mapmarkerentitydata/).              |
-| MapMarkerEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MapMarkerEntityData](/vext/ref/fb/mapmarkerentitydata/). |
+Creates a new [MapMarkerEntityData](/vext/ref/fb/mapmarkerentitydata) frostbite instance.
 
-## Properties
+### MapMarkerEntityData {#constructor-1}
+> **MapMarkerEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                            | Type                              | Description |
-| ------------------------------- | --------------------------------- | ----------- |
-| baseTransform                   | [Vec3](/vext/ref/shared/class/vec3) |             |
-| progressMinTime                 | number                            |             |
-| sid                             | string                            |             |
-| nrOfPassengers                  | number                            |             |
-| nrOfEntries                     | number                            |             |
-| progressTime1Player             | number                            |             |
-| showRadius                      | number                            |             |
-| hideRadius                      | number                            |             |
-| blinkTime                       | number                            |             |
-| markerType                      | [MapMarkerType](/vext/ref/fb/mapmarkertype/)    |             |
-| visibleForTeam                  | [TeamId](/vext/ref/fb/teamid/)                  |             |
-| ownerTeam                       | [TeamId](/vext/ref/fb/teamid/)                  |             |
-| hudIcon                         | [UIHudIcon](/vext/ref/fb/uihudicon/)            |             |
-| verticalOffset                  | number                            |             |
-| focusPointRadius                | number                            |             |
-| instantFlagReturnRadius         | number                            |             |
-| progress                        | number                            |             |
-| progressPlayerSpeedUpPercentage | number                            |             |
-| trackedPlayersInRange           | number                            |             |
-| trackingPlayerRange             | number                            |             |
-| progressTime                    | number                            |             |
-| onlyShowSnapped                 | bool                              |             |
-| flagControlMarker               | bool                              |             |
-| showProgress                    | bool                              |             |
-| useMarkerTransform              | bool                              |             |
-| isVisible                       | bool                              |             |
-| snap                            | bool                              |             |
-| showAirTargetBox                | bool                              |             |
-| isFocusPoint                    | bool                              |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [MapMarkerEntityData](/vext/ref/fb/mapmarkerentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MapMarkerEntityData](/vext/ref/fb/mapmarkerentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MapMarkerEntityData](/vext/ref/fb/mapmarkerentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MapMarkerEntityData {#constructor-2}
+> **MapMarkerEntityData**(other: [GameEntityData](/vext/ref/fb/gameentitydata))
+
+Casts an instance of type [GameEntityData](/vext/ref/fb/gameentitydata) to [MapMarkerEntityData](/vext/ref/fb/mapmarkerentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameEntityData](/vext/ref/fb/gameentitydata) | The instance to cast to [MapMarkerEntityData](/vext/ref/fb/mapmarkerentitydata). |
+
+### MapMarkerEntityData {#constructor-3}
+> **MapMarkerEntityData**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata))
+
+Casts an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata) to [MapMarkerEntityData](/vext/ref/fb/mapmarkerentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SpatialEntityData](/vext/ref/fb/spatialentitydata) | The instance to cast to [MapMarkerEntityData](/vext/ref/fb/mapmarkerentitydata). |
+
+### MapMarkerEntityData {#constructor-4}
+> **MapMarkerEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [MapMarkerEntityData](/vext/ref/fb/mapmarkerentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [MapMarkerEntityData](/vext/ref/fb/mapmarkerentitydata). |
+
+### MapMarkerEntityData {#constructor-5}
+> **MapMarkerEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [MapMarkerEntityData](/vext/ref/fb/mapmarkerentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [MapMarkerEntityData](/vext/ref/fb/mapmarkerentitydata). |
+
+### MapMarkerEntityData {#constructor-6}
+> **MapMarkerEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [MapMarkerEntityData](/vext/ref/fb/mapmarkerentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [MapMarkerEntityData](/vext/ref/fb/mapmarkerentitydata). |
+
+### MapMarkerEntityData {#constructor-7}
+> **MapMarkerEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MapMarkerEntityData](/vext/ref/fb/mapmarkerentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MapMarkerEntityData](/vext/ref/fb/mapmarkerentitydata). |
+
+## Properties
+### {{% prop-heading "baseTransform" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "progressMinTime" %}}
+> **float**
+
+### {{% prop-heading "sid" %}}
+> **string**
+
+### {{% prop-heading "nrOfPassengers" %}}
+> **int**
+
+### {{% prop-heading "nrOfEntries" %}}
+> **int**
+
+### {{% prop-heading "progressTime1Player" %}}
+> **float**
+
+### {{% prop-heading "showRadius" %}}
+> **float**
+
+### {{% prop-heading "hideRadius" %}}
+> **float**
+
+### {{% prop-heading "blinkTime" %}}
+> **float**
+
+### {{% prop-heading "markerType" %}}
+> **[MapMarkerType](/vext/ref/fb/mapmarkertype)**
+
+### {{% prop-heading "visibleForTeam" %}}
+> **[TeamId](/vext/ref/fb/teamid)**
+
+### {{% prop-heading "ownerTeam" %}}
+> **[TeamId](/vext/ref/fb/teamid)**
+
+### {{% prop-heading "hudIcon" %}}
+> **[UIHudIcon](/vext/ref/fb/uihudicon)**
+
+### {{% prop-heading "verticalOffset" %}}
+> **float**
+
+### {{% prop-heading "focusPointRadius" %}}
+> **float**
+
+### {{% prop-heading "instantFlagReturnRadius" %}}
+> **float**
+
+### {{% prop-heading "progress" %}}
+> **float**
+
+### {{% prop-heading "progressPlayerSpeedUpPercentage" %}}
+> **float**
+
+### {{% prop-heading "trackedPlayersInRange" %}}
+> **int**
+
+### {{% prop-heading "trackingPlayerRange" %}}
+> **float**
+
+### {{% prop-heading "progressTime" %}}
+> **float**
+
+### {{% prop-heading "onlyShowSnapped" %}}
+> **bool**
+
+### {{% prop-heading "flagControlMarker" %}}
+> **bool**
+
+### {{% prop-heading "showProgress" %}}
+> **bool**
+
+### {{% prop-heading "useMarkerTransform" %}}
+> **bool**
+
+### {{% prop-heading "isVisible" %}}
+> **bool**
+
+### {{% prop-heading "snap" %}}
+> **bool**
+
+### {{% prop-heading "showAirTargetBox" %}}
+> **bool**
+
+### {{% prop-heading "isFocusPoint" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MapMarkerEntityData](/vext/ref/fb/mapmarkerentitydata) type.
+

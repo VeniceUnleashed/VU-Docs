@@ -1,39 +1,85 @@
 ---
 title: StatCategoriesPlayerRoleTree
 ---
-### Base Classes
 
-[StatCategoriesBaseTree](/vext/ref/fb/statcategoriesbasetree/)
+Inherits from 
+[StatCategoriesBaseTree](/vext/ref/fb/statcategoriesbasetree)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[StatCategoriesPlayerRoleTree](#constructor-0)**() |
+| **[StatCategoriesPlayerRoleTree](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[StatCategoriesPlayerRoleTree](#constructor-2)**(other: [StatCategoriesBaseTree](/vext/ref/fb/statcategoriesbasetree)) |
+| **[StatCategoriesPlayerRoleTree](#constructor-3)**(other: [TreeBase](/vext/ref/fb/treebase)) |
+| **[StatCategoriesPlayerRoleTree](#constructor-4)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[StatCategoriesPlayerRoleTree](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "StatCategoriesPlayerRoleTree" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### StatCategoriesPlayerRoleTree {#constructor-0}
+> **StatCategoriesPlayerRoleTree**()
 
-| Constructor                                                                             | Description                                                                                                                                     |
-| --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| StatCategoriesPlayerRoleTree()                                                          | Create a new instance of this container type.                                                                                                   |
-| StatCategoriesPlayerRoleTree(StatCategoriesPlayerRoleTree other)                        | Create a reference copy of an instance of the same type.                                                                                        |
-| StatCategoriesPlayerRoleTree([StatCategoriesBaseTree](/vext/ref/fb/statcategoriesbasetree/) other)    | Upcast an instance of type [StatCategoriesBaseTree](/vext/ref/fb/statcategoriesbasetree/) to [StatCategoriesPlayerRoleTree](/vext/ref/fb/statcategoriesplayerroletree/).    |
-| StatCategoriesPlayerRoleTree([TreeBase](/vext/ref/fb/treebase/) other)                                | Upcast an instance of type [TreeBase](/vext/ref/fb/treebase/) to [StatCategoriesPlayerRoleTree](/vext/ref/fb/statcategoriesplayerroletree/).                                |
-| StatCategoriesPlayerRoleTree([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [StatCategoriesPlayerRoleTree](/vext/ref/fb/statcategoriesplayerroletree/).                                      |
-| StatCategoriesPlayerRoleTree([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StatCategoriesPlayerRoleTree](/vext/ref/fb/statcategoriesplayerroletree/). |
+Creates a new [StatCategoriesPlayerRoleTree](/vext/ref/fb/statcategoriesplayerroletree) frostbite instance.
 
-## Methods
+### StatCategoriesPlayerRoleTree {#constructor-1}
+> **StatCategoriesPlayerRoleTree**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                                         | Name            | Parameters                                     |
-| ------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [StatCategoriesPlayerRoleTree](/vext/ref/fb/statcategoriesplayerroletree/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [StatCategoriesPlayerRoleTree](/vext/ref/fb/statcategoriesplayerroletree/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [StatCategoriesPlayerRoleTree](/vext/ref/fb/statcategoriesplayerroletree) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### StatCategoriesPlayerRoleTree {#constructor-2}
+> **StatCategoriesPlayerRoleTree**(other: [StatCategoriesBaseTree](/vext/ref/fb/statcategoriesbasetree))
+
+Casts an instance of type [StatCategoriesBaseTree](/vext/ref/fb/statcategoriesbasetree) to [StatCategoriesPlayerRoleTree](/vext/ref/fb/statcategoriesplayerroletree). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [StatCategoriesBaseTree](/vext/ref/fb/statcategoriesbasetree) | The instance to cast to [StatCategoriesPlayerRoleTree](/vext/ref/fb/statcategoriesplayerroletree). |
+
+### StatCategoriesPlayerRoleTree {#constructor-3}
+> **StatCategoriesPlayerRoleTree**(other: [TreeBase](/vext/ref/fb/treebase))
+
+Casts an instance of type [TreeBase](/vext/ref/fb/treebase) to [StatCategoriesPlayerRoleTree](/vext/ref/fb/statcategoriesplayerroletree). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [TreeBase](/vext/ref/fb/treebase) | The instance to cast to [StatCategoriesPlayerRoleTree](/vext/ref/fb/statcategoriesplayerroletree). |
+
+### StatCategoriesPlayerRoleTree {#constructor-4}
+> **StatCategoriesPlayerRoleTree**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [StatCategoriesPlayerRoleTree](/vext/ref/fb/statcategoriesplayerroletree). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [StatCategoriesPlayerRoleTree](/vext/ref/fb/statcategoriesplayerroletree). |
+
+### StatCategoriesPlayerRoleTree {#constructor-5}
+> **StatCategoriesPlayerRoleTree**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StatCategoriesPlayerRoleTree](/vext/ref/fb/statcategoriesplayerroletree). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [StatCategoriesPlayerRoleTree](/vext/ref/fb/statcategoriesplayerroletree). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [StatCategoriesPlayerRoleTree](/vext/ref/fb/statcategoriesplayerroletree) type.
+

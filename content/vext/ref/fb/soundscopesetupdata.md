@@ -1,43 +1,65 @@
 ---
 title: SoundScopeSetupData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SoundScopeSetupData](#constructor-0)**() |
+| **[SoundScopeSetupData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SoundScopeSetupData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "name" >}} | string |
+| {{< prop "mappings" >}} | [SoundScopeStrategyMapping](/vext/ref/fb/soundscopestrategymapping)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SoundScopeSetupData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SoundScopeSetupData {#constructor-0}
+> **SoundScopeSetupData**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| SoundScopeSetupData()                                                          | Create a new instance of this container type.                                                                                 |
-| SoundScopeSetupData(SoundScopeSetupData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| SoundScopeSetupData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoundScopeSetupData](/vext/ref/fb/soundscopesetupdata/). |
+Creates a new [SoundScopeSetupData](/vext/ref/fb/soundscopesetupdata) frostbite instance.
 
-## Properties
+### SoundScopeSetupData {#constructor-1}
+> **SoundScopeSetupData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name     | Type                                                       | Description |
-| -------- | ---------------------------------------------------------- | ----------- |
-| name     | string                                                     |             |
-| mappings | [SoundScopeStrategyMapping](/vext/ref/fb/soundscopestrategymapping/)\[\] |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [SoundScopeSetupData](/vext/ref/fb/soundscopesetupdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SoundScopeSetupData](/vext/ref/fb/soundscopesetupdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SoundScopeSetupData](/vext/ref/fb/soundscopesetupdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SoundScopeSetupData {#constructor-2}
+> **SoundScopeSetupData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoundScopeSetupData](/vext/ref/fb/soundscopesetupdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SoundScopeSetupData](/vext/ref/fb/soundscopesetupdata). |
+
+## Properties
+### {{% prop-heading "name" %}}
+> **string**
+
+### {{% prop-heading "mappings" %}}
+> **[SoundScopeStrategyMapping](/vext/ref/fb/soundscopestrategymapping)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SoundScopeSetupData](/vext/ref/fb/soundscopesetupdata) type.
+

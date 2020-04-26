@@ -1,13 +1,10 @@
 ---
 title: EnlightenColorMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **EnlightenColorMode_Multiply** | Value: **0** |
+| **EnlightenColorMode_Override** | Value: **1** |
 
-| Name                         | Value | Description |
-| ---------------------------- | ----- | ----------- |
-| EnlightenColorMode\_Multiply | 0     |             |
-| EnlightenColorMode\_Override | 1     |             |

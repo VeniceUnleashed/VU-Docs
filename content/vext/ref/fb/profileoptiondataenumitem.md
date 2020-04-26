@@ -1,32 +1,57 @@
 ---
 title: ProfileOptionDataEnumItem
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ProfileOptionDataEnumItem](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "displayName" >}} | string |
+| {{< prop "default" >}} | bool |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [ProfileOptionDataEnumItem](/vext/ref/fb/profileoptiondataenumitem) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ProfileOptionDataEnumItem" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ProfileOptionDataEnumItem {#constructor-0}
+> **ProfileOptionDataEnumItem**()
 
-| Constructor                                                | Description                                              |
-| ---------------------------------------------------------- | -------------------------------------------------------- |
-| ProfileOptionDataEnumItem()                                | Create a new instance of this structure type.            |
-| ProfileOptionDataEnumItem(ProfileOptionDataEnumItem other) | Create a reference copy of a structure of the same type. |
+Creates a new [ProfileOptionDataEnumItem](/vext/ref/fb/profileoptiondataenumitem) frostbite structure.
 
 ## Properties
+### {{% prop-heading "displayName" %}}
+> **string**
 
-| Name        | Type   | Description |
-| ----------- | ------ | ----------- |
-| displayName | string |             |
-| default     | bool   |             |
+### {{% prop-heading "default" %}}
+> **bool**
 
 ## Methods
-
-| Type                                                   | Name            | Parameters |
-| ------------------------------------------------------ | --------------- | ---------- |
-| [ProfileOptionDataEnumItem](/vext/ref/fb/profileoptiondataenumitem/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [ProfileOptionDataEnumItem](/vext/ref/fb/profileoptiondataenumitem)
 
-> [ProfileOptionDataEnumItem](/vext/ref/fb/profileoptiondataenumitem/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[ProfileOptionDataEnumItem](/vext/ref/fb/profileoptiondataenumitem)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ProfileOptionDataEnumItem](/vext/ref/fb/profileoptiondataenumitem) type.
+

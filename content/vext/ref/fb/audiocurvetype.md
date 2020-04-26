@@ -1,12 +1,9 @@
 ---
 title: AudioCurveType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **AudioCurveType_Spline** | Value: **0** |
 
-| Name                   | Value | Description |
-| ---------------------- | ----- | ----------- |
-| AudioCurveType\_Spline | 0     |             |

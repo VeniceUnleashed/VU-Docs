@@ -1,53 +1,105 @@
 ---
 title: MasterUnitSettings
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MasterUnitSettings](#constructor-0)**() |
+| **[MasterUnitSettings](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MasterUnitSettings](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "name" >}} | string |
+| {{< prop "equalizer" >}} | [EqualizerSettings](/vext/ref/fb/equalizersettings) \| nil |
+| {{< prop "compressor" >}} | [CompressorSettings](/vext/ref/fb/compressorsettings) \| nil |
+| {{< prop "masterVolume" >}} | float |
+| {{< prop "masterLfeGain" >}} | float |
+| {{< prop "masterDialogGain" >}} | float |
+| {{< prop "reverbVolume" >}} | float |
+| {{< prop "mainMixVolume" >}} | float |
+| {{< prop "distortionClipLevel" >}} | float |
+| {{< prop "parallelDistortionGain" >}} | float |
+| {{< prop "postEffectsGain" >}} | float |
+| {{< prop "fadeTime" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MasterUnitSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MasterUnitSettings {#constructor-0}
+> **MasterUnitSettings**()
 
-| Constructor                                                                   | Description                                                                                                                 |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| MasterUnitSettings()                                                          | Create a new instance of this container type.                                                                               |
-| MasterUnitSettings(MasterUnitSettings other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| MasterUnitSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MasterUnitSettings](/vext/ref/fb/masterunitsettings/). |
+Creates a new [MasterUnitSettings](/vext/ref/fb/masterunitsettings) frostbite instance.
 
-## Properties
+### MasterUnitSettings {#constructor-1}
+> **MasterUnitSettings**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                   | Type                                     | Description |
-| ---------------------- | ---------------------------------------- | ----------- |
-| name                   | string                                   |             |
-| equalizer              | [EqualizerSettings](/vext/ref/fb/equalizersettings/)   |             |
-| compressor             | [CompressorSettings](/vext/ref/fb/compressorsettings/) |             |
-| masterVolume           | number                                   |             |
-| masterLfeGain          | number                                   |             |
-| masterDialogGain       | number                                   |             |
-| reverbVolume           | number                                   |             |
-| mainMixVolume          | number                                   |             |
-| distortionClipLevel    | number                                   |             |
-| parallelDistortionGain | number                                   |             |
-| postEffectsGain        | number                                   |             |
-| fadeTime               | number                                   |             |
-
-## Methods
-
-| Type                                     | Name            | Parameters                                     |
-| ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [MasterUnitSettings](/vext/ref/fb/masterunitsettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MasterUnitSettings](/vext/ref/fb/masterunitsettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MasterUnitSettings](/vext/ref/fb/masterunitsettings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MasterUnitSettings {#constructor-2}
+> **MasterUnitSettings**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MasterUnitSettings](/vext/ref/fb/masterunitsettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MasterUnitSettings](/vext/ref/fb/masterunitsettings). |
+
+## Properties
+### {{% prop-heading "name" %}}
+> **string**
+
+### {{% prop-heading "equalizer" %}}
+> **[EqualizerSettings](/vext/ref/fb/equalizersettings)** | **nil**
+
+### {{% prop-heading "compressor" %}}
+> **[CompressorSettings](/vext/ref/fb/compressorsettings)** | **nil**
+
+### {{% prop-heading "masterVolume" %}}
+> **float**
+
+### {{% prop-heading "masterLfeGain" %}}
+> **float**
+
+### {{% prop-heading "masterDialogGain" %}}
+> **float**
+
+### {{% prop-heading "reverbVolume" %}}
+> **float**
+
+### {{% prop-heading "mainMixVolume" %}}
+> **float**
+
+### {{% prop-heading "distortionClipLevel" %}}
+> **float**
+
+### {{% prop-heading "parallelDistortionGain" %}}
+> **float**
+
+### {{% prop-heading "postEffectsGain" %}}
+> **float**
+
+### {{% prop-heading "fadeTime" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MasterUnitSettings](/vext/ref/fb/masterunitsettings) type.
+

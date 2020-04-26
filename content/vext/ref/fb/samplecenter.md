@@ -1,13 +1,10 @@
 ---
 title: SampleCenter
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **SampleCenter_Center** | Value: **0** |
+| **SampleCenter_TopLeft** | Value: **1** |
 
-| Name                  | Value | Description |
-| --------------------- | ----- | ----------- |
-| SampleCenter\_Center  | 0     |             |
-| SampleCenter\_TopLeft | 1     |             |

@@ -1,13 +1,10 @@
 ---
 title: SweepSelectionType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **SstTargetLost** | Value: **0** |
+| **SstFirstTime** | Value: **1** |
 
-| Name          | Value | Description |
-| ------------- | ----- | ----------- |
-| SstTargetLost | 0     |             |
-| SstFirstTime  | 1     |             |

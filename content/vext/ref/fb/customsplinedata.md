@@ -1,40 +1,96 @@
 ---
 title: CustomSplineData
 ---
-### Base Classes
 
-[VectorShapeData](/vext/ref/fb/vectorshapedata/)
+Inherits from 
+[VectorShapeData](/vext/ref/fb/vectorshapedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[CustomSplineData](#constructor-0)**() |
+| **[CustomSplineData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[CustomSplineData](#constructor-2)**(other: [VectorShapeData](/vext/ref/fb/vectorshapedata)) |
+| **[CustomSplineData](#constructor-3)**(other: [BaseShapeData](/vext/ref/fb/baseshapedata)) |
+| **[CustomSplineData](#constructor-4)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[CustomSplineData](#constructor-5)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[CustomSplineData](#constructor-6)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "CustomSplineData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### CustomSplineData {#constructor-0}
+> **CustomSplineData**()
 
-| Constructor                                                                 | Description                                                                                                             |
-| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| CustomSplineData()                                                          | Create a new instance of this container type.                                                                           |
-| CustomSplineData(CustomSplineData other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| CustomSplineData([VectorShapeData](/vext/ref/fb/vectorshapedata/) other)                  | Upcast an instance of type [VectorShapeData](/vext/ref/fb/vectorshapedata/) to [CustomSplineData](/vext/ref/fb/customsplinedata/).                  |
-| CustomSplineData([BaseShapeData](/vext/ref/fb/baseshapedata/) other)                      | Upcast an instance of type [BaseShapeData](/vext/ref/fb/baseshapedata/) to [CustomSplineData](/vext/ref/fb/customsplinedata/).                      |
-| CustomSplineData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [CustomSplineData](/vext/ref/fb/customsplinedata/).                    |
-| CustomSplineData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [CustomSplineData](/vext/ref/fb/customsplinedata/).              |
-| CustomSplineData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CustomSplineData](/vext/ref/fb/customsplinedata/). |
+Creates a new [CustomSplineData](/vext/ref/fb/customsplinedata) frostbite instance.
 
-## Methods
+### CustomSplineData {#constructor-1}
+> **CustomSplineData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                 | Name            | Parameters                                     |
-| ------------------------------------ | --------------- | ---------------------------------------------- |
-| [CustomSplineData](/vext/ref/fb/customsplinedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [CustomSplineData](/vext/ref/fb/customsplinedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [CustomSplineData](/vext/ref/fb/customsplinedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### CustomSplineData {#constructor-2}
+> **CustomSplineData**(other: [VectorShapeData](/vext/ref/fb/vectorshapedata))
+
+Casts an instance of type [VectorShapeData](/vext/ref/fb/vectorshapedata) to [CustomSplineData](/vext/ref/fb/customsplinedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [VectorShapeData](/vext/ref/fb/vectorshapedata) | The instance to cast to [CustomSplineData](/vext/ref/fb/customsplinedata). |
+
+### CustomSplineData {#constructor-3}
+> **CustomSplineData**(other: [BaseShapeData](/vext/ref/fb/baseshapedata))
+
+Casts an instance of type [BaseShapeData](/vext/ref/fb/baseshapedata) to [CustomSplineData](/vext/ref/fb/customsplinedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [BaseShapeData](/vext/ref/fb/baseshapedata) | The instance to cast to [CustomSplineData](/vext/ref/fb/customsplinedata). |
+
+### CustomSplineData {#constructor-4}
+> **CustomSplineData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [CustomSplineData](/vext/ref/fb/customsplinedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [CustomSplineData](/vext/ref/fb/customsplinedata). |
+
+### CustomSplineData {#constructor-5}
+> **CustomSplineData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [CustomSplineData](/vext/ref/fb/customsplinedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [CustomSplineData](/vext/ref/fb/customsplinedata). |
+
+### CustomSplineData {#constructor-6}
+> **CustomSplineData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CustomSplineData](/vext/ref/fb/customsplinedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [CustomSplineData](/vext/ref/fb/customsplinedata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [CustomSplineData](/vext/ref/fb/customsplinedata) type.
+

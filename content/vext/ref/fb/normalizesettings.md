@@ -1,36 +1,73 @@
 ---
 title: NormalizeSettings
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[NormalizeSettings](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "maximum" >}} | float |
+| {{< prop "minimum" >}} | float |
+| {{< prop "velocity" >}} | float |
+| {{< prop "lower" >}} | float |
+| {{< prop "upper" >}} | float |
+| {{< prop "normalize" >}} | bool |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [NormalizeSettings](/vext/ref/fb/normalizesettings) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "NormalizeSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### NormalizeSettings {#constructor-0}
+> **NormalizeSettings**()
 
-| Constructor                                | Description                                              |
-| ------------------------------------------ | -------------------------------------------------------- |
-| NormalizeSettings()                        | Create a new instance of this structure type.            |
-| NormalizeSettings(NormalizeSettings other) | Create a reference copy of a structure of the same type. |
+Creates a new [NormalizeSettings](/vext/ref/fb/normalizesettings) frostbite structure.
 
 ## Properties
+### {{% prop-heading "maximum" %}}
+> **float**
 
-| Name      | Type   | Description |
-| --------- | ------ | ----------- |
-| maximum   | number |             |
-| minimum   | number |             |
-| velocity  | number |             |
-| lower     | number |             |
-| upper     | number |             |
-| normalize | bool   |             |
+### {{% prop-heading "minimum" %}}
+> **float**
+
+### {{% prop-heading "velocity" %}}
+> **float**
+
+### {{% prop-heading "lower" %}}
+> **float**
+
+### {{% prop-heading "upper" %}}
+> **float**
+
+### {{% prop-heading "normalize" %}}
+> **bool**
 
 ## Methods
-
-| Type                                   | Name            | Parameters |
-| -------------------------------------- | --------------- | ---------- |
-| [NormalizeSettings](/vext/ref/fb/normalizesettings/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [NormalizeSettings](/vext/ref/fb/normalizesettings)
 
-> [NormalizeSettings](/vext/ref/fb/normalizesettings/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[NormalizeSettings](/vext/ref/fb/normalizesettings)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [NormalizeSettings](/vext/ref/fb/normalizesettings) type.
+

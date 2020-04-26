@@ -1,44 +1,83 @@
 ---
 title: AirResistanceData
 ---
-### Base Classes
 
-[ProcessorData](/vext/ref/fb/processordata/)
+Inherits from 
+[ProcessorData](/vext/ref/fb/processordata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AirResistanceData](#constructor-0)**() |
+| **[AirResistanceData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[AirResistanceData](#constructor-2)**(other: [ProcessorData](/vext/ref/fb/processordata)) |
+| **[AirResistanceData](#constructor-3)**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata)) |
+| **[AirResistanceData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "dragFactor" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AirResistanceData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AirResistanceData {#constructor-0}
+> **AirResistanceData**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| AirResistanceData()                                                          | Create a new instance of this container type.                                                                             |
-| AirResistanceData(AirResistanceData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| AirResistanceData([ProcessorData](/vext/ref/fb/processordata/) other)                      | Upcast an instance of type [ProcessorData](/vext/ref/fb/processordata/) to [AirResistanceData](/vext/ref/fb/airresistancedata/).                      |
-| AirResistanceData([EmitterComponentData](/vext/ref/fb/emittercomponentdata/) other)        | Upcast an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata/) to [AirResistanceData](/vext/ref/fb/airresistancedata/).        |
-| AirResistanceData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AirResistanceData](/vext/ref/fb/airresistancedata/). |
+Creates a new [AirResistanceData](/vext/ref/fb/airresistancedata) frostbite instance.
 
-## Properties
+### AirResistanceData {#constructor-1}
+> **AirResistanceData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name       | Type   | Description |
-| ---------- | ------ | ----------- |
-| dragFactor | number |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [AirResistanceData](/vext/ref/fb/airresistancedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [AirResistanceData](/vext/ref/fb/airresistancedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [AirResistanceData](/vext/ref/fb/airresistancedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### AirResistanceData {#constructor-2}
+> **AirResistanceData**(other: [ProcessorData](/vext/ref/fb/processordata))
+
+Casts an instance of type [ProcessorData](/vext/ref/fb/processordata) to [AirResistanceData](/vext/ref/fb/airresistancedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ProcessorData](/vext/ref/fb/processordata) | The instance to cast to [AirResistanceData](/vext/ref/fb/airresistancedata). |
+
+### AirResistanceData {#constructor-3}
+> **AirResistanceData**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata))
+
+Casts an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata) to [AirResistanceData](/vext/ref/fb/airresistancedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EmitterComponentData](/vext/ref/fb/emittercomponentdata) | The instance to cast to [AirResistanceData](/vext/ref/fb/airresistancedata). |
+
+### AirResistanceData {#constructor-4}
+> **AirResistanceData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AirResistanceData](/vext/ref/fb/airresistancedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [AirResistanceData](/vext/ref/fb/airresistancedata). |
+
+## Properties
+### {{% prop-heading "dragFactor" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AirResistanceData](/vext/ref/fb/airresistancedata) type.
+

@@ -1,13 +1,10 @@
 ---
 title: RenderFillMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **RenderFillMode_Solid** | Value: **0** |
+| **RenderFillMode_Wireframe** | Value: **1** |
 
-| Name                      | Value | Description |
-| ------------------------- | ----- | ----------- |
-| RenderFillMode\_Solid     | 0     |             |
-| RenderFillMode\_Wireframe | 1     |             |

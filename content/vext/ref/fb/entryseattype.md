@@ -1,14 +1,11 @@
 ---
 title: EntrySeatType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **EST_Driver** | Value: **0** |
+| **EST_Gunner** | Value: **1** |
+| **EST_Passenger** | Value: **2** |
 
-| Name           | Value | Description |
-| -------------- | ----- | ----------- |
-| EST\_Driver    | 0     |             |
-| EST\_Gunner    | 1     |             |
-| EST\_Passenger | 2     |             |

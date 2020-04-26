@@ -1,46 +1,91 @@
 ---
 title: SphereEvaluatorData
 ---
-### Base Classes
 
-[EvaluatorData](/vext/ref/fb/evaluatordata/)
+Inherits from 
+[EvaluatorData](/vext/ref/fb/evaluatordata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SphereEvaluatorData](#constructor-0)**() |
+| **[SphereEvaluatorData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SphereEvaluatorData](#constructor-2)**(other: [EvaluatorData](/vext/ref/fb/evaluatordata)) |
+| **[SphereEvaluatorData](#constructor-3)**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata)) |
+| **[SphereEvaluatorData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "scale" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "pivot" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "radius" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SphereEvaluatorData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SphereEvaluatorData {#constructor-0}
+> **SphereEvaluatorData**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| SphereEvaluatorData()                                                          | Create a new instance of this container type.                                                                                 |
-| SphereEvaluatorData(SphereEvaluatorData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| SphereEvaluatorData([EvaluatorData](/vext/ref/fb/evaluatordata/) other)                      | Upcast an instance of type [EvaluatorData](/vext/ref/fb/evaluatordata/) to [SphereEvaluatorData](/vext/ref/fb/sphereevaluatordata/).                      |
-| SphereEvaluatorData([EmitterComponentData](/vext/ref/fb/emittercomponentdata/) other)        | Upcast an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata/) to [SphereEvaluatorData](/vext/ref/fb/sphereevaluatordata/).        |
-| SphereEvaluatorData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SphereEvaluatorData](/vext/ref/fb/sphereevaluatordata/). |
+Creates a new [SphereEvaluatorData](/vext/ref/fb/sphereevaluatordata) frostbite instance.
 
-## Properties
+### SphereEvaluatorData {#constructor-1}
+> **SphereEvaluatorData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name   | Type                              | Description |
-| ------ | --------------------------------- | ----------- |
-| scale  | [Vec3](/vext/ref/shared/class/vec3) |             |
-| pivot  | [Vec3](/vext/ref/shared/class/vec3) |             |
-| radius | number                            |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [SphereEvaluatorData](/vext/ref/fb/sphereevaluatordata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SphereEvaluatorData](/vext/ref/fb/sphereevaluatordata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SphereEvaluatorData](/vext/ref/fb/sphereevaluatordata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SphereEvaluatorData {#constructor-2}
+> **SphereEvaluatorData**(other: [EvaluatorData](/vext/ref/fb/evaluatordata))
+
+Casts an instance of type [EvaluatorData](/vext/ref/fb/evaluatordata) to [SphereEvaluatorData](/vext/ref/fb/sphereevaluatordata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EvaluatorData](/vext/ref/fb/evaluatordata) | The instance to cast to [SphereEvaluatorData](/vext/ref/fb/sphereevaluatordata). |
+
+### SphereEvaluatorData {#constructor-3}
+> **SphereEvaluatorData**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata))
+
+Casts an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata) to [SphereEvaluatorData](/vext/ref/fb/sphereevaluatordata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EmitterComponentData](/vext/ref/fb/emittercomponentdata) | The instance to cast to [SphereEvaluatorData](/vext/ref/fb/sphereevaluatordata). |
+
+### SphereEvaluatorData {#constructor-4}
+> **SphereEvaluatorData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SphereEvaluatorData](/vext/ref/fb/sphereevaluatordata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SphereEvaluatorData](/vext/ref/fb/sphereevaluatordata). |
+
+## Properties
+### {{% prop-heading "scale" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "pivot" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "radius" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SphereEvaluatorData](/vext/ref/fb/sphereevaluatordata) type.
+

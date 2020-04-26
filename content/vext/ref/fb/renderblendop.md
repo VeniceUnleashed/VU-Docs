@@ -1,16 +1,13 @@
 ---
 title: RenderBlendOp
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **RenderBlendOp_Add** | Value: **0** |
+| **RenderBlendOp_Subtract** | Value: **1** |
+| **RenderBlendOp_RevSubtract** | Value: **2** |
+| **RenderBlendOp_Min** | Value: **3** |
+| **RenderBlendOp_Max** | Value: **4** |
 
-| Name                       | Value | Description |
-| -------------------------- | ----- | ----------- |
-| RenderBlendOp\_Add         | 0     |             |
-| RenderBlendOp\_Subtract    | 1     |             |
-| RenderBlendOp\_RevSubtract | 2     |             |
-| RenderBlendOp\_Min         | 3     |             |
-| RenderBlendOp\_Max         | 4     |             |

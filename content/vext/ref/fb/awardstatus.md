@@ -1,35 +1,69 @@
 ---
 title: AwardStatus
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AwardStatus](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "code" >}} | string |
+| {{< prop "currentValue" >}} | int |
+| {{< prop "originalValue" >}} | int |
+| {{< prop "counters" >}} | [CounterStatus](/vext/ref/fb/counterstatus)[] |
+| {{< prop "isCounting" >}} | bool |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [AwardStatus](/vext/ref/fb/awardstatus) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AwardStatus" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AwardStatus {#constructor-0}
+> **AwardStatus**()
 
-| Constructor                    | Description                                              |
-| ------------------------------ | -------------------------------------------------------- |
-| AwardStatus()                  | Create a new instance of this structure type.            |
-| AwardStatus(AwardStatus other) | Create a reference copy of a structure of the same type. |
+Creates a new [AwardStatus](/vext/ref/fb/awardstatus) frostbite structure.
 
 ## Properties
+### {{% prop-heading "code" %}}
+> **string**
 
-| Name          | Type                               | Description |
-| ------------- | ---------------------------------- | ----------- |
-| code          | string                             |             |
-| currentValue  | number                             |             |
-| originalValue | number                             |             |
-| counters      | [CounterStatus](/vext/ref/fb/counterstatus/)\[\] |             |
-| isCounting    | bool                               |             |
+### {{% prop-heading "currentValue" %}}
+> **int**
+
+### {{% prop-heading "originalValue" %}}
+> **int**
+
+### {{% prop-heading "counters" %}}
+> **[CounterStatus](/vext/ref/fb/counterstatus)**[]
+
+### {{% prop-heading "isCounting" %}}
+> **bool**
 
 ## Methods
-
-| Type                       | Name            | Parameters |
-| -------------------------- | --------------- | ---------- |
-| [AwardStatus](/vext/ref/fb/awardstatus/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [AwardStatus](/vext/ref/fb/awardstatus)
 
-> [AwardStatus](/vext/ref/fb/awardstatus/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[AwardStatus](/vext/ref/fb/awardstatus)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AwardStatus](/vext/ref/fb/awardstatus) type.
+

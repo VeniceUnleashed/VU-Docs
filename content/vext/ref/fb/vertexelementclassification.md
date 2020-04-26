@@ -1,14 +1,11 @@
 ---
 title: VertexElementClassification
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **VertexElementClassification_PerVertex** | Value: **0** |
+| **VertexElementClassification_PerInstance** | Value: **1** |
+| **VertexElementClassification_Index** | Value: **2** |
 
-| Name                                     | Value | Description |
-| ---------------------------------------- | ----- | ----------- |
-| VertexElementClassification\_PerVertex   | 0     |             |
-| VertexElementClassification\_PerInstance | 1     |             |
-| VertexElementClassification\_Index       | 2     |             |

@@ -1,12 +1,9 @@
 ---
 title: NumberGeneratorMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **NumberGeneratorMode_RandomUniform** | Value: **0** |
 
-| Name                               | Value | Description |
-| ---------------------------------- | ----- | ----------- |
-| NumberGeneratorMode\_RandomUniform | 0     |             |

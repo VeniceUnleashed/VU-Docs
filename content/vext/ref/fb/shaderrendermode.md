@@ -1,26 +1,23 @@
 ---
 title: ShaderRenderMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ShaderRenderMode_Default** | Value: **0** |
+| **ShaderRenderMode_DynamicEnvmap** | Value: **1** |
+| **ShaderRenderMode_ZOnly** | Value: **2** |
+| **ShaderRenderMode_DeferredShadingGBufferLayout0** | Value: **3** |
+| **ShaderRenderMode_DeferredShadingGBufferLayout1** | Value: **4** |
+| **ShaderRenderMode_DeferredShadingEmissive** | Value: **5** |
+| **ShaderRenderMode_DeferredShadingUnlit** | Value: **6** |
+| **ShaderRenderMode_VelocityVector** | Value: **7** |
+| **ShaderRenderMode_DistortionVector** | Value: **8** |
+| **ShaderRenderMode_AmbientOcclusionVolume** | Value: **9** |
+| **ShaderRenderMode_DebugSimple** | Value: **10** |
+| **ShaderRenderMode_DebugMulti** | Value: **11** |
+| **ShaderRenderMode_DebugOverdraw** | Value: **12** |
+| **ShaderRenderMode_DebugShaderCost** | Value: **13** |
+| **ShaderRenderModeCount** | Value: **14** |
 
-| Name                                            | Value | Description |
-| ----------------------------------------------- | ----- | ----------- |
-| ShaderRenderMode\_Default                       | 0     |             |
-| ShaderRenderMode\_DynamicEnvmap                 | 1     |             |
-| ShaderRenderMode\_ZOnly                         | 2     |             |
-| ShaderRenderMode\_DeferredShadingGBufferLayout0 | 3     |             |
-| ShaderRenderMode\_DeferredShadingGBufferLayout1 | 4     |             |
-| ShaderRenderMode\_DeferredShadingEmissive       | 5     |             |
-| ShaderRenderMode\_DeferredShadingUnlit          | 6     |             |
-| ShaderRenderMode\_VelocityVector                | 7     |             |
-| ShaderRenderMode\_DistortionVector              | 8     |             |
-| ShaderRenderMode\_AmbientOcclusionVolume        | 9     |             |
-| ShaderRenderMode\_DebugSimple                   | 10    |             |
-| ShaderRenderMode\_DebugMulti                    | 11    |             |
-| ShaderRenderMode\_DebugOverdraw                 | 12    |             |
-| ShaderRenderMode\_DebugShaderCost               | 13    |             |
-| ShaderRenderModeCount                           | 14    |             |

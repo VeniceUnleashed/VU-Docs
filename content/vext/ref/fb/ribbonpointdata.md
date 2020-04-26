@@ -1,34 +1,65 @@
 ---
 title: RibbonPointData
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[RibbonPointData](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "userMaskRight" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "userMaskLeft" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "right" >}} | float |
+| {{< prop "left" >}} | float |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [RibbonPointData](/vext/ref/fb/ribbonpointdata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "RibbonPointData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### RibbonPointData {#constructor-0}
+> **RibbonPointData**()
 
-| Constructor                            | Description                                              |
-| -------------------------------------- | -------------------------------------------------------- |
-| RibbonPointData()                      | Create a new instance of this structure type.            |
-| RibbonPointData(RibbonPointData other) | Create a reference copy of a structure of the same type. |
+Creates a new [RibbonPointData](/vext/ref/fb/ribbonpointdata) frostbite structure.
 
 ## Properties
+### {{% prop-heading "userMaskRight" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
 
-| Name          | Type                              | Description |
-| ------------- | --------------------------------- | ----------- |
-| userMaskRight | [Vec4](/vext/ref/shared/class/vec4) |             |
-| userMaskLeft  | [Vec4](/vext/ref/shared/class/vec4) |             |
-| right         | number                            |             |
-| left          | number                            |             |
+### {{% prop-heading "userMaskLeft" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "right" %}}
+> **float**
+
+### {{% prop-heading "left" %}}
+> **float**
 
 ## Methods
-
-| Type                               | Name            | Parameters |
-| ---------------------------------- | --------------- | ---------- |
-| [RibbonPointData](/vext/ref/fb/ribbonpointdata/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [RibbonPointData](/vext/ref/fb/ribbonpointdata)
 
-> [RibbonPointData](/vext/ref/fb/ribbonpointdata/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[RibbonPointData](/vext/ref/fb/ribbonpointdata)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [RibbonPointData](/vext/ref/fb/ribbonpointdata) type.
+

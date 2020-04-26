@@ -1,44 +1,83 @@
 ---
 title: UIVoiceCompData
 ---
-### Base Classes
 
-[UIComponentData](/vext/ref/fb/uicomponentdata/)
+Inherits from 
+[UIComponentData](/vext/ref/fb/uicomponentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIVoiceCompData](#constructor-0)**() |
+| **[UIVoiceCompData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UIVoiceCompData](#constructor-2)**(other: [UIComponentData](/vext/ref/fb/uicomponentdata)) |
+| **[UIVoiceCompData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[UIVoiceCompData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "hudMaxSpeakers" >}} | int |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIVoiceCompData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIVoiceCompData {#constructor-0}
+> **UIVoiceCompData**()
 
-| Constructor                                                                | Description                                                                                                           |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| UIVoiceCompData()                                                          | Create a new instance of this container type.                                                                         |
-| UIVoiceCompData(UIVoiceCompData other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| UIVoiceCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UIVoiceCompData](/vext/ref/fb/uivoicecompdata/).                  |
-| UIVoiceCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UIVoiceCompData](/vext/ref/fb/uivoicecompdata/).                                      |
-| UIVoiceCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIVoiceCompData](/vext/ref/fb/uivoicecompdata/). |
+Creates a new [UIVoiceCompData](/vext/ref/fb/uivoicecompdata) frostbite instance.
 
-## Properties
+### UIVoiceCompData {#constructor-1}
+> **UIVoiceCompData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name           | Type   | Description |
-| -------------- | ------ | ----------- |
-| hudMaxSpeakers | number |             |
-
-## Methods
-
-| Type                               | Name            | Parameters                                     |
-| ---------------------------------- | --------------- | ---------------------------------------------- |
-| [UIVoiceCompData](/vext/ref/fb/uivoicecompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UIVoiceCompData](/vext/ref/fb/uivoicecompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UIVoiceCompData](/vext/ref/fb/uivoicecompdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UIVoiceCompData {#constructor-2}
+> **UIVoiceCompData**(other: [UIComponentData](/vext/ref/fb/uicomponentdata))
+
+Casts an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata) to [UIVoiceCompData](/vext/ref/fb/uivoicecompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIComponentData](/vext/ref/fb/uicomponentdata) | The instance to cast to [UIVoiceCompData](/vext/ref/fb/uivoicecompdata). |
+
+### UIVoiceCompData {#constructor-3}
+> **UIVoiceCompData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [UIVoiceCompData](/vext/ref/fb/uivoicecompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [UIVoiceCompData](/vext/ref/fb/uivoicecompdata). |
+
+### UIVoiceCompData {#constructor-4}
+> **UIVoiceCompData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIVoiceCompData](/vext/ref/fb/uivoicecompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UIVoiceCompData](/vext/ref/fb/uivoicecompdata). |
+
+## Properties
+### {{% prop-heading "hudMaxSpeakers" %}}
+> **int**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIVoiceCompData](/vext/ref/fb/uivoicecompdata) type.
+

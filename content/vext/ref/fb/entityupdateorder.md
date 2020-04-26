@@ -1,14 +1,11 @@
 ---
 title: EntityUpdateOrder
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **EntityUpdateOrder_Async** | Value: **1** |
+| **EntityUpdateOrder_Sync** | Value: **2** |
+| **EntityUpdateOrder_Both** | Value: **3** |
 
-| Name                     | Value | Description |
-| ------------------------ | ----- | ----------- |
-| EntityUpdateOrder\_Async | 1     |             |
-| EntityUpdateOrder\_Sync  | 2     |             |
-| EntityUpdateOrder\_Both  | 3     |             |

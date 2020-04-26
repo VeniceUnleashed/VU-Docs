@@ -1,39 +1,85 @@
 ---
 title: AwardAchievementData
 ---
-### Base Classes
 
-[AwardData](/vext/ref/fb/awarddata/)
+Inherits from 
+[AwardData](/vext/ref/fb/awarddata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AwardAchievementData](#constructor-0)**() |
+| **[AwardAchievementData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[AwardAchievementData](#constructor-2)**(other: [AwardData](/vext/ref/fb/awarddata)) |
+| **[AwardAchievementData](#constructor-3)**(other: [AbstractAwardData](/vext/ref/fb/abstractawarddata)) |
+| **[AwardAchievementData](#constructor-4)**(other: [TreeNodeBase](/vext/ref/fb/treenodebase)) |
+| **[AwardAchievementData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AwardAchievementData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AwardAchievementData {#constructor-0}
+> **AwardAchievementData**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| AwardAchievementData()                                                          | Create a new instance of this container type.                                                                                   |
-| AwardAchievementData(AwardAchievementData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| AwardAchievementData([AwardData](/vext/ref/fb/awarddata/) other)                              | Upcast an instance of type [AwardData](/vext/ref/fb/awarddata/) to [AwardAchievementData](/vext/ref/fb/awardachievementdata/).                              |
-| AwardAchievementData([AbstractAwardData](/vext/ref/fb/abstractawarddata/) other)              | Upcast an instance of type [AbstractAwardData](/vext/ref/fb/abstractawarddata/) to [AwardAchievementData](/vext/ref/fb/awardachievementdata/).              |
-| AwardAchievementData([TreeNodeBase](/vext/ref/fb/treenodebase/) other)                        | Upcast an instance of type [TreeNodeBase](/vext/ref/fb/treenodebase/) to [AwardAchievementData](/vext/ref/fb/awardachievementdata/).                        |
-| AwardAchievementData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AwardAchievementData](/vext/ref/fb/awardachievementdata/). |
+Creates a new [AwardAchievementData](/vext/ref/fb/awardachievementdata) frostbite instance.
 
-## Methods
+### AwardAchievementData {#constructor-1}
+> **AwardAchievementData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [AwardAchievementData](/vext/ref/fb/awardachievementdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [AwardAchievementData](/vext/ref/fb/awardachievementdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [AwardAchievementData](/vext/ref/fb/awardachievementdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### AwardAchievementData {#constructor-2}
+> **AwardAchievementData**(other: [AwardData](/vext/ref/fb/awarddata))
+
+Casts an instance of type [AwardData](/vext/ref/fb/awarddata) to [AwardAchievementData](/vext/ref/fb/awardachievementdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AwardData](/vext/ref/fb/awarddata) | The instance to cast to [AwardAchievementData](/vext/ref/fb/awardachievementdata). |
+
+### AwardAchievementData {#constructor-3}
+> **AwardAchievementData**(other: [AbstractAwardData](/vext/ref/fb/abstractawarddata))
+
+Casts an instance of type [AbstractAwardData](/vext/ref/fb/abstractawarddata) to [AwardAchievementData](/vext/ref/fb/awardachievementdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AbstractAwardData](/vext/ref/fb/abstractawarddata) | The instance to cast to [AwardAchievementData](/vext/ref/fb/awardachievementdata). |
+
+### AwardAchievementData {#constructor-4}
+> **AwardAchievementData**(other: [TreeNodeBase](/vext/ref/fb/treenodebase))
+
+Casts an instance of type [TreeNodeBase](/vext/ref/fb/treenodebase) to [AwardAchievementData](/vext/ref/fb/awardachievementdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [TreeNodeBase](/vext/ref/fb/treenodebase) | The instance to cast to [AwardAchievementData](/vext/ref/fb/awardachievementdata). |
+
+### AwardAchievementData {#constructor-5}
+> **AwardAchievementData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AwardAchievementData](/vext/ref/fb/awardachievementdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [AwardAchievementData](/vext/ref/fb/awardachievementdata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AwardAchievementData](/vext/ref/fb/awardachievementdata) type.
+

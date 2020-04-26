@@ -1,47 +1,88 @@
 ---
 title: NetworkPerformanceEvent
 ---
-### Base Classes
 
-[MetricEvent](/vext/ref/fb/metricevent/)
+Inherits from 
+[MetricEvent](/vext/ref/fb/metricevent)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[NetworkPerformanceEvent](#constructor-0)**() |
+| **[NetworkPerformanceEvent](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[NetworkPerformanceEvent](#constructor-2)**(other: [MetricEvent](/vext/ref/fb/metricevent)) |
+| **[NetworkPerformanceEvent](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "received" >}} | int |
+| {{< prop "sent" >}} | int |
+| {{< prop "receivedAverage" >}} | float |
+| {{< prop "sentAverage" >}} | float |
+| {{< prop "performanceLink" >}} | [Guid](/vext/ref/shared/class/guid) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "NetworkPerformanceEvent" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### NetworkPerformanceEvent {#constructor-0}
+> **NetworkPerformanceEvent**()
 
-| Constructor                                                                        | Description                                                                                                                           |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| NetworkPerformanceEvent()                                                          | Create a new instance of this container type.                                                                                         |
-| NetworkPerformanceEvent(NetworkPerformanceEvent other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| NetworkPerformanceEvent([MetricEvent](/vext/ref/fb/metricevent/) other)                          | Upcast an instance of type [MetricEvent](/vext/ref/fb/metricevent/) to [NetworkPerformanceEvent](/vext/ref/fb/networkperformanceevent/).                          |
-| NetworkPerformanceEvent([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [NetworkPerformanceEvent](/vext/ref/fb/networkperformanceevent/). |
+Creates a new [NetworkPerformanceEvent](/vext/ref/fb/networkperformanceevent) frostbite instance.
 
-## Properties
+### NetworkPerformanceEvent {#constructor-1}
+> **NetworkPerformanceEvent**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name            | Type                              | Description |
-| --------------- | --------------------------------- | ----------- |
-| received        | number                            |             |
-| sent            | number                            |             |
-| receivedAverage | number                            |             |
-| sentAverage     | number                            |             |
-| performanceLink | [Guid](/vext/ref/shared/class/guid) |             |
-
-## Methods
-
-| Type                                               | Name            | Parameters                                     |
-| -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [NetworkPerformanceEvent](/vext/ref/fb/networkperformanceevent/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [NetworkPerformanceEvent](/vext/ref/fb/networkperformanceevent/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [NetworkPerformanceEvent](/vext/ref/fb/networkperformanceevent) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### NetworkPerformanceEvent {#constructor-2}
+> **NetworkPerformanceEvent**(other: [MetricEvent](/vext/ref/fb/metricevent))
+
+Casts an instance of type [MetricEvent](/vext/ref/fb/metricevent) to [NetworkPerformanceEvent](/vext/ref/fb/networkperformanceevent). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [MetricEvent](/vext/ref/fb/metricevent) | The instance to cast to [NetworkPerformanceEvent](/vext/ref/fb/networkperformanceevent). |
+
+### NetworkPerformanceEvent {#constructor-3}
+> **NetworkPerformanceEvent**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [NetworkPerformanceEvent](/vext/ref/fb/networkperformanceevent). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [NetworkPerformanceEvent](/vext/ref/fb/networkperformanceevent). |
+
+## Properties
+### {{% prop-heading "received" %}}
+> **int**
+
+### {{% prop-heading "sent" %}}
+> **int**
+
+### {{% prop-heading "receivedAverage" %}}
+> **float**
+
+### {{% prop-heading "sentAverage" %}}
+> **float**
+
+### {{% prop-heading "performanceLink" %}}
+> **[Guid](/vext/ref/shared/class/guid)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [NetworkPerformanceEvent](/vext/ref/fb/networkperformanceevent) type.
+

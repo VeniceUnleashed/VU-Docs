@@ -3,28 +3,64 @@ title: DataContainer
 ---
 ## Description
 
-A base Frostbite DataContainer. The lowest class in the Frostbite container instance hierarchy. All instances present in game data partitions (ebx) are derived from this type.
+A base frostbite DataContainer. The lowest class in the Frostbite container instance hierarchy. All instances present in game data partitions (ebx) are derived from this type.
 
-## Constructors
+## Summary
 
-| Constructor                                                                                                      | Description                                              |
-| ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| [DataContainer](/vext/ref/shared/class/datacontainer)([DataContainer](/vext/ref/shared/class/datacontainer) **ref**) | Create a reference copy of an instance of the same type. |
+### Properties
 
-## Static Members
+| Name | Type |
+| ---- | ---- |
+| {{< prop "typeInfo" true >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
+| {{< prop "isLazyLoaded" true >}} | bool |
+| {{< prop "isReadOnly" true >}} | bool |
+| {{< prop "instanceGuid" true >}} | [Guid](/vext/ref/shared/class/guid) \| nil |
+| {{< prop "partitionGuid" true >}} | [Guid](/vext/ref/shared/class/guid) \| nil |
+| {{< prop "partition" true >}} | [DatabasePartition](/vext/ref/shared/class/databasepartition) \| nil |
 
-| Type                                                    | Name                   | Description |
-| ------------------------------------------------------- | ---------------------- | ----------- |
-| [TypeInformation](/vext/ref/shared/class/typeinformation) | DataContainer.typeInfo |             |
+### Methods
+
+| Method | Returns |
+| ---- | ------ |
+| **[Is](#is)**(type: string) | bool |
+| **[Eq](#eq)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |  bool |
+| **[AsDC](#asdc)**() | [DataContainer](/vext/ref/shared/class/datacontainer) |
+| **[Clone](#clone)**() | [DataContainer](/vext/ref/shared/class/datacontainer) |
+| **[Clone](#clone-1)**(guid: [Guid](/vext/ref/shared/class/guid)) | [DataContainer](/vext/ref/shared/class/datacontainer) |
+| **[ReplaceReferences](#replacereferences)**(with: [DataContainer](/vext/ref/shared/class/datacontainer) \| nil) | void |
+| **[MakeWritable](#makewritable)**() | void |
+| **[RegisterLoadHandler](#registerloadhandler)**(callback: callable, ...args: any) | [ContainerCallback](/vext/ref/shared/class/containercallback) |
+| **[RegisterLoadHandlerOnce](#registerloadhandleronce)**(callback: callable, ...args: any) | [ContainerCallback](/vext/ref/shared/class/containercallback) |
+
+### Static members
+
+| Name | Type |
+| ---- | ---- |
+| {{< static "DataContainer" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Properties
 
-| Name         | Type                                                    | Writable | Description                                                                                    |
+### {{% prop-heading "typeInfo" true %}}
+
+### {{% static-heading "typeInfoStatic" %}}
+
+> **[TypeInformation](/vext/ref)** | **nil** 
+
+Type information for this instance.
+### typeInfo
+
+> [TypeInformation](/vext/ref) typeInfo
+
+Type information for this instance.
+
+## Properties
+
+| Name         | Type | Description                                                                                    |
 | ------------ | ------------------------------------------------------- | -------- | ---------------------------------------------------------------------------------------------- |
-| typeInfo     | [TypeInformation](/vext/ref/shared/class/typeinformation) | N        | Type information for this instance.                                                            |
-| isLazyLoaded | bool                                                    | N        | Whether this container is lazy-loaded.                                                         |
-| isReadOnly   | bool                                                    | N        | Whether this container is read-only. Changes to read-only container properties have no effect. |
-| instanceGuid | [Guid](/vext/ref/shared/class/guid)                       | N        | The GUID of the instance. If the instance has no assigned GUID this gives `nil`.               |
+| typeInfo     | [TypeInformation](/vext/ref/shared/class/typeinformation)        | Type information for this instance.                                                            |
+| isLazyLoaded | bool                                                           | Whether this container is lazy-loaded.                                                         |
+| isReadOnly   | bool                                                           | Whether this container is read-only. Changes to read-only container properties have no effect. |
+| instanceGuid | [Guid](/vext/ref/shared/class/guid)                             | The GUID of the instance. If the instance has no assigned GUID this gives `nil`.               |
 
 ## Methods
 

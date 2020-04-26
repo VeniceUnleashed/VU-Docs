@@ -1,43 +1,72 @@
 ---
 title: OrderSettings
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[OrderSettings](#constructor-0)**() |
+| **[OrderSettings](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[OrderSettings](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[OrderSettings](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "orders" >}} | [OrderReadiness](/vext/ref/fb/orderreadiness)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "OrderSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### OrderSettings {#constructor-0}
+> **OrderSettings**()
 
-| Constructor                                                              | Description                                                                                                       |
-| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| OrderSettings()                                                          | Create a new instance of this container type.                                                                     |
-| OrderSettings(OrderSettings other)                                       | Create a reference copy of an instance of the same type.                                                          |
-| OrderSettings([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [OrderSettings](/vext/ref/fb/ordersettings/).                                      |
-| OrderSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [OrderSettings](/vext/ref/fb/ordersettings/). |
+Creates a new [OrderSettings](/vext/ref/fb/ordersettings) frostbite instance.
 
-## Properties
+### OrderSettings {#constructor-1}
+> **OrderSettings**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name   | Type                                 | Description |
-| ------ | ------------------------------------ | ----------- |
-| orders | [OrderReadiness](/vext/ref/fb/orderreadiness/)\[\] |             |
-
-## Methods
-
-| Type                           | Name            | Parameters                                     |
-| ------------------------------ | --------------- | ---------------------------------------------- |
-| [OrderSettings](/vext/ref/fb/ordersettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [OrderSettings](/vext/ref/fb/ordersettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [OrderSettings](/vext/ref/fb/ordersettings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### OrderSettings {#constructor-2}
+> **OrderSettings**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [OrderSettings](/vext/ref/fb/ordersettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [OrderSettings](/vext/ref/fb/ordersettings). |
+
+### OrderSettings {#constructor-3}
+> **OrderSettings**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [OrderSettings](/vext/ref/fb/ordersettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [OrderSettings](/vext/ref/fb/ordersettings). |
+
+## Properties
+### {{% prop-heading "orders" %}}
+> **[OrderReadiness](/vext/ref/fb/orderreadiness)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [OrderSettings](/vext/ref/fb/ordersettings) type.
+

@@ -1,69 +1,176 @@
 ---
 title: CombatConstantData
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[CombatConstantData](#constructor-0)**() |
+| **[CombatConstantData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[CombatConstantData](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[CombatConstantData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "poseTransitionFireDelay" >}} | float |
+| {{< prop "changePoseStopDelay" >}} | float |
+| {{< prop "allowCrouchFiringWaterLevel" >}} | float |
+| {{< prop "poseChangeLockoutTime" >}} | float |
+| {{< prop "explosionInterestRange" >}} | float |
+| {{< prop "explosiveObjectSearchRadius" >}} | float |
+| {{< prop "explosiveBlastMultiplier" >}} | float |
+| {{< prop "maxSuppressDistance" >}} | float |
+| {{< prop "maxSuppressorsRatio" >}} | float |
+| {{< prop "suppressOffsetXz" >}} | float |
+| {{< prop "suppressOffsetY" >}} | float |
+| {{< prop "suppressMinLOFDistance" >}} | float |
+| {{< prop "suppressMinLOFOffsetDistance" >}} | float |
+| {{< prop "investigateCoverSearchWidth" >}} | float |
+| {{< prop "investigateAroundTargetRadius" >}} | float |
+| {{< prop "investigateFreeLookRadius" >}} | float |
+| {{< prop "investigatePauseTimeMin" >}} | float |
+| {{< prop "investigatePauseTimeMax" >}} | float |
+| {{< prop "avoidC4Time" >}} | float |
+| {{< prop "standStillMinTime" >}} | float |
+| {{< prop "stationaryBailDistance" >}} | float |
+| {{< prop "precisionTimeout" >}} | float |
+| {{< prop "closeRangeAccuracyDistance" >}} | float |
+| {{< prop "fightFromPathRadius" >}} | float |
+| {{< prop "smokeRadius" >}} | float |
+| {{< prop "smokeLifeTime" >}} | float |
+| {{< prop "meleeCooldown" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "CombatConstantData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### CombatConstantData {#constructor-0}
+> **CombatConstantData**()
 
-| Constructor                                                                   | Description                                                                                                                 |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| CombatConstantData()                                                          | Create a new instance of this container type.                                                                               |
-| CombatConstantData(CombatConstantData other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| CombatConstantData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [CombatConstantData](/vext/ref/fb/combatconstantdata/).                                      |
-| CombatConstantData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CombatConstantData](/vext/ref/fb/combatconstantdata/). |
+Creates a new [CombatConstantData](/vext/ref/fb/combatconstantdata) frostbite instance.
 
-## Properties
+### CombatConstantData {#constructor-1}
+> **CombatConstantData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                          | Type   | Description |
-| ----------------------------- | ------ | ----------- |
-| poseTransitionFireDelay       | number |             |
-| changePoseStopDelay           | number |             |
-| allowCrouchFiringWaterLevel   | number |             |
-| poseChangeLockoutTime         | number |             |
-| explosionInterestRange        | number |             |
-| explosiveObjectSearchRadius   | number |             |
-| explosiveBlastMultiplier      | number |             |
-| maxSuppressDistance           | number |             |
-| maxSuppressorsRatio           | number |             |
-| suppressOffsetXz              | number |             |
-| suppressOffsetY               | number |             |
-| suppressMinLOFDistance        | number |             |
-| suppressMinLOFOffsetDistance  | number |             |
-| investigateCoverSearchWidth   | number |             |
-| investigateAroundTargetRadius | number |             |
-| investigateFreeLookRadius     | number |             |
-| investigatePauseTimeMin       | number |             |
-| investigatePauseTimeMax       | number |             |
-| avoidC4Time                   | number |             |
-| standStillMinTime             | number |             |
-| stationaryBailDistance        | number |             |
-| precisionTimeout              | number |             |
-| closeRangeAccuracyDistance    | number |             |
-| fightFromPathRadius           | number |             |
-| smokeRadius                   | number |             |
-| smokeLifeTime                 | number |             |
-| meleeCooldown                 | number |             |
-
-## Methods
-
-| Type                                     | Name            | Parameters                                     |
-| ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [CombatConstantData](/vext/ref/fb/combatconstantdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [CombatConstantData](/vext/ref/fb/combatconstantdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [CombatConstantData](/vext/ref/fb/combatconstantdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### CombatConstantData {#constructor-2}
+> **CombatConstantData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [CombatConstantData](/vext/ref/fb/combatconstantdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [CombatConstantData](/vext/ref/fb/combatconstantdata). |
+
+### CombatConstantData {#constructor-3}
+> **CombatConstantData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CombatConstantData](/vext/ref/fb/combatconstantdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [CombatConstantData](/vext/ref/fb/combatconstantdata). |
+
+## Properties
+### {{% prop-heading "poseTransitionFireDelay" %}}
+> **float**
+
+### {{% prop-heading "changePoseStopDelay" %}}
+> **float**
+
+### {{% prop-heading "allowCrouchFiringWaterLevel" %}}
+> **float**
+
+### {{% prop-heading "poseChangeLockoutTime" %}}
+> **float**
+
+### {{% prop-heading "explosionInterestRange" %}}
+> **float**
+
+### {{% prop-heading "explosiveObjectSearchRadius" %}}
+> **float**
+
+### {{% prop-heading "explosiveBlastMultiplier" %}}
+> **float**
+
+### {{% prop-heading "maxSuppressDistance" %}}
+> **float**
+
+### {{% prop-heading "maxSuppressorsRatio" %}}
+> **float**
+
+### {{% prop-heading "suppressOffsetXz" %}}
+> **float**
+
+### {{% prop-heading "suppressOffsetY" %}}
+> **float**
+
+### {{% prop-heading "suppressMinLOFDistance" %}}
+> **float**
+
+### {{% prop-heading "suppressMinLOFOffsetDistance" %}}
+> **float**
+
+### {{% prop-heading "investigateCoverSearchWidth" %}}
+> **float**
+
+### {{% prop-heading "investigateAroundTargetRadius" %}}
+> **float**
+
+### {{% prop-heading "investigateFreeLookRadius" %}}
+> **float**
+
+### {{% prop-heading "investigatePauseTimeMin" %}}
+> **float**
+
+### {{% prop-heading "investigatePauseTimeMax" %}}
+> **float**
+
+### {{% prop-heading "avoidC4Time" %}}
+> **float**
+
+### {{% prop-heading "standStillMinTime" %}}
+> **float**
+
+### {{% prop-heading "stationaryBailDistance" %}}
+> **float**
+
+### {{% prop-heading "precisionTimeout" %}}
+> **float**
+
+### {{% prop-heading "closeRangeAccuracyDistance" %}}
+> **float**
+
+### {{% prop-heading "fightFromPathRadius" %}}
+> **float**
+
+### {{% prop-heading "smokeRadius" %}}
+> **float**
+
+### {{% prop-heading "smokeLifeTime" %}}
+> **float**
+
+### {{% prop-heading "meleeCooldown" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [CombatConstantData](/vext/ref/fb/combatconstantdata) type.
+

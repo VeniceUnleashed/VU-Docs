@@ -1,51 +1,97 @@
 ---
 title: CharacterPoseData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[CharacterPoseData](#constructor-0)**() |
+| **[CharacterPoseData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[CharacterPoseData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "eyePosition" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "collisionBoxMaxExpand" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "collisionBoxMinExpand" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "height" >}} | float |
+| {{< prop "stepHeight" >}} | float |
+| {{< prop "throttleModifierCurve" >}} | [Vec2](/vext/ref/shared/class/vec2)[] |
+| {{< prop "poseType" >}} | [CharacterPoseType](/vext/ref/fb/characterposetype) |
+| {{< prop "collisionType" >}} | [CharacterPoseCollisionType](/vext/ref/fb/characterposecollisiontype) |
+| {{< prop "lookConstraints" >}} | [LookConstraintsData](/vext/ref/fb/lookconstraintsdata) |
+| {{< prop "transitionTimes" >}} | [PoseTransitionTime](/vext/ref/fb/posetransitiontime)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "CharacterPoseData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### CharacterPoseData {#constructor-0}
+> **CharacterPoseData**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| CharacterPoseData()                                                          | Create a new instance of this container type.                                                                             |
-| CharacterPoseData(CharacterPoseData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| CharacterPoseData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CharacterPoseData](/vext/ref/fb/characterposedata/). |
+Creates a new [CharacterPoseData](/vext/ref/fb/characterposedata) frostbite instance.
 
-## Properties
+### CharacterPoseData {#constructor-1}
+> **CharacterPoseData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                  | Type                                                     | Description |
-| --------------------- | -------------------------------------------------------- | ----------- |
-| eyePosition           | [Vec3](/vext/ref/shared/class/vec3)                        |             |
-| collisionBoxMaxExpand | [Vec3](/vext/ref/shared/class/vec3)                        |             |
-| collisionBoxMinExpand | [Vec3](/vext/ref/shared/class/vec3)                        |             |
-| height                | number                                                   |             |
-| stepHeight            | number                                                   |             |
-| throttleModifierCurve | [Vec2](/vext/ref/shared/class/vec2)\[\]                    |             |
-| poseType              | [CharacterPoseType](/vext/ref/fb/characterposetype/)                   |             |
-| collisionType         | [CharacterPoseCollisionType](/vext/ref/fb/characterposecollisiontype/) |             |
-| lookConstraints       | [LookConstraintsData](/vext/ref/fb/lookconstraintsdata/)               |             |
-| transitionTimes       | [PoseTransitionTime](/vext/ref/fb/posetransitiontime/)\[\]             |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [CharacterPoseData](/vext/ref/fb/characterposedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [CharacterPoseData](/vext/ref/fb/characterposedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [CharacterPoseData](/vext/ref/fb/characterposedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### CharacterPoseData {#constructor-2}
+> **CharacterPoseData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CharacterPoseData](/vext/ref/fb/characterposedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [CharacterPoseData](/vext/ref/fb/characterposedata). |
+
+## Properties
+### {{% prop-heading "eyePosition" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "collisionBoxMaxExpand" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "collisionBoxMinExpand" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "height" %}}
+> **float**
+
+### {{% prop-heading "stepHeight" %}}
+> **float**
+
+### {{% prop-heading "throttleModifierCurve" %}}
+> **[Vec2](/vext/ref/shared/class/vec2)**[]
+
+### {{% prop-heading "poseType" %}}
+> **[CharacterPoseType](/vext/ref/fb/characterposetype)**
+
+### {{% prop-heading "collisionType" %}}
+> **[CharacterPoseCollisionType](/vext/ref/fb/characterposecollisiontype)**
+
+### {{% prop-heading "lookConstraints" %}}
+> **[LookConstraintsData](/vext/ref/fb/lookconstraintsdata)**
+
+### {{% prop-heading "transitionTimes" %}}
+> **[PoseTransitionTime](/vext/ref/fb/posetransitiontime)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [CharacterPoseData](/vext/ref/fb/characterposedata) type.
+

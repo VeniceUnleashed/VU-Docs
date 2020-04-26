@@ -1,32 +1,57 @@
 ---
 title: MaterialRelationPropertyPair
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MaterialRelationPropertyPair](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "physicsMaterialProperties" >}} | [PhysicsMaterialRelationPropertyData](/vext/ref/fb/physicsmaterialrelationpropertydata)[] |
+| {{< prop "physicsPropertyProperties" >}} | [PhysicsPropertyRelationPropertyData](/vext/ref/fb/physicspropertyrelationpropertydata)[] |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [MaterialRelationPropertyPair](/vext/ref/fb/materialrelationpropertypair) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MaterialRelationPropertyPair" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MaterialRelationPropertyPair {#constructor-0}
+> **MaterialRelationPropertyPair**()
 
-| Constructor                                                      | Description                                              |
-| ---------------------------------------------------------------- | -------------------------------------------------------- |
-| MaterialRelationPropertyPair()                                   | Create a new instance of this structure type.            |
-| MaterialRelationPropertyPair(MaterialRelationPropertyPair other) | Create a reference copy of a structure of the same type. |
+Creates a new [MaterialRelationPropertyPair](/vext/ref/fb/materialrelationpropertypair) frostbite structure.
 
 ## Properties
+### {{% prop-heading "physicsMaterialProperties" %}}
+> **[PhysicsMaterialRelationPropertyData](/vext/ref/fb/physicsmaterialrelationpropertydata)**[]
 
-| Name                      | Type                                                                           | Description |
-| ------------------------- | ------------------------------------------------------------------------------ | ----------- |
-| physicsMaterialProperties | [PhysicsMaterialRelationPropertyData](/vext/ref/fb/physicsmaterialrelationpropertydata/)\[\] |             |
-| physicsPropertyProperties | [PhysicsPropertyRelationPropertyData](/vext/ref/fb/physicspropertyrelationpropertydata/)\[\] |             |
+### {{% prop-heading "physicsPropertyProperties" %}}
+> **[PhysicsPropertyRelationPropertyData](/vext/ref/fb/physicspropertyrelationpropertydata)**[]
 
 ## Methods
-
-| Type                                                         | Name            | Parameters |
-| ------------------------------------------------------------ | --------------- | ---------- |
-| [MaterialRelationPropertyPair](/vext/ref/fb/materialrelationpropertypair/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [MaterialRelationPropertyPair](/vext/ref/fb/materialrelationpropertypair)
 
-> [MaterialRelationPropertyPair](/vext/ref/fb/materialrelationpropertypair/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[MaterialRelationPropertyPair](/vext/ref/fb/materialrelationpropertypair)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MaterialRelationPropertyPair](/vext/ref/fb/materialrelationpropertypair) type.
+

@@ -1,38 +1,74 @@
 ---
 title: UIPremiumCompData
 ---
-### Base Classes
 
-[UIComponentData](/vext/ref/fb/uicomponentdata/)
+Inherits from 
+[UIComponentData](/vext/ref/fb/uicomponentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIPremiumCompData](#constructor-0)**() |
+| **[UIPremiumCompData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UIPremiumCompData](#constructor-2)**(other: [UIComponentData](/vext/ref/fb/uicomponentdata)) |
+| **[UIPremiumCompData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[UIPremiumCompData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIPremiumCompData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIPremiumCompData {#constructor-0}
+> **UIPremiumCompData**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| UIPremiumCompData()                                                          | Create a new instance of this container type.                                                                             |
-| UIPremiumCompData(UIPremiumCompData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| UIPremiumCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UIPremiumCompData](/vext/ref/fb/uipremiumcompdata/).                  |
-| UIPremiumCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UIPremiumCompData](/vext/ref/fb/uipremiumcompdata/).                                      |
-| UIPremiumCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIPremiumCompData](/vext/ref/fb/uipremiumcompdata/). |
+Creates a new [UIPremiumCompData](/vext/ref/fb/uipremiumcompdata) frostbite instance.
 
-## Methods
+### UIPremiumCompData {#constructor-1}
+> **UIPremiumCompData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [UIPremiumCompData](/vext/ref/fb/uipremiumcompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UIPremiumCompData](/vext/ref/fb/uipremiumcompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UIPremiumCompData](/vext/ref/fb/uipremiumcompdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UIPremiumCompData {#constructor-2}
+> **UIPremiumCompData**(other: [UIComponentData](/vext/ref/fb/uicomponentdata))
+
+Casts an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata) to [UIPremiumCompData](/vext/ref/fb/uipremiumcompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIComponentData](/vext/ref/fb/uicomponentdata) | The instance to cast to [UIPremiumCompData](/vext/ref/fb/uipremiumcompdata). |
+
+### UIPremiumCompData {#constructor-3}
+> **UIPremiumCompData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [UIPremiumCompData](/vext/ref/fb/uipremiumcompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [UIPremiumCompData](/vext/ref/fb/uipremiumcompdata). |
+
+### UIPremiumCompData {#constructor-4}
+> **UIPremiumCompData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIPremiumCompData](/vext/ref/fb/uipremiumcompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UIPremiumCompData](/vext/ref/fb/uipremiumcompdata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIPremiumCompData](/vext/ref/fb/uipremiumcompdata) type.
+

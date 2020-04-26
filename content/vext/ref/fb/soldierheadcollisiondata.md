@@ -1,43 +1,65 @@
 ---
 title: SoldierHeadCollisionData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SoldierHeadCollisionData](#constructor-0)**() |
+| **[SoldierHeadCollisionData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SoldierHeadCollisionData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "headRadius" >}} | float |
+| {{< prop "poseStates" >}} | [SoldierHeadCollisionPoseData](/vext/ref/fb/soldierheadcollisionposedata)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SoldierHeadCollisionData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SoldierHeadCollisionData {#constructor-0}
+> **SoldierHeadCollisionData**()
 
-| Constructor                                                                         | Description                                                                                                                             |
-| ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| SoldierHeadCollisionData()                                                          | Create a new instance of this container type.                                                                                           |
-| SoldierHeadCollisionData(SoldierHeadCollisionData other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| SoldierHeadCollisionData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoldierHeadCollisionData](/vext/ref/fb/soldierheadcollisiondata/). |
+Creates a new [SoldierHeadCollisionData](/vext/ref/fb/soldierheadcollisiondata) frostbite instance.
 
-## Properties
+### SoldierHeadCollisionData {#constructor-1}
+> **SoldierHeadCollisionData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name       | Type                                                             | Description |
-| ---------- | ---------------------------------------------------------------- | ----------- |
-| headRadius | number                                                           |             |
-| poseStates | [SoldierHeadCollisionPoseData](/vext/ref/fb/soldierheadcollisionposedata/)\[\] |             |
-
-## Methods
-
-| Type                                                 | Name            | Parameters                                     |
-| ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [SoldierHeadCollisionData](/vext/ref/fb/soldierheadcollisiondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SoldierHeadCollisionData](/vext/ref/fb/soldierheadcollisiondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SoldierHeadCollisionData](/vext/ref/fb/soldierheadcollisiondata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SoldierHeadCollisionData {#constructor-2}
+> **SoldierHeadCollisionData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoldierHeadCollisionData](/vext/ref/fb/soldierheadcollisiondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SoldierHeadCollisionData](/vext/ref/fb/soldierheadcollisiondata). |
+
+## Properties
+### {{% prop-heading "headRadius" %}}
+> **float**
+
+### {{% prop-heading "poseStates" %}}
+> **[SoldierHeadCollisionPoseData](/vext/ref/fb/soldierheadcollisionposedata)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SoldierHeadCollisionData](/vext/ref/fb/soldierheadcollisiondata) type.
+

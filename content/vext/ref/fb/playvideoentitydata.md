@@ -1,47 +1,102 @@
 ---
 title: PlayVideoEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PlayVideoEntityData](#constructor-0)**() |
+| **[PlayVideoEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PlayVideoEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[PlayVideoEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[PlayVideoEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[PlayVideoEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "movie" >}} | [MovieTextureAsset](/vext/ref/fb/movietextureasset) \| nil |
+| {{< prop "keepBlackScreen" >}} | bool |
+| {{< prop "allowSkip" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PlayVideoEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PlayVideoEntityData {#constructor-0}
+> **PlayVideoEntityData**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| PlayVideoEntityData()                                                          | Create a new instance of this container type.                                                                                 |
-| PlayVideoEntityData(PlayVideoEntityData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| PlayVideoEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [PlayVideoEntityData](/vext/ref/fb/playvideoentitydata/).                            |
-| PlayVideoEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [PlayVideoEntityData](/vext/ref/fb/playvideoentitydata/).                    |
-| PlayVideoEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [PlayVideoEntityData](/vext/ref/fb/playvideoentitydata/).              |
-| PlayVideoEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PlayVideoEntityData](/vext/ref/fb/playvideoentitydata/). |
+Creates a new [PlayVideoEntityData](/vext/ref/fb/playvideoentitydata) frostbite instance.
 
-## Properties
+### PlayVideoEntityData {#constructor-1}
+> **PlayVideoEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name            | Type                                   | Description |
-| --------------- | -------------------------------------- | ----------- |
-| movie           | [MovieTextureAsset](/vext/ref/fb/movietextureasset/) |             |
-| keepBlackScreen | bool                                   |             |
-| allowSkip       | bool                                   |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [PlayVideoEntityData](/vext/ref/fb/playvideoentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PlayVideoEntityData](/vext/ref/fb/playvideoentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PlayVideoEntityData](/vext/ref/fb/playvideoentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PlayVideoEntityData {#constructor-2}
+> **PlayVideoEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [PlayVideoEntityData](/vext/ref/fb/playvideoentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [PlayVideoEntityData](/vext/ref/fb/playvideoentitydata). |
+
+### PlayVideoEntityData {#constructor-3}
+> **PlayVideoEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [PlayVideoEntityData](/vext/ref/fb/playvideoentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [PlayVideoEntityData](/vext/ref/fb/playvideoentitydata). |
+
+### PlayVideoEntityData {#constructor-4}
+> **PlayVideoEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [PlayVideoEntityData](/vext/ref/fb/playvideoentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [PlayVideoEntityData](/vext/ref/fb/playvideoentitydata). |
+
+### PlayVideoEntityData {#constructor-5}
+> **PlayVideoEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PlayVideoEntityData](/vext/ref/fb/playvideoentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PlayVideoEntityData](/vext/ref/fb/playvideoentitydata). |
+
+## Properties
+### {{% prop-heading "movie" %}}
+> **[MovieTextureAsset](/vext/ref/fb/movietextureasset)** | **nil**
+
+### {{% prop-heading "keepBlackScreen" %}}
+> **bool**
+
+### {{% prop-heading "allowSkip" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PlayVideoEntityData](/vext/ref/fb/playvideoentitydata) type.
+

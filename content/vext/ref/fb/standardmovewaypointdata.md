@@ -1,44 +1,83 @@
 ---
 title: StandardMoveWaypointData
 ---
-### Base Classes
 
-[AbstractLocoWaypointData](/vext/ref/fb/abstractlocowaypointdata/)
+Inherits from 
+[AbstractLocoWaypointData](/vext/ref/fb/abstractlocowaypointdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[StandardMoveWaypointData](#constructor-0)**() |
+| **[StandardMoveWaypointData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[StandardMoveWaypointData](#constructor-2)**(other: [AbstractLocoWaypointData](/vext/ref/fb/abstractlocowaypointdata)) |
+| **[StandardMoveWaypointData](#constructor-3)**(other: [WaypointData](/vext/ref/fb/waypointdata)) |
+| **[StandardMoveWaypointData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "moveTask" >}} | [AILocoMoveTaskData](/vext/ref/fb/ailocomovetaskdata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "StandardMoveWaypointData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### StandardMoveWaypointData {#constructor-0}
+> **StandardMoveWaypointData**()
 
-| Constructor                                                                          | Description                                                                                                                              |
-| ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| StandardMoveWaypointData()                                                           | Create a new instance of this container type.                                                                                            |
-| StandardMoveWaypointData(StandardMoveWaypointData other)                             | Create a reference copy of an instance of the same type.                                                                                 |
-| StandardMoveWaypointData([AbstractLocoWaypointData](/vext/ref/fb/abstractlocowaypointdata/) other) | Upcast an instance of type [AbstractLocoWaypointData](/vext/ref/fb/abstractlocowaypointdata/) to [StandardMoveWaypointData](/vext/ref/fb/standardmovewaypointdata/). |
-| StandardMoveWaypointData([WaypointData](/vext/ref/fb/waypointdata/) other)                         | Upcast an instance of type [WaypointData](/vext/ref/fb/waypointdata/) to [StandardMoveWaypointData](/vext/ref/fb/standardmovewaypointdata/).                         |
-| StandardMoveWaypointData([DataContainer](/vext/ref/shared/class/datacontainer) other)  | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StandardMoveWaypointData](/vext/ref/fb/standardmovewaypointdata/).  |
+Creates a new [StandardMoveWaypointData](/vext/ref/fb/standardmovewaypointdata) frostbite instance.
 
-## Properties
+### StandardMoveWaypointData {#constructor-1}
+> **StandardMoveWaypointData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name     | Type                                     | Description |
-| -------- | ---------------------------------------- | ----------- |
-| moveTask | [AILocoMoveTaskData](/vext/ref/fb/ailocomovetaskdata/) |             |
-
-## Methods
-
-| Type                                                 | Name            | Parameters                                     |
-| ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [StandardMoveWaypointData](/vext/ref/fb/standardmovewaypointdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [StandardMoveWaypointData](/vext/ref/fb/standardmovewaypointdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [StandardMoveWaypointData](/vext/ref/fb/standardmovewaypointdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### StandardMoveWaypointData {#constructor-2}
+> **StandardMoveWaypointData**(other: [AbstractLocoWaypointData](/vext/ref/fb/abstractlocowaypointdata))
+
+Casts an instance of type [AbstractLocoWaypointData](/vext/ref/fb/abstractlocowaypointdata) to [StandardMoveWaypointData](/vext/ref/fb/standardmovewaypointdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AbstractLocoWaypointData](/vext/ref/fb/abstractlocowaypointdata) | The instance to cast to [StandardMoveWaypointData](/vext/ref/fb/standardmovewaypointdata). |
+
+### StandardMoveWaypointData {#constructor-3}
+> **StandardMoveWaypointData**(other: [WaypointData](/vext/ref/fb/waypointdata))
+
+Casts an instance of type [WaypointData](/vext/ref/fb/waypointdata) to [StandardMoveWaypointData](/vext/ref/fb/standardmovewaypointdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [WaypointData](/vext/ref/fb/waypointdata) | The instance to cast to [StandardMoveWaypointData](/vext/ref/fb/standardmovewaypointdata). |
+
+### StandardMoveWaypointData {#constructor-4}
+> **StandardMoveWaypointData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StandardMoveWaypointData](/vext/ref/fb/standardmovewaypointdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [StandardMoveWaypointData](/vext/ref/fb/standardmovewaypointdata). |
+
+## Properties
+### {{% prop-heading "moveTask" %}}
+> **[AILocoMoveTaskData](/vext/ref/fb/ailocomovetaskdata)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [StandardMoveWaypointData](/vext/ref/fb/standardmovewaypointdata) type.
+

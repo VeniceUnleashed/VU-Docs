@@ -1,34 +1,65 @@
 ---
 title: UnlockableProjectile
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UnlockableProjectile](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "initialSpeed" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "projectileData" >}} | [ProjectileEntityData](/vext/ref/fb/projectileentitydata) \| nil |
+| {{< prop "projectile" >}} | [ProjectileBlueprint](/vext/ref/fb/projectileblueprint) \| nil |
+| {{< prop "unlock" >}} | [UnlockAssetBase](/vext/ref/fb/unlockassetbase) \| nil |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [UnlockableProjectile](/vext/ref/fb/unlockableprojectile) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UnlockableProjectile" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UnlockableProjectile {#constructor-0}
+> **UnlockableProjectile**()
 
-| Constructor                                      | Description                                              |
-| ------------------------------------------------ | -------------------------------------------------------- |
-| UnlockableProjectile()                           | Create a new instance of this structure type.            |
-| UnlockableProjectile(UnlockableProjectile other) | Create a reference copy of a structure of the same type. |
+Creates a new [UnlockableProjectile](/vext/ref/fb/unlockableprojectile) frostbite structure.
 
 ## Properties
+### {{% prop-heading "initialSpeed" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
 
-| Name           | Type                                         | Description |
-| -------------- | -------------------------------------------- | ----------- |
-| initialSpeed   | [Vec3](/vext/ref/shared/class/vec3)            |             |
-| projectileData | [ProjectileEntityData](/vext/ref/fb/projectileentitydata/) |             |
-| projectile     | [ProjectileBlueprint](/vext/ref/fb/projectileblueprint/)   |             |
-| unlock         | [UnlockAssetBase](/vext/ref/fb/unlockassetbase/)           |             |
+### {{% prop-heading "projectileData" %}}
+> **[ProjectileEntityData](/vext/ref/fb/projectileentitydata)** | **nil**
+
+### {{% prop-heading "projectile" %}}
+> **[ProjectileBlueprint](/vext/ref/fb/projectileblueprint)** | **nil**
+
+### {{% prop-heading "unlock" %}}
+> **[UnlockAssetBase](/vext/ref/fb/unlockassetbase)** | **nil**
 
 ## Methods
-
-| Type                                         | Name            | Parameters |
-| -------------------------------------------- | --------------- | ---------- |
-| [UnlockableProjectile](/vext/ref/fb/unlockableprojectile/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [UnlockableProjectile](/vext/ref/fb/unlockableprojectile)
 
-> [UnlockableProjectile](/vext/ref/fb/unlockableprojectile/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[UnlockableProjectile](/vext/ref/fb/unlockableprojectile)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UnlockableProjectile](/vext/ref/fb/unlockableprojectile) type.
+

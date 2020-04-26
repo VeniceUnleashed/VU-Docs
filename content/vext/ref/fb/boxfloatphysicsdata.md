@@ -1,37 +1,63 @@
 ---
 title: BoxFloatPhysicsData
 ---
-### Base Classes
 
-[FloatPhysicsData](/vext/ref/fb/floatphysicsdata/)
+Inherits from 
+[FloatPhysicsData](/vext/ref/fb/floatphysicsdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[BoxFloatPhysicsData](#constructor-0)**() |
+| **[BoxFloatPhysicsData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[BoxFloatPhysicsData](#constructor-2)**(other: [FloatPhysicsData](/vext/ref/fb/floatphysicsdata)) |
+| **[BoxFloatPhysicsData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "BoxFloatPhysicsData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### BoxFloatPhysicsData {#constructor-0}
+> **BoxFloatPhysicsData**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| BoxFloatPhysicsData()                                                          | Create a new instance of this container type.                                                                                 |
-| BoxFloatPhysicsData(BoxFloatPhysicsData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| BoxFloatPhysicsData([FloatPhysicsData](/vext/ref/fb/floatphysicsdata/) other)                | Upcast an instance of type [FloatPhysicsData](/vext/ref/fb/floatphysicsdata/) to [BoxFloatPhysicsData](/vext/ref/fb/boxfloatphysicsdata/).                |
-| BoxFloatPhysicsData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BoxFloatPhysicsData](/vext/ref/fb/boxfloatphysicsdata/). |
+Creates a new [BoxFloatPhysicsData](/vext/ref/fb/boxfloatphysicsdata) frostbite instance.
 
-## Methods
+### BoxFloatPhysicsData {#constructor-1}
+> **BoxFloatPhysicsData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [BoxFloatPhysicsData](/vext/ref/fb/boxfloatphysicsdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [BoxFloatPhysicsData](/vext/ref/fb/boxfloatphysicsdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [BoxFloatPhysicsData](/vext/ref/fb/boxfloatphysicsdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### BoxFloatPhysicsData {#constructor-2}
+> **BoxFloatPhysicsData**(other: [FloatPhysicsData](/vext/ref/fb/floatphysicsdata))
+
+Casts an instance of type [FloatPhysicsData](/vext/ref/fb/floatphysicsdata) to [BoxFloatPhysicsData](/vext/ref/fb/boxfloatphysicsdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [FloatPhysicsData](/vext/ref/fb/floatphysicsdata) | The instance to cast to [BoxFloatPhysicsData](/vext/ref/fb/boxfloatphysicsdata). |
+
+### BoxFloatPhysicsData {#constructor-3}
+> **BoxFloatPhysicsData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BoxFloatPhysicsData](/vext/ref/fb/boxfloatphysicsdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [BoxFloatPhysicsData](/vext/ref/fb/boxfloatphysicsdata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [BoxFloatPhysicsData](/vext/ref/fb/boxfloatphysicsdata) type.
+

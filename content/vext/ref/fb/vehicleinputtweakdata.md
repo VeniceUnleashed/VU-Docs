@@ -1,46 +1,77 @@
 ---
 title: VehicleInputTweakData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VehicleInputTweakData](#constructor-0)**() |
+| **[VehicleInputTweakData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VehicleInputTweakData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "inputTweakType" >}} | [VehicleInputTweakType](/vext/ref/fb/vehicleinputtweaktype) |
+| {{< prop "minSpeed" >}} | float |
+| {{< prop "maxSpeed" >}} | float |
+| {{< prop "minSpeedScale" >}} | float |
+| {{< prop "maxSpeedScale" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VehicleInputTweakData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VehicleInputTweakData {#constructor-0}
+> **VehicleInputTweakData**()
 
-| Constructor                                                                      | Description                                                                                                                       |
-| -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| VehicleInputTweakData()                                                          | Create a new instance of this container type.                                                                                     |
-| VehicleInputTweakData(VehicleInputTweakData other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| VehicleInputTweakData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VehicleInputTweakData](/vext/ref/fb/vehicleinputtweakdata/). |
+Creates a new [VehicleInputTweakData](/vext/ref/fb/vehicleinputtweakdata) frostbite instance.
 
-## Properties
+### VehicleInputTweakData {#constructor-1}
+> **VehicleInputTweakData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name           | Type                                           | Description |
-| -------------- | ---------------------------------------------- | ----------- |
-| inputTweakType | [VehicleInputTweakType](/vext/ref/fb/vehicleinputtweaktype/) |             |
-| minSpeed       | number                                         |             |
-| maxSpeed       | number                                         |             |
-| minSpeedScale  | number                                         |             |
-| maxSpeedScale  | number                                         |             |
-
-## Methods
-
-| Type                                           | Name            | Parameters                                     |
-| ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [VehicleInputTweakData](/vext/ref/fb/vehicleinputtweakdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VehicleInputTweakData](/vext/ref/fb/vehicleinputtweakdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VehicleInputTweakData](/vext/ref/fb/vehicleinputtweakdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VehicleInputTweakData {#constructor-2}
+> **VehicleInputTweakData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VehicleInputTweakData](/vext/ref/fb/vehicleinputtweakdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VehicleInputTweakData](/vext/ref/fb/vehicleinputtweakdata). |
+
+## Properties
+### {{% prop-heading "inputTweakType" %}}
+> **[VehicleInputTweakType](/vext/ref/fb/vehicleinputtweaktype)**
+
+### {{% prop-heading "minSpeed" %}}
+> **float**
+
+### {{% prop-heading "maxSpeed" %}}
+> **float**
+
+### {{% prop-heading "minSpeedScale" %}}
+> **float**
+
+### {{% prop-heading "maxSpeedScale" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VehicleInputTweakData](/vext/ref/fb/vehicleinputtweakdata) type.
+

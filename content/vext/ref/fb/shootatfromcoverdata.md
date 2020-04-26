@@ -1,49 +1,110 @@
 ---
 title: ShootAtFromCoverData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ShootAtFromCoverData](#constructor-0)**() |
+| **[ShootAtFromCoverData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ShootAtFromCoverData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[ShootAtFromCoverData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[ShootAtFromCoverData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[ShootAtFromCoverData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "strengthType" >}} | [StrengthType](/vext/ref/fb/strengthtype) |
+| {{< prop "shootType" >}} | [ShootType](/vext/ref/fb/shoottype) |
+| {{< prop "cycleTargets" >}} | bool |
+| {{< prop "randomTargetOrder" >}} | bool |
+| {{< prop "preferAlternativeWeapon" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ShootAtFromCoverData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ShootAtFromCoverData {#constructor-0}
+> **ShootAtFromCoverData**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| ShootAtFromCoverData()                                                          | Create a new instance of this container type.                                                                                   |
-| ShootAtFromCoverData(ShootAtFromCoverData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| ShootAtFromCoverData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [ShootAtFromCoverData](/vext/ref/fb/shootatfromcoverdata/).                            |
-| ShootAtFromCoverData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [ShootAtFromCoverData](/vext/ref/fb/shootatfromcoverdata/).                    |
-| ShootAtFromCoverData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [ShootAtFromCoverData](/vext/ref/fb/shootatfromcoverdata/).              |
-| ShootAtFromCoverData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ShootAtFromCoverData](/vext/ref/fb/shootatfromcoverdata/). |
+Creates a new [ShootAtFromCoverData](/vext/ref/fb/shootatfromcoverdata) frostbite instance.
 
-## Properties
+### ShootAtFromCoverData {#constructor-1}
+> **ShootAtFromCoverData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                    | Type                         | Description |
-| ----------------------- | ---------------------------- | ----------- |
-| strengthType            | [StrengthType](/vext/ref/fb/strengthtype/) |             |
-| shootType               | [ShootType](/vext/ref/fb/shoottype/)       |             |
-| cycleTargets            | bool                         |             |
-| randomTargetOrder       | bool                         |             |
-| preferAlternativeWeapon | bool                         |             |
-
-## Methods
-
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [ShootAtFromCoverData](/vext/ref/fb/shootatfromcoverdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ShootAtFromCoverData](/vext/ref/fb/shootatfromcoverdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ShootAtFromCoverData](/vext/ref/fb/shootatfromcoverdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ShootAtFromCoverData {#constructor-2}
+> **ShootAtFromCoverData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [ShootAtFromCoverData](/vext/ref/fb/shootatfromcoverdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [ShootAtFromCoverData](/vext/ref/fb/shootatfromcoverdata). |
+
+### ShootAtFromCoverData {#constructor-3}
+> **ShootAtFromCoverData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [ShootAtFromCoverData](/vext/ref/fb/shootatfromcoverdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [ShootAtFromCoverData](/vext/ref/fb/shootatfromcoverdata). |
+
+### ShootAtFromCoverData {#constructor-4}
+> **ShootAtFromCoverData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [ShootAtFromCoverData](/vext/ref/fb/shootatfromcoverdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [ShootAtFromCoverData](/vext/ref/fb/shootatfromcoverdata). |
+
+### ShootAtFromCoverData {#constructor-5}
+> **ShootAtFromCoverData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ShootAtFromCoverData](/vext/ref/fb/shootatfromcoverdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ShootAtFromCoverData](/vext/ref/fb/shootatfromcoverdata). |
+
+## Properties
+### {{% prop-heading "strengthType" %}}
+> **[StrengthType](/vext/ref/fb/strengthtype)**
+
+### {{% prop-heading "shootType" %}}
+> **[ShootType](/vext/ref/fb/shoottype)**
+
+### {{% prop-heading "cycleTargets" %}}
+> **bool**
+
+### {{% prop-heading "randomTargetOrder" %}}
+> **bool**
+
+### {{% prop-heading "preferAlternativeWeapon" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ShootAtFromCoverData](/vext/ref/fb/shootatfromcoverdata) type.
+

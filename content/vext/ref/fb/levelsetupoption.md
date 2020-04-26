@@ -1,32 +1,57 @@
 ---
 title: LevelSetupOption
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[LevelSetupOption](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "criterion" >}} | string |
+| {{< prop "value" >}} | string |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [LevelSetupOption](/vext/ref/fb/levelsetupoption) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "LevelSetupOption" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### LevelSetupOption {#constructor-0}
+> **LevelSetupOption**()
 
-| Constructor                              | Description                                              |
-| ---------------------------------------- | -------------------------------------------------------- |
-| LevelSetupOption()                       | Create a new instance of this structure type.            |
-| LevelSetupOption(LevelSetupOption other) | Create a reference copy of a structure of the same type. |
+Creates a new [LevelSetupOption](/vext/ref/fb/levelsetupoption) frostbite structure.
 
 ## Properties
+### {{% prop-heading "criterion" %}}
+> **string**
 
-| Name      | Type   | Description |
-| --------- | ------ | ----------- |
-| criterion | string |             |
-| value     | string |             |
+### {{% prop-heading "value" %}}
+> **string**
 
 ## Methods
-
-| Type                                 | Name            | Parameters |
-| ------------------------------------ | --------------- | ---------- |
-| [LevelSetupOption](/vext/ref/fb/levelsetupoption/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [LevelSetupOption](/vext/ref/fb/levelsetupoption)
 
-> [LevelSetupOption](/vext/ref/fb/levelsetupoption/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[LevelSetupOption](/vext/ref/fb/levelsetupoption)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [LevelSetupOption](/vext/ref/fb/levelsetupoption) type.
+

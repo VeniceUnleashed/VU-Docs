@@ -1,14 +1,11 @@
 ---
 title: BlinkType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **BTHold** | Value: **0** |
+| **BTBlink** | Value: **1** |
+| **BTCount** | Value: **2** |
 
-| Name    | Value | Description |
-| ------- | ----- | ----------- |
-| BTHold  | 0     |             |
-| BTBlink | 1     |             |
-| BTCount | 2     |             |

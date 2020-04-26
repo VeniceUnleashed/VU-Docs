@@ -3,1125 +3,1260 @@ title: Frostbite API
 hideChildren: true
 weight: 4
 ---
-## Containers
 
-|                                                                                                          |                                                                                                                |
-| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| [AABBData](/vext/ref/fb/aabbdata)                                                                 | [AbstractAwardData](/vext/ref/fb/abstractawarddata)                                                     |
-| [AbstractLeaderboardData](/vext/ref/fb/abstractleaderboarddata)                                   | [AbstractLocoWaypointData](/vext/ref/fb/abstractlocowaypointdata)                                       |
-| [AbstractPersistenceData](/vext/ref/fb/abstractpersistencedata)                                   | [AbstractPersistentStatRef](/vext/ref/fb/abstractpersistentstatref)                                     |
-| [ActionNode](/vext/ref/fb/actionnode)                                                             | [AdsrNodeData](/vext/ref/fb/adsrnodedata)                                                               |
-| [AdvancedDogTagData](/vext/ref/fb/advanceddogtagdata)                                             | [AdvertisementComponentData](/vext/ref/fb/advertisementcomponentdata)                                   |
-| [AdvertisementLevelDescriptionComponent](/vext/ref/fb/advertisementleveldescriptioncomponent)     | [AeroDynamicPhysicsData](/vext/ref/fb/aerodynamicphysicsdata)                                           |
-| [AIAimingConstraintsData](/vext/ref/fb/aiaimingconstraintsdata)                                   | [AIDifficultyData](/vext/ref/fb/aidifficultydata)                                                       |
-| [AIEntryData](/vext/ref/fb/aientrydata)                                                           | [AiffWriterNodeData](/vext/ref/fb/aiffwriternodedata)                                                   |
-| [AILocoComponentData](/vext/ref/fb/ailococomponentdata)                                           | [AimAtOrderEntityData](/vext/ref/fb/aimatorderentitydata)                                               |
-| [AimerModifierData](/vext/ref/fb/aimermodifierdata)                                               | [AimingConstraintEntityCommonData](/vext/ref/fb/aimingconstraintentitycommondata)                       |
-| [AimingConstraintEntityData](/vext/ref/fb/aimingconstraintentitydata)                             | [AIProximityReactionsComponentData](/vext/ref/fb/aiproximityreactionscomponentdata)                     |
-| [AirRadarData](/vext/ref/fb/airradardata)                                                         | [AirResistanceData](/vext/ref/fb/airresistancedata)                                                     |
-| [AISettingsData](/vext/ref/fb/aisettingsdata)                                                     | [AISystemAsset](/vext/ref/fb/aisystemasset)                                                             |
-| [AIVehicleBehaviourData](/vext/ref/fb/aivehiclebehaviourdata)                                     | [AIVehicleTypes](/vext/ref/fb/aivehicletypes)                                                           |
-| [AIWeaponData](/vext/ref/fb/aiweapondata)                                                         | [AlignmentData](/vext/ref/fb/alignmentdata)                                                             |
-| [AllowedVehiclesData](/vext/ref/fb/allowedvehiclesdata)                                           | [AlternateCameraViewData](/vext/ref/fb/alternatecameraviewdata)                                         |
-| [AlternateSpawnEntityData](/vext/ref/fb/alternatespawnentitydata)                                 | [AmmoCrateEntityData](/vext/ref/fb/ammocrateentitydata)                                                 |
-| [AndEntityData](/vext/ref/fb/andentitydata)                                                       | [AnimatedCameraData](/vext/ref/fb/animatedcameradata)                                                   |
-| [AnimatedDestructionComponentData](/vext/ref/fb/animateddestructioncomponentdata)                 | [AnimatedDriverEntityData](/vext/ref/fb/animateddriverentitydata)                                       |
-| [AnimatedPointCloudAsset](/vext/ref/fb/animatedpointcloudasset)                                   | [AnimatedPointCloudComponentData](/vext/ref/fb/animatedpointcloudcomponentdata)                         |
-| [AnimatedPointCloudEntityData](/vext/ref/fb/animatedpointcloudentitydata)                         | [AnimatedSkeletonDatabase](/vext/ref/fb/animatedskeletondatabase)                                       |
-| [AnimatedTransformEntityData](/vext/ref/fb/animatedtransformentitydata)                           | [AnimationControlledStateData](/vext/ref/fb/animationcontrolledstatedata)                               |
-| [AnimationEnumerationChoiceEntityData](/vext/ref/fb/animationenumerationchoiceentitydata)         | [AnimationEnumerationEntityData](/vext/ref/fb/animationenumerationentitydata)                           |
-| [AnimationSignalEntityData](/vext/ref/fb/animationsignalentitydata)                               | [AnimationSpawnTemplate](/vext/ref/fb/animationspawntemplate)                                           |
-| [AnimationTurretRotationComponentData](/vext/ref/fb/animationturretrotationcomponentdata)         | [AntAnimatableComponentData](/vext/ref/fb/antanimatablecomponentdata)                                   |
-| [AntAnimationSetAsset](/vext/ref/fb/antanimationsetasset)                                         | [AntDrivenComponentData](/vext/ref/fb/antdrivencomponentdata)                                           |
-| [AntEnumeration](/vext/ref/fb/antenumeration)                                                     | [AntEventEntityData](/vext/ref/fb/antevententitydata)                                                   |
-| [AntInteractionData](/vext/ref/fb/antinteractiondata)                                             | [AntiRollBar](/vext/ref/fb/antirollbar)                                                                 |
-| [AntMemorySettings](/vext/ref/fb/antmemorysettings)                                               | [AntPackageAsset](/vext/ref/fb/antpackageasset)                                                         |
-| [AntProjectAsset](/vext/ref/fb/antprojectasset)                                                   | [AntSettings](/vext/ref/fb/antsettings)                                                                 |
-| [AntTrackData](/vext/ref/fb/anttrackdata)                                                         | [AntTrackItemData](/vext/ref/fb/anttrackitemdata)                                                       |
-| [AreaProximityEntityData](/vext/ref/fb/areaproximityentitydata)                                   | [AreaTriggerEntityData](/vext/ref/fb/areatriggerentitydata)                                             |
-| [ArmamentData](/vext/ref/fb/armamentdata)                                                         | [ArmDisarmAwardEntityData](/vext/ref/fb/armdisarmawardentitydata)                                       |
-| [ArtilleryStrikeEntityData](/vext/ref/fb/artillerystrikeentitydata)                               | [ArtilleryStrikeWeaponData](/vext/ref/fb/artillerystrikeweapondata)                                     |
-| [AssemblyDescriptorData](/vext/ref/fb/assemblydescriptordata)                                     | [Asset](/vext/ref/fb/asset)                                                                             |
-| [AudioGraphAssetParameter](/vext/ref/fb/audiographassetparameter)                                 | [AudioGraphData](/vext/ref/fb/audiographdata)                                                           |
-| [AudioGraphEvent](/vext/ref/fb/audiographevent)                                                   | [AudioGraphNodeData](/vext/ref/fb/audiographnodedata)                                                   |
-| [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup)                                   | [AudioGraphParameter](/vext/ref/fb/audiographparameter)                                                 |
-| [AudioLanguage](/vext/ref/fb/audiolanguage)                                                       | [AudioLanguagesDependancyObject](/vext/ref/fb/audiolanguagesdependancyobject)                           |
-| [AudioLanguageSetting](/vext/ref/fb/audiolanguagesetting)                                         | [AudioMaterialDefinitions](/vext/ref/fb/audiomaterialdefinitions)                                       |
-| [AudioSettings](/vext/ref/fb/audiosettings)                                                       | [AudioSystemAsset](/vext/ref/fb/audiosystemasset)                                                       |
-| [AutoSquadEntityData](/vext/ref/fb/autosquadentitydata)                                           | [AutoTeamEntityData](/vext/ref/fb/autoteamentitydata)                                                   |
-| [AvengerScoringHandlerData](/vext/ref/fb/avengerscoringhandlerdata)                               | [AwardableTreeBase](/vext/ref/fb/awardabletreebase)                                                     |
-| [AwardAchievementData](/vext/ref/fb/awardachievementdata)                                         | [AwardData](/vext/ref/fb/awarddata)                                                                     |
-| [AwardDataTree](/vext/ref/fb/awarddatatree)                                                       | [AwardHeaderData](/vext/ref/fb/awardheaderdata)                                                         |
-| [AwardStarData](/vext/ref/fb/awardstardata)                                                       | [AwardStarNameData](/vext/ref/fb/awardstarnamedata)                                                     |
-| [AxesInputActionData](/vext/ref/fb/axesinputactiondata)                                           | [BandPassFir64NodeData](/vext/ref/fb/bandpassfir64nodedata)                                             |
-| [BandPassIir2NodeData](/vext/ref/fb/bandpassiir2nodedata)                                         | [BangerEntityData](/vext/ref/fb/bangerentitydata)                                                       |
-| [BangerSpawnImpulseParams](/vext/ref/fb/bangerspawnimpulseparams)                                 | [BaseEmitterData](/vext/ref/fb/baseemitterdata)                                                         |
-| [BaseShapeData](/vext/ref/fb/baseshapedata)                                                       | [BaseSkeletonAsset](/vext/ref/fb/baseskeletonasset)                                                     |
-| [BasicDogTagData](/vext/ref/fb/basicdogtagdata)                                                   | [BehaviourData](/vext/ref/fb/behaviourdata)                                                             |
-| [BehaviourTemplateData](/vext/ref/fb/behaviourtemplatedata)                                       | [BFAISettingsData](/vext/ref/fb/bfaisettingsdata)                                                       |
-| [BFAISystem](/vext/ref/fb/bfaisystem)                                                             | [BFOrderEntityData](/vext/ref/fb/bforderentitydata)                                                     |
-| [BFServerConfiguration](/vext/ref/fb/bfserverconfiguration)                                       | [BFServerSettings](/vext/ref/fb/bfserversettings)                                                       |
-| [BFTargetEvaluatorComponentData](/vext/ref/fb/bftargetevaluatorcomponentdata)                     | [BigWorldSetting](/vext/ref/fb/bigworldsetting)                                                         |
-| [BigWorldSettingsAsset](/vext/ref/fb/bigworldsettingsasset)                                       | [BinaryLogicNode](/vext/ref/fb/binarylogicnode)                                                         |
-| [BlazePresenceBackendData](/vext/ref/fb/blazepresencebackenddata)                                 | [BlazeServerBackendData](/vext/ref/fb/blazeserverbackenddata)                                           |
-| [Blueprint](/vext/ref/fb/blueprint)                                                               | [BlueprintAndVariationPair](/vext/ref/fb/blueprintandvariationpair)                                     |
-| [BlueprintBundle](/vext/ref/fb/blueprintbundle)                                                   | [BlueprintBundleLoaderEntityData](/vext/ref/fb/blueprintbundleloaderentitydata)                         |
-| [BlueprintBundleMetadata](/vext/ref/fb/blueprintbundlemetadata)                                   | [BlueprintBundleMetadataContainer](/vext/ref/fb/blueprintbundlemetadatacontainer)                       |
-| [BlueprintBundleSelectorEntityData](/vext/ref/fb/blueprintbundleselectorentitydata)               | [BlueprintBundleStateLogicEntityData](/vext/ref/fb/blueprintbundlestatelogicentitydata)                 |
-| [BlueprintContainerItem](/vext/ref/fb/blueprintcontaineritem)                                     | [BoatFloatPhysicsData](/vext/ref/fb/boatfloatphysicsdata)                                               |
-| [BoneCollisionComponentData](/vext/ref/fb/bonecollisioncomponentdata)                             | [BoneFakePhysicsData](/vext/ref/fb/bonefakephysicsdata)                                                 |
-| [BoolEntityData](/vext/ref/fb/boolentitydata)                                                     | [BoolHubEntityData](/vext/ref/fb/boolhubentitydata)                                                     |
-| [BoolPropertyTrackData](/vext/ref/fb/boolpropertytrackdata)                                       | [BoolRecordingData](/vext/ref/fb/boolrecordingdata)                                                     |
-| [BoolToEventEntityData](/vext/ref/fb/booltoevententitydata)                                       | [BoolUnlockValuePair](/vext/ref/fb/boolunlockvaluepair)                                                 |
-| [BotPriorityConfigData](/vext/ref/fb/botpriorityconfigdata)                                       | [BoxEvaluatorData](/vext/ref/fb/boxevaluatordata)                                                       |
-| [BoxFloatPhysicsData](/vext/ref/fb/boxfloatphysicsdata)                                           | [BreakableControllerComponentData](/vext/ref/fb/breakablecontrollercomponentdata)                       |
-| [BreakableModelEntityData](/vext/ref/fb/breakablemodelentitydata)                                 | [BreakablePartComponentData](/vext/ref/fb/breakablepartcomponentdata)                                   |
-| [BreakableRuinComponentData](/vext/ref/fb/breakableruincomponentdata)                             | [BreathControlData](/vext/ref/fb/breathcontroldata)                                                     |
-| [BulletEntityData](/vext/ref/fb/bulletentitydata)                                                 | [BusNodeData](/vext/ref/fb/busnodedata)                                                                 |
-| [ByteRasterData](/vext/ref/fb/byterasterdata)                                                     | [CameraActionData](/vext/ref/fb/cameraactiondata)                                                       |
-| [CameraComponentData](/vext/ref/fb/cameracomponentdata)                                           | [CameraComponentSoundData](/vext/ref/fb/cameracomponentsounddata)                                       |
-| [CameraData](/vext/ref/fb/cameradata)                                                             | [CameraEnterAreaTriggerEntityData](/vext/ref/fb/cameraenterareatriggerentitydata)                       |
-| [CameraEntityBaseData](/vext/ref/fb/cameraentitybasedata)                                         | [CameraEntityData](/vext/ref/fb/cameraentitydata)                                                       |
-| [CameraLoosePartPhysicsData](/vext/ref/fb/cameraloosepartphysicsdata)                             | [CameraModeAsset](/vext/ref/fb/cameramodeasset)                                                         |
-| [CameraParamsComponentData](/vext/ref/fb/cameraparamscomponentdata)                               | [CameraProximityEvaluatorData](/vext/ref/fb/cameraproximityevaluatordata)                               |
-| [CameraRecoilData](/vext/ref/fb/camerarecoildata)                                                 | [CameraShakeNodeData](/vext/ref/fb/camerashakenodedata)                                                 |
-| [CameraTransition](/vext/ref/fb/cameratransition)                                                 | [CancelOrderEntityData](/vext/ref/fb/cancelorderentitydata)                                             |
-| [CannedScenarioEntityData](/vext/ref/fb/cannedscenarioentitydata)                                 | [CapturePointEntityData](/vext/ref/fb/capturepointentitydata)                                           |
-| [CapturePointScoringHandlerData](/vext/ref/fb/capturepointscoringhandlerdata)                     | [CellDetailSelectionRule](/vext/ref/fb/celldetailselectionrule)                                         |
-| [ChangeReadinessOrderEntityData](/vext/ref/fb/changereadinessorderentitydata)                     | [CharacterAnimationEntityData](/vext/ref/fb/characteranimationentitydata)                               |
-| [CharacterAnimationSpaceEntityData](/vext/ref/fb/characteranimationspaceentitydata)               | [CharacterAsset](/vext/ref/fb/characterasset)                                                           |
-| [CharacterBlueprint](/vext/ref/fb/characterblueprint)                                             | [CharacterCameraComponentData](/vext/ref/fb/charactercameracomponentdata)                               |
-| [CharacterCustomizationAsset](/vext/ref/fb/charactercustomizationasset)                           | [CharacterCustomizationComponentData](/vext/ref/fb/charactercustomizationcomponentdata)                 |
-| [CharacterEntityData](/vext/ref/fb/characterentitydata)                                           | [CharacterHealthComponentData](/vext/ref/fb/characterhealthcomponentdata)                               |
-| [CharacterInVehicleScenarioEntityData](/vext/ref/fb/characterinvehiclescenarioentitydata)         | [CharacterLightingComponentData](/vext/ref/fb/characterlightingcomponentdata)                           |
-| [CharacterPhysicsComponentData](/vext/ref/fb/characterphysicscomponentdata)                       | [CharacterPhysicsData](/vext/ref/fb/characterphysicsdata)                                               |
-| [CharacterPoseData](/vext/ref/fb/characterposedata)                                               | [CharacterSocketListAsset](/vext/ref/fb/charactersocketlistasset)                                       |
-| [CharacterSpawnReferenceObjectData](/vext/ref/fb/characterspawnreferenceobjectdata)               | [CharacterSprintData](/vext/ref/fb/charactersprintdata)                                                 |
-| [CharacterStateData](/vext/ref/fb/characterstatedata)                                             | [CharacterStatePoseInfo](/vext/ref/fb/characterstateposeinfo)                                           |
-| [CharacterStateTriggerEntityData](/vext/ref/fb/characterstatetriggerentitydata)                   | [CharacterWeaponComponentData](/vext/ref/fb/characterweaponcomponentdata)                               |
-| [ChaseCameraData](/vext/ref/fb/chasecameradata)                                                   | [ChassisComponentData](/vext/ref/fb/chassiscomponentdata)                                               |
-| [ChatSettings](/vext/ref/fb/chatsettings)                                                         | [ChildBarrelComponentData](/vext/ref/fb/childbarrelcomponentdata)                                       |
-| [ChildComponentData](/vext/ref/fb/childcomponentdata)                                             | [ChildMovingBodyData](/vext/ref/fb/childmovingbodydata)                                                 |
-| [ChildRotationBodyData](/vext/ref/fb/childrotationbodydata)                                       | [ChunkStreamerEntityData](/vext/ref/fb/chunkstreamerentitydata)                                         |
-| [ClearAreaTriggerEntityData](/vext/ref/fb/clearareatriggerentitydata)                             | [ClientEffectMaskVolumeEntityData](/vext/ref/fb/clienteffectmaskvolumeentitydata)                       |
-| [ClientJuiceState](/vext/ref/fb/clientjuicestate)                                                 | [ClientMetricsSettings](/vext/ref/fb/clientmetricssettings)                                             |
-| [ClientPlayerInputPlaybackEntityData](/vext/ref/fb/clientplayerinputplaybackentitydata)           | [ClientPlayerInputRecorderEntityData](/vext/ref/fb/clientplayerinputrecorderentitydata)                 |
-| [ClientSettings](/vext/ref/fb/clientsettings)                                                     | [ClimbingStateData](/vext/ref/fb/climbingstatedata)                                                     |
-| [ClimbLadderComponentData](/vext/ref/fb/climbladdercomponentdata)                                 | [ClosestInstancesScopeStrategyData](/vext/ref/fb/closestinstancesscopestrategydata)                     |
-| [CollisionData](/vext/ref/fb/collisiondata)                                                       | [ColorCorrectionComponentData](/vext/ref/fb/colorcorrectioncomponentdata)                               |
-| [ColorReference](/vext/ref/fb/colorreference)                                                     | [ColorTintScopeFilterData](/vext/ref/fb/colortintscopefilterdata)                                       |
-| [ColorUnlockPartData](/vext/ref/fb/colorunlockpartdata)                                           | [CombatActionTriggerEntityData](/vext/ref/fb/combatactiontriggerentitydata)                             |
-| [CombatAreaTriggerEntityData](/vext/ref/fb/combatareatriggerentitydata)                           | [CombatConstantData](/vext/ref/fb/combatconstantdata)                                                   |
-| [CombustionEngineConfigData](/vext/ref/fb/combustionengineconfigdata)                             | [CompareBoolEntityData](/vext/ref/fb/compareboolentitydata)                                             |
-| [CompareEntityData](/vext/ref/fb/compareentitydata)                                               | [CompareFloatEntityData](/vext/ref/fb/comparefloatentitydata)                                           |
-| [CompareIntEntityData](/vext/ref/fb/compareintentitydata)                                         | [ComparisonLogicNode](/vext/ref/fb/comparisonlogicnode)                                                 |
-| [ComponentData](/vext/ref/fb/componentdata)                                                       | [CompositeMeshAsset](/vext/ref/fb/compositemeshasset)                                                   |
-| [CompositeMeshEntityData](/vext/ref/fb/compositemeshentitydata)                                   | [CompressorNodeData](/vext/ref/fb/compressornodedata)                                                   |
-| [CompressorSettings](/vext/ref/fb/compressorsettings)                                             | [ConditionGroup](/vext/ref/fb/conditiongroup)                                                           |
-| [ConditionNodeData](/vext/ref/fb/conditionnodedata)                                               | [ConeOutputNodeData](/vext/ref/fb/coneoutputnodedata)                                                   |
-| [ConsoleCommandEntityData](/vext/ref/fb/consolecommandentitydata)                                 | [ConsoleCommandTriggerEntityData](/vext/ref/fb/consolecommandtriggerentitydata)                         |
-| [ConstantEvaluatorData](/vext/ref/fb/constantevaluatordata)                                       | [ConsumablesLevelDescriptionComponent](/vext/ref/fb/consumablesleveldescriptioncomponent)               |
-| [ConsumableTriggerEntityData](/vext/ref/fb/consumabletriggerentitydata)                           | [ControllableEntityData](/vext/ref/fb/controllableentitydata)                                           |
-| [CoopLobbyEntityData](/vext/ref/fb/cooplobbyentitydata)                                           | [CountDownEntityData](/vext/ref/fb/countdownentitydata)                                                 |
-| [CoverConstantData](/vext/ref/fb/coverconstantdata)                                               | [CoverEntityData](/vext/ref/fb/coverentitydata)                                                         |
-| [CoverPrepareFireEntityData](/vext/ref/fb/coverpreparefireentitydata)                             | [CoverWaypointData](/vext/ref/fb/coverwaypointdata)                                                     |
-| [CreateDestructionVolumeParams](/vext/ref/fb/createdestructionvolumeparams)                       | [CreateRawFileParams](/vext/ref/fb/createrawfileparams)                                                 |
-| [CriteriaData](/vext/ref/fb/criteriadata)                                                         | [CriteriaGateList](/vext/ref/fb/criteriagatelist)                                                       |
-| [CriteriaStarCategoryData](/vext/ref/fb/criteriastarcategorydata)                                 | [CriteriaStarData](/vext/ref/fb/criteriastardata)                                                       |
-| [Crossfader2NodeData](/vext/ref/fb/crossfader2nodedata)                                           | [CrossfaderNodeData](/vext/ref/fb/crossfadernodedata)                                                   |
-| [CTFScoringHandlerData](/vext/ref/fb/ctfscoringhandlerdata)                                       | [Curve2D](/vext/ref/fb/curve2d)                                                                         |
-| [CustomizationTable](/vext/ref/fb/customizationtable)                                             | [CustomizationUnlockParts](/vext/ref/fb/customizationunlockparts)                                       |
-| [CustomizeBaseEntityData](/vext/ref/fb/customizebaseentitydata)                                   | [CustomizeCharacterData](/vext/ref/fb/customizecharacterdata)                                           |
-| [CustomizeCharacterEntityData](/vext/ref/fb/customizecharacterentitydata)                         | [CustomizedMaterialData](/vext/ref/fb/customizedmaterialdata)                                           |
-| [CustomizeSoldierData](/vext/ref/fb/customizesoldierdata)                                         | [CustomizeSoldierEntityData](/vext/ref/fb/customizesoldierentitydata)                                   |
-| [CustomSequenceTrackData](/vext/ref/fb/customsequencetrackdata)                                   | [CustomSequenceTrackEventMapping](/vext/ref/fb/customsequencetrackeventmapping)                         |
-| [CustomSequenceTrackLinkMapping](/vext/ref/fb/customsequencetracklinkmapping)                     | [CustomSequenceTrackPropertyMapping](/vext/ref/fb/customsequencetrackpropertymapping)                   |
-| [CustomSplineData](/vext/ref/fb/customsplinedata)                                                 | [DacNodeData](/vext/ref/fb/dacnodedata)                                                                 |
-| [DamageAreaTriggerEntityData](/vext/ref/fb/damageareatriggerentitydata)                           | [DamageEffectComponentData](/vext/ref/fb/damageeffectcomponentdata)                                     |
-| [DamageScoringHandlerData](/vext/ref/fb/damagescoringhandlerdata)                                 | [DamageToVehicleEvent](/vext/ref/fb/damagetovehicleevent)                                               |
-| [DataBusData](/vext/ref/fb/databusdata)                                                           | [DataContainerAsset](/vext/ref/fb/datacontainerasset)                                                   |
-| [DataGetNode](/vext/ref/fb/datagetnode)                                                           | [DataIncrementNode](/vext/ref/fb/dataincrementnode)                                                     |
-| [DataSetNode](/vext/ref/fb/datasetnode)                                                           | [DataStepNode](/vext/ref/fb/datastepnode)                                                               |
-| [DataToggleNode](/vext/ref/fb/datatogglenode)                                                     | [DeathAreaTriggerEntityData](/vext/ref/fb/deathareatriggerentitydata)                                   |
-| [DeathEvent](/vext/ref/fb/deathevent)                                                             | [DebrisClusterData](/vext/ref/fb/debrisclusterdata)                                                     |
-| [DebrisSystemAsset](/vext/ref/fb/debrissystemasset)                                               | [DebrisSystemSettings](/vext/ref/fb/debrissystemsettings)                                               |
-| [DebugComponentData](/vext/ref/fb/debugcomponentdata)                                             | [DebugConstantData](/vext/ref/fb/debugconstantdata)                                                     |
-| [DebugEventInput](/vext/ref/fb/debugeventinput)                                                   | [DebugMenuItemEntityData](/vext/ref/fb/debugmenuitementitydata)                                         |
-| [DebugMenuSubMenuEntityData](/vext/ref/fb/debugmenusubmenuentitydata)                             | [DebugRenderSettings](/vext/ref/fb/debugrendersettings)                                                 |
-| [DebugSurveyEvent](/vext/ref/fb/debugsurveyevent)                                                 | [DebugTestEntityData](/vext/ref/fb/debugtestentitydata)                                                 |
-| [DebugTextEntityData](/vext/ref/fb/debugtextentitydata)                                           | [DebugValueInput](/vext/ref/fb/debugvalueinput)                                                         |
-| [DecalEntityData](/vext/ref/fb/decalentitydata)                                                   | [DecalSettings](/vext/ref/fb/decalsettings)                                                             |
-| [DecalTemplateData](/vext/ref/fb/decaltemplatedata)                                               | [DecalVolumeEntityData](/vext/ref/fb/decalvolumeentitydata)                                             |
-| [DecisionConstantData](/vext/ref/fb/decisionconstantdata)                                         | [DefibrillatorWeaponData](/vext/ref/fb/defibrillatorweapondata)                                         |
-| [DelayEntityData](/vext/ref/fb/delayentitydata)                                                   | [DelayNodeData](/vext/ref/fb/delaynodedata)                                                             |
-| [DelayTriggerEntityData](/vext/ref/fb/delaytriggerentitydata)                                     | [DeltaGroup](/vext/ref/fb/deltagroup)                                                                   |
-| [DeltaNodeData](/vext/ref/fb/deltanodedata)                                                       | [DemoSettings](/vext/ref/fb/demosettings)                                                               |
-| [DeMuxNodeData](/vext/ref/fb/demuxnodedata)                                                       | [DeMuxOutput](/vext/ref/fb/demuxoutput)                                                                 |
-| [DestroyAllInSquadScoringHandlerData](/vext/ref/fb/destroyallinsquadscoringhandlerdata)           | [DestroyLevelCommandEntityData](/vext/ref/fb/destroylevelcommandentitydata)                             |
-| [DestructionCommandEntityData](/vext/ref/fb/destructioncommandentitydata)                         | [DestructionControllerComponentData](/vext/ref/fb/destructioncontrollercomponentdata)                   |
-| [DestructionDepthRasterData](/vext/ref/fb/destructiondepthrasterdata)                             | [DestructionDepthTreeAsset](/vext/ref/fb/destructiondepthtreeasset)                                     |
-| [DestructionEdgeModelComponentData](/vext/ref/fb/destructionedgemodelcomponentdata)               | [DestructionMaskVolumeEntityData](/vext/ref/fb/destructionmaskvolumeentitydata)                         |
-| [DestructionPartComponentData](/vext/ref/fb/destructionpartcomponentdata)                         | [DestructionVolumeAsset](/vext/ref/fb/destructionvolumeasset)                                           |
-| [DestructionVolumeComponentData](/vext/ref/fb/destructionvolumecomponentdata)                     | [DestructionVolumeData](/vext/ref/fb/destructionvolumedata)                                             |
-| [DetonatedWeaponData](/vext/ref/fb/detonatedweapondata)                                           | [DialogNode](/vext/ref/fb/dialognode)                                                                   |
-| [DialogSamplerNodeData](/vext/ref/fb/dialogsamplernodedata)                                       | [DifficultyData](/vext/ref/fb/difficultydata)                                                           |
-| [DifficultyDatas](/vext/ref/fb/difficultydatas)                                                   | [DifficultyIndexEntityData](/vext/ref/fb/difficultyindexentitydata)                                     |
-| [DirectOutputNodeData](/vext/ref/fb/directoutputnodedata)                                         | [DirtySockPresenceBackendData](/vext/ref/fb/dirtysockpresencebackenddata)                               |
-| [DiscComponentData](/vext/ref/fb/disccomponentdata)                                               | [DistortionClipNodeData](/vext/ref/fb/distortionclipnodedata)                                           |
-| [DivisibleLoopPlayerNodeData](/vext/ref/fb/divisibleloopplayernodedata)                           | [DofComponentData](/vext/ref/fb/dofcomponentdata)                                                       |
-| [DogTagData](/vext/ref/fb/dogtagdata)                                                             | [DogTagsAsset](/vext/ref/fb/dogtagsasset)                                                               |
-| [DriverComponentData](/vext/ref/fb/drivercomponentdata)                                           | [DriverSettings](/vext/ref/fb/driversettings)                                                           |
-| [DriverStaticObjectComponentData](/vext/ref/fb/driverstaticobjectcomponentdata)                   | [DropWeaponComponentData](/vext/ref/fb/dropweaponcomponentdata)                                         |
-| [DuplicateSpawnScopeStrategyData](/vext/ref/fb/duplicatespawnscopestrategydata)                   | [DxDisplaySettings](/vext/ref/fb/dxdisplaysettings)                                                     |
-| [DynamicAOComponentData](/vext/ref/fb/dynamicaocomponentdata)                                     | [DynamicAvoidanceEntityData](/vext/ref/fb/dynamicavoidanceentitydata)                                   |
-| [DynamicDataContainer](/vext/ref/fb/dynamicdatacontainer)                                         | [DynamicEnlightenEntityData](/vext/ref/fb/dynamicenlightenentitydata)                                   |
-| [DynamicEnvmapComponentData](/vext/ref/fb/dynamicenvmapcomponentdata)                             | [DynamicGamePhysicsEntityData](/vext/ref/fb/dynamicgamephysicsentitydata)                               |
-| [DynamicModelEntityData](/vext/ref/fb/dynamicmodelentitydata)                                     | [DynamicWeaponPickupEntityData](/vext/ref/fb/dynamicweaponpickupentitydata)                             |
-| [EdgeModelComponentData](/vext/ref/fb/edgemodelcomponentdata)                                     | [EdgeModelLightMapData](/vext/ref/fb/edgemodellightmapdata)                                             |
-| [EditableAction](/vext/ref/fb/editableaction)                                                     | [EffectAsset](/vext/ref/fb/effectasset)                                                                 |
-| [EffectBlueprint](/vext/ref/fb/effectblueprint)                                                   | [EffectComponentData](/vext/ref/fb/effectcomponentdata)                                                 |
-| [EffectEntityData](/vext/ref/fb/effectentitydata)                                                 | [EffectManagerSettings](/vext/ref/fb/effectmanagersettings)                                             |
-| [EffectReferenceObjectData](/vext/ref/fb/effectreferenceobjectdata)                               | [EmitterAsset](/vext/ref/fb/emitterasset)                                                               |
-| [EmitterComponentData](/vext/ref/fb/emittercomponentdata)                                         | [EmitterData](/vext/ref/fb/emitterdata)                                                                 |
-| [EmitterDocument](/vext/ref/fb/emitterdocument)                                                   | [EmitterEntityData](/vext/ref/fb/emitterentitydata)                                                     |
-| [EmitterExclusionVolumeData](/vext/ref/fb/emitterexclusionvolumedata)                             | [EmitterSystemAsset](/vext/ref/fb/emittersystemasset)                                                   |
-| [EmitterSystemSettings](/vext/ref/fb/emittersystemsettings)                                       | [EmitterTemplateData](/vext/ref/fb/emittertemplatedata)                                                 |
-| [EngineComponentData](/vext/ref/fb/enginecomponentdata)                                           | [EngineConfigData](/vext/ref/fb/engineconfigdata)                                                       |
-| [EnlightenBuildRadiosityParams](/vext/ref/fb/enlightenbuildradiosityparams)                       | [EnlightenBuildRadiositySceneDesc](/vext/ref/fb/enlightenbuildradiosityscenedesc)                       |
-| [EnlightenComponentData](/vext/ref/fb/enlightencomponentdata)                                     | [EnlightenDataAsset](/vext/ref/fb/enlightendataasset)                                                   |
-| [EnlightenDatabaseAsset](/vext/ref/fb/enlightendatabaseasset)                                     | [EnlightenDataCreatorParams](/vext/ref/fb/enlightendatacreatorparams)                                   |
-| [EnlightenEntityData](/vext/ref/fb/enlightenentitydata)                                           | [EnlightenPipelineParams](/vext/ref/fb/enlightenpipelineparams)                                         |
-| [EnlightenPipelineTerrain](/vext/ref/fb/enlightenpipelineterrain)                                 | [EnlightenRuntimeConfig](/vext/ref/fb/enlightenruntimeconfig)                                           |
-| [EnlightenRuntimeSettings](/vext/ref/fb/enlightenruntimesettings)                                 | [EnlightenShaderDatabaseAsset](/vext/ref/fb/enlightenshaderdatabaseasset)                               |
-| [EnlightenState](/vext/ref/fb/enlightenstate)                                                     | [EnterVehicleSurveyEvent](/vext/ref/fb/entervehiclesurveyevent)                                         |
-| [EntitlementQuery](/vext/ref/fb/entitlementquery)                                                 | [EntityBusData](/vext/ref/fb/entitybusdata)                                                             |
-| [EntityData](/vext/ref/fb/entitydata)                                                             | [EntityInteractionComponentData](/vext/ref/fb/entityinteractioncomponentdata)                           |
-| [EntityRecordingData](/vext/ref/fb/entityrecordingdata)                                           | [EntitySettings](/vext/ref/fb/entitysettings)                                                           |
-| [EntityTransformData](/vext/ref/fb/entitytransformdata)                                           | [EntityVoiceOverInfo](/vext/ref/fb/entityvoiceoverinfo)                                                 |
-| [EntryComponentData](/vext/ref/fb/entrycomponentdata)                                             | [EntryComponentSoundData](/vext/ref/fb/entrycomponentsounddata)                                         |
-| [EntryInputActionMapData](/vext/ref/fb/entryinputactionmapdata)                                   | [EntryInputActionMappingData](/vext/ref/fb/entryinputactionmappingdata)                                 |
-| [EntryInputActionMapsData](/vext/ref/fb/entryinputactionmapsdata)                                 | [EnvmapEntityData](/vext/ref/fb/envmapentitydata)                                                       |
-| [EqualizerSettings](/vext/ref/fb/equalizersettings)                                               | [EulerTransformEntityData](/vext/ref/fb/eulertransformentitydata)                                       |
-| [EulerTransformSplitterEntityData](/vext/ref/fb/eulertransformsplitterentitydata)                 | [EvaluatorData](/vext/ref/fb/evaluatordata)                                                             |
-| [EventAndGateEntityData](/vext/ref/fb/eventandgateentitydata)                                     | [EventCompareGateEntityData](/vext/ref/fb/eventcomparegateentitydata)                                   |
-| [EventDebugNodeData](/vext/ref/fb/eventdebugnodedata)                                             | [EventGateEntityData](/vext/ref/fb/eventgateentitydata)                                                 |
-| [EventGateNodeData](/vext/ref/fb/eventgatenodedata)                                               | [EventIfSwitchEntityData](/vext/ref/fb/eventifswitchentitydata)                                         |
-| [EventMemoryEntityData](/vext/ref/fb/eventmemoryentitydata)                                       | [EventQueueEntityData](/vext/ref/fb/eventqueueentitydata)                                               |
-| [EventSplitterEntityData](/vext/ref/fb/eventsplitterentitydata)                                   | [EventSwitchEntityData](/vext/ref/fb/eventswitchentitydata)                                             |
-| [EventSwitcherEntry](/vext/ref/fb/eventswitcherentry)                                             | [EventSwitcherNodeData](/vext/ref/fb/eventswitchernodedata)                                             |
-| [EventSyncEntityData](/vext/ref/fb/eventsyncentitydata)                                           | [ExampleVehicleBlueprintBundleMetadata](/vext/ref/fb/examplevehicleblueprintbundlemetadata)             |
-| [ExpanderNodeData](/vext/ref/fb/expandernodedata)                                                 | [ExplosionEntityData](/vext/ref/fb/explosionentitydata)                                                 |
-| [ExplosionPackEntityData](/vext/ref/fb/explosionpackentitydata)                                   | [ExtendedConstraintsData](/vext/ref/fb/extendedconstraintsdata)                                         |
-| [FaceAnimationWaveMappings](/vext/ref/fb/faceanimationwavemappings)                               | [FaceposerComponentData](/vext/ref/fb/faceposercomponentdata)                                           |
-| [FadeEntityData](/vext/ref/fb/fadeentitydata)                                                     | [FakeHingeData](/vext/ref/fb/fakehingedata)                                                             |
-| [FakePhysicsData](/vext/ref/fb/fakephysicsdata)                                                   | [FakeSpringData](/vext/ref/fb/fakespringdata)                                                           |
-| [FallingStateData](/vext/ref/fb/fallingstatedata)                                                 | [FenceModelEntityData](/vext/ref/fb/fencemodelentitydata)                                               |
-| [FilmGrainComponentData](/vext/ref/fb/filmgraincomponentdata)                                     | [FiringFunctionData](/vext/ref/fb/firingfunctiondata)                                                   |
-| [FirstPersonCameraData](/vext/ref/fb/firstpersoncameradata)                                       | [FlagComponentData](/vext/ref/fb/flagcomponentdata)                                                     |
-| [FlagCounterEntityData](/vext/ref/fb/flagcounterentitydata)                                       | [FlapComponentData](/vext/ref/fb/flapcomponentdata)                                                     |
-| [FlareEntityData](/vext/ref/fb/flareentitydata)                                                   | [FlashlightWeaponData](/vext/ref/fb/flashlightweapondata)                                               |
-| [FlatOutputNodeData](/vext/ref/fb/flatoutputnodedata)                                             | [FloatEntityData](/vext/ref/fb/floatentitydata)                                                         |
-| [FloatHubEntityData](/vext/ref/fb/floathubentitydata)                                             | [FloatPhysicsData](/vext/ref/fb/floatphysicsdata)                                                       |
-| [FloatPropertyTrackData](/vext/ref/fb/floatpropertytrackdata)                                     | [FloatRecordingData](/vext/ref/fb/floatrecordingdata)                                                   |
-| [FloatUnlockValuePair](/vext/ref/fb/floatunlockvaluepair)                                         | [FogComponentData](/vext/ref/fb/fogcomponentdata)                                                       |
-| [FogEffectState](/vext/ref/fb/fogeffectstate)                                                     | [FollowAISoldierOrderEntityData](/vext/ref/fb/followaisoldierorderentitydata)                           |
-| [FollowClosestHumanOrderEntityData](/vext/ref/fb/followclosesthumanorderentitydata)               | [FollowConstantData](/vext/ref/fb/followconstantdata)                                                   |
-| [FollowEnvelopeNodeData](/vext/ref/fb/followenvelopenodedata)                                     | [FollowPlayerOrderEntityData](/vext/ref/fb/followplayerorderentitydata)                                 |
-| [FollowWaypointsEntityData](/vext/ref/fb/followwaypointsentitydata)                               | [FormationData](/vext/ref/fb/formationdata)                                                             |
-| [FormationHolder](/vext/ref/fb/formationholder)                                                   | [FPSCameraData](/vext/ref/fb/fpscameradata)                                                             |
-| [FramerateHistogramPerformanceEvent](/vext/ref/fb/frameratehistogramperformanceevent)             | [FrequencyShiftSsbNodeData](/vext/ref/fb/frequencyshiftssbnodedata)                                     |
-| [FriendlyFireEntityData](/vext/ref/fb/friendlyfireentitydata)                                     | [FriendZoneDebugRenderEntityData](/vext/ref/fb/friendzonedebugrenderentitydata)                         |
-| [FriendZoneEntityData](/vext/ref/fb/friendzoneentitydata)                                         | [FrontEndComponentData](/vext/ref/fb/frontendcomponentdata)                                             |
-| [GainFaderNodeData](/vext/ref/fb/gainfadernodedata)                                               | [GainNodeData](/vext/ref/fb/gainnodedata)                                                               |
-| [GameAIDifficultyData](/vext/ref/fb/gameaidifficultydata)                                         | [GameAIEntryData](/vext/ref/fb/gameaientrydata)                                                         |
-| [GameAISystem](/vext/ref/fb/gameaisystem)                                                         | [GameAIWeaponData](/vext/ref/fb/gameaiweapondata)                                                       |
-| [GameAnimationConfig](/vext/ref/fb/gameanimationconfig)                                           | [GameAnimationSettings](/vext/ref/fb/gameanimationsettings)                                             |
-| [GameBehaviourTemplateData](/vext/ref/fb/gamebehaviourtemplatedata)                               | [GameDataContainer](/vext/ref/fb/gamedatacontainer)                                                     |
-| [GameDataContainerAsset](/vext/ref/fb/gamedatacontainerasset)                                     | [GameEntityData](/vext/ref/fb/gameentitydata)                                                           |
-| [GameInteractionEntityData](/vext/ref/fb/gameinteractionentitydata)                               | [GameModeConfiguration](/vext/ref/fb/gamemodeconfiguration)                                             |
-| [GameModeSettings](/vext/ref/fb/gamemodesettings)                                                 | [GameObjectData](/vext/ref/fb/gameobjectdata)                                                           |
-| [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata)                                       | [GameRenderSettings](/vext/ref/fb/gamerendersettings)                                                   |
-| [GameSensingTemplateData](/vext/ref/fb/gamesensingtemplatedata)                                   | [GameSettings](/vext/ref/fb/gamesettings)                                                               |
-| [GameSoundEntityData](/vext/ref/fb/gamesoundentitydata)                                           | [GameSplineData](/vext/ref/fb/gamesplinedata)                                                           |
-| [GameSplineEntityData](/vext/ref/fb/gamesplineentitydata)                                         | [GameTimeSettings](/vext/ref/fb/gametimesettings)                                                       |
-| [GameTipAsset](/vext/ref/fb/gametipasset)                                                         | [GearBagSpec](/vext/ref/fb/gearbagspec)                                                                 |
-| [GearboxConfigData](/vext/ref/fb/gearboxconfigdata)                                               | [GeographicalData](/vext/ref/fb/geographicaldata)                                                       |
-| [GeographicalLevelDescriptionComponent](/vext/ref/fb/geographicalleveldescriptioncomponent)       | [GeometryTriggerEntityData](/vext/ref/fb/geometrytriggerentitydata)                                     |
-| [GlobalNode](/vext/ref/fb/globalnode)                                                             | [GlobalPostProcessSettings](/vext/ref/fb/globalpostprocesssettings)                                     |
-| [GravityData](/vext/ref/fb/gravitydata)                                                           | [GrenadeEntityData](/vext/ref/fb/grenadeentitydata)                                                     |
-| [GroundHeightEntityData](/vext/ref/fb/groundheightentitydata)                                     | [GroupHavokAsset](/vext/ref/fb/grouphavokasset)                                                         |
-| [GunMasterKillCounterEntityData](/vext/ref/fb/gunmasterkillcounterentitydata)                     | [GunnerSpottingTrackerData](/vext/ref/fb/gunnerspottingtrackerdata)                                     |
-| [GunSwayData](/vext/ref/fb/gunswaydata)                                                           | [GunSwayModifierData](/vext/ref/fb/gunswaymodifierdata)                                                 |
-| [HavokAsset](/vext/ref/fb/havokasset)                                                             | [HdrSetting](/vext/ref/fb/hdrsetting)                                                                   |
-| [HealthComponentData](/vext/ref/fb/healthcomponentdata)                                           | [HealthStateData](/vext/ref/fb/healthstatedata)                                                         |
-| [HeightfieldRasterData](/vext/ref/fb/heightfieldrasterdata)                                       | [HeightfieldTreeAsset](/vext/ref/fb/heightfieldtreeasset)                                               |
-| [HighPassButterworthNodeData](/vext/ref/fb/highpassbutterworthnodedata)                           | [HighPassFir64NodeData](/vext/ref/fb/highpassfir64nodedata)                                             |
-| [HighPassIir2NodeData](/vext/ref/fb/highpassiir2nodedata)                                         | [HighShelfIir2NodeData](/vext/ref/fb/highshelfiir2nodedata)                                             |
-| [HitReactionComponentData](/vext/ref/fb/hitreactioncomponentdata)                                 | [HoldGroundOrderEntityData](/vext/ref/fb/holdgroundorderentitydata)                                     |
-| [HovercraftFloatPhysicsData](/vext/ref/fb/hovercraftfloatphysicsdata)                             | [HudCameraShakeData](/vext/ref/fb/hudcamerashakedata)                                                   |
-| [HudCapturePointTrackerData](/vext/ref/fb/hudcapturepointtrackerdata)                             | [HudConfigAsset](/vext/ref/fb/hudconfigasset)                                                           |
-| [HudEntityData](/vext/ref/fb/hudentitydata)                                                       | [HudProgressbarData](/vext/ref/fb/hudprogressbardata)                                                   |
-| [HudTrackerData](/vext/ref/fb/hudtrackerdata)                                                     | [HudVehicleTrackerData](/vext/ref/fb/hudvehicletrackerdata)                                             |
-| [HullFloatPhysicsData](/vext/ref/fb/hullfloatphysicsdata)                                         | [HumanPlayerEntityData](/vext/ref/fb/humanplayerentitydata)                                             |
-| [IKComponentData](/vext/ref/fb/ikcomponentdata)                                                   | [ImpulseResponseAsset](/vext/ref/fb/impulseresponseasset)                                               |
-| [InAirStateData](/vext/ref/fb/inairstatedata)                                                     | [InputActionData](/vext/ref/fb/inputactiondata)                                                         |
-| [InputActionMapData](/vext/ref/fb/inputactionmapdata)                                             | [InputActionMappingData](/vext/ref/fb/inputactionmappingdata)                                           |
-| [InputActionMappingsData](/vext/ref/fb/inputactionmappingsdata)                                   | [InputActionsData](/vext/ref/fb/inputactionsdata)                                                       |
-| [InputConfigurationAsset](/vext/ref/fb/inputconfigurationasset)                                   | [InputCurveData](/vext/ref/fb/inputcurvedata)                                                           |
-| [InputModifierEntityData](/vext/ref/fb/inputmodifierentitydata)                                   | [InputRecorderData](/vext/ref/fb/inputrecorderdata)                                                     |
-| [InputRestrictionEntityData](/vext/ref/fb/inputrestrictionentitydata)                             | [InspectEntityData](/vext/ref/fb/inspectentitydata)                                                     |
-| [InstanceInputNode](/vext/ref/fb/instanceinputnode)                                               | [InstanceNode](/vext/ref/fb/instancenode)                                                               |
-| [InstanceOutputNode](/vext/ref/fb/instanceoutputnode)                                             | [IntegratorOrDifferentiatorEntityData](/vext/ref/fb/integratorordifferentiatorentitydata)               |
-| [IntEntityData](/vext/ref/fb/intentitydata)                                                       | [InteractableStaticModelEntityData](/vext/ref/fb/interactablestaticmodelentitydata)                     |
-| [InteractionEntityData](/vext/ref/fb/interactionentitydata)                                       | [InterfaceDescriptorData](/vext/ref/fb/interfacedescriptordata)                                         |
-| [InterludeOrderEntityData](/vext/ref/fb/interludeorderentitydata)                                 | [IntHubEntityData](/vext/ref/fb/inthubentitydata)                                                       |
-| [IntPropertyTrackData](/vext/ref/fb/intpropertytrackdata)                                         | [IntRecordingData](/vext/ref/fb/intrecordingdata)                                                       |
-| [IntUnlockValuePair](/vext/ref/fb/intunlockvaluepair)                                             | [IrReverbControllerNodeData](/vext/ref/fb/irreverbcontrollernodedata)                                   |
-| [IrReverbEntityData](/vext/ref/fb/irreverbentitydata)                                             | [IrReverbNodeData](/vext/ref/fb/irreverbnodedata)                                                       |
-| [JammingComponentData](/vext/ref/fb/jammingcomponentdata)                                         | [JetEngineConfigData](/vext/ref/fb/jetengineconfigdata)                                                 |
-| [JoypadNodeData](/vext/ref/fb/joypadnodedata)                                                     | [JumpNode](/vext/ref/fb/jumpnode)                                                                       |
-| [JumpStateData](/vext/ref/fb/jumpstatedata)                                                       | [KeyboardInputActionData](/vext/ref/fb/keyboardinputactiondata)                                         |
-| [KillAllEntityData](/vext/ref/fb/killallentitydata)                                               | [KillCounterEntityData](/vext/ref/fb/killcounterentitydata)                                             |
-| [KillEvent](/vext/ref/fb/killevent)                                                               | [KillFromVehicleScoringHandlerData](/vext/ref/fb/killfromvehiclescoringhandlerdata)                     |
-| [KitPickupEntityData](/vext/ref/fb/kitpickupentitydata)                                           | [KitState](/vext/ref/fb/kitstate)                                                                       |
-| [KitStateEvent](/vext/ref/fb/kitstateevent)                                                       | [KyotoPlayerAliveFilterEntityData](/vext/ref/fb/kyotoplayeralivefilterentitydata)                       |
-| [LadderComponentData](/vext/ref/fb/laddercomponentdata)                                           | [LadderEntityData](/vext/ref/fb/ladderentitydata)                                                       |
-| [LakeData](/vext/ref/fb/lakedata)                                                                 | [LandingFlapData](/vext/ref/fb/landingflapdata)                                                         |
-| [LandingGearLogicData](/vext/ref/fb/landinggearlogicdata)                                         | [LanPresenceBackendData](/vext/ref/fb/lanpresencebackenddata)                                           |
-| [LanServerBackendData](/vext/ref/fb/lanserverbackenddata)                                         | [LaserDesignatorData](/vext/ref/fb/laserdesignatordata)                                                 |
-| [LaserPainterData](/vext/ref/fb/laserpainterdata)                                                 | [LensFlareComponentData](/vext/ref/fb/lensflarecomponentdata)                                           |
-| [LensFlareEntityData](/vext/ref/fb/lensflareentitydata)                                           | [LensScopeComponentData](/vext/ref/fb/lensscopecomponentdata)                                           |
-| [LevelAudioObstructionAsset](/vext/ref/fb/levelaudioobstructionasset)                             | [LevelControlEntityData](/vext/ref/fb/levelcontrolentitydata)                                           |
-| [LevelData](/vext/ref/fb/leveldata)                                                               | [LevelDescriptionAsset](/vext/ref/fb/leveldescriptionasset)                                             |
-| [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent)                               | [LevelReportingAsset](/vext/ref/fb/levelreportingasset)                                                 |
-| [LevelSaveData](/vext/ref/fb/levelsavedata)                                                       | [LfoNodeData](/vext/ref/fb/lfonodedata)                                                                 |
-| [LicenseConfiguration](/vext/ref/fb/licenseconfiguration)                                         | [LifeCounterEntityData](/vext/ref/fb/lifecounterentitydata)                                             |
-| [LightComponentData](/vext/ref/fb/lightcomponentdata)                                             | [LightProbeVolumeData](/vext/ref/fb/lightprobevolumedata)                                               |
-| [LimiterNodeData](/vext/ref/fb/limiternodedata)                                                   | [LinearMovingBodyData](/vext/ref/fb/linearmovingbodydata)                                               |
-| [LinearTransformNodeData](/vext/ref/fb/lineartransformnodedata)                                   | [LinearTransformRecordingData](/vext/ref/fb/lineartransformrecordingdata)                               |
-| [LocalForceData](/vext/ref/fb/localforcedata)                                                     | [LocalizationAsset](/vext/ref/fb/localizationasset)                                                     |
-| [LocalLightEntityData](/vext/ref/fb/locallightentitydata)                                         | [LocalServerBackendData](/vext/ref/fb/localserverbackenddata)                                           |
-| [LocatorComponentData](/vext/ref/fb/locatorcomponentdata)                                         | [LocatorEntityData](/vext/ref/fb/locatorentitydata)                                                     |
-| [LockingControllerData](/vext/ref/fb/lockingcontrollerdata)                                       | [LockingScoringHandlerData](/vext/ref/fb/lockingscoringhandlerdata)                                     |
-| [LockingWeaponData](/vext/ref/fb/lockingweapondata)                                               | [LoggingEntityData](/vext/ref/fb/loggingentitydata)                                                     |
-| [LogicalExpressionEntry](/vext/ref/fb/logicalexpressionentry)                                     | [LogicalExpressionNodeData](/vext/ref/fb/logicalexpressionnodedata)                                     |
-| [LogicPrefabBlueprint](/vext/ref/fb/logicprefabblueprint)                                         | [LogicReferenceObjectData](/vext/ref/fb/logicreferenceobjectdata)                                       |
-| [LogicVisualEnvironmentEntityData](/vext/ref/fb/logicvisualenvironmententitydata)                 | [LookAtCameraEntityData](/vext/ref/fb/lookatcameraentitydata)                                           |
-| [LookAtEntityData](/vext/ref/fb/lookatentitydata)                                                 | [LookAtTriggerEntityData](/vext/ref/fb/lookattriggerentitydata)                                         |
-| [LoosePartPhysicsData](/vext/ref/fb/loosepartphysicsdata)                                         | [LowPassButterworthNodeData](/vext/ref/fb/lowpassbutterworthnodedata)                                   |
-| [LowPassFir64NodeData](/vext/ref/fb/lowpassfir64nodedata)                                         | [LowPassIir2NodeData](/vext/ref/fb/lowpassiir2nodedata)                                                 |
-| [LowShelfIir2NodeData](/vext/ref/fb/lowshelfiir2nodedata)                                         | [ManualDataAsset](/vext/ref/fb/manualdataasset)                                                         |
-| [MapMarkerEntityData](/vext/ref/fb/mapmarkerentitydata)                                           | [MaskVolumeEntityData](/vext/ref/fb/maskvolumeentitydata)                                               |
-| [MasterSkeletonAsset](/vext/ref/fb/masterskeletonasset)                                           | [MasterUnitNodeData](/vext/ref/fb/masterunitnodedata)                                                   |
-| [MasterUnitSettings](/vext/ref/fb/masterunitsettings)                                             | [MatchmakingModifier](/vext/ref/fb/matchmakingmodifier)                                                 |
-| [MatchmakingPlayerCapacityModifier](/vext/ref/fb/matchmakingplayercapacitymodifier)               | [MatchmakingSession](/vext/ref/fb/matchmakingsession)                                                   |
-| [MaterialContainerAsset](/vext/ref/fb/materialcontainerasset)                                     | [MaterialContainerPair](/vext/ref/fb/materialcontainerpair)                                             |
-| [MaterialGridData](/vext/ref/fb/materialgriddata)                                                 | [MaterialPropertyEffectData](/vext/ref/fb/materialpropertyeffectdata)                                   |
-| [MaterialPropertyHealthData](/vext/ref/fb/materialpropertyhealthdata)                             | [MaterialPropertyImpulseData](/vext/ref/fb/materialpropertyimpulsedata)                                 |
-| [MaterialPropertyPhysicsData](/vext/ref/fb/materialpropertyphysicsdata)                           | [MaterialPropertySoundData](/vext/ref/fb/materialpropertysounddata)                                     |
-| [MaterialPropertyTerrainData](/vext/ref/fb/materialpropertyterraindata)                           | [MaterialRelationDamageData](/vext/ref/fb/materialrelationdamagedata)                                   |
-| [MaterialRelationDecalData](/vext/ref/fb/materialrelationdecaldata)                               | [MaterialRelationEffectData](/vext/ref/fb/materialrelationeffectdata)                                   |
-| [MaterialRelationPenetrationData](/vext/ref/fb/materialrelationpenetrationdata)                   | [MaterialRelationPropertyData](/vext/ref/fb/materialrelationpropertydata)                               |
-| [MaterialRelationSoundData](/vext/ref/fb/materialrelationsounddata)                               | [MaterialRelationTerrainDestructionData](/vext/ref/fb/materialrelationterraindestructiondata)           |
-| [MaterialRelationVehicleData](/vext/ref/fb/materialrelationvehicledata)                           | [MaterialSoldierSoundSettings](/vext/ref/fb/materialsoldiersoundsettings)                               |
-| [MathOpEntityData](/vext/ref/fb/mathopentitydata)                                                 | [MatrixPannerNodeData](/vext/ref/fb/matrixpannernodedata)                                               |
-| [MaxInstancesScopeStrategyData](/vext/ref/fb/maxinstancesscopestrategydata)                       | [MedicBagEntityData](/vext/ref/fb/medicbagentitydata)                                                   |
-| [MedicBagHealingSphereEntityData](/vext/ref/fb/medicbaghealingsphereentitydata)                   | [MedicBagHealingSphereWeaponData](/vext/ref/fb/medicbaghealingsphereweapondata)                         |
-| [MedicBagWeaponData](/vext/ref/fb/medicbagweapondata)                                             | [MedkitWeaponData](/vext/ref/fb/medkitweapondata)                                                       |
-| [MeleeEntityCommonData](/vext/ref/fb/meleeentitycommondata)                                       | [MeleeEntityData](/vext/ref/fb/meleeentitydata)                                                         |
-| [MeleeTriggerEntityData](/vext/ref/fb/meleetriggerentitydata)                                     | [MeleeWeaponData](/vext/ref/fb/meleeweapondata)                                                         |
-| [MemoryLevelDescriptionComponent](/vext/ref/fb/memoryleveldescriptioncomponent)                   | [MenuConfigAsset](/vext/ref/fb/menuconfigasset)                                                         |
-| [MenuIdAsset](/vext/ref/fb/menuidasset)                                                           | [MeshAsset](/vext/ref/fb/meshasset)                                                                     |
-| [MeshComponentData](/vext/ref/fb/meshcomponentdata)                                               | [MeshLodGroup](/vext/ref/fb/meshlodgroup)                                                               |
-| [MeshMaterial](/vext/ref/fb/meshmaterial)                                                         | [MeshMaterialVariation](/vext/ref/fb/meshmaterialvariation)                                             |
-| [MeshMergingSettings](/vext/ref/fb/meshmergingsettings)                                           | [MeshProjectileEntityData](/vext/ref/fb/meshprojectileentitydata)                                       |
-| [MeshProxyEntityData](/vext/ref/fb/meshproxyentitydata)                                           | [MeshSettings](/vext/ref/fb/meshsettings)                                                               |
-| [MeshStreamingSettings](/vext/ref/fb/meshstreamingsettings)                                       | [MeshVariationDatabase](/vext/ref/fb/meshvariationdatabase)                                             |
-| [MeshVariationDatabaseEntry](/vext/ref/fb/meshvariationdatabaseentry)                             | [MessageEntityData](/vext/ref/fb/messageentitydata)                                                     |
-| [MetricAggregate](/vext/ref/fb/metricaggregate)                                                   | [MetricEvent](/vext/ref/fb/metricevent)                                                                 |
-| [MetricReport](/vext/ref/fb/metricreport)                                                         | [MetricState](/vext/ref/fb/metricstate)                                                                 |
-| [Minimap2DEntityData](/vext/ref/fb/minimap2dentitydata)                                           | [MinMaxNodeData](/vext/ref/fb/minmaxnodedata)                                                           |
-| [MinMaxValueSelectorEntry](/vext/ref/fb/minmaxvalueselectorentry)                                 | [MinMaxValueSelectorNodeData](/vext/ref/fb/minmaxvalueselectornodedata)                                 |
-| [MissileEntityData](/vext/ref/fb/missileentitydata)                                               | [MissionObjectiveHudData](/vext/ref/fb/missionobjectivehuddata)                                         |
-| [MixerAsset](/vext/ref/fb/mixerasset)                                                             | [MixerEntityData](/vext/ref/fb/mixerentitydata)                                                         |
-| [MixerEntry](/vext/ref/fb/mixerentry)                                                             | [MixerGraphData](/vext/ref/fb/mixergraphdata)                                                           |
-| [MixerInputEntry](/vext/ref/fb/mixerinputentry)                                                   | [MixerInputNodeData](/vext/ref/fb/mixerinputnodedata)                                                   |
-| [MixerNodeData](/vext/ref/fb/mixernodedata)                                                       | [MixerOutputEntry](/vext/ref/fb/mixeroutputentry)                                                       |
-| [MixerOutputNodeData](/vext/ref/fb/mixeroutputnodedata)                                           | [MixerPreset](/vext/ref/fb/mixerpreset)                                                                 |
-| [MixerReceiveEntry](/vext/ref/fb/mixerreceiveentry)                                               | [MixerReceiveNodeData](/vext/ref/fb/mixerreceivenodedata)                                               |
-| [MixerSendEntry](/vext/ref/fb/mixersendentry)                                                     | [MixerSendNodeData](/vext/ref/fb/mixersendnodedata)                                                     |
-| [MixerSetPropertyEntry](/vext/ref/fb/mixersetpropertyentry)                                       | [MixerSetPropertyNodeData](/vext/ref/fb/mixersetpropertynodedata)                                       |
-| [MixerSimplePresetNodeData](/vext/ref/fb/mixersimplepresetnodedata)                               | [MixerSystemAsset](/vext/ref/fb/mixersystemasset)                                                       |
-| [MixerValueNodeData](/vext/ref/fb/mixervaluenodedata)                                             | [MixGroup](/vext/ref/fb/mixgroup)                                                                       |
-| [MobileSpawnComponentData](/vext/ref/fb/mobilespawncomponentdata)                                 | [MobilityData](/vext/ref/fb/mobilitydata)                                                               |
-| [ModelAnimationEntityData](/vext/ref/fb/modelanimationentitydata)                                 | [MortarStrikeWeaponData](/vext/ref/fb/mortarstrikeweapondata)                                           |
-| [MotionBlurComponentData](/vext/ref/fb/motionblurcomponentdata)                                   | [MotionControllerInputActionData](/vext/ref/fb/motioncontrollerinputactiondata)                         |
-| [MotionDampingData](/vext/ref/fb/motiondampingdata)                                               | [MotorbikeData](/vext/ref/fb/motorbikedata)                                                             |
-| [MouseInputActionData](/vext/ref/fb/mouseinputactiondata)                                         | [MovementActionData](/vext/ref/fb/movementactiondata)                                                   |
-| [MovementActionGroupData](/vext/ref/fb/movementactiongroupdata)                                   | [MovementActionRandomizerData](/vext/ref/fb/movementactionrandomizerdata)                               |
-| [MovementActionRoot](/vext/ref/fb/movementactionroot)                                             | [MovementComponentData](/vext/ref/fb/movementcomponentdata)                                             |
-| [MovementConstantData](/vext/ref/fb/movementconstantdata)                                         | [MovieComponentData](/vext/ref/fb/moviecomponentdata)                                                   |
-| [MovieEntityData](/vext/ref/fb/movieentitydata)                                                   | [MovieTextureAsset](/vext/ref/fb/movietextureasset)                                                     |
-| [MovieTextureSettings](/vext/ref/fb/movietexturesettings)                                         | [MovingBodyData](/vext/ref/fb/movingbodydata)                                                           |
-| [MultiCrossfaderGroup](/vext/ref/fb/multicrossfadergroup)                                         | [MultiCrossfaderNodeData](/vext/ref/fb/multicrossfadernodedata)                                         |
-| [MultipleActorScenarioEntityData](/vext/ref/fb/multipleactorscenarioentitydata)                   | [MultipleTargetPainterWeaponData](/vext/ref/fb/multipletargetpainterweapondata)                         |
-| [MultipleTriggerEntityData](/vext/ref/fb/multipletriggerentitydata)                               | [NetworkableLoosePartPhysicsData](/vext/ref/fb/networkableloosepartphysicsdata)                         |
-| [NetworkPerformanceEvent](/vext/ref/fb/networkperformanceevent)                                   | [NetworkSettings](/vext/ref/fb/networksettings)                                                         |
-| [NFSUIListDataBinding](/vext/ref/fb/nfsuilistdatabinding)                                         | [NoiseTextureAsset](/vext/ref/fb/noisetextureasset)                                                     |
-| [NotEntityData](/vext/ref/fb/notentitydata)                                                       | [NumberGeneratorNodeData](/vext/ref/fb/numbergeneratornodedata)                                         |
-| [OBBData](/vext/ref/fb/obbdata)                                                                   | [ObjectBlueprint](/vext/ref/fb/objectblueprint)                                                         |
-| [ObjectEnterAreaTriggerEntityData](/vext/ref/fb/objectenterareatriggerentitydata)                 | [ObjectiveEntityData](/vext/ref/fb/objectiveentitydata)                                                 |
-| [ObjectVariation](/vext/ref/fb/objectvariation)                                                   | [ObjectVariationSwitchEntityData](/vext/ref/fb/objectvariationswitchentitydata)                         |
-| [OccluderMeshEntityData](/vext/ref/fb/occludermeshentitydata)                                     | [OccluderVolumeEntityData](/vext/ref/fb/occludervolumeentitydata)                                       |
-| [OcclusionSettings](/vext/ref/fb/occlusionsettings)                                               | [OneOptionAxisEditableAction](/vext/ref/fb/oneoptionaxiseditableaction)                                 |
-| [OneOptionButtonEditableAction](/vext/ref/fb/oneoptionbuttoneditableaction)                       | [OnGroundStateData](/vext/ref/fb/ongroundstatedata)                                                     |
-| [OnlineConfiguration](/vext/ref/fb/onlineconfiguration)                                           | [OnlineProviderAsset](/vext/ref/fb/onlineproviderasset)                                                 |
-| [OnlineServicesAsset](/vext/ref/fb/onlineservicesasset)                                           | [OnlineSettings](/vext/ref/fb/onlinesettings)                                                           |
-| [OperandLogicNode](/vext/ref/fb/operandlogicnode)                                                 | [Or4EntityData](/vext/ref/fb/or4entitydata)                                                             |
-| [OrderBonusScoringHandlerData](/vext/ref/fb/orderbonusscoringhandlerdata)                         | [OrderEntityData](/vext/ref/fb/orderentitydata)                                                         |
-| [OrderReadiness](/vext/ref/fb/orderreadiness)                                                     | [OrderSettings](/vext/ref/fb/ordersettings)                                                             |
-| [OrEntityData](/vext/ref/fb/orentitydata)                                                         | [OrientationNodeData](/vext/ref/fb/orientationnodedata)                                                 |
-| [OutdoorLightComponentData](/vext/ref/fb/outdoorlightcomponentdata)                               | [OutdoorLightEffectState](/vext/ref/fb/outdoorlighteffectstate)                                         |
-| [OutputNodeData](/vext/ref/fb/outputnodedata)                                                     | [PackagingCellData](/vext/ref/fb/packagingcelldata)                                                     |
-| [PackagingRule](/vext/ref/fb/packagingrule)                                                       | [PadInputActionData](/vext/ref/fb/padinputactiondata)                                                   |
-| [PadRumbleNodeData](/vext/ref/fb/padrumblenodedata)                                               | [ParachuteStateData](/vext/ref/fb/parachutestatedata)                                                   |
-| [ParameterFilterLinearNodeData](/vext/ref/fb/parameterfilterlinearnodedata)                       | [ParameterFilterLpNodeData](/vext/ref/fb/parameterfilterlpnodedata)                                     |
-| [PartComponentData](/vext/ref/fb/partcomponentdata)                                               | [PartLinkData](/vext/ref/fb/partlinkdata)                                                               |
-| [PathfindingBuildOrderData](/vext/ref/fb/pathfindingbuildorderdata)                               | [PathfindingBuildSettingsAsset](/vext/ref/fb/pathfindingbuildsettingsasset)                             |
-| [PathfindingDebugSettings](/vext/ref/fb/pathfindingdebugsettings)                                 | [PathfindingExclusionVolumeData](/vext/ref/fb/pathfindingexclusionvolumedata)                           |
-| [PathfindingObjectCategoryAsset](/vext/ref/fb/pathfindingobjectcategoryasset)                     | [PathfindingSandboxAsset](/vext/ref/fb/pathfindingsandboxasset)                                         |
-| [PathfindingSystemEntityData](/vext/ref/fb/pathfindingsystementitydata)                           | [PathfindingTypeAsset](/vext/ref/fb/pathfindingtypeasset)                                               |
-| [PathFollowingComponentData](/vext/ref/fb/pathfollowingcomponentdata)                             | [PatrolOrderEntityData](/vext/ref/fb/patrolorderentitydata)                                             |
-| [PeakingIir2NodeData](/vext/ref/fb/peakingiir2nodedata)                                           | [PeerServerBackendData](/vext/ref/fb/peerserverbackenddata)                                             |
-| [PerformanceEvent](/vext/ref/fb/performanceevent)                                                 | [PerformanceProfileState](/vext/ref/fb/performanceprofilestate)                                         |
-| [PerformanceTrackerSettings](/vext/ref/fb/performancetrackersettings)                             | [PersistenceConfiguration](/vext/ref/fb/persistenceconfiguration)                                       |
-| [PersistenceData](/vext/ref/fb/persistencedata)                                                   | [PersistenceGameData](/vext/ref/fb/persistencegamedata)                                                 |
-| [PersistenceRetentionPolicy](/vext/ref/fb/persistenceretentionpolicy)                             | [PersistenceSettings](/vext/ref/fb/persistencesettings)                                                 |
-| [PersistenceStatGroup](/vext/ref/fb/persistencestatgroup)                                         | [PersistenceStatTable](/vext/ref/fb/persistencestattable)                                               |
-| [PersistentAwardDataStatRef](/vext/ref/fb/persistentawarddatastatref)                             | [PersistentCriteriaStatRef](/vext/ref/fb/persistentcriteriastatref)                                     |
-| [PersistentValueTemplate](/vext/ref/fb/persistentvaluetemplate)                                   | [PersistentValueTemplateStatRef](/vext/ref/fb/persistentvaluetemplatestatref)                           |
-| [PhantomComponentData](/vext/ref/fb/phantomcomponentdata)                                         | [PhysicsConeConstraintData](/vext/ref/fb/physicsconeconstraintdata)                                     |
-| [PhysicsConstraintData](/vext/ref/fb/physicsconstraintdata)                                       | [PhysicsDebugSettings](/vext/ref/fb/physicsdebugsettings)                                               |
-| [PhysicsDrivenAnimationEntityData](/vext/ref/fb/physicsdrivenanimationentitydata)                 | [PhysicsEntityData](/vext/ref/fb/physicsentitydata)                                                     |
-| [PhysicsEntry](/vext/ref/fb/physicsentry)                                                         | [PhysicsHingeConstraintData](/vext/ref/fb/physicshingeconstraintdata)                                   |
-| [PhysicsMaterialRelationPropertyData](/vext/ref/fb/physicsmaterialrelationpropertydata)           | [PhysicsMaterialsRasterData](/vext/ref/fb/physicsmaterialsrasterdata)                                   |
-| [PhysicsNodeData](/vext/ref/fb/physicsnodedata)                                                   | [PhysicsPropertyRelationPropertyData](/vext/ref/fb/physicspropertyrelationpropertydata)                 |
-| [PhysicsRenderSettings](/vext/ref/fb/physicsrendersettings)                                       | [PhysicsSettings](/vext/ref/fb/physicssettings)                                                         |
-| [PickupEntityAsset](/vext/ref/fb/pickupentityasset)                                               | [PickupEntityData](/vext/ref/fb/pickupentitydata)                                                       |
-| [PlanarReflectionComponentData](/vext/ref/fb/planarreflectioncomponentdata)                       | [PlatformSplitterEntityData](/vext/ref/fb/platformsplitterentitydata)                                   |
-| [PlayerCameraEntityData](/vext/ref/fb/playercameraentitydata)                                     | [PlayerData](/vext/ref/fb/playerdata)                                                                   |
-| [PlayerEntryComponentData](/vext/ref/fb/playerentrycomponentdata)                                 | [PlayerFilterEntityData](/vext/ref/fb/playerfilterentitydata)                                           |
-| [PlayerInputTriggerEntityData](/vext/ref/fb/playerinputtriggerentitydata)                         | [PlayerInteractionViewData](/vext/ref/fb/playerinteractionviewdata)                                     |
-| [PlayerLookAtEntityData](/vext/ref/fb/playerlookatentitydata)                                     | [PlayerOrderTrackerData](/vext/ref/fb/playerordertrackerdata)                                           |
-| [PlayerState](/vext/ref/fb/playerstate)                                                           | [PlayerTakeOverTriggerEntityData](/vext/ref/fb/playertakeovertriggerentitydata)                         |
-| [PlayerTypeProfile](/vext/ref/fb/playertypeprofile)                                               | [PlayerViewData](/vext/ref/fb/playerviewdata)                                                           |
-| [PlayFromHereAsset](/vext/ref/fb/playfromhereasset)                                               | [PlayVideoEntityData](/vext/ref/fb/playvideoentitydata)                                                 |
-| [PointEnvelope](/vext/ref/fb/pointenvelope)                                                       | [PointLightEntityData](/vext/ref/fb/pointlightentitydata)                                               |
-| [PointSystemParamsAsset](/vext/ref/fb/pointsystemparamsasset)                                     | [PointTargetData](/vext/ref/fb/pointtargetdata)                                                         |
-| [PolynomialColorInterpData](/vext/ref/fb/polynomialcolorinterpdata)                               | [PolynomialData](/vext/ref/fb/polynomialdata)                                                           |
-| [PolynomialOperatorData](/vext/ref/fb/polynomialoperatordata)                                     | [PositionEvaluationConstantData](/vext/ref/fb/positionevaluationconstantdata)                           |
-| [PowerToolWeaponData](/vext/ref/fb/powertoolweapondata)                                           | [PredestructionEntityData](/vext/ref/fb/predestructionentitydata)                                       |
-| [PrefabBlueprint](/vext/ref/fb/prefabblueprint)                                                   | [PreRoundEntityData](/vext/ref/fb/preroundentitydata)                                                   |
-| [PresenceAchievementServiceData](/vext/ref/fb/presenceachievementservicedata)                     | [PresenceBackendData](/vext/ref/fb/presencebackenddata)                                                 |
-| [PresenceBlobServiceData](/vext/ref/fb/presenceblobservicedata)                                   | [PresenceCalendarServiceData](/vext/ref/fb/presencecalendarservicedata)                                 |
-| [PresenceCommerceServiceData](/vext/ref/fb/presencecommerceservicedata)                           | [PresenceCommServiceData](/vext/ref/fb/presencecommservicedata)                                         |
-| [PresenceEntitlementServiceData](/vext/ref/fb/presenceentitlementservicedata)                     | [PresenceFriendsServiceData](/vext/ref/fb/presencefriendsservicedata)                                   |
-| [PresenceGameConfigurationServiceData](/vext/ref/fb/presencegameconfigurationservicedata)         | [PresenceLeaderboardServiceData](/vext/ref/fb/presenceleaderboardservicedata)                           |
-| [PresenceMatchFeedServiceData](/vext/ref/fb/presencematchfeedservicedata)                         | [PresenceNewsTickerServiceData](/vext/ref/fb/presencenewstickerservicedata)                             |
-| [PresencePlaygroupServiceData](/vext/ref/fb/presenceplaygroupservicedata)                         | [PresenceRspServiceData](/vext/ref/fb/presencerspservicedata)                                           |
-| [PresenceServerBrowserServiceData](/vext/ref/fb/presenceserverbrowserservicedata)                 | [PresenceServiceData](/vext/ref/fb/presenceservicedata)                                                 |
-| [PresenceStatisticsServiceData](/vext/ref/fb/presencestatisticsservicedata)                       | [PresenceUserIdServiceData](/vext/ref/fb/presenceuseridservicedata)                                     |
-| [PresenceWebFeedServiceData](/vext/ref/fb/presencewebfeedservicedata)                             | [PresenceXPromoServiceData](/vext/ref/fb/presencexpromoservicedata)                                     |
-| [PrintDebugTextEntityData](/vext/ref/fb/printdebugtextentitydata)                                 | [ProceduralAwarenessAntRefs](/vext/ref/fb/proceduralawarenessantrefs)                                   |
-| [ProcessorData](/vext/ref/fb/processordata)                                                       | [ProfileEntityData](/vext/ref/fb/profileentitydata)                                                     |
-| [ProfileOptionData](/vext/ref/fb/profileoptiondata)                                               | [ProfileOptionDataBinary](/vext/ref/fb/profileoptiondatabinary)                                         |
-| [ProfileOptionDataBool](/vext/ref/fb/profileoptiondatabool)                                       | [ProfileOptionDataEnum](/vext/ref/fb/profileoptiondataenum)                                             |
-| [ProfileOptionDataFloat](/vext/ref/fb/profileoptiondatafloat)                                     | [ProfileOptionDataInt](/vext/ref/fb/profileoptiondataint)                                               |
-| [ProfileOptionDataString](/vext/ref/fb/profileoptiondatastring)                                   | [ProfileOptionsAsset](/vext/ref/fb/profileoptionsasset)                                                 |
-| [ProjectileBlueprint](/vext/ref/fb/projectileblueprint)                                           | [ProjectileEntityData](/vext/ref/fb/projectileentitydata)                                               |
-| [PropellerEngineConfigData](/vext/ref/fb/propellerengineconfigdata)                               | [PropertyCastEntityData](/vext/ref/fb/propertycastentitydata)                                           |
-| [PropertyDebugEntityData](/vext/ref/fb/propertydebugentitydata)                                   | [PropertyGateEntityData](/vext/ref/fb/propertygateentitydata)                                           |
-| [PropertyRecordingData](/vext/ref/fb/propertyrecordingdata)                                       | [PropertyTrackData](/vext/ref/fb/propertytrackdata)                                                     |
-| [ProximityData](/vext/ref/fb/proximitydata)                                                       | [Ps3ParentalLockAgeSettingsOverrides](/vext/ref/fb/ps3parentallockagesettingsoverrides)                 |
-| [Ps3PresenceBackendData](/vext/ref/fb/ps3presencebackenddata)                                     | [PS3StoreImageHD1080](/vext/ref/fb/ps3storeimagehd1080)                                                 |
-| [PS3StoreImageSD](/vext/ref/fb/ps3storeimagesd)                                                   | [QueryGetNode](/vext/ref/fb/querygetnode)                                                               |
-| [RadarSweepComponentData](/vext/ref/fb/radarsweepcomponentdata)                                   | [RadioAltitudeData](/vext/ref/fb/radioaltitudedata)                                                     |
-| [RadioComponentData](/vext/ref/fb/radiocomponentdata)                                             | [RadiosityEntityData](/vext/ref/fb/radiosityentitydata)                                                 |
-| [RadiosityMaterial](/vext/ref/fb/radiositymaterial)                                               | [RagdollAsset](/vext/ref/fb/ragdollasset)                                                               |
-| [RagdollComponentData](/vext/ref/fb/ragdollcomponentdata)                                         | [RandomDelayEntityData](/vext/ref/fb/randomdelayentitydata)                                             |
-| [RandomEvaluatorData](/vext/ref/fb/randomevaluatordata)                                           | [RandomEventEntityData](/vext/ref/fb/randomevententitydata)                                             |
-| [RandomFloatEntityData](/vext/ref/fb/randomfloatentitydata)                                       | [RandomMultiEventEntityData](/vext/ref/fb/randommultievententitydata)                                   |
-| [RandomWalkOrderEntityData](/vext/ref/fb/randomwalkorderentitydata)                               | [RandomXYZEvaluatorData](/vext/ref/fb/randomxyzevaluatordata)                                           |
-| [RankLevelData](/vext/ref/fb/rankleveldata)                                                       | [RankParamsAsset](/vext/ref/fb/rankparamsasset)                                                         |
-| [RasterCoverageData](/vext/ref/fb/rastercoveragedata)                                             | [RasterQuadtreeData](/vext/ref/fb/rasterquadtreedata)                                                   |
-| [RasterQuadtreeNodeData](/vext/ref/fb/rasterquadtreenodedata)                                     | [RasterTreeAsset](/vext/ref/fb/rastertreeasset)                                                         |
-| [RawFileAsset](/vext/ref/fb/rawfileasset)                                                         | [RawFileDataAsset](/vext/ref/fb/rawfiledataasset)                                                       |
-| [RawFileImportActionParams](/vext/ref/fb/rawfileimportactionparams)                               | [RawFileResourceAsset](/vext/ref/fb/rawfileresourceasset)                                               |
-| [ReceivedAwardSurveyEvent](/vext/ref/fb/receivedawardsurveyevent)                                 | [ReceiveEntry](/vext/ref/fb/receiveentry)                                                               |
-| [ReceiveNodeData](/vext/ref/fb/receivenodedata)                                                   | [RecordedInputData](/vext/ref/fb/recordedinputdata)                                                     |
-| [ReferenceObjectData](/vext/ref/fb/referenceobjectdata)                                           | [RefreshNode](/vext/ref/fb/refreshnode)                                                                 |
-| [RegistryContainer](/vext/ref/fb/registrycontainer)                                               | [RegularSocketObjectData](/vext/ref/fb/regularsocketobjectdata)                                         |
-| [RemoteEntryComponentData](/vext/ref/fb/remoteentrycomponentdata)                                 | [RenderTextureAsset](/vext/ref/fb/rendertextureasset)                                                   |
-| [RenderVolumeEntityData](/vext/ref/fb/rendervolumeentitydata)                                     | [RepairToolWeaponData](/vext/ref/fb/repairtoolweapondata)                                               |
-| [ResourceManagerSettings](/vext/ref/fb/resourcemanagersettings)                                   | [RGBRasterData](/vext/ref/fb/rgbrasterdata)                                                             |
-| [RibbonData](/vext/ref/fb/ribbondata)                                                             | [RichPresenceContext](/vext/ref/fb/richpresencecontext)                                                 |
-| [RichPresenceContextValue](/vext/ref/fb/richpresencecontextvalue)                                 | [RichPresenceContextValueWithKey](/vext/ref/fb/richpresencecontextvaluewithkey)                         |
-| [RichPresenceData](/vext/ref/fb/richpresencedata)                                                 | [RichPresencePresenceString](/vext/ref/fb/richpresencepresencestring)                                   |
-| [RigidBodyConeConstraintData](/vext/ref/fb/rigidbodyconeconstraintdata)                           | [RigidBodyConstraintData](/vext/ref/fb/rigidbodyconstraintdata)                                         |
-| [RigidBodyData](/vext/ref/fb/rigidbodydata)                                                       | [RigidBodyHingeConstraintData](/vext/ref/fb/rigidbodyhingeconstraintdata)                               |
-| [RigidMeshAsset](/vext/ref/fb/rigidmeshasset)                                                     | [RigidMeshEntityData](/vext/ref/fb/rigidmeshentitydata)                                                 |
-| [RiverData](/vext/ref/fb/riverdata)                                                               | [RoadData](/vext/ref/fb/roaddata)                                                                       |
-| [RotateVectorData](/vext/ref/fb/rotatevectordata)                                                 | [RotationBodyData](/vext/ref/fb/rotationbodydata)                                                       |
-| [RotorComponentData](/vext/ref/fb/rotorcomponentdata)                                             | [RotorParameters](/vext/ref/fb/rotorparameters)                                                         |
-| [RoundEvent](/vext/ref/fb/roundevent)                                                             | [RoundOverEntityData](/vext/ref/fb/roundoverentitydata)                                                 |
-| [RoundOverEvent](/vext/ref/fb/roundoverevent)                                                     | [RouteEntry](/vext/ref/fb/routeentry)                                                                   |
-| [RouteNodeData](/vext/ref/fb/routenodedata)                                                       | [SamplerNodeData](/vext/ref/fb/samplernodedata)                                                         |
-| [SampleTextureData](/vext/ref/fb/sampletexturedata)                                               | [SaveEntityData](/vext/ref/fb/saveentitydata)                                                           |
-| [SaveGameLoadedEntityData](/vext/ref/fb/savegameloadedentitydata)                                 | [ScaleClampNodeData](/vext/ref/fb/scaleclampnodedata)                                                   |
-| [ScenarioWaypointData](/vext/ref/fb/scenariowaypointdata)                                         | [SceneRecordingData](/vext/ref/fb/scenerecordingdata)                                                   |
-| [ScopeFilterData](/vext/ref/fb/scopefilterdata)                                                   | [ScoreAggregate](/vext/ref/fb/scoreaggregate)                                                           |
-| [ScoringBucketData](/vext/ref/fb/scoringbucketdata)                                               | [ScoringData](/vext/ref/fb/scoringdata)                                                                 |
-| [ScoringHandlerData](/vext/ref/fb/scoringhandlerdata)                                             | [ScoringTypeData](/vext/ref/fb/scoringtypedata)                                                         |
-| [ScreenEffectComponentData](/vext/ref/fb/screeneffectcomponentdata)                               | [ScriptEntityData](/vext/ref/fb/scriptentitydata)                                                       |
-| [SearchAndDestroyConstantData](/vext/ref/fb/searchanddestroyconstantdata)                         | [SearchAndDestroyOrderEntityData](/vext/ref/fb/searchanddestroyorderentitydata)                         |
-| [SelectEventEntityData](/vext/ref/fb/selectevententitydata)                                       | [SendEntry](/vext/ref/fb/sendentry)                                                                     |
-| [SendNodeData](/vext/ref/fb/sendnodedata)                                                         | [SenseTerrainSphereData](/vext/ref/fb/senseterrainspheredata)                                           |
-| [SensingComponentData](/vext/ref/fb/sensingcomponentdata)                                         | [SensingManagerEntityData](/vext/ref/fb/sensingmanagerentitydata)                                       |
-| [SensingSettings](/vext/ref/fb/sensingsettings)                                                   | [SensingTemplateData](/vext/ref/fb/sensingtemplatedata)                                                 |
-| [SequenceData](/vext/ref/fb/sequencedata)                                                         | [SequenceEntityData](/vext/ref/fb/sequenceentitydata)                                                   |
-| [SequenceGeneratorNodeData](/vext/ref/fb/sequencegeneratornodedata)                               | [ServerBackendData](/vext/ref/fb/serverbackenddata)                                                     |
-| [ServerMetricsSettings](/vext/ref/fb/servermetricssettings)                                       | [ServerPerformanceEvent](/vext/ref/fb/serverperformanceevent)                                           |
-| [ServerSettings](/vext/ref/fb/serversettings)                                                     | [SettingEntityData](/vext/ref/fb/settingentitydata)                                                     |
-| [SettingsBundleAsset](/vext/ref/fb/settingsbundleasset)                                           | [ShaderColorUnlockPartCollection](/vext/ref/fb/shadercolorunlockpartcollection)                         |
-| [ShaderCustomizationUnlockPartCollection](/vext/ref/fb/shadercustomizationunlockpartcollection)   | [ShaderDatabaseAsset](/vext/ref/fb/shaderdatabaseasset)                                                 |
-| [ShaderGraph](/vext/ref/fb/shadergraph)                                                           | [ShaderParameterComponentData](/vext/ref/fb/shaderparametercomponentdata)                               |
-| [ShaderParamsComponentData](/vext/ref/fb/shaderparamscomponentdata)                               | [ShaderSystemSettings](/vext/ref/fb/shadersystemsettings)                                               |
-| [ShaderTextureUnlockPartCollection](/vext/ref/fb/shadertextureunlockpartcollection)               | [ShootAtFromCoverData](/vext/ref/fb/shootatfromcoverdata)                                               |
-| [ShootOrderEntityData](/vext/ref/fb/shootorderentitydata)                                         | [SimpleAnimationControlComponentData](/vext/ref/fb/simpleanimationcontrolcomponentdata)                 |
-| [SimpleMovementActionBaseData](/vext/ref/fb/simplemovementactionbasedata)                         | [SimpleMovementActionData](/vext/ref/fb/simplemovementactiondata)                                       |
-| [SimplePropertyTrackData](/vext/ref/fb/simplepropertytrackdata)                                   | [SimpleTransformNodeData](/vext/ref/fb/simpletransformnodedata)                                         |
-| [SimpleValueSelectorNodeData](/vext/ref/fb/simplevalueselectornodedata)                           | [SingleTerrainLayerData](/vext/ref/fb/singleterrainlayerdata)                                           |
-| [SkeletonAsset](/vext/ref/fb/skeletonasset)                                                       | [SkeletonCollisionData](/vext/ref/fb/skeletoncollisiondata)                                             |
-| [SkinnedMeshAsset](/vext/ref/fb/skinnedmeshasset)                                                 | [SkinnedSocketObjectData](/vext/ref/fb/skinnedsocketobjectdata)                                         |
-| [SkyComponentData](/vext/ref/fb/skycomponentdata)                                                 | [SkyEffectState](/vext/ref/fb/skyeffectstate)                                                           |
-| [SlidingStateData](/vext/ref/fb/slidingstatedata)                                                 | [SlowMotionEntityData](/vext/ref/fb/slowmotionentitydata)                                               |
-| [SniperLensScopeFilterData](/vext/ref/fb/sniperlensscopefilterdata)                               | [SocketData](/vext/ref/fb/socketdata)                                                                   |
-| [SocketObjectData](/vext/ref/fb/socketobjectdata)                                                 | [SocketObjectDataBase](/vext/ref/fb/socketobjectdatabase)                                               |
-| [SoldierAimAssistData](/vext/ref/fb/soldieraimassistdata)                                         | [SoldierAimingConstraintsData](/vext/ref/fb/soldieraimingconstraintsdata)                               |
-| [SoldierAimingSimulationData](/vext/ref/fb/soldieraimingsimulationdata)                           | [SoldierAsset](/vext/ref/fb/soldierasset)                                                               |
-| [SoldierAutoAimData](/vext/ref/fb/soldierautoaimdata)                                             | [SoldierBlueprint](/vext/ref/fb/soldierblueprint)                                                       |
-| [SoldierBodyComponentData](/vext/ref/fb/soldierbodycomponentdata)                                 | [SoldierCameraComponentData](/vext/ref/fb/soldiercameracomponentdata)                                   |
-| [SoldierCustomizationAsset](/vext/ref/fb/soldiercustomizationasset)                               | [SoldierDecalComponentData](/vext/ref/fb/soldierdecalcomponentdata)                                     |
-| [SoldierEmoteComponentData](/vext/ref/fb/soldieremotecomponentdata)                               | [SoldierEmoteNetworkedMessageMapping](/vext/ref/fb/soldieremotenetworkedmessagemapping)                 |
-| [SoldierEntityData](/vext/ref/fb/soldierentitydata)                                               | [SoldierEntityInteractionComponentData](/vext/ref/fb/soldierentityinteractioncomponentdata)             |
-| [SoldierEntryComponentData](/vext/ref/fb/soldierentrycomponentdata)                               | [SoldierFootplantEffectComponentData](/vext/ref/fb/soldierfootplanteffectcomponentdata)                 |
-| [SoldierGripComponentData](/vext/ref/fb/soldiergripcomponentdata)                                 | [SoldierHeadCollisionData](/vext/ref/fb/soldierheadcollisiondata)                                       |
-| [SoldierHealthModuleData](/vext/ref/fb/soldierhealthmoduledata)                                   | [SoldierMovementSequenceData](/vext/ref/fb/soldiermovementsequencedata)                                 |
-| [SoldierParachuteComponentData](/vext/ref/fb/soldierparachutecomponentdata)                       | [SoldierSoundComponentData](/vext/ref/fb/soldiersoundcomponentdata)                                     |
-| [SoldierSoundData](/vext/ref/fb/soldiersounddata)                                                 | [SoldierSpawnAppearanceTemplateData](/vext/ref/fb/soldierspawnappearancetemplatedata)                   |
-| [SoldierSpawnKitTemplateData](/vext/ref/fb/soldierspawnkittemplatedata)                           | [SoldierSpawnTemplateData](/vext/ref/fb/soldierspawntemplatedata)                                       |
-| [SoldierSprintSettingsData](/vext/ref/fb/soldiersprintsettingsdata)                               | [SoldierSuppressionComponentData](/vext/ref/fb/soldiersuppressioncomponentdata)                         |
-| [SoldierTestEntityData](/vext/ref/fb/soldiertestentitydata)                                       | [SoldierWeaponAsset](/vext/ref/fb/soldierweaponasset)                                                   |
-| [SoldierWeaponBlueprint](/vext/ref/fb/soldierweaponblueprint)                                     | [SoldierWeaponCustomizationAsset](/vext/ref/fb/soldierweaponcustomizationasset)                         |
-| [SoldierWeaponData](/vext/ref/fb/soldierweapondata)                                               | [SoldierWeaponMultiUnlock](/vext/ref/fb/soldierweaponmultiunlock)                                       |
-| [SoldierWeaponOverrideData](/vext/ref/fb/soldierweaponoverridedata)                               | [SoldierWeaponsComponentData](/vext/ref/fb/soldierweaponscomponentdata)                                 |
-| [SoldierWeaponSwitchingData](/vext/ref/fb/soldierweaponswitchingdata)                             | [SoldierWeaponUnlockAsset](/vext/ref/fb/soldierweaponunlockasset)                                       |
-| [SoundAreaEntityData](/vext/ref/fb/soundareaentitydata)                                           | [SoundAsset](/vext/ref/fb/soundasset)                                                                   |
-| [SoundBusData](/vext/ref/fb/soundbusdata)                                                         | [SoundDataAsset](/vext/ref/fb/sounddataasset)                                                           |
-| [SoundEffectEntityData](/vext/ref/fb/soundeffectentitydata)                                       | [SoundEntityData](/vext/ref/fb/soundentitydata)                                                         |
-| [SoundEnvironmentConstantData](/vext/ref/fb/soundenvironmentconstantdata)                         | [SoundGraphAsset](/vext/ref/fb/soundgraphasset)                                                         |
-| [SoundGraphData](/vext/ref/fb/soundgraphdata)                                                     | [SoundMasterPatchAsset](/vext/ref/fb/soundmasterpatchasset)                                             |
-| [SoundPatchAsset](/vext/ref/fb/soundpatchasset)                                                   | [SoundPatchConfigurationAsset](/vext/ref/fb/soundpatchconfigurationasset)                               |
-| [SoundPatchConfigurationAssetEntry](/vext/ref/fb/soundpatchconfigurationassetentry)               | [SoundPatchConfigurationEntry](/vext/ref/fb/soundpatchconfigurationentry)                               |
-| [SoundPatchConfigurationParameterEntry](/vext/ref/fb/soundpatchconfigurationparameterentry)       | [SoundPrimeEntityData](/vext/ref/fb/soundprimeentitydata)                                               |
-| [SoundScopeData](/vext/ref/fb/soundscopedata)                                                     | [SoundScopeSetupData](/vext/ref/fb/soundscopesetupdata)                                                 |
-| [SoundScopeSetupEntityData](/vext/ref/fb/soundscopesetupentitydata)                               | [SoundScopeStrategyData](/vext/ref/fb/soundscopestrategydata)                                           |
-| [SoundSettings](/vext/ref/fb/soundsettings)                                                       | [SoundState](/vext/ref/fb/soundstate)                                                                   |
-| [SoundStateEntityData](/vext/ref/fb/soundstateentitydata)                                         | [SoundStateSettingsAsset](/vext/ref/fb/soundstatesettingsasset)                                         |
-| [SoundTestAsset](/vext/ref/fb/soundtestasset)                                                     | [SoundTestEventTask](/vext/ref/fb/soundtesteventtask)                                                   |
-| [SoundTestParamTask](/vext/ref/fb/soundtestparamtask)                                             | [SoundTestSpec](/vext/ref/fb/soundtestspec)                                                             |
-| [SoundTestSuite](/vext/ref/fb/soundtestsuite)                                                     | [SoundTestTask](/vext/ref/fb/soundtesttask)                                                             |
-| [SoundTestTaskParam](/vext/ref/fb/soundtesttaskparam)                                             | [SoundTestTaskSpec](/vext/ref/fb/soundtesttaskspec)                                                     |
-| [SoundTestTransformTask](/vext/ref/fb/soundtesttransformtask)                                     | [SoundWaveAsset](/vext/ref/fb/soundwaveasset)                                                           |
-| [SoundWaveVariation](/vext/ref/fb/soundwavevariation)                                             | [SpatialEntityData](/vext/ref/fb/spatialentitydata)                                                     |
-| [SpatialPrefabBlueprint](/vext/ref/fb/spatialprefabblueprint)                                     | [SpatialReferenceObjectData](/vext/ref/fb/spatialreferenceobjectdata)                                   |
-| [SpawnAnimationData](/vext/ref/fb/spawnanimationdata)                                             | [SpawnAnimationFrameData](/vext/ref/fb/spawnanimationframedata)                                         |
-| [SpawnDirectionData](/vext/ref/fb/spawndirectiondata)                                             | [SpawnEntitySelector](/vext/ref/fb/spawnentityselector)                                                 |
-| [SpawnEvent](/vext/ref/fb/spawnevent)                                                             | [SpawnOrientationData](/vext/ref/fb/spawnorientationdata)                                               |
-| [SpawnPointManagerData](/vext/ref/fb/spawnpointmanagerdata)                                       | [SpawnPositionData](/vext/ref/fb/spawnpositiondata)                                                     |
-| [SpawnRateData](/vext/ref/fb/spawnratedata)                                                       | [SpawnReferenceObjectData](/vext/ref/fb/spawnreferenceobjectdata)                                       |
-| [SpawnRotationData](/vext/ref/fb/spawnrotationdata)                                               | [SpawnRotationSpeedData](/vext/ref/fb/spawnrotationspeeddata)                                           |
-| [SpawnSizeData](/vext/ref/fb/spawnsizedata)                                                       | [SpawnSpeedData](/vext/ref/fb/spawnspeeddata)                                                           |
-| [SpawnState](/vext/ref/fb/spawnstate)                                                             | [SpawnSubViewData](/vext/ref/fb/spawnsubviewdata)                                                       |
-| [SpawnSurveyEvent](/vext/ref/fb/spawnsurveyevent)                                                 | [SpecialMovesComponentData](/vext/ref/fb/specialmovescomponentdata)                                     |
-| [SpectatorReplayEntityData](/vext/ref/fb/spectatorreplayentitydata)                               | [SpectatorSubViewData](/vext/ref/fb/spectatorsubviewdata)                                               |
-| [SpeedEventGateEntityData](/vext/ref/fb/speedeventgateentitydata)                                 | [SphereData](/vext/ref/fb/spheredata)                                                                   |
-| [SphereEvaluatorData](/vext/ref/fb/sphereevaluatordata)                                           | [SplitterNode](/vext/ref/fb/splitternode)                                                               |
-| [SpotLightEntityData](/vext/ref/fb/spotlightentitydata)                                           | [SpottingComponentData](/vext/ref/fb/spottingcomponentdata)                                             |
-| [SpottingEntityData](/vext/ref/fb/spottingentitydata)                                             | [SpottingScoringHandlerData](/vext/ref/fb/spottingscoringhandlerdata)                                   |
-| [SpottingTargetComponentData](/vext/ref/fb/spottingtargetcomponentdata)                           | [StabilizerData](/vext/ref/fb/stabilizerdata)                                                           |
-| [StanceFilterComponentData](/vext/ref/fb/stancefiltercomponentdata)                               | [StandardMoveWaypointData](/vext/ref/fb/standardmovewaypointdata)                                       |
-| [StartEntityData](/vext/ref/fb/startentitydata)                                                   | [StatCategoriesAwardTree](/vext/ref/fb/statcategoriesawardtree)                                         |
-| [StatCategoriesBaseTree](/vext/ref/fb/statcategoriesbasetree)                                     | [StatCategoriesDifficultyTree](/vext/ref/fb/statcategoriesdifficultytree)                               |
-| [StatCategoriesGuidTree](/vext/ref/fb/statcategoriesguidtree)                                     | [StatCategoriesKitTree](/vext/ref/fb/statcategorieskittree)                                             |
-| [StatCategoriesLevelTree](/vext/ref/fb/statcategoriesleveltree)                                   | [StatCategoriesPlayerRoleTree](/vext/ref/fb/statcategoriesplayerroletree)                               |
-| [StatCategoriesScoreboardPositionTree](/vext/ref/fb/statcategoriesscoreboardpositiontree)         | [StatCategoriesScoringBucketTree](/vext/ref/fb/statcategoriesscoringbuckettree)                         |
-| [StatCategoriesTree](/vext/ref/fb/statcategoriestree)                                             | [StatCategoriesVehicleStateTypeTree](/vext/ref/fb/statcategoriesvehiclestatetypetree)                   |
-| [StatCategoriesVehicleTree](/vext/ref/fb/statcategoriesvehicletree)                               | [StatCategoriesVehicleWeaponTree](/vext/ref/fb/statcategoriesvehicleweapontree)                         |
-| [StatCategoriesWeaponAccessoryTree](/vext/ref/fb/statcategoriesweaponaccessorytree)               | [StatCategoriesWeaponTree](/vext/ref/fb/statcategoriesweapontree)                                       |
-| [StatCategoryTreeCollection](/vext/ref/fb/statcategorytreecollection)                             | [StateEventGateEntityData](/vext/ref/fb/stateeventgateentitydata)                                       |
-| [StateNode](/vext/ref/fb/statenode)                                                               | [StateRenderSettings](/vext/ref/fb/staterendersettings)                                                 |
-| [StatEventTriggerEntityData](/vext/ref/fb/stateventtriggerentitydata)                             | [StaticCameraData](/vext/ref/fb/staticcameradata)                                                       |
-| [StaticConfigAsset](/vext/ref/fb/staticconfigasset)                                               | [StaticEnlightenData](/vext/ref/fb/staticenlightendata)                                                 |
-| [StaticEnlightenEntityData](/vext/ref/fb/staticenlightenentitydata)                               | [StaticModelEntityData](/vext/ref/fb/staticmodelentitydata)                                             |
-| [StaticModelGroupEntityData](/vext/ref/fb/staticmodelgroupentitydata)                             | [StaticUnlockList](/vext/ref/fb/staticunlocklist)                                                       |
-| [StatsCategoryAwardData](/vext/ref/fb/statscategoryawarddata)                                     | [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata)                                             |
-| [StatsCategoryData](/vext/ref/fb/statscategorydata)                                               | [StatsCategoryDifficultyData](/vext/ref/fb/statscategorydifficultydata)                                 |
-| [StatsCategoryGuidData](/vext/ref/fb/statscategoryguiddata)                                       | [StatsCategoryKitData](/vext/ref/fb/statscategorykitdata)                                               |
-| [StatsCategoryLevelData](/vext/ref/fb/statscategoryleveldata)                                     | [StatsCategoryPlayerRoleData](/vext/ref/fb/statscategoryplayerroledata)                                 |
-| [StatsCategoryScoreboardPositionData](/vext/ref/fb/statscategoryscoreboardpositiondata)           | [StatsCategoryScoringBucketData](/vext/ref/fb/statscategoryscoringbucketdata)                           |
-| [StatsCategoryVehicleData](/vext/ref/fb/statscategoryvehicledata)                                 | [StatsCategoryVehicleStateTypeData](/vext/ref/fb/statscategoryvehiclestatetypedata)                     |
-| [StatsCategoryVehicleWeaponData](/vext/ref/fb/statscategoryvehicleweapondata)                     | [StatsCategoryWeaponAccessoryData](/vext/ref/fb/statscategoryweaponaccessorydata)                       |
-| [StatsCategoryWeaponData](/vext/ref/fb/statscategoryweapondata)                                   | [StatSpamSettings](/vext/ref/fb/statspamsettings)                                                       |
-| [StatSurveyEvent](/vext/ref/fb/statsurveyevent)                                                   | [StopWatchEntityData](/vext/ref/fb/stopwatchentitydata)                                                 |
-| [StreamGridEntityData](/vext/ref/fb/streamgridentitydata)                                         | [StreamGroupData](/vext/ref/fb/streamgroupdata)                                                         |
-| [StreamingGateEntityData](/vext/ref/fb/streaminggateentitydata)                                   | [StreamPoolAsset](/vext/ref/fb/streampoolasset)                                                         |
-| [SubtitleDataNode](/vext/ref/fb/subtitledatanode)                                                 | [SubtitleDataTree](/vext/ref/fb/subtitledatatree)                                                       |
-| [SubtitleMainDataNode](/vext/ref/fb/subtitlemaindatanode)                                         | [SubViewData](/vext/ref/fb/subviewdata)                                                                 |
-| [SubWorldData](/vext/ref/fb/subworlddata)                                                         | [SubWorldInclusion](/vext/ref/fb/subworldinclusion)                                                     |
-| [SubWorldInclusionCriterion](/vext/ref/fb/subworldinclusioncriterion)                             | [SubWorldInclusionSetting](/vext/ref/fb/subworldinclusionsetting)                                       |
-| [SubWorldInclusionSettings](/vext/ref/fb/subworldinclusionsettings)                               | [SubWorldReferenceObjectData](/vext/ref/fb/subworldreferenceobjectdata)                                 |
-| [SunFlareComponentData](/vext/ref/fb/sunflarecomponentdata)                                       | [SunFlareEffectState](/vext/ref/fb/sunflareeffectstate)                                                 |
-| [SupplySphereComponentData](/vext/ref/fb/supplyspherecomponentdata)                               | [SupplySphereEntityData](/vext/ref/fb/supplysphereentitydata)                                           |
-| [SupplySphereWeaponData](/vext/ref/fb/supplysphereweapondata)                                     | [SupportedShootingCommonData](/vext/ref/fb/supportedshootingcommondata)                                 |
-| [SupportedShootingComponentData](/vext/ref/fb/supportedshootingcomponentdata)                     | [SuppressionScoringHandlerData](/vext/ref/fb/suppressionscoringhandlerdata)                             |
-| [SuppressionSettings](/vext/ref/fb/suppressionsettings)                                           | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset)                                           |
-| [SurfaceShaderInstanceData](/vext/ref/fb/surfaceshaderinstancedata)                               | [SurroundingGeometryEntityData](/vext/ref/fb/surroundinggeometryentitydata)                             |
-| [SurveyEvent](/vext/ref/fb/surveyevent)                                                           | [SurveySuppressedEvent](/vext/ref/fb/surveysuppressedevent)                                             |
-| [SwimmingStateData](/vext/ref/fb/swimmingstatedata)                                               | [SwitcherEntry](/vext/ref/fb/switcherentry)                                                             |
-| [SwitcherNodeData](/vext/ref/fb/switchernodedata)                                                 | [SwitchPropertyStringEntityData](/vext/ref/fb/switchpropertystringentitydata)                           |
-| [SyncAnimationsEntityData](/vext/ref/fb/syncanimationsentitydata)                                 | [SyncedBFSettings](/vext/ref/fb/syncedbfsettings)                                                       |
-| [SyncedBoolEntityData](/vext/ref/fb/syncedboolentitydata)                                         | [SyncedFloatEntityData](/vext/ref/fb/syncedfloatentitydata)                                             |
-| [SyncedGameSettings](/vext/ref/fb/syncedgamesettings)                                             | [SyncedIntEntityData](/vext/ref/fb/syncedintentitydata)                                                 |
-| [SyncedSequenceEntityData](/vext/ref/fb/syncedsequenceentitydata)                                 | [SyncedTransformEntityData](/vext/ref/fb/syncedtransformentitydata)                                     |
-| [SystemSettings](/vext/ref/fb/systemsettings)                                                     | [TacticalObjectiveEntityData](/vext/ref/fb/tacticalobjectiveentitydata)                                 |
-| [TargetCameraData](/vext/ref/fb/targetcameradata)                                                 | [TargetCameraEntityData](/vext/ref/fb/targetcameraentitydata)                                           |
-| [TargetEntityData](/vext/ref/fb/targetentitydata)                                                 | [TargetEvaluationConstantData](/vext/ref/fb/targetevaluationconstantdata)                               |
-| [TargetEvaluatorComponentData](/vext/ref/fb/targetevaluatorcomponentdata)                         | [TeamAsset](/vext/ref/fb/teamasset)                                                                     |
-| [TeamData](/vext/ref/fb/teamdata)                                                                 | [TeamEntityData](/vext/ref/fb/teamentitydata)                                                           |
-| [TeamFilterEntityData](/vext/ref/fb/teamfilterentitydata)                                         | [TelemetryTriggerEntityData](/vext/ref/fb/telemetrytriggerentitydata)                                   |
-| [TerrainColorTreeAsset](/vext/ref/fb/terraincolortreeasset)                                       | [TerrainData](/vext/ref/fb/terraindata)                                                                 |
-| [TerrainDecalsData](/vext/ref/fb/terraindecalsdata)                                               | [TerrainEntityData](/vext/ref/fb/terrainentitydata)                                                     |
-| [TerrainFillDecalData](/vext/ref/fb/terrainfilldecaldata)                                         | [TerrainHeightfieldData](/vext/ref/fb/terrainheightfielddata)                                           |
-| [TerrainLayerData](/vext/ref/fb/terrainlayerdata)                                                 | [TerrainMaskTreeAsset](/vext/ref/fb/terrainmasktreeasset)                                               |
-| [TerrainMaterialMapAsset](/vext/ref/fb/terrainmaterialmapasset)                                   | [TerrainMaterialTreeAsset](/vext/ref/fb/terrainmaterialtreeasset)                                       |
-| [TerrainMeshScatteringType](/vext/ref/fb/terrainmeshscatteringtype)                               | [TerrainQuadDecalAtlasTileTemplateData](/vext/ref/fb/terrainquaddecalatlastiletemplatedata)             |
-| [TerrainQuadDecalData](/vext/ref/fb/terrainquaddecaldata)                                         | [TerrainSettings](/vext/ref/fb/terrainsettings)                                                         |
-| [TerrainStreamingSettings](/vext/ref/fb/terrainstreamingsettings)                                 | [TerrainStreamingTreeAsset](/vext/ref/fb/terrainstreamingtreeasset)                                     |
-| [TerrainSubLayerData](/vext/ref/fb/terrainsublayerdata)                                           | [TerrainUndergrowthType](/vext/ref/fb/terrainundergrowthtype)                                           |
-| [TestCaseEntityData](/vext/ref/fb/testcaseentitydata)                                             | [TestPointEntityData](/vext/ref/fb/testpointentitydata)                                                 |
-| [TextUnlockPartData](/vext/ref/fb/textunlockpartdata)                                             | [TextureArrayAsset](/vext/ref/fb/texturearrayasset)                                                     |
-| [TextureAsset](/vext/ref/fb/textureasset)                                                         | [TextureAssetUnlockPartData](/vext/ref/fb/textureassetunlockpartdata)                                   |
-| [TextureAtlasAsset](/vext/ref/fb/textureatlasasset)                                               | [TextureBaseAsset](/vext/ref/fb/texturebaseasset)                                                       |
-| [TextureCompressSettings](/vext/ref/fb/texturecompresssettings)                                   | [TextureGroup](/vext/ref/fb/texturegroup)                                                               |
-| [TextureReference](/vext/ref/fb/texturereference)                                                 | [TextureSettings](/vext/ref/fb/texturesettings)                                                         |
-| [TextureSliceUnlockPartData](/vext/ref/fb/texturesliceunlockpartdata)                             | [TextureStreamingSettings](/vext/ref/fb/texturestreamingsettings)                                       |
-| [TextureUnlockPartData](/vext/ref/fb/textureunlockpartdata)                                       | [TicketCounterEntityData](/vext/ref/fb/ticketcounterentitydata)                                         |
-| [TickEvent](/vext/ref/fb/tickevent)                                                               | [TimerNodeData](/vext/ref/fb/timernodedata)                                                             |
-| [TimingConstantData](/vext/ref/fb/timingconstantdata)                                             | [TimingViewCategories](/vext/ref/fb/timingviewcategories)                                               |
-| [TimingViewCategory](/vext/ref/fb/timingviewcategory)                                             | [TimingViewSettings](/vext/ref/fb/timingviewsettings)                                                   |
-| [TonemapComponentData](/vext/ref/fb/tonemapcomponentdata)                                         | [ToolData](/vext/ref/fb/tooldata)                                                                       |
-| [TopPlayersEntityData](/vext/ref/fb/topplayersentitydata)                                         | [ToWorldSpaceTransformEntityData](/vext/ref/fb/toworldspacetransformentitydata)                         |
-| [TrackComponentData](/vext/ref/fb/trackcomponentdata)                                             | [TrackPlayerEntityData](/vext/ref/fb/trackplayerentitydata)                                             |
-| [TrackWheelComponentData](/vext/ref/fb/trackwheelcomponentdata)                                   | [TrajectoryEntityData](/vext/ref/fb/trajectoryentitydata)                                               |
-| [TransformBlendEntityData](/vext/ref/fb/transformblendentitydata)                                 | [TransformEntityData](/vext/ref/fb/transformentitydata)                                                 |
-| [TransformHubEntityData](/vext/ref/fb/transformhubentitydata)                                     | [TransformModifierEntityData](/vext/ref/fb/transformmodifierentitydata)                                 |
-| [TransformMultiplierEntityData](/vext/ref/fb/transformmultiplierentitydata)                       | [TransformPartPropertyTrackData](/vext/ref/fb/transformpartpropertytrackdata)                           |
-| [TransformPropertyTrackData](/vext/ref/fb/transformpropertytrackdata)                             | [TransformSelectorEntityData](/vext/ref/fb/transformselectorentitydata)                                 |
-| [TransformSnapToGroundEntityData](/vext/ref/fb/transformsnaptogroundentitydata)                   | [TransformSplitterEntityData](/vext/ref/fb/transformsplitterentitydata)                                 |
-| [TreeBase](/vext/ref/fb/treebase)                                                                 | [TreeNodeBase](/vext/ref/fb/treenodebase)                                                               |
-| [TriggerEntityData](/vext/ref/fb/triggerentitydata)                                               | [TriggerEventEntityData](/vext/ref/fb/triggerevententitydata)                                           |
-| [TurbulanceData](/vext/ref/fb/turbulancedata)                                                     | [TurretControlConstantData](/vext/ref/fb/turretcontrolconstantdata)                                     |
-| [TurretData](/vext/ref/fb/turretdata)                                                             | [UavCameraData](/vext/ref/fb/uavcameradata)                                                             |
-| [UI3dIconCompData](/vext/ref/fb/ui3diconcompdata)                                                 | [UI3dLaserTagCompData](/vext/ref/fb/ui3dlasertagcompdata)                                               |
-| [UIActionData](/vext/ref/fb/uiactiondata)                                                         | [UIAlerttagCompData](/vext/ref/fb/uialerttagcompdata)                                                   |
-| [UIAnimatedTextureAsset](/vext/ref/fb/uianimatedtextureasset)                                     | [UIAsset](/vext/ref/fb/uiasset)                                                                         |
-| [UIAssignmentsCompData](/vext/ref/fb/uiassignmentscompdata)                                       | [UIAudioEventAsset](/vext/ref/fb/uiaudioeventasset)                                                     |
-| [UIAwardDescription](/vext/ref/fb/uiawarddescription)                                             | [UIAwardsScreenCompData](/vext/ref/fb/uiawardsscreencompdata)                                           |
-| [UIAwardsTrackingCompData](/vext/ref/fb/uiawardstrackingcompdata)                                 | [UIBarDataBinding](/vext/ref/fb/uibardatabinding)                                                       |
-| [UIBattleLogCompData](/vext/ref/fb/uibattlelogcompdata)                                           | [UIBundlesAsset](/vext/ref/fb/uibundlesasset)                                                           |
-| [UIButtonDataBinding](/vext/ref/fb/uibuttondatabinding)                                           | [UICameraCompData](/vext/ref/fb/uicameracompdata)                                                       |
-| [UICampaignCompData](/vext/ref/fb/uicampaigncompdata)                                             | [UICapturepointCompData](/vext/ref/fb/uicapturepointcompdata)                                           |
-| [UICapturepointtagCompData](/vext/ref/fb/uicapturepointtagcompdata)                               | [UIChatCompData](/vext/ref/fb/uichatcompdata)                                                           |
-| [UIColor](/vext/ref/fb/uicolor)                                                                   | [UIColorTemplate](/vext/ref/fb/uicolortemplate)                                                         |
-| [UICombatAreaAsset](/vext/ref/fb/uicombatareaasset)                                               | [UICombatAreaCompData](/vext/ref/fb/uicombatareacompdata)                                               |
-| [UICombatAreaEntityData](/vext/ref/fb/uicombatareaentitydata)                                     | [UICompassDataBinding](/vext/ref/fb/uicompassdatabinding)                                               |
-| [UIComponentData](/vext/ref/fb/uicomponentdata)                                                   | [UIConnectionCompData](/vext/ref/fb/uiconnectioncompdata)                                               |
-| [UICoopCompData](/vext/ref/fb/uicoopcompdata)                                                     | [UICoopEndOfRoundCompData](/vext/ref/fb/uicoopendofroundcompdata)                                       |
-| [UICoopLevelDescription](/vext/ref/fb/uicoopleveldescription)                                     | [UICreditsAsset](/vext/ref/fb/uicreditsasset)                                                           |
-| [UICreditsCompData](/vext/ref/fb/uicreditscompdata)                                               | [UICrosshairDataBinding](/vext/ref/fb/uicrosshairdatabinding)                                           |
-| [UICustomizationCompData](/vext/ref/fb/uicustomizationcompdata)                                   | [UIDamageIndicatorCompData](/vext/ref/fb/uidamageindicatorcompdata)                                     |
-| [UIDataBinding](/vext/ref/fb/uidatabinding)                                                       | [UIDataInterfaceCompData](/vext/ref/fb/uidatainterfacecompdata)                                         |
-| [UIDelayedCommandsCompData](/vext/ref/fb/uidelayedcommandscompdata)                               | [UIDetailedServerInfoCompData](/vext/ref/fb/uidetailedserverinfocompdata)                               |
-| [UIDirectAccessCompData](/vext/ref/fb/uidirectaccesscompdata)                                     | [UIDistanceFieldAsset](/vext/ref/fb/uidistancefieldasset)                                               |
-| [UIDogTagDescription](/vext/ref/fb/uidogtagdescription)                                           | [UIDynamicDataBinding](/vext/ref/fb/uidynamicdatabinding)                                               |
-| [UIDynamicTextureCompData](/vext/ref/fb/uidynamictexturecompdata)                                 | [UIEndOfRoundCompData](/vext/ref/fb/uiendofroundcompdata)                                               |
-| [UIEndOfRoundEntityData](/vext/ref/fb/uiendofroundentitydata)                                     | [UIEventAsset](/vext/ref/fb/uieventasset)                                                               |
-| [UIFlagCounterCompData](/vext/ref/fb/uiflagcountercompdata)                                       | [UIFontAsset](/vext/ref/fb/uifontasset)                                                                 |
-| [UIFontCollection](/vext/ref/fb/uifontcollection)                                                 | [UIFontMappingCollection](/vext/ref/fb/uifontmappingcollection)                                         |
-| [UIFriendsCompData](/vext/ref/fb/uifriendscompdata)                                               | [UIGameModeDescription](/vext/ref/fb/uigamemodedescription)                                             |
-| [UIGameQueueCompData](/vext/ref/fb/uigamequeuecompdata)                                           | [UIGeneralCompData](/vext/ref/fb/uigeneralcompdata)                                                     |
-| [UIGenericItemDescription](/vext/ref/fb/uigenericitemdescription)                                 | [UIGraphAsset](/vext/ref/fb/uigraphasset)                                                               |
-| [UIGraphEntityData](/vext/ref/fb/uigraphentitydata)                                               | [UIGraphPipelineSettings](/vext/ref/fb/uigraphpipelinesettings)                                         |
-| [UIGunMasterCompData](/vext/ref/fb/uigunmastercompdata)                                           | [UIHardcoreCompData](/vext/ref/fb/uihardcorecompdata)                                                   |
-| [UIHUDMessageBinding](/vext/ref/fb/uihudmessagebinding)                                           | [UIImageDataBinding](/vext/ref/fb/uiimagedatabinding)                                                   |
-| [UIIngameMenuCompData](/vext/ref/fb/uiingamemenucompdata)                                         | [UIInputCompData](/vext/ref/fb/uiinputcompdata)                                                         |
-| [UIInputEventNodePort](/vext/ref/fb/uiinputeventnodeport)                                         | [UIInstallHDContentCompData](/vext/ref/fb/uiinstallhdcontentcompdata)                                   |
-| [UIInteractionCompData](/vext/ref/fb/uiinteractioncompdata)                                       | [UIInterruptFlow](/vext/ref/fb/uiinterruptflow)                                                         |
-| [UIInventoryCompData](/vext/ref/fb/uiinventorycompdata)                                           | [UIItemDescription](/vext/ref/fb/uiitemdescription)                                                     |
-| [UIItemDescriptionAsset](/vext/ref/fb/uiitemdescriptionasset)                                     | [UIKillCardCompData](/vext/ref/fb/uikillcardcompdata)                                                   |
-| [UIKillCounterCompData](/vext/ref/fb/uikillcountercompdata)                                       | [UIKitCompData](/vext/ref/fb/uikitcompdata)                                                             |
-| [UIKitItemDescription](/vext/ref/fb/uikititemdescription)                                         | [UILeaderboardCompData](/vext/ref/fb/uileaderboardcompdata)                                             |
-| [UILevelCompData](/vext/ref/fb/uilevelcompdata)                                                   | [UILevelDescription](/vext/ref/fb/uileveldescription)                                                   |
-| [UILevelDescriptionComponent](/vext/ref/fb/uileveldescriptioncomponent)                           | [UILevelLocationDescription](/vext/ref/fb/uilevellocationdescription)                                   |
-| [UILicenseDescription](/vext/ref/fb/uilicensedescription)                                         | [UILifeCounterCompData](/vext/ref/fb/uilifecountercompdata)                                             |
-| [UILightExposureComponentData](/vext/ref/fb/uilightexposurecomponentdata)                         | [UIListDataBinding](/vext/ref/fb/uilistdatabinding)                                                     |
-| [UILoadLevelCompData](/vext/ref/fb/uiloadlevelcompdata)                                           | [UILocalizeCompData](/vext/ref/fb/uilocalizecompdata)                                                   |
-| [UIManageMapsCompData](/vext/ref/fb/uimanagemapscompdata)                                         | [UIManagePlayersCompData](/vext/ref/fb/uimanageplayerscompdata)                                         |
-| [UIManageServerPresetsCompData](/vext/ref/fb/uimanageserverpresetscompdata)                       | [UIManDownCompData](/vext/ref/fb/uimandowncompdata)                                                     |
-| [UIManualCompData](/vext/ref/fb/uimanualcompdata)                                                 | [UIMapmarkerCompData](/vext/ref/fb/uimapmarkercompdata)                                                 |
-| [UIMapmarkertagCompData](/vext/ref/fb/uimapmarkertagcompdata)                                     | [UIMatchCompData](/vext/ref/fb/uimatchcompdata)                                                         |
-| [UIMatchesListCompData](/vext/ref/fb/uimatcheslistcompdata)                                       | [UIMemCardCompData](/vext/ref/fb/uimemcardcompdata)                                                     |
-| [UIMessageCompData](/vext/ref/fb/uimessagecompdata)                                               | [UIMessageTriggerData](/vext/ref/fb/uimessagetriggerdata)                                               |
-| [UIMinimapCompData](/vext/ref/fb/uiminimapcompdata)                                               | [UIMinimapIconTextureAtlasAsset](/vext/ref/fb/uiminimapicontextureatlasasset)                           |
-| [UIMinimapVolumeEntityData](/vext/ref/fb/uiminimapvolumeentitydata)                               | [UIModDescription](/vext/ref/fb/uimoddescription)                                                       |
-| [UINametag](/vext/ref/fb/uinametag)                                                               | [UINametagCompData](/vext/ref/fb/uinametagcompdata)                                                     |
-| [UINametagCoopCompData](/vext/ref/fb/uinametagcoopcompdata)                                       | [UINametagSPCompData](/vext/ref/fb/uinametagspcompdata)                                                 |
-| [UINavigationCompData](/vext/ref/fb/uinavigationcompdata)                                         | [UINestedListDataBinding](/vext/ref/fb/uinestedlistdatabinding)                                         |
-| [UINodeConnection](/vext/ref/fb/uinodeconnection)                                                 | [UINodeData](/vext/ref/fb/uinodedata)                                                                   |
-| [UINodePort](/vext/ref/fb/uinodeport)                                                             | [UINumberDataBinding](/vext/ref/fb/uinumberdatabinding)                                                 |
-| [UIObjectivesCompData](/vext/ref/fb/uiobjectivescompdata)                                         | [UIOnDemandFontComponentData](/vext/ref/fb/uiondemandfontcomponentdata)                                 |
-| [UIPageHeaderBinding](/vext/ref/fb/uipageheaderbinding)                                           | [UIPartData](/vext/ref/fb/uipartdata)                                                                   |
-| [UIPartPropertyList](/vext/ref/fb/uipartpropertylist)                                             | [UIPersistenceCompData](/vext/ref/fb/uipersistencecompdata)                                             |
-| [UIPlaygroupCompData](/vext/ref/fb/uiplaygroupcompdata)                                           | [UIPopupCompData](/vext/ref/fb/uipopupcompdata)                                                         |
-| [UIPostProcessComponentData](/vext/ref/fb/uipostprocesscomponentdata)                             | [UIPremiumCompData](/vext/ref/fb/uipremiumcompdata)                                                     |
-| [UIPreRoundCompData](/vext/ref/fb/uipreroundcompdata)                                             | [UIPresenceCompData](/vext/ref/fb/uipresencecompdata)                                                   |
-| [UIQueuedEventsCompData](/vext/ref/fb/uiqueuedeventscompdata)                                     | [UIRankDescription](/vext/ref/fb/uirankdescription)                                                     |
-| [UIRenderCompData](/vext/ref/fb/uirendercompdata)                                                 | [UIRightClickCompData](/vext/ref/fb/uirightclickcompdata)                                               |
-| [UIScoreboardCompData](/vext/ref/fb/uiscoreboardcompdata)                                         | [UIScreenAsset](/vext/ref/fb/uiscreenasset)                                                             |
-| [UIScreenEventCompData](/vext/ref/fb/uiscreeneventcompdata)                                       | [UIScreenshotCompData](/vext/ref/fb/uiscreenshotcompdata)                                               |
-| [UIServerBrowserCompData](/vext/ref/fb/uiserverbrowsercompdata)                                   | [UIServerListCompData](/vext/ref/fb/uiserverlistcompdata)                                               |
-| [UIServerListFilterBarCompData](/vext/ref/fb/uiserverlistfilterbarcompdata)                       | [UISessionDataComponentData](/vext/ref/fb/uisessiondatacomponentdata)                                   |
-| [UISettings](/vext/ref/fb/uisettings)                                                             | [UISettingsCompData](/vext/ref/fb/uisettingscompdata)                                                   |
-| [UISetupServerWizardCompData](/vext/ref/fb/uisetupserverwizardcompdata)                           | [UISetValueData](/vext/ref/fb/uisetvaluedata)                                                           |
-| [UISoldierCompData](/vext/ref/fb/uisoldiercompdata)                                               | [UISoundCompData](/vext/ref/fb/uisoundcompdata)                                                         |
-| [UISpawnLogicCompData](/vext/ref/fb/uispawnlogiccompdata)                                         | [UISpawnPointCompData](/vext/ref/fb/uispawnpointcompdata)                                               |
-| [UISpectatorCompData](/vext/ref/fb/uispectatorcompdata)                                           | [UISquadCompData](/vext/ref/fb/uisquadcompdata)                                                         |
-| [UIStateAsset](/vext/ref/fb/uistateasset)                                                         | [UIStatsCompData](/vext/ref/fb/uistatscompdata)                                                         |
-| [UIStoreCompData](/vext/ref/fb/uistorecompdata)                                                   | [UITeamCompData](/vext/ref/fb/uiteamcompdata)                                                           |
-| [UITeamSupportTagCompData](/vext/ref/fb/uiteamsupporttagcompdata)                                 | [UITextDatabase](/vext/ref/fb/uitextdatabase)                                                           |
-| [UITextDataBinding](/vext/ref/fb/uitextdatabinding)                                               | [UITextureStreamingComponentData](/vext/ref/fb/uitexturestreamingcomponentdata)                         |
-| [UITicketCounterCompData](/vext/ref/fb/uiticketcountercompdata)                                   | [UITrackingtagCompData](/vext/ref/fb/uitrackingtagcompdata)                                             |
-| [UITrainingCompData](/vext/ref/fb/uitrainingcompdata)                                             | [UIUnlocksCompData](/vext/ref/fb/uiunlockscompdata)                                                     |
-| [UIVehicleCompData](/vext/ref/fb/uivehiclecompdata)                                               | [UIVehicleDescription](/vext/ref/fb/uivehicledescription)                                               |
-| [UIVehicleUnlockDescription](/vext/ref/fb/uivehicleunlockdescription)                             | [UIVehicleWeaponDescription](/vext/ref/fb/uivehicleweapondescription)                                   |
-| [UIVoiceCompData](/vext/ref/fb/uivoicecompdata)                                                   | [UIWeaponAccessoryDescription](/vext/ref/fb/uiweaponaccessorydescription)                               |
-| [UIWeaponCompData](/vext/ref/fb/uiweaponcompdata)                                                 | [UIWeaponDescription](/vext/ref/fb/uiweapondescription)                                                 |
-| [UIWidgetAsset](/vext/ref/fb/uiwidgetasset)                                                       | [UIWidgetEventCompData](/vext/ref/fb/uiwidgeteventcompdata)                                             |
-| [UIWidgetMovieCompData](/vext/ref/fb/uiwidgetmoviecompdata)                                       | [UIWidgetPathBinding](/vext/ref/fb/uiwidgetpathbinding)                                                 |
-| [UnderFireTriggerEntityData](/vext/ref/fb/underfiretriggerentitydata)                             | [UnlockableColorCollection](/vext/ref/fb/unlockablecolorcollection)                                     |
-| [UnlockableShaderParameterValueCollection](/vext/ref/fb/unlockableshaderparametervaluecollection) | [UnlockableTextureCollection](/vext/ref/fb/unlockabletexturecollection)                                 |
-| [UnlockableTextureSliceCollection](/vext/ref/fb/unlockabletextureslicecollection)                 | [UnlockAsset](/vext/ref/fb/unlockasset)                                                                 |
-| [UnlockAssetBase](/vext/ref/fb/unlockassetbase)                                                   | [UnlockComponentData](/vext/ref/fb/unlockcomponentdata)                                                 |
-| [UnlockUserDataBase](/vext/ref/fb/unlockuserdatabase)                                             | [UnlockValuePair](/vext/ref/fb/unlockvaluepair)                                                         |
-| [UpdateAgeData](/vext/ref/fb/updateagedata)                                                       | [UpdateAlphaLevelMaxData](/vext/ref/fb/updatealphalevelmaxdata)                                         |
-| [UpdateAlphaLevelMinData](/vext/ref/fb/updatealphalevelmindata)                                   | [UpdateAlphaLevelScaleData](/vext/ref/fb/updatealphalevelscaledata)                                     |
-| [UpdateCameraProximityData](/vext/ref/fb/updatecameraproximitydata)                               | [UpdateClipScaleData](/vext/ref/fb/updateclipscaledata)                                                 |
-| [UpdateColorData](/vext/ref/fb/updatecolordata)                                                   | [UpdateLinearVelocityData](/vext/ref/fb/updatelinearvelocitydata)                                       |
-| [UpdateOrientationData](/vext/ref/fb/updateorientationdata)                                       | [UpdateRotationData](/vext/ref/fb/updaterotationdata)                                                   |
-| [UpdateSizeData](/vext/ref/fb/updatesizedata)                                                     | [UpdateSizeXData](/vext/ref/fb/updatesizexdata)                                                         |
-| [UpdateSizeYData](/vext/ref/fb/updatesizeydata)                                                   | [UpdateSizeZData](/vext/ref/fb/updatesizezdata)                                                         |
-| [UpdateTextureCoordsData](/vext/ref/fb/updatetexturecoordsdata)                                   | [UpdateTransparencyData](/vext/ref/fb/updatetransparencydata)                                           |
-| [UrgencySetData](/vext/ref/fb/urgencysetdata)                                                     | [UrgencyUserData](/vext/ref/fb/urgencyuserdata)                                                         |
-| [UserComponentData](/vext/ref/fb/usercomponentdata)                                               | [UserMusicArbiterNodeData](/vext/ref/fb/usermusicarbiternodedata)                                       |
-| [UserMusicControllerNodeData](/vext/ref/fb/usermusiccontrollernodedata)                           | [ValueDebugNodeData](/vext/ref/fb/valuedebugnodedata)                                                   |
-| [ValueSelectorEntry](/vext/ref/fb/valueselectorentry)                                             | [ValueSelectorNodeData](/vext/ref/fb/valueselectornodedata)                                             |
-| [ValueUnlockAsset](/vext/ref/fb/valueunlockasset)                                                 | [VaultWaypointData](/vext/ref/fb/vaultwaypointdata)                                                     |
-| [Vec2PropertyTrackData](/vext/ref/fb/vec2propertytrackdata)                                       | [Vec2RecordingData](/vext/ref/fb/vec2recordingdata)                                                     |
-| [Vec3EntityData](/vext/ref/fb/vec3entitydata)                                                     | [Vec3MathOpEntityData](/vext/ref/fb/vec3mathopentitydata)                                               |
-| [Vec3PropertyTrackData](/vext/ref/fb/vec3propertytrackdata)                                       | [Vec3RecordingData](/vext/ref/fb/vec3recordingdata)                                                     |
-| [Vec4PropertyTrackData](/vext/ref/fb/vec4propertytrackdata)                                       | [Vec4RecordingData](/vext/ref/fb/vec4recordingdata)                                                     |
-| [VecSplitterEntityData](/vext/ref/fb/vecsplitterentitydata)                                       | [VectorShapeData](/vext/ref/fb/vectorshapedata)                                                         |
-| [VegetationBaseEntityData](/vext/ref/fb/vegetationbaseentitydata)                                 | [VegetationSystemSettings](/vext/ref/fb/vegetationsystemsettings)                                       |
-| [VegetationTreeEntityData](/vext/ref/fb/vegetationtreeentitydata)                                 | [VehicleAsset](/vext/ref/fb/vehicleasset)                                                               |
-| [VehicleBlueprint](/vext/ref/fb/vehicleblueprint)                                                 | [VehicleCameraData](/vext/ref/fb/vehiclecameradata)                                                     |
-| [VehicleComponentData](/vext/ref/fb/vehiclecomponentdata)                                         | [VehicleConfigData](/vext/ref/fb/vehicleconfigdata)                                                     |
-| [VehicleCustomizationAsset](/vext/ref/fb/vehiclecustomizationasset)                               | [VehicleDeployWeaponData](/vext/ref/fb/vehicledeployweapondata)                                         |
-| [VehicleEntityData](/vext/ref/fb/vehicleentitydata)                                               | [VehicleEntryListenerComponentData](/vext/ref/fb/vehicleentrylistenercomponentdata)                     |
-| [VehicleExitPointComponentData](/vext/ref/fb/vehicleexitpointcomponentdata)                       | [VehicleInputTweakData](/vext/ref/fb/vehicleinputtweakdata)                                             |
-| [VehicleParachuteComponentData](/vext/ref/fb/vehicleparachutecomponentdata)                       | [VehicleParachuteData](/vext/ref/fb/vehicleparachutedata)                                               |
-| [VehicleProjectileEntityData](/vext/ref/fb/vehicleprojectileentitydata)                           | [VehicleSoundData](/vext/ref/fb/vehiclesounddata)                                                       |
-| [VehicleSpawnReferenceObjectData](/vext/ref/fb/vehiclespawnreferenceobjectdata)                   | [VehicleSpawnStateEntityData](/vext/ref/fb/vehiclespawnstateentitydata)                                 |
-| [VehicleState](/vext/ref/fb/vehiclestate)                                                         | [VehicleStateTriggerEntityData](/vext/ref/fb/vehiclestatetriggerentitydata)                             |
-| [VehicleVisualCustomizationAsset](/vext/ref/fb/vehiclevisualcustomizationasset)                   | [VehicleWaterEffectData](/vext/ref/fb/vehiclewatereffectdata)                                           |
-| [VehicleWaypointData](/vext/ref/fb/vehiclewaypointdata)                                           | [VeniceCombatAreaCamera](/vext/ref/fb/venicecombatareacamera)                                           |
-| [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata)                               | [VeniceFPSCameraData](/vext/ref/fb/venicefpscameradata)                                                 |
-| [VeniceGameplayLevelDescriptionComponent](/vext/ref/fb/venicegameplayleveldescriptioncomponent)   | [VeniceHudConfigAsset](/vext/ref/fb/venicehudconfigasset)                                               |
-| [VeniceMapMarkerHudData](/vext/ref/fb/venicemapmarkerhuddata)                                     | [VeniceMatchmakingLevelDescriptionComponent](/vext/ref/fb/venicematchmakingleveldescriptioncomponent)   |
-| [VeniceMissionObjectiveHudData](/vext/ref/fb/venicemissionobjectivehuddata)                       | [VeniceOnlineConfiguration](/vext/ref/fb/veniceonlineconfiguration)                                     |
-| [VeniceOnlineSettings](/vext/ref/fb/veniceonlinesettings)                                         | [VeniceRichPresenceLevelDescriptionComponent](/vext/ref/fb/venicerichpresenceleveldescriptioncomponent) |
-| [VeniceSoldierCustomizationAsset](/vext/ref/fb/venicesoldiercustomizationasset)                   | [VeniceSoldierHealthModuleData](/vext/ref/fb/venicesoldierhealthmoduledata)                             |
-| [VeniceSoldierWeaponCustomizationAsset](/vext/ref/fb/venicesoldierweaponcustomizationasset)       | [VeniceUICombatAreaAsset](/vext/ref/fb/veniceuicombatareaasset)                                         |
-| [VeniceUIConfiguration](/vext/ref/fb/veniceuiconfiguration)                                       | [VeniceUISettings](/vext/ref/fb/veniceuisettings)                                                       |
-| [VeniceUnlockUserData](/vext/ref/fb/veniceunlockuserdata)                                         | [VeniceVehicleCustomizationAsset](/vext/ref/fb/venicevehiclecustomizationasset)                         |
-| [VersionData](/vext/ref/fb/versiondata)                                                           | [ViewFxData](/vext/ref/fb/viewfxdata)                                                                   |
-| [VignetteComponentData](/vext/ref/fb/vignettecomponentdata)                                       | [VirtualRasterQuadtreeData](/vext/ref/fb/virtualrasterquadtreedata)                                     |
-| [VisualEnvironmentBlueprint](/vext/ref/fb/visualenvironmentblueprint)                             | [VisualEnvironmentEffectEntityData](/vext/ref/fb/visualenvironmenteffectentitydata)                     |
-| [VisualEnvironmentEntityData](/vext/ref/fb/visualenvironmententitydata)                           | [VisualEnvironmentReferenceObjectData](/vext/ref/fb/visualenvironmentreferenceobjectdata)               |
-| [VisualEnvironmentSettings](/vext/ref/fb/visualenvironmentsettings)                               | [VisualTerrainEntityData](/vext/ref/fb/visualterrainentitydata)                                         |
-| [VisualTerrainSettings](/vext/ref/fb/visualterrainsettings)                                       | [VisualVectorShapeData](/vext/ref/fb/visualvectorshapedata)                                             |
-| [VoiceOverArithmeticNode](/vext/ref/fb/voiceoverarithmeticnode)                                   | [VoiceOverCharacterAsset](/vext/ref/fb/voiceovercharacterasset)                                         |
-| [VoiceOverCompareNode](/vext/ref/fb/voiceovercomparenode)                                         | [VoiceOverConstantBooleanValue](/vext/ref/fb/voiceoverconstantbooleanvalue)                             |
-| [VoiceOverConstantFloatValue](/vext/ref/fb/voiceoverconstantfloatvalue)                           | [VoiceOverConstantGlobalValue](/vext/ref/fb/voiceoverconstantglobalvalue)                               |
-| [VoiceOverConstantIntegerValue](/vext/ref/fb/voiceoverconstantintegervalue)                       | [VoiceOverConstantNode](/vext/ref/fb/voiceoverconstantnode)                                             |
-| [VoiceOverConstantValue](/vext/ref/fb/voiceoverconstantvalue)                                     | [VoiceOverConstantVectorValue](/vext/ref/fb/voiceoverconstantvectorvalue)                               |
-| [VoiceOverContainerNode](/vext/ref/fb/voiceovercontainernode)                                     | [VoiceOverConversationGroupEntityData](/vext/ref/fb/voiceoverconversationgroupentitydata)               |
-| [VoiceOverConversationNode](/vext/ref/fb/voiceoverconversationnode)                               | [VoiceOverConversationQueueGroup](/vext/ref/fb/voiceoverconversationqueuegroup)                         |
-| [VoiceOverDialogClip](/vext/ref/fb/voiceoverdialogclip)                                           | [VoiceOverDialogClipEvents](/vext/ref/fb/voiceoverdialogclipevents)                                     |
-| [VoiceOverDialogGroup](/vext/ref/fb/voiceoverdialoggroup)                                         | [VoiceOverDialogTrack](/vext/ref/fb/voiceoverdialogtrack)                                               |
-| [VoiceOverDistanceNode](/vext/ref/fb/voiceoverdistancenode)                                       | [VoiceOverEvent](/vext/ref/fb/voiceoverevent)                                                           |
-| [VoiceOverEventEntityData](/vext/ref/fb/voiceoverevententitydata)                                 | [VoiceOverEventNode](/vext/ref/fb/voiceovereventnode)                                                   |
-| [VoiceOverExpressionNode](/vext/ref/fb/voiceoverexpressionnode)                                   | [VoiceOverGlobalConstantValue](/vext/ref/fb/voiceoverglobalconstantvalue)                               |
-| [VoiceOverGlobalNode](/vext/ref/fb/voiceoverglobalnode)                                           | [VoiceOverGroup](/vext/ref/fb/voiceovergroup)                                                           |
-| [VoiceOverInfoNode](/vext/ref/fb/voiceoverinfonode)                                               | [VoiceOverInterval](/vext/ref/fb/voiceoverinterval)                                                     |
-| [VoiceOverIntervalNode](/vext/ref/fb/voiceoverintervalnode)                                       | [VoiceOverLabel](/vext/ref/fb/voiceoverlabel)                                                           |
-| [VoiceOverLabelNode](/vext/ref/fb/voiceoverlabelnode)                                             | [VoiceOverLabelSource](/vext/ref/fb/voiceoverlabelsource)                                               |
-| [VoiceOverLanguageRoot](/vext/ref/fb/voiceoverlanguageroot)                                       | [VoiceOverLogicAsset](/vext/ref/fb/voiceoverlogicasset)                                                 |
-| [VoiceOverLogicFlow](/vext/ref/fb/voiceoverlogicflow)                                             | [VoiceOverManuscriptAsset](/vext/ref/fb/voiceovermanuscriptasset)                                       |
-| [VoiceOverNamedValue](/vext/ref/fb/voiceovernamedvalue)                                           | [VoiceOverNode](/vext/ref/fb/voiceovernode)                                                             |
-| [VoiceOverObject](/vext/ref/fb/voiceoverobject)                                                   | [VoiceOverProbabilityNode](/vext/ref/fb/voiceoverprobabilitynode)                                       |
-| [VoiceOverPronunciation](/vext/ref/fb/voiceoverpronunciation)                                     | [VoiceOverRelationshipInput](/vext/ref/fb/voiceoverrelationshipinput)                                   |
-| [VoiceOverStructureConnection](/vext/ref/fb/voiceoverstructureconnection)                         | [VoiceOverStructureNode](/vext/ref/fb/voiceoverstructurenode)                                           |
-| [VoiceOverSystemAsset](/vext/ref/fb/voiceoversystemasset)                                         | [VoiceOverTriggerNode](/vext/ref/fb/voiceovertriggernode)                                               |
-| [VoiceOverTriggerParameter](/vext/ref/fb/voiceovertriggerparameter)                               | [VoiceOverValue](/vext/ref/fb/voiceovervalue)                                                           |
-| [VoiceOverValueConnection](/vext/ref/fb/voiceovervalueconnection)                                 | [VoiceOverValueRedirect](/vext/ref/fb/voiceovervalueredirect)                                           |
-| [VoiceOverVariableNode](/vext/ref/fb/voiceovervariablenode)                                       | [VolumeVectorShapeData](/vext/ref/fb/volumevectorshapedata)                                             |
-| [WarningSystemComponentData](/vext/ref/fb/warningsystemcomponentdata)                             | [WarpAnimationComponentData](/vext/ref/fb/warpanimationcomponentdata)                                   |
-| [WarpAnimationEntityData](/vext/ref/fb/warpanimationentitydata)                                   | [WaterAsset](/vext/ref/fb/waterasset)                                                                   |
-| [WaterData](/vext/ref/fb/waterdata)                                                               | [WaterEntityData](/vext/ref/fb/waterentitydata)                                                         |
-| [WaveSwitcherNodeData](/vext/ref/fb/waveswitchernodedata)                                         | [WaypointComponentData](/vext/ref/fb/waypointcomponentdata)                                             |
-| [WaypointData](/vext/ref/fb/waypointdata)                                                         | [WaypointsShapeData](/vext/ref/fb/waypointsshapedata)                                                   |
-| [WaypointTriggerEntityData](/vext/ref/fb/waypointtriggerentitydata)                               | [WeaponAimingSimulationModifier](/vext/ref/fb/weaponaimingsimulationmodifier)                           |
-| [WeaponAnimatedFireTypeModifier](/vext/ref/fb/weaponanimatedfiretypemodifier)                     | [WeaponAnimationConfigurationModifier](/vext/ref/fb/weaponanimationconfigurationmodifier)               |
-| [WeaponAnimTypeModifier](/vext/ref/fb/weaponanimtypemodifier)                                     | [WeaponClassModifier](/vext/ref/fb/weaponclassmodifier)                                                 |
-| [WeaponComponentData](/vext/ref/fb/weaponcomponentdata)                                           | [WeaponData](/vext/ref/fb/weapondata)                                                                   |
-| [WeaponDeployTimeModifier](/vext/ref/fb/weapondeploytimemodifier)                                 | [WeaponEntityData](/vext/ref/fb/weaponentitydata)                                                       |
-| [WeaponFiringData](/vext/ref/fb/weaponfiringdata)                                                 | [WeaponFiringDataAsset](/vext/ref/fb/weaponfiringdataasset)                                             |
-| [WeaponFiringDataModifier](/vext/ref/fb/weaponfiringdatamodifier)                                 | [WeaponFiringEffectsModifier](/vext/ref/fb/weaponfiringeffectsmodifier)                                 |
-| [WeaponInputRouterComponentData](/vext/ref/fb/weaponinputroutercomponentdata)                     | [WeaponLagEntityData](/vext/ref/fb/weaponlagentitydata)                                                 |
-| [WeaponLagSpringEffectData](/vext/ref/fb/weaponlagspringeffectdata)                               | [WeaponMagazineModifier](/vext/ref/fb/weaponmagazinemodifier)                                           |
-| [WeaponMiscModifier](/vext/ref/fb/weaponmiscmodifier)                                             | [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase)                                                   |
-| [WeaponOffsetData](/vext/ref/fb/weaponoffsetdata)                                                 | [WeaponOverrideData](/vext/ref/fb/weaponoverridedata)                                                   |
-| [WeaponPickupEntityData](/vext/ref/fb/weaponpickupentitydata)                                     | [WeaponProjectileModifier](/vext/ref/fb/weaponprojectilemodifier)                                       |
-| [WeaponRegularSocketObjectData](/vext/ref/fb/weaponregularsocketobjectdata)                       | [WeaponShotModifier](/vext/ref/fb/weaponshotmodifier)                                                   |
-| [WeaponSkinnedSocketObjectData](/vext/ref/fb/weaponskinnedsocketobjectdata)                       | [WeaponSocketObjectData](/vext/ref/fb/weaponsocketobjectdata)                                           |
-| [WeaponSoundModifier](/vext/ref/fb/weaponsoundmodifier)                                           | [WeaponSpeedData](/vext/ref/fb/weaponspeeddata)                                                         |
-| [WeaponStateEntityData](/vext/ref/fb/weaponstateentitydata)                                       | [WeaponSuppressionData](/vext/ref/fb/weaponsuppressiondata)                                             |
-| [WeaponSwayData](/vext/ref/fb/weaponswaydata)                                                     | [WeaponUnlockPickupEntityData](/vext/ref/fb/weaponunlockpickupentitydata)                               |
-| [WeaponZoomModifier](/vext/ref/fb/weaponzoommodifier)                                             | [WebPresenceBackendData](/vext/ref/fb/webpresencebackenddata)                                           |
-| [WheelComponentData](/vext/ref/fb/wheelcomponentdata)                                             | [WheelConfigData](/vext/ref/fb/wheelconfigdata)                                                         |
-| [WidgetNode](/vext/ref/fb/widgetnode)                                                             | [WindComponentData](/vext/ref/fb/windcomponentdata)                                                     |
-| [WindowSettings](/vext/ref/fb/windowsettings)                                                     | [WingComponentData](/vext/ref/fb/wingcomponentdata)                                                     |
-| [WingPhysicsData](/vext/ref/fb/wingphysicsdata)                                                   | [WorldData](/vext/ref/fb/worlddata)                                                                     |
-| [WorldObjectListData](/vext/ref/fb/worldobjectlistdata)                                           | [WorldPartData](/vext/ref/fb/worldpartdata)                                                             |
-| [WorldPartInclusion](/vext/ref/fb/worldpartinclusion)                                             | [WorldPartInclusionCriterion](/vext/ref/fb/worldpartinclusioncriterion)                                 |
-| [WorldPartInclusionSetting](/vext/ref/fb/worldpartinclusionsetting)                               | [WorldPartInclusionSettings](/vext/ref/fb/worldpartinclusionsettings)                                   |
-| [WorldPartReferenceObjectData](/vext/ref/fb/worldpartreferenceobjectdata)                         | [WorldRenderSettings](/vext/ref/fb/worldrendersettings)                                                 |
-| [XenonPresenceBackendData](/vext/ref/fb/xenonpresencebackenddata)                                 | [XorEntityData](/vext/ref/fb/xorentitydata)                                                             |
-| [ZoomLevelData](/vext/ref/fb/zoomleveldata)                                                       |                                                                                                                |
-
-## Structures
-
-|                                                                                                    |                                                                                                    |                                                                                                        |
-| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| [ActionSuppressor](/vext/ref/fb/actionsuppressor)                                           | [AdvertisementZoneMember](/vext/ref/fb/advertisementzonemember)                             | [AILocoBaseTaskData](/vext/ref/fb/ailocobasetaskdata)                                           |
-| [AILocoBinding](/vext/ref/fb/ailocobinding)                                                 | [AILocoCoverBinding](/vext/ref/fb/ailococoverbinding)                                       | [AILocoCoverTaskData](/vext/ref/fb/ailococovertaskdata)                                         |
-| [AILocoMoveTaskData](/vext/ref/fb/ailocomovetaskdata)                                       | [AILocoVaultBinding](/vext/ref/fb/ailocovaultbinding)                                       | [AILocoVaultTaskData](/vext/ref/fb/ailocovaulttaskdata)                                         |
-| [AimingConstraintEntityBinding](/vext/ref/fb/aimingconstraintentitybinding)                 | [AimingConstraintsData](/vext/ref/fb/aimingconstraintsdata)                                 | [AimingPoseData](/vext/ref/fb/aimingposedata)                                                   |
-| [AIProximityReactionsBinding](/vext/ref/fb/aiproximityreactionsbinding)                     | [AirMissileJammingData](/vext/ref/fb/airmissilejammingdata)                                 | [AmmoConfigData](/vext/ref/fb/ammoconfigdata)                                                   |
-| [AngleOfImpactData](/vext/ref/fb/angleofimpactdata)                                         | [Animated1pOnlyWeaponBinding](/vext/ref/fb/animated1ponlyweaponbinding)                     | [Animated3pOnlyWeaponBinding](/vext/ref/fb/animated3ponlyweaponbinding)                         |
-| [AnimatedPointCloudAttributeDesc](/vext/ref/fb/animatedpointcloudattributedesc)             | [AnimatedSkeletonDatabaseItem](/vext/ref/fb/animatedskeletondatabaseitem)                   | [AnimatedWeaponBinding](/vext/ref/fb/animatedweaponbinding)                                     |
-| [AnimationConfigurationData](/vext/ref/fb/animationconfigurationdata)                       | [AnimationConfigurationShootModuleData](/vext/ref/fb/animationconfigurationshootmoduledata) | [AnimationDrivenBinding](/vext/ref/fb/animationdrivenbinding)                                   |
-| [AntAnimatableData](/vext/ref/fb/antanimatabledata)                                         | [AntAnimationHandlerData](/vext/ref/fb/antanimationhandlerdata)                             | [AntDynamicAvoidanceBinding](/vext/ref/fb/antdynamicavoidancebinding)                           |
-| [AntEventData](/vext/ref/fb/anteventdata)                                                   | [AntInteractionBinding](/vext/ref/fb/antinteractionbinding)                                 | [AntiRollBars](/vext/ref/fb/antirollbars)                                                       |
-| [AntiSpamConfig](/vext/ref/fb/antispamconfig)                                               | [AntRef](/vext/ref/fb/antref)                                                               | [AreaValueTeam](/vext/ref/fb/areavalueteam)                                                     |
-| [AssetAabbs](/vext/ref/fb/assetaabbs)                                                       | [AudioCurve](/vext/ref/fb/audiocurve)                                                       | [AudioCurvePoint](/vext/ref/fb/audiocurvepoint)                                                 |
-| [AudioGraphNodePort](/vext/ref/fb/audiographnodeport)                                       | [AudioLanguageMapping](/vext/ref/fb/audiolanguagemapping)                                   | [AudioObstructionMaterialInfo](/vext/ref/fb/audioobstructionmaterialinfo)                       |
-| [AutoAimData](/vext/ref/fb/autoaimdata)                                                     | [AwardStarNameInstance](/vext/ref/fb/awardstarnameinstance)                                 | [AwardStatus](/vext/ref/fb/awardstatus)                                                         |
-| [BasicUnlockInfo](/vext/ref/fb/basicunlockinfo)                                             | [BFServerConfigurationData](/vext/ref/fb/bfserverconfigurationdata)                         | [BFServerConfigurationSchedule](/vext/ref/fb/bfserverconfigurationschedule)                     |
-| [BinaryOption](/vext/ref/fb/binaryoption)                                                   | [BlazeCreateGameParameters](/vext/ref/fb/blazecreategameparameters)                         | [BlurEffectData](/vext/ref/fb/blureffectdata)                                                   |
-| [BoltActionData](/vext/ref/fb/boltactiondata)                                               | [BoneCollisionData](/vext/ref/fb/bonecollisiondata)                                         | [BoolShaderParameter](/vext/ref/fb/boolshaderparameter)                                         |
-| [Boost](/vext/ref/fb/boost)                                                                 | [BulletHitInfo](/vext/ref/fb/bullethitinfo)                                                 | [BurstLimit](/vext/ref/fb/burstlimit)                                                           |
-| [CameraBinding](/vext/ref/fb/camerabinding)                                                 | [CameraLeapData](/vext/ref/fb/cameraleapdata)                                               | [CameraSineCurveData](/vext/ref/fb/camerasinecurvedata)                                         |
-| [CannedAnimationBinding](/vext/ref/fb/cannedanimationbinding)                               | [CharacterMeleeBinding](/vext/ref/fb/charactermeleebinding)                                 | [CharacterMeleeCommonBinding](/vext/ref/fb/charactermeleecommonbinding)                         |
-| [CharacterPoseConstraintsData](/vext/ref/fb/characterposeconstraintsdata)                   | [CharacterWeaponBinding](/vext/ref/fb/characterweaponbinding)                               | [ChildStaticModelNetworkInfo](/vext/ref/fb/childstaticmodelnetworkinfo)                         |
-| [ChunkStreamerCell](/vext/ref/fb/chunkstreamercell)                                         | [ClimbLadderBinding](/vext/ref/fb/climbladderbinding)                                       | [ColorTintData](/vext/ref/fb/colortintdata)                                                     |
-| [ConstantForceData](/vext/ref/fb/constantforcedata)                                         | [Consumable](/vext/ref/fb/consumable)                                                       | [ContinueWeaponAmmoData](/vext/ref/fb/continueweaponammodata)                                   |
-| [CoreSettings](/vext/ref/fb/coresettings)                                                   | [CounterHelper](/vext/ref/fb/counterhelper)                                                 | [CounterStatus](/vext/ref/fb/counterstatus)                                                     |
-| [CoverSlot](/vext/ref/fb/coverslot)                                                         | [CriteriaAward](/vext/ref/fb/criteriaaward)                                                 | [CriteriaStarCategoryInstance](/vext/ref/fb/criteriastarcategoryinstance)                       |
-| [CustomizedMeshMaterialsData](/vext/ref/fb/customizedmeshmaterialsdata)                     | [CustomizeVisual](/vext/ref/fb/customizevisual)                                             | [CustomReportValueData](/vext/ref/fb/customreportvaluedata)                                     |
-| [DataCopSettings](/vext/ref/fb/datacopsettings)                                             | [DataCopValueSetting](/vext/ref/fb/datacopvaluesetting)                                     | [DataField](/vext/ref/fb/datafield)                                                             |
-| [DataSource](/vext/ref/fb/datasource)                                                       | [DataVisualizerValue](/vext/ref/fb/datavisualizervalue)                                     | [DebrisClusterPartInfoData](/vext/ref/fb/debrisclusterpartinfodata)                             |
-| [DebrisHavokInfo](/vext/ref/fb/debrishavokinfo)                                             | [DebrisSystemMetrics](/vext/ref/fb/debrissystemmetrics)                                     | [DecalAtlasTile](/vext/ref/fb/decalatlastile)                                                   |
-| [DefaultSelectionItem](/vext/ref/fb/defaultselectionitem)                                   | [DestructionVolumeAtlasTextureData](/vext/ref/fb/destructionvolumeatlastexturedata)         | [DestructionVolumeProjectionData](/vext/ref/fb/destructionvolumeprojectiondata)                 |
-| [DirectWeaponSwitchingMapData](/vext/ref/fb/directweaponswitchingmapdata)                   | [DivisibleLoopPlayerPlugins](/vext/ref/fb/divisibleloopplayerplugins)                       | [DynamicEvent](/vext/ref/fb/dynamicevent)                                                       |
-| [DynamicLink](/vext/ref/fb/dynamiclink)                                                     | [DynamicWeaponPickupSlotData](/vext/ref/fb/dynamicweaponpickupslotdata)                     | [EdgeModelInstance](/vext/ref/fb/edgemodelinstance)                                             |
-| [EdgeModelLightMapInstance](/vext/ref/fb/edgemodellightmapinstance)                         | [EdgePointerData](/vext/ref/fb/edgepointerdata)                                             | [EditableActionMap](/vext/ref/fb/editableactionmap)                                             |
-| [EditableActions](/vext/ref/fb/editableactions)                                             | [EloExpectedFunctionPoint](/vext/ref/fb/eloexpectedfunctionpoint)                           | [EloFunctionPoint](/vext/ref/fb/elofunctionpoint)                                               |
-| [EloParameters](/vext/ref/fb/eloparameters)                                                 | [EmitterTextureAtlasInfo](/vext/ref/fb/emittertextureatlasinfo)                             | [EmitterTextureInfo](/vext/ref/fb/emittertextureinfo)                                           |
-| [EndPointData](/vext/ref/fb/endpointdata)                                                   | [EnlightenDbInstance](/vext/ref/fb/enlightendbinstance)                                     | [EnlightenDbSystem](/vext/ref/fb/enlightendbsystem)                                             |
-| [EnlightenInputInstance](/vext/ref/fb/enlighteninputinstance)                               | [EnlightenLightProbeSet](/vext/ref/fb/enlightenlightprobeset)                               | [EnlightenPipelineTerrainMesh](/vext/ref/fb/enlightenpipelineterrainmesh)                       |
-| [EntitlementData](/vext/ref/fb/entitlementdata)                                             | [EntityUid](/vext/ref/fb/entityuid)                                                         | [EntryComponentHudData](/vext/ref/fb/entrycomponenthuddata)                                     |
-| [EventConnection](/vext/ref/fb/eventconnection)                                             | [EventScaleData](/vext/ref/fb/eventscaledata)                                               | [EventSpec](/vext/ref/fb/eventspec)                                                             |
-| [FaceAnimationWaveMapping](/vext/ref/fb/faceanimationwavemapping)                           | [FireEffectData](/vext/ref/fb/fireeffectdata)                                               | [FireLogicData](/vext/ref/fb/firelogicdata)                                                     |
-| [FiringDispersionData](/vext/ref/fb/firingdispersiondata)                                   | [FloatOption](/vext/ref/fb/floatoption)                                                     | [FloatRange](/vext/ref/fb/floatrange)                                                           |
-| [FloatRangeDefaultZero](/vext/ref/fb/floatrangedefaultzero)                                 | [FootStepTrigger](/vext/ref/fb/footsteptrigger)                                             | [FrictionScaleAtVelocity](/vext/ref/fb/frictionscaleatvelocity)                                 |
-| [GameModeInformation](/vext/ref/fb/gamemodeinformation)                                     | [GameModeSize](/vext/ref/fb/gamemodesize)                                                   | [GameModeTeamSize](/vext/ref/fb/gamemodeteamsize)                                               |
-| [GameModeVariation](/vext/ref/fb/gamemodevariation)                                         | [GameplayBone](/vext/ref/fb/gameplaybone)                                                   | [GameTipData](/vext/ref/fb/gametipdata)                                                         |
-| [GroundHeightData](/vext/ref/fb/groundheightdata)                                           | [GunMasterLevelInfo](/vext/ref/fb/gunmasterlevelinfo)                                       | [GunMasterWeaponsPreset](/vext/ref/fb/gunmasterweaponspreset)                                   |
-| [GunSwayBaseData](/vext/ref/fb/gunswaybasedata)                                             | [GunSwayBaseMoveData](/vext/ref/fb/gunswaybasemovedata)                                     | [GunSwayBaseMoveJumpData](/vext/ref/fb/gunswaybasemovejumpdata)                                 |
-| [GunSwayCrouchProneData](/vext/ref/fb/gunswaycrouchpronedata)                               | [GunSwayDispersionData](/vext/ref/fb/gunswaydispersiondata)                                 | [GunSwayDispersionModData](/vext/ref/fb/gunswaydispersionmoddata)                               |
-| [GunSwayLagData](/vext/ref/fb/gunswaylagdata)                                               | [GunSwayRecoilData](/vext/ref/fb/gunswayrecoildata)                                         | [GunSwayStanceTransition](/vext/ref/fb/gunswaystancetransition)                                 |
-| [GunSwayStanceZoomModifierData](/vext/ref/fb/gunswaystancezoommodifierdata)                 | [GunSwayStandData](/vext/ref/fb/gunswaystanddata)                                           | [HealerData](/vext/ref/fb/healerdata)                                                           |
-| [HealingSphereData](/vext/ref/fb/healingspheredata)                                         | [HidableSoldierMeshWeaponPart](/vext/ref/fb/hidablesoldiermeshweaponpart)                   | [HIKData](/vext/ref/fb/hikdata)                                                                 |
-| [HitReactionComponentBinding](/vext/ref/fb/hitreactioncomponentbinding)                     | [HoldAndReleaseData](/vext/ref/fb/holdandreleasedata)                                       | [HudData](/vext/ref/fb/huddata)                                                                 |
-| [HudImpactData](/vext/ref/fb/hudimpactdata)                                                 | [IndexRange](/vext/ref/fb/indexrange)                                                       | [InputRecorderTrackData](/vext/ref/fb/inputrecordertrackdata)                                   |
-| [InputSuppressionData](/vext/ref/fb/inputsuppressiondata)                                   | [InspectAnimationTriggerData](/vext/ref/fb/inspectanimationtriggerdata)                     | [InspectViewPointData](/vext/ref/fb/inspectviewpointdata)                                       |
-| [IntentData](/vext/ref/fb/intentdata)                                                       | [InteractionTypesData](/vext/ref/fb/interactiontypesdata)                                   | [InterruptFlow](/vext/ref/fb/interruptflow)                                                     |
-| [IntOption](/vext/ref/fb/intoption)                                                         | [KillWeight](/vext/ref/fb/killweight)                                                       | [LandingGearConditionData](/vext/ref/fb/landinggearconditiondata)                               |
-| [LensFlareElement](/vext/ref/fb/lensflareelement)                                           | [LevelDescription](/vext/ref/fb/leveldescription)                                           | [LevelDescriptionInclusionCategory](/vext/ref/fb/leveldescriptioninclusioncategory)             |
-| [LevelSetup](/vext/ref/fb/levelsetup)                                                       | [LevelSetupOption](/vext/ref/fb/levelsetupoption)                                           | [LicenseInfo](/vext/ref/fb/licenseinfo)                                                         |
-| [LinkConnection](/vext/ref/fb/linkconnection)                                               | [LockedSettingConfig](/vext/ref/fb/lockedsettingconfig)                                     | [LodBinding](/vext/ref/fb/lodbinding)                                                           |
-| [LookConstraintsData](/vext/ref/fb/lookconstraintsdata)                                     | [ManualDataEntry](/vext/ref/fb/manualdataentry)                                             | [MapRotataionLookup](/vext/ref/fb/maprotataionlookup)                                           |
-| [MapRotationConfig](/vext/ref/fb/maprotationconfig)                                         | [MatchmakingCreateGameParameters](/vext/ref/fb/matchmakingcreategameparameters)             | [MatchmakingCriteria](/vext/ref/fb/matchmakingcriteria)                                         |
-| [MatchmakingGameAttribute](/vext/ref/fb/matchmakinggameattribute)                           | [MatchmakingGameSettings](/vext/ref/fb/matchmakinggamesettings)                             | [MatchmakingGenericRule](/vext/ref/fb/matchmakinggenericrule)                                   |
-| [MatchmakingPingSiteRule](/vext/ref/fb/matchmakingpingsiterule)                             | [MatchmakingRankedRule](/vext/ref/fb/matchmakingrankedrule)                                 | [MatchmakingRuleString](/vext/ref/fb/matchmakingrulestring)                                     |
-| [MatchmakingSizeConfiguration](/vext/ref/fb/matchmakingsizeconfiguration)                   | [MatchmakingSizeRule](/vext/ref/fb/matchmakingsizerule)                                     | [MatchmakingUserExtendedDataRule](/vext/ref/fb/matchmakinguserextendeddatarule)                 |
-| [MatchmakingVirtualizedRule](/vext/ref/fb/matchmakingvirtualizedrule)                       | [MaterialInteractionGridRow](/vext/ref/fb/materialinteractiongridrow)                       | [MaterialRelationPropertyPair](/vext/ref/fb/materialrelationpropertypair)                       |
-| [MeshScatteringMaskScaleDrawMethodData](/vext/ref/fb/meshscatteringmaskscaledrawmethoddata) | [MeshVariationDatabaseMaterial](/vext/ref/fb/meshvariationdatabasematerial)                 | [MeshVariationInfo](/vext/ref/fb/meshvariationinfo)                                             |
-| [MessageInfo](/vext/ref/fb/messageinfo)                                                     | [MessageLineData](/vext/ref/fb/messagelinedata)                                             | [MinimapCameraOffsetData](/vext/ref/fb/minimapcameraoffsetdata)                                 |
-| [MinimapData](/vext/ref/fb/minimapdata)                                                     | [MissileLockableInfoData](/vext/ref/fb/missilelockableinfodata)                             | [MissileUnguidedData](/vext/ref/fb/missileunguideddata)                                         |
-| [MixerPresetGroupData](/vext/ref/fb/mixerpresetgroupdata)                                   | [MixerPresetNodeData](/vext/ref/fb/mixerpresetnodedata)                                     | [MixGroupPropertyValue](/vext/ref/fb/mixgrouppropertyvalue)                                     |
-| [MovementComponentBinding](/vext/ref/fb/movementcomponentbinding)                           | [MPModeData](/vext/ref/fb/mpmodedata)                                                       | [NearTargetDetonationData](/vext/ref/fb/neartargetdetonationdata)                               |
-| [NestedList](/vext/ref/fb/nestedlist)                                                       | [NetworkDataId](/vext/ref/fb/networkdataid)                                                 | [NetworkVoteDetails](/vext/ref/fb/networkvotedetails)                                           |
-| [NormalizeSettings](/vext/ref/fb/normalizesettings)                                         | [OnlineEnvironmentConsoleUrl](/vext/ref/fb/onlineenvironmentconsoleurl)                     | [OnlineEnvironmentConsoleUrlData](/vext/ref/fb/onlineenvironmentconsoleurldata)                 |
-| [OnlineEnvironmentUrl](/vext/ref/fb/onlineenvironmenturl)                                   | [OnlineEnvironmentUrlData](/vext/ref/fb/onlineenvironmenturldata)                           | [OnlinePlatformConfiguration](/vext/ref/fb/onlineplatformconfiguration)                         |
-| [OnlineProviderConfiguration](/vext/ref/fb/onlineproviderconfiguration)                     | [OverHeatData](/vext/ref/fb/overheatdata)                                                   | [PackagingDetailInfo](/vext/ref/fb/packagingdetailinfo)                                         |
-| [PartInfoData](/vext/ref/fb/partinfodata)                                                   | [PathfindingBlob](/vext/ref/fb/pathfindingblob)                                             | [PathfindingObjectCategoryRepresentation](/vext/ref/fb/pathfindingobjectcategoryrepresentation) |
-| [PeerCreateGameParameters](/vext/ref/fb/peercreategameparameters)                           | [PerformanceFpsHistogram](/vext/ref/fb/performancefpshistogram)                             | [PersistenceConsumableMapping](/vext/ref/fb/persistenceconsumablemapping)                       |
-| [PersistentValueTemplateData](/vext/ref/fb/persistentvaluetemplatedata)                     | [PhysicsDrivenAnimationEntityBinding](/vext/ref/fb/physicsdrivenanimationentitybinding)     | [PhysicsPartInfo](/vext/ref/fb/physicspartinfo)                                                 |
-| [PickupSettingsData](/vext/ref/fb/pickupsettingsdata)                                       | [PitchModifier](/vext/ref/fb/pitchmodifier)                                                 | [PlayerScore](/vext/ref/fb/playerscore)                                                         |
-| [PointEnvelopePoint](/vext/ref/fb/pointenvelopepoint)                                       | [PoissonRadialBlurData](/vext/ref/fb/poissonradialblurdata)                                 | [PolynomialTempData](/vext/ref/fb/polynomialtempdata)                                           |
-| [PoseConstraintsData](/vext/ref/fb/poseconstraintsdata)                                     | [PoseTransitionTime](/vext/ref/fb/posetransitiontime)                                       | [PrecomputeCache](/vext/ref/fb/precomputecache)                                                 |
-| [PresetTypeConfig](/vext/ref/fb/presettypeconfig)                                           | [ProfileOptionDataEnumItem](/vext/ref/fb/profileoptiondataenumitem)                         | [PropertyConnection](/vext/ref/fb/propertyconnection)                                           |
-| [Ps3AgeLevels](/vext/ref/fb/ps3agelevels)                                                   | [Ps3ParentalLockAgeSettings](/vext/ref/fb/ps3parentallockagesettings)                       | [Ps3ParentalLockAgeSettingsForCountry](/vext/ref/fb/ps3parentallockagesettingsforcountry)       |
-| [Ps3SkuSettings](/vext/ref/fb/ps3skusettings)                                               | [RagdollBinding](/vext/ref/fb/ragdollbinding)                                               | [ReadinessLevelCharacteristics](/vext/ref/fb/readinesslevelcharacteristics)                     |
-| [ReadinessLevels](/vext/ref/fb/readinesslevels)                                             | [RecoilData](/vext/ref/fb/recoildata)                                                       | [RectangularCoverageData](/vext/ref/fb/rectangularcoveragedata)                                 |
-| [RegularCameraViewData](/vext/ref/fb/regularcameraviewdata)                                 | [RibbonPointData](/vext/ref/fb/ribbonpointdata)                                             | [RichPresenceContextSetting](/vext/ref/fb/richpresencecontextsetting)                           |
-| [RichPresenceProperty](/vext/ref/fb/richpresenceproperty)                                   | [RigidMeshSocketTransform](/vext/ref/fb/rigidmeshsockettransform)                           | [RotateToHitData](/vext/ref/fb/rotatetohitdata)                                                 |
-| [RotorModelData](/vext/ref/fb/rotormodeldata)                                               | [RumbleFiringData](/vext/ref/fb/rumblefiringdata)                                           | [SamplerPlugins](/vext/ref/fb/samplerplugins)                                                   |
-| [ScenarioTaskData](/vext/ref/fb/scenariotaskdata)                                           | [ScoringBucketUnlockData](/vext/ref/fb/scoringbucketunlockdata)                             | [ScreenshotInfo](/vext/ref/fb/screenshotinfo)                                                   |
-| [SensingLimits](/vext/ref/fb/sensinglimits)                                                 | [SensingSphere](/vext/ref/fb/sensingsphere)                                                 | [SensitivityAtVelocity](/vext/ref/fb/sensitivityatvelocity)                                     |
-| [SequenceEventData](/vext/ref/fb/sequenceeventdata)                                         | [ServerBackendAttributeMapping](/vext/ref/fb/serverbackendattributemapping)                 | [ServerInfoSetting](/vext/ref/fb/serverinfosetting)                                             |
-| [SettingConfig](/vext/ref/fb/settingconfig)                                                 | [ShaderParameterVector](/vext/ref/fb/shaderparametervector)                                 | [ShotConfigData](/vext/ref/fb/shotconfigdata)                                                   |
-| [SimpleAnimationControlBinding](/vext/ref/fb/simpleanimationcontrolbinding)                 | [SimpleMovementActionTimeData](/vext/ref/fb/simplemovementactiontimedata)                   | [SkyCloudLayer](/vext/ref/fb/skycloudlayer)                                                     |
-| [SmokeJammingData](/vext/ref/fb/smokejammingdata)                                           | [SoldierAnimatedCameraData](/vext/ref/fb/soldieranimatedcameradata)                         | [SoldierDetonationData](/vext/ref/fb/soldierdetonationdata)                                     |
-| [SoldierEmoteBinding](/vext/ref/fb/soldieremotebinding)                                     | [SoldierHeadCollisionPoseData](/vext/ref/fb/soldierheadcollisionposedata)                   | [SoldierHealthModuleBinding](/vext/ref/fb/soldierhealthmodulebinding)                           |
-| [SoldierMeshData](/vext/ref/fb/soldiermeshdata)                                             | [SoldierParachuteBinding](/vext/ref/fb/soldierparachutebinding)                             | [SoldierWeaponDispersion](/vext/ref/fb/soldierweapondispersion)                                 |
-| [SoundDataChunk](/vext/ref/fb/sounddatachunk)                                               | [SoundGraphInfo](/vext/ref/fb/soundgraphinfo)                                               | [SoundGraphLinkedPluginAttribute](/vext/ref/fb/soundgraphlinkedpluginattribute)                 |
-| [SoundGraphPluginConnection](/vext/ref/fb/soundgraphpluginconnection)                       | [SoundGraphPluginConnectionParam](/vext/ref/fb/soundgraphpluginconnectionparam)             | [SoundGraphPluginConstructParam](/vext/ref/fb/soundgraphpluginconstructparam)                   |
-| [SoundGraphPluginInfo](/vext/ref/fb/soundgraphplugininfo)                                   | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref)                                     | [SoundGraphVoiceInfo](/vext/ref/fb/soundgraphvoiceinfo)                                         |
-| [SoundPatchPublicNode](/vext/ref/fb/soundpatchpublicnode)                                   | [SoundScopeStrategyMapping](/vext/ref/fb/soundscopestrategymapping)                         | [SoundWaveLocalizationInfo](/vext/ref/fb/soundwavelocalizationinfo)                             |
-| [SoundWaveSubtitle](/vext/ref/fb/soundwavesubtitle)                                         | [SoundWaveVariationSegment](/vext/ref/fb/soundwavevariationsegment)                         | [SpawnScreenWeaponData](/vext/ref/fb/spawnscreenweapondata)                                     |
-| [SpecialMoveInterpolatedPoint](/vext/ref/fb/specialmoveinterpolatedpoint)                   | [SpecialMovesBinding](/vext/ref/fb/specialmovesbinding)                                     | [SpecialMoveStateData](/vext/ref/fb/specialmovestatedata)                                       |
-| [SpecialMoveVaultStateCriteria](/vext/ref/fb/specialmovevaultstatecriteria)                 | [SpeedModifierData](/vext/ref/fb/speedmodifierdata)                                         | [SphereCollisionData](/vext/ref/fb/spherecollisiondata)                                         |
-| [SpringData](/vext/ref/fb/springdata)                                                       | [StabilizerSettings](/vext/ref/fb/stabilizersettings)                                       | [StanceCameraData](/vext/ref/fb/stancecameradata)                                               |
-| [StanceSwitchSoundData](/vext/ref/fb/stanceswitchsounddata)                                 | [StaticListItem](/vext/ref/fb/staticlistitem)                                               | [StaticModelGroupMemberData](/vext/ref/fb/staticmodelgroupmemberdata)                           |
-| [StaticModelNetworkInfo](/vext/ref/fb/staticmodelnetworkinfo)                               | [StatSpamSetting](/vext/ref/fb/statspamsetting)                                             | [StreamGridCell](/vext/ref/fb/streamgridcell)                                                   |
-| [Strengths](/vext/ref/fb/strengths)                                                         | [StringOption](/vext/ref/fb/stringoption)                                                   | [SubScreenData](/vext/ref/fb/subscreendata)                                                     |
-| [SubSkeleton](/vext/ref/fb/subskeleton)                                                     | [SubsystemTimingConfigData](/vext/ref/fb/subsystemtimingconfigdata)                         | [SupplyData](/vext/ref/fb/supplydata)                                                           |
-| [SupplyUnitSphereData](/vext/ref/fb/supplyunitspheredata)                                   | [SupportedShootingBinding](/vext/ref/fb/supportedshootingbinding)                           | [SupportedShootingProximityChecking](/vext/ref/fb/supportedshootingproximitychecking)           |
-| [SuppressionReactionData](/vext/ref/fb/suppressionreactiondata)                             | [Surface2dDrawMethodData](/vext/ref/fb/surface2ddrawmethoddata)                             | [Surface2dDrawPassData](/vext/ref/fb/surface2ddrawpassdata)                                     |
-| [Surface3dDrawMethodData](/vext/ref/fb/surface3ddrawmethoddata)                             | [SurfaceShaderInstanceDataStruct](/vext/ref/fb/surfaceshaderinstancedatastruct)             | [TerrainGeoTexture](/vext/ref/fb/terraingeotexture)                                             |
-| [TerrainLayerCombinationDrawData](/vext/ref/fb/terrainlayercombinationdrawdata)             | [TerrainLayerCombinationDrawPassData](/vext/ref/fb/terrainlayercombinationdrawpassdata)     | [TerrainLayerProceduralMask](/vext/ref/fb/terrainlayerproceduralmask)                           |
-| [TerrainQuadDecalAtlasTile](/vext/ref/fb/terrainquaddecalatlastile)                         | [TextureShaderParameter](/vext/ref/fb/textureshaderparameter)                               | [TicketCountPercentage](/vext/ref/fb/ticketcountpercentage)                                     |
-| [TurnEffectData](/vext/ref/fb/turneffectdata)                                               | [TurretRotationInfo](/vext/ref/fb/turretrotationinfo)                                       | [UavCameraPointData](/vext/ref/fb/uavcamerapointdata)                                           |
-| [UIAudioEventMapping](/vext/ref/fb/uiaudioeventmapping)                                     | [UIBundleAssetState](/vext/ref/fb/uibundleassetstate)                                       | [UIButton](/vext/ref/fb/uibutton)                                                               |
-| [UIButtonSet](/vext/ref/fb/uibuttonset)                                                     | [UICreditsLine](/vext/ref/fb/uicreditsline)                                                 | [UICreditsPage](/vext/ref/fb/uicreditspage)                                                     |
-| [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo)                                           | [UIFontMapping](/vext/ref/fb/uifontmapping)                                                 | [UIGeoLatitude](/vext/ref/fb/uigeolatitude)                                                     |
-| [UIGeoLongitude](/vext/ref/fb/uigeolongitude)                                               | [UIGPSPosition](/vext/ref/fb/uigpsposition)                                                 | [UILeaderboardData](/vext/ref/fb/uileaderboarddata)                                             |
-| [UILevelLocation](/vext/ref/fb/uilevellocation)                                             | [UILevelSpecificPageHeader](/vext/ref/fb/uilevelspecificpageheader)                         | [UILevelStatData](/vext/ref/fb/uilevelstatdata)                                                 |
-| [UIListItem](/vext/ref/fb/uilistitem)                                                       | [UIMinimapConfig](/vext/ref/fb/uiminimapconfig)                                             | [UIMinimapData](/vext/ref/fb/uiminimapdata)                                                     |
-| [UIMinimapDistanceFieldParams](/vext/ref/fb/uiminimapdistancefieldparams)                   | [UIMinimapIconTexture](/vext/ref/fb/uiminimapicontexture)                                   | [UIMinimapIconTextureState](/vext/ref/fb/uiminimapicontexturestate)                             |
-| [UIMinimapIconUv](/vext/ref/fb/uiminimapiconuv)                                             | [UIMinimapZoomConfig](/vext/ref/fb/uiminimapzoomconfig)                                     | [UINetworkTextInfo](/vext/ref/fb/uinetworktextinfo)                                             |
-| [UIntRange](/vext/ref/fb/uintrange)                                                         | [UIPartProperties](/vext/ref/fb/uipartproperties)                                           | [UIPopupButton](/vext/ref/fb/uipopupbutton)                                                     |
-| [UIPopupTextInput](/vext/ref/fb/uipopuptextinput)                                           | [UISettingsGroup](/vext/ref/fb/uisettingsgroup)                                             | [UISettingsItem](/vext/ref/fb/uisettingsitem)                                                   |
-| [UISettingsPage](/vext/ref/fb/uisettingspage)                                               | [UITaggedVehicleCrosshair](/vext/ref/fb/uitaggedvehiclecrosshair)                           | [UITextureAtlasInfo](/vext/ref/fb/uitextureatlasinfo)                                           |
-| [UIWidgetProperty](/vext/ref/fb/uiwidgetproperty)                                           | [UnlockableProjectile](/vext/ref/fb/unlockableprojectile)                                   | [UnlockAssetPair](/vext/ref/fb/unlockassetpair)                                                 |
-| [UnlockWeaponAndSlot](/vext/ref/fb/unlockweaponandslot)                                     | [UrgencyModifierData](/vext/ref/fb/urgencymodifierdata)                                     | [ValueAtX](/vext/ref/fb/valueatx)                                                               |
-| [VectorArrayShaderParameter](/vext/ref/fb/vectorarrayshaderparameter)                       | [VectorShaderParameter](/vext/ref/fb/vectorshaderparameter)                                 | [VehicleCameraControlBinding](/vext/ref/fb/vehiclecameracontrolbinding)                         |
-| [VehicleEntryListenerBinding](/vext/ref/fb/vehicleentrylistenerbinding)                     | [VehicleHealthZoneData](/vext/ref/fb/vehiclehealthzonedata)                                 | [VehicleHudData](/vext/ref/fb/vehiclehuddata)                                                   |
-| [VehicleInputData](/vext/ref/fb/vehicleinputdata)                                           | [VehicleLockableInfoData](/vext/ref/fb/vehiclelockableinfodata)                             | [VehicleParachuteBinding](/vext/ref/fb/vehicleparachutebinding)                                 |
-| [VehicleTrackerRenderTargetData](/vext/ref/fb/vehicletrackerrendertargetdata)               | [VisionBoxSettings](/vext/ref/fb/visionboxsettings)                                         | [VoiceOverDialogTake](/vext/ref/fb/voiceoverdialogtake)                                         |
-| [VoiceOverDialogTakeMapping](/vext/ref/fb/voiceoverdialogtakemapping)                       | [VoiceOverManuscriptLanguageColumns](/vext/ref/fb/voiceovermanuscriptlanguagecolumns)       | [WarpAnimationBinding](/vext/ref/fb/warpanimationbinding)                                       |
-| [WeaponLagBinding](/vext/ref/fb/weaponlagbinding)                                           | [WeaponLagEffectForceData](/vext/ref/fb/weaponlageffectforcedata)                           | [WeaponLagEffectSpringData](/vext/ref/fb/weaponlageffectspringdata)                             |
-| [WeaponLagEffectSpringVector](/vext/ref/fb/weaponlageffectspringvector)                     | [WeaponMiscModifierSettings](/vext/ref/fb/weaponmiscmodifiersettings)                       | [WeaponModifier](/vext/ref/fb/weaponmodifier)                                                   |
-| [WeaponModifierData](/vext/ref/fb/weaponmodifierdata)                                       | [WeaponOverrideValue](/vext/ref/fb/weaponoverridevalue)                                     | [WeaponPickupData](/vext/ref/fb/weaponpickupdata)                                               |
-| [WeaponStateData](/vext/ref/fb/weaponstatedata)                                             | [WeaponSwitchingMapData](/vext/ref/fb/weaponswitchingmapdata)                               | [WeaponUnlockPickupData](/vext/ref/fb/weaponunlockpickupdata)                                   |
-| [WidgetEventQueryPair](/vext/ref/fb/widgeteventquerypair)                                   | [ZoomLevelLockData](/vext/ref/fb/zoomlevellockdata)                                         | [ZoomLevelSpecificTransitionTime](/vext/ref/fb/zoomlevelspecifictransitiontime)                 |
-
-## Enumerations
-
-|                                                                                                                        |                                                                                                          |                                                                                                    |
-| ---------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| [AddGameBanResponseType](/vext/ref/fb/addgamebanresponsetype)                                                   | [AdministrationEventType](/vext/ref/fb/administrationeventtype)                                   | [AdministrationRestrictionLevel](/vext/ref/fb/administrationrestrictionlevel)               |
-| [AIAltFireFromAntState](/vext/ref/fb/aialtfirefromantstate)                                                     | [AIDeathReactionAnimationType](/vext/ref/fb/aideathreactionanimationtype)                         | [AIHitReactionAnimationType](/vext/ref/fb/aihitreactionanimationtype)                       |
-| [AimOrigin](/vext/ref/fb/aimorigin)                                                                             | [AIStunReactionAnimationType](/vext/ref/fb/aistunreactionanimationtype)                           | [AngleUnit](/vext/ref/fb/angleunit)                                                         |
-| [AnimatedAimingEnum](/vext/ref/fb/animatedaimingenum)                                                           | [AnimatedFireEnum](/vext/ref/fb/animatedfireenum)                                                 | [AntAttentionStateEnum](/vext/ref/fb/antattentionstateenum)                                 |
-| [AntCoverEnum](/vext/ref/fb/antcoverenum)                                                                       | [AntCoverFireType](/vext/ref/fb/antcoverfiretype)                                                 | [AntEntryIdEnum](/vext/ref/fb/antentryidenum)                                               |
-| [AntHitReactionWeaponType](/vext/ref/fb/anthitreactionweapontype)                                               | [AntPackagingType](/vext/ref/fb/antpackagingtype)                                                 | [AntPoseEnum](/vext/ref/fb/antposeenum)                                                     |
-| [AntSpeedLevel](/vext/ref/fb/antspeedlevel)                                                                     | [AreaTriggerInclude](/vext/ref/fb/areatriggerinclude)                                             | [AudioCurveType](/vext/ref/fb/audiocurvetype)                                               |
-| [AudioSystemSpeakerSetup](/vext/ref/fb/audiosystemspeakersetup)                                                 | [AwardGroup](/vext/ref/fb/awardgroup)                                                             | [AwardKitAssociation](/vext/ref/fb/awardkitassociation)                                     |
-| [AwardType](/vext/ref/fb/awardtype)                                                                             | [BackendType](/vext/ref/fb/backendtype)                                                           | [BlendShaderMode](/vext/ref/fb/blendshadermode)                                             |
-| [BlinkType](/vext/ref/fb/blinktype)                                                                             | [BlurFilter](/vext/ref/fb/blurfilter)                                                             | [BreakableControllerComponentNetworkId](/vext/ref/fb/breakablecontrollercomponentnetworkid) |
-| [BreakableControllerComponentNetworkIdMultiplier](/vext/ref/fb/breakablecontrollercomponentnetworkidmultiplier) | [Buttons](/vext/ref/fb/buttons)                                                                   | [CameraIds](/vext/ref/fb/cameraids)                                                         |
-| [CameraMovementActionMode](/vext/ref/fb/cameramovementactionmode)                                               | [CapturableType](/vext/ref/fb/capturabletype)                                                     | [ChangeGameSettingType](/vext/ref/fb/changegamesettingtype)                                 |
-| [CharacterLightingMode](/vext/ref/fb/characterlightingmode)                                                     | [CharacterPoseAction](/vext/ref/fb/characterposeaction)                                           | [CharacterPoseCollisionType](/vext/ref/fb/characterposecollisiontype)                       |
-| [CharacterPoseType](/vext/ref/fb/characterposetype)                                                             | [CharacterStateType](/vext/ref/fb/characterstatetype)                                             | [ChatChannelType](/vext/ref/fb/chatchanneltype)                                             |
-| [ClientGameType](/vext/ref/fb/clientgametype)                                                                   | [ClientState](/vext/ref/fb/clientstate)                                                           | [CollisionMethodEnum](/vext/ref/fb/collisionmethodenum)                                     |
-| [CombatPatrolMode](/vext/ref/fb/combatpatrolmode)                                                               | [CompareOp](/vext/ref/fb/compareop)                                                               | [CompareOperation](/vext/ref/fb/compareoperation)                                           |
-| [CompressorChannelMode](/vext/ref/fb/compressorchannelmode)                                                     | [ConditionType](/vext/ref/fb/conditiontype)                                                       | [ConsumableGroup](/vext/ref/fb/consumablegroup)                                             |
-| [CoopPlayerEvent](/vext/ref/fb/coopplayerevent)                                                                 | [CoreLogLevel](/vext/ref/fb/coreloglevel)                                                         | [CoverEnterStrategy](/vext/ref/fb/coverenterstrategy)                                       |
-| [CoverExitStyle](/vext/ref/fb/coverexitstyle)                                                                   | [CoverFireType](/vext/ref/fb/coverfiretype)                                                       | [CoverPeekType](/vext/ref/fb/coverpeektype)                                                 |
-| [CoverSelectionMethod](/vext/ref/fb/coverselectionmethod)                                                       | [CoverType](/vext/ref/fb/covertype)                                                               | [CriteriaType](/vext/ref/fb/criteriatype)                                                   |
-| [CurveInfinityType](/vext/ref/fb/curveinfinitytype)                                                             | [CurveShaderType](/vext/ref/fb/curveshadertype)                                                   | [CustomizationConstants](/vext/ref/fb/customizationconstants)                               |
-| [CustomReportValueKind](/vext/ref/fb/customreportvaluekind)                                                     | [DamageIndicationType](/vext/ref/fb/damageindicationtype)                                         | [DeathAnimationOperation](/vext/ref/fb/deathanimationoperation)                             |
-| [DebugMenuItemType](/vext/ref/fb/debugmenuitemtype)                                                             | [DebugRenderType](/vext/ref/fb/debugrendertype)                                                   | [DepthStencilCompareFunc](/vext/ref/fb/depthstencilcomparefunc)                             |
-| [DestructionConnectivityType](/vext/ref/fb/destructionconnectivitytype)                                         | [Difficulty](/vext/ref/fb/difficulty)                                                             | [DisableTeamType](/vext/ref/fb/disableteamtype)                                             |
-| [DogTagCategory](/vext/ref/fb/dogtagcategory)                                                                   | [DTagUploadPolicy](/vext/ref/fb/dtaguploadpolicy)                                                 | [DynamicAOMethod](/vext/ref/fb/dynamicaomethod)                                             |
-| [DynamicAvoidanceMode](/vext/ref/fb/dynamicavoidancemode)                                                       | [EmittableField](/vext/ref/fb/emittablefield)                                                     | [EmittableType](/vext/ref/fb/emittabletype)                                                 |
-| [EmitterParameter](/vext/ref/fb/emitterparameter)                                                               | [EnlightenColorMode](/vext/ref/fb/enlightencolormode)                                             | [EnlightenType](/vext/ref/fb/enlightentype)                                                 |
-| [EntitlementType](/vext/ref/fb/entitlementtype)                                                                 | [EntityCreatorType](/vext/ref/fb/entitycreatortype)                                               | [EntityInitPass](/vext/ref/fb/entityinitpass)                                               |
-| [EntityUpdateOrder](/vext/ref/fb/entityupdateorder)                                                             | [EntropyCodecType](/vext/ref/fb/entropycodectype)                                                 | [EntryClass](/vext/ref/fb/entryclass)                                                       |
-| [EntryEnterRestriction](/vext/ref/fb/entryenterrestriction)                                                     | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum)                                         | [EntrySeatType](/vext/ref/fb/entryseattype)                                                 |
-| [EntrySpottingSettings](/vext/ref/fb/entryspottingsettings)                                                     | [EvaluatorType](/vext/ref/fb/evaluatortype)                                                       | [EventCompareGateType](/vext/ref/fb/eventcomparegatetype)                                   |
-| [EventConnectionTargetType](/vext/ref/fb/eventconnectiontargettype)                                             | [EventGateState](/vext/ref/fb/eventgatestate)                                                     | [ExampleVehicleType](/vext/ref/fb/examplevehicletype)                                       |
-| [ExecutionModeType](/vext/ref/fb/executionmodetype)                                                             | [ExitToMenuReason](/vext/ref/fb/exittomenureason)                                                 | [ExpanderChannelMode](/vext/ref/fb/expanderchannelmode)                                     |
-| [EyeVectorSpace](/vext/ref/fb/eyevectorspace)                                                                   | [FactionId](/vext/ref/fb/factionid)                                                               | [FadeCurveType](/vext/ref/fb/fadecurvetype)                                                 |
-| [FaderType](/vext/ref/fb/fadertype)                                                                             | [FieldAccessType](/vext/ref/fb/fieldaccesstype)                                                   | [FireLogicType](/vext/ref/fb/firelogictype)                                                 |
-| [ForceCondition](/vext/ref/fb/forcecondition)                                                                   | [ForceMagnitudeInputType](/vext/ref/fb/forcemagnitudeinputtype)                                   | [ForceType](/vext/ref/fb/forcetype)                                                         |
-| [FrequencyShiftSsbFilter](/vext/ref/fb/frequencyshiftssbfilter)                                                 | [GainFaderFadeType](/vext/ref/fb/gainfaderfadetype)                                               | [GameOverResult](/vext/ref/fb/gameoverresult)                                               |
-| [GamePlatform](/vext/ref/fb/gameplatform)                                                                       | [GameplayBones](/vext/ref/fb/gameplaybones)                                                       | [GameSplineType](/vext/ref/fb/gamesplinetype)                                               |
-| [GearSlot](/vext/ref/fb/gearslot)                                                                               | [GrenadeType](/vext/ref/fb/grenadetype)                                                           | [GunMasterNotificationType](/vext/ref/fb/gunmasternotificationtype)                         |
-| [HardwareProfile](/vext/ref/fb/hardwareprofile)                                                                 | [HitReactionType](/vext/ref/fb/hitreactiontype)                                                   | [HudTextReceiver](/vext/ref/fb/hudtextreceiver)                                             |
-| [IKEffectorEnum](/vext/ref/fb/ikeffectorenum)                                                                   | [IndexBufferFormat](/vext/ref/fb/indexbufferformat)                                               | [IndexInBlueprint](/vext/ref/fb/indexinblueprint)                                           |
-| [InputActionMapPlatform](/vext/ref/fb/inputactionmapplatform)                                                   | [InputActionMapSlot](/vext/ref/fb/inputactionmapslot)                                             | [InputConceptIdentifiers](/vext/ref/fb/inputconceptidentifiers)                             |
-| [InputDeviceAxes](/vext/ref/fb/inputdeviceaxes)                                                                 | [InputDeviceKeys](/vext/ref/fb/inputdevicekeys)                                                   | [InputDeviceMotionControllerButtons](/vext/ref/fb/inputdevicemotioncontrollerbuttons)       |
-| [InputDeviceMouseButtons](/vext/ref/fb/inputdevicemousebuttons)                                                 | [InputDevicePadButtons](/vext/ref/fb/inputdevicepadbuttons)                                       | [InputDevicePOVs](/vext/ref/fb/inputdevicepovs)                                             |
-| [InputIds](/vext/ref/fb/inputids)                                                                               | [InteractionEntityType](/vext/ref/fb/interactionentitytype)                                       | [InterpolationType](/vext/ref/fb/interpolationtype)                                         |
-| [InvitePlatform](/vext/ref/fb/inviteplatform)                                                                   | [InviteType](/vext/ref/fb/invitetype)                                                             | [LanguageFormat](/vext/ref/fb/languageformat)                                               |
-| [LimiterChannelMode](/vext/ref/fb/limiterchannelmode)                                                           | [LockType](/vext/ref/fb/locktype)                                                                 | [LogFileCollisionMode](/vext/ref/fb/logfilecollisionmode)                                   |
-| [LogicalExpressionOperator](/vext/ref/fb/logicalexpressionoperator)                                             | [LoopType](/vext/ref/fb/looptype)                                                                 | [MapMarkerColorType](/vext/ref/fb/mapmarkercolortype)                                       |
-| [MapMarkerType](/vext/ref/fb/mapmarkertype)                                                                     | [MatchmakingNetworkTopology](/vext/ref/fb/matchmakingnetworktopology)                             | [MatchmakingPeer2PeerMode](/vext/ref/fb/matchmakingpeer2peermode)                           |
-| [MatchmakingPlatform](/vext/ref/fb/matchmakingplatform)                                                         | [MatchmakingRankedMode](/vext/ref/fb/matchmakingrankedmode)                                       | [MatchmakingSessionMode](/vext/ref/fb/matchmakingsessionmode)                               |
-| [MatchmakingVirtualizationMode](/vext/ref/fb/matchmakingvirtualizationmode)                                     | [MathOp](/vext/ref/fb/mathop)                                                                     | [MenuResponse](/vext/ref/fb/menuresponse)                                                   |
-| [MeshHandleFlags](/vext/ref/fb/meshhandleflags)                                                                 | [MeshLimits](/vext/ref/fb/meshlimits)                                                             | [MeshScatteringElevationMode](/vext/ref/fb/meshscatteringelevationmode)                     |
-| [MeshScatteringInstanceDataMode](/vext/ref/fb/meshscatteringinstancedatamode)                                   | [MeshScatteringOrientationMode](/vext/ref/fb/meshscatteringorientationmode)                       | [MeshScatteringRotationMode](/vext/ref/fb/meshscatteringrotationmode)                       |
-| [MeshSubsetCategory](/vext/ref/fb/meshsubsetcategory)                                                           | [MeshSubsetCategoryFlags](/vext/ref/fb/meshsubsetcategoryflags)                                   | [MeshType](/vext/ref/fb/meshtype)                                                           |
-| [MessageReciever](/vext/ref/fb/messagereciever)                                                                 | [MinimapIconInteractionConcept](/vext/ref/fb/minimapiconinteractionconcept)                       | [MipmapFilterMode](/vext/ref/fb/mipmapfiltermode)                                           |
-| [MixerValueAccumulateMode](/vext/ref/fb/mixervalueaccumulatemode)                                               | [MixerValueUI](/vext/ref/fb/mixervalueui)                                                         | [MixerValueUIOrientation](/vext/ref/fb/mixervalueuiorientation)                             |
-| [MixerValueUIScale](/vext/ref/fb/mixervalueuiscale)                                                             | [MixGroupPropertyType](/vext/ref/fb/mixgrouppropertytype)                                         | [MixGroupState](/vext/ref/fb/mixgroupstate)                                                 |
-| [ModelAnimationTransformType](/vext/ref/fb/modelanimationtransformtype)                                         | [ModelAnimationUpdateOrder](/vext/ref/fb/modelanimationupdateorder)                               | [ModifierAxis](/vext/ref/fb/modifieraxis)                                                   |
-| [ModifierEuler](/vext/ref/fb/modifiereuler)                                                                     | [NotifyType](/vext/ref/fb/notifytype)                                                             | [NumberGeneratorMode](/vext/ref/fb/numbergeneratormode)                                     |
-| [ObjectiveType](/vext/ref/fb/objectivetype)                                                                     | [OnlineEnvironment](/vext/ref/fb/onlineenvironment)                                               | [OrderType](/vext/ref/fb/ordertype)                                                         |
-| [OutputTransformSource](/vext/ref/fb/outputtransformsource)                                                     | [PackagingDetailLevel](/vext/ref/fb/packagingdetaillevel)                                         | [PartComponentConstants](/vext/ref/fb/partcomponentconstants)                               |
-| [PathfindingReplayMode](/vext/ref/fb/pathfindingreplaymode)                                                     | [PathfindingRepresentation](/vext/ref/fb/pathfindingrepresentation)                               | [PathfindingStreamAndConnect](/vext/ref/fb/pathfindingstreamandconnect)                     |
-| [PerformanceProfilePlatform](/vext/ref/fb/performanceprofileplatform)                                           | [PersistenceGameType](/vext/ref/fb/persistencegametype)                                           | [PersistentValueDataKind](/vext/ref/fb/persistentvaluedatakind)                             |
-| [PersistentValueDataType](/vext/ref/fb/persistentvaluedatatype)                                                 | [PersistentValueHistoryType](/vext/ref/fb/persistentvaluehistorytype)                             | [PersistentValueType](/vext/ref/fb/persistentvaluetype)                                     |
-| [PersonViewMode](/vext/ref/fb/personviewmode)                                                                   | [PhysicsWorldType](/vext/ref/fb/physicsworldtype)                                                 | [PickupPlayerEnum](/vext/ref/fb/pickupplayerenum)                                           |
-| [PixelNormalSpace](/vext/ref/fb/pixelnormalspace)                                                               | [PlayerKilledWeaponType](/vext/ref/fb/playerkilledweapontype)                                     | [PlayerRole](/vext/ref/fb/playerrole)                                                       |
-| [PlayerSpawnType](/vext/ref/fb/playerspawntype)                                                                 | [PointCloudAttributeQuantization](/vext/ref/fb/pointcloudattributequantization)                   | [PointCloudAttributeUsage](/vext/ref/fb/pointcloudattributeusage)                           |
-| [PolynomialOperation](/vext/ref/fb/polynomialoperation)                                                         | [PoseTransition](/vext/ref/fb/posetransition)                                                     | [PoseType](/vext/ref/fb/posetype)                                                           |
-| [PostProcessDebugMode](/vext/ref/fb/postprocessdebugmode)                                                       | [PresenceRequest](/vext/ref/fb/presencerequest)                                                   | [PrimitiveType](/vext/ref/fb/primitivetype)                                                 |
-| [ProcessorType](/vext/ref/fb/processortype)                                                                     | [ProfileOptionsType](/vext/ref/fb/profileoptionstype)                                             | [ProgressType](/vext/ref/fb/progresstype)                                                   |
-| [PropellerType](/vext/ref/fb/propellertype)                                                                     | [ProximityObjectType](/vext/ref/fb/proximityobjecttype)                                           | [QualityLevel](/vext/ref/fb/qualitylevel)                                                   |
-| [QuickThrowTypeEnum](/vext/ref/fb/quickthrowtypeenum)                                                           | [RasterNodeUsage](/vext/ref/fb/rasternodeusage)                                                   | [RasterTreeBuildMode](/vext/ref/fb/rastertreebuildmode)                                     |
-| [ReadinessLevel](/vext/ref/fb/readinesslevel)                                                                   | [ReadinessState](/vext/ref/fb/readinessstate)                                                     | [Realm](/vext/ref/fb/realm)                                                                 |
-| [ReloadBehavior](/vext/ref/fb/reloadbehavior)                                                                   | [ReloadLogic](/vext/ref/fb/reloadlogic)                                                           | [ReloadType](/vext/ref/fb/reloadtype)                                                       |
-| [RenderBlendMode](/vext/ref/fb/renderblendmode)                                                                 | [RenderBlendOp](/vext/ref/fb/renderblendop)                                                       | [RenderClearMask](/vext/ref/fb/renderclearmask)                                             |
-| [RenderCullMode](/vext/ref/fb/rendercullmode)                                                                   | [RenderDepthMode](/vext/ref/fb/renderdepthmode)                                                   | [RenderFillMode](/vext/ref/fb/renderfillmode)                                               |
-| [RenderVolumeTransformType](/vext/ref/fb/rendervolumetransformtype)                                             | [RenderWriteMask](/vext/ref/fb/renderwritemask)                                                   | [ResourceBundleKind](/vext/ref/fb/resourcebundlekind)                                       |
-| [RichPresencePropertyType](/vext/ref/fb/richpresencepropertytype)                                               | [RigidBodyCollisionLayer](/vext/ref/fb/rigidbodycollisionlayer)                                   | [RigidBodyMotionType](/vext/ref/fb/rigidbodymotiontype)                                     |
-| [RigidBodyQualityType](/vext/ref/fb/rigidbodyqualitytype)                                                       | [RigidBodyType](/vext/ref/fb/rigidbodytype)                                                       | [RotationAxis](/vext/ref/fb/rotationaxis)                                                   |
-| [RotationAxisEnum](/vext/ref/fb/rotationaxisenum)                                                               | [RotationChannel](/vext/ref/fb/rotationchannel)                                                   | [RouteChannel](/vext/ref/fb/routechannel)                                                   |
-| [RouteType](/vext/ref/fb/routetype)                                                                             | [SampleCenter](/vext/ref/fb/samplecenter)                                                         | [ScoreboardPosition](/vext/ref/fb/scoreboardposition)                                       |
-| [ScoringBucket](/vext/ref/fb/scoringbucket)                                                                     | [ScoringBucketType](/vext/ref/fb/scoringbuckettype)                                               | [ScoringVisibilityType](/vext/ref/fb/scoringvisibilitytype)                                 |
-| [ScreenEffectFrameType](/vext/ref/fb/screeneffectframetype)                                                     | [SecureReason](/vext/ref/fb/securereason)                                                         | [ServerBackendAttribute](/vext/ref/fb/serverbackendattribute)                               |
-| [ServerMapSequencerEventType](/vext/ref/fb/servermapsequencereventtype)                                         | [ServerUnlockListEventType](/vext/ref/fb/serverunlocklisteventtype)                               | [ServerUnlockSystemType](/vext/ref/fb/serverunlocksystemtype)                               |
-| [ShaderBlendMode](/vext/ref/fb/shaderblendmode)                                                                 | [ShaderBranchMethod](/vext/ref/fb/shaderbranchmethod)                                             | [ShaderComparisonOperator](/vext/ref/fb/shadercomparisonoperator)                           |
-| [ShaderConstantFunction](/vext/ref/fb/shaderconstantfunction)                                                   | [ShaderConstantSystemTexture](/vext/ref/fb/shaderconstantsystemtexture)                           | [ShaderDepthBiasGroup](/vext/ref/fb/shaderdepthbiasgroup)                                   |
-| [ShaderGBufferLayout](/vext/ref/fb/shadergbufferlayout)                                                         | [ShaderGeometrySpace](/vext/ref/fb/shadergeometryspace)                                           | [ShaderInstancingMethod](/vext/ref/fb/shaderinstancingmethod)                               |
-| [ShaderInterpolationType](/vext/ref/fb/shaderinterpolationtype)                                                 | [ShaderLightingModel](/vext/ref/fb/shaderlightingmodel)                                           | [ShaderObjectLighting](/vext/ref/fb/shaderobjectlighting)                                   |
-| [ShaderParameterType](/vext/ref/fb/shaderparametertype)                                                         | [ShaderPortType](/vext/ref/fb/shaderporttype)                                                     | [ShaderPositionSpace](/vext/ref/fb/shaderpositionspace)                                     |
-| [ShaderProgram](/vext/ref/fb/shaderprogram)                                                                     | [ShaderRenderMode](/vext/ref/fb/shaderrendermode)                                                 | [ShaderRenderPath](/vext/ref/fb/shaderrenderpath)                                           |
-| [ShaderShadowmapMethod](/vext/ref/fb/shadershadowmapmethod)                                                     | [ShaderShadowmapQuality](/vext/ref/fb/shadershadowmapquality)                                     | [ShaderSkinningMethod](/vext/ref/fb/shaderskinningmethod)                                   |
-| [ShaderStageType](/vext/ref/fb/shaderstagetype)                                                                 | [ShaderTextureCoordType](/vext/ref/fb/shadertexturecoordtype)                                     | [ShaderTextureDecompression](/vext/ref/fb/shadertexturedecompression)                       |
-| [ShaderTimeType](/vext/ref/fb/shadertimetype)                                                                   | [ShaderValueFormat](/vext/ref/fb/shadervalueformat)                                               | [ShaderValueParameterType](/vext/ref/fb/shadervalueparametertype)                           |
-| [ShaderValueType](/vext/ref/fb/shadervaluetype)                                                                 | [ShapeType](/vext/ref/fb/shapetype)                                                               | [ShooterInfo](/vext/ref/fb/shooterinfo)                                                     |
-| [ShootType](/vext/ref/fb/shoottype)                                                                             | [SimpleTransformOperation](/vext/ref/fb/simpletransformoperation)                                 | [SKU](/vext/ref/fb/sku)                                                                     |
-| [SocketPhysics](/vext/ref/fb/socketphysics)                                                                     | [SocketType](/vext/ref/fb/sockettype)                                                             | [SoldierBuffId](/vext/ref/fb/soldierbuffid)                                                 |
-| [SoldierChangeAction](/vext/ref/fb/soldierchangeaction)                                                         | [SoldierEmote](/vext/ref/fb/soldieremote)                                                         | [SoundDataRequestResult](/vext/ref/fb/sounddatarequestresult)                               |
-| [SoundDataState](/vext/ref/fb/sounddatastate)                                                                   | [SoundGraphPluginConnectionType](/vext/ref/fb/soundgraphpluginconnectiontype)                     | [SoundPatchDefaultEvent](/vext/ref/fb/soundpatchdefaultevent)                               |
-| [SoundTestParamBehavior](/vext/ref/fb/soundtestparambehavior)                                                   | [SoundTestTransformBehavior](/vext/ref/fb/soundtesttransformbehavior)                             | [SoundWaveReadPriority](/vext/ref/fb/soundwavereadpriority)                                 |
-| [SoundWaveVariationSelection](/vext/ref/fb/soundwavevariationselection)                                         | [SoundWaveVoicePriority](/vext/ref/fb/soundwavevoicepriority)                                     | [SpaceType](/vext/ref/fb/spacetype)                                                         |
-| [SpecialMovesPoseType](/vext/ref/fb/specialmovesposetype)                                                       | [SpotLightShape](/vext/ref/fb/spotlightshape)                                                     | [SpottingType](/vext/ref/fb/spottingtype)                                                   |
-| [SpotType](/vext/ref/fb/spottype)                                                                               | [SquadAction](/vext/ref/fb/squadaction)                                                           | [SquadId](/vext/ref/fb/squadid)                                                             |
-| [StabilizerProperty](/vext/ref/fb/stabilizerproperty)                                                           | [StatEvent](/vext/ref/fb/statevent)                                                               | [StatPeriod](/vext/ref/fb/statperiod)                                                       |
-| [StatsMultiplicity](/vext/ref/fb/statsmultiplicity)                                                             | [StencilOperation](/vext/ref/fb/stenciloperation)                                                 | [StreamRealm](/vext/ref/fb/streamrealm)                                                     |
-| [StreamStarveMode](/vext/ref/fb/streamstarvemode)                                                               | [StrengthType](/vext/ref/fb/strengthtype)                                                         | [SubRealm](/vext/ref/fb/subrealm)                                                           |
-| [SurfaceShaderType](/vext/ref/fb/surfaceshadertype)                                                             | [SweepSelectionType](/vext/ref/fb/sweepselectiontype)                                             | [SwitchTeamsResult](/vext/ref/fb/switchteamsresult)                                         |
-| [SyncAnimationsState](/vext/ref/fb/syncanimationsstate)                                                         | [TargetMode](/vext/ref/fb/targetmode)                                                             | [TargetPosKnowledgeType](/vext/ref/fb/targetposknowledgetype)                               |
-| [TeamAssignMode](/vext/ref/fb/teamassignmode)                                                                   | [TeamId](/vext/ref/fb/teamid)                                                                     | [TerrainBrushDetailOperation](/vext/ref/fb/terrainbrushdetailoperation)                     |
-| [TerrainDrawPassType](/vext/ref/fb/terraindrawpasstype)                                                         | [TerrainLayerType](/vext/ref/fb/terrainlayertype)                                                 | [TerrainRenderMode](/vext/ref/fb/terrainrendermode)                                         |
-| [TextureAddress](/vext/ref/fb/textureaddress)                                                                   | [TextureCompressQualityMode](/vext/ref/fb/texturecompressqualitymode)                             | [TextureFilter](/vext/ref/fb/texturefilter)                                                 |
-| [TextureFormat](/vext/ref/fb/textureformat)                                                                     | [TextureType](/vext/ref/fb/texturetype)                                                           | [TicketDecreaseType](/vext/ref/fb/ticketdecreasetype)                                       |
-| [TimerMode](/vext/ref/fb/timermode)                                                                             | [TinyEvent](/vext/ref/fb/tinyevent)                                                               | [TonemapMethod](/vext/ref/fb/tonemapmethod)                                                 |
-| [ToolTipType](/vext/ref/fb/tooltiptype)                                                                         | [TransformPart](/vext/ref/fb/transformpart)                                                       | [UI3dIconQuery](/vext/ref/fb/ui3diconquery)                                                 |
-| [UIColorType](/vext/ref/fb/uicolortype)                                                                         | [UIConsoleKeyboardStatus](/vext/ref/fb/uiconsolekeyboardstatus)                                   | [UIConstants](/vext/ref/fb/uiconstants)                                                     |
-| [UICreditsTextType](/vext/ref/fb/uicreditstexttype)                                                             | [UIGraphPriority](/vext/ref/fb/uigraphpriority)                                                   | [UIHudIcon](/vext/ref/fb/uihudicon)                                                         |
-| [UIIconState](/vext/ref/fb/uiiconstate)                                                                         | [UIInputAction](/vext/ref/fb/uiinputaction)                                                       | [UIInputActionEventType](/vext/ref/fb/uiinputactioneventtype)                               |
-| [UIInputEvent](/vext/ref/fb/uiinputevent)                                                                       | [UIInterruptID](/vext/ref/fb/uiinterruptid)                                                       | [UIKeyboardEventType](/vext/ref/fb/uikeyboardeventtype)                                     |
-| [UIListEmptyRowType](/vext/ref/fb/uilistemptyrowtype)                                                           | [UIListNavigationType](/vext/ref/fb/uilistnavigationtype)                                         | [UIListRowType](/vext/ref/fb/uilistrowtype)                                                 |
-| [UIListUnFocusMode](/vext/ref/fb/uilistunfocusmode)                                                             | [UILogicOperator](/vext/ref/fb/uilogicoperator)                                                   | [UIMessageEntityType](/vext/ref/fb/uimessageentitytype)                                     |
-| [UIMessageType](/vext/ref/fb/uimessagetype)                                                                     | [UIMinimapZoomState](/vext/ref/fb/uiminimapzoomstate)                                             | [UIMouseButton](/vext/ref/fb/uimousebutton)                                                 |
-| [UIMouseEventType](/vext/ref/fb/uimouseeventtype)                                                               | [UIPartIdentifier](/vext/ref/fb/uipartidentifier)                                                 | [UIPopupType](/vext/ref/fb/uipopuptype)                                                     |
-| [UISettingSymbols](/vext/ref/fb/uisettingsymbols)                                                               | [UISettingType](/vext/ref/fb/uisettingtype)                                                       | [UIState](/vext/ref/fb/uistate)                                                             |
-| [UISystemType](/vext/ref/fb/uisystemtype)                                                                       | [UIUpdateType](/vext/ref/fb/uiupdatetype)                                                         | [UIWidgetEventID](/vext/ref/fb/uiwidgeteventid)                                             |
-| [UIWidgetEventQuery](/vext/ref/fb/uiwidgeteventquery)                                                           | [UndergrowthOrientationMode](/vext/ref/fb/undergrowthorientationmode)                             | [UndergrowthRotationMode](/vext/ref/fb/undergrowthrotationmode)                             |
-| [UnlockAvailability](/vext/ref/fb/unlockavailability)                                                           | [UpdatePass](/vext/ref/fb/updatepass)                                                             | [Vec3MathOp](/vext/ref/fb/vec3mathop)                                                       |
-| [VehicleCategory](/vext/ref/fb/vehiclecategory)                                                                 | [VehicleHudType](/vext/ref/fb/vehiclehudtype)                                                     | [VehicleInputTweakType](/vext/ref/fb/vehicleinputtweaktype)                                 |
-| [VehicleMode](/vext/ref/fb/vehiclemode)                                                                         | [VehicleStateType](/vext/ref/fb/vehiclestatetype)                                                 | [VeniceNetworkUnlockGainedType](/vext/ref/fb/venicenetworkunlockgainedtype)                 |
-| [VertexElementClassification](/vext/ref/fb/vertexelementclassification)                                         | [VertexElementFormat](/vext/ref/fb/vertexelementformat)                                           | [VertexElementUsage](/vext/ref/fb/vertexelementusage)                                       |
-| [VertexNormalSpace](/vext/ref/fb/vertexnormalspace)                                                             | [VirtualGameState](/vext/ref/fb/virtualgamestate)                                                 | [VoiceChannel](/vext/ref/fb/voicechannel)                                                   |
-| [VoiceOverArithmeticExpressionType](/vext/ref/fb/voiceoverarithmeticexpressiontype)                             | [VoiceOverCompareExpressionType](/vext/ref/fb/voiceovercompareexpressiontype)                     | [VoiceOverContainerConditionMode](/vext/ref/fb/voiceovercontainerconditionmode)             |
-| [VoiceOverConversationInterruptMode](/vext/ref/fb/voiceoverconversationinterruptmode)                           | [VoiceOverConversationQueueGroupPolyphony](/vext/ref/fb/voiceoverconversationqueuegrouppolyphony) | [VoiceOverConversationQueueMode](/vext/ref/fb/voiceoverconversationqueuemode)               |
-| [VoiceOverDialogTakeBehavior](/vext/ref/fb/voiceoverdialogtakebehavior)                                         | [VoiceOverLabelCompareMode](/vext/ref/fb/voiceoverlabelcomparemode)                               | [VoiceOverLabelSourceMode](/vext/ref/fb/voiceoverlabelsourcemode)                           |
-| [VoiceOverLogicFlowMode](/vext/ref/fb/voiceoverlogicflowmode)                                                   | [VoiceOverPronunciationFallback](/vext/ref/fb/voiceoverpronunciationfallback)                     | [VoiceOverValueType](/vext/ref/fb/voiceovervaluetype)                                       |
-| [VoiceOverWaveNameTranslation](/vext/ref/fb/voiceoverwavenametranslation)                                       | [VotingType](/vext/ref/fb/votingtype)                                                             | [WarningPlayerType](/vext/ref/fb/warningplayertype)                                         |
-| [WarnTarget](/vext/ref/fb/warntarget)                                                                           | [WaveCodec](/vext/ref/fb/wavecodec)                                                               | [WavePriority](/vext/ref/fb/wavepriority)                                                   |
-| [WaypointsSnappingSettings](/vext/ref/fb/waypointssnappingsettings)                                             | [WaypointVaultType](/vext/ref/fb/waypointvaulttype)                                               | [WeaponAnimBaseSetEnum](/vext/ref/fb/weaponanimbasesetenum)                                 |
-| [WeaponAnimType](/vext/ref/fb/weaponanimtype)                                                                   | [WeaponClassEnum](/vext/ref/fb/weaponclassenum)                                                   | [WeaponClassification](/vext/ref/fb/weaponclassification)                                   |
-| [WeaponFiringEvent](/vext/ref/fb/weaponfiringevent)                                                             | [WeaponOverrideValueType](/vext/ref/fb/weaponoverridevaluetype)                                   | [WeaponSlot](/vext/ref/fb/weaponslot)                                                       |
-| [WeaponSwitchingEnum](/vext/ref/fb/weaponswitchingenum)                                                         | [WeaponUnlocks](/vext/ref/fb/weaponunlocks)                                                       | [WheelPhysicsType](/vext/ref/fb/wheelphysicstype)                                           |
-| [WidgetHorisontalAlignment](/vext/ref/fb/widgethorisontalalignment)                                             | [WidgetVerticalAlignment](/vext/ref/fb/widgetverticalalignment)                                   | [WorldViewMode](/vext/ref/fb/worldviewmode)                                                 |
-| [XenonShaderBranchType](/vext/ref/fb/xenonshaderbranchtype)                                                     | [XenonTessellationMode](/vext/ref/fb/xenontessellationmode)                                       | [ZoomLevelActivateEventType](/vext/ref/fb/zoomlevelactivateeventtype)                       |
+## Instance types
+| | |
+| --- | --- |
+| [AABBData](/vext/ref/fb/aabbdata) | [AbstractAwardData](/vext/ref/fb/abstractawarddata) |
+| [AbstractLeaderboardData](/vext/ref/fb/abstractleaderboarddata) | [AbstractLocoWaypointData](/vext/ref/fb/abstractlocowaypointdata) |
+| [AbstractPersistenceData](/vext/ref/fb/abstractpersistencedata) | [AbstractPersistentStatRef](/vext/ref/fb/abstractpersistentstatref) |
+| [ActionNode](/vext/ref/fb/actionnode) | [AdsrNodeData](/vext/ref/fb/adsrnodedata) |
+| [AdvancedDogTagData](/vext/ref/fb/advanceddogtagdata) | [AdvertisementComponentData](/vext/ref/fb/advertisementcomponentdata) |
+| [AdvertisementLevelDescriptionComponent](/vext/ref/fb/advertisementleveldescriptioncomponent) | [AeroDynamicPhysicsData](/vext/ref/fb/aerodynamicphysicsdata) |
+| [AIAimingConstraintsData](/vext/ref/fb/aiaimingconstraintsdata) | [AIDifficultyData](/vext/ref/fb/aidifficultydata) |
+| [AIEntryData](/vext/ref/fb/aientrydata) | [AiffWriterNodeData](/vext/ref/fb/aiffwriternodedata) |
+| [AILocoComponentData](/vext/ref/fb/ailococomponentdata) | [AimAtOrderEntityData](/vext/ref/fb/aimatorderentitydata) |
+| [AimerModifierData](/vext/ref/fb/aimermodifierdata) | [AimingConstraintEntityCommonData](/vext/ref/fb/aimingconstraintentitycommondata) |
+| [AimingConstraintEntityData](/vext/ref/fb/aimingconstraintentitydata) | [AIProximityReactionsComponentData](/vext/ref/fb/aiproximityreactionscomponentdata) |
+| [AirRadarData](/vext/ref/fb/airradardata) | [AirResistanceData](/vext/ref/fb/airresistancedata) |
+| [AISettingsData](/vext/ref/fb/aisettingsdata) | [AISystemAsset](/vext/ref/fb/aisystemasset) |
+| [AIVehicleBehaviourData](/vext/ref/fb/aivehiclebehaviourdata) | [AIVehicleTypes](/vext/ref/fb/aivehicletypes) |
+| [AIWeaponData](/vext/ref/fb/aiweapondata) | [AlignmentData](/vext/ref/fb/alignmentdata) |
+| [AllowedVehiclesData](/vext/ref/fb/allowedvehiclesdata) | [AlternateCameraViewData](/vext/ref/fb/alternatecameraviewdata) |
+| [AlternateSpawnEntityData](/vext/ref/fb/alternatespawnentitydata) | [AmmoCrateEntityData](/vext/ref/fb/ammocrateentitydata) |
+| [AndEntityData](/vext/ref/fb/andentitydata) | [AnimatedCameraData](/vext/ref/fb/animatedcameradata) |
+| [AnimatedDestructionComponentData](/vext/ref/fb/animateddestructioncomponentdata) | [AnimatedDriverEntityData](/vext/ref/fb/animateddriverentitydata) |
+| [AnimatedPointCloudAsset](/vext/ref/fb/animatedpointcloudasset) | [AnimatedPointCloudComponentData](/vext/ref/fb/animatedpointcloudcomponentdata) |
+| [AnimatedPointCloudEntityData](/vext/ref/fb/animatedpointcloudentitydata) | [AnimatedSkeletonDatabase](/vext/ref/fb/animatedskeletondatabase) |
+| [AnimatedTransformEntityData](/vext/ref/fb/animatedtransformentitydata) | [AnimationControlledStateData](/vext/ref/fb/animationcontrolledstatedata) |
+| [AnimationEnumerationChoiceEntityData](/vext/ref/fb/animationenumerationchoiceentitydata) | [AnimationEnumerationEntityData](/vext/ref/fb/animationenumerationentitydata) |
+| [AnimationSignalEntityData](/vext/ref/fb/animationsignalentitydata) | [AnimationSpawnTemplate](/vext/ref/fb/animationspawntemplate) |
+| [AnimationTurretRotationComponentData](/vext/ref/fb/animationturretrotationcomponentdata) | [AntAnimatableComponentData](/vext/ref/fb/antanimatablecomponentdata) |
+| [AntAnimationSetAsset](/vext/ref/fb/antanimationsetasset) | [AntDrivenComponentData](/vext/ref/fb/antdrivencomponentdata) |
+| [AntEnumeration](/vext/ref/fb/antenumeration) | [AntEventEntityData](/vext/ref/fb/antevententitydata) |
+| [AntInteractionData](/vext/ref/fb/antinteractiondata) | [AntiRollBar](/vext/ref/fb/antirollbar) |
+| [AntMemorySettings](/vext/ref/fb/antmemorysettings) | [AntPackageAsset](/vext/ref/fb/antpackageasset) |
+| [AntProjectAsset](/vext/ref/fb/antprojectasset) | [AntSettings](/vext/ref/fb/antsettings) |
+| [AntTrackData](/vext/ref/fb/anttrackdata) | [AntTrackItemData](/vext/ref/fb/anttrackitemdata) |
+| [AreaProximityEntityData](/vext/ref/fb/areaproximityentitydata) | [AreaTriggerEntityData](/vext/ref/fb/areatriggerentitydata) |
+| [ArmamentData](/vext/ref/fb/armamentdata) | [ArmDisarmAwardEntityData](/vext/ref/fb/armdisarmawardentitydata) |
+| [ArtilleryStrikeEntityData](/vext/ref/fb/artillerystrikeentitydata) | [ArtilleryStrikeWeaponData](/vext/ref/fb/artillerystrikeweapondata) |
+| [AssemblyDescriptorData](/vext/ref/fb/assemblydescriptordata) | [Asset](/vext/ref/fb/asset) |
+| [AudioGraphAssetParameter](/vext/ref/fb/audiographassetparameter) | [AudioGraphData](/vext/ref/fb/audiographdata) |
+| [AudioGraphEvent](/vext/ref/fb/audiographevent) | [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) |
+| [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup) | [AudioGraphParameter](/vext/ref/fb/audiographparameter) |
+| [AudioLanguage](/vext/ref/fb/audiolanguage) | [AudioLanguagesDependancyObject](/vext/ref/fb/audiolanguagesdependancyobject) |
+| [AudioLanguageSetting](/vext/ref/fb/audiolanguagesetting) | [AudioMaterialDefinitions](/vext/ref/fb/audiomaterialdefinitions) |
+| [AudioSettings](/vext/ref/fb/audiosettings) | [AudioSystemAsset](/vext/ref/fb/audiosystemasset) |
+| [AutoSquadEntityData](/vext/ref/fb/autosquadentitydata) | [AutoTeamEntityData](/vext/ref/fb/autoteamentitydata) |
+| [AvengerScoringHandlerData](/vext/ref/fb/avengerscoringhandlerdata) | [AwardableTreeBase](/vext/ref/fb/awardabletreebase) |
+| [AwardAchievementData](/vext/ref/fb/awardachievementdata) | [AwardData](/vext/ref/fb/awarddata) |
+| [AwardDataTree](/vext/ref/fb/awarddatatree) | [AwardHeaderData](/vext/ref/fb/awardheaderdata) |
+| [AwardStarData](/vext/ref/fb/awardstardata) | [AwardStarNameData](/vext/ref/fb/awardstarnamedata) |
+| [AxesInputActionData](/vext/ref/fb/axesinputactiondata) | [BandPassFir64NodeData](/vext/ref/fb/bandpassfir64nodedata) |
+| [BandPassIir2NodeData](/vext/ref/fb/bandpassiir2nodedata) | [BangerEntityData](/vext/ref/fb/bangerentitydata) |
+| [BangerSpawnImpulseParams](/vext/ref/fb/bangerspawnimpulseparams) | [BaseEmitterData](/vext/ref/fb/baseemitterdata) |
+| [BaseShapeData](/vext/ref/fb/baseshapedata) | [BaseSkeletonAsset](/vext/ref/fb/baseskeletonasset) |
+| [BasicDogTagData](/vext/ref/fb/basicdogtagdata) | [BehaviourData](/vext/ref/fb/behaviourdata) |
+| [BehaviourTemplateData](/vext/ref/fb/behaviourtemplatedata) | [BFAISettingsData](/vext/ref/fb/bfaisettingsdata) |
+| [BFAISystem](/vext/ref/fb/bfaisystem) | [BFOrderEntityData](/vext/ref/fb/bforderentitydata) |
+| [BFServerConfiguration](/vext/ref/fb/bfserverconfiguration) | [BFServerSettings](/vext/ref/fb/bfserversettings) |
+| [BFTargetEvaluatorComponentData](/vext/ref/fb/bftargetevaluatorcomponentdata) | [BigWorldSetting](/vext/ref/fb/bigworldsetting) |
+| [BigWorldSettingsAsset](/vext/ref/fb/bigworldsettingsasset) | [BinaryLogicNode](/vext/ref/fb/binarylogicnode) |
+| [BlazePresenceBackendData](/vext/ref/fb/blazepresencebackenddata) | [BlazeServerBackendData](/vext/ref/fb/blazeserverbackenddata) |
+| [Blueprint](/vext/ref/fb/blueprint) | [BlueprintAndVariationPair](/vext/ref/fb/blueprintandvariationpair) |
+| [BlueprintBundle](/vext/ref/fb/blueprintbundle) | [BlueprintBundleLoaderEntityData](/vext/ref/fb/blueprintbundleloaderentitydata) |
+| [BlueprintBundleMetadata](/vext/ref/fb/blueprintbundlemetadata) | [BlueprintBundleMetadataContainer](/vext/ref/fb/blueprintbundlemetadatacontainer) |
+| [BlueprintBundleSelectorEntityData](/vext/ref/fb/blueprintbundleselectorentitydata) | [BlueprintBundleStateLogicEntityData](/vext/ref/fb/blueprintbundlestatelogicentitydata) |
+| [BlueprintContainerItem](/vext/ref/fb/blueprintcontaineritem) | [BoatFloatPhysicsData](/vext/ref/fb/boatfloatphysicsdata) |
+| [BoneCollisionComponentData](/vext/ref/fb/bonecollisioncomponentdata) | [BoneFakePhysicsData](/vext/ref/fb/bonefakephysicsdata) |
+| [BoolEntityData](/vext/ref/fb/boolentitydata) | [BoolHubEntityData](/vext/ref/fb/boolhubentitydata) |
+| [BoolPropertyTrackData](/vext/ref/fb/boolpropertytrackdata) | [BoolRecordingData](/vext/ref/fb/boolrecordingdata) |
+| [BoolToEventEntityData](/vext/ref/fb/booltoevententitydata) | [BoolUnlockValuePair](/vext/ref/fb/boolunlockvaluepair) |
+| [BotPriorityConfigData](/vext/ref/fb/botpriorityconfigdata) | [BoxEvaluatorData](/vext/ref/fb/boxevaluatordata) |
+| [BoxFloatPhysicsData](/vext/ref/fb/boxfloatphysicsdata) | [BreakableControllerComponentData](/vext/ref/fb/breakablecontrollercomponentdata) |
+| [BreakableModelEntityData](/vext/ref/fb/breakablemodelentitydata) | [BreakablePartComponentData](/vext/ref/fb/breakablepartcomponentdata) |
+| [BreakableRuinComponentData](/vext/ref/fb/breakableruincomponentdata) | [BreathControlData](/vext/ref/fb/breathcontroldata) |
+| [BulletEntityData](/vext/ref/fb/bulletentitydata) | [BusNodeData](/vext/ref/fb/busnodedata) |
+| [ByteRasterData](/vext/ref/fb/byterasterdata) | [CameraActionData](/vext/ref/fb/cameraactiondata) |
+| [CameraComponentData](/vext/ref/fb/cameracomponentdata) | [CameraComponentSoundData](/vext/ref/fb/cameracomponentsounddata) |
+| [CameraData](/vext/ref/fb/cameradata) | [CameraEnterAreaTriggerEntityData](/vext/ref/fb/cameraenterareatriggerentitydata) |
+| [CameraEntityBaseData](/vext/ref/fb/cameraentitybasedata) | [CameraEntityData](/vext/ref/fb/cameraentitydata) |
+| [CameraLoosePartPhysicsData](/vext/ref/fb/cameraloosepartphysicsdata) | [CameraModeAsset](/vext/ref/fb/cameramodeasset) |
+| [CameraParamsComponentData](/vext/ref/fb/cameraparamscomponentdata) | [CameraProximityEvaluatorData](/vext/ref/fb/cameraproximityevaluatordata) |
+| [CameraRecoilData](/vext/ref/fb/camerarecoildata) | [CameraShakeNodeData](/vext/ref/fb/camerashakenodedata) |
+| [CameraTransition](/vext/ref/fb/cameratransition) | [CancelOrderEntityData](/vext/ref/fb/cancelorderentitydata) |
+| [CannedScenarioEntityData](/vext/ref/fb/cannedscenarioentitydata) | [CapturePointEntityData](/vext/ref/fb/capturepointentitydata) |
+| [CapturePointScoringHandlerData](/vext/ref/fb/capturepointscoringhandlerdata) | [CellDetailSelectionRule](/vext/ref/fb/celldetailselectionrule) |
+| [ChangeReadinessOrderEntityData](/vext/ref/fb/changereadinessorderentitydata) | [CharacterAnimationEntityData](/vext/ref/fb/characteranimationentitydata) |
+| [CharacterAnimationSpaceEntityData](/vext/ref/fb/characteranimationspaceentitydata) | [CharacterAsset](/vext/ref/fb/characterasset) |
+| [CharacterBlueprint](/vext/ref/fb/characterblueprint) | [CharacterCameraComponentData](/vext/ref/fb/charactercameracomponentdata) |
+| [CharacterCustomizationAsset](/vext/ref/fb/charactercustomizationasset) | [CharacterCustomizationComponentData](/vext/ref/fb/charactercustomizationcomponentdata) |
+| [CharacterEntityData](/vext/ref/fb/characterentitydata) | [CharacterHealthComponentData](/vext/ref/fb/characterhealthcomponentdata) |
+| [CharacterInVehicleScenarioEntityData](/vext/ref/fb/characterinvehiclescenarioentitydata) | [CharacterLightingComponentData](/vext/ref/fb/characterlightingcomponentdata) |
+| [CharacterPhysicsComponentData](/vext/ref/fb/characterphysicscomponentdata) | [CharacterPhysicsData](/vext/ref/fb/characterphysicsdata) |
+| [CharacterPoseData](/vext/ref/fb/characterposedata) | [CharacterSocketListAsset](/vext/ref/fb/charactersocketlistasset) |
+| [CharacterSpawnReferenceObjectData](/vext/ref/fb/characterspawnreferenceobjectdata) | [CharacterSprintData](/vext/ref/fb/charactersprintdata) |
+| [CharacterStateData](/vext/ref/fb/characterstatedata) | [CharacterStatePoseInfo](/vext/ref/fb/characterstateposeinfo) |
+| [CharacterStateTriggerEntityData](/vext/ref/fb/characterstatetriggerentitydata) | [CharacterWeaponComponentData](/vext/ref/fb/characterweaponcomponentdata) |
+| [ChaseCameraData](/vext/ref/fb/chasecameradata) | [ChassisComponentData](/vext/ref/fb/chassiscomponentdata) |
+| [ChatSettings](/vext/ref/fb/chatsettings) | [ChildBarrelComponentData](/vext/ref/fb/childbarrelcomponentdata) |
+| [ChildComponentData](/vext/ref/fb/childcomponentdata) | [ChildMovingBodyData](/vext/ref/fb/childmovingbodydata) |
+| [ChildRotationBodyData](/vext/ref/fb/childrotationbodydata) | [ChunkStreamerEntityData](/vext/ref/fb/chunkstreamerentitydata) |
+| [ClearAreaTriggerEntityData](/vext/ref/fb/clearareatriggerentitydata) | [ClientEffectMaskVolumeEntityData](/vext/ref/fb/clienteffectmaskvolumeentitydata) |
+| [ClientJuiceState](/vext/ref/fb/clientjuicestate) | [ClientMetricsSettings](/vext/ref/fb/clientmetricssettings) |
+| [ClientPlayerInputPlaybackEntityData](/vext/ref/fb/clientplayerinputplaybackentitydata) | [ClientPlayerInputRecorderEntityData](/vext/ref/fb/clientplayerinputrecorderentitydata) |
+| [ClientSettings](/vext/ref/fb/clientsettings) | [ClimbingStateData](/vext/ref/fb/climbingstatedata) |
+| [ClimbLadderComponentData](/vext/ref/fb/climbladdercomponentdata) | [ClosestInstancesScopeStrategyData](/vext/ref/fb/closestinstancesscopestrategydata) |
+| [CollisionData](/vext/ref/fb/collisiondata) | [ColorCorrectionComponentData](/vext/ref/fb/colorcorrectioncomponentdata) |
+| [ColorReference](/vext/ref/fb/colorreference) | [ColorTintScopeFilterData](/vext/ref/fb/colortintscopefilterdata) |
+| [ColorUnlockPartData](/vext/ref/fb/colorunlockpartdata) | [CombatActionTriggerEntityData](/vext/ref/fb/combatactiontriggerentitydata) |
+| [CombatAreaTriggerEntityData](/vext/ref/fb/combatareatriggerentitydata) | [CombatConstantData](/vext/ref/fb/combatconstantdata) |
+| [CombustionEngineConfigData](/vext/ref/fb/combustionengineconfigdata) | [CompareBoolEntityData](/vext/ref/fb/compareboolentitydata) |
+| [CompareEntityData](/vext/ref/fb/compareentitydata) | [CompareFloatEntityData](/vext/ref/fb/comparefloatentitydata) |
+| [CompareIntEntityData](/vext/ref/fb/compareintentitydata) | [ComparisonLogicNode](/vext/ref/fb/comparisonlogicnode) |
+| [ComponentData](/vext/ref/fb/componentdata) | [CompositeMeshAsset](/vext/ref/fb/compositemeshasset) |
+| [CompositeMeshEntityData](/vext/ref/fb/compositemeshentitydata) | [CompressorNodeData](/vext/ref/fb/compressornodedata) |
+| [CompressorSettings](/vext/ref/fb/compressorsettings) | [ConditionGroup](/vext/ref/fb/conditiongroup) |
+| [ConditionNodeData](/vext/ref/fb/conditionnodedata) | [ConeOutputNodeData](/vext/ref/fb/coneoutputnodedata) |
+| [ConsoleCommandEntityData](/vext/ref/fb/consolecommandentitydata) | [ConsoleCommandTriggerEntityData](/vext/ref/fb/consolecommandtriggerentitydata) |
+| [ConstantEvaluatorData](/vext/ref/fb/constantevaluatordata) | [ConsumablesLevelDescriptionComponent](/vext/ref/fb/consumablesleveldescriptioncomponent) |
+| [ConsumableTriggerEntityData](/vext/ref/fb/consumabletriggerentitydata) | [ControllableEntityData](/vext/ref/fb/controllableentitydata) |
+| [CoopLobbyEntityData](/vext/ref/fb/cooplobbyentitydata) | [CountDownEntityData](/vext/ref/fb/countdownentitydata) |
+| [CoverConstantData](/vext/ref/fb/coverconstantdata) | [CoverEntityData](/vext/ref/fb/coverentitydata) |
+| [CoverPrepareFireEntityData](/vext/ref/fb/coverpreparefireentitydata) | [CoverWaypointData](/vext/ref/fb/coverwaypointdata) |
+| [CreateDestructionVolumeParams](/vext/ref/fb/createdestructionvolumeparams) | [CreateRawFileParams](/vext/ref/fb/createrawfileparams) |
+| [CriteriaData](/vext/ref/fb/criteriadata) | [CriteriaGateList](/vext/ref/fb/criteriagatelist) |
+| [CriteriaStarCategoryData](/vext/ref/fb/criteriastarcategorydata) | [CriteriaStarData](/vext/ref/fb/criteriastardata) |
+| [Crossfader2NodeData](/vext/ref/fb/crossfader2nodedata) | [CrossfaderNodeData](/vext/ref/fb/crossfadernodedata) |
+| [CTFScoringHandlerData](/vext/ref/fb/ctfscoringhandlerdata) | [Curve2D](/vext/ref/fb/curve2d) |
+| [CustomizationTable](/vext/ref/fb/customizationtable) | [CustomizationUnlockParts](/vext/ref/fb/customizationunlockparts) |
+| [CustomizeBaseEntityData](/vext/ref/fb/customizebaseentitydata) | [CustomizeCharacterData](/vext/ref/fb/customizecharacterdata) |
+| [CustomizeCharacterEntityData](/vext/ref/fb/customizecharacterentitydata) | [CustomizedMaterialData](/vext/ref/fb/customizedmaterialdata) |
+| [CustomizeSoldierData](/vext/ref/fb/customizesoldierdata) | [CustomizeSoldierEntityData](/vext/ref/fb/customizesoldierentitydata) |
+| [CustomSequenceTrackData](/vext/ref/fb/customsequencetrackdata) | [CustomSequenceTrackEventMapping](/vext/ref/fb/customsequencetrackeventmapping) |
+| [CustomSequenceTrackLinkMapping](/vext/ref/fb/customsequencetracklinkmapping) | [CustomSequenceTrackPropertyMapping](/vext/ref/fb/customsequencetrackpropertymapping) |
+| [CustomSplineData](/vext/ref/fb/customsplinedata) | [DacNodeData](/vext/ref/fb/dacnodedata) |
+| [DamageAreaTriggerEntityData](/vext/ref/fb/damageareatriggerentitydata) | [DamageEffectComponentData](/vext/ref/fb/damageeffectcomponentdata) |
+| [DamageScoringHandlerData](/vext/ref/fb/damagescoringhandlerdata) | [DamageToVehicleEvent](/vext/ref/fb/damagetovehicleevent) |
+| [DataBusData](/vext/ref/fb/databusdata) | [DataContainerAsset](/vext/ref/fb/datacontainerasset) |
+| [DataGetNode](/vext/ref/fb/datagetnode) | [DataIncrementNode](/vext/ref/fb/dataincrementnode) |
+| [DataSetNode](/vext/ref/fb/datasetnode) | [DataStepNode](/vext/ref/fb/datastepnode) |
+| [DataToggleNode](/vext/ref/fb/datatogglenode) | [DeathAreaTriggerEntityData](/vext/ref/fb/deathareatriggerentitydata) |
+| [DeathEvent](/vext/ref/fb/deathevent) | [DebrisClusterData](/vext/ref/fb/debrisclusterdata) |
+| [DebrisSystemAsset](/vext/ref/fb/debrissystemasset) | [DebrisSystemSettings](/vext/ref/fb/debrissystemsettings) |
+| [DebugComponentData](/vext/ref/fb/debugcomponentdata) | [DebugConstantData](/vext/ref/fb/debugconstantdata) |
+| [DebugEventInput](/vext/ref/fb/debugeventinput) | [DebugMenuItemEntityData](/vext/ref/fb/debugmenuitementitydata) |
+| [DebugMenuSubMenuEntityData](/vext/ref/fb/debugmenusubmenuentitydata) | [DebugRenderSettings](/vext/ref/fb/debugrendersettings) |
+| [DebugSurveyEvent](/vext/ref/fb/debugsurveyevent) | [DebugTestEntityData](/vext/ref/fb/debugtestentitydata) |
+| [DebugTextEntityData](/vext/ref/fb/debugtextentitydata) | [DebugValueInput](/vext/ref/fb/debugvalueinput) |
+| [DecalEntityData](/vext/ref/fb/decalentitydata) | [DecalSettings](/vext/ref/fb/decalsettings) |
+| [DecalTemplateData](/vext/ref/fb/decaltemplatedata) | [DecalVolumeEntityData](/vext/ref/fb/decalvolumeentitydata) |
+| [DecisionConstantData](/vext/ref/fb/decisionconstantdata) | [DefibrillatorWeaponData](/vext/ref/fb/defibrillatorweapondata) |
+| [DelayEntityData](/vext/ref/fb/delayentitydata) | [DelayNodeData](/vext/ref/fb/delaynodedata) |
+| [DelayTriggerEntityData](/vext/ref/fb/delaytriggerentitydata) | [DeltaGroup](/vext/ref/fb/deltagroup) |
+| [DeltaNodeData](/vext/ref/fb/deltanodedata) | [DemoSettings](/vext/ref/fb/demosettings) |
+| [DeMuxNodeData](/vext/ref/fb/demuxnodedata) | [DeMuxOutput](/vext/ref/fb/demuxoutput) |
+| [DestroyAllInSquadScoringHandlerData](/vext/ref/fb/destroyallinsquadscoringhandlerdata) | [DestroyLevelCommandEntityData](/vext/ref/fb/destroylevelcommandentitydata) |
+| [DestructionCommandEntityData](/vext/ref/fb/destructioncommandentitydata) | [DestructionControllerComponentData](/vext/ref/fb/destructioncontrollercomponentdata) |
+| [DestructionDepthRasterData](/vext/ref/fb/destructiondepthrasterdata) | [DestructionDepthTreeAsset](/vext/ref/fb/destructiondepthtreeasset) |
+| [DestructionEdgeModelComponentData](/vext/ref/fb/destructionedgemodelcomponentdata) | [DestructionMaskVolumeEntityData](/vext/ref/fb/destructionmaskvolumeentitydata) |
+| [DestructionPartComponentData](/vext/ref/fb/destructionpartcomponentdata) | [DestructionVolumeAsset](/vext/ref/fb/destructionvolumeasset) |
+| [DestructionVolumeComponentData](/vext/ref/fb/destructionvolumecomponentdata) | [DestructionVolumeData](/vext/ref/fb/destructionvolumedata) |
+| [DetonatedWeaponData](/vext/ref/fb/detonatedweapondata) | [DialogNode](/vext/ref/fb/dialognode) |
+| [DialogSamplerNodeData](/vext/ref/fb/dialogsamplernodedata) | [DifficultyData](/vext/ref/fb/difficultydata) |
+| [DifficultyDatas](/vext/ref/fb/difficultydatas) | [DifficultyIndexEntityData](/vext/ref/fb/difficultyindexentitydata) |
+| [DirectOutputNodeData](/vext/ref/fb/directoutputnodedata) | [DirtySockPresenceBackendData](/vext/ref/fb/dirtysockpresencebackenddata) |
+| [DiscComponentData](/vext/ref/fb/disccomponentdata) | [DistortionClipNodeData](/vext/ref/fb/distortionclipnodedata) |
+| [DivisibleLoopPlayerNodeData](/vext/ref/fb/divisibleloopplayernodedata) | [DofComponentData](/vext/ref/fb/dofcomponentdata) |
+| [DogTagData](/vext/ref/fb/dogtagdata) | [DogTagsAsset](/vext/ref/fb/dogtagsasset) |
+| [DriverComponentData](/vext/ref/fb/drivercomponentdata) | [DriverSettings](/vext/ref/fb/driversettings) |
+| [DriverStaticObjectComponentData](/vext/ref/fb/driverstaticobjectcomponentdata) | [DropWeaponComponentData](/vext/ref/fb/dropweaponcomponentdata) |
+| [DuplicateSpawnScopeStrategyData](/vext/ref/fb/duplicatespawnscopestrategydata) | [DxDisplaySettings](/vext/ref/fb/dxdisplaysettings) |
+| [DynamicAOComponentData](/vext/ref/fb/dynamicaocomponentdata) | [DynamicAvoidanceEntityData](/vext/ref/fb/dynamicavoidanceentitydata) |
+| [DynamicDataContainer](/vext/ref/fb/dynamicdatacontainer) | [DynamicEnlightenEntityData](/vext/ref/fb/dynamicenlightenentitydata) |
+| [DynamicEnvmapComponentData](/vext/ref/fb/dynamicenvmapcomponentdata) | [DynamicGamePhysicsEntityData](/vext/ref/fb/dynamicgamephysicsentitydata) |
+| [DynamicModelEntityData](/vext/ref/fb/dynamicmodelentitydata) | [DynamicWeaponPickupEntityData](/vext/ref/fb/dynamicweaponpickupentitydata) |
+| [EdgeModelComponentData](/vext/ref/fb/edgemodelcomponentdata) | [EdgeModelLightMapData](/vext/ref/fb/edgemodellightmapdata) |
+| [EditableAction](/vext/ref/fb/editableaction) | [EffectAsset](/vext/ref/fb/effectasset) |
+| [EffectBlueprint](/vext/ref/fb/effectblueprint) | [EffectComponentData](/vext/ref/fb/effectcomponentdata) |
+| [EffectEntityData](/vext/ref/fb/effectentitydata) | [EffectManagerSettings](/vext/ref/fb/effectmanagersettings) |
+| [EffectReferenceObjectData](/vext/ref/fb/effectreferenceobjectdata) | [EmitterAsset](/vext/ref/fb/emitterasset) |
+| [EmitterComponentData](/vext/ref/fb/emittercomponentdata) | [EmitterData](/vext/ref/fb/emitterdata) |
+| [EmitterDocument](/vext/ref/fb/emitterdocument) | [EmitterEntityData](/vext/ref/fb/emitterentitydata) |
+| [EmitterExclusionVolumeData](/vext/ref/fb/emitterexclusionvolumedata) | [EmitterSystemAsset](/vext/ref/fb/emittersystemasset) |
+| [EmitterSystemSettings](/vext/ref/fb/emittersystemsettings) | [EmitterTemplateData](/vext/ref/fb/emittertemplatedata) |
+| [EngineComponentData](/vext/ref/fb/enginecomponentdata) | [EngineConfigData](/vext/ref/fb/engineconfigdata) |
+| [EnlightenBuildRadiosityParams](/vext/ref/fb/enlightenbuildradiosityparams) | [EnlightenBuildRadiositySceneDesc](/vext/ref/fb/enlightenbuildradiosityscenedesc) |
+| [EnlightenComponentData](/vext/ref/fb/enlightencomponentdata) | [EnlightenDataAsset](/vext/ref/fb/enlightendataasset) |
+| [EnlightenDatabaseAsset](/vext/ref/fb/enlightendatabaseasset) | [EnlightenDataCreatorParams](/vext/ref/fb/enlightendatacreatorparams) |
+| [EnlightenEntityData](/vext/ref/fb/enlightenentitydata) | [EnlightenPipelineParams](/vext/ref/fb/enlightenpipelineparams) |
+| [EnlightenPipelineTerrain](/vext/ref/fb/enlightenpipelineterrain) | [EnlightenRuntimeConfig](/vext/ref/fb/enlightenruntimeconfig) |
+| [EnlightenRuntimeSettings](/vext/ref/fb/enlightenruntimesettings) | [EnlightenShaderDatabaseAsset](/vext/ref/fb/enlightenshaderdatabaseasset) |
+| [EnlightenState](/vext/ref/fb/enlightenstate) | [EnterVehicleSurveyEvent](/vext/ref/fb/entervehiclesurveyevent) |
+| [EntitlementQuery](/vext/ref/fb/entitlementquery) | [EntityBusData](/vext/ref/fb/entitybusdata) |
+| [EntityData](/vext/ref/fb/entitydata) | [EntityInteractionComponentData](/vext/ref/fb/entityinteractioncomponentdata) |
+| [EntityRecordingData](/vext/ref/fb/entityrecordingdata) | [EntitySettings](/vext/ref/fb/entitysettings) |
+| [EntityTransformData](/vext/ref/fb/entitytransformdata) | [EntityVoiceOverInfo](/vext/ref/fb/entityvoiceoverinfo) |
+| [EntryComponentData](/vext/ref/fb/entrycomponentdata) | [EntryComponentSoundData](/vext/ref/fb/entrycomponentsounddata) |
+| [EntryInputActionMapData](/vext/ref/fb/entryinputactionmapdata) | [EntryInputActionMappingData](/vext/ref/fb/entryinputactionmappingdata) |
+| [EntryInputActionMapsData](/vext/ref/fb/entryinputactionmapsdata) | [EnvmapEntityData](/vext/ref/fb/envmapentitydata) |
+| [EqualizerSettings](/vext/ref/fb/equalizersettings) | [EulerTransformEntityData](/vext/ref/fb/eulertransformentitydata) |
+| [EulerTransformSplitterEntityData](/vext/ref/fb/eulertransformsplitterentitydata) | [EvaluatorData](/vext/ref/fb/evaluatordata) |
+| [EventAndGateEntityData](/vext/ref/fb/eventandgateentitydata) | [EventCompareGateEntityData](/vext/ref/fb/eventcomparegateentitydata) |
+| [EventDebugNodeData](/vext/ref/fb/eventdebugnodedata) | [EventGateEntityData](/vext/ref/fb/eventgateentitydata) |
+| [EventGateNodeData](/vext/ref/fb/eventgatenodedata) | [EventIfSwitchEntityData](/vext/ref/fb/eventifswitchentitydata) |
+| [EventMemoryEntityData](/vext/ref/fb/eventmemoryentitydata) | [EventQueueEntityData](/vext/ref/fb/eventqueueentitydata) |
+| [EventSplitterEntityData](/vext/ref/fb/eventsplitterentitydata) | [EventSwitchEntityData](/vext/ref/fb/eventswitchentitydata) |
+| [EventSwitcherEntry](/vext/ref/fb/eventswitcherentry) | [EventSwitcherNodeData](/vext/ref/fb/eventswitchernodedata) |
+| [EventSyncEntityData](/vext/ref/fb/eventsyncentitydata) | [ExampleVehicleBlueprintBundleMetadata](/vext/ref/fb/examplevehicleblueprintbundlemetadata) |
+| [ExpanderNodeData](/vext/ref/fb/expandernodedata) | [ExplosionEntityData](/vext/ref/fb/explosionentitydata) |
+| [ExplosionPackEntityData](/vext/ref/fb/explosionpackentitydata) | [ExtendedConstraintsData](/vext/ref/fb/extendedconstraintsdata) |
+| [FaceAnimationWaveMappings](/vext/ref/fb/faceanimationwavemappings) | [FaceposerComponentData](/vext/ref/fb/faceposercomponentdata) |
+| [FadeEntityData](/vext/ref/fb/fadeentitydata) | [FakeHingeData](/vext/ref/fb/fakehingedata) |
+| [FakePhysicsData](/vext/ref/fb/fakephysicsdata) | [FakeSpringData](/vext/ref/fb/fakespringdata) |
+| [FallingStateData](/vext/ref/fb/fallingstatedata) | [FenceModelEntityData](/vext/ref/fb/fencemodelentitydata) |
+| [FilmGrainComponentData](/vext/ref/fb/filmgraincomponentdata) | [FiringFunctionData](/vext/ref/fb/firingfunctiondata) |
+| [FirstPersonCameraData](/vext/ref/fb/firstpersoncameradata) | [FlagComponentData](/vext/ref/fb/flagcomponentdata) |
+| [FlagCounterEntityData](/vext/ref/fb/flagcounterentitydata) | [FlapComponentData](/vext/ref/fb/flapcomponentdata) |
+| [FlareEntityData](/vext/ref/fb/flareentitydata) | [FlashlightWeaponData](/vext/ref/fb/flashlightweapondata) |
+| [FlatOutputNodeData](/vext/ref/fb/flatoutputnodedata) | [FloatEntityData](/vext/ref/fb/floatentitydata) |
+| [FloatHubEntityData](/vext/ref/fb/floathubentitydata) | [FloatPhysicsData](/vext/ref/fb/floatphysicsdata) |
+| [FloatPropertyTrackData](/vext/ref/fb/floatpropertytrackdata) | [FloatRecordingData](/vext/ref/fb/floatrecordingdata) |
+| [FloatUnlockValuePair](/vext/ref/fb/floatunlockvaluepair) | [FogComponentData](/vext/ref/fb/fogcomponentdata) |
+| [FogEffectState](/vext/ref/fb/fogeffectstate) | [FollowAISoldierOrderEntityData](/vext/ref/fb/followaisoldierorderentitydata) |
+| [FollowClosestHumanOrderEntityData](/vext/ref/fb/followclosesthumanorderentitydata) | [FollowConstantData](/vext/ref/fb/followconstantdata) |
+| [FollowEnvelopeNodeData](/vext/ref/fb/followenvelopenodedata) | [FollowPlayerOrderEntityData](/vext/ref/fb/followplayerorderentitydata) |
+| [FollowWaypointsEntityData](/vext/ref/fb/followwaypointsentitydata) | [FormationData](/vext/ref/fb/formationdata) |
+| [FormationHolder](/vext/ref/fb/formationholder) | [FPSCameraData](/vext/ref/fb/fpscameradata) |
+| [FramerateHistogramPerformanceEvent](/vext/ref/fb/frameratehistogramperformanceevent) | [FrequencyShiftSsbNodeData](/vext/ref/fb/frequencyshiftssbnodedata) |
+| [FriendlyFireEntityData](/vext/ref/fb/friendlyfireentitydata) | [FriendZoneDebugRenderEntityData](/vext/ref/fb/friendzonedebugrenderentitydata) |
+| [FriendZoneEntityData](/vext/ref/fb/friendzoneentitydata) | [FrontEndComponentData](/vext/ref/fb/frontendcomponentdata) |
+| [GainFaderNodeData](/vext/ref/fb/gainfadernodedata) | [GainNodeData](/vext/ref/fb/gainnodedata) |
+| [GameAIDifficultyData](/vext/ref/fb/gameaidifficultydata) | [GameAIEntryData](/vext/ref/fb/gameaientrydata) |
+| [GameAISystem](/vext/ref/fb/gameaisystem) | [GameAIWeaponData](/vext/ref/fb/gameaiweapondata) |
+| [GameAnimationConfig](/vext/ref/fb/gameanimationconfig) | [GameAnimationSettings](/vext/ref/fb/gameanimationsettings) |
+| [GameBehaviourTemplateData](/vext/ref/fb/gamebehaviourtemplatedata) | [GameDataContainer](/vext/ref/fb/gamedatacontainer) |
+| [GameDataContainerAsset](/vext/ref/fb/gamedatacontainerasset) | [GameEntityData](/vext/ref/fb/gameentitydata) |
+| [GameInteractionEntityData](/vext/ref/fb/gameinteractionentitydata) | [GameModeConfiguration](/vext/ref/fb/gamemodeconfiguration) |
+| [GameModeSettings](/vext/ref/fb/gamemodesettings) | [GameObjectData](/vext/ref/fb/gameobjectdata) |
+| [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata) | [GameRenderSettings](/vext/ref/fb/gamerendersettings) |
+| [GameSensingTemplateData](/vext/ref/fb/gamesensingtemplatedata) | [GameSettings](/vext/ref/fb/gamesettings) |
+| [GameSoundEntityData](/vext/ref/fb/gamesoundentitydata) | [GameSplineData](/vext/ref/fb/gamesplinedata) |
+| [GameSplineEntityData](/vext/ref/fb/gamesplineentitydata) | [GameTimeSettings](/vext/ref/fb/gametimesettings) |
+| [GameTipAsset](/vext/ref/fb/gametipasset) | [GearBagSpec](/vext/ref/fb/gearbagspec) |
+| [GearboxConfigData](/vext/ref/fb/gearboxconfigdata) | [GeographicalData](/vext/ref/fb/geographicaldata) |
+| [GeographicalLevelDescriptionComponent](/vext/ref/fb/geographicalleveldescriptioncomponent) | [GeometryTriggerEntityData](/vext/ref/fb/geometrytriggerentitydata) |
+| [GlobalNode](/vext/ref/fb/globalnode) | [GlobalPostProcessSettings](/vext/ref/fb/globalpostprocesssettings) |
+| [GravityData](/vext/ref/fb/gravitydata) | [GrenadeEntityData](/vext/ref/fb/grenadeentitydata) |
+| [GroundHeightEntityData](/vext/ref/fb/groundheightentitydata) | [GroupHavokAsset](/vext/ref/fb/grouphavokasset) |
+| [GunMasterKillCounterEntityData](/vext/ref/fb/gunmasterkillcounterentitydata) | [GunnerSpottingTrackerData](/vext/ref/fb/gunnerspottingtrackerdata) |
+| [GunSwayData](/vext/ref/fb/gunswaydata) | [GunSwayModifierData](/vext/ref/fb/gunswaymodifierdata) |
+| [HavokAsset](/vext/ref/fb/havokasset) | [HdrSetting](/vext/ref/fb/hdrsetting) |
+| [HealthComponentData](/vext/ref/fb/healthcomponentdata) | [HealthStateData](/vext/ref/fb/healthstatedata) |
+| [HeightfieldRasterData](/vext/ref/fb/heightfieldrasterdata) | [HeightfieldTreeAsset](/vext/ref/fb/heightfieldtreeasset) |
+| [HighPassButterworthNodeData](/vext/ref/fb/highpassbutterworthnodedata) | [HighPassFir64NodeData](/vext/ref/fb/highpassfir64nodedata) |
+| [HighPassIir2NodeData](/vext/ref/fb/highpassiir2nodedata) | [HighShelfIir2NodeData](/vext/ref/fb/highshelfiir2nodedata) |
+| [HitReactionComponentData](/vext/ref/fb/hitreactioncomponentdata) | [HoldGroundOrderEntityData](/vext/ref/fb/holdgroundorderentitydata) |
+| [HovercraftFloatPhysicsData](/vext/ref/fb/hovercraftfloatphysicsdata) | [HudCameraShakeData](/vext/ref/fb/hudcamerashakedata) |
+| [HudCapturePointTrackerData](/vext/ref/fb/hudcapturepointtrackerdata) | [HudConfigAsset](/vext/ref/fb/hudconfigasset) |
+| [HudEntityData](/vext/ref/fb/hudentitydata) | [HudProgressbarData](/vext/ref/fb/hudprogressbardata) |
+| [HudTrackerData](/vext/ref/fb/hudtrackerdata) | [HudVehicleTrackerData](/vext/ref/fb/hudvehicletrackerdata) |
+| [HullFloatPhysicsData](/vext/ref/fb/hullfloatphysicsdata) | [HumanPlayerEntityData](/vext/ref/fb/humanplayerentitydata) |
+| [IKComponentData](/vext/ref/fb/ikcomponentdata) | [ImpulseResponseAsset](/vext/ref/fb/impulseresponseasset) |
+| [InAirStateData](/vext/ref/fb/inairstatedata) | [InputActionData](/vext/ref/fb/inputactiondata) |
+| [InputActionMapData](/vext/ref/fb/inputactionmapdata) | [InputActionMappingData](/vext/ref/fb/inputactionmappingdata) |
+| [InputActionMappingsData](/vext/ref/fb/inputactionmappingsdata) | [InputActionsData](/vext/ref/fb/inputactionsdata) |
+| [InputConfigurationAsset](/vext/ref/fb/inputconfigurationasset) | [InputCurveData](/vext/ref/fb/inputcurvedata) |
+| [InputModifierEntityData](/vext/ref/fb/inputmodifierentitydata) | [InputRecorderData](/vext/ref/fb/inputrecorderdata) |
+| [InputRestrictionEntityData](/vext/ref/fb/inputrestrictionentitydata) | [InspectEntityData](/vext/ref/fb/inspectentitydata) |
+| [InstanceInputNode](/vext/ref/fb/instanceinputnode) | [InstanceNode](/vext/ref/fb/instancenode) |
+| [InstanceOutputNode](/vext/ref/fb/instanceoutputnode) | [IntegratorOrDifferentiatorEntityData](/vext/ref/fb/integratorordifferentiatorentitydata) |
+| [IntEntityData](/vext/ref/fb/intentitydata) | [InteractableStaticModelEntityData](/vext/ref/fb/interactablestaticmodelentitydata) |
+| [InteractionEntityData](/vext/ref/fb/interactionentitydata) | [InterfaceDescriptorData](/vext/ref/fb/interfacedescriptordata) |
+| [InterludeOrderEntityData](/vext/ref/fb/interludeorderentitydata) | [IntHubEntityData](/vext/ref/fb/inthubentitydata) |
+| [IntPropertyTrackData](/vext/ref/fb/intpropertytrackdata) | [IntRecordingData](/vext/ref/fb/intrecordingdata) |
+| [IntUnlockValuePair](/vext/ref/fb/intunlockvaluepair) | [IrReverbControllerNodeData](/vext/ref/fb/irreverbcontrollernodedata) |
+| [IrReverbEntityData](/vext/ref/fb/irreverbentitydata) | [IrReverbNodeData](/vext/ref/fb/irreverbnodedata) |
+| [JammingComponentData](/vext/ref/fb/jammingcomponentdata) | [JetEngineConfigData](/vext/ref/fb/jetengineconfigdata) |
+| [JoypadNodeData](/vext/ref/fb/joypadnodedata) | [JumpNode](/vext/ref/fb/jumpnode) |
+| [JumpStateData](/vext/ref/fb/jumpstatedata) | [KeyboardInputActionData](/vext/ref/fb/keyboardinputactiondata) |
+| [KillAllEntityData](/vext/ref/fb/killallentitydata) | [KillCounterEntityData](/vext/ref/fb/killcounterentitydata) |
+| [KillEvent](/vext/ref/fb/killevent) | [KillFromVehicleScoringHandlerData](/vext/ref/fb/killfromvehiclescoringhandlerdata) |
+| [KitPickupEntityData](/vext/ref/fb/kitpickupentitydata) | [KitState](/vext/ref/fb/kitstate) |
+| [KitStateEvent](/vext/ref/fb/kitstateevent) | [KyotoPlayerAliveFilterEntityData](/vext/ref/fb/kyotoplayeralivefilterentitydata) |
+| [LadderComponentData](/vext/ref/fb/laddercomponentdata) | [LadderEntityData](/vext/ref/fb/ladderentitydata) |
+| [LakeData](/vext/ref/fb/lakedata) | [LandingFlapData](/vext/ref/fb/landingflapdata) |
+| [LandingGearLogicData](/vext/ref/fb/landinggearlogicdata) | [LanPresenceBackendData](/vext/ref/fb/lanpresencebackenddata) |
+| [LanServerBackendData](/vext/ref/fb/lanserverbackenddata) | [LaserDesignatorData](/vext/ref/fb/laserdesignatordata) |
+| [LaserPainterData](/vext/ref/fb/laserpainterdata) | [LensFlareComponentData](/vext/ref/fb/lensflarecomponentdata) |
+| [LensFlareEntityData](/vext/ref/fb/lensflareentitydata) | [LensScopeComponentData](/vext/ref/fb/lensscopecomponentdata) |
+| [LevelAudioObstructionAsset](/vext/ref/fb/levelaudioobstructionasset) | [LevelControlEntityData](/vext/ref/fb/levelcontrolentitydata) |
+| [LevelData](/vext/ref/fb/leveldata) | [LevelDescriptionAsset](/vext/ref/fb/leveldescriptionasset) |
+| [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent) | [LevelReportingAsset](/vext/ref/fb/levelreportingasset) |
+| [LevelSaveData](/vext/ref/fb/levelsavedata) | [LfoNodeData](/vext/ref/fb/lfonodedata) |
+| [LicenseConfiguration](/vext/ref/fb/licenseconfiguration) | [LifeCounterEntityData](/vext/ref/fb/lifecounterentitydata) |
+| [LightComponentData](/vext/ref/fb/lightcomponentdata) | [LightProbeVolumeData](/vext/ref/fb/lightprobevolumedata) |
+| [LimiterNodeData](/vext/ref/fb/limiternodedata) | [LinearMovingBodyData](/vext/ref/fb/linearmovingbodydata) |
+| [LinearTransformNodeData](/vext/ref/fb/lineartransformnodedata) | [LinearTransformRecordingData](/vext/ref/fb/lineartransformrecordingdata) |
+| [LocalForceData](/vext/ref/fb/localforcedata) | [LocalizationAsset](/vext/ref/fb/localizationasset) |
+| [LocalLightEntityData](/vext/ref/fb/locallightentitydata) | [LocalServerBackendData](/vext/ref/fb/localserverbackenddata) |
+| [LocatorComponentData](/vext/ref/fb/locatorcomponentdata) | [LocatorEntityData](/vext/ref/fb/locatorentitydata) |
+| [LockingControllerData](/vext/ref/fb/lockingcontrollerdata) | [LockingScoringHandlerData](/vext/ref/fb/lockingscoringhandlerdata) |
+| [LockingWeaponData](/vext/ref/fb/lockingweapondata) | [LoggingEntityData](/vext/ref/fb/loggingentitydata) |
+| [LogicalExpressionEntry](/vext/ref/fb/logicalexpressionentry) | [LogicalExpressionNodeData](/vext/ref/fb/logicalexpressionnodedata) |
+| [LogicPrefabBlueprint](/vext/ref/fb/logicprefabblueprint) | [LogicReferenceObjectData](/vext/ref/fb/logicreferenceobjectdata) |
+| [LogicVisualEnvironmentEntityData](/vext/ref/fb/logicvisualenvironmententitydata) | [LookAtCameraEntityData](/vext/ref/fb/lookatcameraentitydata) |
+| [LookAtEntityData](/vext/ref/fb/lookatentitydata) | [LookAtTriggerEntityData](/vext/ref/fb/lookattriggerentitydata) |
+| [LoosePartPhysicsData](/vext/ref/fb/loosepartphysicsdata) | [LowPassButterworthNodeData](/vext/ref/fb/lowpassbutterworthnodedata) |
+| [LowPassFir64NodeData](/vext/ref/fb/lowpassfir64nodedata) | [LowPassIir2NodeData](/vext/ref/fb/lowpassiir2nodedata) |
+| [LowShelfIir2NodeData](/vext/ref/fb/lowshelfiir2nodedata) | [ManualDataAsset](/vext/ref/fb/manualdataasset) |
+| [MapMarkerEntityData](/vext/ref/fb/mapmarkerentitydata) | [MaskVolumeEntityData](/vext/ref/fb/maskvolumeentitydata) |
+| [MasterSkeletonAsset](/vext/ref/fb/masterskeletonasset) | [MasterUnitNodeData](/vext/ref/fb/masterunitnodedata) |
+| [MasterUnitSettings](/vext/ref/fb/masterunitsettings) | [MatchmakingModifier](/vext/ref/fb/matchmakingmodifier) |
+| [MatchmakingPlayerCapacityModifier](/vext/ref/fb/matchmakingplayercapacitymodifier) | [MatchmakingSession](/vext/ref/fb/matchmakingsession) |
+| [MaterialContainerAsset](/vext/ref/fb/materialcontainerasset) | [MaterialContainerPair](/vext/ref/fb/materialcontainerpair) |
+| [MaterialGridData](/vext/ref/fb/materialgriddata) | [MaterialPropertyEffectData](/vext/ref/fb/materialpropertyeffectdata) |
+| [MaterialPropertyHealthData](/vext/ref/fb/materialpropertyhealthdata) | [MaterialPropertyImpulseData](/vext/ref/fb/materialpropertyimpulsedata) |
+| [MaterialPropertyPhysicsData](/vext/ref/fb/materialpropertyphysicsdata) | [MaterialPropertySoundData](/vext/ref/fb/materialpropertysounddata) |
+| [MaterialPropertyTerrainData](/vext/ref/fb/materialpropertyterraindata) | [MaterialRelationDamageData](/vext/ref/fb/materialrelationdamagedata) |
+| [MaterialRelationDecalData](/vext/ref/fb/materialrelationdecaldata) | [MaterialRelationEffectData](/vext/ref/fb/materialrelationeffectdata) |
+| [MaterialRelationPenetrationData](/vext/ref/fb/materialrelationpenetrationdata) | [MaterialRelationPropertyData](/vext/ref/fb/materialrelationpropertydata) |
+| [MaterialRelationSoundData](/vext/ref/fb/materialrelationsounddata) | [MaterialRelationTerrainDestructionData](/vext/ref/fb/materialrelationterraindestructiondata) |
+| [MaterialRelationVehicleData](/vext/ref/fb/materialrelationvehicledata) | [MaterialSoldierSoundSettings](/vext/ref/fb/materialsoldiersoundsettings) |
+| [MathOpEntityData](/vext/ref/fb/mathopentitydata) | [MatrixPannerNodeData](/vext/ref/fb/matrixpannernodedata) |
+| [MaxInstancesScopeStrategyData](/vext/ref/fb/maxinstancesscopestrategydata) | [MedicBagEntityData](/vext/ref/fb/medicbagentitydata) |
+| [MedicBagHealingSphereEntityData](/vext/ref/fb/medicbaghealingsphereentitydata) | [MedicBagHealingSphereWeaponData](/vext/ref/fb/medicbaghealingsphereweapondata) |
+| [MedicBagWeaponData](/vext/ref/fb/medicbagweapondata) | [MedkitWeaponData](/vext/ref/fb/medkitweapondata) |
+| [MeleeEntityCommonData](/vext/ref/fb/meleeentitycommondata) | [MeleeEntityData](/vext/ref/fb/meleeentitydata) |
+| [MeleeTriggerEntityData](/vext/ref/fb/meleetriggerentitydata) | [MeleeWeaponData](/vext/ref/fb/meleeweapondata) |
+| [MemoryLevelDescriptionComponent](/vext/ref/fb/memoryleveldescriptioncomponent) | [MenuConfigAsset](/vext/ref/fb/menuconfigasset) |
+| [MenuIdAsset](/vext/ref/fb/menuidasset) | [MeshAsset](/vext/ref/fb/meshasset) |
+| [MeshComponentData](/vext/ref/fb/meshcomponentdata) | [MeshLodGroup](/vext/ref/fb/meshlodgroup) |
+| [MeshMaterial](/vext/ref/fb/meshmaterial) | [MeshMaterialVariation](/vext/ref/fb/meshmaterialvariation) |
+| [MeshMergingSettings](/vext/ref/fb/meshmergingsettings) | [MeshProjectileEntityData](/vext/ref/fb/meshprojectileentitydata) |
+| [MeshProxyEntityData](/vext/ref/fb/meshproxyentitydata) | [MeshSettings](/vext/ref/fb/meshsettings) |
+| [MeshStreamingSettings](/vext/ref/fb/meshstreamingsettings) | [MeshVariationDatabase](/vext/ref/fb/meshvariationdatabase) |
+| [MeshVariationDatabaseEntry](/vext/ref/fb/meshvariationdatabaseentry) | [MessageEntityData](/vext/ref/fb/messageentitydata) |
+| [MetricAggregate](/vext/ref/fb/metricaggregate) | [MetricEvent](/vext/ref/fb/metricevent) |
+| [MetricReport](/vext/ref/fb/metricreport) | [MetricState](/vext/ref/fb/metricstate) |
+| [Minimap2DEntityData](/vext/ref/fb/minimap2dentitydata) | [MinMaxNodeData](/vext/ref/fb/minmaxnodedata) |
+| [MinMaxValueSelectorEntry](/vext/ref/fb/minmaxvalueselectorentry) | [MinMaxValueSelectorNodeData](/vext/ref/fb/minmaxvalueselectornodedata) |
+| [MissileEntityData](/vext/ref/fb/missileentitydata) | [MissionObjectiveHudData](/vext/ref/fb/missionobjectivehuddata) |
+| [MixerAsset](/vext/ref/fb/mixerasset) | [MixerEntityData](/vext/ref/fb/mixerentitydata) |
+| [MixerEntry](/vext/ref/fb/mixerentry) | [MixerGraphData](/vext/ref/fb/mixergraphdata) |
+| [MixerInputEntry](/vext/ref/fb/mixerinputentry) | [MixerInputNodeData](/vext/ref/fb/mixerinputnodedata) |
+| [MixerNodeData](/vext/ref/fb/mixernodedata) | [MixerOutputEntry](/vext/ref/fb/mixeroutputentry) |
+| [MixerOutputNodeData](/vext/ref/fb/mixeroutputnodedata) | [MixerPreset](/vext/ref/fb/mixerpreset) |
+| [MixerReceiveEntry](/vext/ref/fb/mixerreceiveentry) | [MixerReceiveNodeData](/vext/ref/fb/mixerreceivenodedata) |
+| [MixerSendEntry](/vext/ref/fb/mixersendentry) | [MixerSendNodeData](/vext/ref/fb/mixersendnodedata) |
+| [MixerSetPropertyEntry](/vext/ref/fb/mixersetpropertyentry) | [MixerSetPropertyNodeData](/vext/ref/fb/mixersetpropertynodedata) |
+| [MixerSimplePresetNodeData](/vext/ref/fb/mixersimplepresetnodedata) | [MixerSystemAsset](/vext/ref/fb/mixersystemasset) |
+| [MixerValueNodeData](/vext/ref/fb/mixervaluenodedata) | [MixGroup](/vext/ref/fb/mixgroup) |
+| [MobileSpawnComponentData](/vext/ref/fb/mobilespawncomponentdata) | [MobilityData](/vext/ref/fb/mobilitydata) |
+| [ModelAnimationEntityData](/vext/ref/fb/modelanimationentitydata) | [MortarStrikeWeaponData](/vext/ref/fb/mortarstrikeweapondata) |
+| [MotionBlurComponentData](/vext/ref/fb/motionblurcomponentdata) | [MotionControllerInputActionData](/vext/ref/fb/motioncontrollerinputactiondata) |
+| [MotionDampingData](/vext/ref/fb/motiondampingdata) | [MotorbikeData](/vext/ref/fb/motorbikedata) |
+| [MouseInputActionData](/vext/ref/fb/mouseinputactiondata) | [MovementActionData](/vext/ref/fb/movementactiondata) |
+| [MovementActionGroupData](/vext/ref/fb/movementactiongroupdata) | [MovementActionRandomizerData](/vext/ref/fb/movementactionrandomizerdata) |
+| [MovementActionRoot](/vext/ref/fb/movementactionroot) | [MovementComponentData](/vext/ref/fb/movementcomponentdata) |
+| [MovementConstantData](/vext/ref/fb/movementconstantdata) | [MovieComponentData](/vext/ref/fb/moviecomponentdata) |
+| [MovieEntityData](/vext/ref/fb/movieentitydata) | [MovieTextureAsset](/vext/ref/fb/movietextureasset) |
+| [MovieTextureSettings](/vext/ref/fb/movietexturesettings) | [MovingBodyData](/vext/ref/fb/movingbodydata) |
+| [MultiCrossfaderGroup](/vext/ref/fb/multicrossfadergroup) | [MultiCrossfaderNodeData](/vext/ref/fb/multicrossfadernodedata) |
+| [MultipleActorScenarioEntityData](/vext/ref/fb/multipleactorscenarioentitydata) | [MultipleTargetPainterWeaponData](/vext/ref/fb/multipletargetpainterweapondata) |
+| [MultipleTriggerEntityData](/vext/ref/fb/multipletriggerentitydata) | [NetworkableLoosePartPhysicsData](/vext/ref/fb/networkableloosepartphysicsdata) |
+| [NetworkPerformanceEvent](/vext/ref/fb/networkperformanceevent) | [NetworkSettings](/vext/ref/fb/networksettings) |
+| [NFSUIListDataBinding](/vext/ref/fb/nfsuilistdatabinding) | [NoiseTextureAsset](/vext/ref/fb/noisetextureasset) |
+| [NotEntityData](/vext/ref/fb/notentitydata) | [NumberGeneratorNodeData](/vext/ref/fb/numbergeneratornodedata) |
+| [OBBData](/vext/ref/fb/obbdata) | [ObjectBlueprint](/vext/ref/fb/objectblueprint) |
+| [ObjectEnterAreaTriggerEntityData](/vext/ref/fb/objectenterareatriggerentitydata) | [ObjectiveEntityData](/vext/ref/fb/objectiveentitydata) |
+| [ObjectVariation](/vext/ref/fb/objectvariation) | [ObjectVariationSwitchEntityData](/vext/ref/fb/objectvariationswitchentitydata) |
+| [OccluderMeshEntityData](/vext/ref/fb/occludermeshentitydata) | [OccluderVolumeEntityData](/vext/ref/fb/occludervolumeentitydata) |
+| [OcclusionSettings](/vext/ref/fb/occlusionsettings) | [OneOptionAxisEditableAction](/vext/ref/fb/oneoptionaxiseditableaction) |
+| [OneOptionButtonEditableAction](/vext/ref/fb/oneoptionbuttoneditableaction) | [OnGroundStateData](/vext/ref/fb/ongroundstatedata) |
+| [OnlineConfiguration](/vext/ref/fb/onlineconfiguration) | [OnlineProviderAsset](/vext/ref/fb/onlineproviderasset) |
+| [OnlineServicesAsset](/vext/ref/fb/onlineservicesasset) | [OnlineSettings](/vext/ref/fb/onlinesettings) |
+| [OperandLogicNode](/vext/ref/fb/operandlogicnode) | [Or4EntityData](/vext/ref/fb/or4entitydata) |
+| [OrderBonusScoringHandlerData](/vext/ref/fb/orderbonusscoringhandlerdata) | [OrderEntityData](/vext/ref/fb/orderentitydata) |
+| [OrderReadiness](/vext/ref/fb/orderreadiness) | [OrderSettings](/vext/ref/fb/ordersettings) |
+| [OrEntityData](/vext/ref/fb/orentitydata) | [OrientationNodeData](/vext/ref/fb/orientationnodedata) |
+| [OutdoorLightComponentData](/vext/ref/fb/outdoorlightcomponentdata) | [OutdoorLightEffectState](/vext/ref/fb/outdoorlighteffectstate) |
+| [OutputNodeData](/vext/ref/fb/outputnodedata) | [PackagingCellData](/vext/ref/fb/packagingcelldata) |
+| [PackagingRule](/vext/ref/fb/packagingrule) | [PadInputActionData](/vext/ref/fb/padinputactiondata) |
+| [PadRumbleNodeData](/vext/ref/fb/padrumblenodedata) | [ParachuteStateData](/vext/ref/fb/parachutestatedata) |
+| [ParameterFilterLinearNodeData](/vext/ref/fb/parameterfilterlinearnodedata) | [ParameterFilterLpNodeData](/vext/ref/fb/parameterfilterlpnodedata) |
+| [PartComponentData](/vext/ref/fb/partcomponentdata) | [PartLinkData](/vext/ref/fb/partlinkdata) |
+| [PathfindingBuildOrderData](/vext/ref/fb/pathfindingbuildorderdata) | [PathfindingBuildSettingsAsset](/vext/ref/fb/pathfindingbuildsettingsasset) |
+| [PathfindingDebugSettings](/vext/ref/fb/pathfindingdebugsettings) | [PathfindingExclusionVolumeData](/vext/ref/fb/pathfindingexclusionvolumedata) |
+| [PathfindingObjectCategoryAsset](/vext/ref/fb/pathfindingobjectcategoryasset) | [PathfindingSandboxAsset](/vext/ref/fb/pathfindingsandboxasset) |
+| [PathfindingSystemEntityData](/vext/ref/fb/pathfindingsystementitydata) | [PathfindingTypeAsset](/vext/ref/fb/pathfindingtypeasset) |
+| [PathFollowingComponentData](/vext/ref/fb/pathfollowingcomponentdata) | [PatrolOrderEntityData](/vext/ref/fb/patrolorderentitydata) |
+| [PeakingIir2NodeData](/vext/ref/fb/peakingiir2nodedata) | [PeerServerBackendData](/vext/ref/fb/peerserverbackenddata) |
+| [PerformanceEvent](/vext/ref/fb/performanceevent) | [PerformanceProfileState](/vext/ref/fb/performanceprofilestate) |
+| [PerformanceTrackerSettings](/vext/ref/fb/performancetrackersettings) | [PersistenceConfiguration](/vext/ref/fb/persistenceconfiguration) |
+| [PersistenceData](/vext/ref/fb/persistencedata) | [PersistenceGameData](/vext/ref/fb/persistencegamedata) |
+| [PersistenceRetentionPolicy](/vext/ref/fb/persistenceretentionpolicy) | [PersistenceSettings](/vext/ref/fb/persistencesettings) |
+| [PersistenceStatGroup](/vext/ref/fb/persistencestatgroup) | [PersistenceStatTable](/vext/ref/fb/persistencestattable) |
+| [PersistentAwardDataStatRef](/vext/ref/fb/persistentawarddatastatref) | [PersistentCriteriaStatRef](/vext/ref/fb/persistentcriteriastatref) |
+| [PersistentValueTemplate](/vext/ref/fb/persistentvaluetemplate) | [PersistentValueTemplateStatRef](/vext/ref/fb/persistentvaluetemplatestatref) |
+| [PhantomComponentData](/vext/ref/fb/phantomcomponentdata) | [PhysicsConeConstraintData](/vext/ref/fb/physicsconeconstraintdata) |
+| [PhysicsConstraintData](/vext/ref/fb/physicsconstraintdata) | [PhysicsDebugSettings](/vext/ref/fb/physicsdebugsettings) |
+| [PhysicsDrivenAnimationEntityData](/vext/ref/fb/physicsdrivenanimationentitydata) | [PhysicsEntityData](/vext/ref/fb/physicsentitydata) |
+| [PhysicsEntry](/vext/ref/fb/physicsentry) | [PhysicsHingeConstraintData](/vext/ref/fb/physicshingeconstraintdata) |
+| [PhysicsMaterialRelationPropertyData](/vext/ref/fb/physicsmaterialrelationpropertydata) | [PhysicsMaterialsRasterData](/vext/ref/fb/physicsmaterialsrasterdata) |
+| [PhysicsNodeData](/vext/ref/fb/physicsnodedata) | [PhysicsPropertyRelationPropertyData](/vext/ref/fb/physicspropertyrelationpropertydata) |
+| [PhysicsRenderSettings](/vext/ref/fb/physicsrendersettings) | [PhysicsSettings](/vext/ref/fb/physicssettings) |
+| [PickupEntityAsset](/vext/ref/fb/pickupentityasset) | [PickupEntityData](/vext/ref/fb/pickupentitydata) |
+| [PlanarReflectionComponentData](/vext/ref/fb/planarreflectioncomponentdata) | [PlatformSplitterEntityData](/vext/ref/fb/platformsplitterentitydata) |
+| [PlayerCameraEntityData](/vext/ref/fb/playercameraentitydata) | [PlayerData](/vext/ref/fb/playerdata) |
+| [PlayerEntryComponentData](/vext/ref/fb/playerentrycomponentdata) | [PlayerFilterEntityData](/vext/ref/fb/playerfilterentitydata) |
+| [PlayerInputTriggerEntityData](/vext/ref/fb/playerinputtriggerentitydata) | [PlayerInteractionViewData](/vext/ref/fb/playerinteractionviewdata) |
+| [PlayerLookAtEntityData](/vext/ref/fb/playerlookatentitydata) | [PlayerOrderTrackerData](/vext/ref/fb/playerordertrackerdata) |
+| [PlayerState](/vext/ref/fb/playerstate) | [PlayerTakeOverTriggerEntityData](/vext/ref/fb/playertakeovertriggerentitydata) |
+| [PlayerTypeProfile](/vext/ref/fb/playertypeprofile) | [PlayerViewData](/vext/ref/fb/playerviewdata) |
+| [PlayFromHereAsset](/vext/ref/fb/playfromhereasset) | [PlayVideoEntityData](/vext/ref/fb/playvideoentitydata) |
+| [PointEnvelope](/vext/ref/fb/pointenvelope) | [PointLightEntityData](/vext/ref/fb/pointlightentitydata) |
+| [PointSystemParamsAsset](/vext/ref/fb/pointsystemparamsasset) | [PointTargetData](/vext/ref/fb/pointtargetdata) |
+| [PolynomialColorInterpData](/vext/ref/fb/polynomialcolorinterpdata) | [PolynomialData](/vext/ref/fb/polynomialdata) |
+| [PolynomialOperatorData](/vext/ref/fb/polynomialoperatordata) | [PositionEvaluationConstantData](/vext/ref/fb/positionevaluationconstantdata) |
+| [PowerToolWeaponData](/vext/ref/fb/powertoolweapondata) | [PredestructionEntityData](/vext/ref/fb/predestructionentitydata) |
+| [PrefabBlueprint](/vext/ref/fb/prefabblueprint) | [PreRoundEntityData](/vext/ref/fb/preroundentitydata) |
+| [PresenceAchievementServiceData](/vext/ref/fb/presenceachievementservicedata) | [PresenceBackendData](/vext/ref/fb/presencebackenddata) |
+| [PresenceBlobServiceData](/vext/ref/fb/presenceblobservicedata) | [PresenceCalendarServiceData](/vext/ref/fb/presencecalendarservicedata) |
+| [PresenceCommerceServiceData](/vext/ref/fb/presencecommerceservicedata) | [PresenceCommServiceData](/vext/ref/fb/presencecommservicedata) |
+| [PresenceEntitlementServiceData](/vext/ref/fb/presenceentitlementservicedata) | [PresenceFriendsServiceData](/vext/ref/fb/presencefriendsservicedata) |
+| [PresenceGameConfigurationServiceData](/vext/ref/fb/presencegameconfigurationservicedata) | [PresenceLeaderboardServiceData](/vext/ref/fb/presenceleaderboardservicedata) |
+| [PresenceMatchFeedServiceData](/vext/ref/fb/presencematchfeedservicedata) | [PresenceNewsTickerServiceData](/vext/ref/fb/presencenewstickerservicedata) |
+| [PresencePlaygroupServiceData](/vext/ref/fb/presenceplaygroupservicedata) | [PresenceRspServiceData](/vext/ref/fb/presencerspservicedata) |
+| [PresenceServerBrowserServiceData](/vext/ref/fb/presenceserverbrowserservicedata) | [PresenceServiceData](/vext/ref/fb/presenceservicedata) |
+| [PresenceStatisticsServiceData](/vext/ref/fb/presencestatisticsservicedata) | [PresenceUserIdServiceData](/vext/ref/fb/presenceuseridservicedata) |
+| [PresenceWebFeedServiceData](/vext/ref/fb/presencewebfeedservicedata) | [PresenceXPromoServiceData](/vext/ref/fb/presencexpromoservicedata) |
+| [PrintDebugTextEntityData](/vext/ref/fb/printdebugtextentitydata) | [ProceduralAwarenessAntRefs](/vext/ref/fb/proceduralawarenessantrefs) |
+| [ProcessorData](/vext/ref/fb/processordata) | [ProfileEntityData](/vext/ref/fb/profileentitydata) |
+| [ProfileOptionData](/vext/ref/fb/profileoptiondata) | [ProfileOptionDataBinary](/vext/ref/fb/profileoptiondatabinary) |
+| [ProfileOptionDataBool](/vext/ref/fb/profileoptiondatabool) | [ProfileOptionDataEnum](/vext/ref/fb/profileoptiondataenum) |
+| [ProfileOptionDataFloat](/vext/ref/fb/profileoptiondatafloat) | [ProfileOptionDataInt](/vext/ref/fb/profileoptiondataint) |
+| [ProfileOptionDataString](/vext/ref/fb/profileoptiondatastring) | [ProfileOptionsAsset](/vext/ref/fb/profileoptionsasset) |
+| [ProjectileBlueprint](/vext/ref/fb/projectileblueprint) | [ProjectileEntityData](/vext/ref/fb/projectileentitydata) |
+| [PropellerEngineConfigData](/vext/ref/fb/propellerengineconfigdata) | [PropertyCastEntityData](/vext/ref/fb/propertycastentitydata) |
+| [PropertyDebugEntityData](/vext/ref/fb/propertydebugentitydata) | [PropertyGateEntityData](/vext/ref/fb/propertygateentitydata) |
+| [PropertyRecordingData](/vext/ref/fb/propertyrecordingdata) | [PropertyTrackData](/vext/ref/fb/propertytrackdata) |
+| [ProximityData](/vext/ref/fb/proximitydata) | [Ps3ParentalLockAgeSettingsOverrides](/vext/ref/fb/ps3parentallockagesettingsoverrides) |
+| [Ps3PresenceBackendData](/vext/ref/fb/ps3presencebackenddata) | [PS3StoreImageHD1080](/vext/ref/fb/ps3storeimagehd1080) |
+| [PS3StoreImageSD](/vext/ref/fb/ps3storeimagesd) | [QueryGetNode](/vext/ref/fb/querygetnode) |
+| [RadarSweepComponentData](/vext/ref/fb/radarsweepcomponentdata) | [RadioAltitudeData](/vext/ref/fb/radioaltitudedata) |
+| [RadioComponentData](/vext/ref/fb/radiocomponentdata) | [RadiosityEntityData](/vext/ref/fb/radiosityentitydata) |
+| [RadiosityMaterial](/vext/ref/fb/radiositymaterial) | [RagdollAsset](/vext/ref/fb/ragdollasset) |
+| [RagdollComponentData](/vext/ref/fb/ragdollcomponentdata) | [RandomDelayEntityData](/vext/ref/fb/randomdelayentitydata) |
+| [RandomEvaluatorData](/vext/ref/fb/randomevaluatordata) | [RandomEventEntityData](/vext/ref/fb/randomevententitydata) |
+| [RandomFloatEntityData](/vext/ref/fb/randomfloatentitydata) | [RandomMultiEventEntityData](/vext/ref/fb/randommultievententitydata) |
+| [RandomWalkOrderEntityData](/vext/ref/fb/randomwalkorderentitydata) | [RandomXYZEvaluatorData](/vext/ref/fb/randomxyzevaluatordata) |
+| [RankLevelData](/vext/ref/fb/rankleveldata) | [RankParamsAsset](/vext/ref/fb/rankparamsasset) |
+| [RasterCoverageData](/vext/ref/fb/rastercoveragedata) | [RasterQuadtreeData](/vext/ref/fb/rasterquadtreedata) |
+| [RasterQuadtreeNodeData](/vext/ref/fb/rasterquadtreenodedata) | [RasterTreeAsset](/vext/ref/fb/rastertreeasset) |
+| [RawFileAsset](/vext/ref/fb/rawfileasset) | [RawFileDataAsset](/vext/ref/fb/rawfiledataasset) |
+| [RawFileImportActionParams](/vext/ref/fb/rawfileimportactionparams) | [RawFileResourceAsset](/vext/ref/fb/rawfileresourceasset) |
+| [ReceivedAwardSurveyEvent](/vext/ref/fb/receivedawardsurveyevent) | [ReceiveEntry](/vext/ref/fb/receiveentry) |
+| [ReceiveNodeData](/vext/ref/fb/receivenodedata) | [RecordedInputData](/vext/ref/fb/recordedinputdata) |
+| [ReferenceObjectData](/vext/ref/fb/referenceobjectdata) | [RefreshNode](/vext/ref/fb/refreshnode) |
+| [RegistryContainer](/vext/ref/fb/registrycontainer) | [RegularSocketObjectData](/vext/ref/fb/regularsocketobjectdata) |
+| [RemoteEntryComponentData](/vext/ref/fb/remoteentrycomponentdata) | [RenderTextureAsset](/vext/ref/fb/rendertextureasset) |
+| [RenderVolumeEntityData](/vext/ref/fb/rendervolumeentitydata) | [RepairToolWeaponData](/vext/ref/fb/repairtoolweapondata) |
+| [ResourceManagerSettings](/vext/ref/fb/resourcemanagersettings) | [RGBRasterData](/vext/ref/fb/rgbrasterdata) |
+| [RibbonData](/vext/ref/fb/ribbondata) | [RichPresenceContext](/vext/ref/fb/richpresencecontext) |
+| [RichPresenceContextValue](/vext/ref/fb/richpresencecontextvalue) | [RichPresenceContextValueWithKey](/vext/ref/fb/richpresencecontextvaluewithkey) |
+| [RichPresenceData](/vext/ref/fb/richpresencedata) | [RichPresencePresenceString](/vext/ref/fb/richpresencepresencestring) |
+| [RigidBodyConeConstraintData](/vext/ref/fb/rigidbodyconeconstraintdata) | [RigidBodyConstraintData](/vext/ref/fb/rigidbodyconstraintdata) |
+| [RigidBodyData](/vext/ref/fb/rigidbodydata) | [RigidBodyHingeConstraintData](/vext/ref/fb/rigidbodyhingeconstraintdata) |
+| [RigidMeshAsset](/vext/ref/fb/rigidmeshasset) | [RigidMeshEntityData](/vext/ref/fb/rigidmeshentitydata) |
+| [RiverData](/vext/ref/fb/riverdata) | [RoadData](/vext/ref/fb/roaddata) |
+| [RotateVectorData](/vext/ref/fb/rotatevectordata) | [RotationBodyData](/vext/ref/fb/rotationbodydata) |
+| [RotorComponentData](/vext/ref/fb/rotorcomponentdata) | [RotorParameters](/vext/ref/fb/rotorparameters) |
+| [RoundEvent](/vext/ref/fb/roundevent) | [RoundOverEntityData](/vext/ref/fb/roundoverentitydata) |
+| [RoundOverEvent](/vext/ref/fb/roundoverevent) | [RouteEntry](/vext/ref/fb/routeentry) |
+| [RouteNodeData](/vext/ref/fb/routenodedata) | [SamplerNodeData](/vext/ref/fb/samplernodedata) |
+| [SampleTextureData](/vext/ref/fb/sampletexturedata) | [SaveEntityData](/vext/ref/fb/saveentitydata) |
+| [SaveGameLoadedEntityData](/vext/ref/fb/savegameloadedentitydata) | [ScaleClampNodeData](/vext/ref/fb/scaleclampnodedata) |
+| [ScenarioWaypointData](/vext/ref/fb/scenariowaypointdata) | [SceneRecordingData](/vext/ref/fb/scenerecordingdata) |
+| [ScopeFilterData](/vext/ref/fb/scopefilterdata) | [ScoreAggregate](/vext/ref/fb/scoreaggregate) |
+| [ScoringBucketData](/vext/ref/fb/scoringbucketdata) | [ScoringData](/vext/ref/fb/scoringdata) |
+| [ScoringHandlerData](/vext/ref/fb/scoringhandlerdata) | [ScoringTypeData](/vext/ref/fb/scoringtypedata) |
+| [ScreenEffectComponentData](/vext/ref/fb/screeneffectcomponentdata) | [ScriptEntityData](/vext/ref/fb/scriptentitydata) |
+| [SearchAndDestroyConstantData](/vext/ref/fb/searchanddestroyconstantdata) | [SearchAndDestroyOrderEntityData](/vext/ref/fb/searchanddestroyorderentitydata) |
+| [SelectEventEntityData](/vext/ref/fb/selectevententitydata) | [SendEntry](/vext/ref/fb/sendentry) |
+| [SendNodeData](/vext/ref/fb/sendnodedata) | [SenseTerrainSphereData](/vext/ref/fb/senseterrainspheredata) |
+| [SensingComponentData](/vext/ref/fb/sensingcomponentdata) | [SensingManagerEntityData](/vext/ref/fb/sensingmanagerentitydata) |
+| [SensingSettings](/vext/ref/fb/sensingsettings) | [SensingTemplateData](/vext/ref/fb/sensingtemplatedata) |
+| [SequenceData](/vext/ref/fb/sequencedata) | [SequenceEntityData](/vext/ref/fb/sequenceentitydata) |
+| [SequenceGeneratorNodeData](/vext/ref/fb/sequencegeneratornodedata) | [ServerBackendData](/vext/ref/fb/serverbackenddata) |
+| [ServerMetricsSettings](/vext/ref/fb/servermetricssettings) | [ServerPerformanceEvent](/vext/ref/fb/serverperformanceevent) |
+| [ServerSettings](/vext/ref/fb/serversettings) | [SettingEntityData](/vext/ref/fb/settingentitydata) |
+| [SettingsBundleAsset](/vext/ref/fb/settingsbundleasset) | [ShaderColorUnlockPartCollection](/vext/ref/fb/shadercolorunlockpartcollection) |
+| [ShaderCustomizationUnlockPartCollection](/vext/ref/fb/shadercustomizationunlockpartcollection) | [ShaderDatabaseAsset](/vext/ref/fb/shaderdatabaseasset) |
+| [ShaderGraph](/vext/ref/fb/shadergraph) | [ShaderParameterComponentData](/vext/ref/fb/shaderparametercomponentdata) |
+| [ShaderParamsComponentData](/vext/ref/fb/shaderparamscomponentdata) | [ShaderSystemSettings](/vext/ref/fb/shadersystemsettings) |
+| [ShaderTextureUnlockPartCollection](/vext/ref/fb/shadertextureunlockpartcollection) | [ShootAtFromCoverData](/vext/ref/fb/shootatfromcoverdata) |
+| [ShootOrderEntityData](/vext/ref/fb/shootorderentitydata) | [SimpleAnimationControlComponentData](/vext/ref/fb/simpleanimationcontrolcomponentdata) |
+| [SimpleMovementActionBaseData](/vext/ref/fb/simplemovementactionbasedata) | [SimpleMovementActionData](/vext/ref/fb/simplemovementactiondata) |
+| [SimplePropertyTrackData](/vext/ref/fb/simplepropertytrackdata) | [SimpleTransformNodeData](/vext/ref/fb/simpletransformnodedata) |
+| [SimpleValueSelectorNodeData](/vext/ref/fb/simplevalueselectornodedata) | [SingleTerrainLayerData](/vext/ref/fb/singleterrainlayerdata) |
+| [SkeletonAsset](/vext/ref/fb/skeletonasset) | [SkeletonCollisionData](/vext/ref/fb/skeletoncollisiondata) |
+| [SkinnedMeshAsset](/vext/ref/fb/skinnedmeshasset) | [SkinnedSocketObjectData](/vext/ref/fb/skinnedsocketobjectdata) |
+| [SkyComponentData](/vext/ref/fb/skycomponentdata) | [SkyEffectState](/vext/ref/fb/skyeffectstate) |
+| [SlidingStateData](/vext/ref/fb/slidingstatedata) | [SlowMotionEntityData](/vext/ref/fb/slowmotionentitydata) |
+| [SniperLensScopeFilterData](/vext/ref/fb/sniperlensscopefilterdata) | [SocketData](/vext/ref/fb/socketdata) |
+| [SocketObjectData](/vext/ref/fb/socketobjectdata) | [SocketObjectDataBase](/vext/ref/fb/socketobjectdatabase) |
+| [SoldierAimAssistData](/vext/ref/fb/soldieraimassistdata) | [SoldierAimingConstraintsData](/vext/ref/fb/soldieraimingconstraintsdata) |
+| [SoldierAimingSimulationData](/vext/ref/fb/soldieraimingsimulationdata) | [SoldierAsset](/vext/ref/fb/soldierasset) |
+| [SoldierAutoAimData](/vext/ref/fb/soldierautoaimdata) | [SoldierBlueprint](/vext/ref/fb/soldierblueprint) |
+| [SoldierBodyComponentData](/vext/ref/fb/soldierbodycomponentdata) | [SoldierCameraComponentData](/vext/ref/fb/soldiercameracomponentdata) |
+| [SoldierCustomizationAsset](/vext/ref/fb/soldiercustomizationasset) | [SoldierDecalComponentData](/vext/ref/fb/soldierdecalcomponentdata) |
+| [SoldierEmoteComponentData](/vext/ref/fb/soldieremotecomponentdata) | [SoldierEmoteNetworkedMessageMapping](/vext/ref/fb/soldieremotenetworkedmessagemapping) |
+| [SoldierEntityData](/vext/ref/fb/soldierentitydata) | [SoldierEntityInteractionComponentData](/vext/ref/fb/soldierentityinteractioncomponentdata) |
+| [SoldierEntryComponentData](/vext/ref/fb/soldierentrycomponentdata) | [SoldierFootplantEffectComponentData](/vext/ref/fb/soldierfootplanteffectcomponentdata) |
+| [SoldierGripComponentData](/vext/ref/fb/soldiergripcomponentdata) | [SoldierHeadCollisionData](/vext/ref/fb/soldierheadcollisiondata) |
+| [SoldierHealthModuleData](/vext/ref/fb/soldierhealthmoduledata) | [SoldierMovementSequenceData](/vext/ref/fb/soldiermovementsequencedata) |
+| [SoldierParachuteComponentData](/vext/ref/fb/soldierparachutecomponentdata) | [SoldierSoundComponentData](/vext/ref/fb/soldiersoundcomponentdata) |
+| [SoldierSoundData](/vext/ref/fb/soldiersounddata) | [SoldierSpawnAppearanceTemplateData](/vext/ref/fb/soldierspawnappearancetemplatedata) |
+| [SoldierSpawnKitTemplateData](/vext/ref/fb/soldierspawnkittemplatedata) | [SoldierSpawnTemplateData](/vext/ref/fb/soldierspawntemplatedata) |
+| [SoldierSprintSettingsData](/vext/ref/fb/soldiersprintsettingsdata) | [SoldierSuppressionComponentData](/vext/ref/fb/soldiersuppressioncomponentdata) |
+| [SoldierTestEntityData](/vext/ref/fb/soldiertestentitydata) | [SoldierWeaponAsset](/vext/ref/fb/soldierweaponasset) |
+| [SoldierWeaponBlueprint](/vext/ref/fb/soldierweaponblueprint) | [SoldierWeaponCustomizationAsset](/vext/ref/fb/soldierweaponcustomizationasset) |
+| [SoldierWeaponData](/vext/ref/fb/soldierweapondata) | [SoldierWeaponMultiUnlock](/vext/ref/fb/soldierweaponmultiunlock) |
+| [SoldierWeaponOverrideData](/vext/ref/fb/soldierweaponoverridedata) | [SoldierWeaponsComponentData](/vext/ref/fb/soldierweaponscomponentdata) |
+| [SoldierWeaponSwitchingData](/vext/ref/fb/soldierweaponswitchingdata) | [SoldierWeaponUnlockAsset](/vext/ref/fb/soldierweaponunlockasset) |
+| [SoundAreaEntityData](/vext/ref/fb/soundareaentitydata) | [SoundAsset](/vext/ref/fb/soundasset) |
+| [SoundBusData](/vext/ref/fb/soundbusdata) | [SoundDataAsset](/vext/ref/fb/sounddataasset) |
+| [SoundEffectEntityData](/vext/ref/fb/soundeffectentitydata) | [SoundEntityData](/vext/ref/fb/soundentitydata) |
+| [SoundEnvironmentConstantData](/vext/ref/fb/soundenvironmentconstantdata) | [SoundGraphAsset](/vext/ref/fb/soundgraphasset) |
+| [SoundGraphData](/vext/ref/fb/soundgraphdata) | [SoundMasterPatchAsset](/vext/ref/fb/soundmasterpatchasset) |
+| [SoundPatchAsset](/vext/ref/fb/soundpatchasset) | [SoundPatchConfigurationAsset](/vext/ref/fb/soundpatchconfigurationasset) |
+| [SoundPatchConfigurationAssetEntry](/vext/ref/fb/soundpatchconfigurationassetentry) | [SoundPatchConfigurationEntry](/vext/ref/fb/soundpatchconfigurationentry) |
+| [SoundPatchConfigurationParameterEntry](/vext/ref/fb/soundpatchconfigurationparameterentry) | [SoundPrimeEntityData](/vext/ref/fb/soundprimeentitydata) |
+| [SoundScopeData](/vext/ref/fb/soundscopedata) | [SoundScopeSetupData](/vext/ref/fb/soundscopesetupdata) |
+| [SoundScopeSetupEntityData](/vext/ref/fb/soundscopesetupentitydata) | [SoundScopeStrategyData](/vext/ref/fb/soundscopestrategydata) |
+| [SoundSettings](/vext/ref/fb/soundsettings) | [SoundState](/vext/ref/fb/soundstate) |
+| [SoundStateEntityData](/vext/ref/fb/soundstateentitydata) | [SoundStateSettingsAsset](/vext/ref/fb/soundstatesettingsasset) |
+| [SoundTestAsset](/vext/ref/fb/soundtestasset) | [SoundTestEventTask](/vext/ref/fb/soundtesteventtask) |
+| [SoundTestParamTask](/vext/ref/fb/soundtestparamtask) | [SoundTestSpec](/vext/ref/fb/soundtestspec) |
+| [SoundTestSuite](/vext/ref/fb/soundtestsuite) | [SoundTestTask](/vext/ref/fb/soundtesttask) |
+| [SoundTestTaskParam](/vext/ref/fb/soundtesttaskparam) | [SoundTestTaskSpec](/vext/ref/fb/soundtesttaskspec) |
+| [SoundTestTransformTask](/vext/ref/fb/soundtesttransformtask) | [SoundWaveAsset](/vext/ref/fb/soundwaveasset) |
+| [SoundWaveVariation](/vext/ref/fb/soundwavevariation) | [SpatialEntityData](/vext/ref/fb/spatialentitydata) |
+| [SpatialPrefabBlueprint](/vext/ref/fb/spatialprefabblueprint) | [SpatialReferenceObjectData](/vext/ref/fb/spatialreferenceobjectdata) |
+| [SpawnAnimationData](/vext/ref/fb/spawnanimationdata) | [SpawnAnimationFrameData](/vext/ref/fb/spawnanimationframedata) |
+| [SpawnDirectionData](/vext/ref/fb/spawndirectiondata) | [SpawnEntitySelector](/vext/ref/fb/spawnentityselector) |
+| [SpawnEvent](/vext/ref/fb/spawnevent) | [SpawnOrientationData](/vext/ref/fb/spawnorientationdata) |
+| [SpawnPointManagerData](/vext/ref/fb/spawnpointmanagerdata) | [SpawnPositionData](/vext/ref/fb/spawnpositiondata) |
+| [SpawnRateData](/vext/ref/fb/spawnratedata) | [SpawnReferenceObjectData](/vext/ref/fb/spawnreferenceobjectdata) |
+| [SpawnRotationData](/vext/ref/fb/spawnrotationdata) | [SpawnRotationSpeedData](/vext/ref/fb/spawnrotationspeeddata) |
+| [SpawnSizeData](/vext/ref/fb/spawnsizedata) | [SpawnSpeedData](/vext/ref/fb/spawnspeeddata) |
+| [SpawnState](/vext/ref/fb/spawnstate) | [SpawnSubViewData](/vext/ref/fb/spawnsubviewdata) |
+| [SpawnSurveyEvent](/vext/ref/fb/spawnsurveyevent) | [SpecialMovesComponentData](/vext/ref/fb/specialmovescomponentdata) |
+| [SpectatorReplayEntityData](/vext/ref/fb/spectatorreplayentitydata) | [SpectatorSubViewData](/vext/ref/fb/spectatorsubviewdata) |
+| [SpeedEventGateEntityData](/vext/ref/fb/speedeventgateentitydata) | [SphereData](/vext/ref/fb/spheredata) |
+| [SphereEvaluatorData](/vext/ref/fb/sphereevaluatordata) | [SplitterNode](/vext/ref/fb/splitternode) |
+| [SpotLightEntityData](/vext/ref/fb/spotlightentitydata) | [SpottingComponentData](/vext/ref/fb/spottingcomponentdata) |
+| [SpottingEntityData](/vext/ref/fb/spottingentitydata) | [SpottingScoringHandlerData](/vext/ref/fb/spottingscoringhandlerdata) |
+| [SpottingTargetComponentData](/vext/ref/fb/spottingtargetcomponentdata) | [StabilizerData](/vext/ref/fb/stabilizerdata) |
+| [StanceFilterComponentData](/vext/ref/fb/stancefiltercomponentdata) | [StandardMoveWaypointData](/vext/ref/fb/standardmovewaypointdata) |
+| [StartEntityData](/vext/ref/fb/startentitydata) | [StatCategoriesAwardTree](/vext/ref/fb/statcategoriesawardtree) |
+| [StatCategoriesBaseTree](/vext/ref/fb/statcategoriesbasetree) | [StatCategoriesDifficultyTree](/vext/ref/fb/statcategoriesdifficultytree) |
+| [StatCategoriesGuidTree](/vext/ref/fb/statcategoriesguidtree) | [StatCategoriesKitTree](/vext/ref/fb/statcategorieskittree) |
+| [StatCategoriesLevelTree](/vext/ref/fb/statcategoriesleveltree) | [StatCategoriesPlayerRoleTree](/vext/ref/fb/statcategoriesplayerroletree) |
+| [StatCategoriesScoreboardPositionTree](/vext/ref/fb/statcategoriesscoreboardpositiontree) | [StatCategoriesScoringBucketTree](/vext/ref/fb/statcategoriesscoringbuckettree) |
+| [StatCategoriesTree](/vext/ref/fb/statcategoriestree) | [StatCategoriesVehicleStateTypeTree](/vext/ref/fb/statcategoriesvehiclestatetypetree) |
+| [StatCategoriesVehicleTree](/vext/ref/fb/statcategoriesvehicletree) | [StatCategoriesVehicleWeaponTree](/vext/ref/fb/statcategoriesvehicleweapontree) |
+| [StatCategoriesWeaponAccessoryTree](/vext/ref/fb/statcategoriesweaponaccessorytree) | [StatCategoriesWeaponTree](/vext/ref/fb/statcategoriesweapontree) |
+| [StatCategoryTreeCollection](/vext/ref/fb/statcategorytreecollection) | [StateEventGateEntityData](/vext/ref/fb/stateeventgateentitydata) |
+| [StateNode](/vext/ref/fb/statenode) | [StateRenderSettings](/vext/ref/fb/staterendersettings) |
+| [StatEventTriggerEntityData](/vext/ref/fb/stateventtriggerentitydata) | [StaticCameraData](/vext/ref/fb/staticcameradata) |
+| [StaticConfigAsset](/vext/ref/fb/staticconfigasset) | [StaticEnlightenData](/vext/ref/fb/staticenlightendata) |
+| [StaticEnlightenEntityData](/vext/ref/fb/staticenlightenentitydata) | [StaticModelEntityData](/vext/ref/fb/staticmodelentitydata) |
+| [StaticModelGroupEntityData](/vext/ref/fb/staticmodelgroupentitydata) | [StaticUnlockList](/vext/ref/fb/staticunlocklist) |
+| [StatsCategoryAwardData](/vext/ref/fb/statscategoryawarddata) | [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata) |
+| [StatsCategoryData](/vext/ref/fb/statscategorydata) | [StatsCategoryDifficultyData](/vext/ref/fb/statscategorydifficultydata) |
+| [StatsCategoryGuidData](/vext/ref/fb/statscategoryguiddata) | [StatsCategoryKitData](/vext/ref/fb/statscategorykitdata) |
+| [StatsCategoryLevelData](/vext/ref/fb/statscategoryleveldata) | [StatsCategoryPlayerRoleData](/vext/ref/fb/statscategoryplayerroledata) |
+| [StatsCategoryScoreboardPositionData](/vext/ref/fb/statscategoryscoreboardpositiondata) | [StatsCategoryScoringBucketData](/vext/ref/fb/statscategoryscoringbucketdata) |
+| [StatsCategoryVehicleData](/vext/ref/fb/statscategoryvehicledata) | [StatsCategoryVehicleStateTypeData](/vext/ref/fb/statscategoryvehiclestatetypedata) |
+| [StatsCategoryVehicleWeaponData](/vext/ref/fb/statscategoryvehicleweapondata) | [StatsCategoryWeaponAccessoryData](/vext/ref/fb/statscategoryweaponaccessorydata) |
+| [StatsCategoryWeaponData](/vext/ref/fb/statscategoryweapondata) | [StatSpamSettings](/vext/ref/fb/statspamsettings) |
+| [StatSurveyEvent](/vext/ref/fb/statsurveyevent) | [StopWatchEntityData](/vext/ref/fb/stopwatchentitydata) |
+| [StreamGridEntityData](/vext/ref/fb/streamgridentitydata) | [StreamGroupData](/vext/ref/fb/streamgroupdata) |
+| [StreamingGateEntityData](/vext/ref/fb/streaminggateentitydata) | [StreamPoolAsset](/vext/ref/fb/streampoolasset) |
+| [SubtitleDataNode](/vext/ref/fb/subtitledatanode) | [SubtitleDataTree](/vext/ref/fb/subtitledatatree) |
+| [SubtitleMainDataNode](/vext/ref/fb/subtitlemaindatanode) | [SubViewData](/vext/ref/fb/subviewdata) |
+| [SubWorldData](/vext/ref/fb/subworlddata) | [SubWorldInclusion](/vext/ref/fb/subworldinclusion) |
+| [SubWorldInclusionCriterion](/vext/ref/fb/subworldinclusioncriterion) | [SubWorldInclusionSetting](/vext/ref/fb/subworldinclusionsetting) |
+| [SubWorldInclusionSettings](/vext/ref/fb/subworldinclusionsettings) | [SubWorldReferenceObjectData](/vext/ref/fb/subworldreferenceobjectdata) |
+| [SunFlareComponentData](/vext/ref/fb/sunflarecomponentdata) | [SunFlareEffectState](/vext/ref/fb/sunflareeffectstate) |
+| [SupplySphereComponentData](/vext/ref/fb/supplyspherecomponentdata) | [SupplySphereEntityData](/vext/ref/fb/supplysphereentitydata) |
+| [SupplySphereWeaponData](/vext/ref/fb/supplysphereweapondata) | [SupportedShootingCommonData](/vext/ref/fb/supportedshootingcommondata) |
+| [SupportedShootingComponentData](/vext/ref/fb/supportedshootingcomponentdata) | [SuppressionScoringHandlerData](/vext/ref/fb/suppressionscoringhandlerdata) |
+| [SuppressionSettings](/vext/ref/fb/suppressionsettings) | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset) |
+| [SurfaceShaderInstanceData](/vext/ref/fb/surfaceshaderinstancedata) | [SurroundingGeometryEntityData](/vext/ref/fb/surroundinggeometryentitydata) |
+| [SurveyEvent](/vext/ref/fb/surveyevent) | [SurveySuppressedEvent](/vext/ref/fb/surveysuppressedevent) |
+| [SwimmingStateData](/vext/ref/fb/swimmingstatedata) | [SwitcherEntry](/vext/ref/fb/switcherentry) |
+| [SwitcherNodeData](/vext/ref/fb/switchernodedata) | [SwitchPropertyStringEntityData](/vext/ref/fb/switchpropertystringentitydata) |
+| [SyncAnimationsEntityData](/vext/ref/fb/syncanimationsentitydata) | [SyncedBFSettings](/vext/ref/fb/syncedbfsettings) |
+| [SyncedBoolEntityData](/vext/ref/fb/syncedboolentitydata) | [SyncedFloatEntityData](/vext/ref/fb/syncedfloatentitydata) |
+| [SyncedGameSettings](/vext/ref/fb/syncedgamesettings) | [SyncedIntEntityData](/vext/ref/fb/syncedintentitydata) |
+| [SyncedSequenceEntityData](/vext/ref/fb/syncedsequenceentitydata) | [SyncedTransformEntityData](/vext/ref/fb/syncedtransformentitydata) |
+| [SystemSettings](/vext/ref/fb/systemsettings) | [TacticalObjectiveEntityData](/vext/ref/fb/tacticalobjectiveentitydata) |
+| [TargetCameraData](/vext/ref/fb/targetcameradata) | [TargetCameraEntityData](/vext/ref/fb/targetcameraentitydata) |
+| [TargetEntityData](/vext/ref/fb/targetentitydata) | [TargetEvaluationConstantData](/vext/ref/fb/targetevaluationconstantdata) |
+| [TargetEvaluatorComponentData](/vext/ref/fb/targetevaluatorcomponentdata) | [TeamAsset](/vext/ref/fb/teamasset) |
+| [TeamData](/vext/ref/fb/teamdata) | [TeamEntityData](/vext/ref/fb/teamentitydata) |
+| [TeamFilterEntityData](/vext/ref/fb/teamfilterentitydata) | [TelemetryTriggerEntityData](/vext/ref/fb/telemetrytriggerentitydata) |
+| [TerrainColorTreeAsset](/vext/ref/fb/terraincolortreeasset) | [TerrainData](/vext/ref/fb/terraindata) |
+| [TerrainDecalsData](/vext/ref/fb/terraindecalsdata) | [TerrainEntityData](/vext/ref/fb/terrainentitydata) |
+| [TerrainFillDecalData](/vext/ref/fb/terrainfilldecaldata) | [TerrainHeightfieldData](/vext/ref/fb/terrainheightfielddata) |
+| [TerrainLayerData](/vext/ref/fb/terrainlayerdata) | [TerrainMaskTreeAsset](/vext/ref/fb/terrainmasktreeasset) |
+| [TerrainMaterialMapAsset](/vext/ref/fb/terrainmaterialmapasset) | [TerrainMaterialTreeAsset](/vext/ref/fb/terrainmaterialtreeasset) |
+| [TerrainMeshScatteringType](/vext/ref/fb/terrainmeshscatteringtype) | [TerrainQuadDecalAtlasTileTemplateData](/vext/ref/fb/terrainquaddecalatlastiletemplatedata) |
+| [TerrainQuadDecalData](/vext/ref/fb/terrainquaddecaldata) | [TerrainSettings](/vext/ref/fb/terrainsettings) |
+| [TerrainStreamingSettings](/vext/ref/fb/terrainstreamingsettings) | [TerrainStreamingTreeAsset](/vext/ref/fb/terrainstreamingtreeasset) |
+| [TerrainSubLayerData](/vext/ref/fb/terrainsublayerdata) | [TerrainUndergrowthType](/vext/ref/fb/terrainundergrowthtype) |
+| [TestCaseEntityData](/vext/ref/fb/testcaseentitydata) | [TestPointEntityData](/vext/ref/fb/testpointentitydata) |
+| [TextUnlockPartData](/vext/ref/fb/textunlockpartdata) | [TextureArrayAsset](/vext/ref/fb/texturearrayasset) |
+| [TextureAsset](/vext/ref/fb/textureasset) | [TextureAssetUnlockPartData](/vext/ref/fb/textureassetunlockpartdata) |
+| [TextureAtlasAsset](/vext/ref/fb/textureatlasasset) | [TextureBaseAsset](/vext/ref/fb/texturebaseasset) |
+| [TextureCompressSettings](/vext/ref/fb/texturecompresssettings) | [TextureGroup](/vext/ref/fb/texturegroup) |
+| [TextureReference](/vext/ref/fb/texturereference) | [TextureSettings](/vext/ref/fb/texturesettings) |
+| [TextureSliceUnlockPartData](/vext/ref/fb/texturesliceunlockpartdata) | [TextureStreamingSettings](/vext/ref/fb/texturestreamingsettings) |
+| [TextureUnlockPartData](/vext/ref/fb/textureunlockpartdata) | [TicketCounterEntityData](/vext/ref/fb/ticketcounterentitydata) |
+| [TickEvent](/vext/ref/fb/tickevent) | [TimerNodeData](/vext/ref/fb/timernodedata) |
+| [TimingConstantData](/vext/ref/fb/timingconstantdata) | [TimingViewCategories](/vext/ref/fb/timingviewcategories) |
+| [TimingViewCategory](/vext/ref/fb/timingviewcategory) | [TimingViewSettings](/vext/ref/fb/timingviewsettings) |
+| [TonemapComponentData](/vext/ref/fb/tonemapcomponentdata) | [ToolData](/vext/ref/fb/tooldata) |
+| [TopPlayersEntityData](/vext/ref/fb/topplayersentitydata) | [ToWorldSpaceTransformEntityData](/vext/ref/fb/toworldspacetransformentitydata) |
+| [TrackComponentData](/vext/ref/fb/trackcomponentdata) | [TrackPlayerEntityData](/vext/ref/fb/trackplayerentitydata) |
+| [TrackWheelComponentData](/vext/ref/fb/trackwheelcomponentdata) | [TrajectoryEntityData](/vext/ref/fb/trajectoryentitydata) |
+| [TransformBlendEntityData](/vext/ref/fb/transformblendentitydata) | [TransformEntityData](/vext/ref/fb/transformentitydata) |
+| [TransformHubEntityData](/vext/ref/fb/transformhubentitydata) | [TransformModifierEntityData](/vext/ref/fb/transformmodifierentitydata) |
+| [TransformMultiplierEntityData](/vext/ref/fb/transformmultiplierentitydata) | [TransformPartPropertyTrackData](/vext/ref/fb/transformpartpropertytrackdata) |
+| [TransformPropertyTrackData](/vext/ref/fb/transformpropertytrackdata) | [TransformSelectorEntityData](/vext/ref/fb/transformselectorentitydata) |
+| [TransformSnapToGroundEntityData](/vext/ref/fb/transformsnaptogroundentitydata) | [TransformSplitterEntityData](/vext/ref/fb/transformsplitterentitydata) |
+| [TreeBase](/vext/ref/fb/treebase) | [TreeNodeBase](/vext/ref/fb/treenodebase) |
+| [TriggerEntityData](/vext/ref/fb/triggerentitydata) | [TriggerEventEntityData](/vext/ref/fb/triggerevententitydata) |
+| [TurbulanceData](/vext/ref/fb/turbulancedata) | [TurretControlConstantData](/vext/ref/fb/turretcontrolconstantdata) |
+| [TurretData](/vext/ref/fb/turretdata) | [UavCameraData](/vext/ref/fb/uavcameradata) |
+| [UI3dIconCompData](/vext/ref/fb/ui3diconcompdata) | [UI3dLaserTagCompData](/vext/ref/fb/ui3dlasertagcompdata) |
+| [UIActionData](/vext/ref/fb/uiactiondata) | [UIAlerttagCompData](/vext/ref/fb/uialerttagcompdata) |
+| [UIAnimatedTextureAsset](/vext/ref/fb/uianimatedtextureasset) | [UIAsset](/vext/ref/fb/uiasset) |
+| [UIAssignmentsCompData](/vext/ref/fb/uiassignmentscompdata) | [UIAudioEventAsset](/vext/ref/fb/uiaudioeventasset) |
+| [UIAwardDescription](/vext/ref/fb/uiawarddescription) | [UIAwardsScreenCompData](/vext/ref/fb/uiawardsscreencompdata) |
+| [UIAwardsTrackingCompData](/vext/ref/fb/uiawardstrackingcompdata) | [UIBarDataBinding](/vext/ref/fb/uibardatabinding) |
+| [UIBattleLogCompData](/vext/ref/fb/uibattlelogcompdata) | [UIBundlesAsset](/vext/ref/fb/uibundlesasset) |
+| [UIButtonDataBinding](/vext/ref/fb/uibuttondatabinding) | [UICameraCompData](/vext/ref/fb/uicameracompdata) |
+| [UICampaignCompData](/vext/ref/fb/uicampaigncompdata) | [UICapturepointCompData](/vext/ref/fb/uicapturepointcompdata) |
+| [UICapturepointtagCompData](/vext/ref/fb/uicapturepointtagcompdata) | [UIChatCompData](/vext/ref/fb/uichatcompdata) |
+| [UIColor](/vext/ref/fb/uicolor) | [UIColorTemplate](/vext/ref/fb/uicolortemplate) |
+| [UICombatAreaAsset](/vext/ref/fb/uicombatareaasset) | [UICombatAreaCompData](/vext/ref/fb/uicombatareacompdata) |
+| [UICombatAreaEntityData](/vext/ref/fb/uicombatareaentitydata) | [UICompassDataBinding](/vext/ref/fb/uicompassdatabinding) |
+| [UIComponentData](/vext/ref/fb/uicomponentdata) | [UIConnectionCompData](/vext/ref/fb/uiconnectioncompdata) |
+| [UICoopCompData](/vext/ref/fb/uicoopcompdata) | [UICoopEndOfRoundCompData](/vext/ref/fb/uicoopendofroundcompdata) |
+| [UICoopLevelDescription](/vext/ref/fb/uicoopleveldescription) | [UICreditsAsset](/vext/ref/fb/uicreditsasset) |
+| [UICreditsCompData](/vext/ref/fb/uicreditscompdata) | [UICrosshairDataBinding](/vext/ref/fb/uicrosshairdatabinding) |
+| [UICustomizationCompData](/vext/ref/fb/uicustomizationcompdata) | [UIDamageIndicatorCompData](/vext/ref/fb/uidamageindicatorcompdata) |
+| [UIDataBinding](/vext/ref/fb/uidatabinding) | [UIDataInterfaceCompData](/vext/ref/fb/uidatainterfacecompdata) |
+| [UIDelayedCommandsCompData](/vext/ref/fb/uidelayedcommandscompdata) | [UIDetailedServerInfoCompData](/vext/ref/fb/uidetailedserverinfocompdata) |
+| [UIDirectAccessCompData](/vext/ref/fb/uidirectaccesscompdata) | [UIDistanceFieldAsset](/vext/ref/fb/uidistancefieldasset) |
+| [UIDogTagDescription](/vext/ref/fb/uidogtagdescription) | [UIDynamicDataBinding](/vext/ref/fb/uidynamicdatabinding) |
+| [UIDynamicTextureCompData](/vext/ref/fb/uidynamictexturecompdata) | [UIEndOfRoundCompData](/vext/ref/fb/uiendofroundcompdata) |
+| [UIEndOfRoundEntityData](/vext/ref/fb/uiendofroundentitydata) | [UIEventAsset](/vext/ref/fb/uieventasset) |
+| [UIFlagCounterCompData](/vext/ref/fb/uiflagcountercompdata) | [UIFontAsset](/vext/ref/fb/uifontasset) |
+| [UIFontCollection](/vext/ref/fb/uifontcollection) | [UIFontMappingCollection](/vext/ref/fb/uifontmappingcollection) |
+| [UIFriendsCompData](/vext/ref/fb/uifriendscompdata) | [UIGameModeDescription](/vext/ref/fb/uigamemodedescription) |
+| [UIGameQueueCompData](/vext/ref/fb/uigamequeuecompdata) | [UIGeneralCompData](/vext/ref/fb/uigeneralcompdata) |
+| [UIGenericItemDescription](/vext/ref/fb/uigenericitemdescription) | [UIGraphAsset](/vext/ref/fb/uigraphasset) |
+| [UIGraphEntityData](/vext/ref/fb/uigraphentitydata) | [UIGraphPipelineSettings](/vext/ref/fb/uigraphpipelinesettings) |
+| [UIGunMasterCompData](/vext/ref/fb/uigunmastercompdata) | [UIHardcoreCompData](/vext/ref/fb/uihardcorecompdata) |
+| [UIHUDMessageBinding](/vext/ref/fb/uihudmessagebinding) | [UIImageDataBinding](/vext/ref/fb/uiimagedatabinding) |
+| [UIIngameMenuCompData](/vext/ref/fb/uiingamemenucompdata) | [UIInputCompData](/vext/ref/fb/uiinputcompdata) |
+| [UIInputEventNodePort](/vext/ref/fb/uiinputeventnodeport) | [UIInstallHDContentCompData](/vext/ref/fb/uiinstallhdcontentcompdata) |
+| [UIInteractionCompData](/vext/ref/fb/uiinteractioncompdata) | [UIInterruptFlow](/vext/ref/fb/uiinterruptflow) |
+| [UIInventoryCompData](/vext/ref/fb/uiinventorycompdata) | [UIItemDescription](/vext/ref/fb/uiitemdescription) |
+| [UIItemDescriptionAsset](/vext/ref/fb/uiitemdescriptionasset) | [UIKillCardCompData](/vext/ref/fb/uikillcardcompdata) |
+| [UIKillCounterCompData](/vext/ref/fb/uikillcountercompdata) | [UIKitCompData](/vext/ref/fb/uikitcompdata) |
+| [UIKitItemDescription](/vext/ref/fb/uikititemdescription) | [UILeaderboardCompData](/vext/ref/fb/uileaderboardcompdata) |
+| [UILevelCompData](/vext/ref/fb/uilevelcompdata) | [UILevelDescription](/vext/ref/fb/uileveldescription) |
+| [UILevelDescriptionComponent](/vext/ref/fb/uileveldescriptioncomponent) | [UILevelLocationDescription](/vext/ref/fb/uilevellocationdescription) |
+| [UILicenseDescription](/vext/ref/fb/uilicensedescription) | [UILifeCounterCompData](/vext/ref/fb/uilifecountercompdata) |
+| [UILightExposureComponentData](/vext/ref/fb/uilightexposurecomponentdata) | [UIListDataBinding](/vext/ref/fb/uilistdatabinding) |
+| [UILoadLevelCompData](/vext/ref/fb/uiloadlevelcompdata) | [UILocalizeCompData](/vext/ref/fb/uilocalizecompdata) |
+| [UIManageMapsCompData](/vext/ref/fb/uimanagemapscompdata) | [UIManagePlayersCompData](/vext/ref/fb/uimanageplayerscompdata) |
+| [UIManageServerPresetsCompData](/vext/ref/fb/uimanageserverpresetscompdata) | [UIManDownCompData](/vext/ref/fb/uimandowncompdata) |
+| [UIManualCompData](/vext/ref/fb/uimanualcompdata) | [UIMapmarkerCompData](/vext/ref/fb/uimapmarkercompdata) |
+| [UIMapmarkertagCompData](/vext/ref/fb/uimapmarkertagcompdata) | [UIMatchCompData](/vext/ref/fb/uimatchcompdata) |
+| [UIMatchesListCompData](/vext/ref/fb/uimatcheslistcompdata) | [UIMemCardCompData](/vext/ref/fb/uimemcardcompdata) |
+| [UIMessageCompData](/vext/ref/fb/uimessagecompdata) | [UIMessageTriggerData](/vext/ref/fb/uimessagetriggerdata) |
+| [UIMinimapCompData](/vext/ref/fb/uiminimapcompdata) | [UIMinimapIconTextureAtlasAsset](/vext/ref/fb/uiminimapicontextureatlasasset) |
+| [UIMinimapVolumeEntityData](/vext/ref/fb/uiminimapvolumeentitydata) | [UIModDescription](/vext/ref/fb/uimoddescription) |
+| [UINametag](/vext/ref/fb/uinametag) | [UINametagCompData](/vext/ref/fb/uinametagcompdata) |
+| [UINametagCoopCompData](/vext/ref/fb/uinametagcoopcompdata) | [UINametagSPCompData](/vext/ref/fb/uinametagspcompdata) |
+| [UINavigationCompData](/vext/ref/fb/uinavigationcompdata) | [UINestedListDataBinding](/vext/ref/fb/uinestedlistdatabinding) |
+| [UINodeConnection](/vext/ref/fb/uinodeconnection) | [UINodeData](/vext/ref/fb/uinodedata) |
+| [UINodePort](/vext/ref/fb/uinodeport) | [UINumberDataBinding](/vext/ref/fb/uinumberdatabinding) |
+| [UIObjectivesCompData](/vext/ref/fb/uiobjectivescompdata) | [UIOnDemandFontComponentData](/vext/ref/fb/uiondemandfontcomponentdata) |
+| [UIPageHeaderBinding](/vext/ref/fb/uipageheaderbinding) | [UIPartData](/vext/ref/fb/uipartdata) |
+| [UIPartPropertyList](/vext/ref/fb/uipartpropertylist) | [UIPersistenceCompData](/vext/ref/fb/uipersistencecompdata) |
+| [UIPlaygroupCompData](/vext/ref/fb/uiplaygroupcompdata) | [UIPopupCompData](/vext/ref/fb/uipopupcompdata) |
+| [UIPostProcessComponentData](/vext/ref/fb/uipostprocesscomponentdata) | [UIPremiumCompData](/vext/ref/fb/uipremiumcompdata) |
+| [UIPreRoundCompData](/vext/ref/fb/uipreroundcompdata) | [UIPresenceCompData](/vext/ref/fb/uipresencecompdata) |
+| [UIQueuedEventsCompData](/vext/ref/fb/uiqueuedeventscompdata) | [UIRankDescription](/vext/ref/fb/uirankdescription) |
+| [UIRenderCompData](/vext/ref/fb/uirendercompdata) | [UIRightClickCompData](/vext/ref/fb/uirightclickcompdata) |
+| [UIScoreboardCompData](/vext/ref/fb/uiscoreboardcompdata) | [UIScreenAsset](/vext/ref/fb/uiscreenasset) |
+| [UIScreenEventCompData](/vext/ref/fb/uiscreeneventcompdata) | [UIScreenshotCompData](/vext/ref/fb/uiscreenshotcompdata) |
+| [UIServerBrowserCompData](/vext/ref/fb/uiserverbrowsercompdata) | [UIServerListCompData](/vext/ref/fb/uiserverlistcompdata) |
+| [UIServerListFilterBarCompData](/vext/ref/fb/uiserverlistfilterbarcompdata) | [UISessionDataComponentData](/vext/ref/fb/uisessiondatacomponentdata) |
+| [UISettings](/vext/ref/fb/uisettings) | [UISettingsCompData](/vext/ref/fb/uisettingscompdata) |
+| [UISetupServerWizardCompData](/vext/ref/fb/uisetupserverwizardcompdata) | [UISetValueData](/vext/ref/fb/uisetvaluedata) |
+| [UISoldierCompData](/vext/ref/fb/uisoldiercompdata) | [UISoundCompData](/vext/ref/fb/uisoundcompdata) |
+| [UISpawnLogicCompData](/vext/ref/fb/uispawnlogiccompdata) | [UISpawnPointCompData](/vext/ref/fb/uispawnpointcompdata) |
+| [UISpectatorCompData](/vext/ref/fb/uispectatorcompdata) | [UISquadCompData](/vext/ref/fb/uisquadcompdata) |
+| [UIStateAsset](/vext/ref/fb/uistateasset) | [UIStatsCompData](/vext/ref/fb/uistatscompdata) |
+| [UIStoreCompData](/vext/ref/fb/uistorecompdata) | [UITeamCompData](/vext/ref/fb/uiteamcompdata) |
+| [UITeamSupportTagCompData](/vext/ref/fb/uiteamsupporttagcompdata) | [UITextDatabase](/vext/ref/fb/uitextdatabase) |
+| [UITextDataBinding](/vext/ref/fb/uitextdatabinding) | [UITextureStreamingComponentData](/vext/ref/fb/uitexturestreamingcomponentdata) |
+| [UITicketCounterCompData](/vext/ref/fb/uiticketcountercompdata) | [UITrackingtagCompData](/vext/ref/fb/uitrackingtagcompdata) |
+| [UITrainingCompData](/vext/ref/fb/uitrainingcompdata) | [UIUnlocksCompData](/vext/ref/fb/uiunlockscompdata) |
+| [UIVehicleCompData](/vext/ref/fb/uivehiclecompdata) | [UIVehicleDescription](/vext/ref/fb/uivehicledescription) |
+| [UIVehicleUnlockDescription](/vext/ref/fb/uivehicleunlockdescription) | [UIVehicleWeaponDescription](/vext/ref/fb/uivehicleweapondescription) |
+| [UIVoiceCompData](/vext/ref/fb/uivoicecompdata) | [UIWeaponAccessoryDescription](/vext/ref/fb/uiweaponaccessorydescription) |
+| [UIWeaponCompData](/vext/ref/fb/uiweaponcompdata) | [UIWeaponDescription](/vext/ref/fb/uiweapondescription) |
+| [UIWidgetAsset](/vext/ref/fb/uiwidgetasset) | [UIWidgetEventCompData](/vext/ref/fb/uiwidgeteventcompdata) |
+| [UIWidgetMovieCompData](/vext/ref/fb/uiwidgetmoviecompdata) | [UIWidgetPathBinding](/vext/ref/fb/uiwidgetpathbinding) |
+| [UnderFireTriggerEntityData](/vext/ref/fb/underfiretriggerentitydata) | [UnlockableColorCollection](/vext/ref/fb/unlockablecolorcollection) |
+| [UnlockableShaderParameterValueCollection](/vext/ref/fb/unlockableshaderparametervaluecollection) | [UnlockableTextureCollection](/vext/ref/fb/unlockabletexturecollection) |
+| [UnlockableTextureSliceCollection](/vext/ref/fb/unlockabletextureslicecollection) | [UnlockAsset](/vext/ref/fb/unlockasset) |
+| [UnlockAssetBase](/vext/ref/fb/unlockassetbase) | [UnlockComponentData](/vext/ref/fb/unlockcomponentdata) |
+| [UnlockUserDataBase](/vext/ref/fb/unlockuserdatabase) | [UnlockValuePair](/vext/ref/fb/unlockvaluepair) |
+| [UpdateAgeData](/vext/ref/fb/updateagedata) | [UpdateAlphaLevelMaxData](/vext/ref/fb/updatealphalevelmaxdata) |
+| [UpdateAlphaLevelMinData](/vext/ref/fb/updatealphalevelmindata) | [UpdateAlphaLevelScaleData](/vext/ref/fb/updatealphalevelscaledata) |
+| [UpdateCameraProximityData](/vext/ref/fb/updatecameraproximitydata) | [UpdateClipScaleData](/vext/ref/fb/updateclipscaledata) |
+| [UpdateColorData](/vext/ref/fb/updatecolordata) | [UpdateLinearVelocityData](/vext/ref/fb/updatelinearvelocitydata) |
+| [UpdateOrientationData](/vext/ref/fb/updateorientationdata) | [UpdateRotationData](/vext/ref/fb/updaterotationdata) |
+| [UpdateSizeData](/vext/ref/fb/updatesizedata) | [UpdateSizeXData](/vext/ref/fb/updatesizexdata) |
+| [UpdateSizeYData](/vext/ref/fb/updatesizeydata) | [UpdateSizeZData](/vext/ref/fb/updatesizezdata) |
+| [UpdateTextureCoordsData](/vext/ref/fb/updatetexturecoordsdata) | [UpdateTransparencyData](/vext/ref/fb/updatetransparencydata) |
+| [UrgencySetData](/vext/ref/fb/urgencysetdata) | [UrgencyUserData](/vext/ref/fb/urgencyuserdata) |
+| [UserComponentData](/vext/ref/fb/usercomponentdata) | [UserMusicArbiterNodeData](/vext/ref/fb/usermusicarbiternodedata) |
+| [UserMusicControllerNodeData](/vext/ref/fb/usermusiccontrollernodedata) | [ValueDebugNodeData](/vext/ref/fb/valuedebugnodedata) |
+| [ValueSelectorEntry](/vext/ref/fb/valueselectorentry) | [ValueSelectorNodeData](/vext/ref/fb/valueselectornodedata) |
+| [ValueUnlockAsset](/vext/ref/fb/valueunlockasset) | [VaultWaypointData](/vext/ref/fb/vaultwaypointdata) |
+| [Vec2PropertyTrackData](/vext/ref/fb/vec2propertytrackdata) | [Vec2RecordingData](/vext/ref/fb/vec2recordingdata) |
+| [Vec3EntityData](/vext/ref/fb/vec3entitydata) | [Vec3MathOpEntityData](/vext/ref/fb/vec3mathopentitydata) |
+| [Vec3PropertyTrackData](/vext/ref/fb/vec3propertytrackdata) | [Vec3RecordingData](/vext/ref/fb/vec3recordingdata) |
+| [Vec4PropertyTrackData](/vext/ref/fb/vec4propertytrackdata) | [Vec4RecordingData](/vext/ref/fb/vec4recordingdata) |
+| [VecSplitterEntityData](/vext/ref/fb/vecsplitterentitydata) | [VectorShapeData](/vext/ref/fb/vectorshapedata) |
+| [VegetationBaseEntityData](/vext/ref/fb/vegetationbaseentitydata) | [VegetationSystemSettings](/vext/ref/fb/vegetationsystemsettings) |
+| [VegetationTreeEntityData](/vext/ref/fb/vegetationtreeentitydata) | [VehicleAsset](/vext/ref/fb/vehicleasset) |
+| [VehicleBlueprint](/vext/ref/fb/vehicleblueprint) | [VehicleCameraData](/vext/ref/fb/vehiclecameradata) |
+| [VehicleComponentData](/vext/ref/fb/vehiclecomponentdata) | [VehicleConfigData](/vext/ref/fb/vehicleconfigdata) |
+| [VehicleCustomizationAsset](/vext/ref/fb/vehiclecustomizationasset) | [VehicleDeployWeaponData](/vext/ref/fb/vehicledeployweapondata) |
+| [VehicleEntityData](/vext/ref/fb/vehicleentitydata) | [VehicleEntryListenerComponentData](/vext/ref/fb/vehicleentrylistenercomponentdata) |
+| [VehicleExitPointComponentData](/vext/ref/fb/vehicleexitpointcomponentdata) | [VehicleInputTweakData](/vext/ref/fb/vehicleinputtweakdata) |
+| [VehicleParachuteComponentData](/vext/ref/fb/vehicleparachutecomponentdata) | [VehicleParachuteData](/vext/ref/fb/vehicleparachutedata) |
+| [VehicleProjectileEntityData](/vext/ref/fb/vehicleprojectileentitydata) | [VehicleSoundData](/vext/ref/fb/vehiclesounddata) |
+| [VehicleSpawnReferenceObjectData](/vext/ref/fb/vehiclespawnreferenceobjectdata) | [VehicleSpawnStateEntityData](/vext/ref/fb/vehiclespawnstateentitydata) |
+| [VehicleState](/vext/ref/fb/vehiclestate) | [VehicleStateTriggerEntityData](/vext/ref/fb/vehiclestatetriggerentitydata) |
+| [VehicleVisualCustomizationAsset](/vext/ref/fb/vehiclevisualcustomizationasset) | [VehicleWaterEffectData](/vext/ref/fb/vehiclewatereffectdata) |
+| [VehicleWaypointData](/vext/ref/fb/vehiclewaypointdata) | [VeniceCombatAreaCamera](/vext/ref/fb/venicecombatareacamera) |
+| [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata) | [VeniceFPSCameraData](/vext/ref/fb/venicefpscameradata) |
+| [VeniceGameplayLevelDescriptionComponent](/vext/ref/fb/venicegameplayleveldescriptioncomponent) | [VeniceHudConfigAsset](/vext/ref/fb/venicehudconfigasset) |
+| [VeniceMapMarkerHudData](/vext/ref/fb/venicemapmarkerhuddata) | [VeniceMatchmakingLevelDescriptionComponent](/vext/ref/fb/venicematchmakingleveldescriptioncomponent) |
+| [VeniceMissionObjectiveHudData](/vext/ref/fb/venicemissionobjectivehuddata) | [VeniceOnlineConfiguration](/vext/ref/fb/veniceonlineconfiguration) |
+| [VeniceOnlineSettings](/vext/ref/fb/veniceonlinesettings) | [VeniceRichPresenceLevelDescriptionComponent](/vext/ref/fb/venicerichpresenceleveldescriptioncomponent) |
+| [VeniceSoldierCustomizationAsset](/vext/ref/fb/venicesoldiercustomizationasset) | [VeniceSoldierHealthModuleData](/vext/ref/fb/venicesoldierhealthmoduledata) |
+| [VeniceSoldierWeaponCustomizationAsset](/vext/ref/fb/venicesoldierweaponcustomizationasset) | [VeniceUICombatAreaAsset](/vext/ref/fb/veniceuicombatareaasset) |
+| [VeniceUIConfiguration](/vext/ref/fb/veniceuiconfiguration) | [VeniceUISettings](/vext/ref/fb/veniceuisettings) |
+| [VeniceUnlockUserData](/vext/ref/fb/veniceunlockuserdata) | [VeniceVehicleCustomizationAsset](/vext/ref/fb/venicevehiclecustomizationasset) |
+| [VersionData](/vext/ref/fb/versiondata) | [ViewFxData](/vext/ref/fb/viewfxdata) |
+| [VignetteComponentData](/vext/ref/fb/vignettecomponentdata) | [VirtualRasterQuadtreeData](/vext/ref/fb/virtualrasterquadtreedata) |
+| [VisualEnvironmentBlueprint](/vext/ref/fb/visualenvironmentblueprint) | [VisualEnvironmentEffectEntityData](/vext/ref/fb/visualenvironmenteffectentitydata) |
+| [VisualEnvironmentEntityData](/vext/ref/fb/visualenvironmententitydata) | [VisualEnvironmentReferenceObjectData](/vext/ref/fb/visualenvironmentreferenceobjectdata) |
+| [VisualEnvironmentSettings](/vext/ref/fb/visualenvironmentsettings) | [VisualTerrainEntityData](/vext/ref/fb/visualterrainentitydata) |
+| [VisualTerrainSettings](/vext/ref/fb/visualterrainsettings) | [VisualVectorShapeData](/vext/ref/fb/visualvectorshapedata) |
+| [VoiceOverArithmeticNode](/vext/ref/fb/voiceoverarithmeticnode) | [VoiceOverCharacterAsset](/vext/ref/fb/voiceovercharacterasset) |
+| [VoiceOverCompareNode](/vext/ref/fb/voiceovercomparenode) | [VoiceOverConstantBooleanValue](/vext/ref/fb/voiceoverconstantbooleanvalue) |
+| [VoiceOverConstantFloatValue](/vext/ref/fb/voiceoverconstantfloatvalue) | [VoiceOverConstantGlobalValue](/vext/ref/fb/voiceoverconstantglobalvalue) |
+| [VoiceOverConstantIntegerValue](/vext/ref/fb/voiceoverconstantintegervalue) | [VoiceOverConstantNode](/vext/ref/fb/voiceoverconstantnode) |
+| [VoiceOverConstantValue](/vext/ref/fb/voiceoverconstantvalue) | [VoiceOverConstantVectorValue](/vext/ref/fb/voiceoverconstantvectorvalue) |
+| [VoiceOverContainerNode](/vext/ref/fb/voiceovercontainernode) | [VoiceOverConversationGroupEntityData](/vext/ref/fb/voiceoverconversationgroupentitydata) |
+| [VoiceOverConversationNode](/vext/ref/fb/voiceoverconversationnode) | [VoiceOverConversationQueueGroup](/vext/ref/fb/voiceoverconversationqueuegroup) |
+| [VoiceOverDialogClip](/vext/ref/fb/voiceoverdialogclip) | [VoiceOverDialogClipEvents](/vext/ref/fb/voiceoverdialogclipevents) |
+| [VoiceOverDialogGroup](/vext/ref/fb/voiceoverdialoggroup) | [VoiceOverDialogTrack](/vext/ref/fb/voiceoverdialogtrack) |
+| [VoiceOverDistanceNode](/vext/ref/fb/voiceoverdistancenode) | [VoiceOverEvent](/vext/ref/fb/voiceoverevent) |
+| [VoiceOverEventEntityData](/vext/ref/fb/voiceoverevententitydata) | [VoiceOverEventNode](/vext/ref/fb/voiceovereventnode) |
+| [VoiceOverExpressionNode](/vext/ref/fb/voiceoverexpressionnode) | [VoiceOverGlobalConstantValue](/vext/ref/fb/voiceoverglobalconstantvalue) |
+| [VoiceOverGlobalNode](/vext/ref/fb/voiceoverglobalnode) | [VoiceOverGroup](/vext/ref/fb/voiceovergroup) |
+| [VoiceOverInfoNode](/vext/ref/fb/voiceoverinfonode) | [VoiceOverInterval](/vext/ref/fb/voiceoverinterval) |
+| [VoiceOverIntervalNode](/vext/ref/fb/voiceoverintervalnode) | [VoiceOverLabel](/vext/ref/fb/voiceoverlabel) |
+| [VoiceOverLabelNode](/vext/ref/fb/voiceoverlabelnode) | [VoiceOverLabelSource](/vext/ref/fb/voiceoverlabelsource) |
+| [VoiceOverLanguageRoot](/vext/ref/fb/voiceoverlanguageroot) | [VoiceOverLogicAsset](/vext/ref/fb/voiceoverlogicasset) |
+| [VoiceOverLogicFlow](/vext/ref/fb/voiceoverlogicflow) | [VoiceOverManuscriptAsset](/vext/ref/fb/voiceovermanuscriptasset) |
+| [VoiceOverNamedValue](/vext/ref/fb/voiceovernamedvalue) | [VoiceOverNode](/vext/ref/fb/voiceovernode) |
+| [VoiceOverObject](/vext/ref/fb/voiceoverobject) | [VoiceOverProbabilityNode](/vext/ref/fb/voiceoverprobabilitynode) |
+| [VoiceOverPronunciation](/vext/ref/fb/voiceoverpronunciation) | [VoiceOverRelationshipInput](/vext/ref/fb/voiceoverrelationshipinput) |
+| [VoiceOverStructureConnection](/vext/ref/fb/voiceoverstructureconnection) | [VoiceOverStructureNode](/vext/ref/fb/voiceoverstructurenode) |
+| [VoiceOverSystemAsset](/vext/ref/fb/voiceoversystemasset) | [VoiceOverTriggerNode](/vext/ref/fb/voiceovertriggernode) |
+| [VoiceOverTriggerParameter](/vext/ref/fb/voiceovertriggerparameter) | [VoiceOverValue](/vext/ref/fb/voiceovervalue) |
+| [VoiceOverValueConnection](/vext/ref/fb/voiceovervalueconnection) | [VoiceOverValueRedirect](/vext/ref/fb/voiceovervalueredirect) |
+| [VoiceOverVariableNode](/vext/ref/fb/voiceovervariablenode) | [VolumeVectorShapeData](/vext/ref/fb/volumevectorshapedata) |
+| [WarningSystemComponentData](/vext/ref/fb/warningsystemcomponentdata) | [WarpAnimationComponentData](/vext/ref/fb/warpanimationcomponentdata) |
+| [WarpAnimationEntityData](/vext/ref/fb/warpanimationentitydata) | [WaterAsset](/vext/ref/fb/waterasset) |
+| [WaterData](/vext/ref/fb/waterdata) | [WaterEntityData](/vext/ref/fb/waterentitydata) |
+| [WaveSwitcherNodeData](/vext/ref/fb/waveswitchernodedata) | [WaypointComponentData](/vext/ref/fb/waypointcomponentdata) |
+| [WaypointData](/vext/ref/fb/waypointdata) | [WaypointsShapeData](/vext/ref/fb/waypointsshapedata) |
+| [WaypointTriggerEntityData](/vext/ref/fb/waypointtriggerentitydata) | [WeaponAimingSimulationModifier](/vext/ref/fb/weaponaimingsimulationmodifier) |
+| [WeaponAnimatedFireTypeModifier](/vext/ref/fb/weaponanimatedfiretypemodifier) | [WeaponAnimationConfigurationModifier](/vext/ref/fb/weaponanimationconfigurationmodifier) |
+| [WeaponAnimTypeModifier](/vext/ref/fb/weaponanimtypemodifier) | [WeaponClassModifier](/vext/ref/fb/weaponclassmodifier) |
+| [WeaponComponentData](/vext/ref/fb/weaponcomponentdata) | [WeaponData](/vext/ref/fb/weapondata) |
+| [WeaponDeployTimeModifier](/vext/ref/fb/weapondeploytimemodifier) | [WeaponEntityData](/vext/ref/fb/weaponentitydata) |
+| [WeaponFiringData](/vext/ref/fb/weaponfiringdata) | [WeaponFiringDataAsset](/vext/ref/fb/weaponfiringdataasset) |
+| [WeaponFiringDataModifier](/vext/ref/fb/weaponfiringdatamodifier) | [WeaponFiringEffectsModifier](/vext/ref/fb/weaponfiringeffectsmodifier) |
+| [WeaponInputRouterComponentData](/vext/ref/fb/weaponinputroutercomponentdata) | [WeaponLagEntityData](/vext/ref/fb/weaponlagentitydata) |
+| [WeaponLagSpringEffectData](/vext/ref/fb/weaponlagspringeffectdata) | [WeaponMagazineModifier](/vext/ref/fb/weaponmagazinemodifier) |
+| [WeaponMiscModifier](/vext/ref/fb/weaponmiscmodifier) | [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase) |
+| [WeaponOffsetData](/vext/ref/fb/weaponoffsetdata) | [WeaponOverrideData](/vext/ref/fb/weaponoverridedata) |
+| [WeaponPickupEntityData](/vext/ref/fb/weaponpickupentitydata) | [WeaponProjectileModifier](/vext/ref/fb/weaponprojectilemodifier) |
+| [WeaponRegularSocketObjectData](/vext/ref/fb/weaponregularsocketobjectdata) | [WeaponShotModifier](/vext/ref/fb/weaponshotmodifier) |
+| [WeaponSkinnedSocketObjectData](/vext/ref/fb/weaponskinnedsocketobjectdata) | [WeaponSocketObjectData](/vext/ref/fb/weaponsocketobjectdata) |
+| [WeaponSoundModifier](/vext/ref/fb/weaponsoundmodifier) | [WeaponSpeedData](/vext/ref/fb/weaponspeeddata) |
+| [WeaponStateEntityData](/vext/ref/fb/weaponstateentitydata) | [WeaponSuppressionData](/vext/ref/fb/weaponsuppressiondata) |
+| [WeaponSwayData](/vext/ref/fb/weaponswaydata) | [WeaponUnlockPickupEntityData](/vext/ref/fb/weaponunlockpickupentitydata) |
+| [WeaponZoomModifier](/vext/ref/fb/weaponzoommodifier) | [WebPresenceBackendData](/vext/ref/fb/webpresencebackenddata) |
+| [WheelComponentData](/vext/ref/fb/wheelcomponentdata) | [WheelConfigData](/vext/ref/fb/wheelconfigdata) |
+| [WidgetNode](/vext/ref/fb/widgetnode) | [WindComponentData](/vext/ref/fb/windcomponentdata) |
+| [WindowSettings](/vext/ref/fb/windowsettings) | [WingComponentData](/vext/ref/fb/wingcomponentdata) |
+| [WingPhysicsData](/vext/ref/fb/wingphysicsdata) | [WorldData](/vext/ref/fb/worlddata) |
+| [WorldObjectListData](/vext/ref/fb/worldobjectlistdata) | [WorldPartData](/vext/ref/fb/worldpartdata) |
+| [WorldPartInclusion](/vext/ref/fb/worldpartinclusion) | [WorldPartInclusionCriterion](/vext/ref/fb/worldpartinclusioncriterion) |
+| [WorldPartInclusionSetting](/vext/ref/fb/worldpartinclusionsetting) | [WorldPartInclusionSettings](/vext/ref/fb/worldpartinclusionsettings) |
+| [WorldPartReferenceObjectData](/vext/ref/fb/worldpartreferenceobjectdata) | [WorldRenderSettings](/vext/ref/fb/worldrendersettings) |
+| [XenonPresenceBackendData](/vext/ref/fb/xenonpresencebackenddata) | [XorEntityData](/vext/ref/fb/xorentitydata) |
+| [ZoomLevelData](/vext/ref/fb/zoomleveldata) |  |
+## Structure types
+| | |
+| --- | --- |
+| [ActionSuppressor](/vext/ref/fb/actionsuppressor) | [AdvertisementZoneMember](/vext/ref/fb/advertisementzonemember) |
+| [AILocoBaseTaskData](/vext/ref/fb/ailocobasetaskdata) | [AILocoBinding](/vext/ref/fb/ailocobinding) |
+| [AILocoCoverBinding](/vext/ref/fb/ailococoverbinding) | [AILocoCoverTaskData](/vext/ref/fb/ailococovertaskdata) |
+| [AILocoMoveTaskData](/vext/ref/fb/ailocomovetaskdata) | [AILocoVaultBinding](/vext/ref/fb/ailocovaultbinding) |
+| [AILocoVaultTaskData](/vext/ref/fb/ailocovaulttaskdata) | [AimingConstraintEntityBinding](/vext/ref/fb/aimingconstraintentitybinding) |
+| [AimingConstraintsData](/vext/ref/fb/aimingconstraintsdata) | [AimingPoseData](/vext/ref/fb/aimingposedata) |
+| [AIProximityReactionsBinding](/vext/ref/fb/aiproximityreactionsbinding) | [AirMissileJammingData](/vext/ref/fb/airmissilejammingdata) |
+| [AmmoConfigData](/vext/ref/fb/ammoconfigdata) | [AngleOfImpactData](/vext/ref/fb/angleofimpactdata) |
+| [Animated1pOnlyWeaponBinding](/vext/ref/fb/animated1ponlyweaponbinding) | [Animated3pOnlyWeaponBinding](/vext/ref/fb/animated3ponlyweaponbinding) |
+| [AnimatedPointCloudAttributeDesc](/vext/ref/fb/animatedpointcloudattributedesc) | [AnimatedSkeletonDatabaseItem](/vext/ref/fb/animatedskeletondatabaseitem) |
+| [AnimatedWeaponBinding](/vext/ref/fb/animatedweaponbinding) | [AnimationConfigurationData](/vext/ref/fb/animationconfigurationdata) |
+| [AnimationConfigurationShootModuleData](/vext/ref/fb/animationconfigurationshootmoduledata) | [AnimationDrivenBinding](/vext/ref/fb/animationdrivenbinding) |
+| [AntAnimatableData](/vext/ref/fb/antanimatabledata) | [AntAnimationHandlerData](/vext/ref/fb/antanimationhandlerdata) |
+| [AntDynamicAvoidanceBinding](/vext/ref/fb/antdynamicavoidancebinding) | [AntEventData](/vext/ref/fb/anteventdata) |
+| [AntInteractionBinding](/vext/ref/fb/antinteractionbinding) | [AntiRollBars](/vext/ref/fb/antirollbars) |
+| [AntiSpamConfig](/vext/ref/fb/antispamconfig) | [AntRef](/vext/ref/fb/antref) |
+| [AreaValueTeam](/vext/ref/fb/areavalueteam) | [AssetAabbs](/vext/ref/fb/assetaabbs) |
+| [AudioCurve](/vext/ref/fb/audiocurve) | [AudioCurvePoint](/vext/ref/fb/audiocurvepoint) |
+| [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) | [AudioLanguageMapping](/vext/ref/fb/audiolanguagemapping) |
+| [AudioObstructionMaterialInfo](/vext/ref/fb/audioobstructionmaterialinfo) | [AutoAimData](/vext/ref/fb/autoaimdata) |
+| [AwardStarNameInstance](/vext/ref/fb/awardstarnameinstance) | [AwardStatus](/vext/ref/fb/awardstatus) |
+| [BasicUnlockInfo](/vext/ref/fb/basicunlockinfo) | [BFServerConfigurationData](/vext/ref/fb/bfserverconfigurationdata) |
+| [BFServerConfigurationSchedule](/vext/ref/fb/bfserverconfigurationschedule) | [BinaryOption](/vext/ref/fb/binaryoption) |
+| [BlazeCreateGameParameters](/vext/ref/fb/blazecreategameparameters) | [BlurEffectData](/vext/ref/fb/blureffectdata) |
+| [BoltActionData](/vext/ref/fb/boltactiondata) | [BoneCollisionData](/vext/ref/fb/bonecollisiondata) |
+| [BoolShaderParameter](/vext/ref/fb/boolshaderparameter) | [Boost](/vext/ref/fb/boost) |
+| [BulletHitInfo](/vext/ref/fb/bullethitinfo) | [BurstLimit](/vext/ref/fb/burstlimit) |
+| [CameraBinding](/vext/ref/fb/camerabinding) | [CameraLeapData](/vext/ref/fb/cameraleapdata) |
+| [CameraSineCurveData](/vext/ref/fb/camerasinecurvedata) | [CannedAnimationBinding](/vext/ref/fb/cannedanimationbinding) |
+| [CharacterMeleeBinding](/vext/ref/fb/charactermeleebinding) | [CharacterMeleeCommonBinding](/vext/ref/fb/charactermeleecommonbinding) |
+| [CharacterPoseConstraintsData](/vext/ref/fb/characterposeconstraintsdata) | [CharacterWeaponBinding](/vext/ref/fb/characterweaponbinding) |
+| [ChildStaticModelNetworkInfo](/vext/ref/fb/childstaticmodelnetworkinfo) | [ChunkStreamerCell](/vext/ref/fb/chunkstreamercell) |
+| [ClimbLadderBinding](/vext/ref/fb/climbladderbinding) | [ColorTintData](/vext/ref/fb/colortintdata) |
+| [ConstantForceData](/vext/ref/fb/constantforcedata) | [Consumable](/vext/ref/fb/consumable) |
+| [ContinueWeaponAmmoData](/vext/ref/fb/continueweaponammodata) | [CoreSettings](/vext/ref/fb/coresettings) |
+| [CounterHelper](/vext/ref/fb/counterhelper) | [CounterStatus](/vext/ref/fb/counterstatus) |
+| [CoverSlot](/vext/ref/fb/coverslot) | [CriteriaAward](/vext/ref/fb/criteriaaward) |
+| [CriteriaStarCategoryInstance](/vext/ref/fb/criteriastarcategoryinstance) | [CustomizedMeshMaterialsData](/vext/ref/fb/customizedmeshmaterialsdata) |
+| [CustomizeVisual](/vext/ref/fb/customizevisual) | [CustomReportValueData](/vext/ref/fb/customreportvaluedata) |
+| [DataCopSettings](/vext/ref/fb/datacopsettings) | [DataCopValueSetting](/vext/ref/fb/datacopvaluesetting) |
+| [DataField](/vext/ref/fb/datafield) | [DataSource](/vext/ref/fb/datasource) |
+| [DataVisualizerValue](/vext/ref/fb/datavisualizervalue) | [DebrisClusterPartInfoData](/vext/ref/fb/debrisclusterpartinfodata) |
+| [DebrisHavokInfo](/vext/ref/fb/debrishavokinfo) | [DebrisSystemMetrics](/vext/ref/fb/debrissystemmetrics) |
+| [DecalAtlasTile](/vext/ref/fb/decalatlastile) | [DefaultSelectionItem](/vext/ref/fb/defaultselectionitem) |
+| [DestructionVolumeAtlasTextureData](/vext/ref/fb/destructionvolumeatlastexturedata) | [DestructionVolumeProjectionData](/vext/ref/fb/destructionvolumeprojectiondata) |
+| [DirectWeaponSwitchingMapData](/vext/ref/fb/directweaponswitchingmapdata) | [DivisibleLoopPlayerPlugins](/vext/ref/fb/divisibleloopplayerplugins) |
+| [DynamicEvent](/vext/ref/fb/dynamicevent) | [DynamicLink](/vext/ref/fb/dynamiclink) |
+| [DynamicWeaponPickupSlotData](/vext/ref/fb/dynamicweaponpickupslotdata) | [EdgeModelInstance](/vext/ref/fb/edgemodelinstance) |
+| [EdgeModelLightMapInstance](/vext/ref/fb/edgemodellightmapinstance) | [EdgePointerData](/vext/ref/fb/edgepointerdata) |
+| [EditableActionMap](/vext/ref/fb/editableactionmap) | [EditableActions](/vext/ref/fb/editableactions) |
+| [EloExpectedFunctionPoint](/vext/ref/fb/eloexpectedfunctionpoint) | [EloFunctionPoint](/vext/ref/fb/elofunctionpoint) |
+| [EloParameters](/vext/ref/fb/eloparameters) | [EmitterTextureAtlasInfo](/vext/ref/fb/emittertextureatlasinfo) |
+| [EmitterTextureInfo](/vext/ref/fb/emittertextureinfo) | [EndPointData](/vext/ref/fb/endpointdata) |
+| [EnlightenDbInstance](/vext/ref/fb/enlightendbinstance) | [EnlightenDbSystem](/vext/ref/fb/enlightendbsystem) |
+| [EnlightenInputInstance](/vext/ref/fb/enlighteninputinstance) | [EnlightenLightProbeSet](/vext/ref/fb/enlightenlightprobeset) |
+| [EnlightenPipelineTerrainMesh](/vext/ref/fb/enlightenpipelineterrainmesh) | [EntitlementData](/vext/ref/fb/entitlementdata) |
+| [EntityUid](/vext/ref/fb/entityuid) | [EntryComponentHudData](/vext/ref/fb/entrycomponenthuddata) |
+| [EventConnection](/vext/ref/fb/eventconnection) | [EventScaleData](/vext/ref/fb/eventscaledata) |
+| [EventSpec](/vext/ref/fb/eventspec) | [FaceAnimationWaveMapping](/vext/ref/fb/faceanimationwavemapping) |
+| [FireEffectData](/vext/ref/fb/fireeffectdata) | [FireLogicData](/vext/ref/fb/firelogicdata) |
+| [FiringDispersionData](/vext/ref/fb/firingdispersiondata) | [FloatOption](/vext/ref/fb/floatoption) |
+| [FloatRange](/vext/ref/fb/floatrange) | [FloatRangeDefaultZero](/vext/ref/fb/floatrangedefaultzero) |
+| [FootStepTrigger](/vext/ref/fb/footsteptrigger) | [FrictionScaleAtVelocity](/vext/ref/fb/frictionscaleatvelocity) |
+| [GameModeInformation](/vext/ref/fb/gamemodeinformation) | [GameModeSize](/vext/ref/fb/gamemodesize) |
+| [GameModeTeamSize](/vext/ref/fb/gamemodeteamsize) | [GameModeVariation](/vext/ref/fb/gamemodevariation) |
+| [GameplayBone](/vext/ref/fb/gameplaybone) | [GameTipData](/vext/ref/fb/gametipdata) |
+| [GroundHeightData](/vext/ref/fb/groundheightdata) | [GunMasterLevelInfo](/vext/ref/fb/gunmasterlevelinfo) |
+| [GunMasterWeaponsPreset](/vext/ref/fb/gunmasterweaponspreset) | [GunSwayBaseData](/vext/ref/fb/gunswaybasedata) |
+| [GunSwayBaseMoveData](/vext/ref/fb/gunswaybasemovedata) | [GunSwayBaseMoveJumpData](/vext/ref/fb/gunswaybasemovejumpdata) |
+| [GunSwayCrouchProneData](/vext/ref/fb/gunswaycrouchpronedata) | [GunSwayDispersionData](/vext/ref/fb/gunswaydispersiondata) |
+| [GunSwayDispersionModData](/vext/ref/fb/gunswaydispersionmoddata) | [GunSwayLagData](/vext/ref/fb/gunswaylagdata) |
+| [GunSwayRecoilData](/vext/ref/fb/gunswayrecoildata) | [GunSwayStanceTransition](/vext/ref/fb/gunswaystancetransition) |
+| [GunSwayStanceZoomModifierData](/vext/ref/fb/gunswaystancezoommodifierdata) | [GunSwayStandData](/vext/ref/fb/gunswaystanddata) |
+| [HealerData](/vext/ref/fb/healerdata) | [HealingSphereData](/vext/ref/fb/healingspheredata) |
+| [HidableSoldierMeshWeaponPart](/vext/ref/fb/hidablesoldiermeshweaponpart) | [HIKData](/vext/ref/fb/hikdata) |
+| [HitReactionComponentBinding](/vext/ref/fb/hitreactioncomponentbinding) | [HoldAndReleaseData](/vext/ref/fb/holdandreleasedata) |
+| [HudData](/vext/ref/fb/huddata) | [HudImpactData](/vext/ref/fb/hudimpactdata) |
+| [IndexRange](/vext/ref/fb/indexrange) | [InputRecorderTrackData](/vext/ref/fb/inputrecordertrackdata) |
+| [InputSuppressionData](/vext/ref/fb/inputsuppressiondata) | [InspectAnimationTriggerData](/vext/ref/fb/inspectanimationtriggerdata) |
+| [InspectViewPointData](/vext/ref/fb/inspectviewpointdata) | [IntentData](/vext/ref/fb/intentdata) |
+| [InteractionTypesData](/vext/ref/fb/interactiontypesdata) | [InterruptFlow](/vext/ref/fb/interruptflow) |
+| [IntOption](/vext/ref/fb/intoption) | [KillWeight](/vext/ref/fb/killweight) |
+| [LandingGearConditionData](/vext/ref/fb/landinggearconditiondata) | [LensFlareElement](/vext/ref/fb/lensflareelement) |
+| [LevelDescription](/vext/ref/fb/leveldescription) | [LevelDescriptionInclusionCategory](/vext/ref/fb/leveldescriptioninclusioncategory) |
+| [LevelSetup](/vext/ref/fb/levelsetup) | [LevelSetupOption](/vext/ref/fb/levelsetupoption) |
+| [LicenseInfo](/vext/ref/fb/licenseinfo) | [LinkConnection](/vext/ref/fb/linkconnection) |
+| [LockedSettingConfig](/vext/ref/fb/lockedsettingconfig) | [LodBinding](/vext/ref/fb/lodbinding) |
+| [LookConstraintsData](/vext/ref/fb/lookconstraintsdata) | [ManualDataEntry](/vext/ref/fb/manualdataentry) |
+| [MapRotataionLookup](/vext/ref/fb/maprotataionlookup) | [MapRotationConfig](/vext/ref/fb/maprotationconfig) |
+| [MatchmakingCreateGameParameters](/vext/ref/fb/matchmakingcreategameparameters) | [MatchmakingCriteria](/vext/ref/fb/matchmakingcriteria) |
+| [MatchmakingGameAttribute](/vext/ref/fb/matchmakinggameattribute) | [MatchmakingGameSettings](/vext/ref/fb/matchmakinggamesettings) |
+| [MatchmakingGenericRule](/vext/ref/fb/matchmakinggenericrule) | [MatchmakingPingSiteRule](/vext/ref/fb/matchmakingpingsiterule) |
+| [MatchmakingRankedRule](/vext/ref/fb/matchmakingrankedrule) | [MatchmakingRuleString](/vext/ref/fb/matchmakingrulestring) |
+| [MatchmakingSizeConfiguration](/vext/ref/fb/matchmakingsizeconfiguration) | [MatchmakingSizeRule](/vext/ref/fb/matchmakingsizerule) |
+| [MatchmakingUserExtendedDataRule](/vext/ref/fb/matchmakinguserextendeddatarule) | [MatchmakingVirtualizedRule](/vext/ref/fb/matchmakingvirtualizedrule) |
+| [MaterialInteractionGridRow](/vext/ref/fb/materialinteractiongridrow) | [MaterialRelationPropertyPair](/vext/ref/fb/materialrelationpropertypair) |
+| [MeshScatteringMaskScaleDrawMethodData](/vext/ref/fb/meshscatteringmaskscaledrawmethoddata) | [MeshVariationDatabaseMaterial](/vext/ref/fb/meshvariationdatabasematerial) |
+| [MeshVariationInfo](/vext/ref/fb/meshvariationinfo) | [MessageInfo](/vext/ref/fb/messageinfo) |
+| [MessageLineData](/vext/ref/fb/messagelinedata) | [MinimapCameraOffsetData](/vext/ref/fb/minimapcameraoffsetdata) |
+| [MinimapData](/vext/ref/fb/minimapdata) | [MissileLockableInfoData](/vext/ref/fb/missilelockableinfodata) |
+| [MissileUnguidedData](/vext/ref/fb/missileunguideddata) | [MixerPresetGroupData](/vext/ref/fb/mixerpresetgroupdata) |
+| [MixerPresetNodeData](/vext/ref/fb/mixerpresetnodedata) | [MixGroupPropertyValue](/vext/ref/fb/mixgrouppropertyvalue) |
+| [MovementComponentBinding](/vext/ref/fb/movementcomponentbinding) | [MPModeData](/vext/ref/fb/mpmodedata) |
+| [NearTargetDetonationData](/vext/ref/fb/neartargetdetonationdata) | [NestedList](/vext/ref/fb/nestedlist) |
+| [NetworkDataId](/vext/ref/fb/networkdataid) | [NetworkVoteDetails](/vext/ref/fb/networkvotedetails) |
+| [NormalizeSettings](/vext/ref/fb/normalizesettings) | [OnlineEnvironmentConsoleUrl](/vext/ref/fb/onlineenvironmentconsoleurl) |
+| [OnlineEnvironmentConsoleUrlData](/vext/ref/fb/onlineenvironmentconsoleurldata) | [OnlineEnvironmentUrl](/vext/ref/fb/onlineenvironmenturl) |
+| [OnlineEnvironmentUrlData](/vext/ref/fb/onlineenvironmenturldata) | [OnlinePlatformConfiguration](/vext/ref/fb/onlineplatformconfiguration) |
+| [OnlineProviderConfiguration](/vext/ref/fb/onlineproviderconfiguration) | [OverHeatData](/vext/ref/fb/overheatdata) |
+| [PackagingDetailInfo](/vext/ref/fb/packagingdetailinfo) | [PartInfoData](/vext/ref/fb/partinfodata) |
+| [PathfindingBlob](/vext/ref/fb/pathfindingblob) | [PathfindingObjectCategoryRepresentation](/vext/ref/fb/pathfindingobjectcategoryrepresentation) |
+| [PeerCreateGameParameters](/vext/ref/fb/peercreategameparameters) | [PerformanceFpsHistogram](/vext/ref/fb/performancefpshistogram) |
+| [PersistenceConsumableMapping](/vext/ref/fb/persistenceconsumablemapping) | [PersistentValueTemplateData](/vext/ref/fb/persistentvaluetemplatedata) |
+| [PhysicsDrivenAnimationEntityBinding](/vext/ref/fb/physicsdrivenanimationentitybinding) | [PhysicsPartInfo](/vext/ref/fb/physicspartinfo) |
+| [PickupSettingsData](/vext/ref/fb/pickupsettingsdata) | [PitchModifier](/vext/ref/fb/pitchmodifier) |
+| [PlayerScore](/vext/ref/fb/playerscore) | [PointEnvelopePoint](/vext/ref/fb/pointenvelopepoint) |
+| [PoissonRadialBlurData](/vext/ref/fb/poissonradialblurdata) | [PolynomialTempData](/vext/ref/fb/polynomialtempdata) |
+| [PoseConstraintsData](/vext/ref/fb/poseconstraintsdata) | [PoseTransitionTime](/vext/ref/fb/posetransitiontime) |
+| [PrecomputeCache](/vext/ref/fb/precomputecache) | [PresetTypeConfig](/vext/ref/fb/presettypeconfig) |
+| [ProfileOptionDataEnumItem](/vext/ref/fb/profileoptiondataenumitem) | [PropertyConnection](/vext/ref/fb/propertyconnection) |
+| [Ps3AgeLevels](/vext/ref/fb/ps3agelevels) | [Ps3ParentalLockAgeSettings](/vext/ref/fb/ps3parentallockagesettings) |
+| [Ps3ParentalLockAgeSettingsForCountry](/vext/ref/fb/ps3parentallockagesettingsforcountry) | [Ps3SkuSettings](/vext/ref/fb/ps3skusettings) |
+| [RagdollBinding](/vext/ref/fb/ragdollbinding) | [ReadinessLevelCharacteristics](/vext/ref/fb/readinesslevelcharacteristics) |
+| [ReadinessLevels](/vext/ref/fb/readinesslevels) | [RecoilData](/vext/ref/fb/recoildata) |
+| [RectangularCoverageData](/vext/ref/fb/rectangularcoveragedata) | [RegularCameraViewData](/vext/ref/fb/regularcameraviewdata) |
+| [RibbonPointData](/vext/ref/fb/ribbonpointdata) | [RichPresenceContextSetting](/vext/ref/fb/richpresencecontextsetting) |
+| [RichPresenceProperty](/vext/ref/fb/richpresenceproperty) | [RigidMeshSocketTransform](/vext/ref/fb/rigidmeshsockettransform) |
+| [RotateToHitData](/vext/ref/fb/rotatetohitdata) | [RotorModelData](/vext/ref/fb/rotormodeldata) |
+| [RumbleFiringData](/vext/ref/fb/rumblefiringdata) | [SamplerPlugins](/vext/ref/fb/samplerplugins) |
+| [ScenarioTaskData](/vext/ref/fb/scenariotaskdata) | [ScoringBucketUnlockData](/vext/ref/fb/scoringbucketunlockdata) |
+| [ScreenshotInfo](/vext/ref/fb/screenshotinfo) | [SensingLimits](/vext/ref/fb/sensinglimits) |
+| [SensingSphere](/vext/ref/fb/sensingsphere) | [SensitivityAtVelocity](/vext/ref/fb/sensitivityatvelocity) |
+| [SequenceEventData](/vext/ref/fb/sequenceeventdata) | [ServerBackendAttributeMapping](/vext/ref/fb/serverbackendattributemapping) |
+| [ServerInfoSetting](/vext/ref/fb/serverinfosetting) | [SettingConfig](/vext/ref/fb/settingconfig) |
+| [ShaderParameterVector](/vext/ref/fb/shaderparametervector) | [ShotConfigData](/vext/ref/fb/shotconfigdata) |
+| [SimpleAnimationControlBinding](/vext/ref/fb/simpleanimationcontrolbinding) | [SimpleMovementActionTimeData](/vext/ref/fb/simplemovementactiontimedata) |
+| [SkyCloudLayer](/vext/ref/fb/skycloudlayer) | [SmokeJammingData](/vext/ref/fb/smokejammingdata) |
+| [SoldierAnimatedCameraData](/vext/ref/fb/soldieranimatedcameradata) | [SoldierDetonationData](/vext/ref/fb/soldierdetonationdata) |
+| [SoldierEmoteBinding](/vext/ref/fb/soldieremotebinding) | [SoldierHeadCollisionPoseData](/vext/ref/fb/soldierheadcollisionposedata) |
+| [SoldierHealthModuleBinding](/vext/ref/fb/soldierhealthmodulebinding) | [SoldierMeshData](/vext/ref/fb/soldiermeshdata) |
+| [SoldierParachuteBinding](/vext/ref/fb/soldierparachutebinding) | [SoldierWeaponDispersion](/vext/ref/fb/soldierweapondispersion) |
+| [SoundDataChunk](/vext/ref/fb/sounddatachunk) | [SoundGraphInfo](/vext/ref/fb/soundgraphinfo) |
+| [SoundGraphLinkedPluginAttribute](/vext/ref/fb/soundgraphlinkedpluginattribute) | [SoundGraphPluginConnection](/vext/ref/fb/soundgraphpluginconnection) |
+| [SoundGraphPluginConnectionParam](/vext/ref/fb/soundgraphpluginconnectionparam) | [SoundGraphPluginConstructParam](/vext/ref/fb/soundgraphpluginconstructparam) |
+| [SoundGraphPluginInfo](/vext/ref/fb/soundgraphplugininfo) | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref) |
+| [SoundGraphVoiceInfo](/vext/ref/fb/soundgraphvoiceinfo) | [SoundPatchPublicNode](/vext/ref/fb/soundpatchpublicnode) |
+| [SoundScopeStrategyMapping](/vext/ref/fb/soundscopestrategymapping) | [SoundWaveLocalizationInfo](/vext/ref/fb/soundwavelocalizationinfo) |
+| [SoundWaveSubtitle](/vext/ref/fb/soundwavesubtitle) | [SoundWaveVariationSegment](/vext/ref/fb/soundwavevariationsegment) |
+| [SpawnScreenWeaponData](/vext/ref/fb/spawnscreenweapondata) | [SpecialMoveInterpolatedPoint](/vext/ref/fb/specialmoveinterpolatedpoint) |
+| [SpecialMovesBinding](/vext/ref/fb/specialmovesbinding) | [SpecialMoveStateData](/vext/ref/fb/specialmovestatedata) |
+| [SpecialMoveVaultStateCriteria](/vext/ref/fb/specialmovevaultstatecriteria) | [SpeedModifierData](/vext/ref/fb/speedmodifierdata) |
+| [SphereCollisionData](/vext/ref/fb/spherecollisiondata) | [SpringData](/vext/ref/fb/springdata) |
+| [StabilizerSettings](/vext/ref/fb/stabilizersettings) | [StanceCameraData](/vext/ref/fb/stancecameradata) |
+| [StanceSwitchSoundData](/vext/ref/fb/stanceswitchsounddata) | [StaticListItem](/vext/ref/fb/staticlistitem) |
+| [StaticModelGroupMemberData](/vext/ref/fb/staticmodelgroupmemberdata) | [StaticModelNetworkInfo](/vext/ref/fb/staticmodelnetworkinfo) |
+| [StatSpamSetting](/vext/ref/fb/statspamsetting) | [StreamGridCell](/vext/ref/fb/streamgridcell) |
+| [Strengths](/vext/ref/fb/strengths) | [StringOption](/vext/ref/fb/stringoption) |
+| [SubScreenData](/vext/ref/fb/subscreendata) | [SubSkeleton](/vext/ref/fb/subskeleton) |
+| [SubsystemTimingConfigData](/vext/ref/fb/subsystemtimingconfigdata) | [SupplyData](/vext/ref/fb/supplydata) |
+| [SupplyUnitSphereData](/vext/ref/fb/supplyunitspheredata) | [SupportedShootingBinding](/vext/ref/fb/supportedshootingbinding) |
+| [SupportedShootingProximityChecking](/vext/ref/fb/supportedshootingproximitychecking) | [SuppressionReactionData](/vext/ref/fb/suppressionreactiondata) |
+| [Surface2dDrawMethodData](/vext/ref/fb/surface2ddrawmethoddata) | [Surface2dDrawPassData](/vext/ref/fb/surface2ddrawpassdata) |
+| [Surface3dDrawMethodData](/vext/ref/fb/surface3ddrawmethoddata) | [SurfaceShaderInstanceDataStruct](/vext/ref/fb/surfaceshaderinstancedatastruct) |
+| [TerrainGeoTexture](/vext/ref/fb/terraingeotexture) | [TerrainLayerCombinationDrawData](/vext/ref/fb/terrainlayercombinationdrawdata) |
+| [TerrainLayerCombinationDrawPassData](/vext/ref/fb/terrainlayercombinationdrawpassdata) | [TerrainLayerProceduralMask](/vext/ref/fb/terrainlayerproceduralmask) |
+| [TerrainQuadDecalAtlasTile](/vext/ref/fb/terrainquaddecalatlastile) | [TextureShaderParameter](/vext/ref/fb/textureshaderparameter) |
+| [TicketCountPercentage](/vext/ref/fb/ticketcountpercentage) | [TurnEffectData](/vext/ref/fb/turneffectdata) |
+| [TurretRotationInfo](/vext/ref/fb/turretrotationinfo) | [UavCameraPointData](/vext/ref/fb/uavcamerapointdata) |
+| [UIAudioEventMapping](/vext/ref/fb/uiaudioeventmapping) | [UIBundleAssetState](/vext/ref/fb/uibundleassetstate) |
+| [UIButton](/vext/ref/fb/uibutton) | [UIButtonSet](/vext/ref/fb/uibuttonset) |
+| [UICreditsLine](/vext/ref/fb/uicreditsline) | [UICreditsPage](/vext/ref/fb/uicreditspage) |
+| [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo) | [UIFontMapping](/vext/ref/fb/uifontmapping) |
+| [UIGeoLatitude](/vext/ref/fb/uigeolatitude) | [UIGeoLongitude](/vext/ref/fb/uigeolongitude) |
+| [UIGPSPosition](/vext/ref/fb/uigpsposition) | [UILeaderboardData](/vext/ref/fb/uileaderboarddata) |
+| [UILevelLocation](/vext/ref/fb/uilevellocation) | [UILevelSpecificPageHeader](/vext/ref/fb/uilevelspecificpageheader) |
+| [UILevelStatData](/vext/ref/fb/uilevelstatdata) | [UIListItem](/vext/ref/fb/uilistitem) |
+| [UIMinimapConfig](/vext/ref/fb/uiminimapconfig) | [UIMinimapData](/vext/ref/fb/uiminimapdata) |
+| [UIMinimapDistanceFieldParams](/vext/ref/fb/uiminimapdistancefieldparams) | [UIMinimapIconTexture](/vext/ref/fb/uiminimapicontexture) |
+| [UIMinimapIconTextureState](/vext/ref/fb/uiminimapicontexturestate) | [UIMinimapIconUv](/vext/ref/fb/uiminimapiconuv) |
+| [UIMinimapZoomConfig](/vext/ref/fb/uiminimapzoomconfig) | [UINetworkTextInfo](/vext/ref/fb/uinetworktextinfo) |
+| [UIntRange](/vext/ref/fb/uintrange) | [UIPartProperties](/vext/ref/fb/uipartproperties) |
+| [UIPopupButton](/vext/ref/fb/uipopupbutton) | [UIPopupTextInput](/vext/ref/fb/uipopuptextinput) |
+| [UISettingsGroup](/vext/ref/fb/uisettingsgroup) | [UISettingsItem](/vext/ref/fb/uisettingsitem) |
+| [UISettingsPage](/vext/ref/fb/uisettingspage) | [UITaggedVehicleCrosshair](/vext/ref/fb/uitaggedvehiclecrosshair) |
+| [UITextureAtlasInfo](/vext/ref/fb/uitextureatlasinfo) | [UIWidgetProperty](/vext/ref/fb/uiwidgetproperty) |
+| [UnlockableProjectile](/vext/ref/fb/unlockableprojectile) | [UnlockAssetPair](/vext/ref/fb/unlockassetpair) |
+| [UnlockWeaponAndSlot](/vext/ref/fb/unlockweaponandslot) | [UrgencyModifierData](/vext/ref/fb/urgencymodifierdata) |
+| [ValueAtX](/vext/ref/fb/valueatx) | [VectorArrayShaderParameter](/vext/ref/fb/vectorarrayshaderparameter) |
+| [VectorShaderParameter](/vext/ref/fb/vectorshaderparameter) | [VehicleCameraControlBinding](/vext/ref/fb/vehiclecameracontrolbinding) |
+| [VehicleEntryListenerBinding](/vext/ref/fb/vehicleentrylistenerbinding) | [VehicleHealthZoneData](/vext/ref/fb/vehiclehealthzonedata) |
+| [VehicleHudData](/vext/ref/fb/vehiclehuddata) | [VehicleInputData](/vext/ref/fb/vehicleinputdata) |
+| [VehicleLockableInfoData](/vext/ref/fb/vehiclelockableinfodata) | [VehicleParachuteBinding](/vext/ref/fb/vehicleparachutebinding) |
+| [VehicleTrackerRenderTargetData](/vext/ref/fb/vehicletrackerrendertargetdata) | [VisionBoxSettings](/vext/ref/fb/visionboxsettings) |
+| [VoiceOverDialogTake](/vext/ref/fb/voiceoverdialogtake) | [VoiceOverDialogTakeMapping](/vext/ref/fb/voiceoverdialogtakemapping) |
+| [VoiceOverManuscriptLanguageColumns](/vext/ref/fb/voiceovermanuscriptlanguagecolumns) | [WarpAnimationBinding](/vext/ref/fb/warpanimationbinding) |
+| [WeaponLagBinding](/vext/ref/fb/weaponlagbinding) | [WeaponLagEffectForceData](/vext/ref/fb/weaponlageffectforcedata) |
+| [WeaponLagEffectSpringData](/vext/ref/fb/weaponlageffectspringdata) | [WeaponLagEffectSpringVector](/vext/ref/fb/weaponlageffectspringvector) |
+| [WeaponMiscModifierSettings](/vext/ref/fb/weaponmiscmodifiersettings) | [WeaponModifier](/vext/ref/fb/weaponmodifier) |
+| [WeaponModifierData](/vext/ref/fb/weaponmodifierdata) | [WeaponOverrideValue](/vext/ref/fb/weaponoverridevalue) |
+| [WeaponPickupData](/vext/ref/fb/weaponpickupdata) | [WeaponStateData](/vext/ref/fb/weaponstatedata) |
+| [WeaponSwitchingMapData](/vext/ref/fb/weaponswitchingmapdata) | [WeaponUnlockPickupData](/vext/ref/fb/weaponunlockpickupdata) |
+| [WidgetEventQueryPair](/vext/ref/fb/widgeteventquerypair) | [ZoomLevelLockData](/vext/ref/fb/zoomlevellockdata) |
+| [ZoomLevelSpecificTransitionTime](/vext/ref/fb/zoomlevelspecifictransitiontime) |  |
+## Enum types
+| | |
+| --- | --- |
+| [AddGameBanResponseType](/vext/ref/fb/addgamebanresponsetype) | [AdministrationEventType](/vext/ref/fb/administrationeventtype) |
+| [AdministrationRestrictionLevel](/vext/ref/fb/administrationrestrictionlevel) | [AIAltFireFromAntState](/vext/ref/fb/aialtfirefromantstate) |
+| [AIDeathReactionAnimationType](/vext/ref/fb/aideathreactionanimationtype) | [AIHitReactionAnimationType](/vext/ref/fb/aihitreactionanimationtype) |
+| [AimOrigin](/vext/ref/fb/aimorigin) | [AIStunReactionAnimationType](/vext/ref/fb/aistunreactionanimationtype) |
+| [AngleUnit](/vext/ref/fb/angleunit) | [AnimatedAimingEnum](/vext/ref/fb/animatedaimingenum) |
+| [AnimatedFireEnum](/vext/ref/fb/animatedfireenum) | [AntAttentionStateEnum](/vext/ref/fb/antattentionstateenum) |
+| [AntCoverEnum](/vext/ref/fb/antcoverenum) | [AntCoverFireType](/vext/ref/fb/antcoverfiretype) |
+| [AntEntryIdEnum](/vext/ref/fb/antentryidenum) | [AntHitReactionWeaponType](/vext/ref/fb/anthitreactionweapontype) |
+| [AntPackagingType](/vext/ref/fb/antpackagingtype) | [AntPoseEnum](/vext/ref/fb/antposeenum) |
+| [AntSpeedLevel](/vext/ref/fb/antspeedlevel) | [AreaTriggerInclude](/vext/ref/fb/areatriggerinclude) |
+| [AudioCurveType](/vext/ref/fb/audiocurvetype) | [AudioSystemSpeakerSetup](/vext/ref/fb/audiosystemspeakersetup) |
+| [AwardGroup](/vext/ref/fb/awardgroup) | [AwardKitAssociation](/vext/ref/fb/awardkitassociation) |
+| [AwardType](/vext/ref/fb/awardtype) | [BackendType](/vext/ref/fb/backendtype) |
+| [BlendShaderMode](/vext/ref/fb/blendshadermode) | [BlinkType](/vext/ref/fb/blinktype) |
+| [BlurFilter](/vext/ref/fb/blurfilter) | [BreakableControllerComponentNetworkId](/vext/ref/fb/breakablecontrollercomponentnetworkid) |
+| [BreakableControllerComponentNetworkIdMultiplier](/vext/ref/fb/breakablecontrollercomponentnetworkidmultiplier) | [Buttons](/vext/ref/fb/buttons) |
+| [CameraIds](/vext/ref/fb/cameraids) | [CameraMovementActionMode](/vext/ref/fb/cameramovementactionmode) |
+| [CapturableType](/vext/ref/fb/capturabletype) | [ChangeGameSettingType](/vext/ref/fb/changegamesettingtype) |
+| [CharacterLightingMode](/vext/ref/fb/characterlightingmode) | [CharacterPoseAction](/vext/ref/fb/characterposeaction) |
+| [CharacterPoseCollisionType](/vext/ref/fb/characterposecollisiontype) | [CharacterPoseType](/vext/ref/fb/characterposetype) |
+| [CharacterStateType](/vext/ref/fb/characterstatetype) | [ChatChannelType](/vext/ref/fb/chatchanneltype) |
+| [ClientGameType](/vext/ref/fb/clientgametype) | [ClientState](/vext/ref/fb/clientstate) |
+| [CollisionMethodEnum](/vext/ref/fb/collisionmethodenum) | [CombatPatrolMode](/vext/ref/fb/combatpatrolmode) |
+| [CompareOp](/vext/ref/fb/compareop) | [CompareOperation](/vext/ref/fb/compareoperation) |
+| [CompressorChannelMode](/vext/ref/fb/compressorchannelmode) | [ConditionType](/vext/ref/fb/conditiontype) |
+| [ConsumableGroup](/vext/ref/fb/consumablegroup) | [CoopPlayerEvent](/vext/ref/fb/coopplayerevent) |
+| [CoreLogLevel](/vext/ref/fb/coreloglevel) | [CoverEnterStrategy](/vext/ref/fb/coverenterstrategy) |
+| [CoverExitStyle](/vext/ref/fb/coverexitstyle) | [CoverFireType](/vext/ref/fb/coverfiretype) |
+| [CoverPeekType](/vext/ref/fb/coverpeektype) | [CoverSelectionMethod](/vext/ref/fb/coverselectionmethod) |
+| [CoverType](/vext/ref/fb/covertype) | [CriteriaType](/vext/ref/fb/criteriatype) |
+| [CurveInfinityType](/vext/ref/fb/curveinfinitytype) | [CurveShaderType](/vext/ref/fb/curveshadertype) |
+| [CustomizationConstants](/vext/ref/fb/customizationconstants) | [CustomReportValueKind](/vext/ref/fb/customreportvaluekind) |
+| [DamageIndicationType](/vext/ref/fb/damageindicationtype) | [DeathAnimationOperation](/vext/ref/fb/deathanimationoperation) |
+| [DebugMenuItemType](/vext/ref/fb/debugmenuitemtype) | [DebugRenderType](/vext/ref/fb/debugrendertype) |
+| [DepthStencilCompareFunc](/vext/ref/fb/depthstencilcomparefunc) | [DestructionConnectivityType](/vext/ref/fb/destructionconnectivitytype) |
+| [Difficulty](/vext/ref/fb/difficulty) | [DisableTeamType](/vext/ref/fb/disableteamtype) |
+| [DogTagCategory](/vext/ref/fb/dogtagcategory) | [DTagUploadPolicy](/vext/ref/fb/dtaguploadpolicy) |
+| [DynamicAOMethod](/vext/ref/fb/dynamicaomethod) | [DynamicAvoidanceMode](/vext/ref/fb/dynamicavoidancemode) |
+| [EmittableField](/vext/ref/fb/emittablefield) | [EmittableType](/vext/ref/fb/emittabletype) |
+| [EmitterParameter](/vext/ref/fb/emitterparameter) | [EnlightenColorMode](/vext/ref/fb/enlightencolormode) |
+| [EnlightenType](/vext/ref/fb/enlightentype) | [EntitlementType](/vext/ref/fb/entitlementtype) |
+| [EntityCreatorType](/vext/ref/fb/entitycreatortype) | [EntityInitPass](/vext/ref/fb/entityinitpass) |
+| [EntityUpdateOrder](/vext/ref/fb/entityupdateorder) | [EntropyCodecType](/vext/ref/fb/entropycodectype) |
+| [EntryClass](/vext/ref/fb/entryclass) | [EntryEnterRestriction](/vext/ref/fb/entryenterrestriction) |
+| [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum) | [EntrySeatType](/vext/ref/fb/entryseattype) |
+| [EntrySpottingSettings](/vext/ref/fb/entryspottingsettings) | [EvaluatorType](/vext/ref/fb/evaluatortype) |
+| [EventCompareGateType](/vext/ref/fb/eventcomparegatetype) | [EventConnectionTargetType](/vext/ref/fb/eventconnectiontargettype) |
+| [EventGateState](/vext/ref/fb/eventgatestate) | [ExampleVehicleType](/vext/ref/fb/examplevehicletype) |
+| [ExecutionModeType](/vext/ref/fb/executionmodetype) | [ExitToMenuReason](/vext/ref/fb/exittomenureason) |
+| [ExpanderChannelMode](/vext/ref/fb/expanderchannelmode) | [EyeVectorSpace](/vext/ref/fb/eyevectorspace) |
+| [FactionId](/vext/ref/fb/factionid) | [FadeCurveType](/vext/ref/fb/fadecurvetype) |
+| [FaderType](/vext/ref/fb/fadertype) | [FieldAccessType](/vext/ref/fb/fieldaccesstype) |
+| [FireLogicType](/vext/ref/fb/firelogictype) | [ForceCondition](/vext/ref/fb/forcecondition) |
+| [ForceMagnitudeInputType](/vext/ref/fb/forcemagnitudeinputtype) | [ForceType](/vext/ref/fb/forcetype) |
+| [FrequencyShiftSsbFilter](/vext/ref/fb/frequencyshiftssbfilter) | [GainFaderFadeType](/vext/ref/fb/gainfaderfadetype) |
+| [GameOverResult](/vext/ref/fb/gameoverresult) | [GamePlatform](/vext/ref/fb/gameplatform) |
+| [GameplayBones](/vext/ref/fb/gameplaybones) | [GameSplineType](/vext/ref/fb/gamesplinetype) |
+| [GearSlot](/vext/ref/fb/gearslot) | [GrenadeType](/vext/ref/fb/grenadetype) |
+| [GunMasterNotificationType](/vext/ref/fb/gunmasternotificationtype) | [HardwareProfile](/vext/ref/fb/hardwareprofile) |
+| [HitReactionType](/vext/ref/fb/hitreactiontype) | [HudTextReceiver](/vext/ref/fb/hudtextreceiver) |
+| [IKEffectorEnum](/vext/ref/fb/ikeffectorenum) | [IndexBufferFormat](/vext/ref/fb/indexbufferformat) |
+| [IndexInBlueprint](/vext/ref/fb/indexinblueprint) | [InputActionMapPlatform](/vext/ref/fb/inputactionmapplatform) |
+| [InputActionMapSlot](/vext/ref/fb/inputactionmapslot) | [InputConceptIdentifiers](/vext/ref/fb/inputconceptidentifiers) |
+| [InputDeviceAxes](/vext/ref/fb/inputdeviceaxes) | [InputDeviceKeys](/vext/ref/fb/inputdevicekeys) |
+| [InputDeviceMotionControllerButtons](/vext/ref/fb/inputdevicemotioncontrollerbuttons) | [InputDeviceMouseButtons](/vext/ref/fb/inputdevicemousebuttons) |
+| [InputDevicePadButtons](/vext/ref/fb/inputdevicepadbuttons) | [InputDevicePOVs](/vext/ref/fb/inputdevicepovs) |
+| [InputIds](/vext/ref/fb/inputids) | [InteractionEntityType](/vext/ref/fb/interactionentitytype) |
+| [InterpolationType](/vext/ref/fb/interpolationtype) | [InvitePlatform](/vext/ref/fb/inviteplatform) |
+| [InviteType](/vext/ref/fb/invitetype) | [LanguageFormat](/vext/ref/fb/languageformat) |
+| [LimiterChannelMode](/vext/ref/fb/limiterchannelmode) | [LockType](/vext/ref/fb/locktype) |
+| [LogFileCollisionMode](/vext/ref/fb/logfilecollisionmode) | [LogicalExpressionOperator](/vext/ref/fb/logicalexpressionoperator) |
+| [LoopType](/vext/ref/fb/looptype) | [MapMarkerColorType](/vext/ref/fb/mapmarkercolortype) |
+| [MapMarkerType](/vext/ref/fb/mapmarkertype) | [MatchmakingNetworkTopology](/vext/ref/fb/matchmakingnetworktopology) |
+| [MatchmakingPeer2PeerMode](/vext/ref/fb/matchmakingpeer2peermode) | [MatchmakingPlatform](/vext/ref/fb/matchmakingplatform) |
+| [MatchmakingRankedMode](/vext/ref/fb/matchmakingrankedmode) | [MatchmakingSessionMode](/vext/ref/fb/matchmakingsessionmode) |
+| [MatchmakingVirtualizationMode](/vext/ref/fb/matchmakingvirtualizationmode) | [MathOp](/vext/ref/fb/mathop) |
+| [MenuResponse](/vext/ref/fb/menuresponse) | [MeshHandleFlags](/vext/ref/fb/meshhandleflags) |
+| [MeshLimits](/vext/ref/fb/meshlimits) | [MeshScatteringElevationMode](/vext/ref/fb/meshscatteringelevationmode) |
+| [MeshScatteringInstanceDataMode](/vext/ref/fb/meshscatteringinstancedatamode) | [MeshScatteringOrientationMode](/vext/ref/fb/meshscatteringorientationmode) |
+| [MeshScatteringRotationMode](/vext/ref/fb/meshscatteringrotationmode) | [MeshSubsetCategory](/vext/ref/fb/meshsubsetcategory) |
+| [MeshSubsetCategoryFlags](/vext/ref/fb/meshsubsetcategoryflags) | [MeshType](/vext/ref/fb/meshtype) |
+| [MessageReciever](/vext/ref/fb/messagereciever) | [MinimapIconInteractionConcept](/vext/ref/fb/minimapiconinteractionconcept) |
+| [MipmapFilterMode](/vext/ref/fb/mipmapfiltermode) | [MixerValueAccumulateMode](/vext/ref/fb/mixervalueaccumulatemode) |
+| [MixerValueUI](/vext/ref/fb/mixervalueui) | [MixerValueUIOrientation](/vext/ref/fb/mixervalueuiorientation) |
+| [MixerValueUIScale](/vext/ref/fb/mixervalueuiscale) | [MixGroupPropertyType](/vext/ref/fb/mixgrouppropertytype) |
+| [MixGroupState](/vext/ref/fb/mixgroupstate) | [ModelAnimationTransformType](/vext/ref/fb/modelanimationtransformtype) |
+| [ModelAnimationUpdateOrder](/vext/ref/fb/modelanimationupdateorder) | [ModifierAxis](/vext/ref/fb/modifieraxis) |
+| [ModifierEuler](/vext/ref/fb/modifiereuler) | [NotifyType](/vext/ref/fb/notifytype) |
+| [NumberGeneratorMode](/vext/ref/fb/numbergeneratormode) | [ObjectiveType](/vext/ref/fb/objectivetype) |
+| [OnlineEnvironment](/vext/ref/fb/onlineenvironment) | [OrderType](/vext/ref/fb/ordertype) |
+| [OutputTransformSource](/vext/ref/fb/outputtransformsource) | [PackagingDetailLevel](/vext/ref/fb/packagingdetaillevel) |
+| [PartComponentConstants](/vext/ref/fb/partcomponentconstants) | [PathfindingReplayMode](/vext/ref/fb/pathfindingreplaymode) |
+| [PathfindingRepresentation](/vext/ref/fb/pathfindingrepresentation) | [PathfindingStreamAndConnect](/vext/ref/fb/pathfindingstreamandconnect) |
+| [PerformanceProfilePlatform](/vext/ref/fb/performanceprofileplatform) | [PersistenceGameType](/vext/ref/fb/persistencegametype) |
+| [PersistentValueDataKind](/vext/ref/fb/persistentvaluedatakind) | [PersistentValueDataType](/vext/ref/fb/persistentvaluedatatype) |
+| [PersistentValueHistoryType](/vext/ref/fb/persistentvaluehistorytype) | [PersistentValueType](/vext/ref/fb/persistentvaluetype) |
+| [PersonViewMode](/vext/ref/fb/personviewmode) | [PhysicsWorldType](/vext/ref/fb/physicsworldtype) |
+| [PickupPlayerEnum](/vext/ref/fb/pickupplayerenum) | [PixelNormalSpace](/vext/ref/fb/pixelnormalspace) |
+| [PlayerKilledWeaponType](/vext/ref/fb/playerkilledweapontype) | [PlayerRole](/vext/ref/fb/playerrole) |
+| [PlayerSpawnType](/vext/ref/fb/playerspawntype) | [PointCloudAttributeQuantization](/vext/ref/fb/pointcloudattributequantization) |
+| [PointCloudAttributeUsage](/vext/ref/fb/pointcloudattributeusage) | [PolynomialOperation](/vext/ref/fb/polynomialoperation) |
+| [PoseTransition](/vext/ref/fb/posetransition) | [PoseType](/vext/ref/fb/posetype) |
+| [PostProcessDebugMode](/vext/ref/fb/postprocessdebugmode) | [PresenceRequest](/vext/ref/fb/presencerequest) |
+| [PrimitiveType](/vext/ref/fb/primitivetype) | [ProcessorType](/vext/ref/fb/processortype) |
+| [ProfileOptionsType](/vext/ref/fb/profileoptionstype) | [ProgressType](/vext/ref/fb/progresstype) |
+| [PropellerType](/vext/ref/fb/propellertype) | [ProximityObjectType](/vext/ref/fb/proximityobjecttype) |
+| [QualityLevel](/vext/ref/fb/qualitylevel) | [QuickThrowTypeEnum](/vext/ref/fb/quickthrowtypeenum) |
+| [RasterNodeUsage](/vext/ref/fb/rasternodeusage) | [RasterTreeBuildMode](/vext/ref/fb/rastertreebuildmode) |
+| [ReadinessLevel](/vext/ref/fb/readinesslevel) | [ReadinessState](/vext/ref/fb/readinessstate) |
+| [Realm](/vext/ref/fb/realm) | [ReloadBehavior](/vext/ref/fb/reloadbehavior) |
+| [ReloadLogic](/vext/ref/fb/reloadlogic) | [ReloadType](/vext/ref/fb/reloadtype) |
+| [RenderBlendMode](/vext/ref/fb/renderblendmode) | [RenderBlendOp](/vext/ref/fb/renderblendop) |
+| [RenderClearMask](/vext/ref/fb/renderclearmask) | [RenderCullMode](/vext/ref/fb/rendercullmode) |
+| [RenderDepthMode](/vext/ref/fb/renderdepthmode) | [RenderFillMode](/vext/ref/fb/renderfillmode) |
+| [RenderVolumeTransformType](/vext/ref/fb/rendervolumetransformtype) | [RenderWriteMask](/vext/ref/fb/renderwritemask) |
+| [ResourceBundleKind](/vext/ref/fb/resourcebundlekind) | [RichPresencePropertyType](/vext/ref/fb/richpresencepropertytype) |
+| [RigidBodyCollisionLayer](/vext/ref/fb/rigidbodycollisionlayer) | [RigidBodyMotionType](/vext/ref/fb/rigidbodymotiontype) |
+| [RigidBodyQualityType](/vext/ref/fb/rigidbodyqualitytype) | [RigidBodyType](/vext/ref/fb/rigidbodytype) |
+| [RotationAxis](/vext/ref/fb/rotationaxis) | [RotationAxisEnum](/vext/ref/fb/rotationaxisenum) |
+| [RotationChannel](/vext/ref/fb/rotationchannel) | [RouteChannel](/vext/ref/fb/routechannel) |
+| [RouteType](/vext/ref/fb/routetype) | [SampleCenter](/vext/ref/fb/samplecenter) |
+| [ScoreboardPosition](/vext/ref/fb/scoreboardposition) | [ScoringBucket](/vext/ref/fb/scoringbucket) |
+| [ScoringBucketType](/vext/ref/fb/scoringbuckettype) | [ScoringVisibilityType](/vext/ref/fb/scoringvisibilitytype) |
+| [ScreenEffectFrameType](/vext/ref/fb/screeneffectframetype) | [SecureReason](/vext/ref/fb/securereason) |
+| [ServerBackendAttribute](/vext/ref/fb/serverbackendattribute) | [ServerMapSequencerEventType](/vext/ref/fb/servermapsequencereventtype) |
+| [ServerUnlockListEventType](/vext/ref/fb/serverunlocklisteventtype) | [ServerUnlockSystemType](/vext/ref/fb/serverunlocksystemtype) |
+| [ShaderBlendMode](/vext/ref/fb/shaderblendmode) | [ShaderBranchMethod](/vext/ref/fb/shaderbranchmethod) |
+| [ShaderComparisonOperator](/vext/ref/fb/shadercomparisonoperator) | [ShaderConstantFunction](/vext/ref/fb/shaderconstantfunction) |
+| [ShaderConstantSystemTexture](/vext/ref/fb/shaderconstantsystemtexture) | [ShaderDepthBiasGroup](/vext/ref/fb/shaderdepthbiasgroup) |
+| [ShaderGBufferLayout](/vext/ref/fb/shadergbufferlayout) | [ShaderGeometrySpace](/vext/ref/fb/shadergeometryspace) |
+| [ShaderInstancingMethod](/vext/ref/fb/shaderinstancingmethod) | [ShaderInterpolationType](/vext/ref/fb/shaderinterpolationtype) |
+| [ShaderLightingModel](/vext/ref/fb/shaderlightingmodel) | [ShaderObjectLighting](/vext/ref/fb/shaderobjectlighting) |
+| [ShaderParameterType](/vext/ref/fb/shaderparametertype) | [ShaderPortType](/vext/ref/fb/shaderporttype) |
+| [ShaderPositionSpace](/vext/ref/fb/shaderpositionspace) | [ShaderProgram](/vext/ref/fb/shaderprogram) |
+| [ShaderRenderMode](/vext/ref/fb/shaderrendermode) | [ShaderRenderPath](/vext/ref/fb/shaderrenderpath) |
+| [ShaderShadowmapMethod](/vext/ref/fb/shadershadowmapmethod) | [ShaderShadowmapQuality](/vext/ref/fb/shadershadowmapquality) |
+| [ShaderSkinningMethod](/vext/ref/fb/shaderskinningmethod) | [ShaderStageType](/vext/ref/fb/shaderstagetype) |
+| [ShaderTextureCoordType](/vext/ref/fb/shadertexturecoordtype) | [ShaderTextureDecompression](/vext/ref/fb/shadertexturedecompression) |
+| [ShaderTimeType](/vext/ref/fb/shadertimetype) | [ShaderValueFormat](/vext/ref/fb/shadervalueformat) |
+| [ShaderValueParameterType](/vext/ref/fb/shadervalueparametertype) | [ShaderValueType](/vext/ref/fb/shadervaluetype) |
+| [ShapeType](/vext/ref/fb/shapetype) | [ShooterInfo](/vext/ref/fb/shooterinfo) |
+| [ShootType](/vext/ref/fb/shoottype) | [SimpleTransformOperation](/vext/ref/fb/simpletransformoperation) |
+| [SKU](/vext/ref/fb/sku) | [SocketPhysics](/vext/ref/fb/socketphysics) |
+| [SocketType](/vext/ref/fb/sockettype) | [SoldierBuffId](/vext/ref/fb/soldierbuffid) |
+| [SoldierChangeAction](/vext/ref/fb/soldierchangeaction) | [SoldierEmote](/vext/ref/fb/soldieremote) |
+| [SoundDataRequestResult](/vext/ref/fb/sounddatarequestresult) | [SoundDataState](/vext/ref/fb/sounddatastate) |
+| [SoundGraphPluginConnectionType](/vext/ref/fb/soundgraphpluginconnectiontype) | [SoundPatchDefaultEvent](/vext/ref/fb/soundpatchdefaultevent) |
+| [SoundTestParamBehavior](/vext/ref/fb/soundtestparambehavior) | [SoundTestTransformBehavior](/vext/ref/fb/soundtesttransformbehavior) |
+| [SoundWaveReadPriority](/vext/ref/fb/soundwavereadpriority) | [SoundWaveVariationSelection](/vext/ref/fb/soundwavevariationselection) |
+| [SoundWaveVoicePriority](/vext/ref/fb/soundwavevoicepriority) | [SpaceType](/vext/ref/fb/spacetype) |
+| [SpecialMovesPoseType](/vext/ref/fb/specialmovesposetype) | [SpotLightShape](/vext/ref/fb/spotlightshape) |
+| [SpottingType](/vext/ref/fb/spottingtype) | [SpotType](/vext/ref/fb/spottype) |
+| [SquadAction](/vext/ref/fb/squadaction) | [SquadId](/vext/ref/fb/squadid) |
+| [StabilizerProperty](/vext/ref/fb/stabilizerproperty) | [StatEvent](/vext/ref/fb/statevent) |
+| [StatPeriod](/vext/ref/fb/statperiod) | [StatsMultiplicity](/vext/ref/fb/statsmultiplicity) |
+| [StencilOperation](/vext/ref/fb/stenciloperation) | [StreamRealm](/vext/ref/fb/streamrealm) |
+| [StreamStarveMode](/vext/ref/fb/streamstarvemode) | [StrengthType](/vext/ref/fb/strengthtype) |
+| [SubRealm](/vext/ref/fb/subrealm) | [SurfaceShaderType](/vext/ref/fb/surfaceshadertype) |
+| [SweepSelectionType](/vext/ref/fb/sweepselectiontype) | [SwitchTeamsResult](/vext/ref/fb/switchteamsresult) |
+| [SyncAnimationsState](/vext/ref/fb/syncanimationsstate) | [TargetMode](/vext/ref/fb/targetmode) |
+| [TargetPosKnowledgeType](/vext/ref/fb/targetposknowledgetype) | [TeamAssignMode](/vext/ref/fb/teamassignmode) |
+| [TeamId](/vext/ref/fb/teamid) | [TerrainBrushDetailOperation](/vext/ref/fb/terrainbrushdetailoperation) |
+| [TerrainDrawPassType](/vext/ref/fb/terraindrawpasstype) | [TerrainLayerType](/vext/ref/fb/terrainlayertype) |
+| [TerrainRenderMode](/vext/ref/fb/terrainrendermode) | [TextureAddress](/vext/ref/fb/textureaddress) |
+| [TextureCompressQualityMode](/vext/ref/fb/texturecompressqualitymode) | [TextureFilter](/vext/ref/fb/texturefilter) |
+| [TextureFormat](/vext/ref/fb/textureformat) | [TextureType](/vext/ref/fb/texturetype) |
+| [TicketDecreaseType](/vext/ref/fb/ticketdecreasetype) | [TimerMode](/vext/ref/fb/timermode) |
+| [TinyEvent](/vext/ref/fb/tinyevent) | [TonemapMethod](/vext/ref/fb/tonemapmethod) |
+| [ToolTipType](/vext/ref/fb/tooltiptype) | [TransformPart](/vext/ref/fb/transformpart) |
+| [UI3dIconQuery](/vext/ref/fb/ui3diconquery) | [UIColorType](/vext/ref/fb/uicolortype) |
+| [UIConsoleKeyboardStatus](/vext/ref/fb/uiconsolekeyboardstatus) | [UIConstants](/vext/ref/fb/uiconstants) |
+| [UICreditsTextType](/vext/ref/fb/uicreditstexttype) | [UIGraphPriority](/vext/ref/fb/uigraphpriority) |
+| [UIHudIcon](/vext/ref/fb/uihudicon) | [UIIconState](/vext/ref/fb/uiiconstate) |
+| [UIInputAction](/vext/ref/fb/uiinputaction) | [UIInputActionEventType](/vext/ref/fb/uiinputactioneventtype) |
+| [UIInputEvent](/vext/ref/fb/uiinputevent) | [UIInterruptID](/vext/ref/fb/uiinterruptid) |
+| [UIKeyboardEventType](/vext/ref/fb/uikeyboardeventtype) | [UIListEmptyRowType](/vext/ref/fb/uilistemptyrowtype) |
+| [UIListNavigationType](/vext/ref/fb/uilistnavigationtype) | [UIListRowType](/vext/ref/fb/uilistrowtype) |
+| [UIListUnFocusMode](/vext/ref/fb/uilistunfocusmode) | [UILogicOperator](/vext/ref/fb/uilogicoperator) |
+| [UIMessageEntityType](/vext/ref/fb/uimessageentitytype) | [UIMessageType](/vext/ref/fb/uimessagetype) |
+| [UIMinimapZoomState](/vext/ref/fb/uiminimapzoomstate) | [UIMouseButton](/vext/ref/fb/uimousebutton) |
+| [UIMouseEventType](/vext/ref/fb/uimouseeventtype) | [UIPartIdentifier](/vext/ref/fb/uipartidentifier) |
+| [UIPopupType](/vext/ref/fb/uipopuptype) | [UISettingSymbols](/vext/ref/fb/uisettingsymbols) |
+| [UISettingType](/vext/ref/fb/uisettingtype) | [UIState](/vext/ref/fb/uistate) |
+| [UISystemType](/vext/ref/fb/uisystemtype) | [UIUpdateType](/vext/ref/fb/uiupdatetype) |
+| [UIWidgetEventID](/vext/ref/fb/uiwidgeteventid) | [UIWidgetEventQuery](/vext/ref/fb/uiwidgeteventquery) |
+| [UndergrowthOrientationMode](/vext/ref/fb/undergrowthorientationmode) | [UndergrowthRotationMode](/vext/ref/fb/undergrowthrotationmode) |
+| [UnlockAvailability](/vext/ref/fb/unlockavailability) | [UpdatePass](/vext/ref/fb/updatepass) |
+| [Vec3MathOp](/vext/ref/fb/vec3mathop) | [VehicleCategory](/vext/ref/fb/vehiclecategory) |
+| [VehicleHudType](/vext/ref/fb/vehiclehudtype) | [VehicleInputTweakType](/vext/ref/fb/vehicleinputtweaktype) |
+| [VehicleMode](/vext/ref/fb/vehiclemode) | [VehicleStateType](/vext/ref/fb/vehiclestatetype) |
+| [VeniceNetworkUnlockGainedType](/vext/ref/fb/venicenetworkunlockgainedtype) | [VertexElementClassification](/vext/ref/fb/vertexelementclassification) |
+| [VertexElementFormat](/vext/ref/fb/vertexelementformat) | [VertexElementUsage](/vext/ref/fb/vertexelementusage) |
+| [VertexNormalSpace](/vext/ref/fb/vertexnormalspace) | [VirtualGameState](/vext/ref/fb/virtualgamestate) |
+| [VoiceChannel](/vext/ref/fb/voicechannel) | [VoiceOverArithmeticExpressionType](/vext/ref/fb/voiceoverarithmeticexpressiontype) |
+| [VoiceOverCompareExpressionType](/vext/ref/fb/voiceovercompareexpressiontype) | [VoiceOverContainerConditionMode](/vext/ref/fb/voiceovercontainerconditionmode) |
+| [VoiceOverConversationInterruptMode](/vext/ref/fb/voiceoverconversationinterruptmode) | [VoiceOverConversationQueueGroupPolyphony](/vext/ref/fb/voiceoverconversationqueuegrouppolyphony) |
+| [VoiceOverConversationQueueMode](/vext/ref/fb/voiceoverconversationqueuemode) | [VoiceOverDialogTakeBehavior](/vext/ref/fb/voiceoverdialogtakebehavior) |
+| [VoiceOverLabelCompareMode](/vext/ref/fb/voiceoverlabelcomparemode) | [VoiceOverLabelSourceMode](/vext/ref/fb/voiceoverlabelsourcemode) |
+| [VoiceOverLogicFlowMode](/vext/ref/fb/voiceoverlogicflowmode) | [VoiceOverPronunciationFallback](/vext/ref/fb/voiceoverpronunciationfallback) |
+| [VoiceOverValueType](/vext/ref/fb/voiceovervaluetype) | [VoiceOverWaveNameTranslation](/vext/ref/fb/voiceoverwavenametranslation) |
+| [VotingType](/vext/ref/fb/votingtype) | [WarningPlayerType](/vext/ref/fb/warningplayertype) |
+| [WarnTarget](/vext/ref/fb/warntarget) | [WaveCodec](/vext/ref/fb/wavecodec) |
+| [WavePriority](/vext/ref/fb/wavepriority) | [WaypointsSnappingSettings](/vext/ref/fb/waypointssnappingsettings) |
+| [WaypointVaultType](/vext/ref/fb/waypointvaulttype) | [WeaponAnimBaseSetEnum](/vext/ref/fb/weaponanimbasesetenum) |
+| [WeaponAnimType](/vext/ref/fb/weaponanimtype) | [WeaponClassEnum](/vext/ref/fb/weaponclassenum) |
+| [WeaponClassification](/vext/ref/fb/weaponclassification) | [WeaponFiringEvent](/vext/ref/fb/weaponfiringevent) |
+| [WeaponOverrideValueType](/vext/ref/fb/weaponoverridevaluetype) | [WeaponSlot](/vext/ref/fb/weaponslot) |
+| [WeaponSwitchingEnum](/vext/ref/fb/weaponswitchingenum) | [WeaponUnlocks](/vext/ref/fb/weaponunlocks) |
+| [WheelPhysicsType](/vext/ref/fb/wheelphysicstype) | [WidgetHorisontalAlignment](/vext/ref/fb/widgethorisontalalignment) |
+| [WidgetVerticalAlignment](/vext/ref/fb/widgetverticalalignment) | [WorldViewMode](/vext/ref/fb/worldviewmode) |
+| [XenonShaderBranchType](/vext/ref/fb/xenonshaderbranchtype) | [XenonTessellationMode](/vext/ref/fb/xenontessellationmode) |
+| [ZoomLevelActivateEventType](/vext/ref/fb/zoomlevelactivateeventtype) |  |

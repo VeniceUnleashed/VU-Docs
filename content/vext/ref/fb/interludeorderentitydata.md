@@ -1,48 +1,120 @@
 ---
 title: InterludeOrderEntityData
 ---
-### Base Classes
 
-[BFOrderEntityData](/vext/ref/fb/bforderentitydata/)
+Inherits from 
+[BFOrderEntityData](/vext/ref/fb/bforderentitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[InterludeOrderEntityData](#constructor-0)**() |
+| **[InterludeOrderEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[InterludeOrderEntityData](#constructor-2)**(other: [BFOrderEntityData](/vext/ref/fb/bforderentitydata)) |
+| **[InterludeOrderEntityData](#constructor-3)**(other: [OrderEntityData](/vext/ref/fb/orderentitydata)) |
+| **[InterludeOrderEntityData](#constructor-4)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[InterludeOrderEntityData](#constructor-5)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[InterludeOrderEntityData](#constructor-6)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[InterludeOrderEntityData](#constructor-7)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "isCutscene" >}} | bool |
+| {{< prop "crouch" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "InterludeOrderEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### InterludeOrderEntityData {#constructor-0}
+> **InterludeOrderEntityData**()
 
-| Constructor                                                                         | Description                                                                                                                             |
-| ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| InterludeOrderEntityData()                                                          | Create a new instance of this container type.                                                                                           |
-| InterludeOrderEntityData(InterludeOrderEntityData other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| InterludeOrderEntityData([BFOrderEntityData](/vext/ref/fb/bforderentitydata/) other)              | Upcast an instance of type [BFOrderEntityData](/vext/ref/fb/bforderentitydata/) to [InterludeOrderEntityData](/vext/ref/fb/interludeorderentitydata/).              |
-| InterludeOrderEntityData([OrderEntityData](/vext/ref/fb/orderentitydata/) other)                  | Upcast an instance of type [OrderEntityData](/vext/ref/fb/orderentitydata/) to [InterludeOrderEntityData](/vext/ref/fb/interludeorderentitydata/).                  |
-| InterludeOrderEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [InterludeOrderEntityData](/vext/ref/fb/interludeorderentitydata/).                            |
-| InterludeOrderEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [InterludeOrderEntityData](/vext/ref/fb/interludeorderentitydata/).                    |
-| InterludeOrderEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [InterludeOrderEntityData](/vext/ref/fb/interludeorderentitydata/).              |
-| InterludeOrderEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [InterludeOrderEntityData](/vext/ref/fb/interludeorderentitydata/). |
+Creates a new [InterludeOrderEntityData](/vext/ref/fb/interludeorderentitydata) frostbite instance.
 
-## Properties
+### InterludeOrderEntityData {#constructor-1}
+> **InterludeOrderEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name       | Type | Description |
-| ---------- | ---- | ----------- |
-| isCutscene | bool |             |
-| crouch     | bool |             |
-
-## Methods
-
-| Type                                                 | Name            | Parameters                                     |
-| ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [InterludeOrderEntityData](/vext/ref/fb/interludeorderentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [InterludeOrderEntityData](/vext/ref/fb/interludeorderentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [InterludeOrderEntityData](/vext/ref/fb/interludeorderentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### InterludeOrderEntityData {#constructor-2}
+> **InterludeOrderEntityData**(other: [BFOrderEntityData](/vext/ref/fb/bforderentitydata))
+
+Casts an instance of type [BFOrderEntityData](/vext/ref/fb/bforderentitydata) to [InterludeOrderEntityData](/vext/ref/fb/interludeorderentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [BFOrderEntityData](/vext/ref/fb/bforderentitydata) | The instance to cast to [InterludeOrderEntityData](/vext/ref/fb/interludeorderentitydata). |
+
+### InterludeOrderEntityData {#constructor-3}
+> **InterludeOrderEntityData**(other: [OrderEntityData](/vext/ref/fb/orderentitydata))
+
+Casts an instance of type [OrderEntityData](/vext/ref/fb/orderentitydata) to [InterludeOrderEntityData](/vext/ref/fb/interludeorderentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [OrderEntityData](/vext/ref/fb/orderentitydata) | The instance to cast to [InterludeOrderEntityData](/vext/ref/fb/interludeorderentitydata). |
+
+### InterludeOrderEntityData {#constructor-4}
+> **InterludeOrderEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [InterludeOrderEntityData](/vext/ref/fb/interludeorderentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [InterludeOrderEntityData](/vext/ref/fb/interludeorderentitydata). |
+
+### InterludeOrderEntityData {#constructor-5}
+> **InterludeOrderEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [InterludeOrderEntityData](/vext/ref/fb/interludeorderentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [InterludeOrderEntityData](/vext/ref/fb/interludeorderentitydata). |
+
+### InterludeOrderEntityData {#constructor-6}
+> **InterludeOrderEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [InterludeOrderEntityData](/vext/ref/fb/interludeorderentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [InterludeOrderEntityData](/vext/ref/fb/interludeorderentitydata). |
+
+### InterludeOrderEntityData {#constructor-7}
+> **InterludeOrderEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [InterludeOrderEntityData](/vext/ref/fb/interludeorderentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [InterludeOrderEntityData](/vext/ref/fb/interludeorderentitydata). |
+
+## Properties
+### {{% prop-heading "isCutscene" %}}
+> **bool**
+
+### {{% prop-heading "crouch" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [InterludeOrderEntityData](/vext/ref/fb/interludeorderentitydata) type.
+

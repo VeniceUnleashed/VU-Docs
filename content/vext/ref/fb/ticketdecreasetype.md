@@ -1,14 +1,11 @@
 ---
 title: TicketDecreaseType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **TDTOnKilled** | Value: **0** |
+| **TDTOnRespawned** | Value: **1** |
+| **TDTNoDecreaseOnSoldierDeath** | Value: **2** |
 
-| Name                        | Value | Description |
-| --------------------------- | ----- | ----------- |
-| TDTOnKilled                 | 0     |             |
-| TDTOnRespawned              | 1     |             |
-| TDTNoDecreaseOnSoldierDeath | 2     |             |

@@ -1,44 +1,83 @@
 ---
 title: XenonPresenceBackendData
 ---
-### Base Classes
 
-[PresenceBackendData](/vext/ref/fb/presencebackenddata/)
+Inherits from 
+[PresenceBackendData](/vext/ref/fb/presencebackenddata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[XenonPresenceBackendData](#constructor-0)**() |
+| **[XenonPresenceBackendData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[XenonPresenceBackendData](#constructor-2)**(other: [PresenceBackendData](/vext/ref/fb/presencebackenddata)) |
+| **[XenonPresenceBackendData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[XenonPresenceBackendData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "titleId" >}} | int |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "XenonPresenceBackendData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### XenonPresenceBackendData {#constructor-0}
+> **XenonPresenceBackendData**()
 
-| Constructor                                                                         | Description                                                                                                                             |
-| ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| XenonPresenceBackendData()                                                          | Create a new instance of this container type.                                                                                           |
-| XenonPresenceBackendData(XenonPresenceBackendData other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| XenonPresenceBackendData([PresenceBackendData](/vext/ref/fb/presencebackenddata/) other)          | Upcast an instance of type [PresenceBackendData](/vext/ref/fb/presencebackenddata/) to [XenonPresenceBackendData](/vext/ref/fb/xenonpresencebackenddata/).          |
-| XenonPresenceBackendData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [XenonPresenceBackendData](/vext/ref/fb/xenonpresencebackenddata/).                                      |
-| XenonPresenceBackendData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [XenonPresenceBackendData](/vext/ref/fb/xenonpresencebackenddata/). |
+Creates a new [XenonPresenceBackendData](/vext/ref/fb/xenonpresencebackenddata) frostbite instance.
 
-## Properties
+### XenonPresenceBackendData {#constructor-1}
+> **XenonPresenceBackendData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name    | Type   | Description |
-| ------- | ------ | ----------- |
-| titleId | number |             |
-
-## Methods
-
-| Type                                                 | Name            | Parameters                                     |
-| ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [XenonPresenceBackendData](/vext/ref/fb/xenonpresencebackenddata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [XenonPresenceBackendData](/vext/ref/fb/xenonpresencebackenddata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [XenonPresenceBackendData](/vext/ref/fb/xenonpresencebackenddata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### XenonPresenceBackendData {#constructor-2}
+> **XenonPresenceBackendData**(other: [PresenceBackendData](/vext/ref/fb/presencebackenddata))
+
+Casts an instance of type [PresenceBackendData](/vext/ref/fb/presencebackenddata) to [XenonPresenceBackendData](/vext/ref/fb/xenonpresencebackenddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [PresenceBackendData](/vext/ref/fb/presencebackenddata) | The instance to cast to [XenonPresenceBackendData](/vext/ref/fb/xenonpresencebackenddata). |
+
+### XenonPresenceBackendData {#constructor-3}
+> **XenonPresenceBackendData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [XenonPresenceBackendData](/vext/ref/fb/xenonpresencebackenddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [XenonPresenceBackendData](/vext/ref/fb/xenonpresencebackenddata). |
+
+### XenonPresenceBackendData {#constructor-4}
+> **XenonPresenceBackendData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [XenonPresenceBackendData](/vext/ref/fb/xenonpresencebackenddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [XenonPresenceBackendData](/vext/ref/fb/xenonpresencebackenddata). |
+
+## Properties
+### {{% prop-heading "titleId" %}}
+> **int**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [XenonPresenceBackendData](/vext/ref/fb/xenonpresencebackenddata) type.
+

@@ -1,14 +1,11 @@
 ---
 title: TerrainBrushDetailOperation
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **Lerp** | Value: **0** |
+| **Add** | Value: **1** |
+| **Multiply** | Value: **2** |
 
-| Name     | Value | Description |
-| -------- | ----- | ----------- |
-| Lerp     | 0     |             |
-| Add      | 1     |             |
-| Multiply | 2     |             |

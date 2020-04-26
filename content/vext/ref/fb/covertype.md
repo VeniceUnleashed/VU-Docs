@@ -1,15 +1,12 @@
 ---
 title: CoverType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **CoverType_Stand** | Value: **0** |
+| **CoverType_Medium** | Value: **1** |
+| **CoverType_Crouch** | Value: **2** |
+| **CoverType_Prone** | Value: **3** |
 
-| Name              | Value | Description |
-| ----------------- | ----- | ----------- |
-| CoverType\_Stand  | 0     |             |
-| CoverType\_Medium | 1     |             |
-| CoverType\_Crouch | 2     |             |
-| CoverType\_Prone  | 3     |             |

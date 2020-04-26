@@ -1,43 +1,72 @@
 ---
 title: SettingsBundleAsset
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SettingsBundleAsset](#constructor-0)**() |
+| **[SettingsBundleAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SettingsBundleAsset](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[SettingsBundleAsset](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "settings" >}} | [SystemSettings](/vext/ref/fb/systemsettings)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SettingsBundleAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SettingsBundleAsset {#constructor-0}
+> **SettingsBundleAsset**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| SettingsBundleAsset()                                                          | Create a new instance of this container type.                                                                                 |
-| SettingsBundleAsset(SettingsBundleAsset other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| SettingsBundleAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [SettingsBundleAsset](/vext/ref/fb/settingsbundleasset/).                                      |
-| SettingsBundleAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SettingsBundleAsset](/vext/ref/fb/settingsbundleasset/). |
+Creates a new [SettingsBundleAsset](/vext/ref/fb/settingsbundleasset) frostbite instance.
 
-## Properties
+### SettingsBundleAsset {#constructor-1}
+> **SettingsBundleAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name     | Type                                 | Description |
-| -------- | ------------------------------------ | ----------- |
-| settings | [SystemSettings](/vext/ref/fb/systemsettings/)\[\] |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [SettingsBundleAsset](/vext/ref/fb/settingsbundleasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SettingsBundleAsset](/vext/ref/fb/settingsbundleasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SettingsBundleAsset](/vext/ref/fb/settingsbundleasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SettingsBundleAsset {#constructor-2}
+> **SettingsBundleAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [SettingsBundleAsset](/vext/ref/fb/settingsbundleasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [SettingsBundleAsset](/vext/ref/fb/settingsbundleasset). |
+
+### SettingsBundleAsset {#constructor-3}
+> **SettingsBundleAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SettingsBundleAsset](/vext/ref/fb/settingsbundleasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SettingsBundleAsset](/vext/ref/fb/settingsbundleasset). |
+
+## Properties
+### {{% prop-heading "settings" %}}
+> **[SystemSettings](/vext/ref/fb/systemsettings)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SettingsBundleAsset](/vext/ref/fb/settingsbundleasset) type.
+

@@ -1,37 +1,63 @@
 ---
 title: ScopeFilterData
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ScopeFilterData](#constructor-0)**() |
+| **[ScopeFilterData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ScopeFilterData](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[ScopeFilterData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ScopeFilterData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ScopeFilterData {#constructor-0}
+> **ScopeFilterData**()
 
-| Constructor                                                                | Description                                                                                                           |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| ScopeFilterData()                                                          | Create a new instance of this container type.                                                                         |
-| ScopeFilterData(ScopeFilterData other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| ScopeFilterData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [ScopeFilterData](/vext/ref/fb/scopefilterdata/).                                      |
-| ScopeFilterData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ScopeFilterData](/vext/ref/fb/scopefilterdata/). |
+Creates a new [ScopeFilterData](/vext/ref/fb/scopefilterdata) frostbite instance.
 
-## Methods
+### ScopeFilterData {#constructor-1}
+> **ScopeFilterData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                               | Name            | Parameters                                     |
-| ---------------------------------- | --------------- | ---------------------------------------------- |
-| [ScopeFilterData](/vext/ref/fb/scopefilterdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ScopeFilterData](/vext/ref/fb/scopefilterdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ScopeFilterData](/vext/ref/fb/scopefilterdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ScopeFilterData {#constructor-2}
+> **ScopeFilterData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [ScopeFilterData](/vext/ref/fb/scopefilterdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [ScopeFilterData](/vext/ref/fb/scopefilterdata). |
+
+### ScopeFilterData {#constructor-3}
+> **ScopeFilterData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ScopeFilterData](/vext/ref/fb/scopefilterdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ScopeFilterData](/vext/ref/fb/scopefilterdata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ScopeFilterData](/vext/ref/fb/scopefilterdata) type.
+

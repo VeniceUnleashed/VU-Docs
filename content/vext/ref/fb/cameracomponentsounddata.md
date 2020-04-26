@@ -1,43 +1,65 @@
 ---
 title: CameraComponentSoundData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[CameraComponentSoundData](#constructor-0)**() |
+| **[CameraComponentSoundData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[CameraComponentSoundData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "switchToAlternateViewSound" >}} | [SoundAsset](/vext/ref/fb/soundasset) \| nil |
+| {{< prop "switchToNormalViewSound" >}} | [SoundAsset](/vext/ref/fb/soundasset) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "CameraComponentSoundData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### CameraComponentSoundData {#constructor-0}
+> **CameraComponentSoundData**()
 
-| Constructor                                                                         | Description                                                                                                                             |
-| ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| CameraComponentSoundData()                                                          | Create a new instance of this container type.                                                                                           |
-| CameraComponentSoundData(CameraComponentSoundData other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| CameraComponentSoundData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CameraComponentSoundData](/vext/ref/fb/cameracomponentsounddata/). |
+Creates a new [CameraComponentSoundData](/vext/ref/fb/cameracomponentsounddata) frostbite instance.
 
-## Properties
+### CameraComponentSoundData {#constructor-1}
+> **CameraComponentSoundData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                       | Type                     | Description |
-| -------------------------- | ------------------------ | ----------- |
-| switchToAlternateViewSound | [SoundAsset](/vext/ref/fb/soundasset/) |             |
-| switchToNormalViewSound    | [SoundAsset](/vext/ref/fb/soundasset/) |             |
-
-## Methods
-
-| Type                                                 | Name            | Parameters                                     |
-| ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [CameraComponentSoundData](/vext/ref/fb/cameracomponentsounddata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [CameraComponentSoundData](/vext/ref/fb/cameracomponentsounddata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [CameraComponentSoundData](/vext/ref/fb/cameracomponentsounddata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### CameraComponentSoundData {#constructor-2}
+> **CameraComponentSoundData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CameraComponentSoundData](/vext/ref/fb/cameracomponentsounddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [CameraComponentSoundData](/vext/ref/fb/cameracomponentsounddata). |
+
+## Properties
+### {{% prop-heading "switchToAlternateViewSound" %}}
+> **[SoundAsset](/vext/ref/fb/soundasset)** | **nil**
+
+### {{% prop-heading "switchToNormalViewSound" %}}
+> **[SoundAsset](/vext/ref/fb/soundasset)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [CameraComponentSoundData](/vext/ref/fb/cameracomponentsounddata) type.
+

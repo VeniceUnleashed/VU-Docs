@@ -1,45 +1,87 @@
 ---
 title: SkinnedMeshAsset
 ---
-### Base Classes
 
-[MeshAsset](/vext/ref/fb/meshasset/)
+Inherits from 
+[MeshAsset](/vext/ref/fb/meshasset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SkinnedMeshAsset](#constructor-0)**() |
+| **[SkinnedMeshAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SkinnedMeshAsset](#constructor-2)**(other: [MeshAsset](/vext/ref/fb/meshasset)) |
+| **[SkinnedMeshAsset](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[SkinnedMeshAsset](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "boundingBoxPositionOffset" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "boundingBoxSizeOffset" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SkinnedMeshAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SkinnedMeshAsset {#constructor-0}
+> **SkinnedMeshAsset**()
 
-| Constructor                                                                 | Description                                                                                                             |
-| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| SkinnedMeshAsset()                                                          | Create a new instance of this container type.                                                                           |
-| SkinnedMeshAsset(SkinnedMeshAsset other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| SkinnedMeshAsset([MeshAsset](/vext/ref/fb/meshasset/) other)                              | Upcast an instance of type [MeshAsset](/vext/ref/fb/meshasset/) to [SkinnedMeshAsset](/vext/ref/fb/skinnedmeshasset/).                              |
-| SkinnedMeshAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [SkinnedMeshAsset](/vext/ref/fb/skinnedmeshasset/).                                      |
-| SkinnedMeshAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SkinnedMeshAsset](/vext/ref/fb/skinnedmeshasset/). |
+Creates a new [SkinnedMeshAsset](/vext/ref/fb/skinnedmeshasset) frostbite instance.
 
-## Properties
+### SkinnedMeshAsset {#constructor-1}
+> **SkinnedMeshAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                      | Type                              | Description |
-| ------------------------- | --------------------------------- | ----------- |
-| boundingBoxPositionOffset | [Vec3](/vext/ref/shared/class/vec3) |             |
-| boundingBoxSizeOffset     | [Vec3](/vext/ref/shared/class/vec3) |             |
-
-## Methods
-
-| Type                                 | Name            | Parameters                                     |
-| ------------------------------------ | --------------- | ---------------------------------------------- |
-| [SkinnedMeshAsset](/vext/ref/fb/skinnedmeshasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SkinnedMeshAsset](/vext/ref/fb/skinnedmeshasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SkinnedMeshAsset](/vext/ref/fb/skinnedmeshasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SkinnedMeshAsset {#constructor-2}
+> **SkinnedMeshAsset**(other: [MeshAsset](/vext/ref/fb/meshasset))
+
+Casts an instance of type [MeshAsset](/vext/ref/fb/meshasset) to [SkinnedMeshAsset](/vext/ref/fb/skinnedmeshasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [MeshAsset](/vext/ref/fb/meshasset) | The instance to cast to [SkinnedMeshAsset](/vext/ref/fb/skinnedmeshasset). |
+
+### SkinnedMeshAsset {#constructor-3}
+> **SkinnedMeshAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [SkinnedMeshAsset](/vext/ref/fb/skinnedmeshasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [SkinnedMeshAsset](/vext/ref/fb/skinnedmeshasset). |
+
+### SkinnedMeshAsset {#constructor-4}
+> **SkinnedMeshAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SkinnedMeshAsset](/vext/ref/fb/skinnedmeshasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SkinnedMeshAsset](/vext/ref/fb/skinnedmeshasset). |
+
+## Properties
+### {{% prop-heading "boundingBoxPositionOffset" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "boundingBoxSizeOffset" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SkinnedMeshAsset](/vext/ref/fb/skinnedmeshasset) type.
+

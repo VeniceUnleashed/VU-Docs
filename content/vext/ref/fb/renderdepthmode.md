@@ -1,15 +1,12 @@
 ---
 title: RenderDepthMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **RenderDepthMode_Disabled** | Value: **0** |
+| **RenderDepthMode_ReadOnly** | Value: **1** |
+| **RenderDepthMode_ReadAndWrite** | Value: **2** |
+| **RenderDepthMode_WriteOnly** | Value: **3** |
 
-| Name                          | Value | Description |
-| ----------------------------- | ----- | ----------- |
-| RenderDepthMode\_Disabled     | 0     |             |
-| RenderDepthMode\_ReadOnly     | 1     |             |
-| RenderDepthMode\_ReadAndWrite | 2     |             |
-| RenderDepthMode\_WriteOnly    | 3     |             |

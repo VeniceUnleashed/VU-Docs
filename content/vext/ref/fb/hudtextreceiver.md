@@ -1,15 +1,12 @@
 ---
 title: HudTextReceiver
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **HudTextReceiver_Team** | Value: **0** |
+| **HudTextReceiver_Squad** | Value: **1** |
+| **HudTextReceiver_All** | Value: **2** |
+| **HudTextReceiver_Count** | Value: **3** |
 
-| Name                   | Value | Description |
-| ---------------------- | ----- | ----------- |
-| HudTextReceiver\_Team  | 0     |             |
-| HudTextReceiver\_Squad | 1     |             |
-| HudTextReceiver\_All   | 2     |             |
-| HudTextReceiver\_Count | 3     |             |

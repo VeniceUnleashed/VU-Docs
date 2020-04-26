@@ -1,44 +1,83 @@
 ---
 title: MaterialPropertyHealthData
 ---
-### Base Classes
 
-[PhysicsPropertyRelationPropertyData](/vext/ref/fb/physicspropertyrelationpropertydata/)
+Inherits from 
+[PhysicsPropertyRelationPropertyData](/vext/ref/fb/physicspropertyrelationpropertydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MaterialPropertyHealthData](#constructor-0)**() |
+| **[MaterialPropertyHealthData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MaterialPropertyHealthData](#constructor-2)**(other: [PhysicsPropertyRelationPropertyData](/vext/ref/fb/physicspropertyrelationpropertydata)) |
+| **[MaterialPropertyHealthData](#constructor-3)**(other: [MaterialRelationPropertyData](/vext/ref/fb/materialrelationpropertydata)) |
+| **[MaterialPropertyHealthData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "health" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MaterialPropertyHealthData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MaterialPropertyHealthData {#constructor-0}
+> **MaterialPropertyHealthData**()
 
-| Constructor                                                                                                  | Description                                                                                                                                                        |
-| ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| MaterialPropertyHealthData()                                                                                 | Create a new instance of this container type.                                                                                                                      |
-| MaterialPropertyHealthData(MaterialPropertyHealthData other)                                                 | Create a reference copy of an instance of the same type.                                                                                                           |
-| MaterialPropertyHealthData([PhysicsPropertyRelationPropertyData](/vext/ref/fb/physicspropertyrelationpropertydata/) other) | Upcast an instance of type [PhysicsPropertyRelationPropertyData](/vext/ref/fb/physicspropertyrelationpropertydata/) to [MaterialPropertyHealthData](/vext/ref/fb/materialpropertyhealthdata/). |
-| MaterialPropertyHealthData([MaterialRelationPropertyData](/vext/ref/fb/materialrelationpropertydata/) other)               | Upcast an instance of type [MaterialRelationPropertyData](/vext/ref/fb/materialrelationpropertydata/) to [MaterialPropertyHealthData](/vext/ref/fb/materialpropertyhealthdata/).               |
-| MaterialPropertyHealthData([DataContainer](/vext/ref/shared/class/datacontainer) other)                        | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MaterialPropertyHealthData](/vext/ref/fb/materialpropertyhealthdata/).                        |
+Creates a new [MaterialPropertyHealthData](/vext/ref/fb/materialpropertyhealthdata) frostbite instance.
 
-## Properties
+### MaterialPropertyHealthData {#constructor-1}
+> **MaterialPropertyHealthData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name   | Type   | Description |
-| ------ | ------ | ----------- |
-| health | number |             |
-
-## Methods
-
-| Type                                                     | Name            | Parameters                                     |
-| -------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [MaterialPropertyHealthData](/vext/ref/fb/materialpropertyhealthdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MaterialPropertyHealthData](/vext/ref/fb/materialpropertyhealthdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MaterialPropertyHealthData](/vext/ref/fb/materialpropertyhealthdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MaterialPropertyHealthData {#constructor-2}
+> **MaterialPropertyHealthData**(other: [PhysicsPropertyRelationPropertyData](/vext/ref/fb/physicspropertyrelationpropertydata))
+
+Casts an instance of type [PhysicsPropertyRelationPropertyData](/vext/ref/fb/physicspropertyrelationpropertydata) to [MaterialPropertyHealthData](/vext/ref/fb/materialpropertyhealthdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [PhysicsPropertyRelationPropertyData](/vext/ref/fb/physicspropertyrelationpropertydata) | The instance to cast to [MaterialPropertyHealthData](/vext/ref/fb/materialpropertyhealthdata). |
+
+### MaterialPropertyHealthData {#constructor-3}
+> **MaterialPropertyHealthData**(other: [MaterialRelationPropertyData](/vext/ref/fb/materialrelationpropertydata))
+
+Casts an instance of type [MaterialRelationPropertyData](/vext/ref/fb/materialrelationpropertydata) to [MaterialPropertyHealthData](/vext/ref/fb/materialpropertyhealthdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [MaterialRelationPropertyData](/vext/ref/fb/materialrelationpropertydata) | The instance to cast to [MaterialPropertyHealthData](/vext/ref/fb/materialpropertyhealthdata). |
+
+### MaterialPropertyHealthData {#constructor-4}
+> **MaterialPropertyHealthData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MaterialPropertyHealthData](/vext/ref/fb/materialpropertyhealthdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MaterialPropertyHealthData](/vext/ref/fb/materialpropertyhealthdata). |
+
+## Properties
+### {{% prop-heading "health" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MaterialPropertyHealthData](/vext/ref/fb/materialpropertyhealthdata) type.
+

@@ -1,34 +1,65 @@
 ---
 title: SupportedShootingProximityChecking
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SupportedShootingProximityChecking](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "rayAboveGunHeightOffset" >}} | float |
+| {{< prop "rayAboveLength" >}} | float |
+| {{< prop "rayBelowGunHeightOffset" >}} | float |
+| {{< prop "rayBelowLength" >}} | float |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [SupportedShootingProximityChecking](/vext/ref/fb/supportedshootingproximitychecking) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SupportedShootingProximityChecking" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SupportedShootingProximityChecking {#constructor-0}
+> **SupportedShootingProximityChecking**()
 
-| Constructor                                                                  | Description                                              |
-| ---------------------------------------------------------------------------- | -------------------------------------------------------- |
-| SupportedShootingProximityChecking()                                         | Create a new instance of this structure type.            |
-| SupportedShootingProximityChecking(SupportedShootingProximityChecking other) | Create a reference copy of a structure of the same type. |
+Creates a new [SupportedShootingProximityChecking](/vext/ref/fb/supportedshootingproximitychecking) frostbite structure.
 
 ## Properties
+### {{% prop-heading "rayAboveGunHeightOffset" %}}
+> **float**
 
-| Name                    | Type   | Description |
-| ----------------------- | ------ | ----------- |
-| rayAboveGunHeightOffset | number |             |
-| rayAboveLength          | number |             |
-| rayBelowGunHeightOffset | number |             |
-| rayBelowLength          | number |             |
+### {{% prop-heading "rayAboveLength" %}}
+> **float**
+
+### {{% prop-heading "rayBelowGunHeightOffset" %}}
+> **float**
+
+### {{% prop-heading "rayBelowLength" %}}
+> **float**
 
 ## Methods
-
-| Type                                                                     | Name            | Parameters |
-| ------------------------------------------------------------------------ | --------------- | ---------- |
-| [SupportedShootingProximityChecking](/vext/ref/fb/supportedshootingproximitychecking/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [SupportedShootingProximityChecking](/vext/ref/fb/supportedshootingproximitychecking)
 
-> [SupportedShootingProximityChecking](/vext/ref/fb/supportedshootingproximitychecking/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[SupportedShootingProximityChecking](/vext/ref/fb/supportedshootingproximitychecking)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SupportedShootingProximityChecking](/vext/ref/fb/supportedshootingproximitychecking) type.
+

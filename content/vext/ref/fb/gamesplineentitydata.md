@@ -1,49 +1,124 @@
 ---
 title: GameSplineEntityData
 ---
-### Base Classes
 
-[GameEntityData](/vext/ref/fb/gameentitydata/)
+Inherits from 
+[GameEntityData](/vext/ref/fb/gameentitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[GameSplineEntityData](#constructor-0)**() |
+| **[GameSplineEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[GameSplineEntityData](#constructor-2)**(other: [GameEntityData](/vext/ref/fb/gameentitydata)) |
+| **[GameSplineEntityData](#constructor-3)**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata)) |
+| **[GameSplineEntityData](#constructor-4)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[GameSplineEntityData](#constructor-5)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[GameSplineEntityData](#constructor-6)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[GameSplineEntityData](#constructor-7)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "splineType" >}} | [GameSplineType](/vext/ref/fb/gamesplinetype) |
+| {{< prop "localPoints" >}} | [Vec3](/vext/ref/shared/class/vec3)[] |
+| {{< prop "normals" >}} | [Vec3](/vext/ref/shared/class/vec3)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "GameSplineEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### GameSplineEntityData {#constructor-0}
+> **GameSplineEntityData**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| GameSplineEntityData()                                                          | Create a new instance of this container type.                                                                                   |
-| GameSplineEntityData(GameSplineEntityData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| GameSplineEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [GameSplineEntityData](/vext/ref/fb/gamesplineentitydata/).                    |
-| GameSplineEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [GameSplineEntityData](/vext/ref/fb/gamesplineentitydata/).              |
-| GameSplineEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [GameSplineEntityData](/vext/ref/fb/gamesplineentitydata/).                            |
-| GameSplineEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [GameSplineEntityData](/vext/ref/fb/gamesplineentitydata/).                    |
-| GameSplineEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [GameSplineEntityData](/vext/ref/fb/gamesplineentitydata/).              |
-| GameSplineEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GameSplineEntityData](/vext/ref/fb/gamesplineentitydata/). |
+Creates a new [GameSplineEntityData](/vext/ref/fb/gamesplineentitydata) frostbite instance.
 
-## Properties
+### GameSplineEntityData {#constructor-1}
+> **GameSplineEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name        | Type                                  | Description |
-| ----------- | ------------------------------------- | ----------- |
-| splineType  | [GameSplineType](/vext/ref/fb/gamesplinetype/)      |             |
-| localPoints | [Vec3](/vext/ref/shared/class/vec3)\[\] |             |
-| normals     | [Vec3](/vext/ref/shared/class/vec3)\[\] |             |
-
-## Methods
-
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [GameSplineEntityData](/vext/ref/fb/gamesplineentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [GameSplineEntityData](/vext/ref/fb/gamesplineentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [GameSplineEntityData](/vext/ref/fb/gamesplineentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### GameSplineEntityData {#constructor-2}
+> **GameSplineEntityData**(other: [GameEntityData](/vext/ref/fb/gameentitydata))
+
+Casts an instance of type [GameEntityData](/vext/ref/fb/gameentitydata) to [GameSplineEntityData](/vext/ref/fb/gamesplineentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameEntityData](/vext/ref/fb/gameentitydata) | The instance to cast to [GameSplineEntityData](/vext/ref/fb/gamesplineentitydata). |
+
+### GameSplineEntityData {#constructor-3}
+> **GameSplineEntityData**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata))
+
+Casts an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata) to [GameSplineEntityData](/vext/ref/fb/gamesplineentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SpatialEntityData](/vext/ref/fb/spatialentitydata) | The instance to cast to [GameSplineEntityData](/vext/ref/fb/gamesplineentitydata). |
+
+### GameSplineEntityData {#constructor-4}
+> **GameSplineEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [GameSplineEntityData](/vext/ref/fb/gamesplineentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [GameSplineEntityData](/vext/ref/fb/gamesplineentitydata). |
+
+### GameSplineEntityData {#constructor-5}
+> **GameSplineEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [GameSplineEntityData](/vext/ref/fb/gamesplineentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [GameSplineEntityData](/vext/ref/fb/gamesplineentitydata). |
+
+### GameSplineEntityData {#constructor-6}
+> **GameSplineEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [GameSplineEntityData](/vext/ref/fb/gamesplineentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [GameSplineEntityData](/vext/ref/fb/gamesplineentitydata). |
+
+### GameSplineEntityData {#constructor-7}
+> **GameSplineEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GameSplineEntityData](/vext/ref/fb/gamesplineentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [GameSplineEntityData](/vext/ref/fb/gamesplineentitydata). |
+
+## Properties
+### {{% prop-heading "splineType" %}}
+> **[GameSplineType](/vext/ref/fb/gamesplinetype)**
+
+### {{% prop-heading "localPoints" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**[]
+
+### {{% prop-heading "normals" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [GameSplineEntityData](/vext/ref/fb/gamesplineentitydata) type.
+

@@ -1,37 +1,63 @@
 ---
 title: StaticConfigAsset
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[StaticConfigAsset](#constructor-0)**() |
+| **[StaticConfigAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[StaticConfigAsset](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[StaticConfigAsset](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "StaticConfigAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### StaticConfigAsset {#constructor-0}
+> **StaticConfigAsset**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| StaticConfigAsset()                                                          | Create a new instance of this container type.                                                                             |
-| StaticConfigAsset(StaticConfigAsset other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| StaticConfigAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [StaticConfigAsset](/vext/ref/fb/staticconfigasset/).                                      |
-| StaticConfigAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StaticConfigAsset](/vext/ref/fb/staticconfigasset/). |
+Creates a new [StaticConfigAsset](/vext/ref/fb/staticconfigasset) frostbite instance.
 
-## Methods
+### StaticConfigAsset {#constructor-1}
+> **StaticConfigAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [StaticConfigAsset](/vext/ref/fb/staticconfigasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [StaticConfigAsset](/vext/ref/fb/staticconfigasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [StaticConfigAsset](/vext/ref/fb/staticconfigasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### StaticConfigAsset {#constructor-2}
+> **StaticConfigAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [StaticConfigAsset](/vext/ref/fb/staticconfigasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [StaticConfigAsset](/vext/ref/fb/staticconfigasset). |
+
+### StaticConfigAsset {#constructor-3}
+> **StaticConfigAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StaticConfigAsset](/vext/ref/fb/staticconfigasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [StaticConfigAsset](/vext/ref/fb/staticconfigasset). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [StaticConfigAsset](/vext/ref/fb/staticconfigasset) type.
+

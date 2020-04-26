@@ -1,43 +1,72 @@
 ---
 title: TimingViewCategories
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[TimingViewCategories](#constructor-0)**() |
+| **[TimingViewCategories](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[TimingViewCategories](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[TimingViewCategories](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "timingCategories" >}} | [TimingViewCategory](/vext/ref/fb/timingviewcategory)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "TimingViewCategories" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### TimingViewCategories {#constructor-0}
+> **TimingViewCategories**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| TimingViewCategories()                                                          | Create a new instance of this container type.                                                                                   |
-| TimingViewCategories(TimingViewCategories other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| TimingViewCategories([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [TimingViewCategories](/vext/ref/fb/timingviewcategories/).                                      |
-| TimingViewCategories([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TimingViewCategories](/vext/ref/fb/timingviewcategories/). |
+Creates a new [TimingViewCategories](/vext/ref/fb/timingviewcategories) frostbite instance.
 
-## Properties
+### TimingViewCategories {#constructor-1}
+> **TimingViewCategories**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name             | Type                                         | Description |
-| ---------------- | -------------------------------------------- | ----------- |
-| timingCategories | [TimingViewCategory](/vext/ref/fb/timingviewcategory/)\[\] |             |
-
-## Methods
-
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [TimingViewCategories](/vext/ref/fb/timingviewcategories/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [TimingViewCategories](/vext/ref/fb/timingviewcategories/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [TimingViewCategories](/vext/ref/fb/timingviewcategories) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### TimingViewCategories {#constructor-2}
+> **TimingViewCategories**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [TimingViewCategories](/vext/ref/fb/timingviewcategories). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [TimingViewCategories](/vext/ref/fb/timingviewcategories). |
+
+### TimingViewCategories {#constructor-3}
+> **TimingViewCategories**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TimingViewCategories](/vext/ref/fb/timingviewcategories). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [TimingViewCategories](/vext/ref/fb/timingviewcategories). |
+
+## Properties
+### {{% prop-heading "timingCategories" %}}
+> **[TimingViewCategory](/vext/ref/fb/timingviewcategory)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [TimingViewCategories](/vext/ref/fb/timingviewcategories) type.
+

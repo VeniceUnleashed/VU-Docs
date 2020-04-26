@@ -1,14 +1,11 @@
 ---
 title: ModelAnimationTransformType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ModelAnimationTransformType_World** | Value: **0** |
+| **ModelAnimationTransformType_Model** | Value: **1** |
+| **ModelAnimationTransformType_Local** | Value: **2** |
 
-| Name                               | Value | Description |
-| ---------------------------------- | ----- | ----------- |
-| ModelAnimationTransformType\_World | 0     |             |
-| ModelAnimationTransformType\_Model | 1     |             |
-| ModelAnimationTransformType\_Local | 2     |             |

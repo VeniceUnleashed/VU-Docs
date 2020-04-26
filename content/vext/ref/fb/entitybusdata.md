@@ -1,49 +1,103 @@
 ---
 title: EntityBusData
 ---
-### Base Classes
 
-[DataBusData](/vext/ref/fb/databusdata/)
+Inherits from 
+[DataBusData](/vext/ref/fb/databusdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[EntityBusData](#constructor-0)**() |
+| **[EntityBusData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[EntityBusData](#constructor-2)**(other: [DataBusData](/vext/ref/fb/databusdata)) |
+| **[EntityBusData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[EntityBusData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "eventConnections" >}} | [EventConnection](/vext/ref/fb/eventconnection)[] |
+| {{< prop "descriptor" >}} | [InterfaceDescriptorData](/vext/ref/fb/interfacedescriptordata) \| nil |
+| {{< prop "needNetworkId" >}} | bool |
+| {{< prop "interfaceHasConnections" >}} | bool |
+| {{< prop "alwaysCreateEntityBusClient" >}} | bool |
+| {{< prop "alwaysCreateEntityBusServer" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "EntityBusData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### EntityBusData {#constructor-0}
+> **EntityBusData**()
 
-| Constructor                                                              | Description                                                                                                       |
-| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| EntityBusData()                                                          | Create a new instance of this container type.                                                                     |
-| EntityBusData(EntityBusData other)                                       | Create a reference copy of an instance of the same type.                                                          |
-| EntityBusData([DataBusData](/vext/ref/fb/databusdata/) other)                          | Upcast an instance of type [DataBusData](/vext/ref/fb/databusdata/) to [EntityBusData](/vext/ref/fb/entitybusdata/).                          |
-| EntityBusData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [EntityBusData](/vext/ref/fb/entitybusdata/).                                      |
-| EntityBusData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EntityBusData](/vext/ref/fb/entitybusdata/). |
+Creates a new [EntityBusData](/vext/ref/fb/entitybusdata) frostbite instance.
 
-## Properties
+### EntityBusData {#constructor-1}
+> **EntityBusData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                        | Type                                               | Description |
-| --------------------------- | -------------------------------------------------- | ----------- |
-| eventConnections            | [EventConnection](/vext/ref/fb/eventconnection/)\[\]             |             |
-| descriptor                  | [InterfaceDescriptorData](/vext/ref/fb/interfacedescriptordata/) |             |
-| needNetworkId               | bool                                               |             |
-| interfaceHasConnections     | bool                                               |             |
-| alwaysCreateEntityBusClient | bool                                               |             |
-| alwaysCreateEntityBusServer | bool                                               |             |
-
-## Methods
-
-| Type                           | Name            | Parameters                                     |
-| ------------------------------ | --------------- | ---------------------------------------------- |
-| [EntityBusData](/vext/ref/fb/entitybusdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [EntityBusData](/vext/ref/fb/entitybusdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [EntityBusData](/vext/ref/fb/entitybusdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### EntityBusData {#constructor-2}
+> **EntityBusData**(other: [DataBusData](/vext/ref/fb/databusdata))
+
+Casts an instance of type [DataBusData](/vext/ref/fb/databusdata) to [EntityBusData](/vext/ref/fb/entitybusdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataBusData](/vext/ref/fb/databusdata) | The instance to cast to [EntityBusData](/vext/ref/fb/entitybusdata). |
+
+### EntityBusData {#constructor-3}
+> **EntityBusData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [EntityBusData](/vext/ref/fb/entitybusdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [EntityBusData](/vext/ref/fb/entitybusdata). |
+
+### EntityBusData {#constructor-4}
+> **EntityBusData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EntityBusData](/vext/ref/fb/entitybusdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [EntityBusData](/vext/ref/fb/entitybusdata). |
+
+## Properties
+### {{% prop-heading "eventConnections" %}}
+> **[EventConnection](/vext/ref/fb/eventconnection)**[]
+
+### {{% prop-heading "descriptor" %}}
+> **[InterfaceDescriptorData](/vext/ref/fb/interfacedescriptordata)** | **nil**
+
+### {{% prop-heading "needNetworkId" %}}
+> **bool**
+
+### {{% prop-heading "interfaceHasConnections" %}}
+> **bool**
+
+### {{% prop-heading "alwaysCreateEntityBusClient" %}}
+> **bool**
+
+### {{% prop-heading "alwaysCreateEntityBusServer" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [EntityBusData](/vext/ref/fb/entitybusdata) type.
+

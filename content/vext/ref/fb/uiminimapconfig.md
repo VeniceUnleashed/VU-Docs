@@ -1,39 +1,85 @@
 ---
 title: UIMinimapConfig
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIMinimapConfig](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "combatAreaCameraDelay" >}} | float |
+| {{< prop "cameraInterpolationTime" >}} | float |
+| {{< prop "combatAreaFadeSpeed" >}} | float |
+| {{< prop "zoomStates" >}} | [UIMinimapZoomConfig](/vext/ref/fb/uiminimapzoomconfig)[] |
+| {{< prop "cameraPanSensitivity" >}} | float |
+| {{< prop "minVelocity" >}} | float |
+| {{< prop "maxVelocity" >}} | float |
+| {{< prop "velocityModifier" >}} | float |
+| {{< prop "disableDefaultState" >}} | bool |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [UIMinimapConfig](/vext/ref/fb/uiminimapconfig) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIMinimapConfig" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIMinimapConfig {#constructor-0}
+> **UIMinimapConfig**()
 
-| Constructor                            | Description                                              |
-| -------------------------------------- | -------------------------------------------------------- |
-| UIMinimapConfig()                      | Create a new instance of this structure type.            |
-| UIMinimapConfig(UIMinimapConfig other) | Create a reference copy of a structure of the same type. |
+Creates a new [UIMinimapConfig](/vext/ref/fb/uiminimapconfig) frostbite structure.
 
 ## Properties
+### {{% prop-heading "combatAreaCameraDelay" %}}
+> **float**
 
-| Name                    | Type                                           | Description |
-| ----------------------- | ---------------------------------------------- | ----------- |
-| combatAreaCameraDelay   | number                                         |             |
-| cameraInterpolationTime | number                                         |             |
-| combatAreaFadeSpeed     | number                                         |             |
-| zoomStates              | [UIMinimapZoomConfig](/vext/ref/fb/uiminimapzoomconfig/)\[\] |             |
-| cameraPanSensitivity    | number                                         |             |
-| minVelocity             | number                                         |             |
-| maxVelocity             | number                                         |             |
-| velocityModifier        | number                                         |             |
-| disableDefaultState     | bool                                           |             |
+### {{% prop-heading "cameraInterpolationTime" %}}
+> **float**
+
+### {{% prop-heading "combatAreaFadeSpeed" %}}
+> **float**
+
+### {{% prop-heading "zoomStates" %}}
+> **[UIMinimapZoomConfig](/vext/ref/fb/uiminimapzoomconfig)**[]
+
+### {{% prop-heading "cameraPanSensitivity" %}}
+> **float**
+
+### {{% prop-heading "minVelocity" %}}
+> **float**
+
+### {{% prop-heading "maxVelocity" %}}
+> **float**
+
+### {{% prop-heading "velocityModifier" %}}
+> **float**
+
+### {{% prop-heading "disableDefaultState" %}}
+> **bool**
 
 ## Methods
-
-| Type                               | Name            | Parameters |
-| ---------------------------------- | --------------- | ---------- |
-| [UIMinimapConfig](/vext/ref/fb/uiminimapconfig/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [UIMinimapConfig](/vext/ref/fb/uiminimapconfig)
 
-> [UIMinimapConfig](/vext/ref/fb/uiminimapconfig/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[UIMinimapConfig](/vext/ref/fb/uiminimapconfig)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIMinimapConfig](/vext/ref/fb/uiminimapconfig) type.
+

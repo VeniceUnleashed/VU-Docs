@@ -1,46 +1,98 @@
 ---
 title: SyncedTransformEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SyncedTransformEntityData](#constructor-0)**() |
+| **[SyncedTransformEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SyncedTransformEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[SyncedTransformEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[SyncedTransformEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[SyncedTransformEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "inValue" >}} | [LinearTransform](/vext/ref/shared/class/lineartransform) |
+| {{< prop "interpolate" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SyncedTransformEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SyncedTransformEntityData {#constructor-0}
+> **SyncedTransformEntityData**()
 
-| Constructor                                                                          | Description                                                                                                                               |
-| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| SyncedTransformEntityData()                                                          | Create a new instance of this container type.                                                                                             |
-| SyncedTransformEntityData(SyncedTransformEntityData other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| SyncedTransformEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [SyncedTransformEntityData](/vext/ref/fb/syncedtransformentitydata/).                            |
-| SyncedTransformEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [SyncedTransformEntityData](/vext/ref/fb/syncedtransformentitydata/).                    |
-| SyncedTransformEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [SyncedTransformEntityData](/vext/ref/fb/syncedtransformentitydata/).              |
-| SyncedTransformEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SyncedTransformEntityData](/vext/ref/fb/syncedtransformentitydata/). |
+Creates a new [SyncedTransformEntityData](/vext/ref/fb/syncedtransformentitydata) frostbite instance.
 
-## Properties
+### SyncedTransformEntityData {#constructor-1}
+> **SyncedTransformEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name        | Type                                                    | Description |
-| ----------- | ------------------------------------------------------- | ----------- |
-| inValue     | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
-| interpolate | bool                                                    |             |
-
-## Methods
-
-| Type                                                   | Name            | Parameters                                     |
-| ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [SyncedTransformEntityData](/vext/ref/fb/syncedtransformentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SyncedTransformEntityData](/vext/ref/fb/syncedtransformentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SyncedTransformEntityData](/vext/ref/fb/syncedtransformentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SyncedTransformEntityData {#constructor-2}
+> **SyncedTransformEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [SyncedTransformEntityData](/vext/ref/fb/syncedtransformentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [SyncedTransformEntityData](/vext/ref/fb/syncedtransformentitydata). |
+
+### SyncedTransformEntityData {#constructor-3}
+> **SyncedTransformEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [SyncedTransformEntityData](/vext/ref/fb/syncedtransformentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [SyncedTransformEntityData](/vext/ref/fb/syncedtransformentitydata). |
+
+### SyncedTransformEntityData {#constructor-4}
+> **SyncedTransformEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [SyncedTransformEntityData](/vext/ref/fb/syncedtransformentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [SyncedTransformEntityData](/vext/ref/fb/syncedtransformentitydata). |
+
+### SyncedTransformEntityData {#constructor-5}
+> **SyncedTransformEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SyncedTransformEntityData](/vext/ref/fb/syncedtransformentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SyncedTransformEntityData](/vext/ref/fb/syncedtransformentitydata). |
+
+## Properties
+### {{% prop-heading "inValue" %}}
+> **[LinearTransform](/vext/ref/shared/class/lineartransform)**
+
+### {{% prop-heading "interpolate" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SyncedTransformEntityData](/vext/ref/fb/syncedtransformentitydata) type.
+

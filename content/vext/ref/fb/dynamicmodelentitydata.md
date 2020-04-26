@@ -1,51 +1,146 @@
 ---
 title: DynamicModelEntityData
 ---
-### Base Classes
 
-[DynamicGamePhysicsEntityData](/vext/ref/fb/dynamicgamephysicsentitydata/)
+Inherits from 
+[DynamicGamePhysicsEntityData](/vext/ref/fb/dynamicgamephysicsentitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[DynamicModelEntityData](#constructor-0)**() |
+| **[DynamicModelEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[DynamicModelEntityData](#constructor-2)**(other: [DynamicGamePhysicsEntityData](/vext/ref/fb/dynamicgamephysicsentitydata)) |
+| **[DynamicModelEntityData](#constructor-3)**(other: [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata)) |
+| **[DynamicModelEntityData](#constructor-4)**(other: [GameEntityData](/vext/ref/fb/gameentitydata)) |
+| **[DynamicModelEntityData](#constructor-5)**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata)) |
+| **[DynamicModelEntityData](#constructor-6)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[DynamicModelEntityData](#constructor-7)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[DynamicModelEntityData](#constructor-8)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[DynamicModelEntityData](#constructor-9)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "part" >}} | [PartComponentData](/vext/ref/fb/partcomponentdata) \| nil |
+| {{< prop "mesh" >}} | [MeshAsset](/vext/ref/fb/meshasset) \| nil |
+| {{< prop "noCollision" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "DynamicModelEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### DynamicModelEntityData {#constructor-0}
+> **DynamicModelEntityData**()
 
-| Constructor                                                                                | Description                                                                                                                                  |
-| ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| DynamicModelEntityData()                                                                   | Create a new instance of this container type.                                                                                                |
-| DynamicModelEntityData(DynamicModelEntityData other)                                       | Create a reference copy of an instance of the same type.                                                                                     |
-| DynamicModelEntityData([DynamicGamePhysicsEntityData](/vext/ref/fb/dynamicgamephysicsentitydata/) other) | Upcast an instance of type [DynamicGamePhysicsEntityData](/vext/ref/fb/dynamicgamephysicsentitydata/) to [DynamicModelEntityData](/vext/ref/fb/dynamicmodelentitydata/). |
-| DynamicModelEntityData([GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata/) other)               | Upcast an instance of type [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata/) to [DynamicModelEntityData](/vext/ref/fb/dynamicmodelentitydata/).               |
-| DynamicModelEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                             | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [DynamicModelEntityData](/vext/ref/fb/dynamicmodelentitydata/).                             |
-| DynamicModelEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)                       | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [DynamicModelEntityData](/vext/ref/fb/dynamicmodelentitydata/).                       |
-| DynamicModelEntityData([EntityData](/vext/ref/fb/entitydata/) other)                                     | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [DynamicModelEntityData](/vext/ref/fb/dynamicmodelentitydata/).                                     |
-| DynamicModelEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                             | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [DynamicModelEntityData](/vext/ref/fb/dynamicmodelentitydata/).                             |
-| DynamicModelEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)                       | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [DynamicModelEntityData](/vext/ref/fb/dynamicmodelentitydata/).                       |
-| DynamicModelEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other)          | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DynamicModelEntityData](/vext/ref/fb/dynamicmodelentitydata/).          |
+Creates a new [DynamicModelEntityData](/vext/ref/fb/dynamicmodelentitydata) frostbite instance.
 
-## Properties
+### DynamicModelEntityData {#constructor-1}
+> **DynamicModelEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name        | Type                                   | Description |
-| ----------- | -------------------------------------- | ----------- |
-| part        | [PartComponentData](/vext/ref/fb/partcomponentdata/) |             |
-| mesh        | [MeshAsset](/vext/ref/fb/meshasset/)                 |             |
-| noCollision | bool                                   |             |
-
-## Methods
-
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [DynamicModelEntityData](/vext/ref/fb/dynamicmodelentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [DynamicModelEntityData](/vext/ref/fb/dynamicmodelentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [DynamicModelEntityData](/vext/ref/fb/dynamicmodelentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### DynamicModelEntityData {#constructor-2}
+> **DynamicModelEntityData**(other: [DynamicGamePhysicsEntityData](/vext/ref/fb/dynamicgamephysicsentitydata))
+
+Casts an instance of type [DynamicGamePhysicsEntityData](/vext/ref/fb/dynamicgamephysicsentitydata) to [DynamicModelEntityData](/vext/ref/fb/dynamicmodelentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DynamicGamePhysicsEntityData](/vext/ref/fb/dynamicgamephysicsentitydata) | The instance to cast to [DynamicModelEntityData](/vext/ref/fb/dynamicmodelentitydata). |
+
+### DynamicModelEntityData {#constructor-3}
+> **DynamicModelEntityData**(other: [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata))
+
+Casts an instance of type [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata) to [DynamicModelEntityData](/vext/ref/fb/dynamicmodelentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata) | The instance to cast to [DynamicModelEntityData](/vext/ref/fb/dynamicmodelentitydata). |
+
+### DynamicModelEntityData {#constructor-4}
+> **DynamicModelEntityData**(other: [GameEntityData](/vext/ref/fb/gameentitydata))
+
+Casts an instance of type [GameEntityData](/vext/ref/fb/gameentitydata) to [DynamicModelEntityData](/vext/ref/fb/dynamicmodelentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameEntityData](/vext/ref/fb/gameentitydata) | The instance to cast to [DynamicModelEntityData](/vext/ref/fb/dynamicmodelentitydata). |
+
+### DynamicModelEntityData {#constructor-5}
+> **DynamicModelEntityData**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata))
+
+Casts an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata) to [DynamicModelEntityData](/vext/ref/fb/dynamicmodelentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SpatialEntityData](/vext/ref/fb/spatialentitydata) | The instance to cast to [DynamicModelEntityData](/vext/ref/fb/dynamicmodelentitydata). |
+
+### DynamicModelEntityData {#constructor-6}
+> **DynamicModelEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [DynamicModelEntityData](/vext/ref/fb/dynamicmodelentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [DynamicModelEntityData](/vext/ref/fb/dynamicmodelentitydata). |
+
+### DynamicModelEntityData {#constructor-7}
+> **DynamicModelEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [DynamicModelEntityData](/vext/ref/fb/dynamicmodelentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [DynamicModelEntityData](/vext/ref/fb/dynamicmodelentitydata). |
+
+### DynamicModelEntityData {#constructor-8}
+> **DynamicModelEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [DynamicModelEntityData](/vext/ref/fb/dynamicmodelentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [DynamicModelEntityData](/vext/ref/fb/dynamicmodelentitydata). |
+
+### DynamicModelEntityData {#constructor-9}
+> **DynamicModelEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DynamicModelEntityData](/vext/ref/fb/dynamicmodelentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DynamicModelEntityData](/vext/ref/fb/dynamicmodelentitydata). |
+
+## Properties
+### {{% prop-heading "part" %}}
+> **[PartComponentData](/vext/ref/fb/partcomponentdata)** | **nil**
+
+### {{% prop-heading "mesh" %}}
+> **[MeshAsset](/vext/ref/fb/meshasset)** | **nil**
+
+### {{% prop-heading "noCollision" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [DynamicModelEntityData](/vext/ref/fb/dynamicmodelentitydata) type.
+

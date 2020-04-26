@@ -1,42 +1,61 @@
 ---
 title: BFServerConfiguration
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[BFServerConfiguration](#constructor-0)**() |
+| **[BFServerConfiguration](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[BFServerConfiguration](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "schedules" >}} | [BFServerConfigurationSchedule](/vext/ref/fb/bfserverconfigurationschedule)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "BFServerConfiguration" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### BFServerConfiguration {#constructor-0}
+> **BFServerConfiguration**()
 
-| Constructor                                                                      | Description                                                                                                                       |
-| -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| BFServerConfiguration()                                                          | Create a new instance of this container type.                                                                                     |
-| BFServerConfiguration(BFServerConfiguration other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| BFServerConfiguration([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BFServerConfiguration](/vext/ref/fb/bfserverconfiguration/). |
+Creates a new [BFServerConfiguration](/vext/ref/fb/bfserverconfiguration) frostbite instance.
 
-## Properties
+### BFServerConfiguration {#constructor-1}
+> **BFServerConfiguration**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name      | Type                                                               | Description |
-| --------- | ------------------------------------------------------------------ | ----------- |
-| schedules | [BFServerConfigurationSchedule](/vext/ref/fb/bfserverconfigurationschedule/)\[\] |             |
-
-## Methods
-
-| Type                                           | Name            | Parameters                                     |
-| ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [BFServerConfiguration](/vext/ref/fb/bfserverconfiguration/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [BFServerConfiguration](/vext/ref/fb/bfserverconfiguration/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [BFServerConfiguration](/vext/ref/fb/bfserverconfiguration) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### BFServerConfiguration {#constructor-2}
+> **BFServerConfiguration**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BFServerConfiguration](/vext/ref/fb/bfserverconfiguration). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [BFServerConfiguration](/vext/ref/fb/bfserverconfiguration). |
+
+## Properties
+### {{% prop-heading "schedules" %}}
+> **[BFServerConfigurationSchedule](/vext/ref/fb/bfserverconfigurationschedule)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [BFServerConfiguration](/vext/ref/fb/bfserverconfiguration) type.
+

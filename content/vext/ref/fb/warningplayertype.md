@@ -1,13 +1,10 @@
 ---
 title: WarningPlayerType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **WPTInflictor** | Value: **0** |
+| **WPTVictim** | Value: **1** |
 
-| Name         | Value | Description |
-| ------------ | ----- | ----------- |
-| WPTInflictor | 0     |             |
-| WPTVictim    | 1     |             |

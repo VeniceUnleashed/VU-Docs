@@ -1,20 +1,17 @@
 ---
 title: ShaderParameterType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ShaderParameterType_Bool** | Value: **0** |
+| **ShaderParameterType_Int** | Value: **1** |
+| **ShaderParameterType_Scalar** | Value: **2** |
+| **ShaderParameterType_Vec2** | Value: **3** |
+| **ShaderParameterType_Vec3** | Value: **4** |
+| **ShaderParameterType_Vec4** | Value: **5** |
+| **ShaderParameterType_Color** | Value: **6** |
+| **ShaderParameterType_TextureSlice** | Value: **7** |
+| **ShaderParameterTypeCount** | Value: **8** |
 
-| Name                              | Value | Description |
-| --------------------------------- | ----- | ----------- |
-| ShaderParameterType\_Bool         | 0     |             |
-| ShaderParameterType\_Int          | 1     |             |
-| ShaderParameterType\_Scalar       | 2     |             |
-| ShaderParameterType\_Vec2         | 3     |             |
-| ShaderParameterType\_Vec3         | 4     |             |
-| ShaderParameterType\_Vec4         | 5     |             |
-| ShaderParameterType\_Color        | 6     |             |
-| ShaderParameterType\_TextureSlice | 7     |             |
-| ShaderParameterTypeCount          | 8     |             |

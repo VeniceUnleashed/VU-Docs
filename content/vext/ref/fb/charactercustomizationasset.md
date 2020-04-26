@@ -1,47 +1,88 @@
 ---
 title: CharacterCustomizationAsset
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[CharacterCustomizationAsset](#constructor-0)**() |
+| **[CharacterCustomizationAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[CharacterCustomizationAsset](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[CharacterCustomizationAsset](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "labelSid" >}} | string |
+| {{< prop "uiHudIcon" >}} | [UIHudIcon](/vext/ref/fb/uihudicon) |
+| {{< prop "voiceOverLabels" >}} | [VoiceOverLabel](/vext/ref/fb/voiceoverlabel)[] |
+| {{< prop "visualTable" >}} | [CustomizationTable](/vext/ref/fb/customizationtable) \| nil |
+| {{< prop "specializationTable" >}} | [CustomizationTable](/vext/ref/fb/customizationtable) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "CharacterCustomizationAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### CharacterCustomizationAsset {#constructor-0}
+> **CharacterCustomizationAsset**()
 
-| Constructor                                                                            | Description                                                                                                                                   |
-| -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| CharacterCustomizationAsset()                                                          | Create a new instance of this container type.                                                                                                 |
-| CharacterCustomizationAsset(CharacterCustomizationAsset other)                         | Create a reference copy of an instance of the same type.                                                                                      |
-| CharacterCustomizationAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [CharacterCustomizationAsset](/vext/ref/fb/charactercustomizationasset/).                                      |
-| CharacterCustomizationAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CharacterCustomizationAsset](/vext/ref/fb/charactercustomizationasset/). |
+Creates a new [CharacterCustomizationAsset](/vext/ref/fb/charactercustomizationasset) frostbite instance.
 
-## Properties
+### CharacterCustomizationAsset {#constructor-1}
+> **CharacterCustomizationAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                | Type                                     | Description |
-| ------------------- | ---------------------------------------- | ----------- |
-| labelSid            | string                                   |             |
-| uiHudIcon           | [UIHudIcon](/vext/ref/fb/uihudicon/)                   |             |
-| voiceOverLabels     | [VoiceOverLabel](/vext/ref/fb/voiceoverlabel/)\[\]     |             |
-| visualTable         | [CustomizationTable](/vext/ref/fb/customizationtable/) |             |
-| specializationTable | [CustomizationTable](/vext/ref/fb/customizationtable/) |             |
-
-## Methods
-
-| Type                                                       | Name            | Parameters                                     |
-| ---------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [CharacterCustomizationAsset](/vext/ref/fb/charactercustomizationasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [CharacterCustomizationAsset](/vext/ref/fb/charactercustomizationasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [CharacterCustomizationAsset](/vext/ref/fb/charactercustomizationasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### CharacterCustomizationAsset {#constructor-2}
+> **CharacterCustomizationAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [CharacterCustomizationAsset](/vext/ref/fb/charactercustomizationasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [CharacterCustomizationAsset](/vext/ref/fb/charactercustomizationasset). |
+
+### CharacterCustomizationAsset {#constructor-3}
+> **CharacterCustomizationAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CharacterCustomizationAsset](/vext/ref/fb/charactercustomizationasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [CharacterCustomizationAsset](/vext/ref/fb/charactercustomizationasset). |
+
+## Properties
+### {{% prop-heading "labelSid" %}}
+> **string**
+
+### {{% prop-heading "uiHudIcon" %}}
+> **[UIHudIcon](/vext/ref/fb/uihudicon)**
+
+### {{% prop-heading "voiceOverLabels" %}}
+> **[VoiceOverLabel](/vext/ref/fb/voiceoverlabel)**[]
+
+### {{% prop-heading "visualTable" %}}
+> **[CustomizationTable](/vext/ref/fb/customizationtable)** | **nil**
+
+### {{% prop-heading "specializationTable" %}}
+> **[CustomizationTable](/vext/ref/fb/customizationtable)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [CharacterCustomizationAsset](/vext/ref/fb/charactercustomizationasset) type.
+

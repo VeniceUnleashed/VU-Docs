@@ -1,46 +1,91 @@
 ---
 title: UIWeaponCompData
 ---
-### Base Classes
 
-[UIComponentData](/vext/ref/fb/uicomponentdata/)
+Inherits from 
+[UIComponentData](/vext/ref/fb/uicomponentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIWeaponCompData](#constructor-0)**() |
+| **[UIWeaponCompData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UIWeaponCompData](#constructor-2)**(other: [UIComponentData](/vext/ref/fb/uicomponentdata)) |
+| **[UIWeaponCompData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[UIWeaponCompData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "minHitIndicatorLimit" >}} | float |
+| {{< prop "maxHitIndicatorLimit" >}} | float |
+| {{< prop "normalHitIndicatorLimit" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIWeaponCompData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIWeaponCompData {#constructor-0}
+> **UIWeaponCompData**()
 
-| Constructor                                                                 | Description                                                                                                             |
-| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| UIWeaponCompData()                                                          | Create a new instance of this container type.                                                                           |
-| UIWeaponCompData(UIWeaponCompData other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| UIWeaponCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UIWeaponCompData](/vext/ref/fb/uiweaponcompdata/).                  |
-| UIWeaponCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UIWeaponCompData](/vext/ref/fb/uiweaponcompdata/).                                      |
-| UIWeaponCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIWeaponCompData](/vext/ref/fb/uiweaponcompdata/). |
+Creates a new [UIWeaponCompData](/vext/ref/fb/uiweaponcompdata) frostbite instance.
 
-## Properties
+### UIWeaponCompData {#constructor-1}
+> **UIWeaponCompData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                    | Type   | Description |
-| ----------------------- | ------ | ----------- |
-| minHitIndicatorLimit    | number |             |
-| maxHitIndicatorLimit    | number |             |
-| normalHitIndicatorLimit | number |             |
-
-## Methods
-
-| Type                                 | Name            | Parameters                                     |
-| ------------------------------------ | --------------- | ---------------------------------------------- |
-| [UIWeaponCompData](/vext/ref/fb/uiweaponcompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UIWeaponCompData](/vext/ref/fb/uiweaponcompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UIWeaponCompData](/vext/ref/fb/uiweaponcompdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UIWeaponCompData {#constructor-2}
+> **UIWeaponCompData**(other: [UIComponentData](/vext/ref/fb/uicomponentdata))
+
+Casts an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata) to [UIWeaponCompData](/vext/ref/fb/uiweaponcompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIComponentData](/vext/ref/fb/uicomponentdata) | The instance to cast to [UIWeaponCompData](/vext/ref/fb/uiweaponcompdata). |
+
+### UIWeaponCompData {#constructor-3}
+> **UIWeaponCompData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [UIWeaponCompData](/vext/ref/fb/uiweaponcompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [UIWeaponCompData](/vext/ref/fb/uiweaponcompdata). |
+
+### UIWeaponCompData {#constructor-4}
+> **UIWeaponCompData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIWeaponCompData](/vext/ref/fb/uiweaponcompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UIWeaponCompData](/vext/ref/fb/uiweaponcompdata). |
+
+## Properties
+### {{% prop-heading "minHitIndicatorLimit" %}}
+> **float**
+
+### {{% prop-heading "maxHitIndicatorLimit" %}}
+> **float**
+
+### {{% prop-heading "normalHitIndicatorLimit" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIWeaponCompData](/vext/ref/fb/uiweaponcompdata) type.
+

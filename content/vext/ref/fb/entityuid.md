@@ -1,31 +1,53 @@
 ---
 title: EntityUid
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[EntityUid](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "id" >}} | int |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [EntityUid](/vext/ref/fb/entityuid) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "EntityUid" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### EntityUid {#constructor-0}
+> **EntityUid**()
 
-| Constructor                | Description                                              |
-| -------------------------- | -------------------------------------------------------- |
-| EntityUid()                | Create a new instance of this structure type.            |
-| EntityUid(EntityUid other) | Create a reference copy of a structure of the same type. |
+Creates a new [EntityUid](/vext/ref/fb/entityuid) frostbite structure.
 
 ## Properties
-
-| Name | Type   | Description |
-| ---- | ------ | ----------- |
-| id   | number |             |
+### {{% prop-heading "id" %}}
+> **int**
 
 ## Methods
-
-| Type                   | Name            | Parameters |
-| ---------------------- | --------------- | ---------- |
-| [EntityUid](/vext/ref/fb/entityuid/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [EntityUid](/vext/ref/fb/entityuid)
 
-> [EntityUid](/vext/ref/fb/entityuid/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[EntityUid](/vext/ref/fb/entityuid)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [EntityUid](/vext/ref/fb/entityuid) type.
+

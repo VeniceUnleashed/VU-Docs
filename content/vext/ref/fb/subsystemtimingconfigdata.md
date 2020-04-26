@@ -1,36 +1,73 @@
 ---
 title: SubsystemTimingConfigData
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SubsystemTimingConfigData](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "sensing" >}} | float |
+| {{< prop "evaluation" >}} | float |
+| {{< prop "goalUpdates" >}} | float |
+| {{< prop "intentUpdates" >}} | float |
+| {{< prop "behaviourSelection" >}} | float |
+| {{< prop "behaviourExecution" >}} | float |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [SubsystemTimingConfigData](/vext/ref/fb/subsystemtimingconfigdata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SubsystemTimingConfigData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SubsystemTimingConfigData {#constructor-0}
+> **SubsystemTimingConfigData**()
 
-| Constructor                                                | Description                                              |
-| ---------------------------------------------------------- | -------------------------------------------------------- |
-| SubsystemTimingConfigData()                                | Create a new instance of this structure type.            |
-| SubsystemTimingConfigData(SubsystemTimingConfigData other) | Create a reference copy of a structure of the same type. |
+Creates a new [SubsystemTimingConfigData](/vext/ref/fb/subsystemtimingconfigdata) frostbite structure.
 
 ## Properties
+### {{% prop-heading "sensing" %}}
+> **float**
 
-| Name               | Type   | Description |
-| ------------------ | ------ | ----------- |
-| sensing            | number |             |
-| evaluation         | number |             |
-| goalUpdates        | number |             |
-| intentUpdates      | number |             |
-| behaviourSelection | number |             |
-| behaviourExecution | number |             |
+### {{% prop-heading "evaluation" %}}
+> **float**
+
+### {{% prop-heading "goalUpdates" %}}
+> **float**
+
+### {{% prop-heading "intentUpdates" %}}
+> **float**
+
+### {{% prop-heading "behaviourSelection" %}}
+> **float**
+
+### {{% prop-heading "behaviourExecution" %}}
+> **float**
 
 ## Methods
-
-| Type                                                   | Name            | Parameters |
-| ------------------------------------------------------ | --------------- | ---------- |
-| [SubsystemTimingConfigData](/vext/ref/fb/subsystemtimingconfigdata/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [SubsystemTimingConfigData](/vext/ref/fb/subsystemtimingconfigdata)
 
-> [SubsystemTimingConfigData](/vext/ref/fb/subsystemtimingconfigdata/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[SubsystemTimingConfigData](/vext/ref/fb/subsystemtimingconfigdata)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SubsystemTimingConfigData](/vext/ref/fb/subsystemtimingconfigdata) type.
+

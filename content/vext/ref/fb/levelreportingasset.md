@@ -1,43 +1,72 @@
 ---
 title: LevelReportingAsset
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[LevelReportingAsset](#constructor-0)**() |
+| **[LevelReportingAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[LevelReportingAsset](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[LevelReportingAsset](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "builtLevels" >}} | [LevelDescriptionAsset](/vext/ref/fb/leveldescriptionasset)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "LevelReportingAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### LevelReportingAsset {#constructor-0}
+> **LevelReportingAsset**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| LevelReportingAsset()                                                          | Create a new instance of this container type.                                                                                 |
-| LevelReportingAsset(LevelReportingAsset other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| LevelReportingAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [LevelReportingAsset](/vext/ref/fb/levelreportingasset/).                                      |
-| LevelReportingAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LevelReportingAsset](/vext/ref/fb/levelreportingasset/). |
+Creates a new [LevelReportingAsset](/vext/ref/fb/levelreportingasset) frostbite instance.
 
-## Properties
+### LevelReportingAsset {#constructor-1}
+> **LevelReportingAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name        | Type                                               | Description |
-| ----------- | -------------------------------------------------- | ----------- |
-| builtLevels | [LevelDescriptionAsset](/vext/ref/fb/leveldescriptionasset/)\[\] |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [LevelReportingAsset](/vext/ref/fb/levelreportingasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [LevelReportingAsset](/vext/ref/fb/levelreportingasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [LevelReportingAsset](/vext/ref/fb/levelreportingasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### LevelReportingAsset {#constructor-2}
+> **LevelReportingAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [LevelReportingAsset](/vext/ref/fb/levelreportingasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [LevelReportingAsset](/vext/ref/fb/levelreportingasset). |
+
+### LevelReportingAsset {#constructor-3}
+> **LevelReportingAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LevelReportingAsset](/vext/ref/fb/levelreportingasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [LevelReportingAsset](/vext/ref/fb/levelreportingasset). |
+
+## Properties
+### {{% prop-heading "builtLevels" %}}
+> **[LevelDescriptionAsset](/vext/ref/fb/leveldescriptionasset)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [LevelReportingAsset](/vext/ref/fb/levelreportingasset) type.
+

@@ -1,33 +1,61 @@
 ---
 title: MatchmakingGameAttribute
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MatchmakingGameAttribute](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "attribute" >}} | string |
+| {{< prop "value" >}} | string |
+| {{< prop "override" >}} | bool |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [MatchmakingGameAttribute](/vext/ref/fb/matchmakinggameattribute) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MatchmakingGameAttribute" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MatchmakingGameAttribute {#constructor-0}
+> **MatchmakingGameAttribute**()
 
-| Constructor                                              | Description                                              |
-| -------------------------------------------------------- | -------------------------------------------------------- |
-| MatchmakingGameAttribute()                               | Create a new instance of this structure type.            |
-| MatchmakingGameAttribute(MatchmakingGameAttribute other) | Create a reference copy of a structure of the same type. |
+Creates a new [MatchmakingGameAttribute](/vext/ref/fb/matchmakinggameattribute) frostbite structure.
 
 ## Properties
+### {{% prop-heading "attribute" %}}
+> **string**
 
-| Name      | Type   | Description |
-| --------- | ------ | ----------- |
-| attribute | string |             |
-| value     | string |             |
-| override  | bool   |             |
+### {{% prop-heading "value" %}}
+> **string**
+
+### {{% prop-heading "override" %}}
+> **bool**
 
 ## Methods
-
-| Type                                                 | Name            | Parameters |
-| ---------------------------------------------------- | --------------- | ---------- |
-| [MatchmakingGameAttribute](/vext/ref/fb/matchmakinggameattribute/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [MatchmakingGameAttribute](/vext/ref/fb/matchmakinggameattribute)
 
-> [MatchmakingGameAttribute](/vext/ref/fb/matchmakinggameattribute/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[MatchmakingGameAttribute](/vext/ref/fb/matchmakinggameattribute)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MatchmakingGameAttribute](/vext/ref/fb/matchmakinggameattribute) type.
+

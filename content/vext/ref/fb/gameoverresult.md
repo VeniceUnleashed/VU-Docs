@@ -1,18 +1,15 @@
 ---
 title: GameOverResult
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **GameOver_MajorDefeat** | Value: **1** |
+| **GameOver_Defeat** | Value: **2** |
+| **GameOver_MinorDefeat** | Value: **3** |
+| **GameOver_MajorVictory** | Value: **4** |
+| **GameOver_Victory** | Value: **5** |
+| **GameOver_MinorVictory** | Value: **6** |
+| **GameOver_Draw** | Value: **7** |
 
-| Name                   | Value | Description |
-| ---------------------- | ----- | ----------- |
-| GameOver\_MajorDefeat  | 1     |             |
-| GameOver\_Defeat       | 2     |             |
-| GameOver\_MinorDefeat  | 3     |             |
-| GameOver\_MajorVictory | 4     |             |
-| GameOver\_Victory      | 5     |             |
-| GameOver\_MinorVictory | 6     |             |
-| GameOver\_Draw         | 7     |             |

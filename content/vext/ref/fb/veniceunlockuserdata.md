@@ -1,44 +1,83 @@
 ---
 title: VeniceUnlockUserData
 ---
-### Base Classes
 
-[UnlockUserDataBase](/vext/ref/fb/unlockuserdatabase/)
+Inherits from 
+[UnlockUserDataBase](/vext/ref/fb/unlockuserdatabase)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VeniceUnlockUserData](#constructor-0)**() |
+| **[VeniceUnlockUserData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VeniceUnlockUserData](#constructor-2)**(other: [UnlockUserDataBase](/vext/ref/fb/unlockuserdatabase)) |
+| **[VeniceUnlockUserData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[VeniceUnlockUserData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "checkSquad" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VeniceUnlockUserData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VeniceUnlockUserData {#constructor-0}
+> **VeniceUnlockUserData**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| VeniceUnlockUserData()                                                          | Create a new instance of this container type.                                                                                   |
-| VeniceUnlockUserData(VeniceUnlockUserData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| VeniceUnlockUserData([UnlockUserDataBase](/vext/ref/fb/unlockuserdatabase/) other)            | Upcast an instance of type [UnlockUserDataBase](/vext/ref/fb/unlockuserdatabase/) to [VeniceUnlockUserData](/vext/ref/fb/veniceunlockuserdata/).            |
-| VeniceUnlockUserData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [VeniceUnlockUserData](/vext/ref/fb/veniceunlockuserdata/).                                      |
-| VeniceUnlockUserData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VeniceUnlockUserData](/vext/ref/fb/veniceunlockuserdata/). |
+Creates a new [VeniceUnlockUserData](/vext/ref/fb/veniceunlockuserdata) frostbite instance.
 
-## Properties
+### VeniceUnlockUserData {#constructor-1}
+> **VeniceUnlockUserData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name       | Type | Description |
-| ---------- | ---- | ----------- |
-| checkSquad | bool |             |
-
-## Methods
-
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [VeniceUnlockUserData](/vext/ref/fb/veniceunlockuserdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VeniceUnlockUserData](/vext/ref/fb/veniceunlockuserdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VeniceUnlockUserData](/vext/ref/fb/veniceunlockuserdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VeniceUnlockUserData {#constructor-2}
+> **VeniceUnlockUserData**(other: [UnlockUserDataBase](/vext/ref/fb/unlockuserdatabase))
+
+Casts an instance of type [UnlockUserDataBase](/vext/ref/fb/unlockuserdatabase) to [VeniceUnlockUserData](/vext/ref/fb/veniceunlockuserdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UnlockUserDataBase](/vext/ref/fb/unlockuserdatabase) | The instance to cast to [VeniceUnlockUserData](/vext/ref/fb/veniceunlockuserdata). |
+
+### VeniceUnlockUserData {#constructor-3}
+> **VeniceUnlockUserData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [VeniceUnlockUserData](/vext/ref/fb/veniceunlockuserdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [VeniceUnlockUserData](/vext/ref/fb/veniceunlockuserdata). |
+
+### VeniceUnlockUserData {#constructor-4}
+> **VeniceUnlockUserData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VeniceUnlockUserData](/vext/ref/fb/veniceunlockuserdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VeniceUnlockUserData](/vext/ref/fb/veniceunlockuserdata). |
+
+## Properties
+### {{% prop-heading "checkSquad" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VeniceUnlockUserData](/vext/ref/fb/veniceunlockuserdata) type.
+

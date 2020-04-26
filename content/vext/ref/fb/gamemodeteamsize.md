@@ -1,32 +1,57 @@
 ---
 title: GameModeTeamSize
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[GameModeTeamSize](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "playerCount" >}} | int |
+| {{< prop "squadSize" >}} | int |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [GameModeTeamSize](/vext/ref/fb/gamemodeteamsize) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "GameModeTeamSize" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### GameModeTeamSize {#constructor-0}
+> **GameModeTeamSize**()
 
-| Constructor                              | Description                                              |
-| ---------------------------------------- | -------------------------------------------------------- |
-| GameModeTeamSize()                       | Create a new instance of this structure type.            |
-| GameModeTeamSize(GameModeTeamSize other) | Create a reference copy of a structure of the same type. |
+Creates a new [GameModeTeamSize](/vext/ref/fb/gamemodeteamsize) frostbite structure.
 
 ## Properties
+### {{% prop-heading "playerCount" %}}
+> **int**
 
-| Name        | Type   | Description |
-| ----------- | ------ | ----------- |
-| playerCount | number |             |
-| squadSize   | number |             |
+### {{% prop-heading "squadSize" %}}
+> **int**
 
 ## Methods
-
-| Type                                 | Name            | Parameters |
-| ------------------------------------ | --------------- | ---------- |
-| [GameModeTeamSize](/vext/ref/fb/gamemodeteamsize/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [GameModeTeamSize](/vext/ref/fb/gamemodeteamsize)
 
-> [GameModeTeamSize](/vext/ref/fb/gamemodeteamsize/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[GameModeTeamSize](/vext/ref/fb/gamemodeteamsize)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [GameModeTeamSize](/vext/ref/fb/gamemodeteamsize) type.
+

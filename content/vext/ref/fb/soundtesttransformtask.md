@@ -1,45 +1,80 @@
 ---
 title: SoundTestTransformTask
 ---
-### Base Classes
 
-[SoundTestTaskSpec](/vext/ref/fb/soundtesttaskspec/)
+Inherits from 
+[SoundTestTaskSpec](/vext/ref/fb/soundtesttaskspec)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SoundTestTransformTask](#constructor-0)**() |
+| **[SoundTestTransformTask](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SoundTestTransformTask](#constructor-2)**(other: [SoundTestTaskSpec](/vext/ref/fb/soundtesttaskspec)) |
+| **[SoundTestTransformTask](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "initialPosition" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "behavior" >}} | [SoundTestTransformBehavior](/vext/ref/fb/soundtesttransformbehavior) |
+| {{< prop "relativeListener" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SoundTestTransformTask" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SoundTestTransformTask {#constructor-0}
+> **SoundTestTransformTask**()
 
-| Constructor                                                                       | Description                                                                                                                         |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| SoundTestTransformTask()                                                          | Create a new instance of this container type.                                                                                       |
-| SoundTestTransformTask(SoundTestTransformTask other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| SoundTestTransformTask([SoundTestTaskSpec](/vext/ref/fb/soundtesttaskspec/) other)              | Upcast an instance of type [SoundTestTaskSpec](/vext/ref/fb/soundtesttaskspec/) to [SoundTestTransformTask](/vext/ref/fb/soundtesttransformtask/).              |
-| SoundTestTransformTask([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoundTestTransformTask](/vext/ref/fb/soundtesttransformtask/). |
+Creates a new [SoundTestTransformTask](/vext/ref/fb/soundtesttransformtask) frostbite instance.
 
-## Properties
+### SoundTestTransformTask {#constructor-1}
+> **SoundTestTransformTask**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name             | Type                                                     | Description |
-| ---------------- | -------------------------------------------------------- | ----------- |
-| initialPosition  | [Vec3](/vext/ref/shared/class/vec3)                        |             |
-| behavior         | [SoundTestTransformBehavior](/vext/ref/fb/soundtesttransformbehavior/) |             |
-| relativeListener | bool                                                     |             |
-
-## Methods
-
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [SoundTestTransformTask](/vext/ref/fb/soundtesttransformtask/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SoundTestTransformTask](/vext/ref/fb/soundtesttransformtask/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SoundTestTransformTask](/vext/ref/fb/soundtesttransformtask) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SoundTestTransformTask {#constructor-2}
+> **SoundTestTransformTask**(other: [SoundTestTaskSpec](/vext/ref/fb/soundtesttaskspec))
+
+Casts an instance of type [SoundTestTaskSpec](/vext/ref/fb/soundtesttaskspec) to [SoundTestTransformTask](/vext/ref/fb/soundtesttransformtask). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SoundTestTaskSpec](/vext/ref/fb/soundtesttaskspec) | The instance to cast to [SoundTestTransformTask](/vext/ref/fb/soundtesttransformtask). |
+
+### SoundTestTransformTask {#constructor-3}
+> **SoundTestTransformTask**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoundTestTransformTask](/vext/ref/fb/soundtesttransformtask). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SoundTestTransformTask](/vext/ref/fb/soundtesttransformtask). |
+
+## Properties
+### {{% prop-heading "initialPosition" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "behavior" %}}
+> **[SoundTestTransformBehavior](/vext/ref/fb/soundtesttransformbehavior)**
+
+### {{% prop-heading "relativeListener" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SoundTestTransformTask](/vext/ref/fb/soundtesttransformtask) type.
+

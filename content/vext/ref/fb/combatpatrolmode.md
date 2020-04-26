@@ -1,14 +1,11 @@
 ---
 title: CombatPatrolMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **CombatPatrolMode_MustStayOnPath** | Value: **0** |
+| **CombatPatrolMode_FreeToFight** | Value: **1** |
+| **CombatPatrolMode_FreeToFightAtDestination** | Value: **2** |
 
-| Name                                       | Value | Description |
-| ------------------------------------------ | ----- | ----------- |
-| CombatPatrolMode\_MustStayOnPath           | 0     |             |
-| CombatPatrolMode\_FreeToFight              | 1     |             |
-| CombatPatrolMode\_FreeToFightAtDestination | 2     |             |

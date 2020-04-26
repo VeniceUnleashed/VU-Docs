@@ -1,15 +1,12 @@
 ---
 title: InputIds
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **NoInputId** | Value: **0** |
+| **SpectatorInputId** | Value: **1** |
+| **FreeCameraInputId** | Value: **2** |
+| **EntryInputId** | Value: **3** |
 
-| Name              | Value | Description |
-| ----------------- | ----- | ----------- |
-| NoInputId         | 0     |             |
-| SpectatorInputId  | 1     |             |
-| FreeCameraInputId | 2     |             |
-| EntryInputId      | 3     |             |

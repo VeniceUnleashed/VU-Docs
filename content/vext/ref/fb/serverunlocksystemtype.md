@@ -1,18 +1,15 @@
 ---
 title: ServerUnlockSystemType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ServerUnlockSystemType_All** | Value: **0** |
+| **ServerUnlockSystemType_Common** | Value: **1** |
+| **ServerUnlockSystemType_None** | Value: **2** |
+| **ServerUnlockSystemType_FromStats** | Value: **3** |
+| **ServerUnlockSystemType_FromWhiteList** | Value: **4** |
+| **ServerUnlockSystemType_FromBlackList** | Value: **5** |
+| **ServerUnlockSystemType_Count** | Value: **6** |
 
-| Name                                  | Value | Description |
-| ------------------------------------- | ----- | ----------- |
-| ServerUnlockSystemType\_All           | 0     |             |
-| ServerUnlockSystemType\_Common        | 1     |             |
-| ServerUnlockSystemType\_None          | 2     |             |
-| ServerUnlockSystemType\_FromStats     | 3     |             |
-| ServerUnlockSystemType\_FromWhiteList | 4     |             |
-| ServerUnlockSystemType\_FromBlackList | 5     |             |
-| ServerUnlockSystemType\_Count         | 6     |             |

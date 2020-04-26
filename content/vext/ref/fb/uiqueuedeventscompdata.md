@@ -1,45 +1,87 @@
 ---
 title: UIQueuedEventsCompData
 ---
-### Base Classes
 
-[UIComponentData](/vext/ref/fb/uicomponentdata/)
+Inherits from 
+[UIComponentData](/vext/ref/fb/uicomponentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIQueuedEventsCompData](#constructor-0)**() |
+| **[UIQueuedEventsCompData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UIQueuedEventsCompData](#constructor-2)**(other: [UIComponentData](/vext/ref/fb/uicomponentdata)) |
+| **[UIQueuedEventsCompData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[UIQueuedEventsCompData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "initialQueueDelay" >}} | float |
+| {{< prop "showUnlocksBecomingAvailable" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIQueuedEventsCompData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIQueuedEventsCompData {#constructor-0}
+> **UIQueuedEventsCompData**()
 
-| Constructor                                                                       | Description                                                                                                                         |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| UIQueuedEventsCompData()                                                          | Create a new instance of this container type.                                                                                       |
-| UIQueuedEventsCompData(UIQueuedEventsCompData other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| UIQueuedEventsCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UIQueuedEventsCompData](/vext/ref/fb/uiqueuedeventscompdata/).                  |
-| UIQueuedEventsCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UIQueuedEventsCompData](/vext/ref/fb/uiqueuedeventscompdata/).                                      |
-| UIQueuedEventsCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIQueuedEventsCompData](/vext/ref/fb/uiqueuedeventscompdata/). |
+Creates a new [UIQueuedEventsCompData](/vext/ref/fb/uiqueuedeventscompdata) frostbite instance.
 
-## Properties
+### UIQueuedEventsCompData {#constructor-1}
+> **UIQueuedEventsCompData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                         | Type   | Description |
-| ---------------------------- | ------ | ----------- |
-| initialQueueDelay            | number |             |
-| showUnlocksBecomingAvailable | bool   |             |
-
-## Methods
-
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [UIQueuedEventsCompData](/vext/ref/fb/uiqueuedeventscompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UIQueuedEventsCompData](/vext/ref/fb/uiqueuedeventscompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UIQueuedEventsCompData](/vext/ref/fb/uiqueuedeventscompdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UIQueuedEventsCompData {#constructor-2}
+> **UIQueuedEventsCompData**(other: [UIComponentData](/vext/ref/fb/uicomponentdata))
+
+Casts an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata) to [UIQueuedEventsCompData](/vext/ref/fb/uiqueuedeventscompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIComponentData](/vext/ref/fb/uicomponentdata) | The instance to cast to [UIQueuedEventsCompData](/vext/ref/fb/uiqueuedeventscompdata). |
+
+### UIQueuedEventsCompData {#constructor-3}
+> **UIQueuedEventsCompData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [UIQueuedEventsCompData](/vext/ref/fb/uiqueuedeventscompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [UIQueuedEventsCompData](/vext/ref/fb/uiqueuedeventscompdata). |
+
+### UIQueuedEventsCompData {#constructor-4}
+> **UIQueuedEventsCompData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIQueuedEventsCompData](/vext/ref/fb/uiqueuedeventscompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UIQueuedEventsCompData](/vext/ref/fb/uiqueuedeventscompdata). |
+
+## Properties
+### {{% prop-heading "initialQueueDelay" %}}
+> **float**
+
+### {{% prop-heading "showUnlocksBecomingAvailable" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIQueuedEventsCompData](/vext/ref/fb/uiqueuedeventscompdata) type.
+

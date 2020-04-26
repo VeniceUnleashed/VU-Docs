@@ -1,55 +1,127 @@
 ---
 title: UIPostProcessComponentData
 ---
-### Base Classes
 
-[UIComponentData](/vext/ref/fb/uicomponentdata/)
+Inherits from 
+[UIComponentData](/vext/ref/fb/uicomponentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIPostProcessComponentData](#constructor-0)**() |
+| **[UIPostProcessComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UIPostProcessComponentData](#constructor-2)**(other: [UIComponentData](/vext/ref/fb/uicomponentdata)) |
+| **[UIPostProcessComponentData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[UIPostProcessComponentData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "highlightThreshold" >}} | float |
+| {{< prop "xPower" >}} | float |
+| {{< prop "yPower" >}} | float |
+| {{< prop "distort" >}} | float |
+| {{< prop "timeScale" >}} | float |
+| {{< prop "noiseTexture" >}} | [TextureAsset](/vext/ref/fb/textureasset) \| nil |
+| {{< prop "highlight" >}} | float |
+| {{< prop "rShift" >}} | float |
+| {{< prop "gShift" >}} | float |
+| {{< prop "bShift" >}} | float |
+| {{< prop "tweakMode" >}} | bool |
+| {{< prop "enabled" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIPostProcessComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIPostProcessComponentData {#constructor-0}
+> **UIPostProcessComponentData**()
 
-| Constructor                                                                           | Description                                                                                                                                 |
-| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| UIPostProcessComponentData()                                                          | Create a new instance of this container type.                                                                                               |
-| UIPostProcessComponentData(UIPostProcessComponentData other)                          | Create a reference copy of an instance of the same type.                                                                                    |
-| UIPostProcessComponentData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UIPostProcessComponentData](/vext/ref/fb/uipostprocesscomponentdata/).                  |
-| UIPostProcessComponentData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UIPostProcessComponentData](/vext/ref/fb/uipostprocesscomponentdata/).                                      |
-| UIPostProcessComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIPostProcessComponentData](/vext/ref/fb/uipostprocesscomponentdata/). |
+Creates a new [UIPostProcessComponentData](/vext/ref/fb/uipostprocesscomponentdata) frostbite instance.
 
-## Properties
+### UIPostProcessComponentData {#constructor-1}
+> **UIPostProcessComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name               | Type                         | Description |
-| ------------------ | ---------------------------- | ----------- |
-| highlightThreshold | number                       |             |
-| xPower             | number                       |             |
-| yPower             | number                       |             |
-| distort            | number                       |             |
-| timeScale          | number                       |             |
-| noiseTexture       | [TextureAsset](/vext/ref/fb/textureasset/) |             |
-| highlight          | number                       |             |
-| rShift             | number                       |             |
-| gShift             | number                       |             |
-| bShift             | number                       |             |
-| tweakMode          | bool                         |             |
-| enabled            | bool                         |             |
-
-## Methods
-
-| Type                                                     | Name            | Parameters                                     |
-| -------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [UIPostProcessComponentData](/vext/ref/fb/uipostprocesscomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UIPostProcessComponentData](/vext/ref/fb/uipostprocesscomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UIPostProcessComponentData](/vext/ref/fb/uipostprocesscomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UIPostProcessComponentData {#constructor-2}
+> **UIPostProcessComponentData**(other: [UIComponentData](/vext/ref/fb/uicomponentdata))
+
+Casts an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata) to [UIPostProcessComponentData](/vext/ref/fb/uipostprocesscomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIComponentData](/vext/ref/fb/uicomponentdata) | The instance to cast to [UIPostProcessComponentData](/vext/ref/fb/uipostprocesscomponentdata). |
+
+### UIPostProcessComponentData {#constructor-3}
+> **UIPostProcessComponentData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [UIPostProcessComponentData](/vext/ref/fb/uipostprocesscomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [UIPostProcessComponentData](/vext/ref/fb/uipostprocesscomponentdata). |
+
+### UIPostProcessComponentData {#constructor-4}
+> **UIPostProcessComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIPostProcessComponentData](/vext/ref/fb/uipostprocesscomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UIPostProcessComponentData](/vext/ref/fb/uipostprocesscomponentdata). |
+
+## Properties
+### {{% prop-heading "highlightThreshold" %}}
+> **float**
+
+### {{% prop-heading "xPower" %}}
+> **float**
+
+### {{% prop-heading "yPower" %}}
+> **float**
+
+### {{% prop-heading "distort" %}}
+> **float**
+
+### {{% prop-heading "timeScale" %}}
+> **float**
+
+### {{% prop-heading "noiseTexture" %}}
+> **[TextureAsset](/vext/ref/fb/textureasset)** | **nil**
+
+### {{% prop-heading "highlight" %}}
+> **float**
+
+### {{% prop-heading "rShift" %}}
+> **float**
+
+### {{% prop-heading "gShift" %}}
+> **float**
+
+### {{% prop-heading "bShift" %}}
+> **float**
+
+### {{% prop-heading "tweakMode" %}}
+> **bool**
+
+### {{% prop-heading "enabled" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIPostProcessComponentData](/vext/ref/fb/uipostprocesscomponentdata) type.
+

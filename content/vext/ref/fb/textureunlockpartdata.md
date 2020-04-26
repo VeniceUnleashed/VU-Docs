@@ -1,42 +1,61 @@
 ---
 title: TextureUnlockPartData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[TextureUnlockPartData](#constructor-0)**() |
+| **[TextureUnlockPartData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[TextureUnlockPartData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "textureReference" >}} | [TextureReference](/vext/ref/fb/texturereference) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "TextureUnlockPartData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### TextureUnlockPartData {#constructor-0}
+> **TextureUnlockPartData**()
 
-| Constructor                                                                      | Description                                                                                                                       |
-| -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| TextureUnlockPartData()                                                          | Create a new instance of this container type.                                                                                     |
-| TextureUnlockPartData(TextureUnlockPartData other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| TextureUnlockPartData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TextureUnlockPartData](/vext/ref/fb/textureunlockpartdata/). |
+Creates a new [TextureUnlockPartData](/vext/ref/fb/textureunlockpartdata) frostbite instance.
 
-## Properties
+### TextureUnlockPartData {#constructor-1}
+> **TextureUnlockPartData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name             | Type                                 | Description |
-| ---------------- | ------------------------------------ | ----------- |
-| textureReference | [TextureReference](/vext/ref/fb/texturereference/) |             |
-
-## Methods
-
-| Type                                           | Name            | Parameters                                     |
-| ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [TextureUnlockPartData](/vext/ref/fb/textureunlockpartdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [TextureUnlockPartData](/vext/ref/fb/textureunlockpartdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [TextureUnlockPartData](/vext/ref/fb/textureunlockpartdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### TextureUnlockPartData {#constructor-2}
+> **TextureUnlockPartData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TextureUnlockPartData](/vext/ref/fb/textureunlockpartdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [TextureUnlockPartData](/vext/ref/fb/textureunlockpartdata). |
+
+## Properties
+### {{% prop-heading "textureReference" %}}
+> **[TextureReference](/vext/ref/fb/texturereference)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [TextureUnlockPartData](/vext/ref/fb/textureunlockpartdata) type.
+

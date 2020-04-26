@@ -1,14 +1,11 @@
 ---
 title: PlayerSpawnType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **PlayerSpawnType_HumanPlayer** | Value: **0** |
+| **PlayerSpawnType_AiPlayer** | Value: **1** |
+| **PlayerSpawnType_Actor** | Value: **2** |
 
-| Name                         | Value | Description |
-| ---------------------------- | ----- | ----------- |
-| PlayerSpawnType\_HumanPlayer | 0     |             |
-| PlayerSpawnType\_AiPlayer    | 1     |             |
-| PlayerSpawnType\_Actor       | 2     |             |

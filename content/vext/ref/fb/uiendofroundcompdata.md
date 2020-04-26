@@ -1,38 +1,74 @@
 ---
 title: UIEndOfRoundCompData
 ---
-### Base Classes
 
-[UIComponentData](/vext/ref/fb/uicomponentdata/)
+Inherits from 
+[UIComponentData](/vext/ref/fb/uicomponentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIEndOfRoundCompData](#constructor-0)**() |
+| **[UIEndOfRoundCompData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UIEndOfRoundCompData](#constructor-2)**(other: [UIComponentData](/vext/ref/fb/uicomponentdata)) |
+| **[UIEndOfRoundCompData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[UIEndOfRoundCompData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIEndOfRoundCompData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIEndOfRoundCompData {#constructor-0}
+> **UIEndOfRoundCompData**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| UIEndOfRoundCompData()                                                          | Create a new instance of this container type.                                                                                   |
-| UIEndOfRoundCompData(UIEndOfRoundCompData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| UIEndOfRoundCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UIEndOfRoundCompData](/vext/ref/fb/uiendofroundcompdata/).                  |
-| UIEndOfRoundCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UIEndOfRoundCompData](/vext/ref/fb/uiendofroundcompdata/).                                      |
-| UIEndOfRoundCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIEndOfRoundCompData](/vext/ref/fb/uiendofroundcompdata/). |
+Creates a new [UIEndOfRoundCompData](/vext/ref/fb/uiendofroundcompdata) frostbite instance.
 
-## Methods
+### UIEndOfRoundCompData {#constructor-1}
+> **UIEndOfRoundCompData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [UIEndOfRoundCompData](/vext/ref/fb/uiendofroundcompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UIEndOfRoundCompData](/vext/ref/fb/uiendofroundcompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UIEndOfRoundCompData](/vext/ref/fb/uiendofroundcompdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UIEndOfRoundCompData {#constructor-2}
+> **UIEndOfRoundCompData**(other: [UIComponentData](/vext/ref/fb/uicomponentdata))
+
+Casts an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata) to [UIEndOfRoundCompData](/vext/ref/fb/uiendofroundcompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIComponentData](/vext/ref/fb/uicomponentdata) | The instance to cast to [UIEndOfRoundCompData](/vext/ref/fb/uiendofroundcompdata). |
+
+### UIEndOfRoundCompData {#constructor-3}
+> **UIEndOfRoundCompData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [UIEndOfRoundCompData](/vext/ref/fb/uiendofroundcompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [UIEndOfRoundCompData](/vext/ref/fb/uiendofroundcompdata). |
+
+### UIEndOfRoundCompData {#constructor-4}
+> **UIEndOfRoundCompData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIEndOfRoundCompData](/vext/ref/fb/uiendofroundcompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UIEndOfRoundCompData](/vext/ref/fb/uiendofroundcompdata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIEndOfRoundCompData](/vext/ref/fb/uiendofroundcompdata) type.
+

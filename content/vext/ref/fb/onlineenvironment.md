@@ -1,16 +1,13 @@
 ---
 title: OnlineEnvironment
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **OnlineEnvironment_Development** | Value: **0** |
+| **OnlineEnvironment_Test** | Value: **1** |
+| **OnlineEnvironment_Certification** | Value: **2** |
+| **OnlineEnvironment_Production** | Value: **3** |
+| **OnlineEnvironment_Count** | Value: **4** |
 
-| Name                             | Value | Description |
-| -------------------------------- | ----- | ----------- |
-| OnlineEnvironment\_Development   | 0     |             |
-| OnlineEnvironment\_Test          | 1     |             |
-| OnlineEnvironment\_Certification | 2     |             |
-| OnlineEnvironment\_Production    | 3     |             |
-| OnlineEnvironment\_Count         | 4     |             |

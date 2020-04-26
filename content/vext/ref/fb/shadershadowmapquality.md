@@ -1,14 +1,11 @@
 ---
 title: ShaderShadowmapQuality
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ShaderShadowmapQuality_Pcf2x2** | Value: **0** |
+| **ShaderShadowmapQuality_Pcf4x4** | Value: **1** |
+| **ShaderShadowmapQuality_Gaussian** | Value: **2** |
 
-| Name                             | Value | Description |
-| -------------------------------- | ----- | ----------- |
-| ShaderShadowmapQuality\_Pcf2x2   | 0     |             |
-| ShaderShadowmapQuality\_Pcf4x4   | 1     |             |
-| ShaderShadowmapQuality\_Gaussian | 2     |             |

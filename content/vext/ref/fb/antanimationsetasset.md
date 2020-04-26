@@ -1,49 +1,96 @@
 ---
 title: AntAnimationSetAsset
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AntAnimationSetAsset](#constructor-0)**() |
+| **[AntAnimationSetAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[AntAnimationSetAsset](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[AntAnimationSetAsset](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "skeletonAsset" >}} | [SkeletonAsset](/vext/ref/fb/skeletonasset) \| nil |
+| {{< prop "actorAssetIndex" >}} | int |
+| {{< prop "clipAssetIndices" >}} | int[] |
+| {{< prop "loopingClipAssetIndices" >}} | int[] |
+| {{< prop "sceneOpMatrixAssetIndex" >}} | int |
+| {{< prop "useTraj2Ref" >}} | bool |
+| {{< prop "allowAnimationCulling" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AntAnimationSetAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AntAnimationSetAsset {#constructor-0}
+> **AntAnimationSetAsset**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| AntAnimationSetAsset()                                                          | Create a new instance of this container type.                                                                                   |
-| AntAnimationSetAsset(AntAnimationSetAsset other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| AntAnimationSetAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [AntAnimationSetAsset](/vext/ref/fb/antanimationsetasset/).                                      |
-| AntAnimationSetAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AntAnimationSetAsset](/vext/ref/fb/antanimationsetasset/). |
+Creates a new [AntAnimationSetAsset](/vext/ref/fb/antanimationsetasset) frostbite instance.
 
-## Properties
+### AntAnimationSetAsset {#constructor-1}
+> **AntAnimationSetAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                    | Type                           | Description |
-| ----------------------- | ------------------------------ | ----------- |
-| skeletonAsset           | [SkeletonAsset](/vext/ref/fb/skeletonasset/) |             |
-| actorAssetIndex         | number                         |             |
-| clipAssetIndices        | number\[\]                     |             |
-| loopingClipAssetIndices | number\[\]                     |             |
-| sceneOpMatrixAssetIndex | number                         |             |
-| useTraj2Ref             | bool                           |             |
-| allowAnimationCulling   | bool                           |             |
-
-## Methods
-
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [AntAnimationSetAsset](/vext/ref/fb/antanimationsetasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [AntAnimationSetAsset](/vext/ref/fb/antanimationsetasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [AntAnimationSetAsset](/vext/ref/fb/antanimationsetasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### AntAnimationSetAsset {#constructor-2}
+> **AntAnimationSetAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [AntAnimationSetAsset](/vext/ref/fb/antanimationsetasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [AntAnimationSetAsset](/vext/ref/fb/antanimationsetasset). |
+
+### AntAnimationSetAsset {#constructor-3}
+> **AntAnimationSetAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AntAnimationSetAsset](/vext/ref/fb/antanimationsetasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [AntAnimationSetAsset](/vext/ref/fb/antanimationsetasset). |
+
+## Properties
+### {{% prop-heading "skeletonAsset" %}}
+> **[SkeletonAsset](/vext/ref/fb/skeletonasset)** | **nil**
+
+### {{% prop-heading "actorAssetIndex" %}}
+> **int**
+
+### {{% prop-heading "clipAssetIndices" %}}
+> **int**[]
+
+### {{% prop-heading "loopingClipAssetIndices" %}}
+> **int**[]
+
+### {{% prop-heading "sceneOpMatrixAssetIndex" %}}
+> **int**
+
+### {{% prop-heading "useTraj2Ref" %}}
+> **bool**
+
+### {{% prop-heading "allowAnimationCulling" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AntAnimationSetAsset](/vext/ref/fb/antanimationsetasset) type.
+

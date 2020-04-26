@@ -1,47 +1,116 @@
 ---
 title: TrackWheelComponentData
 ---
-### Base Classes
 
-[WheelComponentData](/vext/ref/fb/wheelcomponentdata/)
+Inherits from 
+[WheelComponentData](/vext/ref/fb/wheelcomponentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[TrackWheelComponentData](#constructor-0)**() |
+| **[TrackWheelComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[TrackWheelComponentData](#constructor-2)**(other: [WheelComponentData](/vext/ref/fb/wheelcomponentdata)) |
+| **[TrackWheelComponentData](#constructor-3)**(other: [PartComponentData](/vext/ref/fb/partcomponentdata)) |
+| **[TrackWheelComponentData](#constructor-4)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[TrackWheelComponentData](#constructor-5)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[TrackWheelComponentData](#constructor-6)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[TrackWheelComponentData](#constructor-7)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "boneName" >}} | string |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "TrackWheelComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### TrackWheelComponentData {#constructor-0}
+> **TrackWheelComponentData**()
 
-| Constructor                                                                        | Description                                                                                                                           |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| TrackWheelComponentData()                                                          | Create a new instance of this container type.                                                                                         |
-| TrackWheelComponentData(TrackWheelComponentData other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| TrackWheelComponentData([WheelComponentData](/vext/ref/fb/wheelcomponentdata/) other)            | Upcast an instance of type [WheelComponentData](/vext/ref/fb/wheelcomponentdata/) to [TrackWheelComponentData](/vext/ref/fb/trackwheelcomponentdata/).            |
-| TrackWheelComponentData([PartComponentData](/vext/ref/fb/partcomponentdata/) other)              | Upcast an instance of type [PartComponentData](/vext/ref/fb/partcomponentdata/) to [TrackWheelComponentData](/vext/ref/fb/trackwheelcomponentdata/).              |
-| TrackWheelComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [TrackWheelComponentData](/vext/ref/fb/trackwheelcomponentdata/).                      |
-| TrackWheelComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [TrackWheelComponentData](/vext/ref/fb/trackwheelcomponentdata/).                    |
-| TrackWheelComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [TrackWheelComponentData](/vext/ref/fb/trackwheelcomponentdata/).              |
-| TrackWheelComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TrackWheelComponentData](/vext/ref/fb/trackwheelcomponentdata/). |
+Creates a new [TrackWheelComponentData](/vext/ref/fb/trackwheelcomponentdata) frostbite instance.
 
-## Properties
+### TrackWheelComponentData {#constructor-1}
+> **TrackWheelComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name     | Type   | Description |
-| -------- | ------ | ----------- |
-| boneName | string |             |
-
-## Methods
-
-| Type                                               | Name            | Parameters                                     |
-| -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [TrackWheelComponentData](/vext/ref/fb/trackwheelcomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [TrackWheelComponentData](/vext/ref/fb/trackwheelcomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [TrackWheelComponentData](/vext/ref/fb/trackwheelcomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### TrackWheelComponentData {#constructor-2}
+> **TrackWheelComponentData**(other: [WheelComponentData](/vext/ref/fb/wheelcomponentdata))
+
+Casts an instance of type [WheelComponentData](/vext/ref/fb/wheelcomponentdata) to [TrackWheelComponentData](/vext/ref/fb/trackwheelcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [WheelComponentData](/vext/ref/fb/wheelcomponentdata) | The instance to cast to [TrackWheelComponentData](/vext/ref/fb/trackwheelcomponentdata). |
+
+### TrackWheelComponentData {#constructor-3}
+> **TrackWheelComponentData**(other: [PartComponentData](/vext/ref/fb/partcomponentdata))
+
+Casts an instance of type [PartComponentData](/vext/ref/fb/partcomponentdata) to [TrackWheelComponentData](/vext/ref/fb/trackwheelcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [PartComponentData](/vext/ref/fb/partcomponentdata) | The instance to cast to [TrackWheelComponentData](/vext/ref/fb/trackwheelcomponentdata). |
+
+### TrackWheelComponentData {#constructor-4}
+> **TrackWheelComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [TrackWheelComponentData](/vext/ref/fb/trackwheelcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [TrackWheelComponentData](/vext/ref/fb/trackwheelcomponentdata). |
+
+### TrackWheelComponentData {#constructor-5}
+> **TrackWheelComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [TrackWheelComponentData](/vext/ref/fb/trackwheelcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [TrackWheelComponentData](/vext/ref/fb/trackwheelcomponentdata). |
+
+### TrackWheelComponentData {#constructor-6}
+> **TrackWheelComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [TrackWheelComponentData](/vext/ref/fb/trackwheelcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [TrackWheelComponentData](/vext/ref/fb/trackwheelcomponentdata). |
+
+### TrackWheelComponentData {#constructor-7}
+> **TrackWheelComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TrackWheelComponentData](/vext/ref/fb/trackwheelcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [TrackWheelComponentData](/vext/ref/fb/trackwheelcomponentdata). |
+
+## Properties
+### {{% prop-heading "boneName" %}}
+> **string**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [TrackWheelComponentData](/vext/ref/fb/trackwheelcomponentdata) type.
+

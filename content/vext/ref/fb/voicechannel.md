@@ -1,16 +1,13 @@
 ---
 title: VoiceChannel
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **VoiceChannel_Off** | Value: **0** |
+| **VoiceChannel_Team** | Value: **1** |
+| **VoiceChannel_Squad** | Value: **2** |
+| **VoiceChannel_Loopback** | Value: **3** |
+| **VoiceChannel_Count** | Value: **4** |
 
-| Name                   | Value | Description |
-| ---------------------- | ----- | ----------- |
-| VoiceChannel\_Off      | 0     |             |
-| VoiceChannel\_Team     | 1     |             |
-| VoiceChannel\_Squad    | 2     |             |
-| VoiceChannel\_Loopback | 3     |             |
-| VoiceChannel\_Count    | 4     |             |

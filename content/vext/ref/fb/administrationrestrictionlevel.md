@@ -1,16 +1,13 @@
 ---
 title: AdministrationRestrictionLevel
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **AdministrationRestrictionLevel_Zero** | Value: **0** |
+| **AdministrationRestrictionLevel_One** | Value: **1** |
+| **AdministrationRestrictionLevel_Two** | Value: **2** |
+| **AdministrationRestrictionLevel_Three** | Value: **3** |
+| **AdministrationRestrictionLevel_Count** | Value: **4** |
 
-| Name                                  | Value | Description |
-| ------------------------------------- | ----- | ----------- |
-| AdministrationRestrictionLevel\_Zero  | 0     |             |
-| AdministrationRestrictionLevel\_One   | 1     |             |
-| AdministrationRestrictionLevel\_Two   | 2     |             |
-| AdministrationRestrictionLevel\_Three | 3     |             |
-| AdministrationRestrictionLevel\_Count | 4     |             |

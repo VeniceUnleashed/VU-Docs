@@ -1,80 +1,213 @@
 ---
 title: MotorbikeData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MotorbikeData](#constructor-0)**() |
+| **[MotorbikeData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MotorbikeData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "wheelieForceBodyOffset" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "wheelieForce" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "dampBigJumpImpactCounterForce" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "proximityExtScale" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "jumpForwardLeanMinAngle" >}} | float |
+| {{< prop "jumpForwardLeanMomentum" >}} | float |
+| {{< prop "kickstandRoll" >}} | float |
+| {{< prop "kickstandLinearDamping" >}} | float |
+| {{< prop "leanForceMaxVel" >}} | float |
+| {{< prop "counterLeanForce" >}} | float |
+| {{< prop "standStillRoll" >}} | float |
+| {{< prop "dampBigJumpImpactVelocity" >}} | float |
+| {{< prop "yawBrakeDampingLerpStartScale" >}} | float |
+| {{< prop "yawBrakeDampingLerpEndScale" >}} | float |
+| {{< prop "stoppieActivationVelocity" >}} | float |
+| {{< prop "stoppieStartVelocity" >}} | float |
+| {{< prop "leanForce" >}} | float |
+| {{< prop "stoppieMomentum" >}} | float |
+| {{< prop "shortOffgroundGravityMultiplier" >}} | float |
+| {{< prop "maxLeaningRoll" >}} | float |
+| {{< prop "stoppieStopVelocity" >}} | float |
+| {{< prop "proximityHeightTranslation" >}} | float |
+| {{< prop "wheelieMaxNoDownForceContactTime" >}} | float |
+| {{< prop "wheelieMaxNoContactTime" >}} | float |
+| {{< prop "wheelieSteeringFactor" >}} | float |
+| {{< prop "wheelieInertia" >}} | float |
+| {{< prop "wheelieStartVelocity" >}} | float |
+| {{< prop "wheelieMaxVelocityUndamped" >}} | float |
+| {{< prop "wheelieMaxVelocityDampRange" >}} | float |
+| {{< prop "wheelieOutAngularMomentum" >}} | float |
+| {{< prop "wheelieSpringDamping" >}} | float |
+| {{< prop "wheelieAngularDamping" >}} | float |
+| {{< prop "wheelieAngularDampingSpeed" >}} | float |
+| {{< prop "shortOffgroundPeriod" >}} | float |
+| {{< prop "wheelieMaxAngle" >}} | float |
+| {{< prop "wheelieAngularStartMomentum" >}} | float |
+| {{< prop "wheelieMaxVelocity" >}} | float |
+| {{< prop "wheelieVelocityForceScale" >}} | float |
+| {{< prop "dampBigJumpImpact" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MotorbikeData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MotorbikeData {#constructor-0}
+> **MotorbikeData**()
 
-| Constructor                                                              | Description                                                                                                       |
-| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| MotorbikeData()                                                          | Create a new instance of this container type.                                                                     |
-| MotorbikeData(MotorbikeData other)                                       | Create a reference copy of an instance of the same type.                                                          |
-| MotorbikeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MotorbikeData](/vext/ref/fb/motorbikedata/). |
+Creates a new [MotorbikeData](/vext/ref/fb/motorbikedata) frostbite instance.
 
-## Properties
+### MotorbikeData {#constructor-1}
+> **MotorbikeData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                             | Type                              | Description |
-| -------------------------------- | --------------------------------- | ----------- |
-| wheelieForceBodyOffset           | [Vec3](/vext/ref/shared/class/vec3) |             |
-| wheelieForce                     | [Vec3](/vext/ref/shared/class/vec3) |             |
-| dampBigJumpImpactCounterForce    | [Vec3](/vext/ref/shared/class/vec3) |             |
-| proximityExtScale                | [Vec3](/vext/ref/shared/class/vec3) |             |
-| jumpForwardLeanMinAngle          | number                            |             |
-| jumpForwardLeanMomentum          | number                            |             |
-| kickstandRoll                    | number                            |             |
-| kickstandLinearDamping           | number                            |             |
-| leanForceMaxVel                  | number                            |             |
-| counterLeanForce                 | number                            |             |
-| standStillRoll                   | number                            |             |
-| dampBigJumpImpactVelocity        | number                            |             |
-| yawBrakeDampingLerpStartScale    | number                            |             |
-| yawBrakeDampingLerpEndScale      | number                            |             |
-| stoppieActivationVelocity        | number                            |             |
-| stoppieStartVelocity             | number                            |             |
-| leanForce                        | number                            |             |
-| stoppieMomentum                  | number                            |             |
-| shortOffgroundGravityMultiplier  | number                            |             |
-| maxLeaningRoll                   | number                            |             |
-| stoppieStopVelocity              | number                            |             |
-| proximityHeightTranslation       | number                            |             |
-| wheelieMaxNoDownForceContactTime | number                            |             |
-| wheelieMaxNoContactTime          | number                            |             |
-| wheelieSteeringFactor            | number                            |             |
-| wheelieInertia                   | number                            |             |
-| wheelieStartVelocity             | number                            |             |
-| wheelieMaxVelocityUndamped       | number                            |             |
-| wheelieMaxVelocityDampRange      | number                            |             |
-| wheelieOutAngularMomentum        | number                            |             |
-| wheelieSpringDamping             | number                            |             |
-| wheelieAngularDamping            | number                            |             |
-| wheelieAngularDampingSpeed       | number                            |             |
-| shortOffgroundPeriod             | number                            |             |
-| wheelieMaxAngle                  | number                            |             |
-| wheelieAngularStartMomentum      | number                            |             |
-| wheelieMaxVelocity               | number                            |             |
-| wheelieVelocityForceScale        | number                            |             |
-| dampBigJumpImpact                | bool                              |             |
-
-## Methods
-
-| Type                           | Name            | Parameters                                     |
-| ------------------------------ | --------------- | ---------------------------------------------- |
-| [MotorbikeData](/vext/ref/fb/motorbikedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MotorbikeData](/vext/ref/fb/motorbikedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MotorbikeData](/vext/ref/fb/motorbikedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MotorbikeData {#constructor-2}
+> **MotorbikeData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MotorbikeData](/vext/ref/fb/motorbikedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MotorbikeData](/vext/ref/fb/motorbikedata). |
+
+## Properties
+### {{% prop-heading "wheelieForceBodyOffset" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "wheelieForce" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "dampBigJumpImpactCounterForce" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "proximityExtScale" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "jumpForwardLeanMinAngle" %}}
+> **float**
+
+### {{% prop-heading "jumpForwardLeanMomentum" %}}
+> **float**
+
+### {{% prop-heading "kickstandRoll" %}}
+> **float**
+
+### {{% prop-heading "kickstandLinearDamping" %}}
+> **float**
+
+### {{% prop-heading "leanForceMaxVel" %}}
+> **float**
+
+### {{% prop-heading "counterLeanForce" %}}
+> **float**
+
+### {{% prop-heading "standStillRoll" %}}
+> **float**
+
+### {{% prop-heading "dampBigJumpImpactVelocity" %}}
+> **float**
+
+### {{% prop-heading "yawBrakeDampingLerpStartScale" %}}
+> **float**
+
+### {{% prop-heading "yawBrakeDampingLerpEndScale" %}}
+> **float**
+
+### {{% prop-heading "stoppieActivationVelocity" %}}
+> **float**
+
+### {{% prop-heading "stoppieStartVelocity" %}}
+> **float**
+
+### {{% prop-heading "leanForce" %}}
+> **float**
+
+### {{% prop-heading "stoppieMomentum" %}}
+> **float**
+
+### {{% prop-heading "shortOffgroundGravityMultiplier" %}}
+> **float**
+
+### {{% prop-heading "maxLeaningRoll" %}}
+> **float**
+
+### {{% prop-heading "stoppieStopVelocity" %}}
+> **float**
+
+### {{% prop-heading "proximityHeightTranslation" %}}
+> **float**
+
+### {{% prop-heading "wheelieMaxNoDownForceContactTime" %}}
+> **float**
+
+### {{% prop-heading "wheelieMaxNoContactTime" %}}
+> **float**
+
+### {{% prop-heading "wheelieSteeringFactor" %}}
+> **float**
+
+### {{% prop-heading "wheelieInertia" %}}
+> **float**
+
+### {{% prop-heading "wheelieStartVelocity" %}}
+> **float**
+
+### {{% prop-heading "wheelieMaxVelocityUndamped" %}}
+> **float**
+
+### {{% prop-heading "wheelieMaxVelocityDampRange" %}}
+> **float**
+
+### {{% prop-heading "wheelieOutAngularMomentum" %}}
+> **float**
+
+### {{% prop-heading "wheelieSpringDamping" %}}
+> **float**
+
+### {{% prop-heading "wheelieAngularDamping" %}}
+> **float**
+
+### {{% prop-heading "wheelieAngularDampingSpeed" %}}
+> **float**
+
+### {{% prop-heading "shortOffgroundPeriod" %}}
+> **float**
+
+### {{% prop-heading "wheelieMaxAngle" %}}
+> **float**
+
+### {{% prop-heading "wheelieAngularStartMomentum" %}}
+> **float**
+
+### {{% prop-heading "wheelieMaxVelocity" %}}
+> **float**
+
+### {{% prop-heading "wheelieVelocityForceScale" %}}
+> **float**
+
+### {{% prop-heading "dampBigJumpImpact" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MotorbikeData](/vext/ref/fb/motorbikedata) type.
+

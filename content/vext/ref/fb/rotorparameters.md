@@ -1,54 +1,109 @@
 ---
 title: RotorParameters
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[RotorParameters](#constructor-0)**() |
+| **[RotorParameters](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[RotorParameters](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "cyclicInputScaleRoll" >}} | float |
+| {{< prop "cyclicInputScalePitch" >}} | float |
+| {{< prop "collectiveThrottleInputScale" >}} | float |
+| {{< prop "collectiveBrakeInputScale" >}} | float |
+| {{< prop "collectiveInputIdle" >}} | float |
+| {{< prop "horizontalForceModifier" >}} | float |
+| {{< prop "angleOfAttack" >}} | [Vec2](/vext/ref/shared/class/vec2)[] |
+| {{< prop "cyclicFadeOutOffset" >}} | float |
+| {{< prop "additionalGravityModifier" >}} | float |
+| {{< prop "horisontalMinEffectMod" >}} | float |
+| {{< prop "horisontalMinEffectVelocity" >}} | float |
+| {{< prop "enableHorisontalMinEffect" >}} | bool |
+| {{< prop "reverseThrottle" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "RotorParameters" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### RotorParameters {#constructor-0}
+> **RotorParameters**()
 
-| Constructor                                                                | Description                                                                                                           |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| RotorParameters()                                                          | Create a new instance of this container type.                                                                         |
-| RotorParameters(RotorParameters other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| RotorParameters([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RotorParameters](/vext/ref/fb/rotorparameters/). |
+Creates a new [RotorParameters](/vext/ref/fb/rotorparameters) frostbite instance.
 
-## Properties
+### RotorParameters {#constructor-1}
+> **RotorParameters**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                         | Type                                  | Description |
-| ---------------------------- | ------------------------------------- | ----------- |
-| cyclicInputScaleRoll         | number                                |             |
-| cyclicInputScalePitch        | number                                |             |
-| collectiveThrottleInputScale | number                                |             |
-| collectiveBrakeInputScale    | number                                |             |
-| collectiveInputIdle          | number                                |             |
-| horizontalForceModifier      | number                                |             |
-| angleOfAttack                | [Vec2](/vext/ref/shared/class/vec2)\[\] |             |
-| cyclicFadeOutOffset          | number                                |             |
-| additionalGravityModifier    | number                                |             |
-| horisontalMinEffectMod       | number                                |             |
-| horisontalMinEffectVelocity  | number                                |             |
-| enableHorisontalMinEffect    | bool                                  |             |
-| reverseThrottle              | bool                                  |             |
-
-## Methods
-
-| Type                               | Name            | Parameters                                     |
-| ---------------------------------- | --------------- | ---------------------------------------------- |
-| [RotorParameters](/vext/ref/fb/rotorparameters/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [RotorParameters](/vext/ref/fb/rotorparameters/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [RotorParameters](/vext/ref/fb/rotorparameters) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### RotorParameters {#constructor-2}
+> **RotorParameters**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RotorParameters](/vext/ref/fb/rotorparameters). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [RotorParameters](/vext/ref/fb/rotorparameters). |
+
+## Properties
+### {{% prop-heading "cyclicInputScaleRoll" %}}
+> **float**
+
+### {{% prop-heading "cyclicInputScalePitch" %}}
+> **float**
+
+### {{% prop-heading "collectiveThrottleInputScale" %}}
+> **float**
+
+### {{% prop-heading "collectiveBrakeInputScale" %}}
+> **float**
+
+### {{% prop-heading "collectiveInputIdle" %}}
+> **float**
+
+### {{% prop-heading "horizontalForceModifier" %}}
+> **float**
+
+### {{% prop-heading "angleOfAttack" %}}
+> **[Vec2](/vext/ref/shared/class/vec2)**[]
+
+### {{% prop-heading "cyclicFadeOutOffset" %}}
+> **float**
+
+### {{% prop-heading "additionalGravityModifier" %}}
+> **float**
+
+### {{% prop-heading "horisontalMinEffectMod" %}}
+> **float**
+
+### {{% prop-heading "horisontalMinEffectVelocity" %}}
+> **float**
+
+### {{% prop-heading "enableHorisontalMinEffect" %}}
+> **bool**
+
+### {{% prop-heading "reverseThrottle" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [RotorParameters](/vext/ref/fb/rotorparameters) type.
+

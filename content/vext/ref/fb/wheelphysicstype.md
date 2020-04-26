@@ -1,14 +1,11 @@
 ---
 title: WheelPhysicsType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **wptNormal** | Value: **0** |
+| **wptFollow** | Value: **1** |
+| **wptStatic** | Value: **2** |
 
-| Name      | Value | Description |
-| --------- | ----- | ----------- |
-| wptNormal | 0     |             |
-| wptFollow | 1     |             |
-| wptStatic | 2     |             |

@@ -1,43 +1,72 @@
 ---
 title: IntRecordingData
 ---
-### Base Classes
 
-[PropertyRecordingData](/vext/ref/fb/propertyrecordingdata/)
+Inherits from 
+[PropertyRecordingData](/vext/ref/fb/propertyrecordingdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[IntRecordingData](#constructor-0)**() |
+| **[IntRecordingData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[IntRecordingData](#constructor-2)**(other: [PropertyRecordingData](/vext/ref/fb/propertyrecordingdata)) |
+| **[IntRecordingData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "values" >}} | int[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "IntRecordingData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### IntRecordingData {#constructor-0}
+> **IntRecordingData**()
 
-| Constructor                                                                 | Description                                                                                                             |
-| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| IntRecordingData()                                                          | Create a new instance of this container type.                                                                           |
-| IntRecordingData(IntRecordingData other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| IntRecordingData([PropertyRecordingData](/vext/ref/fb/propertyrecordingdata/) other)      | Upcast an instance of type [PropertyRecordingData](/vext/ref/fb/propertyrecordingdata/) to [IntRecordingData](/vext/ref/fb/intrecordingdata/).      |
-| IntRecordingData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [IntRecordingData](/vext/ref/fb/intrecordingdata/). |
+Creates a new [IntRecordingData](/vext/ref/fb/intrecordingdata) frostbite instance.
 
-## Properties
+### IntRecordingData {#constructor-1}
+> **IntRecordingData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name   | Type       | Description |
-| ------ | ---------- | ----------- |
-| values | number\[\] |             |
-
-## Methods
-
-| Type                                 | Name            | Parameters                                     |
-| ------------------------------------ | --------------- | ---------------------------------------------- |
-| [IntRecordingData](/vext/ref/fb/intrecordingdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [IntRecordingData](/vext/ref/fb/intrecordingdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [IntRecordingData](/vext/ref/fb/intrecordingdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### IntRecordingData {#constructor-2}
+> **IntRecordingData**(other: [PropertyRecordingData](/vext/ref/fb/propertyrecordingdata))
+
+Casts an instance of type [PropertyRecordingData](/vext/ref/fb/propertyrecordingdata) to [IntRecordingData](/vext/ref/fb/intrecordingdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [PropertyRecordingData](/vext/ref/fb/propertyrecordingdata) | The instance to cast to [IntRecordingData](/vext/ref/fb/intrecordingdata). |
+
+### IntRecordingData {#constructor-3}
+> **IntRecordingData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [IntRecordingData](/vext/ref/fb/intrecordingdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [IntRecordingData](/vext/ref/fb/intrecordingdata). |
+
+## Properties
+### {{% prop-heading "values" %}}
+> **int**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [IntRecordingData](/vext/ref/fb/intrecordingdata) type.
+

@@ -1,56 +1,138 @@
 ---
 title: DynamicAOComponentData
 ---
-### Base Classes
 
-[ComponentData](/vext/ref/fb/componentdata/)
+Inherits from 
+[ComponentData](/vext/ref/fb/componentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[DynamicAOComponentData](#constructor-0)**() |
+| **[DynamicAOComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[DynamicAOComponentData](#constructor-2)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[DynamicAOComponentData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[DynamicAOComponentData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[DynamicAOComponentData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
+| {{< prop "ssaoMaxDistanceOuter" >}} | float |
+| {{< prop "ssaoFade" >}} | float |
+| {{< prop "ssaoRadius" >}} | float |
+| {{< prop "ssaoMaxDistanceInner" >}} | float |
+| {{< prop "hbaoRadius" >}} | float |
+| {{< prop "hbaoAttenuation" >}} | float |
+| {{< prop "hbaoAngleBias" >}} | float |
+| {{< prop "hbaoPowerExponent" >}} | float |
+| {{< prop "hbaoContrast" >}} | float |
+| {{< prop "hbaoMaxFootprintRadius" >}} | float |
+| {{< prop "enable" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "DynamicAOComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### DynamicAOComponentData {#constructor-0}
+> **DynamicAOComponentData**()
 
-| Constructor                                                                       | Description                                                                                                                         |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| DynamicAOComponentData()                                                          | Create a new instance of this container type.                                                                                       |
-| DynamicAOComponentData(DynamicAOComponentData other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| DynamicAOComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [DynamicAOComponentData](/vext/ref/fb/dynamicaocomponentdata/).                      |
-| DynamicAOComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [DynamicAOComponentData](/vext/ref/fb/dynamicaocomponentdata/).                    |
-| DynamicAOComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [DynamicAOComponentData](/vext/ref/fb/dynamicaocomponentdata/).              |
-| DynamicAOComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DynamicAOComponentData](/vext/ref/fb/dynamicaocomponentdata/). |
+Creates a new [DynamicAOComponentData](/vext/ref/fb/dynamicaocomponentdata) frostbite instance.
 
-## Properties
+### DynamicAOComponentData {#constructor-1}
+> **DynamicAOComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                   | Type           | Description |
-| ---------------------- | -------------- | ----------- |
-| realm                  | [Realm](/vext/ref/fb/realm/) |             |
-| ssaoMaxDistanceOuter   | number         |             |
-| ssaoFade               | number         |             |
-| ssaoRadius             | number         |             |
-| ssaoMaxDistanceInner   | number         |             |
-| hbaoRadius             | number         |             |
-| hbaoAttenuation        | number         |             |
-| hbaoAngleBias          | number         |             |
-| hbaoPowerExponent      | number         |             |
-| hbaoContrast           | number         |             |
-| hbaoMaxFootprintRadius | number         |             |
-| enable                 | bool           |             |
-
-## Methods
-
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [DynamicAOComponentData](/vext/ref/fb/dynamicaocomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [DynamicAOComponentData](/vext/ref/fb/dynamicaocomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [DynamicAOComponentData](/vext/ref/fb/dynamicaocomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### DynamicAOComponentData {#constructor-2}
+> **DynamicAOComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [DynamicAOComponentData](/vext/ref/fb/dynamicaocomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [DynamicAOComponentData](/vext/ref/fb/dynamicaocomponentdata). |
+
+### DynamicAOComponentData {#constructor-3}
+> **DynamicAOComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [DynamicAOComponentData](/vext/ref/fb/dynamicaocomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [DynamicAOComponentData](/vext/ref/fb/dynamicaocomponentdata). |
+
+### DynamicAOComponentData {#constructor-4}
+> **DynamicAOComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [DynamicAOComponentData](/vext/ref/fb/dynamicaocomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [DynamicAOComponentData](/vext/ref/fb/dynamicaocomponentdata). |
+
+### DynamicAOComponentData {#constructor-5}
+> **DynamicAOComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DynamicAOComponentData](/vext/ref/fb/dynamicaocomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DynamicAOComponentData](/vext/ref/fb/dynamicaocomponentdata). |
+
+## Properties
+### {{% prop-heading "realm" %}}
+> **[Realm](/vext/ref/fb/realm)**
+
+### {{% prop-heading "ssaoMaxDistanceOuter" %}}
+> **float**
+
+### {{% prop-heading "ssaoFade" %}}
+> **float**
+
+### {{% prop-heading "ssaoRadius" %}}
+> **float**
+
+### {{% prop-heading "ssaoMaxDistanceInner" %}}
+> **float**
+
+### {{% prop-heading "hbaoRadius" %}}
+> **float**
+
+### {{% prop-heading "hbaoAttenuation" %}}
+> **float**
+
+### {{% prop-heading "hbaoAngleBias" %}}
+> **float**
+
+### {{% prop-heading "hbaoPowerExponent" %}}
+> **float**
+
+### {{% prop-heading "hbaoContrast" %}}
+> **float**
+
+### {{% prop-heading "hbaoMaxFootprintRadius" %}}
+> **float**
+
+### {{% prop-heading "enable" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [DynamicAOComponentData](/vext/ref/fb/dynamicaocomponentdata) type.
+

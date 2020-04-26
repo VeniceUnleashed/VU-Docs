@@ -1,42 +1,61 @@
 ---
 title: AnimationSpawnTemplate
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AnimationSpawnTemplate](#constructor-0)**() |
+| **[AnimationSpawnTemplate](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[AnimationSpawnTemplate](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "runStyle" >}} | [AntEnumeration](/vext/ref/fb/antenumeration) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AnimationSpawnTemplate" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AnimationSpawnTemplate {#constructor-0}
+> **AnimationSpawnTemplate**()
 
-| Constructor                                                                       | Description                                                                                                                         |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| AnimationSpawnTemplate()                                                          | Create a new instance of this container type.                                                                                       |
-| AnimationSpawnTemplate(AnimationSpawnTemplate other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| AnimationSpawnTemplate([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AnimationSpawnTemplate](/vext/ref/fb/animationspawntemplate/). |
+Creates a new [AnimationSpawnTemplate](/vext/ref/fb/animationspawntemplate) frostbite instance.
 
-## Properties
+### AnimationSpawnTemplate {#constructor-1}
+> **AnimationSpawnTemplate**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name     | Type                             | Description |
-| -------- | -------------------------------- | ----------- |
-| runStyle | [AntEnumeration](/vext/ref/fb/antenumeration/) |             |
-
-## Methods
-
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [AnimationSpawnTemplate](/vext/ref/fb/animationspawntemplate/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [AnimationSpawnTemplate](/vext/ref/fb/animationspawntemplate/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [AnimationSpawnTemplate](/vext/ref/fb/animationspawntemplate) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### AnimationSpawnTemplate {#constructor-2}
+> **AnimationSpawnTemplate**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AnimationSpawnTemplate](/vext/ref/fb/animationspawntemplate). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [AnimationSpawnTemplate](/vext/ref/fb/animationspawntemplate). |
+
+## Properties
+### {{% prop-heading "runStyle" %}}
+> **[AntEnumeration](/vext/ref/fb/antenumeration)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AnimationSpawnTemplate](/vext/ref/fb/animationspawntemplate) type.
+

@@ -1,45 +1,80 @@
 ---
 title: MixerReceiveEntry
 ---
-### Base Classes
 
-[AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/)
+Inherits from 
+[AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MixerReceiveEntry](#constructor-0)**() |
+| **[MixerReceiveEntry](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MixerReceiveEntry](#constructor-2)**(other: [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup)) |
+| **[MixerReceiveEntry](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "out" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "source" >}} | [AudioGraphParameter](/vext/ref/fb/audiographparameter) \| nil |
+| {{< prop "mixer" >}} | [MixerAsset](/vext/ref/fb/mixerasset) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MixerReceiveEntry" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MixerReceiveEntry {#constructor-0}
+> **MixerReceiveEntry**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| MixerReceiveEntry()                                                          | Create a new instance of this container type.                                                                             |
-| MixerReceiveEntry(MixerReceiveEntry other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| MixerReceiveEntry([AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/) other)  | Upcast an instance of type [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/) to [MixerReceiveEntry](/vext/ref/fb/mixerreceiveentry/).  |
-| MixerReceiveEntry([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MixerReceiveEntry](/vext/ref/fb/mixerreceiveentry/). |
+Creates a new [MixerReceiveEntry](/vext/ref/fb/mixerreceiveentry) frostbite instance.
 
-## Properties
+### MixerReceiveEntry {#constructor-1}
+> **MixerReceiveEntry**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name   | Type                                       | Description |
-| ------ | ------------------------------------------ | ----------- |
-| out    | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/)   |             |
-| source | [AudioGraphParameter](/vext/ref/fb/audiographparameter/) |             |
-| mixer  | [MixerAsset](/vext/ref/fb/mixerasset/)                   |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [MixerReceiveEntry](/vext/ref/fb/mixerreceiveentry/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MixerReceiveEntry](/vext/ref/fb/mixerreceiveentry/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MixerReceiveEntry](/vext/ref/fb/mixerreceiveentry) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MixerReceiveEntry {#constructor-2}
+> **MixerReceiveEntry**(other: [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup))
+
+Casts an instance of type [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup) to [MixerReceiveEntry](/vext/ref/fb/mixerreceiveentry). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup) | The instance to cast to [MixerReceiveEntry](/vext/ref/fb/mixerreceiveentry). |
+
+### MixerReceiveEntry {#constructor-3}
+> **MixerReceiveEntry**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MixerReceiveEntry](/vext/ref/fb/mixerreceiveentry). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MixerReceiveEntry](/vext/ref/fb/mixerreceiveentry). |
+
+## Properties
+### {{% prop-heading "out" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "source" %}}
+> **[AudioGraphParameter](/vext/ref/fb/audiographparameter)** | **nil**
+
+### {{% prop-heading "mixer" %}}
+> **[MixerAsset](/vext/ref/fb/mixerasset)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MixerReceiveEntry](/vext/ref/fb/mixerreceiveentry) type.
+

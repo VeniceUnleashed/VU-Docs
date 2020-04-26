@@ -1,37 +1,63 @@
 ---
 title: SpectatorSubViewData
 ---
-### Base Classes
 
-[SubViewData](/vext/ref/fb/subviewdata/)
+Inherits from 
+[SubViewData](/vext/ref/fb/subviewdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SpectatorSubViewData](#constructor-0)**() |
+| **[SpectatorSubViewData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SpectatorSubViewData](#constructor-2)**(other: [SubViewData](/vext/ref/fb/subviewdata)) |
+| **[SpectatorSubViewData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SpectatorSubViewData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SpectatorSubViewData {#constructor-0}
+> **SpectatorSubViewData**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| SpectatorSubViewData()                                                          | Create a new instance of this container type.                                                                                   |
-| SpectatorSubViewData(SpectatorSubViewData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| SpectatorSubViewData([SubViewData](/vext/ref/fb/subviewdata/) other)                          | Upcast an instance of type [SubViewData](/vext/ref/fb/subviewdata/) to [SpectatorSubViewData](/vext/ref/fb/spectatorsubviewdata/).                          |
-| SpectatorSubViewData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SpectatorSubViewData](/vext/ref/fb/spectatorsubviewdata/). |
+Creates a new [SpectatorSubViewData](/vext/ref/fb/spectatorsubviewdata) frostbite instance.
 
-## Methods
+### SpectatorSubViewData {#constructor-1}
+> **SpectatorSubViewData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [SpectatorSubViewData](/vext/ref/fb/spectatorsubviewdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SpectatorSubViewData](/vext/ref/fb/spectatorsubviewdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SpectatorSubViewData](/vext/ref/fb/spectatorsubviewdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SpectatorSubViewData {#constructor-2}
+> **SpectatorSubViewData**(other: [SubViewData](/vext/ref/fb/subviewdata))
+
+Casts an instance of type [SubViewData](/vext/ref/fb/subviewdata) to [SpectatorSubViewData](/vext/ref/fb/spectatorsubviewdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SubViewData](/vext/ref/fb/subviewdata) | The instance to cast to [SpectatorSubViewData](/vext/ref/fb/spectatorsubviewdata). |
+
+### SpectatorSubViewData {#constructor-3}
+> **SpectatorSubViewData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SpectatorSubViewData](/vext/ref/fb/spectatorsubviewdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SpectatorSubViewData](/vext/ref/fb/spectatorsubviewdata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SpectatorSubViewData](/vext/ref/fb/spectatorsubviewdata) type.
+

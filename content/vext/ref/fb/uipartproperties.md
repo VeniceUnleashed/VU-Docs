@@ -1,34 +1,65 @@
 ---
 title: UIPartProperties
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIPartProperties](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "identifier" >}} | [UIPartIdentifier](/vext/ref/fb/uipartidentifier) |
+| {{< prop "range" >}} | float |
+| {{< prop "frequency" >}} | float |
+| {{< prop "compensateFreelook" >}} | bool |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [UIPartProperties](/vext/ref/fb/uipartproperties) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIPartProperties" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIPartProperties {#constructor-0}
+> **UIPartProperties**()
 
-| Constructor                              | Description                                              |
-| ---------------------------------------- | -------------------------------------------------------- |
-| UIPartProperties()                       | Create a new instance of this structure type.            |
-| UIPartProperties(UIPartProperties other) | Create a reference copy of a structure of the same type. |
+Creates a new [UIPartProperties](/vext/ref/fb/uipartproperties) frostbite structure.
 
 ## Properties
+### {{% prop-heading "identifier" %}}
+> **[UIPartIdentifier](/vext/ref/fb/uipartidentifier)**
 
-| Name               | Type                                 | Description |
-| ------------------ | ------------------------------------ | ----------- |
-| identifier         | [UIPartIdentifier](/vext/ref/fb/uipartidentifier/) |             |
-| range              | number                               |             |
-| frequency          | number                               |             |
-| compensateFreelook | bool                                 |             |
+### {{% prop-heading "range" %}}
+> **float**
+
+### {{% prop-heading "frequency" %}}
+> **float**
+
+### {{% prop-heading "compensateFreelook" %}}
+> **bool**
 
 ## Methods
-
-| Type                                 | Name            | Parameters |
-| ------------------------------------ | --------------- | ---------- |
-| [UIPartProperties](/vext/ref/fb/uipartproperties/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [UIPartProperties](/vext/ref/fb/uipartproperties)
 
-> [UIPartProperties](/vext/ref/fb/uipartproperties/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[UIPartProperties](/vext/ref/fb/uipartproperties)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIPartProperties](/vext/ref/fb/uipartproperties) type.
+

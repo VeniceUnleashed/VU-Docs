@@ -1,14 +1,11 @@
 ---
 title: MapMarkerColorType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **MMCTRed** | Value: **0** |
+| **MMCTBlue** | Value: **1** |
+| **MMCTGreen** | Value: **2** |
 
-| Name      | Value | Description |
-| --------- | ----- | ----------- |
-| MMCTRed   | 0     |             |
-| MMCTBlue  | 1     |             |
-| MMCTGreen | 2     |             |

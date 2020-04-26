@@ -1,46 +1,98 @@
 ---
 title: TransformEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[TransformEntityData](#constructor-0)**() |
+| **[TransformEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[TransformEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[TransformEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[TransformEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[TransformEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "defaultTransform" >}} | [LinearTransform](/vext/ref/shared/class/lineartransform) |
+| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "TransformEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### TransformEntityData {#constructor-0}
+> **TransformEntityData**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| TransformEntityData()                                                          | Create a new instance of this container type.                                                                                 |
-| TransformEntityData(TransformEntityData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| TransformEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [TransformEntityData](/vext/ref/fb/transformentitydata/).                            |
-| TransformEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [TransformEntityData](/vext/ref/fb/transformentitydata/).                    |
-| TransformEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [TransformEntityData](/vext/ref/fb/transformentitydata/).              |
-| TransformEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TransformEntityData](/vext/ref/fb/transformentitydata/). |
+Creates a new [TransformEntityData](/vext/ref/fb/transformentitydata) frostbite instance.
 
-## Properties
+### TransformEntityData {#constructor-1}
+> **TransformEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name             | Type                                                    | Description |
-| ---------------- | ------------------------------------------------------- | ----------- |
-| defaultTransform | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
-| realm            | [Realm](/vext/ref/fb/realm/)                                          |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [TransformEntityData](/vext/ref/fb/transformentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [TransformEntityData](/vext/ref/fb/transformentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [TransformEntityData](/vext/ref/fb/transformentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### TransformEntityData {#constructor-2}
+> **TransformEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [TransformEntityData](/vext/ref/fb/transformentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [TransformEntityData](/vext/ref/fb/transformentitydata). |
+
+### TransformEntityData {#constructor-3}
+> **TransformEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [TransformEntityData](/vext/ref/fb/transformentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [TransformEntityData](/vext/ref/fb/transformentitydata). |
+
+### TransformEntityData {#constructor-4}
+> **TransformEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [TransformEntityData](/vext/ref/fb/transformentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [TransformEntityData](/vext/ref/fb/transformentitydata). |
+
+### TransformEntityData {#constructor-5}
+> **TransformEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TransformEntityData](/vext/ref/fb/transformentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [TransformEntityData](/vext/ref/fb/transformentitydata). |
+
+## Properties
+### {{% prop-heading "defaultTransform" %}}
+> **[LinearTransform](/vext/ref/shared/class/lineartransform)**
+
+### {{% prop-heading "realm" %}}
+> **[Realm](/vext/ref/fb/realm)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [TransformEntityData](/vext/ref/fb/transformentitydata) type.
+

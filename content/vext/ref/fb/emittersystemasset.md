@@ -1,45 +1,80 @@
 ---
 title: EmitterSystemAsset
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[EmitterSystemAsset](#constructor-0)**() |
+| **[EmitterSystemAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[EmitterSystemAsset](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[EmitterSystemAsset](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "textureInfos" >}} | [EmitterTextureAtlasInfo](/vext/ref/fb/emittertextureatlasinfo)[] |
+| {{< prop "baseAtlasTexture" >}} | [TextureAsset](/vext/ref/fb/textureasset) \| nil |
+| {{< prop "normalAtlasTexture" >}} | [TextureAsset](/vext/ref/fb/textureasset) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "EmitterSystemAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### EmitterSystemAsset {#constructor-0}
+> **EmitterSystemAsset**()
 
-| Constructor                                                                   | Description                                                                                                                 |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| EmitterSystemAsset()                                                          | Create a new instance of this container type.                                                                               |
-| EmitterSystemAsset(EmitterSystemAsset other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| EmitterSystemAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [EmitterSystemAsset](/vext/ref/fb/emittersystemasset/).                                      |
-| EmitterSystemAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EmitterSystemAsset](/vext/ref/fb/emittersystemasset/). |
+Creates a new [EmitterSystemAsset](/vext/ref/fb/emittersystemasset) frostbite instance.
 
-## Properties
+### EmitterSystemAsset {#constructor-1}
+> **EmitterSystemAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name               | Type                                                   | Description |
-| ------------------ | ------------------------------------------------------ | ----------- |
-| textureInfos       | [EmitterTextureAtlasInfo](/vext/ref/fb/emittertextureatlasinfo/)\[\] |             |
-| baseAtlasTexture   | [TextureAsset](/vext/ref/fb/textureasset/)                           |             |
-| normalAtlasTexture | [TextureAsset](/vext/ref/fb/textureasset/)                           |             |
-
-## Methods
-
-| Type                                     | Name            | Parameters                                     |
-| ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [EmitterSystemAsset](/vext/ref/fb/emittersystemasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [EmitterSystemAsset](/vext/ref/fb/emittersystemasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [EmitterSystemAsset](/vext/ref/fb/emittersystemasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### EmitterSystemAsset {#constructor-2}
+> **EmitterSystemAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [EmitterSystemAsset](/vext/ref/fb/emittersystemasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [EmitterSystemAsset](/vext/ref/fb/emittersystemasset). |
+
+### EmitterSystemAsset {#constructor-3}
+> **EmitterSystemAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EmitterSystemAsset](/vext/ref/fb/emittersystemasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [EmitterSystemAsset](/vext/ref/fb/emittersystemasset). |
+
+## Properties
+### {{% prop-heading "textureInfos" %}}
+> **[EmitterTextureAtlasInfo](/vext/ref/fb/emittertextureatlasinfo)**[]
+
+### {{% prop-heading "baseAtlasTexture" %}}
+> **[TextureAsset](/vext/ref/fb/textureasset)** | **nil**
+
+### {{% prop-heading "normalAtlasTexture" %}}
+> **[TextureAsset](/vext/ref/fb/textureasset)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [EmitterSystemAsset](/vext/ref/fb/emittersystemasset) type.
+

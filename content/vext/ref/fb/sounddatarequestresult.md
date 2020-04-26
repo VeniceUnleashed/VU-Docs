@@ -1,14 +1,11 @@
 ---
 title: SoundDataRequestResult
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **SoundDataRequestResult_NotRequested** | Value: **0** |
+| **SoundDataRequestResult_Requested** | Value: **1** |
+| **SoundDataRequestResult_Available** | Value: **2** |
 
-| Name                                 | Value | Description |
-| ------------------------------------ | ----- | ----------- |
-| SoundDataRequestResult\_NotRequested | 0     |             |
-| SoundDataRequestResult\_Requested    | 1     |             |
-| SoundDataRequestResult\_Available    | 2     |             |

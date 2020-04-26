@@ -1,43 +1,72 @@
 ---
 title: SendNodeData
 ---
-### Base Classes
 
-[AudioGraphNodeData](/vext/ref/fb/audiographnodedata/)
+Inherits from 
+[AudioGraphNodeData](/vext/ref/fb/audiographnodedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SendNodeData](#constructor-0)**() |
+| **[SendNodeData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SendNodeData](#constructor-2)**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata)) |
+| **[SendNodeData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "entries" >}} | [SendEntry](/vext/ref/fb/sendentry)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SendNodeData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SendNodeData {#constructor-0}
+> **SendNodeData**()
 
-| Constructor                                                             | Description                                                                                                     |
-| ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| SendNodeData()                                                          | Create a new instance of this container type.                                                                   |
-| SendNodeData(SendNodeData other)                                        | Create a reference copy of an instance of the same type.                                                        |
-| SendNodeData([AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) other)            | Upcast an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) to [SendNodeData](/vext/ref/fb/sendnodedata/).            |
-| SendNodeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SendNodeData](/vext/ref/fb/sendnodedata/). |
+Creates a new [SendNodeData](/vext/ref/fb/sendnodedata) frostbite instance.
 
-## Properties
+### SendNodeData {#constructor-1}
+> **SendNodeData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name    | Type                       | Description |
-| ------- | -------------------------- | ----------- |
-| entries | [SendEntry](/vext/ref/fb/sendentry/)\[\] |             |
-
-## Methods
-
-| Type                         | Name            | Parameters                                     |
-| ---------------------------- | --------------- | ---------------------------------------------- |
-| [SendNodeData](/vext/ref/fb/sendnodedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SendNodeData](/vext/ref/fb/sendnodedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SendNodeData](/vext/ref/fb/sendnodedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SendNodeData {#constructor-2}
+> **SendNodeData**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata))
+
+Casts an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) to [SendNodeData](/vext/ref/fb/sendnodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) | The instance to cast to [SendNodeData](/vext/ref/fb/sendnodedata). |
+
+### SendNodeData {#constructor-3}
+> **SendNodeData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SendNodeData](/vext/ref/fb/sendnodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SendNodeData](/vext/ref/fb/sendnodedata). |
+
+## Properties
+### {{% prop-heading "entries" %}}
+> **[SendEntry](/vext/ref/fb/sendentry)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SendNodeData](/vext/ref/fb/sendnodedata) type.
+

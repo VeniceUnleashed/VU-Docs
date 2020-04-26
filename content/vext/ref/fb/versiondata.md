@@ -1,47 +1,88 @@
 ---
 title: VersionData
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VersionData](#constructor-0)**() |
+| **[VersionData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VersionData](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[VersionData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "disclaimer" >}} | string |
+| {{< prop "version" >}} | int |
+| {{< prop "dateTime" >}} | string |
+| {{< prop "branchId" >}} | string |
+| {{< prop "gameName" >}} | string |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VersionData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VersionData {#constructor-0}
+> **VersionData**()
 
-| Constructor                                                            | Description                                                                                                   |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| VersionData()                                                          | Create a new instance of this container type.                                                                 |
-| VersionData(VersionData other)                                         | Create a reference copy of an instance of the same type.                                                      |
-| VersionData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [VersionData](/vext/ref/fb/versiondata/).                                      |
-| VersionData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VersionData](/vext/ref/fb/versiondata/). |
+Creates a new [VersionData](/vext/ref/fb/versiondata) frostbite instance.
 
-## Properties
+### VersionData {#constructor-1}
+> **VersionData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name       | Type   | Description |
-| ---------- | ------ | ----------- |
-| disclaimer | string |             |
-| version    | number |             |
-| dateTime   | string |             |
-| branchId   | string |             |
-| gameName   | string |             |
-
-## Methods
-
-| Type                       | Name            | Parameters                                     |
-| -------------------------- | --------------- | ---------------------------------------------- |
-| [VersionData](/vext/ref/fb/versiondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VersionData](/vext/ref/fb/versiondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VersionData](/vext/ref/fb/versiondata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VersionData {#constructor-2}
+> **VersionData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [VersionData](/vext/ref/fb/versiondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [VersionData](/vext/ref/fb/versiondata). |
+
+### VersionData {#constructor-3}
+> **VersionData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VersionData](/vext/ref/fb/versiondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VersionData](/vext/ref/fb/versiondata). |
+
+## Properties
+### {{% prop-heading "disclaimer" %}}
+> **string**
+
+### {{% prop-heading "version" %}}
+> **int**
+
+### {{% prop-heading "dateTime" %}}
+> **string**
+
+### {{% prop-heading "branchId" %}}
+> **string**
+
+### {{% prop-heading "gameName" %}}
+> **string**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VersionData](/vext/ref/fb/versiondata) type.
+

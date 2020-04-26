@@ -1,51 +1,139 @@
 ---
 title: VeniceExplosionEntityData
 ---
-### Base Classes
 
-[ExplosionEntityData](/vext/ref/fb/explosionentitydata/)
+Inherits from 
+[ExplosionEntityData](/vext/ref/fb/explosionentitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VeniceExplosionEntityData](#constructor-0)**() |
+| **[VeniceExplosionEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VeniceExplosionEntityData](#constructor-2)**(other: [ExplosionEntityData](/vext/ref/fb/explosionentitydata)) |
+| **[VeniceExplosionEntityData](#constructor-3)**(other: [GameEntityData](/vext/ref/fb/gameentitydata)) |
+| **[VeniceExplosionEntityData](#constructor-4)**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata)) |
+| **[VeniceExplosionEntityData](#constructor-5)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[VeniceExplosionEntityData](#constructor-6)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[VeniceExplosionEntityData](#constructor-7)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[VeniceExplosionEntityData](#constructor-8)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "unspottableTime" >}} | float |
+| {{< prop "unspotsOnExplode" >}} | bool |
+| {{< prop "spotsOnExplode" >}} | bool |
+| {{< prop "isCausingSuppression" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VeniceExplosionEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VeniceExplosionEntityData {#constructor-0}
+> **VeniceExplosionEntityData**()
 
-| Constructor                                                                          | Description                                                                                                                               |
-| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| VeniceExplosionEntityData()                                                          | Create a new instance of this container type.                                                                                             |
-| VeniceExplosionEntityData(VeniceExplosionEntityData other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| VeniceExplosionEntityData([ExplosionEntityData](/vext/ref/fb/explosionentitydata/) other)          | Upcast an instance of type [ExplosionEntityData](/vext/ref/fb/explosionentitydata/) to [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata/).          |
-| VeniceExplosionEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata/).                    |
-| VeniceExplosionEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata/).              |
-| VeniceExplosionEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata/).                            |
-| VeniceExplosionEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata/).                    |
-| VeniceExplosionEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata/).              |
-| VeniceExplosionEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata/). |
+Creates a new [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata) frostbite instance.
 
-## Properties
+### VeniceExplosionEntityData {#constructor-1}
+> **VeniceExplosionEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                 | Type   | Description |
-| -------------------- | ------ | ----------- |
-| unspottableTime      | number |             |
-| unspotsOnExplode     | bool   |             |
-| spotsOnExplode       | bool   |             |
-| isCausingSuppression | bool   |             |
-
-## Methods
-
-| Type                                                   | Name            | Parameters                                     |
-| ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VeniceExplosionEntityData {#constructor-2}
+> **VeniceExplosionEntityData**(other: [ExplosionEntityData](/vext/ref/fb/explosionentitydata))
+
+Casts an instance of type [ExplosionEntityData](/vext/ref/fb/explosionentitydata) to [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ExplosionEntityData](/vext/ref/fb/explosionentitydata) | The instance to cast to [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata). |
+
+### VeniceExplosionEntityData {#constructor-3}
+> **VeniceExplosionEntityData**(other: [GameEntityData](/vext/ref/fb/gameentitydata))
+
+Casts an instance of type [GameEntityData](/vext/ref/fb/gameentitydata) to [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameEntityData](/vext/ref/fb/gameentitydata) | The instance to cast to [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata). |
+
+### VeniceExplosionEntityData {#constructor-4}
+> **VeniceExplosionEntityData**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata))
+
+Casts an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata) to [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SpatialEntityData](/vext/ref/fb/spatialentitydata) | The instance to cast to [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata). |
+
+### VeniceExplosionEntityData {#constructor-5}
+> **VeniceExplosionEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata). |
+
+### VeniceExplosionEntityData {#constructor-6}
+> **VeniceExplosionEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata). |
+
+### VeniceExplosionEntityData {#constructor-7}
+> **VeniceExplosionEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata). |
+
+### VeniceExplosionEntityData {#constructor-8}
+> **VeniceExplosionEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata). |
+
+## Properties
+### {{% prop-heading "unspottableTime" %}}
+> **float**
+
+### {{% prop-heading "unspotsOnExplode" %}}
+> **bool**
+
+### {{% prop-heading "spotsOnExplode" %}}
+> **bool**
+
+### {{% prop-heading "isCausingSuppression" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VeniceExplosionEntityData](/vext/ref/fb/veniceexplosionentitydata) type.
+

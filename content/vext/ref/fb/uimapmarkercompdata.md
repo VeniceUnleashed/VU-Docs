@@ -1,44 +1,83 @@
 ---
 title: UIMapmarkerCompData
 ---
-### Base Classes
 
-[UIComponentData](/vext/ref/fb/uicomponentdata/)
+Inherits from 
+[UIComponentData](/vext/ref/fb/uicomponentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIMapmarkerCompData](#constructor-0)**() |
+| **[UIMapmarkerCompData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UIMapmarkerCompData](#constructor-2)**(other: [UIComponentData](/vext/ref/fb/uicomponentdata)) |
+| **[UIMapmarkerCompData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[UIMapmarkerCompData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "proximityIntervals" >}} | int[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIMapmarkerCompData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIMapmarkerCompData {#constructor-0}
+> **UIMapmarkerCompData**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| UIMapmarkerCompData()                                                          | Create a new instance of this container type.                                                                                 |
-| UIMapmarkerCompData(UIMapmarkerCompData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| UIMapmarkerCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UIMapmarkerCompData](/vext/ref/fb/uimapmarkercompdata/).                  |
-| UIMapmarkerCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UIMapmarkerCompData](/vext/ref/fb/uimapmarkercompdata/).                                      |
-| UIMapmarkerCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIMapmarkerCompData](/vext/ref/fb/uimapmarkercompdata/). |
+Creates a new [UIMapmarkerCompData](/vext/ref/fb/uimapmarkercompdata) frostbite instance.
 
-## Properties
+### UIMapmarkerCompData {#constructor-1}
+> **UIMapmarkerCompData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name               | Type       | Description |
-| ------------------ | ---------- | ----------- |
-| proximityIntervals | number\[\] |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [UIMapmarkerCompData](/vext/ref/fb/uimapmarkercompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UIMapmarkerCompData](/vext/ref/fb/uimapmarkercompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UIMapmarkerCompData](/vext/ref/fb/uimapmarkercompdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UIMapmarkerCompData {#constructor-2}
+> **UIMapmarkerCompData**(other: [UIComponentData](/vext/ref/fb/uicomponentdata))
+
+Casts an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata) to [UIMapmarkerCompData](/vext/ref/fb/uimapmarkercompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIComponentData](/vext/ref/fb/uicomponentdata) | The instance to cast to [UIMapmarkerCompData](/vext/ref/fb/uimapmarkercompdata). |
+
+### UIMapmarkerCompData {#constructor-3}
+> **UIMapmarkerCompData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [UIMapmarkerCompData](/vext/ref/fb/uimapmarkercompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [UIMapmarkerCompData](/vext/ref/fb/uimapmarkercompdata). |
+
+### UIMapmarkerCompData {#constructor-4}
+> **UIMapmarkerCompData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIMapmarkerCompData](/vext/ref/fb/uimapmarkercompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UIMapmarkerCompData](/vext/ref/fb/uimapmarkercompdata). |
+
+## Properties
+### {{% prop-heading "proximityIntervals" %}}
+> **int**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIMapmarkerCompData](/vext/ref/fb/uimapmarkercompdata) type.
+

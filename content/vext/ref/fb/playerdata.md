@@ -1,45 +1,80 @@
 ---
 title: PlayerData
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PlayerData](#constructor-0)**() |
+| **[PlayerData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PlayerData](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[PlayerData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "playerView" >}} | [PlayerViewData](/vext/ref/fb/playerviewdata) \| nil |
+| {{< prop "inputConceptDefinition" >}} | [EntryInputActionMapsData](/vext/ref/fb/entryinputactionmapsdata) \| nil |
+| {{< prop "inputMapping" >}} | [InputActionMappingsData](/vext/ref/fb/inputactionmappingsdata) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PlayerData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PlayerData {#constructor-0}
+> **PlayerData**()
 
-| Constructor                                                           | Description                                                                                                 |
-| --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| PlayerData()                                                          | Create a new instance of this container type.                                                               |
-| PlayerData(PlayerData other)                                          | Create a reference copy of an instance of the same type.                                                    |
-| PlayerData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [PlayerData](/vext/ref/fb/playerdata/).                                      |
-| PlayerData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PlayerData](/vext/ref/fb/playerdata/). |
+Creates a new [PlayerData](/vext/ref/fb/playerdata) frostbite instance.
 
-## Properties
+### PlayerData {#constructor-1}
+> **PlayerData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                   | Type                                                 | Description |
-| ---------------------- | ---------------------------------------------------- | ----------- |
-| playerView             | [PlayerViewData](/vext/ref/fb/playerviewdata/)                     |             |
-| inputConceptDefinition | [EntryInputActionMapsData](/vext/ref/fb/entryinputactionmapsdata/) |             |
-| inputMapping           | [InputActionMappingsData](/vext/ref/fb/inputactionmappingsdata/)   |             |
-
-## Methods
-
-| Type                     | Name            | Parameters                                     |
-| ------------------------ | --------------- | ---------------------------------------------- |
-| [PlayerData](/vext/ref/fb/playerdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PlayerData](/vext/ref/fb/playerdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PlayerData](/vext/ref/fb/playerdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PlayerData {#constructor-2}
+> **PlayerData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [PlayerData](/vext/ref/fb/playerdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [PlayerData](/vext/ref/fb/playerdata). |
+
+### PlayerData {#constructor-3}
+> **PlayerData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PlayerData](/vext/ref/fb/playerdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PlayerData](/vext/ref/fb/playerdata). |
+
+## Properties
+### {{% prop-heading "playerView" %}}
+> **[PlayerViewData](/vext/ref/fb/playerviewdata)** | **nil**
+
+### {{% prop-heading "inputConceptDefinition" %}}
+> **[EntryInputActionMapsData](/vext/ref/fb/entryinputactionmapsdata)** | **nil**
+
+### {{% prop-heading "inputMapping" %}}
+> **[InputActionMappingsData](/vext/ref/fb/inputactionmappingsdata)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PlayerData](/vext/ref/fb/playerdata) type.
+

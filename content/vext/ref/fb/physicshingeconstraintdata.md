@@ -1,48 +1,106 @@
 ---
 title: PhysicsHingeConstraintData
 ---
-### Base Classes
 
-[PhysicsConstraintData](/vext/ref/fb/physicsconstraintdata/)
+Inherits from 
+[PhysicsConstraintData](/vext/ref/fb/physicsconstraintdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PhysicsHingeConstraintData](#constructor-0)**() |
+| **[PhysicsHingeConstraintData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PhysicsHingeConstraintData](#constructor-2)**(other: [PhysicsConstraintData](/vext/ref/fb/physicsconstraintdata)) |
+| **[PhysicsHingeConstraintData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[PhysicsHingeConstraintData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[PhysicsHingeConstraintData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "minAngle" >}} | float |
+| {{< prop "angularFriction" >}} | float |
+| {{< prop "maxAngle" >}} | float |
+| {{< prop "hasLimits" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PhysicsHingeConstraintData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PhysicsHingeConstraintData {#constructor-0}
+> **PhysicsHingeConstraintData**()
 
-| Constructor                                                                           | Description                                                                                                                                 |
-| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| PhysicsHingeConstraintData()                                                          | Create a new instance of this container type.                                                                                               |
-| PhysicsHingeConstraintData(PhysicsHingeConstraintData other)                          | Create a reference copy of an instance of the same type.                                                                                    |
-| PhysicsHingeConstraintData([PhysicsConstraintData](/vext/ref/fb/physicsconstraintdata/) other)      | Upcast an instance of type [PhysicsConstraintData](/vext/ref/fb/physicsconstraintdata/) to [PhysicsHingeConstraintData](/vext/ref/fb/physicshingeconstraintdata/).      |
-| PhysicsHingeConstraintData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [PhysicsHingeConstraintData](/vext/ref/fb/physicshingeconstraintdata/).                    |
-| PhysicsHingeConstraintData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [PhysicsHingeConstraintData](/vext/ref/fb/physicshingeconstraintdata/).              |
-| PhysicsHingeConstraintData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PhysicsHingeConstraintData](/vext/ref/fb/physicshingeconstraintdata/). |
+Creates a new [PhysicsHingeConstraintData](/vext/ref/fb/physicshingeconstraintdata) frostbite instance.
 
-## Properties
+### PhysicsHingeConstraintData {#constructor-1}
+> **PhysicsHingeConstraintData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name            | Type   | Description |
-| --------------- | ------ | ----------- |
-| minAngle        | number |             |
-| angularFriction | number |             |
-| maxAngle        | number |             |
-| hasLimits       | bool   |             |
-
-## Methods
-
-| Type                                                     | Name            | Parameters                                     |
-| -------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [PhysicsHingeConstraintData](/vext/ref/fb/physicshingeconstraintdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PhysicsHingeConstraintData](/vext/ref/fb/physicshingeconstraintdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PhysicsHingeConstraintData](/vext/ref/fb/physicshingeconstraintdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PhysicsHingeConstraintData {#constructor-2}
+> **PhysicsHingeConstraintData**(other: [PhysicsConstraintData](/vext/ref/fb/physicsconstraintdata))
+
+Casts an instance of type [PhysicsConstraintData](/vext/ref/fb/physicsconstraintdata) to [PhysicsHingeConstraintData](/vext/ref/fb/physicshingeconstraintdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [PhysicsConstraintData](/vext/ref/fb/physicsconstraintdata) | The instance to cast to [PhysicsHingeConstraintData](/vext/ref/fb/physicshingeconstraintdata). |
+
+### PhysicsHingeConstraintData {#constructor-3}
+> **PhysicsHingeConstraintData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [PhysicsHingeConstraintData](/vext/ref/fb/physicshingeconstraintdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [PhysicsHingeConstraintData](/vext/ref/fb/physicshingeconstraintdata). |
+
+### PhysicsHingeConstraintData {#constructor-4}
+> **PhysicsHingeConstraintData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [PhysicsHingeConstraintData](/vext/ref/fb/physicshingeconstraintdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [PhysicsHingeConstraintData](/vext/ref/fb/physicshingeconstraintdata). |
+
+### PhysicsHingeConstraintData {#constructor-5}
+> **PhysicsHingeConstraintData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PhysicsHingeConstraintData](/vext/ref/fb/physicshingeconstraintdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PhysicsHingeConstraintData](/vext/ref/fb/physicshingeconstraintdata). |
+
+## Properties
+### {{% prop-heading "minAngle" %}}
+> **float**
+
+### {{% prop-heading "angularFriction" %}}
+> **float**
+
+### {{% prop-heading "maxAngle" %}}
+> **float**
+
+### {{% prop-heading "hasLimits" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PhysicsHingeConstraintData](/vext/ref/fb/physicshingeconstraintdata) type.
+

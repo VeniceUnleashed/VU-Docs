@@ -1,16 +1,13 @@
 ---
 title: SurfaceShaderType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **SurfaceShaderType_Opaque** | Value: **0** |
+| **SurfaceShaderType_OpaqueAlphaTest** | Value: **1** |
+| **SurfaceShaderType_OpaqueAlphaTestSimple** | Value: **2** |
+| **SurfaceShaderType_Transparent** | Value: **3** |
+| **SurfaceShaderType_TransparentDecal** | Value: **4** |
 
-| Name                                     | Value | Description |
-| ---------------------------------------- | ----- | ----------- |
-| SurfaceShaderType\_Opaque                | 0     |             |
-| SurfaceShaderType\_OpaqueAlphaTest       | 1     |             |
-| SurfaceShaderType\_OpaqueAlphaTestSimple | 2     |             |
-| SurfaceShaderType\_Transparent           | 3     |             |
-| SurfaceShaderType\_TransparentDecal      | 4     |             |

@@ -1,16 +1,13 @@
 ---
 title: MatchmakingPlatform
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **MatchmakingPlatform_PC** | Value: **0** |
+| **MatchmakingPlatform_Console** | Value: **1** |
+| **MatchmakingPlatform_360** | Value: **2** |
+| **MatchmakingPlatform_PS3** | Value: **3** |
+| **MatchmakingPlatform_Any** | Value: **4** |
 
-| Name                         | Value | Description |
-| ---------------------------- | ----- | ----------- |
-| MatchmakingPlatform\_PC      | 0     |             |
-| MatchmakingPlatform\_Console | 1     |             |
-| MatchmakingPlatform\_360     | 2     |             |
-| MatchmakingPlatform\_PS3     | 3     |             |
-| MatchmakingPlatform\_Any     | 4     |             |

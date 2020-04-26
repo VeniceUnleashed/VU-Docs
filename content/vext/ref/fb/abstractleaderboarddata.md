@@ -1,42 +1,61 @@
 ---
 title: AbstractLeaderboardData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AbstractLeaderboardData](#constructor-0)**() |
+| **[AbstractLeaderboardData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[AbstractLeaderboardData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "leaderboardName" >}} | string |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AbstractLeaderboardData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AbstractLeaderboardData {#constructor-0}
+> **AbstractLeaderboardData**()
 
-| Constructor                                                                        | Description                                                                                                                           |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| AbstractLeaderboardData()                                                          | Create a new instance of this container type.                                                                                         |
-| AbstractLeaderboardData(AbstractLeaderboardData other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| AbstractLeaderboardData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AbstractLeaderboardData](/vext/ref/fb/abstractleaderboarddata/). |
+Creates a new [AbstractLeaderboardData](/vext/ref/fb/abstractleaderboarddata) frostbite instance.
 
-## Properties
+### AbstractLeaderboardData {#constructor-1}
+> **AbstractLeaderboardData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name            | Type   | Description |
-| --------------- | ------ | ----------- |
-| leaderboardName | string |             |
-
-## Methods
-
-| Type                                               | Name            | Parameters                                     |
-| -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [AbstractLeaderboardData](/vext/ref/fb/abstractleaderboarddata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [AbstractLeaderboardData](/vext/ref/fb/abstractleaderboarddata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [AbstractLeaderboardData](/vext/ref/fb/abstractleaderboarddata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### AbstractLeaderboardData {#constructor-2}
+> **AbstractLeaderboardData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AbstractLeaderboardData](/vext/ref/fb/abstractleaderboarddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [AbstractLeaderboardData](/vext/ref/fb/abstractleaderboarddata). |
+
+## Properties
+### {{% prop-heading "leaderboardName" %}}
+> **string**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AbstractLeaderboardData](/vext/ref/fb/abstractleaderboarddata) type.
+

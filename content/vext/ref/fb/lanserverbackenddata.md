@@ -1,38 +1,74 @@
 ---
 title: LanServerBackendData
 ---
-### Base Classes
 
-[ServerBackendData](/vext/ref/fb/serverbackenddata/)
+Inherits from 
+[ServerBackendData](/vext/ref/fb/serverbackenddata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[LanServerBackendData](#constructor-0)**() |
+| **[LanServerBackendData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[LanServerBackendData](#constructor-2)**(other: [ServerBackendData](/vext/ref/fb/serverbackenddata)) |
+| **[LanServerBackendData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[LanServerBackendData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "LanServerBackendData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### LanServerBackendData {#constructor-0}
+> **LanServerBackendData**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| LanServerBackendData()                                                          | Create a new instance of this container type.                                                                                   |
-| LanServerBackendData(LanServerBackendData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| LanServerBackendData([ServerBackendData](/vext/ref/fb/serverbackenddata/) other)              | Upcast an instance of type [ServerBackendData](/vext/ref/fb/serverbackenddata/) to [LanServerBackendData](/vext/ref/fb/lanserverbackenddata/).              |
-| LanServerBackendData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [LanServerBackendData](/vext/ref/fb/lanserverbackenddata/).                                      |
-| LanServerBackendData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LanServerBackendData](/vext/ref/fb/lanserverbackenddata/). |
+Creates a new [LanServerBackendData](/vext/ref/fb/lanserverbackenddata) frostbite instance.
 
-## Methods
+### LanServerBackendData {#constructor-1}
+> **LanServerBackendData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [LanServerBackendData](/vext/ref/fb/lanserverbackenddata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [LanServerBackendData](/vext/ref/fb/lanserverbackenddata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [LanServerBackendData](/vext/ref/fb/lanserverbackenddata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### LanServerBackendData {#constructor-2}
+> **LanServerBackendData**(other: [ServerBackendData](/vext/ref/fb/serverbackenddata))
+
+Casts an instance of type [ServerBackendData](/vext/ref/fb/serverbackenddata) to [LanServerBackendData](/vext/ref/fb/lanserverbackenddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ServerBackendData](/vext/ref/fb/serverbackenddata) | The instance to cast to [LanServerBackendData](/vext/ref/fb/lanserverbackenddata). |
+
+### LanServerBackendData {#constructor-3}
+> **LanServerBackendData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [LanServerBackendData](/vext/ref/fb/lanserverbackenddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [LanServerBackendData](/vext/ref/fb/lanserverbackenddata). |
+
+### LanServerBackendData {#constructor-4}
+> **LanServerBackendData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LanServerBackendData](/vext/ref/fb/lanserverbackenddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [LanServerBackendData](/vext/ref/fb/lanserverbackenddata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [LanServerBackendData](/vext/ref/fb/lanserverbackenddata) type.
+

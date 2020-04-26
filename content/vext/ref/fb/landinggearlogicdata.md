@@ -1,43 +1,65 @@
 ---
 title: LandingGearLogicData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[LandingGearLogicData](#constructor-0)**() |
+| **[LandingGearLogicData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[LandingGearLogicData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "retractCondition" >}} | [LandingGearConditionData](/vext/ref/fb/landinggearconditiondata) |
+| {{< prop "deployCondition" >}} | [LandingGearConditionData](/vext/ref/fb/landinggearconditiondata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "LandingGearLogicData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### LandingGearLogicData {#constructor-0}
+> **LandingGearLogicData**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| LandingGearLogicData()                                                          | Create a new instance of this container type.                                                                                   |
-| LandingGearLogicData(LandingGearLogicData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| LandingGearLogicData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LandingGearLogicData](/vext/ref/fb/landinggearlogicdata/). |
+Creates a new [LandingGearLogicData](/vext/ref/fb/landinggearlogicdata) frostbite instance.
 
-## Properties
+### LandingGearLogicData {#constructor-1}
+> **LandingGearLogicData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name             | Type                                                 | Description |
-| ---------------- | ---------------------------------------------------- | ----------- |
-| retractCondition | [LandingGearConditionData](/vext/ref/fb/landinggearconditiondata/) |             |
-| deployCondition  | [LandingGearConditionData](/vext/ref/fb/landinggearconditiondata/) |             |
-
-## Methods
-
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [LandingGearLogicData](/vext/ref/fb/landinggearlogicdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [LandingGearLogicData](/vext/ref/fb/landinggearlogicdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [LandingGearLogicData](/vext/ref/fb/landinggearlogicdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### LandingGearLogicData {#constructor-2}
+> **LandingGearLogicData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LandingGearLogicData](/vext/ref/fb/landinggearlogicdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [LandingGearLogicData](/vext/ref/fb/landinggearlogicdata). |
+
+## Properties
+### {{% prop-heading "retractCondition" %}}
+> **[LandingGearConditionData](/vext/ref/fb/landinggearconditiondata)**
+
+### {{% prop-heading "deployCondition" %}}
+> **[LandingGearConditionData](/vext/ref/fb/landinggearconditiondata)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [LandingGearLogicData](/vext/ref/fb/landinggearlogicdata) type.
+

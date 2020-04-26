@@ -1,59 +1,129 @@
 ---
 title: AlternateCameraViewData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AlternateCameraViewData](#constructor-0)**() |
+| **[AlternateCameraViewData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[AlternateCameraViewData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "meshOffset" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "hud" >}} | [HudData](/vext/ref/fb/huddata) |
+| {{< prop "fieldOfView" >}} | float |
+| {{< prop "worldSpaceLockEfficiency" >}} | float |
+| {{< prop "mesh" >}} | [RigidMeshAsset](/vext/ref/fb/rigidmeshasset) \| nil |
+| {{< prop "maskMeshBlueprint" >}} | [ObjectBlueprint](/vext/ref/fb/objectblueprint) \| nil |
+| {{< prop "fadeInDuration" >}} | float |
+| {{< prop "fovTransitionTime" >}} | float |
+| {{< prop "blackDuration" >}} | float |
+| {{< prop "inputSuppression" >}} | [InputSuppressionData](/vext/ref/fb/inputsuppressiondata) |
+| {{< prop "screenExposureAreaScale" >}} | float |
+| {{< prop "fadeOutDuration" >}} | float |
+| {{< prop "allowFieldOfViewScaling" >}} | bool |
+| {{< prop "lockMeshToRenderView" >}} | bool |
+| {{< prop "toggleViewChange" >}} | bool |
+| {{< prop "useProfileOptionForToggleViewChange" >}} | bool |
+| {{< prop "flirEnabled" >}} | bool |
+| {{< prop "fadeToBlack" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AlternateCameraViewData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AlternateCameraViewData {#constructor-0}
+> **AlternateCameraViewData**()
 
-| Constructor                                                                        | Description                                                                                                                           |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| AlternateCameraViewData()                                                          | Create a new instance of this container type.                                                                                         |
-| AlternateCameraViewData(AlternateCameraViewData other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| AlternateCameraViewData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AlternateCameraViewData](/vext/ref/fb/alternatecameraviewdata/). |
+Creates a new [AlternateCameraViewData](/vext/ref/fb/alternatecameraviewdata) frostbite instance.
 
-## Properties
+### AlternateCameraViewData {#constructor-1}
+> **AlternateCameraViewData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                                | Type                                         | Description |
-| ----------------------------------- | -------------------------------------------- | ----------- |
-| meshOffset                          | [Vec3](/vext/ref/shared/class/vec3)            |             |
-| hud                                 | [HudData](/vext/ref/fb/huddata/)                           |             |
-| fieldOfView                         | number                                       |             |
-| worldSpaceLockEfficiency            | number                                       |             |
-| mesh                                | [RigidMeshAsset](/vext/ref/fb/rigidmeshasset/)             |             |
-| maskMeshBlueprint                   | [ObjectBlueprint](/vext/ref/fb/objectblueprint/)           |             |
-| fadeInDuration                      | number                                       |             |
-| fovTransitionTime                   | number                                       |             |
-| blackDuration                       | number                                       |             |
-| inputSuppression                    | [InputSuppressionData](/vext/ref/fb/inputsuppressiondata/) |             |
-| screenExposureAreaScale             | number                                       |             |
-| fadeOutDuration                     | number                                       |             |
-| allowFieldOfViewScaling             | bool                                         |             |
-| lockMeshToRenderView                | bool                                         |             |
-| toggleViewChange                    | bool                                         |             |
-| useProfileOptionForToggleViewChange | bool                                         |             |
-| flirEnabled                         | bool                                         |             |
-| fadeToBlack                         | bool                                         |             |
-
-## Methods
-
-| Type                                               | Name            | Parameters                                     |
-| -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [AlternateCameraViewData](/vext/ref/fb/alternatecameraviewdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [AlternateCameraViewData](/vext/ref/fb/alternatecameraviewdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [AlternateCameraViewData](/vext/ref/fb/alternatecameraviewdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### AlternateCameraViewData {#constructor-2}
+> **AlternateCameraViewData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AlternateCameraViewData](/vext/ref/fb/alternatecameraviewdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [AlternateCameraViewData](/vext/ref/fb/alternatecameraviewdata). |
+
+## Properties
+### {{% prop-heading "meshOffset" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "hud" %}}
+> **[HudData](/vext/ref/fb/huddata)**
+
+### {{% prop-heading "fieldOfView" %}}
+> **float**
+
+### {{% prop-heading "worldSpaceLockEfficiency" %}}
+> **float**
+
+### {{% prop-heading "mesh" %}}
+> **[RigidMeshAsset](/vext/ref/fb/rigidmeshasset)** | **nil**
+
+### {{% prop-heading "maskMeshBlueprint" %}}
+> **[ObjectBlueprint](/vext/ref/fb/objectblueprint)** | **nil**
+
+### {{% prop-heading "fadeInDuration" %}}
+> **float**
+
+### {{% prop-heading "fovTransitionTime" %}}
+> **float**
+
+### {{% prop-heading "blackDuration" %}}
+> **float**
+
+### {{% prop-heading "inputSuppression" %}}
+> **[InputSuppressionData](/vext/ref/fb/inputsuppressiondata)**
+
+### {{% prop-heading "screenExposureAreaScale" %}}
+> **float**
+
+### {{% prop-heading "fadeOutDuration" %}}
+> **float**
+
+### {{% prop-heading "allowFieldOfViewScaling" %}}
+> **bool**
+
+### {{% prop-heading "lockMeshToRenderView" %}}
+> **bool**
+
+### {{% prop-heading "toggleViewChange" %}}
+> **bool**
+
+### {{% prop-heading "useProfileOptionForToggleViewChange" %}}
+> **bool**
+
+### {{% prop-heading "flirEnabled" %}}
+> **bool**
+
+### {{% prop-heading "fadeToBlack" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AlternateCameraViewData](/vext/ref/fb/alternatecameraviewdata) type.
+

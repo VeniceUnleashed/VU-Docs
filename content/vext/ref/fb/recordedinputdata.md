@@ -1,43 +1,72 @@
 ---
 title: RecordedInputData
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[RecordedInputData](#constructor-0)**() |
+| **[RecordedInputData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[RecordedInputData](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[RecordedInputData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "trackData" >}} | [InputRecorderTrackData](/vext/ref/fb/inputrecordertrackdata)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "RecordedInputData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### RecordedInputData {#constructor-0}
+> **RecordedInputData**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| RecordedInputData()                                                          | Create a new instance of this container type.                                                                             |
-| RecordedInputData(RecordedInputData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| RecordedInputData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [RecordedInputData](/vext/ref/fb/recordedinputdata/).                                      |
-| RecordedInputData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RecordedInputData](/vext/ref/fb/recordedinputdata/). |
+Creates a new [RecordedInputData](/vext/ref/fb/recordedinputdata) frostbite instance.
 
-## Properties
+### RecordedInputData {#constructor-1}
+> **RecordedInputData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name      | Type                                                 | Description |
-| --------- | ---------------------------------------------------- | ----------- |
-| trackData | [InputRecorderTrackData](/vext/ref/fb/inputrecordertrackdata/)\[\] |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [RecordedInputData](/vext/ref/fb/recordedinputdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [RecordedInputData](/vext/ref/fb/recordedinputdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [RecordedInputData](/vext/ref/fb/recordedinputdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### RecordedInputData {#constructor-2}
+> **RecordedInputData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [RecordedInputData](/vext/ref/fb/recordedinputdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [RecordedInputData](/vext/ref/fb/recordedinputdata). |
+
+### RecordedInputData {#constructor-3}
+> **RecordedInputData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RecordedInputData](/vext/ref/fb/recordedinputdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [RecordedInputData](/vext/ref/fb/recordedinputdata). |
+
+## Properties
+### {{% prop-heading "trackData" %}}
+> **[InputRecorderTrackData](/vext/ref/fb/inputrecordertrackdata)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [RecordedInputData](/vext/ref/fb/recordedinputdata) type.
+

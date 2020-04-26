@@ -1,25 +1,22 @@
 ---
 title: InputDeviceMotionControllerButtons
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **IDMCB_Rup** | Value: **0** |
+| **IDMCB_Rdown** | Value: **1** |
+| **IDMCB_Rleft** | Value: **2** |
+| **IDMCB_Rright** | Value: **3** |
+| **IDMCB_start** | Value: **4** |
+| **IDMCB_alt** | Value: **5** |
+| **IDMCB_center** | Value: **6** |
+| **IDMCB_trigger** | Value: **7** |
+| **IDMCB_reload** | Value: **8** |
+| **IDMCB_pumpaction** | Value: **9** |
+| **IDMCB_Gstab** | Value: **10** |
+| **IDMCB_Grotleft** | Value: **11** |
+| **IDMCB_Grotright** | Value: **12** |
+| **IDMCB_Undefined** | Value: **13** |
 
-| Name              | Value | Description |
-| ----------------- | ----- | ----------- |
-| IDMCB\_Rup        | 0     |             |
-| IDMCB\_Rdown      | 1     |             |
-| IDMCB\_Rleft      | 2     |             |
-| IDMCB\_Rright     | 3     |             |
-| IDMCB\_start      | 4     |             |
-| IDMCB\_alt        | 5     |             |
-| IDMCB\_center     | 6     |             |
-| IDMCB\_trigger    | 7     |             |
-| IDMCB\_reload     | 8     |             |
-| IDMCB\_pumpaction | 9     |             |
-| IDMCB\_Gstab      | 10    |             |
-| IDMCB\_Grotleft   | 11    |             |
-| IDMCB\_Grotright  | 12    |             |
-| IDMCB\_Undefined  | 13    |             |

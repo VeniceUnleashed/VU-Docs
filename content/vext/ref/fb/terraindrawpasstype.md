@@ -1,14 +1,11 @@
 ---
 title: TerrainDrawPassType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **TerrainDrawPassType_SinglePass** | Value: **0** |
+| **TerrainDrawPassType_MultipassFirst** | Value: **1** |
+| **TerrainDrawPassType_MultipassConsecutive** | Value: **2** |
 
-| Name                                      | Value | Description |
-| ----------------------------------------- | ----- | ----------- |
-| TerrainDrawPassType\_SinglePass           | 0     |             |
-| TerrainDrawPassType\_MultipassFirst       | 1     |             |
-| TerrainDrawPassType\_MultipassConsecutive | 2     |             |

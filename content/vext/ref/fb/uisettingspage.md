@@ -1,32 +1,57 @@
 ---
 title: UISettingsPage
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UISettingsPage](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "nameSid" >}} | string |
+| {{< prop "settingsGroups" >}} | [UISettingsGroup](/vext/ref/fb/uisettingsgroup)[] |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [UISettingsPage](/vext/ref/fb/uisettingspage) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UISettingsPage" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UISettingsPage {#constructor-0}
+> **UISettingsPage**()
 
-| Constructor                          | Description                                              |
-| ------------------------------------ | -------------------------------------------------------- |
-| UISettingsPage()                     | Create a new instance of this structure type.            |
-| UISettingsPage(UISettingsPage other) | Create a reference copy of a structure of the same type. |
+Creates a new [UISettingsPage](/vext/ref/fb/uisettingspage) frostbite structure.
 
 ## Properties
+### {{% prop-heading "nameSid" %}}
+> **string**
 
-| Name           | Type                                   | Description |
-| -------------- | -------------------------------------- | ----------- |
-| nameSid        | string                                 |             |
-| settingsGroups | [UISettingsGroup](/vext/ref/fb/uisettingsgroup/)\[\] |             |
+### {{% prop-heading "settingsGroups" %}}
+> **[UISettingsGroup](/vext/ref/fb/uisettingsgroup)**[]
 
 ## Methods
-
-| Type                             | Name            | Parameters |
-| -------------------------------- | --------------- | ---------- |
-| [UISettingsPage](/vext/ref/fb/uisettingspage/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [UISettingsPage](/vext/ref/fb/uisettingspage)
 
-> [UISettingsPage](/vext/ref/fb/uisettingspage/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[UISettingsPage](/vext/ref/fb/uisettingspage)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UISettingsPage](/vext/ref/fb/uisettingspage) type.
+

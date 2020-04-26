@@ -1,16 +1,13 @@
 ---
 title: Buttons
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **NoneButton** | Value: **0** |
+| **XButton** | Value: **1** |
+| **SquareButton** | Value: **2** |
+| **CircleButton** | Value: **3** |
+| **TriangleButton** | Value: **4** |
 
-| Name           | Value | Description |
-| -------------- | ----- | ----------- |
-| NoneButton     | 0     |             |
-| XButton        | 1     |             |
-| SquareButton   | 2     |             |
-| CircleButton   | 3     |             |
-| TriangleButton | 4     |             |

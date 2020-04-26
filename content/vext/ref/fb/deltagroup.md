@@ -1,44 +1,76 @@
 ---
 title: DeltaGroup
 ---
-### Base Classes
 
-[AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/)
+Inherits from 
+[AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[DeltaGroup](#constructor-0)**() |
+| **[DeltaGroup](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[DeltaGroup](#constructor-2)**(other: [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup)) |
+| **[DeltaGroup](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "inValue" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "delta" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "DeltaGroup" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### DeltaGroup {#constructor-0}
+> **DeltaGroup**()
 
-| Constructor                                                           | Description                                                                                                 |
-| --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| DeltaGroup()                                                          | Create a new instance of this container type.                                                               |
-| DeltaGroup(DeltaGroup other)                                          | Create a reference copy of an instance of the same type.                                                    |
-| DeltaGroup([AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/) other)  | Upcast an instance of type [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/) to [DeltaGroup](/vext/ref/fb/deltagroup/).  |
-| DeltaGroup([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DeltaGroup](/vext/ref/fb/deltagroup/). |
+Creates a new [DeltaGroup](/vext/ref/fb/deltagroup) frostbite instance.
 
-## Properties
+### DeltaGroup {#constructor-1}
+> **DeltaGroup**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name    | Type                                     | Description |
-| ------- | ---------------------------------------- | ----------- |
-| inValue | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| delta   | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-
-## Methods
-
-| Type                     | Name            | Parameters                                     |
-| ------------------------ | --------------- | ---------------------------------------------- |
-| [DeltaGroup](/vext/ref/fb/deltagroup/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [DeltaGroup](/vext/ref/fb/deltagroup/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [DeltaGroup](/vext/ref/fb/deltagroup) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### DeltaGroup {#constructor-2}
+> **DeltaGroup**(other: [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup))
+
+Casts an instance of type [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup) to [DeltaGroup](/vext/ref/fb/deltagroup). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup) | The instance to cast to [DeltaGroup](/vext/ref/fb/deltagroup). |
+
+### DeltaGroup {#constructor-3}
+> **DeltaGroup**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DeltaGroup](/vext/ref/fb/deltagroup). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DeltaGroup](/vext/ref/fb/deltagroup). |
+
+## Properties
+### {{% prop-heading "inValue" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "delta" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [DeltaGroup](/vext/ref/fb/deltagroup) type.
+

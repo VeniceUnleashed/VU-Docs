@@ -1,44 +1,76 @@
 ---
 title: BoolUnlockValuePair
 ---
-### Base Classes
 
-[UnlockValuePair](/vext/ref/fb/unlockvaluepair/)
+Inherits from 
+[UnlockValuePair](/vext/ref/fb/unlockvaluepair)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[BoolUnlockValuePair](#constructor-0)**() |
+| **[BoolUnlockValuePair](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[BoolUnlockValuePair](#constructor-2)**(other: [UnlockValuePair](/vext/ref/fb/unlockvaluepair)) |
+| **[BoolUnlockValuePair](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "defaultValue" >}} | bool |
+| {{< prop "unlockedValue" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "BoolUnlockValuePair" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### BoolUnlockValuePair {#constructor-0}
+> **BoolUnlockValuePair**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| BoolUnlockValuePair()                                                          | Create a new instance of this container type.                                                                                 |
-| BoolUnlockValuePair(BoolUnlockValuePair other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| BoolUnlockValuePair([UnlockValuePair](/vext/ref/fb/unlockvaluepair/) other)                  | Upcast an instance of type [UnlockValuePair](/vext/ref/fb/unlockvaluepair/) to [BoolUnlockValuePair](/vext/ref/fb/boolunlockvaluepair/).                  |
-| BoolUnlockValuePair([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BoolUnlockValuePair](/vext/ref/fb/boolunlockvaluepair/). |
+Creates a new [BoolUnlockValuePair](/vext/ref/fb/boolunlockvaluepair) frostbite instance.
 
-## Properties
+### BoolUnlockValuePair {#constructor-1}
+> **BoolUnlockValuePair**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name          | Type | Description |
-| ------------- | ---- | ----------- |
-| defaultValue  | bool |             |
-| unlockedValue | bool |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [BoolUnlockValuePair](/vext/ref/fb/boolunlockvaluepair/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [BoolUnlockValuePair](/vext/ref/fb/boolunlockvaluepair/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [BoolUnlockValuePair](/vext/ref/fb/boolunlockvaluepair) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### BoolUnlockValuePair {#constructor-2}
+> **BoolUnlockValuePair**(other: [UnlockValuePair](/vext/ref/fb/unlockvaluepair))
+
+Casts an instance of type [UnlockValuePair](/vext/ref/fb/unlockvaluepair) to [BoolUnlockValuePair](/vext/ref/fb/boolunlockvaluepair). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UnlockValuePair](/vext/ref/fb/unlockvaluepair) | The instance to cast to [BoolUnlockValuePair](/vext/ref/fb/boolunlockvaluepair). |
+
+### BoolUnlockValuePair {#constructor-3}
+> **BoolUnlockValuePair**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BoolUnlockValuePair](/vext/ref/fb/boolunlockvaluepair). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [BoolUnlockValuePair](/vext/ref/fb/boolunlockvaluepair). |
+
+## Properties
+### {{% prop-heading "defaultValue" %}}
+> **bool**
+
+### {{% prop-heading "unlockedValue" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [BoolUnlockValuePair](/vext/ref/fb/boolunlockvaluepair) type.
+

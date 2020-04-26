@@ -1,15 +1,12 @@
 ---
 title: PlayerKilledWeaponType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **PlayerKilledWeaponType_Unknown** | Value: **0** |
+| **PlayerKilledWeaponType_HandheldWeapon** | Value: **1** |
+| **PlayerKilledWeaponType_Vehicle** | Value: **2** |
+| **PlayerKilledWeaponType_Count** | Value: **3** |
 
-| Name                                   | Value | Description |
-| -------------------------------------- | ----- | ----------- |
-| PlayerKilledWeaponType\_Unknown        | 0     |             |
-| PlayerKilledWeaponType\_HandheldWeapon | 1     |             |
-| PlayerKilledWeaponType\_Vehicle        | 2     |             |
-| PlayerKilledWeaponType\_Count          | 3     |             |

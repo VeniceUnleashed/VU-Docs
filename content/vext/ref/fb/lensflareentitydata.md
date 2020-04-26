@@ -1,50 +1,121 @@
 ---
 title: LensFlareEntityData
 ---
-### Base Classes
 
-[SpatialEntityData](/vext/ref/fb/spatialentitydata/)
+Inherits from 
+[SpatialEntityData](/vext/ref/fb/spatialentitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[LensFlareEntityData](#constructor-0)**() |
+| **[LensFlareEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[LensFlareEntityData](#constructor-2)**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata)) |
+| **[LensFlareEntityData](#constructor-3)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[LensFlareEntityData](#constructor-4)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[LensFlareEntityData](#constructor-5)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[LensFlareEntityData](#constructor-6)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "elements" >}} | [LensFlareElement](/vext/ref/fb/lensflareelement)[] |
+| {{< prop "occluderSize" >}} | float |
+| {{< prop "visible" >}} | bool |
+| {{< prop "halfRes" >}} | bool |
+| {{< prop "debugDrawOccluder" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "LensFlareEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### LensFlareEntityData {#constructor-0}
+> **LensFlareEntityData**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| LensFlareEntityData()                                                          | Create a new instance of this container type.                                                                                 |
-| LensFlareEntityData(LensFlareEntityData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| LensFlareEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [LensFlareEntityData](/vext/ref/fb/lensflareentitydata/).              |
-| LensFlareEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [LensFlareEntityData](/vext/ref/fb/lensflareentitydata/).                            |
-| LensFlareEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [LensFlareEntityData](/vext/ref/fb/lensflareentitydata/).                    |
-| LensFlareEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [LensFlareEntityData](/vext/ref/fb/lensflareentitydata/).              |
-| LensFlareEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LensFlareEntityData](/vext/ref/fb/lensflareentitydata/). |
+Creates a new [LensFlareEntityData](/vext/ref/fb/lensflareentitydata) frostbite instance.
 
-## Properties
+### LensFlareEntityData {#constructor-1}
+> **LensFlareEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name              | Type                                     | Description |
-| ----------------- | ---------------------------------------- | ----------- |
-| elements          | [LensFlareElement](/vext/ref/fb/lensflareelement/)\[\] |             |
-| occluderSize      | number                                   |             |
-| visible           | bool                                     |             |
-| halfRes           | bool                                     |             |
-| debugDrawOccluder | bool                                     |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [LensFlareEntityData](/vext/ref/fb/lensflareentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [LensFlareEntityData](/vext/ref/fb/lensflareentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [LensFlareEntityData](/vext/ref/fb/lensflareentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### LensFlareEntityData {#constructor-2}
+> **LensFlareEntityData**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata))
+
+Casts an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata) to [LensFlareEntityData](/vext/ref/fb/lensflareentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SpatialEntityData](/vext/ref/fb/spatialentitydata) | The instance to cast to [LensFlareEntityData](/vext/ref/fb/lensflareentitydata). |
+
+### LensFlareEntityData {#constructor-3}
+> **LensFlareEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [LensFlareEntityData](/vext/ref/fb/lensflareentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [LensFlareEntityData](/vext/ref/fb/lensflareentitydata). |
+
+### LensFlareEntityData {#constructor-4}
+> **LensFlareEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [LensFlareEntityData](/vext/ref/fb/lensflareentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [LensFlareEntityData](/vext/ref/fb/lensflareentitydata). |
+
+### LensFlareEntityData {#constructor-5}
+> **LensFlareEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [LensFlareEntityData](/vext/ref/fb/lensflareentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [LensFlareEntityData](/vext/ref/fb/lensflareentitydata). |
+
+### LensFlareEntityData {#constructor-6}
+> **LensFlareEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LensFlareEntityData](/vext/ref/fb/lensflareentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [LensFlareEntityData](/vext/ref/fb/lensflareentitydata). |
+
+## Properties
+### {{% prop-heading "elements" %}}
+> **[LensFlareElement](/vext/ref/fb/lensflareelement)**[]
+
+### {{% prop-heading "occluderSize" %}}
+> **float**
+
+### {{% prop-heading "visible" %}}
+> **bool**
+
+### {{% prop-heading "halfRes" %}}
+> **bool**
+
+### {{% prop-heading "debugDrawOccluder" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [LensFlareEntityData](/vext/ref/fb/lensflareentitydata) type.
+

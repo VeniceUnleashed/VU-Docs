@@ -1,32 +1,57 @@
 ---
 title: SpecialMoveInterpolatedPoint
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SpecialMoveInterpolatedPoint](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "value" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "time" >}} | float |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [SpecialMoveInterpolatedPoint](/vext/ref/fb/specialmoveinterpolatedpoint) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SpecialMoveInterpolatedPoint" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SpecialMoveInterpolatedPoint {#constructor-0}
+> **SpecialMoveInterpolatedPoint**()
 
-| Constructor                                                      | Description                                              |
-| ---------------------------------------------------------------- | -------------------------------------------------------- |
-| SpecialMoveInterpolatedPoint()                                   | Create a new instance of this structure type.            |
-| SpecialMoveInterpolatedPoint(SpecialMoveInterpolatedPoint other) | Create a reference copy of a structure of the same type. |
+Creates a new [SpecialMoveInterpolatedPoint](/vext/ref/fb/specialmoveinterpolatedpoint) frostbite structure.
 
 ## Properties
+### {{% prop-heading "value" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
 
-| Name  | Type                              | Description |
-| ----- | --------------------------------- | ----------- |
-| value | [Vec3](/vext/ref/shared/class/vec3) |             |
-| time  | number                            |             |
+### {{% prop-heading "time" %}}
+> **float**
 
 ## Methods
-
-| Type                                                         | Name            | Parameters |
-| ------------------------------------------------------------ | --------------- | ---------- |
-| [SpecialMoveInterpolatedPoint](/vext/ref/fb/specialmoveinterpolatedpoint/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [SpecialMoveInterpolatedPoint](/vext/ref/fb/specialmoveinterpolatedpoint)
 
-> [SpecialMoveInterpolatedPoint](/vext/ref/fb/specialmoveinterpolatedpoint/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[SpecialMoveInterpolatedPoint](/vext/ref/fb/specialmoveinterpolatedpoint)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SpecialMoveInterpolatedPoint](/vext/ref/fb/specialmoveinterpolatedpoint) type.
+

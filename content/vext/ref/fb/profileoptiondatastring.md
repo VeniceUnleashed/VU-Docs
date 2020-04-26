@@ -1,45 +1,87 @@
 ---
 title: ProfileOptionDataString
 ---
-### Base Classes
 
-[ProfileOptionData](/vext/ref/fb/profileoptiondata/)
+Inherits from 
+[ProfileOptionData](/vext/ref/fb/profileoptiondata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ProfileOptionDataString](#constructor-0)**() |
+| **[ProfileOptionDataString](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ProfileOptionDataString](#constructor-2)**(other: [ProfileOptionData](/vext/ref/fb/profileoptiondata)) |
+| **[ProfileOptionDataString](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[ProfileOptionDataString](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "maxLength" >}} | int |
+| {{< prop "value" >}} | string |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ProfileOptionDataString" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ProfileOptionDataString {#constructor-0}
+> **ProfileOptionDataString**()
 
-| Constructor                                                                        | Description                                                                                                                           |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| ProfileOptionDataString()                                                          | Create a new instance of this container type.                                                                                         |
-| ProfileOptionDataString(ProfileOptionDataString other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| ProfileOptionDataString([ProfileOptionData](/vext/ref/fb/profileoptiondata/) other)              | Upcast an instance of type [ProfileOptionData](/vext/ref/fb/profileoptiondata/) to [ProfileOptionDataString](/vext/ref/fb/profileoptiondatastring/).              |
-| ProfileOptionDataString([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [ProfileOptionDataString](/vext/ref/fb/profileoptiondatastring/).                                      |
-| ProfileOptionDataString([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ProfileOptionDataString](/vext/ref/fb/profileoptiondatastring/). |
+Creates a new [ProfileOptionDataString](/vext/ref/fb/profileoptiondatastring) frostbite instance.
 
-## Properties
+### ProfileOptionDataString {#constructor-1}
+> **ProfileOptionDataString**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name      | Type   | Description |
-| --------- | ------ | ----------- |
-| maxLength | number |             |
-| value     | string |             |
-
-## Methods
-
-| Type                                               | Name            | Parameters                                     |
-| -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [ProfileOptionDataString](/vext/ref/fb/profileoptiondatastring/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ProfileOptionDataString](/vext/ref/fb/profileoptiondatastring/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ProfileOptionDataString](/vext/ref/fb/profileoptiondatastring) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ProfileOptionDataString {#constructor-2}
+> **ProfileOptionDataString**(other: [ProfileOptionData](/vext/ref/fb/profileoptiondata))
+
+Casts an instance of type [ProfileOptionData](/vext/ref/fb/profileoptiondata) to [ProfileOptionDataString](/vext/ref/fb/profileoptiondatastring). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ProfileOptionData](/vext/ref/fb/profileoptiondata) | The instance to cast to [ProfileOptionDataString](/vext/ref/fb/profileoptiondatastring). |
+
+### ProfileOptionDataString {#constructor-3}
+> **ProfileOptionDataString**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [ProfileOptionDataString](/vext/ref/fb/profileoptiondatastring). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [ProfileOptionDataString](/vext/ref/fb/profileoptiondatastring). |
+
+### ProfileOptionDataString {#constructor-4}
+> **ProfileOptionDataString**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ProfileOptionDataString](/vext/ref/fb/profileoptiondatastring). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ProfileOptionDataString](/vext/ref/fb/profileoptiondatastring). |
+
+## Properties
+### {{% prop-heading "maxLength" %}}
+> **int**
+
+### {{% prop-heading "value" %}}
+> **string**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ProfileOptionDataString](/vext/ref/fb/profileoptiondatastring) type.
+

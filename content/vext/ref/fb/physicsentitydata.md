@@ -1,58 +1,146 @@
 ---
 title: PhysicsEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PhysicsEntityData](#constructor-0)**() |
+| **[PhysicsEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PhysicsEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[PhysicsEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[PhysicsEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[PhysicsEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "inertiaModifier" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "scaledAssets" >}} | [HavokAsset](/vext/ref/fb/havokasset)[] |
+| {{< prop "rigidBodies" >}} | [RigidBodyData](/vext/ref/fb/rigidbodydata)[] |
+| {{< prop "asset" >}} | [HavokAsset](/vext/ref/fb/havokasset) \| nil |
+| {{< prop "floatPhysics" >}} | [FloatPhysicsData](/vext/ref/fb/floatphysicsdata) \| nil |
+| {{< prop "mass" >}} | float |
+| {{< prop "restitution" >}} | float |
+| {{< prop "friction" >}} | float |
+| {{< prop "linearVelocityDamping" >}} | float |
+| {{< prop "angularVelocityDamping" >}} | float |
+| {{< prop "proximity" >}} | [ProximityData](/vext/ref/fb/proximitydata) \| nil |
+| {{< prop "constraints" >}} | [RigidBodyConstraintData](/vext/ref/fb/rigidbodyconstraintdata)[] |
+| {{< prop "encapsulatePartsInLists" >}} | bool |
+| {{< prop "movableParts" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PhysicsEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PhysicsEntityData {#constructor-0}
+> **PhysicsEntityData**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| PhysicsEntityData()                                                          | Create a new instance of this container type.                                                                             |
-| PhysicsEntityData(PhysicsEntityData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| PhysicsEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [PhysicsEntityData](/vext/ref/fb/physicsentitydata/).                            |
-| PhysicsEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [PhysicsEntityData](/vext/ref/fb/physicsentitydata/).                    |
-| PhysicsEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [PhysicsEntityData](/vext/ref/fb/physicsentitydata/).              |
-| PhysicsEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PhysicsEntityData](/vext/ref/fb/physicsentitydata/). |
+Creates a new [PhysicsEntityData](/vext/ref/fb/physicsentitydata) frostbite instance.
 
-## Properties
+### PhysicsEntityData {#constructor-1}
+> **PhysicsEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                    | Type                                                   | Description |
-| ----------------------- | ------------------------------------------------------ | ----------- |
-| inertiaModifier         | [Vec3](/vext/ref/shared/class/vec3)                      |             |
-| scaledAssets            | [HavokAsset](/vext/ref/fb/havokasset/)\[\]                           |             |
-| rigidBodies             | [RigidBodyData](/vext/ref/fb/rigidbodydata/)\[\]                     |             |
-| asset                   | [HavokAsset](/vext/ref/fb/havokasset/)                               |             |
-| floatPhysics            | [FloatPhysicsData](/vext/ref/fb/floatphysicsdata/)                   |             |
-| mass                    | number                                                 |             |
-| restitution             | number                                                 |             |
-| friction                | number                                                 |             |
-| linearVelocityDamping   | number                                                 |             |
-| angularVelocityDamping  | number                                                 |             |
-| proximity               | [ProximityData](/vext/ref/fb/proximitydata/)                         |             |
-| constraints             | [RigidBodyConstraintData](/vext/ref/fb/rigidbodyconstraintdata/)\[\] |             |
-| encapsulatePartsInLists | bool                                                   |             |
-| movableParts            | bool                                                   |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [PhysicsEntityData](/vext/ref/fb/physicsentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PhysicsEntityData](/vext/ref/fb/physicsentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PhysicsEntityData](/vext/ref/fb/physicsentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PhysicsEntityData {#constructor-2}
+> **PhysicsEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [PhysicsEntityData](/vext/ref/fb/physicsentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [PhysicsEntityData](/vext/ref/fb/physicsentitydata). |
+
+### PhysicsEntityData {#constructor-3}
+> **PhysicsEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [PhysicsEntityData](/vext/ref/fb/physicsentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [PhysicsEntityData](/vext/ref/fb/physicsentitydata). |
+
+### PhysicsEntityData {#constructor-4}
+> **PhysicsEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [PhysicsEntityData](/vext/ref/fb/physicsentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [PhysicsEntityData](/vext/ref/fb/physicsentitydata). |
+
+### PhysicsEntityData {#constructor-5}
+> **PhysicsEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PhysicsEntityData](/vext/ref/fb/physicsentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PhysicsEntityData](/vext/ref/fb/physicsentitydata). |
+
+## Properties
+### {{% prop-heading "inertiaModifier" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "scaledAssets" %}}
+> **[HavokAsset](/vext/ref/fb/havokasset)**[]
+
+### {{% prop-heading "rigidBodies" %}}
+> **[RigidBodyData](/vext/ref/fb/rigidbodydata)**[]
+
+### {{% prop-heading "asset" %}}
+> **[HavokAsset](/vext/ref/fb/havokasset)** | **nil**
+
+### {{% prop-heading "floatPhysics" %}}
+> **[FloatPhysicsData](/vext/ref/fb/floatphysicsdata)** | **nil**
+
+### {{% prop-heading "mass" %}}
+> **float**
+
+### {{% prop-heading "restitution" %}}
+> **float**
+
+### {{% prop-heading "friction" %}}
+> **float**
+
+### {{% prop-heading "linearVelocityDamping" %}}
+> **float**
+
+### {{% prop-heading "angularVelocityDamping" %}}
+> **float**
+
+### {{% prop-heading "proximity" %}}
+> **[ProximityData](/vext/ref/fb/proximitydata)** | **nil**
+
+### {{% prop-heading "constraints" %}}
+> **[RigidBodyConstraintData](/vext/ref/fb/rigidbodyconstraintdata)**[]
+
+### {{% prop-heading "encapsulatePartsInLists" %}}
+> **bool**
+
+### {{% prop-heading "movableParts" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PhysicsEntityData](/vext/ref/fb/physicsentitydata) type.
+

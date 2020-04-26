@@ -1,45 +1,87 @@
 ---
 title: DetonatedWeaponData
 ---
-### Base Classes
 
-[WeaponData](/vext/ref/fb/weapondata/)
+Inherits from 
+[WeaponData](/vext/ref/fb/weapondata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[DetonatedWeaponData](#constructor-0)**() |
+| **[DetonatedWeaponData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[DetonatedWeaponData](#constructor-2)**(other: [WeaponData](/vext/ref/fb/weapondata)) |
+| **[DetonatedWeaponData](#constructor-3)**(other: [ToolData](/vext/ref/fb/tooldata)) |
+| **[DetonatedWeaponData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "lockingController" >}} | [LockingControllerData](/vext/ref/fb/lockingcontrollerdata) \| nil |
+| {{< prop "range" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "DetonatedWeaponData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### DetonatedWeaponData {#constructor-0}
+> **DetonatedWeaponData**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| DetonatedWeaponData()                                                          | Create a new instance of this container type.                                                                                 |
-| DetonatedWeaponData(DetonatedWeaponData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| DetonatedWeaponData([WeaponData](/vext/ref/fb/weapondata/) other)                            | Upcast an instance of type [WeaponData](/vext/ref/fb/weapondata/) to [DetonatedWeaponData](/vext/ref/fb/detonatedweapondata/).                            |
-| DetonatedWeaponData([ToolData](/vext/ref/fb/tooldata/) other)                                | Upcast an instance of type [ToolData](/vext/ref/fb/tooldata/) to [DetonatedWeaponData](/vext/ref/fb/detonatedweapondata/).                                |
-| DetonatedWeaponData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DetonatedWeaponData](/vext/ref/fb/detonatedweapondata/). |
+Creates a new [DetonatedWeaponData](/vext/ref/fb/detonatedweapondata) frostbite instance.
 
-## Properties
+### DetonatedWeaponData {#constructor-1}
+> **DetonatedWeaponData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name              | Type                                           | Description |
-| ----------------- | ---------------------------------------------- | ----------- |
-| lockingController | [LockingControllerData](/vext/ref/fb/lockingcontrollerdata/) |             |
-| range             | number                                         |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [DetonatedWeaponData](/vext/ref/fb/detonatedweapondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [DetonatedWeaponData](/vext/ref/fb/detonatedweapondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [DetonatedWeaponData](/vext/ref/fb/detonatedweapondata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### DetonatedWeaponData {#constructor-2}
+> **DetonatedWeaponData**(other: [WeaponData](/vext/ref/fb/weapondata))
+
+Casts an instance of type [WeaponData](/vext/ref/fb/weapondata) to [DetonatedWeaponData](/vext/ref/fb/detonatedweapondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [WeaponData](/vext/ref/fb/weapondata) | The instance to cast to [DetonatedWeaponData](/vext/ref/fb/detonatedweapondata). |
+
+### DetonatedWeaponData {#constructor-3}
+> **DetonatedWeaponData**(other: [ToolData](/vext/ref/fb/tooldata))
+
+Casts an instance of type [ToolData](/vext/ref/fb/tooldata) to [DetonatedWeaponData](/vext/ref/fb/detonatedweapondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ToolData](/vext/ref/fb/tooldata) | The instance to cast to [DetonatedWeaponData](/vext/ref/fb/detonatedweapondata). |
+
+### DetonatedWeaponData {#constructor-4}
+> **DetonatedWeaponData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DetonatedWeaponData](/vext/ref/fb/detonatedweapondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DetonatedWeaponData](/vext/ref/fb/detonatedweapondata). |
+
+## Properties
+### {{% prop-heading "lockingController" %}}
+> **[LockingControllerData](/vext/ref/fb/lockingcontrollerdata)** | **nil**
+
+### {{% prop-heading "range" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [DetonatedWeaponData](/vext/ref/fb/detonatedweapondata) type.
+

@@ -1,18 +1,15 @@
 ---
 title: MapMarkerType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **MMTMissionObjective** | Value: **0** |
+| **MMTSecondaryMissionObjective** | Value: **1** |
+| **MMTSoldier** | Value: **2** |
+| **MMTVehicle** | Value: **3** |
+| **MMTAmmoCrate** | Value: **4** |
+| **MMTGeneric** | Value: **5** |
+| **MMTFlag** | Value: **6** |
 
-| Name                         | Value | Description |
-| ---------------------------- | ----- | ----------- |
-| MMTMissionObjective          | 0     |             |
-| MMTSecondaryMissionObjective | 1     |             |
-| MMTSoldier                   | 2     |             |
-| MMTVehicle                   | 3     |             |
-| MMTAmmoCrate                 | 4     |             |
-| MMTGeneric                   | 5     |             |
-| MMTFlag                      | 6     |             |

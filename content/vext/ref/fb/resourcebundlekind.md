@@ -1,16 +1,13 @@
 ---
 title: ResourceBundleKind
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ResourceBundleKind_AlwaysLoaded** | Value: **0** |
+| **ResourceBundleKind_GlobalPackage** | Value: **1** |
+| **ResourceBundleKind_AssetPackage** | Value: **2** |
+| **ResourceBundleKind_SubLevelPackage** | Value: **3** |
+| **ResourceBundleKind_BlueprintBundle** | Value: **4** |
 
-| Name                                | Value | Description |
-| ----------------------------------- | ----- | ----------- |
-| ResourceBundleKind\_AlwaysLoaded    | 0     |             |
-| ResourceBundleKind\_GlobalPackage   | 1     |             |
-| ResourceBundleKind\_AssetPackage    | 2     |             |
-| ResourceBundleKind\_SubLevelPackage | 3     |             |
-| ResourceBundleKind\_BlueprintBundle | 4     |             |

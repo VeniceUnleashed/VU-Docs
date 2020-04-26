@@ -1,14 +1,11 @@
 ---
 title: TerrainLayerType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **TerrainLayerType_IgnoreMask** | Value: **0** |
+| **TerrainLayerType_Masked** | Value: **1** |
+| **TerrainLayerType_BinaryMasked** | Value: **2** |
 
-| Name                           | Value | Description |
-| ------------------------------ | ----- | ----------- |
-| TerrainLayerType\_IgnoreMask   | 0     |             |
-| TerrainLayerType\_Masked       | 1     |             |
-| TerrainLayerType\_BinaryMasked | 2     |             |

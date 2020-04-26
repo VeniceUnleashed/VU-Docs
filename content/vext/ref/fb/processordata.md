@@ -1,47 +1,88 @@
 ---
 title: ProcessorData
 ---
-### Base Classes
 
-[EmitterComponentData](/vext/ref/fb/emittercomponentdata/)
+Inherits from 
+[EmitterComponentData](/vext/ref/fb/emittercomponentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ProcessorData](#constructor-0)**() |
+| **[ProcessorData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ProcessorData](#constructor-2)**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata)) |
+| **[ProcessorData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "defaultValues" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "nextProcessor" >}} | [ProcessorData](/vext/ref/fb/processordata) \| nil |
+| {{< prop "pre" >}} | [EmitterComponentData](/vext/ref/fb/emittercomponentdata) \| nil |
+| {{< prop "evaluatorInput" >}} | [EmittableField](/vext/ref/fb/emittablefield) |
+| {{< prop "enable" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ProcessorData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ProcessorData {#constructor-0}
+> **ProcessorData**()
 
-| Constructor                                                              | Description                                                                                                       |
-| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| ProcessorData()                                                          | Create a new instance of this container type.                                                                     |
-| ProcessorData(ProcessorData other)                                       | Create a reference copy of an instance of the same type.                                                          |
-| ProcessorData([EmitterComponentData](/vext/ref/fb/emittercomponentdata/) other)        | Upcast an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata/) to [ProcessorData](/vext/ref/fb/processordata/).        |
-| ProcessorData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ProcessorData](/vext/ref/fb/processordata/). |
+Creates a new [ProcessorData](/vext/ref/fb/processordata) frostbite instance.
 
-## Properties
+### ProcessorData {#constructor-1}
+> **ProcessorData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name           | Type                                         | Description |
-| -------------- | -------------------------------------------- | ----------- |
-| defaultValues  | [Vec4](/vext/ref/shared/class/vec4)            |             |
-| nextProcessor  | [ProcessorData](/vext/ref/fb/processordata/)               |             |
-| pre            | [EmitterComponentData](/vext/ref/fb/emittercomponentdata/) |             |
-| evaluatorInput | [EmittableField](/vext/ref/fb/emittablefield/)             |             |
-| enable         | bool                                         |             |
-
-## Methods
-
-| Type                           | Name            | Parameters                                     |
-| ------------------------------ | --------------- | ---------------------------------------------- |
-| [ProcessorData](/vext/ref/fb/processordata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ProcessorData](/vext/ref/fb/processordata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ProcessorData](/vext/ref/fb/processordata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ProcessorData {#constructor-2}
+> **ProcessorData**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata))
+
+Casts an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata) to [ProcessorData](/vext/ref/fb/processordata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EmitterComponentData](/vext/ref/fb/emittercomponentdata) | The instance to cast to [ProcessorData](/vext/ref/fb/processordata). |
+
+### ProcessorData {#constructor-3}
+> **ProcessorData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ProcessorData](/vext/ref/fb/processordata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ProcessorData](/vext/ref/fb/processordata). |
+
+## Properties
+### {{% prop-heading "defaultValues" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "nextProcessor" %}}
+> **[ProcessorData](/vext/ref/fb/processordata)** | **nil**
+
+### {{% prop-heading "pre" %}}
+> **[EmitterComponentData](/vext/ref/fb/emittercomponentdata)** | **nil**
+
+### {{% prop-heading "evaluatorInput" %}}
+> **[EmittableField](/vext/ref/fb/emittablefield)**
+
+### {{% prop-heading "enable" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ProcessorData](/vext/ref/fb/processordata) type.
+

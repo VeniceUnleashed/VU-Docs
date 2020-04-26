@@ -1,13 +1,10 @@
 ---
 title: VoiceOverPronunciationFallback
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **VoiceOverPronunciationFallback_None** | Value: **0** |
+| **VoiceOverPronunciationFallback_Master** | Value: **1** |
 
-| Name                                   | Value | Description |
-| -------------------------------------- | ----- | ----------- |
-| VoiceOverPronunciationFallback\_None   | 0     |             |
-| VoiceOverPronunciationFallback\_Master | 1     |             |

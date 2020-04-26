@@ -1,13 +1,10 @@
 ---
 title: UIInputActionEventType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **UIInputActionEventType_Pressed** | Value: **1** |
+| **UIInputActionEventType_Released** | Value: **2** |
 
-| Name                             | Value | Description |
-| -------------------------------- | ----- | ----------- |
-| UIInputActionEventType\_Pressed  | 1     |             |
-| UIInputActionEventType\_Released | 2     |             |

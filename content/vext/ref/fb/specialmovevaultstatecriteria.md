@@ -1,37 +1,77 @@
 ---
 title: SpecialMoveVaultStateCriteria
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SpecialMoveVaultStateCriteria](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "distToObject" >}} | float |
+| {{< prop "distToObjectTolerance" >}} | float |
+| {{< prop "heightOfObject" >}} | float |
+| {{< prop "heightOfObjectTolerance" >}} | float |
+| {{< prop "lengthOfObject" >}} | float |
+| {{< prop "lengthOfObjectTolerance" >}} | float |
+| {{< prop "specialMoveState" >}} | [SpecialMoveStateData](/vext/ref/fb/specialmovestatedata) |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [SpecialMoveVaultStateCriteria](/vext/ref/fb/specialmovevaultstatecriteria) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SpecialMoveVaultStateCriteria" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SpecialMoveVaultStateCriteria {#constructor-0}
+> **SpecialMoveVaultStateCriteria**()
 
-| Constructor                                                        | Description                                              |
-| ------------------------------------------------------------------ | -------------------------------------------------------- |
-| SpecialMoveVaultStateCriteria()                                    | Create a new instance of this structure type.            |
-| SpecialMoveVaultStateCriteria(SpecialMoveVaultStateCriteria other) | Create a reference copy of a structure of the same type. |
+Creates a new [SpecialMoveVaultStateCriteria](/vext/ref/fb/specialmovevaultstatecriteria) frostbite structure.
 
 ## Properties
+### {{% prop-heading "distToObject" %}}
+> **float**
 
-| Name                    | Type                                         | Description |
-| ----------------------- | -------------------------------------------- | ----------- |
-| distToObject            | number                                       |             |
-| distToObjectTolerance   | number                                       |             |
-| heightOfObject          | number                                       |             |
-| heightOfObjectTolerance | number                                       |             |
-| lengthOfObject          | number                                       |             |
-| lengthOfObjectTolerance | number                                       |             |
-| specialMoveState        | [SpecialMoveStateData](/vext/ref/fb/specialmovestatedata/) |             |
+### {{% prop-heading "distToObjectTolerance" %}}
+> **float**
+
+### {{% prop-heading "heightOfObject" %}}
+> **float**
+
+### {{% prop-heading "heightOfObjectTolerance" %}}
+> **float**
+
+### {{% prop-heading "lengthOfObject" %}}
+> **float**
+
+### {{% prop-heading "lengthOfObjectTolerance" %}}
+> **float**
+
+### {{% prop-heading "specialMoveState" %}}
+> **[SpecialMoveStateData](/vext/ref/fb/specialmovestatedata)**
 
 ## Methods
-
-| Type                                                           | Name            | Parameters |
-| -------------------------------------------------------------- | --------------- | ---------- |
-| [SpecialMoveVaultStateCriteria](/vext/ref/fb/specialmovevaultstatecriteria/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [SpecialMoveVaultStateCriteria](/vext/ref/fb/specialmovevaultstatecriteria)
 
-> [SpecialMoveVaultStateCriteria](/vext/ref/fb/specialmovevaultstatecriteria/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[SpecialMoveVaultStateCriteria](/vext/ref/fb/specialmovevaultstatecriteria)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SpecialMoveVaultStateCriteria](/vext/ref/fb/specialmovevaultstatecriteria) type.
+

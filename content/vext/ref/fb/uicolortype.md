@@ -1,30 +1,27 @@
 ---
 title: UIColorType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **UIColorType_Unselected** | Value: **0** |
+| **UIColorType_Selected** | Value: **1** |
+| **UIColorType_SelectInside** | Value: **2** |
+| **UIColorType_UnselectedInside** | Value: **3** |
+| **UIColorType_Locked** | Value: **4** |
+| **UIColorType_IconBg** | Value: **5** |
+| **UIColorType_FrameSoft** | Value: **6** |
+| **UIColorType_FrameHard** | Value: **7** |
+| **UIColorType_HudYellow** | Value: **8** |
+| **UIColorType_CriticalColor** | Value: **9** |
+| **UIColorType_Friendly** | Value: **10** |
+| **UIColorType_Enemy** | Value: **11** |
+| **UIColorType_SquadColor** | Value: **12** |
+| **UIColorType_NormalTextColor** | Value: **13** |
+| **UIColorType_HeaderTextColor** | Value: **14** |
+| **UIColorType_StaticHUDColor** | Value: **15** |
+| **UIColorType_DynamicHUDColor** | Value: **16** |
+| **UIColorType_MouseOver** | Value: **17** |
+| **UIColorType_MouseOut** | Value: **18** |
 
-| Name                          | Value | Description |
-| ----------------------------- | ----- | ----------- |
-| UIColorType\_Unselected       | 0     |             |
-| UIColorType\_Selected         | 1     |             |
-| UIColorType\_SelectInside     | 2     |             |
-| UIColorType\_UnselectedInside | 3     |             |
-| UIColorType\_Locked           | 4     |             |
-| UIColorType\_IconBg           | 5     |             |
-| UIColorType\_FrameSoft        | 6     |             |
-| UIColorType\_FrameHard        | 7     |             |
-| UIColorType\_HudYellow        | 8     |             |
-| UIColorType\_CriticalColor    | 9     |             |
-| UIColorType\_Friendly         | 10    |             |
-| UIColorType\_Enemy            | 11    |             |
-| UIColorType\_SquadColor       | 12    |             |
-| UIColorType\_NormalTextColor  | 13    |             |
-| UIColorType\_HeaderTextColor  | 14    |             |
-| UIColorType\_StaticHUDColor   | 15    |             |
-| UIColorType\_DynamicHUDColor  | 16    |             |
-| UIColorType\_MouseOver        | 17    |             |
-| UIColorType\_MouseOut         | 18    |             |

@@ -1,44 +1,69 @@
 ---
 title: VoiceOverConversationQueueGroup
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VoiceOverConversationQueueGroup](#constructor-0)**() |
+| **[VoiceOverConversationQueueGroup](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VoiceOverConversationQueueGroup](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "name" >}} | string |
+| {{< prop "polyphonyMode" >}} | [VoiceOverConversationQueueGroupPolyphony](/vext/ref/fb/voiceoverconversationqueuegrouppolyphony) |
+| {{< prop "polyphony" >}} | int |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VoiceOverConversationQueueGroup" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VoiceOverConversationQueueGroup {#constructor-0}
+> **VoiceOverConversationQueueGroup**()
 
-| Constructor                                                                                | Description                                                                                                                                           |
-| ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| VoiceOverConversationQueueGroup()                                                          | Create a new instance of this container type.                                                                                                         |
-| VoiceOverConversationQueueGroup(VoiceOverConversationQueueGroup other)                     | Create a reference copy of an instance of the same type.                                                                                              |
-| VoiceOverConversationQueueGroup([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverConversationQueueGroup](/vext/ref/fb/voiceoverconversationqueuegroup/). |
+Creates a new [VoiceOverConversationQueueGroup](/vext/ref/fb/voiceoverconversationqueuegroup) frostbite instance.
 
-## Properties
+### VoiceOverConversationQueueGroup {#constructor-1}
+> **VoiceOverConversationQueueGroup**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name          | Type                                                                                 | Description |
-| ------------- | ------------------------------------------------------------------------------------ | ----------- |
-| name          | string                                                                               |             |
-| polyphonyMode | [VoiceOverConversationQueueGroupPolyphony](/vext/ref/fb/voiceoverconversationqueuegrouppolyphony/) |             |
-| polyphony     | number                                                                               |             |
-
-## Methods
-
-| Type                                                               | Name            | Parameters                                     |
-| ------------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [VoiceOverConversationQueueGroup](/vext/ref/fb/voiceoverconversationqueuegroup/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VoiceOverConversationQueueGroup](/vext/ref/fb/voiceoverconversationqueuegroup/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VoiceOverConversationQueueGroup](/vext/ref/fb/voiceoverconversationqueuegroup) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VoiceOverConversationQueueGroup {#constructor-2}
+> **VoiceOverConversationQueueGroup**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverConversationQueueGroup](/vext/ref/fb/voiceoverconversationqueuegroup). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VoiceOverConversationQueueGroup](/vext/ref/fb/voiceoverconversationqueuegroup). |
+
+## Properties
+### {{% prop-heading "name" %}}
+> **string**
+
+### {{% prop-heading "polyphonyMode" %}}
+> **[VoiceOverConversationQueueGroupPolyphony](/vext/ref/fb/voiceoverconversationqueuegrouppolyphony)**
+
+### {{% prop-heading "polyphony" %}}
+> **int**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VoiceOverConversationQueueGroup](/vext/ref/fb/voiceoverconversationqueuegroup) type.
+

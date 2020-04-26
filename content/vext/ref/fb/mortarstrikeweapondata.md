@@ -1,47 +1,95 @@
 ---
 title: MortarStrikeWeaponData
 ---
-### Base Classes
 
-[WeaponData](/vext/ref/fb/weapondata/)
+Inherits from 
+[WeaponData](/vext/ref/fb/weapondata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MortarStrikeWeaponData](#constructor-0)**() |
+| **[MortarStrikeWeaponData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MortarStrikeWeaponData](#constructor-2)**(other: [WeaponData](/vext/ref/fb/weapondata)) |
+| **[MortarStrikeWeaponData](#constructor-3)**(other: [ToolData](/vext/ref/fb/tooldata)) |
+| **[MortarStrikeWeaponData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "holdingTolerance" >}} | float |
+| {{< prop "maxStrikeDistance" >}} | float |
+| {{< prop "strikeRadius" >}} | float |
+| {{< prop "maxRandomSpawnHeight" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MortarStrikeWeaponData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MortarStrikeWeaponData {#constructor-0}
+> **MortarStrikeWeaponData**()
 
-| Constructor                                                                       | Description                                                                                                                         |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| MortarStrikeWeaponData()                                                          | Create a new instance of this container type.                                                                                       |
-| MortarStrikeWeaponData(MortarStrikeWeaponData other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| MortarStrikeWeaponData([WeaponData](/vext/ref/fb/weapondata/) other)                            | Upcast an instance of type [WeaponData](/vext/ref/fb/weapondata/) to [MortarStrikeWeaponData](/vext/ref/fb/mortarstrikeweapondata/).                            |
-| MortarStrikeWeaponData([ToolData](/vext/ref/fb/tooldata/) other)                                | Upcast an instance of type [ToolData](/vext/ref/fb/tooldata/) to [MortarStrikeWeaponData](/vext/ref/fb/mortarstrikeweapondata/).                                |
-| MortarStrikeWeaponData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MortarStrikeWeaponData](/vext/ref/fb/mortarstrikeweapondata/). |
+Creates a new [MortarStrikeWeaponData](/vext/ref/fb/mortarstrikeweapondata) frostbite instance.
 
-## Properties
+### MortarStrikeWeaponData {#constructor-1}
+> **MortarStrikeWeaponData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                 | Type   | Description |
-| -------------------- | ------ | ----------- |
-| holdingTolerance     | number |             |
-| maxStrikeDistance    | number |             |
-| strikeRadius         | number |             |
-| maxRandomSpawnHeight | number |             |
-
-## Methods
-
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [MortarStrikeWeaponData](/vext/ref/fb/mortarstrikeweapondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MortarStrikeWeaponData](/vext/ref/fb/mortarstrikeweapondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MortarStrikeWeaponData](/vext/ref/fb/mortarstrikeweapondata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MortarStrikeWeaponData {#constructor-2}
+> **MortarStrikeWeaponData**(other: [WeaponData](/vext/ref/fb/weapondata))
+
+Casts an instance of type [WeaponData](/vext/ref/fb/weapondata) to [MortarStrikeWeaponData](/vext/ref/fb/mortarstrikeweapondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [WeaponData](/vext/ref/fb/weapondata) | The instance to cast to [MortarStrikeWeaponData](/vext/ref/fb/mortarstrikeweapondata). |
+
+### MortarStrikeWeaponData {#constructor-3}
+> **MortarStrikeWeaponData**(other: [ToolData](/vext/ref/fb/tooldata))
+
+Casts an instance of type [ToolData](/vext/ref/fb/tooldata) to [MortarStrikeWeaponData](/vext/ref/fb/mortarstrikeweapondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ToolData](/vext/ref/fb/tooldata) | The instance to cast to [MortarStrikeWeaponData](/vext/ref/fb/mortarstrikeweapondata). |
+
+### MortarStrikeWeaponData {#constructor-4}
+> **MortarStrikeWeaponData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MortarStrikeWeaponData](/vext/ref/fb/mortarstrikeweapondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MortarStrikeWeaponData](/vext/ref/fb/mortarstrikeweapondata). |
+
+## Properties
+### {{% prop-heading "holdingTolerance" %}}
+> **float**
+
+### {{% prop-heading "maxStrikeDistance" %}}
+> **float**
+
+### {{% prop-heading "strikeRadius" %}}
+> **float**
+
+### {{% prop-heading "maxRandomSpawnHeight" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MortarStrikeWeaponData](/vext/ref/fb/mortarstrikeweapondata) type.
+

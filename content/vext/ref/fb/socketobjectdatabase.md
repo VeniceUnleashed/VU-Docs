@@ -1,36 +1,52 @@
 ---
 title: SocketObjectDataBase
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SocketObjectDataBase](#constructor-0)**() |
+| **[SocketObjectDataBase](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SocketObjectDataBase](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SocketObjectDataBase" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SocketObjectDataBase {#constructor-0}
+> **SocketObjectDataBase**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| SocketObjectDataBase()                                                          | Create a new instance of this container type.                                                                                   |
-| SocketObjectDataBase(SocketObjectDataBase other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| SocketObjectDataBase([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SocketObjectDataBase](/vext/ref/fb/socketobjectdatabase/). |
+Creates a new [SocketObjectDataBase](/vext/ref/fb/socketobjectdatabase) frostbite instance.
 
-## Methods
+### SocketObjectDataBase {#constructor-1}
+> **SocketObjectDataBase**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [SocketObjectDataBase](/vext/ref/fb/socketobjectdatabase/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SocketObjectDataBase](/vext/ref/fb/socketobjectdatabase/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SocketObjectDataBase](/vext/ref/fb/socketobjectdatabase) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SocketObjectDataBase {#constructor-2}
+> **SocketObjectDataBase**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SocketObjectDataBase](/vext/ref/fb/socketobjectdatabase). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SocketObjectDataBase](/vext/ref/fb/socketobjectdatabase). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SocketObjectDataBase](/vext/ref/fb/socketobjectdatabase) type.
+

@@ -1,17 +1,14 @@
 ---
 title: TerrainRenderMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **TerrainRenderMode_Default** | Value: **0** |
+| **TerrainRenderMode_DrawPassCount2d** | Value: **1** |
+| **TerrainRenderMode_LayerCount2d** | Value: **2** |
+| **TerrainRenderMode_LayerCount3d** | Value: **3** |
+| **TerrainRenderMode_MaskedLayerCount2d** | Value: **4** |
+| **TerrainRenderMode_MaskedLayerCount3d** | Value: **5** |
 
-| Name                                  | Value | Description |
-| ------------------------------------- | ----- | ----------- |
-| TerrainRenderMode\_Default            | 0     |             |
-| TerrainRenderMode\_DrawPassCount2d    | 1     |             |
-| TerrainRenderMode\_LayerCount2d       | 2     |             |
-| TerrainRenderMode\_LayerCount3d       | 3     |             |
-| TerrainRenderMode\_MaskedLayerCount2d | 4     |             |
-| TerrainRenderMode\_MaskedLayerCount3d | 5     |             |

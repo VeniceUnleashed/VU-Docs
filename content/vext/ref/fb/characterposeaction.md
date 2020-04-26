@@ -1,15 +1,12 @@
 ---
 title: CharacterPoseAction
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **CPTNoAction** | Value: **0** |
+| **CPTForceToStand** | Value: **1** |
+| **CPTForceToCroch** | Value: **2** |
+| **CPTForceToProne** | Value: **3** |
 
-| Name            | Value | Description |
-| --------------- | ----- | ----------- |
-| CPTNoAction     | 0     |             |
-| CPTForceToStand | 1     |             |
-| CPTForceToCroch | 2     |             |
-| CPTForceToProne | 3     |             |

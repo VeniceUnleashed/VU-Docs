@@ -1,49 +1,89 @@
 ---
 title: AntMemorySettings
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AntMemorySettings](#constructor-0)**() |
+| **[AntMemorySettings](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[AntMemorySettings](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "rtPoolLayersControllers" >}} | int |
+| {{< prop "rtPoolStateflowControllers" >}} | int |
+| {{< prop "rtPoolStateflowNodeControllers" >}} | int |
+| {{< prop "rtPoolTransitionControllers" >}} | int |
+| {{< prop "rtPoolClipControllers" >}} | int |
+| {{< prop "rtPoolChooserControllers" >}} | int |
+| {{< prop "rtPoolLoopingControllers" >}} | int |
+| {{< prop "rtPoolTransparentControllers" >}} | int |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AntMemorySettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AntMemorySettings {#constructor-0}
+> **AntMemorySettings**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| AntMemorySettings()                                                          | Create a new instance of this container type.                                                                             |
-| AntMemorySettings(AntMemorySettings other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| AntMemorySettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AntMemorySettings](/vext/ref/fb/antmemorysettings/). |
+Creates a new [AntMemorySettings](/vext/ref/fb/antmemorysettings) frostbite instance.
 
-## Properties
+### AntMemorySettings {#constructor-1}
+> **AntMemorySettings**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                           | Type   | Description |
-| ------------------------------ | ------ | ----------- |
-| rtPoolLayersControllers        | number |             |
-| rtPoolStateflowControllers     | number |             |
-| rtPoolStateflowNodeControllers | number |             |
-| rtPoolTransitionControllers    | number |             |
-| rtPoolClipControllers          | number |             |
-| rtPoolChooserControllers       | number |             |
-| rtPoolLoopingControllers       | number |             |
-| rtPoolTransparentControllers   | number |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [AntMemorySettings](/vext/ref/fb/antmemorysettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [AntMemorySettings](/vext/ref/fb/antmemorysettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [AntMemorySettings](/vext/ref/fb/antmemorysettings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### AntMemorySettings {#constructor-2}
+> **AntMemorySettings**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AntMemorySettings](/vext/ref/fb/antmemorysettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [AntMemorySettings](/vext/ref/fb/antmemorysettings). |
+
+## Properties
+### {{% prop-heading "rtPoolLayersControllers" %}}
+> **int**
+
+### {{% prop-heading "rtPoolStateflowControllers" %}}
+> **int**
+
+### {{% prop-heading "rtPoolStateflowNodeControllers" %}}
+> **int**
+
+### {{% prop-heading "rtPoolTransitionControllers" %}}
+> **int**
+
+### {{% prop-heading "rtPoolClipControllers" %}}
+> **int**
+
+### {{% prop-heading "rtPoolChooserControllers" %}}
+> **int**
+
+### {{% prop-heading "rtPoolLoopingControllers" %}}
+> **int**
+
+### {{% prop-heading "rtPoolTransparentControllers" %}}
+> **int**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AntMemorySettings](/vext/ref/fb/antmemorysettings) type.
+

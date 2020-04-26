@@ -1,42 +1,118 @@
 ---
 title: LookAtCameraEntityData
 ---
-### Base Classes
 
-[CameraEntityData](/vext/ref/fb/cameraentitydata/)
+Inherits from 
+[CameraEntityData](/vext/ref/fb/cameraentitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[LookAtCameraEntityData](#constructor-0)**() |
+| **[LookAtCameraEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[LookAtCameraEntityData](#constructor-2)**(other: [CameraEntityData](/vext/ref/fb/cameraentitydata)) |
+| **[LookAtCameraEntityData](#constructor-3)**(other: [CameraEntityBaseData](/vext/ref/fb/cameraentitybasedata)) |
+| **[LookAtCameraEntityData](#constructor-4)**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata)) |
+| **[LookAtCameraEntityData](#constructor-5)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[LookAtCameraEntityData](#constructor-6)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[LookAtCameraEntityData](#constructor-7)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[LookAtCameraEntityData](#constructor-8)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "LookAtCameraEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### LookAtCameraEntityData {#constructor-0}
+> **LookAtCameraEntityData**()
 
-| Constructor                                                                       | Description                                                                                                                         |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| LookAtCameraEntityData()                                                          | Create a new instance of this container type.                                                                                       |
-| LookAtCameraEntityData(LookAtCameraEntityData other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| LookAtCameraEntityData([CameraEntityData](/vext/ref/fb/cameraentitydata/) other)                | Upcast an instance of type [CameraEntityData](/vext/ref/fb/cameraentitydata/) to [LookAtCameraEntityData](/vext/ref/fb/lookatcameraentitydata/).                |
-| LookAtCameraEntityData([CameraEntityBaseData](/vext/ref/fb/cameraentitybasedata/) other)        | Upcast an instance of type [CameraEntityBaseData](/vext/ref/fb/cameraentitybasedata/) to [LookAtCameraEntityData](/vext/ref/fb/lookatcameraentitydata/).        |
-| LookAtCameraEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [LookAtCameraEntityData](/vext/ref/fb/lookatcameraentitydata/).              |
-| LookAtCameraEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [LookAtCameraEntityData](/vext/ref/fb/lookatcameraentitydata/).                            |
-| LookAtCameraEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [LookAtCameraEntityData](/vext/ref/fb/lookatcameraentitydata/).                    |
-| LookAtCameraEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [LookAtCameraEntityData](/vext/ref/fb/lookatcameraentitydata/).              |
-| LookAtCameraEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LookAtCameraEntityData](/vext/ref/fb/lookatcameraentitydata/). |
+Creates a new [LookAtCameraEntityData](/vext/ref/fb/lookatcameraentitydata) frostbite instance.
 
-## Methods
+### LookAtCameraEntityData {#constructor-1}
+> **LookAtCameraEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [LookAtCameraEntityData](/vext/ref/fb/lookatcameraentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [LookAtCameraEntityData](/vext/ref/fb/lookatcameraentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [LookAtCameraEntityData](/vext/ref/fb/lookatcameraentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### LookAtCameraEntityData {#constructor-2}
+> **LookAtCameraEntityData**(other: [CameraEntityData](/vext/ref/fb/cameraentitydata))
+
+Casts an instance of type [CameraEntityData](/vext/ref/fb/cameraentitydata) to [LookAtCameraEntityData](/vext/ref/fb/lookatcameraentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [CameraEntityData](/vext/ref/fb/cameraentitydata) | The instance to cast to [LookAtCameraEntityData](/vext/ref/fb/lookatcameraentitydata). |
+
+### LookAtCameraEntityData {#constructor-3}
+> **LookAtCameraEntityData**(other: [CameraEntityBaseData](/vext/ref/fb/cameraentitybasedata))
+
+Casts an instance of type [CameraEntityBaseData](/vext/ref/fb/cameraentitybasedata) to [LookAtCameraEntityData](/vext/ref/fb/lookatcameraentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [CameraEntityBaseData](/vext/ref/fb/cameraentitybasedata) | The instance to cast to [LookAtCameraEntityData](/vext/ref/fb/lookatcameraentitydata). |
+
+### LookAtCameraEntityData {#constructor-4}
+> **LookAtCameraEntityData**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata))
+
+Casts an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata) to [LookAtCameraEntityData](/vext/ref/fb/lookatcameraentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SpatialEntityData](/vext/ref/fb/spatialentitydata) | The instance to cast to [LookAtCameraEntityData](/vext/ref/fb/lookatcameraentitydata). |
+
+### LookAtCameraEntityData {#constructor-5}
+> **LookAtCameraEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [LookAtCameraEntityData](/vext/ref/fb/lookatcameraentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [LookAtCameraEntityData](/vext/ref/fb/lookatcameraentitydata). |
+
+### LookAtCameraEntityData {#constructor-6}
+> **LookAtCameraEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [LookAtCameraEntityData](/vext/ref/fb/lookatcameraentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [LookAtCameraEntityData](/vext/ref/fb/lookatcameraentitydata). |
+
+### LookAtCameraEntityData {#constructor-7}
+> **LookAtCameraEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [LookAtCameraEntityData](/vext/ref/fb/lookatcameraentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [LookAtCameraEntityData](/vext/ref/fb/lookatcameraentitydata). |
+
+### LookAtCameraEntityData {#constructor-8}
+> **LookAtCameraEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LookAtCameraEntityData](/vext/ref/fb/lookatcameraentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [LookAtCameraEntityData](/vext/ref/fb/lookatcameraentitydata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [LookAtCameraEntityData](/vext/ref/fb/lookatcameraentitydata) type.
+

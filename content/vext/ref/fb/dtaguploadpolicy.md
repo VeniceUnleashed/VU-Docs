@@ -1,13 +1,10 @@
 ---
 title: DTagUploadPolicy
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **DTUP_FirstTimeSeenAndEndOfRound** | Value: **0** |
+| **DTUP_Always** | Value: **1** |
 
-| Name                             | Value | Description |
-| -------------------------------- | ----- | ----------- |
-| DTUP\_FirstTimeSeenAndEndOfRound | 0     |             |
-| DTUP\_Always                     | 1     |             |

@@ -1,50 +1,128 @@
 ---
 title: SearchAndDestroyOrderEntityData
 ---
-### Base Classes
 
-[BFOrderEntityData](/vext/ref/fb/bforderentitydata/)
+Inherits from 
+[BFOrderEntityData](/vext/ref/fb/bforderentitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SearchAndDestroyOrderEntityData](#constructor-0)**() |
+| **[SearchAndDestroyOrderEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SearchAndDestroyOrderEntityData](#constructor-2)**(other: [BFOrderEntityData](/vext/ref/fb/bforderentitydata)) |
+| **[SearchAndDestroyOrderEntityData](#constructor-3)**(other: [OrderEntityData](/vext/ref/fb/orderentitydata)) |
+| **[SearchAndDestroyOrderEntityData](#constructor-4)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[SearchAndDestroyOrderEntityData](#constructor-5)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[SearchAndDestroyOrderEntityData](#constructor-6)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[SearchAndDestroyOrderEntityData](#constructor-7)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "targetPosKnowledge" >}} | [TargetPosKnowledgeType](/vext/ref/fb/targetposknowledgetype) |
+| {{< prop "findTargetTime" >}} | float |
+| {{< prop "targetAreaFollowsTarget" >}} | bool |
+| {{< prop "aggressive" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SearchAndDestroyOrderEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SearchAndDestroyOrderEntityData {#constructor-0}
+> **SearchAndDestroyOrderEntityData**()
 
-| Constructor                                                                                | Description                                                                                                                                           |
-| ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| SearchAndDestroyOrderEntityData()                                                          | Create a new instance of this container type.                                                                                                         |
-| SearchAndDestroyOrderEntityData(SearchAndDestroyOrderEntityData other)                     | Create a reference copy of an instance of the same type.                                                                                              |
-| SearchAndDestroyOrderEntityData([BFOrderEntityData](/vext/ref/fb/bforderentitydata/) other)              | Upcast an instance of type [BFOrderEntityData](/vext/ref/fb/bforderentitydata/) to [SearchAndDestroyOrderEntityData](/vext/ref/fb/searchanddestroyorderentitydata/).              |
-| SearchAndDestroyOrderEntityData([OrderEntityData](/vext/ref/fb/orderentitydata/) other)                  | Upcast an instance of type [OrderEntityData](/vext/ref/fb/orderentitydata/) to [SearchAndDestroyOrderEntityData](/vext/ref/fb/searchanddestroyorderentitydata/).                  |
-| SearchAndDestroyOrderEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [SearchAndDestroyOrderEntityData](/vext/ref/fb/searchanddestroyorderentitydata/).                            |
-| SearchAndDestroyOrderEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [SearchAndDestroyOrderEntityData](/vext/ref/fb/searchanddestroyorderentitydata/).                    |
-| SearchAndDestroyOrderEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [SearchAndDestroyOrderEntityData](/vext/ref/fb/searchanddestroyorderentitydata/).              |
-| SearchAndDestroyOrderEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SearchAndDestroyOrderEntityData](/vext/ref/fb/searchanddestroyorderentitydata/). |
+Creates a new [SearchAndDestroyOrderEntityData](/vext/ref/fb/searchanddestroyorderentitydata) frostbite instance.
 
-## Properties
+### SearchAndDestroyOrderEntityData {#constructor-1}
+> **SearchAndDestroyOrderEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                    | Type                                             | Description |
-| ----------------------- | ------------------------------------------------ | ----------- |
-| targetPosKnowledge      | [TargetPosKnowledgeType](/vext/ref/fb/targetposknowledgetype/) |             |
-| findTargetTime          | number                                           |             |
-| targetAreaFollowsTarget | bool                                             |             |
-| aggressive              | bool                                             |             |
-
-## Methods
-
-| Type                                                               | Name            | Parameters                                     |
-| ------------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [SearchAndDestroyOrderEntityData](/vext/ref/fb/searchanddestroyorderentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SearchAndDestroyOrderEntityData](/vext/ref/fb/searchanddestroyorderentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SearchAndDestroyOrderEntityData](/vext/ref/fb/searchanddestroyorderentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SearchAndDestroyOrderEntityData {#constructor-2}
+> **SearchAndDestroyOrderEntityData**(other: [BFOrderEntityData](/vext/ref/fb/bforderentitydata))
+
+Casts an instance of type [BFOrderEntityData](/vext/ref/fb/bforderentitydata) to [SearchAndDestroyOrderEntityData](/vext/ref/fb/searchanddestroyorderentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [BFOrderEntityData](/vext/ref/fb/bforderentitydata) | The instance to cast to [SearchAndDestroyOrderEntityData](/vext/ref/fb/searchanddestroyorderentitydata). |
+
+### SearchAndDestroyOrderEntityData {#constructor-3}
+> **SearchAndDestroyOrderEntityData**(other: [OrderEntityData](/vext/ref/fb/orderentitydata))
+
+Casts an instance of type [OrderEntityData](/vext/ref/fb/orderentitydata) to [SearchAndDestroyOrderEntityData](/vext/ref/fb/searchanddestroyorderentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [OrderEntityData](/vext/ref/fb/orderentitydata) | The instance to cast to [SearchAndDestroyOrderEntityData](/vext/ref/fb/searchanddestroyorderentitydata). |
+
+### SearchAndDestroyOrderEntityData {#constructor-4}
+> **SearchAndDestroyOrderEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [SearchAndDestroyOrderEntityData](/vext/ref/fb/searchanddestroyorderentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [SearchAndDestroyOrderEntityData](/vext/ref/fb/searchanddestroyorderentitydata). |
+
+### SearchAndDestroyOrderEntityData {#constructor-5}
+> **SearchAndDestroyOrderEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [SearchAndDestroyOrderEntityData](/vext/ref/fb/searchanddestroyorderentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [SearchAndDestroyOrderEntityData](/vext/ref/fb/searchanddestroyorderentitydata). |
+
+### SearchAndDestroyOrderEntityData {#constructor-6}
+> **SearchAndDestroyOrderEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [SearchAndDestroyOrderEntityData](/vext/ref/fb/searchanddestroyorderentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [SearchAndDestroyOrderEntityData](/vext/ref/fb/searchanddestroyorderentitydata). |
+
+### SearchAndDestroyOrderEntityData {#constructor-7}
+> **SearchAndDestroyOrderEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SearchAndDestroyOrderEntityData](/vext/ref/fb/searchanddestroyorderentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SearchAndDestroyOrderEntityData](/vext/ref/fb/searchanddestroyorderentitydata). |
+
+## Properties
+### {{% prop-heading "targetPosKnowledge" %}}
+> **[TargetPosKnowledgeType](/vext/ref/fb/targetposknowledgetype)**
+
+### {{% prop-heading "findTargetTime" %}}
+> **float**
+
+### {{% prop-heading "targetAreaFollowsTarget" %}}
+> **bool**
+
+### {{% prop-heading "aggressive" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SearchAndDestroyOrderEntityData](/vext/ref/fb/searchanddestroyorderentitydata) type.
+

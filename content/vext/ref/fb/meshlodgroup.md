@@ -1,49 +1,96 @@
 ---
 title: MeshLodGroup
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MeshLodGroup](#constructor-0)**() |
+| **[MeshLodGroup](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MeshLodGroup](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[MeshLodGroup](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "lod1Distance" >}} | float |
+| {{< prop "lod2Distance" >}} | float |
+| {{< prop "lod3Distance" >}} | float |
+| {{< prop "lod4Distance" >}} | float |
+| {{< prop "lod5Distance" >}} | float |
+| {{< prop "shadowDistance" >}} | float |
+| {{< prop "cullScreenArea" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MeshLodGroup" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MeshLodGroup {#constructor-0}
+> **MeshLodGroup**()
 
-| Constructor                                                             | Description                                                                                                     |
-| ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| MeshLodGroup()                                                          | Create a new instance of this container type.                                                                   |
-| MeshLodGroup(MeshLodGroup other)                                        | Create a reference copy of an instance of the same type.                                                        |
-| MeshLodGroup([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [MeshLodGroup](/vext/ref/fb/meshlodgroup/).                                      |
-| MeshLodGroup([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MeshLodGroup](/vext/ref/fb/meshlodgroup/). |
+Creates a new [MeshLodGroup](/vext/ref/fb/meshlodgroup) frostbite instance.
 
-## Properties
+### MeshLodGroup {#constructor-1}
+> **MeshLodGroup**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name           | Type   | Description |
-| -------------- | ------ | ----------- |
-| lod1Distance   | number |             |
-| lod2Distance   | number |             |
-| lod3Distance   | number |             |
-| lod4Distance   | number |             |
-| lod5Distance   | number |             |
-| shadowDistance | number |             |
-| cullScreenArea | number |             |
-
-## Methods
-
-| Type                         | Name            | Parameters                                     |
-| ---------------------------- | --------------- | ---------------------------------------------- |
-| [MeshLodGroup](/vext/ref/fb/meshlodgroup/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MeshLodGroup](/vext/ref/fb/meshlodgroup/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MeshLodGroup](/vext/ref/fb/meshlodgroup) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MeshLodGroup {#constructor-2}
+> **MeshLodGroup**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [MeshLodGroup](/vext/ref/fb/meshlodgroup). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [MeshLodGroup](/vext/ref/fb/meshlodgroup). |
+
+### MeshLodGroup {#constructor-3}
+> **MeshLodGroup**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MeshLodGroup](/vext/ref/fb/meshlodgroup). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MeshLodGroup](/vext/ref/fb/meshlodgroup). |
+
+## Properties
+### {{% prop-heading "lod1Distance" %}}
+> **float**
+
+### {{% prop-heading "lod2Distance" %}}
+> **float**
+
+### {{% prop-heading "lod3Distance" %}}
+> **float**
+
+### {{% prop-heading "lod4Distance" %}}
+> **float**
+
+### {{% prop-heading "lod5Distance" %}}
+> **float**
+
+### {{% prop-heading "shadowDistance" %}}
+> **float**
+
+### {{% prop-heading "cullScreenArea" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MeshLodGroup](/vext/ref/fb/meshlodgroup) type.
+

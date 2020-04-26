@@ -1,47 +1,88 @@
 ---
 title: PerformanceTrackerSettings
 ---
-### Base Classes
 
-[SystemSettings](/vext/ref/fb/systemsettings/)
+Inherits from 
+[SystemSettings](/vext/ref/fb/systemsettings)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PerformanceTrackerSettings](#constructor-0)**() |
+| **[PerformanceTrackerSettings](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PerformanceTrackerSettings](#constructor-2)**(other: [SystemSettings](/vext/ref/fb/systemsettings)) |
+| **[PerformanceTrackerSettings](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "interval" >}} | float |
+| {{< prop "enabled" >}} | bool |
+| {{< prop "supressPerformanceStatsOnIdle" >}} | bool |
+| {{< prop "supressPerformanceStatsUntilSpawned" >}} | bool |
+| {{< prop "juiceLogPerformance" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PerformanceTrackerSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PerformanceTrackerSettings {#constructor-0}
+> **PerformanceTrackerSettings**()
 
-| Constructor                                                                           | Description                                                                                                                                 |
-| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| PerformanceTrackerSettings()                                                          | Create a new instance of this container type.                                                                                               |
-| PerformanceTrackerSettings(PerformanceTrackerSettings other)                          | Create a reference copy of an instance of the same type.                                                                                    |
-| PerformanceTrackerSettings([SystemSettings](/vext/ref/fb/systemsettings/) other)                    | Upcast an instance of type [SystemSettings](/vext/ref/fb/systemsettings/) to [PerformanceTrackerSettings](/vext/ref/fb/performancetrackersettings/).                    |
-| PerformanceTrackerSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PerformanceTrackerSettings](/vext/ref/fb/performancetrackersettings/). |
+Creates a new [PerformanceTrackerSettings](/vext/ref/fb/performancetrackersettings) frostbite instance.
 
-## Properties
+### PerformanceTrackerSettings {#constructor-1}
+> **PerformanceTrackerSettings**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                                | Type   | Description |
-| ----------------------------------- | ------ | ----------- |
-| interval                            | number |             |
-| enabled                             | bool   |             |
-| supressPerformanceStatsOnIdle       | bool   |             |
-| supressPerformanceStatsUntilSpawned | bool   |             |
-| juiceLogPerformance                 | bool   |             |
-
-## Methods
-
-| Type                                                     | Name            | Parameters                                     |
-| -------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [PerformanceTrackerSettings](/vext/ref/fb/performancetrackersettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PerformanceTrackerSettings](/vext/ref/fb/performancetrackersettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PerformanceTrackerSettings](/vext/ref/fb/performancetrackersettings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PerformanceTrackerSettings {#constructor-2}
+> **PerformanceTrackerSettings**(other: [SystemSettings](/vext/ref/fb/systemsettings))
+
+Casts an instance of type [SystemSettings](/vext/ref/fb/systemsettings) to [PerformanceTrackerSettings](/vext/ref/fb/performancetrackersettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SystemSettings](/vext/ref/fb/systemsettings) | The instance to cast to [PerformanceTrackerSettings](/vext/ref/fb/performancetrackersettings). |
+
+### PerformanceTrackerSettings {#constructor-3}
+> **PerformanceTrackerSettings**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PerformanceTrackerSettings](/vext/ref/fb/performancetrackersettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PerformanceTrackerSettings](/vext/ref/fb/performancetrackersettings). |
+
+## Properties
+### {{% prop-heading "interval" %}}
+> **float**
+
+### {{% prop-heading "enabled" %}}
+> **bool**
+
+### {{% prop-heading "supressPerformanceStatsOnIdle" %}}
+> **bool**
+
+### {{% prop-heading "supressPerformanceStatsUntilSpawned" %}}
+> **bool**
+
+### {{% prop-heading "juiceLogPerformance" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PerformanceTrackerSettings](/vext/ref/fb/performancetrackersettings) type.
+

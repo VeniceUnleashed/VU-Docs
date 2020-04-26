@@ -1,33 +1,61 @@
 ---
 title: UISettingsItem
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UISettingsItem](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "nameSid" >}} | string |
+| {{< prop "startEndSymbols" >}} | [UISettingSymbols](/vext/ref/fb/uisettingsymbols) |
+| {{< prop "setting" >}} | [ProfileOptionData](/vext/ref/fb/profileoptiondata) \| nil |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [UISettingsItem](/vext/ref/fb/uisettingsitem) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UISettingsItem" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UISettingsItem {#constructor-0}
+> **UISettingsItem**()
 
-| Constructor                          | Description                                              |
-| ------------------------------------ | -------------------------------------------------------- |
-| UISettingsItem()                     | Create a new instance of this structure type.            |
-| UISettingsItem(UISettingsItem other) | Create a reference copy of a structure of the same type. |
+Creates a new [UISettingsItem](/vext/ref/fb/uisettingsitem) frostbite structure.
 
 ## Properties
+### {{% prop-heading "nameSid" %}}
+> **string**
 
-| Name            | Type                                   | Description |
-| --------------- | -------------------------------------- | ----------- |
-| nameSid         | string                                 |             |
-| startEndSymbols | [UISettingSymbols](/vext/ref/fb/uisettingsymbols/)   |             |
-| setting         | [ProfileOptionData](/vext/ref/fb/profileoptiondata/) |             |
+### {{% prop-heading "startEndSymbols" %}}
+> **[UISettingSymbols](/vext/ref/fb/uisettingsymbols)**
+
+### {{% prop-heading "setting" %}}
+> **[ProfileOptionData](/vext/ref/fb/profileoptiondata)** | **nil**
 
 ## Methods
-
-| Type                             | Name            | Parameters |
-| -------------------------------- | --------------- | ---------- |
-| [UISettingsItem](/vext/ref/fb/uisettingsitem/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [UISettingsItem](/vext/ref/fb/uisettingsitem)
 
-> [UISettingsItem](/vext/ref/fb/uisettingsitem/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[UISettingsItem](/vext/ref/fb/uisettingsitem)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UISettingsItem](/vext/ref/fb/uisettingsitem) type.
+

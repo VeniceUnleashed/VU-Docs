@@ -1,51 +1,118 @@
 ---
 title: WarpAnimationEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[WarpAnimationEntityData](#constructor-0)**() |
+| **[WarpAnimationEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[WarpAnimationEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[WarpAnimationEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[WarpAnimationEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[WarpAnimationEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "connectTransform" >}} | [LinearTransform](/vext/ref/shared/class/lineartransform) |
+| {{< prop "animationEntitySpacePriority" >}} | int |
+| {{< prop "warpBinding" >}} | [WarpAnimationBinding](/vext/ref/fb/warpanimationbinding) |
+| {{< prop "boneToAlign" >}} | [GameplayBones](/vext/ref/fb/gameplaybones) |
+| {{< prop "forceAnimationTransform" >}} | bool |
+| {{< prop "requireAnimationWeight" >}} | bool |
+| {{< prop "externalConnectTransform" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "WarpAnimationEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### WarpAnimationEntityData {#constructor-0}
+> **WarpAnimationEntityData**()
 
-| Constructor                                                                        | Description                                                                                                                           |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| WarpAnimationEntityData()                                                          | Create a new instance of this container type.                                                                                         |
-| WarpAnimationEntityData(WarpAnimationEntityData other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| WarpAnimationEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [WarpAnimationEntityData](/vext/ref/fb/warpanimationentitydata/).                            |
-| WarpAnimationEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [WarpAnimationEntityData](/vext/ref/fb/warpanimationentitydata/).                    |
-| WarpAnimationEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [WarpAnimationEntityData](/vext/ref/fb/warpanimationentitydata/).              |
-| WarpAnimationEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WarpAnimationEntityData](/vext/ref/fb/warpanimationentitydata/). |
+Creates a new [WarpAnimationEntityData](/vext/ref/fb/warpanimationentitydata) frostbite instance.
 
-## Properties
+### WarpAnimationEntityData {#constructor-1}
+> **WarpAnimationEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                         | Type                                                    | Description |
-| ---------------------------- | ------------------------------------------------------- | ----------- |
-| connectTransform             | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
-| animationEntitySpacePriority | number                                                  |             |
-| warpBinding                  | [WarpAnimationBinding](/vext/ref/fb/warpanimationbinding/)            |             |
-| boneToAlign                  | [GameplayBones](/vext/ref/fb/gameplaybones/)                          |             |
-| forceAnimationTransform      | bool                                                    |             |
-| requireAnimationWeight       | bool                                                    |             |
-| externalConnectTransform     | bool                                                    |             |
-
-## Methods
-
-| Type                                               | Name            | Parameters                                     |
-| -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [WarpAnimationEntityData](/vext/ref/fb/warpanimationentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [WarpAnimationEntityData](/vext/ref/fb/warpanimationentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [WarpAnimationEntityData](/vext/ref/fb/warpanimationentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### WarpAnimationEntityData {#constructor-2}
+> **WarpAnimationEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [WarpAnimationEntityData](/vext/ref/fb/warpanimationentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [WarpAnimationEntityData](/vext/ref/fb/warpanimationentitydata). |
+
+### WarpAnimationEntityData {#constructor-3}
+> **WarpAnimationEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [WarpAnimationEntityData](/vext/ref/fb/warpanimationentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [WarpAnimationEntityData](/vext/ref/fb/warpanimationentitydata). |
+
+### WarpAnimationEntityData {#constructor-4}
+> **WarpAnimationEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [WarpAnimationEntityData](/vext/ref/fb/warpanimationentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [WarpAnimationEntityData](/vext/ref/fb/warpanimationentitydata). |
+
+### WarpAnimationEntityData {#constructor-5}
+> **WarpAnimationEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WarpAnimationEntityData](/vext/ref/fb/warpanimationentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [WarpAnimationEntityData](/vext/ref/fb/warpanimationentitydata). |
+
+## Properties
+### {{% prop-heading "connectTransform" %}}
+> **[LinearTransform](/vext/ref/shared/class/lineartransform)**
+
+### {{% prop-heading "animationEntitySpacePriority" %}}
+> **int**
+
+### {{% prop-heading "warpBinding" %}}
+> **[WarpAnimationBinding](/vext/ref/fb/warpanimationbinding)**
+
+### {{% prop-heading "boneToAlign" %}}
+> **[GameplayBones](/vext/ref/fb/gameplaybones)**
+
+### {{% prop-heading "forceAnimationTransform" %}}
+> **bool**
+
+### {{% prop-heading "requireAnimationWeight" %}}
+> **bool**
+
+### {{% prop-heading "externalConnectTransform" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [WarpAnimationEntityData](/vext/ref/fb/warpanimationentitydata) type.
+

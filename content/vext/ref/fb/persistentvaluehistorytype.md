@@ -1,15 +1,12 @@
 ---
 title: PersistentValueHistoryType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **PersistentValueHistoryType_None** | Value: **0** |
+| **PersistentValueHistoryType_Delta** | Value: **1** |
+| **PersistentValueHistoryType_DeltaAndAbsolute** | Value: **2** |
+| **PersistentValueHistoryType_HistoryOnly** | Value: **3** |
 
-| Name                                         | Value | Description |
-| -------------------------------------------- | ----- | ----------- |
-| PersistentValueHistoryType\_None             | 0     |             |
-| PersistentValueHistoryType\_Delta            | 1     |             |
-| PersistentValueHistoryType\_DeltaAndAbsolute | 2     |             |
-| PersistentValueHistoryType\_HistoryOnly      | 3     |             |

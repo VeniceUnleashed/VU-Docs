@@ -1,81 +1,224 @@
 ---
 title: DriverSettings
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[DriverSettings](#constructor-0)**() |
+| **[DriverSettings](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[DriverSettings](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[DriverSettings](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "minRadius" >}} | float |
+| {{< prop "radiusGrowthSpeed" >}} | float |
+| {{< prop "stoppingDeceleration" >}} | float |
+| {{< prop "steeringSensitivity" >}} | float |
+| {{< prop "maxBrakeOutput" >}} | float |
+| {{< prop "maxDec" >}} | float |
+| {{< prop "lookAheadTime" >}} | float |
+| {{< prop "angleDiffForNoSlowdown" >}} | float |
+| {{< prop "angleDiffForFullSlowdown" >}} | float |
+| {{< prop "velocityAtFullSlowdown" >}} | float |
+| {{< prop "velDiffAtMinAcc" >}} | float |
+| {{< prop "velDiffAtMaxAcc" >}} | float |
+| {{< prop "maxYawToApplySprint" >}} | float |
+| {{< prop "minAcc" >}} | float |
+| {{< prop "maxAcc" >}} | float |
+| {{< prop "velDiffAtMinDec" >}} | float |
+| {{< prop "velDiffAtMaxDec" >}} | float |
+| {{< prop "accDiffAtMinThrottleVelocityDecelerating" >}} | float |
+| {{< prop "minDec" >}} | float |
+| {{< prop "minThrottleVelocityDecelerating" >}} | float |
+| {{< prop "accDiffAtMinThrottleVelocityAccelerating" >}} | float |
+| {{< prop "accDiffAtMaxThrottleVelocityAccelerating" >}} | float |
+| {{< prop "maxThrottleVelocityDecelerating" >}} | float |
+| {{< prop "minThrottleVelocityAccelerating" >}} | float |
+| {{< prop "maxThrottleVelocityAccelerating" >}} | float |
+| {{< prop "maxPTerm" >}} | float |
+| {{< prop "accDiffAtMaxThrottleVelocityDecelerating" >}} | float |
+| {{< prop "p" >}} | float |
+| {{< prop "i" >}} | float |
+| {{< prop "maxError" >}} | float |
+| {{< prop "maxITerm" >}} | float |
+| {{< prop "maxSumError" >}} | float |
+| {{< prop "d" >}} | float |
+| {{< prop "useSquareVelDiffCurveDec" >}} | bool |
+| {{< prop "useSquareAccDiffCurveDec" >}} | bool |
+| {{< prop "squareBrakeOutput" >}} | bool |
+| {{< prop "useSquareVelDiffCurveAcc" >}} | bool |
+| {{< prop "usePIDRegulator" >}} | bool |
+| {{< prop "useSquareAccDiffCurveAcc" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "DriverSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### DriverSettings {#constructor-0}
+> **DriverSettings**()
 
-| Constructor                                                               | Description                                                                                                         |
-| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| DriverSettings()                                                          | Create a new instance of this container type.                                                                       |
-| DriverSettings(DriverSettings other)                                      | Create a reference copy of an instance of the same type.                                                            |
-| DriverSettings([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [DriverSettings](/vext/ref/fb/driversettings/).                                      |
-| DriverSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DriverSettings](/vext/ref/fb/driversettings/). |
+Creates a new [DriverSettings](/vext/ref/fb/driversettings) frostbite instance.
 
-## Properties
+### DriverSettings {#constructor-1}
+> **DriverSettings**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                                     | Type   | Description |
-| ---------------------------------------- | ------ | ----------- |
-| minRadius                                | number |             |
-| radiusGrowthSpeed                        | number |             |
-| stoppingDeceleration                     | number |             |
-| steeringSensitivity                      | number |             |
-| maxBrakeOutput                           | number |             |
-| maxDec                                   | number |             |
-| lookAheadTime                            | number |             |
-| angleDiffForNoSlowdown                   | number |             |
-| angleDiffForFullSlowdown                 | number |             |
-| velocityAtFullSlowdown                   | number |             |
-| velDiffAtMinAcc                          | number |             |
-| velDiffAtMaxAcc                          | number |             |
-| maxYawToApplySprint                      | number |             |
-| minAcc                                   | number |             |
-| maxAcc                                   | number |             |
-| velDiffAtMinDec                          | number |             |
-| velDiffAtMaxDec                          | number |             |
-| accDiffAtMinThrottleVelocityDecelerating | number |             |
-| minDec                                   | number |             |
-| minThrottleVelocityDecelerating          | number |             |
-| accDiffAtMinThrottleVelocityAccelerating | number |             |
-| accDiffAtMaxThrottleVelocityAccelerating | number |             |
-| maxThrottleVelocityDecelerating          | number |             |
-| minThrottleVelocityAccelerating          | number |             |
-| maxThrottleVelocityAccelerating          | number |             |
-| maxPTerm                                 | number |             |
-| accDiffAtMaxThrottleVelocityDecelerating | number |             |
-| p                                        | number |             |
-| i                                        | number |             |
-| maxError                                 | number |             |
-| maxITerm                                 | number |             |
-| maxSumError                              | number |             |
-| d                                        | number |             |
-| useSquareVelDiffCurveDec                 | bool   |             |
-| useSquareAccDiffCurveDec                 | bool   |             |
-| squareBrakeOutput                        | bool   |             |
-| useSquareVelDiffCurveAcc                 | bool   |             |
-| usePIDRegulator                          | bool   |             |
-| useSquareAccDiffCurveAcc                 | bool   |             |
-
-## Methods
-
-| Type                             | Name            | Parameters                                     |
-| -------------------------------- | --------------- | ---------------------------------------------- |
-| [DriverSettings](/vext/ref/fb/driversettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [DriverSettings](/vext/ref/fb/driversettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [DriverSettings](/vext/ref/fb/driversettings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### DriverSettings {#constructor-2}
+> **DriverSettings**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [DriverSettings](/vext/ref/fb/driversettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [DriverSettings](/vext/ref/fb/driversettings). |
+
+### DriverSettings {#constructor-3}
+> **DriverSettings**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DriverSettings](/vext/ref/fb/driversettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DriverSettings](/vext/ref/fb/driversettings). |
+
+## Properties
+### {{% prop-heading "minRadius" %}}
+> **float**
+
+### {{% prop-heading "radiusGrowthSpeed" %}}
+> **float**
+
+### {{% prop-heading "stoppingDeceleration" %}}
+> **float**
+
+### {{% prop-heading "steeringSensitivity" %}}
+> **float**
+
+### {{% prop-heading "maxBrakeOutput" %}}
+> **float**
+
+### {{% prop-heading "maxDec" %}}
+> **float**
+
+### {{% prop-heading "lookAheadTime" %}}
+> **float**
+
+### {{% prop-heading "angleDiffForNoSlowdown" %}}
+> **float**
+
+### {{% prop-heading "angleDiffForFullSlowdown" %}}
+> **float**
+
+### {{% prop-heading "velocityAtFullSlowdown" %}}
+> **float**
+
+### {{% prop-heading "velDiffAtMinAcc" %}}
+> **float**
+
+### {{% prop-heading "velDiffAtMaxAcc" %}}
+> **float**
+
+### {{% prop-heading "maxYawToApplySprint" %}}
+> **float**
+
+### {{% prop-heading "minAcc" %}}
+> **float**
+
+### {{% prop-heading "maxAcc" %}}
+> **float**
+
+### {{% prop-heading "velDiffAtMinDec" %}}
+> **float**
+
+### {{% prop-heading "velDiffAtMaxDec" %}}
+> **float**
+
+### {{% prop-heading "accDiffAtMinThrottleVelocityDecelerating" %}}
+> **float**
+
+### {{% prop-heading "minDec" %}}
+> **float**
+
+### {{% prop-heading "minThrottleVelocityDecelerating" %}}
+> **float**
+
+### {{% prop-heading "accDiffAtMinThrottleVelocityAccelerating" %}}
+> **float**
+
+### {{% prop-heading "accDiffAtMaxThrottleVelocityAccelerating" %}}
+> **float**
+
+### {{% prop-heading "maxThrottleVelocityDecelerating" %}}
+> **float**
+
+### {{% prop-heading "minThrottleVelocityAccelerating" %}}
+> **float**
+
+### {{% prop-heading "maxThrottleVelocityAccelerating" %}}
+> **float**
+
+### {{% prop-heading "maxPTerm" %}}
+> **float**
+
+### {{% prop-heading "accDiffAtMaxThrottleVelocityDecelerating" %}}
+> **float**
+
+### {{% prop-heading "p" %}}
+> **float**
+
+### {{% prop-heading "i" %}}
+> **float**
+
+### {{% prop-heading "maxError" %}}
+> **float**
+
+### {{% prop-heading "maxITerm" %}}
+> **float**
+
+### {{% prop-heading "maxSumError" %}}
+> **float**
+
+### {{% prop-heading "d" %}}
+> **float**
+
+### {{% prop-heading "useSquareVelDiffCurveDec" %}}
+> **bool**
+
+### {{% prop-heading "useSquareAccDiffCurveDec" %}}
+> **bool**
+
+### {{% prop-heading "squareBrakeOutput" %}}
+> **bool**
+
+### {{% prop-heading "useSquareVelDiffCurveAcc" %}}
+> **bool**
+
+### {{% prop-heading "usePIDRegulator" %}}
+> **bool**
+
+### {{% prop-heading "useSquareAccDiffCurveAcc" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [DriverSettings](/vext/ref/fb/driversettings) type.
+

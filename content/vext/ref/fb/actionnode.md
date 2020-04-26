@@ -1,49 +1,96 @@
 ---
 title: ActionNode
 ---
-### Base Classes
 
-[UINodeData](/vext/ref/fb/uinodedata/)
+Inherits from 
+[UINodeData](/vext/ref/fb/uinodedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ActionNode](#constructor-0)**() |
+| **[ActionNode](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ActionNode](#constructor-2)**(other: [UINodeData](/vext/ref/fb/uinodedata)) |
+| **[ActionNode](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "actionKey" >}} | int |
+| {{< prop "params" >}} | string[] |
+| {{< prop "actionAsset" >}} | [Asset](/vext/ref/fb/asset) \| nil |
+| {{< prop "inValue" >}} | [UINodePort](/vext/ref/fb/uinodeport) \| nil |
+| {{< prop "out" >}} | [UINodePort](/vext/ref/fb/uinodeport) \| nil |
+| {{< prop "dataInputs" >}} | [UINodePort](/vext/ref/fb/uinodeport)[] |
+| {{< prop "appendIncomingParams" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ActionNode" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ActionNode {#constructor-0}
+> **ActionNode**()
 
-| Constructor                                                           | Description                                                                                                 |
-| --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| ActionNode()                                                          | Create a new instance of this container type.                                                               |
-| ActionNode(ActionNode other)                                          | Create a reference copy of an instance of the same type.                                                    |
-| ActionNode([UINodeData](/vext/ref/fb/uinodedata/) other)                            | Upcast an instance of type [UINodeData](/vext/ref/fb/uinodedata/) to [ActionNode](/vext/ref/fb/actionnode/).                            |
-| ActionNode([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ActionNode](/vext/ref/fb/actionnode/). |
+Creates a new [ActionNode](/vext/ref/fb/actionnode) frostbite instance.
 
-## Properties
+### ActionNode {#constructor-1}
+> **ActionNode**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                 | Type                         | Description |
-| -------------------- | ---------------------------- | ----------- |
-| actionKey            | number                       |             |
-| params               | string\[\]                   |             |
-| actionAsset          | [Asset](/vext/ref/fb/asset/)               |             |
-| inValue              | [UINodePort](/vext/ref/fb/uinodeport/)     |             |
-| out                  | [UINodePort](/vext/ref/fb/uinodeport/)     |             |
-| dataInputs           | [UINodePort](/vext/ref/fb/uinodeport/)\[\] |             |
-| appendIncomingParams | bool                         |             |
-
-## Methods
-
-| Type                     | Name            | Parameters                                     |
-| ------------------------ | --------------- | ---------------------------------------------- |
-| [ActionNode](/vext/ref/fb/actionnode/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ActionNode](/vext/ref/fb/actionnode/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ActionNode](/vext/ref/fb/actionnode) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ActionNode {#constructor-2}
+> **ActionNode**(other: [UINodeData](/vext/ref/fb/uinodedata))
+
+Casts an instance of type [UINodeData](/vext/ref/fb/uinodedata) to [ActionNode](/vext/ref/fb/actionnode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UINodeData](/vext/ref/fb/uinodedata) | The instance to cast to [ActionNode](/vext/ref/fb/actionnode). |
+
+### ActionNode {#constructor-3}
+> **ActionNode**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ActionNode](/vext/ref/fb/actionnode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ActionNode](/vext/ref/fb/actionnode). |
+
+## Properties
+### {{% prop-heading "actionKey" %}}
+> **int**
+
+### {{% prop-heading "params" %}}
+> **string**[]
+
+### {{% prop-heading "actionAsset" %}}
+> **[Asset](/vext/ref/fb/asset)** | **nil**
+
+### {{% prop-heading "inValue" %}}
+> **[UINodePort](/vext/ref/fb/uinodeport)** | **nil**
+
+### {{% prop-heading "out" %}}
+> **[UINodePort](/vext/ref/fb/uinodeport)** | **nil**
+
+### {{% prop-heading "dataInputs" %}}
+> **[UINodePort](/vext/ref/fb/uinodeport)**[]
+
+### {{% prop-heading "appendIncomingParams" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ActionNode](/vext/ref/fb/actionnode) type.
+

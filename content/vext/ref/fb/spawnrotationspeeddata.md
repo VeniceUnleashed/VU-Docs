@@ -1,44 +1,83 @@
 ---
 title: SpawnRotationSpeedData
 ---
-### Base Classes
 
-[ProcessorData](/vext/ref/fb/processordata/)
+Inherits from 
+[ProcessorData](/vext/ref/fb/processordata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SpawnRotationSpeedData](#constructor-0)**() |
+| **[SpawnRotationSpeedData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SpawnRotationSpeedData](#constructor-2)**(other: [ProcessorData](/vext/ref/fb/processordata)) |
+| **[SpawnRotationSpeedData](#constructor-3)**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata)) |
+| **[SpawnRotationSpeedData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "rotationSpeed" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SpawnRotationSpeedData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SpawnRotationSpeedData {#constructor-0}
+> **SpawnRotationSpeedData**()
 
-| Constructor                                                                       | Description                                                                                                                         |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| SpawnRotationSpeedData()                                                          | Create a new instance of this container type.                                                                                       |
-| SpawnRotationSpeedData(SpawnRotationSpeedData other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| SpawnRotationSpeedData([ProcessorData](/vext/ref/fb/processordata/) other)                      | Upcast an instance of type [ProcessorData](/vext/ref/fb/processordata/) to [SpawnRotationSpeedData](/vext/ref/fb/spawnrotationspeeddata/).                      |
-| SpawnRotationSpeedData([EmitterComponentData](/vext/ref/fb/emittercomponentdata/) other)        | Upcast an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata/) to [SpawnRotationSpeedData](/vext/ref/fb/spawnrotationspeeddata/).        |
-| SpawnRotationSpeedData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SpawnRotationSpeedData](/vext/ref/fb/spawnrotationspeeddata/). |
+Creates a new [SpawnRotationSpeedData](/vext/ref/fb/spawnrotationspeeddata) frostbite instance.
 
-## Properties
+### SpawnRotationSpeedData {#constructor-1}
+> **SpawnRotationSpeedData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name          | Type   | Description |
-| ------------- | ------ | ----------- |
-| rotationSpeed | number |             |
-
-## Methods
-
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [SpawnRotationSpeedData](/vext/ref/fb/spawnrotationspeeddata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SpawnRotationSpeedData](/vext/ref/fb/spawnrotationspeeddata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SpawnRotationSpeedData](/vext/ref/fb/spawnrotationspeeddata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SpawnRotationSpeedData {#constructor-2}
+> **SpawnRotationSpeedData**(other: [ProcessorData](/vext/ref/fb/processordata))
+
+Casts an instance of type [ProcessorData](/vext/ref/fb/processordata) to [SpawnRotationSpeedData](/vext/ref/fb/spawnrotationspeeddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ProcessorData](/vext/ref/fb/processordata) | The instance to cast to [SpawnRotationSpeedData](/vext/ref/fb/spawnrotationspeeddata). |
+
+### SpawnRotationSpeedData {#constructor-3}
+> **SpawnRotationSpeedData**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata))
+
+Casts an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata) to [SpawnRotationSpeedData](/vext/ref/fb/spawnrotationspeeddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EmitterComponentData](/vext/ref/fb/emittercomponentdata) | The instance to cast to [SpawnRotationSpeedData](/vext/ref/fb/spawnrotationspeeddata). |
+
+### SpawnRotationSpeedData {#constructor-4}
+> **SpawnRotationSpeedData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SpawnRotationSpeedData](/vext/ref/fb/spawnrotationspeeddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SpawnRotationSpeedData](/vext/ref/fb/spawnrotationspeeddata). |
+
+## Properties
+### {{% prop-heading "rotationSpeed" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SpawnRotationSpeedData](/vext/ref/fb/spawnrotationspeeddata) type.
+

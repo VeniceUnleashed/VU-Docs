@@ -1,30 +1,27 @@
 ---
 title: OrderType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **OrderType_None** | Value: **0** |
+| **OrderType_RequestHeal** | Value: **1** |
+| **OrderType_LetMeHeal** | Value: **2** |
+| **OrderType_RequestAmmo** | Value: **3** |
+| **OrderType_LetMeGiveAmmo** | Value: **4** |
+| **OrderType_LetMeRepair** | Value: **5** |
+| **OrderType_RequestRepair** | Value: **6** |
+| **OrderType_RequestRide** | Value: **7** |
+| **OrderType_GoGoGo** | Value: **8** |
+| **OrderType_FollowMe** | Value: **9** |
+| **OrderType_Negative** | Value: **10** |
+| **OrderType_Sorry** | Value: **11** |
+| **OrderType_ThankYou** | Value: **12** |
+| **OrderType_RogerThat** | Value: **13** |
+| **OrderType_NeedBackup** | Value: **14** |
+| **OrderType_GetIn** | Value: **15** |
+| **OrderType_GetOut** | Value: **16** |
+| **OrderType_Attack** | Value: **17** |
+| **OrderType_Count** | Value: **18** |
 
-| Name                     | Value | Description |
-| ------------------------ | ----- | ----------- |
-| OrderType\_None          | 0     |             |
-| OrderType\_RequestHeal   | 1     |             |
-| OrderType\_LetMeHeal     | 2     |             |
-| OrderType\_RequestAmmo   | 3     |             |
-| OrderType\_LetMeGiveAmmo | 4     |             |
-| OrderType\_LetMeRepair   | 5     |             |
-| OrderType\_RequestRepair | 6     |             |
-| OrderType\_RequestRide   | 7     |             |
-| OrderType\_GoGoGo        | 8     |             |
-| OrderType\_FollowMe      | 9     |             |
-| OrderType\_Negative      | 10    |             |
-| OrderType\_Sorry         | 11    |             |
-| OrderType\_ThankYou      | 12    |             |
-| OrderType\_RogerThat     | 13    |             |
-| OrderType\_NeedBackup    | 14    |             |
-| OrderType\_GetIn         | 15    |             |
-| OrderType\_GetOut        | 16    |             |
-| OrderType\_Attack        | 17    |             |
-| OrderType\_Count         | 18    |             |

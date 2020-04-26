@@ -1,32 +1,57 @@
 ---
 title: MinimapCameraOffsetData
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MinimapCameraOffsetData](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "position" >}} | [Vec2](/vext/ref/shared/class/vec2) |
+| {{< prop "cameraFov" >}} | float |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [MinimapCameraOffsetData](/vext/ref/fb/minimapcameraoffsetdata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MinimapCameraOffsetData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MinimapCameraOffsetData {#constructor-0}
+> **MinimapCameraOffsetData**()
 
-| Constructor                                            | Description                                              |
-| ------------------------------------------------------ | -------------------------------------------------------- |
-| MinimapCameraOffsetData()                              | Create a new instance of this structure type.            |
-| MinimapCameraOffsetData(MinimapCameraOffsetData other) | Create a reference copy of a structure of the same type. |
+Creates a new [MinimapCameraOffsetData](/vext/ref/fb/minimapcameraoffsetdata) frostbite structure.
 
 ## Properties
+### {{% prop-heading "position" %}}
+> **[Vec2](/vext/ref/shared/class/vec2)**
 
-| Name      | Type                              | Description |
-| --------- | --------------------------------- | ----------- |
-| position  | [Vec2](/vext/ref/shared/class/vec2) |             |
-| cameraFov | number                            |             |
+### {{% prop-heading "cameraFov" %}}
+> **float**
 
 ## Methods
-
-| Type                                               | Name            | Parameters |
-| -------------------------------------------------- | --------------- | ---------- |
-| [MinimapCameraOffsetData](/vext/ref/fb/minimapcameraoffsetdata/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [MinimapCameraOffsetData](/vext/ref/fb/minimapcameraoffsetdata)
 
-> [MinimapCameraOffsetData](/vext/ref/fb/minimapcameraoffsetdata/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[MinimapCameraOffsetData](/vext/ref/fb/minimapcameraoffsetdata)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MinimapCameraOffsetData](/vext/ref/fb/minimapcameraoffsetdata) type.
+

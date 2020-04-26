@@ -1,47 +1,88 @@
 ---
 title: PointSystemParamsAsset
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PointSystemParamsAsset](#constructor-0)**() |
+| **[PointSystemParamsAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PointSystemParamsAsset](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[PointSystemParamsAsset](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "multiKillTimeLimit" >}} | float |
+| {{< prop "dnfTimeout" >}} | float |
+| {{< prop "killStreakX" >}} | int |
+| {{< prop "nemesisKillX" >}} | int |
+| {{< prop "freefallHeight" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PointSystemParamsAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PointSystemParamsAsset {#constructor-0}
+> **PointSystemParamsAsset**()
 
-| Constructor                                                                       | Description                                                                                                                         |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| PointSystemParamsAsset()                                                          | Create a new instance of this container type.                                                                                       |
-| PointSystemParamsAsset(PointSystemParamsAsset other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| PointSystemParamsAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [PointSystemParamsAsset](/vext/ref/fb/pointsystemparamsasset/).                                      |
-| PointSystemParamsAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PointSystemParamsAsset](/vext/ref/fb/pointsystemparamsasset/). |
+Creates a new [PointSystemParamsAsset](/vext/ref/fb/pointsystemparamsasset) frostbite instance.
 
-## Properties
+### PointSystemParamsAsset {#constructor-1}
+> **PointSystemParamsAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name               | Type   | Description |
-| ------------------ | ------ | ----------- |
-| multiKillTimeLimit | number |             |
-| dnfTimeout         | number |             |
-| killStreakX        | number |             |
-| nemesisKillX       | number |             |
-| freefallHeight     | number |             |
-
-## Methods
-
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [PointSystemParamsAsset](/vext/ref/fb/pointsystemparamsasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PointSystemParamsAsset](/vext/ref/fb/pointsystemparamsasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PointSystemParamsAsset](/vext/ref/fb/pointsystemparamsasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PointSystemParamsAsset {#constructor-2}
+> **PointSystemParamsAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [PointSystemParamsAsset](/vext/ref/fb/pointsystemparamsasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [PointSystemParamsAsset](/vext/ref/fb/pointsystemparamsasset). |
+
+### PointSystemParamsAsset {#constructor-3}
+> **PointSystemParamsAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PointSystemParamsAsset](/vext/ref/fb/pointsystemparamsasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PointSystemParamsAsset](/vext/ref/fb/pointsystemparamsasset). |
+
+## Properties
+### {{% prop-heading "multiKillTimeLimit" %}}
+> **float**
+
+### {{% prop-heading "dnfTimeout" %}}
+> **float**
+
+### {{% prop-heading "killStreakX" %}}
+> **int**
+
+### {{% prop-heading "nemesisKillX" %}}
+> **int**
+
+### {{% prop-heading "freefallHeight" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PointSystemParamsAsset](/vext/ref/fb/pointsystemparamsasset) type.
+

@@ -1,55 +1,120 @@
 ---
 title: SoldierAimingSimulationData
 ---
-### Base Classes
 
-[GameDataContainer](/vext/ref/fb/gamedatacontainer/)
+Inherits from 
+[GameDataContainer](/vext/ref/fb/gamedatacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SoldierAimingSimulationData](#constructor-0)**() |
+| **[SoldierAimingSimulationData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SoldierAimingSimulationData](#constructor-2)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[SoldierAimingSimulationData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "zoomLevels" >}} | [ZoomLevelData](/vext/ref/fb/zoomleveldata)[] |
+| {{< prop "zoomTransitionTime" >}} | float |
+| {{< prop "aimAssist" >}} | [SoldierAimAssistData](/vext/ref/fb/soldieraimassistdata) \| nil |
+| {{< prop "standPose" >}} | [AimingPoseData](/vext/ref/fb/aimingposedata) |
+| {{< prop "crouchPose" >}} | [AimingPoseData](/vext/ref/fb/aimingposedata) |
+| {{< prop "pronePose" >}} | [AimingPoseData](/vext/ref/fb/aimingposedata) |
+| {{< prop "zoomTransitionTimeArray" >}} | [ZoomLevelSpecificTransitionTime](/vext/ref/fb/zoomlevelspecifictransitiontime)[] |
+| {{< prop "fovTransitionTime" >}} | float |
+| {{< prop "fovDelayTime" >}} | float |
+| {{< prop "modifiers" >}} | [AimerModifierData](/vext/ref/fb/aimermodifierdata)[] |
+| {{< prop "aimingRange" >}} | float |
+| {{< prop "lockAimToTargetSpeed" >}} | float |
+| {{< prop "returnToZoomAfterReload" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SoldierAimingSimulationData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SoldierAimingSimulationData {#constructor-0}
+> **SoldierAimingSimulationData**()
 
-| Constructor                                                                            | Description                                                                                                                                   |
-| -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| SoldierAimingSimulationData()                                                          | Create a new instance of this container type.                                                                                                 |
-| SoldierAimingSimulationData(SoldierAimingSimulationData other)                         | Create a reference copy of an instance of the same type.                                                                                      |
-| SoldierAimingSimulationData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [SoldierAimingSimulationData](/vext/ref/fb/soldieraimingsimulationdata/).              |
-| SoldierAimingSimulationData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoldierAimingSimulationData](/vext/ref/fb/soldieraimingsimulationdata/). |
+Creates a new [SoldierAimingSimulationData](/vext/ref/fb/soldieraimingsimulationdata) frostbite instance.
 
-## Properties
+### SoldierAimingSimulationData {#constructor-1}
+> **SoldierAimingSimulationData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                    | Type                                                                   | Description |
-| ----------------------- | ---------------------------------------------------------------------- | ----------- |
-| zoomLevels              | [ZoomLevelData](/vext/ref/fb/zoomleveldata/)\[\]                                     |             |
-| zoomTransitionTime      | number                                                                 |             |
-| aimAssist               | [SoldierAimAssistData](/vext/ref/fb/soldieraimassistdata/)                           |             |
-| standPose               | [AimingPoseData](/vext/ref/fb/aimingposedata/)                                       |             |
-| crouchPose              | [AimingPoseData](/vext/ref/fb/aimingposedata/)                                       |             |
-| pronePose               | [AimingPoseData](/vext/ref/fb/aimingposedata/)                                       |             |
-| zoomTransitionTimeArray | [ZoomLevelSpecificTransitionTime](/vext/ref/fb/zoomlevelspecifictransitiontime/)\[\] |             |
-| fovTransitionTime       | number                                                                 |             |
-| fovDelayTime            | number                                                                 |             |
-| modifiers               | [AimerModifierData](/vext/ref/fb/aimermodifierdata/)\[\]                             |             |
-| aimingRange             | number                                                                 |             |
-| lockAimToTargetSpeed    | number                                                                 |             |
-| returnToZoomAfterReload | bool                                                                   |             |
-
-## Methods
-
-| Type                                                       | Name            | Parameters                                     |
-| ---------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [SoldierAimingSimulationData](/vext/ref/fb/soldieraimingsimulationdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SoldierAimingSimulationData](/vext/ref/fb/soldieraimingsimulationdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SoldierAimingSimulationData](/vext/ref/fb/soldieraimingsimulationdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SoldierAimingSimulationData {#constructor-2}
+> **SoldierAimingSimulationData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [SoldierAimingSimulationData](/vext/ref/fb/soldieraimingsimulationdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [SoldierAimingSimulationData](/vext/ref/fb/soldieraimingsimulationdata). |
+
+### SoldierAimingSimulationData {#constructor-3}
+> **SoldierAimingSimulationData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoldierAimingSimulationData](/vext/ref/fb/soldieraimingsimulationdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SoldierAimingSimulationData](/vext/ref/fb/soldieraimingsimulationdata). |
+
+## Properties
+### {{% prop-heading "zoomLevels" %}}
+> **[ZoomLevelData](/vext/ref/fb/zoomleveldata)**[]
+
+### {{% prop-heading "zoomTransitionTime" %}}
+> **float**
+
+### {{% prop-heading "aimAssist" %}}
+> **[SoldierAimAssistData](/vext/ref/fb/soldieraimassistdata)** | **nil**
+
+### {{% prop-heading "standPose" %}}
+> **[AimingPoseData](/vext/ref/fb/aimingposedata)**
+
+### {{% prop-heading "crouchPose" %}}
+> **[AimingPoseData](/vext/ref/fb/aimingposedata)**
+
+### {{% prop-heading "pronePose" %}}
+> **[AimingPoseData](/vext/ref/fb/aimingposedata)**
+
+### {{% prop-heading "zoomTransitionTimeArray" %}}
+> **[ZoomLevelSpecificTransitionTime](/vext/ref/fb/zoomlevelspecifictransitiontime)**[]
+
+### {{% prop-heading "fovTransitionTime" %}}
+> **float**
+
+### {{% prop-heading "fovDelayTime" %}}
+> **float**
+
+### {{% prop-heading "modifiers" %}}
+> **[AimerModifierData](/vext/ref/fb/aimermodifierdata)**[]
+
+### {{% prop-heading "aimingRange" %}}
+> **float**
+
+### {{% prop-heading "lockAimToTargetSpeed" %}}
+> **float**
+
+### {{% prop-heading "returnToZoomAfterReload" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SoldierAimingSimulationData](/vext/ref/fb/soldieraimingsimulationdata) type.
+

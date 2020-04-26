@@ -1,43 +1,65 @@
 ---
 title: VoiceOverLanguageRoot
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VoiceOverLanguageRoot](#constructor-0)**() |
+| **[VoiceOverLanguageRoot](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VoiceOverLanguageRoot](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "language" >}} | [AudioLanguage](/vext/ref/fb/audiolanguage) \| nil |
+| {{< prop "path" >}} | string |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VoiceOverLanguageRoot" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VoiceOverLanguageRoot {#constructor-0}
+> **VoiceOverLanguageRoot**()
 
-| Constructor                                                                      | Description                                                                                                                       |
-| -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| VoiceOverLanguageRoot()                                                          | Create a new instance of this container type.                                                                                     |
-| VoiceOverLanguageRoot(VoiceOverLanguageRoot other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| VoiceOverLanguageRoot([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverLanguageRoot](/vext/ref/fb/voiceoverlanguageroot/). |
+Creates a new [VoiceOverLanguageRoot](/vext/ref/fb/voiceoverlanguageroot) frostbite instance.
 
-## Properties
+### VoiceOverLanguageRoot {#constructor-1}
+> **VoiceOverLanguageRoot**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name     | Type                           | Description |
-| -------- | ------------------------------ | ----------- |
-| language | [AudioLanguage](/vext/ref/fb/audiolanguage/) |             |
-| path     | string                         |             |
-
-## Methods
-
-| Type                                           | Name            | Parameters                                     |
-| ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [VoiceOverLanguageRoot](/vext/ref/fb/voiceoverlanguageroot/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VoiceOverLanguageRoot](/vext/ref/fb/voiceoverlanguageroot/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VoiceOverLanguageRoot](/vext/ref/fb/voiceoverlanguageroot) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VoiceOverLanguageRoot {#constructor-2}
+> **VoiceOverLanguageRoot**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverLanguageRoot](/vext/ref/fb/voiceoverlanguageroot). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VoiceOverLanguageRoot](/vext/ref/fb/voiceoverlanguageroot). |
+
+## Properties
+### {{% prop-heading "language" %}}
+> **[AudioLanguage](/vext/ref/fb/audiolanguage)** | **nil**
+
+### {{% prop-heading "path" %}}
+> **string**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VoiceOverLanguageRoot](/vext/ref/fb/voiceoverlanguageroot) type.
+

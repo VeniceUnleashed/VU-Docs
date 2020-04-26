@@ -1,43 +1,72 @@
 ---
 title: ClosestInstancesScopeStrategyData
 ---
-### Base Classes
 
-[SoundScopeStrategyData](/vext/ref/fb/soundscopestrategydata/)
+Inherits from 
+[SoundScopeStrategyData](/vext/ref/fb/soundscopestrategydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ClosestInstancesScopeStrategyData](#constructor-0)**() |
+| **[ClosestInstancesScopeStrategyData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ClosestInstancesScopeStrategyData](#constructor-2)**(other: [SoundScopeStrategyData](/vext/ref/fb/soundscopestrategydata)) |
+| **[ClosestInstancesScopeStrategyData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "count" >}} | int |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ClosestInstancesScopeStrategyData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ClosestInstancesScopeStrategyData {#constructor-0}
+> **ClosestInstancesScopeStrategyData**()
 
-| Constructor                                                                                  | Description                                                                                                                                               |
-| -------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ClosestInstancesScopeStrategyData()                                                          | Create a new instance of this container type.                                                                                                             |
-| ClosestInstancesScopeStrategyData(ClosestInstancesScopeStrategyData other)                   | Create a reference copy of an instance of the same type.                                                                                                  |
-| ClosestInstancesScopeStrategyData([SoundScopeStrategyData](/vext/ref/fb/soundscopestrategydata/) other)    | Upcast an instance of type [SoundScopeStrategyData](/vext/ref/fb/soundscopestrategydata/) to [ClosestInstancesScopeStrategyData](/vext/ref/fb/closestinstancesscopestrategydata/).    |
-| ClosestInstancesScopeStrategyData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ClosestInstancesScopeStrategyData](/vext/ref/fb/closestinstancesscopestrategydata/). |
+Creates a new [ClosestInstancesScopeStrategyData](/vext/ref/fb/closestinstancesscopestrategydata) frostbite instance.
 
-## Properties
+### ClosestInstancesScopeStrategyData {#constructor-1}
+> **ClosestInstancesScopeStrategyData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name  | Type   | Description |
-| ----- | ------ | ----------- |
-| count | number |             |
-
-## Methods
-
-| Type                                                                   | Name            | Parameters                                     |
-| ---------------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [ClosestInstancesScopeStrategyData](/vext/ref/fb/closestinstancesscopestrategydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ClosestInstancesScopeStrategyData](/vext/ref/fb/closestinstancesscopestrategydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ClosestInstancesScopeStrategyData](/vext/ref/fb/closestinstancesscopestrategydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ClosestInstancesScopeStrategyData {#constructor-2}
+> **ClosestInstancesScopeStrategyData**(other: [SoundScopeStrategyData](/vext/ref/fb/soundscopestrategydata))
+
+Casts an instance of type [SoundScopeStrategyData](/vext/ref/fb/soundscopestrategydata) to [ClosestInstancesScopeStrategyData](/vext/ref/fb/closestinstancesscopestrategydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SoundScopeStrategyData](/vext/ref/fb/soundscopestrategydata) | The instance to cast to [ClosestInstancesScopeStrategyData](/vext/ref/fb/closestinstancesscopestrategydata). |
+
+### ClosestInstancesScopeStrategyData {#constructor-3}
+> **ClosestInstancesScopeStrategyData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ClosestInstancesScopeStrategyData](/vext/ref/fb/closestinstancesscopestrategydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ClosestInstancesScopeStrategyData](/vext/ref/fb/closestinstancesscopestrategydata). |
+
+## Properties
+### {{% prop-heading "count" %}}
+> **int**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ClosestInstancesScopeStrategyData](/vext/ref/fb/closestinstancesscopestrategydata) type.
+

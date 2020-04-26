@@ -1,48 +1,92 @@
 ---
 title: GearBagSpec
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[GearBagSpec](#constructor-0)**() |
+| **[GearBagSpec](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[GearBagSpec](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[GearBagSpec](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "maxPrimaryWeapons" >}} | int |
+| {{< prop "maxSecondaryWeapons" >}} | int |
+| {{< prop "maxSidearms" >}} | int |
+| {{< prop "maxGadgetsPerSlot" >}} | int |
+| {{< prop "gadgetSlots" >}} | int |
+| {{< prop "childSpecs" >}} | [GearBagSpec](/vext/ref/fb/gearbagspec)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "GearBagSpec" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### GearBagSpec {#constructor-0}
+> **GearBagSpec**()
 
-| Constructor                                                            | Description                                                                                                   |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| GearBagSpec()                                                          | Create a new instance of this container type.                                                                 |
-| GearBagSpec(GearBagSpec other)                                         | Create a reference copy of an instance of the same type.                                                      |
-| GearBagSpec([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [GearBagSpec](/vext/ref/fb/gearbagspec/).                                      |
-| GearBagSpec([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GearBagSpec](/vext/ref/fb/gearbagspec/). |
+Creates a new [GearBagSpec](/vext/ref/fb/gearbagspec) frostbite instance.
 
-## Properties
+### GearBagSpec {#constructor-1}
+> **GearBagSpec**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                | Type                           | Description |
-| ------------------- | ------------------------------ | ----------- |
-| maxPrimaryWeapons   | number                         |             |
-| maxSecondaryWeapons | number                         |             |
-| maxSidearms         | number                         |             |
-| maxGadgetsPerSlot   | number                         |             |
-| gadgetSlots         | number                         |             |
-| childSpecs          | [GearBagSpec](/vext/ref/fb/gearbagspec/)\[\] |             |
-
-## Methods
-
-| Type                       | Name            | Parameters                                     |
-| -------------------------- | --------------- | ---------------------------------------------- |
-| [GearBagSpec](/vext/ref/fb/gearbagspec/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [GearBagSpec](/vext/ref/fb/gearbagspec/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [GearBagSpec](/vext/ref/fb/gearbagspec) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### GearBagSpec {#constructor-2}
+> **GearBagSpec**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [GearBagSpec](/vext/ref/fb/gearbagspec). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [GearBagSpec](/vext/ref/fb/gearbagspec). |
+
+### GearBagSpec {#constructor-3}
+> **GearBagSpec**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GearBagSpec](/vext/ref/fb/gearbagspec). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [GearBagSpec](/vext/ref/fb/gearbagspec). |
+
+## Properties
+### {{% prop-heading "maxPrimaryWeapons" %}}
+> **int**
+
+### {{% prop-heading "maxSecondaryWeapons" %}}
+> **int**
+
+### {{% prop-heading "maxSidearms" %}}
+> **int**
+
+### {{% prop-heading "maxGadgetsPerSlot" %}}
+> **int**
+
+### {{% prop-heading "gadgetSlots" %}}
+> **int**
+
+### {{% prop-heading "childSpecs" %}}
+> **[GearBagSpec](/vext/ref/fb/gearbagspec)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [GearBagSpec](/vext/ref/fb/gearbagspec) type.
+

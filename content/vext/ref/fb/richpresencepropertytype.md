@@ -1,15 +1,12 @@
 ---
 title: RichPresencePropertyType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **RichPresencePropertyType_Float** | Value: **0** |
+| **RichPresencePropertyType_Integer** | Value: **1** |
+| **RichPresencePropertyType_LongFloat** | Value: **2** |
+| **RichPresencePropertyType_LongInteger** | Value: **3** |
 
-| Name                                  | Value | Description |
-| ------------------------------------- | ----- | ----------- |
-| RichPresencePropertyType\_Float       | 0     |             |
-| RichPresencePropertyType\_Integer     | 1     |             |
-| RichPresencePropertyType\_LongFloat   | 2     |             |
-| RichPresencePropertyType\_LongInteger | 3     |             |

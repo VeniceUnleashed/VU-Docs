@@ -1,14 +1,11 @@
 ---
 title: PerformanceProfilePlatform
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **PPP_Win32** | Value: **0** |
+| **PPP_Xenon** | Value: **1** |
+| **PPP_PS3** | Value: **2** |
 
-| Name       | Value | Description |
-| ---------- | ----- | ----------- |
-| PPP\_Win32 | 0     |             |
-| PPP\_Xenon | 1     |             |
-| PPP\_PS3   | 2     |             |

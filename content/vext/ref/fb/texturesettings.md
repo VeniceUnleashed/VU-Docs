@@ -1,44 +1,69 @@
 ---
 title: TextureSettings
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[TextureSettings](#constructor-0)**() |
+| **[TextureSettings](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[TextureSettings](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "skipMipmapCount" >}} | int |
+| {{< prop "loadingEnabled" >}} | bool |
+| {{< prop "renderTexturesEnabled" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "TextureSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### TextureSettings {#constructor-0}
+> **TextureSettings**()
 
-| Constructor                                                                | Description                                                                                                           |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| TextureSettings()                                                          | Create a new instance of this container type.                                                                         |
-| TextureSettings(TextureSettings other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| TextureSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TextureSettings](/vext/ref/fb/texturesettings/). |
+Creates a new [TextureSettings](/vext/ref/fb/texturesettings) frostbite instance.
 
-## Properties
+### TextureSettings {#constructor-1}
+> **TextureSettings**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                  | Type   | Description |
-| --------------------- | ------ | ----------- |
-| skipMipmapCount       | number |             |
-| loadingEnabled        | bool   |             |
-| renderTexturesEnabled | bool   |             |
-
-## Methods
-
-| Type                               | Name            | Parameters                                     |
-| ---------------------------------- | --------------- | ---------------------------------------------- |
-| [TextureSettings](/vext/ref/fb/texturesettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [TextureSettings](/vext/ref/fb/texturesettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [TextureSettings](/vext/ref/fb/texturesettings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### TextureSettings {#constructor-2}
+> **TextureSettings**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TextureSettings](/vext/ref/fb/texturesettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [TextureSettings](/vext/ref/fb/texturesettings). |
+
+## Properties
+### {{% prop-heading "skipMipmapCount" %}}
+> **int**
+
+### {{% prop-heading "loadingEnabled" %}}
+> **bool**
+
+### {{% prop-heading "renderTexturesEnabled" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [TextureSettings](/vext/ref/fb/texturesettings) type.
+

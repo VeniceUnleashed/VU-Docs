@@ -1,59 +1,136 @@
 ---
 title: VeniceSoldierHealthModuleData
 ---
-### Base Classes
 
-[SoldierHealthModuleData](/vext/ref/fb/soldierhealthmoduledata/)
+Inherits from 
+[SoldierHealthModuleData](/vext/ref/fb/soldierhealthmoduledata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VeniceSoldierHealthModuleData](#constructor-0)**() |
+| **[VeniceSoldierHealthModuleData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VeniceSoldierHealthModuleData](#constructor-2)**(other: [SoldierHealthModuleData](/vext/ref/fb/soldierhealthmoduledata)) |
+| **[VeniceSoldierHealthModuleData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "timeForCorpse" >}} | float |
+| {{< prop "postReviveResponseTime" >}} | float |
+| {{< prop "interactiveManDownThreshold" >}} | float |
+| {{< prop "interactiveManDownPoseConstraints" >}} | [PoseConstraintsData](/vext/ref/fb/poseconstraintsdata) |
+| {{< prop "manDownStateTime" >}} | float |
+| {{< prop "manDownStateHealthPoints" >}} | float |
+| {{< prop "immortalTimeAfterSpawn" >}} | float |
+| {{< prop "abortSpawnImmortalityInputs" >}} | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum)[] |
+| {{< prop "postReviveHealth" >}} | float |
+| {{< prop "criticalFakeImmortalTime" >}} | float |
+| {{< prop "regenerationDelay" >}} | float |
+| {{< prop "regenerationRate" >}} | float |
+| {{< prop "binding" >}} | [SoldierHealthModuleBinding](/vext/ref/fb/soldierhealthmodulebinding) |
+| {{< prop "sprintDisabledWhenDamagedTime" >}} | float |
+| {{< prop "sprintDisabledDamageThreshold" >}} | float |
+| {{< prop "manDownRotate" >}} | [RotateToHitData](/vext/ref/fb/rotatetohitdata) |
+| {{< prop "interactiveManDown" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VeniceSoldierHealthModuleData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VeniceSoldierHealthModuleData {#constructor-0}
+> **VeniceSoldierHealthModuleData**()
 
-| Constructor                                                                              | Description                                                                                                                                       |
-| ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| VeniceSoldierHealthModuleData()                                                          | Create a new instance of this container type.                                                                                                     |
-| VeniceSoldierHealthModuleData(VeniceSoldierHealthModuleData other)                       | Create a reference copy of an instance of the same type.                                                                                          |
-| VeniceSoldierHealthModuleData([SoldierHealthModuleData](/vext/ref/fb/soldierhealthmoduledata/) other)  | Upcast an instance of type [SoldierHealthModuleData](/vext/ref/fb/soldierhealthmoduledata/) to [VeniceSoldierHealthModuleData](/vext/ref/fb/venicesoldierhealthmoduledata/).  |
-| VeniceSoldierHealthModuleData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VeniceSoldierHealthModuleData](/vext/ref/fb/venicesoldierhealthmoduledata/). |
+Creates a new [VeniceSoldierHealthModuleData](/vext/ref/fb/venicesoldierhealthmoduledata) frostbite instance.
 
-## Properties
+### VeniceSoldierHealthModuleData {#constructor-1}
+> **VeniceSoldierHealthModuleData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                              | Type                                                     | Description |
-| --------------------------------- | -------------------------------------------------------- | ----------- |
-| timeForCorpse                     | number                                                   |             |
-| postReviveResponseTime            | number                                                   |             |
-| interactiveManDownThreshold       | number                                                   |             |
-| interactiveManDownPoseConstraints | [PoseConstraintsData](/vext/ref/fb/poseconstraintsdata/)               |             |
-| manDownStateTime                  | number                                                   |             |
-| manDownStateHealthPoints          | number                                                   |             |
-| immortalTimeAfterSpawn            | number                                                   |             |
-| abortSpawnImmortalityInputs       | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum/)\[\]         |             |
-| postReviveHealth                  | number                                                   |             |
-| criticalFakeImmortalTime          | number                                                   |             |
-| regenerationDelay                 | number                                                   |             |
-| regenerationRate                  | number                                                   |             |
-| binding                           | [SoldierHealthModuleBinding](/vext/ref/fb/soldierhealthmodulebinding/) |             |
-| sprintDisabledWhenDamagedTime     | number                                                   |             |
-| sprintDisabledDamageThreshold     | number                                                   |             |
-| manDownRotate                     | [RotateToHitData](/vext/ref/fb/rotatetohitdata/)                       |             |
-| interactiveManDown                | bool                                                     |             |
-
-## Methods
-
-| Type                                                           | Name            | Parameters                                     |
-| -------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [VeniceSoldierHealthModuleData](/vext/ref/fb/venicesoldierhealthmoduledata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VeniceSoldierHealthModuleData](/vext/ref/fb/venicesoldierhealthmoduledata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VeniceSoldierHealthModuleData](/vext/ref/fb/venicesoldierhealthmoduledata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VeniceSoldierHealthModuleData {#constructor-2}
+> **VeniceSoldierHealthModuleData**(other: [SoldierHealthModuleData](/vext/ref/fb/soldierhealthmoduledata))
+
+Casts an instance of type [SoldierHealthModuleData](/vext/ref/fb/soldierhealthmoduledata) to [VeniceSoldierHealthModuleData](/vext/ref/fb/venicesoldierhealthmoduledata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SoldierHealthModuleData](/vext/ref/fb/soldierhealthmoduledata) | The instance to cast to [VeniceSoldierHealthModuleData](/vext/ref/fb/venicesoldierhealthmoduledata). |
+
+### VeniceSoldierHealthModuleData {#constructor-3}
+> **VeniceSoldierHealthModuleData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VeniceSoldierHealthModuleData](/vext/ref/fb/venicesoldierhealthmoduledata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VeniceSoldierHealthModuleData](/vext/ref/fb/venicesoldierhealthmoduledata). |
+
+## Properties
+### {{% prop-heading "timeForCorpse" %}}
+> **float**
+
+### {{% prop-heading "postReviveResponseTime" %}}
+> **float**
+
+### {{% prop-heading "interactiveManDownThreshold" %}}
+> **float**
+
+### {{% prop-heading "interactiveManDownPoseConstraints" %}}
+> **[PoseConstraintsData](/vext/ref/fb/poseconstraintsdata)**
+
+### {{% prop-heading "manDownStateTime" %}}
+> **float**
+
+### {{% prop-heading "manDownStateHealthPoints" %}}
+> **float**
+
+### {{% prop-heading "immortalTimeAfterSpawn" %}}
+> **float**
+
+### {{% prop-heading "abortSpawnImmortalityInputs" %}}
+> **[EntryInputActionEnum](/vext/ref/fb/entryinputactionenum)**[]
+
+### {{% prop-heading "postReviveHealth" %}}
+> **float**
+
+### {{% prop-heading "criticalFakeImmortalTime" %}}
+> **float**
+
+### {{% prop-heading "regenerationDelay" %}}
+> **float**
+
+### {{% prop-heading "regenerationRate" %}}
+> **float**
+
+### {{% prop-heading "binding" %}}
+> **[SoldierHealthModuleBinding](/vext/ref/fb/soldierhealthmodulebinding)**
+
+### {{% prop-heading "sprintDisabledWhenDamagedTime" %}}
+> **float**
+
+### {{% prop-heading "sprintDisabledDamageThreshold" %}}
+> **float**
+
+### {{% prop-heading "manDownRotate" %}}
+> **[RotateToHitData](/vext/ref/fb/rotatetohitdata)**
+
+### {{% prop-heading "interactiveManDown" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VeniceSoldierHealthModuleData](/vext/ref/fb/venicesoldierhealthmoduledata) type.
+

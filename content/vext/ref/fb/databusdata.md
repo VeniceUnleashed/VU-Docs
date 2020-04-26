@@ -1,44 +1,76 @@
 ---
 title: DataBusData
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[DataBusData](#constructor-0)**() |
+| **[DataBusData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[DataBusData](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[DataBusData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "propertyConnections" >}} | [PropertyConnection](/vext/ref/fb/propertyconnection)[] |
+| {{< prop "linkConnections" >}} | [LinkConnection](/vext/ref/fb/linkconnection)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "DataBusData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### DataBusData {#constructor-0}
+> **DataBusData**()
 
-| Constructor                                                            | Description                                                                                                   |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| DataBusData()                                                          | Create a new instance of this container type.                                                                 |
-| DataBusData(DataBusData other)                                         | Create a reference copy of an instance of the same type.                                                      |
-| DataBusData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [DataBusData](/vext/ref/fb/databusdata/).                                      |
-| DataBusData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DataBusData](/vext/ref/fb/databusdata/). |
+Creates a new [DataBusData](/vext/ref/fb/databusdata) frostbite instance.
 
-## Properties
+### DataBusData {#constructor-1}
+> **DataBusData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                | Type                                         | Description |
-| ------------------- | -------------------------------------------- | ----------- |
-| propertyConnections | [PropertyConnection](/vext/ref/fb/propertyconnection/)\[\] |             |
-| linkConnections     | [LinkConnection](/vext/ref/fb/linkconnection/)\[\]         |             |
-
-## Methods
-
-| Type                       | Name            | Parameters                                     |
-| -------------------------- | --------------- | ---------------------------------------------- |
-| [DataBusData](/vext/ref/fb/databusdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [DataBusData](/vext/ref/fb/databusdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [DataBusData](/vext/ref/fb/databusdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### DataBusData {#constructor-2}
+> **DataBusData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [DataBusData](/vext/ref/fb/databusdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [DataBusData](/vext/ref/fb/databusdata). |
+
+### DataBusData {#constructor-3}
+> **DataBusData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DataBusData](/vext/ref/fb/databusdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DataBusData](/vext/ref/fb/databusdata). |
+
+## Properties
+### {{% prop-heading "propertyConnections" %}}
+> **[PropertyConnection](/vext/ref/fb/propertyconnection)**[]
+
+### {{% prop-heading "linkConnections" %}}
+> **[LinkConnection](/vext/ref/fb/linkconnection)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [DataBusData](/vext/ref/fb/databusdata) type.
+

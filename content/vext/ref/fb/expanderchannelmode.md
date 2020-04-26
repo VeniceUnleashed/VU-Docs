@@ -1,13 +1,10 @@
 ---
 title: ExpanderChannelMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ExpanderChannelMode_Independent** | Value: **0** |
+| **ExpanderChannelMode_Grouped** | Value: **1** |
 
-| Name                             | Value | Description |
-| -------------------------------- | ----- | ----------- |
-| ExpanderChannelMode\_Independent | 0     |             |
-| ExpanderChannelMode\_Grouped     | 1     |             |

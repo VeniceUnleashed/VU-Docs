@@ -1,12 +1,9 @@
 ---
 title: ProgressType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **PT_CapturePointCooldown** | Value: **0** |
 
-| Name                     | Value | Description |
-| ------------------------ | ----- | ----------- |
-| PT\_CapturePointCooldown | 0     |             |

@@ -1,54 +1,158 @@
 ---
 title: BangerEntityData
 ---
-### Base Classes
 
-[DynamicGamePhysicsEntityData](/vext/ref/fb/dynamicgamephysicsentitydata/)
+Inherits from 
+[DynamicGamePhysicsEntityData](/vext/ref/fb/dynamicgamephysicsentitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[BangerEntityData](#constructor-0)**() |
+| **[BangerEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[BangerEntityData](#constructor-2)**(other: [DynamicGamePhysicsEntityData](/vext/ref/fb/dynamicgamephysicsentitydata)) |
+| **[BangerEntityData](#constructor-3)**(other: [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata)) |
+| **[BangerEntityData](#constructor-4)**(other: [GameEntityData](/vext/ref/fb/gameentitydata)) |
+| **[BangerEntityData](#constructor-5)**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata)) |
+| **[BangerEntityData](#constructor-6)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[BangerEntityData](#constructor-7)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[BangerEntityData](#constructor-8)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[BangerEntityData](#constructor-9)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "scales" >}} | float[] |
+| {{< prop "mesh" >}} | [MeshAsset](/vext/ref/fb/meshasset) \| nil |
+| {{< prop "explosion" >}} | [ExplosionEntityData](/vext/ref/fb/explosionentitydata) \| nil |
+| {{< prop "timeToLive" >}} | float |
+| {{< prop "destructiblePartCount" >}} | int |
+| {{< prop "useVariableNetworkFrequency" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "BangerEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### BangerEntityData {#constructor-0}
+> **BangerEntityData**()
 
-| Constructor                                                                          | Description                                                                                                                      |
-| ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
-| BangerEntityData()                                                                   | Create a new instance of this container type.                                                                                    |
-| BangerEntityData(BangerEntityData other)                                             | Create a reference copy of an instance of the same type.                                                                         |
-| BangerEntityData([DynamicGamePhysicsEntityData](/vext/ref/fb/dynamicgamephysicsentitydata/) other) | Upcast an instance of type [DynamicGamePhysicsEntityData](/vext/ref/fb/dynamicgamephysicsentitydata/) to [BangerEntityData](/vext/ref/fb/bangerentitydata/). |
-| BangerEntityData([GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata/) other)               | Upcast an instance of type [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata/) to [BangerEntityData](/vext/ref/fb/bangerentitydata/).               |
-| BangerEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                             | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [BangerEntityData](/vext/ref/fb/bangerentitydata/).                             |
-| BangerEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)                       | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [BangerEntityData](/vext/ref/fb/bangerentitydata/).                       |
-| BangerEntityData([EntityData](/vext/ref/fb/entitydata/) other)                                     | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [BangerEntityData](/vext/ref/fb/bangerentitydata/).                                     |
-| BangerEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                             | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [BangerEntityData](/vext/ref/fb/bangerentitydata/).                             |
-| BangerEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)                       | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [BangerEntityData](/vext/ref/fb/bangerentitydata/).                       |
-| BangerEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other)          | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BangerEntityData](/vext/ref/fb/bangerentitydata/).          |
+Creates a new [BangerEntityData](/vext/ref/fb/bangerentitydata) frostbite instance.
 
-## Properties
+### BangerEntityData {#constructor-1}
+> **BangerEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                        | Type                                       | Description |
-| --------------------------- | ------------------------------------------ | ----------- |
-| scales                      | number\[\]                                 |             |
-| mesh                        | [MeshAsset](/vext/ref/fb/meshasset/)                     |             |
-| explosion                   | [ExplosionEntityData](/vext/ref/fb/explosionentitydata/) |             |
-| timeToLive                  | number                                     |             |
-| destructiblePartCount       | number                                     |             |
-| useVariableNetworkFrequency | bool                                       |             |
-
-## Methods
-
-| Type                                 | Name            | Parameters                                     |
-| ------------------------------------ | --------------- | ---------------------------------------------- |
-| [BangerEntityData](/vext/ref/fb/bangerentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [BangerEntityData](/vext/ref/fb/bangerentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [BangerEntityData](/vext/ref/fb/bangerentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### BangerEntityData {#constructor-2}
+> **BangerEntityData**(other: [DynamicGamePhysicsEntityData](/vext/ref/fb/dynamicgamephysicsentitydata))
+
+Casts an instance of type [DynamicGamePhysicsEntityData](/vext/ref/fb/dynamicgamephysicsentitydata) to [BangerEntityData](/vext/ref/fb/bangerentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DynamicGamePhysicsEntityData](/vext/ref/fb/dynamicgamephysicsentitydata) | The instance to cast to [BangerEntityData](/vext/ref/fb/bangerentitydata). |
+
+### BangerEntityData {#constructor-3}
+> **BangerEntityData**(other: [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata))
+
+Casts an instance of type [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata) to [BangerEntityData](/vext/ref/fb/bangerentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata) | The instance to cast to [BangerEntityData](/vext/ref/fb/bangerentitydata). |
+
+### BangerEntityData {#constructor-4}
+> **BangerEntityData**(other: [GameEntityData](/vext/ref/fb/gameentitydata))
+
+Casts an instance of type [GameEntityData](/vext/ref/fb/gameentitydata) to [BangerEntityData](/vext/ref/fb/bangerentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameEntityData](/vext/ref/fb/gameentitydata) | The instance to cast to [BangerEntityData](/vext/ref/fb/bangerentitydata). |
+
+### BangerEntityData {#constructor-5}
+> **BangerEntityData**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata))
+
+Casts an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata) to [BangerEntityData](/vext/ref/fb/bangerentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SpatialEntityData](/vext/ref/fb/spatialentitydata) | The instance to cast to [BangerEntityData](/vext/ref/fb/bangerentitydata). |
+
+### BangerEntityData {#constructor-6}
+> **BangerEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [BangerEntityData](/vext/ref/fb/bangerentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [BangerEntityData](/vext/ref/fb/bangerentitydata). |
+
+### BangerEntityData {#constructor-7}
+> **BangerEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [BangerEntityData](/vext/ref/fb/bangerentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [BangerEntityData](/vext/ref/fb/bangerentitydata). |
+
+### BangerEntityData {#constructor-8}
+> **BangerEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [BangerEntityData](/vext/ref/fb/bangerentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [BangerEntityData](/vext/ref/fb/bangerentitydata). |
+
+### BangerEntityData {#constructor-9}
+> **BangerEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BangerEntityData](/vext/ref/fb/bangerentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [BangerEntityData](/vext/ref/fb/bangerentitydata). |
+
+## Properties
+### {{% prop-heading "scales" %}}
+> **float**[]
+
+### {{% prop-heading "mesh" %}}
+> **[MeshAsset](/vext/ref/fb/meshasset)** | **nil**
+
+### {{% prop-heading "explosion" %}}
+> **[ExplosionEntityData](/vext/ref/fb/explosionentitydata)** | **nil**
+
+### {{% prop-heading "timeToLive" %}}
+> **float**
+
+### {{% prop-heading "destructiblePartCount" %}}
+> **int**
+
+### {{% prop-heading "useVariableNetworkFrequency" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [BangerEntityData](/vext/ref/fb/bangerentitydata) type.
+

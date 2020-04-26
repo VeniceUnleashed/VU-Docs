@@ -1,17 +1,14 @@
 ---
 title: UISettingType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **UISettingType_Slider** | Value: **0** |
+| **UISettingType_TickerUpDown** | Value: **1** |
+| **UISettingType_Droplist** | Value: **2** |
+| **UISettingType_Checkbox** | Value: **3** |
+| **UISettingType_Text** | Value: **4** |
+| **UISettingType_NotSet** | Value: **5** |
 
-| Name                        | Value | Description |
-| --------------------------- | ----- | ----------- |
-| UISettingType\_Slider       | 0     |             |
-| UISettingType\_TickerUpDown | 1     |             |
-| UISettingType\_Droplist     | 2     |             |
-| UISettingType\_Checkbox     | 3     |             |
-| UISettingType\_Text         | 4     |             |
-| UISettingType\_NotSet       | 5     |             |

@@ -1,13 +1,10 @@
 ---
 title: MeshScatteringElevationMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **MeshScatteringElevationMode_SnapBoundingBox** | Value: **0** |
+| **MeshScatteringElevationMode_SnapPivotPoint** | Value: **1** |
 
-| Name                                         | Value | Description |
-| -------------------------------------------- | ----- | ----------- |
-| MeshScatteringElevationMode\_SnapBoundingBox | 0     |             |
-| MeshScatteringElevationMode\_SnapPivotPoint  | 1     |             |

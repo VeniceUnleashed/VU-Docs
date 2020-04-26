@@ -1,55 +1,120 @@
 ---
 title: MeleeEntityCommonData
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MeleeEntityCommonData](#constructor-0)**() |
+| **[MeleeEntityCommonData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MeleeEntityCommonData](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[MeleeEntityCommonData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "meleeBinding" >}} | [CharacterMeleeBinding](/vext/ref/fb/charactermeleebinding) |
+| {{< prop "meleeCommonBinding" >}} | [CharacterMeleeCommonBinding](/vext/ref/fb/charactermeleecommonbinding) |
+| {{< prop "triggerDelay" >}} | float |
+| {{< prop "defendWindow" >}} | float |
+| {{< prop "killDelay" >}} | float |
+| {{< prop "meleeEndDelay" >}} | float |
+| {{< prop "invalidMeleeAttackZone" >}} | float |
+| {{< prop "meleeAttackDistance" >}} | float |
+| {{< prop "maxAttackHeightDifference" >}} | float |
+| {{< prop "killDamage" >}} | float |
+| {{< prop "proneAttackType" >}} | [AntEnumeration](/vext/ref/fb/antenumeration) \| nil |
+| {{< prop "crouchAttackType" >}} | [AntEnumeration](/vext/ref/fb/antenumeration) \| nil |
+| {{< prop "enableAbortPossibility" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MeleeEntityCommonData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MeleeEntityCommonData {#constructor-0}
+> **MeleeEntityCommonData**()
 
-| Constructor                                                                      | Description                                                                                                                       |
-| -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| MeleeEntityCommonData()                                                          | Create a new instance of this container type.                                                                                     |
-| MeleeEntityCommonData(MeleeEntityCommonData other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| MeleeEntityCommonData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [MeleeEntityCommonData](/vext/ref/fb/meleeentitycommondata/).                                      |
-| MeleeEntityCommonData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MeleeEntityCommonData](/vext/ref/fb/meleeentitycommondata/). |
+Creates a new [MeleeEntityCommonData](/vext/ref/fb/meleeentitycommondata) frostbite instance.
 
-## Properties
+### MeleeEntityCommonData {#constructor-1}
+> **MeleeEntityCommonData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                      | Type                                                       | Description |
-| ------------------------- | ---------------------------------------------------------- | ----------- |
-| meleeBinding              | [CharacterMeleeBinding](/vext/ref/fb/charactermeleebinding/)             |             |
-| meleeCommonBinding        | [CharacterMeleeCommonBinding](/vext/ref/fb/charactermeleecommonbinding/) |             |
-| triggerDelay              | number                                                     |             |
-| defendWindow              | number                                                     |             |
-| killDelay                 | number                                                     |             |
-| meleeEndDelay             | number                                                     |             |
-| invalidMeleeAttackZone    | number                                                     |             |
-| meleeAttackDistance       | number                                                     |             |
-| maxAttackHeightDifference | number                                                     |             |
-| killDamage                | number                                                     |             |
-| proneAttackType           | [AntEnumeration](/vext/ref/fb/antenumeration/)                           |             |
-| crouchAttackType          | [AntEnumeration](/vext/ref/fb/antenumeration/)                           |             |
-| enableAbortPossibility    | bool                                                       |             |
-
-## Methods
-
-| Type                                           | Name            | Parameters                                     |
-| ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [MeleeEntityCommonData](/vext/ref/fb/meleeentitycommondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MeleeEntityCommonData](/vext/ref/fb/meleeentitycommondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MeleeEntityCommonData](/vext/ref/fb/meleeentitycommondata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MeleeEntityCommonData {#constructor-2}
+> **MeleeEntityCommonData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [MeleeEntityCommonData](/vext/ref/fb/meleeentitycommondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [MeleeEntityCommonData](/vext/ref/fb/meleeentitycommondata). |
+
+### MeleeEntityCommonData {#constructor-3}
+> **MeleeEntityCommonData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MeleeEntityCommonData](/vext/ref/fb/meleeentitycommondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MeleeEntityCommonData](/vext/ref/fb/meleeentitycommondata). |
+
+## Properties
+### {{% prop-heading "meleeBinding" %}}
+> **[CharacterMeleeBinding](/vext/ref/fb/charactermeleebinding)**
+
+### {{% prop-heading "meleeCommonBinding" %}}
+> **[CharacterMeleeCommonBinding](/vext/ref/fb/charactermeleecommonbinding)**
+
+### {{% prop-heading "triggerDelay" %}}
+> **float**
+
+### {{% prop-heading "defendWindow" %}}
+> **float**
+
+### {{% prop-heading "killDelay" %}}
+> **float**
+
+### {{% prop-heading "meleeEndDelay" %}}
+> **float**
+
+### {{% prop-heading "invalidMeleeAttackZone" %}}
+> **float**
+
+### {{% prop-heading "meleeAttackDistance" %}}
+> **float**
+
+### {{% prop-heading "maxAttackHeightDifference" %}}
+> **float**
+
+### {{% prop-heading "killDamage" %}}
+> **float**
+
+### {{% prop-heading "proneAttackType" %}}
+> **[AntEnumeration](/vext/ref/fb/antenumeration)** | **nil**
+
+### {{% prop-heading "crouchAttackType" %}}
+> **[AntEnumeration](/vext/ref/fb/antenumeration)** | **nil**
+
+### {{% prop-heading "enableAbortPossibility" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MeleeEntityCommonData](/vext/ref/fb/meleeentitycommondata) type.
+

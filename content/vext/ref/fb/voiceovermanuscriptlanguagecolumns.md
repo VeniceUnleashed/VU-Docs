@@ -1,33 +1,61 @@
 ---
 title: VoiceOverManuscriptLanguageColumns
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VoiceOverManuscriptLanguageColumns](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "language" >}} | [AudioLanguage](/vext/ref/fb/audiolanguage) \| nil |
+| {{< prop "textColumn" >}} | string |
+| {{< prop "subtitleOffsetColumn" >}} | string |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [VoiceOverManuscriptLanguageColumns](/vext/ref/fb/voiceovermanuscriptlanguagecolumns) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VoiceOverManuscriptLanguageColumns" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VoiceOverManuscriptLanguageColumns {#constructor-0}
+> **VoiceOverManuscriptLanguageColumns**()
 
-| Constructor                                                                  | Description                                              |
-| ---------------------------------------------------------------------------- | -------------------------------------------------------- |
-| VoiceOverManuscriptLanguageColumns()                                         | Create a new instance of this structure type.            |
-| VoiceOverManuscriptLanguageColumns(VoiceOverManuscriptLanguageColumns other) | Create a reference copy of a structure of the same type. |
+Creates a new [VoiceOverManuscriptLanguageColumns](/vext/ref/fb/voiceovermanuscriptlanguagecolumns) frostbite structure.
 
 ## Properties
+### {{% prop-heading "language" %}}
+> **[AudioLanguage](/vext/ref/fb/audiolanguage)** | **nil**
 
-| Name                 | Type                           | Description |
-| -------------------- | ------------------------------ | ----------- |
-| language             | [AudioLanguage](/vext/ref/fb/audiolanguage/) |             |
-| textColumn           | string                         |             |
-| subtitleOffsetColumn | string                         |             |
+### {{% prop-heading "textColumn" %}}
+> **string**
+
+### {{% prop-heading "subtitleOffsetColumn" %}}
+> **string**
 
 ## Methods
-
-| Type                                                                     | Name            | Parameters |
-| ------------------------------------------------------------------------ | --------------- | ---------- |
-| [VoiceOverManuscriptLanguageColumns](/vext/ref/fb/voiceovermanuscriptlanguagecolumns/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [VoiceOverManuscriptLanguageColumns](/vext/ref/fb/voiceovermanuscriptlanguagecolumns)
 
-> [VoiceOverManuscriptLanguageColumns](/vext/ref/fb/voiceovermanuscriptlanguagecolumns/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[VoiceOverManuscriptLanguageColumns](/vext/ref/fb/voiceovermanuscriptlanguagecolumns)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VoiceOverManuscriptLanguageColumns](/vext/ref/fb/voiceovermanuscriptlanguagecolumns) type.
+

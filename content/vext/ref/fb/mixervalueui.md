@@ -1,15 +1,12 @@
 ---
 title: MixerValueUI
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **MixerValueUI_None** | Value: **0** |
+| **MixerValueUI_Fader** | Value: **1** |
+| **MixerValueUI_Knob** | Value: **2** |
+| **MixerValueUI_EditBox** | Value: **3** |
 
-| Name                  | Value | Description |
-| --------------------- | ----- | ----------- |
-| MixerValueUI\_None    | 0     |             |
-| MixerValueUI\_Fader   | 1     |             |
-| MixerValueUI\_Knob    | 2     |             |
-| MixerValueUI\_EditBox | 3     |             |

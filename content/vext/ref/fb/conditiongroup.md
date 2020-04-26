@@ -1,46 +1,84 @@
 ---
 title: ConditionGroup
 ---
-### Base Classes
 
-[AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/)
+Inherits from 
+[AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ConditionGroup](#constructor-0)**() |
+| **[ConditionGroup](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ConditionGroup](#constructor-2)**(other: [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup)) |
+| **[ConditionGroup](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "x" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "y" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "trueValue" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "condition" >}} | [ConditionType](/vext/ref/fb/conditiontype) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ConditionGroup" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ConditionGroup {#constructor-0}
+> **ConditionGroup**()
 
-| Constructor                                                               | Description                                                                                                         |
-| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| ConditionGroup()                                                          | Create a new instance of this container type.                                                                       |
-| ConditionGroup(ConditionGroup other)                                      | Create a reference copy of an instance of the same type.                                                            |
-| ConditionGroup([AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/) other)  | Upcast an instance of type [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/) to [ConditionGroup](/vext/ref/fb/conditiongroup/).  |
-| ConditionGroup([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ConditionGroup](/vext/ref/fb/conditiongroup/). |
+Creates a new [ConditionGroup](/vext/ref/fb/conditiongroup) frostbite instance.
 
-## Properties
+### ConditionGroup {#constructor-1}
+> **ConditionGroup**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name      | Type                                     | Description |
-| --------- | ---------------------------------------- | ----------- |
-| x         | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| y         | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| trueValue | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| condition | [ConditionType](/vext/ref/fb/conditiontype/)           |             |
-
-## Methods
-
-| Type                             | Name            | Parameters                                     |
-| -------------------------------- | --------------- | ---------------------------------------------- |
-| [ConditionGroup](/vext/ref/fb/conditiongroup/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ConditionGroup](/vext/ref/fb/conditiongroup/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ConditionGroup](/vext/ref/fb/conditiongroup) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ConditionGroup {#constructor-2}
+> **ConditionGroup**(other: [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup))
+
+Casts an instance of type [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup) to [ConditionGroup](/vext/ref/fb/conditiongroup). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup) | The instance to cast to [ConditionGroup](/vext/ref/fb/conditiongroup). |
+
+### ConditionGroup {#constructor-3}
+> **ConditionGroup**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ConditionGroup](/vext/ref/fb/conditiongroup). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ConditionGroup](/vext/ref/fb/conditiongroup). |
+
+## Properties
+### {{% prop-heading "x" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "y" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "trueValue" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "condition" %}}
+> **[ConditionType](/vext/ref/fb/conditiontype)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ConditionGroup](/vext/ref/fb/conditiongroup) type.
+

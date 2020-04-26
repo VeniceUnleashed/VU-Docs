@@ -1,43 +1,72 @@
 ---
 title: RankParamsAsset
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[RankParamsAsset](#constructor-0)**() |
+| **[RankParamsAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[RankParamsAsset](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[RankParamsAsset](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "ranks" >}} | [RankLevelData](/vext/ref/fb/rankleveldata)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "RankParamsAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### RankParamsAsset {#constructor-0}
+> **RankParamsAsset**()
 
-| Constructor                                                                | Description                                                                                                           |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| RankParamsAsset()                                                          | Create a new instance of this container type.                                                                         |
-| RankParamsAsset(RankParamsAsset other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| RankParamsAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [RankParamsAsset](/vext/ref/fb/rankparamsasset/).                                      |
-| RankParamsAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RankParamsAsset](/vext/ref/fb/rankparamsasset/). |
+Creates a new [RankParamsAsset](/vext/ref/fb/rankparamsasset) frostbite instance.
 
-## Properties
+### RankParamsAsset {#constructor-1}
+> **RankParamsAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name  | Type                               | Description |
-| ----- | ---------------------------------- | ----------- |
-| ranks | [RankLevelData](/vext/ref/fb/rankleveldata/)\[\] |             |
-
-## Methods
-
-| Type                               | Name            | Parameters                                     |
-| ---------------------------------- | --------------- | ---------------------------------------------- |
-| [RankParamsAsset](/vext/ref/fb/rankparamsasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [RankParamsAsset](/vext/ref/fb/rankparamsasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [RankParamsAsset](/vext/ref/fb/rankparamsasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### RankParamsAsset {#constructor-2}
+> **RankParamsAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [RankParamsAsset](/vext/ref/fb/rankparamsasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [RankParamsAsset](/vext/ref/fb/rankparamsasset). |
+
+### RankParamsAsset {#constructor-3}
+> **RankParamsAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RankParamsAsset](/vext/ref/fb/rankparamsasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [RankParamsAsset](/vext/ref/fb/rankparamsasset). |
+
+## Properties
+### {{% prop-heading "ranks" %}}
+> **[RankLevelData](/vext/ref/fb/rankleveldata)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [RankParamsAsset](/vext/ref/fb/rankparamsasset) type.
+

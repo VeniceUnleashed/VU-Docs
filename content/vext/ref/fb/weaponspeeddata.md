@@ -1,45 +1,73 @@
 ---
 title: WeaponSpeedData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[WeaponSpeedData](#constructor-0)**() |
+| **[WeaponSpeedData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[WeaponSpeedData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "zoomOutSpeed" >}} | float |
+| {{< prop "zoomInSpeed" >}} | float |
+| {{< prop "unDeploySpeed" >}} | float |
+| {{< prop "deploySpeed" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "WeaponSpeedData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### WeaponSpeedData {#constructor-0}
+> **WeaponSpeedData**()
 
-| Constructor                                                                | Description                                                                                                           |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| WeaponSpeedData()                                                          | Create a new instance of this container type.                                                                         |
-| WeaponSpeedData(WeaponSpeedData other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| WeaponSpeedData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponSpeedData](/vext/ref/fb/weaponspeeddata/). |
+Creates a new [WeaponSpeedData](/vext/ref/fb/weaponspeeddata) frostbite instance.
 
-## Properties
+### WeaponSpeedData {#constructor-1}
+> **WeaponSpeedData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name          | Type   | Description |
-| ------------- | ------ | ----------- |
-| zoomOutSpeed  | number |             |
-| zoomInSpeed   | number |             |
-| unDeploySpeed | number |             |
-| deploySpeed   | number |             |
-
-## Methods
-
-| Type                               | Name            | Parameters                                     |
-| ---------------------------------- | --------------- | ---------------------------------------------- |
-| [WeaponSpeedData](/vext/ref/fb/weaponspeeddata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [WeaponSpeedData](/vext/ref/fb/weaponspeeddata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [WeaponSpeedData](/vext/ref/fb/weaponspeeddata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### WeaponSpeedData {#constructor-2}
+> **WeaponSpeedData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponSpeedData](/vext/ref/fb/weaponspeeddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [WeaponSpeedData](/vext/ref/fb/weaponspeeddata). |
+
+## Properties
+### {{% prop-heading "zoomOutSpeed" %}}
+> **float**
+
+### {{% prop-heading "zoomInSpeed" %}}
+> **float**
+
+### {{% prop-heading "unDeploySpeed" %}}
+> **float**
+
+### {{% prop-heading "deploySpeed" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [WeaponSpeedData](/vext/ref/fb/weaponspeeddata) type.
+

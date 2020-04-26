@@ -1,35 +1,69 @@
 ---
 title: EnlightenPipelineTerrainMesh
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[EnlightenPipelineTerrainMesh](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "uvTranslation" >}} | [Vec2](/vext/ref/shared/class/vec2) |
+| {{< prop "boundingBox" >}} | [AxisAlignedBox](/vext/ref/shared/class/axisalignedbox) |
+| {{< prop "uvTransform" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "lightMapResolution" >}} | int |
+| {{< prop "terrainMeshName" >}} | string |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [EnlightenPipelineTerrainMesh](/vext/ref/fb/enlightenpipelineterrainmesh) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "EnlightenPipelineTerrainMesh" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### EnlightenPipelineTerrainMesh {#constructor-0}
+> **EnlightenPipelineTerrainMesh**()
 
-| Constructor                                                      | Description                                              |
-| ---------------------------------------------------------------- | -------------------------------------------------------- |
-| EnlightenPipelineTerrainMesh()                                   | Create a new instance of this structure type.            |
-| EnlightenPipelineTerrainMesh(EnlightenPipelineTerrainMesh other) | Create a reference copy of a structure of the same type. |
+Creates a new [EnlightenPipelineTerrainMesh](/vext/ref/fb/enlightenpipelineterrainmesh) frostbite structure.
 
 ## Properties
+### {{% prop-heading "uvTranslation" %}}
+> **[Vec2](/vext/ref/shared/class/vec2)**
 
-| Name               | Type                                                  | Description |
-| ------------------ | ----------------------------------------------------- | ----------- |
-| uvTranslation      | [Vec2](/vext/ref/shared/class/vec2)                     |             |
-| boundingBox        | [AxisAlignedBox](/vext/ref/shared/class/axisalignedbox) |             |
-| uvTransform        | [Vec4](/vext/ref/shared/class/vec4)                     |             |
-| lightMapResolution | number                                                |             |
-| terrainMeshName    | string                                                |             |
+### {{% prop-heading "boundingBox" %}}
+> **[AxisAlignedBox](/vext/ref/shared/class/axisalignedbox)**
+
+### {{% prop-heading "uvTransform" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "lightMapResolution" %}}
+> **int**
+
+### {{% prop-heading "terrainMeshName" %}}
+> **string**
 
 ## Methods
-
-| Type                                                         | Name            | Parameters |
-| ------------------------------------------------------------ | --------------- | ---------- |
-| [EnlightenPipelineTerrainMesh](/vext/ref/fb/enlightenpipelineterrainmesh/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [EnlightenPipelineTerrainMesh](/vext/ref/fb/enlightenpipelineterrainmesh)
 
-> [EnlightenPipelineTerrainMesh](/vext/ref/fb/enlightenpipelineterrainmesh/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[EnlightenPipelineTerrainMesh](/vext/ref/fb/enlightenpipelineterrainmesh)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [EnlightenPipelineTerrainMesh](/vext/ref/fb/enlightenpipelineterrainmesh) type.
+

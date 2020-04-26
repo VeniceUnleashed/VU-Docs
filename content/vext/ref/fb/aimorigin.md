@@ -1,14 +1,11 @@
 ---
 title: AimOrigin
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **AoDefault** | Value: **0** |
+| **AoCamera** | Value: **1** |
+| **AoWeapon** | Value: **2** |
 
-| Name      | Value | Description |
-| --------- | ----- | ----------- |
-| AoDefault | 0     |             |
-| AoCamera  | 1     |             |
-| AoWeapon  | 2     |             |

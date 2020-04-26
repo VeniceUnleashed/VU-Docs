@@ -1,16 +1,13 @@
 ---
 title: VirtualGameState
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **VirtualGameState_Inactive** | Value: **0** |
+| **VirtualGameState_Active** | Value: **1** |
+| **VirtualGameState_Expired** | Value: **2** |
+| **VirtualGameState_Recreate** | Value: **3** |
+| **VirtualGameState_Updated** | Value: **4** |
 
-| Name                       | Value | Description |
-| -------------------------- | ----- | ----------- |
-| VirtualGameState\_Inactive | 0     |             |
-| VirtualGameState\_Active   | 1     |             |
-| VirtualGameState\_Expired  | 2     |             |
-| VirtualGameState\_Recreate | 3     |             |
-| VirtualGameState\_Updated  | 4     |             |

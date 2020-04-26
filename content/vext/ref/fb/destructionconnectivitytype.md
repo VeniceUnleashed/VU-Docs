@@ -1,15 +1,12 @@
 ---
 title: DestructionConnectivityType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **DestructionConnectivityType_Full** | Value: **0** |
+| **DestructionConnectivityType_Partial** | Value: **1** |
+| **DestructionConnectivityType_None** | Value: **2** |
+| **DestructionConnectivityType_Inherited** | Value: **3** |
 
-| Name                                   | Value | Description |
-| -------------------------------------- | ----- | ----------- |
-| DestructionConnectivityType\_Full      | 0     |             |
-| DestructionConnectivityType\_Partial   | 1     |             |
-| DestructionConnectivityType\_None      | 2     |             |
-| DestructionConnectivityType\_Inherited | 3     |             |

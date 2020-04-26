@@ -1,40 +1,96 @@
 ---
 title: SequenceData
 ---
-### Base Classes
 
-[SequenceEntityData](/vext/ref/fb/sequenceentitydata/)
+Inherits from 
+[SequenceEntityData](/vext/ref/fb/sequenceentitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SequenceData](#constructor-0)**() |
+| **[SequenceData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SequenceData](#constructor-2)**(other: [SequenceEntityData](/vext/ref/fb/sequenceentitydata)) |
+| **[SequenceData](#constructor-3)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[SequenceData](#constructor-4)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[SequenceData](#constructor-5)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[SequenceData](#constructor-6)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SequenceData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SequenceData {#constructor-0}
+> **SequenceData**()
 
-| Constructor                                                             | Description                                                                                                     |
-| ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| SequenceData()                                                          | Create a new instance of this container type.                                                                   |
-| SequenceData(SequenceData other)                                        | Create a reference copy of an instance of the same type.                                                        |
-| SequenceData([SequenceEntityData](/vext/ref/fb/sequenceentitydata/) other)            | Upcast an instance of type [SequenceEntityData](/vext/ref/fb/sequenceentitydata/) to [SequenceData](/vext/ref/fb/sequencedata/).            |
-| SequenceData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [SequenceData](/vext/ref/fb/sequencedata/).                            |
-| SequenceData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [SequenceData](/vext/ref/fb/sequencedata/).                    |
-| SequenceData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [SequenceData](/vext/ref/fb/sequencedata/).              |
-| SequenceData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SequenceData](/vext/ref/fb/sequencedata/). |
+Creates a new [SequenceData](/vext/ref/fb/sequencedata) frostbite instance.
 
-## Methods
+### SequenceData {#constructor-1}
+> **SequenceData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                         | Name            | Parameters                                     |
-| ---------------------------- | --------------- | ---------------------------------------------- |
-| [SequenceData](/vext/ref/fb/sequencedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SequenceData](/vext/ref/fb/sequencedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SequenceData](/vext/ref/fb/sequencedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SequenceData {#constructor-2}
+> **SequenceData**(other: [SequenceEntityData](/vext/ref/fb/sequenceentitydata))
+
+Casts an instance of type [SequenceEntityData](/vext/ref/fb/sequenceentitydata) to [SequenceData](/vext/ref/fb/sequencedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SequenceEntityData](/vext/ref/fb/sequenceentitydata) | The instance to cast to [SequenceData](/vext/ref/fb/sequencedata). |
+
+### SequenceData {#constructor-3}
+> **SequenceData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [SequenceData](/vext/ref/fb/sequencedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [SequenceData](/vext/ref/fb/sequencedata). |
+
+### SequenceData {#constructor-4}
+> **SequenceData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [SequenceData](/vext/ref/fb/sequencedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [SequenceData](/vext/ref/fb/sequencedata). |
+
+### SequenceData {#constructor-5}
+> **SequenceData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [SequenceData](/vext/ref/fb/sequencedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [SequenceData](/vext/ref/fb/sequencedata). |
+
+### SequenceData {#constructor-6}
+> **SequenceData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SequenceData](/vext/ref/fb/sequencedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SequenceData](/vext/ref/fb/sequencedata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SequenceData](/vext/ref/fb/sequencedata) type.
+

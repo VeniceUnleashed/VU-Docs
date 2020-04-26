@@ -1,41 +1,107 @@
 ---
 title: VehicleComponentData
 ---
-### Base Classes
 
-[ChassisComponentData](/vext/ref/fb/chassiscomponentdata/)
+Inherits from 
+[ChassisComponentData](/vext/ref/fb/chassiscomponentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VehicleComponentData](#constructor-0)**() |
+| **[VehicleComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VehicleComponentData](#constructor-2)**(other: [ChassisComponentData](/vext/ref/fb/chassiscomponentdata)) |
+| **[VehicleComponentData](#constructor-3)**(other: [PartComponentData](/vext/ref/fb/partcomponentdata)) |
+| **[VehicleComponentData](#constructor-4)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[VehicleComponentData](#constructor-5)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[VehicleComponentData](#constructor-6)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[VehicleComponentData](#constructor-7)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VehicleComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VehicleComponentData {#constructor-0}
+> **VehicleComponentData**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| VehicleComponentData()                                                          | Create a new instance of this container type.                                                                                   |
-| VehicleComponentData(VehicleComponentData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| VehicleComponentData([ChassisComponentData](/vext/ref/fb/chassiscomponentdata/) other)        | Upcast an instance of type [ChassisComponentData](/vext/ref/fb/chassiscomponentdata/) to [VehicleComponentData](/vext/ref/fb/vehiclecomponentdata/).        |
-| VehicleComponentData([PartComponentData](/vext/ref/fb/partcomponentdata/) other)              | Upcast an instance of type [PartComponentData](/vext/ref/fb/partcomponentdata/) to [VehicleComponentData](/vext/ref/fb/vehiclecomponentdata/).              |
-| VehicleComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [VehicleComponentData](/vext/ref/fb/vehiclecomponentdata/).                      |
-| VehicleComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [VehicleComponentData](/vext/ref/fb/vehiclecomponentdata/).                    |
-| VehicleComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [VehicleComponentData](/vext/ref/fb/vehiclecomponentdata/).              |
-| VehicleComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VehicleComponentData](/vext/ref/fb/vehiclecomponentdata/). |
+Creates a new [VehicleComponentData](/vext/ref/fb/vehiclecomponentdata) frostbite instance.
 
-## Methods
+### VehicleComponentData {#constructor-1}
+> **VehicleComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [VehicleComponentData](/vext/ref/fb/vehiclecomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VehicleComponentData](/vext/ref/fb/vehiclecomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VehicleComponentData](/vext/ref/fb/vehiclecomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VehicleComponentData {#constructor-2}
+> **VehicleComponentData**(other: [ChassisComponentData](/vext/ref/fb/chassiscomponentdata))
+
+Casts an instance of type [ChassisComponentData](/vext/ref/fb/chassiscomponentdata) to [VehicleComponentData](/vext/ref/fb/vehiclecomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ChassisComponentData](/vext/ref/fb/chassiscomponentdata) | The instance to cast to [VehicleComponentData](/vext/ref/fb/vehiclecomponentdata). |
+
+### VehicleComponentData {#constructor-3}
+> **VehicleComponentData**(other: [PartComponentData](/vext/ref/fb/partcomponentdata))
+
+Casts an instance of type [PartComponentData](/vext/ref/fb/partcomponentdata) to [VehicleComponentData](/vext/ref/fb/vehiclecomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [PartComponentData](/vext/ref/fb/partcomponentdata) | The instance to cast to [VehicleComponentData](/vext/ref/fb/vehiclecomponentdata). |
+
+### VehicleComponentData {#constructor-4}
+> **VehicleComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [VehicleComponentData](/vext/ref/fb/vehiclecomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [VehicleComponentData](/vext/ref/fb/vehiclecomponentdata). |
+
+### VehicleComponentData {#constructor-5}
+> **VehicleComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [VehicleComponentData](/vext/ref/fb/vehiclecomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [VehicleComponentData](/vext/ref/fb/vehiclecomponentdata). |
+
+### VehicleComponentData {#constructor-6}
+> **VehicleComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [VehicleComponentData](/vext/ref/fb/vehiclecomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [VehicleComponentData](/vext/ref/fb/vehiclecomponentdata). |
+
+### VehicleComponentData {#constructor-7}
+> **VehicleComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VehicleComponentData](/vext/ref/fb/vehiclecomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VehicleComponentData](/vext/ref/fb/vehiclecomponentdata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VehicleComponentData](/vext/ref/fb/vehiclecomponentdata) type.
+

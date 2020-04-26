@@ -1,14 +1,11 @@
 ---
 title: TargetMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **TargetMode_FirstPerson** | Value: **0** |
+| **TargetMode_ThirdPerson** | Value: **1** |
+| **TargetMode_Index** | Value: **2** |
 
-| Name                    | Value | Description |
-| ----------------------- | ----- | ----------- |
-| TargetMode\_FirstPerson | 0     |             |
-| TargetMode\_ThirdPerson | 1     |             |
-| TargetMode\_Index       | 2     |             |

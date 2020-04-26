@@ -1,37 +1,63 @@
 ---
 title: EntryInputActionMapData
 ---
-### Base Classes
 
-[InputActionMapData](/vext/ref/fb/inputactionmapdata/)
+Inherits from 
+[InputActionMapData](/vext/ref/fb/inputactionmapdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[EntryInputActionMapData](#constructor-0)**() |
+| **[EntryInputActionMapData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[EntryInputActionMapData](#constructor-2)**(other: [InputActionMapData](/vext/ref/fb/inputactionmapdata)) |
+| **[EntryInputActionMapData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "EntryInputActionMapData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### EntryInputActionMapData {#constructor-0}
+> **EntryInputActionMapData**()
 
-| Constructor                                                                        | Description                                                                                                                           |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| EntryInputActionMapData()                                                          | Create a new instance of this container type.                                                                                         |
-| EntryInputActionMapData(EntryInputActionMapData other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| EntryInputActionMapData([InputActionMapData](/vext/ref/fb/inputactionmapdata/) other)            | Upcast an instance of type [InputActionMapData](/vext/ref/fb/inputactionmapdata/) to [EntryInputActionMapData](/vext/ref/fb/entryinputactionmapdata/).            |
-| EntryInputActionMapData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EntryInputActionMapData](/vext/ref/fb/entryinputactionmapdata/). |
+Creates a new [EntryInputActionMapData](/vext/ref/fb/entryinputactionmapdata) frostbite instance.
 
-## Methods
+### EntryInputActionMapData {#constructor-1}
+> **EntryInputActionMapData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                               | Name            | Parameters                                     |
-| -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [EntryInputActionMapData](/vext/ref/fb/entryinputactionmapdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [EntryInputActionMapData](/vext/ref/fb/entryinputactionmapdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [EntryInputActionMapData](/vext/ref/fb/entryinputactionmapdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### EntryInputActionMapData {#constructor-2}
+> **EntryInputActionMapData**(other: [InputActionMapData](/vext/ref/fb/inputactionmapdata))
+
+Casts an instance of type [InputActionMapData](/vext/ref/fb/inputactionmapdata) to [EntryInputActionMapData](/vext/ref/fb/entryinputactionmapdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [InputActionMapData](/vext/ref/fb/inputactionmapdata) | The instance to cast to [EntryInputActionMapData](/vext/ref/fb/entryinputactionmapdata). |
+
+### EntryInputActionMapData {#constructor-3}
+> **EntryInputActionMapData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EntryInputActionMapData](/vext/ref/fb/entryinputactionmapdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [EntryInputActionMapData](/vext/ref/fb/entryinputactionmapdata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [EntryInputActionMapData](/vext/ref/fb/entryinputactionmapdata) type.
+

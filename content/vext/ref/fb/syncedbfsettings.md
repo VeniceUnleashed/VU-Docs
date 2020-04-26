@@ -1,55 +1,120 @@
 ---
 title: SyncedBFSettings
 ---
-### Base Classes
 
-[SystemSettings](/vext/ref/fb/systemsettings/)
+Inherits from 
+[SystemSettings](/vext/ref/fb/systemsettings)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SyncedBFSettings](#constructor-0)**() |
+| **[SyncedBFSettings](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SyncedBFSettings](#constructor-2)**(other: [SystemSettings](/vext/ref/fb/systemsettings)) |
+| **[SyncedBFSettings](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "gameModeCounterModifier" >}} | float |
+| {{< prop "unlicensedUnlocksUnlocked" >}} | bool |
+| {{< prop "noMinimap" >}} | bool |
+| {{< prop "noHud" >}} | bool |
+| {{< prop "noMinimapSpotting" >}} | bool |
+| {{< prop "no3dSpotting" >}} | bool |
+| {{< prop "noNameTag" >}} | bool |
+| {{< prop "onlySquadLeaderSpawn" >}} | bool |
+| {{< prop "teamSwitchingAllowed" >}} | bool |
+| {{< prop "memoryDefragUI" >}} | bool |
+| {{< prop "memoryGarbageCollectHavok" >}} | bool |
+| {{< prop "memoryDefragGlobal" >}} | bool |
+| {{< prop "allUnlocksUnlocked" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SyncedBFSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SyncedBFSettings {#constructor-0}
+> **SyncedBFSettings**()
 
-| Constructor                                                                 | Description                                                                                                             |
-| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| SyncedBFSettings()                                                          | Create a new instance of this container type.                                                                           |
-| SyncedBFSettings(SyncedBFSettings other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| SyncedBFSettings([SystemSettings](/vext/ref/fb/systemsettings/) other)                    | Upcast an instance of type [SystemSettings](/vext/ref/fb/systemsettings/) to [SyncedBFSettings](/vext/ref/fb/syncedbfsettings/).                    |
-| SyncedBFSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SyncedBFSettings](/vext/ref/fb/syncedbfsettings/). |
+Creates a new [SyncedBFSettings](/vext/ref/fb/syncedbfsettings) frostbite instance.
 
-## Properties
+### SyncedBFSettings {#constructor-1}
+> **SyncedBFSettings**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                      | Type   | Description |
-| ------------------------- | ------ | ----------- |
-| gameModeCounterModifier   | number |             |
-| unlicensedUnlocksUnlocked | bool   |             |
-| noMinimap                 | bool   |             |
-| noHud                     | bool   |             |
-| noMinimapSpotting         | bool   |             |
-| no3dSpotting              | bool   |             |
-| noNameTag                 | bool   |             |
-| onlySquadLeaderSpawn      | bool   |             |
-| teamSwitchingAllowed      | bool   |             |
-| memoryDefragUI            | bool   |             |
-| memoryGarbageCollectHavok | bool   |             |
-| memoryDefragGlobal        | bool   |             |
-| allUnlocksUnlocked        | bool   |             |
-
-## Methods
-
-| Type                                 | Name            | Parameters                                     |
-| ------------------------------------ | --------------- | ---------------------------------------------- |
-| [SyncedBFSettings](/vext/ref/fb/syncedbfsettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SyncedBFSettings](/vext/ref/fb/syncedbfsettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SyncedBFSettings](/vext/ref/fb/syncedbfsettings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SyncedBFSettings {#constructor-2}
+> **SyncedBFSettings**(other: [SystemSettings](/vext/ref/fb/systemsettings))
+
+Casts an instance of type [SystemSettings](/vext/ref/fb/systemsettings) to [SyncedBFSettings](/vext/ref/fb/syncedbfsettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SystemSettings](/vext/ref/fb/systemsettings) | The instance to cast to [SyncedBFSettings](/vext/ref/fb/syncedbfsettings). |
+
+### SyncedBFSettings {#constructor-3}
+> **SyncedBFSettings**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SyncedBFSettings](/vext/ref/fb/syncedbfsettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SyncedBFSettings](/vext/ref/fb/syncedbfsettings). |
+
+## Properties
+### {{% prop-heading "gameModeCounterModifier" %}}
+> **float**
+
+### {{% prop-heading "unlicensedUnlocksUnlocked" %}}
+> **bool**
+
+### {{% prop-heading "noMinimap" %}}
+> **bool**
+
+### {{% prop-heading "noHud" %}}
+> **bool**
+
+### {{% prop-heading "noMinimapSpotting" %}}
+> **bool**
+
+### {{% prop-heading "no3dSpotting" %}}
+> **bool**
+
+### {{% prop-heading "noNameTag" %}}
+> **bool**
+
+### {{% prop-heading "onlySquadLeaderSpawn" %}}
+> **bool**
+
+### {{% prop-heading "teamSwitchingAllowed" %}}
+> **bool**
+
+### {{% prop-heading "memoryDefragUI" %}}
+> **bool**
+
+### {{% prop-heading "memoryGarbageCollectHavok" %}}
+> **bool**
+
+### {{% prop-heading "memoryDefragGlobal" %}}
+> **bool**
+
+### {{% prop-heading "allUnlocksUnlocked" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SyncedBFSettings](/vext/ref/fb/syncedbfsettings) type.
+

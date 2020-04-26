@@ -1,14 +1,11 @@
 ---
 title: BreakableControllerComponentNetworkIdMultiplier
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **BreakableControllerComponentNetworkIdMultiplier_HidePartObjects** | Value: **0** |
+| **BreakableControllerComponentNetworkIdMultiplier_DisablePart** | Value: **1** |
+| **BreakableControllerComponentNetworkIdMultiplier_PartCount** | Value: **2** |
 
-| Name                                                             | Value | Description |
-| ---------------------------------------------------------------- | ----- | ----------- |
-| BreakableControllerComponentNetworkIdMultiplier\_HidePartObjects | 0     |             |
-| BreakableControllerComponentNetworkIdMultiplier\_DisablePart     | 1     |             |
-| BreakableControllerComponentNetworkIdMultiplier\_PartCount       | 2     |             |

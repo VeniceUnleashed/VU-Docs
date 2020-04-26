@@ -1,60 +1,133 @@
 ---
 title: SkyEffectState
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SkyEffectState](#constructor-0)**() |
+| **[SkyEffectState](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SkyEffectState](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "cloudLayerSunColor" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "panoramicTileFactor" >}} | float |
+| {{< prop "sunSize" >}} | float |
+| {{< prop "skyGradientScale" >}} | float |
+| {{< prop "sunScale" >}} | float |
+| {{< prop "panoramicUVMinX" >}} | float |
+| {{< prop "skyGradientTexture" >}} | [TextureAsset](/vext/ref/fb/textureasset) \| nil |
+| {{< prop "panoramicUVMinY" >}} | float |
+| {{< prop "panoramicUVMaxY" >}} | float |
+| {{< prop "panoramicUVMaxX" >}} | float |
+| {{< prop "panoramicRotation" >}} | float |
+| {{< prop "panoramicTexture" >}} | [TextureAsset](/vext/ref/fb/textureasset) \| nil |
+| {{< prop "panoramicAlphaTexture" >}} | [TextureAsset](/vext/ref/fb/textureasset) \| nil |
+| {{< prop "windDirection" >}} | float |
+| {{< prop "cloudLayerMaskTexture" >}} | [TextureAsset](/vext/ref/fb/textureasset) \| nil |
+| {{< prop "cloudLayer1" >}} | [SkyCloudLayer](/vext/ref/fb/skycloudlayer) |
+| {{< prop "cloudLayer2" >}} | [SkyCloudLayer](/vext/ref/fb/skycloudlayer) |
+| {{< prop "staticEnvmapTexture" >}} | [TextureAsset](/vext/ref/fb/textureasset) \| nil |
+| {{< prop "enable" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SkyEffectState" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SkyEffectState {#constructor-0}
+> **SkyEffectState**()
 
-| Constructor                                                               | Description                                                                                                         |
-| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| SkyEffectState()                                                          | Create a new instance of this container type.                                                                       |
-| SkyEffectState(SkyEffectState other)                                      | Create a reference copy of an instance of the same type.                                                            |
-| SkyEffectState([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SkyEffectState](/vext/ref/fb/skyeffectstate/). |
+Creates a new [SkyEffectState](/vext/ref/fb/skyeffectstate) frostbite instance.
 
-## Properties
+### SkyEffectState {#constructor-1}
+> **SkyEffectState**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                  | Type                              | Description |
-| --------------------- | --------------------------------- | ----------- |
-| cloudLayerSunColor    | [Vec3](/vext/ref/shared/class/vec3) |             |
-| panoramicTileFactor   | number                            |             |
-| sunSize               | number                            |             |
-| skyGradientScale      | number                            |             |
-| sunScale              | number                            |             |
-| panoramicUVMinX       | number                            |             |
-| skyGradientTexture    | [TextureAsset](/vext/ref/fb/textureasset/)      |             |
-| panoramicUVMinY       | number                            |             |
-| panoramicUVMaxY       | number                            |             |
-| panoramicUVMaxX       | number                            |             |
-| panoramicRotation     | number                            |             |
-| panoramicTexture      | [TextureAsset](/vext/ref/fb/textureasset/)      |             |
-| panoramicAlphaTexture | [TextureAsset](/vext/ref/fb/textureasset/)      |             |
-| windDirection         | number                            |             |
-| cloudLayerMaskTexture | [TextureAsset](/vext/ref/fb/textureasset/)      |             |
-| cloudLayer1           | [SkyCloudLayer](/vext/ref/fb/skycloudlayer/)    |             |
-| cloudLayer2           | [SkyCloudLayer](/vext/ref/fb/skycloudlayer/)    |             |
-| staticEnvmapTexture   | [TextureAsset](/vext/ref/fb/textureasset/)      |             |
-| enable                | bool                              |             |
-
-## Methods
-
-| Type                             | Name            | Parameters                                     |
-| -------------------------------- | --------------- | ---------------------------------------------- |
-| [SkyEffectState](/vext/ref/fb/skyeffectstate/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SkyEffectState](/vext/ref/fb/skyeffectstate/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SkyEffectState](/vext/ref/fb/skyeffectstate) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SkyEffectState {#constructor-2}
+> **SkyEffectState**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SkyEffectState](/vext/ref/fb/skyeffectstate). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SkyEffectState](/vext/ref/fb/skyeffectstate). |
+
+## Properties
+### {{% prop-heading "cloudLayerSunColor" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "panoramicTileFactor" %}}
+> **float**
+
+### {{% prop-heading "sunSize" %}}
+> **float**
+
+### {{% prop-heading "skyGradientScale" %}}
+> **float**
+
+### {{% prop-heading "sunScale" %}}
+> **float**
+
+### {{% prop-heading "panoramicUVMinX" %}}
+> **float**
+
+### {{% prop-heading "skyGradientTexture" %}}
+> **[TextureAsset](/vext/ref/fb/textureasset)** | **nil**
+
+### {{% prop-heading "panoramicUVMinY" %}}
+> **float**
+
+### {{% prop-heading "panoramicUVMaxY" %}}
+> **float**
+
+### {{% prop-heading "panoramicUVMaxX" %}}
+> **float**
+
+### {{% prop-heading "panoramicRotation" %}}
+> **float**
+
+### {{% prop-heading "panoramicTexture" %}}
+> **[TextureAsset](/vext/ref/fb/textureasset)** | **nil**
+
+### {{% prop-heading "panoramicAlphaTexture" %}}
+> **[TextureAsset](/vext/ref/fb/textureasset)** | **nil**
+
+### {{% prop-heading "windDirection" %}}
+> **float**
+
+### {{% prop-heading "cloudLayerMaskTexture" %}}
+> **[TextureAsset](/vext/ref/fb/textureasset)** | **nil**
+
+### {{% prop-heading "cloudLayer1" %}}
+> **[SkyCloudLayer](/vext/ref/fb/skycloudlayer)**
+
+### {{% prop-heading "cloudLayer2" %}}
+> **[SkyCloudLayer](/vext/ref/fb/skycloudlayer)**
+
+### {{% prop-heading "staticEnvmapTexture" %}}
+> **[TextureAsset](/vext/ref/fb/textureasset)** | **nil**
+
+### {{% prop-heading "enable" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SkyEffectState](/vext/ref/fb/skyeffectstate) type.
+

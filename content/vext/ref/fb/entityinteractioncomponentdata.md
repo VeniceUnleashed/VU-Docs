@@ -1,53 +1,126 @@
 ---
 title: EntityInteractionComponentData
 ---
-### Base Classes
 
-[ComponentData](/vext/ref/fb/componentdata/)
+Inherits from 
+[ComponentData](/vext/ref/fb/componentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[EntityInteractionComponentData](#constructor-0)**() |
+| **[EntityInteractionComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[EntityInteractionComponentData](#constructor-2)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[EntityInteractionComponentData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[EntityInteractionComponentData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[EntityInteractionComponentData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "pickupRadius" >}} | float |
+| {{< prop "maxAmmoPickupTimer" >}} | float |
+| {{< prop "maxAmmoCrateTimer" >}} | float |
+| {{< prop "interactWithTypes" >}} | [InteractionTypesData](/vext/ref/fb/interactiontypesdata) |
+| {{< prop "maxLookAtAngle" >}} | float |
+| {{< prop "soldierInteractRadius" >}} | float |
+| {{< prop "soldierInteractInputAction" >}} | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum) |
+| {{< prop "allowInteractionWithSoldiers" >}} | bool |
+| {{< prop "onlyAllowInteractionWithManDownSoldiers" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "EntityInteractionComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### EntityInteractionComponentData {#constructor-0}
+> **EntityInteractionComponentData**()
 
-| Constructor                                                                               | Description                                                                                                                                         |
-| ----------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| EntityInteractionComponentData()                                                          | Create a new instance of this container type.                                                                                                       |
-| EntityInteractionComponentData(EntityInteractionComponentData other)                      | Create a reference copy of an instance of the same type.                                                                                            |
-| EntityInteractionComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [EntityInteractionComponentData](/vext/ref/fb/entityinteractioncomponentdata/).                      |
-| EntityInteractionComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [EntityInteractionComponentData](/vext/ref/fb/entityinteractioncomponentdata/).                    |
-| EntityInteractionComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [EntityInteractionComponentData](/vext/ref/fb/entityinteractioncomponentdata/).              |
-| EntityInteractionComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EntityInteractionComponentData](/vext/ref/fb/entityinteractioncomponentdata/). |
+Creates a new [EntityInteractionComponentData](/vext/ref/fb/entityinteractioncomponentdata) frostbite instance.
 
-## Properties
+### EntityInteractionComponentData {#constructor-1}
+> **EntityInteractionComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                                    | Type                                         | Description |
-| --------------------------------------- | -------------------------------------------- | ----------- |
-| pickupRadius                            | number                                       |             |
-| maxAmmoPickupTimer                      | number                                       |             |
-| maxAmmoCrateTimer                       | number                                       |             |
-| interactWithTypes                       | [InteractionTypesData](/vext/ref/fb/interactiontypesdata/) |             |
-| maxLookAtAngle                          | number                                       |             |
-| soldierInteractRadius                   | number                                       |             |
-| soldierInteractInputAction              | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum/) |             |
-| allowInteractionWithSoldiers            | bool                                         |             |
-| onlyAllowInteractionWithManDownSoldiers | bool                                         |             |
-
-## Methods
-
-| Type                                                             | Name            | Parameters                                     |
-| ---------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [EntityInteractionComponentData](/vext/ref/fb/entityinteractioncomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [EntityInteractionComponentData](/vext/ref/fb/entityinteractioncomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [EntityInteractionComponentData](/vext/ref/fb/entityinteractioncomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### EntityInteractionComponentData {#constructor-2}
+> **EntityInteractionComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [EntityInteractionComponentData](/vext/ref/fb/entityinteractioncomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [EntityInteractionComponentData](/vext/ref/fb/entityinteractioncomponentdata). |
+
+### EntityInteractionComponentData {#constructor-3}
+> **EntityInteractionComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [EntityInteractionComponentData](/vext/ref/fb/entityinteractioncomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [EntityInteractionComponentData](/vext/ref/fb/entityinteractioncomponentdata). |
+
+### EntityInteractionComponentData {#constructor-4}
+> **EntityInteractionComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [EntityInteractionComponentData](/vext/ref/fb/entityinteractioncomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [EntityInteractionComponentData](/vext/ref/fb/entityinteractioncomponentdata). |
+
+### EntityInteractionComponentData {#constructor-5}
+> **EntityInteractionComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EntityInteractionComponentData](/vext/ref/fb/entityinteractioncomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [EntityInteractionComponentData](/vext/ref/fb/entityinteractioncomponentdata). |
+
+## Properties
+### {{% prop-heading "pickupRadius" %}}
+> **float**
+
+### {{% prop-heading "maxAmmoPickupTimer" %}}
+> **float**
+
+### {{% prop-heading "maxAmmoCrateTimer" %}}
+> **float**
+
+### {{% prop-heading "interactWithTypes" %}}
+> **[InteractionTypesData](/vext/ref/fb/interactiontypesdata)**
+
+### {{% prop-heading "maxLookAtAngle" %}}
+> **float**
+
+### {{% prop-heading "soldierInteractRadius" %}}
+> **float**
+
+### {{% prop-heading "soldierInteractInputAction" %}}
+> **[EntryInputActionEnum](/vext/ref/fb/entryinputactionenum)**
+
+### {{% prop-heading "allowInteractionWithSoldiers" %}}
+> **bool**
+
+### {{% prop-heading "onlyAllowInteractionWithManDownSoldiers" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [EntityInteractionComponentData](/vext/ref/fb/entityinteractioncomponentdata) type.
+

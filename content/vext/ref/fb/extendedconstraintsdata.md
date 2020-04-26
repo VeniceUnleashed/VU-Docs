@@ -1,46 +1,77 @@
 ---
 title: ExtendedConstraintsData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ExtendedConstraintsData](#constructor-0)**() |
+| **[ExtendedConstraintsData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ExtendedConstraintsData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "heading" >}} | float |
+| {{< prop "width" >}} | float |
+| {{< prop "falloff" >}} | float |
+| {{< prop "angularConstraintMin" >}} | float |
+| {{< prop "angularConstraintMax" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ExtendedConstraintsData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ExtendedConstraintsData {#constructor-0}
+> **ExtendedConstraintsData**()
 
-| Constructor                                                                        | Description                                                                                                                           |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| ExtendedConstraintsData()                                                          | Create a new instance of this container type.                                                                                         |
-| ExtendedConstraintsData(ExtendedConstraintsData other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| ExtendedConstraintsData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ExtendedConstraintsData](/vext/ref/fb/extendedconstraintsdata/). |
+Creates a new [ExtendedConstraintsData](/vext/ref/fb/extendedconstraintsdata) frostbite instance.
 
-## Properties
+### ExtendedConstraintsData {#constructor-1}
+> **ExtendedConstraintsData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                 | Type   | Description |
-| -------------------- | ------ | ----------- |
-| heading              | number |             |
-| width                | number |             |
-| falloff              | number |             |
-| angularConstraintMin | number |             |
-| angularConstraintMax | number |             |
-
-## Methods
-
-| Type                                               | Name            | Parameters                                     |
-| -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [ExtendedConstraintsData](/vext/ref/fb/extendedconstraintsdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ExtendedConstraintsData](/vext/ref/fb/extendedconstraintsdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ExtendedConstraintsData](/vext/ref/fb/extendedconstraintsdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ExtendedConstraintsData {#constructor-2}
+> **ExtendedConstraintsData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ExtendedConstraintsData](/vext/ref/fb/extendedconstraintsdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ExtendedConstraintsData](/vext/ref/fb/extendedconstraintsdata). |
+
+## Properties
+### {{% prop-heading "heading" %}}
+> **float**
+
+### {{% prop-heading "width" %}}
+> **float**
+
+### {{% prop-heading "falloff" %}}
+> **float**
+
+### {{% prop-heading "angularConstraintMin" %}}
+> **float**
+
+### {{% prop-heading "angularConstraintMax" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ExtendedConstraintsData](/vext/ref/fb/extendedconstraintsdata) type.
+

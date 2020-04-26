@@ -1,25 +1,22 @@
 ---
 title: EmittableField
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **EfZero** | Value: **0** |
+| **EfOne** | Value: **1** |
+| **EfNormTime** | Value: **2** |
+| **EfEmitterNormTime** | Value: **3** |
+| **EfSpawnAnimationSpeed** | Value: **4** |
+| **EfSpawnAnimationFrameIndex** | Value: **5** |
+| **EfVelocity** | Value: **6** |
+| **EfParameters** | Value: **7** |
+| **EfRotation** | Value: **8** |
+| **EfSpeed** | Value: **9** |
+| **EfUserDefined** | Value: **10** |
+| **EfConstantFloat** | Value: **11** |
+| **EfConstantVec** | Value: **12** |
+| **EfNone** | Value: **13** |
 
-| Name                       | Value | Description |
-| -------------------------- | ----- | ----------- |
-| EfZero                     | 0     |             |
-| EfOne                      | 1     |             |
-| EfNormTime                 | 2     |             |
-| EfEmitterNormTime          | 3     |             |
-| EfSpawnAnimationSpeed      | 4     |             |
-| EfSpawnAnimationFrameIndex | 5     |             |
-| EfVelocity                 | 6     |             |
-| EfParameters               | 7     |             |
-| EfRotation                 | 8     |             |
-| EfSpeed                    | 9     |             |
-| EfUserDefined              | 10    |             |
-| EfConstantFloat            | 11    |             |
-| EfConstantVec              | 12    |             |
-| EfNone                     | 13    |             |

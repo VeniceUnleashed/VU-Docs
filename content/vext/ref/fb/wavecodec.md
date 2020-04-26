@@ -1,17 +1,14 @@
 ---
 title: WaveCodec
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **WaveCodec_EaLayer3** | Value: **0** |
+| **WaveCodec_EaXma** | Value: **1** |
+| **WaveCodec_Xas** | Value: **2** |
+| **WaveCodec_EaSpeex** | Value: **3** |
+| **WaveCodec_Pcm** | Value: **4** |
+| **WaveCodec_Count** | Value: **5** |
 
-| Name                | Value | Description |
-| ------------------- | ----- | ----------- |
-| WaveCodec\_EaLayer3 | 0     |             |
-| WaveCodec\_EaXma    | 1     |             |
-| WaveCodec\_Xas      | 2     |             |
-| WaveCodec\_EaSpeex  | 3     |             |
-| WaveCodec\_Pcm      | 4     |             |
-| WaveCodec\_Count    | 5     |             |

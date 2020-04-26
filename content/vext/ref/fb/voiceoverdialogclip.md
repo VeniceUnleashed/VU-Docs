@@ -1,46 +1,77 @@
 ---
 title: VoiceOverDialogClip
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VoiceOverDialogClip](#constructor-0)**() |
+| **[VoiceOverDialogClip](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VoiceOverDialogClip](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "offset" >}} | float |
+| {{< prop "takes" >}} | [VoiceOverDialogTake](/vext/ref/fb/voiceoverdialogtake)[] |
+| {{< prop "offsetReferences" >}} | [VoiceOverDialogClip](/vext/ref/fb/voiceoverdialogclip)[] |
+| {{< prop "events" >}} | [VoiceOverDialogClipEvents](/vext/ref/fb/voiceoverdialogclipevents) \| nil |
+| {{< prop "sequenceIndex" >}} | int |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VoiceOverDialogClip" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VoiceOverDialogClip {#constructor-0}
+> **VoiceOverDialogClip**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| VoiceOverDialogClip()                                                          | Create a new instance of this container type.                                                                                 |
-| VoiceOverDialogClip(VoiceOverDialogClip other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| VoiceOverDialogClip([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverDialogClip](/vext/ref/fb/voiceoverdialogclip/). |
+Creates a new [VoiceOverDialogClip](/vext/ref/fb/voiceoverdialogclip) frostbite instance.
 
-## Properties
+### VoiceOverDialogClip {#constructor-1}
+> **VoiceOverDialogClip**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name             | Type                                                   | Description |
-| ---------------- | ------------------------------------------------------ | ----------- |
-| offset           | number                                                 |             |
-| takes            | [VoiceOverDialogTake](/vext/ref/fb/voiceoverdialogtake/)\[\]         |             |
-| offsetReferences | [VoiceOverDialogClip](/vext/ref/fb/voiceoverdialogclip/)\[\]         |             |
-| events           | [VoiceOverDialogClipEvents](/vext/ref/fb/voiceoverdialogclipevents/) |             |
-| sequenceIndex    | number                                                 |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [VoiceOverDialogClip](/vext/ref/fb/voiceoverdialogclip/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VoiceOverDialogClip](/vext/ref/fb/voiceoverdialogclip/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VoiceOverDialogClip](/vext/ref/fb/voiceoverdialogclip) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VoiceOverDialogClip {#constructor-2}
+> **VoiceOverDialogClip**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverDialogClip](/vext/ref/fb/voiceoverdialogclip). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VoiceOverDialogClip](/vext/ref/fb/voiceoverdialogclip). |
+
+## Properties
+### {{% prop-heading "offset" %}}
+> **float**
+
+### {{% prop-heading "takes" %}}
+> **[VoiceOverDialogTake](/vext/ref/fb/voiceoverdialogtake)**[]
+
+### {{% prop-heading "offsetReferences" %}}
+> **[VoiceOverDialogClip](/vext/ref/fb/voiceoverdialogclip)**[]
+
+### {{% prop-heading "events" %}}
+> **[VoiceOverDialogClipEvents](/vext/ref/fb/voiceoverdialogclipevents)** | **nil**
+
+### {{% prop-heading "sequenceIndex" %}}
+> **int**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VoiceOverDialogClip](/vext/ref/fb/voiceoverdialogclip) type.
+

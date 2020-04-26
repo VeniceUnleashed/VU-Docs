@@ -1,17 +1,14 @@
 ---
 title: AIDeathReactionAnimationType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **AIDeathReactionAnimationType_1** | Value: **0** |
+| **AIDeathReactionAnimationType_2** | Value: **1** |
+| **AIDeathReactionAnimationType_3** | Value: **2** |
+| **AIDeathReactionAnimationType_4** | Value: **3** |
+| **AIDeathReactionAnimationType_5** | Value: **4** |
+| **AIDeathReactionAnimationType_Count** | Value: **5** |
 
-| Name                                | Value | Description |
-| ----------------------------------- | ----- | ----------- |
-| AIDeathReactionAnimationType\_1     | 0     |             |
-| AIDeathReactionAnimationType\_2     | 1     |             |
-| AIDeathReactionAnimationType\_3     | 2     |             |
-| AIDeathReactionAnimationType\_4     | 3     |             |
-| AIDeathReactionAnimationType\_5     | 4     |             |
-| AIDeathReactionAnimationType\_Count | 5     |             |

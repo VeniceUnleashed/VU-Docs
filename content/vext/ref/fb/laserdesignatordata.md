@@ -1,48 +1,106 @@
 ---
 title: LaserDesignatorData
 ---
-### Base Classes
 
-[LockingWeaponData](/vext/ref/fb/lockingweapondata/)
+Inherits from 
+[LockingWeaponData](/vext/ref/fb/lockingweapondata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[LaserDesignatorData](#constructor-0)**() |
+| **[LaserDesignatorData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[LaserDesignatorData](#constructor-2)**(other: [LockingWeaponData](/vext/ref/fb/lockingweapondata)) |
+| **[LaserDesignatorData](#constructor-3)**(other: [WeaponData](/vext/ref/fb/weapondata)) |
+| **[LaserDesignatorData](#constructor-4)**(other: [ToolData](/vext/ref/fb/tooldata)) |
+| **[LaserDesignatorData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "postLockTime" >}} | float |
+| {{< prop "bomberTime" >}} | float |
+| {{< prop "bombWarnTime" >}} | float |
+| {{< prop "bomberSound" >}} | [SoundAsset](/vext/ref/fb/soundasset) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "LaserDesignatorData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### LaserDesignatorData {#constructor-0}
+> **LaserDesignatorData**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| LaserDesignatorData()                                                          | Create a new instance of this container type.                                                                                 |
-| LaserDesignatorData(LaserDesignatorData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| LaserDesignatorData([LockingWeaponData](/vext/ref/fb/lockingweapondata/) other)              | Upcast an instance of type [LockingWeaponData](/vext/ref/fb/lockingweapondata/) to [LaserDesignatorData](/vext/ref/fb/laserdesignatordata/).              |
-| LaserDesignatorData([WeaponData](/vext/ref/fb/weapondata/) other)                            | Upcast an instance of type [WeaponData](/vext/ref/fb/weapondata/) to [LaserDesignatorData](/vext/ref/fb/laserdesignatordata/).                            |
-| LaserDesignatorData([ToolData](/vext/ref/fb/tooldata/) other)                                | Upcast an instance of type [ToolData](/vext/ref/fb/tooldata/) to [LaserDesignatorData](/vext/ref/fb/laserdesignatordata/).                                |
-| LaserDesignatorData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LaserDesignatorData](/vext/ref/fb/laserdesignatordata/). |
+Creates a new [LaserDesignatorData](/vext/ref/fb/laserdesignatordata) frostbite instance.
 
-## Properties
+### LaserDesignatorData {#constructor-1}
+> **LaserDesignatorData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name         | Type                     | Description |
-| ------------ | ------------------------ | ----------- |
-| postLockTime | number                   |             |
-| bomberTime   | number                   |             |
-| bombWarnTime | number                   |             |
-| bomberSound  | [SoundAsset](/vext/ref/fb/soundasset/) |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [LaserDesignatorData](/vext/ref/fb/laserdesignatordata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [LaserDesignatorData](/vext/ref/fb/laserdesignatordata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [LaserDesignatorData](/vext/ref/fb/laserdesignatordata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### LaserDesignatorData {#constructor-2}
+> **LaserDesignatorData**(other: [LockingWeaponData](/vext/ref/fb/lockingweapondata))
+
+Casts an instance of type [LockingWeaponData](/vext/ref/fb/lockingweapondata) to [LaserDesignatorData](/vext/ref/fb/laserdesignatordata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [LockingWeaponData](/vext/ref/fb/lockingweapondata) | The instance to cast to [LaserDesignatorData](/vext/ref/fb/laserdesignatordata). |
+
+### LaserDesignatorData {#constructor-3}
+> **LaserDesignatorData**(other: [WeaponData](/vext/ref/fb/weapondata))
+
+Casts an instance of type [WeaponData](/vext/ref/fb/weapondata) to [LaserDesignatorData](/vext/ref/fb/laserdesignatordata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [WeaponData](/vext/ref/fb/weapondata) | The instance to cast to [LaserDesignatorData](/vext/ref/fb/laserdesignatordata). |
+
+### LaserDesignatorData {#constructor-4}
+> **LaserDesignatorData**(other: [ToolData](/vext/ref/fb/tooldata))
+
+Casts an instance of type [ToolData](/vext/ref/fb/tooldata) to [LaserDesignatorData](/vext/ref/fb/laserdesignatordata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ToolData](/vext/ref/fb/tooldata) | The instance to cast to [LaserDesignatorData](/vext/ref/fb/laserdesignatordata). |
+
+### LaserDesignatorData {#constructor-5}
+> **LaserDesignatorData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LaserDesignatorData](/vext/ref/fb/laserdesignatordata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [LaserDesignatorData](/vext/ref/fb/laserdesignatordata). |
+
+## Properties
+### {{% prop-heading "postLockTime" %}}
+> **float**
+
+### {{% prop-heading "bomberTime" %}}
+> **float**
+
+### {{% prop-heading "bombWarnTime" %}}
+> **float**
+
+### {{% prop-heading "bomberSound" %}}
+> **[SoundAsset](/vext/ref/fb/soundasset)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [LaserDesignatorData](/vext/ref/fb/laserdesignatordata) type.
+

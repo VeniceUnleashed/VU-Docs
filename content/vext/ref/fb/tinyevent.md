@@ -1,22 +1,19 @@
 ---
 title: TinyEvent
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **TinyEvent_AckTimeSyncDone** | Value: **1** |
+| **TinyEvent_AckLevelLinked** | Value: **2** |
+| **TinyEvent_AckLevelRestarted** | Value: **3** |
+| **TinyEvent_AckEnterPatchRecvState** | Value: **4** |
+| **TinyEvent_AckAuthentication** | Value: **5** |
+| **TinyEvent_NackAuthentication** | Value: **6** |
+| **TinyEvent_AckExitLevel** | Value: **7** |
+| **TinyEvent_CmdLinkLevel** | Value: **8** |
+| **TinyEvent_CmdEnterPatchRecvState** | Value: **9** |
+| **TinyEvent_CmdExitLevel** | Value: **10** |
+| **TinyEvent_CmdContinueLevel** | Value: **11** |
 
-| Name                              | Value | Description |
-| --------------------------------- | ----- | ----------- |
-| TinyEvent\_AckTimeSyncDone        | 1     |             |
-| TinyEvent\_AckLevelLinked         | 2     |             |
-| TinyEvent\_AckLevelRestarted      | 3     |             |
-| TinyEvent\_AckEnterPatchRecvState | 4     |             |
-| TinyEvent\_AckAuthentication      | 5     |             |
-| TinyEvent\_NackAuthentication     | 6     |             |
-| TinyEvent\_AckExitLevel           | 7     |             |
-| TinyEvent\_CmdLinkLevel           | 8     |             |
-| TinyEvent\_CmdEnterPatchRecvState | 9     |             |
-| TinyEvent\_CmdExitLevel           | 10    |             |
-| TinyEvent\_CmdContinueLevel       | 11    |             |

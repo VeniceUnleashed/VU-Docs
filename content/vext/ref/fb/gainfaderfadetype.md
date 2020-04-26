@@ -1,14 +1,11 @@
 ---
 title: GainFaderFadeType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **GainFaderFadeType_LinearAmplitude** | Value: **0** |
+| **GainFaderFadeType_LinearPower** | Value: **1** |
+| **GainFaderFadeType_SineAmplitude** | Value: **2** |
 
-| Name                               | Value | Description |
-| ---------------------------------- | ----- | ----------- |
-| GainFaderFadeType\_LinearAmplitude | 0     |             |
-| GainFaderFadeType\_LinearPower     | 1     |             |
-| GainFaderFadeType\_SineAmplitude   | 2     |             |

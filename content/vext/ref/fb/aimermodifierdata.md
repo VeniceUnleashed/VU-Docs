@@ -1,44 +1,76 @@
 ---
 title: AimerModifierData
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AimerModifierData](#constructor-0)**() |
+| **[AimerModifierData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[AimerModifierData](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[AimerModifierData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "lookSpeedMultiplier" >}} | float |
+| {{< prop "onlyInSupportedShooting" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AimerModifierData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AimerModifierData {#constructor-0}
+> **AimerModifierData**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| AimerModifierData()                                                          | Create a new instance of this container type.                                                                             |
-| AimerModifierData(AimerModifierData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| AimerModifierData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [AimerModifierData](/vext/ref/fb/aimermodifierdata/).                                      |
-| AimerModifierData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AimerModifierData](/vext/ref/fb/aimermodifierdata/). |
+Creates a new [AimerModifierData](/vext/ref/fb/aimermodifierdata) frostbite instance.
 
-## Properties
+### AimerModifierData {#constructor-1}
+> **AimerModifierData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                    | Type   | Description |
-| ----------------------- | ------ | ----------- |
-| lookSpeedMultiplier     | number |             |
-| onlyInSupportedShooting | bool   |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [AimerModifierData](/vext/ref/fb/aimermodifierdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [AimerModifierData](/vext/ref/fb/aimermodifierdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [AimerModifierData](/vext/ref/fb/aimermodifierdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### AimerModifierData {#constructor-2}
+> **AimerModifierData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [AimerModifierData](/vext/ref/fb/aimermodifierdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [AimerModifierData](/vext/ref/fb/aimermodifierdata). |
+
+### AimerModifierData {#constructor-3}
+> **AimerModifierData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AimerModifierData](/vext/ref/fb/aimermodifierdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [AimerModifierData](/vext/ref/fb/aimermodifierdata). |
+
+## Properties
+### {{% prop-heading "lookSpeedMultiplier" %}}
+> **float**
+
+### {{% prop-heading "onlyInSupportedShooting" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AimerModifierData](/vext/ref/fb/aimermodifierdata) type.
+

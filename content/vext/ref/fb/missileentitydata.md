@@ -1,73 +1,241 @@
 ---
 title: MissileEntityData
 ---
-### Base Classes
 
-[MeshProjectileEntityData](/vext/ref/fb/meshprojectileentitydata/)
+Inherits from 
+[MeshProjectileEntityData](/vext/ref/fb/meshprojectileentitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MissileEntityData](#constructor-0)**() |
+| **[MissileEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MissileEntityData](#constructor-2)**(other: [MeshProjectileEntityData](/vext/ref/fb/meshprojectileentitydata)) |
+| **[MissileEntityData](#constructor-3)**(other: [ProjectileEntityData](/vext/ref/fb/projectileentitydata)) |
+| **[MissileEntityData](#constructor-4)**(other: [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata)) |
+| **[MissileEntityData](#constructor-5)**(other: [GameEntityData](/vext/ref/fb/gameentitydata)) |
+| **[MissileEntityData](#constructor-6)**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata)) |
+| **[MissileEntityData](#constructor-7)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[MissileEntityData](#constructor-8)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[MissileEntityData](#constructor-9)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[MissileEntityData](#constructor-10)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "gravity" >}} | float |
+| {{< prop "engineEffect" >}} | [EffectBlueprint](/vext/ref/fb/effectblueprint) \| nil |
+| {{< prop "dudExplosion" >}} | [ExplosionEntityData](/vext/ref/fb/explosionentitydata) \| nil |
+| {{< prop "flyBySound" >}} | [SoundAsset](/vext/ref/fb/soundasset) \| nil |
+| {{< prop "engineStrength" >}} | float |
+| {{< prop "maxSpeed" >}} | float |
+| {{< prop "engineTimeToIgnition" >}} | float |
+| {{< prop "engineTimeToLive" >}} | float |
+| {{< prop "timeToActivateGuidingSystem" >}} | float |
+| {{< prop "timeToArm" >}} | float |
+| {{< prop "maxTurnAngle" >}} | float |
+| {{< prop "drag" >}} | float |
+| {{< prop "nearTargetDetonation" >}} | [NearTargetDetonationData](/vext/ref/fb/neartargetdetonationdata) |
+| {{< prop "defaultTeam" >}} | [TeamId](/vext/ref/fb/teamid) |
+| {{< prop "flyBySoundRadius" >}} | float |
+| {{< prop "flyBySoundSpeed" >}} | float |
+| {{< prop "impactImpulse" >}} | float |
+| {{< prop "damage" >}} | float |
+| {{< prop "unguidedData" >}} | [MissileUnguidedData](/vext/ref/fb/missileunguideddata) |
+| {{< prop "warnTarget" >}} | [WarnTarget](/vext/ref/fb/warntarget) |
+| {{< prop "lockableInfo" >}} | [MissileLockableInfoData](/vext/ref/fb/missilelockableinfodata) |
+| {{< prop "lockingController" >}} | [LockingControllerData](/vext/ref/fb/lockingcontrollerdata) \| nil |
+| {{< prop "warnOnPointingMissile" >}} | bool |
+| {{< prop "applyGravityWhenGuided" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MissileEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MissileEntityData {#constructor-0}
+> **MissileEntityData**()
 
-| Constructor                                                                   | Description                                                                                                                |
-| ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| MissileEntityData()                                                           | Create a new instance of this container type.                                                                              |
-| MissileEntityData(MissileEntityData other)                                    | Create a reference copy of an instance of the same type.                                                                   |
-| MissileEntityData([MeshProjectileEntityData](/vext/ref/fb/meshprojectileentitydata/) other) | Upcast an instance of type [MeshProjectileEntityData](/vext/ref/fb/meshprojectileentitydata/) to [MissileEntityData](/vext/ref/fb/missileentitydata/). |
-| MissileEntityData([ProjectileEntityData](/vext/ref/fb/projectileentitydata/) other)         | Upcast an instance of type [ProjectileEntityData](/vext/ref/fb/projectileentitydata/) to [MissileEntityData](/vext/ref/fb/missileentitydata/).         |
-| MissileEntityData([GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata/) other)       | Upcast an instance of type [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata/) to [MissileEntityData](/vext/ref/fb/missileentitydata/).       |
-| MissileEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                     | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [MissileEntityData](/vext/ref/fb/missileentitydata/).                     |
-| MissileEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)               | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [MissileEntityData](/vext/ref/fb/missileentitydata/).               |
-| MissileEntityData([EntityData](/vext/ref/fb/entitydata/) other)                             | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [MissileEntityData](/vext/ref/fb/missileentitydata/).                             |
-| MissileEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                     | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [MissileEntityData](/vext/ref/fb/missileentitydata/).                     |
-| MissileEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)               | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [MissileEntityData](/vext/ref/fb/missileentitydata/).               |
-| MissileEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other)  | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MissileEntityData](/vext/ref/fb/missileentitydata/).  |
+Creates a new [MissileEntityData](/vext/ref/fb/missileentitydata) frostbite instance.
 
-## Properties
+### MissileEntityData {#constructor-1}
+> **MissileEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                        | Type                                                 | Description |
-| --------------------------- | ---------------------------------------------------- | ----------- |
-| gravity                     | number                                               |             |
-| engineEffect                | [EffectBlueprint](/vext/ref/fb/effectblueprint/)                   |             |
-| dudExplosion                | [ExplosionEntityData](/vext/ref/fb/explosionentitydata/)           |             |
-| flyBySound                  | [SoundAsset](/vext/ref/fb/soundasset/)                             |             |
-| engineStrength              | number                                               |             |
-| maxSpeed                    | number                                               |             |
-| engineTimeToIgnition        | number                                               |             |
-| engineTimeToLive            | number                                               |             |
-| timeToActivateGuidingSystem | number                                               |             |
-| timeToArm                   | number                                               |             |
-| maxTurnAngle                | number                                               |             |
-| drag                        | number                                               |             |
-| nearTargetDetonation        | [NearTargetDetonationData](/vext/ref/fb/neartargetdetonationdata/) |             |
-| defaultTeam                 | [TeamId](/vext/ref/fb/teamid/)                                     |             |
-| flyBySoundRadius            | number                                               |             |
-| flyBySoundSpeed             | number                                               |             |
-| impactImpulse               | number                                               |             |
-| damage                      | number                                               |             |
-| unguidedData                | [MissileUnguidedData](/vext/ref/fb/missileunguideddata/)           |             |
-| warnTarget                  | [WarnTarget](/vext/ref/fb/warntarget/)                             |             |
-| lockableInfo                | [MissileLockableInfoData](/vext/ref/fb/missilelockableinfodata/)   |             |
-| lockingController           | [LockingControllerData](/vext/ref/fb/lockingcontrollerdata/)       |             |
-| warnOnPointingMissile       | bool                                                 |             |
-| applyGravityWhenGuided      | bool                                                 |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [MissileEntityData](/vext/ref/fb/missileentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MissileEntityData](/vext/ref/fb/missileentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MissileEntityData](/vext/ref/fb/missileentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MissileEntityData {#constructor-2}
+> **MissileEntityData**(other: [MeshProjectileEntityData](/vext/ref/fb/meshprojectileentitydata))
+
+Casts an instance of type [MeshProjectileEntityData](/vext/ref/fb/meshprojectileentitydata) to [MissileEntityData](/vext/ref/fb/missileentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [MeshProjectileEntityData](/vext/ref/fb/meshprojectileentitydata) | The instance to cast to [MissileEntityData](/vext/ref/fb/missileentitydata). |
+
+### MissileEntityData {#constructor-3}
+> **MissileEntityData**(other: [ProjectileEntityData](/vext/ref/fb/projectileentitydata))
+
+Casts an instance of type [ProjectileEntityData](/vext/ref/fb/projectileentitydata) to [MissileEntityData](/vext/ref/fb/missileentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ProjectileEntityData](/vext/ref/fb/projectileentitydata) | The instance to cast to [MissileEntityData](/vext/ref/fb/missileentitydata). |
+
+### MissileEntityData {#constructor-4}
+> **MissileEntityData**(other: [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata))
+
+Casts an instance of type [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata) to [MissileEntityData](/vext/ref/fb/missileentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata) | The instance to cast to [MissileEntityData](/vext/ref/fb/missileentitydata). |
+
+### MissileEntityData {#constructor-5}
+> **MissileEntityData**(other: [GameEntityData](/vext/ref/fb/gameentitydata))
+
+Casts an instance of type [GameEntityData](/vext/ref/fb/gameentitydata) to [MissileEntityData](/vext/ref/fb/missileentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameEntityData](/vext/ref/fb/gameentitydata) | The instance to cast to [MissileEntityData](/vext/ref/fb/missileentitydata). |
+
+### MissileEntityData {#constructor-6}
+> **MissileEntityData**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata))
+
+Casts an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata) to [MissileEntityData](/vext/ref/fb/missileentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SpatialEntityData](/vext/ref/fb/spatialentitydata) | The instance to cast to [MissileEntityData](/vext/ref/fb/missileentitydata). |
+
+### MissileEntityData {#constructor-7}
+> **MissileEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [MissileEntityData](/vext/ref/fb/missileentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [MissileEntityData](/vext/ref/fb/missileentitydata). |
+
+### MissileEntityData {#constructor-8}
+> **MissileEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [MissileEntityData](/vext/ref/fb/missileentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [MissileEntityData](/vext/ref/fb/missileentitydata). |
+
+### MissileEntityData {#constructor-9}
+> **MissileEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [MissileEntityData](/vext/ref/fb/missileentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [MissileEntityData](/vext/ref/fb/missileentitydata). |
+
+### MissileEntityData {#constructor-10}
+> **MissileEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MissileEntityData](/vext/ref/fb/missileentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MissileEntityData](/vext/ref/fb/missileentitydata). |
+
+## Properties
+### {{% prop-heading "gravity" %}}
+> **float**
+
+### {{% prop-heading "engineEffect" %}}
+> **[EffectBlueprint](/vext/ref/fb/effectblueprint)** | **nil**
+
+### {{% prop-heading "dudExplosion" %}}
+> **[ExplosionEntityData](/vext/ref/fb/explosionentitydata)** | **nil**
+
+### {{% prop-heading "flyBySound" %}}
+> **[SoundAsset](/vext/ref/fb/soundasset)** | **nil**
+
+### {{% prop-heading "engineStrength" %}}
+> **float**
+
+### {{% prop-heading "maxSpeed" %}}
+> **float**
+
+### {{% prop-heading "engineTimeToIgnition" %}}
+> **float**
+
+### {{% prop-heading "engineTimeToLive" %}}
+> **float**
+
+### {{% prop-heading "timeToActivateGuidingSystem" %}}
+> **float**
+
+### {{% prop-heading "timeToArm" %}}
+> **float**
+
+### {{% prop-heading "maxTurnAngle" %}}
+> **float**
+
+### {{% prop-heading "drag" %}}
+> **float**
+
+### {{% prop-heading "nearTargetDetonation" %}}
+> **[NearTargetDetonationData](/vext/ref/fb/neartargetdetonationdata)**
+
+### {{% prop-heading "defaultTeam" %}}
+> **[TeamId](/vext/ref/fb/teamid)**
+
+### {{% prop-heading "flyBySoundRadius" %}}
+> **float**
+
+### {{% prop-heading "flyBySoundSpeed" %}}
+> **float**
+
+### {{% prop-heading "impactImpulse" %}}
+> **float**
+
+### {{% prop-heading "damage" %}}
+> **float**
+
+### {{% prop-heading "unguidedData" %}}
+> **[MissileUnguidedData](/vext/ref/fb/missileunguideddata)**
+
+### {{% prop-heading "warnTarget" %}}
+> **[WarnTarget](/vext/ref/fb/warntarget)**
+
+### {{% prop-heading "lockableInfo" %}}
+> **[MissileLockableInfoData](/vext/ref/fb/missilelockableinfodata)**
+
+### {{% prop-heading "lockingController" %}}
+> **[LockingControllerData](/vext/ref/fb/lockingcontrollerdata)** | **nil**
+
+### {{% prop-heading "warnOnPointingMissile" %}}
+> **bool**
+
+### {{% prop-heading "applyGravityWhenGuided" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MissileEntityData](/vext/ref/fb/missileentitydata) type.
+

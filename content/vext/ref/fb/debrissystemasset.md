@@ -1,44 +1,76 @@
 ---
 title: DebrisSystemAsset
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[DebrisSystemAsset](#constructor-0)**() |
+| **[DebrisSystemAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[DebrisSystemAsset](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[DebrisSystemAsset](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "havokMeshes" >}} | [DebrisHavokInfo](/vext/ref/fb/debrishavokinfo)[] |
+| {{< prop "havokMeshCount" >}} | int |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "DebrisSystemAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### DebrisSystemAsset {#constructor-0}
+> **DebrisSystemAsset**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| DebrisSystemAsset()                                                          | Create a new instance of this container type.                                                                             |
-| DebrisSystemAsset(DebrisSystemAsset other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| DebrisSystemAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [DebrisSystemAsset](/vext/ref/fb/debrissystemasset/).                                      |
-| DebrisSystemAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DebrisSystemAsset](/vext/ref/fb/debrissystemasset/). |
+Creates a new [DebrisSystemAsset](/vext/ref/fb/debrissystemasset) frostbite instance.
 
-## Properties
+### DebrisSystemAsset {#constructor-1}
+> **DebrisSystemAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name           | Type                                   | Description |
-| -------------- | -------------------------------------- | ----------- |
-| havokMeshes    | [DebrisHavokInfo](/vext/ref/fb/debrishavokinfo/)\[\] |             |
-| havokMeshCount | number                                 |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [DebrisSystemAsset](/vext/ref/fb/debrissystemasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [DebrisSystemAsset](/vext/ref/fb/debrissystemasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [DebrisSystemAsset](/vext/ref/fb/debrissystemasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### DebrisSystemAsset {#constructor-2}
+> **DebrisSystemAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [DebrisSystemAsset](/vext/ref/fb/debrissystemasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [DebrisSystemAsset](/vext/ref/fb/debrissystemasset). |
+
+### DebrisSystemAsset {#constructor-3}
+> **DebrisSystemAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DebrisSystemAsset](/vext/ref/fb/debrissystemasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DebrisSystemAsset](/vext/ref/fb/debrissystemasset). |
+
+## Properties
+### {{% prop-heading "havokMeshes" %}}
+> **[DebrisHavokInfo](/vext/ref/fb/debrishavokinfo)**[]
+
+### {{% prop-heading "havokMeshCount" %}}
+> **int**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [DebrisSystemAsset](/vext/ref/fb/debrissystemasset) type.
+

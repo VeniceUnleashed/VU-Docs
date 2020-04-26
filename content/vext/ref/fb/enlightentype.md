@@ -1,14 +1,11 @@
 ---
 title: EnlightenType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **EnlightenType_Dynamic** | Value: **0** |
+| **EnlightenType_LightProbe** | Value: **1** |
+| **EnlightenType_Static** | Value: **2** |
 
-| Name                      | Value | Description |
-| ------------------------- | ----- | ----------- |
-| EnlightenType\_Dynamic    | 0     |             |
-| EnlightenType\_LightProbe | 1     |             |
-| EnlightenType\_Static     | 2     |             |

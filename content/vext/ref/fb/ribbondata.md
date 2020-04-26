@@ -1,47 +1,116 @@
 ---
 title: RibbonData
 ---
-### Base Classes
 
-[VisualVectorShapeData](/vext/ref/fb/visualvectorshapedata/)
+Inherits from 
+[VisualVectorShapeData](/vext/ref/fb/visualvectorshapedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[RibbonData](#constructor-0)**() |
+| **[RibbonData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[RibbonData](#constructor-2)**(other: [VisualVectorShapeData](/vext/ref/fb/visualvectorshapedata)) |
+| **[RibbonData](#constructor-3)**(other: [VectorShapeData](/vext/ref/fb/vectorshapedata)) |
+| **[RibbonData](#constructor-4)**(other: [BaseShapeData](/vext/ref/fb/baseshapedata)) |
+| **[RibbonData](#constructor-5)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[RibbonData](#constructor-6)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[RibbonData](#constructor-7)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "ribbonPoints" >}} | [RibbonPointData](/vext/ref/fb/ribbonpointdata)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "RibbonData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### RibbonData {#constructor-0}
+> **RibbonData**()
 
-| Constructor                                                           | Description                                                                                                 |
-| --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| RibbonData()                                                          | Create a new instance of this container type.                                                               |
-| RibbonData(RibbonData other)                                          | Create a reference copy of an instance of the same type.                                                    |
-| RibbonData([VisualVectorShapeData](/vext/ref/fb/visualvectorshapedata/) other)      | Upcast an instance of type [VisualVectorShapeData](/vext/ref/fb/visualvectorshapedata/) to [RibbonData](/vext/ref/fb/ribbondata/).      |
-| RibbonData([VectorShapeData](/vext/ref/fb/vectorshapedata/) other)                  | Upcast an instance of type [VectorShapeData](/vext/ref/fb/vectorshapedata/) to [RibbonData](/vext/ref/fb/ribbondata/).                  |
-| RibbonData([BaseShapeData](/vext/ref/fb/baseshapedata/) other)                      | Upcast an instance of type [BaseShapeData](/vext/ref/fb/baseshapedata/) to [RibbonData](/vext/ref/fb/ribbondata/).                      |
-| RibbonData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [RibbonData](/vext/ref/fb/ribbondata/).                    |
-| RibbonData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [RibbonData](/vext/ref/fb/ribbondata/).              |
-| RibbonData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RibbonData](/vext/ref/fb/ribbondata/). |
+Creates a new [RibbonData](/vext/ref/fb/ribbondata) frostbite instance.
 
-## Properties
+### RibbonData {#constructor-1}
+> **RibbonData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name         | Type                                   | Description |
-| ------------ | -------------------------------------- | ----------- |
-| ribbonPoints | [RibbonPointData](/vext/ref/fb/ribbonpointdata/)\[\] |             |
-
-## Methods
-
-| Type                     | Name            | Parameters                                     |
-| ------------------------ | --------------- | ---------------------------------------------- |
-| [RibbonData](/vext/ref/fb/ribbondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [RibbonData](/vext/ref/fb/ribbondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [RibbonData](/vext/ref/fb/ribbondata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### RibbonData {#constructor-2}
+> **RibbonData**(other: [VisualVectorShapeData](/vext/ref/fb/visualvectorshapedata))
+
+Casts an instance of type [VisualVectorShapeData](/vext/ref/fb/visualvectorshapedata) to [RibbonData](/vext/ref/fb/ribbondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [VisualVectorShapeData](/vext/ref/fb/visualvectorshapedata) | The instance to cast to [RibbonData](/vext/ref/fb/ribbondata). |
+
+### RibbonData {#constructor-3}
+> **RibbonData**(other: [VectorShapeData](/vext/ref/fb/vectorshapedata))
+
+Casts an instance of type [VectorShapeData](/vext/ref/fb/vectorshapedata) to [RibbonData](/vext/ref/fb/ribbondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [VectorShapeData](/vext/ref/fb/vectorshapedata) | The instance to cast to [RibbonData](/vext/ref/fb/ribbondata). |
+
+### RibbonData {#constructor-4}
+> **RibbonData**(other: [BaseShapeData](/vext/ref/fb/baseshapedata))
+
+Casts an instance of type [BaseShapeData](/vext/ref/fb/baseshapedata) to [RibbonData](/vext/ref/fb/ribbondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [BaseShapeData](/vext/ref/fb/baseshapedata) | The instance to cast to [RibbonData](/vext/ref/fb/ribbondata). |
+
+### RibbonData {#constructor-5}
+> **RibbonData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [RibbonData](/vext/ref/fb/ribbondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [RibbonData](/vext/ref/fb/ribbondata). |
+
+### RibbonData {#constructor-6}
+> **RibbonData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [RibbonData](/vext/ref/fb/ribbondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [RibbonData](/vext/ref/fb/ribbondata). |
+
+### RibbonData {#constructor-7}
+> **RibbonData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RibbonData](/vext/ref/fb/ribbondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [RibbonData](/vext/ref/fb/ribbondata). |
+
+## Properties
+### {{% prop-heading "ribbonPoints" %}}
+> **[RibbonPointData](/vext/ref/fb/ribbonpointdata)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [RibbonData](/vext/ref/fb/ribbondata) type.
+

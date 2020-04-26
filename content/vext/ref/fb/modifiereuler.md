@@ -1,15 +1,12 @@
 ---
 title: ModifierEuler
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **Roll** | Value: **0** |
+| **Pitch** | Value: **1** |
+| **Yaw** | Value: **2** |
+| **Trans** | Value: **3** |
 
-| Name  | Value | Description |
-| ----- | ----- | ----------- |
-| Roll  | 0     |             |
-| Pitch | 1     |             |
-| Yaw   | 2     |             |
-| Trans | 3     |             |

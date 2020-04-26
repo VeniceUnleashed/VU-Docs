@@ -1,17 +1,14 @@
 ---
 title: PoseTransition
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **PTStandToProne** | Value: **0** |
+| **PTStandToCrouch** | Value: **1** |
+| **PTCrouchToStand** | Value: **2** |
+| **PTCrouchToProne** | Value: **3** |
+| **PTProneToStand** | Value: **4** |
+| **PTProneToCrouch** | Value: **5** |
 
-| Name            | Value | Description |
-| --------------- | ----- | ----------- |
-| PTStandToProne  | 0     |             |
-| PTStandToCrouch | 1     |             |
-| PTCrouchToStand | 2     |             |
-| PTCrouchToProne | 3     |             |
-| PTProneToStand  | 4     |             |
-| PTProneToCrouch | 5     |             |

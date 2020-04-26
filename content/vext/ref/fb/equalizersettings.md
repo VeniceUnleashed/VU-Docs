@@ -1,46 +1,77 @@
 ---
 title: EqualizerSettings
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[EqualizerSettings](#constructor-0)**() |
+| **[EqualizerSettings](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[EqualizerSettings](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "lowShelfFrequency" >}} | float |
+| {{< prop "lowShelfGain" >}} | float |
+| {{< prop "highShelfFrequency" >}} | float |
+| {{< prop "highShelfGain" >}} | float |
+| {{< prop "hpCutoffFrequency" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "EqualizerSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### EqualizerSettings {#constructor-0}
+> **EqualizerSettings**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| EqualizerSettings()                                                          | Create a new instance of this container type.                                                                             |
-| EqualizerSettings(EqualizerSettings other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| EqualizerSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EqualizerSettings](/vext/ref/fb/equalizersettings/). |
+Creates a new [EqualizerSettings](/vext/ref/fb/equalizersettings) frostbite instance.
 
-## Properties
+### EqualizerSettings {#constructor-1}
+> **EqualizerSettings**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name               | Type   | Description |
-| ------------------ | ------ | ----------- |
-| lowShelfFrequency  | number |             |
-| lowShelfGain       | number |             |
-| highShelfFrequency | number |             |
-| highShelfGain      | number |             |
-| hpCutoffFrequency  | number |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [EqualizerSettings](/vext/ref/fb/equalizersettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [EqualizerSettings](/vext/ref/fb/equalizersettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [EqualizerSettings](/vext/ref/fb/equalizersettings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### EqualizerSettings {#constructor-2}
+> **EqualizerSettings**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EqualizerSettings](/vext/ref/fb/equalizersettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [EqualizerSettings](/vext/ref/fb/equalizersettings). |
+
+## Properties
+### {{% prop-heading "lowShelfFrequency" %}}
+> **float**
+
+### {{% prop-heading "lowShelfGain" %}}
+> **float**
+
+### {{% prop-heading "highShelfFrequency" %}}
+> **float**
+
+### {{% prop-heading "highShelfGain" %}}
+> **float**
+
+### {{% prop-heading "hpCutoffFrequency" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [EqualizerSettings](/vext/ref/fb/equalizersettings) type.
+

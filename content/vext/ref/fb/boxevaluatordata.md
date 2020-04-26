@@ -1,45 +1,87 @@
 ---
 title: BoxEvaluatorData
 ---
-### Base Classes
 
-[EvaluatorData](/vext/ref/fb/evaluatordata/)
+Inherits from 
+[EvaluatorData](/vext/ref/fb/evaluatordata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[BoxEvaluatorData](#constructor-0)**() |
+| **[BoxEvaluatorData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[BoxEvaluatorData](#constructor-2)**(other: [EvaluatorData](/vext/ref/fb/evaluatordata)) |
+| **[BoxEvaluatorData](#constructor-3)**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata)) |
+| **[BoxEvaluatorData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "dimensions" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "pivot" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "BoxEvaluatorData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### BoxEvaluatorData {#constructor-0}
+> **BoxEvaluatorData**()
 
-| Constructor                                                                 | Description                                                                                                             |
-| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| BoxEvaluatorData()                                                          | Create a new instance of this container type.                                                                           |
-| BoxEvaluatorData(BoxEvaluatorData other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| BoxEvaluatorData([EvaluatorData](/vext/ref/fb/evaluatordata/) other)                      | Upcast an instance of type [EvaluatorData](/vext/ref/fb/evaluatordata/) to [BoxEvaluatorData](/vext/ref/fb/boxevaluatordata/).                      |
-| BoxEvaluatorData([EmitterComponentData](/vext/ref/fb/emittercomponentdata/) other)        | Upcast an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata/) to [BoxEvaluatorData](/vext/ref/fb/boxevaluatordata/).        |
-| BoxEvaluatorData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BoxEvaluatorData](/vext/ref/fb/boxevaluatordata/). |
+Creates a new [BoxEvaluatorData](/vext/ref/fb/boxevaluatordata) frostbite instance.
 
-## Properties
+### BoxEvaluatorData {#constructor-1}
+> **BoxEvaluatorData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name       | Type                              | Description |
-| ---------- | --------------------------------- | ----------- |
-| dimensions | [Vec3](/vext/ref/shared/class/vec3) |             |
-| pivot      | [Vec3](/vext/ref/shared/class/vec3) |             |
-
-## Methods
-
-| Type                                 | Name            | Parameters                                     |
-| ------------------------------------ | --------------- | ---------------------------------------------- |
-| [BoxEvaluatorData](/vext/ref/fb/boxevaluatordata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [BoxEvaluatorData](/vext/ref/fb/boxevaluatordata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [BoxEvaluatorData](/vext/ref/fb/boxevaluatordata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### BoxEvaluatorData {#constructor-2}
+> **BoxEvaluatorData**(other: [EvaluatorData](/vext/ref/fb/evaluatordata))
+
+Casts an instance of type [EvaluatorData](/vext/ref/fb/evaluatordata) to [BoxEvaluatorData](/vext/ref/fb/boxevaluatordata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EvaluatorData](/vext/ref/fb/evaluatordata) | The instance to cast to [BoxEvaluatorData](/vext/ref/fb/boxevaluatordata). |
+
+### BoxEvaluatorData {#constructor-3}
+> **BoxEvaluatorData**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata))
+
+Casts an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata) to [BoxEvaluatorData](/vext/ref/fb/boxevaluatordata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EmitterComponentData](/vext/ref/fb/emittercomponentdata) | The instance to cast to [BoxEvaluatorData](/vext/ref/fb/boxevaluatordata). |
+
+### BoxEvaluatorData {#constructor-4}
+> **BoxEvaluatorData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BoxEvaluatorData](/vext/ref/fb/boxevaluatordata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [BoxEvaluatorData](/vext/ref/fb/boxevaluatordata). |
+
+## Properties
+### {{% prop-heading "dimensions" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "pivot" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [BoxEvaluatorData](/vext/ref/fb/boxevaluatordata) type.
+

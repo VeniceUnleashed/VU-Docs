@@ -1,47 +1,102 @@
 ---
 title: PlayerFilterEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PlayerFilterEntityData](#constructor-0)**() |
+| **[PlayerFilterEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PlayerFilterEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[PlayerFilterEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[PlayerFilterEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[PlayerFilterEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
+| {{< prop "invertFilter" >}} | bool |
+| {{< prop "forwardToSpectators" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PlayerFilterEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PlayerFilterEntityData {#constructor-0}
+> **PlayerFilterEntityData**()
 
-| Constructor                                                                       | Description                                                                                                                         |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| PlayerFilterEntityData()                                                          | Create a new instance of this container type.                                                                                       |
-| PlayerFilterEntityData(PlayerFilterEntityData other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| PlayerFilterEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [PlayerFilterEntityData](/vext/ref/fb/playerfilterentitydata/).                            |
-| PlayerFilterEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [PlayerFilterEntityData](/vext/ref/fb/playerfilterentitydata/).                    |
-| PlayerFilterEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [PlayerFilterEntityData](/vext/ref/fb/playerfilterentitydata/).              |
-| PlayerFilterEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PlayerFilterEntityData](/vext/ref/fb/playerfilterentitydata/). |
+Creates a new [PlayerFilterEntityData](/vext/ref/fb/playerfilterentitydata) frostbite instance.
 
-## Properties
+### PlayerFilterEntityData {#constructor-1}
+> **PlayerFilterEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                | Type           | Description |
-| ------------------- | -------------- | ----------- |
-| realm               | [Realm](/vext/ref/fb/realm/) |             |
-| invertFilter        | bool           |             |
-| forwardToSpectators | bool           |             |
-
-## Methods
-
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [PlayerFilterEntityData](/vext/ref/fb/playerfilterentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PlayerFilterEntityData](/vext/ref/fb/playerfilterentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PlayerFilterEntityData](/vext/ref/fb/playerfilterentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PlayerFilterEntityData {#constructor-2}
+> **PlayerFilterEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [PlayerFilterEntityData](/vext/ref/fb/playerfilterentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [PlayerFilterEntityData](/vext/ref/fb/playerfilterentitydata). |
+
+### PlayerFilterEntityData {#constructor-3}
+> **PlayerFilterEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [PlayerFilterEntityData](/vext/ref/fb/playerfilterentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [PlayerFilterEntityData](/vext/ref/fb/playerfilterentitydata). |
+
+### PlayerFilterEntityData {#constructor-4}
+> **PlayerFilterEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [PlayerFilterEntityData](/vext/ref/fb/playerfilterentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [PlayerFilterEntityData](/vext/ref/fb/playerfilterentitydata). |
+
+### PlayerFilterEntityData {#constructor-5}
+> **PlayerFilterEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PlayerFilterEntityData](/vext/ref/fb/playerfilterentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PlayerFilterEntityData](/vext/ref/fb/playerfilterentitydata). |
+
+## Properties
+### {{% prop-heading "realm" %}}
+> **[Realm](/vext/ref/fb/realm)**
+
+### {{% prop-heading "invertFilter" %}}
+> **bool**
+
+### {{% prop-heading "forwardToSpectators" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PlayerFilterEntityData](/vext/ref/fb/playerfilterentitydata) type.
+

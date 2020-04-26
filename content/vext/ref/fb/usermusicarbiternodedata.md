@@ -1,45 +1,80 @@
 ---
 title: UserMusicArbiterNodeData
 ---
-### Base Classes
 
-[AudioGraphNodeData](/vext/ref/fb/audiographnodedata/)
+Inherits from 
+[AudioGraphNodeData](/vext/ref/fb/audiographnodedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UserMusicArbiterNodeData](#constructor-0)**() |
+| **[UserMusicArbiterNodeData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UserMusicArbiterNodeData](#constructor-2)**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata)) |
+| **[UserMusicArbiterNodeData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "inValue" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "out" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "plugin" >}} | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UserMusicArbiterNodeData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UserMusicArbiterNodeData {#constructor-0}
+> **UserMusicArbiterNodeData**()
 
-| Constructor                                                                         | Description                                                                                                                             |
-| ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| UserMusicArbiterNodeData()                                                          | Create a new instance of this container type.                                                                                           |
-| UserMusicArbiterNodeData(UserMusicArbiterNodeData other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| UserMusicArbiterNodeData([AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) other)            | Upcast an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) to [UserMusicArbiterNodeData](/vext/ref/fb/usermusicarbiternodedata/).            |
-| UserMusicArbiterNodeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UserMusicArbiterNodeData](/vext/ref/fb/usermusicarbiternodedata/). |
+Creates a new [UserMusicArbiterNodeData](/vext/ref/fb/usermusicarbiternodedata) frostbite instance.
 
-## Properties
+### UserMusicArbiterNodeData {#constructor-1}
+> **UserMusicArbiterNodeData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name    | Type                                       | Description |
-| ------- | ------------------------------------------ | ----------- |
-| inValue | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/)   |             |
-| out     | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/)   |             |
-| plugin  | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref/) |             |
-
-## Methods
-
-| Type                                                 | Name            | Parameters                                     |
-| ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [UserMusicArbiterNodeData](/vext/ref/fb/usermusicarbiternodedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UserMusicArbiterNodeData](/vext/ref/fb/usermusicarbiternodedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UserMusicArbiterNodeData](/vext/ref/fb/usermusicarbiternodedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UserMusicArbiterNodeData {#constructor-2}
+> **UserMusicArbiterNodeData**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata))
+
+Casts an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) to [UserMusicArbiterNodeData](/vext/ref/fb/usermusicarbiternodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) | The instance to cast to [UserMusicArbiterNodeData](/vext/ref/fb/usermusicarbiternodedata). |
+
+### UserMusicArbiterNodeData {#constructor-3}
+> **UserMusicArbiterNodeData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UserMusicArbiterNodeData](/vext/ref/fb/usermusicarbiternodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UserMusicArbiterNodeData](/vext/ref/fb/usermusicarbiternodedata). |
+
+## Properties
+### {{% prop-heading "inValue" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "out" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "plugin" %}}
+> **[SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UserMusicArbiterNodeData](/vext/ref/fb/usermusicarbiternodedata) type.
+

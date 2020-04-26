@@ -1,37 +1,63 @@
 ---
 title: CameraModeAsset
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[CameraModeAsset](#constructor-0)**() |
+| **[CameraModeAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[CameraModeAsset](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[CameraModeAsset](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "CameraModeAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### CameraModeAsset {#constructor-0}
+> **CameraModeAsset**()
 
-| Constructor                                                                | Description                                                                                                           |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| CameraModeAsset()                                                          | Create a new instance of this container type.                                                                         |
-| CameraModeAsset(CameraModeAsset other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| CameraModeAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [CameraModeAsset](/vext/ref/fb/cameramodeasset/).                                      |
-| CameraModeAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CameraModeAsset](/vext/ref/fb/cameramodeasset/). |
+Creates a new [CameraModeAsset](/vext/ref/fb/cameramodeasset) frostbite instance.
 
-## Methods
+### CameraModeAsset {#constructor-1}
+> **CameraModeAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                               | Name            | Parameters                                     |
-| ---------------------------------- | --------------- | ---------------------------------------------- |
-| [CameraModeAsset](/vext/ref/fb/cameramodeasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [CameraModeAsset](/vext/ref/fb/cameramodeasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [CameraModeAsset](/vext/ref/fb/cameramodeasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### CameraModeAsset {#constructor-2}
+> **CameraModeAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [CameraModeAsset](/vext/ref/fb/cameramodeasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [CameraModeAsset](/vext/ref/fb/cameramodeasset). |
+
+### CameraModeAsset {#constructor-3}
+> **CameraModeAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CameraModeAsset](/vext/ref/fb/cameramodeasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [CameraModeAsset](/vext/ref/fb/cameramodeasset). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [CameraModeAsset](/vext/ref/fb/cameramodeasset) type.
+

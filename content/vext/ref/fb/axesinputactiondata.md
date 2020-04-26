@@ -1,44 +1,76 @@
 ---
 title: AxesInputActionData
 ---
-### Base Classes
 
-[InputActionData](/vext/ref/fb/inputactiondata/)
+Inherits from 
+[InputActionData](/vext/ref/fb/inputactiondata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AxesInputActionData](#constructor-0)**() |
+| **[AxesInputActionData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[AxesInputActionData](#constructor-2)**(other: [InputActionData](/vext/ref/fb/inputactiondata)) |
+| **[AxesInputActionData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "axis" >}} | [InputDeviceAxes](/vext/ref/fb/inputdeviceaxes) |
+| {{< prop "normalizeInput" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AxesInputActionData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AxesInputActionData {#constructor-0}
+> **AxesInputActionData**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| AxesInputActionData()                                                          | Create a new instance of this container type.                                                                                 |
-| AxesInputActionData(AxesInputActionData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| AxesInputActionData([InputActionData](/vext/ref/fb/inputactiondata/) other)                  | Upcast an instance of type [InputActionData](/vext/ref/fb/inputactiondata/) to [AxesInputActionData](/vext/ref/fb/axesinputactiondata/).                  |
-| AxesInputActionData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AxesInputActionData](/vext/ref/fb/axesinputactiondata/). |
+Creates a new [AxesInputActionData](/vext/ref/fb/axesinputactiondata) frostbite instance.
 
-## Properties
+### AxesInputActionData {#constructor-1}
+> **AxesInputActionData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name           | Type                               | Description |
-| -------------- | ---------------------------------- | ----------- |
-| axis           | [InputDeviceAxes](/vext/ref/fb/inputdeviceaxes/) |             |
-| normalizeInput | bool                               |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [AxesInputActionData](/vext/ref/fb/axesinputactiondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [AxesInputActionData](/vext/ref/fb/axesinputactiondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [AxesInputActionData](/vext/ref/fb/axesinputactiondata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### AxesInputActionData {#constructor-2}
+> **AxesInputActionData**(other: [InputActionData](/vext/ref/fb/inputactiondata))
+
+Casts an instance of type [InputActionData](/vext/ref/fb/inputactiondata) to [AxesInputActionData](/vext/ref/fb/axesinputactiondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [InputActionData](/vext/ref/fb/inputactiondata) | The instance to cast to [AxesInputActionData](/vext/ref/fb/axesinputactiondata). |
+
+### AxesInputActionData {#constructor-3}
+> **AxesInputActionData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AxesInputActionData](/vext/ref/fb/axesinputactiondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [AxesInputActionData](/vext/ref/fb/axesinputactiondata). |
+
+## Properties
+### {{% prop-heading "axis" %}}
+> **[InputDeviceAxes](/vext/ref/fb/inputdeviceaxes)**
+
+### {{% prop-heading "normalizeInput" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AxesInputActionData](/vext/ref/fb/axesinputactiondata) type.
+

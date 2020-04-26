@@ -1,14 +1,11 @@
 ---
 title: UndergrowthRotationMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **UndergrowthRotationMode_Random** | Value: **0** |
+| **UndergrowthRotationMode_TowardsSlope** | Value: **1** |
+| **UndergrowthRotationMode_Fixed** | Value: **2** |
 
-| Name                                  | Value | Description |
-| ------------------------------------- | ----- | ----------- |
-| UndergrowthRotationMode\_Random       | 0     |             |
-| UndergrowthRotationMode\_TowardsSlope | 1     |             |
-| UndergrowthRotationMode\_Fixed        | 2     |             |

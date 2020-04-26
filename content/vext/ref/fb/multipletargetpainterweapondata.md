@@ -1,50 +1,107 @@
 ---
 title: MultipleTargetPainterWeaponData
 ---
-### Base Classes
 
-[WeaponData](/vext/ref/fb/weapondata/)
+Inherits from 
+[WeaponData](/vext/ref/fb/weapondata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MultipleTargetPainterWeaponData](#constructor-0)**() |
+| **[MultipleTargetPainterWeaponData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MultipleTargetPainterWeaponData](#constructor-2)**(other: [WeaponData](/vext/ref/fb/weapondata)) |
+| **[MultipleTargetPainterWeaponData](#constructor-3)**(other: [ToolData](/vext/ref/fb/tooldata)) |
+| **[MultipleTargetPainterWeaponData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "spottingBehavior" >}} | [SpottingType](/vext/ref/fb/spottingtype) |
+| {{< prop "timeObjectIsPainted" >}} | float |
+| {{< prop "angle" >}} | float |
+| {{< prop "timeObjectIsSpotted" >}} | float |
+| {{< prop "range" >}} | float |
+| {{< prop "useSpotting" >}} | bool |
+| {{< prop "useLaserPainting" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MultipleTargetPainterWeaponData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MultipleTargetPainterWeaponData {#constructor-0}
+> **MultipleTargetPainterWeaponData**()
 
-| Constructor                                                                                | Description                                                                                                                                           |
-| ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| MultipleTargetPainterWeaponData()                                                          | Create a new instance of this container type.                                                                                                         |
-| MultipleTargetPainterWeaponData(MultipleTargetPainterWeaponData other)                     | Create a reference copy of an instance of the same type.                                                                                              |
-| MultipleTargetPainterWeaponData([WeaponData](/vext/ref/fb/weapondata/) other)                            | Upcast an instance of type [WeaponData](/vext/ref/fb/weapondata/) to [MultipleTargetPainterWeaponData](/vext/ref/fb/multipletargetpainterweapondata/).                            |
-| MultipleTargetPainterWeaponData([ToolData](/vext/ref/fb/tooldata/) other)                                | Upcast an instance of type [ToolData](/vext/ref/fb/tooldata/) to [MultipleTargetPainterWeaponData](/vext/ref/fb/multipletargetpainterweapondata/).                                |
-| MultipleTargetPainterWeaponData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MultipleTargetPainterWeaponData](/vext/ref/fb/multipletargetpainterweapondata/). |
+Creates a new [MultipleTargetPainterWeaponData](/vext/ref/fb/multipletargetpainterweapondata) frostbite instance.
 
-## Properties
+### MultipleTargetPainterWeaponData {#constructor-1}
+> **MultipleTargetPainterWeaponData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                | Type                         | Description |
-| ------------------- | ---------------------------- | ----------- |
-| spottingBehavior    | [SpottingType](/vext/ref/fb/spottingtype/) |             |
-| timeObjectIsPainted | number                       |             |
-| angle               | number                       |             |
-| timeObjectIsSpotted | number                       |             |
-| range               | number                       |             |
-| useSpotting         | bool                         |             |
-| useLaserPainting    | bool                         |             |
-
-## Methods
-
-| Type                                                               | Name            | Parameters                                     |
-| ------------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [MultipleTargetPainterWeaponData](/vext/ref/fb/multipletargetpainterweapondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MultipleTargetPainterWeaponData](/vext/ref/fb/multipletargetpainterweapondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MultipleTargetPainterWeaponData](/vext/ref/fb/multipletargetpainterweapondata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MultipleTargetPainterWeaponData {#constructor-2}
+> **MultipleTargetPainterWeaponData**(other: [WeaponData](/vext/ref/fb/weapondata))
+
+Casts an instance of type [WeaponData](/vext/ref/fb/weapondata) to [MultipleTargetPainterWeaponData](/vext/ref/fb/multipletargetpainterweapondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [WeaponData](/vext/ref/fb/weapondata) | The instance to cast to [MultipleTargetPainterWeaponData](/vext/ref/fb/multipletargetpainterweapondata). |
+
+### MultipleTargetPainterWeaponData {#constructor-3}
+> **MultipleTargetPainterWeaponData**(other: [ToolData](/vext/ref/fb/tooldata))
+
+Casts an instance of type [ToolData](/vext/ref/fb/tooldata) to [MultipleTargetPainterWeaponData](/vext/ref/fb/multipletargetpainterweapondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ToolData](/vext/ref/fb/tooldata) | The instance to cast to [MultipleTargetPainterWeaponData](/vext/ref/fb/multipletargetpainterweapondata). |
+
+### MultipleTargetPainterWeaponData {#constructor-4}
+> **MultipleTargetPainterWeaponData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MultipleTargetPainterWeaponData](/vext/ref/fb/multipletargetpainterweapondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MultipleTargetPainterWeaponData](/vext/ref/fb/multipletargetpainterweapondata). |
+
+## Properties
+### {{% prop-heading "spottingBehavior" %}}
+> **[SpottingType](/vext/ref/fb/spottingtype)**
+
+### {{% prop-heading "timeObjectIsPainted" %}}
+> **float**
+
+### {{% prop-heading "angle" %}}
+> **float**
+
+### {{% prop-heading "timeObjectIsSpotted" %}}
+> **float**
+
+### {{% prop-heading "range" %}}
+> **float**
+
+### {{% prop-heading "useSpotting" %}}
+> **bool**
+
+### {{% prop-heading "useLaserPainting" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MultipleTargetPainterWeaponData](/vext/ref/fb/multipletargetpainterweapondata) type.
+

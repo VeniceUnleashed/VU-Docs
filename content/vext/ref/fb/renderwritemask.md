@@ -1,18 +1,15 @@
 ---
 title: RenderWriteMask
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **RenderWriteMask_None** | Value: **0** |
+| **RenderWriteMask_Red** | Value: **1** |
+| **RenderWriteMask_Green** | Value: **2** |
+| **RenderWriteMask_Blue** | Value: **4** |
+| **RenderWriteMask_Color** | Value: **7** |
+| **RenderWriteMask_Alpha** | Value: **8** |
+| **RenderWriteMask_All** | Value: **15** |
 
-| Name                   | Value | Description |
-| ---------------------- | ----- | ----------- |
-| RenderWriteMask\_None  | 0     |             |
-| RenderWriteMask\_Red   | 1     |             |
-| RenderWriteMask\_Green | 2     |             |
-| RenderWriteMask\_Blue  | 4     |             |
-| RenderWriteMask\_Color | 7     |             |
-| RenderWriteMask\_Alpha | 8     |             |
-| RenderWriteMask\_All   | 15    |             |

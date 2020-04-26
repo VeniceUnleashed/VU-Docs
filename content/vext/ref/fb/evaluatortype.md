@@ -1,24 +1,21 @@
 ---
 title: EvaluatorType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **EtDefault** | Value: **0** |
+| **EtBox** | Value: **1** |
+| **EtPolynomial** | Value: **2** |
+| **EtPolynomialOperator** | Value: **3** |
+| **EtRandom** | Value: **4** |
+| **EtRandomXYZ** | Value: **5** |
+| **EtRotateVector** | Value: **6** |
+| **EtSampleTexture** | Value: **7** |
+| **EtSphere** | Value: **8** |
+| **EtConstant** | Value: **9** |
+| **EtPolynomialColorInterp** | Value: **10** |
+| **EtCamProx** | Value: **11** |
+| **EvaluatorTypeCount** | Value: **12** |
 
-| Name                    | Value | Description |
-| ----------------------- | ----- | ----------- |
-| EtDefault               | 0     |             |
-| EtBox                   | 1     |             |
-| EtPolynomial            | 2     |             |
-| EtPolynomialOperator    | 3     |             |
-| EtRandom                | 4     |             |
-| EtRandomXYZ             | 5     |             |
-| EtRotateVector          | 6     |             |
-| EtSampleTexture         | 7     |             |
-| EtSphere                | 8     |             |
-| EtConstant              | 9     |             |
-| EtPolynomialColorInterp | 10    |             |
-| EtCamProx               | 11    |             |
-| EvaluatorTypeCount      | 12    |             |

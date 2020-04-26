@@ -1,59 +1,136 @@
 ---
 title: OutputNodeData
 ---
-### Base Classes
 
-[AudioGraphNodeData](/vext/ref/fb/audiographnodedata/)
+Inherits from 
+[AudioGraphNodeData](/vext/ref/fb/audiographnodedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[OutputNodeData](#constructor-0)**() |
+| **[OutputNodeData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[OutputNodeData](#constructor-2)**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata)) |
+| **[OutputNodeData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "inValue" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "bypassHeadroom" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "minDistance" >}} | float |
+| {{< prop "attenuationCurve" >}} | [AudioCurve](/vext/ref/fb/audiocurve) |
+| {{< prop "gain" >}} | float |
+| {{< prop "hfDampingDistance" >}} | float |
+| {{< prop "hfDampingObstruction" >}} | float |
+| {{< prop "hfDampingOcclusion" >}} | float |
+| {{< prop "mainSendPlugin" >}} | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref) |
+| {{< prop "mainSend" >}} | [SoundBusData](/vext/ref/fb/soundbusdata) \| nil |
+| {{< prop "outputName" >}} | string |
+| {{< prop "transformSource" >}} | [OutputTransformSource](/vext/ref/fb/outputtransformsource) |
+| {{< prop "outputNameHash" >}} | int |
+| {{< prop "lowPassPlugin" >}} | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref) |
+| {{< prop "vuPlugin" >}} | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref) |
+| {{< prop "solo" >}} | bool |
+| {{< prop "enableHdr" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "OutputNodeData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### OutputNodeData {#constructor-0}
+> **OutputNodeData**()
 
-| Constructor                                                               | Description                                                                                                         |
-| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| OutputNodeData()                                                          | Create a new instance of this container type.                                                                       |
-| OutputNodeData(OutputNodeData other)                                      | Create a reference copy of an instance of the same type.                                                            |
-| OutputNodeData([AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) other)            | Upcast an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) to [OutputNodeData](/vext/ref/fb/outputnodedata/).            |
-| OutputNodeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [OutputNodeData](/vext/ref/fb/outputnodedata/). |
+Creates a new [OutputNodeData](/vext/ref/fb/outputnodedata) frostbite instance.
 
-## Properties
+### OutputNodeData {#constructor-1}
+> **OutputNodeData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                 | Type                                           | Description |
-| -------------------- | ---------------------------------------------- | ----------- |
-| inValue              | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/)       |             |
-| bypassHeadroom       | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/)       |             |
-| minDistance          | number                                         |             |
-| attenuationCurve     | [AudioCurve](/vext/ref/fb/audiocurve/)                       |             |
-| gain                 | number                                         |             |
-| hfDampingDistance    | number                                         |             |
-| hfDampingObstruction | number                                         |             |
-| hfDampingOcclusion   | number                                         |             |
-| mainSendPlugin       | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref/)     |             |
-| mainSend             | [SoundBusData](/vext/ref/fb/soundbusdata/)                   |             |
-| outputName           | string                                         |             |
-| transformSource      | [OutputTransformSource](/vext/ref/fb/outputtransformsource/) |             |
-| outputNameHash       | number                                         |             |
-| lowPassPlugin        | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref/)     |             |
-| vuPlugin             | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref/)     |             |
-| solo                 | bool                                           |             |
-| enableHdr            | bool                                           |             |
-
-## Methods
-
-| Type                             | Name            | Parameters                                     |
-| -------------------------------- | --------------- | ---------------------------------------------- |
-| [OutputNodeData](/vext/ref/fb/outputnodedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [OutputNodeData](/vext/ref/fb/outputnodedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [OutputNodeData](/vext/ref/fb/outputnodedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### OutputNodeData {#constructor-2}
+> **OutputNodeData**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata))
+
+Casts an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) to [OutputNodeData](/vext/ref/fb/outputnodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) | The instance to cast to [OutputNodeData](/vext/ref/fb/outputnodedata). |
+
+### OutputNodeData {#constructor-3}
+> **OutputNodeData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [OutputNodeData](/vext/ref/fb/outputnodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [OutputNodeData](/vext/ref/fb/outputnodedata). |
+
+## Properties
+### {{% prop-heading "inValue" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "bypassHeadroom" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "minDistance" %}}
+> **float**
+
+### {{% prop-heading "attenuationCurve" %}}
+> **[AudioCurve](/vext/ref/fb/audiocurve)**
+
+### {{% prop-heading "gain" %}}
+> **float**
+
+### {{% prop-heading "hfDampingDistance" %}}
+> **float**
+
+### {{% prop-heading "hfDampingObstruction" %}}
+> **float**
+
+### {{% prop-heading "hfDampingOcclusion" %}}
+> **float**
+
+### {{% prop-heading "mainSendPlugin" %}}
+> **[SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref)**
+
+### {{% prop-heading "mainSend" %}}
+> **[SoundBusData](/vext/ref/fb/soundbusdata)** | **nil**
+
+### {{% prop-heading "outputName" %}}
+> **string**
+
+### {{% prop-heading "transformSource" %}}
+> **[OutputTransformSource](/vext/ref/fb/outputtransformsource)**
+
+### {{% prop-heading "outputNameHash" %}}
+> **int**
+
+### {{% prop-heading "lowPassPlugin" %}}
+> **[SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref)**
+
+### {{% prop-heading "vuPlugin" %}}
+> **[SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref)**
+
+### {{% prop-heading "solo" %}}
+> **bool**
+
+### {{% prop-heading "enableHdr" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [OutputNodeData](/vext/ref/fb/outputnodedata) type.
+

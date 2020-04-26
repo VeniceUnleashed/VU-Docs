@@ -1,13 +1,10 @@
 ---
 title: PersonViewMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **PersonViewMode_FirstPerson** | Value: **0** |
+| **PersonViewMode_ThirdPerson** | Value: **1** |
 
-| Name                        | Value | Description |
-| --------------------------- | ----- | ----------- |
-| PersonViewMode\_FirstPerson | 0     |             |
-| PersonViewMode\_ThirdPerson | 1     |             |

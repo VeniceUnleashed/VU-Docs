@@ -1,37 +1,63 @@
 ---
 title: AudioMaterialDefinitions
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AudioMaterialDefinitions](#constructor-0)**() |
+| **[AudioMaterialDefinitions](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[AudioMaterialDefinitions](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[AudioMaterialDefinitions](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AudioMaterialDefinitions" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AudioMaterialDefinitions {#constructor-0}
+> **AudioMaterialDefinitions**()
 
-| Constructor                                                                         | Description                                                                                                                             |
-| ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| AudioMaterialDefinitions()                                                          | Create a new instance of this container type.                                                                                           |
-| AudioMaterialDefinitions(AudioMaterialDefinitions other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| AudioMaterialDefinitions([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [AudioMaterialDefinitions](/vext/ref/fb/audiomaterialdefinitions/).                                      |
-| AudioMaterialDefinitions([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AudioMaterialDefinitions](/vext/ref/fb/audiomaterialdefinitions/). |
+Creates a new [AudioMaterialDefinitions](/vext/ref/fb/audiomaterialdefinitions) frostbite instance.
 
-## Methods
+### AudioMaterialDefinitions {#constructor-1}
+> **AudioMaterialDefinitions**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                                 | Name            | Parameters                                     |
-| ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [AudioMaterialDefinitions](/vext/ref/fb/audiomaterialdefinitions/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [AudioMaterialDefinitions](/vext/ref/fb/audiomaterialdefinitions/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [AudioMaterialDefinitions](/vext/ref/fb/audiomaterialdefinitions) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### AudioMaterialDefinitions {#constructor-2}
+> **AudioMaterialDefinitions**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [AudioMaterialDefinitions](/vext/ref/fb/audiomaterialdefinitions). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [AudioMaterialDefinitions](/vext/ref/fb/audiomaterialdefinitions). |
+
+### AudioMaterialDefinitions {#constructor-3}
+> **AudioMaterialDefinitions**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AudioMaterialDefinitions](/vext/ref/fb/audiomaterialdefinitions). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [AudioMaterialDefinitions](/vext/ref/fb/audiomaterialdefinitions). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AudioMaterialDefinitions](/vext/ref/fb/audiomaterialdefinitions) type.
+

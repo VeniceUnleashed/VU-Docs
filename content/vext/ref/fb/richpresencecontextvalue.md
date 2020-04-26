@@ -1,43 +1,65 @@
 ---
 title: RichPresenceContextValue
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[RichPresenceContextValue](#constructor-0)**() |
+| **[RichPresenceContextValue](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[RichPresenceContextValue](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "sid" >}} | string |
+| {{< prop "index" >}} | int |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "RichPresenceContextValue" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### RichPresenceContextValue {#constructor-0}
+> **RichPresenceContextValue**()
 
-| Constructor                                                                         | Description                                                                                                                             |
-| ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| RichPresenceContextValue()                                                          | Create a new instance of this container type.                                                                                           |
-| RichPresenceContextValue(RichPresenceContextValue other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| RichPresenceContextValue([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RichPresenceContextValue](/vext/ref/fb/richpresencecontextvalue/). |
+Creates a new [RichPresenceContextValue](/vext/ref/fb/richpresencecontextvalue) frostbite instance.
 
-## Properties
+### RichPresenceContextValue {#constructor-1}
+> **RichPresenceContextValue**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name  | Type   | Description |
-| ----- | ------ | ----------- |
-| sid   | string |             |
-| index | number |             |
-
-## Methods
-
-| Type                                                 | Name            | Parameters                                     |
-| ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [RichPresenceContextValue](/vext/ref/fb/richpresencecontextvalue/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [RichPresenceContextValue](/vext/ref/fb/richpresencecontextvalue/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [RichPresenceContextValue](/vext/ref/fb/richpresencecontextvalue) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### RichPresenceContextValue {#constructor-2}
+> **RichPresenceContextValue**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RichPresenceContextValue](/vext/ref/fb/richpresencecontextvalue). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [RichPresenceContextValue](/vext/ref/fb/richpresencecontextvalue). |
+
+## Properties
+### {{% prop-heading "sid" %}}
+> **string**
+
+### {{% prop-heading "index" %}}
+> **int**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [RichPresenceContextValue](/vext/ref/fb/richpresencecontextvalue) type.
+

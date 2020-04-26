@@ -1,51 +1,139 @@
 ---
 title: RoadData
 ---
-### Base Classes
 
-[RibbonData](/vext/ref/fb/ribbondata/)
+Inherits from 
+[RibbonData](/vext/ref/fb/ribbondata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[RoadData](#constructor-0)**() |
+| **[RoadData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[RoadData](#constructor-2)**(other: [RibbonData](/vext/ref/fb/ribbondata)) |
+| **[RoadData](#constructor-3)**(other: [VisualVectorShapeData](/vext/ref/fb/visualvectorshapedata)) |
+| **[RoadData](#constructor-4)**(other: [VectorShapeData](/vext/ref/fb/vectorshapedata)) |
+| **[RoadData](#constructor-5)**(other: [BaseShapeData](/vext/ref/fb/baseshapedata)) |
+| **[RoadData](#constructor-6)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[RoadData](#constructor-7)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[RoadData](#constructor-8)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "shader2d" >}} | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset) \| nil |
+| {{< prop "shader3dZOnly" >}} | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset) \| nil |
+| {{< prop "uvTileFactor" >}} | float |
+| {{< prop "stickToTerrain" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "RoadData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### RoadData {#constructor-0}
+> **RoadData**()
 
-| Constructor                                                         | Description                                                                                             |
-| ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| RoadData()                                                          | Create a new instance of this container type.                                                           |
-| RoadData(RoadData other)                                            | Create a reference copy of an instance of the same type.                                                |
-| RoadData([RibbonData](/vext/ref/fb/ribbondata/) other)                            | Upcast an instance of type [RibbonData](/vext/ref/fb/ribbondata/) to [RoadData](/vext/ref/fb/roaddata/).                            |
-| RoadData([VisualVectorShapeData](/vext/ref/fb/visualvectorshapedata/) other)      | Upcast an instance of type [VisualVectorShapeData](/vext/ref/fb/visualvectorshapedata/) to [RoadData](/vext/ref/fb/roaddata/).      |
-| RoadData([VectorShapeData](/vext/ref/fb/vectorshapedata/) other)                  | Upcast an instance of type [VectorShapeData](/vext/ref/fb/vectorshapedata/) to [RoadData](/vext/ref/fb/roaddata/).                  |
-| RoadData([BaseShapeData](/vext/ref/fb/baseshapedata/) other)                      | Upcast an instance of type [BaseShapeData](/vext/ref/fb/baseshapedata/) to [RoadData](/vext/ref/fb/roaddata/).                      |
-| RoadData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [RoadData](/vext/ref/fb/roaddata/).                    |
-| RoadData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [RoadData](/vext/ref/fb/roaddata/).              |
-| RoadData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RoadData](/vext/ref/fb/roaddata/). |
+Creates a new [RoadData](/vext/ref/fb/roaddata) frostbite instance.
 
-## Properties
+### RoadData {#constructor-1}
+> **RoadData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name           | Type                                             | Description |
-| -------------- | ------------------------------------------------ | ----------- |
-| shader2d       | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset/) |             |
-| shader3dZOnly  | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset/) |             |
-| uvTileFactor   | number                                           |             |
-| stickToTerrain | bool                                             |             |
-
-## Methods
-
-| Type                 | Name            | Parameters                                     |
-| -------------------- | --------------- | ---------------------------------------------- |
-| [RoadData](/vext/ref/fb/roaddata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [RoadData](/vext/ref/fb/roaddata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [RoadData](/vext/ref/fb/roaddata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### RoadData {#constructor-2}
+> **RoadData**(other: [RibbonData](/vext/ref/fb/ribbondata))
+
+Casts an instance of type [RibbonData](/vext/ref/fb/ribbondata) to [RoadData](/vext/ref/fb/roaddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [RibbonData](/vext/ref/fb/ribbondata) | The instance to cast to [RoadData](/vext/ref/fb/roaddata). |
+
+### RoadData {#constructor-3}
+> **RoadData**(other: [VisualVectorShapeData](/vext/ref/fb/visualvectorshapedata))
+
+Casts an instance of type [VisualVectorShapeData](/vext/ref/fb/visualvectorshapedata) to [RoadData](/vext/ref/fb/roaddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [VisualVectorShapeData](/vext/ref/fb/visualvectorshapedata) | The instance to cast to [RoadData](/vext/ref/fb/roaddata). |
+
+### RoadData {#constructor-4}
+> **RoadData**(other: [VectorShapeData](/vext/ref/fb/vectorshapedata))
+
+Casts an instance of type [VectorShapeData](/vext/ref/fb/vectorshapedata) to [RoadData](/vext/ref/fb/roaddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [VectorShapeData](/vext/ref/fb/vectorshapedata) | The instance to cast to [RoadData](/vext/ref/fb/roaddata). |
+
+### RoadData {#constructor-5}
+> **RoadData**(other: [BaseShapeData](/vext/ref/fb/baseshapedata))
+
+Casts an instance of type [BaseShapeData](/vext/ref/fb/baseshapedata) to [RoadData](/vext/ref/fb/roaddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [BaseShapeData](/vext/ref/fb/baseshapedata) | The instance to cast to [RoadData](/vext/ref/fb/roaddata). |
+
+### RoadData {#constructor-6}
+> **RoadData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [RoadData](/vext/ref/fb/roaddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [RoadData](/vext/ref/fb/roaddata). |
+
+### RoadData {#constructor-7}
+> **RoadData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [RoadData](/vext/ref/fb/roaddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [RoadData](/vext/ref/fb/roaddata). |
+
+### RoadData {#constructor-8}
+> **RoadData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RoadData](/vext/ref/fb/roaddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [RoadData](/vext/ref/fb/roaddata). |
+
+## Properties
+### {{% prop-heading "shader2d" %}}
+> **[SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset)** | **nil**
+
+### {{% prop-heading "shader3dZOnly" %}}
+> **[SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset)** | **nil**
+
+### {{% prop-heading "uvTileFactor" %}}
+> **float**
+
+### {{% prop-heading "stickToTerrain" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [RoadData](/vext/ref/fb/roaddata) type.
+

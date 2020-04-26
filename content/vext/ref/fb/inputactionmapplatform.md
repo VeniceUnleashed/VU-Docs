@@ -1,15 +1,12 @@
 ---
 title: InputActionMapPlatform
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **IAMPWin32** | Value: **0** |
+| **IAMPXenon** | Value: **1** |
+| **IAMPPs3** | Value: **2** |
+| **IAMPAllPlatforms** | Value: **3** |
 
-| Name             | Value | Description |
-| ---------------- | ----- | ----------- |
-| IAMPWin32        | 0     |             |
-| IAMPXenon        | 1     |             |
-| IAMPPs3          | 2     |             |
-| IAMPAllPlatforms | 3     |             |

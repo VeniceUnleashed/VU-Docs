@@ -1,14 +1,11 @@
 ---
 title: FadeCurveType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **FadeCurveType_LinearAmplitude** | Value: **0** |
+| **FadeCurveType_SineAmplitude** | Value: **1** |
+| **FadeCurveType_LinearDecibel** | Value: **2** |
 
-| Name                           | Value | Description |
-| ------------------------------ | ----- | ----------- |
-| FadeCurveType\_LinearAmplitude | 0     |             |
-| FadeCurveType\_SineAmplitude   | 1     |             |
-| FadeCurveType\_LinearDecibel   | 2     |             |

@@ -1,15 +1,12 @@
 ---
 title: QualityLevel
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **QualityLevel_Low** | Value: **0** |
+| **QualityLevel_Medium** | Value: **1** |
+| **QualityLevel_High** | Value: **2** |
+| **QualityLevel_Ultra** | Value: **3** |
 
-| Name                 | Value | Description |
-| -------------------- | ----- | ----------- |
-| QualityLevel\_Low    | 0     |             |
-| QualityLevel\_Medium | 1     |             |
-| QualityLevel\_High   | 2     |             |
-| QualityLevel\_Ultra  | 3     |             |

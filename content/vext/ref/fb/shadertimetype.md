@@ -1,13 +1,10 @@
 ---
 title: ShaderTimeType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ShaderTimeType_Game** | Value: **0** |
+| **ShaderTimeType_Real** | Value: **1** |
 
-| Name                 | Value | Description |
-| -------------------- | ----- | ----------- |
-| ShaderTimeType\_Game | 0     |             |
-| ShaderTimeType\_Real | 1     |             |

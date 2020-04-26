@@ -1,48 +1,99 @@
 ---
 title: PowerToolWeaponData
 ---
-### Base Classes
 
-[WeaponData](/vext/ref/fb/weapondata/)
+Inherits from 
+[WeaponData](/vext/ref/fb/weapondata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PowerToolWeaponData](#constructor-0)**() |
+| **[PowerToolWeaponData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PowerToolWeaponData](#constructor-2)**(other: [WeaponData](/vext/ref/fb/weapondata)) |
+| **[PowerToolWeaponData](#constructor-3)**(other: [ToolData](/vext/ref/fb/tooldata)) |
+| **[PowerToolWeaponData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "repairSound" >}} | [SoundAsset](/vext/ref/fb/soundasset) \| nil |
+| {{< prop "repairCompletedSound" >}} | [SoundAsset](/vext/ref/fb/soundasset) \| nil |
+| {{< prop "damageSound" >}} | [SoundAsset](/vext/ref/fb/soundasset) \| nil |
+| {{< prop "repairMaterialPair" >}} | [MaterialContainerPair](/vext/ref/fb/materialcontainerpair) \| nil |
+| {{< prop "playFireEffectOnRepairOnly" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PowerToolWeaponData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PowerToolWeaponData {#constructor-0}
+> **PowerToolWeaponData**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| PowerToolWeaponData()                                                          | Create a new instance of this container type.                                                                                 |
-| PowerToolWeaponData(PowerToolWeaponData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| PowerToolWeaponData([WeaponData](/vext/ref/fb/weapondata/) other)                            | Upcast an instance of type [WeaponData](/vext/ref/fb/weapondata/) to [PowerToolWeaponData](/vext/ref/fb/powertoolweapondata/).                            |
-| PowerToolWeaponData([ToolData](/vext/ref/fb/tooldata/) other)                                | Upcast an instance of type [ToolData](/vext/ref/fb/tooldata/) to [PowerToolWeaponData](/vext/ref/fb/powertoolweapondata/).                                |
-| PowerToolWeaponData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PowerToolWeaponData](/vext/ref/fb/powertoolweapondata/). |
+Creates a new [PowerToolWeaponData](/vext/ref/fb/powertoolweapondata) frostbite instance.
 
-## Properties
+### PowerToolWeaponData {#constructor-1}
+> **PowerToolWeaponData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                       | Type                                           | Description |
-| -------------------------- | ---------------------------------------------- | ----------- |
-| repairSound                | [SoundAsset](/vext/ref/fb/soundasset/)                       |             |
-| repairCompletedSound       | [SoundAsset](/vext/ref/fb/soundasset/)                       |             |
-| damageSound                | [SoundAsset](/vext/ref/fb/soundasset/)                       |             |
-| repairMaterialPair         | [MaterialContainerPair](/vext/ref/fb/materialcontainerpair/) |             |
-| playFireEffectOnRepairOnly | bool                                           |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [PowerToolWeaponData](/vext/ref/fb/powertoolweapondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PowerToolWeaponData](/vext/ref/fb/powertoolweapondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PowerToolWeaponData](/vext/ref/fb/powertoolweapondata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PowerToolWeaponData {#constructor-2}
+> **PowerToolWeaponData**(other: [WeaponData](/vext/ref/fb/weapondata))
+
+Casts an instance of type [WeaponData](/vext/ref/fb/weapondata) to [PowerToolWeaponData](/vext/ref/fb/powertoolweapondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [WeaponData](/vext/ref/fb/weapondata) | The instance to cast to [PowerToolWeaponData](/vext/ref/fb/powertoolweapondata). |
+
+### PowerToolWeaponData {#constructor-3}
+> **PowerToolWeaponData**(other: [ToolData](/vext/ref/fb/tooldata))
+
+Casts an instance of type [ToolData](/vext/ref/fb/tooldata) to [PowerToolWeaponData](/vext/ref/fb/powertoolweapondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ToolData](/vext/ref/fb/tooldata) | The instance to cast to [PowerToolWeaponData](/vext/ref/fb/powertoolweapondata). |
+
+### PowerToolWeaponData {#constructor-4}
+> **PowerToolWeaponData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PowerToolWeaponData](/vext/ref/fb/powertoolweapondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PowerToolWeaponData](/vext/ref/fb/powertoolweapondata). |
+
+## Properties
+### {{% prop-heading "repairSound" %}}
+> **[SoundAsset](/vext/ref/fb/soundasset)** | **nil**
+
+### {{% prop-heading "repairCompletedSound" %}}
+> **[SoundAsset](/vext/ref/fb/soundasset)** | **nil**
+
+### {{% prop-heading "damageSound" %}}
+> **[SoundAsset](/vext/ref/fb/soundasset)** | **nil**
+
+### {{% prop-heading "repairMaterialPair" %}}
+> **[MaterialContainerPair](/vext/ref/fb/materialcontainerpair)** | **nil**
+
+### {{% prop-heading "playFireEffectOnRepairOnly" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PowerToolWeaponData](/vext/ref/fb/powertoolweapondata) type.
+

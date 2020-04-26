@@ -1,48 +1,92 @@
 ---
 title: MaterialGridData
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MaterialGridData](#constructor-0)**() |
+| **[MaterialGridData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MaterialGridData](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[MaterialGridData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "defaultMaterial" >}} | [MaterialContainerPair](/vext/ref/fb/materialcontainerpair) \| nil |
+| {{< prop "materialPairs" >}} | [MaterialContainerPair](/vext/ref/fb/materialcontainerpair)[] |
+| {{< prop "materialIndexMap" >}} | int[] |
+| {{< prop "defaultMaterialIndex" >}} | int |
+| {{< prop "materialProperties" >}} | [MaterialRelationPropertyPair](/vext/ref/fb/materialrelationpropertypair)[] |
+| {{< prop "interactionGrid" >}} | [MaterialInteractionGridRow](/vext/ref/fb/materialinteractiongridrow)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MaterialGridData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MaterialGridData {#constructor-0}
+> **MaterialGridData**()
 
-| Constructor                                                                 | Description                                                                                                             |
-| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| MaterialGridData()                                                          | Create a new instance of this container type.                                                                           |
-| MaterialGridData(MaterialGridData other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| MaterialGridData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [MaterialGridData](/vext/ref/fb/materialgriddata/).                                      |
-| MaterialGridData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MaterialGridData](/vext/ref/fb/materialgriddata/). |
+Creates a new [MaterialGridData](/vext/ref/fb/materialgriddata) frostbite instance.
 
-## Properties
+### MaterialGridData {#constructor-1}
+> **MaterialGridData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                 | Type                                                             | Description |
-| -------------------- | ---------------------------------------------------------------- | ----------- |
-| defaultMaterial      | [MaterialContainerPair](/vext/ref/fb/materialcontainerpair/)                   |             |
-| materialPairs        | [MaterialContainerPair](/vext/ref/fb/materialcontainerpair/)\[\]               |             |
-| materialIndexMap     | number\[\]                                                       |             |
-| defaultMaterialIndex | number                                                           |             |
-| materialProperties   | [MaterialRelationPropertyPair](/vext/ref/fb/materialrelationpropertypair/)\[\] |             |
-| interactionGrid      | [MaterialInteractionGridRow](/vext/ref/fb/materialinteractiongridrow/)\[\]     |             |
-
-## Methods
-
-| Type                                 | Name            | Parameters                                     |
-| ------------------------------------ | --------------- | ---------------------------------------------- |
-| [MaterialGridData](/vext/ref/fb/materialgriddata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MaterialGridData](/vext/ref/fb/materialgriddata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MaterialGridData](/vext/ref/fb/materialgriddata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MaterialGridData {#constructor-2}
+> **MaterialGridData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [MaterialGridData](/vext/ref/fb/materialgriddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [MaterialGridData](/vext/ref/fb/materialgriddata). |
+
+### MaterialGridData {#constructor-3}
+> **MaterialGridData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MaterialGridData](/vext/ref/fb/materialgriddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MaterialGridData](/vext/ref/fb/materialgriddata). |
+
+## Properties
+### {{% prop-heading "defaultMaterial" %}}
+> **[MaterialContainerPair](/vext/ref/fb/materialcontainerpair)** | **nil**
+
+### {{% prop-heading "materialPairs" %}}
+> **[MaterialContainerPair](/vext/ref/fb/materialcontainerpair)**[]
+
+### {{% prop-heading "materialIndexMap" %}}
+> **int**[]
+
+### {{% prop-heading "defaultMaterialIndex" %}}
+> **int**
+
+### {{% prop-heading "materialProperties" %}}
+> **[MaterialRelationPropertyPair](/vext/ref/fb/materialrelationpropertypair)**[]
+
+### {{% prop-heading "interactionGrid" %}}
+> **[MaterialInteractionGridRow](/vext/ref/fb/materialinteractiongridrow)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MaterialGridData](/vext/ref/fb/materialgriddata) type.
+

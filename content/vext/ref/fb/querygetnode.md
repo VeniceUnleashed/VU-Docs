@@ -1,45 +1,80 @@
 ---
 title: QueryGetNode
 ---
-### Base Classes
 
-[UINodeData](/vext/ref/fb/uinodedata/)
+Inherits from 
+[UINodeData](/vext/ref/fb/uinodedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[QueryGetNode](#constructor-0)**() |
+| **[QueryGetNode](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[QueryGetNode](#constructor-2)**(other: [UINodeData](/vext/ref/fb/uinodedata)) |
+| **[QueryGetNode](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "inValue" >}} | [UINodePort](/vext/ref/fb/uinodeport) \| nil |
+| {{< prop "out" >}} | [UINodePort](/vext/ref/fb/uinodeport) \| nil |
+| {{< prop "dataSource" >}} | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "QueryGetNode" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### QueryGetNode {#constructor-0}
+> **QueryGetNode**()
 
-| Constructor                                                             | Description                                                                                                     |
-| ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| QueryGetNode()                                                          | Create a new instance of this container type.                                                                   |
-| QueryGetNode(QueryGetNode other)                                        | Create a reference copy of an instance of the same type.                                                        |
-| QueryGetNode([UINodeData](/vext/ref/fb/uinodedata/) other)                            | Upcast an instance of type [UINodeData](/vext/ref/fb/uinodedata/) to [QueryGetNode](/vext/ref/fb/querygetnode/).                            |
-| QueryGetNode([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [QueryGetNode](/vext/ref/fb/querygetnode/). |
+Creates a new [QueryGetNode](/vext/ref/fb/querygetnode) frostbite instance.
 
-## Properties
+### QueryGetNode {#constructor-1}
+> **QueryGetNode**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name       | Type                                 | Description |
-| ---------- | ------------------------------------ | ----------- |
-| inValue    | [UINodePort](/vext/ref/fb/uinodeport/)             |             |
-| out        | [UINodePort](/vext/ref/fb/uinodeport/)             |             |
-| dataSource | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/) |             |
-
-## Methods
-
-| Type                         | Name            | Parameters                                     |
-| ---------------------------- | --------------- | ---------------------------------------------- |
-| [QueryGetNode](/vext/ref/fb/querygetnode/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [QueryGetNode](/vext/ref/fb/querygetnode/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [QueryGetNode](/vext/ref/fb/querygetnode) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### QueryGetNode {#constructor-2}
+> **QueryGetNode**(other: [UINodeData](/vext/ref/fb/uinodedata))
+
+Casts an instance of type [UINodeData](/vext/ref/fb/uinodedata) to [QueryGetNode](/vext/ref/fb/querygetnode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UINodeData](/vext/ref/fb/uinodedata) | The instance to cast to [QueryGetNode](/vext/ref/fb/querygetnode). |
+
+### QueryGetNode {#constructor-3}
+> **QueryGetNode**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [QueryGetNode](/vext/ref/fb/querygetnode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [QueryGetNode](/vext/ref/fb/querygetnode). |
+
+## Properties
+### {{% prop-heading "inValue" %}}
+> **[UINodePort](/vext/ref/fb/uinodeport)** | **nil**
+
+### {{% prop-heading "out" %}}
+> **[UINodePort](/vext/ref/fb/uinodeport)** | **nil**
+
+### {{% prop-heading "dataSource" %}}
+> **[UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [QueryGetNode](/vext/ref/fb/querygetnode) type.
+

@@ -1,43 +1,72 @@
 ---
 title: WeaponAnimatedFireTypeModifier
 ---
-### Base Classes
 
-[WeaponModifierBase](/vext/ref/fb/weaponmodifierbase/)
+Inherits from 
+[WeaponModifierBase](/vext/ref/fb/weaponmodifierbase)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[WeaponAnimatedFireTypeModifier](#constructor-0)**() |
+| **[WeaponAnimatedFireTypeModifier](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[WeaponAnimatedFireTypeModifier](#constructor-2)**(other: [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase)) |
+| **[WeaponAnimatedFireTypeModifier](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "animatedFireType" >}} | [AnimatedFireEnum](/vext/ref/fb/animatedfireenum) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "WeaponAnimatedFireTypeModifier" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### WeaponAnimatedFireTypeModifier {#constructor-0}
+> **WeaponAnimatedFireTypeModifier**()
 
-| Constructor                                                                               | Description                                                                                                                                         |
-| ----------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| WeaponAnimatedFireTypeModifier()                                                          | Create a new instance of this container type.                                                                                                       |
-| WeaponAnimatedFireTypeModifier(WeaponAnimatedFireTypeModifier other)                      | Create a reference copy of an instance of the same type.                                                                                            |
-| WeaponAnimatedFireTypeModifier([WeaponModifierBase](/vext/ref/fb/weaponmodifierbase/) other)            | Upcast an instance of type [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase/) to [WeaponAnimatedFireTypeModifier](/vext/ref/fb/weaponanimatedfiretypemodifier/).            |
-| WeaponAnimatedFireTypeModifier([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponAnimatedFireTypeModifier](/vext/ref/fb/weaponanimatedfiretypemodifier/). |
+Creates a new [WeaponAnimatedFireTypeModifier](/vext/ref/fb/weaponanimatedfiretypemodifier) frostbite instance.
 
-## Properties
+### WeaponAnimatedFireTypeModifier {#constructor-1}
+> **WeaponAnimatedFireTypeModifier**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name             | Type                                 | Description |
-| ---------------- | ------------------------------------ | ----------- |
-| animatedFireType | [AnimatedFireEnum](/vext/ref/fb/animatedfireenum/) |             |
-
-## Methods
-
-| Type                                                             | Name            | Parameters                                     |
-| ---------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [WeaponAnimatedFireTypeModifier](/vext/ref/fb/weaponanimatedfiretypemodifier/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [WeaponAnimatedFireTypeModifier](/vext/ref/fb/weaponanimatedfiretypemodifier/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [WeaponAnimatedFireTypeModifier](/vext/ref/fb/weaponanimatedfiretypemodifier) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### WeaponAnimatedFireTypeModifier {#constructor-2}
+> **WeaponAnimatedFireTypeModifier**(other: [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase))
+
+Casts an instance of type [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase) to [WeaponAnimatedFireTypeModifier](/vext/ref/fb/weaponanimatedfiretypemodifier). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase) | The instance to cast to [WeaponAnimatedFireTypeModifier](/vext/ref/fb/weaponanimatedfiretypemodifier). |
+
+### WeaponAnimatedFireTypeModifier {#constructor-3}
+> **WeaponAnimatedFireTypeModifier**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponAnimatedFireTypeModifier](/vext/ref/fb/weaponanimatedfiretypemodifier). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [WeaponAnimatedFireTypeModifier](/vext/ref/fb/weaponanimatedfiretypemodifier). |
+
+## Properties
+### {{% prop-heading "animatedFireType" %}}
+> **[AnimatedFireEnum](/vext/ref/fb/animatedfireenum)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [WeaponAnimatedFireTypeModifier](/vext/ref/fb/weaponanimatedfiretypemodifier) type.
+

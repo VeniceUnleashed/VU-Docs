@@ -1,53 +1,50 @@
 ---
 title: InputActionMapSlot
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **InputActionMapSlot_Undefined** | Value: **0** |
+| **InputActionMapSlot_Root1** | Value: **1** |
+| **InputActionMapSlot_Root2** | Value: **2** |
+| **InputActionMapSlot_Root3** | Value: **3** |
+| **InputActionMapSlot_Root4** | Value: **4** |
+| **InputActionMapSlot_Root5** | Value: **5** |
+| **InputActionMapSlot_Root6** | Value: **6** |
+| **InputActionMapSlot_Root7** | Value: **7** |
+| **InputActionMapSlot_Root8** | Value: **8** |
+| **InputActionMapSlot_Root9** | Value: **9** |
+| **InputActionMapSlot_Root10** | Value: **10** |
+| **InputActionMapSlot_Root11** | Value: **11** |
+| **InputActionMapSlot_Root12** | Value: **12** |
+| **InputActionMapSlot_Root13** | Value: **13** |
+| **InputActionMapSlot_Root14** | Value: **14** |
+| **InputActionMapSlot_Root15** | Value: **15** |
+| **InputActionMapSlot_Root16** | Value: **16** |
+| **InputActionMapSlot_Sticks1** | Value: **17** |
+| **InputActionMapSlot_Sticks2** | Value: **18** |
+| **InputActionMapSlot_Sticks3** | Value: **19** |
+| **InputActionMapSlot_Sticks4** | Value: **20** |
+| **InputActionMapSlot_Buttons1** | Value: **21** |
+| **InputActionMapSlot_Buttons2** | Value: **22** |
+| **InputActionMapSlot_Buttons3** | Value: **23** |
+| **InputActionMapSlot_Buttons4** | Value: **24** |
+| **InputActionMapSlot_Sticks1Buttons1** | Value: **25** |
+| **InputActionMapSlot_Sticks1Buttons2** | Value: **26** |
+| **InputActionMapSlot_Sticks1Buttons3** | Value: **27** |
+| **InputActionMapSlot_Sticks1Buttons4** | Value: **28** |
+| **InputActionMapSlot_Sticks2Buttons1** | Value: **29** |
+| **InputActionMapSlot_Sticks2Buttons2** | Value: **30** |
+| **InputActionMapSlot_Sticks2Buttons3** | Value: **31** |
+| **InputActionMapSlot_Sticks2Buttons4** | Value: **32** |
+| **InputActionMapSlot_Sticks3Buttons1** | Value: **33** |
+| **InputActionMapSlot_Sticks3Buttons2** | Value: **34** |
+| **InputActionMapSlot_Sticks3Buttons3** | Value: **35** |
+| **InputActionMapSlot_Sticks3Buttons4** | Value: **36** |
+| **InputActionMapSlot_Sticks4Buttons1** | Value: **37** |
+| **InputActionMapSlot_Sticks4Buttons2** | Value: **38** |
+| **InputActionMapSlot_Sticks4Buttons3** | Value: **39** |
+| **InputActionMapSlot_Sticks4Buttons4** | Value: **40** |
+| **InputActionMapSlot_Count** | Value: **41** |
 
-| Name                                | Value | Description |
-| ----------------------------------- | ----- | ----------- |
-| InputActionMapSlot\_Undefined       | 0     |             |
-| InputActionMapSlot\_Root1           | 1     |             |
-| InputActionMapSlot\_Root2           | 2     |             |
-| InputActionMapSlot\_Root3           | 3     |             |
-| InputActionMapSlot\_Root4           | 4     |             |
-| InputActionMapSlot\_Root5           | 5     |             |
-| InputActionMapSlot\_Root6           | 6     |             |
-| InputActionMapSlot\_Root7           | 7     |             |
-| InputActionMapSlot\_Root8           | 8     |             |
-| InputActionMapSlot\_Root9           | 9     |             |
-| InputActionMapSlot\_Root10          | 10    |             |
-| InputActionMapSlot\_Root11          | 11    |             |
-| InputActionMapSlot\_Root12          | 12    |             |
-| InputActionMapSlot\_Root13          | 13    |             |
-| InputActionMapSlot\_Root14          | 14    |             |
-| InputActionMapSlot\_Root15          | 15    |             |
-| InputActionMapSlot\_Root16          | 16    |             |
-| InputActionMapSlot\_Sticks1         | 17    |             |
-| InputActionMapSlot\_Sticks2         | 18    |             |
-| InputActionMapSlot\_Sticks3         | 19    |             |
-| InputActionMapSlot\_Sticks4         | 20    |             |
-| InputActionMapSlot\_Buttons1        | 21    |             |
-| InputActionMapSlot\_Buttons2        | 22    |             |
-| InputActionMapSlot\_Buttons3        | 23    |             |
-| InputActionMapSlot\_Buttons4        | 24    |             |
-| InputActionMapSlot\_Sticks1Buttons1 | 25    |             |
-| InputActionMapSlot\_Sticks1Buttons2 | 26    |             |
-| InputActionMapSlot\_Sticks1Buttons3 | 27    |             |
-| InputActionMapSlot\_Sticks1Buttons4 | 28    |             |
-| InputActionMapSlot\_Sticks2Buttons1 | 29    |             |
-| InputActionMapSlot\_Sticks2Buttons2 | 30    |             |
-| InputActionMapSlot\_Sticks2Buttons3 | 31    |             |
-| InputActionMapSlot\_Sticks2Buttons4 | 32    |             |
-| InputActionMapSlot\_Sticks3Buttons1 | 33    |             |
-| InputActionMapSlot\_Sticks3Buttons2 | 34    |             |
-| InputActionMapSlot\_Sticks3Buttons3 | 35    |             |
-| InputActionMapSlot\_Sticks3Buttons4 | 36    |             |
-| InputActionMapSlot\_Sticks4Buttons1 | 37    |             |
-| InputActionMapSlot\_Sticks4Buttons2 | 38    |             |
-| InputActionMapSlot\_Sticks4Buttons3 | 39    |             |
-| InputActionMapSlot\_Sticks4Buttons4 | 40    |             |
-| InputActionMapSlot\_Count           | 41    |             |

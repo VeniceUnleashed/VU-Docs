@@ -1,46 +1,84 @@
 ---
 title: PersistentCriteriaStatRef
 ---
-### Base Classes
 
-[AbstractPersistentStatRef](/vext/ref/fb/abstractpersistentstatref/)
+Inherits from 
+[AbstractPersistentStatRef](/vext/ref/fb/abstractpersistentstatref)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PersistentCriteriaStatRef](#constructor-0)**() |
+| **[PersistentCriteriaStatRef](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PersistentCriteriaStatRef](#constructor-2)**(other: [AbstractPersistentStatRef](/vext/ref/fb/abstractpersistentstatref)) |
+| **[PersistentCriteriaStatRef](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "criteria" >}} | [CriteriaData](/vext/ref/fb/criteriadata) \| nil |
+| {{< prop "paramX" >}} | [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata) \| nil |
+| {{< prop "paramY" >}} | [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata) \| nil |
+| {{< prop "criteriaOwner" >}} | [AwardData](/vext/ref/fb/awarddata) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PersistentCriteriaStatRef" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PersistentCriteriaStatRef {#constructor-0}
+> **PersistentCriteriaStatRef**()
 
-| Constructor                                                                             | Description                                                                                                                                  |
-| --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| PersistentCriteriaStatRef()                                                             | Create a new instance of this container type.                                                                                                |
-| PersistentCriteriaStatRef(PersistentCriteriaStatRef other)                              | Create a reference copy of an instance of the same type.                                                                                     |
-| PersistentCriteriaStatRef([AbstractPersistentStatRef](/vext/ref/fb/abstractpersistentstatref/) other) | Upcast an instance of type [AbstractPersistentStatRef](/vext/ref/fb/abstractpersistentstatref/) to [PersistentCriteriaStatRef](/vext/ref/fb/persistentcriteriastatref/). |
-| PersistentCriteriaStatRef([DataContainer](/vext/ref/shared/class/datacontainer) other)    | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PersistentCriteriaStatRef](/vext/ref/fb/persistentcriteriastatref/).    |
+Creates a new [PersistentCriteriaStatRef](/vext/ref/fb/persistentcriteriastatref) frostbite instance.
 
-## Properties
+### PersistentCriteriaStatRef {#constructor-1}
+> **PersistentCriteriaStatRef**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name          | Type                                           | Description |
-| ------------- | ---------------------------------------------- | ----------- |
-| criteria      | [CriteriaData](/vext/ref/fb/criteriadata/)                   |             |
-| paramX        | [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/) |             |
-| paramY        | [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/) |             |
-| criteriaOwner | [AwardData](/vext/ref/fb/awarddata/)                         |             |
-
-## Methods
-
-| Type                                                   | Name            | Parameters                                     |
-| ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [PersistentCriteriaStatRef](/vext/ref/fb/persistentcriteriastatref/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PersistentCriteriaStatRef](/vext/ref/fb/persistentcriteriastatref/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PersistentCriteriaStatRef](/vext/ref/fb/persistentcriteriastatref) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PersistentCriteriaStatRef {#constructor-2}
+> **PersistentCriteriaStatRef**(other: [AbstractPersistentStatRef](/vext/ref/fb/abstractpersistentstatref))
+
+Casts an instance of type [AbstractPersistentStatRef](/vext/ref/fb/abstractpersistentstatref) to [PersistentCriteriaStatRef](/vext/ref/fb/persistentcriteriastatref). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AbstractPersistentStatRef](/vext/ref/fb/abstractpersistentstatref) | The instance to cast to [PersistentCriteriaStatRef](/vext/ref/fb/persistentcriteriastatref). |
+
+### PersistentCriteriaStatRef {#constructor-3}
+> **PersistentCriteriaStatRef**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PersistentCriteriaStatRef](/vext/ref/fb/persistentcriteriastatref). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PersistentCriteriaStatRef](/vext/ref/fb/persistentcriteriastatref). |
+
+## Properties
+### {{% prop-heading "criteria" %}}
+> **[CriteriaData](/vext/ref/fb/criteriadata)** | **nil**
+
+### {{% prop-heading "paramX" %}}
+> **[StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata)** | **nil**
+
+### {{% prop-heading "paramY" %}}
+> **[StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata)** | **nil**
+
+### {{% prop-heading "criteriaOwner" %}}
+> **[AwardData](/vext/ref/fb/awarddata)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PersistentCriteriaStatRef](/vext/ref/fb/persistentcriteriastatref) type.
+

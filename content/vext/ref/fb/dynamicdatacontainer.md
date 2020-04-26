@@ -1,42 +1,61 @@
 ---
 title: DynamicDataContainer
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[DynamicDataContainer](#constructor-0)**() |
+| **[DynamicDataContainer](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[DynamicDataContainer](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "fields" >}} | [DataField](/vext/ref/fb/datafield)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "DynamicDataContainer" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### DynamicDataContainer {#constructor-0}
+> **DynamicDataContainer**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| DynamicDataContainer()                                                          | Create a new instance of this container type.                                                                                   |
-| DynamicDataContainer(DynamicDataContainer other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| DynamicDataContainer([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DynamicDataContainer](/vext/ref/fb/dynamicdatacontainer/). |
+Creates a new [DynamicDataContainer](/vext/ref/fb/dynamicdatacontainer) frostbite instance.
 
-## Properties
+### DynamicDataContainer {#constructor-1}
+> **DynamicDataContainer**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name   | Type                       | Description |
-| ------ | -------------------------- | ----------- |
-| fields | [DataField](/vext/ref/fb/datafield/)\[\] |             |
-
-## Methods
-
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [DynamicDataContainer](/vext/ref/fb/dynamicdatacontainer/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [DynamicDataContainer](/vext/ref/fb/dynamicdatacontainer/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [DynamicDataContainer](/vext/ref/fb/dynamicdatacontainer) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### DynamicDataContainer {#constructor-2}
+> **DynamicDataContainer**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DynamicDataContainer](/vext/ref/fb/dynamicdatacontainer). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DynamicDataContainer](/vext/ref/fb/dynamicdatacontainer). |
+
+## Properties
+### {{% prop-heading "fields" %}}
+> **[DataField](/vext/ref/fb/datafield)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [DynamicDataContainer](/vext/ref/fb/dynamicdatacontainer) type.
+

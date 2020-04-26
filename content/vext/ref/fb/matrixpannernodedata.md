@@ -1,52 +1,108 @@
 ---
 title: MatrixPannerNodeData
 ---
-### Base Classes
 
-[AudioGraphNodeData](/vext/ref/fb/audiographnodedata/)
+Inherits from 
+[AudioGraphNodeData](/vext/ref/fb/audiographnodedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MatrixPannerNodeData](#constructor-0)**() |
+| **[MatrixPannerNodeData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MatrixPannerNodeData](#constructor-2)**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata)) |
+| **[MatrixPannerNodeData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "inValue" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "frontLeft" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "center" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "frontRight" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "rearLeft" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "lfe" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "rearRight" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "farRearLeft" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "farRearRight" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "out" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MatrixPannerNodeData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MatrixPannerNodeData {#constructor-0}
+> **MatrixPannerNodeData**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| MatrixPannerNodeData()                                                          | Create a new instance of this container type.                                                                                   |
-| MatrixPannerNodeData(MatrixPannerNodeData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| MatrixPannerNodeData([AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) other)            | Upcast an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) to [MatrixPannerNodeData](/vext/ref/fb/matrixpannernodedata/).            |
-| MatrixPannerNodeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MatrixPannerNodeData](/vext/ref/fb/matrixpannernodedata/). |
+Creates a new [MatrixPannerNodeData](/vext/ref/fb/matrixpannernodedata) frostbite instance.
 
-## Properties
+### MatrixPannerNodeData {#constructor-1}
+> **MatrixPannerNodeData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name         | Type                                     | Description |
-| ------------ | ---------------------------------------- | ----------- |
-| inValue      | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| frontLeft    | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| center       | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| frontRight   | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| rearLeft     | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| lfe          | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| rearRight    | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| farRearLeft  | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| farRearRight | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| out          | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-
-## Methods
-
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [MatrixPannerNodeData](/vext/ref/fb/matrixpannernodedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MatrixPannerNodeData](/vext/ref/fb/matrixpannernodedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MatrixPannerNodeData](/vext/ref/fb/matrixpannernodedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MatrixPannerNodeData {#constructor-2}
+> **MatrixPannerNodeData**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata))
+
+Casts an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) to [MatrixPannerNodeData](/vext/ref/fb/matrixpannernodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) | The instance to cast to [MatrixPannerNodeData](/vext/ref/fb/matrixpannernodedata). |
+
+### MatrixPannerNodeData {#constructor-3}
+> **MatrixPannerNodeData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MatrixPannerNodeData](/vext/ref/fb/matrixpannernodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MatrixPannerNodeData](/vext/ref/fb/matrixpannernodedata). |
+
+## Properties
+### {{% prop-heading "inValue" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "frontLeft" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "center" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "frontRight" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "rearLeft" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "lfe" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "rearRight" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "farRearLeft" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "farRearRight" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "out" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MatrixPannerNodeData](/vext/ref/fb/matrixpannernodedata) type.
+

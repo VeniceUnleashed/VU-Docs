@@ -1,15 +1,12 @@
 ---
 title: LoopType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **LtNone** | Value: **0** |
+| **LtForward** | Value: **1** |
+| **LtRelease** | Value: **2** |
+| **LtInstantRelease** | Value: **3** |
 
-| Name             | Value | Description |
-| ---------------- | ----- | ----------- |
-| LtNone           | 0     |             |
-| LtForward        | 1     |             |
-| LtRelease        | 2     |             |
-| LtInstantRelease | 3     |             |

@@ -1,16 +1,13 @@
 ---
 title: TextureAddress
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **TaWrap** | Value: **0** |
+| **TaMirror** | Value: **1** |
+| **TaClamp** | Value: **2** |
+| **TaBorder** | Value: **4** |
+| **TaMirrorOnce** | Value: **5** |
 
-| Name         | Value | Description |
-| ------------ | ----- | ----------- |
-| TaWrap       | 0     |             |
-| TaMirror     | 1     |             |
-| TaClamp      | 2     |             |
-| TaBorder     | 4     |             |
-| TaMirrorOnce | 5     |             |

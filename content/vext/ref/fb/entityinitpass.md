@@ -1,14 +1,11 @@
 ---
 title: EntityInitPass
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **EntityInitPass_Early** | Value: **0** |
+| **EntityInitPass_Normal** | Value: **1** |
+| **EntityInitPass_Count** | Value: **2** |
 
-| Name                   | Value | Description |
-| ---------------------- | ----- | ----------- |
-| EntityInitPass\_Early  | 0     |             |
-| EntityInitPass\_Normal | 1     |             |
-| EntityInitPass\_Count  | 2     |             |

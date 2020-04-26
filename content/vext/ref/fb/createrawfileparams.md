@@ -1,44 +1,69 @@
 ---
 title: CreateRawFileParams
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[CreateRawFileParams](#constructor-0)**() |
+| **[CreateRawFileParams](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[CreateRawFileParams](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "assetName" >}} | string |
+| {{< prop "sourceFile" >}} | string |
+| {{< prop "createResource" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "CreateRawFileParams" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### CreateRawFileParams {#constructor-0}
+> **CreateRawFileParams**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| CreateRawFileParams()                                                          | Create a new instance of this container type.                                                                                 |
-| CreateRawFileParams(CreateRawFileParams other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| CreateRawFileParams([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CreateRawFileParams](/vext/ref/fb/createrawfileparams/). |
+Creates a new [CreateRawFileParams](/vext/ref/fb/createrawfileparams) frostbite instance.
 
-## Properties
+### CreateRawFileParams {#constructor-1}
+> **CreateRawFileParams**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name           | Type   | Description |
-| -------------- | ------ | ----------- |
-| assetName      | string |             |
-| sourceFile     | string |             |
-| createResource | bool   |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [CreateRawFileParams](/vext/ref/fb/createrawfileparams/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [CreateRawFileParams](/vext/ref/fb/createrawfileparams/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [CreateRawFileParams](/vext/ref/fb/createrawfileparams) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### CreateRawFileParams {#constructor-2}
+> **CreateRawFileParams**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CreateRawFileParams](/vext/ref/fb/createrawfileparams). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [CreateRawFileParams](/vext/ref/fb/createrawfileparams). |
+
+## Properties
+### {{% prop-heading "assetName" %}}
+> **string**
+
+### {{% prop-heading "sourceFile" %}}
+> **string**
+
+### {{% prop-heading "createResource" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [CreateRawFileParams](/vext/ref/fb/createrawfileparams) type.
+

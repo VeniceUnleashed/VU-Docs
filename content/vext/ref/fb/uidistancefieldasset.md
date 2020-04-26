@@ -1,43 +1,72 @@
 ---
 title: UIDistanceFieldAsset
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIDistanceFieldAsset](#constructor-0)**() |
+| **[UIDistanceFieldAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UIDistanceFieldAsset](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[UIDistanceFieldAsset](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "distanceFieldTexture" >}} | [TextureAsset](/vext/ref/fb/textureasset) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIDistanceFieldAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIDistanceFieldAsset {#constructor-0}
+> **UIDistanceFieldAsset**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| UIDistanceFieldAsset()                                                          | Create a new instance of this container type.                                                                                   |
-| UIDistanceFieldAsset(UIDistanceFieldAsset other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| UIDistanceFieldAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UIDistanceFieldAsset](/vext/ref/fb/uidistancefieldasset/).                                      |
-| UIDistanceFieldAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIDistanceFieldAsset](/vext/ref/fb/uidistancefieldasset/). |
+Creates a new [UIDistanceFieldAsset](/vext/ref/fb/uidistancefieldasset) frostbite instance.
 
-## Properties
+### UIDistanceFieldAsset {#constructor-1}
+> **UIDistanceFieldAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                 | Type                         | Description |
-| -------------------- | ---------------------------- | ----------- |
-| distanceFieldTexture | [TextureAsset](/vext/ref/fb/textureasset/) |             |
-
-## Methods
-
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [UIDistanceFieldAsset](/vext/ref/fb/uidistancefieldasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UIDistanceFieldAsset](/vext/ref/fb/uidistancefieldasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UIDistanceFieldAsset](/vext/ref/fb/uidistancefieldasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UIDistanceFieldAsset {#constructor-2}
+> **UIDistanceFieldAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [UIDistanceFieldAsset](/vext/ref/fb/uidistancefieldasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [UIDistanceFieldAsset](/vext/ref/fb/uidistancefieldasset). |
+
+### UIDistanceFieldAsset {#constructor-3}
+> **UIDistanceFieldAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIDistanceFieldAsset](/vext/ref/fb/uidistancefieldasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UIDistanceFieldAsset](/vext/ref/fb/uidistancefieldasset). |
+
+## Properties
+### {{% prop-heading "distanceFieldTexture" %}}
+> **[TextureAsset](/vext/ref/fb/textureasset)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIDistanceFieldAsset](/vext/ref/fb/uidistancefieldasset) type.
+

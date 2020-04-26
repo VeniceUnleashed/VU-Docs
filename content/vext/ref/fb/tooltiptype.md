@@ -1,13 +1,10 @@
 ---
 title: ToolTipType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **AimAtTeamMateToolTip** | Value: **1** |
+| **AimAtEnemyToolTip** | Value: **2** |
 
-| Name                 | Value | Description |
-| -------------------- | ----- | ----------- |
-| AimAtTeamMateToolTip | 1     |             |
-| AimAtEnemyToolTip    | 2     |             |

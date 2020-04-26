@@ -1,15 +1,12 @@
 ---
 title: XenonShaderBranchType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **XsbtDefault** | Value: **0** |
+| **XsbtPredicate** | Value: **1** |
+| **XsbtPredicateBlock** | Value: **2** |
+| **XsbtBranch** | Value: **3** |
 
-| Name               | Value | Description |
-| ------------------ | ----- | ----------- |
-| XsbtDefault        | 0     |             |
-| XsbtPredicate      | 1     |             |
-| XsbtPredicateBlock | 2     |             |
-| XsbtBranch         | 3     |             |

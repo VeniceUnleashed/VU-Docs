@@ -1,15 +1,12 @@
 ---
 title: ShaderValueParameterType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **SvptLiteral** | Value: **0** |
+| **SvptExternalPermutation** | Value: **1** |
+| **SvptExternalConstant** | Value: **2** |
+| **SvptExternalSubMaterial** | Value: **3** |
 
-| Name                    | Value | Description |
-| ----------------------- | ----- | ----------- |
-| SvptLiteral             | 0     |             |
-| SvptExternalPermutation | 1     |             |
-| SvptExternalConstant    | 2     |             |
-| SvptExternalSubMaterial | 3     |             |

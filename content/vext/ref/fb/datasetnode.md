@@ -1,48 +1,92 @@
 ---
 title: DataSetNode
 ---
-### Base Classes
 
-[UINodeData](/vext/ref/fb/uinodedata/)
+Inherits from 
+[UINodeData](/vext/ref/fb/uinodedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[DataSetNode](#constructor-0)**() |
+| **[DataSetNode](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[DataSetNode](#constructor-2)**(other: [UINodeData](/vext/ref/fb/uinodedata)) |
+| **[DataSetNode](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "inValue" >}} | [UINodePort](/vext/ref/fb/uinodeport) \| nil |
+| {{< prop "out" >}} | [UINodePort](/vext/ref/fb/uinodeport) \| nil |
+| {{< prop "param" >}} | string |
+| {{< prop "dataSource" >}} | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo) |
+| {{< prop "setToEmptyString" >}} | bool |
+| {{< prop "forceUpdate" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "DataSetNode" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### DataSetNode {#constructor-0}
+> **DataSetNode**()
 
-| Constructor                                                            | Description                                                                                                   |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| DataSetNode()                                                          | Create a new instance of this container type.                                                                 |
-| DataSetNode(DataSetNode other)                                         | Create a reference copy of an instance of the same type.                                                      |
-| DataSetNode([UINodeData](/vext/ref/fb/uinodedata/) other)                            | Upcast an instance of type [UINodeData](/vext/ref/fb/uinodedata/) to [DataSetNode](/vext/ref/fb/datasetnode/).                            |
-| DataSetNode([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DataSetNode](/vext/ref/fb/datasetnode/). |
+Creates a new [DataSetNode](/vext/ref/fb/datasetnode) frostbite instance.
 
-## Properties
+### DataSetNode {#constructor-1}
+> **DataSetNode**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name             | Type                                 | Description |
-| ---------------- | ------------------------------------ | ----------- |
-| inValue          | [UINodePort](/vext/ref/fb/uinodeport/)             |             |
-| out              | [UINodePort](/vext/ref/fb/uinodeport/)             |             |
-| param            | string                               |             |
-| dataSource       | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/) |             |
-| setToEmptyString | bool                                 |             |
-| forceUpdate      | bool                                 |             |
-
-## Methods
-
-| Type                       | Name            | Parameters                                     |
-| -------------------------- | --------------- | ---------------------------------------------- |
-| [DataSetNode](/vext/ref/fb/datasetnode/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [DataSetNode](/vext/ref/fb/datasetnode/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [DataSetNode](/vext/ref/fb/datasetnode) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### DataSetNode {#constructor-2}
+> **DataSetNode**(other: [UINodeData](/vext/ref/fb/uinodedata))
+
+Casts an instance of type [UINodeData](/vext/ref/fb/uinodedata) to [DataSetNode](/vext/ref/fb/datasetnode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UINodeData](/vext/ref/fb/uinodedata) | The instance to cast to [DataSetNode](/vext/ref/fb/datasetnode). |
+
+### DataSetNode {#constructor-3}
+> **DataSetNode**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DataSetNode](/vext/ref/fb/datasetnode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DataSetNode](/vext/ref/fb/datasetnode). |
+
+## Properties
+### {{% prop-heading "inValue" %}}
+> **[UINodePort](/vext/ref/fb/uinodeport)** | **nil**
+
+### {{% prop-heading "out" %}}
+> **[UINodePort](/vext/ref/fb/uinodeport)** | **nil**
+
+### {{% prop-heading "param" %}}
+> **string**
+
+### {{% prop-heading "dataSource" %}}
+> **[UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo)**
+
+### {{% prop-heading "setToEmptyString" %}}
+> **bool**
+
+### {{% prop-heading "forceUpdate" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [DataSetNode](/vext/ref/fb/datasetnode) type.
+

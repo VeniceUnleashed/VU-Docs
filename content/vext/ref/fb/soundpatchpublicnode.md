@@ -1,32 +1,57 @@
 ---
 title: SoundPatchPublicNode
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SoundPatchPublicNode](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "node" >}} | [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) \| nil |
+| {{< prop "id" >}} | int |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [SoundPatchPublicNode](/vext/ref/fb/soundpatchpublicnode) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SoundPatchPublicNode" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SoundPatchPublicNode {#constructor-0}
+> **SoundPatchPublicNode**()
 
-| Constructor                                      | Description                                              |
-| ------------------------------------------------ | -------------------------------------------------------- |
-| SoundPatchPublicNode()                           | Create a new instance of this structure type.            |
-| SoundPatchPublicNode(SoundPatchPublicNode other) | Create a reference copy of a structure of the same type. |
+Creates a new [SoundPatchPublicNode](/vext/ref/fb/soundpatchpublicnode) frostbite structure.
 
 ## Properties
+### {{% prop-heading "node" %}}
+> **[AudioGraphNodeData](/vext/ref/fb/audiographnodedata)** | **nil**
 
-| Name | Type                                     | Description |
-| ---- | ---------------------------------------- | ----------- |
-| node | [AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) |             |
-| id   | number                                   |             |
+### {{% prop-heading "id" %}}
+> **int**
 
 ## Methods
-
-| Type                                         | Name            | Parameters |
-| -------------------------------------------- | --------------- | ---------- |
-| [SoundPatchPublicNode](/vext/ref/fb/soundpatchpublicnode/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [SoundPatchPublicNode](/vext/ref/fb/soundpatchpublicnode)
 
-> [SoundPatchPublicNode](/vext/ref/fb/soundpatchpublicnode/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[SoundPatchPublicNode](/vext/ref/fb/soundpatchpublicnode)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SoundPatchPublicNode](/vext/ref/fb/soundpatchpublicnode) type.
+

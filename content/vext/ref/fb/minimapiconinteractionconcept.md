@@ -1,15 +1,12 @@
 ---
 title: MinimapIconInteractionConcept
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **MinimapIconInteractionConcept_None** | Value: **0** |
+| **MinimapIconInteractionConcept_SelectSpawnPoint** | Value: **1** |
+| **MinimapIconInteractionConcept_RemoveOrder** | Value: **2** |
+| **MinimapIconInteractionConcept_AttackDefendCapturePoint** | Value: **3** |
 
-| Name                                                    | Value | Description |
-| ------------------------------------------------------- | ----- | ----------- |
-| MinimapIconInteractionConcept\_None                     | 0     |             |
-| MinimapIconInteractionConcept\_SelectSpawnPoint         | 1     |             |
-| MinimapIconInteractionConcept\_RemoveOrder              | 2     |             |
-| MinimapIconInteractionConcept\_AttackDefendCapturePoint | 3     |             |

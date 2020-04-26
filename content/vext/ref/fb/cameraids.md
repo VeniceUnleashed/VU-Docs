@@ -1,15 +1,12 @@
 ---
 title: CameraIds
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **NoCameraId** | Value: **0** |
+| **FreeCameraId** | Value: **1** |
+| **EntryCameraId** | Value: **2** |
+| **CameraIdCount** | Value: **3** |
 
-| Name          | Value | Description |
-| ------------- | ----- | ----------- |
-| NoCameraId    | 0     |             |
-| FreeCameraId  | 1     |             |
-| EntryCameraId | 2     |             |
-| CameraIdCount | 3     |             |

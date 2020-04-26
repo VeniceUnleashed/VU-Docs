@@ -1,16 +1,13 @@
 ---
 title: RasterNodeUsage
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **RasterNodeUsage_Default** | Value: **0** |
+| **RasterNodeUsage_Disabled** | Value: **1** |
+| **RasterNodeUsage_Persistent** | Value: **2** |
+| **RasterNodeUsage_PersistentDedicatedServer** | Value: **3** |
+| **RasterNodeUsage_Pruned** | Value: **4** |
 
-| Name                                       | Value | Description |
-| ------------------------------------------ | ----- | ----------- |
-| RasterNodeUsage\_Default                   | 0     |             |
-| RasterNodeUsage\_Disabled                  | 1     |             |
-| RasterNodeUsage\_Persistent                | 2     |             |
-| RasterNodeUsage\_PersistentDedicatedServer | 3     |             |
-| RasterNodeUsage\_Pruned                    | 4     |             |

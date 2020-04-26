@@ -1,16 +1,13 @@
 ---
 title: ShaderShadowmapMethod
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ShaderShadowmapMethod_None** | Value: **0** |
+| **ShaderShadowmapMethod_Single** | Value: **1** |
+| **ShaderShadowmapMethod_SingleDiscard** | Value: **2** |
+| **ShaderShadowmapMethod_CascadedBox3** | Value: **3** |
+| **ShaderShadowmapMethod_CascadedBox4** | Value: **4** |
 
-| Name                                 | Value | Description |
-| ------------------------------------ | ----- | ----------- |
-| ShaderShadowmapMethod\_None          | 0     |             |
-| ShaderShadowmapMethod\_Single        | 1     |             |
-| ShaderShadowmapMethod\_SingleDiscard | 2     |             |
-| ShaderShadowmapMethod\_CascadedBox3  | 3     |             |
-| ShaderShadowmapMethod\_CascadedBox4  | 4     |             |

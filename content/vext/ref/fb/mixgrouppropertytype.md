@@ -1,14 +1,11 @@
 ---
 title: MixGroupPropertyType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **MixGroupPropertyType_Gain** | Value: **0** |
+| **MixGroupPropertyType_Pitch** | Value: **1** |
+| **MixGroupPropertyTypeCount** | Value: **2** |
 
-| Name                        | Value | Description |
-| --------------------------- | ----- | ----------- |
-| MixGroupPropertyType\_Gain  | 0     |             |
-| MixGroupPropertyType\_Pitch | 1     |             |
-| MixGroupPropertyTypeCount   | 2     |             |

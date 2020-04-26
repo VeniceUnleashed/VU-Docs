@@ -1,14 +1,11 @@
 ---
 title: PoseType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **PoseType_Current** | Value: **0** |
+| **PoseType_Stand** | Value: **1** |
+| **PoseType_Crouch** | Value: **2** |
 
-| Name              | Value | Description |
-| ----------------- | ----- | ----------- |
-| PoseType\_Current | 0     |             |
-| PoseType\_Stand   | 1     |             |
-| PoseType\_Crouch  | 2     |             |

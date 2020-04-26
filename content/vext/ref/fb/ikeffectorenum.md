@@ -1,13 +1,10 @@
 ---
 title: IKEffectorEnum
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **IKLeftHand** | Value: **0** |
+| **IKRightHand** | Value: **1** |
 
-| Name        | Value | Description |
-| ----------- | ----- | ----------- |
-| IKLeftHand  | 0     |             |
-| IKRightHand | 1     |             |

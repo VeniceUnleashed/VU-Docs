@@ -1,44 +1,76 @@
 ---
 title: UIItemDescriptionAsset
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIItemDescriptionAsset](#constructor-0)**() |
+| **[UIItemDescriptionAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UIItemDescriptionAsset](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[UIItemDescriptionAsset](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "children" >}} | [UIItemDescriptionAsset](/vext/ref/fb/uiitemdescriptionasset)[] |
+| {{< prop "items" >}} | [UIItemDescription](/vext/ref/fb/uiitemdescription)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIItemDescriptionAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIItemDescriptionAsset {#constructor-0}
+> **UIItemDescriptionAsset**()
 
-| Constructor                                                                       | Description                                                                                                                         |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| UIItemDescriptionAsset()                                                          | Create a new instance of this container type.                                                                                       |
-| UIItemDescriptionAsset(UIItemDescriptionAsset other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| UIItemDescriptionAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UIItemDescriptionAsset](/vext/ref/fb/uiitemdescriptionasset/).                                      |
-| UIItemDescriptionAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIItemDescriptionAsset](/vext/ref/fb/uiitemdescriptionasset/). |
+Creates a new [UIItemDescriptionAsset](/vext/ref/fb/uiitemdescriptionasset) frostbite instance.
 
-## Properties
+### UIItemDescriptionAsset {#constructor-1}
+> **UIItemDescriptionAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name     | Type                                                 | Description |
-| -------- | ---------------------------------------------------- | ----------- |
-| children | [UIItemDescriptionAsset](/vext/ref/fb/uiitemdescriptionasset/)\[\] |             |
-| items    | [UIItemDescription](/vext/ref/fb/uiitemdescription/)\[\]           |             |
-
-## Methods
-
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [UIItemDescriptionAsset](/vext/ref/fb/uiitemdescriptionasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UIItemDescriptionAsset](/vext/ref/fb/uiitemdescriptionasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UIItemDescriptionAsset](/vext/ref/fb/uiitemdescriptionasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UIItemDescriptionAsset {#constructor-2}
+> **UIItemDescriptionAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [UIItemDescriptionAsset](/vext/ref/fb/uiitemdescriptionasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [UIItemDescriptionAsset](/vext/ref/fb/uiitemdescriptionasset). |
+
+### UIItemDescriptionAsset {#constructor-3}
+> **UIItemDescriptionAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIItemDescriptionAsset](/vext/ref/fb/uiitemdescriptionasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UIItemDescriptionAsset](/vext/ref/fb/uiitemdescriptionasset). |
+
+## Properties
+### {{% prop-heading "children" %}}
+> **[UIItemDescriptionAsset](/vext/ref/fb/uiitemdescriptionasset)**[]
+
+### {{% prop-heading "items" %}}
+> **[UIItemDescription](/vext/ref/fb/uiitemdescription)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIItemDescriptionAsset](/vext/ref/fb/uiitemdescriptionasset) type.
+

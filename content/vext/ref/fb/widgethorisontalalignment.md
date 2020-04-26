@@ -1,14 +1,11 @@
 ---
 title: WidgetHorisontalAlignment
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **WHA_Left** | Value: **0** |
+| **WHA_Center** | Value: **1** |
+| **WHA_Right** | Value: **2** |
 
-| Name        | Value | Description |
-| ----------- | ----- | ----------- |
-| WHA\_Left   | 0     |             |
-| WHA\_Center | 1     |             |
-| WHA\_Right  | 2     |             |

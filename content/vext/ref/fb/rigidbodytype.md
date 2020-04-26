@@ -1,17 +1,14 @@
 ---
 title: RigidBodyType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **RBTypeCollision** | Value: **0** |
+| **RBTypeDetail** | Value: **1** |
+| **RBTypeCharacter** | Value: **2** |
+| **RBTypeRaycast** | Value: **3** |
+| **RBTypeGroup** | Value: **4** |
+| **RBTypeSize** | Value: **5** |
 
-| Name            | Value | Description |
-| --------------- | ----- | ----------- |
-| RBTypeCollision | 0     |             |
-| RBTypeDetail    | 1     |             |
-| RBTypeCharacter | 2     |             |
-| RBTypeRaycast   | 3     |             |
-| RBTypeGroup     | 4     |             |
-| RBTypeSize      | 5     |             |

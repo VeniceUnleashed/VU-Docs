@@ -1,44 +1,83 @@
 ---
 title: StatsCategoryScoreboardPositionData
 ---
-### Base Classes
 
-[StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/)
+Inherits from 
+[StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[StatsCategoryScoreboardPositionData](#constructor-0)**() |
+| **[StatsCategoryScoreboardPositionData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[StatsCategoryScoreboardPositionData](#constructor-2)**(other: [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata)) |
+| **[StatsCategoryScoreboardPositionData](#constructor-3)**(other: [TreeNodeBase](/vext/ref/fb/treenodebase)) |
+| **[StatsCategoryScoreboardPositionData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "positions" >}} | [ScoreboardPosition](/vext/ref/fb/scoreboardposition)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "StatsCategoryScoreboardPositionData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### StatsCategoryScoreboardPositionData {#constructor-0}
+> **StatsCategoryScoreboardPositionData**()
 
-| Constructor                                                                                    | Description                                                                                                                                                   |
-| ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| StatsCategoryScoreboardPositionData()                                                          | Create a new instance of this container type.                                                                                                                 |
-| StatsCategoryScoreboardPositionData(StatsCategoryScoreboardPositionData other)                 | Create a reference copy of an instance of the same type.                                                                                                      |
-| StatsCategoryScoreboardPositionData([StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/) other)      | Upcast an instance of type [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/) to [StatsCategoryScoreboardPositionData](/vext/ref/fb/statscategoryscoreboardpositiondata/).      |
-| StatsCategoryScoreboardPositionData([TreeNodeBase](/vext/ref/fb/treenodebase/) other)                        | Upcast an instance of type [TreeNodeBase](/vext/ref/fb/treenodebase/) to [StatsCategoryScoreboardPositionData](/vext/ref/fb/statscategoryscoreboardpositiondata/).                        |
-| StatsCategoryScoreboardPositionData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StatsCategoryScoreboardPositionData](/vext/ref/fb/statscategoryscoreboardpositiondata/). |
+Creates a new [StatsCategoryScoreboardPositionData](/vext/ref/fb/statscategoryscoreboardpositiondata) frostbite instance.
 
-## Properties
+### StatsCategoryScoreboardPositionData {#constructor-1}
+> **StatsCategoryScoreboardPositionData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name      | Type                                         | Description |
-| --------- | -------------------------------------------- | ----------- |
-| positions | [ScoreboardPosition](/vext/ref/fb/scoreboardposition/)\[\] |             |
-
-## Methods
-
-| Type                                                                       | Name            | Parameters                                     |
-| -------------------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [StatsCategoryScoreboardPositionData](/vext/ref/fb/statscategoryscoreboardpositiondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [StatsCategoryScoreboardPositionData](/vext/ref/fb/statscategoryscoreboardpositiondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [StatsCategoryScoreboardPositionData](/vext/ref/fb/statscategoryscoreboardpositiondata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### StatsCategoryScoreboardPositionData {#constructor-2}
+> **StatsCategoryScoreboardPositionData**(other: [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata))
+
+Casts an instance of type [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata) to [StatsCategoryScoreboardPositionData](/vext/ref/fb/statscategoryscoreboardpositiondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata) | The instance to cast to [StatsCategoryScoreboardPositionData](/vext/ref/fb/statscategoryscoreboardpositiondata). |
+
+### StatsCategoryScoreboardPositionData {#constructor-3}
+> **StatsCategoryScoreboardPositionData**(other: [TreeNodeBase](/vext/ref/fb/treenodebase))
+
+Casts an instance of type [TreeNodeBase](/vext/ref/fb/treenodebase) to [StatsCategoryScoreboardPositionData](/vext/ref/fb/statscategoryscoreboardpositiondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [TreeNodeBase](/vext/ref/fb/treenodebase) | The instance to cast to [StatsCategoryScoreboardPositionData](/vext/ref/fb/statscategoryscoreboardpositiondata). |
+
+### StatsCategoryScoreboardPositionData {#constructor-4}
+> **StatsCategoryScoreboardPositionData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StatsCategoryScoreboardPositionData](/vext/ref/fb/statscategoryscoreboardpositiondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [StatsCategoryScoreboardPositionData](/vext/ref/fb/statscategoryscoreboardpositiondata). |
+
+## Properties
+### {{% prop-heading "positions" %}}
+> **[ScoreboardPosition](/vext/ref/fb/scoreboardposition)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [StatsCategoryScoreboardPositionData](/vext/ref/fb/statscategoryscoreboardpositiondata) type.
+

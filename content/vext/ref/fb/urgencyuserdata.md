@@ -1,44 +1,69 @@
 ---
 title: UrgencyUserData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UrgencyUserData](#constructor-0)**() |
+| **[UrgencyUserData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UrgencyUserData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "base" >}} | [UrgencyUserData](/vext/ref/fb/urgencyuserdata) \| nil |
+| {{< prop "urgencyModifiers" >}} | [UrgencyModifierData](/vext/ref/fb/urgencymodifierdata)[] |
+| {{< prop "modifierSets" >}} | [UrgencySetData](/vext/ref/fb/urgencysetdata)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UrgencyUserData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UrgencyUserData {#constructor-0}
+> **UrgencyUserData**()
 
-| Constructor                                                                | Description                                                                                                           |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| UrgencyUserData()                                                          | Create a new instance of this container type.                                                                         |
-| UrgencyUserData(UrgencyUserData other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| UrgencyUserData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UrgencyUserData](/vext/ref/fb/urgencyuserdata/). |
+Creates a new [UrgencyUserData](/vext/ref/fb/urgencyuserdata) frostbite instance.
 
-## Properties
+### UrgencyUserData {#constructor-1}
+> **UrgencyUserData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name             | Type                                           | Description |
-| ---------------- | ---------------------------------------------- | ----------- |
-| base             | [UrgencyUserData](/vext/ref/fb/urgencyuserdata/)             |             |
-| urgencyModifiers | [UrgencyModifierData](/vext/ref/fb/urgencymodifierdata/)\[\] |             |
-| modifierSets     | [UrgencySetData](/vext/ref/fb/urgencysetdata/)\[\]           |             |
-
-## Methods
-
-| Type                               | Name            | Parameters                                     |
-| ---------------------------------- | --------------- | ---------------------------------------------- |
-| [UrgencyUserData](/vext/ref/fb/urgencyuserdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UrgencyUserData](/vext/ref/fb/urgencyuserdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UrgencyUserData](/vext/ref/fb/urgencyuserdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UrgencyUserData {#constructor-2}
+> **UrgencyUserData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UrgencyUserData](/vext/ref/fb/urgencyuserdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UrgencyUserData](/vext/ref/fb/urgencyuserdata). |
+
+## Properties
+### {{% prop-heading "base" %}}
+> **[UrgencyUserData](/vext/ref/fb/urgencyuserdata)** | **nil**
+
+### {{% prop-heading "urgencyModifiers" %}}
+> **[UrgencyModifierData](/vext/ref/fb/urgencymodifierdata)**[]
+
+### {{% prop-heading "modifierSets" %}}
+> **[UrgencySetData](/vext/ref/fb/urgencysetdata)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UrgencyUserData](/vext/ref/fb/urgencyuserdata) type.
+

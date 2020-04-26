@@ -1,45 +1,73 @@
 ---
 title: InputRecorderData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[InputRecorderData](#constructor-0)**() |
+| **[InputRecorderData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[InputRecorderData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "fileNamePrefix" >}} | string |
+| {{< prop "fileName" >}} | string |
+| {{< prop "toggleRecordAction" >}} | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum) |
+| {{< prop "autoIncrementFileName" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "InputRecorderData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### InputRecorderData {#constructor-0}
+> **InputRecorderData**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| InputRecorderData()                                                          | Create a new instance of this container type.                                                                             |
-| InputRecorderData(InputRecorderData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| InputRecorderData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [InputRecorderData](/vext/ref/fb/inputrecorderdata/). |
+Creates a new [InputRecorderData](/vext/ref/fb/inputrecorderdata) frostbite instance.
 
-## Properties
+### InputRecorderData {#constructor-1}
+> **InputRecorderData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                  | Type                                         | Description |
-| --------------------- | -------------------------------------------- | ----------- |
-| fileNamePrefix        | string                                       |             |
-| fileName              | string                                       |             |
-| toggleRecordAction    | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum/) |             |
-| autoIncrementFileName | bool                                         |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [InputRecorderData](/vext/ref/fb/inputrecorderdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [InputRecorderData](/vext/ref/fb/inputrecorderdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [InputRecorderData](/vext/ref/fb/inputrecorderdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### InputRecorderData {#constructor-2}
+> **InputRecorderData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [InputRecorderData](/vext/ref/fb/inputrecorderdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [InputRecorderData](/vext/ref/fb/inputrecorderdata). |
+
+## Properties
+### {{% prop-heading "fileNamePrefix" %}}
+> **string**
+
+### {{% prop-heading "fileName" %}}
+> **string**
+
+### {{% prop-heading "toggleRecordAction" %}}
+> **[EntryInputActionEnum](/vext/ref/fb/entryinputactionenum)**
+
+### {{% prop-heading "autoIncrementFileName" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [InputRecorderData](/vext/ref/fb/inputrecorderdata) type.
+

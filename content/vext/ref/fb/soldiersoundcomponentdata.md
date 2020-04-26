@@ -1,48 +1,106 @@
 ---
 title: SoldierSoundComponentData
 ---
-### Base Classes
 
-[ComponentData](/vext/ref/fb/componentdata/)
+Inherits from 
+[ComponentData](/vext/ref/fb/componentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SoldierSoundComponentData](#constructor-0)**() |
+| **[SoldierSoundComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SoldierSoundComponentData](#constructor-2)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[SoldierSoundComponentData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[SoldierSoundComponentData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[SoldierSoundComponentData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "walkVelocityThreshold" >}} | float |
+| {{< prop "runVelocityThreshold" >}} | float |
+| {{< prop "walkPeriod" >}} | float |
+| {{< prop "runPeriod" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SoldierSoundComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SoldierSoundComponentData {#constructor-0}
+> **SoldierSoundComponentData**()
 
-| Constructor                                                                          | Description                                                                                                                               |
-| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| SoldierSoundComponentData()                                                          | Create a new instance of this container type.                                                                                             |
-| SoldierSoundComponentData(SoldierSoundComponentData other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| SoldierSoundComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [SoldierSoundComponentData](/vext/ref/fb/soldiersoundcomponentdata/).                      |
-| SoldierSoundComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [SoldierSoundComponentData](/vext/ref/fb/soldiersoundcomponentdata/).                    |
-| SoldierSoundComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [SoldierSoundComponentData](/vext/ref/fb/soldiersoundcomponentdata/).              |
-| SoldierSoundComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoldierSoundComponentData](/vext/ref/fb/soldiersoundcomponentdata/). |
+Creates a new [SoldierSoundComponentData](/vext/ref/fb/soldiersoundcomponentdata) frostbite instance.
 
-## Properties
+### SoldierSoundComponentData {#constructor-1}
+> **SoldierSoundComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                  | Type   | Description |
-| --------------------- | ------ | ----------- |
-| walkVelocityThreshold | number |             |
-| runVelocityThreshold  | number |             |
-| walkPeriod            | number |             |
-| runPeriod             | number |             |
-
-## Methods
-
-| Type                                                   | Name            | Parameters                                     |
-| ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [SoldierSoundComponentData](/vext/ref/fb/soldiersoundcomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SoldierSoundComponentData](/vext/ref/fb/soldiersoundcomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SoldierSoundComponentData](/vext/ref/fb/soldiersoundcomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SoldierSoundComponentData {#constructor-2}
+> **SoldierSoundComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [SoldierSoundComponentData](/vext/ref/fb/soldiersoundcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [SoldierSoundComponentData](/vext/ref/fb/soldiersoundcomponentdata). |
+
+### SoldierSoundComponentData {#constructor-3}
+> **SoldierSoundComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [SoldierSoundComponentData](/vext/ref/fb/soldiersoundcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [SoldierSoundComponentData](/vext/ref/fb/soldiersoundcomponentdata). |
+
+### SoldierSoundComponentData {#constructor-4}
+> **SoldierSoundComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [SoldierSoundComponentData](/vext/ref/fb/soldiersoundcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [SoldierSoundComponentData](/vext/ref/fb/soldiersoundcomponentdata). |
+
+### SoldierSoundComponentData {#constructor-5}
+> **SoldierSoundComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoldierSoundComponentData](/vext/ref/fb/soldiersoundcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SoldierSoundComponentData](/vext/ref/fb/soldiersoundcomponentdata). |
+
+## Properties
+### {{% prop-heading "walkVelocityThreshold" %}}
+> **float**
+
+### {{% prop-heading "runVelocityThreshold" %}}
+> **float**
+
+### {{% prop-heading "walkPeriod" %}}
+> **float**
+
+### {{% prop-heading "runPeriod" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SoldierSoundComponentData](/vext/ref/fb/soldiersoundcomponentdata) type.
+

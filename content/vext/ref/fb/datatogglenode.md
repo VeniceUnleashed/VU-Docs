@@ -1,45 +1,80 @@
 ---
 title: DataToggleNode
 ---
-### Base Classes
 
-[UINodeData](/vext/ref/fb/uinodedata/)
+Inherits from 
+[UINodeData](/vext/ref/fb/uinodedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[DataToggleNode](#constructor-0)**() |
+| **[DataToggleNode](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[DataToggleNode](#constructor-2)**(other: [UINodeData](/vext/ref/fb/uinodedata)) |
+| **[DataToggleNode](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "inValue" >}} | [UINodePort](/vext/ref/fb/uinodeport) \| nil |
+| {{< prop "out" >}} | [UINodePort](/vext/ref/fb/uinodeport) \| nil |
+| {{< prop "dataSource" >}} | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "DataToggleNode" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### DataToggleNode {#constructor-0}
+> **DataToggleNode**()
 
-| Constructor                                                               | Description                                                                                                         |
-| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| DataToggleNode()                                                          | Create a new instance of this container type.                                                                       |
-| DataToggleNode(DataToggleNode other)                                      | Create a reference copy of an instance of the same type.                                                            |
-| DataToggleNode([UINodeData](/vext/ref/fb/uinodedata/) other)                            | Upcast an instance of type [UINodeData](/vext/ref/fb/uinodedata/) to [DataToggleNode](/vext/ref/fb/datatogglenode/).                            |
-| DataToggleNode([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DataToggleNode](/vext/ref/fb/datatogglenode/). |
+Creates a new [DataToggleNode](/vext/ref/fb/datatogglenode) frostbite instance.
 
-## Properties
+### DataToggleNode {#constructor-1}
+> **DataToggleNode**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name       | Type                                 | Description |
-| ---------- | ------------------------------------ | ----------- |
-| inValue    | [UINodePort](/vext/ref/fb/uinodeport/)             |             |
-| out        | [UINodePort](/vext/ref/fb/uinodeport/)             |             |
-| dataSource | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/) |             |
-
-## Methods
-
-| Type                             | Name            | Parameters                                     |
-| -------------------------------- | --------------- | ---------------------------------------------- |
-| [DataToggleNode](/vext/ref/fb/datatogglenode/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [DataToggleNode](/vext/ref/fb/datatogglenode/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [DataToggleNode](/vext/ref/fb/datatogglenode) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### DataToggleNode {#constructor-2}
+> **DataToggleNode**(other: [UINodeData](/vext/ref/fb/uinodedata))
+
+Casts an instance of type [UINodeData](/vext/ref/fb/uinodedata) to [DataToggleNode](/vext/ref/fb/datatogglenode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UINodeData](/vext/ref/fb/uinodedata) | The instance to cast to [DataToggleNode](/vext/ref/fb/datatogglenode). |
+
+### DataToggleNode {#constructor-3}
+> **DataToggleNode**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DataToggleNode](/vext/ref/fb/datatogglenode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DataToggleNode](/vext/ref/fb/datatogglenode). |
+
+## Properties
+### {{% prop-heading "inValue" %}}
+> **[UINodePort](/vext/ref/fb/uinodeport)** | **nil**
+
+### {{% prop-heading "out" %}}
+> **[UINodePort](/vext/ref/fb/uinodeport)** | **nil**
+
+### {{% prop-heading "dataSource" %}}
+> **[UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [DataToggleNode](/vext/ref/fb/datatogglenode) type.
+

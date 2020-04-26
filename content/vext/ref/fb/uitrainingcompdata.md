@@ -1,38 +1,74 @@
 ---
 title: UITrainingCompData
 ---
-### Base Classes
 
-[UIComponentData](/vext/ref/fb/uicomponentdata/)
+Inherits from 
+[UIComponentData](/vext/ref/fb/uicomponentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UITrainingCompData](#constructor-0)**() |
+| **[UITrainingCompData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UITrainingCompData](#constructor-2)**(other: [UIComponentData](/vext/ref/fb/uicomponentdata)) |
+| **[UITrainingCompData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[UITrainingCompData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UITrainingCompData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UITrainingCompData {#constructor-0}
+> **UITrainingCompData**()
 
-| Constructor                                                                   | Description                                                                                                                 |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| UITrainingCompData()                                                          | Create a new instance of this container type.                                                                               |
-| UITrainingCompData(UITrainingCompData other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| UITrainingCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UITrainingCompData](/vext/ref/fb/uitrainingcompdata/).                  |
-| UITrainingCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UITrainingCompData](/vext/ref/fb/uitrainingcompdata/).                                      |
-| UITrainingCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UITrainingCompData](/vext/ref/fb/uitrainingcompdata/). |
+Creates a new [UITrainingCompData](/vext/ref/fb/uitrainingcompdata) frostbite instance.
 
-## Methods
+### UITrainingCompData {#constructor-1}
+> **UITrainingCompData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                     | Name            | Parameters                                     |
-| ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [UITrainingCompData](/vext/ref/fb/uitrainingcompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UITrainingCompData](/vext/ref/fb/uitrainingcompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UITrainingCompData](/vext/ref/fb/uitrainingcompdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UITrainingCompData {#constructor-2}
+> **UITrainingCompData**(other: [UIComponentData](/vext/ref/fb/uicomponentdata))
+
+Casts an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata) to [UITrainingCompData](/vext/ref/fb/uitrainingcompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIComponentData](/vext/ref/fb/uicomponentdata) | The instance to cast to [UITrainingCompData](/vext/ref/fb/uitrainingcompdata). |
+
+### UITrainingCompData {#constructor-3}
+> **UITrainingCompData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [UITrainingCompData](/vext/ref/fb/uitrainingcompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [UITrainingCompData](/vext/ref/fb/uitrainingcompdata). |
+
+### UITrainingCompData {#constructor-4}
+> **UITrainingCompData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UITrainingCompData](/vext/ref/fb/uitrainingcompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UITrainingCompData](/vext/ref/fb/uitrainingcompdata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UITrainingCompData](/vext/ref/fb/uitrainingcompdata) type.
+

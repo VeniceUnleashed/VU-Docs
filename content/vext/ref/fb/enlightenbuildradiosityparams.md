@@ -1,36 +1,52 @@
 ---
 title: EnlightenBuildRadiosityParams
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[EnlightenBuildRadiosityParams](#constructor-0)**() |
+| **[EnlightenBuildRadiosityParams](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[EnlightenBuildRadiosityParams](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "EnlightenBuildRadiosityParams" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### EnlightenBuildRadiosityParams {#constructor-0}
+> **EnlightenBuildRadiosityParams**()
 
-| Constructor                                                                              | Description                                                                                                                                       |
-| ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| EnlightenBuildRadiosityParams()                                                          | Create a new instance of this container type.                                                                                                     |
-| EnlightenBuildRadiosityParams(EnlightenBuildRadiosityParams other)                       | Create a reference copy of an instance of the same type.                                                                                          |
-| EnlightenBuildRadiosityParams([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EnlightenBuildRadiosityParams](/vext/ref/fb/enlightenbuildradiosityparams/). |
+Creates a new [EnlightenBuildRadiosityParams](/vext/ref/fb/enlightenbuildradiosityparams) frostbite instance.
 
-## Methods
+### EnlightenBuildRadiosityParams {#constructor-1}
+> **EnlightenBuildRadiosityParams**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                                           | Name            | Parameters                                     |
-| -------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [EnlightenBuildRadiosityParams](/vext/ref/fb/enlightenbuildradiosityparams/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [EnlightenBuildRadiosityParams](/vext/ref/fb/enlightenbuildradiosityparams/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [EnlightenBuildRadiosityParams](/vext/ref/fb/enlightenbuildradiosityparams) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### EnlightenBuildRadiosityParams {#constructor-2}
+> **EnlightenBuildRadiosityParams**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EnlightenBuildRadiosityParams](/vext/ref/fb/enlightenbuildradiosityparams). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [EnlightenBuildRadiosityParams](/vext/ref/fb/enlightenbuildradiosityparams). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [EnlightenBuildRadiosityParams](/vext/ref/fb/enlightenbuildradiosityparams) type.
+

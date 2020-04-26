@@ -1,44 +1,83 @@
 ---
 title: ClientJuiceState
 ---
-### Base Classes
 
-[MetricState](/vext/ref/fb/metricstate/)
+Inherits from 
+[MetricState](/vext/ref/fb/metricstate)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ClientJuiceState](#constructor-0)**() |
+| **[ClientJuiceState](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ClientJuiceState](#constructor-2)**(other: [MetricState](/vext/ref/fb/metricstate)) |
+| **[ClientJuiceState](#constructor-3)**(other: [MetricEvent](/vext/ref/fb/metricevent)) |
+| **[ClientJuiceState](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "sessionId" >}} | int |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ClientJuiceState" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ClientJuiceState {#constructor-0}
+> **ClientJuiceState**()
 
-| Constructor                                                                 | Description                                                                                                             |
-| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| ClientJuiceState()                                                          | Create a new instance of this container type.                                                                           |
-| ClientJuiceState(ClientJuiceState other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| ClientJuiceState([MetricState](/vext/ref/fb/metricstate/) other)                          | Upcast an instance of type [MetricState](/vext/ref/fb/metricstate/) to [ClientJuiceState](/vext/ref/fb/clientjuicestate/).                          |
-| ClientJuiceState([MetricEvent](/vext/ref/fb/metricevent/) other)                          | Upcast an instance of type [MetricEvent](/vext/ref/fb/metricevent/) to [ClientJuiceState](/vext/ref/fb/clientjuicestate/).                          |
-| ClientJuiceState([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ClientJuiceState](/vext/ref/fb/clientjuicestate/). |
+Creates a new [ClientJuiceState](/vext/ref/fb/clientjuicestate) frostbite instance.
 
-## Properties
+### ClientJuiceState {#constructor-1}
+> **ClientJuiceState**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name      | Type   | Description |
-| --------- | ------ | ----------- |
-| sessionId | number |             |
-
-## Methods
-
-| Type                                 | Name            | Parameters                                     |
-| ------------------------------------ | --------------- | ---------------------------------------------- |
-| [ClientJuiceState](/vext/ref/fb/clientjuicestate/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ClientJuiceState](/vext/ref/fb/clientjuicestate/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ClientJuiceState](/vext/ref/fb/clientjuicestate) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ClientJuiceState {#constructor-2}
+> **ClientJuiceState**(other: [MetricState](/vext/ref/fb/metricstate))
+
+Casts an instance of type [MetricState](/vext/ref/fb/metricstate) to [ClientJuiceState](/vext/ref/fb/clientjuicestate). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [MetricState](/vext/ref/fb/metricstate) | The instance to cast to [ClientJuiceState](/vext/ref/fb/clientjuicestate). |
+
+### ClientJuiceState {#constructor-3}
+> **ClientJuiceState**(other: [MetricEvent](/vext/ref/fb/metricevent))
+
+Casts an instance of type [MetricEvent](/vext/ref/fb/metricevent) to [ClientJuiceState](/vext/ref/fb/clientjuicestate). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [MetricEvent](/vext/ref/fb/metricevent) | The instance to cast to [ClientJuiceState](/vext/ref/fb/clientjuicestate). |
+
+### ClientJuiceState {#constructor-4}
+> **ClientJuiceState**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ClientJuiceState](/vext/ref/fb/clientjuicestate). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ClientJuiceState](/vext/ref/fb/clientjuicestate). |
+
+## Properties
+### {{% prop-heading "sessionId" %}}
+> **int**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ClientJuiceState](/vext/ref/fb/clientjuicestate) type.
+

@@ -1,14 +1,11 @@
 ---
 title: ModifierAxis
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **maLeft** | Value: **0** |
+| **maUp** | Value: **1** |
+| **maForward** | Value: **2** |
 
-| Name      | Value | Description |
-| --------- | ----- | ----------- |
-| maLeft    | 0     |             |
-| maUp      | 1     |             |
-| maForward | 2     |             |

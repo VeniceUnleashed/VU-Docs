@@ -1,57 +1,121 @@
 ---
 title: FogEffectState
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[FogEffectState](#constructor-0)**() |
+| **[FogEffectState](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[FogEffectState](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "fogColorCurve" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "curve" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "fogColor" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "start" >}} | float |
+| {{< prop "endValue" >}} | float |
+| {{< prop "fogColorStart" >}} | float |
+| {{< prop "fogColorEnd" >}} | float |
+| {{< prop "heightFogVisibilityRange" >}} | float |
+| {{< prop "transparencyFadeStart" >}} | float |
+| {{< prop "transparencyFadeEnd" >}} | float |
+| {{< prop "transparencyFadeClamp" >}} | float |
+| {{< prop "heightFogDepth" >}} | float |
+| {{< prop "heightFogFollowCamera" >}} | float |
+| {{< prop "heightFogAltitude" >}} | float |
+| {{< prop "heightFogEnable" >}} | bool |
+| {{< prop "enable" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "FogEffectState" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### FogEffectState {#constructor-0}
+> **FogEffectState**()
 
-| Constructor                                                               | Description                                                                                                         |
-| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| FogEffectState()                                                          | Create a new instance of this container type.                                                                       |
-| FogEffectState(FogEffectState other)                                      | Create a reference copy of an instance of the same type.                                                            |
-| FogEffectState([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [FogEffectState](/vext/ref/fb/fogeffectstate/). |
+Creates a new [FogEffectState](/vext/ref/fb/fogeffectstate) frostbite instance.
 
-## Properties
+### FogEffectState {#constructor-1}
+> **FogEffectState**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                     | Type                              | Description |
-| ------------------------ | --------------------------------- | ----------- |
-| fogColorCurve            | [Vec4](/vext/ref/shared/class/vec4) |             |
-| curve                    | [Vec4](/vext/ref/shared/class/vec4) |             |
-| fogColor                 | [Vec3](/vext/ref/shared/class/vec3) |             |
-| start                    | number                            |             |
-| endValue                 | number                            |             |
-| fogColorStart            | number                            |             |
-| fogColorEnd              | number                            |             |
-| heightFogVisibilityRange | number                            |             |
-| transparencyFadeStart    | number                            |             |
-| transparencyFadeEnd      | number                            |             |
-| transparencyFadeClamp    | number                            |             |
-| heightFogDepth           | number                            |             |
-| heightFogFollowCamera    | number                            |             |
-| heightFogAltitude        | number                            |             |
-| heightFogEnable          | bool                              |             |
-| enable                   | bool                              |             |
-
-## Methods
-
-| Type                             | Name            | Parameters                                     |
-| -------------------------------- | --------------- | ---------------------------------------------- |
-| [FogEffectState](/vext/ref/fb/fogeffectstate/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [FogEffectState](/vext/ref/fb/fogeffectstate/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [FogEffectState](/vext/ref/fb/fogeffectstate) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### FogEffectState {#constructor-2}
+> **FogEffectState**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [FogEffectState](/vext/ref/fb/fogeffectstate). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [FogEffectState](/vext/ref/fb/fogeffectstate). |
+
+## Properties
+### {{% prop-heading "fogColorCurve" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "curve" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "fogColor" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "start" %}}
+> **float**
+
+### {{% prop-heading "endValue" %}}
+> **float**
+
+### {{% prop-heading "fogColorStart" %}}
+> **float**
+
+### {{% prop-heading "fogColorEnd" %}}
+> **float**
+
+### {{% prop-heading "heightFogVisibilityRange" %}}
+> **float**
+
+### {{% prop-heading "transparencyFadeStart" %}}
+> **float**
+
+### {{% prop-heading "transparencyFadeEnd" %}}
+> **float**
+
+### {{% prop-heading "transparencyFadeClamp" %}}
+> **float**
+
+### {{% prop-heading "heightFogDepth" %}}
+> **float**
+
+### {{% prop-heading "heightFogFollowCamera" %}}
+> **float**
+
+### {{% prop-heading "heightFogAltitude" %}}
+> **float**
+
+### {{% prop-heading "heightFogEnable" %}}
+> **bool**
+
+### {{% prop-heading "enable" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [FogEffectState](/vext/ref/fb/fogeffectstate) type.
+

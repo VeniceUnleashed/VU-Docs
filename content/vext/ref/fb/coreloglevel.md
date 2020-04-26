@@ -1,22 +1,19 @@
 ---
 title: CoreLogLevel
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **CllNone** | Value: **0** |
+| **CllEventRecord** | Value: **1** |
+| **CllCrash** | Value: **2** |
+| **CllError** | Value: **3** |
+| **CllAssert** | Value: **4** |
+| **CllFatalAssert** | Value: **5** |
+| **CllValidate** | Value: **6** |
+| **CllWarning** | Value: **7** |
+| **CllInfo** | Value: **8** |
+| **CllOutput** | Value: **9** |
+| **CllDebug** | Value: **10** |
 
-| Name           | Value | Description |
-| -------------- | ----- | ----------- |
-| CllNone        | 0     |             |
-| CllEventRecord | 1     |             |
-| CllCrash       | 2     |             |
-| CllError       | 3     |             |
-| CllAssert      | 4     |             |
-| CllFatalAssert | 5     |             |
-| CllValidate    | 6     |             |
-| CllWarning     | 7     |             |
-| CllInfo        | 8     |             |
-| CllOutput      | 9     |             |
-| CllDebug       | 10    |             |

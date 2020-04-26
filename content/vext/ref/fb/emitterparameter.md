@@ -1,19 +1,16 @@
 ---
 title: EmitterParameter
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **EmitterParameterNone** | Value: **0** |
+| **EmitterParameter1** | Value: **1** |
+| **EmitterParameter2** | Value: **2** |
+| **EmitterParameter3** | Value: **3** |
+| **EmitterParameter4** | Value: **4** |
+| **EmitterParameterVec** | Value: **5** |
+| **EmitterParameterDistance** | Value: **6** |
+| **EmitterParameterVecAverage** | Value: **7** |
 
-| Name                       | Value | Description |
-| -------------------------- | ----- | ----------- |
-| EmitterParameterNone       | 0     |             |
-| EmitterParameter1          | 1     |             |
-| EmitterParameter2          | 2     |             |
-| EmitterParameter3          | 3     |             |
-| EmitterParameter4          | 4     |             |
-| EmitterParameterVec        | 5     |             |
-| EmitterParameterDistance   | 6     |             |
-| EmitterParameterVecAverage | 7     |             |

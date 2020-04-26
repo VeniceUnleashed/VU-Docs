@@ -1,55 +1,120 @@
 ---
 title: WindowSettings
 ---
-### Base Classes
 
-[SystemSettings](/vext/ref/fb/systemsettings/)
+Inherits from 
+[SystemSettings](/vext/ref/fb/systemsettings)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[WindowSettings](#constructor-0)**() |
+| **[WindowSettings](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[WindowSettings](#constructor-2)**(other: [SystemSettings](/vext/ref/fb/systemsettings)) |
+| **[WindowSettings](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "posX" >}} | int |
+| {{< prop "posY" >}} | int |
+| {{< prop "width" >}} | int |
+| {{< prop "height" >}} | int |
+| {{< prop "bordersEnable" >}} | bool |
+| {{< prop "autoSize" >}} | bool |
+| {{< prop "fullscreenAutoSize" >}} | bool |
+| {{< prop "fullscreenWhenJoiningServer" >}} | bool |
+| {{< prop "enableEscape" >}} | bool |
+| {{< prop "enableInputOnActivate" >}} | bool |
+| {{< prop "hibernateOnClose" >}} | bool |
+| {{< prop "hidden" >}} | bool |
+| {{< prop "minimized" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "WindowSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### WindowSettings {#constructor-0}
+> **WindowSettings**()
 
-| Constructor                                                               | Description                                                                                                         |
-| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| WindowSettings()                                                          | Create a new instance of this container type.                                                                       |
-| WindowSettings(WindowSettings other)                                      | Create a reference copy of an instance of the same type.                                                            |
-| WindowSettings([SystemSettings](/vext/ref/fb/systemsettings/) other)                    | Upcast an instance of type [SystemSettings](/vext/ref/fb/systemsettings/) to [WindowSettings](/vext/ref/fb/windowsettings/).                    |
-| WindowSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WindowSettings](/vext/ref/fb/windowsettings/). |
+Creates a new [WindowSettings](/vext/ref/fb/windowsettings) frostbite instance.
 
-## Properties
+### WindowSettings {#constructor-1}
+> **WindowSettings**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                        | Type   | Description |
-| --------------------------- | ------ | ----------- |
-| posX                        | number |             |
-| posY                        | number |             |
-| width                       | number |             |
-| height                      | number |             |
-| bordersEnable               | bool   |             |
-| autoSize                    | bool   |             |
-| fullscreenAutoSize          | bool   |             |
-| fullscreenWhenJoiningServer | bool   |             |
-| enableEscape                | bool   |             |
-| enableInputOnActivate       | bool   |             |
-| hibernateOnClose            | bool   |             |
-| hidden                      | bool   |             |
-| minimized                   | bool   |             |
-
-## Methods
-
-| Type                             | Name            | Parameters                                     |
-| -------------------------------- | --------------- | ---------------------------------------------- |
-| [WindowSettings](/vext/ref/fb/windowsettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [WindowSettings](/vext/ref/fb/windowsettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [WindowSettings](/vext/ref/fb/windowsettings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### WindowSettings {#constructor-2}
+> **WindowSettings**(other: [SystemSettings](/vext/ref/fb/systemsettings))
+
+Casts an instance of type [SystemSettings](/vext/ref/fb/systemsettings) to [WindowSettings](/vext/ref/fb/windowsettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SystemSettings](/vext/ref/fb/systemsettings) | The instance to cast to [WindowSettings](/vext/ref/fb/windowsettings). |
+
+### WindowSettings {#constructor-3}
+> **WindowSettings**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WindowSettings](/vext/ref/fb/windowsettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [WindowSettings](/vext/ref/fb/windowsettings). |
+
+## Properties
+### {{% prop-heading "posX" %}}
+> **int**
+
+### {{% prop-heading "posY" %}}
+> **int**
+
+### {{% prop-heading "width" %}}
+> **int**
+
+### {{% prop-heading "height" %}}
+> **int**
+
+### {{% prop-heading "bordersEnable" %}}
+> **bool**
+
+### {{% prop-heading "autoSize" %}}
+> **bool**
+
+### {{% prop-heading "fullscreenAutoSize" %}}
+> **bool**
+
+### {{% prop-heading "fullscreenWhenJoiningServer" %}}
+> **bool**
+
+### {{% prop-heading "enableEscape" %}}
+> **bool**
+
+### {{% prop-heading "enableInputOnActivate" %}}
+> **bool**
+
+### {{% prop-heading "hibernateOnClose" %}}
+> **bool**
+
+### {{% prop-heading "hidden" %}}
+> **bool**
+
+### {{% prop-heading "minimized" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [WindowSettings](/vext/ref/fb/windowsettings) type.
+

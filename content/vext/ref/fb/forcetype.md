@@ -1,13 +1,10 @@
 ---
 title: ForceType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **FTForce** | Value: **0** |
+| **FTTorque** | Value: **1** |
 
-| Name     | Value | Description |
-| -------- | ----- | ----------- |
-| FTForce  | 0     |             |
-| FTTorque | 1     |             |

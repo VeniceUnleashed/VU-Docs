@@ -1,44 +1,83 @@
 ---
 title: TurbulanceData
 ---
-### Base Classes
 
-[ProcessorData](/vext/ref/fb/processordata/)
+Inherits from 
+[ProcessorData](/vext/ref/fb/processordata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[TurbulanceData](#constructor-0)**() |
+| **[TurbulanceData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[TurbulanceData](#constructor-2)**(other: [ProcessorData](/vext/ref/fb/processordata)) |
+| **[TurbulanceData](#constructor-3)**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata)) |
+| **[TurbulanceData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "intensity" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "TurbulanceData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### TurbulanceData {#constructor-0}
+> **TurbulanceData**()
 
-| Constructor                                                               | Description                                                                                                         |
-| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| TurbulanceData()                                                          | Create a new instance of this container type.                                                                       |
-| TurbulanceData(TurbulanceData other)                                      | Create a reference copy of an instance of the same type.                                                            |
-| TurbulanceData([ProcessorData](/vext/ref/fb/processordata/) other)                      | Upcast an instance of type [ProcessorData](/vext/ref/fb/processordata/) to [TurbulanceData](/vext/ref/fb/turbulancedata/).                      |
-| TurbulanceData([EmitterComponentData](/vext/ref/fb/emittercomponentdata/) other)        | Upcast an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata/) to [TurbulanceData](/vext/ref/fb/turbulancedata/).        |
-| TurbulanceData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TurbulanceData](/vext/ref/fb/turbulancedata/). |
+Creates a new [TurbulanceData](/vext/ref/fb/turbulancedata) frostbite instance.
 
-## Properties
+### TurbulanceData {#constructor-1}
+> **TurbulanceData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name      | Type   | Description |
-| --------- | ------ | ----------- |
-| intensity | number |             |
-
-## Methods
-
-| Type                             | Name            | Parameters                                     |
-| -------------------------------- | --------------- | ---------------------------------------------- |
-| [TurbulanceData](/vext/ref/fb/turbulancedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [TurbulanceData](/vext/ref/fb/turbulancedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [TurbulanceData](/vext/ref/fb/turbulancedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### TurbulanceData {#constructor-2}
+> **TurbulanceData**(other: [ProcessorData](/vext/ref/fb/processordata))
+
+Casts an instance of type [ProcessorData](/vext/ref/fb/processordata) to [TurbulanceData](/vext/ref/fb/turbulancedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ProcessorData](/vext/ref/fb/processordata) | The instance to cast to [TurbulanceData](/vext/ref/fb/turbulancedata). |
+
+### TurbulanceData {#constructor-3}
+> **TurbulanceData**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata))
+
+Casts an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata) to [TurbulanceData](/vext/ref/fb/turbulancedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EmitterComponentData](/vext/ref/fb/emittercomponentdata) | The instance to cast to [TurbulanceData](/vext/ref/fb/turbulancedata). |
+
+### TurbulanceData {#constructor-4}
+> **TurbulanceData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TurbulanceData](/vext/ref/fb/turbulancedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [TurbulanceData](/vext/ref/fb/turbulancedata). |
+
+## Properties
+### {{% prop-heading "intensity" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [TurbulanceData](/vext/ref/fb/turbulancedata) type.
+

@@ -1,14 +1,11 @@
 ---
 title: TeamAssignMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **TamEqualTeams** | Value: **0** |
+| **TamFullTeams** | Value: **1** |
+| **TamOneTeam** | Value: **2** |
 
-| Name          | Value | Description |
-| ------------- | ----- | ----------- |
-| TamEqualTeams | 0     |             |
-| TamFullTeams  | 1     |             |
-| TamOneTeam    | 2     |             |

@@ -1,12 +1,9 @@
 ---
 title: UIConstants
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **UIConstants_MaxCaptureAreas** | Value: **16** |
 
-| Name                         | Value | Description |
-| ---------------------------- | ----- | ----------- |
-| UIConstants\_MaxCaptureAreas | 16    |             |

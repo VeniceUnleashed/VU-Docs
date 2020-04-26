@@ -1,37 +1,63 @@
 ---
 title: AudioGraphEvent
 ---
-### Base Classes
 
-[AudioGraphParameter](/vext/ref/fb/audiographparameter/)
+Inherits from 
+[AudioGraphParameter](/vext/ref/fb/audiographparameter)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AudioGraphEvent](#constructor-0)**() |
+| **[AudioGraphEvent](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[AudioGraphEvent](#constructor-2)**(other: [AudioGraphParameter](/vext/ref/fb/audiographparameter)) |
+| **[AudioGraphEvent](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AudioGraphEvent" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AudioGraphEvent {#constructor-0}
+> **AudioGraphEvent**()
 
-| Constructor                                                                | Description                                                                                                           |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| AudioGraphEvent()                                                          | Create a new instance of this container type.                                                                         |
-| AudioGraphEvent(AudioGraphEvent other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| AudioGraphEvent([AudioGraphParameter](/vext/ref/fb/audiographparameter/) other)          | Upcast an instance of type [AudioGraphParameter](/vext/ref/fb/audiographparameter/) to [AudioGraphEvent](/vext/ref/fb/audiographevent/).          |
-| AudioGraphEvent([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AudioGraphEvent](/vext/ref/fb/audiographevent/). |
+Creates a new [AudioGraphEvent](/vext/ref/fb/audiographevent) frostbite instance.
 
-## Methods
+### AudioGraphEvent {#constructor-1}
+> **AudioGraphEvent**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                               | Name            | Parameters                                     |
-| ---------------------------------- | --------------- | ---------------------------------------------- |
-| [AudioGraphEvent](/vext/ref/fb/audiographevent/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [AudioGraphEvent](/vext/ref/fb/audiographevent/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [AudioGraphEvent](/vext/ref/fb/audiographevent) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### AudioGraphEvent {#constructor-2}
+> **AudioGraphEvent**(other: [AudioGraphParameter](/vext/ref/fb/audiographparameter))
+
+Casts an instance of type [AudioGraphParameter](/vext/ref/fb/audiographparameter) to [AudioGraphEvent](/vext/ref/fb/audiographevent). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AudioGraphParameter](/vext/ref/fb/audiographparameter) | The instance to cast to [AudioGraphEvent](/vext/ref/fb/audiographevent). |
+
+### AudioGraphEvent {#constructor-3}
+> **AudioGraphEvent**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AudioGraphEvent](/vext/ref/fb/audiographevent). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [AudioGraphEvent](/vext/ref/fb/audiographevent). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AudioGraphEvent](/vext/ref/fb/audiographevent) type.
+

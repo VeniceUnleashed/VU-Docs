@@ -1,17 +1,14 @@
 ---
 title: UIMessageEntityType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **UIMessageEntityType_Message** | Value: **0** |
+| **UIMessageEntityType_Tooltip** | Value: **1** |
+| **UIMessageEntityType_LogLines** | Value: **2** |
+| **UIMessageEntityType_Subtitle** | Value: **3** |
+| **UIMessageEntityType_FailState** | Value: **4** |
+| **UIMessageEntityType_OutOfBounds** | Value: **5** |
 
-| Name                             | Value | Description |
-| -------------------------------- | ----- | ----------- |
-| UIMessageEntityType\_Message     | 0     |             |
-| UIMessageEntityType\_Tooltip     | 1     |             |
-| UIMessageEntityType\_LogLines    | 2     |             |
-| UIMessageEntityType\_Subtitle    | 3     |             |
-| UIMessageEntityType\_FailState   | 4     |             |
-| UIMessageEntityType\_OutOfBounds | 5     |             |

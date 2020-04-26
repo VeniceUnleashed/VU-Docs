@@ -1,43 +1,72 @@
 ---
 title: EnlightenRuntimeConfig
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[EnlightenRuntimeConfig](#constructor-0)**() |
+| **[EnlightenRuntimeConfig](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[EnlightenRuntimeConfig](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[EnlightenRuntimeConfig](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "jobCount" >}} | int |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "EnlightenRuntimeConfig" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### EnlightenRuntimeConfig {#constructor-0}
+> **EnlightenRuntimeConfig**()
 
-| Constructor                                                                       | Description                                                                                                                         |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| EnlightenRuntimeConfig()                                                          | Create a new instance of this container type.                                                                                       |
-| EnlightenRuntimeConfig(EnlightenRuntimeConfig other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| EnlightenRuntimeConfig([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [EnlightenRuntimeConfig](/vext/ref/fb/enlightenruntimeconfig/).                                      |
-| EnlightenRuntimeConfig([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EnlightenRuntimeConfig](/vext/ref/fb/enlightenruntimeconfig/). |
+Creates a new [EnlightenRuntimeConfig](/vext/ref/fb/enlightenruntimeconfig) frostbite instance.
 
-## Properties
+### EnlightenRuntimeConfig {#constructor-1}
+> **EnlightenRuntimeConfig**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name     | Type   | Description |
-| -------- | ------ | ----------- |
-| jobCount | number |             |
-
-## Methods
-
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [EnlightenRuntimeConfig](/vext/ref/fb/enlightenruntimeconfig/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [EnlightenRuntimeConfig](/vext/ref/fb/enlightenruntimeconfig/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [EnlightenRuntimeConfig](/vext/ref/fb/enlightenruntimeconfig) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### EnlightenRuntimeConfig {#constructor-2}
+> **EnlightenRuntimeConfig**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [EnlightenRuntimeConfig](/vext/ref/fb/enlightenruntimeconfig). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [EnlightenRuntimeConfig](/vext/ref/fb/enlightenruntimeconfig). |
+
+### EnlightenRuntimeConfig {#constructor-3}
+> **EnlightenRuntimeConfig**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EnlightenRuntimeConfig](/vext/ref/fb/enlightenruntimeconfig). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [EnlightenRuntimeConfig](/vext/ref/fb/enlightenruntimeconfig). |
+
+## Properties
+### {{% prop-heading "jobCount" %}}
+> **int**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [EnlightenRuntimeConfig](/vext/ref/fb/enlightenruntimeconfig) type.
+

@@ -1,46 +1,91 @@
 ---
 title: PolynomialColorInterpData
 ---
-### Base Classes
 
-[EvaluatorData](/vext/ref/fb/evaluatordata/)
+Inherits from 
+[EvaluatorData](/vext/ref/fb/evaluatordata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PolynomialColorInterpData](#constructor-0)**() |
+| **[PolynomialColorInterpData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PolynomialColorInterpData](#constructor-2)**(other: [EvaluatorData](/vext/ref/fb/evaluatordata)) |
+| **[PolynomialColorInterpData](#constructor-3)**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata)) |
+| **[PolynomialColorInterpData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "color0" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "color1" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "coefficients" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PolynomialColorInterpData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PolynomialColorInterpData {#constructor-0}
+> **PolynomialColorInterpData**()
 
-| Constructor                                                                          | Description                                                                                                                               |
-| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| PolynomialColorInterpData()                                                          | Create a new instance of this container type.                                                                                             |
-| PolynomialColorInterpData(PolynomialColorInterpData other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| PolynomialColorInterpData([EvaluatorData](/vext/ref/fb/evaluatordata/) other)                      | Upcast an instance of type [EvaluatorData](/vext/ref/fb/evaluatordata/) to [PolynomialColorInterpData](/vext/ref/fb/polynomialcolorinterpdata/).                      |
-| PolynomialColorInterpData([EmitterComponentData](/vext/ref/fb/emittercomponentdata/) other)        | Upcast an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata/) to [PolynomialColorInterpData](/vext/ref/fb/polynomialcolorinterpdata/).        |
-| PolynomialColorInterpData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PolynomialColorInterpData](/vext/ref/fb/polynomialcolorinterpdata/). |
+Creates a new [PolynomialColorInterpData](/vext/ref/fb/polynomialcolorinterpdata) frostbite instance.
 
-## Properties
+### PolynomialColorInterpData {#constructor-1}
+> **PolynomialColorInterpData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name         | Type                              | Description |
-| ------------ | --------------------------------- | ----------- |
-| color0       | [Vec3](/vext/ref/shared/class/vec3) |             |
-| color1       | [Vec3](/vext/ref/shared/class/vec3) |             |
-| coefficients | [Vec4](/vext/ref/shared/class/vec4) |             |
-
-## Methods
-
-| Type                                                   | Name            | Parameters                                     |
-| ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [PolynomialColorInterpData](/vext/ref/fb/polynomialcolorinterpdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PolynomialColorInterpData](/vext/ref/fb/polynomialcolorinterpdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PolynomialColorInterpData](/vext/ref/fb/polynomialcolorinterpdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PolynomialColorInterpData {#constructor-2}
+> **PolynomialColorInterpData**(other: [EvaluatorData](/vext/ref/fb/evaluatordata))
+
+Casts an instance of type [EvaluatorData](/vext/ref/fb/evaluatordata) to [PolynomialColorInterpData](/vext/ref/fb/polynomialcolorinterpdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EvaluatorData](/vext/ref/fb/evaluatordata) | The instance to cast to [PolynomialColorInterpData](/vext/ref/fb/polynomialcolorinterpdata). |
+
+### PolynomialColorInterpData {#constructor-3}
+> **PolynomialColorInterpData**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata))
+
+Casts an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata) to [PolynomialColorInterpData](/vext/ref/fb/polynomialcolorinterpdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EmitterComponentData](/vext/ref/fb/emittercomponentdata) | The instance to cast to [PolynomialColorInterpData](/vext/ref/fb/polynomialcolorinterpdata). |
+
+### PolynomialColorInterpData {#constructor-4}
+> **PolynomialColorInterpData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PolynomialColorInterpData](/vext/ref/fb/polynomialcolorinterpdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PolynomialColorInterpData](/vext/ref/fb/polynomialcolorinterpdata). |
+
+## Properties
+### {{% prop-heading "color0" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "color1" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "coefficients" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PolynomialColorInterpData](/vext/ref/fb/polynomialcolorinterpdata) type.
+

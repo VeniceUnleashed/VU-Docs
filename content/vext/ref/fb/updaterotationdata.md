@@ -1,38 +1,74 @@
 ---
 title: UpdateRotationData
 ---
-### Base Classes
 
-[ProcessorData](/vext/ref/fb/processordata/)
+Inherits from 
+[ProcessorData](/vext/ref/fb/processordata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UpdateRotationData](#constructor-0)**() |
+| **[UpdateRotationData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UpdateRotationData](#constructor-2)**(other: [ProcessorData](/vext/ref/fb/processordata)) |
+| **[UpdateRotationData](#constructor-3)**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata)) |
+| **[UpdateRotationData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UpdateRotationData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UpdateRotationData {#constructor-0}
+> **UpdateRotationData**()
 
-| Constructor                                                                   | Description                                                                                                                 |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| UpdateRotationData()                                                          | Create a new instance of this container type.                                                                               |
-| UpdateRotationData(UpdateRotationData other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| UpdateRotationData([ProcessorData](/vext/ref/fb/processordata/) other)                      | Upcast an instance of type [ProcessorData](/vext/ref/fb/processordata/) to [UpdateRotationData](/vext/ref/fb/updaterotationdata/).                      |
-| UpdateRotationData([EmitterComponentData](/vext/ref/fb/emittercomponentdata/) other)        | Upcast an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata/) to [UpdateRotationData](/vext/ref/fb/updaterotationdata/).        |
-| UpdateRotationData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UpdateRotationData](/vext/ref/fb/updaterotationdata/). |
+Creates a new [UpdateRotationData](/vext/ref/fb/updaterotationdata) frostbite instance.
 
-## Methods
+### UpdateRotationData {#constructor-1}
+> **UpdateRotationData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                     | Name            | Parameters                                     |
-| ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [UpdateRotationData](/vext/ref/fb/updaterotationdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UpdateRotationData](/vext/ref/fb/updaterotationdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UpdateRotationData](/vext/ref/fb/updaterotationdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UpdateRotationData {#constructor-2}
+> **UpdateRotationData**(other: [ProcessorData](/vext/ref/fb/processordata))
+
+Casts an instance of type [ProcessorData](/vext/ref/fb/processordata) to [UpdateRotationData](/vext/ref/fb/updaterotationdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ProcessorData](/vext/ref/fb/processordata) | The instance to cast to [UpdateRotationData](/vext/ref/fb/updaterotationdata). |
+
+### UpdateRotationData {#constructor-3}
+> **UpdateRotationData**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata))
+
+Casts an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata) to [UpdateRotationData](/vext/ref/fb/updaterotationdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EmitterComponentData](/vext/ref/fb/emittercomponentdata) | The instance to cast to [UpdateRotationData](/vext/ref/fb/updaterotationdata). |
+
+### UpdateRotationData {#constructor-4}
+> **UpdateRotationData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UpdateRotationData](/vext/ref/fb/updaterotationdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UpdateRotationData](/vext/ref/fb/updaterotationdata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UpdateRotationData](/vext/ref/fb/updaterotationdata) type.
+

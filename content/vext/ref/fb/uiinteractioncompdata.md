@@ -1,47 +1,102 @@
 ---
 title: UIInteractionCompData
 ---
-### Base Classes
 
-[UI3dIconCompData](/vext/ref/fb/ui3diconcompdata/)
+Inherits from 
+[UI3dIconCompData](/vext/ref/fb/ui3diconcompdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIInteractionCompData](#constructor-0)**() |
+| **[UIInteractionCompData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UIInteractionCompData](#constructor-2)**(other: [UI3dIconCompData](/vext/ref/fb/ui3diconcompdata)) |
+| **[UIInteractionCompData](#constructor-3)**(other: [UIComponentData](/vext/ref/fb/uicomponentdata)) |
+| **[UIInteractionCompData](#constructor-4)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[UIInteractionCompData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "repairSnapDistance" >}} | float |
+| {{< prop "repairSnapCircle" >}} | bool |
+| {{< prop "pickupShrinkSnap" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIInteractionCompData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIInteractionCompData {#constructor-0}
+> **UIInteractionCompData**()
 
-| Constructor                                                                      | Description                                                                                                                       |
-| -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| UIInteractionCompData()                                                          | Create a new instance of this container type.                                                                                     |
-| UIInteractionCompData(UIInteractionCompData other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| UIInteractionCompData([UI3dIconCompData](/vext/ref/fb/ui3diconcompdata/) other)                | Upcast an instance of type [UI3dIconCompData](/vext/ref/fb/ui3diconcompdata/) to [UIInteractionCompData](/vext/ref/fb/uiinteractioncompdata/).                |
-| UIInteractionCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UIInteractionCompData](/vext/ref/fb/uiinteractioncompdata/).                  |
-| UIInteractionCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UIInteractionCompData](/vext/ref/fb/uiinteractioncompdata/).                                      |
-| UIInteractionCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIInteractionCompData](/vext/ref/fb/uiinteractioncompdata/). |
+Creates a new [UIInteractionCompData](/vext/ref/fb/uiinteractioncompdata) frostbite instance.
 
-## Properties
+### UIInteractionCompData {#constructor-1}
+> **UIInteractionCompData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name               | Type   | Description |
-| ------------------ | ------ | ----------- |
-| repairSnapDistance | number |             |
-| repairSnapCircle   | bool   |             |
-| pickupShrinkSnap   | bool   |             |
-
-## Methods
-
-| Type                                           | Name            | Parameters                                     |
-| ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [UIInteractionCompData](/vext/ref/fb/uiinteractioncompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UIInteractionCompData](/vext/ref/fb/uiinteractioncompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UIInteractionCompData](/vext/ref/fb/uiinteractioncompdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UIInteractionCompData {#constructor-2}
+> **UIInteractionCompData**(other: [UI3dIconCompData](/vext/ref/fb/ui3diconcompdata))
+
+Casts an instance of type [UI3dIconCompData](/vext/ref/fb/ui3diconcompdata) to [UIInteractionCompData](/vext/ref/fb/uiinteractioncompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UI3dIconCompData](/vext/ref/fb/ui3diconcompdata) | The instance to cast to [UIInteractionCompData](/vext/ref/fb/uiinteractioncompdata). |
+
+### UIInteractionCompData {#constructor-3}
+> **UIInteractionCompData**(other: [UIComponentData](/vext/ref/fb/uicomponentdata))
+
+Casts an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata) to [UIInteractionCompData](/vext/ref/fb/uiinteractioncompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIComponentData](/vext/ref/fb/uicomponentdata) | The instance to cast to [UIInteractionCompData](/vext/ref/fb/uiinteractioncompdata). |
+
+### UIInteractionCompData {#constructor-4}
+> **UIInteractionCompData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [UIInteractionCompData](/vext/ref/fb/uiinteractioncompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [UIInteractionCompData](/vext/ref/fb/uiinteractioncompdata). |
+
+### UIInteractionCompData {#constructor-5}
+> **UIInteractionCompData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIInteractionCompData](/vext/ref/fb/uiinteractioncompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UIInteractionCompData](/vext/ref/fb/uiinteractioncompdata). |
+
+## Properties
+### {{% prop-heading "repairSnapDistance" %}}
+> **float**
+
+### {{% prop-heading "repairSnapCircle" %}}
+> **bool**
+
+### {{% prop-heading "pickupShrinkSnap" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIInteractionCompData](/vext/ref/fb/uiinteractioncompdata) type.
+

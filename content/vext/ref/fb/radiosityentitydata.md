@@ -1,39 +1,85 @@
 ---
 title: RadiosityEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[RadiosityEntityData](#constructor-0)**() |
+| **[RadiosityEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[RadiosityEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[RadiosityEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[RadiosityEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[RadiosityEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "RadiosityEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### RadiosityEntityData {#constructor-0}
+> **RadiosityEntityData**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| RadiosityEntityData()                                                          | Create a new instance of this container type.                                                                                 |
-| RadiosityEntityData(RadiosityEntityData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| RadiosityEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [RadiosityEntityData](/vext/ref/fb/radiosityentitydata/).                            |
-| RadiosityEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [RadiosityEntityData](/vext/ref/fb/radiosityentitydata/).                    |
-| RadiosityEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [RadiosityEntityData](/vext/ref/fb/radiosityentitydata/).              |
-| RadiosityEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RadiosityEntityData](/vext/ref/fb/radiosityentitydata/). |
+Creates a new [RadiosityEntityData](/vext/ref/fb/radiosityentitydata) frostbite instance.
 
-## Methods
+### RadiosityEntityData {#constructor-1}
+> **RadiosityEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [RadiosityEntityData](/vext/ref/fb/radiosityentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [RadiosityEntityData](/vext/ref/fb/radiosityentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [RadiosityEntityData](/vext/ref/fb/radiosityentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### RadiosityEntityData {#constructor-2}
+> **RadiosityEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [RadiosityEntityData](/vext/ref/fb/radiosityentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [RadiosityEntityData](/vext/ref/fb/radiosityentitydata). |
+
+### RadiosityEntityData {#constructor-3}
+> **RadiosityEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [RadiosityEntityData](/vext/ref/fb/radiosityentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [RadiosityEntityData](/vext/ref/fb/radiosityentitydata). |
+
+### RadiosityEntityData {#constructor-4}
+> **RadiosityEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [RadiosityEntityData](/vext/ref/fb/radiosityentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [RadiosityEntityData](/vext/ref/fb/radiosityentitydata). |
+
+### RadiosityEntityData {#constructor-5}
+> **RadiosityEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RadiosityEntityData](/vext/ref/fb/radiosityentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [RadiosityEntityData](/vext/ref/fb/radiosityentitydata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [RadiosityEntityData](/vext/ref/fb/radiosityentitydata) type.
+

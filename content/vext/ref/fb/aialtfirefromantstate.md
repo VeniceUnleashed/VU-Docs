@@ -1,14 +1,11 @@
 ---
 title: AIAltFireFromAntState
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **AltFireFromAntState_NoForcedFire** | Value: **0** |
+| **AltFireFromAntState_Prepare** | Value: **1** |
+| **AltFireFromAntState_ForceFire** | Value: **2** |
 
-| Name                              | Value | Description |
-| --------------------------------- | ----- | ----------- |
-| AltFireFromAntState\_NoForcedFire | 0     |             |
-| AltFireFromAntState\_Prepare      | 1     |             |
-| AltFireFromAntState\_ForceFire    | 2     |             |

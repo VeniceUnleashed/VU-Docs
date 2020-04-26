@@ -1,62 +1,162 @@
 ---
 title: CameraComponentData
 ---
-### Base Classes
 
-[ComponentData](/vext/ref/fb/componentdata/)
+Inherits from 
+[ComponentData](/vext/ref/fb/componentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[CameraComponentData](#constructor-0)**() |
+| **[CameraComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[CameraComponentData](#constructor-2)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[CameraComponentData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[CameraComponentData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[CameraComponentData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "cameraTransitionPos" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "fieldOfView" >}} | float |
+| {{< prop "forceFieldOfView" >}} | float |
+| {{< prop "camera" >}} | [TargetCameraData](/vext/ref/fb/targetcameradata) \| nil |
+| {{< prop "alternateView" >}} | [AlternateCameraViewData](/vext/ref/fb/alternatecameraviewdata) \| nil |
+| {{< prop "regularView" >}} | [RegularCameraViewData](/vext/ref/fb/regularcameraviewdata) |
+| {{< prop "freezeHeight" >}} | float |
+| {{< prop "stanceData" >}} | [StanceCameraData](/vext/ref/fb/stancecameradata) |
+| {{< prop "cameraSoundData" >}} | [CameraComponentSoundData](/vext/ref/fb/cameracomponentsounddata) \| nil |
+| {{< prop "soldierAnimatedCamera" >}} | [SoldierAnimatedCameraData](/vext/ref/fb/soldieranimatedcameradata) |
+| {{< prop "cameraTransitionTime" >}} | float |
+| {{< prop "meshParentComponentNumber" >}} | int |
+| {{< prop "enableCameraMesh" >}} | bool |
+| {{< prop "receiveImpulsesAsThirdPerson" >}} | bool |
+| {{< prop "useCameraTransition" >}} | bool |
+| {{< prop "alternateViewEnabled" >}} | bool |
+| {{< prop "isFirstPerson" >}} | bool |
+| {{< prop "ignoreOwnerOrientation" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "CameraComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### CameraComponentData {#constructor-0}
+> **CameraComponentData**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| CameraComponentData()                                                          | Create a new instance of this container type.                                                                                 |
-| CameraComponentData(CameraComponentData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| CameraComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [CameraComponentData](/vext/ref/fb/cameracomponentdata/).                      |
-| CameraComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [CameraComponentData](/vext/ref/fb/cameracomponentdata/).                    |
-| CameraComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [CameraComponentData](/vext/ref/fb/cameracomponentdata/).              |
-| CameraComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CameraComponentData](/vext/ref/fb/cameracomponentdata/). |
+Creates a new [CameraComponentData](/vext/ref/fb/cameracomponentdata) frostbite instance.
 
-## Properties
+### CameraComponentData {#constructor-1}
+> **CameraComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                         | Type                                                   | Description |
-| ---------------------------- | ------------------------------------------------------ | ----------- |
-| cameraTransitionPos          | [Vec3](/vext/ref/shared/class/vec3)                      |             |
-| fieldOfView                  | number                                                 |             |
-| forceFieldOfView             | number                                                 |             |
-| camera                       | [TargetCameraData](/vext/ref/fb/targetcameradata/)                   |             |
-| alternateView                | [AlternateCameraViewData](/vext/ref/fb/alternatecameraviewdata/)     |             |
-| regularView                  | [RegularCameraViewData](/vext/ref/fb/regularcameraviewdata/)         |             |
-| freezeHeight                 | number                                                 |             |
-| stanceData                   | [StanceCameraData](/vext/ref/fb/stancecameradata/)                   |             |
-| cameraSoundData              | [CameraComponentSoundData](/vext/ref/fb/cameracomponentsounddata/)   |             |
-| soldierAnimatedCamera        | [SoldierAnimatedCameraData](/vext/ref/fb/soldieranimatedcameradata/) |             |
-| cameraTransitionTime         | number                                                 |             |
-| meshParentComponentNumber    | number                                                 |             |
-| enableCameraMesh             | bool                                                   |             |
-| receiveImpulsesAsThirdPerson | bool                                                   |             |
-| useCameraTransition          | bool                                                   |             |
-| alternateViewEnabled         | bool                                                   |             |
-| isFirstPerson                | bool                                                   |             |
-| ignoreOwnerOrientation       | bool                                                   |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [CameraComponentData](/vext/ref/fb/cameracomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [CameraComponentData](/vext/ref/fb/cameracomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [CameraComponentData](/vext/ref/fb/cameracomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### CameraComponentData {#constructor-2}
+> **CameraComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [CameraComponentData](/vext/ref/fb/cameracomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [CameraComponentData](/vext/ref/fb/cameracomponentdata). |
+
+### CameraComponentData {#constructor-3}
+> **CameraComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [CameraComponentData](/vext/ref/fb/cameracomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [CameraComponentData](/vext/ref/fb/cameracomponentdata). |
+
+### CameraComponentData {#constructor-4}
+> **CameraComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [CameraComponentData](/vext/ref/fb/cameracomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [CameraComponentData](/vext/ref/fb/cameracomponentdata). |
+
+### CameraComponentData {#constructor-5}
+> **CameraComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CameraComponentData](/vext/ref/fb/cameracomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [CameraComponentData](/vext/ref/fb/cameracomponentdata). |
+
+## Properties
+### {{% prop-heading "cameraTransitionPos" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "fieldOfView" %}}
+> **float**
+
+### {{% prop-heading "forceFieldOfView" %}}
+> **float**
+
+### {{% prop-heading "camera" %}}
+> **[TargetCameraData](/vext/ref/fb/targetcameradata)** | **nil**
+
+### {{% prop-heading "alternateView" %}}
+> **[AlternateCameraViewData](/vext/ref/fb/alternatecameraviewdata)** | **nil**
+
+### {{% prop-heading "regularView" %}}
+> **[RegularCameraViewData](/vext/ref/fb/regularcameraviewdata)**
+
+### {{% prop-heading "freezeHeight" %}}
+> **float**
+
+### {{% prop-heading "stanceData" %}}
+> **[StanceCameraData](/vext/ref/fb/stancecameradata)**
+
+### {{% prop-heading "cameraSoundData" %}}
+> **[CameraComponentSoundData](/vext/ref/fb/cameracomponentsounddata)** | **nil**
+
+### {{% prop-heading "soldierAnimatedCamera" %}}
+> **[SoldierAnimatedCameraData](/vext/ref/fb/soldieranimatedcameradata)**
+
+### {{% prop-heading "cameraTransitionTime" %}}
+> **float**
+
+### {{% prop-heading "meshParentComponentNumber" %}}
+> **int**
+
+### {{% prop-heading "enableCameraMesh" %}}
+> **bool**
+
+### {{% prop-heading "receiveImpulsesAsThirdPerson" %}}
+> **bool**
+
+### {{% prop-heading "useCameraTransition" %}}
+> **bool**
+
+### {{% prop-heading "alternateViewEnabled" %}}
+> **bool**
+
+### {{% prop-heading "isFirstPerson" %}}
+> **bool**
+
+### {{% prop-heading "ignoreOwnerOrientation" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [CameraComponentData](/vext/ref/fb/cameracomponentdata) type.
+

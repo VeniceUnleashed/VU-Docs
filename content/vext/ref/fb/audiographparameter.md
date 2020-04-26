@@ -1,44 +1,69 @@
 ---
 title: AudioGraphParameter
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AudioGraphParameter](#constructor-0)**() |
+| **[AudioGraphParameter](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[AudioGraphParameter](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "defaultValue" >}} | float |
+| {{< prop "nameHash" >}} | int |
+| {{< prop "valueIndex" >}} | int |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AudioGraphParameter" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AudioGraphParameter {#constructor-0}
+> **AudioGraphParameter**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| AudioGraphParameter()                                                          | Create a new instance of this container type.                                                                                 |
-| AudioGraphParameter(AudioGraphParameter other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| AudioGraphParameter([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AudioGraphParameter](/vext/ref/fb/audiographparameter/). |
+Creates a new [AudioGraphParameter](/vext/ref/fb/audiographparameter) frostbite instance.
 
-## Properties
+### AudioGraphParameter {#constructor-1}
+> **AudioGraphParameter**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name         | Type   | Description |
-| ------------ | ------ | ----------- |
-| defaultValue | number |             |
-| nameHash     | number |             |
-| valueIndex   | number |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [AudioGraphParameter](/vext/ref/fb/audiographparameter/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [AudioGraphParameter](/vext/ref/fb/audiographparameter/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [AudioGraphParameter](/vext/ref/fb/audiographparameter) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### AudioGraphParameter {#constructor-2}
+> **AudioGraphParameter**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AudioGraphParameter](/vext/ref/fb/audiographparameter). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [AudioGraphParameter](/vext/ref/fb/audiographparameter). |
+
+## Properties
+### {{% prop-heading "defaultValue" %}}
+> **float**
+
+### {{% prop-heading "nameHash" %}}
+> **int**
+
+### {{% prop-heading "valueIndex" %}}
+> **int**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AudioGraphParameter](/vext/ref/fb/audiographparameter) type.
+

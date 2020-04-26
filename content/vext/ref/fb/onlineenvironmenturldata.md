@@ -1,32 +1,57 @@
 ---
 title: OnlineEnvironmentUrlData
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[OnlineEnvironmentUrlData](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "url" >}} | string |
+| {{< prop "environment" >}} | [OnlineEnvironment](/vext/ref/fb/onlineenvironment) |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [OnlineEnvironmentUrlData](/vext/ref/fb/onlineenvironmenturldata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "OnlineEnvironmentUrlData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### OnlineEnvironmentUrlData {#constructor-0}
+> **OnlineEnvironmentUrlData**()
 
-| Constructor                                              | Description                                              |
-| -------------------------------------------------------- | -------------------------------------------------------- |
-| OnlineEnvironmentUrlData()                               | Create a new instance of this structure type.            |
-| OnlineEnvironmentUrlData(OnlineEnvironmentUrlData other) | Create a reference copy of a structure of the same type. |
+Creates a new [OnlineEnvironmentUrlData](/vext/ref/fb/onlineenvironmenturldata) frostbite structure.
 
 ## Properties
+### {{% prop-heading "url" %}}
+> **string**
 
-| Name        | Type                                   | Description |
-| ----------- | -------------------------------------- | ----------- |
-| url         | string                                 |             |
-| environment | [OnlineEnvironment](/vext/ref/fb/onlineenvironment/) |             |
+### {{% prop-heading "environment" %}}
+> **[OnlineEnvironment](/vext/ref/fb/onlineenvironment)**
 
 ## Methods
-
-| Type                                                 | Name            | Parameters |
-| ---------------------------------------------------- | --------------- | ---------- |
-| [OnlineEnvironmentUrlData](/vext/ref/fb/onlineenvironmenturldata/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [OnlineEnvironmentUrlData](/vext/ref/fb/onlineenvironmenturldata)
 
-> [OnlineEnvironmentUrlData](/vext/ref/fb/onlineenvironmenturldata/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[OnlineEnvironmentUrlData](/vext/ref/fb/onlineenvironmenturldata)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [OnlineEnvironmentUrlData](/vext/ref/fb/onlineenvironmenturldata) type.
+

@@ -1,33 +1,61 @@
 ---
 title: StreamGridCell
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[StreamGridCell](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "referenceData" >}} | [ReferenceObjectData](/vext/ref/fb/referenceobjectdata) \| nil |
+| {{< prop "x" >}} | int |
+| {{< prop "z" >}} | int |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [StreamGridCell](/vext/ref/fb/streamgridcell) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "StreamGridCell" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### StreamGridCell {#constructor-0}
+> **StreamGridCell**()
 
-| Constructor                          | Description                                              |
-| ------------------------------------ | -------------------------------------------------------- |
-| StreamGridCell()                     | Create a new instance of this structure type.            |
-| StreamGridCell(StreamGridCell other) | Create a reference copy of a structure of the same type. |
+Creates a new [StreamGridCell](/vext/ref/fb/streamgridcell) frostbite structure.
 
 ## Properties
+### {{% prop-heading "referenceData" %}}
+> **[ReferenceObjectData](/vext/ref/fb/referenceobjectdata)** | **nil**
 
-| Name          | Type                                       | Description |
-| ------------- | ------------------------------------------ | ----------- |
-| referenceData | [ReferenceObjectData](/vext/ref/fb/referenceobjectdata/) |             |
-| x             | number                                     |             |
-| z             | number                                     |             |
+### {{% prop-heading "x" %}}
+> **int**
+
+### {{% prop-heading "z" %}}
+> **int**
 
 ## Methods
-
-| Type                             | Name            | Parameters |
-| -------------------------------- | --------------- | ---------- |
-| [StreamGridCell](/vext/ref/fb/streamgridcell/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [StreamGridCell](/vext/ref/fb/streamgridcell)
 
-> [StreamGridCell](/vext/ref/fb/streamgridcell/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[StreamGridCell](/vext/ref/fb/streamgridcell)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [StreamGridCell](/vext/ref/fb/streamgridcell) type.
+

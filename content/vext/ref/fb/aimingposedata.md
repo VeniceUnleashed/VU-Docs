@@ -1,36 +1,73 @@
 ---
 title: AimingPoseData
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AimingPoseData](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "minimumPitch" >}} | float |
+| {{< prop "maximumPitch" >}} | float |
+| {{< prop "targetingFov" >}} | float |
+| {{< prop "aimSteadiness" >}} | float |
+| {{< prop "speedMultiplier" >}} | float |
+| {{< prop "recoilMultiplier" >}} | float |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [AimingPoseData](/vext/ref/fb/aimingposedata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AimingPoseData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AimingPoseData {#constructor-0}
+> **AimingPoseData**()
 
-| Constructor                          | Description                                              |
-| ------------------------------------ | -------------------------------------------------------- |
-| AimingPoseData()                     | Create a new instance of this structure type.            |
-| AimingPoseData(AimingPoseData other) | Create a reference copy of a structure of the same type. |
+Creates a new [AimingPoseData](/vext/ref/fb/aimingposedata) frostbite structure.
 
 ## Properties
+### {{% prop-heading "minimumPitch" %}}
+> **float**
 
-| Name             | Type   | Description |
-| ---------------- | ------ | ----------- |
-| minimumPitch     | number |             |
-| maximumPitch     | number |             |
-| targetingFov     | number |             |
-| aimSteadiness    | number |             |
-| speedMultiplier  | number |             |
-| recoilMultiplier | number |             |
+### {{% prop-heading "maximumPitch" %}}
+> **float**
+
+### {{% prop-heading "targetingFov" %}}
+> **float**
+
+### {{% prop-heading "aimSteadiness" %}}
+> **float**
+
+### {{% prop-heading "speedMultiplier" %}}
+> **float**
+
+### {{% prop-heading "recoilMultiplier" %}}
+> **float**
 
 ## Methods
-
-| Type                             | Name            | Parameters |
-| -------------------------------- | --------------- | ---------- |
-| [AimingPoseData](/vext/ref/fb/aimingposedata/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [AimingPoseData](/vext/ref/fb/aimingposedata)
 
-> [AimingPoseData](/vext/ref/fb/aimingposedata/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[AimingPoseData](/vext/ref/fb/aimingposedata)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AimingPoseData](/vext/ref/fb/aimingposedata) type.
+

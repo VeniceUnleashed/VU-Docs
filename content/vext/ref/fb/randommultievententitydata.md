@@ -1,49 +1,110 @@
 ---
 title: RandomMultiEventEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[RandomMultiEventEntityData](#constructor-0)**() |
+| **[RandomMultiEventEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[RandomMultiEventEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[RandomMultiEventEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[RandomMultiEventEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[RandomMultiEventEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
+| {{< prop "randomEventWeight" >}} | float[] |
+| {{< prop "uniformDistribution" >}} | bool |
+| {{< prop "resetOutputsWhenAllHasTriggered" >}} | bool |
+| {{< prop "disableOutputOnTrigger" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "RandomMultiEventEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### RandomMultiEventEntityData {#constructor-0}
+> **RandomMultiEventEntityData**()
 
-| Constructor                                                                           | Description                                                                                                                                 |
-| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| RandomMultiEventEntityData()                                                          | Create a new instance of this container type.                                                                                               |
-| RandomMultiEventEntityData(RandomMultiEventEntityData other)                          | Create a reference copy of an instance of the same type.                                                                                    |
-| RandomMultiEventEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [RandomMultiEventEntityData](/vext/ref/fb/randommultievententitydata/).                            |
-| RandomMultiEventEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [RandomMultiEventEntityData](/vext/ref/fb/randommultievententitydata/).                    |
-| RandomMultiEventEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [RandomMultiEventEntityData](/vext/ref/fb/randommultievententitydata/).              |
-| RandomMultiEventEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RandomMultiEventEntityData](/vext/ref/fb/randommultievententitydata/). |
+Creates a new [RandomMultiEventEntityData](/vext/ref/fb/randommultievententitydata) frostbite instance.
 
-## Properties
+### RandomMultiEventEntityData {#constructor-1}
+> **RandomMultiEventEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                            | Type           | Description |
-| ------------------------------- | -------------- | ----------- |
-| realm                           | [Realm](/vext/ref/fb/realm/) |             |
-| randomEventWeight               | number\[\]     |             |
-| uniformDistribution             | bool           |             |
-| resetOutputsWhenAllHasTriggered | bool           |             |
-| disableOutputOnTrigger          | bool           |             |
-
-## Methods
-
-| Type                                                     | Name            | Parameters                                     |
-| -------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [RandomMultiEventEntityData](/vext/ref/fb/randommultievententitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [RandomMultiEventEntityData](/vext/ref/fb/randommultievententitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [RandomMultiEventEntityData](/vext/ref/fb/randommultievententitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### RandomMultiEventEntityData {#constructor-2}
+> **RandomMultiEventEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [RandomMultiEventEntityData](/vext/ref/fb/randommultievententitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [RandomMultiEventEntityData](/vext/ref/fb/randommultievententitydata). |
+
+### RandomMultiEventEntityData {#constructor-3}
+> **RandomMultiEventEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [RandomMultiEventEntityData](/vext/ref/fb/randommultievententitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [RandomMultiEventEntityData](/vext/ref/fb/randommultievententitydata). |
+
+### RandomMultiEventEntityData {#constructor-4}
+> **RandomMultiEventEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [RandomMultiEventEntityData](/vext/ref/fb/randommultievententitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [RandomMultiEventEntityData](/vext/ref/fb/randommultievententitydata). |
+
+### RandomMultiEventEntityData {#constructor-5}
+> **RandomMultiEventEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RandomMultiEventEntityData](/vext/ref/fb/randommultievententitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [RandomMultiEventEntityData](/vext/ref/fb/randommultievententitydata). |
+
+## Properties
+### {{% prop-heading "realm" %}}
+> **[Realm](/vext/ref/fb/realm)**
+
+### {{% prop-heading "randomEventWeight" %}}
+> **float**[]
+
+### {{% prop-heading "uniformDistribution" %}}
+> **bool**
+
+### {{% prop-heading "resetOutputsWhenAllHasTriggered" %}}
+> **bool**
+
+### {{% prop-heading "disableOutputOnTrigger" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [RandomMultiEventEntityData](/vext/ref/fb/randommultievententitydata) type.
+

@@ -1,14 +1,11 @@
 ---
 title: SocketType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **SocketType_Undefined** | Value: **0** |
+| **SocketType_Gameplay** | Value: **1** |
+| **SocketType_Visual** | Value: **2** |
 
-| Name                  | Value | Description |
-| --------------------- | ----- | ----------- |
-| SocketType\_Undefined | 0     |             |
-| SocketType\_Gameplay  | 1     |             |
-| SocketType\_Visual    | 2     |             |

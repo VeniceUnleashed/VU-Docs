@@ -1,14 +1,11 @@
 ---
 title: ModelAnimationUpdateOrder
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ModelAnimationUpdateOrder_PostAnimation** | Value: **0** |
+| **ModelAnimationUpdateOrder_PreInput** | Value: **1** |
+| **ModelAnimationUpdateOrder_PreFrame** | Value: **1** |
 
-| Name                                     | Value | Description |
-| ---------------------------------------- | ----- | ----------- |
-| ModelAnimationUpdateOrder\_PostAnimation | 0     |             |
-| ModelAnimationUpdateOrder\_PreInput      | 1     |             |
-| ModelAnimationUpdateOrder\_PreFrame      | 1     |             |

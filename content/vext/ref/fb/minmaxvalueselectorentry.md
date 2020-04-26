@@ -1,43 +1,72 @@
 ---
 title: MinMaxValueSelectorEntry
 ---
-### Base Classes
 
-[AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/)
+Inherits from 
+[AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MinMaxValueSelectorEntry](#constructor-0)**() |
+| **[MinMaxValueSelectorEntry](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MinMaxValueSelectorEntry](#constructor-2)**(other: [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup)) |
+| **[MinMaxValueSelectorEntry](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "input" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MinMaxValueSelectorEntry" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MinMaxValueSelectorEntry {#constructor-0}
+> **MinMaxValueSelectorEntry**()
 
-| Constructor                                                                         | Description                                                                                                                             |
-| ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| MinMaxValueSelectorEntry()                                                          | Create a new instance of this container type.                                                                                           |
-| MinMaxValueSelectorEntry(MinMaxValueSelectorEntry other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| MinMaxValueSelectorEntry([AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/) other)  | Upcast an instance of type [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/) to [MinMaxValueSelectorEntry](/vext/ref/fb/minmaxvalueselectorentry/).  |
-| MinMaxValueSelectorEntry([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MinMaxValueSelectorEntry](/vext/ref/fb/minmaxvalueselectorentry/). |
+Creates a new [MinMaxValueSelectorEntry](/vext/ref/fb/minmaxvalueselectorentry) frostbite instance.
 
-## Properties
+### MinMaxValueSelectorEntry {#constructor-1}
+> **MinMaxValueSelectorEntry**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name  | Type                                     | Description |
-| ----- | ---------------------------------------- | ----------- |
-| input | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-
-## Methods
-
-| Type                                                 | Name            | Parameters                                     |
-| ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [MinMaxValueSelectorEntry](/vext/ref/fb/minmaxvalueselectorentry/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MinMaxValueSelectorEntry](/vext/ref/fb/minmaxvalueselectorentry/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MinMaxValueSelectorEntry](/vext/ref/fb/minmaxvalueselectorentry) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MinMaxValueSelectorEntry {#constructor-2}
+> **MinMaxValueSelectorEntry**(other: [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup))
+
+Casts an instance of type [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup) to [MinMaxValueSelectorEntry](/vext/ref/fb/minmaxvalueselectorentry). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup) | The instance to cast to [MinMaxValueSelectorEntry](/vext/ref/fb/minmaxvalueselectorentry). |
+
+### MinMaxValueSelectorEntry {#constructor-3}
+> **MinMaxValueSelectorEntry**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MinMaxValueSelectorEntry](/vext/ref/fb/minmaxvalueselectorentry). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MinMaxValueSelectorEntry](/vext/ref/fb/minmaxvalueselectorentry). |
+
+## Properties
+### {{% prop-heading "input" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MinMaxValueSelectorEntry](/vext/ref/fb/minmaxvalueselectorentry) type.
+

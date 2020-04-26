@@ -1,46 +1,91 @@
 ---
 title: MedicBagHealingSphereWeaponData
 ---
-### Base Classes
 
-[WeaponData](/vext/ref/fb/weapondata/)
+Inherits from 
+[WeaponData](/vext/ref/fb/weapondata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MedicBagHealingSphereWeaponData](#constructor-0)**() |
+| **[MedicBagHealingSphereWeaponData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MedicBagHealingSphereWeaponData](#constructor-2)**(other: [WeaponData](/vext/ref/fb/weapondata)) |
+| **[MedicBagHealingSphereWeaponData](#constructor-3)**(other: [ToolData](/vext/ref/fb/tooldata)) |
+| **[MedicBagHealingSphereWeaponData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "healer" >}} | [HealingSphereData](/vext/ref/fb/healingspheredata) |
+| {{< prop "healthPointsRefillSpeed" >}} | float |
+| {{< prop "healthPointsPerBag" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MedicBagHealingSphereWeaponData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MedicBagHealingSphereWeaponData {#constructor-0}
+> **MedicBagHealingSphereWeaponData**()
 
-| Constructor                                                                                | Description                                                                                                                                           |
-| ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| MedicBagHealingSphereWeaponData()                                                          | Create a new instance of this container type.                                                                                                         |
-| MedicBagHealingSphereWeaponData(MedicBagHealingSphereWeaponData other)                     | Create a reference copy of an instance of the same type.                                                                                              |
-| MedicBagHealingSphereWeaponData([WeaponData](/vext/ref/fb/weapondata/) other)                            | Upcast an instance of type [WeaponData](/vext/ref/fb/weapondata/) to [MedicBagHealingSphereWeaponData](/vext/ref/fb/medicbaghealingsphereweapondata/).                            |
-| MedicBagHealingSphereWeaponData([ToolData](/vext/ref/fb/tooldata/) other)                                | Upcast an instance of type [ToolData](/vext/ref/fb/tooldata/) to [MedicBagHealingSphereWeaponData](/vext/ref/fb/medicbaghealingsphereweapondata/).                                |
-| MedicBagHealingSphereWeaponData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MedicBagHealingSphereWeaponData](/vext/ref/fb/medicbaghealingsphereweapondata/). |
+Creates a new [MedicBagHealingSphereWeaponData](/vext/ref/fb/medicbaghealingsphereweapondata) frostbite instance.
 
-## Properties
+### MedicBagHealingSphereWeaponData {#constructor-1}
+> **MedicBagHealingSphereWeaponData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                    | Type                                   | Description |
-| ----------------------- | -------------------------------------- | ----------- |
-| healer                  | [HealingSphereData](/vext/ref/fb/healingspheredata/) |             |
-| healthPointsRefillSpeed | number                                 |             |
-| healthPointsPerBag      | number                                 |             |
-
-## Methods
-
-| Type                                                               | Name            | Parameters                                     |
-| ------------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [MedicBagHealingSphereWeaponData](/vext/ref/fb/medicbaghealingsphereweapondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MedicBagHealingSphereWeaponData](/vext/ref/fb/medicbaghealingsphereweapondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MedicBagHealingSphereWeaponData](/vext/ref/fb/medicbaghealingsphereweapondata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MedicBagHealingSphereWeaponData {#constructor-2}
+> **MedicBagHealingSphereWeaponData**(other: [WeaponData](/vext/ref/fb/weapondata))
+
+Casts an instance of type [WeaponData](/vext/ref/fb/weapondata) to [MedicBagHealingSphereWeaponData](/vext/ref/fb/medicbaghealingsphereweapondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [WeaponData](/vext/ref/fb/weapondata) | The instance to cast to [MedicBagHealingSphereWeaponData](/vext/ref/fb/medicbaghealingsphereweapondata). |
+
+### MedicBagHealingSphereWeaponData {#constructor-3}
+> **MedicBagHealingSphereWeaponData**(other: [ToolData](/vext/ref/fb/tooldata))
+
+Casts an instance of type [ToolData](/vext/ref/fb/tooldata) to [MedicBagHealingSphereWeaponData](/vext/ref/fb/medicbaghealingsphereweapondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ToolData](/vext/ref/fb/tooldata) | The instance to cast to [MedicBagHealingSphereWeaponData](/vext/ref/fb/medicbaghealingsphereweapondata). |
+
+### MedicBagHealingSphereWeaponData {#constructor-4}
+> **MedicBagHealingSphereWeaponData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MedicBagHealingSphereWeaponData](/vext/ref/fb/medicbaghealingsphereweapondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MedicBagHealingSphereWeaponData](/vext/ref/fb/medicbaghealingsphereweapondata). |
+
+## Properties
+### {{% prop-heading "healer" %}}
+> **[HealingSphereData](/vext/ref/fb/healingspheredata)**
+
+### {{% prop-heading "healthPointsRefillSpeed" %}}
+> **float**
+
+### {{% prop-heading "healthPointsPerBag" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MedicBagHealingSphereWeaponData](/vext/ref/fb/medicbaghealingsphereweapondata) type.
+

@@ -1,12 +1,9 @@
 ---
 title: UI3dIconQuery
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **UI3dIconQuery_Active3dIconsData** | Value: **0** |
 
-| Name                             | Value | Description |
-| -------------------------------- | ----- | ----------- |
-| UI3dIconQuery\_Active3dIconsData | 0     |             |

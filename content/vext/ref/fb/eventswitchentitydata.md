@@ -1,47 +1,102 @@
 ---
 title: EventSwitchEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[EventSwitchEntityData](#constructor-0)**() |
+| **[EventSwitchEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[EventSwitchEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[EventSwitchEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[EventSwitchEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[EventSwitchEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
+| {{< prop "outEvents" >}} | int |
+| {{< prop "autoIncrement" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "EventSwitchEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### EventSwitchEntityData {#constructor-0}
+> **EventSwitchEntityData**()
 
-| Constructor                                                                      | Description                                                                                                                       |
-| -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| EventSwitchEntityData()                                                          | Create a new instance of this container type.                                                                                     |
-| EventSwitchEntityData(EventSwitchEntityData other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| EventSwitchEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [EventSwitchEntityData](/vext/ref/fb/eventswitchentitydata/).                            |
-| EventSwitchEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [EventSwitchEntityData](/vext/ref/fb/eventswitchentitydata/).                    |
-| EventSwitchEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [EventSwitchEntityData](/vext/ref/fb/eventswitchentitydata/).              |
-| EventSwitchEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EventSwitchEntityData](/vext/ref/fb/eventswitchentitydata/). |
+Creates a new [EventSwitchEntityData](/vext/ref/fb/eventswitchentitydata) frostbite instance.
 
-## Properties
+### EventSwitchEntityData {#constructor-1}
+> **EventSwitchEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name          | Type           | Description |
-| ------------- | -------------- | ----------- |
-| realm         | [Realm](/vext/ref/fb/realm/) |             |
-| outEvents     | number         |             |
-| autoIncrement | bool           |             |
-
-## Methods
-
-| Type                                           | Name            | Parameters                                     |
-| ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [EventSwitchEntityData](/vext/ref/fb/eventswitchentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [EventSwitchEntityData](/vext/ref/fb/eventswitchentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [EventSwitchEntityData](/vext/ref/fb/eventswitchentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### EventSwitchEntityData {#constructor-2}
+> **EventSwitchEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [EventSwitchEntityData](/vext/ref/fb/eventswitchentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [EventSwitchEntityData](/vext/ref/fb/eventswitchentitydata). |
+
+### EventSwitchEntityData {#constructor-3}
+> **EventSwitchEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [EventSwitchEntityData](/vext/ref/fb/eventswitchentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [EventSwitchEntityData](/vext/ref/fb/eventswitchentitydata). |
+
+### EventSwitchEntityData {#constructor-4}
+> **EventSwitchEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [EventSwitchEntityData](/vext/ref/fb/eventswitchentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [EventSwitchEntityData](/vext/ref/fb/eventswitchentitydata). |
+
+### EventSwitchEntityData {#constructor-5}
+> **EventSwitchEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EventSwitchEntityData](/vext/ref/fb/eventswitchentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [EventSwitchEntityData](/vext/ref/fb/eventswitchentitydata). |
+
+## Properties
+### {{% prop-heading "realm" %}}
+> **[Realm](/vext/ref/fb/realm)**
+
+### {{% prop-heading "outEvents" %}}
+> **int**
+
+### {{% prop-heading "autoIncrement" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [EventSwitchEntityData](/vext/ref/fb/eventswitchentitydata) type.
+

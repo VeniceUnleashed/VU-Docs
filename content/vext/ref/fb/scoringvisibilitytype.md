@@ -1,14 +1,11 @@
 ---
 title: ScoringVisibilityType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ScoringVisibilityType_Major** | Value: **0** |
+| **ScoringVisibilityType_Minor** | Value: **1** |
+| **ScoringVisibilityType_Hidden** | Value: **2** |
 
-| Name                          | Value | Description |
-| ----------------------------- | ----- | ----------- |
-| ScoringVisibilityType\_Major  | 0     |             |
-| ScoringVisibilityType\_Minor  | 1     |             |
-| ScoringVisibilityType\_Hidden | 2     |             |

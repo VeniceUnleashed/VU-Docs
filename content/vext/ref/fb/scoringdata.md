@@ -1,45 +1,80 @@
 ---
 title: ScoringData
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ScoringData](#constructor-0)**() |
+| **[ScoringData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ScoringData](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[ScoringData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "scoringTypes" >}} | [ScoringTypeData](/vext/ref/fb/scoringtypedata)[] |
+| {{< prop "scoringHandlers" >}} | [ScoringHandlerData](/vext/ref/fb/scoringhandlerdata)[] |
+| {{< prop "buckets" >}} | [ScoringBucketData](/vext/ref/fb/scoringbucketdata)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ScoringData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ScoringData {#constructor-0}
+> **ScoringData**()
 
-| Constructor                                                            | Description                                                                                                   |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| ScoringData()                                                          | Create a new instance of this container type.                                                                 |
-| ScoringData(ScoringData other)                                         | Create a reference copy of an instance of the same type.                                                      |
-| ScoringData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [ScoringData](/vext/ref/fb/scoringdata/).                                      |
-| ScoringData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ScoringData](/vext/ref/fb/scoringdata/). |
+Creates a new [ScoringData](/vext/ref/fb/scoringdata) frostbite instance.
 
-## Properties
+### ScoringData {#constructor-1}
+> **ScoringData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name            | Type                                         | Description |
-| --------------- | -------------------------------------------- | ----------- |
-| scoringTypes    | [ScoringTypeData](/vext/ref/fb/scoringtypedata/)\[\]       |             |
-| scoringHandlers | [ScoringHandlerData](/vext/ref/fb/scoringhandlerdata/)\[\] |             |
-| buckets         | [ScoringBucketData](/vext/ref/fb/scoringbucketdata/)\[\]   |             |
-
-## Methods
-
-| Type                       | Name            | Parameters                                     |
-| -------------------------- | --------------- | ---------------------------------------------- |
-| [ScoringData](/vext/ref/fb/scoringdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ScoringData](/vext/ref/fb/scoringdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ScoringData](/vext/ref/fb/scoringdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ScoringData {#constructor-2}
+> **ScoringData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [ScoringData](/vext/ref/fb/scoringdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [ScoringData](/vext/ref/fb/scoringdata). |
+
+### ScoringData {#constructor-3}
+> **ScoringData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ScoringData](/vext/ref/fb/scoringdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ScoringData](/vext/ref/fb/scoringdata). |
+
+## Properties
+### {{% prop-heading "scoringTypes" %}}
+> **[ScoringTypeData](/vext/ref/fb/scoringtypedata)**[]
+
+### {{% prop-heading "scoringHandlers" %}}
+> **[ScoringHandlerData](/vext/ref/fb/scoringhandlerdata)**[]
+
+### {{% prop-heading "buckets" %}}
+> **[ScoringBucketData](/vext/ref/fb/scoringbucketdata)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ScoringData](/vext/ref/fb/scoringdata) type.
+

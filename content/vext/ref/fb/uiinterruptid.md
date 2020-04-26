@@ -1,13 +1,10 @@
 ---
 title: UIInterruptID
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **UIInterruptID_None** | Value: **0** |
+| **UIInterruptID_ControllerPull** | Value: **1** |
 
-| Name                          | Value | Description |
-| ----------------------------- | ----- | ----------- |
-| UIInterruptID\_None           | 0     |             |
-| UIInterruptID\_ControllerPull | 1     |             |

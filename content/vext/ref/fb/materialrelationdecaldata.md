@@ -1,44 +1,83 @@
 ---
 title: MaterialRelationDecalData
 ---
-### Base Classes
 
-[PhysicsMaterialRelationPropertyData](/vext/ref/fb/physicsmaterialrelationpropertydata/)
+Inherits from 
+[PhysicsMaterialRelationPropertyData](/vext/ref/fb/physicsmaterialrelationpropertydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MaterialRelationDecalData](#constructor-0)**() |
+| **[MaterialRelationDecalData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MaterialRelationDecalData](#constructor-2)**(other: [PhysicsMaterialRelationPropertyData](/vext/ref/fb/physicsmaterialrelationpropertydata)) |
+| **[MaterialRelationDecalData](#constructor-3)**(other: [MaterialRelationPropertyData](/vext/ref/fb/materialrelationpropertydata)) |
+| **[MaterialRelationDecalData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "decal" >}} | [DecalTemplateData](/vext/ref/fb/decaltemplatedata) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MaterialRelationDecalData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MaterialRelationDecalData {#constructor-0}
+> **MaterialRelationDecalData**()
 
-| Constructor                                                                                                 | Description                                                                                                                                                      |
-| ----------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| MaterialRelationDecalData()                                                                                 | Create a new instance of this container type.                                                                                                                    |
-| MaterialRelationDecalData(MaterialRelationDecalData other)                                                  | Create a reference copy of an instance of the same type.                                                                                                         |
-| MaterialRelationDecalData([PhysicsMaterialRelationPropertyData](/vext/ref/fb/physicsmaterialrelationpropertydata/) other) | Upcast an instance of type [PhysicsMaterialRelationPropertyData](/vext/ref/fb/physicsmaterialrelationpropertydata/) to [MaterialRelationDecalData](/vext/ref/fb/materialrelationdecaldata/). |
-| MaterialRelationDecalData([MaterialRelationPropertyData](/vext/ref/fb/materialrelationpropertydata/) other)               | Upcast an instance of type [MaterialRelationPropertyData](/vext/ref/fb/materialrelationpropertydata/) to [MaterialRelationDecalData](/vext/ref/fb/materialrelationdecaldata/).               |
-| MaterialRelationDecalData([DataContainer](/vext/ref/shared/class/datacontainer) other)                        | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MaterialRelationDecalData](/vext/ref/fb/materialrelationdecaldata/).                        |
+Creates a new [MaterialRelationDecalData](/vext/ref/fb/materialrelationdecaldata) frostbite instance.
 
-## Properties
+### MaterialRelationDecalData {#constructor-1}
+> **MaterialRelationDecalData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name  | Type                                   | Description |
-| ----- | -------------------------------------- | ----------- |
-| decal | [DecalTemplateData](/vext/ref/fb/decaltemplatedata/) |             |
-
-## Methods
-
-| Type                                                   | Name            | Parameters                                     |
-| ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [MaterialRelationDecalData](/vext/ref/fb/materialrelationdecaldata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MaterialRelationDecalData](/vext/ref/fb/materialrelationdecaldata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MaterialRelationDecalData](/vext/ref/fb/materialrelationdecaldata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MaterialRelationDecalData {#constructor-2}
+> **MaterialRelationDecalData**(other: [PhysicsMaterialRelationPropertyData](/vext/ref/fb/physicsmaterialrelationpropertydata))
+
+Casts an instance of type [PhysicsMaterialRelationPropertyData](/vext/ref/fb/physicsmaterialrelationpropertydata) to [MaterialRelationDecalData](/vext/ref/fb/materialrelationdecaldata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [PhysicsMaterialRelationPropertyData](/vext/ref/fb/physicsmaterialrelationpropertydata) | The instance to cast to [MaterialRelationDecalData](/vext/ref/fb/materialrelationdecaldata). |
+
+### MaterialRelationDecalData {#constructor-3}
+> **MaterialRelationDecalData**(other: [MaterialRelationPropertyData](/vext/ref/fb/materialrelationpropertydata))
+
+Casts an instance of type [MaterialRelationPropertyData](/vext/ref/fb/materialrelationpropertydata) to [MaterialRelationDecalData](/vext/ref/fb/materialrelationdecaldata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [MaterialRelationPropertyData](/vext/ref/fb/materialrelationpropertydata) | The instance to cast to [MaterialRelationDecalData](/vext/ref/fb/materialrelationdecaldata). |
+
+### MaterialRelationDecalData {#constructor-4}
+> **MaterialRelationDecalData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MaterialRelationDecalData](/vext/ref/fb/materialrelationdecaldata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MaterialRelationDecalData](/vext/ref/fb/materialrelationdecaldata). |
+
+## Properties
+### {{% prop-heading "decal" %}}
+> **[DecalTemplateData](/vext/ref/fb/decaltemplatedata)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MaterialRelationDecalData](/vext/ref/fb/materialrelationdecaldata) type.
+

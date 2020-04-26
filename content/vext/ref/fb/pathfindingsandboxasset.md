@@ -1,43 +1,72 @@
 ---
 title: PathfindingSandboxAsset
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PathfindingSandboxAsset](#constructor-0)**() |
+| **[PathfindingSandboxAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PathfindingSandboxAsset](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[PathfindingSandboxAsset](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "system" >}} | [PathfindingSystemEntityData](/vext/ref/fb/pathfindingsystementitydata) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PathfindingSandboxAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PathfindingSandboxAsset {#constructor-0}
+> **PathfindingSandboxAsset**()
 
-| Constructor                                                                        | Description                                                                                                                           |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| PathfindingSandboxAsset()                                                          | Create a new instance of this container type.                                                                                         |
-| PathfindingSandboxAsset(PathfindingSandboxAsset other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| PathfindingSandboxAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [PathfindingSandboxAsset](/vext/ref/fb/pathfindingsandboxasset/).                                      |
-| PathfindingSandboxAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PathfindingSandboxAsset](/vext/ref/fb/pathfindingsandboxasset/). |
+Creates a new [PathfindingSandboxAsset](/vext/ref/fb/pathfindingsandboxasset) frostbite instance.
 
-## Properties
+### PathfindingSandboxAsset {#constructor-1}
+> **PathfindingSandboxAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name   | Type                                                       | Description |
-| ------ | ---------------------------------------------------------- | ----------- |
-| system | [PathfindingSystemEntityData](/vext/ref/fb/pathfindingsystementitydata/) |             |
-
-## Methods
-
-| Type                                               | Name            | Parameters                                     |
-| -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [PathfindingSandboxAsset](/vext/ref/fb/pathfindingsandboxasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PathfindingSandboxAsset](/vext/ref/fb/pathfindingsandboxasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PathfindingSandboxAsset](/vext/ref/fb/pathfindingsandboxasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PathfindingSandboxAsset {#constructor-2}
+> **PathfindingSandboxAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [PathfindingSandboxAsset](/vext/ref/fb/pathfindingsandboxasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [PathfindingSandboxAsset](/vext/ref/fb/pathfindingsandboxasset). |
+
+### PathfindingSandboxAsset {#constructor-3}
+> **PathfindingSandboxAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PathfindingSandboxAsset](/vext/ref/fb/pathfindingsandboxasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PathfindingSandboxAsset](/vext/ref/fb/pathfindingsandboxasset). |
+
+## Properties
+### {{% prop-heading "system" %}}
+> **[PathfindingSystemEntityData](/vext/ref/fb/pathfindingsystementitydata)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PathfindingSandboxAsset](/vext/ref/fb/pathfindingsandboxasset) type.
+

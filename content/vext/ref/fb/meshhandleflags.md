@@ -1,12 +1,9 @@
 ---
 title: MeshHandleFlags
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **InvalidMeshHandle** | Value: **0** |
 
-| Name              | Value | Description |
-| ----------------- | ----- | ----------- |
-| InvalidMeshHandle | 0     |             |

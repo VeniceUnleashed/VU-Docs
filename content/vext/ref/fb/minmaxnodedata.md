@@ -1,46 +1,84 @@
 ---
 title: MinMaxNodeData
 ---
-### Base Classes
 
-[AudioGraphNodeData](/vext/ref/fb/audiographnodedata/)
+Inherits from 
+[AudioGraphNodeData](/vext/ref/fb/audiographnodedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MinMaxNodeData](#constructor-0)**() |
+| **[MinMaxNodeData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MinMaxNodeData](#constructor-2)**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata)) |
+| **[MinMaxNodeData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "x" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "y" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "max" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "min" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MinMaxNodeData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MinMaxNodeData {#constructor-0}
+> **MinMaxNodeData**()
 
-| Constructor                                                               | Description                                                                                                         |
-| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| MinMaxNodeData()                                                          | Create a new instance of this container type.                                                                       |
-| MinMaxNodeData(MinMaxNodeData other)                                      | Create a reference copy of an instance of the same type.                                                            |
-| MinMaxNodeData([AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) other)            | Upcast an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) to [MinMaxNodeData](/vext/ref/fb/minmaxnodedata/).            |
-| MinMaxNodeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MinMaxNodeData](/vext/ref/fb/minmaxnodedata/). |
+Creates a new [MinMaxNodeData](/vext/ref/fb/minmaxnodedata) frostbite instance.
 
-## Properties
+### MinMaxNodeData {#constructor-1}
+> **MinMaxNodeData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name | Type                                     | Description |
-| ---- | ---------------------------------------- | ----------- |
-| x    | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| y    | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| max  | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| min  | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-
-## Methods
-
-| Type                             | Name            | Parameters                                     |
-| -------------------------------- | --------------- | ---------------------------------------------- |
-| [MinMaxNodeData](/vext/ref/fb/minmaxnodedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MinMaxNodeData](/vext/ref/fb/minmaxnodedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MinMaxNodeData](/vext/ref/fb/minmaxnodedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MinMaxNodeData {#constructor-2}
+> **MinMaxNodeData**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata))
+
+Casts an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) to [MinMaxNodeData](/vext/ref/fb/minmaxnodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) | The instance to cast to [MinMaxNodeData](/vext/ref/fb/minmaxnodedata). |
+
+### MinMaxNodeData {#constructor-3}
+> **MinMaxNodeData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MinMaxNodeData](/vext/ref/fb/minmaxnodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MinMaxNodeData](/vext/ref/fb/minmaxnodedata). |
+
+## Properties
+### {{% prop-heading "x" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "y" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "max" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "min" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MinMaxNodeData](/vext/ref/fb/minmaxnodedata) type.
+

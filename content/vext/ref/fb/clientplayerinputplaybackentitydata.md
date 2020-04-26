@@ -1,46 +1,98 @@
 ---
 title: ClientPlayerInputPlaybackEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ClientPlayerInputPlaybackEntityData](#constructor-0)**() |
+| **[ClientPlayerInputPlaybackEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ClientPlayerInputPlaybackEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[ClientPlayerInputPlaybackEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[ClientPlayerInputPlaybackEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[ClientPlayerInputPlaybackEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
+| {{< prop "fileName" >}} | string |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ClientPlayerInputPlaybackEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ClientPlayerInputPlaybackEntityData {#constructor-0}
+> **ClientPlayerInputPlaybackEntityData**()
 
-| Constructor                                                                                    | Description                                                                                                                                                   |
-| ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ClientPlayerInputPlaybackEntityData()                                                          | Create a new instance of this container type.                                                                                                                 |
-| ClientPlayerInputPlaybackEntityData(ClientPlayerInputPlaybackEntityData other)                 | Create a reference copy of an instance of the same type.                                                                                                      |
-| ClientPlayerInputPlaybackEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [ClientPlayerInputPlaybackEntityData](/vext/ref/fb/clientplayerinputplaybackentitydata/).                            |
-| ClientPlayerInputPlaybackEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [ClientPlayerInputPlaybackEntityData](/vext/ref/fb/clientplayerinputplaybackentitydata/).                    |
-| ClientPlayerInputPlaybackEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [ClientPlayerInputPlaybackEntityData](/vext/ref/fb/clientplayerinputplaybackentitydata/).              |
-| ClientPlayerInputPlaybackEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ClientPlayerInputPlaybackEntityData](/vext/ref/fb/clientplayerinputplaybackentitydata/). |
+Creates a new [ClientPlayerInputPlaybackEntityData](/vext/ref/fb/clientplayerinputplaybackentitydata) frostbite instance.
 
-## Properties
+### ClientPlayerInputPlaybackEntityData {#constructor-1}
+> **ClientPlayerInputPlaybackEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name     | Type           | Description |
-| -------- | -------------- | ----------- |
-| realm    | [Realm](/vext/ref/fb/realm/) |             |
-| fileName | string         |             |
-
-## Methods
-
-| Type                                                                       | Name            | Parameters                                     |
-| -------------------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [ClientPlayerInputPlaybackEntityData](/vext/ref/fb/clientplayerinputplaybackentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ClientPlayerInputPlaybackEntityData](/vext/ref/fb/clientplayerinputplaybackentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ClientPlayerInputPlaybackEntityData](/vext/ref/fb/clientplayerinputplaybackentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ClientPlayerInputPlaybackEntityData {#constructor-2}
+> **ClientPlayerInputPlaybackEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [ClientPlayerInputPlaybackEntityData](/vext/ref/fb/clientplayerinputplaybackentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [ClientPlayerInputPlaybackEntityData](/vext/ref/fb/clientplayerinputplaybackentitydata). |
+
+### ClientPlayerInputPlaybackEntityData {#constructor-3}
+> **ClientPlayerInputPlaybackEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [ClientPlayerInputPlaybackEntityData](/vext/ref/fb/clientplayerinputplaybackentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [ClientPlayerInputPlaybackEntityData](/vext/ref/fb/clientplayerinputplaybackentitydata). |
+
+### ClientPlayerInputPlaybackEntityData {#constructor-4}
+> **ClientPlayerInputPlaybackEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [ClientPlayerInputPlaybackEntityData](/vext/ref/fb/clientplayerinputplaybackentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [ClientPlayerInputPlaybackEntityData](/vext/ref/fb/clientplayerinputplaybackentitydata). |
+
+### ClientPlayerInputPlaybackEntityData {#constructor-5}
+> **ClientPlayerInputPlaybackEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ClientPlayerInputPlaybackEntityData](/vext/ref/fb/clientplayerinputplaybackentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ClientPlayerInputPlaybackEntityData](/vext/ref/fb/clientplayerinputplaybackentitydata). |
+
+## Properties
+### {{% prop-heading "realm" %}}
+> **[Realm](/vext/ref/fb/realm)**
+
+### {{% prop-heading "fileName" %}}
+> **string**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ClientPlayerInputPlaybackEntityData](/vext/ref/fb/clientplayerinputplaybackentitydata) type.
+

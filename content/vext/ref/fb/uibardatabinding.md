@@ -1,46 +1,84 @@
 ---
 title: UIBarDataBinding
 ---
-### Base Classes
 
-[UIDataBinding](/vext/ref/fb/uidatabinding/)
+Inherits from 
+[UIDataBinding](/vext/ref/fb/uidatabinding)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIBarDataBinding](#constructor-0)**() |
+| **[UIBarDataBinding](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UIBarDataBinding](#constructor-2)**(other: [UIDataBinding](/vext/ref/fb/uidatabinding)) |
+| **[UIBarDataBinding](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "visibility" >}} | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo) |
+| {{< prop "value" >}} | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo) |
+| {{< prop "color" >}} | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo) |
+| {{< prop "refresh" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIBarDataBinding" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIBarDataBinding {#constructor-0}
+> **UIBarDataBinding**()
 
-| Constructor                                                                 | Description                                                                                                             |
-| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| UIBarDataBinding()                                                          | Create a new instance of this container type.                                                                           |
-| UIBarDataBinding(UIBarDataBinding other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| UIBarDataBinding([UIDataBinding](/vext/ref/fb/uidatabinding/) other)                      | Upcast an instance of type [UIDataBinding](/vext/ref/fb/uidatabinding/) to [UIBarDataBinding](/vext/ref/fb/uibardatabinding/).                      |
-| UIBarDataBinding([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIBarDataBinding](/vext/ref/fb/uibardatabinding/). |
+Creates a new [UIBarDataBinding](/vext/ref/fb/uibardatabinding) frostbite instance.
 
-## Properties
+### UIBarDataBinding {#constructor-1}
+> **UIBarDataBinding**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name       | Type                                 | Description |
-| ---------- | ------------------------------------ | ----------- |
-| visibility | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/) |             |
-| value      | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/) |             |
-| color      | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/) |             |
-| refresh    | bool                                 |             |
-
-## Methods
-
-| Type                                 | Name            | Parameters                                     |
-| ------------------------------------ | --------------- | ---------------------------------------------- |
-| [UIBarDataBinding](/vext/ref/fb/uibardatabinding/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UIBarDataBinding](/vext/ref/fb/uibardatabinding/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UIBarDataBinding](/vext/ref/fb/uibardatabinding) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UIBarDataBinding {#constructor-2}
+> **UIBarDataBinding**(other: [UIDataBinding](/vext/ref/fb/uidatabinding))
+
+Casts an instance of type [UIDataBinding](/vext/ref/fb/uidatabinding) to [UIBarDataBinding](/vext/ref/fb/uibardatabinding). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIDataBinding](/vext/ref/fb/uidatabinding) | The instance to cast to [UIBarDataBinding](/vext/ref/fb/uibardatabinding). |
+
+### UIBarDataBinding {#constructor-3}
+> **UIBarDataBinding**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIBarDataBinding](/vext/ref/fb/uibardatabinding). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UIBarDataBinding](/vext/ref/fb/uibardatabinding). |
+
+## Properties
+### {{% prop-heading "visibility" %}}
+> **[UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo)**
+
+### {{% prop-heading "value" %}}
+> **[UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo)**
+
+### {{% prop-heading "color" %}}
+> **[UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo)**
+
+### {{% prop-heading "refresh" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIBarDataBinding](/vext/ref/fb/uibardatabinding) type.
+

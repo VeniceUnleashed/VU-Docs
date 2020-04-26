@@ -1,27 +1,24 @@
 ---
 title: ClientState
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ClientState_WaitingForStaticBundleLoad** | Value: **0** |
+| **ClientState_LoadProfileOptions** | Value: **1** |
+| **ClientState_LostConnection** | Value: **2** |
+| **ClientState_Startup** | Value: **3** |
+| **ClientState_StartServer** | Value: **4** |
+| **ClientState_WaitingForLevel** | Value: **5** |
+| **ClientState_StartLoadingLevel** | Value: **6** |
+| **ClientState_WaitingForLevelLoaded** | Value: **7** |
+| **ClientState_WaitingForLevelLink** | Value: **8** |
+| **ClientState_LevelLinked** | Value: **9** |
+| **ClientState_WaitingUIIngame** | Value: **10** |
+| **ClientState_Ingame** | Value: **11** |
+| **ClientState_ConnectToServer** | Value: **12** |
+| **ClientState_WaitingUILoading** | Value: **13** |
+| **ClientState_WaitingUIUnload** | Value: **14** |
+| **ClientState_None** | Value: **15** |
 
-| Name                                    | Value | Description |
-| --------------------------------------- | ----- | ----------- |
-| ClientState\_WaitingForStaticBundleLoad | 0     |             |
-| ClientState\_LoadProfileOptions         | 1     |             |
-| ClientState\_LostConnection             | 2     |             |
-| ClientState\_Startup                    | 3     |             |
-| ClientState\_StartServer                | 4     |             |
-| ClientState\_WaitingForLevel            | 5     |             |
-| ClientState\_StartLoadingLevel          | 6     |             |
-| ClientState\_WaitingForLevelLoaded      | 7     |             |
-| ClientState\_WaitingForLevelLink        | 8     |             |
-| ClientState\_LevelLinked                | 9     |             |
-| ClientState\_WaitingUIIngame            | 10    |             |
-| ClientState\_Ingame                     | 11    |             |
-| ClientState\_ConnectToServer            | 12    |             |
-| ClientState\_WaitingUILoading           | 13    |             |
-| ClientState\_WaitingUIUnload            | 14    |             |
-| ClientState\_None                       | 15    |             |

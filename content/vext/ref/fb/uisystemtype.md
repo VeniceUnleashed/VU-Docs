@@ -1,13 +1,10 @@
 ---
 title: UISystemType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **UISystem_None** | Value: **0** |
+| **UISystem_Standard** | Value: **1** |
 
-| Name               | Value | Description |
-| ------------------ | ----- | ----------- |
-| UISystem\_None     | 0     |             |
-| UISystem\_Standard | 1     |             |

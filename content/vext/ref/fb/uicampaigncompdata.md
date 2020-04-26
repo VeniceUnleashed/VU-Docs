@@ -1,38 +1,74 @@
 ---
 title: UICampaignCompData
 ---
-### Base Classes
 
-[UIComponentData](/vext/ref/fb/uicomponentdata/)
+Inherits from 
+[UIComponentData](/vext/ref/fb/uicomponentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UICampaignCompData](#constructor-0)**() |
+| **[UICampaignCompData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UICampaignCompData](#constructor-2)**(other: [UIComponentData](/vext/ref/fb/uicomponentdata)) |
+| **[UICampaignCompData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[UICampaignCompData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UICampaignCompData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UICampaignCompData {#constructor-0}
+> **UICampaignCompData**()
 
-| Constructor                                                                   | Description                                                                                                                 |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| UICampaignCompData()                                                          | Create a new instance of this container type.                                                                               |
-| UICampaignCompData(UICampaignCompData other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| UICampaignCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UICampaignCompData](/vext/ref/fb/uicampaigncompdata/).                  |
-| UICampaignCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UICampaignCompData](/vext/ref/fb/uicampaigncompdata/).                                      |
-| UICampaignCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UICampaignCompData](/vext/ref/fb/uicampaigncompdata/). |
+Creates a new [UICampaignCompData](/vext/ref/fb/uicampaigncompdata) frostbite instance.
 
-## Methods
+### UICampaignCompData {#constructor-1}
+> **UICampaignCompData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                     | Name            | Parameters                                     |
-| ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [UICampaignCompData](/vext/ref/fb/uicampaigncompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UICampaignCompData](/vext/ref/fb/uicampaigncompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UICampaignCompData](/vext/ref/fb/uicampaigncompdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UICampaignCompData {#constructor-2}
+> **UICampaignCompData**(other: [UIComponentData](/vext/ref/fb/uicomponentdata))
+
+Casts an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata) to [UICampaignCompData](/vext/ref/fb/uicampaigncompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIComponentData](/vext/ref/fb/uicomponentdata) | The instance to cast to [UICampaignCompData](/vext/ref/fb/uicampaigncompdata). |
+
+### UICampaignCompData {#constructor-3}
+> **UICampaignCompData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [UICampaignCompData](/vext/ref/fb/uicampaigncompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [UICampaignCompData](/vext/ref/fb/uicampaigncompdata). |
+
+### UICampaignCompData {#constructor-4}
+> **UICampaignCompData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UICampaignCompData](/vext/ref/fb/uicampaigncompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UICampaignCompData](/vext/ref/fb/uicampaigncompdata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UICampaignCompData](/vext/ref/fb/uicampaigncompdata) type.
+

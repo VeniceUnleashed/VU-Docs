@@ -1,16 +1,13 @@
 ---
 title: ShaderValueFormat
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ShaderValueFormat_Half** | Value: **0** |
+| **ShaderValueFormat_Float** | Value: **1** |
+| **ShaderValueFormat_Int** | Value: **2** |
+| **ShaderValueFormat_UInt** | Value: **3** |
+| **ShaderValueFormat_Bool** | Value: **4** |
 
-| Name                     | Value | Description |
-| ------------------------ | ----- | ----------- |
-| ShaderValueFormat\_Half  | 0     |             |
-| ShaderValueFormat\_Float | 1     |             |
-| ShaderValueFormat\_Int   | 2     |             |
-| ShaderValueFormat\_UInt  | 3     |             |
-| ShaderValueFormat\_Bool  | 4     |             |

@@ -1,64 +1,61 @@
 ---
 title: ShaderConstantFunction
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ShaderConstantFunction_ViewMatrix** | Value: **0** |
+| **ShaderConstantFunction_ViewProjMatrix** | Value: **1** |
+| **ShaderConstantFunction_WorldViewMatrix** | Value: **2** |
+| **ShaderConstantFunction_WorldViewProjMatrix** | Value: **3** |
+| **ShaderConstantFunction_CrViewProjMatrix** | Value: **4** |
+| **ShaderConstantFunction_CrWorldViewProjMatrix** | Value: **5** |
+| **ShaderConstantFunction_CameraPos** | Value: **6** |
+| **ShaderConstantFunction_PrevViewProjMatrix** | Value: **7** |
+| **ShaderConstantFunction_PrevWorldViewProjMatrix** | Value: **8** |
+| **ShaderConstantFunction_WorldMatrix** | Value: **9** |
+| **ShaderConstantFunction_PrevWorldMatrix** | Value: **10** |
+| **ShaderConstantFunction_BoneVectors** | Value: **11** |
+| **ShaderConstantFunction_PrevBoneVectors** | Value: **12** |
+| **ShaderConstantFunction_LightProbeShR** | Value: **13** |
+| **ShaderConstantFunction_LightProbeShG** | Value: **14** |
+| **ShaderConstantFunction_LightProbeShB** | Value: **15** |
+| **ShaderConstantFunction_LightProbeShO** | Value: **16** |
+| **ShaderConstantFunction_LightMapUvTransform** | Value: **17** |
+| **ShaderConstantFunction_LightMapUvTranslation** | Value: **18** |
+| **ShaderConstantFunction_LightMapIrradianceTexture** | Value: **19** |
+| **ShaderConstantFunction_LightMapIrradianceChromaTexture** | Value: **20** |
+| **ShaderConstantFunction_LightMapIrradianceLumaTexture** | Value: **21** |
+| **ShaderConstantFunction_LightMapDirectionTexture** | Value: **22** |
+| **ShaderConstantFunction_LightMapSkyVisibilityTexture** | Value: **23** |
+| **ShaderConstantFunction_DepthBufferTexture** | Value: **24** |
+| **ShaderConstantFunction_ViewportZMinMaxKzKw** | Value: **25** |
+| **ShaderConstantFunction_Time** | Value: **26** |
+| **ShaderConstantFunction_ScreenSize** | Value: **27** |
+| **ShaderConstantFunction_OutdoorLightDir** | Value: **28** |
+| **ShaderConstantFunction_OutdoorLightHemisphereDir** | Value: **29** |
+| **ShaderConstantFunction_OutdoorLightKeyColor** | Value: **30** |
+| **ShaderConstantFunction_OutdoorLightKeySpecularColorAndHemisphereVisibility** | Value: **31** |
+| **ShaderConstantFunction_OutdoorLightTopColor** | Value: **32** |
+| **ShaderConstantFunction_OutdoorLightBottomColor** | Value: **33** |
+| **ShaderConstantFunction_OutdoorLightShadowTransform** | Value: **34** |
+| **ShaderConstantFunction_OutdoorLightShadowmapSizeAndInvSize** | Value: **35** |
+| **ShaderConstantFunction_OutdoorLightShadowmapTexture** | Value: **36** |
+| **ShaderConstantFunction_OutdoorLightTransparencyShadowmapTexture** | Value: **37** |
+| **ShaderConstantFunction_OutdoorLightSkyEnvmap** | Value: **38** |
+| **ShaderConstantFunction_OutdoorLightDynamicEnvmap** | Value: **39** |
+| **ShaderConstantFunction_OutdoorLightTopColorEnvmap** | Value: **40** |
+| **ShaderConstantFunction_OutdoorLightBottomColorEnvmap** | Value: **41** |
+| **ShaderConstantFunction_OutdoorLightKeyColorEnvmap** | Value: **42** |
+| **ShaderConstantFunction_OutdoorLightSkyEnvmap8BitTexInvScale** | Value: **43** |
+| **ShaderConstantFunction_TransparentStartAndEndAndClamp** | Value: **44** |
+| **ShaderConstantFunction_BestFitNormalScaleTexture** | Value: **45** |
+| **ShaderConstantFunction_SceneTexture** | Value: **46** |
+| **ShaderConstantFunction_ColorScale** | Value: **47** |
+| **ShaderConstantFunction_DebugNonFiniteColor** | Value: **48** |
+| **ShaderConstantFunction_XenonInstancingIndexCount** | Value: **49** |
+| **ShaderConstantFunction_Ps3ClipPlane** | Value: **50** |
+| **ShaderConstantFunction_DxVectorBufferOffsets** | Value: **51** |
+| **ShaderConstantFunctionCount** | Value: **52** |
 
-| Name                                                                        | Value | Description |
-| --------------------------------------------------------------------------- | ----- | ----------- |
-| ShaderConstantFunction\_ViewMatrix                                          | 0     |             |
-| ShaderConstantFunction\_ViewProjMatrix                                      | 1     |             |
-| ShaderConstantFunction\_WorldViewMatrix                                     | 2     |             |
-| ShaderConstantFunction\_WorldViewProjMatrix                                 | 3     |             |
-| ShaderConstantFunction\_CrViewProjMatrix                                    | 4     |             |
-| ShaderConstantFunction\_CrWorldViewProjMatrix                               | 5     |             |
-| ShaderConstantFunction\_CameraPos                                           | 6     |             |
-| ShaderConstantFunction\_PrevViewProjMatrix                                  | 7     |             |
-| ShaderConstantFunction\_PrevWorldViewProjMatrix                             | 8     |             |
-| ShaderConstantFunction\_WorldMatrix                                         | 9     |             |
-| ShaderConstantFunction\_PrevWorldMatrix                                     | 10    |             |
-| ShaderConstantFunction\_BoneVectors                                         | 11    |             |
-| ShaderConstantFunction\_PrevBoneVectors                                     | 12    |             |
-| ShaderConstantFunction\_LightProbeShR                                       | 13    |             |
-| ShaderConstantFunction\_LightProbeShG                                       | 14    |             |
-| ShaderConstantFunction\_LightProbeShB                                       | 15    |             |
-| ShaderConstantFunction\_LightProbeShO                                       | 16    |             |
-| ShaderConstantFunction\_LightMapUvTransform                                 | 17    |             |
-| ShaderConstantFunction\_LightMapUvTranslation                               | 18    |             |
-| ShaderConstantFunction\_LightMapIrradianceTexture                           | 19    |             |
-| ShaderConstantFunction\_LightMapIrradianceChromaTexture                     | 20    |             |
-| ShaderConstantFunction\_LightMapIrradianceLumaTexture                       | 21    |             |
-| ShaderConstantFunction\_LightMapDirectionTexture                            | 22    |             |
-| ShaderConstantFunction\_LightMapSkyVisibilityTexture                        | 23    |             |
-| ShaderConstantFunction\_DepthBufferTexture                                  | 24    |             |
-| ShaderConstantFunction\_ViewportZMinMaxKzKw                                 | 25    |             |
-| ShaderConstantFunction\_Time                                                | 26    |             |
-| ShaderConstantFunction\_ScreenSize                                          | 27    |             |
-| ShaderConstantFunction\_OutdoorLightDir                                     | 28    |             |
-| ShaderConstantFunction\_OutdoorLightHemisphereDir                           | 29    |             |
-| ShaderConstantFunction\_OutdoorLightKeyColor                                | 30    |             |
-| ShaderConstantFunction\_OutdoorLightKeySpecularColorAndHemisphereVisibility | 31    |             |
-| ShaderConstantFunction\_OutdoorLightTopColor                                | 32    |             |
-| ShaderConstantFunction\_OutdoorLightBottomColor                             | 33    |             |
-| ShaderConstantFunction\_OutdoorLightShadowTransform                         | 34    |             |
-| ShaderConstantFunction\_OutdoorLightShadowmapSizeAndInvSize                 | 35    |             |
-| ShaderConstantFunction\_OutdoorLightShadowmapTexture                        | 36    |             |
-| ShaderConstantFunction\_OutdoorLightTransparencyShadowmapTexture            | 37    |             |
-| ShaderConstantFunction\_OutdoorLightSkyEnvmap                               | 38    |             |
-| ShaderConstantFunction\_OutdoorLightDynamicEnvmap                           | 39    |             |
-| ShaderConstantFunction\_OutdoorLightTopColorEnvmap                          | 40    |             |
-| ShaderConstantFunction\_OutdoorLightBottomColorEnvmap                       | 41    |             |
-| ShaderConstantFunction\_OutdoorLightKeyColorEnvmap                          | 42    |             |
-| ShaderConstantFunction\_OutdoorLightSkyEnvmap8BitTexInvScale                | 43    |             |
-| ShaderConstantFunction\_TransparentStartAndEndAndClamp                      | 44    |             |
-| ShaderConstantFunction\_BestFitNormalScaleTexture                           | 45    |             |
-| ShaderConstantFunction\_SceneTexture                                        | 46    |             |
-| ShaderConstantFunction\_ColorScale                                          | 47    |             |
-| ShaderConstantFunction\_DebugNonFiniteColor                                 | 48    |             |
-| ShaderConstantFunction\_XenonInstancingIndexCount                           | 49    |             |
-| ShaderConstantFunction\_Ps3ClipPlane                                        | 50    |             |
-| ShaderConstantFunction\_DxVectorBufferOffsets                               | 51    |             |
-| ShaderConstantFunctionCount                                                 | 52    |             |

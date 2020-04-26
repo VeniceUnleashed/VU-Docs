@@ -1,50 +1,142 @@
 ---
 title: WeaponPickupEntityData
 ---
-### Base Classes
 
-[PickupEntityData](/vext/ref/fb/pickupentitydata/)
+Inherits from 
+[PickupEntityData](/vext/ref/fb/pickupentitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[WeaponPickupEntityData](#constructor-0)**() |
+| **[WeaponPickupEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[WeaponPickupEntityData](#constructor-2)**(other: [PickupEntityData](/vext/ref/fb/pickupentitydata)) |
+| **[WeaponPickupEntityData](#constructor-3)**(other: [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata)) |
+| **[WeaponPickupEntityData](#constructor-4)**(other: [GameEntityData](/vext/ref/fb/gameentitydata)) |
+| **[WeaponPickupEntityData](#constructor-5)**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata)) |
+| **[WeaponPickupEntityData](#constructor-6)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[WeaponPickupEntityData](#constructor-7)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[WeaponPickupEntityData](#constructor-8)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[WeaponPickupEntityData](#constructor-9)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "weapons" >}} | [WeaponPickupData](/vext/ref/fb/weaponpickupdata)[] |
+| {{< prop "useForPersistence" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "WeaponPickupEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### WeaponPickupEntityData {#constructor-0}
+> **WeaponPickupEntityData**()
 
-| Constructor                                                                       | Description                                                                                                                         |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| WeaponPickupEntityData()                                                          | Create a new instance of this container type.                                                                                       |
-| WeaponPickupEntityData(WeaponPickupEntityData other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| WeaponPickupEntityData([PickupEntityData](/vext/ref/fb/pickupentitydata/) other)                | Upcast an instance of type [PickupEntityData](/vext/ref/fb/pickupentitydata/) to [WeaponPickupEntityData](/vext/ref/fb/weaponpickupentitydata/).                |
-| WeaponPickupEntityData([GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata/) other)      | Upcast an instance of type [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata/) to [WeaponPickupEntityData](/vext/ref/fb/weaponpickupentitydata/).      |
-| WeaponPickupEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [WeaponPickupEntityData](/vext/ref/fb/weaponpickupentitydata/).                    |
-| WeaponPickupEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [WeaponPickupEntityData](/vext/ref/fb/weaponpickupentitydata/).              |
-| WeaponPickupEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [WeaponPickupEntityData](/vext/ref/fb/weaponpickupentitydata/).                            |
-| WeaponPickupEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [WeaponPickupEntityData](/vext/ref/fb/weaponpickupentitydata/).                    |
-| WeaponPickupEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [WeaponPickupEntityData](/vext/ref/fb/weaponpickupentitydata/).              |
-| WeaponPickupEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponPickupEntityData](/vext/ref/fb/weaponpickupentitydata/). |
+Creates a new [WeaponPickupEntityData](/vext/ref/fb/weaponpickupentitydata) frostbite instance.
 
-## Properties
+### WeaponPickupEntityData {#constructor-1}
+> **WeaponPickupEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name              | Type                                     | Description |
-| ----------------- | ---------------------------------------- | ----------- |
-| weapons           | [WeaponPickupData](/vext/ref/fb/weaponpickupdata/)\[\] |             |
-| useForPersistence | bool                                     |             |
-
-## Methods
-
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [WeaponPickupEntityData](/vext/ref/fb/weaponpickupentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [WeaponPickupEntityData](/vext/ref/fb/weaponpickupentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [WeaponPickupEntityData](/vext/ref/fb/weaponpickupentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### WeaponPickupEntityData {#constructor-2}
+> **WeaponPickupEntityData**(other: [PickupEntityData](/vext/ref/fb/pickupentitydata))
+
+Casts an instance of type [PickupEntityData](/vext/ref/fb/pickupentitydata) to [WeaponPickupEntityData](/vext/ref/fb/weaponpickupentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [PickupEntityData](/vext/ref/fb/pickupentitydata) | The instance to cast to [WeaponPickupEntityData](/vext/ref/fb/weaponpickupentitydata). |
+
+### WeaponPickupEntityData {#constructor-3}
+> **WeaponPickupEntityData**(other: [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata))
+
+Casts an instance of type [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata) to [WeaponPickupEntityData](/vext/ref/fb/weaponpickupentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata) | The instance to cast to [WeaponPickupEntityData](/vext/ref/fb/weaponpickupentitydata). |
+
+### WeaponPickupEntityData {#constructor-4}
+> **WeaponPickupEntityData**(other: [GameEntityData](/vext/ref/fb/gameentitydata))
+
+Casts an instance of type [GameEntityData](/vext/ref/fb/gameentitydata) to [WeaponPickupEntityData](/vext/ref/fb/weaponpickupentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameEntityData](/vext/ref/fb/gameentitydata) | The instance to cast to [WeaponPickupEntityData](/vext/ref/fb/weaponpickupentitydata). |
+
+### WeaponPickupEntityData {#constructor-5}
+> **WeaponPickupEntityData**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata))
+
+Casts an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata) to [WeaponPickupEntityData](/vext/ref/fb/weaponpickupentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SpatialEntityData](/vext/ref/fb/spatialentitydata) | The instance to cast to [WeaponPickupEntityData](/vext/ref/fb/weaponpickupentitydata). |
+
+### WeaponPickupEntityData {#constructor-6}
+> **WeaponPickupEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [WeaponPickupEntityData](/vext/ref/fb/weaponpickupentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [WeaponPickupEntityData](/vext/ref/fb/weaponpickupentitydata). |
+
+### WeaponPickupEntityData {#constructor-7}
+> **WeaponPickupEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [WeaponPickupEntityData](/vext/ref/fb/weaponpickupentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [WeaponPickupEntityData](/vext/ref/fb/weaponpickupentitydata). |
+
+### WeaponPickupEntityData {#constructor-8}
+> **WeaponPickupEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [WeaponPickupEntityData](/vext/ref/fb/weaponpickupentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [WeaponPickupEntityData](/vext/ref/fb/weaponpickupentitydata). |
+
+### WeaponPickupEntityData {#constructor-9}
+> **WeaponPickupEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponPickupEntityData](/vext/ref/fb/weaponpickupentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [WeaponPickupEntityData](/vext/ref/fb/weaponpickupentitydata). |
+
+## Properties
+### {{% prop-heading "weapons" %}}
+> **[WeaponPickupData](/vext/ref/fb/weaponpickupdata)**[]
+
+### {{% prop-heading "useForPersistence" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [WeaponPickupEntityData](/vext/ref/fb/weaponpickupentitydata) type.
+

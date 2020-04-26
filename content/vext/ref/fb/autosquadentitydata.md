@@ -1,47 +1,116 @@
 ---
 title: AutoSquadEntityData
 ---
-### Base Classes
 
-[GameEntityData](/vext/ref/fb/gameentitydata/)
+Inherits from 
+[GameEntityData](/vext/ref/fb/gameentitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AutoSquadEntityData](#constructor-0)**() |
+| **[AutoSquadEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[AutoSquadEntityData](#constructor-2)**(other: [GameEntityData](/vext/ref/fb/gameentitydata)) |
+| **[AutoSquadEntityData](#constructor-3)**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata)) |
+| **[AutoSquadEntityData](#constructor-4)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[AutoSquadEntityData](#constructor-5)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[AutoSquadEntityData](#constructor-6)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[AutoSquadEntityData](#constructor-7)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "squadId" >}} | [SquadId](/vext/ref/fb/squadid) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AutoSquadEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AutoSquadEntityData {#constructor-0}
+> **AutoSquadEntityData**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| AutoSquadEntityData()                                                          | Create a new instance of this container type.                                                                                 |
-| AutoSquadEntityData(AutoSquadEntityData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| AutoSquadEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [AutoSquadEntityData](/vext/ref/fb/autosquadentitydata/).                    |
-| AutoSquadEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [AutoSquadEntityData](/vext/ref/fb/autosquadentitydata/).              |
-| AutoSquadEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [AutoSquadEntityData](/vext/ref/fb/autosquadentitydata/).                            |
-| AutoSquadEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [AutoSquadEntityData](/vext/ref/fb/autosquadentitydata/).                    |
-| AutoSquadEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [AutoSquadEntityData](/vext/ref/fb/autosquadentitydata/).              |
-| AutoSquadEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AutoSquadEntityData](/vext/ref/fb/autosquadentitydata/). |
+Creates a new [AutoSquadEntityData](/vext/ref/fb/autosquadentitydata) frostbite instance.
 
-## Properties
+### AutoSquadEntityData {#constructor-1}
+> **AutoSquadEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name    | Type               | Description |
-| ------- | ------------------ | ----------- |
-| squadId | [SquadId](/vext/ref/fb/squadid/) |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [AutoSquadEntityData](/vext/ref/fb/autosquadentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [AutoSquadEntityData](/vext/ref/fb/autosquadentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [AutoSquadEntityData](/vext/ref/fb/autosquadentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### AutoSquadEntityData {#constructor-2}
+> **AutoSquadEntityData**(other: [GameEntityData](/vext/ref/fb/gameentitydata))
+
+Casts an instance of type [GameEntityData](/vext/ref/fb/gameentitydata) to [AutoSquadEntityData](/vext/ref/fb/autosquadentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameEntityData](/vext/ref/fb/gameentitydata) | The instance to cast to [AutoSquadEntityData](/vext/ref/fb/autosquadentitydata). |
+
+### AutoSquadEntityData {#constructor-3}
+> **AutoSquadEntityData**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata))
+
+Casts an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata) to [AutoSquadEntityData](/vext/ref/fb/autosquadentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SpatialEntityData](/vext/ref/fb/spatialentitydata) | The instance to cast to [AutoSquadEntityData](/vext/ref/fb/autosquadentitydata). |
+
+### AutoSquadEntityData {#constructor-4}
+> **AutoSquadEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [AutoSquadEntityData](/vext/ref/fb/autosquadentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [AutoSquadEntityData](/vext/ref/fb/autosquadentitydata). |
+
+### AutoSquadEntityData {#constructor-5}
+> **AutoSquadEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [AutoSquadEntityData](/vext/ref/fb/autosquadentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [AutoSquadEntityData](/vext/ref/fb/autosquadentitydata). |
+
+### AutoSquadEntityData {#constructor-6}
+> **AutoSquadEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [AutoSquadEntityData](/vext/ref/fb/autosquadentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [AutoSquadEntityData](/vext/ref/fb/autosquadentitydata). |
+
+### AutoSquadEntityData {#constructor-7}
+> **AutoSquadEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AutoSquadEntityData](/vext/ref/fb/autosquadentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [AutoSquadEntityData](/vext/ref/fb/autosquadentitydata). |
+
+## Properties
+### {{% prop-heading "squadId" %}}
+> **[SquadId](/vext/ref/fb/squadid)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AutoSquadEntityData](/vext/ref/fb/autosquadentitydata) type.
+

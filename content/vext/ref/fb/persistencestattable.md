@@ -1,43 +1,65 @@
 ---
 title: PersistenceStatTable
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PersistenceStatTable](#constructor-0)**() |
+| **[PersistenceStatTable](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PersistenceStatTable](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "tableName" >}} | string |
+| {{< prop "ownerPersistenceData" >}} | [AbstractPersistenceData](/vext/ref/fb/abstractpersistencedata) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PersistenceStatTable" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PersistenceStatTable {#constructor-0}
+> **PersistenceStatTable**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| PersistenceStatTable()                                                          | Create a new instance of this container type.                                                                                   |
-| PersistenceStatTable(PersistenceStatTable other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| PersistenceStatTable([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PersistenceStatTable](/vext/ref/fb/persistencestattable/). |
+Creates a new [PersistenceStatTable](/vext/ref/fb/persistencestattable) frostbite instance.
 
-## Properties
+### PersistenceStatTable {#constructor-1}
+> **PersistenceStatTable**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                 | Type                                               | Description |
-| -------------------- | -------------------------------------------------- | ----------- |
-| tableName            | string                                             |             |
-| ownerPersistenceData | [AbstractPersistenceData](/vext/ref/fb/abstractpersistencedata/) |             |
-
-## Methods
-
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [PersistenceStatTable](/vext/ref/fb/persistencestattable/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PersistenceStatTable](/vext/ref/fb/persistencestattable/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PersistenceStatTable](/vext/ref/fb/persistencestattable) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PersistenceStatTable {#constructor-2}
+> **PersistenceStatTable**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PersistenceStatTable](/vext/ref/fb/persistencestattable). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PersistenceStatTable](/vext/ref/fb/persistencestattable). |
+
+## Properties
+### {{% prop-heading "tableName" %}}
+> **string**
+
+### {{% prop-heading "ownerPersistenceData" %}}
+> **[AbstractPersistenceData](/vext/ref/fb/abstractpersistencedata)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PersistenceStatTable](/vext/ref/fb/persistencestattable) type.
+

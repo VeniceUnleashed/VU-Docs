@@ -1,52 +1,122 @@
 ---
 title: AnimationSignalEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AnimationSignalEntityData](#constructor-0)**() |
+| **[AnimationSignalEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[AnimationSignalEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[AnimationSignalEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[AnimationSignalEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[AnimationSignalEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
+| {{< prop "signal" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "intGameState" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "floatGameState" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "valueInt" >}} | int |
+| {{< prop "valueFloat" >}} | float |
+| {{< prop "reset" >}} | bool |
+| {{< prop "continuous" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AnimationSignalEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AnimationSignalEntityData {#constructor-0}
+> **AnimationSignalEntityData**()
 
-| Constructor                                                                          | Description                                                                                                                               |
-| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| AnimationSignalEntityData()                                                          | Create a new instance of this container type.                                                                                             |
-| AnimationSignalEntityData(AnimationSignalEntityData other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| AnimationSignalEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [AnimationSignalEntityData](/vext/ref/fb/animationsignalentitydata/).                            |
-| AnimationSignalEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [AnimationSignalEntityData](/vext/ref/fb/animationsignalentitydata/).                    |
-| AnimationSignalEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [AnimationSignalEntityData](/vext/ref/fb/animationsignalentitydata/).              |
-| AnimationSignalEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AnimationSignalEntityData](/vext/ref/fb/animationsignalentitydata/). |
+Creates a new [AnimationSignalEntityData](/vext/ref/fb/animationsignalentitydata) frostbite instance.
 
-## Properties
+### AnimationSignalEntityData {#constructor-1}
+> **AnimationSignalEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name           | Type             | Description |
-| -------------- | ---------------- | ----------- |
-| realm          | [Realm](/vext/ref/fb/realm/)   |             |
-| signal         | [AntRef](/vext/ref/fb/antref/) |             |
-| intGameState   | [AntRef](/vext/ref/fb/antref/) |             |
-| floatGameState | [AntRef](/vext/ref/fb/antref/) |             |
-| valueInt       | number           |             |
-| valueFloat     | number           |             |
-| reset          | bool             |             |
-| continuous     | bool             |             |
-
-## Methods
-
-| Type                                                   | Name            | Parameters                                     |
-| ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [AnimationSignalEntityData](/vext/ref/fb/animationsignalentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [AnimationSignalEntityData](/vext/ref/fb/animationsignalentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [AnimationSignalEntityData](/vext/ref/fb/animationsignalentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### AnimationSignalEntityData {#constructor-2}
+> **AnimationSignalEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [AnimationSignalEntityData](/vext/ref/fb/animationsignalentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [AnimationSignalEntityData](/vext/ref/fb/animationsignalentitydata). |
+
+### AnimationSignalEntityData {#constructor-3}
+> **AnimationSignalEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [AnimationSignalEntityData](/vext/ref/fb/animationsignalentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [AnimationSignalEntityData](/vext/ref/fb/animationsignalentitydata). |
+
+### AnimationSignalEntityData {#constructor-4}
+> **AnimationSignalEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [AnimationSignalEntityData](/vext/ref/fb/animationsignalentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [AnimationSignalEntityData](/vext/ref/fb/animationsignalentitydata). |
+
+### AnimationSignalEntityData {#constructor-5}
+> **AnimationSignalEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AnimationSignalEntityData](/vext/ref/fb/animationsignalentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [AnimationSignalEntityData](/vext/ref/fb/animationsignalentitydata). |
+
+## Properties
+### {{% prop-heading "realm" %}}
+> **[Realm](/vext/ref/fb/realm)**
+
+### {{% prop-heading "signal" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "intGameState" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "floatGameState" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "valueInt" %}}
+> **int**
+
+### {{% prop-heading "valueFloat" %}}
+> **float**
+
+### {{% prop-heading "reset" %}}
+> **bool**
+
+### {{% prop-heading "continuous" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AnimationSignalEntityData](/vext/ref/fb/animationsignalentitydata) type.
+

@@ -1,47 +1,95 @@
 ---
 title: StatCategoriesBaseTree
 ---
-### Base Classes
 
-[TreeBase](/vext/ref/fb/treebase/)
+Inherits from 
+[TreeBase](/vext/ref/fb/treebase)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[StatCategoriesBaseTree](#constructor-0)**() |
+| **[StatCategoriesBaseTree](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[StatCategoriesBaseTree](#constructor-2)**(other: [TreeBase](/vext/ref/fb/treebase)) |
+| **[StatCategoriesBaseTree](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[StatCategoriesBaseTree](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "rootBaseCategories" >}} | [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata)[] |
+| {{< prop "paramX" >}} | [CriteriaData](/vext/ref/fb/criteriadata)[] |
+| {{< prop "paramY" >}} | [CriteriaData](/vext/ref/fb/criteriadata)[] |
+| {{< prop "processAllLevelsInTree" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "StatCategoriesBaseTree" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### StatCategoriesBaseTree {#constructor-0}
+> **StatCategoriesBaseTree**()
 
-| Constructor                                                                       | Description                                                                                                                         |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| StatCategoriesBaseTree()                                                          | Create a new instance of this container type.                                                                                       |
-| StatCategoriesBaseTree(StatCategoriesBaseTree other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| StatCategoriesBaseTree([TreeBase](/vext/ref/fb/treebase/) other)                                | Upcast an instance of type [TreeBase](/vext/ref/fb/treebase/) to [StatCategoriesBaseTree](/vext/ref/fb/statcategoriesbasetree/).                                |
-| StatCategoriesBaseTree([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [StatCategoriesBaseTree](/vext/ref/fb/statcategoriesbasetree/).                                      |
-| StatCategoriesBaseTree([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StatCategoriesBaseTree](/vext/ref/fb/statcategoriesbasetree/). |
+Creates a new [StatCategoriesBaseTree](/vext/ref/fb/statcategoriesbasetree) frostbite instance.
 
-## Properties
+### StatCategoriesBaseTree {#constructor-1}
+> **StatCategoriesBaseTree**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                   | Type                                               | Description |
-| ---------------------- | -------------------------------------------------- | ----------- |
-| rootBaseCategories     | [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/)\[\] |             |
-| paramX                 | [CriteriaData](/vext/ref/fb/criteriadata/)\[\]                   |             |
-| paramY                 | [CriteriaData](/vext/ref/fb/criteriadata/)\[\]                   |             |
-| processAllLevelsInTree | bool                                               |             |
-
-## Methods
-
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [StatCategoriesBaseTree](/vext/ref/fb/statcategoriesbasetree/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [StatCategoriesBaseTree](/vext/ref/fb/statcategoriesbasetree/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [StatCategoriesBaseTree](/vext/ref/fb/statcategoriesbasetree) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### StatCategoriesBaseTree {#constructor-2}
+> **StatCategoriesBaseTree**(other: [TreeBase](/vext/ref/fb/treebase))
+
+Casts an instance of type [TreeBase](/vext/ref/fb/treebase) to [StatCategoriesBaseTree](/vext/ref/fb/statcategoriesbasetree). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [TreeBase](/vext/ref/fb/treebase) | The instance to cast to [StatCategoriesBaseTree](/vext/ref/fb/statcategoriesbasetree). |
+
+### StatCategoriesBaseTree {#constructor-3}
+> **StatCategoriesBaseTree**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [StatCategoriesBaseTree](/vext/ref/fb/statcategoriesbasetree). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [StatCategoriesBaseTree](/vext/ref/fb/statcategoriesbasetree). |
+
+### StatCategoriesBaseTree {#constructor-4}
+> **StatCategoriesBaseTree**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StatCategoriesBaseTree](/vext/ref/fb/statcategoriesbasetree). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [StatCategoriesBaseTree](/vext/ref/fb/statcategoriesbasetree). |
+
+## Properties
+### {{% prop-heading "rootBaseCategories" %}}
+> **[StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata)**[]
+
+### {{% prop-heading "paramX" %}}
+> **[CriteriaData](/vext/ref/fb/criteriadata)**[]
+
+### {{% prop-heading "paramY" %}}
+> **[CriteriaData](/vext/ref/fb/criteriadata)**[]
+
+### {{% prop-heading "processAllLevelsInTree" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [StatCategoriesBaseTree](/vext/ref/fb/statcategoriesbasetree) type.
+

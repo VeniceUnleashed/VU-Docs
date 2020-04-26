@@ -1,46 +1,98 @@
 ---
 title: Vec3MathOpEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[Vec3MathOpEntityData](#constructor-0)**() |
+| **[Vec3MathOpEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[Vec3MathOpEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[Vec3MathOpEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[Vec3MathOpEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[Vec3MathOpEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
+| {{< prop "operators" >}} | [Vec3MathOp](/vext/ref/fb/vec3mathop)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "Vec3MathOpEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### Vec3MathOpEntityData {#constructor-0}
+> **Vec3MathOpEntityData**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| Vec3MathOpEntityData()                                                          | Create a new instance of this container type.                                                                                   |
-| Vec3MathOpEntityData(Vec3MathOpEntityData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| Vec3MathOpEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [Vec3MathOpEntityData](/vext/ref/fb/vec3mathopentitydata/).                            |
-| Vec3MathOpEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [Vec3MathOpEntityData](/vext/ref/fb/vec3mathopentitydata/).                    |
-| Vec3MathOpEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [Vec3MathOpEntityData](/vext/ref/fb/vec3mathopentitydata/).              |
-| Vec3MathOpEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [Vec3MathOpEntityData](/vext/ref/fb/vec3mathopentitydata/). |
+Creates a new [Vec3MathOpEntityData](/vext/ref/fb/vec3mathopentitydata) frostbite instance.
 
-## Properties
+### Vec3MathOpEntityData {#constructor-1}
+> **Vec3MathOpEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name      | Type                         | Description |
-| --------- | ---------------------------- | ----------- |
-| realm     | [Realm](/vext/ref/fb/realm/)               |             |
-| operators | [Vec3MathOp](/vext/ref/fb/vec3mathop/)\[\] |             |
-
-## Methods
-
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [Vec3MathOpEntityData](/vext/ref/fb/vec3mathopentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [Vec3MathOpEntityData](/vext/ref/fb/vec3mathopentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [Vec3MathOpEntityData](/vext/ref/fb/vec3mathopentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### Vec3MathOpEntityData {#constructor-2}
+> **Vec3MathOpEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [Vec3MathOpEntityData](/vext/ref/fb/vec3mathopentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [Vec3MathOpEntityData](/vext/ref/fb/vec3mathopentitydata). |
+
+### Vec3MathOpEntityData {#constructor-3}
+> **Vec3MathOpEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [Vec3MathOpEntityData](/vext/ref/fb/vec3mathopentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [Vec3MathOpEntityData](/vext/ref/fb/vec3mathopentitydata). |
+
+### Vec3MathOpEntityData {#constructor-4}
+> **Vec3MathOpEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [Vec3MathOpEntityData](/vext/ref/fb/vec3mathopentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [Vec3MathOpEntityData](/vext/ref/fb/vec3mathopentitydata). |
+
+### Vec3MathOpEntityData {#constructor-5}
+> **Vec3MathOpEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [Vec3MathOpEntityData](/vext/ref/fb/vec3mathopentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [Vec3MathOpEntityData](/vext/ref/fb/vec3mathopentitydata). |
+
+## Properties
+### {{% prop-heading "realm" %}}
+> **[Realm](/vext/ref/fb/realm)**
+
+### {{% prop-heading "operators" %}}
+> **[Vec3MathOp](/vext/ref/fb/vec3mathop)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [Vec3MathOpEntityData](/vext/ref/fb/vec3mathopentitydata) type.
+

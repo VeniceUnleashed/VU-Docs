@@ -1,15 +1,12 @@
 ---
 title: InterpolationType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **InterpolationType_None** | Value: **0** |
+| **InterpolationType_Linear** | Value: **1** |
+| **InterpolationType_CatmullRom** | Value: **2** |
+| **InterpolationType_Curves** | Value: **3** |
 
-| Name                          | Value | Description |
-| ----------------------------- | ----- | ----------- |
-| InterpolationType\_None       | 0     |             |
-| InterpolationType\_Linear     | 1     |             |
-| InterpolationType\_CatmullRom | 2     |             |
-| InterpolationType\_Curves     | 3     |             |

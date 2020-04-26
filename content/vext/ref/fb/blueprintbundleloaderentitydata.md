@@ -1,41 +1,107 @@
 ---
 title: BlueprintBundleLoaderEntityData
 ---
-### Base Classes
 
-[GameEntityData](/vext/ref/fb/gameentitydata/)
+Inherits from 
+[GameEntityData](/vext/ref/fb/gameentitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[BlueprintBundleLoaderEntityData](#constructor-0)**() |
+| **[BlueprintBundleLoaderEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[BlueprintBundleLoaderEntityData](#constructor-2)**(other: [GameEntityData](/vext/ref/fb/gameentitydata)) |
+| **[BlueprintBundleLoaderEntityData](#constructor-3)**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata)) |
+| **[BlueprintBundleLoaderEntityData](#constructor-4)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[BlueprintBundleLoaderEntityData](#constructor-5)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[BlueprintBundleLoaderEntityData](#constructor-6)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[BlueprintBundleLoaderEntityData](#constructor-7)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "BlueprintBundleLoaderEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### BlueprintBundleLoaderEntityData {#constructor-0}
+> **BlueprintBundleLoaderEntityData**()
 
-| Constructor                                                                                | Description                                                                                                                                           |
-| ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BlueprintBundleLoaderEntityData()                                                          | Create a new instance of this container type.                                                                                                         |
-| BlueprintBundleLoaderEntityData(BlueprintBundleLoaderEntityData other)                     | Create a reference copy of an instance of the same type.                                                                                              |
-| BlueprintBundleLoaderEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [BlueprintBundleLoaderEntityData](/vext/ref/fb/blueprintbundleloaderentitydata/).                    |
-| BlueprintBundleLoaderEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [BlueprintBundleLoaderEntityData](/vext/ref/fb/blueprintbundleloaderentitydata/).              |
-| BlueprintBundleLoaderEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [BlueprintBundleLoaderEntityData](/vext/ref/fb/blueprintbundleloaderentitydata/).                            |
-| BlueprintBundleLoaderEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [BlueprintBundleLoaderEntityData](/vext/ref/fb/blueprintbundleloaderentitydata/).                    |
-| BlueprintBundleLoaderEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [BlueprintBundleLoaderEntityData](/vext/ref/fb/blueprintbundleloaderentitydata/).              |
-| BlueprintBundleLoaderEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BlueprintBundleLoaderEntityData](/vext/ref/fb/blueprintbundleloaderentitydata/). |
+Creates a new [BlueprintBundleLoaderEntityData](/vext/ref/fb/blueprintbundleloaderentitydata) frostbite instance.
 
-## Methods
+### BlueprintBundleLoaderEntityData {#constructor-1}
+> **BlueprintBundleLoaderEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                                               | Name            | Parameters                                     |
-| ------------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [BlueprintBundleLoaderEntityData](/vext/ref/fb/blueprintbundleloaderentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [BlueprintBundleLoaderEntityData](/vext/ref/fb/blueprintbundleloaderentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [BlueprintBundleLoaderEntityData](/vext/ref/fb/blueprintbundleloaderentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### BlueprintBundleLoaderEntityData {#constructor-2}
+> **BlueprintBundleLoaderEntityData**(other: [GameEntityData](/vext/ref/fb/gameentitydata))
+
+Casts an instance of type [GameEntityData](/vext/ref/fb/gameentitydata) to [BlueprintBundleLoaderEntityData](/vext/ref/fb/blueprintbundleloaderentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameEntityData](/vext/ref/fb/gameentitydata) | The instance to cast to [BlueprintBundleLoaderEntityData](/vext/ref/fb/blueprintbundleloaderentitydata). |
+
+### BlueprintBundleLoaderEntityData {#constructor-3}
+> **BlueprintBundleLoaderEntityData**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata))
+
+Casts an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata) to [BlueprintBundleLoaderEntityData](/vext/ref/fb/blueprintbundleloaderentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SpatialEntityData](/vext/ref/fb/spatialentitydata) | The instance to cast to [BlueprintBundleLoaderEntityData](/vext/ref/fb/blueprintbundleloaderentitydata). |
+
+### BlueprintBundleLoaderEntityData {#constructor-4}
+> **BlueprintBundleLoaderEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [BlueprintBundleLoaderEntityData](/vext/ref/fb/blueprintbundleloaderentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [BlueprintBundleLoaderEntityData](/vext/ref/fb/blueprintbundleloaderentitydata). |
+
+### BlueprintBundleLoaderEntityData {#constructor-5}
+> **BlueprintBundleLoaderEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [BlueprintBundleLoaderEntityData](/vext/ref/fb/blueprintbundleloaderentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [BlueprintBundleLoaderEntityData](/vext/ref/fb/blueprintbundleloaderentitydata). |
+
+### BlueprintBundleLoaderEntityData {#constructor-6}
+> **BlueprintBundleLoaderEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [BlueprintBundleLoaderEntityData](/vext/ref/fb/blueprintbundleloaderentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [BlueprintBundleLoaderEntityData](/vext/ref/fb/blueprintbundleloaderentitydata). |
+
+### BlueprintBundleLoaderEntityData {#constructor-7}
+> **BlueprintBundleLoaderEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BlueprintBundleLoaderEntityData](/vext/ref/fb/blueprintbundleloaderentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [BlueprintBundleLoaderEntityData](/vext/ref/fb/blueprintbundleloaderentitydata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [BlueprintBundleLoaderEntityData](/vext/ref/fb/blueprintbundleloaderentitydata) type.
+

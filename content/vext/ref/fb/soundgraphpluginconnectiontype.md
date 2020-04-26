@@ -1,14 +1,11 @@
 ---
 title: SoundGraphPluginConnectionType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **SoundGraphPluginConnectionType_Unconnected** | Value: **0** |
+| **SoundGraphPluginConnectionType_Voice** | Value: **1** |
+| **SoundGraphPluginConnectionType_Bus** | Value: **2** |
 
-| Name                                        | Value | Description |
-| ------------------------------------------- | ----- | ----------- |
-| SoundGraphPluginConnectionType\_Unconnected | 0     |             |
-| SoundGraphPluginConnectionType\_Voice       | 1     |             |
-| SoundGraphPluginConnectionType\_Bus         | 2     |             |

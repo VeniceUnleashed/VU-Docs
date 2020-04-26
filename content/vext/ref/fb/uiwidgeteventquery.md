@@ -1,12 +1,9 @@
 ---
 title: UIWidgetEventQuery
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **UIWidgetEventQuery_FireEvent** | Value: **0** |
 
-| Name                          | Value | Description |
-| ----------------------------- | ----- | ----------- |
-| UIWidgetEventQuery\_FireEvent | 0     |             |

@@ -1,14 +1,11 @@
 ---
 title: XenonTessellationMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **XenonTessellationMode_Discrete** | Value: **0** |
+| **XenonTessellationMode_Continuous** | Value: **1** |
+| **XenonTessellationMode_PerEdge** | Value: **2** |
 
-| Name                              | Value | Description |
-| --------------------------------- | ----- | ----------- |
-| XenonTessellationMode\_Discrete   | 0     |             |
-| XenonTessellationMode\_Continuous | 1     |             |
-| XenonTessellationMode\_PerEdge    | 2     |             |

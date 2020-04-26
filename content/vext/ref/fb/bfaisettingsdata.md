@@ -1,48 +1,99 @@
 ---
 title: BFAISettingsData
 ---
-### Base Classes
 
-[AISettingsData](/vext/ref/fb/aisettingsdata/)
+Inherits from 
+[AISettingsData](/vext/ref/fb/aisettingsdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[BFAISettingsData](#constructor-0)**() |
+| **[BFAISettingsData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[BFAISettingsData](#constructor-2)**(other: [AISettingsData](/vext/ref/fb/aisettingsdata)) |
+| **[BFAISettingsData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[BFAISettingsData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "movementConstants" >}} | [MovementConstantData](/vext/ref/fb/movementconstantdata) \| nil |
+| {{< prop "turretControlConstants" >}} | [TurretControlConstantData](/vext/ref/fb/turretcontrolconstantdata) \| nil |
+| {{< prop "searchAndDestroyConstants" >}} | [SearchAndDestroyConstantData](/vext/ref/fb/searchanddestroyconstantdata) \| nil |
+| {{< prop "followConstants" >}} | [FollowConstantData](/vext/ref/fb/followconstantdata) \| nil |
+| {{< prop "combatConstants" >}} | [CombatConstantData](/vext/ref/fb/combatconstantdata) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "BFAISettingsData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### BFAISettingsData {#constructor-0}
+> **BFAISettingsData**()
 
-| Constructor                                                                 | Description                                                                                                             |
-| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| BFAISettingsData()                                                          | Create a new instance of this container type.                                                                           |
-| BFAISettingsData(BFAISettingsData other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| BFAISettingsData([AISettingsData](/vext/ref/fb/aisettingsdata/) other)                    | Upcast an instance of type [AISettingsData](/vext/ref/fb/aisettingsdata/) to [BFAISettingsData](/vext/ref/fb/bfaisettingsdata/).                    |
-| BFAISettingsData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [BFAISettingsData](/vext/ref/fb/bfaisettingsdata/).                                      |
-| BFAISettingsData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BFAISettingsData](/vext/ref/fb/bfaisettingsdata/). |
+Creates a new [BFAISettingsData](/vext/ref/fb/bfaisettingsdata) frostbite instance.
 
-## Properties
+### BFAISettingsData {#constructor-1}
+> **BFAISettingsData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                      | Type                                                         | Description |
-| ------------------------- | ------------------------------------------------------------ | ----------- |
-| movementConstants         | [MovementConstantData](/vext/ref/fb/movementconstantdata/)                 |             |
-| turretControlConstants    | [TurretControlConstantData](/vext/ref/fb/turretcontrolconstantdata/)       |             |
-| searchAndDestroyConstants | [SearchAndDestroyConstantData](/vext/ref/fb/searchanddestroyconstantdata/) |             |
-| followConstants           | [FollowConstantData](/vext/ref/fb/followconstantdata/)                     |             |
-| combatConstants           | [CombatConstantData](/vext/ref/fb/combatconstantdata/)                     |             |
-
-## Methods
-
-| Type                                 | Name            | Parameters                                     |
-| ------------------------------------ | --------------- | ---------------------------------------------- |
-| [BFAISettingsData](/vext/ref/fb/bfaisettingsdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [BFAISettingsData](/vext/ref/fb/bfaisettingsdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [BFAISettingsData](/vext/ref/fb/bfaisettingsdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### BFAISettingsData {#constructor-2}
+> **BFAISettingsData**(other: [AISettingsData](/vext/ref/fb/aisettingsdata))
+
+Casts an instance of type [AISettingsData](/vext/ref/fb/aisettingsdata) to [BFAISettingsData](/vext/ref/fb/bfaisettingsdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AISettingsData](/vext/ref/fb/aisettingsdata) | The instance to cast to [BFAISettingsData](/vext/ref/fb/bfaisettingsdata). |
+
+### BFAISettingsData {#constructor-3}
+> **BFAISettingsData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [BFAISettingsData](/vext/ref/fb/bfaisettingsdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [BFAISettingsData](/vext/ref/fb/bfaisettingsdata). |
+
+### BFAISettingsData {#constructor-4}
+> **BFAISettingsData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BFAISettingsData](/vext/ref/fb/bfaisettingsdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [BFAISettingsData](/vext/ref/fb/bfaisettingsdata). |
+
+## Properties
+### {{% prop-heading "movementConstants" %}}
+> **[MovementConstantData](/vext/ref/fb/movementconstantdata)** | **nil**
+
+### {{% prop-heading "turretControlConstants" %}}
+> **[TurretControlConstantData](/vext/ref/fb/turretcontrolconstantdata)** | **nil**
+
+### {{% prop-heading "searchAndDestroyConstants" %}}
+> **[SearchAndDestroyConstantData](/vext/ref/fb/searchanddestroyconstantdata)** | **nil**
+
+### {{% prop-heading "followConstants" %}}
+> **[FollowConstantData](/vext/ref/fb/followconstantdata)** | **nil**
+
+### {{% prop-heading "combatConstants" %}}
+> **[CombatConstantData](/vext/ref/fb/combatconstantdata)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [BFAISettingsData](/vext/ref/fb/bfaisettingsdata) type.
+

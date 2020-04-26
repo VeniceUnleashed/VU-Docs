@@ -1,14 +1,11 @@
 ---
 title: RotationAxis
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **raX** | Value: **0** |
+| **raY** | Value: **1** |
+| **raZ** | Value: **2** |
 
-| Name | Value | Description |
-| ---- | ----- | ----------- |
-| raX  | 0     |             |
-| raY  | 1     |             |
-| raZ  | 2     |             |

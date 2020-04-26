@@ -1,12 +1,9 @@
 ---
 title: EntropyCodecType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **EntropyCodecType_Arithmetic** | Value: **0** |
 
-| Name                         | Value | Description |
-| ---------------------------- | ----- | ----------- |
-| EntropyCodecType\_Arithmetic | 0     |             |

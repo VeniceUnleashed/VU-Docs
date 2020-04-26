@@ -1,14 +1,11 @@
 ---
 title: SocketPhysics
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **SocketPhysics_Default** | Value: **0** |
+| **SocketPhysics_FakePhysics** | Value: **1** |
+| **SocketPhysics_Droppable** | Value: **2** |
 
-| Name                       | Value | Description |
-| -------------------------- | ----- | ----------- |
-| SocketPhysics\_Default     | 0     |             |
-| SocketPhysics\_FakePhysics | 1     |             |
-| SocketPhysics\_Droppable   | 2     |             |

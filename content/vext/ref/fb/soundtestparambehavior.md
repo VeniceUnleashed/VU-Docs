@@ -1,14 +1,11 @@
 ---
 title: SoundTestParamBehavior
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **SoundTestParamBehavior_Constant** | Value: **0** |
+| **SoundTestParamBehavior_LinearRamp** | Value: **1** |
+| **SoundTestParamBehavior_Random** | Value: **2** |
 
-| Name                               | Value | Description |
-| ---------------------------------- | ----- | ----------- |
-| SoundTestParamBehavior\_Constant   | 0     |             |
-| SoundTestParamBehavior\_LinearRamp | 1     |             |
-| SoundTestParamBehavior\_Random     | 2     |             |

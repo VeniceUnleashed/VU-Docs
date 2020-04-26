@@ -1,47 +1,81 @@
 ---
 title: MeshSettings
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MeshSettings](#constructor-0)**() |
+| **[MeshSettings](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MeshSettings](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "overrideShadersShaderName" >}} | string |
+| {{< prop "overrideShadersMeshName" >}} | string |
+| {{< prop "forceLod" >}} | int |
+| {{< prop "globalLodScale" >}} | float |
+| {{< prop "shadowDistanceScale" >}} | float |
+| {{< prop "loadingEnabled" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MeshSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MeshSettings {#constructor-0}
+> **MeshSettings**()
 
-| Constructor                                                             | Description                                                                                                     |
-| ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| MeshSettings()                                                          | Create a new instance of this container type.                                                                   |
-| MeshSettings(MeshSettings other)                                        | Create a reference copy of an instance of the same type.                                                        |
-| MeshSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MeshSettings](/vext/ref/fb/meshsettings/). |
+Creates a new [MeshSettings](/vext/ref/fb/meshsettings) frostbite instance.
 
-## Properties
+### MeshSettings {#constructor-1}
+> **MeshSettings**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                      | Type   | Description |
-| ------------------------- | ------ | ----------- |
-| overrideShadersShaderName | string |             |
-| overrideShadersMeshName   | string |             |
-| forceLod                  | number |             |
-| globalLodScale            | number |             |
-| shadowDistanceScale       | number |             |
-| loadingEnabled            | bool   |             |
-
-## Methods
-
-| Type                         | Name            | Parameters                                     |
-| ---------------------------- | --------------- | ---------------------------------------------- |
-| [MeshSettings](/vext/ref/fb/meshsettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MeshSettings](/vext/ref/fb/meshsettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MeshSettings](/vext/ref/fb/meshsettings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MeshSettings {#constructor-2}
+> **MeshSettings**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MeshSettings](/vext/ref/fb/meshsettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MeshSettings](/vext/ref/fb/meshsettings). |
+
+## Properties
+### {{% prop-heading "overrideShadersShaderName" %}}
+> **string**
+
+### {{% prop-heading "overrideShadersMeshName" %}}
+> **string**
+
+### {{% prop-heading "forceLod" %}}
+> **int**
+
+### {{% prop-heading "globalLodScale" %}}
+> **float**
+
+### {{% prop-heading "shadowDistanceScale" %}}
+> **float**
+
+### {{% prop-heading "loadingEnabled" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MeshSettings](/vext/ref/fb/meshsettings) type.
+

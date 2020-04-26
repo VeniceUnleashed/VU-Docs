@@ -1,38 +1,74 @@
 ---
 title: UpdateSizeZData
 ---
-### Base Classes
 
-[ProcessorData](/vext/ref/fb/processordata/)
+Inherits from 
+[ProcessorData](/vext/ref/fb/processordata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UpdateSizeZData](#constructor-0)**() |
+| **[UpdateSizeZData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UpdateSizeZData](#constructor-2)**(other: [ProcessorData](/vext/ref/fb/processordata)) |
+| **[UpdateSizeZData](#constructor-3)**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata)) |
+| **[UpdateSizeZData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UpdateSizeZData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UpdateSizeZData {#constructor-0}
+> **UpdateSizeZData**()
 
-| Constructor                                                                | Description                                                                                                           |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| UpdateSizeZData()                                                          | Create a new instance of this container type.                                                                         |
-| UpdateSizeZData(UpdateSizeZData other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| UpdateSizeZData([ProcessorData](/vext/ref/fb/processordata/) other)                      | Upcast an instance of type [ProcessorData](/vext/ref/fb/processordata/) to [UpdateSizeZData](/vext/ref/fb/updatesizezdata/).                      |
-| UpdateSizeZData([EmitterComponentData](/vext/ref/fb/emittercomponentdata/) other)        | Upcast an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata/) to [UpdateSizeZData](/vext/ref/fb/updatesizezdata/).        |
-| UpdateSizeZData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UpdateSizeZData](/vext/ref/fb/updatesizezdata/). |
+Creates a new [UpdateSizeZData](/vext/ref/fb/updatesizezdata) frostbite instance.
 
-## Methods
+### UpdateSizeZData {#constructor-1}
+> **UpdateSizeZData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                               | Name            | Parameters                                     |
-| ---------------------------------- | --------------- | ---------------------------------------------- |
-| [UpdateSizeZData](/vext/ref/fb/updatesizezdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UpdateSizeZData](/vext/ref/fb/updatesizezdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UpdateSizeZData](/vext/ref/fb/updatesizezdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UpdateSizeZData {#constructor-2}
+> **UpdateSizeZData**(other: [ProcessorData](/vext/ref/fb/processordata))
+
+Casts an instance of type [ProcessorData](/vext/ref/fb/processordata) to [UpdateSizeZData](/vext/ref/fb/updatesizezdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ProcessorData](/vext/ref/fb/processordata) | The instance to cast to [UpdateSizeZData](/vext/ref/fb/updatesizezdata). |
+
+### UpdateSizeZData {#constructor-3}
+> **UpdateSizeZData**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata))
+
+Casts an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata) to [UpdateSizeZData](/vext/ref/fb/updatesizezdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EmitterComponentData](/vext/ref/fb/emittercomponentdata) | The instance to cast to [UpdateSizeZData](/vext/ref/fb/updatesizezdata). |
+
+### UpdateSizeZData {#constructor-4}
+> **UpdateSizeZData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UpdateSizeZData](/vext/ref/fb/updatesizezdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UpdateSizeZData](/vext/ref/fb/updatesizezdata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UpdateSizeZData](/vext/ref/fb/updatesizezdata) type.
+

@@ -1,33 +1,61 @@
 ---
 title: CriteriaStarCategoryInstance
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[CriteriaStarCategoryInstance](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "name" >}} | string |
+| {{< prop "paramX" >}} | [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata) \| nil |
+| {{< prop "paramY" >}} | [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata) \| nil |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [CriteriaStarCategoryInstance](/vext/ref/fb/criteriastarcategoryinstance) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "CriteriaStarCategoryInstance" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### CriteriaStarCategoryInstance {#constructor-0}
+> **CriteriaStarCategoryInstance**()
 
-| Constructor                                                      | Description                                              |
-| ---------------------------------------------------------------- | -------------------------------------------------------- |
-| CriteriaStarCategoryInstance()                                   | Create a new instance of this structure type.            |
-| CriteriaStarCategoryInstance(CriteriaStarCategoryInstance other) | Create a reference copy of a structure of the same type. |
+Creates a new [CriteriaStarCategoryInstance](/vext/ref/fb/criteriastarcategoryinstance) frostbite structure.
 
 ## Properties
+### {{% prop-heading "name" %}}
+> **string**
 
-| Name   | Type                                           | Description |
-| ------ | ---------------------------------------------- | ----------- |
-| name   | string                                         |             |
-| paramX | [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/) |             |
-| paramY | [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/) |             |
+### {{% prop-heading "paramX" %}}
+> **[StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata)** | **nil**
+
+### {{% prop-heading "paramY" %}}
+> **[StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata)** | **nil**
 
 ## Methods
-
-| Type                                                         | Name            | Parameters |
-| ------------------------------------------------------------ | --------------- | ---------- |
-| [CriteriaStarCategoryInstance](/vext/ref/fb/criteriastarcategoryinstance/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [CriteriaStarCategoryInstance](/vext/ref/fb/criteriastarcategoryinstance)
 
-> [CriteriaStarCategoryInstance](/vext/ref/fb/criteriastarcategoryinstance/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[CriteriaStarCategoryInstance](/vext/ref/fb/criteriastarcategoryinstance)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [CriteriaStarCategoryInstance](/vext/ref/fb/criteriastarcategoryinstance) type.
+

@@ -1,16 +1,13 @@
 ---
 title: NotifyType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **NotifyPersonal** | Value: **0** |
+| **NotifyGeneral** | Value: **1** |
+| **NotifyConsole** | Value: **2** |
+| **NotityTooltip** | Value: **3** |
+| **NotifyCount** | Value: **4** |
 
-| Name           | Value | Description |
-| -------------- | ----- | ----------- |
-| NotifyPersonal | 0     |             |
-| NotifyGeneral  | 1     |             |
-| NotifyConsole  | 2     |             |
-| NotityTooltip  | 3     |             |
-| NotifyCount    | 4     |             |

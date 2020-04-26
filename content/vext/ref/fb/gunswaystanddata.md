@@ -1,32 +1,57 @@
 ---
 title: GunSwayStandData
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[GunSwayStandData](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "noZoom" >}} | [GunSwayBaseMoveJumpData](/vext/ref/fb/gunswaybasemovejumpdata) |
+| {{< prop "zoom" >}} | [GunSwayBaseMoveJumpData](/vext/ref/fb/gunswaybasemovejumpdata) |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [GunSwayStandData](/vext/ref/fb/gunswaystanddata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "GunSwayStandData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### GunSwayStandData {#constructor-0}
+> **GunSwayStandData**()
 
-| Constructor                              | Description                                              |
-| ---------------------------------------- | -------------------------------------------------------- |
-| GunSwayStandData()                       | Create a new instance of this structure type.            |
-| GunSwayStandData(GunSwayStandData other) | Create a reference copy of a structure of the same type. |
+Creates a new [GunSwayStandData](/vext/ref/fb/gunswaystanddata) frostbite structure.
 
 ## Properties
+### {{% prop-heading "noZoom" %}}
+> **[GunSwayBaseMoveJumpData](/vext/ref/fb/gunswaybasemovejumpdata)**
 
-| Name   | Type                                               | Description |
-| ------ | -------------------------------------------------- | ----------- |
-| noZoom | [GunSwayBaseMoveJumpData](/vext/ref/fb/gunswaybasemovejumpdata/) |             |
-| zoom   | [GunSwayBaseMoveJumpData](/vext/ref/fb/gunswaybasemovejumpdata/) |             |
+### {{% prop-heading "zoom" %}}
+> **[GunSwayBaseMoveJumpData](/vext/ref/fb/gunswaybasemovejumpdata)**
 
 ## Methods
-
-| Type                                 | Name            | Parameters |
-| ------------------------------------ | --------------- | ---------- |
-| [GunSwayStandData](/vext/ref/fb/gunswaystanddata/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [GunSwayStandData](/vext/ref/fb/gunswaystanddata)
 
-> [GunSwayStandData](/vext/ref/fb/gunswaystanddata/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[GunSwayStandData](/vext/ref/fb/gunswaystanddata)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [GunSwayStandData](/vext/ref/fb/gunswaystanddata) type.
+

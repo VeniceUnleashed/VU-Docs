@@ -1,46 +1,113 @@
 ---
 title: SoldierEmoteBinding
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SoldierEmoteBinding](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "speak" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "isSquadLeader" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "emoteSpot" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "emoteOk" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "emoteNeedARide" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "emoteGoGoGo" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "emoteNeedBackup" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "emoteThanks" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "emoteNeedMedic" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "emoteFollowMe" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "emoteNeedAmmo" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "emoteSorry" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "emoteNo" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "emoteDefendCapturePoint" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "emoteAttackCapturePoint" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "emoteMoveToPosition" >}} | [AntRef](/vext/ref/fb/antref) |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [SoldierEmoteBinding](/vext/ref/fb/soldieremotebinding) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SoldierEmoteBinding" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SoldierEmoteBinding {#constructor-0}
+> **SoldierEmoteBinding**()
 
-| Constructor                                    | Description                                              |
-| ---------------------------------------------- | -------------------------------------------------------- |
-| SoldierEmoteBinding()                          | Create a new instance of this structure type.            |
-| SoldierEmoteBinding(SoldierEmoteBinding other) | Create a reference copy of a structure of the same type. |
+Creates a new [SoldierEmoteBinding](/vext/ref/fb/soldieremotebinding) frostbite structure.
 
 ## Properties
+### {{% prop-heading "speak" %}}
+> **[AntRef](/vext/ref/fb/antref)**
 
-| Name                    | Type             | Description |
-| ----------------------- | ---------------- | ----------- |
-| speak                   | [AntRef](/vext/ref/fb/antref/) |             |
-| isSquadLeader           | [AntRef](/vext/ref/fb/antref/) |             |
-| emoteSpot               | [AntRef](/vext/ref/fb/antref/) |             |
-| emoteOk                 | [AntRef](/vext/ref/fb/antref/) |             |
-| emoteNeedARide          | [AntRef](/vext/ref/fb/antref/) |             |
-| emoteGoGoGo             | [AntRef](/vext/ref/fb/antref/) |             |
-| emoteNeedBackup         | [AntRef](/vext/ref/fb/antref/) |             |
-| emoteThanks             | [AntRef](/vext/ref/fb/antref/) |             |
-| emoteNeedMedic          | [AntRef](/vext/ref/fb/antref/) |             |
-| emoteFollowMe           | [AntRef](/vext/ref/fb/antref/) |             |
-| emoteNeedAmmo           | [AntRef](/vext/ref/fb/antref/) |             |
-| emoteSorry              | [AntRef](/vext/ref/fb/antref/) |             |
-| emoteNo                 | [AntRef](/vext/ref/fb/antref/) |             |
-| emoteDefendCapturePoint | [AntRef](/vext/ref/fb/antref/) |             |
-| emoteAttackCapturePoint | [AntRef](/vext/ref/fb/antref/) |             |
-| emoteMoveToPosition     | [AntRef](/vext/ref/fb/antref/) |             |
+### {{% prop-heading "isSquadLeader" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "emoteSpot" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "emoteOk" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "emoteNeedARide" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "emoteGoGoGo" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "emoteNeedBackup" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "emoteThanks" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "emoteNeedMedic" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "emoteFollowMe" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "emoteNeedAmmo" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "emoteSorry" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "emoteNo" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "emoteDefendCapturePoint" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "emoteAttackCapturePoint" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "emoteMoveToPosition" %}}
+> **[AntRef](/vext/ref/fb/antref)**
 
 ## Methods
-
-| Type                                       | Name            | Parameters |
-| ------------------------------------------ | --------------- | ---------- |
-| [SoldierEmoteBinding](/vext/ref/fb/soldieremotebinding/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [SoldierEmoteBinding](/vext/ref/fb/soldieremotebinding)
 
-> [SoldierEmoteBinding](/vext/ref/fb/soldieremotebinding/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[SoldierEmoteBinding](/vext/ref/fb/soldieremotebinding)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SoldierEmoteBinding](/vext/ref/fb/soldieremotebinding) type.
+

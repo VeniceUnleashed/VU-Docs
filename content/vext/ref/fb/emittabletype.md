@@ -1,19 +1,16 @@
 ---
 title: EmittableType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **Point** | Value: **0** |
+| **Quad** | Value: **1** |
+| **ScreenAlignedQuad** | Value: **2** |
+| **DirectionAlignedQuad** | Value: **3** |
+| **WorldAlignedQuad** | Value: **4** |
+| **Trail** | Value: **5** |
+| **ParticleMesh** | Value: **6** |
+| **EmittableTypeCount** | Value: **7** |
 
-| Name                 | Value | Description |
-| -------------------- | ----- | ----------- |
-| Point                | 0     |             |
-| Quad                 | 1     |             |
-| ScreenAlignedQuad    | 2     |             |
-| DirectionAlignedQuad | 3     |             |
-| WorldAlignedQuad     | 4     |             |
-| Trail                | 5     |             |
-| ParticleMesh         | 6     |             |
-| EmittableTypeCount   | 7     |             |

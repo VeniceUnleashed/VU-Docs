@@ -1,45 +1,87 @@
 ---
 title: EmitterDocument
 ---
-### Base Classes
 
-[EmitterAsset](/vext/ref/fb/emitterasset/)
+Inherits from 
+[EmitterAsset](/vext/ref/fb/emitterasset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[EmitterDocument](#constructor-0)**() |
+| **[EmitterDocument](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[EmitterDocument](#constructor-2)**(other: [EmitterAsset](/vext/ref/fb/emitterasset)) |
+| **[EmitterDocument](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[EmitterDocument](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "rootProcessor" >}} | [ProcessorData](/vext/ref/fb/processordata) \| nil |
+| {{< prop "templateData" >}} | [EmitterTemplateData](/vext/ref/fb/emittertemplatedata) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "EmitterDocument" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### EmitterDocument {#constructor-0}
+> **EmitterDocument**()
 
-| Constructor                                                                | Description                                                                                                           |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| EmitterDocument()                                                          | Create a new instance of this container type.                                                                         |
-| EmitterDocument(EmitterDocument other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| EmitterDocument([EmitterAsset](/vext/ref/fb/emitterasset/) other)                        | Upcast an instance of type [EmitterAsset](/vext/ref/fb/emitterasset/) to [EmitterDocument](/vext/ref/fb/emitterdocument/).                        |
-| EmitterDocument([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [EmitterDocument](/vext/ref/fb/emitterdocument/).                                      |
-| EmitterDocument([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EmitterDocument](/vext/ref/fb/emitterdocument/). |
+Creates a new [EmitterDocument](/vext/ref/fb/emitterdocument) frostbite instance.
 
-## Properties
+### EmitterDocument {#constructor-1}
+> **EmitterDocument**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name          | Type                                       | Description |
-| ------------- | ------------------------------------------ | ----------- |
-| rootProcessor | [ProcessorData](/vext/ref/fb/processordata/)             |             |
-| templateData  | [EmitterTemplateData](/vext/ref/fb/emittertemplatedata/) |             |
-
-## Methods
-
-| Type                               | Name            | Parameters                                     |
-| ---------------------------------- | --------------- | ---------------------------------------------- |
-| [EmitterDocument](/vext/ref/fb/emitterdocument/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [EmitterDocument](/vext/ref/fb/emitterdocument/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [EmitterDocument](/vext/ref/fb/emitterdocument) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### EmitterDocument {#constructor-2}
+> **EmitterDocument**(other: [EmitterAsset](/vext/ref/fb/emitterasset))
+
+Casts an instance of type [EmitterAsset](/vext/ref/fb/emitterasset) to [EmitterDocument](/vext/ref/fb/emitterdocument). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EmitterAsset](/vext/ref/fb/emitterasset) | The instance to cast to [EmitterDocument](/vext/ref/fb/emitterdocument). |
+
+### EmitterDocument {#constructor-3}
+> **EmitterDocument**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [EmitterDocument](/vext/ref/fb/emitterdocument). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [EmitterDocument](/vext/ref/fb/emitterdocument). |
+
+### EmitterDocument {#constructor-4}
+> **EmitterDocument**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EmitterDocument](/vext/ref/fb/emitterdocument). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [EmitterDocument](/vext/ref/fb/emitterdocument). |
+
+## Properties
+### {{% prop-heading "rootProcessor" %}}
+> **[ProcessorData](/vext/ref/fb/processordata)** | **nil**
+
+### {{% prop-heading "templateData" %}}
+> **[EmitterTemplateData](/vext/ref/fb/emittertemplatedata)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [EmitterDocument](/vext/ref/fb/emitterdocument) type.
+

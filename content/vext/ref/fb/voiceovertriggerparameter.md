@@ -1,43 +1,65 @@
 ---
 title: VoiceOverTriggerParameter
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VoiceOverTriggerParameter](#constructor-0)**() |
+| **[VoiceOverTriggerParameter](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VoiceOverTriggerParameter](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "source" >}} | [VoiceOverValueConnection](/vext/ref/fb/voiceovervalueconnection) \| nil |
+| {{< prop "eventParameter" >}} | [VoiceOverNamedValue](/vext/ref/fb/voiceovernamedvalue) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VoiceOverTriggerParameter" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VoiceOverTriggerParameter {#constructor-0}
+> **VoiceOverTriggerParameter**()
 
-| Constructor                                                                          | Description                                                                                                                               |
-| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| VoiceOverTriggerParameter()                                                          | Create a new instance of this container type.                                                                                             |
-| VoiceOverTriggerParameter(VoiceOverTriggerParameter other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| VoiceOverTriggerParameter([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverTriggerParameter](/vext/ref/fb/voiceovertriggerparameter/). |
+Creates a new [VoiceOverTriggerParameter](/vext/ref/fb/voiceovertriggerparameter) frostbite instance.
 
-## Properties
+### VoiceOverTriggerParameter {#constructor-1}
+> **VoiceOverTriggerParameter**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name           | Type                                                 | Description |
-| -------------- | ---------------------------------------------------- | ----------- |
-| source         | [VoiceOverValueConnection](/vext/ref/fb/voiceovervalueconnection/) |             |
-| eventParameter | [VoiceOverNamedValue](/vext/ref/fb/voiceovernamedvalue/)           |             |
-
-## Methods
-
-| Type                                                   | Name            | Parameters                                     |
-| ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [VoiceOverTriggerParameter](/vext/ref/fb/voiceovertriggerparameter/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VoiceOverTriggerParameter](/vext/ref/fb/voiceovertriggerparameter/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VoiceOverTriggerParameter](/vext/ref/fb/voiceovertriggerparameter) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VoiceOverTriggerParameter {#constructor-2}
+> **VoiceOverTriggerParameter**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverTriggerParameter](/vext/ref/fb/voiceovertriggerparameter). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VoiceOverTriggerParameter](/vext/ref/fb/voiceovertriggerparameter). |
+
+## Properties
+### {{% prop-heading "source" %}}
+> **[VoiceOverValueConnection](/vext/ref/fb/voiceovervalueconnection)** | **nil**
+
+### {{% prop-heading "eventParameter" %}}
+> **[VoiceOverNamedValue](/vext/ref/fb/voiceovernamedvalue)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VoiceOverTriggerParameter](/vext/ref/fb/voiceovertriggerparameter) type.
+

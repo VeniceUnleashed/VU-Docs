@@ -1,44 +1,83 @@
 ---
 title: UpdateClipScaleData
 ---
-### Base Classes
 
-[ProcessorData](/vext/ref/fb/processordata/)
+Inherits from 
+[ProcessorData](/vext/ref/fb/processordata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UpdateClipScaleData](#constructor-0)**() |
+| **[UpdateClipScaleData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UpdateClipScaleData](#constructor-2)**(other: [ProcessorData](/vext/ref/fb/processordata)) |
+| **[UpdateClipScaleData](#constructor-3)**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata)) |
+| **[UpdateClipScaleData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "lookup" >}} | int[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UpdateClipScaleData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UpdateClipScaleData {#constructor-0}
+> **UpdateClipScaleData**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| UpdateClipScaleData()                                                          | Create a new instance of this container type.                                                                                 |
-| UpdateClipScaleData(UpdateClipScaleData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| UpdateClipScaleData([ProcessorData](/vext/ref/fb/processordata/) other)                      | Upcast an instance of type [ProcessorData](/vext/ref/fb/processordata/) to [UpdateClipScaleData](/vext/ref/fb/updateclipscaledata/).                      |
-| UpdateClipScaleData([EmitterComponentData](/vext/ref/fb/emittercomponentdata/) other)        | Upcast an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata/) to [UpdateClipScaleData](/vext/ref/fb/updateclipscaledata/).        |
-| UpdateClipScaleData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UpdateClipScaleData](/vext/ref/fb/updateclipscaledata/). |
+Creates a new [UpdateClipScaleData](/vext/ref/fb/updateclipscaledata) frostbite instance.
 
-## Properties
+### UpdateClipScaleData {#constructor-1}
+> **UpdateClipScaleData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name   | Type       | Description |
-| ------ | ---------- | ----------- |
-| lookup | number\[\] |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [UpdateClipScaleData](/vext/ref/fb/updateclipscaledata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UpdateClipScaleData](/vext/ref/fb/updateclipscaledata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UpdateClipScaleData](/vext/ref/fb/updateclipscaledata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UpdateClipScaleData {#constructor-2}
+> **UpdateClipScaleData**(other: [ProcessorData](/vext/ref/fb/processordata))
+
+Casts an instance of type [ProcessorData](/vext/ref/fb/processordata) to [UpdateClipScaleData](/vext/ref/fb/updateclipscaledata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ProcessorData](/vext/ref/fb/processordata) | The instance to cast to [UpdateClipScaleData](/vext/ref/fb/updateclipscaledata). |
+
+### UpdateClipScaleData {#constructor-3}
+> **UpdateClipScaleData**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata))
+
+Casts an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata) to [UpdateClipScaleData](/vext/ref/fb/updateclipscaledata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EmitterComponentData](/vext/ref/fb/emittercomponentdata) | The instance to cast to [UpdateClipScaleData](/vext/ref/fb/updateclipscaledata). |
+
+### UpdateClipScaleData {#constructor-4}
+> **UpdateClipScaleData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UpdateClipScaleData](/vext/ref/fb/updateclipscaledata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UpdateClipScaleData](/vext/ref/fb/updateclipscaledata). |
+
+## Properties
+### {{% prop-heading "lookup" %}}
+> **int**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UpdateClipScaleData](/vext/ref/fb/updateclipscaledata) type.
+

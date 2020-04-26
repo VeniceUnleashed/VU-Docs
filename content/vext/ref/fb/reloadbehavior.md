@@ -1,14 +1,11 @@
 ---
 title: ReloadBehavior
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **RbInCover** | Value: **0** |
+| **RbStationary** | Value: **1** |
+| **RbAnywhere** | Value: **2** |
 
-| Name         | Value | Description |
-| ------------ | ----- | ----------- |
-| RbInCover    | 0     |             |
-| RbStationary | 1     |             |
-| RbAnywhere   | 2     |             |

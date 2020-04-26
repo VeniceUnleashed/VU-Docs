@@ -1,14 +1,11 @@
 ---
 title: WeaponClassification
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **WCNone** | Value: **0** |
+| **WCPrimary** | Value: **1** |
+| **WCSecondary** | Value: **2** |
 
-| Name        | Value | Description |
-| ----------- | ----- | ----------- |
-| WCNone      | 0     |             |
-| WCPrimary   | 1     |             |
-| WCSecondary | 2     |             |

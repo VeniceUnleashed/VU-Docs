@@ -1,44 +1,83 @@
 ---
 title: UIDetailedServerInfoCompData
 ---
-### Base Classes
 
-[UIComponentData](/vext/ref/fb/uicomponentdata/)
+Inherits from 
+[UIComponentData](/vext/ref/fb/uicomponentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIDetailedServerInfoCompData](#constructor-0)**() |
+| **[UIDetailedServerInfoCompData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UIDetailedServerInfoCompData](#constructor-2)**(other: [UIComponentData](/vext/ref/fb/uicomponentdata)) |
+| **[UIDetailedServerInfoCompData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[UIDetailedServerInfoCompData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "settings" >}} | [ServerInfoSetting](/vext/ref/fb/serverinfosetting)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIDetailedServerInfoCompData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIDetailedServerInfoCompData {#constructor-0}
+> **UIDetailedServerInfoCompData**()
 
-| Constructor                                                                             | Description                                                                                                                                     |
-| --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| UIDetailedServerInfoCompData()                                                          | Create a new instance of this container type.                                                                                                   |
-| UIDetailedServerInfoCompData(UIDetailedServerInfoCompData other)                        | Create a reference copy of an instance of the same type.                                                                                        |
-| UIDetailedServerInfoCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UIDetailedServerInfoCompData](/vext/ref/fb/uidetailedserverinfocompdata/).                  |
-| UIDetailedServerInfoCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UIDetailedServerInfoCompData](/vext/ref/fb/uidetailedserverinfocompdata/).                                      |
-| UIDetailedServerInfoCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIDetailedServerInfoCompData](/vext/ref/fb/uidetailedserverinfocompdata/). |
+Creates a new [UIDetailedServerInfoCompData](/vext/ref/fb/uidetailedserverinfocompdata) frostbite instance.
 
-## Properties
+### UIDetailedServerInfoCompData {#constructor-1}
+> **UIDetailedServerInfoCompData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name     | Type                                       | Description |
-| -------- | ------------------------------------------ | ----------- |
-| settings | [ServerInfoSetting](/vext/ref/fb/serverinfosetting/)\[\] |             |
-
-## Methods
-
-| Type                                                         | Name            | Parameters                                     |
-| ------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [UIDetailedServerInfoCompData](/vext/ref/fb/uidetailedserverinfocompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UIDetailedServerInfoCompData](/vext/ref/fb/uidetailedserverinfocompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UIDetailedServerInfoCompData](/vext/ref/fb/uidetailedserverinfocompdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UIDetailedServerInfoCompData {#constructor-2}
+> **UIDetailedServerInfoCompData**(other: [UIComponentData](/vext/ref/fb/uicomponentdata))
+
+Casts an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata) to [UIDetailedServerInfoCompData](/vext/ref/fb/uidetailedserverinfocompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIComponentData](/vext/ref/fb/uicomponentdata) | The instance to cast to [UIDetailedServerInfoCompData](/vext/ref/fb/uidetailedserverinfocompdata). |
+
+### UIDetailedServerInfoCompData {#constructor-3}
+> **UIDetailedServerInfoCompData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [UIDetailedServerInfoCompData](/vext/ref/fb/uidetailedserverinfocompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [UIDetailedServerInfoCompData](/vext/ref/fb/uidetailedserverinfocompdata). |
+
+### UIDetailedServerInfoCompData {#constructor-4}
+> **UIDetailedServerInfoCompData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIDetailedServerInfoCompData](/vext/ref/fb/uidetailedserverinfocompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UIDetailedServerInfoCompData](/vext/ref/fb/uidetailedserverinfocompdata). |
+
+## Properties
+### {{% prop-heading "settings" %}}
+> **[ServerInfoSetting](/vext/ref/fb/serverinfosetting)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIDetailedServerInfoCompData](/vext/ref/fb/uidetailedserverinfocompdata) type.
+

@@ -1,33 +1,61 @@
 ---
 title: UIGPSPosition
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIGPSPosition](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "latitude" >}} | float |
+| {{< prop "longitude" >}} | float |
+| {{< prop "seaLevelOffset" >}} | float |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [UIGPSPosition](/vext/ref/fb/uigpsposition) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIGPSPosition" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIGPSPosition {#constructor-0}
+> **UIGPSPosition**()
 
-| Constructor                        | Description                                              |
-| ---------------------------------- | -------------------------------------------------------- |
-| UIGPSPosition()                    | Create a new instance of this structure type.            |
-| UIGPSPosition(UIGPSPosition other) | Create a reference copy of a structure of the same type. |
+Creates a new [UIGPSPosition](/vext/ref/fb/uigpsposition) frostbite structure.
 
 ## Properties
+### {{% prop-heading "latitude" %}}
+> **float**
 
-| Name           | Type   | Description |
-| -------------- | ------ | ----------- |
-| latitude       | number |             |
-| longitude      | number |             |
-| seaLevelOffset | number |             |
+### {{% prop-heading "longitude" %}}
+> **float**
+
+### {{% prop-heading "seaLevelOffset" %}}
+> **float**
 
 ## Methods
-
-| Type                           | Name            | Parameters |
-| ------------------------------ | --------------- | ---------- |
-| [UIGPSPosition](/vext/ref/fb/uigpsposition/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [UIGPSPosition](/vext/ref/fb/uigpsposition)
 
-> [UIGPSPosition](/vext/ref/fb/uigpsposition/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[UIGPSPosition](/vext/ref/fb/uigpsposition)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIGPSPosition](/vext/ref/fb/uigpsposition) type.
+

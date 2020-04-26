@@ -1,36 +1,73 @@
 ---
 title: MatchmakingCreateGameParameters
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MatchmakingCreateGameParameters](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "gameTopology" >}} | [MatchmakingNetworkTopology](/vext/ref/fb/matchmakingnetworktopology) |
+| {{< prop "peerMode" >}} | [MatchmakingPeer2PeerMode](/vext/ref/fb/matchmakingpeer2peermode) |
+| {{< prop "voipTopology" >}} | [MatchmakingNetworkTopology](/vext/ref/fb/matchmakingnetworktopology) |
+| {{< prop "settings" >}} | [MatchmakingGameSettings](/vext/ref/fb/matchmakinggamesettings) |
+| {{< prop "attributes" >}} | [MatchmakingGameAttribute](/vext/ref/fb/matchmakinggameattribute)[] |
+| {{< prop "queueCapacity" >}} | int |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [MatchmakingCreateGameParameters](/vext/ref/fb/matchmakingcreategameparameters) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MatchmakingCreateGameParameters" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MatchmakingCreateGameParameters {#constructor-0}
+> **MatchmakingCreateGameParameters**()
 
-| Constructor                                                            | Description                                              |
-| ---------------------------------------------------------------------- | -------------------------------------------------------- |
-| MatchmakingCreateGameParameters()                                      | Create a new instance of this structure type.            |
-| MatchmakingCreateGameParameters(MatchmakingCreateGameParameters other) | Create a reference copy of a structure of the same type. |
+Creates a new [MatchmakingCreateGameParameters](/vext/ref/fb/matchmakingcreategameparameters) frostbite structure.
 
 ## Properties
+### {{% prop-heading "gameTopology" %}}
+> **[MatchmakingNetworkTopology](/vext/ref/fb/matchmakingnetworktopology)**
 
-| Name          | Type                                                     | Description |
-| ------------- | -------------------------------------------------------- | ----------- |
-| gameTopology  | [MatchmakingNetworkTopology](/vext/ref/fb/matchmakingnetworktopology/) |             |
-| peerMode      | [MatchmakingPeer2PeerMode](/vext/ref/fb/matchmakingpeer2peermode/)     |             |
-| voipTopology  | [MatchmakingNetworkTopology](/vext/ref/fb/matchmakingnetworktopology/) |             |
-| settings      | [MatchmakingGameSettings](/vext/ref/fb/matchmakinggamesettings/)       |             |
-| attributes    | [MatchmakingGameAttribute](/vext/ref/fb/matchmakinggameattribute/)\[\] |             |
-| queueCapacity | number                                                   |             |
+### {{% prop-heading "peerMode" %}}
+> **[MatchmakingPeer2PeerMode](/vext/ref/fb/matchmakingpeer2peermode)**
+
+### {{% prop-heading "voipTopology" %}}
+> **[MatchmakingNetworkTopology](/vext/ref/fb/matchmakingnetworktopology)**
+
+### {{% prop-heading "settings" %}}
+> **[MatchmakingGameSettings](/vext/ref/fb/matchmakinggamesettings)**
+
+### {{% prop-heading "attributes" %}}
+> **[MatchmakingGameAttribute](/vext/ref/fb/matchmakinggameattribute)**[]
+
+### {{% prop-heading "queueCapacity" %}}
+> **int**
 
 ## Methods
-
-| Type                                                               | Name            | Parameters |
-| ------------------------------------------------------------------ | --------------- | ---------- |
-| [MatchmakingCreateGameParameters](/vext/ref/fb/matchmakingcreategameparameters/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [MatchmakingCreateGameParameters](/vext/ref/fb/matchmakingcreategameparameters)
 
-> [MatchmakingCreateGameParameters](/vext/ref/fb/matchmakingcreategameparameters/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[MatchmakingCreateGameParameters](/vext/ref/fb/matchmakingcreategameparameters)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MatchmakingCreateGameParameters](/vext/ref/fb/matchmakingcreategameparameters) type.
+

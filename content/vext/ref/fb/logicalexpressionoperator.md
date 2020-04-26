@@ -1,15 +1,12 @@
 ---
 title: LogicalExpressionOperator
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **LogicalExpressionOperator_And** | Value: **0** |
+| **LogicalExpressionOperator_Or** | Value: **1** |
+| **LogicalExpressionOperator_Nand** | Value: **2** |
+| **LogicalExpressionOperator_Nor** | Value: **3** |
 
-| Name                            | Value | Description |
-| ------------------------------- | ----- | ----------- |
-| LogicalExpressionOperator\_And  | 0     |             |
-| LogicalExpressionOperator\_Or   | 1     |             |
-| LogicalExpressionOperator\_Nand | 2     |             |
-| LogicalExpressionOperator\_Nor  | 3     |             |

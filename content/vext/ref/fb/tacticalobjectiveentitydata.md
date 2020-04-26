@@ -1,51 +1,132 @@
 ---
 title: TacticalObjectiveEntityData
 ---
-### Base Classes
 
-[GameEntityData](/vext/ref/fb/gameentitydata/)
+Inherits from 
+[GameEntityData](/vext/ref/fb/gameentitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[TacticalObjectiveEntityData](#constructor-0)**() |
+| **[TacticalObjectiveEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[TacticalObjectiveEntityData](#constructor-2)**(other: [GameEntityData](/vext/ref/fb/gameentitydata)) |
+| **[TacticalObjectiveEntityData](#constructor-3)**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata)) |
+| **[TacticalObjectiveEntityData](#constructor-4)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[TacticalObjectiveEntityData](#constructor-5)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[TacticalObjectiveEntityData](#constructor-6)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[TacticalObjectiveEntityData](#constructor-7)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "missionSid" >}} | string |
+| {{< prop "briefingSidTeam1" >}} | string |
+| {{< prop "briefingSidTeam2" >}} | string |
+| {{< prop "team1Timer" >}} | float |
+| {{< prop "team2Timer" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "TacticalObjectiveEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### TacticalObjectiveEntityData {#constructor-0}
+> **TacticalObjectiveEntityData**()
 
-| Constructor                                                                            | Description                                                                                                                                   |
-| -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| TacticalObjectiveEntityData()                                                          | Create a new instance of this container type.                                                                                                 |
-| TacticalObjectiveEntityData(TacticalObjectiveEntityData other)                         | Create a reference copy of an instance of the same type.                                                                                      |
-| TacticalObjectiveEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [TacticalObjectiveEntityData](/vext/ref/fb/tacticalobjectiveentitydata/).                    |
-| TacticalObjectiveEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [TacticalObjectiveEntityData](/vext/ref/fb/tacticalobjectiveentitydata/).              |
-| TacticalObjectiveEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [TacticalObjectiveEntityData](/vext/ref/fb/tacticalobjectiveentitydata/).                            |
-| TacticalObjectiveEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [TacticalObjectiveEntityData](/vext/ref/fb/tacticalobjectiveentitydata/).                    |
-| TacticalObjectiveEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [TacticalObjectiveEntityData](/vext/ref/fb/tacticalobjectiveentitydata/).              |
-| TacticalObjectiveEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TacticalObjectiveEntityData](/vext/ref/fb/tacticalobjectiveentitydata/). |
+Creates a new [TacticalObjectiveEntityData](/vext/ref/fb/tacticalobjectiveentitydata) frostbite instance.
 
-## Properties
+### TacticalObjectiveEntityData {#constructor-1}
+> **TacticalObjectiveEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name             | Type   | Description |
-| ---------------- | ------ | ----------- |
-| missionSid       | string |             |
-| briefingSidTeam1 | string |             |
-| briefingSidTeam2 | string |             |
-| team1Timer       | number |             |
-| team2Timer       | number |             |
-
-## Methods
-
-| Type                                                       | Name            | Parameters                                     |
-| ---------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [TacticalObjectiveEntityData](/vext/ref/fb/tacticalobjectiveentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [TacticalObjectiveEntityData](/vext/ref/fb/tacticalobjectiveentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [TacticalObjectiveEntityData](/vext/ref/fb/tacticalobjectiveentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### TacticalObjectiveEntityData {#constructor-2}
+> **TacticalObjectiveEntityData**(other: [GameEntityData](/vext/ref/fb/gameentitydata))
+
+Casts an instance of type [GameEntityData](/vext/ref/fb/gameentitydata) to [TacticalObjectiveEntityData](/vext/ref/fb/tacticalobjectiveentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameEntityData](/vext/ref/fb/gameentitydata) | The instance to cast to [TacticalObjectiveEntityData](/vext/ref/fb/tacticalobjectiveentitydata). |
+
+### TacticalObjectiveEntityData {#constructor-3}
+> **TacticalObjectiveEntityData**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata))
+
+Casts an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata) to [TacticalObjectiveEntityData](/vext/ref/fb/tacticalobjectiveentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SpatialEntityData](/vext/ref/fb/spatialentitydata) | The instance to cast to [TacticalObjectiveEntityData](/vext/ref/fb/tacticalobjectiveentitydata). |
+
+### TacticalObjectiveEntityData {#constructor-4}
+> **TacticalObjectiveEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [TacticalObjectiveEntityData](/vext/ref/fb/tacticalobjectiveentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [TacticalObjectiveEntityData](/vext/ref/fb/tacticalobjectiveentitydata). |
+
+### TacticalObjectiveEntityData {#constructor-5}
+> **TacticalObjectiveEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [TacticalObjectiveEntityData](/vext/ref/fb/tacticalobjectiveentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [TacticalObjectiveEntityData](/vext/ref/fb/tacticalobjectiveentitydata). |
+
+### TacticalObjectiveEntityData {#constructor-6}
+> **TacticalObjectiveEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [TacticalObjectiveEntityData](/vext/ref/fb/tacticalobjectiveentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [TacticalObjectiveEntityData](/vext/ref/fb/tacticalobjectiveentitydata). |
+
+### TacticalObjectiveEntityData {#constructor-7}
+> **TacticalObjectiveEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TacticalObjectiveEntityData](/vext/ref/fb/tacticalobjectiveentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [TacticalObjectiveEntityData](/vext/ref/fb/tacticalobjectiveentitydata). |
+
+## Properties
+### {{% prop-heading "missionSid" %}}
+> **string**
+
+### {{% prop-heading "briefingSidTeam1" %}}
+> **string**
+
+### {{% prop-heading "briefingSidTeam2" %}}
+> **string**
+
+### {{% prop-heading "team1Timer" %}}
+> **float**
+
+### {{% prop-heading "team2Timer" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [TacticalObjectiveEntityData](/vext/ref/fb/tacticalobjectiveentitydata) type.
+

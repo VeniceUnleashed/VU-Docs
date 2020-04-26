@@ -1,12 +1,9 @@
 ---
 title: SoundTestTransformBehavior
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **SoundTestTransformBehavior_Static** | Value: **0** |
 
-| Name                               | Value | Description |
-| ---------------------------------- | ----- | ----------- |
-| SoundTestTransformBehavior\_Static | 0     |             |

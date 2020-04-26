@@ -1,45 +1,87 @@
 ---
 title: SoundGraphAsset
 ---
-### Base Classes
 
-[SoundAsset](/vext/ref/fb/soundasset/)
+Inherits from 
+[SoundAsset](/vext/ref/fb/soundasset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SoundGraphAsset](#constructor-0)**() |
+| **[SoundGraphAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SoundGraphAsset](#constructor-2)**(other: [SoundAsset](/vext/ref/fb/soundasset)) |
+| **[SoundGraphAsset](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[SoundGraphAsset](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "graph" >}} | [SoundGraphData](/vext/ref/fb/soundgraphdata) \| nil |
+| {{< prop "mixer" >}} | [MixerAsset](/vext/ref/fb/mixerasset) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SoundGraphAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SoundGraphAsset {#constructor-0}
+> **SoundGraphAsset**()
 
-| Constructor                                                                | Description                                                                                                           |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| SoundGraphAsset()                                                          | Create a new instance of this container type.                                                                         |
-| SoundGraphAsset(SoundGraphAsset other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| SoundGraphAsset([SoundAsset](/vext/ref/fb/soundasset/) other)                            | Upcast an instance of type [SoundAsset](/vext/ref/fb/soundasset/) to [SoundGraphAsset](/vext/ref/fb/soundgraphasset/).                            |
-| SoundGraphAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [SoundGraphAsset](/vext/ref/fb/soundgraphasset/).                                      |
-| SoundGraphAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoundGraphAsset](/vext/ref/fb/soundgraphasset/). |
+Creates a new [SoundGraphAsset](/vext/ref/fb/soundgraphasset) frostbite instance.
 
-## Properties
+### SoundGraphAsset {#constructor-1}
+> **SoundGraphAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name  | Type                             | Description |
-| ----- | -------------------------------- | ----------- |
-| graph | [SoundGraphData](/vext/ref/fb/soundgraphdata/) |             |
-| mixer | [MixerAsset](/vext/ref/fb/mixerasset/)         |             |
-
-## Methods
-
-| Type                               | Name            | Parameters                                     |
-| ---------------------------------- | --------------- | ---------------------------------------------- |
-| [SoundGraphAsset](/vext/ref/fb/soundgraphasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SoundGraphAsset](/vext/ref/fb/soundgraphasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SoundGraphAsset](/vext/ref/fb/soundgraphasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SoundGraphAsset {#constructor-2}
+> **SoundGraphAsset**(other: [SoundAsset](/vext/ref/fb/soundasset))
+
+Casts an instance of type [SoundAsset](/vext/ref/fb/soundasset) to [SoundGraphAsset](/vext/ref/fb/soundgraphasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SoundAsset](/vext/ref/fb/soundasset) | The instance to cast to [SoundGraphAsset](/vext/ref/fb/soundgraphasset). |
+
+### SoundGraphAsset {#constructor-3}
+> **SoundGraphAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [SoundGraphAsset](/vext/ref/fb/soundgraphasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [SoundGraphAsset](/vext/ref/fb/soundgraphasset). |
+
+### SoundGraphAsset {#constructor-4}
+> **SoundGraphAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoundGraphAsset](/vext/ref/fb/soundgraphasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SoundGraphAsset](/vext/ref/fb/soundgraphasset). |
+
+## Properties
+### {{% prop-heading "graph" %}}
+> **[SoundGraphData](/vext/ref/fb/soundgraphdata)** | **nil**
+
+### {{% prop-heading "mixer" %}}
+> **[MixerAsset](/vext/ref/fb/mixerasset)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SoundGraphAsset](/vext/ref/fb/soundgraphasset) type.
+

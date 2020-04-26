@@ -1,17 +1,14 @@
 ---
 title: SpotType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **SpotType_None** | Value: **0** |
+| **SpotType_Active** | Value: **1** |
+| **SpotType_Passive** | Value: **2** |
+| **SpotType_Radar** | Value: **3** |
+| **SpotType_Unspottable** | Value: **4** |
+| **SpotType_Count** | Value: **5** |
 
-| Name                  | Value | Description |
-| --------------------- | ----- | ----------- |
-| SpotType\_None        | 0     |             |
-| SpotType\_Active      | 1     |             |
-| SpotType\_Passive     | 2     |             |
-| SpotType\_Radar       | 3     |             |
-| SpotType\_Unspottable | 4     |             |
-| SpotType\_Count       | 5     |             |

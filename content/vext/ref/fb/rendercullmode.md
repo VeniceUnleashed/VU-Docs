@@ -1,14 +1,11 @@
 ---
 title: RenderCullMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **RenderCullMode_None** | Value: **0** |
+| **RenderCullMode_Front** | Value: **1** |
+| **RenderCullMode_Back** | Value: **2** |
 
-| Name                  | Value | Description |
-| --------------------- | ----- | ----------- |
-| RenderCullMode\_None  | 0     |             |
-| RenderCullMode\_Front | 1     |             |
-| RenderCullMode\_Back  | 2     |             |

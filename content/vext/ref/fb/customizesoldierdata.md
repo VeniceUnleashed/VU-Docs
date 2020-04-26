@@ -1,48 +1,99 @@
 ---
 title: CustomizeSoldierData
 ---
-### Base Classes
 
-[CustomizeCharacterData](/vext/ref/fb/customizecharacterdata/)
+Inherits from 
+[CustomizeCharacterData](/vext/ref/fb/customizecharacterdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[CustomizeSoldierData](#constructor-0)**() |
+| **[CustomizeSoldierData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[CustomizeSoldierData](#constructor-2)**(other: [CustomizeCharacterData](/vext/ref/fb/customizecharacterdata)) |
+| **[CustomizeSoldierData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[CustomizeSoldierData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "weapons" >}} | [UnlockWeaponAndSlot](/vext/ref/fb/unlockweaponandslot)[] |
+| {{< prop "activeSlot" >}} | [WeaponSlot](/vext/ref/fb/weaponslot) |
+| {{< prop "deathPickup" >}} | [PickupEntityAsset](/vext/ref/fb/pickupentityasset) \| nil |
+| {{< prop "removeAllExistingWeapons" >}} | bool |
+| {{< prop "disableDeathPickup" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "CustomizeSoldierData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### CustomizeSoldierData {#constructor-0}
+> **CustomizeSoldierData**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| CustomizeSoldierData()                                                          | Create a new instance of this container type.                                                                                   |
-| CustomizeSoldierData(CustomizeSoldierData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| CustomizeSoldierData([CustomizeCharacterData](/vext/ref/fb/customizecharacterdata/) other)    | Upcast an instance of type [CustomizeCharacterData](/vext/ref/fb/customizecharacterdata/) to [CustomizeSoldierData](/vext/ref/fb/customizesoldierdata/).    |
-| CustomizeSoldierData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [CustomizeSoldierData](/vext/ref/fb/customizesoldierdata/).                                      |
-| CustomizeSoldierData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CustomizeSoldierData](/vext/ref/fb/customizesoldierdata/). |
+Creates a new [CustomizeSoldierData](/vext/ref/fb/customizesoldierdata) frostbite instance.
 
-## Properties
+### CustomizeSoldierData {#constructor-1}
+> **CustomizeSoldierData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                     | Type                                           | Description |
-| ------------------------ | ---------------------------------------------- | ----------- |
-| weapons                  | [UnlockWeaponAndSlot](/vext/ref/fb/unlockweaponandslot/)\[\] |             |
-| activeSlot               | [WeaponSlot](/vext/ref/fb/weaponslot/)                       |             |
-| deathPickup              | [PickupEntityAsset](/vext/ref/fb/pickupentityasset/)         |             |
-| removeAllExistingWeapons | bool                                           |             |
-| disableDeathPickup       | bool                                           |             |
-
-## Methods
-
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [CustomizeSoldierData](/vext/ref/fb/customizesoldierdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [CustomizeSoldierData](/vext/ref/fb/customizesoldierdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [CustomizeSoldierData](/vext/ref/fb/customizesoldierdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### CustomizeSoldierData {#constructor-2}
+> **CustomizeSoldierData**(other: [CustomizeCharacterData](/vext/ref/fb/customizecharacterdata))
+
+Casts an instance of type [CustomizeCharacterData](/vext/ref/fb/customizecharacterdata) to [CustomizeSoldierData](/vext/ref/fb/customizesoldierdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [CustomizeCharacterData](/vext/ref/fb/customizecharacterdata) | The instance to cast to [CustomizeSoldierData](/vext/ref/fb/customizesoldierdata). |
+
+### CustomizeSoldierData {#constructor-3}
+> **CustomizeSoldierData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [CustomizeSoldierData](/vext/ref/fb/customizesoldierdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [CustomizeSoldierData](/vext/ref/fb/customizesoldierdata). |
+
+### CustomizeSoldierData {#constructor-4}
+> **CustomizeSoldierData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CustomizeSoldierData](/vext/ref/fb/customizesoldierdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [CustomizeSoldierData](/vext/ref/fb/customizesoldierdata). |
+
+## Properties
+### {{% prop-heading "weapons" %}}
+> **[UnlockWeaponAndSlot](/vext/ref/fb/unlockweaponandslot)**[]
+
+### {{% prop-heading "activeSlot" %}}
+> **[WeaponSlot](/vext/ref/fb/weaponslot)**
+
+### {{% prop-heading "deathPickup" %}}
+> **[PickupEntityAsset](/vext/ref/fb/pickupentityasset)** | **nil**
+
+### {{% prop-heading "removeAllExistingWeapons" %}}
+> **bool**
+
+### {{% prop-heading "disableDeathPickup" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [CustomizeSoldierData](/vext/ref/fb/customizesoldierdata) type.
+

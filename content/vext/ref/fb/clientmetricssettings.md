@@ -1,42 +1,61 @@
 ---
 title: ClientMetricsSettings
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ClientMetricsSettings](#constructor-0)**() |
+| **[ClientMetricsSettings](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ClientMetricsSettings](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "enabled" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ClientMetricsSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ClientMetricsSettings {#constructor-0}
+> **ClientMetricsSettings**()
 
-| Constructor                                                                      | Description                                                                                                                       |
-| -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| ClientMetricsSettings()                                                          | Create a new instance of this container type.                                                                                     |
-| ClientMetricsSettings(ClientMetricsSettings other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| ClientMetricsSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ClientMetricsSettings](/vext/ref/fb/clientmetricssettings/). |
+Creates a new [ClientMetricsSettings](/vext/ref/fb/clientmetricssettings) frostbite instance.
 
-## Properties
+### ClientMetricsSettings {#constructor-1}
+> **ClientMetricsSettings**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name    | Type | Description |
-| ------- | ---- | ----------- |
-| enabled | bool |             |
-
-## Methods
-
-| Type                                           | Name            | Parameters                                     |
-| ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [ClientMetricsSettings](/vext/ref/fb/clientmetricssettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ClientMetricsSettings](/vext/ref/fb/clientmetricssettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ClientMetricsSettings](/vext/ref/fb/clientmetricssettings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ClientMetricsSettings {#constructor-2}
+> **ClientMetricsSettings**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ClientMetricsSettings](/vext/ref/fb/clientmetricssettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ClientMetricsSettings](/vext/ref/fb/clientmetricssettings). |
+
+## Properties
+### {{% prop-heading "enabled" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ClientMetricsSettings](/vext/ref/fb/clientmetricssettings) type.
+

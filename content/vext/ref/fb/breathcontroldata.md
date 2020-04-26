@@ -1,45 +1,73 @@
 ---
 title: BreathControlData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[BreathControlData](#constructor-0)**() |
+| **[BreathControlData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[BreathControlData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "breathControlTime" >}} | float |
+| {{< prop "breathControlReleaseTime" >}} | float |
+| {{< prop "breathControlPenaltyMultiplier" >}} | float |
+| {{< prop "breathControlPenaltyTimeout" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "BreathControlData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### BreathControlData {#constructor-0}
+> **BreathControlData**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| BreathControlData()                                                          | Create a new instance of this container type.                                                                             |
-| BreathControlData(BreathControlData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| BreathControlData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BreathControlData](/vext/ref/fb/breathcontroldata/). |
+Creates a new [BreathControlData](/vext/ref/fb/breathcontroldata) frostbite instance.
 
-## Properties
+### BreathControlData {#constructor-1}
+> **BreathControlData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                           | Type   | Description |
-| ------------------------------ | ------ | ----------- |
-| breathControlTime              | number |             |
-| breathControlReleaseTime       | number |             |
-| breathControlPenaltyMultiplier | number |             |
-| breathControlPenaltyTimeout    | number |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [BreathControlData](/vext/ref/fb/breathcontroldata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [BreathControlData](/vext/ref/fb/breathcontroldata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [BreathControlData](/vext/ref/fb/breathcontroldata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### BreathControlData {#constructor-2}
+> **BreathControlData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BreathControlData](/vext/ref/fb/breathcontroldata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [BreathControlData](/vext/ref/fb/breathcontroldata). |
+
+## Properties
+### {{% prop-heading "breathControlTime" %}}
+> **float**
+
+### {{% prop-heading "breathControlReleaseTime" %}}
+> **float**
+
+### {{% prop-heading "breathControlPenaltyMultiplier" %}}
+> **float**
+
+### {{% prop-heading "breathControlPenaltyTimeout" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [BreathControlData](/vext/ref/fb/breathcontroldata) type.
+

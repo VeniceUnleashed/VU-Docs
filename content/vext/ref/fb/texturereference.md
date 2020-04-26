@@ -1,43 +1,72 @@
 ---
 title: TextureReference
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[TextureReference](#constructor-0)**() |
+| **[TextureReference](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[TextureReference](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[TextureReference](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "texture" >}} | [TextureAsset](/vext/ref/fb/textureasset) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "TextureReference" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### TextureReference {#constructor-0}
+> **TextureReference**()
 
-| Constructor                                                                 | Description                                                                                                             |
-| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| TextureReference()                                                          | Create a new instance of this container type.                                                                           |
-| TextureReference(TextureReference other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| TextureReference([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [TextureReference](/vext/ref/fb/texturereference/).                                      |
-| TextureReference([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TextureReference](/vext/ref/fb/texturereference/). |
+Creates a new [TextureReference](/vext/ref/fb/texturereference) frostbite instance.
 
-## Properties
+### TextureReference {#constructor-1}
+> **TextureReference**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name    | Type                         | Description |
-| ------- | ---------------------------- | ----------- |
-| texture | [TextureAsset](/vext/ref/fb/textureasset/) |             |
-
-## Methods
-
-| Type                                 | Name            | Parameters                                     |
-| ------------------------------------ | --------------- | ---------------------------------------------- |
-| [TextureReference](/vext/ref/fb/texturereference/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [TextureReference](/vext/ref/fb/texturereference/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [TextureReference](/vext/ref/fb/texturereference) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### TextureReference {#constructor-2}
+> **TextureReference**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [TextureReference](/vext/ref/fb/texturereference). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [TextureReference](/vext/ref/fb/texturereference). |
+
+### TextureReference {#constructor-3}
+> **TextureReference**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TextureReference](/vext/ref/fb/texturereference). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [TextureReference](/vext/ref/fb/texturereference). |
+
+## Properties
+### {{% prop-heading "texture" %}}
+> **[TextureAsset](/vext/ref/fb/textureasset)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [TextureReference](/vext/ref/fb/texturereference) type.
+

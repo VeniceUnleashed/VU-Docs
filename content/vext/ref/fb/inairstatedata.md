@@ -1,43 +1,72 @@
 ---
 title: InAirStateData
 ---
-### Base Classes
 
-[CharacterStateData](/vext/ref/fb/characterstatedata/)
+Inherits from 
+[CharacterStateData](/vext/ref/fb/characterstatedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[InAirStateData](#constructor-0)**() |
+| **[InAirStateData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[InAirStateData](#constructor-2)**(other: [CharacterStateData](/vext/ref/fb/characterstatedata)) |
+| **[InAirStateData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "freeFallVelocity" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "InAirStateData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### InAirStateData {#constructor-0}
+> **InAirStateData**()
 
-| Constructor                                                               | Description                                                                                                         |
-| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| InAirStateData()                                                          | Create a new instance of this container type.                                                                       |
-| InAirStateData(InAirStateData other)                                      | Create a reference copy of an instance of the same type.                                                            |
-| InAirStateData([CharacterStateData](/vext/ref/fb/characterstatedata/) other)            | Upcast an instance of type [CharacterStateData](/vext/ref/fb/characterstatedata/) to [InAirStateData](/vext/ref/fb/inairstatedata/).            |
-| InAirStateData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [InAirStateData](/vext/ref/fb/inairstatedata/). |
+Creates a new [InAirStateData](/vext/ref/fb/inairstatedata) frostbite instance.
 
-## Properties
+### InAirStateData {#constructor-1}
+> **InAirStateData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name             | Type   | Description |
-| ---------------- | ------ | ----------- |
-| freeFallVelocity | number |             |
-
-## Methods
-
-| Type                             | Name            | Parameters                                     |
-| -------------------------------- | --------------- | ---------------------------------------------- |
-| [InAirStateData](/vext/ref/fb/inairstatedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [InAirStateData](/vext/ref/fb/inairstatedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [InAirStateData](/vext/ref/fb/inairstatedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### InAirStateData {#constructor-2}
+> **InAirStateData**(other: [CharacterStateData](/vext/ref/fb/characterstatedata))
+
+Casts an instance of type [CharacterStateData](/vext/ref/fb/characterstatedata) to [InAirStateData](/vext/ref/fb/inairstatedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [CharacterStateData](/vext/ref/fb/characterstatedata) | The instance to cast to [InAirStateData](/vext/ref/fb/inairstatedata). |
+
+### InAirStateData {#constructor-3}
+> **InAirStateData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [InAirStateData](/vext/ref/fb/inairstatedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [InAirStateData](/vext/ref/fb/inairstatedata). |
+
+## Properties
+### {{% prop-heading "freeFallVelocity" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [InAirStateData](/vext/ref/fb/inairstatedata) type.
+

@@ -1,13 +1,10 @@
 ---
 title: CustomizationConstants
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **MaxAttachedSockets** | Value: **4** |
+| **MaxVisualSockets** | Value: **16** |
 
-| Name               | Value | Description |
-| ------------------ | ----- | ----------- |
-| MaxAttachedSockets | 4     |             |
-| MaxVisualSockets   | 16    |             |

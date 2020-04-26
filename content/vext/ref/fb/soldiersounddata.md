@@ -1,52 +1,101 @@
 ---
 title: SoldierSoundData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SoldierSoundData](#constructor-0)**() |
+| **[SoldierSoundData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SoldierSoundData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "movement" >}} | [SoundAsset](/vext/ref/fb/soundasset) \| nil |
+| {{< prop "death" >}} | [SoundAsset](/vext/ref/fb/soundasset) \| nil |
+| {{< prop "bulletImpact" >}} | [SoundAsset](/vext/ref/fb/soundasset) \| nil |
+| {{< prop "healing" >}} | [SoundAsset](/vext/ref/fb/soundasset) \| nil |
+| {{< prop "breathControl" >}} | [SoundAsset](/vext/ref/fb/soundasset) \| nil |
+| {{< prop "hitIndicator" >}} | [SoundAsset](/vext/ref/fb/soundasset) \| nil |
+| {{< prop "pickupKit" >}} | [SoundAsset](/vext/ref/fb/soundasset) \| nil |
+| {{< prop "pickupAmmo" >}} | [SoundAsset](/vext/ref/fb/soundasset) \| nil |
+| {{< prop "sprintTimeForRecovery" >}} | float |
+| {{< prop "movementThreshold" >}} | float |
+| {{< prop "minHealSoundTime" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SoldierSoundData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SoldierSoundData {#constructor-0}
+> **SoldierSoundData**()
 
-| Constructor                                                                 | Description                                                                                                             |
-| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| SoldierSoundData()                                                          | Create a new instance of this container type.                                                                           |
-| SoldierSoundData(SoldierSoundData other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| SoldierSoundData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoldierSoundData](/vext/ref/fb/soldiersounddata/). |
+Creates a new [SoldierSoundData](/vext/ref/fb/soldiersounddata) frostbite instance.
 
-## Properties
+### SoldierSoundData {#constructor-1}
+> **SoldierSoundData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                  | Type                     | Description |
-| --------------------- | ------------------------ | ----------- |
-| movement              | [SoundAsset](/vext/ref/fb/soundasset/) |             |
-| death                 | [SoundAsset](/vext/ref/fb/soundasset/) |             |
-| bulletImpact          | [SoundAsset](/vext/ref/fb/soundasset/) |             |
-| healing               | [SoundAsset](/vext/ref/fb/soundasset/) |             |
-| breathControl         | [SoundAsset](/vext/ref/fb/soundasset/) |             |
-| hitIndicator          | [SoundAsset](/vext/ref/fb/soundasset/) |             |
-| pickupKit             | [SoundAsset](/vext/ref/fb/soundasset/) |             |
-| pickupAmmo            | [SoundAsset](/vext/ref/fb/soundasset/) |             |
-| sprintTimeForRecovery | number                   |             |
-| movementThreshold     | number                   |             |
-| minHealSoundTime      | number                   |             |
-
-## Methods
-
-| Type                                 | Name            | Parameters                                     |
-| ------------------------------------ | --------------- | ---------------------------------------------- |
-| [SoldierSoundData](/vext/ref/fb/soldiersounddata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SoldierSoundData](/vext/ref/fb/soldiersounddata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SoldierSoundData](/vext/ref/fb/soldiersounddata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SoldierSoundData {#constructor-2}
+> **SoldierSoundData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoldierSoundData](/vext/ref/fb/soldiersounddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SoldierSoundData](/vext/ref/fb/soldiersounddata). |
+
+## Properties
+### {{% prop-heading "movement" %}}
+> **[SoundAsset](/vext/ref/fb/soundasset)** | **nil**
+
+### {{% prop-heading "death" %}}
+> **[SoundAsset](/vext/ref/fb/soundasset)** | **nil**
+
+### {{% prop-heading "bulletImpact" %}}
+> **[SoundAsset](/vext/ref/fb/soundasset)** | **nil**
+
+### {{% prop-heading "healing" %}}
+> **[SoundAsset](/vext/ref/fb/soundasset)** | **nil**
+
+### {{% prop-heading "breathControl" %}}
+> **[SoundAsset](/vext/ref/fb/soundasset)** | **nil**
+
+### {{% prop-heading "hitIndicator" %}}
+> **[SoundAsset](/vext/ref/fb/soundasset)** | **nil**
+
+### {{% prop-heading "pickupKit" %}}
+> **[SoundAsset](/vext/ref/fb/soundasset)** | **nil**
+
+### {{% prop-heading "pickupAmmo" %}}
+> **[SoundAsset](/vext/ref/fb/soundasset)** | **nil**
+
+### {{% prop-heading "sprintTimeForRecovery" %}}
+> **float**
+
+### {{% prop-heading "movementThreshold" %}}
+> **float**
+
+### {{% prop-heading "minHealSoundTime" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SoldierSoundData](/vext/ref/fb/soldiersounddata) type.
+

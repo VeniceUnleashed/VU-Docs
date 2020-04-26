@@ -1,53 +1,112 @@
 ---
 title: DialogSamplerNodeData
 ---
-### Base Classes
 
-[AudioGraphNodeData](/vext/ref/fb/audiographnodedata/)
+Inherits from 
+[AudioGraphNodeData](/vext/ref/fb/audiographnodedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[DialogSamplerNodeData](#constructor-0)**() |
+| **[DialogSamplerNodeData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[DialogSamplerNodeData](#constructor-2)**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata)) |
+| **[DialogSamplerNodeData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "pitch" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "amplitude" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "continue" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "output" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "triggered" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "finished" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "sndPlayerPlugin" >}} | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref) |
+| {{< prop "resamplePlugin" >}} | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref) |
+| {{< prop "pausePlugin" >}} | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref) |
+| {{< prop "gainPlugin" >}} | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref) |
+| {{< prop "tailLength" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "DialogSamplerNodeData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### DialogSamplerNodeData {#constructor-0}
+> **DialogSamplerNodeData**()
 
-| Constructor                                                                      | Description                                                                                                                       |
-| -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| DialogSamplerNodeData()                                                          | Create a new instance of this container type.                                                                                     |
-| DialogSamplerNodeData(DialogSamplerNodeData other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| DialogSamplerNodeData([AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) other)            | Upcast an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) to [DialogSamplerNodeData](/vext/ref/fb/dialogsamplernodedata/).            |
-| DialogSamplerNodeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DialogSamplerNodeData](/vext/ref/fb/dialogsamplernodedata/). |
+Creates a new [DialogSamplerNodeData](/vext/ref/fb/dialogsamplernodedata) frostbite instance.
 
-## Properties
+### DialogSamplerNodeData {#constructor-1}
+> **DialogSamplerNodeData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name            | Type                                       | Description |
-| --------------- | ------------------------------------------ | ----------- |
-| pitch           | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/)   |             |
-| amplitude       | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/)   |             |
-| continue        | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/)   |             |
-| output          | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/)   |             |
-| triggered       | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/)   |             |
-| finished        | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/)   |             |
-| sndPlayerPlugin | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref/) |             |
-| resamplePlugin  | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref/) |             |
-| pausePlugin     | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref/) |             |
-| gainPlugin      | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref/) |             |
-| tailLength      | number                                     |             |
-
-## Methods
-
-| Type                                           | Name            | Parameters                                     |
-| ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [DialogSamplerNodeData](/vext/ref/fb/dialogsamplernodedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [DialogSamplerNodeData](/vext/ref/fb/dialogsamplernodedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [DialogSamplerNodeData](/vext/ref/fb/dialogsamplernodedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### DialogSamplerNodeData {#constructor-2}
+> **DialogSamplerNodeData**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata))
+
+Casts an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) to [DialogSamplerNodeData](/vext/ref/fb/dialogsamplernodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) | The instance to cast to [DialogSamplerNodeData](/vext/ref/fb/dialogsamplernodedata). |
+
+### DialogSamplerNodeData {#constructor-3}
+> **DialogSamplerNodeData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DialogSamplerNodeData](/vext/ref/fb/dialogsamplernodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DialogSamplerNodeData](/vext/ref/fb/dialogsamplernodedata). |
+
+## Properties
+### {{% prop-heading "pitch" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "amplitude" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "continue" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "output" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "triggered" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "finished" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "sndPlayerPlugin" %}}
+> **[SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref)**
+
+### {{% prop-heading "resamplePlugin" %}}
+> **[SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref)**
+
+### {{% prop-heading "pausePlugin" %}}
+> **[SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref)**
+
+### {{% prop-heading "gainPlugin" %}}
+> **[SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref)**
+
+### {{% prop-heading "tailLength" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [DialogSamplerNodeData](/vext/ref/fb/dialogsamplernodedata) type.
+

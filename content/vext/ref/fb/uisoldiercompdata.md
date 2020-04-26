@@ -1,57 +1,135 @@
 ---
 title: UISoldierCompData
 ---
-### Base Classes
 
-[UIComponentData](/vext/ref/fb/uicomponentdata/)
+Inherits from 
+[UIComponentData](/vext/ref/fb/uicomponentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UISoldierCompData](#constructor-0)**() |
+| **[UISoldierCompData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UISoldierCompData](#constructor-2)**(other: [UIComponentData](/vext/ref/fb/uicomponentdata)) |
+| **[UISoldierCompData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[UISoldierCompData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "criticalHealthThreshold" >}} | float |
+| {{< prop "hitShaderDamageMultiplier" >}} | float |
+| {{< prop "hitShaderMinDamage" >}} | float |
+| {{< prop "ekgLineThickness" >}} | float |
+| {{< prop "shockTraumaAbilityIndex" >}} | int |
+| {{< prop "rangerPTProgramAbilityIndex" >}} | int |
+| {{< prop "focusAbilityIndex" >}} | int |
+| {{< prop "ekgLineAlpha" >}} | float |
+| {{< prop "hitShaderGradientDurationMultiplier" >}} | float |
+| {{< prop "hitShaderMaxDamage" >}} | float |
+| {{< prop "hitShaderIndicatorDurationMultiplier" >}} | float |
+| {{< prop "useVehicleTeamSpawn" >}} | bool |
+| {{< prop "useSquadSpawn" >}} | bool |
+| {{< prop "spawnOnSquadLeaders" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UISoldierCompData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UISoldierCompData {#constructor-0}
+> **UISoldierCompData**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| UISoldierCompData()                                                          | Create a new instance of this container type.                                                                             |
-| UISoldierCompData(UISoldierCompData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| UISoldierCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UISoldierCompData](/vext/ref/fb/uisoldiercompdata/).                  |
-| UISoldierCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UISoldierCompData](/vext/ref/fb/uisoldiercompdata/).                                      |
-| UISoldierCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UISoldierCompData](/vext/ref/fb/uisoldiercompdata/). |
+Creates a new [UISoldierCompData](/vext/ref/fb/uisoldiercompdata) frostbite instance.
 
-## Properties
+### UISoldierCompData {#constructor-1}
+> **UISoldierCompData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                                 | Type   | Description |
-| ------------------------------------ | ------ | ----------- |
-| criticalHealthThreshold              | number |             |
-| hitShaderDamageMultiplier            | number |             |
-| hitShaderMinDamage                   | number |             |
-| ekgLineThickness                     | number |             |
-| shockTraumaAbilityIndex              | number |             |
-| rangerPTProgramAbilityIndex          | number |             |
-| focusAbilityIndex                    | number |             |
-| ekgLineAlpha                         | number |             |
-| hitShaderGradientDurationMultiplier  | number |             |
-| hitShaderMaxDamage                   | number |             |
-| hitShaderIndicatorDurationMultiplier | number |             |
-| useVehicleTeamSpawn                  | bool   |             |
-| useSquadSpawn                        | bool   |             |
-| spawnOnSquadLeaders                  | bool   |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [UISoldierCompData](/vext/ref/fb/uisoldiercompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UISoldierCompData](/vext/ref/fb/uisoldiercompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UISoldierCompData](/vext/ref/fb/uisoldiercompdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UISoldierCompData {#constructor-2}
+> **UISoldierCompData**(other: [UIComponentData](/vext/ref/fb/uicomponentdata))
+
+Casts an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata) to [UISoldierCompData](/vext/ref/fb/uisoldiercompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIComponentData](/vext/ref/fb/uicomponentdata) | The instance to cast to [UISoldierCompData](/vext/ref/fb/uisoldiercompdata). |
+
+### UISoldierCompData {#constructor-3}
+> **UISoldierCompData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [UISoldierCompData](/vext/ref/fb/uisoldiercompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [UISoldierCompData](/vext/ref/fb/uisoldiercompdata). |
+
+### UISoldierCompData {#constructor-4}
+> **UISoldierCompData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UISoldierCompData](/vext/ref/fb/uisoldiercompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UISoldierCompData](/vext/ref/fb/uisoldiercompdata). |
+
+## Properties
+### {{% prop-heading "criticalHealthThreshold" %}}
+> **float**
+
+### {{% prop-heading "hitShaderDamageMultiplier" %}}
+> **float**
+
+### {{% prop-heading "hitShaderMinDamage" %}}
+> **float**
+
+### {{% prop-heading "ekgLineThickness" %}}
+> **float**
+
+### {{% prop-heading "shockTraumaAbilityIndex" %}}
+> **int**
+
+### {{% prop-heading "rangerPTProgramAbilityIndex" %}}
+> **int**
+
+### {{% prop-heading "focusAbilityIndex" %}}
+> **int**
+
+### {{% prop-heading "ekgLineAlpha" %}}
+> **float**
+
+### {{% prop-heading "hitShaderGradientDurationMultiplier" %}}
+> **float**
+
+### {{% prop-heading "hitShaderMaxDamage" %}}
+> **float**
+
+### {{% prop-heading "hitShaderIndicatorDurationMultiplier" %}}
+> **float**
+
+### {{% prop-heading "useVehicleTeamSpawn" %}}
+> **bool**
+
+### {{% prop-heading "useSquadSpawn" %}}
+> **bool**
+
+### {{% prop-heading "spawnOnSquadLeaders" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UISoldierCompData](/vext/ref/fb/uisoldiercompdata) type.
+

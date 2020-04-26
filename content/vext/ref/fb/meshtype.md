@@ -1,14 +1,11 @@
 ---
 title: MeshType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **MeshType_Rigid** | Value: **0** |
+| **MeshType_Skinned** | Value: **1** |
+| **MeshType_Composite** | Value: **2** |
 
-| Name                | Value | Description |
-| ------------------- | ----- | ----------- |
-| MeshType\_Rigid     | 0     |             |
-| MeshType\_Skinned   | 1     |             |
-| MeshType\_Composite | 2     |             |

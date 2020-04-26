@@ -1,20 +1,17 @@
 ---
 title: ShapeType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ShapeType_Hull** | Value: **0** |
+| **ShapeType_Box** | Value: **1** |
+| **ShapeType_OBB** | Value: **2** |
+| **ShapeType_Sphere** | Value: **3** |
+| **ShapeType_Cylinder** | Value: **4** |
+| **ShapeType_Capsule** | Value: **5** |
+| **ShapeType_Mesh** | Value: **6** |
+| **ShapeType_Decompose** | Value: **7** |
+| **ShapeType_Unknown** | Value: **8** |
 
-| Name                 | Value | Description |
-| -------------------- | ----- | ----------- |
-| ShapeType\_Hull      | 0     |             |
-| ShapeType\_Box       | 1     |             |
-| ShapeType\_OBB       | 2     |             |
-| ShapeType\_Sphere    | 3     |             |
-| ShapeType\_Cylinder  | 4     |             |
-| ShapeType\_Capsule   | 5     |             |
-| ShapeType\_Mesh      | 6     |             |
-| ShapeType\_Decompose | 7     |             |
-| ShapeType\_Unknown   | 8     |             |

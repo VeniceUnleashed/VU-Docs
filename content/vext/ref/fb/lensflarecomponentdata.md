@@ -1,45 +1,94 @@
 ---
 title: LensFlareComponentData
 ---
-### Base Classes
 
-[ComponentData](/vext/ref/fb/componentdata/)
+Inherits from 
+[ComponentData](/vext/ref/fb/componentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[LensFlareComponentData](#constructor-0)**() |
+| **[LensFlareComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[LensFlareComponentData](#constructor-2)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[LensFlareComponentData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[LensFlareComponentData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[LensFlareComponentData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "lensFlare" >}} | [LensFlareEntityData](/vext/ref/fb/lensflareentitydata) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "LensFlareComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### LensFlareComponentData {#constructor-0}
+> **LensFlareComponentData**()
 
-| Constructor                                                                       | Description                                                                                                                         |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| LensFlareComponentData()                                                          | Create a new instance of this container type.                                                                                       |
-| LensFlareComponentData(LensFlareComponentData other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| LensFlareComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [LensFlareComponentData](/vext/ref/fb/lensflarecomponentdata/).                      |
-| LensFlareComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [LensFlareComponentData](/vext/ref/fb/lensflarecomponentdata/).                    |
-| LensFlareComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [LensFlareComponentData](/vext/ref/fb/lensflarecomponentdata/).              |
-| LensFlareComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LensFlareComponentData](/vext/ref/fb/lensflarecomponentdata/). |
+Creates a new [LensFlareComponentData](/vext/ref/fb/lensflarecomponentdata) frostbite instance.
 
-## Properties
+### LensFlareComponentData {#constructor-1}
+> **LensFlareComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name      | Type                                       | Description |
-| --------- | ------------------------------------------ | ----------- |
-| lensFlare | [LensFlareEntityData](/vext/ref/fb/lensflareentitydata/) |             |
-
-## Methods
-
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [LensFlareComponentData](/vext/ref/fb/lensflarecomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [LensFlareComponentData](/vext/ref/fb/lensflarecomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [LensFlareComponentData](/vext/ref/fb/lensflarecomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### LensFlareComponentData {#constructor-2}
+> **LensFlareComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [LensFlareComponentData](/vext/ref/fb/lensflarecomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [LensFlareComponentData](/vext/ref/fb/lensflarecomponentdata). |
+
+### LensFlareComponentData {#constructor-3}
+> **LensFlareComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [LensFlareComponentData](/vext/ref/fb/lensflarecomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [LensFlareComponentData](/vext/ref/fb/lensflarecomponentdata). |
+
+### LensFlareComponentData {#constructor-4}
+> **LensFlareComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [LensFlareComponentData](/vext/ref/fb/lensflarecomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [LensFlareComponentData](/vext/ref/fb/lensflarecomponentdata). |
+
+### LensFlareComponentData {#constructor-5}
+> **LensFlareComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LensFlareComponentData](/vext/ref/fb/lensflarecomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [LensFlareComponentData](/vext/ref/fb/lensflarecomponentdata). |
+
+## Properties
+### {{% prop-heading "lensFlare" %}}
+> **[LensFlareEntityData](/vext/ref/fb/lensflareentitydata)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [LensFlareComponentData](/vext/ref/fb/lensflarecomponentdata) type.
+

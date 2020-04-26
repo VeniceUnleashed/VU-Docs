@@ -1,45 +1,94 @@
 ---
 title: EffectReferenceObjectData
 ---
-### Base Classes
 
-[ReferenceObjectData](/vext/ref/fb/referenceobjectdata/)
+Inherits from 
+[ReferenceObjectData](/vext/ref/fb/referenceobjectdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[EffectReferenceObjectData](#constructor-0)**() |
+| **[EffectReferenceObjectData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[EffectReferenceObjectData](#constructor-2)**(other: [ReferenceObjectData](/vext/ref/fb/referenceobjectdata)) |
+| **[EffectReferenceObjectData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[EffectReferenceObjectData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[EffectReferenceObjectData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "autoStart" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "EffectReferenceObjectData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### EffectReferenceObjectData {#constructor-0}
+> **EffectReferenceObjectData**()
 
-| Constructor                                                                          | Description                                                                                                                               |
-| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| EffectReferenceObjectData()                                                          | Create a new instance of this container type.                                                                                             |
-| EffectReferenceObjectData(EffectReferenceObjectData other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| EffectReferenceObjectData([ReferenceObjectData](/vext/ref/fb/referenceobjectdata/) other)          | Upcast an instance of type [ReferenceObjectData](/vext/ref/fb/referenceobjectdata/) to [EffectReferenceObjectData](/vext/ref/fb/effectreferenceobjectdata/).          |
-| EffectReferenceObjectData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [EffectReferenceObjectData](/vext/ref/fb/effectreferenceobjectdata/).                    |
-| EffectReferenceObjectData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [EffectReferenceObjectData](/vext/ref/fb/effectreferenceobjectdata/).              |
-| EffectReferenceObjectData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EffectReferenceObjectData](/vext/ref/fb/effectreferenceobjectdata/). |
+Creates a new [EffectReferenceObjectData](/vext/ref/fb/effectreferenceobjectdata) frostbite instance.
 
-## Properties
+### EffectReferenceObjectData {#constructor-1}
+> **EffectReferenceObjectData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name      | Type | Description |
-| --------- | ---- | ----------- |
-| autoStart | bool |             |
-
-## Methods
-
-| Type                                                   | Name            | Parameters                                     |
-| ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [EffectReferenceObjectData](/vext/ref/fb/effectreferenceobjectdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [EffectReferenceObjectData](/vext/ref/fb/effectreferenceobjectdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [EffectReferenceObjectData](/vext/ref/fb/effectreferenceobjectdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### EffectReferenceObjectData {#constructor-2}
+> **EffectReferenceObjectData**(other: [ReferenceObjectData](/vext/ref/fb/referenceobjectdata))
+
+Casts an instance of type [ReferenceObjectData](/vext/ref/fb/referenceobjectdata) to [EffectReferenceObjectData](/vext/ref/fb/effectreferenceobjectdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ReferenceObjectData](/vext/ref/fb/referenceobjectdata) | The instance to cast to [EffectReferenceObjectData](/vext/ref/fb/effectreferenceobjectdata). |
+
+### EffectReferenceObjectData {#constructor-3}
+> **EffectReferenceObjectData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [EffectReferenceObjectData](/vext/ref/fb/effectreferenceobjectdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [EffectReferenceObjectData](/vext/ref/fb/effectreferenceobjectdata). |
+
+### EffectReferenceObjectData {#constructor-4}
+> **EffectReferenceObjectData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [EffectReferenceObjectData](/vext/ref/fb/effectreferenceobjectdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [EffectReferenceObjectData](/vext/ref/fb/effectreferenceobjectdata). |
+
+### EffectReferenceObjectData {#constructor-5}
+> **EffectReferenceObjectData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EffectReferenceObjectData](/vext/ref/fb/effectreferenceobjectdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [EffectReferenceObjectData](/vext/ref/fb/effectreferenceobjectdata). |
+
+## Properties
+### {{% prop-heading "autoStart" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [EffectReferenceObjectData](/vext/ref/fb/effectreferenceobjectdata) type.
+

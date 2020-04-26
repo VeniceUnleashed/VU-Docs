@@ -1,48 +1,99 @@
 ---
 title: ChildMovingBodyData
 ---
-### Base Classes
 
-[LinearMovingBodyData](/vext/ref/fb/linearmovingbodydata/)
+Inherits from 
+[LinearMovingBodyData](/vext/ref/fb/linearmovingbodydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ChildMovingBodyData](#constructor-0)**() |
+| **[ChildMovingBodyData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ChildMovingBodyData](#constructor-2)**(other: [LinearMovingBodyData](/vext/ref/fb/linearmovingbodydata)) |
+| **[ChildMovingBodyData](#constructor-3)**(other: [MovingBodyData](/vext/ref/fb/movingbodydata)) |
+| **[ChildMovingBodyData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "inputDelay" >}} | float |
+| {{< prop "speed" >}} | float |
+| {{< prop "inputAction" >}} | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum) |
+| {{< prop "triggerImpulse" >}} | float |
+| {{< prop "isOneShotInput" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ChildMovingBodyData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ChildMovingBodyData {#constructor-0}
+> **ChildMovingBodyData**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| ChildMovingBodyData()                                                          | Create a new instance of this container type.                                                                                 |
-| ChildMovingBodyData(ChildMovingBodyData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| ChildMovingBodyData([LinearMovingBodyData](/vext/ref/fb/linearmovingbodydata/) other)        | Upcast an instance of type [LinearMovingBodyData](/vext/ref/fb/linearmovingbodydata/) to [ChildMovingBodyData](/vext/ref/fb/childmovingbodydata/).        |
-| ChildMovingBodyData([MovingBodyData](/vext/ref/fb/movingbodydata/) other)                    | Upcast an instance of type [MovingBodyData](/vext/ref/fb/movingbodydata/) to [ChildMovingBodyData](/vext/ref/fb/childmovingbodydata/).                    |
-| ChildMovingBodyData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ChildMovingBodyData](/vext/ref/fb/childmovingbodydata/). |
+Creates a new [ChildMovingBodyData](/vext/ref/fb/childmovingbodydata) frostbite instance.
 
-## Properties
+### ChildMovingBodyData {#constructor-1}
+> **ChildMovingBodyData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name           | Type                                         | Description |
-| -------------- | -------------------------------------------- | ----------- |
-| inputDelay     | number                                       |             |
-| speed          | number                                       |             |
-| inputAction    | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum/) |             |
-| triggerImpulse | number                                       |             |
-| isOneShotInput | bool                                         |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [ChildMovingBodyData](/vext/ref/fb/childmovingbodydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ChildMovingBodyData](/vext/ref/fb/childmovingbodydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ChildMovingBodyData](/vext/ref/fb/childmovingbodydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ChildMovingBodyData {#constructor-2}
+> **ChildMovingBodyData**(other: [LinearMovingBodyData](/vext/ref/fb/linearmovingbodydata))
+
+Casts an instance of type [LinearMovingBodyData](/vext/ref/fb/linearmovingbodydata) to [ChildMovingBodyData](/vext/ref/fb/childmovingbodydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [LinearMovingBodyData](/vext/ref/fb/linearmovingbodydata) | The instance to cast to [ChildMovingBodyData](/vext/ref/fb/childmovingbodydata). |
+
+### ChildMovingBodyData {#constructor-3}
+> **ChildMovingBodyData**(other: [MovingBodyData](/vext/ref/fb/movingbodydata))
+
+Casts an instance of type [MovingBodyData](/vext/ref/fb/movingbodydata) to [ChildMovingBodyData](/vext/ref/fb/childmovingbodydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [MovingBodyData](/vext/ref/fb/movingbodydata) | The instance to cast to [ChildMovingBodyData](/vext/ref/fb/childmovingbodydata). |
+
+### ChildMovingBodyData {#constructor-4}
+> **ChildMovingBodyData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ChildMovingBodyData](/vext/ref/fb/childmovingbodydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ChildMovingBodyData](/vext/ref/fb/childmovingbodydata). |
+
+## Properties
+### {{% prop-heading "inputDelay" %}}
+> **float**
+
+### {{% prop-heading "speed" %}}
+> **float**
+
+### {{% prop-heading "inputAction" %}}
+> **[EntryInputActionEnum](/vext/ref/fb/entryinputactionenum)**
+
+### {{% prop-heading "triggerImpulse" %}}
+> **float**
+
+### {{% prop-heading "isOneShotInput" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ChildMovingBodyData](/vext/ref/fb/childmovingbodydata) type.
+

@@ -1,49 +1,110 @@
 ---
 title: StanceFilterComponentData
 ---
-### Base Classes
 
-[ComponentData](/vext/ref/fb/componentdata/)
+Inherits from 
+[ComponentData](/vext/ref/fb/componentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[StanceFilterComponentData](#constructor-0)**() |
+| **[StanceFilterComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[StanceFilterComponentData](#constructor-2)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[StanceFilterComponentData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[StanceFilterComponentData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[StanceFilterComponentData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "validStances" >}} | int[] |
+| {{< prop "stanceChangeTime" >}} | float |
+| {{< prop "actionsToFilter" >}} | [ActionSuppressor](/vext/ref/fb/actionsuppressor)[] |
+| {{< prop "filterSpecificActions" >}} | bool |
+| {{< prop "undoParentStanceFilter" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "StanceFilterComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### StanceFilterComponentData {#constructor-0}
+> **StanceFilterComponentData**()
 
-| Constructor                                                                          | Description                                                                                                                               |
-| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| StanceFilterComponentData()                                                          | Create a new instance of this container type.                                                                                             |
-| StanceFilterComponentData(StanceFilterComponentData other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| StanceFilterComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [StanceFilterComponentData](/vext/ref/fb/stancefiltercomponentdata/).                      |
-| StanceFilterComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [StanceFilterComponentData](/vext/ref/fb/stancefiltercomponentdata/).                    |
-| StanceFilterComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [StanceFilterComponentData](/vext/ref/fb/stancefiltercomponentdata/).              |
-| StanceFilterComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StanceFilterComponentData](/vext/ref/fb/stancefiltercomponentdata/). |
+Creates a new [StanceFilterComponentData](/vext/ref/fb/stancefiltercomponentdata) frostbite instance.
 
-## Properties
+### StanceFilterComponentData {#constructor-1}
+> **StanceFilterComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                   | Type                                     | Description |
-| ---------------------- | ---------------------------------------- | ----------- |
-| validStances           | number\[\]                               |             |
-| stanceChangeTime       | number                                   |             |
-| actionsToFilter        | [ActionSuppressor](/vext/ref/fb/actionsuppressor/)\[\] |             |
-| filterSpecificActions  | bool                                     |             |
-| undoParentStanceFilter | bool                                     |             |
-
-## Methods
-
-| Type                                                   | Name            | Parameters                                     |
-| ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [StanceFilterComponentData](/vext/ref/fb/stancefiltercomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [StanceFilterComponentData](/vext/ref/fb/stancefiltercomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [StanceFilterComponentData](/vext/ref/fb/stancefiltercomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### StanceFilterComponentData {#constructor-2}
+> **StanceFilterComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [StanceFilterComponentData](/vext/ref/fb/stancefiltercomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [StanceFilterComponentData](/vext/ref/fb/stancefiltercomponentdata). |
+
+### StanceFilterComponentData {#constructor-3}
+> **StanceFilterComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [StanceFilterComponentData](/vext/ref/fb/stancefiltercomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [StanceFilterComponentData](/vext/ref/fb/stancefiltercomponentdata). |
+
+### StanceFilterComponentData {#constructor-4}
+> **StanceFilterComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [StanceFilterComponentData](/vext/ref/fb/stancefiltercomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [StanceFilterComponentData](/vext/ref/fb/stancefiltercomponentdata). |
+
+### StanceFilterComponentData {#constructor-5}
+> **StanceFilterComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StanceFilterComponentData](/vext/ref/fb/stancefiltercomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [StanceFilterComponentData](/vext/ref/fb/stancefiltercomponentdata). |
+
+## Properties
+### {{% prop-heading "validStances" %}}
+> **int**[]
+
+### {{% prop-heading "stanceChangeTime" %}}
+> **float**
+
+### {{% prop-heading "actionsToFilter" %}}
+> **[ActionSuppressor](/vext/ref/fb/actionsuppressor)**[]
+
+### {{% prop-heading "filterSpecificActions" %}}
+> **bool**
+
+### {{% prop-heading "undoParentStanceFilter" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [StanceFilterComponentData](/vext/ref/fb/stancefiltercomponentdata) type.
+

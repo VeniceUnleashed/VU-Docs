@@ -1,43 +1,72 @@
 ---
 title: DifficultyDatas
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[DifficultyDatas](#constructor-0)**() |
+| **[DifficultyDatas](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[DifficultyDatas](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[DifficultyDatas](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "difficulties" >}} | [DifficultyData](/vext/ref/fb/difficultydata)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "DifficultyDatas" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### DifficultyDatas {#constructor-0}
+> **DifficultyDatas**()
 
-| Constructor                                                                | Description                                                                                                           |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| DifficultyDatas()                                                          | Create a new instance of this container type.                                                                         |
-| DifficultyDatas(DifficultyDatas other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| DifficultyDatas([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [DifficultyDatas](/vext/ref/fb/difficultydatas/).                                      |
-| DifficultyDatas([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DifficultyDatas](/vext/ref/fb/difficultydatas/). |
+Creates a new [DifficultyDatas](/vext/ref/fb/difficultydatas) frostbite instance.
 
-## Properties
+### DifficultyDatas {#constructor-1}
+> **DifficultyDatas**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name         | Type                                 | Description |
-| ------------ | ------------------------------------ | ----------- |
-| difficulties | [DifficultyData](/vext/ref/fb/difficultydata/)\[\] |             |
-
-## Methods
-
-| Type                               | Name            | Parameters                                     |
-| ---------------------------------- | --------------- | ---------------------------------------------- |
-| [DifficultyDatas](/vext/ref/fb/difficultydatas/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [DifficultyDatas](/vext/ref/fb/difficultydatas/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [DifficultyDatas](/vext/ref/fb/difficultydatas) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### DifficultyDatas {#constructor-2}
+> **DifficultyDatas**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [DifficultyDatas](/vext/ref/fb/difficultydatas). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [DifficultyDatas](/vext/ref/fb/difficultydatas). |
+
+### DifficultyDatas {#constructor-3}
+> **DifficultyDatas**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DifficultyDatas](/vext/ref/fb/difficultydatas). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DifficultyDatas](/vext/ref/fb/difficultydatas). |
+
+## Properties
+### {{% prop-heading "difficulties" %}}
+> **[DifficultyData](/vext/ref/fb/difficultydata)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [DifficultyDatas](/vext/ref/fb/difficultydatas) type.
+

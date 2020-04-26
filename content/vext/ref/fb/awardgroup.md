@@ -1,20 +1,17 @@
 ---
 title: AwardGroup
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **AwardGroup_Undefined** | Value: **0** |
+| **AwardGroup_Ribbons** | Value: **1** |
+| **AwardGroup_DogTags** | Value: **2** |
+| **AwardGroup_Medals** | Value: **3** |
+| **AwardGroup_Star** | Value: **4** |
+| **AwardGroup_Mission** | Value: **5** |
+| **AwardGroup_LevelComplete** | Value: **6** |
+| **AwardGroup_Achievements** | Value: **7** |
+| **AwardGroup_LastAwardGroup** | Value: **8** |
 
-| Name                       | Value | Description |
-| -------------------------- | ----- | ----------- |
-| AwardGroup\_Undefined      | 0     |             |
-| AwardGroup\_Ribbons        | 1     |             |
-| AwardGroup\_DogTags        | 2     |             |
-| AwardGroup\_Medals         | 3     |             |
-| AwardGroup\_Star           | 4     |             |
-| AwardGroup\_Mission        | 5     |             |
-| AwardGroup\_LevelComplete  | 6     |             |
-| AwardGroup\_Achievements   | 7     |             |
-| AwardGroup\_LastAwardGroup | 8     |             |

@@ -1,13 +1,10 @@
 ---
 title: MixerValueUIScale
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **MixerValueUIScale_Linear** | Value: **0** |
+| **MixerValueUIScale_Logarithmic** | Value: **1** |
 
-| Name                           | Value | Description |
-| ------------------------------ | ----- | ----------- |
-| MixerValueUIScale\_Linear      | 0     |             |
-| MixerValueUIScale\_Logarithmic | 1     |             |

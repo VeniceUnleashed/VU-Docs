@@ -1,37 +1,77 @@
 ---
 title: AILocoMoveTaskData
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AILocoMoveTaskData](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "wantedPos" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "worldAngle" >}} | float |
+| {{< prop "waitTime" >}} | float |
+| {{< prop "enterPose" >}} | [AntPoseEnum](/vext/ref/fb/antposeenum) |
+| {{< prop "exitPose" >}} | [AntPoseEnum](/vext/ref/fb/antposeenum) |
+| {{< prop "overrideAngle" >}} | bool |
+| {{< prop "useClientPosition" >}} | bool |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [AILocoMoveTaskData](/vext/ref/fb/ailocomovetaskdata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AILocoMoveTaskData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AILocoMoveTaskData {#constructor-0}
+> **AILocoMoveTaskData**()
 
-| Constructor                                  | Description                                              |
-| -------------------------------------------- | -------------------------------------------------------- |
-| AILocoMoveTaskData()                         | Create a new instance of this structure type.            |
-| AILocoMoveTaskData(AILocoMoveTaskData other) | Create a reference copy of a structure of the same type. |
+Creates a new [AILocoMoveTaskData](/vext/ref/fb/ailocomovetaskdata) frostbite structure.
 
 ## Properties
+### {{% prop-heading "wantedPos" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
 
-| Name              | Type                              | Description |
-| ----------------- | --------------------------------- | ----------- |
-| wantedPos         | [Vec3](/vext/ref/shared/class/vec3) |             |
-| worldAngle        | number                            |             |
-| waitTime          | number                            |             |
-| enterPose         | [AntPoseEnum](/vext/ref/fb/antposeenum/)        |             |
-| exitPose          | [AntPoseEnum](/vext/ref/fb/antposeenum/)        |             |
-| overrideAngle     | bool                              |             |
-| useClientPosition | bool                              |             |
+### {{% prop-heading "worldAngle" %}}
+> **float**
+
+### {{% prop-heading "waitTime" %}}
+> **float**
+
+### {{% prop-heading "enterPose" %}}
+> **[AntPoseEnum](/vext/ref/fb/antposeenum)**
+
+### {{% prop-heading "exitPose" %}}
+> **[AntPoseEnum](/vext/ref/fb/antposeenum)**
+
+### {{% prop-heading "overrideAngle" %}}
+> **bool**
+
+### {{% prop-heading "useClientPosition" %}}
+> **bool**
 
 ## Methods
-
-| Type                                     | Name            | Parameters |
-| ---------------------------------------- | --------------- | ---------- |
-| [AILocoMoveTaskData](/vext/ref/fb/ailocomovetaskdata/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [AILocoMoveTaskData](/vext/ref/fb/ailocomovetaskdata)
 
-> [AILocoMoveTaskData](/vext/ref/fb/ailocomovetaskdata/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[AILocoMoveTaskData](/vext/ref/fb/ailocomovetaskdata)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AILocoMoveTaskData](/vext/ref/fb/ailocomovetaskdata) type.
+

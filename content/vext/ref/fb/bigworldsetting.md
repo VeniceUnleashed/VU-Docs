@@ -1,46 +1,77 @@
 ---
 title: BigWorldSetting
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[BigWorldSetting](#constructor-0)**() |
+| **[BigWorldSetting](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[BigWorldSetting](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "sound" >}} | [SoundAsset](/vext/ref/fb/soundasset) \| nil |
+| {{< prop "minDistance" >}} | int |
+| {{< prop "maxDistance" >}} | int |
+| {{< prop "minDelayTimeInMinutes" >}} | float |
+| {{< prop "maxDelayTimeInMinutes" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "BigWorldSetting" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### BigWorldSetting {#constructor-0}
+> **BigWorldSetting**()
 
-| Constructor                                                                | Description                                                                                                           |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| BigWorldSetting()                                                          | Create a new instance of this container type.                                                                         |
-| BigWorldSetting(BigWorldSetting other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| BigWorldSetting([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BigWorldSetting](/vext/ref/fb/bigworldsetting/). |
+Creates a new [BigWorldSetting](/vext/ref/fb/bigworldsetting) frostbite instance.
 
-## Properties
+### BigWorldSetting {#constructor-1}
+> **BigWorldSetting**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                  | Type                     | Description |
-| --------------------- | ------------------------ | ----------- |
-| sound                 | [SoundAsset](/vext/ref/fb/soundasset/) |             |
-| minDistance           | number                   |             |
-| maxDistance           | number                   |             |
-| minDelayTimeInMinutes | number                   |             |
-| maxDelayTimeInMinutes | number                   |             |
-
-## Methods
-
-| Type                               | Name            | Parameters                                     |
-| ---------------------------------- | --------------- | ---------------------------------------------- |
-| [BigWorldSetting](/vext/ref/fb/bigworldsetting/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [BigWorldSetting](/vext/ref/fb/bigworldsetting/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [BigWorldSetting](/vext/ref/fb/bigworldsetting) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### BigWorldSetting {#constructor-2}
+> **BigWorldSetting**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BigWorldSetting](/vext/ref/fb/bigworldsetting). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [BigWorldSetting](/vext/ref/fb/bigworldsetting). |
+
+## Properties
+### {{% prop-heading "sound" %}}
+> **[SoundAsset](/vext/ref/fb/soundasset)** | **nil**
+
+### {{% prop-heading "minDistance" %}}
+> **int**
+
+### {{% prop-heading "maxDistance" %}}
+> **int**
+
+### {{% prop-heading "minDelayTimeInMinutes" %}}
+> **float**
+
+### {{% prop-heading "maxDelayTimeInMinutes" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [BigWorldSetting](/vext/ref/fb/bigworldsetting) type.
+

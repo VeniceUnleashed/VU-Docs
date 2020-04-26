@@ -1,45 +1,80 @@
 ---
 title: DataGetNode
 ---
-### Base Classes
 
-[UINodeData](/vext/ref/fb/uinodedata/)
+Inherits from 
+[UINodeData](/vext/ref/fb/uinodedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[DataGetNode](#constructor-0)**() |
+| **[DataGetNode](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[DataGetNode](#constructor-2)**(other: [UINodeData](/vext/ref/fb/uinodedata)) |
+| **[DataGetNode](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "inValue" >}} | [UINodePort](/vext/ref/fb/uinodeport) \| nil |
+| {{< prop "out" >}} | [UINodePort](/vext/ref/fb/uinodeport) \| nil |
+| {{< prop "dataSource" >}} | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "DataGetNode" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### DataGetNode {#constructor-0}
+> **DataGetNode**()
 
-| Constructor                                                            | Description                                                                                                   |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| DataGetNode()                                                          | Create a new instance of this container type.                                                                 |
-| DataGetNode(DataGetNode other)                                         | Create a reference copy of an instance of the same type.                                                      |
-| DataGetNode([UINodeData](/vext/ref/fb/uinodedata/) other)                            | Upcast an instance of type [UINodeData](/vext/ref/fb/uinodedata/) to [DataGetNode](/vext/ref/fb/datagetnode/).                            |
-| DataGetNode([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DataGetNode](/vext/ref/fb/datagetnode/). |
+Creates a new [DataGetNode](/vext/ref/fb/datagetnode) frostbite instance.
 
-## Properties
+### DataGetNode {#constructor-1}
+> **DataGetNode**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name       | Type                                 | Description |
-| ---------- | ------------------------------------ | ----------- |
-| inValue    | [UINodePort](/vext/ref/fb/uinodeport/)             |             |
-| out        | [UINodePort](/vext/ref/fb/uinodeport/)             |             |
-| dataSource | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/) |             |
-
-## Methods
-
-| Type                       | Name            | Parameters                                     |
-| -------------------------- | --------------- | ---------------------------------------------- |
-| [DataGetNode](/vext/ref/fb/datagetnode/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [DataGetNode](/vext/ref/fb/datagetnode/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [DataGetNode](/vext/ref/fb/datagetnode) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### DataGetNode {#constructor-2}
+> **DataGetNode**(other: [UINodeData](/vext/ref/fb/uinodedata))
+
+Casts an instance of type [UINodeData](/vext/ref/fb/uinodedata) to [DataGetNode](/vext/ref/fb/datagetnode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UINodeData](/vext/ref/fb/uinodedata) | The instance to cast to [DataGetNode](/vext/ref/fb/datagetnode). |
+
+### DataGetNode {#constructor-3}
+> **DataGetNode**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DataGetNode](/vext/ref/fb/datagetnode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DataGetNode](/vext/ref/fb/datagetnode). |
+
+## Properties
+### {{% prop-heading "inValue" %}}
+> **[UINodePort](/vext/ref/fb/uinodeport)** | **nil**
+
+### {{% prop-heading "out" %}}
+> **[UINodePort](/vext/ref/fb/uinodeport)** | **nil**
+
+### {{% prop-heading "dataSource" %}}
+> **[UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [DataGetNode](/vext/ref/fb/datagetnode) type.
+

@@ -1,18 +1,15 @@
 ---
 title: SKU
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **WW** | Value: **0** |
+| **EU** | Value: **1** |
+| **US** | Value: **2** |
+| **JPN** | Value: **3** |
+| **ROA** | Value: **4** |
+| **RU** | Value: **5** |
+| **EN** | Value: **6** |
 
-| Name | Value | Description |
-| ---- | ----- | ----------- |
-| WW   | 0     |             |
-| EU   | 1     |             |
-| US   | 2     |             |
-| JPN  | 3     |             |
-| ROA  | 4     |             |
-| RU   | 5     |             |
-| EN   | 6     |             |

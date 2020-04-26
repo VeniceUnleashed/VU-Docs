@@ -1,43 +1,72 @@
 ---
 title: WeaponAimingSimulationModifier
 ---
-### Base Classes
 
-[WeaponModifierBase](/vext/ref/fb/weaponmodifierbase/)
+Inherits from 
+[WeaponModifierBase](/vext/ref/fb/weaponmodifierbase)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[WeaponAimingSimulationModifier](#constructor-0)**() |
+| **[WeaponAimingSimulationModifier](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[WeaponAimingSimulationModifier](#constructor-2)**(other: [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase)) |
+| **[WeaponAimingSimulationModifier](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "aimingController" >}} | [SoldierAimingSimulationData](/vext/ref/fb/soldieraimingsimulationdata) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "WeaponAimingSimulationModifier" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### WeaponAimingSimulationModifier {#constructor-0}
+> **WeaponAimingSimulationModifier**()
 
-| Constructor                                                                               | Description                                                                                                                                         |
-| ----------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| WeaponAimingSimulationModifier()                                                          | Create a new instance of this container type.                                                                                                       |
-| WeaponAimingSimulationModifier(WeaponAimingSimulationModifier other)                      | Create a reference copy of an instance of the same type.                                                                                            |
-| WeaponAimingSimulationModifier([WeaponModifierBase](/vext/ref/fb/weaponmodifierbase/) other)            | Upcast an instance of type [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase/) to [WeaponAimingSimulationModifier](/vext/ref/fb/weaponaimingsimulationmodifier/).            |
-| WeaponAimingSimulationModifier([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponAimingSimulationModifier](/vext/ref/fb/weaponaimingsimulationmodifier/). |
+Creates a new [WeaponAimingSimulationModifier](/vext/ref/fb/weaponaimingsimulationmodifier) frostbite instance.
 
-## Properties
+### WeaponAimingSimulationModifier {#constructor-1}
+> **WeaponAimingSimulationModifier**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name             | Type                                                       | Description |
-| ---------------- | ---------------------------------------------------------- | ----------- |
-| aimingController | [SoldierAimingSimulationData](/vext/ref/fb/soldieraimingsimulationdata/) |             |
-
-## Methods
-
-| Type                                                             | Name            | Parameters                                     |
-| ---------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [WeaponAimingSimulationModifier](/vext/ref/fb/weaponaimingsimulationmodifier/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [WeaponAimingSimulationModifier](/vext/ref/fb/weaponaimingsimulationmodifier/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [WeaponAimingSimulationModifier](/vext/ref/fb/weaponaimingsimulationmodifier) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### WeaponAimingSimulationModifier {#constructor-2}
+> **WeaponAimingSimulationModifier**(other: [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase))
+
+Casts an instance of type [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase) to [WeaponAimingSimulationModifier](/vext/ref/fb/weaponaimingsimulationmodifier). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase) | The instance to cast to [WeaponAimingSimulationModifier](/vext/ref/fb/weaponaimingsimulationmodifier). |
+
+### WeaponAimingSimulationModifier {#constructor-3}
+> **WeaponAimingSimulationModifier**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponAimingSimulationModifier](/vext/ref/fb/weaponaimingsimulationmodifier). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [WeaponAimingSimulationModifier](/vext/ref/fb/weaponaimingsimulationmodifier). |
+
+## Properties
+### {{% prop-heading "aimingController" %}}
+> **[SoldierAimingSimulationData](/vext/ref/fb/soldieraimingsimulationdata)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [WeaponAimingSimulationModifier](/vext/ref/fb/weaponaimingsimulationmodifier) type.
+

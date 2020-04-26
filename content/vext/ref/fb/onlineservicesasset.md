@@ -1,43 +1,72 @@
 ---
 title: OnlineServicesAsset
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[OnlineServicesAsset](#constructor-0)**() |
+| **[OnlineServicesAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[OnlineServicesAsset](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[OnlineServicesAsset](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "onlineServices" >}} | [PresenceServiceData](/vext/ref/fb/presenceservicedata)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "OnlineServicesAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### OnlineServicesAsset {#constructor-0}
+> **OnlineServicesAsset**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| OnlineServicesAsset()                                                          | Create a new instance of this container type.                                                                                 |
-| OnlineServicesAsset(OnlineServicesAsset other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| OnlineServicesAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [OnlineServicesAsset](/vext/ref/fb/onlineservicesasset/).                                      |
-| OnlineServicesAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [OnlineServicesAsset](/vext/ref/fb/onlineservicesasset/). |
+Creates a new [OnlineServicesAsset](/vext/ref/fb/onlineservicesasset) frostbite instance.
 
-## Properties
+### OnlineServicesAsset {#constructor-1}
+> **OnlineServicesAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name           | Type                                           | Description |
-| -------------- | ---------------------------------------------- | ----------- |
-| onlineServices | [PresenceServiceData](/vext/ref/fb/presenceservicedata/)\[\] |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [OnlineServicesAsset](/vext/ref/fb/onlineservicesasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [OnlineServicesAsset](/vext/ref/fb/onlineservicesasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [OnlineServicesAsset](/vext/ref/fb/onlineservicesasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### OnlineServicesAsset {#constructor-2}
+> **OnlineServicesAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [OnlineServicesAsset](/vext/ref/fb/onlineservicesasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [OnlineServicesAsset](/vext/ref/fb/onlineservicesasset). |
+
+### OnlineServicesAsset {#constructor-3}
+> **OnlineServicesAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [OnlineServicesAsset](/vext/ref/fb/onlineservicesasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [OnlineServicesAsset](/vext/ref/fb/onlineservicesasset). |
+
+## Properties
+### {{% prop-heading "onlineServices" %}}
+> **[PresenceServiceData](/vext/ref/fb/presenceservicedata)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [OnlineServicesAsset](/vext/ref/fb/onlineservicesasset) type.
+

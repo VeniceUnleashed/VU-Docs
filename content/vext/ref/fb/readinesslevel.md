@@ -1,15 +1,12 @@
 ---
 title: ReadinessLevel
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **RLPatrol** | Value: **0** |
+| **RLReady** | Value: **1** |
+| **RLCombat** | Value: **2** |
+| **RLNone** | Value: **3** |
 
-| Name     | Value | Description |
-| -------- | ----- | ----------- |
-| RLPatrol | 0     |             |
-| RLReady  | 1     |             |
-| RLCombat | 2     |             |
-| RLNone   | 3     |             |

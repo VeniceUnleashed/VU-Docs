@@ -1,18 +1,15 @@
 ---
 title: AntCoverEnum
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **AntCoverEnum_RightCover** | Value: **0** |
+| **AntCoverEnum_LeftCover** | Value: **1** |
+| **AntCoverEnum_MiddleCover** | Value: **2** |
+| **AntCoverEnum_MediumLeftCover** | Value: **3** |
+| **AntCoverEnum_MediumRightCover** | Value: **4** |
+| **AntCoverEnum_Prone** | Value: **5** |
+| **AntCoverEnum_Count** | Value: **6** |
 
-| Name                           | Value | Description |
-| ------------------------------ | ----- | ----------- |
-| AntCoverEnum\_RightCover       | 0     |             |
-| AntCoverEnum\_LeftCover        | 1     |             |
-| AntCoverEnum\_MiddleCover      | 2     |             |
-| AntCoverEnum\_MediumLeftCover  | 3     |             |
-| AntCoverEnum\_MediumRightCover | 4     |             |
-| AntCoverEnum\_Prone            | 5     |             |
-| AntCoverEnum\_Count            | 6     |             |

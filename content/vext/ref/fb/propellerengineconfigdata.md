@@ -1,81 +1,224 @@
 ---
 title: PropellerEngineConfigData
 ---
-### Base Classes
 
-[EngineConfigData](/vext/ref/fb/engineconfigdata/)
+Inherits from 
+[EngineConfigData](/vext/ref/fb/engineconfigdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PropellerEngineConfigData](#constructor-0)**() |
+| **[PropellerEngineConfigData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PropellerEngineConfigData](#constructor-2)**(other: [EngineConfigData](/vext/ref/fb/engineconfigdata)) |
+| **[PropellerEngineConfigData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "horisontalForceOffset" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "propellerType" >}} | [PropellerType](/vext/ref/fb/propellertype) |
+| {{< prop "rotorConfig" >}} | [RotorParameters](/vext/ref/fb/rotorparameters) \| nil |
+| {{< prop "forceMagnitudeInputType" >}} | [ForceMagnitudeInputType](/vext/ref/fb/forcemagnitudeinputtype) |
+| {{< prop "directionVectorIndex" >}} | int |
+| {{< prop "forceMagnitudeMultiplier" >}} | float |
+| {{< prop "liftForceSpringConstant" >}} | float |
+| {{< prop "liftForceDampingConstant" >}} | float |
+| {{< prop "cyclicInputScaleRoll" >}} | float |
+| {{< prop "cyclicRollLiftMod" >}} | float |
+| {{< prop "cyclicRollStrafeMod" >}} | float |
+| {{< prop "cyclicInputScalePitch" >}} | float |
+| {{< prop "cyclicPitchLiftMod" >}} | float |
+| {{< prop "cyclicPitchStrafeMod" >}} | float |
+| {{< prop "cyclicPitchStrafeBrakeMod" >}} | float |
+| {{< prop "collectiveInputIdle" >}} | float |
+| {{< prop "collectiveThrottleInputScale" >}} | float |
+| {{< prop "collectiveBrakeInputScale" >}} | float |
+| {{< prop "defaultAngleOfAttack" >}} | float |
+| {{< prop "attackAngleMod" >}} | float |
+| {{< prop "stabilizerMod" >}} | float |
+| {{< prop "horisontalMinEffectVelocity" >}} | float |
+| {{< prop "horisontalMinEffectMod" >}} | float |
+| {{< prop "pitchStrength" >}} | float |
+| {{< prop "pitchFromVel" >}} | float |
+| {{< prop "gravityMod" >}} | float |
+| {{< prop "spForwardStrength" >}} | float |
+| {{< prop "spSidewaysStrength" >}} | float |
+| {{< prop "spVerticalStrength" >}} | float |
+| {{< prop "velocityFromPitch" >}} | float |
+| {{< prop "pitchLimit" >}} | float |
+| {{< prop "bankingStrength" >}} | float |
+| {{< prop "bankingLimit" >}} | float |
+| {{< prop "rollStrength" >}} | float |
+| {{< prop "pitchUpWhenBankStrength" >}} | float |
+| {{< prop "pitchUpWhenBankLimit" >}} | float |
+| {{< prop "spDefault" >}} | bool |
+| {{< prop "enableNewHelicopter" >}} | bool |
+| {{< prop "spAllowed" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PropellerEngineConfigData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PropellerEngineConfigData {#constructor-0}
+> **PropellerEngineConfigData**()
 
-| Constructor                                                                          | Description                                                                                                                               |
-| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| PropellerEngineConfigData()                                                          | Create a new instance of this container type.                                                                                             |
-| PropellerEngineConfigData(PropellerEngineConfigData other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| PropellerEngineConfigData([EngineConfigData](/vext/ref/fb/engineconfigdata/) other)                | Upcast an instance of type [EngineConfigData](/vext/ref/fb/engineconfigdata/) to [PropellerEngineConfigData](/vext/ref/fb/propellerengineconfigdata/).                |
-| PropellerEngineConfigData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PropellerEngineConfigData](/vext/ref/fb/propellerengineconfigdata/). |
+Creates a new [PropellerEngineConfigData](/vext/ref/fb/propellerengineconfigdata) frostbite instance.
 
-## Properties
+### PropellerEngineConfigData {#constructor-1}
+> **PropellerEngineConfigData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                         | Type                                               | Description |
-| ---------------------------- | -------------------------------------------------- | ----------- |
-| horisontalForceOffset        | [Vec3](/vext/ref/shared/class/vec3)                  |             |
-| propellerType                | [PropellerType](/vext/ref/fb/propellertype/)                     |             |
-| rotorConfig                  | [RotorParameters](/vext/ref/fb/rotorparameters/)                 |             |
-| forceMagnitudeInputType      | [ForceMagnitudeInputType](/vext/ref/fb/forcemagnitudeinputtype/) |             |
-| directionVectorIndex         | number                                             |             |
-| forceMagnitudeMultiplier     | number                                             |             |
-| liftForceSpringConstant      | number                                             |             |
-| liftForceDampingConstant     | number                                             |             |
-| cyclicInputScaleRoll         | number                                             |             |
-| cyclicRollLiftMod            | number                                             |             |
-| cyclicRollStrafeMod          | number                                             |             |
-| cyclicInputScalePitch        | number                                             |             |
-| cyclicPitchLiftMod           | number                                             |             |
-| cyclicPitchStrafeMod         | number                                             |             |
-| cyclicPitchStrafeBrakeMod    | number                                             |             |
-| collectiveInputIdle          | number                                             |             |
-| collectiveThrottleInputScale | number                                             |             |
-| collectiveBrakeInputScale    | number                                             |             |
-| defaultAngleOfAttack         | number                                             |             |
-| attackAngleMod               | number                                             |             |
-| stabilizerMod                | number                                             |             |
-| horisontalMinEffectVelocity  | number                                             |             |
-| horisontalMinEffectMod       | number                                             |             |
-| pitchStrength                | number                                             |             |
-| pitchFromVel                 | number                                             |             |
-| gravityMod                   | number                                             |             |
-| spForwardStrength            | number                                             |             |
-| spSidewaysStrength           | number                                             |             |
-| spVerticalStrength           | number                                             |             |
-| velocityFromPitch            | number                                             |             |
-| pitchLimit                   | number                                             |             |
-| bankingStrength              | number                                             |             |
-| bankingLimit                 | number                                             |             |
-| rollStrength                 | number                                             |             |
-| pitchUpWhenBankStrength      | number                                             |             |
-| pitchUpWhenBankLimit         | number                                             |             |
-| spDefault                    | bool                                               |             |
-| enableNewHelicopter          | bool                                               |             |
-| spAllowed                    | bool                                               |             |
-
-## Methods
-
-| Type                                                   | Name            | Parameters                                     |
-| ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [PropellerEngineConfigData](/vext/ref/fb/propellerengineconfigdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PropellerEngineConfigData](/vext/ref/fb/propellerengineconfigdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PropellerEngineConfigData](/vext/ref/fb/propellerengineconfigdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PropellerEngineConfigData {#constructor-2}
+> **PropellerEngineConfigData**(other: [EngineConfigData](/vext/ref/fb/engineconfigdata))
+
+Casts an instance of type [EngineConfigData](/vext/ref/fb/engineconfigdata) to [PropellerEngineConfigData](/vext/ref/fb/propellerengineconfigdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EngineConfigData](/vext/ref/fb/engineconfigdata) | The instance to cast to [PropellerEngineConfigData](/vext/ref/fb/propellerengineconfigdata). |
+
+### PropellerEngineConfigData {#constructor-3}
+> **PropellerEngineConfigData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PropellerEngineConfigData](/vext/ref/fb/propellerengineconfigdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PropellerEngineConfigData](/vext/ref/fb/propellerengineconfigdata). |
+
+## Properties
+### {{% prop-heading "horisontalForceOffset" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "propellerType" %}}
+> **[PropellerType](/vext/ref/fb/propellertype)**
+
+### {{% prop-heading "rotorConfig" %}}
+> **[RotorParameters](/vext/ref/fb/rotorparameters)** | **nil**
+
+### {{% prop-heading "forceMagnitudeInputType" %}}
+> **[ForceMagnitudeInputType](/vext/ref/fb/forcemagnitudeinputtype)**
+
+### {{% prop-heading "directionVectorIndex" %}}
+> **int**
+
+### {{% prop-heading "forceMagnitudeMultiplier" %}}
+> **float**
+
+### {{% prop-heading "liftForceSpringConstant" %}}
+> **float**
+
+### {{% prop-heading "liftForceDampingConstant" %}}
+> **float**
+
+### {{% prop-heading "cyclicInputScaleRoll" %}}
+> **float**
+
+### {{% prop-heading "cyclicRollLiftMod" %}}
+> **float**
+
+### {{% prop-heading "cyclicRollStrafeMod" %}}
+> **float**
+
+### {{% prop-heading "cyclicInputScalePitch" %}}
+> **float**
+
+### {{% prop-heading "cyclicPitchLiftMod" %}}
+> **float**
+
+### {{% prop-heading "cyclicPitchStrafeMod" %}}
+> **float**
+
+### {{% prop-heading "cyclicPitchStrafeBrakeMod" %}}
+> **float**
+
+### {{% prop-heading "collectiveInputIdle" %}}
+> **float**
+
+### {{% prop-heading "collectiveThrottleInputScale" %}}
+> **float**
+
+### {{% prop-heading "collectiveBrakeInputScale" %}}
+> **float**
+
+### {{% prop-heading "defaultAngleOfAttack" %}}
+> **float**
+
+### {{% prop-heading "attackAngleMod" %}}
+> **float**
+
+### {{% prop-heading "stabilizerMod" %}}
+> **float**
+
+### {{% prop-heading "horisontalMinEffectVelocity" %}}
+> **float**
+
+### {{% prop-heading "horisontalMinEffectMod" %}}
+> **float**
+
+### {{% prop-heading "pitchStrength" %}}
+> **float**
+
+### {{% prop-heading "pitchFromVel" %}}
+> **float**
+
+### {{% prop-heading "gravityMod" %}}
+> **float**
+
+### {{% prop-heading "spForwardStrength" %}}
+> **float**
+
+### {{% prop-heading "spSidewaysStrength" %}}
+> **float**
+
+### {{% prop-heading "spVerticalStrength" %}}
+> **float**
+
+### {{% prop-heading "velocityFromPitch" %}}
+> **float**
+
+### {{% prop-heading "pitchLimit" %}}
+> **float**
+
+### {{% prop-heading "bankingStrength" %}}
+> **float**
+
+### {{% prop-heading "bankingLimit" %}}
+> **float**
+
+### {{% prop-heading "rollStrength" %}}
+> **float**
+
+### {{% prop-heading "pitchUpWhenBankStrength" %}}
+> **float**
+
+### {{% prop-heading "pitchUpWhenBankLimit" %}}
+> **float**
+
+### {{% prop-heading "spDefault" %}}
+> **bool**
+
+### {{% prop-heading "enableNewHelicopter" %}}
+> **bool**
+
+### {{% prop-heading "spAllowed" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PropellerEngineConfigData](/vext/ref/fb/propellerengineconfigdata) type.
+

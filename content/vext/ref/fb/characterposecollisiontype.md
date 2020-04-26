@@ -1,13 +1,10 @@
 ---
 title: CharacterPoseCollisionType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **CharacterPoseCollisionType_Capsule** | Value: **0** |
+| **CharacterPoseCollisionType_Pencil** | Value: **1** |
 
-| Name                                | Value | Description |
-| ----------------------------------- | ----- | ----------- |
-| CharacterPoseCollisionType\_Capsule | 0     |             |
-| CharacterPoseCollisionType\_Pencil  | 1     |             |

@@ -1,17 +1,14 @@
 ---
 title: FactionId
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **FactionNeutral** | Value: **0** |
+| **FactionUS** | Value: **1** |
+| **FactionRUS** | Value: **2** |
+| **FactionMEC** | Value: **3** |
+| **FactionIdCount** | Value: **4** |
+| **FactionInvalid** | Value: **5** |
 
-| Name           | Value | Description |
-| -------------- | ----- | ----------- |
-| FactionNeutral | 0     |             |
-| FactionUS      | 1     |             |
-| FactionRUS     | 2     |             |
-| FactionMEC     | 3     |             |
-| FactionIdCount | 4     |             |
-| FactionInvalid | 5     |             |

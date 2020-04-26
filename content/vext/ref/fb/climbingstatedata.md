@@ -1,52 +1,108 @@
 ---
 title: ClimbingStateData
 ---
-### Base Classes
 
-[CharacterStateData](/vext/ref/fb/characterstatedata/)
+Inherits from 
+[CharacterStateData](/vext/ref/fb/characterstatedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ClimbingStateData](#constructor-0)**() |
+| **[ClimbingStateData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ClimbingStateData](#constructor-2)**(other: [CharacterStateData](/vext/ref/fb/characterstatedata)) |
+| **[ClimbingStateData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "lateralInputScale" >}} | float |
+| {{< prop "downAngleLimit" >}} | float |
+| {{< prop "dropOffAngle" >}} | float |
+| {{< prop "attractionVelocity" >}} | float |
+| {{< prop "pushAwayVelocity" >}} | float |
+| {{< prop "climbHeightOffset" >}} | float |
+| {{< prop "climbOffVerticalDistance" >}} | float |
+| {{< prop "climbOffVerticalTime" >}} | float |
+| {{< prop "climbOffHorizontalDistance" >}} | float |
+| {{< prop "climbOffHorizontalTime" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ClimbingStateData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ClimbingStateData {#constructor-0}
+> **ClimbingStateData**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| ClimbingStateData()                                                          | Create a new instance of this container type.                                                                             |
-| ClimbingStateData(ClimbingStateData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| ClimbingStateData([CharacterStateData](/vext/ref/fb/characterstatedata/) other)            | Upcast an instance of type [CharacterStateData](/vext/ref/fb/characterstatedata/) to [ClimbingStateData](/vext/ref/fb/climbingstatedata/).            |
-| ClimbingStateData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ClimbingStateData](/vext/ref/fb/climbingstatedata/). |
+Creates a new [ClimbingStateData](/vext/ref/fb/climbingstatedata) frostbite instance.
 
-## Properties
+### ClimbingStateData {#constructor-1}
+> **ClimbingStateData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                       | Type   | Description |
-| -------------------------- | ------ | ----------- |
-| lateralInputScale          | number |             |
-| downAngleLimit             | number |             |
-| dropOffAngle               | number |             |
-| attractionVelocity         | number |             |
-| pushAwayVelocity           | number |             |
-| climbHeightOffset          | number |             |
-| climbOffVerticalDistance   | number |             |
-| climbOffVerticalTime       | number |             |
-| climbOffHorizontalDistance | number |             |
-| climbOffHorizontalTime     | number |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [ClimbingStateData](/vext/ref/fb/climbingstatedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ClimbingStateData](/vext/ref/fb/climbingstatedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ClimbingStateData](/vext/ref/fb/climbingstatedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ClimbingStateData {#constructor-2}
+> **ClimbingStateData**(other: [CharacterStateData](/vext/ref/fb/characterstatedata))
+
+Casts an instance of type [CharacterStateData](/vext/ref/fb/characterstatedata) to [ClimbingStateData](/vext/ref/fb/climbingstatedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [CharacterStateData](/vext/ref/fb/characterstatedata) | The instance to cast to [ClimbingStateData](/vext/ref/fb/climbingstatedata). |
+
+### ClimbingStateData {#constructor-3}
+> **ClimbingStateData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ClimbingStateData](/vext/ref/fb/climbingstatedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ClimbingStateData](/vext/ref/fb/climbingstatedata). |
+
+## Properties
+### {{% prop-heading "lateralInputScale" %}}
+> **float**
+
+### {{% prop-heading "downAngleLimit" %}}
+> **float**
+
+### {{% prop-heading "dropOffAngle" %}}
+> **float**
+
+### {{% prop-heading "attractionVelocity" %}}
+> **float**
+
+### {{% prop-heading "pushAwayVelocity" %}}
+> **float**
+
+### {{% prop-heading "climbHeightOffset" %}}
+> **float**
+
+### {{% prop-heading "climbOffVerticalDistance" %}}
+> **float**
+
+### {{% prop-heading "climbOffVerticalTime" %}}
+> **float**
+
+### {{% prop-heading "climbOffHorizontalDistance" %}}
+> **float**
+
+### {{% prop-heading "climbOffHorizontalTime" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ClimbingStateData](/vext/ref/fb/climbingstatedata) type.
+

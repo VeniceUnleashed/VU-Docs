@@ -1,30 +1,27 @@
 ---
 title: UIPopupType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **PopupType_MemCard** | Value: **0** |
+| **PopupType_ControllerDisconnected** | Value: **1** |
+| **PopupType_Login** | Value: **2** |
+| **PopupType_TermsOfService** | Value: **3** |
+| **PopupType_PrivacyPolicy** | Value: **4** |
+| **PopupType_RevivePrompt** | Value: **5** |
+| **PopupType_Generic** | Value: **6** |
+| **PopupType_ServerReminder** | Value: **7** |
+| **PopupType_Error** | Value: **8** |
+| **PopupType_ManagePlayer** | Value: **9** |
+| **PopupType_Invalid** | Value: **10** |
+| **PopupType_IngamePlayer** | Value: **11** |
+| **PopupType_OnlinePass** | Value: **12** |
+| **PopupType_Origin** | Value: **13** |
+| **PopupType_UpdateAvailable** | Value: **14** |
+| **PopupType_Dynamic** | Value: **15** |
+| **PopupType_GameQueue** | Value: **16** |
+| **PopupType_COOPMatchmaking** | Value: **17** |
+| **PopupType_PromoInfo** | Value: **18** |
 
-| Name                              | Value | Description |
-| --------------------------------- | ----- | ----------- |
-| PopupType\_MemCard                | 0     |             |
-| PopupType\_ControllerDisconnected | 1     |             |
-| PopupType\_Login                  | 2     |             |
-| PopupType\_TermsOfService         | 3     |             |
-| PopupType\_PrivacyPolicy          | 4     |             |
-| PopupType\_RevivePrompt           | 5     |             |
-| PopupType\_Generic                | 6     |             |
-| PopupType\_ServerReminder         | 7     |             |
-| PopupType\_Error                  | 8     |             |
-| PopupType\_ManagePlayer           | 9     |             |
-| PopupType\_Invalid                | 10    |             |
-| PopupType\_IngamePlayer           | 11    |             |
-| PopupType\_OnlinePass             | 12    |             |
-| PopupType\_Origin                 | 13    |             |
-| PopupType\_UpdateAvailable        | 14    |             |
-| PopupType\_Dynamic                | 15    |             |
-| PopupType\_GameQueue              | 16    |             |
-| PopupType\_COOPMatchmaking        | 17    |             |
-| PopupType\_PromoInfo              | 18    |             |

@@ -1,43 +1,72 @@
 ---
 title: ConditionNodeData
 ---
-### Base Classes
 
-[AudioGraphNodeData](/vext/ref/fb/audiographnodedata/)
+Inherits from 
+[AudioGraphNodeData](/vext/ref/fb/audiographnodedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ConditionNodeData](#constructor-0)**() |
+| **[ConditionNodeData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ConditionNodeData](#constructor-2)**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata)) |
+| **[ConditionNodeData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "conditions" >}} | [ConditionGroup](/vext/ref/fb/conditiongroup)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ConditionNodeData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ConditionNodeData {#constructor-0}
+> **ConditionNodeData**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| ConditionNodeData()                                                          | Create a new instance of this container type.                                                                             |
-| ConditionNodeData(ConditionNodeData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| ConditionNodeData([AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) other)            | Upcast an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) to [ConditionNodeData](/vext/ref/fb/conditionnodedata/).            |
-| ConditionNodeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ConditionNodeData](/vext/ref/fb/conditionnodedata/). |
+Creates a new [ConditionNodeData](/vext/ref/fb/conditionnodedata) frostbite instance.
 
-## Properties
+### ConditionNodeData {#constructor-1}
+> **ConditionNodeData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name       | Type                                 | Description |
-| ---------- | ------------------------------------ | ----------- |
-| conditions | [ConditionGroup](/vext/ref/fb/conditiongroup/)\[\] |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [ConditionNodeData](/vext/ref/fb/conditionnodedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ConditionNodeData](/vext/ref/fb/conditionnodedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ConditionNodeData](/vext/ref/fb/conditionnodedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ConditionNodeData {#constructor-2}
+> **ConditionNodeData**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata))
+
+Casts an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) to [ConditionNodeData](/vext/ref/fb/conditionnodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) | The instance to cast to [ConditionNodeData](/vext/ref/fb/conditionnodedata). |
+
+### ConditionNodeData {#constructor-3}
+> **ConditionNodeData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ConditionNodeData](/vext/ref/fb/conditionnodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ConditionNodeData](/vext/ref/fb/conditionnodedata). |
+
+## Properties
+### {{% prop-heading "conditions" %}}
+> **[ConditionGroup](/vext/ref/fb/conditiongroup)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ConditionNodeData](/vext/ref/fb/conditionnodedata) type.
+

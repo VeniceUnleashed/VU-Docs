@@ -1,36 +1,52 @@
 ---
 title: UIDataBinding
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIDataBinding](#constructor-0)**() |
+| **[UIDataBinding](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UIDataBinding](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIDataBinding" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIDataBinding {#constructor-0}
+> **UIDataBinding**()
 
-| Constructor                                                              | Description                                                                                                       |
-| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| UIDataBinding()                                                          | Create a new instance of this container type.                                                                     |
-| UIDataBinding(UIDataBinding other)                                       | Create a reference copy of an instance of the same type.                                                          |
-| UIDataBinding([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIDataBinding](/vext/ref/fb/uidatabinding/). |
+Creates a new [UIDataBinding](/vext/ref/fb/uidatabinding) frostbite instance.
 
-## Methods
+### UIDataBinding {#constructor-1}
+> **UIDataBinding**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                           | Name            | Parameters                                     |
-| ------------------------------ | --------------- | ---------------------------------------------- |
-| [UIDataBinding](/vext/ref/fb/uidatabinding/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UIDataBinding](/vext/ref/fb/uidatabinding/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UIDataBinding](/vext/ref/fb/uidatabinding) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UIDataBinding {#constructor-2}
+> **UIDataBinding**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIDataBinding](/vext/ref/fb/uidatabinding). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UIDataBinding](/vext/ref/fb/uidatabinding). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIDataBinding](/vext/ref/fb/uidatabinding) type.
+

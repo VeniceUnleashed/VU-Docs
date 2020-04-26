@@ -1,12 +1,9 @@
 ---
 title: WeaponUnlocks
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **WeaponUnlocks_MaxAmount** | Value: **7** |
 
-| Name                     | Value | Description |
-| ------------------------ | ----- | ----------- |
-| WeaponUnlocks\_MaxAmount | 7     |             |

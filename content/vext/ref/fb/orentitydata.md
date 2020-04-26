@@ -1,47 +1,102 @@
 ---
 title: OrEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[OrEntityData](#constructor-0)**() |
+| **[OrEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[OrEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[OrEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[OrEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[OrEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
+| {{< prop "in1" >}} | bool |
+| {{< prop "in2" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "OrEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### OrEntityData {#constructor-0}
+> **OrEntityData**()
 
-| Constructor                                                             | Description                                                                                                     |
-| ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| OrEntityData()                                                          | Create a new instance of this container type.                                                                   |
-| OrEntityData(OrEntityData other)                                        | Create a reference copy of an instance of the same type.                                                        |
-| OrEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [OrEntityData](/vext/ref/fb/orentitydata/).                            |
-| OrEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [OrEntityData](/vext/ref/fb/orentitydata/).                    |
-| OrEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [OrEntityData](/vext/ref/fb/orentitydata/).              |
-| OrEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [OrEntityData](/vext/ref/fb/orentitydata/). |
+Creates a new [OrEntityData](/vext/ref/fb/orentitydata) frostbite instance.
 
-## Properties
+### OrEntityData {#constructor-1}
+> **OrEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name  | Type           | Description |
-| ----- | -------------- | ----------- |
-| realm | [Realm](/vext/ref/fb/realm/) |             |
-| in1   | bool           |             |
-| in2   | bool           |             |
-
-## Methods
-
-| Type                         | Name            | Parameters                                     |
-| ---------------------------- | --------------- | ---------------------------------------------- |
-| [OrEntityData](/vext/ref/fb/orentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [OrEntityData](/vext/ref/fb/orentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [OrEntityData](/vext/ref/fb/orentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### OrEntityData {#constructor-2}
+> **OrEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [OrEntityData](/vext/ref/fb/orentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [OrEntityData](/vext/ref/fb/orentitydata). |
+
+### OrEntityData {#constructor-3}
+> **OrEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [OrEntityData](/vext/ref/fb/orentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [OrEntityData](/vext/ref/fb/orentitydata). |
+
+### OrEntityData {#constructor-4}
+> **OrEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [OrEntityData](/vext/ref/fb/orentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [OrEntityData](/vext/ref/fb/orentitydata). |
+
+### OrEntityData {#constructor-5}
+> **OrEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [OrEntityData](/vext/ref/fb/orentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [OrEntityData](/vext/ref/fb/orentitydata). |
+
+## Properties
+### {{% prop-heading "realm" %}}
+> **[Realm](/vext/ref/fb/realm)**
+
+### {{% prop-heading "in1" %}}
+> **bool**
+
+### {{% prop-heading "in2" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [OrEntityData](/vext/ref/fb/orentitydata) type.
+

@@ -1,48 +1,85 @@
 ---
 title: MissionObjectiveHudData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MissionObjectiveHudData](#constructor-0)**() |
+| **[MissionObjectiveHudData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MissionObjectiveHudData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "cameraPosition" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "horizontalBoundaries" >}} | [Vec2](/vext/ref/shared/class/vec2) |
+| {{< prop "verticalBoundaries" >}} | [Vec2](/vext/ref/shared/class/vec2) |
+| {{< prop "cameraRotation" >}} | float |
+| {{< prop "cameraFov" >}} | float |
+| {{< prop "cameraLookDistance" >}} | float |
+| {{< prop "cameraDistance" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MissionObjectiveHudData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MissionObjectiveHudData {#constructor-0}
+> **MissionObjectiveHudData**()
 
-| Constructor                                                                        | Description                                                                                                                           |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| MissionObjectiveHudData()                                                          | Create a new instance of this container type.                                                                                         |
-| MissionObjectiveHudData(MissionObjectiveHudData other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| MissionObjectiveHudData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MissionObjectiveHudData](/vext/ref/fb/missionobjectivehuddata/). |
+Creates a new [MissionObjectiveHudData](/vext/ref/fb/missionobjectivehuddata) frostbite instance.
 
-## Properties
+### MissionObjectiveHudData {#constructor-1}
+> **MissionObjectiveHudData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                 | Type                              | Description |
-| -------------------- | --------------------------------- | ----------- |
-| cameraPosition       | [Vec3](/vext/ref/shared/class/vec3) |             |
-| horizontalBoundaries | [Vec2](/vext/ref/shared/class/vec2) |             |
-| verticalBoundaries   | [Vec2](/vext/ref/shared/class/vec2) |             |
-| cameraRotation       | number                            |             |
-| cameraFov            | number                            |             |
-| cameraLookDistance   | number                            |             |
-| cameraDistance       | number                            |             |
-
-## Methods
-
-| Type                                               | Name            | Parameters                                     |
-| -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [MissionObjectiveHudData](/vext/ref/fb/missionobjectivehuddata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MissionObjectiveHudData](/vext/ref/fb/missionobjectivehuddata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MissionObjectiveHudData](/vext/ref/fb/missionobjectivehuddata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MissionObjectiveHudData {#constructor-2}
+> **MissionObjectiveHudData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MissionObjectiveHudData](/vext/ref/fb/missionobjectivehuddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MissionObjectiveHudData](/vext/ref/fb/missionobjectivehuddata). |
+
+## Properties
+### {{% prop-heading "cameraPosition" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "horizontalBoundaries" %}}
+> **[Vec2](/vext/ref/shared/class/vec2)**
+
+### {{% prop-heading "verticalBoundaries" %}}
+> **[Vec2](/vext/ref/shared/class/vec2)**
+
+### {{% prop-heading "cameraRotation" %}}
+> **float**
+
+### {{% prop-heading "cameraFov" %}}
+> **float**
+
+### {{% prop-heading "cameraLookDistance" %}}
+> **float**
+
+### {{% prop-heading "cameraDistance" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MissionObjectiveHudData](/vext/ref/fb/missionobjectivehuddata) type.
+

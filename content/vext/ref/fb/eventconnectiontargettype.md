@@ -1,17 +1,14 @@
 ---
 title: EventConnectionTargetType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **EventConnectionTargetType_Invalid** | Value: **0** |
+| **EventConnectionTargetType_ClientAndServer** | Value: **1** |
+| **EventConnectionTargetType_Client** | Value: **2** |
+| **EventConnectionTargetType_Server** | Value: **3** |
+| **EventConnectionTargetType_NetworkedClient** | Value: **4** |
+| **EventConnectionTargetType_NetworkedClientAndServer** | Value: **5** |
 
-| Name                                                | Value | Description |
-| --------------------------------------------------- | ----- | ----------- |
-| EventConnectionTargetType\_Invalid                  | 0     |             |
-| EventConnectionTargetType\_ClientAndServer          | 1     |             |
-| EventConnectionTargetType\_Client                   | 2     |             |
-| EventConnectionTargetType\_Server                   | 3     |             |
-| EventConnectionTargetType\_NetworkedClient          | 4     |             |
-| EventConnectionTargetType\_NetworkedClientAndServer | 5     |             |

@@ -1,16 +1,13 @@
 ---
 title: ShaderLightingModel
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ShaderLightingModel_Standard** | Value: **0** |
+| **ShaderLightingModel_Metallic** | Value: **1** |
+| **ShaderLightingModel_Skin** | Value: **2** |
+| **ShaderLightingModel_DynamicEnvmap** | Value: **3** |
+| **ShaderLightingModel_Translucent** | Value: **4** |
 
-| Name                               | Value | Description |
-| ---------------------------------- | ----- | ----------- |
-| ShaderLightingModel\_Standard      | 0     |             |
-| ShaderLightingModel\_Metallic      | 1     |             |
-| ShaderLightingModel\_Skin          | 2     |             |
-| ShaderLightingModel\_DynamicEnvmap | 3     |             |
-| ShaderLightingModel\_Translucent   | 4     |             |

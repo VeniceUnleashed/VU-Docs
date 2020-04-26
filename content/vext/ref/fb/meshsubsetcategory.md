@@ -1,16 +1,13 @@
 ---
 title: MeshSubsetCategory
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **MeshSubsetCategory_Opaque** | Value: **0** |
+| **MeshSubsetCategory_Transparent** | Value: **1** |
+| **MeshSubsetCategory_TransparentDecal** | Value: **2** |
+| **MeshSubsetCategory_ZOnly** | Value: **3** |
+| **MeshSubsetCategoryCount** | Value: **4** |
 
-| Name                                 | Value | Description |
-| ------------------------------------ | ----- | ----------- |
-| MeshSubsetCategory\_Opaque           | 0     |             |
-| MeshSubsetCategory\_Transparent      | 1     |             |
-| MeshSubsetCategory\_TransparentDecal | 2     |             |
-| MeshSubsetCategory\_ZOnly            | 3     |             |
-| MeshSubsetCategoryCount              | 4     |             |

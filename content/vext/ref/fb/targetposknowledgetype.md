@@ -1,14 +1,11 @@
 ---
 title: TargetPosKnowledgeType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **TargetPosKnown** | Value: **0** |
+| **TargetPosUnknown** | Value: **1** |
+| **TargetPosFind** | Value: **2** |
 
-| Name             | Value | Description |
-| ---------------- | ----- | ----------- |
-| TargetPosKnown   | 0     |             |
-| TargetPosUnknown | 1     |             |
-| TargetPosFind    | 2     |             |

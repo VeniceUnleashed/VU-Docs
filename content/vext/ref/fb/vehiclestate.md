@@ -1,44 +1,83 @@
 ---
 title: VehicleState
 ---
-### Base Classes
 
-[MetricState](/vext/ref/fb/metricstate/)
+Inherits from 
+[MetricState](/vext/ref/fb/metricstate)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VehicleState](#constructor-0)**() |
+| **[VehicleState](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VehicleState](#constructor-2)**(other: [MetricState](/vext/ref/fb/metricstate)) |
+| **[VehicleState](#constructor-3)**(other: [MetricEvent](/vext/ref/fb/metricevent)) |
+| **[VehicleState](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "vehicleName" >}} | string |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VehicleState" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VehicleState {#constructor-0}
+> **VehicleState**()
 
-| Constructor                                                             | Description                                                                                                     |
-| ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| VehicleState()                                                          | Create a new instance of this container type.                                                                   |
-| VehicleState(VehicleState other)                                        | Create a reference copy of an instance of the same type.                                                        |
-| VehicleState([MetricState](/vext/ref/fb/metricstate/) other)                          | Upcast an instance of type [MetricState](/vext/ref/fb/metricstate/) to [VehicleState](/vext/ref/fb/vehiclestate/).                          |
-| VehicleState([MetricEvent](/vext/ref/fb/metricevent/) other)                          | Upcast an instance of type [MetricEvent](/vext/ref/fb/metricevent/) to [VehicleState](/vext/ref/fb/vehiclestate/).                          |
-| VehicleState([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VehicleState](/vext/ref/fb/vehiclestate/). |
+Creates a new [VehicleState](/vext/ref/fb/vehiclestate) frostbite instance.
 
-## Properties
+### VehicleState {#constructor-1}
+> **VehicleState**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name        | Type   | Description |
-| ----------- | ------ | ----------- |
-| vehicleName | string |             |
-
-## Methods
-
-| Type                         | Name            | Parameters                                     |
-| ---------------------------- | --------------- | ---------------------------------------------- |
-| [VehicleState](/vext/ref/fb/vehiclestate/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VehicleState](/vext/ref/fb/vehiclestate/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VehicleState](/vext/ref/fb/vehiclestate) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VehicleState {#constructor-2}
+> **VehicleState**(other: [MetricState](/vext/ref/fb/metricstate))
+
+Casts an instance of type [MetricState](/vext/ref/fb/metricstate) to [VehicleState](/vext/ref/fb/vehiclestate). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [MetricState](/vext/ref/fb/metricstate) | The instance to cast to [VehicleState](/vext/ref/fb/vehiclestate). |
+
+### VehicleState {#constructor-3}
+> **VehicleState**(other: [MetricEvent](/vext/ref/fb/metricevent))
+
+Casts an instance of type [MetricEvent](/vext/ref/fb/metricevent) to [VehicleState](/vext/ref/fb/vehiclestate). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [MetricEvent](/vext/ref/fb/metricevent) | The instance to cast to [VehicleState](/vext/ref/fb/vehiclestate). |
+
+### VehicleState {#constructor-4}
+> **VehicleState**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VehicleState](/vext/ref/fb/vehiclestate). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VehicleState](/vext/ref/fb/vehiclestate). |
+
+## Properties
+### {{% prop-heading "vehicleName" %}}
+> **string**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VehicleState](/vext/ref/fb/vehiclestate) type.
+

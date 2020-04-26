@@ -1,45 +1,94 @@
 ---
 title: PlayerLookAtEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PlayerLookAtEntityData](#constructor-0)**() |
+| **[PlayerLookAtEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PlayerLookAtEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[PlayerLookAtEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[PlayerLookAtEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[PlayerLookAtEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "targetTransform" >}} | [LinearTransform](/vext/ref/shared/class/lineartransform) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PlayerLookAtEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PlayerLookAtEntityData {#constructor-0}
+> **PlayerLookAtEntityData**()
 
-| Constructor                                                                       | Description                                                                                                                         |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| PlayerLookAtEntityData()                                                          | Create a new instance of this container type.                                                                                       |
-| PlayerLookAtEntityData(PlayerLookAtEntityData other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| PlayerLookAtEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [PlayerLookAtEntityData](/vext/ref/fb/playerlookatentitydata/).                            |
-| PlayerLookAtEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [PlayerLookAtEntityData](/vext/ref/fb/playerlookatentitydata/).                    |
-| PlayerLookAtEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [PlayerLookAtEntityData](/vext/ref/fb/playerlookatentitydata/).              |
-| PlayerLookAtEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PlayerLookAtEntityData](/vext/ref/fb/playerlookatentitydata/). |
+Creates a new [PlayerLookAtEntityData](/vext/ref/fb/playerlookatentitydata) frostbite instance.
 
-## Properties
+### PlayerLookAtEntityData {#constructor-1}
+> **PlayerLookAtEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name            | Type                                                    | Description |
-| --------------- | ------------------------------------------------------- | ----------- |
-| targetTransform | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
-
-## Methods
-
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [PlayerLookAtEntityData](/vext/ref/fb/playerlookatentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PlayerLookAtEntityData](/vext/ref/fb/playerlookatentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PlayerLookAtEntityData](/vext/ref/fb/playerlookatentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PlayerLookAtEntityData {#constructor-2}
+> **PlayerLookAtEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [PlayerLookAtEntityData](/vext/ref/fb/playerlookatentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [PlayerLookAtEntityData](/vext/ref/fb/playerlookatentitydata). |
+
+### PlayerLookAtEntityData {#constructor-3}
+> **PlayerLookAtEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [PlayerLookAtEntityData](/vext/ref/fb/playerlookatentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [PlayerLookAtEntityData](/vext/ref/fb/playerlookatentitydata). |
+
+### PlayerLookAtEntityData {#constructor-4}
+> **PlayerLookAtEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [PlayerLookAtEntityData](/vext/ref/fb/playerlookatentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [PlayerLookAtEntityData](/vext/ref/fb/playerlookatentitydata). |
+
+### PlayerLookAtEntityData {#constructor-5}
+> **PlayerLookAtEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PlayerLookAtEntityData](/vext/ref/fb/playerlookatentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PlayerLookAtEntityData](/vext/ref/fb/playerlookatentitydata). |
+
+## Properties
+### {{% prop-heading "targetTransform" %}}
+> **[LinearTransform](/vext/ref/shared/class/lineartransform)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PlayerLookAtEntityData](/vext/ref/fb/playerlookatentitydata) type.
+

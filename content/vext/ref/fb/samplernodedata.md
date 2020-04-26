@@ -1,62 +1,148 @@
 ---
 title: SamplerNodeData
 ---
-### Base Classes
 
-[AudioGraphNodeData](/vext/ref/fb/audiographnodedata/)
+Inherits from 
+[AudioGraphNodeData](/vext/ref/fb/audiographnodedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SamplerNodeData](#constructor-0)**() |
+| **[SamplerNodeData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SamplerNodeData](#constructor-2)**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata)) |
+| **[SamplerNodeData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "externalWave" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "variation" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "offset" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "delay" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "pitch" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "amplitude" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "enableStep" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "buffer" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "trigger" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "release" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "step" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "output" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "finished" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "buffered" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "position" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "wave" >}} | [SoundWaveAsset](/vext/ref/fb/soundwaveasset) \| nil |
+| {{< prop "basePitch" >}} | float |
+| {{< prop "loop" >}} | [LoopType](/vext/ref/fb/looptype) |
+| {{< prop "plugins" >}} | [SamplerPlugins](/vext/ref/fb/samplerplugins)[] |
+| {{< prop "shuffleSegments" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SamplerNodeData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SamplerNodeData {#constructor-0}
+> **SamplerNodeData**()
 
-| Constructor                                                                | Description                                                                                                           |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| SamplerNodeData()                                                          | Create a new instance of this container type.                                                                         |
-| SamplerNodeData(SamplerNodeData other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| SamplerNodeData([AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) other)            | Upcast an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) to [SamplerNodeData](/vext/ref/fb/samplernodedata/).            |
-| SamplerNodeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SamplerNodeData](/vext/ref/fb/samplernodedata/). |
+Creates a new [SamplerNodeData](/vext/ref/fb/samplernodedata) frostbite instance.
 
-## Properties
+### SamplerNodeData {#constructor-1}
+> **SamplerNodeData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name            | Type                                     | Description |
-| --------------- | ---------------------------------------- | ----------- |
-| externalWave    | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| variation       | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| offset          | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| delay           | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| pitch           | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| amplitude       | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| enableStep      | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| buffer          | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| trigger         | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| release         | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| step            | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| output          | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| finished        | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| buffered        | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| position        | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| wave            | [SoundWaveAsset](/vext/ref/fb/soundwaveasset/)         |             |
-| basePitch       | number                                   |             |
-| loop            | [LoopType](/vext/ref/fb/looptype/)                     |             |
-| plugins         | [SamplerPlugins](/vext/ref/fb/samplerplugins/)\[\]     |             |
-| shuffleSegments | bool                                     |             |
-
-## Methods
-
-| Type                               | Name            | Parameters                                     |
-| ---------------------------------- | --------------- | ---------------------------------------------- |
-| [SamplerNodeData](/vext/ref/fb/samplernodedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SamplerNodeData](/vext/ref/fb/samplernodedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SamplerNodeData](/vext/ref/fb/samplernodedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SamplerNodeData {#constructor-2}
+> **SamplerNodeData**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata))
+
+Casts an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) to [SamplerNodeData](/vext/ref/fb/samplernodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) | The instance to cast to [SamplerNodeData](/vext/ref/fb/samplernodedata). |
+
+### SamplerNodeData {#constructor-3}
+> **SamplerNodeData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SamplerNodeData](/vext/ref/fb/samplernodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SamplerNodeData](/vext/ref/fb/samplernodedata). |
+
+## Properties
+### {{% prop-heading "externalWave" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "variation" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "offset" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "delay" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "pitch" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "amplitude" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "enableStep" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "buffer" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "trigger" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "release" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "step" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "output" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "finished" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "buffered" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "position" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "wave" %}}
+> **[SoundWaveAsset](/vext/ref/fb/soundwaveasset)** | **nil**
+
+### {{% prop-heading "basePitch" %}}
+> **float**
+
+### {{% prop-heading "loop" %}}
+> **[LoopType](/vext/ref/fb/looptype)**
+
+### {{% prop-heading "plugins" %}}
+> **[SamplerPlugins](/vext/ref/fb/samplerplugins)**[]
+
+### {{% prop-heading "shuffleSegments" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SamplerNodeData](/vext/ref/fb/samplernodedata) type.
+

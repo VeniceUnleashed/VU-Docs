@@ -1,13 +1,10 @@
 ---
 title: RouteType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **RouteStop** | Value: **0** |
+| **RouteCircular** | Value: **1** |
 
-| Name          | Value | Description |
-| ------------- | ----- | ----------- |
-| RouteStop     | 0     |             |
-| RouteCircular | 1     |             |

@@ -1,32 +1,57 @@
 ---
 title: UIPopupButton
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIPopupButton](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "inputConcept" >}} | [UIInputAction](/vext/ref/fb/uiinputaction) |
+| {{< prop "label" >}} | string |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [UIPopupButton](/vext/ref/fb/uipopupbutton) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIPopupButton" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIPopupButton {#constructor-0}
+> **UIPopupButton**()
 
-| Constructor                        | Description                                              |
-| ---------------------------------- | -------------------------------------------------------- |
-| UIPopupButton()                    | Create a new instance of this structure type.            |
-| UIPopupButton(UIPopupButton other) | Create a reference copy of a structure of the same type. |
+Creates a new [UIPopupButton](/vext/ref/fb/uipopupbutton) frostbite structure.
 
 ## Properties
+### {{% prop-heading "inputConcept" %}}
+> **[UIInputAction](/vext/ref/fb/uiinputaction)**
 
-| Name         | Type                           | Description |
-| ------------ | ------------------------------ | ----------- |
-| inputConcept | [UIInputAction](/vext/ref/fb/uiinputaction/) |             |
-| label        | string                         |             |
+### {{% prop-heading "label" %}}
+> **string**
 
 ## Methods
-
-| Type                           | Name            | Parameters |
-| ------------------------------ | --------------- | ---------- |
-| [UIPopupButton](/vext/ref/fb/uipopupbutton/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [UIPopupButton](/vext/ref/fb/uipopupbutton)
 
-> [UIPopupButton](/vext/ref/fb/uipopupbutton/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[UIPopupButton](/vext/ref/fb/uipopupbutton)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIPopupButton](/vext/ref/fb/uipopupbutton) type.
+

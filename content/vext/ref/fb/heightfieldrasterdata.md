@@ -1,38 +1,74 @@
 ---
 title: HeightfieldRasterData
 ---
-### Base Classes
 
-[RasterQuadtreeData](/vext/ref/fb/rasterquadtreedata/)
+Inherits from 
+[RasterQuadtreeData](/vext/ref/fb/rasterquadtreedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[HeightfieldRasterData](#constructor-0)**() |
+| **[HeightfieldRasterData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[HeightfieldRasterData](#constructor-2)**(other: [RasterQuadtreeData](/vext/ref/fb/rasterquadtreedata)) |
+| **[HeightfieldRasterData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[HeightfieldRasterData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "HeightfieldRasterData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### HeightfieldRasterData {#constructor-0}
+> **HeightfieldRasterData**()
 
-| Constructor                                                                      | Description                                                                                                                       |
-| -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| HeightfieldRasterData()                                                          | Create a new instance of this container type.                                                                                     |
-| HeightfieldRasterData(HeightfieldRasterData other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| HeightfieldRasterData([RasterQuadtreeData](/vext/ref/fb/rasterquadtreedata/) other)            | Upcast an instance of type [RasterQuadtreeData](/vext/ref/fb/rasterquadtreedata/) to [HeightfieldRasterData](/vext/ref/fb/heightfieldrasterdata/).            |
-| HeightfieldRasterData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [HeightfieldRasterData](/vext/ref/fb/heightfieldrasterdata/).                                      |
-| HeightfieldRasterData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [HeightfieldRasterData](/vext/ref/fb/heightfieldrasterdata/). |
+Creates a new [HeightfieldRasterData](/vext/ref/fb/heightfieldrasterdata) frostbite instance.
 
-## Methods
+### HeightfieldRasterData {#constructor-1}
+> **HeightfieldRasterData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                           | Name            | Parameters                                     |
-| ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [HeightfieldRasterData](/vext/ref/fb/heightfieldrasterdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [HeightfieldRasterData](/vext/ref/fb/heightfieldrasterdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [HeightfieldRasterData](/vext/ref/fb/heightfieldrasterdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### HeightfieldRasterData {#constructor-2}
+> **HeightfieldRasterData**(other: [RasterQuadtreeData](/vext/ref/fb/rasterquadtreedata))
+
+Casts an instance of type [RasterQuadtreeData](/vext/ref/fb/rasterquadtreedata) to [HeightfieldRasterData](/vext/ref/fb/heightfieldrasterdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [RasterQuadtreeData](/vext/ref/fb/rasterquadtreedata) | The instance to cast to [HeightfieldRasterData](/vext/ref/fb/heightfieldrasterdata). |
+
+### HeightfieldRasterData {#constructor-3}
+> **HeightfieldRasterData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [HeightfieldRasterData](/vext/ref/fb/heightfieldrasterdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [HeightfieldRasterData](/vext/ref/fb/heightfieldrasterdata). |
+
+### HeightfieldRasterData {#constructor-4}
+> **HeightfieldRasterData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [HeightfieldRasterData](/vext/ref/fb/heightfieldrasterdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [HeightfieldRasterData](/vext/ref/fb/heightfieldrasterdata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [HeightfieldRasterData](/vext/ref/fb/heightfieldrasterdata) type.
+

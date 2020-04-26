@@ -1,35 +1,32 @@
 ---
 title: ScoringBucket
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ScoringBucket_General** | Value: **0** |
+| **ScoringBucket_Teamwork** | Value: **1** |
+| **ScoringBucket_Bonus** | Value: **2** |
+| **ScoringBucket_Squad** | Value: **3** |
+| **ScoringBucket_Objective** | Value: **4** |
+| **ScoringBucket_Award** | Value: **5** |
+| **ScoringBucket_VehicleMBT** | Value: **6** |
+| **ScoringBucket_VehicleIFV** | Value: **7** |
+| **ScoringBucket_VehicleAA** | Value: **8** |
+| **ScoringBucket_VehicleAttackHeli** | Value: **9** |
+| **ScoringBucket_VehicleScoutHeli** | Value: **10** |
+| **ScoringBucket_VehicleJet** | Value: **11** |
+| **ScoringBucket_KitAssault** | Value: **12** |
+| **ScoringBucket_KitEngineer** | Value: **13** |
+| **ScoringBucket_KitRecon** | Value: **14** |
+| **ScoringBucket_KitSupport** | Value: **15** |
+| **ScoringBucket_SinglePlayer** | Value: **16** |
+| **ScoringBucket_Cooperation** | Value: **17** |
+| **ScoringBucket_CoopIndivid** | Value: **18** |
+| **ScoringBucket_Unlock** | Value: **19** |
+| **ScoringBucket_SpecialKit** | Value: **20** |
+| **ScoringBucket_VehicleLBT** | Value: **21** |
+| **ScoringBucket_VehicleArtillery** | Value: **22** |
+| **ScoringBucket_LastScoringBucketItem** | Value: **23** |
 
-| Name                                 | Value | Description |
-| ------------------------------------ | ----- | ----------- |
-| ScoringBucket\_General               | 0     |             |
-| ScoringBucket\_Teamwork              | 1     |             |
-| ScoringBucket\_Bonus                 | 2     |             |
-| ScoringBucket\_Squad                 | 3     |             |
-| ScoringBucket\_Objective             | 4     |             |
-| ScoringBucket\_Award                 | 5     |             |
-| ScoringBucket\_VehicleMBT            | 6     |             |
-| ScoringBucket\_VehicleIFV            | 7     |             |
-| ScoringBucket\_VehicleAA             | 8     |             |
-| ScoringBucket\_VehicleAttackHeli     | 9     |             |
-| ScoringBucket\_VehicleScoutHeli      | 10    |             |
-| ScoringBucket\_VehicleJet            | 11    |             |
-| ScoringBucket\_KitAssault            | 12    |             |
-| ScoringBucket\_KitEngineer           | 13    |             |
-| ScoringBucket\_KitRecon              | 14    |             |
-| ScoringBucket\_KitSupport            | 15    |             |
-| ScoringBucket\_SinglePlayer          | 16    |             |
-| ScoringBucket\_Cooperation           | 17    |             |
-| ScoringBucket\_CoopIndivid           | 18    |             |
-| ScoringBucket\_Unlock                | 19    |             |
-| ScoringBucket\_SpecialKit            | 20    |             |
-| ScoringBucket\_VehicleLBT            | 21    |             |
-| ScoringBucket\_VehicleArtillery      | 22    |             |
-| ScoringBucket\_LastScoringBucketItem | 23    |             |

@@ -1,44 +1,83 @@
 ---
 title: SubtitleDataTree
 ---
-### Base Classes
 
-[TreeBase](/vext/ref/fb/treebase/)
+Inherits from 
+[TreeBase](/vext/ref/fb/treebase)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SubtitleDataTree](#constructor-0)**() |
+| **[SubtitleDataTree](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SubtitleDataTree](#constructor-2)**(other: [TreeBase](/vext/ref/fb/treebase)) |
+| **[SubtitleDataTree](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[SubtitleDataTree](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "subtitles" >}} | [SubtitleMainDataNode](/vext/ref/fb/subtitlemaindatanode)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SubtitleDataTree" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SubtitleDataTree {#constructor-0}
+> **SubtitleDataTree**()
 
-| Constructor                                                                 | Description                                                                                                             |
-| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| SubtitleDataTree()                                                          | Create a new instance of this container type.                                                                           |
-| SubtitleDataTree(SubtitleDataTree other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| SubtitleDataTree([TreeBase](/vext/ref/fb/treebase/) other)                                | Upcast an instance of type [TreeBase](/vext/ref/fb/treebase/) to [SubtitleDataTree](/vext/ref/fb/subtitledatatree/).                                |
-| SubtitleDataTree([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [SubtitleDataTree](/vext/ref/fb/subtitledatatree/).                                      |
-| SubtitleDataTree([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SubtitleDataTree](/vext/ref/fb/subtitledatatree/). |
+Creates a new [SubtitleDataTree](/vext/ref/fb/subtitledatatree) frostbite instance.
 
-## Properties
+### SubtitleDataTree {#constructor-1}
+> **SubtitleDataTree**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name      | Type                                             | Description |
-| --------- | ------------------------------------------------ | ----------- |
-| subtitles | [SubtitleMainDataNode](/vext/ref/fb/subtitlemaindatanode/)\[\] |             |
-
-## Methods
-
-| Type                                 | Name            | Parameters                                     |
-| ------------------------------------ | --------------- | ---------------------------------------------- |
-| [SubtitleDataTree](/vext/ref/fb/subtitledatatree/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SubtitleDataTree](/vext/ref/fb/subtitledatatree/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SubtitleDataTree](/vext/ref/fb/subtitledatatree) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SubtitleDataTree {#constructor-2}
+> **SubtitleDataTree**(other: [TreeBase](/vext/ref/fb/treebase))
+
+Casts an instance of type [TreeBase](/vext/ref/fb/treebase) to [SubtitleDataTree](/vext/ref/fb/subtitledatatree). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [TreeBase](/vext/ref/fb/treebase) | The instance to cast to [SubtitleDataTree](/vext/ref/fb/subtitledatatree). |
+
+### SubtitleDataTree {#constructor-3}
+> **SubtitleDataTree**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [SubtitleDataTree](/vext/ref/fb/subtitledatatree). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [SubtitleDataTree](/vext/ref/fb/subtitledatatree). |
+
+### SubtitleDataTree {#constructor-4}
+> **SubtitleDataTree**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SubtitleDataTree](/vext/ref/fb/subtitledatatree). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SubtitleDataTree](/vext/ref/fb/subtitledatatree). |
+
+## Properties
+### {{% prop-heading "subtitles" %}}
+> **[SubtitleMainDataNode](/vext/ref/fb/subtitlemaindatanode)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SubtitleDataTree](/vext/ref/fb/subtitledatatree) type.
+

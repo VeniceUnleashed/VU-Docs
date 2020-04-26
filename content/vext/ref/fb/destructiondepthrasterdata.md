@@ -1,38 +1,74 @@
 ---
 title: DestructionDepthRasterData
 ---
-### Base Classes
 
-[RasterQuadtreeData](/vext/ref/fb/rasterquadtreedata/)
+Inherits from 
+[RasterQuadtreeData](/vext/ref/fb/rasterquadtreedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[DestructionDepthRasterData](#constructor-0)**() |
+| **[DestructionDepthRasterData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[DestructionDepthRasterData](#constructor-2)**(other: [RasterQuadtreeData](/vext/ref/fb/rasterquadtreedata)) |
+| **[DestructionDepthRasterData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[DestructionDepthRasterData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "DestructionDepthRasterData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### DestructionDepthRasterData {#constructor-0}
+> **DestructionDepthRasterData**()
 
-| Constructor                                                                           | Description                                                                                                                                 |
-| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| DestructionDepthRasterData()                                                          | Create a new instance of this container type.                                                                                               |
-| DestructionDepthRasterData(DestructionDepthRasterData other)                          | Create a reference copy of an instance of the same type.                                                                                    |
-| DestructionDepthRasterData([RasterQuadtreeData](/vext/ref/fb/rasterquadtreedata/) other)            | Upcast an instance of type [RasterQuadtreeData](/vext/ref/fb/rasterquadtreedata/) to [DestructionDepthRasterData](/vext/ref/fb/destructiondepthrasterdata/).            |
-| DestructionDepthRasterData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [DestructionDepthRasterData](/vext/ref/fb/destructiondepthrasterdata/).                                      |
-| DestructionDepthRasterData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DestructionDepthRasterData](/vext/ref/fb/destructiondepthrasterdata/). |
+Creates a new [DestructionDepthRasterData](/vext/ref/fb/destructiondepthrasterdata) frostbite instance.
 
-## Methods
+### DestructionDepthRasterData {#constructor-1}
+> **DestructionDepthRasterData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                                     | Name            | Parameters                                     |
-| -------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [DestructionDepthRasterData](/vext/ref/fb/destructiondepthrasterdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [DestructionDepthRasterData](/vext/ref/fb/destructiondepthrasterdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [DestructionDepthRasterData](/vext/ref/fb/destructiondepthrasterdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### DestructionDepthRasterData {#constructor-2}
+> **DestructionDepthRasterData**(other: [RasterQuadtreeData](/vext/ref/fb/rasterquadtreedata))
+
+Casts an instance of type [RasterQuadtreeData](/vext/ref/fb/rasterquadtreedata) to [DestructionDepthRasterData](/vext/ref/fb/destructiondepthrasterdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [RasterQuadtreeData](/vext/ref/fb/rasterquadtreedata) | The instance to cast to [DestructionDepthRasterData](/vext/ref/fb/destructiondepthrasterdata). |
+
+### DestructionDepthRasterData {#constructor-3}
+> **DestructionDepthRasterData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [DestructionDepthRasterData](/vext/ref/fb/destructiondepthrasterdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [DestructionDepthRasterData](/vext/ref/fb/destructiondepthrasterdata). |
+
+### DestructionDepthRasterData {#constructor-4}
+> **DestructionDepthRasterData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DestructionDepthRasterData](/vext/ref/fb/destructiondepthrasterdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DestructionDepthRasterData](/vext/ref/fb/destructiondepthrasterdata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [DestructionDepthRasterData](/vext/ref/fb/destructiondepthrasterdata) type.
+

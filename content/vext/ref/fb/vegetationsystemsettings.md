@@ -1,65 +1,153 @@
 ---
 title: VegetationSystemSettings
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VegetationSystemSettings](#constructor-0)**() |
+| **[VegetationSystemSettings](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VegetationSystemSettings](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "windVariation" >}} | float |
+| {{< prop "windVariationRate" >}} | float |
+| {{< prop "windStrength" >}} | float |
+| {{< prop "jointTensionLimit" >}} | float |
+| {{< prop "forceShadowLod" >}} | int |
+| {{< prop "maxPreSimsPerJob" >}} | int |
+| {{< prop "simulationMemKbClient" >}} | int |
+| {{< prop "maxActiveDistance" >}} | float |
+| {{< prop "simulationMemKbServer" >}} | int |
+| {{< prop "jobCount" >}} | int |
+| {{< prop "jointTensionLimitIndex" >}} | int |
+| {{< prop "timeScale" >}} | float |
+| {{< prop "localInfluencesEnabled" >}} | bool |
+| {{< prop "subDestructionEnabled" >}} | bool |
+| {{< prop "dissolveEnable" >}} | bool |
+| {{< prop "enable" >}} | bool |
+| {{< prop "simulateServerSide" >}} | bool |
+| {{< prop "enableJobs" >}} | bool |
+| {{< prop "shadowMeshEnable" >}} | bool |
+| {{< prop "drawNodes" >}} | bool |
+| {{< prop "drawEnable" >}} | bool |
+| {{< prop "batchDrawEnable" >}} | bool |
+| {{< prop "destructionEnabled" >}} | bool |
+| {{< prop "useShadowLodOffset" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VegetationSystemSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VegetationSystemSettings {#constructor-0}
+> **VegetationSystemSettings**()
 
-| Constructor                                                                         | Description                                                                                                                             |
-| ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| VegetationSystemSettings()                                                          | Create a new instance of this container type.                                                                                           |
-| VegetationSystemSettings(VegetationSystemSettings other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| VegetationSystemSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VegetationSystemSettings](/vext/ref/fb/vegetationsystemsettings/). |
+Creates a new [VegetationSystemSettings](/vext/ref/fb/vegetationsystemsettings) frostbite instance.
 
-## Properties
+### VegetationSystemSettings {#constructor-1}
+> **VegetationSystemSettings**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                   | Type   | Description |
-| ---------------------- | ------ | ----------- |
-| windVariation          | number |             |
-| windVariationRate      | number |             |
-| windStrength           | number |             |
-| jointTensionLimit      | number |             |
-| forceShadowLod         | number |             |
-| maxPreSimsPerJob       | number |             |
-| simulationMemKbClient  | number |             |
-| maxActiveDistance      | number |             |
-| simulationMemKbServer  | number |             |
-| jobCount               | number |             |
-| jointTensionLimitIndex | number |             |
-| timeScale              | number |             |
-| localInfluencesEnabled | bool   |             |
-| subDestructionEnabled  | bool   |             |
-| dissolveEnable         | bool   |             |
-| enable                 | bool   |             |
-| simulateServerSide     | bool   |             |
-| enableJobs             | bool   |             |
-| shadowMeshEnable       | bool   |             |
-| drawNodes              | bool   |             |
-| drawEnable             | bool   |             |
-| batchDrawEnable        | bool   |             |
-| destructionEnabled     | bool   |             |
-| useShadowLodOffset     | bool   |             |
-
-## Methods
-
-| Type                                                 | Name            | Parameters                                     |
-| ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [VegetationSystemSettings](/vext/ref/fb/vegetationsystemsettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VegetationSystemSettings](/vext/ref/fb/vegetationsystemsettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VegetationSystemSettings](/vext/ref/fb/vegetationsystemsettings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VegetationSystemSettings {#constructor-2}
+> **VegetationSystemSettings**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VegetationSystemSettings](/vext/ref/fb/vegetationsystemsettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VegetationSystemSettings](/vext/ref/fb/vegetationsystemsettings). |
+
+## Properties
+### {{% prop-heading "windVariation" %}}
+> **float**
+
+### {{% prop-heading "windVariationRate" %}}
+> **float**
+
+### {{% prop-heading "windStrength" %}}
+> **float**
+
+### {{% prop-heading "jointTensionLimit" %}}
+> **float**
+
+### {{% prop-heading "forceShadowLod" %}}
+> **int**
+
+### {{% prop-heading "maxPreSimsPerJob" %}}
+> **int**
+
+### {{% prop-heading "simulationMemKbClient" %}}
+> **int**
+
+### {{% prop-heading "maxActiveDistance" %}}
+> **float**
+
+### {{% prop-heading "simulationMemKbServer" %}}
+> **int**
+
+### {{% prop-heading "jobCount" %}}
+> **int**
+
+### {{% prop-heading "jointTensionLimitIndex" %}}
+> **int**
+
+### {{% prop-heading "timeScale" %}}
+> **float**
+
+### {{% prop-heading "localInfluencesEnabled" %}}
+> **bool**
+
+### {{% prop-heading "subDestructionEnabled" %}}
+> **bool**
+
+### {{% prop-heading "dissolveEnable" %}}
+> **bool**
+
+### {{% prop-heading "enable" %}}
+> **bool**
+
+### {{% prop-heading "simulateServerSide" %}}
+> **bool**
+
+### {{% prop-heading "enableJobs" %}}
+> **bool**
+
+### {{% prop-heading "shadowMeshEnable" %}}
+> **bool**
+
+### {{% prop-heading "drawNodes" %}}
+> **bool**
+
+### {{% prop-heading "drawEnable" %}}
+> **bool**
+
+### {{% prop-heading "batchDrawEnable" %}}
+> **bool**
+
+### {{% prop-heading "destructionEnabled" %}}
+> **bool**
+
+### {{% prop-heading "useShadowLodOffset" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VegetationSystemSettings](/vext/ref/fb/vegetationsystemsettings) type.
+

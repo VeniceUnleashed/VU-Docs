@@ -1,46 +1,84 @@
 ---
 title: GainNodeData
 ---
-### Base Classes
 
-[AudioGraphNodeData](/vext/ref/fb/audiographnodedata/)
+Inherits from 
+[AudioGraphNodeData](/vext/ref/fb/audiographnodedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[GainNodeData](#constructor-0)**() |
+| **[GainNodeData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[GainNodeData](#constructor-2)**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata)) |
+| **[GainNodeData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "inValue" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "amplitude" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "out" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "plugin" >}} | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "GainNodeData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### GainNodeData {#constructor-0}
+> **GainNodeData**()
 
-| Constructor                                                             | Description                                                                                                     |
-| ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| GainNodeData()                                                          | Create a new instance of this container type.                                                                   |
-| GainNodeData(GainNodeData other)                                        | Create a reference copy of an instance of the same type.                                                        |
-| GainNodeData([AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) other)            | Upcast an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) to [GainNodeData](/vext/ref/fb/gainnodedata/).            |
-| GainNodeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GainNodeData](/vext/ref/fb/gainnodedata/). |
+Creates a new [GainNodeData](/vext/ref/fb/gainnodedata) frostbite instance.
 
-## Properties
+### GainNodeData {#constructor-1}
+> **GainNodeData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name      | Type                                       | Description |
-| --------- | ------------------------------------------ | ----------- |
-| inValue   | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/)   |             |
-| amplitude | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/)   |             |
-| out       | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/)   |             |
-| plugin    | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref/) |             |
-
-## Methods
-
-| Type                         | Name            | Parameters                                     |
-| ---------------------------- | --------------- | ---------------------------------------------- |
-| [GainNodeData](/vext/ref/fb/gainnodedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [GainNodeData](/vext/ref/fb/gainnodedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [GainNodeData](/vext/ref/fb/gainnodedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### GainNodeData {#constructor-2}
+> **GainNodeData**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata))
+
+Casts an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) to [GainNodeData](/vext/ref/fb/gainnodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) | The instance to cast to [GainNodeData](/vext/ref/fb/gainnodedata). |
+
+### GainNodeData {#constructor-3}
+> **GainNodeData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GainNodeData](/vext/ref/fb/gainnodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [GainNodeData](/vext/ref/fb/gainnodedata). |
+
+## Properties
+### {{% prop-heading "inValue" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "amplitude" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "out" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "plugin" %}}
+> **[SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [GainNodeData](/vext/ref/fb/gainnodedata) type.
+

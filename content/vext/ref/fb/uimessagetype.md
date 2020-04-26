@@ -1,47 +1,44 @@
 ---
 title: UIMessageType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **UIMessageType_Text** | Value: **0** |
+| **UIMessageType_EnemyTank** | Value: **1** |
+| **UIMessageType_EnemyCar** | Value: **2** |
+| **UIMessageType_EnemyBoat** | Value: **3** |
+| **UIMessageType_EnemyHelicopter** | Value: **4** |
+| **UIMessageType_EnemyInfantry** | Value: **5** |
+| **UIMessageType_EnemyActivity** | Value: **6** |
+| **UIMessageType_EnemyC4** | Value: **7** |
+| **UIMessageType_EnemyATMine** | Value: **8** |
+| **UIMessageType_ChatGo** | Value: **9** |
+| **UIMessageType_ChatFollowMe** | Value: **10** |
+| **UIMessageType_ChatNeedBackup** | Value: **11** |
+| **UIMessageType_ChatNeedPickup** | Value: **12** |
+| **UIMessageType_ChatNeedAmmo** | Value: **13** |
+| **UIMessageType_ChatNeedMedic** | Value: **14** |
+| **UIMessageType_ChatYes** | Value: **15** |
+| **UIMessageType_ChatNo** | Value: **16** |
+| **UIMessageType_ChatThanks** | Value: **17** |
+| **UIMessageType_ChatSorry** | Value: **18** |
+| **UIMessageType_ChatNeedRepair** | Value: **19** |
+| **UIMessageType_ChatGetIn** | Value: **20** |
+| **UIMessageType_ChatGetOut** | Value: **21** |
+| **UIMessageType_ChatDropMeOff** | Value: **22** |
+| **UIMessageType_OrderDefendBase** | Value: **23** |
+| **UIMessageType_OrderAttackBase** | Value: **24** |
+| **UIMessageType_OrderMoveToPos** | Value: **25** |
+| **UIMessageType_JoinedSquad** | Value: **26** |
+| **UIMessageType_LeftSquad** | Value: **27** |
+| **UIMessageType_RequestSquad** | Value: **28** |
+| **UIMessageType_InviteSquad** | Value: **29** |
+| **UIMessageType_KickSquad** | Value: **30** |
+| **UIMessageType_LeaderPromoted** | Value: **31** |
+| **UIMessageType_Connected** | Value: **32** |
+| **UIMessageType_Disconnected** | Value: **33** |
+| **UIMessageType_Killed** | Value: **34** |
+| **UIMessageType_Died** | Value: **35** |
 
-| Name                           | Value | Description |
-| ------------------------------ | ----- | ----------- |
-| UIMessageType\_Text            | 0     |             |
-| UIMessageType\_EnemyTank       | 1     |             |
-| UIMessageType\_EnemyCar        | 2     |             |
-| UIMessageType\_EnemyBoat       | 3     |             |
-| UIMessageType\_EnemyHelicopter | 4     |             |
-| UIMessageType\_EnemyInfantry   | 5     |             |
-| UIMessageType\_EnemyActivity   | 6     |             |
-| UIMessageType\_EnemyC4         | 7     |             |
-| UIMessageType\_EnemyATMine     | 8     |             |
-| UIMessageType\_ChatGo          | 9     |             |
-| UIMessageType\_ChatFollowMe    | 10    |             |
-| UIMessageType\_ChatNeedBackup  | 11    |             |
-| UIMessageType\_ChatNeedPickup  | 12    |             |
-| UIMessageType\_ChatNeedAmmo    | 13    |             |
-| UIMessageType\_ChatNeedMedic   | 14    |             |
-| UIMessageType\_ChatYes         | 15    |             |
-| UIMessageType\_ChatNo          | 16    |             |
-| UIMessageType\_ChatThanks      | 17    |             |
-| UIMessageType\_ChatSorry       | 18    |             |
-| UIMessageType\_ChatNeedRepair  | 19    |             |
-| UIMessageType\_ChatGetIn       | 20    |             |
-| UIMessageType\_ChatGetOut      | 21    |             |
-| UIMessageType\_ChatDropMeOff   | 22    |             |
-| UIMessageType\_OrderDefendBase | 23    |             |
-| UIMessageType\_OrderAttackBase | 24    |             |
-| UIMessageType\_OrderMoveToPos  | 25    |             |
-| UIMessageType\_JoinedSquad     | 26    |             |
-| UIMessageType\_LeftSquad       | 27    |             |
-| UIMessageType\_RequestSquad    | 28    |             |
-| UIMessageType\_InviteSquad     | 29    |             |
-| UIMessageType\_KickSquad       | 30    |             |
-| UIMessageType\_LeaderPromoted  | 31    |             |
-| UIMessageType\_Connected       | 32    |             |
-| UIMessageType\_Disconnected    | 33    |             |
-| UIMessageType\_Killed          | 34    |             |
-| UIMessageType\_Died            | 35    |             |

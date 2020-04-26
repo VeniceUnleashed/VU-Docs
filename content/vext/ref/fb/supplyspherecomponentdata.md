@@ -1,45 +1,94 @@
 ---
 title: SupplySphereComponentData
 ---
-### Base Classes
 
-[ComponentData](/vext/ref/fb/componentdata/)
+Inherits from 
+[ComponentData](/vext/ref/fb/componentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SupplySphereComponentData](#constructor-0)**() |
+| **[SupplySphereComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SupplySphereComponentData](#constructor-2)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[SupplySphereComponentData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[SupplySphereComponentData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[SupplySphereComponentData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "supplyData" >}} | [SupplyData](/vext/ref/fb/supplydata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SupplySphereComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SupplySphereComponentData {#constructor-0}
+> **SupplySphereComponentData**()
 
-| Constructor                                                                          | Description                                                                                                                               |
-| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| SupplySphereComponentData()                                                          | Create a new instance of this container type.                                                                                             |
-| SupplySphereComponentData(SupplySphereComponentData other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| SupplySphereComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [SupplySphereComponentData](/vext/ref/fb/supplyspherecomponentdata/).                      |
-| SupplySphereComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [SupplySphereComponentData](/vext/ref/fb/supplyspherecomponentdata/).                    |
-| SupplySphereComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [SupplySphereComponentData](/vext/ref/fb/supplyspherecomponentdata/).              |
-| SupplySphereComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SupplySphereComponentData](/vext/ref/fb/supplyspherecomponentdata/). |
+Creates a new [SupplySphereComponentData](/vext/ref/fb/supplyspherecomponentdata) frostbite instance.
 
-## Properties
+### SupplySphereComponentData {#constructor-1}
+> **SupplySphereComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name       | Type                     | Description |
-| ---------- | ------------------------ | ----------- |
-| supplyData | [SupplyData](/vext/ref/fb/supplydata/) |             |
-
-## Methods
-
-| Type                                                   | Name            | Parameters                                     |
-| ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [SupplySphereComponentData](/vext/ref/fb/supplyspherecomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SupplySphereComponentData](/vext/ref/fb/supplyspherecomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SupplySphereComponentData](/vext/ref/fb/supplyspherecomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SupplySphereComponentData {#constructor-2}
+> **SupplySphereComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [SupplySphereComponentData](/vext/ref/fb/supplyspherecomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [SupplySphereComponentData](/vext/ref/fb/supplyspherecomponentdata). |
+
+### SupplySphereComponentData {#constructor-3}
+> **SupplySphereComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [SupplySphereComponentData](/vext/ref/fb/supplyspherecomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [SupplySphereComponentData](/vext/ref/fb/supplyspherecomponentdata). |
+
+### SupplySphereComponentData {#constructor-4}
+> **SupplySphereComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [SupplySphereComponentData](/vext/ref/fb/supplyspherecomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [SupplySphereComponentData](/vext/ref/fb/supplyspherecomponentdata). |
+
+### SupplySphereComponentData {#constructor-5}
+> **SupplySphereComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SupplySphereComponentData](/vext/ref/fb/supplyspherecomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SupplySphereComponentData](/vext/ref/fb/supplyspherecomponentdata). |
+
+## Properties
+### {{% prop-heading "supplyData" %}}
+> **[SupplyData](/vext/ref/fb/supplydata)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SupplySphereComponentData](/vext/ref/fb/supplyspherecomponentdata) type.
+

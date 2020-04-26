@@ -1,46 +1,98 @@
 ---
 title: ProfileEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ProfileEntityData](#constructor-0)**() |
+| **[ProfileEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ProfileEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[ProfileEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[ProfileEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[ProfileEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
+| {{< prop "profileName" >}} | string |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ProfileEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ProfileEntityData {#constructor-0}
+> **ProfileEntityData**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| ProfileEntityData()                                                          | Create a new instance of this container type.                                                                             |
-| ProfileEntityData(ProfileEntityData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| ProfileEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [ProfileEntityData](/vext/ref/fb/profileentitydata/).                            |
-| ProfileEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [ProfileEntityData](/vext/ref/fb/profileentitydata/).                    |
-| ProfileEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [ProfileEntityData](/vext/ref/fb/profileentitydata/).              |
-| ProfileEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ProfileEntityData](/vext/ref/fb/profileentitydata/). |
+Creates a new [ProfileEntityData](/vext/ref/fb/profileentitydata) frostbite instance.
 
-## Properties
+### ProfileEntityData {#constructor-1}
+> **ProfileEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name        | Type           | Description |
-| ----------- | -------------- | ----------- |
-| realm       | [Realm](/vext/ref/fb/realm/) |             |
-| profileName | string         |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [ProfileEntityData](/vext/ref/fb/profileentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ProfileEntityData](/vext/ref/fb/profileentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ProfileEntityData](/vext/ref/fb/profileentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ProfileEntityData {#constructor-2}
+> **ProfileEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [ProfileEntityData](/vext/ref/fb/profileentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [ProfileEntityData](/vext/ref/fb/profileentitydata). |
+
+### ProfileEntityData {#constructor-3}
+> **ProfileEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [ProfileEntityData](/vext/ref/fb/profileentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [ProfileEntityData](/vext/ref/fb/profileentitydata). |
+
+### ProfileEntityData {#constructor-4}
+> **ProfileEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [ProfileEntityData](/vext/ref/fb/profileentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [ProfileEntityData](/vext/ref/fb/profileentitydata). |
+
+### ProfileEntityData {#constructor-5}
+> **ProfileEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ProfileEntityData](/vext/ref/fb/profileentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ProfileEntityData](/vext/ref/fb/profileentitydata). |
+
+## Properties
+### {{% prop-heading "realm" %}}
+> **[Realm](/vext/ref/fb/realm)**
+
+### {{% prop-heading "profileName" %}}
+> **string**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ProfileEntityData](/vext/ref/fb/profileentitydata) type.
+

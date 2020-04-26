@@ -1,20 +1,17 @@
 ---
 title: ShaderBlendMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ShaderBlendMode_Lerp** | Value: **0** |
+| **ShaderBlendMode_Additive** | Value: **1** |
+| **ShaderBlendMode_Multiply** | Value: **2** |
+| **ShaderBlendMode_LerpPremultiplied** | Value: **3** |
+| **ShaderBlendMode_DecalLerpNoSpec** | Value: **4** |
+| **ShaderBlendMode_DecalLerpNormal** | Value: **5** |
+| **ShaderBlendMode_DecalLerpNormalMultiplyDiffuse** | Value: **6** |
+| **ShaderBlendMode_DecalLerpDiffuse** | Value: **7** |
+| **ShaderBlendMode_DecalLerpDiffuseNoSpec** | Value: **8** |
 
-| Name                                            | Value | Description |
-| ----------------------------------------------- | ----- | ----------- |
-| ShaderBlendMode\_Lerp                           | 0     |             |
-| ShaderBlendMode\_Additive                       | 1     |             |
-| ShaderBlendMode\_Multiply                       | 2     |             |
-| ShaderBlendMode\_LerpPremultiplied              | 3     |             |
-| ShaderBlendMode\_DecalLerpNoSpec                | 4     |             |
-| ShaderBlendMode\_DecalLerpNormal                | 5     |             |
-| ShaderBlendMode\_DecalLerpNormalMultiplyDiffuse | 6     |             |
-| ShaderBlendMode\_DecalLerpDiffuse               | 7     |             |
-| ShaderBlendMode\_DecalLerpDiffuseNoSpec         | 8     |             |

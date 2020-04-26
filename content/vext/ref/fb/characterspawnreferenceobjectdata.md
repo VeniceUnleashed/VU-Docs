@@ -1,55 +1,141 @@
 ---
 title: CharacterSpawnReferenceObjectData
 ---
-### Base Classes
 
-[SpawnReferenceObjectData](/vext/ref/fb/spawnreferenceobjectdata/)
+Inherits from 
+[SpawnReferenceObjectData](/vext/ref/fb/spawnreferenceobjectdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[CharacterSpawnReferenceObjectData](#constructor-0)**() |
+| **[CharacterSpawnReferenceObjectData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[CharacterSpawnReferenceObjectData](#constructor-2)**(other: [SpawnReferenceObjectData](/vext/ref/fb/spawnreferenceobjectdata)) |
+| **[CharacterSpawnReferenceObjectData](#constructor-3)**(other: [ReferenceObjectData](/vext/ref/fb/referenceobjectdata)) |
+| **[CharacterSpawnReferenceObjectData](#constructor-4)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[CharacterSpawnReferenceObjectData](#constructor-5)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[CharacterSpawnReferenceObjectData](#constructor-6)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "playerType" >}} | [PlayerSpawnType](/vext/ref/fb/playerspawntype) |
+| {{< prop "vehicleEntryIndex" >}} | int |
+| {{< prop "template" >}} | [SoldierSpawnTemplateData](/vext/ref/fb/soldierspawntemplatedata) \| nil |
+| {{< prop "humanTargetPreference" >}} | float |
+| {{< prop "minimapIcon" >}} | [UIHudIcon](/vext/ref/fb/uihudicon) |
+| {{< prop "allowFallbackOnNextAvailabeVehicleEntry" >}} | bool |
+| {{< prop "checkMaxPlayersInVehicle" >}} | bool |
+| {{< prop "affectMinimapPosition" >}} | bool |
+| {{< prop "isTarget" >}} | bool |
+| {{< prop "ignoreVehicleIcon" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "CharacterSpawnReferenceObjectData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### CharacterSpawnReferenceObjectData {#constructor-0}
+> **CharacterSpawnReferenceObjectData**()
 
-| Constructor                                                                                   | Description                                                                                                                                                |
-| --------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| CharacterSpawnReferenceObjectData()                                                           | Create a new instance of this container type.                                                                                                              |
-| CharacterSpawnReferenceObjectData(CharacterSpawnReferenceObjectData other)                    | Create a reference copy of an instance of the same type.                                                                                                   |
-| CharacterSpawnReferenceObjectData([SpawnReferenceObjectData](/vext/ref/fb/spawnreferenceobjectdata/) other) | Upcast an instance of type [SpawnReferenceObjectData](/vext/ref/fb/spawnreferenceobjectdata/) to [CharacterSpawnReferenceObjectData](/vext/ref/fb/characterspawnreferenceobjectdata/). |
-| CharacterSpawnReferenceObjectData([ReferenceObjectData](/vext/ref/fb/referenceobjectdata/) other)           | Upcast an instance of type [ReferenceObjectData](/vext/ref/fb/referenceobjectdata/) to [CharacterSpawnReferenceObjectData](/vext/ref/fb/characterspawnreferenceobjectdata/).           |
-| CharacterSpawnReferenceObjectData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                     | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [CharacterSpawnReferenceObjectData](/vext/ref/fb/characterspawnreferenceobjectdata/).                     |
-| CharacterSpawnReferenceObjectData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)               | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [CharacterSpawnReferenceObjectData](/vext/ref/fb/characterspawnreferenceobjectdata/).               |
-| CharacterSpawnReferenceObjectData([DataContainer](/vext/ref/shared/class/datacontainer) other)  | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CharacterSpawnReferenceObjectData](/vext/ref/fb/characterspawnreferenceobjectdata/).  |
+Creates a new [CharacterSpawnReferenceObjectData](/vext/ref/fb/characterspawnreferenceobjectdata) frostbite instance.
 
-## Properties
+### CharacterSpawnReferenceObjectData {#constructor-1}
+> **CharacterSpawnReferenceObjectData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                                    | Type                                                 | Description |
-| --------------------------------------- | ---------------------------------------------------- | ----------- |
-| playerType                              | [PlayerSpawnType](/vext/ref/fb/playerspawntype/)                   |             |
-| vehicleEntryIndex                       | number                                               |             |
-| template                                | [SoldierSpawnTemplateData](/vext/ref/fb/soldierspawntemplatedata/) |             |
-| humanTargetPreference                   | number                                               |             |
-| minimapIcon                             | [UIHudIcon](/vext/ref/fb/uihudicon/)                               |             |
-| allowFallbackOnNextAvailabeVehicleEntry | bool                                                 |             |
-| checkMaxPlayersInVehicle                | bool                                                 |             |
-| affectMinimapPosition                   | bool                                                 |             |
-| isTarget                                | bool                                                 |             |
-| ignoreVehicleIcon                       | bool                                                 |             |
-
-## Methods
-
-| Type                                                                   | Name            | Parameters                                     |
-| ---------------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [CharacterSpawnReferenceObjectData](/vext/ref/fb/characterspawnreferenceobjectdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [CharacterSpawnReferenceObjectData](/vext/ref/fb/characterspawnreferenceobjectdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [CharacterSpawnReferenceObjectData](/vext/ref/fb/characterspawnreferenceobjectdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### CharacterSpawnReferenceObjectData {#constructor-2}
+> **CharacterSpawnReferenceObjectData**(other: [SpawnReferenceObjectData](/vext/ref/fb/spawnreferenceobjectdata))
+
+Casts an instance of type [SpawnReferenceObjectData](/vext/ref/fb/spawnreferenceobjectdata) to [CharacterSpawnReferenceObjectData](/vext/ref/fb/characterspawnreferenceobjectdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SpawnReferenceObjectData](/vext/ref/fb/spawnreferenceobjectdata) | The instance to cast to [CharacterSpawnReferenceObjectData](/vext/ref/fb/characterspawnreferenceobjectdata). |
+
+### CharacterSpawnReferenceObjectData {#constructor-3}
+> **CharacterSpawnReferenceObjectData**(other: [ReferenceObjectData](/vext/ref/fb/referenceobjectdata))
+
+Casts an instance of type [ReferenceObjectData](/vext/ref/fb/referenceobjectdata) to [CharacterSpawnReferenceObjectData](/vext/ref/fb/characterspawnreferenceobjectdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ReferenceObjectData](/vext/ref/fb/referenceobjectdata) | The instance to cast to [CharacterSpawnReferenceObjectData](/vext/ref/fb/characterspawnreferenceobjectdata). |
+
+### CharacterSpawnReferenceObjectData {#constructor-4}
+> **CharacterSpawnReferenceObjectData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [CharacterSpawnReferenceObjectData](/vext/ref/fb/characterspawnreferenceobjectdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [CharacterSpawnReferenceObjectData](/vext/ref/fb/characterspawnreferenceobjectdata). |
+
+### CharacterSpawnReferenceObjectData {#constructor-5}
+> **CharacterSpawnReferenceObjectData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [CharacterSpawnReferenceObjectData](/vext/ref/fb/characterspawnreferenceobjectdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [CharacterSpawnReferenceObjectData](/vext/ref/fb/characterspawnreferenceobjectdata). |
+
+### CharacterSpawnReferenceObjectData {#constructor-6}
+> **CharacterSpawnReferenceObjectData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CharacterSpawnReferenceObjectData](/vext/ref/fb/characterspawnreferenceobjectdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [CharacterSpawnReferenceObjectData](/vext/ref/fb/characterspawnreferenceobjectdata). |
+
+## Properties
+### {{% prop-heading "playerType" %}}
+> **[PlayerSpawnType](/vext/ref/fb/playerspawntype)**
+
+### {{% prop-heading "vehicleEntryIndex" %}}
+> **int**
+
+### {{% prop-heading "template" %}}
+> **[SoldierSpawnTemplateData](/vext/ref/fb/soldierspawntemplatedata)** | **nil**
+
+### {{% prop-heading "humanTargetPreference" %}}
+> **float**
+
+### {{% prop-heading "minimapIcon" %}}
+> **[UIHudIcon](/vext/ref/fb/uihudicon)**
+
+### {{% prop-heading "allowFallbackOnNextAvailabeVehicleEntry" %}}
+> **bool**
+
+### {{% prop-heading "checkMaxPlayersInVehicle" %}}
+> **bool**
+
+### {{% prop-heading "affectMinimapPosition" %}}
+> **bool**
+
+### {{% prop-heading "isTarget" %}}
+> **bool**
+
+### {{% prop-heading "ignoreVehicleIcon" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [CharacterSpawnReferenceObjectData](/vext/ref/fb/characterspawnreferenceobjectdata) type.
+

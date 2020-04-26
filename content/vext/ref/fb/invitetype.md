@@ -1,16 +1,13 @@
 ---
 title: InviteType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **InviteType_Invalid** | Value: **0** |
+| **InviteType_Invite** | Value: **1** |
+| **InviteType_JoinSession** | Value: **2** |
+| **InviteType_JoinFriendSession** | Value: **3** |
+| **InviteType_Count** | Value: **4** |
 
-| Name                          | Value | Description |
-| ----------------------------- | ----- | ----------- |
-| InviteType\_Invalid           | 0     |             |
-| InviteType\_Invite            | 1     |             |
-| InviteType\_JoinSession       | 2     |             |
-| InviteType\_JoinFriendSession | 3     |             |
-| InviteType\_Count             | 4     |             |

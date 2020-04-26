@@ -1,16 +1,13 @@
 ---
 title: GunMasterNotificationType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **GunMasterNotificationType_LevelUp** | Value: **0** |
+| **GunMasterNotificationType_Demoted** | Value: **1** |
+| **GunMasterNotificationType_ReachedLevel** | Value: **2** |
+| **GunMasterNotificationType_TookLead** | Value: **3** |
+| **GunMasterNotificationType_LostLead** | Value: **4** |
 
-| Name                                    | Value | Description |
-| --------------------------------------- | ----- | ----------- |
-| GunMasterNotificationType\_LevelUp      | 0     |             |
-| GunMasterNotificationType\_Demoted      | 1     |             |
-| GunMasterNotificationType\_ReachedLevel | 2     |             |
-| GunMasterNotificationType\_TookLead     | 3     |             |
-| GunMasterNotificationType\_LostLead     | 4     |             |

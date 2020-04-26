@@ -1,38 +1,74 @@
 ---
 title: UIKillCounterCompData
 ---
-### Base Classes
 
-[UIComponentData](/vext/ref/fb/uicomponentdata/)
+Inherits from 
+[UIComponentData](/vext/ref/fb/uicomponentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIKillCounterCompData](#constructor-0)**() |
+| **[UIKillCounterCompData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UIKillCounterCompData](#constructor-2)**(other: [UIComponentData](/vext/ref/fb/uicomponentdata)) |
+| **[UIKillCounterCompData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[UIKillCounterCompData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIKillCounterCompData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIKillCounterCompData {#constructor-0}
+> **UIKillCounterCompData**()
 
-| Constructor                                                                      | Description                                                                                                                       |
-| -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| UIKillCounterCompData()                                                          | Create a new instance of this container type.                                                                                     |
-| UIKillCounterCompData(UIKillCounterCompData other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| UIKillCounterCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UIKillCounterCompData](/vext/ref/fb/uikillcountercompdata/).                  |
-| UIKillCounterCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UIKillCounterCompData](/vext/ref/fb/uikillcountercompdata/).                                      |
-| UIKillCounterCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIKillCounterCompData](/vext/ref/fb/uikillcountercompdata/). |
+Creates a new [UIKillCounterCompData](/vext/ref/fb/uikillcountercompdata) frostbite instance.
 
-## Methods
+### UIKillCounterCompData {#constructor-1}
+> **UIKillCounterCompData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                           | Name            | Parameters                                     |
-| ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [UIKillCounterCompData](/vext/ref/fb/uikillcountercompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UIKillCounterCompData](/vext/ref/fb/uikillcountercompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UIKillCounterCompData](/vext/ref/fb/uikillcountercompdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UIKillCounterCompData {#constructor-2}
+> **UIKillCounterCompData**(other: [UIComponentData](/vext/ref/fb/uicomponentdata))
+
+Casts an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata) to [UIKillCounterCompData](/vext/ref/fb/uikillcountercompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIComponentData](/vext/ref/fb/uicomponentdata) | The instance to cast to [UIKillCounterCompData](/vext/ref/fb/uikillcountercompdata). |
+
+### UIKillCounterCompData {#constructor-3}
+> **UIKillCounterCompData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [UIKillCounterCompData](/vext/ref/fb/uikillcountercompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [UIKillCounterCompData](/vext/ref/fb/uikillcountercompdata). |
+
+### UIKillCounterCompData {#constructor-4}
+> **UIKillCounterCompData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIKillCounterCompData](/vext/ref/fb/uikillcountercompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UIKillCounterCompData](/vext/ref/fb/uikillcountercompdata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIKillCounterCompData](/vext/ref/fb/uikillcountercompdata) type.
+

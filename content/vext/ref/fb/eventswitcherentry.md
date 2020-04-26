@@ -1,44 +1,76 @@
 ---
 title: EventSwitcherEntry
 ---
-### Base Classes
 
-[AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/)
+Inherits from 
+[AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[EventSwitcherEntry](#constructor-0)**() |
+| **[EventSwitcherEntry](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[EventSwitcherEntry](#constructor-2)**(other: [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup)) |
+| **[EventSwitcherEntry](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "caseTrigger" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "value" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "EventSwitcherEntry" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### EventSwitcherEntry {#constructor-0}
+> **EventSwitcherEntry**()
 
-| Constructor                                                                   | Description                                                                                                                 |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| EventSwitcherEntry()                                                          | Create a new instance of this container type.                                                                               |
-| EventSwitcherEntry(EventSwitcherEntry other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| EventSwitcherEntry([AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/) other)  | Upcast an instance of type [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/) to [EventSwitcherEntry](/vext/ref/fb/eventswitcherentry/).  |
-| EventSwitcherEntry([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EventSwitcherEntry](/vext/ref/fb/eventswitcherentry/). |
+Creates a new [EventSwitcherEntry](/vext/ref/fb/eventswitcherentry) frostbite instance.
 
-## Properties
+### EventSwitcherEntry {#constructor-1}
+> **EventSwitcherEntry**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name        | Type                                     | Description |
-| ----------- | ---------------------------------------- | ----------- |
-| caseTrigger | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| value       | number                                   |             |
-
-## Methods
-
-| Type                                     | Name            | Parameters                                     |
-| ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [EventSwitcherEntry](/vext/ref/fb/eventswitcherentry/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [EventSwitcherEntry](/vext/ref/fb/eventswitcherentry/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [EventSwitcherEntry](/vext/ref/fb/eventswitcherentry) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### EventSwitcherEntry {#constructor-2}
+> **EventSwitcherEntry**(other: [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup))
+
+Casts an instance of type [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup) to [EventSwitcherEntry](/vext/ref/fb/eventswitcherentry). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup) | The instance to cast to [EventSwitcherEntry](/vext/ref/fb/eventswitcherentry). |
+
+### EventSwitcherEntry {#constructor-3}
+> **EventSwitcherEntry**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EventSwitcherEntry](/vext/ref/fb/eventswitcherentry). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [EventSwitcherEntry](/vext/ref/fb/eventswitcherentry). |
+
+## Properties
+### {{% prop-heading "caseTrigger" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "value" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [EventSwitcherEntry](/vext/ref/fb/eventswitcherentry) type.
+

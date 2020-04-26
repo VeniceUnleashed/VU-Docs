@@ -1,57 +1,54 @@
 ---
 title: UIListRowType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **MixedRows** | Value: **0** |
+| **basicRow** | Value: **1** |
+| **baseSpawn** | Value: **2** |
+| **squadSpawn** | Value: **3** |
+| **MenuRow_34px** | Value: **4** |
+| **MenuRow_64px** | Value: **5** |
+| **ScoreboardRow** | Value: **6** |
+| **ScoreboardRow64Players** | Value: **7** |
+| **TextSelectorRow** | Value: **8** |
+| **TextSelectorRow_28px** | Value: **9** |
+| **BarSelectorRow** | Value: **10** |
+| **SquadRow** | Value: **11** |
+| **ServerListRow** | Value: **12** |
+| **StoreRow** | Value: **13** |
+| **ComCenterStandardDelimiter** | Value: **14** |
+| **ComCenterSquadDelimiter** | Value: **15** |
+| **ComCenterStandardFriendRow** | Value: **16** |
+| **ComCenterSquadFriendRow** | Value: **17** |
+| **ComCenterSquadButtonRow** | Value: **18** |
+| **ComCenterLivePartyDelimiter** | Value: **19** |
+| **ComCenterLivePartyFriendRow** | Value: **20** |
+| **SquadDetailedRow** | Value: **21** |
+| **ComCenterLivePartyButtonRow** | Value: **22** |
+| **CoopMissionTeamRow** | Value: **23** |
+| **LeaderBoardRow** | Value: **24** |
+| **CoopLeaderBoardRow** | Value: **25** |
+| **BattleLogStandardRow** | Value: **26** |
+| **BattleLogNewsRow** | Value: **27** |
+| **ServerLocationsRow** | Value: **28** |
+| **ServerExtendRow** | Value: **29** |
+| **ServerInfoSettingsRow** | Value: **30** |
+| **ServerInfoPlayersRow** | Value: **31** |
+| **CheckBoxRow** | Value: **32** |
+| **BarSelectorRow_28px** | Value: **33** |
+| **BasicRow_34px** | Value: **34** |
+| **KeyBindingRow** | Value: **35** |
+| **SquadListRow** | Value: **36** |
+| **teamSpawn** | Value: **37** |
+| **MatchListRow** | Value: **38** |
+| **MatchPlayerListRow** | Value: **39** |
+| **ManageServerPlayerRow** | Value: **40** |
+| **ServerSettingsRow** | Value: **41** |
+| **ServerPlayersRow** | Value: **42** |
+| **TopPlayersRow** | Value: **43** |
+| **MenuRowPremium_34px** | Value: **44** |
+| **MenuRowPremium_64px** | Value: **45** |
 
-| Name                        | Value | Description |
-| --------------------------- | ----- | ----------- |
-| MixedRows                   | 0     |             |
-| basicRow                    | 1     |             |
-| baseSpawn                   | 2     |             |
-| squadSpawn                  | 3     |             |
-| MenuRow\_34px               | 4     |             |
-| MenuRow\_64px               | 5     |             |
-| ScoreboardRow               | 6     |             |
-| ScoreboardRow64Players      | 7     |             |
-| TextSelectorRow             | 8     |             |
-| TextSelectorRow\_28px       | 9     |             |
-| BarSelectorRow              | 10    |             |
-| SquadRow                    | 11    |             |
-| ServerListRow               | 12    |             |
-| StoreRow                    | 13    |             |
-| ComCenterStandardDelimiter  | 14    |             |
-| ComCenterSquadDelimiter     | 15    |             |
-| ComCenterStandardFriendRow  | 16    |             |
-| ComCenterSquadFriendRow     | 17    |             |
-| ComCenterSquadButtonRow     | 18    |             |
-| ComCenterLivePartyDelimiter | 19    |             |
-| ComCenterLivePartyFriendRow | 20    |             |
-| SquadDetailedRow            | 21    |             |
-| ComCenterLivePartyButtonRow | 22    |             |
-| CoopMissionTeamRow          | 23    |             |
-| LeaderBoardRow              | 24    |             |
-| CoopLeaderBoardRow          | 25    |             |
-| BattleLogStandardRow        | 26    |             |
-| BattleLogNewsRow            | 27    |             |
-| ServerLocationsRow          | 28    |             |
-| ServerExtendRow             | 29    |             |
-| ServerInfoSettingsRow       | 30    |             |
-| ServerInfoPlayersRow        | 31    |             |
-| CheckBoxRow                 | 32    |             |
-| BarSelectorRow\_28px        | 33    |             |
-| BasicRow\_34px              | 34    |             |
-| KeyBindingRow               | 35    |             |
-| SquadListRow                | 36    |             |
-| teamSpawn                   | 37    |             |
-| MatchListRow                | 38    |             |
-| MatchPlayerListRow          | 39    |             |
-| ManageServerPlayerRow       | 40    |             |
-| ServerSettingsRow           | 41    |             |
-| ServerPlayersRow            | 42    |             |
-| TopPlayersRow               | 43    |             |
-| MenuRowPremium\_34px        | 44    |             |
-| MenuRowPremium\_64px        | 45    |             |

@@ -1,16 +1,13 @@
 ---
 title: StrengthType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **Infantry** | Value: **0** |
+| **LightArmour** | Value: **1** |
+| **HeavyArmour** | Value: **2** |
+| **Helicopter** | Value: **3** |
+| **NumberOfStrengthTypes** | Value: **4** |
 
-| Name                  | Value | Description |
-| --------------------- | ----- | ----------- |
-| Infantry              | 0     |             |
-| LightArmour           | 1     |             |
-| HeavyArmour           | 2     |             |
-| Helicopter            | 3     |             |
-| NumberOfStrengthTypes | 4     |             |

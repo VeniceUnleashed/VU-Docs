@@ -1,42 +1,61 @@
 ---
 title: EditableAction
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[EditableAction](#constructor-0)**() |
+| **[EditableAction](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[EditableAction](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "concept" >}} | [InputConceptIdentifiers](/vext/ref/fb/inputconceptidentifiers) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "EditableAction" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### EditableAction {#constructor-0}
+> **EditableAction**()
 
-| Constructor                                                               | Description                                                                                                         |
-| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| EditableAction()                                                          | Create a new instance of this container type.                                                                       |
-| EditableAction(EditableAction other)                                      | Create a reference copy of an instance of the same type.                                                            |
-| EditableAction([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EditableAction](/vext/ref/fb/editableaction/). |
+Creates a new [EditableAction](/vext/ref/fb/editableaction) frostbite instance.
 
-## Properties
+### EditableAction {#constructor-1}
+> **EditableAction**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name    | Type                                               | Description |
-| ------- | -------------------------------------------------- | ----------- |
-| concept | [InputConceptIdentifiers](/vext/ref/fb/inputconceptidentifiers/) |             |
-
-## Methods
-
-| Type                             | Name            | Parameters                                     |
-| -------------------------------- | --------------- | ---------------------------------------------- |
-| [EditableAction](/vext/ref/fb/editableaction/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [EditableAction](/vext/ref/fb/editableaction/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [EditableAction](/vext/ref/fb/editableaction) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### EditableAction {#constructor-2}
+> **EditableAction**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EditableAction](/vext/ref/fb/editableaction). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [EditableAction](/vext/ref/fb/editableaction). |
+
+## Properties
+### {{% prop-heading "concept" %}}
+> **[InputConceptIdentifiers](/vext/ref/fb/inputconceptidentifiers)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [EditableAction](/vext/ref/fb/editableaction) type.
+

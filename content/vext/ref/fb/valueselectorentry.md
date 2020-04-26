@@ -1,44 +1,76 @@
 ---
 title: ValueSelectorEntry
 ---
-### Base Classes
 
-[AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/)
+Inherits from 
+[AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ValueSelectorEntry](#constructor-0)**() |
+| **[ValueSelectorEntry](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ValueSelectorEntry](#constructor-2)**(other: [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup)) |
+| **[ValueSelectorEntry](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "input" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "caseValue" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ValueSelectorEntry" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ValueSelectorEntry {#constructor-0}
+> **ValueSelectorEntry**()
 
-| Constructor                                                                   | Description                                                                                                                 |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| ValueSelectorEntry()                                                          | Create a new instance of this container type.                                                                               |
-| ValueSelectorEntry(ValueSelectorEntry other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| ValueSelectorEntry([AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/) other)  | Upcast an instance of type [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup/) to [ValueSelectorEntry](/vext/ref/fb/valueselectorentry/).  |
-| ValueSelectorEntry([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ValueSelectorEntry](/vext/ref/fb/valueselectorentry/). |
+Creates a new [ValueSelectorEntry](/vext/ref/fb/valueselectorentry) frostbite instance.
 
-## Properties
+### ValueSelectorEntry {#constructor-1}
+> **ValueSelectorEntry**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name      | Type                                     | Description |
-| --------- | ---------------------------------------- | ----------- |
-| input     | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| caseValue | number                                   |             |
-
-## Methods
-
-| Type                                     | Name            | Parameters                                     |
-| ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [ValueSelectorEntry](/vext/ref/fb/valueselectorentry/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ValueSelectorEntry](/vext/ref/fb/valueselectorentry/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ValueSelectorEntry](/vext/ref/fb/valueselectorentry) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ValueSelectorEntry {#constructor-2}
+> **ValueSelectorEntry**(other: [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup))
+
+Casts an instance of type [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup) to [ValueSelectorEntry](/vext/ref/fb/valueselectorentry). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AudioGraphNodePortGroup](/vext/ref/fb/audiographnodeportgroup) | The instance to cast to [ValueSelectorEntry](/vext/ref/fb/valueselectorentry). |
+
+### ValueSelectorEntry {#constructor-3}
+> **ValueSelectorEntry**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ValueSelectorEntry](/vext/ref/fb/valueselectorentry). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ValueSelectorEntry](/vext/ref/fb/valueselectorentry). |
+
+## Properties
+### {{% prop-heading "input" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "caseValue" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ValueSelectorEntry](/vext/ref/fb/valueselectorentry) type.
+

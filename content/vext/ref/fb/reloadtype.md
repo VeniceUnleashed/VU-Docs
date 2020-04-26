@@ -1,14 +1,11 @@
 ---
 title: ReloadType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **rtSingleBullet** | Value: **0** |
+| **rtMagazine** | Value: **1** |
+| **rtMagazineWithPossibleShorterReload** | Value: **2** |
 
-| Name                                | Value | Description |
-| ----------------------------------- | ----- | ----------- |
-| rtSingleBullet                      | 0     |             |
-| rtMagazine                          | 1     |             |
-| rtMagazineWithPossibleShorterReload | 2     |             |

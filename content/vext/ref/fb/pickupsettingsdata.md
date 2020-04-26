@@ -1,32 +1,57 @@
 ---
 title: PickupSettingsData
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PickupSettingsData](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "meshRenderOffset" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "meshRenderRotation" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [PickupSettingsData](/vext/ref/fb/pickupsettingsdata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PickupSettingsData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PickupSettingsData {#constructor-0}
+> **PickupSettingsData**()
 
-| Constructor                                  | Description                                              |
-| -------------------------------------------- | -------------------------------------------------------- |
-| PickupSettingsData()                         | Create a new instance of this structure type.            |
-| PickupSettingsData(PickupSettingsData other) | Create a reference copy of a structure of the same type. |
+Creates a new [PickupSettingsData](/vext/ref/fb/pickupsettingsdata) frostbite structure.
 
 ## Properties
+### {{% prop-heading "meshRenderOffset" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
 
-| Name               | Type                              | Description |
-| ------------------ | --------------------------------- | ----------- |
-| meshRenderOffset   | [Vec3](/vext/ref/shared/class/vec3) |             |
-| meshRenderRotation | [Vec3](/vext/ref/shared/class/vec3) |             |
+### {{% prop-heading "meshRenderRotation" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
 
 ## Methods
-
-| Type                                     | Name            | Parameters |
-| ---------------------------------------- | --------------- | ---------- |
-| [PickupSettingsData](/vext/ref/fb/pickupsettingsdata/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [PickupSettingsData](/vext/ref/fb/pickupsettingsdata)
 
-> [PickupSettingsData](/vext/ref/fb/pickupsettingsdata/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[PickupSettingsData](/vext/ref/fb/pickupsettingsdata)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PickupSettingsData](/vext/ref/fb/pickupsettingsdata) type.
+

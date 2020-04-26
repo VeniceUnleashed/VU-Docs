@@ -1,14 +1,11 @@
 ---
 title: UIListEmptyRowType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **emptyRow_28px** | Value: **0** |
+| **emptyRow_20px** | Value: **1** |
+| **emptyRowNone** | Value: **2** |
 
-| Name           | Value | Description |
-| -------------- | ----- | ----------- |
-| emptyRow\_28px | 0     |             |
-| emptyRow\_20px | 1     |             |
-| emptyRowNone   | 2     |             |

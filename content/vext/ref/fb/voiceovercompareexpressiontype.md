@@ -1,17 +1,14 @@
 ---
 title: VoiceOverCompareExpressionType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **VoiceOverCompareExpressionType_Equals** | Value: **0** |
+| **VoiceOverCompareExpressionType_Differs** | Value: **1** |
+| **VoiceOverCompareExpressionType_Greater** | Value: **2** |
+| **VoiceOverCompareExpressionType_Less** | Value: **3** |
+| **VoiceOverCompareExpressionType_GreaterOrEquals** | Value: **4** |
+| **VoiceOverCompareExpressionType_LessOrEquals** | Value: **5** |
 
-| Name                                            | Value | Description |
-| ----------------------------------------------- | ----- | ----------- |
-| VoiceOverCompareExpressionType\_Equals          | 0     |             |
-| VoiceOverCompareExpressionType\_Differs         | 1     |             |
-| VoiceOverCompareExpressionType\_Greater         | 2     |             |
-| VoiceOverCompareExpressionType\_Less            | 3     |             |
-| VoiceOverCompareExpressionType\_GreaterOrEquals | 4     |             |
-| VoiceOverCompareExpressionType\_LessOrEquals    | 5     |             |

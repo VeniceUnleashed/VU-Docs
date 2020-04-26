@@ -1,44 +1,83 @@
 ---
 title: ProfileOptionDataBinary
 ---
-### Base Classes
 
-[ProfileOptionData](/vext/ref/fb/profileoptiondata/)
+Inherits from 
+[ProfileOptionData](/vext/ref/fb/profileoptiondata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ProfileOptionDataBinary](#constructor-0)**() |
+| **[ProfileOptionDataBinary](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ProfileOptionDataBinary](#constructor-2)**(other: [ProfileOptionData](/vext/ref/fb/profileoptiondata)) |
+| **[ProfileOptionDataBinary](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[ProfileOptionDataBinary](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "maxLength" >}} | int |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ProfileOptionDataBinary" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ProfileOptionDataBinary {#constructor-0}
+> **ProfileOptionDataBinary**()
 
-| Constructor                                                                        | Description                                                                                                                           |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| ProfileOptionDataBinary()                                                          | Create a new instance of this container type.                                                                                         |
-| ProfileOptionDataBinary(ProfileOptionDataBinary other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| ProfileOptionDataBinary([ProfileOptionData](/vext/ref/fb/profileoptiondata/) other)              | Upcast an instance of type [ProfileOptionData](/vext/ref/fb/profileoptiondata/) to [ProfileOptionDataBinary](/vext/ref/fb/profileoptiondatabinary/).              |
-| ProfileOptionDataBinary([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [ProfileOptionDataBinary](/vext/ref/fb/profileoptiondatabinary/).                                      |
-| ProfileOptionDataBinary([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ProfileOptionDataBinary](/vext/ref/fb/profileoptiondatabinary/). |
+Creates a new [ProfileOptionDataBinary](/vext/ref/fb/profileoptiondatabinary) frostbite instance.
 
-## Properties
+### ProfileOptionDataBinary {#constructor-1}
+> **ProfileOptionDataBinary**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name      | Type   | Description |
-| --------- | ------ | ----------- |
-| maxLength | number |             |
-
-## Methods
-
-| Type                                               | Name            | Parameters                                     |
-| -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [ProfileOptionDataBinary](/vext/ref/fb/profileoptiondatabinary/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ProfileOptionDataBinary](/vext/ref/fb/profileoptiondatabinary/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ProfileOptionDataBinary](/vext/ref/fb/profileoptiondatabinary) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ProfileOptionDataBinary {#constructor-2}
+> **ProfileOptionDataBinary**(other: [ProfileOptionData](/vext/ref/fb/profileoptiondata))
+
+Casts an instance of type [ProfileOptionData](/vext/ref/fb/profileoptiondata) to [ProfileOptionDataBinary](/vext/ref/fb/profileoptiondatabinary). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ProfileOptionData](/vext/ref/fb/profileoptiondata) | The instance to cast to [ProfileOptionDataBinary](/vext/ref/fb/profileoptiondatabinary). |
+
+### ProfileOptionDataBinary {#constructor-3}
+> **ProfileOptionDataBinary**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [ProfileOptionDataBinary](/vext/ref/fb/profileoptiondatabinary). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [ProfileOptionDataBinary](/vext/ref/fb/profileoptiondatabinary). |
+
+### ProfileOptionDataBinary {#constructor-4}
+> **ProfileOptionDataBinary**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ProfileOptionDataBinary](/vext/ref/fb/profileoptiondatabinary). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ProfileOptionDataBinary](/vext/ref/fb/profileoptiondatabinary). |
+
+## Properties
+### {{% prop-heading "maxLength" %}}
+> **int**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ProfileOptionDataBinary](/vext/ref/fb/profileoptiondatabinary) type.
+

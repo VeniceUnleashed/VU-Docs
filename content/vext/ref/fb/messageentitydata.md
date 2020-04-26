@@ -1,50 +1,114 @@
 ---
 title: MessageEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MessageEntityData](#constructor-0)**() |
+| **[MessageEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MessageEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[MessageEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[MessageEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[MessageEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "messageSid" >}} | string |
+| {{< prop "additionalMessages" >}} | [MessageLineData](/vext/ref/fb/messagelinedata)[] |
+| {{< prop "messageType" >}} | [UIMessageEntityType](/vext/ref/fb/uimessageentitytype) |
+| {{< prop "displayTime" >}} | float |
+| {{< prop "entryInputAction" >}} | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum) |
+| {{< prop "enabled" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MessageEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MessageEntityData {#constructor-0}
+> **MessageEntityData**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| MessageEntityData()                                                          | Create a new instance of this container type.                                                                             |
-| MessageEntityData(MessageEntityData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| MessageEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [MessageEntityData](/vext/ref/fb/messageentitydata/).                            |
-| MessageEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [MessageEntityData](/vext/ref/fb/messageentitydata/).                    |
-| MessageEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [MessageEntityData](/vext/ref/fb/messageentitydata/).              |
-| MessageEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MessageEntityData](/vext/ref/fb/messageentitydata/). |
+Creates a new [MessageEntityData](/vext/ref/fb/messageentitydata) frostbite instance.
 
-## Properties
+### MessageEntityData {#constructor-1}
+> **MessageEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name               | Type                                         | Description |
-| ------------------ | -------------------------------------------- | ----------- |
-| messageSid         | string                                       |             |
-| additionalMessages | [MessageLineData](/vext/ref/fb/messagelinedata/)\[\]       |             |
-| messageType        | [UIMessageEntityType](/vext/ref/fb/uimessageentitytype/)   |             |
-| displayTime        | number                                       |             |
-| entryInputAction   | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum/) |             |
-| enabled            | bool                                         |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [MessageEntityData](/vext/ref/fb/messageentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MessageEntityData](/vext/ref/fb/messageentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MessageEntityData](/vext/ref/fb/messageentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MessageEntityData {#constructor-2}
+> **MessageEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [MessageEntityData](/vext/ref/fb/messageentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [MessageEntityData](/vext/ref/fb/messageentitydata). |
+
+### MessageEntityData {#constructor-3}
+> **MessageEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [MessageEntityData](/vext/ref/fb/messageentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [MessageEntityData](/vext/ref/fb/messageentitydata). |
+
+### MessageEntityData {#constructor-4}
+> **MessageEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [MessageEntityData](/vext/ref/fb/messageentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [MessageEntityData](/vext/ref/fb/messageentitydata). |
+
+### MessageEntityData {#constructor-5}
+> **MessageEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MessageEntityData](/vext/ref/fb/messageentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MessageEntityData](/vext/ref/fb/messageentitydata). |
+
+## Properties
+### {{% prop-heading "messageSid" %}}
+> **string**
+
+### {{% prop-heading "additionalMessages" %}}
+> **[MessageLineData](/vext/ref/fb/messagelinedata)**[]
+
+### {{% prop-heading "messageType" %}}
+> **[UIMessageEntityType](/vext/ref/fb/uimessageentitytype)**
+
+### {{% prop-heading "displayTime" %}}
+> **float**
+
+### {{% prop-heading "entryInputAction" %}}
+> **[EntryInputActionEnum](/vext/ref/fb/entryinputactionenum)**
+
+### {{% prop-heading "enabled" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MessageEntityData](/vext/ref/fb/messageentitydata) type.
+

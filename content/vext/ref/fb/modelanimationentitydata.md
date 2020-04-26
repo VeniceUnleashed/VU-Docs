@@ -1,68 +1,186 @@
 ---
 title: ModelAnimationEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ModelAnimationEntityData](#constructor-0)**() |
+| **[ModelAnimationEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ModelAnimationEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[ModelAnimationEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[ModelAnimationEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[ModelAnimationEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "animationEntitySpace" >}} | [LinearTransform](/vext/ref/shared/class/lineartransform) |
+| {{< prop "boneToPlace" >}} | [GameplayBones](/vext/ref/fb/gameplaybones) |
+| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
+| {{< prop "modelAnimationTransformType" >}} | [ModelAnimationTransformType](/vext/ref/fb/modelanimationtransformtype) |
+| {{< prop "instanceSeed" >}} | int |
+| {{< prop "defaultAnimation" >}} | string |
+| {{< prop "animationIndex" >}} | int |
+| {{< prop "animationSet" >}} | [AntAnimationSetAsset](/vext/ref/fb/antanimationsetasset) \| nil |
+| {{< prop "externalTime" >}} | float |
+| {{< prop "rootMeshBoneName" >}} | string |
+| {{< prop "jointWorldTransformUpdateOrder" >}} | [ModelAnimationUpdateOrder](/vext/ref/fb/modelanimationupdateorder) |
+| {{< prop "connectBoneName" >}} | string |
+| {{< prop "jointOutputPropertyIds" >}} | int[] |
+| {{< prop "trajectoryBoneName" >}} | string |
+| {{< prop "animationEntitySpaceActive" >}} | bool |
+| {{< prop "playFirstFrame" >}} | bool |
+| {{< prop "looping" >}} | bool |
+| {{< prop "enableJointWorldTransformOutput" >}} | bool |
+| {{< prop "resetAfterStop" >}} | bool |
+| {{< prop "autoStart" >}} | bool |
+| {{< prop "showDebugTransforms" >}} | bool |
+| {{< prop "applyRotationCompensation" >}} | bool |
+| {{< prop "applyPreTransformation" >}} | bool |
+| {{< prop "disableCulling" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ModelAnimationEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ModelAnimationEntityData {#constructor-0}
+> **ModelAnimationEntityData**()
 
-| Constructor                                                                         | Description                                                                                                                             |
-| ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| ModelAnimationEntityData()                                                          | Create a new instance of this container type.                                                                                           |
-| ModelAnimationEntityData(ModelAnimationEntityData other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| ModelAnimationEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [ModelAnimationEntityData](/vext/ref/fb/modelanimationentitydata/).                            |
-| ModelAnimationEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [ModelAnimationEntityData](/vext/ref/fb/modelanimationentitydata/).                    |
-| ModelAnimationEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [ModelAnimationEntityData](/vext/ref/fb/modelanimationentitydata/).              |
-| ModelAnimationEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ModelAnimationEntityData](/vext/ref/fb/modelanimationentitydata/). |
+Creates a new [ModelAnimationEntityData](/vext/ref/fb/modelanimationentitydata) frostbite instance.
 
-## Properties
+### ModelAnimationEntityData {#constructor-1}
+> **ModelAnimationEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                            | Type                                                       | Description |
-| ------------------------------- | ---------------------------------------------------------- | ----------- |
-| animationEntitySpace            | [LinearTransform](/vext/ref/shared/class/lineartransform)    |             |
-| boneToPlace                     | [GameplayBones](/vext/ref/fb/gameplaybones/)                             |             |
-| realm                           | [Realm](/vext/ref/fb/realm/)                                             |             |
-| modelAnimationTransformType     | [ModelAnimationTransformType](/vext/ref/fb/modelanimationtransformtype/) |             |
-| instanceSeed                    | number                                                     |             |
-| defaultAnimation                | string                                                     |             |
-| animationIndex                  | number                                                     |             |
-| animationSet                    | [AntAnimationSetAsset](/vext/ref/fb/antanimationsetasset/)               |             |
-| externalTime                    | number                                                     |             |
-| rootMeshBoneName                | string                                                     |             |
-| jointWorldTransformUpdateOrder  | [ModelAnimationUpdateOrder](/vext/ref/fb/modelanimationupdateorder/)     |             |
-| connectBoneName                 | string                                                     |             |
-| jointOutputPropertyIds          | number\[\]                                                 |             |
-| trajectoryBoneName              | string                                                     |             |
-| animationEntitySpaceActive      | bool                                                       |             |
-| playFirstFrame                  | bool                                                       |             |
-| looping                         | bool                                                       |             |
-| enableJointWorldTransformOutput | bool                                                       |             |
-| resetAfterStop                  | bool                                                       |             |
-| autoStart                       | bool                                                       |             |
-| showDebugTransforms             | bool                                                       |             |
-| applyRotationCompensation       | bool                                                       |             |
-| applyPreTransformation          | bool                                                       |             |
-| disableCulling                  | bool                                                       |             |
-
-## Methods
-
-| Type                                                 | Name            | Parameters                                     |
-| ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [ModelAnimationEntityData](/vext/ref/fb/modelanimationentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ModelAnimationEntityData](/vext/ref/fb/modelanimationentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ModelAnimationEntityData](/vext/ref/fb/modelanimationentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ModelAnimationEntityData {#constructor-2}
+> **ModelAnimationEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [ModelAnimationEntityData](/vext/ref/fb/modelanimationentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [ModelAnimationEntityData](/vext/ref/fb/modelanimationentitydata). |
+
+### ModelAnimationEntityData {#constructor-3}
+> **ModelAnimationEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [ModelAnimationEntityData](/vext/ref/fb/modelanimationentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [ModelAnimationEntityData](/vext/ref/fb/modelanimationentitydata). |
+
+### ModelAnimationEntityData {#constructor-4}
+> **ModelAnimationEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [ModelAnimationEntityData](/vext/ref/fb/modelanimationentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [ModelAnimationEntityData](/vext/ref/fb/modelanimationentitydata). |
+
+### ModelAnimationEntityData {#constructor-5}
+> **ModelAnimationEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ModelAnimationEntityData](/vext/ref/fb/modelanimationentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ModelAnimationEntityData](/vext/ref/fb/modelanimationentitydata). |
+
+## Properties
+### {{% prop-heading "animationEntitySpace" %}}
+> **[LinearTransform](/vext/ref/shared/class/lineartransform)**
+
+### {{% prop-heading "boneToPlace" %}}
+> **[GameplayBones](/vext/ref/fb/gameplaybones)**
+
+### {{% prop-heading "realm" %}}
+> **[Realm](/vext/ref/fb/realm)**
+
+### {{% prop-heading "modelAnimationTransformType" %}}
+> **[ModelAnimationTransformType](/vext/ref/fb/modelanimationtransformtype)**
+
+### {{% prop-heading "instanceSeed" %}}
+> **int**
+
+### {{% prop-heading "defaultAnimation" %}}
+> **string**
+
+### {{% prop-heading "animationIndex" %}}
+> **int**
+
+### {{% prop-heading "animationSet" %}}
+> **[AntAnimationSetAsset](/vext/ref/fb/antanimationsetasset)** | **nil**
+
+### {{% prop-heading "externalTime" %}}
+> **float**
+
+### {{% prop-heading "rootMeshBoneName" %}}
+> **string**
+
+### {{% prop-heading "jointWorldTransformUpdateOrder" %}}
+> **[ModelAnimationUpdateOrder](/vext/ref/fb/modelanimationupdateorder)**
+
+### {{% prop-heading "connectBoneName" %}}
+> **string**
+
+### {{% prop-heading "jointOutputPropertyIds" %}}
+> **int**[]
+
+### {{% prop-heading "trajectoryBoneName" %}}
+> **string**
+
+### {{% prop-heading "animationEntitySpaceActive" %}}
+> **bool**
+
+### {{% prop-heading "playFirstFrame" %}}
+> **bool**
+
+### {{% prop-heading "looping" %}}
+> **bool**
+
+### {{% prop-heading "enableJointWorldTransformOutput" %}}
+> **bool**
+
+### {{% prop-heading "resetAfterStop" %}}
+> **bool**
+
+### {{% prop-heading "autoStart" %}}
+> **bool**
+
+### {{% prop-heading "showDebugTransforms" %}}
+> **bool**
+
+### {{% prop-heading "applyRotationCompensation" %}}
+> **bool**
+
+### {{% prop-heading "applyPreTransformation" %}}
+> **bool**
+
+### {{% prop-heading "disableCulling" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ModelAnimationEntityData](/vext/ref/fb/modelanimationentitydata) type.
+

@@ -1,32 +1,57 @@
 ---
 title: MessageLineData
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MessageLineData](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "messageSid" >}} | string |
+| {{< prop "entryInputAction" >}} | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum) |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [MessageLineData](/vext/ref/fb/messagelinedata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MessageLineData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MessageLineData {#constructor-0}
+> **MessageLineData**()
 
-| Constructor                            | Description                                              |
-| -------------------------------------- | -------------------------------------------------------- |
-| MessageLineData()                      | Create a new instance of this structure type.            |
-| MessageLineData(MessageLineData other) | Create a reference copy of a structure of the same type. |
+Creates a new [MessageLineData](/vext/ref/fb/messagelinedata) frostbite structure.
 
 ## Properties
+### {{% prop-heading "messageSid" %}}
+> **string**
 
-| Name             | Type                                         | Description |
-| ---------------- | -------------------------------------------- | ----------- |
-| messageSid       | string                                       |             |
-| entryInputAction | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum/) |             |
+### {{% prop-heading "entryInputAction" %}}
+> **[EntryInputActionEnum](/vext/ref/fb/entryinputactionenum)**
 
 ## Methods
-
-| Type                               | Name            | Parameters |
-| ---------------------------------- | --------------- | ---------- |
-| [MessageLineData](/vext/ref/fb/messagelinedata/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [MessageLineData](/vext/ref/fb/messagelinedata)
 
-> [MessageLineData](/vext/ref/fb/messagelinedata/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[MessageLineData](/vext/ref/fb/messagelinedata)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MessageLineData](/vext/ref/fb/messagelinedata) type.
+

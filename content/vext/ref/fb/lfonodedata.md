@@ -1,48 +1,92 @@
 ---
 title: LfoNodeData
 ---
-### Base Classes
 
-[AudioGraphNodeData](/vext/ref/fb/audiographnodedata/)
+Inherits from 
+[AudioGraphNodeData](/vext/ref/fb/audiographnodedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[LfoNodeData](#constructor-0)**() |
+| **[LfoNodeData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[LfoNodeData](#constructor-2)**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata)) |
+| **[LfoNodeData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "hz" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "amplitude" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "out" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "min" >}} | float |
+| {{< prop "max" >}} | float |
+| {{< prop "startAtRandomValue" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "LfoNodeData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### LfoNodeData {#constructor-0}
+> **LfoNodeData**()
 
-| Constructor                                                            | Description                                                                                                   |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| LfoNodeData()                                                          | Create a new instance of this container type.                                                                 |
-| LfoNodeData(LfoNodeData other)                                         | Create a reference copy of an instance of the same type.                                                      |
-| LfoNodeData([AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) other)            | Upcast an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) to [LfoNodeData](/vext/ref/fb/lfonodedata/).            |
-| LfoNodeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LfoNodeData](/vext/ref/fb/lfonodedata/). |
+Creates a new [LfoNodeData](/vext/ref/fb/lfonodedata) frostbite instance.
 
-## Properties
+### LfoNodeData {#constructor-1}
+> **LfoNodeData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name               | Type                                     | Description |
-| ------------------ | ---------------------------------------- | ----------- |
-| hz                 | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| amplitude          | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| out                | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| min                | number                                   |             |
-| max                | number                                   |             |
-| startAtRandomValue | bool                                     |             |
-
-## Methods
-
-| Type                       | Name            | Parameters                                     |
-| -------------------------- | --------------- | ---------------------------------------------- |
-| [LfoNodeData](/vext/ref/fb/lfonodedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [LfoNodeData](/vext/ref/fb/lfonodedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [LfoNodeData](/vext/ref/fb/lfonodedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### LfoNodeData {#constructor-2}
+> **LfoNodeData**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata))
+
+Casts an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) to [LfoNodeData](/vext/ref/fb/lfonodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) | The instance to cast to [LfoNodeData](/vext/ref/fb/lfonodedata). |
+
+### LfoNodeData {#constructor-3}
+> **LfoNodeData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LfoNodeData](/vext/ref/fb/lfonodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [LfoNodeData](/vext/ref/fb/lfonodedata). |
+
+## Properties
+### {{% prop-heading "hz" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "amplitude" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "out" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "min" %}}
+> **float**
+
+### {{% prop-heading "max" %}}
+> **float**
+
+### {{% prop-heading "startAtRandomValue" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [LfoNodeData](/vext/ref/fb/lfonodedata) type.
+

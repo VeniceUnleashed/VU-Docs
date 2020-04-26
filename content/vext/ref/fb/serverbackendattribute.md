@@ -1,60 +1,57 @@
 ---
 title: ServerBackendAttribute
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ServerBackendAttribute_Level** | Value: **0** |
+| **ServerBackendAttribute_GameMode** | Value: **1** |
+| **ServerBackendAttribute_LevelLocation** | Value: **2** |
+| **ServerBackendAttribute_Mod** | Value: **3** |
+| **ServerBackendAttribute_Public** | Value: **4** |
+| **ServerBackendAttribute_Vip** | Value: **5** |
+| **ServerBackendAttribute_Preset** | Value: **6** |
+| **ServerBackendAttribute_Settings1** | Value: **7** |
+| **ServerBackendAttribute_Settings2** | Value: **8** |
+| **ServerBackendAttribute_MapSettings** | Value: **9** |
+| **ServerBackendAttribute_Maps1** | Value: **10** |
+| **ServerBackendAttribute_Maps2** | Value: **11** |
+| **ServerBackendAttribute_Description1** | Value: **12** |
+| **ServerBackendAttribute_Description2** | Value: **13** |
+| **ServerBackendAttribute_Admins1** | Value: **14** |
+| **ServerBackendAttribute_Admins2** | Value: **15** |
+| **ServerBackendAttribute_ReservedSlots1** | Value: **16** |
+| **ServerBackendAttribute_ReservedSlots2** | Value: **17** |
+| **ServerBackendAttribute_Message** | Value: **18** |
+| **ServerBackendAttribute_BannerUrl** | Value: **19** |
+| **ServerBackendAttribute_Mission** | Value: **20** |
+| **ServerBackendAttribute_Difficulty** | Value: **21** |
+| **ServerBackendAttribute_PingSite** | Value: **22** |
+| **ServerBackendAttribute_MapsInfo** | Value: **23** |
+| **ServerBackendAttribute_Owner** | Value: **24** |
+| **ServerBackendAttribute_MatchId** | Value: **25** |
+| **ServerBackendAttribute_RosterA1** | Value: **26** |
+| **ServerBackendAttribute_RosterA2** | Value: **27** |
+| **ServerBackendAttribute_RosterA3** | Value: **28** |
+| **ServerBackendAttribute_RosterA4** | Value: **29** |
+| **ServerBackendAttribute_RosterA5** | Value: **30** |
+| **ServerBackendAttribute_RosterA6** | Value: **31** |
+| **ServerBackendAttribute_RosterA7** | Value: **32** |
+| **ServerBackendAttribute_RosterA8** | Value: **33** |
+| **ServerBackendAttribute_RosterA9** | Value: **34** |
+| **ServerBackendAttribute_RosterB1** | Value: **35** |
+| **ServerBackendAttribute_RosterB2** | Value: **36** |
+| **ServerBackendAttribute_RosterB3** | Value: **37** |
+| **ServerBackendAttribute_RosterB4** | Value: **38** |
+| **ServerBackendAttribute_RosterB5** | Value: **39** |
+| **ServerBackendAttribute_RosterB6** | Value: **40** |
+| **ServerBackendAttribute_RosterB7** | Value: **41** |
+| **ServerBackendAttribute_RosterB8** | Value: **42** |
+| **ServerBackendAttribute_RosterB9** | Value: **43** |
+| **ServerBackendAttribute_Spectators** | Value: **44** |
+| **ServerBackendAttribute_ExpirationDate** | Value: **45** |
+| **ServerBackendAttribute_MatchState** | Value: **46** |
+| **ServerBackendAttribute_PremiumStatus** | Value: **47** |
+| **ServerBackendAttribute_Count** | Value: **48** |
 
-| Name                                   | Value | Description |
-| -------------------------------------- | ----- | ----------- |
-| ServerBackendAttribute\_Level          | 0     |             |
-| ServerBackendAttribute\_GameMode       | 1     |             |
-| ServerBackendAttribute\_LevelLocation  | 2     |             |
-| ServerBackendAttribute\_Mod            | 3     |             |
-| ServerBackendAttribute\_Public         | 4     |             |
-| ServerBackendAttribute\_Vip            | 5     |             |
-| ServerBackendAttribute\_Preset         | 6     |             |
-| ServerBackendAttribute\_Settings1      | 7     |             |
-| ServerBackendAttribute\_Settings2      | 8     |             |
-| ServerBackendAttribute\_MapSettings    | 9     |             |
-| ServerBackendAttribute\_Maps1          | 10    |             |
-| ServerBackendAttribute\_Maps2          | 11    |             |
-| ServerBackendAttribute\_Description1   | 12    |             |
-| ServerBackendAttribute\_Description2   | 13    |             |
-| ServerBackendAttribute\_Admins1        | 14    |             |
-| ServerBackendAttribute\_Admins2        | 15    |             |
-| ServerBackendAttribute\_ReservedSlots1 | 16    |             |
-| ServerBackendAttribute\_ReservedSlots2 | 17    |             |
-| ServerBackendAttribute\_Message        | 18    |             |
-| ServerBackendAttribute\_BannerUrl      | 19    |             |
-| ServerBackendAttribute\_Mission        | 20    |             |
-| ServerBackendAttribute\_Difficulty     | 21    |             |
-| ServerBackendAttribute\_PingSite       | 22    |             |
-| ServerBackendAttribute\_MapsInfo       | 23    |             |
-| ServerBackendAttribute\_Owner          | 24    |             |
-| ServerBackendAttribute\_MatchId        | 25    |             |
-| ServerBackendAttribute\_RosterA1       | 26    |             |
-| ServerBackendAttribute\_RosterA2       | 27    |             |
-| ServerBackendAttribute\_RosterA3       | 28    |             |
-| ServerBackendAttribute\_RosterA4       | 29    |             |
-| ServerBackendAttribute\_RosterA5       | 30    |             |
-| ServerBackendAttribute\_RosterA6       | 31    |             |
-| ServerBackendAttribute\_RosterA7       | 32    |             |
-| ServerBackendAttribute\_RosterA8       | 33    |             |
-| ServerBackendAttribute\_RosterA9       | 34    |             |
-| ServerBackendAttribute\_RosterB1       | 35    |             |
-| ServerBackendAttribute\_RosterB2       | 36    |             |
-| ServerBackendAttribute\_RosterB3       | 37    |             |
-| ServerBackendAttribute\_RosterB4       | 38    |             |
-| ServerBackendAttribute\_RosterB5       | 39    |             |
-| ServerBackendAttribute\_RosterB6       | 40    |             |
-| ServerBackendAttribute\_RosterB7       | 41    |             |
-| ServerBackendAttribute\_RosterB8       | 42    |             |
-| ServerBackendAttribute\_RosterB9       | 43    |             |
-| ServerBackendAttribute\_Spectators     | 44    |             |
-| ServerBackendAttribute\_ExpirationDate | 45    |             |
-| ServerBackendAttribute\_MatchState     | 46    |             |
-| ServerBackendAttribute\_PremiumStatus  | 47    |             |
-| ServerBackendAttribute\_Count          | 48    |             |

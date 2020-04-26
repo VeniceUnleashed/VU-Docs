@@ -1,53 +1,161 @@
 ---
 title: GrenadeEntityData
 ---
-### Base Classes
 
-[MeshProjectileEntityData](/vext/ref/fb/meshprojectileentitydata/)
+Inherits from 
+[MeshProjectileEntityData](/vext/ref/fb/meshprojectileentitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[GrenadeEntityData](#constructor-0)**() |
+| **[GrenadeEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[GrenadeEntityData](#constructor-2)**(other: [MeshProjectileEntityData](/vext/ref/fb/meshprojectileentitydata)) |
+| **[GrenadeEntityData](#constructor-3)**(other: [ProjectileEntityData](/vext/ref/fb/projectileentitydata)) |
+| **[GrenadeEntityData](#constructor-4)**(other: [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata)) |
+| **[GrenadeEntityData](#constructor-5)**(other: [GameEntityData](/vext/ref/fb/gameentitydata)) |
+| **[GrenadeEntityData](#constructor-6)**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata)) |
+| **[GrenadeEntityData](#constructor-7)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[GrenadeEntityData](#constructor-8)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[GrenadeEntityData](#constructor-9)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[GrenadeEntityData](#constructor-10)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "collisionSpeedMultiplier" >}} | float |
+| {{< prop "gravity" >}} | float |
+| {{< prop "grenadeType" >}} | [GrenadeType](/vext/ref/fb/grenadetype) |
+| {{< prop "minBounceSpeed" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "GrenadeEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### GrenadeEntityData {#constructor-0}
+> **GrenadeEntityData**()
 
-| Constructor                                                                   | Description                                                                                                                |
-| ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| GrenadeEntityData()                                                           | Create a new instance of this container type.                                                                              |
-| GrenadeEntityData(GrenadeEntityData other)                                    | Create a reference copy of an instance of the same type.                                                                   |
-| GrenadeEntityData([MeshProjectileEntityData](/vext/ref/fb/meshprojectileentitydata/) other) | Upcast an instance of type [MeshProjectileEntityData](/vext/ref/fb/meshprojectileentitydata/) to [GrenadeEntityData](/vext/ref/fb/grenadeentitydata/). |
-| GrenadeEntityData([ProjectileEntityData](/vext/ref/fb/projectileentitydata/) other)         | Upcast an instance of type [ProjectileEntityData](/vext/ref/fb/projectileentitydata/) to [GrenadeEntityData](/vext/ref/fb/grenadeentitydata/).         |
-| GrenadeEntityData([GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata/) other)       | Upcast an instance of type [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata/) to [GrenadeEntityData](/vext/ref/fb/grenadeentitydata/).       |
-| GrenadeEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                     | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [GrenadeEntityData](/vext/ref/fb/grenadeentitydata/).                     |
-| GrenadeEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)               | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [GrenadeEntityData](/vext/ref/fb/grenadeentitydata/).               |
-| GrenadeEntityData([EntityData](/vext/ref/fb/entitydata/) other)                             | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [GrenadeEntityData](/vext/ref/fb/grenadeentitydata/).                             |
-| GrenadeEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                     | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [GrenadeEntityData](/vext/ref/fb/grenadeentitydata/).                     |
-| GrenadeEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)               | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [GrenadeEntityData](/vext/ref/fb/grenadeentitydata/).               |
-| GrenadeEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other)  | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GrenadeEntityData](/vext/ref/fb/grenadeentitydata/).  |
+Creates a new [GrenadeEntityData](/vext/ref/fb/grenadeentitydata) frostbite instance.
 
-## Properties
+### GrenadeEntityData {#constructor-1}
+> **GrenadeEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                     | Type                       | Description |
-| ------------------------ | -------------------------- | ----------- |
-| collisionSpeedMultiplier | number                     |             |
-| gravity                  | number                     |             |
-| grenadeType              | [GrenadeType](/vext/ref/fb/grenadetype/) |             |
-| minBounceSpeed           | number                     |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [GrenadeEntityData](/vext/ref/fb/grenadeentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [GrenadeEntityData](/vext/ref/fb/grenadeentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [GrenadeEntityData](/vext/ref/fb/grenadeentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### GrenadeEntityData {#constructor-2}
+> **GrenadeEntityData**(other: [MeshProjectileEntityData](/vext/ref/fb/meshprojectileentitydata))
+
+Casts an instance of type [MeshProjectileEntityData](/vext/ref/fb/meshprojectileentitydata) to [GrenadeEntityData](/vext/ref/fb/grenadeentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [MeshProjectileEntityData](/vext/ref/fb/meshprojectileentitydata) | The instance to cast to [GrenadeEntityData](/vext/ref/fb/grenadeentitydata). |
+
+### GrenadeEntityData {#constructor-3}
+> **GrenadeEntityData**(other: [ProjectileEntityData](/vext/ref/fb/projectileentitydata))
+
+Casts an instance of type [ProjectileEntityData](/vext/ref/fb/projectileentitydata) to [GrenadeEntityData](/vext/ref/fb/grenadeentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ProjectileEntityData](/vext/ref/fb/projectileentitydata) | The instance to cast to [GrenadeEntityData](/vext/ref/fb/grenadeentitydata). |
+
+### GrenadeEntityData {#constructor-4}
+> **GrenadeEntityData**(other: [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata))
+
+Casts an instance of type [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata) to [GrenadeEntityData](/vext/ref/fb/grenadeentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GamePhysicsEntityData](/vext/ref/fb/gamephysicsentitydata) | The instance to cast to [GrenadeEntityData](/vext/ref/fb/grenadeentitydata). |
+
+### GrenadeEntityData {#constructor-5}
+> **GrenadeEntityData**(other: [GameEntityData](/vext/ref/fb/gameentitydata))
+
+Casts an instance of type [GameEntityData](/vext/ref/fb/gameentitydata) to [GrenadeEntityData](/vext/ref/fb/grenadeentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameEntityData](/vext/ref/fb/gameentitydata) | The instance to cast to [GrenadeEntityData](/vext/ref/fb/grenadeentitydata). |
+
+### GrenadeEntityData {#constructor-6}
+> **GrenadeEntityData**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata))
+
+Casts an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata) to [GrenadeEntityData](/vext/ref/fb/grenadeentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SpatialEntityData](/vext/ref/fb/spatialentitydata) | The instance to cast to [GrenadeEntityData](/vext/ref/fb/grenadeentitydata). |
+
+### GrenadeEntityData {#constructor-7}
+> **GrenadeEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [GrenadeEntityData](/vext/ref/fb/grenadeentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [GrenadeEntityData](/vext/ref/fb/grenadeentitydata). |
+
+### GrenadeEntityData {#constructor-8}
+> **GrenadeEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [GrenadeEntityData](/vext/ref/fb/grenadeentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [GrenadeEntityData](/vext/ref/fb/grenadeentitydata). |
+
+### GrenadeEntityData {#constructor-9}
+> **GrenadeEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [GrenadeEntityData](/vext/ref/fb/grenadeentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [GrenadeEntityData](/vext/ref/fb/grenadeentitydata). |
+
+### GrenadeEntityData {#constructor-10}
+> **GrenadeEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GrenadeEntityData](/vext/ref/fb/grenadeentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [GrenadeEntityData](/vext/ref/fb/grenadeentitydata). |
+
+## Properties
+### {{% prop-heading "collisionSpeedMultiplier" %}}
+> **float**
+
+### {{% prop-heading "gravity" %}}
+> **float**
+
+### {{% prop-heading "grenadeType" %}}
+> **[GrenadeType](/vext/ref/fb/grenadetype)**
+
+### {{% prop-heading "minBounceSpeed" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [GrenadeEntityData](/vext/ref/fb/grenadeentitydata) type.
+

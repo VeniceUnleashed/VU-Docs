@@ -1,43 +1,72 @@
 ---
 title: SoldierWeaponCustomizationAsset
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SoldierWeaponCustomizationAsset](#constructor-0)**() |
+| **[SoldierWeaponCustomizationAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SoldierWeaponCustomizationAsset](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[SoldierWeaponCustomizationAsset](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "customization" >}} | [CustomizationTable](/vext/ref/fb/customizationtable) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SoldierWeaponCustomizationAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SoldierWeaponCustomizationAsset {#constructor-0}
+> **SoldierWeaponCustomizationAsset**()
 
-| Constructor                                                                                | Description                                                                                                                                           |
-| ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| SoldierWeaponCustomizationAsset()                                                          | Create a new instance of this container type.                                                                                                         |
-| SoldierWeaponCustomizationAsset(SoldierWeaponCustomizationAsset other)                     | Create a reference copy of an instance of the same type.                                                                                              |
-| SoldierWeaponCustomizationAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [SoldierWeaponCustomizationAsset](/vext/ref/fb/soldierweaponcustomizationasset/).                                      |
-| SoldierWeaponCustomizationAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoldierWeaponCustomizationAsset](/vext/ref/fb/soldierweaponcustomizationasset/). |
+Creates a new [SoldierWeaponCustomizationAsset](/vext/ref/fb/soldierweaponcustomizationasset) frostbite instance.
 
-## Properties
+### SoldierWeaponCustomizationAsset {#constructor-1}
+> **SoldierWeaponCustomizationAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name          | Type                                     | Description |
-| ------------- | ---------------------------------------- | ----------- |
-| customization | [CustomizationTable](/vext/ref/fb/customizationtable/) |             |
-
-## Methods
-
-| Type                                                               | Name            | Parameters                                     |
-| ------------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [SoldierWeaponCustomizationAsset](/vext/ref/fb/soldierweaponcustomizationasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SoldierWeaponCustomizationAsset](/vext/ref/fb/soldierweaponcustomizationasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SoldierWeaponCustomizationAsset](/vext/ref/fb/soldierweaponcustomizationasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SoldierWeaponCustomizationAsset {#constructor-2}
+> **SoldierWeaponCustomizationAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [SoldierWeaponCustomizationAsset](/vext/ref/fb/soldierweaponcustomizationasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [SoldierWeaponCustomizationAsset](/vext/ref/fb/soldierweaponcustomizationasset). |
+
+### SoldierWeaponCustomizationAsset {#constructor-3}
+> **SoldierWeaponCustomizationAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoldierWeaponCustomizationAsset](/vext/ref/fb/soldierweaponcustomizationasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SoldierWeaponCustomizationAsset](/vext/ref/fb/soldierweaponcustomizationasset). |
+
+## Properties
+### {{% prop-heading "customization" %}}
+> **[CustomizationTable](/vext/ref/fb/customizationtable)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SoldierWeaponCustomizationAsset](/vext/ref/fb/soldierweaponcustomizationasset) type.
+

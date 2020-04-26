@@ -1,17 +1,14 @@
 ---
 title: UIConsoleKeyboardStatus
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **UIConsoleKeyboardStatus_Success** | Value: **0** |
+| **UIConsoleKeyboardStatus_Failed** | Value: **1** |
+| **UIConsoleKeyboardStatus_Cancelled** | Value: **2** |
+| **UIConsoleKeyboardStatus_Active** | Value: **3** |
+| **UIConsoleKeyboardStatus_Inactive** | Value: **4** |
+| **UIConsoleKeyboardStatus_Count** | Value: **5** |
 
-| Name                               | Value | Description |
-| ---------------------------------- | ----- | ----------- |
-| UIConsoleKeyboardStatus\_Success   | 0     |             |
-| UIConsoleKeyboardStatus\_Failed    | 1     |             |
-| UIConsoleKeyboardStatus\_Cancelled | 2     |             |
-| UIConsoleKeyboardStatus\_Active    | 3     |             |
-| UIConsoleKeyboardStatus\_Inactive  | 4     |             |
-| UIConsoleKeyboardStatus\_Count     | 5     |             |

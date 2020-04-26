@@ -1,19 +1,16 @@
 ---
 title: ConditionType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ConditionType_And** | Value: **0** |
+| **ConditionType_Or** | Value: **1** |
+| **ConditionType_XOr** | Value: **2** |
+| **ConditionType_Equal** | Value: **3** |
+| **ConditionType_Less** | Value: **4** |
+| **ConditionType_Greater** | Value: **5** |
+| **ConditionType_LessOrEqual** | Value: **6** |
+| **ConditionType_GreaterOrEqual** | Value: **7** |
 
-| Name                          | Value | Description |
-| ----------------------------- | ----- | ----------- |
-| ConditionType\_And            | 0     |             |
-| ConditionType\_Or             | 1     |             |
-| ConditionType\_XOr            | 2     |             |
-| ConditionType\_Equal          | 3     |             |
-| ConditionType\_Less           | 4     |             |
-| ConditionType\_Greater        | 5     |             |
-| ConditionType\_LessOrEqual    | 6     |             |
-| ConditionType\_GreaterOrEqual | 7     |             |

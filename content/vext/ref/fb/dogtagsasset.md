@@ -1,45 +1,80 @@
 ---
 title: DogTagsAsset
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[DogTagsAsset](#constructor-0)**() |
+| **[DogTagsAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[DogTagsAsset](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[DogTagsAsset](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "meleeKillWeapon" >}} | [StatsCategoryWeaponData](/vext/ref/fb/statscategoryweapondata) \| nil |
+| {{< prop "basicDogTags" >}} | [BasicDogTagData](/vext/ref/fb/basicdogtagdata)[] |
+| {{< prop "advancedDogTags" >}} | [AdvancedDogTagData](/vext/ref/fb/advanceddogtagdata)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "DogTagsAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### DogTagsAsset {#constructor-0}
+> **DogTagsAsset**()
 
-| Constructor                                                             | Description                                                                                                     |
-| ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| DogTagsAsset()                                                          | Create a new instance of this container type.                                                                   |
-| DogTagsAsset(DogTagsAsset other)                                        | Create a reference copy of an instance of the same type.                                                        |
-| DogTagsAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [DogTagsAsset](/vext/ref/fb/dogtagsasset/).                                      |
-| DogTagsAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DogTagsAsset](/vext/ref/fb/dogtagsasset/). |
+Creates a new [DogTagsAsset](/vext/ref/fb/dogtagsasset) frostbite instance.
 
-## Properties
+### DogTagsAsset {#constructor-1}
+> **DogTagsAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name            | Type                                               | Description |
-| --------------- | -------------------------------------------------- | ----------- |
-| meleeKillWeapon | [StatsCategoryWeaponData](/vext/ref/fb/statscategoryweapondata/) |             |
-| basicDogTags    | [BasicDogTagData](/vext/ref/fb/basicdogtagdata/)\[\]             |             |
-| advancedDogTags | [AdvancedDogTagData](/vext/ref/fb/advanceddogtagdata/)\[\]       |             |
-
-## Methods
-
-| Type                         | Name            | Parameters                                     |
-| ---------------------------- | --------------- | ---------------------------------------------- |
-| [DogTagsAsset](/vext/ref/fb/dogtagsasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [DogTagsAsset](/vext/ref/fb/dogtagsasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [DogTagsAsset](/vext/ref/fb/dogtagsasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### DogTagsAsset {#constructor-2}
+> **DogTagsAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [DogTagsAsset](/vext/ref/fb/dogtagsasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [DogTagsAsset](/vext/ref/fb/dogtagsasset). |
+
+### DogTagsAsset {#constructor-3}
+> **DogTagsAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DogTagsAsset](/vext/ref/fb/dogtagsasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DogTagsAsset](/vext/ref/fb/dogtagsasset). |
+
+## Properties
+### {{% prop-heading "meleeKillWeapon" %}}
+> **[StatsCategoryWeaponData](/vext/ref/fb/statscategoryweapondata)** | **nil**
+
+### {{% prop-heading "basicDogTags" %}}
+> **[BasicDogTagData](/vext/ref/fb/basicdogtagdata)**[]
+
+### {{% prop-heading "advancedDogTags" %}}
+> **[AdvancedDogTagData](/vext/ref/fb/advanceddogtagdata)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [DogTagsAsset](/vext/ref/fb/dogtagsasset) type.
+

@@ -1,46 +1,98 @@
 ---
 title: TelemetryTriggerEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[TelemetryTriggerEntityData](#constructor-0)**() |
+| **[TelemetryTriggerEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[TelemetryTriggerEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[TelemetryTriggerEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[TelemetryTriggerEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[TelemetryTriggerEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
+| {{< prop "value" >}} | string |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "TelemetryTriggerEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### TelemetryTriggerEntityData {#constructor-0}
+> **TelemetryTriggerEntityData**()
 
-| Constructor                                                                           | Description                                                                                                                                 |
-| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| TelemetryTriggerEntityData()                                                          | Create a new instance of this container type.                                                                                               |
-| TelemetryTriggerEntityData(TelemetryTriggerEntityData other)                          | Create a reference copy of an instance of the same type.                                                                                    |
-| TelemetryTriggerEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [TelemetryTriggerEntityData](/vext/ref/fb/telemetrytriggerentitydata/).                            |
-| TelemetryTriggerEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [TelemetryTriggerEntityData](/vext/ref/fb/telemetrytriggerentitydata/).                    |
-| TelemetryTriggerEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [TelemetryTriggerEntityData](/vext/ref/fb/telemetrytriggerentitydata/).              |
-| TelemetryTriggerEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TelemetryTriggerEntityData](/vext/ref/fb/telemetrytriggerentitydata/). |
+Creates a new [TelemetryTriggerEntityData](/vext/ref/fb/telemetrytriggerentitydata) frostbite instance.
 
-## Properties
+### TelemetryTriggerEntityData {#constructor-1}
+> **TelemetryTriggerEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name  | Type           | Description |
-| ----- | -------------- | ----------- |
-| realm | [Realm](/vext/ref/fb/realm/) |             |
-| value | string         |             |
-
-## Methods
-
-| Type                                                     | Name            | Parameters                                     |
-| -------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [TelemetryTriggerEntityData](/vext/ref/fb/telemetrytriggerentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [TelemetryTriggerEntityData](/vext/ref/fb/telemetrytriggerentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [TelemetryTriggerEntityData](/vext/ref/fb/telemetrytriggerentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### TelemetryTriggerEntityData {#constructor-2}
+> **TelemetryTriggerEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [TelemetryTriggerEntityData](/vext/ref/fb/telemetrytriggerentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [TelemetryTriggerEntityData](/vext/ref/fb/telemetrytriggerentitydata). |
+
+### TelemetryTriggerEntityData {#constructor-3}
+> **TelemetryTriggerEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [TelemetryTriggerEntityData](/vext/ref/fb/telemetrytriggerentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [TelemetryTriggerEntityData](/vext/ref/fb/telemetrytriggerentitydata). |
+
+### TelemetryTriggerEntityData {#constructor-4}
+> **TelemetryTriggerEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [TelemetryTriggerEntityData](/vext/ref/fb/telemetrytriggerentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [TelemetryTriggerEntityData](/vext/ref/fb/telemetrytriggerentitydata). |
+
+### TelemetryTriggerEntityData {#constructor-5}
+> **TelemetryTriggerEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TelemetryTriggerEntityData](/vext/ref/fb/telemetrytriggerentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [TelemetryTriggerEntityData](/vext/ref/fb/telemetrytriggerentitydata). |
+
+## Properties
+### {{% prop-heading "realm" %}}
+> **[Realm](/vext/ref/fb/realm)**
+
+### {{% prop-heading "value" %}}
+> **string**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [TelemetryTriggerEntityData](/vext/ref/fb/telemetrytriggerentitydata) type.
+

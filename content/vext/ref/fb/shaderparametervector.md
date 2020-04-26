@@ -1,32 +1,57 @@
 ---
 title: ShaderParameterVector
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ShaderParameterVector](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "value" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "parameterName" >}} | string |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [ShaderParameterVector](/vext/ref/fb/shaderparametervector) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ShaderParameterVector" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ShaderParameterVector {#constructor-0}
+> **ShaderParameterVector**()
 
-| Constructor                                        | Description                                              |
-| -------------------------------------------------- | -------------------------------------------------------- |
-| ShaderParameterVector()                            | Create a new instance of this structure type.            |
-| ShaderParameterVector(ShaderParameterVector other) | Create a reference copy of a structure of the same type. |
+Creates a new [ShaderParameterVector](/vext/ref/fb/shaderparametervector) frostbite structure.
 
 ## Properties
+### {{% prop-heading "value" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
 
-| Name          | Type                              | Description |
-| ------------- | --------------------------------- | ----------- |
-| value         | [Vec4](/vext/ref/shared/class/vec4) |             |
-| parameterName | string                            |             |
+### {{% prop-heading "parameterName" %}}
+> **string**
 
 ## Methods
-
-| Type                                           | Name            | Parameters |
-| ---------------------------------------------- | --------------- | ---------- |
-| [ShaderParameterVector](/vext/ref/fb/shaderparametervector/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [ShaderParameterVector](/vext/ref/fb/shaderparametervector)
 
-> [ShaderParameterVector](/vext/ref/fb/shaderparametervector/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[ShaderParameterVector](/vext/ref/fb/shaderparametervector)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ShaderParameterVector](/vext/ref/fb/shaderparametervector) type.
+

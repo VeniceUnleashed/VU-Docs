@@ -1,84 +1,229 @@
 ---
 title: SunFlareEffectState
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SunFlareEffectState](#constructor-0)**() |
+| **[SunFlareEffectState](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SunFlareEffectState](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "element5AlphaScreenPosCurve" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "element5AlphaOccluderCurve" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "element2SizeScreenPosCurve" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "element5SizeScreenPosCurve" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "element2AlphaOccluderCurve" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "element2AlphaScreenPosCurve" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "element1Size" >}} | [Vec2](/vext/ref/shared/class/vec2) |
+| {{< prop "element1SizeOccluderCurve" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "element1SizeScreenPosCurve" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "element1AlphaOccluderCurve" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "element1AlphaScreenPosCurve" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "element5SizeOccluderCurve" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "element4SizeScreenPosCurve" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "element3Size" >}} | [Vec2](/vext/ref/shared/class/vec2) |
+| {{< prop "element2Size" >}} | [Vec2](/vext/ref/shared/class/vec2) |
+| {{< prop "element2SizeOccluderCurve" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "element4AlphaScreenPosCurve" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "element3SizeOccluderCurve" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "element4Size" >}} | [Vec2](/vext/ref/shared/class/vec2) |
+| {{< prop "element5Size" >}} | [Vec2](/vext/ref/shared/class/vec2) |
+| {{< prop "element3SizeScreenPosCurve" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "element3AlphaOccluderCurve" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "element4SizeOccluderCurve" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "element3AlphaScreenPosCurve" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "element4AlphaOccluderCurve" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "element3Shader" >}} | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset) \| nil |
+| {{< prop "element2Shader" >}} | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset) \| nil |
+| {{< prop "occluderSize" >}} | float |
+| {{< prop "element4Shader" >}} | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset) \| nil |
+| {{< prop "element4RayDistance" >}} | float |
+| {{< prop "element1Shader" >}} | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset) \| nil |
+| {{< prop "element2RayDistance" >}} | float |
+| {{< prop "element1RayDistance" >}} | float |
+| {{< prop "element5RayDistance" >}} | float |
+| {{< prop "element3RayDistance" >}} | float |
+| {{< prop "element5Shader" >}} | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset) \| nil |
+| {{< prop "element5Enable" >}} | bool |
+| {{< prop "element4Enable" >}} | bool |
+| {{< prop "element3Enable" >}} | bool |
+| {{< prop "element2Enable" >}} | bool |
+| {{< prop "element1Enable" >}} | bool |
+| {{< prop "debugDrawOccluder" >}} | bool |
+| {{< prop "enable" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SunFlareEffectState" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SunFlareEffectState {#constructor-0}
+> **SunFlareEffectState**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| SunFlareEffectState()                                                          | Create a new instance of this container type.                                                                                 |
-| SunFlareEffectState(SunFlareEffectState other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| SunFlareEffectState([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SunFlareEffectState](/vext/ref/fb/sunflareeffectstate/). |
+Creates a new [SunFlareEffectState](/vext/ref/fb/sunflareeffectstate) frostbite instance.
 
-## Properties
+### SunFlareEffectState {#constructor-1}
+> **SunFlareEffectState**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                        | Type                                             | Description |
-| --------------------------- | ------------------------------------------------ | ----------- |
-| element5AlphaScreenPosCurve | [Vec4](/vext/ref/shared/class/vec4)                |             |
-| element5AlphaOccluderCurve  | [Vec4](/vext/ref/shared/class/vec4)                |             |
-| element2SizeScreenPosCurve  | [Vec4](/vext/ref/shared/class/vec4)                |             |
-| element5SizeScreenPosCurve  | [Vec4](/vext/ref/shared/class/vec4)                |             |
-| element2AlphaOccluderCurve  | [Vec4](/vext/ref/shared/class/vec4)                |             |
-| element2AlphaScreenPosCurve | [Vec4](/vext/ref/shared/class/vec4)                |             |
-| element1Size                | [Vec2](/vext/ref/shared/class/vec2)                |             |
-| element1SizeOccluderCurve   | [Vec4](/vext/ref/shared/class/vec4)                |             |
-| element1SizeScreenPosCurve  | [Vec4](/vext/ref/shared/class/vec4)                |             |
-| element1AlphaOccluderCurve  | [Vec4](/vext/ref/shared/class/vec4)                |             |
-| element1AlphaScreenPosCurve | [Vec4](/vext/ref/shared/class/vec4)                |             |
-| element5SizeOccluderCurve   | [Vec4](/vext/ref/shared/class/vec4)                |             |
-| element4SizeScreenPosCurve  | [Vec4](/vext/ref/shared/class/vec4)                |             |
-| element3Size                | [Vec2](/vext/ref/shared/class/vec2)                |             |
-| element2Size                | [Vec2](/vext/ref/shared/class/vec2)                |             |
-| element2SizeOccluderCurve   | [Vec4](/vext/ref/shared/class/vec4)                |             |
-| element4AlphaScreenPosCurve | [Vec4](/vext/ref/shared/class/vec4)                |             |
-| element3SizeOccluderCurve   | [Vec4](/vext/ref/shared/class/vec4)                |             |
-| element4Size                | [Vec2](/vext/ref/shared/class/vec2)                |             |
-| element5Size                | [Vec2](/vext/ref/shared/class/vec2)                |             |
-| element3SizeScreenPosCurve  | [Vec4](/vext/ref/shared/class/vec4)                |             |
-| element3AlphaOccluderCurve  | [Vec4](/vext/ref/shared/class/vec4)                |             |
-| element4SizeOccluderCurve   | [Vec4](/vext/ref/shared/class/vec4)                |             |
-| element3AlphaScreenPosCurve | [Vec4](/vext/ref/shared/class/vec4)                |             |
-| element4AlphaOccluderCurve  | [Vec4](/vext/ref/shared/class/vec4)                |             |
-| element3Shader              | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset/) |             |
-| element2Shader              | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset/) |             |
-| occluderSize                | number                                           |             |
-| element4Shader              | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset/) |             |
-| element4RayDistance         | number                                           |             |
-| element1Shader              | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset/) |             |
-| element2RayDistance         | number                                           |             |
-| element1RayDistance         | number                                           |             |
-| element5RayDistance         | number                                           |             |
-| element3RayDistance         | number                                           |             |
-| element5Shader              | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset/) |             |
-| element5Enable              | bool                                             |             |
-| element4Enable              | bool                                             |             |
-| element3Enable              | bool                                             |             |
-| element2Enable              | bool                                             |             |
-| element1Enable              | bool                                             |             |
-| debugDrawOccluder           | bool                                             |             |
-| enable                      | bool                                             |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [SunFlareEffectState](/vext/ref/fb/sunflareeffectstate/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SunFlareEffectState](/vext/ref/fb/sunflareeffectstate/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SunFlareEffectState](/vext/ref/fb/sunflareeffectstate) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SunFlareEffectState {#constructor-2}
+> **SunFlareEffectState**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SunFlareEffectState](/vext/ref/fb/sunflareeffectstate). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SunFlareEffectState](/vext/ref/fb/sunflareeffectstate). |
+
+## Properties
+### {{% prop-heading "element5AlphaScreenPosCurve" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "element5AlphaOccluderCurve" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "element2SizeScreenPosCurve" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "element5SizeScreenPosCurve" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "element2AlphaOccluderCurve" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "element2AlphaScreenPosCurve" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "element1Size" %}}
+> **[Vec2](/vext/ref/shared/class/vec2)**
+
+### {{% prop-heading "element1SizeOccluderCurve" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "element1SizeScreenPosCurve" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "element1AlphaOccluderCurve" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "element1AlphaScreenPosCurve" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "element5SizeOccluderCurve" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "element4SizeScreenPosCurve" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "element3Size" %}}
+> **[Vec2](/vext/ref/shared/class/vec2)**
+
+### {{% prop-heading "element2Size" %}}
+> **[Vec2](/vext/ref/shared/class/vec2)**
+
+### {{% prop-heading "element2SizeOccluderCurve" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "element4AlphaScreenPosCurve" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "element3SizeOccluderCurve" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "element4Size" %}}
+> **[Vec2](/vext/ref/shared/class/vec2)**
+
+### {{% prop-heading "element5Size" %}}
+> **[Vec2](/vext/ref/shared/class/vec2)**
+
+### {{% prop-heading "element3SizeScreenPosCurve" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "element3AlphaOccluderCurve" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "element4SizeOccluderCurve" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "element3AlphaScreenPosCurve" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "element4AlphaOccluderCurve" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "element3Shader" %}}
+> **[SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset)** | **nil**
+
+### {{% prop-heading "element2Shader" %}}
+> **[SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset)** | **nil**
+
+### {{% prop-heading "occluderSize" %}}
+> **float**
+
+### {{% prop-heading "element4Shader" %}}
+> **[SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset)** | **nil**
+
+### {{% prop-heading "element4RayDistance" %}}
+> **float**
+
+### {{% prop-heading "element1Shader" %}}
+> **[SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset)** | **nil**
+
+### {{% prop-heading "element2RayDistance" %}}
+> **float**
+
+### {{% prop-heading "element1RayDistance" %}}
+> **float**
+
+### {{% prop-heading "element5RayDistance" %}}
+> **float**
+
+### {{% prop-heading "element3RayDistance" %}}
+> **float**
+
+### {{% prop-heading "element5Shader" %}}
+> **[SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset)** | **nil**
+
+### {{% prop-heading "element5Enable" %}}
+> **bool**
+
+### {{% prop-heading "element4Enable" %}}
+> **bool**
+
+### {{% prop-heading "element3Enable" %}}
+> **bool**
+
+### {{% prop-heading "element2Enable" %}}
+> **bool**
+
+### {{% prop-heading "element1Enable" %}}
+> **bool**
+
+### {{% prop-heading "debugDrawOccluder" %}}
+> **bool**
+
+### {{% prop-heading "enable" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SunFlareEffectState](/vext/ref/fb/sunflareeffectstate) type.
+

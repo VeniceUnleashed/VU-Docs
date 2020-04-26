@@ -1,47 +1,116 @@
 ---
 title: StateEventGateEntityData
 ---
-### Base Classes
 
-[GameEntityData](/vext/ref/fb/gameentitydata/)
+Inherits from 
+[GameEntityData](/vext/ref/fb/gameentitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[StateEventGateEntityData](#constructor-0)**() |
+| **[StateEventGateEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[StateEventGateEntityData](#constructor-2)**(other: [GameEntityData](/vext/ref/fb/gameentitydata)) |
+| **[StateEventGateEntityData](#constructor-3)**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata)) |
+| **[StateEventGateEntityData](#constructor-4)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[StateEventGateEntityData](#constructor-5)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[StateEventGateEntityData](#constructor-6)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[StateEventGateEntityData](#constructor-7)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "checkedState" >}} | [EventGateState](/vext/ref/fb/eventgatestate) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "StateEventGateEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### StateEventGateEntityData {#constructor-0}
+> **StateEventGateEntityData**()
 
-| Constructor                                                                         | Description                                                                                                                             |
-| ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| StateEventGateEntityData()                                                          | Create a new instance of this container type.                                                                                           |
-| StateEventGateEntityData(StateEventGateEntityData other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| StateEventGateEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [StateEventGateEntityData](/vext/ref/fb/stateeventgateentitydata/).                    |
-| StateEventGateEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [StateEventGateEntityData](/vext/ref/fb/stateeventgateentitydata/).              |
-| StateEventGateEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [StateEventGateEntityData](/vext/ref/fb/stateeventgateentitydata/).                            |
-| StateEventGateEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [StateEventGateEntityData](/vext/ref/fb/stateeventgateentitydata/).                    |
-| StateEventGateEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [StateEventGateEntityData](/vext/ref/fb/stateeventgateentitydata/).              |
-| StateEventGateEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StateEventGateEntityData](/vext/ref/fb/stateeventgateentitydata/). |
+Creates a new [StateEventGateEntityData](/vext/ref/fb/stateeventgateentitydata) frostbite instance.
 
-## Properties
+### StateEventGateEntityData {#constructor-1}
+> **StateEventGateEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name         | Type                             | Description |
-| ------------ | -------------------------------- | ----------- |
-| checkedState | [EventGateState](/vext/ref/fb/eventgatestate/) |             |
-
-## Methods
-
-| Type                                                 | Name            | Parameters                                     |
-| ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [StateEventGateEntityData](/vext/ref/fb/stateeventgateentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [StateEventGateEntityData](/vext/ref/fb/stateeventgateentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [StateEventGateEntityData](/vext/ref/fb/stateeventgateentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### StateEventGateEntityData {#constructor-2}
+> **StateEventGateEntityData**(other: [GameEntityData](/vext/ref/fb/gameentitydata))
+
+Casts an instance of type [GameEntityData](/vext/ref/fb/gameentitydata) to [StateEventGateEntityData](/vext/ref/fb/stateeventgateentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameEntityData](/vext/ref/fb/gameentitydata) | The instance to cast to [StateEventGateEntityData](/vext/ref/fb/stateeventgateentitydata). |
+
+### StateEventGateEntityData {#constructor-3}
+> **StateEventGateEntityData**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata))
+
+Casts an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata) to [StateEventGateEntityData](/vext/ref/fb/stateeventgateentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SpatialEntityData](/vext/ref/fb/spatialentitydata) | The instance to cast to [StateEventGateEntityData](/vext/ref/fb/stateeventgateentitydata). |
+
+### StateEventGateEntityData {#constructor-4}
+> **StateEventGateEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [StateEventGateEntityData](/vext/ref/fb/stateeventgateentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [StateEventGateEntityData](/vext/ref/fb/stateeventgateentitydata). |
+
+### StateEventGateEntityData {#constructor-5}
+> **StateEventGateEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [StateEventGateEntityData](/vext/ref/fb/stateeventgateentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [StateEventGateEntityData](/vext/ref/fb/stateeventgateentitydata). |
+
+### StateEventGateEntityData {#constructor-6}
+> **StateEventGateEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [StateEventGateEntityData](/vext/ref/fb/stateeventgateentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [StateEventGateEntityData](/vext/ref/fb/stateeventgateentitydata). |
+
+### StateEventGateEntityData {#constructor-7}
+> **StateEventGateEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StateEventGateEntityData](/vext/ref/fb/stateeventgateentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [StateEventGateEntityData](/vext/ref/fb/stateeventgateentitydata). |
+
+## Properties
+### {{% prop-heading "checkedState" %}}
+> **[EventGateState](/vext/ref/fb/eventgatestate)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [StateEventGateEntityData](/vext/ref/fb/stateeventgateentitydata) type.
+

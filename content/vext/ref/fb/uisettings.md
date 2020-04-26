@@ -1,49 +1,96 @@
 ---
 title: UISettings
 ---
-### Base Classes
 
-[SystemSettings](/vext/ref/fb/systemsettings/)
+Inherits from 
+[SystemSettings](/vext/ref/fb/systemsettings)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UISettings](#constructor-0)**() |
+| **[UISettings](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UISettings](#constructor-2)**(other: [SystemSettings](/vext/ref/fb/systemsettings)) |
+| **[UISettings](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "system" >}} | [UISystemType](/vext/ref/fb/uisystemtype) |
+| {{< prop "bundles" >}} | [UIBundlesAsset](/vext/ref/fb/uibundlesasset) \| nil |
+| {{< prop "profileOptions" >}} | [ProfileOptionsAsset](/vext/ref/fb/profileoptionsasset) \| nil |
+| {{< prop "language" >}} | [LanguageFormat](/vext/ref/fb/languageformat) |
+| {{< prop "dataCop" >}} | [DataCopSettings](/vext/ref/fb/datacopsettings) |
+| {{< prop "oneBundlePerGraph" >}} | bool |
+| {{< prop "drawEnable" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UISettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UISettings {#constructor-0}
+> **UISettings**()
 
-| Constructor                                                           | Description                                                                                                 |
-| --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| UISettings()                                                          | Create a new instance of this container type.                                                               |
-| UISettings(UISettings other)                                          | Create a reference copy of an instance of the same type.                                                    |
-| UISettings([SystemSettings](/vext/ref/fb/systemsettings/) other)                    | Upcast an instance of type [SystemSettings](/vext/ref/fb/systemsettings/) to [UISettings](/vext/ref/fb/uisettings/).                    |
-| UISettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UISettings](/vext/ref/fb/uisettings/). |
+Creates a new [UISettings](/vext/ref/fb/uisettings) frostbite instance.
 
-## Properties
+### UISettings {#constructor-1}
+> **UISettings**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name              | Type                                       | Description |
-| ----------------- | ------------------------------------------ | ----------- |
-| system            | [UISystemType](/vext/ref/fb/uisystemtype/)               |             |
-| bundles           | [UIBundlesAsset](/vext/ref/fb/uibundlesasset/)           |             |
-| profileOptions    | [ProfileOptionsAsset](/vext/ref/fb/profileoptionsasset/) |             |
-| language          | [LanguageFormat](/vext/ref/fb/languageformat/)           |             |
-| dataCop           | [DataCopSettings](/vext/ref/fb/datacopsettings/)         |             |
-| oneBundlePerGraph | bool                                       |             |
-| drawEnable        | bool                                       |             |
-
-## Methods
-
-| Type                     | Name            | Parameters                                     |
-| ------------------------ | --------------- | ---------------------------------------------- |
-| [UISettings](/vext/ref/fb/uisettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UISettings](/vext/ref/fb/uisettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UISettings](/vext/ref/fb/uisettings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UISettings {#constructor-2}
+> **UISettings**(other: [SystemSettings](/vext/ref/fb/systemsettings))
+
+Casts an instance of type [SystemSettings](/vext/ref/fb/systemsettings) to [UISettings](/vext/ref/fb/uisettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SystemSettings](/vext/ref/fb/systemsettings) | The instance to cast to [UISettings](/vext/ref/fb/uisettings). |
+
+### UISettings {#constructor-3}
+> **UISettings**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UISettings](/vext/ref/fb/uisettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UISettings](/vext/ref/fb/uisettings). |
+
+## Properties
+### {{% prop-heading "system" %}}
+> **[UISystemType](/vext/ref/fb/uisystemtype)**
+
+### {{% prop-heading "bundles" %}}
+> **[UIBundlesAsset](/vext/ref/fb/uibundlesasset)** | **nil**
+
+### {{% prop-heading "profileOptions" %}}
+> **[ProfileOptionsAsset](/vext/ref/fb/profileoptionsasset)** | **nil**
+
+### {{% prop-heading "language" %}}
+> **[LanguageFormat](/vext/ref/fb/languageformat)**
+
+### {{% prop-heading "dataCop" %}}
+> **[DataCopSettings](/vext/ref/fb/datacopsettings)**
+
+### {{% prop-heading "oneBundlePerGraph" %}}
+> **bool**
+
+### {{% prop-heading "drawEnable" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UISettings](/vext/ref/fb/uisettings) type.
+

@@ -1,47 +1,88 @@
 ---
 title: MultiCrossfaderNodeData
 ---
-### Base Classes
 
-[AudioGraphNodeData](/vext/ref/fb/audiographnodedata/)
+Inherits from 
+[AudioGraphNodeData](/vext/ref/fb/audiographnodedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MultiCrossfaderNodeData](#constructor-0)**() |
+| **[MultiCrossfaderNodeData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MultiCrossfaderNodeData](#constructor-2)**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata)) |
+| **[MultiCrossfaderNodeData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "crossfaderGroups" >}} | [MultiCrossfaderGroup](/vext/ref/fb/multicrossfadergroup)[] |
+| {{< prop "start" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "stop" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "control" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "lockControlValue" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MultiCrossfaderNodeData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MultiCrossfaderNodeData {#constructor-0}
+> **MultiCrossfaderNodeData**()
 
-| Constructor                                                                        | Description                                                                                                                           |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| MultiCrossfaderNodeData()                                                          | Create a new instance of this container type.                                                                                         |
-| MultiCrossfaderNodeData(MultiCrossfaderNodeData other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| MultiCrossfaderNodeData([AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) other)            | Upcast an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) to [MultiCrossfaderNodeData](/vext/ref/fb/multicrossfadernodedata/).            |
-| MultiCrossfaderNodeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MultiCrossfaderNodeData](/vext/ref/fb/multicrossfadernodedata/). |
+Creates a new [MultiCrossfaderNodeData](/vext/ref/fb/multicrossfadernodedata) frostbite instance.
 
-## Properties
+### MultiCrossfaderNodeData {#constructor-1}
+> **MultiCrossfaderNodeData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name             | Type                                             | Description |
-| ---------------- | ------------------------------------------------ | ----------- |
-| crossfaderGroups | [MultiCrossfaderGroup](/vext/ref/fb/multicrossfadergroup/)\[\] |             |
-| start            | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/)         |             |
-| stop             | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/)         |             |
-| control          | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/)         |             |
-| lockControlValue | bool                                             |             |
-
-## Methods
-
-| Type                                               | Name            | Parameters                                     |
-| -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [MultiCrossfaderNodeData](/vext/ref/fb/multicrossfadernodedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MultiCrossfaderNodeData](/vext/ref/fb/multicrossfadernodedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MultiCrossfaderNodeData](/vext/ref/fb/multicrossfadernodedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MultiCrossfaderNodeData {#constructor-2}
+> **MultiCrossfaderNodeData**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata))
+
+Casts an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) to [MultiCrossfaderNodeData](/vext/ref/fb/multicrossfadernodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) | The instance to cast to [MultiCrossfaderNodeData](/vext/ref/fb/multicrossfadernodedata). |
+
+### MultiCrossfaderNodeData {#constructor-3}
+> **MultiCrossfaderNodeData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MultiCrossfaderNodeData](/vext/ref/fb/multicrossfadernodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MultiCrossfaderNodeData](/vext/ref/fb/multicrossfadernodedata). |
+
+## Properties
+### {{% prop-heading "crossfaderGroups" %}}
+> **[MultiCrossfaderGroup](/vext/ref/fb/multicrossfadergroup)**[]
+
+### {{% prop-heading "start" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "stop" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "control" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "lockControlValue" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MultiCrossfaderNodeData](/vext/ref/fb/multicrossfadernodedata) type.
+

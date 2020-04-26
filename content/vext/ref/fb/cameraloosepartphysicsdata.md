@@ -1,43 +1,72 @@
 ---
 title: CameraLoosePartPhysicsData
 ---
-### Base Classes
 
-[LoosePartPhysicsData](/vext/ref/fb/loosepartphysicsdata/)
+Inherits from 
+[LoosePartPhysicsData](/vext/ref/fb/loosepartphysicsdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[CameraLoosePartPhysicsData](#constructor-0)**() |
+| **[CameraLoosePartPhysicsData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[CameraLoosePartPhysicsData](#constructor-2)**(other: [LoosePartPhysicsData](/vext/ref/fb/loosepartphysicsdata)) |
+| **[CameraLoosePartPhysicsData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "scale" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "CameraLoosePartPhysicsData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### CameraLoosePartPhysicsData {#constructor-0}
+> **CameraLoosePartPhysicsData**()
 
-| Constructor                                                                           | Description                                                                                                                                 |
-| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| CameraLoosePartPhysicsData()                                                          | Create a new instance of this container type.                                                                                               |
-| CameraLoosePartPhysicsData(CameraLoosePartPhysicsData other)                          | Create a reference copy of an instance of the same type.                                                                                    |
-| CameraLoosePartPhysicsData([LoosePartPhysicsData](/vext/ref/fb/loosepartphysicsdata/) other)        | Upcast an instance of type [LoosePartPhysicsData](/vext/ref/fb/loosepartphysicsdata/) to [CameraLoosePartPhysicsData](/vext/ref/fb/cameraloosepartphysicsdata/).        |
-| CameraLoosePartPhysicsData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CameraLoosePartPhysicsData](/vext/ref/fb/cameraloosepartphysicsdata/). |
+Creates a new [CameraLoosePartPhysicsData](/vext/ref/fb/cameraloosepartphysicsdata) frostbite instance.
 
-## Properties
+### CameraLoosePartPhysicsData {#constructor-1}
+> **CameraLoosePartPhysicsData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name  | Type   | Description |
-| ----- | ------ | ----------- |
-| scale | number |             |
-
-## Methods
-
-| Type                                                     | Name            | Parameters                                     |
-| -------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [CameraLoosePartPhysicsData](/vext/ref/fb/cameraloosepartphysicsdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [CameraLoosePartPhysicsData](/vext/ref/fb/cameraloosepartphysicsdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [CameraLoosePartPhysicsData](/vext/ref/fb/cameraloosepartphysicsdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### CameraLoosePartPhysicsData {#constructor-2}
+> **CameraLoosePartPhysicsData**(other: [LoosePartPhysicsData](/vext/ref/fb/loosepartphysicsdata))
+
+Casts an instance of type [LoosePartPhysicsData](/vext/ref/fb/loosepartphysicsdata) to [CameraLoosePartPhysicsData](/vext/ref/fb/cameraloosepartphysicsdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [LoosePartPhysicsData](/vext/ref/fb/loosepartphysicsdata) | The instance to cast to [CameraLoosePartPhysicsData](/vext/ref/fb/cameraloosepartphysicsdata). |
+
+### CameraLoosePartPhysicsData {#constructor-3}
+> **CameraLoosePartPhysicsData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CameraLoosePartPhysicsData](/vext/ref/fb/cameraloosepartphysicsdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [CameraLoosePartPhysicsData](/vext/ref/fb/cameraloosepartphysicsdata). |
+
+## Properties
+### {{% prop-heading "scale" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [CameraLoosePartPhysicsData](/vext/ref/fb/cameraloosepartphysicsdata) type.
+

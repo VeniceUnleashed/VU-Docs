@@ -1,13 +1,10 @@
 ---
 title: RenderVolumeTransformType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **RenderVolumeTransformType_WorldSpaceInv** | Value: **0** |
+| **RenderVolumeTransformType_WorldSpaceNoScale** | Value: **1** |
 
-| Name                                         | Value | Description |
-| -------------------------------------------- | ----- | ----------- |
-| RenderVolumeTransformType\_WorldSpaceInv     | 0     |             |
-| RenderVolumeTransformType\_WorldSpaceNoScale | 1     |             |

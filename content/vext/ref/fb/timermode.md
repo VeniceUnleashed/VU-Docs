@@ -1,13 +1,10 @@
 ---
 title: TimerMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **TimerMode_Repeating** | Value: **0** |
+| **TimerMode_SingleShot** | Value: **1** |
 
-| Name                  | Value | Description |
-| --------------------- | ----- | ----------- |
-| TimerMode\_Repeating  | 0     |             |
-| TimerMode\_SingleShot | 1     |             |

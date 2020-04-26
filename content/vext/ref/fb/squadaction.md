@@ -1,14 +1,11 @@
 ---
 title: SquadAction
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **SquadAction_PlayerJoined** | Value: **0** |
+| **SquadAction_PlayerLeft** | Value: **1** |
+| **SquadAction_PlayerWasKicked** | Value: **2** |
 
-| Name                         | Value | Description |
-| ---------------------------- | ----- | ----------- |
-| SquadAction\_PlayerJoined    | 0     |             |
-| SquadAction\_PlayerLeft      | 1     |             |
-| SquadAction\_PlayerWasKicked | 2     |             |

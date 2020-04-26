@@ -1,45 +1,80 @@
 ---
 title: UICoopLevelDescription
 ---
-### Base Classes
 
-[LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent/)
+Inherits from 
+[LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UICoopLevelDescription](#constructor-0)**() |
+| **[UICoopLevelDescription](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UICoopLevelDescription](#constructor-2)**(other: [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent)) |
+| **[UICoopLevelDescription](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "debriefing" >}} | string |
+| {{< prop "devTime" >}} | int |
+| {{< prop "unlockedByLevels" >}} | string[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UICoopLevelDescription" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UICoopLevelDescription {#constructor-0}
+> **UICoopLevelDescription**()
 
-| Constructor                                                                          | Description                                                                                                                            |
-| ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
-| UICoopLevelDescription()                                                             | Create a new instance of this container type.                                                                                          |
-| UICoopLevelDescription(UICoopLevelDescription other)                                 | Create a reference copy of an instance of the same type.                                                                               |
-| UICoopLevelDescription([LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent/) other) | Upcast an instance of type [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent/) to [UICoopLevelDescription](/vext/ref/fb/uicoopleveldescription/). |
-| UICoopLevelDescription([DataContainer](/vext/ref/shared/class/datacontainer) other)    | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UICoopLevelDescription](/vext/ref/fb/uicoopleveldescription/).    |
+Creates a new [UICoopLevelDescription](/vext/ref/fb/uicoopleveldescription) frostbite instance.
 
-## Properties
+### UICoopLevelDescription {#constructor-1}
+> **UICoopLevelDescription**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name             | Type       | Description |
-| ---------------- | ---------- | ----------- |
-| debriefing       | string     |             |
-| devTime          | number     |             |
-| unlockedByLevels | string\[\] |             |
-
-## Methods
-
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [UICoopLevelDescription](/vext/ref/fb/uicoopleveldescription/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UICoopLevelDescription](/vext/ref/fb/uicoopleveldescription/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UICoopLevelDescription](/vext/ref/fb/uicoopleveldescription) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UICoopLevelDescription {#constructor-2}
+> **UICoopLevelDescription**(other: [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent))
+
+Casts an instance of type [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent) to [UICoopLevelDescription](/vext/ref/fb/uicoopleveldescription). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent) | The instance to cast to [UICoopLevelDescription](/vext/ref/fb/uicoopleveldescription). |
+
+### UICoopLevelDescription {#constructor-3}
+> **UICoopLevelDescription**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UICoopLevelDescription](/vext/ref/fb/uicoopleveldescription). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UICoopLevelDescription](/vext/ref/fb/uicoopleveldescription). |
+
+## Properties
+### {{% prop-heading "debriefing" %}}
+> **string**
+
+### {{% prop-heading "devTime" %}}
+> **int**
+
+### {{% prop-heading "unlockedByLevels" %}}
+> **string**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UICoopLevelDescription](/vext/ref/fb/uicoopleveldescription) type.
+

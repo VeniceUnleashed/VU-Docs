@@ -1,44 +1,76 @@
 ---
 title: WeaponMagazineModifier
 ---
-### Base Classes
 
-[WeaponModifierBase](/vext/ref/fb/weaponmodifierbase/)
+Inherits from 
+[WeaponModifierBase](/vext/ref/fb/weaponmodifierbase)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[WeaponMagazineModifier](#constructor-0)**() |
+| **[WeaponMagazineModifier](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[WeaponMagazineModifier](#constructor-2)**(other: [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase)) |
+| **[WeaponMagazineModifier](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "magazineCapacity" >}} | int |
+| {{< prop "numberOfMagazines" >}} | int |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "WeaponMagazineModifier" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### WeaponMagazineModifier {#constructor-0}
+> **WeaponMagazineModifier**()
 
-| Constructor                                                                       | Description                                                                                                                         |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| WeaponMagazineModifier()                                                          | Create a new instance of this container type.                                                                                       |
-| WeaponMagazineModifier(WeaponMagazineModifier other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| WeaponMagazineModifier([WeaponModifierBase](/vext/ref/fb/weaponmodifierbase/) other)            | Upcast an instance of type [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase/) to [WeaponMagazineModifier](/vext/ref/fb/weaponmagazinemodifier/).            |
-| WeaponMagazineModifier([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponMagazineModifier](/vext/ref/fb/weaponmagazinemodifier/). |
+Creates a new [WeaponMagazineModifier](/vext/ref/fb/weaponmagazinemodifier) frostbite instance.
 
-## Properties
+### WeaponMagazineModifier {#constructor-1}
+> **WeaponMagazineModifier**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name              | Type   | Description |
-| ----------------- | ------ | ----------- |
-| magazineCapacity  | number |             |
-| numberOfMagazines | number |             |
-
-## Methods
-
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [WeaponMagazineModifier](/vext/ref/fb/weaponmagazinemodifier/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [WeaponMagazineModifier](/vext/ref/fb/weaponmagazinemodifier/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [WeaponMagazineModifier](/vext/ref/fb/weaponmagazinemodifier) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### WeaponMagazineModifier {#constructor-2}
+> **WeaponMagazineModifier**(other: [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase))
+
+Casts an instance of type [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase) to [WeaponMagazineModifier](/vext/ref/fb/weaponmagazinemodifier). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase) | The instance to cast to [WeaponMagazineModifier](/vext/ref/fb/weaponmagazinemodifier). |
+
+### WeaponMagazineModifier {#constructor-3}
+> **WeaponMagazineModifier**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponMagazineModifier](/vext/ref/fb/weaponmagazinemodifier). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [WeaponMagazineModifier](/vext/ref/fb/weaponmagazinemodifier). |
+
+## Properties
+### {{% prop-heading "magazineCapacity" %}}
+> **int**
+
+### {{% prop-heading "numberOfMagazines" %}}
+> **int**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [WeaponMagazineModifier](/vext/ref/fb/weaponmagazinemodifier) type.
+

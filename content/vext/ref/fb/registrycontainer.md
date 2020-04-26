@@ -1,45 +1,73 @@
 ---
 title: RegistryContainer
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[RegistryContainer](#constructor-0)**() |
+| **[RegistryContainer](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[RegistryContainer](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "entityRegistry" >}} | [DataContainer](/vext/ref/shared/class/datacontainer)[] |
+| {{< prop "assetRegistry" >}} | [DataContainer](/vext/ref/shared/class/datacontainer)[] |
+| {{< prop "blueprintRegistry" >}} | [DataContainer](/vext/ref/shared/class/datacontainer)[] |
+| {{< prop "referenceObjectRegistry" >}} | [DataContainer](/vext/ref/shared/class/datacontainer)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "RegistryContainer" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### RegistryContainer {#constructor-0}
+> **RegistryContainer**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| RegistryContainer()                                                          | Create a new instance of this container type.                                                                             |
-| RegistryContainer(RegistryContainer other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| RegistryContainer([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RegistryContainer](/vext/ref/fb/registrycontainer/). |
+Creates a new [RegistryContainer](/vext/ref/fb/registrycontainer) frostbite instance.
 
-## Properties
+### RegistryContainer {#constructor-1}
+> **RegistryContainer**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                    | Type                                                    | Description |
-| ----------------------- | ------------------------------------------------------- | ----------- |
-| entityRegistry          | [DataContainer](/vext/ref/shared/class/datacontainer)\[\] |             |
-| assetRegistry           | [DataContainer](/vext/ref/shared/class/datacontainer)\[\] |             |
-| blueprintRegistry       | [DataContainer](/vext/ref/shared/class/datacontainer)\[\] |             |
-| referenceObjectRegistry | [DataContainer](/vext/ref/shared/class/datacontainer)\[\] |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [RegistryContainer](/vext/ref/fb/registrycontainer/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [RegistryContainer](/vext/ref/fb/registrycontainer/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [RegistryContainer](/vext/ref/fb/registrycontainer) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### RegistryContainer {#constructor-2}
+> **RegistryContainer**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RegistryContainer](/vext/ref/fb/registrycontainer). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [RegistryContainer](/vext/ref/fb/registrycontainer). |
+
+## Properties
+### {{% prop-heading "entityRegistry" %}}
+> **[DataContainer](/vext/ref/shared/class/datacontainer)**[]
+
+### {{% prop-heading "assetRegistry" %}}
+> **[DataContainer](/vext/ref/shared/class/datacontainer)**[]
+
+### {{% prop-heading "blueprintRegistry" %}}
+> **[DataContainer](/vext/ref/shared/class/datacontainer)**[]
+
+### {{% prop-heading "referenceObjectRegistry" %}}
+> **[DataContainer](/vext/ref/shared/class/datacontainer)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [RegistryContainer](/vext/ref/fb/registrycontainer) type.
+

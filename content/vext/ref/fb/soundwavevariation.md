@@ -1,47 +1,81 @@
 ---
 title: SoundWaveVariation
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SoundWaveVariation](#constructor-0)**() |
+| **[SoundWaveVariation](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SoundWaveVariation](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "subtitles" >}} | [SoundWaveSubtitle](/vext/ref/fb/soundwavesubtitle)[] |
+| {{< prop "seekTablesSize" >}} | int |
+| {{< prop "segments" >}} | [SoundWaveVariationSegment](/vext/ref/fb/soundwavevariationsegment)[] |
+| {{< prop "chunkIndex" >}} | int |
+| {{< prop "firstLoopSegmentIndex" >}} | int |
+| {{< prop "lastLoopSegmentIndex" >}} | int |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SoundWaveVariation" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SoundWaveVariation {#constructor-0}
+> **SoundWaveVariation**()
 
-| Constructor                                                                   | Description                                                                                                                 |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| SoundWaveVariation()                                                          | Create a new instance of this container type.                                                                               |
-| SoundWaveVariation(SoundWaveVariation other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| SoundWaveVariation([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoundWaveVariation](/vext/ref/fb/soundwavevariation/). |
+Creates a new [SoundWaveVariation](/vext/ref/fb/soundwavevariation) frostbite instance.
 
-## Properties
+### SoundWaveVariation {#constructor-1}
+> **SoundWaveVariation**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                  | Type                                                       | Description |
-| --------------------- | ---------------------------------------------------------- | ----------- |
-| subtitles             | [SoundWaveSubtitle](/vext/ref/fb/soundwavesubtitle/)\[\]                 |             |
-| seekTablesSize        | number                                                     |             |
-| segments              | [SoundWaveVariationSegment](/vext/ref/fb/soundwavevariationsegment/)\[\] |             |
-| chunkIndex            | number                                                     |             |
-| firstLoopSegmentIndex | number                                                     |             |
-| lastLoopSegmentIndex  | number                                                     |             |
-
-## Methods
-
-| Type                                     | Name            | Parameters                                     |
-| ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [SoundWaveVariation](/vext/ref/fb/soundwavevariation/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SoundWaveVariation](/vext/ref/fb/soundwavevariation/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SoundWaveVariation](/vext/ref/fb/soundwavevariation) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SoundWaveVariation {#constructor-2}
+> **SoundWaveVariation**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoundWaveVariation](/vext/ref/fb/soundwavevariation). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SoundWaveVariation](/vext/ref/fb/soundwavevariation). |
+
+## Properties
+### {{% prop-heading "subtitles" %}}
+> **[SoundWaveSubtitle](/vext/ref/fb/soundwavesubtitle)**[]
+
+### {{% prop-heading "seekTablesSize" %}}
+> **int**
+
+### {{% prop-heading "segments" %}}
+> **[SoundWaveVariationSegment](/vext/ref/fb/soundwavevariationsegment)**[]
+
+### {{% prop-heading "chunkIndex" %}}
+> **int**
+
+### {{% prop-heading "firstLoopSegmentIndex" %}}
+> **int**
+
+### {{% prop-heading "lastLoopSegmentIndex" %}}
+> **int**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SoundWaveVariation](/vext/ref/fb/soundwavevariation) type.
+

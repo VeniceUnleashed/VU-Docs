@@ -1,14 +1,11 @@
 ---
 title: OutputTransformSource
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **OutputTransformSource_Sound** | Value: **0** |
+| **OutputTransformSource_Listener** | Value: **1** |
+| **OutputTransformSource_Output** | Value: **2** |
 
-| Name                            | Value | Description |
-| ------------------------------- | ----- | ----------- |
-| OutputTransformSource\_Sound    | 0     |             |
-| OutputTransformSource\_Listener | 1     |             |
-| OutputTransformSource\_Output   | 2     |             |

@@ -1,18 +1,15 @@
 ---
 title: AwardKitAssociation
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **AwardKitAssociation_Undefined** | Value: **0** |
+| **AwardKitAssociation_Assault** | Value: **1** |
+| **AwardKitAssociation_Engineer** | Value: **2** |
+| **AwardKitAssociation_Recon** | Value: **3** |
+| **AwardKitAssociation_Support** | Value: **4** |
+| **AwardKitAssociation_All** | Value: **5** |
+| **AwardKitAssociation_LAST_ITEM** | Value: **6** |
 
-| Name                            | Value | Description |
-| ------------------------------- | ----- | ----------- |
-| AwardKitAssociation\_Undefined  | 0     |             |
-| AwardKitAssociation\_Assault    | 1     |             |
-| AwardKitAssociation\_Engineer   | 2     |             |
-| AwardKitAssociation\_Recon      | 3     |             |
-| AwardKitAssociation\_Support    | 4     |             |
-| AwardKitAssociation\_All        | 5     |             |
-| AwardKitAssociation\_LAST\_ITEM | 6     |             |

@@ -1,45 +1,94 @@
 ---
 title: GunMasterKillCounterEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[GunMasterKillCounterEntityData](#constructor-0)**() |
+| **[GunMasterKillCounterEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[GunMasterKillCounterEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[GunMasterKillCounterEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[GunMasterKillCounterEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[GunMasterKillCounterEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "weaponsPreset" >}} | [GunMasterWeaponsPreset](/vext/ref/fb/gunmasterweaponspreset)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "GunMasterKillCounterEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### GunMasterKillCounterEntityData {#constructor-0}
+> **GunMasterKillCounterEntityData**()
 
-| Constructor                                                                               | Description                                                                                                                                         |
-| ----------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| GunMasterKillCounterEntityData()                                                          | Create a new instance of this container type.                                                                                                       |
-| GunMasterKillCounterEntityData(GunMasterKillCounterEntityData other)                      | Create a reference copy of an instance of the same type.                                                                                            |
-| GunMasterKillCounterEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [GunMasterKillCounterEntityData](/vext/ref/fb/gunmasterkillcounterentitydata/).                            |
-| GunMasterKillCounterEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [GunMasterKillCounterEntityData](/vext/ref/fb/gunmasterkillcounterentitydata/).                    |
-| GunMasterKillCounterEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [GunMasterKillCounterEntityData](/vext/ref/fb/gunmasterkillcounterentitydata/).              |
-| GunMasterKillCounterEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GunMasterKillCounterEntityData](/vext/ref/fb/gunmasterkillcounterentitydata/). |
+Creates a new [GunMasterKillCounterEntityData](/vext/ref/fb/gunmasterkillcounterentitydata) frostbite instance.
 
-## Properties
+### GunMasterKillCounterEntityData {#constructor-1}
+> **GunMasterKillCounterEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name          | Type                                                 | Description |
-| ------------- | ---------------------------------------------------- | ----------- |
-| weaponsPreset | [GunMasterWeaponsPreset](/vext/ref/fb/gunmasterweaponspreset/)\[\] |             |
-
-## Methods
-
-| Type                                                             | Name            | Parameters                                     |
-| ---------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [GunMasterKillCounterEntityData](/vext/ref/fb/gunmasterkillcounterentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [GunMasterKillCounterEntityData](/vext/ref/fb/gunmasterkillcounterentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [GunMasterKillCounterEntityData](/vext/ref/fb/gunmasterkillcounterentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### GunMasterKillCounterEntityData {#constructor-2}
+> **GunMasterKillCounterEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [GunMasterKillCounterEntityData](/vext/ref/fb/gunmasterkillcounterentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [GunMasterKillCounterEntityData](/vext/ref/fb/gunmasterkillcounterentitydata). |
+
+### GunMasterKillCounterEntityData {#constructor-3}
+> **GunMasterKillCounterEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [GunMasterKillCounterEntityData](/vext/ref/fb/gunmasterkillcounterentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [GunMasterKillCounterEntityData](/vext/ref/fb/gunmasterkillcounterentitydata). |
+
+### GunMasterKillCounterEntityData {#constructor-4}
+> **GunMasterKillCounterEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [GunMasterKillCounterEntityData](/vext/ref/fb/gunmasterkillcounterentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [GunMasterKillCounterEntityData](/vext/ref/fb/gunmasterkillcounterentitydata). |
+
+### GunMasterKillCounterEntityData {#constructor-5}
+> **GunMasterKillCounterEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GunMasterKillCounterEntityData](/vext/ref/fb/gunmasterkillcounterentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [GunMasterKillCounterEntityData](/vext/ref/fb/gunmasterkillcounterentitydata). |
+
+## Properties
+### {{% prop-heading "weaponsPreset" %}}
+> **[GunMasterWeaponsPreset](/vext/ref/fb/gunmasterweaponspreset)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [GunMasterKillCounterEntityData](/vext/ref/fb/gunmasterkillcounterentitydata) type.
+

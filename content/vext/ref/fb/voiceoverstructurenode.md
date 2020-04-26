@@ -1,43 +1,72 @@
 ---
 title: VoiceOverStructureNode
 ---
-### Base Classes
 
-[VoiceOverNode](/vext/ref/fb/voiceovernode/)
+Inherits from 
+[VoiceOverNode](/vext/ref/fb/voiceovernode)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VoiceOverStructureNode](#constructor-0)**() |
+| **[VoiceOverStructureNode](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VoiceOverStructureNode](#constructor-2)**(other: [VoiceOverNode](/vext/ref/fb/voiceovernode)) |
+| **[VoiceOverStructureNode](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "flowMode" >}} | [VoiceOverLogicFlowMode](/vext/ref/fb/voiceoverlogicflowmode) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VoiceOverStructureNode" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VoiceOverStructureNode {#constructor-0}
+> **VoiceOverStructureNode**()
 
-| Constructor                                                                       | Description                                                                                                                         |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| VoiceOverStructureNode()                                                          | Create a new instance of this container type.                                                                                       |
-| VoiceOverStructureNode(VoiceOverStructureNode other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| VoiceOverStructureNode([VoiceOverNode](/vext/ref/fb/voiceovernode/) other)                      | Upcast an instance of type [VoiceOverNode](/vext/ref/fb/voiceovernode/) to [VoiceOverStructureNode](/vext/ref/fb/voiceoverstructurenode/).                      |
-| VoiceOverStructureNode([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverStructureNode](/vext/ref/fb/voiceoverstructurenode/). |
+Creates a new [VoiceOverStructureNode](/vext/ref/fb/voiceoverstructurenode) frostbite instance.
 
-## Properties
+### VoiceOverStructureNode {#constructor-1}
+> **VoiceOverStructureNode**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name     | Type                                             | Description |
-| -------- | ------------------------------------------------ | ----------- |
-| flowMode | [VoiceOverLogicFlowMode](/vext/ref/fb/voiceoverlogicflowmode/) |             |
-
-## Methods
-
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [VoiceOverStructureNode](/vext/ref/fb/voiceoverstructurenode/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VoiceOverStructureNode](/vext/ref/fb/voiceoverstructurenode/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VoiceOverStructureNode](/vext/ref/fb/voiceoverstructurenode) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VoiceOverStructureNode {#constructor-2}
+> **VoiceOverStructureNode**(other: [VoiceOverNode](/vext/ref/fb/voiceovernode))
+
+Casts an instance of type [VoiceOverNode](/vext/ref/fb/voiceovernode) to [VoiceOverStructureNode](/vext/ref/fb/voiceoverstructurenode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [VoiceOverNode](/vext/ref/fb/voiceovernode) | The instance to cast to [VoiceOverStructureNode](/vext/ref/fb/voiceoverstructurenode). |
+
+### VoiceOverStructureNode {#constructor-3}
+> **VoiceOverStructureNode**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverStructureNode](/vext/ref/fb/voiceoverstructurenode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VoiceOverStructureNode](/vext/ref/fb/voiceoverstructurenode). |
+
+## Properties
+### {{% prop-heading "flowMode" %}}
+> **[VoiceOverLogicFlowMode](/vext/ref/fb/voiceoverlogicflowmode)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VoiceOverStructureNode](/vext/ref/fb/voiceoverstructurenode) type.
+

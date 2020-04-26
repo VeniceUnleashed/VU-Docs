@@ -1,13 +1,10 @@
 ---
 title: FaderType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **FaderType_Linear** | Value: **0** |
+| **FaderType_Cosine** | Value: **1** |
 
-| Name              | Value | Description |
-| ----------------- | ----- | ----------- |
-| FaderType\_Linear | 0     |             |
-| FaderType\_Cosine | 1     |             |

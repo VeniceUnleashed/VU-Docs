@@ -1,45 +1,80 @@
 ---
 title: InstanceNode
 ---
-### Base Classes
 
-[UINodeData](/vext/ref/fb/uinodedata/)
+Inherits from 
+[UINodeData](/vext/ref/fb/uinodedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[InstanceNode](#constructor-0)**() |
+| **[InstanceNode](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[InstanceNode](#constructor-2)**(other: [UINodeData](/vext/ref/fb/uinodedata)) |
+| **[InstanceNode](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "uiGraph" >}} | [UIGraphAsset](/vext/ref/fb/uigraphasset) \| nil |
+| {{< prop "inputs" >}} | [UINodePort](/vext/ref/fb/uinodeport)[] |
+| {{< prop "outputs" >}} | [UINodePort](/vext/ref/fb/uinodeport)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "InstanceNode" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### InstanceNode {#constructor-0}
+> **InstanceNode**()
 
-| Constructor                                                             | Description                                                                                                     |
-| ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| InstanceNode()                                                          | Create a new instance of this container type.                                                                   |
-| InstanceNode(InstanceNode other)                                        | Create a reference copy of an instance of the same type.                                                        |
-| InstanceNode([UINodeData](/vext/ref/fb/uinodedata/) other)                            | Upcast an instance of type [UINodeData](/vext/ref/fb/uinodedata/) to [InstanceNode](/vext/ref/fb/instancenode/).                            |
-| InstanceNode([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [InstanceNode](/vext/ref/fb/instancenode/). |
+Creates a new [InstanceNode](/vext/ref/fb/instancenode) frostbite instance.
 
-## Properties
+### InstanceNode {#constructor-1}
+> **InstanceNode**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name    | Type                         | Description |
-| ------- | ---------------------------- | ----------- |
-| uiGraph | [UIGraphAsset](/vext/ref/fb/uigraphasset/) |             |
-| inputs  | [UINodePort](/vext/ref/fb/uinodeport/)\[\] |             |
-| outputs | [UINodePort](/vext/ref/fb/uinodeport/)\[\] |             |
-
-## Methods
-
-| Type                         | Name            | Parameters                                     |
-| ---------------------------- | --------------- | ---------------------------------------------- |
-| [InstanceNode](/vext/ref/fb/instancenode/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [InstanceNode](/vext/ref/fb/instancenode/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [InstanceNode](/vext/ref/fb/instancenode) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### InstanceNode {#constructor-2}
+> **InstanceNode**(other: [UINodeData](/vext/ref/fb/uinodedata))
+
+Casts an instance of type [UINodeData](/vext/ref/fb/uinodedata) to [InstanceNode](/vext/ref/fb/instancenode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UINodeData](/vext/ref/fb/uinodedata) | The instance to cast to [InstanceNode](/vext/ref/fb/instancenode). |
+
+### InstanceNode {#constructor-3}
+> **InstanceNode**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [InstanceNode](/vext/ref/fb/instancenode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [InstanceNode](/vext/ref/fb/instancenode). |
+
+## Properties
+### {{% prop-heading "uiGraph" %}}
+> **[UIGraphAsset](/vext/ref/fb/uigraphasset)** | **nil**
+
+### {{% prop-heading "inputs" %}}
+> **[UINodePort](/vext/ref/fb/uinodeport)**[]
+
+### {{% prop-heading "outputs" %}}
+> **[UINodePort](/vext/ref/fb/uinodeport)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [InstanceNode](/vext/ref/fb/instancenode) type.
+

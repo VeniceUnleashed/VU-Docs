@@ -1,36 +1,52 @@
 ---
 title: VeniceCombatAreaCamera
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VeniceCombatAreaCamera](#constructor-0)**() |
+| **[VeniceCombatAreaCamera](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VeniceCombatAreaCamera](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VeniceCombatAreaCamera" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VeniceCombatAreaCamera {#constructor-0}
+> **VeniceCombatAreaCamera**()
 
-| Constructor                                                                       | Description                                                                                                                         |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| VeniceCombatAreaCamera()                                                          | Create a new instance of this container type.                                                                                       |
-| VeniceCombatAreaCamera(VeniceCombatAreaCamera other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| VeniceCombatAreaCamera([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VeniceCombatAreaCamera](/vext/ref/fb/venicecombatareacamera/). |
+Creates a new [VeniceCombatAreaCamera](/vext/ref/fb/venicecombatareacamera) frostbite instance.
 
-## Methods
+### VeniceCombatAreaCamera {#constructor-1}
+> **VeniceCombatAreaCamera**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [VeniceCombatAreaCamera](/vext/ref/fb/venicecombatareacamera/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VeniceCombatAreaCamera](/vext/ref/fb/venicecombatareacamera/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VeniceCombatAreaCamera](/vext/ref/fb/venicecombatareacamera) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VeniceCombatAreaCamera {#constructor-2}
+> **VeniceCombatAreaCamera**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VeniceCombatAreaCamera](/vext/ref/fb/venicecombatareacamera). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VeniceCombatAreaCamera](/vext/ref/fb/venicecombatareacamera). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VeniceCombatAreaCamera](/vext/ref/fb/venicecombatareacamera) type.
+

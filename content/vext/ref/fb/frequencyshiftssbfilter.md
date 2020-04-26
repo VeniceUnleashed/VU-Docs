@@ -1,13 +1,10 @@
 ---
 title: FrequencyShiftSsbFilter
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **FrequencyShiftSsbFilter_None** | Value: **0** |
+| **FrequencyShiftSsbFilter_Fir64** | Value: **1** |
 
-| Name                           | Value | Description |
-| ------------------------------ | ----- | ----------- |
-| FrequencyShiftSsbFilter\_None  | 0     |             |
-| FrequencyShiftSsbFilter\_Fir64 | 1     |             |

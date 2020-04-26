@@ -1,15 +1,12 @@
 ---
 title: StatsMultiplicity
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **StatsMultiplicity_Invalid** | Value: **0** |
+| **StatsMultiplicity_Solo** | Value: **1** |
+| **StatsMultiplicity_Club** | Value: **2** |
+| **StatsMultiplicity_LAST_ITEM** | Value: **3** |
 
-| Name                          | Value | Description |
-| ----------------------------- | ----- | ----------- |
-| StatsMultiplicity\_Invalid    | 0     |             |
-| StatsMultiplicity\_Solo       | 1     |             |
-| StatsMultiplicity\_Club       | 2     |             |
-| StatsMultiplicity\_LAST\_ITEM | 3     |             |

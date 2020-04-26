@@ -1,43 +1,72 @@
 ---
 title: UIInterruptFlow
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIInterruptFlow](#constructor-0)**() |
+| **[UIInterruptFlow](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UIInterruptFlow](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[UIInterruptFlow](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "interruptFlow" >}} | [InterruptFlow](/vext/ref/fb/interruptflow)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIInterruptFlow" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIInterruptFlow {#constructor-0}
+> **UIInterruptFlow**()
 
-| Constructor                                                                | Description                                                                                                           |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| UIInterruptFlow()                                                          | Create a new instance of this container type.                                                                         |
-| UIInterruptFlow(UIInterruptFlow other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| UIInterruptFlow([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UIInterruptFlow](/vext/ref/fb/uiinterruptflow/).                                      |
-| UIInterruptFlow([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIInterruptFlow](/vext/ref/fb/uiinterruptflow/). |
+Creates a new [UIInterruptFlow](/vext/ref/fb/uiinterruptflow) frostbite instance.
 
-## Properties
+### UIInterruptFlow {#constructor-1}
+> **UIInterruptFlow**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name          | Type                               | Description |
-| ------------- | ---------------------------------- | ----------- |
-| interruptFlow | [InterruptFlow](/vext/ref/fb/interruptflow/)\[\] |             |
-
-## Methods
-
-| Type                               | Name            | Parameters                                     |
-| ---------------------------------- | --------------- | ---------------------------------------------- |
-| [UIInterruptFlow](/vext/ref/fb/uiinterruptflow/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UIInterruptFlow](/vext/ref/fb/uiinterruptflow/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UIInterruptFlow](/vext/ref/fb/uiinterruptflow) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UIInterruptFlow {#constructor-2}
+> **UIInterruptFlow**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [UIInterruptFlow](/vext/ref/fb/uiinterruptflow). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [UIInterruptFlow](/vext/ref/fb/uiinterruptflow). |
+
+### UIInterruptFlow {#constructor-3}
+> **UIInterruptFlow**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIInterruptFlow](/vext/ref/fb/uiinterruptflow). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UIInterruptFlow](/vext/ref/fb/uiinterruptflow). |
+
+## Properties
+### {{% prop-heading "interruptFlow" %}}
+> **[InterruptFlow](/vext/ref/fb/interruptflow)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIInterruptFlow](/vext/ref/fb/uiinterruptflow) type.
+

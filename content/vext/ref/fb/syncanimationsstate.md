@@ -1,15 +1,12 @@
 ---
 title: SyncAnimationsState
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **Idle** | Value: **0** |
+| **Play** | Value: **1** |
+| **Skip** | Value: **2** |
+| **Stop** | Value: **3** |
 
-| Name | Value | Description |
-| ---- | ----- | ----------- |
-| Idle | 0     |             |
-| Play | 1     |             |
-| Skip | 2     |             |
-| Stop | 3     |             |

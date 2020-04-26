@@ -1,14 +1,11 @@
 ---
 title: VoiceOverConversationInterruptMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **VoiceOverConversationInterruptMode_Disallow** | Value: **0** |
+| **VoiceOverConversationInterruptMode_Allow** | Value: **1** |
+| **VoiceOverConversationInterruptMode_AllowSame** | Value: **2** |
 
-| Name                                          | Value | Description |
-| --------------------------------------------- | ----- | ----------- |
-| VoiceOverConversationInterruptMode\_Disallow  | 0     |             |
-| VoiceOverConversationInterruptMode\_Allow     | 1     |             |
-| VoiceOverConversationInterruptMode\_AllowSame | 2     |             |

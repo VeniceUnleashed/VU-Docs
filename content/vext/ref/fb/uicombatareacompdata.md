@@ -1,44 +1,83 @@
 ---
 title: UICombatAreaCompData
 ---
-### Base Classes
 
-[UIComponentData](/vext/ref/fb/uicomponentdata/)
+Inherits from 
+[UIComponentData](/vext/ref/fb/uicomponentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UICombatAreaCompData](#constructor-0)**() |
+| **[UICombatAreaCompData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UICombatAreaCompData](#constructor-2)**(other: [UIComponentData](/vext/ref/fb/uicomponentdata)) |
+| **[UICombatAreaCompData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[UICombatAreaCompData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "outOfAreaSidPrefix" >}} | string |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UICombatAreaCompData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UICombatAreaCompData {#constructor-0}
+> **UICombatAreaCompData**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| UICombatAreaCompData()                                                          | Create a new instance of this container type.                                                                                   |
-| UICombatAreaCompData(UICombatAreaCompData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| UICombatAreaCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UICombatAreaCompData](/vext/ref/fb/uicombatareacompdata/).                  |
-| UICombatAreaCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UICombatAreaCompData](/vext/ref/fb/uicombatareacompdata/).                                      |
-| UICombatAreaCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UICombatAreaCompData](/vext/ref/fb/uicombatareacompdata/). |
+Creates a new [UICombatAreaCompData](/vext/ref/fb/uicombatareacompdata) frostbite instance.
 
-## Properties
+### UICombatAreaCompData {#constructor-1}
+> **UICombatAreaCompData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name               | Type   | Description |
-| ------------------ | ------ | ----------- |
-| outOfAreaSidPrefix | string |             |
-
-## Methods
-
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [UICombatAreaCompData](/vext/ref/fb/uicombatareacompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UICombatAreaCompData](/vext/ref/fb/uicombatareacompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UICombatAreaCompData](/vext/ref/fb/uicombatareacompdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UICombatAreaCompData {#constructor-2}
+> **UICombatAreaCompData**(other: [UIComponentData](/vext/ref/fb/uicomponentdata))
+
+Casts an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata) to [UICombatAreaCompData](/vext/ref/fb/uicombatareacompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIComponentData](/vext/ref/fb/uicomponentdata) | The instance to cast to [UICombatAreaCompData](/vext/ref/fb/uicombatareacompdata). |
+
+### UICombatAreaCompData {#constructor-3}
+> **UICombatAreaCompData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [UICombatAreaCompData](/vext/ref/fb/uicombatareacompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [UICombatAreaCompData](/vext/ref/fb/uicombatareacompdata). |
+
+### UICombatAreaCompData {#constructor-4}
+> **UICombatAreaCompData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UICombatAreaCompData](/vext/ref/fb/uicombatareacompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UICombatAreaCompData](/vext/ref/fb/uicombatareacompdata). |
+
+## Properties
+### {{% prop-heading "outOfAreaSidPrefix" %}}
+> **string**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UICombatAreaCompData](/vext/ref/fb/uicombatareacompdata) type.
+

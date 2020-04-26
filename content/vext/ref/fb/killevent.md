@@ -1,47 +1,88 @@
 ---
 title: KillEvent
 ---
-### Base Classes
 
-[MetricEvent](/vext/ref/fb/metricevent/)
+Inherits from 
+[MetricEvent](/vext/ref/fb/metricevent)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[KillEvent](#constructor-0)**() |
+| **[KillEvent](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[KillEvent](#constructor-2)**(other: [MetricEvent](/vext/ref/fb/metricevent)) |
+| **[KillEvent](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "position" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "victimPosition" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "victimId" >}} | int |
+| {{< prop "time" >}} | float |
+| {{< prop "weapon" >}} | string |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "KillEvent" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### KillEvent {#constructor-0}
+> **KillEvent**()
 
-| Constructor                                                          | Description                                                                                               |
-| -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| KillEvent()                                                          | Create a new instance of this container type.                                                             |
-| KillEvent(KillEvent other)                                           | Create a reference copy of an instance of the same type.                                                  |
-| KillEvent([MetricEvent](/vext/ref/fb/metricevent/) other)                          | Upcast an instance of type [MetricEvent](/vext/ref/fb/metricevent/) to [KillEvent](/vext/ref/fb/killevent/).                          |
-| KillEvent([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [KillEvent](/vext/ref/fb/killevent/). |
+Creates a new [KillEvent](/vext/ref/fb/killevent) frostbite instance.
 
-## Properties
+### KillEvent {#constructor-1}
+> **KillEvent**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name           | Type                              | Description |
-| -------------- | --------------------------------- | ----------- |
-| position       | [Vec3](/vext/ref/shared/class/vec3) |             |
-| victimPosition | [Vec3](/vext/ref/shared/class/vec3) |             |
-| victimId       | number                            |             |
-| time           | number                            |             |
-| weapon         | string                            |             |
-
-## Methods
-
-| Type                   | Name            | Parameters                                     |
-| ---------------------- | --------------- | ---------------------------------------------- |
-| [KillEvent](/vext/ref/fb/killevent/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [KillEvent](/vext/ref/fb/killevent/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [KillEvent](/vext/ref/fb/killevent) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### KillEvent {#constructor-2}
+> **KillEvent**(other: [MetricEvent](/vext/ref/fb/metricevent))
+
+Casts an instance of type [MetricEvent](/vext/ref/fb/metricevent) to [KillEvent](/vext/ref/fb/killevent). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [MetricEvent](/vext/ref/fb/metricevent) | The instance to cast to [KillEvent](/vext/ref/fb/killevent). |
+
+### KillEvent {#constructor-3}
+> **KillEvent**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [KillEvent](/vext/ref/fb/killevent). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [KillEvent](/vext/ref/fb/killevent). |
+
+## Properties
+### {{% prop-heading "position" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "victimPosition" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "victimId" %}}
+> **int**
+
+### {{% prop-heading "time" %}}
+> **float**
+
+### {{% prop-heading "weapon" %}}
+> **string**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [KillEvent](/vext/ref/fb/killevent) type.
+

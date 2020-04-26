@@ -1,46 +1,84 @@
 ---
 title: InterfaceDescriptorData
 ---
-### Base Classes
 
-[DynamicDataContainer](/vext/ref/fb/dynamicdatacontainer/)
+Inherits from 
+[DynamicDataContainer](/vext/ref/fb/dynamicdatacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[InterfaceDescriptorData](#constructor-0)**() |
+| **[InterfaceDescriptorData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[InterfaceDescriptorData](#constructor-2)**(other: [DynamicDataContainer](/vext/ref/fb/dynamicdatacontainer)) |
+| **[InterfaceDescriptorData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "inputEvents" >}} | [DynamicEvent](/vext/ref/fb/dynamicevent)[] |
+| {{< prop "outputEvents" >}} | [DynamicEvent](/vext/ref/fb/dynamicevent)[] |
+| {{< prop "inputLinks" >}} | [DynamicLink](/vext/ref/fb/dynamiclink)[] |
+| {{< prop "outputLinks" >}} | [DynamicLink](/vext/ref/fb/dynamiclink)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "InterfaceDescriptorData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### InterfaceDescriptorData {#constructor-0}
+> **InterfaceDescriptorData**()
 
-| Constructor                                                                        | Description                                                                                                                           |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| InterfaceDescriptorData()                                                          | Create a new instance of this container type.                                                                                         |
-| InterfaceDescriptorData(InterfaceDescriptorData other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| InterfaceDescriptorData([DynamicDataContainer](/vext/ref/fb/dynamicdatacontainer/) other)        | Upcast an instance of type [DynamicDataContainer](/vext/ref/fb/dynamicdatacontainer/) to [InterfaceDescriptorData](/vext/ref/fb/interfacedescriptordata/).        |
-| InterfaceDescriptorData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [InterfaceDescriptorData](/vext/ref/fb/interfacedescriptordata/). |
+Creates a new [InterfaceDescriptorData](/vext/ref/fb/interfacedescriptordata) frostbite instance.
 
-## Properties
+### InterfaceDescriptorData {#constructor-1}
+> **InterfaceDescriptorData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name         | Type                             | Description |
-| ------------ | -------------------------------- | ----------- |
-| inputEvents  | [DynamicEvent](/vext/ref/fb/dynamicevent/)\[\] |             |
-| outputEvents | [DynamicEvent](/vext/ref/fb/dynamicevent/)\[\] |             |
-| inputLinks   | [DynamicLink](/vext/ref/fb/dynamiclink/)\[\]   |             |
-| outputLinks  | [DynamicLink](/vext/ref/fb/dynamiclink/)\[\]   |             |
-
-## Methods
-
-| Type                                               | Name            | Parameters                                     |
-| -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [InterfaceDescriptorData](/vext/ref/fb/interfacedescriptordata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [InterfaceDescriptorData](/vext/ref/fb/interfacedescriptordata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [InterfaceDescriptorData](/vext/ref/fb/interfacedescriptordata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### InterfaceDescriptorData {#constructor-2}
+> **InterfaceDescriptorData**(other: [DynamicDataContainer](/vext/ref/fb/dynamicdatacontainer))
+
+Casts an instance of type [DynamicDataContainer](/vext/ref/fb/dynamicdatacontainer) to [InterfaceDescriptorData](/vext/ref/fb/interfacedescriptordata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DynamicDataContainer](/vext/ref/fb/dynamicdatacontainer) | The instance to cast to [InterfaceDescriptorData](/vext/ref/fb/interfacedescriptordata). |
+
+### InterfaceDescriptorData {#constructor-3}
+> **InterfaceDescriptorData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [InterfaceDescriptorData](/vext/ref/fb/interfacedescriptordata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [InterfaceDescriptorData](/vext/ref/fb/interfacedescriptordata). |
+
+## Properties
+### {{% prop-heading "inputEvents" %}}
+> **[DynamicEvent](/vext/ref/fb/dynamicevent)**[]
+
+### {{% prop-heading "outputEvents" %}}
+> **[DynamicEvent](/vext/ref/fb/dynamicevent)**[]
+
+### {{% prop-heading "inputLinks" %}}
+> **[DynamicLink](/vext/ref/fb/dynamiclink)**[]
+
+### {{% prop-heading "outputLinks" %}}
+> **[DynamicLink](/vext/ref/fb/dynamiclink)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [InterfaceDescriptorData](/vext/ref/fb/interfacedescriptordata) type.
+

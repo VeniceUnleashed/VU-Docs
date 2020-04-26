@@ -1,42 +1,61 @@
 ---
 title: EntityTransformData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[EntityTransformData](#constructor-0)**() |
+| **[EntityTransformData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[EntityTransformData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "entityTransforms" >}} | [LinearTransform](/vext/ref/shared/class/lineartransform)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "EntityTransformData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### EntityTransformData {#constructor-0}
+> **EntityTransformData**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| EntityTransformData()                                                          | Create a new instance of this container type.                                                                                 |
-| EntityTransformData(EntityTransformData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| EntityTransformData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EntityTransformData](/vext/ref/fb/entitytransformdata/). |
+Creates a new [EntityTransformData](/vext/ref/fb/entitytransformdata) frostbite instance.
 
-## Properties
+### EntityTransformData {#constructor-1}
+> **EntityTransformData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name             | Type                                                        | Description |
-| ---------------- | ----------------------------------------------------------- | ----------- |
-| entityTransforms | [LinearTransform](/vext/ref/shared/class/lineartransform)\[\] |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [EntityTransformData](/vext/ref/fb/entitytransformdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [EntityTransformData](/vext/ref/fb/entitytransformdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [EntityTransformData](/vext/ref/fb/entitytransformdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### EntityTransformData {#constructor-2}
+> **EntityTransformData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EntityTransformData](/vext/ref/fb/entitytransformdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [EntityTransformData](/vext/ref/fb/entitytransformdata). |
+
+## Properties
+### {{% prop-heading "entityTransforms" %}}
+> **[LinearTransform](/vext/ref/shared/class/lineartransform)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [EntityTransformData](/vext/ref/fb/entitytransformdata) type.
+

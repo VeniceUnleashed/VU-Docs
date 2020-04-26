@@ -1,47 +1,102 @@
 ---
 title: MovieComponentData
 ---
-### Base Classes
 
-[ComponentData](/vext/ref/fb/componentdata/)
+Inherits from 
+[ComponentData](/vext/ref/fb/componentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MovieComponentData](#constructor-0)**() |
+| **[MovieComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MovieComponentData](#constructor-2)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[MovieComponentData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[MovieComponentData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[MovieComponentData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "movie" >}} | [MovieTextureAsset](/vext/ref/fb/movietextureasset) \| nil |
+| {{< prop "externalTime" >}} | float |
+| {{< prop "isNormalMap" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MovieComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MovieComponentData {#constructor-0}
+> **MovieComponentData**()
 
-| Constructor                                                                   | Description                                                                                                                 |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| MovieComponentData()                                                          | Create a new instance of this container type.                                                                               |
-| MovieComponentData(MovieComponentData other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| MovieComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [MovieComponentData](/vext/ref/fb/moviecomponentdata/).                      |
-| MovieComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [MovieComponentData](/vext/ref/fb/moviecomponentdata/).                    |
-| MovieComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [MovieComponentData](/vext/ref/fb/moviecomponentdata/).              |
-| MovieComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MovieComponentData](/vext/ref/fb/moviecomponentdata/). |
+Creates a new [MovieComponentData](/vext/ref/fb/moviecomponentdata) frostbite instance.
 
-## Properties
+### MovieComponentData {#constructor-1}
+> **MovieComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name         | Type                                   | Description |
-| ------------ | -------------------------------------- | ----------- |
-| movie        | [MovieTextureAsset](/vext/ref/fb/movietextureasset/) |             |
-| externalTime | number                                 |             |
-| isNormalMap  | bool                                   |             |
-
-## Methods
-
-| Type                                     | Name            | Parameters                                     |
-| ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [MovieComponentData](/vext/ref/fb/moviecomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MovieComponentData](/vext/ref/fb/moviecomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MovieComponentData](/vext/ref/fb/moviecomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MovieComponentData {#constructor-2}
+> **MovieComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [MovieComponentData](/vext/ref/fb/moviecomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [MovieComponentData](/vext/ref/fb/moviecomponentdata). |
+
+### MovieComponentData {#constructor-3}
+> **MovieComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [MovieComponentData](/vext/ref/fb/moviecomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [MovieComponentData](/vext/ref/fb/moviecomponentdata). |
+
+### MovieComponentData {#constructor-4}
+> **MovieComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [MovieComponentData](/vext/ref/fb/moviecomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [MovieComponentData](/vext/ref/fb/moviecomponentdata). |
+
+### MovieComponentData {#constructor-5}
+> **MovieComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MovieComponentData](/vext/ref/fb/moviecomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MovieComponentData](/vext/ref/fb/moviecomponentdata). |
+
+## Properties
+### {{% prop-heading "movie" %}}
+> **[MovieTextureAsset](/vext/ref/fb/movietextureasset)** | **nil**
+
+### {{% prop-heading "externalTime" %}}
+> **float**
+
+### {{% prop-heading "isNormalMap" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MovieComponentData](/vext/ref/fb/moviecomponentdata) type.
+

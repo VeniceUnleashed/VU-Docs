@@ -1,43 +1,65 @@
 ---
 title: SkeletonCollisionData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SkeletonCollisionData](#constructor-0)**() |
+| **[SkeletonCollisionData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SkeletonCollisionData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "skeletonAsset" >}} | [SkeletonAsset](/vext/ref/fb/skeletonasset) \| nil |
+| {{< prop "boneCollisionData" >}} | [BoneCollisionData](/vext/ref/fb/bonecollisiondata)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SkeletonCollisionData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SkeletonCollisionData {#constructor-0}
+> **SkeletonCollisionData**()
 
-| Constructor                                                                      | Description                                                                                                                       |
-| -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| SkeletonCollisionData()                                                          | Create a new instance of this container type.                                                                                     |
-| SkeletonCollisionData(SkeletonCollisionData other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| SkeletonCollisionData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SkeletonCollisionData](/vext/ref/fb/skeletoncollisiondata/). |
+Creates a new [SkeletonCollisionData](/vext/ref/fb/skeletoncollisiondata) frostbite instance.
 
-## Properties
+### SkeletonCollisionData {#constructor-1}
+> **SkeletonCollisionData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name              | Type                                       | Description |
-| ----------------- | ------------------------------------------ | ----------- |
-| skeletonAsset     | [SkeletonAsset](/vext/ref/fb/skeletonasset/)             |             |
-| boneCollisionData | [BoneCollisionData](/vext/ref/fb/bonecollisiondata/)\[\] |             |
-
-## Methods
-
-| Type                                           | Name            | Parameters                                     |
-| ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [SkeletonCollisionData](/vext/ref/fb/skeletoncollisiondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SkeletonCollisionData](/vext/ref/fb/skeletoncollisiondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SkeletonCollisionData](/vext/ref/fb/skeletoncollisiondata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SkeletonCollisionData {#constructor-2}
+> **SkeletonCollisionData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SkeletonCollisionData](/vext/ref/fb/skeletoncollisiondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SkeletonCollisionData](/vext/ref/fb/skeletoncollisiondata). |
+
+## Properties
+### {{% prop-heading "skeletonAsset" %}}
+> **[SkeletonAsset](/vext/ref/fb/skeletonasset)** | **nil**
+
+### {{% prop-heading "boneCollisionData" %}}
+> **[BoneCollisionData](/vext/ref/fb/bonecollisiondata)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SkeletonCollisionData](/vext/ref/fb/skeletoncollisiondata) type.
+

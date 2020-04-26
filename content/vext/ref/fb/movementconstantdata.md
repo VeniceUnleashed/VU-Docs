@@ -1,43 +1,72 @@
 ---
 title: MovementConstantData
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MovementConstantData](#constructor-0)**() |
+| **[MovementConstantData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MovementConstantData](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[MovementConstantData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "maxCrouchWalkDistance" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MovementConstantData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MovementConstantData {#constructor-0}
+> **MovementConstantData**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| MovementConstantData()                                                          | Create a new instance of this container type.                                                                                   |
-| MovementConstantData(MovementConstantData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| MovementConstantData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [MovementConstantData](/vext/ref/fb/movementconstantdata/).                                      |
-| MovementConstantData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MovementConstantData](/vext/ref/fb/movementconstantdata/). |
+Creates a new [MovementConstantData](/vext/ref/fb/movementconstantdata) frostbite instance.
 
-## Properties
+### MovementConstantData {#constructor-1}
+> **MovementConstantData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                  | Type   | Description |
-| --------------------- | ------ | ----------- |
-| maxCrouchWalkDistance | number |             |
-
-## Methods
-
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [MovementConstantData](/vext/ref/fb/movementconstantdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MovementConstantData](/vext/ref/fb/movementconstantdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MovementConstantData](/vext/ref/fb/movementconstantdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MovementConstantData {#constructor-2}
+> **MovementConstantData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [MovementConstantData](/vext/ref/fb/movementconstantdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [MovementConstantData](/vext/ref/fb/movementconstantdata). |
+
+### MovementConstantData {#constructor-3}
+> **MovementConstantData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MovementConstantData](/vext/ref/fb/movementconstantdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MovementConstantData](/vext/ref/fb/movementconstantdata). |
+
+## Properties
+### {{% prop-heading "maxCrouchWalkDistance" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MovementConstantData](/vext/ref/fb/movementconstantdata) type.
+

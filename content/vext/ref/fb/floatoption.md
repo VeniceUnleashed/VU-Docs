@@ -1,35 +1,69 @@
 ---
 title: FloatOption
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[FloatOption](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "name" >}} | string |
+| {{< prop "value" >}} | float |
+| {{< prop "min" >}} | float |
+| {{< prop "max" >}} | float |
+| {{< prop "step" >}} | float |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [FloatOption](/vext/ref/fb/floatoption) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "FloatOption" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### FloatOption {#constructor-0}
+> **FloatOption**()
 
-| Constructor                    | Description                                              |
-| ------------------------------ | -------------------------------------------------------- |
-| FloatOption()                  | Create a new instance of this structure type.            |
-| FloatOption(FloatOption other) | Create a reference copy of a structure of the same type. |
+Creates a new [FloatOption](/vext/ref/fb/floatoption) frostbite structure.
 
 ## Properties
+### {{% prop-heading "name" %}}
+> **string**
 
-| Name  | Type   | Description |
-| ----- | ------ | ----------- |
-| name  | string |             |
-| value | number |             |
-| min   | number |             |
-| max   | number |             |
-| step  | number |             |
+### {{% prop-heading "value" %}}
+> **float**
+
+### {{% prop-heading "min" %}}
+> **float**
+
+### {{% prop-heading "max" %}}
+> **float**
+
+### {{% prop-heading "step" %}}
+> **float**
 
 ## Methods
-
-| Type                       | Name            | Parameters |
-| -------------------------- | --------------- | ---------- |
-| [FloatOption](/vext/ref/fb/floatoption/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [FloatOption](/vext/ref/fb/floatoption)
 
-> [FloatOption](/vext/ref/fb/floatoption/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[FloatOption](/vext/ref/fb/floatoption)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [FloatOption](/vext/ref/fb/floatoption) type.
+

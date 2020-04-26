@@ -1,43 +1,72 @@
 ---
 title: LicenseConfiguration
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[LicenseConfiguration](#constructor-0)**() |
+| **[LicenseConfiguration](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[LicenseConfiguration](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[LicenseConfiguration](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "licenses" >}} | [LicenseInfo](/vext/ref/fb/licenseinfo)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "LicenseConfiguration" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### LicenseConfiguration {#constructor-0}
+> **LicenseConfiguration**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| LicenseConfiguration()                                                          | Create a new instance of this container type.                                                                                   |
-| LicenseConfiguration(LicenseConfiguration other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| LicenseConfiguration([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [LicenseConfiguration](/vext/ref/fb/licenseconfiguration/).                                      |
-| LicenseConfiguration([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LicenseConfiguration](/vext/ref/fb/licenseconfiguration/). |
+Creates a new [LicenseConfiguration](/vext/ref/fb/licenseconfiguration) frostbite instance.
 
-## Properties
+### LicenseConfiguration {#constructor-1}
+> **LicenseConfiguration**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name     | Type                           | Description |
-| -------- | ------------------------------ | ----------- |
-| licenses | [LicenseInfo](/vext/ref/fb/licenseinfo/)\[\] |             |
-
-## Methods
-
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [LicenseConfiguration](/vext/ref/fb/licenseconfiguration/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [LicenseConfiguration](/vext/ref/fb/licenseconfiguration/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [LicenseConfiguration](/vext/ref/fb/licenseconfiguration) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### LicenseConfiguration {#constructor-2}
+> **LicenseConfiguration**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [LicenseConfiguration](/vext/ref/fb/licenseconfiguration). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [LicenseConfiguration](/vext/ref/fb/licenseconfiguration). |
+
+### LicenseConfiguration {#constructor-3}
+> **LicenseConfiguration**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LicenseConfiguration](/vext/ref/fb/licenseconfiguration). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [LicenseConfiguration](/vext/ref/fb/licenseconfiguration). |
+
+## Properties
+### {{% prop-heading "licenses" %}}
+> **[LicenseInfo](/vext/ref/fb/licenseinfo)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [LicenseConfiguration](/vext/ref/fb/licenseconfiguration) type.
+

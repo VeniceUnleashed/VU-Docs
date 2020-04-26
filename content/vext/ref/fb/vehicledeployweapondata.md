@@ -1,50 +1,107 @@
 ---
 title: VehicleDeployWeaponData
 ---
-### Base Classes
 
-[WeaponData](/vext/ref/fb/weapondata/)
+Inherits from 
+[WeaponData](/vext/ref/fb/weapondata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VehicleDeployWeaponData](#constructor-0)**() |
+| **[VehicleDeployWeaponData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VehicleDeployWeaponData](#constructor-2)**(other: [WeaponData](/vext/ref/fb/weapondata)) |
+| **[VehicleDeployWeaponData](#constructor-3)**(other: [ToolData](/vext/ref/fb/tooldata)) |
+| **[VehicleDeployWeaponData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "deployAreaRadius" >}} | float |
+| {{< prop "previewObject" >}} | [ObjectBlueprint](/vext/ref/fb/objectblueprint) \| nil |
+| {{< prop "deployAreaGroundRayLength" >}} | float |
+| {{< prop "deployAreaGroundFlatness" >}} | float |
+| {{< prop "usePreview" >}} | bool |
+| {{< prop "checkClearSky" >}} | bool |
+| {{< prop "canRemoteEnterVehicle" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VehicleDeployWeaponData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VehicleDeployWeaponData {#constructor-0}
+> **VehicleDeployWeaponData**()
 
-| Constructor                                                                        | Description                                                                                                                           |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| VehicleDeployWeaponData()                                                          | Create a new instance of this container type.                                                                                         |
-| VehicleDeployWeaponData(VehicleDeployWeaponData other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| VehicleDeployWeaponData([WeaponData](/vext/ref/fb/weapondata/) other)                            | Upcast an instance of type [WeaponData](/vext/ref/fb/weapondata/) to [VehicleDeployWeaponData](/vext/ref/fb/vehicledeployweapondata/).                            |
-| VehicleDeployWeaponData([ToolData](/vext/ref/fb/tooldata/) other)                                | Upcast an instance of type [ToolData](/vext/ref/fb/tooldata/) to [VehicleDeployWeaponData](/vext/ref/fb/vehicledeployweapondata/).                                |
-| VehicleDeployWeaponData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VehicleDeployWeaponData](/vext/ref/fb/vehicledeployweapondata/). |
+Creates a new [VehicleDeployWeaponData](/vext/ref/fb/vehicledeployweapondata) frostbite instance.
 
-## Properties
+### VehicleDeployWeaponData {#constructor-1}
+> **VehicleDeployWeaponData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                      | Type                               | Description |
-| ------------------------- | ---------------------------------- | ----------- |
-| deployAreaRadius          | number                             |             |
-| previewObject             | [ObjectBlueprint](/vext/ref/fb/objectblueprint/) |             |
-| deployAreaGroundRayLength | number                             |             |
-| deployAreaGroundFlatness  | number                             |             |
-| usePreview                | bool                               |             |
-| checkClearSky             | bool                               |             |
-| canRemoteEnterVehicle     | bool                               |             |
-
-## Methods
-
-| Type                                               | Name            | Parameters                                     |
-| -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [VehicleDeployWeaponData](/vext/ref/fb/vehicledeployweapondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VehicleDeployWeaponData](/vext/ref/fb/vehicledeployweapondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VehicleDeployWeaponData](/vext/ref/fb/vehicledeployweapondata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VehicleDeployWeaponData {#constructor-2}
+> **VehicleDeployWeaponData**(other: [WeaponData](/vext/ref/fb/weapondata))
+
+Casts an instance of type [WeaponData](/vext/ref/fb/weapondata) to [VehicleDeployWeaponData](/vext/ref/fb/vehicledeployweapondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [WeaponData](/vext/ref/fb/weapondata) | The instance to cast to [VehicleDeployWeaponData](/vext/ref/fb/vehicledeployweapondata). |
+
+### VehicleDeployWeaponData {#constructor-3}
+> **VehicleDeployWeaponData**(other: [ToolData](/vext/ref/fb/tooldata))
+
+Casts an instance of type [ToolData](/vext/ref/fb/tooldata) to [VehicleDeployWeaponData](/vext/ref/fb/vehicledeployweapondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ToolData](/vext/ref/fb/tooldata) | The instance to cast to [VehicleDeployWeaponData](/vext/ref/fb/vehicledeployweapondata). |
+
+### VehicleDeployWeaponData {#constructor-4}
+> **VehicleDeployWeaponData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VehicleDeployWeaponData](/vext/ref/fb/vehicledeployweapondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VehicleDeployWeaponData](/vext/ref/fb/vehicledeployweapondata). |
+
+## Properties
+### {{% prop-heading "deployAreaRadius" %}}
+> **float**
+
+### {{% prop-heading "previewObject" %}}
+> **[ObjectBlueprint](/vext/ref/fb/objectblueprint)** | **nil**
+
+### {{% prop-heading "deployAreaGroundRayLength" %}}
+> **float**
+
+### {{% prop-heading "deployAreaGroundFlatness" %}}
+> **float**
+
+### {{% prop-heading "usePreview" %}}
+> **bool**
+
+### {{% prop-heading "checkClearSky" %}}
+> **bool**
+
+### {{% prop-heading "canRemoteEnterVehicle" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VehicleDeployWeaponData](/vext/ref/fb/vehicledeployweapondata) type.
+

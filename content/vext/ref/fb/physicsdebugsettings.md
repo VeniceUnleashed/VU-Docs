@@ -1,44 +1,69 @@
 ---
 title: PhysicsDebugSettings
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PhysicsDebugSettings](#constructor-0)**() |
+| **[PhysicsDebugSettings](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PhysicsDebugSettings](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "timingRecursionDepth" >}} | int |
+| {{< prop "usePhysicsCpuTimers" >}} | bool |
+| {{< prop "debugHingeConstraints" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PhysicsDebugSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PhysicsDebugSettings {#constructor-0}
+> **PhysicsDebugSettings**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| PhysicsDebugSettings()                                                          | Create a new instance of this container type.                                                                                   |
-| PhysicsDebugSettings(PhysicsDebugSettings other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| PhysicsDebugSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PhysicsDebugSettings](/vext/ref/fb/physicsdebugsettings/). |
+Creates a new [PhysicsDebugSettings](/vext/ref/fb/physicsdebugsettings) frostbite instance.
 
-## Properties
+### PhysicsDebugSettings {#constructor-1}
+> **PhysicsDebugSettings**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                  | Type   | Description |
-| --------------------- | ------ | ----------- |
-| timingRecursionDepth  | number |             |
-| usePhysicsCpuTimers   | bool   |             |
-| debugHingeConstraints | bool   |             |
-
-## Methods
-
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [PhysicsDebugSettings](/vext/ref/fb/physicsdebugsettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PhysicsDebugSettings](/vext/ref/fb/physicsdebugsettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PhysicsDebugSettings](/vext/ref/fb/physicsdebugsettings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PhysicsDebugSettings {#constructor-2}
+> **PhysicsDebugSettings**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PhysicsDebugSettings](/vext/ref/fb/physicsdebugsettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PhysicsDebugSettings](/vext/ref/fb/physicsdebugsettings). |
+
+## Properties
+### {{% prop-heading "timingRecursionDepth" %}}
+> **int**
+
+### {{% prop-heading "usePhysicsCpuTimers" %}}
+> **bool**
+
+### {{% prop-heading "debugHingeConstraints" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PhysicsDebugSettings](/vext/ref/fb/physicsdebugsettings) type.
+

@@ -1,44 +1,83 @@
 ---
 title: UpdateAlphaLevelMaxData
 ---
-### Base Classes
 
-[ProcessorData](/vext/ref/fb/processordata/)
+Inherits from 
+[ProcessorData](/vext/ref/fb/processordata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UpdateAlphaLevelMaxData](#constructor-0)**() |
+| **[UpdateAlphaLevelMaxData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UpdateAlphaLevelMaxData](#constructor-2)**(other: [ProcessorData](/vext/ref/fb/processordata)) |
+| **[UpdateAlphaLevelMaxData](#constructor-3)**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata)) |
+| **[UpdateAlphaLevelMaxData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "maxLevel" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UpdateAlphaLevelMaxData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UpdateAlphaLevelMaxData {#constructor-0}
+> **UpdateAlphaLevelMaxData**()
 
-| Constructor                                                                        | Description                                                                                                                           |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| UpdateAlphaLevelMaxData()                                                          | Create a new instance of this container type.                                                                                         |
-| UpdateAlphaLevelMaxData(UpdateAlphaLevelMaxData other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| UpdateAlphaLevelMaxData([ProcessorData](/vext/ref/fb/processordata/) other)                      | Upcast an instance of type [ProcessorData](/vext/ref/fb/processordata/) to [UpdateAlphaLevelMaxData](/vext/ref/fb/updatealphalevelmaxdata/).                      |
-| UpdateAlphaLevelMaxData([EmitterComponentData](/vext/ref/fb/emittercomponentdata/) other)        | Upcast an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata/) to [UpdateAlphaLevelMaxData](/vext/ref/fb/updatealphalevelmaxdata/).        |
-| UpdateAlphaLevelMaxData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UpdateAlphaLevelMaxData](/vext/ref/fb/updatealphalevelmaxdata/). |
+Creates a new [UpdateAlphaLevelMaxData](/vext/ref/fb/updatealphalevelmaxdata) frostbite instance.
 
-## Properties
+### UpdateAlphaLevelMaxData {#constructor-1}
+> **UpdateAlphaLevelMaxData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name     | Type   | Description |
-| -------- | ------ | ----------- |
-| maxLevel | number |             |
-
-## Methods
-
-| Type                                               | Name            | Parameters                                     |
-| -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [UpdateAlphaLevelMaxData](/vext/ref/fb/updatealphalevelmaxdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UpdateAlphaLevelMaxData](/vext/ref/fb/updatealphalevelmaxdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UpdateAlphaLevelMaxData](/vext/ref/fb/updatealphalevelmaxdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UpdateAlphaLevelMaxData {#constructor-2}
+> **UpdateAlphaLevelMaxData**(other: [ProcessorData](/vext/ref/fb/processordata))
+
+Casts an instance of type [ProcessorData](/vext/ref/fb/processordata) to [UpdateAlphaLevelMaxData](/vext/ref/fb/updatealphalevelmaxdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ProcessorData](/vext/ref/fb/processordata) | The instance to cast to [UpdateAlphaLevelMaxData](/vext/ref/fb/updatealphalevelmaxdata). |
+
+### UpdateAlphaLevelMaxData {#constructor-3}
+> **UpdateAlphaLevelMaxData**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata))
+
+Casts an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata) to [UpdateAlphaLevelMaxData](/vext/ref/fb/updatealphalevelmaxdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EmitterComponentData](/vext/ref/fb/emittercomponentdata) | The instance to cast to [UpdateAlphaLevelMaxData](/vext/ref/fb/updatealphalevelmaxdata). |
+
+### UpdateAlphaLevelMaxData {#constructor-4}
+> **UpdateAlphaLevelMaxData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UpdateAlphaLevelMaxData](/vext/ref/fb/updatealphalevelmaxdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UpdateAlphaLevelMaxData](/vext/ref/fb/updatealphalevelmaxdata). |
+
+## Properties
+### {{% prop-heading "maxLevel" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UpdateAlphaLevelMaxData](/vext/ref/fb/updatealphalevelmaxdata) type.
+

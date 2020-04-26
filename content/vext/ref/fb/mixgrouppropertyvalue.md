@@ -1,32 +1,57 @@
 ---
 title: MixGroupPropertyValue
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MixGroupPropertyValue](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "property" >}} | int |
+| {{< prop "value" >}} | float |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [MixGroupPropertyValue](/vext/ref/fb/mixgrouppropertyvalue) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MixGroupPropertyValue" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MixGroupPropertyValue {#constructor-0}
+> **MixGroupPropertyValue**()
 
-| Constructor                                        | Description                                              |
-| -------------------------------------------------- | -------------------------------------------------------- |
-| MixGroupPropertyValue()                            | Create a new instance of this structure type.            |
-| MixGroupPropertyValue(MixGroupPropertyValue other) | Create a reference copy of a structure of the same type. |
+Creates a new [MixGroupPropertyValue](/vext/ref/fb/mixgrouppropertyvalue) frostbite structure.
 
 ## Properties
+### {{% prop-heading "property" %}}
+> **int**
 
-| Name     | Type   | Description |
-| -------- | ------ | ----------- |
-| property | number |             |
-| value    | number |             |
+### {{% prop-heading "value" %}}
+> **float**
 
 ## Methods
-
-| Type                                           | Name            | Parameters |
-| ---------------------------------------------- | --------------- | ---------- |
-| [MixGroupPropertyValue](/vext/ref/fb/mixgrouppropertyvalue/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [MixGroupPropertyValue](/vext/ref/fb/mixgrouppropertyvalue)
 
-> [MixGroupPropertyValue](/vext/ref/fb/mixgrouppropertyvalue/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[MixGroupPropertyValue](/vext/ref/fb/mixgrouppropertyvalue)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MixGroupPropertyValue](/vext/ref/fb/mixgrouppropertyvalue) type.
+

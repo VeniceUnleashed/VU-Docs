@@ -1,44 +1,69 @@
 ---
 title: MaterialSoldierSoundSettings
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MaterialSoldierSoundSettings](#constructor-0)**() |
+| **[MaterialSoldierSoundSettings](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MaterialSoldierSoundSettings](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "footStepSound" >}} | [SoundAsset](/vext/ref/fb/soundasset) \| nil |
+| {{< prop "proneSound" >}} | [SoundAsset](/vext/ref/fb/soundasset) \| nil |
+| {{< prop "landSound" >}} | [SoundAsset](/vext/ref/fb/soundasset) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MaterialSoldierSoundSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MaterialSoldierSoundSettings {#constructor-0}
+> **MaterialSoldierSoundSettings**()
 
-| Constructor                                                                             | Description                                                                                                                                     |
-| --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| MaterialSoldierSoundSettings()                                                          | Create a new instance of this container type.                                                                                                   |
-| MaterialSoldierSoundSettings(MaterialSoldierSoundSettings other)                        | Create a reference copy of an instance of the same type.                                                                                        |
-| MaterialSoldierSoundSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MaterialSoldierSoundSettings](/vext/ref/fb/materialsoldiersoundsettings/). |
+Creates a new [MaterialSoldierSoundSettings](/vext/ref/fb/materialsoldiersoundsettings) frostbite instance.
 
-## Properties
+### MaterialSoldierSoundSettings {#constructor-1}
+> **MaterialSoldierSoundSettings**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name          | Type                     | Description |
-| ------------- | ------------------------ | ----------- |
-| footStepSound | [SoundAsset](/vext/ref/fb/soundasset/) |             |
-| proneSound    | [SoundAsset](/vext/ref/fb/soundasset/) |             |
-| landSound     | [SoundAsset](/vext/ref/fb/soundasset/) |             |
-
-## Methods
-
-| Type                                                         | Name            | Parameters                                     |
-| ------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [MaterialSoldierSoundSettings](/vext/ref/fb/materialsoldiersoundsettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MaterialSoldierSoundSettings](/vext/ref/fb/materialsoldiersoundsettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MaterialSoldierSoundSettings](/vext/ref/fb/materialsoldiersoundsettings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MaterialSoldierSoundSettings {#constructor-2}
+> **MaterialSoldierSoundSettings**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MaterialSoldierSoundSettings](/vext/ref/fb/materialsoldiersoundsettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MaterialSoldierSoundSettings](/vext/ref/fb/materialsoldiersoundsettings). |
+
+## Properties
+### {{% prop-heading "footStepSound" %}}
+> **[SoundAsset](/vext/ref/fb/soundasset)** | **nil**
+
+### {{% prop-heading "proneSound" %}}
+> **[SoundAsset](/vext/ref/fb/soundasset)** | **nil**
+
+### {{% prop-heading "landSound" %}}
+> **[SoundAsset](/vext/ref/fb/soundasset)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MaterialSoldierSoundSettings](/vext/ref/fb/materialsoldiersoundsettings) type.
+

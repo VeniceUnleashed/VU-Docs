@@ -1,60 +1,140 @@
 ---
 title: GameAnimationSettings
 ---
-### Base Classes
 
-[SystemSettings](/vext/ref/fb/systemsettings/)
+Inherits from 
+[SystemSettings](/vext/ref/fb/systemsettings)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[GameAnimationSettings](#constructor-0)**() |
+| **[GameAnimationSettings](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[GameAnimationSettings](#constructor-2)**(other: [SystemSettings](/vext/ref/fb/systemsettings)) |
+| **[GameAnimationSettings](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "temporalLoddingFourthDeltaTime" >}} | float |
+| {{< prop "antOnClientOnlyGamemodes" >}} | string[] |
+| {{< prop "temporalLoddingFarDistance" >}} | float |
+| {{< prop "temporalLoddingSixthDeltaTime" >}} | float |
+| {{< prop "temporalLoddingFifthDeltaTime" >}} | float |
+| {{< prop "temporalLoddingFirstDeltaTime" >}} | float |
+| {{< prop "temporalLoddingSecondDeltaTime" >}} | float |
+| {{< prop "temporalLoddingThirdDeltaTime" >}} | float |
+| {{< prop "temporalLoddingSixthDistance" >}} | float |
+| {{< prop "temporalLoddingSecondDistance" >}} | float |
+| {{< prop "temporalLoddingFifthDistance" >}} | float |
+| {{< prop "temporalLoddingFirstDistance" >}} | float |
+| {{< prop "temporalLoddingThirdDistance" >}} | float |
+| {{< prop "temporalLoddingFourthDistance" >}} | float |
+| {{< prop "serverEnable" >}} | bool |
+| {{< prop "useRawGamepadInput" >}} | bool |
+| {{< prop "clientEnable" >}} | bool |
+| {{< prop "useAnimationDrivenCharacter" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "GameAnimationSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### GameAnimationSettings {#constructor-0}
+> **GameAnimationSettings**()
 
-| Constructor                                                                      | Description                                                                                                                       |
-| -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| GameAnimationSettings()                                                          | Create a new instance of this container type.                                                                                     |
-| GameAnimationSettings(GameAnimationSettings other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| GameAnimationSettings([SystemSettings](/vext/ref/fb/systemsettings/) other)                    | Upcast an instance of type [SystemSettings](/vext/ref/fb/systemsettings/) to [GameAnimationSettings](/vext/ref/fb/gameanimationsettings/).                    |
-| GameAnimationSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GameAnimationSettings](/vext/ref/fb/gameanimationsettings/). |
+Creates a new [GameAnimationSettings](/vext/ref/fb/gameanimationsettings) frostbite instance.
 
-## Properties
+### GameAnimationSettings {#constructor-1}
+> **GameAnimationSettings**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                           | Type       | Description |
-| ------------------------------ | ---------- | ----------- |
-| temporalLoddingFourthDeltaTime | number     |             |
-| antOnClientOnlyGamemodes       | string\[\] |             |
-| temporalLoddingFarDistance     | number     |             |
-| temporalLoddingSixthDeltaTime  | number     |             |
-| temporalLoddingFifthDeltaTime  | number     |             |
-| temporalLoddingFirstDeltaTime  | number     |             |
-| temporalLoddingSecondDeltaTime | number     |             |
-| temporalLoddingThirdDeltaTime  | number     |             |
-| temporalLoddingSixthDistance   | number     |             |
-| temporalLoddingSecondDistance  | number     |             |
-| temporalLoddingFifthDistance   | number     |             |
-| temporalLoddingFirstDistance   | number     |             |
-| temporalLoddingThirdDistance   | number     |             |
-| temporalLoddingFourthDistance  | number     |             |
-| serverEnable                   | bool       |             |
-| useRawGamepadInput             | bool       |             |
-| clientEnable                   | bool       |             |
-| useAnimationDrivenCharacter    | bool       |             |
-
-## Methods
-
-| Type                                           | Name            | Parameters                                     |
-| ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [GameAnimationSettings](/vext/ref/fb/gameanimationsettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [GameAnimationSettings](/vext/ref/fb/gameanimationsettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [GameAnimationSettings](/vext/ref/fb/gameanimationsettings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### GameAnimationSettings {#constructor-2}
+> **GameAnimationSettings**(other: [SystemSettings](/vext/ref/fb/systemsettings))
+
+Casts an instance of type [SystemSettings](/vext/ref/fb/systemsettings) to [GameAnimationSettings](/vext/ref/fb/gameanimationsettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SystemSettings](/vext/ref/fb/systemsettings) | The instance to cast to [GameAnimationSettings](/vext/ref/fb/gameanimationsettings). |
+
+### GameAnimationSettings {#constructor-3}
+> **GameAnimationSettings**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GameAnimationSettings](/vext/ref/fb/gameanimationsettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [GameAnimationSettings](/vext/ref/fb/gameanimationsettings). |
+
+## Properties
+### {{% prop-heading "temporalLoddingFourthDeltaTime" %}}
+> **float**
+
+### {{% prop-heading "antOnClientOnlyGamemodes" %}}
+> **string**[]
+
+### {{% prop-heading "temporalLoddingFarDistance" %}}
+> **float**
+
+### {{% prop-heading "temporalLoddingSixthDeltaTime" %}}
+> **float**
+
+### {{% prop-heading "temporalLoddingFifthDeltaTime" %}}
+> **float**
+
+### {{% prop-heading "temporalLoddingFirstDeltaTime" %}}
+> **float**
+
+### {{% prop-heading "temporalLoddingSecondDeltaTime" %}}
+> **float**
+
+### {{% prop-heading "temporalLoddingThirdDeltaTime" %}}
+> **float**
+
+### {{% prop-heading "temporalLoddingSixthDistance" %}}
+> **float**
+
+### {{% prop-heading "temporalLoddingSecondDistance" %}}
+> **float**
+
+### {{% prop-heading "temporalLoddingFifthDistance" %}}
+> **float**
+
+### {{% prop-heading "temporalLoddingFirstDistance" %}}
+> **float**
+
+### {{% prop-heading "temporalLoddingThirdDistance" %}}
+> **float**
+
+### {{% prop-heading "temporalLoddingFourthDistance" %}}
+> **float**
+
+### {{% prop-heading "serverEnable" %}}
+> **bool**
+
+### {{% prop-heading "useRawGamepadInput" %}}
+> **bool**
+
+### {{% prop-heading "clientEnable" %}}
+> **bool**
+
+### {{% prop-heading "useAnimationDrivenCharacter" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [GameAnimationSettings](/vext/ref/fb/gameanimationsettings) type.
+

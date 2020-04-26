@@ -1,48 +1,92 @@
 ---
 title: JoypadNodeData
 ---
-### Base Classes
 
-[AudioGraphNodeData](/vext/ref/fb/audiographnodedata/)
+Inherits from 
+[AudioGraphNodeData](/vext/ref/fb/audiographnodedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[JoypadNodeData](#constructor-0)**() |
+| **[JoypadNodeData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[JoypadNodeData](#constructor-2)**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata)) |
+| **[JoypadNodeData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "leftAnalogX" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "leftAnalogY" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "rightAnalogX" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "rightAnalogY" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "aButton" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "bButton" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "JoypadNodeData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### JoypadNodeData {#constructor-0}
+> **JoypadNodeData**()
 
-| Constructor                                                               | Description                                                                                                         |
-| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| JoypadNodeData()                                                          | Create a new instance of this container type.                                                                       |
-| JoypadNodeData(JoypadNodeData other)                                      | Create a reference copy of an instance of the same type.                                                            |
-| JoypadNodeData([AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) other)            | Upcast an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) to [JoypadNodeData](/vext/ref/fb/joypadnodedata/).            |
-| JoypadNodeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [JoypadNodeData](/vext/ref/fb/joypadnodedata/). |
+Creates a new [JoypadNodeData](/vext/ref/fb/joypadnodedata) frostbite instance.
 
-## Properties
+### JoypadNodeData {#constructor-1}
+> **JoypadNodeData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name         | Type                                     | Description |
-| ------------ | ---------------------------------------- | ----------- |
-| leftAnalogX  | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| leftAnalogY  | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| rightAnalogX | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| rightAnalogY | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| aButton      | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| bButton      | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-
-## Methods
-
-| Type                             | Name            | Parameters                                     |
-| -------------------------------- | --------------- | ---------------------------------------------- |
-| [JoypadNodeData](/vext/ref/fb/joypadnodedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [JoypadNodeData](/vext/ref/fb/joypadnodedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [JoypadNodeData](/vext/ref/fb/joypadnodedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### JoypadNodeData {#constructor-2}
+> **JoypadNodeData**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata))
+
+Casts an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) to [JoypadNodeData](/vext/ref/fb/joypadnodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) | The instance to cast to [JoypadNodeData](/vext/ref/fb/joypadnodedata). |
+
+### JoypadNodeData {#constructor-3}
+> **JoypadNodeData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [JoypadNodeData](/vext/ref/fb/joypadnodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [JoypadNodeData](/vext/ref/fb/joypadnodedata). |
+
+## Properties
+### {{% prop-heading "leftAnalogX" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "leftAnalogY" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "rightAnalogX" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "rightAnalogY" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "aButton" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "bButton" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [JoypadNodeData](/vext/ref/fb/joypadnodedata) type.
+

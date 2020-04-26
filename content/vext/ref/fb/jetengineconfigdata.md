@@ -1,50 +1,100 @@
 ---
 title: JetEngineConfigData
 ---
-### Base Classes
 
-[EngineConfigData](/vext/ref/fb/engineconfigdata/)
+Inherits from 
+[EngineConfigData](/vext/ref/fb/engineconfigdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[JetEngineConfigData](#constructor-0)**() |
+| **[JetEngineConfigData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[JetEngineConfigData](#constructor-2)**(other: [EngineConfigData](/vext/ref/fb/engineconfigdata)) |
+| **[JetEngineConfigData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "powerFadeOutRange" >}} | [Vec2](/vext/ref/shared/class/vec2) |
+| {{< prop "forceMagnitudeMultiplier" >}} | float |
+| {{< prop "angleInputYMultiplier" >}} | float |
+| {{< prop "angleInputPitchMultiplier" >}} | float |
+| {{< prop "maxVelocity" >}} | float |
+| {{< prop "directionVectorIndex" >}} | int |
+| {{< prop "isWaterJetEngine" >}} | bool |
+| {{< prop "isTurnable" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "JetEngineConfigData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### JetEngineConfigData {#constructor-0}
+> **JetEngineConfigData**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| JetEngineConfigData()                                                          | Create a new instance of this container type.                                                                                 |
-| JetEngineConfigData(JetEngineConfigData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| JetEngineConfigData([EngineConfigData](/vext/ref/fb/engineconfigdata/) other)                | Upcast an instance of type [EngineConfigData](/vext/ref/fb/engineconfigdata/) to [JetEngineConfigData](/vext/ref/fb/jetengineconfigdata/).                |
-| JetEngineConfigData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [JetEngineConfigData](/vext/ref/fb/jetengineconfigdata/). |
+Creates a new [JetEngineConfigData](/vext/ref/fb/jetengineconfigdata) frostbite instance.
 
-## Properties
+### JetEngineConfigData {#constructor-1}
+> **JetEngineConfigData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                      | Type                              | Description |
-| ------------------------- | --------------------------------- | ----------- |
-| powerFadeOutRange         | [Vec2](/vext/ref/shared/class/vec2) |             |
-| forceMagnitudeMultiplier  | number                            |             |
-| angleInputYMultiplier     | number                            |             |
-| angleInputPitchMultiplier | number                            |             |
-| maxVelocity               | number                            |             |
-| directionVectorIndex      | number                            |             |
-| isWaterJetEngine          | bool                              |             |
-| isTurnable                | bool                              |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [JetEngineConfigData](/vext/ref/fb/jetengineconfigdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [JetEngineConfigData](/vext/ref/fb/jetengineconfigdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [JetEngineConfigData](/vext/ref/fb/jetengineconfigdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### JetEngineConfigData {#constructor-2}
+> **JetEngineConfigData**(other: [EngineConfigData](/vext/ref/fb/engineconfigdata))
+
+Casts an instance of type [EngineConfigData](/vext/ref/fb/engineconfigdata) to [JetEngineConfigData](/vext/ref/fb/jetengineconfigdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EngineConfigData](/vext/ref/fb/engineconfigdata) | The instance to cast to [JetEngineConfigData](/vext/ref/fb/jetengineconfigdata). |
+
+### JetEngineConfigData {#constructor-3}
+> **JetEngineConfigData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [JetEngineConfigData](/vext/ref/fb/jetengineconfigdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [JetEngineConfigData](/vext/ref/fb/jetengineconfigdata). |
+
+## Properties
+### {{% prop-heading "powerFadeOutRange" %}}
+> **[Vec2](/vext/ref/shared/class/vec2)**
+
+### {{% prop-heading "forceMagnitudeMultiplier" %}}
+> **float**
+
+### {{% prop-heading "angleInputYMultiplier" %}}
+> **float**
+
+### {{% prop-heading "angleInputPitchMultiplier" %}}
+> **float**
+
+### {{% prop-heading "maxVelocity" %}}
+> **float**
+
+### {{% prop-heading "directionVectorIndex" %}}
+> **int**
+
+### {{% prop-heading "isWaterJetEngine" %}}
+> **bool**
+
+### {{% prop-heading "isTurnable" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [JetEngineConfigData](/vext/ref/fb/jetengineconfigdata) type.
+

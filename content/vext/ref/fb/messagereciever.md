@@ -1,15 +1,12 @@
 ---
 title: MessageReciever
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **MrAll** | Value: **0** |
+| **MrTeam** | Value: **1** |
+| **MrTeamAndSquad** | Value: **2** |
+| **MrPlayer** | Value: **3** |
 
-| Name           | Value | Description |
-| -------------- | ----- | ----------- |
-| MrAll          | 0     |             |
-| MrTeam         | 1     |             |
-| MrTeamAndSquad | 2     |             |
-| MrPlayer       | 3     |             |

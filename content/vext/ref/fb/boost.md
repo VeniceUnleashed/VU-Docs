@@ -1,36 +1,73 @@
 ---
 title: Boost
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[Boost](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "forwardStrength" >}} | float |
+| {{< prop "reverseStrength" >}} | float |
+| {{< prop "dissipationTime" >}} | float |
+| {{< prop "recoveryTime" >}} | float |
+| {{< prop "crawlStrength" >}} | float |
+| {{< prop "accelerationScale" >}} | float |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [Boost](/vext/ref/fb/boost) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "Boost" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### Boost {#constructor-0}
+> **Boost**()
 
-| Constructor        | Description                                              |
-| ------------------ | -------------------------------------------------------- |
-| Boost()            | Create a new instance of this structure type.            |
-| Boost(Boost other) | Create a reference copy of a structure of the same type. |
+Creates a new [Boost](/vext/ref/fb/boost) frostbite structure.
 
 ## Properties
+### {{% prop-heading "forwardStrength" %}}
+> **float**
 
-| Name              | Type   | Description |
-| ----------------- | ------ | ----------- |
-| forwardStrength   | number |             |
-| reverseStrength   | number |             |
-| dissipationTime   | number |             |
-| recoveryTime      | number |             |
-| crawlStrength     | number |             |
-| accelerationScale | number |             |
+### {{% prop-heading "reverseStrength" %}}
+> **float**
+
+### {{% prop-heading "dissipationTime" %}}
+> **float**
+
+### {{% prop-heading "recoveryTime" %}}
+> **float**
+
+### {{% prop-heading "crawlStrength" %}}
+> **float**
+
+### {{% prop-heading "accelerationScale" %}}
+> **float**
 
 ## Methods
-
-| Type           | Name            | Parameters |
-| -------------- | --------------- | ---------- |
-| [Boost](/vext/ref/fb/boost/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [Boost](/vext/ref/fb/boost)
 
-> [Boost](/vext/ref/fb/boost/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[Boost](/vext/ref/fb/boost)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [Boost](/vext/ref/fb/boost) type.
+

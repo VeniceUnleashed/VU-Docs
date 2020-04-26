@@ -1,52 +1,136 @@
 ---
 title: Minimap2DEntityData
 ---
-### Base Classes
 
-[GameEntityData](/vext/ref/fb/gameentitydata/)
+Inherits from 
+[GameEntityData](/vext/ref/fb/gameentitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[Minimap2DEntityData](#constructor-0)**() |
+| **[Minimap2DEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[Minimap2DEntityData](#constructor-2)**(other: [GameEntityData](/vext/ref/fb/gameentitydata)) |
+| **[Minimap2DEntityData](#constructor-3)**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata)) |
+| **[Minimap2DEntityData](#constructor-4)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[Minimap2DEntityData](#constructor-5)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[Minimap2DEntityData](#constructor-6)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[Minimap2DEntityData](#constructor-7)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "cameraTransform" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "imageHeight" >}} | int |
+| {{< prop "imageWidth" >}} | int |
+| {{< prop "antialiasMultiplier" >}} | int |
+| {{< prop "terrainHeight" >}} | int |
+| {{< prop "fov" >}} | int |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "Minimap2DEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### Minimap2DEntityData {#constructor-0}
+> **Minimap2DEntityData**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| Minimap2DEntityData()                                                          | Create a new instance of this container type.                                                                                 |
-| Minimap2DEntityData(Minimap2DEntityData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| Minimap2DEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [Minimap2DEntityData](/vext/ref/fb/minimap2dentitydata/).                    |
-| Minimap2DEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [Minimap2DEntityData](/vext/ref/fb/minimap2dentitydata/).              |
-| Minimap2DEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [Minimap2DEntityData](/vext/ref/fb/minimap2dentitydata/).                            |
-| Minimap2DEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [Minimap2DEntityData](/vext/ref/fb/minimap2dentitydata/).                    |
-| Minimap2DEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [Minimap2DEntityData](/vext/ref/fb/minimap2dentitydata/).              |
-| Minimap2DEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [Minimap2DEntityData](/vext/ref/fb/minimap2dentitydata/). |
+Creates a new [Minimap2DEntityData](/vext/ref/fb/minimap2dentitydata) frostbite instance.
 
-## Properties
+### Minimap2DEntityData {#constructor-1}
+> **Minimap2DEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                | Type                              | Description |
-| ------------------- | --------------------------------- | ----------- |
-| cameraTransform     | [Vec3](/vext/ref/shared/class/vec3) |             |
-| imageHeight         | number                            |             |
-| imageWidth          | number                            |             |
-| antialiasMultiplier | number                            |             |
-| terrainHeight       | number                            |             |
-| fov                 | number                            |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [Minimap2DEntityData](/vext/ref/fb/minimap2dentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [Minimap2DEntityData](/vext/ref/fb/minimap2dentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [Minimap2DEntityData](/vext/ref/fb/minimap2dentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### Minimap2DEntityData {#constructor-2}
+> **Minimap2DEntityData**(other: [GameEntityData](/vext/ref/fb/gameentitydata))
+
+Casts an instance of type [GameEntityData](/vext/ref/fb/gameentitydata) to [Minimap2DEntityData](/vext/ref/fb/minimap2dentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameEntityData](/vext/ref/fb/gameentitydata) | The instance to cast to [Minimap2DEntityData](/vext/ref/fb/minimap2dentitydata). |
+
+### Minimap2DEntityData {#constructor-3}
+> **Minimap2DEntityData**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata))
+
+Casts an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata) to [Minimap2DEntityData](/vext/ref/fb/minimap2dentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SpatialEntityData](/vext/ref/fb/spatialentitydata) | The instance to cast to [Minimap2DEntityData](/vext/ref/fb/minimap2dentitydata). |
+
+### Minimap2DEntityData {#constructor-4}
+> **Minimap2DEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [Minimap2DEntityData](/vext/ref/fb/minimap2dentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [Minimap2DEntityData](/vext/ref/fb/minimap2dentitydata). |
+
+### Minimap2DEntityData {#constructor-5}
+> **Minimap2DEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [Minimap2DEntityData](/vext/ref/fb/minimap2dentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [Minimap2DEntityData](/vext/ref/fb/minimap2dentitydata). |
+
+### Minimap2DEntityData {#constructor-6}
+> **Minimap2DEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [Minimap2DEntityData](/vext/ref/fb/minimap2dentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [Minimap2DEntityData](/vext/ref/fb/minimap2dentitydata). |
+
+### Minimap2DEntityData {#constructor-7}
+> **Minimap2DEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [Minimap2DEntityData](/vext/ref/fb/minimap2dentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [Minimap2DEntityData](/vext/ref/fb/minimap2dentitydata). |
+
+## Properties
+### {{% prop-heading "cameraTransform" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "imageHeight" %}}
+> **int**
+
+### {{% prop-heading "imageWidth" %}}
+> **int**
+
+### {{% prop-heading "antialiasMultiplier" %}}
+> **int**
+
+### {{% prop-heading "terrainHeight" %}}
+> **int**
+
+### {{% prop-heading "fov" %}}
+> **int**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [Minimap2DEntityData](/vext/ref/fb/minimap2dentitydata) type.
+

@@ -1,44 +1,69 @@
 ---
 title: BoneFakePhysicsData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[BoneFakePhysicsData](#constructor-0)**() |
+| **[BoneFakePhysicsData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[BoneFakePhysicsData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "fakePhysics" >}} | [FakePhysicsData](/vext/ref/fb/fakephysicsdata) \| nil |
+| {{< prop "boneName" >}} | string |
+| {{< prop "boneId" >}} | int |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "BoneFakePhysicsData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### BoneFakePhysicsData {#constructor-0}
+> **BoneFakePhysicsData**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| BoneFakePhysicsData()                                                          | Create a new instance of this container type.                                                                                 |
-| BoneFakePhysicsData(BoneFakePhysicsData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| BoneFakePhysicsData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BoneFakePhysicsData](/vext/ref/fb/bonefakephysicsdata/). |
+Creates a new [BoneFakePhysicsData](/vext/ref/fb/bonefakephysicsdata) frostbite instance.
 
-## Properties
+### BoneFakePhysicsData {#constructor-1}
+> **BoneFakePhysicsData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name        | Type                               | Description |
-| ----------- | ---------------------------------- | ----------- |
-| fakePhysics | [FakePhysicsData](/vext/ref/fb/fakephysicsdata/) |             |
-| boneName    | string                             |             |
-| boneId      | number                             |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [BoneFakePhysicsData](/vext/ref/fb/bonefakephysicsdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [BoneFakePhysicsData](/vext/ref/fb/bonefakephysicsdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [BoneFakePhysicsData](/vext/ref/fb/bonefakephysicsdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### BoneFakePhysicsData {#constructor-2}
+> **BoneFakePhysicsData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BoneFakePhysicsData](/vext/ref/fb/bonefakephysicsdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [BoneFakePhysicsData](/vext/ref/fb/bonefakephysicsdata). |
+
+## Properties
+### {{% prop-heading "fakePhysics" %}}
+> **[FakePhysicsData](/vext/ref/fb/fakephysicsdata)** | **nil**
+
+### {{% prop-heading "boneName" %}}
+> **string**
+
+### {{% prop-heading "boneId" %}}
+> **int**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [BoneFakePhysicsData](/vext/ref/fb/bonefakephysicsdata) type.
+

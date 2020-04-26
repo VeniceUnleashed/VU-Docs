@@ -1,17 +1,14 @@
 ---
 title: ProximityObjectType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **PotProximityDisabled** | Value: **0** |
+| **PotVaultableLow** | Value: **1** |
+| **PotVaultableHigh** | Value: **2** |
+| **PotSupportedShooting** | Value: **3** |
+| **PotInteractWith** | Value: **4** |
+| **PotBashable** | Value: **5** |
 
-| Name                 | Value | Description |
-| -------------------- | ----- | ----------- |
-| PotProximityDisabled | 0     |             |
-| PotVaultableLow      | 1     |             |
-| PotVaultableHigh     | 2     |             |
-| PotSupportedShooting | 3     |             |
-| PotInteractWith      | 4     |             |
-| PotBashable          | 5     |             |

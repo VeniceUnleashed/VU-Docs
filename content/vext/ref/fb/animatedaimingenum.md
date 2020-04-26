@@ -1,14 +1,11 @@
 ---
 title: AnimatedAimingEnum
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **AnimatedAimingTwoHanded** | Value: **0** |
+| **AnimatedAimingRightHanded** | Value: **1** |
+| **AnimatedAimingDisabled** | Value: **2** |
 
-| Name                      | Value | Description |
-| ------------------------- | ----- | ----------- |
-| AnimatedAimingTwoHanded   | 0     |             |
-| AnimatedAimingRightHanded | 1     |             |
-| AnimatedAimingDisabled    | 2     |             |

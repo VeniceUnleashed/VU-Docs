@@ -1,33 +1,61 @@
 ---
 title: AudioObstructionMaterialInfo
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AudioObstructionMaterialInfo](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "material" >}} | [MaterialContainerPair](/vext/ref/fb/materialcontainerpair) \| nil |
+| {{< prop "obstructionFrequency" >}} | float |
+| {{< prop "gainReduction" >}} | float |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [AudioObstructionMaterialInfo](/vext/ref/fb/audioobstructionmaterialinfo) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AudioObstructionMaterialInfo" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AudioObstructionMaterialInfo {#constructor-0}
+> **AudioObstructionMaterialInfo**()
 
-| Constructor                                                      | Description                                              |
-| ---------------------------------------------------------------- | -------------------------------------------------------- |
-| AudioObstructionMaterialInfo()                                   | Create a new instance of this structure type.            |
-| AudioObstructionMaterialInfo(AudioObstructionMaterialInfo other) | Create a reference copy of a structure of the same type. |
+Creates a new [AudioObstructionMaterialInfo](/vext/ref/fb/audioobstructionmaterialinfo) frostbite structure.
 
 ## Properties
+### {{% prop-heading "material" %}}
+> **[MaterialContainerPair](/vext/ref/fb/materialcontainerpair)** | **nil**
 
-| Name                 | Type                                           | Description |
-| -------------------- | ---------------------------------------------- | ----------- |
-| material             | [MaterialContainerPair](/vext/ref/fb/materialcontainerpair/) |             |
-| obstructionFrequency | number                                         |             |
-| gainReduction        | number                                         |             |
+### {{% prop-heading "obstructionFrequency" %}}
+> **float**
+
+### {{% prop-heading "gainReduction" %}}
+> **float**
 
 ## Methods
-
-| Type                                                         | Name            | Parameters |
-| ------------------------------------------------------------ | --------------- | ---------- |
-| [AudioObstructionMaterialInfo](/vext/ref/fb/audioobstructionmaterialinfo/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [AudioObstructionMaterialInfo](/vext/ref/fb/audioobstructionmaterialinfo)
 
-> [AudioObstructionMaterialInfo](/vext/ref/fb/audioobstructionmaterialinfo/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[AudioObstructionMaterialInfo](/vext/ref/fb/audioobstructionmaterialinfo)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AudioObstructionMaterialInfo](/vext/ref/fb/audioobstructionmaterialinfo) type.
+

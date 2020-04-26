@@ -1,40 +1,96 @@
 ---
 title: RemoteEntryComponentData
 ---
-### Base Classes
 
-[EntryComponentData](/vext/ref/fb/entrycomponentdata/)
+Inherits from 
+[EntryComponentData](/vext/ref/fb/entrycomponentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[RemoteEntryComponentData](#constructor-0)**() |
+| **[RemoteEntryComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[RemoteEntryComponentData](#constructor-2)**(other: [EntryComponentData](/vext/ref/fb/entrycomponentdata)) |
+| **[RemoteEntryComponentData](#constructor-3)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[RemoteEntryComponentData](#constructor-4)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[RemoteEntryComponentData](#constructor-5)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[RemoteEntryComponentData](#constructor-6)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "RemoteEntryComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### RemoteEntryComponentData {#constructor-0}
+> **RemoteEntryComponentData**()
 
-| Constructor                                                                         | Description                                                                                                                             |
-| ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| RemoteEntryComponentData()                                                          | Create a new instance of this container type.                                                                                           |
-| RemoteEntryComponentData(RemoteEntryComponentData other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| RemoteEntryComponentData([EntryComponentData](/vext/ref/fb/entrycomponentdata/) other)            | Upcast an instance of type [EntryComponentData](/vext/ref/fb/entrycomponentdata/) to [RemoteEntryComponentData](/vext/ref/fb/remoteentrycomponentdata/).            |
-| RemoteEntryComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [RemoteEntryComponentData](/vext/ref/fb/remoteentrycomponentdata/).                      |
-| RemoteEntryComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [RemoteEntryComponentData](/vext/ref/fb/remoteentrycomponentdata/).                    |
-| RemoteEntryComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [RemoteEntryComponentData](/vext/ref/fb/remoteentrycomponentdata/).              |
-| RemoteEntryComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RemoteEntryComponentData](/vext/ref/fb/remoteentrycomponentdata/). |
+Creates a new [RemoteEntryComponentData](/vext/ref/fb/remoteentrycomponentdata) frostbite instance.
 
-## Methods
+### RemoteEntryComponentData {#constructor-1}
+> **RemoteEntryComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                                 | Name            | Parameters                                     |
-| ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [RemoteEntryComponentData](/vext/ref/fb/remoteentrycomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [RemoteEntryComponentData](/vext/ref/fb/remoteentrycomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [RemoteEntryComponentData](/vext/ref/fb/remoteentrycomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### RemoteEntryComponentData {#constructor-2}
+> **RemoteEntryComponentData**(other: [EntryComponentData](/vext/ref/fb/entrycomponentdata))
+
+Casts an instance of type [EntryComponentData](/vext/ref/fb/entrycomponentdata) to [RemoteEntryComponentData](/vext/ref/fb/remoteentrycomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntryComponentData](/vext/ref/fb/entrycomponentdata) | The instance to cast to [RemoteEntryComponentData](/vext/ref/fb/remoteentrycomponentdata). |
+
+### RemoteEntryComponentData {#constructor-3}
+> **RemoteEntryComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [RemoteEntryComponentData](/vext/ref/fb/remoteentrycomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [RemoteEntryComponentData](/vext/ref/fb/remoteentrycomponentdata). |
+
+### RemoteEntryComponentData {#constructor-4}
+> **RemoteEntryComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [RemoteEntryComponentData](/vext/ref/fb/remoteentrycomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [RemoteEntryComponentData](/vext/ref/fb/remoteentrycomponentdata). |
+
+### RemoteEntryComponentData {#constructor-5}
+> **RemoteEntryComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [RemoteEntryComponentData](/vext/ref/fb/remoteentrycomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [RemoteEntryComponentData](/vext/ref/fb/remoteentrycomponentdata). |
+
+### RemoteEntryComponentData {#constructor-6}
+> **RemoteEntryComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RemoteEntryComponentData](/vext/ref/fb/remoteentrycomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [RemoteEntryComponentData](/vext/ref/fb/remoteentrycomponentdata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [RemoteEntryComponentData](/vext/ref/fb/remoteentrycomponentdata) type.
+

@@ -1,55 +1,120 @@
 ---
 title: RotationBodyData
 ---
-### Base Classes
 
-[MovingBodyData](/vext/ref/fb/movingbodydata/)
+Inherits from 
+[MovingBodyData](/vext/ref/fb/movingbodydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[RotationBodyData](#constructor-0)**() |
+| **[RotationBodyData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[RotationBodyData](#constructor-2)**(other: [MovingBodyData](/vext/ref/fb/movingbodydata)) |
+| **[RotationBodyData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "angularMomentumMultiplier" >}} | float |
+| {{< prop "angularMomentumThreshold" >}} | float |
+| {{< prop "angularMomentumDamping" >}} | float |
+| {{< prop "angularMomentumDampingAcc" >}} | float |
+| {{< prop "angularMomentumDampingDeacc" >}} | float |
+| {{< prop "angularConstraintMin" >}} | float |
+| {{< prop "extendedConstraints" >}} | [ExtendedConstraintsData](/vext/ref/fb/extendedconstraintsdata) \| nil |
+| {{< prop "angularConstraintMax" >}} | float |
+| {{< prop "rotationAxis" >}} | int |
+| {{< prop "usePostSatisfyConstraints" >}} | bool |
+| {{< prop "useAngularMomentumThreshold" >}} | bool |
+| {{< prop "useAngularMomentumDamping" >}} | bool |
+| {{< prop "useAngularConstraint" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "RotationBodyData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### RotationBodyData {#constructor-0}
+> **RotationBodyData**()
 
-| Constructor                                                                 | Description                                                                                                             |
-| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| RotationBodyData()                                                          | Create a new instance of this container type.                                                                           |
-| RotationBodyData(RotationBodyData other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| RotationBodyData([MovingBodyData](/vext/ref/fb/movingbodydata/) other)                    | Upcast an instance of type [MovingBodyData](/vext/ref/fb/movingbodydata/) to [RotationBodyData](/vext/ref/fb/rotationbodydata/).                    |
-| RotationBodyData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RotationBodyData](/vext/ref/fb/rotationbodydata/). |
+Creates a new [RotationBodyData](/vext/ref/fb/rotationbodydata) frostbite instance.
 
-## Properties
+### RotationBodyData {#constructor-1}
+> **RotationBodyData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                        | Type                                               | Description |
-| --------------------------- | -------------------------------------------------- | ----------- |
-| angularMomentumMultiplier   | number                                             |             |
-| angularMomentumThreshold    | number                                             |             |
-| angularMomentumDamping      | number                                             |             |
-| angularMomentumDampingAcc   | number                                             |             |
-| angularMomentumDampingDeacc | number                                             |             |
-| angularConstraintMin        | number                                             |             |
-| extendedConstraints         | [ExtendedConstraintsData](/vext/ref/fb/extendedconstraintsdata/) |             |
-| angularConstraintMax        | number                                             |             |
-| rotationAxis                | number                                             |             |
-| usePostSatisfyConstraints   | bool                                               |             |
-| useAngularMomentumThreshold | bool                                               |             |
-| useAngularMomentumDamping   | bool                                               |             |
-| useAngularConstraint        | bool                                               |             |
-
-## Methods
-
-| Type                                 | Name            | Parameters                                     |
-| ------------------------------------ | --------------- | ---------------------------------------------- |
-| [RotationBodyData](/vext/ref/fb/rotationbodydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [RotationBodyData](/vext/ref/fb/rotationbodydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [RotationBodyData](/vext/ref/fb/rotationbodydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### RotationBodyData {#constructor-2}
+> **RotationBodyData**(other: [MovingBodyData](/vext/ref/fb/movingbodydata))
+
+Casts an instance of type [MovingBodyData](/vext/ref/fb/movingbodydata) to [RotationBodyData](/vext/ref/fb/rotationbodydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [MovingBodyData](/vext/ref/fb/movingbodydata) | The instance to cast to [RotationBodyData](/vext/ref/fb/rotationbodydata). |
+
+### RotationBodyData {#constructor-3}
+> **RotationBodyData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RotationBodyData](/vext/ref/fb/rotationbodydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [RotationBodyData](/vext/ref/fb/rotationbodydata). |
+
+## Properties
+### {{% prop-heading "angularMomentumMultiplier" %}}
+> **float**
+
+### {{% prop-heading "angularMomentumThreshold" %}}
+> **float**
+
+### {{% prop-heading "angularMomentumDamping" %}}
+> **float**
+
+### {{% prop-heading "angularMomentumDampingAcc" %}}
+> **float**
+
+### {{% prop-heading "angularMomentumDampingDeacc" %}}
+> **float**
+
+### {{% prop-heading "angularConstraintMin" %}}
+> **float**
+
+### {{% prop-heading "extendedConstraints" %}}
+> **[ExtendedConstraintsData](/vext/ref/fb/extendedconstraintsdata)** | **nil**
+
+### {{% prop-heading "angularConstraintMax" %}}
+> **float**
+
+### {{% prop-heading "rotationAxis" %}}
+> **int**
+
+### {{% prop-heading "usePostSatisfyConstraints" %}}
+> **bool**
+
+### {{% prop-heading "useAngularMomentumThreshold" %}}
+> **bool**
+
+### {{% prop-heading "useAngularMomentumDamping" %}}
+> **bool**
+
+### {{% prop-heading "useAngularConstraint" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [RotationBodyData](/vext/ref/fb/rotationbodydata) type.
+

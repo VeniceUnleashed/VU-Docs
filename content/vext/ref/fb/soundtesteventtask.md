@@ -1,43 +1,72 @@
 ---
 title: SoundTestEventTask
 ---
-### Base Classes
 
-[SoundTestTaskSpec](/vext/ref/fb/soundtesttaskspec/)
+Inherits from 
+[SoundTestTaskSpec](/vext/ref/fb/soundtesttaskspec)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SoundTestEventTask](#constructor-0)**() |
+| **[SoundTestEventTask](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SoundTestEventTask](#constructor-2)**(other: [SoundTestTaskSpec](/vext/ref/fb/soundtesttaskspec)) |
+| **[SoundTestEventTask](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "eventName" >}} | string |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SoundTestEventTask" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SoundTestEventTask {#constructor-0}
+> **SoundTestEventTask**()
 
-| Constructor                                                                   | Description                                                                                                                 |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| SoundTestEventTask()                                                          | Create a new instance of this container type.                                                                               |
-| SoundTestEventTask(SoundTestEventTask other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| SoundTestEventTask([SoundTestTaskSpec](/vext/ref/fb/soundtesttaskspec/) other)              | Upcast an instance of type [SoundTestTaskSpec](/vext/ref/fb/soundtesttaskspec/) to [SoundTestEventTask](/vext/ref/fb/soundtesteventtask/).              |
-| SoundTestEventTask([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoundTestEventTask](/vext/ref/fb/soundtesteventtask/). |
+Creates a new [SoundTestEventTask](/vext/ref/fb/soundtesteventtask) frostbite instance.
 
-## Properties
+### SoundTestEventTask {#constructor-1}
+> **SoundTestEventTask**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name      | Type   | Description |
-| --------- | ------ | ----------- |
-| eventName | string |             |
-
-## Methods
-
-| Type                                     | Name            | Parameters                                     |
-| ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [SoundTestEventTask](/vext/ref/fb/soundtesteventtask/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SoundTestEventTask](/vext/ref/fb/soundtesteventtask/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SoundTestEventTask](/vext/ref/fb/soundtesteventtask) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SoundTestEventTask {#constructor-2}
+> **SoundTestEventTask**(other: [SoundTestTaskSpec](/vext/ref/fb/soundtesttaskspec))
+
+Casts an instance of type [SoundTestTaskSpec](/vext/ref/fb/soundtesttaskspec) to [SoundTestEventTask](/vext/ref/fb/soundtesteventtask). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SoundTestTaskSpec](/vext/ref/fb/soundtesttaskspec) | The instance to cast to [SoundTestEventTask](/vext/ref/fb/soundtesteventtask). |
+
+### SoundTestEventTask {#constructor-3}
+> **SoundTestEventTask**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoundTestEventTask](/vext/ref/fb/soundtesteventtask). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SoundTestEventTask](/vext/ref/fb/soundtesteventtask). |
+
+## Properties
+### {{% prop-heading "eventName" %}}
+> **string**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SoundTestEventTask](/vext/ref/fb/soundtesteventtask) type.
+

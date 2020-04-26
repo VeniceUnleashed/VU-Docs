@@ -1,53 +1,112 @@
 ---
 title: UIGraphAsset
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIGraphAsset](#constructor-0)**() |
+| **[UIGraphAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UIGraphAsset](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[UIGraphAsset](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "nodes" >}} | [UINodeData](/vext/ref/fb/uinodedata)[] |
+| {{< prop "globalNode" >}} | [GlobalNode](/vext/ref/fb/globalnode) \| nil |
+| {{< prop "connections" >}} | [UINodeConnection](/vext/ref/fb/uinodeconnection)[] |
+| {{< prop "audioEventMappings" >}} | [UIAudioEventAsset](/vext/ref/fb/uiaudioeventasset) \| nil |
+| {{< prop "bundleAssetName" >}} | string |
+| {{< prop "eventList" >}} | [UIEventAsset](/vext/ref/fb/uieventasset)[] |
+| {{< prop "modal" >}} | bool |
+| {{< prop "protectScreens" >}} | bool |
+| {{< prop "isWin32UIGraphAsset" >}} | bool |
+| {{< prop "isXenonUIGraphAsset" >}} | bool |
+| {{< prop "isPs3UIGraphAsset" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIGraphAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIGraphAsset {#constructor-0}
+> **UIGraphAsset**()
 
-| Constructor                                                             | Description                                                                                                     |
-| ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| UIGraphAsset()                                                          | Create a new instance of this container type.                                                                   |
-| UIGraphAsset(UIGraphAsset other)                                        | Create a reference copy of an instance of the same type.                                                        |
-| UIGraphAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UIGraphAsset](/vext/ref/fb/uigraphasset/).                                      |
-| UIGraphAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIGraphAsset](/vext/ref/fb/uigraphasset/). |
+Creates a new [UIGraphAsset](/vext/ref/fb/uigraphasset) frostbite instance.
 
-## Properties
+### UIGraphAsset {#constructor-1}
+> **UIGraphAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                | Type                                     | Description |
-| ------------------- | ---------------------------------------- | ----------- |
-| nodes               | [UINodeData](/vext/ref/fb/uinodedata/)\[\]             |             |
-| globalNode          | [GlobalNode](/vext/ref/fb/globalnode/)                 |             |
-| connections         | [UINodeConnection](/vext/ref/fb/uinodeconnection/)\[\] |             |
-| audioEventMappings  | [UIAudioEventAsset](/vext/ref/fb/uiaudioeventasset/)   |             |
-| bundleAssetName     | string                                   |             |
-| eventList           | [UIEventAsset](/vext/ref/fb/uieventasset/)\[\]         |             |
-| modal               | bool                                     |             |
-| protectScreens      | bool                                     |             |
-| isWin32UIGraphAsset | bool                                     |             |
-| isXenonUIGraphAsset | bool                                     |             |
-| isPs3UIGraphAsset   | bool                                     |             |
-
-## Methods
-
-| Type                         | Name            | Parameters                                     |
-| ---------------------------- | --------------- | ---------------------------------------------- |
-| [UIGraphAsset](/vext/ref/fb/uigraphasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UIGraphAsset](/vext/ref/fb/uigraphasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UIGraphAsset](/vext/ref/fb/uigraphasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UIGraphAsset {#constructor-2}
+> **UIGraphAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [UIGraphAsset](/vext/ref/fb/uigraphasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [UIGraphAsset](/vext/ref/fb/uigraphasset). |
+
+### UIGraphAsset {#constructor-3}
+> **UIGraphAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIGraphAsset](/vext/ref/fb/uigraphasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UIGraphAsset](/vext/ref/fb/uigraphasset). |
+
+## Properties
+### {{% prop-heading "nodes" %}}
+> **[UINodeData](/vext/ref/fb/uinodedata)**[]
+
+### {{% prop-heading "globalNode" %}}
+> **[GlobalNode](/vext/ref/fb/globalnode)** | **nil**
+
+### {{% prop-heading "connections" %}}
+> **[UINodeConnection](/vext/ref/fb/uinodeconnection)**[]
+
+### {{% prop-heading "audioEventMappings" %}}
+> **[UIAudioEventAsset](/vext/ref/fb/uiaudioeventasset)** | **nil**
+
+### {{% prop-heading "bundleAssetName" %}}
+> **string**
+
+### {{% prop-heading "eventList" %}}
+> **[UIEventAsset](/vext/ref/fb/uieventasset)**[]
+
+### {{% prop-heading "modal" %}}
+> **bool**
+
+### {{% prop-heading "protectScreens" %}}
+> **bool**
+
+### {{% prop-heading "isWin32UIGraphAsset" %}}
+> **bool**
+
+### {{% prop-heading "isXenonUIGraphAsset" %}}
+> **bool**
+
+### {{% prop-heading "isPs3UIGraphAsset" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIGraphAsset](/vext/ref/fb/uigraphasset) type.
+

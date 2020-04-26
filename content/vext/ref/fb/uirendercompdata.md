@@ -1,51 +1,111 @@
 ---
 title: UIRenderCompData
 ---
-### Base Classes
 
-[UIComponentData](/vext/ref/fb/uicomponentdata/)
+Inherits from 
+[UIComponentData](/vext/ref/fb/uicomponentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIRenderCompData](#constructor-0)**() |
+| **[UIRenderCompData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UIRenderCompData](#constructor-2)**(other: [UIComponentData](/vext/ref/fb/uicomponentdata)) |
+| **[UIRenderCompData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[UIRenderCompData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "backgroundRect1" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "backgroundRect0" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "bgTexture2" >}} | [TextureAsset](/vext/ref/fb/textureasset) \| nil |
+| {{< prop "bgTexture1" >}} | [TextureAsset](/vext/ref/fb/textureasset) \| nil |
+| {{< prop "alphaMin" >}} | float |
+| {{< prop "alphaAnimationSpeed" >}} | float |
+| {{< prop "alphaOffset" >}} | float |
+| {{< prop "alphaMax" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIRenderCompData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIRenderCompData {#constructor-0}
+> **UIRenderCompData**()
 
-| Constructor                                                                 | Description                                                                                                             |
-| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| UIRenderCompData()                                                          | Create a new instance of this container type.                                                                           |
-| UIRenderCompData(UIRenderCompData other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| UIRenderCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UIRenderCompData](/vext/ref/fb/uirendercompdata/).                  |
-| UIRenderCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UIRenderCompData](/vext/ref/fb/uirendercompdata/).                                      |
-| UIRenderCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIRenderCompData](/vext/ref/fb/uirendercompdata/). |
+Creates a new [UIRenderCompData](/vext/ref/fb/uirendercompdata) frostbite instance.
 
-## Properties
+### UIRenderCompData {#constructor-1}
+> **UIRenderCompData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                | Type                              | Description |
-| ------------------- | --------------------------------- | ----------- |
-| backgroundRect1     | [Vec4](/vext/ref/shared/class/vec4) |             |
-| backgroundRect0     | [Vec4](/vext/ref/shared/class/vec4) |             |
-| bgTexture2          | [TextureAsset](/vext/ref/fb/textureasset/)      |             |
-| bgTexture1          | [TextureAsset](/vext/ref/fb/textureasset/)      |             |
-| alphaMin            | number                            |             |
-| alphaAnimationSpeed | number                            |             |
-| alphaOffset         | number                            |             |
-| alphaMax            | number                            |             |
-
-## Methods
-
-| Type                                 | Name            | Parameters                                     |
-| ------------------------------------ | --------------- | ---------------------------------------------- |
-| [UIRenderCompData](/vext/ref/fb/uirendercompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UIRenderCompData](/vext/ref/fb/uirendercompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UIRenderCompData](/vext/ref/fb/uirendercompdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UIRenderCompData {#constructor-2}
+> **UIRenderCompData**(other: [UIComponentData](/vext/ref/fb/uicomponentdata))
+
+Casts an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata) to [UIRenderCompData](/vext/ref/fb/uirendercompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIComponentData](/vext/ref/fb/uicomponentdata) | The instance to cast to [UIRenderCompData](/vext/ref/fb/uirendercompdata). |
+
+### UIRenderCompData {#constructor-3}
+> **UIRenderCompData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [UIRenderCompData](/vext/ref/fb/uirendercompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [UIRenderCompData](/vext/ref/fb/uirendercompdata). |
+
+### UIRenderCompData {#constructor-4}
+> **UIRenderCompData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIRenderCompData](/vext/ref/fb/uirendercompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UIRenderCompData](/vext/ref/fb/uirendercompdata). |
+
+## Properties
+### {{% prop-heading "backgroundRect1" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "backgroundRect0" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "bgTexture2" %}}
+> **[TextureAsset](/vext/ref/fb/textureasset)** | **nil**
+
+### {{% prop-heading "bgTexture1" %}}
+> **[TextureAsset](/vext/ref/fb/textureasset)** | **nil**
+
+### {{% prop-heading "alphaMin" %}}
+> **float**
+
+### {{% prop-heading "alphaAnimationSpeed" %}}
+> **float**
+
+### {{% prop-heading "alphaOffset" %}}
+> **float**
+
+### {{% prop-heading "alphaMax" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIRenderCompData](/vext/ref/fb/uirendercompdata) type.
+

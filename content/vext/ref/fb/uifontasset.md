@@ -1,49 +1,96 @@
 ---
 title: UIFontAsset
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIFontAsset](#constructor-0)**() |
+| **[UIFontAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UIFontAsset](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[UIFontAsset](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "sourceFile" >}} | string |
+| {{< prop "textDatabase" >}} | [UITextDatabase](/vext/ref/fb/uitextdatabase) \| nil |
+| {{< prop "scaleformFontName" >}} | string[] |
+| {{< prop "numericsOnly" >}} | bool |
+| {{< prop "completeKorean" >}} | bool |
+| {{< prop "completeJapanese" >}} | bool |
+| {{< prop "completeTraditionalChinese" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIFontAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIFontAsset {#constructor-0}
+> **UIFontAsset**()
 
-| Constructor                                                            | Description                                                                                                   |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| UIFontAsset()                                                          | Create a new instance of this container type.                                                                 |
-| UIFontAsset(UIFontAsset other)                                         | Create a reference copy of an instance of the same type.                                                      |
-| UIFontAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UIFontAsset](/vext/ref/fb/uifontasset/).                                      |
-| UIFontAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIFontAsset](/vext/ref/fb/uifontasset/). |
+Creates a new [UIFontAsset](/vext/ref/fb/uifontasset) frostbite instance.
 
-## Properties
+### UIFontAsset {#constructor-1}
+> **UIFontAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                       | Type                             | Description |
-| -------------------------- | -------------------------------- | ----------- |
-| sourceFile                 | string                           |             |
-| textDatabase               | [UITextDatabase](/vext/ref/fb/uitextdatabase/) |             |
-| scaleformFontName          | string\[\]                       |             |
-| numericsOnly               | bool                             |             |
-| completeKorean             | bool                             |             |
-| completeJapanese           | bool                             |             |
-| completeTraditionalChinese | bool                             |             |
-
-## Methods
-
-| Type                       | Name            | Parameters                                     |
-| -------------------------- | --------------- | ---------------------------------------------- |
-| [UIFontAsset](/vext/ref/fb/uifontasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UIFontAsset](/vext/ref/fb/uifontasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UIFontAsset](/vext/ref/fb/uifontasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UIFontAsset {#constructor-2}
+> **UIFontAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [UIFontAsset](/vext/ref/fb/uifontasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [UIFontAsset](/vext/ref/fb/uifontasset). |
+
+### UIFontAsset {#constructor-3}
+> **UIFontAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIFontAsset](/vext/ref/fb/uifontasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UIFontAsset](/vext/ref/fb/uifontasset). |
+
+## Properties
+### {{% prop-heading "sourceFile" %}}
+> **string**
+
+### {{% prop-heading "textDatabase" %}}
+> **[UITextDatabase](/vext/ref/fb/uitextdatabase)** | **nil**
+
+### {{% prop-heading "scaleformFontName" %}}
+> **string**[]
+
+### {{% prop-heading "numericsOnly" %}}
+> **bool**
+
+### {{% prop-heading "completeKorean" %}}
+> **bool**
+
+### {{% prop-heading "completeJapanese" %}}
+> **bool**
+
+### {{% prop-heading "completeTraditionalChinese" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIFontAsset](/vext/ref/fb/uifontasset) type.
+

@@ -1,13 +1,10 @@
 ---
 title: EntryEnterRestriction
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **EntryEnterRestriction_NoRestriction** | Value: **0** |
+| **EntryEnterRestriction_OnlyPrimaryEntry** | Value: **1** |
 
-| Name                                    | Value | Description |
-| --------------------------------------- | ----- | ----------- |
-| EntryEnterRestriction\_NoRestriction    | 0     |             |
-| EntryEnterRestriction\_OnlyPrimaryEntry | 1     |             |

@@ -1,47 +1,95 @@
 ---
 title: MaterialRelationVehicleData
 ---
-### Base Classes
 
-[PhysicsMaterialRelationPropertyData](/vext/ref/fb/physicsmaterialrelationpropertydata/)
+Inherits from 
+[PhysicsMaterialRelationPropertyData](/vext/ref/fb/physicsmaterialrelationpropertydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MaterialRelationVehicleData](#constructor-0)**() |
+| **[MaterialRelationVehicleData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MaterialRelationVehicleData](#constructor-2)**(other: [PhysicsMaterialRelationPropertyData](/vext/ref/fb/physicsmaterialrelationpropertydata)) |
+| **[MaterialRelationVehicleData](#constructor-3)**(other: [MaterialRelationPropertyData](/vext/ref/fb/materialrelationpropertydata)) |
+| **[MaterialRelationVehicleData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "chassiEffect" >}} | [EffectBlueprint](/vext/ref/fb/effectblueprint) \| nil |
+| {{< prop "trackEffect" >}} | [EffectBlueprint](/vext/ref/fb/effectblueprint) \| nil |
+| {{< prop "wheelEffect" >}} | [EffectBlueprint](/vext/ref/fb/effectblueprint) \| nil |
+| {{< prop "groundEffect" >}} | [EffectBlueprint](/vext/ref/fb/effectblueprint) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MaterialRelationVehicleData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MaterialRelationVehicleData {#constructor-0}
+> **MaterialRelationVehicleData**()
 
-| Constructor                                                                                                   | Description                                                                                                                                                          |
-| ------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| MaterialRelationVehicleData()                                                                                 | Create a new instance of this container type.                                                                                                                        |
-| MaterialRelationVehicleData(MaterialRelationVehicleData other)                                                | Create a reference copy of an instance of the same type.                                                                                                             |
-| MaterialRelationVehicleData([PhysicsMaterialRelationPropertyData](/vext/ref/fb/physicsmaterialrelationpropertydata/) other) | Upcast an instance of type [PhysicsMaterialRelationPropertyData](/vext/ref/fb/physicsmaterialrelationpropertydata/) to [MaterialRelationVehicleData](/vext/ref/fb/materialrelationvehicledata/). |
-| MaterialRelationVehicleData([MaterialRelationPropertyData](/vext/ref/fb/materialrelationpropertydata/) other)               | Upcast an instance of type [MaterialRelationPropertyData](/vext/ref/fb/materialrelationpropertydata/) to [MaterialRelationVehicleData](/vext/ref/fb/materialrelationvehicledata/).               |
-| MaterialRelationVehicleData([DataContainer](/vext/ref/shared/class/datacontainer) other)                        | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MaterialRelationVehicleData](/vext/ref/fb/materialrelationvehicledata/).                        |
+Creates a new [MaterialRelationVehicleData](/vext/ref/fb/materialrelationvehicledata) frostbite instance.
 
-## Properties
+### MaterialRelationVehicleData {#constructor-1}
+> **MaterialRelationVehicleData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name         | Type                               | Description |
-| ------------ | ---------------------------------- | ----------- |
-| chassiEffect | [EffectBlueprint](/vext/ref/fb/effectblueprint/) |             |
-| trackEffect  | [EffectBlueprint](/vext/ref/fb/effectblueprint/) |             |
-| wheelEffect  | [EffectBlueprint](/vext/ref/fb/effectblueprint/) |             |
-| groundEffect | [EffectBlueprint](/vext/ref/fb/effectblueprint/) |             |
-
-## Methods
-
-| Type                                                       | Name            | Parameters                                     |
-| ---------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [MaterialRelationVehicleData](/vext/ref/fb/materialrelationvehicledata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MaterialRelationVehicleData](/vext/ref/fb/materialrelationvehicledata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MaterialRelationVehicleData](/vext/ref/fb/materialrelationvehicledata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MaterialRelationVehicleData {#constructor-2}
+> **MaterialRelationVehicleData**(other: [PhysicsMaterialRelationPropertyData](/vext/ref/fb/physicsmaterialrelationpropertydata))
+
+Casts an instance of type [PhysicsMaterialRelationPropertyData](/vext/ref/fb/physicsmaterialrelationpropertydata) to [MaterialRelationVehicleData](/vext/ref/fb/materialrelationvehicledata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [PhysicsMaterialRelationPropertyData](/vext/ref/fb/physicsmaterialrelationpropertydata) | The instance to cast to [MaterialRelationVehicleData](/vext/ref/fb/materialrelationvehicledata). |
+
+### MaterialRelationVehicleData {#constructor-3}
+> **MaterialRelationVehicleData**(other: [MaterialRelationPropertyData](/vext/ref/fb/materialrelationpropertydata))
+
+Casts an instance of type [MaterialRelationPropertyData](/vext/ref/fb/materialrelationpropertydata) to [MaterialRelationVehicleData](/vext/ref/fb/materialrelationvehicledata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [MaterialRelationPropertyData](/vext/ref/fb/materialrelationpropertydata) | The instance to cast to [MaterialRelationVehicleData](/vext/ref/fb/materialrelationvehicledata). |
+
+### MaterialRelationVehicleData {#constructor-4}
+> **MaterialRelationVehicleData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MaterialRelationVehicleData](/vext/ref/fb/materialrelationvehicledata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MaterialRelationVehicleData](/vext/ref/fb/materialrelationvehicledata). |
+
+## Properties
+### {{% prop-heading "chassiEffect" %}}
+> **[EffectBlueprint](/vext/ref/fb/effectblueprint)** | **nil**
+
+### {{% prop-heading "trackEffect" %}}
+> **[EffectBlueprint](/vext/ref/fb/effectblueprint)** | **nil**
+
+### {{% prop-heading "wheelEffect" %}}
+> **[EffectBlueprint](/vext/ref/fb/effectblueprint)** | **nil**
+
+### {{% prop-heading "groundEffect" %}}
+> **[EffectBlueprint](/vext/ref/fb/effectblueprint)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MaterialRelationVehicleData](/vext/ref/fb/materialrelationvehicledata) type.
+

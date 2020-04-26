@@ -1,44 +1,83 @@
 ---
 title: SpawnSizeData
 ---
-### Base Classes
 
-[ProcessorData](/vext/ref/fb/processordata/)
+Inherits from 
+[ProcessorData](/vext/ref/fb/processordata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SpawnSizeData](#constructor-0)**() |
+| **[SpawnSizeData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SpawnSizeData](#constructor-2)**(other: [ProcessorData](/vext/ref/fb/processordata)) |
+| **[SpawnSizeData](#constructor-3)**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata)) |
+| **[SpawnSizeData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "size" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SpawnSizeData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SpawnSizeData {#constructor-0}
+> **SpawnSizeData**()
 
-| Constructor                                                              | Description                                                                                                       |
-| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| SpawnSizeData()                                                          | Create a new instance of this container type.                                                                     |
-| SpawnSizeData(SpawnSizeData other)                                       | Create a reference copy of an instance of the same type.                                                          |
-| SpawnSizeData([ProcessorData](/vext/ref/fb/processordata/) other)                      | Upcast an instance of type [ProcessorData](/vext/ref/fb/processordata/) to [SpawnSizeData](/vext/ref/fb/spawnsizedata/).                      |
-| SpawnSizeData([EmitterComponentData](/vext/ref/fb/emittercomponentdata/) other)        | Upcast an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata/) to [SpawnSizeData](/vext/ref/fb/spawnsizedata/).        |
-| SpawnSizeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SpawnSizeData](/vext/ref/fb/spawnsizedata/). |
+Creates a new [SpawnSizeData](/vext/ref/fb/spawnsizedata) frostbite instance.
 
-## Properties
+### SpawnSizeData {#constructor-1}
+> **SpawnSizeData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name | Type   | Description |
-| ---- | ------ | ----------- |
-| size | number |             |
-
-## Methods
-
-| Type                           | Name            | Parameters                                     |
-| ------------------------------ | --------------- | ---------------------------------------------- |
-| [SpawnSizeData](/vext/ref/fb/spawnsizedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SpawnSizeData](/vext/ref/fb/spawnsizedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SpawnSizeData](/vext/ref/fb/spawnsizedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SpawnSizeData {#constructor-2}
+> **SpawnSizeData**(other: [ProcessorData](/vext/ref/fb/processordata))
+
+Casts an instance of type [ProcessorData](/vext/ref/fb/processordata) to [SpawnSizeData](/vext/ref/fb/spawnsizedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ProcessorData](/vext/ref/fb/processordata) | The instance to cast to [SpawnSizeData](/vext/ref/fb/spawnsizedata). |
+
+### SpawnSizeData {#constructor-3}
+> **SpawnSizeData**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata))
+
+Casts an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata) to [SpawnSizeData](/vext/ref/fb/spawnsizedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EmitterComponentData](/vext/ref/fb/emittercomponentdata) | The instance to cast to [SpawnSizeData](/vext/ref/fb/spawnsizedata). |
+
+### SpawnSizeData {#constructor-4}
+> **SpawnSizeData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SpawnSizeData](/vext/ref/fb/spawnsizedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SpawnSizeData](/vext/ref/fb/spawnsizedata). |
+
+## Properties
+### {{% prop-heading "size" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SpawnSizeData](/vext/ref/fb/spawnsizedata) type.
+

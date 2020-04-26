@@ -1,14 +1,11 @@
 ---
 title: RotationAxisEnum
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **RALeft** | Value: **0** |
+| **RAUp** | Value: **1** |
+| **RADof** | Value: **2** |
 
-| Name   | Value | Description |
-| ------ | ----- | ----------- |
-| RALeft | 0     |             |
-| RAUp   | 1     |             |
-| RADof  | 2     |             |

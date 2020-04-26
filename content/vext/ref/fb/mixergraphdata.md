@@ -1,45 +1,80 @@
 ---
 title: MixerGraphData
 ---
-### Base Classes
 
-[AudioGraphData](/vext/ref/fb/audiographdata/)
+Inherits from 
+[AudioGraphData](/vext/ref/fb/audiographdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MixerGraphData](#constructor-0)**() |
+| **[MixerGraphData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MixerGraphData](#constructor-2)**(other: [AudioGraphData](/vext/ref/fb/audiographdata)) |
+| **[MixerGraphData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "inputs" >}} | [AudioGraphParameter](/vext/ref/fb/audiographparameter)[] |
+| {{< prop "accumulateModes" >}} | [MixerValueAccumulateMode](/vext/ref/fb/mixervalueaccumulatemode)[] |
+| {{< prop "outputs" >}} | [AudioGraphParameter](/vext/ref/fb/audiographparameter)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MixerGraphData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MixerGraphData {#constructor-0}
+> **MixerGraphData**()
 
-| Constructor                                                               | Description                                                                                                         |
-| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| MixerGraphData()                                                          | Create a new instance of this container type.                                                                       |
-| MixerGraphData(MixerGraphData other)                                      | Create a reference copy of an instance of the same type.                                                            |
-| MixerGraphData([AudioGraphData](/vext/ref/fb/audiographdata/) other)                    | Upcast an instance of type [AudioGraphData](/vext/ref/fb/audiographdata/) to [MixerGraphData](/vext/ref/fb/mixergraphdata/).                    |
-| MixerGraphData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MixerGraphData](/vext/ref/fb/mixergraphdata/). |
+Creates a new [MixerGraphData](/vext/ref/fb/mixergraphdata) frostbite instance.
 
-## Properties
+### MixerGraphData {#constructor-1}
+> **MixerGraphData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name            | Type                                                     | Description |
-| --------------- | -------------------------------------------------------- | ----------- |
-| inputs          | [AudioGraphParameter](/vext/ref/fb/audiographparameter/)\[\]           |             |
-| accumulateModes | [MixerValueAccumulateMode](/vext/ref/fb/mixervalueaccumulatemode/)\[\] |             |
-| outputs         | [AudioGraphParameter](/vext/ref/fb/audiographparameter/)\[\]           |             |
-
-## Methods
-
-| Type                             | Name            | Parameters                                     |
-| -------------------------------- | --------------- | ---------------------------------------------- |
-| [MixerGraphData](/vext/ref/fb/mixergraphdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MixerGraphData](/vext/ref/fb/mixergraphdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MixerGraphData](/vext/ref/fb/mixergraphdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MixerGraphData {#constructor-2}
+> **MixerGraphData**(other: [AudioGraphData](/vext/ref/fb/audiographdata))
+
+Casts an instance of type [AudioGraphData](/vext/ref/fb/audiographdata) to [MixerGraphData](/vext/ref/fb/mixergraphdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AudioGraphData](/vext/ref/fb/audiographdata) | The instance to cast to [MixerGraphData](/vext/ref/fb/mixergraphdata). |
+
+### MixerGraphData {#constructor-3}
+> **MixerGraphData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MixerGraphData](/vext/ref/fb/mixergraphdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MixerGraphData](/vext/ref/fb/mixergraphdata). |
+
+## Properties
+### {{% prop-heading "inputs" %}}
+> **[AudioGraphParameter](/vext/ref/fb/audiographparameter)**[]
+
+### {{% prop-heading "accumulateModes" %}}
+> **[MixerValueAccumulateMode](/vext/ref/fb/mixervalueaccumulatemode)**[]
+
+### {{% prop-heading "outputs" %}}
+> **[AudioGraphParameter](/vext/ref/fb/audiographparameter)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MixerGraphData](/vext/ref/fb/mixergraphdata) type.
+

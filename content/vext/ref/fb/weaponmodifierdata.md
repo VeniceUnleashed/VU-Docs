@@ -1,32 +1,57 @@
 ---
 title: WeaponModifierData
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[WeaponModifierData](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "unlockAsset" >}} | [UnlockAssetBase](/vext/ref/fb/unlockassetbase) \| nil |
+| {{< prop "modifiers" >}} | [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase)[] |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [WeaponModifierData](/vext/ref/fb/weaponmodifierdata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "WeaponModifierData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### WeaponModifierData {#constructor-0}
+> **WeaponModifierData**()
 
-| Constructor                                  | Description                                              |
-| -------------------------------------------- | -------------------------------------------------------- |
-| WeaponModifierData()                         | Create a new instance of this structure type.            |
-| WeaponModifierData(WeaponModifierData other) | Create a reference copy of a structure of the same type. |
+Creates a new [WeaponModifierData](/vext/ref/fb/weaponmodifierdata) frostbite structure.
 
 ## Properties
+### {{% prop-heading "unlockAsset" %}}
+> **[UnlockAssetBase](/vext/ref/fb/unlockassetbase)** | **nil**
 
-| Name        | Type                                         | Description |
-| ----------- | -------------------------------------------- | ----------- |
-| unlockAsset | [UnlockAssetBase](/vext/ref/fb/unlockassetbase/)           |             |
-| modifiers   | [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase/)\[\] |             |
+### {{% prop-heading "modifiers" %}}
+> **[WeaponModifierBase](/vext/ref/fb/weaponmodifierbase)**[]
 
 ## Methods
-
-| Type                                     | Name            | Parameters |
-| ---------------------------------------- | --------------- | ---------- |
-| [WeaponModifierData](/vext/ref/fb/weaponmodifierdata/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [WeaponModifierData](/vext/ref/fb/weaponmodifierdata)
 
-> [WeaponModifierData](/vext/ref/fb/weaponmodifierdata/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[WeaponModifierData](/vext/ref/fb/weaponmodifierdata)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [WeaponModifierData](/vext/ref/fb/weaponmodifierdata) type.
+

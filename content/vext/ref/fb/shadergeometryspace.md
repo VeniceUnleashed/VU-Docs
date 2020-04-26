@@ -1,15 +1,12 @@
 ---
 title: ShaderGeometrySpace
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ShaderGeometrySpace_Object** | Value: **0** |
+| **ShaderGeometrySpace_ObjectScaled** | Value: **1** |
+| **ShaderGeometrySpace_World** | Value: **2** |
+| **ShaderGeometrySpace_Screen** | Value: **3** |
 
-| Name                              | Value | Description |
-| --------------------------------- | ----- | ----------- |
-| ShaderGeometrySpace\_Object       | 0     |             |
-| ShaderGeometrySpace\_ObjectScaled | 1     |             |
-| ShaderGeometrySpace\_World        | 2     |             |
-| ShaderGeometrySpace\_Screen       | 3     |             |

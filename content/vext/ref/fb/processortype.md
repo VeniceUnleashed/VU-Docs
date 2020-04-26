@@ -1,46 +1,43 @@
 ---
 title: ProcessorType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **PtBaseEmitter** | Value: **0** |
+| **PtSpawnRate** | Value: **1** |
+| **PtSpawnSpeed** | Value: **2** |
+| **PtSpawnPosition** | Value: **3** |
+| **PtSpawnDirection** | Value: **4** |
+| **PtSpawnSize** | Value: **5** |
+| **PtSpawnAnimation** | Value: **6** |
+| **PtSpawnAnimationFrame** | Value: **7** |
+| **PtSpawnRotation** | Value: **8** |
+| **PtSpawnOrientation** | Value: **9** |
+| **PtSpawnRotationSpeed** | Value: **10** |
+| **PtUpdatePosition** | Value: **11** |
+| **PtUpdateAge** | Value: **12** |
+| **PtTurbulance** | Value: **13** |
+| **PtGravity** | Value: **14** |
+| **PtLocalForce** | Value: **15** |
+| **PtAirResistance** | Value: **16** |
+| **PtUpdateLinearVelocity** | Value: **17** |
+| **PtUpdateOrientation** | Value: **18** |
+| **PtEmitter** | Value: **19** |
+| **PtUpdateColor** | Value: **20** |
+| **PtUpdateColorLeaf** | Value: **21** |
+| **PtUpdateTransparency** | Value: **22** |
+| **PtUpdateTextureCoords** | Value: **23** |
+| **PtUpdateRotation** | Value: **24** |
+| **PtUpdateSizeX** | Value: **25** |
+| **PtUpdateSizeY** | Value: **26** |
+| **PtUpdateSizeZ** | Value: **27** |
+| **PtUpdateSize** | Value: **28** |
+| **PtUpdateAlphaLevelMin** | Value: **29** |
+| **PtUpdateAlphaLevelMax** | Value: **30** |
+| **PtUpdateAlphaLevelScale** | Value: **31** |
+| **PtUpdateClipScale** | Value: **32** |
+| **PtUpdateCameraProximity** | Value: **33** |
+| **ProcessorTypeCount** | Value: **34** |
 
-| Name                    | Value | Description |
-| ----------------------- | ----- | ----------- |
-| PtBaseEmitter           | 0     |             |
-| PtSpawnRate             | 1     |             |
-| PtSpawnSpeed            | 2     |             |
-| PtSpawnPosition         | 3     |             |
-| PtSpawnDirection        | 4     |             |
-| PtSpawnSize             | 5     |             |
-| PtSpawnAnimation        | 6     |             |
-| PtSpawnAnimationFrame   | 7     |             |
-| PtSpawnRotation         | 8     |             |
-| PtSpawnOrientation      | 9     |             |
-| PtSpawnRotationSpeed    | 10    |             |
-| PtUpdatePosition        | 11    |             |
-| PtUpdateAge             | 12    |             |
-| PtTurbulance            | 13    |             |
-| PtGravity               | 14    |             |
-| PtLocalForce            | 15    |             |
-| PtAirResistance         | 16    |             |
-| PtUpdateLinearVelocity  | 17    |             |
-| PtUpdateOrientation     | 18    |             |
-| PtEmitter               | 19    |             |
-| PtUpdateColor           | 20    |             |
-| PtUpdateColorLeaf       | 21    |             |
-| PtUpdateTransparency    | 22    |             |
-| PtUpdateTextureCoords   | 23    |             |
-| PtUpdateRotation        | 24    |             |
-| PtUpdateSizeX           | 25    |             |
-| PtUpdateSizeY           | 26    |             |
-| PtUpdateSizeZ           | 27    |             |
-| PtUpdateSize            | 28    |             |
-| PtUpdateAlphaLevelMin   | 29    |             |
-| PtUpdateAlphaLevelMax   | 30    |             |
-| PtUpdateAlphaLevelScale | 31    |             |
-| PtUpdateClipScale       | 32    |             |
-| PtUpdateCameraProximity | 33    |             |
-| ProcessorTypeCount      | 34    |             |

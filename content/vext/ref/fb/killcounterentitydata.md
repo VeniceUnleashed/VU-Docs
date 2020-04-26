@@ -1,52 +1,136 @@
 ---
 title: KillCounterEntityData
 ---
-### Base Classes
 
-[GameEntityData](/vext/ref/fb/gameentitydata/)
+Inherits from 
+[GameEntityData](/vext/ref/fb/gameentitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[KillCounterEntityData](#constructor-0)**() |
+| **[KillCounterEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[KillCounterEntityData](#constructor-2)**(other: [GameEntityData](/vext/ref/fb/gameentitydata)) |
+| **[KillCounterEntityData](#constructor-3)**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata)) |
+| **[KillCounterEntityData](#constructor-4)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[KillCounterEntityData](#constructor-5)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[KillCounterEntityData](#constructor-6)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[KillCounterEntityData](#constructor-7)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "teamKillWeight" >}} | [KillWeight](/vext/ref/fb/killweight) |
+| {{< prop "teamId" >}} | [TeamId](/vext/ref/fb/teamid) |
+| {{< prop "neutralTeamWeight" >}} | [KillWeight](/vext/ref/fb/killweight) |
+| {{< prop "enemyWeight" >}} | float |
+| {{< prop "maxKillCount" >}} | int |
+| {{< prop "ignoreAI" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "KillCounterEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### KillCounterEntityData {#constructor-0}
+> **KillCounterEntityData**()
 
-| Constructor                                                                      | Description                                                                                                                       |
-| -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| KillCounterEntityData()                                                          | Create a new instance of this container type.                                                                                     |
-| KillCounterEntityData(KillCounterEntityData other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| KillCounterEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [KillCounterEntityData](/vext/ref/fb/killcounterentitydata/).                    |
-| KillCounterEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [KillCounterEntityData](/vext/ref/fb/killcounterentitydata/).              |
-| KillCounterEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [KillCounterEntityData](/vext/ref/fb/killcounterentitydata/).                            |
-| KillCounterEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [KillCounterEntityData](/vext/ref/fb/killcounterentitydata/).                    |
-| KillCounterEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [KillCounterEntityData](/vext/ref/fb/killcounterentitydata/).              |
-| KillCounterEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [KillCounterEntityData](/vext/ref/fb/killcounterentitydata/). |
+Creates a new [KillCounterEntityData](/vext/ref/fb/killcounterentitydata) frostbite instance.
 
-## Properties
+### KillCounterEntityData {#constructor-1}
+> **KillCounterEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name              | Type                     | Description |
-| ----------------- | ------------------------ | ----------- |
-| teamKillWeight    | [KillWeight](/vext/ref/fb/killweight/) |             |
-| teamId            | [TeamId](/vext/ref/fb/teamid/)         |             |
-| neutralTeamWeight | [KillWeight](/vext/ref/fb/killweight/) |             |
-| enemyWeight       | number                   |             |
-| maxKillCount      | number                   |             |
-| ignoreAI          | bool                     |             |
-
-## Methods
-
-| Type                                           | Name            | Parameters                                     |
-| ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [KillCounterEntityData](/vext/ref/fb/killcounterentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [KillCounterEntityData](/vext/ref/fb/killcounterentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [KillCounterEntityData](/vext/ref/fb/killcounterentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### KillCounterEntityData {#constructor-2}
+> **KillCounterEntityData**(other: [GameEntityData](/vext/ref/fb/gameentitydata))
+
+Casts an instance of type [GameEntityData](/vext/ref/fb/gameentitydata) to [KillCounterEntityData](/vext/ref/fb/killcounterentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameEntityData](/vext/ref/fb/gameentitydata) | The instance to cast to [KillCounterEntityData](/vext/ref/fb/killcounterentitydata). |
+
+### KillCounterEntityData {#constructor-3}
+> **KillCounterEntityData**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata))
+
+Casts an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata) to [KillCounterEntityData](/vext/ref/fb/killcounterentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SpatialEntityData](/vext/ref/fb/spatialentitydata) | The instance to cast to [KillCounterEntityData](/vext/ref/fb/killcounterentitydata). |
+
+### KillCounterEntityData {#constructor-4}
+> **KillCounterEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [KillCounterEntityData](/vext/ref/fb/killcounterentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [KillCounterEntityData](/vext/ref/fb/killcounterentitydata). |
+
+### KillCounterEntityData {#constructor-5}
+> **KillCounterEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [KillCounterEntityData](/vext/ref/fb/killcounterentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [KillCounterEntityData](/vext/ref/fb/killcounterentitydata). |
+
+### KillCounterEntityData {#constructor-6}
+> **KillCounterEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [KillCounterEntityData](/vext/ref/fb/killcounterentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [KillCounterEntityData](/vext/ref/fb/killcounterentitydata). |
+
+### KillCounterEntityData {#constructor-7}
+> **KillCounterEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [KillCounterEntityData](/vext/ref/fb/killcounterentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [KillCounterEntityData](/vext/ref/fb/killcounterentitydata). |
+
+## Properties
+### {{% prop-heading "teamKillWeight" %}}
+> **[KillWeight](/vext/ref/fb/killweight)**
+
+### {{% prop-heading "teamId" %}}
+> **[TeamId](/vext/ref/fb/teamid)**
+
+### {{% prop-heading "neutralTeamWeight" %}}
+> **[KillWeight](/vext/ref/fb/killweight)**
+
+### {{% prop-heading "enemyWeight" %}}
+> **float**
+
+### {{% prop-heading "maxKillCount" %}}
+> **int**
+
+### {{% prop-heading "ignoreAI" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [KillCounterEntityData](/vext/ref/fb/killcounterentitydata) type.
+

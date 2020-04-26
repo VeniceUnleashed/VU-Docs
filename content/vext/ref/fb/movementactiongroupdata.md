@@ -1,45 +1,80 @@
 ---
 title: MovementActionGroupData
 ---
-### Base Classes
 
-[MovementActionData](/vext/ref/fb/movementactiondata/)
+Inherits from 
+[MovementActionData](/vext/ref/fb/movementactiondata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MovementActionGroupData](#constructor-0)**() |
+| **[MovementActionGroupData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MovementActionGroupData](#constructor-2)**(other: [MovementActionData](/vext/ref/fb/movementactiondata)) |
+| **[MovementActionGroupData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "actions" >}} | [MovementActionData](/vext/ref/fb/movementactiondata)[] |
+| {{< prop "runSimultaneously" >}} | bool |
+| {{< prop "restartChildren" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MovementActionGroupData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MovementActionGroupData {#constructor-0}
+> **MovementActionGroupData**()
 
-| Constructor                                                                        | Description                                                                                                                           |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| MovementActionGroupData()                                                          | Create a new instance of this container type.                                                                                         |
-| MovementActionGroupData(MovementActionGroupData other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| MovementActionGroupData([MovementActionData](/vext/ref/fb/movementactiondata/) other)            | Upcast an instance of type [MovementActionData](/vext/ref/fb/movementactiondata/) to [MovementActionGroupData](/vext/ref/fb/movementactiongroupdata/).            |
-| MovementActionGroupData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MovementActionGroupData](/vext/ref/fb/movementactiongroupdata/). |
+Creates a new [MovementActionGroupData](/vext/ref/fb/movementactiongroupdata) frostbite instance.
 
-## Properties
+### MovementActionGroupData {#constructor-1}
+> **MovementActionGroupData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name              | Type                                         | Description |
-| ----------------- | -------------------------------------------- | ----------- |
-| actions           | [MovementActionData](/vext/ref/fb/movementactiondata/)\[\] |             |
-| runSimultaneously | bool                                         |             |
-| restartChildren   | bool                                         |             |
-
-## Methods
-
-| Type                                               | Name            | Parameters                                     |
-| -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [MovementActionGroupData](/vext/ref/fb/movementactiongroupdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MovementActionGroupData](/vext/ref/fb/movementactiongroupdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MovementActionGroupData](/vext/ref/fb/movementactiongroupdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MovementActionGroupData {#constructor-2}
+> **MovementActionGroupData**(other: [MovementActionData](/vext/ref/fb/movementactiondata))
+
+Casts an instance of type [MovementActionData](/vext/ref/fb/movementactiondata) to [MovementActionGroupData](/vext/ref/fb/movementactiongroupdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [MovementActionData](/vext/ref/fb/movementactiondata) | The instance to cast to [MovementActionGroupData](/vext/ref/fb/movementactiongroupdata). |
+
+### MovementActionGroupData {#constructor-3}
+> **MovementActionGroupData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MovementActionGroupData](/vext/ref/fb/movementactiongroupdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MovementActionGroupData](/vext/ref/fb/movementactiongroupdata). |
+
+## Properties
+### {{% prop-heading "actions" %}}
+> **[MovementActionData](/vext/ref/fb/movementactiondata)**[]
+
+### {{% prop-heading "runSimultaneously" %}}
+> **bool**
+
+### {{% prop-heading "restartChildren" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MovementActionGroupData](/vext/ref/fb/movementactiongroupdata) type.
+

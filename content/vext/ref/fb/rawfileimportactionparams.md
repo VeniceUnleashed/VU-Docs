@@ -1,42 +1,61 @@
 ---
 title: RawFileImportActionParams
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[RawFileImportActionParams](#constructor-0)**() |
+| **[RawFileImportActionParams](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[RawFileImportActionParams](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "sourceFile" >}} | string |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "RawFileImportActionParams" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### RawFileImportActionParams {#constructor-0}
+> **RawFileImportActionParams**()
 
-| Constructor                                                                          | Description                                                                                                                               |
-| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| RawFileImportActionParams()                                                          | Create a new instance of this container type.                                                                                             |
-| RawFileImportActionParams(RawFileImportActionParams other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| RawFileImportActionParams([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RawFileImportActionParams](/vext/ref/fb/rawfileimportactionparams/). |
+Creates a new [RawFileImportActionParams](/vext/ref/fb/rawfileimportactionparams) frostbite instance.
 
-## Properties
+### RawFileImportActionParams {#constructor-1}
+> **RawFileImportActionParams**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name       | Type   | Description |
-| ---------- | ------ | ----------- |
-| sourceFile | string |             |
-
-## Methods
-
-| Type                                                   | Name            | Parameters                                     |
-| ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [RawFileImportActionParams](/vext/ref/fb/rawfileimportactionparams/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [RawFileImportActionParams](/vext/ref/fb/rawfileimportactionparams/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [RawFileImportActionParams](/vext/ref/fb/rawfileimportactionparams) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### RawFileImportActionParams {#constructor-2}
+> **RawFileImportActionParams**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RawFileImportActionParams](/vext/ref/fb/rawfileimportactionparams). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [RawFileImportActionParams](/vext/ref/fb/rawfileimportactionparams). |
+
+## Properties
+### {{% prop-heading "sourceFile" %}}
+> **string**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [RawFileImportActionParams](/vext/ref/fb/rawfileimportactionparams) type.
+

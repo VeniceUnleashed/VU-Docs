@@ -1,32 +1,57 @@
 ---
 title: IntOption
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[IntOption](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "name" >}} | string |
+| {{< prop "value" >}} | int |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [IntOption](/vext/ref/fb/intoption) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "IntOption" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### IntOption {#constructor-0}
+> **IntOption**()
 
-| Constructor                | Description                                              |
-| -------------------------- | -------------------------------------------------------- |
-| IntOption()                | Create a new instance of this structure type.            |
-| IntOption(IntOption other) | Create a reference copy of a structure of the same type. |
+Creates a new [IntOption](/vext/ref/fb/intoption) frostbite structure.
 
 ## Properties
+### {{% prop-heading "name" %}}
+> **string**
 
-| Name  | Type   | Description |
-| ----- | ------ | ----------- |
-| name  | string |             |
-| value | number |             |
+### {{% prop-heading "value" %}}
+> **int**
 
 ## Methods
-
-| Type                   | Name            | Parameters |
-| ---------------------- | --------------- | ---------- |
-| [IntOption](/vext/ref/fb/intoption/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [IntOption](/vext/ref/fb/intoption)
 
-> [IntOption](/vext/ref/fb/intoption/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[IntOption](/vext/ref/fb/intoption)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [IntOption](/vext/ref/fb/intoption) type.
+

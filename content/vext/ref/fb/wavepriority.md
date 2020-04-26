@@ -1,16 +1,13 @@
 ---
 title: WavePriority
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **WpNone** | Value: **0** |
+| **WpLow** | Value: **1** |
+| **WpNormal** | Value: **2** |
+| **WpHigh** | Value: **3** |
+| **WpPermanent** | Value: **4** |
 
-| Name        | Value | Description |
-| ----------- | ----- | ----------- |
-| WpNone      | 0     |             |
-| WpLow       | 1     |             |
-| WpNormal    | 2     |             |
-| WpHigh      | 3     |             |
-| WpPermanent | 4     |             |

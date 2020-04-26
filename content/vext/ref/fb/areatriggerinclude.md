@@ -1,18 +1,15 @@
 ---
 title: AreaTriggerInclude
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ATNone** | Value: **0** |
+| **ATAll** | Value: **1** |
+| **ATPlayers** | Value: **2** |
+| **ATAI** | Value: **3** |
+| **ATAI_Allies** | Value: **4** |
+| **ATAI_Enemies** | Value: **5** |
+| **ATPlayersNotInVehicle** | Value: **6** |
 
-| Name                  | Value | Description |
-| --------------------- | ----- | ----------- |
-| ATNone                | 0     |             |
-| ATAll                 | 1     |             |
-| ATPlayers             | 2     |             |
-| ATAI                  | 3     |             |
-| ATAI\_Allies          | 4     |             |
-| ATAI\_Enemies         | 5     |             |
-| ATPlayersNotInVehicle | 6     |             |

@@ -1,13 +1,10 @@
 ---
 title: MixerValueUIOrientation
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **MixerValueUIOrientation_Horizontal** | Value: **0** |
+| **MixerValueUIOrientation_Vertical** | Value: **1** |
 
-| Name                                | Value | Description |
-| ----------------------------------- | ----- | ----------- |
-| MixerValueUIOrientation\_Horizontal | 0     |             |
-| MixerValueUIOrientation\_Vertical   | 1     |             |

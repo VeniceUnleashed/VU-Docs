@@ -1,48 +1,113 @@
 ---
 title: WheelComponentData
 ---
-### Base Classes
 
-[PartComponentData](/vext/ref/fb/partcomponentdata/)
+Inherits from 
+[PartComponentData](/vext/ref/fb/partcomponentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[WheelComponentData](#constructor-0)**() |
+| **[WheelComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[WheelComponentData](#constructor-2)**(other: [PartComponentData](/vext/ref/fb/partcomponentdata)) |
+| **[WheelComponentData](#constructor-3)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[WheelComponentData](#constructor-4)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[WheelComponentData](#constructor-5)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[WheelComponentData](#constructor-6)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "config" >}} | [WheelConfigData](/vext/ref/fb/wheelconfigdata) \| nil |
+| {{< prop "physicsType" >}} | [WheelPhysicsType](/vext/ref/fb/wheelphysicstype) |
+| {{< prop "effectClampVelocity" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "WheelComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### WheelComponentData {#constructor-0}
+> **WheelComponentData**()
 
-| Constructor                                                                   | Description                                                                                                                 |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| WheelComponentData()                                                          | Create a new instance of this container type.                                                                               |
-| WheelComponentData(WheelComponentData other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| WheelComponentData([PartComponentData](/vext/ref/fb/partcomponentdata/) other)              | Upcast an instance of type [PartComponentData](/vext/ref/fb/partcomponentdata/) to [WheelComponentData](/vext/ref/fb/wheelcomponentdata/).              |
-| WheelComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [WheelComponentData](/vext/ref/fb/wheelcomponentdata/).                      |
-| WheelComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [WheelComponentData](/vext/ref/fb/wheelcomponentdata/).                    |
-| WheelComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [WheelComponentData](/vext/ref/fb/wheelcomponentdata/).              |
-| WheelComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WheelComponentData](/vext/ref/fb/wheelcomponentdata/). |
+Creates a new [WheelComponentData](/vext/ref/fb/wheelcomponentdata) frostbite instance.
 
-## Properties
+### WheelComponentData {#constructor-1}
+> **WheelComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                | Type                                 | Description |
-| ------------------- | ------------------------------------ | ----------- |
-| config              | [WheelConfigData](/vext/ref/fb/wheelconfigdata/)   |             |
-| physicsType         | [WheelPhysicsType](/vext/ref/fb/wheelphysicstype/) |             |
-| effectClampVelocity | number                               |             |
-
-## Methods
-
-| Type                                     | Name            | Parameters                                     |
-| ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [WheelComponentData](/vext/ref/fb/wheelcomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [WheelComponentData](/vext/ref/fb/wheelcomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [WheelComponentData](/vext/ref/fb/wheelcomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### WheelComponentData {#constructor-2}
+> **WheelComponentData**(other: [PartComponentData](/vext/ref/fb/partcomponentdata))
+
+Casts an instance of type [PartComponentData](/vext/ref/fb/partcomponentdata) to [WheelComponentData](/vext/ref/fb/wheelcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [PartComponentData](/vext/ref/fb/partcomponentdata) | The instance to cast to [WheelComponentData](/vext/ref/fb/wheelcomponentdata). |
+
+### WheelComponentData {#constructor-3}
+> **WheelComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [WheelComponentData](/vext/ref/fb/wheelcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [WheelComponentData](/vext/ref/fb/wheelcomponentdata). |
+
+### WheelComponentData {#constructor-4}
+> **WheelComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [WheelComponentData](/vext/ref/fb/wheelcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [WheelComponentData](/vext/ref/fb/wheelcomponentdata). |
+
+### WheelComponentData {#constructor-5}
+> **WheelComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [WheelComponentData](/vext/ref/fb/wheelcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [WheelComponentData](/vext/ref/fb/wheelcomponentdata). |
+
+### WheelComponentData {#constructor-6}
+> **WheelComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WheelComponentData](/vext/ref/fb/wheelcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [WheelComponentData](/vext/ref/fb/wheelcomponentdata). |
+
+## Properties
+### {{% prop-heading "config" %}}
+> **[WheelConfigData](/vext/ref/fb/wheelconfigdata)** | **nil**
+
+### {{% prop-heading "physicsType" %}}
+> **[WheelPhysicsType](/vext/ref/fb/wheelphysicstype)**
+
+### {{% prop-heading "effectClampVelocity" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [WheelComponentData](/vext/ref/fb/wheelcomponentdata) type.
+

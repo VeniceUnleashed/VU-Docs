@@ -1,51 +1,104 @@
 ---
 title: UIWeaponAccessoryDescription
 ---
-### Base Classes
 
-[UIItemDescription](/vext/ref/fb/uiitemdescription/)
+Inherits from 
+[UIItemDescription](/vext/ref/fb/uiitemdescription)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIWeaponAccessoryDescription](#constructor-0)**() |
+| **[UIWeaponAccessoryDescription](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UIWeaponAccessoryDescription](#constructor-2)**(other: [UIItemDescription](/vext/ref/fb/uiitemdescription)) |
+| **[UIWeaponAccessoryDescription](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "name" >}} | string |
+| {{< prop "description" >}} | string |
+| {{< prop "category" >}} | string |
+| {{< prop "texturePath" >}} | string |
+| {{< prop "iconTexturePath" >}} | string |
+| {{< prop "unlockTexturePath" >}} | string |
+| {{< prop "miscTexturePath" >}} | string |
+| {{< prop "coreAccessory" >}} | bool |
+| {{< prop "hiddenInProgression" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIWeaponAccessoryDescription" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIWeaponAccessoryDescription {#constructor-0}
+> **UIWeaponAccessoryDescription**()
 
-| Constructor                                                                             | Description                                                                                                                                     |
-| --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| UIWeaponAccessoryDescription()                                                          | Create a new instance of this container type.                                                                                                   |
-| UIWeaponAccessoryDescription(UIWeaponAccessoryDescription other)                        | Create a reference copy of an instance of the same type.                                                                                        |
-| UIWeaponAccessoryDescription([UIItemDescription](/vext/ref/fb/uiitemdescription/) other)              | Upcast an instance of type [UIItemDescription](/vext/ref/fb/uiitemdescription/) to [UIWeaponAccessoryDescription](/vext/ref/fb/uiweaponaccessorydescription/).              |
-| UIWeaponAccessoryDescription([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIWeaponAccessoryDescription](/vext/ref/fb/uiweaponaccessorydescription/). |
+Creates a new [UIWeaponAccessoryDescription](/vext/ref/fb/uiweaponaccessorydescription) frostbite instance.
 
-## Properties
+### UIWeaponAccessoryDescription {#constructor-1}
+> **UIWeaponAccessoryDescription**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                | Type   | Description |
-| ------------------- | ------ | ----------- |
-| name                | string |             |
-| description         | string |             |
-| category            | string |             |
-| texturePath         | string |             |
-| iconTexturePath     | string |             |
-| unlockTexturePath   | string |             |
-| miscTexturePath     | string |             |
-| coreAccessory       | bool   |             |
-| hiddenInProgression | bool   |             |
-
-## Methods
-
-| Type                                                         | Name            | Parameters                                     |
-| ------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [UIWeaponAccessoryDescription](/vext/ref/fb/uiweaponaccessorydescription/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UIWeaponAccessoryDescription](/vext/ref/fb/uiweaponaccessorydescription/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UIWeaponAccessoryDescription](/vext/ref/fb/uiweaponaccessorydescription) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UIWeaponAccessoryDescription {#constructor-2}
+> **UIWeaponAccessoryDescription**(other: [UIItemDescription](/vext/ref/fb/uiitemdescription))
+
+Casts an instance of type [UIItemDescription](/vext/ref/fb/uiitemdescription) to [UIWeaponAccessoryDescription](/vext/ref/fb/uiweaponaccessorydescription). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIItemDescription](/vext/ref/fb/uiitemdescription) | The instance to cast to [UIWeaponAccessoryDescription](/vext/ref/fb/uiweaponaccessorydescription). |
+
+### UIWeaponAccessoryDescription {#constructor-3}
+> **UIWeaponAccessoryDescription**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIWeaponAccessoryDescription](/vext/ref/fb/uiweaponaccessorydescription). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UIWeaponAccessoryDescription](/vext/ref/fb/uiweaponaccessorydescription). |
+
+## Properties
+### {{% prop-heading "name" %}}
+> **string**
+
+### {{% prop-heading "description" %}}
+> **string**
+
+### {{% prop-heading "category" %}}
+> **string**
+
+### {{% prop-heading "texturePath" %}}
+> **string**
+
+### {{% prop-heading "iconTexturePath" %}}
+> **string**
+
+### {{% prop-heading "unlockTexturePath" %}}
+> **string**
+
+### {{% prop-heading "miscTexturePath" %}}
+> **string**
+
+### {{% prop-heading "coreAccessory" %}}
+> **bool**
+
+### {{% prop-heading "hiddenInProgression" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIWeaponAccessoryDescription](/vext/ref/fb/uiweaponaccessorydescription) type.
+

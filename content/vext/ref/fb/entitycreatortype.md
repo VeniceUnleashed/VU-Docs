@@ -1,16 +1,13 @@
 ---
 title: EntityCreatorType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **EntityCreatorType_Unknown** | Value: **0** |
+| **EntityCreatorType_Level** | Value: **1** |
+| **EntityCreatorType_Spawner** | Value: **2** |
+| **EntityCreatorType_Owner** | Value: **3** |
+| **EntityCreatorType_Ghost** | Value: **4** |
 
-| Name                       | Value | Description |
-| -------------------------- | ----- | ----------- |
-| EntityCreatorType\_Unknown | 0     |             |
-| EntityCreatorType\_Level   | 1     |             |
-| EntityCreatorType\_Spawner | 2     |             |
-| EntityCreatorType\_Owner   | 3     |             |
-| EntityCreatorType\_Ghost   | 4     |             |

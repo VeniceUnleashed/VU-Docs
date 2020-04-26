@@ -1,15 +1,12 @@
 ---
 title: CharacterPoseType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **CharacterPoseType_Stand** | Value: **0** |
+| **CharacterPoseType_Crouch** | Value: **1** |
+| **CharacterPoseType_Prone** | Value: **2** |
+| **CharacterPoseTypeCount** | Value: **3** |
 
-| Name                      | Value | Description |
-| ------------------------- | ----- | ----------- |
-| CharacterPoseType\_Stand  | 0     |             |
-| CharacterPoseType\_Crouch | 1     |             |
-| CharacterPoseType\_Prone  | 2     |             |
-| CharacterPoseTypeCount    | 3     |             |

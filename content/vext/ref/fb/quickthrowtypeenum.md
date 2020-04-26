@@ -1,13 +1,10 @@
 ---
 title: QuickThrowTypeEnum
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **QttHand** | Value: **0** |
+| **QttBag** | Value: **1** |
 
-| Name    | Value | Description |
-| ------- | ----- | ----------- |
-| QttHand | 0     |             |
-| QttBag  | 1     |             |

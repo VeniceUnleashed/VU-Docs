@@ -1,45 +1,80 @@
 ---
 title: RefreshNode
 ---
-### Base Classes
 
-[UINodeData](/vext/ref/fb/uinodedata/)
+Inherits from 
+[UINodeData](/vext/ref/fb/uinodedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[RefreshNode](#constructor-0)**() |
+| **[RefreshNode](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[RefreshNode](#constructor-2)**(other: [UINodeData](/vext/ref/fb/uinodedata)) |
+| **[RefreshNode](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "inValue" >}} | [UINodePort](/vext/ref/fb/uinodeport) \| nil |
+| {{< prop "out" >}} | [UINodePort](/vext/ref/fb/uinodeport) \| nil |
+| {{< prop "dataSource" >}} | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "RefreshNode" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### RefreshNode {#constructor-0}
+> **RefreshNode**()
 
-| Constructor                                                            | Description                                                                                                   |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| RefreshNode()                                                          | Create a new instance of this container type.                                                                 |
-| RefreshNode(RefreshNode other)                                         | Create a reference copy of an instance of the same type.                                                      |
-| RefreshNode([UINodeData](/vext/ref/fb/uinodedata/) other)                            | Upcast an instance of type [UINodeData](/vext/ref/fb/uinodedata/) to [RefreshNode](/vext/ref/fb/refreshnode/).                            |
-| RefreshNode([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RefreshNode](/vext/ref/fb/refreshnode/). |
+Creates a new [RefreshNode](/vext/ref/fb/refreshnode) frostbite instance.
 
-## Properties
+### RefreshNode {#constructor-1}
+> **RefreshNode**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name       | Type                                 | Description |
-| ---------- | ------------------------------------ | ----------- |
-| inValue    | [UINodePort](/vext/ref/fb/uinodeport/)             |             |
-| out        | [UINodePort](/vext/ref/fb/uinodeport/)             |             |
-| dataSource | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/) |             |
-
-## Methods
-
-| Type                       | Name            | Parameters                                     |
-| -------------------------- | --------------- | ---------------------------------------------- |
-| [RefreshNode](/vext/ref/fb/refreshnode/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [RefreshNode](/vext/ref/fb/refreshnode/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [RefreshNode](/vext/ref/fb/refreshnode) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### RefreshNode {#constructor-2}
+> **RefreshNode**(other: [UINodeData](/vext/ref/fb/uinodedata))
+
+Casts an instance of type [UINodeData](/vext/ref/fb/uinodedata) to [RefreshNode](/vext/ref/fb/refreshnode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UINodeData](/vext/ref/fb/uinodedata) | The instance to cast to [RefreshNode](/vext/ref/fb/refreshnode). |
+
+### RefreshNode {#constructor-3}
+> **RefreshNode**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RefreshNode](/vext/ref/fb/refreshnode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [RefreshNode](/vext/ref/fb/refreshnode). |
+
+## Properties
+### {{% prop-heading "inValue" %}}
+> **[UINodePort](/vext/ref/fb/uinodeport)** | **nil**
+
+### {{% prop-heading "out" %}}
+> **[UINodePort](/vext/ref/fb/uinodeport)** | **nil**
+
+### {{% prop-heading "dataSource" %}}
+> **[UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [RefreshNode](/vext/ref/fb/refreshnode) type.
+

@@ -1,13 +1,10 @@
 ---
 title: VoiceOverLogicFlowMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **VoiceOverLogicFlowMode_All** | Value: **0** |
+| **VoiceOverLogicFlowMode_One** | Value: **1** |
 
-| Name                        | Value | Description |
-| --------------------------- | ----- | ----------- |
-| VoiceOverLogicFlowMode\_All | 0     |             |
-| VoiceOverLogicFlowMode\_One | 1     |             |

@@ -1,14 +1,11 @@
 ---
 title: ShaderObjectLighting
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ShaderObjectLighting_None** | Value: **0** |
+| **ShaderObjectLighting_LightProbe** | Value: **1** |
+| **ShaderObjectLighting_LightMap** | Value: **2** |
 
-| Name                             | Value | Description |
-| -------------------------------- | ----- | ----------- |
-| ShaderObjectLighting\_None       | 0     |             |
-| ShaderObjectLighting\_LightProbe | 1     |             |
-| ShaderObjectLighting\_LightMap   | 2     |             |

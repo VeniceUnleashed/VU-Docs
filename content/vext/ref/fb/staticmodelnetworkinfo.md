@@ -1,34 +1,65 @@
 ---
 title: StaticModelNetworkInfo
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[StaticModelNetworkInfo](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "partNetworkIdRanges" >}} | [IndexRange](/vext/ref/fb/indexrange)[] |
+| {{< prop "networkIdCount" >}} | int |
+| {{< prop "childNetworkInfos" >}} | [ChildStaticModelNetworkInfo](/vext/ref/fb/childstaticmodelnetworkinfo)[] |
+| {{< prop "childNetworkIdCount" >}} | int |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [StaticModelNetworkInfo](/vext/ref/fb/staticmodelnetworkinfo) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "StaticModelNetworkInfo" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### StaticModelNetworkInfo {#constructor-0}
+> **StaticModelNetworkInfo**()
 
-| Constructor                                          | Description                                              |
-| ---------------------------------------------------- | -------------------------------------------------------- |
-| StaticModelNetworkInfo()                             | Create a new instance of this structure type.            |
-| StaticModelNetworkInfo(StaticModelNetworkInfo other) | Create a reference copy of a structure of the same type. |
+Creates a new [StaticModelNetworkInfo](/vext/ref/fb/staticmodelnetworkinfo) frostbite structure.
 
 ## Properties
+### {{% prop-heading "partNetworkIdRanges" %}}
+> **[IndexRange](/vext/ref/fb/indexrange)**[]
 
-| Name                | Type                                                           | Description |
-| ------------------- | -------------------------------------------------------------- | ----------- |
-| partNetworkIdRanges | [IndexRange](/vext/ref/fb/indexrange/)\[\]                                   |             |
-| networkIdCount      | number                                                         |             |
-| childNetworkInfos   | [ChildStaticModelNetworkInfo](/vext/ref/fb/childstaticmodelnetworkinfo/)\[\] |             |
-| childNetworkIdCount | number                                                         |             |
+### {{% prop-heading "networkIdCount" %}}
+> **int**
+
+### {{% prop-heading "childNetworkInfos" %}}
+> **[ChildStaticModelNetworkInfo](/vext/ref/fb/childstaticmodelnetworkinfo)**[]
+
+### {{% prop-heading "childNetworkIdCount" %}}
+> **int**
 
 ## Methods
-
-| Type                                             | Name            | Parameters |
-| ------------------------------------------------ | --------------- | ---------- |
-| [StaticModelNetworkInfo](/vext/ref/fb/staticmodelnetworkinfo/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [StaticModelNetworkInfo](/vext/ref/fb/staticmodelnetworkinfo)
 
-> [StaticModelNetworkInfo](/vext/ref/fb/staticmodelnetworkinfo/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[StaticModelNetworkInfo](/vext/ref/fb/staticmodelnetworkinfo)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [StaticModelNetworkInfo](/vext/ref/fb/staticmodelnetworkinfo) type.
+

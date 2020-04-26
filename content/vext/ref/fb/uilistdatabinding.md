@@ -1,64 +1,156 @@
 ---
 title: UIListDataBinding
 ---
-### Base Classes
 
-[UIDataBinding](/vext/ref/fb/uidatabinding/)
+Inherits from 
+[UIDataBinding](/vext/ref/fb/uidatabinding)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIListDataBinding](#constructor-0)**() |
+| **[UIListDataBinding](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UIListDataBinding](#constructor-2)**(other: [UIDataBinding](/vext/ref/fb/uidatabinding)) |
+| **[UIListDataBinding](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "listIndex" >}} | int |
+| {{< prop "listQuery" >}} | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo) |
+| {{< prop "staticItems" >}} | [StaticListItem](/vext/ref/fb/staticlistitem)[] |
+| {{< prop "emptyRowType" >}} | [UIListEmptyRowType](/vext/ref/fb/uilistemptyrowtype) |
+| {{< prop "defaultHighlightedRow" >}} | [DefaultSelectionItem](/vext/ref/fb/defaultselectionitem) |
+| {{< prop "rowType" >}} | [UIListRowType](/vext/ref/fb/uilistrowtype) |
+| {{< prop "navigationType" >}} | [UIListNavigationType](/vext/ref/fb/uilistnavigationtype) |
+| {{< prop "navigationTypeSource" >}} | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo) |
+| {{< prop "rowSpacing" >}} | int |
+| {{< prop "unFocusMode" >}} | [UIListUnFocusMode](/vext/ref/fb/uilistunfocusmode) |
+| {{< prop "disabledRows" >}} | string |
+| {{< prop "clearListAtNavigationEvent" >}} | bool |
+| {{< prop "sendIndexWithEvent" >}} | bool |
+| {{< prop "screenRotationEnabled" >}} | bool |
+| {{< prop "use3DSelection" >}} | bool |
+| {{< prop "fireHighlightOnMouseOut" >}} | bool |
+| {{< prop "dataIncludesButtonLayout" >}} | bool |
+| {{< prop "visible" >}} | bool |
+| {{< prop "spinnerEnabled" >}} | bool |
+| {{< prop "useScrollBar" >}} | bool |
+| {{< prop "highLightOnUpdate" >}} | bool |
+| {{< prop "keepScrollOffset" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIListDataBinding" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIListDataBinding {#constructor-0}
+> **UIListDataBinding**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| UIListDataBinding()                                                          | Create a new instance of this container type.                                                                             |
-| UIListDataBinding(UIListDataBinding other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| UIListDataBinding([UIDataBinding](/vext/ref/fb/uidatabinding/) other)                      | Upcast an instance of type [UIDataBinding](/vext/ref/fb/uidatabinding/) to [UIListDataBinding](/vext/ref/fb/uilistdatabinding/).                      |
-| UIListDataBinding([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIListDataBinding](/vext/ref/fb/uilistdatabinding/). |
+Creates a new [UIListDataBinding](/vext/ref/fb/uilistdatabinding) frostbite instance.
 
-## Properties
+### UIListDataBinding {#constructor-1}
+> **UIListDataBinding**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                       | Type                                         | Description |
-| -------------------------- | -------------------------------------------- | ----------- |
-| listIndex                  | number                                       |             |
-| listQuery                  | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/)         |             |
-| staticItems                | [StaticListItem](/vext/ref/fb/staticlistitem/)\[\]         |             |
-| emptyRowType               | [UIListEmptyRowType](/vext/ref/fb/uilistemptyrowtype/)     |             |
-| defaultHighlightedRow      | [DefaultSelectionItem](/vext/ref/fb/defaultselectionitem/) |             |
-| rowType                    | [UIListRowType](/vext/ref/fb/uilistrowtype/)               |             |
-| navigationType             | [UIListNavigationType](/vext/ref/fb/uilistnavigationtype/) |             |
-| navigationTypeSource       | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/)         |             |
-| rowSpacing                 | number                                       |             |
-| unFocusMode                | [UIListUnFocusMode](/vext/ref/fb/uilistunfocusmode/)       |             |
-| disabledRows               | string                                       |             |
-| clearListAtNavigationEvent | bool                                         |             |
-| sendIndexWithEvent         | bool                                         |             |
-| screenRotationEnabled      | bool                                         |             |
-| use3DSelection             | bool                                         |             |
-| fireHighlightOnMouseOut    | bool                                         |             |
-| dataIncludesButtonLayout   | bool                                         |             |
-| visible                    | bool                                         |             |
-| spinnerEnabled             | bool                                         |             |
-| useScrollBar               | bool                                         |             |
-| highLightOnUpdate          | bool                                         |             |
-| keepScrollOffset           | bool                                         |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [UIListDataBinding](/vext/ref/fb/uilistdatabinding/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UIListDataBinding](/vext/ref/fb/uilistdatabinding/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UIListDataBinding](/vext/ref/fb/uilistdatabinding) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UIListDataBinding {#constructor-2}
+> **UIListDataBinding**(other: [UIDataBinding](/vext/ref/fb/uidatabinding))
+
+Casts an instance of type [UIDataBinding](/vext/ref/fb/uidatabinding) to [UIListDataBinding](/vext/ref/fb/uilistdatabinding). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIDataBinding](/vext/ref/fb/uidatabinding) | The instance to cast to [UIListDataBinding](/vext/ref/fb/uilistdatabinding). |
+
+### UIListDataBinding {#constructor-3}
+> **UIListDataBinding**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIListDataBinding](/vext/ref/fb/uilistdatabinding). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UIListDataBinding](/vext/ref/fb/uilistdatabinding). |
+
+## Properties
+### {{% prop-heading "listIndex" %}}
+> **int**
+
+### {{% prop-heading "listQuery" %}}
+> **[UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo)**
+
+### {{% prop-heading "staticItems" %}}
+> **[StaticListItem](/vext/ref/fb/staticlistitem)**[]
+
+### {{% prop-heading "emptyRowType" %}}
+> **[UIListEmptyRowType](/vext/ref/fb/uilistemptyrowtype)**
+
+### {{% prop-heading "defaultHighlightedRow" %}}
+> **[DefaultSelectionItem](/vext/ref/fb/defaultselectionitem)**
+
+### {{% prop-heading "rowType" %}}
+> **[UIListRowType](/vext/ref/fb/uilistrowtype)**
+
+### {{% prop-heading "navigationType" %}}
+> **[UIListNavigationType](/vext/ref/fb/uilistnavigationtype)**
+
+### {{% prop-heading "navigationTypeSource" %}}
+> **[UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo)**
+
+### {{% prop-heading "rowSpacing" %}}
+> **int**
+
+### {{% prop-heading "unFocusMode" %}}
+> **[UIListUnFocusMode](/vext/ref/fb/uilistunfocusmode)**
+
+### {{% prop-heading "disabledRows" %}}
+> **string**
+
+### {{% prop-heading "clearListAtNavigationEvent" %}}
+> **bool**
+
+### {{% prop-heading "sendIndexWithEvent" %}}
+> **bool**
+
+### {{% prop-heading "screenRotationEnabled" %}}
+> **bool**
+
+### {{% prop-heading "use3DSelection" %}}
+> **bool**
+
+### {{% prop-heading "fireHighlightOnMouseOut" %}}
+> **bool**
+
+### {{% prop-heading "dataIncludesButtonLayout" %}}
+> **bool**
+
+### {{% prop-heading "visible" %}}
+> **bool**
+
+### {{% prop-heading "spinnerEnabled" %}}
+> **bool**
+
+### {{% prop-heading "useScrollBar" %}}
+> **bool**
+
+### {{% prop-heading "highLightOnUpdate" %}}
+> **bool**
+
+### {{% prop-heading "keepScrollOffset" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIListDataBinding](/vext/ref/fb/uilistdatabinding) type.
+

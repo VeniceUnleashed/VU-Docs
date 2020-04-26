@@ -1,46 +1,77 @@
 ---
 title: ViewFxData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ViewFxData](#constructor-0)**() |
+| **[ViewFxData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ViewFxData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "poissonRadialBlur" >}} | [PoissonRadialBlurData](/vext/ref/fb/poissonradialblurdata) |
+| {{< prop "colorTint" >}} | [ColorTintData](/vext/ref/fb/colortintdata) |
+| {{< prop "blurAdd" >}} | float |
+| {{< prop "colorTintEnable" >}} | bool |
+| {{< prop "poissonRadialBlurEnable" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ViewFxData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ViewFxData {#constructor-0}
+> **ViewFxData**()
 
-| Constructor                                                           | Description                                                                                                 |
-| --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| ViewFxData()                                                          | Create a new instance of this container type.                                                               |
-| ViewFxData(ViewFxData other)                                          | Create a reference copy of an instance of the same type.                                                    |
-| ViewFxData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ViewFxData](/vext/ref/fb/viewfxdata/). |
+Creates a new [ViewFxData](/vext/ref/fb/viewfxdata) frostbite instance.
 
-## Properties
+### ViewFxData {#constructor-1}
+> **ViewFxData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                    | Type                                           | Description |
-| ----------------------- | ---------------------------------------------- | ----------- |
-| poissonRadialBlur       | [PoissonRadialBlurData](/vext/ref/fb/poissonradialblurdata/) |             |
-| colorTint               | [ColorTintData](/vext/ref/fb/colortintdata/)                 |             |
-| blurAdd                 | number                                         |             |
-| colorTintEnable         | bool                                           |             |
-| poissonRadialBlurEnable | bool                                           |             |
-
-## Methods
-
-| Type                     | Name            | Parameters                                     |
-| ------------------------ | --------------- | ---------------------------------------------- |
-| [ViewFxData](/vext/ref/fb/viewfxdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ViewFxData](/vext/ref/fb/viewfxdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ViewFxData](/vext/ref/fb/viewfxdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ViewFxData {#constructor-2}
+> **ViewFxData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ViewFxData](/vext/ref/fb/viewfxdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ViewFxData](/vext/ref/fb/viewfxdata). |
+
+## Properties
+### {{% prop-heading "poissonRadialBlur" %}}
+> **[PoissonRadialBlurData](/vext/ref/fb/poissonradialblurdata)**
+
+### {{% prop-heading "colorTint" %}}
+> **[ColorTintData](/vext/ref/fb/colortintdata)**
+
+### {{% prop-heading "blurAdd" %}}
+> **float**
+
+### {{% prop-heading "colorTintEnable" %}}
+> **bool**
+
+### {{% prop-heading "poissonRadialBlurEnable" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ViewFxData](/vext/ref/fb/viewfxdata) type.
+

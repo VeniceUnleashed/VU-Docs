@@ -1,13 +1,10 @@
 ---
 title: AudioSystemSpeakerSetup
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **FiveDotOne** | Value: **6** |
+| **SevenDotOne** | Value: **8** |
 
-| Name        | Value | Description |
-| ----------- | ----- | ----------- |
-| FiveDotOne  | 6     |             |
-| SevenDotOne | 8     |             |

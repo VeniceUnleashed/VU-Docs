@@ -1,43 +1,72 @@
 ---
 title: MetricState
 ---
-### Base Classes
 
-[MetricEvent](/vext/ref/fb/metricevent/)
+Inherits from 
+[MetricEvent](/vext/ref/fb/metricevent)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MetricState](#constructor-0)**() |
+| **[MetricState](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MetricState](#constructor-2)**(other: [MetricEvent](/vext/ref/fb/metricevent)) |
+| **[MetricState](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "isSet" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MetricState" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MetricState {#constructor-0}
+> **MetricState**()
 
-| Constructor                                                            | Description                                                                                                   |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| MetricState()                                                          | Create a new instance of this container type.                                                                 |
-| MetricState(MetricState other)                                         | Create a reference copy of an instance of the same type.                                                      |
-| MetricState([MetricEvent](/vext/ref/fb/metricevent/) other)                          | Upcast an instance of type [MetricEvent](/vext/ref/fb/metricevent/) to [MetricState](/vext/ref/fb/metricstate/).                          |
-| MetricState([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MetricState](/vext/ref/fb/metricstate/). |
+Creates a new [MetricState](/vext/ref/fb/metricstate) frostbite instance.
 
-## Properties
+### MetricState {#constructor-1}
+> **MetricState**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name  | Type | Description |
-| ----- | ---- | ----------- |
-| isSet | bool |             |
-
-## Methods
-
-| Type                       | Name            | Parameters                                     |
-| -------------------------- | --------------- | ---------------------------------------------- |
-| [MetricState](/vext/ref/fb/metricstate/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MetricState](/vext/ref/fb/metricstate/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MetricState](/vext/ref/fb/metricstate) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MetricState {#constructor-2}
+> **MetricState**(other: [MetricEvent](/vext/ref/fb/metricevent))
+
+Casts an instance of type [MetricEvent](/vext/ref/fb/metricevent) to [MetricState](/vext/ref/fb/metricstate). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [MetricEvent](/vext/ref/fb/metricevent) | The instance to cast to [MetricState](/vext/ref/fb/metricstate). |
+
+### MetricState {#constructor-3}
+> **MetricState**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MetricState](/vext/ref/fb/metricstate). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MetricState](/vext/ref/fb/metricstate). |
+
+## Properties
+### {{% prop-heading "isSet" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MetricState](/vext/ref/fb/metricstate) type.
+

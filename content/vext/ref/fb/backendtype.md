@@ -1,16 +1,13 @@
 ---
 title: BackendType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **Backend_Lan** | Value: **0** |
+| **Backend_Blaze** | Value: **1** |
+| **Backend_Peer** | Value: **2** |
+| **Backend_Local** | Value: **3** |
+| **Backend_Count_** | Value: **4** |
 
-| Name             | Value | Description |
-| ---------------- | ----- | ----------- |
-| Backend\_Lan     | 0     |             |
-| Backend\_Blaze   | 1     |             |
-| Backend\_Peer    | 2     |             |
-| Backend\_Local   | 3     |             |
-| Backend\_Count\_ | 4     |             |

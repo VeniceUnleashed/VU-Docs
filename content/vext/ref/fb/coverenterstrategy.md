@@ -1,14 +1,11 @@
 ---
 title: CoverEnterStrategy
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **CoverEnterStrategy_EnterNormally** | Value: **0** |
+| **CoverEnterStrategy_SkipEnterButAlign** | Value: **1** |
+| **CoverEnterStrategy_SkipEnterDontAlign** | Value: **2** |
 
-| Name                                   | Value | Description |
-| -------------------------------------- | ----- | ----------- |
-| CoverEnterStrategy\_EnterNormally      | 0     |             |
-| CoverEnterStrategy\_SkipEnterButAlign  | 1     |             |
-| CoverEnterStrategy\_SkipEnterDontAlign | 2     |             |

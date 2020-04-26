@@ -1,50 +1,107 @@
 ---
 title: FlatOutputNodeData
 ---
-### Base Classes
 
-[OutputNodeData](/vext/ref/fb/outputnodedata/)
+Inherits from 
+[OutputNodeData](/vext/ref/fb/outputnodedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[FlatOutputNodeData](#constructor-0)**() |
+| **[FlatOutputNodeData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[FlatOutputNodeData](#constructor-2)**(other: [OutputNodeData](/vext/ref/fb/outputnodedata)) |
+| **[FlatOutputNodeData](#constructor-3)**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata)) |
+| **[FlatOutputNodeData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "angle" >}} | float |
+| {{< prop "reverbGain" >}} | float |
+| {{< prop "reverbSend" >}} | [SoundBusData](/vext/ref/fb/soundbusdata) \| nil |
+| {{< prop "centerLevel" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "lfeLevel" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "panPlugin" >}} | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref) |
+| {{< prop "reverbSendPlugin" >}} | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "FlatOutputNodeData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### FlatOutputNodeData {#constructor-0}
+> **FlatOutputNodeData**()
 
-| Constructor                                                                   | Description                                                                                                                 |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| FlatOutputNodeData()                                                          | Create a new instance of this container type.                                                                               |
-| FlatOutputNodeData(FlatOutputNodeData other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| FlatOutputNodeData([OutputNodeData](/vext/ref/fb/outputnodedata/) other)                    | Upcast an instance of type [OutputNodeData](/vext/ref/fb/outputnodedata/) to [FlatOutputNodeData](/vext/ref/fb/flatoutputnodedata/).                    |
-| FlatOutputNodeData([AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) other)            | Upcast an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) to [FlatOutputNodeData](/vext/ref/fb/flatoutputnodedata/).            |
-| FlatOutputNodeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [FlatOutputNodeData](/vext/ref/fb/flatoutputnodedata/). |
+Creates a new [FlatOutputNodeData](/vext/ref/fb/flatoutputnodedata) frostbite instance.
 
-## Properties
+### FlatOutputNodeData {#constructor-1}
+> **FlatOutputNodeData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name             | Type                                       | Description |
-| ---------------- | ------------------------------------------ | ----------- |
-| angle            | number                                     |             |
-| reverbGain       | number                                     |             |
-| reverbSend       | [SoundBusData](/vext/ref/fb/soundbusdata/)               |             |
-| centerLevel      | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/)   |             |
-| lfeLevel         | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/)   |             |
-| panPlugin        | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref/) |             |
-| reverbSendPlugin | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref/) |             |
-
-## Methods
-
-| Type                                     | Name            | Parameters                                     |
-| ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [FlatOutputNodeData](/vext/ref/fb/flatoutputnodedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [FlatOutputNodeData](/vext/ref/fb/flatoutputnodedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [FlatOutputNodeData](/vext/ref/fb/flatoutputnodedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### FlatOutputNodeData {#constructor-2}
+> **FlatOutputNodeData**(other: [OutputNodeData](/vext/ref/fb/outputnodedata))
+
+Casts an instance of type [OutputNodeData](/vext/ref/fb/outputnodedata) to [FlatOutputNodeData](/vext/ref/fb/flatoutputnodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [OutputNodeData](/vext/ref/fb/outputnodedata) | The instance to cast to [FlatOutputNodeData](/vext/ref/fb/flatoutputnodedata). |
+
+### FlatOutputNodeData {#constructor-3}
+> **FlatOutputNodeData**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata))
+
+Casts an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) to [FlatOutputNodeData](/vext/ref/fb/flatoutputnodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) | The instance to cast to [FlatOutputNodeData](/vext/ref/fb/flatoutputnodedata). |
+
+### FlatOutputNodeData {#constructor-4}
+> **FlatOutputNodeData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [FlatOutputNodeData](/vext/ref/fb/flatoutputnodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [FlatOutputNodeData](/vext/ref/fb/flatoutputnodedata). |
+
+## Properties
+### {{% prop-heading "angle" %}}
+> **float**
+
+### {{% prop-heading "reverbGain" %}}
+> **float**
+
+### {{% prop-heading "reverbSend" %}}
+> **[SoundBusData](/vext/ref/fb/soundbusdata)** | **nil**
+
+### {{% prop-heading "centerLevel" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "lfeLevel" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "panPlugin" %}}
+> **[SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref)**
+
+### {{% prop-heading "reverbSendPlugin" %}}
+> **[SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [FlatOutputNodeData](/vext/ref/fb/flatoutputnodedata) type.
+

@@ -1,16 +1,13 @@
 ---
 title: CurveShaderType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **CstSine** | Value: **0** |
+| **CstSineNormalized** | Value: **1** |
+| **CstSawtooth** | Value: **2** |
+| **CstTriangle** | Value: **3** |
+| **CstSquare** | Value: **4** |
 
-| Name              | Value | Description |
-| ----------------- | ----- | ----------- |
-| CstSine           | 0     |             |
-| CstSineNormalized | 1     |             |
-| CstSawtooth       | 2     |             |
-| CstTriangle       | 3     |             |
-| CstSquare         | 4     |             |

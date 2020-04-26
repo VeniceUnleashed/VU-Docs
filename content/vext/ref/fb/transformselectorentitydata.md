@@ -1,48 +1,106 @@
 ---
 title: TransformSelectorEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[TransformSelectorEntityData](#constructor-0)**() |
+| **[TransformSelectorEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[TransformSelectorEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[TransformSelectorEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[TransformSelectorEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[TransformSelectorEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "in1" >}} | [LinearTransform](/vext/ref/shared/class/lineartransform) |
+| {{< prop "in2" >}} | [LinearTransform](/vext/ref/shared/class/lineartransform) |
+| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
+| {{< prop "selection" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "TransformSelectorEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### TransformSelectorEntityData {#constructor-0}
+> **TransformSelectorEntityData**()
 
-| Constructor                                                                            | Description                                                                                                                                   |
-| -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| TransformSelectorEntityData()                                                          | Create a new instance of this container type.                                                                                                 |
-| TransformSelectorEntityData(TransformSelectorEntityData other)                         | Create a reference copy of an instance of the same type.                                                                                      |
-| TransformSelectorEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [TransformSelectorEntityData](/vext/ref/fb/transformselectorentitydata/).                            |
-| TransformSelectorEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [TransformSelectorEntityData](/vext/ref/fb/transformselectorentitydata/).                    |
-| TransformSelectorEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [TransformSelectorEntityData](/vext/ref/fb/transformselectorentitydata/).              |
-| TransformSelectorEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TransformSelectorEntityData](/vext/ref/fb/transformselectorentitydata/). |
+Creates a new [TransformSelectorEntityData](/vext/ref/fb/transformselectorentitydata) frostbite instance.
 
-## Properties
+### TransformSelectorEntityData {#constructor-1}
+> **TransformSelectorEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name      | Type                                                    | Description |
-| --------- | ------------------------------------------------------- | ----------- |
-| in1       | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
-| in2       | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
-| realm     | [Realm](/vext/ref/fb/realm/)                                          |             |
-| selection | bool                                                    |             |
-
-## Methods
-
-| Type                                                       | Name            | Parameters                                     |
-| ---------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [TransformSelectorEntityData](/vext/ref/fb/transformselectorentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [TransformSelectorEntityData](/vext/ref/fb/transformselectorentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [TransformSelectorEntityData](/vext/ref/fb/transformselectorentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### TransformSelectorEntityData {#constructor-2}
+> **TransformSelectorEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [TransformSelectorEntityData](/vext/ref/fb/transformselectorentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [TransformSelectorEntityData](/vext/ref/fb/transformselectorentitydata). |
+
+### TransformSelectorEntityData {#constructor-3}
+> **TransformSelectorEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [TransformSelectorEntityData](/vext/ref/fb/transformselectorentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [TransformSelectorEntityData](/vext/ref/fb/transformselectorentitydata). |
+
+### TransformSelectorEntityData {#constructor-4}
+> **TransformSelectorEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [TransformSelectorEntityData](/vext/ref/fb/transformselectorentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [TransformSelectorEntityData](/vext/ref/fb/transformselectorentitydata). |
+
+### TransformSelectorEntityData {#constructor-5}
+> **TransformSelectorEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TransformSelectorEntityData](/vext/ref/fb/transformselectorentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [TransformSelectorEntityData](/vext/ref/fb/transformselectorentitydata). |
+
+## Properties
+### {{% prop-heading "in1" %}}
+> **[LinearTransform](/vext/ref/shared/class/lineartransform)**
+
+### {{% prop-heading "in2" %}}
+> **[LinearTransform](/vext/ref/shared/class/lineartransform)**
+
+### {{% prop-heading "realm" %}}
+> **[Realm](/vext/ref/fb/realm)**
+
+### {{% prop-heading "selection" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [TransformSelectorEntityData](/vext/ref/fb/transformselectorentitydata) type.
+

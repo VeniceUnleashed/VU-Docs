@@ -1,45 +1,80 @@
 ---
 title: PlayFromHereAsset
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PlayFromHereAsset](#constructor-0)**() |
+| **[PlayFromHereAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PlayFromHereAsset](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[PlayFromHereAsset](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "soldier" >}} | [Blueprint](/vext/ref/fb/blueprint) \| nil |
+| {{< prop "animatedSkeletonDatabase" >}} | [AnimatedSkeletonDatabase](/vext/ref/fb/animatedskeletondatabase) \| nil |
+| {{< prop "antProject" >}} | [AntProjectAsset](/vext/ref/fb/antprojectasset) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PlayFromHereAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PlayFromHereAsset {#constructor-0}
+> **PlayFromHereAsset**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| PlayFromHereAsset()                                                          | Create a new instance of this container type.                                                                             |
-| PlayFromHereAsset(PlayFromHereAsset other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| PlayFromHereAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [PlayFromHereAsset](/vext/ref/fb/playfromhereasset/).                                      |
-| PlayFromHereAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PlayFromHereAsset](/vext/ref/fb/playfromhereasset/). |
+Creates a new [PlayFromHereAsset](/vext/ref/fb/playfromhereasset) frostbite instance.
 
-## Properties
+### PlayFromHereAsset {#constructor-1}
+> **PlayFromHereAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                     | Type                                                 | Description |
-| ------------------------ | ---------------------------------------------------- | ----------- |
-| soldier                  | [Blueprint](/vext/ref/fb/blueprint/)                               |             |
-| animatedSkeletonDatabase | [AnimatedSkeletonDatabase](/vext/ref/fb/animatedskeletondatabase/) |             |
-| antProject               | [AntProjectAsset](/vext/ref/fb/antprojectasset/)                   |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [PlayFromHereAsset](/vext/ref/fb/playfromhereasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PlayFromHereAsset](/vext/ref/fb/playfromhereasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PlayFromHereAsset](/vext/ref/fb/playfromhereasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PlayFromHereAsset {#constructor-2}
+> **PlayFromHereAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [PlayFromHereAsset](/vext/ref/fb/playfromhereasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [PlayFromHereAsset](/vext/ref/fb/playfromhereasset). |
+
+### PlayFromHereAsset {#constructor-3}
+> **PlayFromHereAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PlayFromHereAsset](/vext/ref/fb/playfromhereasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PlayFromHereAsset](/vext/ref/fb/playfromhereasset). |
+
+## Properties
+### {{% prop-heading "soldier" %}}
+> **[Blueprint](/vext/ref/fb/blueprint)** | **nil**
+
+### {{% prop-heading "animatedSkeletonDatabase" %}}
+> **[AnimatedSkeletonDatabase](/vext/ref/fb/animatedskeletondatabase)** | **nil**
+
+### {{% prop-heading "antProject" %}}
+> **[AntProjectAsset](/vext/ref/fb/antprojectasset)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PlayFromHereAsset](/vext/ref/fb/playfromhereasset) type.
+

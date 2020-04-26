@@ -1,47 +1,102 @@
 ---
 title: XorEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[XorEntityData](#constructor-0)**() |
+| **[XorEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[XorEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[XorEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[XorEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[XorEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
+| {{< prop "in1" >}} | bool |
+| {{< prop "in2" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "XorEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### XorEntityData {#constructor-0}
+> **XorEntityData**()
 
-| Constructor                                                              | Description                                                                                                       |
-| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| XorEntityData()                                                          | Create a new instance of this container type.                                                                     |
-| XorEntityData(XorEntityData other)                                       | Create a reference copy of an instance of the same type.                                                          |
-| XorEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [XorEntityData](/vext/ref/fb/xorentitydata/).                            |
-| XorEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [XorEntityData](/vext/ref/fb/xorentitydata/).                    |
-| XorEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [XorEntityData](/vext/ref/fb/xorentitydata/).              |
-| XorEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [XorEntityData](/vext/ref/fb/xorentitydata/). |
+Creates a new [XorEntityData](/vext/ref/fb/xorentitydata) frostbite instance.
 
-## Properties
+### XorEntityData {#constructor-1}
+> **XorEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name  | Type           | Description |
-| ----- | -------------- | ----------- |
-| realm | [Realm](/vext/ref/fb/realm/) |             |
-| in1   | bool           |             |
-| in2   | bool           |             |
-
-## Methods
-
-| Type                           | Name            | Parameters                                     |
-| ------------------------------ | --------------- | ---------------------------------------------- |
-| [XorEntityData](/vext/ref/fb/xorentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [XorEntityData](/vext/ref/fb/xorentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [XorEntityData](/vext/ref/fb/xorentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### XorEntityData {#constructor-2}
+> **XorEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [XorEntityData](/vext/ref/fb/xorentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [XorEntityData](/vext/ref/fb/xorentitydata). |
+
+### XorEntityData {#constructor-3}
+> **XorEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [XorEntityData](/vext/ref/fb/xorentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [XorEntityData](/vext/ref/fb/xorentitydata). |
+
+### XorEntityData {#constructor-4}
+> **XorEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [XorEntityData](/vext/ref/fb/xorentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [XorEntityData](/vext/ref/fb/xorentitydata). |
+
+### XorEntityData {#constructor-5}
+> **XorEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [XorEntityData](/vext/ref/fb/xorentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [XorEntityData](/vext/ref/fb/xorentitydata). |
+
+## Properties
+### {{% prop-heading "realm" %}}
+> **[Realm](/vext/ref/fb/realm)**
+
+### {{% prop-heading "in1" %}}
+> **bool**
+
+### {{% prop-heading "in2" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [XorEntityData](/vext/ref/fb/xorentitydata) type.
+

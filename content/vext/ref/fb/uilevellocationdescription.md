@@ -1,45 +1,80 @@
 ---
 title: UILevelLocationDescription
 ---
-### Base Classes
 
-[UIItemDescription](/vext/ref/fb/uiitemdescription/)
+Inherits from 
+[UIItemDescription](/vext/ref/fb/uiitemdescription)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UILevelLocationDescription](#constructor-0)**() |
+| **[UILevelLocationDescription](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UILevelLocationDescription](#constructor-2)**(other: [UIItemDescription](/vext/ref/fb/uiitemdescription)) |
+| **[UILevelLocationDescription](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "name" >}} | string |
+| {{< prop "description" >}} | string |
+| {{< prop "texturePath" >}} | string |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UILevelLocationDescription" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UILevelLocationDescription {#constructor-0}
+> **UILevelLocationDescription**()
 
-| Constructor                                                                           | Description                                                                                                                                 |
-| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| UILevelLocationDescription()                                                          | Create a new instance of this container type.                                                                                               |
-| UILevelLocationDescription(UILevelLocationDescription other)                          | Create a reference copy of an instance of the same type.                                                                                    |
-| UILevelLocationDescription([UIItemDescription](/vext/ref/fb/uiitemdescription/) other)              | Upcast an instance of type [UIItemDescription](/vext/ref/fb/uiitemdescription/) to [UILevelLocationDescription](/vext/ref/fb/uilevellocationdescription/).              |
-| UILevelLocationDescription([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UILevelLocationDescription](/vext/ref/fb/uilevellocationdescription/). |
+Creates a new [UILevelLocationDescription](/vext/ref/fb/uilevellocationdescription) frostbite instance.
 
-## Properties
+### UILevelLocationDescription {#constructor-1}
+> **UILevelLocationDescription**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name        | Type   | Description |
-| ----------- | ------ | ----------- |
-| name        | string |             |
-| description | string |             |
-| texturePath | string |             |
-
-## Methods
-
-| Type                                                     | Name            | Parameters                                     |
-| -------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [UILevelLocationDescription](/vext/ref/fb/uilevellocationdescription/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UILevelLocationDescription](/vext/ref/fb/uilevellocationdescription/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UILevelLocationDescription](/vext/ref/fb/uilevellocationdescription) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UILevelLocationDescription {#constructor-2}
+> **UILevelLocationDescription**(other: [UIItemDescription](/vext/ref/fb/uiitemdescription))
+
+Casts an instance of type [UIItemDescription](/vext/ref/fb/uiitemdescription) to [UILevelLocationDescription](/vext/ref/fb/uilevellocationdescription). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIItemDescription](/vext/ref/fb/uiitemdescription) | The instance to cast to [UILevelLocationDescription](/vext/ref/fb/uilevellocationdescription). |
+
+### UILevelLocationDescription {#constructor-3}
+> **UILevelLocationDescription**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UILevelLocationDescription](/vext/ref/fb/uilevellocationdescription). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UILevelLocationDescription](/vext/ref/fb/uilevellocationdescription). |
+
+## Properties
+### {{% prop-heading "name" %}}
+> **string**
+
+### {{% prop-heading "description" %}}
+> **string**
+
+### {{% prop-heading "texturePath" %}}
+> **string**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UILevelLocationDescription](/vext/ref/fb/uilevellocationdescription) type.
+

@@ -1,42 +1,61 @@
 ---
 title: MetricReport
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MetricReport](#constructor-0)**() |
+| **[MetricReport](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MetricReport](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "events" >}} | [MetricEvent](/vext/ref/fb/metricevent)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MetricReport" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MetricReport {#constructor-0}
+> **MetricReport**()
 
-| Constructor                                                             | Description                                                                                                     |
-| ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| MetricReport()                                                          | Create a new instance of this container type.                                                                   |
-| MetricReport(MetricReport other)                                        | Create a reference copy of an instance of the same type.                                                        |
-| MetricReport([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MetricReport](/vext/ref/fb/metricreport/). |
+Creates a new [MetricReport](/vext/ref/fb/metricreport) frostbite instance.
 
-## Properties
+### MetricReport {#constructor-1}
+> **MetricReport**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name   | Type                           | Description |
-| ------ | ------------------------------ | ----------- |
-| events | [MetricEvent](/vext/ref/fb/metricevent/)\[\] |             |
-
-## Methods
-
-| Type                         | Name            | Parameters                                     |
-| ---------------------------- | --------------- | ---------------------------------------------- |
-| [MetricReport](/vext/ref/fb/metricreport/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MetricReport](/vext/ref/fb/metricreport/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MetricReport](/vext/ref/fb/metricreport) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MetricReport {#constructor-2}
+> **MetricReport**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MetricReport](/vext/ref/fb/metricreport). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MetricReport](/vext/ref/fb/metricreport). |
+
+## Properties
+### {{% prop-heading "events" %}}
+> **[MetricEvent](/vext/ref/fb/metricevent)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MetricReport](/vext/ref/fb/metricreport) type.
+

@@ -1,14 +1,11 @@
 ---
 title: BreakableControllerComponentNetworkId
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **BreakableControllerComponentNetworkId_Collapsed** | Value: **0** |
+| **BreakableControllerComponentNetworkId_SpawnPartObjectsOnCollapse** | Value: **1** |
+| **BreakableControllerComponentNetworkId_ExtraPartCount** | Value: **2** |
 
-| Name                                                              | Value | Description |
-| ----------------------------------------------------------------- | ----- | ----------- |
-| BreakableControllerComponentNetworkId\_Collapsed                  | 0     |             |
-| BreakableControllerComponentNetworkId\_SpawnPartObjectsOnCollapse | 1     |             |
-| BreakableControllerComponentNetworkId\_ExtraPartCount             | 2     |             |

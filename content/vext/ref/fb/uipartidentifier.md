@@ -1,16 +1,13 @@
 ---
 title: UIPartIdentifier
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **HCI_None** | Value: **0** |
+| **HCI_RangeMeter** | Value: **1** |
+| **HCI_PredictedSight** | Value: **2** |
+| **HCI_VelocityVector** | Value: **3** |
+| **HCI_RadioAltitude** | Value: **4** |
 
-| Name                | Value | Description |
-| ------------------- | ----- | ----------- |
-| HCI\_None           | 0     |             |
-| HCI\_RangeMeter     | 1     |             |
-| HCI\_PredictedSight | 2     |             |
-| HCI\_VelocityVector | 3     |             |
-| HCI\_RadioAltitude  | 4     |             |

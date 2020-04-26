@@ -1,13 +1,10 @@
 ---
 title: ShaderPositionSpace
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ShaderPositionSpace_Object** | Value: **0** |
+| **ShaderPositionSpace_World** | Value: **1** |
 
-| Name                        | Value | Description |
-| --------------------------- | ----- | ----------- |
-| ShaderPositionSpace\_Object | 0     |             |
-| ShaderPositionSpace\_World  | 1     |             |

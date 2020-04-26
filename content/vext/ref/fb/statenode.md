@@ -1,49 +1,96 @@
 ---
 title: StateNode
 ---
-### Base Classes
 
-[UINodeData](/vext/ref/fb/uinodedata/)
+Inherits from 
+[UINodeData](/vext/ref/fb/uinodedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[StateNode](#constructor-0)**() |
+| **[StateNode](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[StateNode](#constructor-2)**(other: [UINodeData](/vext/ref/fb/uinodedata)) |
+| **[StateNode](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "screen" >}} | [UIScreenAsset](/vext/ref/fb/uiscreenasset) \| nil |
+| {{< prop "inValue" >}} | [UINodePort](/vext/ref/fb/uinodeport) \| nil |
+| {{< prop "show" >}} | [UINodePort](/vext/ref/fb/uinodeport) \| nil |
+| {{< prop "hide" >}} | [UINodePort](/vext/ref/fb/uinodeport) \| nil |
+| {{< prop "inputs" >}} | [UINodePort](/vext/ref/fb/uinodeport)[] |
+| {{< prop "outputs" >}} | [UINodePort](/vext/ref/fb/uinodeport)[] |
+| {{< prop "renderToTexture" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "StateNode" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### StateNode {#constructor-0}
+> **StateNode**()
 
-| Constructor                                                          | Description                                                                                               |
-| -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| StateNode()                                                          | Create a new instance of this container type.                                                             |
-| StateNode(StateNode other)                                           | Create a reference copy of an instance of the same type.                                                  |
-| StateNode([UINodeData](/vext/ref/fb/uinodedata/) other)                            | Upcast an instance of type [UINodeData](/vext/ref/fb/uinodedata/) to [StateNode](/vext/ref/fb/statenode/).                            |
-| StateNode([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StateNode](/vext/ref/fb/statenode/). |
+Creates a new [StateNode](/vext/ref/fb/statenode) frostbite instance.
 
-## Properties
+### StateNode {#constructor-1}
+> **StateNode**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name            | Type                           | Description |
-| --------------- | ------------------------------ | ----------- |
-| screen          | [UIScreenAsset](/vext/ref/fb/uiscreenasset/) |             |
-| inValue         | [UINodePort](/vext/ref/fb/uinodeport/)       |             |
-| show            | [UINodePort](/vext/ref/fb/uinodeport/)       |             |
-| hide            | [UINodePort](/vext/ref/fb/uinodeport/)       |             |
-| inputs          | [UINodePort](/vext/ref/fb/uinodeport/)\[\]   |             |
-| outputs         | [UINodePort](/vext/ref/fb/uinodeport/)\[\]   |             |
-| renderToTexture | bool                           |             |
-
-## Methods
-
-| Type                   | Name            | Parameters                                     |
-| ---------------------- | --------------- | ---------------------------------------------- |
-| [StateNode](/vext/ref/fb/statenode/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [StateNode](/vext/ref/fb/statenode/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [StateNode](/vext/ref/fb/statenode) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### StateNode {#constructor-2}
+> **StateNode**(other: [UINodeData](/vext/ref/fb/uinodedata))
+
+Casts an instance of type [UINodeData](/vext/ref/fb/uinodedata) to [StateNode](/vext/ref/fb/statenode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UINodeData](/vext/ref/fb/uinodedata) | The instance to cast to [StateNode](/vext/ref/fb/statenode). |
+
+### StateNode {#constructor-3}
+> **StateNode**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StateNode](/vext/ref/fb/statenode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [StateNode](/vext/ref/fb/statenode). |
+
+## Properties
+### {{% prop-heading "screen" %}}
+> **[UIScreenAsset](/vext/ref/fb/uiscreenasset)** | **nil**
+
+### {{% prop-heading "inValue" %}}
+> **[UINodePort](/vext/ref/fb/uinodeport)** | **nil**
+
+### {{% prop-heading "show" %}}
+> **[UINodePort](/vext/ref/fb/uinodeport)** | **nil**
+
+### {{% prop-heading "hide" %}}
+> **[UINodePort](/vext/ref/fb/uinodeport)** | **nil**
+
+### {{% prop-heading "inputs" %}}
+> **[UINodePort](/vext/ref/fb/uinodeport)**[]
+
+### {{% prop-heading "outputs" %}}
+> **[UINodePort](/vext/ref/fb/uinodeport)**[]
+
+### {{% prop-heading "renderToTexture" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [StateNode](/vext/ref/fb/statenode) type.
+

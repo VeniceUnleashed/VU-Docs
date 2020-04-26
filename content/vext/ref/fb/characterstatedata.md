@@ -1,42 +1,61 @@
 ---
 title: CharacterStateData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[CharacterStateData](#constructor-0)**() |
+| **[CharacterStateData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[CharacterStateData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "poseInfo" >}} | [CharacterStatePoseInfo](/vext/ref/fb/characterstateposeinfo)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "CharacterStateData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### CharacterStateData {#constructor-0}
+> **CharacterStateData**()
 
-| Constructor                                                                   | Description                                                                                                                 |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| CharacterStateData()                                                          | Create a new instance of this container type.                                                                               |
-| CharacterStateData(CharacterStateData other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| CharacterStateData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CharacterStateData](/vext/ref/fb/characterstatedata/). |
+Creates a new [CharacterStateData](/vext/ref/fb/characterstatedata) frostbite instance.
 
-## Properties
+### CharacterStateData {#constructor-1}
+> **CharacterStateData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name     | Type                                                 | Description |
-| -------- | ---------------------------------------------------- | ----------- |
-| poseInfo | [CharacterStatePoseInfo](/vext/ref/fb/characterstateposeinfo/)\[\] |             |
-
-## Methods
-
-| Type                                     | Name            | Parameters                                     |
-| ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [CharacterStateData](/vext/ref/fb/characterstatedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [CharacterStateData](/vext/ref/fb/characterstatedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [CharacterStateData](/vext/ref/fb/characterstatedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### CharacterStateData {#constructor-2}
+> **CharacterStateData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CharacterStateData](/vext/ref/fb/characterstatedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [CharacterStateData](/vext/ref/fb/characterstatedata). |
+
+## Properties
+### {{% prop-heading "poseInfo" %}}
+> **[CharacterStatePoseInfo](/vext/ref/fb/characterstateposeinfo)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [CharacterStateData](/vext/ref/fb/characterstatedata) type.
+

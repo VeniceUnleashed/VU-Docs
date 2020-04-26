@@ -1,14 +1,11 @@
 ---
 title: MatchmakingRankedMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **MatchmakingRankedMode_Ranked** | Value: **0** |
+| **MatchmakingRankedMode_Unranked** | Value: **1** |
+| **MatchmakingRankedMode_Any** | Value: **2** |
 
-| Name                            | Value | Description |
-| ------------------------------- | ----- | ----------- |
-| MatchmakingRankedMode\_Ranked   | 0     |             |
-| MatchmakingRankedMode\_Unranked | 1     |             |
-| MatchmakingRankedMode\_Any      | 2     |             |

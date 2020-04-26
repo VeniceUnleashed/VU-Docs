@@ -1,74 +1,71 @@
 ---
 title: RouteChannel
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **RouteChannel_0** | Value: **0** |
+| **RouteChannel_1** | Value: **1** |
+| **RouteChannel_2** | Value: **2** |
+| **RouteChannel_3** | Value: **3** |
+| **RouteChannel_4** | Value: **4** |
+| **RouteChannel_5** | Value: **5** |
+| **RouteChannel_6** | Value: **6** |
+| **RouteChannel_7** | Value: **7** |
+| **RouteChannel_8** | Value: **8** |
+| **RouteChannel_9** | Value: **9** |
+| **RouteChannel_10** | Value: **10** |
+| **RouteChannel_11** | Value: **11** |
+| **RouteChannel_12** | Value: **12** |
+| **RouteChannel_13** | Value: **13** |
+| **RouteChannel_14** | Value: **14** |
+| **RouteChannel_15** | Value: **15** |
+| **RouteChannel_16** | Value: **16** |
+| **RouteChannel_17** | Value: **17** |
+| **RouteChannel_18** | Value: **18** |
+| **RouteChannel_19** | Value: **19** |
+| **RouteChannel_21** | Value: **20** |
+| **RouteChannel_22** | Value: **21** |
+| **RouteChannel_23** | Value: **22** |
+| **RouteChannel_24** | Value: **23** |
+| **RouteChannel_25** | Value: **24** |
+| **RouteChannel_26** | Value: **25** |
+| **RouteChannel_27** | Value: **26** |
+| **RouteChannel_28** | Value: **27** |
+| **RouteChannel_29** | Value: **28** |
+| **RouteChannel_30** | Value: **29** |
+| **RouteChannel_31** | Value: **30** |
+| **RouteChannel_32** | Value: **31** |
+| **RouteChannel_33** | Value: **32** |
+| **RouteChannel_34** | Value: **33** |
+| **RouteChannel_35** | Value: **34** |
+| **RouteChannel_36** | Value: **35** |
+| **RouteChannel_37** | Value: **36** |
+| **RouteChannel_38** | Value: **37** |
+| **RouteChannel_39** | Value: **38** |
+| **RouteChannel_40** | Value: **39** |
+| **RouteChannel_41** | Value: **40** |
+| **RouteChannel_42** | Value: **41** |
+| **RouteChannel_43** | Value: **42** |
+| **RouteChannel_44** | Value: **43** |
+| **RouteChannel_45** | Value: **44** |
+| **RouteChannel_46** | Value: **45** |
+| **RouteChannel_47** | Value: **46** |
+| **RouteChannel_48** | Value: **47** |
+| **RouteChannel_49** | Value: **48** |
+| **RouteChannel_50** | Value: **49** |
+| **RouteChannel_51** | Value: **50** |
+| **RouteChannel_52** | Value: **51** |
+| **RouteChannel_53** | Value: **52** |
+| **RouteChannel_54** | Value: **53** |
+| **RouteChannel_55** | Value: **54** |
+| **RouteChannel_56** | Value: **55** |
+| **RouteChannel_57** | Value: **56** |
+| **RouteChannel_58** | Value: **57** |
+| **RouteChannel_59** | Value: **58** |
+| **RouteChannel_60** | Value: **59** |
+| **RouteChannel_61** | Value: **60** |
+| **RouteChannel_62** | Value: **61** |
+| **RouteChannel_63** | Value: **62** |
 
-| Name             | Value | Description |
-| ---------------- | ----- | ----------- |
-| RouteChannel\_0  | 0     |             |
-| RouteChannel\_1  | 1     |             |
-| RouteChannel\_2  | 2     |             |
-| RouteChannel\_3  | 3     |             |
-| RouteChannel\_4  | 4     |             |
-| RouteChannel\_5  | 5     |             |
-| RouteChannel\_6  | 6     |             |
-| RouteChannel\_7  | 7     |             |
-| RouteChannel\_8  | 8     |             |
-| RouteChannel\_9  | 9     |             |
-| RouteChannel\_10 | 10    |             |
-| RouteChannel\_11 | 11    |             |
-| RouteChannel\_12 | 12    |             |
-| RouteChannel\_13 | 13    |             |
-| RouteChannel\_14 | 14    |             |
-| RouteChannel\_15 | 15    |             |
-| RouteChannel\_16 | 16    |             |
-| RouteChannel\_17 | 17    |             |
-| RouteChannel\_18 | 18    |             |
-| RouteChannel\_19 | 19    |             |
-| RouteChannel\_21 | 20    |             |
-| RouteChannel\_22 | 21    |             |
-| RouteChannel\_23 | 22    |             |
-| RouteChannel\_24 | 23    |             |
-| RouteChannel\_25 | 24    |             |
-| RouteChannel\_26 | 25    |             |
-| RouteChannel\_27 | 26    |             |
-| RouteChannel\_28 | 27    |             |
-| RouteChannel\_29 | 28    |             |
-| RouteChannel\_30 | 29    |             |
-| RouteChannel\_31 | 30    |             |
-| RouteChannel\_32 | 31    |             |
-| RouteChannel\_33 | 32    |             |
-| RouteChannel\_34 | 33    |             |
-| RouteChannel\_35 | 34    |             |
-| RouteChannel\_36 | 35    |             |
-| RouteChannel\_37 | 36    |             |
-| RouteChannel\_38 | 37    |             |
-| RouteChannel\_39 | 38    |             |
-| RouteChannel\_40 | 39    |             |
-| RouteChannel\_41 | 40    |             |
-| RouteChannel\_42 | 41    |             |
-| RouteChannel\_43 | 42    |             |
-| RouteChannel\_44 | 43    |             |
-| RouteChannel\_45 | 44    |             |
-| RouteChannel\_46 | 45    |             |
-| RouteChannel\_47 | 46    |             |
-| RouteChannel\_48 | 47    |             |
-| RouteChannel\_49 | 48    |             |
-| RouteChannel\_50 | 49    |             |
-| RouteChannel\_51 | 50    |             |
-| RouteChannel\_52 | 51    |             |
-| RouteChannel\_53 | 52    |             |
-| RouteChannel\_54 | 53    |             |
-| RouteChannel\_55 | 54    |             |
-| RouteChannel\_56 | 55    |             |
-| RouteChannel\_57 | 56    |             |
-| RouteChannel\_58 | 57    |             |
-| RouteChannel\_59 | 58    |             |
-| RouteChannel\_60 | 59    |             |
-| RouteChannel\_61 | 60    |             |
-| RouteChannel\_62 | 61    |             |
-| RouteChannel\_63 | 62    |             |

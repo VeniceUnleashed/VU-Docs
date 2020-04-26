@@ -1,47 +1,116 @@
 ---
 title: DebugMenuSubMenuEntityData
 ---
-### Base Classes
 
-[GameEntityData](/vext/ref/fb/gameentitydata/)
+Inherits from 
+[GameEntityData](/vext/ref/fb/gameentitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[DebugMenuSubMenuEntityData](#constructor-0)**() |
+| **[DebugMenuSubMenuEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[DebugMenuSubMenuEntityData](#constructor-2)**(other: [GameEntityData](/vext/ref/fb/gameentitydata)) |
+| **[DebugMenuSubMenuEntityData](#constructor-3)**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata)) |
+| **[DebugMenuSubMenuEntityData](#constructor-4)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[DebugMenuSubMenuEntityData](#constructor-5)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[DebugMenuSubMenuEntityData](#constructor-6)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[DebugMenuSubMenuEntityData](#constructor-7)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "text" >}} | string |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "DebugMenuSubMenuEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### DebugMenuSubMenuEntityData {#constructor-0}
+> **DebugMenuSubMenuEntityData**()
 
-| Constructor                                                                           | Description                                                                                                                                 |
-| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| DebugMenuSubMenuEntityData()                                                          | Create a new instance of this container type.                                                                                               |
-| DebugMenuSubMenuEntityData(DebugMenuSubMenuEntityData other)                          | Create a reference copy of an instance of the same type.                                                                                    |
-| DebugMenuSubMenuEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [DebugMenuSubMenuEntityData](/vext/ref/fb/debugmenusubmenuentitydata/).                    |
-| DebugMenuSubMenuEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [DebugMenuSubMenuEntityData](/vext/ref/fb/debugmenusubmenuentitydata/).              |
-| DebugMenuSubMenuEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [DebugMenuSubMenuEntityData](/vext/ref/fb/debugmenusubmenuentitydata/).                            |
-| DebugMenuSubMenuEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [DebugMenuSubMenuEntityData](/vext/ref/fb/debugmenusubmenuentitydata/).                    |
-| DebugMenuSubMenuEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [DebugMenuSubMenuEntityData](/vext/ref/fb/debugmenusubmenuentitydata/).              |
-| DebugMenuSubMenuEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DebugMenuSubMenuEntityData](/vext/ref/fb/debugmenusubmenuentitydata/). |
+Creates a new [DebugMenuSubMenuEntityData](/vext/ref/fb/debugmenusubmenuentitydata) frostbite instance.
 
-## Properties
+### DebugMenuSubMenuEntityData {#constructor-1}
+> **DebugMenuSubMenuEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name | Type   | Description |
-| ---- | ------ | ----------- |
-| text | string |             |
-
-## Methods
-
-| Type                                                     | Name            | Parameters                                     |
-| -------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [DebugMenuSubMenuEntityData](/vext/ref/fb/debugmenusubmenuentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [DebugMenuSubMenuEntityData](/vext/ref/fb/debugmenusubmenuentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [DebugMenuSubMenuEntityData](/vext/ref/fb/debugmenusubmenuentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### DebugMenuSubMenuEntityData {#constructor-2}
+> **DebugMenuSubMenuEntityData**(other: [GameEntityData](/vext/ref/fb/gameentitydata))
+
+Casts an instance of type [GameEntityData](/vext/ref/fb/gameentitydata) to [DebugMenuSubMenuEntityData](/vext/ref/fb/debugmenusubmenuentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameEntityData](/vext/ref/fb/gameentitydata) | The instance to cast to [DebugMenuSubMenuEntityData](/vext/ref/fb/debugmenusubmenuentitydata). |
+
+### DebugMenuSubMenuEntityData {#constructor-3}
+> **DebugMenuSubMenuEntityData**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata))
+
+Casts an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata) to [DebugMenuSubMenuEntityData](/vext/ref/fb/debugmenusubmenuentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SpatialEntityData](/vext/ref/fb/spatialentitydata) | The instance to cast to [DebugMenuSubMenuEntityData](/vext/ref/fb/debugmenusubmenuentitydata). |
+
+### DebugMenuSubMenuEntityData {#constructor-4}
+> **DebugMenuSubMenuEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [DebugMenuSubMenuEntityData](/vext/ref/fb/debugmenusubmenuentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [DebugMenuSubMenuEntityData](/vext/ref/fb/debugmenusubmenuentitydata). |
+
+### DebugMenuSubMenuEntityData {#constructor-5}
+> **DebugMenuSubMenuEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [DebugMenuSubMenuEntityData](/vext/ref/fb/debugmenusubmenuentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [DebugMenuSubMenuEntityData](/vext/ref/fb/debugmenusubmenuentitydata). |
+
+### DebugMenuSubMenuEntityData {#constructor-6}
+> **DebugMenuSubMenuEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [DebugMenuSubMenuEntityData](/vext/ref/fb/debugmenusubmenuentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [DebugMenuSubMenuEntityData](/vext/ref/fb/debugmenusubmenuentitydata). |
+
+### DebugMenuSubMenuEntityData {#constructor-7}
+> **DebugMenuSubMenuEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DebugMenuSubMenuEntityData](/vext/ref/fb/debugmenusubmenuentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DebugMenuSubMenuEntityData](/vext/ref/fb/debugmenusubmenuentitydata). |
+
+## Properties
+### {{% prop-heading "text" %}}
+> **string**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [DebugMenuSubMenuEntityData](/vext/ref/fb/debugmenusubmenuentitydata) type.
+

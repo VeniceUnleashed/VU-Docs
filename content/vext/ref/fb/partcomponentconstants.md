@@ -1,12 +1,9 @@
 ---
 title: PartComponentConstants
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **MaxHealthStateCount** | Value: **256** |
 
-| Name                | Value | Description |
-| ------------------- | ----- | ----------- |
-| MaxHealthStateCount | 256   |             |

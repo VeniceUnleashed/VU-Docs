@@ -1,50 +1,114 @@
 ---
 title: CharacterAnimationEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[CharacterAnimationEntityData](#constructor-0)**() |
+| **[CharacterAnimationEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[CharacterAnimationEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[CharacterAnimationEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[CharacterAnimationEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[CharacterAnimationEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "entitySpaceTransform" >}} | [LinearTransform](/vext/ref/shared/class/lineartransform) |
+| {{< prop "controller" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "trackLength" >}} | float |
+| {{< prop "externalTime" >}} | float |
+| {{< prop "warpAnimationBlendTime" >}} | float |
+| {{< prop "restoreControllerOnFinish" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "CharacterAnimationEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### CharacterAnimationEntityData {#constructor-0}
+> **CharacterAnimationEntityData**()
 
-| Constructor                                                                             | Description                                                                                                                                     |
-| --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| CharacterAnimationEntityData()                                                          | Create a new instance of this container type.                                                                                                   |
-| CharacterAnimationEntityData(CharacterAnimationEntityData other)                        | Create a reference copy of an instance of the same type.                                                                                        |
-| CharacterAnimationEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [CharacterAnimationEntityData](/vext/ref/fb/characteranimationentitydata/).                            |
-| CharacterAnimationEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [CharacterAnimationEntityData](/vext/ref/fb/characteranimationentitydata/).                    |
-| CharacterAnimationEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [CharacterAnimationEntityData](/vext/ref/fb/characteranimationentitydata/).              |
-| CharacterAnimationEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CharacterAnimationEntityData](/vext/ref/fb/characteranimationentitydata/). |
+Creates a new [CharacterAnimationEntityData](/vext/ref/fb/characteranimationentitydata) frostbite instance.
 
-## Properties
+### CharacterAnimationEntityData {#constructor-1}
+> **CharacterAnimationEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                      | Type                                                    | Description |
-| ------------------------- | ------------------------------------------------------- | ----------- |
-| entitySpaceTransform      | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
-| controller                | [AntRef](/vext/ref/fb/antref/)                                        |             |
-| trackLength               | number                                                  |             |
-| externalTime              | number                                                  |             |
-| warpAnimationBlendTime    | number                                                  |             |
-| restoreControllerOnFinish | bool                                                    |             |
-
-## Methods
-
-| Type                                                         | Name            | Parameters                                     |
-| ------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [CharacterAnimationEntityData](/vext/ref/fb/characteranimationentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [CharacterAnimationEntityData](/vext/ref/fb/characteranimationentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [CharacterAnimationEntityData](/vext/ref/fb/characteranimationentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### CharacterAnimationEntityData {#constructor-2}
+> **CharacterAnimationEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [CharacterAnimationEntityData](/vext/ref/fb/characteranimationentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [CharacterAnimationEntityData](/vext/ref/fb/characteranimationentitydata). |
+
+### CharacterAnimationEntityData {#constructor-3}
+> **CharacterAnimationEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [CharacterAnimationEntityData](/vext/ref/fb/characteranimationentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [CharacterAnimationEntityData](/vext/ref/fb/characteranimationentitydata). |
+
+### CharacterAnimationEntityData {#constructor-4}
+> **CharacterAnimationEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [CharacterAnimationEntityData](/vext/ref/fb/characteranimationentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [CharacterAnimationEntityData](/vext/ref/fb/characteranimationentitydata). |
+
+### CharacterAnimationEntityData {#constructor-5}
+> **CharacterAnimationEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CharacterAnimationEntityData](/vext/ref/fb/characteranimationentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [CharacterAnimationEntityData](/vext/ref/fb/characteranimationentitydata). |
+
+## Properties
+### {{% prop-heading "entitySpaceTransform" %}}
+> **[LinearTransform](/vext/ref/shared/class/lineartransform)**
+
+### {{% prop-heading "controller" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "trackLength" %}}
+> **float**
+
+### {{% prop-heading "externalTime" %}}
+> **float**
+
+### {{% prop-heading "warpAnimationBlendTime" %}}
+> **float**
+
+### {{% prop-heading "restoreControllerOnFinish" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [CharacterAnimationEntityData](/vext/ref/fb/characteranimationentitydata) type.
+

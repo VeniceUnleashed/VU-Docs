@@ -1,49 +1,103 @@
 ---
 title: SampleTextureData
 ---
-### Base Classes
 
-[EvaluatorData](/vext/ref/fb/evaluatordata/)
+Inherits from 
+[EvaluatorData](/vext/ref/fb/evaluatordata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SampleTextureData](#constructor-0)**() |
+| **[SampleTextureData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SampleTextureData](#constructor-2)**(other: [EvaluatorData](/vext/ref/fb/evaluatordata)) |
+| **[SampleTextureData](#constructor-3)**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata)) |
+| **[SampleTextureData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "textureDimensions" >}} | [Vec2](/vext/ref/shared/class/vec2) |
+| {{< prop "colorIntensityMax" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "colorIntensityMin" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "gradientData" >}} | [Vec4](/vext/ref/shared/class/vec4)[] |
+| {{< prop "textureOriginU" >}} | float |
+| {{< prop "textureOriginV" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SampleTextureData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SampleTextureData {#constructor-0}
+> **SampleTextureData**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| SampleTextureData()                                                          | Create a new instance of this container type.                                                                             |
-| SampleTextureData(SampleTextureData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| SampleTextureData([EvaluatorData](/vext/ref/fb/evaluatordata/) other)                      | Upcast an instance of type [EvaluatorData](/vext/ref/fb/evaluatordata/) to [SampleTextureData](/vext/ref/fb/sampletexturedata/).                      |
-| SampleTextureData([EmitterComponentData](/vext/ref/fb/emittercomponentdata/) other)        | Upcast an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata/) to [SampleTextureData](/vext/ref/fb/sampletexturedata/).        |
-| SampleTextureData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SampleTextureData](/vext/ref/fb/sampletexturedata/). |
+Creates a new [SampleTextureData](/vext/ref/fb/sampletexturedata) frostbite instance.
 
-## Properties
+### SampleTextureData {#constructor-1}
+> **SampleTextureData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name              | Type                                  | Description |
-| ----------------- | ------------------------------------- | ----------- |
-| textureDimensions | [Vec2](/vext/ref/shared/class/vec2)     |             |
-| colorIntensityMax | [Vec3](/vext/ref/shared/class/vec3)     |             |
-| colorIntensityMin | [Vec3](/vext/ref/shared/class/vec3)     |             |
-| gradientData      | [Vec4](/vext/ref/shared/class/vec4)\[\] |             |
-| textureOriginU    | number                                |             |
-| textureOriginV    | number                                |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [SampleTextureData](/vext/ref/fb/sampletexturedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SampleTextureData](/vext/ref/fb/sampletexturedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SampleTextureData](/vext/ref/fb/sampletexturedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SampleTextureData {#constructor-2}
+> **SampleTextureData**(other: [EvaluatorData](/vext/ref/fb/evaluatordata))
+
+Casts an instance of type [EvaluatorData](/vext/ref/fb/evaluatordata) to [SampleTextureData](/vext/ref/fb/sampletexturedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EvaluatorData](/vext/ref/fb/evaluatordata) | The instance to cast to [SampleTextureData](/vext/ref/fb/sampletexturedata). |
+
+### SampleTextureData {#constructor-3}
+> **SampleTextureData**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata))
+
+Casts an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata) to [SampleTextureData](/vext/ref/fb/sampletexturedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EmitterComponentData](/vext/ref/fb/emittercomponentdata) | The instance to cast to [SampleTextureData](/vext/ref/fb/sampletexturedata). |
+
+### SampleTextureData {#constructor-4}
+> **SampleTextureData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SampleTextureData](/vext/ref/fb/sampletexturedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SampleTextureData](/vext/ref/fb/sampletexturedata). |
+
+## Properties
+### {{% prop-heading "textureDimensions" %}}
+> **[Vec2](/vext/ref/shared/class/vec2)**
+
+### {{% prop-heading "colorIntensityMax" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "colorIntensityMin" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "gradientData" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**[]
+
+### {{% prop-heading "textureOriginU" %}}
+> **float**
+
+### {{% prop-heading "textureOriginV" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SampleTextureData](/vext/ref/fb/sampletexturedata) type.
+

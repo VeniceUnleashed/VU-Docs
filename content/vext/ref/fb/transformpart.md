@@ -1,17 +1,14 @@
 ---
 title: TransformPart
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **TransformPart_TranslationX** | Value: **0** |
+| **TransformPart_TranslationY** | Value: **1** |
+| **TransformPart_TranslationZ** | Value: **2** |
+| **TransformPart_RotationX** | Value: **3** |
+| **TransformPart_RotationY** | Value: **4** |
+| **TransformPart_RotationZ** | Value: **5** |
 
-| Name                        | Value | Description |
-| --------------------------- | ----- | ----------- |
-| TransformPart\_TranslationX | 0     |             |
-| TransformPart\_TranslationY | 1     |             |
-| TransformPart\_TranslationZ | 2     |             |
-| TransformPart\_RotationX    | 3     |             |
-| TransformPart\_RotationY    | 4     |             |
-| TransformPart\_RotationZ    | 5     |             |

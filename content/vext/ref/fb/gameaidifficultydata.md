@@ -1,36 +1,52 @@
 ---
 title: GameAIDifficultyData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[GameAIDifficultyData](#constructor-0)**() |
+| **[GameAIDifficultyData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[GameAIDifficultyData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "GameAIDifficultyData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### GameAIDifficultyData {#constructor-0}
+> **GameAIDifficultyData**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| GameAIDifficultyData()                                                          | Create a new instance of this container type.                                                                                   |
-| GameAIDifficultyData(GameAIDifficultyData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| GameAIDifficultyData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GameAIDifficultyData](/vext/ref/fb/gameaidifficultydata/). |
+Creates a new [GameAIDifficultyData](/vext/ref/fb/gameaidifficultydata) frostbite instance.
 
-## Methods
+### GameAIDifficultyData {#constructor-1}
+> **GameAIDifficultyData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [GameAIDifficultyData](/vext/ref/fb/gameaidifficultydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [GameAIDifficultyData](/vext/ref/fb/gameaidifficultydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [GameAIDifficultyData](/vext/ref/fb/gameaidifficultydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### GameAIDifficultyData {#constructor-2}
+> **GameAIDifficultyData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GameAIDifficultyData](/vext/ref/fb/gameaidifficultydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [GameAIDifficultyData](/vext/ref/fb/gameaidifficultydata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [GameAIDifficultyData](/vext/ref/fb/gameaidifficultydata) type.
+

@@ -1,32 +1,57 @@
 ---
 title: RigidMeshSocketTransform
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[RigidMeshSocketTransform](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "transform" >}} | [LinearTransform](/vext/ref/shared/class/lineartransform) |
+| {{< prop "socketObject" >}} | [WeaponRegularSocketObjectData](/vext/ref/fb/weaponregularsocketobjectdata) \| nil |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [RigidMeshSocketTransform](/vext/ref/fb/rigidmeshsockettransform) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "RigidMeshSocketTransform" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### RigidMeshSocketTransform {#constructor-0}
+> **RigidMeshSocketTransform**()
 
-| Constructor                                              | Description                                              |
-| -------------------------------------------------------- | -------------------------------------------------------- |
-| RigidMeshSocketTransform()                               | Create a new instance of this structure type.            |
-| RigidMeshSocketTransform(RigidMeshSocketTransform other) | Create a reference copy of a structure of the same type. |
+Creates a new [RigidMeshSocketTransform](/vext/ref/fb/rigidmeshsockettransform) frostbite structure.
 
 ## Properties
+### {{% prop-heading "transform" %}}
+> **[LinearTransform](/vext/ref/shared/class/lineartransform)**
 
-| Name         | Type                                                           | Description |
-| ------------ | -------------------------------------------------------------- | ----------- |
-| transform    | [LinearTransform](/vext/ref/shared/class/lineartransform)        |             |
-| socketObject | [WeaponRegularSocketObjectData](/vext/ref/fb/weaponregularsocketobjectdata/) |             |
+### {{% prop-heading "socketObject" %}}
+> **[WeaponRegularSocketObjectData](/vext/ref/fb/weaponregularsocketobjectdata)** | **nil**
 
 ## Methods
-
-| Type                                                 | Name            | Parameters |
-| ---------------------------------------------------- | --------------- | ---------- |
-| [RigidMeshSocketTransform](/vext/ref/fb/rigidmeshsockettransform/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [RigidMeshSocketTransform](/vext/ref/fb/rigidmeshsockettransform)
 
-> [RigidMeshSocketTransform](/vext/ref/fb/rigidmeshsockettransform/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[RigidMeshSocketTransform](/vext/ref/fb/rigidmeshsockettransform)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [RigidMeshSocketTransform](/vext/ref/fb/rigidmeshsockettransform) type.
+

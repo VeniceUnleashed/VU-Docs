@@ -1,13 +1,10 @@
 ---
 title: DebugMenuItemType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **DmitItem** | Value: **0** |
+| **DmitToggle** | Value: **1** |
 
-| Name       | Value | Description |
-| ---------- | ----- | ----------- |
-| DmitItem   | 0     |             |
-| DmitToggle | 1     |             |

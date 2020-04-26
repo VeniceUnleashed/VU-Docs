@@ -1,13 +1,10 @@
 ---
 title: VoiceOverContainerConditionMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **VoiceOverContainerConditionMode_All** | Value: **0** |
+| **VoiceOverContainerConditionMode_Any** | Value: **1** |
 
-| Name                                 | Value | Description |
-| ------------------------------------ | ----- | ----------- |
-| VoiceOverContainerConditionMode\_All | 0     |             |
-| VoiceOverContainerConditionMode\_Any | 1     |             |

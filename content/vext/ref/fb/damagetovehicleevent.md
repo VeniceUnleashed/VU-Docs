@@ -1,45 +1,80 @@
 ---
 title: DamageToVehicleEvent
 ---
-### Base Classes
 
-[MetricEvent](/vext/ref/fb/metricevent/)
+Inherits from 
+[MetricEvent](/vext/ref/fb/metricevent)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[DamageToVehicleEvent](#constructor-0)**() |
+| **[DamageToVehicleEvent](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[DamageToVehicleEvent](#constructor-2)**(other: [MetricEvent](/vext/ref/fb/metricevent)) |
+| **[DamageToVehicleEvent](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "vehicleName" >}} | string |
+| {{< prop "weaponName" >}} | string |
+| {{< prop "damageAmount" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "DamageToVehicleEvent" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### DamageToVehicleEvent {#constructor-0}
+> **DamageToVehicleEvent**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| DamageToVehicleEvent()                                                          | Create a new instance of this container type.                                                                                   |
-| DamageToVehicleEvent(DamageToVehicleEvent other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| DamageToVehicleEvent([MetricEvent](/vext/ref/fb/metricevent/) other)                          | Upcast an instance of type [MetricEvent](/vext/ref/fb/metricevent/) to [DamageToVehicleEvent](/vext/ref/fb/damagetovehicleevent/).                          |
-| DamageToVehicleEvent([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DamageToVehicleEvent](/vext/ref/fb/damagetovehicleevent/). |
+Creates a new [DamageToVehicleEvent](/vext/ref/fb/damagetovehicleevent) frostbite instance.
 
-## Properties
+### DamageToVehicleEvent {#constructor-1}
+> **DamageToVehicleEvent**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name         | Type   | Description |
-| ------------ | ------ | ----------- |
-| vehicleName  | string |             |
-| weaponName   | string |             |
-| damageAmount | number |             |
-
-## Methods
-
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [DamageToVehicleEvent](/vext/ref/fb/damagetovehicleevent/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [DamageToVehicleEvent](/vext/ref/fb/damagetovehicleevent/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [DamageToVehicleEvent](/vext/ref/fb/damagetovehicleevent) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### DamageToVehicleEvent {#constructor-2}
+> **DamageToVehicleEvent**(other: [MetricEvent](/vext/ref/fb/metricevent))
+
+Casts an instance of type [MetricEvent](/vext/ref/fb/metricevent) to [DamageToVehicleEvent](/vext/ref/fb/damagetovehicleevent). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [MetricEvent](/vext/ref/fb/metricevent) | The instance to cast to [DamageToVehicleEvent](/vext/ref/fb/damagetovehicleevent). |
+
+### DamageToVehicleEvent {#constructor-3}
+> **DamageToVehicleEvent**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DamageToVehicleEvent](/vext/ref/fb/damagetovehicleevent). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DamageToVehicleEvent](/vext/ref/fb/damagetovehicleevent). |
+
+## Properties
+### {{% prop-heading "vehicleName" %}}
+> **string**
+
+### {{% prop-heading "weaponName" %}}
+> **string**
+
+### {{% prop-heading "damageAmount" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [DamageToVehicleEvent](/vext/ref/fb/damagetovehicleevent) type.
+

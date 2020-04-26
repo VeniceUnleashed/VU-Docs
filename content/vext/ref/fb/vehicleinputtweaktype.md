@@ -1,15 +1,12 @@
 ---
 title: VehicleInputTweakType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **CombinedTimedSpeedTweakType** | Value: **0** |
+| **CombinedSpeedTweakType** | Value: **1** |
+| **SpeedTweakType** | Value: **2** |
+| **ScaledSpeedTweakType** | Value: **3** |
 
-| Name                        | Value | Description |
-| --------------------------- | ----- | ----------- |
-| CombinedTimedSpeedTweakType | 0     |             |
-| CombinedSpeedTweakType      | 1     |             |
-| SpeedTweakType              | 2     |             |
-| ScaledSpeedTweakType        | 3     |             |

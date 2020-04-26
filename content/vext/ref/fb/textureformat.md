@@ -1,43 +1,40 @@
 ---
 title: TextureFormat
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **TextureFormat_DXT1** | Value: **0** |
+| **TextureFormat_DXT3** | Value: **1** |
+| **TextureFormat_DXT5** | Value: **2** |
+| **TextureFormat_DXT5A** | Value: **3** |
+| **TextureFormat_DXN** | Value: **4** |
+| **TextureFormat_RGB565** | Value: **5** |
+| **TextureFormat_RGB888** | Value: **6** |
+| **TextureFormat_ARGB1555** | Value: **7** |
+| **TextureFormat_ARGB4444** | Value: **8** |
+| **TextureFormat_ARGB8888** | Value: **9** |
+| **TextureFormat_L8** | Value: **10** |
+| **TextureFormat_L16** | Value: **11** |
+| **TextureFormat_ABGR16** | Value: **12** |
+| **TextureFormat_ABGR16F** | Value: **13** |
+| **TextureFormat_ABGR32F** | Value: **14** |
+| **TextureFormat_R16F** | Value: **15** |
+| **TextureFormat_R32F** | Value: **16** |
+| **TextureFormat_NormalDXN** | Value: **17** |
+| **TextureFormat_NormalDXT1** | Value: **18** |
+| **TextureFormat_NormalDXT5** | Value: **19** |
+| **TextureFormat_NormalDXT5RGA** | Value: **20** |
+| **TextureFormat_RG8** | Value: **21** |
+| **TextureFormat_GR16** | Value: **22** |
+| **TextureFormat_GR16F** | Value: **23** |
+| **TextureFormat_D16** | Value: **24** |
+| **TextureFormat_D24S8** | Value: **25** |
+| **TextureFormat_D24FS8** | Value: **26** |
+| **TextureFormat_D32F** | Value: **27** |
+| **TextureFormat_ABGR32** | Value: **28** |
+| **TextureFormat_GR32F** | Value: **29** |
+| **TextureFormat_A2R10G10B10** | Value: **30** |
+| **TextureFormat_Unknown** | Value: **31** |
 
-| Name                         | Value | Description |
-| ---------------------------- | ----- | ----------- |
-| TextureFormat\_DXT1          | 0     |             |
-| TextureFormat\_DXT3          | 1     |             |
-| TextureFormat\_DXT5          | 2     |             |
-| TextureFormat\_DXT5A         | 3     |             |
-| TextureFormat\_DXN           | 4     |             |
-| TextureFormat\_RGB565        | 5     |             |
-| TextureFormat\_RGB888        | 6     |             |
-| TextureFormat\_ARGB1555      | 7     |             |
-| TextureFormat\_ARGB4444      | 8     |             |
-| TextureFormat\_ARGB8888      | 9     |             |
-| TextureFormat\_L8            | 10    |             |
-| TextureFormat\_L16           | 11    |             |
-| TextureFormat\_ABGR16        | 12    |             |
-| TextureFormat\_ABGR16F       | 13    |             |
-| TextureFormat\_ABGR32F       | 14    |             |
-| TextureFormat\_R16F          | 15    |             |
-| TextureFormat\_R32F          | 16    |             |
-| TextureFormat\_NormalDXN     | 17    |             |
-| TextureFormat\_NormalDXT1    | 18    |             |
-| TextureFormat\_NormalDXT5    | 19    |             |
-| TextureFormat\_NormalDXT5RGA | 20    |             |
-| TextureFormat\_RG8           | 21    |             |
-| TextureFormat\_GR16          | 22    |             |
-| TextureFormat\_GR16F         | 23    |             |
-| TextureFormat\_D16           | 24    |             |
-| TextureFormat\_D24S8         | 25    |             |
-| TextureFormat\_D24FS8        | 26    |             |
-| TextureFormat\_D32F          | 27    |             |
-| TextureFormat\_ABGR32        | 28    |             |
-| TextureFormat\_GR32F         | 29    |             |
-| TextureFormat\_A2R10G10B10   | 30    |             |
-| TextureFormat\_Unknown       | 31    |             |

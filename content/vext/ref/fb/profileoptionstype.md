@@ -1,21 +1,18 @@
 ---
 title: ProfileOptionsType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **GstAudio** | Value: **0** |
+| **GstRender** | Value: **1** |
+| **GstInput** | Value: **2** |
+| **GstAI** | Value: **3** |
+| **GstGameplay** | Value: **4** |
+| **GstPlayerProfile** | Value: **5** |
+| **GstPersistence** | Value: **6** |
+| **GstBinary** | Value: **7** |
+| **GstKeyBinding** | Value: **8** |
+| **GstCount** | Value: **9** |
 
-| Name             | Value | Description |
-| ---------------- | ----- | ----------- |
-| GstAudio         | 0     |             |
-| GstRender        | 1     |             |
-| GstInput         | 2     |             |
-| GstAI            | 3     |             |
-| GstGameplay      | 4     |             |
-| GstPlayerProfile | 5     |             |
-| GstPersistence   | 6     |             |
-| GstBinary        | 7     |             |
-| GstKeyBinding    | 8     |             |
-| GstCount         | 9     |             |

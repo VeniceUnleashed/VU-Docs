@@ -1,42 +1,61 @@
 ---
 title: ProximityData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ProximityData](#constructor-0)**() |
+| **[ProximityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ProximityData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "proximityType" >}} | [ProximityObjectType](/vext/ref/fb/proximityobjecttype) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ProximityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ProximityData {#constructor-0}
+> **ProximityData**()
 
-| Constructor                                                              | Description                                                                                                       |
-| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| ProximityData()                                                          | Create a new instance of this container type.                                                                     |
-| ProximityData(ProximityData other)                                       | Create a reference copy of an instance of the same type.                                                          |
-| ProximityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ProximityData](/vext/ref/fb/proximitydata/). |
+Creates a new [ProximityData](/vext/ref/fb/proximitydata) frostbite instance.
 
-## Properties
+### ProximityData {#constructor-1}
+> **ProximityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name          | Type                                       | Description |
-| ------------- | ------------------------------------------ | ----------- |
-| proximityType | [ProximityObjectType](/vext/ref/fb/proximityobjecttype/) |             |
-
-## Methods
-
-| Type                           | Name            | Parameters                                     |
-| ------------------------------ | --------------- | ---------------------------------------------- |
-| [ProximityData](/vext/ref/fb/proximitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ProximityData](/vext/ref/fb/proximitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ProximityData](/vext/ref/fb/proximitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ProximityData {#constructor-2}
+> **ProximityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ProximityData](/vext/ref/fb/proximitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ProximityData](/vext/ref/fb/proximitydata). |
+
+## Properties
+### {{% prop-heading "proximityType" %}}
+> **[ProximityObjectType](/vext/ref/fb/proximityobjecttype)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ProximityData](/vext/ref/fb/proximitydata) type.
+

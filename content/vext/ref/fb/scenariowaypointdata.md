@@ -1,45 +1,87 @@
 ---
 title: ScenarioWaypointData
 ---
-### Base Classes
 
-[AbstractLocoWaypointData](/vext/ref/fb/abstractlocowaypointdata/)
+Inherits from 
+[AbstractLocoWaypointData](/vext/ref/fb/abstractlocowaypointdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ScenarioWaypointData](#constructor-0)**() |
+| **[ScenarioWaypointData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ScenarioWaypointData](#constructor-2)**(other: [AbstractLocoWaypointData](/vext/ref/fb/abstractlocowaypointdata)) |
+| **[ScenarioWaypointData](#constructor-3)**(other: [WaypointData](/vext/ref/fb/waypointdata)) |
+| **[ScenarioWaypointData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "scenarioAntRef" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "scenarioTask" >}} | [ScenarioTaskData](/vext/ref/fb/scenariotaskdata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ScenarioWaypointData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ScenarioWaypointData {#constructor-0}
+> **ScenarioWaypointData**()
 
-| Constructor                                                                      | Description                                                                                                                      |
-| -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| ScenarioWaypointData()                                                           | Create a new instance of this container type.                                                                                    |
-| ScenarioWaypointData(ScenarioWaypointData other)                                 | Create a reference copy of an instance of the same type.                                                                         |
-| ScenarioWaypointData([AbstractLocoWaypointData](/vext/ref/fb/abstractlocowaypointdata/) other) | Upcast an instance of type [AbstractLocoWaypointData](/vext/ref/fb/abstractlocowaypointdata/) to [ScenarioWaypointData](/vext/ref/fb/scenariowaypointdata/). |
-| ScenarioWaypointData([WaypointData](/vext/ref/fb/waypointdata/) other)                         | Upcast an instance of type [WaypointData](/vext/ref/fb/waypointdata/) to [ScenarioWaypointData](/vext/ref/fb/scenariowaypointdata/).                         |
-| ScenarioWaypointData([DataContainer](/vext/ref/shared/class/datacontainer) other)  | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ScenarioWaypointData](/vext/ref/fb/scenariowaypointdata/).  |
+Creates a new [ScenarioWaypointData](/vext/ref/fb/scenariowaypointdata) frostbite instance.
 
-## Properties
+### ScenarioWaypointData {#constructor-1}
+> **ScenarioWaypointData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name           | Type                                 | Description |
-| -------------- | ------------------------------------ | ----------- |
-| scenarioAntRef | [AntRef](/vext/ref/fb/antref/)                     |             |
-| scenarioTask   | [ScenarioTaskData](/vext/ref/fb/scenariotaskdata/) |             |
-
-## Methods
-
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [ScenarioWaypointData](/vext/ref/fb/scenariowaypointdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ScenarioWaypointData](/vext/ref/fb/scenariowaypointdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ScenarioWaypointData](/vext/ref/fb/scenariowaypointdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ScenarioWaypointData {#constructor-2}
+> **ScenarioWaypointData**(other: [AbstractLocoWaypointData](/vext/ref/fb/abstractlocowaypointdata))
+
+Casts an instance of type [AbstractLocoWaypointData](/vext/ref/fb/abstractlocowaypointdata) to [ScenarioWaypointData](/vext/ref/fb/scenariowaypointdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AbstractLocoWaypointData](/vext/ref/fb/abstractlocowaypointdata) | The instance to cast to [ScenarioWaypointData](/vext/ref/fb/scenariowaypointdata). |
+
+### ScenarioWaypointData {#constructor-3}
+> **ScenarioWaypointData**(other: [WaypointData](/vext/ref/fb/waypointdata))
+
+Casts an instance of type [WaypointData](/vext/ref/fb/waypointdata) to [ScenarioWaypointData](/vext/ref/fb/scenariowaypointdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [WaypointData](/vext/ref/fb/waypointdata) | The instance to cast to [ScenarioWaypointData](/vext/ref/fb/scenariowaypointdata). |
+
+### ScenarioWaypointData {#constructor-4}
+> **ScenarioWaypointData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ScenarioWaypointData](/vext/ref/fb/scenariowaypointdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ScenarioWaypointData](/vext/ref/fb/scenariowaypointdata). |
+
+## Properties
+### {{% prop-heading "scenarioAntRef" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "scenarioTask" %}}
+> **[ScenarioTaskData](/vext/ref/fb/scenariotaskdata)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ScenarioWaypointData](/vext/ref/fb/scenariowaypointdata) type.
+

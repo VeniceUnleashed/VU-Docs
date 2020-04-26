@@ -1,13 +1,10 @@
 ---
 title: ReloadLogic
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **rlWeaponSwitchCancelsUnfinishedReload** | Value: **0** |
+| **rlReloadUnaffectedByWeaponSwitch** | Value: **1** |
 
-| Name                                  | Value | Description |
-| ------------------------------------- | ----- | ----------- |
-| rlWeaponSwitchCancelsUnfinishedReload | 0     |             |
-| rlReloadUnaffectedByWeaponSwitch      | 1     |             |

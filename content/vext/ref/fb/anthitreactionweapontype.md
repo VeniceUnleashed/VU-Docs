@@ -1,20 +1,17 @@
 ---
 title: AntHitReactionWeaponType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **AntHitReactionWeaponType_Pistol** | Value: **0** |
+| **AntHitReactionWeaponType_SMG** | Value: **1** |
+| **AntHitReactionWeaponType_AssaultRifle** | Value: **2** |
+| **AntHitReactionWeaponType_LMG** | Value: **3** |
+| **AntHitReactionWeaponType_Shotgun** | Value: **4** |
+| **AntHitReactionWeaponType_SniperRifle** | Value: **5** |
+| **AntHitReactionWeaponType_Explosion** | Value: **6** |
+| **AntHitReactionWeaponType_Flashbang** | Value: **7** |
+| **AntHitReactionWeaponType_Melee** | Value: **8** |
 
-| Name                                   | Value | Description |
-| -------------------------------------- | ----- | ----------- |
-| AntHitReactionWeaponType\_Pistol       | 0     |             |
-| AntHitReactionWeaponType\_SMG          | 1     |             |
-| AntHitReactionWeaponType\_AssaultRifle | 2     |             |
-| AntHitReactionWeaponType\_LMG          | 3     |             |
-| AntHitReactionWeaponType\_Shotgun      | 4     |             |
-| AntHitReactionWeaponType\_SniperRifle  | 5     |             |
-| AntHitReactionWeaponType\_Explosion    | 6     |             |
-| AntHitReactionWeaponType\_Flashbang    | 7     |             |
-| AntHitReactionWeaponType\_Melee        | 8     |             |

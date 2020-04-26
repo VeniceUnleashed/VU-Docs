@@ -1,31 +1,28 @@
 ---
 title: SimpleTransformOperation
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **SimpleTransformOperation_Add** | Value: **0** |
+| **SimpleTransformOperation_Subtract** | Value: **1** |
+| **SimpleTransformOperation_Multiply** | Value: **2** |
+| **SimpleTransformOperation_Divide** | Value: **3** |
+| **SimpleTransformOperation_Sine** | Value: **4** |
+| **SimpleTransformOperation_Cosine** | Value: **5** |
+| **SimpleTransformOperation_ArcSine** | Value: **6** |
+| **SimpleTransformOperation_ArcCosine** | Value: **7** |
+| **SimpleTransformOperation_Modulus** | Value: **8** |
+| **SimpleTransformOperation_Round** | Value: **9** |
+| **SimpleTransformOperation_Floor** | Value: **10** |
+| **SimpleTransformOperation_Ceiling** | Value: **11** |
+| **SimpleTransformOperation_Power** | Value: **12** |
+| **SimpleTransformOperation_SquareRoot** | Value: **13** |
+| **SimpleTransformOperation_Absolute** | Value: **14** |
+| **SimpleTransformOperation_Exp** | Value: **15** |
+| **SimpleTransformOperation_Log** | Value: **16** |
+| **SimpleTransformOperation_Log10** | Value: **17** |
+| **SimpleTransformOperation_Tangent** | Value: **18** |
+| **SimpleTransformOperation_ArcTangent** | Value: **19** |
 
-| Name                                 | Value | Description |
-| ------------------------------------ | ----- | ----------- |
-| SimpleTransformOperation\_Add        | 0     |             |
-| SimpleTransformOperation\_Subtract   | 1     |             |
-| SimpleTransformOperation\_Multiply   | 2     |             |
-| SimpleTransformOperation\_Divide     | 3     |             |
-| SimpleTransformOperation\_Sine       | 4     |             |
-| SimpleTransformOperation\_Cosine     | 5     |             |
-| SimpleTransformOperation\_ArcSine    | 6     |             |
-| SimpleTransformOperation\_ArcCosine  | 7     |             |
-| SimpleTransformOperation\_Modulus    | 8     |             |
-| SimpleTransformOperation\_Round      | 9     |             |
-| SimpleTransformOperation\_Floor      | 10    |             |
-| SimpleTransformOperation\_Ceiling    | 11    |             |
-| SimpleTransformOperation\_Power      | 12    |             |
-| SimpleTransformOperation\_SquareRoot | 13    |             |
-| SimpleTransformOperation\_Absolute   | 14    |             |
-| SimpleTransformOperation\_Exp        | 15    |             |
-| SimpleTransformOperation\_Log        | 16    |             |
-| SimpleTransformOperation\_Log10      | 17    |             |
-| SimpleTransformOperation\_Tangent    | 18    |             |
-| SimpleTransformOperation\_ArcTangent | 19    |             |

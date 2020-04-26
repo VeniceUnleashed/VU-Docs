@@ -1,45 +1,94 @@
 ---
 title: LogicReferenceObjectData
 ---
-### Base Classes
 
-[ReferenceObjectData](/vext/ref/fb/referenceobjectdata/)
+Inherits from 
+[ReferenceObjectData](/vext/ref/fb/referenceobjectdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[LogicReferenceObjectData](#constructor-0)**() |
+| **[LogicReferenceObjectData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[LogicReferenceObjectData](#constructor-2)**(other: [ReferenceObjectData](/vext/ref/fb/referenceobjectdata)) |
+| **[LogicReferenceObjectData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[LogicReferenceObjectData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[LogicReferenceObjectData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "subRealm" >}} | [SubRealm](/vext/ref/fb/subrealm) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "LogicReferenceObjectData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### LogicReferenceObjectData {#constructor-0}
+> **LogicReferenceObjectData**()
 
-| Constructor                                                                         | Description                                                                                                                             |
-| ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| LogicReferenceObjectData()                                                          | Create a new instance of this container type.                                                                                           |
-| LogicReferenceObjectData(LogicReferenceObjectData other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| LogicReferenceObjectData([ReferenceObjectData](/vext/ref/fb/referenceobjectdata/) other)          | Upcast an instance of type [ReferenceObjectData](/vext/ref/fb/referenceobjectdata/) to [LogicReferenceObjectData](/vext/ref/fb/logicreferenceobjectdata/).          |
-| LogicReferenceObjectData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [LogicReferenceObjectData](/vext/ref/fb/logicreferenceobjectdata/).                    |
-| LogicReferenceObjectData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [LogicReferenceObjectData](/vext/ref/fb/logicreferenceobjectdata/).              |
-| LogicReferenceObjectData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LogicReferenceObjectData](/vext/ref/fb/logicreferenceobjectdata/). |
+Creates a new [LogicReferenceObjectData](/vext/ref/fb/logicreferenceobjectdata) frostbite instance.
 
-## Properties
+### LogicReferenceObjectData {#constructor-1}
+> **LogicReferenceObjectData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name     | Type                 | Description |
-| -------- | -------------------- | ----------- |
-| subRealm | [SubRealm](/vext/ref/fb/subrealm/) |             |
-
-## Methods
-
-| Type                                                 | Name            | Parameters                                     |
-| ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [LogicReferenceObjectData](/vext/ref/fb/logicreferenceobjectdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [LogicReferenceObjectData](/vext/ref/fb/logicreferenceobjectdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [LogicReferenceObjectData](/vext/ref/fb/logicreferenceobjectdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### LogicReferenceObjectData {#constructor-2}
+> **LogicReferenceObjectData**(other: [ReferenceObjectData](/vext/ref/fb/referenceobjectdata))
+
+Casts an instance of type [ReferenceObjectData](/vext/ref/fb/referenceobjectdata) to [LogicReferenceObjectData](/vext/ref/fb/logicreferenceobjectdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ReferenceObjectData](/vext/ref/fb/referenceobjectdata) | The instance to cast to [LogicReferenceObjectData](/vext/ref/fb/logicreferenceobjectdata). |
+
+### LogicReferenceObjectData {#constructor-3}
+> **LogicReferenceObjectData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [LogicReferenceObjectData](/vext/ref/fb/logicreferenceobjectdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [LogicReferenceObjectData](/vext/ref/fb/logicreferenceobjectdata). |
+
+### LogicReferenceObjectData {#constructor-4}
+> **LogicReferenceObjectData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [LogicReferenceObjectData](/vext/ref/fb/logicreferenceobjectdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [LogicReferenceObjectData](/vext/ref/fb/logicreferenceobjectdata). |
+
+### LogicReferenceObjectData {#constructor-5}
+> **LogicReferenceObjectData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LogicReferenceObjectData](/vext/ref/fb/logicreferenceobjectdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [LogicReferenceObjectData](/vext/ref/fb/logicreferenceobjectdata). |
+
+## Properties
+### {{% prop-heading "subRealm" %}}
+> **[SubRealm](/vext/ref/fb/subrealm)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [LogicReferenceObjectData](/vext/ref/fb/logicreferenceobjectdata) type.
+

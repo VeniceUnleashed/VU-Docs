@@ -1,62 +1,169 @@
 ---
 title: VehicleSpawnReferenceObjectData
 ---
-### Base Classes
 
-[SpawnReferenceObjectData](/vext/ref/fb/spawnreferenceobjectdata/)
+Inherits from 
+[SpawnReferenceObjectData](/vext/ref/fb/spawnreferenceobjectdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VehicleSpawnReferenceObjectData](#constructor-0)**() |
+| **[VehicleSpawnReferenceObjectData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VehicleSpawnReferenceObjectData](#constructor-2)**(other: [SpawnReferenceObjectData](/vext/ref/fb/spawnreferenceobjectdata)) |
+| **[VehicleSpawnReferenceObjectData](#constructor-3)**(other: [ReferenceObjectData](/vext/ref/fb/referenceobjectdata)) |
+| **[VehicleSpawnReferenceObjectData](#constructor-4)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[VehicleSpawnReferenceObjectData](#constructor-5)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[VehicleSpawnReferenceObjectData](#constructor-6)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "airDropCarrierTransform" >}} | [LinearTransform](/vext/ref/shared/class/lineartransform) |
+| {{< prop "timeUntilAbandoned" >}} | float |
+| {{< prop "timeUntilAbandonedIsDestroyed" >}} | float |
+| {{< prop "enterRestriction" >}} | [EntryEnterRestriction](/vext/ref/fb/entryenterrestriction) |
+| {{< prop "botBailWhenHealthBelow" >}} | float |
+| {{< prop "botBailOutDelay" >}} | float |
+| {{< prop "wreckDuration" >}} | float |
+| {{< prop "respawnRange" >}} | float |
+| {{< prop "activeStanceEntryIndex" >}} | int |
+| {{< prop "activeStance" >}} | int |
+| {{< prop "keepAliveRadius" >}} | float |
+| {{< prop "vehicleIsNearDistance" >}} | float |
+| {{< prop "setTeamOnSpawn" >}} | bool |
+| {{< prop "applyDamageToAbandonedVehicles" >}} | bool |
+| {{< prop "enableAvailableSeatOutput" >}} | bool |
+| {{< prop "disregardSpawnAllowedSetting" >}} | bool |
+| {{< prop "affectedByImpulse" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VehicleSpawnReferenceObjectData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VehicleSpawnReferenceObjectData {#constructor-0}
+> **VehicleSpawnReferenceObjectData**()
 
-| Constructor                                                                                 | Description                                                                                                                                            |
-| ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| VehicleSpawnReferenceObjectData()                                                           | Create a new instance of this container type.                                                                                                          |
-| VehicleSpawnReferenceObjectData(VehicleSpawnReferenceObjectData other)                      | Create a reference copy of an instance of the same type.                                                                                               |
-| VehicleSpawnReferenceObjectData([SpawnReferenceObjectData](/vext/ref/fb/spawnreferenceobjectdata/) other) | Upcast an instance of type [SpawnReferenceObjectData](/vext/ref/fb/spawnreferenceobjectdata/) to [VehicleSpawnReferenceObjectData](/vext/ref/fb/vehiclespawnreferenceobjectdata/). |
-| VehicleSpawnReferenceObjectData([ReferenceObjectData](/vext/ref/fb/referenceobjectdata/) other)           | Upcast an instance of type [ReferenceObjectData](/vext/ref/fb/referenceobjectdata/) to [VehicleSpawnReferenceObjectData](/vext/ref/fb/vehiclespawnreferenceobjectdata/).           |
-| VehicleSpawnReferenceObjectData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                     | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [VehicleSpawnReferenceObjectData](/vext/ref/fb/vehiclespawnreferenceobjectdata/).                     |
-| VehicleSpawnReferenceObjectData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)               | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [VehicleSpawnReferenceObjectData](/vext/ref/fb/vehiclespawnreferenceobjectdata/).               |
-| VehicleSpawnReferenceObjectData([DataContainer](/vext/ref/shared/class/datacontainer) other)  | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VehicleSpawnReferenceObjectData](/vext/ref/fb/vehiclespawnreferenceobjectdata/).  |
+Creates a new [VehicleSpawnReferenceObjectData](/vext/ref/fb/vehiclespawnreferenceobjectdata) frostbite instance.
 
-## Properties
+### VehicleSpawnReferenceObjectData {#constructor-1}
+> **VehicleSpawnReferenceObjectData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                           | Type                                                    | Description |
-| ------------------------------ | ------------------------------------------------------- | ----------- |
-| airDropCarrierTransform        | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
-| timeUntilAbandoned             | number                                                  |             |
-| timeUntilAbandonedIsDestroyed  | number                                                  |             |
-| enterRestriction               | [EntryEnterRestriction](/vext/ref/fb/entryenterrestriction/)          |             |
-| botBailWhenHealthBelow         | number                                                  |             |
-| botBailOutDelay                | number                                                  |             |
-| wreckDuration                  | number                                                  |             |
-| respawnRange                   | number                                                  |             |
-| activeStanceEntryIndex         | number                                                  |             |
-| activeStance                   | number                                                  |             |
-| keepAliveRadius                | number                                                  |             |
-| vehicleIsNearDistance          | number                                                  |             |
-| setTeamOnSpawn                 | bool                                                    |             |
-| applyDamageToAbandonedVehicles | bool                                                    |             |
-| enableAvailableSeatOutput      | bool                                                    |             |
-| disregardSpawnAllowedSetting   | bool                                                    |             |
-| affectedByImpulse              | bool                                                    |             |
-
-## Methods
-
-| Type                                                               | Name            | Parameters                                     |
-| ------------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [VehicleSpawnReferenceObjectData](/vext/ref/fb/vehiclespawnreferenceobjectdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VehicleSpawnReferenceObjectData](/vext/ref/fb/vehiclespawnreferenceobjectdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VehicleSpawnReferenceObjectData](/vext/ref/fb/vehiclespawnreferenceobjectdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VehicleSpawnReferenceObjectData {#constructor-2}
+> **VehicleSpawnReferenceObjectData**(other: [SpawnReferenceObjectData](/vext/ref/fb/spawnreferenceobjectdata))
+
+Casts an instance of type [SpawnReferenceObjectData](/vext/ref/fb/spawnreferenceobjectdata) to [VehicleSpawnReferenceObjectData](/vext/ref/fb/vehiclespawnreferenceobjectdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SpawnReferenceObjectData](/vext/ref/fb/spawnreferenceobjectdata) | The instance to cast to [VehicleSpawnReferenceObjectData](/vext/ref/fb/vehiclespawnreferenceobjectdata). |
+
+### VehicleSpawnReferenceObjectData {#constructor-3}
+> **VehicleSpawnReferenceObjectData**(other: [ReferenceObjectData](/vext/ref/fb/referenceobjectdata))
+
+Casts an instance of type [ReferenceObjectData](/vext/ref/fb/referenceobjectdata) to [VehicleSpawnReferenceObjectData](/vext/ref/fb/vehiclespawnreferenceobjectdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ReferenceObjectData](/vext/ref/fb/referenceobjectdata) | The instance to cast to [VehicleSpawnReferenceObjectData](/vext/ref/fb/vehiclespawnreferenceobjectdata). |
+
+### VehicleSpawnReferenceObjectData {#constructor-4}
+> **VehicleSpawnReferenceObjectData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [VehicleSpawnReferenceObjectData](/vext/ref/fb/vehiclespawnreferenceobjectdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [VehicleSpawnReferenceObjectData](/vext/ref/fb/vehiclespawnreferenceobjectdata). |
+
+### VehicleSpawnReferenceObjectData {#constructor-5}
+> **VehicleSpawnReferenceObjectData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [VehicleSpawnReferenceObjectData](/vext/ref/fb/vehiclespawnreferenceobjectdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [VehicleSpawnReferenceObjectData](/vext/ref/fb/vehiclespawnreferenceobjectdata). |
+
+### VehicleSpawnReferenceObjectData {#constructor-6}
+> **VehicleSpawnReferenceObjectData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VehicleSpawnReferenceObjectData](/vext/ref/fb/vehiclespawnreferenceobjectdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VehicleSpawnReferenceObjectData](/vext/ref/fb/vehiclespawnreferenceobjectdata). |
+
+## Properties
+### {{% prop-heading "airDropCarrierTransform" %}}
+> **[LinearTransform](/vext/ref/shared/class/lineartransform)**
+
+### {{% prop-heading "timeUntilAbandoned" %}}
+> **float**
+
+### {{% prop-heading "timeUntilAbandonedIsDestroyed" %}}
+> **float**
+
+### {{% prop-heading "enterRestriction" %}}
+> **[EntryEnterRestriction](/vext/ref/fb/entryenterrestriction)**
+
+### {{% prop-heading "botBailWhenHealthBelow" %}}
+> **float**
+
+### {{% prop-heading "botBailOutDelay" %}}
+> **float**
+
+### {{% prop-heading "wreckDuration" %}}
+> **float**
+
+### {{% prop-heading "respawnRange" %}}
+> **float**
+
+### {{% prop-heading "activeStanceEntryIndex" %}}
+> **int**
+
+### {{% prop-heading "activeStance" %}}
+> **int**
+
+### {{% prop-heading "keepAliveRadius" %}}
+> **float**
+
+### {{% prop-heading "vehicleIsNearDistance" %}}
+> **float**
+
+### {{% prop-heading "setTeamOnSpawn" %}}
+> **bool**
+
+### {{% prop-heading "applyDamageToAbandonedVehicles" %}}
+> **bool**
+
+### {{% prop-heading "enableAvailableSeatOutput" %}}
+> **bool**
+
+### {{% prop-heading "disregardSpawnAllowedSetting" %}}
+> **bool**
+
+### {{% prop-heading "affectedByImpulse" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VehicleSpawnReferenceObjectData](/vext/ref/fb/vehiclespawnreferenceobjectdata) type.
+

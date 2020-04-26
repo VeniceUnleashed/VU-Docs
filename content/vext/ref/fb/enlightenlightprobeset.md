@@ -1,43 +1,101 @@
 ---
 title: EnlightenLightProbeSet
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[EnlightenLightProbeSet](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "transform" >}} | [LinearTransform](/vext/ref/shared/class/lineartransform) |
+| {{< prop "boundingBox" >}} | [AxisAlignedBox](/vext/ref/shared/class/axisalignedbox) |
+| {{< prop "sizeX" >}} | int |
+| {{< prop "sizeZ" >}} | int |
+| {{< prop "sizeY" >}} | int |
+| {{< prop "systemId" >}} | int |
+| {{< prop "blendDistance" >}} | float |
+| {{< prop "priority" >}} | int |
+| {{< prop "positions" >}} | [Vec3](/vext/ref/shared/class/vec3)[] |
+| {{< prop "validIndices" >}} | int[] |
+| {{< prop "inputSystems" >}} | int[] |
+| {{< prop "cache" >}} | [PrecomputeCache](/vext/ref/fb/precomputecache) |
+| {{< prop "staticProbeSet" >}} | bool |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [EnlightenLightProbeSet](/vext/ref/fb/enlightenlightprobeset) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "EnlightenLightProbeSet" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### EnlightenLightProbeSet {#constructor-0}
+> **EnlightenLightProbeSet**()
 
-| Constructor                                          | Description                                              |
-| ---------------------------------------------------- | -------------------------------------------------------- |
-| EnlightenLightProbeSet()                             | Create a new instance of this structure type.            |
-| EnlightenLightProbeSet(EnlightenLightProbeSet other) | Create a reference copy of a structure of the same type. |
+Creates a new [EnlightenLightProbeSet](/vext/ref/fb/enlightenlightprobeset) frostbite structure.
 
 ## Properties
+### {{% prop-heading "transform" %}}
+> **[LinearTransform](/vext/ref/shared/class/lineartransform)**
 
-| Name           | Type                                                    | Description |
-| -------------- | ------------------------------------------------------- | ----------- |
-| transform      | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
-| boundingBox    | [AxisAlignedBox](/vext/ref/shared/class/axisalignedbox)   |             |
-| sizeX          | number                                                  |             |
-| sizeZ          | number                                                  |             |
-| sizeY          | number                                                  |             |
-| systemId       | number                                                  |             |
-| blendDistance  | number                                                  |             |
-| priority       | number                                                  |             |
-| positions      | [Vec3](/vext/ref/shared/class/vec3)\[\]                   |             |
-| validIndices   | number\[\]                                              |             |
-| inputSystems   | number\[\]                                              |             |
-| cache          | [PrecomputeCache](/vext/ref/fb/precomputecache/)                      |             |
-| staticProbeSet | bool                                                    |             |
+### {{% prop-heading "boundingBox" %}}
+> **[AxisAlignedBox](/vext/ref/shared/class/axisalignedbox)**
+
+### {{% prop-heading "sizeX" %}}
+> **int**
+
+### {{% prop-heading "sizeZ" %}}
+> **int**
+
+### {{% prop-heading "sizeY" %}}
+> **int**
+
+### {{% prop-heading "systemId" %}}
+> **int**
+
+### {{% prop-heading "blendDistance" %}}
+> **float**
+
+### {{% prop-heading "priority" %}}
+> **int**
+
+### {{% prop-heading "positions" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**[]
+
+### {{% prop-heading "validIndices" %}}
+> **int**[]
+
+### {{% prop-heading "inputSystems" %}}
+> **int**[]
+
+### {{% prop-heading "cache" %}}
+> **[PrecomputeCache](/vext/ref/fb/precomputecache)**
+
+### {{% prop-heading "staticProbeSet" %}}
+> **bool**
 
 ## Methods
-
-| Type                                             | Name            | Parameters |
-| ------------------------------------------------ | --------------- | ---------- |
-| [EnlightenLightProbeSet](/vext/ref/fb/enlightenlightprobeset/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [EnlightenLightProbeSet](/vext/ref/fb/enlightenlightprobeset)
 
-> [EnlightenLightProbeSet](/vext/ref/fb/enlightenlightprobeset/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[EnlightenLightProbeSet](/vext/ref/fb/enlightenlightprobeset)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [EnlightenLightProbeSet](/vext/ref/fb/enlightenlightprobeset) type.
+

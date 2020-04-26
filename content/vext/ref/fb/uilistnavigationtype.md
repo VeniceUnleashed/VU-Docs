@@ -1,17 +1,14 @@
 ---
 title: UIListNavigationType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **loop** | Value: **0** |
+| **noLoop** | Value: **1** |
+| **sendEventTopBottom** | Value: **2** |
+| **sendEventTop** | Value: **3** |
+| **sendEventBottom** | Value: **4** |
+| **none** | Value: **5** |
 
-| Name               | Value | Description |
-| ------------------ | ----- | ----------- |
-| loop               | 0     |             |
-| noLoop             | 1     |             |
-| sendEventTopBottom | 2     |             |
-| sendEventTop       | 3     |             |
-| sendEventBottom    | 4     |             |
-| none               | 5     |             |

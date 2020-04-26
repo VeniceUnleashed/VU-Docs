@@ -1,32 +1,57 @@
 ---
 title: StringOption
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[StringOption](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "name" >}} | string |
+| {{< prop "value" >}} | string |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [StringOption](/vext/ref/fb/stringoption) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "StringOption" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### StringOption {#constructor-0}
+> **StringOption**()
 
-| Constructor                      | Description                                              |
-| -------------------------------- | -------------------------------------------------------- |
-| StringOption()                   | Create a new instance of this structure type.            |
-| StringOption(StringOption other) | Create a reference copy of a structure of the same type. |
+Creates a new [StringOption](/vext/ref/fb/stringoption) frostbite structure.
 
 ## Properties
+### {{% prop-heading "name" %}}
+> **string**
 
-| Name  | Type   | Description |
-| ----- | ------ | ----------- |
-| name  | string |             |
-| value | string |             |
+### {{% prop-heading "value" %}}
+> **string**
 
 ## Methods
-
-| Type                         | Name            | Parameters |
-| ---------------------------- | --------------- | ---------- |
-| [StringOption](/vext/ref/fb/stringoption/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [StringOption](/vext/ref/fb/stringoption)
 
-> [StringOption](/vext/ref/fb/stringoption/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[StringOption](/vext/ref/fb/stringoption)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [StringOption](/vext/ref/fb/stringoption) type.
+

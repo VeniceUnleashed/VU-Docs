@@ -1,50 +1,100 @@
 ---
 title: SurveyEvent
 ---
-### Base Classes
 
-[MetricEvent](/vext/ref/fb/metricevent/)
+Inherits from 
+[MetricEvent](/vext/ref/fb/metricevent)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SurveyEvent](#constructor-0)**() |
+| **[SurveyEvent](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SurveyEvent](#constructor-2)**(other: [MetricEvent](/vext/ref/fb/metricevent)) |
+| **[SurveyEvent](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "surveyName" >}} | string |
+| {{< prop "answerQuestion1" >}} | int |
+| {{< prop "answerQuestion2" >}} | int |
+| {{< prop "answerQuestion3" >}} | int |
+| {{< prop "answerQuestion4" >}} | int |
+| {{< prop "answerQuestion5" >}} | int |
+| {{< prop "freeTextField" >}} | string |
+| {{< prop "surveyMetricLink" >}} | [Guid](/vext/ref/shared/class/guid) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SurveyEvent" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SurveyEvent {#constructor-0}
+> **SurveyEvent**()
 
-| Constructor                                                            | Description                                                                                                   |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| SurveyEvent()                                                          | Create a new instance of this container type.                                                                 |
-| SurveyEvent(SurveyEvent other)                                         | Create a reference copy of an instance of the same type.                                                      |
-| SurveyEvent([MetricEvent](/vext/ref/fb/metricevent/) other)                          | Upcast an instance of type [MetricEvent](/vext/ref/fb/metricevent/) to [SurveyEvent](/vext/ref/fb/surveyevent/).                          |
-| SurveyEvent([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SurveyEvent](/vext/ref/fb/surveyevent/). |
+Creates a new [SurveyEvent](/vext/ref/fb/surveyevent) frostbite instance.
 
-## Properties
+### SurveyEvent {#constructor-1}
+> **SurveyEvent**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name             | Type                              | Description |
-| ---------------- | --------------------------------- | ----------- |
-| surveyName       | string                            |             |
-| answerQuestion1  | number                            |             |
-| answerQuestion2  | number                            |             |
-| answerQuestion3  | number                            |             |
-| answerQuestion4  | number                            |             |
-| answerQuestion5  | number                            |             |
-| freeTextField    | string                            |             |
-| surveyMetricLink | [Guid](/vext/ref/shared/class/guid) |             |
-
-## Methods
-
-| Type                       | Name            | Parameters                                     |
-| -------------------------- | --------------- | ---------------------------------------------- |
-| [SurveyEvent](/vext/ref/fb/surveyevent/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SurveyEvent](/vext/ref/fb/surveyevent/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SurveyEvent](/vext/ref/fb/surveyevent) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SurveyEvent {#constructor-2}
+> **SurveyEvent**(other: [MetricEvent](/vext/ref/fb/metricevent))
+
+Casts an instance of type [MetricEvent](/vext/ref/fb/metricevent) to [SurveyEvent](/vext/ref/fb/surveyevent). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [MetricEvent](/vext/ref/fb/metricevent) | The instance to cast to [SurveyEvent](/vext/ref/fb/surveyevent). |
+
+### SurveyEvent {#constructor-3}
+> **SurveyEvent**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SurveyEvent](/vext/ref/fb/surveyevent). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SurveyEvent](/vext/ref/fb/surveyevent). |
+
+## Properties
+### {{% prop-heading "surveyName" %}}
+> **string**
+
+### {{% prop-heading "answerQuestion1" %}}
+> **int**
+
+### {{% prop-heading "answerQuestion2" %}}
+> **int**
+
+### {{% prop-heading "answerQuestion3" %}}
+> **int**
+
+### {{% prop-heading "answerQuestion4" %}}
+> **int**
+
+### {{% prop-heading "answerQuestion5" %}}
+> **int**
+
+### {{% prop-heading "freeTextField" %}}
+> **string**
+
+### {{% prop-heading "surveyMetricLink" %}}
+> **[Guid](/vext/ref/shared/class/guid)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SurveyEvent](/vext/ref/fb/surveyevent) type.
+

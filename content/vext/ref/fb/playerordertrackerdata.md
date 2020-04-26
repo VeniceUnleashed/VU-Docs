@@ -1,46 +1,91 @@
 ---
 title: PlayerOrderTrackerData
 ---
-### Base Classes
 
-[HudTrackerData](/vext/ref/fb/hudtrackerdata/)
+Inherits from 
+[HudTrackerData](/vext/ref/fb/hudtrackerdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PlayerOrderTrackerData](#constructor-0)**() |
+| **[PlayerOrderTrackerData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PlayerOrderTrackerData](#constructor-2)**(other: [HudTrackerData](/vext/ref/fb/hudtrackerdata)) |
+| **[PlayerOrderTrackerData](#constructor-3)**(other: [UIPartData](/vext/ref/fb/uipartdata)) |
+| **[PlayerOrderTrackerData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "attackIcon" >}} | [UIHudIcon](/vext/ref/fb/uihudicon) |
+| {{< prop "defendIcon" >}} | [UIHudIcon](/vext/ref/fb/uihudicon) |
+| {{< prop "moveToIcon" >}} | [UIHudIcon](/vext/ref/fb/uihudicon) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PlayerOrderTrackerData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PlayerOrderTrackerData {#constructor-0}
+> **PlayerOrderTrackerData**()
 
-| Constructor                                                                       | Description                                                                                                                         |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| PlayerOrderTrackerData()                                                          | Create a new instance of this container type.                                                                                       |
-| PlayerOrderTrackerData(PlayerOrderTrackerData other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| PlayerOrderTrackerData([HudTrackerData](/vext/ref/fb/hudtrackerdata/) other)                    | Upcast an instance of type [HudTrackerData](/vext/ref/fb/hudtrackerdata/) to [PlayerOrderTrackerData](/vext/ref/fb/playerordertrackerdata/).                    |
-| PlayerOrderTrackerData([UIPartData](/vext/ref/fb/uipartdata/) other)                            | Upcast an instance of type [UIPartData](/vext/ref/fb/uipartdata/) to [PlayerOrderTrackerData](/vext/ref/fb/playerordertrackerdata/).                            |
-| PlayerOrderTrackerData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PlayerOrderTrackerData](/vext/ref/fb/playerordertrackerdata/). |
+Creates a new [PlayerOrderTrackerData](/vext/ref/fb/playerordertrackerdata) frostbite instance.
 
-## Properties
+### PlayerOrderTrackerData {#constructor-1}
+> **PlayerOrderTrackerData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name       | Type                   | Description |
-| ---------- | ---------------------- | ----------- |
-| attackIcon | [UIHudIcon](/vext/ref/fb/uihudicon/) |             |
-| defendIcon | [UIHudIcon](/vext/ref/fb/uihudicon/) |             |
-| moveToIcon | [UIHudIcon](/vext/ref/fb/uihudicon/) |             |
-
-## Methods
-
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [PlayerOrderTrackerData](/vext/ref/fb/playerordertrackerdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PlayerOrderTrackerData](/vext/ref/fb/playerordertrackerdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PlayerOrderTrackerData](/vext/ref/fb/playerordertrackerdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PlayerOrderTrackerData {#constructor-2}
+> **PlayerOrderTrackerData**(other: [HudTrackerData](/vext/ref/fb/hudtrackerdata))
+
+Casts an instance of type [HudTrackerData](/vext/ref/fb/hudtrackerdata) to [PlayerOrderTrackerData](/vext/ref/fb/playerordertrackerdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [HudTrackerData](/vext/ref/fb/hudtrackerdata) | The instance to cast to [PlayerOrderTrackerData](/vext/ref/fb/playerordertrackerdata). |
+
+### PlayerOrderTrackerData {#constructor-3}
+> **PlayerOrderTrackerData**(other: [UIPartData](/vext/ref/fb/uipartdata))
+
+Casts an instance of type [UIPartData](/vext/ref/fb/uipartdata) to [PlayerOrderTrackerData](/vext/ref/fb/playerordertrackerdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIPartData](/vext/ref/fb/uipartdata) | The instance to cast to [PlayerOrderTrackerData](/vext/ref/fb/playerordertrackerdata). |
+
+### PlayerOrderTrackerData {#constructor-4}
+> **PlayerOrderTrackerData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PlayerOrderTrackerData](/vext/ref/fb/playerordertrackerdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PlayerOrderTrackerData](/vext/ref/fb/playerordertrackerdata). |
+
+## Properties
+### {{% prop-heading "attackIcon" %}}
+> **[UIHudIcon](/vext/ref/fb/uihudicon)**
+
+### {{% prop-heading "defendIcon" %}}
+> **[UIHudIcon](/vext/ref/fb/uihudicon)**
+
+### {{% prop-heading "moveToIcon" %}}
+> **[UIHudIcon](/vext/ref/fb/uihudicon)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PlayerOrderTrackerData](/vext/ref/fb/playerordertrackerdata) type.
+

@@ -1,14 +1,11 @@
 ---
 title: UISettingSymbols
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **UISettingSymbols_Pluses** | Value: **0** |
+| **UISettingSymbols_Values** | Value: **1** |
+| **UISettingSymbols_None** | Value: **2** |
 
-| Name                     | Value | Description |
-| ------------------------ | ----- | ----------- |
-| UISettingSymbols\_Pluses | 0     |             |
-| UISettingSymbols\_Values | 1     |             |
-| UISettingSymbols\_None   | 2     |             |

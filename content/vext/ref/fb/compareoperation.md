@@ -1,17 +1,14 @@
 ---
 title: CompareOperation
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **Equal** | Value: **0** |
+| **NotEqual** | Value: **1** |
+| **LesserEqual** | Value: **2** |
+| **GreaterEqual** | Value: **3** |
+| **Lesser** | Value: **4** |
+| **Greater** | Value: **5** |
 
-| Name         | Value | Description |
-| ------------ | ----- | ----------- |
-| Equal        | 0     |             |
-| NotEqual     | 1     |             |
-| LesserEqual  | 2     |             |
-| GreaterEqual | 3     |             |
-| Lesser       | 4     |             |
-| Greater      | 5     |             |

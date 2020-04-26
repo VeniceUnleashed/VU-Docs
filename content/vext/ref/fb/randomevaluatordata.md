@@ -1,45 +1,87 @@
 ---
 title: RandomEvaluatorData
 ---
-### Base Classes
 
-[EvaluatorData](/vext/ref/fb/evaluatordata/)
+Inherits from 
+[EvaluatorData](/vext/ref/fb/evaluatordata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[RandomEvaluatorData](#constructor-0)**() |
+| **[RandomEvaluatorData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[RandomEvaluatorData](#constructor-2)**(other: [EvaluatorData](/vext/ref/fb/evaluatordata)) |
+| **[RandomEvaluatorData](#constructor-3)**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata)) |
+| **[RandomEvaluatorData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "max" >}} | float |
+| {{< prop "min" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "RandomEvaluatorData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### RandomEvaluatorData {#constructor-0}
+> **RandomEvaluatorData**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| RandomEvaluatorData()                                                          | Create a new instance of this container type.                                                                                 |
-| RandomEvaluatorData(RandomEvaluatorData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| RandomEvaluatorData([EvaluatorData](/vext/ref/fb/evaluatordata/) other)                      | Upcast an instance of type [EvaluatorData](/vext/ref/fb/evaluatordata/) to [RandomEvaluatorData](/vext/ref/fb/randomevaluatordata/).                      |
-| RandomEvaluatorData([EmitterComponentData](/vext/ref/fb/emittercomponentdata/) other)        | Upcast an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata/) to [RandomEvaluatorData](/vext/ref/fb/randomevaluatordata/).        |
-| RandomEvaluatorData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RandomEvaluatorData](/vext/ref/fb/randomevaluatordata/). |
+Creates a new [RandomEvaluatorData](/vext/ref/fb/randomevaluatordata) frostbite instance.
 
-## Properties
+### RandomEvaluatorData {#constructor-1}
+> **RandomEvaluatorData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name | Type   | Description |
-| ---- | ------ | ----------- |
-| max  | number |             |
-| min  | number |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [RandomEvaluatorData](/vext/ref/fb/randomevaluatordata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [RandomEvaluatorData](/vext/ref/fb/randomevaluatordata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [RandomEvaluatorData](/vext/ref/fb/randomevaluatordata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### RandomEvaluatorData {#constructor-2}
+> **RandomEvaluatorData**(other: [EvaluatorData](/vext/ref/fb/evaluatordata))
+
+Casts an instance of type [EvaluatorData](/vext/ref/fb/evaluatordata) to [RandomEvaluatorData](/vext/ref/fb/randomevaluatordata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EvaluatorData](/vext/ref/fb/evaluatordata) | The instance to cast to [RandomEvaluatorData](/vext/ref/fb/randomevaluatordata). |
+
+### RandomEvaluatorData {#constructor-3}
+> **RandomEvaluatorData**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata))
+
+Casts an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata) to [RandomEvaluatorData](/vext/ref/fb/randomevaluatordata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EmitterComponentData](/vext/ref/fb/emittercomponentdata) | The instance to cast to [RandomEvaluatorData](/vext/ref/fb/randomevaluatordata). |
+
+### RandomEvaluatorData {#constructor-4}
+> **RandomEvaluatorData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RandomEvaluatorData](/vext/ref/fb/randomevaluatordata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [RandomEvaluatorData](/vext/ref/fb/randomevaluatordata). |
+
+## Properties
+### {{% prop-heading "max" %}}
+> **float**
+
+### {{% prop-heading "min" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [RandomEvaluatorData](/vext/ref/fb/randomevaluatordata) type.
+

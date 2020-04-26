@@ -1,43 +1,72 @@
 ---
 title: AbstractLocoWaypointData
 ---
-### Base Classes
 
-[WaypointData](/vext/ref/fb/waypointdata/)
+Inherits from 
+[WaypointData](/vext/ref/fb/waypointdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AbstractLocoWaypointData](#constructor-0)**() |
+| **[AbstractLocoWaypointData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[AbstractLocoWaypointData](#constructor-2)**(other: [WaypointData](/vext/ref/fb/waypointdata)) |
+| **[AbstractLocoWaypointData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "baseTask" >}} | [AILocoBaseTaskData](/vext/ref/fb/ailocobasetaskdata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AbstractLocoWaypointData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AbstractLocoWaypointData {#constructor-0}
+> **AbstractLocoWaypointData**()
 
-| Constructor                                                                         | Description                                                                                                                             |
-| ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| AbstractLocoWaypointData()                                                          | Create a new instance of this container type.                                                                                           |
-| AbstractLocoWaypointData(AbstractLocoWaypointData other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| AbstractLocoWaypointData([WaypointData](/vext/ref/fb/waypointdata/) other)                        | Upcast an instance of type [WaypointData](/vext/ref/fb/waypointdata/) to [AbstractLocoWaypointData](/vext/ref/fb/abstractlocowaypointdata/).                        |
-| AbstractLocoWaypointData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AbstractLocoWaypointData](/vext/ref/fb/abstractlocowaypointdata/). |
+Creates a new [AbstractLocoWaypointData](/vext/ref/fb/abstractlocowaypointdata) frostbite instance.
 
-## Properties
+### AbstractLocoWaypointData {#constructor-1}
+> **AbstractLocoWaypointData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name     | Type                                     | Description |
-| -------- | ---------------------------------------- | ----------- |
-| baseTask | [AILocoBaseTaskData](/vext/ref/fb/ailocobasetaskdata/) |             |
-
-## Methods
-
-| Type                                                 | Name            | Parameters                                     |
-| ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [AbstractLocoWaypointData](/vext/ref/fb/abstractlocowaypointdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [AbstractLocoWaypointData](/vext/ref/fb/abstractlocowaypointdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [AbstractLocoWaypointData](/vext/ref/fb/abstractlocowaypointdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### AbstractLocoWaypointData {#constructor-2}
+> **AbstractLocoWaypointData**(other: [WaypointData](/vext/ref/fb/waypointdata))
+
+Casts an instance of type [WaypointData](/vext/ref/fb/waypointdata) to [AbstractLocoWaypointData](/vext/ref/fb/abstractlocowaypointdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [WaypointData](/vext/ref/fb/waypointdata) | The instance to cast to [AbstractLocoWaypointData](/vext/ref/fb/abstractlocowaypointdata). |
+
+### AbstractLocoWaypointData {#constructor-3}
+> **AbstractLocoWaypointData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AbstractLocoWaypointData](/vext/ref/fb/abstractlocowaypointdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [AbstractLocoWaypointData](/vext/ref/fb/abstractlocowaypointdata). |
+
+## Properties
+### {{% prop-heading "baseTask" %}}
+> **[AILocoBaseTaskData](/vext/ref/fb/ailocobasetaskdata)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AbstractLocoWaypointData](/vext/ref/fb/abstractlocowaypointdata) type.
+

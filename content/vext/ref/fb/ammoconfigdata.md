@@ -1,39 +1,85 @@
 ---
 title: AmmoConfigData
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AmmoConfigData](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "magazineCapacity" >}} | int |
+| {{< prop "numberOfMagazines" >}} | int |
+| {{< prop "traceFrequency" >}} | int |
+| {{< prop "ammoPickupMinAmount" >}} | int |
+| {{< prop "ammoPickupMaxAmount" >}} | int |
+| {{< prop "autoReplenishDelay" >}} | float |
+| {{< prop "ammoBagPickupAmount" >}} | int |
+| {{< prop "ammoBagPickupDelayMultiplier" >}} | float |
+| {{< prop "autoReplenishMagazine" >}} | bool |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [AmmoConfigData](/vext/ref/fb/ammoconfigdata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AmmoConfigData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AmmoConfigData {#constructor-0}
+> **AmmoConfigData**()
 
-| Constructor                          | Description                                              |
-| ------------------------------------ | -------------------------------------------------------- |
-| AmmoConfigData()                     | Create a new instance of this structure type.            |
-| AmmoConfigData(AmmoConfigData other) | Create a reference copy of a structure of the same type. |
+Creates a new [AmmoConfigData](/vext/ref/fb/ammoconfigdata) frostbite structure.
 
 ## Properties
+### {{% prop-heading "magazineCapacity" %}}
+> **int**
 
-| Name                         | Type   | Description |
-| ---------------------------- | ------ | ----------- |
-| magazineCapacity             | number |             |
-| numberOfMagazines            | number |             |
-| traceFrequency               | number |             |
-| ammoPickupMinAmount          | number |             |
-| ammoPickupMaxAmount          | number |             |
-| autoReplenishDelay           | number |             |
-| ammoBagPickupAmount          | number |             |
-| ammoBagPickupDelayMultiplier | number |             |
-| autoReplenishMagazine        | bool   |             |
+### {{% prop-heading "numberOfMagazines" %}}
+> **int**
+
+### {{% prop-heading "traceFrequency" %}}
+> **int**
+
+### {{% prop-heading "ammoPickupMinAmount" %}}
+> **int**
+
+### {{% prop-heading "ammoPickupMaxAmount" %}}
+> **int**
+
+### {{% prop-heading "autoReplenishDelay" %}}
+> **float**
+
+### {{% prop-heading "ammoBagPickupAmount" %}}
+> **int**
+
+### {{% prop-heading "ammoBagPickupDelayMultiplier" %}}
+> **float**
+
+### {{% prop-heading "autoReplenishMagazine" %}}
+> **bool**
 
 ## Methods
-
-| Type                             | Name            | Parameters |
-| -------------------------------- | --------------- | ---------- |
-| [AmmoConfigData](/vext/ref/fb/ammoconfigdata/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [AmmoConfigData](/vext/ref/fb/ammoconfigdata)
 
-> [AmmoConfigData](/vext/ref/fb/ammoconfigdata/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[AmmoConfigData](/vext/ref/fb/ammoconfigdata)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AmmoConfigData](/vext/ref/fb/ammoconfigdata) type.
+

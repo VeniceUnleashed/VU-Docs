@@ -1,13 +1,10 @@
 ---
 title: DamageIndicationType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **DamageIndicationType_GiverPlayer** | Value: **0** |
+| **DamageIndicationType_ExplosionCenter** | Value: **1** |
 
-| Name                                  | Value | Description |
-| ------------------------------------- | ----- | ----------- |
-| DamageIndicationType\_GiverPlayer     | 0     |             |
-| DamageIndicationType\_ExplosionCenter | 1     |             |

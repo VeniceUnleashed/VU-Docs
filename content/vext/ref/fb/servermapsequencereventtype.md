@@ -1,23 +1,20 @@
 ---
 title: ServerMapSequencerEventType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ServerMapSequencerEventType_Add** | Value: **0** |
+| **ServerMapSequencerEventType_Remove** | Value: **1** |
+| **ServerMapSequencerEventType_Clear** | Value: **2** |
+| **ServerMapSequencerEventType_List** | Value: **3** |
+| **ServerMapSequencerEventType_Load** | Value: **4** |
+| **ServerMapSequencerEventType_Save** | Value: **5** |
+| **ServerMapSequencerEventType_SetNextMapIndex** | Value: **6** |
+| **ServerMapSequencerEventType_GetMapIndices** | Value: **7** |
+| **ServerMapSequencerEventType_GetRounds** | Value: **8** |
+| **ServerMapSequencerEventType_RunNextRound** | Value: **9** |
+| **ServerMapSequencerEventType_RestartRound** | Value: **10** |
+| **ServerMapSequencerEventType_AvailableMaps** | Value: **11** |
 
-| Name                                         | Value | Description |
-| -------------------------------------------- | ----- | ----------- |
-| ServerMapSequencerEventType\_Add             | 0     |             |
-| ServerMapSequencerEventType\_Remove          | 1     |             |
-| ServerMapSequencerEventType\_Clear           | 2     |             |
-| ServerMapSequencerEventType\_List            | 3     |             |
-| ServerMapSequencerEventType\_Load            | 4     |             |
-| ServerMapSequencerEventType\_Save            | 5     |             |
-| ServerMapSequencerEventType\_SetNextMapIndex | 6     |             |
-| ServerMapSequencerEventType\_GetMapIndices   | 7     |             |
-| ServerMapSequencerEventType\_GetRounds       | 8     |             |
-| ServerMapSequencerEventType\_RunNextRound    | 9     |             |
-| ServerMapSequencerEventType\_RestartRound    | 10    |             |
-| ServerMapSequencerEventType\_AvailableMaps   | 11    |             |

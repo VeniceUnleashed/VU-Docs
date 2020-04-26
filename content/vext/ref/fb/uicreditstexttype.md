@@ -1,13 +1,10 @@
 ---
 title: UICreditsTextType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **SingleLine** | Value: **0** |
+| **MultiLine** | Value: **1** |
 
-| Name       | Value | Description |
-| ---------- | ----- | ----------- |
-| SingleLine | 0     |             |
-| MultiLine  | 1     |             |

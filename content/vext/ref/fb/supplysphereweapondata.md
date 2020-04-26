@@ -1,44 +1,83 @@
 ---
 title: SupplySphereWeaponData
 ---
-### Base Classes
 
-[WeaponData](/vext/ref/fb/weapondata/)
+Inherits from 
+[WeaponData](/vext/ref/fb/weapondata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SupplySphereWeaponData](#constructor-0)**() |
+| **[SupplySphereWeaponData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SupplySphereWeaponData](#constructor-2)**(other: [WeaponData](/vext/ref/fb/weapondata)) |
+| **[SupplySphereWeaponData](#constructor-3)**(other: [ToolData](/vext/ref/fb/tooldata)) |
+| **[SupplySphereWeaponData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "supplyData" >}} | [SupplyData](/vext/ref/fb/supplydata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SupplySphereWeaponData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SupplySphereWeaponData {#constructor-0}
+> **SupplySphereWeaponData**()
 
-| Constructor                                                                       | Description                                                                                                                         |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| SupplySphereWeaponData()                                                          | Create a new instance of this container type.                                                                                       |
-| SupplySphereWeaponData(SupplySphereWeaponData other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| SupplySphereWeaponData([WeaponData](/vext/ref/fb/weapondata/) other)                            | Upcast an instance of type [WeaponData](/vext/ref/fb/weapondata/) to [SupplySphereWeaponData](/vext/ref/fb/supplysphereweapondata/).                            |
-| SupplySphereWeaponData([ToolData](/vext/ref/fb/tooldata/) other)                                | Upcast an instance of type [ToolData](/vext/ref/fb/tooldata/) to [SupplySphereWeaponData](/vext/ref/fb/supplysphereweapondata/).                                |
-| SupplySphereWeaponData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SupplySphereWeaponData](/vext/ref/fb/supplysphereweapondata/). |
+Creates a new [SupplySphereWeaponData](/vext/ref/fb/supplysphereweapondata) frostbite instance.
 
-## Properties
+### SupplySphereWeaponData {#constructor-1}
+> **SupplySphereWeaponData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name       | Type                     | Description |
-| ---------- | ------------------------ | ----------- |
-| supplyData | [SupplyData](/vext/ref/fb/supplydata/) |             |
-
-## Methods
-
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [SupplySphereWeaponData](/vext/ref/fb/supplysphereweapondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SupplySphereWeaponData](/vext/ref/fb/supplysphereweapondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SupplySphereWeaponData](/vext/ref/fb/supplysphereweapondata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SupplySphereWeaponData {#constructor-2}
+> **SupplySphereWeaponData**(other: [WeaponData](/vext/ref/fb/weapondata))
+
+Casts an instance of type [WeaponData](/vext/ref/fb/weapondata) to [SupplySphereWeaponData](/vext/ref/fb/supplysphereweapondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [WeaponData](/vext/ref/fb/weapondata) | The instance to cast to [SupplySphereWeaponData](/vext/ref/fb/supplysphereweapondata). |
+
+### SupplySphereWeaponData {#constructor-3}
+> **SupplySphereWeaponData**(other: [ToolData](/vext/ref/fb/tooldata))
+
+Casts an instance of type [ToolData](/vext/ref/fb/tooldata) to [SupplySphereWeaponData](/vext/ref/fb/supplysphereweapondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ToolData](/vext/ref/fb/tooldata) | The instance to cast to [SupplySphereWeaponData](/vext/ref/fb/supplysphereweapondata). |
+
+### SupplySphereWeaponData {#constructor-4}
+> **SupplySphereWeaponData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SupplySphereWeaponData](/vext/ref/fb/supplysphereweapondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SupplySphereWeaponData](/vext/ref/fb/supplysphereweapondata). |
+
+## Properties
+### {{% prop-heading "supplyData" %}}
+> **[SupplyData](/vext/ref/fb/supplydata)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SupplySphereWeaponData](/vext/ref/fb/supplysphereweapondata) type.
+

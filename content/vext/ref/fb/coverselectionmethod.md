@@ -1,16 +1,13 @@
 ---
 title: CoverSelectionMethod
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **CSMAgainstThreatPosition** | Value: **0** |
+| **CSMAgainstHighestThreat** | Value: **1** |
+| **CSMAgainstSelectedTarget** | Value: **2** |
+| **CSMAgainstAllEnemies** | Value: **3** |
+| **CSMAgainstAllEnemiesWithFallback** | Value: **4** |
 
-| Name                             | Value | Description |
-| -------------------------------- | ----- | ----------- |
-| CSMAgainstThreatPosition         | 0     |             |
-| CSMAgainstHighestThreat          | 1     |             |
-| CSMAgainstSelectedTarget         | 2     |             |
-| CSMAgainstAllEnemies             | 3     |             |
-| CSMAgainstAllEnemiesWithFallback | 4     |             |

@@ -1,14 +1,11 @@
 ---
 title: RasterTreeBuildMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **RasterTreeBuildMode_InlinePersistentStreamRest** | Value: **0** |
+| **RasterTreeBuildMode_InlinePersistentRemoveRest** | Value: **1** |
+| **RasterTreeBuildMode_InlineAll** | Value: **2** |
 
-| Name                                            | Value | Description |
-| ----------------------------------------------- | ----- | ----------- |
-| RasterTreeBuildMode\_InlinePersistentStreamRest | 0     |             |
-| RasterTreeBuildMode\_InlinePersistentRemoveRest | 1     |             |
-| RasterTreeBuildMode\_InlineAll                  | 2     |             |

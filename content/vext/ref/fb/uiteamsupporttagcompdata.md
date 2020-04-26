@@ -1,39 +1,85 @@
 ---
 title: UITeamSupportTagCompData
 ---
-### Base Classes
 
-[UI3dIconCompData](/vext/ref/fb/ui3diconcompdata/)
+Inherits from 
+[UI3dIconCompData](/vext/ref/fb/ui3diconcompdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UITeamSupportTagCompData](#constructor-0)**() |
+| **[UITeamSupportTagCompData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UITeamSupportTagCompData](#constructor-2)**(other: [UI3dIconCompData](/vext/ref/fb/ui3diconcompdata)) |
+| **[UITeamSupportTagCompData](#constructor-3)**(other: [UIComponentData](/vext/ref/fb/uicomponentdata)) |
+| **[UITeamSupportTagCompData](#constructor-4)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[UITeamSupportTagCompData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UITeamSupportTagCompData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UITeamSupportTagCompData {#constructor-0}
+> **UITeamSupportTagCompData**()
 
-| Constructor                                                                         | Description                                                                                                                             |
-| ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| UITeamSupportTagCompData()                                                          | Create a new instance of this container type.                                                                                           |
-| UITeamSupportTagCompData(UITeamSupportTagCompData other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| UITeamSupportTagCompData([UI3dIconCompData](/vext/ref/fb/ui3diconcompdata/) other)                | Upcast an instance of type [UI3dIconCompData](/vext/ref/fb/ui3diconcompdata/) to [UITeamSupportTagCompData](/vext/ref/fb/uiteamsupporttagcompdata/).                |
-| UITeamSupportTagCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UITeamSupportTagCompData](/vext/ref/fb/uiteamsupporttagcompdata/).                  |
-| UITeamSupportTagCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UITeamSupportTagCompData](/vext/ref/fb/uiteamsupporttagcompdata/).                                      |
-| UITeamSupportTagCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UITeamSupportTagCompData](/vext/ref/fb/uiteamsupporttagcompdata/). |
+Creates a new [UITeamSupportTagCompData](/vext/ref/fb/uiteamsupporttagcompdata) frostbite instance.
 
-## Methods
+### UITeamSupportTagCompData {#constructor-1}
+> **UITeamSupportTagCompData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                                 | Name            | Parameters                                     |
-| ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [UITeamSupportTagCompData](/vext/ref/fb/uiteamsupporttagcompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UITeamSupportTagCompData](/vext/ref/fb/uiteamsupporttagcompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UITeamSupportTagCompData](/vext/ref/fb/uiteamsupporttagcompdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UITeamSupportTagCompData {#constructor-2}
+> **UITeamSupportTagCompData**(other: [UI3dIconCompData](/vext/ref/fb/ui3diconcompdata))
+
+Casts an instance of type [UI3dIconCompData](/vext/ref/fb/ui3diconcompdata) to [UITeamSupportTagCompData](/vext/ref/fb/uiteamsupporttagcompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UI3dIconCompData](/vext/ref/fb/ui3diconcompdata) | The instance to cast to [UITeamSupportTagCompData](/vext/ref/fb/uiteamsupporttagcompdata). |
+
+### UITeamSupportTagCompData {#constructor-3}
+> **UITeamSupportTagCompData**(other: [UIComponentData](/vext/ref/fb/uicomponentdata))
+
+Casts an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata) to [UITeamSupportTagCompData](/vext/ref/fb/uiteamsupporttagcompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIComponentData](/vext/ref/fb/uicomponentdata) | The instance to cast to [UITeamSupportTagCompData](/vext/ref/fb/uiteamsupporttagcompdata). |
+
+### UITeamSupportTagCompData {#constructor-4}
+> **UITeamSupportTagCompData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [UITeamSupportTagCompData](/vext/ref/fb/uiteamsupporttagcompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [UITeamSupportTagCompData](/vext/ref/fb/uiteamsupporttagcompdata). |
+
+### UITeamSupportTagCompData {#constructor-5}
+> **UITeamSupportTagCompData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UITeamSupportTagCompData](/vext/ref/fb/uiteamsupporttagcompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UITeamSupportTagCompData](/vext/ref/fb/uiteamsupporttagcompdata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UITeamSupportTagCompData](/vext/ref/fb/uiteamsupporttagcompdata) type.
+

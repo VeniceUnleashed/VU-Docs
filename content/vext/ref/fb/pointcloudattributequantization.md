@@ -1,17 +1,14 @@
 ---
 title: PointCloudAttributeQuantization
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **PointCloudAttributeQuantization_s5e5** | Value: **0** |
+| **PointCloudAttributeQuantization_s7e5** | Value: **1** |
+| **PointCloudAttributeQuantization_s10e5** | Value: **2** |
+| **PointCloudAttributeQuantization_s16e7** | Value: **3** |
+| **PointCloudAttributeQuantization_None** | Value: **4** |
+| **PointCloudAttributeQuantization_Count** | Value: **5** |
 
-| Name                                   | Value | Description |
-| -------------------------------------- | ----- | ----------- |
-| PointCloudAttributeQuantization\_s5e5  | 0     |             |
-| PointCloudAttributeQuantization\_s7e5  | 1     |             |
-| PointCloudAttributeQuantization\_s10e5 | 2     |             |
-| PointCloudAttributeQuantization\_s16e7 | 3     |             |
-| PointCloudAttributeQuantization\_None  | 4     |             |
-| PointCloudAttributeQuantization\_Count | 5     |             |

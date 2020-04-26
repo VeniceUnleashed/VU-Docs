@@ -1,17 +1,14 @@
 ---
 title: ChatChannelType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **CctSayAll** | Value: **0** |
+| **CctTeam** | Value: **1** |
+| **CctSquad** | Value: **2** |
+| **CctSquadLeader** | Value: **3** |
+| **CctAdmin** | Value: **4** |
+| **CctSize** | Value: **5** |
 
-| Name           | Value | Description |
-| -------------- | ----- | ----------- |
-| CctSayAll      | 0     |             |
-| CctTeam        | 1     |             |
-| CctSquad       | 2     |             |
-| CctSquadLeader | 3     |             |
-| CctAdmin       | 4     |             |
-| CctSize        | 5     |             |

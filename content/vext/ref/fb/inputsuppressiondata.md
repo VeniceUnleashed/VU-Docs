@@ -1,31 +1,53 @@
 ---
 title: InputSuppressionData
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[InputSuppressionData](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "suppressVehicleInput" >}} | [ActionSuppressor](/vext/ref/fb/actionsuppressor)[] |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [InputSuppressionData](/vext/ref/fb/inputsuppressiondata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "InputSuppressionData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### InputSuppressionData {#constructor-0}
+> **InputSuppressionData**()
 
-| Constructor                                      | Description                                              |
-| ------------------------------------------------ | -------------------------------------------------------- |
-| InputSuppressionData()                           | Create a new instance of this structure type.            |
-| InputSuppressionData(InputSuppressionData other) | Create a reference copy of a structure of the same type. |
+Creates a new [InputSuppressionData](/vext/ref/fb/inputsuppressiondata) frostbite structure.
 
 ## Properties
-
-| Name                 | Type                                     | Description |
-| -------------------- | ---------------------------------------- | ----------- |
-| suppressVehicleInput | [ActionSuppressor](/vext/ref/fb/actionsuppressor/)\[\] |             |
+### {{% prop-heading "suppressVehicleInput" %}}
+> **[ActionSuppressor](/vext/ref/fb/actionsuppressor)**[]
 
 ## Methods
-
-| Type                                         | Name            | Parameters |
-| -------------------------------------------- | --------------- | ---------- |
-| [InputSuppressionData](/vext/ref/fb/inputsuppressiondata/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [InputSuppressionData](/vext/ref/fb/inputsuppressiondata)
 
-> [InputSuppressionData](/vext/ref/fb/inputsuppressiondata/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[InputSuppressionData](/vext/ref/fb/inputsuppressiondata)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [InputSuppressionData](/vext/ref/fb/inputsuppressiondata) type.
+

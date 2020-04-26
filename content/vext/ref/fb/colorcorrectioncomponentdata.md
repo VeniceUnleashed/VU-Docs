@@ -1,52 +1,122 @@
 ---
 title: ColorCorrectionComponentData
 ---
-### Base Classes
 
-[ComponentData](/vext/ref/fb/componentdata/)
+Inherits from 
+[ComponentData](/vext/ref/fb/componentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ColorCorrectionComponentData](#constructor-0)**() |
+| **[ColorCorrectionComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ColorCorrectionComponentData](#constructor-2)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[ColorCorrectionComponentData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[ColorCorrectionComponentData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[ColorCorrectionComponentData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "contrast" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "saturation" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "brightness" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
+| {{< prop "hue" >}} | float |
+| {{< prop "colorGradingTexture" >}} | [TextureAsset](/vext/ref/fb/textureasset) \| nil |
+| {{< prop "colorGradingEnable" >}} | bool |
+| {{< prop "enable" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ColorCorrectionComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ColorCorrectionComponentData {#constructor-0}
+> **ColorCorrectionComponentData**()
 
-| Constructor                                                                             | Description                                                                                                                                     |
-| --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| ColorCorrectionComponentData()                                                          | Create a new instance of this container type.                                                                                                   |
-| ColorCorrectionComponentData(ColorCorrectionComponentData other)                        | Create a reference copy of an instance of the same type.                                                                                        |
-| ColorCorrectionComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [ColorCorrectionComponentData](/vext/ref/fb/colorcorrectioncomponentdata/).                      |
-| ColorCorrectionComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [ColorCorrectionComponentData](/vext/ref/fb/colorcorrectioncomponentdata/).                    |
-| ColorCorrectionComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [ColorCorrectionComponentData](/vext/ref/fb/colorcorrectioncomponentdata/).              |
-| ColorCorrectionComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ColorCorrectionComponentData](/vext/ref/fb/colorcorrectioncomponentdata/). |
+Creates a new [ColorCorrectionComponentData](/vext/ref/fb/colorcorrectioncomponentdata) frostbite instance.
 
-## Properties
+### ColorCorrectionComponentData {#constructor-1}
+> **ColorCorrectionComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                | Type                              | Description |
-| ------------------- | --------------------------------- | ----------- |
-| contrast            | [Vec3](/vext/ref/shared/class/vec3) |             |
-| saturation          | [Vec3](/vext/ref/shared/class/vec3) |             |
-| brightness          | [Vec3](/vext/ref/shared/class/vec3) |             |
-| realm               | [Realm](/vext/ref/fb/realm/)                    |             |
-| hue                 | number                            |             |
-| colorGradingTexture | [TextureAsset](/vext/ref/fb/textureasset/)      |             |
-| colorGradingEnable  | bool                              |             |
-| enable              | bool                              |             |
-
-## Methods
-
-| Type                                                         | Name            | Parameters                                     |
-| ------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [ColorCorrectionComponentData](/vext/ref/fb/colorcorrectioncomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ColorCorrectionComponentData](/vext/ref/fb/colorcorrectioncomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ColorCorrectionComponentData](/vext/ref/fb/colorcorrectioncomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ColorCorrectionComponentData {#constructor-2}
+> **ColorCorrectionComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [ColorCorrectionComponentData](/vext/ref/fb/colorcorrectioncomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [ColorCorrectionComponentData](/vext/ref/fb/colorcorrectioncomponentdata). |
+
+### ColorCorrectionComponentData {#constructor-3}
+> **ColorCorrectionComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [ColorCorrectionComponentData](/vext/ref/fb/colorcorrectioncomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [ColorCorrectionComponentData](/vext/ref/fb/colorcorrectioncomponentdata). |
+
+### ColorCorrectionComponentData {#constructor-4}
+> **ColorCorrectionComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [ColorCorrectionComponentData](/vext/ref/fb/colorcorrectioncomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [ColorCorrectionComponentData](/vext/ref/fb/colorcorrectioncomponentdata). |
+
+### ColorCorrectionComponentData {#constructor-5}
+> **ColorCorrectionComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ColorCorrectionComponentData](/vext/ref/fb/colorcorrectioncomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ColorCorrectionComponentData](/vext/ref/fb/colorcorrectioncomponentdata). |
+
+## Properties
+### {{% prop-heading "contrast" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "saturation" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "brightness" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "realm" %}}
+> **[Realm](/vext/ref/fb/realm)**
+
+### {{% prop-heading "hue" %}}
+> **float**
+
+### {{% prop-heading "colorGradingTexture" %}}
+> **[TextureAsset](/vext/ref/fb/textureasset)** | **nil**
+
+### {{% prop-heading "colorGradingEnable" %}}
+> **bool**
+
+### {{% prop-heading "enable" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ColorCorrectionComponentData](/vext/ref/fb/colorcorrectioncomponentdata) type.
+

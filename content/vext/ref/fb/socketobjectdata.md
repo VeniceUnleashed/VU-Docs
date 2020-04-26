@@ -1,49 +1,96 @@
 ---
 title: SocketObjectData
 ---
-### Base Classes
 
-[SocketObjectDataBase](/vext/ref/fb/socketobjectdatabase/)
+Inherits from 
+[SocketObjectDataBase](/vext/ref/fb/socketobjectdatabase)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SocketObjectData](#constructor-0)**() |
+| **[SocketObjectData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SocketObjectData](#constructor-2)**(other: [SocketObjectDataBase](/vext/ref/fb/socketobjectdatabase)) |
+| **[SocketObjectData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "asset1pGuid" >}} | [Guid](/vext/ref/shared/class/guid) |
+| {{< prop "variation1pGuids" >}} | [Guid](/vext/ref/shared/class/guid)[] |
+| {{< prop "asset1pZoomGuid" >}} | [Guid](/vext/ref/shared/class/guid) |
+| {{< prop "variation1pZoomGuids" >}} | [Guid](/vext/ref/shared/class/guid)[] |
+| {{< prop "asset3pGuid" >}} | [Guid](/vext/ref/shared/class/guid) |
+| {{< prop "variation3pGuids" >}} | [Guid](/vext/ref/shared/class/guid)[] |
+| {{< prop "customizedMaterials" >}} | [CustomizedMaterialData](/vext/ref/fb/customizedmaterialdata)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SocketObjectData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SocketObjectData {#constructor-0}
+> **SocketObjectData**()
 
-| Constructor                                                                 | Description                                                                                                             |
-| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| SocketObjectData()                                                          | Create a new instance of this container type.                                                                           |
-| SocketObjectData(SocketObjectData other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| SocketObjectData([SocketObjectDataBase](/vext/ref/fb/socketobjectdatabase/) other)        | Upcast an instance of type [SocketObjectDataBase](/vext/ref/fb/socketobjectdatabase/) to [SocketObjectData](/vext/ref/fb/socketobjectdata/).        |
-| SocketObjectData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SocketObjectData](/vext/ref/fb/socketobjectdata/). |
+Creates a new [SocketObjectData](/vext/ref/fb/socketobjectdata) frostbite instance.
 
-## Properties
+### SocketObjectData {#constructor-1}
+> **SocketObjectData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                 | Type                                                 | Description |
-| -------------------- | ---------------------------------------------------- | ----------- |
-| asset1pGuid          | [Guid](/vext/ref/shared/class/guid)                    |             |
-| variation1pGuids     | [Guid](/vext/ref/shared/class/guid)\[\]                |             |
-| asset1pZoomGuid      | [Guid](/vext/ref/shared/class/guid)                    |             |
-| variation1pZoomGuids | [Guid](/vext/ref/shared/class/guid)\[\]                |             |
-| asset3pGuid          | [Guid](/vext/ref/shared/class/guid)                    |             |
-| variation3pGuids     | [Guid](/vext/ref/shared/class/guid)\[\]                |             |
-| customizedMaterials  | [CustomizedMaterialData](/vext/ref/fb/customizedmaterialdata/)\[\] |             |
-
-## Methods
-
-| Type                                 | Name            | Parameters                                     |
-| ------------------------------------ | --------------- | ---------------------------------------------- |
-| [SocketObjectData](/vext/ref/fb/socketobjectdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SocketObjectData](/vext/ref/fb/socketobjectdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SocketObjectData](/vext/ref/fb/socketobjectdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SocketObjectData {#constructor-2}
+> **SocketObjectData**(other: [SocketObjectDataBase](/vext/ref/fb/socketobjectdatabase))
+
+Casts an instance of type [SocketObjectDataBase](/vext/ref/fb/socketobjectdatabase) to [SocketObjectData](/vext/ref/fb/socketobjectdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SocketObjectDataBase](/vext/ref/fb/socketobjectdatabase) | The instance to cast to [SocketObjectData](/vext/ref/fb/socketobjectdata). |
+
+### SocketObjectData {#constructor-3}
+> **SocketObjectData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SocketObjectData](/vext/ref/fb/socketobjectdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SocketObjectData](/vext/ref/fb/socketobjectdata). |
+
+## Properties
+### {{% prop-heading "asset1pGuid" %}}
+> **[Guid](/vext/ref/shared/class/guid)**
+
+### {{% prop-heading "variation1pGuids" %}}
+> **[Guid](/vext/ref/shared/class/guid)**[]
+
+### {{% prop-heading "asset1pZoomGuid" %}}
+> **[Guid](/vext/ref/shared/class/guid)**
+
+### {{% prop-heading "variation1pZoomGuids" %}}
+> **[Guid](/vext/ref/shared/class/guid)**[]
+
+### {{% prop-heading "asset3pGuid" %}}
+> **[Guid](/vext/ref/shared/class/guid)**
+
+### {{% prop-heading "variation3pGuids" %}}
+> **[Guid](/vext/ref/shared/class/guid)**[]
+
+### {{% prop-heading "customizedMaterials" %}}
+> **[CustomizedMaterialData](/vext/ref/fb/customizedmaterialdata)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SocketObjectData](/vext/ref/fb/socketobjectdata) type.
+

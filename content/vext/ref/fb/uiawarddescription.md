@@ -1,43 +1,72 @@
 ---
 title: UIAwardDescription
 ---
-### Base Classes
 
-[UIItemDescription](/vext/ref/fb/uiitemdescription/)
+Inherits from 
+[UIItemDescription](/vext/ref/fb/uiitemdescription)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIAwardDescription](#constructor-0)**() |
+| **[UIAwardDescription](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UIAwardDescription](#constructor-2)**(other: [UIItemDescription](/vext/ref/fb/uiitemdescription)) |
+| **[UIAwardDescription](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "ignoreBuild" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIAwardDescription" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIAwardDescription {#constructor-0}
+> **UIAwardDescription**()
 
-| Constructor                                                                   | Description                                                                                                                 |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| UIAwardDescription()                                                          | Create a new instance of this container type.                                                                               |
-| UIAwardDescription(UIAwardDescription other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| UIAwardDescription([UIItemDescription](/vext/ref/fb/uiitemdescription/) other)              | Upcast an instance of type [UIItemDescription](/vext/ref/fb/uiitemdescription/) to [UIAwardDescription](/vext/ref/fb/uiawarddescription/).              |
-| UIAwardDescription([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIAwardDescription](/vext/ref/fb/uiawarddescription/). |
+Creates a new [UIAwardDescription](/vext/ref/fb/uiawarddescription) frostbite instance.
 
-## Properties
+### UIAwardDescription {#constructor-1}
+> **UIAwardDescription**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name        | Type | Description |
-| ----------- | ---- | ----------- |
-| ignoreBuild | bool |             |
-
-## Methods
-
-| Type                                     | Name            | Parameters                                     |
-| ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [UIAwardDescription](/vext/ref/fb/uiawarddescription/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UIAwardDescription](/vext/ref/fb/uiawarddescription/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UIAwardDescription](/vext/ref/fb/uiawarddescription) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UIAwardDescription {#constructor-2}
+> **UIAwardDescription**(other: [UIItemDescription](/vext/ref/fb/uiitemdescription))
+
+Casts an instance of type [UIItemDescription](/vext/ref/fb/uiitemdescription) to [UIAwardDescription](/vext/ref/fb/uiawarddescription). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIItemDescription](/vext/ref/fb/uiitemdescription) | The instance to cast to [UIAwardDescription](/vext/ref/fb/uiawarddescription). |
+
+### UIAwardDescription {#constructor-3}
+> **UIAwardDescription**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIAwardDescription](/vext/ref/fb/uiawarddescription). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UIAwardDescription](/vext/ref/fb/uiawarddescription). |
+
+## Properties
+### {{% prop-heading "ignoreBuild" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIAwardDescription](/vext/ref/fb/uiawarddescription) type.
+

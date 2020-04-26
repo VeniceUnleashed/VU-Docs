@@ -1,51 +1,118 @@
 ---
 title: PlanarReflectionComponentData
 ---
-### Base Classes
 
-[ComponentData](/vext/ref/fb/componentdata/)
+Inherits from 
+[ComponentData](/vext/ref/fb/componentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PlanarReflectionComponentData](#constructor-0)**() |
+| **[PlanarReflectionComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PlanarReflectionComponentData](#constructor-2)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[PlanarReflectionComponentData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[PlanarReflectionComponentData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[PlanarReflectionComponentData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "verticalBlurFilter" >}} | [BlurFilter](/vext/ref/fb/blurfilter) |
+| {{< prop "horizontalDeviation" >}} | float |
+| {{< prop "groundHeight" >}} | float |
+| {{< prop "verticalDeviation" >}} | float |
+| {{< prop "horizontalBlurFilter" >}} | [BlurFilter](/vext/ref/fb/blurfilter) |
+| {{< prop "skyRenderEnable" >}} | bool |
+| {{< prop "enable" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PlanarReflectionComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PlanarReflectionComponentData {#constructor-0}
+> **PlanarReflectionComponentData**()
 
-| Constructor                                                                              | Description                                                                                                                                       |
-| ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| PlanarReflectionComponentData()                                                          | Create a new instance of this container type.                                                                                                     |
-| PlanarReflectionComponentData(PlanarReflectionComponentData other)                       | Create a reference copy of an instance of the same type.                                                                                          |
-| PlanarReflectionComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [PlanarReflectionComponentData](/vext/ref/fb/planarreflectioncomponentdata/).                      |
-| PlanarReflectionComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [PlanarReflectionComponentData](/vext/ref/fb/planarreflectioncomponentdata/).                    |
-| PlanarReflectionComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [PlanarReflectionComponentData](/vext/ref/fb/planarreflectioncomponentdata/).              |
-| PlanarReflectionComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PlanarReflectionComponentData](/vext/ref/fb/planarreflectioncomponentdata/). |
+Creates a new [PlanarReflectionComponentData](/vext/ref/fb/planarreflectioncomponentdata) frostbite instance.
 
-## Properties
+### PlanarReflectionComponentData {#constructor-1}
+> **PlanarReflectionComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                 | Type                     | Description |
-| -------------------- | ------------------------ | ----------- |
-| verticalBlurFilter   | [BlurFilter](/vext/ref/fb/blurfilter/) |             |
-| horizontalDeviation  | number                   |             |
-| groundHeight         | number                   |             |
-| verticalDeviation    | number                   |             |
-| horizontalBlurFilter | [BlurFilter](/vext/ref/fb/blurfilter/) |             |
-| skyRenderEnable      | bool                     |             |
-| enable               | bool                     |             |
-
-## Methods
-
-| Type                                                           | Name            | Parameters                                     |
-| -------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [PlanarReflectionComponentData](/vext/ref/fb/planarreflectioncomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PlanarReflectionComponentData](/vext/ref/fb/planarreflectioncomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PlanarReflectionComponentData](/vext/ref/fb/planarreflectioncomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PlanarReflectionComponentData {#constructor-2}
+> **PlanarReflectionComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [PlanarReflectionComponentData](/vext/ref/fb/planarreflectioncomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [PlanarReflectionComponentData](/vext/ref/fb/planarreflectioncomponentdata). |
+
+### PlanarReflectionComponentData {#constructor-3}
+> **PlanarReflectionComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [PlanarReflectionComponentData](/vext/ref/fb/planarreflectioncomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [PlanarReflectionComponentData](/vext/ref/fb/planarreflectioncomponentdata). |
+
+### PlanarReflectionComponentData {#constructor-4}
+> **PlanarReflectionComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [PlanarReflectionComponentData](/vext/ref/fb/planarreflectioncomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [PlanarReflectionComponentData](/vext/ref/fb/planarreflectioncomponentdata). |
+
+### PlanarReflectionComponentData {#constructor-5}
+> **PlanarReflectionComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PlanarReflectionComponentData](/vext/ref/fb/planarreflectioncomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PlanarReflectionComponentData](/vext/ref/fb/planarreflectioncomponentdata). |
+
+## Properties
+### {{% prop-heading "verticalBlurFilter" %}}
+> **[BlurFilter](/vext/ref/fb/blurfilter)**
+
+### {{% prop-heading "horizontalDeviation" %}}
+> **float**
+
+### {{% prop-heading "groundHeight" %}}
+> **float**
+
+### {{% prop-heading "verticalDeviation" %}}
+> **float**
+
+### {{% prop-heading "horizontalBlurFilter" %}}
+> **[BlurFilter](/vext/ref/fb/blurfilter)**
+
+### {{% prop-heading "skyRenderEnable" %}}
+> **bool**
+
+### {{% prop-heading "enable" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PlanarReflectionComponentData](/vext/ref/fb/planarreflectioncomponentdata) type.
+

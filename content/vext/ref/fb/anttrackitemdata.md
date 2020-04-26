@@ -1,46 +1,77 @@
 ---
 title: AntTrackItemData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AntTrackItemData](#constructor-0)**() |
+| **[AntTrackItemData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[AntTrackItemData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "controller" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "sequenceTrackIndex" >}} | int |
+| {{< prop "startTime" >}} | int |
+| {{< prop "numTicks" >}} | int |
+| {{< prop "resumeAtEnd" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AntTrackItemData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AntTrackItemData {#constructor-0}
+> **AntTrackItemData**()
 
-| Constructor                                                                 | Description                                                                                                             |
-| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| AntTrackItemData()                                                          | Create a new instance of this container type.                                                                           |
-| AntTrackItemData(AntTrackItemData other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| AntTrackItemData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AntTrackItemData](/vext/ref/fb/anttrackitemdata/). |
+Creates a new [AntTrackItemData](/vext/ref/fb/anttrackitemdata) frostbite instance.
 
-## Properties
+### AntTrackItemData {#constructor-1}
+> **AntTrackItemData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name               | Type             | Description |
-| ------------------ | ---------------- | ----------- |
-| controller         | [AntRef](/vext/ref/fb/antref/) |             |
-| sequenceTrackIndex | number           |             |
-| startTime          | number           |             |
-| numTicks           | number           |             |
-| resumeAtEnd        | bool             |             |
-
-## Methods
-
-| Type                                 | Name            | Parameters                                     |
-| ------------------------------------ | --------------- | ---------------------------------------------- |
-| [AntTrackItemData](/vext/ref/fb/anttrackitemdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [AntTrackItemData](/vext/ref/fb/anttrackitemdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [AntTrackItemData](/vext/ref/fb/anttrackitemdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### AntTrackItemData {#constructor-2}
+> **AntTrackItemData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AntTrackItemData](/vext/ref/fb/anttrackitemdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [AntTrackItemData](/vext/ref/fb/anttrackitemdata). |
+
+## Properties
+### {{% prop-heading "controller" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "sequenceTrackIndex" %}}
+> **int**
+
+### {{% prop-heading "startTime" %}}
+> **int**
+
+### {{% prop-heading "numTicks" %}}
+> **int**
+
+### {{% prop-heading "resumeAtEnd" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AntTrackItemData](/vext/ref/fb/anttrackitemdata) type.
+

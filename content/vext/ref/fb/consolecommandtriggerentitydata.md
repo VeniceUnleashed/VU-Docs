@@ -1,46 +1,98 @@
 ---
 title: ConsoleCommandTriggerEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ConsoleCommandTriggerEntityData](#constructor-0)**() |
+| **[ConsoleCommandTriggerEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ConsoleCommandTriggerEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[ConsoleCommandTriggerEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[ConsoleCommandTriggerEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[ConsoleCommandTriggerEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "commandName" >}} | string |
+| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ConsoleCommandTriggerEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ConsoleCommandTriggerEntityData {#constructor-0}
+> **ConsoleCommandTriggerEntityData**()
 
-| Constructor                                                                                | Description                                                                                                                                           |
-| ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ConsoleCommandTriggerEntityData()                                                          | Create a new instance of this container type.                                                                                                         |
-| ConsoleCommandTriggerEntityData(ConsoleCommandTriggerEntityData other)                     | Create a reference copy of an instance of the same type.                                                                                              |
-| ConsoleCommandTriggerEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [ConsoleCommandTriggerEntityData](/vext/ref/fb/consolecommandtriggerentitydata/).                            |
-| ConsoleCommandTriggerEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [ConsoleCommandTriggerEntityData](/vext/ref/fb/consolecommandtriggerentitydata/).                    |
-| ConsoleCommandTriggerEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [ConsoleCommandTriggerEntityData](/vext/ref/fb/consolecommandtriggerentitydata/).              |
-| ConsoleCommandTriggerEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ConsoleCommandTriggerEntityData](/vext/ref/fb/consolecommandtriggerentitydata/). |
+Creates a new [ConsoleCommandTriggerEntityData](/vext/ref/fb/consolecommandtriggerentitydata) frostbite instance.
 
-## Properties
+### ConsoleCommandTriggerEntityData {#constructor-1}
+> **ConsoleCommandTriggerEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name        | Type           | Description |
-| ----------- | -------------- | ----------- |
-| commandName | string         |             |
-| realm       | [Realm](/vext/ref/fb/realm/) |             |
-
-## Methods
-
-| Type                                                               | Name            | Parameters                                     |
-| ------------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [ConsoleCommandTriggerEntityData](/vext/ref/fb/consolecommandtriggerentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ConsoleCommandTriggerEntityData](/vext/ref/fb/consolecommandtriggerentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ConsoleCommandTriggerEntityData](/vext/ref/fb/consolecommandtriggerentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ConsoleCommandTriggerEntityData {#constructor-2}
+> **ConsoleCommandTriggerEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [ConsoleCommandTriggerEntityData](/vext/ref/fb/consolecommandtriggerentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [ConsoleCommandTriggerEntityData](/vext/ref/fb/consolecommandtriggerentitydata). |
+
+### ConsoleCommandTriggerEntityData {#constructor-3}
+> **ConsoleCommandTriggerEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [ConsoleCommandTriggerEntityData](/vext/ref/fb/consolecommandtriggerentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [ConsoleCommandTriggerEntityData](/vext/ref/fb/consolecommandtriggerentitydata). |
+
+### ConsoleCommandTriggerEntityData {#constructor-4}
+> **ConsoleCommandTriggerEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [ConsoleCommandTriggerEntityData](/vext/ref/fb/consolecommandtriggerentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [ConsoleCommandTriggerEntityData](/vext/ref/fb/consolecommandtriggerentitydata). |
+
+### ConsoleCommandTriggerEntityData {#constructor-5}
+> **ConsoleCommandTriggerEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ConsoleCommandTriggerEntityData](/vext/ref/fb/consolecommandtriggerentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ConsoleCommandTriggerEntityData](/vext/ref/fb/consolecommandtriggerentitydata). |
+
+## Properties
+### {{% prop-heading "commandName" %}}
+> **string**
+
+### {{% prop-heading "realm" %}}
+> **[Realm](/vext/ref/fb/realm)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ConsoleCommandTriggerEntityData](/vext/ref/fb/consolecommandtriggerentitydata) type.
+

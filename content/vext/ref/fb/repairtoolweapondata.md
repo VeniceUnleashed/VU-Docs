@@ -1,45 +1,94 @@
 ---
 title: RepairToolWeaponData
 ---
-### Base Classes
 
-[PowerToolWeaponData](/vext/ref/fb/powertoolweapondata/)
+Inherits from 
+[PowerToolWeaponData](/vext/ref/fb/powertoolweapondata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[RepairToolWeaponData](#constructor-0)**() |
+| **[RepairToolWeaponData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[RepairToolWeaponData](#constructor-2)**(other: [PowerToolWeaponData](/vext/ref/fb/powertoolweapondata)) |
+| **[RepairToolWeaponData](#constructor-3)**(other: [WeaponData](/vext/ref/fb/weapondata)) |
+| **[RepairToolWeaponData](#constructor-4)**(other: [ToolData](/vext/ref/fb/tooldata)) |
+| **[RepairToolWeaponData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "rechargeSpeed" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "RepairToolWeaponData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### RepairToolWeaponData {#constructor-0}
+> **RepairToolWeaponData**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| RepairToolWeaponData()                                                          | Create a new instance of this container type.                                                                                   |
-| RepairToolWeaponData(RepairToolWeaponData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| RepairToolWeaponData([PowerToolWeaponData](/vext/ref/fb/powertoolweapondata/) other)          | Upcast an instance of type [PowerToolWeaponData](/vext/ref/fb/powertoolweapondata/) to [RepairToolWeaponData](/vext/ref/fb/repairtoolweapondata/).          |
-| RepairToolWeaponData([WeaponData](/vext/ref/fb/weapondata/) other)                            | Upcast an instance of type [WeaponData](/vext/ref/fb/weapondata/) to [RepairToolWeaponData](/vext/ref/fb/repairtoolweapondata/).                            |
-| RepairToolWeaponData([ToolData](/vext/ref/fb/tooldata/) other)                                | Upcast an instance of type [ToolData](/vext/ref/fb/tooldata/) to [RepairToolWeaponData](/vext/ref/fb/repairtoolweapondata/).                                |
-| RepairToolWeaponData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RepairToolWeaponData](/vext/ref/fb/repairtoolweapondata/). |
+Creates a new [RepairToolWeaponData](/vext/ref/fb/repairtoolweapondata) frostbite instance.
 
-## Properties
+### RepairToolWeaponData {#constructor-1}
+> **RepairToolWeaponData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name          | Type   | Description |
-| ------------- | ------ | ----------- |
-| rechargeSpeed | number |             |
-
-## Methods
-
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [RepairToolWeaponData](/vext/ref/fb/repairtoolweapondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [RepairToolWeaponData](/vext/ref/fb/repairtoolweapondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [RepairToolWeaponData](/vext/ref/fb/repairtoolweapondata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### RepairToolWeaponData {#constructor-2}
+> **RepairToolWeaponData**(other: [PowerToolWeaponData](/vext/ref/fb/powertoolweapondata))
+
+Casts an instance of type [PowerToolWeaponData](/vext/ref/fb/powertoolweapondata) to [RepairToolWeaponData](/vext/ref/fb/repairtoolweapondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [PowerToolWeaponData](/vext/ref/fb/powertoolweapondata) | The instance to cast to [RepairToolWeaponData](/vext/ref/fb/repairtoolweapondata). |
+
+### RepairToolWeaponData {#constructor-3}
+> **RepairToolWeaponData**(other: [WeaponData](/vext/ref/fb/weapondata))
+
+Casts an instance of type [WeaponData](/vext/ref/fb/weapondata) to [RepairToolWeaponData](/vext/ref/fb/repairtoolweapondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [WeaponData](/vext/ref/fb/weapondata) | The instance to cast to [RepairToolWeaponData](/vext/ref/fb/repairtoolweapondata). |
+
+### RepairToolWeaponData {#constructor-4}
+> **RepairToolWeaponData**(other: [ToolData](/vext/ref/fb/tooldata))
+
+Casts an instance of type [ToolData](/vext/ref/fb/tooldata) to [RepairToolWeaponData](/vext/ref/fb/repairtoolweapondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ToolData](/vext/ref/fb/tooldata) | The instance to cast to [RepairToolWeaponData](/vext/ref/fb/repairtoolweapondata). |
+
+### RepairToolWeaponData {#constructor-5}
+> **RepairToolWeaponData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RepairToolWeaponData](/vext/ref/fb/repairtoolweapondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [RepairToolWeaponData](/vext/ref/fb/repairtoolweapondata). |
+
+## Properties
+### {{% prop-heading "rechargeSpeed" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [RepairToolWeaponData](/vext/ref/fb/repairtoolweapondata) type.
+

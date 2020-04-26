@@ -1,15 +1,12 @@
 ---
 title: PersistentValueDataType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **PersistentValueDataType_Decimal** | Value: **0** |
+| **PersistentValueDataType_Integer** | Value: **1** |
+| **PersistentValueDataType_String** | Value: **2** |
+| **PersistentValueDataType_HighPrecisionDecimal** | Value: **3** |
 
-| Name                                          | Value | Description |
-| --------------------------------------------- | ----- | ----------- |
-| PersistentValueDataType\_Decimal              | 0     |             |
-| PersistentValueDataType\_Integer              | 1     |             |
-| PersistentValueDataType\_String               | 2     |             |
-| PersistentValueDataType\_HighPrecisionDecimal | 3     |             |

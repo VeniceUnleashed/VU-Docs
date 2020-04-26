@@ -1,48 +1,92 @@
 ---
 title: PhysicsNodeData
 ---
-### Base Classes
 
-[AudioGraphNodeData](/vext/ref/fb/audiographnodedata/)
+Inherits from 
+[AudioGraphNodeData](/vext/ref/fb/audiographnodedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PhysicsNodeData](#constructor-0)**() |
+| **[PhysicsNodeData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PhysicsNodeData](#constructor-2)**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata)) |
+| **[PhysicsNodeData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "distance" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "velocity" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "relativeVelocity" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "azimuth" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "elevationAngle" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "entries" >}} | [PhysicsEntry](/vext/ref/fb/physicsentry)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PhysicsNodeData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PhysicsNodeData {#constructor-0}
+> **PhysicsNodeData**()
 
-| Constructor                                                                | Description                                                                                                           |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| PhysicsNodeData()                                                          | Create a new instance of this container type.                                                                         |
-| PhysicsNodeData(PhysicsNodeData other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| PhysicsNodeData([AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) other)            | Upcast an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) to [PhysicsNodeData](/vext/ref/fb/physicsnodedata/).            |
-| PhysicsNodeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PhysicsNodeData](/vext/ref/fb/physicsnodedata/). |
+Creates a new [PhysicsNodeData](/vext/ref/fb/physicsnodedata) frostbite instance.
 
-## Properties
+### PhysicsNodeData {#constructor-1}
+> **PhysicsNodeData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name             | Type                                     | Description |
-| ---------------- | ---------------------------------------- | ----------- |
-| distance         | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| velocity         | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| relativeVelocity | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| azimuth          | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| elevationAngle   | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| entries          | [PhysicsEntry](/vext/ref/fb/physicsentry/)\[\]         |             |
-
-## Methods
-
-| Type                               | Name            | Parameters                                     |
-| ---------------------------------- | --------------- | ---------------------------------------------- |
-| [PhysicsNodeData](/vext/ref/fb/physicsnodedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PhysicsNodeData](/vext/ref/fb/physicsnodedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PhysicsNodeData](/vext/ref/fb/physicsnodedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PhysicsNodeData {#constructor-2}
+> **PhysicsNodeData**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata))
+
+Casts an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) to [PhysicsNodeData](/vext/ref/fb/physicsnodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) | The instance to cast to [PhysicsNodeData](/vext/ref/fb/physicsnodedata). |
+
+### PhysicsNodeData {#constructor-3}
+> **PhysicsNodeData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PhysicsNodeData](/vext/ref/fb/physicsnodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PhysicsNodeData](/vext/ref/fb/physicsnodedata). |
+
+## Properties
+### {{% prop-heading "distance" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "velocity" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "relativeVelocity" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "azimuth" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "elevationAngle" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "entries" %}}
+> **[PhysicsEntry](/vext/ref/fb/physicsentry)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PhysicsNodeData](/vext/ref/fb/physicsnodedata) type.
+

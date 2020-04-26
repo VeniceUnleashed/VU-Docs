@@ -1,43 +1,72 @@
 ---
 title: ShaderDatabaseAsset
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ShaderDatabaseAsset](#constructor-0)**() |
+| **[ShaderDatabaseAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ShaderDatabaseAsset](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[ShaderDatabaseAsset](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "levelName" >}} | string |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ShaderDatabaseAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ShaderDatabaseAsset {#constructor-0}
+> **ShaderDatabaseAsset**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| ShaderDatabaseAsset()                                                          | Create a new instance of this container type.                                                                                 |
-| ShaderDatabaseAsset(ShaderDatabaseAsset other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| ShaderDatabaseAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [ShaderDatabaseAsset](/vext/ref/fb/shaderdatabaseasset/).                                      |
-| ShaderDatabaseAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ShaderDatabaseAsset](/vext/ref/fb/shaderdatabaseasset/). |
+Creates a new [ShaderDatabaseAsset](/vext/ref/fb/shaderdatabaseasset) frostbite instance.
 
-## Properties
+### ShaderDatabaseAsset {#constructor-1}
+> **ShaderDatabaseAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name      | Type   | Description |
-| --------- | ------ | ----------- |
-| levelName | string |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [ShaderDatabaseAsset](/vext/ref/fb/shaderdatabaseasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ShaderDatabaseAsset](/vext/ref/fb/shaderdatabaseasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ShaderDatabaseAsset](/vext/ref/fb/shaderdatabaseasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ShaderDatabaseAsset {#constructor-2}
+> **ShaderDatabaseAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [ShaderDatabaseAsset](/vext/ref/fb/shaderdatabaseasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [ShaderDatabaseAsset](/vext/ref/fb/shaderdatabaseasset). |
+
+### ShaderDatabaseAsset {#constructor-3}
+> **ShaderDatabaseAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ShaderDatabaseAsset](/vext/ref/fb/shaderdatabaseasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ShaderDatabaseAsset](/vext/ref/fb/shaderdatabaseasset). |
+
+## Properties
+### {{% prop-heading "levelName" %}}
+> **string**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ShaderDatabaseAsset](/vext/ref/fb/shaderdatabaseasset) type.
+

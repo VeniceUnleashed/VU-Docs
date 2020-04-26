@@ -1,46 +1,105 @@
 ---
 title: TrackComponentData
 ---
-### Base Classes
 
-[MeshComponentData](/vext/ref/fb/meshcomponentdata/)
+Inherits from 
+[MeshComponentData](/vext/ref/fb/meshcomponentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[TrackComponentData](#constructor-0)**() |
+| **[TrackComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[TrackComponentData](#constructor-2)**(other: [MeshComponentData](/vext/ref/fb/meshcomponentdata)) |
+| **[TrackComponentData](#constructor-3)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[TrackComponentData](#constructor-4)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[TrackComponentData](#constructor-5)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[TrackComponentData](#constructor-6)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "scrollFactor" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "TrackComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### TrackComponentData {#constructor-0}
+> **TrackComponentData**()
 
-| Constructor                                                                   | Description                                                                                                                 |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| TrackComponentData()                                                          | Create a new instance of this container type.                                                                               |
-| TrackComponentData(TrackComponentData other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| TrackComponentData([MeshComponentData](/vext/ref/fb/meshcomponentdata/) other)              | Upcast an instance of type [MeshComponentData](/vext/ref/fb/meshcomponentdata/) to [TrackComponentData](/vext/ref/fb/trackcomponentdata/).              |
-| TrackComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [TrackComponentData](/vext/ref/fb/trackcomponentdata/).                      |
-| TrackComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [TrackComponentData](/vext/ref/fb/trackcomponentdata/).                    |
-| TrackComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [TrackComponentData](/vext/ref/fb/trackcomponentdata/).              |
-| TrackComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TrackComponentData](/vext/ref/fb/trackcomponentdata/). |
+Creates a new [TrackComponentData](/vext/ref/fb/trackcomponentdata) frostbite instance.
 
-## Properties
+### TrackComponentData {#constructor-1}
+> **TrackComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name         | Type   | Description |
-| ------------ | ------ | ----------- |
-| scrollFactor | number |             |
-
-## Methods
-
-| Type                                     | Name            | Parameters                                     |
-| ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [TrackComponentData](/vext/ref/fb/trackcomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [TrackComponentData](/vext/ref/fb/trackcomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [TrackComponentData](/vext/ref/fb/trackcomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### TrackComponentData {#constructor-2}
+> **TrackComponentData**(other: [MeshComponentData](/vext/ref/fb/meshcomponentdata))
+
+Casts an instance of type [MeshComponentData](/vext/ref/fb/meshcomponentdata) to [TrackComponentData](/vext/ref/fb/trackcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [MeshComponentData](/vext/ref/fb/meshcomponentdata) | The instance to cast to [TrackComponentData](/vext/ref/fb/trackcomponentdata). |
+
+### TrackComponentData {#constructor-3}
+> **TrackComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [TrackComponentData](/vext/ref/fb/trackcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [TrackComponentData](/vext/ref/fb/trackcomponentdata). |
+
+### TrackComponentData {#constructor-4}
+> **TrackComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [TrackComponentData](/vext/ref/fb/trackcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [TrackComponentData](/vext/ref/fb/trackcomponentdata). |
+
+### TrackComponentData {#constructor-5}
+> **TrackComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [TrackComponentData](/vext/ref/fb/trackcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [TrackComponentData](/vext/ref/fb/trackcomponentdata). |
+
+### TrackComponentData {#constructor-6}
+> **TrackComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TrackComponentData](/vext/ref/fb/trackcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [TrackComponentData](/vext/ref/fb/trackcomponentdata). |
+
+## Properties
+### {{% prop-heading "scrollFactor" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [TrackComponentData](/vext/ref/fb/trackcomponentdata) type.
+

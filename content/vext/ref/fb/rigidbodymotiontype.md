@@ -1,16 +1,13 @@
 ---
 title: RigidBodyMotionType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **RigidBodyMotionType_Invalid** | Value: **0** |
+| **RigidBodyMotionType_Fixed** | Value: **1** |
+| **RigidBodyMotionType_Keyframed** | Value: **2** |
+| **RigidBodyMotionType_Dynamic** | Value: **3** |
+| **RigidBodyMotionType_Size** | Value: **4** |
 
-| Name                           | Value | Description |
-| ------------------------------ | ----- | ----------- |
-| RigidBodyMotionType\_Invalid   | 0     |             |
-| RigidBodyMotionType\_Fixed     | 1     |             |
-| RigidBodyMotionType\_Keyframed | 2     |             |
-| RigidBodyMotionType\_Dynamic   | 3     |             |
-| RigidBodyMotionType\_Size      | 4     |             |

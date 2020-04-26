@@ -1,50 +1,107 @@
 ---
 title: PerformanceProfileState
 ---
-### Base Classes
 
-[MetricState](/vext/ref/fb/metricstate/)
+Inherits from 
+[MetricState](/vext/ref/fb/metricstate)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PerformanceProfileState](#constructor-0)**() |
+| **[PerformanceProfileState](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PerformanceProfileState](#constructor-2)**(other: [MetricState](/vext/ref/fb/metricstate)) |
+| **[PerformanceProfileState](#constructor-3)**(other: [MetricEvent](/vext/ref/fb/metricevent)) |
+| **[PerformanceProfileState](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "processorCount" >}} | int |
+| {{< prop "processorCoreCount" >}} | int |
+| {{< prop "processorClock" >}} | int |
+| {{< prop "totalMemMB" >}} | int |
+| {{< prop "gpuMemMB" >}} | int |
+| {{< prop "graphicAdapterName" >}} | string |
+| {{< prop "platform" >}} | string |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PerformanceProfileState" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PerformanceProfileState {#constructor-0}
+> **PerformanceProfileState**()
 
-| Constructor                                                                        | Description                                                                                                                           |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| PerformanceProfileState()                                                          | Create a new instance of this container type.                                                                                         |
-| PerformanceProfileState(PerformanceProfileState other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| PerformanceProfileState([MetricState](/vext/ref/fb/metricstate/) other)                          | Upcast an instance of type [MetricState](/vext/ref/fb/metricstate/) to [PerformanceProfileState](/vext/ref/fb/performanceprofilestate/).                          |
-| PerformanceProfileState([MetricEvent](/vext/ref/fb/metricevent/) other)                          | Upcast an instance of type [MetricEvent](/vext/ref/fb/metricevent/) to [PerformanceProfileState](/vext/ref/fb/performanceprofilestate/).                          |
-| PerformanceProfileState([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PerformanceProfileState](/vext/ref/fb/performanceprofilestate/). |
+Creates a new [PerformanceProfileState](/vext/ref/fb/performanceprofilestate) frostbite instance.
 
-## Properties
+### PerformanceProfileState {#constructor-1}
+> **PerformanceProfileState**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name               | Type   | Description |
-| ------------------ | ------ | ----------- |
-| processorCount     | number |             |
-| processorCoreCount | number |             |
-| processorClock     | number |             |
-| totalMemMB         | number |             |
-| gpuMemMB           | number |             |
-| graphicAdapterName | string |             |
-| platform           | string |             |
-
-## Methods
-
-| Type                                               | Name            | Parameters                                     |
-| -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [PerformanceProfileState](/vext/ref/fb/performanceprofilestate/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PerformanceProfileState](/vext/ref/fb/performanceprofilestate/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PerformanceProfileState](/vext/ref/fb/performanceprofilestate) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PerformanceProfileState {#constructor-2}
+> **PerformanceProfileState**(other: [MetricState](/vext/ref/fb/metricstate))
+
+Casts an instance of type [MetricState](/vext/ref/fb/metricstate) to [PerformanceProfileState](/vext/ref/fb/performanceprofilestate). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [MetricState](/vext/ref/fb/metricstate) | The instance to cast to [PerformanceProfileState](/vext/ref/fb/performanceprofilestate). |
+
+### PerformanceProfileState {#constructor-3}
+> **PerformanceProfileState**(other: [MetricEvent](/vext/ref/fb/metricevent))
+
+Casts an instance of type [MetricEvent](/vext/ref/fb/metricevent) to [PerformanceProfileState](/vext/ref/fb/performanceprofilestate). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [MetricEvent](/vext/ref/fb/metricevent) | The instance to cast to [PerformanceProfileState](/vext/ref/fb/performanceprofilestate). |
+
+### PerformanceProfileState {#constructor-4}
+> **PerformanceProfileState**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PerformanceProfileState](/vext/ref/fb/performanceprofilestate). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PerformanceProfileState](/vext/ref/fb/performanceprofilestate). |
+
+## Properties
+### {{% prop-heading "processorCount" %}}
+> **int**
+
+### {{% prop-heading "processorCoreCount" %}}
+> **int**
+
+### {{% prop-heading "processorClock" %}}
+> **int**
+
+### {{% prop-heading "totalMemMB" %}}
+> **int**
+
+### {{% prop-heading "gpuMemMB" %}}
+> **int**
+
+### {{% prop-heading "graphicAdapterName" %}}
+> **string**
+
+### {{% prop-heading "platform" %}}
+> **string**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PerformanceProfileState](/vext/ref/fb/performanceprofilestate) type.
+

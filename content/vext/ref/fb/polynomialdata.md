@@ -1,47 +1,95 @@
 ---
 title: PolynomialData
 ---
-### Base Classes
 
-[EvaluatorData](/vext/ref/fb/evaluatordata/)
+Inherits from 
+[EvaluatorData](/vext/ref/fb/evaluatordata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PolynomialData](#constructor-0)**() |
+| **[PolynomialData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PolynomialData](#constructor-2)**(other: [EvaluatorData](/vext/ref/fb/evaluatordata)) |
+| **[PolynomialData](#constructor-3)**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata)) |
+| **[PolynomialData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "coefficients" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "scaleValue" >}} | float |
+| {{< prop "minClamp" >}} | float |
+| {{< prop "maxClamp" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PolynomialData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PolynomialData {#constructor-0}
+> **PolynomialData**()
 
-| Constructor                                                               | Description                                                                                                         |
-| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| PolynomialData()                                                          | Create a new instance of this container type.                                                                       |
-| PolynomialData(PolynomialData other)                                      | Create a reference copy of an instance of the same type.                                                            |
-| PolynomialData([EvaluatorData](/vext/ref/fb/evaluatordata/) other)                      | Upcast an instance of type [EvaluatorData](/vext/ref/fb/evaluatordata/) to [PolynomialData](/vext/ref/fb/polynomialdata/).                      |
-| PolynomialData([EmitterComponentData](/vext/ref/fb/emittercomponentdata/) other)        | Upcast an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata/) to [PolynomialData](/vext/ref/fb/polynomialdata/).        |
-| PolynomialData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PolynomialData](/vext/ref/fb/polynomialdata/). |
+Creates a new [PolynomialData](/vext/ref/fb/polynomialdata) frostbite instance.
 
-## Properties
+### PolynomialData {#constructor-1}
+> **PolynomialData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name         | Type                              | Description |
-| ------------ | --------------------------------- | ----------- |
-| coefficients | [Vec4](/vext/ref/shared/class/vec4) |             |
-| scaleValue   | number                            |             |
-| minClamp     | number                            |             |
-| maxClamp     | number                            |             |
-
-## Methods
-
-| Type                             | Name            | Parameters                                     |
-| -------------------------------- | --------------- | ---------------------------------------------- |
-| [PolynomialData](/vext/ref/fb/polynomialdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PolynomialData](/vext/ref/fb/polynomialdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PolynomialData](/vext/ref/fb/polynomialdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PolynomialData {#constructor-2}
+> **PolynomialData**(other: [EvaluatorData](/vext/ref/fb/evaluatordata))
+
+Casts an instance of type [EvaluatorData](/vext/ref/fb/evaluatordata) to [PolynomialData](/vext/ref/fb/polynomialdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EvaluatorData](/vext/ref/fb/evaluatordata) | The instance to cast to [PolynomialData](/vext/ref/fb/polynomialdata). |
+
+### PolynomialData {#constructor-3}
+> **PolynomialData**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata))
+
+Casts an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata) to [PolynomialData](/vext/ref/fb/polynomialdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EmitterComponentData](/vext/ref/fb/emittercomponentdata) | The instance to cast to [PolynomialData](/vext/ref/fb/polynomialdata). |
+
+### PolynomialData {#constructor-4}
+> **PolynomialData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PolynomialData](/vext/ref/fb/polynomialdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PolynomialData](/vext/ref/fb/polynomialdata). |
+
+## Properties
+### {{% prop-heading "coefficients" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "scaleValue" %}}
+> **float**
+
+### {{% prop-heading "minClamp" %}}
+> **float**
+
+### {{% prop-heading "maxClamp" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PolynomialData](/vext/ref/fb/polynomialdata) type.
+

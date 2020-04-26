@@ -1,27 +1,24 @@
 ---
 title: CharacterStateType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **CharacterStateType_OnGround** | Value: **0** |
+| **CharacterStateType_Jumping** | Value: **1** |
+| **CharacterStateType_InAir** | Value: **2** |
+| **CharacterStateType_Climbing** | Value: **3** |
+| **CharacterStateType_Falling** | Value: **4** |
+| **CharacterStateType_User_0** | Value: **5** |
+| **CharacterStateType_Parachute** | Value: **5** |
+| **CharacterStateType_User_1** | Value: **6** |
+| **CharacterStateType_Swimming** | Value: **6** |
+| **CharacterStateType_User_2** | Value: **7** |
+| **CharacterStateType_AnimationControlled** | Value: **7** |
+| **CharacterStateType_User_3** | Value: **8** |
+| **CharacterStateType_Sliding** | Value: **8** |
+| **CharacterStateType_User_4** | Value: **9** |
+| **CharacterStateType_User_5** | Value: **10** |
+| **CharacterStateType_StateCount** | Value: **11** |
 
-| Name                                    | Value | Description |
-| --------------------------------------- | ----- | ----------- |
-| CharacterStateType\_OnGround            | 0     |             |
-| CharacterStateType\_Jumping             | 1     |             |
-| CharacterStateType\_InAir               | 2     |             |
-| CharacterStateType\_Climbing            | 3     |             |
-| CharacterStateType\_Falling             | 4     |             |
-| CharacterStateType\_User\_0             | 5     |             |
-| CharacterStateType\_Parachute           | 5     |             |
-| CharacterStateType\_User\_1             | 6     |             |
-| CharacterStateType\_Swimming            | 6     |             |
-| CharacterStateType\_User\_2             | 7     |             |
-| CharacterStateType\_AnimationControlled | 7     |             |
-| CharacterStateType\_User\_3             | 8     |             |
-| CharacterStateType\_Sliding             | 8     |             |
-| CharacterStateType\_User\_4             | 9     |             |
-| CharacterStateType\_User\_5             | 10    |             |
-| CharacterStateType\_StateCount          | 11    |             |

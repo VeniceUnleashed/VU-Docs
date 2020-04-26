@@ -1,44 +1,83 @@
 ---
 title: UpdateAgeData
 ---
-### Base Classes
 
-[ProcessorData](/vext/ref/fb/processordata/)
+Inherits from 
+[ProcessorData](/vext/ref/fb/processordata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UpdateAgeData](#constructor-0)**() |
+| **[UpdateAgeData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UpdateAgeData](#constructor-2)**(other: [ProcessorData](/vext/ref/fb/processordata)) |
+| **[UpdateAgeData](#constructor-3)**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata)) |
+| **[UpdateAgeData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "lifetime" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UpdateAgeData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UpdateAgeData {#constructor-0}
+> **UpdateAgeData**()
 
-| Constructor                                                              | Description                                                                                                       |
-| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| UpdateAgeData()                                                          | Create a new instance of this container type.                                                                     |
-| UpdateAgeData(UpdateAgeData other)                                       | Create a reference copy of an instance of the same type.                                                          |
-| UpdateAgeData([ProcessorData](/vext/ref/fb/processordata/) other)                      | Upcast an instance of type [ProcessorData](/vext/ref/fb/processordata/) to [UpdateAgeData](/vext/ref/fb/updateagedata/).                      |
-| UpdateAgeData([EmitterComponentData](/vext/ref/fb/emittercomponentdata/) other)        | Upcast an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata/) to [UpdateAgeData](/vext/ref/fb/updateagedata/).        |
-| UpdateAgeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UpdateAgeData](/vext/ref/fb/updateagedata/). |
+Creates a new [UpdateAgeData](/vext/ref/fb/updateagedata) frostbite instance.
 
-## Properties
+### UpdateAgeData {#constructor-1}
+> **UpdateAgeData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name     | Type   | Description |
-| -------- | ------ | ----------- |
-| lifetime | number |             |
-
-## Methods
-
-| Type                           | Name            | Parameters                                     |
-| ------------------------------ | --------------- | ---------------------------------------------- |
-| [UpdateAgeData](/vext/ref/fb/updateagedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UpdateAgeData](/vext/ref/fb/updateagedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UpdateAgeData](/vext/ref/fb/updateagedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UpdateAgeData {#constructor-2}
+> **UpdateAgeData**(other: [ProcessorData](/vext/ref/fb/processordata))
+
+Casts an instance of type [ProcessorData](/vext/ref/fb/processordata) to [UpdateAgeData](/vext/ref/fb/updateagedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ProcessorData](/vext/ref/fb/processordata) | The instance to cast to [UpdateAgeData](/vext/ref/fb/updateagedata). |
+
+### UpdateAgeData {#constructor-3}
+> **UpdateAgeData**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata))
+
+Casts an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata) to [UpdateAgeData](/vext/ref/fb/updateagedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EmitterComponentData](/vext/ref/fb/emittercomponentdata) | The instance to cast to [UpdateAgeData](/vext/ref/fb/updateagedata). |
+
+### UpdateAgeData {#constructor-4}
+> **UpdateAgeData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UpdateAgeData](/vext/ref/fb/updateagedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UpdateAgeData](/vext/ref/fb/updateagedata). |
+
+## Properties
+### {{% prop-heading "lifetime" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UpdateAgeData](/vext/ref/fb/updateagedata) type.
+

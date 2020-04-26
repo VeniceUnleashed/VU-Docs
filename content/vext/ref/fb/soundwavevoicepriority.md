@@ -1,16 +1,13 @@
 ---
 title: SoundWaveVoicePriority
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **SoundWaveVoicePriority_Unspecified** | Value: **0** |
+| **SoundWaveVoicePriority_Low** | Value: **1** |
+| **SoundWaveVoicePriority_Normal** | Value: **2** |
+| **SoundWaveVoicePriority_High** | Value: **3** |
+| **SoundWaveVoicePriority_Permanent** | Value: **4** |
 
-| Name                                | Value | Description |
-| ----------------------------------- | ----- | ----------- |
-| SoundWaveVoicePriority\_Unspecified | 0     |             |
-| SoundWaveVoicePriority\_Low         | 1     |             |
-| SoundWaveVoicePriority\_Normal      | 2     |             |
-| SoundWaveVoicePriority\_High        | 3     |             |
-| SoundWaveVoicePriority\_Permanent   | 4     |             |

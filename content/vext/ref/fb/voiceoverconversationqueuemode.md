@@ -1,14 +1,11 @@
 ---
 title: VoiceOverConversationQueueMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **VoiceOverConversationQueueMode_Always** | Value: **0** |
+| **VoiceOverConversationQueueMode_Never** | Value: **1** |
+| **VoiceOverConversationQueueMode_SamePriority** | Value: **2** |
 
-| Name                                         | Value | Description |
-| -------------------------------------------- | ----- | ----------- |
-| VoiceOverConversationQueueMode\_Always       | 0     |             |
-| VoiceOverConversationQueueMode\_Never        | 1     |             |
-| VoiceOverConversationQueueMode\_SamePriority | 2     |             |

@@ -1,14 +1,11 @@
 ---
 title: VoiceOverWaveNameTranslation
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **VoiceOverWaveNameTranslation_FullName** | Value: **0** |
+| **VoiceOverWaveNameTranslation_PathOnly** | Value: **1** |
+| **VoiceOverWaveNameTranslation_NameOnly** | Value: **2** |
 
-| Name                                   | Value | Description |
-| -------------------------------------- | ----- | ----------- |
-| VoiceOverWaveNameTranslation\_FullName | 0     |             |
-| VoiceOverWaveNameTranslation\_PathOnly | 1     |             |
-| VoiceOverWaveNameTranslation\_NameOnly | 2     |             |

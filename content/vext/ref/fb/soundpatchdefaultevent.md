@@ -1,15 +1,12 @@
 ---
 title: SoundPatchDefaultEvent
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **SoundPatchDefaultEvent_Start** | Value: **0** |
+| **SoundPatchDefaultEvent_Stop** | Value: **1** |
+| **SoundPatchDefaultEvent_EnterScope** | Value: **2** |
+| **SoundPatchDefaultEvent_ForceInit** | Value: **3** |
 
-| Name                               | Value | Description |
-| ---------------------------------- | ----- | ----------- |
-| SoundPatchDefaultEvent\_Start      | 0     |             |
-| SoundPatchDefaultEvent\_Stop       | 1     |             |
-| SoundPatchDefaultEvent\_EnterScope | 2     |             |
-| SoundPatchDefaultEvent\_ForceInit  | 3     |             |

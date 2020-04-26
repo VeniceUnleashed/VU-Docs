@@ -1,14 +1,11 @@
 ---
 title: VoiceOverLabelCompareMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **VoiceOverLabelCompareMode_Any** | Value: **0** |
+| **VoiceOverLabelCompareMode_All** | Value: **1** |
+| **VoiceOverLabelCompareMode_One** | Value: **2** |
 
-| Name                           | Value | Description |
-| ------------------------------ | ----- | ----------- |
-| VoiceOverLabelCompareMode\_Any | 0     |             |
-| VoiceOverLabelCompareMode\_All | 1     |             |
-| VoiceOverLabelCompareMode\_One | 2     |             |

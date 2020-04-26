@@ -1,43 +1,65 @@
 ---
 title: PersistentValueTemplate
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PersistentValueTemplate](#constructor-0)**() |
+| **[PersistentValueTemplate](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PersistentValueTemplate](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "data" >}} | [PersistentValueTemplateData](/vext/ref/fb/persistentvaluetemplatedata) |
+| {{< prop "derivedFormulaRefs" >}} | [AbstractPersistentStatRef](/vext/ref/fb/abstractpersistentstatref)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PersistentValueTemplate" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PersistentValueTemplate {#constructor-0}
+> **PersistentValueTemplate**()
 
-| Constructor                                                                        | Description                                                                                                                           |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| PersistentValueTemplate()                                                          | Create a new instance of this container type.                                                                                         |
-| PersistentValueTemplate(PersistentValueTemplate other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| PersistentValueTemplate([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PersistentValueTemplate](/vext/ref/fb/persistentvaluetemplate/). |
+Creates a new [PersistentValueTemplate](/vext/ref/fb/persistentvaluetemplate) frostbite instance.
 
-## Properties
+### PersistentValueTemplate {#constructor-1}
+> **PersistentValueTemplate**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name               | Type                                                       | Description |
-| ------------------ | ---------------------------------------------------------- | ----------- |
-| data               | [PersistentValueTemplateData](/vext/ref/fb/persistentvaluetemplatedata/) |             |
-| derivedFormulaRefs | [AbstractPersistentStatRef](/vext/ref/fb/abstractpersistentstatref/)\[\] |             |
-
-## Methods
-
-| Type                                               | Name            | Parameters                                     |
-| -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [PersistentValueTemplate](/vext/ref/fb/persistentvaluetemplate/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PersistentValueTemplate](/vext/ref/fb/persistentvaluetemplate/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PersistentValueTemplate](/vext/ref/fb/persistentvaluetemplate) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PersistentValueTemplate {#constructor-2}
+> **PersistentValueTemplate**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PersistentValueTemplate](/vext/ref/fb/persistentvaluetemplate). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PersistentValueTemplate](/vext/ref/fb/persistentvaluetemplate). |
+
+## Properties
+### {{% prop-heading "data" %}}
+> **[PersistentValueTemplateData](/vext/ref/fb/persistentvaluetemplatedata)**
+
+### {{% prop-heading "derivedFormulaRefs" %}}
+> **[AbstractPersistentStatRef](/vext/ref/fb/abstractpersistentstatref)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PersistentValueTemplate](/vext/ref/fb/persistentvaluetemplate) type.
+

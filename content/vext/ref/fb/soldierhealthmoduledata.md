@@ -1,36 +1,52 @@
 ---
 title: SoldierHealthModuleData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SoldierHealthModuleData](#constructor-0)**() |
+| **[SoldierHealthModuleData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SoldierHealthModuleData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SoldierHealthModuleData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SoldierHealthModuleData {#constructor-0}
+> **SoldierHealthModuleData**()
 
-| Constructor                                                                        | Description                                                                                                                           |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| SoldierHealthModuleData()                                                          | Create a new instance of this container type.                                                                                         |
-| SoldierHealthModuleData(SoldierHealthModuleData other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| SoldierHealthModuleData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoldierHealthModuleData](/vext/ref/fb/soldierhealthmoduledata/). |
+Creates a new [SoldierHealthModuleData](/vext/ref/fb/soldierhealthmoduledata) frostbite instance.
 
-## Methods
+### SoldierHealthModuleData {#constructor-1}
+> **SoldierHealthModuleData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                               | Name            | Parameters                                     |
-| -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [SoldierHealthModuleData](/vext/ref/fb/soldierhealthmoduledata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SoldierHealthModuleData](/vext/ref/fb/soldierhealthmoduledata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SoldierHealthModuleData](/vext/ref/fb/soldierhealthmoduledata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SoldierHealthModuleData {#constructor-2}
+> **SoldierHealthModuleData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoldierHealthModuleData](/vext/ref/fb/soldierhealthmoduledata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SoldierHealthModuleData](/vext/ref/fb/soldierhealthmoduledata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SoldierHealthModuleData](/vext/ref/fb/soldierhealthmoduledata) type.
+

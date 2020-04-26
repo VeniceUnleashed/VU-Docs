@@ -1,55 +1,134 @@
 ---
 title: RotorComponentData
 ---
-### Base Classes
 
-[ComponentData](/vext/ref/fb/componentdata/)
+Inherits from 
+[ComponentData](/vext/ref/fb/componentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[RotorComponentData](#constructor-0)**() |
+| **[RotorComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[RotorComponentData](#constructor-2)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[RotorComponentData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[RotorComponentData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[RotorComponentData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "lowRpmModel" >}} | [RotorModelData](/vext/ref/fb/rotormodeldata) |
+| {{< prop "highRpmModel" >}} | [RotorModelData](/vext/ref/fb/rotormodeldata) |
+| {{< prop "rotationAxis" >}} | [RotationAxis](/vext/ref/fb/rotationaxis) |
+| {{< prop "rotationMultiplier" >}} | float |
+| {{< prop "changeModelRpm" >}} | float |
+| {{< prop "blowEffect" >}} | [EffectBlueprint](/vext/ref/fb/effectblueprint) \| nil |
+| {{< prop "triggerGroundEffectHeight" >}} | float |
+| {{< prop "criticallyDamagedRotationForce" >}} | float |
+| {{< prop "onlyTriggerBlowEffectInWater" >}} | bool |
+| {{< prop "groundEffectOnTerrainOnly" >}} | bool |
+| {{< prop "criticalDamage" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "RotorComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### RotorComponentData {#constructor-0}
+> **RotorComponentData**()
 
-| Constructor                                                                   | Description                                                                                                                 |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| RotorComponentData()                                                          | Create a new instance of this container type.                                                                               |
-| RotorComponentData(RotorComponentData other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| RotorComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [RotorComponentData](/vext/ref/fb/rotorcomponentdata/).                      |
-| RotorComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [RotorComponentData](/vext/ref/fb/rotorcomponentdata/).                    |
-| RotorComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [RotorComponentData](/vext/ref/fb/rotorcomponentdata/).              |
-| RotorComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RotorComponentData](/vext/ref/fb/rotorcomponentdata/). |
+Creates a new [RotorComponentData](/vext/ref/fb/rotorcomponentdata) frostbite instance.
 
-## Properties
+### RotorComponentData {#constructor-1}
+> **RotorComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                           | Type                               | Description |
-| ------------------------------ | ---------------------------------- | ----------- |
-| lowRpmModel                    | [RotorModelData](/vext/ref/fb/rotormodeldata/)   |             |
-| highRpmModel                   | [RotorModelData](/vext/ref/fb/rotormodeldata/)   |             |
-| rotationAxis                   | [RotationAxis](/vext/ref/fb/rotationaxis/)       |             |
-| rotationMultiplier             | number                             |             |
-| changeModelRpm                 | number                             |             |
-| blowEffect                     | [EffectBlueprint](/vext/ref/fb/effectblueprint/) |             |
-| triggerGroundEffectHeight      | number                             |             |
-| criticallyDamagedRotationForce | number                             |             |
-| onlyTriggerBlowEffectInWater   | bool                               |             |
-| groundEffectOnTerrainOnly      | bool                               |             |
-| criticalDamage                 | bool                               |             |
-
-## Methods
-
-| Type                                     | Name            | Parameters                                     |
-| ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [RotorComponentData](/vext/ref/fb/rotorcomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [RotorComponentData](/vext/ref/fb/rotorcomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [RotorComponentData](/vext/ref/fb/rotorcomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### RotorComponentData {#constructor-2}
+> **RotorComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [RotorComponentData](/vext/ref/fb/rotorcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [RotorComponentData](/vext/ref/fb/rotorcomponentdata). |
+
+### RotorComponentData {#constructor-3}
+> **RotorComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [RotorComponentData](/vext/ref/fb/rotorcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [RotorComponentData](/vext/ref/fb/rotorcomponentdata). |
+
+### RotorComponentData {#constructor-4}
+> **RotorComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [RotorComponentData](/vext/ref/fb/rotorcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [RotorComponentData](/vext/ref/fb/rotorcomponentdata). |
+
+### RotorComponentData {#constructor-5}
+> **RotorComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RotorComponentData](/vext/ref/fb/rotorcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [RotorComponentData](/vext/ref/fb/rotorcomponentdata). |
+
+## Properties
+### {{% prop-heading "lowRpmModel" %}}
+> **[RotorModelData](/vext/ref/fb/rotormodeldata)**
+
+### {{% prop-heading "highRpmModel" %}}
+> **[RotorModelData](/vext/ref/fb/rotormodeldata)**
+
+### {{% prop-heading "rotationAxis" %}}
+> **[RotationAxis](/vext/ref/fb/rotationaxis)**
+
+### {{% prop-heading "rotationMultiplier" %}}
+> **float**
+
+### {{% prop-heading "changeModelRpm" %}}
+> **float**
+
+### {{% prop-heading "blowEffect" %}}
+> **[EffectBlueprint](/vext/ref/fb/effectblueprint)** | **nil**
+
+### {{% prop-heading "triggerGroundEffectHeight" %}}
+> **float**
+
+### {{% prop-heading "criticallyDamagedRotationForce" %}}
+> **float**
+
+### {{% prop-heading "onlyTriggerBlowEffectInWater" %}}
+> **bool**
+
+### {{% prop-heading "groundEffectOnTerrainOnly" %}}
+> **bool**
+
+### {{% prop-heading "criticalDamage" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [RotorComponentData](/vext/ref/fb/rotorcomponentdata) type.
+

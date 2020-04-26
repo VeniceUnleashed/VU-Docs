@@ -1,45 +1,87 @@
 ---
 title: BlazeServerBackendData
 ---
-### Base Classes
 
-[ServerBackendData](/vext/ref/fb/serverbackenddata/)
+Inherits from 
+[ServerBackendData](/vext/ref/fb/serverbackenddata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[BlazeServerBackendData](#constructor-0)**() |
+| **[BlazeServerBackendData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[BlazeServerBackendData](#constructor-2)**(other: [ServerBackendData](/vext/ref/fb/serverbackenddata)) |
+| **[BlazeServerBackendData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[BlazeServerBackendData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "createParameters" >}} | [BlazeCreateGameParameters](/vext/ref/fb/blazecreategameparameters) |
+| {{< prop "configUrl" >}} | [OnlineEnvironmentConsoleUrl](/vext/ref/fb/onlineenvironmentconsoleurl) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "BlazeServerBackendData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### BlazeServerBackendData {#constructor-0}
+> **BlazeServerBackendData**()
 
-| Constructor                                                                       | Description                                                                                                                         |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| BlazeServerBackendData()                                                          | Create a new instance of this container type.                                                                                       |
-| BlazeServerBackendData(BlazeServerBackendData other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| BlazeServerBackendData([ServerBackendData](/vext/ref/fb/serverbackenddata/) other)              | Upcast an instance of type [ServerBackendData](/vext/ref/fb/serverbackenddata/) to [BlazeServerBackendData](/vext/ref/fb/blazeserverbackenddata/).              |
-| BlazeServerBackendData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [BlazeServerBackendData](/vext/ref/fb/blazeserverbackenddata/).                                      |
-| BlazeServerBackendData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BlazeServerBackendData](/vext/ref/fb/blazeserverbackenddata/). |
+Creates a new [BlazeServerBackendData](/vext/ref/fb/blazeserverbackenddata) frostbite instance.
 
-## Properties
+### BlazeServerBackendData {#constructor-1}
+> **BlazeServerBackendData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name             | Type                                                       | Description |
-| ---------------- | ---------------------------------------------------------- | ----------- |
-| createParameters | [BlazeCreateGameParameters](/vext/ref/fb/blazecreategameparameters/)     |             |
-| configUrl        | [OnlineEnvironmentConsoleUrl](/vext/ref/fb/onlineenvironmentconsoleurl/) |             |
-
-## Methods
-
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [BlazeServerBackendData](/vext/ref/fb/blazeserverbackenddata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [BlazeServerBackendData](/vext/ref/fb/blazeserverbackenddata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [BlazeServerBackendData](/vext/ref/fb/blazeserverbackenddata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### BlazeServerBackendData {#constructor-2}
+> **BlazeServerBackendData**(other: [ServerBackendData](/vext/ref/fb/serverbackenddata))
+
+Casts an instance of type [ServerBackendData](/vext/ref/fb/serverbackenddata) to [BlazeServerBackendData](/vext/ref/fb/blazeserverbackenddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ServerBackendData](/vext/ref/fb/serverbackenddata) | The instance to cast to [BlazeServerBackendData](/vext/ref/fb/blazeserverbackenddata). |
+
+### BlazeServerBackendData {#constructor-3}
+> **BlazeServerBackendData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [BlazeServerBackendData](/vext/ref/fb/blazeserverbackenddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [BlazeServerBackendData](/vext/ref/fb/blazeserverbackenddata). |
+
+### BlazeServerBackendData {#constructor-4}
+> **BlazeServerBackendData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BlazeServerBackendData](/vext/ref/fb/blazeserverbackenddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [BlazeServerBackendData](/vext/ref/fb/blazeserverbackenddata). |
+
+## Properties
+### {{% prop-heading "createParameters" %}}
+> **[BlazeCreateGameParameters](/vext/ref/fb/blazecreategameparameters)**
+
+### {{% prop-heading "configUrl" %}}
+> **[OnlineEnvironmentConsoleUrl](/vext/ref/fb/onlineenvironmentconsoleurl)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [BlazeServerBackendData](/vext/ref/fb/blazeserverbackenddata) type.
+

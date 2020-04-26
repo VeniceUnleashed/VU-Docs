@@ -1,45 +1,73 @@
 ---
 title: VoiceOverLogicFlow
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VoiceOverLogicFlow](#constructor-0)**() |
+| **[VoiceOverLogicFlow](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VoiceOverLogicFlow](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "name" >}} | string |
+| {{< prop "group" >}} | [VoiceOverGroup](/vext/ref/fb/voiceovergroup) \| nil |
+| {{< prop "locals" >}} | [VoiceOverValue](/vext/ref/fb/voiceovervalue)[] |
+| {{< prop "roots" >}} | [VoiceOverEventNode](/vext/ref/fb/voiceovereventnode)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VoiceOverLogicFlow" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VoiceOverLogicFlow {#constructor-0}
+> **VoiceOverLogicFlow**()
 
-| Constructor                                                                   | Description                                                                                                                 |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| VoiceOverLogicFlow()                                                          | Create a new instance of this container type.                                                                               |
-| VoiceOverLogicFlow(VoiceOverLogicFlow other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| VoiceOverLogicFlow([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverLogicFlow](/vext/ref/fb/voiceoverlogicflow/). |
+Creates a new [VoiceOverLogicFlow](/vext/ref/fb/voiceoverlogicflow) frostbite instance.
 
-## Properties
+### VoiceOverLogicFlow {#constructor-1}
+> **VoiceOverLogicFlow**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name   | Type                                         | Description |
-| ------ | -------------------------------------------- | ----------- |
-| name   | string                                       |             |
-| group  | [VoiceOverGroup](/vext/ref/fb/voiceovergroup/)             |             |
-| locals | [VoiceOverValue](/vext/ref/fb/voiceovervalue/)\[\]         |             |
-| roots  | [VoiceOverEventNode](/vext/ref/fb/voiceovereventnode/)\[\] |             |
-
-## Methods
-
-| Type                                     | Name            | Parameters                                     |
-| ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [VoiceOverLogicFlow](/vext/ref/fb/voiceoverlogicflow/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VoiceOverLogicFlow](/vext/ref/fb/voiceoverlogicflow/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VoiceOverLogicFlow](/vext/ref/fb/voiceoverlogicflow) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VoiceOverLogicFlow {#constructor-2}
+> **VoiceOverLogicFlow**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverLogicFlow](/vext/ref/fb/voiceoverlogicflow). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VoiceOverLogicFlow](/vext/ref/fb/voiceoverlogicflow). |
+
+## Properties
+### {{% prop-heading "name" %}}
+> **string**
+
+### {{% prop-heading "group" %}}
+> **[VoiceOverGroup](/vext/ref/fb/voiceovergroup)** | **nil**
+
+### {{% prop-heading "locals" %}}
+> **[VoiceOverValue](/vext/ref/fb/voiceovervalue)**[]
+
+### {{% prop-heading "roots" %}}
+> **[VoiceOverEventNode](/vext/ref/fb/voiceovereventnode)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VoiceOverLogicFlow](/vext/ref/fb/voiceoverlogicflow) type.
+

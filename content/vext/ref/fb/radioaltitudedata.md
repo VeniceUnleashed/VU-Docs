@@ -1,44 +1,69 @@
 ---
 title: RadioAltitudeData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[RadioAltitudeData](#constructor-0)**() |
+| **[RadioAltitudeData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[RadioAltitudeData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "range" >}} | float |
+| {{< prop "updateFrequency" >}} | float |
+| {{< prop "collisionMethod" >}} | [CollisionMethodEnum](/vext/ref/fb/collisionmethodenum) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "RadioAltitudeData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### RadioAltitudeData {#constructor-0}
+> **RadioAltitudeData**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| RadioAltitudeData()                                                          | Create a new instance of this container type.                                                                             |
-| RadioAltitudeData(RadioAltitudeData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| RadioAltitudeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RadioAltitudeData](/vext/ref/fb/radioaltitudedata/). |
+Creates a new [RadioAltitudeData](/vext/ref/fb/radioaltitudedata) frostbite instance.
 
-## Properties
+### RadioAltitudeData {#constructor-1}
+> **RadioAltitudeData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name            | Type                                       | Description |
-| --------------- | ------------------------------------------ | ----------- |
-| range           | number                                     |             |
-| updateFrequency | number                                     |             |
-| collisionMethod | [CollisionMethodEnum](/vext/ref/fb/collisionmethodenum/) |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [RadioAltitudeData](/vext/ref/fb/radioaltitudedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [RadioAltitudeData](/vext/ref/fb/radioaltitudedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [RadioAltitudeData](/vext/ref/fb/radioaltitudedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### RadioAltitudeData {#constructor-2}
+> **RadioAltitudeData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RadioAltitudeData](/vext/ref/fb/radioaltitudedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [RadioAltitudeData](/vext/ref/fb/radioaltitudedata). |
+
+## Properties
+### {{% prop-heading "range" %}}
+> **float**
+
+### {{% prop-heading "updateFrequency" %}}
+> **float**
+
+### {{% prop-heading "collisionMethod" %}}
+> **[CollisionMethodEnum](/vext/ref/fb/collisionmethodenum)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [RadioAltitudeData](/vext/ref/fb/radioaltitudedata) type.
+

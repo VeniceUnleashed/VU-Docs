@@ -1,14 +1,11 @@
 ---
 title: MixGroupState
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **MixGroupState_Normal** | Value: **0** |
+| **MixGroupState_Mute** | Value: **1** |
+| **MixGroupState_Solo** | Value: **2** |
 
-| Name                  | Value | Description |
-| --------------------- | ----- | ----------- |
-| MixGroupState\_Normal | 0     |             |
-| MixGroupState\_Mute   | 1     |             |
-| MixGroupState\_Solo   | 2     |             |

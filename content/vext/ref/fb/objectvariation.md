@@ -1,43 +1,72 @@
 ---
 title: ObjectVariation
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ObjectVariation](#constructor-0)**() |
+| **[ObjectVariation](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ObjectVariation](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[ObjectVariation](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "nameHash" >}} | int |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ObjectVariation" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ObjectVariation {#constructor-0}
+> **ObjectVariation**()
 
-| Constructor                                                                | Description                                                                                                           |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| ObjectVariation()                                                          | Create a new instance of this container type.                                                                         |
-| ObjectVariation(ObjectVariation other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| ObjectVariation([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [ObjectVariation](/vext/ref/fb/objectvariation/).                                      |
-| ObjectVariation([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ObjectVariation](/vext/ref/fb/objectvariation/). |
+Creates a new [ObjectVariation](/vext/ref/fb/objectvariation) frostbite instance.
 
-## Properties
+### ObjectVariation {#constructor-1}
+> **ObjectVariation**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name     | Type   | Description |
-| -------- | ------ | ----------- |
-| nameHash | number |             |
-
-## Methods
-
-| Type                               | Name            | Parameters                                     |
-| ---------------------------------- | --------------- | ---------------------------------------------- |
-| [ObjectVariation](/vext/ref/fb/objectvariation/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ObjectVariation](/vext/ref/fb/objectvariation/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ObjectVariation](/vext/ref/fb/objectvariation) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ObjectVariation {#constructor-2}
+> **ObjectVariation**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [ObjectVariation](/vext/ref/fb/objectvariation). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [ObjectVariation](/vext/ref/fb/objectvariation). |
+
+### ObjectVariation {#constructor-3}
+> **ObjectVariation**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ObjectVariation](/vext/ref/fb/objectvariation). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ObjectVariation](/vext/ref/fb/objectvariation). |
+
+## Properties
+### {{% prop-heading "nameHash" %}}
+> **int**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ObjectVariation](/vext/ref/fb/objectvariation) type.
+

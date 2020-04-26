@@ -1,60 +1,133 @@
 ---
 title: PhysicsSettings
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PhysicsSettings](#constructor-0)**() |
+| **[PhysicsSettings](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PhysicsSettings](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "integrateJobCount" >}} | int |
+| {{< prop "clientEffectWorldThreadCount" >}} | int |
+| {{< prop "clientWorldThreadCount" >}} | int |
+| {{< prop "serverWorldThreadCount" >}} | int |
+| {{< prop "collideJobCount" >}} | int |
+| {{< prop "enable" >}} | bool |
+| {{< prop "enableAIRigidBody" >}} | bool |
+| {{< prop "forestEnable" >}} | bool |
+| {{< prop "enableJobs" >}} | bool |
+| {{< prop "removeRagdollWhenWoken" >}} | bool |
+| {{< prop "removeFromWorldOnCollisionOverflow" >}} | bool |
+| {{< prop "singleStepCharacter" >}} | bool |
+| {{< prop "forceSingleStepCharacterInSP" >}} | bool |
+| {{< prop "enableFollowWheelRaycasts" >}} | bool |
+| {{< prop "enableClientWheelRaycasts" >}} | bool |
+| {{< prop "enableASyncWheelRaycasts" >}} | bool |
+| {{< prop "useDelayedWakeUpClient" >}} | bool |
+| {{< prop "useDelayedWakeUpServer" >}} | bool |
+| {{< prop "suppressDebrisSpawnUntilReady" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PhysicsSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PhysicsSettings {#constructor-0}
+> **PhysicsSettings**()
 
-| Constructor                                                                | Description                                                                                                           |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| PhysicsSettings()                                                          | Create a new instance of this container type.                                                                         |
-| PhysicsSettings(PhysicsSettings other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| PhysicsSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PhysicsSettings](/vext/ref/fb/physicssettings/). |
+Creates a new [PhysicsSettings](/vext/ref/fb/physicssettings) frostbite instance.
 
-## Properties
+### PhysicsSettings {#constructor-1}
+> **PhysicsSettings**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                               | Type   | Description |
-| ---------------------------------- | ------ | ----------- |
-| integrateJobCount                  | number |             |
-| clientEffectWorldThreadCount       | number |             |
-| clientWorldThreadCount             | number |             |
-| serverWorldThreadCount             | number |             |
-| collideJobCount                    | number |             |
-| enable                             | bool   |             |
-| enableAIRigidBody                  | bool   |             |
-| forestEnable                       | bool   |             |
-| enableJobs                         | bool   |             |
-| removeRagdollWhenWoken             | bool   |             |
-| removeFromWorldOnCollisionOverflow | bool   |             |
-| singleStepCharacter                | bool   |             |
-| forceSingleStepCharacterInSP       | bool   |             |
-| enableFollowWheelRaycasts          | bool   |             |
-| enableClientWheelRaycasts          | bool   |             |
-| enableASyncWheelRaycasts           | bool   |             |
-| useDelayedWakeUpClient             | bool   |             |
-| useDelayedWakeUpServer             | bool   |             |
-| suppressDebrisSpawnUntilReady      | bool   |             |
-
-## Methods
-
-| Type                               | Name            | Parameters                                     |
-| ---------------------------------- | --------------- | ---------------------------------------------- |
-| [PhysicsSettings](/vext/ref/fb/physicssettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PhysicsSettings](/vext/ref/fb/physicssettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PhysicsSettings](/vext/ref/fb/physicssettings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PhysicsSettings {#constructor-2}
+> **PhysicsSettings**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PhysicsSettings](/vext/ref/fb/physicssettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PhysicsSettings](/vext/ref/fb/physicssettings). |
+
+## Properties
+### {{% prop-heading "integrateJobCount" %}}
+> **int**
+
+### {{% prop-heading "clientEffectWorldThreadCount" %}}
+> **int**
+
+### {{% prop-heading "clientWorldThreadCount" %}}
+> **int**
+
+### {{% prop-heading "serverWorldThreadCount" %}}
+> **int**
+
+### {{% prop-heading "collideJobCount" %}}
+> **int**
+
+### {{% prop-heading "enable" %}}
+> **bool**
+
+### {{% prop-heading "enableAIRigidBody" %}}
+> **bool**
+
+### {{% prop-heading "forestEnable" %}}
+> **bool**
+
+### {{% prop-heading "enableJobs" %}}
+> **bool**
+
+### {{% prop-heading "removeRagdollWhenWoken" %}}
+> **bool**
+
+### {{% prop-heading "removeFromWorldOnCollisionOverflow" %}}
+> **bool**
+
+### {{% prop-heading "singleStepCharacter" %}}
+> **bool**
+
+### {{% prop-heading "forceSingleStepCharacterInSP" %}}
+> **bool**
+
+### {{% prop-heading "enableFollowWheelRaycasts" %}}
+> **bool**
+
+### {{% prop-heading "enableClientWheelRaycasts" %}}
+> **bool**
+
+### {{% prop-heading "enableASyncWheelRaycasts" %}}
+> **bool**
+
+### {{% prop-heading "useDelayedWakeUpClient" %}}
+> **bool**
+
+### {{% prop-heading "useDelayedWakeUpServer" %}}
+> **bool**
+
+### {{% prop-heading "suppressDebrisSpawnUntilReady" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PhysicsSettings](/vext/ref/fb/physicssettings) type.
+

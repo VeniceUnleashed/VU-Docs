@@ -1,39 +1,85 @@
 ---
 title: TextureArrayAsset
 ---
-### Base Classes
 
-[TextureAsset](/vext/ref/fb/textureasset/)
+Inherits from 
+[TextureAsset](/vext/ref/fb/textureasset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[TextureArrayAsset](#constructor-0)**() |
+| **[TextureArrayAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[TextureArrayAsset](#constructor-2)**(other: [TextureAsset](/vext/ref/fb/textureasset)) |
+| **[TextureArrayAsset](#constructor-3)**(other: [TextureBaseAsset](/vext/ref/fb/texturebaseasset)) |
+| **[TextureArrayAsset](#constructor-4)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[TextureArrayAsset](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "TextureArrayAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### TextureArrayAsset {#constructor-0}
+> **TextureArrayAsset**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| TextureArrayAsset()                                                          | Create a new instance of this container type.                                                                             |
-| TextureArrayAsset(TextureArrayAsset other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| TextureArrayAsset([TextureAsset](/vext/ref/fb/textureasset/) other)                        | Upcast an instance of type [TextureAsset](/vext/ref/fb/textureasset/) to [TextureArrayAsset](/vext/ref/fb/texturearrayasset/).                        |
-| TextureArrayAsset([TextureBaseAsset](/vext/ref/fb/texturebaseasset/) other)                | Upcast an instance of type [TextureBaseAsset](/vext/ref/fb/texturebaseasset/) to [TextureArrayAsset](/vext/ref/fb/texturearrayasset/).                |
-| TextureArrayAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [TextureArrayAsset](/vext/ref/fb/texturearrayasset/).                                      |
-| TextureArrayAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TextureArrayAsset](/vext/ref/fb/texturearrayasset/). |
+Creates a new [TextureArrayAsset](/vext/ref/fb/texturearrayasset) frostbite instance.
 
-## Methods
+### TextureArrayAsset {#constructor-1}
+> **TextureArrayAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [TextureArrayAsset](/vext/ref/fb/texturearrayasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [TextureArrayAsset](/vext/ref/fb/texturearrayasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [TextureArrayAsset](/vext/ref/fb/texturearrayasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### TextureArrayAsset {#constructor-2}
+> **TextureArrayAsset**(other: [TextureAsset](/vext/ref/fb/textureasset))
+
+Casts an instance of type [TextureAsset](/vext/ref/fb/textureasset) to [TextureArrayAsset](/vext/ref/fb/texturearrayasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [TextureAsset](/vext/ref/fb/textureasset) | The instance to cast to [TextureArrayAsset](/vext/ref/fb/texturearrayasset). |
+
+### TextureArrayAsset {#constructor-3}
+> **TextureArrayAsset**(other: [TextureBaseAsset](/vext/ref/fb/texturebaseasset))
+
+Casts an instance of type [TextureBaseAsset](/vext/ref/fb/texturebaseasset) to [TextureArrayAsset](/vext/ref/fb/texturearrayasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [TextureBaseAsset](/vext/ref/fb/texturebaseasset) | The instance to cast to [TextureArrayAsset](/vext/ref/fb/texturearrayasset). |
+
+### TextureArrayAsset {#constructor-4}
+> **TextureArrayAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [TextureArrayAsset](/vext/ref/fb/texturearrayasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [TextureArrayAsset](/vext/ref/fb/texturearrayasset). |
+
+### TextureArrayAsset {#constructor-5}
+> **TextureArrayAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TextureArrayAsset](/vext/ref/fb/texturearrayasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [TextureArrayAsset](/vext/ref/fb/texturearrayasset). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [TextureArrayAsset](/vext/ref/fb/texturearrayasset) type.
+

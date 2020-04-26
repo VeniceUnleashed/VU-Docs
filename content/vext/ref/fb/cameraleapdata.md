@@ -1,33 +1,61 @@
 ---
 title: CameraLeapData
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[CameraLeapData](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "transform" >}} | [LinearTransform](/vext/ref/shared/class/lineartransform) |
+| {{< prop "time" >}} | float |
+| {{< prop "fovModifier" >}} | float |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [CameraLeapData](/vext/ref/fb/cameraleapdata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "CameraLeapData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### CameraLeapData {#constructor-0}
+> **CameraLeapData**()
 
-| Constructor                          | Description                                              |
-| ------------------------------------ | -------------------------------------------------------- |
-| CameraLeapData()                     | Create a new instance of this structure type.            |
-| CameraLeapData(CameraLeapData other) | Create a reference copy of a structure of the same type. |
+Creates a new [CameraLeapData](/vext/ref/fb/cameraleapdata) frostbite structure.
 
 ## Properties
+### {{% prop-heading "transform" %}}
+> **[LinearTransform](/vext/ref/shared/class/lineartransform)**
 
-| Name        | Type                                                    | Description |
-| ----------- | ------------------------------------------------------- | ----------- |
-| transform   | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
-| time        | number                                                  |             |
-| fovModifier | number                                                  |             |
+### {{% prop-heading "time" %}}
+> **float**
+
+### {{% prop-heading "fovModifier" %}}
+> **float**
 
 ## Methods
-
-| Type                             | Name            | Parameters |
-| -------------------------------- | --------------- | ---------- |
-| [CameraLeapData](/vext/ref/fb/cameraleapdata/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [CameraLeapData](/vext/ref/fb/cameraleapdata)
 
-> [CameraLeapData](/vext/ref/fb/cameraleapdata/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[CameraLeapData](/vext/ref/fb/cameraleapdata)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [CameraLeapData](/vext/ref/fb/cameraleapdata) type.
+

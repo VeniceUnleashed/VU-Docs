@@ -1,45 +1,87 @@
 ---
 title: WeaponRegularSocketObjectData
 ---
-### Base Classes
 
-[WeaponSocketObjectData](/vext/ref/fb/weaponsocketobjectdata/)
+Inherits from 
+[WeaponSocketObjectData](/vext/ref/fb/weaponsocketobjectdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[WeaponRegularSocketObjectData](#constructor-0)**() |
+| **[WeaponRegularSocketObjectData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[WeaponRegularSocketObjectData](#constructor-2)**(other: [WeaponSocketObjectData](/vext/ref/fb/weaponsocketobjectdata)) |
+| **[WeaponRegularSocketObjectData](#constructor-3)**(other: [SocketObjectDataBase](/vext/ref/fb/socketobjectdatabase)) |
+| **[WeaponRegularSocketObjectData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "transform" >}} | [LinearTransform](/vext/ref/shared/class/lineartransform) |
+| {{< prop "mesh3pTransforms" >}} | [LinearTransform](/vext/ref/shared/class/lineartransform)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "WeaponRegularSocketObjectData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### WeaponRegularSocketObjectData {#constructor-0}
+> **WeaponRegularSocketObjectData**()
 
-| Constructor                                                                              | Description                                                                                                                                       |
-| ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| WeaponRegularSocketObjectData()                                                          | Create a new instance of this container type.                                                                                                     |
-| WeaponRegularSocketObjectData(WeaponRegularSocketObjectData other)                       | Create a reference copy of an instance of the same type.                                                                                          |
-| WeaponRegularSocketObjectData([WeaponSocketObjectData](/vext/ref/fb/weaponsocketobjectdata/) other)    | Upcast an instance of type [WeaponSocketObjectData](/vext/ref/fb/weaponsocketobjectdata/) to [WeaponRegularSocketObjectData](/vext/ref/fb/weaponregularsocketobjectdata/).    |
-| WeaponRegularSocketObjectData([SocketObjectDataBase](/vext/ref/fb/socketobjectdatabase/) other)        | Upcast an instance of type [SocketObjectDataBase](/vext/ref/fb/socketobjectdatabase/) to [WeaponRegularSocketObjectData](/vext/ref/fb/weaponregularsocketobjectdata/).        |
-| WeaponRegularSocketObjectData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponRegularSocketObjectData](/vext/ref/fb/weaponregularsocketobjectdata/). |
+Creates a new [WeaponRegularSocketObjectData](/vext/ref/fb/weaponregularsocketobjectdata) frostbite instance.
 
-## Properties
+### WeaponRegularSocketObjectData {#constructor-1}
+> **WeaponRegularSocketObjectData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name             | Type                                                        | Description |
-| ---------------- | ----------------------------------------------------------- | ----------- |
-| transform        | [LinearTransform](/vext/ref/shared/class/lineartransform)     |             |
-| mesh3pTransforms | [LinearTransform](/vext/ref/shared/class/lineartransform)\[\] |             |
-
-## Methods
-
-| Type                                                           | Name            | Parameters                                     |
-| -------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [WeaponRegularSocketObjectData](/vext/ref/fb/weaponregularsocketobjectdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [WeaponRegularSocketObjectData](/vext/ref/fb/weaponregularsocketobjectdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [WeaponRegularSocketObjectData](/vext/ref/fb/weaponregularsocketobjectdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### WeaponRegularSocketObjectData {#constructor-2}
+> **WeaponRegularSocketObjectData**(other: [WeaponSocketObjectData](/vext/ref/fb/weaponsocketobjectdata))
+
+Casts an instance of type [WeaponSocketObjectData](/vext/ref/fb/weaponsocketobjectdata) to [WeaponRegularSocketObjectData](/vext/ref/fb/weaponregularsocketobjectdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [WeaponSocketObjectData](/vext/ref/fb/weaponsocketobjectdata) | The instance to cast to [WeaponRegularSocketObjectData](/vext/ref/fb/weaponregularsocketobjectdata). |
+
+### WeaponRegularSocketObjectData {#constructor-3}
+> **WeaponRegularSocketObjectData**(other: [SocketObjectDataBase](/vext/ref/fb/socketobjectdatabase))
+
+Casts an instance of type [SocketObjectDataBase](/vext/ref/fb/socketobjectdatabase) to [WeaponRegularSocketObjectData](/vext/ref/fb/weaponregularsocketobjectdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SocketObjectDataBase](/vext/ref/fb/socketobjectdatabase) | The instance to cast to [WeaponRegularSocketObjectData](/vext/ref/fb/weaponregularsocketobjectdata). |
+
+### WeaponRegularSocketObjectData {#constructor-4}
+> **WeaponRegularSocketObjectData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponRegularSocketObjectData](/vext/ref/fb/weaponregularsocketobjectdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [WeaponRegularSocketObjectData](/vext/ref/fb/weaponregularsocketobjectdata). |
+
+## Properties
+### {{% prop-heading "transform" %}}
+> **[LinearTransform](/vext/ref/shared/class/lineartransform)**
+
+### {{% prop-heading "mesh3pTransforms" %}}
+> **[LinearTransform](/vext/ref/shared/class/lineartransform)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [WeaponRegularSocketObjectData](/vext/ref/fb/weaponregularsocketobjectdata) type.
+

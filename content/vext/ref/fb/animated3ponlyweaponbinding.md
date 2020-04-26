@@ -1,32 +1,57 @@
 ---
 title: Animated3pOnlyWeaponBinding
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[Animated3pOnlyWeaponBinding](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "deploy3P" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "hideWeapon3p" >}} | [AntRef](/vext/ref/fb/antref) |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [Animated3pOnlyWeaponBinding](/vext/ref/fb/animated3ponlyweaponbinding) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "Animated3pOnlyWeaponBinding" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### Animated3pOnlyWeaponBinding {#constructor-0}
+> **Animated3pOnlyWeaponBinding**()
 
-| Constructor                                                    | Description                                              |
-| -------------------------------------------------------------- | -------------------------------------------------------- |
-| Animated3pOnlyWeaponBinding()                                  | Create a new instance of this structure type.            |
-| Animated3pOnlyWeaponBinding(Animated3pOnlyWeaponBinding other) | Create a reference copy of a structure of the same type. |
+Creates a new [Animated3pOnlyWeaponBinding](/vext/ref/fb/animated3ponlyweaponbinding) frostbite structure.
 
 ## Properties
+### {{% prop-heading "deploy3P" %}}
+> **[AntRef](/vext/ref/fb/antref)**
 
-| Name         | Type             | Description |
-| ------------ | ---------------- | ----------- |
-| deploy3P     | [AntRef](/vext/ref/fb/antref/) |             |
-| hideWeapon3p | [AntRef](/vext/ref/fb/antref/) |             |
+### {{% prop-heading "hideWeapon3p" %}}
+> **[AntRef](/vext/ref/fb/antref)**
 
 ## Methods
-
-| Type                                                       | Name            | Parameters |
-| ---------------------------------------------------------- | --------------- | ---------- |
-| [Animated3pOnlyWeaponBinding](/vext/ref/fb/animated3ponlyweaponbinding/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [Animated3pOnlyWeaponBinding](/vext/ref/fb/animated3ponlyweaponbinding)
 
-> [Animated3pOnlyWeaponBinding](/vext/ref/fb/animated3ponlyweaponbinding/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[Animated3pOnlyWeaponBinding](/vext/ref/fb/animated3ponlyweaponbinding)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [Animated3pOnlyWeaponBinding](/vext/ref/fb/animated3ponlyweaponbinding) type.
+

@@ -1,14 +1,11 @@
 ---
 title: ReadinessState
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **RSPatrol** | Value: **0** |
+| **RSReady** | Value: **1** |
+| **RSCombat** | Value: **2** |
 
-| Name     | Value | Description |
-| -------- | ----- | ----------- |
-| RSPatrol | 0     |             |
-| RSReady  | 1     |             |
-| RSCombat | 2     |             |

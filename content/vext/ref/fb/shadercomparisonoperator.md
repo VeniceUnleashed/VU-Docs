@@ -1,17 +1,14 @@
 ---
 title: ShaderComparisonOperator
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ScoEquals** | Value: **0** |
+| **ScoNotEquals** | Value: **1** |
+| **ScoLess** | Value: **2** |
+| **ScoLessEquals** | Value: **3** |
+| **ScoGreater** | Value: **4** |
+| **ScoGreaterEquals** | Value: **5** |
 
-| Name             | Value | Description |
-| ---------------- | ----- | ----------- |
-| ScoEquals        | 0     |             |
-| ScoNotEquals     | 1     |             |
-| ScoLess          | 2     |             |
-| ScoLessEquals    | 3     |             |
-| ScoGreater       | 4     |             |
-| ScoGreaterEquals | 5     |             |

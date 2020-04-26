@@ -1,14 +1,11 @@
 ---
 title: VoiceOverDialogTakeBehavior
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **VoiceOverDialogTakeBehavior_Start** | Value: **0** |
+| **VoiceOverDialogTakeBehavior_Clip** | Value: **1** |
+| **VoiceOverDialogTakeBehavior_Continuous** | Value: **2** |
 
-| Name                                    | Value | Description |
-| --------------------------------------- | ----- | ----------- |
-| VoiceOverDialogTakeBehavior\_Start      | 0     |             |
-| VoiceOverDialogTakeBehavior\_Clip       | 1     |             |
-| VoiceOverDialogTakeBehavior\_Continuous | 2     |             |

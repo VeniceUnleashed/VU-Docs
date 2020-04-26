@@ -1,32 +1,57 @@
 ---
 title: CustomizedMeshMaterialsData
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[CustomizedMeshMaterialsData](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "meshBlueprint" >}} | [ObjectBlueprint](/vext/ref/fb/objectblueprint) \| nil |
+| {{< prop "materialNames" >}} | string[] |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [CustomizedMeshMaterialsData](/vext/ref/fb/customizedmeshmaterialsdata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "CustomizedMeshMaterialsData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### CustomizedMeshMaterialsData {#constructor-0}
+> **CustomizedMeshMaterialsData**()
 
-| Constructor                                                    | Description                                              |
-| -------------------------------------------------------------- | -------------------------------------------------------- |
-| CustomizedMeshMaterialsData()                                  | Create a new instance of this structure type.            |
-| CustomizedMeshMaterialsData(CustomizedMeshMaterialsData other) | Create a reference copy of a structure of the same type. |
+Creates a new [CustomizedMeshMaterialsData](/vext/ref/fb/customizedmeshmaterialsdata) frostbite structure.
 
 ## Properties
+### {{% prop-heading "meshBlueprint" %}}
+> **[ObjectBlueprint](/vext/ref/fb/objectblueprint)** | **nil**
 
-| Name          | Type                               | Description |
-| ------------- | ---------------------------------- | ----------- |
-| meshBlueprint | [ObjectBlueprint](/vext/ref/fb/objectblueprint/) |             |
-| materialNames | string\[\]                         |             |
+### {{% prop-heading "materialNames" %}}
+> **string**[]
 
 ## Methods
-
-| Type                                                       | Name            | Parameters |
-| ---------------------------------------------------------- | --------------- | ---------- |
-| [CustomizedMeshMaterialsData](/vext/ref/fb/customizedmeshmaterialsdata/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [CustomizedMeshMaterialsData](/vext/ref/fb/customizedmeshmaterialsdata)
 
-> [CustomizedMeshMaterialsData](/vext/ref/fb/customizedmeshmaterialsdata/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[CustomizedMeshMaterialsData](/vext/ref/fb/customizedmeshmaterialsdata)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [CustomizedMeshMaterialsData](/vext/ref/fb/customizedmeshmaterialsdata) type.
+

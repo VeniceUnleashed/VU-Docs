@@ -1,44 +1,83 @@
 ---
 title: StatsCategoryGuidData
 ---
-### Base Classes
 
-[StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/)
+Inherits from 
+[StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[StatsCategoryGuidData](#constructor-0)**() |
+| **[StatsCategoryGuidData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[StatsCategoryGuidData](#constructor-2)**(other: [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata)) |
+| **[StatsCategoryGuidData](#constructor-3)**(other: [TreeNodeBase](/vext/ref/fb/treenodebase)) |
+| **[StatsCategoryGuidData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "objectInstanceGuids" >}} | [Guid](/vext/ref/shared/class/guid)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "StatsCategoryGuidData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### StatsCategoryGuidData {#constructor-0}
+> **StatsCategoryGuidData**()
 
-| Constructor                                                                      | Description                                                                                                                       |
-| -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| StatsCategoryGuidData()                                                          | Create a new instance of this container type.                                                                                     |
-| StatsCategoryGuidData(StatsCategoryGuidData other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| StatsCategoryGuidData([StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/) other)      | Upcast an instance of type [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/) to [StatsCategoryGuidData](/vext/ref/fb/statscategoryguiddata/).      |
-| StatsCategoryGuidData([TreeNodeBase](/vext/ref/fb/treenodebase/) other)                        | Upcast an instance of type [TreeNodeBase](/vext/ref/fb/treenodebase/) to [StatsCategoryGuidData](/vext/ref/fb/statscategoryguiddata/).                        |
-| StatsCategoryGuidData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StatsCategoryGuidData](/vext/ref/fb/statscategoryguiddata/). |
+Creates a new [StatsCategoryGuidData](/vext/ref/fb/statscategoryguiddata) frostbite instance.
 
-## Properties
+### StatsCategoryGuidData {#constructor-1}
+> **StatsCategoryGuidData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                | Type                                  | Description |
-| ------------------- | ------------------------------------- | ----------- |
-| objectInstanceGuids | [Guid](/vext/ref/shared/class/guid)\[\] |             |
-
-## Methods
-
-| Type                                           | Name            | Parameters                                     |
-| ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [StatsCategoryGuidData](/vext/ref/fb/statscategoryguiddata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [StatsCategoryGuidData](/vext/ref/fb/statscategoryguiddata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [StatsCategoryGuidData](/vext/ref/fb/statscategoryguiddata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### StatsCategoryGuidData {#constructor-2}
+> **StatsCategoryGuidData**(other: [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata))
+
+Casts an instance of type [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata) to [StatsCategoryGuidData](/vext/ref/fb/statscategoryguiddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata) | The instance to cast to [StatsCategoryGuidData](/vext/ref/fb/statscategoryguiddata). |
+
+### StatsCategoryGuidData {#constructor-3}
+> **StatsCategoryGuidData**(other: [TreeNodeBase](/vext/ref/fb/treenodebase))
+
+Casts an instance of type [TreeNodeBase](/vext/ref/fb/treenodebase) to [StatsCategoryGuidData](/vext/ref/fb/statscategoryguiddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [TreeNodeBase](/vext/ref/fb/treenodebase) | The instance to cast to [StatsCategoryGuidData](/vext/ref/fb/statscategoryguiddata). |
+
+### StatsCategoryGuidData {#constructor-4}
+> **StatsCategoryGuidData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StatsCategoryGuidData](/vext/ref/fb/statscategoryguiddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [StatsCategoryGuidData](/vext/ref/fb/statscategoryguiddata). |
+
+## Properties
+### {{% prop-heading "objectInstanceGuids" %}}
+> **[Guid](/vext/ref/shared/class/guid)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [StatsCategoryGuidData](/vext/ref/fb/statscategoryguiddata) type.
+

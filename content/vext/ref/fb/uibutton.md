@@ -1,33 +1,61 @@
 ---
 title: UIButton
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIButton](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "buttonLabel" >}} | string |
+| {{< prop "buttonId" >}} | string |
+| {{< prop "isPremium" >}} | bool |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [UIButton](/vext/ref/fb/uibutton) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIButton" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIButton {#constructor-0}
+> **UIButton**()
 
-| Constructor              | Description                                              |
-| ------------------------ | -------------------------------------------------------- |
-| UIButton()               | Create a new instance of this structure type.            |
-| UIButton(UIButton other) | Create a reference copy of a structure of the same type. |
+Creates a new [UIButton](/vext/ref/fb/uibutton) frostbite structure.
 
 ## Properties
+### {{% prop-heading "buttonLabel" %}}
+> **string**
 
-| Name        | Type   | Description |
-| ----------- | ------ | ----------- |
-| buttonLabel | string |             |
-| buttonId    | string |             |
-| isPremium   | bool   |             |
+### {{% prop-heading "buttonId" %}}
+> **string**
+
+### {{% prop-heading "isPremium" %}}
+> **bool**
 
 ## Methods
-
-| Type                 | Name            | Parameters |
-| -------------------- | --------------- | ---------- |
-| [UIButton](/vext/ref/fb/uibutton/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [UIButton](/vext/ref/fb/uibutton)
 
-> [UIButton](/vext/ref/fb/uibutton/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[UIButton](/vext/ref/fb/uibutton)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIButton](/vext/ref/fb/uibutton) type.
+

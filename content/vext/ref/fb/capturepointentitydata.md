@@ -1,79 +1,244 @@
 ---
 title: CapturePointEntityData
 ---
-### Base Classes
 
-[GameEntityData](/vext/ref/fb/gameentitydata/)
+Inherits from 
+[GameEntityData](/vext/ref/fb/gameentitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[CapturePointEntityData](#constructor-0)**() |
+| **[CapturePointEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[CapturePointEntityData](#constructor-2)**(other: [GameEntityData](/vext/ref/fb/gameentitydata)) |
+| **[CapturePointEntityData](#constructor-3)**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata)) |
+| **[CapturePointEntityData](#constructor-4)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[CapturePointEntityData](#constructor-5)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[CapturePointEntityData](#constructor-6)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[CapturePointEntityData](#constructor-7)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "enemyTicketLossWhenCaptured" >}} | int |
+| {{< prop "minNrToTakeControl" >}} | int |
+| {{< prop "flagTemplates" >}} | [ObjectBlueprint](/vext/ref/fb/objectblueprint)[] |
+| {{< prop "capturePoint" >}} | [ObjectBlueprint](/vext/ref/fb/objectblueprint) \| nil |
+| {{< prop "initialOwnerTeam" >}} | [TeamId](/vext/ref/fb/teamid) |
+| {{< prop "captureRadius" >}} | float |
+| {{< prop "maxCaptureMultiplier" >}} | int |
+| {{< prop "areaValue" >}} | int |
+| {{< prop "spawnMenuListOrdinal" >}} | int |
+| {{< prop "areaValues" >}} | [AreaValueTeam](/vext/ref/fb/areavalueteam)[] |
+| {{< prop "timeToGetControl" >}} | int |
+| {{< prop "timeToLoseControl" >}} | int |
+| {{< prop "returnMultiplier" >}} | float |
+| {{< prop "onlyTakeableByTeam" >}} | int |
+| {{< prop "showRadius" >}} | float |
+| {{< prop "hideRadius" >}} | float |
+| {{< prop "addedMultiplierPerPlayer" >}} | float |
+| {{< prop "modify3DIconVerticalOffset" >}} | float |
+| {{< prop "capturableType" >}} | [CapturableType](/vext/ref/fb/capturabletype) |
+| {{< prop "intruderWarningSID" >}} | string |
+| {{< prop "isCapturedInUpperSphere" >}} | bool |
+| {{< prop "disableWhenLosingControl" >}} | bool |
+| {{< prop "loseControlWhenNotClose" >}} | bool |
+| {{< prop "disableIfEnemyInside" >}} | bool |
+| {{< prop "isVisible" >}} | bool |
+| {{< prop "forceSnap" >}} | bool |
+| {{< prop "useAreaValuesPerTeam" >}} | bool |
+| {{< prop "intruderWarning" >}} | bool |
+| {{< prop "showOnMinimap" >}} | bool |
+| {{< prop "hoistFlag" >}} | bool |
+| {{< prop "startAtBottom" >}} | bool |
+| {{< prop "removeWhenCaptured" >}} | bool |
+| {{< prop "seesawCapturing" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "CapturePointEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### CapturePointEntityData {#constructor-0}
+> **CapturePointEntityData**()
 
-| Constructor                                                                       | Description                                                                                                                         |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| CapturePointEntityData()                                                          | Create a new instance of this container type.                                                                                       |
-| CapturePointEntityData(CapturePointEntityData other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| CapturePointEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [CapturePointEntityData](/vext/ref/fb/capturepointentitydata/).                    |
-| CapturePointEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [CapturePointEntityData](/vext/ref/fb/capturepointentitydata/).              |
-| CapturePointEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [CapturePointEntityData](/vext/ref/fb/capturepointentitydata/).                            |
-| CapturePointEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [CapturePointEntityData](/vext/ref/fb/capturepointentitydata/).                    |
-| CapturePointEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [CapturePointEntityData](/vext/ref/fb/capturepointentitydata/).              |
-| CapturePointEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CapturePointEntityData](/vext/ref/fb/capturepointentitydata/). |
+Creates a new [CapturePointEntityData](/vext/ref/fb/capturepointentitydata) frostbite instance.
 
-## Properties
+### CapturePointEntityData {#constructor-1}
+> **CapturePointEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                        | Type                                   | Description |
-| --------------------------- | -------------------------------------- | ----------- |
-| enemyTicketLossWhenCaptured | number                                 |             |
-| minNrToTakeControl          | number                                 |             |
-| flagTemplates               | [ObjectBlueprint](/vext/ref/fb/objectblueprint/)\[\] |             |
-| capturePoint                | [ObjectBlueprint](/vext/ref/fb/objectblueprint/)     |             |
-| initialOwnerTeam            | [TeamId](/vext/ref/fb/teamid/)                       |             |
-| captureRadius               | number                                 |             |
-| maxCaptureMultiplier        | number                                 |             |
-| areaValue                   | number                                 |             |
-| spawnMenuListOrdinal        | number                                 |             |
-| areaValues                  | [AreaValueTeam](/vext/ref/fb/areavalueteam/)\[\]     |             |
-| timeToGetControl            | number                                 |             |
-| timeToLoseControl           | number                                 |             |
-| returnMultiplier            | number                                 |             |
-| onlyTakeableByTeam          | number                                 |             |
-| showRadius                  | number                                 |             |
-| hideRadius                  | number                                 |             |
-| addedMultiplierPerPlayer    | number                                 |             |
-| modify3DIconVerticalOffset  | number                                 |             |
-| capturableType              | [CapturableType](/vext/ref/fb/capturabletype/)       |             |
-| intruderWarningSID          | string                                 |             |
-| isCapturedInUpperSphere     | bool                                   |             |
-| disableWhenLosingControl    | bool                                   |             |
-| loseControlWhenNotClose     | bool                                   |             |
-| disableIfEnemyInside        | bool                                   |             |
-| isVisible                   | bool                                   |             |
-| forceSnap                   | bool                                   |             |
-| useAreaValuesPerTeam        | bool                                   |             |
-| intruderWarning             | bool                                   |             |
-| showOnMinimap               | bool                                   |             |
-| hoistFlag                   | bool                                   |             |
-| startAtBottom               | bool                                   |             |
-| removeWhenCaptured          | bool                                   |             |
-| seesawCapturing             | bool                                   |             |
-
-## Methods
-
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [CapturePointEntityData](/vext/ref/fb/capturepointentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [CapturePointEntityData](/vext/ref/fb/capturepointentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [CapturePointEntityData](/vext/ref/fb/capturepointentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### CapturePointEntityData {#constructor-2}
+> **CapturePointEntityData**(other: [GameEntityData](/vext/ref/fb/gameentitydata))
+
+Casts an instance of type [GameEntityData](/vext/ref/fb/gameentitydata) to [CapturePointEntityData](/vext/ref/fb/capturepointentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameEntityData](/vext/ref/fb/gameentitydata) | The instance to cast to [CapturePointEntityData](/vext/ref/fb/capturepointentitydata). |
+
+### CapturePointEntityData {#constructor-3}
+> **CapturePointEntityData**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata))
+
+Casts an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata) to [CapturePointEntityData](/vext/ref/fb/capturepointentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SpatialEntityData](/vext/ref/fb/spatialentitydata) | The instance to cast to [CapturePointEntityData](/vext/ref/fb/capturepointentitydata). |
+
+### CapturePointEntityData {#constructor-4}
+> **CapturePointEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [CapturePointEntityData](/vext/ref/fb/capturepointentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [CapturePointEntityData](/vext/ref/fb/capturepointentitydata). |
+
+### CapturePointEntityData {#constructor-5}
+> **CapturePointEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [CapturePointEntityData](/vext/ref/fb/capturepointentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [CapturePointEntityData](/vext/ref/fb/capturepointentitydata). |
+
+### CapturePointEntityData {#constructor-6}
+> **CapturePointEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [CapturePointEntityData](/vext/ref/fb/capturepointentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [CapturePointEntityData](/vext/ref/fb/capturepointentitydata). |
+
+### CapturePointEntityData {#constructor-7}
+> **CapturePointEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CapturePointEntityData](/vext/ref/fb/capturepointentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [CapturePointEntityData](/vext/ref/fb/capturepointentitydata). |
+
+## Properties
+### {{% prop-heading "enemyTicketLossWhenCaptured" %}}
+> **int**
+
+### {{% prop-heading "minNrToTakeControl" %}}
+> **int**
+
+### {{% prop-heading "flagTemplates" %}}
+> **[ObjectBlueprint](/vext/ref/fb/objectblueprint)**[]
+
+### {{% prop-heading "capturePoint" %}}
+> **[ObjectBlueprint](/vext/ref/fb/objectblueprint)** | **nil**
+
+### {{% prop-heading "initialOwnerTeam" %}}
+> **[TeamId](/vext/ref/fb/teamid)**
+
+### {{% prop-heading "captureRadius" %}}
+> **float**
+
+### {{% prop-heading "maxCaptureMultiplier" %}}
+> **int**
+
+### {{% prop-heading "areaValue" %}}
+> **int**
+
+### {{% prop-heading "spawnMenuListOrdinal" %}}
+> **int**
+
+### {{% prop-heading "areaValues" %}}
+> **[AreaValueTeam](/vext/ref/fb/areavalueteam)**[]
+
+### {{% prop-heading "timeToGetControl" %}}
+> **int**
+
+### {{% prop-heading "timeToLoseControl" %}}
+> **int**
+
+### {{% prop-heading "returnMultiplier" %}}
+> **float**
+
+### {{% prop-heading "onlyTakeableByTeam" %}}
+> **int**
+
+### {{% prop-heading "showRadius" %}}
+> **float**
+
+### {{% prop-heading "hideRadius" %}}
+> **float**
+
+### {{% prop-heading "addedMultiplierPerPlayer" %}}
+> **float**
+
+### {{% prop-heading "modify3DIconVerticalOffset" %}}
+> **float**
+
+### {{% prop-heading "capturableType" %}}
+> **[CapturableType](/vext/ref/fb/capturabletype)**
+
+### {{% prop-heading "intruderWarningSID" %}}
+> **string**
+
+### {{% prop-heading "isCapturedInUpperSphere" %}}
+> **bool**
+
+### {{% prop-heading "disableWhenLosingControl" %}}
+> **bool**
+
+### {{% prop-heading "loseControlWhenNotClose" %}}
+> **bool**
+
+### {{% prop-heading "disableIfEnemyInside" %}}
+> **bool**
+
+### {{% prop-heading "isVisible" %}}
+> **bool**
+
+### {{% prop-heading "forceSnap" %}}
+> **bool**
+
+### {{% prop-heading "useAreaValuesPerTeam" %}}
+> **bool**
+
+### {{% prop-heading "intruderWarning" %}}
+> **bool**
+
+### {{% prop-heading "showOnMinimap" %}}
+> **bool**
+
+### {{% prop-heading "hoistFlag" %}}
+> **bool**
+
+### {{% prop-heading "startAtBottom" %}}
+> **bool**
+
+### {{% prop-heading "removeWhenCaptured" %}}
+> **bool**
+
+### {{% prop-heading "seesawCapturing" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [CapturePointEntityData](/vext/ref/fb/capturepointentitydata) type.
+

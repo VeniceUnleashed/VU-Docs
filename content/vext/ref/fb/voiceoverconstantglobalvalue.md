@@ -1,43 +1,72 @@
 ---
 title: VoiceOverConstantGlobalValue
 ---
-### Base Classes
 
-[VoiceOverConstantValue](/vext/ref/fb/voiceoverconstantvalue/)
+Inherits from 
+[VoiceOverConstantValue](/vext/ref/fb/voiceoverconstantvalue)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VoiceOverConstantGlobalValue](#constructor-0)**() |
+| **[VoiceOverConstantGlobalValue](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VoiceOverConstantGlobalValue](#constructor-2)**(other: [VoiceOverConstantValue](/vext/ref/fb/voiceoverconstantvalue)) |
+| **[VoiceOverConstantGlobalValue](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "source" >}} | [VoiceOverGlobalConstantValue](/vext/ref/fb/voiceoverglobalconstantvalue) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VoiceOverConstantGlobalValue" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VoiceOverConstantGlobalValue {#constructor-0}
+> **VoiceOverConstantGlobalValue**()
 
-| Constructor                                                                             | Description                                                                                                                                     |
-| --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| VoiceOverConstantGlobalValue()                                                          | Create a new instance of this container type.                                                                                                   |
-| VoiceOverConstantGlobalValue(VoiceOverConstantGlobalValue other)                        | Create a reference copy of an instance of the same type.                                                                                        |
-| VoiceOverConstantGlobalValue([VoiceOverConstantValue](/vext/ref/fb/voiceoverconstantvalue/) other)    | Upcast an instance of type [VoiceOverConstantValue](/vext/ref/fb/voiceoverconstantvalue/) to [VoiceOverConstantGlobalValue](/vext/ref/fb/voiceoverconstantglobalvalue/).    |
-| VoiceOverConstantGlobalValue([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverConstantGlobalValue](/vext/ref/fb/voiceoverconstantglobalvalue/). |
+Creates a new [VoiceOverConstantGlobalValue](/vext/ref/fb/voiceoverconstantglobalvalue) frostbite instance.
 
-## Properties
+### VoiceOverConstantGlobalValue {#constructor-1}
+> **VoiceOverConstantGlobalValue**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name   | Type                                                         | Description |
-| ------ | ------------------------------------------------------------ | ----------- |
-| source | [VoiceOverGlobalConstantValue](/vext/ref/fb/voiceoverglobalconstantvalue/) |             |
-
-## Methods
-
-| Type                                                         | Name            | Parameters                                     |
-| ------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [VoiceOverConstantGlobalValue](/vext/ref/fb/voiceoverconstantglobalvalue/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VoiceOverConstantGlobalValue](/vext/ref/fb/voiceoverconstantglobalvalue/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VoiceOverConstantGlobalValue](/vext/ref/fb/voiceoverconstantglobalvalue) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VoiceOverConstantGlobalValue {#constructor-2}
+> **VoiceOverConstantGlobalValue**(other: [VoiceOverConstantValue](/vext/ref/fb/voiceoverconstantvalue))
+
+Casts an instance of type [VoiceOverConstantValue](/vext/ref/fb/voiceoverconstantvalue) to [VoiceOverConstantGlobalValue](/vext/ref/fb/voiceoverconstantglobalvalue). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [VoiceOverConstantValue](/vext/ref/fb/voiceoverconstantvalue) | The instance to cast to [VoiceOverConstantGlobalValue](/vext/ref/fb/voiceoverconstantglobalvalue). |
+
+### VoiceOverConstantGlobalValue {#constructor-3}
+> **VoiceOverConstantGlobalValue**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverConstantGlobalValue](/vext/ref/fb/voiceoverconstantglobalvalue). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VoiceOverConstantGlobalValue](/vext/ref/fb/voiceoverconstantglobalvalue). |
+
+## Properties
+### {{% prop-heading "source" %}}
+> **[VoiceOverGlobalConstantValue](/vext/ref/fb/voiceoverglobalconstantvalue)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VoiceOverConstantGlobalValue](/vext/ref/fb/voiceoverconstantglobalvalue) type.
+

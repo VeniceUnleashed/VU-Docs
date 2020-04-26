@@ -1,35 +1,69 @@
 ---
 title: OverHeatData
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[OverHeatData](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "heatPerBullet" >}} | float |
+| {{< prop "heatDropPerSecond" >}} | float |
+| {{< prop "overHeatPenaltyTime" >}} | float |
+| {{< prop "overHeatThreshold" >}} | float |
+| {{< prop "overHeatEffect" >}} | [FireEffectData](/vext/ref/fb/fireeffectdata) |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [OverHeatData](/vext/ref/fb/overheatdata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "OverHeatData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### OverHeatData {#constructor-0}
+> **OverHeatData**()
 
-| Constructor                      | Description                                              |
-| -------------------------------- | -------------------------------------------------------- |
-| OverHeatData()                   | Create a new instance of this structure type.            |
-| OverHeatData(OverHeatData other) | Create a reference copy of a structure of the same type. |
+Creates a new [OverHeatData](/vext/ref/fb/overheatdata) frostbite structure.
 
 ## Properties
+### {{% prop-heading "heatPerBullet" %}}
+> **float**
 
-| Name                | Type                             | Description |
-| ------------------- | -------------------------------- | ----------- |
-| heatPerBullet       | number                           |             |
-| heatDropPerSecond   | number                           |             |
-| overHeatPenaltyTime | number                           |             |
-| overHeatThreshold   | number                           |             |
-| overHeatEffect      | [FireEffectData](/vext/ref/fb/fireeffectdata/) |             |
+### {{% prop-heading "heatDropPerSecond" %}}
+> **float**
+
+### {{% prop-heading "overHeatPenaltyTime" %}}
+> **float**
+
+### {{% prop-heading "overHeatThreshold" %}}
+> **float**
+
+### {{% prop-heading "overHeatEffect" %}}
+> **[FireEffectData](/vext/ref/fb/fireeffectdata)**
 
 ## Methods
-
-| Type                         | Name            | Parameters |
-| ---------------------------- | --------------- | ---------- |
-| [OverHeatData](/vext/ref/fb/overheatdata/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [OverHeatData](/vext/ref/fb/overheatdata)
 
-> [OverHeatData](/vext/ref/fb/overheatdata/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[OverHeatData](/vext/ref/fb/overheatdata)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [OverHeatData](/vext/ref/fb/overheatdata) type.
+

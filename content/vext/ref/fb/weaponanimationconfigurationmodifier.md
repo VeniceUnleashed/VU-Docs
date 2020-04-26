@@ -1,45 +1,80 @@
 ---
 title: WeaponAnimationConfigurationModifier
 ---
-### Base Classes
 
-[WeaponModifierBase](/vext/ref/fb/weaponmodifierbase/)
+Inherits from 
+[WeaponModifierBase](/vext/ref/fb/weaponmodifierbase)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[WeaponAnimationConfigurationModifier](#constructor-0)**() |
+| **[WeaponAnimationConfigurationModifier](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[WeaponAnimationConfigurationModifier](#constructor-2)**(other: [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase)) |
+| **[WeaponAnimationConfigurationModifier](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "zoomInOutMeshTransitionFactors" >}} | float[] |
+| {{< prop "animationConfiguration" >}} | [AnimationConfigurationData](/vext/ref/fb/animationconfigurationdata) |
+| {{< prop "animatedFireType" >}} | [AnimatedFireEnum](/vext/ref/fb/animatedfireenum) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "WeaponAnimationConfigurationModifier" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### WeaponAnimationConfigurationModifier {#constructor-0}
+> **WeaponAnimationConfigurationModifier**()
 
-| Constructor                                                                                     | Description                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| WeaponAnimationConfigurationModifier()                                                          | Create a new instance of this container type.                                                                                                                   |
-| WeaponAnimationConfigurationModifier(WeaponAnimationConfigurationModifier other)                | Create a reference copy of an instance of the same type.                                                                                                        |
-| WeaponAnimationConfigurationModifier([WeaponModifierBase](/vext/ref/fb/weaponmodifierbase/) other)            | Upcast an instance of type [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase/) to [WeaponAnimationConfigurationModifier](/vext/ref/fb/weaponanimationconfigurationmodifier/).            |
-| WeaponAnimationConfigurationModifier([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponAnimationConfigurationModifier](/vext/ref/fb/weaponanimationconfigurationmodifier/). |
+Creates a new [WeaponAnimationConfigurationModifier](/vext/ref/fb/weaponanimationconfigurationmodifier) frostbite instance.
 
-## Properties
+### WeaponAnimationConfigurationModifier {#constructor-1}
+> **WeaponAnimationConfigurationModifier**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                           | Type                                                     | Description |
-| ------------------------------ | -------------------------------------------------------- | ----------- |
-| zoomInOutMeshTransitionFactors | number\[\]                                               |             |
-| animationConfiguration         | [AnimationConfigurationData](/vext/ref/fb/animationconfigurationdata/) |             |
-| animatedFireType               | [AnimatedFireEnum](/vext/ref/fb/animatedfireenum/)                     |             |
-
-## Methods
-
-| Type                                                                         | Name            | Parameters                                     |
-| ---------------------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [WeaponAnimationConfigurationModifier](/vext/ref/fb/weaponanimationconfigurationmodifier/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [WeaponAnimationConfigurationModifier](/vext/ref/fb/weaponanimationconfigurationmodifier/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [WeaponAnimationConfigurationModifier](/vext/ref/fb/weaponanimationconfigurationmodifier) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### WeaponAnimationConfigurationModifier {#constructor-2}
+> **WeaponAnimationConfigurationModifier**(other: [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase))
+
+Casts an instance of type [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase) to [WeaponAnimationConfigurationModifier](/vext/ref/fb/weaponanimationconfigurationmodifier). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase) | The instance to cast to [WeaponAnimationConfigurationModifier](/vext/ref/fb/weaponanimationconfigurationmodifier). |
+
+### WeaponAnimationConfigurationModifier {#constructor-3}
+> **WeaponAnimationConfigurationModifier**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponAnimationConfigurationModifier](/vext/ref/fb/weaponanimationconfigurationmodifier). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [WeaponAnimationConfigurationModifier](/vext/ref/fb/weaponanimationconfigurationmodifier). |
+
+## Properties
+### {{% prop-heading "zoomInOutMeshTransitionFactors" %}}
+> **float**[]
+
+### {{% prop-heading "animationConfiguration" %}}
+> **[AnimationConfigurationData](/vext/ref/fb/animationconfigurationdata)**
+
+### {{% prop-heading "animatedFireType" %}}
+> **[AnimatedFireEnum](/vext/ref/fb/animatedfireenum)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [WeaponAnimationConfigurationModifier](/vext/ref/fb/weaponanimationconfigurationmodifier) type.
+

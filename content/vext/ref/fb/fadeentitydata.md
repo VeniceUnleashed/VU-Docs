@@ -1,52 +1,122 @@
 ---
 title: FadeEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[FadeEntityData](#constructor-0)**() |
+| **[FadeEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[FadeEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[FadeEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[FadeEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[FadeEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "fadeTime" >}} | float |
+| {{< prop "maxWaitFadedWhileStreamingTime" >}} | float |
+| {{< prop "fadeScreen" >}} | bool |
+| {{< prop "fadeUI" >}} | bool |
+| {{< prop "fadeRumble" >}} | bool |
+| {{< prop "fadeAudio" >}} | bool |
+| {{< prop "fadeMovie" >}} | bool |
+| {{< prop "startFaded" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "FadeEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### FadeEntityData {#constructor-0}
+> **FadeEntityData**()
 
-| Constructor                                                               | Description                                                                                                         |
-| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| FadeEntityData()                                                          | Create a new instance of this container type.                                                                       |
-| FadeEntityData(FadeEntityData other)                                      | Create a reference copy of an instance of the same type.                                                            |
-| FadeEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [FadeEntityData](/vext/ref/fb/fadeentitydata/).                            |
-| FadeEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [FadeEntityData](/vext/ref/fb/fadeentitydata/).                    |
-| FadeEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [FadeEntityData](/vext/ref/fb/fadeentitydata/).              |
-| FadeEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [FadeEntityData](/vext/ref/fb/fadeentitydata/). |
+Creates a new [FadeEntityData](/vext/ref/fb/fadeentitydata) frostbite instance.
 
-## Properties
+### FadeEntityData {#constructor-1}
+> **FadeEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                           | Type   | Description |
-| ------------------------------ | ------ | ----------- |
-| fadeTime                       | number |             |
-| maxWaitFadedWhileStreamingTime | number |             |
-| fadeScreen                     | bool   |             |
-| fadeUI                         | bool   |             |
-| fadeRumble                     | bool   |             |
-| fadeAudio                      | bool   |             |
-| fadeMovie                      | bool   |             |
-| startFaded                     | bool   |             |
-
-## Methods
-
-| Type                             | Name            | Parameters                                     |
-| -------------------------------- | --------------- | ---------------------------------------------- |
-| [FadeEntityData](/vext/ref/fb/fadeentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [FadeEntityData](/vext/ref/fb/fadeentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [FadeEntityData](/vext/ref/fb/fadeentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### FadeEntityData {#constructor-2}
+> **FadeEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [FadeEntityData](/vext/ref/fb/fadeentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [FadeEntityData](/vext/ref/fb/fadeentitydata). |
+
+### FadeEntityData {#constructor-3}
+> **FadeEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [FadeEntityData](/vext/ref/fb/fadeentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [FadeEntityData](/vext/ref/fb/fadeentitydata). |
+
+### FadeEntityData {#constructor-4}
+> **FadeEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [FadeEntityData](/vext/ref/fb/fadeentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [FadeEntityData](/vext/ref/fb/fadeentitydata). |
+
+### FadeEntityData {#constructor-5}
+> **FadeEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [FadeEntityData](/vext/ref/fb/fadeentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [FadeEntityData](/vext/ref/fb/fadeentitydata). |
+
+## Properties
+### {{% prop-heading "fadeTime" %}}
+> **float**
+
+### {{% prop-heading "maxWaitFadedWhileStreamingTime" %}}
+> **float**
+
+### {{% prop-heading "fadeScreen" %}}
+> **bool**
+
+### {{% prop-heading "fadeUI" %}}
+> **bool**
+
+### {{% prop-heading "fadeRumble" %}}
+> **bool**
+
+### {{% prop-heading "fadeAudio" %}}
+> **bool**
+
+### {{% prop-heading "fadeMovie" %}}
+> **bool**
+
+### {{% prop-heading "startFaded" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [FadeEntityData](/vext/ref/fb/fadeentitydata) type.
+

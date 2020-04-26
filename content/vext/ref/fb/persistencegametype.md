@@ -1,15 +1,12 @@
 ---
 title: PersistenceGameType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **PersistenceGameType_Singleplayer** | Value: **0** |
+| **PersistenceGameType_Cooperative** | Value: **1** |
+| **PersistenceGameType_Multiplayer** | Value: **2** |
+| **PersistenceGameType_Count** | Value: **3** |
 
-| Name                              | Value | Description |
-| --------------------------------- | ----- | ----------- |
-| PersistenceGameType\_Singleplayer | 0     |             |
-| PersistenceGameType\_Cooperative  | 1     |             |
-| PersistenceGameType\_Multiplayer  | 2     |             |
-| PersistenceGameType\_Count        | 3     |             |

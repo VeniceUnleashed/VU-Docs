@@ -1,45 +1,73 @@
 ---
 title: UINodePort
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UINodePort](#constructor-0)**() |
+| **[UINodePort](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UINodePort](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "name" >}} | string |
+| {{< prop "instanceName" >}} | string |
+| {{< prop "query" >}} | [UIWidgetEventID](/vext/ref/fb/uiwidgeteventid) |
+| {{< prop "allowManualRemove" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UINodePort" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UINodePort {#constructor-0}
+> **UINodePort**()
 
-| Constructor                                                           | Description                                                                                                 |
-| --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| UINodePort()                                                          | Create a new instance of this container type.                                                               |
-| UINodePort(UINodePort other)                                          | Create a reference copy of an instance of the same type.                                                    |
-| UINodePort([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UINodePort](/vext/ref/fb/uinodeport/). |
+Creates a new [UINodePort](/vext/ref/fb/uinodeport) frostbite instance.
 
-## Properties
+### UINodePort {#constructor-1}
+> **UINodePort**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name              | Type                               | Description |
-| ----------------- | ---------------------------------- | ----------- |
-| name              | string                             |             |
-| instanceName      | string                             |             |
-| query             | [UIWidgetEventID](/vext/ref/fb/uiwidgeteventid/) |             |
-| allowManualRemove | bool                               |             |
-
-## Methods
-
-| Type                     | Name            | Parameters                                     |
-| ------------------------ | --------------- | ---------------------------------------------- |
-| [UINodePort](/vext/ref/fb/uinodeport/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UINodePort](/vext/ref/fb/uinodeport/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UINodePort](/vext/ref/fb/uinodeport) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UINodePort {#constructor-2}
+> **UINodePort**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UINodePort](/vext/ref/fb/uinodeport). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UINodePort](/vext/ref/fb/uinodeport). |
+
+## Properties
+### {{% prop-heading "name" %}}
+> **string**
+
+### {{% prop-heading "instanceName" %}}
+> **string**
+
+### {{% prop-heading "query" %}}
+> **[UIWidgetEventID](/vext/ref/fb/uiwidgeteventid)**
+
+### {{% prop-heading "allowManualRemove" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UINodePort](/vext/ref/fb/uinodeport) type.
+

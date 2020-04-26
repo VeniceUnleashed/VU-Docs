@@ -1,17 +1,14 @@
 ---
 title: LockType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **LockAlways** | Value: **0** |
+| **LockOnRadar** | Value: **1** |
+| **LockOnHeat** | Value: **2** |
+| **LockOnLaserPainted** | Value: **3** |
+| **LockNever** | Value: **4** |
+| **LockTypeCount** | Value: **5** |
 
-| Name               | Value | Description |
-| ------------------ | ----- | ----------- |
-| LockAlways         | 0     |             |
-| LockOnRadar        | 1     |             |
-| LockOnHeat         | 2     |             |
-| LockOnLaserPainted | 3     |             |
-| LockNever          | 4     |             |
-| LockTypeCount      | 5     |             |

@@ -1,17 +1,14 @@
 ---
 title: ScoreboardPosition
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ScoreboardPosition_FirstPlace** | Value: **0** |
+| **ScoreboardPosition_SecondPlace** | Value: **1** |
+| **ScoreboardPosition_ThirdPlace** | Value: **2** |
+| **ScoreboardPosition_FourthPlace** | Value: **3** |
+| **ScoreboardPosition_FifthPlace** | Value: **4** |
+| **ScoreboardPosition_LAST_ITEM** | Value: **5** |
 
-| Name                            | Value | Description |
-| ------------------------------- | ----- | ----------- |
-| ScoreboardPosition\_FirstPlace  | 0     |             |
-| ScoreboardPosition\_SecondPlace | 1     |             |
-| ScoreboardPosition\_ThirdPlace  | 2     |             |
-| ScoreboardPosition\_FourthPlace | 3     |             |
-| ScoreboardPosition\_FifthPlace  | 4     |             |
-| ScoreboardPosition\_LAST\_ITEM  | 5     |             |

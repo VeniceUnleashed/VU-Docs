@@ -1,43 +1,65 @@
 ---
 title: MobilityData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MobilityData](#constructor-0)**() |
+| **[MobilityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MobilityData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "maxSpeed" >}} | float |
+| {{< prop "use3DWaypoints" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MobilityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MobilityData {#constructor-0}
+> **MobilityData**()
 
-| Constructor                                                             | Description                                                                                                     |
-| ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| MobilityData()                                                          | Create a new instance of this container type.                                                                   |
-| MobilityData(MobilityData other)                                        | Create a reference copy of an instance of the same type.                                                        |
-| MobilityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MobilityData](/vext/ref/fb/mobilitydata/). |
+Creates a new [MobilityData](/vext/ref/fb/mobilitydata) frostbite instance.
 
-## Properties
+### MobilityData {#constructor-1}
+> **MobilityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name           | Type   | Description |
-| -------------- | ------ | ----------- |
-| maxSpeed       | number |             |
-| use3DWaypoints | bool   |             |
-
-## Methods
-
-| Type                         | Name            | Parameters                                     |
-| ---------------------------- | --------------- | ---------------------------------------------- |
-| [MobilityData](/vext/ref/fb/mobilitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MobilityData](/vext/ref/fb/mobilitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MobilityData](/vext/ref/fb/mobilitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MobilityData {#constructor-2}
+> **MobilityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MobilityData](/vext/ref/fb/mobilitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MobilityData](/vext/ref/fb/mobilitydata). |
+
+## Properties
+### {{% prop-heading "maxSpeed" %}}
+> **float**
+
+### {{% prop-heading "use3DWaypoints" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MobilityData](/vext/ref/fb/mobilitydata) type.
+

@@ -1,13 +1,10 @@
 ---
 title: CollisionMethodEnum
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **CMESimple** | Value: **0** |
+| **CMEDetailed** | Value: **1** |
 
-| Name        | Value | Description |
-| ----------- | ----- | ----------- |
-| CMESimple   | 0     |             |
-| CMEDetailed | 1     |             |

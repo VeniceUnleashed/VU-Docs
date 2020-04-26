@@ -1,36 +1,52 @@
 ---
 title: LevelDescriptionComponent
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[LevelDescriptionComponent](#constructor-0)**() |
+| **[LevelDescriptionComponent](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[LevelDescriptionComponent](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "LevelDescriptionComponent" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### LevelDescriptionComponent {#constructor-0}
+> **LevelDescriptionComponent**()
 
-| Constructor                                                                          | Description                                                                                                                               |
-| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| LevelDescriptionComponent()                                                          | Create a new instance of this container type.                                                                                             |
-| LevelDescriptionComponent(LevelDescriptionComponent other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| LevelDescriptionComponent([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent/). |
+Creates a new [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent) frostbite instance.
 
-## Methods
+### LevelDescriptionComponent {#constructor-1}
+> **LevelDescriptionComponent**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                                   | Name            | Parameters                                     |
-| ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### LevelDescriptionComponent {#constructor-2}
+> **LevelDescriptionComponent**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent) type.
+

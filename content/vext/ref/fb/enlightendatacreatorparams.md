@@ -1,42 +1,61 @@
 ---
 title: EnlightenDataCreatorParams
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[EnlightenDataCreatorParams](#constructor-0)**() |
+| **[EnlightenDataCreatorParams](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[EnlightenDataCreatorParams](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "assetName" >}} | string |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "EnlightenDataCreatorParams" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### EnlightenDataCreatorParams {#constructor-0}
+> **EnlightenDataCreatorParams**()
 
-| Constructor                                                                           | Description                                                                                                                                 |
-| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| EnlightenDataCreatorParams()                                                          | Create a new instance of this container type.                                                                                               |
-| EnlightenDataCreatorParams(EnlightenDataCreatorParams other)                          | Create a reference copy of an instance of the same type.                                                                                    |
-| EnlightenDataCreatorParams([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EnlightenDataCreatorParams](/vext/ref/fb/enlightendatacreatorparams/). |
+Creates a new [EnlightenDataCreatorParams](/vext/ref/fb/enlightendatacreatorparams) frostbite instance.
 
-## Properties
+### EnlightenDataCreatorParams {#constructor-1}
+> **EnlightenDataCreatorParams**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name      | Type   | Description |
-| --------- | ------ | ----------- |
-| assetName | string |             |
-
-## Methods
-
-| Type                                                     | Name            | Parameters                                     |
-| -------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [EnlightenDataCreatorParams](/vext/ref/fb/enlightendatacreatorparams/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [EnlightenDataCreatorParams](/vext/ref/fb/enlightendatacreatorparams/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [EnlightenDataCreatorParams](/vext/ref/fb/enlightendatacreatorparams) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### EnlightenDataCreatorParams {#constructor-2}
+> **EnlightenDataCreatorParams**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EnlightenDataCreatorParams](/vext/ref/fb/enlightendatacreatorparams). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [EnlightenDataCreatorParams](/vext/ref/fb/enlightendatacreatorparams). |
+
+## Properties
+### {{% prop-heading "assetName" %}}
+> **string**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [EnlightenDataCreatorParams](/vext/ref/fb/enlightendatacreatorparams) type.
+

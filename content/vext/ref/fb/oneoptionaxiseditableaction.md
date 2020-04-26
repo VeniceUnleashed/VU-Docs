@@ -1,44 +1,76 @@
 ---
 title: OneOptionAxisEditableAction
 ---
-### Base Classes
 
-[EditableAction](/vext/ref/fb/editableaction/)
+Inherits from 
+[EditableAction](/vext/ref/fb/editableaction)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[OneOptionAxisEditableAction](#constructor-0)**() |
+| **[OneOptionAxisEditableAction](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[OneOptionAxisEditableAction](#constructor-2)**(other: [EditableAction](/vext/ref/fb/editableaction)) |
+| **[OneOptionAxisEditableAction](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "header" >}} | string |
+| {{< prop "invert" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "OneOptionAxisEditableAction" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### OneOptionAxisEditableAction {#constructor-0}
+> **OneOptionAxisEditableAction**()
 
-| Constructor                                                                            | Description                                                                                                                                   |
-| -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| OneOptionAxisEditableAction()                                                          | Create a new instance of this container type.                                                                                                 |
-| OneOptionAxisEditableAction(OneOptionAxisEditableAction other)                         | Create a reference copy of an instance of the same type.                                                                                      |
-| OneOptionAxisEditableAction([EditableAction](/vext/ref/fb/editableaction/) other)                    | Upcast an instance of type [EditableAction](/vext/ref/fb/editableaction/) to [OneOptionAxisEditableAction](/vext/ref/fb/oneoptionaxiseditableaction/).                    |
-| OneOptionAxisEditableAction([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [OneOptionAxisEditableAction](/vext/ref/fb/oneoptionaxiseditableaction/). |
+Creates a new [OneOptionAxisEditableAction](/vext/ref/fb/oneoptionaxiseditableaction) frostbite instance.
 
-## Properties
+### OneOptionAxisEditableAction {#constructor-1}
+> **OneOptionAxisEditableAction**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name   | Type   | Description |
-| ------ | ------ | ----------- |
-| header | string |             |
-| invert | bool   |             |
-
-## Methods
-
-| Type                                                       | Name            | Parameters                                     |
-| ---------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [OneOptionAxisEditableAction](/vext/ref/fb/oneoptionaxiseditableaction/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [OneOptionAxisEditableAction](/vext/ref/fb/oneoptionaxiseditableaction/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [OneOptionAxisEditableAction](/vext/ref/fb/oneoptionaxiseditableaction) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### OneOptionAxisEditableAction {#constructor-2}
+> **OneOptionAxisEditableAction**(other: [EditableAction](/vext/ref/fb/editableaction))
+
+Casts an instance of type [EditableAction](/vext/ref/fb/editableaction) to [OneOptionAxisEditableAction](/vext/ref/fb/oneoptionaxiseditableaction). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EditableAction](/vext/ref/fb/editableaction) | The instance to cast to [OneOptionAxisEditableAction](/vext/ref/fb/oneoptionaxiseditableaction). |
+
+### OneOptionAxisEditableAction {#constructor-3}
+> **OneOptionAxisEditableAction**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [OneOptionAxisEditableAction](/vext/ref/fb/oneoptionaxiseditableaction). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [OneOptionAxisEditableAction](/vext/ref/fb/oneoptionaxiseditableaction). |
+
+## Properties
+### {{% prop-heading "header" %}}
+> **string**
+
+### {{% prop-heading "invert" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [OneOptionAxisEditableAction](/vext/ref/fb/oneoptionaxiseditableaction) type.
+

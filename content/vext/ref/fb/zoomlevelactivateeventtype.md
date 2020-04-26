@@ -1,14 +1,11 @@
 ---
 title: ZoomLevelActivateEventType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ZoomLevelActivateEventType_Disable** | Value: **0** |
+| **ZoomLevelActivateEventType_Enable** | Value: **1** |
+| **ZoomLevelActivateEventType_ToggleOnLightSwitch** | Value: **2** |
 
-| Name                                            | Value | Description |
-| ----------------------------------------------- | ----- | ----------- |
-| ZoomLevelActivateEventType\_Disable             | 0     |             |
-| ZoomLevelActivateEventType\_Enable              | 1     |             |
-| ZoomLevelActivateEventType\_ToggleOnLightSwitch | 2     |             |

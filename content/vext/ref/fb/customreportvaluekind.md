@@ -1,13 +1,10 @@
 ---
 title: CustomReportValueKind
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **CustomReportValueKind_ScoreMultiplier** | Value: **0** |
+| **CustomReportValueKind_GunMasterLevel** | Value: **1** |
 
-| Name                                   | Value | Description |
-| -------------------------------------- | ----- | ----------- |
-| CustomReportValueKind\_ScoreMultiplier | 0     |             |
-| CustomReportValueKind\_GunMasterLevel  | 1     |             |

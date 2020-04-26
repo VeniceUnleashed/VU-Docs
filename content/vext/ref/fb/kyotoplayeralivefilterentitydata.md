@@ -1,39 +1,85 @@
 ---
 title: KyotoPlayerAliveFilterEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[KyotoPlayerAliveFilterEntityData](#constructor-0)**() |
+| **[KyotoPlayerAliveFilterEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[KyotoPlayerAliveFilterEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[KyotoPlayerAliveFilterEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[KyotoPlayerAliveFilterEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[KyotoPlayerAliveFilterEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "KyotoPlayerAliveFilterEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### KyotoPlayerAliveFilterEntityData {#constructor-0}
+> **KyotoPlayerAliveFilterEntityData**()
 
-| Constructor                                                                                 | Description                                                                                                                                             |
-| ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| KyotoPlayerAliveFilterEntityData()                                                          | Create a new instance of this container type.                                                                                                           |
-| KyotoPlayerAliveFilterEntityData(KyotoPlayerAliveFilterEntityData other)                    | Create a reference copy of an instance of the same type.                                                                                                |
-| KyotoPlayerAliveFilterEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [KyotoPlayerAliveFilterEntityData](/vext/ref/fb/kyotoplayeralivefilterentitydata/).                            |
-| KyotoPlayerAliveFilterEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [KyotoPlayerAliveFilterEntityData](/vext/ref/fb/kyotoplayeralivefilterentitydata/).                    |
-| KyotoPlayerAliveFilterEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [KyotoPlayerAliveFilterEntityData](/vext/ref/fb/kyotoplayeralivefilterentitydata/).              |
-| KyotoPlayerAliveFilterEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [KyotoPlayerAliveFilterEntityData](/vext/ref/fb/kyotoplayeralivefilterentitydata/). |
+Creates a new [KyotoPlayerAliveFilterEntityData](/vext/ref/fb/kyotoplayeralivefilterentitydata) frostbite instance.
 
-## Methods
+### KyotoPlayerAliveFilterEntityData {#constructor-1}
+> **KyotoPlayerAliveFilterEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                                                 | Name            | Parameters                                     |
-| -------------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [KyotoPlayerAliveFilterEntityData](/vext/ref/fb/kyotoplayeralivefilterentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [KyotoPlayerAliveFilterEntityData](/vext/ref/fb/kyotoplayeralivefilterentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [KyotoPlayerAliveFilterEntityData](/vext/ref/fb/kyotoplayeralivefilterentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### KyotoPlayerAliveFilterEntityData {#constructor-2}
+> **KyotoPlayerAliveFilterEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [KyotoPlayerAliveFilterEntityData](/vext/ref/fb/kyotoplayeralivefilterentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [KyotoPlayerAliveFilterEntityData](/vext/ref/fb/kyotoplayeralivefilterentitydata). |
+
+### KyotoPlayerAliveFilterEntityData {#constructor-3}
+> **KyotoPlayerAliveFilterEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [KyotoPlayerAliveFilterEntityData](/vext/ref/fb/kyotoplayeralivefilterentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [KyotoPlayerAliveFilterEntityData](/vext/ref/fb/kyotoplayeralivefilterentitydata). |
+
+### KyotoPlayerAliveFilterEntityData {#constructor-4}
+> **KyotoPlayerAliveFilterEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [KyotoPlayerAliveFilterEntityData](/vext/ref/fb/kyotoplayeralivefilterentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [KyotoPlayerAliveFilterEntityData](/vext/ref/fb/kyotoplayeralivefilterentitydata). |
+
+### KyotoPlayerAliveFilterEntityData {#constructor-5}
+> **KyotoPlayerAliveFilterEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [KyotoPlayerAliveFilterEntityData](/vext/ref/fb/kyotoplayeralivefilterentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [KyotoPlayerAliveFilterEntityData](/vext/ref/fb/kyotoplayeralivefilterentitydata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [KyotoPlayerAliveFilterEntityData](/vext/ref/fb/kyotoplayeralivefilterentitydata) type.
+

@@ -1,43 +1,65 @@
 ---
 title: CollisionData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[CollisionData](#constructor-0)**() |
+| **[CollisionData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[CollisionData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "damageAtVerticalVelocity" >}} | [ValueAtX](/vext/ref/fb/valueatx)[] |
+| {{< prop "damageAtHorizVelocity" >}} | [ValueAtX](/vext/ref/fb/valueatx)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "CollisionData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### CollisionData {#constructor-0}
+> **CollisionData**()
 
-| Constructor                                                              | Description                                                                                                       |
-| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| CollisionData()                                                          | Create a new instance of this container type.                                                                     |
-| CollisionData(CollisionData other)                                       | Create a reference copy of an instance of the same type.                                                          |
-| CollisionData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CollisionData](/vext/ref/fb/collisiondata/). |
+Creates a new [CollisionData](/vext/ref/fb/collisiondata) frostbite instance.
 
-## Properties
+### CollisionData {#constructor-1}
+> **CollisionData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                     | Type                     | Description |
-| ------------------------ | ------------------------ | ----------- |
-| damageAtVerticalVelocity | [ValueAtX](/vext/ref/fb/valueatx/)\[\] |             |
-| damageAtHorizVelocity    | [ValueAtX](/vext/ref/fb/valueatx/)\[\] |             |
-
-## Methods
-
-| Type                           | Name            | Parameters                                     |
-| ------------------------------ | --------------- | ---------------------------------------------- |
-| [CollisionData](/vext/ref/fb/collisiondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [CollisionData](/vext/ref/fb/collisiondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [CollisionData](/vext/ref/fb/collisiondata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### CollisionData {#constructor-2}
+> **CollisionData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CollisionData](/vext/ref/fb/collisiondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [CollisionData](/vext/ref/fb/collisiondata). |
+
+## Properties
+### {{% prop-heading "damageAtVerticalVelocity" %}}
+> **[ValueAtX](/vext/ref/fb/valueatx)**[]
+
+### {{% prop-heading "damageAtHorizVelocity" %}}
+> **[ValueAtX](/vext/ref/fb/valueatx)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [CollisionData](/vext/ref/fb/collisiondata) type.
+

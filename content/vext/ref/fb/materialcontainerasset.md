@@ -1,44 +1,76 @@
 ---
 title: MaterialContainerAsset
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MaterialContainerAsset](#constructor-0)**() |
+| **[MaterialContainerAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MaterialContainerAsset](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[MaterialContainerAsset](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "materialPairs" >}} | [MaterialContainerPair](/vext/ref/fb/materialcontainerpair)[] |
+| {{< prop "materialNames" >}} | string[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MaterialContainerAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MaterialContainerAsset {#constructor-0}
+> **MaterialContainerAsset**()
 
-| Constructor                                                                       | Description                                                                                                                         |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| MaterialContainerAsset()                                                          | Create a new instance of this container type.                                                                                       |
-| MaterialContainerAsset(MaterialContainerAsset other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| MaterialContainerAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [MaterialContainerAsset](/vext/ref/fb/materialcontainerasset/).                                      |
-| MaterialContainerAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MaterialContainerAsset](/vext/ref/fb/materialcontainerasset/). |
+Creates a new [MaterialContainerAsset](/vext/ref/fb/materialcontainerasset) frostbite instance.
 
-## Properties
+### MaterialContainerAsset {#constructor-1}
+> **MaterialContainerAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name          | Type                                               | Description |
-| ------------- | -------------------------------------------------- | ----------- |
-| materialPairs | [MaterialContainerPair](/vext/ref/fb/materialcontainerpair/)\[\] |             |
-| materialNames | string\[\]                                         |             |
-
-## Methods
-
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [MaterialContainerAsset](/vext/ref/fb/materialcontainerasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MaterialContainerAsset](/vext/ref/fb/materialcontainerasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MaterialContainerAsset](/vext/ref/fb/materialcontainerasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MaterialContainerAsset {#constructor-2}
+> **MaterialContainerAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [MaterialContainerAsset](/vext/ref/fb/materialcontainerasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [MaterialContainerAsset](/vext/ref/fb/materialcontainerasset). |
+
+### MaterialContainerAsset {#constructor-3}
+> **MaterialContainerAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MaterialContainerAsset](/vext/ref/fb/materialcontainerasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MaterialContainerAsset](/vext/ref/fb/materialcontainerasset). |
+
+## Properties
+### {{% prop-heading "materialPairs" %}}
+> **[MaterialContainerPair](/vext/ref/fb/materialcontainerpair)**[]
+
+### {{% prop-heading "materialNames" %}}
+> **string**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MaterialContainerAsset](/vext/ref/fb/materialcontainerasset) type.
+

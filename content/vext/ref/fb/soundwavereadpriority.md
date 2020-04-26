@@ -1,16 +1,13 @@
 ---
 title: SoundWaveReadPriority
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **SoundWaveReadPriority_Unspecified** | Value: **0** |
+| **SoundWaveReadPriority_Low** | Value: **1** |
+| **SoundWaveReadPriority_Medium** | Value: **2** |
+| **SoundWaveReadPriority_Normal** | Value: **3** |
+| **SoundWaveReadPriority_High** | Value: **4** |
 
-| Name                               | Value | Description |
-| ---------------------------------- | ----- | ----------- |
-| SoundWaveReadPriority\_Unspecified | 0     |             |
-| SoundWaveReadPriority\_Low         | 1     |             |
-| SoundWaveReadPriority\_Medium      | 2     |             |
-| SoundWaveReadPriority\_Normal      | 3     |             |
-| SoundWaveReadPriority\_High        | 4     |             |

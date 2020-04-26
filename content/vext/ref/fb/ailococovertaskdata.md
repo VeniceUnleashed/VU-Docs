@@ -1,46 +1,113 @@
 ---
 title: AILocoCoverTaskData
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AILocoCoverTaskData](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "wantedPos" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "threatPosition" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "coverPose" >}} | [AntPoseEnum](/vext/ref/fb/antposeenum) |
+| {{< prop "waitTime" >}} | float |
+| {{< prop "peekOut" >}} | [CoverPeekType](/vext/ref/fb/coverpeektype) |
+| {{< prop "worldAngle" >}} | float |
+| {{< prop "offsetLength" >}} | float |
+| {{< prop "exitPose" >}} | [AntPoseEnum](/vext/ref/fb/antposeenum) |
+| {{< prop "exitAngle" >}} | float |
+| {{< prop "distanceToNextWaypoint" >}} | float |
+| {{< prop "coverType" >}} | [AntCoverEnum](/vext/ref/fb/antcoverenum) |
+| {{< prop "enterStrategy" >}} | [CoverEnterStrategy](/vext/ref/fb/coverenterstrategy) |
+| {{< prop "exitStyle" >}} | [CoverExitStyle](/vext/ref/fb/coverexitstyle) |
+| {{< prop "prepareFireType" >}} | [CoverFireType](/vext/ref/fb/coverfiretype) |
+| {{< prop "forceExitCover" >}} | bool |
+| {{< prop "useClientPosition" >}} | bool |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [AILocoCoverTaskData](/vext/ref/fb/ailococovertaskdata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AILocoCoverTaskData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AILocoCoverTaskData {#constructor-0}
+> **AILocoCoverTaskData**()
 
-| Constructor                                    | Description                                              |
-| ---------------------------------------------- | -------------------------------------------------------- |
-| AILocoCoverTaskData()                          | Create a new instance of this structure type.            |
-| AILocoCoverTaskData(AILocoCoverTaskData other) | Create a reference copy of a structure of the same type. |
+Creates a new [AILocoCoverTaskData](/vext/ref/fb/ailococovertaskdata) frostbite structure.
 
 ## Properties
+### {{% prop-heading "wantedPos" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
 
-| Name                   | Type                                     | Description |
-| ---------------------- | ---------------------------------------- | ----------- |
-| wantedPos              | [Vec3](/vext/ref/shared/class/vec3)        |             |
-| threatPosition         | [Vec3](/vext/ref/shared/class/vec3)        |             |
-| coverPose              | [AntPoseEnum](/vext/ref/fb/antposeenum/)               |             |
-| waitTime               | number                                   |             |
-| peekOut                | [CoverPeekType](/vext/ref/fb/coverpeektype/)           |             |
-| worldAngle             | number                                   |             |
-| offsetLength           | number                                   |             |
-| exitPose               | [AntPoseEnum](/vext/ref/fb/antposeenum/)               |             |
-| exitAngle              | number                                   |             |
-| distanceToNextWaypoint | number                                   |             |
-| coverType              | [AntCoverEnum](/vext/ref/fb/antcoverenum/)             |             |
-| enterStrategy          | [CoverEnterStrategy](/vext/ref/fb/coverenterstrategy/) |             |
-| exitStyle              | [CoverExitStyle](/vext/ref/fb/coverexitstyle/)         |             |
-| prepareFireType        | [CoverFireType](/vext/ref/fb/coverfiretype/)           |             |
-| forceExitCover         | bool                                     |             |
-| useClientPosition      | bool                                     |             |
+### {{% prop-heading "threatPosition" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "coverPose" %}}
+> **[AntPoseEnum](/vext/ref/fb/antposeenum)**
+
+### {{% prop-heading "waitTime" %}}
+> **float**
+
+### {{% prop-heading "peekOut" %}}
+> **[CoverPeekType](/vext/ref/fb/coverpeektype)**
+
+### {{% prop-heading "worldAngle" %}}
+> **float**
+
+### {{% prop-heading "offsetLength" %}}
+> **float**
+
+### {{% prop-heading "exitPose" %}}
+> **[AntPoseEnum](/vext/ref/fb/antposeenum)**
+
+### {{% prop-heading "exitAngle" %}}
+> **float**
+
+### {{% prop-heading "distanceToNextWaypoint" %}}
+> **float**
+
+### {{% prop-heading "coverType" %}}
+> **[AntCoverEnum](/vext/ref/fb/antcoverenum)**
+
+### {{% prop-heading "enterStrategy" %}}
+> **[CoverEnterStrategy](/vext/ref/fb/coverenterstrategy)**
+
+### {{% prop-heading "exitStyle" %}}
+> **[CoverExitStyle](/vext/ref/fb/coverexitstyle)**
+
+### {{% prop-heading "prepareFireType" %}}
+> **[CoverFireType](/vext/ref/fb/coverfiretype)**
+
+### {{% prop-heading "forceExitCover" %}}
+> **bool**
+
+### {{% prop-heading "useClientPosition" %}}
+> **bool**
 
 ## Methods
-
-| Type                                       | Name            | Parameters |
-| ------------------------------------------ | --------------- | ---------- |
-| [AILocoCoverTaskData](/vext/ref/fb/ailococovertaskdata/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [AILocoCoverTaskData](/vext/ref/fb/ailococovertaskdata)
 
-> [AILocoCoverTaskData](/vext/ref/fb/ailococovertaskdata/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[AILocoCoverTaskData](/vext/ref/fb/ailococovertaskdata)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AILocoCoverTaskData](/vext/ref/fb/ailococovertaskdata) type.
+

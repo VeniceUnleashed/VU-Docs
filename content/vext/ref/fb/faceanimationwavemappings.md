@@ -1,44 +1,69 @@
 ---
 title: FaceAnimationWaveMappings
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[FaceAnimationWaveMappings](#constructor-0)**() |
+| **[FaceAnimationWaveMappings](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[FaceAnimationWaveMappings](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "antAsset" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "onStartedTalking" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "mappings" >}} | [FaceAnimationWaveMapping](/vext/ref/fb/faceanimationwavemapping)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "FaceAnimationWaveMappings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### FaceAnimationWaveMappings {#constructor-0}
+> **FaceAnimationWaveMappings**()
 
-| Constructor                                                                          | Description                                                                                                                               |
-| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| FaceAnimationWaveMappings()                                                          | Create a new instance of this container type.                                                                                             |
-| FaceAnimationWaveMappings(FaceAnimationWaveMappings other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| FaceAnimationWaveMappings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [FaceAnimationWaveMappings](/vext/ref/fb/faceanimationwavemappings/). |
+Creates a new [FaceAnimationWaveMappings](/vext/ref/fb/faceanimationwavemappings) frostbite instance.
 
-## Properties
+### FaceAnimationWaveMappings {#constructor-1}
+> **FaceAnimationWaveMappings**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name             | Type                                                     | Description |
-| ---------------- | -------------------------------------------------------- | ----------- |
-| antAsset         | [AntRef](/vext/ref/fb/antref/)                                         |             |
-| onStartedTalking | [AntRef](/vext/ref/fb/antref/)                                         |             |
-| mappings         | [FaceAnimationWaveMapping](/vext/ref/fb/faceanimationwavemapping/)\[\] |             |
-
-## Methods
-
-| Type                                                   | Name            | Parameters                                     |
-| ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [FaceAnimationWaveMappings](/vext/ref/fb/faceanimationwavemappings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [FaceAnimationWaveMappings](/vext/ref/fb/faceanimationwavemappings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [FaceAnimationWaveMappings](/vext/ref/fb/faceanimationwavemappings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### FaceAnimationWaveMappings {#constructor-2}
+> **FaceAnimationWaveMappings**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [FaceAnimationWaveMappings](/vext/ref/fb/faceanimationwavemappings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [FaceAnimationWaveMappings](/vext/ref/fb/faceanimationwavemappings). |
+
+## Properties
+### {{% prop-heading "antAsset" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "onStartedTalking" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "mappings" %}}
+> **[FaceAnimationWaveMapping](/vext/ref/fb/faceanimationwavemapping)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [FaceAnimationWaveMappings](/vext/ref/fb/faceanimationwavemappings) type.
+

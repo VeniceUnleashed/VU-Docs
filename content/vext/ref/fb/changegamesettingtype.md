@@ -1,14 +1,11 @@
 ---
 title: ChangeGameSettingType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **CGSNone** | Value: **0** |
+| **CGSInvertVerticalLookAxis** | Value: **1** |
+| **CGSCount** | Value: **2** |
 
-| Name                      | Value | Description |
-| ------------------------- | ----- | ----------- |
-| CGSNone                   | 0     |             |
-| CGSInvertVerticalLookAxis | 1     |             |
-| CGSCount                  | 2     |             |

@@ -1,13 +1,10 @@
 ---
 title: SpaceType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **STBody** | Value: **0** |
+| **STWorld** | Value: **1** |
 
-| Name    | Value | Description |
-| ------- | ----- | ----------- |
-| STBody  | 0     |             |
-| STWorld | 1     |             |

@@ -1,20 +1,17 @@
 ---
 title: WeaponAnimType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **WeaponAnimType_NoAddon** | Value: **0** |
+| **WeaponAnimType_Bipod** | Value: **1** |
+| **WeaponAnimType_Foregrip** | Value: **2** |
+| **WeaponAnimType_40mm_GL** | Value: **3** |
+| **WeaponAnimType_40mm_GL_Fire** | Value: **4** |
+| **WeaponAnimType_Underslung_Shotgun** | Value: **5** |
+| **WeaponAnimType_Underslung_Shotgun_Fire** | Value: **6** |
+| **WeaponAnimType_Straight_Pull_Bolt** | Value: **7** |
+| **WeaponAnimType_Extended_Mag** | Value: **8** |
 
-| Name                                      | Value | Description |
-| ----------------------------------------- | ----- | ----------- |
-| WeaponAnimType\_NoAddon                   | 0     |             |
-| WeaponAnimType\_Bipod                     | 1     |             |
-| WeaponAnimType\_Foregrip                  | 2     |             |
-| WeaponAnimType\_40mm\_GL                  | 3     |             |
-| WeaponAnimType\_40mm\_GL\_Fire            | 4     |             |
-| WeaponAnimType\_Underslung\_Shotgun       | 5     |             |
-| WeaponAnimType\_Underslung\_Shotgun\_Fire | 6     |             |
-| WeaponAnimType\_Straight\_Pull\_Bolt      | 7     |             |
-| WeaponAnimType\_Extended\_Mag             | 8     |             |

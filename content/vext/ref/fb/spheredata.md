@@ -1,46 +1,98 @@
 ---
 title: SphereData
 ---
-### Base Classes
 
-[BaseShapeData](/vext/ref/fb/baseshapedata/)
+Inherits from 
+[BaseShapeData](/vext/ref/fb/baseshapedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SphereData](#constructor-0)**() |
+| **[SphereData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SphereData](#constructor-2)**(other: [BaseShapeData](/vext/ref/fb/baseshapedata)) |
+| **[SphereData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[SphereData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[SphereData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "position" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "radius" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SphereData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SphereData {#constructor-0}
+> **SphereData**()
 
-| Constructor                                                           | Description                                                                                                 |
-| --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| SphereData()                                                          | Create a new instance of this container type.                                                               |
-| SphereData(SphereData other)                                          | Create a reference copy of an instance of the same type.                                                    |
-| SphereData([BaseShapeData](/vext/ref/fb/baseshapedata/) other)                      | Upcast an instance of type [BaseShapeData](/vext/ref/fb/baseshapedata/) to [SphereData](/vext/ref/fb/spheredata/).                      |
-| SphereData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [SphereData](/vext/ref/fb/spheredata/).                    |
-| SphereData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [SphereData](/vext/ref/fb/spheredata/).              |
-| SphereData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SphereData](/vext/ref/fb/spheredata/). |
+Creates a new [SphereData](/vext/ref/fb/spheredata) frostbite instance.
 
-## Properties
+### SphereData {#constructor-1}
+> **SphereData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name     | Type                              | Description |
-| -------- | --------------------------------- | ----------- |
-| position | [Vec3](/vext/ref/shared/class/vec3) |             |
-| radius   | number                            |             |
-
-## Methods
-
-| Type                     | Name            | Parameters                                     |
-| ------------------------ | --------------- | ---------------------------------------------- |
-| [SphereData](/vext/ref/fb/spheredata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SphereData](/vext/ref/fb/spheredata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SphereData](/vext/ref/fb/spheredata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SphereData {#constructor-2}
+> **SphereData**(other: [BaseShapeData](/vext/ref/fb/baseshapedata))
+
+Casts an instance of type [BaseShapeData](/vext/ref/fb/baseshapedata) to [SphereData](/vext/ref/fb/spheredata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [BaseShapeData](/vext/ref/fb/baseshapedata) | The instance to cast to [SphereData](/vext/ref/fb/spheredata). |
+
+### SphereData {#constructor-3}
+> **SphereData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [SphereData](/vext/ref/fb/spheredata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [SphereData](/vext/ref/fb/spheredata). |
+
+### SphereData {#constructor-4}
+> **SphereData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [SphereData](/vext/ref/fb/spheredata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [SphereData](/vext/ref/fb/spheredata). |
+
+### SphereData {#constructor-5}
+> **SphereData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SphereData](/vext/ref/fb/spheredata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SphereData](/vext/ref/fb/spheredata). |
+
+## Properties
+### {{% prop-heading "position" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "radius" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SphereData](/vext/ref/fb/spheredata) type.
+

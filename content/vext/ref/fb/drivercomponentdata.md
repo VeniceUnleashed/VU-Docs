@@ -1,46 +1,98 @@
 ---
 title: DriverComponentData
 ---
-### Base Classes
 
-[ComponentData](/vext/ref/fb/componentdata/)
+Inherits from 
+[ComponentData](/vext/ref/fb/componentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[DriverComponentData](#constructor-0)**() |
+| **[DriverComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[DriverComponentData](#constructor-2)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[DriverComponentData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[DriverComponentData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[DriverComponentData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "wantedSpeed" >}} | float |
+| {{< prop "settings" >}} | [DriverSettings](/vext/ref/fb/driversettings) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "DriverComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### DriverComponentData {#constructor-0}
+> **DriverComponentData**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| DriverComponentData()                                                          | Create a new instance of this container type.                                                                                 |
-| DriverComponentData(DriverComponentData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| DriverComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [DriverComponentData](/vext/ref/fb/drivercomponentdata/).                      |
-| DriverComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [DriverComponentData](/vext/ref/fb/drivercomponentdata/).                    |
-| DriverComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [DriverComponentData](/vext/ref/fb/drivercomponentdata/).              |
-| DriverComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DriverComponentData](/vext/ref/fb/drivercomponentdata/). |
+Creates a new [DriverComponentData](/vext/ref/fb/drivercomponentdata) frostbite instance.
 
-## Properties
+### DriverComponentData {#constructor-1}
+> **DriverComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name        | Type                             | Description |
-| ----------- | -------------------------------- | ----------- |
-| wantedSpeed | number                           |             |
-| settings    | [DriverSettings](/vext/ref/fb/driversettings/) |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [DriverComponentData](/vext/ref/fb/drivercomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [DriverComponentData](/vext/ref/fb/drivercomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [DriverComponentData](/vext/ref/fb/drivercomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### DriverComponentData {#constructor-2}
+> **DriverComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [DriverComponentData](/vext/ref/fb/drivercomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [DriverComponentData](/vext/ref/fb/drivercomponentdata). |
+
+### DriverComponentData {#constructor-3}
+> **DriverComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [DriverComponentData](/vext/ref/fb/drivercomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [DriverComponentData](/vext/ref/fb/drivercomponentdata). |
+
+### DriverComponentData {#constructor-4}
+> **DriverComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [DriverComponentData](/vext/ref/fb/drivercomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [DriverComponentData](/vext/ref/fb/drivercomponentdata). |
+
+### DriverComponentData {#constructor-5}
+> **DriverComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DriverComponentData](/vext/ref/fb/drivercomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DriverComponentData](/vext/ref/fb/drivercomponentdata). |
+
+## Properties
+### {{% prop-heading "wantedSpeed" %}}
+> **float**
+
+### {{% prop-heading "settings" %}}
+> **[DriverSettings](/vext/ref/fb/driversettings)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [DriverComponentData](/vext/ref/fb/drivercomponentdata) type.
+

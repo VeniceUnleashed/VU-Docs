@@ -1,36 +1,33 @@
 ---
 title: InputDeviceAxes
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **IDA_Axis0X** | Value: **0** |
+| **IDA_Axis0Y** | Value: **1** |
+| **IDA_Axis0XPos** | Value: **2** |
+| **IDA_Axis0YPos** | Value: **3** |
+| **IDA_Axis0XNeg** | Value: **4** |
+| **IDA_Axis0YNeg** | Value: **5** |
+| **IDA_Axis1X** | Value: **6** |
+| **IDA_Axis1Y** | Value: **7** |
+| **IDA_Axis1XPos** | Value: **8** |
+| **IDA_Axis1YPos** | Value: **9** |
+| **IDA_Axis1XNeg** | Value: **10** |
+| **IDA_Axis1YNeg** | Value: **11** |
+| **IDA_Axis2X** | Value: **12** |
+| **IDA_Axis2Y** | Value: **13** |
+| **IDA_Axis3X** | Value: **14** |
+| **IDA_Axis3Y** | Value: **15** |
+| **IDA_Axis4X** | Value: **16** |
+| **IDA_Axis4Y** | Value: **17** |
+| **IDA_Axis5X** | Value: **18** |
+| **IDA_Axis5Y** | Value: **19** |
+| **IDA_Axis6X** | Value: **20** |
+| **IDA_Axis6Y** | Value: **21** |
+| **IDA_Axis7X** | Value: **22** |
+| **IDA_Axis7Y** | Value: **23** |
+| **IDA_Undefined** | Value: **24** |
 
-| Name           | Value | Description |
-| -------------- | ----- | ----------- |
-| IDA\_Axis0X    | 0     |             |
-| IDA\_Axis0Y    | 1     |             |
-| IDA\_Axis0XPos | 2     |             |
-| IDA\_Axis0YPos | 3     |             |
-| IDA\_Axis0XNeg | 4     |             |
-| IDA\_Axis0YNeg | 5     |             |
-| IDA\_Axis1X    | 6     |             |
-| IDA\_Axis1Y    | 7     |             |
-| IDA\_Axis1XPos | 8     |             |
-| IDA\_Axis1YPos | 9     |             |
-| IDA\_Axis1XNeg | 10    |             |
-| IDA\_Axis1YNeg | 11    |             |
-| IDA\_Axis2X    | 12    |             |
-| IDA\_Axis2Y    | 13    |             |
-| IDA\_Axis3X    | 14    |             |
-| IDA\_Axis3Y    | 15    |             |
-| IDA\_Axis4X    | 16    |             |
-| IDA\_Axis4Y    | 17    |             |
-| IDA\_Axis5X    | 18    |             |
-| IDA\_Axis5Y    | 19    |             |
-| IDA\_Axis6X    | 20    |             |
-| IDA\_Axis6Y    | 21    |             |
-| IDA\_Axis7X    | 22    |             |
-| IDA\_Axis7Y    | 23    |             |
-| IDA\_Undefined | 24    |             |

@@ -1,14 +1,11 @@
 ---
 title: CapturableType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **CTDefault** | Value: **0** |
+| **CTUnableToChangeTeam** | Value: **1** |
+| **CTCaptureEnablable** | Value: **2** |
 
-| Name                 | Value | Description |
-| -------------------- | ----- | ----------- |
-| CTDefault            | 0     |             |
-| CTUnableToChangeTeam | 1     |             |
-| CTCaptureEnablable   | 2     |             |

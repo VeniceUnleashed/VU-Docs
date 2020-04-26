@@ -1,50 +1,100 @@
 ---
 title: WaveSwitcherNodeData
 ---
-### Base Classes
 
-[AudioGraphNodeData](/vext/ref/fb/audiographnodedata/)
+Inherits from 
+[AudioGraphNodeData](/vext/ref/fb/audiographnodedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[WaveSwitcherNodeData](#constructor-0)**() |
+| **[WaveSwitcherNodeData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[WaveSwitcherNodeData](#constructor-2)**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata)) |
+| **[WaveSwitcherNodeData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "index" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "advance" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "wave" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "indexChanged" >}} | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport) |
+| {{< prop "waves" >}} | [SoundWaveAsset](/vext/ref/fb/soundwaveasset)[] |
+| {{< prop "defaultIndex" >}} | float |
+| {{< prop "isRandom" >}} | bool |
+| {{< prop "randomStartIndex" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "WaveSwitcherNodeData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### WaveSwitcherNodeData {#constructor-0}
+> **WaveSwitcherNodeData**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| WaveSwitcherNodeData()                                                          | Create a new instance of this container type.                                                                                   |
-| WaveSwitcherNodeData(WaveSwitcherNodeData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| WaveSwitcherNodeData([AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) other)            | Upcast an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) to [WaveSwitcherNodeData](/vext/ref/fb/waveswitchernodedata/).            |
-| WaveSwitcherNodeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WaveSwitcherNodeData](/vext/ref/fb/waveswitchernodedata/). |
+Creates a new [WaveSwitcherNodeData](/vext/ref/fb/waveswitchernodedata) frostbite instance.
 
-## Properties
+### WaveSwitcherNodeData {#constructor-1}
+> **WaveSwitcherNodeData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name             | Type                                     | Description |
-| ---------------- | ---------------------------------------- | ----------- |
-| index            | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| advance          | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| wave             | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| indexChanged     | [AudioGraphNodePort](/vext/ref/fb/audiographnodeport/) |             |
-| waves            | [SoundWaveAsset](/vext/ref/fb/soundwaveasset/)\[\]     |             |
-| defaultIndex     | number                                   |             |
-| isRandom         | bool                                     |             |
-| randomStartIndex | bool                                     |             |
-
-## Methods
-
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [WaveSwitcherNodeData](/vext/ref/fb/waveswitchernodedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [WaveSwitcherNodeData](/vext/ref/fb/waveswitchernodedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [WaveSwitcherNodeData](/vext/ref/fb/waveswitchernodedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### WaveSwitcherNodeData {#constructor-2}
+> **WaveSwitcherNodeData**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata))
+
+Casts an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) to [WaveSwitcherNodeData](/vext/ref/fb/waveswitchernodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) | The instance to cast to [WaveSwitcherNodeData](/vext/ref/fb/waveswitchernodedata). |
+
+### WaveSwitcherNodeData {#constructor-3}
+> **WaveSwitcherNodeData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WaveSwitcherNodeData](/vext/ref/fb/waveswitchernodedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [WaveSwitcherNodeData](/vext/ref/fb/waveswitchernodedata). |
+
+## Properties
+### {{% prop-heading "index" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "advance" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "wave" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "indexChanged" %}}
+> **[AudioGraphNodePort](/vext/ref/fb/audiographnodeport)**
+
+### {{% prop-heading "waves" %}}
+> **[SoundWaveAsset](/vext/ref/fb/soundwaveasset)**[]
+
+### {{% prop-heading "defaultIndex" %}}
+> **float**
+
+### {{% prop-heading "isRandom" %}}
+> **bool**
+
+### {{% prop-heading "randomStartIndex" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [WaveSwitcherNodeData](/vext/ref/fb/waveswitchernodedata) type.
+

@@ -1,15 +1,12 @@
 ---
 title: GameSplineType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **GameSplineType_Generic** | Value: **0** |
+| **GameSplineType_Pipe** | Value: **1** |
+| **GameSplineType_Zipline** | Value: **2** |
+| **GameSplineType_Swing** | Value: **3** |
 
-| Name                    | Value | Description |
-| ----------------------- | ----- | ----------- |
-| GameSplineType\_Generic | 0     |             |
-| GameSplineType\_Pipe    | 1     |             |
-| GameSplineType\_Zipline | 2     |             |
-| GameSplineType\_Swing   | 3     |             |

@@ -1,38 +1,81 @@
 ---
 title: GunSwayBaseMoveJumpData
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[GunSwayBaseMoveJumpData](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "baseValue" >}} | [GunSwayDispersionData](/vext/ref/fb/gunswaydispersiondata) |
+| {{< prop "moving" >}} | [GunSwayDispersionData](/vext/ref/fb/gunswaydispersiondata) |
+| {{< prop "jumping" >}} | [GunSwayDispersionData](/vext/ref/fb/gunswaydispersiondata) |
+| {{< prop "sprinting" >}} | [GunSwayDispersionData](/vext/ref/fb/gunswaydispersiondata) |
+| {{< prop "vaultingSmallObject" >}} | [GunSwayDispersionData](/vext/ref/fb/gunswaydispersiondata) |
+| {{< prop "vaultingMediumObject" >}} | [GunSwayDispersionData](/vext/ref/fb/gunswaydispersiondata) |
+| {{< prop "recoil" >}} | [GunSwayRecoilData](/vext/ref/fb/gunswayrecoildata) |
+| {{< prop "gunSwayLag" >}} | [GunSwayLagData](/vext/ref/fb/gunswaylagdata) |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [GunSwayBaseMoveJumpData](/vext/ref/fb/gunswaybasemovejumpdata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "GunSwayBaseMoveJumpData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### GunSwayBaseMoveJumpData {#constructor-0}
+> **GunSwayBaseMoveJumpData**()
 
-| Constructor                                            | Description                                              |
-| ------------------------------------------------------ | -------------------------------------------------------- |
-| GunSwayBaseMoveJumpData()                              | Create a new instance of this structure type.            |
-| GunSwayBaseMoveJumpData(GunSwayBaseMoveJumpData other) | Create a reference copy of a structure of the same type. |
+Creates a new [GunSwayBaseMoveJumpData](/vext/ref/fb/gunswaybasemovejumpdata) frostbite structure.
 
 ## Properties
+### {{% prop-heading "baseValue" %}}
+> **[GunSwayDispersionData](/vext/ref/fb/gunswaydispersiondata)**
 
-| Name                 | Type                                           | Description |
-| -------------------- | ---------------------------------------------- | ----------- |
-| baseValue            | [GunSwayDispersionData](/vext/ref/fb/gunswaydispersiondata/) |             |
-| moving               | [GunSwayDispersionData](/vext/ref/fb/gunswaydispersiondata/) |             |
-| jumping              | [GunSwayDispersionData](/vext/ref/fb/gunswaydispersiondata/) |             |
-| sprinting            | [GunSwayDispersionData](/vext/ref/fb/gunswaydispersiondata/) |             |
-| vaultingSmallObject  | [GunSwayDispersionData](/vext/ref/fb/gunswaydispersiondata/) |             |
-| vaultingMediumObject | [GunSwayDispersionData](/vext/ref/fb/gunswaydispersiondata/) |             |
-| recoil               | [GunSwayRecoilData](/vext/ref/fb/gunswayrecoildata/)         |             |
-| gunSwayLag           | [GunSwayLagData](/vext/ref/fb/gunswaylagdata/)               |             |
+### {{% prop-heading "moving" %}}
+> **[GunSwayDispersionData](/vext/ref/fb/gunswaydispersiondata)**
+
+### {{% prop-heading "jumping" %}}
+> **[GunSwayDispersionData](/vext/ref/fb/gunswaydispersiondata)**
+
+### {{% prop-heading "sprinting" %}}
+> **[GunSwayDispersionData](/vext/ref/fb/gunswaydispersiondata)**
+
+### {{% prop-heading "vaultingSmallObject" %}}
+> **[GunSwayDispersionData](/vext/ref/fb/gunswaydispersiondata)**
+
+### {{% prop-heading "vaultingMediumObject" %}}
+> **[GunSwayDispersionData](/vext/ref/fb/gunswaydispersiondata)**
+
+### {{% prop-heading "recoil" %}}
+> **[GunSwayRecoilData](/vext/ref/fb/gunswayrecoildata)**
+
+### {{% prop-heading "gunSwayLag" %}}
+> **[GunSwayLagData](/vext/ref/fb/gunswaylagdata)**
 
 ## Methods
-
-| Type                                               | Name            | Parameters |
-| -------------------------------------------------- | --------------- | ---------- |
-| [GunSwayBaseMoveJumpData](/vext/ref/fb/gunswaybasemovejumpdata/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [GunSwayBaseMoveJumpData](/vext/ref/fb/gunswaybasemovejumpdata)
 
-> [GunSwayBaseMoveJumpData](/vext/ref/fb/gunswaybasemovejumpdata/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[GunSwayBaseMoveJumpData](/vext/ref/fb/gunswaybasemovejumpdata)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [GunSwayBaseMoveJumpData](/vext/ref/fb/gunswaybasemovejumpdata) type.
+

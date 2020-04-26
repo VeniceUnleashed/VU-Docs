@@ -1,43 +1,65 @@
 ---
 title: PartLinkData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PartLinkData](#constructor-0)**() |
+| **[PartLinkData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PartLinkData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "partComponentIndex1" >}} | int |
+| {{< prop "partComponentIndex2" >}} | int |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PartLinkData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PartLinkData {#constructor-0}
+> **PartLinkData**()
 
-| Constructor                                                             | Description                                                                                                     |
-| ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| PartLinkData()                                                          | Create a new instance of this container type.                                                                   |
-| PartLinkData(PartLinkData other)                                        | Create a reference copy of an instance of the same type.                                                        |
-| PartLinkData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PartLinkData](/vext/ref/fb/partlinkdata/). |
+Creates a new [PartLinkData](/vext/ref/fb/partlinkdata) frostbite instance.
 
-## Properties
+### PartLinkData {#constructor-1}
+> **PartLinkData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                | Type   | Description |
-| ------------------- | ------ | ----------- |
-| partComponentIndex1 | number |             |
-| partComponentIndex2 | number |             |
-
-## Methods
-
-| Type                         | Name            | Parameters                                     |
-| ---------------------------- | --------------- | ---------------------------------------------- |
-| [PartLinkData](/vext/ref/fb/partlinkdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PartLinkData](/vext/ref/fb/partlinkdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PartLinkData](/vext/ref/fb/partlinkdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PartLinkData {#constructor-2}
+> **PartLinkData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PartLinkData](/vext/ref/fb/partlinkdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PartLinkData](/vext/ref/fb/partlinkdata). |
+
+## Properties
+### {{% prop-heading "partComponentIndex1" %}}
+> **int**
+
+### {{% prop-heading "partComponentIndex2" %}}
+> **int**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PartLinkData](/vext/ref/fb/partlinkdata) type.
+

@@ -1,43 +1,72 @@
 ---
 title: AnimationControlledStateData
 ---
-### Base Classes
 
-[CharacterStateData](/vext/ref/fb/characterstatedata/)
+Inherits from 
+[CharacterStateData](/vext/ref/fb/characterstatedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AnimationControlledStateData](#constructor-0)**() |
+| **[AnimationControlledStateData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[AnimationControlledStateData](#constructor-2)**(other: [CharacterStateData](/vext/ref/fb/characterstatedata)) |
+| **[AnimationControlledStateData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "upNormalTolerance" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AnimationControlledStateData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AnimationControlledStateData {#constructor-0}
+> **AnimationControlledStateData**()
 
-| Constructor                                                                             | Description                                                                                                                                     |
-| --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| AnimationControlledStateData()                                                          | Create a new instance of this container type.                                                                                                   |
-| AnimationControlledStateData(AnimationControlledStateData other)                        | Create a reference copy of an instance of the same type.                                                                                        |
-| AnimationControlledStateData([CharacterStateData](/vext/ref/fb/characterstatedata/) other)            | Upcast an instance of type [CharacterStateData](/vext/ref/fb/characterstatedata/) to [AnimationControlledStateData](/vext/ref/fb/animationcontrolledstatedata/).            |
-| AnimationControlledStateData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AnimationControlledStateData](/vext/ref/fb/animationcontrolledstatedata/). |
+Creates a new [AnimationControlledStateData](/vext/ref/fb/animationcontrolledstatedata) frostbite instance.
 
-## Properties
+### AnimationControlledStateData {#constructor-1}
+> **AnimationControlledStateData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name              | Type   | Description |
-| ----------------- | ------ | ----------- |
-| upNormalTolerance | number |             |
-
-## Methods
-
-| Type                                                         | Name            | Parameters                                     |
-| ------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [AnimationControlledStateData](/vext/ref/fb/animationcontrolledstatedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [AnimationControlledStateData](/vext/ref/fb/animationcontrolledstatedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [AnimationControlledStateData](/vext/ref/fb/animationcontrolledstatedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### AnimationControlledStateData {#constructor-2}
+> **AnimationControlledStateData**(other: [CharacterStateData](/vext/ref/fb/characterstatedata))
+
+Casts an instance of type [CharacterStateData](/vext/ref/fb/characterstatedata) to [AnimationControlledStateData](/vext/ref/fb/animationcontrolledstatedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [CharacterStateData](/vext/ref/fb/characterstatedata) | The instance to cast to [AnimationControlledStateData](/vext/ref/fb/animationcontrolledstatedata). |
+
+### AnimationControlledStateData {#constructor-3}
+> **AnimationControlledStateData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AnimationControlledStateData](/vext/ref/fb/animationcontrolledstatedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [AnimationControlledStateData](/vext/ref/fb/animationcontrolledstatedata). |
+
+## Properties
+### {{% prop-heading "upNormalTolerance" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AnimationControlledStateData](/vext/ref/fb/animationcontrolledstatedata) type.
+

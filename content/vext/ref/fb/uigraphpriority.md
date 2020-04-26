@@ -1,16 +1,13 @@
 ---
 title: UIGraphPriority
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **UIGraphPriority_Low** | Value: **0** |
+| **UIGraphPriority_Normal** | Value: **1** |
+| **UIGraphPriority_High** | Value: **2** |
+| **UIGraphPriority_OverlayScreens** | Value: **3** |
+| **UIGraphPriority_Critical** | Value: **4** |
 
-| Name                            | Value | Description |
-| ------------------------------- | ----- | ----------- |
-| UIGraphPriority\_Low            | 0     |             |
-| UIGraphPriority\_Normal         | 1     |             |
-| UIGraphPriority\_High           | 2     |             |
-| UIGraphPriority\_OverlayScreens | 3     |             |
-| UIGraphPriority\_Critical       | 4     |             |

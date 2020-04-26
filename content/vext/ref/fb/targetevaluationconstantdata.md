@@ -1,46 +1,84 @@
 ---
 title: TargetEvaluationConstantData
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[TargetEvaluationConstantData](#constructor-0)**() |
+| **[TargetEvaluationConstantData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[TargetEvaluationConstantData](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[TargetEvaluationConstantData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "maxBattleStrength" >}} | float |
+| {{< prop "defaultHumanTargetPreference" >}} | float |
+| {{< prop "otherSquadAttackerFactorUsage" >}} | float |
+| {{< prop "targetFlipFactorUsage" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "TargetEvaluationConstantData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### TargetEvaluationConstantData {#constructor-0}
+> **TargetEvaluationConstantData**()
 
-| Constructor                                                                             | Description                                                                                                                                     |
-| --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| TargetEvaluationConstantData()                                                          | Create a new instance of this container type.                                                                                                   |
-| TargetEvaluationConstantData(TargetEvaluationConstantData other)                        | Create a reference copy of an instance of the same type.                                                                                        |
-| TargetEvaluationConstantData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [TargetEvaluationConstantData](/vext/ref/fb/targetevaluationconstantdata/).                                      |
-| TargetEvaluationConstantData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TargetEvaluationConstantData](/vext/ref/fb/targetevaluationconstantdata/). |
+Creates a new [TargetEvaluationConstantData](/vext/ref/fb/targetevaluationconstantdata) frostbite instance.
 
-## Properties
+### TargetEvaluationConstantData {#constructor-1}
+> **TargetEvaluationConstantData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                          | Type   | Description |
-| ----------------------------- | ------ | ----------- |
-| maxBattleStrength             | number |             |
-| defaultHumanTargetPreference  | number |             |
-| otherSquadAttackerFactorUsage | number |             |
-| targetFlipFactorUsage         | number |             |
-
-## Methods
-
-| Type                                                         | Name            | Parameters                                     |
-| ------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [TargetEvaluationConstantData](/vext/ref/fb/targetevaluationconstantdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [TargetEvaluationConstantData](/vext/ref/fb/targetevaluationconstantdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [TargetEvaluationConstantData](/vext/ref/fb/targetevaluationconstantdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### TargetEvaluationConstantData {#constructor-2}
+> **TargetEvaluationConstantData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [TargetEvaluationConstantData](/vext/ref/fb/targetevaluationconstantdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [TargetEvaluationConstantData](/vext/ref/fb/targetevaluationconstantdata). |
+
+### TargetEvaluationConstantData {#constructor-3}
+> **TargetEvaluationConstantData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TargetEvaluationConstantData](/vext/ref/fb/targetevaluationconstantdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [TargetEvaluationConstantData](/vext/ref/fb/targetevaluationconstantdata). |
+
+## Properties
+### {{% prop-heading "maxBattleStrength" %}}
+> **float**
+
+### {{% prop-heading "defaultHumanTargetPreference" %}}
+> **float**
+
+### {{% prop-heading "otherSquadAttackerFactorUsage" %}}
+> **float**
+
+### {{% prop-heading "targetFlipFactorUsage" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [TargetEvaluationConstantData](/vext/ref/fb/targetevaluationconstantdata) type.
+

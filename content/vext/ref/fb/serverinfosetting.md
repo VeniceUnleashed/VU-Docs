@@ -1,33 +1,61 @@
 ---
 title: ServerInfoSetting
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ServerInfoSetting](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "key" >}} | string |
+| {{< prop "name" >}} | string |
+| {{< prop "isBool" >}} | bool |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [ServerInfoSetting](/vext/ref/fb/serverinfosetting) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ServerInfoSetting" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ServerInfoSetting {#constructor-0}
+> **ServerInfoSetting**()
 
-| Constructor                                | Description                                              |
-| ------------------------------------------ | -------------------------------------------------------- |
-| ServerInfoSetting()                        | Create a new instance of this structure type.            |
-| ServerInfoSetting(ServerInfoSetting other) | Create a reference copy of a structure of the same type. |
+Creates a new [ServerInfoSetting](/vext/ref/fb/serverinfosetting) frostbite structure.
 
 ## Properties
+### {{% prop-heading "key" %}}
+> **string**
 
-| Name   | Type   | Description |
-| ------ | ------ | ----------- |
-| key    | string |             |
-| name   | string |             |
-| isBool | bool   |             |
+### {{% prop-heading "name" %}}
+> **string**
+
+### {{% prop-heading "isBool" %}}
+> **bool**
 
 ## Methods
-
-| Type                                   | Name            | Parameters |
-| -------------------------------------- | --------------- | ---------- |
-| [ServerInfoSetting](/vext/ref/fb/serverinfosetting/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [ServerInfoSetting](/vext/ref/fb/serverinfosetting)
 
-> [ServerInfoSetting](/vext/ref/fb/serverinfosetting/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[ServerInfoSetting](/vext/ref/fb/serverinfosetting)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ServerInfoSetting](/vext/ref/fb/serverinfosetting) type.
+

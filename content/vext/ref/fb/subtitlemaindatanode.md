@@ -1,44 +1,76 @@
 ---
 title: SubtitleMainDataNode
 ---
-### Base Classes
 
-[TreeNodeBase](/vext/ref/fb/treenodebase/)
+Inherits from 
+[TreeNodeBase](/vext/ref/fb/treenodebase)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SubtitleMainDataNode](#constructor-0)**() |
+| **[SubtitleMainDataNode](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SubtitleMainDataNode](#constructor-2)**(other: [TreeNodeBase](/vext/ref/fb/treenodebase)) |
+| **[SubtitleMainDataNode](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "language" >}} | [LanguageFormat](/vext/ref/fb/languageformat) |
+| {{< prop "subtitles" >}} | [SubtitleDataNode](/vext/ref/fb/subtitledatanode)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SubtitleMainDataNode" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SubtitleMainDataNode {#constructor-0}
+> **SubtitleMainDataNode**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| SubtitleMainDataNode()                                                          | Create a new instance of this container type.                                                                                   |
-| SubtitleMainDataNode(SubtitleMainDataNode other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| SubtitleMainDataNode([TreeNodeBase](/vext/ref/fb/treenodebase/) other)                        | Upcast an instance of type [TreeNodeBase](/vext/ref/fb/treenodebase/) to [SubtitleMainDataNode](/vext/ref/fb/subtitlemaindatanode/).                        |
-| SubtitleMainDataNode([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SubtitleMainDataNode](/vext/ref/fb/subtitlemaindatanode/). |
+Creates a new [SubtitleMainDataNode](/vext/ref/fb/subtitlemaindatanode) frostbite instance.
 
-## Properties
+### SubtitleMainDataNode {#constructor-1}
+> **SubtitleMainDataNode**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name      | Type                                     | Description |
-| --------- | ---------------------------------------- | ----------- |
-| language  | [LanguageFormat](/vext/ref/fb/languageformat/)         |             |
-| subtitles | [SubtitleDataNode](/vext/ref/fb/subtitledatanode/)\[\] |             |
-
-## Methods
-
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [SubtitleMainDataNode](/vext/ref/fb/subtitlemaindatanode/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SubtitleMainDataNode](/vext/ref/fb/subtitlemaindatanode/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SubtitleMainDataNode](/vext/ref/fb/subtitlemaindatanode) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SubtitleMainDataNode {#constructor-2}
+> **SubtitleMainDataNode**(other: [TreeNodeBase](/vext/ref/fb/treenodebase))
+
+Casts an instance of type [TreeNodeBase](/vext/ref/fb/treenodebase) to [SubtitleMainDataNode](/vext/ref/fb/subtitlemaindatanode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [TreeNodeBase](/vext/ref/fb/treenodebase) | The instance to cast to [SubtitleMainDataNode](/vext/ref/fb/subtitlemaindatanode). |
+
+### SubtitleMainDataNode {#constructor-3}
+> **SubtitleMainDataNode**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SubtitleMainDataNode](/vext/ref/fb/subtitlemaindatanode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SubtitleMainDataNode](/vext/ref/fb/subtitlemaindatanode). |
+
+## Properties
+### {{% prop-heading "language" %}}
+> **[LanguageFormat](/vext/ref/fb/languageformat)**
+
+### {{% prop-heading "subtitles" %}}
+> **[SubtitleDataNode](/vext/ref/fb/subtitledatanode)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SubtitleMainDataNode](/vext/ref/fb/subtitlemaindatanode) type.
+

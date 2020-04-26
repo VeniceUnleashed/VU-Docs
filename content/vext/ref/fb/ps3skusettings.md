@@ -1,33 +1,61 @@
 ---
 title: Ps3SkuSettings
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[Ps3SkuSettings](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "titleId" >}} | string |
+| {{< prop "spId" >}} | string |
+| {{< prop "grantsOnlinePass" >}} | bool |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [Ps3SkuSettings](/vext/ref/fb/ps3skusettings) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "Ps3SkuSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### Ps3SkuSettings {#constructor-0}
+> **Ps3SkuSettings**()
 
-| Constructor                          | Description                                              |
-| ------------------------------------ | -------------------------------------------------------- |
-| Ps3SkuSettings()                     | Create a new instance of this structure type.            |
-| Ps3SkuSettings(Ps3SkuSettings other) | Create a reference copy of a structure of the same type. |
+Creates a new [Ps3SkuSettings](/vext/ref/fb/ps3skusettings) frostbite structure.
 
 ## Properties
+### {{% prop-heading "titleId" %}}
+> **string**
 
-| Name             | Type   | Description |
-| ---------------- | ------ | ----------- |
-| titleId          | string |             |
-| spId             | string |             |
-| grantsOnlinePass | bool   |             |
+### {{% prop-heading "spId" %}}
+> **string**
+
+### {{% prop-heading "grantsOnlinePass" %}}
+> **bool**
 
 ## Methods
-
-| Type                             | Name            | Parameters |
-| -------------------------------- | --------------- | ---------- |
-| [Ps3SkuSettings](/vext/ref/fb/ps3skusettings/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [Ps3SkuSettings](/vext/ref/fb/ps3skusettings)
 
-> [Ps3SkuSettings](/vext/ref/fb/ps3skusettings/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[Ps3SkuSettings](/vext/ref/fb/ps3skusettings)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [Ps3SkuSettings](/vext/ref/fb/ps3skusettings) type.
+

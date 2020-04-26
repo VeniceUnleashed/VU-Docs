@@ -1,48 +1,99 @@
 ---
 title: SimpleMovementActionData
 ---
-### Base Classes
 
-[SimpleMovementActionBaseData](/vext/ref/fb/simplemovementactionbasedata/)
+Inherits from 
+[SimpleMovementActionBaseData](/vext/ref/fb/simplemovementactionbasedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SimpleMovementActionData](#constructor-0)**() |
+| **[SimpleMovementActionData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SimpleMovementActionData](#constructor-2)**(other: [SimpleMovementActionBaseData](/vext/ref/fb/simplemovementactionbasedata)) |
+| **[SimpleMovementActionData](#constructor-3)**(other: [MovementActionData](/vext/ref/fb/movementactiondata)) |
+| **[SimpleMovementActionData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "level" >}} | float |
+| {{< prop "action" >}} | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum) |
+| {{< prop "specialAnimationIndex" >}} | int |
+| {{< prop "respawn" >}} | bool |
+| {{< prop "teleport" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SimpleMovementActionData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SimpleMovementActionData {#constructor-0}
+> **SimpleMovementActionData**()
 
-| Constructor                                                                                  | Description                                                                                                                                      |
-| -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| SimpleMovementActionData()                                                                   | Create a new instance of this container type.                                                                                                    |
-| SimpleMovementActionData(SimpleMovementActionData other)                                     | Create a reference copy of an instance of the same type.                                                                                         |
-| SimpleMovementActionData([SimpleMovementActionBaseData](/vext/ref/fb/simplemovementactionbasedata/) other) | Upcast an instance of type [SimpleMovementActionBaseData](/vext/ref/fb/simplemovementactionbasedata/) to [SimpleMovementActionData](/vext/ref/fb/simplemovementactiondata/). |
-| SimpleMovementActionData([MovementActionData](/vext/ref/fb/movementactiondata/) other)                     | Upcast an instance of type [MovementActionData](/vext/ref/fb/movementactiondata/) to [SimpleMovementActionData](/vext/ref/fb/simplemovementactiondata/).                     |
-| SimpleMovementActionData([DataContainer](/vext/ref/shared/class/datacontainer) other)          | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SimpleMovementActionData](/vext/ref/fb/simplemovementactiondata/).          |
+Creates a new [SimpleMovementActionData](/vext/ref/fb/simplemovementactiondata) frostbite instance.
 
-## Properties
+### SimpleMovementActionData {#constructor-1}
+> **SimpleMovementActionData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                  | Type                                         | Description |
-| --------------------- | -------------------------------------------- | ----------- |
-| level                 | number                                       |             |
-| action                | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum/) |             |
-| specialAnimationIndex | number                                       |             |
-| respawn               | bool                                         |             |
-| teleport              | bool                                         |             |
-
-## Methods
-
-| Type                                                 | Name            | Parameters                                     |
-| ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [SimpleMovementActionData](/vext/ref/fb/simplemovementactiondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SimpleMovementActionData](/vext/ref/fb/simplemovementactiondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SimpleMovementActionData](/vext/ref/fb/simplemovementactiondata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SimpleMovementActionData {#constructor-2}
+> **SimpleMovementActionData**(other: [SimpleMovementActionBaseData](/vext/ref/fb/simplemovementactionbasedata))
+
+Casts an instance of type [SimpleMovementActionBaseData](/vext/ref/fb/simplemovementactionbasedata) to [SimpleMovementActionData](/vext/ref/fb/simplemovementactiondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SimpleMovementActionBaseData](/vext/ref/fb/simplemovementactionbasedata) | The instance to cast to [SimpleMovementActionData](/vext/ref/fb/simplemovementactiondata). |
+
+### SimpleMovementActionData {#constructor-3}
+> **SimpleMovementActionData**(other: [MovementActionData](/vext/ref/fb/movementactiondata))
+
+Casts an instance of type [MovementActionData](/vext/ref/fb/movementactiondata) to [SimpleMovementActionData](/vext/ref/fb/simplemovementactiondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [MovementActionData](/vext/ref/fb/movementactiondata) | The instance to cast to [SimpleMovementActionData](/vext/ref/fb/simplemovementactiondata). |
+
+### SimpleMovementActionData {#constructor-4}
+> **SimpleMovementActionData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SimpleMovementActionData](/vext/ref/fb/simplemovementactiondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SimpleMovementActionData](/vext/ref/fb/simplemovementactiondata). |
+
+## Properties
+### {{% prop-heading "level" %}}
+> **float**
+
+### {{% prop-heading "action" %}}
+> **[EntryInputActionEnum](/vext/ref/fb/entryinputactionenum)**
+
+### {{% prop-heading "specialAnimationIndex" %}}
+> **int**
+
+### {{% prop-heading "respawn" %}}
+> **bool**
+
+### {{% prop-heading "teleport" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SimpleMovementActionData](/vext/ref/fb/simplemovementactiondata) type.
+

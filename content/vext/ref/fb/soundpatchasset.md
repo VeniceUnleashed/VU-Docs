@@ -1,57 +1,142 @@
 ---
 title: SoundPatchAsset
 ---
-### Base Classes
 
-[SoundGraphAsset](/vext/ref/fb/soundgraphasset/)
+Inherits from 
+[SoundGraphAsset](/vext/ref/fb/soundgraphasset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SoundPatchAsset](#constructor-0)**() |
+| **[SoundPatchAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SoundPatchAsset](#constructor-2)**(other: [SoundGraphAsset](/vext/ref/fb/soundgraphasset)) |
+| **[SoundPatchAsset](#constructor-3)**(other: [SoundAsset](/vext/ref/fb/soundasset)) |
+| **[SoundPatchAsset](#constructor-4)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[SoundPatchAsset](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "outputNodes" >}} | [AudioGraphNodeData](/vext/ref/fb/audiographnodedata)[] |
+| {{< prop "loudness" >}} | float |
+| {{< prop "aiLoudness" >}} | float |
+| {{< prop "radius" >}} | float |
+| {{< prop "dopplerFactor" >}} | float |
+| {{< prop "masterPitch" >}} | float |
+| {{< prop "mixGroup" >}} | [MixGroup](/vext/ref/fb/mixgroup) \| nil |
+| {{< prop "defaultStopEvent" >}} | [AudioGraphEvent](/vext/ref/fb/audiographevent) \| nil |
+| {{< prop "defaultStartEvent" >}} | [AudioGraphEvent](/vext/ref/fb/audiographevent) \| nil |
+| {{< prop "defaultForceInitEvent" >}} | [AudioGraphEvent](/vext/ref/fb/audiographevent) \| nil |
+| {{< prop "defaultEnterScopeEvent" >}} | [AudioGraphEvent](/vext/ref/fb/audiographevent) \| nil |
+| {{< prop "isPersistent" >}} | bool |
+| {{< prop "isLooping" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SoundPatchAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SoundPatchAsset {#constructor-0}
+> **SoundPatchAsset**()
 
-| Constructor                                                                | Description                                                                                                           |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| SoundPatchAsset()                                                          | Create a new instance of this container type.                                                                         |
-| SoundPatchAsset(SoundPatchAsset other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| SoundPatchAsset([SoundGraphAsset](/vext/ref/fb/soundgraphasset/) other)                  | Upcast an instance of type [SoundGraphAsset](/vext/ref/fb/soundgraphasset/) to [SoundPatchAsset](/vext/ref/fb/soundpatchasset/).                  |
-| SoundPatchAsset([SoundAsset](/vext/ref/fb/soundasset/) other)                            | Upcast an instance of type [SoundAsset](/vext/ref/fb/soundasset/) to [SoundPatchAsset](/vext/ref/fb/soundpatchasset/).                            |
-| SoundPatchAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [SoundPatchAsset](/vext/ref/fb/soundpatchasset/).                                      |
-| SoundPatchAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoundPatchAsset](/vext/ref/fb/soundpatchasset/). |
+Creates a new [SoundPatchAsset](/vext/ref/fb/soundpatchasset) frostbite instance.
 
-## Properties
+### SoundPatchAsset {#constructor-1}
+> **SoundPatchAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                   | Type                                         | Description |
-| ---------------------- | -------------------------------------------- | ----------- |
-| outputNodes            | [AudioGraphNodeData](/vext/ref/fb/audiographnodedata/)\[\] |             |
-| loudness               | number                                       |             |
-| aiLoudness             | number                                       |             |
-| radius                 | number                                       |             |
-| dopplerFactor          | number                                       |             |
-| masterPitch            | number                                       |             |
-| mixGroup               | [MixGroup](/vext/ref/fb/mixgroup/)                         |             |
-| defaultStopEvent       | [AudioGraphEvent](/vext/ref/fb/audiographevent/)           |             |
-| defaultStartEvent      | [AudioGraphEvent](/vext/ref/fb/audiographevent/)           |             |
-| defaultForceInitEvent  | [AudioGraphEvent](/vext/ref/fb/audiographevent/)           |             |
-| defaultEnterScopeEvent | [AudioGraphEvent](/vext/ref/fb/audiographevent/)           |             |
-| isPersistent           | bool                                         |             |
-| isLooping              | bool                                         |             |
-
-## Methods
-
-| Type                               | Name            | Parameters                                     |
-| ---------------------------------- | --------------- | ---------------------------------------------- |
-| [SoundPatchAsset](/vext/ref/fb/soundpatchasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SoundPatchAsset](/vext/ref/fb/soundpatchasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SoundPatchAsset](/vext/ref/fb/soundpatchasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SoundPatchAsset {#constructor-2}
+> **SoundPatchAsset**(other: [SoundGraphAsset](/vext/ref/fb/soundgraphasset))
+
+Casts an instance of type [SoundGraphAsset](/vext/ref/fb/soundgraphasset) to [SoundPatchAsset](/vext/ref/fb/soundpatchasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SoundGraphAsset](/vext/ref/fb/soundgraphasset) | The instance to cast to [SoundPatchAsset](/vext/ref/fb/soundpatchasset). |
+
+### SoundPatchAsset {#constructor-3}
+> **SoundPatchAsset**(other: [SoundAsset](/vext/ref/fb/soundasset))
+
+Casts an instance of type [SoundAsset](/vext/ref/fb/soundasset) to [SoundPatchAsset](/vext/ref/fb/soundpatchasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SoundAsset](/vext/ref/fb/soundasset) | The instance to cast to [SoundPatchAsset](/vext/ref/fb/soundpatchasset). |
+
+### SoundPatchAsset {#constructor-4}
+> **SoundPatchAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [SoundPatchAsset](/vext/ref/fb/soundpatchasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [SoundPatchAsset](/vext/ref/fb/soundpatchasset). |
+
+### SoundPatchAsset {#constructor-5}
+> **SoundPatchAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoundPatchAsset](/vext/ref/fb/soundpatchasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SoundPatchAsset](/vext/ref/fb/soundpatchasset). |
+
+## Properties
+### {{% prop-heading "outputNodes" %}}
+> **[AudioGraphNodeData](/vext/ref/fb/audiographnodedata)**[]
+
+### {{% prop-heading "loudness" %}}
+> **float**
+
+### {{% prop-heading "aiLoudness" %}}
+> **float**
+
+### {{% prop-heading "radius" %}}
+> **float**
+
+### {{% prop-heading "dopplerFactor" %}}
+> **float**
+
+### {{% prop-heading "masterPitch" %}}
+> **float**
+
+### {{% prop-heading "mixGroup" %}}
+> **[MixGroup](/vext/ref/fb/mixgroup)** | **nil**
+
+### {{% prop-heading "defaultStopEvent" %}}
+> **[AudioGraphEvent](/vext/ref/fb/audiographevent)** | **nil**
+
+### {{% prop-heading "defaultStartEvent" %}}
+> **[AudioGraphEvent](/vext/ref/fb/audiographevent)** | **nil**
+
+### {{% prop-heading "defaultForceInitEvent" %}}
+> **[AudioGraphEvent](/vext/ref/fb/audiographevent)** | **nil**
+
+### {{% prop-heading "defaultEnterScopeEvent" %}}
+> **[AudioGraphEvent](/vext/ref/fb/audiographevent)** | **nil**
+
+### {{% prop-heading "isPersistent" %}}
+> **bool**
+
+### {{% prop-heading "isLooping" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SoundPatchAsset](/vext/ref/fb/soundpatchasset) type.
+

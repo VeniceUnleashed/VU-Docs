@@ -1,36 +1,73 @@
 ---
 title: SoundGraphPluginInfo
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SoundGraphPluginInfo](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "id" >}} | int |
+| {{< prop "enableAttributeReadMask" >}} | int |
+| {{< prop "connectionIndex" >}} | int |
+| {{< prop "outputChannelCount" >}} | int |
+| {{< prop "constructParamsIndex" >}} | int |
+| {{< prop "constructParamCount" >}} | int |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [SoundGraphPluginInfo](/vext/ref/fb/soundgraphplugininfo) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SoundGraphPluginInfo" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SoundGraphPluginInfo {#constructor-0}
+> **SoundGraphPluginInfo**()
 
-| Constructor                                      | Description                                              |
-| ------------------------------------------------ | -------------------------------------------------------- |
-| SoundGraphPluginInfo()                           | Create a new instance of this structure type.            |
-| SoundGraphPluginInfo(SoundGraphPluginInfo other) | Create a reference copy of a structure of the same type. |
+Creates a new [SoundGraphPluginInfo](/vext/ref/fb/soundgraphplugininfo) frostbite structure.
 
 ## Properties
+### {{% prop-heading "id" %}}
+> **int**
 
-| Name                    | Type   | Description |
-| ----------------------- | ------ | ----------- |
-| id                      | number |             |
-| enableAttributeReadMask | number |             |
-| connectionIndex         | number |             |
-| outputChannelCount      | number |             |
-| constructParamsIndex    | number |             |
-| constructParamCount     | number |             |
+### {{% prop-heading "enableAttributeReadMask" %}}
+> **int**
+
+### {{% prop-heading "connectionIndex" %}}
+> **int**
+
+### {{% prop-heading "outputChannelCount" %}}
+> **int**
+
+### {{% prop-heading "constructParamsIndex" %}}
+> **int**
+
+### {{% prop-heading "constructParamCount" %}}
+> **int**
 
 ## Methods
-
-| Type                                         | Name            | Parameters |
-| -------------------------------------------- | --------------- | ---------- |
-| [SoundGraphPluginInfo](/vext/ref/fb/soundgraphplugininfo/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [SoundGraphPluginInfo](/vext/ref/fb/soundgraphplugininfo)
 
-> [SoundGraphPluginInfo](/vext/ref/fb/soundgraphplugininfo/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[SoundGraphPluginInfo](/vext/ref/fb/soundgraphplugininfo)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SoundGraphPluginInfo](/vext/ref/fb/soundgraphplugininfo) type.
+

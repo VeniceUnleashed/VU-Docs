@@ -1,46 +1,84 @@
 ---
 title: ComparisonLogicNode
 ---
-### Base Classes
 
-[UINodeData](/vext/ref/fb/uinodedata/)
+Inherits from 
+[UINodeData](/vext/ref/fb/uinodedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ComparisonLogicNode](#constructor-0)**() |
+| **[ComparisonLogicNode](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ComparisonLogicNode](#constructor-2)**(other: [UINodeData](/vext/ref/fb/uinodedata)) |
+| **[ComparisonLogicNode](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "inValue" >}} | [UINodePort](/vext/ref/fb/uinodeport) \| nil |
+| {{< prop "outputs" >}} | [UINodePort](/vext/ref/fb/uinodeport)[] |
+| {{< prop "dataSourceInfo" >}} | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo) |
+| {{< prop "skipFractionals" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ComparisonLogicNode" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ComparisonLogicNode {#constructor-0}
+> **ComparisonLogicNode**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| ComparisonLogicNode()                                                          | Create a new instance of this container type.                                                                                 |
-| ComparisonLogicNode(ComparisonLogicNode other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| ComparisonLogicNode([UINodeData](/vext/ref/fb/uinodedata/) other)                            | Upcast an instance of type [UINodeData](/vext/ref/fb/uinodedata/) to [ComparisonLogicNode](/vext/ref/fb/comparisonlogicnode/).                            |
-| ComparisonLogicNode([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ComparisonLogicNode](/vext/ref/fb/comparisonlogicnode/). |
+Creates a new [ComparisonLogicNode](/vext/ref/fb/comparisonlogicnode) frostbite instance.
 
-## Properties
+### ComparisonLogicNode {#constructor-1}
+> **ComparisonLogicNode**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name            | Type                                 | Description |
-| --------------- | ------------------------------------ | ----------- |
-| inValue         | [UINodePort](/vext/ref/fb/uinodeport/)             |             |
-| outputs         | [UINodePort](/vext/ref/fb/uinodeport/)\[\]         |             |
-| dataSourceInfo  | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/) |             |
-| skipFractionals | bool                                 |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [ComparisonLogicNode](/vext/ref/fb/comparisonlogicnode/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ComparisonLogicNode](/vext/ref/fb/comparisonlogicnode/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ComparisonLogicNode](/vext/ref/fb/comparisonlogicnode) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ComparisonLogicNode {#constructor-2}
+> **ComparisonLogicNode**(other: [UINodeData](/vext/ref/fb/uinodedata))
+
+Casts an instance of type [UINodeData](/vext/ref/fb/uinodedata) to [ComparisonLogicNode](/vext/ref/fb/comparisonlogicnode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UINodeData](/vext/ref/fb/uinodedata) | The instance to cast to [ComparisonLogicNode](/vext/ref/fb/comparisonlogicnode). |
+
+### ComparisonLogicNode {#constructor-3}
+> **ComparisonLogicNode**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ComparisonLogicNode](/vext/ref/fb/comparisonlogicnode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ComparisonLogicNode](/vext/ref/fb/comparisonlogicnode). |
+
+## Properties
+### {{% prop-heading "inValue" %}}
+> **[UINodePort](/vext/ref/fb/uinodeport)** | **nil**
+
+### {{% prop-heading "outputs" %}}
+> **[UINodePort](/vext/ref/fb/uinodeport)**[]
+
+### {{% prop-heading "dataSourceInfo" %}}
+> **[UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo)**
+
+### {{% prop-heading "skipFractionals" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ComparisonLogicNode](/vext/ref/fb/comparisonlogicnode) type.
+

@@ -1,14 +1,11 @@
 ---
 title: UIKeyboardEventType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **UIKeyboardEventType_KeyDown** | Value: **0** |
+| **UIKeyboardEventType_KeyUp** | Value: **1** |
+| **UIKeyboardEventType_Char** | Value: **2** |
 
-| Name                         | Value | Description |
-| ---------------------------- | ----- | ----------- |
-| UIKeyboardEventType\_KeyDown | 0     |             |
-| UIKeyboardEventType\_KeyUp   | 1     |             |
-| UIKeyboardEventType\_Char    | 2     |             |

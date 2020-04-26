@@ -1,14 +1,11 @@
 ---
 title: CameraMovementActionMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **CameraMovementActionMode_Start** | Value: **0** |
+| **CameraMovementActionMode_Stop** | Value: **1** |
+| **CameraMovementActionMode_StartAndStop** | Value: **2** |
 
-| Name                                   | Value | Description |
-| -------------------------------------- | ----- | ----------- |
-| CameraMovementActionMode\_Start        | 0     |             |
-| CameraMovementActionMode\_Stop         | 1     |             |
-| CameraMovementActionMode\_StartAndStop | 2     |             |

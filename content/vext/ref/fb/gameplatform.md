@@ -1,17 +1,14 @@
 ---
 title: GamePlatform
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **GamePlatform_Ps3** | Value: **0** |
+| **GamePlatform_Win32** | Value: **1** |
+| **GamePlatform_Xenon** | Value: **2** |
+| **GamePlatform_Any** | Value: **3** |
+| **GamePlatform_Invalid** | Value: **4** |
+| **GamePlatform_Count** | Value: **5** |
 
-| Name                  | Value | Description |
-| --------------------- | ----- | ----------- |
-| GamePlatform\_Ps3     | 0     |             |
-| GamePlatform\_Win32   | 1     |             |
-| GamePlatform\_Xenon   | 2     |             |
-| GamePlatform\_Any     | 3     |             |
-| GamePlatform\_Invalid | 4     |             |
-| GamePlatform\_Count   | 5     |             |

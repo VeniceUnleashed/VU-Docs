@@ -1,37 +1,63 @@
 ---
 title: UIAsset
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIAsset](#constructor-0)**() |
+| **[UIAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UIAsset](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[UIAsset](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIAsset {#constructor-0}
+> **UIAsset**()
 
-| Constructor                                                        | Description                                                                                           |
-| ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- |
-| UIAsset()                                                          | Create a new instance of this container type.                                                         |
-| UIAsset(UIAsset other)                                             | Create a reference copy of an instance of the same type.                                              |
-| UIAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UIAsset](/vext/ref/fb/uiasset/).                                      |
-| UIAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIAsset](/vext/ref/fb/uiasset/). |
+Creates a new [UIAsset](/vext/ref/fb/uiasset) frostbite instance.
 
-## Methods
+### UIAsset {#constructor-1}
+> **UIAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type               | Name            | Parameters                                     |
-| ------------------ | --------------- | ---------------------------------------------- |
-| [UIAsset](/vext/ref/fb/uiasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UIAsset](/vext/ref/fb/uiasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UIAsset](/vext/ref/fb/uiasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UIAsset {#constructor-2}
+> **UIAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [UIAsset](/vext/ref/fb/uiasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [UIAsset](/vext/ref/fb/uiasset). |
+
+### UIAsset {#constructor-3}
+> **UIAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIAsset](/vext/ref/fb/uiasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UIAsset](/vext/ref/fb/uiasset). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIAsset](/vext/ref/fb/uiasset) type.
+

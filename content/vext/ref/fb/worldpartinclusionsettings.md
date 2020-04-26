@@ -1,37 +1,63 @@
 ---
 title: WorldPartInclusionSettings
 ---
-### Base Classes
 
-[SubWorldInclusionSettings](/vext/ref/fb/subworldinclusionsettings/)
+Inherits from 
+[SubWorldInclusionSettings](/vext/ref/fb/subworldinclusionsettings)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[WorldPartInclusionSettings](#constructor-0)**() |
+| **[WorldPartInclusionSettings](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[WorldPartInclusionSettings](#constructor-2)**(other: [SubWorldInclusionSettings](/vext/ref/fb/subworldinclusionsettings)) |
+| **[WorldPartInclusionSettings](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "WorldPartInclusionSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### WorldPartInclusionSettings {#constructor-0}
+> **WorldPartInclusionSettings**()
 
-| Constructor                                                                              | Description                                                                                                                                    |
-| ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| WorldPartInclusionSettings()                                                             | Create a new instance of this container type.                                                                                                  |
-| WorldPartInclusionSettings(WorldPartInclusionSettings other)                             | Create a reference copy of an instance of the same type.                                                                                       |
-| WorldPartInclusionSettings([SubWorldInclusionSettings](/vext/ref/fb/subworldinclusionsettings/) other) | Upcast an instance of type [SubWorldInclusionSettings](/vext/ref/fb/subworldinclusionsettings/) to [WorldPartInclusionSettings](/vext/ref/fb/worldpartinclusionsettings/). |
-| WorldPartInclusionSettings([DataContainer](/vext/ref/shared/class/datacontainer) other)    | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WorldPartInclusionSettings](/vext/ref/fb/worldpartinclusionsettings/).    |
+Creates a new [WorldPartInclusionSettings](/vext/ref/fb/worldpartinclusionsettings) frostbite instance.
 
-## Methods
+### WorldPartInclusionSettings {#constructor-1}
+> **WorldPartInclusionSettings**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                                     | Name            | Parameters                                     |
-| -------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [WorldPartInclusionSettings](/vext/ref/fb/worldpartinclusionsettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [WorldPartInclusionSettings](/vext/ref/fb/worldpartinclusionsettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [WorldPartInclusionSettings](/vext/ref/fb/worldpartinclusionsettings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### WorldPartInclusionSettings {#constructor-2}
+> **WorldPartInclusionSettings**(other: [SubWorldInclusionSettings](/vext/ref/fb/subworldinclusionsettings))
+
+Casts an instance of type [SubWorldInclusionSettings](/vext/ref/fb/subworldinclusionsettings) to [WorldPartInclusionSettings](/vext/ref/fb/worldpartinclusionsettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SubWorldInclusionSettings](/vext/ref/fb/subworldinclusionsettings) | The instance to cast to [WorldPartInclusionSettings](/vext/ref/fb/worldpartinclusionsettings). |
+
+### WorldPartInclusionSettings {#constructor-3}
+> **WorldPartInclusionSettings**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WorldPartInclusionSettings](/vext/ref/fb/worldpartinclusionsettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [WorldPartInclusionSettings](/vext/ref/fb/worldpartinclusionsettings). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [WorldPartInclusionSettings](/vext/ref/fb/worldpartinclusionsettings) type.
+

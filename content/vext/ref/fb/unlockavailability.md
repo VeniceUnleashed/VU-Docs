@@ -1,14 +1,11 @@
 ---
 title: UnlockAvailability
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **UnlockAvailability_All** | Value: **0** |
+| **UnlockAvailability_HumanPlayerOnly** | Value: **1** |
+| **UnlockAvailability_AIOnly** | Value: **2** |
 
-| Name                                | Value | Description |
-| ----------------------------------- | ----- | ----------- |
-| UnlockAvailability\_All             | 0     |             |
-| UnlockAvailability\_HumanPlayerOnly | 1     |             |
-| UnlockAvailability\_AIOnly          | 2     |             |

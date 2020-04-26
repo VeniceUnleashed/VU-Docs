@@ -1,16 +1,13 @@
 ---
 title: AnimatedFireEnum
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **AnimatedFireAutomatic** | Value: **0** |
+| **AnimatedFireSingle** | Value: **1** |
+| **AnimatedFireHoldAndRelease** | Value: **2** |
+| **AnimatedFireDelayedSingleShot** | Value: **3** |
+| **AnimatedFireSimple** | Value: **4** |
 
-| Name                          | Value | Description |
-| ----------------------------- | ----- | ----------- |
-| AnimatedFireAutomatic         | 0     |             |
-| AnimatedFireSingle            | 1     |             |
-| AnimatedFireHoldAndRelease    | 2     |             |
-| AnimatedFireDelayedSingleShot | 3     |             |
-| AnimatedFireSimple            | 4     |             |

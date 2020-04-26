@@ -1,34 +1,65 @@
 ---
 title: LinkConnection
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[LinkConnection](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "source" >}} | [DataContainer](/vext/ref/shared/class/datacontainer) \| nil |
+| {{< prop "target" >}} | [DataContainer](/vext/ref/shared/class/datacontainer) \| nil |
+| {{< prop "sourceFieldId" >}} | int |
+| {{< prop "targetFieldId" >}} | int |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [LinkConnection](/vext/ref/fb/linkconnection) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "LinkConnection" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### LinkConnection {#constructor-0}
+> **LinkConnection**()
 
-| Constructor                          | Description                                              |
-| ------------------------------------ | -------------------------------------------------------- |
-| LinkConnection()                     | Create a new instance of this structure type.            |
-| LinkConnection(LinkConnection other) | Create a reference copy of a structure of the same type. |
+Creates a new [LinkConnection](/vext/ref/fb/linkconnection) frostbite structure.
 
 ## Properties
+### {{% prop-heading "source" %}}
+> **[DataContainer](/vext/ref/shared/class/datacontainer)** | **nil**
 
-| Name          | Type                                                | Description |
-| ------------- | --------------------------------------------------- | ----------- |
-| source        | [DataContainer](/vext/ref/shared/class/datacontainer) |             |
-| target        | [DataContainer](/vext/ref/shared/class/datacontainer) |             |
-| sourceFieldId | number                                              |             |
-| targetFieldId | number                                              |             |
+### {{% prop-heading "target" %}}
+> **[DataContainer](/vext/ref/shared/class/datacontainer)** | **nil**
+
+### {{% prop-heading "sourceFieldId" %}}
+> **int**
+
+### {{% prop-heading "targetFieldId" %}}
+> **int**
 
 ## Methods
-
-| Type                             | Name            | Parameters |
-| -------------------------------- | --------------- | ---------- |
-| [LinkConnection](/vext/ref/fb/linkconnection/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [LinkConnection](/vext/ref/fb/linkconnection)
 
-> [LinkConnection](/vext/ref/fb/linkconnection/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[LinkConnection](/vext/ref/fb/linkconnection)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [LinkConnection](/vext/ref/fb/linkconnection) type.
+

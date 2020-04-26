@@ -1,75 +1,72 @@
 ---
 title: PresenceRequest
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **PresenceRequest_Invalid** | Value: **0** |
+| **PresenceRequest_DownloadBlob** | Value: **1** |
+| **PresenceRequest_UploadBlob** | Value: **2** |
+| **PresenceRequest_DownloadUserSettings** | Value: **3** |
+| **PresenceRequest_UploadUserSettings** | Value: **4** |
+| **PresenceRequest_InitializeCommerceService** | Value: **5** |
+| **PresenceRequest_ShutDownCommerceService** | Value: **6** |
+| **PresenceRequest_EnumerateCommerceContent** | Value: **7** |
+| **PresenceRequest_PurchaseCommerceContent** | Value: **8** |
+| **PresenceRequest_PurchaseConsumableCommerceContent** | Value: **9** |
+| **PresenceRequest_ConsumeCommerceContent** | Value: **10** |
+| **PresenceRequest_GetCommerceContentImage** | Value: **11** |
+| **PresenceRequest_CheckOnlinePass** | Value: **12** |
+| **PresenceRequest_PurchaseOnlinePass** | Value: **13** |
+| **PresenceRequest_RedeemOnlinePassCode** | Value: **14** |
+| **PresenceRequest_SetOverlayUrl** | Value: **15** |
+| **PresenceRequest_ListEntitlements** | Value: **16** |
+| **PresenceRequest_GrantEntitlement** | Value: **17** |
+| **PresenceRequest_GetFriends** | Value: **18** |
+| **PresenceRequest_InviteFriend** | Value: **19** |
+| **PresenceRequest_RemoveFriend** | Value: **20** |
+| **PresenceRequest_HttpGet** | Value: **21** |
+| **PresenceRequest_JoinGameByOnlineNativeData** | Value: **22** |
+| **PresenceRequest_DownloadUpdate** | Value: **23** |
+| **PresenceRequest_SendMessage** | Value: **24** |
+| **PresenceRequest_CreatePlaygroup** | Value: **25** |
+| **PresenceRequest_JoinPlaygroup** | Value: **26** |
+| **PresenceRequest_JoinPlaygroupByUsername** | Value: **27** |
+| **PresenceRequest_JoinPlaygroupByOnlineNativeData** | Value: **28** |
+| **PresenceRequest_JoinPlaygroupByInviteToken** | Value: **29** |
+| **PresenceRequest_SetPlaygroupAttribute** | Value: **30** |
+| **PresenceRequest_LeavePlaygroup** | Value: **31** |
+| **PresenceRequest_DownloadStatistics** | Value: **32** |
+| **PresenceRequest_GetLeaderboard** | Value: **33** |
+| **PresenceRequest_UploadProgression** | Value: **34** |
+| **PresenceRequest_SendInvite** | Value: **35** |
+| **PresenceRequest_KickFromPlaygroup** | Value: **36** |
+| **PresenceRequest_ViewInvite** | Value: **37** |
+| **PresenceRequest_SendInviteToLiveParty** | Value: **38** |
+| **PresenceRequest_SetUserInfoAttribute** | Value: **39** |
+| **PresenceRequest_GetServerBrowserSnapshot** | Value: **40** |
+| **PresenceRequest_GetGamesWithFriends** | Value: **41** |
+| **PresenceRequest_GetGamesByServerId** | Value: **42** |
+| **PresenceRequest_GetDetailedServerInfo** | Value: **43** |
+| **PresenceRequest_UnlockAchievements** | Value: **44** |
+| **PresenceRequest_RspGetServers** | Value: **45** |
+| **PresenceRequest_RspGetServerDetails** | Value: **46** |
+| **PresenceRequest_RspUpdateServerSettings** | Value: **47** |
+| **PresenceRequest_RspGetConfig** | Value: **48** |
+| **PresenceRequest_RspRestartServer** | Value: **49** |
+| **PresenceRequest_RspUpdatePreset** | Value: **50** |
+| **PresenceRequest_RspUpdateMapRotation** | Value: **51** |
+| **PresenceRequest_RspUpdateAdminUser** | Value: **52** |
+| **PresenceRequest_RspUpdateBannedUser** | Value: **53** |
+| **PresenceRequest_RspUpdateVipUser** | Value: **54** |
+| **PresenceRequest_RspUpdateServerBanner** | Value: **55** |
+| **PresenceRequest_ReportServerBanner** | Value: **56** |
+| **PresenceRequest_GetUserId** | Value: **57** |
+| **PresenceRequest_VerifyGrantEntitlement** | Value: **58** |
+| **PresenceRequest_ResetStatistics** | Value: **59** |
+| **PresenceRequest_GetXPromoInformation** | Value: **60** |
+| **PresenceRequest_GetContentInformation** | Value: **61** |
+| **PresenceRequest_DownloadPromoItem** | Value: **62** |
+| **PresenceRequest_Count** | Value: **63** |
 
-| Name                                               | Value | Description |
-| -------------------------------------------------- | ----- | ----------- |
-| PresenceRequest\_Invalid                           | 0     |             |
-| PresenceRequest\_DownloadBlob                      | 1     |             |
-| PresenceRequest\_UploadBlob                        | 2     |             |
-| PresenceRequest\_DownloadUserSettings              | 3     |             |
-| PresenceRequest\_UploadUserSettings                | 4     |             |
-| PresenceRequest\_InitializeCommerceService         | 5     |             |
-| PresenceRequest\_ShutDownCommerceService           | 6     |             |
-| PresenceRequest\_EnumerateCommerceContent          | 7     |             |
-| PresenceRequest\_PurchaseCommerceContent           | 8     |             |
-| PresenceRequest\_PurchaseConsumableCommerceContent | 9     |             |
-| PresenceRequest\_ConsumeCommerceContent            | 10    |             |
-| PresenceRequest\_GetCommerceContentImage           | 11    |             |
-| PresenceRequest\_CheckOnlinePass                   | 12    |             |
-| PresenceRequest\_PurchaseOnlinePass                | 13    |             |
-| PresenceRequest\_RedeemOnlinePassCode              | 14    |             |
-| PresenceRequest\_SetOverlayUrl                     | 15    |             |
-| PresenceRequest\_ListEntitlements                  | 16    |             |
-| PresenceRequest\_GrantEntitlement                  | 17    |             |
-| PresenceRequest\_GetFriends                        | 18    |             |
-| PresenceRequest\_InviteFriend                      | 19    |             |
-| PresenceRequest\_RemoveFriend                      | 20    |             |
-| PresenceRequest\_HttpGet                           | 21    |             |
-| PresenceRequest\_JoinGameByOnlineNativeData        | 22    |             |
-| PresenceRequest\_DownloadUpdate                    | 23    |             |
-| PresenceRequest\_SendMessage                       | 24    |             |
-| PresenceRequest\_CreatePlaygroup                   | 25    |             |
-| PresenceRequest\_JoinPlaygroup                     | 26    |             |
-| PresenceRequest\_JoinPlaygroupByUsername           | 27    |             |
-| PresenceRequest\_JoinPlaygroupByOnlineNativeData   | 28    |             |
-| PresenceRequest\_JoinPlaygroupByInviteToken        | 29    |             |
-| PresenceRequest\_SetPlaygroupAttribute             | 30    |             |
-| PresenceRequest\_LeavePlaygroup                    | 31    |             |
-| PresenceRequest\_DownloadStatistics                | 32    |             |
-| PresenceRequest\_GetLeaderboard                    | 33    |             |
-| PresenceRequest\_UploadProgression                 | 34    |             |
-| PresenceRequest\_SendInvite                        | 35    |             |
-| PresenceRequest\_KickFromPlaygroup                 | 36    |             |
-| PresenceRequest\_ViewInvite                        | 37    |             |
-| PresenceRequest\_SendInviteToLiveParty             | 38    |             |
-| PresenceRequest\_SetUserInfoAttribute              | 39    |             |
-| PresenceRequest\_GetServerBrowserSnapshot          | 40    |             |
-| PresenceRequest\_GetGamesWithFriends               | 41    |             |
-| PresenceRequest\_GetGamesByServerId                | 42    |             |
-| PresenceRequest\_GetDetailedServerInfo             | 43    |             |
-| PresenceRequest\_UnlockAchievements                | 44    |             |
-| PresenceRequest\_RspGetServers                     | 45    |             |
-| PresenceRequest\_RspGetServerDetails               | 46    |             |
-| PresenceRequest\_RspUpdateServerSettings           | 47    |             |
-| PresenceRequest\_RspGetConfig                      | 48    |             |
-| PresenceRequest\_RspRestartServer                  | 49    |             |
-| PresenceRequest\_RspUpdatePreset                   | 50    |             |
-| PresenceRequest\_RspUpdateMapRotation              | 51    |             |
-| PresenceRequest\_RspUpdateAdminUser                | 52    |             |
-| PresenceRequest\_RspUpdateBannedUser               | 53    |             |
-| PresenceRequest\_RspUpdateVipUser                  | 54    |             |
-| PresenceRequest\_RspUpdateServerBanner             | 55    |             |
-| PresenceRequest\_ReportServerBanner                | 56    |             |
-| PresenceRequest\_GetUserId                         | 57    |             |
-| PresenceRequest\_VerifyGrantEntitlement            | 58    |             |
-| PresenceRequest\_ResetStatistics                   | 59    |             |
-| PresenceRequest\_GetXPromoInformation              | 60    |             |
-| PresenceRequest\_GetContentInformation             | 61    |             |
-| PresenceRequest\_DownloadPromoItem                 | 62    |             |
-| PresenceRequest\_Count                             | 63    |             |

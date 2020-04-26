@@ -1,70 +1,180 @@
 ---
 title: SensingSettings
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SensingSettings](#constructor-0)**() |
+| **[SensingSettings](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SensingSettings](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[SensingSettings](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "sensingTimeSpan" >}} | float |
+| {{< prop "attackerTrackTime" >}} | float |
+| {{< prop "lineOfSightTestTime" >}} | float |
+| {{< prop "maxRays" >}} | int |
+| {{< prop "characterVisionBoxSettings" >}} | [VisionBoxSettings](/vext/ref/fb/visionboxsettings) |
+| {{< prop "vehicleVisionBoxSettings" >}} | [VisionBoxSettings](/vext/ref/fb/visionboxsettings) |
+| {{< prop "closeFireImpactDistance" >}} | float |
+| {{< prop "closeExplosiveImpactDistance" >}} | float |
+| {{< prop "closeTrajectoryDistance" >}} | float |
+| {{< prop "impactSenseDistance" >}} | float |
+| {{< prop "maxVolume" >}} | float |
+| {{< prop "maxSize" >}} | float |
+| {{< prop "maxSpeed" >}} | float |
+| {{< prop "volumeModifier" >}} | float |
+| {{< prop "movementModifier" >}} | float |
+| {{< prop "luckModifier" >}} | float |
+| {{< prop "backgroundLoudnessFactor" >}} | float |
+| {{< prop "motionSizeFactor" >}} | float |
+| {{< prop "motionSpeedFactor" >}} | float |
+| {{< prop "motionPeripheralityFactor" >}} | float |
+| {{< prop "motionDistanceFactor" >}} | float |
+| {{< prop "smokeSphereRadius" >}} | float |
+| {{< prop "smokeSphereDuration" >}} | float |
+| {{< prop "spawnOutOfLOSRaycastHeight" >}} | float |
+| {{< prop "spawnOutOfLOSTraceDistance" >}} | float |
+| {{< prop "spawnOutOfLOSRaycastDistance" >}} | float |
+| {{< prop "spawnOutOfLOSRadius" >}} | float |
+| {{< prop "defaultTemplate" >}} | [SensingTemplateData](/vext/ref/fb/sensingtemplatedata) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SensingSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SensingSettings {#constructor-0}
+> **SensingSettings**()
 
-| Constructor                                                                | Description                                                                                                           |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| SensingSettings()                                                          | Create a new instance of this container type.                                                                         |
-| SensingSettings(SensingSettings other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| SensingSettings([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [SensingSettings](/vext/ref/fb/sensingsettings/).                                      |
-| SensingSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SensingSettings](/vext/ref/fb/sensingsettings/). |
+Creates a new [SensingSettings](/vext/ref/fb/sensingsettings) frostbite instance.
 
-## Properties
+### SensingSettings {#constructor-1}
+> **SensingSettings**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                         | Type                                       | Description |
-| ---------------------------- | ------------------------------------------ | ----------- |
-| sensingTimeSpan              | number                                     |             |
-| attackerTrackTime            | number                                     |             |
-| lineOfSightTestTime          | number                                     |             |
-| maxRays                      | number                                     |             |
-| characterVisionBoxSettings   | [VisionBoxSettings](/vext/ref/fb/visionboxsettings/)     |             |
-| vehicleVisionBoxSettings     | [VisionBoxSettings](/vext/ref/fb/visionboxsettings/)     |             |
-| closeFireImpactDistance      | number                                     |             |
-| closeExplosiveImpactDistance | number                                     |             |
-| closeTrajectoryDistance      | number                                     |             |
-| impactSenseDistance          | number                                     |             |
-| maxVolume                    | number                                     |             |
-| maxSize                      | number                                     |             |
-| maxSpeed                     | number                                     |             |
-| volumeModifier               | number                                     |             |
-| movementModifier             | number                                     |             |
-| luckModifier                 | number                                     |             |
-| backgroundLoudnessFactor     | number                                     |             |
-| motionSizeFactor             | number                                     |             |
-| motionSpeedFactor            | number                                     |             |
-| motionPeripheralityFactor    | number                                     |             |
-| motionDistanceFactor         | number                                     |             |
-| smokeSphereRadius            | number                                     |             |
-| smokeSphereDuration          | number                                     |             |
-| spawnOutOfLOSRaycastHeight   | number                                     |             |
-| spawnOutOfLOSTraceDistance   | number                                     |             |
-| spawnOutOfLOSRaycastDistance | number                                     |             |
-| spawnOutOfLOSRadius          | number                                     |             |
-| defaultTemplate              | [SensingTemplateData](/vext/ref/fb/sensingtemplatedata/) |             |
-
-## Methods
-
-| Type                               | Name            | Parameters                                     |
-| ---------------------------------- | --------------- | ---------------------------------------------- |
-| [SensingSettings](/vext/ref/fb/sensingsettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SensingSettings](/vext/ref/fb/sensingsettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SensingSettings](/vext/ref/fb/sensingsettings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SensingSettings {#constructor-2}
+> **SensingSettings**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [SensingSettings](/vext/ref/fb/sensingsettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [SensingSettings](/vext/ref/fb/sensingsettings). |
+
+### SensingSettings {#constructor-3}
+> **SensingSettings**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SensingSettings](/vext/ref/fb/sensingsettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SensingSettings](/vext/ref/fb/sensingsettings). |
+
+## Properties
+### {{% prop-heading "sensingTimeSpan" %}}
+> **float**
+
+### {{% prop-heading "attackerTrackTime" %}}
+> **float**
+
+### {{% prop-heading "lineOfSightTestTime" %}}
+> **float**
+
+### {{% prop-heading "maxRays" %}}
+> **int**
+
+### {{% prop-heading "characterVisionBoxSettings" %}}
+> **[VisionBoxSettings](/vext/ref/fb/visionboxsettings)**
+
+### {{% prop-heading "vehicleVisionBoxSettings" %}}
+> **[VisionBoxSettings](/vext/ref/fb/visionboxsettings)**
+
+### {{% prop-heading "closeFireImpactDistance" %}}
+> **float**
+
+### {{% prop-heading "closeExplosiveImpactDistance" %}}
+> **float**
+
+### {{% prop-heading "closeTrajectoryDistance" %}}
+> **float**
+
+### {{% prop-heading "impactSenseDistance" %}}
+> **float**
+
+### {{% prop-heading "maxVolume" %}}
+> **float**
+
+### {{% prop-heading "maxSize" %}}
+> **float**
+
+### {{% prop-heading "maxSpeed" %}}
+> **float**
+
+### {{% prop-heading "volumeModifier" %}}
+> **float**
+
+### {{% prop-heading "movementModifier" %}}
+> **float**
+
+### {{% prop-heading "luckModifier" %}}
+> **float**
+
+### {{% prop-heading "backgroundLoudnessFactor" %}}
+> **float**
+
+### {{% prop-heading "motionSizeFactor" %}}
+> **float**
+
+### {{% prop-heading "motionSpeedFactor" %}}
+> **float**
+
+### {{% prop-heading "motionPeripheralityFactor" %}}
+> **float**
+
+### {{% prop-heading "motionDistanceFactor" %}}
+> **float**
+
+### {{% prop-heading "smokeSphereRadius" %}}
+> **float**
+
+### {{% prop-heading "smokeSphereDuration" %}}
+> **float**
+
+### {{% prop-heading "spawnOutOfLOSRaycastHeight" %}}
+> **float**
+
+### {{% prop-heading "spawnOutOfLOSTraceDistance" %}}
+> **float**
+
+### {{% prop-heading "spawnOutOfLOSRaycastDistance" %}}
+> **float**
+
+### {{% prop-heading "spawnOutOfLOSRadius" %}}
+> **float**
+
+### {{% prop-heading "defaultTemplate" %}}
+> **[SensingTemplateData](/vext/ref/fb/sensingtemplatedata)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SensingSettings](/vext/ref/fb/sensingsettings) type.
+

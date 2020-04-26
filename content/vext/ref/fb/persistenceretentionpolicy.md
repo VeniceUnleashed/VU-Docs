@@ -1,45 +1,80 @@
 ---
 title: PersistenceRetentionPolicy
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PersistenceRetentionPolicy](#constructor-0)**() |
+| **[PersistenceRetentionPolicy](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PersistenceRetentionPolicy](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[PersistenceRetentionPolicy](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "dailyHistoryCount" >}} | int |
+| {{< prop "weeklyHistoryCount" >}} | int |
+| {{< prop "monthlyHistoryCount" >}} | int |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PersistenceRetentionPolicy" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PersistenceRetentionPolicy {#constructor-0}
+> **PersistenceRetentionPolicy**()
 
-| Constructor                                                                           | Description                                                                                                                                 |
-| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| PersistenceRetentionPolicy()                                                          | Create a new instance of this container type.                                                                                               |
-| PersistenceRetentionPolicy(PersistenceRetentionPolicy other)                          | Create a reference copy of an instance of the same type.                                                                                    |
-| PersistenceRetentionPolicy([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [PersistenceRetentionPolicy](/vext/ref/fb/persistenceretentionpolicy/).                                      |
-| PersistenceRetentionPolicy([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PersistenceRetentionPolicy](/vext/ref/fb/persistenceretentionpolicy/). |
+Creates a new [PersistenceRetentionPolicy](/vext/ref/fb/persistenceretentionpolicy) frostbite instance.
 
-## Properties
+### PersistenceRetentionPolicy {#constructor-1}
+> **PersistenceRetentionPolicy**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                | Type   | Description |
-| ------------------- | ------ | ----------- |
-| dailyHistoryCount   | number |             |
-| weeklyHistoryCount  | number |             |
-| monthlyHistoryCount | number |             |
-
-## Methods
-
-| Type                                                     | Name            | Parameters                                     |
-| -------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [PersistenceRetentionPolicy](/vext/ref/fb/persistenceretentionpolicy/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PersistenceRetentionPolicy](/vext/ref/fb/persistenceretentionpolicy/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PersistenceRetentionPolicy](/vext/ref/fb/persistenceretentionpolicy) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PersistenceRetentionPolicy {#constructor-2}
+> **PersistenceRetentionPolicy**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [PersistenceRetentionPolicy](/vext/ref/fb/persistenceretentionpolicy). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [PersistenceRetentionPolicy](/vext/ref/fb/persistenceretentionpolicy). |
+
+### PersistenceRetentionPolicy {#constructor-3}
+> **PersistenceRetentionPolicy**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PersistenceRetentionPolicy](/vext/ref/fb/persistenceretentionpolicy). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PersistenceRetentionPolicy](/vext/ref/fb/persistenceretentionpolicy). |
+
+## Properties
+### {{% prop-heading "dailyHistoryCount" %}}
+> **int**
+
+### {{% prop-heading "weeklyHistoryCount" %}}
+> **int**
+
+### {{% prop-heading "monthlyHistoryCount" %}}
+> **int**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PersistenceRetentionPolicy](/vext/ref/fb/persistenceretentionpolicy) type.
+

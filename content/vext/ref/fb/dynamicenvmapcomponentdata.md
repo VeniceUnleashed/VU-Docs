@@ -1,48 +1,106 @@
 ---
 title: DynamicEnvmapComponentData
 ---
-### Base Classes
 
-[ComponentData](/vext/ref/fb/componentdata/)
+Inherits from 
+[ComponentData](/vext/ref/fb/componentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[DynamicEnvmapComponentData](#constructor-0)**() |
+| **[DynamicEnvmapComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[DynamicEnvmapComponentData](#constructor-2)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[DynamicEnvmapComponentData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[DynamicEnvmapComponentData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[DynamicEnvmapComponentData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "keyColorEnvmap" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "groundColorEnvmap" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "skyColorEnvmap" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "enable" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "DynamicEnvmapComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### DynamicEnvmapComponentData {#constructor-0}
+> **DynamicEnvmapComponentData**()
 
-| Constructor                                                                           | Description                                                                                                                                 |
-| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| DynamicEnvmapComponentData()                                                          | Create a new instance of this container type.                                                                                               |
-| DynamicEnvmapComponentData(DynamicEnvmapComponentData other)                          | Create a reference copy of an instance of the same type.                                                                                    |
-| DynamicEnvmapComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [DynamicEnvmapComponentData](/vext/ref/fb/dynamicenvmapcomponentdata/).                      |
-| DynamicEnvmapComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [DynamicEnvmapComponentData](/vext/ref/fb/dynamicenvmapcomponentdata/).                    |
-| DynamicEnvmapComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [DynamicEnvmapComponentData](/vext/ref/fb/dynamicenvmapcomponentdata/).              |
-| DynamicEnvmapComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DynamicEnvmapComponentData](/vext/ref/fb/dynamicenvmapcomponentdata/). |
+Creates a new [DynamicEnvmapComponentData](/vext/ref/fb/dynamicenvmapcomponentdata) frostbite instance.
 
-## Properties
+### DynamicEnvmapComponentData {#constructor-1}
+> **DynamicEnvmapComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name              | Type                              | Description |
-| ----------------- | --------------------------------- | ----------- |
-| keyColorEnvmap    | [Vec3](/vext/ref/shared/class/vec3) |             |
-| groundColorEnvmap | [Vec3](/vext/ref/shared/class/vec3) |             |
-| skyColorEnvmap    | [Vec3](/vext/ref/shared/class/vec3) |             |
-| enable            | bool                              |             |
-
-## Methods
-
-| Type                                                     | Name            | Parameters                                     |
-| -------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [DynamicEnvmapComponentData](/vext/ref/fb/dynamicenvmapcomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [DynamicEnvmapComponentData](/vext/ref/fb/dynamicenvmapcomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [DynamicEnvmapComponentData](/vext/ref/fb/dynamicenvmapcomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### DynamicEnvmapComponentData {#constructor-2}
+> **DynamicEnvmapComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [DynamicEnvmapComponentData](/vext/ref/fb/dynamicenvmapcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [DynamicEnvmapComponentData](/vext/ref/fb/dynamicenvmapcomponentdata). |
+
+### DynamicEnvmapComponentData {#constructor-3}
+> **DynamicEnvmapComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [DynamicEnvmapComponentData](/vext/ref/fb/dynamicenvmapcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [DynamicEnvmapComponentData](/vext/ref/fb/dynamicenvmapcomponentdata). |
+
+### DynamicEnvmapComponentData {#constructor-4}
+> **DynamicEnvmapComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [DynamicEnvmapComponentData](/vext/ref/fb/dynamicenvmapcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [DynamicEnvmapComponentData](/vext/ref/fb/dynamicenvmapcomponentdata). |
+
+### DynamicEnvmapComponentData {#constructor-5}
+> **DynamicEnvmapComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DynamicEnvmapComponentData](/vext/ref/fb/dynamicenvmapcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DynamicEnvmapComponentData](/vext/ref/fb/dynamicenvmapcomponentdata). |
+
+## Properties
+### {{% prop-heading "keyColorEnvmap" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "groundColorEnvmap" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "skyColorEnvmap" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "enable" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [DynamicEnvmapComponentData](/vext/ref/fb/dynamicenvmapcomponentdata) type.
+

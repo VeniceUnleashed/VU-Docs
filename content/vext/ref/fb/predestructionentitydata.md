@@ -1,47 +1,116 @@
 ---
 title: PredestructionEntityData
 ---
-### Base Classes
 
-[GameEntityData](/vext/ref/fb/gameentitydata/)
+Inherits from 
+[GameEntityData](/vext/ref/fb/gameentitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PredestructionEntityData](#constructor-0)**() |
+| **[PredestructionEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PredestructionEntityData](#constructor-2)**(other: [GameEntityData](/vext/ref/fb/gameentitydata)) |
+| **[PredestructionEntityData](#constructor-3)**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata)) |
+| **[PredestructionEntityData](#constructor-4)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[PredestructionEntityData](#constructor-5)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[PredestructionEntityData](#constructor-6)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[PredestructionEntityData](#constructor-7)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "radius" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PredestructionEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PredestructionEntityData {#constructor-0}
+> **PredestructionEntityData**()
 
-| Constructor                                                                         | Description                                                                                                                             |
-| ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| PredestructionEntityData()                                                          | Create a new instance of this container type.                                                                                           |
-| PredestructionEntityData(PredestructionEntityData other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| PredestructionEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [PredestructionEntityData](/vext/ref/fb/predestructionentitydata/).                    |
-| PredestructionEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [PredestructionEntityData](/vext/ref/fb/predestructionentitydata/).              |
-| PredestructionEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [PredestructionEntityData](/vext/ref/fb/predestructionentitydata/).                            |
-| PredestructionEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [PredestructionEntityData](/vext/ref/fb/predestructionentitydata/).                    |
-| PredestructionEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [PredestructionEntityData](/vext/ref/fb/predestructionentitydata/).              |
-| PredestructionEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PredestructionEntityData](/vext/ref/fb/predestructionentitydata/). |
+Creates a new [PredestructionEntityData](/vext/ref/fb/predestructionentitydata) frostbite instance.
 
-## Properties
+### PredestructionEntityData {#constructor-1}
+> **PredestructionEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name   | Type   | Description |
-| ------ | ------ | ----------- |
-| radius | number |             |
-
-## Methods
-
-| Type                                                 | Name            | Parameters                                     |
-| ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [PredestructionEntityData](/vext/ref/fb/predestructionentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PredestructionEntityData](/vext/ref/fb/predestructionentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PredestructionEntityData](/vext/ref/fb/predestructionentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PredestructionEntityData {#constructor-2}
+> **PredestructionEntityData**(other: [GameEntityData](/vext/ref/fb/gameentitydata))
+
+Casts an instance of type [GameEntityData](/vext/ref/fb/gameentitydata) to [PredestructionEntityData](/vext/ref/fb/predestructionentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameEntityData](/vext/ref/fb/gameentitydata) | The instance to cast to [PredestructionEntityData](/vext/ref/fb/predestructionentitydata). |
+
+### PredestructionEntityData {#constructor-3}
+> **PredestructionEntityData**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata))
+
+Casts an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata) to [PredestructionEntityData](/vext/ref/fb/predestructionentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SpatialEntityData](/vext/ref/fb/spatialentitydata) | The instance to cast to [PredestructionEntityData](/vext/ref/fb/predestructionentitydata). |
+
+### PredestructionEntityData {#constructor-4}
+> **PredestructionEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [PredestructionEntityData](/vext/ref/fb/predestructionentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [PredestructionEntityData](/vext/ref/fb/predestructionentitydata). |
+
+### PredestructionEntityData {#constructor-5}
+> **PredestructionEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [PredestructionEntityData](/vext/ref/fb/predestructionentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [PredestructionEntityData](/vext/ref/fb/predestructionentitydata). |
+
+### PredestructionEntityData {#constructor-6}
+> **PredestructionEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [PredestructionEntityData](/vext/ref/fb/predestructionentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [PredestructionEntityData](/vext/ref/fb/predestructionentitydata). |
+
+### PredestructionEntityData {#constructor-7}
+> **PredestructionEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PredestructionEntityData](/vext/ref/fb/predestructionentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PredestructionEntityData](/vext/ref/fb/predestructionentitydata). |
+
+## Properties
+### {{% prop-heading "radius" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PredestructionEntityData](/vext/ref/fb/predestructionentitydata) type.
+

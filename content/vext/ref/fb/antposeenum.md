@@ -1,16 +1,13 @@
 ---
 title: AntPoseEnum
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **AntPoseEnum_Stand** | Value: **0** |
+| **AntPoseEnum_Crouch** | Value: **1** |
+| **AntPoseEnum_AntEnumCount** | Value: **2** |
+| **AntPoseEnum_NoChange** | Value: **3** |
+| **AntPoseEnum_Count** | Value: **4** |
 
-| Name                      | Value | Description |
-| ------------------------- | ----- | ----------- |
-| AntPoseEnum\_Stand        | 0     |             |
-| AntPoseEnum\_Crouch       | 1     |             |
-| AntPoseEnum\_AntEnumCount | 2     |             |
-| AntPoseEnum\_NoChange     | 3     |             |
-| AntPoseEnum\_Count        | 4     |             |

@@ -1,17 +1,14 @@
 ---
 title: VoiceOverValueType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **VoiceOverValueType_Boolean** | Value: **0** |
+| **VoiceOverValueType_Integer** | Value: **1** |
+| **VoiceOverValueType_Float** | Value: **2** |
+| **VoiceOverValueType_Vector** | Value: **3** |
+| **VoiceOverValueType_Object** | Value: **4** |
+| **VoiceOverValueTypeCount** | Value: **5** |
 
-| Name                        | Value | Description |
-| --------------------------- | ----- | ----------- |
-| VoiceOverValueType\_Boolean | 0     |             |
-| VoiceOverValueType\_Integer | 1     |             |
-| VoiceOverValueType\_Float   | 2     |             |
-| VoiceOverValueType\_Vector  | 3     |             |
-| VoiceOverValueType\_Object  | 4     |             |
-| VoiceOverValueTypeCount     | 5     |             |

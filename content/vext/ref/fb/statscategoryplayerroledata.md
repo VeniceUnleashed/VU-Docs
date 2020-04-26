@@ -1,44 +1,83 @@
 ---
 title: StatsCategoryPlayerRoleData
 ---
-### Base Classes
 
-[StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/)
+Inherits from 
+[StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[StatsCategoryPlayerRoleData](#constructor-0)**() |
+| **[StatsCategoryPlayerRoleData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[StatsCategoryPlayerRoleData](#constructor-2)**(other: [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata)) |
+| **[StatsCategoryPlayerRoleData](#constructor-3)**(other: [TreeNodeBase](/vext/ref/fb/treenodebase)) |
+| **[StatsCategoryPlayerRoleData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "roles" >}} | [PlayerRole](/vext/ref/fb/playerrole)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "StatsCategoryPlayerRoleData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### StatsCategoryPlayerRoleData {#constructor-0}
+> **StatsCategoryPlayerRoleData**()
 
-| Constructor                                                                            | Description                                                                                                                                   |
-| -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| StatsCategoryPlayerRoleData()                                                          | Create a new instance of this container type.                                                                                                 |
-| StatsCategoryPlayerRoleData(StatsCategoryPlayerRoleData other)                         | Create a reference copy of an instance of the same type.                                                                                      |
-| StatsCategoryPlayerRoleData([StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/) other)      | Upcast an instance of type [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/) to [StatsCategoryPlayerRoleData](/vext/ref/fb/statscategoryplayerroledata/).      |
-| StatsCategoryPlayerRoleData([TreeNodeBase](/vext/ref/fb/treenodebase/) other)                        | Upcast an instance of type [TreeNodeBase](/vext/ref/fb/treenodebase/) to [StatsCategoryPlayerRoleData](/vext/ref/fb/statscategoryplayerroledata/).                        |
-| StatsCategoryPlayerRoleData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StatsCategoryPlayerRoleData](/vext/ref/fb/statscategoryplayerroledata/). |
+Creates a new [StatsCategoryPlayerRoleData](/vext/ref/fb/statscategoryplayerroledata) frostbite instance.
 
-## Properties
+### StatsCategoryPlayerRoleData {#constructor-1}
+> **StatsCategoryPlayerRoleData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name  | Type                         | Description |
-| ----- | ---------------------------- | ----------- |
-| roles | [PlayerRole](/vext/ref/fb/playerrole/)\[\] |             |
-
-## Methods
-
-| Type                                                       | Name            | Parameters                                     |
-| ---------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [StatsCategoryPlayerRoleData](/vext/ref/fb/statscategoryplayerroledata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [StatsCategoryPlayerRoleData](/vext/ref/fb/statscategoryplayerroledata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [StatsCategoryPlayerRoleData](/vext/ref/fb/statscategoryplayerroledata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### StatsCategoryPlayerRoleData {#constructor-2}
+> **StatsCategoryPlayerRoleData**(other: [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata))
+
+Casts an instance of type [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata) to [StatsCategoryPlayerRoleData](/vext/ref/fb/statscategoryplayerroledata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata) | The instance to cast to [StatsCategoryPlayerRoleData](/vext/ref/fb/statscategoryplayerroledata). |
+
+### StatsCategoryPlayerRoleData {#constructor-3}
+> **StatsCategoryPlayerRoleData**(other: [TreeNodeBase](/vext/ref/fb/treenodebase))
+
+Casts an instance of type [TreeNodeBase](/vext/ref/fb/treenodebase) to [StatsCategoryPlayerRoleData](/vext/ref/fb/statscategoryplayerroledata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [TreeNodeBase](/vext/ref/fb/treenodebase) | The instance to cast to [StatsCategoryPlayerRoleData](/vext/ref/fb/statscategoryplayerroledata). |
+
+### StatsCategoryPlayerRoleData {#constructor-4}
+> **StatsCategoryPlayerRoleData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StatsCategoryPlayerRoleData](/vext/ref/fb/statscategoryplayerroledata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [StatsCategoryPlayerRoleData](/vext/ref/fb/statscategoryplayerroledata). |
+
+## Properties
+### {{% prop-heading "roles" %}}
+> **[PlayerRole](/vext/ref/fb/playerrole)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [StatsCategoryPlayerRoleData](/vext/ref/fb/statscategoryplayerroledata) type.
+

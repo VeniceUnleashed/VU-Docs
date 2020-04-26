@@ -1,15 +1,12 @@
 ---
 title: ForceMagnitudeInputType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **FMITYaw** | Value: **0** |
+| **FMITPitch** | Value: **1** |
+| **FMITRoll** | Value: **2** |
+| **FMITThrottle** | Value: **3** |
 
-| Name         | Value | Description |
-| ------------ | ----- | ----------- |
-| FMITYaw      | 0     |             |
-| FMITPitch    | 1     |             |
-| FMITRoll     | 2     |             |
-| FMITThrottle | 3     |             |

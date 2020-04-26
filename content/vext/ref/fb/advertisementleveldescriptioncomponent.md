@@ -1,44 +1,76 @@
 ---
 title: AdvertisementLevelDescriptionComponent
 ---
-### Base Classes
 
-[LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent/)
+Inherits from 
+[LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AdvertisementLevelDescriptionComponent](#constructor-0)**() |
+| **[AdvertisementLevelDescriptionComponent](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[AdvertisementLevelDescriptionComponent](#constructor-2)**(other: [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent)) |
+| **[AdvertisementLevelDescriptionComponent](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "identifier" >}} | string |
+| {{< prop "members" >}} | [AdvertisementZoneMember](/vext/ref/fb/advertisementzonemember)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AdvertisementLevelDescriptionComponent" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AdvertisementLevelDescriptionComponent {#constructor-0}
+> **AdvertisementLevelDescriptionComponent**()
 
-| Constructor                                                                                          | Description                                                                                                                                                            |
-| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| AdvertisementLevelDescriptionComponent()                                                             | Create a new instance of this container type.                                                                                                                          |
-| AdvertisementLevelDescriptionComponent(AdvertisementLevelDescriptionComponent other)                 | Create a reference copy of an instance of the same type.                                                                                                               |
-| AdvertisementLevelDescriptionComponent([LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent/) other) | Upcast an instance of type [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent/) to [AdvertisementLevelDescriptionComponent](/vext/ref/fb/advertisementleveldescriptioncomponent/). |
-| AdvertisementLevelDescriptionComponent([DataContainer](/vext/ref/shared/class/datacontainer) other)    | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AdvertisementLevelDescriptionComponent](/vext/ref/fb/advertisementleveldescriptioncomponent/).    |
+Creates a new [AdvertisementLevelDescriptionComponent](/vext/ref/fb/advertisementleveldescriptioncomponent) frostbite instance.
 
-## Properties
+### AdvertisementLevelDescriptionComponent {#constructor-1}
+> **AdvertisementLevelDescriptionComponent**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name       | Type                                                   | Description |
-| ---------- | ------------------------------------------------------ | ----------- |
-| identifier | string                                                 |             |
-| members    | [AdvertisementZoneMember](/vext/ref/fb/advertisementzonemember/)\[\] |             |
-
-## Methods
-
-| Type                                                                             | Name            | Parameters                                     |
-| -------------------------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [AdvertisementLevelDescriptionComponent](/vext/ref/fb/advertisementleveldescriptioncomponent/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [AdvertisementLevelDescriptionComponent](/vext/ref/fb/advertisementleveldescriptioncomponent/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [AdvertisementLevelDescriptionComponent](/vext/ref/fb/advertisementleveldescriptioncomponent) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### AdvertisementLevelDescriptionComponent {#constructor-2}
+> **AdvertisementLevelDescriptionComponent**(other: [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent))
+
+Casts an instance of type [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent) to [AdvertisementLevelDescriptionComponent](/vext/ref/fb/advertisementleveldescriptioncomponent). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent) | The instance to cast to [AdvertisementLevelDescriptionComponent](/vext/ref/fb/advertisementleveldescriptioncomponent). |
+
+### AdvertisementLevelDescriptionComponent {#constructor-3}
+> **AdvertisementLevelDescriptionComponent**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AdvertisementLevelDescriptionComponent](/vext/ref/fb/advertisementleveldescriptioncomponent). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [AdvertisementLevelDescriptionComponent](/vext/ref/fb/advertisementleveldescriptioncomponent). |
+
+## Properties
+### {{% prop-heading "identifier" %}}
+> **string**
+
+### {{% prop-heading "members" %}}
+> **[AdvertisementZoneMember](/vext/ref/fb/advertisementzonemember)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AdvertisementLevelDescriptionComponent](/vext/ref/fb/advertisementleveldescriptioncomponent) type.
+

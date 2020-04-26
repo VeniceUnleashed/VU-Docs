@@ -1,44 +1,69 @@
 ---
 title: VisualEnvironmentSettings
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VisualEnvironmentSettings](#constructor-0)**() |
+| **[VisualEnvironmentSettings](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VisualEnvironmentSettings](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "sunRotationX" >}} | float |
+| {{< prop "sunRotationY" >}} | float |
+| {{< prop "drawStats" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VisualEnvironmentSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VisualEnvironmentSettings {#constructor-0}
+> **VisualEnvironmentSettings**()
 
-| Constructor                                                                          | Description                                                                                                                               |
-| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| VisualEnvironmentSettings()                                                          | Create a new instance of this container type.                                                                                             |
-| VisualEnvironmentSettings(VisualEnvironmentSettings other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| VisualEnvironmentSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VisualEnvironmentSettings](/vext/ref/fb/visualenvironmentsettings/). |
+Creates a new [VisualEnvironmentSettings](/vext/ref/fb/visualenvironmentsettings) frostbite instance.
 
-## Properties
+### VisualEnvironmentSettings {#constructor-1}
+> **VisualEnvironmentSettings**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name         | Type   | Description |
-| ------------ | ------ | ----------- |
-| sunRotationX | number |             |
-| sunRotationY | number |             |
-| drawStats    | bool   |             |
-
-## Methods
-
-| Type                                                   | Name            | Parameters                                     |
-| ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [VisualEnvironmentSettings](/vext/ref/fb/visualenvironmentsettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VisualEnvironmentSettings](/vext/ref/fb/visualenvironmentsettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VisualEnvironmentSettings](/vext/ref/fb/visualenvironmentsettings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VisualEnvironmentSettings {#constructor-2}
+> **VisualEnvironmentSettings**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VisualEnvironmentSettings](/vext/ref/fb/visualenvironmentsettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VisualEnvironmentSettings](/vext/ref/fb/visualenvironmentsettings). |
+
+## Properties
+### {{% prop-heading "sunRotationX" %}}
+> **float**
+
+### {{% prop-heading "sunRotationY" %}}
+> **float**
+
+### {{% prop-heading "drawStats" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VisualEnvironmentSettings](/vext/ref/fb/visualenvironmentsettings) type.
+

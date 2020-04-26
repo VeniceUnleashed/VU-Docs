@@ -1,16 +1,13 @@
 ---
 title: CoopPlayerEvent
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **CoopPlayerEvent_Connecting** | Value: **0** |
+| **CoopPlayerEvent_Connected** | Value: **1** |
+| **CoopPlayerEvent_Disconnected** | Value: **2** |
+| **CoopPlayerEvent_Stats** | Value: **3** |
+| **CoopPlayerEvent_StatsFailed** | Value: **4** |
 
-| Name                          | Value | Description |
-| ----------------------------- | ----- | ----------- |
-| CoopPlayerEvent\_Connecting   | 0     |             |
-| CoopPlayerEvent\_Connected    | 1     |             |
-| CoopPlayerEvent\_Disconnected | 2     |             |
-| CoopPlayerEvent\_Stats        | 3     |             |
-| CoopPlayerEvent\_StatsFailed  | 4     |             |

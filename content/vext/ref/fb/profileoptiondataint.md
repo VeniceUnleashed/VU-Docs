@@ -1,47 +1,95 @@
 ---
 title: ProfileOptionDataInt
 ---
-### Base Classes
 
-[ProfileOptionData](/vext/ref/fb/profileoptiondata/)
+Inherits from 
+[ProfileOptionData](/vext/ref/fb/profileoptiondata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ProfileOptionDataInt](#constructor-0)**() |
+| **[ProfileOptionDataInt](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ProfileOptionDataInt](#constructor-2)**(other: [ProfileOptionData](/vext/ref/fb/profileoptiondata)) |
+| **[ProfileOptionDataInt](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[ProfileOptionDataInt](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "min" >}} | int |
+| {{< prop "max" >}} | int |
+| {{< prop "value" >}} | int |
+| {{< prop "step" >}} | int |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ProfileOptionDataInt" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ProfileOptionDataInt {#constructor-0}
+> **ProfileOptionDataInt**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| ProfileOptionDataInt()                                                          | Create a new instance of this container type.                                                                                   |
-| ProfileOptionDataInt(ProfileOptionDataInt other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| ProfileOptionDataInt([ProfileOptionData](/vext/ref/fb/profileoptiondata/) other)              | Upcast an instance of type [ProfileOptionData](/vext/ref/fb/profileoptiondata/) to [ProfileOptionDataInt](/vext/ref/fb/profileoptiondataint/).              |
-| ProfileOptionDataInt([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [ProfileOptionDataInt](/vext/ref/fb/profileoptiondataint/).                                      |
-| ProfileOptionDataInt([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ProfileOptionDataInt](/vext/ref/fb/profileoptiondataint/). |
+Creates a new [ProfileOptionDataInt](/vext/ref/fb/profileoptiondataint) frostbite instance.
 
-## Properties
+### ProfileOptionDataInt {#constructor-1}
+> **ProfileOptionDataInt**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name  | Type   | Description |
-| ----- | ------ | ----------- |
-| min   | number |             |
-| max   | number |             |
-| value | number |             |
-| step  | number |             |
-
-## Methods
-
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [ProfileOptionDataInt](/vext/ref/fb/profileoptiondataint/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ProfileOptionDataInt](/vext/ref/fb/profileoptiondataint/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ProfileOptionDataInt](/vext/ref/fb/profileoptiondataint) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ProfileOptionDataInt {#constructor-2}
+> **ProfileOptionDataInt**(other: [ProfileOptionData](/vext/ref/fb/profileoptiondata))
+
+Casts an instance of type [ProfileOptionData](/vext/ref/fb/profileoptiondata) to [ProfileOptionDataInt](/vext/ref/fb/profileoptiondataint). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ProfileOptionData](/vext/ref/fb/profileoptiondata) | The instance to cast to [ProfileOptionDataInt](/vext/ref/fb/profileoptiondataint). |
+
+### ProfileOptionDataInt {#constructor-3}
+> **ProfileOptionDataInt**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [ProfileOptionDataInt](/vext/ref/fb/profileoptiondataint). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [ProfileOptionDataInt](/vext/ref/fb/profileoptiondataint). |
+
+### ProfileOptionDataInt {#constructor-4}
+> **ProfileOptionDataInt**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ProfileOptionDataInt](/vext/ref/fb/profileoptiondataint). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ProfileOptionDataInt](/vext/ref/fb/profileoptiondataint). |
+
+## Properties
+### {{% prop-heading "min" %}}
+> **int**
+
+### {{% prop-heading "max" %}}
+> **int**
+
+### {{% prop-heading "value" %}}
+> **int**
+
+### {{% prop-heading "step" %}}
+> **int**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ProfileOptionDataInt](/vext/ref/fb/profileoptiondataint) type.
+

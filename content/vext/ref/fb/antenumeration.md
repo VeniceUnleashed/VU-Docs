@@ -1,43 +1,65 @@
 ---
 title: AntEnumeration
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AntEnumeration](#constructor-0)**() |
+| **[AntEnumeration](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[AntEnumeration](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "antAsset" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "value" >}} | int |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AntEnumeration" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AntEnumeration {#constructor-0}
+> **AntEnumeration**()
 
-| Constructor                                                               | Description                                                                                                         |
-| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| AntEnumeration()                                                          | Create a new instance of this container type.                                                                       |
-| AntEnumeration(AntEnumeration other)                                      | Create a reference copy of an instance of the same type.                                                            |
-| AntEnumeration([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AntEnumeration](/vext/ref/fb/antenumeration/). |
+Creates a new [AntEnumeration](/vext/ref/fb/antenumeration) frostbite instance.
 
-## Properties
+### AntEnumeration {#constructor-1}
+> **AntEnumeration**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name     | Type             | Description |
-| -------- | ---------------- | ----------- |
-| antAsset | [AntRef](/vext/ref/fb/antref/) |             |
-| value    | number           |             |
-
-## Methods
-
-| Type                             | Name            | Parameters                                     |
-| -------------------------------- | --------------- | ---------------------------------------------- |
-| [AntEnumeration](/vext/ref/fb/antenumeration/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [AntEnumeration](/vext/ref/fb/antenumeration/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [AntEnumeration](/vext/ref/fb/antenumeration) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### AntEnumeration {#constructor-2}
+> **AntEnumeration**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AntEnumeration](/vext/ref/fb/antenumeration). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [AntEnumeration](/vext/ref/fb/antenumeration). |
+
+## Properties
+### {{% prop-heading "antAsset" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "value" %}}
+> **int**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AntEnumeration](/vext/ref/fb/antenumeration) type.
+

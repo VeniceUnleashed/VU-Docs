@@ -1,15 +1,12 @@
 ---
 title: VeniceNetworkUnlockGainedType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **VeniceNetworkUnlockGainedType_Bucket** | Value: **0** |
+| **VeniceNetworkUnlockGainedType_Rank** | Value: **1** |
+| **VeniceNetworkUnlockGainedType_Weapon** | Value: **2** |
+| **VeniceNetworkUnlockGainedType_Award** | Value: **3** |
 
-| Name                                  | Value | Description |
-| ------------------------------------- | ----- | ----------- |
-| VeniceNetworkUnlockGainedType\_Bucket | 0     |             |
-| VeniceNetworkUnlockGainedType\_Rank   | 1     |             |
-| VeniceNetworkUnlockGainedType\_Weapon | 2     |             |
-| VeniceNetworkUnlockGainedType\_Award  | 3     |             |

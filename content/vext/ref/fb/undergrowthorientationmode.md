@@ -1,14 +1,11 @@
 ---
 title: UndergrowthOrientationMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **UndergrowthOrientationMode_Horizontal** | Value: **0** |
+| **UndergrowthOrientationMode_LeanToTerrain** | Value: **1** |
+| **UndergrowthOrientationMode_SkewToTerrain** | Value: **2** |
 
-| Name                                      | Value | Description |
-| ----------------------------------------- | ----- | ----------- |
-| UndergrowthOrientationMode\_Horizontal    | 0     |             |
-| UndergrowthOrientationMode\_LeanToTerrain | 1     |             |
-| UndergrowthOrientationMode\_SkewToTerrain | 2     |             |

@@ -1,44 +1,76 @@
 ---
 title: WeaponFiringEffectsModifier
 ---
-### Base Classes
 
-[WeaponModifierBase](/vext/ref/fb/weaponmodifierbase/)
+Inherits from 
+[WeaponModifierBase](/vext/ref/fb/weaponmodifierbase)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[WeaponFiringEffectsModifier](#constructor-0)**() |
+| **[WeaponFiringEffectsModifier](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[WeaponFiringEffectsModifier](#constructor-2)**(other: [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase)) |
+| **[WeaponFiringEffectsModifier](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "fireEffects1p" >}} | [FireEffectData](/vext/ref/fb/fireeffectdata)[] |
+| {{< prop "fireEffects3p" >}} | [FireEffectData](/vext/ref/fb/fireeffectdata)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "WeaponFiringEffectsModifier" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### WeaponFiringEffectsModifier {#constructor-0}
+> **WeaponFiringEffectsModifier**()
 
-| Constructor                                                                            | Description                                                                                                                                   |
-| -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| WeaponFiringEffectsModifier()                                                          | Create a new instance of this container type.                                                                                                 |
-| WeaponFiringEffectsModifier(WeaponFiringEffectsModifier other)                         | Create a reference copy of an instance of the same type.                                                                                      |
-| WeaponFiringEffectsModifier([WeaponModifierBase](/vext/ref/fb/weaponmodifierbase/) other)            | Upcast an instance of type [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase/) to [WeaponFiringEffectsModifier](/vext/ref/fb/weaponfiringeffectsmodifier/).            |
-| WeaponFiringEffectsModifier([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponFiringEffectsModifier](/vext/ref/fb/weaponfiringeffectsmodifier/). |
+Creates a new [WeaponFiringEffectsModifier](/vext/ref/fb/weaponfiringeffectsmodifier) frostbite instance.
 
-## Properties
+### WeaponFiringEffectsModifier {#constructor-1}
+> **WeaponFiringEffectsModifier**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name          | Type                                 | Description |
-| ------------- | ------------------------------------ | ----------- |
-| fireEffects1p | [FireEffectData](/vext/ref/fb/fireeffectdata/)\[\] |             |
-| fireEffects3p | [FireEffectData](/vext/ref/fb/fireeffectdata/)\[\] |             |
-
-## Methods
-
-| Type                                                       | Name            | Parameters                                     |
-| ---------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [WeaponFiringEffectsModifier](/vext/ref/fb/weaponfiringeffectsmodifier/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [WeaponFiringEffectsModifier](/vext/ref/fb/weaponfiringeffectsmodifier/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [WeaponFiringEffectsModifier](/vext/ref/fb/weaponfiringeffectsmodifier) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### WeaponFiringEffectsModifier {#constructor-2}
+> **WeaponFiringEffectsModifier**(other: [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase))
+
+Casts an instance of type [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase) to [WeaponFiringEffectsModifier](/vext/ref/fb/weaponfiringeffectsmodifier). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase) | The instance to cast to [WeaponFiringEffectsModifier](/vext/ref/fb/weaponfiringeffectsmodifier). |
+
+### WeaponFiringEffectsModifier {#constructor-3}
+> **WeaponFiringEffectsModifier**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponFiringEffectsModifier](/vext/ref/fb/weaponfiringeffectsmodifier). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [WeaponFiringEffectsModifier](/vext/ref/fb/weaponfiringeffectsmodifier). |
+
+## Properties
+### {{% prop-heading "fireEffects1p" %}}
+> **[FireEffectData](/vext/ref/fb/fireeffectdata)**[]
+
+### {{% prop-heading "fireEffects3p" %}}
+> **[FireEffectData](/vext/ref/fb/fireeffectdata)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [WeaponFiringEffectsModifier](/vext/ref/fb/weaponfiringeffectsmodifier) type.
+

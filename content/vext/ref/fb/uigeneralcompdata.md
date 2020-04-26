@@ -1,38 +1,74 @@
 ---
 title: UIGeneralCompData
 ---
-### Base Classes
 
-[UIComponentData](/vext/ref/fb/uicomponentdata/)
+Inherits from 
+[UIComponentData](/vext/ref/fb/uicomponentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIGeneralCompData](#constructor-0)**() |
+| **[UIGeneralCompData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UIGeneralCompData](#constructor-2)**(other: [UIComponentData](/vext/ref/fb/uicomponentdata)) |
+| **[UIGeneralCompData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[UIGeneralCompData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIGeneralCompData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIGeneralCompData {#constructor-0}
+> **UIGeneralCompData**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| UIGeneralCompData()                                                          | Create a new instance of this container type.                                                                             |
-| UIGeneralCompData(UIGeneralCompData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| UIGeneralCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UIGeneralCompData](/vext/ref/fb/uigeneralcompdata/).                  |
-| UIGeneralCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UIGeneralCompData](/vext/ref/fb/uigeneralcompdata/).                                      |
-| UIGeneralCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIGeneralCompData](/vext/ref/fb/uigeneralcompdata/). |
+Creates a new [UIGeneralCompData](/vext/ref/fb/uigeneralcompdata) frostbite instance.
 
-## Methods
+### UIGeneralCompData {#constructor-1}
+> **UIGeneralCompData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [UIGeneralCompData](/vext/ref/fb/uigeneralcompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UIGeneralCompData](/vext/ref/fb/uigeneralcompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UIGeneralCompData](/vext/ref/fb/uigeneralcompdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UIGeneralCompData {#constructor-2}
+> **UIGeneralCompData**(other: [UIComponentData](/vext/ref/fb/uicomponentdata))
+
+Casts an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata) to [UIGeneralCompData](/vext/ref/fb/uigeneralcompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIComponentData](/vext/ref/fb/uicomponentdata) | The instance to cast to [UIGeneralCompData](/vext/ref/fb/uigeneralcompdata). |
+
+### UIGeneralCompData {#constructor-3}
+> **UIGeneralCompData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [UIGeneralCompData](/vext/ref/fb/uigeneralcompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [UIGeneralCompData](/vext/ref/fb/uigeneralcompdata). |
+
+### UIGeneralCompData {#constructor-4}
+> **UIGeneralCompData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIGeneralCompData](/vext/ref/fb/uigeneralcompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UIGeneralCompData](/vext/ref/fb/uigeneralcompdata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIGeneralCompData](/vext/ref/fb/uigeneralcompdata) type.
+

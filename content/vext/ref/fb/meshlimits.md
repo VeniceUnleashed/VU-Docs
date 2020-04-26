@@ -1,12 +1,9 @@
 ---
 title: MeshLimits
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **MaxMeshLodCount** | Value: **5** |
 
-| Name            | Value | Description |
-| --------------- | ----- | ----------- |
-| MaxMeshLodCount | 5     |             |

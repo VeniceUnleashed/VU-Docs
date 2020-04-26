@@ -1,48 +1,106 @@
 ---
 title: VehicleEntryListenerComponentData
 ---
-### Base Classes
 
-[ComponentData](/vext/ref/fb/componentdata/)
+Inherits from 
+[ComponentData](/vext/ref/fb/componentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VehicleEntryListenerComponentData](#constructor-0)**() |
+| **[VehicleEntryListenerComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VehicleEntryListenerComponentData](#constructor-2)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[VehicleEntryListenerComponentData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[VehicleEntryListenerComponentData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[VehicleEntryListenerComponentData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "vehicleEntryListener" >}} | [VehicleEntryListenerBinding](/vext/ref/fb/vehicleentrylistenerbinding) |
+| {{< prop "vehicleCameraControl" >}} | [VehicleCameraControlBinding](/vext/ref/fb/vehiclecameracontrolbinding) |
+| {{< prop "animationEntitySpacePriority" >}} | int |
+| {{< prop "animationWheelTransformDelay" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VehicleEntryListenerComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VehicleEntryListenerComponentData {#constructor-0}
+> **VehicleEntryListenerComponentData**()
 
-| Constructor                                                                                  | Description                                                                                                                                               |
-| -------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| VehicleEntryListenerComponentData()                                                          | Create a new instance of this container type.                                                                                                             |
-| VehicleEntryListenerComponentData(VehicleEntryListenerComponentData other)                   | Create a reference copy of an instance of the same type.                                                                                                  |
-| VehicleEntryListenerComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [VehicleEntryListenerComponentData](/vext/ref/fb/vehicleentrylistenercomponentdata/).                      |
-| VehicleEntryListenerComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [VehicleEntryListenerComponentData](/vext/ref/fb/vehicleentrylistenercomponentdata/).                    |
-| VehicleEntryListenerComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [VehicleEntryListenerComponentData](/vext/ref/fb/vehicleentrylistenercomponentdata/).              |
-| VehicleEntryListenerComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VehicleEntryListenerComponentData](/vext/ref/fb/vehicleentrylistenercomponentdata/). |
+Creates a new [VehicleEntryListenerComponentData](/vext/ref/fb/vehicleentrylistenercomponentdata) frostbite instance.
 
-## Properties
+### VehicleEntryListenerComponentData {#constructor-1}
+> **VehicleEntryListenerComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                         | Type                                                       | Description |
-| ---------------------------- | ---------------------------------------------------------- | ----------- |
-| vehicleEntryListener         | [VehicleEntryListenerBinding](/vext/ref/fb/vehicleentrylistenerbinding/) |             |
-| vehicleCameraControl         | [VehicleCameraControlBinding](/vext/ref/fb/vehiclecameracontrolbinding/) |             |
-| animationEntitySpacePriority | number                                                     |             |
-| animationWheelTransformDelay | number                                                     |             |
-
-## Methods
-
-| Type                                                                   | Name            | Parameters                                     |
-| ---------------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [VehicleEntryListenerComponentData](/vext/ref/fb/vehicleentrylistenercomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VehicleEntryListenerComponentData](/vext/ref/fb/vehicleentrylistenercomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VehicleEntryListenerComponentData](/vext/ref/fb/vehicleentrylistenercomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VehicleEntryListenerComponentData {#constructor-2}
+> **VehicleEntryListenerComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [VehicleEntryListenerComponentData](/vext/ref/fb/vehicleentrylistenercomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [VehicleEntryListenerComponentData](/vext/ref/fb/vehicleentrylistenercomponentdata). |
+
+### VehicleEntryListenerComponentData {#constructor-3}
+> **VehicleEntryListenerComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [VehicleEntryListenerComponentData](/vext/ref/fb/vehicleentrylistenercomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [VehicleEntryListenerComponentData](/vext/ref/fb/vehicleentrylistenercomponentdata). |
+
+### VehicleEntryListenerComponentData {#constructor-4}
+> **VehicleEntryListenerComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [VehicleEntryListenerComponentData](/vext/ref/fb/vehicleentrylistenercomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [VehicleEntryListenerComponentData](/vext/ref/fb/vehicleentrylistenercomponentdata). |
+
+### VehicleEntryListenerComponentData {#constructor-5}
+> **VehicleEntryListenerComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VehicleEntryListenerComponentData](/vext/ref/fb/vehicleentrylistenercomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VehicleEntryListenerComponentData](/vext/ref/fb/vehicleentrylistenercomponentdata). |
+
+## Properties
+### {{% prop-heading "vehicleEntryListener" %}}
+> **[VehicleEntryListenerBinding](/vext/ref/fb/vehicleentrylistenerbinding)**
+
+### {{% prop-heading "vehicleCameraControl" %}}
+> **[VehicleCameraControlBinding](/vext/ref/fb/vehiclecameracontrolbinding)**
+
+### {{% prop-heading "animationEntitySpacePriority" %}}
+> **int**
+
+### {{% prop-heading "animationWheelTransformDelay" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VehicleEntryListenerComponentData](/vext/ref/fb/vehicleentrylistenercomponentdata) type.
+

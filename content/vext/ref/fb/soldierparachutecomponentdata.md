@@ -1,47 +1,102 @@
 ---
 title: SoldierParachuteComponentData
 ---
-### Base Classes
 
-[ComponentData](/vext/ref/fb/componentdata/)
+Inherits from 
+[ComponentData](/vext/ref/fb/componentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SoldierParachuteComponentData](#constructor-0)**() |
+| **[SoldierParachuteComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SoldierParachuteComponentData](#constructor-2)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[SoldierParachuteComponentData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[SoldierParachuteComponentData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[SoldierParachuteComponentData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "binding" >}} | [SoldierParachuteBinding](/vext/ref/fb/soldierparachutebinding) |
+| {{< prop "aimingConstraints" >}} | [AimingConstraintsData](/vext/ref/fb/aimingconstraintsdata) |
+| {{< prop "undeployTime" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SoldierParachuteComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SoldierParachuteComponentData {#constructor-0}
+> **SoldierParachuteComponentData**()
 
-| Constructor                                                                              | Description                                                                                                                                       |
-| ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| SoldierParachuteComponentData()                                                          | Create a new instance of this container type.                                                                                                     |
-| SoldierParachuteComponentData(SoldierParachuteComponentData other)                       | Create a reference copy of an instance of the same type.                                                                                          |
-| SoldierParachuteComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [SoldierParachuteComponentData](/vext/ref/fb/soldierparachutecomponentdata/).                      |
-| SoldierParachuteComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [SoldierParachuteComponentData](/vext/ref/fb/soldierparachutecomponentdata/).                    |
-| SoldierParachuteComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [SoldierParachuteComponentData](/vext/ref/fb/soldierparachutecomponentdata/).              |
-| SoldierParachuteComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoldierParachuteComponentData](/vext/ref/fb/soldierparachutecomponentdata/). |
+Creates a new [SoldierParachuteComponentData](/vext/ref/fb/soldierparachutecomponentdata) frostbite instance.
 
-## Properties
+### SoldierParachuteComponentData {#constructor-1}
+> **SoldierParachuteComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name              | Type                                               | Description |
-| ----------------- | -------------------------------------------------- | ----------- |
-| binding           | [SoldierParachuteBinding](/vext/ref/fb/soldierparachutebinding/) |             |
-| aimingConstraints | [AimingConstraintsData](/vext/ref/fb/aimingconstraintsdata/)     |             |
-| undeployTime      | number                                             |             |
-
-## Methods
-
-| Type                                                           | Name            | Parameters                                     |
-| -------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [SoldierParachuteComponentData](/vext/ref/fb/soldierparachutecomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SoldierParachuteComponentData](/vext/ref/fb/soldierparachutecomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SoldierParachuteComponentData](/vext/ref/fb/soldierparachutecomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SoldierParachuteComponentData {#constructor-2}
+> **SoldierParachuteComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [SoldierParachuteComponentData](/vext/ref/fb/soldierparachutecomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [SoldierParachuteComponentData](/vext/ref/fb/soldierparachutecomponentdata). |
+
+### SoldierParachuteComponentData {#constructor-3}
+> **SoldierParachuteComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [SoldierParachuteComponentData](/vext/ref/fb/soldierparachutecomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [SoldierParachuteComponentData](/vext/ref/fb/soldierparachutecomponentdata). |
+
+### SoldierParachuteComponentData {#constructor-4}
+> **SoldierParachuteComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [SoldierParachuteComponentData](/vext/ref/fb/soldierparachutecomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [SoldierParachuteComponentData](/vext/ref/fb/soldierparachutecomponentdata). |
+
+### SoldierParachuteComponentData {#constructor-5}
+> **SoldierParachuteComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoldierParachuteComponentData](/vext/ref/fb/soldierparachutecomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SoldierParachuteComponentData](/vext/ref/fb/soldierparachutecomponentdata). |
+
+## Properties
+### {{% prop-heading "binding" %}}
+> **[SoldierParachuteBinding](/vext/ref/fb/soldierparachutebinding)**
+
+### {{% prop-heading "aimingConstraints" %}}
+> **[AimingConstraintsData](/vext/ref/fb/aimingconstraintsdata)**
+
+### {{% prop-heading "undeployTime" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SoldierParachuteComponentData](/vext/ref/fb/soldierparachutecomponentdata) type.
+

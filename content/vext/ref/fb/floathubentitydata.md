@@ -1,47 +1,102 @@
 ---
 title: FloatHubEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[FloatHubEntityData](#constructor-0)**() |
+| **[FloatHubEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[FloatHubEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[FloatHubEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[FloatHubEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[FloatHubEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
+| {{< prop "inputCount" >}} | int |
+| {{< prop "inputSelect" >}} | int |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "FloatHubEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### FloatHubEntityData {#constructor-0}
+> **FloatHubEntityData**()
 
-| Constructor                                                                   | Description                                                                                                                 |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| FloatHubEntityData()                                                          | Create a new instance of this container type.                                                                               |
-| FloatHubEntityData(FloatHubEntityData other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| FloatHubEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [FloatHubEntityData](/vext/ref/fb/floathubentitydata/).                            |
-| FloatHubEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [FloatHubEntityData](/vext/ref/fb/floathubentitydata/).                    |
-| FloatHubEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [FloatHubEntityData](/vext/ref/fb/floathubentitydata/).              |
-| FloatHubEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [FloatHubEntityData](/vext/ref/fb/floathubentitydata/). |
+Creates a new [FloatHubEntityData](/vext/ref/fb/floathubentitydata) frostbite instance.
 
-## Properties
+### FloatHubEntityData {#constructor-1}
+> **FloatHubEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name        | Type           | Description |
-| ----------- | -------------- | ----------- |
-| realm       | [Realm](/vext/ref/fb/realm/) |             |
-| inputCount  | number         |             |
-| inputSelect | number         |             |
-
-## Methods
-
-| Type                                     | Name            | Parameters                                     |
-| ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [FloatHubEntityData](/vext/ref/fb/floathubentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [FloatHubEntityData](/vext/ref/fb/floathubentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [FloatHubEntityData](/vext/ref/fb/floathubentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### FloatHubEntityData {#constructor-2}
+> **FloatHubEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [FloatHubEntityData](/vext/ref/fb/floathubentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [FloatHubEntityData](/vext/ref/fb/floathubentitydata). |
+
+### FloatHubEntityData {#constructor-3}
+> **FloatHubEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [FloatHubEntityData](/vext/ref/fb/floathubentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [FloatHubEntityData](/vext/ref/fb/floathubentitydata). |
+
+### FloatHubEntityData {#constructor-4}
+> **FloatHubEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [FloatHubEntityData](/vext/ref/fb/floathubentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [FloatHubEntityData](/vext/ref/fb/floathubentitydata). |
+
+### FloatHubEntityData {#constructor-5}
+> **FloatHubEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [FloatHubEntityData](/vext/ref/fb/floathubentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [FloatHubEntityData](/vext/ref/fb/floathubentitydata). |
+
+## Properties
+### {{% prop-heading "realm" %}}
+> **[Realm](/vext/ref/fb/realm)**
+
+### {{% prop-heading "inputCount" %}}
+> **int**
+
+### {{% prop-heading "inputSelect" %}}
+> **int**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [FloatHubEntityData](/vext/ref/fb/floathubentitydata) type.
+

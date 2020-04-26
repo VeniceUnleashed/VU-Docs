@@ -1,14 +1,11 @@
 ---
 title: EntitlementType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **EntitlementType_Ignored** | Value: **0** |
+| **EntitlementType_Write** | Value: **1** |
+| **EntitlementType_Read** | Value: **2** |
 
-| Name                     | Value | Description |
-| ------------------------ | ----- | ----------- |
-| EntitlementType\_Ignored | 0     |             |
-| EntitlementType\_Write   | 1     |             |
-| EntitlementType\_Read    | 2     |             |

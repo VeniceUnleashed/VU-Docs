@@ -1,49 +1,96 @@
 ---
 title: OperandLogicNode
 ---
-### Base Classes
 
-[UINodeData](/vext/ref/fb/uinodedata/)
+Inherits from 
+[UINodeData](/vext/ref/fb/uinodedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[OperandLogicNode](#constructor-0)**() |
+| **[OperandLogicNode](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[OperandLogicNode](#constructor-2)**(other: [UINodeData](/vext/ref/fb/uinodedata)) |
+| **[OperandLogicNode](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "leftDataSourceInfo" >}} | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo) |
+| {{< prop "operator" >}} | [UILogicOperator](/vext/ref/fb/uilogicoperator) |
+| {{< prop "rightDataSourceInfo" >}} | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo) |
+| {{< prop "rightLiteralOperand" >}} | float |
+| {{< prop "inValue" >}} | [UINodePort](/vext/ref/fb/uinodeport) \| nil |
+| {{< prop "trueValue" >}} | [UINodePort](/vext/ref/fb/uinodeport) \| nil |
+| {{< prop "falseValue" >}} | [UINodePort](/vext/ref/fb/uinodeport) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "OperandLogicNode" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### OperandLogicNode {#constructor-0}
+> **OperandLogicNode**()
 
-| Constructor                                                                 | Description                                                                                                             |
-| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| OperandLogicNode()                                                          | Create a new instance of this container type.                                                                           |
-| OperandLogicNode(OperandLogicNode other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| OperandLogicNode([UINodeData](/vext/ref/fb/uinodedata/) other)                            | Upcast an instance of type [UINodeData](/vext/ref/fb/uinodedata/) to [OperandLogicNode](/vext/ref/fb/operandlogicnode/).                            |
-| OperandLogicNode([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [OperandLogicNode](/vext/ref/fb/operandlogicnode/). |
+Creates a new [OperandLogicNode](/vext/ref/fb/operandlogicnode) frostbite instance.
 
-## Properties
+### OperandLogicNode {#constructor-1}
+> **OperandLogicNode**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                | Type                                 | Description |
-| ------------------- | ------------------------------------ | ----------- |
-| leftDataSourceInfo  | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/) |             |
-| operator            | [UILogicOperator](/vext/ref/fb/uilogicoperator/)   |             |
-| rightDataSourceInfo | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/) |             |
-| rightLiteralOperand | number                               |             |
-| inValue             | [UINodePort](/vext/ref/fb/uinodeport/)             |             |
-| trueValue           | [UINodePort](/vext/ref/fb/uinodeport/)             |             |
-| falseValue          | [UINodePort](/vext/ref/fb/uinodeport/)             |             |
-
-## Methods
-
-| Type                                 | Name            | Parameters                                     |
-| ------------------------------------ | --------------- | ---------------------------------------------- |
-| [OperandLogicNode](/vext/ref/fb/operandlogicnode/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [OperandLogicNode](/vext/ref/fb/operandlogicnode/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [OperandLogicNode](/vext/ref/fb/operandlogicnode) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### OperandLogicNode {#constructor-2}
+> **OperandLogicNode**(other: [UINodeData](/vext/ref/fb/uinodedata))
+
+Casts an instance of type [UINodeData](/vext/ref/fb/uinodedata) to [OperandLogicNode](/vext/ref/fb/operandlogicnode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UINodeData](/vext/ref/fb/uinodedata) | The instance to cast to [OperandLogicNode](/vext/ref/fb/operandlogicnode). |
+
+### OperandLogicNode {#constructor-3}
+> **OperandLogicNode**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [OperandLogicNode](/vext/ref/fb/operandlogicnode). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [OperandLogicNode](/vext/ref/fb/operandlogicnode). |
+
+## Properties
+### {{% prop-heading "leftDataSourceInfo" %}}
+> **[UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo)**
+
+### {{% prop-heading "operator" %}}
+> **[UILogicOperator](/vext/ref/fb/uilogicoperator)**
+
+### {{% prop-heading "rightDataSourceInfo" %}}
+> **[UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo)**
+
+### {{% prop-heading "rightLiteralOperand" %}}
+> **float**
+
+### {{% prop-heading "inValue" %}}
+> **[UINodePort](/vext/ref/fb/uinodeport)** | **nil**
+
+### {{% prop-heading "trueValue" %}}
+> **[UINodePort](/vext/ref/fb/uinodeport)** | **nil**
+
+### {{% prop-heading "falseValue" %}}
+> **[UINodePort](/vext/ref/fb/uinodeport)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [OperandLogicNode](/vext/ref/fb/operandlogicnode) type.
+

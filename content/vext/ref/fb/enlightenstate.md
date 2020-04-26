@@ -1,53 +1,105 @@
 ---
 title: EnlightenState
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[EnlightenState](#constructor-0)**() |
+| **[EnlightenState](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[EnlightenState](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "skyBoxGroundColor" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "skyBoxSunLightColor" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "skyBoxBackLightColor" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "skyBoxSkyColor" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "sunScale" >}} | float |
+| {{< prop "outputScale" >}} | float |
+| {{< prop "bounceScale" >}} | float |
+| {{< prop "skyBoxSunLightColorSize" >}} | float |
+| {{< prop "skyBoxBackLightRotationY" >}} | float |
+| {{< prop "skyBoxBackLightColorSize" >}} | float |
+| {{< prop "skyBoxBackLightRotationX" >}} | float |
+| {{< prop "skyBoxEnable" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "EnlightenState" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### EnlightenState {#constructor-0}
+> **EnlightenState**()
 
-| Constructor                                                               | Description                                                                                                         |
-| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| EnlightenState()                                                          | Create a new instance of this container type.                                                                       |
-| EnlightenState(EnlightenState other)                                      | Create a reference copy of an instance of the same type.                                                            |
-| EnlightenState([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EnlightenState](/vext/ref/fb/enlightenstate/). |
+Creates a new [EnlightenState](/vext/ref/fb/enlightenstate) frostbite instance.
 
-## Properties
+### EnlightenState {#constructor-1}
+> **EnlightenState**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                     | Type                              | Description |
-| ------------------------ | --------------------------------- | ----------- |
-| skyBoxGroundColor        | [Vec3](/vext/ref/shared/class/vec3) |             |
-| skyBoxSunLightColor      | [Vec3](/vext/ref/shared/class/vec3) |             |
-| skyBoxBackLightColor     | [Vec3](/vext/ref/shared/class/vec3) |             |
-| skyBoxSkyColor           | [Vec3](/vext/ref/shared/class/vec3) |             |
-| sunScale                 | number                            |             |
-| outputScale              | number                            |             |
-| bounceScale              | number                            |             |
-| skyBoxSunLightColorSize  | number                            |             |
-| skyBoxBackLightRotationY | number                            |             |
-| skyBoxBackLightColorSize | number                            |             |
-| skyBoxBackLightRotationX | number                            |             |
-| skyBoxEnable             | bool                              |             |
-
-## Methods
-
-| Type                             | Name            | Parameters                                     |
-| -------------------------------- | --------------- | ---------------------------------------------- |
-| [EnlightenState](/vext/ref/fb/enlightenstate/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [EnlightenState](/vext/ref/fb/enlightenstate/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [EnlightenState](/vext/ref/fb/enlightenstate) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### EnlightenState {#constructor-2}
+> **EnlightenState**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EnlightenState](/vext/ref/fb/enlightenstate). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [EnlightenState](/vext/ref/fb/enlightenstate). |
+
+## Properties
+### {{% prop-heading "skyBoxGroundColor" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "skyBoxSunLightColor" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "skyBoxBackLightColor" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "skyBoxSkyColor" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "sunScale" %}}
+> **float**
+
+### {{% prop-heading "outputScale" %}}
+> **float**
+
+### {{% prop-heading "bounceScale" %}}
+> **float**
+
+### {{% prop-heading "skyBoxSunLightColorSize" %}}
+> **float**
+
+### {{% prop-heading "skyBoxBackLightRotationY" %}}
+> **float**
+
+### {{% prop-heading "skyBoxBackLightColorSize" %}}
+> **float**
+
+### {{% prop-heading "skyBoxBackLightRotationX" %}}
+> **float**
+
+### {{% prop-heading "skyBoxEnable" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [EnlightenState](/vext/ref/fb/enlightenstate) type.
+

@@ -1,43 +1,72 @@
 ---
 title: WeaponProjectileModifier
 ---
-### Base Classes
 
-[WeaponModifierBase](/vext/ref/fb/weaponmodifierbase/)
+Inherits from 
+[WeaponModifierBase](/vext/ref/fb/weaponmodifierbase)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[WeaponProjectileModifier](#constructor-0)**() |
+| **[WeaponProjectileModifier](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[WeaponProjectileModifier](#constructor-2)**(other: [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase)) |
+| **[WeaponProjectileModifier](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "projectileData" >}} | [ProjectileEntityData](/vext/ref/fb/projectileentitydata) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "WeaponProjectileModifier" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### WeaponProjectileModifier {#constructor-0}
+> **WeaponProjectileModifier**()
 
-| Constructor                                                                         | Description                                                                                                                             |
-| ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| WeaponProjectileModifier()                                                          | Create a new instance of this container type.                                                                                           |
-| WeaponProjectileModifier(WeaponProjectileModifier other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| WeaponProjectileModifier([WeaponModifierBase](/vext/ref/fb/weaponmodifierbase/) other)            | Upcast an instance of type [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase/) to [WeaponProjectileModifier](/vext/ref/fb/weaponprojectilemodifier/).            |
-| WeaponProjectileModifier([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponProjectileModifier](/vext/ref/fb/weaponprojectilemodifier/). |
+Creates a new [WeaponProjectileModifier](/vext/ref/fb/weaponprojectilemodifier) frostbite instance.
 
-## Properties
+### WeaponProjectileModifier {#constructor-1}
+> **WeaponProjectileModifier**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name           | Type                                         | Description |
-| -------------- | -------------------------------------------- | ----------- |
-| projectileData | [ProjectileEntityData](/vext/ref/fb/projectileentitydata/) |             |
-
-## Methods
-
-| Type                                                 | Name            | Parameters                                     |
-| ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [WeaponProjectileModifier](/vext/ref/fb/weaponprojectilemodifier/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [WeaponProjectileModifier](/vext/ref/fb/weaponprojectilemodifier/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [WeaponProjectileModifier](/vext/ref/fb/weaponprojectilemodifier) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### WeaponProjectileModifier {#constructor-2}
+> **WeaponProjectileModifier**(other: [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase))
+
+Casts an instance of type [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase) to [WeaponProjectileModifier](/vext/ref/fb/weaponprojectilemodifier). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [WeaponModifierBase](/vext/ref/fb/weaponmodifierbase) | The instance to cast to [WeaponProjectileModifier](/vext/ref/fb/weaponprojectilemodifier). |
+
+### WeaponProjectileModifier {#constructor-3}
+> **WeaponProjectileModifier**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WeaponProjectileModifier](/vext/ref/fb/weaponprojectilemodifier). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [WeaponProjectileModifier](/vext/ref/fb/weaponprojectilemodifier). |
+
+## Properties
+### {{% prop-heading "projectileData" %}}
+> **[ProjectileEntityData](/vext/ref/fb/projectileentitydata)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [WeaponProjectileModifier](/vext/ref/fb/weaponprojectilemodifier) type.
+

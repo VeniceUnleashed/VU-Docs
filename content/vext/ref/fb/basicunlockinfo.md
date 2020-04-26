@@ -1,36 +1,73 @@
 ---
 title: BasicUnlockInfo
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[BasicUnlockInfo](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "unlockGuid" >}} | [Guid](/vext/ref/shared/class/guid) |
+| {{< prop "identifier" >}} | int |
+| {{< prop "unlockScore" >}} | int |
+| {{< prop "licenses" >}} | string[] |
+| {{< prop "additionalLicenses" >}} | string[] |
+| {{< prop "stringId" >}} | string |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [BasicUnlockInfo](/vext/ref/fb/basicunlockinfo) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "BasicUnlockInfo" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### BasicUnlockInfo {#constructor-0}
+> **BasicUnlockInfo**()
 
-| Constructor                            | Description                                              |
-| -------------------------------------- | -------------------------------------------------------- |
-| BasicUnlockInfo()                      | Create a new instance of this structure type.            |
-| BasicUnlockInfo(BasicUnlockInfo other) | Create a reference copy of a structure of the same type. |
+Creates a new [BasicUnlockInfo](/vext/ref/fb/basicunlockinfo) frostbite structure.
 
 ## Properties
+### {{% prop-heading "unlockGuid" %}}
+> **[Guid](/vext/ref/shared/class/guid)**
 
-| Name               | Type                              | Description |
-| ------------------ | --------------------------------- | ----------- |
-| unlockGuid         | [Guid](/vext/ref/shared/class/guid) |             |
-| identifier         | number                            |             |
-| unlockScore        | number                            |             |
-| licenses           | string\[\]                        |             |
-| additionalLicenses | string\[\]                        |             |
-| stringId           | string                            |             |
+### {{% prop-heading "identifier" %}}
+> **int**
+
+### {{% prop-heading "unlockScore" %}}
+> **int**
+
+### {{% prop-heading "licenses" %}}
+> **string**[]
+
+### {{% prop-heading "additionalLicenses" %}}
+> **string**[]
+
+### {{% prop-heading "stringId" %}}
+> **string**
 
 ## Methods
-
-| Type                               | Name            | Parameters |
-| ---------------------------------- | --------------- | ---------- |
-| [BasicUnlockInfo](/vext/ref/fb/basicunlockinfo/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [BasicUnlockInfo](/vext/ref/fb/basicunlockinfo)
 
-> [BasicUnlockInfo](/vext/ref/fb/basicunlockinfo/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[BasicUnlockInfo](/vext/ref/fb/basicunlockinfo)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [BasicUnlockInfo](/vext/ref/fb/basicunlockinfo) type.
+

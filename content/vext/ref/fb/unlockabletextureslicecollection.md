@@ -1,43 +1,65 @@
 ---
 title: UnlockableTextureSliceCollection
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UnlockableTextureSliceCollection](#constructor-0)**() |
+| **[UnlockableTextureSliceCollection](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UnlockableTextureSliceCollection](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "defaultValue" >}} | int |
+| {{< prop "possibleValues" >}} | [TextureSliceUnlockPartData](/vext/ref/fb/texturesliceunlockpartdata)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UnlockableTextureSliceCollection" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UnlockableTextureSliceCollection {#constructor-0}
+> **UnlockableTextureSliceCollection**()
 
-| Constructor                                                                                 | Description                                                                                                                                             |
-| ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| UnlockableTextureSliceCollection()                                                          | Create a new instance of this container type.                                                                                                           |
-| UnlockableTextureSliceCollection(UnlockableTextureSliceCollection other)                    | Create a reference copy of an instance of the same type.                                                                                                |
-| UnlockableTextureSliceCollection([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UnlockableTextureSliceCollection](/vext/ref/fb/unlockabletextureslicecollection/). |
+Creates a new [UnlockableTextureSliceCollection](/vext/ref/fb/unlockabletextureslicecollection) frostbite instance.
 
-## Properties
+### UnlockableTextureSliceCollection {#constructor-1}
+> **UnlockableTextureSliceCollection**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name           | Type                                                         | Description |
-| -------------- | ------------------------------------------------------------ | ----------- |
-| defaultValue   | number                                                       |             |
-| possibleValues | [TextureSliceUnlockPartData](/vext/ref/fb/texturesliceunlockpartdata/)\[\] |             |
-
-## Methods
-
-| Type                                                                 | Name            | Parameters                                     |
-| -------------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [UnlockableTextureSliceCollection](/vext/ref/fb/unlockabletextureslicecollection/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UnlockableTextureSliceCollection](/vext/ref/fb/unlockabletextureslicecollection/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UnlockableTextureSliceCollection](/vext/ref/fb/unlockabletextureslicecollection) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UnlockableTextureSliceCollection {#constructor-2}
+> **UnlockableTextureSliceCollection**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UnlockableTextureSliceCollection](/vext/ref/fb/unlockabletextureslicecollection). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UnlockableTextureSliceCollection](/vext/ref/fb/unlockabletextureslicecollection). |
+
+## Properties
+### {{% prop-heading "defaultValue" %}}
+> **int**
+
+### {{% prop-heading "possibleValues" %}}
+> **[TextureSliceUnlockPartData](/vext/ref/fb/texturesliceunlockpartdata)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UnlockableTextureSliceCollection](/vext/ref/fb/unlockabletextureslicecollection) type.
+

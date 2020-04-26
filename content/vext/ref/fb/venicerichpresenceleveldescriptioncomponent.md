@@ -1,44 +1,76 @@
 ---
 title: VeniceRichPresenceLevelDescriptionComponent
 ---
-### Base Classes
 
-[LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent/)
+Inherits from 
+[LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VeniceRichPresenceLevelDescriptionComponent](#constructor-0)**() |
+| **[VeniceRichPresenceLevelDescriptionComponent](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VeniceRichPresenceLevelDescriptionComponent](#constructor-2)**(other: [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent)) |
+| **[VeniceRichPresenceLevelDescriptionComponent](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "presenceMode" >}} | [RichPresencePresenceString](/vext/ref/fb/richpresencepresencestring) \| nil |
+| {{< prop "contextValues" >}} | [RichPresenceContextSetting](/vext/ref/fb/richpresencecontextsetting)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VeniceRichPresenceLevelDescriptionComponent" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VeniceRichPresenceLevelDescriptionComponent {#constructor-0}
+> **VeniceRichPresenceLevelDescriptionComponent**()
 
-| Constructor                                                                                               | Description                                                                                                                                                                      |
-| --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| VeniceRichPresenceLevelDescriptionComponent()                                                             | Create a new instance of this container type.                                                                                                                                    |
-| VeniceRichPresenceLevelDescriptionComponent(VeniceRichPresenceLevelDescriptionComponent other)            | Create a reference copy of an instance of the same type.                                                                                                                         |
-| VeniceRichPresenceLevelDescriptionComponent([LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent/) other) | Upcast an instance of type [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent/) to [VeniceRichPresenceLevelDescriptionComponent](/vext/ref/fb/venicerichpresenceleveldescriptioncomponent/). |
-| VeniceRichPresenceLevelDescriptionComponent([DataContainer](/vext/ref/shared/class/datacontainer) other)    | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VeniceRichPresenceLevelDescriptionComponent](/vext/ref/fb/venicerichpresenceleveldescriptioncomponent/).    |
+Creates a new [VeniceRichPresenceLevelDescriptionComponent](/vext/ref/fb/venicerichpresenceleveldescriptioncomponent) frostbite instance.
 
-## Properties
+### VeniceRichPresenceLevelDescriptionComponent {#constructor-1}
+> **VeniceRichPresenceLevelDescriptionComponent**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name          | Type                                                         | Description |
-| ------------- | ------------------------------------------------------------ | ----------- |
-| presenceMode  | [RichPresencePresenceString](/vext/ref/fb/richpresencepresencestring/)     |             |
-| contextValues | [RichPresenceContextSetting](/vext/ref/fb/richpresencecontextsetting/)\[\] |             |
-
-## Methods
-
-| Type                                                                                       | Name            | Parameters                                     |
-| ------------------------------------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [VeniceRichPresenceLevelDescriptionComponent](/vext/ref/fb/venicerichpresenceleveldescriptioncomponent/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VeniceRichPresenceLevelDescriptionComponent](/vext/ref/fb/venicerichpresenceleveldescriptioncomponent/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VeniceRichPresenceLevelDescriptionComponent](/vext/ref/fb/venicerichpresenceleveldescriptioncomponent) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VeniceRichPresenceLevelDescriptionComponent {#constructor-2}
+> **VeniceRichPresenceLevelDescriptionComponent**(other: [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent))
+
+Casts an instance of type [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent) to [VeniceRichPresenceLevelDescriptionComponent](/vext/ref/fb/venicerichpresenceleveldescriptioncomponent). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent) | The instance to cast to [VeniceRichPresenceLevelDescriptionComponent](/vext/ref/fb/venicerichpresenceleveldescriptioncomponent). |
+
+### VeniceRichPresenceLevelDescriptionComponent {#constructor-3}
+> **VeniceRichPresenceLevelDescriptionComponent**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VeniceRichPresenceLevelDescriptionComponent](/vext/ref/fb/venicerichpresenceleveldescriptioncomponent). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VeniceRichPresenceLevelDescriptionComponent](/vext/ref/fb/venicerichpresenceleveldescriptioncomponent). |
+
+## Properties
+### {{% prop-heading "presenceMode" %}}
+> **[RichPresencePresenceString](/vext/ref/fb/richpresencepresencestring)** | **nil**
+
+### {{% prop-heading "contextValues" %}}
+> **[RichPresenceContextSetting](/vext/ref/fb/richpresencecontextsetting)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VeniceRichPresenceLevelDescriptionComponent](/vext/ref/fb/venicerichpresenceleveldescriptioncomponent) type.
+

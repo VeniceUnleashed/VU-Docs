@@ -1,44 +1,83 @@
 ---
 title: KitState
 ---
-### Base Classes
 
-[MetricState](/vext/ref/fb/metricstate/)
+Inherits from 
+[MetricState](/vext/ref/fb/metricstate)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[KitState](#constructor-0)**() |
+| **[KitState](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[KitState](#constructor-2)**(other: [MetricState](/vext/ref/fb/metricstate)) |
+| **[KitState](#constructor-3)**(other: [MetricEvent](/vext/ref/fb/metricevent)) |
+| **[KitState](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "kit" >}} | string |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "KitState" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### KitState {#constructor-0}
+> **KitState**()
 
-| Constructor                                                         | Description                                                                                             |
-| ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| KitState()                                                          | Create a new instance of this container type.                                                           |
-| KitState(KitState other)                                            | Create a reference copy of an instance of the same type.                                                |
-| KitState([MetricState](/vext/ref/fb/metricstate/) other)                          | Upcast an instance of type [MetricState](/vext/ref/fb/metricstate/) to [KitState](/vext/ref/fb/kitstate/).                          |
-| KitState([MetricEvent](/vext/ref/fb/metricevent/) other)                          | Upcast an instance of type [MetricEvent](/vext/ref/fb/metricevent/) to [KitState](/vext/ref/fb/kitstate/).                          |
-| KitState([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [KitState](/vext/ref/fb/kitstate/). |
+Creates a new [KitState](/vext/ref/fb/kitstate) frostbite instance.
 
-## Properties
+### KitState {#constructor-1}
+> **KitState**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name | Type   | Description |
-| ---- | ------ | ----------- |
-| kit  | string |             |
-
-## Methods
-
-| Type                 | Name            | Parameters                                     |
-| -------------------- | --------------- | ---------------------------------------------- |
-| [KitState](/vext/ref/fb/kitstate/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [KitState](/vext/ref/fb/kitstate/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [KitState](/vext/ref/fb/kitstate) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### KitState {#constructor-2}
+> **KitState**(other: [MetricState](/vext/ref/fb/metricstate))
+
+Casts an instance of type [MetricState](/vext/ref/fb/metricstate) to [KitState](/vext/ref/fb/kitstate). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [MetricState](/vext/ref/fb/metricstate) | The instance to cast to [KitState](/vext/ref/fb/kitstate). |
+
+### KitState {#constructor-3}
+> **KitState**(other: [MetricEvent](/vext/ref/fb/metricevent))
+
+Casts an instance of type [MetricEvent](/vext/ref/fb/metricevent) to [KitState](/vext/ref/fb/kitstate). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [MetricEvent](/vext/ref/fb/metricevent) | The instance to cast to [KitState](/vext/ref/fb/kitstate). |
+
+### KitState {#constructor-4}
+> **KitState**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [KitState](/vext/ref/fb/kitstate). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [KitState](/vext/ref/fb/kitstate). |
+
+## Properties
+### {{% prop-heading "kit" %}}
+> **string**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [KitState](/vext/ref/fb/kitstate) type.
+

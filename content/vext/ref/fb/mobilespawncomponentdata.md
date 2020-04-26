@@ -1,49 +1,110 @@
 ---
 title: MobileSpawnComponentData
 ---
-### Base Classes
 
-[ComponentData](/vext/ref/fb/componentdata/)
+Inherits from 
+[ComponentData](/vext/ref/fb/componentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MobileSpawnComponentData](#constructor-0)**() |
+| **[MobileSpawnComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MobileSpawnComponentData](#constructor-2)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[MobileSpawnComponentData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[MobileSpawnComponentData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[MobileSpawnComponentData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "parachuteSpawnRadiusMin" >}} | float |
+| {{< prop "parachuteSpawnDistance" >}} | float |
+| {{< prop "nameSid" >}} | string |
+| {{< prop "parachuteSpawnRadiusMax" >}} | float |
+| {{< prop "enterMobileSpawnPoint" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MobileSpawnComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MobileSpawnComponentData {#constructor-0}
+> **MobileSpawnComponentData**()
 
-| Constructor                                                                         | Description                                                                                                                             |
-| ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| MobileSpawnComponentData()                                                          | Create a new instance of this container type.                                                                                           |
-| MobileSpawnComponentData(MobileSpawnComponentData other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| MobileSpawnComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [MobileSpawnComponentData](/vext/ref/fb/mobilespawncomponentdata/).                      |
-| MobileSpawnComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [MobileSpawnComponentData](/vext/ref/fb/mobilespawncomponentdata/).                    |
-| MobileSpawnComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [MobileSpawnComponentData](/vext/ref/fb/mobilespawncomponentdata/).              |
-| MobileSpawnComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MobileSpawnComponentData](/vext/ref/fb/mobilespawncomponentdata/). |
+Creates a new [MobileSpawnComponentData](/vext/ref/fb/mobilespawncomponentdata) frostbite instance.
 
-## Properties
+### MobileSpawnComponentData {#constructor-1}
+> **MobileSpawnComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                    | Type   | Description |
-| ----------------------- | ------ | ----------- |
-| parachuteSpawnRadiusMin | number |             |
-| parachuteSpawnDistance  | number |             |
-| nameSid                 | string |             |
-| parachuteSpawnRadiusMax | number |             |
-| enterMobileSpawnPoint   | bool   |             |
-
-## Methods
-
-| Type                                                 | Name            | Parameters                                     |
-| ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [MobileSpawnComponentData](/vext/ref/fb/mobilespawncomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MobileSpawnComponentData](/vext/ref/fb/mobilespawncomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MobileSpawnComponentData](/vext/ref/fb/mobilespawncomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MobileSpawnComponentData {#constructor-2}
+> **MobileSpawnComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [MobileSpawnComponentData](/vext/ref/fb/mobilespawncomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [MobileSpawnComponentData](/vext/ref/fb/mobilespawncomponentdata). |
+
+### MobileSpawnComponentData {#constructor-3}
+> **MobileSpawnComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [MobileSpawnComponentData](/vext/ref/fb/mobilespawncomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [MobileSpawnComponentData](/vext/ref/fb/mobilespawncomponentdata). |
+
+### MobileSpawnComponentData {#constructor-4}
+> **MobileSpawnComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [MobileSpawnComponentData](/vext/ref/fb/mobilespawncomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [MobileSpawnComponentData](/vext/ref/fb/mobilespawncomponentdata). |
+
+### MobileSpawnComponentData {#constructor-5}
+> **MobileSpawnComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MobileSpawnComponentData](/vext/ref/fb/mobilespawncomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MobileSpawnComponentData](/vext/ref/fb/mobilespawncomponentdata). |
+
+## Properties
+### {{% prop-heading "parachuteSpawnRadiusMin" %}}
+> **float**
+
+### {{% prop-heading "parachuteSpawnDistance" %}}
+> **float**
+
+### {{% prop-heading "nameSid" %}}
+> **string**
+
+### {{% prop-heading "parachuteSpawnRadiusMax" %}}
+> **float**
+
+### {{% prop-heading "enterMobileSpawnPoint" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MobileSpawnComponentData](/vext/ref/fb/mobilespawncomponentdata) type.
+

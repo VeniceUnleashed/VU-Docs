@@ -1,13 +1,10 @@
 ---
 title: SoundWaveVariationSelection
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **SwvsSequential** | Value: **0** |
+| **SwvsRandom** | Value: **1** |
 
-| Name           | Value | Description |
-| -------------- | ----- | ----------- |
-| SwvsSequential | 0     |             |
-| SwvsRandom     | 1     |             |

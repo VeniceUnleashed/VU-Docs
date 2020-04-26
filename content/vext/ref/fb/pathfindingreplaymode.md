@@ -1,14 +1,11 @@
 ---
 title: PathfindingReplayMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **PathfindingReplayMode_Disabled** | Value: **0** |
+| **PathfindingReplayMode_Binary** | Value: **1** |
+| **PathfindingReplayMode_Text** | Value: **2** |
 
-| Name                            | Value | Description |
-| ------------------------------- | ----- | ----------- |
-| PathfindingReplayMode\_Disabled | 0     |             |
-| PathfindingReplayMode\_Binary   | 1     |             |
-| PathfindingReplayMode\_Text     | 2     |             |

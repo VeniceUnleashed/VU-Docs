@@ -1,43 +1,72 @@
 ---
 title: LockingScoringHandlerData
 ---
-### Base Classes
 
-[ScoringHandlerData](/vext/ref/fb/scoringhandlerdata/)
+Inherits from 
+[ScoringHandlerData](/vext/ref/fb/scoringhandlerdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[LockingScoringHandlerData](#constructor-0)**() |
+| **[LockingScoringHandlerData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[LockingScoringHandlerData](#constructor-2)**(other: [ScoringHandlerData](/vext/ref/fb/scoringhandlerdata)) |
+| **[LockingScoringHandlerData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "hotVehicleTimeout" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "LockingScoringHandlerData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### LockingScoringHandlerData {#constructor-0}
+> **LockingScoringHandlerData**()
 
-| Constructor                                                                          | Description                                                                                                                               |
-| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| LockingScoringHandlerData()                                                          | Create a new instance of this container type.                                                                                             |
-| LockingScoringHandlerData(LockingScoringHandlerData other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| LockingScoringHandlerData([ScoringHandlerData](/vext/ref/fb/scoringhandlerdata/) other)            | Upcast an instance of type [ScoringHandlerData](/vext/ref/fb/scoringhandlerdata/) to [LockingScoringHandlerData](/vext/ref/fb/lockingscoringhandlerdata/).            |
-| LockingScoringHandlerData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LockingScoringHandlerData](/vext/ref/fb/lockingscoringhandlerdata/). |
+Creates a new [LockingScoringHandlerData](/vext/ref/fb/lockingscoringhandlerdata) frostbite instance.
 
-## Properties
+### LockingScoringHandlerData {#constructor-1}
+> **LockingScoringHandlerData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name              | Type   | Description |
-| ----------------- | ------ | ----------- |
-| hotVehicleTimeout | number |             |
-
-## Methods
-
-| Type                                                   | Name            | Parameters                                     |
-| ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [LockingScoringHandlerData](/vext/ref/fb/lockingscoringhandlerdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [LockingScoringHandlerData](/vext/ref/fb/lockingscoringhandlerdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [LockingScoringHandlerData](/vext/ref/fb/lockingscoringhandlerdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### LockingScoringHandlerData {#constructor-2}
+> **LockingScoringHandlerData**(other: [ScoringHandlerData](/vext/ref/fb/scoringhandlerdata))
+
+Casts an instance of type [ScoringHandlerData](/vext/ref/fb/scoringhandlerdata) to [LockingScoringHandlerData](/vext/ref/fb/lockingscoringhandlerdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ScoringHandlerData](/vext/ref/fb/scoringhandlerdata) | The instance to cast to [LockingScoringHandlerData](/vext/ref/fb/lockingscoringhandlerdata). |
+
+### LockingScoringHandlerData {#constructor-3}
+> **LockingScoringHandlerData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LockingScoringHandlerData](/vext/ref/fb/lockingscoringhandlerdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [LockingScoringHandlerData](/vext/ref/fb/lockingscoringhandlerdata). |
+
+## Properties
+### {{% prop-heading "hotVehicleTimeout" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [LockingScoringHandlerData](/vext/ref/fb/lockingscoringhandlerdata) type.
+

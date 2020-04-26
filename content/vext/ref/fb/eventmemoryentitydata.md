@@ -1,47 +1,116 @@
 ---
 title: EventMemoryEntityData
 ---
-### Base Classes
 
-[GameEntityData](/vext/ref/fb/gameentitydata/)
+Inherits from 
+[GameEntityData](/vext/ref/fb/gameentitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[EventMemoryEntityData](#constructor-0)**() |
+| **[EventMemoryEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[EventMemoryEntityData](#constructor-2)**(other: [GameEntityData](/vext/ref/fb/gameentitydata)) |
+| **[EventMemoryEntityData](#constructor-3)**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata)) |
+| **[EventMemoryEntityData](#constructor-4)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[EventMemoryEntityData](#constructor-5)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[EventMemoryEntityData](#constructor-6)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[EventMemoryEntityData](#constructor-7)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "EventMemoryEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### EventMemoryEntityData {#constructor-0}
+> **EventMemoryEntityData**()
 
-| Constructor                                                                      | Description                                                                                                                       |
-| -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| EventMemoryEntityData()                                                          | Create a new instance of this container type.                                                                                     |
-| EventMemoryEntityData(EventMemoryEntityData other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| EventMemoryEntityData([GameEntityData](/vext/ref/fb/gameentitydata/) other)                    | Upcast an instance of type [GameEntityData](/vext/ref/fb/gameentitydata/) to [EventMemoryEntityData](/vext/ref/fb/eventmemoryentitydata/).                    |
-| EventMemoryEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [EventMemoryEntityData](/vext/ref/fb/eventmemoryentitydata/).              |
-| EventMemoryEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [EventMemoryEntityData](/vext/ref/fb/eventmemoryentitydata/).                            |
-| EventMemoryEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [EventMemoryEntityData](/vext/ref/fb/eventmemoryentitydata/).                    |
-| EventMemoryEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [EventMemoryEntityData](/vext/ref/fb/eventmemoryentitydata/).              |
-| EventMemoryEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EventMemoryEntityData](/vext/ref/fb/eventmemoryentitydata/). |
+Creates a new [EventMemoryEntityData](/vext/ref/fb/eventmemoryentitydata) frostbite instance.
 
-## Properties
+### EventMemoryEntityData {#constructor-1}
+> **EventMemoryEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name  | Type           | Description |
-| ----- | -------------- | ----------- |
-| realm | [Realm](/vext/ref/fb/realm/) |             |
-
-## Methods
-
-| Type                                           | Name            | Parameters                                     |
-| ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [EventMemoryEntityData](/vext/ref/fb/eventmemoryentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [EventMemoryEntityData](/vext/ref/fb/eventmemoryentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [EventMemoryEntityData](/vext/ref/fb/eventmemoryentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### EventMemoryEntityData {#constructor-2}
+> **EventMemoryEntityData**(other: [GameEntityData](/vext/ref/fb/gameentitydata))
+
+Casts an instance of type [GameEntityData](/vext/ref/fb/gameentitydata) to [EventMemoryEntityData](/vext/ref/fb/eventmemoryentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameEntityData](/vext/ref/fb/gameentitydata) | The instance to cast to [EventMemoryEntityData](/vext/ref/fb/eventmemoryentitydata). |
+
+### EventMemoryEntityData {#constructor-3}
+> **EventMemoryEntityData**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata))
+
+Casts an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata) to [EventMemoryEntityData](/vext/ref/fb/eventmemoryentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SpatialEntityData](/vext/ref/fb/spatialentitydata) | The instance to cast to [EventMemoryEntityData](/vext/ref/fb/eventmemoryentitydata). |
+
+### EventMemoryEntityData {#constructor-4}
+> **EventMemoryEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [EventMemoryEntityData](/vext/ref/fb/eventmemoryentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [EventMemoryEntityData](/vext/ref/fb/eventmemoryentitydata). |
+
+### EventMemoryEntityData {#constructor-5}
+> **EventMemoryEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [EventMemoryEntityData](/vext/ref/fb/eventmemoryentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [EventMemoryEntityData](/vext/ref/fb/eventmemoryentitydata). |
+
+### EventMemoryEntityData {#constructor-6}
+> **EventMemoryEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [EventMemoryEntityData](/vext/ref/fb/eventmemoryentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [EventMemoryEntityData](/vext/ref/fb/eventmemoryentitydata). |
+
+### EventMemoryEntityData {#constructor-7}
+> **EventMemoryEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EventMemoryEntityData](/vext/ref/fb/eventmemoryentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [EventMemoryEntityData](/vext/ref/fb/eventmemoryentitydata). |
+
+## Properties
+### {{% prop-heading "realm" %}}
+> **[Realm](/vext/ref/fb/realm)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [EventMemoryEntityData](/vext/ref/fb/eventmemoryentitydata) type.
+

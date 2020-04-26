@@ -1,47 +1,81 @@
 ---
 title: BotPriorityConfigData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[BotPriorityConfigData](#constructor-0)**() |
+| **[BotPriorityConfigData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[BotPriorityConfigData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "debugColor" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "distance" >}} | float |
+| {{< prop "period" >}} | int |
+| {{< prop "angleOffset" >}} | float |
+| {{< prop "appliesToExecution" >}} | bool |
+| {{< prop "appliesToDecisions" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "BotPriorityConfigData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### BotPriorityConfigData {#constructor-0}
+> **BotPriorityConfigData**()
 
-| Constructor                                                                      | Description                                                                                                                       |
-| -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| BotPriorityConfigData()                                                          | Create a new instance of this container type.                                                                                     |
-| BotPriorityConfigData(BotPriorityConfigData other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| BotPriorityConfigData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BotPriorityConfigData](/vext/ref/fb/botpriorityconfigdata/). |
+Creates a new [BotPriorityConfigData](/vext/ref/fb/botpriorityconfigdata) frostbite instance.
 
-## Properties
+### BotPriorityConfigData {#constructor-1}
+> **BotPriorityConfigData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name               | Type                              | Description |
-| ------------------ | --------------------------------- | ----------- |
-| debugColor         | [Vec3](/vext/ref/shared/class/vec3) |             |
-| distance           | number                            |             |
-| period             | number                            |             |
-| angleOffset        | number                            |             |
-| appliesToExecution | bool                              |             |
-| appliesToDecisions | bool                              |             |
-
-## Methods
-
-| Type                                           | Name            | Parameters                                     |
-| ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [BotPriorityConfigData](/vext/ref/fb/botpriorityconfigdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [BotPriorityConfigData](/vext/ref/fb/botpriorityconfigdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [BotPriorityConfigData](/vext/ref/fb/botpriorityconfigdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### BotPriorityConfigData {#constructor-2}
+> **BotPriorityConfigData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BotPriorityConfigData](/vext/ref/fb/botpriorityconfigdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [BotPriorityConfigData](/vext/ref/fb/botpriorityconfigdata). |
+
+## Properties
+### {{% prop-heading "debugColor" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "distance" %}}
+> **float**
+
+### {{% prop-heading "period" %}}
+> **int**
+
+### {{% prop-heading "angleOffset" %}}
+> **float**
+
+### {{% prop-heading "appliesToExecution" %}}
+> **bool**
+
+### {{% prop-heading "appliesToDecisions" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [BotPriorityConfigData](/vext/ref/fb/botpriorityconfigdata) type.
+

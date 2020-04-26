@@ -1,16 +1,13 @@
 ---
 title: HardwareProfile
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **Hardware_Autodetect** | Value: **0** |
+| **Hardware_LowEnd** | Value: **1** |
+| **Hardware_Medium** | Value: **2** |
+| **Hardware_HighEnd** | Value: **3** |
+| **Hardware_Maximum** | Value: **4** |
 
-| Name                 | Value | Description |
-| -------------------- | ----- | ----------- |
-| Hardware\_Autodetect | 0     |             |
-| Hardware\_LowEnd     | 1     |             |
-| Hardware\_Medium     | 2     |             |
-| Hardware\_HighEnd    | 3     |             |
-| Hardware\_Maximum    | 4     |             |

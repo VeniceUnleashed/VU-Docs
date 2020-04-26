@@ -1,31 +1,53 @@
 ---
 title: CounterHelper
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[CounterHelper](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "dummy" >}} | bool |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [CounterHelper](/vext/ref/fb/counterhelper) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "CounterHelper" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### CounterHelper {#constructor-0}
+> **CounterHelper**()
 
-| Constructor                        | Description                                              |
-| ---------------------------------- | -------------------------------------------------------- |
-| CounterHelper()                    | Create a new instance of this structure type.            |
-| CounterHelper(CounterHelper other) | Create a reference copy of a structure of the same type. |
+Creates a new [CounterHelper](/vext/ref/fb/counterhelper) frostbite structure.
 
 ## Properties
-
-| Name  | Type | Description |
-| ----- | ---- | ----------- |
-| dummy | bool |             |
+### {{% prop-heading "dummy" %}}
+> **bool**
 
 ## Methods
-
-| Type                           | Name            | Parameters |
-| ------------------------------ | --------------- | ---------- |
-| [CounterHelper](/vext/ref/fb/counterhelper/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [CounterHelper](/vext/ref/fb/counterhelper)
 
-> [CounterHelper](/vext/ref/fb/counterhelper/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[CounterHelper](/vext/ref/fb/counterhelper)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [CounterHelper](/vext/ref/fb/counterhelper) type.
+

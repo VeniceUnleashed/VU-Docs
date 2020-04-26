@@ -1,44 +1,83 @@
 ---
 title: Vec4PropertyTrackData
 ---
-### Base Classes
 
-[SimplePropertyTrackData](/vext/ref/fb/simplepropertytrackdata/)
+Inherits from 
+[SimplePropertyTrackData](/vext/ref/fb/simplepropertytrackdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[Vec4PropertyTrackData](#constructor-0)**() |
+| **[Vec4PropertyTrackData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[Vec4PropertyTrackData](#constructor-2)**(other: [SimplePropertyTrackData](/vext/ref/fb/simplepropertytrackdata)) |
+| **[Vec4PropertyTrackData](#constructor-3)**(other: [PropertyTrackData](/vext/ref/fb/propertytrackdata)) |
+| **[Vec4PropertyTrackData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "values" >}} | [Vec4](/vext/ref/shared/class/vec4)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "Vec4PropertyTrackData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### Vec4PropertyTrackData {#constructor-0}
+> **Vec4PropertyTrackData**()
 
-| Constructor                                                                      | Description                                                                                                                       |
-| -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| Vec4PropertyTrackData()                                                          | Create a new instance of this container type.                                                                                     |
-| Vec4PropertyTrackData(Vec4PropertyTrackData other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| Vec4PropertyTrackData([SimplePropertyTrackData](/vext/ref/fb/simplepropertytrackdata/) other)  | Upcast an instance of type [SimplePropertyTrackData](/vext/ref/fb/simplepropertytrackdata/) to [Vec4PropertyTrackData](/vext/ref/fb/vec4propertytrackdata/).  |
-| Vec4PropertyTrackData([PropertyTrackData](/vext/ref/fb/propertytrackdata/) other)              | Upcast an instance of type [PropertyTrackData](/vext/ref/fb/propertytrackdata/) to [Vec4PropertyTrackData](/vext/ref/fb/vec4propertytrackdata/).              |
-| Vec4PropertyTrackData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [Vec4PropertyTrackData](/vext/ref/fb/vec4propertytrackdata/). |
+Creates a new [Vec4PropertyTrackData](/vext/ref/fb/vec4propertytrackdata) frostbite instance.
 
-## Properties
+### Vec4PropertyTrackData {#constructor-1}
+> **Vec4PropertyTrackData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name   | Type                                  | Description |
-| ------ | ------------------------------------- | ----------- |
-| values | [Vec4](/vext/ref/shared/class/vec4)\[\] |             |
-
-## Methods
-
-| Type                                           | Name            | Parameters                                     |
-| ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [Vec4PropertyTrackData](/vext/ref/fb/vec4propertytrackdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [Vec4PropertyTrackData](/vext/ref/fb/vec4propertytrackdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [Vec4PropertyTrackData](/vext/ref/fb/vec4propertytrackdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### Vec4PropertyTrackData {#constructor-2}
+> **Vec4PropertyTrackData**(other: [SimplePropertyTrackData](/vext/ref/fb/simplepropertytrackdata))
+
+Casts an instance of type [SimplePropertyTrackData](/vext/ref/fb/simplepropertytrackdata) to [Vec4PropertyTrackData](/vext/ref/fb/vec4propertytrackdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SimplePropertyTrackData](/vext/ref/fb/simplepropertytrackdata) | The instance to cast to [Vec4PropertyTrackData](/vext/ref/fb/vec4propertytrackdata). |
+
+### Vec4PropertyTrackData {#constructor-3}
+> **Vec4PropertyTrackData**(other: [PropertyTrackData](/vext/ref/fb/propertytrackdata))
+
+Casts an instance of type [PropertyTrackData](/vext/ref/fb/propertytrackdata) to [Vec4PropertyTrackData](/vext/ref/fb/vec4propertytrackdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [PropertyTrackData](/vext/ref/fb/propertytrackdata) | The instance to cast to [Vec4PropertyTrackData](/vext/ref/fb/vec4propertytrackdata). |
+
+### Vec4PropertyTrackData {#constructor-4}
+> **Vec4PropertyTrackData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [Vec4PropertyTrackData](/vext/ref/fb/vec4propertytrackdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [Vec4PropertyTrackData](/vext/ref/fb/vec4propertytrackdata). |
+
+## Properties
+### {{% prop-heading "values" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [Vec4PropertyTrackData](/vext/ref/fb/vec4propertytrackdata) type.
+

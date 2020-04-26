@@ -1,61 +1,144 @@
 ---
 title: UINestedListDataBinding
 ---
-### Base Classes
 
-[UIDataBinding](/vext/ref/fb/uidatabinding/)
+Inherits from 
+[UIDataBinding](/vext/ref/fb/uidatabinding)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UINestedListDataBinding](#constructor-0)**() |
+| **[UINestedListDataBinding](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UINestedListDataBinding](#constructor-2)**(other: [UIDataBinding](/vext/ref/fb/uidatabinding)) |
+| **[UINestedListDataBinding](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "listIndex" >}} | int |
+| {{< prop "nestedLists" >}} | [NestedList](/vext/ref/fb/nestedlist)[] |
+| {{< prop "rowSpacing" >}} | int |
+| {{< prop "defaultHighlightedRow" >}} | [DefaultSelectionItem](/vext/ref/fb/defaultselectionitem) |
+| {{< prop "navigationType" >}} | [UIListNavigationType](/vext/ref/fb/uilistnavigationtype) |
+| {{< prop "rowType" >}} | [UIListRowType](/vext/ref/fb/uilistrowtype) |
+| {{< prop "emptyRowType" >}} | [UIListEmptyRowType](/vext/ref/fb/uilistemptyrowtype) |
+| {{< prop "selectorWidth" >}} | int |
+| {{< prop "visibility" >}} | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo) |
+| {{< prop "sendIndexWithEvent" >}} | bool |
+| {{< prop "useScrollBar" >}} | bool |
+| {{< prop "dataIncludesButtonLayout" >}} | bool |
+| {{< prop "clearListAtNavigationEvent" >}} | bool |
+| {{< prop "use3DSelection" >}} | bool |
+| {{< prop "invertVisible" >}} | bool |
+| {{< prop "visible" >}} | bool |
+| {{< prop "screenRotationEnabled" >}} | bool |
+| {{< prop "highLightOnUpdate" >}} | bool |
+| {{< prop "keepScrollOffset" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UINestedListDataBinding" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UINestedListDataBinding {#constructor-0}
+> **UINestedListDataBinding**()
 
-| Constructor                                                                        | Description                                                                                                                           |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| UINestedListDataBinding()                                                          | Create a new instance of this container type.                                                                                         |
-| UINestedListDataBinding(UINestedListDataBinding other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| UINestedListDataBinding([UIDataBinding](/vext/ref/fb/uidatabinding/) other)                      | Upcast an instance of type [UIDataBinding](/vext/ref/fb/uidatabinding/) to [UINestedListDataBinding](/vext/ref/fb/uinestedlistdatabinding/).                      |
-| UINestedListDataBinding([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UINestedListDataBinding](/vext/ref/fb/uinestedlistdatabinding/). |
+Creates a new [UINestedListDataBinding](/vext/ref/fb/uinestedlistdatabinding) frostbite instance.
 
-## Properties
+### UINestedListDataBinding {#constructor-1}
+> **UINestedListDataBinding**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                       | Type                                         | Description |
-| -------------------------- | -------------------------------------------- | ----------- |
-| listIndex                  | number                                       |             |
-| nestedLists                | [NestedList](/vext/ref/fb/nestedlist/)\[\]                 |             |
-| rowSpacing                 | number                                       |             |
-| defaultHighlightedRow      | [DefaultSelectionItem](/vext/ref/fb/defaultselectionitem/) |             |
-| navigationType             | [UIListNavigationType](/vext/ref/fb/uilistnavigationtype/) |             |
-| rowType                    | [UIListRowType](/vext/ref/fb/uilistrowtype/)               |             |
-| emptyRowType               | [UIListEmptyRowType](/vext/ref/fb/uilistemptyrowtype/)     |             |
-| selectorWidth              | number                                       |             |
-| visibility                 | [UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo/)         |             |
-| sendIndexWithEvent         | bool                                         |             |
-| useScrollBar               | bool                                         |             |
-| dataIncludesButtonLayout   | bool                                         |             |
-| clearListAtNavigationEvent | bool                                         |             |
-| use3DSelection             | bool                                         |             |
-| invertVisible              | bool                                         |             |
-| visible                    | bool                                         |             |
-| screenRotationEnabled      | bool                                         |             |
-| highLightOnUpdate          | bool                                         |             |
-| keepScrollOffset           | bool                                         |             |
-
-## Methods
-
-| Type                                               | Name            | Parameters                                     |
-| -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [UINestedListDataBinding](/vext/ref/fb/uinestedlistdatabinding/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UINestedListDataBinding](/vext/ref/fb/uinestedlistdatabinding/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UINestedListDataBinding](/vext/ref/fb/uinestedlistdatabinding) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UINestedListDataBinding {#constructor-2}
+> **UINestedListDataBinding**(other: [UIDataBinding](/vext/ref/fb/uidatabinding))
+
+Casts an instance of type [UIDataBinding](/vext/ref/fb/uidatabinding) to [UINestedListDataBinding](/vext/ref/fb/uinestedlistdatabinding). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIDataBinding](/vext/ref/fb/uidatabinding) | The instance to cast to [UINestedListDataBinding](/vext/ref/fb/uinestedlistdatabinding). |
+
+### UINestedListDataBinding {#constructor-3}
+> **UINestedListDataBinding**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UINestedListDataBinding](/vext/ref/fb/uinestedlistdatabinding). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UINestedListDataBinding](/vext/ref/fb/uinestedlistdatabinding). |
+
+## Properties
+### {{% prop-heading "listIndex" %}}
+> **int**
+
+### {{% prop-heading "nestedLists" %}}
+> **[NestedList](/vext/ref/fb/nestedlist)**[]
+
+### {{% prop-heading "rowSpacing" %}}
+> **int**
+
+### {{% prop-heading "defaultHighlightedRow" %}}
+> **[DefaultSelectionItem](/vext/ref/fb/defaultselectionitem)**
+
+### {{% prop-heading "navigationType" %}}
+> **[UIListNavigationType](/vext/ref/fb/uilistnavigationtype)**
+
+### {{% prop-heading "rowType" %}}
+> **[UIListRowType](/vext/ref/fb/uilistrowtype)**
+
+### {{% prop-heading "emptyRowType" %}}
+> **[UIListEmptyRowType](/vext/ref/fb/uilistemptyrowtype)**
+
+### {{% prop-heading "selectorWidth" %}}
+> **int**
+
+### {{% prop-heading "visibility" %}}
+> **[UIDataSourceInfo](/vext/ref/fb/uidatasourceinfo)**
+
+### {{% prop-heading "sendIndexWithEvent" %}}
+> **bool**
+
+### {{% prop-heading "useScrollBar" %}}
+> **bool**
+
+### {{% prop-heading "dataIncludesButtonLayout" %}}
+> **bool**
+
+### {{% prop-heading "clearListAtNavigationEvent" %}}
+> **bool**
+
+### {{% prop-heading "use3DSelection" %}}
+> **bool**
+
+### {{% prop-heading "invertVisible" %}}
+> **bool**
+
+### {{% prop-heading "visible" %}}
+> **bool**
+
+### {{% prop-heading "screenRotationEnabled" %}}
+> **bool**
+
+### {{% prop-heading "highLightOnUpdate" %}}
+> **bool**
+
+### {{% prop-heading "keepScrollOffset" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UINestedListDataBinding](/vext/ref/fb/uinestedlistdatabinding) type.
+

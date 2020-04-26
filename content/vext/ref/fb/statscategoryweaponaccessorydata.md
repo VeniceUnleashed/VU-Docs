@@ -1,39 +1,85 @@
 ---
 title: StatsCategoryWeaponAccessoryData
 ---
-### Base Classes
 
-[StatsCategoryGuidData](/vext/ref/fb/statscategoryguiddata/)
+Inherits from 
+[StatsCategoryGuidData](/vext/ref/fb/statscategoryguiddata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[StatsCategoryWeaponAccessoryData](#constructor-0)**() |
+| **[StatsCategoryWeaponAccessoryData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[StatsCategoryWeaponAccessoryData](#constructor-2)**(other: [StatsCategoryGuidData](/vext/ref/fb/statscategoryguiddata)) |
+| **[StatsCategoryWeaponAccessoryData](#constructor-3)**(other: [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata)) |
+| **[StatsCategoryWeaponAccessoryData](#constructor-4)**(other: [TreeNodeBase](/vext/ref/fb/treenodebase)) |
+| **[StatsCategoryWeaponAccessoryData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "StatsCategoryWeaponAccessoryData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### StatsCategoryWeaponAccessoryData {#constructor-0}
+> **StatsCategoryWeaponAccessoryData**()
 
-| Constructor                                                                                 | Description                                                                                                                                             |
-| ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| StatsCategoryWeaponAccessoryData()                                                          | Create a new instance of this container type.                                                                                                           |
-| StatsCategoryWeaponAccessoryData(StatsCategoryWeaponAccessoryData other)                    | Create a reference copy of an instance of the same type.                                                                                                |
-| StatsCategoryWeaponAccessoryData([StatsCategoryGuidData](/vext/ref/fb/statscategoryguiddata/) other)      | Upcast an instance of type [StatsCategoryGuidData](/vext/ref/fb/statscategoryguiddata/) to [StatsCategoryWeaponAccessoryData](/vext/ref/fb/statscategoryweaponaccessorydata/).      |
-| StatsCategoryWeaponAccessoryData([StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/) other)      | Upcast an instance of type [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/) to [StatsCategoryWeaponAccessoryData](/vext/ref/fb/statscategoryweaponaccessorydata/).      |
-| StatsCategoryWeaponAccessoryData([TreeNodeBase](/vext/ref/fb/treenodebase/) other)                        | Upcast an instance of type [TreeNodeBase](/vext/ref/fb/treenodebase/) to [StatsCategoryWeaponAccessoryData](/vext/ref/fb/statscategoryweaponaccessorydata/).                        |
-| StatsCategoryWeaponAccessoryData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StatsCategoryWeaponAccessoryData](/vext/ref/fb/statscategoryweaponaccessorydata/). |
+Creates a new [StatsCategoryWeaponAccessoryData](/vext/ref/fb/statscategoryweaponaccessorydata) frostbite instance.
 
-## Methods
+### StatsCategoryWeaponAccessoryData {#constructor-1}
+> **StatsCategoryWeaponAccessoryData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                                                 | Name            | Parameters                                     |
-| -------------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [StatsCategoryWeaponAccessoryData](/vext/ref/fb/statscategoryweaponaccessorydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [StatsCategoryWeaponAccessoryData](/vext/ref/fb/statscategoryweaponaccessorydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [StatsCategoryWeaponAccessoryData](/vext/ref/fb/statscategoryweaponaccessorydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### StatsCategoryWeaponAccessoryData {#constructor-2}
+> **StatsCategoryWeaponAccessoryData**(other: [StatsCategoryGuidData](/vext/ref/fb/statscategoryguiddata))
+
+Casts an instance of type [StatsCategoryGuidData](/vext/ref/fb/statscategoryguiddata) to [StatsCategoryWeaponAccessoryData](/vext/ref/fb/statscategoryweaponaccessorydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [StatsCategoryGuidData](/vext/ref/fb/statscategoryguiddata) | The instance to cast to [StatsCategoryWeaponAccessoryData](/vext/ref/fb/statscategoryweaponaccessorydata). |
+
+### StatsCategoryWeaponAccessoryData {#constructor-3}
+> **StatsCategoryWeaponAccessoryData**(other: [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata))
+
+Casts an instance of type [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata) to [StatsCategoryWeaponAccessoryData](/vext/ref/fb/statscategoryweaponaccessorydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata) | The instance to cast to [StatsCategoryWeaponAccessoryData](/vext/ref/fb/statscategoryweaponaccessorydata). |
+
+### StatsCategoryWeaponAccessoryData {#constructor-4}
+> **StatsCategoryWeaponAccessoryData**(other: [TreeNodeBase](/vext/ref/fb/treenodebase))
+
+Casts an instance of type [TreeNodeBase](/vext/ref/fb/treenodebase) to [StatsCategoryWeaponAccessoryData](/vext/ref/fb/statscategoryweaponaccessorydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [TreeNodeBase](/vext/ref/fb/treenodebase) | The instance to cast to [StatsCategoryWeaponAccessoryData](/vext/ref/fb/statscategoryweaponaccessorydata). |
+
+### StatsCategoryWeaponAccessoryData {#constructor-5}
+> **StatsCategoryWeaponAccessoryData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StatsCategoryWeaponAccessoryData](/vext/ref/fb/statscategoryweaponaccessorydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [StatsCategoryWeaponAccessoryData](/vext/ref/fb/statscategoryweaponaccessorydata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [StatsCategoryWeaponAccessoryData](/vext/ref/fb/statscategoryweaponaccessorydata) type.
+

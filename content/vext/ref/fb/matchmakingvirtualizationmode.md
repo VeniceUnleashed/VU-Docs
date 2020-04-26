@@ -1,14 +1,11 @@
 ---
 title: MatchmakingVirtualizationMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **MatchmakingVirtualizationMode_Virtualized** | Value: **0** |
+| **MatchmakingVirtualizationMode_Standard** | Value: **1** |
+| **MatchmakingVirtualizationMode_Any** | Value: **2** |
 
-| Name                                       | Value | Description |
-| ------------------------------------------ | ----- | ----------- |
-| MatchmakingVirtualizationMode\_Virtualized | 0     |             |
-| MatchmakingVirtualizationMode\_Standard    | 1     |             |
-| MatchmakingVirtualizationMode\_Any         | 2     |             |

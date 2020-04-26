@@ -1,52 +1,122 @@
 ---
 title: LoggingEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[LoggingEntityData](#constructor-0)**() |
+| **[LoggingEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[LoggingEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[LoggingEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[LoggingEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[LoggingEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "vec2Value" >}} | [Vec2](/vext/ref/shared/class/vec2) |
+| {{< prop "vec3Value" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "transformValue" >}} | [LinearTransform](/vext/ref/shared/class/lineartransform) |
+| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
+| {{< prop "floatValue" >}} | float |
+| {{< prop "strings" >}} | string[] |
+| {{< prop "intValue" >}} | int |
+| {{< prop "boolValue" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "LoggingEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### LoggingEntityData {#constructor-0}
+> **LoggingEntityData**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| LoggingEntityData()                                                          | Create a new instance of this container type.                                                                             |
-| LoggingEntityData(LoggingEntityData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| LoggingEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [LoggingEntityData](/vext/ref/fb/loggingentitydata/).                            |
-| LoggingEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [LoggingEntityData](/vext/ref/fb/loggingentitydata/).                    |
-| LoggingEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [LoggingEntityData](/vext/ref/fb/loggingentitydata/).              |
-| LoggingEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LoggingEntityData](/vext/ref/fb/loggingentitydata/). |
+Creates a new [LoggingEntityData](/vext/ref/fb/loggingentitydata) frostbite instance.
 
-## Properties
+### LoggingEntityData {#constructor-1}
+> **LoggingEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name           | Type                                                    | Description |
-| -------------- | ------------------------------------------------------- | ----------- |
-| vec2Value      | [Vec2](/vext/ref/shared/class/vec2)                       |             |
-| vec3Value      | [Vec3](/vext/ref/shared/class/vec3)                       |             |
-| transformValue | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
-| realm          | [Realm](/vext/ref/fb/realm/)                                          |             |
-| floatValue     | number                                                  |             |
-| strings        | string\[\]                                              |             |
-| intValue       | number                                                  |             |
-| boolValue      | bool                                                    |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [LoggingEntityData](/vext/ref/fb/loggingentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [LoggingEntityData](/vext/ref/fb/loggingentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [LoggingEntityData](/vext/ref/fb/loggingentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### LoggingEntityData {#constructor-2}
+> **LoggingEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [LoggingEntityData](/vext/ref/fb/loggingentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [LoggingEntityData](/vext/ref/fb/loggingentitydata). |
+
+### LoggingEntityData {#constructor-3}
+> **LoggingEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [LoggingEntityData](/vext/ref/fb/loggingentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [LoggingEntityData](/vext/ref/fb/loggingentitydata). |
+
+### LoggingEntityData {#constructor-4}
+> **LoggingEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [LoggingEntityData](/vext/ref/fb/loggingentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [LoggingEntityData](/vext/ref/fb/loggingentitydata). |
+
+### LoggingEntityData {#constructor-5}
+> **LoggingEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LoggingEntityData](/vext/ref/fb/loggingentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [LoggingEntityData](/vext/ref/fb/loggingentitydata). |
+
+## Properties
+### {{% prop-heading "vec2Value" %}}
+> **[Vec2](/vext/ref/shared/class/vec2)**
+
+### {{% prop-heading "vec3Value" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "transformValue" %}}
+> **[LinearTransform](/vext/ref/shared/class/lineartransform)**
+
+### {{% prop-heading "realm" %}}
+> **[Realm](/vext/ref/fb/realm)**
+
+### {{% prop-heading "floatValue" %}}
+> **float**
+
+### {{% prop-heading "strings" %}}
+> **string**[]
+
+### {{% prop-heading "intValue" %}}
+> **int**
+
+### {{% prop-heading "boolValue" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [LoggingEntityData](/vext/ref/fb/loggingentitydata) type.
+

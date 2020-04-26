@@ -1,37 +1,63 @@
 ---
 title: PresenceServiceData
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PresenceServiceData](#constructor-0)**() |
+| **[PresenceServiceData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PresenceServiceData](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[PresenceServiceData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PresenceServiceData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PresenceServiceData {#constructor-0}
+> **PresenceServiceData**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| PresenceServiceData()                                                          | Create a new instance of this container type.                                                                                 |
-| PresenceServiceData(PresenceServiceData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| PresenceServiceData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [PresenceServiceData](/vext/ref/fb/presenceservicedata/).                                      |
-| PresenceServiceData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PresenceServiceData](/vext/ref/fb/presenceservicedata/). |
+Creates a new [PresenceServiceData](/vext/ref/fb/presenceservicedata) frostbite instance.
 
-## Methods
+### PresenceServiceData {#constructor-1}
+> **PresenceServiceData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [PresenceServiceData](/vext/ref/fb/presenceservicedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PresenceServiceData](/vext/ref/fb/presenceservicedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PresenceServiceData](/vext/ref/fb/presenceservicedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PresenceServiceData {#constructor-2}
+> **PresenceServiceData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [PresenceServiceData](/vext/ref/fb/presenceservicedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [PresenceServiceData](/vext/ref/fb/presenceservicedata). |
+
+### PresenceServiceData {#constructor-3}
+> **PresenceServiceData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PresenceServiceData](/vext/ref/fb/presenceservicedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PresenceServiceData](/vext/ref/fb/presenceservicedata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PresenceServiceData](/vext/ref/fb/presenceservicedata) type.
+

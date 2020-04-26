@@ -1,39 +1,85 @@
 ---
 title: WorldPartReferenceObjectData
 ---
-### Base Classes
 
-[ReferenceObjectData](/vext/ref/fb/referenceobjectdata/)
+Inherits from 
+[ReferenceObjectData](/vext/ref/fb/referenceobjectdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[WorldPartReferenceObjectData](#constructor-0)**() |
+| **[WorldPartReferenceObjectData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[WorldPartReferenceObjectData](#constructor-2)**(other: [ReferenceObjectData](/vext/ref/fb/referenceobjectdata)) |
+| **[WorldPartReferenceObjectData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[WorldPartReferenceObjectData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[WorldPartReferenceObjectData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "WorldPartReferenceObjectData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### WorldPartReferenceObjectData {#constructor-0}
+> **WorldPartReferenceObjectData**()
 
-| Constructor                                                                             | Description                                                                                                                                     |
-| --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| WorldPartReferenceObjectData()                                                          | Create a new instance of this container type.                                                                                                   |
-| WorldPartReferenceObjectData(WorldPartReferenceObjectData other)                        | Create a reference copy of an instance of the same type.                                                                                        |
-| WorldPartReferenceObjectData([ReferenceObjectData](/vext/ref/fb/referenceobjectdata/) other)          | Upcast an instance of type [ReferenceObjectData](/vext/ref/fb/referenceobjectdata/) to [WorldPartReferenceObjectData](/vext/ref/fb/worldpartreferenceobjectdata/).          |
-| WorldPartReferenceObjectData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [WorldPartReferenceObjectData](/vext/ref/fb/worldpartreferenceobjectdata/).                    |
-| WorldPartReferenceObjectData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [WorldPartReferenceObjectData](/vext/ref/fb/worldpartreferenceobjectdata/).              |
-| WorldPartReferenceObjectData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WorldPartReferenceObjectData](/vext/ref/fb/worldpartreferenceobjectdata/). |
+Creates a new [WorldPartReferenceObjectData](/vext/ref/fb/worldpartreferenceobjectdata) frostbite instance.
 
-## Methods
+### WorldPartReferenceObjectData {#constructor-1}
+> **WorldPartReferenceObjectData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                                         | Name            | Parameters                                     |
-| ------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [WorldPartReferenceObjectData](/vext/ref/fb/worldpartreferenceobjectdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [WorldPartReferenceObjectData](/vext/ref/fb/worldpartreferenceobjectdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [WorldPartReferenceObjectData](/vext/ref/fb/worldpartreferenceobjectdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### WorldPartReferenceObjectData {#constructor-2}
+> **WorldPartReferenceObjectData**(other: [ReferenceObjectData](/vext/ref/fb/referenceobjectdata))
+
+Casts an instance of type [ReferenceObjectData](/vext/ref/fb/referenceobjectdata) to [WorldPartReferenceObjectData](/vext/ref/fb/worldpartreferenceobjectdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ReferenceObjectData](/vext/ref/fb/referenceobjectdata) | The instance to cast to [WorldPartReferenceObjectData](/vext/ref/fb/worldpartreferenceobjectdata). |
+
+### WorldPartReferenceObjectData {#constructor-3}
+> **WorldPartReferenceObjectData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [WorldPartReferenceObjectData](/vext/ref/fb/worldpartreferenceobjectdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [WorldPartReferenceObjectData](/vext/ref/fb/worldpartreferenceobjectdata). |
+
+### WorldPartReferenceObjectData {#constructor-4}
+> **WorldPartReferenceObjectData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [WorldPartReferenceObjectData](/vext/ref/fb/worldpartreferenceobjectdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [WorldPartReferenceObjectData](/vext/ref/fb/worldpartreferenceobjectdata). |
+
+### WorldPartReferenceObjectData {#constructor-5}
+> **WorldPartReferenceObjectData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [WorldPartReferenceObjectData](/vext/ref/fb/worldpartreferenceobjectdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [WorldPartReferenceObjectData](/vext/ref/fb/worldpartreferenceobjectdata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [WorldPartReferenceObjectData](/vext/ref/fb/worldpartreferenceobjectdata) type.
+

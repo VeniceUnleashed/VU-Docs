@@ -1,43 +1,65 @@
 ---
 title: EntityVoiceOverInfo
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[EntityVoiceOverInfo](#constructor-0)**() |
+| **[EntityVoiceOverInfo](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[EntityVoiceOverInfo](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "voiceOverType" >}} | [VoiceOverObject](/vext/ref/fb/voiceoverobject) \| nil |
+| {{< prop "labels" >}} | [VoiceOverLabel](/vext/ref/fb/voiceoverlabel)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "EntityVoiceOverInfo" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### EntityVoiceOverInfo {#constructor-0}
+> **EntityVoiceOverInfo**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| EntityVoiceOverInfo()                                                          | Create a new instance of this container type.                                                                                 |
-| EntityVoiceOverInfo(EntityVoiceOverInfo other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| EntityVoiceOverInfo([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EntityVoiceOverInfo](/vext/ref/fb/entityvoiceoverinfo/). |
+Creates a new [EntityVoiceOverInfo](/vext/ref/fb/entityvoiceoverinfo) frostbite instance.
 
-## Properties
+### EntityVoiceOverInfo {#constructor-1}
+> **EntityVoiceOverInfo**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name          | Type                                 | Description |
-| ------------- | ------------------------------------ | ----------- |
-| voiceOverType | [VoiceOverObject](/vext/ref/fb/voiceoverobject/)   |             |
-| labels        | [VoiceOverLabel](/vext/ref/fb/voiceoverlabel/)\[\] |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [EntityVoiceOverInfo](/vext/ref/fb/entityvoiceoverinfo/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [EntityVoiceOverInfo](/vext/ref/fb/entityvoiceoverinfo/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [EntityVoiceOverInfo](/vext/ref/fb/entityvoiceoverinfo) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type                              | Description                                 |
-| ---- | --------------------------------- | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid) | An optional GUID to assign to the instance. |
+### EntityVoiceOverInfo {#constructor-2}
+> **EntityVoiceOverInfo**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EntityVoiceOverInfo](/vext/ref/fb/entityvoiceoverinfo). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [EntityVoiceOverInfo](/vext/ref/fb/entityvoiceoverinfo). |
+
+## Properties
+### {{% prop-heading "voiceOverType" %}}
+> **[VoiceOverObject](/vext/ref/fb/voiceoverobject)** | **nil**
+
+### {{% prop-heading "labels" %}}
+> **[VoiceOverLabel](/vext/ref/fb/voiceoverlabel)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [EntityVoiceOverInfo](/vext/ref/fb/entityvoiceoverinfo) type.
+

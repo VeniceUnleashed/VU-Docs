@@ -1,33 +1,61 @@
 ---
 title: CameraSineCurveData
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[CameraSineCurveData](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "frequency" >}} | float |
+| {{< prop "amplitude" >}} | float |
+| {{< prop "phaseShift" >}} | float |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [CameraSineCurveData](/vext/ref/fb/camerasinecurvedata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "CameraSineCurveData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### CameraSineCurveData {#constructor-0}
+> **CameraSineCurveData**()
 
-| Constructor                                    | Description                                              |
-| ---------------------------------------------- | -------------------------------------------------------- |
-| CameraSineCurveData()                          | Create a new instance of this structure type.            |
-| CameraSineCurveData(CameraSineCurveData other) | Create a reference copy of a structure of the same type. |
+Creates a new [CameraSineCurveData](/vext/ref/fb/camerasinecurvedata) frostbite structure.
 
 ## Properties
+### {{% prop-heading "frequency" %}}
+> **float**
 
-| Name       | Type   | Description |
-| ---------- | ------ | ----------- |
-| frequency  | number |             |
-| amplitude  | number |             |
-| phaseShift | number |             |
+### {{% prop-heading "amplitude" %}}
+> **float**
+
+### {{% prop-heading "phaseShift" %}}
+> **float**
 
 ## Methods
-
-| Type                                       | Name            | Parameters |
-| ------------------------------------------ | --------------- | ---------- |
-| [CameraSineCurveData](/vext/ref/fb/camerasinecurvedata/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [CameraSineCurveData](/vext/ref/fb/camerasinecurvedata)
 
-> [CameraSineCurveData](/vext/ref/fb/camerasinecurvedata/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[CameraSineCurveData](/vext/ref/fb/camerasinecurvedata)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [CameraSineCurveData](/vext/ref/fb/camerasinecurvedata) type.
+

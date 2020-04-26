@@ -1,15 +1,12 @@
 ---
 title: PickupPlayerEnum
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **PickupPlayerEnum_None** | Value: **0** |
+| **PickupPlayerEnum_Both** | Value: **1** |
+| **PickupPlayerEnum_HumanOnly** | Value: **2** |
+| **PickupPlayerEnum_AIOnly** | Value: **3** |
 
-| Name                        | Value | Description |
-| --------------------------- | ----- | ----------- |
-| PickupPlayerEnum\_None      | 0     |             |
-| PickupPlayerEnum\_Both      | 1     |             |
-| PickupPlayerEnum\_HumanOnly | 2     |             |
-| PickupPlayerEnum\_AIOnly    | 3     |             |

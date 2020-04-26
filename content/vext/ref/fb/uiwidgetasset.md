@@ -1,44 +1,83 @@
 ---
 title: UIWidgetAsset
 ---
-### Base Classes
 
-[UIAsset](/vext/ref/fb/uiasset/)
+Inherits from 
+[UIAsset](/vext/ref/fb/uiasset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIWidgetAsset](#constructor-0)**() |
+| **[UIWidgetAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UIWidgetAsset](#constructor-2)**(other: [UIAsset](/vext/ref/fb/uiasset)) |
+| **[UIWidgetAsset](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[UIWidgetAsset](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "widgetEvents" >}} | [WidgetEventQueryPair](/vext/ref/fb/widgeteventquerypair)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIWidgetAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIWidgetAsset {#constructor-0}
+> **UIWidgetAsset**()
 
-| Constructor                                                              | Description                                                                                                       |
-| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| UIWidgetAsset()                                                          | Create a new instance of this container type.                                                                     |
-| UIWidgetAsset(UIWidgetAsset other)                                       | Create a reference copy of an instance of the same type.                                                          |
-| UIWidgetAsset([UIAsset](/vext/ref/fb/uiasset/) other)                                  | Upcast an instance of type [UIAsset](/vext/ref/fb/uiasset/) to [UIWidgetAsset](/vext/ref/fb/uiwidgetasset/).                                  |
-| UIWidgetAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UIWidgetAsset](/vext/ref/fb/uiwidgetasset/).                                      |
-| UIWidgetAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIWidgetAsset](/vext/ref/fb/uiwidgetasset/). |
+Creates a new [UIWidgetAsset](/vext/ref/fb/uiwidgetasset) frostbite instance.
 
-## Properties
+### UIWidgetAsset {#constructor-1}
+> **UIWidgetAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name         | Type                                             | Description |
-| ------------ | ------------------------------------------------ | ----------- |
-| widgetEvents | [WidgetEventQueryPair](/vext/ref/fb/widgeteventquerypair/)\[\] |             |
-
-## Methods
-
-| Type                           | Name            | Parameters                                     |
-| ------------------------------ | --------------- | ---------------------------------------------- |
-| [UIWidgetAsset](/vext/ref/fb/uiwidgetasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UIWidgetAsset](/vext/ref/fb/uiwidgetasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UIWidgetAsset](/vext/ref/fb/uiwidgetasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UIWidgetAsset {#constructor-2}
+> **UIWidgetAsset**(other: [UIAsset](/vext/ref/fb/uiasset))
+
+Casts an instance of type [UIAsset](/vext/ref/fb/uiasset) to [UIWidgetAsset](/vext/ref/fb/uiwidgetasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIAsset](/vext/ref/fb/uiasset) | The instance to cast to [UIWidgetAsset](/vext/ref/fb/uiwidgetasset). |
+
+### UIWidgetAsset {#constructor-3}
+> **UIWidgetAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [UIWidgetAsset](/vext/ref/fb/uiwidgetasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [UIWidgetAsset](/vext/ref/fb/uiwidgetasset). |
+
+### UIWidgetAsset {#constructor-4}
+> **UIWidgetAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIWidgetAsset](/vext/ref/fb/uiwidgetasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UIWidgetAsset](/vext/ref/fb/uiwidgetasset). |
+
+## Properties
+### {{% prop-heading "widgetEvents" %}}
+> **[WidgetEventQueryPair](/vext/ref/fb/widgeteventquerypair)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIWidgetAsset](/vext/ref/fb/uiwidgetasset) type.
+

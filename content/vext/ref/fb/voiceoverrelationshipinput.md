@@ -1,36 +1,52 @@
 ---
 title: VoiceOverRelationshipInput
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VoiceOverRelationshipInput](#constructor-0)**() |
+| **[VoiceOverRelationshipInput](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VoiceOverRelationshipInput](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VoiceOverRelationshipInput" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VoiceOverRelationshipInput {#constructor-0}
+> **VoiceOverRelationshipInput**()
 
-| Constructor                                                                           | Description                                                                                                                                 |
-| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| VoiceOverRelationshipInput()                                                          | Create a new instance of this container type.                                                                                               |
-| VoiceOverRelationshipInput(VoiceOverRelationshipInput other)                          | Create a reference copy of an instance of the same type.                                                                                    |
-| VoiceOverRelationshipInput([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverRelationshipInput](/vext/ref/fb/voiceoverrelationshipinput/). |
+Creates a new [VoiceOverRelationshipInput](/vext/ref/fb/voiceoverrelationshipinput) frostbite instance.
 
-## Methods
+### VoiceOverRelationshipInput {#constructor-1}
+> **VoiceOverRelationshipInput**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                                     | Name            | Parameters                                     |
-| -------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [VoiceOverRelationshipInput](/vext/ref/fb/voiceoverrelationshipinput/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VoiceOverRelationshipInput](/vext/ref/fb/voiceoverrelationshipinput/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VoiceOverRelationshipInput](/vext/ref/fb/voiceoverrelationshipinput) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VoiceOverRelationshipInput {#constructor-2}
+> **VoiceOverRelationshipInput**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverRelationshipInput](/vext/ref/fb/voiceoverrelationshipinput). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VoiceOverRelationshipInput](/vext/ref/fb/voiceoverrelationshipinput). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VoiceOverRelationshipInput](/vext/ref/fb/voiceoverrelationshipinput) type.
+

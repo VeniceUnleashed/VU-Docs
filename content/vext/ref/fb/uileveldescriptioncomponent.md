@@ -1,56 +1,124 @@
 ---
 title: UILevelDescriptionComponent
 ---
-### Base Classes
 
-[LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent/)
+Inherits from 
+[LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UILevelDescriptionComponent](#constructor-0)**() |
+| **[UILevelDescriptionComponent](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UILevelDescriptionComponent](#constructor-2)**(other: [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent)) |
+| **[UILevelDescriptionComponent](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "mpLoadingAssetPath" >}} | string |
+| {{< prop "loadingMusic" >}} | [SoundAsset](/vext/ref/fb/soundasset) \| nil |
+| {{< prop "loadingMusicPath" >}} | string |
+| {{< prop "levelImagePath" >}} | string |
+| {{< prop "loadingImagePath" >}} | string |
+| {{< prop "spLoadingAssetPath" >}} | string |
+| {{< prop "gpsPosition" >}} | [UIGPSPosition](/vext/ref/fb/uigpsposition) |
+| {{< prop "hintAsset" >}} | [GameTipAsset](/vext/ref/fb/gametipasset) \| nil |
+| {{< prop "creditsAssets" >}} | [UICreditsAsset](/vext/ref/fb/uicreditsasset)[] |
+| {{< prop "minimapData" >}} | [UIMinimapData](/vext/ref/fb/uiminimapdata) |
+| {{< prop "levelCompledStatData" >}} | [UILevelStatData](/vext/ref/fb/uilevelstatdata) |
+| {{< prop "levelScoreStatData" >}} | [UILevelStatData](/vext/ref/fb/uilevelstatdata) |
+| {{< prop "sortIndex" >}} | int |
+| {{< prop "isMenuLevel" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UILevelDescriptionComponent" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UILevelDescriptionComponent {#constructor-0}
+> **UILevelDescriptionComponent**()
 
-| Constructor                                                                               | Description                                                                                                                                      |
-| ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| UILevelDescriptionComponent()                                                             | Create a new instance of this container type.                                                                                                    |
-| UILevelDescriptionComponent(UILevelDescriptionComponent other)                            | Create a reference copy of an instance of the same type.                                                                                         |
-| UILevelDescriptionComponent([LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent/) other) | Upcast an instance of type [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent/) to [UILevelDescriptionComponent](/vext/ref/fb/uileveldescriptioncomponent/). |
-| UILevelDescriptionComponent([DataContainer](/vext/ref/shared/class/datacontainer) other)    | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UILevelDescriptionComponent](/vext/ref/fb/uileveldescriptioncomponent/).    |
+Creates a new [UILevelDescriptionComponent](/vext/ref/fb/uileveldescriptioncomponent) frostbite instance.
 
-## Properties
+### UILevelDescriptionComponent {#constructor-1}
+> **UILevelDescriptionComponent**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                 | Type                                 | Description |
-| -------------------- | ------------------------------------ | ----------- |
-| mpLoadingAssetPath   | string                               |             |
-| loadingMusic         | [SoundAsset](/vext/ref/fb/soundasset/)             |             |
-| loadingMusicPath     | string                               |             |
-| levelImagePath       | string                               |             |
-| loadingImagePath     | string                               |             |
-| spLoadingAssetPath   | string                               |             |
-| gpsPosition          | [UIGPSPosition](/vext/ref/fb/uigpsposition/)       |             |
-| hintAsset            | [GameTipAsset](/vext/ref/fb/gametipasset/)         |             |
-| creditsAssets        | [UICreditsAsset](/vext/ref/fb/uicreditsasset/)\[\] |             |
-| minimapData          | [UIMinimapData](/vext/ref/fb/uiminimapdata/)       |             |
-| levelCompledStatData | [UILevelStatData](/vext/ref/fb/uilevelstatdata/)   |             |
-| levelScoreStatData   | [UILevelStatData](/vext/ref/fb/uilevelstatdata/)   |             |
-| sortIndex            | number                               |             |
-| isMenuLevel          | bool                                 |             |
-
-## Methods
-
-| Type                                                       | Name            | Parameters                                     |
-| ---------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [UILevelDescriptionComponent](/vext/ref/fb/uileveldescriptioncomponent/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UILevelDescriptionComponent](/vext/ref/fb/uileveldescriptioncomponent/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UILevelDescriptionComponent](/vext/ref/fb/uileveldescriptioncomponent) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UILevelDescriptionComponent {#constructor-2}
+> **UILevelDescriptionComponent**(other: [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent))
+
+Casts an instance of type [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent) to [UILevelDescriptionComponent](/vext/ref/fb/uileveldescriptioncomponent). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [LevelDescriptionComponent](/vext/ref/fb/leveldescriptioncomponent) | The instance to cast to [UILevelDescriptionComponent](/vext/ref/fb/uileveldescriptioncomponent). |
+
+### UILevelDescriptionComponent {#constructor-3}
+> **UILevelDescriptionComponent**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UILevelDescriptionComponent](/vext/ref/fb/uileveldescriptioncomponent). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UILevelDescriptionComponent](/vext/ref/fb/uileveldescriptioncomponent). |
+
+## Properties
+### {{% prop-heading "mpLoadingAssetPath" %}}
+> **string**
+
+### {{% prop-heading "loadingMusic" %}}
+> **[SoundAsset](/vext/ref/fb/soundasset)** | **nil**
+
+### {{% prop-heading "loadingMusicPath" %}}
+> **string**
+
+### {{% prop-heading "levelImagePath" %}}
+> **string**
+
+### {{% prop-heading "loadingImagePath" %}}
+> **string**
+
+### {{% prop-heading "spLoadingAssetPath" %}}
+> **string**
+
+### {{% prop-heading "gpsPosition" %}}
+> **[UIGPSPosition](/vext/ref/fb/uigpsposition)**
+
+### {{% prop-heading "hintAsset" %}}
+> **[GameTipAsset](/vext/ref/fb/gametipasset)** | **nil**
+
+### {{% prop-heading "creditsAssets" %}}
+> **[UICreditsAsset](/vext/ref/fb/uicreditsasset)**[]
+
+### {{% prop-heading "minimapData" %}}
+> **[UIMinimapData](/vext/ref/fb/uiminimapdata)**
+
+### {{% prop-heading "levelCompledStatData" %}}
+> **[UILevelStatData](/vext/ref/fb/uilevelstatdata)**
+
+### {{% prop-heading "levelScoreStatData" %}}
+> **[UILevelStatData](/vext/ref/fb/uilevelstatdata)**
+
+### {{% prop-heading "sortIndex" %}}
+> **int**
+
+### {{% prop-heading "isMenuLevel" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UILevelDescriptionComponent](/vext/ref/fb/uileveldescriptioncomponent) type.
+

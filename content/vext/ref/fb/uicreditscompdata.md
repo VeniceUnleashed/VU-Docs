@@ -1,38 +1,74 @@
 ---
 title: UICreditsCompData
 ---
-### Base Classes
 
-[UIComponentData](/vext/ref/fb/uicomponentdata/)
+Inherits from 
+[UIComponentData](/vext/ref/fb/uicomponentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UICreditsCompData](#constructor-0)**() |
+| **[UICreditsCompData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UICreditsCompData](#constructor-2)**(other: [UIComponentData](/vext/ref/fb/uicomponentdata)) |
+| **[UICreditsCompData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[UICreditsCompData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UICreditsCompData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UICreditsCompData {#constructor-0}
+> **UICreditsCompData**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| UICreditsCompData()                                                          | Create a new instance of this container type.                                                                             |
-| UICreditsCompData(UICreditsCompData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| UICreditsCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UICreditsCompData](/vext/ref/fb/uicreditscompdata/).                  |
-| UICreditsCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UICreditsCompData](/vext/ref/fb/uicreditscompdata/).                                      |
-| UICreditsCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UICreditsCompData](/vext/ref/fb/uicreditscompdata/). |
+Creates a new [UICreditsCompData](/vext/ref/fb/uicreditscompdata) frostbite instance.
 
-## Methods
+### UICreditsCompData {#constructor-1}
+> **UICreditsCompData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [UICreditsCompData](/vext/ref/fb/uicreditscompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UICreditsCompData](/vext/ref/fb/uicreditscompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UICreditsCompData](/vext/ref/fb/uicreditscompdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UICreditsCompData {#constructor-2}
+> **UICreditsCompData**(other: [UIComponentData](/vext/ref/fb/uicomponentdata))
+
+Casts an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata) to [UICreditsCompData](/vext/ref/fb/uicreditscompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIComponentData](/vext/ref/fb/uicomponentdata) | The instance to cast to [UICreditsCompData](/vext/ref/fb/uicreditscompdata). |
+
+### UICreditsCompData {#constructor-3}
+> **UICreditsCompData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [UICreditsCompData](/vext/ref/fb/uicreditscompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [UICreditsCompData](/vext/ref/fb/uicreditscompdata). |
+
+### UICreditsCompData {#constructor-4}
+> **UICreditsCompData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UICreditsCompData](/vext/ref/fb/uicreditscompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UICreditsCompData](/vext/ref/fb/uicreditscompdata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UICreditsCompData](/vext/ref/fb/uicreditscompdata) type.
+

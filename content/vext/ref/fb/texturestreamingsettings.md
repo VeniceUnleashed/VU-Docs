@@ -1,84 +1,229 @@
 ---
 title: TextureStreamingSettings
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[TextureStreamingSettings](#constructor-0)**() |
+| **[TextureStreamingSettings](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[TextureStreamingSettings](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "fadeMipmapTime" >}} | float |
+| {{< prop "mipmapBias" >}} | float |
+| {{< prop "maxTextureSizeKb" >}} | int |
+| {{< prop "maxFrameTextureCreateCount" >}} | int |
+| {{< prop "maxPendingLoadCount" >}} | int |
+| {{< prop "minMipmapCount" >}} | int |
+| {{< prop "maxMipmapCount" >}} | int |
+| {{< prop "xenonFinalPoolSizeAdjustment" >}} | int |
+| {{< prop "xenonRetailPoolSizeAdjustment" >}} | int |
+| {{< prop "poolHeadroomSize" >}} | int |
+| {{< prop "onDemandPoolSize" >}} | int |
+| {{< prop "listViewPageIndex" >}} | int |
+| {{< prop "poolSize" >}} | int |
+| {{< prop "forceMipmap" >}} | int |
+| {{< prop "priorityThreshold" >}} | float |
+| {{< prop "defragFrameTransferLimit" >}} | int |
+| {{< prop "minTextureSize" >}} | int |
+| {{< prop "maxFrameTextureCreateSize" >}} | int |
+| {{< prop "onlyWantedInPool" >}} | bool |
+| {{< prop "dxImmutableUsageEnable" >}} | bool |
+| {{< prop "mipmapsEnable" >}} | bool |
+| {{< prop "uploadMipmapsEnable" >}} | bool |
+| {{< prop "textureUpdateEnable" >}} | bool |
+| {{< prop "asyncCreatesEnable" >}} | bool |
+| {{< prop "loadMipmapsEnable" >}} | bool |
+| {{< prop "forceWantedEnable" >}} | bool |
+| {{< prop "updateEnable" >}} | bool |
+| {{< prop "poolEnable" >}} | bool |
+| {{< prop "defragEnable" >}} | bool |
+| {{< prop "defragTransfersEnable" >}} | bool |
+| {{< prop "chunkLoadEnable" >}} | bool |
+| {{< prop "instantUnloadingEnable" >}} | bool |
+| {{< prop "fadeMipmapsEnable" >}} | bool |
+| {{< prop "dynamicLoadingEnable" >}} | bool |
+| {{< prop "enable" >}} | bool |
+| {{< prop "drawStatsEnable" >}} | bool |
+| {{< prop "drawTextureGroupStatsEnable" >}} | bool |
+| {{< prop "drawTextureFormatStatsEnable" >}} | bool |
+| {{< prop "drawLoadingListEnable" >}} | bool |
+| {{< prop "drawPriorityListEnable" >}} | bool |
+| {{< prop "overridePoolSize" >}} | bool |
+| {{< prop "dumpLoadedList" >}} | bool |
+| {{< prop "useConditionalStreaming" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "TextureStreamingSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### TextureStreamingSettings {#constructor-0}
+> **TextureStreamingSettings**()
 
-| Constructor                                                                         | Description                                                                                                                             |
-| ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| TextureStreamingSettings()                                                          | Create a new instance of this container type.                                                                                           |
-| TextureStreamingSettings(TextureStreamingSettings other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| TextureStreamingSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TextureStreamingSettings](/vext/ref/fb/texturestreamingsettings/). |
+Creates a new [TextureStreamingSettings](/vext/ref/fb/texturestreamingsettings) frostbite instance.
 
-## Properties
+### TextureStreamingSettings {#constructor-1}
+> **TextureStreamingSettings**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                          | Type   | Description |
-| ----------------------------- | ------ | ----------- |
-| fadeMipmapTime                | number |             |
-| mipmapBias                    | number |             |
-| maxTextureSizeKb              | number |             |
-| maxFrameTextureCreateCount    | number |             |
-| maxPendingLoadCount           | number |             |
-| minMipmapCount                | number |             |
-| maxMipmapCount                | number |             |
-| xenonFinalPoolSizeAdjustment  | number |             |
-| xenonRetailPoolSizeAdjustment | number |             |
-| poolHeadroomSize              | number |             |
-| onDemandPoolSize              | number |             |
-| listViewPageIndex             | number |             |
-| poolSize                      | number |             |
-| forceMipmap                   | number |             |
-| priorityThreshold             | number |             |
-| defragFrameTransferLimit      | number |             |
-| minTextureSize                | number |             |
-| maxFrameTextureCreateSize     | number |             |
-| onlyWantedInPool              | bool   |             |
-| dxImmutableUsageEnable        | bool   |             |
-| mipmapsEnable                 | bool   |             |
-| uploadMipmapsEnable           | bool   |             |
-| textureUpdateEnable           | bool   |             |
-| asyncCreatesEnable            | bool   |             |
-| loadMipmapsEnable             | bool   |             |
-| forceWantedEnable             | bool   |             |
-| updateEnable                  | bool   |             |
-| poolEnable                    | bool   |             |
-| defragEnable                  | bool   |             |
-| defragTransfersEnable         | bool   |             |
-| chunkLoadEnable               | bool   |             |
-| instantUnloadingEnable        | bool   |             |
-| fadeMipmapsEnable             | bool   |             |
-| dynamicLoadingEnable          | bool   |             |
-| enable                        | bool   |             |
-| drawStatsEnable               | bool   |             |
-| drawTextureGroupStatsEnable   | bool   |             |
-| drawTextureFormatStatsEnable  | bool   |             |
-| drawLoadingListEnable         | bool   |             |
-| drawPriorityListEnable        | bool   |             |
-| overridePoolSize              | bool   |             |
-| dumpLoadedList                | bool   |             |
-| useConditionalStreaming       | bool   |             |
-
-## Methods
-
-| Type                                                 | Name            | Parameters                                     |
-| ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [TextureStreamingSettings](/vext/ref/fb/texturestreamingsettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [TextureStreamingSettings](/vext/ref/fb/texturestreamingsettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [TextureStreamingSettings](/vext/ref/fb/texturestreamingsettings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### TextureStreamingSettings {#constructor-2}
+> **TextureStreamingSettings**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TextureStreamingSettings](/vext/ref/fb/texturestreamingsettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [TextureStreamingSettings](/vext/ref/fb/texturestreamingsettings). |
+
+## Properties
+### {{% prop-heading "fadeMipmapTime" %}}
+> **float**
+
+### {{% prop-heading "mipmapBias" %}}
+> **float**
+
+### {{% prop-heading "maxTextureSizeKb" %}}
+> **int**
+
+### {{% prop-heading "maxFrameTextureCreateCount" %}}
+> **int**
+
+### {{% prop-heading "maxPendingLoadCount" %}}
+> **int**
+
+### {{% prop-heading "minMipmapCount" %}}
+> **int**
+
+### {{% prop-heading "maxMipmapCount" %}}
+> **int**
+
+### {{% prop-heading "xenonFinalPoolSizeAdjustment" %}}
+> **int**
+
+### {{% prop-heading "xenonRetailPoolSizeAdjustment" %}}
+> **int**
+
+### {{% prop-heading "poolHeadroomSize" %}}
+> **int**
+
+### {{% prop-heading "onDemandPoolSize" %}}
+> **int**
+
+### {{% prop-heading "listViewPageIndex" %}}
+> **int**
+
+### {{% prop-heading "poolSize" %}}
+> **int**
+
+### {{% prop-heading "forceMipmap" %}}
+> **int**
+
+### {{% prop-heading "priorityThreshold" %}}
+> **float**
+
+### {{% prop-heading "defragFrameTransferLimit" %}}
+> **int**
+
+### {{% prop-heading "minTextureSize" %}}
+> **int**
+
+### {{% prop-heading "maxFrameTextureCreateSize" %}}
+> **int**
+
+### {{% prop-heading "onlyWantedInPool" %}}
+> **bool**
+
+### {{% prop-heading "dxImmutableUsageEnable" %}}
+> **bool**
+
+### {{% prop-heading "mipmapsEnable" %}}
+> **bool**
+
+### {{% prop-heading "uploadMipmapsEnable" %}}
+> **bool**
+
+### {{% prop-heading "textureUpdateEnable" %}}
+> **bool**
+
+### {{% prop-heading "asyncCreatesEnable" %}}
+> **bool**
+
+### {{% prop-heading "loadMipmapsEnable" %}}
+> **bool**
+
+### {{% prop-heading "forceWantedEnable" %}}
+> **bool**
+
+### {{% prop-heading "updateEnable" %}}
+> **bool**
+
+### {{% prop-heading "poolEnable" %}}
+> **bool**
+
+### {{% prop-heading "defragEnable" %}}
+> **bool**
+
+### {{% prop-heading "defragTransfersEnable" %}}
+> **bool**
+
+### {{% prop-heading "chunkLoadEnable" %}}
+> **bool**
+
+### {{% prop-heading "instantUnloadingEnable" %}}
+> **bool**
+
+### {{% prop-heading "fadeMipmapsEnable" %}}
+> **bool**
+
+### {{% prop-heading "dynamicLoadingEnable" %}}
+> **bool**
+
+### {{% prop-heading "enable" %}}
+> **bool**
+
+### {{% prop-heading "drawStatsEnable" %}}
+> **bool**
+
+### {{% prop-heading "drawTextureGroupStatsEnable" %}}
+> **bool**
+
+### {{% prop-heading "drawTextureFormatStatsEnable" %}}
+> **bool**
+
+### {{% prop-heading "drawLoadingListEnable" %}}
+> **bool**
+
+### {{% prop-heading "drawPriorityListEnable" %}}
+> **bool**
+
+### {{% prop-heading "overridePoolSize" %}}
+> **bool**
+
+### {{% prop-heading "dumpLoadedList" %}}
+> **bool**
+
+### {{% prop-heading "useConditionalStreaming" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [TextureStreamingSettings](/vext/ref/fb/texturestreamingsettings) type.
+

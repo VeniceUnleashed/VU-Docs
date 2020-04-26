@@ -1,13 +1,10 @@
 ---
 title: DynamicAOMethod
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **DynamicAOMethod_SSAO** | Value: **0** |
+| **DynamicAOMethod_HBAO** | Value: **1** |
 
-| Name                  | Value | Description |
-| --------------------- | ----- | ----------- |
-| DynamicAOMethod\_SSAO | 0     |             |
-| DynamicAOMethod\_HBAO | 1     |             |

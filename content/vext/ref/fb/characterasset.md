@@ -1,42 +1,118 @@
 ---
 title: CharacterAsset
 ---
-### Base Classes
 
-[CharacterBlueprint](/vext/ref/fb/characterblueprint/)
+Inherits from 
+[CharacterBlueprint](/vext/ref/fb/characterblueprint)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[CharacterAsset](#constructor-0)**() |
+| **[CharacterAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[CharacterAsset](#constructor-2)**(other: [CharacterBlueprint](/vext/ref/fb/characterblueprint)) |
+| **[CharacterAsset](#constructor-3)**(other: [ObjectBlueprint](/vext/ref/fb/objectblueprint)) |
+| **[CharacterAsset](#constructor-4)**(other: [Blueprint](/vext/ref/fb/blueprint)) |
+| **[CharacterAsset](#constructor-5)**(other: [EntityBusData](/vext/ref/fb/entitybusdata)) |
+| **[CharacterAsset](#constructor-6)**(other: [DataBusData](/vext/ref/fb/databusdata)) |
+| **[CharacterAsset](#constructor-7)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[CharacterAsset](#constructor-8)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "CharacterAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### CharacterAsset {#constructor-0}
+> **CharacterAsset**()
 
-| Constructor                                                               | Description                                                                                                         |
-| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| CharacterAsset()                                                          | Create a new instance of this container type.                                                                       |
-| CharacterAsset(CharacterAsset other)                                      | Create a reference copy of an instance of the same type.                                                            |
-| CharacterAsset([CharacterBlueprint](/vext/ref/fb/characterblueprint/) other)            | Upcast an instance of type [CharacterBlueprint](/vext/ref/fb/characterblueprint/) to [CharacterAsset](/vext/ref/fb/characterasset/).            |
-| CharacterAsset([ObjectBlueprint](/vext/ref/fb/objectblueprint/) other)                  | Upcast an instance of type [ObjectBlueprint](/vext/ref/fb/objectblueprint/) to [CharacterAsset](/vext/ref/fb/characterasset/).                  |
-| CharacterAsset([Blueprint](/vext/ref/fb/blueprint/) other)                              | Upcast an instance of type [Blueprint](/vext/ref/fb/blueprint/) to [CharacterAsset](/vext/ref/fb/characterasset/).                              |
-| CharacterAsset([EntityBusData](/vext/ref/fb/entitybusdata/) other)                      | Upcast an instance of type [EntityBusData](/vext/ref/fb/entitybusdata/) to [CharacterAsset](/vext/ref/fb/characterasset/).                      |
-| CharacterAsset([DataBusData](/vext/ref/fb/databusdata/) other)                          | Upcast an instance of type [DataBusData](/vext/ref/fb/databusdata/) to [CharacterAsset](/vext/ref/fb/characterasset/).                          |
-| CharacterAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [CharacterAsset](/vext/ref/fb/characterasset/).                                      |
-| CharacterAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CharacterAsset](/vext/ref/fb/characterasset/). |
+Creates a new [CharacterAsset](/vext/ref/fb/characterasset) frostbite instance.
 
-## Methods
+### CharacterAsset {#constructor-1}
+> **CharacterAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                             | Name            | Parameters                                     |
-| -------------------------------- | --------------- | ---------------------------------------------- |
-| [CharacterAsset](/vext/ref/fb/characterasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [CharacterAsset](/vext/ref/fb/characterasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [CharacterAsset](/vext/ref/fb/characterasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### CharacterAsset {#constructor-2}
+> **CharacterAsset**(other: [CharacterBlueprint](/vext/ref/fb/characterblueprint))
+
+Casts an instance of type [CharacterBlueprint](/vext/ref/fb/characterblueprint) to [CharacterAsset](/vext/ref/fb/characterasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [CharacterBlueprint](/vext/ref/fb/characterblueprint) | The instance to cast to [CharacterAsset](/vext/ref/fb/characterasset). |
+
+### CharacterAsset {#constructor-3}
+> **CharacterAsset**(other: [ObjectBlueprint](/vext/ref/fb/objectblueprint))
+
+Casts an instance of type [ObjectBlueprint](/vext/ref/fb/objectblueprint) to [CharacterAsset](/vext/ref/fb/characterasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ObjectBlueprint](/vext/ref/fb/objectblueprint) | The instance to cast to [CharacterAsset](/vext/ref/fb/characterasset). |
+
+### CharacterAsset {#constructor-4}
+> **CharacterAsset**(other: [Blueprint](/vext/ref/fb/blueprint))
+
+Casts an instance of type [Blueprint](/vext/ref/fb/blueprint) to [CharacterAsset](/vext/ref/fb/characterasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Blueprint](/vext/ref/fb/blueprint) | The instance to cast to [CharacterAsset](/vext/ref/fb/characterasset). |
+
+### CharacterAsset {#constructor-5}
+> **CharacterAsset**(other: [EntityBusData](/vext/ref/fb/entitybusdata))
+
+Casts an instance of type [EntityBusData](/vext/ref/fb/entitybusdata) to [CharacterAsset](/vext/ref/fb/characterasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityBusData](/vext/ref/fb/entitybusdata) | The instance to cast to [CharacterAsset](/vext/ref/fb/characterasset). |
+
+### CharacterAsset {#constructor-6}
+> **CharacterAsset**(other: [DataBusData](/vext/ref/fb/databusdata))
+
+Casts an instance of type [DataBusData](/vext/ref/fb/databusdata) to [CharacterAsset](/vext/ref/fb/characterasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataBusData](/vext/ref/fb/databusdata) | The instance to cast to [CharacterAsset](/vext/ref/fb/characterasset). |
+
+### CharacterAsset {#constructor-7}
+> **CharacterAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [CharacterAsset](/vext/ref/fb/characterasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [CharacterAsset](/vext/ref/fb/characterasset). |
+
+### CharacterAsset {#constructor-8}
+> **CharacterAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CharacterAsset](/vext/ref/fb/characterasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [CharacterAsset](/vext/ref/fb/characterasset). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [CharacterAsset](/vext/ref/fb/characterasset) type.
+

@@ -1,56 +1,124 @@
 ---
 title: AudioSystemAsset
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AudioSystemAsset](#constructor-0)**() |
+| **[AudioSystemAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[AudioSystemAsset](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[AudioSystemAsset](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "masterPatch" >}} | [SoundMasterPatchAsset](/vext/ref/fb/soundmasterpatchasset) \| nil |
+| {{< prop "defaultWave" >}} | [SoundWaveAsset](/vext/ref/fb/soundwaveasset) \| nil |
+| {{< prop "streamPools" >}} | [StreamPoolAsset](/vext/ref/fb/streampoolasset)[] |
+| {{< prop "sampleRate" >}} | int |
+| {{< prop "soundSpeed" >}} | float |
+| {{< prop "dopplerFactor" >}} | float |
+| {{< prop "tests" >}} | [SoundTestAsset](/vext/ref/fb/soundtestasset) \| nil |
+| {{< prop "mixerSystem" >}} | [MixerSystemAsset](/vext/ref/fb/mixersystemasset) \| nil |
+| {{< prop "languages" >}} | [AudioLanguage](/vext/ref/fb/audiolanguage)[] |
+| {{< prop "languageSettings" >}} | [AudioLanguageSetting](/vext/ref/fb/audiolanguagesetting)[] |
+| {{< prop "defaultLanguage" >}} | [AudioLanguage](/vext/ref/fb/audiolanguage) \| nil |
+| {{< prop "scopes" >}} | [SoundScopeData](/vext/ref/fb/soundscopedata)[] |
+| {{< prop "scopeStrategies" >}} | [SoundScopeStrategyData](/vext/ref/fb/soundscopestrategydata)[] |
+| {{< prop "scopeSetups" >}} | [SoundScopeSetupData](/vext/ref/fb/soundscopesetupdata)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AudioSystemAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AudioSystemAsset {#constructor-0}
+> **AudioSystemAsset**()
 
-| Constructor                                                                 | Description                                                                                                             |
-| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| AudioSystemAsset()                                                          | Create a new instance of this container type.                                                                           |
-| AudioSystemAsset(AudioSystemAsset other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| AudioSystemAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [AudioSystemAsset](/vext/ref/fb/audiosystemasset/).                                      |
-| AudioSystemAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AudioSystemAsset](/vext/ref/fb/audiosystemasset/). |
+Creates a new [AudioSystemAsset](/vext/ref/fb/audiosystemasset) frostbite instance.
 
-## Properties
+### AudioSystemAsset {#constructor-1}
+> **AudioSystemAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name             | Type                                                 | Description |
-| ---------------- | ---------------------------------------------------- | ----------- |
-| masterPatch      | [SoundMasterPatchAsset](/vext/ref/fb/soundmasterpatchasset/)       |             |
-| defaultWave      | [SoundWaveAsset](/vext/ref/fb/soundwaveasset/)                     |             |
-| streamPools      | [StreamPoolAsset](/vext/ref/fb/streampoolasset/)\[\]               |             |
-| sampleRate       | number                                               |             |
-| soundSpeed       | number                                               |             |
-| dopplerFactor    | number                                               |             |
-| tests            | [SoundTestAsset](/vext/ref/fb/soundtestasset/)                     |             |
-| mixerSystem      | [MixerSystemAsset](/vext/ref/fb/mixersystemasset/)                 |             |
-| languages        | [AudioLanguage](/vext/ref/fb/audiolanguage/)\[\]                   |             |
-| languageSettings | [AudioLanguageSetting](/vext/ref/fb/audiolanguagesetting/)\[\]     |             |
-| defaultLanguage  | [AudioLanguage](/vext/ref/fb/audiolanguage/)                       |             |
-| scopes           | [SoundScopeData](/vext/ref/fb/soundscopedata/)\[\]                 |             |
-| scopeStrategies  | [SoundScopeStrategyData](/vext/ref/fb/soundscopestrategydata/)\[\] |             |
-| scopeSetups      | [SoundScopeSetupData](/vext/ref/fb/soundscopesetupdata/)\[\]       |             |
-
-## Methods
-
-| Type                                 | Name            | Parameters                                     |
-| ------------------------------------ | --------------- | ---------------------------------------------- |
-| [AudioSystemAsset](/vext/ref/fb/audiosystemasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [AudioSystemAsset](/vext/ref/fb/audiosystemasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [AudioSystemAsset](/vext/ref/fb/audiosystemasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### AudioSystemAsset {#constructor-2}
+> **AudioSystemAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [AudioSystemAsset](/vext/ref/fb/audiosystemasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [AudioSystemAsset](/vext/ref/fb/audiosystemasset). |
+
+### AudioSystemAsset {#constructor-3}
+> **AudioSystemAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AudioSystemAsset](/vext/ref/fb/audiosystemasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [AudioSystemAsset](/vext/ref/fb/audiosystemasset). |
+
+## Properties
+### {{% prop-heading "masterPatch" %}}
+> **[SoundMasterPatchAsset](/vext/ref/fb/soundmasterpatchasset)** | **nil**
+
+### {{% prop-heading "defaultWave" %}}
+> **[SoundWaveAsset](/vext/ref/fb/soundwaveasset)** | **nil**
+
+### {{% prop-heading "streamPools" %}}
+> **[StreamPoolAsset](/vext/ref/fb/streampoolasset)**[]
+
+### {{% prop-heading "sampleRate" %}}
+> **int**
+
+### {{% prop-heading "soundSpeed" %}}
+> **float**
+
+### {{% prop-heading "dopplerFactor" %}}
+> **float**
+
+### {{% prop-heading "tests" %}}
+> **[SoundTestAsset](/vext/ref/fb/soundtestasset)** | **nil**
+
+### {{% prop-heading "mixerSystem" %}}
+> **[MixerSystemAsset](/vext/ref/fb/mixersystemasset)** | **nil**
+
+### {{% prop-heading "languages" %}}
+> **[AudioLanguage](/vext/ref/fb/audiolanguage)**[]
+
+### {{% prop-heading "languageSettings" %}}
+> **[AudioLanguageSetting](/vext/ref/fb/audiolanguagesetting)**[]
+
+### {{% prop-heading "defaultLanguage" %}}
+> **[AudioLanguage](/vext/ref/fb/audiolanguage)** | **nil**
+
+### {{% prop-heading "scopes" %}}
+> **[SoundScopeData](/vext/ref/fb/soundscopedata)**[]
+
+### {{% prop-heading "scopeStrategies" %}}
+> **[SoundScopeStrategyData](/vext/ref/fb/soundscopestrategydata)**[]
+
+### {{% prop-heading "scopeSetups" %}}
+> **[SoundScopeSetupData](/vext/ref/fb/soundscopesetupdata)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AudioSystemAsset](/vext/ref/fb/audiosystemasset) type.
+

@@ -1,36 +1,73 @@
 ---
 title: BulletHitInfo
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[BulletHitInfo](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "direction" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "spawnPosition" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "weaponUnlockAsset" >}} | [SoldierWeaponUnlockAsset](/vext/ref/fb/soldierweaponunlockasset) \| nil |
+| {{< prop "weaponType" >}} | [AntHitReactionWeaponType](/vext/ref/fb/anthitreactionweapontype) |
+| {{< prop "boneType" >}} | int |
+| {{< prop "shooterPlayerId" >}} | int |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [BulletHitInfo](/vext/ref/fb/bullethitinfo) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "BulletHitInfo" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### BulletHitInfo {#constructor-0}
+> **BulletHitInfo**()
 
-| Constructor                        | Description                                              |
-| ---------------------------------- | -------------------------------------------------------- |
-| BulletHitInfo()                    | Create a new instance of this structure type.            |
-| BulletHitInfo(BulletHitInfo other) | Create a reference copy of a structure of the same type. |
+Creates a new [BulletHitInfo](/vext/ref/fb/bullethitinfo) frostbite structure.
 
 ## Properties
+### {{% prop-heading "direction" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
 
-| Name              | Type                                                 | Description |
-| ----------------- | ---------------------------------------------------- | ----------- |
-| direction         | [Vec3](/vext/ref/shared/class/vec3)                    |             |
-| spawnPosition     | [Vec3](/vext/ref/shared/class/vec3)                    |             |
-| weaponUnlockAsset | [SoldierWeaponUnlockAsset](/vext/ref/fb/soldierweaponunlockasset/) |             |
-| weaponType        | [AntHitReactionWeaponType](/vext/ref/fb/anthitreactionweapontype/) |             |
-| boneType          | number                                               |             |
-| shooterPlayerId   | number                                               |             |
+### {{% prop-heading "spawnPosition" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "weaponUnlockAsset" %}}
+> **[SoldierWeaponUnlockAsset](/vext/ref/fb/soldierweaponunlockasset)** | **nil**
+
+### {{% prop-heading "weaponType" %}}
+> **[AntHitReactionWeaponType](/vext/ref/fb/anthitreactionweapontype)**
+
+### {{% prop-heading "boneType" %}}
+> **int**
+
+### {{% prop-heading "shooterPlayerId" %}}
+> **int**
 
 ## Methods
-
-| Type                           | Name            | Parameters |
-| ------------------------------ | --------------- | ---------- |
-| [BulletHitInfo](/vext/ref/fb/bullethitinfo/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [BulletHitInfo](/vext/ref/fb/bullethitinfo)
 
-> [BulletHitInfo](/vext/ref/fb/bullethitinfo/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[BulletHitInfo](/vext/ref/fb/bullethitinfo)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [BulletHitInfo](/vext/ref/fb/bullethitinfo) type.
+

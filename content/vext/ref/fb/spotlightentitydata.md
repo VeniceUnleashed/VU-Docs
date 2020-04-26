@@ -1,56 +1,152 @@
 ---
 title: SpotLightEntityData
 ---
-### Base Classes
 
-[LocalLightEntityData](/vext/ref/fb/locallightentitydata/)
+Inherits from 
+[LocalLightEntityData](/vext/ref/fb/locallightentitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SpotLightEntityData](#constructor-0)**() |
+| **[SpotLightEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SpotLightEntityData](#constructor-2)**(other: [LocalLightEntityData](/vext/ref/fb/locallightentitydata)) |
+| **[SpotLightEntityData](#constructor-3)**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata)) |
+| **[SpotLightEntityData](#constructor-4)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[SpotLightEntityData](#constructor-5)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[SpotLightEntityData](#constructor-6)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[SpotLightEntityData](#constructor-7)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "shape" >}} | [SpotLightShape](/vext/ref/fb/spotlightshape) |
+| {{< prop "coneInnerAngle" >}} | float |
+| {{< prop "coneOuterAngle" >}} | float |
+| {{< prop "frustumFov" >}} | float |
+| {{< prop "frustumAspect" >}} | float |
+| {{< prop "orthoWidth" >}} | float |
+| {{< prop "orthoHeight" >}} | float |
+| {{< prop "texture" >}} | [TextureAsset](/vext/ref/fb/textureasset) \| nil |
+| {{< prop "castShadowsMinLevel" >}} | [QualityLevel](/vext/ref/fb/qualitylevel) |
+| {{< prop "castShadowsEnable" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SpotLightEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SpotLightEntityData {#constructor-0}
+> **SpotLightEntityData**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| SpotLightEntityData()                                                          | Create a new instance of this container type.                                                                                 |
-| SpotLightEntityData(SpotLightEntityData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| SpotLightEntityData([LocalLightEntityData](/vext/ref/fb/locallightentitydata/) other)        | Upcast an instance of type [LocalLightEntityData](/vext/ref/fb/locallightentitydata/) to [SpotLightEntityData](/vext/ref/fb/spotlightentitydata/).        |
-| SpotLightEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [SpotLightEntityData](/vext/ref/fb/spotlightentitydata/).              |
-| SpotLightEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [SpotLightEntityData](/vext/ref/fb/spotlightentitydata/).                            |
-| SpotLightEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [SpotLightEntityData](/vext/ref/fb/spotlightentitydata/).                    |
-| SpotLightEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [SpotLightEntityData](/vext/ref/fb/spotlightentitydata/).              |
-| SpotLightEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SpotLightEntityData](/vext/ref/fb/spotlightentitydata/). |
+Creates a new [SpotLightEntityData](/vext/ref/fb/spotlightentitydata) frostbite instance.
 
-## Properties
+### SpotLightEntityData {#constructor-1}
+> **SpotLightEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                | Type                             | Description |
-| ------------------- | -------------------------------- | ----------- |
-| shape               | [SpotLightShape](/vext/ref/fb/spotlightshape/) |             |
-| coneInnerAngle      | number                           |             |
-| coneOuterAngle      | number                           |             |
-| frustumFov          | number                           |             |
-| frustumAspect       | number                           |             |
-| orthoWidth          | number                           |             |
-| orthoHeight         | number                           |             |
-| texture             | [TextureAsset](/vext/ref/fb/textureasset/)     |             |
-| castShadowsMinLevel | [QualityLevel](/vext/ref/fb/qualitylevel/)     |             |
-| castShadowsEnable   | bool                             |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [SpotLightEntityData](/vext/ref/fb/spotlightentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SpotLightEntityData](/vext/ref/fb/spotlightentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SpotLightEntityData](/vext/ref/fb/spotlightentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SpotLightEntityData {#constructor-2}
+> **SpotLightEntityData**(other: [LocalLightEntityData](/vext/ref/fb/locallightentitydata))
+
+Casts an instance of type [LocalLightEntityData](/vext/ref/fb/locallightentitydata) to [SpotLightEntityData](/vext/ref/fb/spotlightentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [LocalLightEntityData](/vext/ref/fb/locallightentitydata) | The instance to cast to [SpotLightEntityData](/vext/ref/fb/spotlightentitydata). |
+
+### SpotLightEntityData {#constructor-3}
+> **SpotLightEntityData**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata))
+
+Casts an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata) to [SpotLightEntityData](/vext/ref/fb/spotlightentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SpatialEntityData](/vext/ref/fb/spatialentitydata) | The instance to cast to [SpotLightEntityData](/vext/ref/fb/spotlightentitydata). |
+
+### SpotLightEntityData {#constructor-4}
+> **SpotLightEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [SpotLightEntityData](/vext/ref/fb/spotlightentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [SpotLightEntityData](/vext/ref/fb/spotlightentitydata). |
+
+### SpotLightEntityData {#constructor-5}
+> **SpotLightEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [SpotLightEntityData](/vext/ref/fb/spotlightentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [SpotLightEntityData](/vext/ref/fb/spotlightentitydata). |
+
+### SpotLightEntityData {#constructor-6}
+> **SpotLightEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [SpotLightEntityData](/vext/ref/fb/spotlightentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [SpotLightEntityData](/vext/ref/fb/spotlightentitydata). |
+
+### SpotLightEntityData {#constructor-7}
+> **SpotLightEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SpotLightEntityData](/vext/ref/fb/spotlightentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SpotLightEntityData](/vext/ref/fb/spotlightentitydata). |
+
+## Properties
+### {{% prop-heading "shape" %}}
+> **[SpotLightShape](/vext/ref/fb/spotlightshape)**
+
+### {{% prop-heading "coneInnerAngle" %}}
+> **float**
+
+### {{% prop-heading "coneOuterAngle" %}}
+> **float**
+
+### {{% prop-heading "frustumFov" %}}
+> **float**
+
+### {{% prop-heading "frustumAspect" %}}
+> **float**
+
+### {{% prop-heading "orthoWidth" %}}
+> **float**
+
+### {{% prop-heading "orthoHeight" %}}
+> **float**
+
+### {{% prop-heading "texture" %}}
+> **[TextureAsset](/vext/ref/fb/textureasset)** | **nil**
+
+### {{% prop-heading "castShadowsMinLevel" %}}
+> **[QualityLevel](/vext/ref/fb/qualitylevel)**
+
+### {{% prop-heading "castShadowsEnable" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SpotLightEntityData](/vext/ref/fb/spotlightentitydata) type.
+

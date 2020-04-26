@@ -1,19 +1,16 @@
 ---
 title: MeshSubsetCategoryFlags
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **MeshSubsetCategoryFlags_Opaque** | Value: **1** |
+| **MeshSubsetCategoryFlags_Transparent** | Value: **2** |
+| **MeshSubsetCategoryFlags_TransparentDecal** | Value: **4** |
+| **MeshSubsetCategoryFlags_Normal** | Value: **7** |
+| **MeshSubsetCategoryFlags_ZOnly** | Value: **8** |
+| **MeshSubsetCategoryFlags_DynamicEnvmap** | Value: **16** |
+| **MeshSubsetCategoryFlags_PlanarReflection** | Value: **32** |
+| **MeshSubsetCategoryFlags_All** | Value: **63** |
 
-| Name                                      | Value | Description |
-| ----------------------------------------- | ----- | ----------- |
-| MeshSubsetCategoryFlags\_Opaque           | 1     |             |
-| MeshSubsetCategoryFlags\_Transparent      | 2     |             |
-| MeshSubsetCategoryFlags\_TransparentDecal | 4     |             |
-| MeshSubsetCategoryFlags\_Normal           | 7     |             |
-| MeshSubsetCategoryFlags\_ZOnly            | 8     |             |
-| MeshSubsetCategoryFlags\_DynamicEnvmap    | 16    |             |
-| MeshSubsetCategoryFlags\_PlanarReflection | 32    |             |
-| MeshSubsetCategoryFlags\_All              | 63    |             |

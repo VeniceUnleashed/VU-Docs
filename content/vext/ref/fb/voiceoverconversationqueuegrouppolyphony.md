@@ -1,13 +1,10 @@
 ---
 title: VoiceOverConversationQueueGroupPolyphony
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **VoiceOverConversationQueueGroupPolyphony_Sources** | Value: **0** |
+| **VoiceOverConversationQueueGroupPolyphony_Conversations** | Value: **1** |
 
-| Name                                                    | Value | Description |
-| ------------------------------------------------------- | ----- | ----------- |
-| VoiceOverConversationQueueGroupPolyphony\_Sources       | 0     |             |
-| VoiceOverConversationQueueGroupPolyphony\_Conversations | 1     |             |

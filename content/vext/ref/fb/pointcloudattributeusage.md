@@ -1,16 +1,13 @@
 ---
 title: PointCloudAttributeUsage
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **PointCloudAttributeUsage_Position** | Value: **0** |
+| **PointCloudAttributeUsage_Normal** | Value: **1** |
+| **PointCloudAttributeUsage_Tangent** | Value: **2** |
+| **PointCloudAttributeUsage_Binormal** | Value: **3** |
+| **PointCloudAttributeUsage_Count** | Value: **4** |
 
-| Name                               | Value | Description |
-| ---------------------------------- | ----- | ----------- |
-| PointCloudAttributeUsage\_Position | 0     |             |
-| PointCloudAttributeUsage\_Normal   | 1     |             |
-| PointCloudAttributeUsage\_Tangent  | 2     |             |
-| PointCloudAttributeUsage\_Binormal | 3     |             |
-| PointCloudAttributeUsage\_Count    | 4     |             |

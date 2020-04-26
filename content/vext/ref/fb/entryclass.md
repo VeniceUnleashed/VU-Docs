@@ -1,13 +1,10 @@
 ---
 title: EntryClass
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ecPrimary** | Value: **0** |
+| **ecSecondary** | Value: **1** |
 
-| Name        | Value | Description |
-| ----------- | ----- | ----------- |
-| ecPrimary   | 0     |             |
-| ecSecondary | 1     |             |

@@ -1,14 +1,11 @@
 ---
 title: ScreenEffectFrameType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ScreenEffectFrameType_FullFrame** | Value: **0** |
+| **ScreenEffectFrameType_SingleFramePart** | Value: **1** |
+| **ScreenEffectFrameType_SingleSquareFramePart** | Value: **2** |
 
-| Name                                         | Value | Description |
-| -------------------------------------------- | ----- | ----------- |
-| ScreenEffectFrameType\_FullFrame             | 0     |             |
-| ScreenEffectFrameType\_SingleFramePart       | 1     |             |
-| ScreenEffectFrameType\_SingleSquareFramePart | 2     |             |

@@ -1,40 +1,96 @@
 ---
 title: StatCategoriesWeaponAccessoryTree
 ---
-### Base Classes
 
-[StatCategoriesGuidTree](/vext/ref/fb/statcategoriesguidtree/)
+Inherits from 
+[StatCategoriesGuidTree](/vext/ref/fb/statcategoriesguidtree)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[StatCategoriesWeaponAccessoryTree](#constructor-0)**() |
+| **[StatCategoriesWeaponAccessoryTree](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[StatCategoriesWeaponAccessoryTree](#constructor-2)**(other: [StatCategoriesGuidTree](/vext/ref/fb/statcategoriesguidtree)) |
+| **[StatCategoriesWeaponAccessoryTree](#constructor-3)**(other: [StatCategoriesBaseTree](/vext/ref/fb/statcategoriesbasetree)) |
+| **[StatCategoriesWeaponAccessoryTree](#constructor-4)**(other: [TreeBase](/vext/ref/fb/treebase)) |
+| **[StatCategoriesWeaponAccessoryTree](#constructor-5)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[StatCategoriesWeaponAccessoryTree](#constructor-6)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "StatCategoriesWeaponAccessoryTree" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### StatCategoriesWeaponAccessoryTree {#constructor-0}
+> **StatCategoriesWeaponAccessoryTree**()
 
-| Constructor                                                                                  | Description                                                                                                                                               |
-| -------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| StatCategoriesWeaponAccessoryTree()                                                          | Create a new instance of this container type.                                                                                                             |
-| StatCategoriesWeaponAccessoryTree(StatCategoriesWeaponAccessoryTree other)                   | Create a reference copy of an instance of the same type.                                                                                                  |
-| StatCategoriesWeaponAccessoryTree([StatCategoriesGuidTree](/vext/ref/fb/statcategoriesguidtree/) other)    | Upcast an instance of type [StatCategoriesGuidTree](/vext/ref/fb/statcategoriesguidtree/) to [StatCategoriesWeaponAccessoryTree](/vext/ref/fb/statcategoriesweaponaccessorytree/).    |
-| StatCategoriesWeaponAccessoryTree([StatCategoriesBaseTree](/vext/ref/fb/statcategoriesbasetree/) other)    | Upcast an instance of type [StatCategoriesBaseTree](/vext/ref/fb/statcategoriesbasetree/) to [StatCategoriesWeaponAccessoryTree](/vext/ref/fb/statcategoriesweaponaccessorytree/).    |
-| StatCategoriesWeaponAccessoryTree([TreeBase](/vext/ref/fb/treebase/) other)                                | Upcast an instance of type [TreeBase](/vext/ref/fb/treebase/) to [StatCategoriesWeaponAccessoryTree](/vext/ref/fb/statcategoriesweaponaccessorytree/).                                |
-| StatCategoriesWeaponAccessoryTree([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [StatCategoriesWeaponAccessoryTree](/vext/ref/fb/statcategoriesweaponaccessorytree/).                                      |
-| StatCategoriesWeaponAccessoryTree([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StatCategoriesWeaponAccessoryTree](/vext/ref/fb/statcategoriesweaponaccessorytree/). |
+Creates a new [StatCategoriesWeaponAccessoryTree](/vext/ref/fb/statcategoriesweaponaccessorytree) frostbite instance.
 
-## Methods
+### StatCategoriesWeaponAccessoryTree {#constructor-1}
+> **StatCategoriesWeaponAccessoryTree**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                                                   | Name            | Parameters                                     |
-| ---------------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [StatCategoriesWeaponAccessoryTree](/vext/ref/fb/statcategoriesweaponaccessorytree/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [StatCategoriesWeaponAccessoryTree](/vext/ref/fb/statcategoriesweaponaccessorytree/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [StatCategoriesWeaponAccessoryTree](/vext/ref/fb/statcategoriesweaponaccessorytree) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### StatCategoriesWeaponAccessoryTree {#constructor-2}
+> **StatCategoriesWeaponAccessoryTree**(other: [StatCategoriesGuidTree](/vext/ref/fb/statcategoriesguidtree))
+
+Casts an instance of type [StatCategoriesGuidTree](/vext/ref/fb/statcategoriesguidtree) to [StatCategoriesWeaponAccessoryTree](/vext/ref/fb/statcategoriesweaponaccessorytree). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [StatCategoriesGuidTree](/vext/ref/fb/statcategoriesguidtree) | The instance to cast to [StatCategoriesWeaponAccessoryTree](/vext/ref/fb/statcategoriesweaponaccessorytree). |
+
+### StatCategoriesWeaponAccessoryTree {#constructor-3}
+> **StatCategoriesWeaponAccessoryTree**(other: [StatCategoriesBaseTree](/vext/ref/fb/statcategoriesbasetree))
+
+Casts an instance of type [StatCategoriesBaseTree](/vext/ref/fb/statcategoriesbasetree) to [StatCategoriesWeaponAccessoryTree](/vext/ref/fb/statcategoriesweaponaccessorytree). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [StatCategoriesBaseTree](/vext/ref/fb/statcategoriesbasetree) | The instance to cast to [StatCategoriesWeaponAccessoryTree](/vext/ref/fb/statcategoriesweaponaccessorytree). |
+
+### StatCategoriesWeaponAccessoryTree {#constructor-4}
+> **StatCategoriesWeaponAccessoryTree**(other: [TreeBase](/vext/ref/fb/treebase))
+
+Casts an instance of type [TreeBase](/vext/ref/fb/treebase) to [StatCategoriesWeaponAccessoryTree](/vext/ref/fb/statcategoriesweaponaccessorytree). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [TreeBase](/vext/ref/fb/treebase) | The instance to cast to [StatCategoriesWeaponAccessoryTree](/vext/ref/fb/statcategoriesweaponaccessorytree). |
+
+### StatCategoriesWeaponAccessoryTree {#constructor-5}
+> **StatCategoriesWeaponAccessoryTree**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [StatCategoriesWeaponAccessoryTree](/vext/ref/fb/statcategoriesweaponaccessorytree). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [StatCategoriesWeaponAccessoryTree](/vext/ref/fb/statcategoriesweaponaccessorytree). |
+
+### StatCategoriesWeaponAccessoryTree {#constructor-6}
+> **StatCategoriesWeaponAccessoryTree**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StatCategoriesWeaponAccessoryTree](/vext/ref/fb/statcategoriesweaponaccessorytree). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [StatCategoriesWeaponAccessoryTree](/vext/ref/fb/statcategoriesweaponaccessorytree). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [StatCategoriesWeaponAccessoryTree](/vext/ref/fb/statcategoriesweaponaccessorytree) type.
+

@@ -1,44 +1,83 @@
 ---
 title: ConstantEvaluatorData
 ---
-### Base Classes
 
-[EvaluatorData](/vext/ref/fb/evaluatordata/)
+Inherits from 
+[EvaluatorData](/vext/ref/fb/evaluatordata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ConstantEvaluatorData](#constructor-0)**() |
+| **[ConstantEvaluatorData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ConstantEvaluatorData](#constructor-2)**(other: [EvaluatorData](/vext/ref/fb/evaluatordata)) |
+| **[ConstantEvaluatorData](#constructor-3)**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata)) |
+| **[ConstantEvaluatorData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "scale" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ConstantEvaluatorData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ConstantEvaluatorData {#constructor-0}
+> **ConstantEvaluatorData**()
 
-| Constructor                                                                      | Description                                                                                                                       |
-| -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| ConstantEvaluatorData()                                                          | Create a new instance of this container type.                                                                                     |
-| ConstantEvaluatorData(ConstantEvaluatorData other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| ConstantEvaluatorData([EvaluatorData](/vext/ref/fb/evaluatordata/) other)                      | Upcast an instance of type [EvaluatorData](/vext/ref/fb/evaluatordata/) to [ConstantEvaluatorData](/vext/ref/fb/constantevaluatordata/).                      |
-| ConstantEvaluatorData([EmitterComponentData](/vext/ref/fb/emittercomponentdata/) other)        | Upcast an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata/) to [ConstantEvaluatorData](/vext/ref/fb/constantevaluatordata/).        |
-| ConstantEvaluatorData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ConstantEvaluatorData](/vext/ref/fb/constantevaluatordata/). |
+Creates a new [ConstantEvaluatorData](/vext/ref/fb/constantevaluatordata) frostbite instance.
 
-## Properties
+### ConstantEvaluatorData {#constructor-1}
+> **ConstantEvaluatorData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name  | Type   | Description |
-| ----- | ------ | ----------- |
-| scale | number |             |
-
-## Methods
-
-| Type                                           | Name            | Parameters                                     |
-| ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [ConstantEvaluatorData](/vext/ref/fb/constantevaluatordata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ConstantEvaluatorData](/vext/ref/fb/constantevaluatordata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ConstantEvaluatorData](/vext/ref/fb/constantevaluatordata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ConstantEvaluatorData {#constructor-2}
+> **ConstantEvaluatorData**(other: [EvaluatorData](/vext/ref/fb/evaluatordata))
+
+Casts an instance of type [EvaluatorData](/vext/ref/fb/evaluatordata) to [ConstantEvaluatorData](/vext/ref/fb/constantevaluatordata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EvaluatorData](/vext/ref/fb/evaluatordata) | The instance to cast to [ConstantEvaluatorData](/vext/ref/fb/constantevaluatordata). |
+
+### ConstantEvaluatorData {#constructor-3}
+> **ConstantEvaluatorData**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata))
+
+Casts an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata) to [ConstantEvaluatorData](/vext/ref/fb/constantevaluatordata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EmitterComponentData](/vext/ref/fb/emittercomponentdata) | The instance to cast to [ConstantEvaluatorData](/vext/ref/fb/constantevaluatordata). |
+
+### ConstantEvaluatorData {#constructor-4}
+> **ConstantEvaluatorData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ConstantEvaluatorData](/vext/ref/fb/constantevaluatordata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ConstantEvaluatorData](/vext/ref/fb/constantevaluatordata). |
+
+## Properties
+### {{% prop-heading "scale" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ConstantEvaluatorData](/vext/ref/fb/constantevaluatordata) type.
+

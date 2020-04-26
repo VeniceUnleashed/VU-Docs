@@ -1,19 +1,16 @@
 ---
 title: ShaderRenderPath
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ShaderRenderPath_Dx10** | Value: **0** |
+| **ShaderRenderPath_Dx10Plus** | Value: **1** |
+| **ShaderRenderPath_Dx10_1** | Value: **2** |
+| **ShaderRenderPath_Dx11** | Value: **3** |
+| **ShaderRenderPath_Xenon** | Value: **4** |
+| **ShaderRenderPath_Ps3** | Value: **5** |
+| **ShaderRenderPath_Gl** | Value: **6** |
+| **ShaderRenderPathCount** | Value: **7** |
 
-| Name                       | Value | Description |
-| -------------------------- | ----- | ----------- |
-| ShaderRenderPath\_Dx10     | 0     |             |
-| ShaderRenderPath\_Dx10Plus | 1     |             |
-| ShaderRenderPath\_Dx10\_1  | 2     |             |
-| ShaderRenderPath\_Dx11     | 3     |             |
-| ShaderRenderPath\_Xenon    | 4     |             |
-| ShaderRenderPath\_Ps3      | 5     |             |
-| ShaderRenderPath\_Gl       | 6     |             |
-| ShaderRenderPathCount      | 7     |             |

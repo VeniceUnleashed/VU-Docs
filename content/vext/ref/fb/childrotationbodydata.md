@@ -1,49 +1,103 @@
 ---
 title: ChildRotationBodyData
 ---
-### Base Classes
 
-[RotationBodyData](/vext/ref/fb/rotationbodydata/)
+Inherits from 
+[RotationBodyData](/vext/ref/fb/rotationbodydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ChildRotationBodyData](#constructor-0)**() |
+| **[ChildRotationBodyData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ChildRotationBodyData](#constructor-2)**(other: [RotationBodyData](/vext/ref/fb/rotationbodydata)) |
+| **[ChildRotationBodyData](#constructor-3)**(other: [MovingBodyData](/vext/ref/fb/movingbodydata)) |
+| **[ChildRotationBodyData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "forceModifier" >}} | float |
+| {{< prop "resetForceModifier" >}} | float |
+| {{< prop "resetForceInputThreshold" >}} | float |
+| {{< prop "rotationInput" >}} | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum) |
+| {{< prop "worldSpaceLockEfficiency" >}} | float |
+| {{< prop "useLinearInput" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ChildRotationBodyData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ChildRotationBodyData {#constructor-0}
+> **ChildRotationBodyData**()
 
-| Constructor                                                                      | Description                                                                                                                       |
-| -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| ChildRotationBodyData()                                                          | Create a new instance of this container type.                                                                                     |
-| ChildRotationBodyData(ChildRotationBodyData other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| ChildRotationBodyData([RotationBodyData](/vext/ref/fb/rotationbodydata/) other)                | Upcast an instance of type [RotationBodyData](/vext/ref/fb/rotationbodydata/) to [ChildRotationBodyData](/vext/ref/fb/childrotationbodydata/).                |
-| ChildRotationBodyData([MovingBodyData](/vext/ref/fb/movingbodydata/) other)                    | Upcast an instance of type [MovingBodyData](/vext/ref/fb/movingbodydata/) to [ChildRotationBodyData](/vext/ref/fb/childrotationbodydata/).                    |
-| ChildRotationBodyData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ChildRotationBodyData](/vext/ref/fb/childrotationbodydata/). |
+Creates a new [ChildRotationBodyData](/vext/ref/fb/childrotationbodydata) frostbite instance.
 
-## Properties
+### ChildRotationBodyData {#constructor-1}
+> **ChildRotationBodyData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                     | Type                                         | Description |
-| ------------------------ | -------------------------------------------- | ----------- |
-| forceModifier            | number                                       |             |
-| resetForceModifier       | number                                       |             |
-| resetForceInputThreshold | number                                       |             |
-| rotationInput            | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum/) |             |
-| worldSpaceLockEfficiency | number                                       |             |
-| useLinearInput           | bool                                         |             |
-
-## Methods
-
-| Type                                           | Name            | Parameters                                     |
-| ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [ChildRotationBodyData](/vext/ref/fb/childrotationbodydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ChildRotationBodyData](/vext/ref/fb/childrotationbodydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ChildRotationBodyData](/vext/ref/fb/childrotationbodydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ChildRotationBodyData {#constructor-2}
+> **ChildRotationBodyData**(other: [RotationBodyData](/vext/ref/fb/rotationbodydata))
+
+Casts an instance of type [RotationBodyData](/vext/ref/fb/rotationbodydata) to [ChildRotationBodyData](/vext/ref/fb/childrotationbodydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [RotationBodyData](/vext/ref/fb/rotationbodydata) | The instance to cast to [ChildRotationBodyData](/vext/ref/fb/childrotationbodydata). |
+
+### ChildRotationBodyData {#constructor-3}
+> **ChildRotationBodyData**(other: [MovingBodyData](/vext/ref/fb/movingbodydata))
+
+Casts an instance of type [MovingBodyData](/vext/ref/fb/movingbodydata) to [ChildRotationBodyData](/vext/ref/fb/childrotationbodydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [MovingBodyData](/vext/ref/fb/movingbodydata) | The instance to cast to [ChildRotationBodyData](/vext/ref/fb/childrotationbodydata). |
+
+### ChildRotationBodyData {#constructor-4}
+> **ChildRotationBodyData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ChildRotationBodyData](/vext/ref/fb/childrotationbodydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ChildRotationBodyData](/vext/ref/fb/childrotationbodydata). |
+
+## Properties
+### {{% prop-heading "forceModifier" %}}
+> **float**
+
+### {{% prop-heading "resetForceModifier" %}}
+> **float**
+
+### {{% prop-heading "resetForceInputThreshold" %}}
+> **float**
+
+### {{% prop-heading "rotationInput" %}}
+> **[EntryInputActionEnum](/vext/ref/fb/entryinputactionenum)**
+
+### {{% prop-heading "worldSpaceLockEfficiency" %}}
+> **float**
+
+### {{% prop-heading "useLinearInput" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ChildRotationBodyData](/vext/ref/fb/childrotationbodydata) type.
+

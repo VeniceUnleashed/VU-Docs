@@ -1,52 +1,122 @@
 ---
 title: ScreenEffectComponentData
 ---
-### Base Classes
 
-[ComponentData](/vext/ref/fb/componentdata/)
+Inherits from 
+[ComponentData](/vext/ref/fb/componentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ScreenEffectComponentData](#constructor-0)**() |
+| **[ScreenEffectComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[ScreenEffectComponentData](#constructor-2)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[ScreenEffectComponentData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[ScreenEffectComponentData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[ScreenEffectComponentData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "screenEffectParams" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "frameType" >}} | [ScreenEffectFrameType](/vext/ref/fb/screeneffectframetype) |
+| {{< prop "shader" >}} | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset) \| nil |
+| {{< prop "frameWidth" >}} | float |
+| {{< prop "outerFrameOpacity" >}} | float |
+| {{< prop "innerFrameOpacity" >}} | float |
+| {{< prop "angle" >}} | float |
+| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ScreenEffectComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ScreenEffectComponentData {#constructor-0}
+> **ScreenEffectComponentData**()
 
-| Constructor                                                                          | Description                                                                                                                               |
-| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| ScreenEffectComponentData()                                                          | Create a new instance of this container type.                                                                                             |
-| ScreenEffectComponentData(ScreenEffectComponentData other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| ScreenEffectComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [ScreenEffectComponentData](/vext/ref/fb/screeneffectcomponentdata/).                      |
-| ScreenEffectComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [ScreenEffectComponentData](/vext/ref/fb/screeneffectcomponentdata/).                    |
-| ScreenEffectComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [ScreenEffectComponentData](/vext/ref/fb/screeneffectcomponentdata/).              |
-| ScreenEffectComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ScreenEffectComponentData](/vext/ref/fb/screeneffectcomponentdata/). |
+Creates a new [ScreenEffectComponentData](/vext/ref/fb/screeneffectcomponentdata) frostbite instance.
 
-## Properties
+### ScreenEffectComponentData {#constructor-1}
+> **ScreenEffectComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name               | Type                                             | Description |
-| ------------------ | ------------------------------------------------ | ----------- |
-| screenEffectParams | [Vec4](/vext/ref/shared/class/vec4)                |             |
-| frameType          | [ScreenEffectFrameType](/vext/ref/fb/screeneffectframetype/)   |             |
-| shader             | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset/) |             |
-| frameWidth         | number                                           |             |
-| outerFrameOpacity  | number                                           |             |
-| innerFrameOpacity  | number                                           |             |
-| angle              | number                                           |             |
-| realm              | [Realm](/vext/ref/fb/realm/)                                   |             |
-
-## Methods
-
-| Type                                                   | Name            | Parameters                                     |
-| ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [ScreenEffectComponentData](/vext/ref/fb/screeneffectcomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [ScreenEffectComponentData](/vext/ref/fb/screeneffectcomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [ScreenEffectComponentData](/vext/ref/fb/screeneffectcomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### ScreenEffectComponentData {#constructor-2}
+> **ScreenEffectComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [ScreenEffectComponentData](/vext/ref/fb/screeneffectcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [ScreenEffectComponentData](/vext/ref/fb/screeneffectcomponentdata). |
+
+### ScreenEffectComponentData {#constructor-3}
+> **ScreenEffectComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [ScreenEffectComponentData](/vext/ref/fb/screeneffectcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [ScreenEffectComponentData](/vext/ref/fb/screeneffectcomponentdata). |
+
+### ScreenEffectComponentData {#constructor-4}
+> **ScreenEffectComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [ScreenEffectComponentData](/vext/ref/fb/screeneffectcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [ScreenEffectComponentData](/vext/ref/fb/screeneffectcomponentdata). |
+
+### ScreenEffectComponentData {#constructor-5}
+> **ScreenEffectComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [ScreenEffectComponentData](/vext/ref/fb/screeneffectcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [ScreenEffectComponentData](/vext/ref/fb/screeneffectcomponentdata). |
+
+## Properties
+### {{% prop-heading "screenEffectParams" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "frameType" %}}
+> **[ScreenEffectFrameType](/vext/ref/fb/screeneffectframetype)**
+
+### {{% prop-heading "shader" %}}
+> **[SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset)** | **nil**
+
+### {{% prop-heading "frameWidth" %}}
+> **float**
+
+### {{% prop-heading "outerFrameOpacity" %}}
+> **float**
+
+### {{% prop-heading "innerFrameOpacity" %}}
+> **float**
+
+### {{% prop-heading "angle" %}}
+> **float**
+
+### {{% prop-heading "realm" %}}
+> **[Realm](/vext/ref/fb/realm)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ScreenEffectComponentData](/vext/ref/fb/screeneffectcomponentdata) type.
+

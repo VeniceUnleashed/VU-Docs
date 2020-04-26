@@ -1,13 +1,10 @@
 ---
 title: IndexBufferFormat
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **IndexBufferFormat_16Bit** | Value: **0** |
+| **IndexBufferFormat_32Bit** | Value: **1** |
 
-| Name                     | Value | Description |
-| ------------------------ | ----- | ----------- |
-| IndexBufferFormat\_16Bit | 0     |             |
-| IndexBufferFormat\_32Bit | 1     |             |

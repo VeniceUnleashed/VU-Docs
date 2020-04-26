@@ -1,51 +1,104 @@
 ---
 title: DecalSettings
 ---
-### Base Classes
 
-[SystemSettings](/vext/ref/fb/systemsettings/)
+Inherits from 
+[SystemSettings](/vext/ref/fb/systemsettings)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[DecalSettings](#constructor-0)**() |
+| **[DecalSettings](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[DecalSettings](#constructor-2)**(other: [SystemSettings](/vext/ref/fb/systemsettings)) |
+| **[DecalSettings](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "staticBufferMaxVertexCount" >}} | int |
+| {{< prop "ringBufferMaxVertexCount" >}} | int |
+| {{< prop "drawEnable" >}} | bool |
+| {{< prop "systemEnable2" >}} | bool |
+| {{< prop "systemEnable" >}} | bool |
+| {{< prop "enable" >}} | bool |
+| {{< prop "debugMemUsageEnable" >}} | bool |
+| {{< prop "debugWarningsEnable" >}} | bool |
+| {{< prop "nvidiaStreamOutputWorkaroundEnable" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "DecalSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### DecalSettings {#constructor-0}
+> **DecalSettings**()
 
-| Constructor                                                              | Description                                                                                                       |
-| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| DecalSettings()                                                          | Create a new instance of this container type.                                                                     |
-| DecalSettings(DecalSettings other)                                       | Create a reference copy of an instance of the same type.                                                          |
-| DecalSettings([SystemSettings](/vext/ref/fb/systemsettings/) other)                    | Upcast an instance of type [SystemSettings](/vext/ref/fb/systemsettings/) to [DecalSettings](/vext/ref/fb/decalsettings/).                    |
-| DecalSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DecalSettings](/vext/ref/fb/decalsettings/). |
+Creates a new [DecalSettings](/vext/ref/fb/decalsettings) frostbite instance.
 
-## Properties
+### DecalSettings {#constructor-1}
+> **DecalSettings**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                               | Type   | Description |
-| ---------------------------------- | ------ | ----------- |
-| staticBufferMaxVertexCount         | number |             |
-| ringBufferMaxVertexCount           | number |             |
-| drawEnable                         | bool   |             |
-| systemEnable2                      | bool   |             |
-| systemEnable                       | bool   |             |
-| enable                             | bool   |             |
-| debugMemUsageEnable                | bool   |             |
-| debugWarningsEnable                | bool   |             |
-| nvidiaStreamOutputWorkaroundEnable | bool   |             |
-
-## Methods
-
-| Type                           | Name            | Parameters                                     |
-| ------------------------------ | --------------- | ---------------------------------------------- |
-| [DecalSettings](/vext/ref/fb/decalsettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [DecalSettings](/vext/ref/fb/decalsettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [DecalSettings](/vext/ref/fb/decalsettings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### DecalSettings {#constructor-2}
+> **DecalSettings**(other: [SystemSettings](/vext/ref/fb/systemsettings))
+
+Casts an instance of type [SystemSettings](/vext/ref/fb/systemsettings) to [DecalSettings](/vext/ref/fb/decalsettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SystemSettings](/vext/ref/fb/systemsettings) | The instance to cast to [DecalSettings](/vext/ref/fb/decalsettings). |
+
+### DecalSettings {#constructor-3}
+> **DecalSettings**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DecalSettings](/vext/ref/fb/decalsettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DecalSettings](/vext/ref/fb/decalsettings). |
+
+## Properties
+### {{% prop-heading "staticBufferMaxVertexCount" %}}
+> **int**
+
+### {{% prop-heading "ringBufferMaxVertexCount" %}}
+> **int**
+
+### {{% prop-heading "drawEnable" %}}
+> **bool**
+
+### {{% prop-heading "systemEnable2" %}}
+> **bool**
+
+### {{% prop-heading "systemEnable" %}}
+> **bool**
+
+### {{% prop-heading "enable" %}}
+> **bool**
+
+### {{% prop-heading "debugMemUsageEnable" %}}
+> **bool**
+
+### {{% prop-heading "debugWarningsEnable" %}}
+> **bool**
+
+### {{% prop-heading "nvidiaStreamOutputWorkaroundEnable" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [DecalSettings](/vext/ref/fb/decalsettings) type.
+

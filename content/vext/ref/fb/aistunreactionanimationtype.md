@@ -1,17 +1,14 @@
 ---
 title: AIStunReactionAnimationType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **AIStunReactionAnimationType_1** | Value: **0** |
+| **AIStunReactionAnimationType_2** | Value: **1** |
+| **AIStunReactionAnimationType_3** | Value: **2** |
+| **AIStunReactionAnimationType_4** | Value: **3** |
+| **AIStunReactionAnimationType_5** | Value: **4** |
+| **AIStunReactionAnimationType_Count** | Value: **5** |
 
-| Name                               | Value | Description |
-| ---------------------------------- | ----- | ----------- |
-| AIStunReactionAnimationType\_1     | 0     |             |
-| AIStunReactionAnimationType\_2     | 1     |             |
-| AIStunReactionAnimationType\_3     | 2     |             |
-| AIStunReactionAnimationType\_4     | 3     |             |
-| AIStunReactionAnimationType\_5     | 4     |             |
-| AIStunReactionAnimationType\_Count | 5     |             |

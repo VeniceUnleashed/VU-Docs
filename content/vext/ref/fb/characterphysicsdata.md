@@ -1,59 +1,136 @@
 ---
 title: CharacterPhysicsData
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[CharacterPhysicsData](#constructor-0)**() |
+| **[CharacterPhysicsData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[CharacterPhysicsData](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[CharacterPhysicsData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "poses" >}} | [CharacterPoseData](/vext/ref/fb/characterposedata)[] |
+| {{< prop "states" >}} | [CharacterStateData](/vext/ref/fb/characterstatedata)[] |
+| {{< prop "defaultState" >}} | [CharacterStateType](/vext/ref/fb/characterstatetype) |
+| {{< prop "sprint" >}} | [CharacterSprintData](/vext/ref/fb/charactersprintdata) \| nil |
+| {{< prop "materialPair" >}} | [MaterialContainerPair](/vext/ref/fb/materialcontainerpair) \| nil |
+| {{< prop "pushableObjectWeight" >}} | int |
+| {{< prop "mass" >}} | float |
+| {{< prop "maxAscendAngle" >}} | float |
+| {{< prop "physicalRadius" >}} | float |
+| {{< prop "waterDepthLimit" >}} | float |
+| {{< prop "inputAcceleration" >}} | float |
+| {{< prop "ladderAcceptAngle" >}} | float |
+| {{< prop "ladderAcceptAnglePitch" >}} | float |
+| {{< prop "jumpPenaltyTime" >}} | float |
+| {{< prop "jumpPenaltyFactor" >}} | float |
+| {{< prop "radiusToPredictCollisionOnCharacters" >}} | float |
+| {{< prop "allowPoseChangeDuringTransition" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "CharacterPhysicsData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### CharacterPhysicsData {#constructor-0}
+> **CharacterPhysicsData**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| CharacterPhysicsData()                                                          | Create a new instance of this container type.                                                                                   |
-| CharacterPhysicsData(CharacterPhysicsData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| CharacterPhysicsData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [CharacterPhysicsData](/vext/ref/fb/characterphysicsdata/).                                      |
-| CharacterPhysicsData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CharacterPhysicsData](/vext/ref/fb/characterphysicsdata/). |
+Creates a new [CharacterPhysicsData](/vext/ref/fb/characterphysicsdata) frostbite instance.
 
-## Properties
+### CharacterPhysicsData {#constructor-1}
+> **CharacterPhysicsData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                                 | Type                                           | Description |
-| ------------------------------------ | ---------------------------------------------- | ----------- |
-| poses                                | [CharacterPoseData](/vext/ref/fb/characterposedata/)\[\]     |             |
-| states                               | [CharacterStateData](/vext/ref/fb/characterstatedata/)\[\]   |             |
-| defaultState                         | [CharacterStateType](/vext/ref/fb/characterstatetype/)       |             |
-| sprint                               | [CharacterSprintData](/vext/ref/fb/charactersprintdata/)     |             |
-| materialPair                         | [MaterialContainerPair](/vext/ref/fb/materialcontainerpair/) |             |
-| pushableObjectWeight                 | number                                         |             |
-| mass                                 | number                                         |             |
-| maxAscendAngle                       | number                                         |             |
-| physicalRadius                       | number                                         |             |
-| waterDepthLimit                      | number                                         |             |
-| inputAcceleration                    | number                                         |             |
-| ladderAcceptAngle                    | number                                         |             |
-| ladderAcceptAnglePitch               | number                                         |             |
-| jumpPenaltyTime                      | number                                         |             |
-| jumpPenaltyFactor                    | number                                         |             |
-| radiusToPredictCollisionOnCharacters | number                                         |             |
-| allowPoseChangeDuringTransition      | bool                                           |             |
-
-## Methods
-
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [CharacterPhysicsData](/vext/ref/fb/characterphysicsdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [CharacterPhysicsData](/vext/ref/fb/characterphysicsdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [CharacterPhysicsData](/vext/ref/fb/characterphysicsdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### CharacterPhysicsData {#constructor-2}
+> **CharacterPhysicsData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [CharacterPhysicsData](/vext/ref/fb/characterphysicsdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [CharacterPhysicsData](/vext/ref/fb/characterphysicsdata). |
+
+### CharacterPhysicsData {#constructor-3}
+> **CharacterPhysicsData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CharacterPhysicsData](/vext/ref/fb/characterphysicsdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [CharacterPhysicsData](/vext/ref/fb/characterphysicsdata). |
+
+## Properties
+### {{% prop-heading "poses" %}}
+> **[CharacterPoseData](/vext/ref/fb/characterposedata)**[]
+
+### {{% prop-heading "states" %}}
+> **[CharacterStateData](/vext/ref/fb/characterstatedata)**[]
+
+### {{% prop-heading "defaultState" %}}
+> **[CharacterStateType](/vext/ref/fb/characterstatetype)**
+
+### {{% prop-heading "sprint" %}}
+> **[CharacterSprintData](/vext/ref/fb/charactersprintdata)** | **nil**
+
+### {{% prop-heading "materialPair" %}}
+> **[MaterialContainerPair](/vext/ref/fb/materialcontainerpair)** | **nil**
+
+### {{% prop-heading "pushableObjectWeight" %}}
+> **int**
+
+### {{% prop-heading "mass" %}}
+> **float**
+
+### {{% prop-heading "maxAscendAngle" %}}
+> **float**
+
+### {{% prop-heading "physicalRadius" %}}
+> **float**
+
+### {{% prop-heading "waterDepthLimit" %}}
+> **float**
+
+### {{% prop-heading "inputAcceleration" %}}
+> **float**
+
+### {{% prop-heading "ladderAcceptAngle" %}}
+> **float**
+
+### {{% prop-heading "ladderAcceptAnglePitch" %}}
+> **float**
+
+### {{% prop-heading "jumpPenaltyTime" %}}
+> **float**
+
+### {{% prop-heading "jumpPenaltyFactor" %}}
+> **float**
+
+### {{% prop-heading "radiusToPredictCollisionOnCharacters" %}}
+> **float**
+
+### {{% prop-heading "allowPoseChangeDuringTransition" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [CharacterPhysicsData](/vext/ref/fb/characterphysicsdata) type.
+

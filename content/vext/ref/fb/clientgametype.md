@@ -1,14 +1,11 @@
 ---
 title: ClientGameType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ClientGameType_SinglePlayer** | Value: **0** |
+| **ClientGameType_Hosted** | Value: **1** |
+| **ClientGameType_Joined** | Value: **2** |
 
-| Name                         | Value | Description |
-| ---------------------------- | ----- | ----------- |
-| ClientGameType\_SinglePlayer | 0     |             |
-| ClientGameType\_Hosted       | 1     |             |
-| ClientGameType\_Joined       | 2     |             |

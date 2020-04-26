@@ -1,44 +1,83 @@
 ---
 title: SpawnRotationData
 ---
-### Base Classes
 
-[ProcessorData](/vext/ref/fb/processordata/)
+Inherits from 
+[ProcessorData](/vext/ref/fb/processordata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SpawnRotationData](#constructor-0)**() |
+| **[SpawnRotationData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SpawnRotationData](#constructor-2)**(other: [ProcessorData](/vext/ref/fb/processordata)) |
+| **[SpawnRotationData](#constructor-3)**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata)) |
+| **[SpawnRotationData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "rotation" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SpawnRotationData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SpawnRotationData {#constructor-0}
+> **SpawnRotationData**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| SpawnRotationData()                                                          | Create a new instance of this container type.                                                                             |
-| SpawnRotationData(SpawnRotationData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| SpawnRotationData([ProcessorData](/vext/ref/fb/processordata/) other)                      | Upcast an instance of type [ProcessorData](/vext/ref/fb/processordata/) to [SpawnRotationData](/vext/ref/fb/spawnrotationdata/).                      |
-| SpawnRotationData([EmitterComponentData](/vext/ref/fb/emittercomponentdata/) other)        | Upcast an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata/) to [SpawnRotationData](/vext/ref/fb/spawnrotationdata/).        |
-| SpawnRotationData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SpawnRotationData](/vext/ref/fb/spawnrotationdata/). |
+Creates a new [SpawnRotationData](/vext/ref/fb/spawnrotationdata) frostbite instance.
 
-## Properties
+### SpawnRotationData {#constructor-1}
+> **SpawnRotationData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name     | Type   | Description |
-| -------- | ------ | ----------- |
-| rotation | number |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [SpawnRotationData](/vext/ref/fb/spawnrotationdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SpawnRotationData](/vext/ref/fb/spawnrotationdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SpawnRotationData](/vext/ref/fb/spawnrotationdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SpawnRotationData {#constructor-2}
+> **SpawnRotationData**(other: [ProcessorData](/vext/ref/fb/processordata))
+
+Casts an instance of type [ProcessorData](/vext/ref/fb/processordata) to [SpawnRotationData](/vext/ref/fb/spawnrotationdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ProcessorData](/vext/ref/fb/processordata) | The instance to cast to [SpawnRotationData](/vext/ref/fb/spawnrotationdata). |
+
+### SpawnRotationData {#constructor-3}
+> **SpawnRotationData**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata))
+
+Casts an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata) to [SpawnRotationData](/vext/ref/fb/spawnrotationdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EmitterComponentData](/vext/ref/fb/emittercomponentdata) | The instance to cast to [SpawnRotationData](/vext/ref/fb/spawnrotationdata). |
+
+### SpawnRotationData {#constructor-4}
+> **SpawnRotationData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SpawnRotationData](/vext/ref/fb/spawnrotationdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SpawnRotationData](/vext/ref/fb/spawnrotationdata). |
+
+## Properties
+### {{% prop-heading "rotation" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SpawnRotationData](/vext/ref/fb/spawnrotationdata) type.
+

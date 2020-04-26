@@ -1,49 +1,96 @@
 ---
 title: UIGameModeDescription
 ---
-### Base Classes
 
-[UIItemDescription](/vext/ref/fb/uiitemdescription/)
+Inherits from 
+[UIItemDescription](/vext/ref/fb/uiitemdescription)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIGameModeDescription](#constructor-0)**() |
+| **[UIGameModeDescription](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UIGameModeDescription](#constructor-2)**(other: [UIItemDescription](/vext/ref/fb/uiitemdescription)) |
+| **[UIGameModeDescription](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "identifier" >}} | string |
+| {{< prop "name" >}} | string |
+| {{< prop "abbreviation" >}} | string |
+| {{< prop "desc" >}} | string |
+| {{< prop "battlelogId" >}} | int |
+| {{< prop "texturePath" >}} | string |
+| {{< prop "variations" >}} | [GameModeVariation](/vext/ref/fb/gamemodevariation)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIGameModeDescription" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIGameModeDescription {#constructor-0}
+> **UIGameModeDescription**()
 
-| Constructor                                                                      | Description                                                                                                                       |
-| -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| UIGameModeDescription()                                                          | Create a new instance of this container type.                                                                                     |
-| UIGameModeDescription(UIGameModeDescription other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| UIGameModeDescription([UIItemDescription](/vext/ref/fb/uiitemdescription/) other)              | Upcast an instance of type [UIItemDescription](/vext/ref/fb/uiitemdescription/) to [UIGameModeDescription](/vext/ref/fb/uigamemodedescription/).              |
-| UIGameModeDescription([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIGameModeDescription](/vext/ref/fb/uigamemodedescription/). |
+Creates a new [UIGameModeDescription](/vext/ref/fb/uigamemodedescription) frostbite instance.
 
-## Properties
+### UIGameModeDescription {#constructor-1}
+> **UIGameModeDescription**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name         | Type                                       | Description |
-| ------------ | ------------------------------------------ | ----------- |
-| identifier   | string                                     |             |
-| name         | string                                     |             |
-| abbreviation | string                                     |             |
-| desc         | string                                     |             |
-| battlelogId  | number                                     |             |
-| texturePath  | string                                     |             |
-| variations   | [GameModeVariation](/vext/ref/fb/gamemodevariation/)\[\] |             |
-
-## Methods
-
-| Type                                           | Name            | Parameters                                     |
-| ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [UIGameModeDescription](/vext/ref/fb/uigamemodedescription/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UIGameModeDescription](/vext/ref/fb/uigamemodedescription/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UIGameModeDescription](/vext/ref/fb/uigamemodedescription) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UIGameModeDescription {#constructor-2}
+> **UIGameModeDescription**(other: [UIItemDescription](/vext/ref/fb/uiitemdescription))
+
+Casts an instance of type [UIItemDescription](/vext/ref/fb/uiitemdescription) to [UIGameModeDescription](/vext/ref/fb/uigamemodedescription). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIItemDescription](/vext/ref/fb/uiitemdescription) | The instance to cast to [UIGameModeDescription](/vext/ref/fb/uigamemodedescription). |
+
+### UIGameModeDescription {#constructor-3}
+> **UIGameModeDescription**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIGameModeDescription](/vext/ref/fb/uigamemodedescription). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UIGameModeDescription](/vext/ref/fb/uigamemodedescription). |
+
+## Properties
+### {{% prop-heading "identifier" %}}
+> **string**
+
+### {{% prop-heading "name" %}}
+> **string**
+
+### {{% prop-heading "abbreviation" %}}
+> **string**
+
+### {{% prop-heading "desc" %}}
+> **string**
+
+### {{% prop-heading "battlelogId" %}}
+> **int**
+
+### {{% prop-heading "texturePath" %}}
+> **string**
+
+### {{% prop-heading "variations" %}}
+> **[GameModeVariation](/vext/ref/fb/gamemodevariation)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIGameModeDescription](/vext/ref/fb/uigamemodedescription) type.
+

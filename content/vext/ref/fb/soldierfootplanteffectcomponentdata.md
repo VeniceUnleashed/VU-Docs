@@ -1,49 +1,110 @@
 ---
 title: SoldierFootplantEffectComponentData
 ---
-### Base Classes
 
-[ComponentData](/vext/ref/fb/componentdata/)
+Inherits from 
+[ComponentData](/vext/ref/fb/componentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SoldierFootplantEffectComponentData](#constructor-0)**() |
+| **[SoldierFootplantEffectComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SoldierFootplantEffectComponentData](#constructor-2)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[SoldierFootplantEffectComponentData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[SoldierFootplantEffectComponentData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[SoldierFootplantEffectComponentData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "footMaterialPair" >}} | [MaterialContainerPair](/vext/ref/fb/materialcontainerpair) \| nil |
+| {{< prop "heightOverGroundThreshold" >}} | float |
+| {{< prop "footVelocityThreshold" >}} | float |
+| {{< prop "lodDistance" >}} | float |
+| {{< prop "fullFootplantingEnabled" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SoldierFootplantEffectComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SoldierFootplantEffectComponentData {#constructor-0}
+> **SoldierFootplantEffectComponentData**()
 
-| Constructor                                                                                    | Description                                                                                                                                                   |
-| ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| SoldierFootplantEffectComponentData()                                                          | Create a new instance of this container type.                                                                                                                 |
-| SoldierFootplantEffectComponentData(SoldierFootplantEffectComponentData other)                 | Create a reference copy of an instance of the same type.                                                                                                      |
-| SoldierFootplantEffectComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [SoldierFootplantEffectComponentData](/vext/ref/fb/soldierfootplanteffectcomponentdata/).                      |
-| SoldierFootplantEffectComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [SoldierFootplantEffectComponentData](/vext/ref/fb/soldierfootplanteffectcomponentdata/).                    |
-| SoldierFootplantEffectComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [SoldierFootplantEffectComponentData](/vext/ref/fb/soldierfootplanteffectcomponentdata/).              |
-| SoldierFootplantEffectComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoldierFootplantEffectComponentData](/vext/ref/fb/soldierfootplanteffectcomponentdata/). |
+Creates a new [SoldierFootplantEffectComponentData](/vext/ref/fb/soldierfootplanteffectcomponentdata) frostbite instance.
 
-## Properties
+### SoldierFootplantEffectComponentData {#constructor-1}
+> **SoldierFootplantEffectComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                      | Type                                           | Description |
-| ------------------------- | ---------------------------------------------- | ----------- |
-| footMaterialPair          | [MaterialContainerPair](/vext/ref/fb/materialcontainerpair/) |             |
-| heightOverGroundThreshold | number                                         |             |
-| footVelocityThreshold     | number                                         |             |
-| lodDistance               | number                                         |             |
-| fullFootplantingEnabled   | bool                                           |             |
-
-## Methods
-
-| Type                                                                       | Name            | Parameters                                     |
-| -------------------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [SoldierFootplantEffectComponentData](/vext/ref/fb/soldierfootplanteffectcomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SoldierFootplantEffectComponentData](/vext/ref/fb/soldierfootplanteffectcomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SoldierFootplantEffectComponentData](/vext/ref/fb/soldierfootplanteffectcomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SoldierFootplantEffectComponentData {#constructor-2}
+> **SoldierFootplantEffectComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [SoldierFootplantEffectComponentData](/vext/ref/fb/soldierfootplanteffectcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [SoldierFootplantEffectComponentData](/vext/ref/fb/soldierfootplanteffectcomponentdata). |
+
+### SoldierFootplantEffectComponentData {#constructor-3}
+> **SoldierFootplantEffectComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [SoldierFootplantEffectComponentData](/vext/ref/fb/soldierfootplanteffectcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [SoldierFootplantEffectComponentData](/vext/ref/fb/soldierfootplanteffectcomponentdata). |
+
+### SoldierFootplantEffectComponentData {#constructor-4}
+> **SoldierFootplantEffectComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [SoldierFootplantEffectComponentData](/vext/ref/fb/soldierfootplanteffectcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [SoldierFootplantEffectComponentData](/vext/ref/fb/soldierfootplanteffectcomponentdata). |
+
+### SoldierFootplantEffectComponentData {#constructor-5}
+> **SoldierFootplantEffectComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoldierFootplantEffectComponentData](/vext/ref/fb/soldierfootplanteffectcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SoldierFootplantEffectComponentData](/vext/ref/fb/soldierfootplanteffectcomponentdata). |
+
+## Properties
+### {{% prop-heading "footMaterialPair" %}}
+> **[MaterialContainerPair](/vext/ref/fb/materialcontainerpair)** | **nil**
+
+### {{% prop-heading "heightOverGroundThreshold" %}}
+> **float**
+
+### {{% prop-heading "footVelocityThreshold" %}}
+> **float**
+
+### {{% prop-heading "lodDistance" %}}
+> **float**
+
+### {{% prop-heading "fullFootplantingEnabled" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SoldierFootplantEffectComponentData](/vext/ref/fb/soldierfootplanteffectcomponentdata) type.
+

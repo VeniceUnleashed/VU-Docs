@@ -1,15 +1,12 @@
 ---
 title: SpecialMovesPoseType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **SpecialMovesPoseType_None** | Value: **-1** |
+| **SpecialMovesPoseType_Stand** | Value: **0** |
+| **SpecialMovesPoseType_Crouch** | Value: **1** |
+| **SpecialMovesPoseType_Prone** | Value: **2** |
 
-| Name                         | Value | Description |
-| ---------------------------- | ----- | ----------- |
-| SpecialMovesPoseType\_None   | \-1   |             |
-| SpecialMovesPoseType\_Stand  | 0     |             |
-| SpecialMovesPoseType\_Crouch | 1     |             |
-| SpecialMovesPoseType\_Prone  | 2     |             |

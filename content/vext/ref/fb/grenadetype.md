@@ -1,15 +1,12 @@
 ---
 title: GrenadeType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **GrenadeType_NotSet** | Value: **0** |
+| **GrenadeType_Frag** | Value: **1** |
+| **GrenadeType_Smoke** | Value: **2** |
+| **GrenadeType_Flash** | Value: **3** |
 
-| Name                | Value | Description |
-| ------------------- | ----- | ----------- |
-| GrenadeType\_NotSet | 0     |             |
-| GrenadeType\_Frag   | 1     |             |
-| GrenadeType\_Smoke  | 2     |             |
-| GrenadeType\_Flash  | 3     |             |

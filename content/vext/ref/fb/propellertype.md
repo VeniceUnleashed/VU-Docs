@@ -1,13 +1,10 @@
 ---
 title: PropellerType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **PropellerType_Regular** | Value: **0** |
+| **PropellerType_Rotor** | Value: **1** |
 
-| Name                   | Value | Description |
-| ---------------------- | ----- | ----------- |
-| PropellerType\_Regular | 0     |             |
-| PropellerType\_Rotor   | 1     |             |

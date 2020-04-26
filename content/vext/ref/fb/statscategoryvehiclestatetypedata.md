@@ -1,44 +1,83 @@
 ---
 title: StatsCategoryVehicleStateTypeData
 ---
-### Base Classes
 
-[StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/)
+Inherits from 
+[StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[StatsCategoryVehicleStateTypeData](#constructor-0)**() |
+| **[StatsCategoryVehicleStateTypeData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[StatsCategoryVehicleStateTypeData](#constructor-2)**(other: [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata)) |
+| **[StatsCategoryVehicleStateTypeData](#constructor-3)**(other: [TreeNodeBase](/vext/ref/fb/treenodebase)) |
+| **[StatsCategoryVehicleStateTypeData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "states" >}} | [VehicleStateType](/vext/ref/fb/vehiclestatetype)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "StatsCategoryVehicleStateTypeData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### StatsCategoryVehicleStateTypeData {#constructor-0}
+> **StatsCategoryVehicleStateTypeData**()
 
-| Constructor                                                                                  | Description                                                                                                                                               |
-| -------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| StatsCategoryVehicleStateTypeData()                                                          | Create a new instance of this container type.                                                                                                             |
-| StatsCategoryVehicleStateTypeData(StatsCategoryVehicleStateTypeData other)                   | Create a reference copy of an instance of the same type.                                                                                                  |
-| StatsCategoryVehicleStateTypeData([StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/) other)      | Upcast an instance of type [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata/) to [StatsCategoryVehicleStateTypeData](/vext/ref/fb/statscategoryvehiclestatetypedata/).      |
-| StatsCategoryVehicleStateTypeData([TreeNodeBase](/vext/ref/fb/treenodebase/) other)                        | Upcast an instance of type [TreeNodeBase](/vext/ref/fb/treenodebase/) to [StatsCategoryVehicleStateTypeData](/vext/ref/fb/statscategoryvehiclestatetypedata/).                        |
-| StatsCategoryVehicleStateTypeData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StatsCategoryVehicleStateTypeData](/vext/ref/fb/statscategoryvehiclestatetypedata/). |
+Creates a new [StatsCategoryVehicleStateTypeData](/vext/ref/fb/statscategoryvehiclestatetypedata) frostbite instance.
 
-## Properties
+### StatsCategoryVehicleStateTypeData {#constructor-1}
+> **StatsCategoryVehicleStateTypeData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name   | Type                                     | Description |
-| ------ | ---------------------------------------- | ----------- |
-| states | [VehicleStateType](/vext/ref/fb/vehiclestatetype/)\[\] |             |
-
-## Methods
-
-| Type                                                                   | Name            | Parameters                                     |
-| ---------------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [StatsCategoryVehicleStateTypeData](/vext/ref/fb/statscategoryvehiclestatetypedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [StatsCategoryVehicleStateTypeData](/vext/ref/fb/statscategoryvehiclestatetypedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [StatsCategoryVehicleStateTypeData](/vext/ref/fb/statscategoryvehiclestatetypedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### StatsCategoryVehicleStateTypeData {#constructor-2}
+> **StatsCategoryVehicleStateTypeData**(other: [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata))
+
+Casts an instance of type [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata) to [StatsCategoryVehicleStateTypeData](/vext/ref/fb/statscategoryvehiclestatetypedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [StatsCategoryBaseData](/vext/ref/fb/statscategorybasedata) | The instance to cast to [StatsCategoryVehicleStateTypeData](/vext/ref/fb/statscategoryvehiclestatetypedata). |
+
+### StatsCategoryVehicleStateTypeData {#constructor-3}
+> **StatsCategoryVehicleStateTypeData**(other: [TreeNodeBase](/vext/ref/fb/treenodebase))
+
+Casts an instance of type [TreeNodeBase](/vext/ref/fb/treenodebase) to [StatsCategoryVehicleStateTypeData](/vext/ref/fb/statscategoryvehiclestatetypedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [TreeNodeBase](/vext/ref/fb/treenodebase) | The instance to cast to [StatsCategoryVehicleStateTypeData](/vext/ref/fb/statscategoryvehiclestatetypedata). |
+
+### StatsCategoryVehicleStateTypeData {#constructor-4}
+> **StatsCategoryVehicleStateTypeData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [StatsCategoryVehicleStateTypeData](/vext/ref/fb/statscategoryvehiclestatetypedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [StatsCategoryVehicleStateTypeData](/vext/ref/fb/statscategoryvehiclestatetypedata). |
+
+## Properties
+### {{% prop-heading "states" %}}
+> **[VehicleStateType](/vext/ref/fb/vehiclestatetype)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [StatsCategoryVehicleStateTypeData](/vext/ref/fb/statscategoryvehiclestatetypedata) type.
+

@@ -1,34 +1,65 @@
 ---
 title: GunSwayDispersionData
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[GunSwayDispersionData](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "minAngle" >}} | float |
+| {{< prop "maxAngle" >}} | float |
+| {{< prop "increasePerShot" >}} | float |
+| {{< prop "decreasePerSecond" >}} | float |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [GunSwayDispersionData](/vext/ref/fb/gunswaydispersiondata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "GunSwayDispersionData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### GunSwayDispersionData {#constructor-0}
+> **GunSwayDispersionData**()
 
-| Constructor                                        | Description                                              |
-| -------------------------------------------------- | -------------------------------------------------------- |
-| GunSwayDispersionData()                            | Create a new instance of this structure type.            |
-| GunSwayDispersionData(GunSwayDispersionData other) | Create a reference copy of a structure of the same type. |
+Creates a new [GunSwayDispersionData](/vext/ref/fb/gunswaydispersiondata) frostbite structure.
 
 ## Properties
+### {{% prop-heading "minAngle" %}}
+> **float**
 
-| Name              | Type   | Description |
-| ----------------- | ------ | ----------- |
-| minAngle          | number |             |
-| maxAngle          | number |             |
-| increasePerShot   | number |             |
-| decreasePerSecond | number |             |
+### {{% prop-heading "maxAngle" %}}
+> **float**
+
+### {{% prop-heading "increasePerShot" %}}
+> **float**
+
+### {{% prop-heading "decreasePerSecond" %}}
+> **float**
 
 ## Methods
-
-| Type                                           | Name            | Parameters |
-| ---------------------------------------------- | --------------- | ---------- |
-| [GunSwayDispersionData](/vext/ref/fb/gunswaydispersiondata/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [GunSwayDispersionData](/vext/ref/fb/gunswaydispersiondata)
 
-> [GunSwayDispersionData](/vext/ref/fb/gunswaydispersiondata/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[GunSwayDispersionData](/vext/ref/fb/gunswaydispersiondata)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [GunSwayDispersionData](/vext/ref/fb/gunswaydispersiondata) type.
+

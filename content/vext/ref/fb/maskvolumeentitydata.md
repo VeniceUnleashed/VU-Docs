@@ -1,41 +1,107 @@
 ---
 title: MaskVolumeEntityData
 ---
-### Base Classes
 
-[RenderVolumeEntityData](/vext/ref/fb/rendervolumeentitydata/)
+Inherits from 
+[RenderVolumeEntityData](/vext/ref/fb/rendervolumeentitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MaskVolumeEntityData](#constructor-0)**() |
+| **[MaskVolumeEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MaskVolumeEntityData](#constructor-2)**(other: [RenderVolumeEntityData](/vext/ref/fb/rendervolumeentitydata)) |
+| **[MaskVolumeEntityData](#constructor-3)**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata)) |
+| **[MaskVolumeEntityData](#constructor-4)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[MaskVolumeEntityData](#constructor-5)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[MaskVolumeEntityData](#constructor-6)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[MaskVolumeEntityData](#constructor-7)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MaskVolumeEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MaskVolumeEntityData {#constructor-0}
+> **MaskVolumeEntityData**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| MaskVolumeEntityData()                                                          | Create a new instance of this container type.                                                                                   |
-| MaskVolumeEntityData(MaskVolumeEntityData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| MaskVolumeEntityData([RenderVolumeEntityData](/vext/ref/fb/rendervolumeentitydata/) other)    | Upcast an instance of type [RenderVolumeEntityData](/vext/ref/fb/rendervolumeentitydata/) to [MaskVolumeEntityData](/vext/ref/fb/maskvolumeentitydata/).    |
-| MaskVolumeEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [MaskVolumeEntityData](/vext/ref/fb/maskvolumeentitydata/).              |
-| MaskVolumeEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [MaskVolumeEntityData](/vext/ref/fb/maskvolumeentitydata/).                            |
-| MaskVolumeEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [MaskVolumeEntityData](/vext/ref/fb/maskvolumeentitydata/).                    |
-| MaskVolumeEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [MaskVolumeEntityData](/vext/ref/fb/maskvolumeentitydata/).              |
-| MaskVolumeEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MaskVolumeEntityData](/vext/ref/fb/maskvolumeentitydata/). |
+Creates a new [MaskVolumeEntityData](/vext/ref/fb/maskvolumeentitydata) frostbite instance.
 
-## Methods
+### MaskVolumeEntityData {#constructor-1}
+> **MaskVolumeEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [MaskVolumeEntityData](/vext/ref/fb/maskvolumeentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MaskVolumeEntityData](/vext/ref/fb/maskvolumeentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MaskVolumeEntityData](/vext/ref/fb/maskvolumeentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MaskVolumeEntityData {#constructor-2}
+> **MaskVolumeEntityData**(other: [RenderVolumeEntityData](/vext/ref/fb/rendervolumeentitydata))
+
+Casts an instance of type [RenderVolumeEntityData](/vext/ref/fb/rendervolumeentitydata) to [MaskVolumeEntityData](/vext/ref/fb/maskvolumeentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [RenderVolumeEntityData](/vext/ref/fb/rendervolumeentitydata) | The instance to cast to [MaskVolumeEntityData](/vext/ref/fb/maskvolumeentitydata). |
+
+### MaskVolumeEntityData {#constructor-3}
+> **MaskVolumeEntityData**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata))
+
+Casts an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata) to [MaskVolumeEntityData](/vext/ref/fb/maskvolumeentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SpatialEntityData](/vext/ref/fb/spatialentitydata) | The instance to cast to [MaskVolumeEntityData](/vext/ref/fb/maskvolumeentitydata). |
+
+### MaskVolumeEntityData {#constructor-4}
+> **MaskVolumeEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [MaskVolumeEntityData](/vext/ref/fb/maskvolumeentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [MaskVolumeEntityData](/vext/ref/fb/maskvolumeentitydata). |
+
+### MaskVolumeEntityData {#constructor-5}
+> **MaskVolumeEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [MaskVolumeEntityData](/vext/ref/fb/maskvolumeentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [MaskVolumeEntityData](/vext/ref/fb/maskvolumeentitydata). |
+
+### MaskVolumeEntityData {#constructor-6}
+> **MaskVolumeEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [MaskVolumeEntityData](/vext/ref/fb/maskvolumeentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [MaskVolumeEntityData](/vext/ref/fb/maskvolumeentitydata). |
+
+### MaskVolumeEntityData {#constructor-7}
+> **MaskVolumeEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MaskVolumeEntityData](/vext/ref/fb/maskvolumeentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MaskVolumeEntityData](/vext/ref/fb/maskvolumeentitydata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MaskVolumeEntityData](/vext/ref/fb/maskvolumeentitydata) type.
+

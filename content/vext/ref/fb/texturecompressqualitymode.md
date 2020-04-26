@@ -1,14 +1,11 @@
 ---
 title: TextureCompressQualityMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **TextureCompressQualityMode_Default** | Value: **0** |
+| **TextureCompressQualityMode_Simple** | Value: **1** |
+| **TextureCompressQualityMode_HighQuality** | Value: **2** |
 
-| Name                                    | Value | Description |
-| --------------------------------------- | ----- | ----------- |
-| TextureCompressQualityMode\_Default     | 0     |             |
-| TextureCompressQualityMode\_Simple      | 1     |             |
-| TextureCompressQualityMode\_HighQuality | 2     |             |

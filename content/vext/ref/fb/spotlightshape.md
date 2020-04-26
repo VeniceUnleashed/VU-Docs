@@ -1,14 +1,11 @@
 ---
 title: SpotLightShape
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **SpotLightShape_Cone** | Value: **0** |
+| **SpotLightShape_Frustum** | Value: **1** |
+| **SpotLightShape_OrthoFrustum** | Value: **2** |
 
-| Name                         | Value | Description |
-| ---------------------------- | ----- | ----------- |
-| SpotLightShape\_Cone         | 0     |             |
-| SpotLightShape\_Frustum      | 1     |             |
-| SpotLightShape\_OrthoFrustum | 2     |             |

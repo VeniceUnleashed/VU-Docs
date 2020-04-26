@@ -1,46 +1,91 @@
 ---
 title: RotateVectorData
 ---
-### Base Classes
 
-[EvaluatorData](/vext/ref/fb/evaluatordata/)
+Inherits from 
+[EvaluatorData](/vext/ref/fb/evaluatordata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[RotateVectorData](#constructor-0)**() |
+| **[RotateVectorData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[RotateVectorData](#constructor-2)**(other: [EvaluatorData](/vext/ref/fb/evaluatordata)) |
+| **[RotateVectorData](#constructor-3)**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata)) |
+| **[RotateVectorData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "angle" >}} | float |
+| {{< prop "rotateWithinPlane" >}} | bool |
+| {{< prop "inputAffectsPhi" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "RotateVectorData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### RotateVectorData {#constructor-0}
+> **RotateVectorData**()
 
-| Constructor                                                                 | Description                                                                                                             |
-| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| RotateVectorData()                                                          | Create a new instance of this container type.                                                                           |
-| RotateVectorData(RotateVectorData other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| RotateVectorData([EvaluatorData](/vext/ref/fb/evaluatordata/) other)                      | Upcast an instance of type [EvaluatorData](/vext/ref/fb/evaluatordata/) to [RotateVectorData](/vext/ref/fb/rotatevectordata/).                      |
-| RotateVectorData([EmitterComponentData](/vext/ref/fb/emittercomponentdata/) other)        | Upcast an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata/) to [RotateVectorData](/vext/ref/fb/rotatevectordata/).        |
-| RotateVectorData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RotateVectorData](/vext/ref/fb/rotatevectordata/). |
+Creates a new [RotateVectorData](/vext/ref/fb/rotatevectordata) frostbite instance.
 
-## Properties
+### RotateVectorData {#constructor-1}
+> **RotateVectorData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name              | Type   | Description |
-| ----------------- | ------ | ----------- |
-| angle             | number |             |
-| rotateWithinPlane | bool   |             |
-| inputAffectsPhi   | bool   |             |
-
-## Methods
-
-| Type                                 | Name            | Parameters                                     |
-| ------------------------------------ | --------------- | ---------------------------------------------- |
-| [RotateVectorData](/vext/ref/fb/rotatevectordata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [RotateVectorData](/vext/ref/fb/rotatevectordata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [RotateVectorData](/vext/ref/fb/rotatevectordata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### RotateVectorData {#constructor-2}
+> **RotateVectorData**(other: [EvaluatorData](/vext/ref/fb/evaluatordata))
+
+Casts an instance of type [EvaluatorData](/vext/ref/fb/evaluatordata) to [RotateVectorData](/vext/ref/fb/rotatevectordata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EvaluatorData](/vext/ref/fb/evaluatordata) | The instance to cast to [RotateVectorData](/vext/ref/fb/rotatevectordata). |
+
+### RotateVectorData {#constructor-3}
+> **RotateVectorData**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata))
+
+Casts an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata) to [RotateVectorData](/vext/ref/fb/rotatevectordata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EmitterComponentData](/vext/ref/fb/emittercomponentdata) | The instance to cast to [RotateVectorData](/vext/ref/fb/rotatevectordata). |
+
+### RotateVectorData {#constructor-4}
+> **RotateVectorData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RotateVectorData](/vext/ref/fb/rotatevectordata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [RotateVectorData](/vext/ref/fb/rotatevectordata). |
+
+## Properties
+### {{% prop-heading "angle" %}}
+> **float**
+
+### {{% prop-heading "rotateWithinPlane" %}}
+> **bool**
+
+### {{% prop-heading "inputAffectsPhi" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [RotateVectorData](/vext/ref/fb/rotatevectordata) type.
+

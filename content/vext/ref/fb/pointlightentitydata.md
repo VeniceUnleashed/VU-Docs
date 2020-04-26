@@ -1,51 +1,132 @@
 ---
 title: PointLightEntityData
 ---
-### Base Classes
 
-[LocalLightEntityData](/vext/ref/fb/locallightentitydata/)
+Inherits from 
+[LocalLightEntityData](/vext/ref/fb/locallightentitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PointLightEntityData](#constructor-0)**() |
+| **[PointLightEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PointLightEntityData](#constructor-2)**(other: [LocalLightEntityData](/vext/ref/fb/locallightentitydata)) |
+| **[PointLightEntityData](#constructor-3)**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata)) |
+| **[PointLightEntityData](#constructor-4)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[PointLightEntityData](#constructor-5)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[PointLightEntityData](#constructor-6)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[PointLightEntityData](#constructor-7)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "width" >}} | float |
+| {{< prop "translucencyAmbient" >}} | float |
+| {{< prop "translucencyScale" >}} | float |
+| {{< prop "translucencyPower" >}} | int |
+| {{< prop "translucencyDistortion" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PointLightEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PointLightEntityData {#constructor-0}
+> **PointLightEntityData**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| PointLightEntityData()                                                          | Create a new instance of this container type.                                                                                   |
-| PointLightEntityData(PointLightEntityData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| PointLightEntityData([LocalLightEntityData](/vext/ref/fb/locallightentitydata/) other)        | Upcast an instance of type [LocalLightEntityData](/vext/ref/fb/locallightentitydata/) to [PointLightEntityData](/vext/ref/fb/pointlightentitydata/).        |
-| PointLightEntityData([SpatialEntityData](/vext/ref/fb/spatialentitydata/) other)              | Upcast an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata/) to [PointLightEntityData](/vext/ref/fb/pointlightentitydata/).              |
-| PointLightEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [PointLightEntityData](/vext/ref/fb/pointlightentitydata/).                            |
-| PointLightEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [PointLightEntityData](/vext/ref/fb/pointlightentitydata/).                    |
-| PointLightEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [PointLightEntityData](/vext/ref/fb/pointlightentitydata/).              |
-| PointLightEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PointLightEntityData](/vext/ref/fb/pointlightentitydata/). |
+Creates a new [PointLightEntityData](/vext/ref/fb/pointlightentitydata) frostbite instance.
 
-## Properties
+### PointLightEntityData {#constructor-1}
+> **PointLightEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                   | Type   | Description |
-| ---------------------- | ------ | ----------- |
-| width                  | number |             |
-| translucencyAmbient    | number |             |
-| translucencyScale      | number |             |
-| translucencyPower      | number |             |
-| translucencyDistortion | number |             |
-
-## Methods
-
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [PointLightEntityData](/vext/ref/fb/pointlightentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PointLightEntityData](/vext/ref/fb/pointlightentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PointLightEntityData](/vext/ref/fb/pointlightentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PointLightEntityData {#constructor-2}
+> **PointLightEntityData**(other: [LocalLightEntityData](/vext/ref/fb/locallightentitydata))
+
+Casts an instance of type [LocalLightEntityData](/vext/ref/fb/locallightentitydata) to [PointLightEntityData](/vext/ref/fb/pointlightentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [LocalLightEntityData](/vext/ref/fb/locallightentitydata) | The instance to cast to [PointLightEntityData](/vext/ref/fb/pointlightentitydata). |
+
+### PointLightEntityData {#constructor-3}
+> **PointLightEntityData**(other: [SpatialEntityData](/vext/ref/fb/spatialentitydata))
+
+Casts an instance of type [SpatialEntityData](/vext/ref/fb/spatialentitydata) to [PointLightEntityData](/vext/ref/fb/pointlightentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SpatialEntityData](/vext/ref/fb/spatialentitydata) | The instance to cast to [PointLightEntityData](/vext/ref/fb/pointlightentitydata). |
+
+### PointLightEntityData {#constructor-4}
+> **PointLightEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [PointLightEntityData](/vext/ref/fb/pointlightentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [PointLightEntityData](/vext/ref/fb/pointlightentitydata). |
+
+### PointLightEntityData {#constructor-5}
+> **PointLightEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [PointLightEntityData](/vext/ref/fb/pointlightentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [PointLightEntityData](/vext/ref/fb/pointlightentitydata). |
+
+### PointLightEntityData {#constructor-6}
+> **PointLightEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [PointLightEntityData](/vext/ref/fb/pointlightentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [PointLightEntityData](/vext/ref/fb/pointlightentitydata). |
+
+### PointLightEntityData {#constructor-7}
+> **PointLightEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PointLightEntityData](/vext/ref/fb/pointlightentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PointLightEntityData](/vext/ref/fb/pointlightentitydata). |
+
+## Properties
+### {{% prop-heading "width" %}}
+> **float**
+
+### {{% prop-heading "translucencyAmbient" %}}
+> **float**
+
+### {{% prop-heading "translucencyScale" %}}
+> **float**
+
+### {{% prop-heading "translucencyPower" %}}
+> **int**
+
+### {{% prop-heading "translucencyDistortion" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PointLightEntityData](/vext/ref/fb/pointlightentitydata) type.
+

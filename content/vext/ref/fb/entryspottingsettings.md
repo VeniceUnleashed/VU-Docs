@@ -1,15 +1,12 @@
 ---
 title: EntrySpottingSettings
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ESSDefault** | Value: **0** |
+| **ESSSendAndReceive** | Value: **1** |
+| **ESSReceive** | Value: **2** |
+| **ESSCount** | Value: **3** |
 
-| Name              | Value | Description |
-| ----------------- | ----- | ----------- |
-| ESSDefault        | 0     |             |
-| ESSSendAndReceive | 1     |             |
-| ESSReceive        | 2     |             |
-| ESSCount          | 3     |             |

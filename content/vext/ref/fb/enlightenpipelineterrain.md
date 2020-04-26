@@ -1,43 +1,72 @@
 ---
 title: EnlightenPipelineTerrain
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[EnlightenPipelineTerrain](#constructor-0)**() |
+| **[EnlightenPipelineTerrain](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[EnlightenPipelineTerrain](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[EnlightenPipelineTerrain](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "meshes" >}} | [EnlightenPipelineTerrainMesh](/vext/ref/fb/enlightenpipelineterrainmesh)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "EnlightenPipelineTerrain" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### EnlightenPipelineTerrain {#constructor-0}
+> **EnlightenPipelineTerrain**()
 
-| Constructor                                                                         | Description                                                                                                                             |
-| ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| EnlightenPipelineTerrain()                                                          | Create a new instance of this container type.                                                                                           |
-| EnlightenPipelineTerrain(EnlightenPipelineTerrain other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| EnlightenPipelineTerrain([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [EnlightenPipelineTerrain](/vext/ref/fb/enlightenpipelineterrain/).                                      |
-| EnlightenPipelineTerrain([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EnlightenPipelineTerrain](/vext/ref/fb/enlightenpipelineterrain/). |
+Creates a new [EnlightenPipelineTerrain](/vext/ref/fb/enlightenpipelineterrain) frostbite instance.
 
-## Properties
+### EnlightenPipelineTerrain {#constructor-1}
+> **EnlightenPipelineTerrain**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name   | Type                                                             | Description |
-| ------ | ---------------------------------------------------------------- | ----------- |
-| meshes | [EnlightenPipelineTerrainMesh](/vext/ref/fb/enlightenpipelineterrainmesh/)\[\] |             |
-
-## Methods
-
-| Type                                                 | Name            | Parameters                                     |
-| ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [EnlightenPipelineTerrain](/vext/ref/fb/enlightenpipelineterrain/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [EnlightenPipelineTerrain](/vext/ref/fb/enlightenpipelineterrain/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [EnlightenPipelineTerrain](/vext/ref/fb/enlightenpipelineterrain) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### EnlightenPipelineTerrain {#constructor-2}
+> **EnlightenPipelineTerrain**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [EnlightenPipelineTerrain](/vext/ref/fb/enlightenpipelineterrain). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [EnlightenPipelineTerrain](/vext/ref/fb/enlightenpipelineterrain). |
+
+### EnlightenPipelineTerrain {#constructor-3}
+> **EnlightenPipelineTerrain**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [EnlightenPipelineTerrain](/vext/ref/fb/enlightenpipelineterrain). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [EnlightenPipelineTerrain](/vext/ref/fb/enlightenpipelineterrain). |
+
+## Properties
+### {{% prop-heading "meshes" %}}
+> **[EnlightenPipelineTerrainMesh](/vext/ref/fb/enlightenpipelineterrainmesh)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [EnlightenPipelineTerrain](/vext/ref/fb/enlightenpipelineterrain) type.
+

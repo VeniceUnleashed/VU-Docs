@@ -1,18 +1,15 @@
 ---
 title: ShaderStageType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ShaderStageType_Vertex** | Value: **0** |
+| **ShaderStageType_Pixel** | Value: **1** |
+| **ShaderStageType_Hull** | Value: **2** |
+| **ShaderStageType_Domain** | Value: **3** |
+| **ShaderStageType_Geometry** | Value: **4** |
+| **ShaderStageType_Compute** | Value: **5** |
+| **ShaderStageTypeCount** | Value: **6** |
 
-| Name                      | Value | Description |
-| ------------------------- | ----- | ----------- |
-| ShaderStageType\_Vertex   | 0     |             |
-| ShaderStageType\_Pixel    | 1     |             |
-| ShaderStageType\_Hull     | 2     |             |
-| ShaderStageType\_Domain   | 3     |             |
-| ShaderStageType\_Geometry | 4     |             |
-| ShaderStageType\_Compute  | 5     |             |
-| ShaderStageTypeCount      | 6     |             |

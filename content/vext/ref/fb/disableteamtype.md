@@ -1,13 +1,10 @@
 ---
 title: DisableTeamType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **DttDisable** | Value: **0** |
+| **DttUnspawn** | Value: **1** |
 
-| Name       | Value | Description |
-| ---------- | ----- | ----------- |
-| DttDisable | 0     |             |
-| DttUnspawn | 1     |             |

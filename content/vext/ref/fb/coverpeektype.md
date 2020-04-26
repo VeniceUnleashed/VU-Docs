@@ -1,14 +1,11 @@
 ---
 title: CoverPeekType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **CoverPeekType_Out** | Value: **0** |
+| **CoverPeekType_Over** | Value: **1** |
+| **CoverPeekType_None** | Value: **2** |
 
-| Name                | Value | Description |
-| ------------------- | ----- | ----------- |
-| CoverPeekType\_Out  | 0     |             |
-| CoverPeekType\_Over | 1     |             |
-| CoverPeekType\_None | 2     |             |

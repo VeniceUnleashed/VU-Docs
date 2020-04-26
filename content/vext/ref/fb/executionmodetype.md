@@ -1,14 +1,11 @@
 ---
 title: ExecutionModeType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ExecutionMode_Play** | Value: **0** |
+| **ExecutionMode_GameView** | Value: **1** |
+| **ExecutionMode_PlayFromHere** | Value: **2** |
 
-| Name                        | Value | Description |
-| --------------------------- | ----- | ----------- |
-| ExecutionMode\_Play         | 0     |             |
-| ExecutionMode\_GameView     | 1     |             |
-| ExecutionMode\_PlayFromHere | 2     |             |

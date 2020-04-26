@@ -1,45 +1,94 @@
 ---
 title: RoundOverEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[RoundOverEntityData](#constructor-0)**() |
+| **[RoundOverEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[RoundOverEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[RoundOverEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[RoundOverEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[RoundOverEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "team" >}} | [TeamId](/vext/ref/fb/teamid) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "RoundOverEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### RoundOverEntityData {#constructor-0}
+> **RoundOverEntityData**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| RoundOverEntityData()                                                          | Create a new instance of this container type.                                                                                 |
-| RoundOverEntityData(RoundOverEntityData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| RoundOverEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [RoundOverEntityData](/vext/ref/fb/roundoverentitydata/).                            |
-| RoundOverEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [RoundOverEntityData](/vext/ref/fb/roundoverentitydata/).                    |
-| RoundOverEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [RoundOverEntityData](/vext/ref/fb/roundoverentitydata/).              |
-| RoundOverEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RoundOverEntityData](/vext/ref/fb/roundoverentitydata/). |
+Creates a new [RoundOverEntityData](/vext/ref/fb/roundoverentitydata) frostbite instance.
 
-## Properties
+### RoundOverEntityData {#constructor-1}
+> **RoundOverEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name | Type             | Description |
-| ---- | ---------------- | ----------- |
-| team | [TeamId](/vext/ref/fb/teamid/) |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [RoundOverEntityData](/vext/ref/fb/roundoverentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [RoundOverEntityData](/vext/ref/fb/roundoverentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [RoundOverEntityData](/vext/ref/fb/roundoverentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### RoundOverEntityData {#constructor-2}
+> **RoundOverEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [RoundOverEntityData](/vext/ref/fb/roundoverentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [RoundOverEntityData](/vext/ref/fb/roundoverentitydata). |
+
+### RoundOverEntityData {#constructor-3}
+> **RoundOverEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [RoundOverEntityData](/vext/ref/fb/roundoverentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [RoundOverEntityData](/vext/ref/fb/roundoverentitydata). |
+
+### RoundOverEntityData {#constructor-4}
+> **RoundOverEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [RoundOverEntityData](/vext/ref/fb/roundoverentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [RoundOverEntityData](/vext/ref/fb/roundoverentitydata). |
+
+### RoundOverEntityData {#constructor-5}
+> **RoundOverEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RoundOverEntityData](/vext/ref/fb/roundoverentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [RoundOverEntityData](/vext/ref/fb/roundoverentitydata). |
+
+## Properties
+### {{% prop-heading "team" %}}
+> **[TeamId](/vext/ref/fb/teamid)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [RoundOverEntityData](/vext/ref/fb/roundoverentitydata) type.
+

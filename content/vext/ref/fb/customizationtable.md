@@ -1,42 +1,61 @@
 ---
 title: CustomizationTable
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[CustomizationTable](#constructor-0)**() |
+| **[CustomizationTable](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[CustomizationTable](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "unlockParts" >}} | [CustomizationUnlockParts](/vext/ref/fb/customizationunlockparts)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "CustomizationTable" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### CustomizationTable {#constructor-0}
+> **CustomizationTable**()
 
-| Constructor                                                                   | Description                                                                                                                 |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| CustomizationTable()                                                          | Create a new instance of this container type.                                                                               |
-| CustomizationTable(CustomizationTable other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| CustomizationTable([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CustomizationTable](/vext/ref/fb/customizationtable/). |
+Creates a new [CustomizationTable](/vext/ref/fb/customizationtable) frostbite instance.
 
-## Properties
+### CustomizationTable {#constructor-1}
+> **CustomizationTable**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name        | Type                                                     | Description |
-| ----------- | -------------------------------------------------------- | ----------- |
-| unlockParts | [CustomizationUnlockParts](/vext/ref/fb/customizationunlockparts/)\[\] |             |
-
-## Methods
-
-| Type                                     | Name            | Parameters                                     |
-| ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [CustomizationTable](/vext/ref/fb/customizationtable/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [CustomizationTable](/vext/ref/fb/customizationtable/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [CustomizationTable](/vext/ref/fb/customizationtable) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### CustomizationTable {#constructor-2}
+> **CustomizationTable**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [CustomizationTable](/vext/ref/fb/customizationtable). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [CustomizationTable](/vext/ref/fb/customizationtable). |
+
+## Properties
+### {{% prop-heading "unlockParts" %}}
+> **[CustomizationUnlockParts](/vext/ref/fb/customizationunlockparts)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [CustomizationTable](/vext/ref/fb/customizationtable) type.
+

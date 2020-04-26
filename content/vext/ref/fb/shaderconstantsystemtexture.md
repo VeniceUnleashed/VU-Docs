@@ -1,13 +1,10 @@
 ---
 title: ShaderConstantSystemTexture
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ShaderConstantSystemTexture_DepthBufferTexture** | Value: **0** |
+| **ShaderConstantSystemTextureCount** | Value: **1** |
 
-| Name                                            | Value | Description |
-| ----------------------------------------------- | ----- | ----------- |
-| ShaderConstantSystemTexture\_DepthBufferTexture | 0     |             |
-| ShaderConstantSystemTextureCount                | 1     |             |

@@ -1,41 +1,107 @@
 ---
 title: HoldGroundOrderEntityData
 ---
-### Base Classes
 
-[BFOrderEntityData](/vext/ref/fb/bforderentitydata/)
+Inherits from 
+[BFOrderEntityData](/vext/ref/fb/bforderentitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[HoldGroundOrderEntityData](#constructor-0)**() |
+| **[HoldGroundOrderEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[HoldGroundOrderEntityData](#constructor-2)**(other: [BFOrderEntityData](/vext/ref/fb/bforderentitydata)) |
+| **[HoldGroundOrderEntityData](#constructor-3)**(other: [OrderEntityData](/vext/ref/fb/orderentitydata)) |
+| **[HoldGroundOrderEntityData](#constructor-4)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[HoldGroundOrderEntityData](#constructor-5)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[HoldGroundOrderEntityData](#constructor-6)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[HoldGroundOrderEntityData](#constructor-7)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "HoldGroundOrderEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### HoldGroundOrderEntityData {#constructor-0}
+> **HoldGroundOrderEntityData**()
 
-| Constructor                                                                          | Description                                                                                                                               |
-| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| HoldGroundOrderEntityData()                                                          | Create a new instance of this container type.                                                                                             |
-| HoldGroundOrderEntityData(HoldGroundOrderEntityData other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| HoldGroundOrderEntityData([BFOrderEntityData](/vext/ref/fb/bforderentitydata/) other)              | Upcast an instance of type [BFOrderEntityData](/vext/ref/fb/bforderentitydata/) to [HoldGroundOrderEntityData](/vext/ref/fb/holdgroundorderentitydata/).              |
-| HoldGroundOrderEntityData([OrderEntityData](/vext/ref/fb/orderentitydata/) other)                  | Upcast an instance of type [OrderEntityData](/vext/ref/fb/orderentitydata/) to [HoldGroundOrderEntityData](/vext/ref/fb/holdgroundorderentitydata/).                  |
-| HoldGroundOrderEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [HoldGroundOrderEntityData](/vext/ref/fb/holdgroundorderentitydata/).                            |
-| HoldGroundOrderEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [HoldGroundOrderEntityData](/vext/ref/fb/holdgroundorderentitydata/).                    |
-| HoldGroundOrderEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [HoldGroundOrderEntityData](/vext/ref/fb/holdgroundorderentitydata/).              |
-| HoldGroundOrderEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [HoldGroundOrderEntityData](/vext/ref/fb/holdgroundorderentitydata/). |
+Creates a new [HoldGroundOrderEntityData](/vext/ref/fb/holdgroundorderentitydata) frostbite instance.
 
-## Methods
+### HoldGroundOrderEntityData {#constructor-1}
+> **HoldGroundOrderEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                                   | Name            | Parameters                                     |
-| ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [HoldGroundOrderEntityData](/vext/ref/fb/holdgroundorderentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [HoldGroundOrderEntityData](/vext/ref/fb/holdgroundorderentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [HoldGroundOrderEntityData](/vext/ref/fb/holdgroundorderentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### HoldGroundOrderEntityData {#constructor-2}
+> **HoldGroundOrderEntityData**(other: [BFOrderEntityData](/vext/ref/fb/bforderentitydata))
+
+Casts an instance of type [BFOrderEntityData](/vext/ref/fb/bforderentitydata) to [HoldGroundOrderEntityData](/vext/ref/fb/holdgroundorderentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [BFOrderEntityData](/vext/ref/fb/bforderentitydata) | The instance to cast to [HoldGroundOrderEntityData](/vext/ref/fb/holdgroundorderentitydata). |
+
+### HoldGroundOrderEntityData {#constructor-3}
+> **HoldGroundOrderEntityData**(other: [OrderEntityData](/vext/ref/fb/orderentitydata))
+
+Casts an instance of type [OrderEntityData](/vext/ref/fb/orderentitydata) to [HoldGroundOrderEntityData](/vext/ref/fb/holdgroundorderentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [OrderEntityData](/vext/ref/fb/orderentitydata) | The instance to cast to [HoldGroundOrderEntityData](/vext/ref/fb/holdgroundorderentitydata). |
+
+### HoldGroundOrderEntityData {#constructor-4}
+> **HoldGroundOrderEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [HoldGroundOrderEntityData](/vext/ref/fb/holdgroundorderentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [HoldGroundOrderEntityData](/vext/ref/fb/holdgroundorderentitydata). |
+
+### HoldGroundOrderEntityData {#constructor-5}
+> **HoldGroundOrderEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [HoldGroundOrderEntityData](/vext/ref/fb/holdgroundorderentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [HoldGroundOrderEntityData](/vext/ref/fb/holdgroundorderentitydata). |
+
+### HoldGroundOrderEntityData {#constructor-6}
+> **HoldGroundOrderEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [HoldGroundOrderEntityData](/vext/ref/fb/holdgroundorderentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [HoldGroundOrderEntityData](/vext/ref/fb/holdgroundorderentitydata). |
+
+### HoldGroundOrderEntityData {#constructor-7}
+> **HoldGroundOrderEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [HoldGroundOrderEntityData](/vext/ref/fb/holdgroundorderentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [HoldGroundOrderEntityData](/vext/ref/fb/holdgroundorderentitydata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [HoldGroundOrderEntityData](/vext/ref/fb/holdgroundorderentitydata) type.
+

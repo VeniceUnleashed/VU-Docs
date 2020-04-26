@@ -1,44 +1,76 @@
 ---
 title: RagdollAsset
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[RagdollAsset](#constructor-0)**() |
+| **[RagdollAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[RagdollAsset](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[RagdollAsset](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "materialPair" >}} | [MaterialContainerPair](/vext/ref/fb/materialcontainerpair) \| nil |
+| {{< prop "useServerRagdoll" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "RagdollAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### RagdollAsset {#constructor-0}
+> **RagdollAsset**()
 
-| Constructor                                                             | Description                                                                                                     |
-| ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| RagdollAsset()                                                          | Create a new instance of this container type.                                                                   |
-| RagdollAsset(RagdollAsset other)                                        | Create a reference copy of an instance of the same type.                                                        |
-| RagdollAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [RagdollAsset](/vext/ref/fb/ragdollasset/).                                      |
-| RagdollAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RagdollAsset](/vext/ref/fb/ragdollasset/). |
+Creates a new [RagdollAsset](/vext/ref/fb/ragdollasset) frostbite instance.
 
-## Properties
+### RagdollAsset {#constructor-1}
+> **RagdollAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name             | Type                                           | Description |
-| ---------------- | ---------------------------------------------- | ----------- |
-| materialPair     | [MaterialContainerPair](/vext/ref/fb/materialcontainerpair/) |             |
-| useServerRagdoll | bool                                           |             |
-
-## Methods
-
-| Type                         | Name            | Parameters                                     |
-| ---------------------------- | --------------- | ---------------------------------------------- |
-| [RagdollAsset](/vext/ref/fb/ragdollasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [RagdollAsset](/vext/ref/fb/ragdollasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [RagdollAsset](/vext/ref/fb/ragdollasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### RagdollAsset {#constructor-2}
+> **RagdollAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [RagdollAsset](/vext/ref/fb/ragdollasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [RagdollAsset](/vext/ref/fb/ragdollasset). |
+
+### RagdollAsset {#constructor-3}
+> **RagdollAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RagdollAsset](/vext/ref/fb/ragdollasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [RagdollAsset](/vext/ref/fb/ragdollasset). |
+
+## Properties
+### {{% prop-heading "materialPair" %}}
+> **[MaterialContainerPair](/vext/ref/fb/materialcontainerpair)** | **nil**
+
+### {{% prop-heading "useServerRagdoll" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [RagdollAsset](/vext/ref/fb/ragdollasset) type.
+

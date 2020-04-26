@@ -1,16 +1,13 @@
 ---
 title: CoverExitStyle
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **CoverExitStyle_ExitCover** | Value: **0** |
+| **CoverExitStyle_VaultFromCrouchCover** | Value: **1** |
+| **CoverExitStyle_StrafeFire** | Value: **2** |
+| **CoverExitStyle_Surprised** | Value: **3** |
+| **CoverExitStyle_Sprint** | Value: **4** |
 
-| Name                                 | Value | Description |
-| ------------------------------------ | ----- | ----------- |
-| CoverExitStyle\_ExitCover            | 0     |             |
-| CoverExitStyle\_VaultFromCrouchCover | 1     |             |
-| CoverExitStyle\_StrafeFire           | 2     |             |
-| CoverExitStyle\_Surprised            | 3     |             |
-| CoverExitStyle\_Sprint               | 4     |             |

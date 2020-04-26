@@ -1,38 +1,74 @@
 ---
 title: AssemblyDescriptorData
 ---
-### Base Classes
 
-[InterfaceDescriptorData](/vext/ref/fb/interfacedescriptordata/)
+Inherits from 
+[InterfaceDescriptorData](/vext/ref/fb/interfacedescriptordata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AssemblyDescriptorData](#constructor-0)**() |
+| **[AssemblyDescriptorData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[AssemblyDescriptorData](#constructor-2)**(other: [InterfaceDescriptorData](/vext/ref/fb/interfacedescriptordata)) |
+| **[AssemblyDescriptorData](#constructor-3)**(other: [DynamicDataContainer](/vext/ref/fb/dynamicdatacontainer)) |
+| **[AssemblyDescriptorData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AssemblyDescriptorData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AssemblyDescriptorData {#constructor-0}
+> **AssemblyDescriptorData**()
 
-| Constructor                                                                       | Description                                                                                                                         |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| AssemblyDescriptorData()                                                          | Create a new instance of this container type.                                                                                       |
-| AssemblyDescriptorData(AssemblyDescriptorData other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| AssemblyDescriptorData([InterfaceDescriptorData](/vext/ref/fb/interfacedescriptordata/) other)  | Upcast an instance of type [InterfaceDescriptorData](/vext/ref/fb/interfacedescriptordata/) to [AssemblyDescriptorData](/vext/ref/fb/assemblydescriptordata/).  |
-| AssemblyDescriptorData([DynamicDataContainer](/vext/ref/fb/dynamicdatacontainer/) other)        | Upcast an instance of type [DynamicDataContainer](/vext/ref/fb/dynamicdatacontainer/) to [AssemblyDescriptorData](/vext/ref/fb/assemblydescriptordata/).        |
-| AssemblyDescriptorData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AssemblyDescriptorData](/vext/ref/fb/assemblydescriptordata/). |
+Creates a new [AssemblyDescriptorData](/vext/ref/fb/assemblydescriptordata) frostbite instance.
 
-## Methods
+### AssemblyDescriptorData {#constructor-1}
+> **AssemblyDescriptorData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [AssemblyDescriptorData](/vext/ref/fb/assemblydescriptordata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [AssemblyDescriptorData](/vext/ref/fb/assemblydescriptordata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [AssemblyDescriptorData](/vext/ref/fb/assemblydescriptordata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### AssemblyDescriptorData {#constructor-2}
+> **AssemblyDescriptorData**(other: [InterfaceDescriptorData](/vext/ref/fb/interfacedescriptordata))
+
+Casts an instance of type [InterfaceDescriptorData](/vext/ref/fb/interfacedescriptordata) to [AssemblyDescriptorData](/vext/ref/fb/assemblydescriptordata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [InterfaceDescriptorData](/vext/ref/fb/interfacedescriptordata) | The instance to cast to [AssemblyDescriptorData](/vext/ref/fb/assemblydescriptordata). |
+
+### AssemblyDescriptorData {#constructor-3}
+> **AssemblyDescriptorData**(other: [DynamicDataContainer](/vext/ref/fb/dynamicdatacontainer))
+
+Casts an instance of type [DynamicDataContainer](/vext/ref/fb/dynamicdatacontainer) to [AssemblyDescriptorData](/vext/ref/fb/assemblydescriptordata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DynamicDataContainer](/vext/ref/fb/dynamicdatacontainer) | The instance to cast to [AssemblyDescriptorData](/vext/ref/fb/assemblydescriptordata). |
+
+### AssemblyDescriptorData {#constructor-4}
+> **AssemblyDescriptorData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AssemblyDescriptorData](/vext/ref/fb/assemblydescriptordata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [AssemblyDescriptorData](/vext/ref/fb/assemblydescriptordata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AssemblyDescriptorData](/vext/ref/fb/assemblydescriptordata) type.
+

@@ -1,37 +1,63 @@
 ---
 title: DestructionDepthTreeAsset
 ---
-### Base Classes
 
-[RasterTreeAsset](/vext/ref/fb/rastertreeasset/)
+Inherits from 
+[RasterTreeAsset](/vext/ref/fb/rastertreeasset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[DestructionDepthTreeAsset](#constructor-0)**() |
+| **[DestructionDepthTreeAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[DestructionDepthTreeAsset](#constructor-2)**(other: [RasterTreeAsset](/vext/ref/fb/rastertreeasset)) |
+| **[DestructionDepthTreeAsset](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "DestructionDepthTreeAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### DestructionDepthTreeAsset {#constructor-0}
+> **DestructionDepthTreeAsset**()
 
-| Constructor                                                                          | Description                                                                                                                               |
-| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| DestructionDepthTreeAsset()                                                          | Create a new instance of this container type.                                                                                             |
-| DestructionDepthTreeAsset(DestructionDepthTreeAsset other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| DestructionDepthTreeAsset([RasterTreeAsset](/vext/ref/fb/rastertreeasset/) other)                  | Upcast an instance of type [RasterTreeAsset](/vext/ref/fb/rastertreeasset/) to [DestructionDepthTreeAsset](/vext/ref/fb/destructiondepthtreeasset/).                  |
-| DestructionDepthTreeAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DestructionDepthTreeAsset](/vext/ref/fb/destructiondepthtreeasset/). |
+Creates a new [DestructionDepthTreeAsset](/vext/ref/fb/destructiondepthtreeasset) frostbite instance.
 
-## Methods
+### DestructionDepthTreeAsset {#constructor-1}
+> **DestructionDepthTreeAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                                   | Name            | Parameters                                     |
-| ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [DestructionDepthTreeAsset](/vext/ref/fb/destructiondepthtreeasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [DestructionDepthTreeAsset](/vext/ref/fb/destructiondepthtreeasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [DestructionDepthTreeAsset](/vext/ref/fb/destructiondepthtreeasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### DestructionDepthTreeAsset {#constructor-2}
+> **DestructionDepthTreeAsset**(other: [RasterTreeAsset](/vext/ref/fb/rastertreeasset))
+
+Casts an instance of type [RasterTreeAsset](/vext/ref/fb/rastertreeasset) to [DestructionDepthTreeAsset](/vext/ref/fb/destructiondepthtreeasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [RasterTreeAsset](/vext/ref/fb/rastertreeasset) | The instance to cast to [DestructionDepthTreeAsset](/vext/ref/fb/destructiondepthtreeasset). |
+
+### DestructionDepthTreeAsset {#constructor-3}
+> **DestructionDepthTreeAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DestructionDepthTreeAsset](/vext/ref/fb/destructiondepthtreeasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DestructionDepthTreeAsset](/vext/ref/fb/destructiondepthtreeasset). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [DestructionDepthTreeAsset](/vext/ref/fb/destructiondepthtreeasset) type.
+

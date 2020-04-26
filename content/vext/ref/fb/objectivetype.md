@@ -1,14 +1,11 @@
 ---
 title: ObjectiveType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **OTPrimary** | Value: **0** |
+| **OTTactical** | Value: **1** |
+| **OTChildMisson** | Value: **2** |
 
-| Name          | Value | Description |
-| ------------- | ----- | ----------- |
-| OTPrimary     | 0     |             |
-| OTTactical    | 1     |             |
-| OTChildMisson | 2     |             |

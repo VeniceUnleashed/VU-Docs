@@ -1,14 +1,11 @@
 ---
 title: ShaderTextureCoordType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **ShaderTextureCoordType_Unknown** | Value: **0** |
+| **ShaderTextureCoordType_VertexElement** | Value: **1** |
+| **ShaderTextureCoordType_WorldPos** | Value: **2** |
 
-| Name                                  | Value | Description |
-| ------------------------------------- | ----- | ----------- |
-| ShaderTextureCoordType\_Unknown       | 0     |             |
-| ShaderTextureCoordType\_VertexElement | 1     |             |
-| ShaderTextureCoordType\_WorldPos      | 2     |             |

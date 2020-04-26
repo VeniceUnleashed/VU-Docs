@@ -1,55 +1,113 @@
 ---
 title: OutdoorLightEffectState
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[OutdoorLightEffectState](#constructor-0)**() |
+| **[OutdoorLightEffectState](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[OutdoorLightEffectState](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "skyColor" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "groundColor" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "sunColor" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "cloudShadowSpeed" >}} | [Vec2](/vext/ref/shared/class/vec2) |
+| {{< prop "sunRotationX" >}} | float |
+| {{< prop "sunRotationY" >}} | float |
+| {{< prop "skyLightAngleFactor" >}} | float |
+| {{< prop "sunShadowHeightScale" >}} | float |
+| {{< prop "cloudShadowTexture" >}} | [TextureAsset](/vext/ref/fb/textureasset) \| nil |
+| {{< prop "cloudShadowSize" >}} | float |
+| {{< prop "cloudShadowExponent" >}} | float |
+| {{< prop "cloudShadowCoverage" >}} | float |
+| {{< prop "cloudShadowEnable" >}} | bool |
+| {{< prop "enable" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "OutdoorLightEffectState" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### OutdoorLightEffectState {#constructor-0}
+> **OutdoorLightEffectState**()
 
-| Constructor                                                                        | Description                                                                                                                           |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| OutdoorLightEffectState()                                                          | Create a new instance of this container type.                                                                                         |
-| OutdoorLightEffectState(OutdoorLightEffectState other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| OutdoorLightEffectState([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [OutdoorLightEffectState](/vext/ref/fb/outdoorlighteffectstate/). |
+Creates a new [OutdoorLightEffectState](/vext/ref/fb/outdoorlighteffectstate) frostbite instance.
 
-## Properties
+### OutdoorLightEffectState {#constructor-1}
+> **OutdoorLightEffectState**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                 | Type                              | Description |
-| -------------------- | --------------------------------- | ----------- |
-| skyColor             | [Vec3](/vext/ref/shared/class/vec3) |             |
-| groundColor          | [Vec3](/vext/ref/shared/class/vec3) |             |
-| sunColor             | [Vec3](/vext/ref/shared/class/vec3) |             |
-| cloudShadowSpeed     | [Vec2](/vext/ref/shared/class/vec2) |             |
-| sunRotationX         | number                            |             |
-| sunRotationY         | number                            |             |
-| skyLightAngleFactor  | number                            |             |
-| sunShadowHeightScale | number                            |             |
-| cloudShadowTexture   | [TextureAsset](/vext/ref/fb/textureasset/)      |             |
-| cloudShadowSize      | number                            |             |
-| cloudShadowExponent  | number                            |             |
-| cloudShadowCoverage  | number                            |             |
-| cloudShadowEnable    | bool                              |             |
-| enable               | bool                              |             |
-
-## Methods
-
-| Type                                               | Name            | Parameters                                     |
-| -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [OutdoorLightEffectState](/vext/ref/fb/outdoorlighteffectstate/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [OutdoorLightEffectState](/vext/ref/fb/outdoorlighteffectstate/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [OutdoorLightEffectState](/vext/ref/fb/outdoorlighteffectstate) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### OutdoorLightEffectState {#constructor-2}
+> **OutdoorLightEffectState**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [OutdoorLightEffectState](/vext/ref/fb/outdoorlighteffectstate). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [OutdoorLightEffectState](/vext/ref/fb/outdoorlighteffectstate). |
+
+## Properties
+### {{% prop-heading "skyColor" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "groundColor" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "sunColor" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "cloudShadowSpeed" %}}
+> **[Vec2](/vext/ref/shared/class/vec2)**
+
+### {{% prop-heading "sunRotationX" %}}
+> **float**
+
+### {{% prop-heading "sunRotationY" %}}
+> **float**
+
+### {{% prop-heading "skyLightAngleFactor" %}}
+> **float**
+
+### {{% prop-heading "sunShadowHeightScale" %}}
+> **float**
+
+### {{% prop-heading "cloudShadowTexture" %}}
+> **[TextureAsset](/vext/ref/fb/textureasset)** | **nil**
+
+### {{% prop-heading "cloudShadowSize" %}}
+> **float**
+
+### {{% prop-heading "cloudShadowExponent" %}}
+> **float**
+
+### {{% prop-heading "cloudShadowCoverage" %}}
+> **float**
+
+### {{% prop-heading "cloudShadowEnable" %}}
+> **bool**
+
+### {{% prop-heading "enable" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [OutdoorLightEffectState](/vext/ref/fb/outdoorlighteffectstate) type.
+

@@ -1,14 +1,11 @@
 ---
 title: MatchmakingPeer2PeerMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **MatchmakingPeer2PeerMode_FullMesh** | Value: **0** |
+| **MatchmakingPeer2PeerMode_PartialMesh** | Value: **1** |
+| **MatchmakingPeer2PeerMode_DirtyCastFailover** | Value: **2** |
 
-| Name                                        | Value | Description |
-| ------------------------------------------- | ----- | ----------- |
-| MatchmakingPeer2PeerMode\_FullMesh          | 0     |             |
-| MatchmakingPeer2PeerMode\_PartialMesh       | 1     |             |
-| MatchmakingPeer2PeerMode\_DirtyCastFailover | 2     |             |

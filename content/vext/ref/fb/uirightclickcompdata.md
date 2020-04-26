@@ -1,38 +1,74 @@
 ---
 title: UIRightClickCompData
 ---
-### Base Classes
 
-[UIComponentData](/vext/ref/fb/uicomponentdata/)
+Inherits from 
+[UIComponentData](/vext/ref/fb/uicomponentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIRightClickCompData](#constructor-0)**() |
+| **[UIRightClickCompData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UIRightClickCompData](#constructor-2)**(other: [UIComponentData](/vext/ref/fb/uicomponentdata)) |
+| **[UIRightClickCompData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[UIRightClickCompData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIRightClickCompData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIRightClickCompData {#constructor-0}
+> **UIRightClickCompData**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| UIRightClickCompData()                                                          | Create a new instance of this container type.                                                                                   |
-| UIRightClickCompData(UIRightClickCompData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| UIRightClickCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UIRightClickCompData](/vext/ref/fb/uirightclickcompdata/).                  |
-| UIRightClickCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UIRightClickCompData](/vext/ref/fb/uirightclickcompdata/).                                      |
-| UIRightClickCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIRightClickCompData](/vext/ref/fb/uirightclickcompdata/). |
+Creates a new [UIRightClickCompData](/vext/ref/fb/uirightclickcompdata) frostbite instance.
 
-## Methods
+### UIRightClickCompData {#constructor-1}
+> **UIRightClickCompData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [UIRightClickCompData](/vext/ref/fb/uirightclickcompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UIRightClickCompData](/vext/ref/fb/uirightclickcompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UIRightClickCompData](/vext/ref/fb/uirightclickcompdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UIRightClickCompData {#constructor-2}
+> **UIRightClickCompData**(other: [UIComponentData](/vext/ref/fb/uicomponentdata))
+
+Casts an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata) to [UIRightClickCompData](/vext/ref/fb/uirightclickcompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIComponentData](/vext/ref/fb/uicomponentdata) | The instance to cast to [UIRightClickCompData](/vext/ref/fb/uirightclickcompdata). |
+
+### UIRightClickCompData {#constructor-3}
+> **UIRightClickCompData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [UIRightClickCompData](/vext/ref/fb/uirightclickcompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [UIRightClickCompData](/vext/ref/fb/uirightclickcompdata). |
+
+### UIRightClickCompData {#constructor-4}
+> **UIRightClickCompData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIRightClickCompData](/vext/ref/fb/uirightclickcompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UIRightClickCompData](/vext/ref/fb/uirightclickcompdata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIRightClickCompData](/vext/ref/fb/uirightclickcompdata) type.
+

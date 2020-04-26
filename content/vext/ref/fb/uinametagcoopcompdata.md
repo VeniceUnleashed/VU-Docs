@@ -1,40 +1,96 @@
 ---
 title: UINametagCoopCompData
 ---
-### Base Classes
 
-[UINametagCompData](/vext/ref/fb/uinametagcompdata/)
+Inherits from 
+[UINametagCompData](/vext/ref/fb/uinametagcompdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UINametagCoopCompData](#constructor-0)**() |
+| **[UINametagCoopCompData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UINametagCoopCompData](#constructor-2)**(other: [UINametagCompData](/vext/ref/fb/uinametagcompdata)) |
+| **[UINametagCoopCompData](#constructor-3)**(other: [UI3dIconCompData](/vext/ref/fb/ui3diconcompdata)) |
+| **[UINametagCoopCompData](#constructor-4)**(other: [UIComponentData](/vext/ref/fb/uicomponentdata)) |
+| **[UINametagCoopCompData](#constructor-5)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[UINametagCoopCompData](#constructor-6)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UINametagCoopCompData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UINametagCoopCompData {#constructor-0}
+> **UINametagCoopCompData**()
 
-| Constructor                                                                      | Description                                                                                                                       |
-| -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| UINametagCoopCompData()                                                          | Create a new instance of this container type.                                                                                     |
-| UINametagCoopCompData(UINametagCoopCompData other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| UINametagCoopCompData([UINametagCompData](/vext/ref/fb/uinametagcompdata/) other)              | Upcast an instance of type [UINametagCompData](/vext/ref/fb/uinametagcompdata/) to [UINametagCoopCompData](/vext/ref/fb/uinametagcoopcompdata/).              |
-| UINametagCoopCompData([UI3dIconCompData](/vext/ref/fb/ui3diconcompdata/) other)                | Upcast an instance of type [UI3dIconCompData](/vext/ref/fb/ui3diconcompdata/) to [UINametagCoopCompData](/vext/ref/fb/uinametagcoopcompdata/).                |
-| UINametagCoopCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UINametagCoopCompData](/vext/ref/fb/uinametagcoopcompdata/).                  |
-| UINametagCoopCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UINametagCoopCompData](/vext/ref/fb/uinametagcoopcompdata/).                                      |
-| UINametagCoopCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UINametagCoopCompData](/vext/ref/fb/uinametagcoopcompdata/). |
+Creates a new [UINametagCoopCompData](/vext/ref/fb/uinametagcoopcompdata) frostbite instance.
 
-## Methods
+### UINametagCoopCompData {#constructor-1}
+> **UINametagCoopCompData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                           | Name            | Parameters                                     |
-| ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [UINametagCoopCompData](/vext/ref/fb/uinametagcoopcompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UINametagCoopCompData](/vext/ref/fb/uinametagcoopcompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UINametagCoopCompData](/vext/ref/fb/uinametagcoopcompdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UINametagCoopCompData {#constructor-2}
+> **UINametagCoopCompData**(other: [UINametagCompData](/vext/ref/fb/uinametagcompdata))
+
+Casts an instance of type [UINametagCompData](/vext/ref/fb/uinametagcompdata) to [UINametagCoopCompData](/vext/ref/fb/uinametagcoopcompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UINametagCompData](/vext/ref/fb/uinametagcompdata) | The instance to cast to [UINametagCoopCompData](/vext/ref/fb/uinametagcoopcompdata). |
+
+### UINametagCoopCompData {#constructor-3}
+> **UINametagCoopCompData**(other: [UI3dIconCompData](/vext/ref/fb/ui3diconcompdata))
+
+Casts an instance of type [UI3dIconCompData](/vext/ref/fb/ui3diconcompdata) to [UINametagCoopCompData](/vext/ref/fb/uinametagcoopcompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UI3dIconCompData](/vext/ref/fb/ui3diconcompdata) | The instance to cast to [UINametagCoopCompData](/vext/ref/fb/uinametagcoopcompdata). |
+
+### UINametagCoopCompData {#constructor-4}
+> **UINametagCoopCompData**(other: [UIComponentData](/vext/ref/fb/uicomponentdata))
+
+Casts an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata) to [UINametagCoopCompData](/vext/ref/fb/uinametagcoopcompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIComponentData](/vext/ref/fb/uicomponentdata) | The instance to cast to [UINametagCoopCompData](/vext/ref/fb/uinametagcoopcompdata). |
+
+### UINametagCoopCompData {#constructor-5}
+> **UINametagCoopCompData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [UINametagCoopCompData](/vext/ref/fb/uinametagcoopcompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [UINametagCoopCompData](/vext/ref/fb/uinametagcoopcompdata). |
+
+### UINametagCoopCompData {#constructor-6}
+> **UINametagCoopCompData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UINametagCoopCompData](/vext/ref/fb/uinametagcoopcompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UINametagCoopCompData](/vext/ref/fb/uinametagcoopcompdata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UINametagCoopCompData](/vext/ref/fb/uinametagcoopcompdata) type.
+

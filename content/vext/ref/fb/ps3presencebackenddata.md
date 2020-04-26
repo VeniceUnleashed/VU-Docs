@@ -1,47 +1,95 @@
 ---
 title: Ps3PresenceBackendData
 ---
-### Base Classes
 
-[PresenceBackendData](/vext/ref/fb/presencebackenddata/)
+Inherits from 
+[PresenceBackendData](/vext/ref/fb/presencebackenddata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[Ps3PresenceBackendData](#constructor-0)**() |
+| **[Ps3PresenceBackendData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[Ps3PresenceBackendData](#constructor-2)**(other: [PresenceBackendData](/vext/ref/fb/presencebackenddata)) |
+| **[Ps3PresenceBackendData](#constructor-3)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[Ps3PresenceBackendData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "communicationId" >}} | string |
+| {{< prop "communicationSignature" >}} | string |
+| {{< prop "skuSettings" >}} | [Ps3SkuSettings](/vext/ref/fb/ps3skusettings)[] |
+| {{< prop "parentalLockAgeSettings" >}} | [Ps3ParentalLockAgeSettings](/vext/ref/fb/ps3parentallockagesettings)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "Ps3PresenceBackendData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### Ps3PresenceBackendData {#constructor-0}
+> **Ps3PresenceBackendData**()
 
-| Constructor                                                                       | Description                                                                                                                         |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| Ps3PresenceBackendData()                                                          | Create a new instance of this container type.                                                                                       |
-| Ps3PresenceBackendData(Ps3PresenceBackendData other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| Ps3PresenceBackendData([PresenceBackendData](/vext/ref/fb/presencebackenddata/) other)          | Upcast an instance of type [PresenceBackendData](/vext/ref/fb/presencebackenddata/) to [Ps3PresenceBackendData](/vext/ref/fb/ps3presencebackenddata/).          |
-| Ps3PresenceBackendData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [Ps3PresenceBackendData](/vext/ref/fb/ps3presencebackenddata/).                                      |
-| Ps3PresenceBackendData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [Ps3PresenceBackendData](/vext/ref/fb/ps3presencebackenddata/). |
+Creates a new [Ps3PresenceBackendData](/vext/ref/fb/ps3presencebackenddata) frostbite instance.
 
-## Properties
+### Ps3PresenceBackendData {#constructor-1}
+> **Ps3PresenceBackendData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                    | Type                                                         | Description |
-| ----------------------- | ------------------------------------------------------------ | ----------- |
-| communicationId         | string                                                       |             |
-| communicationSignature  | string                                                       |             |
-| skuSettings             | [Ps3SkuSettings](/vext/ref/fb/ps3skusettings/)\[\]                         |             |
-| parentalLockAgeSettings | [Ps3ParentalLockAgeSettings](/vext/ref/fb/ps3parentallockagesettings/)\[\] |             |
-
-## Methods
-
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [Ps3PresenceBackendData](/vext/ref/fb/ps3presencebackenddata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [Ps3PresenceBackendData](/vext/ref/fb/ps3presencebackenddata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [Ps3PresenceBackendData](/vext/ref/fb/ps3presencebackenddata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### Ps3PresenceBackendData {#constructor-2}
+> **Ps3PresenceBackendData**(other: [PresenceBackendData](/vext/ref/fb/presencebackenddata))
+
+Casts an instance of type [PresenceBackendData](/vext/ref/fb/presencebackenddata) to [Ps3PresenceBackendData](/vext/ref/fb/ps3presencebackenddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [PresenceBackendData](/vext/ref/fb/presencebackenddata) | The instance to cast to [Ps3PresenceBackendData](/vext/ref/fb/ps3presencebackenddata). |
+
+### Ps3PresenceBackendData {#constructor-3}
+> **Ps3PresenceBackendData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [Ps3PresenceBackendData](/vext/ref/fb/ps3presencebackenddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [Ps3PresenceBackendData](/vext/ref/fb/ps3presencebackenddata). |
+
+### Ps3PresenceBackendData {#constructor-4}
+> **Ps3PresenceBackendData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [Ps3PresenceBackendData](/vext/ref/fb/ps3presencebackenddata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [Ps3PresenceBackendData](/vext/ref/fb/ps3presencebackenddata). |
+
+## Properties
+### {{% prop-heading "communicationId" %}}
+> **string**
+
+### {{% prop-heading "communicationSignature" %}}
+> **string**
+
+### {{% prop-heading "skuSettings" %}}
+> **[Ps3SkuSettings](/vext/ref/fb/ps3skusettings)**[]
+
+### {{% prop-heading "parentalLockAgeSettings" %}}
+> **[Ps3ParentalLockAgeSettings](/vext/ref/fb/ps3parentallockagesettings)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [Ps3PresenceBackendData](/vext/ref/fb/ps3presencebackenddata) type.
+

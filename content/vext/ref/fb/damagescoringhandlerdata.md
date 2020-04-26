@@ -1,52 +1,108 @@
 ---
 title: DamageScoringHandlerData
 ---
-### Base Classes
 
-[ScoringHandlerData](/vext/ref/fb/scoringhandlerdata/)
+Inherits from 
+[ScoringHandlerData](/vext/ref/fb/scoringhandlerdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[DamageScoringHandlerData](#constructor-0)**() |
+| **[DamageScoringHandlerData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[DamageScoringHandlerData](#constructor-2)**(other: [ScoringHandlerData](/vext/ref/fb/scoringhandlerdata)) |
+| **[DamageScoringHandlerData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "repairVehicleLimit" >}} | float |
+| {{< prop "damageTeamVehicleLimit" >}} | float |
+| {{< prop "teamHealingLimit" >}} | float |
+| {{< prop "teamDamageLimit" >}} | float |
+| {{< prop "killAssistLimit" >}} | float |
+| {{< prop "killAssistTimeout" >}} | float |
+| {{< prop "vehicleDestroyAssistLimit" >}} | float |
+| {{< prop "saviorKillTimeout" >}} | float |
+| {{< prop "saviorDamageLimit" >}} | float |
+| {{< prop "hotVehicleTimeout" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "DamageScoringHandlerData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### DamageScoringHandlerData {#constructor-0}
+> **DamageScoringHandlerData**()
 
-| Constructor                                                                         | Description                                                                                                                             |
-| ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| DamageScoringHandlerData()                                                          | Create a new instance of this container type.                                                                                           |
-| DamageScoringHandlerData(DamageScoringHandlerData other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| DamageScoringHandlerData([ScoringHandlerData](/vext/ref/fb/scoringhandlerdata/) other)            | Upcast an instance of type [ScoringHandlerData](/vext/ref/fb/scoringhandlerdata/) to [DamageScoringHandlerData](/vext/ref/fb/damagescoringhandlerdata/).            |
-| DamageScoringHandlerData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DamageScoringHandlerData](/vext/ref/fb/damagescoringhandlerdata/). |
+Creates a new [DamageScoringHandlerData](/vext/ref/fb/damagescoringhandlerdata) frostbite instance.
 
-## Properties
+### DamageScoringHandlerData {#constructor-1}
+> **DamageScoringHandlerData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                      | Type   | Description |
-| ------------------------- | ------ | ----------- |
-| repairVehicleLimit        | number |             |
-| damageTeamVehicleLimit    | number |             |
-| teamHealingLimit          | number |             |
-| teamDamageLimit           | number |             |
-| killAssistLimit           | number |             |
-| killAssistTimeout         | number |             |
-| vehicleDestroyAssistLimit | number |             |
-| saviorKillTimeout         | number |             |
-| saviorDamageLimit         | number |             |
-| hotVehicleTimeout         | number |             |
-
-## Methods
-
-| Type                                                 | Name            | Parameters                                     |
-| ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [DamageScoringHandlerData](/vext/ref/fb/damagescoringhandlerdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [DamageScoringHandlerData](/vext/ref/fb/damagescoringhandlerdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [DamageScoringHandlerData](/vext/ref/fb/damagescoringhandlerdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### DamageScoringHandlerData {#constructor-2}
+> **DamageScoringHandlerData**(other: [ScoringHandlerData](/vext/ref/fb/scoringhandlerdata))
+
+Casts an instance of type [ScoringHandlerData](/vext/ref/fb/scoringhandlerdata) to [DamageScoringHandlerData](/vext/ref/fb/damagescoringhandlerdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ScoringHandlerData](/vext/ref/fb/scoringhandlerdata) | The instance to cast to [DamageScoringHandlerData](/vext/ref/fb/damagescoringhandlerdata). |
+
+### DamageScoringHandlerData {#constructor-3}
+> **DamageScoringHandlerData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DamageScoringHandlerData](/vext/ref/fb/damagescoringhandlerdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DamageScoringHandlerData](/vext/ref/fb/damagescoringhandlerdata). |
+
+## Properties
+### {{% prop-heading "repairVehicleLimit" %}}
+> **float**
+
+### {{% prop-heading "damageTeamVehicleLimit" %}}
+> **float**
+
+### {{% prop-heading "teamHealingLimit" %}}
+> **float**
+
+### {{% prop-heading "teamDamageLimit" %}}
+> **float**
+
+### {{% prop-heading "killAssistLimit" %}}
+> **float**
+
+### {{% prop-heading "killAssistTimeout" %}}
+> **float**
+
+### {{% prop-heading "vehicleDestroyAssistLimit" %}}
+> **float**
+
+### {{% prop-heading "saviorKillTimeout" %}}
+> **float**
+
+### {{% prop-heading "saviorDamageLimit" %}}
+> **float**
+
+### {{% prop-heading "hotVehicleTimeout" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [DamageScoringHandlerData](/vext/ref/fb/damagescoringhandlerdata) type.
+

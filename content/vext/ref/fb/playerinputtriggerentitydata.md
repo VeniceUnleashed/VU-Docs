@@ -1,51 +1,118 @@
 ---
 title: PlayerInputTriggerEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PlayerInputTriggerEntityData](#constructor-0)**() |
+| **[PlayerInputTriggerEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PlayerInputTriggerEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[PlayerInputTriggerEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[PlayerInputTriggerEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[PlayerInputTriggerEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
+| {{< prop "entryInputActions" >}} | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum) |
+| {{< prop "valueModifier" >}} | float |
+| {{< prop "trailingValueAtStart" >}} | float |
+| {{< prop "accumulatedValueAtStart" >}} | float |
+| {{< prop "sendTriggerEvents" >}} | bool |
+| {{< prop "enabledFromStart" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PlayerInputTriggerEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PlayerInputTriggerEntityData {#constructor-0}
+> **PlayerInputTriggerEntityData**()
 
-| Constructor                                                                             | Description                                                                                                                                     |
-| --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| PlayerInputTriggerEntityData()                                                          | Create a new instance of this container type.                                                                                                   |
-| PlayerInputTriggerEntityData(PlayerInputTriggerEntityData other)                        | Create a reference copy of an instance of the same type.                                                                                        |
-| PlayerInputTriggerEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [PlayerInputTriggerEntityData](/vext/ref/fb/playerinputtriggerentitydata/).                            |
-| PlayerInputTriggerEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [PlayerInputTriggerEntityData](/vext/ref/fb/playerinputtriggerentitydata/).                    |
-| PlayerInputTriggerEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [PlayerInputTriggerEntityData](/vext/ref/fb/playerinputtriggerentitydata/).              |
-| PlayerInputTriggerEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PlayerInputTriggerEntityData](/vext/ref/fb/playerinputtriggerentitydata/). |
+Creates a new [PlayerInputTriggerEntityData](/vext/ref/fb/playerinputtriggerentitydata) frostbite instance.
 
-## Properties
+### PlayerInputTriggerEntityData {#constructor-1}
+> **PlayerInputTriggerEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                    | Type                                         | Description |
-| ----------------------- | -------------------------------------------- | ----------- |
-| realm                   | [Realm](/vext/ref/fb/realm/)                               |             |
-| entryInputActions       | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum/) |             |
-| valueModifier           | number                                       |             |
-| trailingValueAtStart    | number                                       |             |
-| accumulatedValueAtStart | number                                       |             |
-| sendTriggerEvents       | bool                                         |             |
-| enabledFromStart        | bool                                         |             |
-
-## Methods
-
-| Type                                                         | Name            | Parameters                                     |
-| ------------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [PlayerInputTriggerEntityData](/vext/ref/fb/playerinputtriggerentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PlayerInputTriggerEntityData](/vext/ref/fb/playerinputtriggerentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PlayerInputTriggerEntityData](/vext/ref/fb/playerinputtriggerentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PlayerInputTriggerEntityData {#constructor-2}
+> **PlayerInputTriggerEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [PlayerInputTriggerEntityData](/vext/ref/fb/playerinputtriggerentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [PlayerInputTriggerEntityData](/vext/ref/fb/playerinputtriggerentitydata). |
+
+### PlayerInputTriggerEntityData {#constructor-3}
+> **PlayerInputTriggerEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [PlayerInputTriggerEntityData](/vext/ref/fb/playerinputtriggerentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [PlayerInputTriggerEntityData](/vext/ref/fb/playerinputtriggerentitydata). |
+
+### PlayerInputTriggerEntityData {#constructor-4}
+> **PlayerInputTriggerEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [PlayerInputTriggerEntityData](/vext/ref/fb/playerinputtriggerentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [PlayerInputTriggerEntityData](/vext/ref/fb/playerinputtriggerentitydata). |
+
+### PlayerInputTriggerEntityData {#constructor-5}
+> **PlayerInputTriggerEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PlayerInputTriggerEntityData](/vext/ref/fb/playerinputtriggerentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PlayerInputTriggerEntityData](/vext/ref/fb/playerinputtriggerentitydata). |
+
+## Properties
+### {{% prop-heading "realm" %}}
+> **[Realm](/vext/ref/fb/realm)**
+
+### {{% prop-heading "entryInputActions" %}}
+> **[EntryInputActionEnum](/vext/ref/fb/entryinputactionenum)**
+
+### {{% prop-heading "valueModifier" %}}
+> **float**
+
+### {{% prop-heading "trailingValueAtStart" %}}
+> **float**
+
+### {{% prop-heading "accumulatedValueAtStart" %}}
+> **float**
+
+### {{% prop-heading "sendTriggerEvents" %}}
+> **bool**
+
+### {{% prop-heading "enabledFromStart" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PlayerInputTriggerEntityData](/vext/ref/fb/playerinputtriggerentitydata) type.
+

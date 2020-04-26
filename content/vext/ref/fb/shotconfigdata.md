@@ -1,48 +1,121 @@
 ---
 title: ShotConfigData
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ShotConfigData](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "initialPosition" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "initialDirection" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "initialSpeed" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "inheritWeaponSpeedAmount" >}} | float |
+| {{< prop "muzzleExplosion" >}} | [ExplosionEntityData](/vext/ref/fb/explosionentitydata) \| nil |
+| {{< prop "projectileData" >}} | [ProjectileEntityData](/vext/ref/fb/projectileentitydata) \| nil |
+| {{< prop "secondaryProjectileData" >}} | [ProjectileEntityData](/vext/ref/fb/projectileentitydata) \| nil |
+| {{< prop "projectile" >}} | [ProjectileBlueprint](/vext/ref/fb/projectileblueprint) \| nil |
+| {{< prop "secondaryProjectile" >}} | [ProjectileBlueprint](/vext/ref/fb/projectileblueprint) \| nil |
+| {{< prop "alternateProjectiles" >}} | [UnlockableProjectile](/vext/ref/fb/unlockableprojectile)[] |
+| {{< prop "spawnDelay" >}} | float |
+| {{< prop "numberOfBulletsPerShell" >}} | int |
+| {{< prop "numberOfBulletsPerShot" >}} | int |
+| {{< prop "numberOfBulletsPerBurst" >}} | int |
+| {{< prop "relativeTargetAiming" >}} | bool |
+| {{< prop "forceSpawnToCamera" >}} | bool |
+| {{< prop "spawnVisualAtWeaponBone" >}} | bool |
+| {{< prop "activeForceSpawnToCamera" >}} | bool |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [ShotConfigData](/vext/ref/fb/shotconfigdata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ShotConfigData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ShotConfigData {#constructor-0}
+> **ShotConfigData**()
 
-| Constructor                          | Description                                              |
-| ------------------------------------ | -------------------------------------------------------- |
-| ShotConfigData()                     | Create a new instance of this structure type.            |
-| ShotConfigData(ShotConfigData other) | Create a reference copy of a structure of the same type. |
+Creates a new [ShotConfigData](/vext/ref/fb/shotconfigdata) frostbite structure.
 
 ## Properties
+### {{% prop-heading "initialPosition" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
 
-| Name                     | Type                                             | Description |
-| ------------------------ | ------------------------------------------------ | ----------- |
-| initialPosition          | [Vec3](/vext/ref/shared/class/vec3)                |             |
-| initialDirection         | [Vec3](/vext/ref/shared/class/vec3)                |             |
-| initialSpeed             | [Vec3](/vext/ref/shared/class/vec3)                |             |
-| inheritWeaponSpeedAmount | number                                           |             |
-| muzzleExplosion          | [ExplosionEntityData](/vext/ref/fb/explosionentitydata/)       |             |
-| projectileData           | [ProjectileEntityData](/vext/ref/fb/projectileentitydata/)     |             |
-| secondaryProjectileData  | [ProjectileEntityData](/vext/ref/fb/projectileentitydata/)     |             |
-| projectile               | [ProjectileBlueprint](/vext/ref/fb/projectileblueprint/)       |             |
-| secondaryProjectile      | [ProjectileBlueprint](/vext/ref/fb/projectileblueprint/)       |             |
-| alternateProjectiles     | [UnlockableProjectile](/vext/ref/fb/unlockableprojectile/)\[\] |             |
-| spawnDelay               | number                                           |             |
-| numberOfBulletsPerShell  | number                                           |             |
-| numberOfBulletsPerShot   | number                                           |             |
-| numberOfBulletsPerBurst  | number                                           |             |
-| relativeTargetAiming     | bool                                             |             |
-| forceSpawnToCamera       | bool                                             |             |
-| spawnVisualAtWeaponBone  | bool                                             |             |
-| activeForceSpawnToCamera | bool                                             |             |
+### {{% prop-heading "initialDirection" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "initialSpeed" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "inheritWeaponSpeedAmount" %}}
+> **float**
+
+### {{% prop-heading "muzzleExplosion" %}}
+> **[ExplosionEntityData](/vext/ref/fb/explosionentitydata)** | **nil**
+
+### {{% prop-heading "projectileData" %}}
+> **[ProjectileEntityData](/vext/ref/fb/projectileentitydata)** | **nil**
+
+### {{% prop-heading "secondaryProjectileData" %}}
+> **[ProjectileEntityData](/vext/ref/fb/projectileentitydata)** | **nil**
+
+### {{% prop-heading "projectile" %}}
+> **[ProjectileBlueprint](/vext/ref/fb/projectileblueprint)** | **nil**
+
+### {{% prop-heading "secondaryProjectile" %}}
+> **[ProjectileBlueprint](/vext/ref/fb/projectileblueprint)** | **nil**
+
+### {{% prop-heading "alternateProjectiles" %}}
+> **[UnlockableProjectile](/vext/ref/fb/unlockableprojectile)**[]
+
+### {{% prop-heading "spawnDelay" %}}
+> **float**
+
+### {{% prop-heading "numberOfBulletsPerShell" %}}
+> **int**
+
+### {{% prop-heading "numberOfBulletsPerShot" %}}
+> **int**
+
+### {{% prop-heading "numberOfBulletsPerBurst" %}}
+> **int**
+
+### {{% prop-heading "relativeTargetAiming" %}}
+> **bool**
+
+### {{% prop-heading "forceSpawnToCamera" %}}
+> **bool**
+
+### {{% prop-heading "spawnVisualAtWeaponBone" %}}
+> **bool**
+
+### {{% prop-heading "activeForceSpawnToCamera" %}}
+> **bool**
 
 ## Methods
-
-| Type                             | Name            | Parameters |
-| -------------------------------- | --------------- | ---------- |
-| [ShotConfigData](/vext/ref/fb/shotconfigdata/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [ShotConfigData](/vext/ref/fb/shotconfigdata)
 
-> [ShotConfigData](/vext/ref/fb/shotconfigdata/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[ShotConfigData](/vext/ref/fb/shotconfigdata)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ShotConfigData](/vext/ref/fb/shotconfigdata) type.
+

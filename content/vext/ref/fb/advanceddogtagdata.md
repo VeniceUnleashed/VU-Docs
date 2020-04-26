@@ -1,47 +1,102 @@
 ---
 title: AdvancedDogTagData
 ---
-### Base Classes
 
-[DogTagData](/vext/ref/fb/dogtagdata/)
+Inherits from 
+[DogTagData](/vext/ref/fb/dogtagdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AdvancedDogTagData](#constructor-0)**() |
+| **[AdvancedDogTagData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[AdvancedDogTagData](#constructor-2)**(other: [DogTagData](/vext/ref/fb/dogtagdata)) |
+| **[AdvancedDogTagData](#constructor-3)**(other: [UnlockAssetBase](/vext/ref/fb/unlockassetbase)) |
+| **[AdvancedDogTagData](#constructor-4)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[AdvancedDogTagData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "statCode" >}} | string |
+| {{< prop "statSID" >}} | string |
+| {{< prop "isStatMeasuredInTime" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AdvancedDogTagData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AdvancedDogTagData {#constructor-0}
+> **AdvancedDogTagData**()
 
-| Constructor                                                                   | Description                                                                                                                 |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| AdvancedDogTagData()                                                          | Create a new instance of this container type.                                                                               |
-| AdvancedDogTagData(AdvancedDogTagData other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| AdvancedDogTagData([DogTagData](/vext/ref/fb/dogtagdata/) other)                            | Upcast an instance of type [DogTagData](/vext/ref/fb/dogtagdata/) to [AdvancedDogTagData](/vext/ref/fb/advanceddogtagdata/).                            |
-| AdvancedDogTagData([UnlockAssetBase](/vext/ref/fb/unlockassetbase/) other)                  | Upcast an instance of type [UnlockAssetBase](/vext/ref/fb/unlockassetbase/) to [AdvancedDogTagData](/vext/ref/fb/advanceddogtagdata/).                  |
-| AdvancedDogTagData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [AdvancedDogTagData](/vext/ref/fb/advanceddogtagdata/).                                      |
-| AdvancedDogTagData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AdvancedDogTagData](/vext/ref/fb/advanceddogtagdata/). |
+Creates a new [AdvancedDogTagData](/vext/ref/fb/advanceddogtagdata) frostbite instance.
 
-## Properties
+### AdvancedDogTagData {#constructor-1}
+> **AdvancedDogTagData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                 | Type   | Description |
-| -------------------- | ------ | ----------- |
-| statCode             | string |             |
-| statSID              | string |             |
-| isStatMeasuredInTime | bool   |             |
-
-## Methods
-
-| Type                                     | Name            | Parameters                                     |
-| ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [AdvancedDogTagData](/vext/ref/fb/advanceddogtagdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [AdvancedDogTagData](/vext/ref/fb/advanceddogtagdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [AdvancedDogTagData](/vext/ref/fb/advanceddogtagdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### AdvancedDogTagData {#constructor-2}
+> **AdvancedDogTagData**(other: [DogTagData](/vext/ref/fb/dogtagdata))
+
+Casts an instance of type [DogTagData](/vext/ref/fb/dogtagdata) to [AdvancedDogTagData](/vext/ref/fb/advanceddogtagdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DogTagData](/vext/ref/fb/dogtagdata) | The instance to cast to [AdvancedDogTagData](/vext/ref/fb/advanceddogtagdata). |
+
+### AdvancedDogTagData {#constructor-3}
+> **AdvancedDogTagData**(other: [UnlockAssetBase](/vext/ref/fb/unlockassetbase))
+
+Casts an instance of type [UnlockAssetBase](/vext/ref/fb/unlockassetbase) to [AdvancedDogTagData](/vext/ref/fb/advanceddogtagdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UnlockAssetBase](/vext/ref/fb/unlockassetbase) | The instance to cast to [AdvancedDogTagData](/vext/ref/fb/advanceddogtagdata). |
+
+### AdvancedDogTagData {#constructor-4}
+> **AdvancedDogTagData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [AdvancedDogTagData](/vext/ref/fb/advanceddogtagdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [AdvancedDogTagData](/vext/ref/fb/advanceddogtagdata). |
+
+### AdvancedDogTagData {#constructor-5}
+> **AdvancedDogTagData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AdvancedDogTagData](/vext/ref/fb/advanceddogtagdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [AdvancedDogTagData](/vext/ref/fb/advanceddogtagdata). |
+
+## Properties
+### {{% prop-heading "statCode" %}}
+> **string**
+
+### {{% prop-heading "statSID" %}}
+> **string**
+
+### {{% prop-heading "isStatMeasuredInTime" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AdvancedDogTagData](/vext/ref/fb/advanceddogtagdata) type.
+

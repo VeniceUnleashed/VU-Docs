@@ -1,48 +1,106 @@
 ---
 title: InputModifierEntityData
 ---
-### Base Classes
 
-[EntityData](/vext/ref/fb/entitydata/)
+Inherits from 
+[EntityData](/vext/ref/fb/entitydata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[InputModifierEntityData](#constructor-0)**() |
+| **[InputModifierEntityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[InputModifierEntityData](#constructor-2)**(other: [EntityData](/vext/ref/fb/entitydata)) |
+| **[InputModifierEntityData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[InputModifierEntityData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[InputModifierEntityData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "action" >}} | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum) |
+| {{< prop "scale" >}} | float |
+| {{< prop "offset" >}} | float |
+| {{< prop "enabled" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "InputModifierEntityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### InputModifierEntityData {#constructor-0}
+> **InputModifierEntityData**()
 
-| Constructor                                                                        | Description                                                                                                                           |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| InputModifierEntityData()                                                          | Create a new instance of this container type.                                                                                         |
-| InputModifierEntityData(InputModifierEntityData other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| InputModifierEntityData([EntityData](/vext/ref/fb/entitydata/) other)                            | Upcast an instance of type [EntityData](/vext/ref/fb/entitydata/) to [InputModifierEntityData](/vext/ref/fb/inputmodifierentitydata/).                            |
-| InputModifierEntityData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [InputModifierEntityData](/vext/ref/fb/inputmodifierentitydata/).                    |
-| InputModifierEntityData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [InputModifierEntityData](/vext/ref/fb/inputmodifierentitydata/).              |
-| InputModifierEntityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [InputModifierEntityData](/vext/ref/fb/inputmodifierentitydata/). |
+Creates a new [InputModifierEntityData](/vext/ref/fb/inputmodifierentitydata) frostbite instance.
 
-## Properties
+### InputModifierEntityData {#constructor-1}
+> **InputModifierEntityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name    | Type                                         | Description |
-| ------- | -------------------------------------------- | ----------- |
-| action  | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum/) |             |
-| scale   | number                                       |             |
-| offset  | number                                       |             |
-| enabled | bool                                         |             |
-
-## Methods
-
-| Type                                               | Name            | Parameters                                     |
-| -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [InputModifierEntityData](/vext/ref/fb/inputmodifierentitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [InputModifierEntityData](/vext/ref/fb/inputmodifierentitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [InputModifierEntityData](/vext/ref/fb/inputmodifierentitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### InputModifierEntityData {#constructor-2}
+> **InputModifierEntityData**(other: [EntityData](/vext/ref/fb/entitydata))
+
+Casts an instance of type [EntityData](/vext/ref/fb/entitydata) to [InputModifierEntityData](/vext/ref/fb/inputmodifierentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityData](/vext/ref/fb/entitydata) | The instance to cast to [InputModifierEntityData](/vext/ref/fb/inputmodifierentitydata). |
+
+### InputModifierEntityData {#constructor-3}
+> **InputModifierEntityData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [InputModifierEntityData](/vext/ref/fb/inputmodifierentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [InputModifierEntityData](/vext/ref/fb/inputmodifierentitydata). |
+
+### InputModifierEntityData {#constructor-4}
+> **InputModifierEntityData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [InputModifierEntityData](/vext/ref/fb/inputmodifierentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [InputModifierEntityData](/vext/ref/fb/inputmodifierentitydata). |
+
+### InputModifierEntityData {#constructor-5}
+> **InputModifierEntityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [InputModifierEntityData](/vext/ref/fb/inputmodifierentitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [InputModifierEntityData](/vext/ref/fb/inputmodifierentitydata). |
+
+## Properties
+### {{% prop-heading "action" %}}
+> **[EntryInputActionEnum](/vext/ref/fb/entryinputactionenum)**
+
+### {{% prop-heading "scale" %}}
+> **float**
+
+### {{% prop-heading "offset" %}}
+> **float**
+
+### {{% prop-heading "enabled" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [InputModifierEntityData](/vext/ref/fb/inputmodifierentitydata) type.
+

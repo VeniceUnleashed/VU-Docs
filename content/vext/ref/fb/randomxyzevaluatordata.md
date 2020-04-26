@@ -1,49 +1,103 @@
 ---
 title: RandomXYZEvaluatorData
 ---
-### Base Classes
 
-[EvaluatorData](/vext/ref/fb/evaluatordata/)
+Inherits from 
+[EvaluatorData](/vext/ref/fb/evaluatordata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[RandomXYZEvaluatorData](#constructor-0)**() |
+| **[RandomXYZEvaluatorData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[RandomXYZEvaluatorData](#constructor-2)**(other: [EvaluatorData](/vext/ref/fb/evaluatordata)) |
+| **[RandomXYZEvaluatorData](#constructor-3)**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata)) |
+| **[RandomXYZEvaluatorData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "maxX" >}} | float |
+| {{< prop "minX" >}} | float |
+| {{< prop "maxY" >}} | float |
+| {{< prop "minY" >}} | float |
+| {{< prop "maxZ" >}} | float |
+| {{< prop "minZ" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "RandomXYZEvaluatorData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### RandomXYZEvaluatorData {#constructor-0}
+> **RandomXYZEvaluatorData**()
 
-| Constructor                                                                       | Description                                                                                                                         |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| RandomXYZEvaluatorData()                                                          | Create a new instance of this container type.                                                                                       |
-| RandomXYZEvaluatorData(RandomXYZEvaluatorData other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| RandomXYZEvaluatorData([EvaluatorData](/vext/ref/fb/evaluatordata/) other)                      | Upcast an instance of type [EvaluatorData](/vext/ref/fb/evaluatordata/) to [RandomXYZEvaluatorData](/vext/ref/fb/randomxyzevaluatordata/).                      |
-| RandomXYZEvaluatorData([EmitterComponentData](/vext/ref/fb/emittercomponentdata/) other)        | Upcast an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata/) to [RandomXYZEvaluatorData](/vext/ref/fb/randomxyzevaluatordata/).        |
-| RandomXYZEvaluatorData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RandomXYZEvaluatorData](/vext/ref/fb/randomxyzevaluatordata/). |
+Creates a new [RandomXYZEvaluatorData](/vext/ref/fb/randomxyzevaluatordata) frostbite instance.
 
-## Properties
+### RandomXYZEvaluatorData {#constructor-1}
+> **RandomXYZEvaluatorData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name | Type   | Description |
-| ---- | ------ | ----------- |
-| maxX | number |             |
-| minX | number |             |
-| maxY | number |             |
-| minY | number |             |
-| maxZ | number |             |
-| minZ | number |             |
-
-## Methods
-
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [RandomXYZEvaluatorData](/vext/ref/fb/randomxyzevaluatordata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [RandomXYZEvaluatorData](/vext/ref/fb/randomxyzevaluatordata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [RandomXYZEvaluatorData](/vext/ref/fb/randomxyzevaluatordata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### RandomXYZEvaluatorData {#constructor-2}
+> **RandomXYZEvaluatorData**(other: [EvaluatorData](/vext/ref/fb/evaluatordata))
+
+Casts an instance of type [EvaluatorData](/vext/ref/fb/evaluatordata) to [RandomXYZEvaluatorData](/vext/ref/fb/randomxyzevaluatordata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EvaluatorData](/vext/ref/fb/evaluatordata) | The instance to cast to [RandomXYZEvaluatorData](/vext/ref/fb/randomxyzevaluatordata). |
+
+### RandomXYZEvaluatorData {#constructor-3}
+> **RandomXYZEvaluatorData**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata))
+
+Casts an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata) to [RandomXYZEvaluatorData](/vext/ref/fb/randomxyzevaluatordata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EmitterComponentData](/vext/ref/fb/emittercomponentdata) | The instance to cast to [RandomXYZEvaluatorData](/vext/ref/fb/randomxyzevaluatordata). |
+
+### RandomXYZEvaluatorData {#constructor-4}
+> **RandomXYZEvaluatorData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RandomXYZEvaluatorData](/vext/ref/fb/randomxyzevaluatordata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [RandomXYZEvaluatorData](/vext/ref/fb/randomxyzevaluatordata). |
+
+## Properties
+### {{% prop-heading "maxX" %}}
+> **float**
+
+### {{% prop-heading "minX" %}}
+> **float**
+
+### {{% prop-heading "maxY" %}}
+> **float**
+
+### {{% prop-heading "minY" %}}
+> **float**
+
+### {{% prop-heading "maxZ" %}}
+> **float**
+
+### {{% prop-heading "minZ" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [RandomXYZEvaluatorData](/vext/ref/fb/randomxyzevaluatordata) type.
+

@@ -1,15 +1,12 @@
 ---
 title: MatchmakingNetworkTopology
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **MatchmakingNetworkTopology_Disabled** | Value: **0** |
+| **MatchmakingNetworkTopology_Peer2Peer** | Value: **1** |
+| **MatchmakingNetworkTopology_PeerHosted** | Value: **2** |
+| **MatchmakingNetworkTopology_DedicatedServer** | Value: **3** |
 
-| Name                                        | Value | Description |
-| ------------------------------------------- | ----- | ----------- |
-| MatchmakingNetworkTopology\_Disabled        | 0     |             |
-| MatchmakingNetworkTopology\_Peer2Peer       | 1     |             |
-| MatchmakingNetworkTopology\_PeerHosted      | 2     |             |
-| MatchmakingNetworkTopology\_DedicatedServer | 3     |             |

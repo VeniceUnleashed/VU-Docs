@@ -1,32 +1,57 @@
 ---
 title: MissileLockableInfoData
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MissileLockableInfoData](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "heatSignature" >}} | float |
+| {{< prop "radarSignature" >}} | float |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [MissileLockableInfoData](/vext/ref/fb/missilelockableinfodata) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MissileLockableInfoData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MissileLockableInfoData {#constructor-0}
+> **MissileLockableInfoData**()
 
-| Constructor                                            | Description                                              |
-| ------------------------------------------------------ | -------------------------------------------------------- |
-| MissileLockableInfoData()                              | Create a new instance of this structure type.            |
-| MissileLockableInfoData(MissileLockableInfoData other) | Create a reference copy of a structure of the same type. |
+Creates a new [MissileLockableInfoData](/vext/ref/fb/missilelockableinfodata) frostbite structure.
 
 ## Properties
+### {{% prop-heading "heatSignature" %}}
+> **float**
 
-| Name           | Type   | Description |
-| -------------- | ------ | ----------- |
-| heatSignature  | number |             |
-| radarSignature | number |             |
+### {{% prop-heading "radarSignature" %}}
+> **float**
 
 ## Methods
-
-| Type                                               | Name            | Parameters |
-| -------------------------------------------------- | --------------- | ---------- |
-| [MissileLockableInfoData](/vext/ref/fb/missilelockableinfodata/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [MissileLockableInfoData](/vext/ref/fb/missilelockableinfodata)
 
-> [MissileLockableInfoData](/vext/ref/fb/missilelockableinfodata/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[MissileLockableInfoData](/vext/ref/fb/missilelockableinfodata)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MissileLockableInfoData](/vext/ref/fb/missilelockableinfodata) type.
+

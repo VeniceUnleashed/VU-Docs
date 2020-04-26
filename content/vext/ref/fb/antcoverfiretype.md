@@ -1,22 +1,19 @@
 ---
 title: AntCoverFireType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **AntCoverFireType_PeekFire** | Value: **0** |
+| **AntCoverFireType_FireStepOut** | Value: **1** |
+| **AntCoverFireType_FireOver** | Value: **2** |
+| **AntCoverFireType_BlindFireAround** | Value: **3** |
+| **AntCoverFireType_BlindFireOver** | Value: **4** |
+| **AntCoverFireType_FlankedWhileFiring** | Value: **8** |
+| **AntCoverFireType_FireStepOutSlow** | Value: **10** |
+| **AntCoverFireType_FireStepOutUrgent** | Value: **11** |
+| **AntCoverFireType_FireStepOut_Crouched** | Value: **12** |
+| **AntCoverFireType_FireLmg** | Value: **13** |
+| **AntCoverFireType_FireFromHipStepOut** | Value: **14** |
 
-| Name                                    | Value | Description |
-| --------------------------------------- | ----- | ----------- |
-| AntCoverFireType\_PeekFire              | 0     |             |
-| AntCoverFireType\_FireStepOut           | 1     |             |
-| AntCoverFireType\_FireOver              | 2     |             |
-| AntCoverFireType\_BlindFireAround       | 3     |             |
-| AntCoverFireType\_BlindFireOver         | 4     |             |
-| AntCoverFireType\_FlankedWhileFiring    | 8     |             |
-| AntCoverFireType\_FireStepOutSlow       | 10    |             |
-| AntCoverFireType\_FireStepOutUrgent     | 11    |             |
-| AntCoverFireType\_FireStepOut\_Crouched | 12    |             |
-| AntCoverFireType\_FireLmg               | 13    |             |
-| AntCoverFireType\_FireFromHipStepOut    | 14    |             |

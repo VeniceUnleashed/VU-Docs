@@ -1,16 +1,13 @@
 ---
 title: TonemapMethod
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **TonemapMethod_Linear** | Value: **0** |
+| **TonemapMethod_Filmic** | Value: **1** |
+| **TonemapMethod_FilmicNeutral** | Value: **2** |
+| **TonemapMethod_None** | Value: **3** |
+| **TonemapMethodCount** | Value: **3** |
 
-| Name                         | Value | Description |
-| ---------------------------- | ----- | ----------- |
-| TonemapMethod\_Linear        | 0     |             |
-| TonemapMethod\_Filmic        | 1     |             |
-| TonemapMethod\_FilmicNeutral | 2     |             |
-| TonemapMethod\_None          | 3     |             |
-| TonemapMethodCount           | 3     |             |

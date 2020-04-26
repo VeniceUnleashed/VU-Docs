@@ -1,14 +1,11 @@
 ---
 title: UIListUnFocusMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **DeSelect** | Value: **0** |
+| **ChangeState** | Value: **1** |
+| **None** | Value: **2** |
 
-| Name        | Value | Description |
-| ----------- | ----- | ----------- |
-| DeSelect    | 0     |             |
-| ChangeState | 1     |             |
-| None        | 2     |             |

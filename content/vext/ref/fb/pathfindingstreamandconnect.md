@@ -1,13 +1,10 @@
 ---
 title: PathfindingStreamAndConnect
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **PathfindingStreamAndConnect_Grid** | Value: **0** |
+| **PathfindingStreamAndConnect_Manual** | Value: **1** |
 
-| Name                                | Value | Description |
-| ----------------------------------- | ----- | ----------- |
-| PathfindingStreamAndConnect\_Grid   | 0     |             |
-| PathfindingStreamAndConnect\_Manual | 1     |             |

@@ -1,14 +1,11 @@
 ---
 title: UIMouseButton
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **UIMouseButton_Left** | Value: **0** |
+| **UIMouseButton_Right** | Value: **1** |
+| **UIMouseButton_Middle** | Value: **2** |
 
-| Name                  | Value | Description |
-| --------------------- | ----- | ----------- |
-| UIMouseButton\_Left   | 0     |             |
-| UIMouseButton\_Right  | 1     |             |
-| UIMouseButton\_Middle | 2     |             |

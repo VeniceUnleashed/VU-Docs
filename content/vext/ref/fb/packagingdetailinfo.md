@@ -1,36 +1,73 @@
 ---
 title: PackagingDetailInfo
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PackagingDetailInfo](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "mipsToSkip" >}} | int |
+| {{< prop "lodsToSkip" >}} | int |
+| {{< prop "includeAnimation" >}} | bool |
+| {{< prop "includeMeshes" >}} | bool |
+| {{< prop "includeSounds" >}} | bool |
+| {{< prop "includeTextures" >}} | bool |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [PackagingDetailInfo](/vext/ref/fb/packagingdetailinfo) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PackagingDetailInfo" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PackagingDetailInfo {#constructor-0}
+> **PackagingDetailInfo**()
 
-| Constructor                                    | Description                                              |
-| ---------------------------------------------- | -------------------------------------------------------- |
-| PackagingDetailInfo()                          | Create a new instance of this structure type.            |
-| PackagingDetailInfo(PackagingDetailInfo other) | Create a reference copy of a structure of the same type. |
+Creates a new [PackagingDetailInfo](/vext/ref/fb/packagingdetailinfo) frostbite structure.
 
 ## Properties
+### {{% prop-heading "mipsToSkip" %}}
+> **int**
 
-| Name             | Type   | Description |
-| ---------------- | ------ | ----------- |
-| mipsToSkip       | number |             |
-| lodsToSkip       | number |             |
-| includeAnimation | bool   |             |
-| includeMeshes    | bool   |             |
-| includeSounds    | bool   |             |
-| includeTextures  | bool   |             |
+### {{% prop-heading "lodsToSkip" %}}
+> **int**
+
+### {{% prop-heading "includeAnimation" %}}
+> **bool**
+
+### {{% prop-heading "includeMeshes" %}}
+> **bool**
+
+### {{% prop-heading "includeSounds" %}}
+> **bool**
+
+### {{% prop-heading "includeTextures" %}}
+> **bool**
 
 ## Methods
-
-| Type                                       | Name            | Parameters |
-| ------------------------------------------ | --------------- | ---------- |
-| [PackagingDetailInfo](/vext/ref/fb/packagingdetailinfo/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [PackagingDetailInfo](/vext/ref/fb/packagingdetailinfo)
 
-> [PackagingDetailInfo](/vext/ref/fb/packagingdetailinfo/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[PackagingDetailInfo](/vext/ref/fb/packagingdetailinfo)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PackagingDetailInfo](/vext/ref/fb/packagingdetailinfo) type.
+

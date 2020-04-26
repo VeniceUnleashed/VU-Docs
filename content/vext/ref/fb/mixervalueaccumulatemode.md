@@ -1,14 +1,11 @@
 ---
 title: MixerValueAccumulateMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **MixerValueAccumulateMode_None** | Value: **0** |
+| **MixerValueAccumulateMode_Min** | Value: **1** |
+| **MixerValueAccumulateMode_Max** | Value: **2** |
 
-| Name                           | Value | Description |
-| ------------------------------ | ----- | ----------- |
-| MixerValueAccumulateMode\_None | 0     |             |
-| MixerValueAccumulateMode\_Min  | 1     |             |
-| MixerValueAccumulateMode\_Max  | 2     |             |

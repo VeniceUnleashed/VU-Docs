@@ -1,16 +1,13 @@
 ---
 title: Difficulty
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **Difficulty_Easy** | Value: **0** |
+| **Difficulty_Medium** | Value: **1** |
+| **Difficulty_Hard** | Value: **2** |
+| **Difficulty_Hardcore** | Value: **3** |
+| **Difficulty_None** | Value: **4** |
 
-| Name                 | Value | Description |
-| -------------------- | ----- | ----------- |
-| Difficulty\_Easy     | 0     |             |
-| Difficulty\_Medium   | 1     |             |
-| Difficulty\_Hard     | 2     |             |
-| Difficulty\_Hardcore | 3     |             |
-| Difficulty\_None     | 4     |             |

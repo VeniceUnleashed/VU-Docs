@@ -1,44 +1,83 @@
 ---
 title: PlayerState
 ---
-### Base Classes
 
-[MetricState](/vext/ref/fb/metricstate/)
+Inherits from 
+[MetricState](/vext/ref/fb/metricstate)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PlayerState](#constructor-0)**() |
+| **[PlayerState](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PlayerState](#constructor-2)**(other: [MetricState](/vext/ref/fb/metricstate)) |
+| **[PlayerState](#constructor-3)**(other: [MetricEvent](/vext/ref/fb/metricevent)) |
+| **[PlayerState](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "onlineId" >}} | int |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PlayerState" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PlayerState {#constructor-0}
+> **PlayerState**()
 
-| Constructor                                                            | Description                                                                                                   |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| PlayerState()                                                          | Create a new instance of this container type.                                                                 |
-| PlayerState(PlayerState other)                                         | Create a reference copy of an instance of the same type.                                                      |
-| PlayerState([MetricState](/vext/ref/fb/metricstate/) other)                          | Upcast an instance of type [MetricState](/vext/ref/fb/metricstate/) to [PlayerState](/vext/ref/fb/playerstate/).                          |
-| PlayerState([MetricEvent](/vext/ref/fb/metricevent/) other)                          | Upcast an instance of type [MetricEvent](/vext/ref/fb/metricevent/) to [PlayerState](/vext/ref/fb/playerstate/).                          |
-| PlayerState([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PlayerState](/vext/ref/fb/playerstate/). |
+Creates a new [PlayerState](/vext/ref/fb/playerstate) frostbite instance.
 
-## Properties
+### PlayerState {#constructor-1}
+> **PlayerState**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name     | Type   | Description |
-| -------- | ------ | ----------- |
-| onlineId | number |             |
-
-## Methods
-
-| Type                       | Name            | Parameters                                     |
-| -------------------------- | --------------- | ---------------------------------------------- |
-| [PlayerState](/vext/ref/fb/playerstate/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PlayerState](/vext/ref/fb/playerstate/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PlayerState](/vext/ref/fb/playerstate) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PlayerState {#constructor-2}
+> **PlayerState**(other: [MetricState](/vext/ref/fb/metricstate))
+
+Casts an instance of type [MetricState](/vext/ref/fb/metricstate) to [PlayerState](/vext/ref/fb/playerstate). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [MetricState](/vext/ref/fb/metricstate) | The instance to cast to [PlayerState](/vext/ref/fb/playerstate). |
+
+### PlayerState {#constructor-3}
+> **PlayerState**(other: [MetricEvent](/vext/ref/fb/metricevent))
+
+Casts an instance of type [MetricEvent](/vext/ref/fb/metricevent) to [PlayerState](/vext/ref/fb/playerstate). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [MetricEvent](/vext/ref/fb/metricevent) | The instance to cast to [PlayerState](/vext/ref/fb/playerstate). |
+
+### PlayerState {#constructor-4}
+> **PlayerState**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PlayerState](/vext/ref/fb/playerstate). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PlayerState](/vext/ref/fb/playerstate). |
+
+## Properties
+### {{% prop-heading "onlineId" %}}
+> **int**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PlayerState](/vext/ref/fb/playerstate) type.
+

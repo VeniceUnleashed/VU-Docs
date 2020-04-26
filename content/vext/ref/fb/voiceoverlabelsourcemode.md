@@ -1,13 +1,10 @@
 ---
 title: VoiceOverLabelSourceMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **VoiceOverLabelSourceMode_Combined** | Value: **0** |
+| **VoiceOverLabelSourceMode_Shared** | Value: **1** |
 
-| Name                               | Value | Description |
-| ---------------------------------- | ----- | ----------- |
-| VoiceOverLabelSourceMode\_Combined | 0     |             |
-| VoiceOverLabelSourceMode\_Shared   | 1     |             |

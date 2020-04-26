@@ -1,45 +1,87 @@
 ---
 title: DefibrillatorWeaponData
 ---
-### Base Classes
 
-[WeaponData](/vext/ref/fb/weapondata/)
+Inherits from 
+[WeaponData](/vext/ref/fb/weapondata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[DefibrillatorWeaponData](#constructor-0)**() |
+| **[DefibrillatorWeaponData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[DefibrillatorWeaponData](#constructor-2)**(other: [WeaponData](/vext/ref/fb/weapondata)) |
+| **[DefibrillatorWeaponData](#constructor-3)**(other: [ToolData](/vext/ref/fb/tooldata)) |
+| **[DefibrillatorWeaponData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "reviveTime" >}} | float |
+| {{< prop "attackTime" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "DefibrillatorWeaponData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### DefibrillatorWeaponData {#constructor-0}
+> **DefibrillatorWeaponData**()
 
-| Constructor                                                                        | Description                                                                                                                           |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| DefibrillatorWeaponData()                                                          | Create a new instance of this container type.                                                                                         |
-| DefibrillatorWeaponData(DefibrillatorWeaponData other)                             | Create a reference copy of an instance of the same type.                                                                              |
-| DefibrillatorWeaponData([WeaponData](/vext/ref/fb/weapondata/) other)                            | Upcast an instance of type [WeaponData](/vext/ref/fb/weapondata/) to [DefibrillatorWeaponData](/vext/ref/fb/defibrillatorweapondata/).                            |
-| DefibrillatorWeaponData([ToolData](/vext/ref/fb/tooldata/) other)                                | Upcast an instance of type [ToolData](/vext/ref/fb/tooldata/) to [DefibrillatorWeaponData](/vext/ref/fb/defibrillatorweapondata/).                                |
-| DefibrillatorWeaponData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DefibrillatorWeaponData](/vext/ref/fb/defibrillatorweapondata/). |
+Creates a new [DefibrillatorWeaponData](/vext/ref/fb/defibrillatorweapondata) frostbite instance.
 
-## Properties
+### DefibrillatorWeaponData {#constructor-1}
+> **DefibrillatorWeaponData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name       | Type   | Description |
-| ---------- | ------ | ----------- |
-| reviveTime | number |             |
-| attackTime | number |             |
-
-## Methods
-
-| Type                                               | Name            | Parameters                                     |
-| -------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [DefibrillatorWeaponData](/vext/ref/fb/defibrillatorweapondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [DefibrillatorWeaponData](/vext/ref/fb/defibrillatorweapondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [DefibrillatorWeaponData](/vext/ref/fb/defibrillatorweapondata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### DefibrillatorWeaponData {#constructor-2}
+> **DefibrillatorWeaponData**(other: [WeaponData](/vext/ref/fb/weapondata))
+
+Casts an instance of type [WeaponData](/vext/ref/fb/weapondata) to [DefibrillatorWeaponData](/vext/ref/fb/defibrillatorweapondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [WeaponData](/vext/ref/fb/weapondata) | The instance to cast to [DefibrillatorWeaponData](/vext/ref/fb/defibrillatorweapondata). |
+
+### DefibrillatorWeaponData {#constructor-3}
+> **DefibrillatorWeaponData**(other: [ToolData](/vext/ref/fb/tooldata))
+
+Casts an instance of type [ToolData](/vext/ref/fb/tooldata) to [DefibrillatorWeaponData](/vext/ref/fb/defibrillatorweapondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ToolData](/vext/ref/fb/tooldata) | The instance to cast to [DefibrillatorWeaponData](/vext/ref/fb/defibrillatorweapondata). |
+
+### DefibrillatorWeaponData {#constructor-4}
+> **DefibrillatorWeaponData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [DefibrillatorWeaponData](/vext/ref/fb/defibrillatorweapondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [DefibrillatorWeaponData](/vext/ref/fb/defibrillatorweapondata). |
+
+## Properties
+### {{% prop-heading "reviveTime" %}}
+> **float**
+
+### {{% prop-heading "attackTime" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [DefibrillatorWeaponData](/vext/ref/fb/defibrillatorweapondata) type.
+

@@ -1,13 +1,10 @@
 ---
 title: CompressorChannelMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **CompressorChannelMode_Independent** | Value: **0** |
+| **CompressorChannelMode_Grouped** | Value: **1** |
 
-| Name                               | Value | Description |
-| ---------------------------------- | ----- | ----------- |
-| CompressorChannelMode\_Independent | 0     |             |
-| CompressorChannelMode\_Grouped     | 1     |             |

@@ -1,36 +1,52 @@
 ---
 title: TerrainMeshScatteringType
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[TerrainMeshScatteringType](#constructor-0)**() |
+| **[TerrainMeshScatteringType](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[TerrainMeshScatteringType](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "TerrainMeshScatteringType" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### TerrainMeshScatteringType {#constructor-0}
+> **TerrainMeshScatteringType**()
 
-| Constructor                                                                          | Description                                                                                                                               |
-| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| TerrainMeshScatteringType()                                                          | Create a new instance of this container type.                                                                                             |
-| TerrainMeshScatteringType(TerrainMeshScatteringType other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| TerrainMeshScatteringType([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TerrainMeshScatteringType](/vext/ref/fb/terrainmeshscatteringtype/). |
+Creates a new [TerrainMeshScatteringType](/vext/ref/fb/terrainmeshscatteringtype) frostbite instance.
 
-## Methods
+### TerrainMeshScatteringType {#constructor-1}
+> **TerrainMeshScatteringType**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                                   | Name            | Parameters                                     |
-| ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [TerrainMeshScatteringType](/vext/ref/fb/terrainmeshscatteringtype/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [TerrainMeshScatteringType](/vext/ref/fb/terrainmeshscatteringtype/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [TerrainMeshScatteringType](/vext/ref/fb/terrainmeshscatteringtype) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### TerrainMeshScatteringType {#constructor-2}
+> **TerrainMeshScatteringType**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TerrainMeshScatteringType](/vext/ref/fb/terrainmeshscatteringtype). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [TerrainMeshScatteringType](/vext/ref/fb/terrainmeshscatteringtype). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [TerrainMeshScatteringType](/vext/ref/fb/terrainmeshscatteringtype) type.
+

@@ -1,45 +1,109 @@
 ---
 title: VehicleEntryListenerBinding
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VehicleEntryListenerBinding](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "inVehicle" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "inOpenEntry" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "vehicleEntryFire" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "vehicleEntryYaw" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "vehicleEntryPitch" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "vehicleEntryRoll" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "vehicleEntryRotation" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "vehicleEntryForceX" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "vehicleEntryForceY" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "vehicleEntryForceZ" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "vehicleEntryIndex" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "vehicleEntryIndexUpdated" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "vehicleOpenEntryIndex" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "inVehicleRetrigger" >}} | [AntRef](/vext/ref/fb/antref) |
+| {{< prop "vehicleEntryChooserIndex" >}} | [AntRef](/vext/ref/fb/antref) |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [VehicleEntryListenerBinding](/vext/ref/fb/vehicleentrylistenerbinding) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VehicleEntryListenerBinding" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VehicleEntryListenerBinding {#constructor-0}
+> **VehicleEntryListenerBinding**()
 
-| Constructor                                                    | Description                                              |
-| -------------------------------------------------------------- | -------------------------------------------------------- |
-| VehicleEntryListenerBinding()                                  | Create a new instance of this structure type.            |
-| VehicleEntryListenerBinding(VehicleEntryListenerBinding other) | Create a reference copy of a structure of the same type. |
+Creates a new [VehicleEntryListenerBinding](/vext/ref/fb/vehicleentrylistenerbinding) frostbite structure.
 
 ## Properties
+### {{% prop-heading "inVehicle" %}}
+> **[AntRef](/vext/ref/fb/antref)**
 
-| Name                     | Type             | Description |
-| ------------------------ | ---------------- | ----------- |
-| inVehicle                | [AntRef](/vext/ref/fb/antref/) |             |
-| inOpenEntry              | [AntRef](/vext/ref/fb/antref/) |             |
-| vehicleEntryFire         | [AntRef](/vext/ref/fb/antref/) |             |
-| vehicleEntryYaw          | [AntRef](/vext/ref/fb/antref/) |             |
-| vehicleEntryPitch        | [AntRef](/vext/ref/fb/antref/) |             |
-| vehicleEntryRoll         | [AntRef](/vext/ref/fb/antref/) |             |
-| vehicleEntryRotation     | [AntRef](/vext/ref/fb/antref/) |             |
-| vehicleEntryForceX       | [AntRef](/vext/ref/fb/antref/) |             |
-| vehicleEntryForceY       | [AntRef](/vext/ref/fb/antref/) |             |
-| vehicleEntryForceZ       | [AntRef](/vext/ref/fb/antref/) |             |
-| vehicleEntryIndex        | [AntRef](/vext/ref/fb/antref/) |             |
-| vehicleEntryIndexUpdated | [AntRef](/vext/ref/fb/antref/) |             |
-| vehicleOpenEntryIndex    | [AntRef](/vext/ref/fb/antref/) |             |
-| inVehicleRetrigger       | [AntRef](/vext/ref/fb/antref/) |             |
-| vehicleEntryChooserIndex | [AntRef](/vext/ref/fb/antref/) |             |
+### {{% prop-heading "inOpenEntry" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "vehicleEntryFire" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "vehicleEntryYaw" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "vehicleEntryPitch" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "vehicleEntryRoll" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "vehicleEntryRotation" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "vehicleEntryForceX" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "vehicleEntryForceY" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "vehicleEntryForceZ" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "vehicleEntryIndex" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "vehicleEntryIndexUpdated" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "vehicleOpenEntryIndex" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "inVehicleRetrigger" %}}
+> **[AntRef](/vext/ref/fb/antref)**
+
+### {{% prop-heading "vehicleEntryChooserIndex" %}}
+> **[AntRef](/vext/ref/fb/antref)**
 
 ## Methods
-
-| Type                                                       | Name            | Parameters |
-| ---------------------------------------------------------- | --------------- | ---------- |
-| [VehicleEntryListenerBinding](/vext/ref/fb/vehicleentrylistenerbinding/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [VehicleEntryListenerBinding](/vext/ref/fb/vehicleentrylistenerbinding)
 
-> [VehicleEntryListenerBinding](/vext/ref/fb/vehicleentrylistenerbinding/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[VehicleEntryListenerBinding](/vext/ref/fb/vehicleentrylistenerbinding)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VehicleEntryListenerBinding](/vext/ref/fb/vehicleentrylistenerbinding) type.
+

@@ -1,44 +1,76 @@
 ---
 title: UIGenericItemDescription
 ---
-### Base Classes
 
-[UIItemDescription](/vext/ref/fb/uiitemdescription/)
+Inherits from 
+[UIItemDescription](/vext/ref/fb/uiitemdescription)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UIGenericItemDescription](#constructor-0)**() |
+| **[UIGenericItemDescription](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UIGenericItemDescription](#constructor-2)**(other: [UIItemDescription](/vext/ref/fb/uiitemdescription)) |
+| **[UIGenericItemDescription](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "identifier" >}} | string |
+| {{< prop "imagePath" >}} | string |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UIGenericItemDescription" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UIGenericItemDescription {#constructor-0}
+> **UIGenericItemDescription**()
 
-| Constructor                                                                         | Description                                                                                                                             |
-| ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| UIGenericItemDescription()                                                          | Create a new instance of this container type.                                                                                           |
-| UIGenericItemDescription(UIGenericItemDescription other)                            | Create a reference copy of an instance of the same type.                                                                                |
-| UIGenericItemDescription([UIItemDescription](/vext/ref/fb/uiitemdescription/) other)              | Upcast an instance of type [UIItemDescription](/vext/ref/fb/uiitemdescription/) to [UIGenericItemDescription](/vext/ref/fb/uigenericitemdescription/).              |
-| UIGenericItemDescription([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIGenericItemDescription](/vext/ref/fb/uigenericitemdescription/). |
+Creates a new [UIGenericItemDescription](/vext/ref/fb/uigenericitemdescription) frostbite instance.
 
-## Properties
+### UIGenericItemDescription {#constructor-1}
+> **UIGenericItemDescription**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name       | Type   | Description |
-| ---------- | ------ | ----------- |
-| identifier | string |             |
-| imagePath  | string |             |
-
-## Methods
-
-| Type                                                 | Name            | Parameters                                     |
-| ---------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [UIGenericItemDescription](/vext/ref/fb/uigenericitemdescription/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UIGenericItemDescription](/vext/ref/fb/uigenericitemdescription/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UIGenericItemDescription](/vext/ref/fb/uigenericitemdescription) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UIGenericItemDescription {#constructor-2}
+> **UIGenericItemDescription**(other: [UIItemDescription](/vext/ref/fb/uiitemdescription))
+
+Casts an instance of type [UIItemDescription](/vext/ref/fb/uiitemdescription) to [UIGenericItemDescription](/vext/ref/fb/uigenericitemdescription). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIItemDescription](/vext/ref/fb/uiitemdescription) | The instance to cast to [UIGenericItemDescription](/vext/ref/fb/uigenericitemdescription). |
+
+### UIGenericItemDescription {#constructor-3}
+> **UIGenericItemDescription**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UIGenericItemDescription](/vext/ref/fb/uigenericitemdescription). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UIGenericItemDescription](/vext/ref/fb/uigenericitemdescription). |
+
+## Properties
+### {{% prop-heading "identifier" %}}
+> **string**
+
+### {{% prop-heading "imagePath" %}}
+> **string**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UIGenericItemDescription](/vext/ref/fb/uigenericitemdescription) type.
+

@@ -1,44 +1,83 @@
 ---
 title: GravityData
 ---
-### Base Classes
 
-[ProcessorData](/vext/ref/fb/processordata/)
+Inherits from 
+[ProcessorData](/vext/ref/fb/processordata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[GravityData](#constructor-0)**() |
+| **[GravityData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[GravityData](#constructor-2)**(other: [ProcessorData](/vext/ref/fb/processordata)) |
+| **[GravityData](#constructor-3)**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata)) |
+| **[GravityData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "gravity" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "GravityData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### GravityData {#constructor-0}
+> **GravityData**()
 
-| Constructor                                                            | Description                                                                                                   |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| GravityData()                                                          | Create a new instance of this container type.                                                                 |
-| GravityData(GravityData other)                                         | Create a reference copy of an instance of the same type.                                                      |
-| GravityData([ProcessorData](/vext/ref/fb/processordata/) other)                      | Upcast an instance of type [ProcessorData](/vext/ref/fb/processordata/) to [GravityData](/vext/ref/fb/gravitydata/).                      |
-| GravityData([EmitterComponentData](/vext/ref/fb/emittercomponentdata/) other)        | Upcast an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata/) to [GravityData](/vext/ref/fb/gravitydata/).        |
-| GravityData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GravityData](/vext/ref/fb/gravitydata/). |
+Creates a new [GravityData](/vext/ref/fb/gravitydata) frostbite instance.
 
-## Properties
+### GravityData {#constructor-1}
+> **GravityData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name    | Type   | Description |
-| ------- | ------ | ----------- |
-| gravity | number |             |
-
-## Methods
-
-| Type                       | Name            | Parameters                                     |
-| -------------------------- | --------------- | ---------------------------------------------- |
-| [GravityData](/vext/ref/fb/gravitydata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [GravityData](/vext/ref/fb/gravitydata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [GravityData](/vext/ref/fb/gravitydata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### GravityData {#constructor-2}
+> **GravityData**(other: [ProcessorData](/vext/ref/fb/processordata))
+
+Casts an instance of type [ProcessorData](/vext/ref/fb/processordata) to [GravityData](/vext/ref/fb/gravitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ProcessorData](/vext/ref/fb/processordata) | The instance to cast to [GravityData](/vext/ref/fb/gravitydata). |
+
+### GravityData {#constructor-3}
+> **GravityData**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata))
+
+Casts an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata) to [GravityData](/vext/ref/fb/gravitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EmitterComponentData](/vext/ref/fb/emittercomponentdata) | The instance to cast to [GravityData](/vext/ref/fb/gravitydata). |
+
+### GravityData {#constructor-4}
+> **GravityData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GravityData](/vext/ref/fb/gravitydata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [GravityData](/vext/ref/fb/gravitydata). |
+
+## Properties
+### {{% prop-heading "gravity" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [GravityData](/vext/ref/fb/gravitydata) type.
+

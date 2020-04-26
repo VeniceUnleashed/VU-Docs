@@ -1,44 +1,76 @@
 ---
 title: TickEvent
 ---
-### Base Classes
 
-[MetricEvent](/vext/ref/fb/metricevent/)
+Inherits from 
+[MetricEvent](/vext/ref/fb/metricevent)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[TickEvent](#constructor-0)**() |
+| **[TickEvent](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[TickEvent](#constructor-2)**(other: [MetricEvent](/vext/ref/fb/metricevent)) |
+| **[TickEvent](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "position" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+| {{< prop "time" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "TickEvent" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### TickEvent {#constructor-0}
+> **TickEvent**()
 
-| Constructor                                                          | Description                                                                                               |
-| -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| TickEvent()                                                          | Create a new instance of this container type.                                                             |
-| TickEvent(TickEvent other)                                           | Create a reference copy of an instance of the same type.                                                  |
-| TickEvent([MetricEvent](/vext/ref/fb/metricevent/) other)                          | Upcast an instance of type [MetricEvent](/vext/ref/fb/metricevent/) to [TickEvent](/vext/ref/fb/tickevent/).                          |
-| TickEvent([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TickEvent](/vext/ref/fb/tickevent/). |
+Creates a new [TickEvent](/vext/ref/fb/tickevent) frostbite instance.
 
-## Properties
+### TickEvent {#constructor-1}
+> **TickEvent**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name     | Type                              | Description |
-| -------- | --------------------------------- | ----------- |
-| position | [Vec3](/vext/ref/shared/class/vec3) |             |
-| time     | number                            |             |
-
-## Methods
-
-| Type                   | Name            | Parameters                                     |
-| ---------------------- | --------------- | ---------------------------------------------- |
-| [TickEvent](/vext/ref/fb/tickevent/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [TickEvent](/vext/ref/fb/tickevent/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [TickEvent](/vext/ref/fb/tickevent) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### TickEvent {#constructor-2}
+> **TickEvent**(other: [MetricEvent](/vext/ref/fb/metricevent))
+
+Casts an instance of type [MetricEvent](/vext/ref/fb/metricevent) to [TickEvent](/vext/ref/fb/tickevent). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [MetricEvent](/vext/ref/fb/metricevent) | The instance to cast to [TickEvent](/vext/ref/fb/tickevent). |
+
+### TickEvent {#constructor-3}
+> **TickEvent**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [TickEvent](/vext/ref/fb/tickevent). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [TickEvent](/vext/ref/fb/tickevent). |
+
+## Properties
+### {{% prop-heading "position" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+### {{% prop-heading "time" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [TickEvent](/vext/ref/fb/tickevent) type.
+

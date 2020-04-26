@@ -1,40 +1,96 @@
 ---
 title: AnimatedDestructionComponentData
 ---
-### Base Classes
 
-[AntAnimatableComponentData](/vext/ref/fb/antanimatablecomponentdata/)
+Inherits from 
+[AntAnimatableComponentData](/vext/ref/fb/antanimatablecomponentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AnimatedDestructionComponentData](#constructor-0)**() |
+| **[AnimatedDestructionComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[AnimatedDestructionComponentData](#constructor-2)**(other: [AntAnimatableComponentData](/vext/ref/fb/antanimatablecomponentdata)) |
+| **[AnimatedDestructionComponentData](#constructor-3)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[AnimatedDestructionComponentData](#constructor-4)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[AnimatedDestructionComponentData](#constructor-5)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[AnimatedDestructionComponentData](#constructor-6)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AnimatedDestructionComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AnimatedDestructionComponentData {#constructor-0}
+> **AnimatedDestructionComponentData**()
 
-| Constructor                                                                                      | Description                                                                                                                                                  |
-| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| AnimatedDestructionComponentData()                                                               | Create a new instance of this container type.                                                                                                                |
-| AnimatedDestructionComponentData(AnimatedDestructionComponentData other)                         | Create a reference copy of an instance of the same type.                                                                                                     |
-| AnimatedDestructionComponentData([AntAnimatableComponentData](/vext/ref/fb/antanimatablecomponentdata/) other) | Upcast an instance of type [AntAnimatableComponentData](/vext/ref/fb/antanimatablecomponentdata/) to [AnimatedDestructionComponentData](/vext/ref/fb/animateddestructioncomponentdata/). |
-| AnimatedDestructionComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                           | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [AnimatedDestructionComponentData](/vext/ref/fb/animateddestructioncomponentdata/).                           |
-| AnimatedDestructionComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                         | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [AnimatedDestructionComponentData](/vext/ref/fb/animateddestructioncomponentdata/).                         |
-| AnimatedDestructionComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)                   | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [AnimatedDestructionComponentData](/vext/ref/fb/animateddestructioncomponentdata/).                   |
-| AnimatedDestructionComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other)      | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AnimatedDestructionComponentData](/vext/ref/fb/animateddestructioncomponentdata/).      |
+Creates a new [AnimatedDestructionComponentData](/vext/ref/fb/animateddestructioncomponentdata) frostbite instance.
 
-## Methods
+### AnimatedDestructionComponentData {#constructor-1}
+> **AnimatedDestructionComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                                                 | Name            | Parameters                                     |
-| -------------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [AnimatedDestructionComponentData](/vext/ref/fb/animateddestructioncomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [AnimatedDestructionComponentData](/vext/ref/fb/animateddestructioncomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [AnimatedDestructionComponentData](/vext/ref/fb/animateddestructioncomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### AnimatedDestructionComponentData {#constructor-2}
+> **AnimatedDestructionComponentData**(other: [AntAnimatableComponentData](/vext/ref/fb/antanimatablecomponentdata))
+
+Casts an instance of type [AntAnimatableComponentData](/vext/ref/fb/antanimatablecomponentdata) to [AnimatedDestructionComponentData](/vext/ref/fb/animateddestructioncomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AntAnimatableComponentData](/vext/ref/fb/antanimatablecomponentdata) | The instance to cast to [AnimatedDestructionComponentData](/vext/ref/fb/animateddestructioncomponentdata). |
+
+### AnimatedDestructionComponentData {#constructor-3}
+> **AnimatedDestructionComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [AnimatedDestructionComponentData](/vext/ref/fb/animateddestructioncomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [AnimatedDestructionComponentData](/vext/ref/fb/animateddestructioncomponentdata). |
+
+### AnimatedDestructionComponentData {#constructor-4}
+> **AnimatedDestructionComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [AnimatedDestructionComponentData](/vext/ref/fb/animateddestructioncomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [AnimatedDestructionComponentData](/vext/ref/fb/animateddestructioncomponentdata). |
+
+### AnimatedDestructionComponentData {#constructor-5}
+> **AnimatedDestructionComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [AnimatedDestructionComponentData](/vext/ref/fb/animateddestructioncomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [AnimatedDestructionComponentData](/vext/ref/fb/animateddestructioncomponentdata). |
+
+### AnimatedDestructionComponentData {#constructor-6}
+> **AnimatedDestructionComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AnimatedDestructionComponentData](/vext/ref/fb/animateddestructioncomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [AnimatedDestructionComponentData](/vext/ref/fb/animateddestructioncomponentdata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AnimatedDestructionComponentData](/vext/ref/fb/animateddestructioncomponentdata) type.
+

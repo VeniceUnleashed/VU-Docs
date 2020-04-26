@@ -1,19 +1,16 @@
 ---
 title: UIMinimapZoomState
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **UIMinimapZoomState_Default** | Value: **0** |
+| **UIMinimapZoomState_Overview** | Value: **1** |
+| **UIMinimapZoomState_CombatArea** | Value: **2** |
+| **UIMinimapZoomState_Mission** | Value: **3** |
+| **UIMinimapZoomState_Artillery** | Value: **4** |
+| **UIMinimapZoomState_Spawn** | Value: **5** |
+| **UIMinimapZoomState_ManDown** | Value: **6** |
+| **UIMinimapZoomState_Count** | Value: **7** |
 
-| Name                           | Value | Description |
-| ------------------------------ | ----- | ----------- |
-| UIMinimapZoomState\_Default    | 0     |             |
-| UIMinimapZoomState\_Overview   | 1     |             |
-| UIMinimapZoomState\_CombatArea | 2     |             |
-| UIMinimapZoomState\_Mission    | 3     |             |
-| UIMinimapZoomState\_Artillery  | 4     |             |
-| UIMinimapZoomState\_Spawn      | 5     |             |
-| UIMinimapZoomState\_ManDown    | 6     |             |
-| UIMinimapZoomState\_Count      | 7     |             |

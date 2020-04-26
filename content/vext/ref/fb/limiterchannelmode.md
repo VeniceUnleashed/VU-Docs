@@ -1,13 +1,10 @@
 ---
 title: LimiterChannelMode
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **LimiterChannelMode_Independent** | Value: **0** |
+| **LimiterChannelMode_Grouped** | Value: **1** |
 
-| Name                            | Value | Description |
-| ------------------------------- | ----- | ----------- |
-| LimiterChannelMode\_Independent | 0     |             |
-| LimiterChannelMode\_Grouped     | 1     |             |

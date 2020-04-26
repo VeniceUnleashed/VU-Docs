@@ -1,14 +1,11 @@
 ---
 title: FieldAccessType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **FieldAccessType_Source** | Value: **0** |
+| **FieldAccessType_Target** | Value: **1** |
+| **FieldAccessType_SourceAndTarget** | Value: **2** |
 
-| Name                             | Value | Description |
-| -------------------------------- | ----- | ----------- |
-| FieldAccessType\_Source          | 0     |             |
-| FieldAccessType\_Target          | 1     |             |
-| FieldAccessType\_SourceAndTarget | 2     |             |

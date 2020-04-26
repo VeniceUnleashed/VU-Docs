@@ -1,12 +1,9 @@
 ---
 title: PixelNormalSpace
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **PnsTangent** | Value: **0** |
 
-| Name       | Value | Description |
-| ---------- | ----- | ----------- |
-| PnsTangent | 0     |             |

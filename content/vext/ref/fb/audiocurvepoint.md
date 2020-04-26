@@ -1,33 +1,61 @@
 ---
 title: AudioCurvePoint
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AudioCurvePoint](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "x" >}} | float |
+| {{< prop "y" >}} | float |
+| {{< prop "k" >}} | float |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [AudioCurvePoint](/vext/ref/fb/audiocurvepoint) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AudioCurvePoint" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AudioCurvePoint {#constructor-0}
+> **AudioCurvePoint**()
 
-| Constructor                            | Description                                              |
-| -------------------------------------- | -------------------------------------------------------- |
-| AudioCurvePoint()                      | Create a new instance of this structure type.            |
-| AudioCurvePoint(AudioCurvePoint other) | Create a reference copy of a structure of the same type. |
+Creates a new [AudioCurvePoint](/vext/ref/fb/audiocurvepoint) frostbite structure.
 
 ## Properties
+### {{% prop-heading "x" %}}
+> **float**
 
-| Name | Type   | Description |
-| ---- | ------ | ----------- |
-| x    | number |             |
-| y    | number |             |
-| k    | number |             |
+### {{% prop-heading "y" %}}
+> **float**
+
+### {{% prop-heading "k" %}}
+> **float**
 
 ## Methods
-
-| Type                               | Name            | Parameters |
-| ---------------------------------- | --------------- | ---------- |
-| [AudioCurvePoint](/vext/ref/fb/audiocurvepoint/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [AudioCurvePoint](/vext/ref/fb/audiocurvepoint)
 
-> [AudioCurvePoint](/vext/ref/fb/audiocurvepoint/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[AudioCurvePoint](/vext/ref/fb/audiocurvepoint)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AudioCurvePoint](/vext/ref/fb/audiocurvepoint) type.
+

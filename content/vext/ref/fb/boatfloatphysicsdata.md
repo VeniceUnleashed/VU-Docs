@@ -1,44 +1,83 @@
 ---
 title: BoatFloatPhysicsData
 ---
-### Base Classes
 
-[HullFloatPhysicsData](/vext/ref/fb/hullfloatphysicsdata/)
+Inherits from 
+[HullFloatPhysicsData](/vext/ref/fb/hullfloatphysicsdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[BoatFloatPhysicsData](#constructor-0)**() |
+| **[BoatFloatPhysicsData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[BoatFloatPhysicsData](#constructor-2)**(other: [HullFloatPhysicsData](/vext/ref/fb/hullfloatphysicsdata)) |
+| **[BoatFloatPhysicsData](#constructor-3)**(other: [FloatPhysicsData](/vext/ref/fb/floatphysicsdata)) |
+| **[BoatFloatPhysicsData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "frontRatio" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "BoatFloatPhysicsData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### BoatFloatPhysicsData {#constructor-0}
+> **BoatFloatPhysicsData**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| BoatFloatPhysicsData()                                                          | Create a new instance of this container type.                                                                                   |
-| BoatFloatPhysicsData(BoatFloatPhysicsData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| BoatFloatPhysicsData([HullFloatPhysicsData](/vext/ref/fb/hullfloatphysicsdata/) other)        | Upcast an instance of type [HullFloatPhysicsData](/vext/ref/fb/hullfloatphysicsdata/) to [BoatFloatPhysicsData](/vext/ref/fb/boatfloatphysicsdata/).        |
-| BoatFloatPhysicsData([FloatPhysicsData](/vext/ref/fb/floatphysicsdata/) other)                | Upcast an instance of type [FloatPhysicsData](/vext/ref/fb/floatphysicsdata/) to [BoatFloatPhysicsData](/vext/ref/fb/boatfloatphysicsdata/).                |
-| BoatFloatPhysicsData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BoatFloatPhysicsData](/vext/ref/fb/boatfloatphysicsdata/). |
+Creates a new [BoatFloatPhysicsData](/vext/ref/fb/boatfloatphysicsdata) frostbite instance.
 
-## Properties
+### BoatFloatPhysicsData {#constructor-1}
+> **BoatFloatPhysicsData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name       | Type   | Description |
-| ---------- | ------ | ----------- |
-| frontRatio | number |             |
-
-## Methods
-
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [BoatFloatPhysicsData](/vext/ref/fb/boatfloatphysicsdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [BoatFloatPhysicsData](/vext/ref/fb/boatfloatphysicsdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [BoatFloatPhysicsData](/vext/ref/fb/boatfloatphysicsdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### BoatFloatPhysicsData {#constructor-2}
+> **BoatFloatPhysicsData**(other: [HullFloatPhysicsData](/vext/ref/fb/hullfloatphysicsdata))
+
+Casts an instance of type [HullFloatPhysicsData](/vext/ref/fb/hullfloatphysicsdata) to [BoatFloatPhysicsData](/vext/ref/fb/boatfloatphysicsdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [HullFloatPhysicsData](/vext/ref/fb/hullfloatphysicsdata) | The instance to cast to [BoatFloatPhysicsData](/vext/ref/fb/boatfloatphysicsdata). |
+
+### BoatFloatPhysicsData {#constructor-3}
+> **BoatFloatPhysicsData**(other: [FloatPhysicsData](/vext/ref/fb/floatphysicsdata))
+
+Casts an instance of type [FloatPhysicsData](/vext/ref/fb/floatphysicsdata) to [BoatFloatPhysicsData](/vext/ref/fb/boatfloatphysicsdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [FloatPhysicsData](/vext/ref/fb/floatphysicsdata) | The instance to cast to [BoatFloatPhysicsData](/vext/ref/fb/boatfloatphysicsdata). |
+
+### BoatFloatPhysicsData {#constructor-4}
+> **BoatFloatPhysicsData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [BoatFloatPhysicsData](/vext/ref/fb/boatfloatphysicsdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [BoatFloatPhysicsData](/vext/ref/fb/boatfloatphysicsdata). |
+
+## Properties
+### {{% prop-heading "frontRatio" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [BoatFloatPhysicsData](/vext/ref/fb/boatfloatphysicsdata) type.
+

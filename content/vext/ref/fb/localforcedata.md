@@ -1,44 +1,83 @@
 ---
 title: LocalForceData
 ---
-### Base Classes
 
-[ProcessorData](/vext/ref/fb/processordata/)
+Inherits from 
+[ProcessorData](/vext/ref/fb/processordata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[LocalForceData](#constructor-0)**() |
+| **[LocalForceData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[LocalForceData](#constructor-2)**(other: [ProcessorData](/vext/ref/fb/processordata)) |
+| **[LocalForceData](#constructor-3)**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata)) |
+| **[LocalForceData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "localForce" >}} | [Vec3](/vext/ref/shared/class/vec3) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "LocalForceData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### LocalForceData {#constructor-0}
+> **LocalForceData**()
 
-| Constructor                                                               | Description                                                                                                         |
-| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| LocalForceData()                                                          | Create a new instance of this container type.                                                                       |
-| LocalForceData(LocalForceData other)                                      | Create a reference copy of an instance of the same type.                                                            |
-| LocalForceData([ProcessorData](/vext/ref/fb/processordata/) other)                      | Upcast an instance of type [ProcessorData](/vext/ref/fb/processordata/) to [LocalForceData](/vext/ref/fb/localforcedata/).                      |
-| LocalForceData([EmitterComponentData](/vext/ref/fb/emittercomponentdata/) other)        | Upcast an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata/) to [LocalForceData](/vext/ref/fb/localforcedata/).        |
-| LocalForceData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LocalForceData](/vext/ref/fb/localforcedata/). |
+Creates a new [LocalForceData](/vext/ref/fb/localforcedata) frostbite instance.
 
-## Properties
+### LocalForceData {#constructor-1}
+> **LocalForceData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name       | Type                              | Description |
-| ---------- | --------------------------------- | ----------- |
-| localForce | [Vec3](/vext/ref/shared/class/vec3) |             |
-
-## Methods
-
-| Type                             | Name            | Parameters                                     |
-| -------------------------------- | --------------- | ---------------------------------------------- |
-| [LocalForceData](/vext/ref/fb/localforcedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [LocalForceData](/vext/ref/fb/localforcedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [LocalForceData](/vext/ref/fb/localforcedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### LocalForceData {#constructor-2}
+> **LocalForceData**(other: [ProcessorData](/vext/ref/fb/processordata))
+
+Casts an instance of type [ProcessorData](/vext/ref/fb/processordata) to [LocalForceData](/vext/ref/fb/localforcedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ProcessorData](/vext/ref/fb/processordata) | The instance to cast to [LocalForceData](/vext/ref/fb/localforcedata). |
+
+### LocalForceData {#constructor-3}
+> **LocalForceData**(other: [EmitterComponentData](/vext/ref/fb/emittercomponentdata))
+
+Casts an instance of type [EmitterComponentData](/vext/ref/fb/emittercomponentdata) to [LocalForceData](/vext/ref/fb/localforcedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EmitterComponentData](/vext/ref/fb/emittercomponentdata) | The instance to cast to [LocalForceData](/vext/ref/fb/localforcedata). |
+
+### LocalForceData {#constructor-4}
+> **LocalForceData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LocalForceData](/vext/ref/fb/localforcedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [LocalForceData](/vext/ref/fb/localforcedata). |
+
+## Properties
+### {{% prop-heading "localForce" %}}
+> **[Vec3](/vext/ref/shared/class/vec3)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [LocalForceData](/vext/ref/fb/localforcedata) type.
+

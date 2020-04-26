@@ -1,15 +1,12 @@
 ---
 title: AntPackagingType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **AntPackagingType_Static** | Value: **0** |
+| **AntPackagingType_Chunk** | Value: **1** |
+| **AntPackagingType_Bundle** | Value: **2** |
+| **AntPackagingType_AnimationSet** | Value: **3** |
 
-| Name                           | Value | Description |
-| ------------------------------ | ----- | ----------- |
-| AntPackagingType\_Static       | 0     |             |
-| AntPackagingType\_Chunk        | 1     |             |
-| AntPackagingType\_Bundle       | 2     |             |
-| AntPackagingType\_AnimationSet | 3     |             |

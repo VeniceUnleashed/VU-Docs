@@ -1,58 +1,125 @@
 ---
 title: LockingControllerData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[LockingControllerData](#constructor-0)**() |
+| **[LockingControllerData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[LockingControllerData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "zoomLevelLock" >}} | [ZoomLevelLockData](/vext/ref/fb/zoomlevellockdata)[] |
+| {{< prop "lockTime" >}} | float |
+| {{< prop "releaseTime" >}} | float |
+| {{< prop "releaseOnNewTargetTime" >}} | float |
+| {{< prop "sampleRate" >}} | float |
+| {{< prop "holdStillThreshold" >}} | float |
+| {{< prop "rayLength" >}} | float |
+| {{< prop "acceptanceAngle" >}} | float |
+| {{< prop "minimumLockTime" >}} | float |
+| {{< prop "sensitivity" >}} | float |
+| {{< prop "angleConstant" >}} | float |
+| {{< prop "distanceConstant" >}} | float |
+| {{< prop "lockOnWorldSpacePos" >}} | bool |
+| {{< prop "lockOnVisibleTargetsOnly" >}} | bool |
+| {{< prop "positionOnly" >}} | bool |
+| {{< prop "lockOnEmptyVehicles" >}} | bool |
+| {{< prop "ignoreHeigthLockDistance" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "LockingControllerData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### LockingControllerData {#constructor-0}
+> **LockingControllerData**()
 
-| Constructor                                                                      | Description                                                                                                                       |
-| -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| LockingControllerData()                                                          | Create a new instance of this container type.                                                                                     |
-| LockingControllerData(LockingControllerData other)                               | Create a reference copy of an instance of the same type.                                                                          |
-| LockingControllerData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LockingControllerData](/vext/ref/fb/lockingcontrollerdata/). |
+Creates a new [LockingControllerData](/vext/ref/fb/lockingcontrollerdata) frostbite instance.
 
-## Properties
+### LockingControllerData {#constructor-1}
+> **LockingControllerData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                     | Type                                       | Description |
-| ------------------------ | ------------------------------------------ | ----------- |
-| zoomLevelLock            | [ZoomLevelLockData](/vext/ref/fb/zoomlevellockdata/)\[\] |             |
-| lockTime                 | number                                     |             |
-| releaseTime              | number                                     |             |
-| releaseOnNewTargetTime   | number                                     |             |
-| sampleRate               | number                                     |             |
-| holdStillThreshold       | number                                     |             |
-| rayLength                | number                                     |             |
-| acceptanceAngle          | number                                     |             |
-| minimumLockTime          | number                                     |             |
-| sensitivity              | number                                     |             |
-| angleConstant            | number                                     |             |
-| distanceConstant         | number                                     |             |
-| lockOnWorldSpacePos      | bool                                       |             |
-| lockOnVisibleTargetsOnly | bool                                       |             |
-| positionOnly             | bool                                       |             |
-| lockOnEmptyVehicles      | bool                                       |             |
-| ignoreHeigthLockDistance | bool                                       |             |
-
-## Methods
-
-| Type                                           | Name            | Parameters                                     |
-| ---------------------------------------------- | --------------- | ---------------------------------------------- |
-| [LockingControllerData](/vext/ref/fb/lockingcontrollerdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [LockingControllerData](/vext/ref/fb/lockingcontrollerdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [LockingControllerData](/vext/ref/fb/lockingcontrollerdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### LockingControllerData {#constructor-2}
+> **LockingControllerData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [LockingControllerData](/vext/ref/fb/lockingcontrollerdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [LockingControllerData](/vext/ref/fb/lockingcontrollerdata). |
+
+## Properties
+### {{% prop-heading "zoomLevelLock" %}}
+> **[ZoomLevelLockData](/vext/ref/fb/zoomlevellockdata)**[]
+
+### {{% prop-heading "lockTime" %}}
+> **float**
+
+### {{% prop-heading "releaseTime" %}}
+> **float**
+
+### {{% prop-heading "releaseOnNewTargetTime" %}}
+> **float**
+
+### {{% prop-heading "sampleRate" %}}
+> **float**
+
+### {{% prop-heading "holdStillThreshold" %}}
+> **float**
+
+### {{% prop-heading "rayLength" %}}
+> **float**
+
+### {{% prop-heading "acceptanceAngle" %}}
+> **float**
+
+### {{% prop-heading "minimumLockTime" %}}
+> **float**
+
+### {{% prop-heading "sensitivity" %}}
+> **float**
+
+### {{% prop-heading "angleConstant" %}}
+> **float**
+
+### {{% prop-heading "distanceConstant" %}}
+> **float**
+
+### {{% prop-heading "lockOnWorldSpacePos" %}}
+> **bool**
+
+### {{% prop-heading "lockOnVisibleTargetsOnly" %}}
+> **bool**
+
+### {{% prop-heading "positionOnly" %}}
+> **bool**
+
+### {{% prop-heading "lockOnEmptyVehicles" %}}
+> **bool**
+
+### {{% prop-heading "ignoreHeigthLockDistance" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [LockingControllerData](/vext/ref/fb/lockingcontrollerdata) type.
+

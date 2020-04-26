@@ -1,44 +1,83 @@
 ---
 title: IntPropertyTrackData
 ---
-### Base Classes
 
-[SimplePropertyTrackData](/vext/ref/fb/simplepropertytrackdata/)
+Inherits from 
+[SimplePropertyTrackData](/vext/ref/fb/simplepropertytrackdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[IntPropertyTrackData](#constructor-0)**() |
+| **[IntPropertyTrackData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[IntPropertyTrackData](#constructor-2)**(other: [SimplePropertyTrackData](/vext/ref/fb/simplepropertytrackdata)) |
+| **[IntPropertyTrackData](#constructor-3)**(other: [PropertyTrackData](/vext/ref/fb/propertytrackdata)) |
+| **[IntPropertyTrackData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "values" >}} | int[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "IntPropertyTrackData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### IntPropertyTrackData {#constructor-0}
+> **IntPropertyTrackData**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| IntPropertyTrackData()                                                          | Create a new instance of this container type.                                                                                   |
-| IntPropertyTrackData(IntPropertyTrackData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| IntPropertyTrackData([SimplePropertyTrackData](/vext/ref/fb/simplepropertytrackdata/) other)  | Upcast an instance of type [SimplePropertyTrackData](/vext/ref/fb/simplepropertytrackdata/) to [IntPropertyTrackData](/vext/ref/fb/intpropertytrackdata/).  |
-| IntPropertyTrackData([PropertyTrackData](/vext/ref/fb/propertytrackdata/) other)              | Upcast an instance of type [PropertyTrackData](/vext/ref/fb/propertytrackdata/) to [IntPropertyTrackData](/vext/ref/fb/intpropertytrackdata/).              |
-| IntPropertyTrackData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [IntPropertyTrackData](/vext/ref/fb/intpropertytrackdata/). |
+Creates a new [IntPropertyTrackData](/vext/ref/fb/intpropertytrackdata) frostbite instance.
 
-## Properties
+### IntPropertyTrackData {#constructor-1}
+> **IntPropertyTrackData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name   | Type       | Description |
-| ------ | ---------- | ----------- |
-| values | number\[\] |             |
-
-## Methods
-
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [IntPropertyTrackData](/vext/ref/fb/intpropertytrackdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [IntPropertyTrackData](/vext/ref/fb/intpropertytrackdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [IntPropertyTrackData](/vext/ref/fb/intpropertytrackdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### IntPropertyTrackData {#constructor-2}
+> **IntPropertyTrackData**(other: [SimplePropertyTrackData](/vext/ref/fb/simplepropertytrackdata))
+
+Casts an instance of type [SimplePropertyTrackData](/vext/ref/fb/simplepropertytrackdata) to [IntPropertyTrackData](/vext/ref/fb/intpropertytrackdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SimplePropertyTrackData](/vext/ref/fb/simplepropertytrackdata) | The instance to cast to [IntPropertyTrackData](/vext/ref/fb/intpropertytrackdata). |
+
+### IntPropertyTrackData {#constructor-3}
+> **IntPropertyTrackData**(other: [PropertyTrackData](/vext/ref/fb/propertytrackdata))
+
+Casts an instance of type [PropertyTrackData](/vext/ref/fb/propertytrackdata) to [IntPropertyTrackData](/vext/ref/fb/intpropertytrackdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [PropertyTrackData](/vext/ref/fb/propertytrackdata) | The instance to cast to [IntPropertyTrackData](/vext/ref/fb/intpropertytrackdata). |
+
+### IntPropertyTrackData {#constructor-4}
+> **IntPropertyTrackData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [IntPropertyTrackData](/vext/ref/fb/intpropertytrackdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [IntPropertyTrackData](/vext/ref/fb/intpropertytrackdata). |
+
+## Properties
+### {{% prop-heading "values" %}}
+> **int**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [IntPropertyTrackData](/vext/ref/fb/intpropertytrackdata) type.
+

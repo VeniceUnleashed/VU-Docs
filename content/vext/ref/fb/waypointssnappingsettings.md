@@ -1,14 +1,11 @@
 ---
 title: WaypointsSnappingSettings
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **UseShapeSettings** | Value: **0** |
+| **SnapToTerrain** | Value: **1** |
+| **NoSnap** | Value: **2** |
 
-| Name             | Value | Description |
-| ---------------- | ----- | ----------- |
-| UseShapeSettings | 0     |             |
-| SnapToTerrain    | 1     |             |
-| NoSnap           | 2     |             |

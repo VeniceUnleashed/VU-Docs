@@ -1,83 +1,232 @@
 ---
 title: GameSettings
 ---
-### Base Classes
 
-[SystemSettings](/vext/ref/fb/systemsettings/)
+Inherits from 
+[SystemSettings](/vext/ref/fb/systemsettings)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[GameSettings](#constructor-0)**() |
+| **[GameSettings](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[GameSettings](#constructor-2)**(other: [SystemSettings](/vext/ref/fb/systemsettings)) |
+| **[GameSettings](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "maxPlayerCount" >}} | int |
+| {{< prop "maxSpectatorCount" >}} | int |
+| {{< prop "layerInclusionTable" >}} | [SubWorldInclusion](/vext/ref/fb/subworldinclusion) \| nil |
+| {{< prop "logFileCollisionMode" >}} | [LogFileCollisionMode](/vext/ref/fb/logfilecollisionmode) |
+| {{< prop "logFileRotationHistoryLength" >}} | int |
+| {{< prop "level" >}} | string |
+| {{< prop "defaultLayerInclusion" >}} | string |
+| {{< prop "inputConfiguration" >}} | [InputConfigurationAsset](/vext/ref/fb/inputconfigurationasset)[] |
+| {{< prop "defaultTeamId" >}} | [TeamId](/vext/ref/fb/teamid) |
+| {{< prop "levelWarmUpTime" >}} | float |
+| {{< prop "timeToWaitForQuitTaskCompletion" >}} | float |
+| {{< prop "platform" >}} | [GamePlatform](/vext/ref/fb/gameplatform) |
+| {{< prop "version" >}} | [VersionData](/vext/ref/fb/versiondata) \| nil |
+| {{< prop "pS3ContentRatingAge" >}} | int |
+| {{< prop "difficultyIndex" >}} | int |
+| {{< prop "timeBeforeSpawnIsAllowed" >}} | float |
+| {{< prop "soldierWeaponSwitching" >}} | [SoldierWeaponSwitchingData](/vext/ref/fb/soldierweaponswitchingdata) \| nil |
+| {{< prop "logHistory" >}} | int |
+| {{< prop "difficultySettings" >}} | [DifficultyDatas](/vext/ref/fb/difficultydatas) \| nil |
+| {{< prop "metadataContainers" >}} | [BlueprintBundleMetadataContainer](/vext/ref/fb/blueprintbundlemetadatacontainer)[] |
+| {{< prop "currentSKU" >}} | [SKU](/vext/ref/fb/sku) |
+| {{< prop "player" >}} | [PlayerData](/vext/ref/fb/playerdata) \| nil |
+| {{< prop "logFileEnable" >}} | bool |
+| {{< prop "rotateLogs" >}} | bool |
+| {{< prop "enableLoadingProfile" >}} | bool |
+| {{< prop "adjustVehicleCenterOfMass" >}} | bool |
+| {{< prop "autoAimEnabled" >}} | bool |
+| {{< prop "hasUnlimitedAmmo" >}} | bool |
+| {{< prop "hasUnlimitedMags" >}} | bool |
+| {{< prop "resourceRefreshAlwaysAllowed" >}} | bool |
+| {{< prop "useSpeedBasedDetailedCollision" >}} | bool |
+| {{< prop "aimAssistEnabled" >}} | bool |
+| {{< prop "aimAssistUsePolynomials" >}} | bool |
+| {{< prop "forceFreeStreaming" >}} | bool |
+| {{< prop "forceDisableFreeStreaming" >}} | bool |
+| {{< prop "isGodMode" >}} | bool |
+| {{< prop "isJesusMode" >}} | bool |
+| {{< prop "isJesusModeAi" >}} | bool |
+| {{< prop "useSingleWeaponSelector" >}} | bool |
+| {{< prop "gameAdministrationEnabled" >}} | bool |
+| {{< prop "allowDestructionOutsideCombatArea" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "GameSettings" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### GameSettings {#constructor-0}
+> **GameSettings**()
 
-| Constructor                                                             | Description                                                                                                     |
-| ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| GameSettings()                                                          | Create a new instance of this container type.                                                                   |
-| GameSettings(GameSettings other)                                        | Create a reference copy of an instance of the same type.                                                        |
-| GameSettings([SystemSettings](/vext/ref/fb/systemsettings/) other)                    | Upcast an instance of type [SystemSettings](/vext/ref/fb/systemsettings/) to [GameSettings](/vext/ref/fb/gamesettings/).                    |
-| GameSettings([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GameSettings](/vext/ref/fb/gamesettings/). |
+Creates a new [GameSettings](/vext/ref/fb/gamesettings) frostbite instance.
 
-## Properties
+### GameSettings {#constructor-1}
+> **GameSettings**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                              | Type                                                                     | Description |
-| --------------------------------- | ------------------------------------------------------------------------ | ----------- |
-| maxPlayerCount                    | number                                                                   |             |
-| maxSpectatorCount                 | number                                                                   |             |
-| layerInclusionTable               | [SubWorldInclusion](/vext/ref/fb/subworldinclusion/)                                   |             |
-| logFileCollisionMode              | [LogFileCollisionMode](/vext/ref/fb/logfilecollisionmode/)                             |             |
-| logFileRotationHistoryLength      | number                                                                   |             |
-| level                             | string                                                                   |             |
-| defaultLayerInclusion             | string                                                                   |             |
-| inputConfiguration                | [InputConfigurationAsset](/vext/ref/fb/inputconfigurationasset/)\[\]                   |             |
-| defaultTeamId                     | [TeamId](/vext/ref/fb/teamid/)                                                         |             |
-| levelWarmUpTime                   | number                                                                   |             |
-| timeToWaitForQuitTaskCompletion   | number                                                                   |             |
-| platform                          | [GamePlatform](/vext/ref/fb/gameplatform/)                                             |             |
-| version                           | [VersionData](/vext/ref/fb/versiondata/)                                               |             |
-| pS3ContentRatingAge               | number                                                                   |             |
-| difficultyIndex                   | number                                                                   |             |
-| timeBeforeSpawnIsAllowed          | number                                                                   |             |
-| soldierWeaponSwitching            | [SoldierWeaponSwitchingData](/vext/ref/fb/soldierweaponswitchingdata/)                 |             |
-| logHistory                        | number                                                                   |             |
-| difficultySettings                | [DifficultyDatas](/vext/ref/fb/difficultydatas/)                                       |             |
-| metadataContainers                | [BlueprintBundleMetadataContainer](/vext/ref/fb/blueprintbundlemetadatacontainer/)\[\] |             |
-| currentSKU                        | [SKU](/vext/ref/fb/sku/)                                                               |             |
-| player                            | [PlayerData](/vext/ref/fb/playerdata/)                                                 |             |
-| logFileEnable                     | bool                                                                     |             |
-| rotateLogs                        | bool                                                                     |             |
-| enableLoadingProfile              | bool                                                                     |             |
-| adjustVehicleCenterOfMass         | bool                                                                     |             |
-| autoAimEnabled                    | bool                                                                     |             |
-| hasUnlimitedAmmo                  | bool                                                                     |             |
-| hasUnlimitedMags                  | bool                                                                     |             |
-| resourceRefreshAlwaysAllowed      | bool                                                                     |             |
-| useSpeedBasedDetailedCollision    | bool                                                                     |             |
-| aimAssistEnabled                  | bool                                                                     |             |
-| aimAssistUsePolynomials           | bool                                                                     |             |
-| forceFreeStreaming                | bool                                                                     |             |
-| forceDisableFreeStreaming         | bool                                                                     |             |
-| isGodMode                         | bool                                                                     |             |
-| isJesusMode                       | bool                                                                     |             |
-| isJesusModeAi                     | bool                                                                     |             |
-| useSingleWeaponSelector           | bool                                                                     |             |
-| gameAdministrationEnabled         | bool                                                                     |             |
-| allowDestructionOutsideCombatArea | bool                                                                     |             |
-
-## Methods
-
-| Type                         | Name            | Parameters                                     |
-| ---------------------------- | --------------- | ---------------------------------------------- |
-| [GameSettings](/vext/ref/fb/gamesettings/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [GameSettings](/vext/ref/fb/gamesettings/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [GameSettings](/vext/ref/fb/gamesettings) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### GameSettings {#constructor-2}
+> **GameSettings**(other: [SystemSettings](/vext/ref/fb/systemsettings))
+
+Casts an instance of type [SystemSettings](/vext/ref/fb/systemsettings) to [GameSettings](/vext/ref/fb/gamesettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SystemSettings](/vext/ref/fb/systemsettings) | The instance to cast to [GameSettings](/vext/ref/fb/gamesettings). |
+
+### GameSettings {#constructor-3}
+> **GameSettings**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [GameSettings](/vext/ref/fb/gamesettings). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [GameSettings](/vext/ref/fb/gamesettings). |
+
+## Properties
+### {{% prop-heading "maxPlayerCount" %}}
+> **int**
+
+### {{% prop-heading "maxSpectatorCount" %}}
+> **int**
+
+### {{% prop-heading "layerInclusionTable" %}}
+> **[SubWorldInclusion](/vext/ref/fb/subworldinclusion)** | **nil**
+
+### {{% prop-heading "logFileCollisionMode" %}}
+> **[LogFileCollisionMode](/vext/ref/fb/logfilecollisionmode)**
+
+### {{% prop-heading "logFileRotationHistoryLength" %}}
+> **int**
+
+### {{% prop-heading "level" %}}
+> **string**
+
+### {{% prop-heading "defaultLayerInclusion" %}}
+> **string**
+
+### {{% prop-heading "inputConfiguration" %}}
+> **[InputConfigurationAsset](/vext/ref/fb/inputconfigurationasset)**[]
+
+### {{% prop-heading "defaultTeamId" %}}
+> **[TeamId](/vext/ref/fb/teamid)**
+
+### {{% prop-heading "levelWarmUpTime" %}}
+> **float**
+
+### {{% prop-heading "timeToWaitForQuitTaskCompletion" %}}
+> **float**
+
+### {{% prop-heading "platform" %}}
+> **[GamePlatform](/vext/ref/fb/gameplatform)**
+
+### {{% prop-heading "version" %}}
+> **[VersionData](/vext/ref/fb/versiondata)** | **nil**
+
+### {{% prop-heading "pS3ContentRatingAge" %}}
+> **int**
+
+### {{% prop-heading "difficultyIndex" %}}
+> **int**
+
+### {{% prop-heading "timeBeforeSpawnIsAllowed" %}}
+> **float**
+
+### {{% prop-heading "soldierWeaponSwitching" %}}
+> **[SoldierWeaponSwitchingData](/vext/ref/fb/soldierweaponswitchingdata)** | **nil**
+
+### {{% prop-heading "logHistory" %}}
+> **int**
+
+### {{% prop-heading "difficultySettings" %}}
+> **[DifficultyDatas](/vext/ref/fb/difficultydatas)** | **nil**
+
+### {{% prop-heading "metadataContainers" %}}
+> **[BlueprintBundleMetadataContainer](/vext/ref/fb/blueprintbundlemetadatacontainer)**[]
+
+### {{% prop-heading "currentSKU" %}}
+> **[SKU](/vext/ref/fb/sku)**
+
+### {{% prop-heading "player" %}}
+> **[PlayerData](/vext/ref/fb/playerdata)** | **nil**
+
+### {{% prop-heading "logFileEnable" %}}
+> **bool**
+
+### {{% prop-heading "rotateLogs" %}}
+> **bool**
+
+### {{% prop-heading "enableLoadingProfile" %}}
+> **bool**
+
+### {{% prop-heading "adjustVehicleCenterOfMass" %}}
+> **bool**
+
+### {{% prop-heading "autoAimEnabled" %}}
+> **bool**
+
+### {{% prop-heading "hasUnlimitedAmmo" %}}
+> **bool**
+
+### {{% prop-heading "hasUnlimitedMags" %}}
+> **bool**
+
+### {{% prop-heading "resourceRefreshAlwaysAllowed" %}}
+> **bool**
+
+### {{% prop-heading "useSpeedBasedDetailedCollision" %}}
+> **bool**
+
+### {{% prop-heading "aimAssistEnabled" %}}
+> **bool**
+
+### {{% prop-heading "aimAssistUsePolynomials" %}}
+> **bool**
+
+### {{% prop-heading "forceFreeStreaming" %}}
+> **bool**
+
+### {{% prop-heading "forceDisableFreeStreaming" %}}
+> **bool**
+
+### {{% prop-heading "isGodMode" %}}
+> **bool**
+
+### {{% prop-heading "isJesusMode" %}}
+> **bool**
+
+### {{% prop-heading "isJesusModeAi" %}}
+> **bool**
+
+### {{% prop-heading "useSingleWeaponSelector" %}}
+> **bool**
+
+### {{% prop-heading "gameAdministrationEnabled" %}}
+> **bool**
+
+### {{% prop-heading "allowDestructionOutsideCombatArea" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [GameSettings](/vext/ref/fb/gamesettings) type.
+

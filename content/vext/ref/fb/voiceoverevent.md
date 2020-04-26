@@ -1,44 +1,69 @@
 ---
 title: VoiceOverEvent
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VoiceOverEvent](#constructor-0)**() |
+| **[VoiceOverEvent](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VoiceOverEvent](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "name" >}} | string |
+| {{< prop "parameters" >}} | [VoiceOverNamedValue](/vext/ref/fb/voiceovernamedvalue)[] |
+| {{< prop "owner" >}} | [Asset](/vext/ref/fb/asset) \| nil |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VoiceOverEvent" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VoiceOverEvent {#constructor-0}
+> **VoiceOverEvent**()
 
-| Constructor                                                               | Description                                                                                                         |
-| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| VoiceOverEvent()                                                          | Create a new instance of this container type.                                                                       |
-| VoiceOverEvent(VoiceOverEvent other)                                      | Create a reference copy of an instance of the same type.                                                            |
-| VoiceOverEvent([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverEvent](/vext/ref/fb/voiceoverevent/). |
+Creates a new [VoiceOverEvent](/vext/ref/fb/voiceoverevent) frostbite instance.
 
-## Properties
+### VoiceOverEvent {#constructor-1}
+> **VoiceOverEvent**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name       | Type                                           | Description |
-| ---------- | ---------------------------------------------- | ----------- |
-| name       | string                                         |             |
-| parameters | [VoiceOverNamedValue](/vext/ref/fb/voiceovernamedvalue/)\[\] |             |
-| owner      | [Asset](/vext/ref/fb/asset/)                                 |             |
-
-## Methods
-
-| Type                             | Name            | Parameters                                     |
-| -------------------------------- | --------------- | ---------------------------------------------- |
-| [VoiceOverEvent](/vext/ref/fb/voiceoverevent/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VoiceOverEvent](/vext/ref/fb/voiceoverevent/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VoiceOverEvent](/vext/ref/fb/voiceoverevent) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VoiceOverEvent {#constructor-2}
+> **VoiceOverEvent**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverEvent](/vext/ref/fb/voiceoverevent). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VoiceOverEvent](/vext/ref/fb/voiceoverevent). |
+
+## Properties
+### {{% prop-heading "name" %}}
+> **string**
+
+### {{% prop-heading "parameters" %}}
+> **[VoiceOverNamedValue](/vext/ref/fb/voiceovernamedvalue)**[]
+
+### {{% prop-heading "owner" %}}
+> **[Asset](/vext/ref/fb/asset)** | **nil**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VoiceOverEvent](/vext/ref/fb/voiceoverevent) type.
+

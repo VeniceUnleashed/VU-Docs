@@ -1,43 +1,72 @@
 ---
 title: FormationHolder
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[FormationHolder](#constructor-0)**() |
+| **[FormationHolder](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[FormationHolder](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[FormationHolder](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "formations" >}} | [FormationData](/vext/ref/fb/formationdata)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "FormationHolder" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### FormationHolder {#constructor-0}
+> **FormationHolder**()
 
-| Constructor                                                                | Description                                                                                                           |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| FormationHolder()                                                          | Create a new instance of this container type.                                                                         |
-| FormationHolder(FormationHolder other)                                     | Create a reference copy of an instance of the same type.                                                              |
-| FormationHolder([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [FormationHolder](/vext/ref/fb/formationholder/).                                      |
-| FormationHolder([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [FormationHolder](/vext/ref/fb/formationholder/). |
+Creates a new [FormationHolder](/vext/ref/fb/formationholder) frostbite instance.
 
-## Properties
+### FormationHolder {#constructor-1}
+> **FormationHolder**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name       | Type                               | Description |
-| ---------- | ---------------------------------- | ----------- |
-| formations | [FormationData](/vext/ref/fb/formationdata/)\[\] |             |
-
-## Methods
-
-| Type                               | Name            | Parameters                                     |
-| ---------------------------------- | --------------- | ---------------------------------------------- |
-| [FormationHolder](/vext/ref/fb/formationholder/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [FormationHolder](/vext/ref/fb/formationholder/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [FormationHolder](/vext/ref/fb/formationholder) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### FormationHolder {#constructor-2}
+> **FormationHolder**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [FormationHolder](/vext/ref/fb/formationholder). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [FormationHolder](/vext/ref/fb/formationholder). |
+
+### FormationHolder {#constructor-3}
+> **FormationHolder**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [FormationHolder](/vext/ref/fb/formationholder). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [FormationHolder](/vext/ref/fb/formationholder). |
+
+## Properties
+### {{% prop-heading "formations" %}}
+> **[FormationData](/vext/ref/fb/formationdata)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [FormationHolder](/vext/ref/fb/formationholder) type.
+

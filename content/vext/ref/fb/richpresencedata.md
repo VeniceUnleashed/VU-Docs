@@ -1,47 +1,88 @@
 ---
 title: RichPresenceData
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[RichPresenceData](#constructor-0)**() |
+| **[RichPresenceData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[RichPresenceData](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[RichPresenceData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "presenceModes" >}} | [RichPresencePresenceString](/vext/ref/fb/richpresencepresencestring)[] |
+| {{< prop "defaultMode" >}} | [RichPresencePresenceString](/vext/ref/fb/richpresencepresencestring) \| nil |
+| {{< prop "inactiveMode" >}} | [RichPresencePresenceString](/vext/ref/fb/richpresencepresencestring) \| nil |
+| {{< prop "contexts" >}} | [RichPresenceContext](/vext/ref/fb/richpresencecontext)[] |
+| {{< prop "properties" >}} | [RichPresenceProperty](/vext/ref/fb/richpresenceproperty)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "RichPresenceData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### RichPresenceData {#constructor-0}
+> **RichPresenceData**()
 
-| Constructor                                                                 | Description                                                                                                             |
-| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| RichPresenceData()                                                          | Create a new instance of this container type.                                                                           |
-| RichPresenceData(RichPresenceData other)                                    | Create a reference copy of an instance of the same type.                                                                |
-| RichPresenceData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [RichPresenceData](/vext/ref/fb/richpresencedata/).                                      |
-| RichPresenceData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RichPresenceData](/vext/ref/fb/richpresencedata/). |
+Creates a new [RichPresenceData](/vext/ref/fb/richpresencedata) frostbite instance.
 
-## Properties
+### RichPresenceData {#constructor-1}
+> **RichPresenceData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name          | Type                                                         | Description |
-| ------------- | ------------------------------------------------------------ | ----------- |
-| presenceModes | [RichPresencePresenceString](/vext/ref/fb/richpresencepresencestring/)\[\] |             |
-| defaultMode   | [RichPresencePresenceString](/vext/ref/fb/richpresencepresencestring/)     |             |
-| inactiveMode  | [RichPresencePresenceString](/vext/ref/fb/richpresencepresencestring/)     |             |
-| contexts      | [RichPresenceContext](/vext/ref/fb/richpresencecontext/)\[\]               |             |
-| properties    | [RichPresenceProperty](/vext/ref/fb/richpresenceproperty/)\[\]             |             |
-
-## Methods
-
-| Type                                 | Name            | Parameters                                     |
-| ------------------------------------ | --------------- | ---------------------------------------------- |
-| [RichPresenceData](/vext/ref/fb/richpresencedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [RichPresenceData](/vext/ref/fb/richpresencedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [RichPresenceData](/vext/ref/fb/richpresencedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### RichPresenceData {#constructor-2}
+> **RichPresenceData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [RichPresenceData](/vext/ref/fb/richpresencedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [RichPresenceData](/vext/ref/fb/richpresencedata). |
+
+### RichPresenceData {#constructor-3}
+> **RichPresenceData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [RichPresenceData](/vext/ref/fb/richpresencedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [RichPresenceData](/vext/ref/fb/richpresencedata). |
+
+## Properties
+### {{% prop-heading "presenceModes" %}}
+> **[RichPresencePresenceString](/vext/ref/fb/richpresencepresencestring)**[]
+
+### {{% prop-heading "defaultMode" %}}
+> **[RichPresencePresenceString](/vext/ref/fb/richpresencepresencestring)** | **nil**
+
+### {{% prop-heading "inactiveMode" %}}
+> **[RichPresencePresenceString](/vext/ref/fb/richpresencepresencestring)** | **nil**
+
+### {{% prop-heading "contexts" %}}
+> **[RichPresenceContext](/vext/ref/fb/richpresencecontext)**[]
+
+### {{% prop-heading "properties" %}}
+> **[RichPresenceProperty](/vext/ref/fb/richpresenceproperty)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [RichPresenceData](/vext/ref/fb/richpresencedata) type.
+

@@ -1,37 +1,63 @@
 ---
 title: PlayerInteractionViewData
 ---
-### Base Classes
 
-[SubViewData](/vext/ref/fb/subviewdata/)
+Inherits from 
+[SubViewData](/vext/ref/fb/subviewdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PlayerInteractionViewData](#constructor-0)**() |
+| **[PlayerInteractionViewData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PlayerInteractionViewData](#constructor-2)**(other: [SubViewData](/vext/ref/fb/subviewdata)) |
+| **[PlayerInteractionViewData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PlayerInteractionViewData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PlayerInteractionViewData {#constructor-0}
+> **PlayerInteractionViewData**()
 
-| Constructor                                                                          | Description                                                                                                                               |
-| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| PlayerInteractionViewData()                                                          | Create a new instance of this container type.                                                                                             |
-| PlayerInteractionViewData(PlayerInteractionViewData other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| PlayerInteractionViewData([SubViewData](/vext/ref/fb/subviewdata/) other)                          | Upcast an instance of type [SubViewData](/vext/ref/fb/subviewdata/) to [PlayerInteractionViewData](/vext/ref/fb/playerinteractionviewdata/).                          |
-| PlayerInteractionViewData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PlayerInteractionViewData](/vext/ref/fb/playerinteractionviewdata/). |
+Creates a new [PlayerInteractionViewData](/vext/ref/fb/playerinteractionviewdata) frostbite instance.
 
-## Methods
+### PlayerInteractionViewData {#constructor-1}
+> **PlayerInteractionViewData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Type                                                   | Name            | Parameters                                     |
-| ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [PlayerInteractionViewData](/vext/ref/fb/playerinteractionviewdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PlayerInteractionViewData](/vext/ref/fb/playerinteractionviewdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PlayerInteractionViewData](/vext/ref/fb/playerinteractionviewdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PlayerInteractionViewData {#constructor-2}
+> **PlayerInteractionViewData**(other: [SubViewData](/vext/ref/fb/subviewdata))
+
+Casts an instance of type [SubViewData](/vext/ref/fb/subviewdata) to [PlayerInteractionViewData](/vext/ref/fb/playerinteractionviewdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [SubViewData](/vext/ref/fb/subviewdata) | The instance to cast to [PlayerInteractionViewData](/vext/ref/fb/playerinteractionviewdata). |
+
+### PlayerInteractionViewData {#constructor-3}
+> **PlayerInteractionViewData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PlayerInteractionViewData](/vext/ref/fb/playerinteractionviewdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PlayerInteractionViewData](/vext/ref/fb/playerinteractionviewdata). |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PlayerInteractionViewData](/vext/ref/fb/playerinteractionviewdata) type.
+

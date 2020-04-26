@@ -1,48 +1,106 @@
 ---
 title: PathFollowingComponentData
 ---
-### Base Classes
 
-[ComponentData](/vext/ref/fb/componentdata/)
+Inherits from 
+[ComponentData](/vext/ref/fb/componentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PathFollowingComponentData](#constructor-0)**() |
+| **[PathFollowingComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PathFollowingComponentData](#constructor-2)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[PathFollowingComponentData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[PathFollowingComponentData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[PathFollowingComponentData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "updatePathAtDistancePercent" >}} | float |
+| {{< prop "preferredPathfindingIndex" >}} | int |
+| {{< prop "alternatePathfindingIndices" >}} | int[] |
+| {{< prop "movementCorridorRadius" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PathFollowingComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PathFollowingComponentData {#constructor-0}
+> **PathFollowingComponentData**()
 
-| Constructor                                                                           | Description                                                                                                                                 |
-| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| PathFollowingComponentData()                                                          | Create a new instance of this container type.                                                                                               |
-| PathFollowingComponentData(PathFollowingComponentData other)                          | Create a reference copy of an instance of the same type.                                                                                    |
-| PathFollowingComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [PathFollowingComponentData](/vext/ref/fb/pathfollowingcomponentdata/).                      |
-| PathFollowingComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [PathFollowingComponentData](/vext/ref/fb/pathfollowingcomponentdata/).                    |
-| PathFollowingComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [PathFollowingComponentData](/vext/ref/fb/pathfollowingcomponentdata/).              |
-| PathFollowingComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PathFollowingComponentData](/vext/ref/fb/pathfollowingcomponentdata/). |
+Creates a new [PathFollowingComponentData](/vext/ref/fb/pathfollowingcomponentdata) frostbite instance.
 
-## Properties
+### PathFollowingComponentData {#constructor-1}
+> **PathFollowingComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                        | Type       | Description |
-| --------------------------- | ---------- | ----------- |
-| updatePathAtDistancePercent | number     |             |
-| preferredPathfindingIndex   | number     |             |
-| alternatePathfindingIndices | number\[\] |             |
-| movementCorridorRadius      | number     |             |
-
-## Methods
-
-| Type                                                     | Name            | Parameters                                     |
-| -------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [PathFollowingComponentData](/vext/ref/fb/pathfollowingcomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PathFollowingComponentData](/vext/ref/fb/pathfollowingcomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PathFollowingComponentData](/vext/ref/fb/pathfollowingcomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PathFollowingComponentData {#constructor-2}
+> **PathFollowingComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [PathFollowingComponentData](/vext/ref/fb/pathfollowingcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [PathFollowingComponentData](/vext/ref/fb/pathfollowingcomponentdata). |
+
+### PathFollowingComponentData {#constructor-3}
+> **PathFollowingComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [PathFollowingComponentData](/vext/ref/fb/pathfollowingcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [PathFollowingComponentData](/vext/ref/fb/pathfollowingcomponentdata). |
+
+### PathFollowingComponentData {#constructor-4}
+> **PathFollowingComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [PathFollowingComponentData](/vext/ref/fb/pathfollowingcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [PathFollowingComponentData](/vext/ref/fb/pathfollowingcomponentdata). |
+
+### PathFollowingComponentData {#constructor-5}
+> **PathFollowingComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PathFollowingComponentData](/vext/ref/fb/pathfollowingcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PathFollowingComponentData](/vext/ref/fb/pathfollowingcomponentdata). |
+
+## Properties
+### {{% prop-heading "updatePathAtDistancePercent" %}}
+> **float**
+
+### {{% prop-heading "preferredPathfindingIndex" %}}
+> **int**
+
+### {{% prop-heading "alternatePathfindingIndices" %}}
+> **int**[]
+
+### {{% prop-heading "movementCorridorRadius" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PathFollowingComponentData](/vext/ref/fb/pathfollowingcomponentdata) type.
+

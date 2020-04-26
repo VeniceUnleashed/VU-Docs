@@ -1,45 +1,73 @@
 ---
 title: InputActionMapData
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[InputActionMapData](#constructor-0)**() |
+| **[InputActionMapData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[InputActionMapData](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "actions" >}} | [InputActionsData](/vext/ref/fb/inputactionsdata)[] |
+| {{< prop "platformSpecific" >}} | [InputActionMapPlatform](/vext/ref/fb/inputactionmapplatform) |
+| {{< prop "slot" >}} | [InputActionMapSlot](/vext/ref/fb/inputactionmapslot) |
+| {{< prop "copyKeyBindingsFrom" >}} | string |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "InputActionMapData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### InputActionMapData {#constructor-0}
+> **InputActionMapData**()
 
-| Constructor                                                                   | Description                                                                                                                 |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| InputActionMapData()                                                          | Create a new instance of this container type.                                                                               |
-| InputActionMapData(InputActionMapData other)                                  | Create a reference copy of an instance of the same type.                                                                    |
-| InputActionMapData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [InputActionMapData](/vext/ref/fb/inputactionmapdata/). |
+Creates a new [InputActionMapData](/vext/ref/fb/inputactionmapdata) frostbite instance.
 
-## Properties
+### InputActionMapData {#constructor-1}
+> **InputActionMapData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                | Type                                             | Description |
-| ------------------- | ------------------------------------------------ | ----------- |
-| actions             | [InputActionsData](/vext/ref/fb/inputactionsdata/)\[\]         |             |
-| platformSpecific    | [InputActionMapPlatform](/vext/ref/fb/inputactionmapplatform/) |             |
-| slot                | [InputActionMapSlot](/vext/ref/fb/inputactionmapslot/)         |             |
-| copyKeyBindingsFrom | string                                           |             |
-
-## Methods
-
-| Type                                     | Name            | Parameters                                     |
-| ---------------------------------------- | --------------- | ---------------------------------------------- |
-| [InputActionMapData](/vext/ref/fb/inputactionmapdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [InputActionMapData](/vext/ref/fb/inputactionmapdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [InputActionMapData](/vext/ref/fb/inputactionmapdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### InputActionMapData {#constructor-2}
+> **InputActionMapData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [InputActionMapData](/vext/ref/fb/inputactionmapdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [InputActionMapData](/vext/ref/fb/inputactionmapdata). |
+
+## Properties
+### {{% prop-heading "actions" %}}
+> **[InputActionsData](/vext/ref/fb/inputactionsdata)**[]
+
+### {{% prop-heading "platformSpecific" %}}
+> **[InputActionMapPlatform](/vext/ref/fb/inputactionmapplatform)**
+
+### {{% prop-heading "slot" %}}
+> **[InputActionMapSlot](/vext/ref/fb/inputactionmapslot)**
+
+### {{% prop-heading "copyKeyBindingsFrom" %}}
+> **string**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [InputActionMapData](/vext/ref/fb/inputactionmapdata) type.
+

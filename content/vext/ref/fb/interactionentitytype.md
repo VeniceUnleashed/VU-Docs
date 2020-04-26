@@ -1,15 +1,12 @@
 ---
 title: InteractionEntityType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **IET_None** | Value: **0** |
+| **IET_RushCrateArm** | Value: **1** |
+| **IET_RushCrateDisarm** | Value: **2** |
+| **IET_CTFFlag** | Value: **3** |
 
-| Name                 | Value | Description |
-| -------------------- | ----- | ----------- |
-| IET\_None            | 0     |             |
-| IET\_RushCrateArm    | 1     |             |
-| IET\_RushCrateDisarm | 2     |             |
-| IET\_CTFFlag         | 3     |             |

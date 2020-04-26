@@ -1,47 +1,95 @@
 ---
 title: MouseInputActionData
 ---
-### Base Classes
 
-[AxesInputActionData](/vext/ref/fb/axesinputactiondata/)
+Inherits from 
+[AxesInputActionData](/vext/ref/fb/axesinputactiondata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[MouseInputActionData](#constructor-0)**() |
+| **[MouseInputActionData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[MouseInputActionData](#constructor-2)**(other: [AxesInputActionData](/vext/ref/fb/axesinputactiondata)) |
+| **[MouseInputActionData](#constructor-3)**(other: [InputActionData](/vext/ref/fb/inputactiondata)) |
+| **[MouseInputActionData](#constructor-4)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "button" >}} | [InputDeviceMouseButtons](/vext/ref/fb/inputdevicemousebuttons) |
+| {{< prop "simulateJoystickAxis" >}} | bool |
+| {{< prop "rememberExcessInput" >}} | bool |
+| {{< prop "scaleScrollWheelAxisInput" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "MouseInputActionData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### MouseInputActionData {#constructor-0}
+> **MouseInputActionData**()
 
-| Constructor                                                                     | Description                                                                                                                     |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| MouseInputActionData()                                                          | Create a new instance of this container type.                                                                                   |
-| MouseInputActionData(MouseInputActionData other)                                | Create a reference copy of an instance of the same type.                                                                        |
-| MouseInputActionData([AxesInputActionData](/vext/ref/fb/axesinputactiondata/) other)          | Upcast an instance of type [AxesInputActionData](/vext/ref/fb/axesinputactiondata/) to [MouseInputActionData](/vext/ref/fb/mouseinputactiondata/).          |
-| MouseInputActionData([InputActionData](/vext/ref/fb/inputactiondata/) other)                  | Upcast an instance of type [InputActionData](/vext/ref/fb/inputactiondata/) to [MouseInputActionData](/vext/ref/fb/mouseinputactiondata/).                  |
-| MouseInputActionData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MouseInputActionData](/vext/ref/fb/mouseinputactiondata/). |
+Creates a new [MouseInputActionData](/vext/ref/fb/mouseinputactiondata) frostbite instance.
 
-## Properties
+### MouseInputActionData {#constructor-1}
+> **MouseInputActionData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                      | Type                                               | Description |
-| ------------------------- | -------------------------------------------------- | ----------- |
-| button                    | [InputDeviceMouseButtons](/vext/ref/fb/inputdevicemousebuttons/) |             |
-| simulateJoystickAxis      | bool                                               |             |
-| rememberExcessInput       | bool                                               |             |
-| scaleScrollWheelAxisInput | bool                                               |             |
-
-## Methods
-
-| Type                                         | Name            | Parameters                                     |
-| -------------------------------------------- | --------------- | ---------------------------------------------- |
-| [MouseInputActionData](/vext/ref/fb/mouseinputactiondata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [MouseInputActionData](/vext/ref/fb/mouseinputactiondata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [MouseInputActionData](/vext/ref/fb/mouseinputactiondata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### MouseInputActionData {#constructor-2}
+> **MouseInputActionData**(other: [AxesInputActionData](/vext/ref/fb/axesinputactiondata))
+
+Casts an instance of type [AxesInputActionData](/vext/ref/fb/axesinputactiondata) to [MouseInputActionData](/vext/ref/fb/mouseinputactiondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AxesInputActionData](/vext/ref/fb/axesinputactiondata) | The instance to cast to [MouseInputActionData](/vext/ref/fb/mouseinputactiondata). |
+
+### MouseInputActionData {#constructor-3}
+> **MouseInputActionData**(other: [InputActionData](/vext/ref/fb/inputactiondata))
+
+Casts an instance of type [InputActionData](/vext/ref/fb/inputactiondata) to [MouseInputActionData](/vext/ref/fb/mouseinputactiondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [InputActionData](/vext/ref/fb/inputactiondata) | The instance to cast to [MouseInputActionData](/vext/ref/fb/mouseinputactiondata). |
+
+### MouseInputActionData {#constructor-4}
+> **MouseInputActionData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [MouseInputActionData](/vext/ref/fb/mouseinputactiondata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [MouseInputActionData](/vext/ref/fb/mouseinputactiondata). |
+
+## Properties
+### {{% prop-heading "button" %}}
+> **[InputDeviceMouseButtons](/vext/ref/fb/inputdevicemousebuttons)**
+
+### {{% prop-heading "simulateJoystickAxis" %}}
+> **bool**
+
+### {{% prop-heading "rememberExcessInput" %}}
+> **bool**
+
+### {{% prop-heading "scaleScrollWheelAxisInput" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [MouseInputActionData](/vext/ref/fb/mouseinputactiondata) type.
+

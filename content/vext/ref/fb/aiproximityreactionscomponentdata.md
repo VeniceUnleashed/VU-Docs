@@ -1,49 +1,110 @@
 ---
 title: AIProximityReactionsComponentData
 ---
-### Base Classes
 
-[ComponentData](/vext/ref/fb/componentdata/)
+Inherits from 
+[ComponentData](/vext/ref/fb/componentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[AIProximityReactionsComponentData](#constructor-0)**() |
+| **[AIProximityReactionsComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[AIProximityReactionsComponentData](#constructor-2)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[AIProximityReactionsComponentData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[AIProximityReactionsComponentData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[AIProximityReactionsComponentData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "binding" >}} | [AIProximityReactionsBinding](/vext/ref/fb/aiproximityreactionsbinding) |
+| {{< prop "minExplosionImpulseForce" >}} | float |
+| {{< prop "maxExplosionLookDistance" >}} | float |
+| {{< prop "fireReactionDistance" >}} | float |
+| {{< prop "enabled" >}} | bool |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "AIProximityReactionsComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### AIProximityReactionsComponentData {#constructor-0}
+> **AIProximityReactionsComponentData**()
 
-| Constructor                                                                                  | Description                                                                                                                                               |
-| -------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| AIProximityReactionsComponentData()                                                          | Create a new instance of this container type.                                                                                                             |
-| AIProximityReactionsComponentData(AIProximityReactionsComponentData other)                   | Create a reference copy of an instance of the same type.                                                                                                  |
-| AIProximityReactionsComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [AIProximityReactionsComponentData](/vext/ref/fb/aiproximityreactionscomponentdata/).                      |
-| AIProximityReactionsComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [AIProximityReactionsComponentData](/vext/ref/fb/aiproximityreactionscomponentdata/).                    |
-| AIProximityReactionsComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [AIProximityReactionsComponentData](/vext/ref/fb/aiproximityreactionscomponentdata/).              |
-| AIProximityReactionsComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AIProximityReactionsComponentData](/vext/ref/fb/aiproximityreactionscomponentdata/). |
+Creates a new [AIProximityReactionsComponentData](/vext/ref/fb/aiproximityreactionscomponentdata) frostbite instance.
 
-## Properties
+### AIProximityReactionsComponentData {#constructor-1}
+> **AIProximityReactionsComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name                     | Type                                                       | Description |
-| ------------------------ | ---------------------------------------------------------- | ----------- |
-| binding                  | [AIProximityReactionsBinding](/vext/ref/fb/aiproximityreactionsbinding/) |             |
-| minExplosionImpulseForce | number                                                     |             |
-| maxExplosionLookDistance | number                                                     |             |
-| fireReactionDistance     | number                                                     |             |
-| enabled                  | bool                                                       |             |
-
-## Methods
-
-| Type                                                                   | Name            | Parameters                                     |
-| ---------------------------------------------------------------------- | --------------- | ---------------------------------------------- |
-| [AIProximityReactionsComponentData](/vext/ref/fb/aiproximityreactionscomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [AIProximityReactionsComponentData](/vext/ref/fb/aiproximityreactionscomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [AIProximityReactionsComponentData](/vext/ref/fb/aiproximityreactionscomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### AIProximityReactionsComponentData {#constructor-2}
+> **AIProximityReactionsComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [AIProximityReactionsComponentData](/vext/ref/fb/aiproximityreactionscomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [AIProximityReactionsComponentData](/vext/ref/fb/aiproximityreactionscomponentdata). |
+
+### AIProximityReactionsComponentData {#constructor-3}
+> **AIProximityReactionsComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [AIProximityReactionsComponentData](/vext/ref/fb/aiproximityreactionscomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [AIProximityReactionsComponentData](/vext/ref/fb/aiproximityreactionscomponentdata). |
+
+### AIProximityReactionsComponentData {#constructor-4}
+> **AIProximityReactionsComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [AIProximityReactionsComponentData](/vext/ref/fb/aiproximityreactionscomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [AIProximityReactionsComponentData](/vext/ref/fb/aiproximityreactionscomponentdata). |
+
+### AIProximityReactionsComponentData {#constructor-5}
+> **AIProximityReactionsComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [AIProximityReactionsComponentData](/vext/ref/fb/aiproximityreactionscomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [AIProximityReactionsComponentData](/vext/ref/fb/aiproximityreactionscomponentdata). |
+
+## Properties
+### {{% prop-heading "binding" %}}
+> **[AIProximityReactionsBinding](/vext/ref/fb/aiproximityreactionsbinding)**
+
+### {{% prop-heading "minExplosionImpulseForce" %}}
+> **float**
+
+### {{% prop-heading "maxExplosionLookDistance" %}}
+> **float**
+
+### {{% prop-heading "fireReactionDistance" %}}
+> **float**
+
+### {{% prop-heading "enabled" %}}
+> **bool**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [AIProximityReactionsComponentData](/vext/ref/fb/aiproximityreactionscomponentdata) type.
+

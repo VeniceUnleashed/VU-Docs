@@ -1,34 +1,65 @@
 ---
 title: ZoomLevelSpecificTransitionTime
 ---
-## Description
 
-A structure type representing a Frostbite data type.
+
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[ZoomLevelSpecificTransitionTime](#constructor-0)**() |
+
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "fromZoomLevel" >}} | int |
+| {{< prop "toZoomLevel" >}} | int |
+| {{< prop "zoomTransitionTime" >}} | float |
+| {{< prop "fovTransitionTime" >}} | float |
+
+### Methods
+| Method | Returns |
+| ------ | ---- |
+| **[Clone](#clone)**() | [ZoomLevelSpecificTransitionTime](/vext/ref/fb/zoomlevelspecifictransitiontime) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "ZoomLevelSpecificTransitionTime" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### ZoomLevelSpecificTransitionTime {#constructor-0}
+> **ZoomLevelSpecificTransitionTime**()
 
-| Constructor                                                            | Description                                              |
-| ---------------------------------------------------------------------- | -------------------------------------------------------- |
-| ZoomLevelSpecificTransitionTime()                                      | Create a new instance of this structure type.            |
-| ZoomLevelSpecificTransitionTime(ZoomLevelSpecificTransitionTime other) | Create a reference copy of a structure of the same type. |
+Creates a new [ZoomLevelSpecificTransitionTime](/vext/ref/fb/zoomlevelspecifictransitiontime) frostbite structure.
 
 ## Properties
+### {{% prop-heading "fromZoomLevel" %}}
+> **int**
 
-| Name               | Type   | Description |
-| ------------------ | ------ | ----------- |
-| fromZoomLevel      | number |             |
-| toZoomLevel        | number |             |
-| zoomTransitionTime | number |             |
-| fovTransitionTime  | number |             |
+### {{% prop-heading "toZoomLevel" %}}
+> **int**
+
+### {{% prop-heading "zoomTransitionTime" %}}
+> **float**
+
+### {{% prop-heading "fovTransitionTime" %}}
+> **float**
 
 ## Methods
-
-| Type                                                               | Name            | Parameters |
-| ------------------------------------------------------------------ | --------------- | ---------- |
-| [ZoomLevelSpecificTransitionTime](/vext/ref/fb/zoomlevelspecifictransitiontime/) | [Clone](#clone) |            |
-
 ### Clone
+> **Clone**(): [ZoomLevelSpecificTransitionTime](/vext/ref/fb/zoomlevelspecifictransitiontime)
 
-> [ZoomLevelSpecificTransitionTime](/vext/ref/fb/zoomlevelspecifictransitiontime/) **Clone**()
+Creates a shallow-copy clone of the structure, which is essentially the equivalent of creating a new structure of the same type and assigning the values of the original structure to all of its properties. Any properties that contain structure types (eg. [Vec3](/vext/ref/shared/class/vec3)) will be cloned when assigning, while properties that contain instance types (eg. [DataContainer](/vext/ref/shared/class/datacontainer) will be referencing the same instance.
 
-Creates a shallow-copy clone of the structure. Works similarly to [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone).
+#### Returns
+| Type | Description |
+| ---- | ----------- |
+| **[ZoomLevelSpecificTransitionTime](/vext/ref/fb/zoomlevelspecifictransitiontime)** | The newly created structure. |
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [ZoomLevelSpecificTransitionTime](/vext/ref/fb/zoomlevelspecifictransitiontime) type.
+

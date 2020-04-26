@@ -1,19 +1,16 @@
 ---
 title: VehicleHudType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **VehicleHudType_Car** | Value: **0** |
+| **VehicleHudType_Tank** | Value: **1** |
+| **VehicleHudType_Boat** | Value: **2** |
+| **VehicleHudType_Helicopter** | Value: **3** |
+| **VehicleHudType_Stationary** | Value: **4** |
+| **VehicleHudType_Strategic** | Value: **5** |
+| **VehicleHudType_Dummy** | Value: **6** |
+| **VehicleHudType_Count** | Value: **7** |
 
-| Name                       | Value | Description |
-| -------------------------- | ----- | ----------- |
-| VehicleHudType\_Car        | 0     |             |
-| VehicleHudType\_Tank       | 1     |             |
-| VehicleHudType\_Boat       | 2     |             |
-| VehicleHudType\_Helicopter | 3     |             |
-| VehicleHudType\_Stationary | 4     |             |
-| VehicleHudType\_Strategic  | 5     |             |
-| VehicleHudType\_Dummy      | 6     |             |
-| VehicleHudType\_Count      | 7     |             |

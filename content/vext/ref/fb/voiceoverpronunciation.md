@@ -1,45 +1,73 @@
 ---
 title: VoiceOverPronunciation
 ---
-### Base Classes
 
+Inherits from 
 [DataContainer](/vext/ref/shared/class/datacontainer)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[VoiceOverPronunciation](#constructor-0)**() |
+| **[VoiceOverPronunciation](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[VoiceOverPronunciation](#constructor-2)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "name" >}} | string |
+| {{< prop "primaryLanguage" >}} | [AudioLanguage](/vext/ref/fb/audiolanguage) \| nil |
+| {{< prop "secondaryLanguage" >}} | [AudioLanguage](/vext/ref/fb/audiolanguage) \| nil |
+| {{< prop "secondaryFallback" >}} | [VoiceOverPronunciationFallback](/vext/ref/fb/voiceoverpronunciationfallback) |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "VoiceOverPronunciation" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### VoiceOverPronunciation {#constructor-0}
+> **VoiceOverPronunciation**()
 
-| Constructor                                                                       | Description                                                                                                                         |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| VoiceOverPronunciation()                                                          | Create a new instance of this container type.                                                                                       |
-| VoiceOverPronunciation(VoiceOverPronunciation other)                              | Create a reference copy of an instance of the same type.                                                                            |
-| VoiceOverPronunciation([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverPronunciation](/vext/ref/fb/voiceoverpronunciation/). |
+Creates a new [VoiceOverPronunciation](/vext/ref/fb/voiceoverpronunciation) frostbite instance.
 
-## Properties
+### VoiceOverPronunciation {#constructor-1}
+> **VoiceOverPronunciation**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name              | Type                                                             | Description |
-| ----------------- | ---------------------------------------------------------------- | ----------- |
-| name              | string                                                           |             |
-| primaryLanguage   | [AudioLanguage](/vext/ref/fb/audiolanguage/)                                   |             |
-| secondaryLanguage | [AudioLanguage](/vext/ref/fb/audiolanguage/)                                   |             |
-| secondaryFallback | [VoiceOverPronunciationFallback](/vext/ref/fb/voiceoverpronunciationfallback/) |             |
-
-## Methods
-
-| Type                                             | Name            | Parameters                                     |
-| ------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [VoiceOverPronunciation](/vext/ref/fb/voiceoverpronunciation/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [VoiceOverPronunciation](/vext/ref/fb/voiceoverpronunciation/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [VoiceOverPronunciation](/vext/ref/fb/voiceoverpronunciation) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### VoiceOverPronunciation {#constructor-2}
+> **VoiceOverPronunciation**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [VoiceOverPronunciation](/vext/ref/fb/voiceoverpronunciation). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [VoiceOverPronunciation](/vext/ref/fb/voiceoverpronunciation). |
+
+## Properties
+### {{% prop-heading "name" %}}
+> **string**
+
+### {{% prop-heading "primaryLanguage" %}}
+> **[AudioLanguage](/vext/ref/fb/audiolanguage)** | **nil**
+
+### {{% prop-heading "secondaryLanguage" %}}
+> **[AudioLanguage](/vext/ref/fb/audiolanguage)** | **nil**
+
+### {{% prop-heading "secondaryFallback" %}}
+> **[VoiceOverPronunciationFallback](/vext/ref/fb/voiceoverpronunciationfallback)**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [VoiceOverPronunciation](/vext/ref/fb/voiceoverpronunciation) type.
+

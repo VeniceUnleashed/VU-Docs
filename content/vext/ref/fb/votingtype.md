@@ -1,14 +1,11 @@
 ---
 title: VotingType
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **VotingMap** | Value: **0** |
+| **VotingGameMode** | Value: **1** |
+| **VotingFriendlyFire** | Value: **2** |
 
-| Name               | Value | Description |
-| ------------------ | ----- | ----------- |
-| VotingMap          | 0     |             |
-| VotingGameMode     | 1     |             |
-| VotingFriendlyFire | 2     |             |

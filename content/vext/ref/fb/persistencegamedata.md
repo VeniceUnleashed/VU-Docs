@@ -1,43 +1,72 @@
 ---
 title: PersistenceGameData
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[PersistenceGameData](#constructor-0)**() |
+| **[PersistenceGameData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[PersistenceGameData](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[PersistenceGameData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "assets" >}} | [Asset](/vext/ref/fb/asset)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "PersistenceGameData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### PersistenceGameData {#constructor-0}
+> **PersistenceGameData**()
 
-| Constructor                                                                    | Description                                                                                                                   |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| PersistenceGameData()                                                          | Create a new instance of this container type.                                                                                 |
-| PersistenceGameData(PersistenceGameData other)                                 | Create a reference copy of an instance of the same type.                                                                      |
-| PersistenceGameData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [PersistenceGameData](/vext/ref/fb/persistencegamedata/).                                      |
-| PersistenceGameData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PersistenceGameData](/vext/ref/fb/persistencegamedata/). |
+Creates a new [PersistenceGameData](/vext/ref/fb/persistencegamedata) frostbite instance.
 
-## Properties
+### PersistenceGameData {#constructor-1}
+> **PersistenceGameData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name   | Type               | Description |
-| ------ | ------------------ | ----------- |
-| assets | [Asset](/vext/ref/fb/asset/)\[\] |             |
-
-## Methods
-
-| Type                                       | Name            | Parameters                                     |
-| ------------------------------------------ | --------------- | ---------------------------------------------- |
-| [PersistenceGameData](/vext/ref/fb/persistencegamedata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [PersistenceGameData](/vext/ref/fb/persistencegamedata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [PersistenceGameData](/vext/ref/fb/persistencegamedata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### PersistenceGameData {#constructor-2}
+> **PersistenceGameData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [PersistenceGameData](/vext/ref/fb/persistencegamedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [PersistenceGameData](/vext/ref/fb/persistencegamedata). |
+
+### PersistenceGameData {#constructor-3}
+> **PersistenceGameData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [PersistenceGameData](/vext/ref/fb/persistencegamedata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [PersistenceGameData](/vext/ref/fb/persistencegamedata). |
+
+## Properties
+### {{% prop-heading "assets" %}}
+> **[Asset](/vext/ref/fb/asset)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [PersistenceGameData](/vext/ref/fb/persistencegamedata) type.
+

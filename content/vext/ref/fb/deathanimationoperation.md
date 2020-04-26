@@ -1,14 +1,11 @@
 ---
 title: DeathAnimationOperation
 ---
-## Description
-
-A Frostbite enumeration.
 
 ## Values
+| Name | Description |
+| ---- | ----------- |
+| **DALessThan** | Value: **0** |
+| **DAGreaterThan** | Value: **1** |
+| **DAEqualTo** | Value: **2** |
 
-| Name          | Value | Description |
-| ------------- | ----- | ----------- |
-| DALessThan    | 0     |             |
-| DAGreaterThan | 1     |             |
-| DAEqualTo     | 2     |             |

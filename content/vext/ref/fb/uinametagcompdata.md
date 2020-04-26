@@ -1,52 +1,122 @@
 ---
 title: UINametagCompData
 ---
-### Base Classes
 
-[UI3dIconCompData](/vext/ref/fb/ui3diconcompdata/)
+Inherits from 
+[UI3dIconCompData](/vext/ref/fb/ui3diconcompdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UINametagCompData](#constructor-0)**() |
+| **[UINametagCompData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UINametagCompData](#constructor-2)**(other: [UI3dIconCompData](/vext/ref/fb/ui3diconcompdata)) |
+| **[UINametagCompData](#constructor-3)**(other: [UIComponentData](/vext/ref/fb/uicomponentdata)) |
+| **[UINametagCompData](#constructor-4)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[UINametagCompData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "squadTint" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "enemyTint" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "friendlyTint" >}} | [Vec4](/vext/ref/shared/class/vec4) |
+| {{< prop "orderCooldown" >}} | int |
+| {{< prop "tooltipCooldown" >}} | int |
+| {{< prop "healthBarSize" >}} | float |
+| {{< prop "nameFontSize" >}} | float |
+| {{< prop "nameGlowSize" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UINametagCompData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UINametagCompData {#constructor-0}
+> **UINametagCompData**()
 
-| Constructor                                                                  | Description                                                                                                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| UINametagCompData()                                                          | Create a new instance of this container type.                                                                             |
-| UINametagCompData(UINametagCompData other)                                   | Create a reference copy of an instance of the same type.                                                                  |
-| UINametagCompData([UI3dIconCompData](/vext/ref/fb/ui3diconcompdata/) other)                | Upcast an instance of type [UI3dIconCompData](/vext/ref/fb/ui3diconcompdata/) to [UINametagCompData](/vext/ref/fb/uinametagcompdata/).                |
-| UINametagCompData([UIComponentData](/vext/ref/fb/uicomponentdata/) other)                  | Upcast an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata/) to [UINametagCompData](/vext/ref/fb/uinametagcompdata/).                  |
-| UINametagCompData([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UINametagCompData](/vext/ref/fb/uinametagcompdata/).                                      |
-| UINametagCompData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UINametagCompData](/vext/ref/fb/uinametagcompdata/). |
+Creates a new [UINametagCompData](/vext/ref/fb/uinametagcompdata) frostbite instance.
 
-## Properties
+### UINametagCompData {#constructor-1}
+> **UINametagCompData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name            | Type                              | Description |
-| --------------- | --------------------------------- | ----------- |
-| squadTint       | [Vec4](/vext/ref/shared/class/vec4) |             |
-| enemyTint       | [Vec4](/vext/ref/shared/class/vec4) |             |
-| friendlyTint    | [Vec4](/vext/ref/shared/class/vec4) |             |
-| orderCooldown   | number                            |             |
-| tooltipCooldown | number                            |             |
-| healthBarSize   | number                            |             |
-| nameFontSize    | number                            |             |
-| nameGlowSize    | number                            |             |
-
-## Methods
-
-| Type                                   | Name            | Parameters                                     |
-| -------------------------------------- | --------------- | ---------------------------------------------- |
-| [UINametagCompData](/vext/ref/fb/uinametagcompdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UINametagCompData](/vext/ref/fb/uinametagcompdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UINametagCompData](/vext/ref/fb/uinametagcompdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UINametagCompData {#constructor-2}
+> **UINametagCompData**(other: [UI3dIconCompData](/vext/ref/fb/ui3diconcompdata))
+
+Casts an instance of type [UI3dIconCompData](/vext/ref/fb/ui3diconcompdata) to [UINametagCompData](/vext/ref/fb/uinametagcompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UI3dIconCompData](/vext/ref/fb/ui3diconcompdata) | The instance to cast to [UINametagCompData](/vext/ref/fb/uinametagcompdata). |
+
+### UINametagCompData {#constructor-3}
+> **UINametagCompData**(other: [UIComponentData](/vext/ref/fb/uicomponentdata))
+
+Casts an instance of type [UIComponentData](/vext/ref/fb/uicomponentdata) to [UINametagCompData](/vext/ref/fb/uinametagcompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [UIComponentData](/vext/ref/fb/uicomponentdata) | The instance to cast to [UINametagCompData](/vext/ref/fb/uinametagcompdata). |
+
+### UINametagCompData {#constructor-4}
+> **UINametagCompData**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [UINametagCompData](/vext/ref/fb/uinametagcompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [UINametagCompData](/vext/ref/fb/uinametagcompdata). |
+
+### UINametagCompData {#constructor-5}
+> **UINametagCompData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UINametagCompData](/vext/ref/fb/uinametagcompdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UINametagCompData](/vext/ref/fb/uinametagcompdata). |
+
+## Properties
+### {{% prop-heading "squadTint" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "enemyTint" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "friendlyTint" %}}
+> **[Vec4](/vext/ref/shared/class/vec4)**
+
+### {{% prop-heading "orderCooldown" %}}
+> **int**
+
+### {{% prop-heading "tooltipCooldown" %}}
+> **int**
+
+### {{% prop-heading "healthBarSize" %}}
+> **float**
+
+### {{% prop-heading "nameFontSize" %}}
+> **float**
+
+### {{% prop-heading "nameGlowSize" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UINametagCompData](/vext/ref/fb/uinametagcompdata) type.
+

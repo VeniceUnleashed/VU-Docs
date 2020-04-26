@@ -1,49 +1,110 @@
 ---
 title: SoldierDecalComponentData
 ---
-### Base Classes
 
-[ComponentData](/vext/ref/fb/componentdata/)
+Inherits from 
+[ComponentData](/vext/ref/fb/componentdata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SoldierDecalComponentData](#constructor-0)**() |
+| **[SoldierDecalComponentData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SoldierDecalComponentData](#constructor-2)**(other: [ComponentData](/vext/ref/fb/componentdata)) |
+| **[SoldierDecalComponentData](#constructor-3)**(other: [GameObjectData](/vext/ref/fb/gameobjectdata)) |
+| **[SoldierDecalComponentData](#constructor-4)**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer)) |
+| **[SoldierDecalComponentData](#constructor-5)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "splashDecal" >}} | [DecalTemplateData](/vext/ref/fb/decaltemplatedata) \| nil |
+| {{< prop "splashRayLength" >}} | float |
+| {{< prop "poolDecal" >}} | [DecalTemplateData](/vext/ref/fb/decaltemplatedata) \| nil |
+| {{< prop "poolRayYOffset" >}} | float |
+| {{< prop "poolRayLength" >}} | float |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SoldierDecalComponentData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SoldierDecalComponentData {#constructor-0}
+> **SoldierDecalComponentData**()
 
-| Constructor                                                                          | Description                                                                                                                               |
-| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| SoldierDecalComponentData()                                                          | Create a new instance of this container type.                                                                                             |
-| SoldierDecalComponentData(SoldierDecalComponentData other)                           | Create a reference copy of an instance of the same type.                                                                                  |
-| SoldierDecalComponentData([ComponentData](/vext/ref/fb/componentdata/) other)                      | Upcast an instance of type [ComponentData](/vext/ref/fb/componentdata/) to [SoldierDecalComponentData](/vext/ref/fb/soldierdecalcomponentdata/).                      |
-| SoldierDecalComponentData([GameObjectData](/vext/ref/fb/gameobjectdata/) other)                    | Upcast an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata/) to [SoldierDecalComponentData](/vext/ref/fb/soldierdecalcomponentdata/).                    |
-| SoldierDecalComponentData([GameDataContainer](/vext/ref/fb/gamedatacontainer/) other)              | Upcast an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer/) to [SoldierDecalComponentData](/vext/ref/fb/soldierdecalcomponentdata/).              |
-| SoldierDecalComponentData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoldierDecalComponentData](/vext/ref/fb/soldierdecalcomponentdata/). |
+Creates a new [SoldierDecalComponentData](/vext/ref/fb/soldierdecalcomponentdata) frostbite instance.
 
-## Properties
+### SoldierDecalComponentData {#constructor-1}
+> **SoldierDecalComponentData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name            | Type                                   | Description |
-| --------------- | -------------------------------------- | ----------- |
-| splashDecal     | [DecalTemplateData](/vext/ref/fb/decaltemplatedata/) |             |
-| splashRayLength | number                                 |             |
-| poolDecal       | [DecalTemplateData](/vext/ref/fb/decaltemplatedata/) |             |
-| poolRayYOffset  | number                                 |             |
-| poolRayLength   | number                                 |             |
-
-## Methods
-
-| Type                                                   | Name            | Parameters                                     |
-| ------------------------------------------------------ | --------------- | ---------------------------------------------- |
-| [SoldierDecalComponentData](/vext/ref/fb/soldierdecalcomponentdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SoldierDecalComponentData](/vext/ref/fb/soldierdecalcomponentdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SoldierDecalComponentData](/vext/ref/fb/soldierdecalcomponentdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SoldierDecalComponentData {#constructor-2}
+> **SoldierDecalComponentData**(other: [ComponentData](/vext/ref/fb/componentdata))
+
+Casts an instance of type [ComponentData](/vext/ref/fb/componentdata) to [SoldierDecalComponentData](/vext/ref/fb/soldierdecalcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [ComponentData](/vext/ref/fb/componentdata) | The instance to cast to [SoldierDecalComponentData](/vext/ref/fb/soldierdecalcomponentdata). |
+
+### SoldierDecalComponentData {#constructor-3}
+> **SoldierDecalComponentData**(other: [GameObjectData](/vext/ref/fb/gameobjectdata))
+
+Casts an instance of type [GameObjectData](/vext/ref/fb/gameobjectdata) to [SoldierDecalComponentData](/vext/ref/fb/soldierdecalcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameObjectData](/vext/ref/fb/gameobjectdata) | The instance to cast to [SoldierDecalComponentData](/vext/ref/fb/soldierdecalcomponentdata). |
+
+### SoldierDecalComponentData {#constructor-4}
+> **SoldierDecalComponentData**(other: [GameDataContainer](/vext/ref/fb/gamedatacontainer))
+
+Casts an instance of type [GameDataContainer](/vext/ref/fb/gamedatacontainer) to [SoldierDecalComponentData](/vext/ref/fb/soldierdecalcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [GameDataContainer](/vext/ref/fb/gamedatacontainer) | The instance to cast to [SoldierDecalComponentData](/vext/ref/fb/soldierdecalcomponentdata). |
+
+### SoldierDecalComponentData {#constructor-5}
+> **SoldierDecalComponentData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoldierDecalComponentData](/vext/ref/fb/soldierdecalcomponentdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SoldierDecalComponentData](/vext/ref/fb/soldierdecalcomponentdata). |
+
+## Properties
+### {{% prop-heading "splashDecal" %}}
+> **[DecalTemplateData](/vext/ref/fb/decaltemplatedata)** | **nil**
+
+### {{% prop-heading "splashRayLength" %}}
+> **float**
+
+### {{% prop-heading "poolDecal" %}}
+> **[DecalTemplateData](/vext/ref/fb/decaltemplatedata)** | **nil**
+
+### {{% prop-heading "poolRayYOffset" %}}
+> **float**
+
+### {{% prop-heading "poolRayLength" %}}
+> **float**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SoldierDecalComponentData](/vext/ref/fb/soldierdecalcomponentdata) type.
+

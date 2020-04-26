@@ -1,47 +1,88 @@
 ---
 title: UITextDatabase
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[UITextDatabase](#constructor-0)**() |
+| **[UITextDatabase](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[UITextDatabase](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[UITextDatabase](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "language" >}} | [LanguageFormat](/vext/ref/fb/languageformat) |
+| {{< prop "binaryChunk" >}} | [Guid](/vext/ref/shared/class/guid) |
+| {{< prop "binaryChunkSize" >}} | int |
+| {{< prop "histogramChunk" >}} | [Guid](/vext/ref/shared/class/guid) |
+| {{< prop "histogramChunkSize" >}} | int |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "UITextDatabase" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### UITextDatabase {#constructor-0}
+> **UITextDatabase**()
 
-| Constructor                                                               | Description                                                                                                         |
-| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| UITextDatabase()                                                          | Create a new instance of this container type.                                                                       |
-| UITextDatabase(UITextDatabase other)                                      | Create a reference copy of an instance of the same type.                                                            |
-| UITextDatabase([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [UITextDatabase](/vext/ref/fb/uitextdatabase/).                                      |
-| UITextDatabase([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UITextDatabase](/vext/ref/fb/uitextdatabase/). |
+Creates a new [UITextDatabase](/vext/ref/fb/uitextdatabase) frostbite instance.
 
-## Properties
+### UITextDatabase {#constructor-1}
+> **UITextDatabase**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name               | Type                              | Description |
-| ------------------ | --------------------------------- | ----------- |
-| language           | [LanguageFormat](/vext/ref/fb/languageformat/)  |             |
-| binaryChunk        | [Guid](/vext/ref/shared/class/guid) |             |
-| binaryChunkSize    | number                            |             |
-| histogramChunk     | [Guid](/vext/ref/shared/class/guid) |             |
-| histogramChunkSize | number                            |             |
-
-## Methods
-
-| Type                             | Name            | Parameters                                     |
-| -------------------------------- | --------------- | ---------------------------------------------- |
-| [UITextDatabase](/vext/ref/fb/uitextdatabase/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [UITextDatabase](/vext/ref/fb/uitextdatabase/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [UITextDatabase](/vext/ref/fb/uitextdatabase) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### UITextDatabase {#constructor-2}
+> **UITextDatabase**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [UITextDatabase](/vext/ref/fb/uitextdatabase). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [UITextDatabase](/vext/ref/fb/uitextdatabase). |
+
+### UITextDatabase {#constructor-3}
+> **UITextDatabase**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [UITextDatabase](/vext/ref/fb/uitextdatabase). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [UITextDatabase](/vext/ref/fb/uitextdatabase). |
+
+## Properties
+### {{% prop-heading "language" %}}
+> **[LanguageFormat](/vext/ref/fb/languageformat)**
+
+### {{% prop-heading "binaryChunk" %}}
+> **[Guid](/vext/ref/shared/class/guid)**
+
+### {{% prop-heading "binaryChunkSize" %}}
+> **int**
+
+### {{% prop-heading "histogramChunk" %}}
+> **[Guid](/vext/ref/shared/class/guid)**
+
+### {{% prop-heading "histogramChunkSize" %}}
+> **int**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [UITextDatabase](/vext/ref/fb/uitextdatabase) type.
+

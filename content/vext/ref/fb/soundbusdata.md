@@ -1,45 +1,80 @@
 ---
 title: SoundBusData
 ---
-### Base Classes
 
-[AudioGraphNodeData](/vext/ref/fb/audiographnodedata/)
+Inherits from 
+[AudioGraphNodeData](/vext/ref/fb/audiographnodedata)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SoundBusData](#constructor-0)**() |
+| **[SoundBusData](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SoundBusData](#constructor-2)**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata)) |
+| **[SoundBusData](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "busName" >}} | string |
+| {{< prop "submixPlugin" >}} | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref) |
+| {{< prop "channelCount" >}} | int |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SoundBusData" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SoundBusData {#constructor-0}
+> **SoundBusData**()
 
-| Constructor                                                             | Description                                                                                                     |
-| ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| SoundBusData()                                                          | Create a new instance of this container type.                                                                   |
-| SoundBusData(SoundBusData other)                                        | Create a reference copy of an instance of the same type.                                                        |
-| SoundBusData([AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) other)            | Upcast an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata/) to [SoundBusData](/vext/ref/fb/soundbusdata/).            |
-| SoundBusData([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoundBusData](/vext/ref/fb/soundbusdata/). |
+Creates a new [SoundBusData](/vext/ref/fb/soundbusdata) frostbite instance.
 
-## Properties
+### SoundBusData {#constructor-1}
+> **SoundBusData**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name         | Type                                       | Description |
-| ------------ | ------------------------------------------ | ----------- |
-| busName      | string                                     |             |
-| submixPlugin | [SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref/) |             |
-| channelCount | number                                     |             |
-
-## Methods
-
-| Type                         | Name            | Parameters                                     |
-| ---------------------------- | --------------- | ---------------------------------------------- |
-| [SoundBusData](/vext/ref/fb/soundbusdata/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SoundBusData](/vext/ref/fb/soundbusdata/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SoundBusData](/vext/ref/fb/soundbusdata) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SoundBusData {#constructor-2}
+> **SoundBusData**(other: [AudioGraphNodeData](/vext/ref/fb/audiographnodedata))
+
+Casts an instance of type [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) to [SoundBusData](/vext/ref/fb/soundbusdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [AudioGraphNodeData](/vext/ref/fb/audiographnodedata) | The instance to cast to [SoundBusData](/vext/ref/fb/soundbusdata). |
+
+### SoundBusData {#constructor-3}
+> **SoundBusData**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoundBusData](/vext/ref/fb/soundbusdata). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SoundBusData](/vext/ref/fb/soundbusdata). |
+
+## Properties
+### {{% prop-heading "busName" %}}
+> **string**
+
+### {{% prop-heading "submixPlugin" %}}
+> **[SoundGraphPluginRef](/vext/ref/fb/soundgraphpluginref)**
+
+### {{% prop-heading "channelCount" %}}
+> **int**
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SoundBusData](/vext/ref/fb/soundbusdata) type.
+

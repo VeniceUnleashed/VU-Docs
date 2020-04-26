@@ -1,44 +1,76 @@
 ---
 title: SoundDataAsset
 ---
-### Base Classes
 
-[Asset](/vext/ref/fb/asset/)
+Inherits from 
+[Asset](/vext/ref/fb/asset)
 
-## Description
+## Summary
+### Constructors
+| |
+| ----------- |
+| **[SoundDataAsset](#constructor-0)**() |
+| **[SoundDataAsset](#constructor-1)**(guid: [Guid](/vext/ref/shared/class/guid)) |
+| **[SoundDataAsset](#constructor-2)**(other: [Asset](/vext/ref/fb/asset)) |
+| **[SoundDataAsset](#constructor-3)**(other: [DataContainer](/vext/ref/shared/class/datacontainer)) |
 
-A container type representing a Frostbite instance entry.
+### Properties
+| Name | Type |
+| ---- | ---- |
+| {{< prop "nameHash" >}} | int |
+| {{< prop "chunks" >}} | [SoundDataChunk](/vext/ref/fb/sounddatachunk)[] |
+
+### Static members
+| Name | Type |
+| ---- | ---- |
+| {{< static "SoundDataAsset" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/class/typeinformation) |
 
 ## Constructors
+### SoundDataAsset {#constructor-0}
+> **SoundDataAsset**()
 
-| Constructor                                                               | Description                                                                                                         |
-| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| SoundDataAsset()                                                          | Create a new instance of this container type.                                                                       |
-| SoundDataAsset(SoundDataAsset other)                                      | Create a reference copy of an instance of the same type.                                                            |
-| SoundDataAsset([Asset](/vext/ref/fb/asset/) other)                                      | Upcast an instance of type [Asset](/vext/ref/fb/asset/) to [SoundDataAsset](/vext/ref/fb/sounddataasset/).                                      |
-| SoundDataAsset([DataContainer](/vext/ref/shared/class/datacontainer) other) | Upcast an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoundDataAsset](/vext/ref/fb/sounddataasset/). |
+Creates a new [SoundDataAsset](/vext/ref/fb/sounddataasset) frostbite instance.
 
-## Properties
+### SoundDataAsset {#constructor-1}
+> **SoundDataAsset**(guid: [Guid](/vext/ref/shared/class/guid))
 
-| Name     | Type                                 | Description |
-| -------- | ------------------------------------ | ----------- |
-| nameHash | number                               |             |
-| chunks   | [SoundDataChunk](/vext/ref/fb/sounddatachunk/)\[\] |             |
-
-## Methods
-
-| Type                             | Name            | Parameters                                     |
-| -------------------------------- | --------------- | ---------------------------------------------- |
-| [SoundDataAsset](/vext/ref/fb/sounddataasset/) | [Clone](#clone) | \[[Guid](/vext/ref/shared/class/guid) **guid**\] |
-
-### Clone
-
-> [SoundDataAsset](/vext/ref/fb/sounddataasset/) **Clone**(\[[Guid](/vext/ref/shared/class/guid) **guid**\])
-
-Creates a shallow-copy clone of the instance. Look at [DataContainer::Clone](/vext/ref/shared/class/datacontainer#clone) for more details.
+Creates a new [SoundDataAsset](/vext/ref/fb/sounddataasset) frostbite instance and assigns it the provided [Guid](/vext/ref/shared/class/guid).
 
 #### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/class/guid) | The [Guid](/vext/ref/shared/class/guid) to assign to the newly created instance. |
 
-| Name | Type         | Description                                 |
-| ---- | ------------ | ------------------------------------------- |
-| guid | [Guid](/vext/ref/shared/class/guid/) | An optional GUID to assign to the instance. |
+### SoundDataAsset {#constructor-2}
+> **SoundDataAsset**(other: [Asset](/vext/ref/fb/asset))
+
+Casts an instance of type [Asset](/vext/ref/fb/asset) to [SoundDataAsset](/vext/ref/fb/sounddataasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [Asset](/vext/ref/fb/asset) | The instance to cast to [SoundDataAsset](/vext/ref/fb/sounddataasset). |
+
+### SoundDataAsset {#constructor-3}
+> **SoundDataAsset**(other: [DataContainer](/vext/ref/shared/class/datacontainer))
+
+Casts an instance of type [DataContainer](/vext/ref/shared/class/datacontainer) to [SoundDataAsset](/vext/ref/fb/sounddataasset). Will throw an error when trying to cast from an invalid type.
+
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [DataContainer](/vext/ref/shared/class/datacontainer) | The instance to cast to [SoundDataAsset](/vext/ref/fb/sounddataasset). |
+
+## Properties
+### {{% prop-heading "nameHash" %}}
+> **int**
+
+### {{% prop-heading "chunks" %}}
+> **[SoundDataChunk](/vext/ref/fb/sounddatachunk)**[]
+
+## Static members
+### {{% static-heading "typeInfo" %}}
+> [TypeInformation](/vext/ref/shared/class/typeinformation)
+
+The type information for the [SoundDataAsset](/vext/ref/fb/sounddataasset) type.
+
