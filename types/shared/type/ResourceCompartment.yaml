@@ -1,0 +1,37 @@
+name: ResourceCompartment
+type: enum
+description: The ResourceCompartment enum represents the various logical compartments that the game loads game data and assets into, and is used for logical separation and data lookups.
+
+values:
+  ResourceCompartment_First_:
+    value: 0
+  ResourceCompartment_Static:
+    value: 0
+    description: This compartment contains core game data (eg. shared configuration and level lists) that gets loaded at startup and remains loaded until the game shuts down.
+  ResourceCompartment_Frontend:
+    value: 1
+    description: This compartment primarily contains UI data and assets.
+  ResourceCompartment_LoadingScreen:
+    value: 2
+    description: This compartment contains data for the level loading screens.
+  ResourceCompartment_Game:
+    value: 3
+    description: This compartment contains the main game data for a specific level (usually everything that's in the main level bundle).
+  ResourceCompartment_Dynamic_Begin_:
+    value: 4
+  ResourceCompartment_Dynamic_Synchronized_Begin_:
+    value: 4
+    description: This marks the first compartment that is dynamically allocated to host synchronized data (synchronized as in data that is loaded on both the server and the client). Such data is usually data / assets in gamemode-specific bundles.
+  ResourceCompartment_Dynamic_Synchronized_End_:
+    value: 104
+  ResourceCompartment_Dynamic_ClientOnly_Begin_:
+    value: 105
+    description: This marks the first compartment that is dynamically allocated to host client-only data. Such data is usually data / assets in weapon bundles.
+  ResourceCompartment_Dynamic_ClientOnly_End_:
+    value: 205
+  ResourceCompartment_Dynamic_End_:
+    value: 205
+  ResourceCompartment_Count_:
+    value: 205
+  ResourceCompartment_Forbidden:
+    value: 205

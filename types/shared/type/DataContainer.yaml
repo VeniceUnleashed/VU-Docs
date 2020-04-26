@@ -1,0 +1,128 @@
+name: DataContainer
+type: class
+description: A base frostbite DataContainer, the highest class in the Frostbite container instance hierarchy. All instances present in game data partitions (ebx) are derived from this type.
+
+properties:
+  typeInfo:
+    type: TypeInformation
+    readOnly: true
+    description: Type information for this instance. You can get the specific type of this instance via `instance.typeInfo.name`.
+
+  isLazyLoaded:
+    type: bool
+    readOnly: true
+    description: Indicates whether this instance is being lazy-loaded.
+
+  isReadOnly:
+    type: bool
+    readOnly: true
+    description: Indicates whether this instance is read-only, which is the case for instances loaded from data. Changes to read-only instances will throw an error.
+
+  instanceGuid:
+    type: Guid
+    readOnly: true
+    nullable: true
+    description: The Guid of this instance, if it has one assigned to it.
+
+  partitionGuid:
+    type: Guid
+    readOnly: true
+    nullable: true
+    description: The Guid of the partition that contains this instance, if there is one. Only instances loaded from data are inside partitions.
+
+  partition:
+    type: DatabasePartition
+    readOnly: true
+    nullable: true
+    description: The DatabasePartition that contains this instance, if there is one. Only instances loaded from data are inside partitions.
+
+methods:
+  -
+    name: Is
+    description: Checks if an instance is of a specific type. This will return `true` for matching child types too (eg. calling `:Is('Asset')` on a SoundAsset will return `true`).
+    params:
+      typeName:
+        type: string
+        description: The type name to check against.
+    returns:
+      type: bool
+      description: Whether this instance is of the provided type.
+  -
+    name: Eq
+    description: Checks if two instances are pointing to the same data. This performs reference equality checks, not value equality.
+    params:
+      other:
+        type: DataContainer
+        description: The instance to check against.
+    returns:
+      type: bool
+      description: Whether this instance points to the same data as `other`.
+  -
+    name: AsDC
+    description: Returns a reference to the same instance as a DataContainer type. This is usually helpful when you have to upcast a more generic type to make it match the type definition of a property or an array.
+    returns:
+      type: DataContainer
+      description: The same instance but upcasted to a DataContainer.
+  -
+    name: Clone
+    description: Creates a shallow clone of this instance, which is essentially the equivalent of creating a new instance of the same type and assigning the values of this instance to all of its properties. Any properties that contain structure types (eg. Vec3) will be cloned when assigning, while properties that contain instance types (eg. DataContainer) will be referencing the same instance.
+    returns:
+      type: DataContainer
+      description: The newly created instance.
+  -
+    name: Clone
+    description: Creates a shallow clone of this instance, which is essentially the equivalent of creating a new instance of the same type and assigning the values of this instance to all of its properties. Any properties that contain structure types (eg. Vec3) will be cloned when assigning, while properties that contain instance types (eg. DataContainer) will be referencing the same instance. It also assigns it the provided Guid and registers it with the engine so it can be later looked-up using that Guid.
+    params:
+      guid:
+        type: Guid
+        description: The Guid to assign to the cloned instance.
+    returns:
+      type: DataContainer
+      description: The newly created instance.
+  -
+    name: ReplaceReferences
+    description: Replaces all registered references to the current instance with references to the provided instance. Passing `nil` will clear all references to this instance.
+    params:
+      with:
+        type: DataContainer
+        nullable: true
+        description: The instance to set the references to, or `nil` to clear them.
+  -
+    name: MakeWritable
+    description: Makes a read-only instance writable. This is useful for modifying loaded game data. As this is a quite expensive operation, it is recommended to only use it on instances you plan to modify.
+  -
+    name: RegisterLoadHandler
+    description: Registers a callback that will be called once this lazy-loaded instance has finished loading. The callback will keep getting called between level loads.
+    params:
+      callback:
+        type: callable
+        description: "A callback in the form `function(...args, instance: DataContainer)`."
+      args:
+        type: any
+        variadic: true
+        description: The arguments to pass to the provided callback. You can also specify zero arguments.
+    returns:
+      type: ContainerCallback
+      nullable: true
+      description: A callback handle that can be used to deregister the callback, or `nil` if this instance is not lazy-loaded.
+  -
+    name: RegisterLoadHandlerOnce
+    description: Registers a callback that will be called once this lazy-loaded instance has finished loading. The callback will get called once and then get automatically deregistered.
+    params:
+      callback:
+        type: callable
+        description: "A callback in the form `function(...args, instance: DataContainer)`."
+      args:
+        type: any
+        variadic: true
+        description: The arguments to pass to the provided callback. You can also specify zero arguments.
+    returns:
+      type: ContainerCallback
+      nullable: true
+      description: A callback handle that can be used to deregister the callback, or `nil` if this instance is not lazy-loaded.
+
+static:
+  typeInfo:
+    type: TypeInformation
+    description: The type information for the DataContainer type.
+
