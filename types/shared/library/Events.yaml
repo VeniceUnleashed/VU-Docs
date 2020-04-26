@@ -1,0 +1,47 @@
+name: Events
+type: library
+
+methods:
+  -
+    name: Subscribe
+    params:
+      eventName:
+        type: string
+      callback:
+        type: callable
+    returns:
+      type: Event
+  -
+    name: Subscribe
+    params:
+      eventName:
+        type: string
+      context:
+        type: any
+      callback:
+        type: callable
+    returns:
+      type: Event
+  -
+    name: Dispatch
+    params:
+      eventName:
+        type: string
+      args:
+        type: any
+        variadic: true
+  -
+    name: DispatchLocal
+    params:
+      eventName:
+        type: string
+      args:
+        type: any
+        variadic: true
+  -
+    name: Unsubscribe
+  -
+    name: Unsubscribe
+    params:
+      eventName:
+        type: string

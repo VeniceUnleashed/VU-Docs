@@ -1,0 +1,90 @@
+name: MathUtils
+type: library
+
+methods:
+  -
+    name: GetRandom
+    params:
+      from:
+        type: float
+      to:
+        type: float
+    returns:
+      type: float
+  -
+    name: GetRandomInt
+    params:
+      from:
+        type: int
+      to:
+        type: int
+    returns:
+      type: int
+  -
+    name: GetYPRFromULF
+    params:
+      up:
+        type: Vec3
+      left:
+        type: Vec3
+      forward:
+        type: Vec3
+    returns:
+      type: Vec3
+      nullable: true
+  -
+    name: GetTransformFromYPR
+    params:
+      yaw:
+        type: float
+      pitch:
+        type: float
+      roll:
+        type: float
+    returns:
+      type: LinearTransform
+  -
+    name: Approximately
+    params:
+      a:
+        type: float
+      b:
+        type: float
+    returns:
+      type: bool
+  -
+    name: Clamp
+    params:
+      value:
+        type: float
+      min:
+        type: float
+      max:
+        type: float
+    returns:
+      type: float
+  -
+    name: Round
+    params:
+      value:
+        type: float
+    returns:
+      type: float
+  -
+    name: FNVHash
+    params:
+      text:
+        type: string
+    returns:
+      type: int
+  -
+    name: Lerp
+    params:
+      from:
+        type: float
+      to:
+        type: float
+      t:
+        type: float
+    returns:
+      type: float

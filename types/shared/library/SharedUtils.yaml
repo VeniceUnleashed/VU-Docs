@@ -1,0 +1,45 @@
+name: SharedUtils
+type: library
+
+methods:
+  -
+    name: Print
+    params:
+      data:
+        type: any
+  -
+    name: GetTime
+    returns:
+      type: int
+  -
+    name: GetTimeMS
+    returns:
+      type: int
+  -
+    name: IsClientModule
+    returns:
+      type: bool
+  -
+    name: IsServerModule
+    returns:
+      type: bool
+  -
+    name: SerializeTable
+    params:
+      table:
+        type: table
+    returns:
+      type: string
+  -
+    name: GetContentPackages
+    returns:
+      type: string
+      table: true
+  -
+    name: GetLevelName
+    returns:
+      type: string
+  -
+    name: GetTickrate
+    returns:
+      type: float

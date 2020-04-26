@@ -1,0 +1,152 @@
+name: Net
+type: library
+
+methods:
+  -
+    name: GetHTTP
+    params:
+      url:
+        type: string
+    returns:
+      type: HttpResponse
+      nullable: true
+  -
+    name: GetHTTP
+    params:
+      url:
+        type: string
+      options:
+        type: HttpOptions
+    returns:
+      type: HttpResponse
+      nullable: true
+  -
+    name: HeadHTTP
+    params:
+      url:
+        type: string
+    returns:
+      type: HttpResponse
+      nullable: true
+  -
+    name: HeadHTTP
+    params:
+      url:
+        type: string
+      options:
+        type: HttpOptions
+    returns:
+      type: HttpResponse
+      nullable: true
+  -
+    name: PostHTTP
+    params:
+      url:
+        type: string
+      data:
+        type: string
+    returns:
+      type: HttpResponse
+      nullable: true
+  -
+    name: PostHTTP
+    params:
+      url:
+        type: string
+      data:
+        type: string
+      options:
+        type: HttpOptions
+    returns:
+      type: HttpResponse
+      nullable: true
+  -
+    name: PutHTTP
+    params:
+      url:
+        type: string
+      data:
+        type: string
+    returns:
+      type: HttpResponse
+      nullable: true
+  -
+    name: PutHTTP
+    params:
+      url:
+        type: string
+      data:
+        type: string
+      options:
+        type: HttpOptions
+    returns:
+      type: HttpResponse
+      nullable: true
+  -
+    name: DeleteHTTP
+    params:
+      url:
+        type: string
+    returns:
+      type: HttpResponse
+      nullable: true
+  -
+    name: DeleteHTTP
+    params:
+      url:
+        type: string
+      options:
+        type: HttpOptions
+    returns:
+      type: HttpResponse
+      nullable: true
+  -
+    name: OptionsHTTP
+    params:
+      url:
+        type: string
+    returns:
+      type: HttpResponse
+      nullable: true
+  -
+    name: OptionsHTTP
+    params:
+      url:
+        type: string
+      options:
+        type: HttpOptions
+    returns:
+      type: HttpResponse
+      nullable: true
+  -
+    name: PatchHTTP
+    params:
+      url:
+        type: string
+      data:
+        type: string
+    returns:
+      type: HttpResponse
+      nullable: true
+  -
+    name: PatchHTTP
+    params:
+      url:
+        type: string
+      data:
+        type: string
+      options:
+        type: HttpOptions
+    returns:
+      type: HttpResponse
+      nullable: true
+  -
+    name: Socket
+    params:
+      family:
+        type: NetSocketFamily
+      type:
+        type: NetSocketType
+    returns:
+      type: NetSocket
+      nullable: true

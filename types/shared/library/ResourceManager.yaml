@@ -1,0 +1,164 @@
+name: ResourceManager
+type: library
+
+methods:
+  -
+    name: MountSuperBundle
+    params:
+      superbundle:
+        type: string
+      mediaHint:
+        type: MediaHint
+        default: MediaHint.MediaHint_Default
+      optional:
+        type: bool
+        default: false
+  -
+    name: UnmountSuperBundle
+    params:
+      superbundle:
+        type: string
+  -
+    name: GetSettings
+    params:
+      settingsType:
+        type: string
+    returns:
+      type: DataContainer
+      nullable: true
+  -
+    name: LookupDataContainer
+    params:
+      compartment:
+        type: ResourceCompartment
+      name:
+        type: string
+    returns:
+      type: DataContainer
+      nullable: true
+  -
+    name: FindInstanceByGUID
+    params:
+      partitionGuid:
+        type: Guid
+      instanceGuid:
+        type: Guid
+    returns:
+      type: DataContainer
+      nullable: true
+  -
+    name: SearchForInstanceByGUID
+    params:
+      instanceGuid:
+        type: Guid
+    returns:
+      type: DataContainer
+      nullable: true
+  -
+    name: FindDatabasePartition
+    params:
+      partitionGuid:
+        type: Guid
+    returns:
+      type: DatabasePartition
+      nullable: true
+  -
+    name: FindPartitionForInstance
+    params:
+      instance:
+        type: DataContainer
+    returns:
+      type: DatabasePartition
+      nullable: true
+  -
+    name: RegisterInstanceLoadHandler
+    params:
+      partitionGuid:
+        type: Guid
+      instanceGuid:
+        type: Guid
+      callback:
+        type: callable
+      args:
+        type: any
+        variadic: true
+    returns:
+      type: ContainerCallback
+  -
+    name: RegisterInstanceLoadHandlerOnce
+    params:
+      partitionGuid:
+        type: Guid
+      instanceGuid:
+        type: Guid
+      callback:
+        type: callable
+      args:
+        type: any
+        variadic: true
+    returns:
+      type: ContainerCallback
+  -
+    name: AddRegistry
+    params:
+      registry:
+        type: DataContainer
+      compartment:
+        type: ResourceCompartment
+  -
+    name: BeginLoadData
+    params:
+      compartment:
+        type: ResourceCompartment
+      bundles:
+        type: string
+        table: true
+    returns:
+      type: int
+  -
+    name: EndLoadData
+    params:
+      handle:
+        type: int
+    returns:
+      type: bool
+  -
+    name: PollBundleOperation
+    params:
+      handle:
+        type: int
+    returns:
+      type: bool
+  -
+    name: CancelBundleOperation
+    params:
+      handle:
+        type: int
+  -
+    name: BeginClear
+    params:
+      compartment:
+        type: ResourceCompartment
+    returns:
+      type: int
+  -
+    name: EndClear
+    params:
+      handle:
+        type: int
+  -
+    name: AllocateDynamicCompartment
+    params:
+      name:
+        type: string
+      parent:
+        type: ResourceCompartment
+      clientOnly:
+        type: bool
+    returns:
+      type: ResourceCompartment
+  -
+    name: DestroyDynamicCompartment
+    params:
+      compartment:
+        type: ResourceCompartment

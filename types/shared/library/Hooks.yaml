@@ -1,0 +1,28 @@
+name: Hooks
+type: library
+
+methods:
+  -
+    name: Install
+    params:
+      hookName:
+        type: string
+      priority:
+        type: int
+      callback:
+        type: callable
+    returns:
+      type: Hook
+  -
+    name: Install
+    params:
+      hookName:
+        type: string
+      priority:
+        type: int
+      context:
+        type: any
+      callback:
+        type: callable
+    returns:
+      type: Hook
