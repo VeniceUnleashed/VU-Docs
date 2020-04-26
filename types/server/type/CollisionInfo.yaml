@@ -1,0 +1,26 @@
+name: CollisionInfo
+type: class
+
+constructors:
+  -
+
+properties:
+  entity:
+    type: Entity
+    nullable: true
+  material:
+    type: DataContainer
+    nullable: true
+  ownMaterial:
+    type: DataContainer
+    nullable: true
+  position:
+    type: Vec3
+  normal:
+    type: Vec3
+  speed:
+    type: float
+  part:
+    type: int
+  isInstantlyDestructible:
+    type: bool

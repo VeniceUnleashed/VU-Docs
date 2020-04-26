@@ -1,0 +1,17 @@
+name: SoldierWeaponsComponent
+type: class
+
+properties:
+  isZooming:
+    type: bool
+    readOnly: true
+  currentWeapon:
+    type: SoldierWeapon
+    readOnly: true
+  weapons:
+    type: SoldierWeapon
+    array: true
+    readOnly: true
+  currentWeaponSlot:
+    type: WeaponSlot
+    readOnly: true

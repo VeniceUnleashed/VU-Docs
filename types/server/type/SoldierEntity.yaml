@@ -1,0 +1,103 @@
+name: SoldierEntity
+type: class
+inherits: ControllableEntity
+
+constructors:
+  -
+    params:
+      other:
+        type: Entity
+  -
+    params:
+      other:
+        type: SpatialEntity
+  -
+    params:
+      other:
+        type: GameEntity
+  -
+    params:
+      other:
+        type: PhysicsEntity
+  -
+    params:
+      other:
+        type: ControllableEntity
+
+properties:
+  worldTransform:
+    type: LinearTransform
+    readOnly: true
+  player:
+    type: Player
+    readOnly: true
+    nullable: true
+  detailedCollisionEnabled:
+    type: bool
+  physicsEnabled:
+    type: bool
+  forceInvisible:
+    type: bool
+  aimingEnabled:
+    type: bool
+  maxHealth:
+    type: float
+  waterLevel:
+    type: float
+  isManDown:
+    type: bool
+    readOnly: true
+  isAlive:
+    type: bool
+    readOnly: true
+  isDead:
+    type: bool
+    readOnly: true
+  isDying:
+    type: bool
+    readOnly: true
+  isInteractiveManDown:
+    type: bool
+    readOnly: true
+  isFiring:
+    type: bool
+    readOnly: true
+  isReloading:
+    type: bool
+    readOnly: true
+  health:
+    type: float
+  weaponsComponent:
+    type: SoldierWeaponsComponent
+    readOnly: true
+
+methods:
+  -
+    name: SetPosition
+    params:
+      position:
+        type: Vec3
+  -
+    name: Kill
+  -
+    name: ApplyCustomization
+    params:
+      customizationData:
+        type: DataContainer
+  -
+    name: ForceDead
+  -
+    name: SingleStepEntry
+    params:
+      entryId:
+        type: int
+
+operators:
+  -
+    type: eq
+    rhs: SoldierEntity
+    returns: bool
+
+static:
+  typeInfo:
+    type: TypeInformation

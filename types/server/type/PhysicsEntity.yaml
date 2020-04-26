@@ -1,0 +1,130 @@
+name: PhysicsEntity
+type: class
+inherits: GameEntity
+
+constructors:
+  -
+    params:
+      other:
+        type: Entity
+  -
+    params:
+      other:
+        type: SpatialEntity
+  -
+    params:
+      other:
+        type: GameEntity
+
+properties:
+  internalHealth:
+    type: float
+  velocity:
+    type: float
+    readOnly: true
+  defaultMaterial:
+    type: DataContainer
+    readOnly: true
+    nullable: true
+  belongsInPhysicsWorld:
+    type: bool
+    readOnly: true
+  isPredestructible:
+    type: bool
+    readOnly: true
+  physicsEntityBase:
+    type: PhysicsEntityBase
+    readOnly: true
+    nullable: true
+
+methods:
+  -
+    name: GetMaterial
+    params:
+      position:
+        type: Vec3
+    returns:
+      type: DataContainer
+      nullable: true
+  -
+    name: SetActiveHealthState
+    params:
+      state:
+        type: int
+  -
+    name: ApplyDamage
+    params:
+      damageInfo:
+        type: DamageInfo
+  -
+    name: RegisterCollisionCallback
+    params:
+      callback:
+        type: callable
+        description: "A callback in the form `function(entity: Entity, info: CollisionInfo): bool`."
+    returns:
+      type: int
+  -
+    name: RegisterCollisionCallback
+    params:
+      context:
+        type: any
+        description: A context value to pass to the callback.
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, entity: Entity, info: CollisionInfo): bool`."
+    returns:
+      type: int
+  -
+    name: UnregisterCollisionCallback
+    params:
+      handle:
+        type: int
+  -
+    name: RegisterDamageCallback
+    params:
+      callback:
+        type: callable
+        description: "A callback in the form `function(entity: Entity, damageInfo: DamageInfo, damageGiverInfo: DamageGiverInfo | nil): bool`."
+    returns:
+      type: int
+  -
+    name: RegisterDamageCallback
+    params:
+      context:
+        type: any
+        description: A context value to pass to the callback.
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, entity: Entity, damageInfo: DamageInfo, damageGiverInfo: DamageGiverInfo | nil): bool`."
+    returns:
+      type: int
+  -
+    name: UnregisterDamageCallback
+    params:
+      handle:
+        type: int
+  -
+    name: RegisterInteractCallback
+    params:
+      callback:
+        type: callable
+        description: "A callback in the form `function(entity: Entity, soldier: SoldierEntity | nil): bool`."
+    returns:
+      type: int
+  -
+    name: RegisterInteractCallback
+    params:
+      context:
+        type: any
+        description: A context value to pass to the callback.
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, entity: Entity, soldier: SoldierEntity | nil): bool`."
+    returns:
+      type: int
+  -
+    name: UnregisterInteractCallback
+    params:
+      handle:
+        type: int

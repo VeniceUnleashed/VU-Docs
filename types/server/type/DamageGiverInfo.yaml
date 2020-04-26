@@ -1,0 +1,33 @@
+name: DamageGiverInfo
+type: class
+
+constructors:
+  -
+
+properties:
+  giver:
+    type: Player
+    nullable: true
+  assistant:
+    type: Player
+    nullable: true
+  weaponUnlock:
+    type: DataContainer
+    nullable: true
+  weaponFiring:
+    type: DataContainer
+    nullable: true
+  physicsEntity:
+    type: Entity
+    nullable: true
+  giverControllable:
+    type: Entity
+    nullable: true
+  lockedTarget:
+    type: Entity
+    nullable: true
+  giverCharacterCustomization:
+    type: DataContainer
+    nullable: true
+  damageType:
+    type: DamageType

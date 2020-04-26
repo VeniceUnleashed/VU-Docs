@@ -1,0 +1,53 @@
+name: ServerDoublePlayerEvent
+type: class
+inherits: ServerPlayerEvent
+
+constructors:
+  -
+    params:
+      eventId:
+        type: int
+      player:
+        type: Player
+      extraPlayer:
+        type: Player
+      sendToPlayerOnly:
+        type: bool
+      sendToHostOnly:
+        type: bool
+      sendToTeamOnly:
+        type: bool
+      invertPlayerFilter:
+        type: bool
+      invertTeamFilter:
+        type: bool
+      forwardToSpectators:
+        type: bool
+      team:
+        type: TeamId
+  -
+    params:
+      eventName:
+        type: string
+      player:
+        type: Player
+      extraPlayer:
+        type: Player
+      sendToPlayerOnly:
+        type: bool
+      sendToHostOnly:
+        type: bool
+      sendToTeamOnly:
+        type: bool
+      invertPlayerFilter:
+        type: bool
+      invertTeamFilter:
+        type: bool
+      forwardToSpectators:
+        type: bool
+      team:
+        type: TeamId
+
+properties:
+  extraPlayer:
+    type: Player

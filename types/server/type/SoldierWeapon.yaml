@@ -1,0 +1,38 @@
+name: SoldierWeapon
+type: class
+inherits: GameEntity
+
+constructors:
+  -
+    params:
+      other:
+        type: Entity
+  -
+    params:
+      other:
+        type: SpatialEntity
+  -
+    params:
+      other:
+        type: GameEntity
+
+properties:
+  weaponModifier:
+    type: WeaponModifier
+    readOnly: true
+  weaponFiring:
+    type: WeaponFiring
+    readOnly: true
+  name:
+    type: string
+    readOnly: true
+  primaryAmmo:
+    type: int
+  secondaryAmmo:
+    type: int
+  fireLogic:
+    type: FireLogicType
+
+static:
+  typeInfo:
+    type: TypeInformation

@@ -1,0 +1,236 @@
+name: Player
+type: class
+
+properties:
+  name:
+    type: string
+  id:
+    type: int
+    readOnly: true
+  onlineId:
+    type: int
+    readOnly: true
+  guid:
+    type: Guid
+    readOnly: true
+  accountGuid:
+    type: Guid
+    readOnly: true
+  ip:
+    type: string
+    readOnly: true
+  ping:
+    type: int
+    readOnly: true
+  alive:
+    type: bool
+    readOnly: true
+  isSquadLeader:
+    type: bool
+    readOnly: true
+  isSquadPrivate:
+    type: bool
+    readOnly: true
+  hasSoldier:
+    type: bool
+    readOnly: true
+  soldier:
+    type: SoldierEntity
+    readOnly: true
+    nullable: true
+  corpse:
+    type: SoldierEntity
+    readOnly: true
+    nullable: true
+  teamId:
+    type: TeamId
+    readOnly: true
+  squadId:
+    type: SquadId
+    readOnly: true
+  isAllowedToSpawn:
+    type: bool
+  selectedKit:
+    type: DataContainer
+    nullable: true
+  score:
+    type: int
+    readOnly: true
+  kills:
+    type: int
+    readOnly: true
+  deaths:
+    type: int
+    readOnly: true
+  input:
+    type: EntryInput
+    nullable: true
+  controlledEntryId:
+    type: int
+    readOnly: true
+  attachedControllable:
+    type: ControllableEntity
+    readOnly: true
+    nullable: true
+  controlledControllable:
+    type: ControllableEntity
+    readOnly: true
+    nullable: true
+
+methods:
+  -
+    name: Kick
+  -
+    name: Kick
+    params:
+      reason:
+        type: string
+  -
+    name: Ban
+  -
+    name: Ban
+    params:
+      reason:
+        type: string
+  -
+    name: BanTemporarily
+    params:
+      seconds:
+        type: int
+  -
+    name: BanTemporarily
+    params:
+      seconds:
+        type: int
+      reason:
+        type: string
+  -
+    name: BanByName
+  -
+    name: BanByName
+    params:
+      reason:
+        type: string
+  -
+    name: BanByNameTemporarily
+    params:
+      seconds:
+        type: int
+  -
+    name: BanByNameTemporarily
+    params:
+      seconds:
+        type: int
+      reason:
+        type: string
+  -
+    name: BanByIp
+  -
+    name: BanByIp
+    params:
+      reason:
+        type: string
+  -
+    name: BanByIpTemporarily
+    params:
+      seconds:
+        type: int
+  -
+    name: BanByIpTemporarily
+    params:
+      seconds:
+        type: int
+      reason:
+        type: string
+  -
+    name: Spawn
+    params:
+      spawnPoint:
+        type: Entity
+      checkSpawnArea:
+        type: bool
+    returns:
+      type: bool
+  -
+    name: SelectWeapon
+    params:
+      slot:
+        type: WeaponSlot
+      weaponUnlockAsset:
+        type: DataContainer
+      unlockAssets:
+        type: DataContainer
+        table: true
+  -
+    name: SelectUnlockAssets
+    params:
+      characterCustomizationAsset:
+        type: DataContainer
+      visualUnlockAssets:
+        type: DataContainer
+        table: true
+  -
+    name: CreateSoldier
+    params:
+      soldierBlueprint:
+        type: DataContainer
+      transform:
+        type: LinearTransform
+    returns:
+      type: SoldierEntity
+      nullable: true
+  -
+    name: SpawnSoldierAt
+    params:
+      soldier:
+        type: SoldierEntity
+      transform:
+        type: LinearTransform
+      pose:
+        type: CharacterPoseType
+  -
+    name: SetSquadLeader
+    params:
+      leader:
+        type: bool
+      squadPrivate:
+        type: bool
+  -
+    name: AttachSoldier
+    params:
+      soldier:
+        type: SoldierEntity
+  -
+    name: EnableInput
+    params:
+      action:
+        type: EntryInputActionEnum
+      enable:
+        type: bool
+  -
+    name: Fade
+    params:
+      fadeTime:
+        type: float
+      fadeToBlack:
+        type: bool
+  -
+    name: EnterVehicle
+    params:
+      vehicle:
+        type: Entity
+      entryId:
+        type: int
+  -
+    name: ExitVehicle
+    params:
+      force:
+        type: bool
+      exitOnEntry:
+        type: bool
+
+operators:
+  -
+    type: eq
+    rhs: Player
+    returns: bool

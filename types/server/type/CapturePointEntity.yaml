@@ -1,0 +1,67 @@
+name: CapturePointEntity
+type: class
+inherits: GameEntity
+
+constructors:
+  -
+    params:
+      other:
+        type: Entity
+  -
+    params:
+      other:
+        type: SpatialEntity
+  -
+    params:
+      other:
+        type: GameEntity
+
+properties:
+  name:
+    type: string
+    readOnly: true
+  playersInside:
+    type: Player
+    table: true
+    readOnly: true
+  flagPole:
+    type: Entity
+    readOnly: true
+    nullable: true
+  isInPreRound:
+    type: bool
+    readOnly: true
+  isAttacked:
+    type: bool
+    readOnly: true
+  previousOwner:
+    type: TeamId
+    readOnly: true
+  attackingTeam:
+    type: teamId
+    readOnly: true
+  isFlagMoving:
+    type: bool
+    readOnly: true
+  team:
+    type: TeamId
+  flagVelocity:
+    type: float
+  flagLocation:
+    type: float
+  flagHome:
+    type: float
+  isControlled:
+    type: bool
+  isCaptureEnabled:
+    type: bool
+  cooldownTimer:
+    type: float
+  team1CooldownPenalty:
+    type: float
+  team2CooldownPenalty:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation
