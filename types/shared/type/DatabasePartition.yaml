@@ -1,39 +1,50 @@
 name: DatabasePartition
 type: class
+description: A frostbite database partition. Partitions represent game-data bound structures (ebx).
 
 properties:
   instances:
     type: DataContainer
+    description: A table holding all the instances contained within this partition.
     table: true
     readOnly: true
   guid:
     type: Guid
+    description: The Guid of this partition.
     readOnly: true
   primaryInstance:
     type: DataContainer
+    description: The primary instance of this partition.
     readOnly: true
   name:
     type: string
+    description: The name of this partition. Ususally corresponds to the relative filename of the original file.
     readOnly: true
 
 methods:
   -
     name: FindInstance
+    description: Tries to find and retrieve an instance with a matching `guid` from the current partition.
     params:
       guid:
         type: Guid
+        description: The Guid of the instance to find.
     returns:
       type: DataContainer
       nullable: true
   -
     name: ReplaceInstance
+    description: Replaces an `instance` within this partition with another `replacement` instance. When `replaceReferences` is set to `true` (default), VeniceEXT also calls DataContainer::ReplaceReferences on the original instance, replacing all references to it with its replacement.
     params:
       instance:
         type: DataContainer
+        description: The instance to replace.
       replacement:
         type: DataContainer
+        description: The replacement instance.
       replaceReferences:
         type: bool
+        description: Whether to replace all references of the original instance with the replacement. Defaults to `true`.
         default: true
   -
     name: AddInstance

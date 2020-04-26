@@ -1,21 +1,28 @@
 name: NetSocket
 type: class
+description: Represents a network socket.
 
 methods:
   -
     name: Connect
+    description: |
+      Attempts to establish a connection to the specified target at the specified port. Returns a status code. Status code `0` indicates the operation completed successfully while any other number represents an error. For a complete listing of error codes refer to the [Windows Sockets Error Codes](https://msdn.microsoft.com/en-us/library/windows/desktop/ms740668\(v=vs.85\).aspx) table on MSDN.
     params:
       target:
         type: string
+        description: The target host or IP address.
       port:
         type: int
+        description: The port to establish the connection to.
     returns:
       type: int
   -
     name: Read
+    description: Attempts to read data from the socket. Returns the data and a status code. The length of the returned data will not necessarily be the same as the requested data length.
     params:
       length:
         type: int
+        description: The number of bytes to read.
     returns:
       -
         type: string
@@ -23,9 +30,11 @@ methods:
         type: int
   -
     name: Write
+    description: Writes data to the socket. Returns the number of bytes written and a status code.
     params:
       data:
         type: string
+        description: The data to write to the socket.
     returns:
       -
         type: int
@@ -33,17 +42,22 @@ methods:
         type: int
   -
     name: Destroy
+    description: Terminates the connection (if active) and destroys the underlying socket. Returns a status code.
     returns:
       type: int
   -
     name: ReadFrom
+    description: Attempts to read a datagram. Returns the data, the source ip, source port, and a status code. The length of the returned data will not necessarily be the same as the requested data length.
     params:
       length:
         type: int
+        description: The number of bytes to read.
       host:
         type: string
+        description: The remote hostname or IP address.
       port:
         type: int
+        description: The remote port.
     returns:
       -
         type: string
@@ -55,13 +69,17 @@ methods:
         type: int
   -
     name: WriteTo
+    description: Sends data to the specified destination. Returns the number of bytes written and a status code.
     params:
       data:
         type: string
+        description: The data to write to the socket.
       host:
         type: string
+        description: The remote hostname or IP address.
       port:
         type: int
+        description: The remote port.
     returns:
       -
         type: int

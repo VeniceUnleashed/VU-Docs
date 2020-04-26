@@ -98,9 +98,14 @@ methods:
         type: Player
   -
     name: SetSpectatorEnabled
+    description: Spectator mode is disabled by default. A mod can choose to enable it by using this function.
     params:
       enabled:
         type: bool
+    example: |
+      Events:Subscribe('Extension:Loaded', function()
+        PlayerManager:SetSpectatorEnabled(true)
+      end)
   -
     name: IsSpectatorEnabled
     returns:

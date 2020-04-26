@@ -11,8 +11,15 @@ methods:
         type: string
       callback:
         type: callable
+        description: "A callback in the form `function(args: string{}): string | nil`."
     returns:
       type: ConsoleCommand
+    example: |
+      Console:Register('SomeCommand', 'Incredible command description.', function(args)
+        if #args == 1 and args[1] == 'hello' then
+          return 'goodbye'
+        end
+      end)
   -
     name: Register
     params:
@@ -24,6 +31,7 @@ methods:
         type: any
       callback:
         type: callable
+        description: "A callback in the form `function(context: any, args: string{}): string | nil`."
     returns:
       type: ConsoleCommand
   -

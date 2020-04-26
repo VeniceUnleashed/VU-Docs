@@ -1,7 +1,7 @@
 name: EffectManager
 type: library
 
-method:
+methods:
   -
     name: PlayEffect
     params:

@@ -1,49 +1,64 @@
 name: HttpOptions
 type: class
+description: Allows configuration of additional options for when sending an HTTP request.
 
 constructors:
   -
     params:
       headers:
         type: table
+        description: An associative table containing the request headers.
         default: "{}"
       timeout:
         type: int
+        description: The connection timeout in seconds.
         default: 30
 
 properties:
   timeout:
     type: int
+    description: The connection timeout in seconds.
   verifyCertificate:
     type: bool
+    description: Whether to verify the remote SSL certificate. Defaults to `true`. Changing it to `false` is **not** recommended.
   headers:
     type: table
+    description: An associative table containing the request headers.
     readOnly: true
 
 methods:
   -
     name: SetHeader
+    description: Sets the value of the header with the specified name. The `User-Agent` header **cannot** be set.
     params:
       header:
         type: string
+        description: The case-insensitive header name (eg. `Content-Type`).
       value:
         type: string
+        description: The header value (eg. `application/json`).
   -
     name: RemoveHeader
+    description: Removes the header with the specified name. The `User-Agent` header **cannot** be removed.
     params:
       header:
         type: string
+        description: The case-insensitive header name (eg. `Content-Type`).
   -
     name: GetHeader
+    description: Returns the value of a header with the specified name. If the header is not found it returns an empty string.
     params:
       header:
         type: string
+        description: The case-insensitive header name (eg. `Content-Type`).
     returns:
       type: string
   -
     name: HasHeader
+    description: Checks if a header with the specified name exists.
     params:
       header:
         type: string
+        description: The case-insensitive header name (eg. `Content-Type`).
     returns:
       type: bool

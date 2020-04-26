@@ -9,6 +9,8 @@ methods:
         type: string
     returns:
       type: bool
+    example: |
+      ChatManager:SendMessage('Hello players!')
   -
     name: SendMessage
     params:
@@ -18,6 +20,8 @@ methods:
         type: TeamId
     returns:
       type: bool
+    example: |
+      ChatManager:SendMessage('Hello Team 1 players!', TeamId.Team1)
   -
     name: SendMessage
     params:

@@ -1,29 +1,37 @@
 name: HttpResponse
 type: class
+description: Represents an HTTP response received from a remote server.
 
 properties:
   status:
     type: int
+    description: The HTTP status of the response.
     readOnly: true
   body:
     type: string
+    description: A string containing the response body data.
     readOnly: true
   headers:
     type: table
+    description: An associative table containing all the response headers.
     readonly: true
 
 methods:
   -
     name: GetHeader
+    description: Gets the value of a header with the specified name from the HTTP response. If the header is not found it returns an empty string.
     params:
       header:
         type: string
+        description: The header name (eg. `Content-Type`).
     returns:
       type: string
   -
     name: HasHeader
+    description: Checks if a header with the specified name exists in the HTTP response.
     params:
       header:
         type: string
+        description: The header name (eg. `Content-Type`).
     returns:
       type: bool
