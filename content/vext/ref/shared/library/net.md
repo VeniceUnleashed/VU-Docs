@@ -280,3 +280,26 @@ title: Net
 | ---- | ----------- |
 | **[NetSocket](/vext/ref/shared/type/netsocket)** \| **nil** |  |
 
+
+## Examples
+
+``` lua
+print('Creating TCP socket.')
+local socket = Net:Socket(NetSocketFamily.INET, NetSocketType.Stream)
+print(socket)
+
+print('Connecting to server')
+local result = socket:Connect('127.0.0.1', 3333)
+print(result)
+
+print('Sending data')
+local bytesWritten, result = socket:Write('test')
+print('Wrote bytes: ' .. tostring(bytesWritten))
+print('Result: ' .. tostring(result))
+
+print('Receiving data')
+local data, result = socket:Read(10) -- Read up to 10 bytes of data.
+print('Read data: ' .. data)
+print('Data length: ' .. tostring(data:len()))
+print('Result: ' .. tostring(result))
+```
