@@ -5,7 +5,7 @@ params:
   gunSway:
     type: GunSway
   weapon:
-    type: SoldierWeapon
+    type: Entity
     nullable: true
   weaponFiring:
     type: WeaponFiring

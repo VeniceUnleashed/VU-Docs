@@ -20,7 +20,7 @@ properties:
   authoritativeMovementVelocity:
     type: Vec3
   flags:
-    type: int
+    type: EntryInputFlags
 
 methods:
   -
