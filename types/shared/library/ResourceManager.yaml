@@ -37,7 +37,7 @@ methods:
       type: DataContainer
       nullable: true
   -
-    name: FindInstanceByGUID
+    name: FindInstanceByGuid
     params:
       partitionGuid:
         type: Guid
@@ -47,7 +47,7 @@ methods:
       type: DataContainer
       nullable: true
   -
-    name: SearchForInstanceByGUID
+    name: SearchForInstanceByGuid
     params:
       instanceGuid:
         type: Guid

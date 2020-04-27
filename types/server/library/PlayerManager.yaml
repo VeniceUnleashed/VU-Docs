@@ -24,7 +24,7 @@ methods:
       type: Player
       nullable: true
   -
-    name: GetPlayerByGUID
+    name: GetPlayerByGuid
     params:
       guid:
         type: Guid

@@ -38,7 +38,7 @@ properties:
     type: TeamId
     readOnly: true
   attackingTeam:
-    type: teamId
+    type: TeamId
     readOnly: true
   isFlagMoving:
     type: bool

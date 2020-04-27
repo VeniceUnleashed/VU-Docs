@@ -56,7 +56,7 @@ methods:
       x:
         type: int
       y:
-        type: y
+        type: int
       text:
         type: string
       color:

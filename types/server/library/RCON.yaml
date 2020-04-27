@@ -51,7 +51,7 @@ methods:
       handle:
         type: int
   -
-    name: GetServerGUID
+    name: GetServerGuid
     returns:
       type: Guid
       nullable: true

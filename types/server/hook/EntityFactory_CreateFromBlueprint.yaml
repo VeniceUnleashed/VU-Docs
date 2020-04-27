@@ -1,4 +1,4 @@
-name: "ClientEntityFactory:CreateFromBlueprint"
+name: "EntityFactory:CreateFromBlueprint"
 type: hook
 
 params:
