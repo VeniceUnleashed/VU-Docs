@@ -75,9 +75,10 @@
       maxPatternLength: 32,
       minMatchCharLength: 2,
       keys: [
-        "fields",
-        "methods"
-      ]
+        "p",
+        "m",
+        "v",
+      ],
     };
 
     var fuse = new Fuse(data, options);
@@ -91,15 +92,17 @@
           continue;
         }
 
-        let matchText = result.item.name;
-        let matchUrl = '/' + result.item.id + '#';
+        let matchText = result.item.n;
+        let matchUrl = '/' + result.item.id;
 
-        if (match.key === 'fields') {
+        if (match.key === 'p') {
           matchText += '.';
-          matchUrl += 'properties'
-        } else {
+          matchUrl += '#' + match.value.toLowerCase();
+        } else if (match.key === 'm') {
           matchText += ':';
-          matchUrl += 'methods'
+          matchUrl += '#' + match.value.toLowerCase();
+        } else if (match.key === 'v') {
+          matchText += '.';
         }
 
         matchText += match.value;
@@ -107,7 +110,7 @@
         const $resultTitle = $('<strong>');
         const $resultText = $('<span>');
 
-        $resultTitle.append($('<a>').attr('href', '/' + result.item.id).text(result.item.name));
+        $resultTitle.append($('<a>').attr('href', '/' + result.item.id).text(result.item.n)).append($('<span>').addClass('result-ctx').addClass(result.item.c));
         $resultText.append($('<a>').attr('href', matchUrl).text(matchText));
 
         const $apiResult = $('<div>').addClass('api-result').append($resultTitle).append($resultText);
