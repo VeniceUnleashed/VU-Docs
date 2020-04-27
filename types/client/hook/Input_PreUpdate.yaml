@@ -1,0 +1,8 @@
+name: "Input:PreUpdate"
+type: hook
+
+params:
+  cache:
+    type: ConceptCache
+  deltaTime:
+    type: float

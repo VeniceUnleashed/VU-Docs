@@ -1,0 +1,9 @@
+name: "Player:SelectTeam"
+type: hook
+
+params:
+  player:
+    type: Player
+    readOnly: true
+  team:
+    type: TeamId

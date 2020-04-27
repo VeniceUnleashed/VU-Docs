@@ -1,0 +1,6 @@
+name: "Client:UpdateFirstPersonTransform"
+type: hook
+
+params:
+  transform:
+    type: LinearTransform

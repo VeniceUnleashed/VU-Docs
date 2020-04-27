@@ -1,0 +1,9 @@
+name: "ResourceManager:LoadBundles"
+type: hook
+
+params:
+  bundles:
+    type: string
+    table: true
+  compartment:
+    type: ResourceCompartment

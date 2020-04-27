@@ -1,0 +1,8 @@
+name: "UI:InputConceptEvent"
+type: hook
+
+params:
+  eventType:
+    type: UIInputActionEventType
+  action:
+    type: UIInputAction

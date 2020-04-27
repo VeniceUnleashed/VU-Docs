@@ -1,0 +1,8 @@
+name: "UI:EnableCursorMode"
+type: hook
+
+params:
+  enable:
+    type: bool
+  cursor:
+    type: int

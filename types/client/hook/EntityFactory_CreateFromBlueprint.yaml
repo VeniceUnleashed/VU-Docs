@@ -1,0 +1,18 @@
+name: "EntityFactory:CreateFromBlueprint"
+type: hook
+
+params:
+  type:
+    blueprint:
+      type: DataContainer
+    transform:
+      type: LinearTransform
+    variation:
+      type: int
+    parentRepresentative:
+      type: DataContainer
+      nullable: true
+
+returns:
+  type: EntityBus
+  nullable: true

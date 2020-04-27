@@ -1,0 +1,6 @@
+name: "UI:CreateAction"
+type: hook
+
+params:
+  action:
+    type: UIAction

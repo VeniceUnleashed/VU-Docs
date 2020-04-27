@@ -1,0 +1,10 @@
+name: "Player:FindBestSquad"
+type: hook
+
+params:
+  player:
+    type: Player
+    readOnly: true
+
+returns:
+  type: SquadId

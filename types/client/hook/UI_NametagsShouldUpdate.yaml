@@ -1,0 +1,5 @@
+name: "UI:NametagsShouldUpdate"
+type: hook
+
+returns:
+  type: bool

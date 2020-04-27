@@ -1,0 +1,14 @@
+name: "UI:CreateChatMessage"
+type: hook
+
+params:
+  message:
+    type: string
+  channelId:
+    type: ChatChannelType
+  playerId:
+    type: int
+  recipientMask:
+    type: int
+  isSenderDead:
+    type: bool

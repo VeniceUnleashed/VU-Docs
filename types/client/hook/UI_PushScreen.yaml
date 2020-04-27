@@ -1,0 +1,15 @@
+name: "UI:PushScreen"
+type: hook
+
+params:
+  screen:
+    type: DataContainer
+    readOnly: true
+  priority:
+    type: UIGraphPriority
+  parentGraph:
+    type: DataContainer
+    readOnly: true
+
+returns:
+  type: bool

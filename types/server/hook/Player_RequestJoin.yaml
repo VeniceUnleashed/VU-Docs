@@ -1,0 +1,19 @@
+name: "Player:RequestJoin"
+type: hook
+
+params:
+  joinMode:
+    type: string
+    readOnly: true
+  accountGuid:
+    type: Guid
+    readOnly: true
+  playerGuid:
+    type: Guid
+    readOnly: true
+  playerName:
+    type: string
+    readOnly: true
+
+returns:
+  type: bool

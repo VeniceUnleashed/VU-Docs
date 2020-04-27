@@ -1,0 +1,6 @@
+name: "Server:SuppressEnemies"
+type: hook
+
+params:
+  suppressionModifier:
+    type: float

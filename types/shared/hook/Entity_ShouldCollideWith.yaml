@@ -1,0 +1,11 @@
+name: "Entity:ShouldCollideWith"
+type: hook
+
+params:
+  entity:
+    type: Entity
+  shouldCollideWith:
+    type: Entity
+
+returns:
+  type: bool

@@ -1,0 +1,13 @@
+name: "Soldier:Damage"
+type: hook
+
+params:
+  soldier:
+    type: SoldierEntity
+    readOnly: true
+  info:
+    type: DamageInfo
+  giverInfo:
+    type: DamageGiverInfo
+    nullable: true
+    readOnly: true
