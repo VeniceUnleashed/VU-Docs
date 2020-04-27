@@ -871,22 +871,14 @@ const generateIndexForTypes = (types, typesPath, title) => {
   }
 
   if (libraries.length > 0) {
-    const chunks = splitInChunks(libraries, 2);
+    doc += `---\n`;
 
-    doc += `|   |   |\n`;
-    doc += `| --- | --- |\n`;
-
-    for (const chunk of chunks) {
-      doc += `| [${chunk[0]}](/vext/ref/${typesPath}/${chunk[0].toLowerCase()}) | `;
-
-      if (chunk.length === 1) {
-        doc += `|\n`;
-      } else {
-        doc += `[${chunk[1]}](/vext/ref/${typesPath}/${chunk[1].toLowerCase()}) |\n`;
-      }
+    for (const library of libraries) {
+      doc += `\n`;
+      doc += `**[${library}](/vext/ref/${typesPath}/${library.toLowerCase()})**\n`;
+      doc += `\n`
+      doc += `---\n`
     }
-
-    doc += `\n`;
   }
 
   if (classes.length > 0) {
