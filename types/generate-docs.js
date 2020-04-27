@@ -5,10 +5,16 @@ const path = require('path');
 const clientTypes = {};
 const serverTypes = {};
 const sharedTypes = {};
-const frostbiteTypes = {};
+const clientEvents = {};
+const serverEvents = {};
+const sharedEvents = {};
+const clientHooks = {};
+const serverHooks = {};
+const sharedHooks = {};
 const clientLibraries = {};
 const serverLibraries = {};
 const sharedLibraries = {};
+const frostbiteTypes = {};
 
 const escapeText = (text) => {
   return text.replace(/\_/g, '\\_').replace(/\*/g, '\\*');
@@ -223,10 +229,17 @@ const writeParams = (depth, params, context) => {
     for (const paramName in params) {
       const param = params[paramName];
 
+      let readOnly = '';
+
+      // This is only for hooks.
+      if (param.readOnly) {
+        readOnly = '{{< hook-ro >}}';
+      }
+
       if (param.variadic) {
-        doc += `| ...**${escapeText(paramName)}** | ${stringifyType(param, context, true)} | `;
+        doc += `| ...**${escapeText(paramName)}**${readOnly} | ${stringifyType(param, context, true)} | `;
       } else {
-        doc += `| **${escapeText(paramName)}** | ${stringifyType(param, context, true)} | `;
+        doc += `| **${escapeText(paramName)}**${readOnly} | ${stringifyType(param, context, true)} | `;
       }
 
       if (param.description && param.description.length > 0) {
@@ -253,7 +266,7 @@ const writeReturns = (depth, returns, context) => {
 
     if (Array.isArray(returns)) {
       for (const tupleValue of returns) {
-        doc += `| ${stringifyType(tupleValue, context, true)} | `;
+        doc += `| ${stringifyType(tupleValue, context, true, true)} | `;
 
         if (tupleValue.description && tupleValue.description.length > 0) {
           doc += linkifyText(tupleValue.description, context);
@@ -262,7 +275,7 @@ const writeReturns = (depth, returns, context) => {
         doc += ` |\n`;
       }
     } else {
-      doc += `| ${stringifyType(returns, context, true)} | `;
+      doc += `| ${stringifyType(returns, context, true, true)} | `;
 
       if (returns.description && returns.description.length > 0) {
         doc += linkifyText(returns.description, context);
@@ -524,7 +537,7 @@ const generateClassDoc = (type, context) => {
       doc += `### {{% static-heading "${propertyName}" %}}\n`;
 
       doc += `\n`;
-      doc += `> ${stringifyType(staticType, context, true)}\n`;
+      doc += `> ${stringifyType(staticType, context, true, true)}\n`;
       doc += `\n`;
 
       if (staticType.description && staticType.description.length > 0) {
@@ -648,7 +661,7 @@ const generateEventDoc = (type, context) => {
   doc += `Events:Subscribe('${type.name}', function(${stringifyParamNames(type.params)})\n`;
   doc += `    -- Do stuff here.\n`;
   doc += `end)\n`;
-  doc += `\n`;
+  doc += '```\n';
 
   return doc;
 };
@@ -669,7 +682,13 @@ const generateHookDoc = (type, context) => {
   doc += `---\n`;
   doc += `\n`;
 
-  doc += `> **${type.name}**(${stringifyParams(type.params, context)})\n`;
+  doc += `> **${type.name}**(${stringifyParams(type.params, context)})`;
+
+  if (type.returns && Object.keys(type.returns).length > 0) {
+    doc += `: ${stringifyType(type.returns, context, true)}`
+  }
+
+  doc += `\n`;
   doc += `\n`;
 
   if (type.description && type.description.length > 0) {
@@ -686,7 +705,7 @@ const generateHookDoc = (type, context) => {
   doc += `Hooks:Install('${type.name}', 1, function(${stringifyHookParamNames(type.params)})\n`;
   doc += `    -- Do stuff here.\n`;
   doc += `end)\n`;
-  doc += `\n`;
+  doc += '```\n';
 
   return doc;
 };
@@ -788,6 +807,8 @@ const generateIndexForTypes = (types, typesPath, title) => {
   const classes = [];
   const enums = [];
   const libraries = [];
+  const hooks = [];
+  const events = [];
 
   for (const typeName in types) {
     const typeInfo = types[typeName];
@@ -798,12 +819,56 @@ const generateIndexForTypes = (types, typesPath, title) => {
       enums.push(typeName);
     } else if (typeInfo.type === 'library') {
       libraries.push(typeName);
+    } else if (typeInfo.type === 'hook') {
+      hooks.push(typeName);
+    } else if (typeInfo.type === 'event') {
+      events.push(typeName);
     }
   }
 
   classes.sort();
   enums.sort();
   libraries.sort();
+  hooks.sort();
+  events.sort();
+
+  if (events.length > 0) {
+    const chunks = splitInChunks(events, 2);
+
+    doc += `|   |   |\n`;
+    doc += `| --- | --- |\n`;
+
+    for (const chunk of chunks) {
+      doc += `| [${chunk[0]}](/vext/ref/${typesPath}/${chunk[0].toLowerCase().replace(/\:/g, '_')}) | `;
+
+      if (chunk.length === 1) {
+        doc += `|\n`;
+      } else {
+        doc += `[${chunk[1]}](/vext/ref/${typesPath}/${chunk[1].toLowerCase().replace(/\:/g, '_')}) |\n`;
+      }
+    }
+
+    doc += `\n`;
+  }
+
+  if (hooks.length > 0) {
+    const chunks = splitInChunks(hooks, 2);
+
+    doc += `|   |   |\n`;
+    doc += `| --- | --- |\n`;
+
+    for (const chunk of chunks) {
+      doc += `| [${chunk[0]}](/vext/ref/${typesPath}/${chunk[0].toLowerCase().replace(/\:/g, '_')}) | `;
+
+      if (chunk.length === 1) {
+        doc += `|\n`;
+      } else {
+        doc += `[${chunk[1]}](/vext/ref/${typesPath}/${chunk[1].toLowerCase().replace(/\:/g, '_')}) |\n`;
+      }
+    }
+
+    doc += `\n`;
+  }
 
   if (libraries.length > 0) {
     const chunks = splitInChunks(libraries, 2);
@@ -873,7 +938,7 @@ const generateDocForTypes = (types, title, typesPath, context) => {
   for (const typeName in types) {
     const typeInfo = types[typeName];
     const doc = generateDoc(typeInfo, context);
-    const outPath = path.join(targetDir, typeName.toLowerCase() + '.md');
+    const outPath = path.join(targetDir, typeName.toLowerCase().replace(/\:/g, '_') + '.md');
 
     fs.writeFileSync(outPath, doc);
   }
@@ -890,6 +955,12 @@ const generateDocForTypes = (types, title, typesPath, context) => {
 parseTypesInDir('client/type', clientTypes);
 parseTypesInDir('server/type', serverTypes);
 parseTypesInDir('shared/type', sharedTypes);
+parseTypesInDir('client/event', clientEvents);
+parseTypesInDir('server/event', serverEvents);
+parseTypesInDir('shared/event', sharedEvents);
+parseTypesInDir('client/hook', clientHooks);
+parseTypesInDir('server/hook', serverHooks);
+parseTypesInDir('shared/hook', sharedHooks);
 parseTypesInDir('client/library', clientLibraries);
 parseTypesInDir('server/library', serverLibraries);
 parseTypesInDir('shared/library', sharedLibraries);
@@ -899,6 +970,12 @@ parseTypesInDir('fb', frostbiteTypes);
 generateDocForTypes(clientTypes, 'Types', 'client/type', 'client');
 generateDocForTypes(serverTypes, 'Types', 'server/type', 'server');
 generateDocForTypes(sharedTypes, 'Types', 'shared/type', 'shared');
+generateDocForTypes(clientEvents, 'Events', 'client/event', 'client');
+generateDocForTypes(serverEvents, 'Events', 'server/event', 'server');
+generateDocForTypes(sharedEvents, 'Events', 'shared/event', 'shared');
+generateDocForTypes(clientHooks, 'Hooks', 'client/hook', 'client');
+generateDocForTypes(serverHooks, 'Hooks', 'server/hook', 'server');
+generateDocForTypes(sharedHooks, 'Hooks', 'shared/hook', 'shared');
 generateDocForTypes(clientLibraries, 'Libraries', 'client/library', 'client');
 generateDocForTypes(serverLibraries, 'Libraries', 'server/library', 'server');
 generateDocForTypes(sharedLibraries, 'Libraries', 'shared/library', 'shared');
