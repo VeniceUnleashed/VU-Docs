@@ -1,0 +1,16 @@
+name: RemoteCommandFlag
+type: enum
+
+values:
+  None:
+    value: 0
+  RequiresLogin:
+    value: 1
+  DisableOnRanked:
+    value: 2
+  ReadOnlyOnRanked:
+    value: 4
+  DisableAfterStartup:
+    value: 8
+  Hidden:
+    value: 16

@@ -1,0 +1,8 @@
+name: NetSocketType
+type: enum
+
+values:
+  Stream:
+    value: 0
+  Datagram:
+    value: 1

@@ -1,0 +1,20 @@
+name: RayCastFlags
+type: enum
+
+values:
+  CheckDetailMesh:
+    value: 0x1
+  IsAsyncRaycast:
+    value: 0x2
+  DontCheckWater:
+    value: 0x4
+  DontCheckTerrain:
+    value: 0x8
+  DontCheckRagdoll:
+    value: 0x10
+  DontCheckCharacter:
+    value: 0x20
+  DontCheckGroup:
+    value: 0x40
+  DontCheckPhantoms:
+    value: 0x80

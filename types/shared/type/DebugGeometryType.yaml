@@ -1,0 +1,12 @@
+name: DebugGeometryType
+type: enum
+
+values:
+  Triangle3d:
+    value: 0x0
+  Line3d:
+    value: 0x1
+  Triangle2d:
+    value: 0x2
+  Line2d:
+    value: 0x3

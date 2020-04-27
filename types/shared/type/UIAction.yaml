@@ -1,0 +1,398 @@
+name: UIAction
+type: enum
+
+values:
+  PlaySound:
+    value: 600644418
+  LoadLevel:
+    value: -370087947
+  SelectTeam:
+    value: 1283842800
+  SelectSpawnPoint:
+    value: -1239372646
+  GameInput:
+    value: -368863171
+  Spawn:
+    value: 230891742
+  OnlineMode:
+    value: 131475977
+  Matchmake:
+    value: -2072836812
+  Suicide:
+    value: -2143870751
+  JoinFriend:
+    value: -1198157547
+  PeerMode:
+    value: -631319484
+  PressStart:
+    value: 1965619586
+  EnterFontend:
+    value: 1194864785
+  SetActiveController:
+    value: 712392631
+  PopupResponse:
+    value: 1073442220
+  MouseInput:
+    value: -1254356014
+  UpdateSelectedWeapon:
+    value: -750792545
+  AddInteraction:
+    value: -1288931362
+  RemoveInteraction:
+    value: -885167655
+  PlayMovie:
+    value: 588250809
+  MutePlayer:
+    value: -138704001
+  SetPlaybackVolume:
+    value: 552692512
+  SetCaptureVolume:
+    value: 896106827
+  SetVoiceSensitivity:
+    value: -1094149348
+  SetCaptureMode:
+    value: -1868948352
+  ToggleCaptureMute:
+    value: -386488742
+  TogglePlaybackMute:
+    value: -1034405071
+  PauseGame:
+    value: -363873127
+  RestartSingleplayer:
+    value: -1281393125
+  StartSingleplayer:
+    value: 104477868
+  QuitGame:
+    value: 702328210
+  SetSelectedLevel:
+    value: 630552152
+  SpawnCustomization:
+    value: -216857053
+  UnSpawnCustomization:
+    value: 787240248
+  SpawnCustomizationVehicle:
+    value: -77536549
+  UnSpawnCustomizationVehicle:
+    value: -1179058080
+  SetCustomization:
+    value: 1764738330
+  SetWeaponCustomization:
+    value: 2001688152
+  LeavePlaygroup:
+    value: -1515650939
+  InviteToPlaygroup:
+    value: 770709068
+  KickFromPlaygroup:
+    value: -108970622
+  SelectPlayerToSpectate:
+    value: -1063771580
+  SquadAction:
+    value: -1497091703
+  RequestWeaponStats:
+    value: -413380073
+  StorePrimaryWeaponAccessories:
+    value: 1375026578
+  StoreVehicleAccessories:
+    value: -741920220
+  JoinServer:
+    value: -411369950
+  DetailedServerInfo:
+    value: 973417758
+  SelectFreeCamera:
+    value: 1053605696
+  PurchaseItem:
+    value: -1810638597
+  RedeemCode:
+    value: 652296598
+  ShowConsoleKeyboard:
+    value: -1616212868
+  CenterOnMe:
+    value: 1029712743
+  ShowPreviousLeaderboardChunk:
+    value: 1826273805
+  ShowNextLeaderboardChunk:
+    value: -1847241541
+  ShowServerLocations:
+    value: 1299318733
+  ShowLeaderboardFriends:
+    value: -2043873050
+  ShowLeaderboardGlobal:
+    value: -1720163220
+  MatchmakeCoop:
+    value: -465650489
+  InviteFriend:
+    value: 5022686
+  OnFrontendCameraChanged:
+    value: 2033918385
+  RestartCheckpoint:
+    value: -2117492232
+  GotoLeaderboardIndex:
+    value: 1330359881
+  SetServerSettings:
+    value: 230874663
+  RequestLevel:
+    value: 602445890
+  FetchServerList:
+    value: -1178859234
+  TelemetryEvent:
+    value: -401201402
+  UpdateServerInfoTabList:
+    value: 687391978
+  RequestMyServerExtraInfo:
+    value: 169427537
+  RefreshServerList:
+    value: -1743154209
+  PresetListCurrentSelectedChanged:
+    value: 1921352416
+  RestartServer:
+    value: -424058057
+  SubstringServerSearch:
+    value: -365024161
+  RequestMyServerManageInfo:
+    value: 43280330
+  SetServerBrowserFilter:
+    value: -1468664338
+  ServerBrowserNextPage:
+    value: 1056091224
+  AddAsFavouriteServer:
+    value: 1131332242
+  PresetSettingValueChanged:
+    value: 1078489695
+  PresetSettingSelectedChanged:
+    value: -627380963
+  UpdateServerBrowserFilter:
+    value: -1280432995
+  RemoveFromFavorites:
+    value: -2041147150
+  PlayersListSelectedChanged:
+    value: 488541292
+  MapsListSelectedChanged:
+    value: 1158953731
+  StoreItemSelectedChanged:
+    value: 986059492
+  RemoveFromAdminList:
+    value: -621232680
+  RemoveFromBanList:
+    value: 1679189210
+  ManageAddPlayer:
+    value: -842595050
+  SetSelectedGameMode:
+    value: -81260253
+  ReportServer:
+    value: -328907442
+  HandleSelectedPlayer:
+    value: -1574350059
+  ApplyVideoSettings:
+    value: -145439803
+  ShowExitToMenuReason:
+    value: 1761011594
+  GameTypeSelectedChanged:
+    value: 801198968
+  ShowInvitesUI:
+    value: 2010780096
+  IngameDetailedServerInfo:
+    value: -1186665321
+  ShowGamerCard:
+    value: -1837564434
+  RunServerSetupWizard:
+    value: -1049181923
+  CheckIfRSPServerIsOnline:
+    value: 822021069
+  EditMapRotationList:
+    value: 855621619
+  OptionsBack:
+    value: -2113864226
+  SelectNextMap:
+    value: -983326346
+  MovePlayer:
+    value: -1784332633
+  KickPlayer:
+    value: -337674468
+  BanPlayer:
+    value: -101411973
+  MapRotationSettingValueChanged:
+    value: 1759871058
+  SelectedAssignmentChanged:
+    value: 374132989
+  ShowNewLicenses:
+    value: -1884523662
+  SetCurrentSeverListButtonConf:
+    value: 1937244169
+  ToggleCustomizationTeam:
+    value: -1930663017
+  ResetOptions:
+    value: -936324416
+  ChangeStorageDevice:
+    value: -2097176062
+  SendChatMessage:
+    value: -1263240212
+  SavePresetSettings:
+    value: -1137456604
+  SaveMapsSettings:
+    value: -86745458
+  ServerLocationSelected:
+    value: 1161842708
+  ServerExtendSelected:
+    value: 227248495
+  EnterBindKeyMode:
+    value: -164353320
+  WaitForDisc1:
+    value: -1165953095
+  WaitForDisc2:
+    value: -1165953094
+  StartHDInstallation:
+    value: 1446648469
+  SelectStorageDevice:
+    value: -1338185748
+  ReloadBattlelog:
+    value: 58745402
+  StartBattlelogListening:
+    value: -455323742
+  StopBattlelogListening:
+    value: -335045254
+  GameManualForwardOnePage:
+    value: 643411453
+  GameManualBackOnePage:
+    value: 1108560717
+  GameManualMoveToPage:
+    value: -1768763416
+  ConfirmKeyBind:
+    value: 1887665057
+  StoreEnterRentAServerScreen:
+    value: -1970236713
+  StoreEnterScreen:
+    value: -543979842
+  StoreExitRentAServerScreen:
+    value: 1475949279
+  StoreExitScreen:
+    value: -2112309322
+  CancelMatchmake:
+    value: -999826862
+  RequestLocalStatistics:
+    value: -936768452
+  ResumePendingInvites:
+    value: -1689334535
+  WipePendingInvites:
+    value: 698988939
+  RevertServerBrowserFilterChanges:
+    value: 681422267
+  AutoLogin:
+    value: 768391433
+  ShowFirstPartyOnline:
+    value: 533806813
+  WarnIfMissingDLC:
+    value: -1031316017
+  ClearServerDetailes:
+    value: 1131282590
+  CheckRspOnline:
+    value: -849958947
+  RequestDynamicPopup:
+    value: -755476597
+  DiscSwap:
+    value: 424653229
+  OnLeaveServerBrowser:
+    value: 1473100502
+  DebugOutput:
+    value: 444104395
+  DoNothing:
+    value: 487726163
+  NextCreditsPage:
+    value: 1342863407
+  PrevCreditsPage:
+    value: -515768423
+  UpdateCoopGameData:
+    value: -535908103
+  StopScrollTextTimer:
+    value: 159051690
+  WipeGraphPopups:
+    value: 881894971
+  ShutDown:
+    value: -158957331
+  UpdateScoreboardButtons:
+    value: -1020925181
+  ToggleMutePlayer:
+    value: 960084717
+  StartChangeResolutionTimer:
+    value: -317184342
+  ShowFirstPartyFriendList:
+    value: -1771626558
+  RadioVO:
+    value: 1473255213
+  MouseCursor:
+    value: 1190729422
+  ActivateCommoRose:
+    value: 640104404
+  ContextVO:
+    value: -1873904957
+  RestrictMouse:
+    value: 1787551448
+  AssignmentRewardSelChanged:
+    value: -1664981959
+  ResetCreditsPage:
+    value: -1517938563
+  ToggleMinimapType:
+    value: -1495762704
+  NotifyMinimapZoomLevelHasChanged:
+    value: 1069683456
+  StartMatchFeedRetrieval:
+    value: 2055408818
+  StopMatchFeedRetrieval:
+    value: 12826474
+  UpdateMapSettingsGameMode:
+    value: -1682072896
+  UpdateMapSettingsMod:
+    value: 12064299
+  InitializeNewMapRotationPreset:
+    value: -907021700
+  ResetMapsSettings:
+    value: -926897862
+  InitializeNewServerSettingPreset:
+    value: -1220793753
+  ResetServerSettings:
+    value: 1766441424
+  EditPresetName:
+    value: -428900901
+  EditMapRotationName:
+    value: 855562870
+  DeclarePlayerMatchReady:
+    value: -1144118090
+  RevokePlayerMatchReady:
+    value: -1269191378
+  EditAllMapRotationList:
+    value: -961443726
+  VerifyServerStrings:
+    value: -93784911
+  GetUpdatedServerDetails:
+    value: -444147807
+  JoinMatch:
+    value: -1460400524
+  CalculateMapRotMaxPlayers:
+    value: -1501086432
+  StoreTabChanged:
+    value: -1472263665
+  UpdatePremiumDetails:
+    value: -1173035155
+  RequestPremiumData:
+    value: -2126751169
+  ReleasePremiumData:
+    value: -1320310873
+  ExitPremiumDetailView:
+    value: -985594430
+  ShutdownCalendarService:
+    value: -663715198
+  DownloadDefServerBanner:
+    value: -1572561337
+  LoadPremiumImages:
+    value: 2023646188
+  ResetStats:
+    value: -1121315727
+  ShowPromoStore:
+    value: -1812426122
+  DefragMemory:
+    value: 788197175
+  PromoShownTelemetry:
+    value: -1428940696
+  RefreshStats:
+    value: -1422441735
+  LoadPromoImageInfo:
+    value: -590019451

@@ -1,0 +1,40 @@
+name: WeaponState
+type: enum
+
+values:
+  Deploy:
+    value: 0
+  AltDeploy:
+    value: 1
+  TriggerReleaseWait:
+    value: 2
+  NoTrigger:
+    value: 3
+  PreFireDelay:
+    value: 4
+  PrimarySingleDelay:
+    value: 5
+  PrimarySingle:
+    value: 6
+  BoltActionDelay:
+    value: 7
+  BoltAction:
+    value: 8
+  PrimaryAutomaticFire:
+    value: 9
+  ReloadDelay:
+    value: 10
+  Reload:
+    value: 11
+  PostReload:
+    value: 12
+  PrimaryHoldAndRelease_Hold:
+    value: 13
+  PrimaryHoldAndRelease_ReleaseDelay:
+    value: 14
+  PrimaryHoldAndRelease_Release:
+    value: 15
+  NumWeaponStates:
+    value: 16
+  WeaponStateSizeInBits:
+    value: 16

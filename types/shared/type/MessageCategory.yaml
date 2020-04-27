@@ -1,0 +1,114 @@
+name: MessageCategory
+type: enum
+
+values:
+  Client:
+    value: -1573253508
+  ClientCharacter:
+    value: -765087963
+  ClientCollision:
+    value: -949001278
+  ClientConnection:
+    value: -1881985046
+  ClientControllable:
+    value: -1436984163
+  ClientControllableToComponents:
+    value: 427567386
+  ClientDynamicModel:
+    value: 1006693478
+  ClientGameplay:
+    value: 1351556790
+  ClientLevel:
+    value: -626684246
+  ClientMetrics:
+    value: -698614165
+  ClientOverlay:
+    value: 2024843782
+  ClientPlayer:
+    value: 620630415
+  ClientSoldier:
+    value: 913290934
+  ClientSound:
+    value: -626242081
+  ClientSpawn:
+    value: -625087417
+  ClientState:
+    value: -625230933
+  ClientStaticModel:
+    value: -1857496085
+  ClientVehicle:
+    value: 579415972
+  ClientWeapon:
+    value: 677544254
+  Core:
+    value: 2088844958
+  Network:
+    value: -964876421
+  Presence:
+    value: -1669899172
+  Server:
+    value: -958133344
+  ServerAdmin:
+    value: -668142001
+  ServerAdministration:
+    value: -104637554
+  ServerBanList:
+    value: 1140495055
+  ServerClub:
+    value: 1801802200
+  ServerCollision:
+    value: -614408162
+  ServerComponent:
+    value: -1641634865
+  ServerControllable:
+    value: 525960385
+  ServerControllableToComponents:
+    value: -1002574266
+  ServerEntity:
+    value: -418719237
+  ServerGameManager:
+    value: 128104957
+  ServerGameplay:
+    value: 1352856554
+  ServerInput:
+    value: -658989610
+  ServerLevel:
+    value: -662293002
+  ServerMapSequencer:
+    value: -1962848719
+  ServerMetrics:
+    value: 302419383
+  ServerPeer:
+    value: 1802189346
+  ServerPlayer:
+    value: -204915245
+  ServerRound:
+    value: -650258494
+  ServerSoldier:
+    value: -595266326
+  ServerSound:
+    value: -651309309
+  ServerStaticModel:
+    value: -473687241
+  ServerSubLevel:
+    value: -1022957230
+  ServerUnlockList:
+    value: -605134958
+  ServerUnlockSystem:
+    value: 1570834837
+  ServerVehicle:
+    value: 1044827640
+  ServerWeapon:
+    value: 117672034
+  Session:
+    value: -1552398437
+  Statistics:
+    value: -852034080
+  UI:
+    value: 5862329
+  UINetwork:
+    value: -1996083449
+  VeniceNetwork:
+    value: -2144672663
+  VeniceServerMetrics:
+    value: 1113600165

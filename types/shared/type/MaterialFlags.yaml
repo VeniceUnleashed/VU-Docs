@@ -1,0 +1,18 @@
+name: MaterialFlags
+type: enum
+
+values:
+  MfPenetrable:
+    value: 0x1000000
+  MfClientDestructible:
+    value: 0x2000000
+  MfBashable:
+    value: 0x4000000
+  MfSeeThrough:
+    value: 0x8000000
+  MfNoCollisionResponse:
+    value: 0x10000000
+  MfNoCollisionResponseCombined:
+    value: 0x20000000
+  MfIndexMask:
+    value: 0xFFFFFF

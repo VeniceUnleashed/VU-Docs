@@ -1,0 +1,8 @@
+name: MediaHint
+type: enum
+
+values:
+  Default:
+    value: 0
+  Auxiliary:
+    value: 1

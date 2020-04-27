@@ -1,0 +1,24 @@
+name: HealthStateAction
+type: enum
+
+values:
+  OnHealthy:
+    value: 0x0
+  OnCriticallyDamaged:
+    value: 0x1
+  OnInteractiveManDown:
+    value: 0x2
+  OnManDown:
+    value: 0x3
+  OnKilled:
+    value: 0x4
+  OnDead:
+    value: 0x5
+  OnDeathAnimationDone:
+    value: 0x6
+  OnRevive:
+    value: 0x7
+  OnReviveDone:
+    value: 0x8
+  OnReviveAborted:
+    value: 0x9

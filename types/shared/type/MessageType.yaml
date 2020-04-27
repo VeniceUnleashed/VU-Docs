@@ -1,0 +1,1284 @@
+name: MessageType
+type: enum
+
+values:
+  ClientAbortCutsceneMessage:
+    value: 847018273
+  ClientActiveLicensesMessage:
+    value: 869320947
+  ClientConnectedMessage:
+    value: -1700320184
+  ClientContinueSingleplayerMessage:
+    value: 1131904991
+  ClientDisconnectedMessage:
+    value: -1119123562
+  ClientDrawFpsMessage:
+    value: -1390058638
+  ClientDrawNetworkStatsMessage:
+    value: 391095592
+  ClientDrawObjectLimitsMessage:
+    value: 1153751684
+  ClientDrawStatsMessage:
+    value: 1587104502
+  ClientEnterHudIngameMessage:
+    value: -112930417
+  ClientEnteredIngameMessage:
+    value: -785746089
+  ClientExitToMenuMessage:
+    value: 2129992607
+  ClientJoinMultiplayerMessageBase:
+    value: 1162997178
+  ClientJoinServerJobMessage:
+    value: -453455881
+  ClientLeftRemoteServerMessage:
+    value: 1368126605
+  ClientLevelDescriptionLoadedMessage:
+    value: 1533759808
+  ClientLevelLoadProgressMessage:
+    value: -2119084454
+  ClientLevelLoadedMessage:
+    value: -562711802
+  ClientLevelUnloadedMessage:
+    value: -1375780003
+  ClientLoadLevelMessage:
+    value: -1241137401
+  ClientLoadLevelRequestedMessage:
+    value: 2116295255
+  ClientLoadingDebugInfoEnabledMessage:
+    value: 1274672363
+  ClientPeerNetworkRemovedMessage:
+    value: -76947287
+  ClientRenderTagsMessage:
+    value: -1776240260
+  ClientRestartSingleplayerMessage:
+    value: 738381161
+  ClientRestartTimerMessage:
+    value: -1377078329
+  ClientReturnToMenuMessage:
+    value: 1871399125
+  ClientSetServerPasswordMessage:
+    value: 252002927
+  ClientStartMultiplayerMessage:
+    value: -1084728723
+  ClientStartSingleplayerMessageBase:
+    value: 276130283
+  ClientStartedMessage:
+    value: 512147926
+  ClientWantFullscreenMessage:
+    value: 1692722820
+  ClientCharacterLocalPlayerDeletedMessage:
+    value: -1518286323
+  ClientCharacterLocalPlayerSetMessage:
+    value: 156481778
+  ClientCharacterSpawnDoneMessage:
+    value: -602344971
+  ClientCollisionExplosionPackDetonatedMessage:
+    value: -1156943451
+  ClientCollisionExplosionPackPlacedMessage:
+    value: -884488582
+  ClientCollisionGrenadeCollisionMessage:
+    value: 939198217
+  ClientConnectionInitializedMessage:
+    value: -2003374931
+  ClientConnectionLinkLevelMessage:
+    value: -716226761
+  ClientConnectionLoadLevelMessage:
+    value: -930914799
+  ClientConnectionUnloadLevelMessage:
+    value: 1811412394
+  ClientControllableSpawnDoneMessage:
+    value: 738681613
+  ClientControllableUnspawnDoneMessage:
+    value: -2091205514
+  ClientControllableToComponentsPlayerEnteredMessage:
+    value: 1740305323
+  ClientControllableToComponentsPlayerExitMessage:
+    value: 1832457986
+  ClientDynamicModelRenderStatsMessage:
+    value: -1777541210
+  ClientGameplayControllableLowHealthMessage:
+    value: 308260564
+  ClientGameplayPlayerBaseDestroyedMessage:
+    value: 826285432
+  ClientGameplaySoldierHitMessage:
+    value: 437540802
+  ClientLevelFinalizedMessage:
+    value: 1781596255
+  ClientLevelSpawnDebugEntitiesMessage:
+    value: 43109398
+  ClientLevelSpawnEntitiesEndMessage:
+    value: 402243048
+  ClientLevelenterLevelDisableDestructionEffectsTimeMessage:
+    value: -509352732
+  ClientLevelenterLevelDisableEffectsTimeMessage:
+    value: -1233693478
+  ClientMetricsPauseGameMessage:
+    value: 1047180860
+  ClientMetricsPopUIScreenMessage:
+    value: -496262945
+  ClientMetricsPushUIScreenMessage:
+    value: -284430802
+  ClientMetricsUIActionMessage:
+    value: 297068066
+  ClientOverlayBlockOverlayAvailabilityMessage:
+    value: 1130585775
+  ClientPlayerAmmoPickupMessage:
+    value: 1429744222
+  ClientPlayerChangedAllowedToSpawnOnMessage:
+    value: -929830625
+  ClientPlayerChangedMatchReadyStatusMessage:
+    value: 1787312650
+  ClientPlayerChangedPlayerViewMessage:
+    value: 563946744
+  ClientPlayerChangedSquadLeaderStatusMessage:
+    value: -69617797
+  ClientPlayerChangedVoiceChannelMessage:
+    value: -338555373
+  ClientPlayerConnectMessage:
+    value: 1776313402
+  ClientPlayerDeletedMessage:
+    value: 1619630009
+  ClientPlayerEnterEntryMessage:
+    value: -1602204488
+  ClientPlayerEnterExitVehicleMessage:
+    value: -1619569516
+  ClientPlayerKilledMessage:
+    value: -1164759673
+  ClientPlayerLocalSetMessage:
+    value: 473901803
+  ClientPlayerManDownMessage:
+    value: -565403308
+  ClientPlayerNewSquadOrderMessage:
+    value: -206859932
+  ClientPlayerRequestCameraChangeMessage:
+    value: 2025231082
+  ClientPlayerSwitchSquadMessage:
+    value: -1497080988
+  ClientPlayerSwitchTeamMessage:
+    value: 1837906027
+  ClientPlayerUpdateCameraComponentMessage:
+    value: 1688559811
+  ClientPlayerWeaponPickupMessage:
+    value: 1600557426
+  ClientSoldierChangeCoverStateMessage:
+    value: -1832186591
+  ClientSoldierOnJumpMessage:
+    value: -2130419074
+  ClientSoldierOnLandMessage:
+    value: 652760123
+  ClientSoundVoiceOverFinishedMessage:
+    value: -1480643522
+  ClientSpawnSpawnedOrUnSpawnedMessage:
+    value: 1618548042
+  ClientStateEnteredFrontendMessage:
+    value: 350575207
+  ClientStateEnteredIngameMessage:
+    value: -169333312
+  ClientStateEnteredLoadingLevelMessage:
+    value: 616703769
+  ClientStateEnteredStaticMessage:
+    value: -1051818447
+  ClientStateEnteredUnloadMessage:
+    value: 507536436
+  ClientStateRequestFrontendMessage:
+    value: -947499361
+  ClientStateRequestIngameMessage:
+    value: 2077158008
+  ClientStateRequestLoadingIngameBundlesMessage:
+    value: -854114279
+  ClientStateRequestLoadingLevelMessage:
+    value: 593444321
+  ClientStateRequestStaticMessage:
+    value: -665713847
+  ClientStateRequestUnloadMessage:
+    value: -704629684
+  ClientStateResponseLoadingIngameBundlesMessage:
+    value: 536142859
+  ClientStaticModelDrawBoundingBoxMessage:
+    value: 455483015
+  ClientStaticModelDrawBoundingBoxNonPhysicsMessage:
+    value: -342028093
+  ClientStaticModelDrawBoundingBoxPhysicsMessage:
+    value: 1213524396
+  ClientStaticModelRenderKeyFrameTrailMessage:
+    value: -1759514814
+  ClientVehicleCriticalDamageMessage:
+    value: -1120191985
+  ClientWeaponDispersionUpdatedMessage:
+    value: 48855234
+  ClientWeaponPlayerPrimaryOutOfAmmoMessage:
+    value: -1607312637
+  ClientWeaponPlayerPrimaryWeaponFireMessage:
+    value: -540355792
+  ClientWeaponPlayerWeaponChangeMessage:
+    value: 638585794
+  ClientWeaponPlayerWeaponReloadBeginMessage:
+    value: -1835302574
+  ClientWeaponPlayerWeaponReloadEndMessage:
+    value: 731651546
+  CoreBudgetManagerMessage:
+    value: -2092505181
+  CoreCleanupMessage:
+    value: -1463505419
+  CoreDebugReadSaveGameDataMessage:
+    value: -2113157783
+  CoreDemoStatusMessage:
+    value: -1221526270
+  CoreDetailedMemoryStatsEnabledMessage:
+    value: 474346560
+  CoreDialogLevelMessage:
+    value: -1964986613
+  CoreDisplayAssertsMessage:
+    value: -1799933538
+  CoreEndMemoryFileStreamMessage:
+    value: -1464816639
+  CoreEndMemoryTrackingMessage:
+    value: -470228844
+  CoreEnteredIngameMessage:
+    value: 1756357301
+  CoreExitIngameMessage:
+    value: -261898180
+  CoreGameTimerMessage:
+    value: 1931130620
+  CoreHibernateMessage:
+    value: -101848705
+  CoreJobProcessorCountMessage:
+    value: -74214841
+  CoreLiveEditingEnableMessage:
+    value: -1179704098
+  CoreLogLevelMessage:
+    value: -1612460345
+  CoreMainThreadInitMessage:
+    value: -566944054
+  CoreMemoryStatsEnabledMessage:
+    value: -1799292304
+  CorePanicMessage:
+    value: 2116451264
+  CorePropertyTweakedMessage:
+    value: -2093885665
+  CoreQuitMessage:
+    value: -384571220
+  CoreQuittingInitiatedMessage:
+    value: -1052826049
+  CoreResourceLoadingFailureMessage:
+    value: -1685241415
+  CoreTweakBlueprintBundleLoadedMessage:
+    value: 44840197
+  CoreTweakBlueprintBundleUnloadedMessage:
+    value: 1875635422
+  CoreTweakSubLevelBundleLoadedMessage:
+    value: 714052600
+  CoreTweakSubLevelBundleUnloadedMessage:
+    value: 717562787
+  CoreUpdateClipboardMessage:
+    value: -640055800
+  CoreWriteSaveGameDoneMessage:
+    value: -223420121
+  CoreWriteSaveGameMessage:
+    value: -1731352441
+  NetworkCameraPositionMessage:
+    value: -1019453392
+  NetworkChangeGameSettingMessage:
+    value: -1031686130
+  NetworkClientCameraControlMessage:
+    value: 1013022519
+  NetworkConnectedMessage:
+    value: -1259116593
+  NetworkCreatePlayerMessage:
+    value: -771436793
+  NetworkDebugServerInputMessage:
+    value: 23611698
+  NetworkDifficultyChangedMessage:
+    value: 947795329
+  NetworkDisconnectedMessage:
+    value: 778899633
+  NetworkDrawServerGhostsMessage:
+    value: 1234075649
+  NetworkDrawServerGhostsSkipStaticMessage:
+    value: 114706712
+  NetworkDumpMessageCreatorsMessage:
+    value: -635092392
+  NetworkFirstPlayerEnteredMessage:
+    value: -1194220304
+  NetworkGhostCountWarningDrawXMessage:
+    value: 1111445798
+  NetworkGhostCountWarningDrawYMessage:
+    value: 1521730887
+  NetworkGhostCountWarningInfoMessage:
+    value: 952159184
+  NetworkGhostCountWarningInstanceThresholdMessage:
+    value: 228827008
+  NetworkGhostCountWarningMessage:
+    value: -1073567906
+  NetworkGhostCountWarningThresholdMessage:
+    value: -1334934103
+  NetworkGhostCountWarningTimeMessage:
+    value: -480443477
+  NetworkJuiceSessionMessage:
+    value: 455381982
+  NetworkLevelLoadedAckMessage:
+    value: 113453192
+  NetworkLoadLevelMessage:
+    value: 1292955648
+  NetworkMatchReadyStatusChangedMessage:
+    value: 961448894
+  NetworkMaxClientCountMessage:
+    value: 347431614
+  NetworkMetricsSaveGameSavedMessage:
+    value: 1890115501
+  NetworkMovePlayerMessage:
+    value: 1829355154
+  NetworkOnPlayerSpawnedMessage:
+    value: -893973128
+  NetworkPerformanceProfileMessage:
+    value: 880806691
+  NetworkPlayerSelectedUnlockAssetsMessage:
+    value: -145548999
+  NetworkPlayerSelectedWeaponMessage:
+    value: 220489352
+  NetworkProtocolVersionMessage:
+    value: -970051908
+  NetworkRequestLoadLevelMessage:
+    value: 989809105
+  NetworkScreenFadeMessage:
+    value: 635866170
+  NetworkSelectSpawnGroupMessage:
+    value: 1909800124
+  NetworkSelectTeamMessage:
+    value: -1795611739
+  NetworkServerAddressMessage:
+    value: -578751677
+  NetworkServerPortMessage:
+    value: -1795172628
+  NetworkSetActiveWeaponSlotMessage:
+    value: 614190488
+  NetworkSetPlayerViewMessage:
+    value: -378277876
+  NetworkSettingsMessage:
+    value: -1364909291
+  NetworkSpawnCustomizationMessage:
+    value: 19073174
+  NetworkSpawnHereMessage:
+    value: 793655281
+  NetworkSpawnMessage:
+    value: -1818666741
+  NetworkSpawnOnSelectedMessage:
+    value: -1277463869
+  NetworkSpawnVehicleCustomizationMessage:
+    value: 2090633806
+  NetworkSuicideMessage:
+    value: -1427413164
+  NetworkTimeSyncMessage:
+    value: 1132805922
+  NetworkUnSpawnCustomizationMessage:
+    value: -1616015315
+  PresenceAchievementRequestMessageBase:
+    value: 485070420
+  PresenceBlobMessageBase:
+    value: 2065626049
+  PresenceBlobRequestMessageBase:
+    value: 1848750064
+  PresenceBlockListMessageBase:
+    value: 329692393
+  PresenceBrowserMessageBase:
+    value: -1897749394
+  PresenceBrowserRequestMessageBase:
+    value: -595985153
+  PresenceCalendarMessageBase:
+    value: -115050096
+  PresenceCalendarRequestMessageBase:
+    value: -315209279
+  PresenceCommMessageBase:
+    value: -1288665266
+  PresenceCommRequestMessageBase:
+    value: 130978655
+  PresenceCommerceMessageBase:
+    value: -2014191681
+  PresenceCommerceRequestMessageBase:
+    value: 306840078
+  PresenceConnectionMessageBase:
+    value: -330555788
+  PresenceConnectionRequestMessageBase:
+    value: 1895039525
+  PresenceCouchMessageBase:
+    value: -5661776
+  PresenceFriendMessageBase:
+    value: -1112507856
+  PresenceFriendRequestMessageBase:
+    value: 2127988193
+  PresenceGameConfigurationMessageBase:
+    value: 768213628
+  PresenceGameConfigurationRequestMessageBase:
+    value: -69124307
+  PresenceGameMessageBase:
+    value: 298682508
+  PresenceGameQueueMessageBase:
+    value: -125402371
+  PresenceGameRequestMessageBase:
+    value: -974035875
+  PresenceHistoryMessageBase:
+    value: 89122112
+  PresenceInitialControllerIndexMessageBase:
+    value: 35145950
+  PresenceJoinResultMessageBase:
+    value: 946403209
+  PresenceLicenseMessageBase:
+    value: 484228217
+  PresenceLicenseRequestMessageBase:
+    value: -49386232
+  PresenceLivePartyMessageBase:
+    value: 20586170
+  PresenceMatchFeedMessageBase:
+    value: 1219722643
+  PresenceMatchFeedRequestMessageBase:
+    value: -861099038
+  PresenceMatchImagesMessageBase:
+    value: 678725381
+  PresenceMatchmakerMessageBase:
+    value: -2124197119
+  PresenceNewsTickerMessageBase:
+    value: -1224997009
+  PresenceNewsTickerRequestMessageBase:
+    value: -992517538
+  PresencePeerGameMessageBase:
+    value: 435666830
+  PresencePeerGameRequestMessageBase:
+    value: -685936097
+  PresencePingUpdatedMessageBase:
+    value: 1653502695
+  PresencePlaygroupAttributesMessageBase:
+    value: -266700138
+  PresencePlaygroupMessageBase:
+    value: 938907609
+  PresencePlaygroupRequestMessageBase:
+    value: 1562184424
+  PresencePopupMessageBase:
+    value: 2139104424
+  PresencePopupRequestMessageBase:
+    value: 157866873
+  PresenceRspMessageBase:
+    value: -402928717
+  PresenceRspRequestMessageBase:
+    value: 1520247938
+  PresenceServerBannerMessageBase:
+    value: 318825139
+  PresenceServerBannerRequestMessageBase:
+    value: 941775746
+  PresenceServerBrowserMessageBase:
+    value: -1047204341
+  PresenceServerBrowserRequestMessageBase:
+    value: 1003882362
+  PresenceStorageMessageBase:
+    value: -987356997
+  PresenceStorageRequestMessageBase:
+    value: 917353098
+  PresenceSystemUIMessageBase:
+    value: -1734141445
+  PresenceUserIdMessageBase:
+    value: 2043438686
+  PresenceUserIdRequestMessageBase:
+    value: 831909967
+  PresenceUserSettingsMessageBase:
+    value: -836002090
+  PresenceUserSettingsRequestMessageBase:
+    value: -1239892025
+  PresenceUserTitleInfoMessageBase:
+    value: -1208247427
+  PresenceUserTitleInfoRequestMessageBase:
+    value: -264643444
+  PresenceWebFeedMessageBase:
+    value: 1245380880
+  PresenceWebFeedRequestMessageBase:
+    value: 1102668097
+  PresenceWebMessageBase:
+    value: -328099310
+  PresenceWebRequestMessageBase:
+    value: -621833981
+  PresenceXPromoMessageBase:
+    value: -457272843
+  PresenceXPromoRequestMessageBase:
+    value: 2076092932
+  ServerActiveLicensesMessage:
+    value: -79259089
+  ServerApplyConfigurationMessage:
+    value: 1113777263
+  ServerClientConnectionConnectedMessage:
+    value: -2019541317
+  ServerClientConnectionRemovedMessage:
+    value: -947874234
+  ServerDrawCombatAreaGeometryMessage:
+    value: 1155411216
+  ServerInternalLoadLevelMessage:
+    value: 301952764
+  ServerIsDesertingAllowedMessage:
+    value: 931899992
+  ServerIsRenderDamageEventsMessage:
+    value: 370373711
+  ServerIsStatsEnabledMessage:
+    value: 620024597
+  ServerJobEnableForceEnabledHackMessage:
+    value: -1482291916
+  ServerLevelLoadedMessage:
+    value: 594295130
+  ServerLevelUnloadedMessage:
+    value: -751729279
+  ServerLoadGameMessage:
+    value: -1424832605
+  ServerLoadLevelMessage:
+    value: -1034363045
+  ServerLogGameAttributesMessage:
+    value: 1960394126
+  ServerPausedMessage:
+    value: -1322879683
+  ServerQueryProviderEnabledMessage:
+    value: 1167483557
+  ServerRemoteAdministrationPortMessage:
+    value: 1645399672
+  ServerResendSyncedSettingsMessage:
+    value: 105269539
+  ServerResetConfigurationMessage:
+    value: -267230226
+  ServerRespawnOnDeathPositionMessage:
+    value: 528996195
+  ServerRestartForESportsMatchMessage:
+    value: 589919336
+  ServerRestartTimerMessage:
+    value: 1655375643
+  ServerRotateLevelMessage:
+    value: -757118748
+  ServerStartedMessage:
+    value: 987331850
+  ServerStopMessage:
+    value: -1993400653
+  ServerStoppedMessage:
+    value: -977180094
+  ServerThreadingEnableMessage:
+    value: 735839332
+  ServerUnloadLevelMessage:
+    value: 1847145440
+  ServerAdminBanPlayerMessage:
+    value: 412527098
+  ServerAdminSetServerNameMessage:
+    value: -2055462172
+  ServerAdministrationEventsEnabledMessage:
+    value: -1268729761
+  ServerAdministrationLoginMessage:
+    value: -937956858
+  ServerAdministrationPacketMessage:
+    value: -672766835
+  ServerAdministrationPasswordMessage:
+    value: -1068428614
+  ServerAdministrationQuitMessage:
+    value: -1950241860
+  ServerBanListEventMessage:
+    value: -1543082584
+  ServerClubMemberCreatedMessage:
+    value: -964747293
+  ServerClubMemberDeletedMessage:
+    value: 389187582
+  ServerCollisionExplosionDamageMessage:
+    value: -569466805
+  ServerCollisionExplosionPackDestroyedMessage:
+    value: -116547526
+  ServerCollisionExplosionPackPlacedMessage:
+    value: -689773658
+  ServerCollisionExplosionPreDamageMessage:
+    value: -716652084
+  ServerCollisionExplosionSpawnMessage:
+    value: 58123131
+  ServerCollisionExplosionUnSpawnMessage:
+    value: -1359619232
+  ServerCollisionGrenadeCollisionMessage:
+    value: -486460331
+  ServerCollisionGrenadeThrowMessage:
+    value: 458752477
+  ServerCollisionProjectileFireMessage:
+    value: -1358395560
+  ServerCollisionProjectileImpactMessage:
+    value: 1157204162
+  ServerCollisionProjectileTimeoutMessage:
+    value: -1738013029
+  ServerComponentEntryComponentProcessedInputMessage:
+    value: 941015299
+  ServerComponentEntryOnPlayerEntersMessage:
+    value: 345337529
+  ServerComponentEntryOnPlayerExitsMessage:
+    value: 915911761
+  ServerComponentEntryOnUnspawnMessage:
+    value: -566872847
+  ServerComponentWeaponOnSpawnMessage:
+    value: -1391067716
+  ServerComponentWeaponOnUnspawnMessage:
+    value: 1930510855
+  ServerControllableSpawnDoneMessage:
+    value: -2042474927
+  ServerControllableUnspawnDoneMessage:
+    value: 1726982570
+  ServerControllableToComponentsPlayerEnteredMessage:
+    value: -2098714121
+  ServerControllableToComponentsPlayerExitMessage:
+    value: -829025954
+  ServerEntityBangerEntityOnSpawnMessage:
+    value: -95387508
+  ServerEntityBangerEntityOnUnspawnMessage:
+    value: 1318770295
+  ServerEntityOnDamageMessage:
+    value: -1600037286
+  ServerEntityPickupOnSpawnMessage:
+    value: -587054594
+  ServerEntityPickupOnUnspawnMessage:
+    value: 1008656709
+  ServerGameManagerAddGameBanRequestMessage:
+    value: 831852645
+  ServerGameManagerAddGameBanResponseMessage:
+    value: -1943869641
+  ServerGameManagerAddQueuedPlayerMessage:
+    value: 201506321
+  ServerGameManagerCheckAggressiveJoinStateMessage:
+    value: 1899888969
+  ServerGameManagerGameAttributesUpdateMessage:
+    value: 1559748006
+  ServerGameManagerGameSettingsUpdateMessage:
+    value: -1717573812
+  ServerGameManagerGetGameDataMessage:
+    value: 1698574014
+  ServerGameManagerMatchmakingStateMessage:
+    value: 1523806229
+  ServerGameManagerPlayerJoiningMessage:
+    value: -1527213177
+  ServerGameManagerPlayerJoiningQueueMessage:
+    value: -356986634
+  ServerGameManagerRefreshGameAttributesMessage:
+    value: 286819210
+  ServerGameManagerResetServerMessage:
+    value: 942652390
+  ServerGameManagerRestartLevelRequestMessage:
+    value: 641379398
+  ServerGameManagerUpdateGameServerListsMessage:
+    value: 1305626269
+  ServerGameManagerUpdateMatchmakingStateMessage:
+    value: -289376028
+  ServerGameManagerUpdatePlayerCapacityRequestMessage:
+    value: -199244079
+  ServerGameManagerUpdatePlayerCapacityResponseMessage:
+    value: 82128579
+  ServerGameManagerValidateContentRequestMessage:
+    value: -1179400344
+  ServerGameManagerValidateContentResponseMessage:
+    value: 779351194
+  ServerGameplayCTFFlagCapturedMessage:
+    value: -2141816452
+  ServerGameplayCTFFlagDroppedMessage:
+    value: 1913387300
+  ServerGameplayCTFFlagPickedUpMessage:
+    value: -1234146775
+  ServerGameplayCTFFlagReturnedMessage:
+    value: -994362345
+  ServerGameplayCapturePointCapturedMessage:
+    value: 1236363785
+  ServerGameplayCapturePointChangedMessage:
+    value: -1310831573
+  ServerGameplayCapturePointLostMessage:
+    value: -99097779
+  ServerGameplayCapturePointPlayerEnteredMessage:
+    value: -1242290669
+  ServerGameplayCapturePointResetMessage:
+    value: 1141476796
+  ServerGameplayDeserterMessage:
+    value: 947658279
+  ServerGameplayDeserterReturnMessage:
+    value: -1921533043
+  ServerGameplayFightHarderMessage:
+    value: 1560940477
+  ServerGameplayGameModeResetMessage:
+    value: -1571335527
+  ServerGameplayMedkitMessage:
+    value: 1157204219
+  ServerGameplayPlayerBaseDestroyedMessage:
+    value: 240671908
+  ServerGameplayPlayerMenuCancelMessage:
+    value: 476842887
+  ServerGameplayPlayerMenuOkMessage:
+    value: -60501915
+  ServerGameplayPreviousWeatherStateMessage:
+    value: 1698878623
+  ServerGameplayServerPlayerMenuCancelMessage:
+    value: -1888949566
+  ServerGameplayServerPlayerMenuOkMessage:
+    value: -601548448
+  ServerGameplayTeamLostLeadMessage:
+    value: 165171700
+  ServerGameplayTeamReinforceMessage:
+    value: 1568713681
+  ServerGameplayTeamTakeLeadMessage:
+    value: -634153653
+  ServerGameplayVoiceOverFinishedMessage:
+    value: -1694687797
+  ServerInputDeactivateInputRestrictionMessage:
+    value: 385784103
+  ServerInputReactivateInputRestrictionMessage:
+    value: -1148128079
+  ServerLevelCompletedMessage:
+    value: -135581040
+  ServerLevelSpawnEntitiesBeginMessage:
+    value: 623123260
+  ServerLevelSpawnEntitiesEndMessage:
+    value: -1675019724
+  ServerLevelStartedMessage:
+    value: -592490532
+  ServerMapSequencerControlledInfoMessage:
+    value: -1608658722
+  ServerMapSequencerControlledMessage:
+    value: 959749712
+  ServerMapSequencerDebugOutputMessage:
+    value: -1308832012
+  ServerMapSequencerEventMessageBase:
+    value: 1270538947
+  ServerMapSequencerLevelLoadedMessage:
+    value: 944105995
+  ServerMapSequencerMaxPlayerCountMessage:
+    value: 2143919742
+  ServerMapSequencerStatusMessage:
+    value: -880669778
+  ServerMapSequencerSwitchingLevelsMessage:
+    value: 792314925
+  ServerMetricsDetonateExplosionMessage:
+    value: -447653555
+  ServerMetricsObjectiveSuccessMessage:
+    value: 1613303952
+  ServerMetricsSaveGameLoadedMessage:
+    value: -1124383052
+  ServerMetricsSaveGameSavedMessage:
+    value: 1894707990
+  ServerPeerInitializedMessage:
+    value: 1369321701
+  ServerPeerLoadLevelMessage:
+    value: -872116391
+  ServerPlayerAboutToClearSoldierMessage:
+    value: -832541283
+  ServerPlayerAboutToCreateForConnectionMessage:
+    value: 1231268711
+  ServerPlayerChangeChatChannelMessage:
+    value: 841705347
+  ServerPlayerChangedSoldierMessage:
+    value: 82953904
+  ServerPlayerChangedSquadSpawnerStatusMessage:
+    value: -1755261296
+  ServerPlayerChangedVoiceChannelMessage:
+    value: -2104485041
+  ServerPlayerChatMessage:
+    value: -607717530
+  ServerPlayerCreateMessage:
+    value: 810674236
+  ServerPlayerCreatedForConnectionMessage:
+    value: -1028670187
+  ServerPlayerCustomizationDoneMessage:
+    value: -1408388027
+  ServerPlayerDebugFriendZoneSpawnMessage:
+    value: 172219454
+  ServerPlayerDestroyMessage:
+    value: -524298886
+  ServerPlayerEnterEntryMessage:
+    value: 1178721508
+  ServerPlayerEnteredLevelMessage:
+    value: 163048007
+  ServerPlayerExitEntryMessage:
+    value: 370370828
+  ServerPlayerGunMasterLevelChangedMessage:
+    value: -769688724
+  ServerPlayerInstantSuicideMessage:
+    value: -2081535801
+  ServerPlayerKilledMessage:
+    value: -945047077
+  ServerPlayerKitReplacedMessage:
+    value: -658567898
+  ServerPlayerLeftLevelMessage:
+    value: 258059669
+  ServerPlayerLevelLoadedMessage:
+    value: 1389366249
+  ServerPlayerLicensesAvailableMessage:
+    value: 1213130857
+  ServerPlayerManDownRevivedMessage:
+    value: 1767466807
+  ServerPlayerManuallySelectedSpawnPointMessage:
+    value: 1131473193
+  ServerPlayerMeleeInteruptedMessage:
+    value: 1438714248
+  ServerPlayerNoInteractivityKickMessage:
+    value: 1797974618
+  ServerPlayerReleasingLevelMessage:
+    value: -2079488542
+  ServerPlayerRespawnMessage:
+    value: -919231116
+  ServerPlayerReviveAcceptedMessage:
+    value: -1809414750
+  ServerPlayerReviveMessage:
+    value: 632760579
+  ServerPlayerReviveRefusedMessage:
+    value: -692095307
+  ServerPlayerSpawnAtVehicleMessage:
+    value: 1762351918
+  ServerPlayerSpawnOnPlayerMessage:
+    value: 1457667857
+  ServerPlayerSpawnOnSelectedSpawnPointMessage:
+    value: 2102049532
+  ServerPlayerSquadLeaderStatusChangedMessage:
+    value: 1001970439
+  ServerPlayerSwitchSquadMessage:
+    value: -501433416
+  ServerPlayerSwitchTeamMessage:
+    value: -624505161
+  ServerPlayerTeamKillKickMessage:
+    value: 464531853
+  ServerPlayerTickMessage:
+    value: 1949252013
+  ServerRoundInterruptedMessage:
+    value: -906115921
+  ServerRoundOverMessage:
+    value: 381336391
+  ServerRoundResetMessage:
+    value: 1270406748
+  ServerSoldierChangingWeaponMessage:
+    value: -2081361568
+  ServerSoldierDamagedMessage:
+    value: 200221454
+  ServerSoldierFiringMessage:
+    value: -635158948
+  ServerSoldierKilledMessage:
+    value: -1688272062
+  ServerSoldierManDownMessage:
+    value: -1086589071
+  ServerSoldierOnInitMessage:
+    value: 1619831450
+  ServerSoldierSelfHealMessage:
+    value: 1952412637
+  ServerSoldierSoldierDamageMessage:
+    value: -1854355072
+  ServerSoldierSpawnDoneMessage:
+    value: -480641222
+  ServerSoldierUnspawnDoneMessage:
+    value: 1445566401
+  ServerSoldierWeaponReplacedMessage:
+    value: 318389163
+  ServerSoundVoiceOverFinishedMessage:
+    value: 1235756386
+  ServerStaticModelDamagedPartByPlayerMessage:
+    value: 822978124
+  ServerStaticModelDamagedPartMessage:
+    value: -1374772860
+  ServerStaticModelDestroyedAllCollapsablePartsMessage:
+    value: 559150686
+  ServerStaticModelGroupDestroyedPartMessage:
+    value: 188772375
+  ServerStaticModelSpawnMessage:
+    value: -1224218937
+  ServerSubLevelOnStreamedInMessage:
+    value: -223714494
+  ServerUnlockListEventMessage:
+    value: 609831285
+  ServerUnlockListRefreshMessage:
+    value: 2101113988
+  ServerUnlockSystemSetupMessage:
+    value: -734200231
+  ServerVehicleDamageMessage:
+    value: -1821560680
+  ServerVehicleDestroyedMessage:
+    value: 37016272
+  ServerVehicleDisabledMessage:
+    value: 735256739
+  ServerVehicleEnterMessage:
+    value: -1098145989
+  ServerVehicleEnterRestrictionMessage:
+    value: -163116017
+  ServerVehicleExitMessage:
+    value: 118781299
+  ServerVehicleForceArmamentReturnMessage:
+    value: -711481431
+  ServerVehicleJumpMessage:
+    value: -962347119
+  ServerVehicleLockableMessage:
+    value: -344956206
+  ServerVehicleSpawnDoneMessage:
+    value: -2137065560
+  ServerVehicleSwitchTeamMessage:
+    value: 357883516
+  ServerVehicleUnspawnMessage:
+    value: 2058033011
+  ServerWeaponArtilleryFiredMessage:
+    value: 942868469
+  ServerWeaponLaserDesignatorMessage:
+    value: 54549466
+  ServerWeaponMortarStrikeMessage:
+    value: 1498630892
+  ServerWeaponPlayerPrimaryFireLockedShotSpawnedMessage:
+    value: -870678882
+  ServerWeaponPlayerPrimaryFireShotSpawnedMessage:
+    value: -743913164
+  ServerWeaponPlayerPrimaryOutOfAmmoMessage:
+    value: 1617274975
+  ServerWeaponPlayerReloadMessage:
+    value: 1426645739
+  ServerWeaponPlayerResupplyMessage:
+    value: 895339998
+  ServerWeaponPlayerWeaponReloadEndMessage:
+    value: 1998716934
+  ServerWeaponPlayerWeaponRemovedMessage:
+    value: -576974310
+  ServerWeaponSoldierWeaponActivateMessage:
+    value: -1881218696
+  ServerWeaponSoldierWeaponReloadMessage:
+    value: -1799555856
+  ServerWeaponWeaponComponentActivateMessage:
+    value: -1349642371
+  ServerWeaponWeaponComponentReloadMessage:
+    value: -157712651
+  SessionPlayerAuthenticatedMessage:
+    value: 1559045354
+  SessionPlayerJoinedMessage:
+    value: -966402688
+  SessionPlayerLeftMessage:
+    value: -627735528
+  StatisticsEventMessageBase:
+    value: 324775570
+  UIAmpPortMessage:
+    value: -1896684297
+  UIAmpServerEnabledMessage:
+    value: -1276832274
+  UIAmpWaitForServerConnectionMessage:
+    value: -404701651
+  UIBundleLoadedMessage:
+    value: -101721855
+  UIClearEnable2Message:
+    value: -881995560
+  UIClearEnableMessage:
+    value: 1627008778
+  UIControllerConnectedMessage:
+    value: -26859535
+  UIControllerDisconnectedMessage:
+    value: 263344463
+  UIControlpointChangedTeamMessage:
+    value: -189959066
+  UICycleRadioChannelMessage:
+    value: 835091312
+  UIDamageGivenToEnemyMessage:
+    value: 93974635
+  UIDialogScreenPushedMessage:
+    value: 156927401
+  UIDisableMoviesMessage:
+    value: -773895091
+  UIEndOfRoundReadyMessage:
+    value: 488333117
+  UIEnterFrontendMessage:
+    value: 1284004980
+  UIExitToMenuReasonMessage:
+    value: -455632098
+  UIFakedLeaderboardNativeIDMessage:
+    value: -831557806
+  UIFlowDialogNodeReachedMessage:
+    value: 1343621044
+  UIFontCacheTextureHeightMessage:
+    value: -467130835
+  UIFontCacheTextureWidthMessage:
+    value: -1562519916
+  UIGraphExitedMessage:
+    value: -1474303873
+  UIHasSuppressedEnemyMessage:
+    value: 1614990818
+  UIHudChangeInventoryWeaponMessage:
+    value: -1665091867
+  UIHudChatMessage:
+    value: -1713136843
+  UIHudDebugPauseMessage:
+    value: -1502661880
+  UIHudDistortHudMessage:
+    value: 1467650609
+  UIHudEnableMinimapMessage:
+    value: 2133782901
+  UIHudMessageMessage:
+    value: 765724160
+  UIHudOutputStaticMessage:
+    value: 1648834060
+  UIHudResetWinningTeamMessage:
+    value: 1619865949
+  UIHudReviveWeaponEquippedChangedMessage:
+    value: -1663922535
+  UIHudShowCaptureProgressMessage:
+    value: 1612529361
+  UIHudShowEnemiesMessage:
+    value: 1630007924
+  UIHudShowVoteMenuMessage:
+    value: -480857901
+  UIHudShowVoteResultsMessage:
+    value: 1235012634
+  UIHudTicketBleedMessage:
+    value: 325974597
+  UIHudToggleMapZoomMessage:
+    value: -93579438
+  UIHudUpdateCrosshairMessage:
+    value: -196077482
+  UIHudWarningMessage:
+    value: -785990943
+  UIInputPressedMessage:
+    value: 2105815426
+  UIInputStatusChangedMessage:
+    value: -297086350
+  UILanguageMessage:
+    value: -1099940288
+  UILevelFontCacheTextureHeightMessage:
+    value: -748454565
+  UILevelFontCacheTextureWidthMessage:
+    value: 1671461026
+  UIMatchImagesRetrievedMessage:
+    value: 1638672735
+  UIMatchUGCDisabledMessage:
+    value: -1352986304
+  UIMaxMinimapIconsConsoleMessage:
+    value: 968924950
+  UIMaxMinimapIconsPcMessage:
+    value: 2086504882
+  UIMaximumNumberOfAwardsInEORMessage:
+    value: 1618696317
+  UIMinPredictedSightSpeedMessage:
+    value: 336255458
+  UIOnScreenTracesMessage:
+    value: 565198157
+  UIOutputEnabledMessage:
+    value: 532674664
+  UIOverrideMatchMessage:
+    value: -405187627
+  UIOverrideRootedPlayersMessage:
+    value: 1465767137
+  UIPlayerVehicleHealthChangeMessage:
+    value: -655433885
+  UIPlayerVehicleListRefreshMessage:
+    value: 129945478
+  UIPopupHideMessage:
+    value: 2009582840
+  UIPopupShowMessage:
+    value: 1676986715
+  UIPreEndOfRoundReadyMessage:
+    value: 69972442
+  UIReadyForUnloadMessage:
+    value: 1213915295
+  UIRenderCommandBufferSizeMessage:
+    value: 1805559130
+  UIRenderEnableMessage:
+    value: 1224723897
+  UIRenderIndexBufferSizeMessage:
+    value: -1262955197
+  UIRenderLevelCommandBufferSizeMessage:
+    value: 262927724
+  UIRenderLevelIndexBufferSizeMessage:
+    value: -1895241483
+  UIRenderLevelVertexBufferSizeMessage:
+    value: -1550743325
+  UIRenderPcBufferScaleMessage:
+    value: -1287101229
+  UIRenderVertexBufferSizeMessage:
+    value: -756600235
+  UIRequestEndOfRoundMessage:
+    value: -138573529
+  UIRequestMatchImagesMessage:
+    value: 1851002852
+  UIRequestPreEndOfRoundMessage:
+    value: 1263455872
+  UIReturnMouseToUIMessage:
+    value: -439493058
+  UIScreenCountChangeMessage:
+    value: -2015173189
+  UIScreenLoadedMessage:
+    value: -912014567
+  UISetValueMessage:
+    value: 1786297915
+  UIShowDebugInfoMessage:
+    value: 1070448782
+  UIShowDebugStringTagMessage:
+    value: -1663254393
+  UIShowMinimapMessage:
+    value: -464571986
+  UIShowProgressObjectMessage:
+    value: 1422699705
+  UIShowScoreboardMessage:
+    value: -377047613
+  UISkipIntroVideoSequenceMessage:
+    value: -294802989
+  UISoldierChangeMessage:
+    value: 1474901918
+  UISoldierHitUpdatedMessage:
+    value: -1945110504
+  UISquadStatusChangedMessage:
+    value: 1645083222
+  UIStartSinglePlayerMenuMessage:
+    value: 928158248
+  UIStereoInteractionCompDepthMessage:
+    value: -362763538
+  UITrackedAwardChangedMessage:
+    value: -1159549089
+  UITrackedAwardUpdatedMessage:
+    value: -757805304
+  UITransitionEffectStartMessage:
+    value: -222344790
+  UITransitionEffectStopMessage:
+    value: 345669746
+  UITriggerPopupHideMessage:
+    value: -1266694592
+  UITriggerPopupShowMessage:
+    value: -39841757
+  UIUpdateEnableMessage:
+    value: -331930174
+  UIUserConnectedMessage:
+    value: -475804164
+  UIUserDisconnectedMessage:
+    value: 574090210
+  UIUserNotificationMessage:
+    value: 13715502
+  UIUserSkippedLoginMessage:
+    value: 1512388048
+  UIVKBDInputDoneMessage:
+    value: -987204769
+  UIVehicleHitDirectionUpdatedMessage:
+    value: 128469103
+  UIVerboseOutputEnabledMessage:
+    value: -477950254
+  UINetworkAdminYellMessage:
+    value: -1659862657
+  UINetworkAllowSkipVideoMessage:
+    value: 26958309
+  UINetworkCoopGameMessage:
+    value: -1654502671
+  UINetworkCoopPlayerMessage:
+    value: -642526964
+  UINetworkEnableHudMessage:
+    value: 923671060
+  UINetworkEndOfRoundBonusMessage:
+    value: 1080583725
+  UINetworkGunMasterNotificationMessage:
+    value: 1679744129
+  UINetworkHudScoringMessage:
+    value: -485282056
+  UINetworkHudTextMessage:
+    value: 176478632
+  UINetworkHudTooltipMessage:
+    value: 1780562560
+  UINetworkKilledOtherPlayerMessage:
+    value: -1963112840
+  UINetworkMenuResponseMessage:
+    value: -214915876
+  UINetworkOwnPlayerKilledMessage:
+    value: -1957189686
+  UINetworkPlayVideoMessage:
+    value: -176947687
+  UINetworkPlayerCollectibleTextMessage:
+    value: 681690814
+  UINetworkPlayerConnectMessage:
+    value: -744157759
+  UINetworkPlayerDeserterTextMessage:
+    value: -1456171356
+  UINetworkPlayerDisconnectMessage:
+    value: -842197089
+  UINetworkPlayerKillsTextMessage:
+    value: -2018370157
+  UINetworkPlayerMissionObjectiveTextMessage:
+    value: 645051681
+  UINetworkPlayerRankUpMessage:
+    value: 1308628172
+  UINetworkPlayerTextMessage:
+    value: 718085378
+  UINetworkPlayerTutorialInstructionsTextMessage:
+    value: 2016597765
+  UINetworkRollCreditsMessage:
+    value: -1187572465
+  UINetworkRoundWarningMessage:
+    value: 766753092
+  UINetworkSetCoopServerLobbyGameTypeMessage:
+    value: -1272180012
+  UINetworkSetPlayerTeamMessage:
+    value: -1540316832
+  UINetworkSkipVideoMessage:
+    value: -2085789892
+  UINetworkSquadWipeInstigatorMessage:
+    value: -1459925421
+  UINetworkSquadWipeMessage:
+    value: -1678159531
+  UINetworkStealBodyMessage:
+    value: 195636563
+  UINetworkStopVideoMessage:
+    value: 640255845
+  UINetworkVideoDoneMessage:
+    value: -1064816323
+  UINetworkVoiceOverSubtitleTextMessage:
+    value: -1324401811
+  VeniceNetworkAllWeaponKillsMessage:
+    value: 1686636336
+  VeniceNetworkAwardGainedMessage:
+    value: 1266239811
+  VeniceNetworkCreateSquadMessage:
+    value: 1699257268
+  VeniceNetworkDefibKillMessage:
+    value: 686957004
+  VeniceNetworkDogTagMessage:
+    value: 1026685820
+  VeniceNetworkEorStatsMessage:
+    value: -1657141893
+  VeniceNetworkFocusPointMessage:
+    value: -999031998
+  VeniceNetworkFriendZoneDebugEnableMessage:
+    value: 1954526494
+  VeniceNetworkFriendZoneMessage:
+    value: 1126472782
+  VeniceNetworkJoinSquadByOnlineIdMessage:
+    value: 961919435
+  VeniceNetworkJoinSquadMessage:
+    value: 1275276178
+  VeniceNetworkKickFromSquadMessage:
+    value: -2058389076
+  VeniceNetworkLeaveSquadMessage:
+    value: -560286709
+  VeniceNetworkLocalClientConnectionInfoUpdatedMessage:
+    value: 1210474491
+  VeniceNetworkMetricsAchievementMessage:
+    value: 136534386
+  VeniceNetworkMissionAwardsStatusMessage:
+    value: 58895944
+  VeniceNetworkNotifyMicStateMessage:
+    value: -448900239
+  VeniceNetworkOnPlayerSelectedTeamMessage:
+    value: -891774588
+  VeniceNetworkOrderMessage:
+    value: -1202174548
+  VeniceNetworkRemoveOrderMessage:
+    value: -1852393174
+  VeniceNetworkRequestAllWeaponKillsMessage:
+    value: 252071745
+  VeniceNetworkRequestCoopEorStatsMessage:
+    value: -1818628263
+  VeniceNetworkRequestCoopPlayerInformationMessage:
+    value: 740944255
+  VeniceNetworkRequestEorStatsMessage:
+    value: 42387530
+  VeniceNetworkReviveFinishedMessage:
+    value: -124628021
+  VeniceNetworkReviveInitiatedMessage:
+    value: -1269593058
+  VeniceNetworkReviveResponseMessage:
+    value: -179214438
+  VeniceNetworkSendTelemetryTokenMessage:
+    value: 937211690
+  VeniceNetworkSetPingMessage:
+    value: 1213536976
+  VeniceNetworkSetSquadPrivacyMessage:
+    value: 1235756052
+  VeniceNetworkSetVoiceChannelMessage:
+    value: -1262333131
+  VeniceNetworkSpotExplosionPackMessage:
+    value: 386424566
+  VeniceNetworkSpottingMessage:
+    value: -156812594
+  VeniceNetworkUnlockAchievementsMessage:
+    value: 1809848230
+  VeniceNetworkUnlockGainedMessage:
+    value: 2001478098
+  VeniceNetworkVirtualGameStateMessage:
+    value: -2064178118
+  VeniceServerMetricsKitPickedupMessage:
+    value: 894197517

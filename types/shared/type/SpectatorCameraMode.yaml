@@ -1,0 +1,12 @@
+name: SpectatorCameraMode
+type: enum
+
+values:
+  FreeCamera:
+    value: 0
+  FirstPerson:
+    value: 1
+  ThirdPerson:
+    value: 2
+  Disabled:
+    value: 3
