@@ -1,0 +1,6 @@
+name: "Player:SpawnOnSelectedSpawnPoint"
+type: event
+
+params:
+  player:
+    type: Player

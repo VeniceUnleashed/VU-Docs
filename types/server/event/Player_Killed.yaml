@@ -1,0 +1,21 @@
+name: "Player:Killed"
+type: event
+
+params:
+  player:
+    type: Player
+  inflictor:
+    type: Player
+    nullable: true
+  position:
+    type: Vec3
+  weapon:
+    type: string
+  isRoadKill:
+    type: bool
+  isHeadShot:
+    type: bool
+  wasVictimInReviveState:
+    type: bool
+  info:
+    type: DamageGiverInfo

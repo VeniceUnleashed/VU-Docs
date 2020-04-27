@@ -1,0 +1,6 @@
+name: "VU:Spec:PreUpdate"
+type: event
+
+params:
+  deltaTime:
+    type: float

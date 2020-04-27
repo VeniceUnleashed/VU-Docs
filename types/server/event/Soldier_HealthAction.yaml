@@ -1,0 +1,8 @@
+name: "Soldier:HealthAction"
+type: event
+
+params:
+  soldier:
+    type: SoldierEntity
+  action:
+    type: HealthStateAction

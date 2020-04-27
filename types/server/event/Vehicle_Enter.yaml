@@ -1,0 +1,8 @@
+name: "Vehicle:Enter"
+type: event
+
+params:
+  vehicle:
+    type: Entity
+  player:
+    type: Player

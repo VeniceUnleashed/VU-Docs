@@ -1,0 +1,10 @@
+name: "Player:Reload"
+type: event
+
+params:
+  player:
+    type: Player
+  weaponName:
+    type: string
+  position:
+    type: Vec3

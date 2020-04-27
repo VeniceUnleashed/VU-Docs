@@ -1,0 +1,10 @@
+name: "Player:TeamChange"
+type: event
+
+params:
+  player:
+    type: Player
+  team:
+    type: TeamId
+  squad:
+    type: SquadId

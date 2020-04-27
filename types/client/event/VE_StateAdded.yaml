@@ -1,0 +1,6 @@
+name: "VE:StateAdded"
+type: event
+
+params:
+  state:
+    type: VisualEnvironmentState

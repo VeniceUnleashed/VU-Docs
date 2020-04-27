@@ -1,0 +1,8 @@
+name: "Player:UpdateInput"
+type: event
+
+params:
+  player:
+    type: Player
+  deltaTime:
+    type: float

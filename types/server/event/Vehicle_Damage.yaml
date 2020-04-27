@@ -1,0 +1,11 @@
+name: "Vehicle:Damage"
+type: event
+
+params:
+  vehicle:
+    type: Entity
+  damage:
+    type: float
+  info:
+    type: DamageGiverInfo
+    nullable: true

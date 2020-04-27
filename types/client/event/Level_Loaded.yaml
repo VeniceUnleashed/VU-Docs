@@ -1,0 +1,8 @@
+name: "Level:Loaded"
+type: event
+
+params:
+  levelName:
+    type: string
+  gameMode:
+    type: string

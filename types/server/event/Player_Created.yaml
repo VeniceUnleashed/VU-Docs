@@ -1,0 +1,6 @@
+name: "Player:Created"
+type: event
+
+params:
+  player:
+    type: Player

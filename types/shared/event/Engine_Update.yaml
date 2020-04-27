@@ -1,0 +1,8 @@
+name: "Engine:Update"
+type: event
+
+params:
+  deltaTime:
+    type: float
+  simulationDeltaTime:
+    type: float

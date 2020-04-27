@@ -1,0 +1,8 @@
+name: "Player:SpawnOnPlayer"
+type: event
+
+params:
+  player:
+    type: Player
+  playerToSpawnOn:
+    type: Player

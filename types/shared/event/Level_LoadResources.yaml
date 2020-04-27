@@ -1,0 +1,10 @@
+name: "Level:LoadResources"
+type: event
+
+params:
+  levelName:
+    type: string
+  gameMode:
+    type: string
+  isDedicatedServer:
+    type: bool

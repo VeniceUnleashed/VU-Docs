@@ -1,0 +1,11 @@
+name: "Player:Resupply"
+type: event
+
+params:
+  player:
+    type: Player
+  givenMagsCount:
+    type: int
+  supplier:
+    type: Player
+    nullable: bool

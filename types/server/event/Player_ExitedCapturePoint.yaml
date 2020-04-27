@@ -1,0 +1,8 @@
+name: "Player:EnteredCapturePoint"
+type: event
+
+params:
+  player:
+    type: Player
+  capturePoint:
+    type: Entity

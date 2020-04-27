@@ -1,0 +1,6 @@
+name: "WeaponFiring:Update"
+type: event
+
+params:
+  weaponFiring:
+    type: WeaponFiring

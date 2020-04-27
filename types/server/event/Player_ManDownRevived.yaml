@@ -1,0 +1,11 @@
+name: "Player:ManDownRevived"
+type: event
+
+params:
+  reviver:
+    type: Player
+    nullable: true
+  revivee:
+    type: Player
+  isAdrenalineRevive:
+    type: bool

@@ -1,0 +1,6 @@
+name: "Engine:Message"
+type: event
+
+params:
+  message:
+    type: Message

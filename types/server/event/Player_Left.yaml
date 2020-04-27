@@ -1,0 +1,6 @@
+name: "Player:Left"
+type: event
+
+params:
+  player:
+    type: Player

@@ -1,0 +1,6 @@
+name: "WeaponFiring:Create"
+type: event
+
+params:
+  weaponFiring:
+    type: WeaponFiring

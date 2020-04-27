@@ -1,0 +1,6 @@
+name: "CapturePoint:Lost"
+type: event
+
+params:
+  capturePoint:
+    type: Entity

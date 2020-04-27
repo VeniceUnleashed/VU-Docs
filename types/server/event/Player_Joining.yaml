@@ -1,0 +1,12 @@
+name: "Player:Joining"
+type: event
+
+params:
+  name:
+    type: string
+  playerGuid:
+    type: Guid
+  ipAddress:
+    type: string
+  accountGuid:
+    type: Guid

@@ -1,0 +1,8 @@
+name: "Server:RoundOver"
+type: event
+
+params:
+  roundTime:
+    type: float
+  winningTeam:
+    type: TeamId

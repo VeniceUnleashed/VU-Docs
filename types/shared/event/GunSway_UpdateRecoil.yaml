@@ -1,0 +1,14 @@
+name: "GunSway:UpdateRecoil"
+type: event
+
+params:
+  gunSway:
+    type: GunSway
+  weapon:
+    type: SoldierWeapon
+    nullable: true
+  weaponFiring:
+    type: WeaponFiring
+    nullable: true
+  deltaTime:
+    type: float

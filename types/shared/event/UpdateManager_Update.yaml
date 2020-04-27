@@ -1,0 +1,8 @@
+name: "UpdateManager:Update"
+type: event
+
+params:
+  deltaTime:
+    type: float
+  updatePass:
+    type: UpdatePass

@@ -1,0 +1,6 @@
+name: "Player:Respawn"
+type: event
+
+params:
+  player:
+    type: Player

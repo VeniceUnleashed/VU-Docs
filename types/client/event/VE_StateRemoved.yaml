@@ -1,0 +1,6 @@
+name: "VE:StateRemoved"
+type: event
+
+params:
+  state:
+    type: VisualEnvironmentState

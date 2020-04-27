@@ -1,0 +1,6 @@
+name: "FreeCam:PostFrameUpdate"
+type: event
+
+params:
+  deltaTime:
+    type: float

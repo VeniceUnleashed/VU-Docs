@@ -1,0 +1,6 @@
+name: "VU:Spec:PostUpdate"
+type: event
+
+params:
+  deltaTime:
+    type: float

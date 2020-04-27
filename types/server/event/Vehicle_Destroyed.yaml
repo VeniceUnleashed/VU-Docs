@@ -1,0 +1,10 @@
+name: "Vehicle:Destroyed"
+type: event
+
+params:
+  vehicle:
+    type: Entity
+  vehiclePoints:
+    type: int
+  hotTeam:
+    type: TeamId

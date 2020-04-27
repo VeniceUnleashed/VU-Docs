@@ -1,0 +1,6 @@
+name: "Level:RegisterEntityResources"
+type: event
+
+params:
+  levelData:
+    type: DataContainer

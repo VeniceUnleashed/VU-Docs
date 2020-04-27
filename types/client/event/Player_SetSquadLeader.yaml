@@ -1,0 +1,6 @@
+name: "Player:SetSquadLeader"
+type: event
+
+params:
+  player:
+    type: Player

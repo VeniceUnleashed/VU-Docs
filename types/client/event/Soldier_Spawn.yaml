@@ -1,0 +1,6 @@
+name: "Soldier:Spawn"
+type: event
+
+params:
+  soldier:
+    type: SoldierEntity

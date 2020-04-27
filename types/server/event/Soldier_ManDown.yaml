@@ -1,0 +1,9 @@
+name: "Soldier:ManDown"
+type: event
+
+params:
+  soldier:
+    type: Soldier
+  inflictor:
+    type: Player
+    nullable: true

@@ -1,0 +1,6 @@
+name: "FPSCamera:Update"
+type: event
+
+params:
+  deltaTime:
+    type: float

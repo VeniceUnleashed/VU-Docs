@@ -1,0 +1,6 @@
+name: "Vehicle:SpawnDone"
+type: event
+
+params:
+  vehicle:
+    type: Entity

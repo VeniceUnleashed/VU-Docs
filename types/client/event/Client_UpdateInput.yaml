@@ -1,0 +1,6 @@
+name: "Client:UpdateInput"
+type: event
+
+params:
+  deltaTime:
+    type: float

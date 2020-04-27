@@ -1,0 +1,10 @@
+name: "Player:Chat"
+type: event
+
+params:
+  player:
+    type: Player
+  recipientMask:
+    type: int
+  message:
+    type: string

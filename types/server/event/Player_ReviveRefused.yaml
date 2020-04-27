@@ -1,0 +1,6 @@
+name: "Player:ReviveRefused"
+type: event
+
+params:
+  player:
+    type: Player
