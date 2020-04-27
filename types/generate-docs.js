@@ -699,13 +699,13 @@ const generateEnumDoc = (type, context) => {
   return doc;
 };
 
-const generateDoc = (typeInfo) => {
+const generateDoc = (typeInfo, context) => {
   if (typeInfo.type === 'class') {
-    return generateClassDoc(typeInfo);
+    return generateClassDoc(typeInfo, context);
   } else if (typeInfo.type === 'library') {
-    return generateLibraryDoc(typeInfo);
+    return generateLibraryDoc(typeInfo, context);
   } else if (typeInfo.type === 'enum') {
-    return generateEnumDoc(typeInfo);
+    return generateEnumDoc(typeInfo, context);
   } else {
     throw new Error(`Tried generating documentation for unrecognized type "${type.type}".`);
   }
@@ -832,12 +832,12 @@ const generateIndexForTypes = (types, typesPath, title) => {
   return doc;
 };
 
-const generateDocForTypes = (types, title, typesPath) => {
+const generateDocForTypes = (types, title, typesPath, context) => {
   const targetDir = path.join(__dirname, '../content/vext/ref', typesPath);
 
   for (const typeName in types) {
     const typeInfo = types[typeName];
-    const doc = generateDoc(typeInfo);
+    const doc = generateDoc(typeInfo, context);
     const outPath = path.join(targetDir, typeName.toLowerCase() + '.md');
 
     console.log(`Writing generated documentation to "${outPath}".`);
@@ -863,10 +863,10 @@ parseTypesInDir('shared/library', sharedLibraries);
 parseTypesInDir('fb', frostbiteTypes);
 
 // Generate documentation for all types.
-generateDocForTypes(clientTypes, 'Types', 'client/type');
-generateDocForTypes(serverTypes, 'Types', 'server/type');
-generateDocForTypes(sharedTypes, 'Types', 'shared/type');
-generateDocForTypes(clientLibraries, 'Libraries', 'client/library');
-generateDocForTypes(serverLibraries, 'Libraries', 'server/library');
-generateDocForTypes(sharedLibraries, 'Libraries', 'shared/library');
-generateDocForTypes(frostbiteTypes, null, 'fb');
+generateDocForTypes(clientTypes, 'Types', 'client/type', 'client');
+generateDocForTypes(serverTypes, 'Types', 'server/type', 'server');
+generateDocForTypes(sharedTypes, 'Types', 'shared/type', 'shared');
+generateDocForTypes(clientLibraries, 'Libraries', 'client/library', 'client');
+generateDocForTypes(serverLibraries, 'Libraries', 'server/library', 'server');
+generateDocForTypes(sharedLibraries, 'Libraries', 'shared/library', 'shared');
+generateDocForTypes(frostbiteTypes, null, 'fb', 'fb');
