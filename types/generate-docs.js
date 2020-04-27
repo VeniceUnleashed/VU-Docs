@@ -34,6 +34,16 @@ const linkifyType = (typeName, context) => {
   return escapeText(typeName);
 };
 
+const isPrimitive = (typeName) => {
+  return typeName == 'string' ||
+    typeName == 'float' ||
+    typeName == 'int' ||
+    typeName == 'bool' ||
+    typeName == 'table' ||
+    typeName == 'any' ||
+    typeName == 'callable';
+};
+
 const linkifyText = (text, context) => {
   let lastWord = '';
   let finalText = '';
@@ -86,14 +96,20 @@ const linkifyMethod = (method, allMethods) => {
   return `**[${escapeText(method.name)}](${getMethodAnchor(method, allMethods)})**`;
 };
 
-const stringifyType = (typeInfo, context, bold) => {
+const stringifyType = (typeInfo, context, verifyType, bold) => {
   let typeString = '';
 
   if (bold) {
     typeString += `**`;
   }
 
-  typeString += linkifyType(typeInfo.type, context);
+  const linkifiedType = linkifyType(typeInfo.type, context);
+
+  if (verifyType && !isPrimitive(typeInfo.type) && linkifiedType === escapeText(typeInfo.type)) {
+    console.log(`Could not find type '${typeInfo.type}' in '${context}' context.`);
+  }
+
+  typeString += linkifiedType;
 
   if (bold) {
     typeString += `**`;
@@ -182,7 +198,7 @@ const stringifyParams = (params, context) => {
       }
 
       paramString += `${paramName}: `;
-      paramString += stringifyType(param, context);
+      paramString += stringifyType(param, context, true);
 
       if (param.default) {
         paramString += ` = ${param.default}`;
@@ -193,6 +209,72 @@ const stringifyParams = (params, context) => {
   }
 
   return paramStrings.join(', ');
+};
+
+const writeParams = (depth, params, context) => {
+  let doc = '';
+
+  if (params && Object.keys(params).length > 0) {
+    doc += `${depth} Parameters\n`;
+    doc += `\n`;
+    doc += `| Name | Type | Description |\n`;
+    doc += `| ---- | ---- | ----------- |\n`;
+
+    for (const paramName in params) {
+      const param = params[paramName];
+
+      if (param.variadic) {
+        doc += `| ...**${escapeText(paramName)}** | ${stringifyType(param, context, true)} | `;
+      } else {
+        doc += `| **${escapeText(paramName)}** | ${stringifyType(param, context, true)} | `;
+      }
+
+      if (param.description && param.description.length > 0) {
+        doc += linkifyText(param.description, context);
+      }
+
+      doc += ` |\n`;
+    }
+
+    doc += `\n`;
+  }
+
+  return doc;
+};
+
+const writeReturns = (depth, returns, context) => {
+  let doc = '';
+
+  if (returns) {
+    doc += `${depth} Returns\n`;
+    doc += `\n`;
+    doc += `| Type | Description |\n`;
+    doc += `| ---- | ----------- |\n`;
+
+    if (Array.isArray(returns)) {
+      for (const tupleValue of returns) {
+        doc += `| ${stringifyType(tupleValue, context, true)} | `;
+
+        if (tupleValue.description && tupleValue.description.length > 0) {
+          doc += linkifyText(tupleValue.description, context);
+        }
+
+        doc += ` |\n`;
+      }
+    } else {
+      doc += `| ${stringifyType(returns, context, true)} | `;
+
+      if (returns.description && returns.description.length > 0) {
+        doc += linkifyText(returns.description, context);
+      }
+
+      doc += ` |\n`;
+    }
+
+    doc += `\n`;
+  }
+
+  return doc;
 };
 
 const generateClassDoc = (type, context) => {
@@ -247,7 +329,7 @@ const generateClassDoc = (type, context) => {
         doc += `| {{< prop "${propertyName}" >}} | `;
       }
 
-      doc += stringifyType(property, context);
+      doc += stringifyType(property, context, true);
       doc += ` |\n`;
     }
 
@@ -264,9 +346,9 @@ const generateClassDoc = (type, context) => {
       doc += `| ${linkifyMethod(method, type.methods)}(${stringifyParams(method.params, context)}) | `;
 
       if (Array.isArray(method.returns)) {
-        doc += `(${method.returns.map((t) => stringifyType(t, context)).join(', ')})`;
+        doc += `(${method.returns.map((t) => stringifyType(t, context, true)).join(', ')})`;
       } else if (method.returns) {
-        doc += stringifyType(method.returns, context);
+        doc += stringifyType(method.returns, context, true);
       } else {
         doc += `void`;
       }
@@ -298,7 +380,7 @@ const generateClassDoc = (type, context) => {
 
     for (const propertyName in type.static) {
       const staticType = type.static[propertyName];
-      doc += `| {{< static "${type.name}" "${propertyName}" >}} | ${stringifyType(staticType, context)} |\n`
+      doc += `| {{< static "${type.name}" "${propertyName}" >}} | ${stringifyType(staticType, context, true)} |\n`
     }
 
     doc += `\n`;
@@ -324,31 +406,7 @@ const generateClassDoc = (type, context) => {
         doc += `\n`;
       }
 
-      if (constructor.params && Object.keys(constructor.params).length > 0) {
-        doc += `#### Parameters\n`;
-        doc += `\n`;
-        doc += `| Name | Type | Description |\n`;
-        doc += `| ---- | ---- | ----------- |\n`;
-
-        for (const paramName in constructor.params) {
-          const param = constructor.params[paramName];
-
-          if (param.variadic) {
-            doc += `| ...**${escapeText(paramName)}** | ${stringifyType(param, context)} | `;
-          } else {
-            doc += `| **${escapeText(paramName)}** | ${stringifyType(param, context)} | `;
-          }
-
-          if (param.description && param.description.length > 0) {
-            doc += linkifyText(param.description, context);
-          }
-
-          doc += ` |\n`;
-        }
-
-        doc += `\n`;
-      }
-
+      doc += writeParams('####', constructor.params, context);
     }
   }
 
@@ -366,7 +424,7 @@ const generateClassDoc = (type, context) => {
       }
 
       doc += `\n`;
-      doc += `> ${stringifyType(property, context, true)}\n`;
+      doc += `> ${stringifyType(property, context, true, true)}\n`;
       doc += `\n`;
 
       if (property.description && property.description.length > 0) {
@@ -386,9 +444,9 @@ const generateClassDoc = (type, context) => {
       doc += `> **${escapeText(method.name)}**(${stringifyParams(method.params, context)})`;
 
       if (Array.isArray(method.returns)) {
-        doc += `: (${method.returns.map((t) => stringifyType(t, context)).join(', ')})`;
+        doc += `: (${method.returns.map((t) => stringifyType(t, context, true)).join(', ')})`;
       } else if (method.returns) {
-        doc += `: ${stringifyType(method.returns, context)}`;
+        doc += `: ${stringifyType(method.returns, context, true)}`;
       }
 
       doc += `\n`;
@@ -399,59 +457,8 @@ const generateClassDoc = (type, context) => {
         doc += `\n`;
       }
 
-      if (method.params && Object.keys(method.params).length > 0) {
-        doc += `#### Parameters\n`;
-        doc += `\n`;
-        doc += `| Name | Type | Description |\n`;
-        doc += `| ---- | ---- | ----------- |\n`;
-
-        for (const paramName in method.params) {
-          const param = method.params[paramName];
-
-          if (param.variadic) {
-            doc += `| ...**${escapeText(paramName)}** | ${stringifyType(param, context)} | `;
-          } else {
-            doc += `| **${escapeText(paramName)}** | ${stringifyType(param, context)} | `;
-          }
-
-          if (param.description && param.description.length > 0) {
-            doc += linkifyText(param.description, context);
-          }
-
-          doc += ` |\n`;
-        }
-
-        doc += `\n`;
-      }
-
-      if (method.returns) {
-        doc += `#### Returns\n`;
-        doc += `\n`;
-        doc += `| Type | Description |\n`;
-        doc += `| ---- | ----------- |\n`;
-
-        if (Array.isArray(method.returns)) {
-          for (const tupleValue of method.returns) {
-            doc += `| ${stringifyType(tupleValue, context, true)} | `;
-
-            if (tupleValue.description && tupleValue.description.length > 0) {
-              doc += linkifyText(tupleValue.description, context);
-            }
-
-            doc += ` |\n`;
-          }
-        } else {
-          doc += `| ${stringifyType(method.returns, context, true)} | `;
-
-          if (method.returns.description && method.returns.description.length > 0) {
-            doc += linkifyText(method.returns.description, context);
-          }
-
-          doc += ` |\n`;
-        }
-
-        doc += `\n`;
-      }
+      doc += writeParams('####', method.params, context);
+      doc += writeReturns('####', method.returns, context);
 
       if (method.example && method.example.length > 0) {
         doc += `#### Example\n`;
@@ -556,9 +563,9 @@ const generateLibraryDoc = (type, context) => {
       doc += `| ${linkifyMethod(method, type.methods)}(${stringifyParams(method.params, context)}) | `;
 
       if (Array.isArray(method.returns)) {
-        doc += `(${method.returns.map((t) => stringifyType(t, context)).join(', ')})`;
+        doc += `(${method.returns.map((t) => stringifyType(t, context, true)).join(', ')})`;
       } else if (method.returns) {
-        doc += stringifyType(method.returns, context);
+        doc += stringifyType(method.returns, context, true);
       } else {
         doc += `void`;
       }
@@ -579,9 +586,9 @@ const generateLibraryDoc = (type, context) => {
       doc += `> **${escapeText(method.name)}**(${stringifyParams(method.params, context)})`;
 
       if (Array.isArray(method.returns)) {
-        doc += `: (${method.returns.map((t) => stringifyType(t, context)).join(', ')})`;
+        doc += `: (${method.returns.map((t) => stringifyType(t, context, true)).join(', ')})`;
       } else if (method.returns) {
-        doc += `: ${stringifyType(method.returns, context)}`;
+        doc += `: ${stringifyType(method.returns, context, true)}`;
       }
 
       doc += `\n`;
@@ -592,59 +599,8 @@ const generateLibraryDoc = (type, context) => {
         doc += `\n`;
       }
 
-      if (method.params && Object.keys(method.params).length > 0) {
-        doc += `#### Parameters\n`;
-        doc += `\n`;
-        doc += `| Name | Type | Description |\n`;
-        doc += `| ---- | ---- | ----------- |\n`;
-
-        for (const paramName in method.params) {
-          const param = method.params[paramName];
-
-          if (param.variadic) {
-            doc += `| ...**${escapeText(paramName)}** | ${stringifyType(param, context)} | `;
-          } else {
-            doc += `| **${escapeText(paramName)}** | ${stringifyType(param, context)} | `;
-          }
-
-          if (param.description && param.description.length > 0) {
-            doc += linkifyText(param.description, context);
-          }
-
-          doc += ` |\n`;
-        }
-
-        doc += `\n`;
-      }
-
-      if (method.returns) {
-        doc += `#### Returns\n`;
-        doc += `\n`;
-        doc += `| Type | Description |\n`;
-        doc += `| ---- | ----------- |\n`;
-
-        if (Array.isArray(method.returns)) {
-          for (const tupleValue of method.returns) {
-            doc += `| ${stringifyType(tupleValue, context, true)} | `;
-
-            if (tupleValue.description && tupleValue.description.length > 0) {
-              doc += linkifyText(tupleValue.description, context);
-            }
-
-            doc += ` |\n`;
-          }
-        } else {
-          doc += `| ${stringifyType(method.returns, context, true)} | `;
-
-          if (method.returns.description && method.returns.description.length > 0) {
-            doc += linkifyText(method.returns.description, context);
-          }
-
-          doc += ` |\n`;
-        }
-
-        doc += `\n`;
-      }
+      doc += writeParams('####', method.params, context);
+      doc += writeReturns('####', method.returns, context);
 
       if (method.example && method.example.length > 0) {
         doc += `#### Example\n`;
@@ -656,6 +612,81 @@ const generateLibraryDoc = (type, context) => {
       }
     }
   }
+
+  return doc;
+};
+
+const stringifyParamNames = (params) => {
+  if (!params) {
+    return '';
+  }
+
+  return Object.keys(params).join(', ');
+};
+
+const generateEventDoc = (type, context) => {
+  let doc = '';
+
+  doc += `---\n`;
+  doc += `title: ${type.name}\n`;
+  doc += `---\n`;
+  doc += `\n`;
+
+  doc += `> **${type.name}**(${stringifyParams(type.params, context)})\n`;
+  doc += `\n`;
+
+  if (type.description && type.description.length > 0) {
+    doc += `${linkifyText(type.description, context)}\n`;
+    doc += `\n`;
+  }
+
+  doc += writeParams('##', type.params, context);
+
+  doc += `## Example\n`;
+  doc += `\n`;
+  doc += '```lua\n';
+  doc += `Events:Subscribe('${type.name}', function(${stringifyParamNames(type.params)})\n`;
+  doc += `    -- Do stuff here.\n`;
+  doc += `end)\n`;
+  doc += `\n`;
+
+  return doc;
+};
+
+const stringifyHookParamNames = (params) => {
+  if (!params) {
+    return 'hook';
+  }
+
+  return 'hook, ' + Object.keys(params).join(', ');
+};
+
+const generateHookDoc = (type, context) => {
+  let doc = '';
+
+  doc += `---\n`;
+  doc += `title: ${type.name}\n`;
+  doc += `---\n`;
+  doc += `\n`;
+
+  doc += `> **${type.name}**(${stringifyParams(type.params, context)})\n`;
+  doc += `\n`;
+
+  if (type.description && type.description.length > 0) {
+    doc += `${linkifyText(type.description, context)}\n`;
+    doc += `\n`;
+  }
+
+  doc += writeParams('##', type.params, context);
+  doc += writeReturns('##', type.returns, context);
+
+  doc += `## Example\n`;
+  doc += `\n`;
+  doc += '```lua\n';
+  doc += `Hooks:Install('${type.name}', 1, function(${stringifyHookParamNames(type.params)})\n`;
+  doc += `    -- Do stuff here.\n`;
+  doc += `end)\n`;
+  doc += `\n`;
 
   return doc;
 };
@@ -706,6 +737,10 @@ const generateDoc = (typeInfo, context) => {
     return generateLibraryDoc(typeInfo, context);
   } else if (typeInfo.type === 'enum') {
     return generateEnumDoc(typeInfo, context);
+  } else if (typeInfo.type === 'event') {
+    return generateEventDoc(typeInfo, context);
+  } else if (typeInfo.type === 'hook') {
+    return generateHookDoc(typeInfo, context);
   } else {
     throw new Error(`Tried generating documentation for unrecognized type "${type.type}".`);
   }
@@ -839,8 +874,6 @@ const generateDocForTypes = (types, title, typesPath, context) => {
     const typeInfo = types[typeName];
     const doc = generateDoc(typeInfo, context);
     const outPath = path.join(targetDir, typeName.toLowerCase() + '.md');
-
-    console.log(`Writing generated documentation to "${outPath}".`);
 
     fs.writeFileSync(outPath, doc);
   }
