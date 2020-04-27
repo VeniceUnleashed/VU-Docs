@@ -1,25 +1,69 @@
 ---
 title: ClientUtils
 ---
-## Description
+
+## Summary
+
+### Methods
+
+| Method | Returns |
+| ------ | ------- |
+| **[GetCameraTransform](#getcameratransform)**() | [LinearTransform](/vext/ref/shared/type/lineartransform) |
+| **[WorldToScreen](#worldtoscreen)**(worldPos: [Vec3](/vext/ref/shared/type/vec3)) | [Vec2](/vext/ref/shared/type/vec2) |
+| **[ScreenToWorld](#screentoworld)**(mousePos: [Vec2](/vext/ref/shared/type/vec2)) | [Vec3](/vext/ref/shared/type/vec3) |
+| **[GetWindowSize](#getwindowsize)**() | [Vec2](/vext/ref/shared/type/vec2) |
 
 ## Methods
 
-| Type                                                    | Name                                      | Parameters                                     |
-| ------------------------------------------------------- | ----------------------------------------- | ---------------------------------------------- |
-| [LinearTransform](/vext/ref/shared/class/lineartransform) | [GetCameraTransform](#getcameratransform) |                                                |
-| [Vec2](/vext/ref/shared/class/vec2)                       | [WorldToScreen](#worldtoscreen)           | [Vec3](/vext/ref/shared/class/vec3) **worldPos** |
+### GetCameraTransform {#getcameratransform}
 
-### GetCameraTransform
+> **GetCameraTransform**(): [LinearTransform](/vext/ref/shared/type/lineartransform)
 
-> [LinearTransform](/vext/ref/shared/class/lineartransform) **GetCameraTransform**()
+#### Returns
 
-### WorldToScreen
+| Type | Description |
+| ---- | ----------- |
+| **[LinearTransform](/vext/ref/shared/type/lineartransform)** |  |
 
-> [Vec2](/vext/ref/shared/class/vec2) **WorldToScreen**([Vec3](/vext/ref/shared/class/vec3) **worldPos**)
+### WorldToScreen {#worldtoscreen}
+
+> **WorldToScreen**(worldPos: [Vec3](/vext/ref/shared/type/vec3)): [Vec2](/vext/ref/shared/type/vec2)
 
 #### Parameters
 
-| Name     | Type                              | Description |
-| -------- | --------------------------------- | ----------- |
-| worldPos | [Vec3](/vext/ref/shared/class/vec3) |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **worldPos** | [Vec3](/vext/ref/shared/type/vec3) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[Vec2](/vext/ref/shared/type/vec2)** |  |
+
+### ScreenToWorld {#screentoworld}
+
+> **ScreenToWorld**(mousePos: [Vec2](/vext/ref/shared/type/vec2)): [Vec3](/vext/ref/shared/type/vec3)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **mousePos** | [Vec2](/vext/ref/shared/type/vec2) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[Vec3](/vext/ref/shared/type/vec3)** |  |
+
+### GetWindowSize {#getwindowsize}
+
+> **GetWindowSize**(): [Vec2](/vext/ref/shared/type/vec2)
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[Vec2](/vext/ref/shared/type/vec2)** |  |
+

@@ -1,74 +1,90 @@
 ---
 title: Events
 ---
-## Description
+
+## Summary
+
+### Methods
+
+| Method | Returns |
+| ------ | ------- |
+| **[Subscribe](#subscribe)**(eventName: string, callback: callable) | [Event](/vext/ref/shared/type/event) |
+| **[Subscribe](#subscribe-1)**(eventName: string, context: any, callback: callable) | [Event](/vext/ref/shared/type/event) |
+| **[Dispatch](#dispatch)**(eventName: string, ...args: any) | void |
+| **[DispatchLocal](#dispatchlocal)**(eventName: string, ...args: any) | void |
+| **[Unsubscribe](#unsubscribe)**() | void |
+| **[Unsubscribe](#unsubscribe-1)**(eventName: string) | void |
 
 ## Methods
 
-| Type                                | Name                            | Parameters                                                |
-| ----------------------------------- | ------------------------------- | --------------------------------------------------------- |
-| [Event](/vext/ref/shared/class/event) | [Subscribe](#subscribe)         | string **message**, function **callback**                 |
-| [Event](/vext/ref/shared/class/event) | [Subscribe](#subscribe)         | string **message**, object **obj**, function **callback** |
-| void                                | [Dispatch](#dispatch)           | string **message**, ...args                               |
-| void                                | [DispatchLocal](#dispatchlocal) | string **message**, ...args                               |
-| void                                | [Unsubscribe](#unsubscribe)     |                                                           |
-| void                                | [Unsubscribe](#unsubscribe)     | string **match**                                          |
+### Subscribe {#subscribe}
 
-### Subscribe
-
-> [Event](/vext/ref/shared/class/event) **Subscribe**(string **message**, function **callback**)
+> **Subscribe**(eventName: string, callback: callable): [Event](/vext/ref/shared/type/event)
 
 #### Parameters
 
-| Name     | Type     | Description |
-| -------- | -------- | ----------- |
-| message  | string   |             |
-| callback | function |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **eventName** | string |  |
+| **callback** | callable |  |
 
-### Subscribe
+#### Returns
 
-> [Event](/vext/ref/shared/class/event) **Subscribe**(string **message**, object **obj**, function **callback**)
+| Type | Description |
+| ---- | ----------- |
+| **[Event](/vext/ref/shared/type/event)** |  |
 
-#### Parameters
+### Subscribe {#subscribe-1}
 
-| Name     | Type     | Description |
-| -------- | -------- | ----------- |
-| message  | string   |             |
-| obj      | object   |             |
-| callback | function |             |
-
-### Dispatch
-
-> void **Dispatch**(string **message**, ...args)
+> **Subscribe**(eventName: string, context: any, callback: callable): [Event](/vext/ref/shared/type/event)
 
 #### Parameters
 
-| Name    | Type   | Description |
-| ------- | ------ | ----------- |
-| message | string |             |
-| args    |        |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **eventName** | string |  |
+| **context** | any |  |
+| **callback** | callable |  |
 
-### DispatchLocal
+#### Returns
 
-> void **DispatchLocal**(string **message**, ...args)
+| Type | Description |
+| ---- | ----------- |
+| **[Event](/vext/ref/shared/type/event)** |  |
 
-#### Parameters
+### Dispatch {#dispatch}
 
-| Name    | Type   | Description |
-| ------- | ------ | ----------- |
-| message | string |             |
-| args    |        |             |
-
-### Unsubscribe
-
-> void **Unsubscribe**()
-
-### Unsubscribe
-
-> void **Unsubscribe**(string **match**)
+> **Dispatch**(eventName: string, ...args: any)
 
 #### Parameters
 
-| Name  | Type   | Description |
-| ----- | ------ | ----------- |
-| match | string |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **eventName** | string |  |
+| ...**args** | any |  |
+
+### DispatchLocal {#dispatchlocal}
+
+> **DispatchLocal**(eventName: string, ...args: any)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **eventName** | string |  |
+| ...**args** | any |  |
+
+### Unsubscribe {#unsubscribe}
+
+> **Unsubscribe**()
+
+### Unsubscribe {#unsubscribe-1}
+
+> **Unsubscribe**(eventName: string)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **eventName** | string |  |
+

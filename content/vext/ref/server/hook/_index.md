@@ -2,15 +2,11 @@
 title: Hooks
 hideChildren: true
 ---
-| Server                                                               |
-| -------------------------------------------------------------------- |
-| [Server:SuppressEnemies](/vext/ref/server/hook/serversuppressenemies) |
 
-| ServerEntityFactory                                                          |
-| ---------------------------------------------------------------------------- |
-| [ServerEntityFactory:Create](/vext/ref/server/hook/serverentityfactorycreate) |
+|   |   |
+| --- | --- |
+| [EntityFactory:Create](/vext/ref/server/hook/entityfactory_create) | [EntityFactory:CreateFromBlueprint](/vext/ref/server/hook/entityfactory_createfromblueprint) |
+| [Player:FindBestSquad](/vext/ref/server/hook/player_findbestsquad) | [Player:RequestJoin](/vext/ref/server/hook/player_requestjoin) |
+| [Player:SelectTeam](/vext/ref/server/hook/player_selectteam) | [Server:SuppressEnemies](/vext/ref/server/hook/server_suppressenemies) |
+| [Soldier:Damage](/vext/ref/server/hook/soldier_damage) | |
 
-| Player                                                       |
-| ------------------------------------------------------------ |
-| [Player:SelectTeam](/vext/ref/server/hook/playerselectteam)   |
-| [Player:RequestJoin](/vext/ref/server/hook/playerrequestjoin) |

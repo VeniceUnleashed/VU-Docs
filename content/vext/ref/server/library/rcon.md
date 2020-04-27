@@ -1,64 +1,109 @@
 ---
 title: RCON
 ---
-## Description
+
+## Summary
+
+### Methods
+
+| Method | Returns |
+| ------ | ------- |
+| **[SendCommand](#sendcommand)**(command: string) | string{} |
+| **[SendCommand](#sendcommand-1)**(command: string, args: string{}) | string{} |
+| **[RegisterCommand](#registercommand)**(command: string, flags: [RemoteCommandFlag](/vext/ref/shared/type/remotecommandflag), callback: callable) | int |
+| **[RegisterCommand](#registercommand-1)**(command: string, flags: [RemoteCommandFlag](/vext/ref/shared/type/remotecommandflag), context: any, callback: callable) | int |
+| **[DeregisterCommand](#deregistercommand)**(handle: int) | void |
+| **[GetServerGuid](#getserverguid)**() | [Guid](/vext/ref/shared/type/guid) \| nil |
 
 ## Methods
 
-| Type                              | Name                                    | Parameters                                                               |
-| --------------------------------- | --------------------------------------- | ------------------------------------------------------------------------ |
-| string\[\]                        | [SendCommand](#sendcommand)             | string **command**, string\[\] **args** = {}                             |
-| int                               | [RegisterCommand](#registercommand)     | string **command**, int **flags**, function **callback**                 |
-| int                               | [RegisterCommand](#registercommand)     | string **command**, int **flags**, object **obj**, function **callback** |
-| void                              | [DeregisterCommand](#deregistercommand) | int **handle**                                                           |
-| [Guid](/vext/ref/shared/class/guid) | [GetServerGUID](#getserverguid)         |                                                                          |
+### SendCommand {#sendcommand}
 
-### SendCommand
-
-> string\[\] **SendCommand**(string **command**, string\[\] **args** = {})
+> **SendCommand**(command: string): string{}
 
 #### Parameters
 
-| Name    | Type       | Description |
-| ------- | ---------- | ----------- |
-| command | string     |             |
-| args    | string\[\] |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **command** | string |  |
 
-### RegisterCommand
+#### Returns
 
-> int **RegisterCommand**(string **command**, int **flags**, function **callback**)
+| Type | Description |
+| ---- | ----------- |
+| **string**{} |  |
 
-#### Parameters
+### SendCommand {#sendcommand-1}
 
-| Name     | Type     | Description |
-| -------- | -------- | ----------- |
-| command  | string   |             |
-| flags    | int      |             |
-| callback | function |             |
-
-### RegisterCommand
-
-> int **RegisterCommand**(string **command**, int **flags**, object \*\*\*\* obj, function **callback**)
+> **SendCommand**(command: string, args: string{}): string{}
 
 #### Parameters
 
-| Name     | Type     | Description |
-| -------- | -------- | ----------- |
-| command  | string   |             |
-| flags    | int      |             |
-|          | object   |             |
-| callback | function |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **command** | string |  |
+| **args** | string{} |  |
 
-### DeregisterCommand
+#### Returns
 
-> void **DeregisterCommand**(int **handle**)
+| Type | Description |
+| ---- | ----------- |
+| **string**{} |  |
+
+### RegisterCommand {#registercommand}
+
+> **RegisterCommand**(command: string, flags: [RemoteCommandFlag](/vext/ref/shared/type/remotecommandflag), callback: callable): int
 
 #### Parameters
 
-| Name   | Type | Description |
-| ------ | ---- | ----------- |
-| handle | int  |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **command** | string |  |
+| **flags** | [RemoteCommandFlag](/vext/ref/shared/type/remotecommandflag) |  |
+| **callback** | callable |  |
 
-### GetServerGUID
+#### Returns
 
-> [Guid](/vext/ref/shared/class/guid) **GetServerGUID**()
+| Type | Description |
+| ---- | ----------- |
+| **int** |  |
+
+### RegisterCommand {#registercommand-1}
+
+> **RegisterCommand**(command: string, flags: [RemoteCommandFlag](/vext/ref/shared/type/remotecommandflag), context: any, callback: callable): int
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **command** | string |  |
+| **flags** | [RemoteCommandFlag](/vext/ref/shared/type/remotecommandflag) |  |
+| **context** | any |  |
+| **callback** | callable |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **int** |  |
+
+### DeregisterCommand {#deregistercommand}
+
+> **DeregisterCommand**(handle: int)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **handle** | int |  |
+
+### GetServerGuid {#getserverguid}
+
+> **GetServerGuid**(): [Guid](/vext/ref/shared/type/guid) \| nil
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[Guid](/vext/ref/shared/type/guid)** \| **nil** |  |
+

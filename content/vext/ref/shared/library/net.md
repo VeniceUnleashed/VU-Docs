@@ -1,149 +1,282 @@
 ---
 title: Net
 ---
-## Description
 
-The Net library provides the ability to interact with other networks by sending HTTP requests and establishing socket connections over supported protocols and transports.
+## Summary
+
+### Methods
+
+| Method | Returns |
+| ------ | ------- |
+| **[GetHTTP](#gethttp)**(url: string) | [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil |
+| **[GetHTTP](#gethttp-1)**(url: string, options: [HttpOptions](/vext/ref/shared/type/httpoptions)) | [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil |
+| **[HeadHTTP](#headhttp)**(url: string) | [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil |
+| **[HeadHTTP](#headhttp-1)**(url: string, options: [HttpOptions](/vext/ref/shared/type/httpoptions)) | [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil |
+| **[PostHTTP](#posthttp)**(url: string, data: string) | [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil |
+| **[PostHTTP](#posthttp-1)**(url: string, data: string, options: [HttpOptions](/vext/ref/shared/type/httpoptions)) | [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil |
+| **[PutHTTP](#puthttp)**(url: string, data: string) | [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil |
+| **[PutHTTP](#puthttp-1)**(url: string, data: string, options: [HttpOptions](/vext/ref/shared/type/httpoptions)) | [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil |
+| **[DeleteHTTP](#deletehttp)**(url: string) | [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil |
+| **[DeleteHTTP](#deletehttp-1)**(url: string, options: [HttpOptions](/vext/ref/shared/type/httpoptions)) | [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil |
+| **[OptionsHTTP](#optionshttp)**(url: string) | [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil |
+| **[OptionsHTTP](#optionshttp-1)**(url: string, options: [HttpOptions](/vext/ref/shared/type/httpoptions)) | [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil |
+| **[PatchHTTP](#patchhttp)**(url: string, data: string) | [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil |
+| **[PatchHTTP](#patchhttp-1)**(url: string, data: string, options: [HttpOptions](/vext/ref/shared/type/httpoptions)) | [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil |
+| **[Socket](#socket)**(family: [NetSocketFamily](/vext/ref/shared/type/netsocketfamily), type: [NetSocketType](/vext/ref/shared/type/netsockettype)) | [NetSocket](/vext/ref/shared/type/netsocket) \| nil |
 
 ## Methods
 
-| Type                                              | Name                        | Parameters                                                                                                                       |
-| ------------------------------------------------- | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| [HttpResponse](/vext/ref/shared/class/httpresponse) | [GetHTTP](#gethttp)         | string **url**, [HttpOptions](/vext/ref/shared/class/httpoptions) **options** = nil                                                |
-| [HttpResponse](/vext/ref/shared/class/httpresponse) | [HeadHTTP](#headhttp)       | string **url**, [HttpOptions](/vext/ref/shared/class/httpoptions) **options** = nil                                                |
-| [HttpResponse](/vext/ref/shared/class/httpresponse) | [PostHTTP](#posthttp)       | string **url**, string **data**, [HttpOptions](/vext/ref/shared/class/httpoptions) **options** = nil                               |
-| [HttpResponse](/vext/ref/shared/class/httpresponse) | [PutHTTP](#puthttp)         | string **url**, string **data**, [HttpOptions](/vext/ref/shared/class/httpoptions) **options** = nil                               |
-| [HttpResponse](/vext/ref/shared/class/httpresponse) | [DeleteHTTP](#deletehttp)   | string **url**, [HttpOptions](/vext/ref/shared/class/httpoptions) **options** = nil                                                |
-| [HttpResponse](/vext/ref/shared/class/httpresponse) | [OptionsHTTP](#optionshttp) | string **url**, [HttpOptions](/vext/ref/shared/class/httpoptions) **options** = nil                                                |
-| [HttpResponse](/vext/ref/shared/class/httpresponse) | [PatchHTTP](#patchhttp)     | string **url**, string **data**, [HttpOptions](/vext/ref/shared/class/httpoptions) **options** = nil                               |
-| [NetSocket](/vext/ref/shared/class/netsocket)       | [Socket](#socket)           | [NetSocketFamily](/vext/ref/shared/class/netsocketfamily) **family**, [NetSocketType](/vext/ref/shared/class/netsockettype) **type** |
+### GetHTTP {#gethttp}
 
-### GetHTTP
-
-> [HttpResponse](/vext/ref/shared/class/httpresponse) **GetHTTP**(string **url**, [HttpOptions](/vext/ref/shared/class/httpoptions) **options** = nil)
-
-Sends an HTTP GET request to the provided URL and synchronously returns the response.
+> **GetHTTP**(url: string): [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil
 
 #### Parameters
 
-| Name    | Type                                            | Description                                       |
-| ------- | ----------------------------------------------- | ------------------------------------------------- |
-| url     | string                                          | The full URL to send the request to.              |
-| options | [HttpOptions](/vext/ref/shared/class/httpoptions) | *(Optional)* Additional options for this request. |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **url** | string |  |
 
-#### Example
+#### Returns
 
-``` lua
--- Send an HTTP GET request to google with a custom header
-local response = Net:GetHTTP('https://google.com', HttpOptions({
-    ["X-Test-Header"] = "test value"
-}))
+| Type | Description |
+| ---- | ----------- |
+| **[HttpResponse](/vext/ref/shared/type/httpresponse)** \| **nil** |  |
 
--- Print the response body
-print(response.body)
-```
+### GetHTTP {#gethttp-1}
 
-### HeadHTTP
-
-> [HttpResponse](/vext/ref/shared/class/httpresponse) **HeadHTTP**(string **url**, [HttpOptions](/vext/ref/shared/class/httpoptions) **options** = nil)
+> **GetHTTP**(url: string, options: [HttpOptions](/vext/ref/shared/type/httpoptions)): [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil
 
 #### Parameters
 
-| Name    | Type                                            | Description |
-| ------- | ----------------------------------------------- | ----------- |
-| url     | string                                          |             |
-| options | [HttpOptions](/vext/ref/shared/class/httpoptions) |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **url** | string |  |
+| **options** | [HttpOptions](/vext/ref/shared/type/httpoptions) |  |
 
-### PostHTTP
+#### Returns
 
-> [HttpResponse](/vext/ref/shared/class/httpresponse) **PostHTTP**(string **url**, string **data**, [HttpOptions](/vext/ref/shared/class/httpoptions) **options** = nil)
+| Type | Description |
+| ---- | ----------- |
+| **[HttpResponse](/vext/ref/shared/type/httpresponse)** \| **nil** |  |
 
-#### Parameters
+### HeadHTTP {#headhttp}
 
-| Name    | Type                                            | Description |
-| ------- | ----------------------------------------------- | ----------- |
-| url     | string                                          |             |
-| data    | string                                          |             |
-| options | [HttpOptions](/vext/ref/shared/class/httpoptions) |             |
-
-### PutHTTP
-
-> [HttpResponse](/vext/ref/shared/class/httpresponse) **PutHTTP**(string **url**, string **data**, [HttpOptions](/vext/ref/shared/class/httpoptions) **options** = nil)
+> **HeadHTTP**(url: string): [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil
 
 #### Parameters
 
-| Name    | Type                                            | Description |
-| ------- | ----------------------------------------------- | ----------- |
-| url     | string                                          |             |
-| data    | string                                          |             |
-| options | [HttpOptions](/vext/ref/shared/class/httpoptions) |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **url** | string |  |
 
-### DeleteHTTP
+#### Returns
 
-> [HttpResponse](/vext/ref/shared/class/httpresponse) **DeleteHTTP**(string **url**, [HttpOptions](/vext/ref/shared/class/httpoptions) **options** = nil)
+| Type | Description |
+| ---- | ----------- |
+| **[HttpResponse](/vext/ref/shared/type/httpresponse)** \| **nil** |  |
 
-#### Parameters
+### HeadHTTP {#headhttp-1}
 
-| Name    | Type                                            | Description |
-| ------- | ----------------------------------------------- | ----------- |
-| url     | string                                          |             |
-| options | [HttpOptions](/vext/ref/shared/class/httpoptions) |             |
-
-### OptionsHTTP
-
-> [HttpResponse](/vext/ref/shared/class/httpresponse) **OptionsHTTP**(string **url**, [HttpOptions](/vext/ref/shared/class/httpoptions) **options** = nil)
+> **HeadHTTP**(url: string, options: [HttpOptions](/vext/ref/shared/type/httpoptions)): [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil
 
 #### Parameters
 
-| Name    | Type                                            | Description |
-| ------- | ----------------------------------------------- | ----------- |
-| url     | string                                          |             |
-| options | [HttpOptions](/vext/ref/shared/class/httpoptions) |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **url** | string |  |
+| **options** | [HttpOptions](/vext/ref/shared/type/httpoptions) |  |
 
-### PatchHTTP
+#### Returns
 
-> [HttpResponse](/vext/ref/shared/class/httpresponse) **PatchHTTP**(string **url**, string **data**, [HttpOptions](/vext/ref/shared/class/httpoptions) **options** = nil)
+| Type | Description |
+| ---- | ----------- |
+| **[HttpResponse](/vext/ref/shared/type/httpresponse)** \| **nil** |  |
 
-#### Parameters
+### PostHTTP {#posthttp}
 
-| Name    | Type                                            | Description |
-| ------- | ----------------------------------------------- | ----------- |
-| url     | string                                          |             |
-| data    | string                                          |             |
-| options | [HttpOptions](/vext/ref/shared/class/httpoptions) |             |
-
-### Socket
-
-> [NetSocket](/vext/ref/shared/class/netsocket) **Socket**([NetSocketFamily](/vext/ref/shared/class/netsocketfamily) **family**, [NetSocketType](/vext/ref/shared/class/netsockettype) **type**)
-
-Create a new socket.
+> **PostHTTP**(url: string, data: string): [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil
 
 #### Parameters
 
-| Name   | Type                                                    | Description         |
-| ------ | ------------------------------------------------------- | ------------------- |
-| family | [NetSocketFamily](/vext/ref/shared/class/netsocketfamily) | The address family. |
-| type   | [NetSocketType](/vext/ref/shared/class/netsockettype)     | The socket type.    |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **url** | string |  |
+| **data** | string |  |
 
-#### Example
+#### Returns
 
-``` lua
-print('Creating TCP socket.')
-local socket = Net:Socket(NetSocketFamily.INET, NetSocketType.Stream)
-print(socket)
+| Type | Description |
+| ---- | ----------- |
+| **[HttpResponse](/vext/ref/shared/type/httpresponse)** \| **nil** |  |
 
-print('Connecting to server')
-local result = socket:Connect('127.0.0.1', 3333)
-print(result)
+### PostHTTP {#posthttp-1}
 
-print('Sending data')
-local bytesWritten, result = socket:Write('test')
-print('Wrote bytes: ' .. tostring(bytesWritten))
-print('Result: ' .. tostring(result))
+> **PostHTTP**(url: string, data: string, options: [HttpOptions](/vext/ref/shared/type/httpoptions)): [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil
 
-print('Receiving data')
-local data, result = socket:Read(10) -- Read up to 10 bytes of data.
-print('Read data: ' .. data)
-print('Data length: ' .. tostring(data:len()))
-print('Result: ' .. tostring(result))
-```
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **url** | string |  |
+| **data** | string |  |
+| **options** | [HttpOptions](/vext/ref/shared/type/httpoptions) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[HttpResponse](/vext/ref/shared/type/httpresponse)** \| **nil** |  |
+
+### PutHTTP {#puthttp}
+
+> **PutHTTP**(url: string, data: string): [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **url** | string |  |
+| **data** | string |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[HttpResponse](/vext/ref/shared/type/httpresponse)** \| **nil** |  |
+
+### PutHTTP {#puthttp-1}
+
+> **PutHTTP**(url: string, data: string, options: [HttpOptions](/vext/ref/shared/type/httpoptions)): [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **url** | string |  |
+| **data** | string |  |
+| **options** | [HttpOptions](/vext/ref/shared/type/httpoptions) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[HttpResponse](/vext/ref/shared/type/httpresponse)** \| **nil** |  |
+
+### DeleteHTTP {#deletehttp}
+
+> **DeleteHTTP**(url: string): [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **url** | string |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[HttpResponse](/vext/ref/shared/type/httpresponse)** \| **nil** |  |
+
+### DeleteHTTP {#deletehttp-1}
+
+> **DeleteHTTP**(url: string, options: [HttpOptions](/vext/ref/shared/type/httpoptions)): [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **url** | string |  |
+| **options** | [HttpOptions](/vext/ref/shared/type/httpoptions) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[HttpResponse](/vext/ref/shared/type/httpresponse)** \| **nil** |  |
+
+### OptionsHTTP {#optionshttp}
+
+> **OptionsHTTP**(url: string): [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **url** | string |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[HttpResponse](/vext/ref/shared/type/httpresponse)** \| **nil** |  |
+
+### OptionsHTTP {#optionshttp-1}
+
+> **OptionsHTTP**(url: string, options: [HttpOptions](/vext/ref/shared/type/httpoptions)): [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **url** | string |  |
+| **options** | [HttpOptions](/vext/ref/shared/type/httpoptions) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[HttpResponse](/vext/ref/shared/type/httpresponse)** \| **nil** |  |
+
+### PatchHTTP {#patchhttp}
+
+> **PatchHTTP**(url: string, data: string): [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **url** | string |  |
+| **data** | string |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[HttpResponse](/vext/ref/shared/type/httpresponse)** \| **nil** |  |
+
+### PatchHTTP {#patchhttp-1}
+
+> **PatchHTTP**(url: string, data: string, options: [HttpOptions](/vext/ref/shared/type/httpoptions)): [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **url** | string |  |
+| **data** | string |  |
+| **options** | [HttpOptions](/vext/ref/shared/type/httpoptions) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[HttpResponse](/vext/ref/shared/type/httpresponse)** \| **nil** |  |
+
+### Socket {#socket}
+
+> **Socket**(family: [NetSocketFamily](/vext/ref/shared/type/netsocketfamily), type: [NetSocketType](/vext/ref/shared/type/netsockettype)): [NetSocket](/vext/ref/shared/type/netsocket) \| nil
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **family** | [NetSocketFamily](/vext/ref/shared/type/netsocketfamily) |  |
+| **type** | [NetSocketType](/vext/ref/shared/type/netsockettype) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[NetSocket](/vext/ref/shared/type/netsocket)** \| **nil** |  |
+

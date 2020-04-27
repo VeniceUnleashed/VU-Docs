@@ -3,26 +3,56 @@ title: Libraries
 hideChildren: true
 ---
 
-[ClientUtils](/vext/ref/client/library/clientutils)
+---
 
-[Console](/vext/ref/client/library/console)
+**[ChatManager](/vext/ref/client/library/chatmanager)**
 
-[DebugRenderer](/vext/ref/client/library/debugrenderer)
+---
 
-[EffectManager](/vext/ref/client/library/effectmanager)
+**[ClientUtils](/vext/ref/client/library/clientutils)**
 
-[InputManager](/vext/ref/client/library/inputmanager)
+---
 
-[RaycastManager](/vext/ref/client/library/raycastmanager)
+**[Console](/vext/ref/client/library/console)**
 
-[SpectatorManager](/vext/ref/client/library/spectatormanager)
+---
 
-[VisualEnvironmentManager](/vext/ref/client/library/visualenvironmentmanager)
+**[DebugRenderer](/vext/ref/client/library/debugrenderer)**
 
-[ChatManager](/vext/ref/client/library/chatmanager)
+---
 
-[EntityManager](/vext/ref/client/library/entitymanager)
+**[EffectManager](/vext/ref/client/library/effectmanager)**
 
-[NetEvents](/vext/ref/client/library/netevents) 
+---
 
-[PlayerManager](/vext/ref/client/library/playermanager)
+**[EntityManager](/vext/ref/client/library/entitymanager)**
+
+---
+
+**[InputManager](/vext/ref/client/library/inputmanager)**
+
+---
+
+**[NetEvents](/vext/ref/client/library/netevents)**
+
+---
+
+**[PlayerManager](/vext/ref/client/library/playermanager)**
+
+---
+
+**[RaycastManager](/vext/ref/client/library/raycastmanager)**
+
+---
+
+**[SpectatorManager](/vext/ref/client/library/spectatormanager)**
+
+---
+
+**[VisualEnvironmentManager](/vext/ref/client/library/visualenvironmentmanager)**
+
+---
+
+**[WebUI](/vext/ref/client/library/webui)**
+
+---

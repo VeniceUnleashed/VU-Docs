@@ -1,71 +1,118 @@
 ---
 title: WebUI
 ---
-## Description
+
+## Summary
+
+### Methods
+
+| Method | Returns |
+| ------ | ------- |
+| **[Init](#init)**() | void |
+| **[Show](#show)**() | void |
+| **[Hide](#hide)**() | void |
+| **[BringToFront](#bringtofront)**() | void |
+| **[SendToBack](#sendtoback)**() | void |
+| **[EnableKeyboard](#enablekeyboard)**() | void |
+| **[EnableMouse](#enablemouse)**() | void |
+| **[DisableKeyboard](#disablekeyboard)**() | void |
+| **[DisableMouse](#disablemouse)**() | void |
+| **[ResetKeyboard](#resetkeyboard)**() | void |
+| **[ResetMouse](#resetmouse)**() | void |
+| **[ExecuteJS](#executejs)**(script: string) | void |
+| **[QuoteString](#quotestring)**(string: string) | string |
+| **[GetScreenWidth](#getscreenwidth)**() | int |
+| **[GetScreenHeight](#getscreenheight)**() | int |
 
 ## Methods
 
-| Type   | Name                                | Parameters        |
-| ------ | ----------------------------------- | ----------------- |
-| void   | [Init](#init)                       |                   |
-| void   | [Show](#show)                       |                   |
-| void   | [Hide](#hide)                       |                   |
-| void   | [BringToFront](#bringtofront)       |                   |
-| void   | [EnableKeyboard](#enablekeyboard)   |                   |
-| void   | [EnableMouse](#enablemouse)         |                   |
-| void   | [DisableKeyboard](#disablekeyboard) |                   |
-| void   | [DisableMouse](#disablemouse)       |                   |
-| void   | [ExecuteJS](#executejs)             | string **script** |
-| string | [QuoteString](#quotestring)         | string **string** |
+### Init {#init}
 
-### Init
+> **Init**()
 
-> void **Init**()
+### Show {#show}
 
-### Show
+> **Show**()
 
-> void **Show**()
+### Hide {#hide}
 
-### Hide
+> **Hide**()
 
-> void **Hide**()
+### BringToFront {#bringtofront}
 
-### BringToFront
+> **BringToFront**()
 
-> void **BringToFront**()
+### SendToBack {#sendtoback}
 
-### EnableKeyboard
+> **SendToBack**()
 
-> void **EnableKeyboard**()
+### EnableKeyboard {#enablekeyboard}
 
-### EnableMouse
+> **EnableKeyboard**()
 
-> void **EnableMouse**()
+### EnableMouse {#enablemouse}
 
-### DisableKeyboard
+> **EnableMouse**()
 
-> void **DisableKeyboard**()
+### DisableKeyboard {#disablekeyboard}
 
-### DisableMouse
+> **DisableKeyboard**()
 
-> void **DisableMouse**()
+### DisableMouse {#disablemouse}
 
-### ExecuteJS
+> **DisableMouse**()
 
-> void **ExecuteJS**(string **script**)
+### ResetKeyboard {#resetkeyboard}
 
-#### Parameters
+> **ResetKeyboard**()
 
-| Name   | Type   | Description |
-| ------ | ------ | ----------- |
-| script | string |             |
+### ResetMouse {#resetmouse}
 
-### QuoteString
+> **ResetMouse**()
 
-> string **QuoteString**(string **string**)
+### ExecuteJS {#executejs}
+
+> **ExecuteJS**(script: string)
 
 #### Parameters
 
-| Name   | Type   | Description |
-| ------ | ------ | ----------- |
-| string | string |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **script** | string |  |
+
+### QuoteString {#quotestring}
+
+> **QuoteString**(string: string): string
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **string** | string |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **string** |  |
+
+### GetScreenWidth {#getscreenwidth}
+
+> **GetScreenWidth**(): int
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **int** |  |
+
+### GetScreenHeight {#getscreenheight}
+
+> **GetScreenHeight**(): int
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **int** |  |
+

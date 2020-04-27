@@ -1,38 +1,48 @@
 ---
 title: TeamSquadManager
 ---
-## Description
 
-Handles and manipulates in-game players, teams, and squads.
+## Summary
+
+### Methods
+
+| Method | Returns |
+| ------ | ------- |
+| **[GetSquadPlayerCount](#getsquadplayercount)**(team: [TeamId](/vext/ref/fb/teamid), squad: [SquadId](/vext/ref/fb/squadid)) | int |
+| **[GetTeamPlayerCount](#getteamplayercount)**(team: [TeamId](/vext/ref/fb/teamid)) | int |
 
 ## Methods
 
-| Type | Name                                        | Parameters                                                                                      |
-| ---- | ------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| int  | [GetSquadPlayerCount](#getsquadplayercount) | [TeamId](/vext/ref/fb/teamid) **team**, [SquadId](/vext/ref/fb/squadid) **squad** |
-| int  | [GetTeamPlayerCount](#getteamplayercount)   | [TeamId](/vext/ref/fb/teamid) **team**                                                   |
+### GetSquadPlayerCount {#getsquadplayercount}
 
-### GetSquadPlayerCount
-
-> int **GetSquadPlayerCount**([TeamId](/vext/ref/fb/teamid) **team**, [SquadId](/vext/ref/fb/squadid) **squad**)
-
-Returns the player count of the specified squad.
+> **GetSquadPlayerCount**(team: [TeamId](/vext/ref/fb/teamid), squad: [SquadId](/vext/ref/fb/squadid)): int
 
 #### Parameters
 
-| Name  | Type                                   | Description                |
-| ----- | -------------------------------------- | -------------------------- |
-| team  | [TeamId](/vext/ref/fb/teamid)   | Team that the squad is in. |
-| squad | [SquadId](/vext/ref/fb/squadid) | Squad's ID.                |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **team** | [TeamId](/vext/ref/fb/teamid) |  |
+| **squad** | [SquadId](/vext/ref/fb/squadid) |  |
 
-### GetTeamPlayerCount
+#### Returns
 
-> int **GetTeamPlayerCount**([TeamId](/vext/ref/fb/teamid) **team**)
+| Type | Description |
+| ---- | ----------- |
+| **int** |  |
 
-Returns a team's player count.
+### GetTeamPlayerCount {#getteamplayercount}
+
+> **GetTeamPlayerCount**(team: [TeamId](/vext/ref/fb/teamid)): int
 
 #### Parameters
 
-| Name | Type                                 | Description                      |
-| ---- | ------------------------------------ | -------------------------------- |
-| team | [TeamId](/vext/ref/fb/teamid) | Team to get the player count of. |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **team** | [TeamId](/vext/ref/fb/teamid) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **int** |  |
+

@@ -1,134 +1,156 @@
 ---
 title: EffectManager
 ---
-## Description
+
+## Summary
+
+### Methods
+
+| Method | Returns |
+| ------ | ------- |
+| **[PlayEffect](#playeffect)**(asset: [DataContainer](/vext/ref/shared/type/datacontainer), transform: [LinearTransform](/vext/ref/shared/type/lineartransform), params: [EffectParams](/vext/ref/client/type/effectparams), firstPersonEffect: bool) | int |
+| **[StopEffect](#stopeffect)**(handle: int) | void |
+| **[ResetEffect](#reseteffect)**(handle: int) | void |
+| **[SetEffectParameterBool](#seteffectparameterbool)**(handle: int, name: string, value: bool) | void |
+| **[SetEffectParameterInt](#seteffectparameterint)**(handle: int, name: string, value: int) | void |
+| **[SetEffectParameterFloat](#seteffectparameterfloat)**(handle: int, name: string, value: float) | void |
+| **[SetEffectTransform](#seteffecttransform)**(handle: int, transform: [LinearTransform](/vext/ref/shared/type/lineartransform)) | void |
+| **[IsEffectPlaying](#iseffectplaying)**(handle: int) | bool |
+| **[IsEffectDead](#iseffectdead)**(handle: int) | bool |
+| **[DisableEffects](#disableeffects)**(disableTimer: float) | void |
+| **[Clear](#clear)**() | void |
 
 ## Methods
 
-| Type | Name                                                | Parameters                                                                                                                                                                                                                     |
-| ---- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| int  | [PlayEffect](#playeffect)                           | [DataContainer](/vext/ref/shared/class/datacontainer) **asset**, [LinearTransform](/vext/ref/shared/class/lineartransform) **transform**, [EffectParams](/vext/ref/client/class/effectparams) **params**, bool **firstPersonEffect** |
-| void | [StopEffect](#stopeffect)                           | int **handle**                                                                                                                                                                                                                 |
-| void | [ResetEffect](#reseteffect)                         | int **handle**                                                                                                                                                                                                                 |
-| void | [SetEffectParameterBool](#seteffectparameterbool)   | int **handle**, string **name**, bool **value**                                                                                                                                                                                |
-| void | [SetEffectParameterInt](#seteffectparameterint)     | int **handle**, string **name**, int **value**                                                                                                                                                                                 |
-| void | [SetEffectParameterFloat](#seteffectparameterfloat) | int **handle**, string **name**, float **value**                                                                                                                                                                               |
-| void | [SetEffectTransform](#seteffecttransform)           | int **handle**, [LinearTransform](/vext/ref/shared/class/lineartransform) **transform**                                                                                                                                          |
-| bool | [IsEffectPlaying](#iseffectplaying)                 | int **handle**                                                                                                                                                                                                                 |
-| bool | [IsEffectDead](#iseffectdead)                       | int **handle**                                                                                                                                                                                                                 |
-| void | [DisableEffects](#disableeffects)                   | float **disableTimer**                                                                                                                                                                                                         |
-| void | [Clear](#clear)                                     |                                                                                                                                                                                                                                |
+### PlayEffect {#playeffect}
 
-### PlayEffect
-
-> int **PlayEffect**([DataContainer](/vext/ref/shared/class/datacontainer) **asset**, [LinearTransform](/vext/ref/shared/class/lineartransform) **transform**, [EffectParams](/vext/ref/client/class/effectparams) **params**, bool **firstPersonEffect**)
+> **PlayEffect**(asset: [DataContainer](/vext/ref/shared/type/datacontainer), transform: [LinearTransform](/vext/ref/shared/type/lineartransform), params: [EffectParams](/vext/ref/client/type/effectparams), firstPersonEffect: bool): int
 
 #### Parameters
 
-| Name              | Type                                                    | Description |
-| ----------------- | ------------------------------------------------------- | ----------- |
-| asset             | [DataContainer](/vext/ref/shared/class/datacontainer)     |             |
-| transform         | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
-| params            | [EffectParams](/vext/ref/client/class/effectparams)       |             |
-| firstPersonEffect | bool                                                    |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **asset** | [DataContainer](/vext/ref/shared/type/datacontainer) |  |
+| **transform** | [LinearTransform](/vext/ref/shared/type/lineartransform) |  |
+| **params** | [EffectParams](/vext/ref/client/type/effectparams) |  |
+| **firstPersonEffect** | bool |  |
 
-### StopEffect
+#### Returns
 
-> void **StopEffect**(int **handle**)
+| Type | Description |
+| ---- | ----------- |
+| **int** |  |
 
-#### Parameters
+### StopEffect {#stopeffect}
 
-| Name   | Type | Description |
-| ------ | ---- | ----------- |
-| handle | int  |             |
-
-### ResetEffect
-
-> void **ResetEffect**(int **handle**)
+> **StopEffect**(handle: int)
 
 #### Parameters
 
-| Name   | Type | Description |
-| ------ | ---- | ----------- |
-| handle | int  |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **handle** | int |  |
 
-### SetEffectParameterBool
+### ResetEffect {#reseteffect}
 
-> void **SetEffectParameterBool**(int **handle**, string **name**, bool **value**)
-
-#### Parameters
-
-| Name   | Type   | Description |
-| ------ | ------ | ----------- |
-| handle | int    |             |
-| name   | string |             |
-| value  | bool   |             |
-
-### SetEffectParameterInt
-
-> void **SetEffectParameterInt**(int **handle**, string **name**, int **value**)
+> **ResetEffect**(handle: int)
 
 #### Parameters
 
-| Name   | Type   | Description |
-| ------ | ------ | ----------- |
-| handle | int    |             |
-| name   | string |             |
-| value  | int    |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **handle** | int |  |
 
-### SetEffectParameterFloat
+### SetEffectParameterBool {#seteffectparameterbool}
 
-> void **SetEffectParameterFloat**(int **handle**, string **name**, float **value**)
+> **SetEffectParameterBool**(handle: int, name: string, value: bool)
 
 #### Parameters
 
-| Name   | Type   | Description |
-| ------ | ------ | ----------- |
-| handle | int    |             |
-| name   | string |             |
-| value  | float  |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **handle** | int |  |
+| **name** | string |  |
+| **value** | bool |  |
 
-### SetEffectTransform
+### SetEffectParameterInt {#seteffectparameterint}
 
-> void **SetEffectTransform**(int **handle**, [LinearTransform](/vext/ref/shared/class/lineartransform) **transform**)
-
-#### Parameters
-
-| Name      | Type                                                    | Description |
-| --------- | ------------------------------------------------------- | ----------- |
-| handle    | int                                                     |             |
-| transform | [LinearTransform](/vext/ref/shared/class/lineartransform) |             |
-
-### IsEffectPlaying
-
-> bool **IsEffectPlaying**(int **handle**)
+> **SetEffectParameterInt**(handle: int, name: string, value: int)
 
 #### Parameters
 
-| Name   | Type | Description |
-| ------ | ---- | ----------- |
-| handle | int  |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **handle** | int |  |
+| **name** | string |  |
+| **value** | int |  |
 
-### IsEffectDead
+### SetEffectParameterFloat {#seteffectparameterfloat}
 
-> bool **IsEffectDead**(int **handle**)
-
-#### Parameters
-
-| Name   | Type | Description |
-| ------ | ---- | ----------- |
-| handle | int  |             |
-
-### DisableEffects
-
-> void **DisableEffects**(float **disableTimer**)
+> **SetEffectParameterFloat**(handle: int, name: string, value: float)
 
 #### Parameters
 
-| Name         | Type  | Description |
-| ------------ | ----- | ----------- |
-| disableTimer | float |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **handle** | int |  |
+| **name** | string |  |
+| **value** | float |  |
 
-### Clear
+### SetEffectTransform {#seteffecttransform}
 
-> void **Clear**()
+> **SetEffectTransform**(handle: int, transform: [LinearTransform](/vext/ref/shared/type/lineartransform))
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **handle** | int |  |
+| **transform** | [LinearTransform](/vext/ref/shared/type/lineartransform) |  |
+
+### IsEffectPlaying {#iseffectplaying}
+
+> **IsEffectPlaying**(handle: int): bool
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **handle** | int |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
+
+### IsEffectDead {#iseffectdead}
+
+> **IsEffectDead**(handle: int): bool
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **handle** | int |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
+
+### DisableEffects {#disableeffects}
+
+> **DisableEffects**(disableTimer: float)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **disableTimer** | float |  |
+
+### Clear {#clear}
+
+> **Clear**()
+

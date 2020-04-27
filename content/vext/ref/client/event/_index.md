@@ -2,42 +2,18 @@
 title: Events
 hideChildren: true
 ---
-| Client                                                               |
-| -------------------------------------------------------------------- |
-| [Client:LevelFinalized](/vext/ref/client/event/clientlevelfinalized)   |
-| [Client:LevelLoaded](/vext/ref/client/event/clientlevelloaded)         |
-| [Client:PostFrameUpdate](/vext/ref/client/event/clientpostframeupdate) |
-| [Client:UpdateInput](/vext/ref/client/event/clientupdateinput)         |
 
-| ClientSoldier                                                                |
-| ---------------------------------------------------------------------------- |
-| [ClientSoldier:HealthAction](/vext/ref/client/event/clientsoldierhealthaction) |
+|   |   |
+| --- | --- |
+| [Client:PostFrameUpdate](/vext/ref/client/event/client_postframeupdate) | [Client:UpdateInput](/vext/ref/client/event/client_updateinput) |
+| [FPSCamera:Update](/vext/ref/client/event/fpscamera_update) | [FreeCam:PostFrameUpdate](/vext/ref/client/event/freecam_postframeupdate) |
+| [Level:Finalized](/vext/ref/client/event/level_finalized) | [Level:Loaded](/vext/ref/client/event/level_loaded) |
+| [Player:Connected](/vext/ref/client/event/player_connected) | [Player:Deleted](/vext/ref/client/event/player_deleted) |
+| [Player:Killed](/vext/ref/client/event/player_killed) | [Player:Respawn](/vext/ref/client/event/player_respawn) |
+| [Player:SetSquadLeader](/vext/ref/client/event/player_setsquadleader) | [Player:SquadChange](/vext/ref/client/event/player_squadchange) |
+| [Player:TeamChange](/vext/ref/client/event/player_teamchange) | [Player:UpdateInput](/vext/ref/client/event/player_updateinput) |
+| [Soldier:HealthAction](/vext/ref/client/event/soldier_healthaction) | [Soldier:Spawn](/vext/ref/client/event/soldier_spawn) |
+| [UI:DrawHud](/vext/ref/client/event/ui_drawhud) | [VE:StateAdded](/vext/ref/client/event/ve_stateadded) |
+| [VE:StateRemoved](/vext/ref/client/event/ve_stateremoved) | [VE:StatesCleared](/vext/ref/client/event/ve_statescleared) |
+| [VU:Spec:PostUpdate](/vext/ref/client/event/vu_spec_postupdate) | [VU:Spec:PreUpdate](/vext/ref/client/event/vu_spec_preupdate) |
 
-| FreeCam                                                                |
-| ---------------------------------------------------------------------- |
-| [FreeCam:PostFrameUpdate](/vext/ref/client/event/freecampostframeupdate) |
-
-| Player                                                               |
-| -------------------------------------------------------------------- |
-| [Player:Connected](/vext/ref/client/event/playerconnected)           |
-| [Player:Deleted](/vext/ref/client/event/playerdeleted)               |
-| [Player:Killed](/vext/ref/client/event/playerkilled)                 |
-| [Player:Respawn](/vext/ref/client/event/playerrespawn)               |
-| [Player:SetSquadLeader](/vext/ref/client/event/playersetsquadleader) |
-| [Player:SquadChange](/vext/ref/client/event/playersquadchange)       |
-| [Player:TeamChange](/vext/ref/client/event/playerteamchange)         |
-
-| Soldier                                              |
-| ---------------------------------------------------- |
-| [Soldier:Spawn](/vext/ref/client/event/soldierspawn) |
-
-| VE                                                       |
-| -------------------------------------------------------- |
-| [VE:StateAdded](/vext/ref/client/event/vestateadded)       |
-| [VE:StateRemoved](/vext/ref/client/event/vestateremoved)   |
-| [VE:StatesCleared](/vext/ref/client/event/vestatescleared) |
-
-| VU:Spec                                                     |
-| ----------------------------------------------------------- |
-| [VU:Spec:PostUpdate](/vext/ref/client/event/vuspecpostupdate) |
-| [VU:Spec:PreUpdate](/vext/ref/client/event/vuspecpreupdate)   |

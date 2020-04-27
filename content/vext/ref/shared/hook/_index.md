@@ -2,6 +2,8 @@
 title: Hooks
 hideChildren: true
 ---
-| ResourceManager                                                              |
-| ---------------------------------------------------------------------------- |
-| [ResourceManager:LoadBundles](/vext/ref/shared/hook/resourcemanagerloadbundles) |
+
+|   |   |
+| --- | --- |
+| [Entity:ShouldCollideWith](/vext/ref/shared/hook/entity_shouldcollidewith) | [ResourceManager:LoadBundles](/vext/ref/shared/hook/resourcemanager_loadbundles) |
+

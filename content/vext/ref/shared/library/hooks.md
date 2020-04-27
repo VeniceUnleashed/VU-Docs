@@ -1,36 +1,52 @@
 ---
 title: Hooks
 ---
-## Description
+
+## Summary
+
+### Methods
+
+| Method | Returns |
+| ------ | ------- |
+| **[Install](#install)**(hookName: string, priority: int, callback: callable) | [Hook](/vext/ref/shared/type/hook) |
+| **[Install](#install-1)**(hookName: string, priority: int, context: any, callback: callable) | [Hook](/vext/ref/shared/type/hook) |
 
 ## Methods
 
-| Type                              | Name                | Parameters                                                              |
-| --------------------------------- | ------------------- | ----------------------------------------------------------------------- |
-| [Hook](/vext/ref/shared/class/hook) | [Install](#install) | string **hook**, int **priority**, funtion **callback**                 |
-| [Hook](/vext/ref/shared/class/hook) | [Install](#install) | string **hook**, int **priority**, object **obj**, funtion **callback** |
+### Install {#install}
 
-### Install
-
-> [Hook](/vext/ref/shared/class/hook) **Install**(string **hook**, int **priority**, funtion **callback**)
+> **Install**(hookName: string, priority: int, callback: callable): [Hook](/vext/ref/shared/type/hook)
 
 #### Parameters
 
-| Name     | Type    | Description |
-| -------- | ------- | ----------- |
-| hook     | string  |             |
-| priority | int     |             |
-| callback | funtion |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **hookName** | string |  |
+| **priority** | int |  |
+| **callback** | callable |  |
 
-### Install
+#### Returns
 
-> [Hook](/vext/ref/shared/class/hook) **Install**(string **hook**, int **priority**, object **obj**, funtion **callback**)
+| Type | Description |
+| ---- | ----------- |
+| **[Hook](/vext/ref/shared/type/hook)** |  |
+
+### Install {#install-1}
+
+> **Install**(hookName: string, priority: int, context: any, callback: callable): [Hook](/vext/ref/shared/type/hook)
 
 #### Parameters
 
-| Name     | Type    | Description |
-| -------- | ------- | ----------- |
-| hook     | string  |             |
-| priority | int     |             |
-| obj      | object  |             |
-| callback | funtion |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **hookName** | string |  |
+| **priority** | int |  |
+| **context** | any |  |
+| **callback** | callable |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[Hook](/vext/ref/shared/type/hook)** |  |
+

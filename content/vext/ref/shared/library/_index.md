@@ -3,16 +3,28 @@ title: Libraries
 hideChildren: true
 ---
 
-[Events](/vext/ref/shared/library/events)
+---
 
-[Hooks](/vext/ref/shared/library/hooks)
+**[Events](/vext/ref/shared/library/events)**
 
-[Json](/vext/ref/shared/library/json)
+---
 
-[MathUtils](/vext/ref/shared/library/mathutils)
+**[Hooks](/vext/ref/shared/library/hooks)**
 
-[Net](/vext/ref/shared/library/net)
+---
 
-[ResourceManager](/vext/ref/shared/library/resourcemanager)
+**[MathUtils](/vext/ref/shared/library/mathutils)**
 
-[SharedUtils](/vext/ref/shared/library/sharedutils)
+---
+
+**[Net](/vext/ref/shared/library/net)**
+
+---
+
+**[ResourceManager](/vext/ref/shared/library/resourcemanager)**
+
+---
+
+**[SharedUtils](/vext/ref/shared/library/sharedutils)**
+
+---

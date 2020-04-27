@@ -1,74 +1,90 @@
 ---
 title: NetEvents
 ---
-## Description
+
+## Summary
+
+### Methods
+
+| Method | Returns |
+| ------ | ------- |
+| **[Subscribe](#subscribe)**(eventName: string, callback: callable) | [NetEvent](/vext/ref/client/type/netevent) |
+| **[Subscribe](#subscribe-1)**(eventName: string, context: any, callback: callable) | [NetEvent](/vext/ref/client/type/netevent) |
+| **[Send](#send)**(eventName: string, ...args: any) | void |
+| **[SendLocal](#sendlocal)**(eventName: string, ...args: any) | void |
+| **[Unsubscribe](#unsubscribe)**() | void |
+| **[Unsubscribe](#unsubscribe-1)**(eventName: string) | void |
 
 ## Methods
 
-| Type                                      | Name                        | Parameters                                                |
-| ----------------------------------------- | --------------------------- | --------------------------------------------------------- |
-| [NetEvent](/vext/ref/client/class/netevent) | [Subscribe](#subscribe)     | string **message**, function **callback**                 |
-| [NetEvent](/vext/ref/client/class/netevent) | [Subscribe](#subscribe)     | string **message**, object **obj**, function **callback** |
-| void                                      | [Send](#send)               | string **message**, ...args                               |
-| void                                      | [SendLocal](#sendlocal)     | string **message**, ...args                               |
-| void                                      | [Unsubscribe](#unsubscribe) |                                                           |
-| void                                      | [Unsubscribe](#unsubscribe) | string **match**                                          |
+### Subscribe {#subscribe}
 
-### Subscribe
-
-> [NetEvent](/vext/ref/client/class/netevent) **Subscribe**(string **message**, function **callback**)
+> **Subscribe**(eventName: string, callback: callable): [NetEvent](/vext/ref/client/type/netevent)
 
 #### Parameters
 
-| Name     | Type     | Description |
-| -------- | -------- | ----------- |
-| message  | string   |             |
-| callback | function |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **eventName** | string |  |
+| **callback** | callable |  |
 
-### Subscribe
+#### Returns
 
-> [NetEvent](/vext/ref/client/class/netevent) **Subscribe**(string **message**, object **obj**, function **callback**)
+| Type | Description |
+| ---- | ----------- |
+| **[NetEvent](/vext/ref/client/type/netevent)** |  |
 
-#### Parameters
+### Subscribe {#subscribe-1}
 
-| Name     | Type     | Description |
-| -------- | -------- | ----------- |
-| message  | string   |             |
-| obj      | object   |             |
-| callback | function |             |
-
-### Send
-
-> void **Send**(string **message**, ...args)
+> **Subscribe**(eventName: string, context: any, callback: callable): [NetEvent](/vext/ref/client/type/netevent)
 
 #### Parameters
 
-| Name    | Type   | Description |
-| ------- | ------ | ----------- |
-| message | string |             |
-| args    |        |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **eventName** | string |  |
+| **context** | any |  |
+| **callback** | callable |  |
 
-### SendLocal
+#### Returns
 
-> void **SendLocal**(string **message**, ...args)
+| Type | Description |
+| ---- | ----------- |
+| **[NetEvent](/vext/ref/client/type/netevent)** |  |
 
-#### Parameters
+### Send {#send}
 
-| Name    | Type   | Description |
-| ------- | ------ | ----------- |
-| message | string |             |
-| args    |        |             |
-
-### Unsubscribe
-
-> void **Unsubscribe**()
-
-### Unsubscribe
-
-> void **Unsubscribe**(string **match**)
+> **Send**(eventName: string, ...args: any)
 
 #### Parameters
 
-| Name  | Type   | Description |
-| ----- | ------ | ----------- |
-| match | string |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **eventName** | string |  |
+| ...**args** | any |  |
+
+### SendLocal {#sendlocal}
+
+> **SendLocal**(eventName: string, ...args: any)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **eventName** | string |  |
+| ...**args** | any |  |
+
+### Unsubscribe {#unsubscribe}
+
+> **Unsubscribe**()
+
+### Unsubscribe {#unsubscribe-1}
+
+> **Unsubscribe**(eventName: string)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **eventName** | string |  |
+

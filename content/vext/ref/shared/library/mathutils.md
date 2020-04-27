@@ -1,119 +1,177 @@
 ---
 title: MathUtils
 ---
-## Description
+
+## Summary
+
+### Methods
+
+| Method | Returns |
+| ------ | ------- |
+| **[GetRandom](#getrandom)**(from: float, to: float) | float |
+| **[GetRandomInt](#getrandomint)**(from: int, to: int) | int |
+| **[GetYPRFromULF](#getyprfromulf)**(up: [Vec3](/vext/ref/shared/type/vec3), left: [Vec3](/vext/ref/shared/type/vec3), forward: [Vec3](/vext/ref/shared/type/vec3)) | [Vec3](/vext/ref/shared/type/vec3) \| nil |
+| **[GetTransformFromYPR](#gettransformfromypr)**(yaw: float, pitch: float, roll: float) | [LinearTransform](/vext/ref/shared/type/lineartransform) |
+| **[Approximately](#approximately)**(a: float, b: float) | bool |
+| **[Clamp](#clamp)**(value: float, min: float, max: float) | float |
+| **[Round](#round)**(value: float) | float |
+| **[FNVHash](#fnvhash)**(text: string) | int |
+| **[Lerp](#lerp)**(from: float, to: float, t: float) | float |
 
 ## Methods
 
-| Type                                                    | Name                                        | Parameters                                                                                                                        |
-| ------------------------------------------------------- | ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| float                                                   | [GetRandom](#getrandom)                     | float **from**, float **to**                                                                                                      |
-| int                                                     | [GetRandomInt](#getrandomint)               | int **from**, int **to**                                                                                                          |
-| [Vec3](/vext/ref/shared/class/vec3)                       | [GetYPRFromULF](#getyprfromulf)             | [Vec3](/vext/ref/shared/class/vec3) **up**, [Vec3](/vext/ref/shared/class/vec3) **left**, [Vec3](/vext/ref/shared/class/vec3) **right** |
-| [LinearTransform](/vext/ref/shared/class/lineartransform) | [GetTransformFromYPR](#gettransformfromypr) | float **yaw**, float **pitch**, float **roll**                                                                                    |
-| bool                                                    | [Approximately](#approximately)             | float **a**, float **b**                                                                                                          |
-| float                                                   | [Clamp](#clamp)                             | float **value**, float **min**, float **max**                                                                                     |
-| float                                                   | [Round](#round)                             | float **value**                                                                                                                   |
-| int                                                     | [FNVHash](#fnvhash)                         | string **value**                                                                                                                  |
-| float                                                   | [Lerp](#lerp)                               | float **a**, float **b**, float **t**                                                                                             |
+### GetRandom {#getrandom}
 
-### GetRandom
-
-> float **GetRandom**(float **from**, float **to**)
-
-#### Parameters
-
-| Name | Type  | Description |
-| ---- | ----- | ----------- |
-| from | float |             |
-| to   | float |             |
-
-### GetRandomInt
-
-> int **GetRandomInt**(int **from**, int **to**)
+> **GetRandom**(from: float, to: float): float
 
 #### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| from | int  |             |
-| to   | int  |             |
+| **from** | float |  |
+| **to** | float |  |
 
-### GetYPRFromULF
+#### Returns
 
-> [Vec3](/vext/ref/shared/class/vec3) **GetYPRFromULF**([Vec3](/vext/ref/shared/class/vec3) **up**, [Vec3](/vext/ref/shared/class/vec3) **left**, [Vec3](/vext/ref/shared/class/vec3) **right**)
+| Type | Description |
+| ---- | ----------- |
+| **float** |  |
 
-#### Parameters
+### GetRandomInt {#getrandomint}
 
-| Name  | Type                              | Description |
-| ----- | --------------------------------- | ----------- |
-| up    | [Vec3](/vext/ref/shared/class/vec3) |             |
-| left  | [Vec3](/vext/ref/shared/class/vec3) |             |
-| right | [Vec3](/vext/ref/shared/class/vec3) |             |
-
-### GetTransformFromYPR
-
-> [LinearTransform](/vext/ref/shared/class/lineartransform) **GetTransformFromYPR**(float **yaw**, float **pitch**, float **roll**)
+> **GetRandomInt**(from: int, to: int): int
 
 #### Parameters
 
-| Name  | Type  | Description |
-| ----- | ----- | ----------- |
-| yaw   | float |             |
-| pitch | float |             |
-| roll  | float |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **from** | int |  |
+| **to** | int |  |
 
-### Approximately
+#### Returns
 
-> bool **Approximately**(float **a**, float **b**)
+| Type | Description |
+| ---- | ----------- |
+| **int** |  |
 
-#### Parameters
+### GetYPRFromULF {#getyprfromulf}
 
-| Name | Type  | Description |
-| ---- | ----- | ----------- |
-| a    | float |             |
-| b    | float |             |
-
-### Clamp
-
-> float **Clamp**(float **value**, float **min**, float **max**)
+> **GetYPRFromULF**(up: [Vec3](/vext/ref/shared/type/vec3), left: [Vec3](/vext/ref/shared/type/vec3), forward: [Vec3](/vext/ref/shared/type/vec3)): [Vec3](/vext/ref/shared/type/vec3) \| nil
 
 #### Parameters
 
-| Name  | Type  | Description |
-| ----- | ----- | ----------- |
-| value | float |             |
-| min   | float |             |
-| max   | float |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **up** | [Vec3](/vext/ref/shared/type/vec3) |  |
+| **left** | [Vec3](/vext/ref/shared/type/vec3) |  |
+| **forward** | [Vec3](/vext/ref/shared/type/vec3) |  |
 
-### Round
+#### Returns
 
-> float **Round**(float **value**)
+| Type | Description |
+| ---- | ----------- |
+| **[Vec3](/vext/ref/shared/type/vec3)** \| **nil** |  |
 
-#### Parameters
+### GetTransformFromYPR {#gettransformfromypr}
 
-| Name  | Type  | Description |
-| ----- | ----- | ----------- |
-| value | float |             |
-
-### FNVHash
-
-> int **FNVHash**(string **value**)
+> **GetTransformFromYPR**(yaw: float, pitch: float, roll: float): [LinearTransform](/vext/ref/shared/type/lineartransform)
 
 #### Parameters
 
-| Name  | Type   | Description |
-| ----- | ------ | ----------- |
-| value | string |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **yaw** | float |  |
+| **pitch** | float |  |
+| **roll** | float |  |
 
-### Lerp
+#### Returns
 
-> float **Lerp**(float **a**, float **b**, float **t**)
+| Type | Description |
+| ---- | ----------- |
+| **[LinearTransform](/vext/ref/shared/type/lineartransform)** |  |
+
+### Approximately {#approximately}
+
+> **Approximately**(a: float, b: float): bool
 
 #### Parameters
 
-| Name | Type  | Description |
-| ---- | ----- | ----------- |
-| a    | float |             |
-| b    | float |             |
-| t    | float |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **a** | float |  |
+| **b** | float |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
+
+### Clamp {#clamp}
+
+> **Clamp**(value: float, min: float, max: float): float
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **value** | float |  |
+| **min** | float |  |
+| **max** | float |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **float** |  |
+
+### Round {#round}
+
+> **Round**(value: float): float
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **value** | float |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **float** |  |
+
+### FNVHash {#fnvhash}
+
+> **FNVHash**(text: string): int
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **text** | string |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **int** |  |
+
+### Lerp {#lerp}
+
+> **Lerp**(from: float, to: float, t: float): float
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **from** | float |  |
+| **to** | float |  |
+| **t** | float |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **float** |  |
+

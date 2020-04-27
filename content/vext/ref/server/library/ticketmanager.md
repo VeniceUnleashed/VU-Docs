@@ -1,42 +1,70 @@
 ---
-title: TicketManager (Server Manager)
+title: TicketManager
 ---
-## Description
+
+## Summary
+
+### Methods
+
+| Method | Returns |
+| ------ | ------- |
+| **[SetTicketCount](#setticketcount)**(team: [TeamId](/vext/ref/fb/teamid), ticketCount: int) | bool |
+| **[GetTicketCount](#getticketcount)**(team: [TeamId](/vext/ref/fb/teamid)) | float |
+| **[GetCurrentRound](#getcurrentround)**() | int |
+| **[GetRoundCount](#getroundcount)**() | int |
 
 ## Methods
 
-| Type | Name                                | Parameters                                                         |
-| ---- | ----------------------------------- | ------------------------------------------------------------------ |
-| bool | [SetTicketCount](#setticketcount)   | [TeamId](/vext/ref/fb/teamid) **team**, int **ticketCount** |
-| int  | [GetTicketCount](#getticketcount)   | [TeamId](/vext/ref/fb/teamid) **team**                      |
-| int  | [GetCurrentRound](#getcurrentround) |                                                                    |
-| int  | [GetRouncCount](#getroundcount)     |                                                                    |
+### SetTicketCount {#setticketcount}
 
-### SetTicketCount
-
-> bool **SetTicketCount**([TeamId](/vext/ref/fb/teamid) **team**, int **ticketCount**)
+> **SetTicketCount**(team: [TeamId](/vext/ref/fb/teamid), ticketCount: int): bool
 
 #### Parameters
 
-| Name        | Type                                 | Description |
-| ----------- | ------------------------------------ | ----------- |
-| team        | [TeamId](/vext/ref/fb/teamid) |             |
-| ticketCount | int                                  |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **team** | [TeamId](/vext/ref/fb/teamid) |  |
+| **ticketCount** | int |  |
 
-### GetTicketCount
+#### Returns
 
-> bool **GetTicketCount**([TeamId](/vext/ref/fb/teamid) **team**)
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
+
+### GetTicketCount {#getticketcount}
+
+> **GetTicketCount**(team: [TeamId](/vext/ref/fb/teamid)): float
 
 #### Parameters
 
-| Name | Type                                 | Description |
-| ---- | ------------------------------------ | ----------- |
-| team | [TeamId](/vext/ref/fb/teamid) |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **team** | [TeamId](/vext/ref/fb/teamid) |  |
 
-### GetCurrentRound
+#### Returns
 
-> int **GetCurrentRound**()
+| Type | Description |
+| ---- | ----------- |
+| **float** |  |
 
-### GetRoundCount
+### GetCurrentRound {#getcurrentround}
 
-> int **GetRoundCount**()
+> **GetCurrentRound**(): int
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **int** |  |
+
+### GetRoundCount {#getroundcount}
+
+> **GetRoundCount**(): int
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **int** |  |
+

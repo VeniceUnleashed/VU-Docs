@@ -1,63 +1,79 @@
 ---
-title: ChatManager (Server Manager)
+title: ChatManager
 ---
-## Description
 
-The server chat manager allows you to send server messages to everyone, team, or squad.
+## Summary
+
+### Methods
+
+| Method | Returns |
+| ------ | ------- |
+| **[SendMessage](#sendmessage)**(message: string) | bool |
+| **[SendMessage](#sendmessage-1)**(message: string, toTeam: [TeamId](/vext/ref/fb/teamid)) | bool |
+| **[SendMessage](#sendmessage-2)**(message: string, toTeam: [TeamId](/vext/ref/fb/teamid), toSquad: [SquadId](/vext/ref/fb/squadid)) | bool |
 
 ## Methods
 
-| Type | Name                        | Parameters                                                                                                          |
-| ---- | --------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| bool | [SendMessage](#sendmessage) | string **message**                                                                                                  |
-| bool | [SendMessage](#sendmessage) | string **message**, [TeamId](/vext/ref/fb/teamid) **team**                                                   |
-| bool | [SendMessage](#sendmessage) | string **message**, [TeamId](/vext/ref/fb/teamid) **team**, [SquadId](/vext/ref/fb/squadid) **squad** |
+### SendMessage {#sendmessage}
 
-### SendMessage
-
-> bool **SendMessage**(string **message**)
-
-Sends a chat message to the entire server.
+> **SendMessage**(message: string): bool
 
 #### Parameters
 
-| Name    | Type   | Description                       |
-| ------- | ------ | --------------------------------- |
-| message | string | Message to send to entire server. |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **message** | string |  |
 
-### SendMessage
+#### Returns
 
-> bool **SendMessage**(string **message**, [TeamId](/vext/ref/fb/teamid) **team**)
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
 
-Sends a chat message to a specific team.
+#### Example
 
-#### Parameters
-
-| Name    | Type                                 | Description                  |
-| ------- | ------------------------------------ | ---------------------------- |
-| message | string                               | Message to send to the team. |
-| team    | [TeamId](/vext/ref/fb/teamid) | Team to send the message to. |
-
-### SendMessage
-
-> bool **SendMessage**(string **message**, [TeamId](/vext/ref/fb/teamid) **team**, [SquadId](/vext/ref/fb/squadid) **squad**)
-
-Sends a chat message to a specific squad.
-
-#### Parameters
-
-| Name    | Type                                   | Description                   |
-| ------- | -------------------------------------- | ----------------------------- |
-| message | string                                 | Message to send to the squad. |
-| team    | [TeamId](/vext/ref/fb/teamid)   | Team that the squad is in.    |
-| squad   | [SquadId](/vext/ref/fb/squadid) | Squad to send the message to. |
-
-\=== Example ===
-
-``` lua
--- Send a message
-local result = ChatManager:SendMessage("hello world!")
-if result == false then
-    return
-end
+```lua
+ChatManager:SendMessage('Hello players!')
 ```
+
+### SendMessage {#sendmessage-1}
+
+> **SendMessage**(message: string, toTeam: [TeamId](/vext/ref/fb/teamid)): bool
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **message** | string |  |
+| **toTeam** | [TeamId](/vext/ref/fb/teamid) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
+
+#### Example
+
+```lua
+ChatManager:SendMessage('Hello Team 1 players!', TeamId.Team1)
+```
+
+### SendMessage {#sendmessage-2}
+
+> **SendMessage**(message: string, toTeam: [TeamId](/vext/ref/fb/teamid), toSquad: [SquadId](/vext/ref/fb/squadid)): bool
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **message** | string |  |
+| **toTeam** | [TeamId](/vext/ref/fb/teamid) |  |
+| **toSquad** | [SquadId](/vext/ref/fb/squadid) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
+

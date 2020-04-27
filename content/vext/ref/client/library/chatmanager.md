@@ -1,45 +1,79 @@
 ---
-title: ChatManager (Client Manager)
+title: ChatManager
 ---
-## Description
+
+## Summary
+
+### Methods
+
+| Method | Returns |
+| ------ | ------- |
+| **[SendMessage](#sendmessage)**(message: string) | bool |
+| **[SendMessage](#sendmessage-1)**(message: string, toTeam: [TeamId](/vext/ref/fb/teamid)) | bool |
+| **[SendMessage](#sendmessage-2)**(message: string, toTeam: [TeamId](/vext/ref/fb/teamid), toSquad: [SquadId](/vext/ref/fb/squadid)) | bool |
 
 ## Methods
 
-| Type | Name                        | Parameters                                                                                                          |
-| ---- | --------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| bool | [SendMessage](#sendmessage) | string **message**                                                                                                  |
-| bool | [SendMessage](#sendmessage) | string **message**, [TeamId](/vext/ref/fb/teamid) **team**                                                   |
-| bool | [SendMessage](#sendmessage) | string **message**, [TeamId](/vext/ref/fb/teamid) **team**, [SquadId](/vext/ref/fb/squadid) **squad** |
+### SendMessage {#sendmessage}
 
-### SendMessage
-
-> bool **SendMessage**(string **message**)
+> **SendMessage**(message: string): bool
 
 #### Parameters
 
-| Name    | Type   | Description |
-| ------- | ------ | ----------- |
-| message | string |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **message** | string |  |
 
-### SendMessage
+#### Returns
 
-> bool **SendMessage**(string **message**, [TeamId](/vext/ref/fb/teamid) **team**)
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
+
+#### Example
+
+```lua
+ChatManager:SendMessage('Hello players!')
+```
+
+### SendMessage {#sendmessage-1}
+
+> **SendMessage**(message: string, toTeam: [TeamId](/vext/ref/fb/teamid)): bool
 
 #### Parameters
 
-| Name    | Type                                 | Description |
-| ------- | ------------------------------------ | ----------- |
-| message | string                               |             |
-| team    | [TeamId](/vext/ref/fb/teamid) |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **message** | string |  |
+| **toTeam** | [TeamId](/vext/ref/fb/teamid) |  |
 
-### SendMessage
+#### Returns
 
-> bool **SendMessage**(string **message**, [TeamId](/vext/ref/fb/teamid) **team**, [SquadId](/vext/ref/fb/squadid) **squad**)
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
+
+#### Example
+
+```lua
+ChatManager:SendMessage('Hello Team 1 players!', TeamId.Team1)
+```
+
+### SendMessage {#sendmessage-2}
+
+> **SendMessage**(message: string, toTeam: [TeamId](/vext/ref/fb/teamid), toSquad: [SquadId](/vext/ref/fb/squadid)): bool
 
 #### Parameters
 
-| Name    | Type                                   | Description |
-| ------- | -------------------------------------- | ----------- |
-| message | string                                 |             |
-| team    | [TeamId](/vext/ref/fb/teamid)   |             |
-| squad   | [SquadId](/vext/ref/fb/squadid) |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **message** | string |  |
+| **toTeam** | [TeamId](/vext/ref/fb/teamid) |  |
+| **toSquad** | [SquadId](/vext/ref/fb/squadid) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
+

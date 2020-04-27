@@ -1,147 +1,114 @@
 ---
 title: SQL
 ---
-## Description
+
+## Summary
+
+### Methods
+
+| Method | Returns |
+| ------ | ------- |
+| **[Open](#open)**() | bool |
+| **[Close](#close)**() | void |
+| **[Query](#query)**(query: string, ...args: any) | table \| nil |
+| **[Escape](#escape)**(text: string) | string |
+| **[Blob](#blob)**(data: string) | [SQLBlob](/vext/ref/server/type/sqlblob) |
+| **[Error](#error)**() | string |
+| **[AffectedRows](#affectedrows)**() | int |
+| **[LastInsertId](#lastinsertid)**() | int |
 
 ## Methods
 
-| Type    | Name                          | Parameters                |
-| ------- | ----------------------------- | ------------------------- |
-| bool    | [Open](#open)                 |                           |
-| void    | [Close](#close)               |                           |
-| table   | [Query](#query)               | string **query**, args... |
-| string  | [Escape](#escape)             | string **text**           |
-| string  | [Error](#error)               |                           |
-| int     | [AffectedRows](#affectedrows) |                           |
-| int     | [LastInsertId](#lastinsertid) |                           |
-| SQLBlob | [Blob](#blob)                 | string **data**           |
+### Open {#open}
 
-### Open
+> **Open**(): bool
 
-> bool **Open**()
+#### Returns
 
-Opens a connection to the database if one has not already been opened. The database is stored in `Mods/mod-name/mod.db`.
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
 
-### Close
+### Close {#close}
 
-> void **Close**()
+> **Close**()
 
-Closes the active connection to the database.
+### Query {#query}
 
-### Query
-
-> table **Query**(string **query**, args...)
-
-Executes an SQL `query` with the specified bound arguments. Returns a table of rows if successful, otherwise `false`.
+> **Query**(query: string, ...args: any): table \| nil
 
 #### Parameters
 
-| Name  | Type   | Description |
-| ----- | ------ | ----------- |
-| query | string |             |
-| args  |        |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **query** | string |  |
+| ...**args** | any |  |
 
-### Escape
+#### Returns
 
-> string **Escape**(string **text**)
+| Type | Description |
+| ---- | ----------- |
+| **table** \| **nil** |  |
 
-Escapes a string for usage in an SQL query. This is not necessary when binding arguments directly using the `SQL:Query(...)` method.
+### Escape {#escape}
 
-#### Parameters
-
-| Name | Type   | Description |
-| ---- | ------ | ----------- |
-| text | string |             |
-
-### Error
-
-> string **Error**()
-
-Returns a description of the last error hat occurred.
-
-### AffectedRows
-
-> int **AffectedRows**()
-
-Returns the number of rows the last successful query affected.
-
-### LastInsertId
-
-> int **LastInsertId**()
-
-Returns the ID of the most recently inserted row.
-
-### Blob
-
-> SQLBlob **Blob**(string **data**)
-
-Returns an `SQLBlob` object for use in queries.
+> **Escape**(text: string): string
 
 #### Parameters
 
-| Name | Type   | Description |
-| ---- | ------ | ----------- |
-| data | string |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **text** | string |  |
 
-\==== Example ====
+#### Returns
 
-``` lua
-function SQLExample()
-    if not SQL:Open() then
-        return
-    end
+| Type | Description |
+| ---- | ----------- |
+| **string** |  |
 
-    -- Create our table.
-    local query = [[
-        CREATE TABLE IF NOT EXISTS test_table (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            text_value TEXT,
-            int_value INTEGER,
-            real_value REAL,
-            blob_value BLOB,
-            some_null_value BLOB,
-            not_null_text TEXT NOT NULL
-        )
-    ]]
+### Blob {#blob}
 
-    if not SQL:Query(query) then
-        print('Failed to execute query: ' .. SQL:Error())
-        return
-    end
+> **Blob**(data: string): [SQLBlob](/vext/ref/server/type/sqlblob)
 
-    -- Insert some test data.
-    query = 'INSERT INTO test_table (text_value, int_value, real_value, blob_value, some_null_value, not_null_text) VALUES (?, ?, ?, ?, ?, ?)'
+#### Parameters
 
-    if not SQL:Query(query, 'My Text', 1337, 420.69, SQL:Blob('My Blob'), nil, 'My Not Null Text') then
-        print('Failed to execute query: ' .. SQL:Error())
-        return
-    end
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **data** | string |  |
 
-    if not SQL:Query(query, 'My Text 2', 13372, 420.692, SQL:Blob('My Blob 2'), nil, 'My Not Null Text 2') then
-        print('Failed to execute query: ' .. SQL:Error())
-        return
-    end
+#### Returns
 
-    print('Inserted data. Insert ID: ' .. tostring(SQL:LastInsertId()) .. '. Rows affected: ' .. tostring(SQL:AffectedRows()))
+| Type | Description |
+| ---- | ----------- |
+| **[SQLBlob](/vext/ref/server/type/sqlblob)** |  |
 
-    -- Test the NOT NULL constraint.
-    if not SQL:Query(query, 'My Text', 1337, 420.69, SQL:Blob('My Blob'), nil, nil) then
-        -- Error should be "NOT NULL constraint failed: test_table.not_null_text"
-        print('Failed to execute query: ' .. SQL:Error())
-    end
+### Error {#error}
 
-    -- Fetch all rows from the table.
-    results = SQL:Query('SELECT * FROM test_table')
+> **Error**(): string
 
-    if not results then
-        print('Failed to execute query: ' .. SQL:Error())
-        return
-    end
+#### Returns
 
-    -- Print the fetched rows.
-    for _, row in pairs(results) do
-        print('Got row:')
-        print(row)
-    end
-end
-```
+| Type | Description |
+| ---- | ----------- |
+| **string** |  |
+
+### AffectedRows {#affectedrows}
+
+> **AffectedRows**(): int
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **int** |  |
+
+### LastInsertId {#lastinsertid}
+
+> **LastInsertId**(): int
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **int** |  |
+

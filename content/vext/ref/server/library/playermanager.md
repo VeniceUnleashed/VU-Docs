@@ -1,120 +1,257 @@
 ---
 title: PlayerManager
 ---
-## Description
+
+## Summary
+
+### Methods
+
+| Method | Returns |
+| ------ | ------- |
+| **[GetPlayers](#getplayers)**() | [Player](/vext/ref/server/type/player)[] |
+| **[GetPlayerById](#getplayerbyid)**(id: int) | [Player](/vext/ref/server/type/player) \| nil |
+| **[GetPlayerByOnlineId](#getplayerbyonlineid)**(onlineId: int) | [Player](/vext/ref/server/type/player) \| nil |
+| **[GetPlayerByGuid](#getplayerbyguid)**(guid: [Guid](/vext/ref/shared/type/guid)) | [Player](/vext/ref/server/type/player) \| nil |
+| **[GetPlayerByName](#getplayerbyname)**(name: string) | [Player](/vext/ref/server/type/player) \| nil |
+| **[GetPlayersByName](#getplayersbyname)**(name: string) | [Player](/vext/ref/server/type/player)[] |
+| **[GetPlayerCount](#getplayercount)**() | int |
+| **[GetPlayersByTeam](#getplayersbyteam)**(team: [TeamId](/vext/ref/fb/teamid)) | [Player](/vext/ref/server/type/player)[] |
+| **[GetPlayersBySquad](#getplayersbysquad)**(team: [TeamId](/vext/ref/fb/teamid), squad: [SquadId](/vext/ref/fb/squadid)) | [Player](/vext/ref/server/type/player)[] |
+| **[GetSquadLeader](#getsquadleader)**(team: [TeamId](/vext/ref/fb/teamid), squad: [SquadId](/vext/ref/fb/squadid)) | [Player](/vext/ref/server/type/player) \| nil |
+| **[CreatePlayer](#createplayer)**(name: string, team: [TeamId](/vext/ref/fb/teamid), squad: [SquadId](/vext/ref/fb/squadid)) | [Player](/vext/ref/server/type/player) \| nil |
+| **[DeletePlayer](#deleteplayer)**(player: [Player](/vext/ref/server/type/player)) | void |
+| **[SetSpectatorEnabled](#setspectatorenabled)**(enabled: bool) | void |
+| **[IsSpectatorEnabled](#isspectatorenabled)**() | bool |
+| **[FadeInAll](#fadeinall)**(fadeTime: float) | void |
+| **[FadeOutAll](#fadeoutall)**(fadeTime: float) | void |
 
 ## Methods
 
-| Type                                        | Name                                        | Parameters            |
-| ------------------------------------------- | ------------------------------------------- | --------------------- |
-| [Player](/vext/ref/server/class/player)\[\] | [GetPlayers](#getplayers)                   |                       |
-| [Player](/vext/ref/server/class/player)       | [GetPlayerByID](#getplayerbyid)             | int **id**            |
-| [Player](/vext/ref/server/class/player)       | [GetPlayerByOnlineID](#getplayerbyonlineid) | int **onlineId**      |
-| [Player](/vext/ref/server/class/player)       | [GetPlayerByGUID](#getplayerbyguid)         | string **guid**       |
-| [Player](/vext/ref/server/class/player)       | [GetPlayerByName](#getplayerbyname)         | string **name**       |
-| [Player](/vext/ref/server/class/player)\[\] | [GetPlayersByName](#getplayersbyname)       | string **match**      |
-| int                                         | [GetPlayerCount](#getplayercount)           |                       |
-| void                                        | [SetSpectatorEnabled](#setspectatorenabled) | bool **enabled**      |
-| bool                                        | [IsSpectatorEnabled](#isspectatorenabled)   |                       |
-| void                                        | [FadeOutAll](#fadeoutall)                   | float **fadeOutTime** |
-| void                                        | [FadeInAll](#fadeinall)                     | float **fadeInTime**  |
+### GetPlayers {#getplayers}
 
-### GetPlayers
+> **GetPlayers**(): [Player](/vext/ref/server/type/player)[]
 
-> [Player](/vext/ref/server/class/player)\[\] **GetPlayers**()
+#### Returns
 
-### GetPlayerByID
+| Type | Description |
+| ---- | ----------- |
+| **[Player](/vext/ref/server/type/player)**[] |  |
 
-> [Player](/vext/ref/server/class/player) **GetPlayerByID**(int **id**)
+### GetPlayerById {#getplayerbyid}
+
+> **GetPlayerById**(id: int): [Player](/vext/ref/server/type/player) \| nil
 
 #### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| id   | int  |             |
+| **id** | int |  |
 
-### GetPlayerByOnlineID
+#### Returns
 
-> [Player](/vext/ref/server/class/player) **GetPlayerByOnlineID**(int **onlineId**)
+| Type | Description |
+| ---- | ----------- |
+| **[Player](/vext/ref/server/type/player)** \| **nil** |  |
 
-#### Parameters
+### GetPlayerByOnlineId {#getplayerbyonlineid}
 
-| Name     | Type | Description |
-| -------- | ---- | ----------- |
-| onlineId | int  |             |
-
-### GetPlayerByGUID
-
-> [Player](/vext/ref/server/class/player) **GetPlayerByGUID**(string **guid**)
+> **GetPlayerByOnlineId**(onlineId: int): [Player](/vext/ref/server/type/player) \| nil
 
 #### Parameters
 
-| Name | Type   | Description |
-| ---- | ------ | ----------- |
-| guid | string |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **onlineId** | int |  |
 
-### GetPlayerByName
+#### Returns
 
-> [Player](/vext/ref/server/class/player) **GetPlayerByName**(string **name**)
+| Type | Description |
+| ---- | ----------- |
+| **[Player](/vext/ref/server/type/player)** \| **nil** |  |
 
-#### Parameters
+### GetPlayerByGuid {#getplayerbyguid}
 
-| Name | Type   | Description |
-| ---- | ------ | ----------- |
-| name | string |             |
-
-### GetPlayersByName
-
-> [Player](/vext/ref/server/class/player)\[\] **GetPlayersByName**(string **match**)
+> **GetPlayerByGuid**(guid: [Guid](/vext/ref/shared/type/guid)): [Player](/vext/ref/server/type/player) \| nil
 
 #### Parameters
 
-| Name  | Type   | Description |
-| ----- | ------ | ----------- |
-| match | string |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | [Guid](/vext/ref/shared/type/guid) |  |
 
-### GetPlayerCount
+#### Returns
 
-> int **GetPlayerCount**()
+| Type | Description |
+| ---- | ----------- |
+| **[Player](/vext/ref/server/type/player)** \| **nil** |  |
 
-### SetSpectatorEnabled
+### GetPlayerByName {#getplayerbyname}
 
-> void **SetSpectatorEnabled**(bool **enabled**)
+> **GetPlayerByName**(name: string): [Player](/vext/ref/server/type/player) \| nil
 
-Spectator mode is disabled by default. A mod can choose to enable it by doing something like
+#### Parameters
 
-``` lua
-Events:Subscribe("Extension:Loaded", function()
-    PlayerManager:SetSpectatorEnabled(true)
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **name** | string |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[Player](/vext/ref/server/type/player)** \| **nil** |  |
+
+### GetPlayersByName {#getplayersbyname}
+
+> **GetPlayersByName**(name: string): [Player](/vext/ref/server/type/player)[]
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **name** | string |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[Player](/vext/ref/server/type/player)**[] |  |
+
+### GetPlayerCount {#getplayercount}
+
+> **GetPlayerCount**(): int
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **int** |  |
+
+### GetPlayersByTeam {#getplayersbyteam}
+
+> **GetPlayersByTeam**(team: [TeamId](/vext/ref/fb/teamid)): [Player](/vext/ref/server/type/player)[]
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **team** | [TeamId](/vext/ref/fb/teamid) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[Player](/vext/ref/server/type/player)**[] |  |
+
+### GetPlayersBySquad {#getplayersbysquad}
+
+> **GetPlayersBySquad**(team: [TeamId](/vext/ref/fb/teamid), squad: [SquadId](/vext/ref/fb/squadid)): [Player](/vext/ref/server/type/player)[]
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **team** | [TeamId](/vext/ref/fb/teamid) |  |
+| **squad** | [SquadId](/vext/ref/fb/squadid) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[Player](/vext/ref/server/type/player)**[] |  |
+
+### GetSquadLeader {#getsquadleader}
+
+> **GetSquadLeader**(team: [TeamId](/vext/ref/fb/teamid), squad: [SquadId](/vext/ref/fb/squadid)): [Player](/vext/ref/server/type/player) \| nil
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **team** | [TeamId](/vext/ref/fb/teamid) |  |
+| **squad** | [SquadId](/vext/ref/fb/squadid) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[Player](/vext/ref/server/type/player)** \| **nil** |  |
+
+### CreatePlayer {#createplayer}
+
+> **CreatePlayer**(name: string, team: [TeamId](/vext/ref/fb/teamid), squad: [SquadId](/vext/ref/fb/squadid)): [Player](/vext/ref/server/type/player) \| nil
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **name** | string |  |
+| **team** | [TeamId](/vext/ref/fb/teamid) |  |
+| **squad** | [SquadId](/vext/ref/fb/squadid) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[Player](/vext/ref/server/type/player)** \| **nil** |  |
+
+### DeletePlayer {#deleteplayer}
+
+> **DeletePlayer**(player: [Player](/vext/ref/server/type/player))
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **player** | [Player](/vext/ref/server/type/player) |  |
+
+### SetSpectatorEnabled {#setspectatorenabled}
+
+> **SetSpectatorEnabled**(enabled: bool)
+
+Spectator mode is disabled by default. A mod can choose to enable it by using this function.
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **enabled** | bool |  |
+
+#### Example
+
+```lua
+Events:Subscribe('Extension:Loaded', function()
+  PlayerManager:SetSpectatorEnabled(true)
 end)
 ```
 
-#### Parameters
+### IsSpectatorEnabled {#isspectatorenabled}
 
-| Name    | Type | Description |
-| ------- | ---- | ----------- |
-| enabled | bool |             |
+> **IsSpectatorEnabled**(): bool
 
-### IsSpectatorEnabled
+#### Returns
 
-> bool **IsSpectatorEnabled**()
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
 
-### FadeOutAll
+### FadeInAll {#fadeinall}
 
-> void **FadeOutAll**(float **fadeOutTime**)
-
-#### Parameters
-
-| Name        | Type  | Description |
-| ----------- | ----- | ----------- |
-| fadeOutTime | float |             |
-
-### FadeInAll
-
-> void **FadeInAll**(float **fadeInTime**)
+> **FadeInAll**(fadeTime: float)
 
 #### Parameters
 
-| Name       | Type  | Description |
-| ---------- | ----- | ----------- |
-| fadeInTime | float |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **fadeTime** | float |  |
+
+### FadeOutAll {#fadeoutall}
+
+> **FadeOutAll**(fadeTime: float)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **fadeTime** | float |  |
+

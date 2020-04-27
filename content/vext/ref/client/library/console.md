@@ -1,83 +1,101 @@
 ---
 title: Console
 ---
-## Description
+
+## Summary
+
+### Methods
+
+| Method | Returns |
+| ------ | ------- |
+| **[Register](#register)**(name: string, description: string, callback: callable) | [ConsoleCommand](/vext/ref/client/type/consolecommand) |
+| **[Register](#register-1)**(name: string, description: string, context: any, callback: callable) | [ConsoleCommand](/vext/ref/client/type/consolecommand) |
+| **[Deregister](#deregister)**(name: string) | bool |
+| **[Deregister](#deregister-1)**(command: [ConsoleCommand](/vext/ref/client/type/consolecommand)) | bool |
+| **[DeregisterAll](#deregisterall)**() | void |
 
 ## Methods
 
-| Type                                                  | Name                         | Parameters                                                                     |
-| ----------------------------------------------------- | ---------------------------- | ------------------------------------------------------------------------------ |
-| [ConsoleCommand](/vext/ref/client/class/consolecommand) | [Register](#register)        | string **name**, string **description**, function **callback**                 |
-| [ConsoleCommand](/vext/ref/client/class/consolecommand) | [Register](#register)        | string **name**, string **description**, object **obj**, function **callback** |
-| bool                                                  | [Deregister](#deregister)    | [ConsoleCommand](/vext/ref/client/class/consolecommand) **command**              |
-| bool                                                  | [Deregister](#deregister)    | string **name**                                                                |
-| void                                                  | [DeregisterAll](#deregister) |                                                                                |
+### Register {#register}
 
-### Register
-
-> [ConsoleCommand](/vext/ref/client/class/consolecommand) **Register**(string **name**, string **description**, function **callback**)
-
-The `callback` function has a single table argument, containing all the arguments passed to the console command by the user when executing it and can optionally return a string, which will be printed to the console output.
-
-All commands will be automatically deregistered when the player leaves the server or when the mod in question gets unloaded.
+> **Register**(name: string, description: string, callback: callable): [ConsoleCommand](/vext/ref/client/type/consolecommand)
 
 #### Parameters
 
-| Name        | Type     | Description |
-| ----------- | -------- | ----------- |
-| name        | string   |             |
-| description | string   |             |
-| callback    | function |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **name** | string |  |
+| **description** | string |  |
+| **callback** | callable | A callback in the form `function(args: string{}): string \| nil`. |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[ConsoleCommand](/vext/ref/client/type/consolecommand)** |  |
 
 #### Example
 
-``` lua
-Console:Register("SomeCommand", "Incredible command description.", function(args)
-    if #args == 1 and args[1] == "hello" then
-        return "goodbye"
-    end
+```lua
+Console:Register('SomeCommand', 'Incredible command description.', function(args)
+  if #args == 1 and args[1] == 'hello' then
+    return 'goodbye'
+  end
 end)
 ```
 
-Then, the command will be executable via the in-game console as `modname.SomeCommand`, where `modname` is the name of the mod that has registered it.
+### Register {#register-1}
 
-### Register
-
-> [ConsoleCommand](/vext/ref/client/class/consolecommand) **Register**(string **name**, string **description**, object **obj**, function **callback**)
-
-The `callback` function has a single table argument, containing all the arguments passed to the console command by the user when executing it and can optionally return a string, which will be printed to the console output.
-
-All commands will be automatically deregistered when the player leaves the server or when the mod in question gets unloaded.
+> **Register**(name: string, description: string, context: any, callback: callable): [ConsoleCommand](/vext/ref/client/type/consolecommand)
 
 #### Parameters
 
-| Name        | Type     | Description |
-| ----------- | -------- | ----------- |
-| name        | string   |             |
-| description | string   |             |
-| obj         | object   |             |
-| callback    | function |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **name** | string |  |
+| **description** | string |  |
+| **context** | any |  |
+| **callback** | callable | A callback in the form `function(context: any, args: string{}): string \| nil`. |
 
-### Deregister
+#### Returns
 
-> bool **Deregister**([ConsoleCommand](/vext/ref/client/class/consolecommand) **command**)
+| Type | Description |
+| ---- | ----------- |
+| **[ConsoleCommand](/vext/ref/client/type/consolecommand)** |  |
 
-#### Parameters
+### Deregister {#deregister}
 
-| Name    | Type                                                  | Description |
-| ------- | ----------------------------------------------------- | ----------- |
-| command | [ConsoleCommand](/vext/ref/client/class/consolecommand) |             |
-
-### Deregister
-
-> bool **Deregister**(string **name**)
+> **Deregister**(name: string): bool
 
 #### Parameters
 
-| Name | Type   | Description |
-| ---- | ------ | ----------- |
-| name | string |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **name** | string |  |
 
-### DeregisterAll
+#### Returns
 
-> void **DeregisterAll**()
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
+
+### Deregister {#deregister-1}
+
+> **Deregister**(command: [ConsoleCommand](/vext/ref/client/type/consolecommand)): bool
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **command** | [ConsoleCommand](/vext/ref/client/type/consolecommand) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
+
+### DeregisterAll {#deregisterall}
+
+> **DeregisterAll**()
+

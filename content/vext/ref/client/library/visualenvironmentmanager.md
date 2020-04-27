@@ -1,116 +1,156 @@
 ---
 title: VisualEnvironmentManager
 ---
-## Description
+
+## Summary
+
+### Methods
+
+| Method | Returns |
+| ------ | ------- |
+| **[GetStates](#getstates)**() | [VisualEnvironmentState](/vext/ref/client/type/visualenvironmentstate)[] |
+| **[GetDirty](#getdirty)**() | bool |
+| **[SetDirty](#setdirty)**(dirty: bool) | void |
+| **[GetSunRotationX](#getsunrotationx)**() | float |
+| **[SetSunRotationX](#setsunrotationx)**(rotation: float) | void |
+| **[GetSunRotationY](#getsunrotationy)**() | float |
+| **[SetSunRotationY](#setsunrotationy)**(rotation: float) | void |
+| **[GetSunRotationOffsetX](#getsunrotationoffsetx)**() | float |
+| **[SetSunRotationOffsetX](#setsunrotationoffsetx)**(rotation: float) | void |
+| **[GetSunRotationOffsetY](#getsunrotationoffsety)**() | float |
+| **[SetSunRotationOffsetY](#setsunrotationoffsety)**(rotation: float) | void |
+| **[AddState](#addstate)**(state: [VisualEnvironmentState](/vext/ref/client/type/visualenvironmentstate)) | void |
+| **[RemoveState](#removestate)**(state: [VisualEnvironmentState](/vext/ref/client/type/visualenvironmentstate)) | void |
 
 ## Methods
 
-| Type                                                                        | Name                                            | Parameters                                                                      |
-| --------------------------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------- |
-| void                                                                        | [SetDirty](#setdirty)                           | bool **value**                                                                  |
-| bool                                                                        | [GetDirty](#getdirty)                           |                                                                                 |
-| void                                                                        | [SetSunRotationX](#setsunrotationx)             | float **value**                                                                 |
-| float                                                                       | [GetSunRotationX](#getsunrotationx)             |                                                                                 |
-| void                                                                        | [SetSunRotationY](#setsunrotationy)             | float **value**                                                                 |
-| float                                                                       | [GetSunRotationY](#getsunrotationy)             |                                                                                 |
-| void                                                                        | [SetSunRotationOffsetX](#setsunrotationoffsetx) | float **value**                                                                 |
-| float                                                                       | [GetSunRotationOffsetX](#getsunrotationoffsetx) |                                                                                 |
-| void                                                                        | [SetSunRotationOffsetY](#setsunrotationoffsety) | float **value**                                                                 |
-| float                                                                       | [GetSunRotationOffsetY](#getsunrotationoffsety) |                                                                                 |
-| [VisualEnvironmentState](/vext/ref/client/class/visualenvironmentstate)\[\] | [GetStates](#getstates)                         |                                                                                 |
-| void                                                                        | [AddState](#addstate)                           | [VisualEnvironmentState](/vext/ref/client/class/visualenvironmentstate) **state** |
-| void                                                                        | [RemoveState](#removestate)                     | [VisualEnvironmentState](/vext/ref/client/class/visualenvironmentstate) **state** |
+### GetStates {#getstates}
 
-### SetDirty
+> **GetStates**(): [VisualEnvironmentState](/vext/ref/client/type/visualenvironmentstate)[]
 
-> void **SetDirty**(bool **value**)
+#### Returns
 
-#### Parameters
+| Type | Description |
+| ---- | ----------- |
+| **[VisualEnvironmentState](/vext/ref/client/type/visualenvironmentstate)**[] |  |
 
-| Name  | Type | Description |
-| ----- | ---- | ----------- |
-| value | bool |             |
+### GetDirty {#getdirty}
 
-### GetDirty
+> **GetDirty**(): bool
 
-> bool **GetDirty**()
+#### Returns
 
-### SetSunRotationX
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
 
-> void **SetSunRotationX**(float **value**)
+### SetDirty {#setdirty}
+
+> **SetDirty**(dirty: bool)
 
 #### Parameters
 
-| Name  | Type  | Description |
-| ----- | ----- | ----------- |
-| value | float |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **dirty** | bool |  |
 
-### GetSunRotationX
+### GetSunRotationX {#getsunrotationx}
 
-> float **GetSunRotationX**()
+> **GetSunRotationX**(): float
 
-### SetSunRotationY
+#### Returns
 
-> void **SetSunRotationY**(float **value**)
+| Type | Description |
+| ---- | ----------- |
+| **float** |  |
 
-#### Parameters
+### SetSunRotationX {#setsunrotationx}
 
-| Name  | Type  | Description |
-| ----- | ----- | ----------- |
-| value | float |             |
-
-### GetSunRotationY
-
-> float **GetSunRotationY**()
-
-### SetSunRotationOffsetX
-
-> void **SetSunRotationOffsetX**(float **value**)
+> **SetSunRotationX**(rotation: float)
 
 #### Parameters
 
-| Name  | Type  | Description |
-| ----- | ----- | ----------- |
-| value | float |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **rotation** | float |  |
 
-### GetSunRotationOffsetX
+### GetSunRotationY {#getsunrotationy}
 
-> float **GetSunRotationOffsetX**()
+> **GetSunRotationY**(): float
 
-### SetSunRotationOffsetY
+#### Returns
 
-> void **SetSunRotationOffsetY**(float **value**)
+| Type | Description |
+| ---- | ----------- |
+| **float** |  |
 
-#### Parameters
+### SetSunRotationY {#setsunrotationy}
 
-| Name  | Type  | Description |
-| ----- | ----- | ----------- |
-| value | float |             |
-
-### GetSunRotationOffsetY
-
-> float **GetSunRotationOffsetY**()
-
-### GetStates
-
-> [VisualEnvironmentState](/vext/ref/client/class/visualenvironmentstate)\[\] **GetStates**()
-
-### AddState
-
-> void **AddState**([VisualEnvironmentState](/vext/ref/client/class/visualenvironmentstate) **state**)
+> **SetSunRotationY**(rotation: float)
 
 #### Parameters
 
-| Name  | Type                                                                  | Description |
-| ----- | --------------------------------------------------------------------- | ----------- |
-| state | [VisualEnvironmentState](/vext/ref/client/class/visualenvironmentstate) |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **rotation** | float |  |
 
-### RemoveState
+### GetSunRotationOffsetX {#getsunrotationoffsetx}
 
-> void **RemoveState**([VisualEnvironmentState](/vext/ref/client/class/visualenvironmentstate) **state**)
+> **GetSunRotationOffsetX**(): float
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **float** |  |
+
+### SetSunRotationOffsetX {#setsunrotationoffsetx}
+
+> **SetSunRotationOffsetX**(rotation: float)
 
 #### Parameters
 
-| Name  | Type                                                                  | Description |
-| ----- | --------------------------------------------------------------------- | ----------- |
-| state | [VisualEnvironmentState](/vext/ref/client/class/visualenvironmentstate) |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **rotation** | float |  |
+
+### GetSunRotationOffsetY {#getsunrotationoffsety}
+
+> **GetSunRotationOffsetY**(): float
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **float** |  |
+
+### SetSunRotationOffsetY {#setsunrotationoffsety}
+
+> **SetSunRotationOffsetY**(rotation: float)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **rotation** | float |  |
+
+### AddState {#addstate}
+
+> **AddState**(state: [VisualEnvironmentState](/vext/ref/client/type/visualenvironmentstate))
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **state** | [VisualEnvironmentState](/vext/ref/client/type/visualenvironmentstate) |  |
+
+### RemoveState {#removestate}
+
+> **RemoveState**(state: [VisualEnvironmentState](/vext/ref/client/type/visualenvironmentstate))
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **state** | [VisualEnvironmentState](/vext/ref/client/type/visualenvironmentstate) |  |
+

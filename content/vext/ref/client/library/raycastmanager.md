@@ -1,58 +1,89 @@
 ---
 title: RaycastManager
 ---
-## Description
+
+## Summary
+
+### Methods
+
+| Method | Returns |
+| ------ | ------- |
+| **[GetEntityInRaycast](#getentityinraycast)**(distance: float) | [Entity](/vext/ref/shared/type/entity) \| nil |
+| **[Raycast](#raycast)**(from: [Vec3](/vext/ref/shared/type/vec3), to: [Vec3](/vext/ref/shared/type/vec3), flags: [RayCastFlags](/vext/ref/shared/type/raycastflags)) | [RayCastHit](/vext/ref/shared/type/raycasthit) \| nil |
+| **[SpatialRaycast](#spatialraycast)**(from: [Vec3](/vext/ref/shared/type/vec3), to: [Vec3](/vext/ref/shared/type/vec3), flags: [SpatialQueryFlags](/vext/ref/shared/type/spatialqueryflags)) | [Entity](/vext/ref/shared/type/entity){} |
+| **[DetailedRaycast](#detailedraycast)**(from: [Vec3](/vext/ref/shared/type/vec3), to: [Vec3](/vext/ref/shared/type/vec3), maxHits: int, materialFlags: [MaterialFlags](/vext/ref/shared/type/materialflags), flags: [RayCastFlags](/vext/ref/shared/type/raycastflags)) | [RayCastHit](/vext/ref/shared/type/raycasthit){} |
 
 ## Methods
 
-| Type                                          | Name                                      | Parameters                                                                                          |
-| --------------------------------------------- | ----------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| [Entity](/vext/ref/shared/class/entity)         | [GetEntityInRaycast](#getentityinraycast) | float **distance**                                                                                  |
-| [RayCastHit](/vext/ref/shared/class/raycasthit) | [Raycast](#raycast)                       | [Vec3](/vext/ref/shared/class/vec3) **from**, [Vec3](/vext/ref/shared/class/vec3) **to**, int **flags** |
-| [Entity](/vext/ref/shared/class/entity)\[\]     | [SpatialRayCast](#spatialraycast)         | [Vec3](/vext/ref/shared/class/vec3) **from**, [Vec3](/vext/ref/shared/class/vec3) **to**, int **flags** |
+### GetEntityInRaycast {#getentityinraycast}
 
-### GetEntityInRaycast
-
-> [Entity](/vext/ref/shared/class/entity) **GetEntityInRaycast**(float **distance**)
+> **GetEntityInRaycast**(distance: float): [Entity](/vext/ref/shared/type/entity) \| nil
 
 #### Parameters
 
-| Name     | Type  | Description |
-| -------- | ----- | ----------- |
-| distance | float |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **distance** | float |  |
 
-### Raycast
+#### Returns
 
-> [RayCastHit](/vext/ref/shared/class/raycasthit) **Raycast**([Vec3](/vext/ref/shared/class/vec3) **from**, [Vec3](/vext/ref/shared/class/vec3) **to**, int **flags**)
+| Type | Description |
+| ---- | ----------- |
+| **[Entity](/vext/ref/shared/type/entity)** \| **nil** |  |
 
-#### Parameters
+### Raycast {#raycast}
 
-| Name  | Type                              | Description |
-| ----- | --------------------------------- | ----------- |
-| from  | [Vec3](/vext/ref/shared/class/vec3) |             |
-| to    | [Vec3](/vext/ref/shared/class/vec3) |             |
-| flags | int                               |             |
-
-#### Flags
-
-| Name               | Description |
-| ------------------ | ----------- |
-| RayCastFlags.CheckDetailMesh    |             |
-| RayCastFlags.DontCheckWater     |             |
-| RayCastFlags.DontCheckTerrain   |             |
-| RayCastFlags.DontCheckRagdoll   |             |
-| RayCastFlags.DontCheckCharacter |             |
-| RayCastFlags.DontCheckGroup     |             |
-| RayCastFlags.DontCheckPhantoms  |             |
-
-### SpatialRaycast
-
-> [Entity](/vext/ref/shared/class/entity)\[\] **SpatialRaycast**([Vec3](/vext/ref/shared/class/vec3) **from**, [Vec3](/vext/ref/shared/class/vec3) **to**, int **flags**)
+> **Raycast**(from: [Vec3](/vext/ref/shared/type/vec3), to: [Vec3](/vext/ref/shared/type/vec3), flags: [RayCastFlags](/vext/ref/shared/type/raycastflags)): [RayCastHit](/vext/ref/shared/type/raycasthit) \| nil
 
 #### Parameters
 
-| Name  | Type                              | Description |
-| ----- | --------------------------------- | ----------- |
-| from  | [Vec3](/vext/ref/shared/class/vec3) |             |
-| to    | [Vec3](/vext/ref/shared/class/vec3) |             |
-| flags | int                               |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **from** | [Vec3](/vext/ref/shared/type/vec3) |  |
+| **to** | [Vec3](/vext/ref/shared/type/vec3) |  |
+| **flags** | [RayCastFlags](/vext/ref/shared/type/raycastflags) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[RayCastHit](/vext/ref/shared/type/raycasthit)** \| **nil** |  |
+
+### SpatialRaycast {#spatialraycast}
+
+> **SpatialRaycast**(from: [Vec3](/vext/ref/shared/type/vec3), to: [Vec3](/vext/ref/shared/type/vec3), flags: [SpatialQueryFlags](/vext/ref/shared/type/spatialqueryflags)): [Entity](/vext/ref/shared/type/entity){}
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **from** | [Vec3](/vext/ref/shared/type/vec3) |  |
+| **to** | [Vec3](/vext/ref/shared/type/vec3) |  |
+| **flags** | [SpatialQueryFlags](/vext/ref/shared/type/spatialqueryflags) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[Entity](/vext/ref/shared/type/entity)**{} |  |
+
+### DetailedRaycast {#detailedraycast}
+
+> **DetailedRaycast**(from: [Vec3](/vext/ref/shared/type/vec3), to: [Vec3](/vext/ref/shared/type/vec3), maxHits: int, materialFlags: [MaterialFlags](/vext/ref/shared/type/materialflags), flags: [RayCastFlags](/vext/ref/shared/type/raycastflags)): [RayCastHit](/vext/ref/shared/type/raycasthit){}
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **from** | [Vec3](/vext/ref/shared/type/vec3) |  |
+| **to** | [Vec3](/vext/ref/shared/type/vec3) |  |
+| **maxHits** | int |  |
+| **materialFlags** | [MaterialFlags](/vext/ref/shared/type/materialflags) |  |
+| **flags** | [RayCastFlags](/vext/ref/shared/type/raycastflags) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[RayCastHit](/vext/ref/shared/type/raycasthit)**{} |  |
+

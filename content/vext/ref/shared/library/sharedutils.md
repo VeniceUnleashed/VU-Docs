@@ -1,51 +1,118 @@
 ---
 title: SharedUtils
 ---
-## Description
+
+## Summary
+
+### Methods
+
+| Method | Returns |
+| ------ | ------- |
+| **[Print](#print)**(data: any) | void |
+| **[GetTime](#gettime)**() | int |
+| **[GetTimeMS](#gettimems)**() | int |
+| **[IsClientModule](#isclientmodule)**() | bool |
+| **[IsServerModule](#isservermodule)**() | bool |
+| **[SerializeTable](#serializetable)**(table: table) | string |
+| **[GetContentPackages](#getcontentpackages)**() | string{} |
+| **[GetLevelName](#getlevelname)**() | string |
+| **[GetTickrate](#gettickrate)**() | float |
 
 ## Methods
 
-| Type   | Name                              | Parameters         |
-| ------ | --------------------------------- | ------------------ |
-| void   | [Print](#print)                   | object **message** |
-| int    | [GetTime](#gettime)               |                    |
-| int    | [GetTimeMS](#gettimems)           |                    |
-| bool   | [IsClientModule](#isclientmodule) |                    |
-| bool   | [IsServerModule](#isservermodule) |                    |
-| string | [SerializeTable](#serializetable) | table **data**     |
+### Print {#print}
 
-### Print
-
-> void **Print**(object **message**)
+> **Print**(data: any)
 
 #### Parameters
 
-| Name    | Type   | Description |
-| ------- | ------ | ----------- |
-| message | object |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **data** | any |  |
 
-### GetTime
+### GetTime {#gettime}
 
-> int **GetTime**()
+> **GetTime**(): int
 
-### GetTimeMS
+#### Returns
 
-> int **GetTimeMS**()
+| Type | Description |
+| ---- | ----------- |
+| **int** |  |
 
-### IsClientModule
+### GetTimeMS {#gettimems}
 
-> bool **IsClientModule**()
+> **GetTimeMS**(): int
 
-### IsServerModule
+#### Returns
 
-> bool **IsServerModule**()
+| Type | Description |
+| ---- | ----------- |
+| **int** |  |
 
-### SerializeTable
+### IsClientModule {#isclientmodule}
 
-> string **SerializeTable**(table **data**)
+> **IsClientModule**(): bool
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
+
+### IsServerModule {#isservermodule}
+
+> **IsServerModule**(): bool
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
+
+### SerializeTable {#serializetable}
+
+> **SerializeTable**(table: table): string
 
 #### Parameters
 
-| Name | Type  | Description |
-| ---- | ----- | ----------- |
-| data | table |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **table** | table |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **string** |  |
+
+### GetContentPackages {#getcontentpackages}
+
+> **GetContentPackages**(): string{}
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **string**{} |  |
+
+### GetLevelName {#getlevelname}
+
+> **GetLevelName**(): string
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **string** |  |
+
+### GetTickrate {#gettickrate}
+
+> **GetTickrate**(): float
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **float** |  |
+

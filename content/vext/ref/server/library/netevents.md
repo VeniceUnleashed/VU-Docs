@@ -1,100 +1,116 @@
 ---
 title: NetEvents
 ---
-## Description
+
+## Summary
+
+### Methods
+
+| Method | Returns |
+| ------ | ------- |
+| **[Subscribe](#subscribe)**(eventName: string, callback: callable) | [NetEvent](/vext/ref/server/type/netevent) |
+| **[Subscribe](#subscribe-1)**(eventName: string, context: any, callback: callable) | [NetEvent](/vext/ref/server/type/netevent) |
+| **[SendTo](#sendto)**(eventName: string, player: [Player](/vext/ref/server/type/player), ...args: any) | void |
+| **[SendToLocal](#sendtolocal)**(eventName: string, player: [Player](/vext/ref/server/type/player), ...args: any) | void |
+| **[Broadcast](#broadcast)**(eventName: string, ...args: any) | void |
+| **[BroadcastLocal](#broadcastlocal)**(eventName: string, ...args: any) | void |
+| **[Unsubscribe](#unsubscribe)**() | void |
+| **[Unsubscribe](#unsubscribe-1)**(eventName: string) | void |
 
 ## Methods
 
-| Type                                      | Name                              | Parameters                                                                    |
-| ----------------------------------------- | --------------------------------- | ----------------------------------------------------------------------------- |
-| [NetEvent](/vext/ref/server/class/netevent) | [Subscribe](#subscribe)           | string **message**, function **callback**                                     |
-| [NetEvent](/vext/ref/server/class/netevent) | [Subscribe](#subscribe)           | string **message**, object **obj**, function **callback**                     |
-| void                                      | [SendTo](#sendto)                 | string **message**, [Player](/vext/ref/server/class/player) **player**, ...args |
-| void                                      | [SendToLocal](#sendtolocal)       | string **message**, [Player](/vext/ref/server/class/player) **player**, ...args |
-| void                                      | [Broadcast](#broadcast)           | string **message**, ...args                                                   |
-| void                                      | [BroadcastLocal](#broadcastlocal) | string **message**, ...args                                                   |
-| void                                      | [Unsubscribe](#unsubscribe)       |                                                                               |
-| void                                      | [Unsubscribe](#unsubscribe)       | string **match**                                                              |
+### Subscribe {#subscribe}
 
-### Subscribe
-
-> [NetEvent](/vext/ref/server/class/netevent) **Subscribe**(string **message**, function **callback**)
+> **Subscribe**(eventName: string, callback: callable): [NetEvent](/vext/ref/server/type/netevent)
 
 #### Parameters
 
-| Name     | Type     | Description |
-| -------- | -------- | ----------- |
-| message  | string   |             |
-| callback | function |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **eventName** | string |  |
+| **callback** | callable |  |
 
-### Subscribe
+#### Returns
 
-> [NetEvent](/vext/ref/server/class/netevent) **Subscribe**(string **message**, object **obj**, function **callback**)
+| Type | Description |
+| ---- | ----------- |
+| **[NetEvent](/vext/ref/server/type/netevent)** |  |
 
-#### Parameters
+### Subscribe {#subscribe-1}
 
-| Name     | Type     | Description |
-| -------- | -------- | ----------- |
-| message  | string   |             |
-| obj      | object   |             |
-| callback | function |             |
-
-### SendTo
-
-> void **SendTo**(string **message**, [Player](/vext/ref/server/class/player) **player**, ...args)
+> **Subscribe**(eventName: string, context: any, callback: callable): [NetEvent](/vext/ref/server/type/netevent)
 
 #### Parameters
 
-| Name    | Type                                  | Description |
-| ------- | ------------------------------------- | ----------- |
-| message | string                                |             |
-| player  | [Player](/vext/ref/server/class/player) |             |
-| args    |                                       |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **eventName** | string |  |
+| **context** | any |  |
+| **callback** | callable |  |
 
-### SendToLocal
+#### Returns
 
-> void **SendToLocal**(string **message**, [Player](/vext/ref/server/class/player) **player**, ...args)
+| Type | Description |
+| ---- | ----------- |
+| **[NetEvent](/vext/ref/server/type/netevent)** |  |
 
-#### Parameters
+### SendTo {#sendto}
 
-| Name    | Type                                  | Description |
-| ------- | ------------------------------------- | ----------- |
-| message | string                                |             |
-| player  | [Player](/vext/ref/server/class/player) |             |
-| args    |                                       |             |
-
-### Broadcast
-
-> void **Broadcast**(string **message**, ...args)
+> **SendTo**(eventName: string, player: [Player](/vext/ref/server/type/player), ...args: any)
 
 #### Parameters
 
-| Name    | Type   | Description |
-| ------- | ------ | ----------- |
-| message | string |             |
-| args    |        |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **eventName** | string |  |
+| **player** | [Player](/vext/ref/server/type/player) |  |
+| ...**args** | any |  |
 
-### BroadcastLocal
+### SendToLocal {#sendtolocal}
 
-> void **BroadcastLocal**(string **message**, ...args)
-
-#### Parameters
-
-| Name    | Type   | Description |
-| ------- | ------ | ----------- |
-| message | string |             |
-| args    |        |             |
-
-### Unsubscribe
-
-> void **Unsubscribe**()
-
-### Unsubscribe
-
-> void **Unsubscribe**(string **match**)
+> **SendToLocal**(eventName: string, player: [Player](/vext/ref/server/type/player), ...args: any)
 
 #### Parameters
 
-| Name  | Type   | Description |
-| ----- | ------ | ----------- |
-| match | string |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **eventName** | string |  |
+| **player** | [Player](/vext/ref/server/type/player) |  |
+| ...**args** | any |  |
+
+### Broadcast {#broadcast}
+
+> **Broadcast**(eventName: string, ...args: any)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **eventName** | string |  |
+| ...**args** | any |  |
+
+### BroadcastLocal {#broadcastlocal}
+
+> **BroadcastLocal**(eventName: string, ...args: any)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **eventName** | string |  |
+| ...**args** | any |  |
+
+### Unsubscribe {#unsubscribe}
+
+> **Unsubscribe**()
+
+### Unsubscribe {#unsubscribe-1}
+
+> **Unsubscribe**(eventName: string)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **eventName** | string |  |
+

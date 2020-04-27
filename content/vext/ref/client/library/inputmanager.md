@@ -1,163 +1,256 @@
 ---
 title: InputManager
 ---
-## Description
+
+## Summary
+
+### Methods
+
+| Method | Returns |
+| ------ | ------- |
+| **[GetLevel](#getlevel)**(concept: [InputConceptIdentifiers](/vext/ref/fb/inputconceptidentifiers)) | float |
+| **[IsDown](#isdown)**(concept: [InputConceptIdentifiers](/vext/ref/fb/inputconceptidentifiers)) | bool |
+| **[WentDown](#wentdown)**(concept: [InputConceptIdentifiers](/vext/ref/fb/inputconceptidentifiers)) | bool |
+| **[WentUp](#wentup)**(concept: [InputConceptIdentifiers](/vext/ref/fb/inputconceptidentifiers)) | bool |
+| **[IsKeyDown](#iskeydown)**(key: [InputDeviceKeys](/vext/ref/fb/inputdevicekeys)) | bool |
+| **[WentKeyDown](#wentkeydown)**(key: [InputDeviceKeys](/vext/ref/fb/inputdevicekeys)) | bool |
+| **[WentKeyUp](#wentkeyup)**(key: [InputDeviceKeys](/vext/ref/fb/inputdevicekeys)) | bool |
+| **[IsMouseButtonDown](#ismousebuttondown)**(button: [InputDeviceMouseButtons](/vext/ref/fb/inputdevicemousebuttons)) | bool |
+| **[WentMouseButtonDown](#wentmousebuttondown)**(button: [InputDeviceMouseButtons](/vext/ref/fb/inputdevicemousebuttons)) | bool |
+| **[WentMouseButtonUp](#wentmousebuttonup)**(button: [InputDeviceMouseButtons](/vext/ref/fb/inputdevicemousebuttons)) | bool |
+| **[GetMouseLevel](#getmouselevel)**(axes: [InputDeviceAxes](/vext/ref/fb/inputdeviceaxes)) | float |
+| **[GetCursorPosition](#getcursorposition)**() | [Vec2](/vext/ref/shared/type/vec2) |
+| **[SetCursorPosition](#setcursorposition)**(x: int, y: int) | void |
+| **[IsMouseActive](#ismouseactive)**() | bool |
+| **[GetMouseSensitivity](#getmousesensitivity)**() | float |
+| **[SetMouseSensitivity](#setmousesensitivity)**(sensitivity: float) | void |
 
 ## Methods
 
-| Type  | Name                                        | Parameters                                                                            |
-| ----- | ------------------------------------------- | ------------------------------------------------------------------------------------- |
-| float | [GetLevel](#getlevel)                       | [InputConceptIdentifiers](/vext/ref/fb/inputconceptidentifiers) **identifier** |
-| bool  | [IsDown](#isdown)                           | [InputConceptIdentifiers](/vext/ref/fb/inputconceptidentifiers) **identifier** |
-| bool  | [WentDown](#wentdown)                       | [InputConceptIdentifiers](/vext/ref/fb/inputconceptidentifiers) **identifier** |
-| bool  | [WentUp](#wentup)                           | [InputConceptIdentifiers](/vext/ref/fb/inputconceptidentifiers) **identifier** |
-| bool  | [IsKeyDown](#iskeydown)                     | [InputDeviceKeys](/vext/ref/fb/inputdevicekeys) **key**                        |
-| bool  | [WentKeyDown](#wentkeydown)                 | [InputDeviceKeys](/vext/ref/fb/inputdevicekeys) **key**                        |
-| bool  | [WentKeyUp](#wentkeyup)                     | [InputDeviceKeys](/vext/ref/fb/inputdevicekeys) **key**                        |
-| bool  | [IsMouseButtonDown](#ismousebuttondown)     | [InputDeviceMouseButtons](/vext/ref/fb/inputdevicemousebuttons) **button**     |
-| bool  | [WentMouseButtonDown](#wentmousebuttondown) | [InputDeviceMouseButtons](/vext/ref/fb/inputdevicemousebuttons) **button**     |
-| bool  | [WentMouseButtonUp](#wentmousebuttonup)     | [InputDeviceMouseButtons](/vext/ref/fb/inputdevicemousebuttons) **button**     |
-| float | [GetMouseLevel](#getmouselevel)             | [InputDeviceAxes](/vext/ref/fb/inputdeviceaxes) **axes**                       |
-| void  | [SetCursorPosition](#setcursorposition)     | int **x**, int **y**                                                                  |
-| bool  | [IsMouseActive](#ismouseactive)             |                                                                                       |
-| float | [GetMouseSensitivity](#getmousesensitivity) |                                                                                       |
-| void  | [SetMouseSensitivity](#setmousesensitivity) | float **sensitivity**                                                                 |
+### GetLevel {#getlevel}
 
-### GetLevel
-
-> float **GetLevel**([InputConceptIdentifiers](/vext/ref/fb/inputconceptidentifiers) **identifier**)
-
-#### Parameters
-
-| Name       | Type                                                                   | Description |
-| ---------- | ---------------------------------------------------------------------- | ----------- |
-| identifier | [InputConceptIdentifiers](/vext/ref/fb/inputconceptidentifiers) |             |
-
-### IsDown
-
-> bool **IsDown**([InputConceptIdentifiers](/vext/ref/fb/inputconceptidentifiers) **identifier**)
-
-#### Parameters
-
-| Name       | Type                                                                   | Description |
-| ---------- | ---------------------------------------------------------------------- | ----------- |
-| identifier | [InputConceptIdentifiers](/vext/ref/fb/inputconceptidentifiers) |             |
-
-### WentDown
-
-> bool **WentDown**([InputConceptIdentifiers](/vext/ref/fb/inputconceptidentifiers) **identifier**)
-
-#### Parameters
-
-| Name       | Type                                                                   | Description |
-| ---------- | ---------------------------------------------------------------------- | ----------- |
-| identifier | [InputConceptIdentifiers](/vext/ref/fb/inputconceptidentifiers) |             |
-
-### WentUp
-
-> bool **WentUp**([InputConceptIdentifiers](/vext/ref/fb/inputconceptidentifiers) **identifier**)
-
-#### Parameters
-
-| Name       | Type                                                                   | Description |
-| ---------- | ---------------------------------------------------------------------- | ----------- |
-| identifier | [InputConceptIdentifiers](/vext/ref/fb/inputconceptidentifiers) |             |
-
-### IsKeyDown
-
-> bool **IsKeyDown**([InputDeviceKeys](/vext/ref/fb/inputdevicekeys) **key**)
-
-#### Parameters
-
-| Name | Type                                                   | Description |
-| ---- | ------------------------------------------------------ | ----------- |
-| key  | [InputDeviceKeys](/vext/ref/fb/inputdevicekeys) |             |
-
-### WentKeyDown
-
-> bool **WentKeyDown**([InputDeviceKeys](/vext/ref/fb/inputdevicekeys) **key**)
-
-#### Parameters
-
-| Name | Type                                                   | Description |
-| ---- | ------------------------------------------------------ | ----------- |
-| key  | [InputDeviceKeys](/vext/ref/fb/inputdevicekeys) |             |
-
-### WentKeyUp
-
-> bool **WentKeyUp**([InputDeviceKeys](/vext/ref/fb/inputdevicekeys) **key**)
-
-#### Parameters
-
-| Name | Type                                                   | Description |
-| ---- | ------------------------------------------------------ | ----------- |
-| key  | [InputDeviceKeys](/vext/ref/fb/inputdevicekeys) |             |
-
-### IsMouseButtonDown
-
-> bool **IsMouseButtonDown**([InputDeviceMouseButtons](/vext/ref/fb/inputdevicemousebuttons) **button**)
-
-#### Parameters
-
-| Name   | Type                                                                   | Description |
-| ------ | ---------------------------------------------------------------------- | ----------- |
-| button | [InputDeviceMouseButtons](/vext/ref/fb/inputdevicemousebuttons) |             |
-
-### WentMouseButtonDown
-
-> bool **WentMouseButtonDown**([InputDeviceMouseButtons](/vext/ref/fb/inputdevicemousebuttons) **button**)
-
-#### Parameters
-
-| Name   | Type                                                                   | Description |
-| ------ | ---------------------------------------------------------------------- | ----------- |
-| button | [InputDeviceMouseButtons](/vext/ref/fb/inputdevicemousebuttons) |             |
-
-### WentMouseButtonUp
-
-> bool **WentMouseButtonUp**([InputDeviceMouseButtons](/vext/ref/fb/inputdevicemousebuttons) **button**)
-
-#### Parameters
-
-| Name   | Type                                                                   | Description |
-| ------ | ---------------------------------------------------------------------- | ----------- |
-| button | [InputDeviceMouseButtons](/vext/ref/fb/inputdevicemousebuttons) |             |
-
-### GetMouseLevel
-
-> float **GetMouseLevel**([InputDeviceAxes](/vext/ref/fb/inputdeviceaxes) **axes**)
-
-#### Parameters
-
-| Name | Type                                                   | Description |
-| ---- | ------------------------------------------------------ | ----------- |
-| axes | [InputDeviceAxes](/vext/ref/fb/inputdeviceaxes) |             |
-
-### SetCursorPosition
-
-> void **SetCursorPosition**(int **x**, int **y**)
+> **GetLevel**(concept: [InputConceptIdentifiers](/vext/ref/fb/inputconceptidentifiers)): float
 
 #### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| x    | int  |             |
-| y    | int  |             |
+| **concept** | [InputConceptIdentifiers](/vext/ref/fb/inputconceptidentifiers) |  |
 
-### IsMouseActive
+#### Returns
 
-> bool **IsMouseActive**()
+| Type | Description |
+| ---- | ----------- |
+| **float** |  |
 
-### GetMouseSensitivity
+### IsDown {#isdown}
 
-> float **GetMouseSensitivity**()
-
-### SetMouseSensitivity
-
-> void **SetMouseSensitivity**(float **sensitivity**)
+> **IsDown**(concept: [InputConceptIdentifiers](/vext/ref/fb/inputconceptidentifiers)): bool
 
 #### Parameters
 
-| Name        | Type  | Description |
-| ----------- | ----- | ----------- |
-| sensitivity | float |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **concept** | [InputConceptIdentifiers](/vext/ref/fb/inputconceptidentifiers) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
+
+### WentDown {#wentdown}
+
+> **WentDown**(concept: [InputConceptIdentifiers](/vext/ref/fb/inputconceptidentifiers)): bool
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **concept** | [InputConceptIdentifiers](/vext/ref/fb/inputconceptidentifiers) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
+
+### WentUp {#wentup}
+
+> **WentUp**(concept: [InputConceptIdentifiers](/vext/ref/fb/inputconceptidentifiers)): bool
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **concept** | [InputConceptIdentifiers](/vext/ref/fb/inputconceptidentifiers) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
+
+### IsKeyDown {#iskeydown}
+
+> **IsKeyDown**(key: [InputDeviceKeys](/vext/ref/fb/inputdevicekeys)): bool
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **key** | [InputDeviceKeys](/vext/ref/fb/inputdevicekeys) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
+
+### WentKeyDown {#wentkeydown}
+
+> **WentKeyDown**(key: [InputDeviceKeys](/vext/ref/fb/inputdevicekeys)): bool
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **key** | [InputDeviceKeys](/vext/ref/fb/inputdevicekeys) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
+
+### WentKeyUp {#wentkeyup}
+
+> **WentKeyUp**(key: [InputDeviceKeys](/vext/ref/fb/inputdevicekeys)): bool
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **key** | [InputDeviceKeys](/vext/ref/fb/inputdevicekeys) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
+
+### IsMouseButtonDown {#ismousebuttondown}
+
+> **IsMouseButtonDown**(button: [InputDeviceMouseButtons](/vext/ref/fb/inputdevicemousebuttons)): bool
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **button** | [InputDeviceMouseButtons](/vext/ref/fb/inputdevicemousebuttons) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
+
+### WentMouseButtonDown {#wentmousebuttondown}
+
+> **WentMouseButtonDown**(button: [InputDeviceMouseButtons](/vext/ref/fb/inputdevicemousebuttons)): bool
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **button** | [InputDeviceMouseButtons](/vext/ref/fb/inputdevicemousebuttons) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
+
+### WentMouseButtonUp {#wentmousebuttonup}
+
+> **WentMouseButtonUp**(button: [InputDeviceMouseButtons](/vext/ref/fb/inputdevicemousebuttons)): bool
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **button** | [InputDeviceMouseButtons](/vext/ref/fb/inputdevicemousebuttons) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
+
+### GetMouseLevel {#getmouselevel}
+
+> **GetMouseLevel**(axes: [InputDeviceAxes](/vext/ref/fb/inputdeviceaxes)): float
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **axes** | [InputDeviceAxes](/vext/ref/fb/inputdeviceaxes) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **float** |  |
+
+### GetCursorPosition {#getcursorposition}
+
+> **GetCursorPosition**(): [Vec2](/vext/ref/shared/type/vec2)
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[Vec2](/vext/ref/shared/type/vec2)** |  |
+
+### SetCursorPosition {#setcursorposition}
+
+> **SetCursorPosition**(x: int, y: int)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **x** | int |  |
+| **y** | int |  |
+
+### IsMouseActive {#ismouseactive}
+
+> **IsMouseActive**(): bool
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
+
+### GetMouseSensitivity {#getmousesensitivity}
+
+> **GetMouseSensitivity**(): float
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **float** |  |
+
+### SetMouseSensitivity {#setmousesensitivity}
+
+> **SetMouseSensitivity**(sensitivity: float)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **sensitivity** | float |  |
+

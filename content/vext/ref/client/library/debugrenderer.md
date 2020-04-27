@@ -1,66 +1,111 @@
 ---
 title: DebugRenderer
 ---
-## Description
+
+## Summary
+
+### Methods
+
+| Method | Returns |
+| ------ | ------- |
+| **[DrawLine](#drawline)**(from: [Vec3](/vext/ref/shared/type/vec3), to: [Vec3](/vext/ref/shared/type/vec3), colorFrom: [Vec4](/vext/ref/shared/type/vec4), colorTo: [Vec4](/vext/ref/shared/type/vec4)) | void |
+| **[DrawTriangle](#drawtriangle)**(pos1: [Vec3](/vext/ref/shared/type/vec3), pos2: [Vec3](/vext/ref/shared/type/vec3), pos3: [Vec3](/vext/ref/shared/type/vec3), color1: [Vec4](/vext/ref/shared/type/vec4), color2: [Vec4](/vext/ref/shared/type/vec4), color3: [Vec4](/vext/ref/shared/type/vec4)) | void |
+| **[DrawSphere](#drawsphere)**(pos: [Vec3](/vext/ref/shared/type/vec3), radius: float, color: [Vec4](/vext/ref/shared/type/vec4), renderLines: bool, smallSizeSegmentDecrease: bool) | void |
+| **[DrawLine2D](#drawline2d)**(from: [Vec2](/vext/ref/shared/type/vec2), to: [Vec2](/vext/ref/shared/type/vec2), color: [Vec4](/vext/ref/shared/type/vec4)) | void |
+| **[DrawText2D](#drawtext2d)**(x: int, y: int, text: string, color: [Vec4](/vext/ref/shared/type/vec4), scale: float) | void |
+| **[DrawVertices](#drawvertices)**(type: [DebugGeometryType](/vext/ref/shared/type/debuggeometrytype), vertices: [DebugVertex](/vext/ref/client/type/debugvertex){}) | void |
+| **[DrawOBB](#drawobb)**(aabb: [AxisAlignedBox](/vext/ref/shared/type/axisalignedbox), transform: [LinearTransform](/vext/ref/shared/type/lineartransform), color: [Vec4](/vext/ref/shared/type/vec4)) | void |
 
 ## Methods
 
-| Type | Name                      | Parameters                                                                                                                                                                           |
-| ---- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| void | [DrawSphere](#drawsphere) | [Vec3](/vext/ref/shared/class/vec3) **pos**, float **radius**, [Vec4](/vext/ref/shared/class/vec4) **color**, bool **renderLines**, bool **smallSizeSegmentDecrease**                    |
-| void | [DrawLine](#drawline)     | [Vec3](/vext/ref/shared/class/vec3) **from**, [Vec3](/vext/ref/shared/class/vec3) **to**, [Vec4](/vext/ref/shared/class/vec4) **colorFrom**, [Vec4](/vext/ref/shared/class/vec4) **colorTo** |
-| void | [DrawLine2D](#drawline2d) | [Vec2](/vext/ref/shared/class/vec2) **from**, [Vec2](/vext/ref/shared/class/vec2) **to**, [Vec4](/vext/ref/shared/class/vec4) **color**                                                    |
-| void | [DrawText2D](#drawtext2d) | int **x**, int **y**, string **text**, [Vec4](/vext/ref/shared/class/vec4) **color**, float **scale**                                                                                  |
+### DrawLine {#drawline}
 
-### DrawSphere
-
-> void **DrawSphere**([Vec3](/vext/ref/shared/class/vec3) **pos**, float **radius**, [Vec4](/vext/ref/shared/class/vec4) **color**, bool **renderLines**, bool **smallSizeSegmentDecrease**)
+> **DrawLine**(from: [Vec3](/vext/ref/shared/type/vec3), to: [Vec3](/vext/ref/shared/type/vec3), colorFrom: [Vec4](/vext/ref/shared/type/vec4), colorTo: [Vec4](/vext/ref/shared/type/vec4))
 
 #### Parameters
 
-| Name                     | Type                              | Description |
-| ------------------------ | --------------------------------- | ----------- |
-| pos                      | [Vec3](/vext/ref/shared/class/vec3) |             |
-| radius                   | float                             |             |
-| color                    | [Vec4](/vext/ref/shared/class/vec4) |             |
-| renderLines              | bool                              |             |
-| smallSizeSegmentDecrease | bool                              |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **from** | [Vec3](/vext/ref/shared/type/vec3) |  |
+| **to** | [Vec3](/vext/ref/shared/type/vec3) |  |
+| **colorFrom** | [Vec4](/vext/ref/shared/type/vec4) |  |
+| **colorTo** | [Vec4](/vext/ref/shared/type/vec4) |  |
 
-### DrawLine
+### DrawTriangle {#drawtriangle}
 
-> void **DrawLine**([Vec3](/vext/ref/shared/class/vec3) **from**, [Vec3](/vext/ref/shared/class/vec3) **to**, [Vec4](/vext/ref/shared/class/vec4) **colorFrom**, [Vec4](/vext/ref/shared/class/vec4) **colorTo**)
-
-#### Parameters
-
-| Name      | Type                              | Description |
-| --------- | --------------------------------- | ----------- |
-| from      | [Vec3](/vext/ref/shared/class/vec3) |             |
-| to        | [Vec3](/vext/ref/shared/class/vec3) |             |
-| colorFrom | [Vec4](/vext/ref/shared/class/vec4) |             |
-| colorTo   | [Vec4](/vext/ref/shared/class/vec4) |             |
-
-### DrawLine2D
-
-> void **DrawLine2D**([Vec2](/vext/ref/shared/class/vec2) **from**, [Vec2](/vext/ref/shared/class/vec2) **to**, [Vec4](/vext/ref/shared/class/vec4) **color**)
+> **DrawTriangle**(pos1: [Vec3](/vext/ref/shared/type/vec3), pos2: [Vec3](/vext/ref/shared/type/vec3), pos3: [Vec3](/vext/ref/shared/type/vec3), color1: [Vec4](/vext/ref/shared/type/vec4), color2: [Vec4](/vext/ref/shared/type/vec4), color3: [Vec4](/vext/ref/shared/type/vec4))
 
 #### Parameters
 
-| Name  | Type                              | Description |
-| ----- | --------------------------------- | ----------- |
-| from  | [Vec2](/vext/ref/shared/class/vec2) |             |
-| to    | [Vec2](/vext/ref/shared/class/vec2) |             |
-| color | [Vec4](/vext/ref/shared/class/vec4) |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **pos1** | [Vec3](/vext/ref/shared/type/vec3) |  |
+| **pos2** | [Vec3](/vext/ref/shared/type/vec3) |  |
+| **pos3** | [Vec3](/vext/ref/shared/type/vec3) |  |
+| **color1** | [Vec4](/vext/ref/shared/type/vec4) |  |
+| **color2** | [Vec4](/vext/ref/shared/type/vec4) |  |
+| **color3** | [Vec4](/vext/ref/shared/type/vec4) |  |
 
-### DrawText2D
+### DrawSphere {#drawsphere}
 
-> void **DrawText2D**(int **x**, int **y**, string **text**, [Vec4](/vext/ref/shared/class/vec4) **color**, float **scale**)
+> **DrawSphere**(pos: [Vec3](/vext/ref/shared/type/vec3), radius: float, color: [Vec4](/vext/ref/shared/type/vec4), renderLines: bool, smallSizeSegmentDecrease: bool)
 
 #### Parameters
 
-| Name  | Type                              | Description |
-| ----- | --------------------------------- | ----------- |
-| x     | int                               |             |
-| y     | int                               |             |
-| text  | string                            |             |
-| color | [Vec4](/vext/ref/shared/class/vec4) |             |
-| scale | float                             |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **pos** | [Vec3](/vext/ref/shared/type/vec3) |  |
+| **radius** | float |  |
+| **color** | [Vec4](/vext/ref/shared/type/vec4) |  |
+| **renderLines** | bool |  |
+| **smallSizeSegmentDecrease** | bool |  |
+
+### DrawLine2D {#drawline2d}
+
+> **DrawLine2D**(from: [Vec2](/vext/ref/shared/type/vec2), to: [Vec2](/vext/ref/shared/type/vec2), color: [Vec4](/vext/ref/shared/type/vec4))
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **from** | [Vec2](/vext/ref/shared/type/vec2) |  |
+| **to** | [Vec2](/vext/ref/shared/type/vec2) |  |
+| **color** | [Vec4](/vext/ref/shared/type/vec4) |  |
+
+### DrawText2D {#drawtext2d}
+
+> **DrawText2D**(x: int, y: int, text: string, color: [Vec4](/vext/ref/shared/type/vec4), scale: float)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **x** | int |  |
+| **y** | int |  |
+| **text** | string |  |
+| **color** | [Vec4](/vext/ref/shared/type/vec4) |  |
+| **scale** | float |  |
+
+### DrawVertices {#drawvertices}
+
+> **DrawVertices**(type: [DebugGeometryType](/vext/ref/shared/type/debuggeometrytype), vertices: [DebugVertex](/vext/ref/client/type/debugvertex){})
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **type** | [DebugGeometryType](/vext/ref/shared/type/debuggeometrytype) |  |
+| **vertices** | [DebugVertex](/vext/ref/client/type/debugvertex){} |  |
+
+### DrawOBB {#drawobb}
+
+> **DrawOBB**(aabb: [AxisAlignedBox](/vext/ref/shared/type/axisalignedbox), transform: [LinearTransform](/vext/ref/shared/type/lineartransform), color: [Vec4](/vext/ref/shared/type/vec4))
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **aabb** | [AxisAlignedBox](/vext/ref/shared/type/axisalignedbox) |  |
+| **transform** | [LinearTransform](/vext/ref/shared/type/lineartransform) |  |
+| **color** | [Vec4](/vext/ref/shared/type/vec4) |  |
+

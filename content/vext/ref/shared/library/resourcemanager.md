@@ -1,181 +1,314 @@
 ---
-title: ResourceManager (Shared Manager)
+title: ResourceManager
 ---
-## Description
+
+## Summary
+
+### Methods
+
+| Method | Returns |
+| ------ | ------- |
+| **[MountSuperBundle](#mountsuperbundle)**(superbundle: string, mediaHint: [MediaHint](/vext/ref/shared/type/mediahint) = MediaHint.MediaHint_Default, optional: bool) | void |
+| **[UnmountSuperBundle](#unmountsuperbundle)**(superbundle: string) | void |
+| **[GetSettings](#getsettings)**(settingsType: string) | [DataContainer](/vext/ref/shared/type/datacontainer) \| nil |
+| **[LookupDataContainer](#lookupdatacontainer)**(compartment: [ResourceCompartment](/vext/ref/shared/type/resourcecompartment), name: string) | [DataContainer](/vext/ref/shared/type/datacontainer) \| nil |
+| **[FindInstanceByGuid](#findinstancebyguid)**(partitionGuid: [Guid](/vext/ref/shared/type/guid), instanceGuid: [Guid](/vext/ref/shared/type/guid)) | [DataContainer](/vext/ref/shared/type/datacontainer) \| nil |
+| **[SearchForInstanceByGuid](#searchforinstancebyguid)**(instanceGuid: [Guid](/vext/ref/shared/type/guid)) | [DataContainer](/vext/ref/shared/type/datacontainer) \| nil |
+| **[FindDatabasePartition](#finddatabasepartition)**(partitionGuid: [Guid](/vext/ref/shared/type/guid)) | [DatabasePartition](/vext/ref/shared/type/databasepartition) \| nil |
+| **[FindPartitionForInstance](#findpartitionforinstance)**(instance: [DataContainer](/vext/ref/shared/type/datacontainer)) | [DatabasePartition](/vext/ref/shared/type/databasepartition) \| nil |
+| **[RegisterInstanceLoadHandler](#registerinstanceloadhandler)**(partitionGuid: [Guid](/vext/ref/shared/type/guid), instanceGuid: [Guid](/vext/ref/shared/type/guid), callback: callable, ...args: any) | [ContainerCallback](/vext/ref/shared/type/containercallback) |
+| **[RegisterInstanceLoadHandlerOnce](#registerinstanceloadhandleronce)**(partitionGuid: [Guid](/vext/ref/shared/type/guid), instanceGuid: [Guid](/vext/ref/shared/type/guid), callback: callable, ...args: any) | [ContainerCallback](/vext/ref/shared/type/containercallback) |
+| **[AddRegistry](#addregistry)**(registry: [DataContainer](/vext/ref/shared/type/datacontainer), compartment: [ResourceCompartment](/vext/ref/shared/type/resourcecompartment)) | void |
+| **[BeginLoadData](#beginloaddata)**(compartment: [ResourceCompartment](/vext/ref/shared/type/resourcecompartment), bundles: string{}) | int |
+| **[EndLoadData](#endloaddata)**(handle: int) | bool |
+| **[PollBundleOperation](#pollbundleoperation)**(handle: int) | bool |
+| **[CancelBundleOperation](#cancelbundleoperation)**(handle: int) | void |
+| **[BeginClear](#beginclear)**(compartment: [ResourceCompartment](/vext/ref/shared/type/resourcecompartment)) | int |
+| **[EndClear](#endclear)**(handle: int) | void |
+| **[AllocateDynamicCompartment](#allocatedynamiccompartment)**(name: string, parent: [ResourceCompartment](/vext/ref/shared/type/resourcecompartment), clientOnly: bool) | [ResourceCompartment](/vext/ref/shared/type/resourcecompartment) |
+| **[DestroyDynamicCompartment](#destroydynamiccompartment)**(compartment: [ResourceCompartment](/vext/ref/shared/type/resourcecompartment)) | void |
 
 ## Methods
 
-| Type                                                            | Name                                                      | Parameters                                                                                                              |
-| --------------------------------------------------------------- | --------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| void                                                            | [MountSuperBundle](#mountsuperbundle)                     | string **superbundle**, [MediaHint](/vext/ref/shared/class/mediahint) **=** MediaHint\_Default, bool **optional** = false |
-| void                                                            | [UnmountSuperBundle](#unmountsuperbundle)                 | string **superbundle**                                                                                                  |
-| int                                                             | [BeginLoadData](#beginloaddata)                           | [ResourceCompartment](/vext/ref/shared/class/resourcecompartment) **compartment**, string\[\] **bundles**                 |
-| bool                                                            | [EndLoadData](#endloaddata)                               | int **handle**                                                                                                          |
-| bool                                                            | [PollBundleOperation](#pollbundleoperation)               | int **handle**                                                                                                          |
-| void                                                            | [CancelBundleOperation](#cancelbundleoperation)           | int **handle**                                                                                                          |
-| int                                                             | [BeginClear](#beginclear)                                 | [ResourceCompartment](/vext/ref/shared/class/resourcecompartment) **compartment**                                         |
-| void                                                            | [EndClear](#endclear)                                     | int **handle**                                                                                                          |
-| [ResourceCompartment](/vext/ref/shared/class/resourcecompartment) | [AllocateDynamicCompartment](#allocatedynamiccompartment) | string **name**, [ResourceCompartment](/vext/ref/shared/class/resourcecompartment) **parent**, bool **clientOnly**        |
-| void                                                            | [DestroyDynamicCompartment](#destroydynamiccompartment)   | [ResourceCompartment](/vext/ref/shared/class/resourcecompartment) **compartment**                                         |
-| [DataContainer](/vext/ref/shared/class/datacontainer)             | [GetSettings](#getsettings)                               | string **settings**                                                                                                     |
-| [DataContainer](/vext/ref/shared/class/datacontainer)             | [FindInstanceByGUID](#findinstancebyguid)                 | [Guid](/vext/ref/shared/class/guid) **partitionGuid**, [Guid](/vext/ref/shared/class/guid) **instanceGuid**                 |
-| [DataContainer](/vext/ref/shared/class/datacontainer)             | [LookupDataContainer](#lookupdatacontainer)               | [ResourceCompartment](/vext/ref/shared/class/resourcecompartment) **compartment**, string **name**                        |
-| [DataContainer](/vext/ref/shared/class/datacontainer)             | [SearchForInstanceByGUID](#searchforinstancebyguid)       | [Guid](/vext/ref/shared/class/guid) **instanceGuid**                                                                      |
-| [DatabasePartition](/vext/ref/shared/class/databasepartition)     | [FindDatabasePartition](#finddatabasepartition)           | [Guid](/vext/ref/shared/class/guid) **partitionGuid**                                                                     |
+### MountSuperBundle {#mountsuperbundle}
 
-### MountSuperBundle
-
-> void **MountSuperBundle**(string **superbundle**, [MediaHint](/vext/ref/shared/class/mediahint) **=** MediaHint\_Default, bool **optional** = false)
+> **MountSuperBundle**(superbundle: string, mediaHint: [MediaHint](/vext/ref/shared/type/mediahint) = MediaHint.MediaHint_Default, optional: bool)
 
 #### Parameters
 
-| Name        | Type                                        | Description |
-| ----------- | ------------------------------------------- | ----------- |
-| superbundle | string                                      |             |
-| \=          | [MediaHint](/vext/ref/shared/class/mediahint) |             |
-| optional    | bool                                        |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **superbundle** | string |  |
+| **mediaHint** | [MediaHint](/vext/ref/shared/type/mediahint) |  |
+| **optional** | bool |  |
 
-### UnmountSuperBundle
+### UnmountSuperBundle {#unmountsuperbundle}
 
-> void **UnmountSuperBundle**(string **superbundle**)
-
-#### Parameters
-
-| Name        | Type   | Description |
-| ----------- | ------ | ----------- |
-| superbundle | string |             |
-
-### BeginLoadData
-
-> int **BeginLoadData**([ResourceCompartment](/vext/ref/shared/class/resourcecompartment) **compartment**, string\[\] **bundles**)
+> **UnmountSuperBundle**(superbundle: string)
 
 #### Parameters
 
-| Name        | Type                                                            | Description |
-| ----------- | --------------------------------------------------------------- | ----------- |
-| compartment | [ResourceCompartment](/vext/ref/shared/class/resourcecompartment) |             |
-| bundles     | string\[\]                                                      |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **superbundle** | string |  |
 
-### EndLoadData
+### GetSettings {#getsettings}
 
-> bool **EndLoadData**(int **handle**)
-
-#### Parameters
-
-| Name   | Type | Description |
-| ------ | ---- | ----------- |
-| handle | int  |             |
-
-### PollBundleOperation
-
-> bool **PollBundleOperation**(int **handle**)
+> **GetSettings**(settingsType: string): [DataContainer](/vext/ref/shared/type/datacontainer) \| nil
 
 #### Parameters
 
-| Name   | Type | Description |
-| ------ | ---- | ----------- |
-| handle | int  |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **settingsType** | string |  |
 
-### CancelBundleOperation
+#### Returns
 
-> void **CancelBundleOperation**(int **handle**)
+| Type | Description |
+| ---- | ----------- |
+| **[DataContainer](/vext/ref/shared/type/datacontainer)** \| **nil** |  |
 
-#### Parameters
+### LookupDataContainer {#lookupdatacontainer}
 
-| Name   | Type | Description |
-| ------ | ---- | ----------- |
-| handle | int  |             |
-
-### BeginClear
-
-> int **BeginClear**([ResourceCompartment](/vext/ref/shared/class/resourcecompartment) **compartment**)
+> **LookupDataContainer**(compartment: [ResourceCompartment](/vext/ref/shared/type/resourcecompartment), name: string): [DataContainer](/vext/ref/shared/type/datacontainer) \| nil
 
 #### Parameters
 
-| Name        | Type                                                            | Description |
-| ----------- | --------------------------------------------------------------- | ----------- |
-| compartment | [ResourceCompartment](/vext/ref/shared/class/resourcecompartment) |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **compartment** | [ResourceCompartment](/vext/ref/shared/type/resourcecompartment) |  |
+| **name** | string |  |
 
-### EndClear
+#### Returns
 
-> void **EndClear**(int **handle**)
+| Type | Description |
+| ---- | ----------- |
+| **[DataContainer](/vext/ref/shared/type/datacontainer)** \| **nil** |  |
 
-#### Parameters
+### FindInstanceByGuid {#findinstancebyguid}
 
-| Name   | Type | Description |
-| ------ | ---- | ----------- |
-| handle | int  |             |
-
-### AllocateDynamicCompartment
-
-> [ResourceCompartment](/vext/ref/shared/class/resourcecompartment) **AllocateDynamicCompartment**(string **name**, [ResourceCompartment](/vext/ref/shared/class/resourcecompartment) **parent**, bool **clientOnly**)
+> **FindInstanceByGuid**(partitionGuid: [Guid](/vext/ref/shared/type/guid), instanceGuid: [Guid](/vext/ref/shared/type/guid)): [DataContainer](/vext/ref/shared/type/datacontainer) \| nil
 
 #### Parameters
 
-| Name       | Type                                                            | Description |
-| ---------- | --------------------------------------------------------------- | ----------- |
-| name       | string                                                          |             |
-| parent     | [ResourceCompartment](/vext/ref/shared/class/resourcecompartment) |             |
-| clientOnly | bool                                                            |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **partitionGuid** | [Guid](/vext/ref/shared/type/guid) |  |
+| **instanceGuid** | [Guid](/vext/ref/shared/type/guid) |  |
 
-### DestroyDynamicCompartment
+#### Returns
 
-> void **DestroyDynamicCompartment**([ResourceCompartment](/vext/ref/shared/class/resourcecompartment) **compartment**)
+| Type | Description |
+| ---- | ----------- |
+| **[DataContainer](/vext/ref/shared/type/datacontainer)** \| **nil** |  |
 
-#### Parameters
+### SearchForInstanceByGuid {#searchforinstancebyguid}
 
-| Name        | Type                                                            | Description |
-| ----------- | --------------------------------------------------------------- | ----------- |
-| compartment | [ResourceCompartment](/vext/ref/shared/class/resourcecompartment) |             |
-
-### GetSettings
-
-> [DataContainer](/vext/ref/shared/class/datacontainer) **GetSettings**(string **settings**)
+> **SearchForInstanceByGuid**(instanceGuid: [Guid](/vext/ref/shared/type/guid)): [DataContainer](/vext/ref/shared/type/datacontainer) \| nil
 
 #### Parameters
 
-| Name     | Type   | Description |
-| -------- | ------ | ----------- |
-| settings | string |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **instanceGuid** | [Guid](/vext/ref/shared/type/guid) |  |
 
-### FindInstanceByGUID
+#### Returns
 
-> [DataContainer](/vext/ref/shared/class/datacontainer) **FindInstanceByGUID**([Guid](/vext/ref/shared/class/guid) **partitionGuid**, [Guid](/vext/ref/shared/class/guid) **instanceGuid**)
+| Type | Description |
+| ---- | ----------- |
+| **[DataContainer](/vext/ref/shared/type/datacontainer)** \| **nil** |  |
 
-#### Parameters
+### FindDatabasePartition {#finddatabasepartition}
 
-| Name          | Type                              | Description |
-| ------------- | --------------------------------- | ----------- |
-| partitionGuid | [Guid](/vext/ref/shared/class/guid) |             |
-| instanceGuid  | [Guid](/vext/ref/shared/class/guid) |             |
-
-### LookupDataContainer
-
-> [DataContainer](/vext/ref/shared/class/datacontainer) **LookupDataContainer**([ResourceCompartment](/vext/ref/shared/class/resourcecompartment) **compartment**, string **name**)
+> **FindDatabasePartition**(partitionGuid: [Guid](/vext/ref/shared/type/guid)): [DatabasePartition](/vext/ref/shared/type/databasepartition) \| nil
 
 #### Parameters
 
-| Name        | Type                                                            | Description |
-| ----------- | --------------------------------------------------------------- | ----------- |
-| compartment | [ResourceCompartment](/vext/ref/shared/class/resourcecompartment) |             |
-| name        | string                                                          |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **partitionGuid** | [Guid](/vext/ref/shared/type/guid) |  |
 
-### SearchForInstanceByGUID
+#### Returns
 
-> [DataContainer](/vext/ref/shared/class/datacontainer) **SearchForInstanceByGUID**([Guid](/vext/ref/shared/class/guid) **instanceGuid**)
+| Type | Description |
+| ---- | ----------- |
+| **[DatabasePartition](/vext/ref/shared/type/databasepartition)** \| **nil** |  |
 
-#### Parameters
+### FindPartitionForInstance {#findpartitionforinstance}
 
-| Name         | Type                              | Description |
-| ------------ | --------------------------------- | ----------- |
-| instanceGuid | [Guid](/vext/ref/shared/class/guid) |             |
-
-### FindDatabasePartition
-
-> [DatabasePartition](/vext/ref/shared/class/databasepartition) **FindDatabasePartition**([Guid](/vext/ref/shared/class/guid) **partitionGuid**)
+> **FindPartitionForInstance**(instance: [DataContainer](/vext/ref/shared/type/datacontainer)): [DatabasePartition](/vext/ref/shared/type/databasepartition) \| nil
 
 #### Parameters
 
-| Name          | Type                              | Description |
-| ------------- | --------------------------------- | ----------- |
-| partitionGuid | [Guid](/vext/ref/shared/class/guid) |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **instance** | [DataContainer](/vext/ref/shared/type/datacontainer) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[DatabasePartition](/vext/ref/shared/type/databasepartition)** \| **nil** |  |
+
+### RegisterInstanceLoadHandler {#registerinstanceloadhandler}
+
+> **RegisterInstanceLoadHandler**(partitionGuid: [Guid](/vext/ref/shared/type/guid), instanceGuid: [Guid](/vext/ref/shared/type/guid), callback: callable, ...args: any): [ContainerCallback](/vext/ref/shared/type/containercallback)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **partitionGuid** | [Guid](/vext/ref/shared/type/guid) |  |
+| **instanceGuid** | [Guid](/vext/ref/shared/type/guid) |  |
+| **callback** | callable |  |
+| ...**args** | any |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[ContainerCallback](/vext/ref/shared/type/containercallback)** |  |
+
+### RegisterInstanceLoadHandlerOnce {#registerinstanceloadhandleronce}
+
+> **RegisterInstanceLoadHandlerOnce**(partitionGuid: [Guid](/vext/ref/shared/type/guid), instanceGuid: [Guid](/vext/ref/shared/type/guid), callback: callable, ...args: any): [ContainerCallback](/vext/ref/shared/type/containercallback)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **partitionGuid** | [Guid](/vext/ref/shared/type/guid) |  |
+| **instanceGuid** | [Guid](/vext/ref/shared/type/guid) |  |
+| **callback** | callable |  |
+| ...**args** | any |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[ContainerCallback](/vext/ref/shared/type/containercallback)** |  |
+
+### AddRegistry {#addregistry}
+
+> **AddRegistry**(registry: [DataContainer](/vext/ref/shared/type/datacontainer), compartment: [ResourceCompartment](/vext/ref/shared/type/resourcecompartment))
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **registry** | [DataContainer](/vext/ref/shared/type/datacontainer) |  |
+| **compartment** | [ResourceCompartment](/vext/ref/shared/type/resourcecompartment) |  |
+
+### BeginLoadData {#beginloaddata}
+
+> **BeginLoadData**(compartment: [ResourceCompartment](/vext/ref/shared/type/resourcecompartment), bundles: string{}): int
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **compartment** | [ResourceCompartment](/vext/ref/shared/type/resourcecompartment) |  |
+| **bundles** | string{} |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **int** |  |
+
+### EndLoadData {#endloaddata}
+
+> **EndLoadData**(handle: int): bool
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **handle** | int |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
+
+### PollBundleOperation {#pollbundleoperation}
+
+> **PollBundleOperation**(handle: int): bool
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **handle** | int |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
+
+### CancelBundleOperation {#cancelbundleoperation}
+
+> **CancelBundleOperation**(handle: int)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **handle** | int |  |
+
+### BeginClear {#beginclear}
+
+> **BeginClear**(compartment: [ResourceCompartment](/vext/ref/shared/type/resourcecompartment)): int
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **compartment** | [ResourceCompartment](/vext/ref/shared/type/resourcecompartment) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **int** |  |
+
+### EndClear {#endclear}
+
+> **EndClear**(handle: int)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **handle** | int |  |
+
+### AllocateDynamicCompartment {#allocatedynamiccompartment}
+
+> **AllocateDynamicCompartment**(name: string, parent: [ResourceCompartment](/vext/ref/shared/type/resourcecompartment), clientOnly: bool): [ResourceCompartment](/vext/ref/shared/type/resourcecompartment)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **name** | string |  |
+| **parent** | [ResourceCompartment](/vext/ref/shared/type/resourcecompartment) |  |
+| **clientOnly** | bool |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[ResourceCompartment](/vext/ref/shared/type/resourcecompartment)** |  |
+
+### DestroyDynamicCompartment {#destroydynamiccompartment}
+
+> **DestroyDynamicCompartment**(compartment: [ResourceCompartment](/vext/ref/shared/type/resourcecompartment))
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **compartment** | [ResourceCompartment](/vext/ref/shared/type/resourcecompartment) |  |
+

@@ -1,57 +1,132 @@
 ---
-title: PlayerManager (Client Manager)
+title: PlayerManager
 ---
-## Description
+
+## Summary
+
+### Methods
+
+| Method | Returns |
+| ------ | ------- |
+| **[GetPlayers](#getplayers)**() | [Player](/vext/ref/client/type/player)[] |
+| **[GetPlayersByTeam](#getplayersbyteam)**(team: [TeamId](/vext/ref/fb/teamid)) | [Player](/vext/ref/client/type/player)[] |
+| **[GetPlayersBySquad](#getplayersbysquad)**(team: [TeamId](/vext/ref/fb/teamid), squad: [SquadId](/vext/ref/fb/squadid)) | [Player](/vext/ref/client/type/player)[] |
+| **[GetPlayerById](#getplayerbyid)**(id: int) | [Player](/vext/ref/client/type/player) \| nil |
+| **[GetPlayerByName](#getplayerbyname)**(name: string) | [Player](/vext/ref/client/type/player) \| nil |
+| **[GetPlayersByName](#getplayersbyname)**(name: string) | [Player](/vext/ref/client/type/player)[] |
+| **[GetPlayerCount](#getplayercount)**() | int |
+| **[GetLocalPlayer](#getlocalplayer)**() | [Player](/vext/ref/client/type/player) \| nil |
 
 ## Methods
 
-| Type                                        | Name                                  | Parameters       |
-| ------------------------------------------- | ------------------------------------- | ---------------- |
-| [Player](/vext/ref/client/class/player)\[\] | [GetPlayers](#getplayers)             |                  |
-| [Player](/vext/ref/client/class/player)       | [GetPlayerByID](#getplayerbyid)       | int **id**       |
-| [Player](/vext/ref/client/class/player)       | [GetPlayerByName](#getplayerbyname)   | string **name**  |
-| [Player](/vext/ref/client/class/player)\[\] | [GetPlayersByName](#getplayersbyname) | string **match** |
-| int                                         | [GetPlayerCount](#getplayercount)     |                  |
-| [Player](/vext/ref/client/class/player)       | [GetLocalPlayer](#getlocalplayer)     |                  |
+### GetPlayers {#getplayers}
 
-### GetPlayers
+> **GetPlayers**(): [Player](/vext/ref/client/type/player)[]
 
-> [Player](/vext/ref/client/class/player)\[\] **GetPlayers**()
+#### Returns
 
-### GetPlayerByID
+| Type | Description |
+| ---- | ----------- |
+| **[Player](/vext/ref/client/type/player)**[] |  |
 
-> [Player](/vext/ref/client/class/player) **GetPlayerByID**(int **id**)
+### GetPlayersByTeam {#getplayersbyteam}
+
+> **GetPlayersByTeam**(team: [TeamId](/vext/ref/fb/teamid)): [Player](/vext/ref/client/type/player)[]
 
 #### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| id   | int  |             |
+| **team** | [TeamId](/vext/ref/fb/teamid) |  |
 
-### GetPlayerByName
+#### Returns
 
-> [Player](/vext/ref/client/class/player) **GetPlayerByName**(string **name**)
+| Type | Description |
+| ---- | ----------- |
+| **[Player](/vext/ref/client/type/player)**[] |  |
 
-#### Parameters
+### GetPlayersBySquad {#getplayersbysquad}
 
-| Name | Type   | Description |
-| ---- | ------ | ----------- |
-| name | string |             |
-
-### GetPlayersByName
-
-> [Player](/vext/ref/client/class/player)\[\] **GetPlayersByName**(string **match**)
+> **GetPlayersBySquad**(team: [TeamId](/vext/ref/fb/teamid), squad: [SquadId](/vext/ref/fb/squadid)): [Player](/vext/ref/client/type/player)[]
 
 #### Parameters
 
-| Name  | Type   | Description |
-| ----- | ------ | ----------- |
-| match | string |             |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **team** | [TeamId](/vext/ref/fb/teamid) |  |
+| **squad** | [SquadId](/vext/ref/fb/squadid) |  |
 
-### GetPlayerCount
+#### Returns
 
-> int **GetPlayerCount**()
+| Type | Description |
+| ---- | ----------- |
+| **[Player](/vext/ref/client/type/player)**[] |  |
 
-### GetLocalPlayer
+### GetPlayerById {#getplayerbyid}
 
-> [Player](/vext/ref/client/class/player) **GetLocalPlayer**()
+> **GetPlayerById**(id: int): [Player](/vext/ref/client/type/player) \| nil
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **id** | int |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[Player](/vext/ref/client/type/player)** \| **nil** |  |
+
+### GetPlayerByName {#getplayerbyname}
+
+> **GetPlayerByName**(name: string): [Player](/vext/ref/client/type/player) \| nil
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **name** | string |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[Player](/vext/ref/client/type/player)** \| **nil** |  |
+
+### GetPlayersByName {#getplayersbyname}
+
+> **GetPlayersByName**(name: string): [Player](/vext/ref/client/type/player)[]
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **name** | string |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[Player](/vext/ref/client/type/player)**[] |  |
+
+### GetPlayerCount {#getplayercount}
+
+> **GetPlayerCount**(): int
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **int** |  |
+
+### GetLocalPlayer {#getlocalplayer}
+
+> **GetLocalPlayer**(): [Player](/vext/ref/client/type/player) \| nil
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[Player](/vext/ref/client/type/player)** \| **nil** |  |
+
