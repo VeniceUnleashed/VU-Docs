@@ -1,0 +1,27 @@
+name: PlanarReflectionData
+type: class
+
+constructors:
+  -
+
+properties:
+  verticalBlurFilter:
+    type: BlurFilter
+  horizontalDeviation:
+    type: float
+  groundHeight:
+    type: float
+  verticalDeviation:
+    type: float
+  horizontalBlurFilter:
+    type: BlurFilter
+  skyRenderEnable:
+    type: bool
+  enable:
+    type: bool
+
+methods:
+  -
+    name: Clone
+    returns:
+      type: PlanarReflectionData

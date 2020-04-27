@@ -1,0 +1,33 @@
+name: LensScopeData
+type: class
+
+constructors:
+  -
+
+properties:
+  chromaticAberrationColor1:
+    type: Vec3
+  radialBlendDistanceCoefficients:
+    type: Vec2
+  chromaticAberrationColor2:
+    type: Vec3
+  blurCenter:
+    type: Vec2
+  chromaticAberrationDisplacement2:
+    type: Vec2
+  chromaticAberrationDisplacement1:
+    type: Vec2
+  chromaticAberrationStrengths:
+    type: Vec2
+  blurScale:
+    type: float
+  realm:
+    type: Realm
+  enable:
+    type: bool
+
+methods:
+  -
+    name: Clone
+    returns:
+      type: LensScopeData

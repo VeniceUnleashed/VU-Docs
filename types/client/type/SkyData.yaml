@@ -1,0 +1,107 @@
+name: SkyData
+type: class
+
+constructors:
+  -
+
+properties:
+  cloudLayerSunColor:
+    type: Vec3
+  cloudLayer2Color:
+    type: Vec3
+  cloudLayer1Color:
+    type: Vec3
+  skyGradientTexture:
+    type: TextureAsset
+    nullable: true
+  sunSize:
+    type: float
+  brightnessScale:
+    type: float
+  sunScale:
+    type: float
+  panoramicUVMaxX:
+    type: float
+  panoramicUVMinY:
+    type: float
+  panoramicUVMaxY:
+    type: float
+  realm:
+    type: Realm
+  panoramicUVMinX:
+    type: float
+  panoramicTexture:
+    type: TextureAsset
+    nullable: true
+  panoramicAlphaTexture:
+    type: TextureAsset
+    nullable: true
+  panoramicTileFactor:
+    type: float
+  cloudLayerMaskTexture:
+    type: TextureAsset
+    nullable: true
+  cloudLayer1Altitude:
+    type: float
+  cloudLayer1TileFactor:
+    type: float
+  cloudLayer1Rotation:
+    type: float
+  cloudLayer1Speed:
+    type: float
+  cloudLayer1SunLightIntensity:
+    type: float
+  panoramicRotation:
+    type: float
+  cloudLayer1AmbientLightIntensity:
+    type: float
+  cloudLayer1SunLightPower:
+    type: float
+  cloudLayer1AlphaMul:
+    type: float
+  cloudLayer1Texture:
+    type: TextureAsset
+    nullable: true
+  cloudLayer2Altitude:
+    type: float
+  cloudLayer2TileFactor:
+    type: float
+  cloudLayer2Rotation:
+    type: float
+  cloudLayer2Speed:
+    type: float
+  cloudLayer2SunLightIntensity:
+    type: float
+  cloudLayer2SunLightPower:
+    type: float
+  cloudLayer2AmbientLightIntensity:
+    type: float
+  staticEnvmapScale:
+    type: float
+  cloudLayer2AlphaMul:
+    type: float
+  cloudLayer2Texture:
+    type: TextureAsset
+    nullable: true
+  staticEnvmapTexture:
+    type: TextureAsset
+    nullable: true
+  skyVisibilityExponent:
+    type: float
+  skyEnvmap8BitTexScale:
+    type: float
+  customEnvmapTexture:
+    type: TextureAsset
+    nullable: true
+  customEnvmapScale:
+    type: float
+  customEnvmapAmbient:
+    type: float
+  enable:
+    type: bool
+
+methods:
+  -
+    name: Clone
+    returns:
+      type: SkyData

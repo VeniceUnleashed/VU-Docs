@@ -1,0 +1,28 @@
+name: FilmGrainData
+type: class
+
+constructors:
+  -
+
+properties:
+  colorScale:
+    type: Vec3
+  textureScale:
+    type: Vec2
+  realm:
+    type: Realm
+  texture:
+    type: TextureAsset
+    nullable: true
+  linearFilteringEnable:
+    type: bool
+  randomEnable:
+    type: bool
+  enable:
+    type: bool
+
+methods:
+  -
+    name: Clone
+    returns:
+      type: FilmGrainData

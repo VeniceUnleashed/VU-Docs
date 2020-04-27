@@ -1,0 +1,54 @@
+name: FogData
+type: class
+
+constructors:
+  -
+
+properties:
+  curve:
+    type: Vec4
+  fogColorCurve:
+    type: Vec4
+  fogColor:
+    type: Vec3
+  fogColorStart:
+    type: float
+  fogDistanceMultiplier:
+    type: float
+  realm:
+    type: Realm
+  endValue:
+    type: float
+  transparencyFadeStart:
+    type: float
+  start:
+    type: float
+  transparencyFadeEnd:
+    type: float
+  fogColorEnd:
+    type: float
+  transparencyFadeClamp:
+    type: float
+  heightFogVisibilityRange:
+    type: float
+  heightFogAltitude:
+    type: float
+  heightFogDepth:
+    type: float
+  heightFogFollowCamera:
+    type: float
+  fogGradientEnable:
+    type: bool
+  enable:
+    type: bool
+  heightFogEnable:
+    type: bool
+  fogColorEnable:
+    type: bool
+
+methods:
+  -
+    name: Clone
+    returns:
+      type: FogData
+

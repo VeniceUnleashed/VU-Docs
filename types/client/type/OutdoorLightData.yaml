@@ -1,0 +1,56 @@
+name: OutdoorLightData
+type: class
+
+constructors:
+  -
+
+properties:
+  sunColor:
+    type: Vec3
+  cloudShadowSpeed:
+    type: Vec2
+  skyColor:
+    type: Vec3
+  groundColor:
+    type: Vec3
+  sunRotationY:
+    type: float
+  sunRotationX:
+    type: float
+  realm:
+    type: Realm
+  skyLightAngleFactor:
+    type: float
+  sunSpecularScale:
+    type: float
+  skyEnvmapShadowScale:
+    type: float
+  sunShadowHeightScale:
+    type: float
+  cloudShadowCoverage:
+    type: float
+  cloudShadowTexture:
+    type: TextureAsset
+    nullable: true
+  translucencyDistortion:
+    type: float
+  cloudShadowSize:
+    type: float
+  translucencyAmbient:
+    type: float
+  cloudShadowExponent:
+    type: float
+  translucencyScale:
+    type: float
+  translucencyPower:
+    type: float
+  enable:
+    type: bool
+  cloudShadowEnable:
+    type: bool
+
+methods:
+  -
+    name: Clone
+    returns:
+      type: OutdoorLightData

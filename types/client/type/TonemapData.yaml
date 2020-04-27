@@ -1,0 +1,33 @@
+name: TonemapData
+type: class
+
+constructors:
+  -
+
+properties:
+  bloomScale:
+    type: Vec3
+  realm:
+    type: Realm
+  tonemapMethod:
+    type: TonemapMethod
+  minExposure:
+    type: float
+  middleGray:
+    type: float
+  exposureAdjustTime:
+    type: float
+  maxExposure:
+    type: float
+  chromostereopsisOffset:
+    type: float
+  chromostereopsisScale:
+    type: float
+  chromostereopsisEnable:
+    type: bool
+
+methods:
+  -
+    name: Clone
+    returns:
+      type: TonemapData

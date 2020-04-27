@@ -1,0 +1,17 @@
+name: ShaderParamsData
+type: class
+
+constructors:
+  -
+
+properties:
+  value:
+    type: Vec4
+  parameterName:
+    type: string
+
+methods:
+  -
+    name: Clone
+    returns:
+      type: ShaderParamsData

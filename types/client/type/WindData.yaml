@@ -1,0 +1,19 @@
+name: WindData
+type: class
+
+constructors:
+  -
+
+properties:
+  realm:
+    type: Realm
+  windDirection:
+    type: float
+  windStrength:
+    type: float
+
+methods:
+  -
+    name: Clone
+    returns:
+      type: WindData

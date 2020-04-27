@@ -1,0 +1,23 @@
+name: DebugData
+type: class
+
+constructors:
+  -
+
+properties:
+  realm:
+    type: Realm
+  debugTexture:
+    type: TextureAsset
+    nullable: true
+  fullscreen:
+    type: bool
+  enable:
+    type: bool
+
+methods:
+  -
+    name: Clone
+    returns:
+      type: DebugData
+

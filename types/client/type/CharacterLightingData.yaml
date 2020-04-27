@@ -1,0 +1,33 @@
+name: CharacterLightingData
+type: class
+
+constructors:
+  -
+
+properties:
+  bottomLight:
+    type: Vec3
+  topLight:
+    type: Vec3
+  characterLightingMode:
+    type: CharacterLightingMode
+  cameraUpRotation:
+    type: float
+  topLightDirY:
+    type: float
+  blendFactor:
+    type: float
+  topLightDirX:
+    type: float
+  lockToCameraDirection:
+    type: bool
+  firstPersonEnable:
+    type: bool
+  characterLightEnable:
+    type: bool
+
+methods:
+  -
+    name: Clone
+    returns:
+      type: CharacterLightingData

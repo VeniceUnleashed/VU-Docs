@@ -1,0 +1,44 @@
+name: EnlightenData
+type: class
+
+constructors:
+  -
+
+properties:
+  skyBoxSkyColor:
+    type: Vec3
+  skyBoxBackLightColor:
+    type: Vec3
+  skyBoxGroundColor:
+    type: Vec3
+  terrainColor:
+    type: Vec3
+  skyBoxSunLightColor:
+    type: Vec3
+  bounceScale:
+    type: float
+  cullDistance:
+    type: float
+  sunScale:
+    type: float
+  realm:
+    type: Realm
+  skyBoxBackLightRotationY:
+    type: float
+  skyBoxSunLightColorSize:
+    type: float
+  skyBoxBackLightColorSize:
+    type: float
+  skyBoxBackLightRotationX:
+    type: float
+  skyBoxEnable:
+    type: bool
+  enable:
+    type: bool
+
+methods:
+  -
+    name: Clone
+    returns:
+      type: EnlightenData
+

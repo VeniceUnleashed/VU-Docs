@@ -1,0 +1,22 @@
+name: DynamicEnvmapData
+type: class
+
+constructors:
+  -
+
+properties:
+  keyColorEnvmap:
+    type: Vec3
+  groundColorEnvmap:
+    type: Vec3
+  skyColorEnvmap:
+    type: Vec3
+  enable:
+    type: bool
+
+methods:
+  -
+    name: Clone
+    returns:
+      type: DynamicEnvmapData
+

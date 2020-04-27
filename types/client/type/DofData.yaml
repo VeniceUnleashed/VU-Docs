@@ -1,0 +1,37 @@
+name: DofData
+type: class
+
+constructors:
+  -
+
+properties:
+  realm:
+    type: Realm
+  nearDistanceScale:
+    type: float
+  focusDistance:
+    type: float
+  blurFilter:
+    type: BlurFilter
+  blurFilterDeviation:
+    type: float
+  farDistanceScale:
+    type: float
+  blurAdd:
+    type: float
+  scale:
+    type: float
+  diffusionDofFocalLength:
+    type: float
+  diffusionDofAperture:
+    type: float
+  diffusionDofEnable:
+    type: bool
+  enable:
+    type: bool
+
+methods:
+  -
+    name: Clone
+    returns:
+      type: DofData

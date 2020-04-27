@@ -1,0 +1,21 @@
+name: MotionBlurData
+type: class
+
+constructors:
+  -
+
+properties:
+  realm:
+    type: Realm
+  cutoffGradientScale:
+    type: float
+  motionBlurCutoffRadius:
+    type: float
+  motionBlurEnable:
+    type: bool
+
+methods:
+  -
+    name: Clone
+    returns:
+      type: MotionBlurData

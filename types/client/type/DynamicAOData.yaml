@@ -1,0 +1,37 @@
+name: DynamicAOData
+type: class
+
+constructors:
+  -
+
+properties:
+  realm:
+    type: Realm
+  ssaoMaxDistanceOuter:
+    type: float
+  ssaoFade:
+    type: float
+  ssaoRadius:
+    type: float
+  ssaoMaxDistanceInner:
+    type: float
+  hbaoRadius:
+    type: float
+  hbaoAttenuation:
+    type: float
+  hbaoAngleBias:
+    type: float
+  hbaoPowerExponent:
+    type: float
+  hbaoContrast:
+    type: float
+  hbaoMaxFootprintRadius:
+    type: float
+  enable:
+    type: bool
+
+methods:
+  -
+    name: Clone
+    returns:
+      type: DynamicAOData

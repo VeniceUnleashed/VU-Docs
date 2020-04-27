@@ -1,0 +1,30 @@
+name: ColorCorrectionData
+type: class
+
+constructors:
+  -
+
+properties:
+  contrast:
+    type: Vec3
+  saturation:
+    type: Vec3
+  brightness:
+    type: Vec3
+  realm:
+    type: Realm
+  hue:
+    type: float
+  colorGradingTexture:
+    type: TextureAsset
+    nullable: true
+  colorGradingEnable:
+    type: bool
+  enable:
+    type: bool
+
+methods:
+  -
+    name: Clone
+    returns:
+      type: ColorCorrectionData
