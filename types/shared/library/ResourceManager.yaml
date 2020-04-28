@@ -37,6 +37,14 @@ methods:
       type: DataContainer
       nullable: true
   -
+    name: SearchForDataContainer
+    params:
+      name:
+        type: string
+    returns:
+      type: DataContainer
+      nullable: true
+  -
     name: FindInstanceByGuid
     params:
       partitionGuid:

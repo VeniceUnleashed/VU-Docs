@@ -12,6 +12,7 @@ title: ResourceManager
 | **[UnmountSuperBundle](#unmountsuperbundle)**(superbundle: string) | void |
 | **[GetSettings](#getsettings)**(settingsType: string) | [DataContainer](/vext/ref/shared/type/datacontainer) \| nil |
 | **[LookupDataContainer](#lookupdatacontainer)**(compartment: [ResourceCompartment](/vext/ref/shared/type/resourcecompartment), name: string) | [DataContainer](/vext/ref/shared/type/datacontainer) \| nil |
+| **[SearchForDataContainer](#searchfordatacontainer)**(name: string) | [DataContainer](/vext/ref/shared/type/datacontainer) \| nil |
 | **[FindInstanceByGuid](#findinstancebyguid)**(partitionGuid: [Guid](/vext/ref/shared/type/guid), instanceGuid: [Guid](/vext/ref/shared/type/guid)) | [DataContainer](/vext/ref/shared/type/datacontainer) \| nil |
 | **[SearchForInstanceByGuid](#searchforinstancebyguid)**(instanceGuid: [Guid](/vext/ref/shared/type/guid)) | [DataContainer](/vext/ref/shared/type/datacontainer) \| nil |
 | **[FindDatabasePartition](#finddatabasepartition)**(partitionGuid: [Guid](/vext/ref/shared/type/guid)) | [DatabasePartition](/vext/ref/shared/type/databasepartition) \| nil |
@@ -77,6 +78,22 @@ title: ResourceManager
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | **compartment** | [ResourceCompartment](/vext/ref/shared/type/resourcecompartment) |  |
+| **name** | string |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[DataContainer](/vext/ref/shared/type/datacontainer)** \| **nil** |  |
+
+### SearchForDataContainer {#searchfordatacontainer}
+
+> **SearchForDataContainer**(name: string): [DataContainer](/vext/ref/shared/type/datacontainer) \| nil
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
 | **name** | string |  |
 
 #### Returns
