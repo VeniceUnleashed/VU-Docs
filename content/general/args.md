@@ -87,12 +87,6 @@ These arguments only have an effect on the VU client.
 
 Enables WebUI debugging at `http://localhost:8884`.
 
----
-
-> `-multi`
-
-Allows launching multiple instances of the VU client.
-
 ## Server arguments
 
 These arguments only have an effect on the VU server.
