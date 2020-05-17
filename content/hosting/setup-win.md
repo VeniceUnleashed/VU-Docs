@@ -10,7 +10,7 @@ First, download the latest version of VU from the [downloads page](https://venic
 
 ## Setting up the VU server
 
-Each server instance you wish to run must have its own server instance directory. This is a directory containing configuration files, mods, and other necessary files to run your server. By default, this folder will be in `My Documents\Battlefield 3\Server` (for more information on how to set up multiple server instances refer to the [server configuration guide](/hosting/config)).
+Each server instance you wish to run must have its own server instance directory. This is a directory containing configuration files, mods, and other necessary files to run your server. By default, this folder will be in `My Documents\Battlefield 3\Server` (for more information on how to set up server instances refer to the [server configuration guide](/hosting/config)).
 
 If this folder doesn't exist, you will need to create it. Remember the server key you generated and downloaded [previously](/hosting/prereq)? Place it in the `Server` folder and name it `server.key`. You should now be ready to start a VU server.
 
