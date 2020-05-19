@@ -105,6 +105,9 @@ const linkifyMethod = (method, allMethods) => {
 const stringifyType = (typeInfo, context, verifyType, bold) => {
   let typeString = '';
 
+  if (typeInfo.nestedTable || typeInfo.nestedArray) {
+    typeString += '(';
+  }
   if (bold) {
     typeString += `**`;
   }
@@ -119,6 +122,12 @@ const stringifyType = (typeInfo, context, verifyType, bold) => {
 
   if (bold) {
     typeString += `**`;
+  }
+
+  if (typeInfo.nestedTable) {
+    typeString += '{})';
+  } else if (typeInfo.nestedArray) {
+    typeString += '[])';
   }
 
   if (typeInfo.array) {
