@@ -58,6 +58,16 @@ properties:
   controlledEntryId:
     type: int
     readOnly: true
+  customization:
+    type: DataContainer
+    readOnly: true
+    nullable: true
+    description: The CharacterCustomizationAsset currently applied to this player's soldier.
+  selectedUnlocks:
+    type: DataContainer
+    table: true
+    readOnly: true
+    description: A table of specializations (UnlockAssetBase) this player currently has equipped.
 
 methods:
   -

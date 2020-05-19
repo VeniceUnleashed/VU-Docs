@@ -32,6 +32,11 @@ title: Player
 | {{< prop "controlledEntryId" true >}} | int |
 | {{< prop "attachedControllable" true >}} | [ControllableEntity](/vext/ref/server/type/controllableentity) \| nil |
 | {{< prop "controlledControllable" true >}} | [ControllableEntity](/vext/ref/server/type/controllableentity) \| nil |
+| {{< prop "customization" true >}} | [DataContainer](/vext/ref/shared/type/datacontainer) \| nil |
+| {{< prop "selectedUnlocks" true >}} | [DataContainer](/vext/ref/shared/type/datacontainer){} |
+| {{< prop "visualUnlocks" true >}} | [DataContainer](/vext/ref/shared/type/datacontainer){} |
+| {{< prop "weapons" true >}} | [DataContainer](/vext/ref/shared/type/datacontainer)[] |
+| {{< prop "weaponUnlocks" true >}} | ([DataContainer](/vext/ref/shared/type/datacontainer){})[] |
 
 ### Methods
 
@@ -166,6 +171,36 @@ title: Player
 ### {{% prop-heading "controlledControllable" true %}}
 
 > **[ControllableEntity](/vext/ref/server/type/controllableentity)** \| **nil**
+
+### {{% prop-heading "customization" true %}}
+
+> **[DataContainer](/vext/ref/shared/type/datacontainer)** \| **nil**
+
+The [CharacterCustomizationAsset](/vext/ref/fb/charactercustomizationasset) currently applied to this player's soldier.
+
+### {{% prop-heading "selectedUnlocks" true %}}
+
+> **[DataContainer](/vext/ref/shared/type/datacontainer)**{}
+
+A table of specializations ([UnlockAssetBase](/vext/ref/fb/unlockassetbase)) this player currently has equipped.
+
+### {{% prop-heading "visualUnlocks" true %}}
+
+> **[DataContainer](/vext/ref/shared/type/datacontainer)**{}
+
+A table of visual unlocks ([UnlockAsset](/vext/ref/fb/unlockasset)) this player currently has equipped.
+
+### {{% prop-heading "weapons" true %}}
+
+> **[DataContainer](/vext/ref/shared/type/datacontainer)**[]
+
+An array of weapons ([SoldierWeaponUnlockAsset](/vext/ref/fb/soldierweaponunlockasset)) this player currently has equipped. This array can be indexed using [WeaponSlot](/vext/ref/fb/weaponslot) `+ 1`. A weapon at a given slot may be `nil` if nothing is equipped.
+
+### {{% prop-heading "weaponUnlocks" true %}}
+
+> (**[DataContainer](/vext/ref/shared/type/datacontainer)**{})[]
+
+An array containing tables of equipped unlocks ([UnlockAssetBase](/vext/ref/fb/unlockassetbase)) for each weapon this player has. This array can be indexed using [WeaponSlot](/vext/ref/fb/weaponslot) `+ 1`. The unlocks may be `nil` if there is no weapon equipped at a given slot.
 
 ## Methods
 

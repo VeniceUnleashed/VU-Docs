@@ -76,6 +76,32 @@ properties:
     type: ControllableEntity
     readOnly: true
     nullable: true
+  customization:
+    type: DataContainer
+    readOnly: true
+    nullable: true
+    description: The CharacterCustomizationAsset currently applied to this player's soldier.
+  selectedUnlocks:
+    type: DataContainer
+    table: true
+    readOnly: true
+    description: A table of specializations (UnlockAssetBase) this player currently has equipped.
+  visualUnlocks:
+    type: DataContainer
+    table: true
+    readOnly: true
+    description: A table of visual unlocks (UnlockAsset) this player currently has equipped.
+  weapons:
+    type: DataContainer
+    array: true
+    readOnly: true
+    description: An array of weapons (SoldierWeaponUnlockAsset) this player currently has equipped. This array can be indexed using WeaponSlot `+ 1`. A weapon at a given slot may be `nil` if nothing is equipped.
+  weaponUnlocks:
+    type: DataContainer
+    array: true
+    nestedTable: true
+    readOnly: true
+    description: An array containing tables of equipped unlocks (UnlockAssetBase) for each weapon this player has. This array can be indexed using WeaponSlot `+ 1`. The unlocks may be `nil` if there is no weapon equipped at a given slot.
 
 methods:
   -

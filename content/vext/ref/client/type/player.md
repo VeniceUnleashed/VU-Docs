@@ -25,6 +25,8 @@ title: Player
 | {{< prop "score" true >}} | int |
 | {{< prop "input" true >}} | [EntryInput](/vext/ref/shared/type/entryinput) \| nil |
 | {{< prop "controlledEntryId" true >}} | int |
+| {{< prop "customization" true >}} | [DataContainer](/vext/ref/shared/type/datacontainer) \| nil |
+| {{< prop "selectedUnlocks" true >}} | [DataContainer](/vext/ref/shared/type/datacontainer){} |
 
 ### Methods
 
@@ -107,6 +109,18 @@ title: Player
 ### {{% prop-heading "controlledEntryId" true %}}
 
 > **int**
+
+### {{% prop-heading "customization" true %}}
+
+> **[DataContainer](/vext/ref/shared/type/datacontainer)** \| **nil**
+
+The [CharacterCustomizationAsset](/vext/ref/fb/charactercustomizationasset) currently applied to this player's soldier.
+
+### {{% prop-heading "selectedUnlocks" true %}}
+
+> **[DataContainer](/vext/ref/shared/type/datacontainer)**{}
+
+A table of specializations ([UnlockAssetBase](/vext/ref/fb/unlockassetbase)) this player currently has equipped.
 
 ## Methods
 
