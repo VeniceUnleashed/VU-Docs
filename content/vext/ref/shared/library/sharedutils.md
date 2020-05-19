@@ -15,7 +15,8 @@ title: SharedUtils
 | **[IsServerModule](#isservermodule)**() | bool |
 | **[SerializeTable](#serializetable)**(table: table) | string |
 | **[GetContentPackages](#getcontentpackages)**() | string{} |
-| **[GetLevelName](#getlevelname)**() | string |
+| **[GetLevelName](#getlevelname)**() | string \| nil |
+| **[GetCurrentGameMode](#getcurrentgamemode)**() | string \| nil |
 | **[GetTickrate](#gettickrate)**() | float |
 
 ## Methods
@@ -98,13 +99,23 @@ title: SharedUtils
 
 ### GetLevelName {#getlevelname}
 
-> **GetLevelName**(): string
+> **GetLevelName**(): string \| nil
 
 #### Returns
 
 | Type | Description |
 | ---- | ----------- |
-| **string** |  |
+| **string** \| **nil** |  |
+
+### GetCurrentGameMode {#getcurrentgamemode}
+
+> **GetCurrentGameMode**(): string \| nil
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **string** \| **nil** |  |
 
 ### GetTickrate {#gettickrate}
 

@@ -39,6 +39,12 @@ methods:
     name: GetLevelName
     returns:
       type: string
+      nullable: true
+  -
+    name: GetCurrentGameMode
+    returns:
+      type: string
+      nullable: true
   -
     name: GetTickrate
     returns:
