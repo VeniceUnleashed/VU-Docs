@@ -20,7 +20,7 @@ properties:
   internalHealth:
     type: float
   velocity:
-    type: float
+    type: Vec3
     readOnly: true
   defaultMaterial:
     type: DataContainer

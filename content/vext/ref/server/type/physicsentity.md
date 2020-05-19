@@ -19,7 +19,7 @@ Inherits from [GameEntity](/vext/ref/server/type/gameentity)
 | Name | Type |
 | ---- | ---- |
 | {{< prop "internalHealth" >}} | float |
-| {{< prop "velocity" true >}} | float |
+| {{< prop "velocity" true >}} | [Vec3](/vext/ref/shared/type/vec3) |
 | {{< prop "defaultMaterial" true >}} | [DataContainer](/vext/ref/shared/type/datacontainer) \| nil |
 | {{< prop "belongsInPhysicsWorld" true >}} | bool |
 | {{< prop "isPredestructible" true >}} | bool |
@@ -82,7 +82,7 @@ Inherits from [GameEntity](/vext/ref/server/type/gameentity)
 
 ### {{% prop-heading "velocity" true %}}
 
-> **float**
+> **[Vec3](/vext/ref/shared/type/vec3)**
 
 ### {{% prop-heading "defaultMaterial" true %}}
 
