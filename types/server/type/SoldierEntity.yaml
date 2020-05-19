@@ -70,6 +70,12 @@ properties:
   weaponsComponent:
     type: SoldierWeaponsComponent
     readOnly: true
+  pose:
+    type: CharacterPoseType
+    readOnly: true
+  pendingPose:
+    type: CharacterPoseType
+    readOnly: true
 
 methods:
   -

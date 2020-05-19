@@ -37,6 +37,8 @@ Inherits from [ControllableEntity](/vext/ref/server/type/controllableentity)
 | {{< prop "isReloading" true >}} | bool |
 | {{< prop "health" >}} | float |
 | {{< prop "weaponsComponent" true >}} | [SoldierWeaponsComponent](/vext/ref/server/type/soldierweaponscomponent) |
+| {{< prop "pose" true >}} | [CharacterPoseType](/vext/ref/fb/characterposetype) |
+| {{< prop "pendingPose" true >}} | [CharacterPoseType](/vext/ref/fb/characterposetype) |
 
 ### Methods
 
@@ -181,6 +183,14 @@ Inherits from [ControllableEntity](/vext/ref/server/type/controllableentity)
 ### {{% prop-heading "weaponsComponent" true %}}
 
 > **[SoldierWeaponsComponent](/vext/ref/server/type/soldierweaponscomponent)**
+
+### {{% prop-heading "pose" true %}}
+
+> **[CharacterPoseType](/vext/ref/fb/characterposetype)**
+
+### {{% prop-heading "pendingPose" true %}}
+
+> **[CharacterPoseType](/vext/ref/fb/characterposetype)**
 
 ## Methods
 

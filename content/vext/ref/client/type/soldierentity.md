@@ -40,6 +40,8 @@ Inherits from [ControllableEntity](/vext/ref/client/type/controllableentity)
 | {{< prop "isInteractiveManDown" true >}} | bool |
 | {{< prop "isFiring" true >}} | bool |
 | {{< prop "isReloading" true >}} | bool |
+| {{< prop "pose" true >}} | [CharacterPoseType](/vext/ref/fb/characterposetype) |
+| {{< prop "pendingPose" true >}} | [CharacterPoseType](/vext/ref/fb/characterposetype) |
 
 ### Methods
 
@@ -192,6 +194,14 @@ Inherits from [ControllableEntity](/vext/ref/client/type/controllableentity)
 ### {{% prop-heading "isReloading" true %}}
 
 > **bool**
+
+### {{% prop-heading "pose" true %}}
+
+> **[CharacterPoseType](/vext/ref/fb/characterposetype)**
+
+### {{% prop-heading "pendingPose" true %}}
+
+> **[CharacterPoseType](/vext/ref/fb/characterposetype)**
 
 ## Methods
 
