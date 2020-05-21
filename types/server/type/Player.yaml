@@ -44,10 +44,8 @@ properties:
     nullable: true
   teamId:
     type: TeamId
-    readOnly: true
   squadId:
     type: SquadId
-    readOnly: true
   isAllowedToSpawn:
     type: bool
   selectedKit:
