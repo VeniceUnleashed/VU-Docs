@@ -14,6 +14,14 @@ title: NetEvents
 | **[SendToLocal](#sendtolocal)**(eventName: string, player: [Player](/vext/ref/server/type/player), ...args: any) | void |
 | **[Broadcast](#broadcast)**(eventName: string, ...args: any) | void |
 | **[BroadcastLocal](#broadcastlocal)**(eventName: string, ...args: any) | void |
+| **[SendUnreliableTo](#sendunreliableto)**(eventName: string, player: [Player](/vext/ref/server/type/player), ...args: any) | void |
+| **[SendUnreliableToLocal](#sendunreliabletolocal)**(eventName: string, player: [Player](/vext/ref/server/type/player), ...args: any) | void |
+| **[BroadcastUnreliable](#broadcastunreliable)**(eventName: string, ...args: any) | void |
+| **[BroadcastUnreliableLocal](#broadcastunreliablelocal)**(eventName: string, ...args: any) | void |
+| **[SendUnreliableOrderedTo](#sendunreliableorderedto)**(eventName: string, player: [Player](/vext/ref/server/type/player), ...args: any) | void |
+| **[SendUnreliableOrderedToLocal](#sendunreliableorderedtolocal)**(eventName: string, player: [Player](/vext/ref/server/type/player), ...args: any) | void |
+| **[BroadcastUnreliableOrdered](#broadcastunreliableordered)**(eventName: string, ...args: any) | void |
+| **[BroadcastUnreliableOrderedLocal](#broadcastunreliableorderedlocal)**(eventName: string, ...args: any) | void |
 | **[Unsubscribe](#unsubscribe)**() | void |
 | **[Unsubscribe](#unsubscribe-1)**(eventName: string) | void |
 
@@ -92,6 +100,98 @@ title: NetEvents
 ### BroadcastLocal {#broadcastlocal}
 
 > **BroadcastLocal**(eventName: string, ...args: any)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **eventName** | string |  |
+| ...**args** | any |  |
+
+### SendUnreliableTo {#sendunreliableto}
+
+> **SendUnreliableTo**(eventName: string, player: [Player](/vext/ref/server/type/player), ...args: any)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **eventName** | string |  |
+| **player** | [Player](/vext/ref/server/type/player) |  |
+| ...**args** | any |  |
+
+### SendUnreliableToLocal {#sendunreliabletolocal}
+
+> **SendUnreliableToLocal**(eventName: string, player: [Player](/vext/ref/server/type/player), ...args: any)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **eventName** | string |  |
+| **player** | [Player](/vext/ref/server/type/player) |  |
+| ...**args** | any |  |
+
+### BroadcastUnreliable {#broadcastunreliable}
+
+> **BroadcastUnreliable**(eventName: string, ...args: any)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **eventName** | string |  |
+| ...**args** | any |  |
+
+### BroadcastUnreliableLocal {#broadcastunreliablelocal}
+
+> **BroadcastUnreliableLocal**(eventName: string, ...args: any)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **eventName** | string |  |
+| ...**args** | any |  |
+
+### SendUnreliableOrderedTo {#sendunreliableorderedto}
+
+> **SendUnreliableOrderedTo**(eventName: string, player: [Player](/vext/ref/server/type/player), ...args: any)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **eventName** | string |  |
+| **player** | [Player](/vext/ref/server/type/player) |  |
+| ...**args** | any |  |
+
+### SendUnreliableOrderedToLocal {#sendunreliableorderedtolocal}
+
+> **SendUnreliableOrderedToLocal**(eventName: string, player: [Player](/vext/ref/server/type/player), ...args: any)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **eventName** | string |  |
+| **player** | [Player](/vext/ref/server/type/player) |  |
+| ...**args** | any |  |
+
+### BroadcastUnreliableOrdered {#broadcastunreliableordered}
+
+> **BroadcastUnreliableOrdered**(eventName: string, ...args: any)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **eventName** | string |  |
+| ...**args** | any |  |
+
+### BroadcastUnreliableOrderedLocal {#broadcastunreliableorderedlocal}
+
+> **BroadcastUnreliableOrderedLocal**(eventName: string, ...args: any)
 
 #### Parameters
 

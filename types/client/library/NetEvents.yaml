@@ -39,6 +39,38 @@ methods:
         type: any
         variadic: true
   -
+    name: SendUnreliable
+    params:
+      eventName:
+        type: string
+      args:
+        type: any
+        variadic: true
+  -
+    name: SendUnreliableLocal
+    params:
+      eventName:
+        type: string
+      args:
+        type: any
+        variadic: true
+  -
+    name: SendUnreliableOrdered
+    params:
+      eventName:
+        type: string
+      args:
+        type: any
+        variadic: true
+  -
+    name: SendUnreliableOrderedLocal
+    params:
+      eventName:
+        type: string
+      args:
+        type: any
+        variadic: true
+  -
     name: Unsubscribe
   -
     name: Unsubscribe

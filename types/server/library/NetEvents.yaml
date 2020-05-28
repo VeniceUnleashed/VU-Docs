@@ -59,6 +59,78 @@ methods:
         type: any
         variadic: true
   -
+    name: SendUnreliableTo
+    params:
+      eventName:
+        type: string
+      player:
+        type: Player
+      args:
+        type: any
+        variadic: true
+  -
+    name: SendUnreliableToLocal
+    params:
+      eventName:
+        type: string
+      player:
+        type: Player
+      args:
+        type: any
+        variadic: true
+  -
+    name: BroadcastUnreliable
+    params:
+      eventName:
+        type: string
+      args:
+        type: any
+        variadic: true
+  -
+    name: BroadcastUnreliableLocal
+    params:
+      eventName:
+        type: string
+      args:
+        type: any
+        variadic: true
+  -
+    name: SendUnreliableOrderedTo
+    params:
+      eventName:
+        type: string
+      player:
+        type: Player
+      args:
+        type: any
+        variadic: true
+  -
+    name: SendUnreliableOrderedToLocal
+    params:
+      eventName:
+        type: string
+      player:
+        type: Player
+      args:
+        type: any
+        variadic: true
+  -
+    name: BroadcastUnreliableOrdered
+    params:
+      eventName:
+        type: string
+      args:
+        type: any
+        variadic: true
+  -
+    name: BroadcastUnreliableOrderedLocal
+    params:
+      eventName:
+        type: string
+      args:
+        type: any
+        variadic: true
+  -
     name: Unsubscribe
   -
     name: Unsubscribe

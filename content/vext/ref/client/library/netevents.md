@@ -12,6 +12,10 @@ title: NetEvents
 | **[Subscribe](#subscribe-1)**(eventName: string, context: any, callback: callable) | [NetEvent](/vext/ref/client/type/netevent) |
 | **[Send](#send)**(eventName: string, ...args: any) | void |
 | **[SendLocal](#sendlocal)**(eventName: string, ...args: any) | void |
+| **[SendUnreliable](#sendunreliable)**(eventName: string, ...args: any) | void |
+| **[SendUnreliableLocal](#sendunreliablelocal)**(eventName: string, ...args: any) | void |
+| **[SendUnreliableOrdered](#sendunreliableordered)**(eventName: string, ...args: any) | void |
+| **[SendUnreliableOrderedLocal](#sendunreliableorderedlocal)**(eventName: string, ...args: any) | void |
 | **[Unsubscribe](#unsubscribe)**() | void |
 | **[Unsubscribe](#unsubscribe-1)**(eventName: string) | void |
 
@@ -66,6 +70,50 @@ title: NetEvents
 ### SendLocal {#sendlocal}
 
 > **SendLocal**(eventName: string, ...args: any)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **eventName** | string |  |
+| ...**args** | any |  |
+
+### SendUnreliable {#sendunreliable}
+
+> **SendUnreliable**(eventName: string, ...args: any)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **eventName** | string |  |
+| ...**args** | any |  |
+
+### SendUnreliableLocal {#sendunreliablelocal}
+
+> **SendUnreliableLocal**(eventName: string, ...args: any)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **eventName** | string |  |
+| ...**args** | any |  |
+
+### SendUnreliableOrdered {#sendunreliableordered}
+
+> **SendUnreliableOrdered**(eventName: string, ...args: any)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **eventName** | string |  |
+| ...**args** | any |  |
+
+### SendUnreliableOrderedLocal {#sendunreliableorderedlocal}
+
+> **SendUnreliableOrderedLocal**(eventName: string, ...args: any)
 
 #### Parameters
 
