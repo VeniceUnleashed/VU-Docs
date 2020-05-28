@@ -14,6 +14,8 @@ title: RCON
 | **[RegisterCommand](#registercommand-1)**(command: string, flags: [RemoteCommandFlag](/vext/ref/shared/type/remotecommandflag), context: any, callback: callable) | int |
 | **[DeregisterCommand](#deregistercommand)**(handle: int) | void |
 | **[GetServerGuid](#getserverguid)**() | [Guid](/vext/ref/shared/type/guid) \| nil |
+| **[TriggerEvent](#triggerevent)**(event: string) | void |
+| **[TriggerEvent](#triggerevent-1)**(event: string, args: string{}) | void |
 
 ## Methods
 
@@ -106,4 +108,25 @@ title: RCON
 | Type | Description |
 | ---- | ----------- |
 | **[Guid](/vext/ref/shared/type/guid)** \| **nil** |  |
+
+### TriggerEvent {#triggerevent}
+
+> **TriggerEvent**(event: string)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **event** | string |  |
+
+### TriggerEvent {#triggerevent-1}
+
+> **TriggerEvent**(event: string, args: string{})
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **event** | string |  |
+| **args** | string{} |  |
 

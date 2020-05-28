@@ -55,3 +55,16 @@ methods:
     returns:
       type: Guid
       nullable: true
+  -
+    name: TriggerEvent
+    params:
+      event:
+        type: string
+  -
+    name: TriggerEvent
+    params:
+      event:
+        type: string
+      args:
+        type: string
+        table: true
