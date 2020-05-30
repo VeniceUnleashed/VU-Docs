@@ -7,6 +7,7 @@ methods:
     params:
       message:
         type: string
+        description: Text message to send. Limited to 127 characters.
     returns:
       type: bool
     example: |
@@ -16,6 +17,7 @@ methods:
     params:
       message:
         type: string
+        description: Text message to send. Limited to 127 characters.
       toTeam:
         type: TeamId
     returns:
@@ -27,9 +29,92 @@ methods:
     params:
       message:
         type: string
+        description: Text message to send. Limited to 127 characters.
       toTeam:
         type: TeamId
       toSquad:
         type: SquadId
+    returns:
+      type: bool
+  -
+    name: SendMessage
+    params:
+      message:
+        type: string
+        description: Text message to send. Limited to 127 characters.
+      toPlayer:
+        type: Player
+    returns:
+      type: bool
+  -
+    name: SendMessage
+    params:
+      message:
+        type: string
+        description: Text message to send. Limited to 127 characters.
+      toPlayers:
+        type: Player
+        table: true
+    returns:
+      type: bool
+  -
+    name: Yell
+    params:
+      message:
+        type: string
+        description: Text message to send. Limited to 255 characters.
+      duration:
+        type: float
+    returns:
+      type: bool
+  -
+    name: Yell
+    params:
+      message:
+        type: string
+        description: Text message to send. Limited to 255 characters.
+      duration:
+        type: float
+      toTeam:
+        type: TeamId
+    returns:
+      type: bool
+  -
+    name: Yell
+    params:
+      message:
+        type: string
+        description: Text message to send. Limited to 255 characters.
+      duration:
+        type: float
+      toTeam:
+        type: TeamId
+      toSquad:
+        type: SquadId
+    returns:
+      type: bool
+  -
+    name: Yell
+    params:
+      message:
+        type: string
+        description: Text message to send. Limited to 255 characters.
+      duration:
+        type: float
+      toPlayer:
+        type: Player
+    returns:
+      type: bool
+  -
+    name: Yell
+    params:
+      message:
+        type: string
+        description: Text message to send. Limited to 255 characters.
+      duration:
+        type: float
+      toPlayers:
+        type: Player
+        table: true
     returns:
       type: bool
