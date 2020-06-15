@@ -79,6 +79,10 @@ A key => value mapping of other mods this mod depends on. The key is the name of
 
 There's a built-in dependency named `veniceext`, which refers to the VeniceEXT engine itself. The engine is versioned, and mods can define a dependency to it to specify compatibility. For a list of VeniceEXT versions and their associated changes refer to the [VeniceEXT changelog](/vext/changelog).
 
+### `Tags`
+
+An array of strings that will be shown in the server list when this mod is loaded and can be used by players to discover servers running specific types of mods. For example, if you're creating a role-playing mod you could add an `rp` tag, if you're creating a realism-focused mod you could add `realism`, etc. Tags can only contain lower-case latin characters, numbers, and dashes (`-`). 
+
 ## Creating your first script
 
 It's now time to create your first script. Inside your mod folder create a new folder named `ext` (this folder should be inside the same folder your `mod.json` file is). Inside that folder, create another folder named `server` and in that folder create a new file named `__init__.lua`. Open this file with your text editor and type in the following:
