@@ -73,3 +73,7 @@ Fades the screen of all the currently connected players to black.
 ## `vu.FadeInAll`
 
 Fades the screen of all the currently connected players from black back to normal.
+
+## `vu.ServerBanner`
+
+A URL pointing to a custom server banner image that will be shown to users in the VU server browser. This must be an http or https URL pointing to a JPEG image with the `.jpg` extension. The recommended resolution for banner images is `1378x162`. Using inappropriate or hateful images will result in your server being delisted and your server hosting privileges being revoked.
