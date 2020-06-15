@@ -81,7 +81,7 @@ There's a built-in dependency named `veniceext`, which refers to the VeniceEXT e
 
 ### `Tags`
 
-An array of strings that will be shown in the server list when this mod is loaded and can be used by players to discover servers running specific types of mods. For example, if you're creating a role-playing mod you could add an `rp` tag, if you're creating a realism-focused mod you could add `realism`, etc. Tags can only contain lower-case latin characters, numbers, and dashes (`-`). 
+An array of strings that will be shown in the server list when this mod is loaded and can be used by players to discover servers running specific types of mods. For example, if you're creating a role-playing mod you could add an `rp` tag, if you're creating a realism-focused mod you could add `realism`, etc. Tags can only contain lower-case latin characters, numbers, and dashes (`-`). The purpose of tags is discoverability so avoid adding tags that would be irrelevant to players looking for a specific type of server.
 
 ## Creating your first script
 
