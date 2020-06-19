@@ -1,14 +1,21 @@
 name: Guid
 type: class
 
-constructor:
+constructors:
   -
     params:
       guid:
         type: string
       format:
         type: string
-        default: D
+        default: "'D'"
+        description: The format the GUID string is in.
+    description: |
+      Parses a GUID string into a Guid type. The `format` parameter can be one of the following values and dictates how to parse the string:
+        - `D`: GUID with dashes (eg. `68F0A461-A947-40E1-BEC4-992EFDFF3735`)
+        - `N`: GUID without dashes (eg. `68F0A461A94740E1BEC4992EFDFF3735`)
+        - `B`: GUID with dashes and braces (eg. `{68F0A461-A947-40E1-BEC4-992EFDFF3735}`)
+        - `P`: GUID with dashes and parentheses (eg. `(68F0A461-A947-40E1-BEC4-992EFDFF3735)`)
 
 properties:
   a:
@@ -48,8 +55,18 @@ properties:
 methods:
   -
     name: ToString
+    params:
+      format:
+        type: string
+        description: The way to format the GUID string.
     returns:
       type: string
+    description: |
+      Converts the Guid to its string representation. The `format` parameter can be one of the following values:
+      - `D`: GUID with dashes (eg. `68F0A461-A947-40E1-BEC4-992EFDFF3735`)
+      - `N`: GUID without dashes (eg. `68F0A461A94740E1BEC4992EFDFF3735`)
+      - `B`: GUID with dashes and braces (eg. `{68F0A461-A947-40E1-BEC4-992EFDFF3735}`)
+      - `P`: GUID with dashes and parentheses (eg. `(68F0A461-A947-40E1-BEC4-992EFDFF3735)`)
   -
     name: Clone
     returns:

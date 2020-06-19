@@ -4,6 +4,12 @@ title: Guid
 
 ## Summary
 
+### Constructors
+
+|  |
+| --- |
+| **[Guid](#constructor-0)**(guid: string, format: string = 'D') |
+
 ### Properties
 
 | Name | Type |
@@ -24,7 +30,7 @@ title: Guid
 
 | Method | Returns |
 | ------ | ------- |
-| **[ToString](#tostring)**() | string |
+| **[ToString](#tostring)**(format: string) | string |
 | **[Clone](#clone)**() | [Guid](/vext/ref/shared/type/guid) |
 
 ### Operators
@@ -32,6 +38,26 @@ title: Guid
 | Operator | Rhs | Returns |
 | -------- | --- | ------- |
 | **[==](#op-eq)** | [Guid](/vext/ref/shared/type/guid) | bool |
+
+## Constructors
+
+### Guid {#constructor-0}
+
+> **Guid**(guid: string, format: string = 'D')
+
+Parses a GUID string into a [Guid](/vext/ref/shared/type/guid) type. The `format` parameter can be one of the following values and dictates how to parse the string:
+  - `D`: GUID with dashes (eg. `68F0A461-A947-40E1-BEC4-992EFDFF3735`)
+  - `N`: GUID without dashes (eg. `68F0A461A94740E1BEC4992EFDFF3735`)
+  - `B`: GUID with dashes and braces (eg. `{68F0A461-A947-40E1-BEC4-992EFDFF3735}`)
+  - `P`: GUID with dashes and parentheses (eg. `(68F0A461-A947-40E1-BEC4-992EFDFF3735)`)
+
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **guid** | string |  |
+| **format** | string | The format the GUID string is in. |
 
 ## Properties
 
@@ -83,7 +109,20 @@ title: Guid
 
 ### ToString {#tostring}
 
-> **ToString**(): string
+> **ToString**(format: string): string
+
+Converts the [Guid](/vext/ref/shared/type/guid) to its string representation. The `format` parameter can be one of the following values:
+- `D`: GUID with dashes (eg. `68F0A461-A947-40E1-BEC4-992EFDFF3735`)
+- `N`: GUID without dashes (eg. `68F0A461A94740E1BEC4992EFDFF3735`)
+- `B`: GUID with dashes and braces (eg. `{68F0A461-A947-40E1-BEC4-992EFDFF3735}`)
+- `P`: GUID with dashes and parentheses (eg. `(68F0A461-A947-40E1-BEC4-992EFDFF3735)`)
+
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **format** | string | The way to format the GUID string. |
 
 #### Returns
 
