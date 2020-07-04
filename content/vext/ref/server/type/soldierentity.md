@@ -38,7 +38,7 @@ Inherits from [ControllableEntity](/vext/ref/server/type/controllableentity)
 | {{< prop "health" >}} | float |
 | {{< prop "weaponsComponent" true >}} | [SoldierWeaponsComponent](/vext/ref/server/type/soldierweaponscomponent) |
 | {{< prop "pose" true >}} | [CharacterPoseType](/vext/ref/fb/characterposetype) |
-| {{< prop "pendingPose" true >}} | [CharacterPoseType](/vext/ref/fb/characterposetype) |
+| {{< prop "pendingPose" >}} | [CharacterPoseType](/vext/ref/fb/characterposetype) |
 
 ### Methods
 
@@ -49,6 +49,7 @@ Inherits from [ControllableEntity](/vext/ref/server/type/controllableentity)
 | **[ApplyCustomization](#applycustomization)**(customizationData: [DataContainer](/vext/ref/shared/type/datacontainer)) | void |
 | **[ForceDead](#forcedead)**() | void |
 | **[SingleStepEntry](#singlestepentry)**(entryId: int) | void |
+| **[SetPose](#setpose)**(pose: [CharacterPoseType](/vext/ref/fb/characterposetype), immediately: bool, overridePending: bool) | void |
 
 ### Operators
 
@@ -188,7 +189,7 @@ Inherits from [ControllableEntity](/vext/ref/server/type/controllableentity)
 
 > **[CharacterPoseType](/vext/ref/fb/characterposetype)**
 
-### {{% prop-heading "pendingPose" true %}}
+### {{% prop-heading "pendingPose" %}}
 
 > **[CharacterPoseType](/vext/ref/fb/characterposetype)**
 
@@ -231,6 +232,18 @@ Inherits from [ControllableEntity](/vext/ref/server/type/controllableentity)
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | **entryId** | int |  |
+
+### SetPose {#setpose}
+
+> **SetPose**(pose: [CharacterPoseType](/vext/ref/fb/characterposetype), immediately: bool, overridePending: bool)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **pose** | [CharacterPoseType](/vext/ref/fb/characterposetype) |  |
+| **immediately** | bool |  |
+| **overridePending** | bool |  |
 
 ## Operators
 

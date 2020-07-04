@@ -75,7 +75,6 @@ properties:
     readOnly: true
   pendingPose:
     type: CharacterPoseType
-    readOnly: true
 
 methods:
   -
@@ -97,6 +96,15 @@ methods:
     params:
       entryId:
         type: int
+  -
+    name: SetPose
+    params:
+      pose:
+        type: CharacterPoseType
+      immediately:
+        type: bool
+      overridePending:
+        type: bool
 
 operators:
   -
