@@ -128,7 +128,7 @@ You can debug your WebUI on the fly by using the Chromium Dev Tools. To enable t
 
 > `vu.exe -dwebui`
 
-This will make the dev tools available locally on your computer at [http://localhost:8884](http://localhost:8884). Simply navigate to that webpage using the Chrome web browser after having joined your server, and you'll be able to see a live view of your UI. Keep in mind that the view will include the main menu UI. Your WebUI frame will be in an `iframe` inside the `frame-hell` container. You can also switch to the console context of your frame by using the dropdown at the top left of the console and selecting the context with the name of your mod.
+This will make the dev tools available locally on your computer at [http://localhost:8884](http://localhost:8884). Simply navigate to that webpage using the Chrome web browser (or any chromium-based browser) after having joined your server, and you'll be able to see a list of UIs for all the loaded mods. Keep in mind that the list will include the main menu UI and messing with it might break your client. Simply click on your mod from the list and you'll get a live view of your UI in the dev tools.
 
 ## Using Frostbite textures
 
