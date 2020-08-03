@@ -10,7 +10,7 @@ Below you can find a variety of guides for different VeniceEXT modding topics. Y
 ---
 
 [Introduction to VeniceEXT concepts](/vext/guides/concepts)  
-A runthrough of various VeniceEXT concepts that will help you get a better understanding of how VeniceEXT is structured and works.
+A run-through of various VeniceEXT concepts that will help you get a better understanding of how VeniceEXT is structured and works.
 
 ---
 

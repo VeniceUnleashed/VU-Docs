@@ -180,11 +180,11 @@ You'll often see type properties that contain a list (or sequence) of objects in
 
 ### Arrays
 
-The first sequence is an array. In the documentation it's shown as `TypeName{}`. In VEXT scripts these sequences are read-only lua tables. That means that they are a continous sequence of elements (a list without any gaps or `nil` items), can be accessed using the brackets syntax (`someArray[123]`, remember that indexing in lua starts at `1` and not `0`), and functions of the [table](http://www.lua.org/manual/5.4/manual.html#6.6) lua library can be used on them. Since these tables are read-only, changes to them (eg. via `table.insert(...)`) will not modify the real property.
+The first sequence is an array. In the documentation it's shown as `TypeName{}`. In VEXT scripts these sequences are read-only lua tables. That means that they are a continuous sequence of elements (a list without any gaps or `nil` items), can be accessed using the brackets syntax (`someArray[123]`, remember that indexing in lua starts at `1` and not `0`), and functions of the [table](http://www.lua.org/manual/5.4/manual.html#6.6) lua library can be used on them. Since these tables are read-only, changes to them (eg. via `table.insert(...)`) will not modify the real property.
 
 ### Vectors
 
-The other sequence is a vector. In the documentation it's shown as `TypeName[]`. In VEXT scripts these sequence are NOT tables, but work in similar ways. A major difference is that they don't have to be continuous (ie. a vector can contain items that are `nil`). They can still be accessed and iterated similarly to lua tables but cannot be manipulated using the [table](http://www.lua.org/manual/5.4/manual.html#6.6) lua library. Instead, they have their own helper methods for manipulating them:
+The other sequence is a vector. In the documentation it's shown as `TypeName[]`. In VEXT scripts these sequence are NOT tables, but work in similar ways. A major difference is that they don't have to be continuous (i.e. a vector can contain items that are `nil`). They can still be accessed and iterated similarly to lua tables but cannot be manipulated using the [table](http://www.lua.org/manual/5.4/manual.html#6.6) lua library. Instead, they have their own helper methods for manipulating them:
 
 - `add(value)`: Adds a new value to the end of the vector, similar to `table.insert(...)`. Usage: `someVector:add(newValue)`
 - `insert(index, value)`: Inserts a value at the specified index. Usage: `someVector:insert(2, newValue)`

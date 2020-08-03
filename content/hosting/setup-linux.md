@@ -42,7 +42,7 @@ To create the prefix simply run the following command:
 WINEARCH=win32 wine wineboot
 ```
 
-If you're running this on a headless environment (ie. a server with no GUI) you will get a few errors and warnings. You can safely ignore them.
+If you're running this on a headless environment (i.e. a server with no GUI) you will get a few errors and warnings. You can safely ignore them.
 
 ## Getting Battlefield 3 and setting up the required folders
 
