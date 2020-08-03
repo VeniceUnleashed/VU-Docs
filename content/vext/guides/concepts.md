@@ -119,7 +119,7 @@ Hooks:Install('Soldier:Damage', 1, function(hook, soldier, info, giverInfo)
 end)
 ```
 
-Here we install a hook for the [Soldier:Damage](/vext/ref/server/hook/soldier_damage/) function and if the `giverInfo` parameter is not `nil` (the documentation tells us it could be) we check to see if its [damageType](/vext/ref/server/type/damagegiverinfo/#damagetype) property, which is of the [DamageType](/vext/ref/shared/type/damagetype/) enum type, corresponds to the `Melee` value. The general syntax for using enum values is `EnumType.ValueName`.
+Here we install a hook for the [Soldier:Damage](/vext/ref/server/hook/soldier_damage/) function and if the `giverInfo` parameter is not `nil` (the documentation tells us it could be) we check to see if its [damageType](/vext/ref/server/type/damagegiverinfo/#damagetype) property, which is of the [DamageType](/vext/ref/shared/type/damagetype/) enum type, corresponds to the `Melee` value. If it does, we print that `Someone was meleed.`. The general syntax for using enum values is `EnumType.ValueName`.
 
 #### Creating objects
 
@@ -133,7 +133,7 @@ local c = a + b
 print(c)
 ```
 
-Here we create two [Vec3](/vext/ref/shared/type/vec3/) objects, which represent 3-dimensional vectors with the given `x`, `y`, and `z` components. We the [add](/vext/ref/shared/type/vec3/#op-add) those two vectors and print the resulting vector.
+Here we create two [Vec3](/vext/ref/shared/type/vec3/) objects, which represent 3-dimensional vectors with the given `x`, `y`, and `z` components. We the [add](/vext/ref/shared/type/vec3/#op-add) those two vectors and print the resulting vector (in this case `(5, 7, 9)`.)
 
 #### Type inheritance
 
@@ -148,7 +148,7 @@ For our final example, we'll look at casting between different types. In many ca
 ```lua
 Events:Subscribe('Vehicle:Destroyed', function(vehicle, vehiclePoints, hotTeam)
   local controllable = ControllableEntity(vehicle)
-  print('Vehicle with ' .. tostring(controllable.entryCount) .. ' was destroyed!')
+  print('Vehicle with ' .. tostring(controllable.entryCount) .. ' entries was destroyed!')
 end)
 ```
 
@@ -184,7 +184,7 @@ The first sequence is an array. In the documentation it's shown as `TypeName{}`.
 
 ### Vectors
 
-The other sequence is a vector. In the documentation it's shown as `TypeName[]`. In VEXT scripts these sequence are NOT tables, but work in similar ways. A major difference is that they don't have to be continuous (i.e. a vector can contain items that are `nil`). They can still be accessed and iterated similarly to lua tables but cannot be manipulated using the [table](http://www.lua.org/manual/5.4/manual.html#6.6) lua library. Instead, they have their own helper methods for manipulating them:
+The other sequence is a vector. In the documentation it's shown as `TypeName[]`. In VEXT scripts these sequences are NOT tables, but work in similar ways. A major difference is that they don't have to be continuous (i.e. a vector can contain items that are `nil`). They can still be accessed and iterated similarly to lua tables but cannot be manipulated using the [table](http://www.lua.org/manual/5.4/manual.html#6.6) lua library. Instead, they have their own helper methods for manipulating them:
 
 - `add(value)`: Adds a new value to the end of the vector, similar to `table.insert(...)`. Usage: `someVector:add(newValue)`
 - `insert(index, value)`: Inserts a value at the specified index. Usage: `someVector:insert(2, newValue)`

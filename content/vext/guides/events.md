@@ -31,7 +31,7 @@ end
 Events:Subscribe('Player:Joining', OnPlayerJoining)
 ```
 
-In these examples we use the [Subscribe](/vext/ref/shared/library/events/#subscribe) method of the [Events](/vext/ref/shared/library/events/) library to say we want to receive the [Player:Joining](/vext/ref/server/event/player_joining/) event (we should note that this event will only get sent to server-side scripts). When a player joins, the function we provided will get called and the name of the player will be printed. This event also provides us with `playerGuid`, `ipAddress`, and `accountGuid` which we could also use.
+In these examples we use the [Subscribe](/vext/ref/shared/library/events/#subscribe) method of the [Events](/vext/ref/shared/library/events/) library to say we want to receive the [Player:Joining](/vext/ref/server/event/player_joining/) event (we should note that this event will only get sent to server-side scripts). When a player joins, the function we provided will get called and `Player "PlayerName" is joining!` will be printed (but instead of `PlayerName` it will be the real name of the player who is joining). This event also provides us with `playerGuid`, `ipAddress`, and `accountGuid` which we could also use.
 
 ### Event user data
 
