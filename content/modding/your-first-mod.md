@@ -109,19 +109,19 @@ If you don't see these in your server window, make sure that you've correctly wr
 
 Now it's time to see how client and shared scripts work. As explained previously, `client` scripts will only be executed on joining clients, while `shared` scripts will be executed on both joining clients and the server. Let's create two new folders next to the `server` folder named `client` and `shared`. As before, create a new file in each of these folders named `__init__.lua`. Let's also create another file in the shared folder called `common.lua`. Put the following content inside the files:
 
-### `shared/__init__.lua`
+### `ext/shared/__init__.lua`
 
 ```lua
 print('Hello from the shared world!')
 ```
 
-### `shared/common.lua`
+### `ext/shared/common.lua`
 
 ```lua
 MyModVersion = '1.0.0'
 ```
 
-### `client/__init__.lua`
+### `ext/client/__init__.lua`
 
 ```lua
 require('__shared/common')
@@ -130,7 +130,7 @@ print('Hello dear client!')
 print(MyModVersion)
 ```
 
-### `server/__init__.lua`
+### `ext/server/__init__.lua`
 
 ```lua
 require('__shared/common')
@@ -139,7 +139,7 @@ print('Hello world!')
 print(MyModVersion)
 ```
 
-This might seem a bit confusing at first, so let's explain what we're doing here. In the `shared/common.lua` file we're declaring a new global variable called `MyModVersion`. Then, from the client and server `__init__.lua` scripts, we're loading the `common.lua` script (using the `require()` directive), which makes it so its code gets executed and that variable gets declared. We then print this variable to the console. Also note that we're prefixing the required file path with `__shared`. This tells the VeniceEXT engine to look for that file inside the `Shared` folder (you can find more information about how requiring scripts works [here](/vext/guides/requiring-scripts)). You should now restart your server and also launch your VU client and join it. 
+This might seem a bit confusing at first, so let's explain what we're doing here. In the `ext/shared/common.lua` file we're declaring a new global variable called `MyModVersion`. Then, from the client and server `__init__.lua` scripts, we're loading the `common.lua` script (using the `require()` directive), which makes it so its code gets executed and that variable gets declared. We then print this variable to the console. Also note that we're prefixing the required file path with `__shared`. This tells the VeniceEXT engine to look for that file inside the `Shared` folder (you can find more information about how requiring scripts works [here](/vext/guides/requiring-scripts)). You should now restart your server and also launch your VU client and join it. 
 
 In the server console you should see something like this:
 
