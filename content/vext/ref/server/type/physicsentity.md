@@ -189,7 +189,7 @@ Inherits from [GameEntity](/vext/ref/server/type/gameentity)
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| **callback** | callable | A callback in the form `function(entity: Entity, damageInfo: DamageInfo, damageGiverInfo: DamageGiverInfo \| nil): bool`. |
+| **callback** | callable | A callback in the form `function(entity: Entity, damageInfo: DamageInfo, damageGiverInfo: DamageGiverInfo | nil): bool`. |
 
 #### Returns
 
@@ -206,7 +206,7 @@ Inherits from [GameEntity](/vext/ref/server/type/gameentity)
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | **context** | any | A context value to pass to the callback. |
-| **callback** | callable | A callback in the form `function(context: any, entity: Entity, damageInfo: DamageInfo, damageGiverInfo: DamageGiverInfo \| nil): bool`. |
+| **callback** | callable | A callback in the form `function(context: any, entity: Entity, damageInfo: DamageInfo, damageGiverInfo: DamageGiverInfo | nil): bool`. |
 
 #### Returns
 
@@ -232,7 +232,7 @@ Inherits from [GameEntity](/vext/ref/server/type/gameentity)
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| **callback** | callable | A callback in the form `function(entity: Entity, soldier: SoldierEntity \| nil): bool`. |
+| **callback** | callable | A callback in the form `function(entity: Entity, soldier: SoldierEntity | nil): bool`. |
 
 #### Returns
 
@@ -249,7 +249,7 @@ Inherits from [GameEntity](/vext/ref/server/type/gameentity)
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | **context** | any | A context value to pass to the callback. |
-| **callback** | callable | A callback in the form `function(context: any, entity: Entity, soldier: SoldierEntity \| nil): bool`. |
+| **callback** | callable | A callback in the form `function(context: any, entity: Entity, soldier: SoldierEntity | nil): bool`. |
 
 #### Returns
 

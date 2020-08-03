@@ -26,7 +26,7 @@ title: Console
 | ---- | ---- | ----------- |
 | **name** | string |  |
 | **description** | string |  |
-| **callback** | callable | A callback in the form `function(args: string{}): string \| nil`. |
+| **callback** | callable | A callback in the form `function(args: string{}): string | nil`. |
 
 #### Returns
 
@@ -55,7 +55,7 @@ end)
 | **name** | string |  |
 | **description** | string |  |
 | **context** | any |  |
-| **callback** | callable | A callback in the form `function(context: any, args: string{}): string \| nil`. |
+| **callback** | callable | A callback in the form `function(context: any, args: string{}): string | nil`. |
 
 #### Returns
 

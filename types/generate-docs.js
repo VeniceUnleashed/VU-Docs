@@ -67,7 +67,7 @@ const linkifyText = (text, context) => {
         lastWord = '';
       }
 
-      if (text[i] === '|') {
+      if (text[i] === '|' && !inQuote) {
         finalText += '\\|';
       } else {
         finalText += text[i];
