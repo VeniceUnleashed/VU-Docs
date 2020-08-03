@@ -19,8 +19,8 @@ Introduction to VeniceEXT events, which provide information about the game and i
 
 ---
 
-[Requiring scripts](/vext/guides/requiring-scripts)  
-Information on how to require Lua scripts from other scripts within the different VeniceEXT contexts.
+[Introduction to NetEvents](/vext/guides/netevents)  
+Introduction to VeniceEXT NetEvents, which allow for communication between server and client scripts.
 
 ---
 
@@ -29,8 +29,8 @@ Introduction to VeniceEXT hooks, which allow you to modify game behavior on-the-
 
 ---
 
-[Introduction to NetEvents](/vext/guides/netevents)  
-Introduction to VeniceEXT NetEvents, which allow for communication between server and client scripts.
+[Requiring scripts](/vext/guides/requiring-scripts)  
+Information on how to require Lua scripts from other scripts within the different VeniceEXT contexts.
 
 ---
 

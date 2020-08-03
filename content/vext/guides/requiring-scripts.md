@@ -1,4 +1,4 @@
 ---
 title: Requiring scripts
-weight: 3
+weight: 5
 ---
