@@ -1,0 +1,7 @@
+name: "Terrain:Load"
+type: hook
+
+params:
+  assetName:
+    type: string
+    readOnly: true
