@@ -54,7 +54,7 @@ This makes it so as soon as the mod gets loaded, the WebUI gets initialized and 
 
 ## Managing input and display order
 
-Since multiple WebUI frames can be active at a give time, one will be displayed on top of the other, which means that input will be received only by the one that's on top. Also, the game will often disable UI input, which means that a user will not be able to interact with your UI (such as when a user spawns in-game). Using JavaScript, the UI can request input from the game and change its display order. 
+Since multiple WebUI frames can be active at a give time, one will be displayed on top of the other. Also, the game will often disable UI input, which means that a user will not be able to interact with your UI (such as when a user spawns in-game). Using JavaScript, the UI can request input from the game and change its display order. 
 
 WebUI frames have a global function that can be used to interact with the modding engine: `WebUI.Call(...)`. The first parameter to this function is the operation the WebUI wants to perform and the rest are parameters to that operation (where relevant). For example, here's how you would enable keyboard input in your UI:
 
@@ -74,7 +74,7 @@ Sends this WebUI frame to the back, placing it behind all other frames.
 
 ### `WebUI.Call('EnableKeyboard')`
 
-Enables keyboard input for this frame. This means that any key inputs will be sent to the WebUI. This also brings the frame to the front and shows it if it's hidden.
+Enables keyboard input for this frame. This means that any key inputs will be sent to the WebUI.
 
 ### `WebUI.Call('DisableKeyboard')`
 
@@ -86,7 +86,7 @@ Resets the keyboard input to its expected in-game state.
 
 ### `WebUI.Call('EnableMouse')`
 
-Enables mouse input for this frame. This will show a cursor in-game and any mouse input will be passed to the WebUI. This also brings the frame to the front and shows it if it's hidden.
+Enables mouse input for this frame. This will show a cursor in-game and any mouse input will be passed to the WebUI.
 
 ### `WebUI.Call('DisableMouse')`
 
