@@ -1,5 +1,6 @@
 ---
-title: Introduction to NetEvents
+title: In-depth NetEvents guide
+description: In-depth guide to VeniceEXT NetEvents, which allow for communication between server and client scripts. Find out how to send them, receive them, and use them in more advanced ways.
 weight: 3
 ---
 

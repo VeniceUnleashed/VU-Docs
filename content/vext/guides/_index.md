@@ -14,18 +14,18 @@ A run-through of various VeniceEXT concepts that will help you get a better unde
 
 ---
 
-[Introduction to Events](/vext/guides/events)  
-Introduction to VeniceEXT events, which provide information about the game and its state. Find out how to subscribe to them, send them, and create custom ones.
+[In-depth Events guide](/vext/guides/events)  
+In-depth guide to VeniceEXT events, which provide information about the game and its state. Find out how to subscribe to them, send them, and create custom ones.
 
 ---
 
-[Introduction to NetEvents](/vext/guides/netevents)  
-Introduction to VeniceEXT NetEvents, which allow for communication between server and client scripts.
+[In-depth NetEvents guide](/vext/guides/netevents)  
+In-depth guide to VeniceEXT NetEvents, which allow for communication between server and client scripts. Find out how to send them, receive them, and use them in more advanced ways.
 
 ---
 
-[Introduction to Hooks](/vext/guides/hooks)  
-Introduction to VeniceEXT hooks, which allow you to modify game behavior on-the-fly. Find out how to install them and process them.
+[In-depth Hooks guide](/vext/guides/hooks)  
+In-depth guide to VeniceEXT hooks, which allow you to modify game behavior on-the-fly. Find out how to install them and process them.
 
 ---
 
@@ -55,7 +55,7 @@ Information about VeniceEXT's built-in class system and how you can use it to im
 ---
 
 [The DataContainer lifetime](/vext/lifetimes)  
-Information about how to manage DataContainers, their lifetime, and lazy-loading.  
+Information about how to manage DataContainers, their lifetime, and lazy-loading.
 
 ---
 

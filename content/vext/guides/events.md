@@ -1,5 +1,6 @@
 ---
-title: Introduction to Events
+title: In-depth Events guide
+description: In-depth guide to VeniceEXT events, which provide information about the game and its state. Find out how to subscribe to them, send them, and create custom ones.
 weight: 2
 ---
 

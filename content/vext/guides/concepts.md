@@ -1,5 +1,6 @@
 ---
 title: Introduction to VeniceEXT concepts
+description: A run-through of various VeniceEXT concepts that will help you get a better understanding of how VeniceEXT is structured and works.
 weight: 1
 ---
 
@@ -42,7 +43,7 @@ Other than the events that are sent to our scripts by the engine, we can also se
 Events:Dispatch('MyCustomEvent', 1, 2, 3)
 ```
 
-For more in-depth information about Events, check out the [Introduction to Events](/vext/guides/events/) guide. It is recommended that you finish reading this guide first as concepts explained further down will be used.
+For more in-depth information about Events, check out the [in-depth Events guide](/vext/guides/events/). It is recommended that you finish reading this guide first as concepts explained further down will be used.
 
 ## NetEvents
 
@@ -64,7 +65,7 @@ NetEvents:Broadcast('MyNetEvent', 'hello clients!')
 
 When the clients receive that event, the function passed in the second parameter will be called and `data` will be printed (which in this case will be `hello clients!`.)
 
-For more in-depth information about NetEvents, check out the [Introduction to NetEvents](/vext/guides/netevents/) guide. It is recommended that you finish reading this guide first as concepts explained further down will be used.
+For more in-depth information about NetEvents, check out the [in-depth NetEvents guide](/vext/guides/netevents/). It is recommended that you finish reading this guide first as concepts explained further down will be used.
 
 ## Hooks
 
@@ -80,7 +81,7 @@ end)
 
 In this example we install a hook for the [UI:CreateChatMessage](/vext/ref/client/hook/ui_createchatmessage/) client function. The function we pass in as the third parameter will get called every time the UI is about to render a new chat message. When that happens, we pass back all the data the hook received and we add an exclamation mark (`!`) to the end of the chat message. This makes it so every chat message shown in the UI has an exclamation mark at the end. You might notice that we only change the `message` parameter and just pass everything else as-is (like `channelId`, `playerId`, etc.) The reason is because in this example we only want to modify the message and keep everything else as it was. We could of course modify the other parameters too and pass in their modified versions.
 
-For more in-depth information about hooks, check out the [Introduction to Hooks](/vext/guides/hooks) guide. It is recommended that you finish reading this guide first as concepts explained further down will be used.
+For more in-depth information about hooks, check out the [in-depth to Hooks guide](/vext/guides/hooks). It is recommended that you finish reading this guide first as concepts explained further down will be used.
 
 ## Types
 
