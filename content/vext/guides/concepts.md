@@ -74,8 +74,8 @@ Hooks function in a way similar to events and allow you to directly change how t
 Let's look at an example:
 
 ```lua
-Hooks:Install('UI:CreateChatMessage', 1, function(hook, message, channelId, playerId, recipientMask, isSenderDead)
-    hook:Pass(message .. '!', channelId, playerId, recipientMask, isSenderDead)
+Hooks:Install('UI:CreateChatMessage', 1, function(hookCtx, message, channelId, playerId, recipientMask, isSenderDead)
+    hookCtx:Pass(message .. '!', channelId, playerId, recipientMask, isSenderDead)
 end)
 ```
 

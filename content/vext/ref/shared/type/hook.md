@@ -4,48 +4,27 @@ title: Hook
 
 ## Summary
 
+### Properties
+
+| Name | Type |
+| ---- | ---- |
+| {{< prop "priority" true >}} | int |
+
 ### Methods
 
 | Method | Returns |
 | ------ | ------- |
-| **[Call](#call)**() | any |
-| **[Pass](#pass)**(...args: any) | void |
-| **[Return](#return)**() | void |
-| **[Return](#return-1)**(returnValue: any) | void |
+| **[Uninstall](#uninstall)**() | void |
+
+## Properties
+
+### {{% prop-heading "priority" true %}}
+
+> **int**
 
 ## Methods
 
-### Call {#call}
+### Uninstall {#uninstall}
 
-> **Call**(): any
-
-#### Returns
-
-| Type | Description |
-| ---- | ----------- |
-| **any** |  |
-
-### Pass {#pass}
-
-> **Pass**(...args: any)
-
-#### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| ...**args** | any |  |
-
-### Return {#return}
-
-> **Return**()
-
-### Return {#return-1}
-
-> **Return**(returnValue: any)
-
-#### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| **returnValue** | any |  |
+> **Uninstall**()
 

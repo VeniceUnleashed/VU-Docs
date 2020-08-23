@@ -1,0 +1,22 @@
+name: HookContext
+type: class
+
+methods:
+  -
+    name: Pass
+    params:
+      args:
+        type: any
+        variadic: true
+  -
+    name: Return
+  -
+    name: Return
+    params:
+      returnValue:
+        type: any
+  -
+    name: Call
+    returns:
+      type: any
+      nullable: true

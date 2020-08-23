@@ -29,8 +29,8 @@ In-depth guide to VeniceEXT hooks, which allow you to modify game behavior on-th
 
 ---
 
-[Requiring scripts](/vext/guides/requiring-scripts)  
-Information on how to require Lua scripts from other scripts within the different VeniceEXT contexts.
+[Splitting your code](/vext/guides/code-splitting)  
+Information on how to split your code into different scripts and use it from other scripts within the different VeniceEXT contexts.
 
 ---
 

@@ -1,21 +1,11 @@
 name: Hook
 type: class
 
+properties:
+  priority:
+    type: int
+    readOnly: true
+
 methods:
   -
-    name: Call
-    returns:
-      type: any
-  -
-    name: Pass
-    params:
-      args:
-        type: any
-        variadic: true
-  -
-    name: Return
-  -
-    name: Return
-    params:
-      returnValue:
-        type: any
+    name: Uninstall

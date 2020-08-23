@@ -15,15 +15,15 @@ hideChildren: true
 | [FieldInformation](/vext/ref/shared/type/fieldinformation) | [FloatParameterEvent](/vext/ref/shared/type/floatparameterevent) |
 | [Guid](/vext/ref/shared/type/guid) | [GunSway](/vext/ref/shared/type/gunsway) |
 | [GunSwayDeviation](/vext/ref/shared/type/gunswaydeviation) | [Hook](/vext/ref/shared/type/hook) |
-| [HttpOptions](/vext/ref/shared/type/httpoptions) | [HttpResponse](/vext/ref/shared/type/httpresponse) |
-| [IntParameterEvent](/vext/ref/shared/type/intparameterevent) | [LinearTransform](/vext/ref/shared/type/lineartransform) |
-| [Message](/vext/ref/shared/type/message) | [NetSocket](/vext/ref/shared/type/netsocket) |
-| [PhysicsEntityBase](/vext/ref/shared/type/physicsentitybase) | [Quat](/vext/ref/shared/type/quat) |
-| [QuatTransform](/vext/ref/shared/type/quattransform) | [RayCastHit](/vext/ref/shared/type/raycasthit) |
-| [SpatialEntity](/vext/ref/shared/type/spatialentity) | [TransformParameterEvent](/vext/ref/shared/type/transformparameterevent) |
-| [TypeInformation](/vext/ref/shared/type/typeinformation) | [Vec2](/vext/ref/shared/type/vec2) |
-| [Vec3](/vext/ref/shared/type/vec3) | [Vec4](/vext/ref/shared/type/vec4) |
-| [WeaponFiring](/vext/ref/shared/type/weaponfiring) | |
+| [HookContext](/vext/ref/shared/type/hookcontext) | [HttpOptions](/vext/ref/shared/type/httpoptions) |
+| [HttpResponse](/vext/ref/shared/type/httpresponse) | [IntParameterEvent](/vext/ref/shared/type/intparameterevent) |
+| [LinearTransform](/vext/ref/shared/type/lineartransform) | [Message](/vext/ref/shared/type/message) |
+| [NetSocket](/vext/ref/shared/type/netsocket) | [PhysicsEntityBase](/vext/ref/shared/type/physicsentitybase) |
+| [Quat](/vext/ref/shared/type/quat) | [QuatTransform](/vext/ref/shared/type/quattransform) |
+| [RayCastHit](/vext/ref/shared/type/raycasthit) | [SpatialEntity](/vext/ref/shared/type/spatialentity) |
+| [TransformParameterEvent](/vext/ref/shared/type/transformparameterevent) | [TypeInformation](/vext/ref/shared/type/typeinformation) |
+| [Vec2](/vext/ref/shared/type/vec2) | [Vec3](/vext/ref/shared/type/vec3) |
+| [Vec4](/vext/ref/shared/type/vec4) | [WeaponFiring](/vext/ref/shared/type/weaponfiring) |
 
 ## Enums
 
