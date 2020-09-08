@@ -88,3 +88,7 @@ methods:
         type: float
     returns:
       type: float
+  -
+    name: RandomGuid
+    returns:
+      type: Guid

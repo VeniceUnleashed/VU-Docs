@@ -17,6 +17,7 @@ title: MathUtils
 | **[Round](#round)**(value: float) | float |
 | **[FNVHash](#fnvhash)**(text: string) | int |
 | **[Lerp](#lerp)**(from: float, to: float, t: float) | float |
+| **[RandomGuid](#randomguid)**() | [Guid](/vext/ref/shared/type/guid) |
 
 ## Methods
 
@@ -174,4 +175,14 @@ title: MathUtils
 | Type | Description |
 | ---- | ----------- |
 | **float** |  |
+
+### RandomGuid {#randomguid}
+
+> **RandomGuid**(): [Guid](/vext/ref/shared/type/guid)
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[Guid](/vext/ref/shared/type/guid)** |  |
 
