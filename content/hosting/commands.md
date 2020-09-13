@@ -6,9 +6,9 @@ weight: 7
 
 VU servers support most of the commands that vanilla BF3 servers also support. You can find a listing of all of them in [this document](https://github.com/dcodeIO/BattleCon/blob/master/eadocs/BF3/BF3%20PC%20Server%20Remote%20Administration%20Protocol.pdf). Everything that is not Punkbuster or reserved slots related should work. On top of those, VU servers have a few custom commands which are listed below:
 
-## `modList.List`
+## `modList.ListRunning`
 
-Lists all currently loaded mods.
+Lists all currently loaded / running mods.
 
 ## `modList.ReloadExtensions`
 
@@ -19,6 +19,27 @@ Reloads all currently loaded mods. Keep in mind that this can cause significant 
 Accepts a single boolean argument (`true` or `false`) which toggles debug mode for any loaded extensions. When set to `true`, any scripts will be built with debug symbols enabled, which will make it so errors printed on the server and the clients will contain more useful information about their source. 
 
 When used with no arguments, it returns whether debug mode is currently enabled or not. Defaults to `false`.
+
+## `modList.Add`
+
+Adds a mod to the list of mods to load on the next server restart and saves the changes to the `ModList.txt` file. This will **not** load the mod immediately.
+
+## `modList.Remove`
+
+Removes a mod from the list of mods to load on the next server restart and saves the changes to the `ModList.txt` file. This will **not** unload any currently running mods.
+
+## `modList.Clear`
+
+Clears the list of mods to loads on the next server restart and saves the changes to the `ModList.txt` file. This will **not** unload any currently running mods.
+
+
+## `modList.List`
+
+Lists the mods to load on the next server restart. This basically lists all mods present in the `ModList.txt` file and may not be the same as the list of mods that are currently running.
+
+## `modList.Available`
+
+Lists the mods that are available to be added to the mod list.
 
 ## `vu.DestructionEnabled`
 
