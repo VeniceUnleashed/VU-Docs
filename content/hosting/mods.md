@@ -1,6 +1,7 @@
 ---
 title: Setting up and using mods
 description: How to set up and use mods on your VU dedicated server.
+readingTime: true
 weight: 6
 ---
 

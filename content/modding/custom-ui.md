@@ -1,6 +1,7 @@
 ---
 title: Creating custom UI using WebUI
 description: A tutorial on how to create custom UI for your VU mods.
+readingTime: true
 weight: 3
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Introduction to VeniceEXT concepts
 description: A run-through of various VeniceEXT concepts that will help you get a better understanding of how VeniceEXT is structured and works.
+readingTime: true
 weight: 1
 ---
 

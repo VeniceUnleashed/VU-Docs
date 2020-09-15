@@ -163,6 +163,10 @@ hr {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.td-content > h1 {
+  margin-bottom: 0.5rem;
+}
+
 .td-content > h2:not(:first-child) {
   margin-top: 2.25rem;
 }
@@ -238,5 +242,15 @@ hr {
 
   &.shl::after {
     content: 'SHARED LIBRARY';
+  }
+}
+
+.reading-time {
+  font-style: italic;
+  margin-bottom: 1rem;
+  opacity: 0.6;
+
+  span {
+    font-weight: bold;
   }
 }

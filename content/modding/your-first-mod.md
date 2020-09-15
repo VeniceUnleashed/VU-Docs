@@ -1,6 +1,7 @@
 ---
 title: Your first mod
 description: A detailed tutorial on creating your first VU mod.
+readingTime: true
 weight: 2
 ---
 

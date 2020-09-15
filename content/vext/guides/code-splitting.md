@@ -1,6 +1,7 @@
 ---
 title: Splitting your code
 description: Information on how to split your code into different scripts and use it from other scripts within the different VeniceEXT contexts.
+readingTime: true
 weight: 5
 ---
 

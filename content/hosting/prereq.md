@@ -1,6 +1,7 @@
 ---
 title: Prerequisites
 description: Prerequisites for running a VU dedicated server.
+readingTime: true
 weight: 1
 ---
 

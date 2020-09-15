@@ -1,6 +1,7 @@
 ---
 title: Mod structure
 description: The structure of VU mods and their components.
+readingTime: true
 weight: 1
 ---
 

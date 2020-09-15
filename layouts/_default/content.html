@@ -1,5 +1,6 @@
 <div class="td-content">
-	<h1>{{ .Title }}</h1>
+  <h1>{{ .Title }}</h1>
+  {{ if .Params.readingTime }}<div class="reading-time">Reading time: <span class="time">{{ .ReadingTime }} min</span></div>{{ end }}
 	{{ .Content }}
 	{{ if (and (not .Params.hide_feedback) (.Site.Params.ui.feedback.enable) (.Site.GoogleAnalytics)) }}
 		{{ partial "feedback.html" .Site.Params.ui.feedback }}

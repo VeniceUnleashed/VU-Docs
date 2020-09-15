@@ -1,6 +1,7 @@
 ---
 title: Setting up a server on Linux
 description: Instructions on how to set up a VU dedicated server on a Linux machine using Wine.
+readingTime: true
 weight: 3
 ---
 
