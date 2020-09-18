@@ -34,8 +34,8 @@ Information on how to split your code into different scripts and use it from oth
 
 ---
 
-[Registering console commands](/vext/guides/commands)  
-Find out how to create custom client-side console commands and server-side RCON commands.
+[Frostbite data basics](/vext/guides/data)  
+Details about how the Frostbite engine stores its data and metadata that controls how the game works and the game levels are set up.
 
 ---
 
