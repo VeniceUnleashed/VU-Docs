@@ -1,7 +1,7 @@
 ---
 title: Guides
 description: A variety of VeniceEXT modding guides addressing different modding features and systems.
-weight: 2
+weight: 3
 hideChildren: true
 ---
 

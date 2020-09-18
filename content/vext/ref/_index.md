@@ -1,8 +1,9 @@
 ---
 title: API Reference
 description: The full VU VeniceEXT API reference.
-weight: 3
+weight: 4
 ---
+
 The VeniceEXT API is split into four logical sections and contains a variety of types, libraries, events, and hooks.
 
 Here's a short description of each of those concepts:

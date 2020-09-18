@@ -48,6 +48,8 @@ Each bundle contains the following different types of data (but not necessarily 
 - **Resources**: These are files that describe different types of game assets. For example, there are texture resources that describe the texture (eg. its resolution and format) and then point to Chunks that contain the raw texture data. We won't be dealing with Resources in this guide.
 - **Partitions**: These are files that contain metadata about the game's different systems, from things like the different weapons and their attribute (eg. how many bullets they have) to what different props are comprised of and where they should be placed on the map. We'll look at these into more detail below.
 
+You can find a full listing of Superbundles and all of their contained Bundles [here](/vext/bundles/).
+
 ## Partitions
 
 Partitions are what contains all the game's metadata and are what's exposed to VeniceEXT for us to modify. Partitions are also commonly referred to as EBX, and these two terms may be used interchangeably sometimes, but EBX actually refers to the way they are serialized to binary data (EBX stands for something like Enhanced dataBase XML according to [BionicBeagle](https://twitter.com/bionicbeagle/status/676667384137195520)). With that being said, whenever you hear someone talk about EBX they're most likely talking about Partitions.
