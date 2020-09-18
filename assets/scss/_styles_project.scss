@@ -201,6 +201,10 @@ hr {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.td-content > table {
+  @extend .td-max-width-on-larger-screens;
+}
+
 .result-ctx::after {
   content: '';
   background: #e14d43;
