@@ -38,7 +38,7 @@ Bundles are a way of splitting game data into even more specific categories so t
 
 - `Levels/MP_Subway/MP_Subway`: This is the main level Bundle which contains level data that's shared across all gamemodes, like the terrain, common props, etc.
 - `Levels/MP_Subway/TeamDeathMatch`: This Bundle contains data specific to the Team Deathmatch gamemode, like the player spawns, the combat area etc.
-- `Levels/MP_Subwau/Rush`: This Bundle contains data specific to the Rush gamemode, like locations of MCOM stations, the different combat areas, and the logic of moving from one area to the next.
+- `Levels/MP_Subway/Rush`: This Bundle contains data specific to the Rush gamemode, like locations of MCOM stations, the different combat areas, and the logic of moving from one area to the next.
 
 When the level is loaded, the game will first load the common `Levels/MP_Subway/MP_Subway` Bundle and then, based on the gamemode that's currently active, it will load one of the gamemode-specific Bundles, like `Levels/MP_Subway/TeamDeathMatch`.
 
@@ -54,7 +54,7 @@ You can find a full listing of Superbundles and all of their contained Bundles [
 
 Partitions are what contains all the game's metadata and are what's exposed to VeniceEXT for us to modify. Partitions are also commonly referred to as EBX, and these two terms may be used interchangeably sometimes, but EBX actually refers to the way they are serialized to binary data (EBX stands for something like Enhanced dataBase XML according to [BionicBeagle](https://twitter.com/bionicbeagle/status/676667384137195520)). With that being said, whenever you hear someone talk about EBX they're most likely talking about Partitions.
 
-Each Partition is identified by its name (which is similar to a file path) and a Guid. Inside each Partition are Instances, which we'll explain in more detail below. Every Partition usually contains metadata about a specific thing inside the game. For example, the `Weapons/AK74M/AK74` Partition describes the `AK74` weapon and its various properties, like what model it uses, what attachments it has, what kind of bullets it fires, how much primary and reserve ammo it has, the sound it makes, etc. 
+Each Partition is identified by its name (which is similar to a file path) and a Guid. Inside each Partition are Instances, which we'll explain in more detail [below](#instances). Every Partition usually contains metadata about a specific thing inside the game. For example, the `Weapons/AK74M/AK74` Partition describes the `AK74` weapon and its various properties, like what model it uses, what attachments it has, what kind of bullets it fires, how much primary and reserve ammo it has, the sound it makes, etc. 
 
 Since Partitions are not in a human-readable format by default, we have a text dump of all Partitions that exist in Battlefield 3 that's available as reference for modders [here](https://github.com/Powback/Venice-EBX) (you can see the data for the `AK74` Partition we mentioned before [here](https://github.com/Powback/Venice-EBX/blob/master/Weapons/AK74M/AK74.txt) for example). We'll provide some more details on how the metadata hierarchy is structured and where to look for things down below.
 
