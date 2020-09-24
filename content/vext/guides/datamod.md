@@ -34,7 +34,7 @@ Let's walk through what we're doing in the example above. As we mentioned above,
 
 Now, before we can modify it we need to call the [MakeWritable](/vext/ref/shared/type/datacontainer/#makewritable) method on it. That's because instances loaded from data will by default be read-only (you can also use the [isReadOnly](/vext/ref/shared/type/datacontainer/#isreadonly) property to check but it's not necessary, since [MakeWritable](/vext/ref/shared/type/datacontainer/#makewritable) will just do nothing if the instance is not read-only). After making it writable, we can then modify the [maxVehicleHeight](/vext/ref/fb/leveldata/#maxvehicleheight) property. In this case we're setting it to `999999`, effectively getting rid of the flight ceiling. As calling [MakeWritable](/vext/ref/shared/type/datacontainer/#makewritable) is quite expensive, you should only call it on instance you plan to modify.
 
-Now, keep in mind that you generally want to do changes like these inside a shared script so changes are applied on both the server and the client. In some cases, if we only modify data on one side then players will be kicked upon joining a server because their data not match.
+Now, keep in mind that you generally want to do changes like these inside a shared script so changes are applied on both the server and the client. In some cases, if we only modify data on one side then players will be kicked upon joining a server because their data will not match.
 
 ## Waiting for instances to load
 
