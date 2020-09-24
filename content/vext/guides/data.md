@@ -2,7 +2,7 @@
 title: Frostbite data basics
 description: Details about how the Frostbite engine stores its data and metadata that controls how the game works and the game levels are set up.
 readingTime: true
-weight: 6
+weight: 8
 ---
 
 Every game needs some way to represent and store the data that it uses to create its worlds. Such data could represent or describe a variety of things, like how weapons work or what props should be placed within a specific map and where. In this guide we'll go into a bit more detail on how Frostbite represents such data and the terminology you'll need to know in order to later be able to use VeniceEXT to modify said data. The data concepts that we will cover are the so called Superbundles, the Bundles, the Partitions, and the Instances.

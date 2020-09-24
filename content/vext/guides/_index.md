@@ -34,6 +34,16 @@ Information on how to split your code into different scripts and use it from oth
 
 ---
 
+**WIP** [The built-in class system](/vext/guides/classes)  
+Information about VeniceEXT's built-in class system and how you can use it to improve your mods.
+
+---
+
+**WIP** [Interacting with the WebUI](/vext/guides/webui)  
+Details on how to interact with the WebUI to provide rich UI experiences to your players.
+
+---
+
 [Frostbite data basics](/vext/guides/data)  
 Details about how the Frostbite engine stores its data and metadata that controls how the game works and the game levels are set up.
 
@@ -44,20 +54,10 @@ Find out how to modify Frostbite game data using VeniceEXT to modify game behavi
 
 ---
 
-[Interacting with the WebUI](/vext/guides/webui)  
-Details on how to interact with the WebUI to provide rich UI experiences to your players.
-
----
-
-[The built-in class system](/vext/guides/classes)  
-Information about VeniceEXT's built-in class system and how you can use it to improve your mods.
-
----
-
-[The DataContainer lifetime](/vext/lifetimes)  
-Information about how to manage DataContainers, their lifetime, and lazy-loading.
-
----
-
-[Dealing with entities](/vext/entities)  
+**WIP** [Dealing with entities](/vext/entities)  
 Information on how entities work, how to spawn them, find them, and work with them.
+
+---
+
+**WIP** [The DataContainer lifetime](/vext/lifetimes)  
+Information about how to manage DataContainers, their lifetime, and lazy-loading.
