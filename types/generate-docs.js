@@ -215,7 +215,7 @@ const stringifyParams = (params, context) => {
       paramString += `${paramName}: `;
       paramString += stringifyType(param, context, true);
 
-      if (param.default) {
+      if ('default' in param) {
         paramString += ` = ${param.default}`;
       }
 

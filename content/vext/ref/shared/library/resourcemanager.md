@@ -8,7 +8,7 @@ title: ResourceManager
 
 | Method | Returns |
 | ------ | ------- |
-| **[MountSuperBundle](#mountsuperbundle)**(superbundle: string, mediaHint: [MediaHint](/vext/ref/shared/type/mediahint) = MediaHint.MediaHint_Default, optional: bool) | void |
+| **[MountSuperBundle](#mountsuperbundle)**(superbundle: string, mediaHint: [MediaHint](/vext/ref/shared/type/mediahint) = MediaHint.MediaHint_Default, optional: bool = false) | void |
 | **[UnmountSuperBundle](#unmountsuperbundle)**(superbundle: string) | void |
 | **[GetSettings](#getsettings)**(settingsType: string) | [DataContainer](/vext/ref/shared/type/datacontainer) \| nil |
 | **[LookupDataContainer](#lookupdatacontainer)**(compartment: [ResourceCompartment](/vext/ref/shared/type/resourcecompartment), name: string) | [DataContainer](/vext/ref/shared/type/datacontainer) \| nil |
@@ -35,7 +35,7 @@ title: ResourceManager
 
 ### MountSuperBundle {#mountsuperbundle}
 
-> **MountSuperBundle**(superbundle: string, mediaHint: [MediaHint](/vext/ref/shared/type/mediahint) = MediaHint.MediaHint_Default, optional: bool)
+> **MountSuperBundle**(superbundle: string, mediaHint: [MediaHint](/vext/ref/shared/type/mediahint) = MediaHint.MediaHint_Default, optional: bool = false)
 
 #### Parameters
 

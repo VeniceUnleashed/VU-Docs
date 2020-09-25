@@ -18,7 +18,7 @@ title: Entity
 
 | Method | Returns |
 | ------ | ------- |
-| **[Init](#init)**(realm: [Realm](/vext/ref/fb/realm), enableAllowed: bool, isGhost: bool) | void |
+| **[Init](#init)**(realm: [Realm](/vext/ref/fb/realm), enableAllowed: bool, isGhost: bool = false) | void |
 | **[Destroy](#destroy)**() | void |
 | **[Is](#is)**(typeName: string) | bool |
 | **[FireEvent](#fireevent)**(eventId: int) | void |
@@ -76,7 +76,7 @@ title: Entity
 
 ### Init {#init}
 
-> **Init**(realm: [Realm](/vext/ref/fb/realm), enableAllowed: bool, isGhost: bool)
+> **Init**(realm: [Realm](/vext/ref/fb/realm), enableAllowed: bool, isGhost: bool = false)
 
 #### Parameters
 
