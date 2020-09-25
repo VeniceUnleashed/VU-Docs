@@ -87,9 +87,20 @@ methods:
         type: Guid
       callback:
         type: callable
-      args:
+    returns:
+      type: ContainerCallback
+      nullable: true
+  -
+    name: RegisterInstanceLoadHandler
+    params:
+      partitionGuid:
+        type: Guid
+      instanceGuid:
+        type: Guid
+      context:
         type: any
-        variadic: true
+      callback:
+        type: callable
     returns:
       type: ContainerCallback
   -
@@ -101,9 +112,19 @@ methods:
         type: Guid
       callback:
         type: callable
-      args:
+    returns:
+      type: ContainerCallback
+  -
+    name: RegisterInstanceLoadHandlerOnce
+    params:
+      partitionGuid:
+        type: Guid
+      instanceGuid:
+        type: Guid
+      context:
         type: any
-        variadic: true
+      callback:
+        type: callable
     returns:
       type: ContainerCallback
   -

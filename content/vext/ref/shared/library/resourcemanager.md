@@ -17,8 +17,10 @@ title: ResourceManager
 | **[SearchForInstanceByGuid](#searchforinstancebyguid)**(instanceGuid: [Guid](/vext/ref/shared/type/guid)) | [DataContainer](/vext/ref/shared/type/datacontainer) \| nil |
 | **[FindDatabasePartition](#finddatabasepartition)**(partitionGuid: [Guid](/vext/ref/shared/type/guid)) | [DatabasePartition](/vext/ref/shared/type/databasepartition) \| nil |
 | **[FindPartitionForInstance](#findpartitionforinstance)**(instance: [DataContainer](/vext/ref/shared/type/datacontainer)) | [DatabasePartition](/vext/ref/shared/type/databasepartition) \| nil |
-| **[RegisterInstanceLoadHandler](#registerinstanceloadhandler)**(partitionGuid: [Guid](/vext/ref/shared/type/guid), instanceGuid: [Guid](/vext/ref/shared/type/guid), callback: callable, ...args: any) | [ContainerCallback](/vext/ref/shared/type/containercallback) |
-| **[RegisterInstanceLoadHandlerOnce](#registerinstanceloadhandleronce)**(partitionGuid: [Guid](/vext/ref/shared/type/guid), instanceGuid: [Guid](/vext/ref/shared/type/guid), callback: callable, ...args: any) | [ContainerCallback](/vext/ref/shared/type/containercallback) |
+| **[RegisterInstanceLoadHandler](#registerinstanceloadhandler)**(partitionGuid: [Guid](/vext/ref/shared/type/guid), instanceGuid: [Guid](/vext/ref/shared/type/guid), callback: callable) | [ContainerCallback](/vext/ref/shared/type/containercallback) \| nil |
+| **[RegisterInstanceLoadHandler](#registerinstanceloadhandler-1)**(partitionGuid: [Guid](/vext/ref/shared/type/guid), instanceGuid: [Guid](/vext/ref/shared/type/guid), context: any, callback: callable) | [ContainerCallback](/vext/ref/shared/type/containercallback) |
+| **[RegisterInstanceLoadHandlerOnce](#registerinstanceloadhandleronce)**(partitionGuid: [Guid](/vext/ref/shared/type/guid), instanceGuid: [Guid](/vext/ref/shared/type/guid), callback: callable) | [ContainerCallback](/vext/ref/shared/type/containercallback) |
+| **[RegisterInstanceLoadHandlerOnce](#registerinstanceloadhandleronce-1)**(partitionGuid: [Guid](/vext/ref/shared/type/guid), instanceGuid: [Guid](/vext/ref/shared/type/guid), context: any, callback: callable) | [ContainerCallback](/vext/ref/shared/type/containercallback) |
 | **[AddRegistry](#addregistry)**(registry: [DataContainer](/vext/ref/shared/type/datacontainer), compartment: [ResourceCompartment](/vext/ref/shared/type/resourcecompartment)) | void |
 | **[BeginLoadData](#beginloaddata)**(compartment: [ResourceCompartment](/vext/ref/shared/type/resourcecompartment), bundles: string{}) | int |
 | **[EndLoadData](#endloaddata)**(handle: int) | bool |
@@ -169,7 +171,7 @@ title: ResourceManager
 
 ### RegisterInstanceLoadHandler {#registerinstanceloadhandler}
 
-> **RegisterInstanceLoadHandler**(partitionGuid: [Guid](/vext/ref/shared/type/guid), instanceGuid: [Guid](/vext/ref/shared/type/guid), callback: callable, ...args: any): [ContainerCallback](/vext/ref/shared/type/containercallback)
+> **RegisterInstanceLoadHandler**(partitionGuid: [Guid](/vext/ref/shared/type/guid), instanceGuid: [Guid](/vext/ref/shared/type/guid), callback: callable): [ContainerCallback](/vext/ref/shared/type/containercallback) \| nil
 
 #### Parameters
 
@@ -178,7 +180,25 @@ title: ResourceManager
 | **partitionGuid** | [Guid](/vext/ref/shared/type/guid) |  |
 | **instanceGuid** | [Guid](/vext/ref/shared/type/guid) |  |
 | **callback** | callable |  |
-| ...**args** | any |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[ContainerCallback](/vext/ref/shared/type/containercallback)** \| **nil** |  |
+
+### RegisterInstanceLoadHandler {#registerinstanceloadhandler-1}
+
+> **RegisterInstanceLoadHandler**(partitionGuid: [Guid](/vext/ref/shared/type/guid), instanceGuid: [Guid](/vext/ref/shared/type/guid), context: any, callback: callable): [ContainerCallback](/vext/ref/shared/type/containercallback)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **partitionGuid** | [Guid](/vext/ref/shared/type/guid) |  |
+| **instanceGuid** | [Guid](/vext/ref/shared/type/guid) |  |
+| **context** | any |  |
+| **callback** | callable |  |
 
 #### Returns
 
@@ -188,7 +208,7 @@ title: ResourceManager
 
 ### RegisterInstanceLoadHandlerOnce {#registerinstanceloadhandleronce}
 
-> **RegisterInstanceLoadHandlerOnce**(partitionGuid: [Guid](/vext/ref/shared/type/guid), instanceGuid: [Guid](/vext/ref/shared/type/guid), callback: callable, ...args: any): [ContainerCallback](/vext/ref/shared/type/containercallback)
+> **RegisterInstanceLoadHandlerOnce**(partitionGuid: [Guid](/vext/ref/shared/type/guid), instanceGuid: [Guid](/vext/ref/shared/type/guid), callback: callable): [ContainerCallback](/vext/ref/shared/type/containercallback)
 
 #### Parameters
 
@@ -197,7 +217,25 @@ title: ResourceManager
 | **partitionGuid** | [Guid](/vext/ref/shared/type/guid) |  |
 | **instanceGuid** | [Guid](/vext/ref/shared/type/guid) |  |
 | **callback** | callable |  |
-| ...**args** | any |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[ContainerCallback](/vext/ref/shared/type/containercallback)** |  |
+
+### RegisterInstanceLoadHandlerOnce {#registerinstanceloadhandleronce-1}
+
+> **RegisterInstanceLoadHandlerOnce**(partitionGuid: [Guid](/vext/ref/shared/type/guid), instanceGuid: [Guid](/vext/ref/shared/type/guid), context: any, callback: callable): [ContainerCallback](/vext/ref/shared/type/containercallback)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **partitionGuid** | [Guid](/vext/ref/shared/type/guid) |  |
+| **instanceGuid** | [Guid](/vext/ref/shared/type/guid) |  |
+| **context** | any |  |
+| **callback** | callable |  |
 
 #### Returns
 

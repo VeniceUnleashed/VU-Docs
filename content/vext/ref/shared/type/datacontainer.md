@@ -28,8 +28,10 @@ A base frostbite [DataContainer](/vext/ref/shared/type/datacontainer), the highe
 | **[Clone](#clone-1)**(guid: [Guid](/vext/ref/shared/type/guid)) | [DataContainer](/vext/ref/shared/type/datacontainer) |
 | **[ReplaceReferences](#replacereferences)**(with: [DataContainer](/vext/ref/shared/type/datacontainer) \| nil) | void |
 | **[MakeWritable](#makewritable)**() | void |
-| **[RegisterLoadHandler](#registerloadhandler)**(callback: callable, ...args: any) | [ContainerCallback](/vext/ref/shared/type/containercallback) \| nil |
-| **[RegisterLoadHandlerOnce](#registerloadhandleronce)**(callback: callable, ...args: any) | [ContainerCallback](/vext/ref/shared/type/containercallback) \| nil |
+| **[RegisterLoadHandler](#registerloadhandler)**(callback: callable) | [ContainerCallback](/vext/ref/shared/type/containercallback) \| nil |
+| **[RegisterLoadHandler](#registerloadhandler-1)**(context: any, callback: callable) | [ContainerCallback](/vext/ref/shared/type/containercallback) \| nil |
+| **[RegisterLoadHandlerOnce](#registerloadhandleronce)**(callback: callable) | [ContainerCallback](/vext/ref/shared/type/containercallback) \| nil |
+| **[RegisterLoadHandlerOnce](#registerloadhandleronce-1)**(context: any, callback: callable) | [ContainerCallback](/vext/ref/shared/type/containercallback) \| nil |
 
 ### Static members
 
@@ -175,7 +177,7 @@ Makes a read-only instance writable. This is useful for modifying loaded game da
 
 ### RegisterLoadHandler {#registerloadhandler}
 
-> **RegisterLoadHandler**(callback: callable, ...args: any): [ContainerCallback](/vext/ref/shared/type/containercallback) \| nil
+> **RegisterLoadHandler**(callback: callable): [ContainerCallback](/vext/ref/shared/type/containercallback) \| nil
 
 Registers a callback that will be called once this lazy-loaded instance has finished loading. The callback will keep getting called between level loads.
 
@@ -183,8 +185,26 @@ Registers a callback that will be called once this lazy-loaded instance has fini
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| **callback** | callable | A callback in the form `function(...args, instance: DataContainer)`. |
-| ...**args** | any | The arguments to pass to the provided callback. You can also specify zero arguments. |
+| **callback** | callable | A callback in the form `function(instance: DataContainer)`. |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[ContainerCallback](/vext/ref/shared/type/containercallback)** \| **nil** | A callback handle that can be used to deregister the callback, or `nil` if this instance is not lazy-loaded. |
+
+### RegisterLoadHandler {#registerloadhandler-1}
+
+> **RegisterLoadHandler**(context: any, callback: callable): [ContainerCallback](/vext/ref/shared/type/containercallback) \| nil
+
+Registers a callback that will be called once this lazy-loaded instance has finished loading. The callback will keep getting called between level loads.
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **context** | any | The context to pass to the provided callback. |
+| **callback** | callable | A callback in the form `function(context: any, instance: DataContainer)`. |
 
 #### Returns
 
@@ -194,7 +214,7 @@ Registers a callback that will be called once this lazy-loaded instance has fini
 
 ### RegisterLoadHandlerOnce {#registerloadhandleronce}
 
-> **RegisterLoadHandlerOnce**(callback: callable, ...args: any): [ContainerCallback](/vext/ref/shared/type/containercallback) \| nil
+> **RegisterLoadHandlerOnce**(callback: callable): [ContainerCallback](/vext/ref/shared/type/containercallback) \| nil
 
 Registers a callback that will be called once this lazy-loaded instance has finished loading. The callback will get called once and then get automatically deregistered.
 
@@ -202,8 +222,26 @@ Registers a callback that will be called once this lazy-loaded instance has fini
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| **callback** | callable | A callback in the form `function(...args, instance: DataContainer)`. |
-| ...**args** | any | The arguments to pass to the provided callback. You can also specify zero arguments. |
+| **callback** | callable | A callback in the form `function(instance: DataContainer)`. |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[ContainerCallback](/vext/ref/shared/type/containercallback)** \| **nil** | A callback handle that can be used to deregister the callback, or `nil` if this instance is not lazy-loaded. |
+
+### RegisterLoadHandlerOnce {#registerloadhandleronce-1}
+
+> **RegisterLoadHandlerOnce**(context: any, callback: callable): [ContainerCallback](/vext/ref/shared/type/containercallback) \| nil
+
+Registers a callback that will be called once this lazy-loaded instance has finished loading. The callback will get called once and then get automatically deregistered.
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **context** | any | The context to pass to the provided callback. |
+| **callback** | callable | A callback in the form `function(context: any, instance: DataContainer)`. |
 
 #### Returns
 

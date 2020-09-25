@@ -96,11 +96,21 @@ methods:
     params:
       callback:
         type: callable
-        description: "A callback in the form `function(...args, instance: DataContainer)`."
-      args:
+        description: "A callback in the form `function(instance: DataContainer)`."
+    returns:
+      type: ContainerCallback
+      nullable: true
+      description: A callback handle that can be used to deregister the callback, or `nil` if this instance is not lazy-loaded.
+  -
+    name: RegisterLoadHandler
+    description: Registers a callback that will be called once this lazy-loaded instance has finished loading. The callback will keep getting called between level loads.
+    params:
+      context:
         type: any
-        variadic: true
-        description: The arguments to pass to the provided callback. You can also specify zero arguments.
+        description: The context to pass to the provided callback.
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, instance: DataContainer)`."
     returns:
       type: ContainerCallback
       nullable: true
@@ -111,11 +121,21 @@ methods:
     params:
       callback:
         type: callable
-        description: "A callback in the form `function(...args, instance: DataContainer)`."
-      args:
+        description: "A callback in the form `function(instance: DataContainer)`."
+    returns:
+      type: ContainerCallback
+      nullable: true
+      description: A callback handle that can be used to deregister the callback, or `nil` if this instance is not lazy-loaded.
+  -
+    name: RegisterLoadHandlerOnce
+    description: Registers a callback that will be called once this lazy-loaded instance has finished loading. The callback will get called once and then get automatically deregistered.
+    params:
+      context:
         type: any
-        variadic: true
-        description: The arguments to pass to the provided callback. You can also specify zero arguments.
+        description: The context to pass to the provided callback.
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, instance: DataContainer)`."
     returns:
       type: ContainerCallback
       nullable: true
