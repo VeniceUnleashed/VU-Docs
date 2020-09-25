@@ -1,7 +1,7 @@
 ---
 title: Guides
 description: A variety of VeniceEXT modding guides addressing different modding features and systems.
-weight: 3
+weight: 4
 hideChildren: true
 ---
 
@@ -54,10 +54,10 @@ Find out how to modify Frostbite game data using VeniceEXT to modify game behavi
 
 ---
 
-**WIP** [Dealing with entities](/vext/entities)  
+**WIP** [Dealing with entities](/vext/guides/entities)  
 Information on how entities work, how to spawn them, find them, and work with them.
 
 ---
 
-**WIP** [The DataContainer lifetime](/vext/lifetimes)  
+**WIP** [The DataContainer lifetime](/vext/guides/lifetimes)  
 Information about how to manage DataContainers, their lifetime, and lazy-loading.
