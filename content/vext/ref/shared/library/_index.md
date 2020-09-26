@@ -5,6 +5,10 @@ hideChildren: true
 
 ---
 
+**[EntityManager](/vext/ref/shared/library/entitymanager)**
+
+---
+
 **[Events](/vext/ref/shared/library/events)**
 
 ---

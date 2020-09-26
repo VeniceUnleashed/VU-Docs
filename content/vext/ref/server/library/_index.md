@@ -9,10 +9,6 @@ hideChildren: true
 
 ---
 
-**[EntityManager](/vext/ref/server/library/entitymanager)**
-
----
-
 **[NetEvents](/vext/ref/server/library/netevents)**
 
 ---

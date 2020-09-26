@@ -25,10 +25,6 @@ hideChildren: true
 
 ---
 
-**[EntityManager](/vext/ref/client/library/entitymanager)**
-
----
-
 **[InputManager](/vext/ref/client/library/inputmanager)**
 
 ---
