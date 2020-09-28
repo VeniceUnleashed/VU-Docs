@@ -5,7 +5,7 @@ readingTime: true
 weight: 7
 ---
 
-As we mentioned in the [custom UI creation tutorial](https://docs.veniceunleashed.net/modding/custom-ui/#communicating-with-veniceext), VeniceEXT scripts can communicate with the WebUI of your mod, and vice-versa. In this guide we'll go into a bit more detail about how that works and the ways you can interact between the two.
+As we mentioned in the [custom UI creation tutorial](/modding/custom-ui/#communicating-with-veniceext), VeniceEXT scripts can communicate with the WebUI of your mod, and vice-versa. In this guide we'll go into a bit more detail about how that works and the ways you can interact between the two.
 
 ## Sending events from the WebUI
 
@@ -56,13 +56,13 @@ something
 
 ## Executing JavaScript from VeniceEXT
 
-Now that we know how the WebUI can interact with our scripts let's look at the opposite. The way our scripts can talk to the WebUI is by sending JavaScript code to be executed on the WebUI side by using the [ExecuteJS]() method of the [WebUI]() library, as seen below:
+Now that we know how the WebUI can interact with our scripts let's look at the opposite. The way our scripts can talk to the WebUI is by sending JavaScript code to be executed on the WebUI side by using the [ExecuteJS](/vext/ref/client/library/webui/#executejs) method of the [WebUI](/vext/ref/client/library/webui/) library, as seen below:
 
 ```lua
 WebUI:ExecuteJS('console.log("Hello world!");')
 ```
 
-The example above will execute the JavaScript code `console.log("Hello world!");` on the WebUI side, which will in turn print `Hello world!` to the WebUI console (not the in-game console, see [here](https://docs.veniceunleashed.net/modding/custom-ui/#debugging-your-ui) on information on how to access the WebUI console).
+The example above will execute the JavaScript code `console.log("Hello world!");` on the WebUI side, which will in turn print `Hello world!` to the WebUI console (not the in-game console, see [here](/modding/custom-ui/#debugging-your-ui) on information on how to access the WebUI console).
 
 A common way to use this system is by defining global functions in your WebUI that VeniceEXT can call. For example, imagine we define a global function called `MyGlobalFunction` as seen below:
 

@@ -367,3 +367,7 @@ Property connections link a specific property of the source to the target. That 
 #### Event connections
 
 Event connections are very similar to property connections, but instead of properties they link events. What this means is that essentially when the source fires an event of a specific type, it sends an event of the same (or a different) type to the target. For example, [this event connection](https://github.com/EmulatorNexus/Venice-EBX/blob/b80b49f6be7010b968eca36654e70819402fa259/Vehicles/AH1Z/AH1Z.txt#L6665) makes it so when the source [WeaponComponent](https://github.com/EmulatorNexus/Venice-EBX/blob/b80b49f6be7010b968eca36654e70819402fa259/Vehicles/AH1Z/AH1Z.txt#L7897) fires the event with id `-1308977461` (or `OnProjectileSpawned`) it fires an event with id `230748069` (or `Start`) on the target [EffectComponent](https://github.com/EmulatorNexus/Venice-EBX/blob/b80b49f6be7010b968eca36654e70819402fa259/Vehicles/AH1Z/AH1Z.txt#L2064). This essentially makes it so when that weapon fires a bullet, it starts playing a specific effect.
+
+---
+
+Next up, read about [the lifetime of DataContainers](/vext/guides/lifetimes/).

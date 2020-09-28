@@ -82,7 +82,7 @@ local myObject = MyClass()
 
 ### Using with callbacks
 
-Another typical scenario is binding certain events or hooks (or any other callback-based mechanism) to an object. This is achieved using the user data bound methods we have mentioned in other guys and usually looks like this:
+Another typical scenario is binding certain events or hooks (or any other callback-based mechanism) to an object. This is achieved using the user data bound methods we have mentioned in other guides and usually looks like this:
 
 ```lua
 local MyClass = class('MyClass')

@@ -59,5 +59,5 @@ Information on how entities work, how to spawn them, find them, and work with th
 
 ---
 
-**WIP** [The DataContainer lifetime](/vext/guides/lifetimes)  
-Information about how to manage DataContainers, their lifetime, and lazy-loading.
+[The DataContainer lifetime](/vext/guides/lifetimes)  
+Information about how to manage DataContainers and their lifetime.
