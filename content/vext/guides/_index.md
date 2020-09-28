@@ -34,12 +34,12 @@ Information on how to split your code into different scripts and use it from oth
 
 ---
 
-**WIP** [The built-in class system](/vext/guides/classes)  
+[The built-in class system](/vext/guides/classes)  
 Information about VeniceEXT's built-in class system and how you can use it to improve your mods.
 
 ---
 
-**WIP** [Interacting with the WebUI](/vext/guides/webui)  
+[Interacting with the WebUI](/vext/guides/webui)  
 Details on how to interact with the WebUI to provide rich UI experiences to your players.
 
 ---
