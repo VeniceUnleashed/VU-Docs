@@ -8,11 +8,11 @@ Playing VU is as simple as it gets. Below are the steps you need to follow to ge
 
 ## Installing VU & BF3
 
-You can use VU on any computer running Windows 7 SP1 or newer. To begin, download the latest installer from the [downloads page](https://veniceunleashed.net/downloads) and install it on your computer. Make sure that you have downloaded the latest version of Battlefield 3 from Origin (alongside any DLCs you would like to play) and that you have launched the game at least once via Battlelog (either singleplayer or multiplayer). Then, look for the `VU Client` entry on your start menu or your desktop to launch VU.
+You can use VU on any computer running Windows 7 SP1 or newer. To begin, download the latest installer from the [VU homepage](https://veniceunleashed.net/) and install it on your computer. Make sure that you have downloaded the latest version of Battlefield 3 from Origin (alongside any DLCs you would like to play) and that you have launched the game at least once via Battlelog (either singleplayer or multiplayer). Then, look for the `VU Client` entry on your start menu or your desktop to launch VU.
 
 ## Creating an account and linking your Origin account
 
-Before you can play VU, you will need to register an account. You can do so either directly from [here](https://veniceunleashed.net/register) or by launching the client and using the in-game "Create account" button present in the login screen. After you've created your account and logged in to the VU client you will be required to link your Origin account so we can verify your game ownership. This is a one-time process and requires Origin to be running. Once you see the Origin activation prompt, minimize VU, launch Origin and login with an account that owns Battlefield 3. Then return to VU and follow the on-screen prompts. After the process is finished you can turn Origin off if you wish.
+Before you can play VU, you will need to register an account. You can do so either directly from [here](https://veniceunleashed.net/signup) or by launching the client and using the in-game "Create account" button present in the login screen. After you've created your account and logged in to the VU client you will be required to link your Origin account so we can verify your game ownership. This is a one-time process and requires Origin to be running. Once you see the Origin activation prompt, minimize VU, launch Origin and login with an account that owns Battlefield 3. Then return to VU and follow the on-screen prompts. After the process is finished you can turn Origin off if you wish.
 
 ## Creating your soldier
 

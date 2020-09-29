@@ -1,5 +1,5 @@
 ---
-title: Server Hosting
+title: Server hosting
 description: Information on how to setup and manage a VU server.
 weight: 2
 ---

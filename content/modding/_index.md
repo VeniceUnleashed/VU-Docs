@@ -8,7 +8,7 @@ Modding in VU is comprised of several different components and systems, each wit
 
 ## Script mods (VeniceEXT)
 
-The first and most important mod system is VeniceEXT. This is VU's custom scripting system which can be used to do everything from modify existing game mechanics to introducing entirely new gameplay experiences. VeniceEXT uses Lua as its underlying scripting language and is compatible with Lua 5.3. 
+The first and most important mod system is VeniceEXT. This is VU's custom scripting system which can be used to do everything from modify existing game mechanics to introducing entirely new gameplay experiences. VeniceEXT uses Lua as its underlying scripting language and is compatible with Lua 5.4 (for more information about the differences between vanilla Lua and VEXT Lua see [here](/vext)). 
 
 VeniceEXT mods are split into client, server, and shared scripts, which are executed on clients (i.e. people playing on a server), servers, and both respectively. They can also communicate with each other and coordinate to perform various functions.
 

@@ -11,7 +11,7 @@ Before you can run a VU dedicated server you must first make sure that you have 
 
 
 ## Generating server keys 
-For each server you wish to run, you will need to generate a unique server key. To generate a key and manage your existing keys, simply login to the VU website with your account and visit [the key management portal](https://veniceunleashed.net). Download your server key, you will need it when you're setting up your server. If you have reached the server key limit and require more you can contact an admin on [Discord](https://discordapp.com/invite/RWU3gb) or via the [support page](https://veniceunleashed.net/support).
+For each server you wish to run, you will need to generate a unique server key. To generate a key and manage your existing keys, simply login to the VU website with your account and visit [the key management portal](https://veniceunleashed.net/keys). Download your server key, you will need it when you're setting up your server. If you have reached the server key limit and require more you can request a quota increase from [this page](https://veniceunleashed.net/key-quota).
 
 ## Getting Battlefield 3
 

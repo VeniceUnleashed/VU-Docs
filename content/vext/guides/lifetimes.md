@@ -29,7 +29,7 @@ end)
 
 Can you spot the mistake? In the code above, we store a data-based [LevelData](/vext/ref/fb/leveldata/) instance into the global variable `levelData`. This variable will keep referencing the same instance until someone modifies it. When the level unloads, the [LevelData](/vext/ref/fb/leveldata/) it points to will no longer exist and whenever something tried to touch the `levelData` variable, things will break in mysterious ways.
 
-> Some of you may wonder why VeniceEXT itself prevent you from accessing any such invalid instances. The answer is two fold: For starters, when VeniceEXT was originally designed, the intricacies of instances were not fully understood yet. When they finally were, it was too late to make changes to how the system works. Secondly, even though there are ways to mitigate this issue in the current system, they would come with a severe performance penalty.
+> Some of you may wonder why VeniceEXT itself doesn't prevent you from accessing any such invalid instances. The answer is two fold: For starters, when VeniceEXT was originally designed, the intricacies of instances were not fully understood yet. When they finally were, it was too late to make changes to how the system works. Secondly, even though there are ways to mitigate this issue in the current system, they would come with a severe performance penalty.
 
 ## Preventing dangling references
 

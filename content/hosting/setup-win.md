@@ -7,7 +7,7 @@ weight: 2
 
 ## Downloading & installing VU
 
-First, download the latest version of VU from the [downloads page](https://veniceunleashed.net/downloads). By default, the installer will place VU in `%LocalAppData%\VeniceUnleashed\client`. If you don't wish to use the installer, you can download the ZIP version of the client and extract it to a folder of your choice. Just make sure that the user you will be running your server under has write permissions to that folder.
+First, download the latest version of VU from the [VU homepage](https://veniceunleashed.net). By default, the installer will place VU in `%LocalAppData%\VeniceUnleashed\client`. If you don't wish to use the installer, you can download the ZIP version of the client and extract it to a folder of your choice. Just make sure that the user you will be running your server under has write permissions to that folder.
 
 ## Setting up the VU server
 

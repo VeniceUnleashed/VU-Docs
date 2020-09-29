@@ -77,7 +77,7 @@ We must now download the VU files and extract them inside the `~/vu/client` fold
 
 ```
 cd ~/vu/client
-wget https://veniceunleashed.net/VeniceUnleashed.zip
+wget https://veniceunleashed.net/files/vu.zip
 unzip VeniceUnleashed.zip
 rm VeniceUnleashed.zip
 ```

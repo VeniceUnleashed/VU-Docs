@@ -5,7 +5,7 @@ weight: 4
 hideChildren: true
 ---
 
-Below you can find a variety of guides for different VeniceEXT modding topics. You can also find a full [VeniceEXT API reference here](/vext/ref). For more examples and sample mods, refer to the [sample mod repository](https://github.com/EmulatorNexus/VU-Mods).
+Below you can find a variety of guides for different VeniceEXT modding topics. You can also find a full [VeniceEXT API reference here](/vext/ref). For more examples and sample mods, refer to the [sample mod repository](https://github.com/EmulatorNexus/VEXT-Samples).
 
 ---
 
