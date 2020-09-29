@@ -282,7 +282,7 @@ Hooks:Install('EntityFactory:CreateFromBlueprint', 100, function(hookCtx, bluepr
   local newTransform = transform:Clone()
   newTransform.trans.y = newTransform.trans.y + 10
 
-  hookCtx:Pass(blueprint, transform, variation)
+  hookCtx:Pass(blueprint, newTransform, variation)
 end)
 ```
 
