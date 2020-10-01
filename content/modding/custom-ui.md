@@ -22,7 +22,7 @@ First of all, create a new folder somewhere in your computer. Inside this folder
 
 ## Compiling a WebUI package
 
-Before the UI can be used by a VU client, it must be compiled using the WebUI compiler (`vuicc.exe`). Download the latest version of the compiler from [here](https://veniceunleashed.net/vuicc.exe) and place it somewhere in your computer. Then, open a command prompt (like PowerShell or cmd) and compile the WebUI package using the following command:
+Before the UI can be used by a VU client, it must be compiled using the WebUI compiler (`vuicc.exe`). Download the latest version of the compiler from [here](https://veniceunleashed.net/files/vuicc.exe) and place it somewhere in your computer. Then, open a command prompt (like PowerShell or cmd) and compile the WebUI package using the following command:
 
 > `vuicc.exe "C:\path\to\your\ui"`
 
