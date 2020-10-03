@@ -24,9 +24,9 @@ First of all, create a new folder somewhere in your computer. Inside this folder
 
 Before the UI can be used by a VU client, it must be compiled using the WebUI compiler (`vuicc.exe`). Download the latest version of the compiler from [here](https://veniceunleashed.net/files/vuicc.exe) and place it somewhere in your computer. Then, open a command prompt (like PowerShell or cmd) and compile the WebUI package using the following command:
 
-> `vuicc.exe "C:\path\to\your\ui"`
+> `vuicc.exe "C:\path\to\your\ui" "C:\path\to\compiled\ui.vuic"`
 
-Where `C:\path\to\your\ui` points to the folder where you previously created the `index.html` file. After the package has been successfully compiled a new file will be created in the currently directory named `ui.vuic`. This is the WebUI package and you will need this file in the next step to integrate it with your mod.
+Where `C:\path\to\your\ui` points to the folder where you previously created the `index.html` file and `C:\path\to\compiled\ui.vuic` points to the file where you want to write the compiled WebUI package to. You could name that file whatever you want, but when you want to use it with your mod you'll have to rename it to `ui.vuic` so it's recommended to always use that name. You will need that file in the next step to integrate it with your mod.
 
 ## Running your custom UI
 
