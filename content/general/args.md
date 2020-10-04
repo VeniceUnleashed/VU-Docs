@@ -87,6 +87,18 @@ These arguments only have an effect on the VU client.
 
 Enables WebUI debugging at `http://localhost:8884`.
 
+---
+
+> `vu://join/<server-guid>`
+
+Connect to server with given GUID (without dashes). This is the ID of a [server key](/hosting/prereq/#generating-server-keys). You can also use this URL as a hyperlink on a website to join a server.
+
+---
+
+> `vu://spectate/<server-guid>`
+
+Connect as spectator to server with given GUID (without dashes). This is the ID of a [server key](/hosting/prereq/#generating-server-keys). You can also use this URL as a hyperlink to join a server as a spectator.
+
 ## Server arguments
 
 These arguments only have an effect on the VU server.

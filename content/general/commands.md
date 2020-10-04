@@ -26,6 +26,18 @@ An alias for `quit`.
 
 ---
 
+> `connect <server-guid>`
+
+Connect to server with given GUID (without dashes). This is the ID of a [server key](/hosting/prereq/#generating-server-keys).
+
+---
+
+> `spectate <server-guid>`
+
+Connect as spectator to server with given GUID (without dashes). This is the ID of a [server key](/hosting/prereq/#generating-server-keys).
+
+---
+
 > `disconnect`
 
 Disconnects from the currently connected game server.
