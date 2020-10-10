@@ -24,6 +24,9 @@ properties:
   instanceId:
     type: int
     readOnly: true
+  networkId:
+    type: int
+    readOnly: true
 
 methods:
   -
