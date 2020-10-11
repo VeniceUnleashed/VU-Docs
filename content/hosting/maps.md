@@ -46,7 +46,7 @@ weight: 8
 | Conquest | `ConquestSmall0` |
 | Conquest Assault 64 | `ConquestAssaultLarge0` |
 | Conquest Assault | `ConquestAssaultSmall0` |
-| Conquest Assault (alt.) | `ConquestAssaultSmall1` |
+| Conquest Assault: Day 2 | `ConquestAssaultSmall1` |
 | Rush | `RushLarge0` |
 | Squad Rush | `SquadRush0` |
 | Squad Deathmatch | `SquadDeathMatch0` |
