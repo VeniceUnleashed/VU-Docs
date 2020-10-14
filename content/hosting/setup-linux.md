@@ -78,8 +78,8 @@ We must now download the VU files and extract them inside the `~/vu/client` fold
 ```
 cd ~/vu/client
 wget https://veniceunleashed.net/files/vu.zip
-unzip VeniceUnleashed.zip
-rm VeniceUnleashed.zip
+unzip vu.zip
+rm vu.zip
 ```
 
 Then, we must transfer over the server key file we generated and downloaded [previously](/hosting/prereq), place it inside the `~/vu/instance` directory, and name it `server.key`.
