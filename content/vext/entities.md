@@ -2915,6 +2915,12 @@ Inheritance tree: [EffectEntity](#effectentity) > [SpatialEntity](#spatialentity
 
 Inheritance tree: [Entity](#entity)
 
+#### Supported events
+
+| Event name | Event type | Description |
+| ---------- | ---------- | ----------- |
+| `Start` |  |  |
+| `Stop` |  |  |
 
 ## SoundPrimeEntity
 
