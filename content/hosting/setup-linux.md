@@ -102,6 +102,14 @@ You are now ready to run a VU server. To do so, use the command below:
 wine ~/vu/client/vu.com -gamepath ~/bf3 -serverInstancePath ~/vu/instance -server -dedicated
 ```
 
+> In some cases, you might encounter an issue in the serverInstancePath processing, resulting on a unreadable server.key error printing the following log :
+>`[error] Server key file not found or invalid. Shutting down.`
+> The work around would be to use the windows path instead of an absolute path for serverInstancePath, you can get it by running `winepath -w <instance_directory_path>` or use the command below :
+
+```
+wine ~/vu/client/vu.com -gamepath ~/bf3 -serverInstancePath "$(winepath -w ~/vu/instance)" -server -dedicated
+```
+
 Your server will start up and will soon be joinable by players. It is recommended to restart your server every now and then so you can receive updates and fixes.
 
 ## Port forwarding
