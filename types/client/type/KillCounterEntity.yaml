@@ -1,0 +1,26 @@
+name: KillCounterEntity
+type: class
+inherits: GameEntity
+
+constructors:
+  -
+    params:
+      other:
+        type: Entity
+  -
+    params:
+      other:
+        type: SpatialEntity
+  -
+    params:
+      other:
+        type: GameEntity
+
+properties:
+  killCounter:
+    type: int
+    readOnly: true
+
+static:
+  typeInfo:
+    type: TypeInformation
