@@ -17,16 +17,16 @@ hideChildren: true
 | [DynamicEnvmapData](/vext/ref/client/type/dynamicenvmapdata) | [EffectParams](/vext/ref/client/type/effectparams) |
 | [EnlightenData](/vext/ref/client/type/enlightendata) | [ExplosionEntity](/vext/ref/client/type/explosionentity) |
 | [FilmGrainData](/vext/ref/client/type/filmgraindata) | [FogData](/vext/ref/client/type/fogdata) |
-| [GameEntity](/vext/ref/client/type/gameentity) | [LensScopeData](/vext/ref/client/type/lensscopedata) |
-| [LifeCounterEntity](/vext/ref/client/type/lifecounterentity) | [MotionBlurData](/vext/ref/client/type/motionblurdata) |
-| [NetEvent](/vext/ref/client/type/netevent) | [OutdoorLightData](/vext/ref/client/type/outdoorlightdata) |
-| [PhysicsEntity](/vext/ref/client/type/physicsentity) | [PlanarReflectionData](/vext/ref/client/type/planarreflectiondata) |
-| [Player](/vext/ref/client/type/player) | [RagdollComponent](/vext/ref/client/type/ragdollcomponent) |
-| [ScreenEffectData](/vext/ref/client/type/screeneffectdata) | [ShaderParamsData](/vext/ref/client/type/shaderparamsdata) |
-| [SkyData](/vext/ref/client/type/skydata) | [SoldierEntity](/vext/ref/client/type/soldierentity) |
-| [SoldierWeapon](/vext/ref/client/type/soldierweapon) | [SoldierWeaponsComponent](/vext/ref/client/type/soldierweaponscomponent) |
-| [SoundEntity](/vext/ref/client/type/soundentity) | [SunFlareData](/vext/ref/client/type/sunflaredata) |
-| [TicketCounterEntity](/vext/ref/client/type/ticketcounterentity) | [TonemapData](/vext/ref/client/type/tonemapdata) |
-| [VignetteData](/vext/ref/client/type/vignettedata) | [VisualEnvironmentState](/vext/ref/client/type/visualenvironmentstate) |
-| [WindData](/vext/ref/client/type/winddata) | |
+| [GameEntity](/vext/ref/client/type/gameentity) | [KillCounterEntity](/vext/ref/client/type/killcounterentity) |
+| [LensScopeData](/vext/ref/client/type/lensscopedata) | [LifeCounterEntity](/vext/ref/client/type/lifecounterentity) |
+| [MotionBlurData](/vext/ref/client/type/motionblurdata) | [NetEvent](/vext/ref/client/type/netevent) |
+| [OutdoorLightData](/vext/ref/client/type/outdoorlightdata) | [PhysicsEntity](/vext/ref/client/type/physicsentity) |
+| [PlanarReflectionData](/vext/ref/client/type/planarreflectiondata) | [Player](/vext/ref/client/type/player) |
+| [RagdollComponent](/vext/ref/client/type/ragdollcomponent) | [ScreenEffectData](/vext/ref/client/type/screeneffectdata) |
+| [ShaderParamsData](/vext/ref/client/type/shaderparamsdata) | [SkyData](/vext/ref/client/type/skydata) |
+| [SoldierEntity](/vext/ref/client/type/soldierentity) | [SoldierWeapon](/vext/ref/client/type/soldierweapon) |
+| [SoldierWeaponsComponent](/vext/ref/client/type/soldierweaponscomponent) | [SoundEntity](/vext/ref/client/type/soundentity) |
+| [SunFlareData](/vext/ref/client/type/sunflaredata) | [TicketCounterEntity](/vext/ref/client/type/ticketcounterentity) |
+| [TonemapData](/vext/ref/client/type/tonemapdata) | [VignetteData](/vext/ref/client/type/vignettedata) |
+| [VisualEnvironmentState](/vext/ref/client/type/visualenvironmentstate) | [WindData](/vext/ref/client/type/winddata) | |
 
