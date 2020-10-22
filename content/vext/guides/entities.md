@@ -275,7 +275,7 @@ Now that we know some things about entities and their data let's talk about blue
 
 ### Catching blueprints
 
-We can catch blueprints as they are being created similarly to entities, by using the [EntityFactory:CreateFromBlueprint](/vext/ref/shared/hook/entityfactory_createfromblueprint/) hook, as seen below:
+We can catch blueprints as they are being created similarly to entities, by using the [EntityFactory:CreateFromBlueprint](/vext/ref/client/hook/entityfactory_createfromblueprint/) hook, as seen below:
 
 ```lua
 Hooks:Install('EntityFactory:CreateFromBlueprint', 100, function(hookCtx, blueprint, transform, variation, parentRepresentative)
