@@ -5,8 +5,6 @@ constructors:
   -
 
 properties:
-  realm:
-    type: Realm
   debugTexture:
     type: TextureAsset
     nullable: true

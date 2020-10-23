@@ -22,7 +22,6 @@ title: LensScopeData
 | {{< prop "chromaticAberrationDisplacement1" >}} | [Vec2](/vext/ref/shared/type/vec2) |
 | {{< prop "chromaticAberrationStrengths" >}} | [Vec2](/vext/ref/shared/type/vec2) |
 | {{< prop "blurScale" >}} | float |
-| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
 | {{< prop "enable" >}} | bool |
 
 ### Methods
@@ -70,10 +69,6 @@ title: LensScopeData
 ### {{% prop-heading "blurScale" %}}
 
 > **float**
-
-### {{% prop-heading "realm" %}}
-
-> **[Realm](/vext/ref/fb/realm)**
 
 ### {{% prop-heading "enable" %}}
 

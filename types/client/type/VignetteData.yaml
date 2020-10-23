@@ -9,8 +9,6 @@ properties:
     type: Vec2
   color:
     type: Vec3
-  realm:
-    type: Realm
   exponent:
     type: float
   opacity:

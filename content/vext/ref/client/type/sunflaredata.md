@@ -49,7 +49,6 @@ title: SunFlareData
 | {{< prop "element1RayDistance" >}} | float |
 | {{< prop "element5RayDistance" >}} | float |
 | {{< prop "element3Shader" >}} | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset) \| nil |
-| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
 | {{< prop "element5Shader" >}} | [SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset) \| nil |
 | {{< prop "element5Enable" >}} | bool |
 | {{< prop "element3Enable" >}} | bool |
@@ -212,10 +211,6 @@ title: SunFlareData
 ### {{% prop-heading "element3Shader" %}}
 
 > **[SurfaceShaderBaseAsset](/vext/ref/fb/surfaceshaderbaseasset)** \| **nil**
-
-### {{% prop-heading "realm" %}}
-
-> **[Realm](/vext/ref/fb/realm)**
 
 ### {{% prop-heading "element5Shader" %}}
 

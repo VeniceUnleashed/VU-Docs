@@ -17,7 +17,6 @@ title: ColorCorrectionData
 | {{< prop "contrast" >}} | [Vec3](/vext/ref/shared/type/vec3) |
 | {{< prop "saturation" >}} | [Vec3](/vext/ref/shared/type/vec3) |
 | {{< prop "brightness" >}} | [Vec3](/vext/ref/shared/type/vec3) |
-| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
 | {{< prop "hue" >}} | float |
 | {{< prop "colorGradingTexture" >}} | [TextureAsset](/vext/ref/fb/textureasset) \| nil |
 | {{< prop "colorGradingEnable" >}} | bool |
@@ -48,10 +47,6 @@ title: ColorCorrectionData
 ### {{% prop-heading "brightness" %}}
 
 > **[Vec3](/vext/ref/shared/type/vec3)**
-
-### {{% prop-heading "realm" %}}
-
-> **[Realm](/vext/ref/fb/realm)**
 
 ### {{% prop-heading "hue" %}}
 

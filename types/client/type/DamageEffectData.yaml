@@ -32,8 +32,6 @@ properties:
     type: float
   maxOpacityDamagePercentage:
     type: float
-  realm:
-    type: Realm
   debugDamage:
     type: bool
 

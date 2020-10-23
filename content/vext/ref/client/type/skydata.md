@@ -24,7 +24,6 @@ title: SkyData
 | {{< prop "panoramicUVMaxX" >}} | float |
 | {{< prop "panoramicUVMinY" >}} | float |
 | {{< prop "panoramicUVMaxY" >}} | float |
-| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
 | {{< prop "panoramicUVMinX" >}} | float |
 | {{< prop "panoramicTexture" >}} | [TextureAsset](/vext/ref/fb/textureasset) \| nil |
 | {{< prop "panoramicAlphaTexture" >}} | [TextureAsset](/vext/ref/fb/textureasset) \| nil |
@@ -111,10 +110,6 @@ title: SkyData
 ### {{% prop-heading "panoramicUVMaxY" %}}
 
 > **float**
-
-### {{% prop-heading "realm" %}}
-
-> **[Realm](/vext/ref/fb/realm)**
 
 ### {{% prop-heading "panoramicUVMinX" %}}
 

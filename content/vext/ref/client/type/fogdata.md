@@ -19,7 +19,6 @@ title: FogData
 | {{< prop "fogColor" >}} | [Vec3](/vext/ref/shared/type/vec3) |
 | {{< prop "fogColorStart" >}} | float |
 | {{< prop "fogDistanceMultiplier" >}} | float |
-| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
 | {{< prop "endValue" >}} | float |
 | {{< prop "transparencyFadeStart" >}} | float |
 | {{< prop "start" >}} | float |
@@ -68,10 +67,6 @@ title: FogData
 ### {{% prop-heading "fogDistanceMultiplier" %}}
 
 > **float**
-
-### {{% prop-heading "realm" %}}
-
-> **[Realm](/vext/ref/fb/realm)**
 
 ### {{% prop-heading "endValue" %}}
 

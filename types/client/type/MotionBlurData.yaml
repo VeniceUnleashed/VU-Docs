@@ -5,8 +5,6 @@ constructors:
   -
 
 properties:
-  realm:
-    type: Realm
   cutoffGradientScale:
     type: float
   motionBlurCutoffRadius:
