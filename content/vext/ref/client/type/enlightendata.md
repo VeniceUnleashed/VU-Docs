@@ -22,7 +22,6 @@ title: EnlightenData
 | {{< prop "bounceScale" >}} | float |
 | {{< prop "cullDistance" >}} | float |
 | {{< prop "sunScale" >}} | float |
-| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
 | {{< prop "skyBoxBackLightRotationY" >}} | float |
 | {{< prop "skyBoxSunLightColorSize" >}} | float |
 | {{< prop "skyBoxBackLightColorSize" >}} | float |
@@ -75,10 +74,6 @@ title: EnlightenData
 ### {{% prop-heading "sunScale" %}}
 
 > **float**
-
-### {{% prop-heading "realm" %}}
-
-> **[Realm](/vext/ref/fb/realm)**
 
 ### {{% prop-heading "skyBoxBackLightRotationY" %}}
 

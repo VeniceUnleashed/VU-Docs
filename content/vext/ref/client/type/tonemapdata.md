@@ -15,7 +15,6 @@ title: TonemapData
 | Name | Type |
 | ---- | ---- |
 | {{< prop "bloomScale" >}} | [Vec3](/vext/ref/shared/type/vec3) |
-| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
 | {{< prop "tonemapMethod" >}} | [TonemapMethod](/vext/ref/fb/tonemapmethod) |
 | {{< prop "minExposure" >}} | float |
 | {{< prop "middleGray" >}} | float |
@@ -42,10 +41,6 @@ title: TonemapData
 ### {{% prop-heading "bloomScale" %}}
 
 > **[Vec3](/vext/ref/shared/type/vec3)**
-
-### {{% prop-heading "realm" %}}
-
-> **[Realm](/vext/ref/fb/realm)**
 
 ### {{% prop-heading "tonemapMethod" %}}
 

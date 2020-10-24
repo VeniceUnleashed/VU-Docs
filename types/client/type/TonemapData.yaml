@@ -7,8 +7,6 @@ constructors:
 properties:
   bloomScale:
     type: Vec3
-  realm:
-    type: Realm
   tonemapMethod:
     type: TonemapMethod
   minExposure:

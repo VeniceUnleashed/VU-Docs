@@ -14,7 +14,6 @@ title: DynamicAOData
 
 | Name | Type |
 | ---- | ---- |
-| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
 | {{< prop "ssaoMaxDistanceOuter" >}} | float |
 | {{< prop "ssaoFade" >}} | float |
 | {{< prop "ssaoRadius" >}} | float |
@@ -40,10 +39,6 @@ title: DynamicAOData
 > **DynamicAOData**()
 
 ## Properties
-
-### {{% prop-heading "realm" %}}
-
-> **[Realm](/vext/ref/fb/realm)**
 
 ### {{% prop-heading "ssaoMaxDistanceOuter" %}}
 

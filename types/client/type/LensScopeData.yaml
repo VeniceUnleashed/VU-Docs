@@ -21,8 +21,6 @@ properties:
     type: Vec2
   blurScale:
     type: float
-  realm:
-    type: Realm
   enable:
     type: bool
 

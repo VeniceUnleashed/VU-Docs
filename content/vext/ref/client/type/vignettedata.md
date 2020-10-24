@@ -16,7 +16,6 @@ title: VignetteData
 | ---- | ---- |
 | {{< prop "scale" >}} | [Vec2](/vext/ref/shared/type/vec2) |
 | {{< prop "color" >}} | [Vec3](/vext/ref/shared/type/vec3) |
-| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
 | {{< prop "exponent" >}} | float |
 | {{< prop "opacity" >}} | float |
 | {{< prop "enable" >}} | bool |
@@ -42,10 +41,6 @@ title: VignetteData
 ### {{% prop-heading "color" %}}
 
 > **[Vec3](/vext/ref/shared/type/vec3)**
-
-### {{% prop-heading "realm" %}}
-
-> **[Realm](/vext/ref/fb/realm)**
 
 ### {{% prop-heading "exponent" %}}
 

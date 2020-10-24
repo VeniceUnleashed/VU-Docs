@@ -11,8 +11,6 @@ properties:
     type: Vec3
   brightness:
     type: Vec3
-  realm:
-    type: Realm
   hue:
     type: float
   colorGradingTexture:

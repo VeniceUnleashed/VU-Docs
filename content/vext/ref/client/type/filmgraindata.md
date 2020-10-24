@@ -16,7 +16,6 @@ title: FilmGrainData
 | ---- | ---- |
 | {{< prop "colorScale" >}} | [Vec3](/vext/ref/shared/type/vec3) |
 | {{< prop "textureScale" >}} | [Vec2](/vext/ref/shared/type/vec2) |
-| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
 | {{< prop "texture" >}} | [TextureAsset](/vext/ref/fb/textureasset) \| nil |
 | {{< prop "linearFilteringEnable" >}} | bool |
 | {{< prop "randomEnable" >}} | bool |
@@ -43,10 +42,6 @@ title: FilmGrainData
 ### {{% prop-heading "textureScale" %}}
 
 > **[Vec2](/vext/ref/shared/type/vec2)**
-
-### {{% prop-heading "realm" %}}
-
-> **[Realm](/vext/ref/fb/realm)**
 
 ### {{% prop-heading "texture" %}}
 

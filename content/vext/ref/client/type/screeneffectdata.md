@@ -21,7 +21,6 @@ title: ScreenEffectData
 | {{< prop "outerFrameOpacity" >}} | float |
 | {{< prop "innerFrameOpacity" >}} | float |
 | {{< prop "angle" >}} | float |
-| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
 
 ### Methods
 
@@ -64,10 +63,6 @@ title: ScreenEffectData
 ### {{% prop-heading "angle" %}}
 
 > **float**
-
-### {{% prop-heading "realm" %}}
-
-> **[Realm](/vext/ref/fb/realm)**
 
 ## Methods
 

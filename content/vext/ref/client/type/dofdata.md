@@ -14,7 +14,6 @@ title: DofData
 
 | Name | Type |
 | ---- | ---- |
-| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
 | {{< prop "nearDistanceScale" >}} | float |
 | {{< prop "focusDistance" >}} | float |
 | {{< prop "blurFilter" >}} | [BlurFilter](/vext/ref/fb/blurfilter) |
@@ -40,10 +39,6 @@ title: DofData
 > **DofData**()
 
 ## Properties
-
-### {{% prop-heading "realm" %}}
-
-> **[Realm](/vext/ref/fb/realm)**
 
 ### {{% prop-heading "nearDistanceScale" %}}
 

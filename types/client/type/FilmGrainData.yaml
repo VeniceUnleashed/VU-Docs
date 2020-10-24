@@ -9,8 +9,6 @@ properties:
     type: Vec3
   textureScale:
     type: Vec2
-  realm:
-    type: Realm
   texture:
     type: TextureAsset
     nullable: true
