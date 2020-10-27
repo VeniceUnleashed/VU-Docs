@@ -168,3 +168,15 @@ Sets the port the VU server should listen for MonitoredHarmony connections. Defa
 > `-RemoteAdminPort <host:port>`
  
 Sets the host and port the VU server should listen for RCON connections. Defaults to `0.0.0.0:47200`.
+
+---
+
+> `-unlisted`
+
+Makes the server not show up in the server list. Unlisted servers can only be joined by the `connect` console command or via the `vu://join/server-id` url scheme, which can also be added as a launch argument to `vu.exe` to auto-join as soon as the client loads.
+
+---
+
+> `-joinaddr <ip>`
+
+Specifies the IP address clients should connect to in order to join this server. Only IPv4 addresses are supported. If you don't specify this, the backend will attempt to automatically detect the server's IP address.
