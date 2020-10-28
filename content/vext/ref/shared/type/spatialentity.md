@@ -44,6 +44,10 @@ Inherits from [Entity](/vext/ref/shared/type/entity)
 
 > **[LinearTransform](/vext/ref/shared/type/lineartransform)**
 
+Gets or sets the [LinearTransform](/vext/ref/shared/type/lineartransform).
+  - NOTE: You must assign a new LinearTransfrom to update, changing individual vector components **will not work**
+
+
 ### {{% prop-heading "aabb" true %}}
 
 > **[AxisAlignedBox](/vext/ref/shared/type/axisalignedbox)**

@@ -11,6 +11,10 @@ constructors:
 properties:
   transform:
     type: LinearTransform
+    description: |
+      Gets or sets the LinearTransform.
+        - NOTE: You must assign a new LinearTransfrom to update, changing individual vector components **will not work**
+
   aabb:
     type: AxisAlignedBox
     readOnly: true
