@@ -12,7 +12,7 @@ Below you can find a full list of changes to VU, corresponding to every VU updat
 - Fix a bug where an invalid RCON client would crash the server ([#526](https://github.com/EmulatorNexus/VeniceUnleashed/issues/526)).
 - Fix a bug where `vu.serverBanner` could not be cleared once set ([#518](https://github.com/EmulatorNexus/VeniceUnleashed/issues/518)).
 - Apply all currently known bugfixes to Lua core.
-- Update VeniceEXT to version [1.0.1](/vext/changelog/#1_0_1).
+- VeniceEXT was updated to version `1.0.1` ([changelog](/vext/changelog/#1_0_1)).
 
 {{% changeset 17259 "28/10/2020" %}}
 

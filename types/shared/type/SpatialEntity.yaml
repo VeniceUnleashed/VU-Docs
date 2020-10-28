@@ -12,8 +12,14 @@ properties:
   transform:
     type: LinearTransform
     description: |
-      Gets or sets the LinearTransform.
-        - NOTE: You must assign a new LinearTransfrom to update, changing individual vector components **will not work**
+      Gets or sets the world transform of this entity.
+        > NOTE: You must assign a new LinearTransfrom to update, changing individual vector components **will not work**
+        - Example:
+        ```
+        local myTransform = mySpatialEntity.transform
+        myTransform.trans.y = 1
+        mySpatialEntity.transform = myTransform
+        ```
 
   aabb:
     type: AxisAlignedBox
