@@ -27,6 +27,8 @@ title: Player
 | {{< prop "controlledEntryId" true >}} | int |
 | {{< prop "customization" true >}} | [DataContainer](/vext/ref/shared/type/datacontainer) \| nil |
 | {{< prop "selectedUnlocks" true >}} | [DataContainer](/vext/ref/shared/type/datacontainer){} |
+| {{< prop "ping" true >}} | int |
+| {{< prop "isSquadPrivate" true >}} | bool |
 
 ### Methods
 
