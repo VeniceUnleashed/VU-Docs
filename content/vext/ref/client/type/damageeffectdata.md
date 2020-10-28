@@ -27,7 +27,6 @@ title: DamageEffectData
 | {{< prop "minDamagePercentageThreshold" >}} | float |
 | {{< prop "fallofTime" >}} | float |
 | {{< prop "maxOpacityDamagePercentage" >}} | float |
-| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
 | {{< prop "debugDamage" >}} | bool |
 
 ### Methods
@@ -95,10 +94,6 @@ title: DamageEffectData
 ### {{% prop-heading "maxOpacityDamagePercentage" %}}
 
 > **float**
-
-### {{% prop-heading "realm" %}}
-
-> **[Realm](/vext/ref/fb/realm)**
 
 ### {{% prop-heading "debugDamage" %}}
 

@@ -14,7 +14,6 @@ title: DebugData
 
 | Name | Type |
 | ---- | ---- |
-| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
 | {{< prop "debugTexture" >}} | [TextureAsset](/vext/ref/fb/textureasset) \| nil |
 | {{< prop "fullscreen" >}} | bool |
 | {{< prop "enable" >}} | bool |
@@ -32,10 +31,6 @@ title: DebugData
 > **DebugData**()
 
 ## Properties
-
-### {{% prop-heading "realm" %}}
-
-> **[Realm](/vext/ref/fb/realm)**
 
 ### {{% prop-heading "debugTexture" %}}
 

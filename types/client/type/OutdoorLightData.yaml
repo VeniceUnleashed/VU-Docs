@@ -17,8 +17,6 @@ properties:
     type: float
   sunRotationX:
     type: float
-  realm:
-    type: Realm
   skyLightAngleFactor:
     type: float
   sunSpecularScale:

@@ -79,8 +79,6 @@ properties:
   element3Shader:
     type: SurfaceShaderBaseAsset
     nullable: true
-  realm:
-    type: Realm
   element5Shader:
     type: SurfaceShaderBaseAsset
     nullable: true

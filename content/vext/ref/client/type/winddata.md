@@ -14,7 +14,6 @@ title: WindData
 
 | Name | Type |
 | ---- | ---- |
-| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
 | {{< prop "windDirection" >}} | float |
 | {{< prop "windStrength" >}} | float |
 
@@ -31,10 +30,6 @@ title: WindData
 > **WindData**()
 
 ## Properties
-
-### {{% prop-heading "realm" %}}
-
-> **[Realm](/vext/ref/fb/realm)**
 
 ### {{% prop-heading "windDirection" %}}
 

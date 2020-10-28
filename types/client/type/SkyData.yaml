@@ -26,8 +26,6 @@ properties:
     type: float
   panoramicUVMaxY:
     type: float
-  realm:
-    type: Realm
   panoramicUVMinX:
     type: float
   panoramicTexture:

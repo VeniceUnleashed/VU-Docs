@@ -21,8 +21,6 @@ properties:
     type: float
   sunScale:
     type: float
-  realm:
-    type: Realm
   skyBoxBackLightRotationY:
     type: float
   skyBoxSunLightColorSize:

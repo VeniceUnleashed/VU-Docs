@@ -14,7 +14,6 @@ title: MotionBlurData
 
 | Name | Type |
 | ---- | ---- |
-| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
 | {{< prop "cutoffGradientScale" >}} | float |
 | {{< prop "motionBlurCutoffRadius" >}} | float |
 | {{< prop "motionBlurEnable" >}} | bool |
@@ -32,10 +31,6 @@ title: MotionBlurData
 > **MotionBlurData**()
 
 ## Properties
-
-### {{% prop-heading "realm" %}}
-
-> **[Realm](/vext/ref/fb/realm)**
 
 ### {{% prop-heading "cutoffGradientScale" %}}
 

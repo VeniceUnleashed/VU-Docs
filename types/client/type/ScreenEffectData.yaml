@@ -20,8 +20,6 @@ properties:
     type: float
   angle:
     type: float
-  realm:
-    type: Realm
 
 methods:
   -

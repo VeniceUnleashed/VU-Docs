@@ -20,7 +20,6 @@ title: OutdoorLightData
 | {{< prop "groundColor" >}} | [Vec3](/vext/ref/shared/type/vec3) |
 | {{< prop "sunRotationY" >}} | float |
 | {{< prop "sunRotationX" >}} | float |
-| {{< prop "realm" >}} | [Realm](/vext/ref/fb/realm) |
 | {{< prop "skyLightAngleFactor" >}} | float |
 | {{< prop "sunSpecularScale" >}} | float |
 | {{< prop "skyEnvmapShadowScale" >}} | float |
@@ -73,10 +72,6 @@ title: OutdoorLightData
 ### {{% prop-heading "sunRotationX" %}}
 
 > **float**
-
-### {{% prop-heading "realm" %}}
-
-> **[Realm](/vext/ref/fb/realm)**
 
 ### {{% prop-heading "skyLightAngleFactor" %}}
 

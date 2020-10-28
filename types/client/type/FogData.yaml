@@ -15,8 +15,6 @@ properties:
     type: float
   fogDistanceMultiplier:
     type: float
-  realm:
-    type: Realm
   endValue:
     type: float
   transparencyFadeStart:
