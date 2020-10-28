@@ -68,6 +68,12 @@ properties:
     table: true
     readOnly: true
     description: A table of specializations (UnlockAssetBase) this player currently has equipped.
+  ping:
+    type: int
+    readOnly: true
+  isSquadPrivate:
+    type: bool
+    readOnly: true
 
 methods:
   -

@@ -208,6 +208,20 @@ hr {
   vertical-align: middle;
 }
 
+.changeset-vext-dev::after {
+  content: 'ONLY IN DEV';
+  background: #e14d43;
+  padding: 0 4px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #000;
+  margin-left: 5px;
+  margin-right: 5px;
+  user-select: none;
+  vertical-align: middle;
+}
+
 .td-content > table tr th:empty {
   display: none;
 }
