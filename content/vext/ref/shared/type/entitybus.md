@@ -14,6 +14,7 @@ title: EntityBus
 | {{< prop "data" true >}} | [DataContainer](/vext/ref/shared/type/datacontainer) \| nil |
 | {{< prop "dataId" true >}} | [NetworkDataId](/vext/ref/fb/networkdataid) |
 | {{< prop "instanceId" true >}} | int |
+| {{< prop "networkId" true >}} | int |
 
 ### Methods
 
@@ -59,6 +60,10 @@ title: EntityBus
 > **[NetworkDataId](/vext/ref/fb/networkdataid)**
 
 ### {{% prop-heading "instanceId" true %}}
+
+> **int**
+
+### {{% prop-heading "networkId" true %}}
 
 > **int**
 

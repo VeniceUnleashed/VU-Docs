@@ -71,6 +71,7 @@ properties:
   ping:
     type: int
     readOnly: true
+    description: The players ping to the server.
   isSquadPrivate:
     type: bool
     readOnly: true

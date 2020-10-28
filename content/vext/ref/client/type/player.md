@@ -27,6 +27,8 @@ title: Player
 | {{< prop "controlledEntryId" true >}} | int |
 | {{< prop "customization" true >}} | [DataContainer](/vext/ref/shared/type/datacontainer) \| nil |
 | {{< prop "selectedUnlocks" true >}} | [DataContainer](/vext/ref/shared/type/datacontainer){} |
+| {{< prop "ping" true >}} | int |
+| {{< prop "isSquadPrivate" true >}} | bool |
 
 ### Methods
 
@@ -121,6 +123,16 @@ The [CharacterCustomizationAsset](/vext/ref/fb/charactercustomizationasset) curr
 > **[DataContainer](/vext/ref/shared/type/datacontainer)**{}
 
 A table of specializations ([UnlockAssetBase](/vext/ref/fb/unlockassetbase)) this player currently has equipped.
+
+### {{% prop-heading "ping" true %}}
+
+> **int**
+
+The players ping to the server.
+
+### {{% prop-heading "isSquadPrivate" true %}}
+
+> **bool**
 
 ## Methods
 
