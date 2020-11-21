@@ -10,6 +10,9 @@ params:
   parentGraph:
     type: DataContainer
     readOnly: true
+  stateNodeGuid:
+    type: Guid
+    nullable: true
 
 returns:
   type: bool

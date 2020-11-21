@@ -3,6 +3,10 @@ title: Changelog
 weight: 1
 ---
 
+{{% changeset-vext "1.0.2" "21/11/2020" %}}
+
+- Introduces an additional parameter (`stateNodeGuid`) to the [UI:PushScreen](/vext/ref/client/hook/ui_pushscreen/) hook.
+
 {{% changeset-vext "1.0.1" "28/10/2020" %}}
 
 - Introduces [networkId](/vext/ref/shared/type/entitybus/#networkid) property to [EntityBus](/vext/ref/shared/type/entitybus/)

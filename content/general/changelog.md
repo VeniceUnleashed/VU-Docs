@@ -6,9 +6,15 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 17316 "21/11/2020" %}}
+
+- Fix a regression with the lua engine that caused crashes on level load ([#543](https://github.com/EmulatorNexus/VeniceUnleashed/issues/543)).
+- Minor performance improvements and bugfixes.
+- VeniceEXT was updated to version `1.0.2` ([changelog](/vext/changelog/#1_0_2)).
+
 {{% changeset 17307 "13/11/2020" %}}
 
-- Rework frostbite animation code to allow processing up to 512 animation operations at once (was 64, fixes [#537](https://github.com/EmulatorNexus/VeniceUnleashed/issues/537))
+- Rework frostbite animation code to allow processing up to 512 animation operations at once (was 64, fixes [#537](https://github.com/EmulatorNexus/VeniceUnleashed/issues/537)).
 
 {{% changeset 17301 "12/11/2020" %}}
 
