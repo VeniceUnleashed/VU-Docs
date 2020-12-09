@@ -28,5 +28,5 @@ hideChildren: true
 | [SoldierWeaponsComponent](/vext/ref/client/type/soldierweaponscomponent) | [SoundEntity](/vext/ref/client/type/soundentity) |
 | [SunFlareData](/vext/ref/client/type/sunflaredata) | [TicketCounterEntity](/vext/ref/client/type/ticketcounterentity) |
 | [TonemapData](/vext/ref/client/type/tonemapdata) | [VignetteData](/vext/ref/client/type/vignettedata) |
-| [VisualEnvironmentState](/vext/ref/client/type/visualenvironmentstate) | [WindData](/vext/ref/client/type/winddata) | |
+| [VisualEnvironmentState](/vext/ref/client/type/visualenvironmentstate) | [WindData](/vext/ref/client/type/winddata) |
 
