@@ -6,6 +6,10 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 17343 "5/12/2020" true %}}
+
+- Fix floating point issue with VeniceEXT client KillCounterEntity.
+
 {{% changeset 17342 "5/12/2020" true %}}
 
 - VeniceEXT was updated to version `1.0.3` ([changelog](/vext/changelog/#1_0_3)).
