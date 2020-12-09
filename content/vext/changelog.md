@@ -3,7 +3,7 @@ title: Changelog
 weight: 1
 ---
 
-{{% changeset-vext "1.0.3" "9/12/2020" %}}
+{{% changeset-vext "1.0.3" "9/12/2020" true %}}
 
 - Introduces [teamId](/vext/ref/client/type/controllableentity/#teamid) property to Client [ControllableEntity](/vext/ref/client/type/controllableentity).
 - Introduces [defaultTeamId](/vext/ref/client/type/controllableentity/#defaultteamid) property to Client [ControllableEntity](/vext/ref/client/type/controllableentity).
