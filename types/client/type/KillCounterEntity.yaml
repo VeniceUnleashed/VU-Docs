@@ -17,7 +17,10 @@ constructors:
         type: GameEntity
 
 properties:
-  killCounter:
+  killCount:
+    type: int
+    readOnly: true
+  maxKillCount:
     type: int
     readOnly: true
 
