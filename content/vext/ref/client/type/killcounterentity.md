@@ -18,7 +18,8 @@ Inherits from [GameEntity](/vext/ref/client/type/gameentity)
 
 | Name | Type |
 | ---- | ---- |
-| {{< prop "killCounter" true >}} | int |
+| {{< prop "killCount" true >}} | int |
+| {{< prop "maxKillCount" true >}} | int |
 
 ### Static members
 
@@ -60,7 +61,8 @@ Inherits from [GameEntity](/vext/ref/client/type/gameentity)
 
 ## Properties
 
-### {{% prop-heading "killCounter" true %}}
+### {{% prop-heading "killCount" true %}}
+### {{% prop-heading "maxKillCount" true %}}
 
 > **int**
 
