@@ -62,6 +62,9 @@ Inherits from [GameEntity](/vext/ref/client/type/gameentity)
 ## Properties
 
 ### {{% prop-heading "killCount" true %}}
+
+> **int**
+
 ### {{% prop-heading "maxKillCount" true %}}
 
 > **int**
