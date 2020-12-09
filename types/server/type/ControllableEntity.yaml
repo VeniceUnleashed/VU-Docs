@@ -24,6 +24,12 @@ properties:
   entryCount:
     type: int
     readOnly: true
+  teamId:
+    type: TeamId
+    readOnly: true
+  defaultTeamId:
+    type: TeamId
+    readOnly: true
 
 methods:
   -
