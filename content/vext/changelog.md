@@ -3,6 +3,11 @@ title: Changelog
 weight: 1
 ---
 
+{{% changeset-vext "1.0.4" "11/12/2020" true %}}
+
+- Introduces [GetSpectatorCount](/vext/ref/client/library/playermanager/#getspectatorcount) method to Client [PlayerManager](/vext/ref/client/library/playermanager).
+- Introduces [GetSpectatorCount](/vext/ref/server/library/playermanager/#getspectatorcount) method to Server [PlayerManager](/vext/ref/client/library)
+
 {{% changeset-vext "1.0.3" "9/12/2020" true %}}
 
 - Introduces [teamId](/vext/ref/client/type/controllableentity/#teamid) property to Client [ControllableEntity](/vext/ref/client/type/controllableentity).

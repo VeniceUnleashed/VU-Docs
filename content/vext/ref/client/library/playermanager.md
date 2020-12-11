@@ -16,6 +16,7 @@ title: PlayerManager
 | **[GetPlayersByName](#getplayersbyname)**(name: string) | [Player](/vext/ref/client/type/player)[] |
 | **[GetPlayerCount](#getplayercount)**() | int |
 | **[GetLocalPlayer](#getlocalplayer)**() | [Player](/vext/ref/client/type/player) \| nil |
+| **[GetSpectatorCount](#getspectatorcount)**() | int |
 
 ## Methods
 
@@ -129,4 +130,14 @@ title: PlayerManager
 | Type | Description |
 | ---- | ----------- |
 | **[Player](/vext/ref/client/type/player)** \| **nil** |  |
+
+### GetSpectatorCount {#getspectatorcount}
+
+> **GetSpectatorCount**(): int
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **int** |  |
 
