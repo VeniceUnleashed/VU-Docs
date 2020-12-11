@@ -6,19 +6,19 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
-{{% changeset 17345 "5/12/2020" true %}}
+{{% changeset 17345 "11/12/2020" true %}}
 
 - VeniceEXT was updated to version `1.0.4` ([changelog](/vext/changelog/#1_0_4)).
 
-{{% changeset 17343 "5/12/2020" true %}}
+{{% changeset 17343 "9/12/2020" true %}}
 
 - Fix floating point issue with VeniceEXT client KillCounterEntity.
 
-{{% changeset 17342 "5/12/2020" true %}}
+{{% changeset 17342 "9/12/2020" true %}}
 
 - VeniceEXT was updated to version `1.0.3` ([changelog](/vext/changelog/#1_0_3)).
 
-{{% changeset 17336 "5/11/2020" true %}}
+{{% changeset 17336 "8/12/2020" true %}}
 
 - Fix RCON crashes across the entire remote interface ([#512](https://github.com/EmulatorNexus/VeniceUnleashed/issues/512)).
 - Add support for exposing client KillCounterEntity to VeniceEXT.
