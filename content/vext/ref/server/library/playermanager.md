@@ -24,6 +24,7 @@ title: PlayerManager
 | **[IsSpectatorEnabled](#isspectatorenabled)**() | bool |
 | **[FadeInAll](#fadeinall)**(fadeTime: float) | void |
 | **[FadeOutAll](#fadeoutall)**(fadeTime: float) | void |
+| **[GetSpectatorCount](#getspectatorcount)**() | int |
 
 ## Methods
 
@@ -254,4 +255,14 @@ end)
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | **fadeTime** | float |  |
+
+### GetSpectatorCount {#getspectatorcount}
+
+> **GetSpectatorCount**(): int
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **int** |  |
 

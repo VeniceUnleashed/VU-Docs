@@ -120,3 +120,7 @@ methods:
     params:
       fadeTime:
         type: float
+  -
+    name: GetSpectatorCount
+    returns:
+      type: int

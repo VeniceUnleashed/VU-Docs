@@ -58,3 +58,7 @@ methods:
     returns:
       type: Player
       nullable: true
+  -
+    name: GetSpectatorCount
+    returns:
+      type: int

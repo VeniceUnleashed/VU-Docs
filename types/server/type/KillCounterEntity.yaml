@@ -1,5 +1,20 @@
 name: KillCounterEntity
 type: class
+inherits: GameEntity
+
+constructors:
+  -
+    params:
+      other:
+        type: Entity
+  -
+    params:
+      other:
+        type: SpatialEntity
+  -
+    params:
+      other:
+        type: GameEntity
 
 properties:
   killCount:
@@ -8,3 +23,7 @@ properties:
   maxKillCount:
     type: int
     readOnly: true
+
+static:
+  typeInfo:
+    type: TypeInformation
