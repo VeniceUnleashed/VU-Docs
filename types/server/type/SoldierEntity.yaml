@@ -105,6 +105,11 @@ methods:
         type: bool
       overridePending:
         type: bool
+  -
+    name: SetTransform
+    params:
+      transform:
+        type: LinearTransform
 
 operators:
   -
