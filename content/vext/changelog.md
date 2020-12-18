@@ -3,6 +3,9 @@ title: Changelog
 weight: 1
 ---
 
+{{% changeset-vext "1.0.5" "11/18/2020" true %}}
+- Introduces [SetTransform](/vext/ref/server/type/soldierentity/#settransform) to Server [SoldierEntity](/vext/ref/server/type/soldierentity)
+
 {{% changeset-vext "1.0.4" "11/12/2020" true %}}
 
 - Introduces [GetSpectatorCount](/vext/ref/client/library/playermanager/#getspectatorcount) method to Client [PlayerManager](/vext/ref/client/library/playermanager).

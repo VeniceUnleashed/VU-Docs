@@ -50,6 +50,7 @@ Inherits from [ControllableEntity](/vext/ref/server/type/controllableentity)
 | **[ForceDead](#forcedead)**() | void |
 | **[SingleStepEntry](#singlestepentry)**(entryId: int) | void |
 | **[SetPose](#setpose)**(pose: [CharacterPoseType](/vext/ref/fb/characterposetype), immediately: bool, overridePending: bool) | void |
+| **[SetTransform](#settransform)**(transform: [LinearTransform](/vext/ref/shared/type/lineartransform)) | void |
 
 ### Operators
 
@@ -244,6 +245,16 @@ Inherits from [ControllableEntity](/vext/ref/server/type/controllableentity)
 | **pose** | [CharacterPoseType](/vext/ref/fb/characterposetype) |  |
 | **immediately** | bool |  |
 | **overridePending** | bool |  |
+
+### SetTransform {#settransform}
+
+> **SetTransform**(transform: [LinearTransform](/vext/ref/shared/type/lineartransform))
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **transform** | [LinearTransform](/vext/ref/shared/type/lineartransform) |  |
 
 ## Operators
 
