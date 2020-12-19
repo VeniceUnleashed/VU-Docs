@@ -8,6 +8,9 @@ properties:
   id:
     type: int
     readOnly: true
+  onlineId:
+    type: int
+    readOnly: true
   teamId:
     type: TeamId
     readOnly: true

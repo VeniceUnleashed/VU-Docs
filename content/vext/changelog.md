@@ -3,20 +3,26 @@ title: Changelog
 weight: 1
 ---
 
-{{% changeset-vext "1.0.5" "11/18/2020" true %}}
-- Introduces [SetTransform](/vext/ref/server/type/soldierentity/#settransform) to Server [SoldierEntity](/vext/ref/server/type/soldierentity)
+{{% changeset-vext "1.0.6" "19/12/2020" %}}
 
-{{% changeset-vext "1.0.4" "11/12/2020" true %}}
+- Introduces [onlineId](/vext/ref/client/type/player/#onlineid) property to client [Player](/vext/ref/client/type/player/) type.
+- Introduces [GetPlayerByOnlineId](/vext/ref/client/library/playermanager/#getplayerbyonlineid) method to client [PlayerManager](/vext/ref/client/library/playermanager/) library.
 
-- Introduces [GetSpectatorCount](/vext/ref/client/library/playermanager/#getspectatorcount) method to Client [PlayerManager](/vext/ref/client/library/playermanager).
-- Introduces [GetSpectatorCount](/vext/ref/server/library/playermanager/#getspectatorcount) method to Server [PlayerManager](/vext/ref/client/library)
+{{% changeset-vext "1.0.5" "18/12/2020" %}}
 
-{{% changeset-vext "1.0.3" "9/12/2020" true %}}
+- Introduces [SetTransform](/vext/ref/server/type/soldierentity/#settransform) method to server [SoldierEntity](/vext/ref/server/type/soldierentity) type.
 
-- Introduces [teamId](/vext/ref/client/type/controllableentity/#teamid) property to Client [ControllableEntity](/vext/ref/client/type/controllableentity).
-- Introduces [defaultTeamId](/vext/ref/client/type/controllableentity/#defaultteamid) property to Client [ControllableEntity](/vext/ref/client/type/controllableentity).
-- Introduces [teamId](/vext/ref/server/type/controllableentity/#teamid) property to Server [ControllableEntity](/vext/ref/server/type/controllableentity).
-- Introduces [defaultTeamId](/vext/ref/server/type/controllableentity/#defaultteamid) property to Server [ControllableEntity](/vext/ref/server/type/controllableentity).
+{{% changeset-vext "1.0.4" "11/12/2020" %}}
+
+- Introduces [GetSpectatorCount](/vext/ref/client/library/playermanager/#getspectatorcount) method to client [PlayerManager](/vext/ref/client/library/playermanager) library.
+- Introduces [GetSpectatorCount](/vext/ref/server/library/playermanager/#getspectatorcount) method to server [PlayerManager](/vext/ref/client/library) library.
+
+{{% changeset-vext "1.0.3" "9/12/2020" %}}
+
+- Introduces [teamId](/vext/ref/client/type/controllableentity/#teamid) property to client [ControllableEntity](/vext/ref/client/type/controllableentity) type.
+- Introduces [defaultTeamId](/vext/ref/client/type/controllableentity/#defaultteamid) property to client [ControllableEntity](/vext/ref/client/type/controllableentity) type.
+- Introduces [teamId](/vext/ref/server/type/controllableentity/#teamid) property to server [ControllableEntity](/vext/ref/server/type/controllableentity) type.
+- Introduces [defaultTeamId](/vext/ref/server/type/controllableentity/#defaultteamid) property to server [ControllableEntity](/vext/ref/server/type/controllableentity) type.
 - Introduces [KillCounterEntity](/vext/ref/client/type/killcounterentity) type to client.
 
 {{% changeset-vext "1.0.2" "21/11/2020" %}}
@@ -25,6 +31,6 @@ weight: 1
 
 {{% changeset-vext "1.0.1" "28/10/2020" %}}
 
-- Introduces [networkId](/vext/ref/shared/type/entitybus/#networkid) property to [EntityBus](/vext/ref/shared/type/entitybus/)
+- Introduces [networkId](/vext/ref/shared/type/entitybus/#networkid) property to [EntityBus](/vext/ref/shared/type/entitybus/) type.
 - Introduces [ping](/vext/ref/client/type/player/#ping), [isSquadPrivate](/vext/ref/client/type/player/#issquadprivate) properties to the client [Player](/vext/ref/client/type/player/) type ([#520](https://github.com/EmulatorNexus/VeniceUnleashed/issues/520))
 - Allows RCON commands `modList.ListRunning`, `modList.List`, `modList.Available` to be called from VeniceEXT ([#531](https://github.com/EmulatorNexus/VeniceUnleashed/issues/531))

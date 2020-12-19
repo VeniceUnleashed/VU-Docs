@@ -34,6 +34,14 @@ methods:
       type: Player
       nullable: true
   -
+    name: GetPlayerByOnlineId
+    params:
+      onlineId:
+        type: int
+    returns:
+      type: Player
+      nullable: true
+  -
     name: GetPlayerByName
     params:
       name:

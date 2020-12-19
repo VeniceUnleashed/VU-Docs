@@ -12,6 +12,7 @@ title: PlayerManager
 | **[GetPlayersByTeam](#getplayersbyteam)**(team: [TeamId](/vext/ref/fb/teamid)) | [Player](/vext/ref/client/type/player)[] |
 | **[GetPlayersBySquad](#getplayersbysquad)**(team: [TeamId](/vext/ref/fb/teamid), squad: [SquadId](/vext/ref/fb/squadid)) | [Player](/vext/ref/client/type/player)[] |
 | **[GetPlayerById](#getplayerbyid)**(id: int) | [Player](/vext/ref/client/type/player) \| nil |
+| **[GetPlayerByOnlineId](#getplayerbyonlineid)**(onlineId: int) | [Player](/vext/ref/client/type/player) \| nil |
 | **[GetPlayerByName](#getplayerbyname)**(name: string) | [Player](/vext/ref/client/type/player) \| nil |
 | **[GetPlayersByName](#getplayersbyname)**(name: string) | [Player](/vext/ref/client/type/player)[] |
 | **[GetPlayerCount](#getplayercount)**() | int |
@@ -72,6 +73,22 @@ title: PlayerManager
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | **id** | int |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[Player](/vext/ref/client/type/player)** \| **nil** |  |
+
+### GetPlayerByOnlineId {#getplayerbyonlineid}
+
+> **GetPlayerByOnlineId**(onlineId: int): [Player](/vext/ref/client/type/player) \| nil
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **onlineId** | int |  |
 
 #### Returns
 

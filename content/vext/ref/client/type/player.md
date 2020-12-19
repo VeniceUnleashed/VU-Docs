@@ -10,6 +10,7 @@ title: Player
 | ---- | ---- |
 | {{< prop "name" true >}} | string |
 | {{< prop "id" true >}} | int |
+| {{< prop "onlineId" true >}} | int |
 | {{< prop "teamId" true >}} | [TeamId](/vext/ref/fb/teamid) |
 | {{< prop "squadId" true >}} | [SquadId](/vext/ref/fb/squadid) |
 | {{< prop "inVehicle" true >}} | bool |
@@ -49,6 +50,10 @@ title: Player
 > **string**
 
 ### {{% prop-heading "id" true %}}
+
+> **int**
+
+### {{% prop-heading "onlineId" true %}}
 
 > **int**
 
