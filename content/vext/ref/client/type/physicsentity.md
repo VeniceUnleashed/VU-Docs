@@ -31,12 +31,16 @@ Inherits from [GameEntity](/vext/ref/client/type/gameentity)
 | ------ | ------- |
 | **[GetMaterial](#getmaterial)**(position: [Vec3](/vext/ref/shared/type/vec3)) | [DataContainer](/vext/ref/shared/type/datacontainer) \| nil |
 | **[ReenablePart](#reenablepart)**(partId: int) | void |
+| **[ApplyImpulse](#applyimpulse)**(impulseData: [ImpulseData](/vext/ref/shared/type/impulsedata)) | void |
 | **[RegisterCollisionCallback](#registercollisioncallback)**(callback: callable) | int |
 | **[RegisterCollisionCallback](#registercollisioncallback-1)**(context: any, callback: callable) | int |
 | **[UnregisterCollisionCallback](#unregistercollisioncallback)**(handle: int) | void |
 | **[RegisterDamageCallback](#registerdamagecallback)**(callback: callable) | int |
 | **[RegisterDamageCallback](#registerdamagecallback-1)**(context: any, callback: callable) | int |
 | **[UnregisterDamageCallback](#unregisterdamagecallback)**(handle: int) | void |
+| **[RegisterImpulseCallback](#registerimpulsecallback)**(callback: callable) | int |
+| **[RegisterImpulseCallback](#registerimpulsecallback-1)**(context: any, callback: callable) | int |
+| **[UnregisterImpulseCallback](#unregisterimpulsecallback)**(handle: int) | void |
 
 ## Constructors
 
@@ -124,6 +128,16 @@ Inherits from [GameEntity](/vext/ref/client/type/gameentity)
 | ---- | ---- | ----------- |
 | **partId** | int |  |
 
+### ApplyImpulse {#applyimpulse}
+
+> **ApplyImpulse**(impulseData: [ImpulseData](/vext/ref/shared/type/impulsedata))
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **impulseData** | [ImpulseData](/vext/ref/shared/type/impulsedata) |  |
+
 ### RegisterCollisionCallback {#registercollisioncallback}
 
 > **RegisterCollisionCallback**(callback: callable): int
@@ -203,6 +217,49 @@ Inherits from [GameEntity](/vext/ref/client/type/gameentity)
 ### UnregisterDamageCallback {#unregisterdamagecallback}
 
 > **UnregisterDamageCallback**(handle: int)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **handle** | int |  |
+
+### RegisterImpulseCallback {#registerimpulsecallback}
+
+> **RegisterImpulseCallback**(callback: callable): int
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **callback** | callable | A callback in the form `function(entity: Entity, impulseData: ImpulseData | nil): bool`. |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **int** |  |
+
+### RegisterImpulseCallback {#registerimpulsecallback-1}
+
+> **RegisterImpulseCallback**(context: any, callback: callable): int
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **context** | any | A context value to pass to the callback. |
+| **callback** | callable | A callback in the form `function(context: any, entity: Entity, impulseData: ImpulseData | nil): bool`. |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **int** |  |
+
+### UnregisterImpulseCallback {#unregisterimpulsecallback}
+
+> **UnregisterImpulseCallback**(handle: int)
 
 #### Parameters
 

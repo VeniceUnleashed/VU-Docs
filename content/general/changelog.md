@@ -6,6 +6,10 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 17368 "20/12/2020" %}}
+
+- VeniceEXT was updated to version `1.0.8` ([changelog](/vext/changelog/#1_0_8)).
+
 {{% changeset 17358 "20/12/2020" %}}
 
 - Introduce a new compact listing view for the server browser.

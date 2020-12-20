@@ -1,0 +1,17 @@
+name: ImpulseData
+type: class
+
+constructors:
+  -
+
+properties:
+  position:
+    type: Vec3
+  direction:
+    type: Vec3
+  force:
+    type: float
+  type:
+    type: ImpulseType
+  boneIndex:
+    type: int

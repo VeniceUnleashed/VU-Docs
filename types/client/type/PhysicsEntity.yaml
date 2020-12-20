@@ -52,6 +52,11 @@ methods:
       partId:
         type: int
   -
+    name: ApplyImpulse
+    params:
+      impulseData:
+        type: ImpulseData
+  -
     name: RegisterCollisionCallback
     params:
       callback:
@@ -96,6 +101,30 @@ methods:
       type: int
   -
     name: UnregisterDamageCallback
+    params:
+      handle:
+        type: int
+  -
+    name: RegisterImpulseCallback
+    params:
+      callback:
+        type: callable
+        description: "A callback in the form `function(entity: Entity, impulseData: ImpulseData | nil): bool`."
+    returns:
+      type: int
+  -
+    name: RegisterImpulseCallback
+    params:
+      context:
+        type: any
+        description: A context value to pass to the callback.
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, entity: Entity, impulseData: ImpulseData | nil): bool`."
+    returns:
+      type: int
+  -
+    name: UnregisterImpulseCallback
     params:
       handle:
         type: int

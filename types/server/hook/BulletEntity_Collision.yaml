@@ -1,0 +1,12 @@
+name: "BulletEntity:Collision"
+type: hook
+
+params:
+  entity:
+    type: Entity
+    readOnly: true
+  hit:
+    type: RayCastHit
+  giverInfo:
+    type: DamageGiverInfo
+    readOnly: true

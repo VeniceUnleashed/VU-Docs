@@ -1,0 +1,10 @@
+name: ImpulseType
+type: enum
+
+values:
+  Generic:
+    value: 0
+  Bullet:
+    value: 1
+  Explosion:
+    value: 2
