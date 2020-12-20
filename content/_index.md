@@ -33,6 +33,12 @@ This category has everything you need to host your own VU server.
 
 ---
 
+[Renting a server](/hosting/renting/)
+
+Don't want to set up a server yourself? You can rent one from one of these providers.
+
+---
+
 [Setting up and using mods](/hosting/mods/)
 
 Find out how to set up and use mods on your VU servers.

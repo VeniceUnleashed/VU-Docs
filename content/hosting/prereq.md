@@ -2,7 +2,7 @@
 title: Prerequisites
 description: Prerequisites for running a VU dedicated server.
 readingTime: true
-weight: 1
+weight: 2
 ---
 
 ## Preparing your account

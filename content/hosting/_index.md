@@ -8,6 +8,11 @@ In this section you can find information on how to setup and manage a VU server.
 
 ---
 
+[Renting a server](/hosting/renting)  
+Don't want to set up a server yourself? You can rent one from one of these providers.
+
+---
+
 [Prerequisites](/hosting/prereq)  
 Prerequisites for running a VU dedicated server.
 
