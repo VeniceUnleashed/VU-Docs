@@ -1,0 +1,38 @@
+name: ServerUtils
+type: library
+
+methods:
+  -
+    name: SetCustomMapName
+    description: Sets a custom map name to show in the server browser.
+    params:
+      name:
+        type: string
+        description: The custom map name.
+  -
+    name: GetCustomMapName
+    description: Gets the custom map name shown in the server browser, or `nil` if one is not set.
+    returns:
+      type: string
+      nullable: true
+      description: The custom map name, or `nil` if not is not set.
+  -
+    name: ClearCustomMapName
+    description: Clears any custom map names and reverts to showing the real map name in the server browser.
+  -
+    name: SetCustomGameModeName
+    description: Sets a custom game mode name to show in the server browser.
+    params:
+      name:
+        type: string
+        description: The custom game mode name.
+  -
+    name: GetCustomGameModeName
+    description: Gets the custom game mode name shown in the server browser, or `nil` if one is not set.
+    returns:
+      type: string
+      nullable: true
+      description: The custom game mode name, or `nil` if not is not set.
+  -
+    name: ClearCustomGameModeName
+    description: Clears any custom game mode names and reverts to showing the real game mode name in the server browser.

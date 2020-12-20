@@ -3,6 +3,10 @@ title: Changelog
 weight: 1
 ---
 
+{{% changeset-vext "1.0.7" "20/12/2020" %}}
+
+- Introduces a new [ServerUtils](/vext/ref/server/library/serverutils/) library to the server. Using this library you can set a custom map name and gamemode to be shown in the server browser.
+
 {{% changeset-vext "1.0.6" "19/12/2020" %}}
 
 - Introduces [onlineId](/vext/ref/client/type/player/#onlineid) property to client [Player](/vext/ref/client/type/player/) type.

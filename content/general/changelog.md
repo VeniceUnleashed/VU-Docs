@@ -6,6 +6,14 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 17358 "20/12/2020" %}}
+
+- Introduce a new compact listing view for the server browser.
+- Improve visibility of the server listing headings (filters, sorters, etc.).
+- Change default squad size to 4.
+- Fix a UI crash after a failed login attempt.
+- VeniceEXT was updated to version `1.0.7` ([changelog](/vext/changelog/#1_0_7)).
+
 {{% changeset 17353 "19/12/2020" %}}
 
 - VeniceEXT was updated to version `1.0.6` ([changelog](/vext/changelog/#1_0_6)).
