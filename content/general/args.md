@@ -180,3 +180,9 @@ Makes the server not show up in the server list. Unlisted servers can only be jo
 > `-joinaddr <ip>`
 
 Specifies the IP address clients should connect to in order to join this server. Only IPv4 addresses are supported. If you don't specify this, the backend will attempt to automatically detect the server's IP address.
+
+---
+
+> `-noUpdate`
+
+Disables automatic updates.

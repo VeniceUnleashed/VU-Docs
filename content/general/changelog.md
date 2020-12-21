@@ -6,6 +6,12 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 17380 "21/12/2020" %}}
+
+- Fix a handle leak when running multiple VU clients.
+- Reduce idle CPU usage of VU when running multiple clients.
+- Re-introduce the `-noUpdate` launch argument for servers.
+
 {{% changeset 17370 "21/12/2020" %}}
 
 - Fix a UI crash after a failed backend reconnection.
