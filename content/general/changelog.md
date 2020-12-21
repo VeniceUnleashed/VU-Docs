@@ -6,6 +6,12 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 17370 "21/12/2020" %}}
+
+- Fix a UI crash after a failed backend reconnection.
+- Improve backend connection error messages.
+- Add support for displaying global messages.
+
 {{% changeset 17368 "20/12/2020" %}}
 
 - VeniceEXT was updated to version `1.0.8` ([changelog](/vext/changelog/#1_0_8)).
