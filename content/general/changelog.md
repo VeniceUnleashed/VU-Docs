@@ -6,6 +6,13 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 17384 "22/12/2020" %}}
+
+- Add a scrollbar to the server browser
+- Increase scrolling speed of the server browser
+- Remove team player limits from all gamemodes, allowing more than 64 players on servers
+- Add a specific error message for busy servers when connecting to Zeus
+
 {{% changeset 17380 "21/12/2020" %}}
 
 - Fix a handle leak when running multiple VU clients.
