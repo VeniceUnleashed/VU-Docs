@@ -99,7 +99,7 @@ You'll see a bunch of `fixme` warnings printed in your terminal. You can safely 
 You are now ready to run a VU server. To do so, use the command below:
 
 ```
-wine ~/vu/client/vu.com -gamepath ~/bf3 -serverInstancePath ~/vu/instance -server -dedicated
+wine ~/vu/client/vu.com -gamepath ~/bf3 -serverInstancePath "$(winepath -w ~/vu/instance)" -server -dedicated
 ```
 
 Your server will start up and will soon be joinable by players. It is recommended to restart your server every now and then so you can receive updates and fixes.
