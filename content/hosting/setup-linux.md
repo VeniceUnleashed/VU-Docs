@@ -26,6 +26,8 @@ sudo apt-key add Release.key
 sudo apt-add-repository 'deb https://download.opensuse.org/repositories/Emulators:/Wine:/Debian/xUbuntu_18.04/ ./'
 ``` 
 
+See that you add the proper version for your version of distribution (ie. ubuntu 20.04 has a different url path for the repository)
+
 Then, we'll update our local repository cache and install the stable version of Wine:
 
 ```
@@ -33,11 +35,27 @@ sudo apt update
 sudo apt install --install-recommends -y winehq-stable
 ```
 
+If you want to later use ie. the liquorix kernel and fsync patches inside the latest wine-staging builds, install the winehq-staging package instead
+
+```
+sudo apt update
+sudo apt install --install-recommends -y winehq-staging
+```
+
+## Create a separate user to run VU as
+
+Do not run VU as root. Instead create a user ie. bf3 that will have the process running under it
+
+```
+addgroup --system bf3
+adduser --system --home /opt/bf3/ --shell /bin/bash --ingroup bf3 --disabled-password bf3
+```
+
 ## Setting up a 32-bit Wine prefix
 
 In order to be able to run the VU server we'll need to create a 32-bit Wine prefix. In this guide, we'll assume you don't know what that means and that you haven't used Wine before or plan on using it for anything else, so we'll create it as the default user Wine prefix. If you know what a Wine prefix is, feel free to create it at a different location and use it when running the rest of the setup steps below.
 
-To create the prefix simply run the following command:
+To create the prefix simply run the following command as the user you created in the previous step:
 
 ```
 WINEARCH=win32 wine wineboot
@@ -113,6 +131,43 @@ Before users can join your server you'll need to make sure that specific ports a
 | `7948` | UDP | Monitored Harmony, the VU networking layer. |
 | `25200` | UDP | Frostbite networking layer. |
 | `47200` | TCP | Remote administration protocol (RCON). |
+
+## Post-installation optional tasks
+
+If you installed the winehq-staging package earlier and want to use fsync with it that might improve performance, you need to install a patched kernel, ie. liquorix kernel for ubuntu. Follow the instructions at https://liquorix.net/
+
+You will likely also want to run VU as a service so here is an example of a unit file for VU:
+
+```
+[Unit]
+Description=Venice Unleashed
+After=network.target
+
+[Service]
+#Environment=WINEESYNC=1
+#Environment=WINEFSYNC=1
+#Environment=WINEDEBUG=+esync
+#Environment=WINEDEBUG=+fsync
+CPUSchedulingPolicy=fifo
+CPUSchedulingPriority=20
+Type=forking
+User=bf3
+Group=bf3
+ExecStart=/usr/bin/screen -dmS bf3 /usr/bin/wine /opt/bf3/vu/client/vu.com -gamepath /opt/bf3/bf3 -serverInstancePath Z:\\opt\\bf3\\vu\\instance\\ -server -dedicated -high120
+ExecStop=/usr/bin/screen -XS bf3 quit
+ExecStop=/usr/bin/wineserver -k
+Restart=always
+RestartSec=20
+
+[Install]
+WantedBy=multi-user.target
+```
+
+To explain the options a bit, the CPUSchedulingPolicy and CPUSchedulingPriority are better suited for realtime processes like gameservers. Uncomment the WINEFSYNC option if you are using an fsync patched kernel like liquorix above.
+
+The paths in the ExecStart clause need to be adjusted for your specific environment. The Z: drive is the default linux filesystem mapped drive letter for wine (there is a known issue with providing just the regular unix path for this.)
+
+Running VU on dedicated hardware is highly recommended, however if you are determined to run it inside a virtual machine on a host you control (a third party VPS will not obviously give you the options here), you must tweak the virtualization host side cpu scheduler priorities as well, otherwise load on the same core that the core 0 ends up binding to can cause strange issues (ie. another virtual machine is contending for clock cycles on the same core with the VU servers first core). YMMV on this one.
 
 ---
 
