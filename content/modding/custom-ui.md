@@ -53,6 +53,11 @@ end)
 
 This makes it so as soon as the mod gets loaded, the WebUI gets initialized and starts getting rendered on the user's screen. You can then start your server and join it, and you should be able to see the `Hello world!` text on your screen. 
 
+## Can you use multiple UI's?
+
+No. Each Mod has only one UI-Instance.
+If you want to use different displays, you need to show and hide the containers via JavaScript and CSS.
+
 ## Managing input and display order
 
 Since multiple WebUI frames can be active at a give time, one will be displayed on top of the other. Also, the game will often disable UI input, which means that a user will not be able to interact with your UI (such as when a user spawns in-game). Using JavaScript, the UI can request input from the game and change its display order. 
