@@ -3,6 +3,13 @@ title: Changelog
 weight: 1
 ---
 
+{{% changeset-vext "1.0.9" "15/1/2021" true %}}
+- Introduces [Player:Deserting](/vext/ref/server/hook/player_deserting/) server-side hook.
+- Fix documentation issue in [ClientUtils](/vext/ref/client/library/clientutils/).
+- Fix documentation issue in client [SoldierWeapon](/vext/ref/client/type/soldierweapon/).
+- Add usage documentation for [RaycastManager:Raycast](/vext/ref/client/library/raycastmanager/#raycast).
+- Add note to [Player:ManDownRevived](/vext/ref/server/event/player_mandownrevived/) that this is a coop only event.
+
 {{% changeset-vext "1.0.8" "20/12/2020" %}}
 
 - Introduces a new [ImpulseType](/vext/ref/shared/type/impulsetype/) shared enum.

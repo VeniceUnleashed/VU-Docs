@@ -1,5 +1,6 @@
 name: "Player:ManDownRevived"
 type: event
+description: This is used for coop revivals only
 
 params:
   player:

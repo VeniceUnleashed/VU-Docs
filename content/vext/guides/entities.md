@@ -30,11 +30,12 @@ First, let's look at how we can perform simple modifications to entities as they
 ```lua
 Hooks:Install('EntityFactory:Create', 100, function(hookCtx, entityData, transform)
   if entityData:Is('SpotLightEntityData') then
-    entityData:MakeWritable()
-    entityData.castShadowsEnable = true
-    entityData.castShadowsMinLevel = QualityLevel.QualityLevel_Low
+    local myEntityData = SpotLightEntityData(entityData)
+    myEntityData:MakeWritable()
+    myEntityData.castShadowsEnable = true
+    myEntityData.castShadowsMinLevel = QualityLevel.QualityLevel_Low
 
-    hookCtx:Pass(entityData, transform)
+    hookCtx:Pass(myEntityData, transform)
   end
 end)
 ```

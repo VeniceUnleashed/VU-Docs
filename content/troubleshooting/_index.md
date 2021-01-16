@@ -18,7 +18,9 @@ weight: 3
 - [Will I get banned for using this?](#will-i-get-banned-for-using-this)
 - [Are my Battlelog stats transferred over?](#are-my-battlelog-stats-transferred-over)
 - [Players cannot connect to my VU server](#players-cannot-connect-to-my-vu-server)
+- [My server is showing 999 ping](#my-server-ping-is-showing-as-999-in-server-list)
 - [My server crashes soon after startup](#my-server-crashes-soon-after-startup)
+- [My linux server errors could not find dependent assembly](#my-linux-server-errors-could-not-find-dependent-assembly)
 - [Can I run multiple instances of the VU client?](#can-i-run-multiple-instances-of-the-vu-client)
 
 ### I get an error about vu-core.dll
@@ -76,9 +78,38 @@ Make sure that connections to the VU server are not being blocked by your firewa
 | `25200` | UDP | Frostbite networking layer. |
 | `47200` | TCP | Remote administration protocol (RCON). |
 
+### My server ping is showing as 999 in server list
+
+Make sure that you allow `ICMP` in your servers firewall. This will resolve pings showing up as 999 in the server list even if in-game ping shows fine.
+
 ### My server crashes soon after startup
 
 The first thing you should try is validating your game files via Origin, as corrupted or missing files could result in crashes. Then, you should check the mods you have installed on your server, as they could be the ones causing crashes. Try disabling them one-by-one until you find the outlier. 
+
+### My linux server errors could not find dependent assembly
+
+If you are getting an error similar to the one found below...
+
+```
+wine ~/vu/client/vu.com -gamepath ~/bf3 -serverInstancePath ~/vu/instance -server -dedicated -high60
+0009:fixme:actctx:parse_depend_manifests Could not find dependent assembly L"Microsoft.VC90.CRT" (9.0.21022.8)
+Wine cannot find the ncurses library (libncurses.so.5).
+0009:fixme:actctx:parse_depend_manifests Could not find dependent assembly L"Microsoft.Windows.Common-Controls" (6.0.0.0)
+0009:fixme:actctx:parse_depend_manifests Could not find dependent assembly L"Microsoft.Windows.Common-Controls" (6.0.0.0)
+```
+
+It is possible that if the server previously had a win install, or you accidently ran wine first in a 64-bit prefix, it will cache itself in the configuration files. In order to fix this, follow the steps located from [this]() guide.
+
+```
+# From: https://askubuntu.com/questions/74690/how-to-install-32-bit-wine-on-64-bit-ubuntu
+# Move the old prefix (if one exists)
+# You could rm -rf it if you don't want it.
+mv ~/.wine/ ~/oldwine/
+
+# Create prefix with right arch, per
+# http://wiki.winehq.org/FAQ#32_bit_wineprefix
+WINEARCH=win32 winecfg
+```
 
 ### Can I run multiple instances of the VU client?
 

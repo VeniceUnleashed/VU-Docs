@@ -71,6 +71,12 @@ xvfb-run wine /tmp/vcredist_x86.exe /q
 
 You might see some errors or warnings when running the final command. You can safely ignore them.
 
+You will also need to install the i386 version of ncurses if it is not already installed. You can do this as seen below:
+
+```
+sudo apt-get install libncurses5:i386 libncurses6:i386
+```
+
 ## Downloading and setting up VU
 
 We must now download the VU files and extract them inside the `~/vu/client` folder:
@@ -113,6 +119,7 @@ Before users can join your server you'll need to make sure that specific ports a
 | `7948` | UDP | Monitored Harmony, the VU networking layer. |
 | `25200` | UDP | Frostbite networking layer. |
 | `47200` | TCP | Remote administration protocol (RCON). |
+| `Echo` | ICMP | Allow players to see ping in server list (otherwise will show as 999) |
 
 ---
 

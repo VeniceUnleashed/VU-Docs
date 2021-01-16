@@ -18,10 +18,10 @@ Inherits from [GameEntity](/vext/ref/client/type/gameentity)
 
 | Name | Type |
 | ---- | ---- |
-| {{< prop "weaponModifier" true >}} | [WeaponModifier](/vext/ref/fb/weaponmodifier) |
-| {{< prop "correctedWeaponFiring" true >}} | [WeaponFiring](/vext/ref/shared/type/weaponfiring) |
-| {{< prop "predictedWeaponFiring" true >}} | [WeaponFiring](/vext/ref/shared/type/weaponfiring) |
-| {{< prop "aimingSimulation" true >}} | [AimingSimulation](/vext/ref/client/type/aimingsimulation) |
+| {{< prop "weaponModifier" true >}} | [WeaponModifier](/vext/ref/fb/weaponmodifier) \| nil |
+| {{< prop "correctedWeaponFiring" true >}} | [WeaponFiring](/vext/ref/shared/type/weaponfiring) \| nil |
+| {{< prop "predictedWeaponFiring" true >}} | [WeaponFiring](/vext/ref/shared/type/weaponfiring) \| nil |
+| {{< prop "aimingSimulation" true >}} | [AimingSimulation](/vext/ref/client/type/aimingsimulation) \| nil |
 | {{< prop "name" true >}} | string |
 | {{< prop "primaryAmmo" true >}} | int |
 | {{< prop "secondaryAmmo" true >}} | int |
@@ -69,19 +69,19 @@ Inherits from [GameEntity](/vext/ref/client/type/gameentity)
 
 ### {{% prop-heading "weaponModifier" true %}}
 
-> **[WeaponModifier](/vext/ref/fb/weaponmodifier)**
+> **[WeaponModifier](/vext/ref/fb/weaponmodifier)** \| **nil**
 
 ### {{% prop-heading "correctedWeaponFiring" true %}}
 
-> **[WeaponFiring](/vext/ref/shared/type/weaponfiring)**
+> **[WeaponFiring](/vext/ref/shared/type/weaponfiring)** \| **nil**
 
 ### {{% prop-heading "predictedWeaponFiring" true %}}
 
-> **[WeaponFiring](/vext/ref/shared/type/weaponfiring)**
+> **[WeaponFiring](/vext/ref/shared/type/weaponfiring)** \| **nil**
 
 ### {{% prop-heading "aimingSimulation" true %}}
 
-> **[AimingSimulation](/vext/ref/client/type/aimingsimulation)**
+> **[AimingSimulation](/vext/ref/client/type/aimingsimulation)** \| **nil**
 
 ### {{% prop-heading "name" true %}}
 

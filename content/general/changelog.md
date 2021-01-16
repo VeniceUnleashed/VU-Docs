@@ -6,6 +6,13 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 17394 "15/1/2021" true %}}
+
+- VeniceEXT was updated to version `1.0.9` ([changelog](/vext/changelog/#1_0_9)).
+- Fix a crash in RCON:RegisterCommand
+- Introduce error message if a profile is corrupted
+- Add ICMP echo to ports that should be opened
+
 {{% changeset 17384 "22/12/2020" %}}
 
 - Add a scrollbar to the server browser
