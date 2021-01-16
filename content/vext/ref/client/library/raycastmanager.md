@@ -49,6 +49,21 @@ title: RaycastManager
 | ---- | ----------- |
 | **[RayCastHit](/vext/ref/shared/type/raycasthit)** \| **nil** |  |
 
+#### Example
+
+```lua
+Events:Subscribe('UpdateManager:Update', function(deltaTime, updatePass)
+    if updatePass ~= UpdatePass.UpdatePass_PreSim then 
+      return 
+    end
+    local rayCastHit = RaycastManager:Raycast(Vec3(0, 0, 0), Vec3(1, 0, 0), RayCastFlags.DontCheckWater)
+    if rayCastHit == nil then
+      return
+    end
+    -- Do something with the rayCastHit here
+end)
+```
+
 ### SpatialRaycast {#spatialraycast}
 
 > **SpatialRaycast**(from: [Vec3](/vext/ref/shared/type/vec3), to: [Vec3](/vext/ref/shared/type/vec3), flags: [SpatialQueryFlags](/vext/ref/shared/type/spatialqueryflags)): [Entity](/vext/ref/shared/type/entity){}

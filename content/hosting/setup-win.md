@@ -62,6 +62,7 @@ Before users can join your server you'll need to make sure that specific ports a
 | `7948` | UDP | Monitored Harmony, the VU networking layer. |
 | `25200` | UDP | Frostbite networking layer. |
 | `47200` | TCP | Remote administration protocol (RCON). |
+| `Echo` | ICMP | Allow players to see ping in server list (otherwise will show as 999) |
 
 ---
 

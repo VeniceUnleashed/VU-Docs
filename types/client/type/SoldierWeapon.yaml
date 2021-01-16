@@ -20,15 +20,19 @@ properties:
   weaponModifier:
     type: WeaponModifier
     readOnly: true
+    nullable: true
   correctedWeaponFiring:
     type: WeaponFiring
     readOnly: true
+    nullable: true
   predictedWeaponFiring:
     type: WeaponFiring
     readOnly: true
+    nullable: true
   aimingSimulation:
     type: AimingSimulation
     readOnly: true
+    nullable: true
   name:
     type: string
     readOnly: true

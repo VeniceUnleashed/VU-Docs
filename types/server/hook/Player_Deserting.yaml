@@ -1,0 +1,10 @@
+name: "Player:Deserting"
+type: hook
+
+params:
+  player:
+    type: Player
+    readOnly: true
+  outsideAreaTime:
+    type: int
+    readOnly: true
