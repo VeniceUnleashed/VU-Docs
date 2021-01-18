@@ -5,7 +5,7 @@ weight: 3
 ---
 
 <!-- omit in toc -->
-## Frequenty Asked Questions (FAQ)
+## Frequently Asked Questions (FAQ)
 
 - [I get an error about vu-core.dll](#i-get-an-error-about-vu-coredll)
 - [I get a black screen / loading screen when launching VU](#i-get-a-black-screen--loading-screen-when-launching-vu)
@@ -18,7 +18,6 @@ weight: 3
 - [Will I get banned for using this?](#will-i-get-banned-for-using-this)
 - [Are my Battlelog stats transferred over?](#are-my-battlelog-stats-transferred-over)
 - [Players cannot connect to my VU server](#players-cannot-connect-to-my-vu-server)
-- [My server is showing 999 ping](#my-server-ping-is-showing-as-999-in-server-list)
 - [My server crashes soon after startup](#my-server-crashes-soon-after-startup)
 - [My linux server errors could not find dependent assembly](#my-linux-server-errors-could-not-find-dependent-assembly)
 - [Can I run multiple instances of the VU client?](#can-i-run-multiple-instances-of-the-vu-client)
@@ -77,10 +76,6 @@ Make sure that connections to the VU server are not being blocked by your firewa
 | `7948` | UDP | Monitored Harmony, the VU networking layer. |
 | `25200` | UDP | Frostbite networking layer. |
 | `47200` | TCP | Remote administration protocol (RCON). |
-
-### My server ping is showing as 999 in server list
-
-Make sure that you allow `ICMP` in your servers firewall. This will resolve pings showing up as 999 in the server list even if in-game ping shows fine.
 
 ### My server crashes soon after startup
 

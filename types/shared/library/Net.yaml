@@ -21,6 +21,46 @@ methods:
       type: HttpResponse
       nullable: true
   -
+    name: GetHTTPAsync
+    params:
+      url:
+        type: string
+      callback:
+        type: callable
+        description: "A callback in the form `function(response: HttpResponse | nil): void`."
+  -
+    name: GetHTTPAsync
+    params:
+      url:
+        type: string
+      options:
+        type: HttpOptions
+      callback:
+        type: callable
+        description: "A callback in the form `function(response: HttpResponse | nil): void`."
+  -
+    name: GetHTTPAsync
+    params:
+      url:
+        type: string
+      context:
+        type: any
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, response: HttpResponse | nil): void`."
+  -
+    name: GetHTTPAsync
+    params:
+      url:
+        type: string
+      options:
+        type: HttpOptions
+      context:
+        type: any
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, response: HttpResponse | nil): void`."
+  -
     name: HeadHTTP
     params:
       url:
@@ -38,6 +78,46 @@ methods:
     returns:
       type: HttpResponse
       nullable: true
+  -
+    name: HeadHTTPAsync
+    params:
+      url:
+        type: string
+      callback:
+        type: callable
+        description: "A callback in the form `function(response: HttpResponse | nil): void`."
+  -
+    name: HeadHTTPAsync
+    params:
+      url:
+        type: string
+      options:
+        type: HttpOptions
+      callback:
+        type: callable
+        description: "A callback in the form `function(response: HttpResponse | nil): void`."
+  -
+    name: HeadHTTPAsync
+    params:
+      url:
+        type: string
+      context:
+        type: any
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, response: HttpResponse | nil): void`."
+  -
+    name: HeadHTTPAsync
+    params:
+      url:
+        type: string
+      options:
+        type: HttpOptions
+      context:
+        type: any
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, response: HttpResponse | nil): void`."
   -
     name: PostHTTP
     params:
@@ -61,6 +141,54 @@ methods:
       type: HttpResponse
       nullable: true
   -
+    name: PostHTTPAsync
+    params:
+      url:
+        type: string
+      data:
+        type: string
+      callback:
+        type: callable
+        description: "A callback in the form `function(response: HttpResponse | nil): void`."
+  -
+    name: PostHTTPAsync
+    params:
+      url:
+        type: string
+      data:
+        type: string
+      options:
+        type: HttpOptions
+      callback:
+        type: callable
+        description: "A callback in the form `function(response: HttpResponse | nil): void`."
+  -
+    name: PostHTTPAsync
+    params:
+      url:
+        type: string
+      data:
+        type: string
+      context:
+        type: any
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, response: HttpResponse | nil): void`."
+  -
+    name: PostHTTPAsync
+    params:
+      url:
+        type: string
+      data:
+        type: string
+      options:
+        type: HttpOptions
+      context:
+        type: any
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, response: HttpResponse | nil): void`."
+  -
     name: PutHTTP
     params:
       url:
@@ -83,6 +211,54 @@ methods:
       type: HttpResponse
       nullable: true
   -
+    name: PutHTTPAsync
+    params:
+      url:
+        type: string
+      data:
+        type: string
+      callback:
+        type: callable
+        description: "A callback in the form `function(response: HttpResponse | nil): void`."
+  -
+    name: PutHTTPAsync
+    params:
+      url:
+        type: string
+      data:
+        type: string
+      options:
+        type: HttpOptions
+      callback:
+        type: callable
+        description: "A callback in the form `function(response: HttpResponse | nil): void`."
+  -
+    name: PutHTTPAsync
+    params:
+      url:
+        type: string
+      data:
+        type: string
+      context:
+        type: any
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, response: HttpResponse | nil): void`."
+  -
+    name: PutHTTPAsync
+    params:
+      url:
+        type: string
+      data:
+        type: string
+      options:
+        type: HttpOptions
+      context:
+        type: any
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, response: HttpResponse | nil): void`."
+  -
     name: DeleteHTTP
     params:
       url:
@@ -101,6 +277,46 @@ methods:
       type: HttpResponse
       nullable: true
   -
+    name: DeleteHTTPAsync
+    params:
+      url:
+        type: string
+      callback:
+        type: callable
+        description: "A callback in the form `function(response: HttpResponse | nil): void`."
+  -
+    name: DeleteHTTPAsync
+    params:
+      url:
+        type: string
+      options:
+        type: HttpOptions
+      callback:
+        type: callable
+        description: "A callback in the form `function(response: HttpResponse | nil): void`."
+  -
+    name: DeleteHTTPAsync
+    params:
+      url:
+        type: string
+      context:
+        type: any
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, response: HttpResponse | nil): void`."
+  -
+    name: DeleteHTTPAsync
+    params:
+      url:
+        type: string
+      options:
+        type: HttpOptions
+      context:
+        type: any
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, response: HttpResponse | nil): void`."
+  -
     name: OptionsHTTP
     params:
       url:
@@ -118,6 +334,46 @@ methods:
     returns:
       type: HttpResponse
       nullable: true
+  -
+    name: OptionsHTTPAsync
+    params:
+      url:
+        type: string
+      callback:
+        type: callable
+        description: "A callback in the form `function(response: HttpResponse | nil): void`."
+  -
+    name: OptionsHTTPAsync
+    params:
+      url:
+        type: string
+      options:
+        type: HttpOptions
+      callback:
+        type: callable
+        description: "A callback in the form `function(response: HttpResponse | nil): void`."
+  -
+    name: OptionsHTTPAsync
+    params:
+      url:
+        type: string
+      context:
+        type: any
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, response: HttpResponse | nil): void`."
+  -
+    name: OptionsHTTPAsync
+    params:
+      url:
+        type: string
+      options:
+        type: HttpOptions
+      context:
+        type: any
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, response: HttpResponse | nil): void`."
   -
     name: PatchHTTP
     params:
@@ -140,6 +396,54 @@ methods:
     returns:
       type: HttpResponse
       nullable: true
+  -
+    name: PatchHTTPAsync
+    params:
+      url:
+        type: string
+      data:
+        type: string
+      callback:
+        type: callable
+        description: "A callback in the form `function(response: HttpResponse | nil): void`."
+  -
+    name: PatchHTTPAsync
+    params:
+      url:
+        type: string
+      data:
+        type: string
+      options:
+        type: HttpOptions
+      callback:
+        type: callable
+        description: "A callback in the form `function(response: HttpResponse | nil): void`."
+  -
+    name: PatchHTTPAsync
+    params:
+      url:
+        type: string
+      data:
+        type: string
+      context:
+        type: any
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, response: HttpResponse | nil): void`."
+  -
+    name: PatchHTTPAsync
+    params:
+      url:
+        type: string
+      data:
+        type: string
+      options:
+        type: HttpOptions
+      context:
+        type: any
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, response: HttpResponse | nil): void`."
   -
     name: Socket
     params:

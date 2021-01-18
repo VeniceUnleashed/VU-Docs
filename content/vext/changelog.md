@@ -3,7 +3,12 @@ title: Changelog
 weight: 1
 ---
 
-{{% changeset-vext "1.0.9" "15/1/2021" true %}}
+{{% changeset-vext "1.1.0" "18/01/2021" true %}}
+
+- Add support for async HTTP requests. All HTTP [Net](/vext/ref/shared/library/net/) library methods now have `Async` variants. 
+
+{{% changeset-vext "1.0.9" "15/01/2021" true %}}
+
 - Introduces [Player:Deserting](/vext/ref/server/hook/player_deserting/) server-side hook.
 - Fix documentation issue in [ClientUtils](/vext/ref/client/library/clientutils/).
 - Fix documentation issue in client [SoldierWeapon](/vext/ref/client/type/soldierweapon/).

@@ -183,6 +183,12 @@ Specifies the IP address clients should connect to in order to join this server.
 
 ---
 
+> `-joinhost <hostname>`
+
+Specifies a hostname clients should use when connecting to this server. When this is specified `-joinaddr` has no effect and any clients attempting to connect will not attempt to perform any NAT detection.
+
+---
+
 > `-noUpdate`
 
 Disables automatic updates.

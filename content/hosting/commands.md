@@ -121,3 +121,11 @@ When used with no arguments, it returns the current time scale. Defaults to `1.0
 Accepts a single boolean argument (`true` or `false`) which toggles whether vehicles can enter the disabled state or not. When set to `false`, vehicles will no longer get disabled (and drain health) when they reach low health status.
 
 When used with no arguments, it returns whether vehicle disabling is enabled or not. Defaults to `true`.
+
+### `vu.Fps`
+
+Returns the current FPS of the server.
+
+### `vu.FpsMa`
+
+Returns the 30-second moving average of the server FPS. If this value falls below `frequency-hz * 1.1` then a performance warning indicator will be shown next to your server in the server browser.

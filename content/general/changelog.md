@@ -6,12 +6,26 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
-{{% changeset 17394 "15/1/2021" true %}}
+{{% changeset 17483 "18/01/2021" true %}}
+
+- Fix an issue where `127.0.0.1` would be used when joining local servers ([#566](https://github.com/EmulatorNexus/VeniceUnleashed/issues/566)).
+- Fix an issue where players would get dropped from a server when connection to Zeus was lost.
+- Server browser pings should now more accurately represent network latency + processing delay.
+- Add two new read-only RCON variables: [vu.Fps](/hosting/commands/#vufps) and [vu.FpsMa](/hosting/commands/#vufpsma).
+- Fix a crash / black screen after soldier creation failed.
+- Add a new [-joinhost](/general/args/#server-arguments) launch argument which allows servers to specify a hostname to be joined by, bypassing NAT detection.
+- Add bad server performance indicators to the server browser (servers with less than `freq-hz * 1.1` fps).
+- Add a warning when joining a server with performance issues.
+- Improve error messages when linking an Origin account.
+- Improve error messages when creating, deleting, or logging in with a soldier.
+- Update bundled CA certificates ([#579](https://github.com/EmulatorNexus/VeniceUnleashed/issues/579)).
+- VeniceEXT was updated to version `1.1.0` ([changelog](/vext/changelog/#1_1_0)).
+
+{{% changeset 17394 "15/01/2021" true %}}
 
 - VeniceEXT was updated to version `1.0.9` ([changelog](/vext/changelog/#1_0_9)).
-- Fix a crash in RCON:RegisterCommand
-- Introduce error message if a profile is corrupted
-- Add ICMP echo to ports that should be opened
+- Fix a crash in `RCON:RegisterCommand`.
+- Introduce error message if a profile is corrupted.
 
 {{% changeset 17384 "22/12/2020" %}}
 
