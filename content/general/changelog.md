@@ -6,7 +6,7 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
-{{% changeset 17483 "18/01/2021" true %}}
+{{% changeset 17485 "18/01/2021" %}}
 
 - Fix an issue where `127.0.0.1` would be used when joining local servers ([#566](https://github.com/EmulatorNexus/VeniceUnleashed/issues/566)).
 - Fix an issue where players would get dropped from a server when connection to Zeus was lost.
@@ -21,11 +21,9 @@ Below you can find a full list of changes to VU, corresponding to every VU updat
 - Update bundled CA certificates ([#579](https://github.com/EmulatorNexus/VeniceUnleashed/issues/579)).
 - VeniceEXT was updated to version `1.1.0` ([changelog](/vext/changelog/#1_1_0)).
 
-{{% changeset 17394 "15/01/2021" true %}}
+{{% changeset 17394 "15/01/2021" %}}
 
-- VeniceEXT was updated to version `1.0.9` ([changelog](/vext/changelog/#1_0_9)).
 - Fix a crash in `RCON:RegisterCommand`.
-- Introduce error message if a profile is corrupted.
 
 {{% changeset 17384 "22/12/2020" %}}
 
