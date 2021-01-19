@@ -6,6 +6,10 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 17487 "18/01/2021" %}}
+
+- Fix an issue with the client trying to connect to an empty IP when joining a local server ([#588](https://github.com/EmulatorNexus/VeniceUnleashed/issues/588)).
+
 {{% changeset 17485 "18/01/2021" %}}
 
 - Fix an issue where `127.0.0.1` would be used when joining local servers ([#566](https://github.com/EmulatorNexus/VeniceUnleashed/issues/566)).
