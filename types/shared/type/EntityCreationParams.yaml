@@ -11,3 +11,7 @@ properties:
     type: int
   networked:
     type: bool
+  parentRepresentative:
+    type: DataContainer
+    nullable: true
+    description: Data (ReferenceObjectData) that represents the parent of this blueprint. Specifying this in combination with a custom IndexInBlueprint can be used to provide proper replication between entities spawned on the server and the client.

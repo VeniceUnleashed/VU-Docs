@@ -6,6 +6,14 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 17539 "11/02/2021" true %}}
+
+- Add support for tracing VeniceEXT execution post-crash with [-vexttrace](/general/args/#common-arguments).
+- Fix bots not having access to DLC weapons and equipment ([#593](https://github.com/EmulatorNexus/VeniceUnleashed/issues/593)).
+- Fix error messages not showing up properly when player creation fails ([#600](https://github.com/EmulatorNexus/VeniceUnleashed/issues/600)).
+- Forcefully assign players to Squad 1 when switching teams in squad-based gamemodes ([#578](https://github.com/EmulatorNexus/VeniceUnleashed/issues/578)).
+- VeniceEXT was updated to version `1.1.1` ([changelog](/vext/changelog/#1_1_1)).
+
 {{% changeset 17487 "18/01/2021" %}}
 
 - Fix an issue with the client trying to connect to an empty IP when joining a local server ([#588](https://github.com/EmulatorNexus/VeniceUnleashed/issues/588)).

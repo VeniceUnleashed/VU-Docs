@@ -28,3 +28,14 @@ methods:
     returns:
       type: Vec2
       nullable: true
+  -
+    name: PopScreen
+    params:
+      graphAsset:
+        type: DataContainer
+        description: The UIGraphAsset of the screen to pop.
+      screensToPop:
+        type: int
+        description: The number of screens to pop.
+    returns:
+      type: bool
