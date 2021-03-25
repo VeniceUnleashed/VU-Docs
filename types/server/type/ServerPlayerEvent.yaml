@@ -1,4 +1,4 @@
-name: ClientPlayerEvent
+name: ServerPlayerEvent
 type: class
 inherits: EntityEvent
 
