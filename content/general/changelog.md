@@ -14,6 +14,10 @@ Below you can find a full list of changes to VU, corresponding to every VU updat
 - Forcefully assign players to Squad 1 when switching teams in squad-based gamemodes ([#578](https://github.com/EmulatorNexus/VeniceUnleashed/issues/578)).
 - VeniceEXT was updated to version `1.1.1` ([changelog](/vext/changelog/#1_1_1)).
 
+{{% changeset 17490 "24/01/2021" true %}}
+
+- Fix an issue with the UI Nametag hooks ([#591](https://github.com/EmulatorNexus/VeniceUnleashed/issues/591)).
+
 {{% changeset 17487 "18/01/2021" %}}
 
 - Fix an issue with the client trying to connect to an empty IP when joining a local server ([#588](https://github.com/EmulatorNexus/VeniceUnleashed/issues/588)).
