@@ -3,6 +3,11 @@ title: Changelog
 weight: 1
 ---
 
+{{% changeset-vext "1.1.1" "11/02/2021" true %}}
+
+- Add support for specifying a [parent representative](/vext/ref/shared/type/entitycreationparams/#parentrepresentative) during entity blueprint creation.
+- Add a new [PopScreen](/vext/ref/client/library/clientutils/#popscreen) method to the [ClientUtils](/vext/ref/client/library/clientutils/) library.
+
 {{% changeset-vext "1.1.0" "18/01/2021" %}}
 
 - Add support for async HTTP requests. All HTTP [Net](/vext/ref/shared/library/net/) library methods now have `Async` variants. 
