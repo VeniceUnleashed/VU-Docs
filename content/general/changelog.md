@@ -6,6 +6,12 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 17547 "25/03/2021" true %}}
+- VeniceEXT was updated to version `1.1.2` ([changelog](/vext/changelog/#1_1_2)).
+
+{{% changeset 17546 "25/03/2021" true %}}
+- Fix inverted `vars.3pCam` and `vars.3dSpotting` RCON commands ([#559](https://github.com/EmulatorNexus/VeniceUnleashed/issues/559)).
+
 {{% changeset 17539 "11/02/2021" true %}}
 
 - Add support for tracing VeniceEXT execution post-crash with [-vexttrace](/general/args/#common-arguments).

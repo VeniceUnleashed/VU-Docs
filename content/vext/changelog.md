@@ -3,6 +3,9 @@ title: Changelog
 weight: 1
 ---
 
+{{% changeset-vext "1.1.2" "25/03/2021" true %}}
+- Add missing documented enum value `WeaponFiring.Reload`.
+
 {{% changeset-vext "1.1.1" "11/02/2021" true %}}
 
 - Add support for specifying a [parent representative](/vext/ref/shared/type/entitycreationparams/#parentrepresentative) during entity blueprint creation.
