@@ -5,7 +5,7 @@ hideChildren: true
 
 |   |   |
 | --- | --- |
-| [CapturePointEntity](/vext/ref/server/type/capturepointentity) | [ClientPlayerEvent](/vext/ref/server/type/clientplayerevent) |
+| [CapturePointEntity](/vext/ref/server/type/capturepointentity) | [ServerPlayerEvent](/vext/ref/server/type/serverplayerevent) |
 | [CollisionInfo](/vext/ref/server/type/collisioninfo) | [ControllableEntity](/vext/ref/server/type/controllableentity) |
 | [DamageGiverInfo](/vext/ref/server/type/damagegiverinfo) | [DamageInfo](/vext/ref/server/type/damageinfo) |
 | [ExplosionEntity](/vext/ref/server/type/explosionentity) | [GameEntity](/vext/ref/server/type/gameentity) |
