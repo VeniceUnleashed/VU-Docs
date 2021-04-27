@@ -1,5 +1,5 @@
 ---
-title: ClientPlayerEvent
+title: ServerPlayerEvent
 ---
 
 Inherits from [EntityEvent](/vext/ref/shared/type/entityevent)
@@ -10,8 +10,8 @@ Inherits from [EntityEvent](/vext/ref/shared/type/entityevent)
 
 |  |
 | --- |
-| **[ClientPlayerEvent](#constructor-0)**(eventId: int, player: [Player](/vext/ref/server/type/player), sendToPlayerOnly: bool, sendToHostOnly: bool, sendToTeamOnly: bool, invertPlayerFilter: bool, invertTeamFilter: bool, forwardToSpectators: bool, team: [TeamId](/vext/ref/fb/teamid)) |
-| **[ClientPlayerEvent](#constructor-1)**(eventName: string, player: [Player](/vext/ref/server/type/player), sendToPlayerOnly: bool, sendToHostOnly: bool, sendToTeamOnly: bool, invertPlayerFilter: bool, invertTeamFilter: bool, forwardToSpectators: bool, team: [TeamId](/vext/ref/fb/teamid)) |
+| **[ServerPlayerEvent](#constructor-0)**(eventId: int, player: [Player](/vext/ref/server/type/player), sendToPlayerOnly: bool, sendToHostOnly: bool, sendToTeamOnly: bool, invertPlayerFilter: bool, invertTeamFilter: bool, forwardToSpectators: bool, team: [TeamId](/vext/ref/fb/teamid)) |
+| **[ServerPlayerEvent](#constructor-1)**(eventName: string, player: [Player](/vext/ref/server/type/player), sendToPlayerOnly: bool, sendToHostOnly: bool, sendToTeamOnly: bool, invertPlayerFilter: bool, invertTeamFilter: bool, forwardToSpectators: bool, team: [TeamId](/vext/ref/fb/teamid)) |
 
 ### Properties
 
@@ -28,9 +28,9 @@ Inherits from [EntityEvent](/vext/ref/shared/type/entityevent)
 
 ## Constructors
 
-### ClientPlayerEvent {#constructor-0}
+### ServerPlayerEvent {#constructor-0}
 
-> **ClientPlayerEvent**(eventId: int, player: [Player](/vext/ref/server/type/player), sendToPlayerOnly: bool, sendToHostOnly: bool, sendToTeamOnly: bool, invertPlayerFilter: bool, invertTeamFilter: bool, forwardToSpectators: bool, team: [TeamId](/vext/ref/fb/teamid))
+> **ServerPlayerEvent**(eventId: int, player: [Player](/vext/ref/server/type/player), sendToPlayerOnly: bool, sendToHostOnly: bool, sendToTeamOnly: bool, invertPlayerFilter: bool, invertTeamFilter: bool, forwardToSpectators: bool, team: [TeamId](/vext/ref/fb/teamid))
 
 #### Parameters
 
@@ -46,9 +46,9 @@ Inherits from [EntityEvent](/vext/ref/shared/type/entityevent)
 | **forwardToSpectators** | bool |  |
 | **team** | [TeamId](/vext/ref/fb/teamid) |  |
 
-### ClientPlayerEvent {#constructor-1}
+### ServerPlayerEvent {#constructor-1}
 
-> **ClientPlayerEvent**(eventName: string, player: [Player](/vext/ref/server/type/player), sendToPlayerOnly: bool, sendToHostOnly: bool, sendToTeamOnly: bool, invertPlayerFilter: bool, invertTeamFilter: bool, forwardToSpectators: bool, team: [TeamId](/vext/ref/fb/teamid))
+> **ServerPlayerEvent**(eventName: string, player: [Player](/vext/ref/server/type/player), sendToPlayerOnly: bool, sendToHostOnly: bool, sendToTeamOnly: bool, invertPlayerFilter: bool, invertTeamFilter: bool, forwardToSpectators: bool, team: [TeamId](/vext/ref/fb/teamid))
 
 #### Parameters
 

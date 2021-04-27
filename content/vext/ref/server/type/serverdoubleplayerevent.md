@@ -2,7 +2,7 @@
 title: ServerDoublePlayerEvent
 ---
 
-Inherits from ServerPlayerEvent
+Inherits from [ServerPlayerEvent](/vext/ref/server/type/serverplayerevent)
 
 ## Summary
 
