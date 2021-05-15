@@ -21,13 +21,12 @@ hideChildren: true
 | [LensScopeData](/vext/ref/client/type/lensscopedata) | [LifeCounterEntity](/vext/ref/client/type/lifecounterentity) |
 | [MotionBlurData](/vext/ref/client/type/motionblurdata) | [NetEvent](/vext/ref/client/type/netevent) |
 | [OutdoorLightData](/vext/ref/client/type/outdoorlightdata) | [PhysicsEntity](/vext/ref/client/type/physicsentity) |
-| [PickupEntity](/vext/ref/client/type/pickupentity) | [PlanarReflectionData](/vext/ref/client/type/planarreflectiondata) |
-| [Player](/vext/ref/client/type/player) | [RagdollComponent](/vext/ref/client/type/ragdollcomponent) |
-| [ScreenEffectData](/vext/ref/client/type/screeneffectdata) | [ShaderParamsData](/vext/ref/client/type/shaderparamsdata) |
-| [SkyData](/vext/ref/client/type/skydata) | [SoldierEntity](/vext/ref/client/type/soldierentity) |
-| [SoldierWeapon](/vext/ref/client/type/soldierweapon) | [SoldierWeaponsComponent](/vext/ref/client/type/soldierweaponscomponent) |
-| [SoundEntity](/vext/ref/client/type/soundentity) | [SunFlareData](/vext/ref/client/type/sunflaredata) |
-| [TicketCounterEntity](/vext/ref/client/type/ticketcounterentity) | [TonemapData](/vext/ref/client/type/tonemapdata) |
-| [VignetteData](/vext/ref/client/type/vignettedata) | [VisualEnvironmentState](/vext/ref/client/type/visualenvironmentstate) |
-| [WeaponInfo](/vext/ref/client/type/weaponinfo) | [WindData](/vext/ref/client/type/winddata) |
+| [PlanarReflectionData](/vext/ref/client/type/planarreflectiondata) | [Player](/vext/ref/client/type/player) |
+| [RagdollComponent](/vext/ref/client/type/ragdollcomponent) | [ScreenEffectData](/vext/ref/client/type/screeneffectdata) |
+| [ShaderParamsData](/vext/ref/client/type/shaderparamsdata) | [SkyData](/vext/ref/client/type/skydata) |
+| [SoldierEntity](/vext/ref/client/type/soldierentity) | [SoldierWeapon](/vext/ref/client/type/soldierweapon) |
+| [SoldierWeaponsComponent](/vext/ref/client/type/soldierweaponscomponent) | [SoundEntity](/vext/ref/client/type/soundentity) |
+| [SunFlareData](/vext/ref/client/type/sunflaredata) | [TicketCounterEntity](/vext/ref/client/type/ticketcounterentity) |
+| [TonemapData](/vext/ref/client/type/tonemapdata) | [VignetteData](/vext/ref/client/type/vignettedata) |
+| [VisualEnvironmentState](/vext/ref/client/type/visualenvironmentstate) | [WindData](/vext/ref/client/type/winddata) |
 

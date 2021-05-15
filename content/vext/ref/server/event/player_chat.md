@@ -2,7 +2,7 @@
 title: Player:Chat
 ---
 
-> **Player:Chat**(player: [Player](/vext/ref/server/type/player), recipientMask: int, message: string)
+> **Player:Chat**(player: [Player](/vext/ref/server/type/player) \| nil, recipientMask: int, message: string)
 
 ## Parameters
 
