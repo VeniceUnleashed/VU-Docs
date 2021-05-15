@@ -2,6 +2,10 @@
 title: Changelog
 weight: 1
 ---
+{{% changeset-vext "1.1.3" "25/03/2021" true %}}
+- Fix [EventEntity](/vext/ref/shared/type/entityevent/#eventid) eventId returning nil ([#626](https://github.com/EmulatorNexus/VeniceUnleashed/issues/626)).
+- Fix crash in [RegisterEventCallback](/vext/ref/shared/type/entity/#registereventcallback) when `modlist.reloadExtensions` is sent to RCON.
+- Fix crash in broadcast NetEvents when the player manager was not available (This now will emit a warning).
 
 {{% changeset-vext "1.1.2" "25/03/2021" true %}}
 - Add missing documented enum value `WeaponFiring.Reload`.

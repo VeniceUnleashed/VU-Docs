@@ -35,6 +35,8 @@ This will start a local server at [http://localhost:1313](http://localhost:1313)
 To build the site and prepare it for publishing open a terminal in your local repository directory and run the following command:
 
 ```bash
+npm run build:types
+npm run build:index
 npm run build
 ```
 

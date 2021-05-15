@@ -18,7 +18,7 @@ Inherits from [GameEntity](/vext/ref/client/type/gameentity)
 
 | Name | Type |
 | ---- | ---- |
-| {{< prop "weapons" true >}} | [WeaponInfo](/vext/ref/client/type/weaponInfo)[] |
+| {{< prop "weapons" true >}} | [WeaponInfo](/vext/ref/client/type/weaponinfo)[] |
 | {{< prop "droppedByTeam" true >}} | [TeamId](/vext/ref/fb/teamid) |
 | {{< prop "droppedByCharacterCustomizationAsset" true >}} | [CharacterCustomizationAsset](/vext/ref/fb/charactercustomizationasset) |
 
@@ -64,7 +64,7 @@ Inherits from [GameEntity](/vext/ref/client/type/gameentity)
 
 ### {{% prop-heading "weapons" true %}}
 
-> **[WeaponInfo](/vext/ref/client/type/weaponInfo)**[]
+> **[WeaponInfo](/vext/ref/client/type/weaponinfo)**[]
 
 ### {{% prop-heading "droppedByTeam" true %}}
 
