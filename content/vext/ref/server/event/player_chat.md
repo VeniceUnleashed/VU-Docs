@@ -8,7 +8,7 @@ title: Player:Chat
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| **player** | [Player](/vext/ref/server/type/player) |  |
+| **player** | [Player](/vext/ref/server/type/player) \| nil |  |
 | **recipientMask** | int |  |
 | **message** | string |  |
 

@@ -4,6 +4,7 @@ type: event
 params:
   player:
     type: Player
+    nullable: true
   recipientMask:
     type: int
   message:
