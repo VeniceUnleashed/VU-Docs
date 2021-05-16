@@ -6,7 +6,7 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
-{{% changeset 17587 "15/05/2021" true %}}
+{{% changeset 17589 "15/05/2021" true %}}
 
 - Fix `admin.listPlayers all` RCON command not behaving as intended ([#506](https://github.com/EmulatorNexus/VeniceUnleashed/issues/506)).
 - Increase maximum allowed teams to 127 ([#619](https://github.com/EmulatorNexus/VeniceUnleashed/issues/619)).
