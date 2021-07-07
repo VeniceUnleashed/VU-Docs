@@ -87,6 +87,16 @@ methods:
         type: EntryInputActionEnum
       enable:
         type: bool
+  -
+    name: OverrideTeamId
+    params:
+      team:
+        type: TeamId
+  -
+    name: OverrideSquadId
+    params:
+      squad:
+        type: SquadId
 
 operators:
   -

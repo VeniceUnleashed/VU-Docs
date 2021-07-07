@@ -36,6 +36,8 @@ title: Player
 | Method | Returns |
 | ------ | ------- |
 | **[EnableInput](#enableinput)**(action: [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum), enable: bool) | void |
+| **[OverrideTeamId](#overrideteamid)**(team: [TeamId](/vext/ref/fb/teamid)) | void |
+| **[OverrideSquadId](#overridesquadid)**(squad: [SquadId](/vext/ref/fb/squadid)) | void |
 
 ### Operators
 
@@ -151,6 +153,26 @@ The players ping to the server.
 | ---- | ---- | ----------- |
 | **action** | [EntryInputActionEnum](/vext/ref/fb/entryinputactionenum) |  |
 | **enable** | bool |  |
+
+### OverrideTeamId {#overrideteamid}
+
+> **OverrideTeamId**(team: [TeamId](/vext/ref/fb/teamid))
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **team** | [TeamId](/vext/ref/fb/teamid) |  |
+
+### OverrideSquadId {#overridesquadid}
+
+> **OverrideSquadId**(squad: [SquadId](/vext/ref/fb/squadid))
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **squad** | [SquadId](/vext/ref/fb/squadid) |  |
 
 ## Operators
 
