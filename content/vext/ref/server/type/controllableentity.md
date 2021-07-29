@@ -20,7 +20,7 @@ Inherits from [PhysicsEntity](/vext/ref/server/type/physicsentity)
 | Name | Type |
 | ---- | ---- |
 | {{< prop "entryCount" true >}} | int |
-| {{< prop "teamId" true >}} | [TeamId](/vext/ref/fb/teamid) |
+| {{< prop "teamId" >}} | [TeamId](/vext/ref/fb/teamid) |
 | {{< prop "defaultTeamId" true >}} | [TeamId](/vext/ref/fb/teamid) |
 
 ### Methods
@@ -86,7 +86,7 @@ Inherits from [PhysicsEntity](/vext/ref/server/type/physicsentity)
 
 > **int**
 
-### {{% prop-heading "teamId" true %}}
+### {{% prop-heading "teamId" %}}
 
 > **[TeamId](/vext/ref/fb/teamid)**
 
