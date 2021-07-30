@@ -26,7 +26,6 @@ properties:
     readOnly: true
   teamId:
     type: TeamId
-    readOnly: true
   defaultTeamId:
     type: TeamId
     readOnly: true

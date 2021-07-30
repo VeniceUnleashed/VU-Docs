@@ -13,10 +13,8 @@ properties:
     readOnly: true
   teamId:
     type: TeamId
-    readOnly: true
   squadId:
     type: SquadId
-    readOnly: true
   inVehicle:
     type: bool
     readOnly: true

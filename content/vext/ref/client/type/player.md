@@ -11,8 +11,8 @@ title: Player
 | {{< prop "name" true >}} | string |
 | {{< prop "id" true >}} | int |
 | {{< prop "onlineId" true >}} | int |
-| {{< prop "teamId" true >}} | [TeamId](/vext/ref/fb/teamid) |
-| {{< prop "squadId" true >}} | [SquadId](/vext/ref/fb/squadid) |
+| {{< prop "teamId" >}} | [TeamId](/vext/ref/fb/teamid) |
+| {{< prop "squadId" >}} | [SquadId](/vext/ref/fb/squadid) |
 | {{< prop "inVehicle" true >}} | bool |
 | {{< prop "soldier" true >}} | [SoldierEntity](/vext/ref/client/type/soldierentity) \| nil |
 | {{< prop "corpse" true >}} | [SoldierEntity](/vext/ref/client/type/soldierentity) \| nil |
@@ -57,11 +57,11 @@ title: Player
 
 > **int**
 
-### {{% prop-heading "teamId" true %}}
+### {{% prop-heading "teamId" %}}
 
 > **[TeamId](/vext/ref/fb/teamid)**
 
-### {{% prop-heading "squadId" true %}}
+### {{% prop-heading "squadId" %}}
 
 > **[SquadId](/vext/ref/fb/squadid)**
 

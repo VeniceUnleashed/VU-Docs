@@ -6,6 +6,15 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 17669 "30/07/2021" true %}}
+
+- Make `teamId` and `squadId` writable for the client [Player](/vext/ref/client/type/player/) and remove the methods `OverrideTeamId` and `OverrideSquadId`
+- Make `teamId` writable for the client [ControllableEntity](/vext/ref/client/type/controllableentity/) and the server [ControllableEntity](/vext/ref/server/type/controllableentity/) ([#651](https://github.com/EmulatorNexus/VeniceUnleashed/issues/651))
+- Fixed crash when calling `entity:Destroy()`
+
+{{% changeset 17641 "01/07/2021" true %}}
+- Add the methods `OverrideTeamId` and `OverrideSquadId` for the client [Player](/vext/ref/client/type/player/) ([#642](https://github.com/EmulatorNexus/VeniceUnleashed/issues/642))
+
 {{% changeset 17589 "15/05/2021" true %}}
 
 - Fix `admin.listPlayers all` RCON command not behaving as intended ([#506](https://github.com/EmulatorNexus/VeniceUnleashed/issues/506)).
