@@ -8,7 +8,7 @@ Below you can find a full list of changes to VU, corresponding to every VU updat
 
 {{% changeset 17669 "31/07/2021" true %}}
 
-- Fixed crash in [PhysicsEntityBase](/vext/ref/shared/type/physicsentitybase) when using `GetPart(index)` ([#674](https://github.com/EmulatorNexus/VeniceUnleashed/issues/674))
+- Fixed crash in [PhysicsEntityBase](/vext/ref/shared/type/physicsentitybase) when using `GetPart(partId)` ([#674](https://github.com/EmulatorNexus/VeniceUnleashed/issues/674))
 
 {{% changeset 17669 "30/07/2021" true %}}
 
