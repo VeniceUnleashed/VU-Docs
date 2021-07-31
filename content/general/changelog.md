@@ -6,6 +6,10 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 17669 "31/07/2021" true %}}
+
+- Fixed crash in [PhysicsEntityBase](/vext/ref/shared/type/physicsentitybase) when using `GetPart(index)` ([#674](https://github.com/EmulatorNexus/VeniceUnleashed/issues/674))
+
 {{% changeset 17669 "30/07/2021" true %}}
 
 - Make `teamId` and `squadId` writable for the client [Player](/vext/ref/client/type/player/) and remove the methods `OverrideTeamId` and `OverrideSquadId`
