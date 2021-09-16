@@ -95,15 +95,27 @@ Enables WebUI debugging at `http://localhost:8884`.
 
 ---
 
-> `vu://join/<server-guid>`
+> `vu://join/<server-guid>[/<password>]`
 
-Connect to server with given GUID (without dashes). This is the ID of a [server key](/hosting/prereq/#generating-server-keys). You can also use this URL as a hyperlink on a website to join a server.
+Connect to a server with the given GUID (without dashes) and an optional password. This is the ID of a [server key](/hosting/prereq/#generating-server-keys). You can also use this URL as a hyperlink on a website to join a server.
+
+Example: `vu://join/4ffa57c1068540e59b9a25eb6b00dfcd`  
+Example (with password): `vu://join/4ffa57c1068540e59b9a25eb6b00dfcd/amazingpass`
 
 ---
 
-> `vu://spectate/<server-guid>`
+> `vu://spectate/<server-guid>[/<password>]`
 
-Connect as spectator to server with given GUID (without dashes). This is the ID of a [server key](/hosting/prereq/#generating-server-keys). You can also use this URL as a hyperlink to join a server as a spectator.
+Connect as a spectator to a server with the given GUID (without dashes) and an optional password. This is the ID of a [server key](/hosting/prereq/#generating-server-keys). You can also use this URL as a hyperlink to join a server as a spectator.
+
+Example: `vu://spectate/4ffa57c1068540e59b9a25eb6b00dfcd`  
+Example (with password): `vu://spectate/4ffa57c1068540e59b9a25eb6b00dfcd/amazingpass`
+
+---
+
+> `-cefdebug`
+
+Enable verbose debugging logging for CEF. Useful for catching issues with WebUI mods. When running with this argument, a `debug.log` file will be created in the directory of VU (usually `%LocalAppData%\VeniceUnleashed\client`).
 
 ## Server arguments
 

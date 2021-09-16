@@ -6,20 +6,28 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
-{{% changeset 17669 "30/07/2021" true %}}
+{{% changeset 17689 "16/09/2021" true %}}
 
-- Make `teamId` and `squadId` writable for the client [Player](/vext/ref/client/type/player/) and remove the methods `OverrideTeamId` and `OverrideSquadId`
-- Make `teamId` writable for the client [ControllableEntity](/vext/ref/client/type/controllableentity/) and the server [ControllableEntity](/vext/ref/server/type/controllableentity/) ([#651](https://github.com/EmulatorNexus/VeniceUnleashed/issues/651))
-- Fixed crash when calling `entity:Destroy()`
-
-{{% changeset 17641 "01/07/2021" true %}}
-- Add the methods `OverrideTeamId` and `OverrideSquadId` for the client [Player](/vext/ref/client/type/player/) ([#642](https://github.com/EmulatorNexus/VeniceUnleashed/issues/642))
+- Improve performance of cross-mod Event dispatching.
+- Improve performance of NetEvent serialization.
+- Fix spectators not being sent to RCON.
+- Fix spectators not receiving Yell messages.
+- Add additional checks to Entity operations to prevent undefined behavior.
+- Greatly rework how players are managed internally, reducing the amount of edge cases when accessing player objects via VEXT.
+- Fix various player related VEXT and RCON events.
+- Fix various issues with player-targetted NetEvents.
+- Add support for specifying a server password when using the `vu://join` or `vu://spectate` [command-line arguments or hyperlinks](/general/args/#client-arguments).
+- Add support for specifying a server password when using the `connect` or `spectate` [console commands]().
+- Automatically apply server filters when pressing the `Enter` key in the server name or min/max player/ping inputs.
+- Fix various crashes and cases of undefined behavior.
+- Add a new `-cefdebug` [command-line argument](/general/args/#client-arguments) that turns on verbose CEF debug logging.
+- VeniceEXT was updated to version `1.2.0` ([changelog](/vext/changelog/#1_2_0)).
+- A bunch of other minor fixes and changes.
 
 {{% changeset 17589 "15/05/2021" true %}}
 
 - Fix `admin.listPlayers all` RCON command not behaving as intended ([#506](https://github.com/EmulatorNexus/VeniceUnleashed/issues/506)).
 - Increase maximum allowed teams to 127 ([#619](https://github.com/EmulatorNexus/VeniceUnleashed/issues/619)).
-
 - VeniceEXT was updated to version `1.1.3` ([changelog](/vext/changelog/#1_1_3)).
 
 {{% changeset 17547 "25/03/2021" true %}}

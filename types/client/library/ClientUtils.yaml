@@ -39,3 +39,23 @@ methods:
         description: The number of screens to pop.
     returns:
       type: bool
+  -
+    name: ConnectToServer
+    params:
+      serverGuid:
+        type: Guid
+        description: The GUID of the server to connect to.
+      password:
+        type: string
+        description: The password to use when trying to connect to a password-protected server.
+        default: '""'
+  -
+    name: SpectateServer
+    params:
+      serverGuid:
+        type: Guid
+        description: The GUID of the server to connect to as a spectator.
+      password:
+        type: string
+        description: The password to use when trying to connect to a password-protected server.
+        default: '""'

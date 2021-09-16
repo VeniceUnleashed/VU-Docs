@@ -2,8 +2,30 @@
 title: Changelog
 weight: 1
 ---
+
+{{% changeset-vext "1.2.0" "16/09/2021" true %}}
+
+- Made the `teamId` and `squadId` properties writable for the client [Player](/vext/ref/client/type/player/) ([#642](https://github.com/EmulatorNexus/VeniceUnleashed/issues/642)) type.
+- Made the `teamId` property writable for the client [ControllableEntity](/vext/ref/client/type/controllableentity/) and the server [ControllableEntity](/vext/ref/server/type/controllableentity/) types ([#651](https://github.com/EmulatorNexus/VeniceUnleashed/issues/651))
+- Fixed crash when calling `entity:Destroy()`.
+- Fixed various issues with DataContainer loading callbacks.
+- Fixed spectators not being included in the VEXT PlayerManager.
+- Fixed spectators not receiving NetEvents.
+- Fixed `Player:Deleted` not being called for spectators.
+- Fixed a race condition with VEXT module registration.
+- The instance id will now be printed when printing Entity or EntityBus types using `print`.
+- Fixed issues with entity destruction callbacks not being called correctly.
+- Fixed `Player:Connected` and `Player:Deleted` events being dispatched multiple times.
+- Fixed a crash when calling [GetPart](/vext/ref/shared/type/physicsentitybase/#getpart) on a [PhysicsEntityBase](/vext/ref/shared/type/physicsentitybase/) with an invalid index ([#674](https://github.com/EmulatorNexus/VeniceUnleashed/issues/674)).
+- Removed duplicate `Get/SetLocalTransform` methods from [RagdollComponent](/vext/ref/client/type/ragdollcomponent/) ([#672](https://github.com/EmulatorNexus/VeniceUnleashed/issues/672)).
+- Added additional checks to prevent receiving stale data when accessing `player` properties of entities.
+- Improved performance of accessing instances in [DatabasePartition](/vext/ref/shared/type/databasepartition/).
+- Introduces two new [ConnectToServer](/vext/ref/client/library/clientutils/#connecttoserver) and [SpectateServer](/vext/ref/client/library/clientutils/#spectateserver) methods to the [ClientUtils](/vext/ref/client/library/clientutils/) library, allowing you to switch servers programmatically.
+- Added a built-in VEXT mod that is automatically loaded on servers and clients and can be used to apply various hotfixes to the game and provide supporting functionality.
+- Updated to Lua `5.4.2`.
+
 {{% changeset-vext "1.1.3" "25/03/2021" true %}}
-- Fix [EventEntity](/vext/ref/shared/type/entityevent/#eventid) eventId returning nil ([#626](https://github.com/EmulatorNexus/VeniceUnleashed/issues/626)).
+- Fix [EventEntity](/vext/ref/shared/type/entityevent/#eventid) `eventId` returning `nil` ([#626](https://github.com/EmulatorNexus/VeniceUnleashed/issues/626)).
 - Fix crash in [RegisterEventCallback](/vext/ref/shared/type/entity/#registereventcallback) when `modlist.reloadExtensions` is sent to RCON.
 - Fix crash in broadcast NetEvents when the player manager was not available (This now will emit a warning).
 

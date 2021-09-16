@@ -26,15 +26,15 @@ An alias for `quit`.
 
 ---
 
-> `connect <server-guid>`
+> `connect <server-guid> [password]`
 
-Connect to server with given GUID (without dashes). This is the ID of a [server key](/hosting/prereq/#generating-server-keys).
+Connect to a server with the given GUID (without dashes) and an optional password. This is the ID of a [server key](/hosting/prereq/#generating-server-keys).
 
 ---
 
-> `spectate <server-guid>`
+> `spectate <server-guid> [password]`
 
-Connect as spectator to server with given GUID (without dashes). This is the ID of a [server key](/hosting/prereq/#generating-server-keys).
+Connect as a spectator to a server with the given GUID (without dashes) and an optional password. This is the ID of a [server key](/hosting/prereq/#generating-server-keys).
 
 ---
 
