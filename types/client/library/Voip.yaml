@@ -1,0 +1,30 @@
+name: Voip
+type: library
+
+methods:
+  -
+    name: IsAvailable
+    description: Returns `true` if the client has VoIP capabilities (eg. they have a microphone).
+    returns:
+      type: bool
+  -
+    name: GetChannel
+    description: Get a VoIP channel with the given name (if one exists).
+    params:
+      channelName:
+        type: string
+    returns:
+      type: VoipChannel
+      nullable: true
+  -
+    name: GetChannels
+    description: Gets all available VoIP channels.
+    returns:
+      type: VoipChannel
+      table: true
+  -
+    name: GetEmitters
+    description: Gets all VoIP emitters from all available channels.
+    returns:
+      type: VoipEmitter
+      table: true

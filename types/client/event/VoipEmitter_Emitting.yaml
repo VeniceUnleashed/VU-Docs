@@ -1,0 +1,9 @@
+name: "VoipEmitter:Emitting"
+type: event
+description: The `isEmitting` state of a VoipEmitter has changed.
+
+params:
+  emitter:
+    type: VoipEmitter
+  isEmitting:
+    type: bool

@@ -1,0 +1,10 @@
+name: VoipTransmissionMode
+type: enum
+
+values:
+  VoiceActivation:
+    value: 0
+  AlwaysOn:
+    value: 1
+  PushToTalk:
+    value: 2

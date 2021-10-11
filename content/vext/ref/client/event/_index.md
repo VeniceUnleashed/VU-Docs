@@ -16,4 +16,7 @@ hideChildren: true
 | [UI:DrawHud](/vext/ref/client/event/ui_drawhud) | [VE:StateAdded](/vext/ref/client/event/ve_stateadded) |
 | [VE:StateRemoved](/vext/ref/client/event/ve_stateremoved) | [VE:StatesCleared](/vext/ref/client/event/ve_statescleared) |
 | [VU:Spec:PostUpdate](/vext/ref/client/event/vu_spec_postupdate) | [VU:Spec:PreUpdate](/vext/ref/client/event/vu_spec_preupdate) |
+| [Voip:ChannelClosed](/vext/ref/client/event/voip_channelclosed) | [Voip:ChannelOpened](/vext/ref/client/event/voip_channelopened) |
+| [VoipChannel:PlayerJoined](/vext/ref/client/event/voipchannel_playerjoined) | [VoipChannel:PlayerLeft](/vext/ref/client/event/voipchannel_playerleft) |
+| [VoipEmitter:Emitting](/vext/ref/client/event/voipemitter_emitting) | |
 

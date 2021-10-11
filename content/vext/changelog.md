@@ -3,6 +3,17 @@ title: Changelog
 weight: 1
 ---
 
+{{% changeset-vext "1.3.0" "11/10/2021" true %}}
+
+- Introduces a new [Voip](/vext/ref/server/library/voip/) server library.
+- Introduces a new [Voip](/vext/ref/client/library/voip/) client library.
+- Introduces a new [VoipChannel](/vext/ref/server/type/voipchannel/) server type.
+- Introduces a new [VoipChannel](/vext/ref/client/type/voipchannel/) client type.
+- Introduces a new [VoipEmitter](/vext/ref/client/type/voipemitter/) client type.
+- Introduces a new [VoipEmitterType](/vext/ref/shared/type/voipemittertype/) shared enum.
+- Introduces a new [VoipTransmissionMode](/vext/ref/shared/type/voiptransmissionmode/) shared enum.
+- Introduces several new client events: [Voip:ChannelOpened](/vext/ref/client/event/voip_channelopened/), [Voip:ChannelClosed](/vext/ref/client/event/voip_channelclosed/), [VoipChannel:PlayerJoined](/vext/ref/client/event/voipchannel_playerjoined/), [VoipChannel:PlayerLeft](/vext/ref/client/event/voipchannel_playerleft/), and [VoipEmitter:Emitting](/vext/ref/client/event/voipemitter_emitting/).
+
 {{% changeset-vext "1.2.0" "16/09/2021" true %}}
 
 - Made the `teamId` and `squadId` properties writable for the client [Player](/vext/ref/client/type/player/) ([#642](https://github.com/EmulatorNexus/VeniceUnleashed/issues/642)) type.

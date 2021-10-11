@@ -1,0 +1,7 @@
+name: "Voip:ChannelClosed"
+type: event
+description: A VoIP channel has been closed by the server.
+
+params:
+  channel:
+    type: VoipChannel

@@ -1,0 +1,11 @@
+name: "VoipChannel:PlayerJoined"
+type: event
+description: A player has joined a VoIP channel and a new emitter has been created for them. This event will also trigger as soon as the player joins a server with existing channels and players in them.
+
+params:
+  channel:
+    type: VoipChannel
+  player:
+    type: Player
+  emitter:
+    type: VoipEmitter

@@ -38,5 +38,6 @@ hideChildren: true
 | [NetSocketType](/vext/ref/shared/type/netsockettype) | [RayCastFlags](/vext/ref/shared/type/raycastflags) |
 | [RemoteCommandFlag](/vext/ref/shared/type/remotecommandflag) | [ResourceCompartment](/vext/ref/shared/type/resourcecompartment) |
 | [SpatialQueryFlags](/vext/ref/shared/type/spatialqueryflags) | [SpectatorCameraMode](/vext/ref/shared/type/spectatorcameramode) |
-| [UIAction](/vext/ref/shared/type/uiaction) | [WeaponState](/vext/ref/shared/type/weaponstate) |
+| [UIAction](/vext/ref/shared/type/uiaction) | [VoipEmitterType](/vext/ref/shared/type/voipemittertype) |
+| [VoipTransmissionMode](/vext/ref/shared/type/voiptransmissionmode) | [WeaponState](/vext/ref/shared/type/weaponstate) |
 

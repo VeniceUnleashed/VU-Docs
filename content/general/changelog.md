@@ -6,6 +6,13 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 17768 "11/10/2021" true %}}
+
+- Fix a memory leak when using `fb://` resources in the WebUI.
+- Added support for in-game VoIP (see VeniceEXT changelog for API details).
+- Added support for changing VU settings from the in-game settings menu.
+- VeniceEXT was updated to `1.3.0` ([changelog](/vext/changelog/#1_3_0)).
+
 {{% changeset 17689 "16/09/2021" true %}}
 
 - Improve performance of cross-mod Event dispatching.

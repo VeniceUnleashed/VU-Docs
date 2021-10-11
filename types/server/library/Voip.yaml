@@ -1,0 +1,22 @@
+name: Voip
+type: library
+
+methods:
+  -
+    name: CreateChannel
+    description: Creates a new VoIP channel with the provided name and default emitter type. If a channel with this name already exists, this method returns `nil`. All created channels are automatically replicated to connected clients.
+    params:
+      channelName:
+        type: string
+      defaultEmitterType:
+        type: VoipEmitterType
+        description: The type of emitter to create by default when a new player is added to this channel.
+    returns:
+      type: VoipChannel
+      nullable: true
+  -
+    name: GetChannels
+    description: Gets all available VoIP channels.
+    returns:
+      type: VoipChannel
+      table: true

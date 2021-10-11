@@ -1,0 +1,32 @@
+name: VoipChannel
+type: class
+
+properties:
+  name:
+    type: string
+    readOnly: true
+  defaultEmitterType:
+    type: VoipEmitterType
+    readOnly: true
+  players:
+    type: Player
+    description: The players that are in this channel.
+    table: true
+    readOnly: true
+
+methods:
+  -
+    name: AddPlayer
+    description: Adds a player to this VoIP channel and informs all connected clients.
+    params:
+      player:
+        type: Player
+  -
+    name: RemovePlayer
+    description: Removes a player to this VoIP channel and informs all connected clients.
+    params:
+      player:
+        type: Player
+  -
+    name: Close
+    description: Closes this channel and informs all connected clients.

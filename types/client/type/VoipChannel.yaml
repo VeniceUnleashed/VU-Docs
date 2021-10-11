@@ -1,0 +1,41 @@
+name: VoipChannel
+type: class
+
+properties:
+  name:
+    type: string
+    readOnly: true
+  defaultEmitterType:
+    type: VoipEmitterType
+    description: The type of emitter that will be created by default when a new player is added to this channel.
+    readOnly: true
+  players:
+    type: Player
+    description: The players that are in this channel.
+    table: true
+    readOnly: true
+  emitters:
+    type: VoipEmitter
+    description: The emitters for all the players that are in this channel. Each emitter has a one-to-one relationship with a player.
+    table: true
+    readOnly: true
+  transmissionMode:
+    type: VoipTransmissionMode
+    description: The transmission mode to use when the local player is in this channel. Defaults to `PushToTalk`.
+
+methods:
+  -
+    name: StartTransmitting
+    description: Starts transmitting voice through this channel. This only works if the local player is in the channel and the transmission mode of this channel is set to `PushToTalk`.
+  -
+    name: StopTransmitting
+    description: Stops transmitting voice through this channel. This only works if the local player is in the channel and the transmission mode of this channel is set to `PushToTalk`.
+  -
+    name: GetEmitter
+    description: Gets the VoIP emitter of the provided player. If the player is not in this channel, this method returns `nil`.
+    params:
+      player:
+        type: Player
+    returns:
+      type: VoipEmitter
+      nullable: true

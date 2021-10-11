@@ -1,0 +1,9 @@
+name: "VoipChannel:PlayerLeft"
+type: event
+description: A player has left a VoIP channel they were previously in.
+
+params:
+  channel:
+    type: VoipChannel
+  player:
+    type: Player

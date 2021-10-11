@@ -49,6 +49,10 @@ hideChildren: true
 
 ---
 
+**[Voip](/vext/ref/client/library/voip)**
+
+---
+
 **[WebUI](/vext/ref/client/library/webui)**
 
 ---

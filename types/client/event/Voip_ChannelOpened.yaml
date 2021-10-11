@@ -1,0 +1,7 @@
+name: "Voip:ChannelOpened"
+type: event
+description: A new VoIP channel has been opened by the server. This event will also trigger as soon as the player joins a server with existing channels open.
+
+params:
+  channel:
+    type: VoipChannel

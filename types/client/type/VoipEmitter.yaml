@@ -1,0 +1,41 @@
+name: VoipEmitter
+type: class
+
+properties:
+  player:
+    type: Player
+    description: The player this emitter is bound to.
+    readOnly: true
+  channel:
+    type: VoipChannel
+    description: The VoIP channel this emitter belongs to.
+    readOnly: true
+  isEmitting:
+    type: bool
+    description: Will be `true` if this emitter is currently emitting sound.
+    readOnly: true
+  emitterType:
+    type: VoipEmitterType
+    description: The type of the emitter. Will default to the channel's `defaultEmitterType` but can be overriden on the fly.
+  volume:
+    type: float
+    description: The volume of the emitter, from `0.0` to `1.0`. Defaults to `1.0`.
+  position:
+    type: Vec3
+    description: The position of the emitter in 3D space. This is only relevant for `Positional` emitters.
+  boundToBone:
+    type: int
+    nullable: true
+    description: The SoldierEntity bone to bind this emitter to, or `nil` if it should not be bound to anything. When this is set to a valid value, the engine will automatically update the position of the emitter to match the position of the specified bone.
+  leftBalance:
+    type: float
+    description: The audio balance / volume for the left channel, from `0.0` to `1.0`. This defaults to `1.0` and only has effect on `Local` emitters.
+  rightBalance:
+    type: float
+    description: The audio balance / volume for the right channel, from `0.0` to `1.0`. This defaults to `1.0` and only has effect on `Local` emitters.
+  maxDistance:
+    type: float
+    description: The maximum distance (in in-game units) that audio will be audible from for `Positional` emitters. The audio will be linearly faded based on the emitter's distance to the current player.
+  muted:
+    type: bool
+    description: Whether this emitter should be muted or not. When set to `true`, the emitter will stop producing sound.

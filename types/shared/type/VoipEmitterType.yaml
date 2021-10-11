@@ -1,0 +1,8 @@
+name: VoipEmitterType
+type: enum
+
+values:
+  Local:
+    value: 0
+  Positional:
+    value: 1
