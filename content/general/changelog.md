@@ -6,6 +6,11 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 17777 "12/10/2021" true %}}
+
+- Fix a memory leak caused by detailed client-side raycasts.
+- VeniceEXT was updated to `1.3.1` ([changelog](/vext/changelog/#1_3_1)).
+
 {{% changeset 17768 "11/10/2021" true %}}
 
 - Fix a memory leak when using `fb://` resources in the WebUI.

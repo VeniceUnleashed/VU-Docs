@@ -3,6 +3,11 @@ title: Changelog
 weight: 1
 ---
 
+{{% changeset-vext "1.3.1" "12/10/2021" true %}}
+
+- Introduces a new [RaycastManager](/vext/ref/server/library/raycastmanager/) server library.
+- Introduces a new [CollisionRaycast](/vext/ref/client/library/raycastmanager/#collisionraycast) method to the [RaycastManager](/vext/ref/client/library/raycastmanager/) client library.
+
 {{% changeset-vext "1.3.0" "11/10/2021" true %}}
 
 - Introduces a new [Voip](/vext/ref/server/library/voip/) server library.

@@ -21,6 +21,10 @@ hideChildren: true
 
 ---
 
+**[RaycastManager](/vext/ref/server/library/raycastmanager)**
+
+---
+
 **[SQL](/vext/ref/server/library/sql)**
 
 ---
