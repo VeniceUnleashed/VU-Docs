@@ -3,6 +3,13 @@ title: Changelog
 weight: 1
 ---
 
+{{% changeset-vext "1.3.2" "06/11/2021" true %}}
+
+- Introduces a new [GetMemoryUsage](/vext/ref/shared/library/sharedutils/#getmemoryusage) method to the [SharedUtils](/vext/ref/shared/library/sharedutils/) shared library.
+- Calls to [Events:Subscribe](/vext/ref/shared/library/events/#subscribe) will now throw an error when invalid callbacks are provided.
+- Fix a deadlock when accessing voip channel details in the [VoipEmitter:Emitting](/vext/ref/client/event/voipemitter_emitting/) event.
+- Fix a memory leak with the [WebUI:ExecuteJS](/vext/ref/client/library/webui/#executejs) library method.
+
 {{% changeset-vext "1.3.1" "12/10/2021" true %}}
 
 - Introduces a new [RaycastManager](/vext/ref/server/library/raycastmanager/) server library.

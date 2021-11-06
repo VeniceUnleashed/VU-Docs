@@ -6,6 +6,17 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 17876 "06/11/2021" true %}}
+
+- Fix a crash when a voip-connected player disconnected unexpectedly.
+- Improve reliability of the Origin linking process.
+- Add presence and account linking support for EA Desktop.
+- Add support for up to 128 teams.
+- Add a [vu.DrawMemoryStats](/general/commands/) client-side console command (only available while connected to a server) that shows memory usage information for all loaded mods.
+- Allow WebUI mods to perform garbage collection manually by calling `window.gc()`.
+- Various performance improvements and minor bugfixes.
+- VeniceEXT was updated to `1.3.2` ([changelog](/vext/changelog/#1_3_2)).
+
 {{% changeset 17777 "12/10/2021" true %}}
 
 - Fix a memory leak caused by detailed client-side raycasts.

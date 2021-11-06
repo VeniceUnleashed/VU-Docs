@@ -14,6 +14,12 @@ Enables or disables drawing of the first person character model. Useful for reco
 
 ---
 
+> `vu.DrawMemoryStats [true|false]`
+
+Enables or disables drawing of memory usage stats for all currently loaded and running mods. Only available while connected to a server.
+
+---
+
 > `quit`
 
 Quits the game.

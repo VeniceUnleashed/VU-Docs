@@ -18,6 +18,7 @@ title: SharedUtils
 | **[GetLevelName](#getlevelname)**() | string \| nil |
 | **[GetCurrentGameMode](#getcurrentgamemode)**() | string \| nil |
 | **[GetTickrate](#gettickrate)**() | float |
+| **[GetMemoryUsage](#getmemoryusage)**() | int |
 
 ## Methods
 
@@ -126,4 +127,16 @@ title: SharedUtils
 | Type | Description |
 | ---- | ----------- |
 | **float** |  |
+
+### GetMemoryUsage {#getmemoryusage}
+
+> **GetMemoryUsage**(): int
+
+Gets the current memory usage of this mod in bytes.
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **int** |  |
 
