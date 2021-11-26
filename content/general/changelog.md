@@ -6,6 +6,10 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 17879 "26/11/2021" true %}}
+
+- Fix a crash when specified RCON port is already in use. ([#719](https://github.com/EmulatorNexus/VeniceUnleashed/issues/719))
+
 {{% changeset 17876 "06/11/2021" true %}}
 
 - Fix a crash when a voip-connected player disconnected unexpectedly.
@@ -21,6 +25,7 @@ Below you can find a full list of changes to VU, corresponding to every VU updat
 
 - Fix a memory leak caused by detailed client-side raycasts.
 - VeniceEXT was updated to `1.3.1` ([changelog](/vext/changelog/#1_3_1)).
+
 
 {{% changeset 17768 "11/10/2021" true %}}
 
