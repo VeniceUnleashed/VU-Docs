@@ -6,6 +6,10 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 17880 "5/12/2021" true %}}
+
+- Change EntityBus.networkId to be writable.
+
 {{% changeset 17879 "26/11/2021" true %}}
 
 - Fix a crash when specified RCON port is already in use. ([#719](https://github.com/EmulatorNexus/VeniceUnleashed/issues/719))
