@@ -6,6 +6,10 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 17884 "12/12/2021" true %}}
+
+- Potential fix for `Player:Connected` event not finding a player object.
+
 {{% changeset 17880 "5/12/2021" true %}}
 
 - Change EntityBus.networkId to be writable.
