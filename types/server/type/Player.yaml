@@ -51,6 +51,7 @@ properties:
   selectedKit:
     type: DataContainer
     nullable: true
+    description: This is the SoldierBlueprint.
   score:
     type: int
     readOnly: true

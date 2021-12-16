@@ -144,6 +144,8 @@ title: Player
 
 > **[DataContainer](/vext/ref/shared/type/datacontainer)** \| **nil**
 
+This is the [SoldierBlueprint](/vext/ref/fb/soldierblueprint).
+
 ### {{% prop-heading "score" true %}}
 
 > **int**
