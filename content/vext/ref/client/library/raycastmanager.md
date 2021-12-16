@@ -20,6 +20,8 @@ title: RaycastManager
 
 > **GetEntityInRaycast**(distance: float): [Entity](/vext/ref/shared/type/entity) \| nil
 
+It is using the client camera transform as a base.
+
 #### Parameters
 
 | Name | Type | Description |
