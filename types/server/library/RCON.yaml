@@ -30,6 +30,7 @@ methods:
         type: RemoteCommandFlag
       callback:
         type: callable
+        description: "A callback in the form `function(command: string, args: string{}, loggedIn: bool): string{}`."
     returns:
       type: int
   -
@@ -41,8 +42,10 @@ methods:
         type: RemoteCommandFlag
       context:
         type: any
+        description: A context value to pass to the callback.
       callback:
         type: callable
+        description: "A callback in the form `function(context: any, command: string, args: string{}, loggedIn: bool): string{}`."
     returns:
       type: int
   -

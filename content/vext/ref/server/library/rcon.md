@@ -62,7 +62,7 @@ title: RCON
 | ---- | ---- | ----------- |
 | **command** | string |  |
 | **flags** | [RemoteCommandFlag](/vext/ref/shared/type/remotecommandflag) |  |
-| **callback** | callable |  |
+| **callback** | callable | A callback in the form `function(command: string, args: string{}, loggedIn: bool): string{}`. |
 
 #### Returns
 
@@ -80,8 +80,8 @@ title: RCON
 | ---- | ---- | ----------- |
 | **command** | string |  |
 | **flags** | [RemoteCommandFlag](/vext/ref/shared/type/remotecommandflag) |  |
-| **context** | any |  |
-| **callback** | callable |  |
+| **context** | any | A context value to pass to the callback. |
+| **callback** | callable | A callback in the form `function(context: any, command: string, args: string{}, loggedIn: bool): string{}`. |
 
 #### Returns
 
