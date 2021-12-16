@@ -171,6 +171,7 @@ methods:
     params:
       spawnPoint:
         type: Entity
+        description: Expected type `ServerCharacterSpawnEntity`
       checkSpawnArea:
         type: bool
     returns:
