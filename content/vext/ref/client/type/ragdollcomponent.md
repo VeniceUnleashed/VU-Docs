@@ -28,8 +28,6 @@ title: RagdollComponent
 | **[SetActiveWorldTransform](#setactiveworldtransform)**(boneId: int, transform: [QuatTransform](/vext/ref/shared/type/quattransform)) | void |
 | **[GetActiveLocalTransform](#getactivelocaltransform)**(boneId: int) | [QuatTransform](/vext/ref/shared/type/quattransform) \| nil |
 | **[SetActiveLocalTransform](#setactivelocaltransform)**(boneId: int, transform: [QuatTransform](/vext/ref/shared/type/quattransform)) | void |
-| **[GetLocalTransform](#getlocaltransform-1)**(boneId: int) | [QuatTransform](/vext/ref/shared/type/quattransform) \| nil |
-| **[SetLocalTransform](#setlocaltransform-1)**(boneId: int, transform: [QuatTransform](/vext/ref/shared/type/quattransform)) | void |
 | **[GetBoneVelocity](#getbonevelocity)**(boneId: int) | [QuatTransform](/vext/ref/shared/type/quattransform) \| nil |
 | **[SetBoneVelocity](#setbonevelocity)**(boneId: int, transform: [QuatTransform](/vext/ref/shared/type/quattransform)) | void |
 
@@ -222,33 +220,6 @@ title: RagdollComponent
 ### SetActiveLocalTransform {#setactivelocaltransform}
 
 > **SetActiveLocalTransform**(boneId: int, transform: [QuatTransform](/vext/ref/shared/type/quattransform))
-
-#### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| **boneId** | int |  |
-| **transform** | [QuatTransform](/vext/ref/shared/type/quattransform) |  |
-
-### GetLocalTransform {#getlocaltransform-1}
-
-> **GetLocalTransform**(boneId: int): [QuatTransform](/vext/ref/shared/type/quattransform) \| nil
-
-#### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| **boneId** | int |  |
-
-#### Returns
-
-| Type | Description |
-| ---- | ----------- |
-| **[QuatTransform](/vext/ref/shared/type/quattransform)** \| **nil** |  |
-
-### SetLocalTransform {#setlocaltransform-1}
-
-> **SetLocalTransform**(boneId: int, transform: [QuatTransform](/vext/ref/shared/type/quattransform))
 
 #### Parameters
 
