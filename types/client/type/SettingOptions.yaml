@@ -1,0 +1,8 @@
+name: SettingOptions
+type: class
+
+properties:
+  displayName:
+    type: string
+  showInUi:
+    type: bool

@@ -19,10 +19,11 @@ hideChildren: true
 | [FilmGrainData](/vext/ref/client/type/filmgraindata) | [FogData](/vext/ref/client/type/fogdata) |
 | [GameEntity](/vext/ref/client/type/gameentity) | [KillCounterEntity](/vext/ref/client/type/killcounterentity) |
 | [LensScopeData](/vext/ref/client/type/lensscopedata) | [LifeCounterEntity](/vext/ref/client/type/lifecounterentity) |
-| [MotionBlurData](/vext/ref/client/type/motionblurdata) | [NetEvent](/vext/ref/client/type/netevent) |
-| [OutdoorLightData](/vext/ref/client/type/outdoorlightdata) | [PhysicsEntity](/vext/ref/client/type/physicsentity) |
-| [PlanarReflectionData](/vext/ref/client/type/planarreflectiondata) | [Player](/vext/ref/client/type/player) |
-| [RagdollComponent](/vext/ref/client/type/ragdollcomponent) | [ScreenEffectData](/vext/ref/client/type/screeneffectdata) |
+| [ModSetting](/vext/ref/client/type/modsetting) | [MotionBlurData](/vext/ref/client/type/motionblurdata) |
+| [NetEvent](/vext/ref/client/type/netevent) | [OutdoorLightData](/vext/ref/client/type/outdoorlightdata) |
+| [PhysicsEntity](/vext/ref/client/type/physicsentity) | [PlanarReflectionData](/vext/ref/client/type/planarreflectiondata) |
+| [Player](/vext/ref/client/type/player) | [RagdollComponent](/vext/ref/client/type/ragdollcomponent) |
+| [ScreenEffectData](/vext/ref/client/type/screeneffectdata) | [SettingOptions](/vext/ref/client/type/settingoptions) |
 | [ShaderParamsData](/vext/ref/client/type/shaderparamsdata) | [SkyData](/vext/ref/client/type/skydata) |
 | [SoldierEntity](/vext/ref/client/type/soldierentity) | [SoldierWeapon](/vext/ref/client/type/soldierweapon) |
 | [SoldierWeaponsComponent](/vext/ref/client/type/soldierweaponscomponent) | [SoundEntity](/vext/ref/client/type/soundentity) |

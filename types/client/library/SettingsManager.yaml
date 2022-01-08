@@ -1,0 +1,99 @@
+name: SettingsManager
+type: library
+
+methods:
+  -
+    name: DeclareBool
+    params:
+      name:
+        type: string
+      default:
+        type: bool
+      options:
+        type: SettingOptions
+    returns:
+      type: ModSetting
+  -
+    name: DeclareNumber
+    params:
+      name:
+        type: string
+      default:
+        type: float
+      min:
+        type: float
+      max:
+        type: float
+      options:
+        type: SettingOptions
+    returns:
+      type: ModSetting
+  -
+    name: DeclareKeybind
+    params:
+      name:
+        type: string
+      default:
+        type: InputDeviceKeys
+      options:
+        type: SettingOptions
+    returns:
+      type: ModSetting
+  -
+    name: DeclareMultiKeybind
+    params:
+      name:
+        type: string
+      default:
+        type: InputDeviceKeys
+        table: true
+      options:
+        type: SettingOptions
+    returns:
+      type: ModSetting
+  -
+    name: DeclareString
+    params:
+      name:
+        type: string
+      default:
+        type: string
+      minLength:
+        type: int
+      maxLength:
+        type: int
+      options:
+        type: SettingOptions
+    returns:
+      type: ModSetting
+  -
+    name: DeclareOption
+    params:
+      name:
+        type: string
+      default:
+        type: string
+        nullable: true
+      optionNames:
+        type: string
+        table: true
+      allowEmpty:
+        type: bool
+      options:
+        type: SettingOptions
+    returns:
+      type: ModSetting
+  -
+    name: GetSetting
+    params:
+      name:
+        type: string
+    returns:
+      type: ModSetting
+      nullable: true
+  -
+    name: DeleteSetting
+    params:
+      name:
+        type: string
+

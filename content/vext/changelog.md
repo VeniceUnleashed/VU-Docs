@@ -3,6 +3,12 @@ title: Changelog
 weight: 1
 ---
 
+{{% changeset-vext "1.4.0" "08/01/2022" true %}}
+
+- Improve cases where accessing a player object would result in errors.
+- The [Guid](/vext/ref/shared/type/guid/) constructors will now throw errors when invalid or badly formatted Guid strings are provided.
+- Add support for client-side persistent settings through the [SettingsManager](/vext/ref/client/library/settingsmanager/) library.
+
 {{% changeset-vext "1.3.2" "06/11/2021" true %}}
 
 - Introduces a new [GetMemoryUsage](/vext/ref/shared/library/sharedutils/#getmemoryusage) method to the [SharedUtils](/vext/ref/shared/library/sharedutils/) shared library.

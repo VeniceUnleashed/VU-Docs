@@ -1,0 +1,9 @@
+name: ModSetting
+type: class
+
+properties:
+  value:
+    type: any
+  name:
+    type: string
+    readOnly: true

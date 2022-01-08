@@ -129,3 +129,7 @@ Returns the current FPS of the server.
 ### `vu.FpsMa`
 
 Returns the 30-second moving average of the server FPS. If this value falls below `frequency-hz * 1.1` then a performance warning indicator will be shown next to your server in the server browser.
+
+### `vu.HttpAssetUrl`
+
+A URL pointing to an external HTTP server hosting mod assets, or an empty string if assets should be sent directly from the game server. When this is set, any connecting clients will try to download any needed assets from that URL, following the file structure of the mod files. For example, if you have a mod called `mymod` and it has a WebUI container file (`ui.vuic`), and you set the URL to `https://example.com/assets/`, the client will try to download the file from `https://example.com/assets/mymod/ui.vuic`. If file downloads fail or their contents don't match what's on the game server, clients will be unable to join.

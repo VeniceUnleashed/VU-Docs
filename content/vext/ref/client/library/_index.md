@@ -41,6 +41,10 @@ hideChildren: true
 
 ---
 
+**[SettingsManager](/vext/ref/client/library/settingsmanager)**
+
+---
+
 **[SpectatorManager](/vext/ref/client/library/spectatormanager)**
 
 ---
