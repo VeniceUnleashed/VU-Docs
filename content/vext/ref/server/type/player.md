@@ -333,7 +333,7 @@ An array containing tables of equipped unlocks ([UnlockAssetBase](/vext/ref/fb/u
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| **spawnPoint** | [Entity](/vext/ref/shared/type/entity) |  |
+| **spawnPoint** | [Entity](/vext/ref/shared/type/entity) | Expected type `ServerCharacterSpawnEntity` |
 | **checkSpawnArea** | bool |  |
 
 #### Returns
