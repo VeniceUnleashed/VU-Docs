@@ -4,6 +4,7 @@ type: library
 methods:
   -
     name: GetEntityInRaycast
+    description: It is using the client camera transform as a base.
     params:
       distance:
         type: float
