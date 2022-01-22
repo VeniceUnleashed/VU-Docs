@@ -114,21 +114,6 @@ methods:
       transform:
         type: QuatTransform
   -
-    name: GetLocalTransform
-    params:
-      boneId:
-        type: int
-    returns:
-      type: QuatTransform
-      nullable: true
-  -
-    name: SetLocalTransform
-    params:
-      boneId:
-        type: int
-      transform:
-        type: QuatTransform
-  -
     name: GetBoneVelocity
     params:
       boneId:
