@@ -139,6 +139,8 @@ The players ping to the server.
 
 > **bool**
 
+Always false for non squad leaders.
+
 ## Methods
 
 ### EnableInput {#enableinput}

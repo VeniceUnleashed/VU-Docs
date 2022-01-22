@@ -116,6 +116,8 @@ title: Player
 
 > **bool**
 
+Always false for non squad leaders.
+
 ### {{% prop-heading "hasSoldier" true %}}
 
 > **bool**

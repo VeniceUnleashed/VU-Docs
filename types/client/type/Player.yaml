@@ -76,6 +76,7 @@ properties:
   isSquadPrivate:
     type: bool
     readOnly: true
+    description: Always false for non squad leaders.
 
 methods:
   -
