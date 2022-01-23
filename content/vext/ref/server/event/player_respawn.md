@@ -19,7 +19,3 @@ Events:Subscribe('Player:Respawn', function(player)
     -- Do stuff here.
 end)
 ```
-
-## Annotations
-
-- Gets triggered for player spawn and revive.
