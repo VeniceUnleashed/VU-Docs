@@ -1,6 +1,9 @@
 name: SettingOptions
 type: class
 
+constructors:
+  -
+
 properties:
   displayName:
     type: string
