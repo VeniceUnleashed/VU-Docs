@@ -2,6 +2,8 @@
 title: Player:Respawn
 ---
 
+Gets triggered for player spawn and revive.
+
 > **Player:Respawn**(player: [Player](/vext/ref/client/type/player))
 
 ## Parameters
@@ -17,3 +19,4 @@ Events:Subscribe('Player:Respawn', function(player)
     -- Do stuff here.
 end)
 ```
+
