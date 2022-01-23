@@ -1,5 +1,6 @@
 name: "Player:Respawn"
 type: event
+description: Gets triggered for player spawn and revive.
 
 params:
   player:
