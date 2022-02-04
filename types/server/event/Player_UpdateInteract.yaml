@@ -1,4 +1,4 @@
-name: "Player:UpdateInput"
+name: "Player:UpdateInteract"
 type: event
 
 params:

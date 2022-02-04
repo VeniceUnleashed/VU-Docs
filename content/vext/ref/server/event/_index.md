@@ -21,7 +21,7 @@ hideChildren: true
 | [Player:SpawnOnPlayer](/vext/ref/server/event/player_spawnonplayer) | [Player:SpawnOnSelectedSpawnPoint](/vext/ref/server/event/player_spawnonselectedspawnpoint) |
 | [Player:SquadChange](/vext/ref/server/event/player_squadchange) | [Player:SuppressedEnemy](/vext/ref/server/event/player_suppressedenemy) |
 | [Player:TeamChange](/vext/ref/server/event/player_teamchange) | [Player:Update](/vext/ref/server/event/player_update) |
-| [Player:UpdateInput](/vext/ref/server/event/player_updateinput) | [Server:RoundOver](/vext/ref/server/event/server_roundover) |
+| [Player:UpdateInteract](/vext/ref/server/event/player_updateinteract) | [Server:RoundOver](/vext/ref/server/event/server_roundover) |
 | [Server:RoundReset](/vext/ref/server/event/server_roundreset) | [Soldier:HealthAction](/vext/ref/server/event/soldier_healthaction) |
 | [Soldier:ManDown](/vext/ref/server/event/soldier_mandown) | [Soldier:PrePhysicsUpdate](/vext/ref/server/event/soldier_prephysicsupdate) |
 | [Vehicle:Damage](/vext/ref/server/event/vehicle_damage) | [Vehicle:Destroyed](/vext/ref/server/event/vehicle_destroyed) |

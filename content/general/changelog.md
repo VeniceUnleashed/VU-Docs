@@ -16,6 +16,10 @@ Below you can find a full list of changes to VU, corresponding to every VU updat
 - Add support for hosting mod assets on an external HTTP server, configurable through the [vu.HttpAssetUrl](/hosting/commands/#vuhttpasseturl) RCON command.
 - VeniceEXT was updated to `1.4.0` ([changelog](/vext/changelog/#1_4_0)).
 
+{{% changeset 17967 "03/01/2022" true %}}
+
+- Rename `Player:UpdateInput` (server) to `Player:UpdateInteract`.
+
 {{% changeset 17887 "16/12/2021" true %}}
 
 - Fix `Player:Created` not being triggered for normal players (previously bots only).

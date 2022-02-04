@@ -1,8 +1,8 @@
 ---
-title: Player:UpdateInput
+title: Player:UpdateInteract
 ---
 
-> **Player:UpdateInput**(player: [Player](/vext/ref/server/type/player), deltaTime: float)
+> **Player:UpdateInteract**(player: [Player](/vext/ref/server/type/player), deltaTime: float)
 
 ## Parameters
 
@@ -14,7 +14,7 @@ title: Player:UpdateInput
 ## Example
 
 ```lua
-Events:Subscribe('Player:UpdateInput', function(player, deltaTime)
+Events:Subscribe('Player:UpdateInteract', function(player, deltaTime)
     -- Do stuff here.
 end)
 ```
