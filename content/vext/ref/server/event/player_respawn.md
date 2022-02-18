@@ -2,9 +2,9 @@
 title: Player:Respawn
 ---
 
-Gets triggered for player spawn.
-
 > **Player:Respawn**(player: [Player](/vext/ref/server/type/player))
+
+Gets triggered for player spawn.
 
 ## Parameters
 
