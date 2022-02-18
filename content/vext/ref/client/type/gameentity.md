@@ -13,6 +13,12 @@ Inherits from [SpatialEntity](/vext/ref/shared/type/spatialentity)
 | **[GameEntity](#constructor-0)**(other: [Entity](/vext/ref/shared/type/entity)) |
 | **[GameEntity](#constructor-1)**(other: [SpatialEntity](/vext/ref/shared/type/spatialentity)) |
 
+### Properties
+
+| Name | Type |
+| ---- | ---- |
+| {{< prop "updateInterval" >}} | int |
+
 ### Methods
 
 | Method | Returns |
@@ -46,6 +52,12 @@ Inherits from [SpatialEntity](/vext/ref/shared/type/spatialentity)
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | **other** | [SpatialEntity](/vext/ref/shared/type/spatialentity) |  |
+
+## Properties
+
+### {{% prop-heading "updateInterval" %}}
+
+> **int**
 
 ## Methods
 
