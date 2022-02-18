@@ -6,6 +6,9 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 18241 "18/02/2022" true %}}
+- Fix `SoldierEntity.weaponsComponent.weapons` indices ([#743](https://github.com/EmulatorNexus/VeniceUnleashed/issues/743))
+
 {{% changeset 18070 "18/02/2022" true %}}
 
 - Fix `vu.SetTeamTicketCount` not working for `KillCounterEntity` ([#729](https://github.com/EmulatorNexus/VeniceUnleashed/issues/729))
