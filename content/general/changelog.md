@@ -6,7 +6,7 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
-{{% changeset 18066 "18/02/2022" true %}}
+{{% changeset 18070 "18/02/2022" true %}}
 
 - Fix `vu.SetTeamTicketCount` not working for `KillCounterEntity` ([#729](https://github.com/EmulatorNexus/VeniceUnleashed/issues/729))
 - Fix [ModSettings](/vext/ref/client/type/modsetting) string and option saving ([#744](https://github.com/EmulatorNexus/VeniceUnleashed/issues/744))
