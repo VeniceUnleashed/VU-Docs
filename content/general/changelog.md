@@ -6,6 +6,14 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 18066 "18/02/2022" true %}}
+
+- Fix `vu.SetTeamTicketCount` not working for `KillCounterEntity` ([#729](https://github.com/EmulatorNexus/VeniceUnleashed/issues/729))
+- Fix [ModSettings](/vext/ref/client/type/modsetting) string and option saving ([#744](https://github.com/EmulatorNexus/VeniceUnleashed/issues/744))
+- Fix missing implementation of `ServerAutoTeamEntity` events ([#757](https://github.com/EmulatorNexus/VeniceUnleashed/issues/757))
+- `Player:SetSquadLeader` now triggers after engine update instead of before ([#746](https://github.com/EmulatorNexus/VeniceUnleashed/issues/746))
+- VeniceEXT was updated to `1.5.0` ([changelog](/vext/changelog/#1_5_0)).
+
 {{% changeset 18043 "08/01/2022" true %}}
 
 - Fix a few small memory leaks.

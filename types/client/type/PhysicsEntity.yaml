@@ -21,7 +21,7 @@ properties:
     type: float
   velocity:
     type: Vec3
-    readOnly: true
+    readOnly: false
   defaultMaterial:
     type: DataContainer
     readOnly: true
