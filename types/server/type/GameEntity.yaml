@@ -12,6 +12,10 @@ constructors:
       other:
         type: SpatialEntity
 
+properties:
+  updateInterval:
+    type: int
+
 methods:
   -
     name: Spawn
