@@ -11,6 +11,7 @@ title: SharedUtils
 | **[Print](#print)**(data: any) | void |
 | **[GetTime](#gettime)**() | int |
 | **[GetTimeMS](#gettimems)**() | int |
+| **[GetTimeNS](#gettimens)**() | int |
 | **[IsClientModule](#isclientmodule)**() | bool |
 | **[IsServerModule](#isservermodule)**() | bool |
 | **[SerializeTable](#serializetable)**(table: table) | string |
@@ -45,6 +46,16 @@ title: SharedUtils
 ### GetTimeMS {#gettimems}
 
 > **GetTimeMS**(): int
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **int** |  |
+
+### GetTimeNS {#gettimens}
+
+> **GetTimeNS**(): int
 
 #### Returns
 

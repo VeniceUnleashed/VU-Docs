@@ -6,6 +6,10 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 18244 "22/02/2022" true %}}
+- Prevent crash report window from showing up when running in console or headless mode ([#723](https://github.com/EmulatorNexus/VeniceUnleashed/issues/723)).
+- VeniceEXT was updated to `1.6.0` ([changelog](/vext/changelog/#1_6_0)).
+
 {{% changeset 18241 "18/02/2022" true %}}
 - Fix `SoldierEntity.weaponsComponent.weapons` indices ([#743](https://github.com/EmulatorNexus/VeniceUnleashed/issues/743))
 

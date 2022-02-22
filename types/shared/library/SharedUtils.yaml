@@ -16,6 +16,10 @@ methods:
     returns:
       type: int
   -
+    name: GetTimeNS
+    returns:
+      type: int
+  -
     name: IsClientModule
     returns:
       type: bool

@@ -3,9 +3,13 @@ title: Changelog
 weight: 1
 ---
 
+{{% changeset-vext "1.6.0" "18/02/2022" true %}}
+- Fix [VoipEmitter:Emitting](/vext/ref/client/event/voipemitter_emitting/) event firing multiple times ([#707](https://github.com/EmulatorNexus/VeniceUnleashed/issues/707)).
+- Introduces a new [GetTimeNS](/vext/ref/shared/library/sharedutils/#gettimens) method to the shared [SharedUtils](/vext/ref/shared/library/sharedutils/) library.
+- Fix certain issues with the [Input:PreUpdate](/vext/ref/client/hook/input_preupdate/) hook.
+
 {{% changeset-vext "1.5.0" "18/02/2022" true %}}
-- Change [ClientPhysicsEntity](/vext/ref/client/type/physicsentity) and [ServerPhysicsEntity](/vext/ref/server/type/physicsentity) `velocity` to be writable ([#747](https://github.com/EmulatorNexus/VeniceUnleashed/issues/747))
-- Expose `updateInterval` to [ClientGameEntity](/vext/ref/client/type/gameentity) and [ServerGameEntity](/vext/ref/server/type/gameentity) ([#669](https://github.com/EmulatorNexus/VeniceUnleashed/issues/669))
+- Expose `updateInterval` to [ClientGameEntity](/vext/ref/client/type/gameentity) and [ServerGameEntity](/vext/ref/server/type/gameentity) ([#669](https://github.com/EmulatorNexus/VeniceUnleashed/issues/669)).
 
 
 {{% changeset-vext "1.4.0" "08/01/2022" true %}}
