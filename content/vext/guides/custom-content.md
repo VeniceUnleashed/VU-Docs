@@ -100,7 +100,7 @@ After you've made any changes you want to the texture, save it again as DDS to a
 
 We'll now have Rime convert this texture back to an engine-native format and add it to our bundle by using the `add_dds_texture` command:
 
-> add_dds_texture weapons/xp4_crossbow_prototype/xp4_crossbow_bow_d C:\CustomCrossbowTexture.dds
+> add_dds_texture C:\CustomCrossbowTexture.dds weapons/xp4_crossbow_prototype/xp4_crossbow_bow_d 
 
 Here, we give it the same name as the original texture resource, since we want our custom texture to override it.
 
