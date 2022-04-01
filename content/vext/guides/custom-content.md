@@ -41,6 +41,8 @@ Since Rime supports loading multiple games at once, we must switch to the correc
 
 Note that `1` here corresponds to the id that we got in the previous step.
 
+Now that you're inside the game context, you can see all the functions that are available (eg. mounting individual bundles) by using the `help` command. We'll only cover a couple of them in this guide, but most of them have descriptions that can help you understand what they do.
+
 ### Extracting data
 
 #### Dumping textures
