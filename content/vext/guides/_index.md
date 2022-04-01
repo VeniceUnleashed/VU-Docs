@@ -61,3 +61,8 @@ Information on how entities work, how to spawn them, find them, and work with th
 
 [The DataContainer lifetime](/vext/guides/lifetimes)  
 Information about how to manage DataContainers and their lifetime.
+
+---
+
+[Creating and using custom content](/vext/guides/custom-content)  
+Details on how to create custom content using Rime and use it in VU using VeniceEXT.

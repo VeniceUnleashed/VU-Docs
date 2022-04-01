@@ -3,6 +3,9 @@ title: Changelog
 weight: 1
 ---
 
+{{% changeset-vext "1.7.0" "01/04/2022" true %}}
+- Support for using custom content superbundles. See the [guide](/vext/guides/custom-content/) for more info.
+
 {{% changeset-vext "1.6.0" "18/02/2022" true %}}
 - Fix [VoipEmitter:Emitting](/vext/ref/client/event/voipemitter_emitting/) event firing multiple times ([#707](https://github.com/EmulatorNexus/VeniceUnleashed/issues/707)).
 - Introduces a new [GetTimeNS](/vext/ref/shared/library/sharedutils/#gettimens) method to the shared [SharedUtils](/vext/ref/shared/library/sharedutils/) library.
