@@ -106,9 +106,9 @@ When used with no arguments, it returns whether the sun flare is enabled or not.
 
 ### `vu.SuppressionMultiplier`
 
-Accepts a single numeric argument (`0.0` or higher) that specifies a multiplier for the suppression effect. Setting this to `0.0` completely disables suppression (both visually and for weapon spread).
+Accepts a single integer argument (`0` or higher) that specifies a multiplier for the suppression effect. Setting this to `0` completely disables suppression (both visually and for weapon spread).
 
-When used with no arguments, it returns the current supression multiplier. Defaults to `100.0`.
+When used with no arguments, it returns the current suppression multiplier. Defaults to `100`.
 
 ### `vu.TimeScale`
 
