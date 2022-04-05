@@ -6,6 +6,8 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 18474 "06/04/2022" true %}}
+- Fix HTTP asset download issues.
 
 {{% changeset 18463 "01/04/2022" true %}}
 - Fix a server freeze that would happen when a player connected.
