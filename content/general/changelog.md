@@ -6,22 +6,22 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
-{{% changeset 18474 "06/04/2022" true %}}
+{{% changeset 18474 "06/04/2022" %}}
 - Fix HTTP asset download issues.
 
-{{% changeset 18463 "01/04/2022" true %}}
+{{% changeset 18463 "01/04/2022" %}}
 - Fix a server freeze that would happen when a player connected.
 - Increase texture streaming pool size by default, fixing infinite loading for mods that inject lots of bundles.
 - VeniceEXT was updated to `1.7.0` ([changelog](/vext/changelog/#1_7_0)).
 
-{{% changeset 18244 "22/02/2022" true %}}
+{{% changeset 18244 "22/02/2022" %}}
 - Prevent crash report window from showing up when running in console or headless mode ([#723](https://github.com/EmulatorNexus/VeniceUnleashed/issues/723)).
 - VeniceEXT was updated to `1.6.0` ([changelog](/vext/changelog/#1_6_0)).
 
-{{% changeset 18241 "18/02/2022" true %}}
+{{% changeset 18241 "18/02/2022" %}}
 - Fix `SoldierEntity.weaponsComponent.weapons` indices ([#743](https://github.com/EmulatorNexus/VeniceUnleashed/issues/743))
 
-{{% changeset 18070 "18/02/2022" true %}}
+{{% changeset 18070 "18/02/2022" %}}
 
 - Fix `vu.SetTeamTicketCount` not working for `KillCounterEntity` ([#729](https://github.com/EmulatorNexus/VeniceUnleashed/issues/729))
 - Fix [ModSettings](/vext/ref/client/type/modsetting) string and option saving ([#744](https://github.com/EmulatorNexus/VeniceUnleashed/issues/744))
@@ -29,7 +29,7 @@ Below you can find a full list of changes to VU, corresponding to every VU updat
 - `Player:SetSquadLeader` now triggers after engine update instead of before ([#746](https://github.com/EmulatorNexus/VeniceUnleashed/issues/746))
 - VeniceEXT was updated to `1.5.0` ([changelog](/vext/changelog/#1_5_0)).
 
-{{% changeset 18043 "08/01/2022" true %}}
+{{% changeset 18043 "08/01/2022" %}}
 
 - Fix a few small memory leaks.
 - Greatly reduce the number of memory allocations throughout the lifetime of the process.
@@ -39,27 +39,27 @@ Below you can find a full list of changes to VU, corresponding to every VU updat
 - Add support for hosting mod assets on an external HTTP server, configurable through the [vu.HttpAssetUrl](/hosting/commands/#vuhttpasseturl) RCON command.
 - VeniceEXT was updated to `1.4.0` ([changelog](/vext/changelog/#1_4_0)).
 
-{{% changeset 17967 "03/01/2022" true %}}
+{{% changeset 17967 "03/01/2022" %}}
 
 - Rename `Player:UpdateInput` (server) to `Player:UpdateInteract`.
 
-{{% changeset 17887 "16/12/2021" true %}}
+{{% changeset 17887 "16/12/2021" %}}
 
 - Fix `Player:Created` not being triggered for normal players (previously bots only).
 
-{{% changeset 17884 "12/12/2021" true %}}
+{{% changeset 17884 "12/12/2021" %}}
 
 - Potential fix for `Player:Connected` event not finding a player object.
 
-{{% changeset 17880 "5/12/2021" true %}}
+{{% changeset 17880 "5/12/2021" %}}
 
 - Change EntityBus.networkId to be writable.
 
-{{% changeset 17879 "26/11/2021" true %}}
+{{% changeset 17879 "26/11/2021" %}}
 
 - Fix a crash when specified RCON port is already in use. ([#719](https://github.com/EmulatorNexus/VeniceUnleashed/issues/719))
 
-{{% changeset 17876 "06/11/2021" true %}}
+{{% changeset 17876 "06/11/2021" %}}
 
 - Fix a crash when a voip-connected player disconnected unexpectedly.
 - Improve reliability of the Origin linking process.
@@ -70,20 +70,20 @@ Below you can find a full list of changes to VU, corresponding to every VU updat
 - Various performance improvements and minor bugfixes.
 - VeniceEXT was updated to `1.3.2` ([changelog](/vext/changelog/#1_3_2)).
 
-{{% changeset 17777 "12/10/2021" true %}}
+{{% changeset 17777 "12/10/2021" %}}
 
 - Fix a memory leak caused by detailed client-side raycasts.
 - VeniceEXT was updated to `1.3.1` ([changelog](/vext/changelog/#1_3_1)).
 
 
-{{% changeset 17768 "11/10/2021" true %}}
+{{% changeset 17768 "11/10/2021" %}}
 
 - Fix a memory leak when using `fb://` resources in the WebUI.
 - Added support for in-game VoIP (see VeniceEXT changelog for API details).
 - Added support for changing VU settings from the in-game settings menu.
 - VeniceEXT was updated to `1.3.0` ([changelog](/vext/changelog/#1_3_0)).
 
-{{% changeset 17689 "16/09/2021" true %}}
+{{% changeset 17689 "16/09/2021" %}}
 
 - Improve performance of cross-mod Event dispatching.
 - Improve performance of NetEvent serialization.
@@ -101,25 +101,25 @@ Below you can find a full list of changes to VU, corresponding to every VU updat
 - VeniceEXT was updated to version `1.2.0` ([changelog](/vext/changelog/#1_2_0)).
 - A bunch of other minor fixes and changes.
 
-{{% changeset 17589 "15/05/2021" true %}}
+{{% changeset 17589 "15/05/2021" %}}
 
 - Fix `admin.listPlayers all` RCON command not behaving as intended ([#506](https://github.com/EmulatorNexus/VeniceUnleashed/issues/506)).
 - Increase maximum allowed teams to 127 ([#619](https://github.com/EmulatorNexus/VeniceUnleashed/issues/619)).
 - VeniceEXT was updated to version `1.1.3` ([changelog](/vext/changelog/#1_1_3)).
 
-{{% changeset 17547 "25/03/2021" true %}}
+{{% changeset 17547 "25/03/2021" %}}
 
 - VeniceEXT was updated to version `1.1.2` ([changelog](/vext/changelog/#1_1_2)).
 
-{{% changeset 17546 "25/03/2021" true %}}
+{{% changeset 17546 "25/03/2021" %}}
 
 - Fix inverted `vars.3pCam` and `vars.3dSpotting` RCON commands ([#559](https://github.com/EmulatorNexus/VeniceUnleashed/issues/559)).
 
-{{% changeset 17545 "07/03/2021" true %}}
+{{% changeset 17545 "07/03/2021" %}}
 
 - Add `-dxdebug` client command line flag to enable D3D11 Validation Layers.
 
-{{% changeset 17539 "11/02/2021" true %}}
+{{% changeset 17539 "11/02/2021" %}}
 
 - Add support for tracing VeniceEXT execution post-crash with [-vexttrace](/general/args/#common-arguments).
 - Fix bots not having access to DLC weapons and equipment ([#593](https://github.com/EmulatorNexus/VeniceUnleashed/issues/593)).
@@ -127,7 +127,7 @@ Below you can find a full list of changes to VU, corresponding to every VU updat
 - Forcefully assign players to Squad 1 when switching teams in squad-based gamemodes ([#578](https://github.com/EmulatorNexus/VeniceUnleashed/issues/578)).
 - VeniceEXT was updated to version `1.1.1` ([changelog](/vext/changelog/#1_1_1)).
 
-{{% changeset 17490 "24/01/2021" true %}}
+{{% changeset 17490 "24/01/2021" %}}
 
 - Fix an issue with the UI Nametag hooks ([#591](https://github.com/EmulatorNexus/VeniceUnleashed/issues/591)).
 

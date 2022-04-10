@@ -3,37 +3,37 @@ title: Changelog
 weight: 1
 ---
 
-{{% changeset-vext "1.7.0" "01/04/2022" true %}}
+{{% changeset-vext "1.7.0" "01/04/2022" %}}
 - Add support for using custom content superbundles. See the [guide](/vext/guides/custom-content/) for more info.
 
-{{% changeset-vext "1.6.0" "18/02/2022" true %}}
+{{% changeset-vext "1.6.0" "18/02/2022" %}}
 - Fix [VoipEmitter:Emitting](/vext/ref/client/event/voipemitter_emitting/) event firing multiple times ([#707](https://github.com/EmulatorNexus/VeniceUnleashed/issues/707)).
 - Introduces a new [GetTimeNS](/vext/ref/shared/library/sharedutils/#gettimens) method to the shared [SharedUtils](/vext/ref/shared/library/sharedutils/) library.
 - Fix certain issues with the [Input:PreUpdate](/vext/ref/client/hook/input_preupdate/) hook.
 
-{{% changeset-vext "1.5.0" "18/02/2022" true %}}
+{{% changeset-vext "1.5.0" "18/02/2022" %}}
 - Expose `updateInterval` to [ClientGameEntity](/vext/ref/client/type/gameentity) and [ServerGameEntity](/vext/ref/server/type/gameentity) ([#669](https://github.com/EmulatorNexus/VeniceUnleashed/issues/669)).
 
 
-{{% changeset-vext "1.4.0" "08/01/2022" true %}}
+{{% changeset-vext "1.4.0" "08/01/2022" %}}
 
 - Improve cases where accessing a player object would result in errors.
 - The [Guid](/vext/ref/shared/type/guid/) constructors will now throw errors when invalid or badly formatted Guid strings are provided.
 - Add support for client-side persistent settings through the [SettingsManager](/vext/ref/client/library/settingsmanager/) library.
 
-{{% changeset-vext "1.3.2" "06/11/2021" true %}}
+{{% changeset-vext "1.3.2" "06/11/2021" %}}
 
 - Introduces a new [GetMemoryUsage](/vext/ref/shared/library/sharedutils/#getmemoryusage) method to the [SharedUtils](/vext/ref/shared/library/sharedutils/) shared library.
 - Calls to [Events:Subscribe](/vext/ref/shared/library/events/#subscribe) will now throw an error when invalid callbacks are provided.
 - Fix a deadlock when accessing voip channel details in the [VoipEmitter:Emitting](/vext/ref/client/event/voipemitter_emitting/) event.
 - Fix a memory leak with the [WebUI:ExecuteJS](/vext/ref/client/library/webui/#executejs) library method.
 
-{{% changeset-vext "1.3.1" "12/10/2021" true %}}
+{{% changeset-vext "1.3.1" "12/10/2021" %}}
 
 - Introduces a new [RaycastManager](/vext/ref/server/library/raycastmanager/) server library.
 - Introduces a new [CollisionRaycast](/vext/ref/client/library/raycastmanager/#collisionraycast) method to the [RaycastManager](/vext/ref/client/library/raycastmanager/) client library.
 
-{{% changeset-vext "1.3.0" "11/10/2021" true %}}
+{{% changeset-vext "1.3.0" "11/10/2021" %}}
 
 - Introduces a new [Voip](/vext/ref/server/library/voip/) server library.
 - Introduces a new [Voip](/vext/ref/client/library/voip/) client library.
@@ -44,7 +44,7 @@ weight: 1
 - Introduces a new [VoipTransmissionMode](/vext/ref/shared/type/voiptransmissionmode/) shared enum.
 - Introduces several new client events: [Voip:ChannelOpened](/vext/ref/client/event/voip_channelopened/), [Voip:ChannelClosed](/vext/ref/client/event/voip_channelclosed/), [VoipChannel:PlayerJoined](/vext/ref/client/event/voipchannel_playerjoined/), [VoipChannel:PlayerLeft](/vext/ref/client/event/voipchannel_playerleft/), and [VoipEmitter:Emitting](/vext/ref/client/event/voipemitter_emitting/).
 
-{{% changeset-vext "1.2.0" "16/09/2021" true %}}
+{{% changeset-vext "1.2.0" "16/09/2021" %}}
 
 - Made the `teamId` and `squadId` properties writable for the client [Player](/vext/ref/client/type/player/) ([#642](https://github.com/EmulatorNexus/VeniceUnleashed/issues/642)) type.
 - Made the `teamId` property writable for the client [ControllableEntity](/vext/ref/client/type/controllableentity/) and the server [ControllableEntity](/vext/ref/server/type/controllableentity/) types ([#651](https://github.com/EmulatorNexus/VeniceUnleashed/issues/651))
@@ -65,15 +65,15 @@ weight: 1
 - Added a built-in VEXT mod that is automatically loaded on servers and clients and can be used to apply various hotfixes to the game and provide supporting functionality.
 - Updated to Lua `5.4.2`.
 
-{{% changeset-vext "1.1.3" "25/03/2021" true %}}
+{{% changeset-vext "1.1.3" "25/03/2021" %}}
 - Fix [EventEntity](/vext/ref/shared/type/entityevent/#eventid) `eventId` returning `nil` ([#626](https://github.com/EmulatorNexus/VeniceUnleashed/issues/626)).
 - Fix crash in [RegisterEventCallback](/vext/ref/shared/type/entity/#registereventcallback) when `modlist.reloadExtensions` is sent to RCON.
 - Fix crash in broadcast NetEvents when the player manager was not available (This now will emit a warning).
 
-{{% changeset-vext "1.1.2" "25/03/2021" true %}}
+{{% changeset-vext "1.1.2" "25/03/2021" %}}
 - Add missing documented enum value `WeaponFiring.Reload`.
 
-{{% changeset-vext "1.1.1" "11/02/2021" true %}}
+{{% changeset-vext "1.1.1" "11/02/2021" %}}
 
 - Add support for specifying a [parent representative](/vext/ref/shared/type/entitycreationparams/#parentrepresentative) during entity blueprint creation.
 - Add a new [PopScreen](/vext/ref/client/library/clientutils/#popscreen) method to the [ClientUtils](/vext/ref/client/library/clientutils/) library.
