@@ -9,8 +9,8 @@ title: EntityManager
 | Method | Returns |
 | ------ | ------- |
 | **[GetIterator](#getiterator)**(entityType: string) | [EntityIterator](/vext/ref/shared/type/entityiterator) |
-| **[CreateEntity](#createentity)**(entityData: [DataContainer](/vext/ref/shared/type/datacontainer), transform: [LinearTransform](/vext/ref/shared/type/lineartransform)) | [Entity](/vext/ref/shared/type/entity) \| nil |
-| **[CreateEntity](#createentity-1)**(entityData: [DataContainer](/vext/ref/shared/type/datacontainer), params: [EntityCreationParams](/vext/ref/shared/type/entitycreationparams)) | [Entity](/vext/ref/shared/type/entity) \| nil |
+| **[CreateEntity](#createentity)**(entityData: [DataContainer](/vext/ref/shared/type/datacontainer), transform: [LinearTransform](/vext/ref/shared/type/lineartransform)) | [Entity](/vext/ref/shared/type/entity) \| [Component](/vext/ref/shared/type/component) \| nil |
+| **[CreateEntity](#createentity-1)**(entityData: [DataContainer](/vext/ref/shared/type/datacontainer), params: [EntityCreationParams](/vext/ref/shared/type/entitycreationparams)) | [Entity](/vext/ref/shared/type/entity) \| [Component](/vext/ref/shared/type/component) \| nil |
 | **[CreateEntitiesFromBlueprint](#createentitiesfromblueprint)**(blueprint: [DataContainer](/vext/ref/shared/type/datacontainer), transform: [LinearTransform](/vext/ref/shared/type/lineartransform)) | [EntityBus](/vext/ref/shared/type/entitybus) \| nil |
 | **[CreateEntitiesFromBlueprint](#createentitiesfromblueprint-1)**(blueprint: [DataContainer](/vext/ref/shared/type/datacontainer), params: [EntityCreationParams](/vext/ref/shared/type/entitycreationparams)) | [EntityBus](/vext/ref/shared/type/entitybus) \| nil |
 | **[TraverseAllEntities](#traverseallentities)**(callback: callable) | void |
@@ -36,7 +36,7 @@ title: EntityManager
 
 ### CreateEntity {#createentity}
 
-> **CreateEntity**(entityData: [DataContainer](/vext/ref/shared/type/datacontainer), transform: [LinearTransform](/vext/ref/shared/type/lineartransform)): [Entity](/vext/ref/shared/type/entity) \| nil
+> **CreateEntity**(entityData: [DataContainer](/vext/ref/shared/type/datacontainer), transform: [LinearTransform](/vext/ref/shared/type/lineartransform)): [Entity](/vext/ref/shared/type/entity) \| [Component](/vext/ref/shared/type/component) \| nil
 
 #### Parameters
 
@@ -49,11 +49,11 @@ title: EntityManager
 
 | Type | Description |
 | ---- | ----------- |
-| **[Entity](/vext/ref/shared/type/entity)** \| **nil** |  |
+| **[Entity](/vext/ref/shared/type/entity)** \| **[Component](/vext/ref/shared/type/component)** \| **nil** |  |
 
 ### CreateEntity {#createentity-1}
 
-> **CreateEntity**(entityData: [DataContainer](/vext/ref/shared/type/datacontainer), params: [EntityCreationParams](/vext/ref/shared/type/entitycreationparams)): [Entity](/vext/ref/shared/type/entity) \| nil
+> **CreateEntity**(entityData: [DataContainer](/vext/ref/shared/type/datacontainer), params: [EntityCreationParams](/vext/ref/shared/type/entitycreationparams)): [Entity](/vext/ref/shared/type/entity) \| [Component](/vext/ref/shared/type/component) \| nil
 
 #### Parameters
 
@@ -66,7 +66,7 @@ title: EntityManager
 
 | Type | Description |
 | ---- | ----------- |
-| **[Entity](/vext/ref/shared/type/entity)** \| **nil** |  |
+| **[Entity](/vext/ref/shared/type/entity)** \| **[Component](/vext/ref/shared/type/component)** \| **nil** |  |
 
 ### CreateEntitiesFromBlueprint {#createentitiesfromblueprint}
 

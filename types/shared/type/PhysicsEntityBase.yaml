@@ -6,6 +6,10 @@ constructors:
   -
     params:
       other:
+        type: EntityBusPeer
+  -
+    params:
+      other:
         type: Entity
   -
     params:
@@ -62,7 +66,7 @@ methods:
       partId:
         type: int
     returns:
-      type: Entity
+      type: Entity | Component
       nullable: true
   -
     name: GetPartTransform

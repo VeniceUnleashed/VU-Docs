@@ -6,10 +6,11 @@ hideChildren: true
 |   |   |
 | --- | --- |
 | [AimAssist](/vext/ref/shared/type/aimassist) | [AxisAlignedBox](/vext/ref/shared/type/axisalignedbox) |
-| [CollisionEvent](/vext/ref/shared/type/collisionevent) | [ContainerCallback](/vext/ref/shared/type/containercallback) |
-| [DataContainer](/vext/ref/shared/type/datacontainer) | [DatabasePartition](/vext/ref/shared/type/databasepartition) |
-| [DebrisSpawnEvent](/vext/ref/shared/type/debrisspawnevent) | [Entity](/vext/ref/shared/type/entity) |
-| [EntityBus](/vext/ref/shared/type/entitybus) | [EntityCreationParams](/vext/ref/shared/type/entitycreationparams) |
+| [CollisionEvent](/vext/ref/shared/type/collisionevent) | [Component](/vext/ref/shared/type/component) |
+| [ContainerCallback](/vext/ref/shared/type/containercallback) | [DataContainer](/vext/ref/shared/type/datacontainer) |
+| [DatabasePartition](/vext/ref/shared/type/databasepartition) | [DebrisSpawnEvent](/vext/ref/shared/type/debrisspawnevent) |
+| [Entity](/vext/ref/shared/type/entity) | [EntityBus](/vext/ref/shared/type/entitybus) |
+| [EntityBusPeer](/vext/ref/shared/type/entitybuspeer) | [EntityCreationParams](/vext/ref/shared/type/entitycreationparams) |
 | [EntityEvent](/vext/ref/shared/type/entityevent) | [EntityIterator](/vext/ref/shared/type/entityiterator) |
 | [EntryInput](/vext/ref/shared/type/entryinput) | [Event](/vext/ref/shared/type/event) |
 | [FieldInformation](/vext/ref/shared/type/fieldinformation) | [FloatParameterEvent](/vext/ref/shared/type/floatparameterevent) |

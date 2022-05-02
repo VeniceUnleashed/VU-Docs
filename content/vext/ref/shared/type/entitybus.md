@@ -9,6 +9,8 @@ title: EntityBus
 | Name | Type |
 | ---- | ---- |
 | {{< prop "entities" true >}} | [Entity](/vext/ref/shared/type/entity){} |
+| {{< prop "components" true >}} | [Component](/vext/ref/shared/type/component){} |
+| {{< prop "peers" true >}} | [EntityBusPeer](/vext/ref/shared/type/entitybuspeer){} |
 | {{< prop "parent" true >}} | [EntityBus](/vext/ref/shared/type/entitybus) \| nil |
 | {{< prop "parentRepresentative" true >}} | [DataContainer](/vext/ref/shared/type/datacontainer) \| nil |
 | {{< prop "data" true >}} | [DataContainer](/vext/ref/shared/type/datacontainer) \| nil |
@@ -23,13 +25,13 @@ title: EntityBus
 | **[FireEvent](#fireevent)**(targetData: [DataContainer](/vext/ref/shared/type/datacontainer), eventId: int) | void |
 | **[FireEvent](#fireevent-1)**(targetData: [DataContainer](/vext/ref/shared/type/datacontainer), eventName: string) | void |
 | **[FireEvent](#fireevent-2)**(targetData: [DataContainer](/vext/ref/shared/type/datacontainer), event: [EntityEvent](/vext/ref/shared/type/entityevent)) | void |
-| **[GetEntity](#getentity)**(forData: [DataContainer](/vext/ref/shared/type/datacontainer)) | [Entity](/vext/ref/shared/type/entity) \| nil |
+| **[GetEntity](#getentity)**(forData: [DataContainer](/vext/ref/shared/type/datacontainer)) | [Entity](/vext/ref/shared/type/entity) \| [Component](/vext/ref/shared/type/component) \| nil |
 | **[PropertyChanged](#propertychanged)**(propertyId: int) | void |
 | **[PropertyChanged](#propertychanged-1)**(propertyId: int, value: any) | void |
 | **[PropertyChanged](#propertychanged-2)**(propertyName: string) | void |
 | **[PropertyChanged](#propertychanged-3)**(propertyName: string, value: any) | void |
-| **[GetLinks](#getlinks)**(toData: [DataContainer](/vext/ref/shared/type/datacontainer), fieldId: int) | [Entity](/vext/ref/shared/type/entity){} |
-| **[GetLinks](#getlinks-1)**(toData: [DataContainer](/vext/ref/shared/type/datacontainer), fieldName: string) | [Entity](/vext/ref/shared/type/entity){} |
+| **[GetLinks](#getlinks)**(toData: [DataContainer](/vext/ref/shared/type/datacontainer), fieldId: int) | ([Entity](/vext/ref/shared/type/entity) \| [Component](/vext/ref/shared/type/component)){} |
+| **[GetLinks](#getlinks-1)**(toData: [DataContainer](/vext/ref/shared/type/datacontainer), fieldName: string) | ([Entity](/vext/ref/shared/type/entity) \| [Component](/vext/ref/shared/type/component)){} |
 
 ### Operators
 
@@ -42,6 +44,14 @@ title: EntityBus
 ### {{% prop-heading "entities" true %}}
 
 > **[Entity](/vext/ref/shared/type/entity)**{}
+
+### {{% prop-heading "components" true %}}
+
+> **[Component](/vext/ref/shared/type/component)**{}
+
+### {{% prop-heading "peers" true %}}
+
+> **[EntityBusPeer](/vext/ref/shared/type/entitybuspeer)**{}
 
 ### {{% prop-heading "parent" true %}}
 
@@ -104,7 +114,7 @@ title: EntityBus
 
 ### GetEntity {#getentity}
 
-> **GetEntity**(forData: [DataContainer](/vext/ref/shared/type/datacontainer)): [Entity](/vext/ref/shared/type/entity) \| nil
+> **GetEntity**(forData: [DataContainer](/vext/ref/shared/type/datacontainer)): [Entity](/vext/ref/shared/type/entity) \| [Component](/vext/ref/shared/type/component) \| nil
 
 #### Parameters
 
@@ -116,7 +126,7 @@ title: EntityBus
 
 | Type | Description |
 | ---- | ----------- |
-| **[Entity](/vext/ref/shared/type/entity)** \| **nil** |  |
+| **[Entity](/vext/ref/shared/type/entity)** \| **[Component](/vext/ref/shared/type/component)** \| **nil** |  |
 
 ### PropertyChanged {#propertychanged}
 
@@ -162,7 +172,7 @@ title: EntityBus
 
 ### GetLinks {#getlinks}
 
-> **GetLinks**(toData: [DataContainer](/vext/ref/shared/type/datacontainer), fieldId: int): [Entity](/vext/ref/shared/type/entity){}
+> **GetLinks**(toData: [DataContainer](/vext/ref/shared/type/datacontainer), fieldId: int): ([Entity](/vext/ref/shared/type/entity) \| [Component](/vext/ref/shared/type/component)){}
 
 #### Parameters
 
@@ -175,11 +185,11 @@ title: EntityBus
 
 | Type | Description |
 | ---- | ----------- |
-| **[Entity](/vext/ref/shared/type/entity)**{} |  |
+| (**[Entity](/vext/ref/shared/type/entity)** \| **[Component](/vext/ref/shared/type/component)**){} |  |
 
 ### GetLinks {#getlinks-1}
 
-> **GetLinks**(toData: [DataContainer](/vext/ref/shared/type/datacontainer), fieldName: string): [Entity](/vext/ref/shared/type/entity){}
+> **GetLinks**(toData: [DataContainer](/vext/ref/shared/type/datacontainer), fieldName: string): ([Entity](/vext/ref/shared/type/entity) \| [Component](/vext/ref/shared/type/component)){}
 
 #### Parameters
 
@@ -192,7 +202,7 @@ title: EntityBus
 
 | Type | Description |
 | ---- | ----------- |
-| **[Entity](/vext/ref/shared/type/entity)**{} |  |
+| (**[Entity](/vext/ref/shared/type/entity)** \| **[Component](/vext/ref/shared/type/component)**){} |  |
 
 ## Operators
 

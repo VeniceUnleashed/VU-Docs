@@ -10,8 +10,9 @@ Inherits from [SpatialEntity](/vext/ref/shared/type/spatialentity)
 
 |  |
 | --- |
-| **[PhysicsEntityBase](#constructor-0)**(other: [Entity](/vext/ref/shared/type/entity)) |
-| **[PhysicsEntityBase](#constructor-1)**(other: [SpatialEntity](/vext/ref/shared/type/spatialentity)) |
+| **[PhysicsEntityBase](#constructor-0)**(other: [EntityBusPeer](/vext/ref/shared/type/entitybuspeer)) |
+| **[PhysicsEntityBase](#constructor-1)**(other: [Entity](/vext/ref/shared/type/entity)) |
+| **[PhysicsEntityBase](#constructor-2)**(other: [SpatialEntity](/vext/ref/shared/type/spatialentity)) |
 
 ### Properties
 
@@ -38,7 +39,7 @@ Inherits from [SpatialEntity](/vext/ref/shared/type/spatialentity)
 | ------ | ------- |
 | **[AddToWorld](#addtoworld)**() | void |
 | **[RemoveFromWorld](#removefromworld)**() | void |
-| **[GetPart](#getpart)**(partId: int) | [Entity](/vext/ref/shared/type/entity) \| nil |
+| **[GetPart](#getpart)**(partId: int) | [Entity](/vext/ref/shared/type/entity) \| [Component](/vext/ref/shared/type/component) \| nil |
 | **[GetPartTransform](#getparttransform)**(partId: int) | [QuatTransform](/vext/ref/shared/type/quattransform) \| nil |
 | **[GetPartMaterial](#getpartmaterial)**(partId: int) | [DataContainer](/vext/ref/shared/type/datacontainer) \| nil |
 | **[GetPartMaterial](#getpartmaterial-1)**(partId: int, atPos: [Vec3](/vext/ref/shared/type/vec3)) | [DataContainer](/vext/ref/shared/type/datacontainer) \| nil |
@@ -61,6 +62,16 @@ Inherits from [SpatialEntity](/vext/ref/shared/type/spatialentity)
 
 ### PhysicsEntityBase {#constructor-0}
 
+> **PhysicsEntityBase**(other: [EntityBusPeer](/vext/ref/shared/type/entitybuspeer))
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityBusPeer](/vext/ref/shared/type/entitybuspeer) |  |
+
+### PhysicsEntityBase {#constructor-1}
+
 > **PhysicsEntityBase**(other: [Entity](/vext/ref/shared/type/entity))
 
 #### Parameters
@@ -69,7 +80,7 @@ Inherits from [SpatialEntity](/vext/ref/shared/type/spatialentity)
 | ---- | ---- | ----------- |
 | **other** | [Entity](/vext/ref/shared/type/entity) |  |
 
-### PhysicsEntityBase {#constructor-1}
+### PhysicsEntityBase {#constructor-2}
 
 > **PhysicsEntityBase**(other: [SpatialEntity](/vext/ref/shared/type/spatialentity))
 
@@ -149,7 +160,7 @@ Inherits from [SpatialEntity](/vext/ref/shared/type/spatialentity)
 
 ### GetPart {#getpart}
 
-> **GetPart**(partId: int): [Entity](/vext/ref/shared/type/entity) \| nil
+> **GetPart**(partId: int): [Entity](/vext/ref/shared/type/entity) \| [Component](/vext/ref/shared/type/component) \| nil
 
 #### Parameters
 
@@ -161,7 +172,7 @@ Inherits from [SpatialEntity](/vext/ref/shared/type/spatialentity)
 
 | Type | Description |
 | ---- | ----------- |
-| **[Entity](/vext/ref/shared/type/entity)** \| **nil** |  |
+| **[Entity](/vext/ref/shared/type/entity)** \| **[Component](/vext/ref/shared/type/component)** \| **nil** |  |
 
 ### GetPartTransform {#getparttransform}
 

@@ -6,6 +6,14 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 18616 "02/05/2022" true %}}
+- The [VU Main Menu](https://github.com/EmulatorNexus/Fusion-UI) and the [Built-in Mod](https://github.com/EmulatorNexus/VU-BuiltIn) are now open source and open to contribution.
+- Allow development of the built-in mod when `-vextdebug` is defined (see mod readme).
+- Expose mod settings api to main menu UI (`state.settings.modSettings` and relevant `SetModSettingX` calls).
+- Expose account storage api to main menu UI (`state.user.accountStorage` and relevant actions).
+- Expose favorite server api to main menu UI (`state.servers.favoriteServers` and relevant actions). 
+- VeniceEXT was updated to `1.8.0` ([changelog](/vext/changelog/#1_8_0)).
+
 {{% changeset 18474 "06/04/2022" %}}
 - Fix HTTP asset download issues.
 

@@ -10,7 +10,8 @@ Inherits from [Entity](/vext/ref/shared/type/entity)
 
 |  |
 | --- |
-| **[SpatialEntity](#constructor-0)**(other: [Entity](/vext/ref/shared/type/entity)) |
+| **[SpatialEntity](#constructor-0)**(other: [EntityBusPeer](/vext/ref/shared/type/entitybuspeer)) |
+| **[SpatialEntity](#constructor-1)**(other: [Entity](/vext/ref/shared/type/entity)) |
 
 ### Properties
 
@@ -29,6 +30,16 @@ Inherits from [Entity](/vext/ref/shared/type/entity)
 ## Constructors
 
 ### SpatialEntity {#constructor-0}
+
+> **SpatialEntity**(other: [EntityBusPeer](/vext/ref/shared/type/entitybuspeer))
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityBusPeer](/vext/ref/shared/type/entitybuspeer) |  |
+
+### SpatialEntity {#constructor-1}
 
 > **SpatialEntity**(other: [Entity](/vext/ref/shared/type/entity))
 

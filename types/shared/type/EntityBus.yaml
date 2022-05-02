@@ -6,6 +6,14 @@ properties:
     type: Entity
     table: true
     readOnly: true
+  components:
+    type: Component
+    table: true
+    readOnly: true
+  peers:
+    type: EntityBusPeer
+    table: true
+    readOnly: true
   parent:
     type: EntityBus
     nullable: true
@@ -56,7 +64,7 @@ methods:
       forData:
         type: DataContainer
     returns:
-      type: Entity
+      type: Entity | Component
       nullable: true
   -
     name: PropertyChanged
@@ -90,7 +98,7 @@ methods:
       fieldId:
         type: int
     returns:
-      type: Entity
+      type: Entity | Component
       table: true
   -
     name: GetLinks
@@ -100,7 +108,7 @@ methods:
       fieldName:
         type: string
     returns:
-      type: Entity
+      type: Entity | Component
       table: true
 
 operators:

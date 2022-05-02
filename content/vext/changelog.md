@@ -3,6 +3,16 @@ title: Changelog
 weight: 1
 ---
 
+{{% changeset-vext "1.8.0" "02/05/2022" true %}}
+- Adds initial support for components:
+  - Introduces a new [EntityBusPeer](/vext/ref/shared/type/entitybuspeer) shared type.
+  - Adjusts the shared [Entity](/vext/ref/shared/type/entity) type to derive from [EntityBusPeer](/vext/ref/shared/type/entitybuspeer).
+  - Introduces a new [Component](/vext/ref/shared/type/component) shared type.
+  - Introduces [components](/vext/ref/shared/type/entitybus/#components) and [peers](/vext/ref/shared/type/entitybus/#peers) properties to the [EntityBus](/vext/ref/shared/type/entitybus) type.
+  - Adjust various events and hooks to use [EntityBusPeer](/vext/ref/shared/type/entitybuspeer) where appropriate.
+  - To preserve backwards compatibility, methods, properties, events, and hooks that previously used the [Entity](/vext/ref/shared/type/entity) type will now intelligently provide either an [Entity](/vext/ref/shared/type/entity) or a [Component](/vext/ref/shared/type/component) based on the underlying value type. This will keep mods compatible while also helping better diagnose any misuse.
+- Adjust DataContainer reference counting to make it more accurate (related to [#770](https://github.com/EmulatorNexus/VeniceUnleashed/issues/770)).
+
 {{% changeset-vext "1.7.0" "01/04/2022" %}}
 - Add support for using custom content superbundles. See the [guide](/vext/guides/custom-content/) for more info.
 

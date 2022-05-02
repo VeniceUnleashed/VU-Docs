@@ -105,29 +105,48 @@ const linkifyMethod = (method, allMethods) => {
 const stringifyType = (typeInfo, context, verifyType, bold) => {
   let typeString = '';
 
+  const types = typeInfo.type.split(' | ');
+
+  if ((typeInfo.array || typeInfo.table) && types.length > 1) {
+    typeString += '(';
+  }
+
   if (typeInfo.nestedTable || typeInfo.nestedArray) {
     typeString += '(';
   }
-  if (bold) {
-    typeString += `**`;
-  }
 
-  const linkifiedType = linkifyType(typeInfo.type, context);
+  const typeStrings = types.map((typeName) => {
+    let typeStr = "";
 
-  if (verifyType && !isPrimitive(typeInfo.type) && linkifiedType === escapeText(typeInfo.type)) {
-    console.log(`Could not find type '${typeInfo.type}' in '${context}' context.`);
-  }
+    if (bold) {
+      typeStr += `**`;
+    }
 
-  typeString += linkifiedType;
+    const linkifiedType = linkifyType(typeName, context);
 
-  if (bold) {
-    typeString += `**`;
-  }
+    if (verifyType && !isPrimitive(typeName) && linkifiedType === escapeText(typeName)) {
+      console.log(`Could not find type '${typeName}' in '${context}' context.`);
+    }
+
+    typeStr += linkifiedType;
+
+    if (bold) {
+      typeStr += `**`;
+    }
+
+    return typeStr;
+  });
+
+  typeString += typeStrings.join(" \\| ")
 
   if (typeInfo.nestedTable) {
     typeString += '{})';
   } else if (typeInfo.nestedArray) {
     typeString += '[])';
+  }
+
+  if ((typeInfo.array || typeInfo.table) && types.length > 1) {
+    typeString += ')';
   }
 
   if (typeInfo.array) {

@@ -1,0 +1,148 @@
+name: Component
+type: class
+
+constructors:
+  -
+    params:
+      other:
+        type: EntityBusPeer
+
+properties:
+  componentData:
+    type: DataContainer
+    readOnly: true
+  localBoundingBox:
+    type: AxisAlignedBox
+    readOnly: true
+    nullable: true
+
+methods:
+  -
+    name: SetTransform
+    params:
+      transform:
+        type: LinearTransform
+  -
+    name: RegisterDeinitCallback
+    params:
+      callback:
+        type: callable
+        description: "A callback in the form `function(component: Component): bool`."
+    returns:
+      type: int
+  -
+    name: RegisterDeinitCallback
+    params:
+      context:
+        type: any
+        description: A context value to pass to the callback.
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, component: Component): bool`."
+    returns:
+      type: int
+  -
+    name: UnregisterDeinitCallback
+    params:
+      handle:
+        type: int
+  -
+    name: RegisterSpawnCallback
+    params:
+      callback:
+        type: callable
+        description: "A callback in the form `function(component: Component): bool`."
+    returns:
+      type: int
+  -
+    name: RegisterSpawnCallback
+    params:
+      context:
+        type: any
+        description: A context value to pass to the callback.
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, component: Component): bool`."
+    returns:
+      type: int
+  -
+    name: UnregisterSpawnCallback
+    params:
+      handle:
+        type: int
+  -
+    name: RegisterUnSpawnCallback
+    params:
+      callback:
+        type: callable
+        description: "A callback in the form `function(component: Component): bool`."
+    returns:
+      type: int
+  -
+    name: RegisterUnSpawnCallback
+    params:
+      context:
+        type: any
+        description: A context value to pass to the callback.
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, component: Component): bool`."
+    returns:
+      type: int
+  -
+    name: UnregisterUnSpawnCallback
+    params:
+      handle:
+        type: int
+  -
+    name: RegisterImpulseCallback
+    params:
+      callback:
+        type: callable
+        description: "A callback in the form `function(component: Component, data: ImpulseData | null): bool`."
+    returns:
+      type: int
+  -
+    name: RegisterImpulseCallback
+    params:
+      context:
+        type: any
+        description: A context value to pass to the callback.
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, component: Component, data: ImpulseData | null): bool`."
+    returns:
+      type: int
+  -
+    name: UnregisterImpulseCallback
+    params:
+      handle:
+        type: int
+  -
+    name: RegisterComponentMessageCallback
+    params:
+      callback:
+        type: callable
+        description: "A callback in the form `function(component: Component, message: Message): bool`."
+    returns:
+      type: int
+  -
+    name: RegisterComponentMessageCallback
+    params:
+      context:
+        type: any
+        description: A context value to pass to the callback.
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, component: Component, message: Message): bool`."
+    returns:
+      type: int
+  -
+    name: UnregisterComponentMessageCallback
+    params:
+      handle:
+        type: int
+
+static:
+  typeInfo:
+    type: TypeInformation

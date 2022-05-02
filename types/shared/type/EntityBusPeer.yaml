@@ -1,0 +1,152 @@
+name: EntityBusPeer
+type: class
+
+properties:
+  typeInfo:
+    type: TypeInformation
+    readOnly: true
+  data:
+    type: DataContainer
+    readOnly: true
+    nullable: true
+  instanceId:
+    type: int
+    readOnly: true
+  bus:
+    type: EntityBus
+    readOnly: true
+    nullable: true
+  computedWorldTransform:
+    type: LinearTransform
+    readOnly: true
+    nullable: true
+
+methods:
+  -
+    name: Is
+    params:
+      typeName:
+        type: string
+    returns:
+      type: bool
+  -
+    name: FireEvent
+    params:
+      eventId:
+        type: int
+  -
+    name: FireEvent
+    params:
+      eventName:
+        type: string
+  -
+    name: FireEvent
+    params:
+      event:
+        type: EntityEvent
+  -
+    name: PropertyChanged
+    params:
+      propertyId:
+        type: int
+  -
+    name: PropertyChanged
+    params:
+      propertyId:
+        type: int
+      value:
+        type: any
+  -
+    name: PropertyChanged
+    params:
+      propertyName:
+        type: string
+  -
+    name: PropertyChanged
+    params:
+      propertyName:
+        type: string
+      value:
+        type: any
+  -
+    name: RegisterEventCallback
+    params:
+      callback:
+        type: callable
+        description: "A callback in the form `function(peer: Entity | Component, event: EntityEvent): bool`."
+    returns:
+      type: int
+  -
+    name: RegisterEventCallback
+    params:
+      context:
+        type: any
+        description: A context value to pass to the callback.
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, peer: Entity | Component, event: EntityEvent): bool`."
+    returns:
+      type: int
+  -
+    name: UnregisterEventCallback
+    params:
+      handle:
+        type: int
+  -
+    name: RegisterCreateCallback
+    params:
+      callback:
+        type: callable
+        description: "A callback in the form `function(peer: Entity | Component, transform: LinearTransform): bool`."
+    returns:
+      type: int
+  -
+    name: RegisterCreateCallback
+    params:
+      context:
+        type: any
+        description: A context value to pass to the callback.
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, peer: Entity | Component, transform: LinearTransform): bool`."
+    returns:
+      type: int
+  -
+    name: UnregisterCreateCallback
+    params:
+      handle:
+        type: int
+  -
+    name: RegisterDestroyCallback
+    params:
+      callback:
+        type: callable
+        description: "A callback in the form `function(peer: Entity | Component): bool`."
+    returns:
+      type: int
+  -
+    name: RegisterDestroyCallback
+    params:
+      context:
+        type: any
+        description: A context value to pass to the callback.
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, peer: Entity | Component): bool`."
+    returns:
+      type: int
+  -
+    name: UnregisterDestroyCallback
+    params:
+      handle:
+        type: int
+
+operators:
+  -
+    type: eq
+    rhs: EntityBusPeer
+    returns: bool
+
+static:
+  typeInfo:
+    type: TypeInformation

@@ -8,5 +8,5 @@ params:
     type: LinearTransform
 
 returns:
-  type: Entity
+  type: Entity | Component
   nullable: true

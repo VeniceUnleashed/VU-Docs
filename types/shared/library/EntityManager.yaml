@@ -17,7 +17,7 @@ methods:
       transform:
         type: LinearTransform
     returns:
-      type: Entity
+      type: Entity | Component
       nullable: true
   -
     name: CreateEntity
@@ -27,7 +27,7 @@ methods:
       params:
         type: EntityCreationParams
     returns:
-      type: Entity
+      type: Entity | Component
       nullable: true
   -
     name: CreateEntitiesFromBlueprint

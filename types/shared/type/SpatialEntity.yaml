@@ -6,6 +6,10 @@ constructors:
   -
     params:
       other:
+        type: EntityBusPeer
+  -
+    params:
+      other:
         type: Entity
 
 properties:
@@ -14,7 +18,7 @@ properties:
     description: |
       Gets or sets the world transform of this entity.
         > NOTE: You must assign a new LinearTransfrom to update, changing individual vector components **will not work**
-      
+
       Example:
       ```lua
       local myTransform = mySpatialEntity.transform

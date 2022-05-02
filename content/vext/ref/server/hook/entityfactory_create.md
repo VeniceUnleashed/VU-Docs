@@ -2,7 +2,7 @@
 title: EntityFactory:Create
 ---
 
-> **EntityFactory:Create**(entityData: [DataContainer](/vext/ref/shared/type/datacontainer), transform: [LinearTransform](/vext/ref/shared/type/lineartransform)): [Entity](/vext/ref/shared/type/entity) \| nil
+> **EntityFactory:Create**(entityData: [DataContainer](/vext/ref/shared/type/datacontainer), transform: [LinearTransform](/vext/ref/shared/type/lineartransform)): [Entity](/vext/ref/shared/type/entity) \| [Component](/vext/ref/shared/type/component) \| nil
 
 ## Parameters
 
@@ -15,7 +15,7 @@ title: EntityFactory:Create
 
 | Type | Description |
 | ---- | ----------- |
-| **[Entity](/vext/ref/shared/type/entity)** \| **nil** |  |
+| **[Entity](/vext/ref/shared/type/entity)** \| **[Component](/vext/ref/shared/type/component)** \| **nil** |  |
 
 ## Example
 
