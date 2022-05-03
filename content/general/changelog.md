@@ -6,6 +6,10 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 18675 "03/05/2022" true %}}
+- Fix an issue where frostbite type array operations would sometimes cause memory corruption or UB.
+- Fix a crash when [Player:AttachSoldier](/vext/ref/server/type/player/#attachsoldier) was called during certain update passes.
+
 {{% changeset 18616 "02/05/2022" true %}}
 - The [VU Main Menu](https://github.com/EmulatorNexus/Fusion-UI) and the [Built-in Mod](https://github.com/EmulatorNexus/VU-BuiltIn) are now open source and open to contribution.
 - Allow development of the built-in mod when `-vextdebug` is defined (see mod readme).
