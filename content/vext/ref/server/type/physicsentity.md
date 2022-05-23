@@ -10,9 +10,10 @@ Inherits from [GameEntity](/vext/ref/server/type/gameentity)
 
 |  |
 | --- |
-| **[PhysicsEntity](#constructor-0)**(other: [Entity](/vext/ref/shared/type/entity)) |
-| **[PhysicsEntity](#constructor-1)**(other: [SpatialEntity](/vext/ref/shared/type/spatialentity)) |
-| **[PhysicsEntity](#constructor-2)**(other: [GameEntity](/vext/ref/server/type/gameentity)) |
+| **[PhysicsEntity](#constructor-0)**(other: [EntityBusPeer](/vext/ref/shared/type/entitybuspeer)) |
+| **[PhysicsEntity](#constructor-1)**(other: [Entity](/vext/ref/shared/type/entity)) |
+| **[PhysicsEntity](#constructor-2)**(other: [SpatialEntity](/vext/ref/shared/type/spatialentity)) |
+| **[PhysicsEntity](#constructor-3)**(other: [GameEntity](/vext/ref/server/type/gameentity)) |
 
 ### Properties
 
@@ -50,6 +51,16 @@ Inherits from [GameEntity](/vext/ref/server/type/gameentity)
 
 ### PhysicsEntity {#constructor-0}
 
+> **PhysicsEntity**(other: [EntityBusPeer](/vext/ref/shared/type/entitybuspeer))
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityBusPeer](/vext/ref/shared/type/entitybuspeer) |  |
+
+### PhysicsEntity {#constructor-1}
+
 > **PhysicsEntity**(other: [Entity](/vext/ref/shared/type/entity))
 
 #### Parameters
@@ -58,7 +69,7 @@ Inherits from [GameEntity](/vext/ref/server/type/gameentity)
 | ---- | ---- | ----------- |
 | **other** | [Entity](/vext/ref/shared/type/entity) |  |
 
-### PhysicsEntity {#constructor-1}
+### PhysicsEntity {#constructor-2}
 
 > **PhysicsEntity**(other: [SpatialEntity](/vext/ref/shared/type/spatialentity))
 
@@ -68,7 +79,7 @@ Inherits from [GameEntity](/vext/ref/server/type/gameentity)
 | ---- | ---- | ----------- |
 | **other** | [SpatialEntity](/vext/ref/shared/type/spatialentity) |  |
 
-### PhysicsEntity {#constructor-2}
+### PhysicsEntity {#constructor-3}
 
 > **PhysicsEntity**(other: [GameEntity](/vext/ref/server/type/gameentity))
 

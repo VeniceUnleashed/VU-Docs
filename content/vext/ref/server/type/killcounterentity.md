@@ -10,9 +10,10 @@ Inherits from [GameEntity](/vext/ref/server/type/gameentity)
 
 |  |
 | --- |
-| **[KillCounterEntity](#constructor-0)**(other: [Entity](/vext/ref/shared/type/entity)) |
-| **[KillCounterEntity](#constructor-1)**(other: [SpatialEntity](/vext/ref/shared/type/spatialentity)) |
-| **[KillCounterEntity](#constructor-2)**(other: [GameEntity](/vext/ref/server/type/gameentity)) |
+| **[KillCounterEntity](#constructor-0)**(other: [EntityBusPeer](/vext/ref/shared/type/entitybuspeer)) |
+| **[KillCounterEntity](#constructor-1)**(other: [Entity](/vext/ref/shared/type/entity)) |
+| **[KillCounterEntity](#constructor-2)**(other: [SpatialEntity](/vext/ref/shared/type/spatialentity)) |
+| **[KillCounterEntity](#constructor-3)**(other: [GameEntity](/vext/ref/server/type/gameentity)) |
 
 ### Properties
 
@@ -31,6 +32,16 @@ Inherits from [GameEntity](/vext/ref/server/type/gameentity)
 
 ### KillCounterEntity {#constructor-0}
 
+> **KillCounterEntity**(other: [EntityBusPeer](/vext/ref/shared/type/entitybuspeer))
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityBusPeer](/vext/ref/shared/type/entitybuspeer) |  |
+
+### KillCounterEntity {#constructor-1}
+
 > **KillCounterEntity**(other: [Entity](/vext/ref/shared/type/entity))
 
 #### Parameters
@@ -39,7 +50,7 @@ Inherits from [GameEntity](/vext/ref/server/type/gameentity)
 | ---- | ---- | ----------- |
 | **other** | [Entity](/vext/ref/shared/type/entity) |  |
 
-### KillCounterEntity {#constructor-1}
+### KillCounterEntity {#constructor-2}
 
 > **KillCounterEntity**(other: [SpatialEntity](/vext/ref/shared/type/spatialentity))
 
@@ -49,7 +60,7 @@ Inherits from [GameEntity](/vext/ref/server/type/gameentity)
 | ---- | ---- | ----------- |
 | **other** | [SpatialEntity](/vext/ref/shared/type/spatialentity) |  |
 
-### KillCounterEntity {#constructor-2}
+### KillCounterEntity {#constructor-3}
 
 > **KillCounterEntity**(other: [GameEntity](/vext/ref/server/type/gameentity))
 

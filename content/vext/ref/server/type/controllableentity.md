@@ -10,10 +10,11 @@ Inherits from [PhysicsEntity](/vext/ref/server/type/physicsentity)
 
 |  |
 | --- |
-| **[ControllableEntity](#constructor-0)**(other: [Entity](/vext/ref/shared/type/entity)) |
-| **[ControllableEntity](#constructor-1)**(other: [SpatialEntity](/vext/ref/shared/type/spatialentity)) |
-| **[ControllableEntity](#constructor-2)**(other: [GameEntity](/vext/ref/server/type/gameentity)) |
-| **[ControllableEntity](#constructor-3)**(other: [PhysicsEntity](/vext/ref/server/type/physicsentity)) |
+| **[ControllableEntity](#constructor-0)**(other: [EntityBusPeer](/vext/ref/shared/type/entitybuspeer)) |
+| **[ControllableEntity](#constructor-1)**(other: [Entity](/vext/ref/shared/type/entity)) |
+| **[ControllableEntity](#constructor-2)**(other: [SpatialEntity](/vext/ref/shared/type/spatialentity)) |
+| **[ControllableEntity](#constructor-3)**(other: [GameEntity](/vext/ref/server/type/gameentity)) |
+| **[ControllableEntity](#constructor-4)**(other: [PhysicsEntity](/vext/ref/server/type/physicsentity)) |
 
 ### Properties
 
@@ -42,6 +43,16 @@ Inherits from [PhysicsEntity](/vext/ref/server/type/physicsentity)
 
 ### ControllableEntity {#constructor-0}
 
+> **ControllableEntity**(other: [EntityBusPeer](/vext/ref/shared/type/entitybuspeer))
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityBusPeer](/vext/ref/shared/type/entitybuspeer) |  |
+
+### ControllableEntity {#constructor-1}
+
 > **ControllableEntity**(other: [Entity](/vext/ref/shared/type/entity))
 
 #### Parameters
@@ -50,7 +61,7 @@ Inherits from [PhysicsEntity](/vext/ref/server/type/physicsentity)
 | ---- | ---- | ----------- |
 | **other** | [Entity](/vext/ref/shared/type/entity) |  |
 
-### ControllableEntity {#constructor-1}
+### ControllableEntity {#constructor-2}
 
 > **ControllableEntity**(other: [SpatialEntity](/vext/ref/shared/type/spatialentity))
 
@@ -60,7 +71,7 @@ Inherits from [PhysicsEntity](/vext/ref/server/type/physicsentity)
 | ---- | ---- | ----------- |
 | **other** | [SpatialEntity](/vext/ref/shared/type/spatialentity) |  |
 
-### ControllableEntity {#constructor-2}
+### ControllableEntity {#constructor-3}
 
 > **ControllableEntity**(other: [GameEntity](/vext/ref/server/type/gameentity))
 
@@ -70,7 +81,7 @@ Inherits from [PhysicsEntity](/vext/ref/server/type/physicsentity)
 | ---- | ---- | ----------- |
 | **other** | [GameEntity](/vext/ref/server/type/gameentity) |  |
 
-### ControllableEntity {#constructor-3}
+### ControllableEntity {#constructor-4}
 
 > **ControllableEntity**(other: [PhysicsEntity](/vext/ref/server/type/physicsentity))
 

@@ -2,6 +2,8 @@
 title: Component
 ---
 
+Inherits from [EntityBusPeer](/vext/ref/shared/type/entitybuspeer)
+
 ## Summary
 
 ### Constructors

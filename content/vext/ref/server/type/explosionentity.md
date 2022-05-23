@@ -10,9 +10,10 @@ Inherits from [GameEntity](/vext/ref/server/type/gameentity)
 
 |  |
 | --- |
-| **[ExplosionEntity](#constructor-0)**(other: [Entity](/vext/ref/shared/type/entity)) |
-| **[ExplosionEntity](#constructor-1)**(other: [SpatialEntity](/vext/ref/shared/type/spatialentity)) |
-| **[ExplosionEntity](#constructor-2)**(other: [GameEntity](/vext/ref/server/type/gameentity)) |
+| **[ExplosionEntity](#constructor-0)**(other: [EntityBusPeer](/vext/ref/shared/type/entitybuspeer)) |
+| **[ExplosionEntity](#constructor-1)**(other: [Entity](/vext/ref/shared/type/entity)) |
+| **[ExplosionEntity](#constructor-2)**(other: [SpatialEntity](/vext/ref/shared/type/spatialentity)) |
+| **[ExplosionEntity](#constructor-3)**(other: [GameEntity](/vext/ref/server/type/gameentity)) |
 
 ### Methods
 
@@ -30,6 +31,16 @@ Inherits from [GameEntity](/vext/ref/server/type/gameentity)
 
 ### ExplosionEntity {#constructor-0}
 
+> **ExplosionEntity**(other: [EntityBusPeer](/vext/ref/shared/type/entitybuspeer))
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityBusPeer](/vext/ref/shared/type/entitybuspeer) |  |
+
+### ExplosionEntity {#constructor-1}
+
 > **ExplosionEntity**(other: [Entity](/vext/ref/shared/type/entity))
 
 #### Parameters
@@ -38,7 +49,7 @@ Inherits from [GameEntity](/vext/ref/server/type/gameentity)
 | ---- | ---- | ----------- |
 | **other** | [Entity](/vext/ref/shared/type/entity) |  |
 
-### ExplosionEntity {#constructor-1}
+### ExplosionEntity {#constructor-2}
 
 > **ExplosionEntity**(other: [SpatialEntity](/vext/ref/shared/type/spatialentity))
 
@@ -48,7 +59,7 @@ Inherits from [GameEntity](/vext/ref/server/type/gameentity)
 | ---- | ---- | ----------- |
 | **other** | [SpatialEntity](/vext/ref/shared/type/spatialentity) |  |
 
-### ExplosionEntity {#constructor-2}
+### ExplosionEntity {#constructor-3}
 
 > **ExplosionEntity**(other: [GameEntity](/vext/ref/server/type/gameentity))
 

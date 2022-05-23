@@ -10,9 +10,10 @@ Inherits from [GameEntity](/vext/ref/client/type/gameentity)
 
 |  |
 | --- |
-| **[TicketCounterEntity](#constructor-0)**(other: [Entity](/vext/ref/shared/type/entity)) |
-| **[TicketCounterEntity](#constructor-1)**(other: [SpatialEntity](/vext/ref/shared/type/spatialentity)) |
-| **[TicketCounterEntity](#constructor-2)**(other: [GameEntity](/vext/ref/client/type/gameentity)) |
+| **[TicketCounterEntity](#constructor-0)**(other: [EntityBusPeer](/vext/ref/shared/type/entitybuspeer)) |
+| **[TicketCounterEntity](#constructor-1)**(other: [Entity](/vext/ref/shared/type/entity)) |
+| **[TicketCounterEntity](#constructor-2)**(other: [SpatialEntity](/vext/ref/shared/type/spatialentity)) |
+| **[TicketCounterEntity](#constructor-3)**(other: [GameEntity](/vext/ref/client/type/gameentity)) |
 
 ### Properties
 
@@ -32,6 +33,16 @@ Inherits from [GameEntity](/vext/ref/client/type/gameentity)
 
 ### TicketCounterEntity {#constructor-0}
 
+> **TicketCounterEntity**(other: [EntityBusPeer](/vext/ref/shared/type/entitybuspeer))
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityBusPeer](/vext/ref/shared/type/entitybuspeer) |  |
+
+### TicketCounterEntity {#constructor-1}
+
 > **TicketCounterEntity**(other: [Entity](/vext/ref/shared/type/entity))
 
 #### Parameters
@@ -40,7 +51,7 @@ Inherits from [GameEntity](/vext/ref/client/type/gameentity)
 | ---- | ---- | ----------- |
 | **other** | [Entity](/vext/ref/shared/type/entity) |  |
 
-### TicketCounterEntity {#constructor-1}
+### TicketCounterEntity {#constructor-2}
 
 > **TicketCounterEntity**(other: [SpatialEntity](/vext/ref/shared/type/spatialentity))
 
@@ -50,7 +61,7 @@ Inherits from [GameEntity](/vext/ref/client/type/gameentity)
 | ---- | ---- | ----------- |
 | **other** | [SpatialEntity](/vext/ref/shared/type/spatialentity) |  |
 
-### TicketCounterEntity {#constructor-2}
+### TicketCounterEntity {#constructor-3}
 
 > **TicketCounterEntity**(other: [GameEntity](/vext/ref/client/type/gameentity))
 

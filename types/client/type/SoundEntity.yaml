@@ -6,6 +6,10 @@ constructors:
   -
     params:
       other:
+        type: EntityBusPeer
+  -
+    params:
+      other:
         type: Entity
 
 methods:

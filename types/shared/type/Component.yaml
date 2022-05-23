@@ -1,5 +1,6 @@
 name: Component
 type: class
+inherits: EntityBusPeer
 
 constructors:
   -

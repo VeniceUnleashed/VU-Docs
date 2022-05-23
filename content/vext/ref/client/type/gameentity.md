@@ -10,8 +10,9 @@ Inherits from [SpatialEntity](/vext/ref/shared/type/spatialentity)
 
 |  |
 | --- |
-| **[GameEntity](#constructor-0)**(other: [Entity](/vext/ref/shared/type/entity)) |
-| **[GameEntity](#constructor-1)**(other: [SpatialEntity](/vext/ref/shared/type/spatialentity)) |
+| **[GameEntity](#constructor-0)**(other: [EntityBusPeer](/vext/ref/shared/type/entitybuspeer)) |
+| **[GameEntity](#constructor-1)**(other: [Entity](/vext/ref/shared/type/entity)) |
+| **[GameEntity](#constructor-2)**(other: [SpatialEntity](/vext/ref/shared/type/spatialentity)) |
 
 ### Properties
 
@@ -35,6 +36,16 @@ Inherits from [SpatialEntity](/vext/ref/shared/type/spatialentity)
 
 ### GameEntity {#constructor-0}
 
+> **GameEntity**(other: [EntityBusPeer](/vext/ref/shared/type/entitybuspeer))
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityBusPeer](/vext/ref/shared/type/entitybuspeer) |  |
+
+### GameEntity {#constructor-1}
+
 > **GameEntity**(other: [Entity](/vext/ref/shared/type/entity))
 
 #### Parameters
@@ -43,7 +54,7 @@ Inherits from [SpatialEntity](/vext/ref/shared/type/spatialentity)
 | ---- | ---- | ----------- |
 | **other** | [Entity](/vext/ref/shared/type/entity) |  |
 
-### GameEntity {#constructor-1}
+### GameEntity {#constructor-2}
 
 > **GameEntity**(other: [SpatialEntity](/vext/ref/shared/type/spatialentity))
 

@@ -10,9 +10,10 @@ Inherits from [GameEntity](/vext/ref/client/type/gameentity)
 
 |  |
 | --- |
-| **[SoldierWeapon](#constructor-0)**(other: [Entity](/vext/ref/shared/type/entity)) |
-| **[SoldierWeapon](#constructor-1)**(other: [SpatialEntity](/vext/ref/shared/type/spatialentity)) |
-| **[SoldierWeapon](#constructor-2)**(other: [GameEntity](/vext/ref/client/type/gameentity)) |
+| **[SoldierWeapon](#constructor-0)**(other: [EntityBusPeer](/vext/ref/shared/type/entitybuspeer)) |
+| **[SoldierWeapon](#constructor-1)**(other: [Entity](/vext/ref/shared/type/entity)) |
+| **[SoldierWeapon](#constructor-2)**(other: [SpatialEntity](/vext/ref/shared/type/spatialentity)) |
+| **[SoldierWeapon](#constructor-3)**(other: [GameEntity](/vext/ref/client/type/gameentity)) |
 
 ### Properties
 
@@ -37,6 +38,16 @@ Inherits from [GameEntity](/vext/ref/client/type/gameentity)
 
 ### SoldierWeapon {#constructor-0}
 
+> **SoldierWeapon**(other: [EntityBusPeer](/vext/ref/shared/type/entitybuspeer))
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityBusPeer](/vext/ref/shared/type/entitybuspeer) |  |
+
+### SoldierWeapon {#constructor-1}
+
 > **SoldierWeapon**(other: [Entity](/vext/ref/shared/type/entity))
 
 #### Parameters
@@ -45,7 +56,7 @@ Inherits from [GameEntity](/vext/ref/client/type/gameentity)
 | ---- | ---- | ----------- |
 | **other** | [Entity](/vext/ref/shared/type/entity) |  |
 
-### SoldierWeapon {#constructor-1}
+### SoldierWeapon {#constructor-2}
 
 > **SoldierWeapon**(other: [SpatialEntity](/vext/ref/shared/type/spatialentity))
 
@@ -55,7 +66,7 @@ Inherits from [GameEntity](/vext/ref/client/type/gameentity)
 | ---- | ---- | ----------- |
 | **other** | [SpatialEntity](/vext/ref/shared/type/spatialentity) |  |
 
-### SoldierWeapon {#constructor-2}
+### SoldierWeapon {#constructor-3}
 
 > **SoldierWeapon**(other: [GameEntity](/vext/ref/client/type/gameentity))
 
