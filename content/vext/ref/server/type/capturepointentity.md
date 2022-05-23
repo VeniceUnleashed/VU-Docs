@@ -10,9 +10,10 @@ Inherits from [GameEntity](/vext/ref/server/type/gameentity)
 
 |  |
 | --- |
-| **[CapturePointEntity](#constructor-0)**(other: [Entity](/vext/ref/shared/type/entity)) |
-| **[CapturePointEntity](#constructor-1)**(other: [SpatialEntity](/vext/ref/shared/type/spatialentity)) |
-| **[CapturePointEntity](#constructor-2)**(other: [GameEntity](/vext/ref/server/type/gameentity)) |
+| **[CapturePointEntity](#constructor-0)**(other: [EntityBusPeer](/vext/ref/shared/type/entitybuspeer)) |
+| **[CapturePointEntity](#constructor-1)**(other: [Entity](/vext/ref/shared/type/entity)) |
+| **[CapturePointEntity](#constructor-2)**(other: [SpatialEntity](/vext/ref/shared/type/spatialentity)) |
+| **[CapturePointEntity](#constructor-3)**(other: [GameEntity](/vext/ref/server/type/gameentity)) |
 
 ### Properties
 
@@ -46,6 +47,16 @@ Inherits from [GameEntity](/vext/ref/server/type/gameentity)
 
 ### CapturePointEntity {#constructor-0}
 
+> **CapturePointEntity**(other: [EntityBusPeer](/vext/ref/shared/type/entitybuspeer))
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityBusPeer](/vext/ref/shared/type/entitybuspeer) |  |
+
+### CapturePointEntity {#constructor-1}
+
 > **CapturePointEntity**(other: [Entity](/vext/ref/shared/type/entity))
 
 #### Parameters
@@ -54,7 +65,7 @@ Inherits from [GameEntity](/vext/ref/server/type/gameentity)
 | ---- | ---- | ----------- |
 | **other** | [Entity](/vext/ref/shared/type/entity) |  |
 
-### CapturePointEntity {#constructor-1}
+### CapturePointEntity {#constructor-2}
 
 > **CapturePointEntity**(other: [SpatialEntity](/vext/ref/shared/type/spatialentity))
 
@@ -64,7 +75,7 @@ Inherits from [GameEntity](/vext/ref/server/type/gameentity)
 | ---- | ---- | ----------- |
 | **other** | [SpatialEntity](/vext/ref/shared/type/spatialentity) |  |
 
-### CapturePointEntity {#constructor-2}
+### CapturePointEntity {#constructor-3}
 
 > **CapturePointEntity**(other: [GameEntity](/vext/ref/server/type/gameentity))
 

@@ -10,11 +10,12 @@ Inherits from [ControllableEntity](/vext/ref/client/type/controllableentity)
 
 |  |
 | --- |
-| **[SoldierEntity](#constructor-0)**(other: [Entity](/vext/ref/shared/type/entity)) |
-| **[SoldierEntity](#constructor-1)**(other: [SpatialEntity](/vext/ref/shared/type/spatialentity)) |
-| **[SoldierEntity](#constructor-2)**(other: [GameEntity](/vext/ref/client/type/gameentity)) |
-| **[SoldierEntity](#constructor-3)**(other: [PhysicsEntity](/vext/ref/client/type/physicsentity)) |
-| **[SoldierEntity](#constructor-4)**(other: [ControllableEntity](/vext/ref/client/type/controllableentity)) |
+| **[SoldierEntity](#constructor-0)**(other: [EntityBusPeer](/vext/ref/shared/type/entitybuspeer)) |
+| **[SoldierEntity](#constructor-1)**(other: [Entity](/vext/ref/shared/type/entity)) |
+| **[SoldierEntity](#constructor-2)**(other: [SpatialEntity](/vext/ref/shared/type/spatialentity)) |
+| **[SoldierEntity](#constructor-3)**(other: [GameEntity](/vext/ref/client/type/gameentity)) |
+| **[SoldierEntity](#constructor-4)**(other: [PhysicsEntity](/vext/ref/client/type/physicsentity)) |
+| **[SoldierEntity](#constructor-5)**(other: [ControllableEntity](/vext/ref/client/type/controllableentity)) |
 
 ### Properties
 
@@ -65,6 +66,16 @@ Inherits from [ControllableEntity](/vext/ref/client/type/controllableentity)
 
 ### SoldierEntity {#constructor-0}
 
+> **SoldierEntity**(other: [EntityBusPeer](/vext/ref/shared/type/entitybuspeer))
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **other** | [EntityBusPeer](/vext/ref/shared/type/entitybuspeer) |  |
+
+### SoldierEntity {#constructor-1}
+
 > **SoldierEntity**(other: [Entity](/vext/ref/shared/type/entity))
 
 #### Parameters
@@ -73,7 +84,7 @@ Inherits from [ControllableEntity](/vext/ref/client/type/controllableentity)
 | ---- | ---- | ----------- |
 | **other** | [Entity](/vext/ref/shared/type/entity) |  |
 
-### SoldierEntity {#constructor-1}
+### SoldierEntity {#constructor-2}
 
 > **SoldierEntity**(other: [SpatialEntity](/vext/ref/shared/type/spatialentity))
 
@@ -83,7 +94,7 @@ Inherits from [ControllableEntity](/vext/ref/client/type/controllableentity)
 | ---- | ---- | ----------- |
 | **other** | [SpatialEntity](/vext/ref/shared/type/spatialentity) |  |
 
-### SoldierEntity {#constructor-2}
+### SoldierEntity {#constructor-3}
 
 > **SoldierEntity**(other: [GameEntity](/vext/ref/client/type/gameentity))
 
@@ -93,7 +104,7 @@ Inherits from [ControllableEntity](/vext/ref/client/type/controllableentity)
 | ---- | ---- | ----------- |
 | **other** | [GameEntity](/vext/ref/client/type/gameentity) |  |
 
-### SoldierEntity {#constructor-3}
+### SoldierEntity {#constructor-4}
 
 > **SoldierEntity**(other: [PhysicsEntity](/vext/ref/client/type/physicsentity))
 
@@ -103,7 +114,7 @@ Inherits from [ControllableEntity](/vext/ref/client/type/controllableentity)
 | ---- | ---- | ----------- |
 | **other** | [PhysicsEntity](/vext/ref/client/type/physicsentity) |  |
 
-### SoldierEntity {#constructor-4}
+### SoldierEntity {#constructor-5}
 
 > **SoldierEntity**(other: [ControllableEntity](/vext/ref/client/type/controllableentity))
 
