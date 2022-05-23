@@ -18,7 +18,6 @@ title: Vec2
 | ---- | ---- |
 | {{< prop "x" >}} | float |
 | {{< prop "y" >}} | float |
-| {{< prop "z" >}} | float |
 | {{< prop "magnitude" true >}} | float |
 
 ### Methods
@@ -89,10 +88,6 @@ title: Vec2
 > **float**
 
 ### {{% prop-heading "y" %}}
-
-> **float**
-
-### {{% prop-heading "z" %}}
 
 > **float**
 

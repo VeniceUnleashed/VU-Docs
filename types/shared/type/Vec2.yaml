@@ -19,8 +19,6 @@ properties:
     type: float
   y:
     type: float
-  z:
-    type: float
   magnitude:
     type: float
     readOnly: true
