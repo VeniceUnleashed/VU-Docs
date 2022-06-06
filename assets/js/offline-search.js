@@ -75,25 +75,48 @@
       maxPatternLength: 32,
       minMatchCharLength: 2,
       keys: [
-        "p",
-        "m",
-        "v",
-      ],
+        "n",    // type name
+        "p",    // property
+        "m",    // method
+        "v",    // enum (value)
+      ]
     };
 
     var fuse = new Fuse(data, options);
-    var results = fuse.search(query, { limit: 30 });
+    var results = fuse.search(query, { limit: 1000 });
 
     let resultCount = 0;
 
     for (const result of results) {
+      const $mainRef = $('<a>').attr('href', '/' + result.item.id).text(result.item.n);
+      const $resultTitle = $('<strong>').append($mainRef).append($('<span>').addClass('result-ctx').addClass(result.item.c));
+      const $resultText = $('<span>');
+
+      if (result.matches.length === 1 && result.matches[0].key === 'n') {
+        $resultText.append($mainRef.clone())
+        continue;
+      }
+
+      let matchCount = 0
+      
       for (const match of result.matches) {
         if (match.value.toLowerCase().indexOf(query) === -1) {
           continue;
         }
 
-        let matchText = result.item.n;
+        if (match.key === 'n') {
+          continue;
+        }
+
         let matchUrl = '/' + result.item.id;
+
+        if (++matchCount > 5) {
+          const $ellipsis = $('<a>').attr('href', matchUrl).text("• • •").addClass('result-ellipsis');
+          $resultText.append($ellipsis)
+          break;
+        }
+
+        let matchText = result.item.n;
 
         if (match.key === 'p') {
           matchText += '.';
@@ -107,17 +130,14 @@
 
         matchText += match.value;
 
-        const $resultTitle = $('<strong>');
-        const $resultText = $('<span>');
-
-        $resultTitle.append($('<a>').attr('href', '/' + result.item.id).text(result.item.n)).append($('<span>').addClass('result-ctx').addClass(result.item.c));
-        $resultText.append($('<a>').attr('href', matchUrl).text(matchText));
-
-        const $apiResult = $('<div>').addClass('api-result').append($resultTitle).append($resultText);
-
-        $apiResults.append($apiResult);
-        ++resultCount;
+        const $matchText = $('<div>').append($('<a>').attr('href', matchUrl).text(matchText));
+        $resultText.append($matchText);
       }
+
+      const $apiResult = $('<div>').addClass('api-result').append($resultTitle).append($resultText);
+      $apiResults.append($apiResult);
+
+      ++resultCount;
     }
 
     return resultCount;
