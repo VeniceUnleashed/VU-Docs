@@ -88,53 +88,54 @@
     let resultCount = 0;
 
     for (const result of results) {
-      const $mainRef = $('<a>').attr('href', '/' + result.item.id).text(result.item.n);
-      const $resultTitle = $('<strong>').append($mainRef).append($('<span>').addClass('result-ctx').addClass(result.item.c));
-      const $resultText = $('<span>');
+      const $resultBaseRef = $('<a>').attr('href', '/' + result.item.id).text(result.item.n);
+      const $resultTitle = $('<strong>').append($resultBaseRef).append($('<span>').addClass('result-ctx').addClass(result.item.c));
+      const $resultList = $('<ul>');
 
-      if (result.matches.length === 1 && result.matches[0].key === 'n') {
-        $resultText.append($mainRef.clone())
-        continue;
+      const onlyTypeMatched = result.matches.length === 1 && result.matches[0].key === 'n';
+
+      if (!onlyTypeMatched) {
+        let matchCount = 0;
+        
+        for (const match of result.matches) {
+          if (match.value.toLowerCase().indexOf(query) === -1) {
+            continue;
+          }
+
+          if (match.key === 'n') {
+            continue;
+          }
+
+          let matchUrl = '/' + result.item.id;
+
+          if (++matchCount > 5) {
+            const $ellipsis = $('<a>').attr('href', matchUrl).text("• • •").addClass('result-ellipsis');
+            $resultList.append($ellipsis);
+            break;
+          }
+
+          let matchText = result.item.n;
+
+          if (match.key === 'p') {
+            matchText += '.';
+            matchUrl += '#' + match.value.toLowerCase();
+          } else if (match.key === 'm') {
+            matchText += ':';
+            matchUrl += '#' + match.value.toLowerCase();
+          } else if (match.key === 'v') {
+            matchText += '.';
+          }
+
+          matchText += match.value;
+
+          const $matchText = $('<li>').append($('<a>').attr('href', matchUrl).text(matchText));
+          $resultList.append($matchText);
+        }
+      } else {
+        $resultList.append($('<li>').append($resultBaseRef.clone()));
       }
 
-      let matchCount = 0
-      
-      for (const match of result.matches) {
-        if (match.value.toLowerCase().indexOf(query) === -1) {
-          continue;
-        }
-
-        if (match.key === 'n') {
-          continue;
-        }
-
-        let matchUrl = '/' + result.item.id;
-
-        if (++matchCount > 5) {
-          const $ellipsis = $('<a>').attr('href', matchUrl).text("• • •").addClass('result-ellipsis');
-          $resultText.append($ellipsis)
-          break;
-        }
-
-        let matchText = result.item.n;
-
-        if (match.key === 'p') {
-          matchText += '.';
-          matchUrl += '#' + match.value.toLowerCase();
-        } else if (match.key === 'm') {
-          matchText += ':';
-          matchUrl += '#' + match.value.toLowerCase();
-        } else if (match.key === 'v') {
-          matchText += '.';
-        }
-
-        matchText += match.value;
-
-        const $matchText = $('<div>').append($('<a>').attr('href', matchUrl).text(matchText));
-        $resultText.append($matchText);
-      }
-
-      const $apiResult = $('<div>').addClass('api-result').append($resultTitle).append($resultText);
+      const $apiResult = $('<div>').addClass('api-result').append($resultTitle).append($resultList);
       $apiResults.append($apiResult);
 
       ++resultCount;
