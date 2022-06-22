@@ -94,9 +94,7 @@
 
       const onlyTypeMatched = result.matches.length === 1 && result.matches[0].key === 'n';
 
-      if (!onlyTypeMatched) {
-        let matchCount = 0;
-        
+      if (!onlyTypeMatched) {   
         for (const match of result.matches) {
           if (match.value.toLowerCase().indexOf(query) === -1) {
             continue;
@@ -107,13 +105,6 @@
           }
 
           let matchUrl = '/' + result.item.id;
-
-          if (++matchCount > 5) {
-            const $ellipsis = $('<a>').attr('href', matchUrl).text("• • •").addClass('result-ellipsis');
-            $resultList.append($ellipsis);
-            break;
-          }
-
           let matchText = result.item.n;
 
           if (match.key === 'p') {
