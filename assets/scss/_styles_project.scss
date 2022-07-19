@@ -12,6 +12,11 @@
   strong {
     display: block;
   }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
 }
 
 #search-status {

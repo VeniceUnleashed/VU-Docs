@@ -75,49 +75,61 @@
       maxPatternLength: 32,
       minMatchCharLength: 2,
       keys: [
-        "p",
-        "m",
-        "v",
-      ],
+        "n",    // type name
+        "p",    // property
+        "m",    // method
+        "v",    // enum (value)
+      ]
     };
 
     var fuse = new Fuse(data, options);
-    var results = fuse.search(query, { limit: 30 });
+    var results = fuse.search(query, { limit: 1000 });
 
     let resultCount = 0;
 
     for (const result of results) {
-      for (const match of result.matches) {
-        if (match.value.toLowerCase().indexOf(query) === -1) {
-          continue;
+      const $resultBaseRef = $('<a>').attr('href', '/' + result.item.id).text(result.item.n);
+      const $resultTitle = $('<strong>').append($resultBaseRef).append($('<span>').addClass('result-ctx').addClass(result.item.c));
+      const $resultList = $('<ul>');
+
+      const onlyTypeMatched = result.matches.length === 1 && result.matches[0].key === 'n';
+
+      if (!onlyTypeMatched) {   
+        for (const match of result.matches) {
+          if (match.value.toLowerCase().indexOf(query) === -1) {
+            continue;
+          }
+
+          if (match.key === 'n') {
+            continue;
+          }
+
+          let matchUrl = '/' + result.item.id;
+          let matchText = result.item.n;
+
+          if (match.key === 'p') {
+            matchText += '.';
+            matchUrl += '#' + match.value.toLowerCase();
+          } else if (match.key === 'm') {
+            matchText += ':';
+            matchUrl += '#' + match.value.toLowerCase();
+          } else if (match.key === 'v') {
+            matchText += '.';
+          }
+
+          matchText += match.value;
+
+          const $matchText = $('<li>').append($('<a>').attr('href', matchUrl).text(matchText));
+          $resultList.append($matchText);
         }
-
-        let matchText = result.item.n;
-        let matchUrl = '/' + result.item.id;
-
-        if (match.key === 'p') {
-          matchText += '.';
-          matchUrl += '#' + match.value.toLowerCase();
-        } else if (match.key === 'm') {
-          matchText += ':';
-          matchUrl += '#' + match.value.toLowerCase();
-        } else if (match.key === 'v') {
-          matchText += '.';
-        }
-
-        matchText += match.value;
-
-        const $resultTitle = $('<strong>');
-        const $resultText = $('<span>');
-
-        $resultTitle.append($('<a>').attr('href', '/' + result.item.id).text(result.item.n)).append($('<span>').addClass('result-ctx').addClass(result.item.c));
-        $resultText.append($('<a>').attr('href', matchUrl).text(matchText));
-
-        const $apiResult = $('<div>').addClass('api-result').append($resultTitle).append($resultText);
-
-        $apiResults.append($apiResult);
-        ++resultCount;
+      } else {
+        $resultList.append($('<li>').append($resultBaseRef.clone()));
       }
+
+      const $apiResult = $('<div>').addClass('api-result').append($resultTitle).append($resultList);
+      $apiResults.append($apiResult);
+
+      ++resultCount;
     }
 
     return resultCount;
