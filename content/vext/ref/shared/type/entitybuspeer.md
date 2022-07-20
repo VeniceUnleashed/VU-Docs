@@ -35,6 +35,9 @@ title: EntityBusPeer
 | **[RegisterDestroyCallback](#registerdestroycallback)**(callback: callable) | int |
 | **[RegisterDestroyCallback](#registerdestroycallback-1)**(context: any, callback: callable) | int |
 | **[UnregisterDestroyCallback](#unregisterdestroycallback)**(handle: int) | void |
+| **[RegisterPropertyChangedCallback](#registerpropertychangedcallback)**(callback: callable) | int |
+| **[RegisterPropertyChangedCallback](#registerpropertychangedcallback-1)**(context: any, callback: callable) | int |
+| **[UnregisterPropertyChangedCallback](#unregisterpropertychangedcallback)**(handle: int) | void |
 
 ### Operators
 
@@ -282,6 +285,49 @@ title: EntityBusPeer
 ### UnregisterDestroyCallback {#unregisterdestroycallback}
 
 > **UnregisterDestroyCallback**(handle: int)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **handle** | int |  |
+
+### RegisterPropertyChangedCallback {#registerpropertychangedcallback}
+
+> **RegisterPropertyChangedCallback**(callback: callable): int
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **callback** | callable | A callback in the form `function(peer: Entity | Component, propertyName: string): bool`. |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **int** |  |
+
+### RegisterPropertyChangedCallback {#registerpropertychangedcallback-1}
+
+> **RegisterPropertyChangedCallback**(context: any, callback: callable): int
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **context** | any | A context value to pass to the callback. |
+| **callback** | callable | A callback in the form `function(context: any, peer: Entity | Component, propertyName: string): bool`. |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **int** |  |
+
+### UnregisterPropertyChangedCallback {#unregisterpropertychangedcallback}
+
+> **UnregisterPropertyChangedCallback**(handle: int)
 
 #### Parameters
 
