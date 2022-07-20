@@ -140,6 +140,30 @@ methods:
     params:
       handle:
         type: int
+  -
+    name: RegisterPropertyChangedCallback
+    params:
+      callback:
+        type: callable
+        description: "A callback in the form `function(peer: Entity | Component, propertyName: string): bool`."
+    returns:
+      type: int
+  -
+    name: RegisterPropertyChangedCallback
+    params:
+      context:
+        type: any
+        description: A context value to pass to the callback.
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, peer: Entity | Component, propertyName: string): bool`."
+    returns:
+      type: int
+  -
+    name: UnregisterPropertyChangedCallback
+    params:
+      handle:
+        type: int
 
 operators:
   -

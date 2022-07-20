@@ -3,7 +3,14 @@ title: Changelog
 weight: 1
 ---
 
-{{% changeset-vext "1.8.0" "02/05/2022" true %}}
+{{% changeset-vext "1.8.1" "29/05/2022" %}}
+- Fix issues caused by passing `nil` where VEXT would instead expect a callback.
+- Fix `Player:SetSquadLeader` not firing on the client when a player is removed.
+- Fix `Player:SetSquadLeader` firing for the wrong player when using `squad.leader` RCON command.
+- Fix a few issues with the implementation of `MathUtils:GetYPRFromULF` and `MathUtils:GetTransformFromYPR`.
+- Introduces the [RegisterPropertyChangedCallback](/vext/ref/shared/type/entitybuspeer/#registerpropertychangedcallback) and [UnregisterPropertyChangedCallback](/vext/ref/shared/type/entitybuspeer/#unregisterpropertychangedcallback) to the [EntityBusPeer](/vext/ref/shared/type/entitybuspeer) type.
+
+{{% changeset-vext "1.8.0" "02/05/2022" %}}
 - Adds initial support for components:
   - Introduces a new [EntityBusPeer](/vext/ref/shared/type/entitybuspeer) shared type.
   - Adjusts the shared [Entity](/vext/ref/shared/type/entity) type to derive from [EntityBusPeer](/vext/ref/shared/type/entitybuspeer).

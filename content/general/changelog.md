@@ -6,11 +6,28 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
-{{% changeset 18675 "03/05/2022" true %}}
+{{% changeset 18896 "20/07/2022" %}}
+- Fix an issue where starting VU launches the process but it gets stuck in Task Manager when Citrix is installed.
+- Fix VU crashing when unplugging an audio device.
+- Fix VU crashing shortly after startup when an audio device gets in an invalid state.
+- Fix sorting servers by player count.
+- Server tags in the server filters window are now sorted.
+
+{{% changeset 18848 "29/05/2022" %}}
+- Fix various issues caused by handling invalid entities.
+- Fix VU mod memory usage reporting.
+- Improve reliability of raycast methods.
+- VeniceEXT was updated to `1.8.1` ([changelog](/vext/changelog/#1_8_1)).
+
+{{% changeset 18675 "03/05/2022" %}}
 - Fix an issue where frostbite type array operations would sometimes cause memory corruption or UB.
 - Fix a crash when [Player:AttachSoldier](/vext/ref/server/type/player/#attachsoldier) was called during certain update passes.
 
-{{% changeset 18616 "02/05/2022" true %}}
+{{% changeset 18675 "03/05/2022" %}}
+- Fix an issue where frostbite type array operations would sometimes cause memory corruption or UB.
+- Fix a crash when [Player:AttachSoldier](/vext/ref/server/type/player/#attachsoldier) was called during certain update passes.
+
+{{% changeset 18616 "02/05/2022" %}}
 - The [VU Main Menu](https://github.com/EmulatorNexus/Fusion-UI) and the [Built-in Mod](https://github.com/EmulatorNexus/VU-BuiltIn) are now open source and open to contribution.
 - Allow development of the built-in mod when `-vextdebug` is defined (see mod readme).
 - Expose mod settings api to main menu UI (`state.settings.modSettings` and relevant `SetModSettingX` calls).
