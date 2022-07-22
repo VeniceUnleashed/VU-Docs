@@ -13,6 +13,7 @@ Below you can find a full list of changes to VU, corresponding to every VU updat
 - Improve reliability of crash reporting.
 - Fix several crashes related to audio devices.
 - Fix several crashes related to poor network conditions / anti-DDoS environments.
+- On supported configurations, the computer will now assign VU the high performance GPU.
 
 {{% changeset 18896 "20/07/2022" %}}
 - Fix an issue where starting VU launches the process but it gets stuck in Task Manager when Citrix is installed.
