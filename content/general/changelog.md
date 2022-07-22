@@ -6,6 +6,14 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 18991 "22/07/2022" %}}
+- Improve unicode compatibility across the board. Updates may still fail for installations in paths with unicode characters.
+- Make command-line options case-insensitive.
+- Add support for generating full memory dumps on crash by using the `-fulldump` command-line option. When this is enabled, the crash dialog will show the upload as having failed.
+- Improve reliability of crash reporting.
+- Fix several crashes related to audio devices.
+- Fix several crashes related to poor network conditions / anti-DDoS environments.
+
 {{% changeset 18896 "20/07/2022" %}}
 - Fix an issue where starting VU launches the process but it gets stuck in Task Manager when Citrix is installed.
 - Fix VU crashing when unplugging an audio device.
