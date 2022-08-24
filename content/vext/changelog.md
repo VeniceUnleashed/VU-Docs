@@ -3,6 +3,9 @@ title: Changelog
 weight: 1
 ---
 
+{{% changeset-vext "1.9.0" "24/08/2022" %}}
+- Introduces [zoomLevel](/vext/ref/shared/type/entryinput/#zoomlevel) property to [EntryInput](/vext/ref/shared/type/entryinput) type.
+
 {{% changeset-vext "1.8.1" "29/05/2022" %}}
 - Fix issues caused by passing `nil` where VEXT would instead expect a callback.
 - Fix `Player:SetSquadLeader` not firing on the client when a player is removed.
