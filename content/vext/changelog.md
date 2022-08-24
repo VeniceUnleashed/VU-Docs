@@ -3,7 +3,7 @@ title: Changelog
 weight: 1
 ---
 
-{{% changeset-vext "1.9.0" "24/08/2022" %}}
+{{% changeset-vext "1.9.0" "24/08/2022" true %}}
 - Introduces [zoomLevel](/vext/ref/shared/type/entryinput/#zoomlevel) property to [EntryInput](/vext/ref/shared/type/entryinput) type.
 
 {{% changeset-vext "1.8.1" "29/05/2022" %}}
