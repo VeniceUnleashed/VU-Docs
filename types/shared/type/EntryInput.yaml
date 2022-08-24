@@ -21,6 +21,8 @@ properties:
     type: Vec3
   flags:
     type: EntryInputFlags
+  zoomLevel:
+    type: int
 
 methods:
   -
