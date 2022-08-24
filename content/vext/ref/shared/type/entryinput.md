@@ -22,6 +22,7 @@ title: EntryInput
 | {{< prop "authoritativeMovementPosition" >}} | [Vec3](/vext/ref/shared/type/vec3) |
 | {{< prop "authoritativeMovementVelocity" >}} | [Vec3](/vext/ref/shared/type/vec3) |
 | {{< prop "flags" >}} | [EntryInputFlags](/vext/ref/shared/type/entryinputflags) |
+| {{< prop "zoomLevel" >}} | int |
 
 ### Methods
 
@@ -69,6 +70,10 @@ title: EntryInput
 ### {{% prop-heading "flags" %}}
 
 > **[EntryInputFlags](/vext/ref/shared/type/entryinputflags)**
+
+### {{% prop-heading "zoomLevel" %}}
+
+> **int**
 
 ## Methods
 
