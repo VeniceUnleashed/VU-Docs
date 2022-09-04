@@ -1202,6 +1202,7 @@ Inheritance tree: [Entity](#entity)
 | `NextOut` |  |  |
 | `In` |  |  |
 | `Reset` |  |  |
+| `PreviousOut` |  |  |
 
 
 ## FloatEntity
