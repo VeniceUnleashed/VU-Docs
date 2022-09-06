@@ -3,8 +3,12 @@ title: Changelog
 weight: 1
 ---
 
-{{% changeset-vext "1.9.0" "24/08/2022" true %}}
+{{% changeset-vext "1.9.0" "06/09/2022" %}}
 - Introduces [zoomLevel](/vext/ref/shared/type/entryinput/#zoomlevel) property to [EntryInput](/vext/ref/shared/type/entryinput) type.
+- [Player:RequestJoin](/vext/ref/server/hook/player_requestjoin) allows now to return the [HookContext](/vext/ref/shared/type/hookcontext) with a string. The rejected user will receive that string.
+- Introduces [isSupportedShooting](/vext/ref/shared/type/gunsway/#issupportedshooting) property to [GunSway](/vext/ref/shared/type/gunsway) type.
+- Introduces [weaponLightEnabled](/vext/ref/shared/type/gunsway/#issupportedshooting) property to [GunSway](/vext/ref/shared/type/gunsway) type.
+- Introduces [modifierData](/vext/ref/shared/type/gunsway/#modifierData) property to [GunSway](/vext/ref/shared/type/gunsway) type.
 
 {{% changeset-vext "1.8.1" "29/05/2022" %}}
 - Fix issues caused by passing `nil` where VEXT would instead expect a callback.

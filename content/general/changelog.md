@@ -6,8 +6,9 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
-{{% changeset 19042 "24/08/2022" true %}}
+{{% changeset 19072 "06/09/2022" %}}
 - VeniceEXT was updated to `1.9.0` ([changelog](/vext/changelog/#1_9_0)).
+- Fix joining password-protected servers via launch-arguments.
 
 {{% changeset 19002 "22/07/2022" %}}
 - Fix an issue where downloaded mod files wouldn't be saved to disk.
