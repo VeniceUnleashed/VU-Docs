@@ -9,6 +9,7 @@ title: GunSway
 | Name | Type |
 | ---- | ---- |
 | {{< prop "data" >}} | [DataContainer](/vext/ref/shared/type/datacontainer) \| nil |
+| {{< prop "modifierData" true >}} | [DataContainer](/vext/ref/shared/type/datacontainer){} |
 | {{< prop "cameraRecoilTransform" >}} | [LinearTransform](/vext/ref/shared/type/lineartransform) |
 | {{< prop "currentRecoilDeviation" >}} | [GunSwayDeviation](/vext/ref/shared/type/gunswaydeviation) |
 | {{< prop "currentLagDeviation" >}} | [GunSwayDeviation](/vext/ref/shared/type/gunswaydeviation) |
@@ -29,12 +30,18 @@ title: GunSway
 | {{< prop "isFiring" >}} | bool |
 | {{< prop "isJumping" >}} | bool |
 | {{< prop "isMoving" >}} | bool |
+| {{< prop "isSupportedShooting" true >}} | bool |
+| {{< prop "weaponLightEnabled" true >}} | bool |
 
 ## Properties
 
 ### {{% prop-heading "data" %}}
 
 > **[DataContainer](/vext/ref/shared/type/datacontainer)** \| **nil**
+
+### {{% prop-heading "modifierData" true %}}
+
+> **[DataContainer](/vext/ref/shared/type/datacontainer)**{}
 
 ### {{% prop-heading "cameraRecoilTransform" %}}
 
@@ -113,6 +120,14 @@ title: GunSway
 > **bool**
 
 ### {{% prop-heading "isMoving" %}}
+
+> **bool**
+
+### {{% prop-heading "isSupportedShooting" true %}}
+
+> **bool**
+
+### {{% prop-heading "weaponLightEnabled" true %}}
 
 > **bool**
 

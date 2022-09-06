@@ -5,6 +5,10 @@ properties:
   data:
     type: DataContainer
     nullable: true
+  modifierData:
+    type: DataContainer
+    table: true
+    readOnly: true
   cameraRecoilTransform:
     type: LinearTransform
   currentRecoilDeviation:
@@ -45,3 +49,9 @@ properties:
     type: bool
   isMoving:
     type: bool
+  isSupportedShooting:
+    type: bool
+    readOnly: true
+  weaponLightEnabled:
+    type: bool
+    readOnly: true
