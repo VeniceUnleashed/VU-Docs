@@ -49,6 +49,10 @@ properties:
     type: SquadId
   isAllowedToSpawn:
     type: bool
+    description: Describes if this player is allowed to spawn.
+  isAllowedToSpawnOn:
+    type: bool
+    description: Describes if other players are allowed to spawn on this player.
   selectedKit:
     type: DataContainer
     nullable: true

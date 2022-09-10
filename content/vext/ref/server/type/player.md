@@ -24,6 +24,7 @@ title: Player
 | {{< prop "teamId" >}} | [TeamId](/vext/ref/fb/teamid) |
 | {{< prop "squadId" >}} | [SquadId](/vext/ref/fb/squadid) |
 | {{< prop "isAllowedToSpawn" >}} | bool |
+| {{< prop "isAllowedToSpawnOn" >}} | bool |
 | {{< prop "selectedKit" >}} | [DataContainer](/vext/ref/shared/type/datacontainer) \| nil |
 | {{< prop "score" true >}} | int |
 | {{< prop "kills" true >}} | int |
@@ -141,6 +142,14 @@ Always false for non squad leaders.
 ### {{% prop-heading "isAllowedToSpawn" %}}
 
 > **bool**
+
+Describes if this player is allowed to spawn.
+
+### {{% prop-heading "isAllowedToSpawnOn" %}}
+
+> **bool**
+
+Describes if other players are allowed to spawn on this player.
 
 ### {{% prop-heading "selectedKit" %}}
 
