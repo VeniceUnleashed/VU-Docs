@@ -59,3 +59,8 @@ methods:
         type: string
         description: The password to use when trying to connect to a password-protected server.
         default: '""'
+  -
+    name: SetSquadAutoJoining
+    params:
+      shouldJoinSquad:
+        type: bool

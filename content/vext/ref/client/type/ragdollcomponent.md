@@ -2,13 +2,9 @@
 title: RagdollComponent
 ---
 
+Inherits from [Component](/vext/ref/shared/type/component)
+
 ## Summary
-
-### Properties
-
-| Name | Type |
-| ---- | ---- |
-| {{< prop "data" true >}} | [DataContainer](/vext/ref/shared/type/datacontainer) \| nil |
 
 ### Methods
 
@@ -30,12 +26,6 @@ title: RagdollComponent
 | **[SetActiveLocalTransform](#setactivelocaltransform)**(boneId: int, transform: [QuatTransform](/vext/ref/shared/type/quattransform)) | void |
 | **[GetBoneVelocity](#getbonevelocity)**(boneId: int) | [QuatTransform](/vext/ref/shared/type/quattransform) \| nil |
 | **[SetBoneVelocity](#setbonevelocity)**(boneId: int, transform: [QuatTransform](/vext/ref/shared/type/quattransform)) | void |
-
-## Properties
-
-### {{% prop-heading "data" true %}}
-
-> **[DataContainer](/vext/ref/shared/type/datacontainer)** \| **nil**
 
 ## Methods
 

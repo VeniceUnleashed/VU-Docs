@@ -15,6 +15,7 @@ title: ClientUtils
 | **[PopScreen](#popscreen)**(graphAsset: [DataContainer](/vext/ref/shared/type/datacontainer), screensToPop: int) | bool |
 | **[ConnectToServer](#connecttoserver)**(serverGuid: [Guid](/vext/ref/shared/type/guid), password: string = "") | void |
 | **[SpectateServer](#spectateserver)**(serverGuid: [Guid](/vext/ref/shared/type/guid), password: string = "") | void |
+| **[SetSquadAutoJoining](#setsquadautojoining)**(shouldJoinSquad: bool) | void |
 
 ## Methods
 
@@ -108,4 +109,14 @@ title: ClientUtils
 | ---- | ---- | ----------- |
 | **serverGuid** | [Guid](/vext/ref/shared/type/guid) | The GUID of the server to connect to as a spectator. |
 | **password** | string | The password to use when trying to connect to a password-protected server. |
+
+### SetSquadAutoJoining {#setsquadautojoining}
+
+> **SetSquadAutoJoining**(shouldJoinSquad: bool)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **shouldJoinSquad** | bool |  |
 

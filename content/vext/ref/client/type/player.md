@@ -30,6 +30,7 @@ title: Player
 | {{< prop "selectedUnlocks" true >}} | [DataContainer](/vext/ref/shared/type/datacontainer){} |
 | {{< prop "ping" true >}} | int |
 | {{< prop "isSquadPrivate" true >}} | bool |
+| {{< prop "isAllowedToSpawnOn" >}} | bool |
 
 ### Methods
 
@@ -140,6 +141,12 @@ The players ping to the server.
 > **bool**
 
 Always false for non squad leaders.
+
+### {{% prop-heading "isAllowedToSpawnOn" %}}
+
+> **bool**
+
+Describes if the local player is allowed to spawn on this other player.
 
 ## Methods
 

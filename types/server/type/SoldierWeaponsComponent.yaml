@@ -1,5 +1,6 @@
 name: SoldierWeaponsComponent
 type: class
+inherits: Component
 
 properties:
   isZooming:

@@ -6,3 +6,5 @@ params:
     type: Player
   squad:
     type: SquadId
+  oldSquad:
+    type: SquadId

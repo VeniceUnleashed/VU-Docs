@@ -1,0 +1,19 @@
+name: "ScoringSystem:StatEvent"
+type: event
+
+params:
+  player:
+    type: Player
+  objectPlayer:
+    type: Player
+    nullable: true
+  statEvent:
+    type: StatEvent
+  paramX:
+    type: DataContainer
+    nullable: true
+  paramY:
+    type: DataContainer
+    nullable: true
+  value:
+    type: float

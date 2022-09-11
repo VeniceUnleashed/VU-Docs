@@ -2,6 +2,8 @@
 title: SoldierWeaponsComponent
 ---
 
+Inherits from [Component](/vext/ref/shared/type/component)
+
 ## Summary
 
 ### Properties

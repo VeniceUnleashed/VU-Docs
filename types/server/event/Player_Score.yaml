@@ -1,0 +1,10 @@
+name: "Player:Score"
+type: event
+
+params:
+  player:
+    type: Player
+  scoringTypeData:
+    type: DataContainer
+  score:
+    type: int

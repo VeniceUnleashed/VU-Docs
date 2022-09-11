@@ -3,6 +3,24 @@ title: Changelog
 weight: 1
 ---
 
+{{% changeset-vext "1.10.0" "11/09/2022" true %}}
+- Introduces [isAllowedToSpawnOn](/vext/ref/client/type/player/#isallowedtospawnon) property to [Player](/vext/ref/client/type/player) client type.
+- Introduces [isAllowedToSpawnOn](/vext/ref/server/type/player/#isallowedtospawnon) property to [Player](/vext/ref/server/type/player) server type.
+- [RagdollComponent](/vext/ref/client/type/ragdollcomponent) now inherits from [Component](/vext/ref/shared/type/component).
+- [SoldierWeaponsComponent](/vext/ref/client/type/soldierweaponscomponent) (Client) now inherits from [Component](/vext/ref/shared/type/component).
+- [SoldierWeaponsComponent](/vext/ref/server/type/soldierweaponscomponent) (Server) now inherits from [Component](/vext/ref/shared/type/component).
+- Fix [ControllableEntity:GetPlayerInEntry](/vext/ref/client/type/controllableentity/#getplayerinentry) not returning the player on the client.
+- Improve availablitity of [SoldierEntity.player](/vext/ref/client/type/soldierentity/#player) on the client.
+- Improve availablitity of [SoldierEntity.player](/vext/ref/server/type/soldierentity/#player) on the server.
+- Add another [SelectUnlockAssets](/vext/ref/server/type/player/#selectunlockassets-1) method that allows additional specification.
+- Add [oldSquad](/vext/ref/client/event/player_squadchange/#oldsquad) parameter to [Player:SquadChange](/vext/ref/client/event/player_squadchange) client event.
+- Add [oldSquad](/vext/ref/server/event/player_squadchange/#oldsquad) parameter to [Player:SquadChange](/vext/ref/server/event/player_squadchange) server event.
+- Introduces [ResourceManager:ClearCompartment](/vext/ref/shared/event/resourcemanager_clearcompartment) shared event.
+- Introduces [ScoringSystem:StatEvent](/vext/ref/server/event/scoringsystem_statevent) server event.
+- Introduces [Player:Score](/vext/ref/server/event/player_score) server event.
+- Introduces [ClientUtils:SetSquadAutoJoining](/vext/ref/client/library/clientutils/#setsquadautojoining) client method.
+- Add `vars.maxSpectators` RCON command.
+
 {{% changeset-vext "1.9.0" "06/09/2022" %}}
 - Introduces [zoomLevel](/vext/ref/shared/type/entryinput/#zoomlevel) property to [EntryInput](/vext/ref/shared/type/entryinput) type.
 - [Player:RequestJoin](/vext/ref/server/hook/player_requestjoin) allows now to return the [HookContext](/vext/ref/shared/type/hookcontext) with a string. The rejected user will receive that string.

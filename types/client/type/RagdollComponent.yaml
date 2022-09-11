@@ -1,11 +1,6 @@
 name: RagdollComponent
 type: class
-
-properties:
-  data:
-    type: DataContainer
-    readOnly: true
-    nullable: true
+inherits: Component
 
 methods:
   -
