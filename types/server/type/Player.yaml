@@ -201,6 +201,17 @@ methods:
         type: DataContainer
         table: true
   -
+    name: SelectUnlockAssets
+    params:
+      characterCustomizationAsset:
+        type: DataContainer
+      visualUnlockAssets:
+        type: DataContainer
+        table: true
+      miscUnlockAssets:
+        type: DataContainer
+        table: true
+  -
     name: CreateSoldier
     params:
       soldierBlueprint:

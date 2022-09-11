@@ -60,6 +60,7 @@ title: Player
 | **[Spawn](#spawn)**(spawnPoint: [Entity](/vext/ref/shared/type/entity), checkSpawnArea: bool) | bool |
 | **[SelectWeapon](#selectweapon)**(slot: [WeaponSlot](/vext/ref/fb/weaponslot), weaponUnlockAsset: [DataContainer](/vext/ref/shared/type/datacontainer), unlockAssets: [DataContainer](/vext/ref/shared/type/datacontainer){}) | void |
 | **[SelectUnlockAssets](#selectunlockassets)**(characterCustomizationAsset: [DataContainer](/vext/ref/shared/type/datacontainer), visualUnlockAssets: [DataContainer](/vext/ref/shared/type/datacontainer){}) | void |
+| **[SelectUnlockAssets](#selectunlockassets-1)**(characterCustomizationAsset: [DataContainer](/vext/ref/shared/type/datacontainer), visualUnlockAssets: [DataContainer](/vext/ref/shared/type/datacontainer){}, miscUnlockAssets: [DataContainer](/vext/ref/shared/type/datacontainer){}) | void |
 | **[CreateSoldier](#createsoldier)**(soldierBlueprint: [DataContainer](/vext/ref/shared/type/datacontainer), transform: [LinearTransform](/vext/ref/shared/type/lineartransform)) | [SoldierEntity](/vext/ref/server/type/soldierentity) \| nil |
 | **[SpawnSoldierAt](#spawnsoldierat)**(soldier: [SoldierEntity](/vext/ref/server/type/soldierentity), transform: [LinearTransform](/vext/ref/shared/type/lineartransform), pose: [CharacterPoseType](/vext/ref/fb/characterposetype)) | void |
 | **[SetSquadLeader](#setsquadleader)**(leader: bool, squadPrivate: bool) | void |
@@ -375,6 +376,18 @@ An array containing tables of equipped unlocks ([UnlockAssetBase](/vext/ref/fb/u
 | ---- | ---- | ----------- |
 | **characterCustomizationAsset** | [DataContainer](/vext/ref/shared/type/datacontainer) |  |
 | **visualUnlockAssets** | [DataContainer](/vext/ref/shared/type/datacontainer){} |  |
+
+### SelectUnlockAssets {#selectunlockassets-1}
+
+> **SelectUnlockAssets**(characterCustomizationAsset: [DataContainer](/vext/ref/shared/type/datacontainer), visualUnlockAssets: [DataContainer](/vext/ref/shared/type/datacontainer){}, miscUnlockAssets: [DataContainer](/vext/ref/shared/type/datacontainer){})
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **characterCustomizationAsset** | [DataContainer](/vext/ref/shared/type/datacontainer) |  |
+| **visualUnlockAssets** | [DataContainer](/vext/ref/shared/type/datacontainer){} |  |
+| **miscUnlockAssets** | [DataContainer](/vext/ref/shared/type/datacontainer){} |  |
 
 ### CreateSoldier {#createsoldier}
 
