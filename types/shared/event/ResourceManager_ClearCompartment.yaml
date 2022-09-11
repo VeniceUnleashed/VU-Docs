@@ -1,0 +1,6 @@
+name: "ResourceManager:ClearCompartment"
+type: event
+
+params:
+  compartment:
+    type: ResourceCompartment
