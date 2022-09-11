@@ -8,7 +8,7 @@ Below you can find a full list of changes to VU, corresponding to every VU updat
 
 {{% changeset 19412 "11/09/2022" true %}}
 - VeniceEXT was updated to `1.10.0` ([changelog](/vext/changelog/#1_10_0)).
-- Implementation of the ModSettings UI.
+- Add initial support for adjusting mod settings from the VU settings menu.
 
 {{% changeset 19072 "06/09/2022" %}}
 - VeniceEXT was updated to `1.9.0` ([changelog](/vext/changelog/#1_9_0)).
