@@ -15,7 +15,7 @@ title: AimingSimulation
 | {{< prop "pitch" >}} | float |
 | {{< prop "aimYawTimer" >}} | float |
 | {{< prop "aimPitchTimer" >}} | float |
-| {{< prop "zoomTransitionTime" >}} | float |
+| {{< prop "zoomTransitionTimer" >}} | float |
 | {{< prop "fovMultiplier" >}} | float |
 | {{< prop "fovTransitionTimer" >}} | float |
 | {{< prop "fadeTimer" >}} | float |
@@ -59,7 +59,7 @@ title: AimingSimulation
 
 > **float**
 
-### {{% prop-heading "zoomTransitionTime" %}}
+### {{% prop-heading "zoomTransitionTimer" %}}
 
 > **float**
 

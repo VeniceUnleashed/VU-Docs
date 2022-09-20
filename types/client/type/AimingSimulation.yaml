@@ -19,7 +19,7 @@ properties:
     type: float
   aimPitchTimer:
     type: float
-  zoomTransitionTime:
+  zoomTransitionTimer:
     type: float
   fovMultiplier:
     type: float
