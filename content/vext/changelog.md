@@ -3,7 +3,37 @@ title: Changelog
 weight: 1
 ---
 
-{{% changeset-vext "1.10.0" "11/09/2022" true %}}
+{{% changeset-vext "1.11.0" "08/10/2022" true %}}
+- Introduces [TicketCounterEntity](/vext/ref/server/type/ticketcounterentity) on the server.
+- Introduces [VisualEnvironmentEntity](/vext/ref/client/type/visualenvironmententity) on the client.
+- Add [==](/vext/ref/client/type/visualenvironmentstate/#op-eq) operator to [VisualEnvironmentState](/vext/ref/client/type/visualenvironmentstate).
+- Introduces [Client:AimTargetChanged](/vext/ref/client/event/client_aimtargetchanged) on the client.
+- Add `spawnEntity` parameter to [Player:SpawnOnSelectedSpawnPoint](/vext/ref/server/event/player_spawnonselectedspawnpoint) server event.
+- [Guid:ToString](/vext/ref/shared/type/guid/#tostring) does work without parameters as well now.
+- Fix an issue with `Level:Loaded` on the server ([#745](https://github.com/EmulatorNexus/VeniceUnleashed/issues/745)).
+- Fix serializing of recursive tables ([#686](https://github.com/EmulatorNexus/VeniceUnleashed/issues/686)).
+- Fix missing `ServerPlayerRespawnMessage` when using [SpawnSoldierAt](/vext/ref/server/type/player/#spawnsoldierat) ([#762](https://github.com/EmulatorNexus/VeniceUnleashed/issues/762)).
+- Fix issues with the [Player:SetSquadLeader](/vext/ref/client/event/player_setsquadleader) server event. Now, the event gets called whenever a squad leader status changes.
+- Fix crashes when using invalid values for `InputConcept` in [InputManager](/vext/ref/client/library/inputmanager).
+- Fix several [AimingSimulation](/vext/ref/client/type/aimingsimulation) bugs and crashes:
+  - `oldZoomLevel` returns now the old zoom level instead of the current one.
+  - `zoomLevel` returns now the current zoom level instead of random values.
+  - `switchToZoomLevel`, `oldZoomLevel` and `zoomLevel` have now additional checks to prevent crashes when setting an invalid zoom level.
+- Fix several RegisterXCallback bugs:
+  - [PhysicsEntity:RegisterImpulseCallback (server)](/vext/ref/server/type/physicsentity/#registerimpulsecallback-1) with context didn't get cleaned up correctly after the entity got destroyed.
+  - [PhysicsEntity:RegisterImpulseCallback (client)](/vext/ref/client/type/physicsentity/#registerimpulsecallback-1) with context didn't get cleaned up correctly after the entity got destroyed.
+  - [Component:RegisterDeinitCallback](/vext/ref/shared/type/component/#registerdeinitcallback) was not working as intended.
+  - [Component:RegisterSpawnCallback](/vext/ref/shared/type/component/#registerspawncallback) was not working as intended.
+  - [Component:RegisterUnSpawnCallback](/vext/ref/shared/type/component/#registerunspawncallback) was not working as intended.
+  - [Component:RegisterImpulseCallback](/vext/ref/shared/type/component/#registerimpulsecallback) was not working as intended.
+  - [Component:RegisterComponentMessageCallback](/vext/ref/shared/type/component/#registercomponentmessagecallback) was not working as intended.
+  - [Entity:RegisterInitCallback](/vext/ref/shared/type/entity/#registerinitcallback) was not working as intended.
+  - [Entity:RegisterDeinitCallback](/vext/ref/shared/type/entity/#registerdeinitcallback) was not working as intended.
+  - [EntityBusPeer:RegisterCreateCallback](/vext/ref/shared/type/entitybuspeer/#registercreatecallback) was not working as intended.
+
+
+
+{{% changeset-vext "1.10.0" "11/09/2022" %}}
 - Introduces [isAllowedToSpawnOn](/vext/ref/client/type/player/#isallowedtospawnon) property to [Player](/vext/ref/client/type/player) client type.
 - Introduces [isAllowedToSpawnOn](/vext/ref/server/type/player/#isallowedtospawnon) property to [Player](/vext/ref/server/type/player) server type.
 - [RagdollComponent](/vext/ref/client/type/ragdollcomponent) now inherits from [Component](/vext/ref/shared/type/component).

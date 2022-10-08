@@ -30,7 +30,7 @@ title: Guid
 
 | Method | Returns |
 | ------ | ------- |
-| **[ToString](#tostring)**(format: string) | string |
+| **[ToString](#tostring)**(format: string = 'D') | string |
 | **[Clone](#clone)**() | [Guid](/vext/ref/shared/type/guid) |
 
 ### Operators
@@ -109,7 +109,7 @@ Parses a GUID string into a [Guid](/vext/ref/shared/type/guid) type. The `format
 
 ### ToString {#tostring}
 
-> **ToString**(format: string): string
+> **ToString**(format: string = 'D'): string
 
 Converts the [Guid](/vext/ref/shared/type/guid) to its string representation. The `format` parameter can be one of the following values:
 - `D`: GUID with dashes (eg. `68F0A461-A947-40E1-BEC4-992EFDFF3735`)

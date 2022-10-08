@@ -4,3 +4,5 @@ type: event
 params:
   player:
     type: Player
+  spawnEntity:
+    type: Entity

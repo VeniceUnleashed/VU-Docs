@@ -58,6 +58,7 @@ methods:
     params:
       format:
         type: string
+        default: "'D'"
         description: The way to format the GUID string.
     returns:
       type: string

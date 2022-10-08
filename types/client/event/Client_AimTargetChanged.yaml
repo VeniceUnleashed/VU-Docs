@@ -1,0 +1,15 @@
+name: "Client:AimTargetChanged"
+type: event
+
+params:
+  entity:
+    type: Entity
+    nullable: true
+  hasFriend:
+    type: bool
+  hasEnemy:
+    type: bool
+  hasVehicle:
+    type: bool
+  hasSoldier:
+    type: bool

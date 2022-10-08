@@ -1,0 +1,37 @@
+name: TicketCounterEntity
+type: class
+inherits: GameEntity
+
+constructors:
+  -
+    params:
+      other:
+        type: EntityBusPeer
+  -
+    params:
+      other:
+        type: Entity
+  -
+    params:
+      other:
+        type: SpatialEntity
+  -
+    params:
+      other:
+        type: GameEntity
+
+properties:
+  team:
+    type: TeamId
+    readOnly: true
+  ticketCount:
+    type: int
+  initialTicketCount:
+    type: int
+    readOnly: true
+  controlledAreaValue:
+    type: int
+
+static:
+  typeInfo:
+    type: TypeInformation

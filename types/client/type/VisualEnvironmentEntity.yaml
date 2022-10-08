@@ -1,0 +1,30 @@
+name: VisualEnvironmentEntity
+type: class
+inherits: GameEntity
+
+constructors:
+  -
+    params:
+      other:
+        type: EntityBusPeer
+  -
+    params:
+      other:
+        type: Entity
+  -
+    params:
+      other:
+        type: SpatialEntity
+  -
+    params:
+      other:
+        type: GameEntity
+
+properties:
+  state:
+    type: VisualEnvironmentState
+    readOnly: true
+
+static:
+  typeInfo:
+    type: TypeInformation
