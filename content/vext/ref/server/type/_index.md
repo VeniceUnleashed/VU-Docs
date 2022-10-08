@@ -13,5 +13,6 @@ hideChildren: true
 | [Player](/vext/ref/server/type/player) | [SQLBlob](/vext/ref/server/type/sqlblob) |
 | [ServerDoublePlayerEvent](/vext/ref/server/type/serverdoubleplayerevent) | [ServerPlayerEvent](/vext/ref/server/type/serverplayerevent) |
 | [SoldierEntity](/vext/ref/server/type/soldierentity) | [SoldierWeapon](/vext/ref/server/type/soldierweapon) |
-| [SoldierWeaponsComponent](/vext/ref/server/type/soldierweaponscomponent) | [VoipChannel](/vext/ref/server/type/voipchannel) |
+| [SoldierWeaponsComponent](/vext/ref/server/type/soldierweaponscomponent) | [TicketCounterEntity](/vext/ref/server/type/ticketcounterentity) |
+| [VoipChannel](/vext/ref/server/type/voipchannel) | |
 

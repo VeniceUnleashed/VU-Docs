@@ -6,7 +6,17 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
-{{% changeset 19412 "11/09/2022" true %}}
+{{% changeset 19549 "08/10/2022" true %}}
+- VeniceEXT was updated to `1.11.0` ([changelog](/vext/changelog/#1_11_0)).
+- Add support for `AutoTeamEntityData.rotateTeamOnNewRound`. 
+- Several changes to `modList.*` RCON commands:
+  - `modList.List` will now be sorted and all lower-cased.
+  - `modList.Available` will now be all lower-cased.
+  - `modList.ListRunning` will now be sorted and all lower-cased.
+  - `modList.Add` won't be case-sensitive anymore.
+  - `modList.Remove` won't be case-sensitive anymore and also contains a fix where it would remove the mod but return `ModNotListed`.
+
+{{% changeset 19412 "11/09/2022" %}}
 - VeniceEXT was updated to `1.10.0` ([changelog](/vext/changelog/#1_10_0)).
 - Add initial support for adjusting mod settings from the VU settings menu.
 

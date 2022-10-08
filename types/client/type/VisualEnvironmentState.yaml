@@ -104,3 +104,9 @@ methods:
     params:
       index:
         type: int
+
+operators:
+  -
+    type: eq
+    rhs: VisualEnvironmentState
+    returns: bool

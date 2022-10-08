@@ -52,6 +52,12 @@ title: VisualEnvironmentState
 | **[AddShaderParams](#addshaderparams)**(params: [ShaderParamsData](/vext/ref/client/type/shaderparamsdata)) | void |
 | **[RemoveShaderParamsAt](#removeshaderparamsat)**(index: int) | void |
 
+### Operators
+
+| Operator | Rhs | Returns |
+| -------- | --- | ------- |
+| **[==](#op-eq)** | [VisualEnvironmentState](/vext/ref/client/type/visualenvironmentstate) | bool |
+
 ## Constructors
 
 ### VisualEnvironmentState {#constructor-0}
@@ -207,4 +213,21 @@ title: VisualEnvironmentState
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | **index** | int |  |
+
+## Operators
+
+### operator== {#op-eq}
+
+> operator==(rhs: [VisualEnvironmentState](/vext/ref/client/type/visualenvironmentstate)): bool
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **rhs** | [VisualEnvironmentState](/vext/ref/client/type/visualenvironmentstate) |  |
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
 
