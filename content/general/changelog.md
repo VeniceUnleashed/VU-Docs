@@ -8,7 +8,7 @@ Below you can find a full list of changes to VU, corresponding to every VU updat
 
 {{% changeset 19549 "08/10/2022" true %}}
 - VeniceEXT was updated to `1.11.0` ([changelog](/vext/changelog/#1_11_0)).
-- Add support for `AutoTeamEntityData.rotateTeamOnNewRound`. 
+- Fix `AutoTeamEntityData.rotateTeamOnNewRound` being ignored. When this is set to `false`, teams will no longer be rotated between rounds.
 - Several changes to `modList.*` RCON commands:
   - `modList.List` will now be sorted and all lower-cased.
   - `modList.Available` will now be all lower-cased.
