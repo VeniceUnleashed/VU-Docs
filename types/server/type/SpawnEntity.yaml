@@ -1,0 +1,69 @@
+name: SpawnEntity
+type: class
+inherits: SpatialEntity
+
+constructors:
+  -
+    params:
+      other:
+        type: EntityBusPeer
+  -
+    params:
+      other:
+        type: Entity
+  -
+    params:
+      other:
+        type: SpatialEntity
+
+properties:
+  subBus:
+    type: EntityBus
+    readOnly: true
+  spawnTimer:
+    type: float
+  spawnCount:
+    type: int
+    readOnly: true
+  spawnDelay:
+    type: float
+    readOnly: true
+  teamId:
+    type: TeamId
+  enabled:
+    type: bool
+  locationNameSid:
+    type: string
+    readOnly: true
+  canSpawnMore:
+    type: bool
+    readOnly: true
+  driverEntryInputValid:
+    type: bool
+    readOnly: true
+  driverControlled:
+    type: bool
+    readOnly: true
+  isControlled:
+    type: bool
+    readOnly: true
+  spawnRequested:
+    type: bool
+    readOnly: true
+  isAutoSpawnCancelled:
+    type: bool
+    readOnly: true
+  hasBeenInitialAutoSpawned:
+    type: bool
+    readOnly: true
+  useFriendZones:
+    type: bool
+    readOnly: true
+  spawnedControllables:
+    type: ControllableEntity
+    table: true
+    readOnly: true
+
+static:
+  typeInfo:
+    type: TypeInformation

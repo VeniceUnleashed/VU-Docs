@@ -3,6 +3,26 @@ title: Changelog
 weight: 1
 ---
 
+{{% changeset-vext "1.12.0" "02/11/2022" true %}}
+- Introduces [Player:ChangingWeapon](/vext/ref/client/event/player_changingweapon) client event.
+- Introduces [Player:FindBestTeam](/vext/ref/server/hook/player_findbestteam) server hook.
+- Introduces [CombatArea:PlayerDeserting](/vext/ref/server/event/combatarea_playerdeserting) server event.
+- Introduces [CombatArea:PlayerReturning](/vext/ref/server/event/combatarea_playerreturning) server event.
+- Introduces [LifeCounterEntity:BaseDestroyed](/vext/ref/server/event/lifecounterentity_basedestroyed) server event.
+- Introduces [RegisterPartitionLoadHandler](/vext/ref/shared/library/resourcemanager/#registerpartitionloadhandler) and [RegisterPartitionLoadHandlerOnce](/vext/ref/shared/library/resourcemanager/#registerpartitionloadhandleronce) to [ResourceManager](/vext/ref/shared/library/resourcemanager).
+- Introduces [RegisterEventCallback](/vext/ref/shared/type/entitybus/#registereventcallback) to [EntityBus](/vext/ref/shared/type/entitybus).
+- Introduces [SpawnEntity](/vext/ref/client/type/spawnentity) on the client.
+- Introduces [SpawnEntity](/vext/ref/server/type/spawnentity) on the server.
+- Introduces [LifeCounterEntity](/vext/ref/server/type/lifecounterentity) on the server.
+- Introduces [SpottingTargetComponent](/vext/ref/client/type/spottingtargetcomponent) on the client.
+- Add [EnableSpawners](/vext/ref/server/type/capturepointentity/#enablespawners) and [DisableSpawners](/vext/ref/server/type/capturepointentity/#disablespawners) methods to [CapturePointEntity](/vext/ref/server/type/capturepointentity).
+- Add [oldTeam](/vext/ref/client/event/player_teamchange/#oldteam) parameter to [Player:TeamChange](/vext/ref/client/event/player_teamchange) client event.
+- Add [oldTeam](/vext/ref/server/event/player_teamchange/#oldteam) parameter to [Player:TeamChange](/vext/ref/server/event/player_teamchange) server event.
+- Fix [isSquadPrivate](/vext/ref/client/type/player/#issquadprivate) of client [Player](/vext/ref/client/type/player) type being only accurate for squad leaders.
+- Fix [isSquadPrivate](/vext/ref/server/type/player/#issquadprivate) of server [Player](/vext/ref/server/type/player) type being only accurate for squad leaders.
+- Fix crashes when using [InputManager:GetMouseLevel](/vext/ref/client/library/inputmanager/#getmouselevel).
+- Fix UTF-8 issues for messages when using `ChatManager` or the `admin.say` RCON command.
+
 {{% changeset-vext "1.11.0" "08/10/2022" true %}}
 - Introduces [TicketCounterEntity](/vext/ref/server/type/ticketcounterentity) on the server.
 - Introduces [VisualEnvironmentEntity](/vext/ref/client/type/visualenvironmententity) on the client.
@@ -31,8 +51,6 @@ weight: 1
   - [Entity:RegisterDeinitCallback](/vext/ref/shared/type/entity/#registerdeinitcallback) was not working as intended.
   - [EntityBusPeer:RegisterCreateCallback](/vext/ref/shared/type/entitybuspeer/#registercreatecallback) was not working as intended.
 
-
-
 {{% changeset-vext "1.10.0" "11/09/2022" %}}
 - Introduces [isAllowedToSpawnOn](/vext/ref/client/type/player/#isallowedtospawnon) property to [Player](/vext/ref/client/type/player) client type.
 - Introduces [isAllowedToSpawnOn](/vext/ref/server/type/player/#isallowedtospawnon) property to [Player](/vext/ref/server/type/player) server type.
@@ -49,7 +67,6 @@ weight: 1
 - Introduces [ScoringSystem:StatEvent](/vext/ref/server/event/scoringsystem_statevent) server event.
 - Introduces [Player:Score](/vext/ref/server/event/player_score) server event.
 - Introduces [ClientUtils:SetSquadAutoJoining](/vext/ref/client/library/clientutils/#setsquadautojoining) client method.
-- Add `vars.maxSpectators` RCON command.
 
 {{% changeset-vext "1.9.0" "06/09/2022" %}}
 - Introduces [zoomLevel](/vext/ref/shared/type/entryinput/#zoomlevel) property to [EntryInput](/vext/ref/shared/type/entryinput) type.

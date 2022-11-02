@@ -140,8 +140,6 @@ The players ping to the server.
 
 > **bool**
 
-Always false for non squad leaders.
-
 ### {{% prop-heading "isAllowedToSpawnOn" %}}
 
 > **bool**

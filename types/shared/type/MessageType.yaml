@@ -1208,6 +1208,8 @@ values:
     value: -1064816323
   UINetworkVoiceOverSubtitleTextMessage:
     value: -1324401811
+  UnlockComponentEnabledMessage:
+    value: 979879060
   VeniceNetworkAllWeaponKillsMessage:
     value: 1686636336
   VeniceNetworkAwardGainedMessage:

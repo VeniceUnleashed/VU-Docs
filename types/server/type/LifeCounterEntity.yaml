@@ -1,0 +1,53 @@
+name: LifeCounterEntity
+type: class
+inherits: GameEntity
+
+constructors:
+  -
+    params:
+      other:
+        type: EntityBusPeer
+  -
+    params:
+      other:
+        type: Entity
+  -
+    params:
+      other:
+        type: SpatialEntity
+  -
+    params:
+      other:
+        type: GameEntity
+
+properties:
+  startingLifeCounter:
+    type: int
+    readOnly: true
+  lifeCounter:
+    type: int
+  reinforceCounter:
+    type: int
+    readOnly: true
+  deathCountSinceReinforce:
+    type: int
+    readOnly: true
+  objectiveAliveCount:
+    type: int
+    readOnly: true
+  lifeTreshold:
+    type: int
+    readOnly: true
+  baseAliveCount:
+    type: int
+    readOnly: true
+  teamId:
+    type: TeamId
+    readOnly: true
+  isAttacker:
+    type: bool
+    readOnly: true
+
+static:
+  typeInfo:
+    type: TypeInformation

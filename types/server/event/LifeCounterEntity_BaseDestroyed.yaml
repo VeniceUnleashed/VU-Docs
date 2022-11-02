@@ -1,0 +1,8 @@
+name: "LifeCounterEntity:BaseDestroyed"
+type: event
+
+params:
+  lifeCounter:
+    type: Entity
+  isFinalBase:
+    type: bool

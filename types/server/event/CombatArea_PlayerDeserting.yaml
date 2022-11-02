@@ -1,0 +1,8 @@
+name: "CombatArea:PlayerDeserting"
+type: event
+
+params:
+  entity:
+    type: Entity
+  player:
+    type: Player

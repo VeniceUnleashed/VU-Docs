@@ -16,3 +16,7 @@ properties:
   currentWeaponSlot:
     type: WeaponSlot
     readOnly: true
+
+static:
+  typeInfo:
+    type: TypeInformation

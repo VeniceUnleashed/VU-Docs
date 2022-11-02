@@ -37,6 +37,13 @@ Inherits from [GameEntity](/vext/ref/server/type/gameentity)
 | {{< prop "team1CooldownPenalty" >}} | float |
 | {{< prop "team2CooldownPenalty" >}} | float |
 
+### Methods
+
+| Method | Returns |
+| ------ | ------- |
+| **[EnableSpawners](#enablespawners)**() | void |
+| **[DisableSpawners](#disablespawners)**() | void |
+
 ### Static members
 
 | Name | Type |
@@ -154,6 +161,16 @@ Inherits from [GameEntity](/vext/ref/server/type/gameentity)
 ### {{% prop-heading "team2CooldownPenalty" %}}
 
 > **float**
+
+## Methods
+
+### EnableSpawners {#enablespawners}
+
+> **EnableSpawners**()
+
+### DisableSpawners {#disablespawners}
+
+> **DisableSpawners**()
 
 ## Static members
 

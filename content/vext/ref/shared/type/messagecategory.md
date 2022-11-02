@@ -59,6 +59,7 @@ title: MessageCategory
 | **Statistics** | Value: **-852034080** |
 | **UI** | Value: **5862329** |
 | **UINetwork** | Value: **-1996083449** |
+| **UnlockComponent** | Value: **1876505978** |
 | **VeniceNetwork** | Value: **-2144672663** |
 | **VeniceServerMetrics** | Value: **1113600165** |
 

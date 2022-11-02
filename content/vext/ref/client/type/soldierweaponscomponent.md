@@ -16,6 +16,12 @@ Inherits from [Component](/vext/ref/shared/type/component)
 | {{< prop "weapons" true >}} | [SoldierWeapon](/vext/ref/client/type/soldierweapon)[] |
 | {{< prop "currentWeaponSlot" true >}} | [WeaponSlot](/vext/ref/fb/weaponslot) |
 
+### Static members
+
+| Name | Type |
+| ---- | ---- |
+| {{< static "SoldierWeaponsComponent" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/type/typeinformation) |
+
 ## Properties
 
 ### {{% prop-heading "weaponTransform" true %}}
@@ -37,4 +43,10 @@ Inherits from [Component](/vext/ref/shared/type/component)
 ### {{% prop-heading "currentWeaponSlot" true %}}
 
 > **[WeaponSlot](/vext/ref/fb/weaponslot)**
+
+## Static members
+
+### {{% static-heading "typeInfo" %}}
+
+> **[TypeInformation](/vext/ref/shared/type/typeinformation)**
 

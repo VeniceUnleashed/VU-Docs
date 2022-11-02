@@ -1,0 +1,8 @@
+name: "CombatArea:PlayerReturning"
+type: event
+
+params:
+  entity:
+    type: Entity
+  player:
+    type: Player

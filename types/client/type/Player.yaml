@@ -76,7 +76,6 @@ properties:
   isSquadPrivate:
     type: bool
     readOnly: true
-    description: Always false for non squad leaders.
   isAllowedToSpawnOn:
     type: bool
     description: Describes if the local player is allowed to spawn on this other player.
