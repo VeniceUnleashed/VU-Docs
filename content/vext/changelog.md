@@ -18,6 +18,8 @@ weight: 1
 - Add [EnableSpawners](/vext/ref/server/type/capturepointentity/#enablespawners) and [DisableSpawners](/vext/ref/server/type/capturepointentity/#disablespawners) methods to [CapturePointEntity](/vext/ref/server/type/capturepointentity).
 - Add [oldTeam](/vext/ref/client/event/player_teamchange/#oldteam) parameter to [Player:TeamChange](/vext/ref/client/event/player_teamchange) client event.
 - Add [oldTeam](/vext/ref/server/event/player_teamchange/#oldteam) parameter to [Player:TeamChange](/vext/ref/server/event/player_teamchange) server event.
+- Fix [isSquadPrivate](/vext/ref/client/type/player/#issquadprivate) of client [Player](/vext/ref/client/type/player) type being only accurate for squad leaders.
+- Fix [isSquadPrivate](/vext/ref/server/type/player/#issquadprivate) of server [Player](/vext/ref/server/type/player) type being only accurate for squad leaders.
 - Fix crashes when using [InputManager:GetMouseLevel](/vext/ref/client/library/inputmanager/#getmouselevel).
 - Fix UTF-8 issues for messages when using `ChatManager` or the `admin.say` RCON command.
 

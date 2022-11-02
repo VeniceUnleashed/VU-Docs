@@ -609,6 +609,7 @@ title: MessageType
 | **UINetworkStopVideoMessage** | Value: **640255845** |
 | **UINetworkVideoDoneMessage** | Value: **-1064816323** |
 | **UINetworkVoiceOverSubtitleTextMessage** | Value: **-1324401811** |
+| **UnlockComponentEnabledMessage** | Value: **979879060** |
 | **VeniceNetworkAllWeaponKillsMessage** | Value: **1686636336** |
 | **VeniceNetworkAwardGainedMessage** | Value: **1266239811** |
 | **VeniceNetworkCreateSquadMessage** | Value: **1699257268** |

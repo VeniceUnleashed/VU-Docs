@@ -31,7 +31,6 @@ properties:
   isSquadPrivate:
     type: bool
     readOnly: true
-    description: Always false for non squad leaders.
   hasSoldier:
     type: bool
     readOnly: true

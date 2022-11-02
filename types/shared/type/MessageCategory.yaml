@@ -108,6 +108,8 @@ values:
     value: 5862329
   UINetwork:
     value: -1996083449
+  UnlockComponent:
+    value: 1876505978
   VeniceNetwork:
     value: -2144672663
   VeniceServerMetrics:
