@@ -12,7 +12,7 @@ Below you can find a full list of changes to VU, corresponding to every VU updat
 - Introduce `-username` and `-password` as [client launch arguments](/general/args/#client-arguments) to automatically login.
 - Introduce `-maxPlayers` as [server launch argument](/general/args/#server-arguments). Note: Spectator slots count as well.
 - CEF got upgraded to `4638`. This will come with potential bug & crash fixes such as fixing black screen and out of memory issues. The performance and the memory usage should be overall improved.
-- CEF console warn- and error messages are now forwarded to the VU console.
+- WebUI console warn and error messages are now forwarded to the VU console.
 - Fix squads being private by default.
 - Fix squads not getting assigned properly in squad rush and squad deathmatch.
 
