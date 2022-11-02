@@ -8,3 +8,5 @@ params:
     type: TeamId
   squad:
     type: SquadId
+  oldTeam:
+    type: TeamId

@@ -27,6 +27,7 @@ hideChildren: true
 | [ShaderParamsData](/vext/ref/client/type/shaderparamsdata) | [SkyData](/vext/ref/client/type/skydata) |
 | [SoldierEntity](/vext/ref/client/type/soldierentity) | [SoldierWeapon](/vext/ref/client/type/soldierweapon) |
 | [SoldierWeaponsComponent](/vext/ref/client/type/soldierweaponscomponent) | [SoundEntity](/vext/ref/client/type/soundentity) |
+| [SpawnEntity](/vext/ref/client/type/spawnentity) | [SpottingTargetComponent](/vext/ref/client/type/spottingtargetcomponent) |
 | [SunFlareData](/vext/ref/client/type/sunflaredata) | [TicketCounterEntity](/vext/ref/client/type/ticketcounterentity) |
 | [TonemapData](/vext/ref/client/type/tonemapdata) | [VignetteData](/vext/ref/client/type/vignettedata) |
 | [VisualEnvironmentEntity](/vext/ref/client/type/visualenvironmententity) | [VisualEnvironmentState](/vext/ref/client/type/visualenvironmentstate) |

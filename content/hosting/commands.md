@@ -133,3 +133,12 @@ Returns the 30-second moving average of the server FPS. If this value falls belo
 ### `vu.HttpAssetUrl`
 
 A URL pointing to an external HTTP server hosting mod assets, or an empty string if assets should be sent directly from the game server. When this is set, any connecting clients will try to download any needed assets from that URL, following the file structure of the mod files. For example, if you have a mod called `mymod` and it has a WebUI container file (`ui.vuic`), and you set the URL to `https://example.com/assets/`, the client will try to download the file from `https://example.com/assets/mymod/ui.vuic`. If file downloads fail or their contents don't match what's on the game server, clients will be unable to join.
+
+### `vu.DisablePreRound`
+
+Accepts a single boolean argument (`true` or `false`). This has to be used before the level gets loaded. When set to `true` the preround will be disabled on the next level (re)load. 
+
+This command can be used in the `Startup.txt` to disable the preround. To reenable the preround just set it back to `true` and reload the level.
+
+Default is set to `false`.
+When used with no arguments, it returns whether preround is disabled or not.

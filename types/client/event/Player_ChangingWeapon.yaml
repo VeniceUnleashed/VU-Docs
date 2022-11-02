@@ -1,0 +1,16 @@
+name: "Player:ChangingWeapon"
+type: event
+
+params:
+  player:
+    type: Player
+  oldSlot:
+    type: int
+  newSlot:
+    type: int
+  playerTriggeredSwitch:
+    type: bool
+  quickSwitch:
+    type: bool
+  automaticSwitchBack:
+    type: bool

@@ -123,3 +123,7 @@ methods:
         type: int
       transform:
         type: QuatTransform
+
+static:
+  typeInfo:
+    type: TypeInformation

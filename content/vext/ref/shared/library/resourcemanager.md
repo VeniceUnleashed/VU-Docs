@@ -21,6 +21,10 @@ title: ResourceManager
 | **[RegisterInstanceLoadHandler](#registerinstanceloadhandler-1)**(partitionGuid: [Guid](/vext/ref/shared/type/guid), instanceGuid: [Guid](/vext/ref/shared/type/guid), context: any, callback: callable) | [ContainerCallback](/vext/ref/shared/type/containercallback) |
 | **[RegisterInstanceLoadHandlerOnce](#registerinstanceloadhandleronce)**(partitionGuid: [Guid](/vext/ref/shared/type/guid), instanceGuid: [Guid](/vext/ref/shared/type/guid), callback: callable) | [ContainerCallback](/vext/ref/shared/type/containercallback) |
 | **[RegisterInstanceLoadHandlerOnce](#registerinstanceloadhandleronce-1)**(partitionGuid: [Guid](/vext/ref/shared/type/guid), instanceGuid: [Guid](/vext/ref/shared/type/guid), context: any, callback: callable) | [ContainerCallback](/vext/ref/shared/type/containercallback) |
+| **[RegisterPartitionLoadHandler](#registerpartitionloadhandler)**(partitionGuid: [Guid](/vext/ref/shared/type/guid), callback: callable) | [ContainerCallback](/vext/ref/shared/type/containercallback) \| nil |
+| **[RegisterPartitionLoadHandler](#registerpartitionloadhandler-1)**(partitionGuid: [Guid](/vext/ref/shared/type/guid), context: any, callback: callable) | [ContainerCallback](/vext/ref/shared/type/containercallback) |
+| **[RegisterPartitionLoadHandlerOnce](#registerpartitionloadhandleronce)**(partitionGuid: [Guid](/vext/ref/shared/type/guid), callback: callable) | [ContainerCallback](/vext/ref/shared/type/containercallback) |
+| **[RegisterPartitionLoadHandlerOnce](#registerpartitionloadhandleronce-1)**(partitionGuid: [Guid](/vext/ref/shared/type/guid), context: any, callback: callable) | [ContainerCallback](/vext/ref/shared/type/containercallback) |
 | **[AddRegistry](#addregistry)**(registry: [DataContainer](/vext/ref/shared/type/datacontainer), compartment: [ResourceCompartment](/vext/ref/shared/type/resourcecompartment)) | void |
 | **[BeginLoadData](#beginloaddata)**(compartment: [ResourceCompartment](/vext/ref/shared/type/resourcecompartment), bundles: string{}) | int |
 | **[EndLoadData](#endloaddata)**(handle: int) | bool |
@@ -234,6 +238,76 @@ title: ResourceManager
 | ---- | ---- | ----------- |
 | **partitionGuid** | [Guid](/vext/ref/shared/type/guid) |  |
 | **instanceGuid** | [Guid](/vext/ref/shared/type/guid) |  |
+| **context** | any |  |
+| **callback** | callable |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[ContainerCallback](/vext/ref/shared/type/containercallback)** |  |
+
+### RegisterPartitionLoadHandler {#registerpartitionloadhandler}
+
+> **RegisterPartitionLoadHandler**(partitionGuid: [Guid](/vext/ref/shared/type/guid), callback: callable): [ContainerCallback](/vext/ref/shared/type/containercallback) \| nil
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **partitionGuid** | [Guid](/vext/ref/shared/type/guid) |  |
+| **callback** | callable |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[ContainerCallback](/vext/ref/shared/type/containercallback)** \| **nil** |  |
+
+### RegisterPartitionLoadHandler {#registerpartitionloadhandler-1}
+
+> **RegisterPartitionLoadHandler**(partitionGuid: [Guid](/vext/ref/shared/type/guid), context: any, callback: callable): [ContainerCallback](/vext/ref/shared/type/containercallback)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **partitionGuid** | [Guid](/vext/ref/shared/type/guid) |  |
+| **context** | any |  |
+| **callback** | callable |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[ContainerCallback](/vext/ref/shared/type/containercallback)** |  |
+
+### RegisterPartitionLoadHandlerOnce {#registerpartitionloadhandleronce}
+
+> **RegisterPartitionLoadHandlerOnce**(partitionGuid: [Guid](/vext/ref/shared/type/guid), callback: callable): [ContainerCallback](/vext/ref/shared/type/containercallback)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **partitionGuid** | [Guid](/vext/ref/shared/type/guid) |  |
+| **callback** | callable |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[ContainerCallback](/vext/ref/shared/type/containercallback)** |  |
+
+### RegisterPartitionLoadHandlerOnce {#registerpartitionloadhandleronce-1}
+
+> **RegisterPartitionLoadHandlerOnce**(partitionGuid: [Guid](/vext/ref/shared/type/guid), context: any, callback: callable): [ContainerCallback](/vext/ref/shared/type/containercallback)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **partitionGuid** | [Guid](/vext/ref/shared/type/guid) |  |
 | **context** | any |  |
 | **callback** | callable |  |
 

@@ -1,0 +1,35 @@
+name: SpawnEntity
+type: class
+inherits: SpatialEntity
+
+constructors:
+  -
+    params:
+      other:
+        type: EntityBusPeer
+  -
+    params:
+      other:
+        type: Entity
+  -
+    params:
+      other:
+        type: SpatialEntity
+
+properties:
+  subBus:
+    type: EntityBus
+    readOnly: true
+  teamId:
+    type: TeamId
+    readOnly: true
+  enabled:
+    type: bool
+    readOnly: true
+  locationNameSid:
+    type: string
+    readOnly: true
+
+static:
+  typeInfo:
+    type: TypeInformation

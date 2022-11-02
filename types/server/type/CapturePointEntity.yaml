@@ -66,6 +66,12 @@ properties:
   team2CooldownPenalty:
     type: float
 
+methods:
+  -
+    name: EnableSpawners
+  -
+    name: DisableSpawners
+
 static:
   typeInfo:
     type: TypeInformation

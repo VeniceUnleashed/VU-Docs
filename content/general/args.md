@@ -117,6 +117,12 @@ Example (with password): `vu://spectate/4ffa57c1068540e59b9a25eb6b00dfcd/amazing
 
 Enable verbose debugging logging for CEF. Useful for catching issues with WebUI mods. When running with this argument, a `debug.log` file will be created in the directory of VU (usually `%LocalAppData%\VeniceUnleashed\client`).
 
+---
+
+> `-username <username> -password <password>`
+
+Logs you in to your VU account using the specified VU credentials.
+
 ## Server arguments
 
 These arguments only have an effect on the VU server.
@@ -210,3 +216,13 @@ Specifies a hostname clients should use when connecting to this server. When thi
 > `-noUpdate`
 
 Disables automatic updates.
+
+---
+
+> `-maxPlayers <number>`
+
+Sets the maximum players that are allowed to set with `vars.maxPlayers` & `vars.maxSpectators` combined.
+
+Example: `-maxPlayers 64`
+
+When using the default spectator size of `24`, you won't be able to set `vars.maxPlayers` higher then `40`. Unless you reduce the spectator count before.

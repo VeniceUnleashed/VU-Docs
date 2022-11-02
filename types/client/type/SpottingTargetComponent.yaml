@@ -1,0 +1,21 @@
+name: SpottingTargetComponent
+type: class
+inherits: Component
+
+properties:
+  spotType:
+    type: SpotType
+  orderType:
+    type: OrderType
+  spotterPlayer:
+    type: Player
+    readOnly: true
+  playerThatOrdersPlayer:
+    type: Player
+    readOnly: true
+  lastOrderTime:
+    type: float
+
+static:
+  typeInfo:
+    type: TypeInformation

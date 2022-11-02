@@ -110,6 +110,30 @@ methods:
     returns:
       type: Entity | Component
       table: true
+  -
+    name: RegisterEventCallback
+    params:
+      callback:
+        type: callable
+        description: "A callback in the form `function(bus: EntityBus, data: DataContainer, event: EntityEvent): bool`."
+    returns:
+      type: int
+  -
+    name: RegisterEventCallback
+    params:
+      context:
+        type: any
+        description: A context value to pass to the callback.
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, bus: EntityBus, data: DataContainer, event: EntityEvent): bool`."
+    returns:
+      type: int
+  -
+    name: UnregisterEventCallback
+    params:
+      handle:
+        type: int
 
 operators:
   -

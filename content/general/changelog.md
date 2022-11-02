@@ -6,6 +6,19 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 19963 "02/11/2022" true %}}
+- VeniceEXT was updated to `1.12.0` ([changelog](/vext/changelog/#1_12_0)).
+- Add [vu.DisablePreRound](/hosting/commands/#vudisablepreround) RCON command.
+- Introduce `-username` and `-password` as [client launch arguments](/general/args/#client-arguments) to automatically login.
+- Introduce `-maxPlayers` as [server launch argument](/general/args/#server-arguments). Note: Spectator slots count as well.
+- CEF got upgraded to `4638`. This will come with potential bug & crash fixes such as fixing black screen and out of memory issues. The performance and the memory usage should be overall improved.
+- CEF console warn- and error messages are now forwarded to the VU console.
+- Fix squads being private by default.
+- Fix squads not getting assigned properly in squad rush and squad deathmatch.
+
+{{% changeset 19549 "08/10/2022" true %}}
+- Fix a potential crash when spawning a bot in TDM after a map switch.
+
 {{% changeset 19549 "08/10/2022" true %}}
 - VeniceEXT was updated to `1.11.0` ([changelog](/vext/changelog/#1_11_0)).
 - Fix `AutoTeamEntityData.rotateTeamOnNewRound` being ignored. When this is set to `false`, teams will no longer be rotated between rounds.
@@ -19,6 +32,7 @@ Below you can find a full list of changes to VU, corresponding to every VU updat
 {{% changeset 19412 "11/09/2022" %}}
 - VeniceEXT was updated to `1.10.0` ([changelog](/vext/changelog/#1_10_0)).
 - Add initial support for adjusting mod settings from the VU settings menu.
+- Add `vars.maxSpectators` RCON command.
 
 {{% changeset 19072 "06/09/2022" %}}
 - VeniceEXT was updated to `1.9.0` ([changelog](/vext/changelog/#1_9_0)).

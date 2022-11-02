@@ -128,6 +128,47 @@ methods:
     returns:
       type: ContainerCallback
   -
+    name: RegisterPartitionLoadHandler
+    params:
+      partitionGuid:
+        type: Guid
+      callback:
+        type: callable
+    returns:
+      type: ContainerCallback
+      nullable: true
+  -
+    name: RegisterPartitionLoadHandler
+    params:
+      partitionGuid:
+        type: Guid
+      context:
+        type: any
+      callback:
+        type: callable
+    returns:
+      type: ContainerCallback
+  -
+    name: RegisterPartitionLoadHandlerOnce
+    params:
+      partitionGuid:
+        type: Guid
+      callback:
+        type: callable
+    returns:
+      type: ContainerCallback
+  -
+    name: RegisterPartitionLoadHandlerOnce
+    params:
+      partitionGuid:
+        type: Guid
+      context:
+        type: any
+      callback:
+        type: callable
+    returns:
+      type: ContainerCallback
+  -
     name: AddRegistry
     params:
       registry:

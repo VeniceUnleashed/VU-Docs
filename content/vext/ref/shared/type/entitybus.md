@@ -32,6 +32,9 @@ title: EntityBus
 | **[PropertyChanged](#propertychanged-3)**(propertyName: string, value: any) | void |
 | **[GetLinks](#getlinks)**(toData: [DataContainer](/vext/ref/shared/type/datacontainer), fieldId: int) | ([Entity](/vext/ref/shared/type/entity) \| [Component](/vext/ref/shared/type/component)){} |
 | **[GetLinks](#getlinks-1)**(toData: [DataContainer](/vext/ref/shared/type/datacontainer), fieldName: string) | ([Entity](/vext/ref/shared/type/entity) \| [Component](/vext/ref/shared/type/component)){} |
+| **[RegisterEventCallback](#registereventcallback)**(callback: callable) | int |
+| **[RegisterEventCallback](#registereventcallback-1)**(context: any, callback: callable) | int |
+| **[UnregisterEventCallback](#unregistereventcallback)**(handle: int) | void |
 
 ### Operators
 
@@ -203,6 +206,49 @@ title: EntityBus
 | Type | Description |
 | ---- | ----------- |
 | (**[Entity](/vext/ref/shared/type/entity)** \| **[Component](/vext/ref/shared/type/component)**){} |  |
+
+### RegisterEventCallback {#registereventcallback}
+
+> **RegisterEventCallback**(callback: callable): int
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **callback** | callable | A callback in the form `function(bus: EntityBus, data: DataContainer, event: EntityEvent): bool`. |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **int** |  |
+
+### RegisterEventCallback {#registereventcallback-1}
+
+> **RegisterEventCallback**(context: any, callback: callable): int
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **context** | any | A context value to pass to the callback. |
+| **callback** | callable | A callback in the form `function(context: any, bus: EntityBus, data: DataContainer, event: EntityEvent): bool`. |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **int** |  |
+
+### UnregisterEventCallback {#unregistereventcallback}
+
+> **UnregisterEventCallback**(handle: int)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **handle** | int |  |
 
 ## Operators
 

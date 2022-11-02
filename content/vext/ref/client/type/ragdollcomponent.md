@@ -27,6 +27,12 @@ Inherits from [Component](/vext/ref/shared/type/component)
 | **[GetBoneVelocity](#getbonevelocity)**(boneId: int) | [QuatTransform](/vext/ref/shared/type/quattransform) \| nil |
 | **[SetBoneVelocity](#setbonevelocity)**(boneId: int, transform: [QuatTransform](/vext/ref/shared/type/quattransform)) | void |
 
+### Static members
+
+| Name | Type |
+| ---- | ---- |
+| {{< static "RagdollComponent" "typeInfo" >}} | [TypeInformation](/vext/ref/shared/type/typeinformation) |
+
 ## Methods
 
 ### GetLocalTransform {#getlocaltransform}
@@ -244,4 +250,10 @@ Inherits from [Component](/vext/ref/shared/type/component)
 | ---- | ---- | ----------- |
 | **boneId** | int |  |
 | **transform** | [QuatTransform](/vext/ref/shared/type/quattransform) |  |
+
+## Static members
+
+### {{% static-heading "typeInfo" %}}
+
+> **[TypeInformation](/vext/ref/shared/type/typeinformation)**
 
