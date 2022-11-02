@@ -8,7 +8,7 @@ weight: 1
 - Introduces [Player:FindBestTeam](/vext/ref/server/hook/player_findbestteam) server hook.
 - Introduces [CombatArea:PlayerDeserting](/vext/ref/server/event/combatarea_playerdeserting) server event.
 - Introduces [CombatArea:PlayerReturning](/vext/ref/server/event/combatarea_playerreturning) server event.
-- Introduces [LifeCounterEntity:BaseDestroyed](/vext/ref/server/event/lifecounterentity_basedestroyed) server event.
+- Introduces [LifeCounter:BaseDestroyed](/vext/ref/server/event/lifecounter_basedestroyed) server event.
 - Introduces [RegisterPartitionLoadHandler](/vext/ref/shared/library/resourcemanager/#registerpartitionloadhandler) and [RegisterPartitionLoadHandlerOnce](/vext/ref/shared/library/resourcemanager/#registerpartitionloadhandleronce) to [ResourceManager](/vext/ref/shared/library/resourcemanager).
 - Introduces [RegisterEventCallback](/vext/ref/shared/type/entitybus/#registereventcallback) to [EntityBus](/vext/ref/shared/type/entitybus).
 - Introduces [SpawnEntity](/vext/ref/client/type/spawnentity) on the client.

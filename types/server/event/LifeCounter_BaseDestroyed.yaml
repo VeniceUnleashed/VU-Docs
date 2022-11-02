@@ -1,4 +1,4 @@
-name: "LifeCounterEntity:BaseDestroyed"
+name: "LifeCounter:BaseDestroyed"
 type: event
 
 params:

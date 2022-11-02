@@ -8,7 +8,7 @@ hideChildren: true
 | [CapturePoint:Captured](/vext/ref/server/event/capturepoint_captured) | [CapturePoint:Lost](/vext/ref/server/event/capturepoint_lost) |
 | [CombatArea:PlayerDeserting](/vext/ref/server/event/combatarea_playerdeserting) | [CombatArea:PlayerReturning](/vext/ref/server/event/combatarea_playerreturning) |
 | [Engine:Init](/vext/ref/server/event/engine_init) | [Level:Loaded](/vext/ref/server/event/level_loaded) |
-| [LifeCounterEntity:BaseDestroyed](/vext/ref/server/event/lifecounterentity_basedestroyed) | [Player:Authenticated](/vext/ref/server/event/player_authenticated) |
+| [LifeCounter:BaseDestroyed](/vext/ref/server/event/lifecounter_basedestroyed) | [Player:Authenticated](/vext/ref/server/event/player_authenticated) |
 | [Player:ChangingWeapon](/vext/ref/server/event/player_changingweapon) | [Player:Chat](/vext/ref/server/event/player_chat) |
 | [Player:Created](/vext/ref/server/event/player_created) | [Player:Destroyed](/vext/ref/server/event/player_destroyed) |
 | [Player:EnteredCapturePoint](/vext/ref/server/event/player_enteredcapturepoint) | [Player:ExitedCapturePoint](/vext/ref/server/event/player_exitedcapturepoint) |
