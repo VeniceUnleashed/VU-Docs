@@ -18,6 +18,7 @@ title: PlayerManager
 | **[GetPlayerCount](#getplayercount)**() | int |
 | **[GetLocalPlayer](#getlocalplayer)**() | [Player](/vext/ref/client/type/player) \| nil |
 | **[GetSpectatorCount](#getspectatorcount)**() | int |
+| **[GetSquadLeader](#getsquadleader)**(team: [TeamId](/vext/ref/fb/teamid), squad: [SquadId](/vext/ref/fb/squadid)) | [Player](/vext/ref/client/type/player) \| nil |
 
 ## Methods
 
@@ -157,4 +158,21 @@ title: PlayerManager
 | Type | Description |
 | ---- | ----------- |
 | **int** |  |
+
+### GetSquadLeader {#getsquadleader}
+
+> **GetSquadLeader**(team: [TeamId](/vext/ref/fb/teamid), squad: [SquadId](/vext/ref/fb/squadid)): [Player](/vext/ref/client/type/player) \| nil
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **team** | [TeamId](/vext/ref/fb/teamid) |  |
+| **squad** | [SquadId](/vext/ref/fb/squadid) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[Player](/vext/ref/client/type/player)** \| **nil** |  |
 

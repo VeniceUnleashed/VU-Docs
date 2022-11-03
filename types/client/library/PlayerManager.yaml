@@ -70,3 +70,13 @@ methods:
     name: GetSpectatorCount
     returns:
       type: int
+  -
+    name: GetSquadLeader
+    params:
+      team:
+        type: TeamId
+      squad:
+        type: SquadId
+    returns:
+      type: Player
+      nullable: true
