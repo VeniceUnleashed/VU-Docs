@@ -6,7 +6,7 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
-{{% changeset 19963 "02/11/2022" true %}}
+{{% changeset 19968 "03/11/2022" true %}}
 - VeniceEXT was updated to `1.12.0` ([changelog](/vext/changelog/#1_12_0)).
 - Add [vu.DisablePreRound](/hosting/commands/#vudisablepreround) RCON command.
 - Introduce `-username` and `-password` as [client launch arguments](/general/args/#client-arguments) to automatically login.
