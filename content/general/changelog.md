@@ -6,7 +6,7 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
-{{% changeset 19968 "03/11/2022" true %}}
+{{% changeset 19968 "03/11/2022" %}}
 - VeniceEXT was updated to `1.12.0` ([changelog](/vext/changelog/#1_12_0)).
 - Add [vu.DisablePreRound](/hosting/commands/#vudisablepreround) RCON command.
 - Introduce `-username` and `-password` as [client launch arguments](/general/args/#client-arguments) to automatically login.
@@ -16,10 +16,10 @@ Below you can find a full list of changes to VU, corresponding to every VU updat
 - Fix squads being private by default.
 - Fix squads not getting assigned properly in squad rush and squad deathmatch.
 
-{{% changeset 19549 "08/10/2022" true %}}
+{{% changeset 19549 "08/10/2022" %}}
 - Fix a potential crash when spawning a bot in TDM after a map switch.
 
-{{% changeset 19549 "08/10/2022" true %}}
+{{% changeset 19549 "08/10/2022" %}}
 - VeniceEXT was updated to `1.11.0` ([changelog](/vext/changelog/#1_11_0)).
 - Fix `AutoTeamEntityData.rotateTeamOnNewRound` being ignored. When this is set to `false`, teams will no longer be rotated between rounds.
 - Several changes to `modList.*` RCON commands:
