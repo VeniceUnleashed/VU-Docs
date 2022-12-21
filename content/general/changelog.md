@@ -6,6 +6,9 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 19969 "21/12/2022" true %}}
+- Fix a potential garbagecollection crash ([#889](https://github.com/EmulatorNexus/VeniceUnleashed/issues/889)).
+
 {{% changeset 19968 "03/11/2022" %}}
 - VeniceEXT was updated to `1.12.0` ([changelog](/vext/changelog/#1_12_0)).
 - Add [vu.DisablePreRound](/hosting/commands/#vudisablepreround) RCON command.
