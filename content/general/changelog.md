@@ -16,7 +16,7 @@ Below you can find a full list of changes to VU, corresponding to every VU updat
 - Fix squads being private by default.
 - Fix squads not getting assigned properly in squad rush and squad deathmatch.
 
-{{% changeset 19549 "08/10/2022" %}}
+{{% changeset 19551 "13/10/2022" %}}
 - Fix a potential crash when spawning a bot in TDM after a map switch.
 
 {{% changeset 19549 "08/10/2022" %}}
