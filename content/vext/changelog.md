@@ -3,7 +3,7 @@ title: Changelog
 weight: 1
 ---
 
-{{% changeset-vext "1.12.0" "03/11/2022" %}}
+{{% changeset-vext "1.12.0" "03/11/2022" true %}}
 - Introduces [Player:ChangingWeapon](/vext/ref/client/event/player_changingweapon) client event.
 - Introduces [Player:FindBestTeam](/vext/ref/server/hook/player_findbestteam) server hook.
 - Introduces [CombatArea:PlayerDeserting](/vext/ref/server/event/combatarea_playerdeserting) server event.
@@ -25,7 +25,7 @@ weight: 1
 - Fix UTF-8 issues for messages when using `ChatManager` or the `admin.say` RCON command.
 - Fix crashes when using `IsAsyncRaycast` flag in Raycasts.
 
-{{% changeset-vext "1.11.0" "08/10/2022" %}}
+{{% changeset-vext "1.11.0" "08/10/2022" true %}}
 - Introduces [TicketCounterEntity](/vext/ref/server/type/ticketcounterentity) on the server.
 - Introduces [VisualEnvironmentEntity](/vext/ref/client/type/visualenvironmententity) on the client.
 - Add [==](/vext/ref/client/type/visualenvironmentstate/#op-eq) operator to [VisualEnvironmentState](/vext/ref/client/type/visualenvironmentstate).
