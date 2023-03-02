@@ -1,0 +1,8 @@
+name: "WeaponFiring:UpdateAmmo"
+type: event
+
+params:
+  weaponFiring:
+    type: WeaponFiring
+  entity:
+    type: Entity

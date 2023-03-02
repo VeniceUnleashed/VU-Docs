@@ -12,5 +12,5 @@ hideChildren: true
 | [Level:LoadingInfo](/vext/ref/shared/event/level_loadinginfo) | [Level:RegisterEntityResources](/vext/ref/shared/event/level_registerentityresources) |
 | [Partition:Loaded](/vext/ref/shared/event/partition_loaded) | [ResourceManager:ClearCompartment](/vext/ref/shared/event/resourcemanager_clearcompartment) |
 | [UpdateManager:Update](/vext/ref/shared/event/updatemanager_update) | [WeaponFiring:Create](/vext/ref/shared/event/weaponfiring_create) |
-| [WeaponFiring:Update](/vext/ref/shared/event/weaponfiring_update) | |
+| [WeaponFiring:Update](/vext/ref/shared/event/weaponfiring_update) | [WeaponFiring:UpdateAmmo](/vext/ref/shared/event/weaponfiring_updateammo) |
 

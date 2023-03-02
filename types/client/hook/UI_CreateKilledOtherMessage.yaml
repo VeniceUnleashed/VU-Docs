@@ -1,11 +1,9 @@
-name: "UI:CreateKillMessage"
+name: "UI:CreateKilledOtherMessage"
 type: hook
 
 params:
-  victimId:
-    type: int
-  killerId:
-    type: int
+  victim:
+    type: Player
   weapon:
     type: SoldierWeaponUnlockAsset | VehicleEntityData
     nullable: true

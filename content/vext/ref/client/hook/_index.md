@@ -10,6 +10,7 @@ hideChildren: true
 | [EntityFactory:Create](/vext/ref/client/hook/entityfactory_create) | [EntityFactory:CreateFromBlueprint](/vext/ref/client/hook/entityfactory_createfromblueprint) |
 | [Input:PreUpdate](/vext/ref/client/hook/input_preupdate) | [UI:CreateAction](/vext/ref/client/hook/ui_createaction) |
 | [UI:CreateChatMessage](/vext/ref/client/hook/ui_createchatmessage) | [UI:CreateKillMessage](/vext/ref/client/hook/ui_createkillmessage) |
+| [UI:CreateKilledOtherMessage](/vext/ref/client/hook/ui_createkilledothermessage) | [UI:CreateSelfKilledMessage](/vext/ref/client/hook/ui_createselfkilledmessage) |
 | [UI:DrawEnemyNametag](/vext/ref/client/hook/ui_drawenemynametag) | [UI:DrawFriendlyNametag](/vext/ref/client/hook/ui_drawfriendlynametag) |
 | [UI:DrawMoreNametags](/vext/ref/client/hook/ui_drawmorenametags) | [UI:DrawNametags](/vext/ref/client/hook/ui_drawnametags) |
 | [UI:DrawSquadNametag](/vext/ref/client/hook/ui_drawsquadnametag) | [UI:EnableCursorMode](/vext/ref/client/hook/ui_enablecursormode) |
