@@ -6,7 +6,15 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 19985 "02/02/2023" true %}}
+
+- VeniceEXT was updated to `1.13.0` ([changelog](/vext/changelog/#1_13_0)).
+- Add [vu.FriendlyFireSuppression](/hosting/commands/#vufriendlyfiresuppression) RCON command to enable/disable friendly fire suppression. Disabled by default.
+- Add volume multiplier to VOIP.
+- Fix issue that prevents number mod settings from saving correctly.
+
 {{% changeset 19968 "03/11/2022" %}}
+
 - VeniceEXT was updated to `1.12.0` ([changelog](/vext/changelog/#1_12_0)).
 - Add [vu.DisablePreRound](/hosting/commands/#vudisablepreround) RCON command.
 - Introduce `-username` and `-password` as [client launch arguments](/general/args/#client-arguments) to automatically login.
@@ -17,9 +25,11 @@ Below you can find a full list of changes to VU, corresponding to every VU updat
 - Fix squads not getting assigned properly in squad rush and squad deathmatch.
 
 {{% changeset 19549 "08/10/2022" %}}
+
 - Fix a potential crash when spawning a bot in TDM after a map switch.
 
 {{% changeset 19549 "08/10/2022" %}}
+
 - VeniceEXT was updated to `1.11.0` ([changelog](/vext/changelog/#1_11_0)).
 - Fix `AutoTeamEntityData.rotateTeamOnNewRound` being ignored. When this is set to `false`, teams will no longer be rotated between rounds.
 - Several changes to `modList.*` RCON commands:
@@ -30,18 +40,22 @@ Below you can find a full list of changes to VU, corresponding to every VU updat
   - `modList.Remove` won't be case-sensitive anymore and also contains a fix where it would remove the mod but return `ModNotListed`.
 
 {{% changeset 19412 "11/09/2022" %}}
+
 - VeniceEXT was updated to `1.10.0` ([changelog](/vext/changelog/#1_10_0)).
 - Add initial support for adjusting mod settings from the VU settings menu.
 - Add `vars.maxSpectators` RCON command.
 
 {{% changeset 19072 "06/09/2022" %}}
+
 - VeniceEXT was updated to `1.9.0` ([changelog](/vext/changelog/#1_9_0)).
 - Fix joining password-protected servers via launch-arguments.
 
 {{% changeset 19002 "22/07/2022" %}}
+
 - Fix an issue where downloaded mod files wouldn't be saved to disk.
 
 {{% changeset 18991 "22/07/2022" %}}
+
 - Improve unicode compatibility across the board. Updates may still fail for installations in paths with unicode characters.
 - Make command-line options case-insensitive.
 - Add support for generating full memory dumps on crash by using the `-fulldump` command-line option. When this is enabled, the crash dialog will show the upload as having failed.
@@ -51,6 +65,7 @@ Below you can find a full list of changes to VU, corresponding to every VU updat
 - On supported configurations, the computer will now assign VU the high performance GPU.
 
 {{% changeset 18896 "20/07/2022" %}}
+
 - Fix an issue where starting VU launches the process but it gets stuck in Task Manager when Citrix is installed.
 - Fix VU crashing when unplugging an audio device.
 - Fix VU crashing shortly after startup when an audio device gets in an invalid state.
@@ -58,40 +73,48 @@ Below you can find a full list of changes to VU, corresponding to every VU updat
 - Server tags in the server filters window are now sorted.
 
 {{% changeset 18848 "29/05/2022" %}}
+
 - Fix various issues caused by handling invalid entities.
 - Fix VU mod memory usage reporting.
 - Improve reliability of raycast methods.
 - VeniceEXT was updated to `1.8.1` ([changelog](/vext/changelog/#1_8_1)).
 
 {{% changeset 18675 "03/05/2022" %}}
+
 - Fix an issue where frostbite type array operations would sometimes cause memory corruption or UB.
 - Fix a crash when [Player:AttachSoldier](/vext/ref/server/type/player/#attachsoldier) was called during certain update passes.
 
 {{% changeset 18675 "03/05/2022" %}}
+
 - Fix an issue where frostbite type array operations would sometimes cause memory corruption or UB.
 - Fix a crash when [Player:AttachSoldier](/vext/ref/server/type/player/#attachsoldier) was called during certain update passes.
 
 {{% changeset 18616 "02/05/2022" %}}
+
 - The [VU Main Menu](https://github.com/EmulatorNexus/Fusion-UI) and the [Built-in Mod](https://github.com/EmulatorNexus/VU-BuiltIn) are now open source and open to contribution.
 - Allow development of the built-in mod when `-vextdebug` is defined (see mod readme).
 - Expose mod settings api to main menu UI (`state.settings.modSettings` and relevant `SetModSettingX` calls).
 - Expose account storage api to main menu UI (`state.user.accountStorage` and relevant actions).
-- Expose favorite server api to main menu UI (`state.servers.favoriteServers` and relevant actions). 
+- Expose favorite server api to main menu UI (`state.servers.favoriteServers` and relevant actions).
 - VeniceEXT was updated to `1.8.0` ([changelog](/vext/changelog/#1_8_0)).
 
 {{% changeset 18474 "06/04/2022" %}}
+
 - Fix HTTP asset download issues.
 
 {{% changeset 18463 "01/04/2022" %}}
+
 - Fix a server freeze that would happen when a player connected.
 - Increase texture streaming pool size by default, fixing infinite loading for mods that inject lots of bundles.
 - VeniceEXT was updated to `1.7.0` ([changelog](/vext/changelog/#1_7_0)).
 
 {{% changeset 18244 "22/02/2022" %}}
+
 - Prevent crash report window from showing up when running in console or headless mode ([#723](https://github.com/EmulatorNexus/VeniceUnleashed/issues/723)).
 - VeniceEXT was updated to `1.6.0` ([changelog](/vext/changelog/#1_6_0)).
 
 {{% changeset 18241 "18/02/2022" %}}
+
 - Fix `SoldierEntity.weaponsComponent.weapons` indices ([#743](https://github.com/EmulatorNexus/VeniceUnleashed/issues/743))
 
 {{% changeset 18070 "18/02/2022" %}}
@@ -147,7 +170,6 @@ Below you can find a full list of changes to VU, corresponding to every VU updat
 
 - Fix a memory leak caused by detailed client-side raycasts.
 - VeniceEXT was updated to `1.3.1` ([changelog](/vext/changelog/#1_3_1)).
-
 
 {{% changeset 17768 "11/10/2021" %}}
 
@@ -316,17 +338,14 @@ Below you can find a full list of changes to VU, corresponding to every VU updat
 
 - Fix a bug which would cause the server to only process one network message on every update / frame. This should greatly improve performance and reduce delays for mods which use NetEvents extensively.
 
-
 {{% changeset 17203 "27/10/2020" %}}
 
 - You can now have your server be unlisted (not shown in the server list) by launching it with the `-unlisted` argument (see [here](/general/args/) for more details).
 - You can now specify the server connection IP manually using the `-joinaddr` argument (see [here](/general/args/) for more details).
 
-
 {{% changeset 17182 "05/10/2020" %}}
 
 - Fix game activation via the `-activate` command-line option (thanks Imposter).
-
 
 {{% changeset 17169 "03/10/2020" %}}
 

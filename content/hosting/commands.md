@@ -22,7 +22,7 @@ Clears the list of mods to loads on the next server restart and saves the change
 
 ### `modList.Debug`
 
-Accepts a single boolean argument (`true` or `false`) which toggles debug mode for any loaded extensions. When set to `true`, any scripts will be built with debug symbols enabled, which will make it so errors printed on the server and the clients will contain more useful information about their source. 
+Accepts a single boolean argument (`true` or `false`) which toggles debug mode for any loaded extensions. When set to `true`, any scripts will be built with debug symbols enabled, which will make it so errors printed on the server and the clients will contain more useful information about their source.
 
 When used with no arguments, it returns whether debug mode is currently enabled or not. Defaults to `false`.
 
@@ -110,6 +110,12 @@ Accepts a single integer argument (`0` or higher) that specifies a multiplier fo
 
 When used with no arguments, it returns the current suppression multiplier. Defaults to `100`.
 
+### `vu.FriendlyFireSuppression`
+
+Accepts a single boolean argument (`true` or `false`) that specifies whether friendly fire should be suppressed as well.
+
+When used with no arguments, it returns whether friendly fire suppression is enabled or not. Defaults to `false`.
+
 ### `vu.TimeScale`
 
 Accepts a single numeric argument (`0.0` to `2.0`) that specifies the relative time scale for all players. Values lower than `1.0` make the game slower, values higher `1.0` make the game faster.
@@ -136,7 +142,7 @@ A URL pointing to an external HTTP server hosting mod assets, or an empty string
 
 ### `vu.DisablePreRound`
 
-Accepts a single boolean argument (`true` or `false`). This has to be used before the level gets loaded. When set to `true` the preround will be disabled on the next level (re)load. 
+Accepts a single boolean argument (`true` or `false`). This has to be used before the level gets loaded. When set to `true` the preround will be disabled on the next level (re)load.
 
 This command can be used in the `Startup.txt` to disable the preround. To reenable the preround just set it back to `true` and reload the level.
 

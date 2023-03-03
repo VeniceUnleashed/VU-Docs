@@ -1,0 +1,6 @@
+name: "Player:EnteredLevel"
+type: event
+
+params:
+  player:
+    type: Player

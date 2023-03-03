@@ -3,7 +3,18 @@ title: Changelog
 weight: 1
 ---
 
+{{% changeset-vext "1.13.0" "02/03/2023" %}}
+
+- Introduces [WeaponFiring:UpdateAmmo](/vext/ref/shared/event/weaponfiring_updateammo) shared event.
+- Introduces [Player:EnteredLevel](/vext/ref/server/event/player_enteredlevel) server event.
+- Introduces [UI:CreateSelfKilledMessage](/vext/ref/client/hook/ui_createselfkilledmessage) client hook.
+- Introduces [UI:CreateKilledOtherMessage](/vext/ref/client/hook/ui_createkilledothermessage) client hook.
+- Extended [UI:CreateKillMessage](/vext/ref/client/hook/ui_createkillmessage) client hook with more information.
+- Add [EquipWeapon](/vext/ref/client/type/soldierweaponscomponent#equipweapon) to the client [SoldierWeaponsComponent](/vext/ref/client/type/soldierweaponscomponent).
+- Add [UnequipWeapon](/vext/ref/client/type/soldierweaponscomponent#unequipweapon) to the client [SoldierWeaponsComponent](/vext/ref/client/type/soldierweaponscomponent).
+
 {{% changeset-vext "1.12.0" "03/11/2022" %}}
+
 - Introduces [Player:ChangingWeapon](/vext/ref/client/event/player_changingweapon) client event.
 - Introduces [Player:FindBestTeam](/vext/ref/server/hook/player_findbestteam) server hook.
 - Introduces [CombatArea:PlayerDeserting](/vext/ref/server/event/combatarea_playerdeserting) server event.
@@ -26,6 +37,7 @@ weight: 1
 - Fix crashes when using `IsAsyncRaycast` flag in Raycasts.
 
 {{% changeset-vext "1.11.0" "08/10/2022" %}}
+
 - Introduces [TicketCounterEntity](/vext/ref/server/type/ticketcounterentity) on the server.
 - Introduces [VisualEnvironmentEntity](/vext/ref/client/type/visualenvironmententity) on the client.
 - Add [==](/vext/ref/client/type/visualenvironmentstate/#op-eq) operator to [VisualEnvironmentState](/vext/ref/client/type/visualenvironmentstate).
@@ -54,6 +66,7 @@ weight: 1
   - [EntityBusPeer:RegisterCreateCallback](/vext/ref/shared/type/entitybuspeer/#registercreatecallback) was not working as intended.
 
 {{% changeset-vext "1.10.0" "11/09/2022" %}}
+
 - Introduces [isAllowedToSpawnOn](/vext/ref/client/type/player/#isallowedtospawnon) property to [Player](/vext/ref/client/type/player) client type.
 - Introduces [isAllowedToSpawnOn](/vext/ref/server/type/player/#isallowedtospawnon) property to [Player](/vext/ref/server/type/player) server type.
 - [RagdollComponent](/vext/ref/client/type/ragdollcomponent) now inherits from [Component](/vext/ref/shared/type/component).
@@ -71,6 +84,7 @@ weight: 1
 - Introduces [ClientUtils:SetSquadAutoJoining](/vext/ref/client/library/clientutils/#setsquadautojoining) client method.
 
 {{% changeset-vext "1.9.0" "06/09/2022" %}}
+
 - Introduces [zoomLevel](/vext/ref/shared/type/entryinput/#zoomlevel) property to [EntryInput](/vext/ref/shared/type/entryinput) type.
 - [Player:RequestJoin](/vext/ref/server/hook/player_requestjoin) allows now to return the [HookContext](/vext/ref/shared/type/hookcontext) with a string. The rejected user will receive that string.
 - Introduces [isSupportedShooting](/vext/ref/shared/type/gunsway/#issupportedshooting) property to [GunSway](/vext/ref/shared/type/gunsway) type.
@@ -78,6 +92,7 @@ weight: 1
 - Introduces [modifierData](/vext/ref/shared/type/gunsway/#modifierData) property to [GunSway](/vext/ref/shared/type/gunsway) type.
 
 {{% changeset-vext "1.8.1" "29/05/2022" %}}
+
 - Fix issues caused by passing `nil` where VEXT would instead expect a callback.
 - Fix `Player:SetSquadLeader` not firing on the client when a player is removed.
 - Fix `Player:SetSquadLeader` firing for the wrong player when using `squad.leader` RCON command.
@@ -85,6 +100,7 @@ weight: 1
 - Introduces the [RegisterPropertyChangedCallback](/vext/ref/shared/type/entitybuspeer/#registerpropertychangedcallback) and [UnregisterPropertyChangedCallback](/vext/ref/shared/type/entitybuspeer/#unregisterpropertychangedcallback) to the [EntityBusPeer](/vext/ref/shared/type/entitybuspeer) type.
 
 {{% changeset-vext "1.8.0" "02/05/2022" %}}
+
 - Adds initial support for components:
   - Introduces a new [EntityBusPeer](/vext/ref/shared/type/entitybuspeer) shared type.
   - Adjusts the shared [Entity](/vext/ref/shared/type/entity) type to derive from [EntityBusPeer](/vext/ref/shared/type/entitybuspeer).
@@ -95,16 +111,18 @@ weight: 1
 - Adjust DataContainer reference counting to make it more accurate (related to [#770](https://github.com/EmulatorNexus/VeniceUnleashed/issues/770)).
 
 {{% changeset-vext "1.7.0" "01/04/2022" %}}
+
 - Add support for using custom content superbundles. See the [guide](/vext/guides/custom-content/) for more info.
 
 {{% changeset-vext "1.6.0" "18/02/2022" %}}
+
 - Fix [VoipEmitter:Emitting](/vext/ref/client/event/voipemitter_emitting/) event firing multiple times ([#707](https://github.com/EmulatorNexus/VeniceUnleashed/issues/707)).
 - Introduces a new [GetTimeNS](/vext/ref/shared/library/sharedutils/#gettimens) method to the shared [SharedUtils](/vext/ref/shared/library/sharedutils/) library.
 - Fix certain issues with the [Input:PreUpdate](/vext/ref/client/hook/input_preupdate/) hook.
 
 {{% changeset-vext "1.5.0" "18/02/2022" %}}
-- Expose `updateInterval` to [ClientGameEntity](/vext/ref/client/type/gameentity) and [ServerGameEntity](/vext/ref/server/type/gameentity) ([#669](https://github.com/EmulatorNexus/VeniceUnleashed/issues/669)).
 
+- Expose `updateInterval` to [ClientGameEntity](/vext/ref/client/type/gameentity) and [ServerGameEntity](/vext/ref/server/type/gameentity) ([#669](https://github.com/EmulatorNexus/VeniceUnleashed/issues/669)).
 
 {{% changeset-vext "1.4.0" "08/01/2022" %}}
 
@@ -157,11 +175,13 @@ weight: 1
 - Updated to Lua `5.4.2`.
 
 {{% changeset-vext "1.1.3" "25/03/2021" %}}
+
 - Fix [EventEntity](/vext/ref/shared/type/entityevent/#eventid) `eventId` returning `nil` ([#626](https://github.com/EmulatorNexus/VeniceUnleashed/issues/626)).
 - Fix crash in [RegisterEventCallback](/vext/ref/shared/type/entity/#registereventcallback) when `modlist.reloadExtensions` is sent to RCON.
 - Fix crash in broadcast NetEvents when the player manager was not available (This now will emit a warning).
 
 {{% changeset-vext "1.1.2" "25/03/2021" %}}
+
 - Add missing documented enum value `WeaponFiring.Reload`.
 
 {{% changeset-vext "1.1.1" "11/02/2021" %}}
@@ -171,7 +191,7 @@ weight: 1
 
 {{% changeset-vext "1.1.0" "18/01/2021" %}}
 
-- Add support for async HTTP requests. All HTTP [Net](/vext/ref/shared/library/net/) library methods now have `Async` variants. 
+- Add support for async HTTP requests. All HTTP [Net](/vext/ref/shared/library/net/) library methods now have `Async` variants.
 
 {{% changeset-vext "1.0.8" "20/12/2020" %}}
 
