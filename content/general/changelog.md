@@ -6,12 +6,16 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
-{{% changeset 19985 "02/02/2023" true %}}
+{{% changeset 19985 "06/03/2023" true %}}
 
 - VeniceEXT was updated to `1.13.0` ([changelog](/vext/changelog/#1_13_0)).
 - Add [vu.FriendlyFireSuppression](/hosting/commands/#vufriendlyfiresuppression) RCON command to enable/disable friendly fire suppression. Disabled by default.
 - Add volume multiplier to VOIP.
 - Fix issue that prevents number mod settings from saving correctly.
+
+{{% changeset 19969 "21/12/2022" true %}}
+
+- Fix a potential garbagecollection crash ([#889](https://github.com/EmulatorNexus/VeniceUnleashed/issues/889)).
 
 {{% changeset 19968 "03/11/2022" %}}
 
@@ -24,7 +28,7 @@ Below you can find a full list of changes to VU, corresponding to every VU updat
 - Fix squads being private by default.
 - Fix squads not getting assigned properly in squad rush and squad deathmatch.
 
-{{% changeset 19549 "08/10/2022" %}}
+{{% changeset 19551 "13/10/2022" %}}
 
 - Fix a potential crash when spawning a bot in TDM after a map switch.
 
