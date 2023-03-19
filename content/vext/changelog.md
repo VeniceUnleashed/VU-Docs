@@ -3,15 +3,16 @@ title: Changelog
 weight: 1
 ---
 
-{{% changeset-vext "1.13.0" "02/03/2023" %}}
+{{% changeset-vext "1.13.0" "06/03/2023" %}}
 
 - Introduces [WeaponFiring:UpdateAmmo](/vext/ref/shared/event/weaponfiring_updateammo) shared event.
 - Introduces [Player:EnteredLevel](/vext/ref/server/event/player_enteredlevel) server event.
 - Introduces [UI:CreateSelfKilledMessage](/vext/ref/client/hook/ui_createselfkilledmessage) client hook.
 - Introduces [UI:CreateKilledOtherMessage](/vext/ref/client/hook/ui_createkilledothermessage) client hook.
 - Extended [UI:CreateKillMessage](/vext/ref/client/hook/ui_createkillmessage) client hook with more information.
-- Add [EquipWeapon](/vext/ref/client/type/soldierweaponscomponent#equipweapon) to the client [SoldierWeaponsComponent](/vext/ref/client/type/soldierweaponscomponent).
-- Add [UnequipWeapon](/vext/ref/client/type/soldierweaponscomponent#unequipweapon) to the client [SoldierWeaponsComponent](/vext/ref/client/type/soldierweaponscomponent).
+- Add [EquipWeapon](/vext/ref/server/type/soldierweaponscomponent#equipweapon) to the server [SoldierWeaponsComponent](/vext/ref/server/type/soldierweaponscomponent).
+- Add [UnequipWeapon](/vext/ref/server/type/soldierweaponscomponent#unequipweapon) to the server [SoldierWeaponsComponent](/vext/ref/server/type/soldierweaponscomponent).
+- Fix [VoipEmitter:Emitting](/vext/ref/client/event/voipemitter_emitting/) getting called twice for the local player.
 
 {{% changeset-vext "1.12.0" "03/11/2022" %}}
 

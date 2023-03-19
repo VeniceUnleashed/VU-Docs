@@ -20,22 +20,6 @@ properties:
     type: WeaponSlot
     readOnly: true
 
-methods:
-  - name: EquipWeapon
-    params:
-      weaponSlot:
-        type: WeaponSlot
-      weaponUnlockAsset:
-        type: DataContainer
-      unlockAssets:
-        type: DataContainer
-        array: true
-
-  - name: UnequipWeapon
-    params:
-      weaponSlot:
-        type: WeaponSlot
-
 static:
   typeInfo:
     type: TypeInformation

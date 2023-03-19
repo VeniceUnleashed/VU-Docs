@@ -2,7 +2,7 @@ name: "UI:CreateSelfKilledMessage"
 type: hook
 
 params:
-  victim:
+  killer:
     type: Player
   weapon:
     type: SoldierWeaponUnlockAsset | VehicleEntityData

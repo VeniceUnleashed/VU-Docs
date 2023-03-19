@@ -15,6 +15,13 @@ Inherits from [Component](/vext/ref/shared/type/component)
 | {{< prop "weapons" true >}} | [SoldierWeapon](/vext/ref/server/type/soldierweapon)[] |
 | {{< prop "currentWeaponSlot" true >}} | [WeaponSlot](/vext/ref/fb/weaponslot) |
 
+### Methods
+
+| Method | Returns |
+| ------ | ------- |
+| **[EquipWeapon](#equipweapon)**(weaponSlot: [WeaponSlot](/vext/ref/fb/weaponslot), weaponUnlockAsset: [DataContainer](/vext/ref/shared/type/datacontainer), unlockAssets: [DataContainer](/vext/ref/shared/type/datacontainer){}) | void |
+| **[UnequipWeapon](#unequipweapon)**(weaponSlot: [WeaponSlot](/vext/ref/fb/weaponslot)) | void |
+
 ### Static members
 
 | Name | Type |
@@ -38,6 +45,30 @@ Inherits from [Component](/vext/ref/shared/type/component)
 ### {{% prop-heading "currentWeaponSlot" true %}}
 
 > **[WeaponSlot](/vext/ref/fb/weaponslot)**
+
+## Methods
+
+### EquipWeapon {#equipweapon}
+
+> **EquipWeapon**(weaponSlot: [WeaponSlot](/vext/ref/fb/weaponslot), weaponUnlockAsset: [DataContainer](/vext/ref/shared/type/datacontainer), unlockAssets: [DataContainer](/vext/ref/shared/type/datacontainer){})
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **weaponSlot** | [WeaponSlot](/vext/ref/fb/weaponslot) |  |
+| **weaponUnlockAsset** | [DataContainer](/vext/ref/shared/type/datacontainer) |  |
+| **unlockAssets** | [DataContainer](/vext/ref/shared/type/datacontainer){} |  |
+
+### UnequipWeapon {#unequipweapon}
+
+> **UnequipWeapon**(weaponSlot: [WeaponSlot](/vext/ref/fb/weaponslot))
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **weaponSlot** | [WeaponSlot](/vext/ref/fb/weaponslot) |  |
 
 ## Static members
 
