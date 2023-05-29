@@ -8,8 +8,8 @@ Below you can find a full list of changes to VU, corresponding to every VU updat
 
 {{% changeset 20037 "01/01/2023" true %}}
 
-- Fix [ClientDamageInfo](/vext/ref/client/type/damageinfo/) returning incorrect data [#637](https://github.com/VeniceUnleashed/VeniceUnleashed/issues/637).
-- Add software rendering support to the WebUI. This is automatically enabled for Windows 7 users and fixes the infinite loading screen on Windows 7 [#888](https://github.com/VeniceUnleashed/VeniceUnleashed/issues/888).
+- Fix [ClientDamageInfo](/vext/ref/client/type/damageinfo/) returning incorrect data ([#637](https://github.com/VeniceUnleashed/VeniceUnleashed/issues/637)).
+- Add software rendering support to the WebUI. This is automatically enabled for Windows 7 users and fixes the infinite loading screen on Windows 7 ([#888](https://github.com/VeniceUnleashed/VeniceUnleashed/issues/888)).
 - Improve stability of the `fb://` and `webui://` protocols in the WebUI.
 - Decrease overal memory usage of the main game process by ~300MB. This was accomplished by enabling extra CEF processes.
 
