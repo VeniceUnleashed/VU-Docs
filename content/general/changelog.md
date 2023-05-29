@@ -6,14 +6,26 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
-{{% changeset 19985 "06/03/2023" true %}}
+{{% changeset 20037 "01/01/2023" true %}}
+
+- Fix [ClientDamageInfo](/vext/ref/client/type/damageinfo/) returning incorrect data [#637](https://github.com/VeniceUnleashed/VeniceUnleashed/issues/637).
+- Add software rendering support to the WebUI. This is automatically enabled for Windows 7 users and fixes the infinite loading screen on Windows 7 [#888](https://github.com/VeniceUnleashed/VeniceUnleashed/issues/888).
+- Improve stability of the `fb://` and `webui://` protocols in the WebUI.
+- Decrease overal memory usage of the main game process by ~300MB. This was accomplished by enabling extra CEF processes.
+
+{{% changeset 19989 "03/05/2023" %}}
+
+- Include all CEF locales in the VU installer, this fixes a bug where some people would instantly crash on startup.
+
+{{% changeset 19986 "15/04/2023" %}}
 
 - VeniceEXT was updated to `1.13.0` ([changelog](/vext/changelog/#1_13_0)).
 - Add [vu.FriendlyFireSuppression](/hosting/commands/#vufriendlyfiresuppression) RCON command to enable/disable friendly fire suppression. Disabled by default.
 - Add volume multiplier to VOIP.
 - Fix issue that prevents number mod settings from saving correctly.
+- Fix `-maxPlayers` by setting max spectators to 0 by default
 
-{{% changeset 19969 "21/12/2022" true %}}
+{{% changeset 19969 "21/12/2022" %}}
 
 - Fix a potential garbagecollection crash ([#889](https://github.com/EmulatorNexus/VeniceUnleashed/issues/889)).
 
