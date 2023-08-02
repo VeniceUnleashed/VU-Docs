@@ -7,7 +7,8 @@
     "start": "hugo server",
     "build": "hugo -e production",
     "build:types": "node types/generate-docs.js",
-    "build:index": "node types/generate-search-index.js"
+    "build:index": "node types/generate-search-index.js",
+    "build:teal": "node types/generate-teal-types.js"
   },
   "repository": {
     "type": "git",
