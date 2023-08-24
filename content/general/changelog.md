@@ -6,7 +6,16 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
-{{% changeset 20037 "01/01/2023" true %}}
+{{% changeset 20040 "25/08/2023" %}}
+
+- Add the ability authenticate with the EA app / Origin (LSX) for game activation. To do this, you can run VU with `-activate -lsx` while the EA app / Origin is running and you are logged in to an account that owns BF3.
+- Add the ability to use a token for game activation. To do this, you can run VU with `-activate -ea_token <token>` where `<token>` is an EA authentication token. The LSX activation method prints a token you could re-use within a short amount of time.
+
+{{% changeset 20039 "04/06/2023" %}}
+
+- Add the `-disableUiHwAcceleration` command-line flag which forces hardware acceleration for the WebUI off, falling back to software rendering.
+
+{{% changeset 20037 "26/05/2023" %}}
 
 - Fix [ClientDamageInfo](/vext/ref/client/type/damageinfo/) returning incorrect data ([#637](https://github.com/VeniceUnleashed/VeniceUnleashed/issues/637)).
 - Add software rendering support to the WebUI. This is automatically enabled for Windows 7 users and fixes the infinite loading screen on Windows 7 ([#888](https://github.com/VeniceUnleashed/VeniceUnleashed/issues/888)).
