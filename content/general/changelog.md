@@ -6,10 +6,12 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
-{{% changeset 20040 "25/08/2023" %}}
+{{% changeset 20041 "25/08/2023" %}}
 
 - Add the ability authenticate with the EA app / Origin (LSX) for game activation. To do this, you can run VU with `-activate -lsx` while the EA app / Origin is running and you are logged in to an account that owns BF3.
 - Add the ability to use a token for game activation. To do this, you can run VU with `-activate -ea_token <token>` where `<token>` is an EA authentication token. The LSX activation method prints a token you could re-use within a short amount of time.
+- All `-activate` commands now accept a `-wait` argument that can be used to make VU wait for a few seconds before terminating after activation.
+- The VU installer will now create an `Activate BF3` shortcut in your start menu, which can be used to activate the game using the EA app mechanism described above.
 
 {{% changeset 20039 "04/06/2023" %}}
 
