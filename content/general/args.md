@@ -55,6 +55,18 @@ Activates BF3 on the current machine using the specified Origin credentials.
 
 ---
 
+> `-activate -lsx`
+
+Activates BF3 on the current machine using EA app / Origin (LSX), which must be running and be logged in to an account that owns BF3. It also prints the authentication token retrieved from the EA app.
+
+---
+
+> `-activate -ea_token <token>`
+
+Activates BF3 on the current machine using the provided EA auth token. The token can be retrieved from another computer using the command above. Keep in mind that tokens expire.
+
+---
+
 > `-console`
 
 Allocates an external console window for debug logging.
@@ -122,6 +134,14 @@ Enable verbose debugging logging for CEF. Useful for catching issues with WebUI 
 > `-username <username> -password <password>`
 
 Logs you in to your VU account using the specified VU credentials.
+
+---
+
+> `-disableUiHwAcceleration`
+
+Force hardware acceleration for the WebUI off, falling back to software rendering. You can try this if you get a black loading screen when launching VU. Keep in mind that this will degrade your experience and your performance. This is enabled by default on unsupported operating systems.
+
+---
 
 ## Server arguments
 
