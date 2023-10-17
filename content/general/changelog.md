@@ -6,6 +6,16 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 20056 "25/09/2023" %}}
+
+- Fix quicker acceleration on high frequency ([#906](https://github.com/VeniceUnleashed/VeniceUnleashed/issues/906))
+- Fix faster damage expiration on high frequency, which caused revive protection to last longer. ([#596](https://github.com/VeniceUnleashed/VeniceUnleashed/issues/596))
+- Fix: same bullet damages the same soldier multiple times ([#552](https://github.com/VeniceUnleashed/VeniceUnleashed/issues/552)).
+- Add `vu.TeamActivatedMines`, which will make claymores and other mines also trigger on teammates ([#894](https://github.com/VeniceUnleashed/VeniceUnleashed/issues/894)).
+- Add `vu.CorpseDamageEnabled`. Dealing damage to the corpse to prevent a revive. (Tip: Tweak `VeniceSoldierHealthModuleData.manDownStateHealthPoints`) ([#912](https://github.com/VeniceUnleashed/VeniceUnleashed/issues/912)).
+- `Net:HttpDelete` and `Net:HttpDeleteAsync` allow sending data now as well ([#905](https://github.com/VeniceUnleashed/VeniceUnleashed/issues/905)).
+- `BulletEntity:Collision` hooks (Client & Server) allow returning a boolean now. Returning `true` will just go through whatever it collides with. Returning `false` will unspawn the bullet.
+
 {{% changeset 20041 "25/08/2023" %}}
 
 - Add the ability authenticate with the EA app / Origin (LSX) for game activation. To do this, you can run VU with `-activate -lsx` while the EA app / Origin is running and you are logged in to an account that owns BF3.
