@@ -11,3 +11,7 @@ params:
     type: Player
     readOnly: true
     nullable: true
+
+returns:
+  type: bool
+  nullable: true

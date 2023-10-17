@@ -271,6 +271,28 @@ methods:
     params:
       url:
         type: string
+      data:
+        type: string
+    returns:
+      type: HttpResponse
+      nullable: true
+  -
+    name: DeleteHTTP
+    params:
+      url:
+        type: string
+      options:
+        type: HttpOptions
+    returns:
+      type: HttpResponse
+      nullable: true
+  -
+    name: DeleteHTTP
+    params:
+      url:
+        type: string
+      data:
+        type: string
       options:
         type: HttpOptions
     returns:
@@ -288,6 +310,28 @@ methods:
     name: DeleteHTTPAsync
     params:
       url:
+        type: string
+      data:
+        type: string
+      callback:
+        type: callable
+        description: "A callback in the form `function(response: HttpResponse | nil): void`."
+  -
+    name: DeleteHTTPAsync
+    params:
+      url:
+        type: string
+      options:
+        type: HttpOptions
+      callback:
+        type: callable
+        description: "A callback in the form `function(response: HttpResponse | nil): void`."
+  -
+    name: DeleteHTTPAsync
+    params:
+      url:
+        type: string
+      data:
         type: string
       options:
         type: HttpOptions
@@ -308,6 +352,32 @@ methods:
     name: DeleteHTTPAsync
     params:
       url:
+        type: string
+      data:
+        type: string
+      context:
+        type: any
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, response: HttpResponse | nil): void`."
+  -
+    name: DeleteHTTPAsync
+    params:
+      url:
+        type: string
+      options:
+        type: HttpOptions
+      context:
+        type: any
+      callback:
+        type: callable
+        description: "A callback in the form `function(context: any, response: HttpResponse | nil): void`."
+  -
+    name: DeleteHTTPAsync
+    params:
+      url:
+        type: string
+      data:
         type: string
       options:
         type: HttpOptions

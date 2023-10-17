@@ -14,7 +14,6 @@ Below you can find a full list of changes to VU, corresponding to every VU updat
 - Add `vu.TeamActivatedMines`, which will make claymores and other mines also trigger on teammates ([#894](https://github.com/VeniceUnleashed/VeniceUnleashed/issues/894)).
 - Add `vu.CorpseDamageEnabled`. Dealing damage to the corpse to prevent a revive. (Tip: Tweak `VeniceSoldierHealthModuleData.manDownStateHealthPoints`) ([#912](https://github.com/VeniceUnleashed/VeniceUnleashed/issues/912)).
 - `Net:HttpDelete` and `Net:HttpDeleteAsync` allow sending data now as well ([#905](https://github.com/VeniceUnleashed/VeniceUnleashed/issues/905)).
-- `BulletEntity:Collision` hooks (Client & Server) allow returning a boolean now. Returning `true` will just go through whatever it collides with. Returning `false` will unspawn the bullet.
 
 {{% changeset 20041 "25/08/2023" %}}
 

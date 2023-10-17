@@ -2,7 +2,7 @@
 title: Player:RequestJoin
 ---
 
-> **Player:RequestJoin**(joinMode: string, accountGuid: [Guid](/vext/ref/shared/type/guid), playerGuid: [Guid](/vext/ref/shared/type/guid), playerName: string): bool
+> **Player:RequestJoin**(joinMode: string, accountGuid: [Guid](/vext/ref/shared/type/guid), playerGuid: [Guid](/vext/ref/shared/type/guid), playerName: string): bool \| string
 
 ## Parameters
 
@@ -17,7 +17,7 @@ title: Player:RequestJoin
 
 | Type | Description |
 | ---- | ----------- |
-| **bool** |  |
+| **bool** \| **string** |  |
 
 ## Example
 

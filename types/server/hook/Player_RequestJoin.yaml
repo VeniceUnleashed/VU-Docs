@@ -16,4 +16,4 @@ params:
     readOnly: true
 
 returns:
-  type: bool
+  type: bool | string

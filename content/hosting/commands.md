@@ -148,3 +148,19 @@ This command can be used in the `Startup.txt` to disable the preround. To reenab
 
 Default is set to `false`.
 When used with no arguments, it returns whether preround is disabled or not.
+
+### `vu.TeamActivatedMines`
+
+Allows you to control whether team members can trigger claymores and other mines.
+Accepts a single boolean argument, either `true` or `false`, to toggle the feature on or off.
+
+The default setting is `false`, meaning team members cannot trigger claymores and other mines by default.
+When used with no arguments, it returns the current state of whether team members can trigger claymores and other mines or not.
+
+### `vu.CorpseDamageEnabled`
+
+Enables or disables the ability to deal damage to a corpse, preventing revival.
+Accepts a single boolean argument, either `true` or `false`, to control whether damage to a corpse is permitted or not. (Tip: Tweak `VeniceSoldierHealthModuleData.manDownStateHealthPoints` with a mod.)
+
+The default setting is `false`, which means that damage to a corpse is disabled by default.
+When used with no arguments, it returns the current state of whether damage to a corpse is enabled or disabled.
