@@ -10,3 +10,7 @@ params:
   giverInfo:
     type: DamageGiverInfo
     readOnly: true
+
+returns:
+  type: bool
+  nullable: true

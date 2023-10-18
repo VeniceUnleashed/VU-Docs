@@ -33,11 +33,17 @@ title: Net
 | **[PutHTTPAsync](#puthttpasync-2)**(url: string, data: string, context: any, callback: callable) | void |
 | **[PutHTTPAsync](#puthttpasync-3)**(url: string, data: string, options: [HttpOptions](/vext/ref/shared/type/httpoptions), context: any, callback: callable) | void |
 | **[DeleteHTTP](#deletehttp)**(url: string) | [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil |
-| **[DeleteHTTP](#deletehttp-1)**(url: string, options: [HttpOptions](/vext/ref/shared/type/httpoptions)) | [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil |
+| **[DeleteHTTP](#deletehttp-1)**(url: string, data: string) | [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil |
+| **[DeleteHTTP](#deletehttp-2)**(url: string, options: [HttpOptions](/vext/ref/shared/type/httpoptions)) | [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil |
+| **[DeleteHTTP](#deletehttp-3)**(url: string, data: string, options: [HttpOptions](/vext/ref/shared/type/httpoptions)) | [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil |
 | **[DeleteHTTPAsync](#deletehttpasync)**(url: string, callback: callable) | void |
-| **[DeleteHTTPAsync](#deletehttpasync-1)**(url: string, options: [HttpOptions](/vext/ref/shared/type/httpoptions), callback: callable) | void |
-| **[DeleteHTTPAsync](#deletehttpasync-2)**(url: string, context: any, callback: callable) | void |
-| **[DeleteHTTPAsync](#deletehttpasync-3)**(url: string, options: [HttpOptions](/vext/ref/shared/type/httpoptions), context: any, callback: callable) | void |
+| **[DeleteHTTPAsync](#deletehttpasync-1)**(url: string, data: string, callback: callable) | void |
+| **[DeleteHTTPAsync](#deletehttpasync-2)**(url: string, options: [HttpOptions](/vext/ref/shared/type/httpoptions), callback: callable) | void |
+| **[DeleteHTTPAsync](#deletehttpasync-3)**(url: string, data: string, options: [HttpOptions](/vext/ref/shared/type/httpoptions), callback: callable) | void |
+| **[DeleteHTTPAsync](#deletehttpasync-4)**(url: string, context: any, callback: callable) | void |
+| **[DeleteHTTPAsync](#deletehttpasync-5)**(url: string, data: string, context: any, callback: callable) | void |
+| **[DeleteHTTPAsync](#deletehttpasync-6)**(url: string, options: [HttpOptions](/vext/ref/shared/type/httpoptions), context: any, callback: callable) | void |
+| **[DeleteHTTPAsync](#deletehttpasync-7)**(url: string, data: string, options: [HttpOptions](/vext/ref/shared/type/httpoptions), context: any, callback: callable) | void |
 | **[OptionsHTTP](#optionshttp)**(url: string) | [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil |
 | **[OptionsHTTP](#optionshttp-1)**(url: string, options: [HttpOptions](/vext/ref/shared/type/httpoptions)) | [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil |
 | **[OptionsHTTPAsync](#optionshttpasync)**(url: string, callback: callable) | void |
@@ -408,6 +414,23 @@ title: Net
 
 ### DeleteHTTP {#deletehttp-1}
 
+> **DeleteHTTP**(url: string, data: string): [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **url** | string |  |
+| **data** | string |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[HttpResponse](/vext/ref/shared/type/httpresponse)** \| **nil** |  |
+
+### DeleteHTTP {#deletehttp-2}
+
 > **DeleteHTTP**(url: string, options: [HttpOptions](/vext/ref/shared/type/httpoptions)): [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil
 
 #### Parameters
@@ -415,6 +438,24 @@ title: Net
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | **url** | string |  |
+| **options** | [HttpOptions](/vext/ref/shared/type/httpoptions) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **[HttpResponse](/vext/ref/shared/type/httpresponse)** \| **nil** |  |
+
+### DeleteHTTP {#deletehttp-3}
+
+> **DeleteHTTP**(url: string, data: string, options: [HttpOptions](/vext/ref/shared/type/httpoptions)): [HttpResponse](/vext/ref/shared/type/httpresponse) \| nil
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **url** | string |  |
+| **data** | string |  |
 | **options** | [HttpOptions](/vext/ref/shared/type/httpoptions) |  |
 
 #### Returns
@@ -436,6 +477,18 @@ title: Net
 
 ### DeleteHTTPAsync {#deletehttpasync-1}
 
+> **DeleteHTTPAsync**(url: string, data: string, callback: callable)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **url** | string |  |
+| **data** | string |  |
+| **callback** | callable | A callback in the form `function(response: HttpResponse | nil): void`. |
+
+### DeleteHTTPAsync {#deletehttpasync-2}
+
 > **DeleteHTTPAsync**(url: string, options: [HttpOptions](/vext/ref/shared/type/httpoptions), callback: callable)
 
 #### Parameters
@@ -446,7 +499,20 @@ title: Net
 | **options** | [HttpOptions](/vext/ref/shared/type/httpoptions) |  |
 | **callback** | callable | A callback in the form `function(response: HttpResponse | nil): void`. |
 
-### DeleteHTTPAsync {#deletehttpasync-2}
+### DeleteHTTPAsync {#deletehttpasync-3}
+
+> **DeleteHTTPAsync**(url: string, data: string, options: [HttpOptions](/vext/ref/shared/type/httpoptions), callback: callable)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **url** | string |  |
+| **data** | string |  |
+| **options** | [HttpOptions](/vext/ref/shared/type/httpoptions) |  |
+| **callback** | callable | A callback in the form `function(response: HttpResponse | nil): void`. |
+
+### DeleteHTTPAsync {#deletehttpasync-4}
 
 > **DeleteHTTPAsync**(url: string, context: any, callback: callable)
 
@@ -458,7 +524,20 @@ title: Net
 | **context** | any |  |
 | **callback** | callable | A callback in the form `function(context: any, response: HttpResponse | nil): void`. |
 
-### DeleteHTTPAsync {#deletehttpasync-3}
+### DeleteHTTPAsync {#deletehttpasync-5}
+
+> **DeleteHTTPAsync**(url: string, data: string, context: any, callback: callable)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **url** | string |  |
+| **data** | string |  |
+| **context** | any |  |
+| **callback** | callable | A callback in the form `function(context: any, response: HttpResponse | nil): void`. |
+
+### DeleteHTTPAsync {#deletehttpasync-6}
 
 > **DeleteHTTPAsync**(url: string, options: [HttpOptions](/vext/ref/shared/type/httpoptions), context: any, callback: callable)
 
@@ -467,6 +546,20 @@ title: Net
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | **url** | string |  |
+| **options** | [HttpOptions](/vext/ref/shared/type/httpoptions) |  |
+| **context** | any |  |
+| **callback** | callable | A callback in the form `function(context: any, response: HttpResponse | nil): void`. |
+
+### DeleteHTTPAsync {#deletehttpasync-7}
+
+> **DeleteHTTPAsync**(url: string, data: string, options: [HttpOptions](/vext/ref/shared/type/httpoptions), context: any, callback: callable)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **url** | string |  |
+| **data** | string |  |
 | **options** | [HttpOptions](/vext/ref/shared/type/httpoptions) |  |
 | **context** | any |  |
 | **callback** | callable | A callback in the form `function(context: any, response: HttpResponse | nil): void`. |

@@ -13,6 +13,7 @@ weight: 1
 - Add [EquipWeapon](/vext/ref/server/type/soldierweaponscomponent#equipweapon) to the server [SoldierWeaponsComponent](/vext/ref/server/type/soldierweaponscomponent).
 - Add [UnequipWeapon](/vext/ref/server/type/soldierweaponscomponent#unequipweapon) to the server [SoldierWeaponsComponent](/vext/ref/server/type/soldierweaponscomponent).
 - Fix [VoipEmitter:Emitting](/vext/ref/client/event/voipemitter_emitting/) getting called twice for the local player.
+- `BulletEntity:Collision` hooks (Client & Server) allow returning a boolean now. Returning `false` will just go through whatever it collides with. Returning `true` will unspawn the bullet.
 
 {{% changeset-vext "1.12.0" "03/11/2022" %}}
 

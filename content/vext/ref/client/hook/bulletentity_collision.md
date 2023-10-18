@@ -2,7 +2,7 @@
 title: BulletEntity:Collision
 ---
 
-> **BulletEntity:Collision**(entity: [Entity](/vext/ref/shared/type/entity), hit: [RayCastHit](/vext/ref/shared/type/raycasthit), shooter: [Player](/vext/ref/client/type/player) \| nil)
+> **BulletEntity:Collision**(entity: [Entity](/vext/ref/shared/type/entity), hit: [RayCastHit](/vext/ref/shared/type/raycasthit), shooter: [Player](/vext/ref/client/type/player) \| nil): bool \| nil
 
 ## Parameters
 
@@ -11,6 +11,12 @@ title: BulletEntity:Collision
 | **entity**{{< hook-ro >}} | [Entity](/vext/ref/shared/type/entity) |  |
 | **hit** | [RayCastHit](/vext/ref/shared/type/raycasthit) |  |
 | **shooter**{{< hook-ro >}} | [Player](/vext/ref/client/type/player) \| nil |  |
+
+## Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **bool** \| **nil** |  |
 
 ## Example
 
