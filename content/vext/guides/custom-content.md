@@ -15,7 +15,7 @@ As we explained in the [Frostbite data basics](/vext/guides/data) guide, game co
 
 The first step in the process involves downloading Rime. Rime is currently a work-in-progress, so only a command-line version of it is provided for experimentation purposes. You can download the latest pre-release version from below:
 
-[Download Rime Pre-release](https://i.nofate.me/36goiuRT0V1fZWd.zip)
+[Download Rime Pre-release](https://i.nofate.me/v5NkllNO25ExZSb4YeC7ygy.zip)
 
 After you've downloaded it, make sure you extract all the files in an easy to reach location and from it run `RimeREPL.exe`. `RimeREPL` provides an interactive command-line interface to various Rime functions, and we'll be using it to perform the various tasks outlined in this guide.
 
