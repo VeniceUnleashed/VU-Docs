@@ -43,15 +43,21 @@ vu.com -server -dedicated
 
 ## Activating the game
 
-If when running the VU server you get an EA activation prompt or if nothing happens, then you need to activate your game. If you get the EA prompt, simply fill out your Origin credentials and follow the prompts. If activation using the EA prompt fails or if nothing shows up, you can alternatively activate your game by launching the VU executable with some specific launch arguments:
+If when running the VU server you get an EA activation prompt or if nothing happens, then you need to activate your game. If you get the EA prompt, you can run the EA app and use the "Activate BF3" shortcut found in your start menu in order to activate the game. If you don't have that shortcut, you can either re-install the latest version of VU for it to be created, or run VU with the following arguments:
 
 ```
-vu.exe -activate -o_mail <email> -o_pass <password>
+vu.exe -activate -lsx
 ```
 
-Where `<email>` is your Origin account e-mail address and `<password>` is your password.
+If you're trying to activate the game on a machine that cannot run the EA app, follow the same process above on your own computer, and copy the token that will be printed in the console window during the activation process (the text between the single quotes, excluding the quotes). Then run the following command on your other machine:
 
-Alternatively, you can launch vanilla Battlefield 3 from Battlelog (multiplayer or singleplayer) and your game will be automatically activated. Keep in mind that you might be required to re-activate your game after major Windows Updates or hardware changes.
+```
+vu.exe -activate -ea_token <token>
+```
+
+Where `<token>` is the token you copied previously.
+
+Keep in mind that you might be required to re-activate your game after major Windows Updates or hardware changes.
 
 ## Port forwarding
 
