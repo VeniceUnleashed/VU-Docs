@@ -10,12 +10,6 @@ If you don't want to go through the trouble of setting up and maintaining a serv
 
 ## Server providers
 
-### [AllianceApps](https://allianceapps.io/vuserver)
-
-Provide managed VU servers in Europe and North America with an integrated server management panel.
-
-[Rent a server](https://allianceapps.io/vuserver)
-
 ### [XLGAMES.PRO](https://xlgames.pro/en/bf3vu/)
 
 Provide managed VU servers in Russia, Finland, and Germany with anti-DDOS options.
