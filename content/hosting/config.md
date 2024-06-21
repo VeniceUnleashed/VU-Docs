@@ -31,6 +31,7 @@ In general, the server instance directory structure should look something like t
     / ModList.txt
 ```
 
+When creating these files, ensure that you don't add an additional file extension (f.e. `ModList.txt.txt` with file name extensions enabled).
 If you are a server provider, it's usually a good idea to provide remote access to the `Admin` directory to the server administrator.
 
 ### `MapList.txt`
