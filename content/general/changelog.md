@@ -6,6 +6,29 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 20188 "21/04/2024" %}}
+
+- Update to official M124 release of CEF
+
+{{% changeset 20186 "20/04/2024" %}}
+
+- Fix origin linking.
+- Fix `vu.CorpseDamageEnabled` not being synced properly.
+
+{{% changeset 20175 "01/04/2024" %}}
+
+- Upgrade to new CEF.
+- Fix registry bug causing `vu://join` links not to work.
+- VeniceEXT was updated to `1.15.0` ([changelog](/vext/changelog/#1_15_0)).
+
+{{% changeset 20068 "11/02/2024" %}}
+
+- Fix potential memory leak.
+
+{{% changeset 20067 "18/10/2023" %}}
+
+- VeniceEXT was updated to `1.14.0` ([changelog](/vext/changelog/#1_14_0)).
+
 {{% changeset 20056 "25/09/2023" %}}
 
 - Fix quicker acceleration on high frequency ([#906](https://github.com/VeniceUnleashed/VeniceUnleashed/issues/906))
