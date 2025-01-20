@@ -30,8 +30,8 @@ title: EntityBus
 | **[PropertyChanged](#propertychanged-1)**(propertyId: int, value: any) | void |
 | **[PropertyChanged](#propertychanged-2)**(propertyName: string) | void |
 | **[PropertyChanged](#propertychanged-3)**(propertyName: string, value: any) | void |
-| **[GetLinks](#getlinks)**(toData: [DataContainer](/vext/ref/shared/type/datacontainer), fieldId: int) | ([Entity](/vext/ref/shared/type/entity) \| [Component](/vext/ref/shared/type/component)){} |
-| **[GetLinks](#getlinks-1)**(toData: [DataContainer](/vext/ref/shared/type/datacontainer), fieldName: string) | ([Entity](/vext/ref/shared/type/entity) \| [Component](/vext/ref/shared/type/component)){} |
+| **[GetLinks](#getlinks)**(toData: [DataContainer](/vext/ref/shared/type/datacontainer), fieldId: int) | (([DataContainer](/vext/ref/shared/type/datacontainer) \| [Entity](/vext/ref/shared/type/entity) \| [Component](/vext/ref/shared/type/component){})){} |
+| **[GetLinks](#getlinks-1)**(toData: [DataContainer](/vext/ref/shared/type/datacontainer), fieldName: string) | (([DataContainer](/vext/ref/shared/type/datacontainer) \| [Entity](/vext/ref/shared/type/entity) \| [Component](/vext/ref/shared/type/component){})){} |
 | **[RegisterEventCallback](#registereventcallback)**(callback: callable) | int |
 | **[RegisterEventCallback](#registereventcallback-1)**(context: any, callback: callable) | int |
 | **[UnregisterEventCallback](#unregistereventcallback)**(handle: int) | void |
@@ -175,7 +175,7 @@ title: EntityBus
 
 ### GetLinks {#getlinks}
 
-> **GetLinks**(toData: [DataContainer](/vext/ref/shared/type/datacontainer), fieldId: int): ([Entity](/vext/ref/shared/type/entity) \| [Component](/vext/ref/shared/type/component)){}
+> **GetLinks**(toData: [DataContainer](/vext/ref/shared/type/datacontainer), fieldId: int): (([DataContainer](/vext/ref/shared/type/datacontainer) \| [Entity](/vext/ref/shared/type/entity) \| [Component](/vext/ref/shared/type/component){})){}
 
 #### Parameters
 
@@ -188,11 +188,11 @@ title: EntityBus
 
 | Type | Description |
 | ---- | ----------- |
-| (**[Entity](/vext/ref/shared/type/entity)** \| **[Component](/vext/ref/shared/type/component)**){} |  |
+| ((**[DataContainer](/vext/ref/shared/type/datacontainer)** \| **[Entity](/vext/ref/shared/type/entity)** \| **[Component](/vext/ref/shared/type/component)**{})){} |  |
 
 ### GetLinks {#getlinks-1}
 
-> **GetLinks**(toData: [DataContainer](/vext/ref/shared/type/datacontainer), fieldName: string): ([Entity](/vext/ref/shared/type/entity) \| [Component](/vext/ref/shared/type/component)){}
+> **GetLinks**(toData: [DataContainer](/vext/ref/shared/type/datacontainer), fieldName: string): (([DataContainer](/vext/ref/shared/type/datacontainer) \| [Entity](/vext/ref/shared/type/entity) \| [Component](/vext/ref/shared/type/component){})){}
 
 #### Parameters
 
@@ -205,7 +205,7 @@ title: EntityBus
 
 | Type | Description |
 | ---- | ----------- |
-| (**[Entity](/vext/ref/shared/type/entity)** \| **[Component](/vext/ref/shared/type/component)**){} |  |
+| ((**[DataContainer](/vext/ref/shared/type/datacontainer)** \| **[Entity](/vext/ref/shared/type/entity)** \| **[Component](/vext/ref/shared/type/component)**{})){} |  |
 
 ### RegisterEventCallback {#registereventcallback}
 
