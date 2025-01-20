@@ -8,7 +8,7 @@ title: Player:RequestJoin
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| **joinMode**{{< hook-ro >}} | string |  |
+| **joinMode**{{< hook-ro >}} | string | Can be `player` or `spectator`. |
 | **accountGuid**{{< hook-ro >}} | [Guid](/vext/ref/shared/type/guid) |  |
 | **playerGuid**{{< hook-ro >}} | [Guid](/vext/ref/shared/type/guid) |  |
 | **playerName**{{< hook-ro >}} | string |  |
