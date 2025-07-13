@@ -34,6 +34,7 @@ title: ResourceManager
 | **[EndClear](#endclear)**(handle: int) | void |
 | **[AllocateDynamicCompartment](#allocatedynamiccompartment)**(name: string, parent: [ResourceCompartment](/vext/ref/shared/type/resourcecompartment), clientOnly: bool) | [ResourceCompartment](/vext/ref/shared/type/resourcecompartment) |
 | **[DestroyDynamicCompartment](#destroydynamiccompartment)**(compartment: [ResourceCompartment](/vext/ref/shared/type/resourcecompartment)) | void |
+| **[AlwaysClearGameCompartment](#alwayscleargamecompartment)**(enable: bool) | void |
 
 ## Methods
 
@@ -440,4 +441,14 @@ title: ResourceManager
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | **compartment** | [ResourceCompartment](/vext/ref/shared/type/resourcecompartment) |  |
+
+### AlwaysClearGameCompartment {#alwayscleargamecompartment}
+
+> **AlwaysClearGameCompartment**(enable: bool)
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **enable** | bool |  |
 

@@ -98,7 +98,8 @@ methods:
       fieldId:
         type: int
     returns:
-      type: Entity | Component
+      type: DataContainer | Entity | Component
+      nestedTable: true
       table: true
   -
     name: GetLinks
@@ -108,7 +109,8 @@ methods:
       fieldName:
         type: string
     returns:
-      type: Entity | Component
+      type: DataContainer | Entity | Component
+      nestedTable: true
       table: true
   -
     name: RegisterEventCallback

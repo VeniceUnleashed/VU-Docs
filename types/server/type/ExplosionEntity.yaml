@@ -28,11 +28,16 @@ methods:
         type: LinearTransform
       impactNormal:
         type: Vec3
+      origin:
+        type: Vec3
+      latency:
+        type: float
       damageMultiplier:
         type: float
-      shooterPlayer:
-        type: Player
-        nullable: true
+      externalDamageDirection:
+        type: Vec3
+      blastAngle:
+        type: float
 
 static:
   typeInfo:

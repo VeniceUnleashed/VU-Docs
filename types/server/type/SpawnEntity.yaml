@@ -63,6 +63,28 @@ properties:
     type: ControllableEntity
     table: true
     readOnly: true
+  alternatePointIndexOrder:
+    type: int
+    table: true
+    readOnly: true
+
+methods:
+  - name: IsAreaOccupiedByEnemies
+    params:
+      position:
+        type: Vec3
+      team:
+        type: TeamId
+    returns:
+      type: bool
+  - name: IsAreaOccupiedByKilledTeamMembers
+    params:
+      position:
+        type: Vec3
+      team:
+        type: TeamId
+    returns:
+      type: bool
 
 static:
   typeInfo:

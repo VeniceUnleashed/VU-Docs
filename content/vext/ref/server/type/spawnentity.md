@@ -34,6 +34,14 @@ Inherits from [SpatialEntity](/vext/ref/shared/type/spatialentity)
 | {{< prop "hasBeenInitialAutoSpawned" true >}} | bool |
 | {{< prop "useFriendZones" true >}} | bool |
 | {{< prop "spawnedControllables" true >}} | [ControllableEntity](/vext/ref/server/type/controllableentity){} |
+| {{< prop "alternatePointIndexOrder" true >}} | int{} |
+
+### Methods
+
+| Method | Returns |
+| ------ | ------- |
+| **[IsAreaOccupiedByEnemies](#isareaoccupiedbyenemies)**(position: [Vec3](/vext/ref/shared/type/vec3), team: [TeamId](/vext/ref/fb/teamid)) | bool |
+| **[IsAreaOccupiedByKilledTeamMembers](#isareaoccupiedbykilledteammembers)**(position: [Vec3](/vext/ref/shared/type/vec3), team: [TeamId](/vext/ref/fb/teamid)) | bool |
 
 ### Static members
 
@@ -138,6 +146,46 @@ Inherits from [SpatialEntity](/vext/ref/shared/type/spatialentity)
 ### {{% prop-heading "spawnedControllables" true %}}
 
 > **[ControllableEntity](/vext/ref/server/type/controllableentity)**{}
+
+### {{% prop-heading "alternatePointIndexOrder" true %}}
+
+> **int**{}
+
+## Methods
+
+### IsAreaOccupiedByEnemies {#isareaoccupiedbyenemies}
+
+> **IsAreaOccupiedByEnemies**(position: [Vec3](/vext/ref/shared/type/vec3), team: [TeamId](/vext/ref/fb/teamid)): bool
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **position** | [Vec3](/vext/ref/shared/type/vec3) |  |
+| **team** | [TeamId](/vext/ref/fb/teamid) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
+
+### IsAreaOccupiedByKilledTeamMembers {#isareaoccupiedbykilledteammembers}
+
+> **IsAreaOccupiedByKilledTeamMembers**(position: [Vec3](/vext/ref/shared/type/vec3), team: [TeamId](/vext/ref/fb/teamid)): bool
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| **position** | [Vec3](/vext/ref/shared/type/vec3) |  |
+| **team** | [TeamId](/vext/ref/fb/teamid) |  |
+
+#### Returns
+
+| Type | Description |
+| ---- | ----------- |
+| **bool** |  |
 
 ## Static members
 

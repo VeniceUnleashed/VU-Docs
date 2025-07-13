@@ -5,6 +5,7 @@ params:
   joinMode:
     type: string
     readOnly: true
+    description: "Can be `player` or `spectator`."
   accountGuid:
     type: Guid
     readOnly: true

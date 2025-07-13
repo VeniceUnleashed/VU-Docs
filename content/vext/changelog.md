@@ -3,6 +3,16 @@ title: Changelog
 weight: 1
 ---
 
+{{% changeset-vext "1.15.0" "01/04/2024" %}}
+
+- Add [alternatePointIndexOrder](/vext/ref/server/type/spawnentity#alternatepointindexorder) property to server [SpawnEntity](/vext/ref/server/type/spawnentity).
+- Add [IsAreaOccupiedByEnemies](/vext/ref/server/type/spawnentity#isareaoccupiedbyenemies) function to server [SpawnEntity](/vext/ref/server/type/spawnentity).
+- Add [IsAreaOccupiedByKilledTeamMembers](/vext/ref/server/type/spawnentity#isareaoccupiedbykilledteammembers) function to server [SpawnEntity](/vext/ref/server/type/spawnentity).
+
+{{% changeset-vext "1.14.0" "18/10/2023" %}}
+
+- Introduces [AlwaysClearGameCompartment](/vext/ref/shared/library/resourcemanager#alwayscleargamecompartment) to [ResourceManager](/vext/ref/shared/library/resourcemanager)
+
 {{% changeset-vext "1.13.0" "06/03/2023" %}}
 
 - Introduces [WeaponFiring:UpdateAmmo](/vext/ref/shared/event/weaponfiring_updateammo) shared event.

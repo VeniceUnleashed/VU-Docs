@@ -232,3 +232,8 @@ methods:
     params:
       compartment:
         type: ResourceCompartment
+  -
+    name: AlwaysClearGameCompartment
+    params:
+      enable:
+        type: bool

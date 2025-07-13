@@ -19,7 +19,7 @@ Inherits from [GameEntity](/vext/ref/server/type/gameentity)
 
 | Method | Returns |
 | ------ | ------- |
-| **[Detonate](#detonate)**(transform: [LinearTransform](/vext/ref/shared/type/lineartransform), impactNormal: [Vec3](/vext/ref/shared/type/vec3), damageMultiplier: float, shooterPlayer: [Player](/vext/ref/server/type/player) \| nil) | void |
+| **[Detonate](#detonate)**(transform: [LinearTransform](/vext/ref/shared/type/lineartransform), impactNormal: [Vec3](/vext/ref/shared/type/vec3), origin: [Vec3](/vext/ref/shared/type/vec3), latency: float, damageMultiplier: float, externalDamageDirection: [Vec3](/vext/ref/shared/type/vec3), blastAngle: float) | void |
 
 ### Static members
 
@@ -73,7 +73,7 @@ Inherits from [GameEntity](/vext/ref/server/type/gameentity)
 
 ### Detonate {#detonate}
 
-> **Detonate**(transform: [LinearTransform](/vext/ref/shared/type/lineartransform), impactNormal: [Vec3](/vext/ref/shared/type/vec3), damageMultiplier: float, shooterPlayer: [Player](/vext/ref/server/type/player) \| nil)
+> **Detonate**(transform: [LinearTransform](/vext/ref/shared/type/lineartransform), impactNormal: [Vec3](/vext/ref/shared/type/vec3), origin: [Vec3](/vext/ref/shared/type/vec3), latency: float, damageMultiplier: float, externalDamageDirection: [Vec3](/vext/ref/shared/type/vec3), blastAngle: float)
 
 #### Parameters
 
@@ -81,8 +81,11 @@ Inherits from [GameEntity](/vext/ref/server/type/gameentity)
 | ---- | ---- | ----------- |
 | **transform** | [LinearTransform](/vext/ref/shared/type/lineartransform) |  |
 | **impactNormal** | [Vec3](/vext/ref/shared/type/vec3) |  |
+| **origin** | [Vec3](/vext/ref/shared/type/vec3) |  |
+| **latency** | float |  |
 | **damageMultiplier** | float |  |
-| **shooterPlayer** | [Player](/vext/ref/server/type/player) \| nil |  |
+| **externalDamageDirection** | [Vec3](/vext/ref/shared/type/vec3) |  |
+| **blastAngle** | float |  |
 
 ## Static members
 
