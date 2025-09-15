@@ -59,7 +59,7 @@ However, using the full form of the attribute like this will work:
 
 Gameface does not support all HTML elements and attributes. Some of the most notable differences include:
 
-- The `<audio>` element is NOT supported, use `<video>` instead (more info here...).
+- The `<audio>` element is NOT supported, use `<video>` instead (continued [below](#audio)).
 - The `<input>` element ONLY supports `text`, `button` and `password` types.
 - The `<canvas>` element ONLY supports 2D rendering context, WebGL is **NOT** supported. 
 
