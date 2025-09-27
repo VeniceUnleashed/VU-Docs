@@ -6,6 +6,22 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 20656 "24/09/2025" true %}}
+
+- Queue [`WebUI:ExecuteJS`'](/vext/ref/client/library/webui/#executejs) commands until WebUI is fully loaded.
+- Update default font to [Noto Sans](https://www.google.com/get/noto/).
+- Fix several issues in the Main Menu.
+
+{{% changeset 20647 "03/09/2025" true %}}
+
+BREAKING CHANGE: We have introduced a new WebUI system that replaces the old Chromium based system. This new system is more stable and performs better. However, it does not support all browser features that Chromium did. All mods that use the WebUI will need to be updated to work with the new system. Please refer to the [Migrating to new UI system](/modding/gameface-migration/) for more information.
+
+- Introduce new WebUI system based on [Coherent Labs Gameface](https://coherent-labs.com/products/coherent-gameface/)
+- Fix memory leaks related to loading `fb://` resources in the WebUI.
+- Massive reduction of memory usage by WebUI.
+- Remove the `-disableUiHwAcceleration` command-line flag.
+- Bump minimum required VU version to `20590`
+
 {{% changeset 20188 "21/04/2024" %}}
 
 - Update to official M124 release of CEF

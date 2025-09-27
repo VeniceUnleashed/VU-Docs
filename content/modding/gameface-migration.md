@@ -9,7 +9,7 @@ We have introduced a new UI system, built on Coherent Labs's Gameface, to replac
 
 ## Debugging
 
-Just like with the previous UI system, you can enable WebUI debugging by adding the `-dwebui` command line argument to your client. 
+Just like with the previous UI system, you can enable WebUI debugging by adding the `-dwebui` command line argument to your client.
 
 This allows you to inspect the UI using Chromium Dev Tools, which can be accessed by opening [http://localhost:8884](http://localhost:8884) in a Chromium based browser (like Google Chrome or Microsoft Edge).
 
@@ -61,17 +61,15 @@ Gameface does not support all HTML elements and attributes. Some of the most not
 
 - The `<audio>` element is NOT supported, use `<video>` instead (continued [below](#audio)).
 - The `<input>` element ONLY supports `text`, `button` and `password` types.
-- The `<canvas>` element ONLY supports 2D rendering context, WebGL is **NOT** supported. 
+- The `<canvas>` element ONLY supports 2D rendering context, WebGL is **NOT** supported. More info about the supported features can be found [here](https://docs.coherent-labs.com/cpp-gameface/content_development/supported_features_tables/canvassupport/).
 
-More info about the supported features can be found [here](https://docs.coherent-labs.com/cpp-gameface/content_development/supported_features_tables/canvassupport/).
-
-All unsupported HTML elements are not visible in the UI. Watch your VU console logs for any such elements! 
+Any unsupported HTML element is invisible in the UI!
 
 You can find more information about supported HTML elements in the [Gameface documentation](https://docs.coherent-labs.com/cpp-gameface/content_development/supported_features_tables/htmlelements/).
 
 ### Audio
 
-As mentioned above, the `<audio>` element is not supported. We can work around this by using a `<video>` element instead, with our audio encoded as a webm "video" file. 
+As mentioned above, the `<audio>` element is not supported. We can work around this by using a `<video>` element instead, with our audio encoded as a webm "video" file.
 
 Here's an example of how you can use [ffmpeg](https://www.ffmpeg.org/download.html) to convert a `wav` file to a format that the `<video>` element supports:
 
@@ -84,4 +82,3 @@ This will generate an `output.webm` file which you can use with a `<video>` elem
 ### Fonts
 
 Gameface only supports TrueType and OpenType fonts and collections (.ttf, .ttc, .otf, .otc). If you're using custom fonts, make sure that they are in one of these formats!
-
