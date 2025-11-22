@@ -6,6 +6,13 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 20682 "22/11/2025" %}}
+
+- Fixed an intermittent crash when loading into a level or changing kits
+- Added a temporary workaround for the UI flickering - this might have a slight performance impact and will be fixed in the next update
+- Update to Gameface 2.0
+- The installer now bundles the VC++ redist
+
 {{% changeset 20670 "01/11/2025" %}}
 
 BREAKING CHANGE: We have introduced a new WebUI system that replaces the old Chromium based system. This new system is more stable and performs better. However, it does not support all browser features that Chromium did. All mods that use the WebUI will need to be updated to work with the new system. Please refer to the [Migrating to new UI system](/modding/gameface-migration/) for more information.
