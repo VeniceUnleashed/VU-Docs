@@ -20,6 +20,12 @@ Enables or disables drawing of memory usage stats for all currently loaded and r
 
 ---
 
+> `vu.DrawAllocationStats [true|false]`
+
+Enables or disables drawing of detailed memory allocation stats. This significantly hurts performance.
+
+---
+
 > `quit`
 
 Quits the game.
