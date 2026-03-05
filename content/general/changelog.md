@@ -6,6 +6,12 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 20818 "05/03/2026" true %}}
+
+- Improved WebUI rendering performance
+- Reduced overall memory usage and fixed some memory leaks
+- Introduced a new `vu.DrawAllocationStats` console command that shows statistics about memory allocations
+
 {{% changeset 20682 "22/11/2025" %}}
 
 - Fixed an intermittent crash when loading into a level or changing kits
