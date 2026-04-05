@@ -101,13 +101,21 @@ Then, we must transfer over the server key file we generated and downloaded [pre
 
 ## Activating the game
 
-The final step before being able to run the VU server is to activate the game. This process requires an Origin account which owns BF3. Run the command below, replacing `<email>` with your Origin account e-mail and `<password>` with your account password:
+The final step before being able to run the VU server is to activate the game. This process requires an EA account which owns BF3. You can activate it by either running the EA App locally, logging in, and then running the following:
 
 ```
-wine ~/vu/client/vu.com -gamepath ~/bf3 -activate -o_mail <email> -o_pass <password>
+wine ~/vu/client/vu.com -gamepath ~/bf3 -activate -lsx
 ```
 
-You'll see a bunch of `fixme` warnings printed in your terminal. You can safely ignore these. As soon as you see the `Your game has been successfully activated!` message you're good to go!
+Or if that's not possible, you can install BF3 and VU on a Windows computer, run the `Activate BF3` shortcut found in your start menu, and copy the token that will be printed in the console window during the activation process (the text between the single quotes, excluding the quotes). Then run the following command on your linux server: 
+
+```
+wine ~/vu/client/vu.com -gamepath ~/bf3 -activate -ea_token <token>
+```
+
+Where `<token>` is the token you copied previously.
+
+As soon as you see the `Your game has been successfully activated!` message you're good to go!
 
 ## Create a separate user to run VU as
 
