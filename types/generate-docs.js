@@ -654,6 +654,17 @@ const generateLibraryDoc = (type, context) => {
     }
   }
 
+  // Library-level usage example(s). The `examples` field holds a full Lua
+  // snippet demonstrating the library; rendered as a top-level section.
+  if (type.examples && type.examples.length > 0) {
+    doc += `\n`;
+    doc += `## Examples\n`;
+    doc += `\n`;
+    doc += '```lua\n';
+    doc += type.examples;
+    doc += '```\n';
+  }
+
   return doc;
 };
 
