@@ -6,6 +6,13 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 20878 "24/06/2026" true %}}
+
+- Fix the screen flickering of transparent WebUI components without requiring continuous repainting, improving rendering performance
+- Correct WebUI texture blending, which also fixes some transparency issues. Some parts of the UI may appear brighter than before and should now align with how they were intended to look
+- Several WebUI rendering pipeline fixes and reduced GPU memory usage
+- Temporarily disable selecting generic text (outside of input fields) in mod WebUIs to avoid a crash with inline SVGs. Selecting text inside input fields is unaffected, and generic text selection still works in the main menu. Mods that need it can re-add the [Gameface text-selection polyfill](https://docs.coherent-labs.com/cpp-gameface/content_development/inputhandling_native_js/#TextSelection) themselves, and built-in support will return once the crash is fixed
+
 {{% changeset 20864 "18/06/2026" true %}}
 
 - Upgrade the WebUI from [Gameface 2.0.0](https://docs.coherent-labs.com/cpp-gameface/changelog/feature/#version-200) to [Gameface 3.0.1.1](https://docs.coherent-labs.com/cpp-gameface/changelog/feature/#version-3011). Notable changes for mods (see the full [Gameface changelog](https://docs.coherent-labs.com/cpp-gameface/changelog/feature/) for everything):
