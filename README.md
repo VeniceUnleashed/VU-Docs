@@ -14,7 +14,27 @@ First, you must clone the documentation repository locally to your computer. You
 git clone git@github.com:EmulatorNexus/VU-Docs.git
 ```
 
-Before you can start developing you must ensure that you have the latest extended version of [Hugo](https://github.com/gohugoio/hugo/releases) and [Node.js](https://nodejs.org/) installed and available in your path. For Hugo you can alternatively place the hugo executable (eg. `hugo.exe`) inside the checked-out repository directory. Once you have, open a terminal in your local repository directory and run the following command:
+After cloning, initialize the git submodules:
+
+```bash
+git submodule update --init --recursive
+```
+
+#### Installing the toolchain
+
+Building the site requires the **extended** version of [Hugo](https://github.com/gohugoio/hugo/releases) and [Node.js](https://nodejs.org/).
+
+> **Important:** Hugo must be **older than 0.110.0**. The pinned Docsy theme relies on the `google_analytics_async` internal template that newer Hugo versions removed, so the latest Hugo will not build this site.
+
+The easiest way to get compatible versions is [mise](https://mise.jdx.dev/), which reads the pinned Hugo and Node.js versions from the repository's `mise.toml`. With mise installed, run the following from the repository directory:
+
+```bash
+mise install
+```
+
+mise will then automatically use the correct extended Hugo and Node.js versions whenever you work inside the repository. If you prefer not to use mise, install an extended Hugo older than 0.110.0 and Node.js manually and make sure both are available in your path. (You can alternatively place the hugo executable, eg. `hugo.exe`, inside the checked-out repository directory.)
+
+Finally, install the Node.js dependencies:
 
 ```bash
 npm install
