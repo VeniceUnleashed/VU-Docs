@@ -1,0 +1,5 @@
+[tools]
+# Hugo must stay < 0.110.0: the pinned Docsy theme relies on the
+# google_analytics_async internal template that newer Hugo removed.
+hugo-extended = "0.109.0"
+node = "24.14.0"
