@@ -1,6 +1,7 @@
 const yaml = require('js-yaml');
 const fs = require('fs');
 const path = require('path');
+const { compareCaseInsensitive } = require('./utils');
 
 const clientTypes = {};
 const serverTypes = {};
@@ -654,6 +655,17 @@ const generateLibraryDoc = (type, context) => {
     }
   }
 
+  // Library-level usage example(s). The `examples` field holds a full Lua
+  // snippet demonstrating the library; rendered as a top-level section.
+  if (type.examples && type.examples.length > 0) {
+    doc += `\n`;
+    doc += `## Examples\n`;
+    doc += `\n`;
+    doc += '```lua\n';
+    doc += type.examples;
+    doc += '```\n';
+  }
+
   return doc;
 };
 
@@ -794,7 +806,8 @@ const generateDoc = (typeInfo, context) => {
 }
 
 const parseTypesInDir = (dir, target) => {
-  const files = fs.readdirSync(path.join(__dirname, dir), { withFileTypes: true });
+  const files = fs.readdirSync(path.join(__dirname, dir), { withFileTypes: true })
+    .sort((a, b) => compareCaseInsensitive(a.name, b.name));
 
   for (const file of files) {
     if (!file.isFile()) {
