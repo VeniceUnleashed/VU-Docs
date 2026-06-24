@@ -3,3 +3,4 @@ resources/_gen
 hugo
 hugo.exe
 dist
+types/teal

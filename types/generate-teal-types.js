@@ -237,5 +237,6 @@ const sharedTypes = generateTypeDefinitions(typeYamlFilesShared);
 const fbTypes = generateTypeDefinitions(typeYamlFilesFB);
 
 // Write server and client definition files.
+fs.mkdirSync(__dirname + '/teal', { recursive: true });
 fs.writeFileSync(__dirname + '/teal/vu-client.d.tl', [ clientLibraries, sharedLibraries, clientTypes, sharedTypes, fbTypes ].join('\n\n'));
 fs.writeFileSync(__dirname + '/teal/vu-server.d.tl', [ serverLibraries, sharedLibraries, serverTypes, sharedTypes, fbTypes ].join('\n\n'));
