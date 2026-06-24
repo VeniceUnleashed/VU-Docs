@@ -1,6 +1,7 @@
 const yaml = require('js-yaml');
 const fs = require('fs');
 const path = require('path');
+const { compareCaseInsensitive } = require('./utils');
 
 const clientTypes = {};
 const serverTypes = {};
@@ -11,7 +12,8 @@ const sharedLibraries = {};
 const fbTypes = {};
 
 const parseTypesInDir = (dir, target) => {
-  const files = fs.readdirSync(path.join(__dirname, dir), { withFileTypes: true });
+  const files = fs.readdirSync(path.join(__dirname, dir), { withFileTypes: true })
+    .sort((a, b) => compareCaseInsensitive(a.name, b.name));
 
   for (const file of files) {
     if (!file.isFile()) {

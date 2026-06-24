@@ -1,5 +1,6 @@
 const fs = require('fs');
 const yaml = require('js-yaml');
+const { compareCaseInsensitive } = require('./utils');
 
 function mapTealType(type) {
   const trimmedType = type.trim();
@@ -212,9 +213,9 @@ function generateTypeDefinitions(files) {
 // __dirname/client/library/*.yaml
 // __dirname/server/library/*.yaml
 // __dirname/shared/library/*.yaml
-const libraryYamlFilesClient = fs.readdirSync(__dirname + '/client/library').map(file => __dirname + '/client/library/' + file);
-const libraryYamlFilesServer = fs.readdirSync(__dirname + '/server/library').map(file => __dirname + '/server/library/' + file);
-const libraryYamlFilesShared = fs.readdirSync(__dirname + '/shared/library').map(file => __dirname + '/shared/library/' + file);
+const libraryYamlFilesClient = fs.readdirSync(__dirname + '/client/library').sort(compareCaseInsensitive).map(file => __dirname + '/client/library/' + file);
+const libraryYamlFilesServer = fs.readdirSync(__dirname + '/server/library').sort(compareCaseInsensitive).map(file => __dirname + '/server/library/' + file);
+const libraryYamlFilesShared = fs.readdirSync(__dirname + '/shared/library').sort(compareCaseInsensitive).map(file => __dirname + '/shared/library/' + file);
 
 const clientLibraries = generateLibraryDefinitions(libraryYamlFilesClient);
 const serverLibraries = generateLibraryDefinitions(libraryYamlFilesServer);
@@ -225,10 +226,10 @@ const sharedLibraries = generateLibraryDefinitions(libraryYamlFilesShared);
 // __dirname/server/type/*.yaml
 // __dirname/shared/type/*.yaml
 // __dirname/fb/*.yaml
-const typeYamlFilesClient = fs.readdirSync(__dirname + '/client/type').map(file => __dirname + '/client/type/' + file);
-const typeYamlFilesServer = fs.readdirSync(__dirname + '/server/type').map(file => __dirname + '/server/type/' + file);
-const typeYamlFilesShared = fs.readdirSync(__dirname + '/shared/type').map(file => __dirname + '/shared/type/' + file);
-const typeYamlFilesFB = fs.readdirSync(__dirname + '/fb').map(file => __dirname + '/fb/' + file);
+const typeYamlFilesClient = fs.readdirSync(__dirname + '/client/type').sort(compareCaseInsensitive).map(file => __dirname + '/client/type/' + file);
+const typeYamlFilesServer = fs.readdirSync(__dirname + '/server/type').sort(compareCaseInsensitive).map(file => __dirname + '/server/type/' + file);
+const typeYamlFilesShared = fs.readdirSync(__dirname + '/shared/type').sort(compareCaseInsensitive).map(file => __dirname + '/shared/type/' + file);
+const typeYamlFilesFB = fs.readdirSync(__dirname + '/fb').sort(compareCaseInsensitive).map(file => __dirname + '/fb/' + file);
 
 const clientTypes = generateTypeDefinitions(typeYamlFilesClient);
 const serverTypes = generateTypeDefinitions(typeYamlFilesServer);
