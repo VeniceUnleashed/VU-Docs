@@ -6,6 +6,38 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
+{{% changeset 20864 "18/06/2026" true %}}
+
+- Upgrade the WebUI from [Gameface 2.0.0](https://docs.coherent-labs.com/cpp-gameface/changelog/feature/#version-200) to [Gameface 3.0.1.1](https://docs.coherent-labs.com/cpp-gameface/changelog/feature/#version-3011). Notable changes for mods (see the full [Gameface changelog](https://docs.coherent-labs.com/cpp-gameface/changelog/feature/) for everything):
+  - Added support for the `aspect-ratio` and `gap` CSS properties, `box-sizing: content-box`, auto margins in flex layout, and `@starting-style` entry/exit transitions
+  - Added support for the Svelte 5 UI framework
+  - Whitespace text nodes are now part of the DOM, which changes the return value of node traversal APIs such as `childNodes`
+  - Images now keep their source aspect ratio by default, so some layouts may need adjusting
+  - The `coh-scrgb` color space was replaced by the standard `srgb` keyword in the CSS `color()` function
+- Move WebUI layout work to dedicated threads to improve performance
+- Fix several WebUI threading issues
+
+{{% changeset 20847 "22/05/2026" true %}}
+
+- Fixed a bug where [`WebUI:ResetMouse`](/vext/ref/client/library/webui/#resetmouse) would not correctly restore the mouse state. This could leave the mouse captured by the WebUI even after it should have been released, so mouse control would not return to the game as expected.
+
+{{% changeset 20846 "21/05/2026" true %}}
+
+- Fix vanilla UI scaling for the killfeed
+
+{{% changeset 20845 "20/05/2026" true %}}
+
+- Improve performance of the in-game performance overlay
+- Fix vanilla UI scaling for the minimap icons
+
+{{% changeset 20841 "19/05/2026" true %}}
+
+- Improve the `vu.SquadSize` setting so the configured squad size is applied correctly across more parts of the game
+
+{{% changeset 20840 "19/05/2026" true %}}
+
+- Fix various vanilla UI scaling issues, including UI text flickering
+
 {{% changeset 20818 "05/03/2026" true %}}
 
 - Improved WebUI rendering performance
