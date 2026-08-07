@@ -3,6 +3,10 @@ title: Changelog
 weight: 1
 ---
 
+{{% changeset-vext "1.16.0" "07/08/2026" %}}
+
+- Introduces the shared [TerrainEditing](/vext/ref/shared/library/terrainediting) library for editing terrain heights at runtime. This API is experimental and may change in future releases.
+
 {{% changeset-vext "1.15.0" "01/04/2024" %}}
 
 - Add [alternatePointIndexOrder](/vext/ref/server/type/spawnentity#alternatepointindexorder) property to server [SpawnEntity](/vext/ref/server/type/spawnentity).

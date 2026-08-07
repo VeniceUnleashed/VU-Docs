@@ -32,3 +32,7 @@ hideChildren: true
 **[SharedUtils](/vext/ref/shared/library/sharedutils)**
 
 ---
+
+**[TerrainEditing](/vext/ref/shared/library/terrainediting)**
+
+---

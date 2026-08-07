@@ -6,14 +6,24 @@ weight: 4
 
 Below you can find a full list of changes to VU, corresponding to every VU update, with the newest update at the top. Updates that have the `ONLY IN DEV` tag next to them are currently only available in the `dev` branch.
 
-{{% changeset 20878 "24/06/2026" true %}}
+{{% changeset 20939 "07/08/2026" %}}
+
+- VeniceEXT was updated to `1.16.0` ([changelog](/vext/changelog/#1_16_0)) with support for experimental terrain editing.
+- Disabled nvidia shader cache and AMD eyefinity support by default. These have been causing issues due to driver bugs. They can be re-enabled from the "GPU SETTINGS" menu under the VU settings at your own risk.
+- Rolled back the WebUI from Gameface 3.0.1.1 to Gameface 2.2.7.2 due to stability issues with Gameface 3. Features that were introduced with the Gameface 3 upgrade in build 20864 are no longer available. Once Gameface 3 becomes more stable, we will switch back to it again.
+- Client mod scripts are now sent compressed when connecting to a server, reducing loading times for servers with large mods.
+- Fix a memory leak where VEXT modules were never properly destroyed.
+- Fix the VU watermark appearing brighter than intended.
+- Temporarily revert the vanilla UI scaling fixes from previous builds due to inconsistent behavior.
+
+{{% changeset 20878 "24/06/2026" %}}
 
 - Fix the screen flickering of transparent WebUI components without requiring continuous repainting, improving rendering performance
 - Correct WebUI texture blending, which also fixes some transparency issues. Some parts of the UI may appear brighter than before and should now align with how they were intended to look
 - Several WebUI rendering pipeline fixes and reduced GPU memory usage
 - Temporarily disable selecting generic text (outside of input fields) in mod WebUIs to avoid a crash with inline SVGs. Selecting text inside input fields is unaffected, and generic text selection still works in the main menu. Mods that need it can re-add the [Gameface text-selection polyfill](https://docs.coherent-labs.com/cpp-gameface/content_development/inputhandling_native_js/#TextSelection) themselves, and built-in support will return once the crash is fixed
 
-{{% changeset 20864 "18/06/2026" true %}}
+{{% changeset 20864 "18/06/2026" %}}
 
 - Upgrade the WebUI from [Gameface 2.0.0](https://docs.coherent-labs.com/cpp-gameface/changelog/feature/#version-200) to [Gameface 3.0.1.1](https://docs.coherent-labs.com/cpp-gameface/changelog/feature/#version-3011). Notable changes for mods (see the full [Gameface changelog](https://docs.coherent-labs.com/cpp-gameface/changelog/feature/) for everything):
   - Added support for the `aspect-ratio` and `gap` CSS properties, `box-sizing: content-box`, auto margins in flex layout, and `@starting-style` entry/exit transitions
@@ -24,28 +34,28 @@ Below you can find a full list of changes to VU, corresponding to every VU updat
 - Move WebUI layout work to dedicated threads to improve performance
 - Fix several WebUI threading issues
 
-{{% changeset 20847 "22/05/2026" true %}}
+{{% changeset 20847 "22/05/2026" %}}
 
 - Fixed a bug where [`WebUI:ResetMouse`](/vext/ref/client/library/webui/#resetmouse) would not correctly restore the mouse state. This could leave the mouse captured by the WebUI even after it should have been released, so mouse control would not return to the game as expected.
 
-{{% changeset 20846 "21/05/2026" true %}}
+{{% changeset 20846 "21/05/2026" %}}
 
 - Fix vanilla UI scaling for the killfeed
 
-{{% changeset 20845 "20/05/2026" true %}}
+{{% changeset 20845 "20/05/2026" %}}
 
 - Improve performance of the in-game performance overlay
 - Fix vanilla UI scaling for the minimap icons
 
-{{% changeset 20841 "19/05/2026" true %}}
+{{% changeset 20841 "19/05/2026" %}}
 
 - Improve the `vu.SquadSize` setting so the configured squad size is applied correctly across more parts of the game
 
-{{% changeset 20840 "19/05/2026" true %}}
+{{% changeset 20840 "19/05/2026" %}}
 
 - Fix various vanilla UI scaling issues, including UI text flickering
 
-{{% changeset 20818 "05/03/2026" true %}}
+{{% changeset 20818 "05/03/2026" %}}
 
 - Improved WebUI rendering performance
 - Reduced overall memory usage and fixed some memory leaks
